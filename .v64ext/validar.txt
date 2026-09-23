@@ -1,0 +1,5 @@
+NO CAERIA  construir_grafico_escalonado_pronosticos  (esquema, id, fuentes y guiones en verde)
+NO CAERIA  construir_indicador_tendencia_patron  (esquema, id, fuentes y guiones en verde)
+NO CAERIA  elegir_fabricar_pedido_pronostico  (esquema, id, fuentes y guiones en verde)
+NO CAERIA  elegir_indicador_salida_trabajo_administrativo  (esquema, id, fuentes y guiones en verde)
+NO CAERIA  emparejar_indicadores_efecto_contraefecto  (esquema, id, fuentes y guiones en verde)

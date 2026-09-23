@@ -1,0 +1,11 @@
+candidato                                        cap     pasos   T   P
+archivar_indicadores_resolver_problemas          cap_03      4   4   0
+construir_grafico_escalonado_pronosticos         cap_03      8   7   1
+construir_indicador_tendencia_patron             cap_03      6   6   0
+elegir_fabricar_pedido_pronostico                cap_03      9   8   1
+elegir_indicador_salida_trabajo_administrativo   cap_03      7   7   0
+emparejar_indicadores_efecto_contraefecto        cap_03      7   7   0
+pasos sin fila: 0 [] | filas sin paso: 0 []
+
+PASOS INVENTADOS POR CAPITULO, los seis de d005
+cap_03  candidatos 6  pasos 41  T 39  P 2  inventado 4,9 por ciento

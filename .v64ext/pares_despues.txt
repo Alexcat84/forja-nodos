@@ -1,0 +1,90 @@
+poblacion: grafo 346 + bandejas 116 = 462
+deuda  candidato                                        vecino                                           vecino  informe: texto/familia/paso        HOY: texto/familia/paso    HOY levanta
+d005   archivar_indicadores_resolver_problemas          construir_indicador_tendencia_patron             bandeja 0.384/0.143/0.420                  0.361/0.143/0.42           similitud_texto
+d005   construir_indicador_tendencia_patron             archivar_indicadores_resolver_problemas          bandeja (no en informe)                    0.365/0.143/0.427          similitud_texto
+d005   archivar_indicadores_resolver_problemas          revisar_tres_preguntas_valor_carrera             grafo   0.369/0.000/0.414                  0.369/0.0/0.414            similitud_texto
+d005   revisar_tres_preguntas_valor_carrera             archivar_indicadores_resolver_problemas          bandeja (no en informe)                    0.357/0.0/0.387            similitud_texto
+d005   archivar_indicadores_resolver_problemas          vencer_sindrome_grupo_pares_autoconfianza        bandeja 0.364/0.000/0.405                  0.364/0.0/0.405            similitud_texto
+d005   vencer_sindrome_grupo_pares_autoconfianza        archivar_indicadores_resolver_problemas          bandeja (no en informe)                    0.363/0.0/0.396            similitud_texto
+d005   archivar_indicadores_resolver_problemas          cerrar_brecha_dos_preguntas_estrategia           bandeja 0.353/0.000/0.393                  0.353/0.0/0.393            similitud_texto
+d005   cerrar_brecha_dos_preguntas_estrategia           archivar_indicadores_resolver_problemas          bandeja (no en informe)                    0.351/0.0/0.431            similitud_texto
+d005   construir_grafico_escalonado_pronosticos         construir_indicador_tendencia_patron             bandeja 0.354/0.143/0.453                  0.365/0.143/0.453          similitud_texto
+d005   construir_indicador_tendencia_patron             construir_grafico_escalonado_pronosticos         bandeja (no en informe)                    0.362/0.143/0.461          similitud_texto
+d005   construir_grafico_escalonado_pronosticos         elegir_fabricar_pedido_pronostico                bandeja 0.354/0.143/0.453                  0.393/0.143/0.453          similitud_texto
+d005   elegir_fabricar_pedido_pronostico                construir_grafico_escalonado_pronosticos         bandeja (no en informe)                    0.387/0.143/0.44           similitud_texto
+d005   construir_grafico_escalonado_pronosticos         emparejar_indicadores_efecto_contraefecto        bandeja 0.363/0.000/0.434                  0.378/0.0/0.434            similitud_texto
+d005   emparejar_indicadores_efecto_contraefecto        construir_grafico_escalonado_pronosticos         bandeja (no en informe)                    0.384/0.0/0.446            similitud_texto
+d005   construir_indicador_tendencia_patron             construir_grafico_escalonado_pronosticos         bandeja 0.350/0.143/0.461                  0.362/0.143/0.461          similitud_texto
+d005   construir_grafico_escalonado_pronosticos         construir_indicador_tendencia_patron             bandeja (no en informe)                    0.365/0.143/0.453          similitud_texto
+d005   construir_indicador_tendencia_patron             archivar_indicadores_resolver_problemas          bandeja 0.391/0.143/0.427                  0.365/0.143/0.427          similitud_texto
+d005   archivar_indicadores_resolver_problemas          construir_indicador_tendencia_patron             bandeja (no en informe)                    0.361/0.143/0.42           similitud_texto
+d005   elegir_fabricar_pedido_pronostico                construir_grafico_escalonado_pronosticos         bandeja 0.352/0.143/0.440                  0.387/0.143/0.44           similitud_texto
+d005   construir_grafico_escalonado_pronosticos         elegir_fabricar_pedido_pronostico                bandeja (no en informe)                    0.393/0.143/0.453          similitud_texto
+d005   elegir_indicador_salida_trabajo_administrativo   evaluar_directivo_resultados_fortaleza           grafo   0.184/0.000/0.766                  0.17/0.0/0.766             paso_contra_nodo
+d005   evaluar_directivo_resultados_fortaleza           elegir_indicador_salida_trabajo_administrativo   bandeja (no en informe)                    0.178/0.0/0.775            paso_contra_nodo
+d005   elegir_indicador_salida_trabajo_administrativo   emparejar_indicadores_efecto_contraefecto        bandeja 0.355/0.125/0.489                  0.394/0.125/0.489          similitud_texto
+d005   emparejar_indicadores_efecto_contraefecto        elegir_indicador_salida_trabajo_administrativo   bandeja (no en informe)                    0.383/0.125/0.468          similitud_texto
+d005   emparejar_indicadores_efecto_contraefecto        construir_indicador_tendencia_patron             bandeja 0.358/0.143/0.453                  0.397/0.143/0.453          similitud_texto
+d005   construir_indicador_tendencia_patron             emparejar_indicadores_efecto_contraefecto        bandeja (no en informe)                    0.393/0.143/0.427          similitud_texto
+d005   emparejar_indicadores_efecto_contraefecto        construir_grafico_escalonado_pronosticos         bandeja 0.370/0.000/0.446                  0.384/0.0/0.446            similitud_texto
+d005   construir_grafico_escalonado_pronosticos         emparejar_indicadores_efecto_contraefecto        bandeja (no en informe)                    0.378/0.0/0.434            similitud_texto
+d005   emparejar_indicadores_efecto_contraefecto        elegir_fabricar_pedido_pronostico                bandeja 0.354/0.000/0.408                  0.367/0.0/0.408            similitud_texto
+d005   elegir_fabricar_pedido_pronostico                emparejar_indicadores_efecto_contraefecto        bandeja (no en informe)                    0.362/0.0/0.419            similitud_texto
+d005   emparejar_indicadores_efecto_contraefecto        revisar_tres_preguntas_valor_carrera             grafo   0.354/0.000/0.386                  0.334/0.0/0.386            NO LEVANTA
+d005   revisar_tres_preguntas_valor_carrera             emparejar_indicadores_efecto_contraefecto        bandeja (no en informe)                    0.331/0.0/0.376            NO LEVANTA
+d140   construir_flujo_produccion_paso_limitante        retirar_barreras_politicas_metodo                grafo   0.108/0.000/0.614                  0.108/0.0/0.614            paso_contra_nodo
+d140   retirar_barreras_politicas_metodo                construir_flujo_produccion_paso_limitante        bandeja (no en informe)                    0.126/0.0/0.601            paso_contra_nodo
+d140   construir_flujo_produccion_paso_limitante        rehacer_flujo_paso_limitante_capacidad           bandeja 0.412/0.429/0.430                  0.412/0.429/0.43           similitud_texto, familia_id
+d140   rehacer_flujo_paso_limitante_capacidad           construir_flujo_produccion_paso_limitante        bandeja (no en informe)                    0.419/0.429/0.43           similitud_texto, familia_id
+d140   construir_flujo_produccion_paso_limitante        preferir_inspeccion_proceso_prueba_destructiva   bandeja 0.397/0.000/0.421                  0.397/0.0/0.421            similitud_texto
+d140   preferir_inspeccion_proceso_prueba_destructiva   construir_flujo_produccion_paso_limitante        bandeja (no en informe)                    0.41/0.0/0.442             similitud_texto
+d140   clasificar_trabajo_proceso_montaje_prueba        preferir_inspeccion_proceso_prueba_destructiva   bandeja 0.372/0.250/0.461                  0.372/0.25/0.461           similitud_texto
+d140   preferir_inspeccion_proceso_prueba_destructiva   clasificar_trabajo_proceso_montaje_prueba        bandeja (no en informe)                    0.366/0.25/0.461           similitud_texto
+d140   rehacer_flujo_paso_limitante_capacidad           preferir_inspeccion_proceso_prueba_destructiva   bandeja 0.460/0.000/0.378                  0.46/0.0/0.378             similitud_texto
+d140   preferir_inspeccion_proceso_prueba_destructiva   rehacer_flujo_paso_limitante_capacidad           bandeja (no en informe)                    0.445/0.0/0.384            similitud_texto
+d140   rehacer_flujo_paso_limitante_capacidad           construir_flujo_produccion_paso_limitante        bandeja 0.419/0.429/0.430                  0.419/0.429/0.43           similitud_texto, familia_id
+d140   construir_flujo_produccion_paso_limitante        rehacer_flujo_paso_limitante_capacidad           bandeja (no en informe)                    0.412/0.429/0.43           similitud_texto, familia_id
+d140   rehacer_flujo_paso_limitante_capacidad           dimensionar_inventario_materia_prima_reposicion  bandeja 0.357/0.000/0.387                  0.357/0.0/0.387            similitud_texto
+d140   dimensionar_inventario_materia_prima_reposicion  rehacer_flujo_paso_limitante_capacidad           bandeja (no en informe)                    0.329/0.0/0.368            NO LEVANTA
+d140   preferir_inspeccion_proceso_prueba_destructiva   clasificar_trabajo_proceso_montaje_prueba        bandeja 0.366/0.250/0.461                  0.366/0.25/0.461           similitud_texto
+d140   clasificar_trabajo_proceso_montaje_prueba        preferir_inspeccion_proceso_prueba_destructiva   bandeja (no en informe)                    0.372/0.25/0.461           similitud_texto
+d140   preferir_inspeccion_proceso_prueba_destructiva   rehacer_flujo_paso_limitante_capacidad           bandeja 0.445/0.000/0.384                  0.445/0.0/0.384            similitud_texto
+d140   rehacer_flujo_paso_limitante_capacidad           preferir_inspeccion_proceso_prueba_destructiva   bandeja (no en informe)                    0.46/0.0/0.378             similitud_texto
+d140   preferir_inspeccion_proceso_prueba_destructiva   construir_flujo_produccion_paso_limitante        bandeja 0.410/0.000/0.442                  0.41/0.0/0.442             similitud_texto
+d140   construir_flujo_produccion_paso_limitante        preferir_inspeccion_proceso_prueba_destructiva   bandeja (no en informe)                    0.397/0.0/0.421            similitud_texto
+d140   preferir_inspeccion_proceso_prueba_destructiva   dimensionar_inventario_materia_prima_reposicion  bandeja 0.384/0.000/0.417                  0.384/0.0/0.417            similitud_texto
+d140   dimensionar_inventario_materia_prima_reposicion  preferir_inspeccion_proceso_prueba_destructiva   bandeja (no en informe)                    0.391/0.0/0.403            similitud_texto
+d140   dimensionar_inventario_materia_prima_reposicion  preferir_inspeccion_proceso_prueba_destructiva   bandeja 0.391/0.000/0.403                  0.391/0.0/0.403            similitud_texto
+d140   preferir_inspeccion_proceso_prueba_destructiva   dimensionar_inventario_materia_prima_reposicion  bandeja (no en informe)                    0.384/0.0/0.417            similitud_texto
+d140   dimensionar_inventario_materia_prima_reposicion  detectar_arreglar_fallo_etapa_menor_valor        bandeja 0.357/0.000/0.401                  0.357/0.0/0.401            similitud_texto
+d140   detectar_arreglar_fallo_etapa_menor_valor        dimensionar_inventario_materia_prima_reposicion  bandeja (no en informe)                    0.35/0.0/0.391             NO LEVANTA
+d140   detectar_arreglar_fallo_etapa_menor_valor        supervisar_tarea_delegada_etapa_menor_valor      bandeja 0.242/0.333/0.459                  0.242/0.333/0.459          familia_id
+d140   supervisar_tarea_delegada_etapa_menor_valor      detectar_arreglar_fallo_etapa_menor_valor        bandeja (no en informe)                    0.226/0.333/0.435          familia_id
+d140   decidir_aceptar_rechazar_material_defectuoso     dimensionar_plantilla_administrativa_pronostico  bandeja 0.372/0.000/0.364                  0.372/0.0/0.364            similitud_texto
+d140   dimensionar_plantilla_administrativa_pronostico  decidir_aceptar_rechazar_material_defectuoso     bandeja (no en informe)                    0.367/0.0/0.359            similitud_texto
+d140   dimensionar_plantilla_administrativa_pronostico  elegir_cinco_indicadores_diarios_fabrica         bandeja 0.351/0.000/0.434                  0.351/0.0/0.434            similitud_texto
+d140   elegir_cinco_indicadores_diarios_fabrica         dimensionar_plantilla_administrativa_pronostico  bandeja (no en informe)                    0.349/0.0/0.416            NO LEVANTA
+d140   dimensionar_plantilla_administrativa_pronostico  simplificar_trabajo_reducir_numero_pasos         bandeja 0.351/0.000/0.388                  0.351/0.0/0.388            similitud_texto
+d140   simplificar_trabajo_reducir_numero_pasos         dimensionar_plantilla_administrativa_pronostico  bandeja (no en informe)                    0.351/0.0/0.439            similitud_texto
+d140   dimensionar_plantilla_administrativa_pronostico  decidir_aceptar_rechazar_material_defectuoso     bandeja 0.367/0.000/0.359                  0.367/0.0/0.359            similitud_texto
+d140   decidir_aceptar_rechazar_material_defectuoso     dimensionar_plantilla_administrativa_pronostico  bandeja (no en informe)                    0.372/0.0/0.364            similitud_texto
+d140   simplificar_trabajo_reducir_numero_pasos         dimensionar_plantilla_administrativa_pronostico  bandeja 0.351/0.000/0.439                  0.351/0.0/0.439            similitud_texto
+d140   dimensionar_plantilla_administrativa_pronostico  simplificar_trabajo_reducir_numero_pasos         bandeja (no en informe)                    0.351/0.0/0.388            similitud_texto
+lectura dimensionar_plantilla_administrativa_pronostico  elegir_indicador_salida_trabajo_administrativo   bandeja (no en informe)                    0.338/0.0/0.409            NO LEVANTA
+lectura elegir_indicador_salida_trabajo_administrativo   dimensionar_plantilla_administrativa_pronostico  bandeja (no en informe)                    0.345/0.0/0.42             NO LEVANTA
+lectura dimensionar_plantilla_administrativa_pronostico  construir_indicador_tendencia_patron             bandeja (no en informe)                    0.38/0.0/0.405             similitud_texto
+lectura construir_indicador_tendencia_patron             dimensionar_plantilla_administrativa_pronostico  bandeja (no en informe)                    0.373/0.0/0.405            similitud_texto
+lectura casar_flujo_fabricacion_flujo_ventas             elegir_fabricar_pedido_pronostico                bandeja (no en informe)                    0.254/0.0/0.433            NO LEVANTA
+lectura elegir_fabricar_pedido_pronostico                casar_flujo_fabricacion_flujo_ventas             bandeja (no en informe)                    0.26/0.0/0.434             NO LEVANTA
+lectura casar_flujo_fabricacion_flujo_ventas             construir_grafico_escalonado_pronosticos         bandeja (no en informe)                    0.27/0.0/0.424             NO LEVANTA
+lectura construir_grafico_escalonado_pronosticos         casar_flujo_fabricacion_flujo_ventas             bandeja (no en informe)                    0.256/0.0/0.408            NO LEVANTA
+lectura construir_indicador_linealidad_alerta_temprana   representar_actividad_caja_negra_ventanas        bandeja (no en informe)                    0.292/0.0/0.447            NO LEVANTA
+lectura representar_actividad_caja_negra_ventanas        construir_indicador_linealidad_alerta_temprana   bandeja (no en informe)                    0.292/0.0/0.454            NO LEVANTA
+lectura construir_indicador_tendencia_patron             representar_actividad_caja_negra_ventanas        bandeja (no en informe)                    0.274/0.0/0.452            NO LEVANTA
+lectura representar_actividad_caja_negra_ventanas        construir_indicador_tendencia_patron             bandeja (no en informe)                    0.272/0.0/0.457            NO LEVANTA
+lectura construir_grafico_escalonado_pronosticos         representar_actividad_caja_negra_ventanas        bandeja (no en informe)                    0.262/0.0/0.419            NO LEVANTA
+lectura representar_actividad_caja_negra_ventanas        construir_grafico_escalonado_pronosticos         bandeja (no en informe)                    0.259/0.0/0.419            NO LEVANTA
+lectura dimensionar_plantilla_administrativa_pronostico  elegir_fabricar_pedido_pronostico                bandeja (no en informe)                    0.353/0.143/0.455          similitud_texto
+lectura elegir_fabricar_pedido_pronostico                dimensionar_plantilla_administrativa_pronostico  bandeja (no en informe)                    0.334/0.143/0.446          NO LEVANTA
+lectura casar_flujo_fabricacion_flujo_ventas             detectar_arreglar_fallo_etapa_menor_valor        bandeja (no en informe)                    0.234/0.0/0.394            NO LEVANTA
+lectura detectar_arreglar_fallo_etapa_menor_valor        casar_flujo_fabricacion_flujo_ventas             bandeja (no en informe)                    0.221/0.0/0.381            NO LEVANTA

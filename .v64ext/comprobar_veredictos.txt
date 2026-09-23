@@ -1,0 +1,56 @@
+  OK  archivar_indicadores_resolver_problemas          construir_indicador_tendencia_patron             SANO      
+  OK  archivar_indicadores_resolver_problemas          revisar_tres_preguntas_valor_carrera             SANO      
+  OK  archivar_indicadores_resolver_problemas          vencer_sindrome_grupo_pares_autoconfianza        SANO      
+  OK  archivar_indicadores_resolver_problemas          cerrar_brecha_dos_preguntas_estrategia           SANO      
+archivar_indicadores_resolver_problemas            lineas 4 | levantados hoy 4 | FALTAN 0 | SOBRAN 0 | medidos y ya no levantan 0
+  OK  construir_grafico_escalonado_pronosticos         construir_indicador_tendencia_patron             SANO      
+  OK  construir_grafico_escalonado_pronosticos         elegir_fabricar_pedido_pronostico                SANO      
+  OK  construir_grafico_escalonado_pronosticos         emparejar_indicadores_efecto_contraefecto        SANO      
+construir_grafico_escalonado_pronosticos           lineas 3 | levantados hoy 3 | FALTAN 0 | SOBRAN 0 | medidos y ya no levantan ['casar_flujo_fabricacion_flujo_ventas', 'representar_actividad_caja_negra_ventanas']
+  OK  construir_indicador_tendencia_patron             construir_grafico_escalonado_pronosticos         SANO      
+  OK  construir_indicador_tendencia_patron             archivar_indicadores_resolver_problemas          SANO      
+  OK  construir_indicador_tendencia_patron             emparejar_indicadores_efecto_contraefecto        SANO      
+  OK  construir_indicador_tendencia_patron             dimensionar_plantilla_administrativa_pronostico  CONTINUA  madre=construir_indicador_tendencia_patron
+construir_indicador_tendencia_patron               lineas 4 | levantados hoy 4 | FALTAN 0 | SOBRAN 0 | medidos y ya no levantan ['representar_actividad_caja_negra_ventanas']
+  OK  elegir_fabricar_pedido_pronostico                construir_grafico_escalonado_pronosticos         SANO      
+  OK  elegir_fabricar_pedido_pronostico                emparejar_indicadores_efecto_contraefecto        SANO      
+elegir_fabricar_pedido_pronostico                  lineas 2 | levantados hoy 2 | FALTAN 0 | SOBRAN 0 | medidos y ya no levantan ['casar_flujo_fabricacion_flujo_ventas', 'dimensionar_plantilla_administrativa_pronostico']
+  OK  elegir_indicador_salida_trabajo_administrativo   evaluar_directivo_resultados_fortaleza           SANO      
+  OK  elegir_indicador_salida_trabajo_administrativo   emparejar_indicadores_efecto_contraefecto        CONTINUA  madre=emparejar_indicadores_efecto_contraefecto
+elegir_indicador_salida_trabajo_administrativo     lineas 2 | levantados hoy 2 | FALTAN 0 | SOBRAN 0 | medidos y ya no levantan ['dimensionar_plantilla_administrativa_pronostico']
+  OK  emparejar_indicadores_efecto_contraefecto        construir_indicador_tendencia_patron             SANO      
+  OK  emparejar_indicadores_efecto_contraefecto        construir_grafico_escalonado_pronosticos         SANO      
+  OK  emparejar_indicadores_efecto_contraefecto        elegir_fabricar_pedido_pronostico                SANO      
+  OK  emparejar_indicadores_efecto_contraefecto        elegir_indicador_salida_trabajo_administrativo   CONTINUA  madre=emparejar_indicadores_efecto_contraefecto
+emparejar_indicadores_efecto_contraefecto          lineas 4 | levantados hoy 4 | FALTAN 0 | SOBRAN 0 | medidos y ya no levantan ['revisar_tres_preguntas_valor_carrera']
+  OK  construir_flujo_produccion_paso_limitante        retirar_barreras_politicas_metodo                SANO      
+  OK  construir_flujo_produccion_paso_limitante        rehacer_flujo_paso_limitante_capacidad           CONTINUA  madre=construir_flujo_produccion_paso_limitante
+  OK  construir_flujo_produccion_paso_limitante        preferir_inspeccion_proceso_prueba_destructiva   SANO      
+construir_flujo_produccion_paso_limitante          lineas 3 | levantados hoy 3 | FALTAN 0 | SOBRAN 0 | medidos y ya no levantan 0
+  OK  clasificar_trabajo_proceso_montaje_prueba        preferir_inspeccion_proceso_prueba_destructiva   SANO      
+clasificar_trabajo_proceso_montaje_prueba          lineas 1 | levantados hoy 1 | FALTAN 0 | SOBRAN 0 | medidos y ya no levantan 0
+  OK  rehacer_flujo_paso_limitante_capacidad           preferir_inspeccion_proceso_prueba_destructiva   SANO      
+  OK  rehacer_flujo_paso_limitante_capacidad           construir_flujo_produccion_paso_limitante        CONTINUA  madre=construir_flujo_produccion_paso_limitante
+  OK  rehacer_flujo_paso_limitante_capacidad           dimensionar_inventario_materia_prima_reposicion  SANO      
+rehacer_flujo_paso_limitante_capacidad             lineas 3 | levantados hoy 3 | FALTAN 0 | SOBRAN 0 | medidos y ya no levantan 0
+  OK  preferir_inspeccion_proceso_prueba_destructiva   clasificar_trabajo_proceso_montaje_prueba        SANO      
+  OK  preferir_inspeccion_proceso_prueba_destructiva   rehacer_flujo_paso_limitante_capacidad           SANO      
+  OK  preferir_inspeccion_proceso_prueba_destructiva   construir_flujo_produccion_paso_limitante        SANO      
+  OK  preferir_inspeccion_proceso_prueba_destructiva   dimensionar_inventario_materia_prima_reposicion  SANO      
+preferir_inspeccion_proceso_prueba_destructiva     lineas 4 | levantados hoy 4 | FALTAN 0 | SOBRAN 0 | medidos y ya no levantan 0
+  OK  dimensionar_inventario_materia_prima_reposicion  preferir_inspeccion_proceso_prueba_destructiva   SANO      
+  OK  dimensionar_inventario_materia_prima_reposicion  detectar_arreglar_fallo_etapa_menor_valor        CONTINUA  madre=detectar_arreglar_fallo_etapa_menor_valor
+dimensionar_inventario_materia_prima_reposicion    lineas 2 | levantados hoy 2 | FALTAN 0 | SOBRAN 0 | medidos y ya no levantan ['rehacer_flujo_paso_limitante_capacidad']
+  OK  detectar_arreglar_fallo_etapa_menor_valor        supervisar_tarea_delegada_etapa_menor_valor      CONTINUA  madre=detectar_arreglar_fallo_etapa_menor_valor
+detectar_arreglar_fallo_etapa_menor_valor          lineas 1 | levantados hoy 1 | FALTAN 0 | SOBRAN 0 | medidos y ya no levantan ['casar_flujo_fabricacion_flujo_ventas', 'dimensionar_inventario_materia_prima_reposicion']
+  OK  decidir_aceptar_rechazar_material_defectuoso     dimensionar_plantilla_administrativa_pronostico  SANO      
+decidir_aceptar_rechazar_material_defectuoso       lineas 1 | levantados hoy 1 | FALTAN 0 | SOBRAN 0 | medidos y ya no levantan 0
+  OK  dimensionar_plantilla_administrativa_pronostico  elegir_cinco_indicadores_diarios_fabrica         SANO      
+  OK  dimensionar_plantilla_administrativa_pronostico  simplificar_trabajo_reducir_numero_pasos         SANO      
+  OK  dimensionar_plantilla_administrativa_pronostico  decidir_aceptar_rechazar_material_defectuoso     SANO      
+  OK  dimensionar_plantilla_administrativa_pronostico  construir_indicador_tendencia_patron             CONTINUA  madre=construir_indicador_tendencia_patron
+  OK  dimensionar_plantilla_administrativa_pronostico  elegir_fabricar_pedido_pronostico                SANO      
+dimensionar_plantilla_administrativa_pronostico    lineas 5 | levantados hoy 5 | FALTAN 0 | SOBRAN 0 | medidos y ya no levantan ['elegir_indicador_salida_trabajo_administrativo']
+  OK  simplificar_trabajo_reducir_numero_pasos         dimensionar_plantilla_administrativa_pronostico  SANO      
+simplificar_trabajo_reducir_numero_pasos           lineas 1 | levantados hoy 1 | FALTAN 0 | SOBRAN 0 | medidos y ya no levantan 0
+secciones 15, lineas 40, ilegibles 0

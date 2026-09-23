@@ -57577,8 +57577,8 @@ vuelta se corta, lo que siga en `PENDIENTE` es hasta donde se llego.
 
 | tarea | que | estado |
 |---|---|---|
-| `T1` | los registros de la `ACTA 62` | PENDIENTE |
-| `T2` | `d005`: fidelidad entera de los seis y sus `VEREDICTOS LISTOS` | PENDIENTE |
+| `T1` | los registros de la `ACTA 62` | **CERRADA** (`64.1`) |
+| `T2` | `d005`: fidelidad entera de los seis y sus `VEREDICTOS LISTOS` | **CERRADA** (`64.2` y `64.3`) |
 | `T3` | `d140`: los `VEREDICTOS LISTOS` de los nueve BLOQUEARIA, y la relectura conjunta | PENDIENTE |
 | `T4` | `d141`: `ARISTAS POR LECTURA (D.29)` y el orden de los `22` para la `65` | PENDIENTE |
 | `T5` | el cierre: saneamiento declarado, deudas pagadas, `PASOS INVENTADOS`, `D.61`, guardas, censo, commit | PENDIENTE |
@@ -57616,3 +57616,290 @@ vuelta no inserta, y el primer `insertar` de la `65` los rompe y declara si son 
 
 **SIN INFORME DE LOTE EN ESTA CORRIDA** (`loop.log`, `INFORME_DE_LOTE vacio`): la vuelta no trae saldo
 de lote y no lo inventa (`EXTRACTOR.md` 12.2).
+
+## 64.1. TAREA 1: LOS REGISTROS DE LA `ACTA 62`, SIN REABRIR EL ARGUMENTO (`D.47`)
+
+| que | donde |
+|---|---|
+| **`D1` CAE, dentro del marcado**: los `4` pasos de `equilibrar` con *y apunta su coste* cuentan como PUENTE por el ejemplar de `D.30` (los `13` de `36` del lote `1` son `4` retirados y `9` clausulas reescritas). **`cap_02` queda en `4` de `50`, `8,0` por ciento**; `cap_03` en `0` de `80`. **Lo aplico en esta vuelta**: la clausula reescrita CUENTA como PUENTE en `64.2` | `ACTA 62` `62.5` y `62.6` |
+| *el ultimo commit que los toca es del `16` sep* era falso para `5` de `16` (`4` del `18`, `1` del `19`); la conclusion sigue en pie. Prosa, no acumula | `ACTA 62` `62.3` |
+| `R5` sigue vivo **con su letra**: si corto un bloque `$`, por el final y dentro del bloque `(recortado, entero en <fichero>)`. **En esta vuelta los cortes van en el propio comando** (`grep -n -o`, `cut`), que es lo que el comando imprime, y el unico corte de bloque lleva la formula (`64.0`) | `ACTA 62` `62.4` y `62.13` |
+| **`REPORTE` baja a `0 de 3`** | `ACTA 62` `62.9` |
+
+**`T1` CERRADA.**
+
+## 64.2. TAREA 2: `d005`, LOS SEIS DE `cap_03`
+
+### 64.2.a. LA RELECTURA DE FIDELIDAD ENTERA (`D.30`), `41` PASOS, SIN MUESTRA
+
+`cap_03` leido entero con `cat -n` en esta vuelta (L1 a L179), y cada paso de los seis contra la linea de
+la que dice salir. **La marca de cada paso, con su linea y lo que la decide, esta en `.v64ext/fidelidad.tsv`
+(una fila por paso), y la cuenta la hace un instrumento que abre las fichas**, no yo:
+
+<!-- TALLADO: parcial salida=.v64ext/contar_fidelidad.txt -->
+
+    $ python .v64ext/contar_fidelidad.py
+    candidato                                        cap     pasos   T   P
+    archivar_indicadores_resolver_problemas          cap_03      4   4   0
+    construir_grafico_escalonado_pronosticos         cap_03      8   7   1
+    construir_indicador_tendencia_patron             cap_03      6   6   0
+    elegir_fabricar_pedido_pronostico                cap_03      9   8   1
+    elegir_indicador_salida_trabajo_administrativo   cap_03      7   7   0
+    emparejar_indicadores_efecto_contraefecto        cap_03      7   7   0
+    pasos sin fila: 0 [] | filas sin paso: 0 []
+
+    PASOS INVENTADOS POR CAPITULO, los seis de d005
+    cap_03  candidatos 6  pasos 41  T 39  P 2  inventado 4,9 por ciento
+
+**DOS PASOS PUENTE EN `41`, LOS DOS DE CLAUSULA, Y LOS DOS REESCRITOS EN LA BANDEJA ANTES DE NINGUNA
+INSERCION**, con su `CORRECCION DECLARADA de la vuelta 64` anexada al `resumen_teorico` y el texto viejo
+dentro (`.v64ext/corregir.py`, idempotente, y el `git diff` del commit de esta tarea lo ensena entero).
+**Cuentan como PUENTE aunque ya esten corregidos** (`ACTA 62` `62.5`). Y en la misma pasada, **cuatro
+entregables y un titulo** con puentes de la especie que la `63` bautizo SOPORTE, mas uno de RESPONSABLE y
+uno de DISPOSICION; no suman en la metrica porque no son pasos, y se corrigen igual:
+
+<!-- TALLADO: parcial salida=.v64ext/corregir.txt -->
+
+    $ python .v64ext/corregir.py
+    CAMBIA  construir_grafico_escalonado_pronosticos         paso 5
+    CAMBIA  construir_grafico_escalonado_pronosticos         titulo 
+    CAMBIA  construir_grafico_escalonado_pronosticos         entregable_esperado 
+    CAMBIA  construir_indicador_tendencia_patron             entregable_esperado 
+    CAMBIA  elegir_fabricar_pedido_pronostico                paso 8
+    CAMBIA  elegir_fabricar_pedido_pronostico                entregable_esperado 
+    CAMBIA  elegir_indicador_salida_trabajo_administrativo   entregable_esperado 
+    CAMBIA  emparejar_indicadores_efecto_contraefecto        entregable_esperado 
+
+| ficha | que traia | que dice hoy | especie | la linea que NO lo dice |
+|---|---|---|---|---|
+| `construir_grafico...` paso `5` | *y debajo el mismo pronostico* | *y con el el mismo pronostico* | **PASO PUENTE**, disposicion | `93:The stagger chart then provides the same forecast prepared in the following month, in the month after that, and so on` |
+| `construir_grafico...` titulo y entregable | *encima de los anteriores*; *una fila por mes, los meses en columnas* | *junto a los anteriores*; *cada pronostico mensual junto a los anteriores* | disposicion: la figura no esta en el texto, y la ficha decia *debajo* en un sitio y *encima* en otro | `91:as compared to several prior forecasts` |
+| `elegir_fabricar...` paso `8` | *Mezcla las dos vias donde te convenga* | *Cuenta con que las dos vias pueden convivir en la misma operacion* | **PASO PUENTE**, criterio: el libro describe, no manda mezclar | `109:Our breakfast factory makes its product to customer order, but buys from its suppliers` y `109:building” to forecast is a very common business practice` |
+| `elegir_fabricar...` entregable | *Escrito cual de las dos vias* | *Decidido cual de las dos vias* | soporte | L103 a L109 no mandan escribirlo |
+| `construir_indicador_tendencia...` entregable | *con el patron dibujado encima ... y escrito el porque* | *contra el patron ... y pensado el porque* | soporte y disposicion | `89:makes you think through why the results were what they were` |
+| `elegir_indicador_salida...` entregable | *con su pareja escrita al lado y el responsable de la calificacion nombrado* | *con su pareja de calidad al lado* | soporte y **responsable** | `37:as assessed by a senior manager with an office in that building`: el evaluador del ejemplo, no un responsable que se nombra |
+| `emparejar...` entregable | *su pareja escrita al lado ... en el mismo sitio* | *su pareja ... vigilados a la vez* | soporte | `31:you need to monitor both inventory levels and the incidence of shortages` |
+
+**Las citas de la tabla, pegadas** (`D.35`), con el corte en el propio `grep -o`, que imprime solo el trozo
+que casa (el fichero entero de las once en `.v64ext/citas.txt`):
+
+<!-- TALLADO: parcial salida=.v64ext/citas.txt -->
+
+    $ grep -n -o 'The stagger chart then provides the same forecast prepared in the following month, in the month after that, and so on' fuentes/grove_high_output/cap_03.md
+    93:The stagger chart then provides the same forecast prepared in the following month, in the month after that, and so on
+    $ grep -n -o 'as compared to several prior forecasts' fuentes/grove_high_output/cap_03.md
+    91:as compared to several prior forecasts
+    $ grep -n -o 'Our breakfast factory makes its product to customer order, but buys from its suppliers' fuentes/grove_high_output/cap_03.md
+    109:Our breakfast factory makes its product to customer order, but buys from its suppliers
+    $ grep -n -o 'building. to forecast is a very common business practice' fuentes/grove_high_output/cap_03.md
+    109:building” to forecast is a very common business practice
+    $ grep -n -o 'makes you think through why the results were what they were' fuentes/grove_high_output/cap_03.md
+    89:makes you think through why the results were what they were
+    $ grep -n -o 'as assessed by a senior manager with an office in that building' fuentes/grove_high_output/cap_03.md
+    37:as assessed by a senior manager with an office in that building
+    $ grep -n -o 'you need to monitor both inventory levels and the incidence of shortages' fuentes/grove_high_output/cap_03.md
+    31:you need to monitor both inventory levels and the incidence of shortages
+
+**Y NINGUNA CAE EN LA PUERTA TRAS CORREGIRLA**: la parte de la aduana que decide `CAERIA` (esquema, id,
+fuentes y guiones), corrida sobre las cinco fichas tocadas sin el barrido de vecinos, que lo sustituye `2.c`:
+
+<!-- TALLADO: parcial salida=.v64ext/validar.txt -->
+
+    $ python .v64ext/validar.py construir_grafico_escalonado_pronosticos construir_indicador_tendencia_patron elegir_fabricar_pedido_pronostico elegir_indicador_salida_trabajo_administrativo emparejar_indicadores_efecto_contraefecto
+    NO CAERIA  construir_grafico_escalonado_pronosticos  (esquema, id, fuentes y guiones en verde)
+    NO CAERIA  construir_indicador_tendencia_patron  (esquema, id, fuentes y guiones en verde)
+    NO CAERIA  elegir_fabricar_pedido_pronostico  (esquema, id, fuentes y guiones en verde)
+    NO CAERIA  elegir_indicador_salida_trabajo_administrativo  (esquema, id, fuentes y guiones en verde)
+    NO CAERIA  emparejar_indicadores_efecto_contraefecto  (esquema, id, fuentes y guiones en verde)
+
+> **DISCUTIBLES DE FIDELIDAD, MARCADOS ANTES DE SABER SI ACIERTO**
+>
+> - **`D64.1`**: `archivar_indicadores_resolver_problemas` paso `1` lo marco `T`. Su coda *en vez de dejar que se
+>   pierdan segun pasan los dias* no esta en L99, pero **no manda hacer nada** que L99 no mande: es el criterio
+>   con el que la `ACTA 62` `62.5` separo *apunta* (PUENTE) de *ordena* (TRANSCRIPCION). Un lector estricto
+>   que la cuente pone `cap_03` en `3` de `41`, el `7,3` por ciento: **la conclusion no cambia**.
+> - **`D64.2`**: `elegir_fabricar...` paso `9` y `construir_grafico...` paso `5` convierten en imperativo un ejemplo
+>   del libro (los titulados y el programa en L109; los pedidos entrantes de una division de Intel en L93).
+>   Los marco `T` en su contenido, porque L109 juzga la alternativa (*which would be foolish*) y L93 dice
+>   que ahi el grafico fue *more productive than* en ningun otro sitio; **del paso `5` solo cuento la
+>   clausula *debajo***. Si los dos contaran entero, `cap_03` sale `3` de `41`, el `7,3` por ciento, y
+>   con `D1` tambien, `4` de `41`, el `9,8`: **todavia por debajo del `10`**.
+
+### 64.2.b. LOS VECINOS: YA MEDIDOS, Y SE COMPRUEBA ANTES DE USARLOS
+
+**No se re corre ningun informe.** Los pares salen de los seis informes archivados de la fase ciega
+anulada (poblacion `462`), que lee `.v64ext/medir_pares.py` con la misma expresion de `.v63aud/vecinos_d005.py`,
+y cada par se mide otra vez con `aduana.medir` **antes** de corregir nada: **los `16` pares de `d005` y los `19`
+de `d140` salen hoy con las mismas tres seniales que su informe, al redondeo**, que es el control de que la
+lista vieja sirve (`.v64ext/pares_antes.txt`, poblacion `grafo 346 + bandejas 116 = 462`). Los veredictos van
+en `64.3`, juntos con los de `d140`, en bloques `VEREDICTOS LISTOS DE <id>`.
+
+### 64.2.c. LA SENIAL SE MOVIO CON LA CORRECCION, Y SE DICE (`d031`)
+
+**Cinco de las seis fichas cambiaron** (su `resumen_teorico` crece con la correccion declarada, y la senial
+`1` lo lee). **Mido cada par de esas fichas otra vez, en los dos sentidos**, mas los pares de `d141` y los
+que la lectura de `T4` pide (`.v64ext/pares_despues.txt`, `90` lineas). **Lo que se movio:**
+
+<!-- TALLADO: parcial salida=.v64ext/pares_despues.txt -->
+
+    $ grep -E "^d005 +emparejar_indicadores_efecto_contraefecto +revisar|^lectura dimensionar_plantilla_administrativa_pronostico +(construir_indicador_tendencia|elegir_fabricar)|^lectura elegir_fabricar_pedido_pronostico +dimensionar|^d005 +construir_indicador_tendencia_patron +emparejar|^d005 +elegir_fabricar_pedido_pronostico +emparejar|^d005 +emparejar_indicadores_efecto_contraefecto +elegir_indicador|^lectura construir_indicador_tendencia_patron +dimensionar" .v64ext/pares_despues.txt
+
+| par, en el sentido del candidato | informe archivado | HOY | que cambia |
+|---|---|---|---|
+| `emparejar...` contra `revisar_tres_preguntas_valor_carrera` | `0.354/0.000/0.386`, levantaba | `0.334/0.0/0.386`, **NO LEVANTA** | **DEJA DE LEVANTAR.** Mi lectura dice SANO (ajenos), pero **no va en el bloque `--veredicto`**: un veredicto sobre quien la senial no levanta se registra como lectura declarada, y eso seria mentir en la bitacora |
+| `construir_indicador_tendencia...` contra `dimensionar_plantilla...` | no estaba | `0.373/0.0/0.405`, **LEVANTA**; y `0.38` en el sentido contrario | **VECINO NUEVO**, y es un par de `d141` que la `ACTA 62` dio por no levantado en ningun sentido: hoy lo levanta la correccion. Entra en los dos bloques |
+| `dimensionar_plantilla...` contra `elegir_fabricar...` | no estaba | `0.353/0.143/0.455`, **LEVANTA**; el contrario no (`0.334`) | **VECINO NUEVO**, en un solo sentido: `D.36` pide que `dimensionar_plantilla` entre despues |
+| `emparejar...` contra `elegir_indicador_salida...` | no estaba en el informe de `emparejar` | `0.383/0.125/0.468`, **LEVANTA** | vecino nuevo en ese sentido; el otro ya levantaba |
+| `construir_indicador_tendencia...` contra `emparejar...` | no estaba | `0.393/0.143/0.427`, **LEVANTA** | vecino nuevo en ese sentido |
+| `elegir_fabricar...` contra `emparejar...` | no estaba | `0.362/0.0/0.419`, **LEVANTA** | vecino nuevo en ese sentido |
+
+**Y LO QUE ESTE METODO NO PUEDE VER, y lo digo:** un par a par solo mide los pares que alguien nombra. Si la
+correccion levanta a un vecino que ningun informe listaba y que ningun par de lectura mira, **aqui no sale**.
+**Quise cerrarlo barriendo las cinco fichas corregidas contra la poblacion entera con `aduana.buscar_vecinos`**
+(`.v64ext/barrer_corregidas.py`), **y no cabe**: una sola ficha paso de `590` s sin terminar y el corte la
+mato sin salida (lanzada a las `09:55`, `date` a las `10:05:37`). **Cinco serian mas de cincuenta minutos, y
+no lo lanzo** (encargo, punto `0`). **Entre los `22` de `cap_02` y `cap_03` si lo cierro**, con la matriz de
+`T4`; fuera de ellos, **lo encuentra el `insertar` de la `65`, que bloquea y pide leer**, que es el
+mecanismo de la casa para el vecino nuevo.
+
+## 64.3. TAREAS 2.b Y 3: LOS VEREDICTOS LISTOS DE `d005` Y DE `d140`, UNO POR VECINO
+
+**Leidos con los pasos de los dos delante** (`python .v64ext/pasos.py <a> <b>`, que imprime titulo, sede y pasos
+numerados de cada ficha) **y por la vara `6.1` de `AUDITOR_FORJA.md`, y solo esa**: que anade el hijo a la
+madre, sin bascula, nombrar no es procedimentar. La senial dijo donde mirar y ahi acabo su trabajo (`D.19`).
+**La direccion de cada `CONTINUA` la fija el ejemplar de `D.29`** (`formular_codigo_comercializacion_empresarial`
+madre de `verificar_afirmaciones_ambientales_publicidad`, leido hoy en el grafo): **es madre la ficha cuyo
+procedimiento, o cuya regla, el hijo nombra en una linea y usa**, y el hijo anade el suyo.
+
+**Los bloques salen de `.v64ext/veredictos_listos.txt`, que es la sede de las lineas**, y el instrumento que
+los comprueba hace dos cosas: **cada linea la acepta `parsear_veredicto`** (el parser de `--veredicto`), y **los
+vecinos de cada bloque son exactamente los que la senial levanta HOY en el sentido candidato a vecino**, con las
+fichas ya corregidas, ni uno de menos ni uno que ya no levante:
+
+<!-- TALLADO: parcial salida=.v64ext/comprobar_veredictos.txt -->
+
+    $ python .v64ext/comprobar_veredictos.py | grep -v '^  OK'
+    archivar_indicadores_resolver_problemas            lineas 4 | levantados hoy 4 | FALTAN 0 | SOBRAN 0 | medidos y ya no levantan 0
+    construir_grafico_escalonado_pronosticos           lineas 3 | levantados hoy 3 | FALTAN 0 | SOBRAN 0 | medidos y ya no levantan ['casar_flujo_fabricacion_flujo_ventas', 'representar_actividad_caja_negra_ventanas']
+    construir_indicador_tendencia_patron               lineas 4 | levantados hoy 4 | FALTAN 0 | SOBRAN 0 | medidos y ya no levantan ['representar_actividad_caja_negra_ventanas']
+    elegir_fabricar_pedido_pronostico                  lineas 2 | levantados hoy 2 | FALTAN 0 | SOBRAN 0 | medidos y ya no levantan ['casar_flujo_fabricacion_flujo_ventas', 'dimensionar_plantilla_administrativa_pronostico']
+    elegir_indicador_salida_trabajo_administrativo     lineas 2 | levantados hoy 2 | FALTAN 0 | SOBRAN 0 | medidos y ya no levantan ['dimensionar_plantilla_administrativa_pronostico']
+    emparejar_indicadores_efecto_contraefecto          lineas 4 | levantados hoy 4 | FALTAN 0 | SOBRAN 0 | medidos y ya no levantan ['revisar_tres_preguntas_valor_carrera']
+    construir_flujo_produccion_paso_limitante          lineas 3 | levantados hoy 3 | FALTAN 0 | SOBRAN 0 | medidos y ya no levantan 0
+    clasificar_trabajo_proceso_montaje_prueba          lineas 1 | levantados hoy 1 | FALTAN 0 | SOBRAN 0 | medidos y ya no levantan 0
+    rehacer_flujo_paso_limitante_capacidad             lineas 3 | levantados hoy 3 | FALTAN 0 | SOBRAN 0 | medidos y ya no levantan 0
+    preferir_inspeccion_proceso_prueba_destructiva     lineas 4 | levantados hoy 4 | FALTAN 0 | SOBRAN 0 | medidos y ya no levantan 0
+    dimensionar_inventario_materia_prima_reposicion    lineas 2 | levantados hoy 2 | FALTAN 0 | SOBRAN 0 | medidos y ya no levantan ['rehacer_flujo_paso_limitante_capacidad']
+    detectar_arreglar_fallo_etapa_menor_valor          lineas 1 | levantados hoy 1 | FALTAN 0 | SOBRAN 0 | medidos y ya no levantan ['casar_flujo_fabricacion_flujo_ventas', 'dimensionar_inventario_materia_prima_reposicion']
+    decidir_aceptar_rechazar_material_defectuoso       lineas 1 | levantados hoy 1 | FALTAN 0 | SOBRAN 0 | medidos y ya no levantan 0
+    dimensionar_plantilla_administrativa_pronostico    lineas 5 | levantados hoy 5 | FALTAN 0 | SOBRAN 0 | medidos y ya no levantan ['elegir_indicador_salida_trabajo_administrativo']
+    simplificar_trabajo_reducir_numero_pasos           lineas 1 | levantados hoy 1 | FALTAN 0 | SOBRAN 0 | medidos y ya no levantan 0
+    secciones 15, lineas 40, ilegibles 0
+
+**`15` bloques, `40` lineas, `0` ilegibles, `0` que falten y `0` que sobren.** La columna *medidos y ya no
+levantan* es la de `2.c`: esos pares se midieron y **no van en el bloque**, porque la senial no los levanta en
+ese sentido. **`detectar_arreglar_fallo_etapa_menor_valor` reutiliza sin reescribir la linea de
+`.v63ext/cmd_02_detectar.sh`**, que la `ACTA 62` `62.5` sostiene, citandola en su propia razon.
+
+**`d140` NO VIENE DE MI BARRIDO: los nueve informes de `.v63aud/` son de antes de mis correcciones**, y sus
+pares salen hoy iguales (`.v64ext/pares_antes.txt` y `pares_despues.txt`), salvo los dos vecinos nuevos de
+`dimensionar_plantilla`, que trae la correccion de sus vecinos de `d005` y que su bloque ya lleva.
+
+> **DISCUTIBLES DE VEREDICTO, MARCADOS ANTES DE ABRIR LA APERTURA SELLADA DE LA `63`** (este tramo se commitea
+> antes de abrirla, y el hash lo dice en `64.4`)
+>
+> - **`D64.3`**: **tres pares con texto por encima de `0,4` salen SANO**: `rehacer` y `preferir` (`0,460` y `0,445`),
+>   `preferir` contra `construir_flujo` (`0,410`). `EXTRACTOR.md` 11 dice que en el catalogo no habia ajenos por
+>   encima de `0,4`. Leidos los pasos, comparten el desayuno de `cap_02` y no un procedimiento. **No muevo la
+>   banda** (es una observacion de calibracion, no una regla que decida pares; `D.19`), **lo declaro**.
+> - **`D64.4`**: `dimensionar_inventario_materia_prima_reposicion` **CONTINUA** de `detectar_arreglar_fallo...`,
+>   con la senial apuntando a otro paso (el `2` del vecino) y la lectura encontrando el `4`. Un lector estricto
+>   puede leerlos hermanos de `cap_02` y dar SANO.
+> - **`D64.5`**: `construir_grafico_escalonado...` contra `construir_indicador_tendencia...` sale **SANO**, contra
+>   lo que la propia ficha del escalonado anunciaba (*mi veredicto sera CONTINUA*).
+
+### VEREDICTOS LISTOS DE archivar_indicadores_resolver_problemas
+
+    construir_indicador_tendencia_patron|SANO|Comparten el vocabulario de indicadores, norma y patron de cap_03, no procedimiento. El candidato guarda la serie de todos los indicadores en un archivo y la repasa cuando algo falla buscando desviaciones de la norma (pasos 1 a 4, L99); el vecino monta una ventana concreta, la salida contra el tiempo y contra un patron, para extrapolar y pensar la diferencia (pasos 1 a 6, L89). Ninguno despliega una linea del otro, y lo que queda fuera es procedimiento en los dos lados.
+    revisar_tres_preguntas_valor_carrera|SANO|Ajenos. El vecino son las tres preguntas de carrera de la introduccion (anadir valor, estar enchufado, probar lo nuevo); el candidato es el archivo de indicadores de la fabrica. La senial sale de verbos comunes como repasar y preguntar, no de un procedimiento compartido.
+    vencer_sindrome_grupo_pares_autoconfianza|SANO|Ajenos. El vecino infunde autoconfianza para vencer el sindrome del grupo de pares; el candidato archiva indicadores para diagnosticar fallos. Ningun paso de uno hace lo que hace un paso del otro.
+    cerrar_brecha_dos_preguntas_estrategia|SANO|Ajenos. El vecino cierra la brecha entre demanda y rendimiento con dos preguntas y llama estrategia al resultado; el candidato mantiene y repasa un archivo de indicadores. La senial sale de vocabulario de gestion, no de un paso compartido.
+
+### VEREDICTOS LISTOS DE construir_grafico_escalonado_pronosticos
+
+    construir_indicador_tendencia_patron|SANO|Dos ventanas hermanas que el libro CONTRASTA (L91, better than if you used a simple trend chart). El candidato compara cada pronostico con los anteriores y con el real (pasos 2, 4, 7 y 8); el vecino mide la salida real contra el tiempo y contra un patron (pasos 3 y 4). El paso 4 del candidato nombra el grafico de tendencia solo como termino de comparacion, sin tomar su procedimiento, y el vecino no nombra el escalonado: ninguno despliega una linea del otro. SANO y no CONTINUA, contra lo que la propia ficha anunciaba (DISCUTIBLE D64.5).
+    elegir_fabricar_pedido_pronostico|SANO|Comparten la palabra pronostico, no procedimiento. El vecino decide entre fabricar contra pedido o contra pronostico y asume el riesgo de inventario (pasos 1 a 7, L103 a L107); el candidato monta y lee un grafico que compara pronosticos sucesivos (pasos 1 a 8, L91 a L93). El vecino no dice como se pronostica ni el candidato decide la via de fabricacion.
+    emparejar_indicadores_efecto_contraefecto|SANO|Comparten vocabulario de indicadores, no procedimiento. El vecino empareja un indicador con el que mide su contraefecto para no pasarse (pasos 2 a 6, L31); el candidato compara pronosticos sucesivos de una misma salida (pasos 2 a 8, L91 a L93). Ninguno despliega una linea del otro.
+
+### VEREDICTOS LISTOS DE construir_indicador_tendencia_patron
+
+    construir_grafico_escalonado_pronosticos|SANO|El mismo par que el candidato escalonado lee desde su lado: dos ventanas que L91 contrasta. El candidato mide la salida real contra el tiempo y contra un patron (pasos 3 y 4); el vecino compara pronosticos sucesivos entre si y con el real (pasos 2, 4 y 7). Ninguno despliega una linea del otro (DISCUTIBLE D64.5).
+    archivar_indicadores_resolver_problemas|SANO|El mismo par que el archivo lee desde su lado. El candidato monta una ventana, la salida contra el tiempo y contra un patron (L89); el vecino guarda todos los indicadores y los repasa cuando algo falla (L99). Comparten indicadores y norma como palabras, no un paso.
+    emparejar_indicadores_efecto_contraefecto|SANO|Comparten vocabulario de indicadores, no procedimiento. El candidato mide una salida contra el tiempo y contra un patron y extrapola (pasos 3 a 6, L89); el vecino empareja cada indicador con el de su contraefecto y vigila los dos (pasos 4 a 6, L31). Ninguno despliega una linea del otro.
+    dimensionar_plantilla_administrativa_pronostico|CONTINUA|madre=construir_indicador_tendencia_patron|El paso 2 del vecino, deduce de los datos de tendencia unos patrones de hecho, usa el producto de este candidato, la salida medida contra el tiempo en una serie de meses (pasos 2 y 3, L89), y L125 lo dice con esas palabras (de facto standards, inferred from the trend data). El vecino anade procedimiento que la madre no tiene: pronosticar con esos patrones la gente necesaria, reasignar entre areas, casar la plantilla con el crecimiento o el descenso pronosticado, y el rigor contra la ley de Parkinson (pasos 3 a 7). Es dependencia de proceso como el ejemplar de D.29, no repeticion. Arista por lectura de d141 que la senial levanta HOY tras la correccion de esta ficha.
+
+### VEREDICTOS LISTOS DE elegir_fabricar_pedido_pronostico
+
+    construir_grafico_escalonado_pronosticos|SANO|El mismo par que el escalonado lee desde su lado. El candidato elige entre fabricar contra pedido y contra pronostico (pasos 1 a 7, L103 a L107); el vecino es un instrumento para leer pronosticos sucesivos (L91 a L93). El candidato no dice como se pronostica, y el vecino no decide la via.
+    emparejar_indicadores_efecto_contraefecto|SANO|Comparten el riesgo de inventario como palabra: en el candidato es el precio de fabricar contra pronostico (paso 6, L107) y en el vecino es el ejemplo del par nivel de inventario contra roturas (paso 5, L31). Procedimientos distintos, decidir la via de fabricacion y emparejar indicadores, y ninguno despliega una linea del otro.
+
+### VEREDICTOS LISTOS DE elegir_indicador_salida_trabajo_administrativo
+
+    evaluar_directivo_resultados_fortaleza|SANO|Comparten UNA linea: la regla de salida contra actividad con el ejemplo del vendedor, paso 2 del candidato (L35) y paso 1 del vecino, que es de zhuo_manager y la toma de Grove. Por la vara 6.1 sin bascula decide lo que queda fuera: en el candidato, las dos varas, la tabla de seis funciones y las parejas de calidad (pasos 1, 3 a 7); en el vecino, el juicio en dos mitades, resultados y fortaleza, los dos casos que enganan y el tiempo (pasos 3 a 9). Procedimiento propio en los dos lados, y ninguno despliega una linea del otro: no REPITE ni CONTINUA.
+    emparejar_indicadores_efecto_contraefecto|CONTINUA|madre=emparejar_indicadores_efecto_contraefecto|El paso 5 del candidato, empareja los indicadores de cantidad con una pareja que insista en la calidad, es el paso 4 de la madre, empareja el indicador con un segundo que mida su contraefecto, aplicado al trabajo administrativo, y el libro los une con sus palabras en L35 (Nowhere can indicators, and paired indicators, be of more help than in administrative work). El hijo anade lo que la madre no tiene: cualquier medida es mejor que ninguna, salida y no actividad, cosa fisica y contable, la tabla de seis funciones y las dos parejas desarrolladas (pasos 1 a 4, 6 y 7). No REPITE: la madre no elige indicadores administrativos, y el hijo no trata el contraefecto de pasarse.
+
+### VEREDICTOS LISTOS DE emparejar_indicadores_efecto_contraefecto
+
+    construir_indicador_tendencia_patron|SANO|El mismo par que la tendencia lee desde su lado. El candidato empareja un indicador con el de su contraefecto (pasos 4 a 6, L31); el vecino mide una salida contra el tiempo y un patron (L89). Comparten la palabra indicador, no un paso.
+    construir_grafico_escalonado_pronosticos|SANO|El mismo par que el escalonado lee desde su lado. El candidato empareja efecto y contraefecto (L31 a L33); el vecino compara pronosticos sucesivos (L91 a L93). Ninguno despliega una linea del otro.
+    elegir_fabricar_pedido_pronostico|SANO|El mismo par que elegir_fabricar lee desde su lado: el inventario es aqui el ejemplo del par nivel contra roturas (paso 5) y alli el riesgo de fabricar contra pronostico (paso 6). Procedimientos distintos.
+    elegir_indicador_salida_trabajo_administrativo|CONTINUA|madre=emparejar_indicadores_efecto_contraefecto|El mismo par que el indicador administrativo lee desde su lado, con la misma direccion: este candidato es la MADRE. Su paso 4, empareja el indicador con un segundo que mida el contraefecto, lo aplica el vecino al trabajo administrativo en su paso 5 (cantidad contra calidad), y L35 los une (and paired indicators). El vecino anade la eleccion del indicador administrativo con sus dos varas, su tabla y sus dos parejas desarrolladas (pasos 1 a 4, 6 y 7). La senial levanta este sentido HOY y no lo levantaba en el informe archivado.
+
+### VEREDICTOS LISTOS DE construir_flujo_produccion_paso_limitante
+
+    retirar_barreras_politicas_metodo|SANO|Ajenos, y la senial 3 lo levanta por la formula que es por donde el libro dice que se empieza, que tiene el paso 4 del candidato y la gemela que es con quien el libro dice que se hace esto en el paso 1 del vecino. El vecino, de smart_who, retira politicas, normas y practicas que estorban el metodo de contratacion; el candidato construye un flujo de produccion desde su paso limitante (L19 a L27). Ningun paso de uno hace lo que hace un paso del otro.
+    rehacer_flujo_paso_limitante_capacidad|CONTINUA|madre=construir_flujo_produccion_paso_limitante|El vecino rehace el flujo que este candidato construye: su paso 4, declara paso limitante nuevo el de la capacidad limitada y rehaz el flujo entero alrededor de el calculando otra vez hacia atras desde la hora de entrega, es la regla de los pasos 5 a 7 de la madre aplicada cuando la capacidad deja de ser infinita (L51, redo your flow around the new limiting step). El hijo anade lo que la madre no tiene: comprobar el supuesto de capacidad infinita, buscar la cola, contar la espera, dejar iguales los ciclos que la cola no toca y no mover el componente que manda la calidad (pasos 1 a 3, 5 y 6). No REPITE: la madre supone capacidad infinita.
+    preferir_inspeccion_proceso_prueba_destructiva|SANO|Comparten el vocabulario del desayuno de cap_02 (huevo, pan, flujo, proceso), no procedimiento. El candidato planea el flujo desde el paso limitante y escalona los demas (L19 a L27); el vecino elige entre la prueba funcional que destruye producto y la inspeccion dentro del proceso contra una averia silenciosa de la maquina continua (L67). Ninguno despliega una linea del otro. La senial de texto pasa de 0,4 en el sentido del vecino (DISCUTIBLE D64.3).
+
+### VEREDICTOS LISTOS DE clasificar_trabajo_proceso_montaje_prueba
+
+    preferir_inspeccion_proceso_prueba_destructiva|SANO|Comparten las palabras proceso y prueba, no procedimiento. El candidato clasifica el trabajo en proceso, montaje y prueba y ordena prueba unitaria, reproceso y prueba del sistema (L39 a L45); el vecino elige entre prueba funcional destructiva e inspeccion dentro del proceso para vigilar un parametro de una maquina continua (L67). El paso 3 del candidato nombra la prueba como clase de operacion, y el vecino no despliega esa clasificacion: responde a otra pregunta, como detectar a tiempo una deriva silenciosa.
+
+### VEREDICTOS LISTOS DE rehacer_flujo_paso_limitante_capacidad
+
+    preferir_inspeccion_proceso_prueba_destructiva|SANO|Comparten el vocabulario del desayuno de cap_02, y por eso la senial de texto da 0,460, por encima del 0,4 que en el catalogo solo tenian los gemelos. Leidos los pasos, no lo son: el candidato rehace el flujo alrededor de la cola del tostador (L51 a L55) y el vecino elige como inspeccionar una maquina continua (L67). Ningun paso de uno hace lo que hace un paso del otro (DISCUTIBLE D64.3).
+    construir_flujo_produccion_paso_limitante|CONTINUA|madre=construir_flujo_produccion_paso_limitante|El mismo par que la madre lee desde su lado, con la misma direccion. El paso 4 de este candidato rehace el flujo alrededor del nuevo paso limitante calculando otra vez hacia atras desde la hora de entrega, que es la regla de los pasos 5 a 7 de la madre aplicada con capacidad limitada (L51). El candidato anade la comprobacion de la capacidad infinita, la cola, la espera, los ciclos que no cambian y el componente de calidad (pasos 1 a 3, 5 y 6).
+    dimensionar_inventario_materia_prima_reposicion|SANO|Comparten el desayuno de cap_02, no procedimiento. El candidato rehace el flujo por la cola de un recurso (L51 a L55); el vecino inspecciona el material al recibirlo y dimensiona el inventario de materia prima por el tiempo de reposicion (L69). Ninguno despliega una linea del otro.
+
+### VEREDICTOS LISTOS DE preferir_inspeccion_proceso_prueba_destructiva
+
+    clasificar_trabajo_proceso_montaje_prueba|SANO|El mismo par que clasificar lee desde su lado: la prueba es alli una clase de operacion y aqui una eleccion entre dos maneras de vigilar un parametro. Ninguno despliega una linea del otro.
+    rehacer_flujo_paso_limitante_capacidad|SANO|El mismo par que rehacer lee desde su lado, a 0,445 de texto: vocabulario del desayuno, no procedimiento. El candidato elige como inspeccionar la maquina continua (L67); el vecino rehace el flujo por la cola (L51 a L55) (DISCUTIBLE D64.3).
+    construir_flujo_produccion_paso_limitante|SANO|El mismo par que construir_flujo lee desde su lado, a 0,410 de texto: vocabulario del desayuno. El candidato elige entre prueba destructiva e inspeccion en proceso (L67); el vecino planea el flujo desde el paso limitante (L19 a L27). Ninguno despliega una linea del otro (DISCUTIBLE D64.3).
+    dimensionar_inventario_materia_prima_reposicion|SANO|Hermanos de parrafos seguidos, L67 y L69, sobre la misma maquina de huevos, y con objetos distintos: el candidato vigila el parametro del proceso para que no se estropee el trabajo en curso; el vecino mira el material al recibirlo y dimensiona el inventario de materia prima. Ninguno despliega una linea del otro.
+
+### VEREDICTOS LISTOS DE dimensionar_inventario_materia_prima_reposicion
+
+    preferir_inspeccion_proceso_prueba_destructiva|SANO|El mismo par que preferir lee desde su lado: L67 vigila el proceso, L69 inspecciona la entrada y dimensiona el inventario. Objetos distintos, ninguna linea desplegada.
+    detectar_arreglar_fallo_etapa_menor_valor|CONTINUA|madre=detectar_arreglar_fallo_etapa_menor_valor|El paso 4 del vecino, encuentra y rechaza el huevo podrido cuando lo esta entregando el proveedor, es la regla de su paso 3 (detecta y arregla en la etapa de menor valor) aplicada a la entrada, en una linea; este candidato la despliega con procedimiento propio: que mirar al recibir, roto, podrido y de tamano mayor o menor, devolver y quedarse sin material, y el inventario de materia prima que evita parar, dimensionado por el tiempo de reposicion y pesado contra su coste (pasos 1 a 7, L69). L75 dice Thus, we should find and reject the rotten egg as it is being delivered from our supplier. Dependencia de proceso: el hijo es la inspeccion de entrada que la regla de la madre pide (DISCUTIBLE D64.4).
+
+### VEREDICTOS LISTOS DE detectar_arreglar_fallo_etapa_menor_valor
+
+    supervisar_tarea_delegada_etapa_menor_valor|CONTINUA|madre=detectar_arreglar_fallo_etapa_menor_valor|REUTILIZADO SIN REESCRIBIR de .v63ext/cmd_02_detectar.sh, lectura del extractor de la 63 que la ACTA 62 seccion 62.5 sostiene y que la ACTA 61 seccion 61.5 adjudico. El paso 2 del vecino aplica la regla del paso 3 de este candidato, supervisar en la etapa de menor valor, al seguimiento de una tarea delegada, y le anade siete pasos que la madre no tiene: el borrador en sucio como etapa de menor valor, la frecuencia variable por muestreo distinta por subordinado, la madurez relativa a la tarea, la desescalada segun mejora y la entrada al detalle al azar contra el cien por cien. El vecino espera en la bandeja, cap_04: la arista queda EN COLA por D.29 y se cablea cuando entre.
+
+### VEREDICTOS LISTOS DE decidir_aceptar_rechazar_material_defectuoso
+
+    dimensionar_plantilla_administrativa_pronostico|SANO|Ajenos dentro de cap_03. El candidato decide si se devuelve o se usa el material que no llega a especificacion, lo lleva a un grupo equilibrado de mandos y no transige en fiabilidad (L135 a L137); el vecino dimensiona la plantilla administrativa con el pronostico de su carga (L123 a L125). La senial sale de verbos comunes como pesar, decidir y aplicar, no de un paso compartido.
+
+### VEREDICTOS LISTOS DE dimensionar_plantilla_administrativa_pronostico
+
+    elegir_cinco_indicadores_diarios_fabrica|SANO|Comparten indicadores y pronostico como palabras. El vecino elige los cinco datos que el director de la fabrica mira cada manana y actua sobre ellos ese dia (L15 a L29); el candidato dimensiona la plantilla de una unidad administrativa con patrones deducidos de la tendencia (L123 a L125). El paso 1 del candidato pide los indicadores que caracterizan a una unidad ADMINISTRATIVA, que es lo que despliega elegir_indicador_salida_trabajo_administrativo y no este vecino.
+    simplificar_trabajo_reducir_numero_pasos|SANO|Ajenos dentro de cap_03. El vecino simplifica el trabajo dibujando el flujo, contando pasos y tirando los que no aguantan la pregunta (L169 a L171); el candidato dimensiona la plantilla con el pronostico. Los dos quieren productividad administrativa, que es la meta y no el procedimiento.
+    decidir_aceptar_rechazar_material_defectuoso|SANO|El mismo par que decidir_aceptar lee desde su lado: material fuera de especificacion contra plantilla administrativa. Ningun paso compartido.
+    construir_indicador_tendencia_patron|CONTINUA|madre=construir_indicador_tendencia_patron|El mismo par que la tendencia lee desde su lado, con la misma direccion: el paso 2 de este candidato deduce de los datos de tendencia unos patrones de hecho (L125, inferred from the trend data), que es usar el producto de la madre, la salida medida contra el tiempo en una serie de meses (sus pasos 2 y 3, L89). El candidato anade el pronostico de la gente necesaria, la reasignacion, el casar la plantilla con la actividad y el rigor contra la ley de Parkinson (pasos 3 a 7). Arista por lectura de d141 que la senial levanta HOY.
+    elegir_fabricar_pedido_pronostico|SANO|Comparten fabricar contra pronostico como idea: el paso 4 del candidato pronostica la demanda de trabajo y ajusta la salida (L123), y el vecino decide entre fabricar contra pedido y contra pronostico en una fabrica y asume su riesgo de inventario (L103 a L107). El vecino no ensena a pronosticar ni a dimensionar gente, y el candidato no elige entre dos vias: no es la madre de esta ficha (d141, leido y no sostenido). La senial levanta este sentido HOY, tras la correccion del vecino, y el contrario no.
+
+### VEREDICTOS LISTOS DE simplificar_trabajo_reducir_numero_pasos
+
+    dimensionar_plantilla_administrativa_pronostico|SANO|El mismo par que la plantilla lee desde su lado: simplificar el flujo contando y tirando pasos (L169 a L171) contra dimensionar la plantilla con el pronostico (L123 a L125). La meta comun, productividad administrativa, no es un paso compartido.
+

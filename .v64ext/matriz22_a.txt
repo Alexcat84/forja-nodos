@@ -1,0 +1,14 @@
+LEVANTA  construir_flujo_produccion_paso_limitante        -> rehacer_flujo_paso_limitante_capacidad           texto 0.412 familia 0.429 paso 0.43  similitud_texto, familia_id
+LEVANTA  construir_flujo_produccion_paso_limitante        -> preferir_inspeccion_proceso_prueba_destructiva   texto 0.397 familia 0.0 paso 0.421  similitud_texto
+LEVANTA  clasificar_trabajo_proceso_montaje_prueba        -> preferir_inspeccion_proceso_prueba_destructiva   texto 0.372 familia 0.25 paso 0.461  similitud_texto
+LEVANTA  rehacer_flujo_paso_limitante_capacidad           -> construir_flujo_produccion_paso_limitante        texto 0.419 familia 0.429 paso 0.43  similitud_texto, familia_id
+LEVANTA  rehacer_flujo_paso_limitante_capacidad           -> preferir_inspeccion_proceso_prueba_destructiva   texto 0.46 familia 0.0 paso 0.378  similitud_texto
+LEVANTA  rehacer_flujo_paso_limitante_capacidad           -> dimensionar_inventario_materia_prima_reposicion  texto 0.357 familia 0.0 paso 0.387  similitud_texto
+LEVANTA  equilibrar_capacidad_personal_inventario_plazo   -> construir_indicador_tendencia_patron             texto 0.354 familia 0.0 paso 0.421  similitud_texto
+LEVANTA  preferir_inspeccion_proceso_prueba_destructiva   -> construir_flujo_produccion_paso_limitante        texto 0.41 familia 0.0 paso 0.442  similitud_texto
+LEVANTA  preferir_inspeccion_proceso_prueba_destructiva   -> clasificar_trabajo_proceso_montaje_prueba        texto 0.366 familia 0.25 paso 0.461  similitud_texto
+LEVANTA  preferir_inspeccion_proceso_prueba_destructiva   -> rehacer_flujo_paso_limitante_capacidad           texto 0.445 familia 0.0 paso 0.384  similitud_texto
+LEVANTA  preferir_inspeccion_proceso_prueba_destructiva   -> dimensionar_inventario_materia_prima_reposicion  texto 0.384 familia 0.0 paso 0.417  similitud_texto
+LEVANTA  dimensionar_inventario_materia_prima_reposicion  -> preferir_inspeccion_proceso_prueba_destructiva   texto 0.391 familia 0.0 paso 0.403  similitud_texto
+LEVANTA  dimensionar_inventario_materia_prima_reposicion  -> detectar_arreglar_fallo_etapa_menor_valor        texto 0.357 familia 0.0 paso 0.401  similitud_texto
+FIN filas 0 a 6 de 22, 126 pares medidos, 486 s

@@ -1,0 +1,22 @@
+$ grep -n -o 'The stagger chart then provides the same forecast prepared in the following month, in the month after that, and so on' fuentes/grove_high_output/cap_03.md
+93:The stagger chart then provides the same forecast prepared in the following month, in the month after that, and so on
+$ grep -n -o 'as compared to several prior forecasts' fuentes/grove_high_output/cap_03.md
+91:as compared to several prior forecasts
+$ grep -n -o 'Our breakfast factory makes its product to customer order, but buys from its suppliers' fuentes/grove_high_output/cap_03.md
+109:Our breakfast factory makes its product to customer order, but buys from its suppliers
+$ grep -n -o 'on the basis of forecasted demand' fuentes/grove_high_output/cap_03.md
+109:on the basis of forecasted demand
+$ grep -n -o 'building. to forecast is a very common business practice' fuentes/grove_high_output/cap_03.md
+109:building” to forecast is a very common business practice
+$ grep -n -o 'makes you think through why the results were what they were' fuentes/grove_high_output/cap_03.md
+89:makes you think through why the results were what they were
+$ grep -n -o 'and also against some standard or expected level' fuentes/grove_high_output/cap_03.md
+89:and also against some standard or expected level
+$ grep -n -o 'as assessed by a senior manager with an office in that building' fuentes/grove_high_output/cap_03.md
+37:as assessed by a senior manager with an office in that building
+$ grep -n -o 'you need to monitor both inventory levels and the incidence of shortages' fuentes/grove_high_output/cap_03.md
+31:you need to monitor both inventory levels and the incidence of shortages
+$ grep -n -o 'If you do not systematically collect and maintain an archive of indicators' fuentes/grove_high_output/cap_03.md
+99:If you do not systematically collect and maintain an archive of indicators
+$ grep -n -o 'means the actual number for that month' fuentes/grove_high_output/cap_03.md
+95:means the actual number for that month
