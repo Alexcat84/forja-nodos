@@ -60548,3 +60548,37 @@ su fila de `.v66ext/aristas_lectura.txt` cita: la `7` para la `21` (madre paso `
 
 Copias de la `67` con la ruta cambiada a `.v68ext/` (`7.F`): `insertar.py`, `esperar.py`, `fila.py`, `arista.py`,
 `tras_insertar.sh`, `empujar_fila.sh` y `bloque_arista.sh`; cada una lo dice en su cabecera.
+
+### Fila `21`: `agrupar_interrupciones_subordinados_reuniones_regulares`, **INSERTADO** en `1786.6` s, codigo `0`, commit `4074414`
+
+La aduana de hoy: **BLOQUEARIA** con `8` vecino(s) contra `479`; lineas `--veredicto` pasadas: `8`. Salida entera en `.v68ext/insertar_21_agrupar_interrupciones_subordinados_reuniones_regulares.txt`.
+
+<!-- TALLADO: parcial salida=.v68ext/insertar_21_agrupar_interrupciones_subordinados_reuniones_regulares.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `sostener_contacto_oferta_aceptacion` | paso_contra_nodo | 0.094 | 0.000 | 0.700 | SANO |
+| `agendar_cuidados_propios_cumplirlos` | paso_contra_nodo | 0.129 | 0.000 | 0.615 | SANO |
+| `nombrar_delegados_amigos_casa` | paso_contra_nodo | 0.127 | 0.000 | 0.609 | SANO |
+| `llevar_inventario_proyectos_discrecionales` | similitud_texto | 0.352 | 0.000 | 0.478 | SANO |
+| `preparar_respuestas_estandar_interrupciones_repetidas` | similitud_texto | 0.472 | 0.111 | 0.417 | SANO |
+| `canalizar_interrupciones_cartel_hora_oficina` | similitud_texto | 0.403 | 0.111 | 0.452 | SANO |
+| `buscar_regularidad_bloques_iguales_trabajo_mando` | similitud_texto | 0.380 | 0.000 | 0.415 | SANO |
+| `identificar_paso_limitante_jornada_desfases` | similitud_texto | 0.351 | 0.000 | 0.377 | SANO |
+
+**Los ocho vecinos son los ocho de su bloque y las ocho lineas se pasaron tal cual**; ninguno nuevo contra `479` (`388` del grafo mas `91` de bandejas, linea `14` de su salida), ninguno que dejara de levantarse.
+
+**Arista por lectura cableada con la madre ya en el grafo** (`D.29`, sostenida en la `ACTA 65` `65.4.b`): `agrupar_tareas_semejantes_aprovechar_preparacion > agrupar_interrupciones_subordinados_reuniones_regulares`, `--paso 3`, el que su fila (linea `12` de `.v66ext/aristas_lectura.txt`) cita. Salida entera en `.v68ext/arista_agrupar_tareas_semejantes_aprovechar_preparacion__agrupar_interrupciones_subordinados_reuniones_regulares.txt`:
+
+    $ python forja.py arista --madre agrupar_tareas_semejantes_aprovechar_preparacion --hijo agrupar_interrupciones_subordinados_reuniones_regulares --paso 3 --razon <fila 12> --veredicto CONTINUA --cita-veredicto <fila 12>
+    DECLARACION DE ARISTA POR LECTURA (D.37)
+      madre: agrupar_tareas_semejantes_aprovechar_preparacion
+      hijo : agrupar_interrupciones_subordinados_reuniones_regulares
+      paso citado de la madre: 3
+        Para que el trabajo de mando avance con eficiencia, usa un mismo esfuerzo de preparacion y aplicalo a todo un grupo de actividades semejantes.
+      señales del par: familia_id 0.111, paso_contra_nodo 0.596, similitud_texto 0.318
+        NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+    GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: agrupar_tareas_semejantes_aprovechar_preparacion > agrupar_interrupciones_subordinados_reuniones_regulares
+      razon en bitacora/VEREDICTOS.jsonl
+
