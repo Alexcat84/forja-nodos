@@ -1,0 +1,6 @@
+8,9c8,9
+< 7   buscar_actividad_alta_palanca_tres_vias                  cap_04 P19  -                                                  479  BLOQUEARIA 7    7     SI
+< 8   elegir_momento_actividad_palanca_maxima                  cap_04 P20  -                                                  479  BLOQUEARIA 7    7     SI
+---
+> 7   buscar_actividad_alta_palanca_tres_vias                  cap_04 P19  subir_productividad_gerencial_tres_vias            479  BLOQUEARIA 7    7     SI
+> 8   elegir_momento_actividad_palanca_maxima                  cap_04 P20  buscar_actividad_alta_palanca_tres_vias            479  BLOQUEARIA 7    7     SI

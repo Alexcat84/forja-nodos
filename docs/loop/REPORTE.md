@@ -59586,3 +59586,257 @@ vacio.
 
 Corridos otra vez despues de anexar ese bloque, cuentan `30` bloques y `29` comandos, con `0` rotos y `0` mudos:
 la diferencia son los dos comandos del propio bloque, que se cuentan a si mismos.
+
+
+# VUELTA 67 DE LA LINEA SERIAL, lote 7 (`grove_high_output`), **CLASE INSERCION**: la relectura conjunta de dos pares y una arista de `cap_04`, y despues las `20` primeras filas de su orden, una por vez
+
+*Encargo escrito por el auditor al cerrar la `ACTA 65`. Clase impresa por `python scripts/deuda.py --clase 67`
+(`LIBRE`, van `3` de `5` desde la `64`). **Un `insertar` por vez, y ninguno vivo cuando el turno termine.***
+
+**REPORTE ABIERTO AL EMPEZAR** (`EXTRACTOR.md` 3). Las filas se llenan al cerrarse cada tarea; cada insercion
+anexa su fila al volver, con su commit. Si la vuelta se corta, lo que falte es exactamente lo que no tiene fila.
+
+| tarea | que | estado |
+|---|---|---|
+| `T1` | los registros de la `ACTA 65` | **CERRADA** (`67.1`) |
+| `T2` | la relectura conjunta de `C1`, `C2` y `C3`, antes del primer `insertar` | **CERRADA** (`67.2`) |
+| `T3` | lo que entra es lo que se leyo: las `20` fichas contra `d8f4e2a` | **CERRADA** (`67.3`) |
+| `T4` | las filas `1` a `20` del orden de `cap_04`, una por vez | abierta: cada fila se anexa al volver su `insertar` (`67.4`) |
+| `T5` | el cierre: censo, aristas, `PASOS INVENTADOS`, `D.61`, `R5`, guardas, commit | abierta (`67.5`) |
+
+## 67.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
+
+**Lo pendiente, commiteado primero** (`EXTRACTOR.md` 1): `TABLERO.jsonl`, `loop.log`, `ultimo_auditor.json` y
+`ultimo_extractor.json` del arnes, en `5e3664f`, gate verde, empujado.
+
+<!-- TALLADO: parcial salida=.v67ext/apertura.txt -->
+
+    $ git rev-parse HEAD && git log -1 --format=%cI && git rev-parse --abbrev-ref HEAD
+    5e3664fb60eb03fb246ceaaa05de5db64c45ed1c
+    2026-09-24T06:31:50-04:00
+    extraccion-mundo-11
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 368
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+    $ bash .v67ext/censo.sh
+    nodos en dataset/nodos.jsonl        : 368
+    veredictos en bitacora              : 796
+    pares mutuos                        : 1
+    bandeja cuarentena/grove_high_output: 69
+    insertados de grove_high_output     : 23
+    cerrojos en procesos/               : 
+    $ python scripts/deuda.py --clase 67
+    LIBRE
+      van 3 de 5 desde la ultima de saneamiento (la 64), con 58 deuda(s) esperando
+
+**Coincide con el cierre de la `66`** (`368`, `796`, `1`, `69`, `23`: `ACTA 65` `65.1`), y **`procesos/` esta vacio:
+ningun cerrojo que romper.** `.v67ext/censo.sh` es copia de `.v66ext/censo.sh` con el comentario cambiado, y se
+vuelve a correr al cerrar. **`deuda.py` dice ya `58`**: la `d168` anotada por la `ACTA 65`, como su `65.10` anunciaba.
+
+## 67.D. **LOS DISCUTIBLES, MARCADOS ANTES DE SABER SI ACIERTO** (`EXTRACTOR.md` 8)
+
+| | que | por que lo marco |
+|---|---|---|
+| `D67.1` | **`C2`, `elegir_momento` hijo de `buscar_actividad`: la paso a `CONTINUA`** y cambio mi linea (`67.2`) | el auditor la llama *la mas delgada*; el hijo usa el producto de la madre por su condicion escrita y por L215, pero sus pasos `2` y `3` son el ejemplo de la primera via y no una via entera |
+| `D67.2` | **`C3`, la arista `buscar_actividad` a `detectar_palanca`: NO SOSTENGO**, contra el `SOSTENGO, DUDA` del auditor (`67.2`) | es una discrepancia viva: decido que el repaso de la condicion del hijo es el mandato de L193 y no el producto de la madre. Si el auditor lee lo contrario, la arista se cablea despues con `forja.py arista` sin mover dato |
+| `D67.3` | **la fila `NO SOSTENGO` de `subir_productividad` a los cinco de L259 a L291 queda `NO SOSTENGO` con la razon reescrita** por `6.1` (`67.2`) | su razon vieja usaba la misma vara `9.1` restriccion `1` que cae en `C1`, y el encargo no la lista; la reescribo porque si no mi fichero diria dos cosas, y la clase la sostengo porque ninguna de las cinco condiciones es el producto del paso `2` de `subir` |
+| `D67.4` | **`subir_productividad` con `elegir_momento` sigue `SANO`, con la razon reescrita en sus dos lineas** (`67.2`) | la razon vieja usaba `9.1` restriccion `1`; con `C1` y `C2` son abuelo y nieto por `buscar`, y no cableo la arista directa |
+| `D67.5` | **`.v67ext/insertar.py` salta las lineas `#` del bloque de cada candidato** | la correccion declarada de la `TAREA 2` deja la linea vieja encima como comentario dentro del bloque, y la copia de la `66` la habria pasado como `--veredicto`. `comprobar_veredictos.py` y `orden.py` ya las saltaban |
+
+## 67.1. TAREA 1: LOS REGISTROS DE LA `ACTA 65`, SIN REABRIR EL ARGUMENTO (`D.47`)
+
+| que | donde |
+|---|---|
+| mis ocho discutibles de fidelidad y de metodo `D66.1` a `D66.7` se sostienen: `cap_04` queda en `0` de `156`, firmado. `D66.8`, `D66.10` y `D66.11` coinciden con la ciega del auditor y se sostienen | `ACTA 65` `65.4.a` y `65.4.b` |
+| `decir_no` con `usar_calendario`: SANO, gana mi lectura, y el orden queda como esta | `65.4.b` |
+| dos pares y una arista van a relectura conjunta: es mi `T2` | `65.4.b` |
+| una caida de `REPORTE` que no acumula: en `66.2` la frase de la fila `22` es la linea `7` de su salida y no la `6` | `65.2` |
+| `R5` cumplido, las cinco rachas de la serial en cero, y el cierre estricto vuelve a verde: **en la `67` un rojo del cierre estricto es mio** | `65.1`, `65.2`, `65.7` |
+
+**`T1` CERRADA.**
+
+## 67.2. TAREA 2: LA RELECTURA CONJUNTA (`AUDITOR_FORJA.md` `1.3`), ANTES DEL PRIMER `insertar`
+
+**Los pasos de los cuatro, impresos primero** (salida entera en `.v67ext/pasos_conjunta.txt`), y el caso del auditor
+leido en la `ACTA 65` `65.4.b`:
+
+    $ python .v64aud/pasos.py subir_productividad_gerencial_tres_vias buscar_actividad_alta_palanca_tres_vias elegir_momento_actividad_palanca_maxima detectar_palanca_negativa_actividad_mando | grep -E '^=====|cond:|P[0-9]\. ' | cut -c1-200
+    ===== subir_productividad_gerencial_tres_vias | cuarentena\grove_high_output\subir_productividad_gerencial_tres_vias.json
+      cond: Cuando quieres que tu trabajo de mando rinda mas y solo se te ocurre trabajar mas horas, que no es ninguna de las tres vias que el libro cuenta.
+      P1. Cuenta la productividad de un mando como lo que el libro dice que es: su salida por unidad de tiempo trabajado.
+      P2. Sube el ritmo con el que ejecutas tus actividades, o sea acelera tu trabajo.
+      P3. Sube la palanca asociada a las distintas actividades de mando que haces.
+      P4. Corre la mezcla de tus actividades desde las de menor palanca hacia las de mayor palanca.
+    ===== buscar_actividad_alta_palanca_tres_vias | cuarentena\grove_high_output\buscar_actividad_alta_palanca_tres_vias.json
+      cond: Cuando ya sabes que quieres subir la palanca de lo que haces y te falta saber donde esta la palanca alta, o sea por donde se reconoce una actividad que rinde muy por encima de las demas.
+      P1. Repasa tus actividades buscando las de alta palanca, y busca por las tres vias basicas por las que el libro dice que se consiguen.
+      P2. Primera via: aquella en la que mucha gente queda afectada por un solo mando.
+      P3. Segunda via: aquella en la que la actividad o la conducta de una persona durante un periodo largo de tiempo queda afectada por un conjunto de palabras o de acciones del mando que es breve y esta
+      P4. Tercera via: aquella en la que el trabajo de un grupo grande queda afectado por un individuo que aporta una pieza de conocimiento o de informacion unica y clave.
+    ===== elegir_momento_actividad_palanca_maxima | cuarentena\grove_high_output\elegir_momento_actividad_palanca_maxima.json
+      cond: Cuando la actividad que tienes delante es de las de alta palanca y esta a tiempo de hacerse antes o despues, porque hacerla tarde no la hace menos actividad pero si la hace valer mucho menos.
+      P1. Cuenta con que la palanca de una actividad depende de cuando se ejerce.
+      P2. Haz por delante del acontecimiento el trabajo que lo prepara: define con antelacion exactamente que informacion hay que reunir y presentar en cada etapa del proceso, y deja puesto quien responde
+      P3. Cuenta con lo que ese trabajo hecho por delante consigue: afecta directamente al trabajo posterior de mucha gente y le quita confusion y ambiguedad a una poblacion grande durante un periodo larg
+      P4. Cuenta tambien con lo contrario: el mismo trabajo hecho tarde, corriendo despues a ayudar a un mando a definir sus pautas y sus hitos, tiene mucha menos palanca.
+      P5. Cuando la actividad sea de las que dependen del momento, atiendela inmediatamente: si te enteras de que un subordinado valioso ha decidido irse, dirigete a esa situacion en el acto si quieres qu
+      P6. Cuenta con que si la aplazas pierdes todas tus posibilidades.
+      P7. Ten presente la oportunidad del momento, que muchas veces es critica, para sacar a tus actividades la maxima palanca.
+    ===== detectar_palanca_negativa_actividad_mando | cuarentena\grove_high_output\detectar_palanca_negativa_actividad_mando.json
+      cond: Cuando repasas tus propias actividades de mando buscando su palanca y quieres saber cuales de ellas estan restando salida a la organizacion en vez de sumarla.
+      P1. Cuenta con que la palanca tambien puede ser negativa: hay actividades de mando que reducen la salida de una organizacion.
+      P2. Empieza por el caso simple: si eres participante clave de una reunion y llegas sin preparar, no solo desperdicias el tiempo de los asistentes por tu falta de preparacion, que es el coste directo
+      P3. Revisa si estas desanimado: un mando desanimado empieza casi de inmediato a afectar a la gente de alrededor sin darse cuenta, y el desanimo se extiende pronto por toda su organizacion.
+      P4. Cuenta con que de ahi se sale cuando alguien del propio equipo le dice por fin al mando lo que le esta haciendo a la gente que tiene debajo.
+      P5. Revisa si estas dando largas: dar largas es aplazar una decision que va a afectar al trabajo de otras personas, y en la practica la falta de decision es lo mismo que una decision negativa, porqu
+      P6. Cuenta con que el desanimo y las largas tienen palanca negativa practicamente ilimitada y son muy dificiles de contrarrestar, porque su efecto sobre la organizacion es a la vez omnipresente y es
+      P7. Revisa si te estas entrometiendo: hay intromision cuando un supervisor usa su conocimiento y su experiencia superiores sobre las responsabilidades de un subordinado para tomar el mando de la sit
+      P8. Aplica la prueba concreta que da el libro: si un mando superior ve un indicador que muestra una tendencia indeseable y dicta a la persona responsable un conjunto detallado de acciones a tomar, e
+      P9. Cuenta con lo que la intromision produce: tras verse expuesto a muchos episodios asi, el subordinado pasa a tomar una vision mucho mas restringida de lo que se espera de el, muestra menos inicia
+
+**Las lineas del libro que deciden, pegadas** (`D.35`):
+
+    $ awk 'NR==193||NR==195||NR==199||NR==201||NR==203||NR==207||NR==219 {print NR": "substr($0,1,170)}' fuentes/grove_high_output/cap_04.md | sed 's/\xe2\x80\x94/ /g'
+    193: This equation says that for every activity a manager performs A1, A2, and so on the output of the organization should increase by some degree. The extent to which that ou
+    195: Managerial productivity that is, the output of a manager per unit of time worked can be increased in three ways:
+    199: 2. Increasing the leverage associated with the various managerial activities.
+    201: 3. Shifting the mix of a manager’s activities from those with lower to those with higher leverage.
+    203: Let us consider first the leverage of various types of managerial work.
+    207: These can be achieved in three basic ways:
+    219: Leverage can also be negative. Some managerial activities can reduce the output of an organization. I mean something very simple. Suppose I am a key participant at a meet
+
+| | par | decido, por `6.1` y solo esa | la razon, en una linea |
+|---|---|---|---|
+| `C1` | `subir_productividad` con `buscar_actividad` | **`CONTINUA`, madre `subir`. GANA LA LINEA DEL AUDITOR** | **la tension se resuelve del lado de los medios:** ritmo, palanca y mezcla son objetos de trabajo que L197 a L201 nombran uno a uno, asi que `subir` pasa `9.1` y entra en esta tanda. La condicion escrita de `buscar` es el producto de los pasos `3` y `4` de `subir`, y L203 abre su tramo. **Mi razon vieja usaba `9.1` restriccion `1` para decidir una arista, que es lo que la restriccion `3` prohibe** |
+| `C2` | `buscar_actividad` con `elegir_momento` | **`CONTINUA`, madre `buscar`. GANA LA LINEA DEL AUDITOR** (`D67.1`) | la condicion escrita de `elegir` es *Cuando la actividad que tienes delante es de las de alta palanca*, el producto de `buscar`; L215 dice del ejemplo de la primera via *leverage that depends, however, on when it is performed*. Mi razon vieja contestaba si `elegir` despliega una via, que no es la pregunta |
+| `C3` | arista `buscar_actividad` a `detectar_palanca` | **NO SOSTENGO. SANO** (`D67.2`) | el repaso de la condicion de `detectar` no es el producto de `buscar`: es el mandato de L193, que el paso `1` de `buscar` transcribe (`D66.3`, sostenido `T` por L193) y del que cuelgan los dos. El producto de `buscar` son las actividades reconocidas por sus tres vias, y ningun paso de `detectar` las usa ni nombra una via: el hijo busca en el mismo repaso las de signo contrario (L219) |
+
+**Y DOS LINEAS QUE CAEN CON EL MISMO ARGUMENTO, AUNQUE EL ENCARGO NO LAS LISTE**: `subir` con `elegir` (`D67.4`) y la
+fila `NO SOSTENGO` de `subir` a los cinco de L259 a L291 (`D67.3`) decian lo mismo que la razon vieja de `C1`. **Las dos
+clases se sostienen por `6.1` y sus razones se reescriben**; ninguna cablea nada.
+
+**Escrito por correccion declarada, sin borrar** (`.v67ext/corregir_t2.py`; las copias de antes en
+`.v67ext/veredictos_listos_antes.txt` y `.v67ext/aristas_lectura_antes.txt`): cada linea vieja queda encima de la nueva
+como comentario `# vuelta 67, <motivo>:`.
+
+    $ grep -c '^# vuelta 67' .v66ext/veredictos_listos.txt .v66ext/aristas_lectura.txt
+    .v66ext/veredictos_listos.txt:6
+    .v66ext/aristas_lectura.txt:2
+
+    $ git diff --stat .v66ext/
+     .v66ext/aristas_lectura.txt   |  5 ++++-
+     .v66ext/veredictos_listos.txt | 18 ++++++++++++------
+     2 files changed, 16 insertions(+), 7 deletions(-)
+
+**Las dos comprobaciones, otra vez** (copias sin cambios en `.v67ext/`, salidas enteras en `.v67ext/comprobar_veredictos.txt`
+y `.v67ext/orden.txt`):
+
+    $ python .v67ext/comprobar_veredictos.py | grep -E 'CONTINUA|^secciones|^ARISTAS|levantada hoy'
+      OK  reunir_informacion_gerencial_vias_variadas       escalonar_fuentes_informacion_gerencial          CONTINUA  madre=reunir_informacion_gerencial_vias_variadas
+      OK  escalonar_fuentes_informacion_gerencial          reunir_informacion_gerencial_vias_variadas       CONTINUA  madre=reunir_informacion_gerencial_vias_variadas
+      OK  subir_productividad_gerencial_tres_vias          buscar_actividad_alta_palanca_tres_vias          CONTINUA  madre=subir_productividad_gerencial_tres_vias
+      OK  buscar_actividad_alta_palanca_tres_vias          subir_productividad_gerencial_tres_vias          CONTINUA  madre=subir_productividad_gerencial_tres_vias
+      OK  buscar_actividad_alta_palanca_tres_vias          elegir_momento_actividad_palanca_maxima          CONTINUA  madre=buscar_actividad_alta_palanca_tres_vias
+      OK  elegir_momento_actividad_palanca_maxima          buscar_actividad_alta_palanca_tres_vias          CONTINUA  madre=buscar_actividad_alta_palanca_tres_vias
+      OK  supervisar_tarea_delegada_etapa_menor_valor      detectar_arreglar_fallo_etapa_menor_valor        CONTINUA  madre=detectar_arreglar_fallo_etapa_menor_valor
+    secciones 22 de 22, lineas 99, ilegibles 0, vecinos sin linea 0, lineas sin vecino 0
+    ARISTAS POR LECTURA (SOSTENGO) contra el barrido de hoy
+      construir_flujo_produccion_paso_limitante          > identificar_paso_limitante_jornada_desfases          levantada hoy: NO
+      delegar_tarea_base_comun_seguimiento               > supervisar_tarea_delegada_etapa_menor_valor          levantada hoy: NO
+      delegar_tarea_base_comun_seguimiento               > supervisar_decision_delegada_preguntas_concretas     levantada hoy: NO
+      transmitir_objetivos_prioridades_preferencias      > delegar_tarea_base_comun_seguimiento                 levantada hoy: NO
+      variar_frecuencia_inspeccion_nivel_calidad         > supervisar_tarea_delegada_etapa_menor_valor          levantada hoy: NO
+      identificar_paso_limitante_jornada_desfases        > usar_calendario_herramienta_planificacion_produccion levantada hoy: NO
+      agrupar_tareas_semejantes_aprovechar_preparacion   > agrupar_interrupciones_subordinados_reuniones_regulares levantada hoy: NO
+      buscar_regularidad_bloques_iguales_trabajo_mando   > canalizar_interrupciones_cartel_hora_oficina         levantada hoy: NO
+      representar_actividad_caja_negra_ventanas          > buscar_regularidad_bloques_iguales_trabajo_mando     levantada hoy: NO
+
+<!-- TALLADO: parcial salida=.v67ext/orden.txt -->
+
+    $ python .v67ext/orden.py
+    #   candidato                                                cap    pza  madre(s)                                           pob  dijo       vec  lin   listos
+    1   reunir_informacion_gerencial_vias_variadas               cap_04 P7   -                                                  479  BLOQUEARIA 7    7     SI
+    2   escalonar_fuentes_informacion_gerencial                  cap_04 P9   reunir_informacion_gerencial_vias_variadas         479  BLOQUEARIA 7    7     SI
+    3   programar_visita_area_observar_despachar                 cap_04 P10  -                                                  479  BLOQUEARIA 7    7     SI
+    4   transmitir_objetivos_prioridades_preferencias            cap_04 P11  -                                                  479  BLOQUEARIA 7    7     SI
+    5   empujar_persona_reunion_direccion_preferida              cap_04 P13  -                                                  479  BLOQUEARIA 7    7     SI
+    6   subir_productividad_gerencial_tres_vias                  cap_04 P18  -                                                  479  BLOQUEARIA 7    7     SI
+    7   buscar_actividad_alta_palanca_tres_vias                  cap_04 P19  subir_productividad_gerencial_tres_vias            479  BLOQUEARIA 7    7     SI
+    8   elegir_momento_actividad_palanca_maxima                  cap_04 P20  buscar_actividad_alta_palanca_tres_vias            479  BLOQUEARIA 7    7     SI
+    9   detectar_palanca_negativa_actividad_mando                cap_04 P21  -                                                  479  ENTRARIA   0    0     SI
+    10  delegar_tarea_base_comun_seguimiento                     cap_04 P27  transmitir_objetivos_prioridades_preferencias      479  ENTRARIA   0    0     SI
+    11  supervisar_tarea_delegada_etapa_menor_valor              cap_04 P29  delegar_tarea_base_comun_seguimiento, detectar_arreglar_fallo_etapa_menor_valor, variar_frecuencia_inspeccion_nivel_calidad 479  BLOQUEARIA 3    3     SI
+    12  supervisar_decision_delegada_preguntas_concretas         cap_04 P30  delegar_tarea_base_comun_seguimiento               479  BLOQUEARIA 3    3     SI
+    13  identificar_paso_limitante_jornada_desfases              cap_04 P32  construir_flujo_produccion_paso_limitante          479  BLOQUEARIA 6    6     SI
+    14  agrupar_tareas_semejantes_aprovechar_preparacion         cap_04 P33  -                                                  479  BLOQUEARIA 5    5     SI
+    15  decir_no_trabajo_excede_capacidad                        cap_04 P34  -                                                  479  BLOQUEARIA 4    4     SI
+    16  usar_calendario_herramienta_planificacion_produccion     cap_04 P34  identificar_paso_limitante_jornada_desfases        479  BLOQUEARIA 1    1     SI
+    17  dimensionar_numero_subordinados_medio_dia_semanal        cap_04 P38  -                                                  479  ENTRARIA   0    0     SI
+    18  buscar_regularidad_bloques_iguales_trabajo_mando         cap_04 P39  representar_actividad_caja_negra_ventanas          479  BLOQUEARIA 4    4     SI
+    19  preparar_respuestas_estandar_interrupciones_repetidas    cap_04 P41  -                                                  479  BLOQUEARIA 2    2     SI
+    20  llevar_inventario_proyectos_discrecionales               cap_04 P36  -                                                  479  BLOQUEARIA 6    6     SI   <- corte del tope
+    21  agrupar_interrupciones_subordinados_reuniones_regulares  cap_04 P42  agrupar_tareas_semejantes_aprovechar_preparacion   479  BLOQUEARIA 8    8     SI
+    22  canalizar_interrupciones_cartel_hora_oficina             cap_04 P44  buscar_regularidad_bloques_iguales_trabajo_mando   479  BLOQUEARIA 1    1     SI
+
+    COMPROBACIONES
+      hijo delante de su madre: 0 []
+      D.36, par que levanta en un solo sentido con el que lo levanta entrando antes: 0 []
+      hijo dentro del tope con su madre fuera: 0 []
+      tanda propuesta: 20 de 22; fuera del tope: agrupar_interrupciones_subordinados_reuniones_regulares, canalizar_interrupciones_cartel_hora_oficina
+
+**Cero vecinos sin linea, cero lineas sin vecino, las tres comprobaciones del orden en cero.** **El orden no cambia**:
+lo unico que se mueve es la columna de madres de las filas `7` y `8`, que ganan `subir` y `buscar`.
+
+    $ diff .v66ext/orden.txt .v67ext/orden.txt
+    8,9c8,9
+    < 7   buscar_actividad_alta_palanca_tres_vias                  cap_04 P19  -                                                  479  BLOQUEARIA 7    7     SI
+    < 8   elegir_momento_actividad_palanca_maxima                  cap_04 P20  -                                                  479  BLOQUEARIA 7    7     SI
+    ---
+    > 7   buscar_actividad_alta_palanca_tres_vias                  cap_04 P19  subir_productividad_gerencial_tres_vias            479  BLOQUEARIA 7    7     SI
+    > 8   elegir_momento_actividad_palanca_maxima                  cap_04 P20  buscar_actividad_alta_palanca_tres_vias            479  BLOQUEARIA 7    7     SI
+    8,9c8,9
+    < 7   buscar_actividad_alta_palanca_tres_vias                  cap_04 P19  -                                              
+    < 8   elegir_momento_actividad_palanca_maxima                  cap_04 P20  -                                              
+    ---
+    > 7   buscar_actividad_alta_palanca_tres_vias                  cap_04 P19  subir_productividad_gerencial_tres_vias        
+    > 8   elegir_momento_actividad_palanca_maxima                  cap_04 P20  buscar_actividad_alta_palanca_tres_vias        
+
+**`T2` CERRADA.** Aristas de la tanda tras la conjunta: las siete por lectura del encargo, `C3` no; y las
+`CONTINUA` con `madre=` que cablea la aduana pasan de dos (`reunir` a `escalonar`, `detectar_arreglar` a
+`supervisar_tarea`) a cuatro, con `subir` a `buscar` en la fila `7` y `buscar` a `elegir` en la fila `8`.
+
+## 67.3. TAREA 3: LO QUE ENTRA ES LO QUE SE LEYO
+
+Copia de `.v66ext/pasos_y_huellas.py` con la lista cambiada a las filas `1` a `20` de `.v66ext/orden.txt` y el commit a
+`d8f4e2a` (salida en `.v67ext/pasos_y_huellas.txt`):
+
+    $ python .v67ext/pasos_y_huellas.py
+    1   reunir_informacion_gerencial_vias_variadas               bandeja    e020537e49 igual
+    2   escalonar_fuentes_informacion_gerencial                  bandeja    7c3b18c396 igual
+    3   programar_visita_area_observar_despachar                 bandeja    1f0f566f8e igual
+    4   transmitir_objetivos_prioridades_preferencias            bandeja    0289245ba3 igual
+    5   empujar_persona_reunion_direccion_preferida              bandeja    cabc9523c1 igual
+    6   subir_productividad_gerencial_tres_vias                  bandeja    252584f56b igual
+    7   buscar_actividad_alta_palanca_tres_vias                  bandeja    6d905627db igual
+    8   elegir_momento_actividad_palanca_maxima                  bandeja    c5d0334977 igual
+    9   detectar_palanca_negativa_actividad_mando                bandeja    7c61104d58 igual
+    10  delegar_tarea_base_comun_seguimiento                     bandeja    fcfee74e91 igual
+    11  supervisar_tarea_delegada_etapa_menor_valor              bandeja    ae8bb679a7 igual
+    12  supervisar_decision_delegada_preguntas_concretas         bandeja    6aeadb79a7 igual
+    13  identificar_paso_limitante_jornada_desfases              bandeja    f6de1f88e4 igual
+    14  agrupar_tareas_semejantes_aprovechar_preparacion         bandeja    85bb02d859 igual
+    15  decir_no_trabajo_excede_capacidad                        bandeja    d52e32d711 igual
+    16  usar_calendario_herramienta_planificacion_produccion     bandeja    f26346be2e igual
+    17  dimensionar_numero_subordinados_medio_dia_semanal        bandeja    4ebd4288fd igual
+    18  buscar_regularidad_bloques_iguales_trabajo_mando         bandeja    d9d42a4be1 igual
+    19  preparar_respuestas_estandar_interrupciones_repetidas    bandeja    a1b58fa5a5 igual
+    20  llevar_inventario_proyectos_discrecionales               bandeja    62897f11b8 igual
+    fichas de las filas 1 a 20: 20 | iguales a su blob en d8f4e2a: 20 | distintas: 0
+
+**`20` iguales y `0` distintas: ninguna ficha se relee.** **`T3` CERRADA.**
+
+## 67.4. TAREA 4: LAS FILAS `1` A `20`, UNA POR VEZ
+
+**Cada fila se anexa al volver su `insertar`**, con la salida entera en `.v67ext/insertar_<fila>_<id>.txt`. **Las
+aristas por lectura que tocan**, con `python .v67ext/arista.py` y su salida en `.v67ext/arista_<madre>__<hijo>.txt`.

@@ -1,0 +1,21 @@
+1   reunir_informacion_gerencial_vias_variadas               bandeja    e020537e49 igual
+2   escalonar_fuentes_informacion_gerencial                  bandeja    7c3b18c396 igual
+3   programar_visita_area_observar_despachar                 bandeja    1f0f566f8e igual
+4   transmitir_objetivos_prioridades_preferencias            bandeja    0289245ba3 igual
+5   empujar_persona_reunion_direccion_preferida              bandeja    cabc9523c1 igual
+6   subir_productividad_gerencial_tres_vias                  bandeja    252584f56b igual
+7   buscar_actividad_alta_palanca_tres_vias                  bandeja    6d905627db igual
+8   elegir_momento_actividad_palanca_maxima                  bandeja    c5d0334977 igual
+9   detectar_palanca_negativa_actividad_mando                bandeja    7c61104d58 igual
+10  delegar_tarea_base_comun_seguimiento                     bandeja    fcfee74e91 igual
+11  supervisar_tarea_delegada_etapa_menor_valor              bandeja    ae8bb679a7 igual
+12  supervisar_decision_delegada_preguntas_concretas         bandeja    6aeadb79a7 igual
+13  identificar_paso_limitante_jornada_desfases              bandeja    f6de1f88e4 igual
+14  agrupar_tareas_semejantes_aprovechar_preparacion         bandeja    85bb02d859 igual
+15  decir_no_trabajo_excede_capacidad                        bandeja    d52e32d711 igual
+16  usar_calendario_herramienta_planificacion_produccion     bandeja    f26346be2e igual
+17  dimensionar_numero_subordinados_medio_dia_semanal        bandeja    4ebd4288fd igual
+18  buscar_regularidad_bloques_iguales_trabajo_mando         bandeja    d9d42a4be1 igual
+19  preparar_respuestas_estandar_interrupciones_repetidas    bandeja    a1b58fa5a5 igual
+20  llevar_inventario_proyectos_discrecionales               bandeja    62897f11b8 igual
+fichas de las filas 1 a 20: 20 | iguales a su blob en d8f4e2a: 20 | distintas: 0
