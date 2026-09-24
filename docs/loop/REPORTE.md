@@ -59017,3 +59017,58 @@ operacion ya es estado intermedio*). **Los comandos sin salida debajo son `0`.**
     CIERRE VERDE: las cuatro guardas que muerden, el tallado y el censo. La vigencia corrio y publico su cuenta arriba: es cola, no guarda (D.15).
 
 **Salida entera en `.v65ext/cierre_reporte.txt`, codigo `0`.** Todo verde. **Ningun proceso mio vive al cerrar el turno**: el ultimo `insertar` volvio a las `19:50:31` con codigo `0` (`.v65ext/relojes.txt`), y en `procesos/` solo quedan los dos cerrojos que no son de este dataset. **Nada me obliga a parar: no hay `PARA_ALEXIS.md`.** Pasan a la `66`, en el mismo orden, las filas `21` y `22` de `.v65ext/orden.txt`, y la arista de `detectar` a `supervisar_tarea_delegada` sigue en cola hasta que entre `cap_04`.
+
+---
+
+# VUELTA 66 DE LA LINEA SERIAL, lote 7 (`grove_high_output`), **CLASE INSERCION**: las filas `21` y `22` de Grove dentro, una por vez, y `cap_04` entero dejado listo para la `67`
+
+*Encargo escrito por el auditor al cerrar la `ACTA 64`. Clase impresa por `python scripts/deuda.py --clase 66`
+(`LIBRE`, van `2` de `5` desde la `64`). **Un `insertar` por vez, y ninguno vivo cuando el turno termine. En
+`cap_04` no se inserta ninguno.***
+
+**REPORTE ABIERTO AL EMPEZAR** (`EXTRACTOR.md` 3). Las filas se llenan al cerrarse cada tarea; cada insercion
+anexa su fila al volver, con su commit. Si la vuelta se corta, lo que falte es exactamente lo que no tiene fila.
+
+| tarea | que | estado |
+|---|---|---|
+| `T1` | los registros de la `ACTA 64` | ABIERTA |
+| `T2` | las filas `21` y `22`, una por vez | ABIERTA |
+| `T3` | `cap_04` listo: fidelidad entera, barrido, veredictos, aristas por lectura, orden | ABIERTA |
+| `T4` | el cierre: censo, `PASOS INVENTADOS`, `D.61`, `R5`, guardas, commit | ABIERTA |
+
+## 66.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
+
+**Lo pendiente, commiteado primero** (`EXTRACTOR.md` 1): `loop.log`, `ultimo_auditor.json` y
+`ultimo_extractor.json` del arnes, en `94f98b2`, gate verde, empujado.
+
+<!-- TALLADO: parcial salida=.v66ext/apertura.txt -->
+
+    $ git rev-parse HEAD && git log -1 --format=%cI && git rev-parse --abbrev-ref HEAD
+    94f98b274b2b0f838a22fa9c43a11203b358364f
+    2026-09-24T00:17:07-04:00
+    extraccion-mundo-11
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 366
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+    $ bash .v66ext/censo.sh
+    nodos en dataset/nodos.jsonl        : 366
+    veredictos en bitacora              : 795
+    pares mutuos                        : 1
+    bandeja cuarentena/grove_high_output: 71
+    insertados de grove_high_output     : 21
+    cerrojos en procesos/               : 
+    $ python scripts/deuda.py --clase 66
+    LIBRE
+      van 2 de 5 desde la ultima de saneamiento (la 64), con 57 deuda(s) esperando
+
+**Coincide con el cierre de la `65`** (`366`, `795`, `1`, `71`, `21`), y **`procesos/` esta vacio: ningun cerrojo
+que romper.** `.v66ext/censo.sh` es copia de `.v65ext/censo.sh` con la ruta cambiada, y se vuelve a correr al
+cerrar.
+
+## 66.D. **LOS DISCUTIBLES, MARCADOS ANTES DE SABER SI ACIERTO** (`EXTRACTOR.md` 8)
+
+| | que | por que lo marco |
+|---|---|---|
+| `D66.1` | **EL METODO DE ESPERA DE LA `65`** (`D65.1`, sostenido en `64.4.a`): cada `insertar` lo lanza una copia de `.v65ext/insertar.py` como UN proceso y yo espero con una copia de `.v65ext/esperar.py` hasta su `.fin`. **Lo que anado:** entre dos esperas de `570` s leo `fuentes/grove_high_output/cap_04.md` y escribo en `.v66ext/` la fidelidad de `cap_04` (TAREA 3.1), **sin tocar el dataset, la bitacora ni ninguna ficha de la bandeja**, y sin lanzar el siguiente `insertar` ni ningun barrido. Las correcciones de fichas de `cap_04` y el barrido empiezan despues de que vuelva la fila `22` | la letra dice *bloqueado*; leer texto no toca nada que la aduana lea, pero una ficha de la bandeja si seria poblacion, y por eso esas esperan |
+| `D66.2` | **`.v64aud/normal/pasos_y_huellas.py` NO CORRE TAL CUAL**: busca en `HEAD` las `22` fichas en `cuarentena/grove_high_output/`, y `20` ya estan en `_insertados`. Lo corro por una copia, `.v66ext/pasos_y_huellas.py`, con esa sola ruta cambiada (si no esta en la bandeja, la busca en `_insertados`) | el encargo manda el original; la copia es `7.F`, ruta cambiada y nada mas |
