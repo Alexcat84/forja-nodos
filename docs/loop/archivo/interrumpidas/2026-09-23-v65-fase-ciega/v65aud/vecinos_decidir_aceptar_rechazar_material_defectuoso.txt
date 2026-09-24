@@ -1,0 +1,3 @@
+candidato decidir_aceptar_rechazar_material_defectuoso | grafo 366 | bandejas 96 | poblacion 462 | vecinos 1
+  dimensionar_plantilla_administrativa_pronostico    similitud_texto                          texto 0.372 familia 0.0 paso 0.364 | paso 4 del candidato contra paso 2 de dimensionar_plantilla_administrativa_pronostico
+FIN

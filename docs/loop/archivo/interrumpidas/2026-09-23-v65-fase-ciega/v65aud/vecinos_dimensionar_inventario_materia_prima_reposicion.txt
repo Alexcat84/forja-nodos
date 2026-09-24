@@ -1,0 +1,4 @@
+candidato dimensionar_inventario_materia_prima_reposicion | grafo 366 | bandejas 96 | poblacion 462 | vecinos 2
+  preferir_inspeccion_proceso_prueba_destructiva     similitud_texto                          texto 0.391 familia 0.0 paso 0.403 | paso 2 del candidato contra paso 2 de preferir_inspeccion_proceso_prueba_destructiva
+  detectar_arreglar_fallo_etapa_menor_valor          similitud_texto                          texto 0.357 familia 0.0 paso 0.401 | paso 1 del candidato contra paso 2 de detectar_arreglar_fallo_etapa_menor_valor
+FIN

@@ -1,0 +1,8 @@
+candidato dimensionar_plantilla_administrativa_pronostico | grafo 366 | bandejas 96 | poblacion 462 | vecinos 6
+  elegir_fabricar_pedido_pronostico                  similitud_texto                          texto 0.353 familia 0.143 paso 0.455 | paso 3 del candidato contra paso 7 de elegir_fabricar_pedido_pronostico
+  elegir_cinco_indicadores_diarios_fabrica           similitud_texto                          texto 0.351 familia 0.0 paso 0.434 | paso 6 del candidato contra paso 3 de elegir_cinco_indicadores_diarios_fabrica
+  construir_indicador_tendencia_patron               similitud_texto                          texto 0.38 familia 0.0 paso 0.405 | paso 2 del candidato contra paso 6 de construir_indicador_tendencia_patron
+  emparejar_indicadores_efecto_contraefecto          similitud_texto                          texto 0.36 familia 0.0 paso 0.396 | paso 2 del candidato contra paso 4 de emparejar_indicadores_efecto_contraefecto
+  simplificar_trabajo_reducir_numero_pasos           similitud_texto                          texto 0.351 familia 0.0 paso 0.388 | paso 6 del candidato contra paso 6 de simplificar_trabajo_reducir_numero_pasos
+  decidir_aceptar_rechazar_material_defectuoso       similitud_texto                          texto 0.367 familia 0.0 paso 0.359 | paso 2 del candidato contra paso 3 de decidir_aceptar_rechazar_material_defectuoso
+FIN

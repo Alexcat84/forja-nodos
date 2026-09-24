@@ -1,0 +1,12 @@
+adjudicado  construir_grafico_escalonado_pronosticos         paso 5  T -> P  (ACTA 63 63.3.a)
+adjudicado  detectar_arreglar_fallo_etapa_menor_valor        paso 1  D -> T  (ACTA 62 62.5)
+adjudicado  elegir_fabricar_pedido_pronostico                paso 8  T -> P  (ACTA 63 63.3.a)
+adjudicado  emparejar_indicadores_efecto_contraefecto        paso 1  P -> T  (ACTA 63 63.3.a)
+adjudicado  equilibrar_capacidad_personal_inventario_plazo   paso 2  T -> P  (ACTA 62 62.5)
+adjudicado  equilibrar_capacidad_personal_inventario_plazo   paso 3  T -> P  (ACTA 62 62.5)
+adjudicado  equilibrar_capacidad_personal_inventario_plazo   paso 4  T -> P  (ACTA 62 62.5)
+adjudicado  equilibrar_capacidad_personal_inventario_plazo   paso 5  T -> P  (ACTA 62 62.5)
+pasos sin fila: 0 [] | filas sin paso: 0 []
+capitulo pasos    T    P    D  P/pasos
+cap_02      50   46    4    0    8.00%
+cap_03     108  106    2    0    1.85%

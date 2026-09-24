@@ -5230,3 +5230,7 @@ TABLERO VERDE: la vuelta puede abrir.
 [2026-09-23 11:37:41]   tablero comprobado: la vuelta puede abrir (D.49, D.51)
 [2026-09-23 11:37:41] VUELTA 3 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
 [2026-09-23 11:37:41] VUELTA 3 : EXTRACTOR (claude-opus-5-5, esfuerzo high)
+[2026-09-23 20:04:02] extractor listo (USD 9.115550599999999), 30381s, intento 1 de 7
+[2026-09-23 20:04:03] VUELTA 3 : APERTURA CIEGA (claude-opus-5-5), retirados: REPORTE.md ultimo_extractor.json ultimo_auditor.json CREDITO_serial.jsonl
+[2026-09-23 20:04:03]   hereda 1 remedio(s) del acta anterior, entregados en el prompt (D.40)
+[2026-09-23 20:04:03]   y solo eso: remedios con su motivo, sin cifras ni conclusiones (D.52)

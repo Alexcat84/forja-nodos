@@ -1,0 +1,8 @@
+candidato construir_indicador_tendencia_patron | grafo 366 | bandejas 96 | poblacion 462 | vecinos 6
+  construir_grafico_escalonado_pronosticos           similitud_texto                          texto 0.362 familia 0.143 paso 0.461 | paso 5 del candidato contra paso 4 de construir_grafico_escalonado_pronosticos
+  emparejar_indicadores_efecto_contraefecto          similitud_texto                          texto 0.393 familia 0.143 paso 0.427 | paso 5 del candidato contra paso 2 de emparejar_indicadores_efecto_contraefecto
+  archivar_indicadores_resolver_problemas            similitud_texto                          texto 0.365 familia 0.143 paso 0.427 | paso 2 del candidato contra paso 1 de archivar_indicadores_resolver_problemas
+  equilibrar_capacidad_personal_inventario_plazo     similitud_texto                          texto 0.353 familia 0.0 paso 0.424 | paso 1 del candidato contra paso 4 de equilibrar_capacidad_personal_inventario_plazo
+  dimensionar_plantilla_administrativa_pronostico    similitud_texto                          texto 0.373 familia 0.0 paso 0.405 | paso 5 del candidato contra paso 6 de dimensionar_plantilla_administrativa_pronostico
+  elegir_indicador_salida_trabajo_administrativo     similitud_texto                          texto 0.378 familia 0.125 paso 0.378 | paso 5 del candidato contra paso 3 de elegir_indicador_salida_trabajo_administrativo
+FIN

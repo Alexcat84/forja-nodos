@@ -1,0 +1,2 @@
+candidato construir_indicador_linealidad_alerta_temprana | grafo 366 | bandejas 96 | poblacion 462 | vecinos 0
+FIN

@@ -1,0 +1,2 @@
+candidato elegir_cinco_indicadores_diarios_fabrica | grafo 366 | bandejas 96 | poblacion 462 | vecinos 0
+FIN

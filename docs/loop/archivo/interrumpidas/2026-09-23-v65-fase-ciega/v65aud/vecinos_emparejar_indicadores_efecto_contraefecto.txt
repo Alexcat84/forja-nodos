@@ -1,0 +1,8 @@
+candidato emparejar_indicadores_efecto_contraefecto | grafo 366 | bandejas 96 | poblacion 462 | vecinos 6
+  elegir_indicador_salida_trabajo_administrativo     similitud_texto                          texto 0.383 familia 0.125 paso 0.468 | paso 4 del candidato contra paso 3 de elegir_indicador_salida_trabajo_administrativo
+  construir_indicador_tendencia_patron               similitud_texto                          texto 0.397 familia 0.143 paso 0.453 | paso 3 del candidato contra paso 5 de construir_indicador_tendencia_patron
+  construir_grafico_escalonado_pronosticos           similitud_texto                          texto 0.384 familia 0.0 paso 0.446 | paso 3 del candidato contra paso 1 de construir_grafico_escalonado_pronosticos
+  elegir_cinco_indicadores_diarios_fabrica           similitud_texto                          texto 0.359 familia 0.125 paso 0.445 | paso 4 del candidato contra paso 8 de elegir_cinco_indicadores_diarios_fabrica
+  elegir_fabricar_pedido_pronostico                  similitud_texto                          texto 0.367 familia 0.0 paso 0.408 | paso 4 del candidato contra paso 1 de elegir_fabricar_pedido_pronostico
+  dimensionar_plantilla_administrativa_pronostico    similitud_texto                          texto 0.355 familia 0.0 paso 0.396 | paso 4 del candidato contra paso 2 de dimensionar_plantilla_administrativa_pronostico
+FIN

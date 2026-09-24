@@ -1,0 +1,3 @@
+candidato detectar_arreglar_fallo_etapa_menor_valor | grafo 366 | bandejas 96 | poblacion 462 | vecinos 1
+  supervisar_tarea_delegada_etapa_menor_valor        familia_id                               texto 0.242 familia 0.333 paso 0.459 | paso 2 del candidato contra paso 1 de supervisar_tarea_delegada_etapa_menor_valor
+FIN

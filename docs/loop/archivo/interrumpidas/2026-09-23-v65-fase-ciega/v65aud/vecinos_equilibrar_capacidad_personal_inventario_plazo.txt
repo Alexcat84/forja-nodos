@@ -1,0 +1,3 @@
+candidato equilibrar_capacidad_personal_inventario_plazo | grafo 366 | bandejas 96 | poblacion 462 | vecinos 1
+  construir_indicador_tendencia_patron               similitud_texto                          texto 0.354 familia 0.0 paso 0.421 | paso 7 del candidato contra paso 5 de construir_indicador_tendencia_patron
+FIN
