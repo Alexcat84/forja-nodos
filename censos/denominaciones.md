@@ -966,3 +966,7 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-24 | elegir_momento_actividad_palanca_maxima | nombre_largo | La palanca que depende de cuando se ejerce: el trabajo preparatorio hecho por delante del acontecimiento, que le quita confusion a mucha gente durante mucho tiempo, y la accion inmediata cuando aplazarla cuesta todas las posibilidades | castellano | - |
 | 2026-09-24 | elegir_momento_actividad_palanca_maxima | otro_idioma | timeliness | ingles | - |
 | 2026-09-24 | elegir_momento_actividad_palanca_maxima | otro_idioma | milestones | ingles | - |
+| 2026-09-24 | detectar_palanca_negativa_actividad_mando | nombre_largo | La palanca que resta: las actividades de mando que reducen la salida de la organizacion, con los ejemplares que el libro nombra y la prueba concreta que delata la intromision | castellano | - |
+| 2026-09-24 | detectar_palanca_negativa_actividad_mando | otro_idioma | negative leverage | ingles | - |
+| 2026-09-24 | detectar_palanca_negativa_actividad_mando | otro_idioma | waffling | ingles | - |
+| 2026-09-24 | detectar_palanca_negativa_actividad_mando | otro_idioma | managerial meddling | ingles | - |

@@ -1,0 +1,13 @@
+fila 09, detectar_palanca_negativa_actividad_mando, lineas --veredicto: 0
+inicio 2026-09-24 09:54:16
+======================================================================
+ADUANA DE INSERCION, candidato 'detectar_palanca_negativa_actividad_mando'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (376 del grafo mas 103 que esperan en bandejas)
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 377
+  censos escritos: denominaciones
+
+======================================================================
+fin 2026-09-24 10:25:53 | codigo de salida 0 | 1897.0 s
