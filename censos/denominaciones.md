@@ -1009,3 +1009,7 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-24 | preparar_respuestas_estandar_interrupciones_repetidas | otro_idioma | standard products | ingles | - |
 | 2026-09-24 | preparar_respuestas_estandar_interrupciones_repetidas | otro_idioma | standard responses | ingles | - |
 | 2026-09-24 | preparar_respuestas_estandar_interrupciones_repetidas | otro_idioma | interruptions | ingles | - |
+| 2026-09-24 | llevar_inventario_proyectos_discrecionales | nombre_largo | El principio de produccion casi contrario al anterior: el inventario de materia prima de un mando son proyectos que hay que hacer y que no hay que terminar ya | castellano | - |
+| 2026-09-24 | llevar_inventario_proyectos_discrecionales | otro_idioma | raw material inventory | ingles | - |
+| 2026-09-24 | llevar_inventario_proyectos_discrecionales | otro_idioma | work-in-process inventory | ingles | - |
+| 2026-09-24 | llevar_inventario_proyectos_discrecionales | otro_idioma | discretionary projects | ingles | - |
