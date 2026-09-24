@@ -59954,3 +59954,25 @@ La aduana de hoy: **BLOQUEARIA** con `7` vecino(s) contra `479`; lineas `--vered
 **Arista en cola (`D.29`)**: `subir_productividad_gerencial_tres_vias > buscar_actividad_alta_palanca_tres_vias`
 
 **Los siete vecinos son los siete de su bloque y las siete lineas se pasaron tal cual**, las dos que la `T2` corrigio incluidas (`buscar` a `CONTINUA` madre `subir`, `C1`; `elegir` `SANO` con su razon nueva, `D67.4`), y **ninguna linea `#` pasada** (`D67.5`, cabecera de su salida). La arista a `buscar` queda en cola hasta la fila `7` (`D.29`).
+
+### Fila `7`: `buscar_actividad_alta_palanca_tres_vias`, **INSERTADO** en `1210.7` s, codigo `0`, commit `0896341`
+
+La aduana de hoy: **BLOQUEARIA** con `7` vecino(s) contra `479`; lineas `--veredicto` pasadas: `7`. Salida entera en `.v67ext/insertar_07_buscar_actividad_alta_palanca_tres_vias.txt`.
+
+<!-- TALLADO: parcial salida=.v67ext/insertar_07_buscar_actividad_alta_palanca_tres_vias.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `subir_productividad_gerencial_tres_vias` | similitud_texto | 0.536 | 0.222 | 0.519 | CONTINUA |
+| `empujar_persona_reunion_direccion_preferida` | similitud_texto | 0.444 | 0.000 | 0.420 | SANO |
+| `reunir_informacion_gerencial_vias_variadas` | similitud_texto | 0.432 | 0.100 | 0.428 | SANO |
+| `escalonar_fuentes_informacion_gerencial` | similitud_texto | 0.394 | 0.000 | 0.428 | SANO |
+| `elegir_momento_actividad_palanca_maxima` | similitud_texto | 0.418 | 0.222 | 0.417 | CONTINUA |
+| `programar_visita_area_observar_despachar` | similitud_texto | 0.413 | 0.000 | 0.380 | SANO |
+| `transmitir_objetivos_prioridades_preferencias` | similitud_texto | 0.402 | 0.000 | 0.366 | SANO |
+
+**Arista en cola (`D.29`)**: `buscar_actividad_alta_palanca_tres_vias > elegir_momento_actividad_palanca_maxima`
+
+**Arista cableada por la aduana en el acto**: `subir_productividad_gerencial_tres_vias > buscar_actividad_alta_palanca_tres_vias`
+
+**Los siete vecinos son los siete de su bloque y las siete lineas se pasaron tal cual**, con las dos de la `T2`. **`C1` pagada aqui**: la arista `subir` a `buscar` que la fila `6` dejo en cola la cablea la aduana en el acto, una sola vez. **La de `C2`, `buscar` a `elegir`, queda en cola hasta la fila `8`.** **`C3` no se cablea** (`D67.2`): `buscar` a `detectar` es `NO SOSTENGO`.
