@@ -954,3 +954,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-24 | transmitir_objetivos_prioridades_preferencias | nombre_largo | El mando como fuente de informacion y no solo como recolector: lo que traslada a su organizacion y a los grupos sobre los que influye, y por que los objetivos y los modos preferidos son la llave de la delegacion | castellano | - |
 | 2026-09-24 | transmitir_objetivos_prioridades_preferencias | otro_idioma | information-giving | ingles | - |
 | 2026-09-24 | transmitir_objetivos_prioridades_preferencias | otro_idioma | preferred approaches | ingles | - |
+| 2026-09-24 | empujar_persona_reunion_direccion_preferida | nombre_largo | El empujon: la llamada, la nota y el comentario con los que se defiende un curso de accion preferido sin emitir una instruccion, que es algo mas fuerte que informar y algo mas debil que decidir | castellano | - |
+| 2026-09-24 | empujar_persona_reunion_direccion_preferida | otro_idioma | nudging | ingles | - |
+| 2026-09-24 | empujar_persona_reunion_direccion_preferida | otro_idioma | nudge | ingles | - |
