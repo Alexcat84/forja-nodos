@@ -59072,3 +59072,62 @@ cerrar.
 |---|---|---|
 | `D66.1` | **EL METODO DE ESPERA DE LA `65`** (`D65.1`, sostenido en `64.4.a`): cada `insertar` lo lanza una copia de `.v65ext/insertar.py` como UN proceso y yo espero con una copia de `.v65ext/esperar.py` hasta su `.fin`. **Lo que anado:** entre dos esperas de `570` s leo `fuentes/grove_high_output/cap_04.md` y escribo en `.v66ext/` la fidelidad de `cap_04` (TAREA 3.1), **sin tocar el dataset, la bitacora ni ninguna ficha de la bandeja**, y sin lanzar el siguiente `insertar` ni ningun barrido. Las correcciones de fichas de `cap_04` y el barrido empiezan despues de que vuelva la fila `22` | la letra dice *bloqueado*; leer texto no toca nada que la aduana lea, pero una ficha de la bandeja si seria poblacion, y por eso esas esperan |
 | `D66.2` | **`.v64aud/normal/pasos_y_huellas.py` NO CORRE TAL CUAL**: busca en `HEAD` las `22` fichas en `cuarentena/grove_high_output/`, y `20` ya estan en `_insertados`. Lo corro por una copia, `.v66ext/pasos_y_huellas.py`, con esa sola ruta cambiada (si no esta en la bandeja, la busca en `_insertados`) | el encargo manda el original; la copia es `7.F`, ruta cambiada y nada mas |
+
+## 66.1. TAREA 1: LOS REGISTROS DE LA `ACTA 64`, SIN REABRIR EL ARGUMENTO (`D.47`)
+
+| que | donde |
+|---|---|
+| mis cuatro discutibles `D65.1` a `D65.4` se sostienen y **cero caidas mias**: los `48` veredictos de la bitacora son los adjudicados letra a letra, las siete aristas llevan la razon de su fila y la muestra pineada de los SANO se sostiene `8` de `8` | `ACTA 64` `64.3` y `64.4` |
+| `R5` cumplido y `REPORTE` baja de `1 de 3` a `0 de 3`: el bloque que `pegado65` marca es mi apertura, reproducida contra `90028c0` | `64.2` |
+| `PASOS INVENTADOS`: `cap_02` `4` de `50`, `8,00`; `cap_03` `2` de `108`, `1,85`. Los dos bajo el `10` | `64.5` |
+| las cinco rachas de la serial en cero | `64.7` |
+| `d167`: mi cierre estricto va a salir en ROJO por la tabla de `APERTURA_CIEGA.md` linea `270`, y solo por ella. Se pega, se declara y no se toca ese fichero | `64.9`, `docs/loop/DEUDA.jsonl` linea `167` |
+
+**`T1` CERRADA.**
+
+## 66.2. TAREA 2: LAS FILAS `21` Y `22`, UNA POR VEZ
+
+**1. Lo que entra es lo que se leyo** (`D66.2`: por la copia con la ruta cambiada, porque el original cae en
+`JSONDecodeError` al buscar en la bandeja las `20` ya movidas):
+
+<!-- TALLADO: parcial salida=.v66ext/pasos_y_huellas.txt -->
+
+    $ python .v66ext/pasos_y_huellas.py
+    archivar_indicadores_resolver_problemas          pasos en 067c9df 4 | hoy 4
+    construir_grafico_escalonado_pronosticos         pasos en 067c9df 8 | hoy 8
+    construir_indicador_tendencia_patron             pasos en 067c9df 6 | hoy 6
+    elegir_fabricar_pedido_pronostico                pasos en 067c9df 9 | hoy 9
+    elegir_indicador_salida_trabajo_administrativo   pasos en 067c9df 7 | hoy 7
+    emparejar_indicadores_efecto_contraefecto        pasos en 067c9df 7 | hoy 7
+    total pasos: 067c9df 41 | hoy 41
+      construir_flujo_produccion_paso_limitante        _insertados igual
+      clasificar_trabajo_proceso_montaje_prueba        _insertados igual
+      rehacer_flujo_paso_limitante_capacidad           _insertados igual
+      equilibrar_capacidad_personal_inventario_plazo   _insertados igual
+      preferir_inspeccion_proceso_prueba_destructiva   _insertados igual
+      dimensionar_inventario_materia_prima_reposicion  _insertados igual
+      detectar_arreglar_fallo_etapa_menor_valor        _insertados igual
+      elegir_cinco_indicadores_diarios_fabrica         _insertados igual
+      emparejar_indicadores_efecto_contraefecto        _insertados igual
+      elegir_indicador_salida_trabajo_administrativo   _insertados igual
+      representar_actividad_caja_negra_ventanas        _insertados igual
+      construir_indicador_linealidad_alerta_temprana   _insertados igual
+      construir_indicador_tendencia_patron             _insertados igual
+      construir_grafico_escalonado_pronosticos         _insertados igual
+      archivar_indicadores_resolver_problemas          _insertados igual
+      elegir_fabricar_pedido_pronostico                _insertados igual
+      casar_flujo_fabricacion_flujo_ventas             _insertados igual
+      dimensionar_plantilla_administrativa_pronostico  _insertados igual
+      decidir_aceptar_rechazar_material_defectuoso     _insertados igual
+      elegir_inspeccion_barrera_monitorizacion         _insertados igual
+      variar_frecuencia_inspeccion_nivel_calidad       bandeja    igual
+      simplificar_trabajo_reducir_numero_pasos         bandeja    igual
+    fichas de los 22: 22 | iguales al commit de su lectura entera: 22 | distintas: 0
+
+**Las dos de hoy, `variar_frecuencia_inspeccion_nivel_calidad` y `simplificar_trabajo_reducir_numero_pasos`, son
+iguales al blob de `b63405c`**, el commit de su lectura entera: ninguna se relee.
+
+**2. Las lineas que se pasan:** la fila `21` ninguna (entraba sin vecinos contra `462`); la fila `22` la de su
+bloque `## simplificar_trabajo_reducir_numero_pasos` en `.v64ext/veredictos_listos.txt`, tal cual, que es lo que
+`.v66ext/insertar.py` lee. La `NO SOSTENGO` de `elegir_inspeccion_barrera_monitorizacion` a `variar` en
+`.v64ext/aristas_lectura.txt` no cablea nada: son hermanos.
