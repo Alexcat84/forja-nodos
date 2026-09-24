@@ -5712,3 +5712,16 @@ CENSO VERDE: las 940 rutas publicadas sostienen lo que dicen sostener.
 CIERRE VERDE: el tallado y el censo de rutas.
 [pre-commit] verde
 [2026-09-24 06:13:00] VUELTA 2 : AUDITOR (claude-opus-5-5, esfuerzo high)
+[2026-09-24 06:31:27] auditor listo (USD 5.594173000000002), 1106s, intento 1 de 7
+[2026-09-24 06:31:27]   sello de la apertura ciega verificado: intacto tras el turno
+[2026-09-24 06:31:28]   tablero puesto al dia al cerrar la vuelta 2 (d102)
+GUARDA DEL TABLERO (D.49)
+  linea de este arbol : serial
+  libro que declara el encargo : grove_high_output
+  libro que el orden le da (D.51): grove_high_output
+    prioridad 1 del orden del mundo 11. 'grove_high_output' esta COSECHADO y sin dueño: su trabajo ya llego a esta rama, asi que se continua desde el capi
+
+TABLERO VERDE: la vuelta puede abrir.
+[2026-09-24 06:31:29]   tablero comprobado: la vuelta puede abrir (D.49, D.51)
+[2026-09-24 06:31:29] VUELTA 3 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
+[2026-09-24 06:31:29] VUELTA 3 : EXTRACTOR (claude-opus-5-5, esfuerzo high)
