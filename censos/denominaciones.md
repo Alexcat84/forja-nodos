@@ -988,3 +988,7 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-24 | agrupar_tareas_semejantes_aprovechar_preparacion | otro_idioma | batching similar tasks | ingles | - |
 | 2026-09-24 | agrupar_tareas_semejantes_aprovechar_preparacion | otro_idioma | set-up time | ingles | - |
 | 2026-09-24 | agrupar_tareas_semejantes_aprovechar_preparacion | otro_idioma | mental set-up time | ingles | - |
+| 2026-09-24 | decir_no_trabajo_excede_capacidad | nombre_largo | La segunda responsabilidad del calendario: el nivel de entrada que no se deja sobrecargar, el no explicito frente al no implicito, y el coste de abortar tarde | castellano | - |
+| 2026-09-24 | decir_no_trabajo_excede_capacidad | otro_idioma | say no at the outset | ingles | - |
+| 2026-09-24 | decir_no_trabajo_excede_capacidad | otro_idioma | capacity | ingles | - |
+| 2026-09-24 | decir_no_trabajo_excede_capacidad | otro_idioma | bottleneck | ingles | - |
