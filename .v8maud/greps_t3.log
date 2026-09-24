@@ -1,0 +1,14 @@
+$ grep -rl "\] repetir_mensaje_invariable_diario_reunion_evento" --include=*.txt .
+./.m6aud/aduana_repetir_mensaje_invariable_diario_reunion_evento.txt
+./.v5m/aduana/repetir_mensaje_invariable_diario_reunion_evento.txt
+./.v8m/aduana/repetir_mensaje_invariable_diario_reunion_evento.txt
+$ grep -rl "\] resistir_dar_solucion_clasificar_decision_urgencia" --include=*.txt .
+./.v3m/aduana/c4.txt
+./.v8m/aduana/resistir_dar_solucion_clasificar_decision_urgencia.txt
+$ grep -rl "\] seguir_frustrado_preguntar_implantacion_ideas" --include=*.txt .
+./.v8m/aduana/seguir_frustrado_preguntar_implantacion_ideas.txt
+./.vm01/aduana/c3_seguir_frustrado_preguntar_implantacion_ideas.txt
+$ grep -rl "\] tomar_accion_deliberada_pausar_vocalizar_gesticular" --include=*.txt .
+./.m5aud/aduana_c3_m5.txt
+./.v4m/aduana/c3.txt
+./.v8m/aduana/tomar_accion_deliberada_pausar_vocalizar_gesticular.txt

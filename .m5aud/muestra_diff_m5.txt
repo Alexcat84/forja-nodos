@@ -1,0 +1,2 @@
+$ diff .m5aud/muestra_m5.txt .v4m/muestra/muestra_fidelidad_v4.txt
+(sin salida: identicos byte a byte)

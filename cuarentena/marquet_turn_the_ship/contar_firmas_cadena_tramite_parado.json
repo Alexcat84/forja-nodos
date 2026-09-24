@@ -1,0 +1,45 @@
+{
+  "atribuciones": [],
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "fuentes": [
+    {
+      "clave": "marquet_turn_the_ship",
+      "fecha": "2026-09-16"
+    }
+  ],
+  "id": "contar_firmas_cadena_tramite_parado",
+  "titulo": "Seguir un tramite parado por su cadena de firmas, contarlas, y compararlas con lo que el formulario aguanta",
+  "denominaciones": {
+    "nombre_largo": "El tramite de permiso que el autor persigue despues de ver a un subordinado con mala cara: la norma que dice quien firma, la cadena entera de siete puestos que la regla de cadena de mando obliga, el formulario de cinco lineas, y el veredicto de que fallo el sistema y no la gente",
+    "sigla": "",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "leave chit"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "chain of command"
+      }
+    ]
+  },
+  "condiciones_activacion": "Cuando alguien de abajo esta parado esperando la respuesta de un tramite interno de la casa y quieres saber si el problema es la gente o el circuito.",
+  "entregable_esperado": "La cadena de firmas de ese tramite escrita puesto por puesto, su cuenta, la comparacion con lo que el formulario aguanta, y el tramite concreto resuelto para quien lo esperaba.",
+  "pasos_accionables": [
+    "Cuando en uno de tus recorridos veas a alguien de abajo con especial mala cara, preguntale como le va y no lo dejes en la primera respuesta. El texto dice que le apreto sobre como estaba.",
+    "Deja que salga el tramite concreto que le tiene parado. En el texto es la papeleta de permiso que no habia vuelto, entregada semanas antes, con las vacaciones de Navidad encima.",
+    "Mira lo que ese retraso le esta costando ya. El texto lo pone en billetes de avion que no habia comprado por no saber si le aprobaban el permiso, y que a esas alturas iban a salir caros si es que quedaban.",
+    "Abre la norma escrita que dice quien firma ese tramite. En el texto el manual de organizacion y reglamento dice que el segundo comandante firma todas las papeletas de permiso de la tripulacion, y el comandante las de los oficiales.",
+    "Recorre despues la cadena entera que la regla de cadena de mando obliga a pasar, puesto por puesto. El texto la nombra uno a uno: su contramaestre de primera al mando, el jefe de division, el jefe de departamento, el suboficial mayor del barco, el oficial de division, el jefe de departamento y por fin el segundo comandante.",
+    "Cuenta las firmas. En el texto son siete, y el propio texto lo exclama: siete personas.",
+    "Compara esa cuenta con lo que el formulario aguanta. El del texto tenia solo cinco lineas para firmas, y se partian lineas por la mitad con una regla para que cupieran todos.",
+    "Busca el papel donde este parado. El del texto estaba en la bandeja de entrada de alguien.",
+    "Resuelvelo en el acto para la persona que lo espera. El texto dice que se movio, lo localizo y se ocupo de el.",
+    "Saca el veredicto sobre el sistema y no sobre la gente. El texto escribe las dos frases: con este marinero lo habiamos hecho mal, y fue el sistema, no las personas, lo que fallo."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/marquet_turn_the_ship/cap_03.md, unidad Cap. 5, titulo textual Call to Action. FRONTERA DENTRO DEL NODO, declarada aqui porque EXTRACTOR.md 10 la pide: los pasos 1 a 3 salen de la linea 37, los pasos 4 a 7 de la linea 39, el paso 10 de las lineas 41 y 43, y los pasos 8 y 9 de la linea 43. Las cuatro lineas estan dentro de la PIEZA P5 de la frontera publicada en esta vuelta, 219 palabras, y son de la misma unidad y del mismo libro. POR QUE ES PROCEDIMIENTO Y NO CASO, con D.27 delante: esta es la pieza del capitulo con el inventario propio mas rico, y es inventario de ETAPAS Y DE OBJETOS y no de metas. El libro nombra la norma que manda, la cadena de siete puestos uno a uno y en orden, la cuenta de siete con su exclamacion, el formulario con sus cinco lineas y el remedio casero de partir lineas con una regla, el sitio donde estaba parado el papel, y el veredicto. No hay adjetivo de adecuacion en el sitio del criterio. LA CUENTA ES DEL TEXTO Y NO MIA: siete puestos nombrados y la cifra siete escrita en el propio parrafo, y cinco lineas de firma escritas tambien. Por eso el paso 6 y el paso 7 no son aritmetica del extractor. UNA NOTA DE TRADUCCION QUE DEJO A LA VISTA: el texto nombra department chief y department head como dos puestos distintos dentro de la misma cadena, y los dos se dicen jefe de departamento en castellano corriente. Los transcribo los dos, en el orden del texto, sin fundirlos ni inventarles nombre, y los terminos ingleses quedan en denominaciones para el que busque. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 10 pasos, 10 TRANSCRIPCION, 0 PUENTE. DOS PASOS REESCRITOS EN EL ACTO ANTES DE QUE CONTARAN COMO ESCRITOS: escribi apunta lo que ese retraso le cuesta y escribe la cadena entera, y el texto no dice que apuntara ni que escribiera nada, asi que quedaron en mira y en recorre; y escribi escribe el veredicto, que quedo en saca el veredicto, porque lo que el texto hace es sacarlo, no escribirlo. Son la especie de puente que D.30 llama el medio. LO QUE NO ESCRIBO Y POR ESO NO ESTA AQUI: a quien se le lleva la cadena una vez contada, cuantas firmas serian aceptables, ni que se cambia en el formulario. El texto cuenta el problema y no pone el remedio del circuito, y ponerlo yo seria el puente entero."
+}

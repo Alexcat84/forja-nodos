@@ -1,0 +1,8 @@
+$ git ls-tree --name-only dbff694 cuarentena/marquet_turn_the_ship/ | wc -l   (bandeja al abrir la vuelta)
+3
+$ git ls-tree --name-only HEAD cuarentena/marquet_turn_the_ship/ | wc -l   (al cerrar)
+9
+$ ls fuentes/marquet_turn_the_ship/*.md | wc -l
+17
+$ git show -s --format=%h dbff694
+dbff694

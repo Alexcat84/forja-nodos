@@ -1,0 +1,27 @@
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 348   (270 del grafo mas 78 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 0
+  BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 1
+  CHOCAN entre si dentro del lote  : 0
+
+POR QUE GUARDA CAEN
+     1  el candidato no cumple esquema/nodo.schema.json
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[CAERIA] recorrer_organizacion_escuchar_plantilla   (recorrer_organizacion_escuchar_plantilla.json)
+    guarda: el candidato no cumple esquema/nodo.schema.json
+      $: falta el campo obligatorio fuentes
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.

@@ -1,0 +1,44 @@
+{
+  "atribuciones": [],
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "fuentes": [
+    {
+      "clave": "marquet_turn_the_ship",
+      "fecha": "2026-09-16"
+    }
+  ],
+  "id": "observar_reunion_rutinaria_senales_plantilla",
+  "titulo": "Sentarse en una reunion rutinaria que ya existe y leerla por sus senales de gente en vez de por su asunto tecnico",
+  "denominaciones": {
+    "nombre_largo": "Las seis senales que el texto lee en una reunion de repaso a la que asiste como observador: quien llega tarde, el jefe que espera fuera, la reunion que empieza tarde, cada uno esperando a otro, el ponente a la defensiva y los demas aburridos",
+    "sigla": "",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "department head meeting"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "lack of punctuality"
+      }
+    ]
+  },
+  "condiciones_activacion": "Cuando entras nuevo en una organizacion y tienes delante una de sus reuniones de repaso rutinarias, de las que ya existen y no convocas tu.",
+  "entregable_esperado": "Tu lectura de la reunion por sus senales de gente, senal por senal, y el tamano de problema que esas senales pequenas indican segun la regla que el propio texto escribe.",
+  "pasos_accionables": [
+    "Asiste a una reunion rutinaria de repaso de la organizacion. La del texto es una reunion de jefes de departamento, un repaso rutinario de asuntos de mantenimiento.",
+    "No atiendas al asunto tecnico: observa a la gente de la sala. El texto lo escribe como eleccion deliberada, y dice incluso que probablemente deberia haber atendido a lo tecnico porque ese sistema de misiles no estaba en su barco anterior y no lo habia mirado en su instruccion.",
+    "Mira quien llega tarde y como llega. En el texto los asistentes iban entrando tarde.",
+    "Mira si el jefe se queda fuera hasta que estan todos reunidos y entra despues, invitado. Es lo que el texto describe.",
+    "Mira si la reunion empieza tarde.",
+    "Mira a quien esta esperando cada uno. En esa reunion, dice el texto, todos estaban esperando a algun otro.",
+    "Mira como esta el que expone. El texto describe al suyo serio y directo, pero frustrado y a la defensiva ante todas las preguntas que tenia que contestar.",
+    "Mira como estan los demas. Los otros jefes de departamento y los suboficiales estaban aburridos.",
+    "Lee la falta de puntualidad con la regla que el texto escribe: puede parecer una cosa pequena, pero a bordo de un submarino nuclear las cosas pequenas como la falta de puntualidad son indicativas de problemas mucho, mucho mayores."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/marquet_turn_the_ship/cap_03.md, unidad Cap. 5, titulo textual Call to Action. FRONTERA DENTRO DEL NODO, declarada aqui porque EXTRACTOR.md 10 la pide: el paso 1 sale de la primera frase de la linea 17, que en la frontera publicada en esta vuelta es la PIEZA R3 y esta clasificada RESIDUO por su cuerpo, que describe para que sirve el camarote de oficiales; lo que tomo de ella es solo la frase que nombra la reunion, que es la activacion. Los pasos 3 a 6 y el 9 salen de la linea 19, PIEZA P3 primera mitad. Los pasos 2, 7 y 8 salen de la linea 21, PIEZA P3 segunda mitad. Todo es de la misma unidad y del mismo libro. POR QUE ES PROCEDIMIENTO Y NO CASO, con D.27 delante: el libro pone SU PROPIO inventario de OBJETOS DE OBSERVACION, nombrados uno a uno y en el mismo parrafo (la llegada tarde, el jefe que se queda fuera hasta que estan todos, la reunion que empieza tarde, cada uno esperando a otro, el ponente a la defensiva, los demas aburridos), y pone ademas escrita la REGLA DE LECTURA con que esos objetos se interpretan. No hay adjetivo de adecuacion en el sitio del criterio. LOS PASOS DICEN MIRA Y NO ANOTA, y es deliberado: el texto dice que observo y que miro alrededor, y no dice que escribiera nada. Escribir anota habria sido un puente de la especie medio. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 9 pasos, 9 TRANSCRIPCION, 0 PUENTE. LO QUE NO ESCRIBO Y POR ESO NO ESTA AQUI: cuantas reuniones hay que observar, cada cuanto, a quien se le cuenta lo observado, ni que se hace con lo que se vio. El texto no lo dice. DISCUTIBLE MARCADO ANTES DE SABER SI ACIERTO, y va en el reporte de esta vuelta: la activacion la saco de una pieza que yo mismo clasifique RESIDUO en la frontera. Sostengo las dos cosas, que la pieza es residuo por su cuerpo y que su primera frase nombra la reunion; pero quien lea que un nodo no debe apoyarse en una pieza no minada tiene donde agarrarse, y por eso la frontera dentro del nodo va escrita arriba y no callada."
+}

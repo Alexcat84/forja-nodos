@@ -1,0 +1,52 @@
+{"cae": false, "cita": "ACTA M3, seccion M3.13", "especie": "CLASE", "linea": "marquet_turn_the_ship", "racha": "0 de 2", "tanda": "ACTA M3", "tipo": "tanda", "vuelta": 2}
+{"cae": false, "cita": "ACTA M3, seccion M3.13", "especie": "CIFRA PUBLICADA", "linea": "marquet_turn_the_ship", "racha": "0 de 2", "tanda": "ACTA M3", "tipo": "tanda", "vuelta": 2}
+{"cae": false, "cita": "ACTA M3, seccion M3.13", "especie": "DATO MOVIDO", "linea": "marquet_turn_the_ship", "racha": "0 de 2", "tanda": "ACTA M3", "tipo": "tanda", "vuelta": 2}
+{"cae": true, "cita": "ACTA M3, seccion M3.12.a", "especie": "REPORTE", "linea": "marquet_turn_the_ship", "racha": "1 de 3", "tanda": "ACTA M3", "tipo": "tanda", "vuelta": 2}
+{"cae": false, "cita": "ACTA M3, seccion M3.12.b", "especie": "AUDITOR", "linea": "marquet_turn_the_ship", "racha": "0 de 3", "tanda": "ACTA M3", "tipo": "tanda", "vuelta": 2}
+{"cae": true, "cita": "docs/loop/REPORTE.md, VUELTA 3 seccion 7", "especie": "REPORTE", "linea": "marquet_turn_the_ship", "racha": "2 de 3", "tanda": "vuelta 3", "tipo": "tanda", "vuelta": 3}
+{"cae": true, "cita": "docs/loop/REPORTE.md, VUELTA 3 seccion 1.a", "especie": "CIFRA PUBLICADA", "linea": "marquet_turn_the_ship", "racha": "1 de 2", "tanda": "vuelta 3", "tipo": "tanda", "vuelta": 3}
+{"cae": true, "cita": "docs/loop/PROMPT_SIGUIENTE.md, VUELTA 3 cabecera", "especie": "CLASE", "linea": "marquet_turn_the_ship", "racha": "1 de 2", "tanda": "vuelta 3", "tipo": "tanda", "vuelta": 3}
+{"cae": true, "cita": "docs/loop/REPORTE.md, VUELTA 3 seccion 8", "especie": "DATO MOVIDO", "linea": "marquet_turn_the_ship", "racha": "1 de 2", "tanda": "vuelta 3", "tipo": "tanda", "vuelta": 3}
+{"cae": false, "cita": "ACTA M4, seccion M4.14", "especie": "CLASE", "linea": "marquet_turn_the_ship", "racha": "0 de 2", "tanda": "ACTA M4", "tipo": "tanda", "vuelta": 3}
+{"cae": false, "cita": "ACTA M4, seccion M4.14", "especie": "DATO MOVIDO", "linea": "marquet_turn_the_ship", "racha": "0 de 2", "tanda": "ACTA M4", "tipo": "tanda", "vuelta": 3}
+{"cae": false, "cita": "ACTA M4, seccion M4.15", "especie": "AUDITOR", "linea": "marquet_turn_the_ship", "racha": "0 de 3", "tanda": "ACTA M4", "tipo": "tanda", "vuelta": 3}
+{"cae": false, "cita": "ACTA M4, seccion M4.11", "especie": "REPORTE", "linea": "marquet_turn_the_ship", "racha": "0 de 3", "tanda": "ACTA M4", "tipo": "tanda", "vuelta": 3}
+{"cae": true, "cita": "ACTA M4, seccion M4.10", "especie": "CIFRA PUBLICADA", "linea": "marquet_turn_the_ship", "racha": "1 de 2", "tanda": "ACTA M4", "tipo": "tanda", "vuelta": 3}
+{"cae": true, "cae_original": "AUSENTE", "cita": "docs/loop/REPORTE.md, VUELTA 4", "correccion": {"cita": "docs/loop/paradas/2026-09-22-dos-semanas-DECISION.md, punto 2", "que": "cae alineado con la racha que la fila ya declaraba; la racha no se toca"}, "especie": "REPORTE", "linea": "marquet_turn_the_ship", "racha": "1 de 3", "tanda": "vuelta 4", "tipo": "tanda", "vuelta": 4}
+{"cae": true, "cae_original": "AUSENTE", "cita": "docs/loop/REPORTE.md, VUELTA 4 seccion Apertura", "correccion": {"cita": "docs/loop/paradas/2026-09-22-dos-semanas-DECISION.md, punto 2", "que": "cae alineado con la racha que la fila ya declaraba; la racha no se toca"}, "especie": "CIFRA PUBLICADA", "linea": "marquet_turn_the_ship", "racha": "2 de 2", "tanda": "vuelta 4", "tipo": "tanda", "vuelta": 4}
+{"cae": true, "cae_original": "AUSENTE", "cita": "docs/loop/PROMPT_SIGUIENTE.md, VUELTA 4 cabecera", "correccion": {"cita": "docs/loop/paradas/2026-09-22-dos-semanas-DECISION.md, punto 2", "que": "cae alineado con la racha que la fila ya declaraba; la racha no se toca"}, "especie": "CLASE", "linea": "marquet_turn_the_ship", "racha": "1 de 2", "tanda": "vuelta 4", "tipo": "tanda", "vuelta": 4}
+{"cae": true, "cae_original": "AUSENTE", "cita": "docs/loop/REPORTE.md, VUELTA 4 seccion 5", "correccion": {"cita": "docs/loop/paradas/2026-09-22-dos-semanas-DECISION.md, punto 2", "que": "cae alineado con la racha que la fila ya declaraba; la racha no se toca"}, "especie": "DATO MOVIDO", "linea": "marquet_turn_the_ship", "racha": "1 de 2", "tanda": "vuelta 4", "tipo": "tanda", "vuelta": 4}
+{"cae": true, "cita": "ACTA M5, seccion M5.11", "especie": "CIFRA PUBLICADA", "linea": "marquet_turn_the_ship", "racha": "2 de 2", "tanda": "ACTA M5", "tipo": "tanda", "vuelta": 4}
+{"cae": true, "cita": "ACTA M5, seccion M5.10", "especie": "REPORTE", "linea": "marquet_turn_the_ship", "racha": "1 de 3", "tanda": "ACTA M5", "tipo": "tanda", "vuelta": 4}
+{"cae": false, "cita": "ACTA M5, seccion M5.13", "especie": "CLASE", "linea": "marquet_turn_the_ship", "racha": "0 de 2", "tanda": "ACTA M5", "tipo": "tanda", "vuelta": 4}
+{"cae": false, "cita": "ACTA M5, seccion M5.13", "especie": "DATO MOVIDO", "linea": "marquet_turn_the_ship", "racha": "0 de 2", "tanda": "ACTA M5", "tipo": "tanda", "vuelta": 4}
+{"cae": false, "cita": "ACTA M5, seccion M5.14", "especie": "AUDITOR", "linea": "marquet_turn_the_ship", "racha": "0 de 3", "tanda": "ACTA M5", "tipo": "tanda", "vuelta": 4}
+{"cita": "docs/loop/paradas/2026-09-22-dos-semanas-DECISION.md, punto 2", "especie": "CIFRA PUBLICADA", "linea": "marquet_turn_the_ship", "racha": "0 de 2", "tipo": "reinicio"}
+{"cae": false, "cita": "docs/loop/REPORTE.md, VUELTA 5", "especie": "REPORTE", "linea": "marquet_turn_the_ship", "racha": "0 de 3", "tanda": "vuelta 5", "tipo": "tanda", "vuelta": 5}
+{"cae": false, "cita": "docs/loop/REPORTE.md, VUELTA 5 seccion C.2", "especie": "CIFRA PUBLICADA", "linea": "marquet_turn_the_ship", "racha": "0 de 2", "tanda": "vuelta 5", "tipo": "tanda", "vuelta": 5}
+{"cae": false, "cita": "docs/loop/PROMPT_SIGUIENTE.md, VUELTA 5 cabecera", "especie": "CLASE", "linea": "marquet_turn_the_ship", "racha": "0 de 2", "tanda": "vuelta 5", "tipo": "tanda", "vuelta": 5}
+{"cae": false, "cita": "docs/loop/REPORTE.md, VUELTA 5 seccion C.1", "especie": "DATO MOVIDO", "linea": "marquet_turn_the_ship", "racha": "0 de 2", "tanda": "vuelta 5", "tipo": "tanda", "vuelta": 5}
+{"cae": true, "cita": "ACTA M6, seccion M6.8", "especie": "REPORTE", "linea": "marquet_turn_the_ship", "racha": "2 de 3", "tanda": "ACTA M6", "tipo": "tanda", "vuelta": 5}
+{"cae": false, "cita": "ACTA M6, seccion M6.9", "especie": "CIFRA PUBLICADA", "linea": "marquet_turn_the_ship", "racha": "0 de 2", "tanda": "ACTA M6", "tipo": "tanda", "vuelta": 5}
+{"cae": false, "cita": "ACTA M6, seccion M6.10", "especie": "CLASE", "linea": "marquet_turn_the_ship", "racha": "0 de 2", "tanda": "ACTA M6", "tipo": "tanda", "vuelta": 5}
+{"cae": false, "cita": "ACTA M6, seccion M6.10", "especie": "DATO MOVIDO", "linea": "marquet_turn_the_ship", "racha": "0 de 2", "tanda": "ACTA M6", "tipo": "tanda", "vuelta": 5}
+{"cae": false, "cita": "ACTA M6, seccion M6.11", "especie": "AUDITOR", "linea": "marquet_turn_the_ship", "racha": "0 de 3", "tanda": "ACTA M6", "tipo": "tanda", "vuelta": 5}
+{"cae": false, "cita": "ACTA M7, seccion M7.10", "especie": "REPORTE", "linea": "marquet_turn_the_ship", "racha": "0 de 3", "tanda": "ACTA M7", "tipo": "tanda", "vuelta": 6}
+{"cae": false, "cita": "ACTA M7, seccion M7.10", "especie": "CIFRA PUBLICADA", "linea": "marquet_turn_the_ship", "racha": "0 de 2", "tanda": "ACTA M7", "tipo": "tanda", "vuelta": 6}
+{"cae": false, "cita": "ACTA M7, seccion M7.11", "especie": "CLASE", "linea": "marquet_turn_the_ship", "racha": "0 de 2", "tanda": "ACTA M7", "tipo": "tanda", "vuelta": 6}
+{"cae": false, "cita": "ACTA M7, seccion M7.11", "especie": "DATO MOVIDO", "linea": "marquet_turn_the_ship", "racha": "0 de 2", "tanda": "ACTA M7", "tipo": "tanda", "vuelta": 6}
+{"cae": false, "cita": "ACTA M7, seccion M7.13", "especie": "AUDITOR", "linea": "marquet_turn_the_ship", "racha": "0 de 3", "tanda": "ACTA M7", "tipo": "tanda", "vuelta": 6}
+{"cae": false, "cita": "ACTA M8, seccion M8.7 y M8.10", "especie": "REPORTE", "linea": "marquet_turn_the_ship", "racha": "0 de 3", "tanda": "ACTA M8", "tipo": "tanda", "vuelta": 7}
+{"cae": false, "cita": "ACTA M8, seccion M8.10", "especie": "CIFRA PUBLICADA", "linea": "marquet_turn_the_ship", "racha": "0 de 2", "tanda": "ACTA M8", "tipo": "tanda", "vuelta": 7}
+{"cae": false, "cita": "ACTA M8, seccion M8.11", "especie": "CLASE", "linea": "marquet_turn_the_ship", "racha": "0 de 2", "tanda": "ACTA M8", "tipo": "tanda", "vuelta": 7}
+{"cae": false, "cita": "ACTA M8, seccion M8.11", "especie": "DATO MOVIDO", "linea": "marquet_turn_the_ship", "racha": "0 de 2", "tanda": "ACTA M8", "tipo": "tanda", "vuelta": 7}
+{"cae": false, "cita": "ACTA M8, seccion M8.13", "especie": "AUDITOR", "linea": "marquet_turn_the_ship", "racha": "0 de 3", "tanda": "ACTA M8", "tipo": "tanda", "vuelta": 7}
+{"cae": false, "cita": "docs/loop/REPORTE.md, VUELTA 8", "especie": "REPORTE", "linea": "marquet_turn_the_ship", "racha": "0 de 3", "tanda": "vuelta 8", "tipo": "tanda", "vuelta": 8}
+{"cae": false, "cita": "docs/loop/REPORTE.md, VUELTA 8 TAREA 2 y TAREA 3", "especie": "CIFRA PUBLICADA", "linea": "marquet_turn_the_ship", "racha": "0 de 2", "tanda": "vuelta 8", "tipo": "tanda", "vuelta": 8}
+{"cae": false, "cita": "docs/loop/PROMPT_SIGUIENTE.md, VUELTA 8 cabecera", "especie": "CLASE", "linea": "marquet_turn_the_ship", "racha": "0 de 2", "tanda": "vuelta 8", "tipo": "tanda", "vuelta": 8}
+{"cae": false, "cita": "docs/loop/REPORTE.md, VUELTA 8, git diff vacio sobre dataset/bitacora/censos/config/src/scripts/tests/esquema", "especie": "DATO MOVIDO", "linea": "marquet_turn_the_ship", "racha": "0 de 2", "tanda": "vuelta 8", "tipo": "tanda", "vuelta": 8}
+{"cae": true, "cita": "ACTA M9, seccion M9.6 y M9.7", "especie": "REPORTE", "linea": "marquet_turn_the_ship", "racha": "1 de 3", "tanda": "ACTA M9", "tipo": "tanda", "vuelta": 8}
+{"cae": false, "cita": "ACTA M9, seccion M9.8", "especie": "CIFRA PUBLICADA", "linea": "marquet_turn_the_ship", "racha": "0 de 2", "tanda": "ACTA M9", "tipo": "tanda", "vuelta": 8}
+{"cae": false, "cita": "ACTA M9, seccion M9.9", "especie": "CLASE", "linea": "marquet_turn_the_ship", "racha": "0 de 2", "tanda": "ACTA M9", "tipo": "tanda", "vuelta": 8}
+{"cae": false, "cita": "ACTA M9, seccion M9.9", "especie": "DATO MOVIDO", "linea": "marquet_turn_the_ship", "racha": "0 de 2", "tanda": "ACTA M9", "tipo": "tanda", "vuelta": 8}
+{"cae": false, "cita": "ACTA M9, seccion M9.12", "especie": "AUDITOR", "linea": "marquet_turn_the_ship", "racha": "0 de 3", "tanda": "ACTA M9", "tipo": "tanda", "vuelta": 8}

@@ -16,16 +16,14 @@
     "src/tablero.py se detiene si falta."
   ],
   "alcance": {
-    "lineas_a_la_vez": 2,
-    "cita": "decision del fundador del 22 sep 2026, DOS SEMANAS, punto 4",
-    "que_dice": "DOS LINEAS VIVAS: la SERIAL en regimen completo, insertando grove_high_output y despues gerber_emyth en tandas de hasta 20 por vuelta; y el FRENTE marquet_turn_the_ship extrayendo. No se abre ningun libro nuevo."
+    "lineas_a_la_vez": 1,
+    "cita": "DECISION del fundador del 24 sep 2026, CIERRE DE LA CAMPANIA DE NODOS, punto 2",
+    "que_dice": "UNA LINEA VIVA: la SERIAL en regimen completo, insertando en tandas de hasta 20 por vuelta grove, gerber y marquet, en ese orden. Con los tres dentro y todo en verde: tag primer-equipo-completo, y la serial se detiene. No se abre ningun libro."
   },
   "frente_activo": {
-    "clave": [
-      "marquet_turn_the_ship"
-    ],
-    "cita": "decision del fundador del 22 sep 2026, DOS SEMANAS, punto 4",
-    "que_dice": "UN SOLO FRENTE: marquet_turn_the_ship, desde su cap_12, cuatro capitulos por vuelta, cuarentena y regimen ligero. gerber_emyth esta COSECHADO. Al cerrar marquet se cosecha (la sesion, por el mandato del 22 sep, punto 2.d) y la serial lo inserta como septimo."
+    "clave": null,
+    "cita": "DECISION del fundador del 24 sep 2026, CIERRE DE LA CAMPANIA DE NODOS, punto 2",
+    "que_dice": "NINGUN FRENTE, Y NO SE ABRE NINGUNO MAS: el frente de extraccion se cerro para siempre al cosechar marquet_turn_the_ship. Solo corre la serial, que inserta grove_high_output, despues gerber_emyth y despues marquet_turn_the_ship."
   },
   "liberados": {},
   "cerrados_en_extraccion": {
@@ -40,6 +38,9 @@
     },
     "gerber_emyth": {
       "cita": "ACTA G9 del frente gerber_emyth"
+    },
+    "marquet_turn_the_ship": {
+      "cita": "ACTA M9 del frente marquet_turn_the_ship, PARADA FELIZ por campania consumada (17 de 17)"
     }
   },
   "orden_de_prioridad": {
@@ -174,6 +175,10 @@
     "gerber_emyth": {
       "cita": "decision del fundador del 22 sep 2026, DOS SEMANAS, punto 1; fusion 95f6929",
       "que_dice": "COSECHADO con dueno NINGUNO: sus 22 candidatos (176 pasos) estan en la bandeja de esta rama esperando la insercion, y su racha murio con el frente (D.48). El libro esta minado 22 de 22 unidades, 12 en cero y firmadas. Es el SEXTO libro del mundo 11: D.60 cumplida."
+    },
+    "marquet_turn_the_ship": {
+      "cita": "mandato del fundador del 22 sep 2026, punto 2.d (la cosecha de marquet es de la sesion); DECISION del 24 sep, CIERRE DE LA CAMPANIA; fusion del 23 sep",
+      "que_dice": "COSECHADO con dueno NINGUNO: sus 20 candidatos estan en la bandeja de esta rama y la serial los inserta DESPUES de gerber_emyth, como septimo libro del mundo 11. Su racha murio con el frente (D.48). Minado 17 de 17, 4 en cero y firmados. CON ESTA COSECHA EL FRENTE DE EXTRACCION SE CIERRA PARA SIEMPRE."
     }
   },
   "corte_definitivo": {
@@ -210,9 +215,12 @@
     "_lea_esto": "Capitulos LEIDOS Y ADJUDICADOS EN CERO NODOS (d096). No es una medida: es la firma de un acta. Sin esto el tablero los cuenta como pendientes, porque el campo sale de lo que los candidatos citan y un capitulo vacio no deja candidato que cite nada.",
     "marquet_turn_the_ship": {
       "capitulos": [
-        "cap_05"
+        "cap_05",
+        "cap_15",
+        "cap_16",
+        "cap_17"
       ],
-      "cita": "ACTA M3 seccion M3.5 (cap_05, releido ENTERO y firmado en cero)"
+      "cita": "ACTA M3 seccion M3.5 (cap_05, releido ENTERO y firmado en cero). ACTA M6 seccion M6.4 (cap_15: L77 nombra el mecanismo, L79 a L91 son el episodio de los SEAL, L95 el Costa Concordia; ni un medio). ACTA M7 seccion M7.4 (cap_16, relevo de mando y reflexion; cap_17, glosario, notas e indice: la entrada SSM de L119 nombra un manual y no transcribe ninguno). Firmas que el auditor dejo a la espera de la sesion y que la sesion escribe al cosechar. Archivo: docs/loop/archivo/marquet_turn_the_ship/ACTA_AUDITOR_frente_M3_a_M9.md"
     },
     "grove_high_output": {
       "capitulos": [
@@ -279,7 +287,7 @@
   "modelos_por_linea": {
     "_lea_esto": "MODELO Y ESFUERZO POR LINEA Y ASIENTO (decision del 22 sep 2026, DOS SEMANAS, punto 3). El esfuerzo va atado al regimen en el arnes, como la fase ciega de D.58: ALTO en insertar, el de defecto en cuarentena, y ESFUERZO_EXTRACTOR o ESFUERZO_AUDITOR mandan si se dan. claude-opus-5-5 exige Claude Code 2.1.280 o posterior: el 22 sep el del PATH era el 2.1.231 y se actualizo.",
     "serial": {
-      "cita": "decision del fundador del 22 sep 2026, DOS SEMANAS, punto 3; y su nota del 21 sep: la insercion va con Opus en las dos sillas a proposito",
+      "cita": "decision del fundador del 22 sep 2026, DOS SEMANAS, punto 3; y su nota del 21 sep: la insercion va con Opus en las dos sillas a proposito; y la DECISION del 23 sep 2026, NINGUN EJECUTOR NI AUDITOR POR DEBAJO DE OPUS 5.5 (docs/loop/paradas/2026-09-23-opus-5-5-como-suelo-DECISION.md), que el arnes hace cumplir al arrancar",
       "regimen": "insertar, completo",
       "extractor": "claude-opus-5-5",
       "extractor_esfuerzo": "high",
@@ -292,7 +300,8 @@
       "extractor": "claude-sonnet-5",
       "extractor_esfuerzo": "defecto",
       "auditor": "claude-opus-5-5",
-      "auditor_esfuerzo": "defecto"
+      "auditor_esfuerzo": "defecto",
+      "que_dice": "HISTORIA DE SU FRENTE, ya cerrado y cosechado: el ultimo turno por debajo de Opus 5.5 de la casa fue su extractor. Desde el 23 sep ningun asiento arranca por debajo de claude-opus-5-5."
     }
   },
   "anulados": {

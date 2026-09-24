@@ -1,0 +1,56 @@
+AVISO: este instrumento LLEVA UNA CONSTANTE TECLEADA DENTRO, y es MI CLASE
+       por pieza (el diccionario MI_CLASE). Los numeros de linea, las palabras
+       y la cobertura salen del fichero. REMEDIO 4 de la ACTA 30, clausula 'si
+       la tienen, lo dicen en su primera linea'.
+
+fichero                        : fuentes/marquet_turn_the_ship/cap_03.md
+primera linea de cuerpo        : L8 (tras el segundo --- del preambulo)
+lineas con contenido en cuerpo : 37
+
+linea  cls  palab  primeras palabras
+L9     R        3  Call to Action
+L11    P       37  When was the last time you walked around your organization to hear abo
+L13    R       17  December 16, 1998: On Board USS Santa Fe, Pearl Harbor, Hawaii (twenty
+L15    P      169  According to procedure, I was to spend the next two weeks reviewing ev
+L17    R       63  I attended a department head meeting, a routine review of maintenance 
+L19    P       96  I looked around at the four department heads. These were the key indiv
+L21    P       97  The meeting started. Lieutenant Dave Adams, the weapons officer (Weps)
+L23    P        9  After the meeting I followed Dave to his stateroom.
+L25    P        6  “Weps, you seemed a bit frustrated.”
+L27    P      134  “Look, Captain, I have a vision of how I want this department to opera
+L29    R       44  In essence, Dave was describing a problem inherent in the leader-follo
+L31    R       83  I found Dave an incredibly intelligent, driven, and gifted officer. He
+L33    R       35  Dave wasn’t the only frustrated officer. Lieutenant Commander Bill Gre
+L35    R       36  As things on Santa Fe deteriorated, the crew adopted a hunker-down mod
+L37    P       94  During one of my walks around, I noted that one junior sailor looked p
+L39    P       92  The Standard Submarine Organization and Regulations Manual (SSORM) sta
+L41    P        6  We had done this sailor wrong.
+L43    P       27  I rushed about, tracked down his leave chit-it was sitting in someone’
+L45    P      147  Once I had acquainted myself with my men, I devoted time to observing 
+L47    P       61  Rick flipped through the sheets of paper and was visibly aggravated. “
+L49    P       83  The message board had already been to the captain and XO. Many of the 
+L51    P       15  “Why do you think the captain and XO feel they need to write those thi
+L53    P      109  “Well, look, I may be wrong, but let’s say something doesn’t happen-so
+L55    P      166  As was the case with the message board, like every other submarine, Sa
+L57    P       76  As the formation went on, I wandered around the periphery. Standing in
+L59    R        3  • • •
+L61    R       34  The overwhelming sense on the ship was that we needed to avoid problem
+L63    R       14  Still, there was a spark, a desire to do well despite all these frustr
+L65    R       42  It was clear to me that whereas the Olympia crew wasn’t as good as the
+L67    R      100  I felt the crew’s pain and frustration in a physical way. When I arriv
+L69    R       20  I went back to Commodore Kenny and told him I could definitely work wi
+L71    R        3  QUESTIONS TO CONSIDER
+L73    R        9  Is there a call to action in your organization?
+L75    R       15  Do people want to change, or are they comfortable with the current lev
+L77    R        4  Are things too comfortable?
+L79    R        6  Is there a feeling of complacency?
+L81    R       23  Do people take action to protect themselves or to make the outcome bet
+
+SUMA DE LAS FILAS            : 1978 palabras
+wc -w DEL CUERPO (L8 en adelante, lineas con contenido) : 1978
+CIERRA                       : SI
+LINEAS DE CUERPO SIN CLASE MIA : 0 []
+
+MI REPARTO
+  piezas P (yo escribiria nodo) : 18, 1424 palabras
+  piezas R (residuo)            : 19, 554 palabras

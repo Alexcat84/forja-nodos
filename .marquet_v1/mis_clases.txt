@@ -1,0 +1,19 @@
+MIS CLASES CIEGAS DE LA VUELTA 1 DEL FRENTE marquet_turn_the_ship
+Escritas ANTES de consultar ninguna razon escrita (HEREDADO 2 de la ACTA 30).
+Salen de MI lectura de fuentes/marquet_turn_the_ship/cap_01.md, cap_02.md y cap_03.md
+contra los nueve candidatos de cuarentena/marquet_turn_the_ship/, paso por paso.
+Formato: id | MI CLASE | MI FIDELIDAD D.30 | MI VEREDICTO DE VECINDAD
+
+auditar_formacion_premios_ultima_fila        | PROCEDIMIENTO | SOSTIENE 11/11 | NUEVO. Mi par mas proximo de la bandeja es observar_reunion_rutinaria_senales_plantilla, y los separo
+cambiar_forma_trabajar_conservar_plantilla   | PROCEDIMIENTO | SOSTIENE 5/5, CON UNA FRONTERA INCOMPLETA QUE CAZO YO: el paso 4 se apoya en L27 y el resumen declaraba solo L29 | NUEVO, no gemelo de encargar_meta_especifica_dejar_libre_metodo
+ceder_control_reforzar_competencia_claridad  | PROCEDIMIENTO CON RESERVA EN EL PASO 1, que describe como reparte SUS PARTES el libro y no que hace el lector | SOSTIENE 7/7 | NUEVO
+contar_firmas_cadena_tramite_parado          | PROCEDIMIENTO | SOSTIENE 10/10 | NUEVO
+encargar_meta_especifica_dejar_libre_metodo  | PROCEDIMIENTO | SOSTIENE 5/5, CON UNA FRONTERA INCOMPLETA: la glosa del paso 2 se apoya en L51 y el resumen declaraba solo L49 | NUEVO
+inspeccionar_reparto_informacion_notas_jefe  | PROCEDIMIENTO | SOSTIENE 8/8 | NUEVO
+observar_reunion_rutinaria_senales_plantilla | PROCEDIMIENTO | SOSTIENE 9/9 | NUEVO, cabeza de escena pero NO cabeza D.37
+recorrer_organizacion_escuchar_plantilla     | PROCEDIMIENTO | SOSTIENE 7/7 | NUEVO, cabeza de escena de cap_03 pero NO cabeza D.37
+seguir_frustrado_preguntar_implantacion_ideas| PROCEDIMIENTO | SOSTIENE 8/8 | NUEVO
+
+MI FRONTERA CIEGA DE cap_03: en .marquet_v1/mi_frontera_cap03.txt, cerrada al digito, 1978 contra 1978.
+MI BARRIDO D.38.4 (GRAFO MAS BANDEJAS): en .marquet_v1/informe_nueve.txt. La vecindad de arriba es
+MI LECTURA y queda SIN FIRMAR hasta que el barrido cierre; lo que el barrido diga se publica con su salida.

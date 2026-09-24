@@ -1,0 +1,8 @@
+umbral de similitud de esta corrida : 0.35
+HOY   declarar_intencion x resistir : 0.422
+ANTES declarar_intencion x resistir : 0.468
+HOY   eliminar x declarar_intencion : 0.33
+ANTES eliminar x declarar_intencion : 0.35
+
+LA POBLACION NO ENTRA: las cuatro cifras salen de la misma corrida,
+con las mismas fichas cargadas, cambiando solo el texto de una de ellas.

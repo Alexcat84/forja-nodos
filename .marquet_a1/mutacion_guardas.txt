@@ -1,0 +1,8 @@
+$ mutacion de las guardas de puerta sobre una copia en memoria (cosecha 7.C)
+  el candidato TAL COMO ESTA en la bandeja                   PASA  <-- NO MUERDE
+  MUTACION 1: sin el campo 'fuentes'                         CAE: el candidato no cumple esquema/nodo.schema.json
+      ['$: falta el campo obligatorio fuentes']
+  MUTACION 2: preposicion prohibida en el id                 CAE: el candidato rompe docs/REGLAS_DE_ID.md
+      ["id 'recorrer_organizacion_para_escuchar_plantilla': preposicion o articulo prohibido: para (regla 3)"]
+  MUTACION 3: clave fuera de la tabla canonica               CAE: LA FUENTE ES UN CAMPO SAGRADO (manual principio 8)
+      ["fuente 'libro_que_nadie_registro' fuera de fuentes/FUENTES_CANONICAS.json. La fuente canonica se registra ANTES del primer nodo del libro (manual seccion 7.1)"]

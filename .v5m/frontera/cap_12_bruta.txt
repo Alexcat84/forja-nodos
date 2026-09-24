@@ -1,0 +1,73 @@
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| R1 | L9 | 2 | rotulo del titulo "We Learn" | RESIDUO: rotulo |
+| R2 | L11 | 30 | pregunta de apertura: control sin competencia es caos | POSTURA |
+| R3 | L13 | 13 | fecha, sitio y cuenta atras al despliegue | RESIDUO: rotulo de fecha |
+| R4 | L15 | 105 | problema en el cuarto de torpedos, falta de competencia tecnica | CASO |
+| R5 | L17 | 102 | Dave Adams investiga, respuestas vagas y evasivas | CASO |
+| R6 | L19 | 20 | inseguro del rumbo, va a ver al Commodore Kenny | CASO |
+| R7 | L21 | 34 | "estoy cuestionando mi enfoque" dialogo de apertura | CASO |
+| R8 | L23 | 112 | el commodore lo tranquiliza, rivalidad entre capitanes | CASO |
+| R9 | L25 | 51 | insight: mas autoridad delegada exige mas competencia tecnica | POSTURA |
+| R10 | L27 | 80 | si solo obedeces no necesitas entender tu oficio, la fisica no perdona | POSTURA |
+| R11 | L29 | 106 | iba a ser duro, reflexion sobre el fracaso en el Will Rogers | CASO |
+| R12 | L31 | 55 | impulso de volver a lider-seguidor, decide persistir con apoyo del commodore | CASO |
+| R13 | L33 | 47 | este proceso ayudo con el proyecto del credo | CASO |
+| R14 | L35 | 19 | discusiones con oficiales y jefes, respuestas demasiado vagas | CASO |
+| R15 | L37 | 2 | "We supervise." | CASO |
+| R16 | L39 | 3 | "We enforce standards." | CASO |
+| R17 | L41 | 2 | "We schedule." | CASO |
+| R18 | L43 | 4 | "We prepare for war." | CASO |
+| R19 | L45 | 13 | intentaron ser mas especificos, ahora demasiado | CASO |
+| R20 | L47 | 15 | "We operate systems of the submarine..." | CASO |
+| R21 | L49 | 10 | "We walk around and observe..." | CASO |
+| R22 | L51 | 10 | "We make decisions about how to best employ Santa Fe." | CASO |
+| R23 | L53 | 14 | "We load torpedoes, determine enemy location..." | CASO |
+| R24 | L55 | 54 | hablaron de nuevo, adoptaron "we learn" | CASO |
+| R25 | L57 | 58 | no importa que hagamos, extraer el maximo aprendizaje de cada evento | POSTURA |
+| R26 | L59 | 15 | terminaron codificando la filosofia en un credo | CASO |
+| R27 | L61 | 4 | rotulo "USS Santa Fe Creed" | RESIDUO: rotulo |
+| R28 | L63 | 8 | "What do we do on a day-to-day basis?" | CASO |
+| R29 | L65 | 2 | "We learn." | CASO |
+| R30 | L67 | 8 | "Why is learning a better word than training?" | CASO |
+| R31 | L69 | 22 | training implica pasividad, learning es activo | CASO |
+| R32 | L71 | 4 | "What do we learn?" | CASO |
+| R33 | L73 | 11 | "We learn how to prepare a submarine for success in combat." | CASO |
+| R34 | L75 | 8 | "Why would we need to go to combat?" | CASO |
+| R35 | L77 | 19 | iriamos a combate si el pais lo pide para defender la Constitucion | CASO |
+| R36 | L79 | 4 | "Why is that important?" | CASO |
+| R37 | L81 | 77 | libertad personal, bienestar y prosperidad economica unicos en la historia | CASO |
+| R38 | L83 | 2 | "Why submarines?" | CASO |
+| R39 | L85 | 57 | submarinos logran misiones unicas, estadistica de la Segunda Guerra Mundial | CASO |
+| R40 | L87 | 12 | "If all we do is learn, how does the work get done?" | CASO |
+| R41 | L89 | 25 | hacemos el trabajo, pero aprendemos haciendolo | CASO |
+| R42 | L91 | 17 | "It seems like a trick..." | CASO |
+| R43 | L93 | 76 | "Yes and no..." mismo trabajo, distinta mirada | CASO |
+| R44 | L95 | 7 | "How does the training program fit in?" | CASO |
+| R45 | L97 | 38 | el programa de entrenamiento es un subconjunto del aprendizaje | CASO |
+| R46 | L99 | 12 | por eso nuestra vision es una fabrica de aprendizaje y competencia | CASO |
+| R47 | L101 | 58 | materia prima, producto, cada uno producto y maquina de la fabrica | CASO |
+| R48 | L103 | 7 | "What do you expect me to do?" | CASO |
+| R49 | L105 | 44 | espero que aprendas a ser mejor submarinista cada dia | CASO |
+| R50 | L107 | 7 | rotulo "Mechanism: We Learn (Everywhere, All the Time)" | RESIDUO: rotulo de mecanismo |
+| R51 | L109 | 46 | empece a mirar el programa de entrenamiento con otra luz | POSTURA |
+| R52 | L111 | 18 | quieres un programa de entrenamiento al que la gente quiera ir? asi deberia funcionar | POSTURA: transicion a lista causal |
+| R53 | L113 | 9 | el proposito del entrenamiento es aumentar la competencia tecnica | POSTURA: cadena causal |
+| R54 | L115 | 17 | el resultado de mas competencia es poder delegar mas decision | POSTURA: cadena causal |
+| R55 | L117 | 15 | mas decision entre empleados produce naturalmente compromiso, motivacion e iniciativa | POSTURA: cadena causal |
+| R56 | L119 | 11 | terminaras con mayor productividad, moral y efectividad | POSTURA: cadena causal |
+| R57 | L121 | 4 | subrotulo "Divest Control, Increase Competence" | RESIDUO: rotulo de subseccion |
+| R58 | L123 | 12 | algo para probar en tu proxima reunion de liderazgo u offsite | NODO: intro |
+| P1 | L125, L127, L129, L131, L133, L135, L137, L139 | 173 | NODO: ejercicio de tarjetas para identificar temas de formacion ligados a delegar decisiones (ver 2.a.4 y discutible) | NODO |
+| R59 | L141 | 3 | separador "• • •" | RESIDUO: separador |
+| R60 | L143 | 11 | etiqueta "WE LEARN (EVERYWHERE, ALL THE TIME) is a mechanism for COMPETENCE." | RESIDUO: etiqueta de mecanismo |
+| R61 | L145 | 81 | we learn ayudo mi balance interno, antes estaba aprensivo ante inspecciones | POSTURA |
+| R62 | L147 | 85 | estado de calma y avidez, la tripulacion lo reflejo, comentarios de inspectores | CASO |
+| R63 | L149 | 3 | rotulo "QUESTIONS TO CONSIDER" | RESIDUO: rotulo |
+| R64 | L151 | 26 | pregunta 1 | PENDIENTE DE DOCTRINA |
+| R65 | L153 | 14 | pregunta 2 | PENDIENTE DE DOCTRINA |
+| R66 | L155 | 18 | pregunta 3 | PENDIENTE DE DOCTRINA |
+| R67 | L157 | 7 | pregunta 4 | PENDIENTE DE DOCTRINA |
+| **el cuerpo entero** | **L9 a L157** | **2058** | **suma de las piezas: 2058** | **residuo sin asignar: 0** |
+
+    piezas: 68   lineas solapadas: 0   cuerpo 2058   suma 2058   residuo 0   lineas con palabras sin cubrir: 0

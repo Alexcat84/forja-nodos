@@ -1,0 +1,8 @@
+$ git rev-parse --git-dir ; git rev-parse --git-common-dir
+C:/Users/AlexDesk/Documents/forja-nodos/.git/worktrees/forja-marquet_turn_the_ship
+C:/Users/AlexDesk/Documents/forja-nodos/.git
+$ git worktree list
+C:/Users/AlexDesk/Documents/forja-nodos                  17d673f [extraccion-mundo-11]
+C:/Users/AlexDesk/Documents/forja-gerber_emyth           abf7515 [extraccion-gerber_emyth]
+C:/Users/AlexDesk/Documents/forja-grove_high_output      6933b64 [extraccion-grove_high_output]
+C:/Users/AlexDesk/Documents/forja-marquet_turn_the_ship  3b33091 [extraccion-marquet_turn_the_ship]

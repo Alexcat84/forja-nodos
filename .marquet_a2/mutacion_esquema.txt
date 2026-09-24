@@ -1,0 +1,18 @@
+LA GUARDA QUE EL REPORTE DECLARA MORDIENDO, RE CORRIDA POR MUTACION (cosecha 7.C)
+Se muta una COPIA EN MEMORIA de un candidato que HOY pasa, y se comprueba que CAE.
+
+$ candidato sin mutar, tal como vive hoy en la bandeja
+   PASA la guarda de esquema  <- el control base
+
+$ mutacion: se le quita el campo 'fuentes'
+   CAE: Rechazo - el candidato no cumple esquema/nodo.schema.json
+   detalle: 
+
+$ mutacion: se le quita el campo 'pasos_accionables'
+   CAE: Rechazo - el candidato no cumple esquema/nodo.schema.json
+   detalle: 
+
+$ mutacion: se le quita el campo 'id'
+   CAE: Rechazo - el candidato no cumple esquema/nodo.schema.json
+   detalle: 
+

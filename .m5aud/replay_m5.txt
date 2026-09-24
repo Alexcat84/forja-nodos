@@ -1,0 +1,11 @@
+lineas del registro hoy: 18
+--- con las primeras 14 lineas
+    tandas vigilables (con cae escrito): 14
+    discrepancias del replay           : 1
+      linea 14, CIFRA PUBLICADA en ACTA M4: declara 1, el replay da 2
+    CIFRA PUBLICADA declarada          : 1 de 2  (de: ACTA M4)
+--- con las primeras 18 lineas
+    tandas vigilables (con cae escrito): 14
+    discrepancias del replay           : 1
+      linea 14, CIFRA PUBLICADA en ACTA M4: declara 1, el replay da 2
+    CIFRA PUBLICADA declarada          : 2 de 2  (de: vuelta 4)

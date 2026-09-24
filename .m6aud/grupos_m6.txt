@@ -1,0 +1,21 @@
+cap_12 R15 a R23  reporte L37 a L53       66 | bruta L37 a L53 suma 73
+cap_12 R27 a R49  reporte L61 a L107     620 | bruta L61 a L105 suma 522
+cap_12 R51 a R57  reporte L109 a L121    122 | bruta L109 a L121 suma 120
+cap_12 R59 a R67  reporte L141 a L157    152 | bruta L141 a L157 suma 248
+cap_12 SUMA DE LA COLUMNA palabras de la tabla del reporte: 2055
+cap_13 R1 a R48   reporte L9 a L103     2680 | bruta L9 a L103 suma 1982
+cap_13 R51 a R53  reporte L109 a L113    336 | bruta L109 a L113 suma 336
+cap_13 R57 a R59  reporte L123 a L127    306 | bruta L123 a L127 suma 306
+cap_13 R60 a R63  reporte L129 a L135     67 | bruta L129 a L135 suma 67
+cap_13 SUMA DE LA COLUMNA palabras de la tabla del reporte: 3664
+cap_14 R1 a R11   reporte L9 a L29       176 | bruta L9 a L29 suma 198
+cap_14 R12 a R14  reporte L31 a L35      183 | bruta L31 a L35 suma 183
+cap_14 R16 a R39  reporte L39 a L85      622 | bruta L39 a L85 suma 491
+cap_14 R45 a R51  reporte L101 a L113     65 | bruta L101 a L113 suma 68
+cap_14 SUMA DE LA COLUMNA palabras de la tabla del reporte: 1399
+cap_15 R1 a R18   reporte L9 a L43       663 | bruta L9 a L43 suma 566
+cap_15 R19 a R34  reporte L45 a L75      611 | bruta L45 a L75 suma 770
+cap_15 R36 a R42  reporte L79 a L91      235 | bruta L79 a L91 suma 285
+cap_15 R43 a R44  reporte L93 a L95      116 | bruta L93 a L95 suma 116
+cap_15 R45 a R49  reporte L97 a L105      42 | bruta L97 a L105 suma 45
+cap_15 SUMA DE LA COLUMNA palabras de la tabla del reporte: 1675

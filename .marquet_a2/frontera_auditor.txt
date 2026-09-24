@@ -1,0 +1,33 @@
+AUDITOR: recuento independiente de cap_03, sin ninguna constante teclada
+cierres '---' en: [1, 7]
+CUERPO_DESDE (segundo cierre + 1): 8
+lineas del fichero: 81
+wc -w del cuerpo (L8 en adelante): 1978
+wc -w del fichero entero: 2008
+lineas CON CONTENIDO en el cuerpo: 37
+sus numeros: [9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39, 41, 43, 45, 47, 49, 51, 53, 55, 57, 59, 61, 63, 65, 67, 69, 71, 73, 75, 77, 79, 81]
+
+COMPROBACION DE LA TABLA 1.b DEL REPORTE, CELDA A CELDA CONTRA EL FICHERO
+pieza  rango      palabras_reporte  palabras_fichero  coincide
+R1    L 9-L9                   3                 3  SI
+P1    L11-L11                 37                37  SI
+R2    L13-L13                 17                17  SI
+P2    L15-L15                169               169  SI
+R3    L17-L17                 63                63  SI
+P3    L19-L21                193               193  SI
+P4    L23-L27                149               149  SI
+R4    L29-L33                162               162  SI
+R5    L35-L35                 36                36  SI
+P5    L37-L43                219               219  SI
+P6    L45-L53                415               415  SI
+P7    L55-L57                242               242  SI
+R6    L59-L59                  3                 3  SI
+R7    L61-L67                190               190  SI
+R8    L69-L69                 20                20  SI
+R9    L71-L81                 60                60  SI
+
+SUMA DE LAS 16 FILAS        : 1978
+CUERPO (L8 en adelante)     : 1978
+FILAS QUE NO COINCIDEN      : 0
+LINEAS CON CONTENIDO SIN CUBRIR: []
+SOLAPES                     : []

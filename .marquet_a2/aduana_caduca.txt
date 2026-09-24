@@ -1,0 +1,23 @@
+$ ls --time-style=full-iso -la sobre las dos sedes que fechan el cambio
+-rw-r--r-- 1 AlexDesk 197609 2036 2026-09-16 21:21:40.730366000 -0400 .vm01/aduana/c4_contar_firmas_cadena_tramite_parado.txt
+-rw-r--r-- 1 AlexDesk 197609 1792 2026-09-16 21:39:25.569321200 -0400 .vm01/aduana/c6_auditar_formacion_premios_ultima_fila.txt
+-rw-r--r-- 1 AlexDesk 197609 2537 2026-09-16 21:24:00.943926900 -0400 .vm01/aduana/c6_intento1_puente_retirado.txt
+-rw-r--r-- 1 AlexDesk 197609 6232 2026-09-16 21:24:01.020023900 -0400 cuarentena/marquet_turn_the_ship/auditar_formacion_premios_ultima_fila.json
+
+$ los vecinos que la aduana levanto contra auditar_formacion ANTES de su correccion
+    vecino observar_reunion_rutinaria_senales_plantilla  [levantada por: similitud_texto]
+      similitud_texto 0.391 | familia_id 0.000 | paso_contra_nodo 0.489
+    vecino contar_firmas_cadena_tramite_parado  [levantada por: similitud_texto]
+      similitud_texto 0.359 | familia_id 0.000 | paso_contra_nodo 0.465
+    vecino recorrer_organizacion_escuchar_plantilla  [levantada por: similitud_texto]
+      similitud_texto 0.388 | familia_id 0.000 | paso_contra_nodo 0.462
+    vecino encargar_meta_especifica_dejar_libre_metodo  [levantada por: similitud_texto]
+      similitud_texto 0.355 | familia_id 0.000 | paso_contra_nodo 0.435
+    vecino seguir_frustrado_preguntar_implantacion_ideas  [levantada por: similitud_texto]
+      similitud_texto 0.356 | familia_id 0.000 | paso_contra_nodo 0.428
+
+$ y los que levanta DESPUES de la correccion
+    vecino observar_reunion_rutinaria_senales_plantilla  [levantada por: similitud_texto]
+      similitud_texto 0.370 | familia_id 0.000 | paso_contra_nodo 0.489
+    vecino recorrer_organizacion_escuchar_plantilla  [levantada por: similitud_texto]
+      similitud_texto 0.353 | familia_id 0.000 | paso_contra_nodo 0.462
