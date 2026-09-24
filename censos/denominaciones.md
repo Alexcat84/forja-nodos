@@ -957,3 +957,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-24 | empujar_persona_reunion_direccion_preferida | nombre_largo | El empujon: la llamada, la nota y el comentario con los que se defiende un curso de accion preferido sin emitir una instruccion, que es algo mas fuerte que informar y algo mas debil que decidir | castellano | - |
 | 2026-09-24 | empujar_persona_reunion_direccion_preferida | otro_idioma | nudging | ingles | - |
 | 2026-09-24 | empujar_persona_reunion_direccion_preferida | otro_idioma | nudge | ingles | - |
+| 2026-09-24 | subir_productividad_gerencial_tres_vias | nombre_largo | Las tres vias de subir la productividad de un mando, que es su salida por unidad de tiempo trabajado: acelerar el ritmo de sus actividades, subir la palanca de cada una, y correr la mezcla de las de menor palanca a las de mayor | castellano | - |
+| 2026-09-24 | subir_productividad_gerencial_tres_vias | otro_idioma | managerial productivity | ingles | - |
+| 2026-09-24 | subir_productividad_gerencial_tres_vias | otro_idioma | leverage | ingles | - |
