@@ -60204,3 +60204,31 @@ La aduana de hoy: **ENTRARIA** con `0` vecino(s) contra `479`; lineas `--veredic
 |---|---|---:|---:|---:|---|
 
 **Ningun vecino y ninguna linea, como en el barrido de la `66`.** Sin arista.
+
+### Fila `18`: `buscar_regularidad_bloques_iguales_trabajo_mando`, **INSERTADO** en `2424.9` s, codigo `0`, commit `f78af13`
+
+La aduana de hoy: **BLOQUEARIA** con `4` vecino(s) contra `479`; lineas `--veredicto` pasadas: `4`. Salida entera en `.v67ext/insertar_18_buscar_regularidad_bloques_iguales_trabajo_mando.txt`.
+
+<!-- TALLADO: parcial salida=.v67ext/insertar_18_buscar_regularidad_bloques_iguales_trabajo_mando.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `agrupar_tareas_semejantes_aprovechar_preparacion` | paso_contra_nodo | 0.292 | 0.000 | 0.718 | SANO |
+| `preparar_respuestas_estandar_interrupciones_repetidas` | similitud_texto | 0.396 | 0.000 | 0.543 | SANO |
+| `agrupar_interrupciones_subordinados_reuniones_regulares` | similitud_texto | 0.375 | 0.000 | 0.417 | SANO |
+| `llevar_inventario_proyectos_discrecionales` | similitud_texto | 0.361 | 0.000 | 0.374 | SANO |
+
+**Los cuatro vecinos son los cuatro de su bloque y las cuatro lineas se pasaron tal cual.** **Arista por lectura cableada con la madre ya en el grafo**: `representar_actividad_caja_negra_ventanas > buscar_regularidad_bloques_iguales_trabajo_mando`, `--paso 8`, el que su fila cita (`D66.11`, sostenido en la `ACTA 65`). Salida entera en `.v67ext/arista_representar_actividad_caja_negra_ventanas__buscar_regularidad_bloques_iguales_trabajo_mando.txt`:
+
+    $ python forja.py arista --madre representar_actividad_caja_negra_ventanas --hijo buscar_regularidad_bloques_iguales_trabajo_mando --paso 8 --razon <fila 14> --veredicto CONTINUA --cita-veredicto <fila 14>
+    DECLARACION DE ARISTA POR LECTURA (D.37)
+      madre: representar_actividad_caja_negra_ventanas
+      hijo : buscar_regularidad_bloques_iguales_trabajo_mando
+      paso citado de la madre: 8
+        Recorta ventanas en la caja, para poder ver una parte de lo que ocurre dentro.
+      señales del par: familia_id 0.0, paso_contra_nodo 0.395, similitud_texto 0.255
+        NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+    GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: representar_actividad_caja_negra_ventanas > buscar_regularidad_bloques_iguales_trabajo_mando
+      razon en bitacora/VEREDICTOS.jsonl
+
