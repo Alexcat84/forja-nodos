@@ -1,0 +1,75 @@
+fila 08, elegir_momento_actividad_palanca_maxima, lineas --veredicto: 7
+  --veredicto subir_productividad_gerencial_tres_vias|SANO|El mismo par que subir lee desde su lado: este candidato parte de una actividad de alta palanca ya reconocida, producto de buscar_actividad_alta_palanca_tres_vias y no de este vecino; la relacion con subir pasa por buscar (C1 y C2) y no pide arista propia. Correccion declarada de la vuelta 67: la razon vieja usaba EXTRACTOR 9.1 restriccion 1, que no decide aristas (restriccion 3) (DISCUTIBLE D67.4).
+  --veredicto programar_visita_area_observar_despachar|SANO|El mismo par que la visita lee desde su lado. Ajenos.
+  --veredicto escalonar_fuentes_informacion_gerencial|SANO|El mismo par que escalonar lee desde su lado: el momento de una actividad contra la escala de las fuentes. Ajenos.
+  --veredicto reunir_informacion_gerencial_vias_variadas|SANO|El mismo par que reunir lee desde su lado. Ajenos.
+  --veredicto transmitir_objetivos_prioridades_preferencias|SANO|El mismo par que transmitir lee desde su lado. Ajenos.
+  --veredicto empujar_persona_reunion_direccion_preferida|SANO|El mismo par que empujar lee desde su lado. Ajenos.
+  --veredicto buscar_actividad_alta_palanca_tres_vias|CONTINUA|madre=buscar_actividad_alta_palanca_tres_vias|El mismo par que buscar lee desde su lado y con la misma direccion (relectura conjunta de la vuelta 67, C2): este candidato parte de una actividad ya reconocida como de alta palanca, que es el producto de la madre, y le anade el momento (L215 a L217).
+inicio 2026-09-24 09:28:43
+======================================================================
+ADUANA DE INSERCION, candidato 'elegir_momento_actividad_palanca_maxima'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (375 del grafo mas 104 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 7. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino subir_productividad_gerencial_tres_vias  [Subir la productividad de un mando por sus tres vias: el ritmo, la palanca y la mezcla de actividades]
+    levantada por: similitud_texto
+    similitud_texto    0.411 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.596 (umbral 0.60)
+    paso 1 del candidato contra paso 3 de subir_productividad_gerencial_tres_vias
+
+  vecino programar_visita_area_observar_despachar  [Programar la visita a un area de trabajo para observar lo que pasa y despachar alli los asuntos de dos minutos]
+    levantada por: similitud_texto
+    similitud_texto    0.461 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.420 (umbral 0.60)
+    paso 1 del candidato contra paso 4 de programar_visita_area_observar_despachar
+
+  vecino escalonar_fuentes_informacion_gerencial  [Escalonar las fuentes de informacion del mando, de la verbal a la reposada, y solaparlas para verificar]
+    levantada por: similitud_texto
+    similitud_texto    0.442 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.402 (umbral 0.60)
+    paso 1 del candidato contra paso 6 de escalonar_fuentes_informacion_gerencial
+
+  vecino reunir_informacion_gerencial_vias_variadas  [Reunir la informacion del mando por todas sus vias, con el intercambio verbal rapido por delante]
+    levantada por: similitud_texto
+    similitud_texto    0.438 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.425 (umbral 0.60)
+    paso 4 del candidato contra paso 3 de reunir_informacion_gerencial_vias_variadas
+
+  vecino transmitir_objetivos_prioridades_preferencias  [Transmitir objetivos, prioridades y preferencias, y no solo hechos, para que el subordinado pueda decidir solo]
+    levantada por: similitud_texto
+    similitud_texto    0.422 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.395 (umbral 0.60)
+    paso 1 del candidato contra paso 1 de transmitir_objetivos_prioridades_preferencias
+
+  vecino empujar_persona_reunion_direccion_preferida  [Empujar a una persona o a una reunion hacia la direccion que prefieres, sabiendo que un empujon no es una orden]
+    levantada por: similitud_texto
+    similitud_texto    0.419 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.404 (umbral 0.60)
+    paso 6 del candidato contra paso 7 de empujar_persona_reunion_direccion_preferida
+
+  vecino buscar_actividad_alta_palanca_tres_vias  [Buscar las actividades de alta palanca por sus tres vias basicas: mucha gente, un acto breve de efecto largo, y el saber unico]
+    levantada por: similitud_texto
+    similitud_texto    0.418 (umbral 0.35)
+    familia_id         0.222 (umbral 0.30)
+    paso_contra_nodo   0.376 (umbral 0.60)
+    paso 1 del candidato contra paso 4 de buscar_actividad_alta_palanca_tres_vias
+  arista madre-hijo cableada y escrita RESUELTA: buscar_actividad_alta_palanca_tres_vias > elegir_momento_actividad_palanca_maxima
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 376
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 7
+
+======================================================================
+fin 2026-09-24 09:53:25 | codigo de salida 0 | 1481.6 s

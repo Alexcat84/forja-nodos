@@ -963,3 +963,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-24 | buscar_actividad_alta_palanca_tres_vias | nombre_largo | Las tres vias basicas por las que se consigue una actividad de alta palanca: que un solo mando afecte a mucha gente, que un conjunto breve y bien enfocado de palabras o acciones afecte a una persona durante mucho tiempo, y que un individuo con una pieza unica y clave de conocimiento afecte al trabajo de un grupo grande | castellano | - |
 | 2026-09-24 | buscar_actividad_alta_palanca_tres_vias | otro_idioma | high-leverage activities | ingles | - |
 | 2026-09-24 | buscar_actividad_alta_palanca_tres_vias | otro_idioma | leverage | ingles | - |
+| 2026-09-24 | elegir_momento_actividad_palanca_maxima | nombre_largo | La palanca que depende de cuando se ejerce: el trabajo preparatorio hecho por delante del acontecimiento, que le quita confusion a mucha gente durante mucho tiempo, y la accion inmediata cuando aplazarla cuesta todas las posibilidades | castellano | - |
+| 2026-09-24 | elegir_momento_actividad_palanca_maxima | otro_idioma | timeliness | ingles | - |
+| 2026-09-24 | elegir_momento_actividad_palanca_maxima | otro_idioma | milestones | ingles | - |
