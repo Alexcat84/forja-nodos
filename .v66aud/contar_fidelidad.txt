@@ -1,0 +1,26 @@
+candidato                                        ficha filas   T   P  DUDA
+reunir_informacion_gerencial_vias_variadas           8     8   8   0     0
+escalonar_fuentes_informacion_gerencial              7     7   7   0     0
+programar_visita_area_observar_despachar             8     8   8   0     0
+transmitir_objetivos_prioridades_preferencias        5     5   5   0     0
+empujar_persona_reunion_direccion_preferida          7     7   7   0     0
+subir_productividad_gerencial_tres_vias              4     4   4   0     0
+buscar_actividad_alta_palanca_tres_vias              4     4   3   0     1
+elegir_momento_actividad_palanca_maxima              7     7   7   0     0
+detectar_palanca_negativa_actividad_mando            9     9   6   0     3
+delegar_tarea_base_comun_seguimiento                10    10  10   0     0
+supervisar_tarea_delegada_etapa_menor_valor          9     9   9   0     0
+supervisar_decision_delegada_preguntas_concretas     6     6   6   0     0
+identificar_paso_limitante_jornada_desfases          5     5   5   0     0
+agrupar_tareas_semejantes_aprovechar_preparacion     6     6   6   0     0
+decir_no_trabajo_excede_capacidad                   10    10  10   0     0
+usar_calendario_herramienta_planificacion_produccion     7     7   7   0     0
+llevar_inventario_proyectos_discrecionales           5     5   5   0     0
+dimensionar_numero_subordinados_medio_dia_semanal    11    11  11   0     0
+buscar_regularidad_bloques_iguales_trabajo_mando     9     9   9   0     0
+preparar_respuestas_estandar_interrupciones_repetidas     6     6   6   0     0
+agrupar_interrupciones_subordinados_reuniones_regulares     5     5   5   0     0
+canalizar_interrupciones_cartel_hora_oficina         8     8   8   0     0
+total cap_04                                       156   156 152   0     4
+PUENTE sobre pasos escritos: 0 de 156 = 0.00 por ciento
+si las 4 DUDA cayesen a PUENTE: 4 de 156 = 2.56 por ciento

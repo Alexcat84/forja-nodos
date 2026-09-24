@@ -1,0 +1,10 @@
+poblacion: 479
+ritmo 1
+    gerber_emyth             dictar_ritmo_crecimiento_preguntas_escritas
+mezcla 0
+acelerar 0
+palanca 3
+    grove_high_output        buscar_actividad_alta_palanca_tres_vias
+    grove_high_output        detectar_palanca_negativa_actividad_mando
+    grove_high_output        elegir_momento_actividad_palanca_maxima
+saber_unico 0

@@ -1,0 +1,6 @@
+TABLERO marquet_turn_the_ship | insertados 0 | nodos_en_grafo 0 | bandeja 20
+TABLERO grove_high_output | insertados 21 | nodos_en_grafo 21 | bandeja 71
+TABLERO gerber_emyth | insertados 0 | nodos_en_grafo 0 | bandeja 22
+MEDIDO  grove_high_output | nodos del grafo con esa fuente 23 | en _insertados 23 | en bandeja 69
+MEDIDO  gerber_emyth | nodos del grafo con esa fuente 0 | en _insertados 0 | en bandeja 22
+MEDIDO  marquet_turn_the_ship | nodos del grafo con esa fuente 0 | en _insertados 0 | en bandeja 20

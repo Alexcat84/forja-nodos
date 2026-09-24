@@ -1,0 +1,20 @@
+{
+ "id": "simplificar_trabajo_reducir_numero_pasos",
+ "grafo": 368,
+ "bandejas": 111,
+ "vecinos": [
+  {
+   "id": "dimensionar_plantilla_administrativa_pronostico",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.351,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.439
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 4 del candidato contra paso 5 de dimensionar_plantilla_administrativa_pronostico"
+  }
+ ]
+}

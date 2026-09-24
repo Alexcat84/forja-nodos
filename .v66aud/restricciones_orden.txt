@@ -1,0 +1,16 @@
+restricciones: 12
+  reunir_informacion_gerencial_vias_variadas           antes que escalonar_fuentes_informacion_gerencial                  CONTINUA               el orden del libro la cumple
+  subir_productividad_gerencial_tres_vias              antes que buscar_actividad_alta_palanca_tres_vias                  CONTINUA               el orden del libro la cumple
+  buscar_actividad_alta_palanca_tres_vias              antes que elegir_momento_actividad_palanca_maxima                  CONTINUA               el orden del libro la cumple
+  usar_calendario_herramienta_planificacion_produccion antes que decir_no_trabajo_excede_capacidad                        CONTINUA               EL ORDEN DEL LIBRO LA VIOLA
+  delegar_tarea_base_comun_seguimiento                 antes que supervisar_tarea_delegada_etapa_menor_valor              arista por lectura     el orden del libro la cumple
+  delegar_tarea_base_comun_seguimiento                 antes que supervisar_decision_delegada_preguntas_concretas         arista por lectura     el orden del libro la cumple
+  transmitir_objetivos_prioridades_preferencias        antes que delegar_tarea_base_comun_seguimiento                     arista por lectura     el orden del libro la cumple
+  identificar_paso_limitante_jornada_desfases          antes que usar_calendario_herramienta_planificacion_produccion     arista por lectura     el orden del libro la cumple
+  agrupar_tareas_semejantes_aprovechar_preparacion     antes que agrupar_interrupciones_subordinados_reuniones_regulares  arista por lectura     el orden del libro la cumple
+  buscar_regularidad_bloques_iguales_trabajo_mando     antes que canalizar_interrupciones_cartel_hora_oficina             arista por lectura     el orden del libro la cumple
+  buscar_actividad_alta_palanca_tres_vias              antes que detectar_palanca_negativa_actividad_mando                arista por lectura     el orden del libro la cumple
+  preparar_respuestas_estandar_interrupciones_repetidas antes que llevar_inventario_proyectos_discrecionales               D.36, solo lo levanta llevar_inventario_proyectos_discrecionales EL ORDEN DEL LIBRO LA VIOLA
+que obligan (madre antes que hijo): 11 | violadas por el orden del libro: 1
+D.36 de un solo lado, informativas: 1
+ultimas dos del orden del libro: ['agrupar_interrupciones_subordinados_reuniones_regulares', 'canalizar_interrupciones_cartel_hora_oficina']

@@ -1,0 +1,14 @@
+SOSTENGO       construir_flujo_produccion_paso_limitante          (grafo) > identificar_paso_limitante_jornada_desfases            (bandeja) | levantado por el barrido: no
+SOSTENGO, DUDA variar_frecuencia_inspeccion_nivel_calidad         (grafo) > supervisar_tarea_delegada_etapa_menor_valor            (bandeja) | levantado por el barrido: no
+SOSTENGO       delegar_tarea_base_comun_seguimiento               (bandeja) > supervisar_tarea_delegada_etapa_menor_valor            (bandeja) | levantado por el barrido: no
+SOSTENGO       delegar_tarea_base_comun_seguimiento               (bandeja) > supervisar_decision_delegada_preguntas_concretas       (bandeja) | levantado por el barrido: no
+SOSTENGO, DUDA transmitir_objetivos_prioridades_preferencias      (bandeja) > delegar_tarea_base_comun_seguimiento                   (bandeja) | levantado por el barrido: no
+SOSTENGO       identificar_paso_limitante_jornada_desfases        (bandeja) > usar_calendario_herramienta_planificacion_produccion   (bandeja) | levantado por el barrido: no
+SOSTENGO       agrupar_tareas_semejantes_aprovechar_preparacion   (bandeja) > agrupar_interrupciones_subordinados_reuniones_regulares (bandeja) | levantado por el barrido: no
+SOSTENGO       buscar_regularidad_bloques_iguales_trabajo_mando   (bandeja) > canalizar_interrupciones_cartel_hora_oficina           (bandeja) | levantado por el barrido: no
+SOSTENGO, DUDA buscar_actividad_alta_palanca_tres_vias            (bandeja) > detectar_palanca_negativa_actividad_mando              (bandeja) | levantado por el barrido: no
+SOSTENGO, DUDA representar_actividad_caja_negra_ventanas          (grafo) > buscar_regularidad_bloques_iguales_trabajo_mando       (bandeja) | levantado por el barrido: no
+NO             elegir_fabricar_pedido_pronostico                  (grafo) > usar_calendario_herramienta_planificacion_produccion   (bandeja) | levantado por el barrido: no
+NO             subir_productividad_gerencial_tres_vias            (bandeja) > identificar_paso_limitante_jornada_desfases            (bandeja) | levantado por el barrido: no
+NO             reunir_informacion_gerencial_vias_variadas         (bandeja) > programar_visita_area_observar_despachar               (bandeja) | levantado por el barrido: SI
+filas: 13 | SOSTENGO: 10 | NO: 3 | levantadas por el barrido: 1

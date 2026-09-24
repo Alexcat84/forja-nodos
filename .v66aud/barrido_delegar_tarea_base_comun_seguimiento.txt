@@ -1,0 +1,1 @@
+delegar_tarea_base_comun_seguimiento poblacion 479 (368 grafo mas 111 bandejas) vecinos 0

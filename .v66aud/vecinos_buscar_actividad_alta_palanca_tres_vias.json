@@ -1,0 +1,98 @@
+{
+ "id": "buscar_actividad_alta_palanca_tres_vias",
+ "grafo": 368,
+ "bandejas": 111,
+ "vecinos": [
+  {
+   "id": "subir_productividad_gerencial_tres_vias",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.536,
+    "familia_id": 0.222,
+    "paso_contra_nodo": 0.519
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 4 de subir_productividad_gerencial_tres_vias"
+  },
+  {
+   "id": "empujar_persona_reunion_direccion_preferida",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.444,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.42
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 2 del candidato contra paso 1 de empujar_persona_reunion_direccion_preferida"
+  },
+  {
+   "id": "reunir_informacion_gerencial_vias_variadas",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.432,
+    "familia_id": 0.1,
+    "paso_contra_nodo": 0.428
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 4 del candidato contra paso 4 de reunir_informacion_gerencial_vias_variadas"
+  },
+  {
+   "id": "escalonar_fuentes_informacion_gerencial",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.394,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.428
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 2 del candidato contra paso 3 de escalonar_fuentes_informacion_gerencial"
+  },
+  {
+   "id": "elegir_momento_actividad_palanca_maxima",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.418,
+    "familia_id": 0.222,
+    "paso_contra_nodo": 0.417
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 2 del candidato contra paso 1 de elegir_momento_actividad_palanca_maxima"
+  },
+  {
+   "id": "programar_visita_area_observar_despachar",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.413,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.38
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 3 de programar_visita_area_observar_despachar"
+  },
+  {
+   "id": "transmitir_objetivos_prioridades_preferencias",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.402,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.366
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 4 de transmitir_objetivos_prioridades_preferencias"
+  }
+ ]
+}

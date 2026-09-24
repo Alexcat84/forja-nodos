@@ -1,0 +1,6 @@
+lineas en la bitacora: 796 | lineas en el bloque de la fila 22: 1
+candidato simplificar_trabajo_reducir_numero_pasos | vecino igual: True | veredicto igual: True | razon igual letra a letra: True | arista: ''
+variar_frecuencia_inspeccion_nivel_calidad | claves: atribuciones,condiciones_activacion,denominaciones,dominio,entregable_esperado,estado,fuentes,id,ids_alias,nodos_previos,nodos_siguientes,pasos_accionables,resumen_teorico,titulo
+   que apuntan a otro nodo: {'id': 'variar_frecuencia_inspeccion_nivel_calidad'}
+simplificar_trabajo_reducir_numero_pasos | claves: atribuciones,condiciones_activacion,denominaciones,dominio,entregable_esperado,estado,fuentes,id,ids_alias,nodos_previos,nodos_siguientes,pasos_accionables,resumen_teorico,titulo
+   que apuntan a otro nodo: {'id': 'simplificar_trabajo_reducir_numero_pasos'}

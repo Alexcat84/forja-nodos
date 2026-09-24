@@ -1,0 +1,183 @@
+(1) candidato | poblacion | vecinos | en grafo | en bandeja
+    variar_frecuencia_inspeccion_nivel_calidad               479   0   0   0
+    simplificar_trabajo_reducir_numero_pasos                 479   1   1   0
+    reunir_informacion_gerencial_vias_variadas               479   7   0   7
+    escalonar_fuentes_informacion_gerencial                  479   7   0   7
+    programar_visita_area_observar_despachar                 479   7   0   7
+    transmitir_objetivos_prioridades_preferencias            479   7   0   7
+    empujar_persona_reunion_direccion_preferida              479   7   0   7
+    subir_productividad_gerencial_tres_vias                  479   7   0   7
+    buscar_actividad_alta_palanca_tres_vias                  479   7   0   7
+    elegir_momento_actividad_palanca_maxima                  479   7   0   7
+    detectar_palanca_negativa_actividad_mando                479   0   0   0
+    delegar_tarea_base_comun_seguimiento                     479   0   0   0
+    supervisar_tarea_delegada_etapa_menor_valor              479   3   1   2
+    supervisar_decision_delegada_preguntas_concretas         479   3   0   3
+    identificar_paso_limitante_jornada_desfases              479   6   0   6
+    agrupar_tareas_semejantes_aprovechar_preparacion         479   5   0   5
+    decir_no_trabajo_excede_capacidad                        479   4   0   4
+    usar_calendario_herramienta_planificacion_produccion     479   1   0   1
+    llevar_inventario_proyectos_discrecionales               479   6   0   6
+    dimensionar_numero_subordinados_medio_dia_semanal        479   0   0   0
+    buscar_regularidad_bloques_iguales_trabajo_mando         479   4   0   4
+    preparar_respuestas_estandar_interrupciones_repetidas    479   2   0   2
+    agrupar_interrupciones_subordinados_reuniones_regulares  479   8   3   5
+    canalizar_interrupciones_cartel_hora_oficina             479   1   0   1
+sin fichero de vecinos: 0 []
+(2) vecino levantado | senial | texto familia paso
+    simplificar_trabajo_reducir_numero_pasos               > dimensionar_plantilla_administrativa_pronostico        grafo   similitud_texto  0.351 0.000 0.439
+    reunir_informacion_gerencial_vias_variadas             > transmitir_objetivos_prioridades_preferencias          bandeja similitud_texto  0.414 0.000 0.540
+    reunir_informacion_gerencial_vias_variadas             > programar_visita_area_observar_despachar               bandeja similitud_texto  0.470 0.000 0.398
+    reunir_informacion_gerencial_vias_variadas             > escalonar_fuentes_informacion_gerencial                bandeja similitud_texto  0.463 0.286 0.463
+    reunir_informacion_gerencial_vias_variadas             > empujar_persona_reunion_direccion_preferida            bandeja similitud_texto  0.462 0.000 0.433
+    reunir_informacion_gerencial_vias_variadas             > elegir_momento_actividad_palanca_maxima                bandeja similitud_texto  0.444 0.000 0.393
+    reunir_informacion_gerencial_vias_variadas             > subir_productividad_gerencial_tres_vias                bandeja similitud_texto  0.442 0.250 0.430
+    reunir_informacion_gerencial_vias_variadas             > buscar_actividad_alta_palanca_tres_vias                bandeja similitud_texto  0.426 0.100 0.391
+    escalonar_fuentes_informacion_gerencial                > programar_visita_area_observar_despachar               bandeja similitud_texto  0.417 0.000 0.468
+    escalonar_fuentes_informacion_gerencial                > reunir_informacion_gerencial_vias_variadas             bandeja similitud_texto  0.456 0.286 0.463
+    escalonar_fuentes_informacion_gerencial                > empujar_persona_reunion_direccion_preferida            bandeja similitud_texto  0.431 0.000 0.411
+    escalonar_fuentes_informacion_gerencial                > transmitir_objetivos_prioridades_preferencias          bandeja similitud_texto  0.430 0.000 0.380
+    escalonar_fuentes_informacion_gerencial                > subir_productividad_gerencial_tres_vias                bandeja similitud_texto  0.425 0.125 0.425
+    escalonar_fuentes_informacion_gerencial                > elegir_momento_actividad_palanca_maxima                bandeja similitud_texto  0.412 0.000 0.414
+    escalonar_fuentes_informacion_gerencial                > buscar_actividad_alta_palanca_tres_vias                bandeja similitud_texto  0.406 0.000 0.403
+    programar_visita_area_observar_despachar               > escalonar_fuentes_informacion_gerencial                bandeja similitud_texto  0.402 0.000 0.468
+    programar_visita_area_observar_despachar               > reunir_informacion_gerencial_vias_variadas             bandeja similitud_texto  0.465 0.000 0.372
+    programar_visita_area_observar_despachar               > elegir_momento_actividad_palanca_maxima                bandeja similitud_texto  0.461 0.000 0.444
+    programar_visita_area_observar_despachar               > empujar_persona_reunion_direccion_preferida            bandeja similitud_texto  0.456 0.000 0.433
+    programar_visita_area_observar_despachar               > transmitir_objetivos_prioridades_preferencias          bandeja similitud_texto  0.400 0.000 0.432
+    programar_visita_area_observar_despachar               > subir_productividad_gerencial_tres_vias                bandeja similitud_texto  0.392 0.000 0.428
+    programar_visita_area_observar_despachar               > buscar_actividad_alta_palanca_tres_vias                bandeja similitud_texto  0.404 0.000 0.409
+    transmitir_objetivos_prioridades_preferencias          > reunir_informacion_gerencial_vias_variadas             bandeja similitud_texto  0.419 0.000 0.550
+    transmitir_objetivos_prioridades_preferencias          > empujar_persona_reunion_direccion_preferida            bandeja similitud_texto  0.433 0.000 0.455
+    transmitir_objetivos_prioridades_preferencias          > escalonar_fuentes_informacion_gerencial                bandeja similitud_texto  0.433 0.000 0.380
+    transmitir_objetivos_prioridades_preferencias          > elegir_momento_actividad_palanca_maxima                bandeja similitud_texto  0.421 0.000 0.394
+    transmitir_objetivos_prioridades_preferencias          > subir_productividad_gerencial_tres_vias                bandeja similitud_texto  0.420 0.000 0.407
+    transmitir_objetivos_prioridades_preferencias          > buscar_actividad_alta_palanca_tres_vias                bandeja similitud_texto  0.411 0.000 0.370
+    transmitir_objetivos_prioridades_preferencias          > programar_visita_area_observar_despachar               bandeja similitud_texto  0.391 0.000 0.405
+    empujar_persona_reunion_direccion_preferida            > reunir_informacion_gerencial_vias_variadas             bandeja similitud_texto  0.461 0.000 0.484
+    empujar_persona_reunion_direccion_preferida            > programar_visita_area_observar_despachar               bandeja similitud_texto  0.463 0.000 0.433
+    empujar_persona_reunion_direccion_preferida            > escalonar_fuentes_informacion_gerencial                bandeja similitud_texto  0.445 0.000 0.412
+    empujar_persona_reunion_direccion_preferida            > buscar_actividad_alta_palanca_tres_vias                bandeja similitud_texto  0.444 0.000 0.376
+    empujar_persona_reunion_direccion_preferida            > transmitir_objetivos_prioridades_preferencias          bandeja similitud_texto  0.422 0.000 0.441
+    empujar_persona_reunion_direccion_preferida            > subir_productividad_gerencial_tres_vias                bandeja similitud_texto  0.423 0.000 0.365
+    empujar_persona_reunion_direccion_preferida            > elegir_momento_actividad_palanca_maxima                bandeja similitud_texto  0.420 0.000 0.398
+    subir_productividad_gerencial_tres_vias                > elegir_momento_actividad_palanca_maxima                bandeja similitud_texto  0.403 0.000 0.553
+    subir_productividad_gerencial_tres_vias                > buscar_actividad_alta_palanca_tres_vias                bandeja similitud_texto  0.544 0.222 0.500
+    subir_productividad_gerencial_tres_vias                > escalonar_fuentes_informacion_gerencial                bandeja similitud_texto  0.430 0.125 0.447
+    subir_productividad_gerencial_tres_vias                > reunir_informacion_gerencial_vias_variadas             bandeja similitud_texto  0.430 0.250 0.403
+    subir_productividad_gerencial_tres_vias                > empujar_persona_reunion_direccion_preferida            bandeja similitud_texto  0.422 0.000 0.413
+    subir_productividad_gerencial_tres_vias                > transmitir_objetivos_prioridades_preferencias          bandeja similitud_texto  0.420 0.000 0.407
+    subir_productividad_gerencial_tres_vias                > programar_visita_area_observar_despachar               bandeja similitud_texto  0.393 0.000 0.415
+    buscar_actividad_alta_palanca_tres_vias                > subir_productividad_gerencial_tres_vias                bandeja similitud_texto  0.536 0.222 0.519
+    buscar_actividad_alta_palanca_tres_vias                > empujar_persona_reunion_direccion_preferida            bandeja similitud_texto  0.444 0.000 0.420
+    buscar_actividad_alta_palanca_tres_vias                > reunir_informacion_gerencial_vias_variadas             bandeja similitud_texto  0.432 0.100 0.428
+    buscar_actividad_alta_palanca_tres_vias                > escalonar_fuentes_informacion_gerencial                bandeja similitud_texto  0.394 0.000 0.428
+    buscar_actividad_alta_palanca_tres_vias                > elegir_momento_actividad_palanca_maxima                bandeja similitud_texto  0.418 0.222 0.417
+    buscar_actividad_alta_palanca_tres_vias                > programar_visita_area_observar_despachar               bandeja similitud_texto  0.413 0.000 0.380
+    buscar_actividad_alta_palanca_tres_vias                > transmitir_objetivos_prioridades_preferencias          bandeja similitud_texto  0.402 0.000 0.366
+    elegir_momento_actividad_palanca_maxima                > subir_productividad_gerencial_tres_vias                bandeja similitud_texto  0.411 0.000 0.596
+    elegir_momento_actividad_palanca_maxima                > programar_visita_area_observar_despachar               bandeja similitud_texto  0.461 0.000 0.420
+    elegir_momento_actividad_palanca_maxima                > escalonar_fuentes_informacion_gerencial                bandeja similitud_texto  0.442 0.000 0.402
+    elegir_momento_actividad_palanca_maxima                > reunir_informacion_gerencial_vias_variadas             bandeja similitud_texto  0.438 0.000 0.425
+    elegir_momento_actividad_palanca_maxima                > transmitir_objetivos_prioridades_preferencias          bandeja similitud_texto  0.422 0.000 0.395
+    elegir_momento_actividad_palanca_maxima                > empujar_persona_reunion_direccion_preferida            bandeja similitud_texto  0.419 0.000 0.404
+    elegir_momento_actividad_palanca_maxima                > buscar_actividad_alta_palanca_tres_vias                bandeja similitud_texto  0.418 0.222 0.376
+    supervisar_tarea_delegada_etapa_menor_valor            > detectar_arreglar_fallo_etapa_menor_valor              grafo   familia_id       0.226 0.333 0.435
+    supervisar_tarea_delegada_etapa_menor_valor            > supervisar_decision_delegada_preguntas_concretas       bandeja similitud_texto  0.356 0.222 0.429
+    supervisar_tarea_delegada_etapa_menor_valor            > identificar_paso_limitante_jornada_desfases            bandeja similitud_texto  0.362 0.000 0.361
+    supervisar_decision_delegada_preguntas_concretas       > identificar_paso_limitante_jornada_desfases            bandeja similitud_texto  0.399 0.000 0.439
+    supervisar_decision_delegada_preguntas_concretas       > supervisar_tarea_delegada_etapa_menor_valor            bandeja similitud_texto  0.368 0.222 0.413
+    supervisar_decision_delegada_preguntas_concretas       > agrupar_tareas_semejantes_aprovechar_preparacion       bandeja similitud_texto  0.368 0.000 0.407
+    identificar_paso_limitante_jornada_desfases            > agrupar_tareas_semejantes_aprovechar_preparacion       bandeja similitud_texto  0.410 0.000 0.450
+    identificar_paso_limitante_jornada_desfases            > decir_no_trabajo_excede_capacidad                      bandeja similitud_texto  0.369 0.000 0.413
+    identificar_paso_limitante_jornada_desfases            > supervisar_decision_delegada_preguntas_concretas       bandeja similitud_texto  0.398 0.000 0.406
+    identificar_paso_limitante_jornada_desfases            > agrupar_interrupciones_subordinados_reuniones_regulares bandeja similitud_texto  0.371 0.000 0.404
+    identificar_paso_limitante_jornada_desfases            > llevar_inventario_proyectos_discrecionales             bandeja similitud_texto  0.401 0.000 0.392
+    identificar_paso_limitante_jornada_desfases            > supervisar_tarea_delegada_etapa_menor_valor            bandeja similitud_texto  0.379 0.000 0.398
+    agrupar_tareas_semejantes_aprovechar_preparacion       > buscar_regularidad_bloques_iguales_trabajo_mando       bandeja paso_contra_nodo 0.294 0.000 0.718
+    agrupar_tareas_semejantes_aprovechar_preparacion       > llevar_inventario_proyectos_discrecionales             bandeja similitud_texto  0.367 0.000 0.444
+    agrupar_tareas_semejantes_aprovechar_preparacion       > decir_no_trabajo_excede_capacidad                      bandeja similitud_texto  0.358 0.000 0.440
+    agrupar_tareas_semejantes_aprovechar_preparacion       > identificar_paso_limitante_jornada_desfases            bandeja similitud_texto  0.409 0.000 0.414
+    agrupar_tareas_semejantes_aprovechar_preparacion       > supervisar_decision_delegada_preguntas_concretas       bandeja similitud_texto  0.363 0.000 0.394
+    decir_no_trabajo_excede_capacidad                      > usar_calendario_herramienta_planificacion_produccion   bandeja similitud_texto  0.365 0.000 0.441
+    decir_no_trabajo_excede_capacidad                      > llevar_inventario_proyectos_discrecionales             bandeja similitud_texto  0.376 0.000 0.428
+    decir_no_trabajo_excede_capacidad                      > agrupar_tareas_semejantes_aprovechar_preparacion       bandeja similitud_texto  0.354 0.000 0.417
+    decir_no_trabajo_excede_capacidad                      > identificar_paso_limitante_jornada_desfases            bandeja similitud_texto  0.364 0.000 0.397
+    usar_calendario_herramienta_planificacion_produccion   > decir_no_trabajo_excede_capacidad                      bandeja similitud_texto  0.371 0.000 0.431
+    llevar_inventario_proyectos_discrecionales             > agrupar_interrupciones_subordinados_reuniones_regulares bandeja similitud_texto  0.355 0.000 0.494
+    llevar_inventario_proyectos_discrecionales             > agrupar_tareas_semejantes_aprovechar_preparacion       bandeja similitud_texto  0.368 0.000 0.456
+    llevar_inventario_proyectos_discrecionales             > preparar_respuestas_estandar_interrupciones_repetidas  bandeja similitud_texto  0.355 0.000 0.437
+    llevar_inventario_proyectos_discrecionales             > decir_no_trabajo_excede_capacidad                      bandeja similitud_texto  0.377 0.000 0.409
+    llevar_inventario_proyectos_discrecionales             > buscar_regularidad_bloques_iguales_trabajo_mando       bandeja similitud_texto  0.375 0.000 0.404
+    llevar_inventario_proyectos_discrecionales             > identificar_paso_limitante_jornada_desfases            bandeja similitud_texto  0.394 0.000 0.392
+    buscar_regularidad_bloques_iguales_trabajo_mando       > agrupar_tareas_semejantes_aprovechar_preparacion       bandeja paso_contra_nodo 0.292 0.000 0.718
+    buscar_regularidad_bloques_iguales_trabajo_mando       > preparar_respuestas_estandar_interrupciones_repetidas  bandeja similitud_texto  0.396 0.000 0.543
+    buscar_regularidad_bloques_iguales_trabajo_mando       > agrupar_interrupciones_subordinados_reuniones_regulares bandeja similitud_texto  0.375 0.000 0.417
+    buscar_regularidad_bloques_iguales_trabajo_mando       > llevar_inventario_proyectos_discrecionales             bandeja similitud_texto  0.361 0.000 0.374
+    preparar_respuestas_estandar_interrupciones_repetidas  > buscar_regularidad_bloques_iguales_trabajo_mando       bandeja similitud_texto  0.389 0.000 0.551
+    preparar_respuestas_estandar_interrupciones_repetidas  > agrupar_interrupciones_subordinados_reuniones_regulares bandeja similitud_texto  0.467 0.111 0.435
+    agrupar_interrupciones_subordinados_reuniones_regulares > sostener_contacto_oferta_aceptacion                    grafo   paso_contra_nodo 0.094 0.000 0.700
+    agrupar_interrupciones_subordinados_reuniones_regulares > agendar_cuidados_propios_cumplirlos                    grafo   paso_contra_nodo 0.129 0.000 0.615
+    agrupar_interrupciones_subordinados_reuniones_regulares > nombrar_delegados_amigos_casa                          grafo   paso_contra_nodo 0.127 0.000 0.609
+    agrupar_interrupciones_subordinados_reuniones_regulares > llevar_inventario_proyectos_discrecionales             bandeja similitud_texto  0.352 0.000 0.478
+    agrupar_interrupciones_subordinados_reuniones_regulares > preparar_respuestas_estandar_interrupciones_repetidas  bandeja similitud_texto  0.472 0.111 0.417
+    agrupar_interrupciones_subordinados_reuniones_regulares > canalizar_interrupciones_cartel_hora_oficina           bandeja similitud_texto  0.403 0.111 0.452
+    agrupar_interrupciones_subordinados_reuniones_regulares > buscar_regularidad_bloques_iguales_trabajo_mando       bandeja similitud_texto  0.380 0.000 0.415
+    agrupar_interrupciones_subordinados_reuniones_regulares > identificar_paso_limitante_jornada_desfases            bandeja similitud_texto  0.351 0.000 0.377
+    canalizar_interrupciones_cartel_hora_oficina           > agrupar_interrupciones_subordinados_reuniones_regulares bandeja similitud_texto  0.408 0.111 0.422
+filas de vecino: 100
+(3) pares sin orden | levantado desde
+    dimensionar_plantilla_administrativa_pronostico        ~ simplificar_trabajo_reducir_numero_pasos               con fuera   solo simplificar_trabajo_reducir_numero_pasos
+    reunir_informacion_gerencial_vias_variadas             ~ transmitir_objetivos_prioridades_preferencias          cap04-cap04 los dos
+    programar_visita_area_observar_despachar               ~ reunir_informacion_gerencial_vias_variadas             cap04-cap04 los dos
+    escalonar_fuentes_informacion_gerencial                ~ reunir_informacion_gerencial_vias_variadas             cap04-cap04 los dos
+    empujar_persona_reunion_direccion_preferida            ~ reunir_informacion_gerencial_vias_variadas             cap04-cap04 los dos
+    elegir_momento_actividad_palanca_maxima                ~ reunir_informacion_gerencial_vias_variadas             cap04-cap04 los dos
+    reunir_informacion_gerencial_vias_variadas             ~ subir_productividad_gerencial_tres_vias                cap04-cap04 los dos
+    buscar_actividad_alta_palanca_tres_vias                ~ reunir_informacion_gerencial_vias_variadas             cap04-cap04 los dos
+    escalonar_fuentes_informacion_gerencial                ~ programar_visita_area_observar_despachar               cap04-cap04 los dos
+    empujar_persona_reunion_direccion_preferida            ~ escalonar_fuentes_informacion_gerencial                cap04-cap04 los dos
+    escalonar_fuentes_informacion_gerencial                ~ transmitir_objetivos_prioridades_preferencias          cap04-cap04 los dos
+    escalonar_fuentes_informacion_gerencial                ~ subir_productividad_gerencial_tres_vias                cap04-cap04 los dos
+    elegir_momento_actividad_palanca_maxima                ~ escalonar_fuentes_informacion_gerencial                cap04-cap04 los dos
+    buscar_actividad_alta_palanca_tres_vias                ~ escalonar_fuentes_informacion_gerencial                cap04-cap04 los dos
+    elegir_momento_actividad_palanca_maxima                ~ programar_visita_area_observar_despachar               cap04-cap04 los dos
+    empujar_persona_reunion_direccion_preferida            ~ programar_visita_area_observar_despachar               cap04-cap04 los dos
+    programar_visita_area_observar_despachar               ~ transmitir_objetivos_prioridades_preferencias          cap04-cap04 los dos
+    programar_visita_area_observar_despachar               ~ subir_productividad_gerencial_tres_vias                cap04-cap04 los dos
+    buscar_actividad_alta_palanca_tres_vias                ~ programar_visita_area_observar_despachar               cap04-cap04 los dos
+    empujar_persona_reunion_direccion_preferida            ~ transmitir_objetivos_prioridades_preferencias          cap04-cap04 los dos
+    elegir_momento_actividad_palanca_maxima                ~ transmitir_objetivos_prioridades_preferencias          cap04-cap04 los dos
+    subir_productividad_gerencial_tres_vias                ~ transmitir_objetivos_prioridades_preferencias          cap04-cap04 los dos
+    buscar_actividad_alta_palanca_tres_vias                ~ transmitir_objetivos_prioridades_preferencias          cap04-cap04 los dos
+    buscar_actividad_alta_palanca_tres_vias                ~ empujar_persona_reunion_direccion_preferida            cap04-cap04 los dos
+    empujar_persona_reunion_direccion_preferida            ~ subir_productividad_gerencial_tres_vias                cap04-cap04 los dos
+    elegir_momento_actividad_palanca_maxima                ~ empujar_persona_reunion_direccion_preferida            cap04-cap04 los dos
+    elegir_momento_actividad_palanca_maxima                ~ subir_productividad_gerencial_tres_vias                cap04-cap04 los dos
+    buscar_actividad_alta_palanca_tres_vias                ~ subir_productividad_gerencial_tres_vias                cap04-cap04 los dos
+    buscar_actividad_alta_palanca_tres_vias                ~ elegir_momento_actividad_palanca_maxima                cap04-cap04 los dos
+    detectar_arreglar_fallo_etapa_menor_valor              ~ supervisar_tarea_delegada_etapa_menor_valor            con fuera   solo supervisar_tarea_delegada_etapa_menor_valor
+    supervisar_decision_delegada_preguntas_concretas       ~ supervisar_tarea_delegada_etapa_menor_valor            cap04-cap04 los dos
+    identificar_paso_limitante_jornada_desfases            ~ supervisar_tarea_delegada_etapa_menor_valor            cap04-cap04 los dos
+    identificar_paso_limitante_jornada_desfases            ~ supervisar_decision_delegada_preguntas_concretas       cap04-cap04 los dos
+    agrupar_tareas_semejantes_aprovechar_preparacion       ~ supervisar_decision_delegada_preguntas_concretas       cap04-cap04 los dos
+    agrupar_tareas_semejantes_aprovechar_preparacion       ~ identificar_paso_limitante_jornada_desfases            cap04-cap04 los dos
+    decir_no_trabajo_excede_capacidad                      ~ identificar_paso_limitante_jornada_desfases            cap04-cap04 los dos
+    agrupar_interrupciones_subordinados_reuniones_regulares ~ identificar_paso_limitante_jornada_desfases            cap04-cap04 los dos
+    identificar_paso_limitante_jornada_desfases            ~ llevar_inventario_proyectos_discrecionales             cap04-cap04 los dos
+    agrupar_tareas_semejantes_aprovechar_preparacion       ~ buscar_regularidad_bloques_iguales_trabajo_mando       cap04-cap04 los dos
+    agrupar_tareas_semejantes_aprovechar_preparacion       ~ llevar_inventario_proyectos_discrecionales             cap04-cap04 los dos
+    agrupar_tareas_semejantes_aprovechar_preparacion       ~ decir_no_trabajo_excede_capacidad                      cap04-cap04 los dos
+    decir_no_trabajo_excede_capacidad                      ~ usar_calendario_herramienta_planificacion_produccion   cap04-cap04 los dos
+    decir_no_trabajo_excede_capacidad                      ~ llevar_inventario_proyectos_discrecionales             cap04-cap04 los dos
+    agrupar_interrupciones_subordinados_reuniones_regulares ~ llevar_inventario_proyectos_discrecionales             cap04-cap04 los dos
+    llevar_inventario_proyectos_discrecionales             ~ preparar_respuestas_estandar_interrupciones_repetidas  cap04-cap04 solo llevar_inventario_proyectos_discrecionales
+    buscar_regularidad_bloques_iguales_trabajo_mando       ~ llevar_inventario_proyectos_discrecionales             cap04-cap04 los dos
+    buscar_regularidad_bloques_iguales_trabajo_mando       ~ preparar_respuestas_estandar_interrupciones_repetidas  cap04-cap04 los dos
+    agrupar_interrupciones_subordinados_reuniones_regulares ~ buscar_regularidad_bloques_iguales_trabajo_mando       cap04-cap04 los dos
+    agrupar_interrupciones_subordinados_reuniones_regulares ~ preparar_respuestas_estandar_interrupciones_repetidas  cap04-cap04 los dos
+    agrupar_interrupciones_subordinados_reuniones_regulares ~ sostener_contacto_oferta_aceptacion                    con fuera   solo agrupar_interrupciones_subordinados_reuniones_regulares
+    agendar_cuidados_propios_cumplirlos                    ~ agrupar_interrupciones_subordinados_reuniones_regulares con fuera   solo agrupar_interrupciones_subordinados_reuniones_regulares
+    agrupar_interrupciones_subordinados_reuniones_regulares ~ nombrar_delegados_amigos_casa                          con fuera   solo agrupar_interrupciones_subordinados_reuniones_regulares
+    agrupar_interrupciones_subordinados_reuniones_regulares ~ canalizar_interrupciones_cartel_hora_oficina           cap04-cap04 los dos
+pares sin orden: 53 | {'con fuera': 5, 'cap04-cap04': 48}

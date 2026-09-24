@@ -1,0 +1,98 @@
+{
+ "id": "reunir_informacion_gerencial_vias_variadas",
+ "grafo": 368,
+ "bandejas": 111,
+ "vecinos": [
+  {
+   "id": "transmitir_objetivos_prioridades_preferencias",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.414,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.54
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 4 del candidato contra paso 1 de transmitir_objetivos_prioridades_preferencias"
+  },
+  {
+   "id": "programar_visita_area_observar_despachar",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.47,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.398
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 4 del candidato contra paso 3 de programar_visita_area_observar_despachar"
+  },
+  {
+   "id": "escalonar_fuentes_informacion_gerencial",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.463,
+    "familia_id": 0.286,
+    "paso_contra_nodo": 0.463
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 8 del candidato contra paso 1 de escalonar_fuentes_informacion_gerencial"
+  },
+  {
+   "id": "empujar_persona_reunion_direccion_preferida",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.462,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.433
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 4 del candidato contra paso 5 de empujar_persona_reunion_direccion_preferida"
+  },
+  {
+   "id": "elegir_momento_actividad_palanca_maxima",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.444,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.393
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 7 del candidato contra paso 3 de elegir_momento_actividad_palanca_maxima"
+  },
+  {
+   "id": "subir_productividad_gerencial_tres_vias",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.442,
+    "familia_id": 0.25,
+    "paso_contra_nodo": 0.43
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 8 del candidato contra paso 2 de subir_productividad_gerencial_tres_vias"
+  },
+  {
+   "id": "buscar_actividad_alta_palanca_tres_vias",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.426,
+    "familia_id": 0.1,
+    "paso_contra_nodo": 0.391
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 4 del candidato contra paso 4 de buscar_actividad_alta_palanca_tres_vias"
+  }
+ ]
+}
