@@ -60075,3 +60075,30 @@ La segunda, `--paso 2`, el primero del tramo `2 a 4` que su fila cita en la madr
     GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: variar_frecuencia_inspeccion_nivel_calidad > supervisar_tarea_delegada_etapa_menor_valor
       razon en bitacora/VEREDICTOS.jsonl
 
+
+### Fila `12`: `supervisar_decision_delegada_preguntas_concretas`, **INSERTADO** en `985.8` s, codigo `0`, commit `9626746`
+
+La aduana de hoy: **BLOQUEARIA** con `3` vecino(s) contra `479`; lineas `--veredicto` pasadas: `3`. Salida entera en `.v67ext/insertar_12_supervisar_decision_delegada_preguntas_concretas.txt`.
+
+<!-- TALLADO: parcial salida=.v67ext/insertar_12_supervisar_decision_delegada_preguntas_concretas.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `identificar_paso_limitante_jornada_desfases` | similitud_texto | 0.399 | 0.000 | 0.439 | SANO |
+| `supervisar_tarea_delegada_etapa_menor_valor` | similitud_texto | 0.368 | 0.222 | 0.413 | SANO |
+| `agrupar_tareas_semejantes_aprovechar_preparacion` | similitud_texto | 0.368 | 0.000 | 0.407 | SANO |
+
+**Los tres vecinos son los tres de su bloque y las tres lineas se pasaron tal cual.** **Arista por lectura cableada con la madre ya en el grafo**: `delegar_tarea_base_comun_seguimiento > supervisar_decision_delegada_preguntas_concretas`, `--paso 7`, el que su fila cita. Salida entera en `.v67ext/arista_delegar_tarea_base_comun_seguimiento__supervisar_decision_delegada_preguntas_concretas.txt`:
+
+    $ python forja.py arista --madre delegar_tarea_base_comun_seguimiento --hijo supervisar_decision_delegada_preguntas_concretas --paso 7 --razon <fila 8> --veredicto CONTINUA --cita-veredicto <fila 8>
+    DECLARACION DE ARISTA POR LECTURA (D.37)
+      madre: delegar_tarea_base_comun_seguimiento
+      hijo : supervisar_decision_delegada_preguntas_concretas
+      paso citado de la madre: 7
+        Cuenta con que nunca puedes lavarte las manos de una tarea: aun despues de delegarla sigues siendo responsable de que se cumpla, y supervisar la tarea
+      señales del par: familia_id 0.0, paso_contra_nodo 0.522, similitud_texto 0.326
+        NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+    GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: delegar_tarea_base_comun_seguimiento > supervisar_decision_delegada_preguntas_concretas
+      razon en bitacora/VEREDICTOS.jsonl
+
