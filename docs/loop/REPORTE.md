@@ -60515,3 +60515,36 @@ vuelve a correr al cerrar.
 |---|---|---|
 | `D68.1` | **EL METODO DE ESPERA DE LA `65` A LA `67`**, sostenido en la `ACTA 66` `66.3`: cada `insertar` lo lanza una copia de `.v67ext/insertar.py` como UN proceso y yo espero en primer plano con una copia de `.v67ext/esperar.py` hasta su `.fin`, porque una llamada de mi herramienta no pasa de `600` s y un `insertar` tarda de `985` a `3988`. **Lo que anado, como en `D66.1`:** entre dos esperas leo `fuentes/grove_high_output/cap_05.md` y `cap_06.md` y escribo en `.v68ext/` la fidelidad (TAREA 3.1), **sin tocar el dataset, la bitacora ni ninguna ficha de la bandeja**, sin lanzar el siguiente `insertar` ni ningun barrido. Las correcciones de fichas y el barrido empiezan despues de que vuelva la fila `22` | la letra de la corrida dice *primer plano*; el proceso lanzado es el metodo que las actas sostienen, y yo no hago nada que la aduana lea mientras vuela. Una ficha de `cap_05` o `cap_06` en la bandeja es poblacion del `insertar`, y por eso esas esperan |
 | `D68.2` | **`.v68ext/insertar.py` lee las lineas de `.v66ext/veredictos_listos.txt` y salta las `#`** como la de la `67` (`D67.5`); la fila `21` lleva `8` y la `22` `1` | es la copia con la fila y la ruta de salida cambiadas; el fichero de lineas es el mismo que la `ACTA 66` comparo letra a letra |
+
+## 68.1. TAREA 1: LOS REGISTROS DE LA `ACTA 66`, SIN REABRIR EL ARGUMENTO (`D.47`)
+
+| que | donde |
+|---|---|
+| mis cinco discutibles `D67.1` a `D67.5` se sostienen, y la relectura conjunta se cierra sin discrepancia: `C1` y `C2` `CONTINUA`, `C3` sin arista (gana mi razon) | `ACTA 66` `66.4.a` |
+| cero caidas que acumulen: `90` lineas de veredicto iguales letra a letra a las preparadas, `11` aristas iguales par a par a la lista ciega, la muestra de los SANO `17` de `17`, y `d072` pagada | `66.3`, `66.4.b` |
+| una caida de `REPORTE` que no acumula: en `67.5.c` los `13` pasos que faltan son `5` de `agrupar_interrupciones` y `8` de `canalizar`, no `7` y `6` | `66.2` |
+| `R5` cumplido, `cap_04` entra en `0` de `143`, y las cinco rachas de la serial en cero | `66.0`, `66.5`, `66.7` |
+
+**`T1` CERRADA.**
+
+## 68.2. TAREA 2: LAS FILAS `21` Y `22` DE `cap_04`, UNA POR VEZ
+
+**1. Lo que entra es lo que se leyo.** Copia de `.v67ext/pasos_y_huellas.py` con la lista cambiada a las filas `21` y
+`22` de `.v66ext/orden.txt`, commit `d8f4e2a` sin cambiar (salida en `.v68ext/pasos_y_huellas_21_22.txt`):
+
+<!-- TALLADO: parcial salida=.v68ext/pasos_y_huellas_21_22.txt -->
+
+    $ python .v68ext/pasos_y_huellas_21_22.py
+    21  agrupar_interrupciones_subordinados_reuniones_regulares  bandeja    2a419bcb10 igual
+    22  canalizar_interrupciones_cartel_hora_oficina             bandeja    a50684995f igual
+    fichas de las filas 21 y 22: 2 | iguales a su blob en d8f4e2a: 2 | distintas: 0
+
+**Las dos iguales: ninguna se relee.**
+
+**2. Las lineas que se pasan** son las vivas de su bloque en `.v66ext/veredictos_listos.txt`, tal cual y sin las `#`
+(`D67.5`, `D68.2`): `8` para la fila `21` y `1` para la `22`, que `.v68ext/insertar.py` lee de alli. **Las aristas por
+lectura**, con `.v68ext/arista.py` en el acto de insertar el hijo, `--veredicto CONTINUA` y el `--paso` de la madre que
+su fila de `.v66ext/aristas_lectura.txt` cita: la `7` para la `21` (madre paso `3`) y la `8` para la `22` (madre paso `1`).
+
+Copias de la `67` con la ruta cambiada a `.v68ext/` (`7.F`): `insertar.py`, `esperar.py`, `fila.py`, `arista.py`,
+`tras_insertar.sh`, `empujar_fila.sh` y `bloque_arista.sh`; cada una lo dice en su cabecera.
