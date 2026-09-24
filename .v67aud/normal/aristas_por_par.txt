@@ -1,0 +1,16 @@
+aristas por siguientes: 4648cbc 180 | hoy 191 | por previos: 4648cbc 180 | hoy 191
+asimetricas hoy (siguientes sin previos o al reves): 0
+nuevas: 11 | perdidas: 0
+  ESPERADA  buscar_actividad_alta_palanca_tres_vias > elegir_momento_actividad_palanca_maxima
+  ESPERADA  construir_flujo_produccion_paso_limitante > identificar_paso_limitante_jornada_desfases
+  ESPERADA  delegar_tarea_base_comun_seguimiento > supervisar_decision_delegada_preguntas_concretas
+  ESPERADA  delegar_tarea_base_comun_seguimiento > supervisar_tarea_delegada_etapa_menor_valor
+  ESPERADA  detectar_arreglar_fallo_etapa_menor_valor > supervisar_tarea_delegada_etapa_menor_valor
+  ESPERADA  identificar_paso_limitante_jornada_desfases > usar_calendario_herramienta_planificacion_produccion
+  ESPERADA  representar_actividad_caja_negra_ventanas > buscar_regularidad_bloques_iguales_trabajo_mando
+  ESPERADA  reunir_informacion_gerencial_vias_variadas > escalonar_fuentes_informacion_gerencial
+  ESPERADA  subir_productividad_gerencial_tres_vias > buscar_actividad_alta_palanca_tres_vias
+  ESPERADA  transmitir_objetivos_prioridades_preferencias > delegar_tarea_base_comun_seguimiento
+  ESPERADA  variar_frecuencia_inspeccion_nivel_calidad > supervisar_tarea_delegada_etapa_menor_valor
+esperadas por mi lectura: 11 | nuevas que lo son: 11 | esperadas que no estan: []
+C3 buscar > detectar en el grafo: False

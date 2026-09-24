@@ -1,0 +1,166 @@
+===== reunir_informacion_gerencial_vias_variadas | grafo
+  titulo: Reunir la informacion del mando por todas sus vias, con el intercambio verbal rapido por delante
+  fuente: ['grove_high_output'] | previos: [] | siguientes: ['escalonar_fuentes_informacion_gerencial']
+  cond: Cuando te toca decidir y te das cuenta de que decides con lo que sabes, y quieres montar o repasar por donde te llega lo que sabes, porque estas usando una sola via o dos y el resto de las que el libro nombra las tienes cerradas.
+  P1. Lee los informes normalizados y los memorandos que te llegan.
+  P2. Consigue ademas informacion ad hoc, o sea la que no viene por el circuito reglado.
+  P3. Habla con gente de dentro y de fuera de la empresa: mandos de otras firmas, analistas financieros o gente de la prensa.
+  P4. Cuenta las quejas de los clientes como fuente muy importante de informacion, y cuenta las externas y las internas.
+  P5. No te cortes de las quejas casuales de la gente de tu cliente interno: cortarte de ellas es perder la evaluacion de tu propio desempeno como proveedor interno de ese grupo.
+  P6. Quedate con la informacion util de quien te la da porque quiere que hagas algo por el, y quedatela al margen de si haces o no lo que te pide.
+  P7. Pon por delante el intercambio verbal rapido, muchas veces informal: es la informacion mas util y le llega al mando mucho mas rapido que nada de lo que este escrito.
+  P8. Prefiere la informacion mas oportuna, porque cuanto mas oportuna es, mas vale.
+===== subir_productividad_gerencial_tres_vias | grafo
+  titulo: Subir la productividad de un mando por sus tres vias: el ritmo, la palanca y la mezcla de actividades
+  fuente: ['grove_high_output'] | previos: [] | siguientes: ['buscar_actividad_alta_palanca_tres_vias']
+  cond: Cuando quieres que tu trabajo de mando rinda mas y solo se te ocurre trabajar mas horas, que no es ninguna de las tres vias que el libro cuenta.
+  P1. Cuenta la productividad de un mando como lo que el libro dice que es: su salida por unidad de tiempo trabajado.
+  P2. Sube el ritmo con el que ejecutas tus actividades, o sea acelera tu trabajo.
+  P3. Sube la palanca asociada a las distintas actividades de mando que haces.
+  P4. Corre la mezcla de tus actividades desde las de menor palanca hacia las de mayor palanca.
+===== buscar_actividad_alta_palanca_tres_vias | grafo
+  titulo: Buscar las actividades de alta palanca por sus tres vias basicas: mucha gente, un acto breve de efecto largo, y el saber unico
+  fuente: ['grove_high_output'] | previos: ['subir_productividad_gerencial_tres_vias'] | siguientes: ['elegir_momento_actividad_palanca_maxima']
+  cond: Cuando ya sabes que quieres subir la palanca de lo que haces y te falta saber donde esta la palanca alta, o sea por donde se reconoce una actividad que rinde muy por encima de las demas.
+  P1. Repasa tus actividades buscando las de alta palanca, y busca por las tres vias basicas por las que el libro dice que se consiguen.
+  P2. Primera via: aquella en la que mucha gente queda afectada por un solo mando.
+  P3. Segunda via: aquella en la que la actividad o la conducta de una persona durante un periodo largo de tiempo queda afectada por un conjunto de palabras o de acciones del mando que es breve y esta bien enfocado.
+  P4. Tercera via: aquella en la que el trabajo de un grupo grande queda afectado por un individuo que aporta una pieza de conocimiento o de informacion unica y clave.
+===== escalonar_fuentes_informacion_gerencial | grafo
+  titulo: Escalonar las fuentes de informacion del mando, de la verbal a la reposada, y solaparlas para verificar
+  fuente: ['grove_high_output'] | previos: ['reunir_informacion_gerencial_vias_variadas'] | siguientes: []
+  cond: Cuando ya tienes abiertas varias vias por las que te llega informacion y te falla igual: te enteras esquematico y tarde, o te enteras completo y tarde, porque estas tratando todas las fuentes como si fueran el mismo escalon.
+  P1. Entiende por donde te llega la informacion antes de intentar mejorar tu capacidad de conseguirla, porque hay una jerarquia dentro.
+  P2. Coloca arriba las fuentes verbales, que son las mas valiosas, y cuenta con que lo que dan es esquematico, incompleto y a veces inexacto, igual que el titular de un periodico, que solo da la idea general de una historia y hasta puede darte una idea distorsionada de cual es la historia de verdad.
+  P3. Baja despues al articulo entero, que es donde averiguas quien, que, donde, por que y como.
+  P4. Termina en la reiteracion y la perspectiva, que es lo que dan una revista de actualidad o incluso un libro.
+  P5. No te apoyes en un solo escalon: cada nivel de tu jerarquia importa y ninguno basta solo.
+  P6. No esperes a la fuente mas cabal para enterarte, porque la mas cabal es la que llega una semana entera despues del hecho.
+  P7. Monta tus fuentes para que se complementen unas a otras y ademas para que sean redundantes, porque el solape es lo que te da una via de verificar lo que has sabido.
+===== programar_visita_area_observar_despachar | grafo
+  titulo: Programar la visita a un area de trabajo para observar lo que pasa y despachar alli los asuntos de dos minutos
+  fuente: ['grove_high_output'] | previos: [] | siguientes: []
+  cond: Cuando los asuntos pequenos te llegan al despacho y cada uno se te come media hora, y a la vez te da reparo recorrer un area sin una tarea concreta en la cabeza, asi que no vas nunca.
+  P1. Ve a un sitio concreto de la empresa y observa lo que esta pasando alli.
+  P2. Cuenta con lo que pasa en el caso contrario, que es el que quieres evitar: cuando alguien viene a verte al despacho y se sienta, se dispara una dinamica de arranque y parada que la costumbre impone, y un nucleo de informacion de dos minutos se lleva muchas veces media hora.
+  P3. Si al recorrer el area ves a una persona con la que tienes un asunto de dos minutos, parate, despachalo y sigue tu camino.
+  P4. Deja que el subordinado haga exactamente lo mismo cuando sea el quien inicie la conversacion.
+  P5. Si lo que te frena es el reparo de recorrer un area sin una tarea concreta en la cabeza, programa la visita con una tarea formal que cumplir, que ademas es la que prepara el terreno para las microtransacciones sueltas.
+  P6. Ve, en esa visita programada, a una parte de la empresa que normalmente no visitarias, que es lo que en la casa del autor se hace con las inspecciones que llaman de Mister Limpio.
+  P7. Examina alli el orden y la limpieza, la disposicion de las cosas, los laboratorios y el equipo de seguridad.
+  P8. Dedicale una hora o asi, dando vueltas por el sitio y tomando contacto con las cosas de primera mano.
+===== elegir_momento_actividad_palanca_maxima | grafo
+  titulo: Elegir el momento de una actividad para que su palanca sea maxima: por delante del acontecimiento, o inmediata cuando el momento manda
+  fuente: ['grove_high_output'] | previos: ['buscar_actividad_alta_palanca_tres_vias'] | siguientes: []
+  cond: Cuando la actividad que tienes delante es de las de alta palanca y esta a tiempo de hacerse antes o despues, porque hacerla tarde no la hace menos actividad pero si la hace valer mucho menos.
+  P1. Cuenta con que la palanca de una actividad depende de cuando se ejerce.
+  P2. Haz por delante del acontecimiento el trabajo que lo prepara: define con antelacion exactamente que informacion hay que reunir y presentar en cada etapa del proceso, y deja puesto quien responde de que.
+  P3. Cuenta con lo que ese trabajo hecho por delante consigue: afecta directamente al trabajo posterior de mucha gente y le quita confusion y ambiguedad a una poblacion grande durante un periodo largo.
+  P4. Cuenta tambien con lo contrario: el mismo trabajo hecho tarde, corriendo despues a ayudar a un mando a definir sus pautas y sus hitos, tiene mucha menos palanca.
+  P5. Cuando la actividad sea de las que dependen del momento, atiendela inmediatamente: si te enteras de que un subordinado valioso ha decidido irse, dirigete a esa situacion en el acto si quieres que cambie de idea.
+  P6. Cuenta con que si la aplazas pierdes todas tus posibilidades.
+  P7. Ten presente la oportunidad del momento, que muchas veces es critica, para sacar a tus actividades la maxima palanca.
+===== transmitir_objetivos_prioridades_preferencias | grafo
+  titulo: Transmitir objetivos, prioridades y preferencias, y no solo hechos, para que el subordinado pueda decidir solo
+  fuente: ['grove_high_output'] | previos: [] | siguientes: ['delegar_tarea_base_comun_seguimiento']
+  cond: Cuando tus subordinados te traen a ti decisiones que podrian tomar ellos, o toman solos decisiones que a ti no te valen, y al mirar que les has dado ves que les has dado hechos y nada mas.
+  P1. Cuenta contigo mismo como fuente de informacion y no solo como quien la reune.
+  P2. Traslada lo que sabes a la gente de tu propia organizacion y tambien a los otros grupos sobre los que influyes.
+  P3. Ve mas alla de retransmitir hechos: comunica tus objetivos, tus prioridades y tus preferencias, en aquello en que tocan la manera de abordar ciertas tareas.
+  P4. Hazlo porque solo si las impartes sabran tus subordinados tomar por si mismos decisiones que a ti, que eres su supervisor, te resulten aceptables.
+  P5. Cuenta con que transmitir los objetivos y los modos preferidos de trabajo es la llave de una delegacion que salga bien.
+===== empujar_persona_reunion_direccion_preferida | grafo
+  titulo: Empujar a una persona o a una reunion hacia la direccion que prefieres, sabiendo que un empujon no es una orden
+  fuente: ['grove_high_output'] | previos: [] | siguientes: []
+  cond: Cuando quieres que un asunto vaya en una direccion y no es tuyo decidirlo, o no quieres decidirlo tu, y lo unico que tienes a mano es informar o mandar, que son los dos extremos que no sirven aqui.
+  P1. Haz una llamada a un colega sugiriendo que la decision se tome de una cierta manera.
+  P2. O manda una nota o un memorando que ensene como ves tu esa situacion concreta.
+  P3. O haz un comentario durante una presentacion oral.
+  P4. En cualquiera de esos casos defiende un curso de accion preferido, pero no emitas una instruccion ni una orden.
+  P5. Cuenta con que eso es algo mas fuerte que limitarte a transmitir informacion: por ese medio empujas a una persona o a una reunion en la direccion que a ti te gustaria.
+  P6. Distingue ese empujon con cuidado de la toma de decisiones, que es la que acaba en directrices firmes y claras.
+  P7. Cuenta con la proporcion en que ocurren las dos: por cada decision inequivoca que tomas, probablemente empujas las cosas una docena de veces.
+===== supervisar_decision_delegada_preguntas_concretas | grafo
+  titulo: Supervisar una decision delegada por su proceso de reflexion: preguntas bastante concretas en la reunion de revision
+  fuente: ['grove_high_output'] | previos: ['delegar_tarea_base_comun_seguimiento'] | siguientes: []
+  cond: Cuando lo que has delegado en un subordinado no es una tarea sino un tipo de decision, y tienes que aprobarla sin volver a hacer tu mismo toda la reflexion que el ya hizo.
+  P1. Cuenta con que hay tipos de decision que los mandos delegan con frecuencia en sus subordinados.
+  P2. Supervisa esa delegacion por su proceso de decision, que es la mejor manera de hacerla.
+  P3. Pide al subordinado que piense el asunto entero con cuidado antes de presentarte su peticion de aprobacion.
+  P4. Para supervisar lo buena que es su reflexion, hazle preguntas bastante concretas sobre su peticion durante una reunion de revision.
+  P5. Si las responde de forma convincente, aprueba lo que pide.
+  P6. Cuenta con que esta tecnica te permite averiguar lo buena que es la reflexion sin tener que recorrerla tu mismo.
+===== identificar_paso_limitante_jornada_desfases | grafo
+  titulo: Identificar el paso limitante de tu jornada y crear desfases alrededor: determinar lo inamovible y mover lo flexible a su alrededor
+  fuente: ['grove_high_output'] | previos: ['construir_flujo_produccion_paso_limitante'] | siguientes: ['usar_calendario_herramienta_planificacion_produccion']
+  cond: Cuando quieres ordenar tu propia jornada de mando y las recomendaciones corrientes de gestion del tiempo no te dicen alrededor de que ordenarla.
+  P1. Mejora las recomendaciones corrientes de gestion del tiempo aplicandoles los principios de produccion.
+  P2. Identifica primero tu paso limitante preguntandote cual es el huevo de tu trabajo.
+  P3. Busca para eso las cosas de tu vida de mando que de verdad tienen que ocurrir en un calendario absoluto, aquellas en cuyo tiempo no hay holgura ninguna.
+  P4. Crea desfases y programa el resto de tu trabajo alrededor de ese paso limitante.
+  P5. En resumen: determina que es lo inamovible y manipula a su alrededor las actividades mas flexibles, y trabajaras de manera mas eficiente.
+===== supervisar_tarea_delegada_etapa_menor_valor | grafo
+  titulo: Supervisar una tarea delegada como se supervisa la calidad: en la etapa de menor valor anadido, con frecuencia variable y entrando en el detalle al azar
+  fuente: ['grove_high_output'] | previos: ['detectar_arreglar_fallo_etapa_menor_valor', 'delegar_tarea_base_comun_seguimiento', 'variar_frecuencia_inspeccion_nivel_calidad'] | siguientes: []
+  cond: Cuando ya has delegado una tarea y tienes que decidir en que punto la miras, cada cuanto la miras y hasta que detalle entras, sin convertir el seguimiento en intromision.
+  P1. Trata el seguimiento de los resultados de la delegacion como lo que el libro dice que se parece: el seguimiento que se usa en el aseguramiento de la calidad.
+  P2. Aplica los principios del aseguramiento de la calidad y supervisa en la etapa del proceso de menor valor anadido.
+  P3. Revisa, por ejemplo, los borradores en sucio de los informes que has delegado, y no esperes a que tus subordinados hayan gastado su tiempo en pulirlos hasta su forma final para descubrir entonces que tienes un problema basico con el contenido.
+  P4. Emplea un enfoque variable para la frecuencia con la que compruebas el trabajo de tus subordinados, usando esquemas de muestreo distintos con subordinados distintos.
+  P5. Sube o baja esa frecuencia segun el subordinado este ejecutando una tarea recien delegada o una con la que ya tiene experiencia.
+  P6. No bases cada cuanto supervisas en lo que creas que tu subordinado puede hacer en general, sino en su experiencia con esa tarea concreta y en su desempeno previo con ella, que es su madurez relativa a la tarea.
+  P7. A medida que el trabajo del subordinado mejora con el tiempo, responde con una reduccion correspondiente de la intensidad del seguimiento.
+  P8. Para aplicar bien los principios del aseguramiento de la calidad, entra en los detalles solo al azar, lo justo para intentar asegurar que el subordinado avanza de forma satisfactoria.
+  P9. Cuenta con que entrar en todos los detalles de una tarea delegada seria como probar en aseguramiento de la calidad el cien por cien de lo que fabricacion saco.
+===== agrupar_tareas_semejantes_aprovechar_preparacion | grafo
+  titulo: Agrupar las tareas semejantes en una tanda para aprovechar un solo esfuerzo de preparacion
+  fuente: ['grove_high_output'] | previos: [] | siguientes: []
+  cond: Cuando tienes por delante varias actividades de mando del mismo tipo y las estas atendiendo una a una segun llegan, pagando su preparacion cada vez.
+  P1. Aplica a tu trabajo de mando el segundo principio de produccion: agrupar las tareas semejantes.
+  P2. Cuenta con que toda operacion de fabricacion exige una cierta cantidad de tiempo de preparacion, y con que ese tiempo tiene muchos paralelos en el trabajo de mando.
+  P3. Para que el trabajo de mando avance con eficiencia, usa un mismo esfuerzo de preparacion y aplicalo a todo un grupo de actividades semejantes.
+  P4. Reutiliza lo que ya preparaste: una vez preparado un juego de ilustraciones para una clase de formacion, tu productividad sube si puedes usar ese mismo juego una y otra vez con otras clases o grupos.
+  P5. Cuando tengas varios informes que leer o varias evaluaciones de desempeno que aprobar, reserva un bloque de tiempo y hazlos en tanda, uno tras otro.
+  P6. Hazlo asi para aprovechar al maximo el tiempo de preparacion mental que esa tarea necesita.
+===== decir_no_trabajo_excede_capacidad | grafo
+  titulo: Decir que no de salida al trabajo que excede tu capacidad, antes y no despues, usando tu propia idea del tiempo que cada cosa te lleva
+  fuente: ['grove_high_output'] | previos: [] | siguientes: []
+  cond: Cuando te llega trabajo por encima de lo que puedes atender y lo aceptas porque no sabes medir tu propia capacidad.
+  P1. Aplica aqui otro principio de produccion: la gente de fabricacion se fia de sus indicadores y no deja que el material empiece su recorrido por la fabrica si cree que ya esta operando a plena capacidad.
+  P2. Cuenta con el motivo: si lo dejaran, el material podria llegar hasta la mitad del recorrido y acumularse detras de un cuello de botella.
+  P3. Haz lo que hacen los jefes de fabrica: di que no de salida y evita que el nivel de entrada sobrecargue el sistema.
+  P4. Cuenta con que a otras clases de mando esto les resulta dificil de aplicar porque sus indicadores de capacidad no estan tan asentados ni son tan creibles.
+  P5. Preguntate cuanto tiempo necesitas para leer tu correo, para escribir tus informes o para reunirte con un colega: puede que no lo sepas con precision, pero seguro que tienes una idea del tiempo que hace falta.
+  P6. Explota esa idea tuya para programar tu trabajo.
+  P7. Acepta la segunda de las dos responsabilidades que el libro numera: di que no de salida al trabajo que este por encima de tu capacidad de atenderlo.
+  P8. Dilo antes y no despues, porque esperar a que algo alcance una etapa de mayor valor y abortarlo entonces por falta de capacidad significa perder mas dinero y mas tiempo.
+  P9. Cuenta con que puedes decir que no de forma explicita o de forma implicita, porque al no entregar acabas diciendo algo que equivale a un no.
+  P10. Recuerda ademas que tu tiempo es tu unico recurso finito, y que cuando dices que si a una cosa estas diciendo inevitablemente que no a otra.
+===== llevar_inventario_proyectos_discrecionales | grafo
+  titulo: Llevar un inventario de materia prima en forma de proyectos discrecionales, distinto del trabajo en curso, para no gastar el tiempo libre metiendote en el trabajo ajeno
+  fuente: ['grove_high_output'] | previos: [] | siguientes: []
+  cond: Cuando te queda tiempo libre como mando y no tienes nada propio preparado en que emplearlo.
+  P1. Aplica aqui un principio de produccion que es casi el contrario del anterior: lleva, como mando, un inventario de materia prima en forma de proyectos.
+  P2. No lo confundas con tu inventario de trabajo en curso, porque ese, como los huevos en un hervidor continuo, tiende a estropearse o a quedarse obsoleto con el tiempo.
+  P3. Mete en ese inventario cosas que necesitas hacer pero que no necesitas terminar de inmediato.
+  P4. O sea proyectos discrecionales, de la clase en la que el mando puede trabajar para subir la productividad de su grupo a largo plazo.
+  P5. Cuenta con lo que pasa si no lo llevas: un mando sin ese inventario de proyectos lo mas probable es que use su tiempo libre metiendose en el trabajo de sus subordinados.
+===== preparar_respuestas_estandar_interrupciones_repetidas | grafo
+  titulo: Preparar respuestas estandar para las clases de interrupcion que se repiten, y tenerlas disponibles para delegar buena parte del trabajo en personal con menos experiencia
+  fuente: ['grove_high_output'] | previos: [] | siguientes: []
+  cond: Cuando las mismas preguntas y los mismos problemas te llegan como interrupcion una y otra vez, y cada vez los atiendes desde cero.
+  P1. Aplica a las interrupciones que te llegan el siguiente concepto de produccion, porque hay formas mejores que esconderte: los fabricantes sacan productos estandar.
+  P2. Fija por esa analogia que clase de interrupciones estas recibiendo.
+  P3. Prepara respuestas estandar para las que aparecen mas a menudo.
+  P4. Cuenta con lo que hace que eso funcione: los clientes no salen con preguntas y problemas totalmente nuevos un dia tras otro, y las mismas tienden a aflorar una y otra vez.
+  P5. Reduce con esas respuestas estandar el tiempo que gastas atendiendo interrupciones.
+  P6. Ten esas respuestas disponibles, porque tenerlas a mano es ademas lo que te deja delegar buena parte de ese trabajo en personal con menos experiencia.
+===== agrupar_interrupciones_subordinados_reuniones_regulares | cuarentena\grove_high_output\agrupar_interrupciones_subordinados_reuniones_regulares.json
+  titulo: Agrupar en tanda las interrupciones que llegan de los subordinados y atenderlas en las reuniones regulares de personal y de uno a uno, en vez de atenderlas al azar
+  fuente: ['grove_high_output'] | previos: [] | siguientes: []
+  cond: Cuando las interrupciones de tus subordinados te caen al azar a lo largo del dia y las atiendes segun llegan.
+  P1. Usa ademas el principio de produccion de la tanda, que es atender de una vez un grupo de tareas semejantes.
+  P2. Acumula con ese principio muchas de las interrupciones que te vienen de tus subordinados, en vez de atenderlas al azar.
+  P3. Atiende esas interrupciones acumuladas en las reuniones de personal y en las reuniones de uno a uno.
+  P4. Manten esas reuniones con regularidad.
+  P5. Pide entonces a tu gente que agrupe sus preguntas y problemas para esos momentos programados en vez de interrumpirte cuando quiera, porque con las reuniones celebradas con regularidad no pueden protestar mucho.

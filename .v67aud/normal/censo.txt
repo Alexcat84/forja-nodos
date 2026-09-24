@@ -1,0 +1,15 @@
+$ wc -l dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl config/pares_mutuos.jsonl
+    388 dataset/nodos.jsonl
+    893 bitacora/VEREDICTOS.jsonl
+      1 config/pares_mutuos.jsonl
+   1282 total
+$ ls cuarentena/grove_high_output/*.json | wc -l
+49
+$ ls cuarentena/_insertados/grove_high_output/*.json | wc -l
+43
+$ git diff --stat c851892 HEAD -- dataset/ bitacora/ censos/ config/ cuarentena/ src/ | wc -l
+0
+$ git diff --stat 870b6a0 7e8d4de | tail -1
+ 2 files changed, 264 insertions(+), 427 deletions(-)
+$ git log --format="%h %ad %s" --date=iso 5e3664f..HEAD | wc -l
+45

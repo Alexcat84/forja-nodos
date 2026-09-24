@@ -1,0 +1,2 @@
+agrupar_interrupciones_subordinados_reuniones_regulares    pasos en la ficha: 5 | filas en fidelidad.tsv: 5
+canalizar_interrupciones_cartel_hora_oficina               pasos en la ficha: 8 | filas en fidelidad.tsv: 8

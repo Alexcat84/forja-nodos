@@ -1,0 +1,14 @@
+lineas en la bitacora: 893 | nuevas desde la 797: 97
+lineas de d8f4e2a que ya no estan vivas hoy: 6 | de ellas con su comentario # vuelta 67 encima: 6
+bloques en d8f4e2a: 22 | hoy: 22 | lineas vivas en d8f4e2a: 99 | hoy: 99
+lineas de veredicto: 90 | iguales letra a letra a su linea preparada: 90 | distintas: 0
+candidatos con lineas: 17 | lineas por candidato suman 90 | clases: {'SANO': 83, 'CONTINUA': 7}
+pares de veredicto fuera de mi barrido de la 66: 0 []
+lineas que no son de veredicto preparado: 7
+  linea 853 | delegar_tarea_base_comun_seguimiento ~ transmitir_objetivos_prioridades_preferencias | veredicto CONTINUA | arista 'transmitir_objetivos_prioridades_preferencias > delegar_tarea_base_comun_seguimiento' | SOSTENGO en aristas_lectura: True
+  linea 857 | supervisar_tarea_delegada_etapa_menor_valor ~ delegar_tarea_base_comun_seguimiento | veredicto CONTINUA | arista 'delegar_tarea_base_comun_seguimiento > supervisar_tarea_delegada_etapa_menor_valor' | SOSTENGO en aristas_lectura: True
+  linea 858 | supervisar_tarea_delegada_etapa_menor_valor ~ variar_frecuencia_inspeccion_nivel_calidad | veredicto CONTINUA | arista 'variar_frecuencia_inspeccion_nivel_calidad > supervisar_tarea_delegada_etapa_menor_valor' | SOSTENGO en aristas_lectura: True
+  linea 862 | supervisar_decision_delegada_preguntas_concretas ~ delegar_tarea_base_comun_seguimiento | veredicto CONTINUA | arista 'delegar_tarea_base_comun_seguimiento > supervisar_decision_delegada_preguntas_concretas' | SOSTENGO en aristas_lectura: True
+  linea 869 | identificar_paso_limitante_jornada_desfases ~ construir_flujo_produccion_paso_limitante | veredicto CONTINUA | arista 'construir_flujo_produccion_paso_limitante > identificar_paso_limitante_jornada_desfases' | SOSTENGO en aristas_lectura: True
+  linea 880 | usar_calendario_herramienta_planificacion_produccion ~ identificar_paso_limitante_jornada_desfases | veredicto CONTINUA | arista 'identificar_paso_limitante_jornada_desfases > usar_calendario_herramienta_planificacion_produccion' | SOSTENGO en aristas_lectura: True
+  linea 885 | buscar_regularidad_bloques_iguales_trabajo_mando ~ representar_actividad_caja_negra_ventanas | veredicto CONTINUA | arista 'representar_actividad_caja_negra_ventanas > buscar_regularidad_bloques_iguales_trabajo_mando' | SOSTENGO en aristas_lectura: True
