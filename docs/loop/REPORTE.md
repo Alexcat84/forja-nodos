@@ -59880,3 +59880,21 @@ La aduana de hoy: **BLOQUEARIA** con `7` vecino(s) contra `479`; lineas `--vered
 **Arista cableada por la aduana en el acto**: `reunir_informacion_gerencial_vias_variadas > escalonar_fuentes_informacion_gerencial`
 
 **Los siete vecinos son los siete de su bloque y las siete lineas se pasaron tal cual.** La arista que la fila `1` dejo en cola, `reunir` a `escalonar` (`D66.8`, sostenido en la `ACTA 65`), **pagada aqui**, y no se cablea dos veces.
+
+### Fila `3`: `programar_visita_area_observar_despachar`, **INSERTADO** en `1485.7` s, codigo `0`, commit `3bf374d`
+
+La aduana de hoy: **BLOQUEARIA** con `7` vecino(s) contra `479`; lineas `--veredicto` pasadas: `7`. Salida entera en `.v67ext/insertar_03_programar_visita_area_observar_despachar.txt`.
+
+<!-- TALLADO: parcial salida=.v67ext/insertar_03_programar_visita_area_observar_despachar.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `escalonar_fuentes_informacion_gerencial` | similitud_texto | 0.402 | 0.000 | 0.468 | SANO |
+| `reunir_informacion_gerencial_vias_variadas` | similitud_texto | 0.465 | 0.000 | 0.372 | SANO |
+| `elegir_momento_actividad_palanca_maxima` | similitud_texto | 0.461 | 0.000 | 0.444 | SANO |
+| `empujar_persona_reunion_direccion_preferida` | similitud_texto | 0.456 | 0.000 | 0.433 | SANO |
+| `transmitir_objetivos_prioridades_preferencias` | similitud_texto | 0.400 | 0.000 | 0.432 | SANO |
+| `subir_productividad_gerencial_tres_vias` | similitud_texto | 0.392 | 0.000 | 0.428 | SANO |
+| `buscar_actividad_alta_palanca_tres_vias` | similitud_texto | 0.404 | 0.000 | 0.409 | SANO |
+
+**Los siete vecinos son los siete de su bloque y las siete lineas se pasaron tal cual.** Sin arista.
