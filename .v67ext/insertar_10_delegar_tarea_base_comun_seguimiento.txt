@@ -1,0 +1,13 @@
+fila 10, delegar_tarea_base_comun_seguimiento, lineas --veredicto: 0
+inicio 2026-09-24 10:27:00
+======================================================================
+ADUANA DE INSERCION, candidato 'delegar_tarea_base_comun_seguimiento'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (377 del grafo mas 102 que esperan en bandejas)
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 378
+  censos escritos: denominaciones
+
+======================================================================
+fin 2026-09-24 10:59:41 | codigo de salida 0 | 1960.4 s

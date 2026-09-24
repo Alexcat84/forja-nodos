@@ -970,3 +970,7 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-24 | detectar_palanca_negativa_actividad_mando | otro_idioma | negative leverage | ingles | - |
 | 2026-09-24 | detectar_palanca_negativa_actividad_mando | otro_idioma | waffling | ingles | - |
 | 2026-09-24 | detectar_palanca_negativa_actividad_mando | otro_idioma | managerial meddling | ingles | - |
+| 2026-09-24 | delegar_tarea_base_comun_seguimiento | nombre_largo | La delegacion como palanca: la base comun que quien delega y quien recibe tienen que compartir, la decision consciente de que se retiene, y el seguimiento que separa la delegacion de la abdicacion | castellano | - |
+| 2026-09-24 | delegar_tarea_base_comun_seguimiento | otro_idioma | delegation as leverage | ingles | - |
+| 2026-09-24 | delegar_tarea_base_comun_seguimiento | otro_idioma | insincere delegation | ingles | - |
+| 2026-09-24 | delegar_tarea_base_comun_seguimiento | otro_idioma | delegation without follow-through is abdication | ingles | - |
