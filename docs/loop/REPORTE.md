@@ -59840,3 +59840,23 @@ Copia de `.v66ext/pasos_y_huellas.py` con la lista cambiada a las filas `1` a `2
 
 **Cada fila se anexa al volver su `insertar`**, con la salida entera en `.v67ext/insertar_<fila>_<id>.txt`. **Las
 aristas por lectura que tocan**, con `python .v67ext/arista.py` y su salida en `.v67ext/arista_<madre>__<hijo>.txt`.
+
+### Fila `1`: `reunir_informacion_gerencial_vias_variadas`, **INSERTADO** en `1489.5` s, codigo `0`, commit `41ed59a`
+
+La aduana de hoy: **BLOQUEARIA** con `7` vecino(s) contra `479`; lineas `--veredicto` pasadas: `7`. Salida entera en `.v67ext/insertar_01_reunir_informacion_gerencial_vias_variadas.txt`.
+
+<!-- TALLADO: parcial salida=.v67ext/insertar_01_reunir_informacion_gerencial_vias_variadas.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `transmitir_objetivos_prioridades_preferencias` | similitud_texto | 0.414 | 0.000 | 0.540 | SANO |
+| `programar_visita_area_observar_despachar` | similitud_texto | 0.470 | 0.000 | 0.398 | SANO |
+| `escalonar_fuentes_informacion_gerencial` | similitud_texto | 0.463 | 0.286 | 0.463 | CONTINUA |
+| `empujar_persona_reunion_direccion_preferida` | similitud_texto | 0.462 | 0.000 | 0.433 | SANO |
+| `elegir_momento_actividad_palanca_maxima` | similitud_texto | 0.444 | 0.000 | 0.393 | SANO |
+| `subir_productividad_gerencial_tres_vias` | similitud_texto | 0.442 | 0.250 | 0.430 | SANO |
+| `buscar_actividad_alta_palanca_tres_vias` | similitud_texto | 0.426 | 0.100 | 0.391 | SANO |
+
+**Arista en cola (`D.29`)**: `reunir_informacion_gerencial_vias_variadas > escalonar_fuentes_informacion_gerencial`
+
+**Los siete vecinos son los siete de su bloque y las siete lineas se pasaron tal cual**; ninguno nuevo, ninguno que dejara de levantarse. La arista a `escalonar` queda en cola hasta la fila `2` (`D.29`).
