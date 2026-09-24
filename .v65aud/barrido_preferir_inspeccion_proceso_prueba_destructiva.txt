@@ -1,0 +1,1 @@
+preferir_inspeccion_proceso_prueba_destructiva poblacion 479 (366 grafo mas 113 bandejas) vecinos 4

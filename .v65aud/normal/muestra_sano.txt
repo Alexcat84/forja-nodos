@@ -1,0 +1,9 @@
+lineas de la 65: 55 | SANO: 40 | muestra: 8 | semilla 65
+linea 761  emparejar_indicadores_efecto_contraefecto | elegir_fabricar_pedido_pronostico
+linea 767  construir_indicador_tendencia_patron | construir_grafico_escalonado_pronosticos
+linea 777  archivar_indicadores_resolver_problemas | construir_indicador_tendencia_patron
+linea 779  archivar_indicadores_resolver_problemas | vencer_sindrome_grupo_pares_autoconfianza
+linea 780  archivar_indicadores_resolver_problemas | cerrar_brecha_dos_preguntas_estrategia
+linea 785  dimensionar_plantilla_administrativa_pronostico | elegir_fabricar_pedido_pronostico
+linea 788  dimensionar_plantilla_administrativa_pronostico | emparejar_indicadores_efecto_contraefecto
+linea 794  elegir_inspeccion_barrera_monitorizacion | construir_grafico_escalonado_pronosticos

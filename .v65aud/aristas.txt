@@ -1,0 +1,14 @@
+VIVE      construir_flujo_produccion_paso_limitante        -> rehacer_flujo_paso_limitante_capacidad           (veredictos_listos CONTINUA en construir_flujo_produccion_paso_limitante)
+VIVE      construir_grafico_escalonado_pronosticos         -> casar_flujo_fabricacion_flujo_ventas             (aristas_lectura SOSTENGO)
+VIVE      construir_indicador_tendencia_patron             -> dimensionar_plantilla_administrativa_pronostico  (aristas_lectura SOSTENGO)
+VIVE      detectar_arreglar_fallo_etapa_menor_valor        -> dimensionar_inventario_materia_prima_reposicion  (veredictos_listos CONTINUA en dimensionar_inventario_materia_prima_reposicion)
+NO VIVE   detectar_arreglar_fallo_etapa_menor_valor        -> supervisar_tarea_delegada_etapa_menor_valor      (veredictos_listos CONTINUA en detectar_arreglar_fallo_etapa_menor_valor)
+VIVE      dimensionar_inventario_materia_prima_reposicion  -> decidir_aceptar_rechazar_material_defectuoso     (aristas_lectura SOSTENGO)
+VIVE      elegir_fabricar_pedido_pronostico                -> casar_flujo_fabricacion_flujo_ventas             (aristas_lectura SOSTENGO)
+VIVE      elegir_indicador_salida_trabajo_administrativo   -> dimensionar_plantilla_administrativa_pronostico  (aristas_lectura SOSTENGO)
+VIVE      emparejar_indicadores_efecto_contraefecto        -> elegir_indicador_salida_trabajo_administrativo   (veredictos_listos CONTINUA en elegir_indicador_salida_trabajo_administrativo)
+VIVE      rehacer_flujo_paso_limitante_capacidad           -> equilibrar_capacidad_personal_inventario_plazo   (aristas_lectura SOSTENGO)
+VIVE      representar_actividad_caja_negra_ventanas        -> construir_indicador_linealidad_alerta_temprana   (aristas_lectura SOSTENGO)
+VIVE      representar_actividad_caja_negra_ventanas        -> construir_indicador_tendencia_patron             (aristas_lectura SOSTENGO)
+la de cola (detectar_arreglar_fallo_etapa_menor_valor -> supervisar_tarea_delegada_etapa_menor_valor): no vive
+esperadas 12 | viven 11 | no viven 1 | vivas sin adjudicar 0

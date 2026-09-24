@@ -1,0 +1,20 @@
+{
+ "id": "equilibrar_capacidad_personal_inventario_plazo",
+ "grafo": 366,
+ "bandejas": 113,
+ "vecinos": [
+  {
+   "id": "construir_indicador_tendencia_patron",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.354,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.421
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 7 del candidato contra paso 5 de construir_indicador_tendencia_patron"
+  }
+ ]
+}

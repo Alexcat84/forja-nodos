@@ -1,0 +1,1 @@
+elegir_indicador_salida_trabajo_administrativo poblacion 479 (366 grafo mas 113 bandejas) vecinos 3

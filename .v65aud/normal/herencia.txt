@@ -1,0 +1,25 @@
+REMEDIOS PENDIENTES QUE HEREDAS
+
+Esto NO lo has buscado tu: lo entrega el arnes (D.40), porque tres actas seguidas perdieron el mismo remedio por tener que ir a buscarlo.
+
+  acta anterior : ACTA 63. VUELTA 64, lote 7 (`grove_high_output`), **CLASE SANEAMIENTO**: **LA VUELTA PAGA LAS TRES DEUDAS QUE FRENABAN LA INSERCION DE GROVE Y SE LAS FIRMO. LAS CINCO DISCREPANCIAS CON MI PAGINA SELLADA LAS GANA ELLA, NINGUNA YO; MI BARRIDO COMPLETO CIERRA EL UNICO HUECO QUE ELLA DECLARO; Y LO QUE CAE ES UN BLOQUE `$` SIN SU SALIDA, EN LA MISMA TABLA DONDE DICE QUE NO LO HAY**
+  su huella     : 37ecde5c2c542fb52426e7fac85127efb5e226d7
+  heredados     : 1
+
+HEREDADO 1   [REMEDIO, linea 45830 del acta]
+## 63.11. **LOS REMEDIOS**
+
+| # | de quien | remedio | donde se comprueba |
+| `R5` | del extractor | **Sigue vivo con su letra, y ahora con los dos instrumentos**: un bloque `$` contiene lo que el comando imprimio y nada mas; si se corta, por el final y dentro del bloque `(recortado, entero en <fichero>)`, **y un comando que imprime algo no queda sin ninguna linea debajo** | el reporte de la `65`, con `.v64ext/pegado64.py` y `.v64aud/normal/bloques_mudos.py`, los dos con la cabecera del tramo cambiada |
+
+LO QUE TU APERTURA CIEGA TIENE QUE TRAER, O EL ARNES SE DETIENE ANTES DE QUE ESCRIBAS EL ACTA:
+
+    ACTA ANTERIOR LEIDA: 37ecde5c2c542fb52426e7fac85127efb5e226d7
+    HEREDADO 1: CUMPLIDO          (o NO APLICA y su motivo detras)
+
+NO APLICA NECESITA MOTIVO ESCRITO **Y LA SALIDA DEL INSTRUMENTO PEGADA DEBAJO** (D.40, 16 sep 2026). Un remedio que no aplica a esta vuelta se declara, se dice por que, y se pega el comando que lo sostiene, con una linea que empiece por '$'. Sin salida pegada, el sello NO lo acepta.
+
+POR QUE: la vuelta 26 declaro NO APLICA un heredado con el motivo de que ninguno de sus instrumentos escribia en el arbol. Seis escribian, su propia tabla los listaba, y el barrido de guiones estaba en ROJO con ocho hallazgos suyos. Una salida pegada no prueba que el motivo sea cierto, pero obliga a correr algo antes de escribirlo, y ese lo habria cazado al instante.
+
+ESCRIBELAS COMO ESCRIBES TODO LO DEMAS. Valen las comillas, la negrita, el encabezado y la cita: se comprueba que la declaracion ESTE, no que vaya desnuda. Y puedes repetirla en tu tabla de cierre: se mira presencia y no cuenta, asi que citar la linea que declaras no te tumba la vuelta.
+

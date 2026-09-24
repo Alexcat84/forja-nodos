@@ -1,0 +1,1 @@
+equilibrar_capacidad_personal_inventario_plazo poblacion 479 (366 grafo mas 113 bandejas) vecinos 1

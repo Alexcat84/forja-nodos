@@ -1,0 +1,33 @@
+{
+ "id": "elegir_fabricar_pedido_pronostico",
+ "grafo": 366,
+ "bandejas": 113,
+ "vecinos": [
+  {
+   "id": "construir_grafico_escalonado_pronosticos",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.387,
+    "familia_id": 0.143,
+    "paso_contra_nodo": 0.44
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 4 del candidato contra paso 7 de construir_grafico_escalonado_pronosticos"
+  },
+  {
+   "id": "emparejar_indicadores_efecto_contraefecto",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.362,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.419
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 2 del candidato contra paso 3 de emparejar_indicadores_efecto_contraefecto"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "id": "clasificar_trabajo_proceso_montaje_prueba",
+ "grafo": 366,
+ "bandejas": 113,
+ "vecinos": [
+  {
+   "id": "preferir_inspeccion_proceso_prueba_destructiva",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.372,
+    "familia_id": 0.25,
+    "paso_contra_nodo": 0.461
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 5 del candidato contra paso 6 de preferir_inspeccion_proceso_prueba_destructiva"
+  }
+ ]
+}

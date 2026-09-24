@@ -1,0 +1,5 @@
+$ git diff --stat d122a40 HEAD -- dataset/ bitacora/ censos/ config/pares_mutuos.jsonl cuarentena/grove_high_output cuarentena/_insertados | wc -l
+0
+$ git diff --name-status d122a40 HEAD -- cuarentena/ | awk '{print $1, $2}' | sed 's#cuarentena/\([^/]*\)/.*#\1#' | sort | uniq -c
+     17 A marquet_turn_the_ship
+      3 M marquet_turn_the_ship

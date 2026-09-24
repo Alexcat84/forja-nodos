@@ -1,0 +1,46 @@
+{
+ "id": "elegir_indicador_salida_trabajo_administrativo",
+ "grafo": 366,
+ "bandejas": 113,
+ "vecinos": [
+  {
+   "id": "evaluar_directivo_resultados_fortaleza",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.17,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.766
+   },
+   "levantada_por": [
+    "paso_contra_nodo"
+   ],
+   "detalle_paso": "paso 2 del candidato contra paso 1 de evaluar_directivo_resultados_fortaleza"
+  },
+  {
+   "id": "emparejar_indicadores_efecto_contraefecto",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.394,
+    "familia_id": 0.125,
+    "paso_contra_nodo": 0.489
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 4 de emparejar_indicadores_efecto_contraefecto"
+  },
+  {
+   "id": "construir_indicador_tendencia_patron",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.374,
+    "familia_id": 0.125,
+    "paso_contra_nodo": 0.403
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 6 del candidato contra paso 3 de construir_indicador_tendencia_patron"
+  }
+ ]
+}

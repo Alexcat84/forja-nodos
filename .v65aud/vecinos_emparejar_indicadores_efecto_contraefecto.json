@@ -1,0 +1,85 @@
+{
+ "id": "emparejar_indicadores_efecto_contraefecto",
+ "grafo": 366,
+ "bandejas": 113,
+ "vecinos": [
+  {
+   "id": "elegir_indicador_salida_trabajo_administrativo",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.383,
+    "familia_id": 0.125,
+    "paso_contra_nodo": 0.468
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 4 del candidato contra paso 3 de elegir_indicador_salida_trabajo_administrativo"
+  },
+  {
+   "id": "construir_indicador_tendencia_patron",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.397,
+    "familia_id": 0.143,
+    "paso_contra_nodo": 0.453
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 5 de construir_indicador_tendencia_patron"
+  },
+  {
+   "id": "construir_grafico_escalonado_pronosticos",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.384,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.446
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 1 de construir_grafico_escalonado_pronosticos"
+  },
+  {
+   "id": "elegir_cinco_indicadores_diarios_fabrica",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.359,
+    "familia_id": 0.125,
+    "paso_contra_nodo": 0.445
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 4 del candidato contra paso 8 de elegir_cinco_indicadores_diarios_fabrica"
+  },
+  {
+   "id": "elegir_fabricar_pedido_pronostico",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.367,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.408
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 4 del candidato contra paso 1 de elegir_fabricar_pedido_pronostico"
+  },
+  {
+   "id": "dimensionar_plantilla_administrativa_pronostico",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.355,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.396
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 4 del candidato contra paso 2 de dimensionar_plantilla_administrativa_pronostico"
+  }
+ ]
+}

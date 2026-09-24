@@ -1,0 +1,4 @@
+$ ls procesos/ | wc -l
+0
+$ python .v64aud/normal/cerrojos.py
+cerrojo de dataset/nodos.jsonl en este arbol: nodos.jsonl.679b2259.cerrojo

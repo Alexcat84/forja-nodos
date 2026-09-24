@@ -1,0 +1,1 @@
+detectar_arreglar_fallo_etapa_menor_valor poblacion 479 (366 grafo mas 113 bandejas) vecinos 1

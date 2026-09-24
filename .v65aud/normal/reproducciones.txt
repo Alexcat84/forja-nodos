@@ -1,0 +1,8 @@
+$ python .v65ext/relojes.py | diff - .v65ext/relojes.txt && echo IDENTICO
+IDENTICO
+$ python .v65ext/pasos_inventados.py | diff - .v65ext/pasos_inventados.txt && echo IDENTICO
+IDENTICO
+$ python .v65ext/aristas_vuelta.py | diff - .v65ext/aristas_vuelta.txt && echo IDENTICO
+IDENTICO
+$ python .v64ext/orden.py | diff - .v65ext/orden.txt && echo IDENTICO
+IDENTICO

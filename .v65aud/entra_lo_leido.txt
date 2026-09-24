@@ -1,0 +1,26 @@
+construir_flujo_produccion_paso_limitante          cap_02 P2   leida en b63405c pasos 10 P 0
+clasificar_trabajo_proceso_montaje_prueba          cap_02 P5   leida en b63405c pasos  7 P 0
+rehacer_flujo_paso_limitante_capacidad             cap_02 P6   leida en b63405c pasos  6 P 0
+equilibrar_capacidad_personal_inventario_plazo     cap_02 P7   leida en b63405c pasos  8 P 4
+preferir_inspeccion_proceso_prueba_destructiva     cap_02 P9   leida en b63405c pasos  6 P 0
+dimensionar_inventario_materia_prima_reposicion    cap_02 P10  leida en b63405c pasos  7 P 0
+detectar_arreglar_fallo_etapa_menor_valor          cap_02 P11  leida en b63405c pasos  6 P 0
+elegir_cinco_indicadores_diarios_fabrica           cap_03 P2   leida en b63405c pasos 10 P 0
+emparejar_indicadores_efecto_contraefecto          cap_03 P3   leida en 997054d pasos  7 P 0
+elegir_indicador_salida_trabajo_administrativo     cap_03 P4   leida en 997054d pasos  7 P 0
+representar_actividad_caja_negra_ventanas          cap_03 P7   leida en b63405c pasos  9 P 0
+construir_indicador_linealidad_alerta_temprana     cap_03 P9   leida en b63405c pasos  9 P 0
+construir_indicador_tendencia_patron               cap_03 P10  leida en 997054d pasos  6 P 0
+construir_grafico_escalonado_pronosticos           cap_03 P11  leida en 997054d pasos  8 P 1
+archivar_indicadores_resolver_problemas            cap_03 P12  leida en 997054d pasos  4 P 0
+elegir_fabricar_pedido_pronostico                  cap_03 P13  leida en 997054d pasos  9 P 1
+casar_flujo_fabricacion_flujo_ventas               cap_03 P14  leida en b63405c pasos 12 P 0
+dimensionar_plantilla_administrativa_pronostico    cap_03 P15  leida en b63405c pasos  7 P 0
+decidir_aceptar_rechazar_material_defectuoso       cap_03 P17  leida en b63405c pasos  8 P 0
+elegir_inspeccion_barrera_monitorizacion           cap_03 P18  leida en b63405c pasos 12 P 0
+nodos de la tanda en el grafo iguales a su lectura entera: 20 | distintos: 0
+fichas de _insertados con el mismo blob que su lectura entera: 20 | distintas: 0
+capitulo  cand pasos    P   por100
+cap_02       7    50    4     8.00
+cap_03      13   108    2     1.85
+tanda       20   158    6     3.80

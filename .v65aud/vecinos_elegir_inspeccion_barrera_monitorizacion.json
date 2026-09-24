@@ -1,0 +1,33 @@
+{
+ "id": "elegir_inspeccion_barrera_monitorizacion",
+ "grafo": 366,
+ "bandejas": 113,
+ "vecinos": [
+  {
+   "id": "construir_grafico_escalonado_pronosticos",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.365,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.454
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 6 del candidato contra paso 4 de construir_grafico_escalonado_pronosticos"
+  },
+  {
+   "id": "emparejar_indicadores_efecto_contraefecto",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.374,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.45
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 11 del candidato contra paso 4 de emparejar_indicadores_efecto_contraefecto"
+  }
+ ]
+}

@@ -1,0 +1,6 @@
+tanda leida de .v65ext/orden.txt, filas 1 a 20: 20
+lineas nuevas en la bitacora: 55 | veredictos de aduana: 48 | declaraciones de arista: 7
+veredictos iguales a su linea adjudicada (clase y razon): 48 | distintos o sin linea: 0
+lineas adjudicadas de los 20: 48 | sin registro en la bitacora: []
+candidatos de la bitacora fuera de la tanda: []
+clases de los veredictos: {'SANO': 40, 'CONTINUA': 8} | de las aristas: {'CONTINUA': 7}

@@ -1,0 +1,20 @@
+{
+ "id": "detectar_arreglar_fallo_etapa_menor_valor",
+ "grafo": 366,
+ "bandejas": 113,
+ "vecinos": [
+  {
+   "id": "supervisar_tarea_delegada_etapa_menor_valor",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.242,
+    "familia_id": 0.333,
+    "paso_contra_nodo": 0.459
+   },
+   "levantada_por": [
+    "familia_id"
+   ],
+   "detalle_paso": "paso 2 del candidato contra paso 1 de supervisar_tarea_delegada_etapa_menor_valor"
+  }
+ ]
+}

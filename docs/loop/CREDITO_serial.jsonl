@@ -298,3 +298,8 @@
 {"cae": false, "cita": "ACTA 63, seccion 63.1 y fila DATO MOVIDO de 63.7, con su comando al lado", "especie": "DATO MOVIDO", "linea": "serial", "racha": "0 de 2", "tanda": "ACTA 63", "tipo": "tanda", "vuelta": 64}
 {"cae": true, "cita": "ACTA 63 63.2: R5 roto (el bloque de 64.2.c sin ninguna linea de salida y sin la formula) y la fila R5 de la tabla de 64.1 que dice que no", "especie": "REPORTE", "linea": "serial", "racha": "1 de 3", "tanda": "ACTA 63", "tipo": "tanda", "vuelta": 64}
 {"cae": false, "cita": "ACTA 63 63.9: R8 cumplido; las cinco discrepancias perdidas son de clase y no acumulan (ACTA 16 7.4)", "especie": "AUDITOR", "linea": "serial", "racha": "0 de 3", "tanda": "ACTA 63", "tipo": "tanda", "vuelta": 64}
+{"cae": false, "cita": "ACTA 64, secciones 64.3 y 64.7", "especie": "CLASE", "linea": "serial", "racha": "0 de 2", "tanda": "ACTA 64", "tipo": "tanda", "vuelta": 65}
+{"cae": false, "cita": "ACTA 64, secciones 64.1 y 64.7", "especie": "CIFRA PUBLICADA", "linea": "serial", "racha": "0 de 2", "tanda": "ACTA 64", "tipo": "tanda", "vuelta": 65}
+{"cae": false, "cita": "ACTA 64, secciones 64.1 y 64.7", "especie": "DATO MOVIDO", "linea": "serial", "racha": "0 de 2", "tanda": "ACTA 64", "tipo": "tanda", "vuelta": 65}
+{"cae": false, "cita": "ACTA 64, secciones 64.2 y 64.7", "especie": "REPORTE", "linea": "serial", "racha": "0 de 3", "tanda": "ACTA 64", "tipo": "tanda", "vuelta": 65}
+{"cae": false, "cita": "ACTA 64, seccion 64.9", "especie": "AUDITOR", "linea": "serial", "racha": "0 de 3", "tanda": "ACTA 64", "tipo": "tanda", "vuelta": 65}

@@ -1,0 +1,47 @@
+{
+ "id": "rehacer_flujo_paso_limitante_capacidad",
+ "grafo": 366,
+ "bandejas": 113,
+ "vecinos": [
+  {
+   "id": "preferir_inspeccion_proceso_prueba_destructiva",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.46,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.378
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 2 de preferir_inspeccion_proceso_prueba_destructiva"
+  },
+  {
+   "id": "construir_flujo_produccion_paso_limitante",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.419,
+    "familia_id": 0.429,
+    "paso_contra_nodo": 0.43
+   },
+   "levantada_por": [
+    "similitud_texto",
+    "familia_id"
+   ],
+   "detalle_paso": "paso 5 del candidato contra paso 9 de construir_flujo_produccion_paso_limitante"
+  },
+  {
+   "id": "dimensionar_inventario_materia_prima_reposicion",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.357,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.387
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 2 del candidato contra paso 3 de dimensionar_inventario_materia_prima_reposicion"
+  }
+ ]
+}
