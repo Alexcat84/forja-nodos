@@ -59145,3 +59145,21 @@ La aduana de hoy: **ENTRARIA** con `0` vecino(s) contra `479`; lineas `--veredic
 **Cero vecinos contra `479`** (`366` del grafo mas `113` de bandejas, linea `6` de su salida): **los `17` nuevos de
 la cosecha de Marquet no levantan nada contra esta ficha**, y entra sin linea, como la `64` la dejo. Ninguna arista
 que cablear (la de `elegir_inspeccion_barrera_monitorizacion` es `NO SOSTENGO`, hermanos).
+
+### Fila `22`: `simplificar_trabajo_reducir_numero_pasos`, **INSERTADO** en `1271.1` s, codigo `0`, commit `af5e6c2`
+
+La aduana de hoy: **BLOQUEARIA** con `1` vecino(s) contra `479`; lineas `--veredicto` pasadas: `1`. Salida entera en `.v66ext/insertar_22_simplificar_trabajo_reducir_numero_pasos.txt`.
+
+<!-- TALLADO: parcial salida=.v66ext/insertar_22_simplificar_trabajo_reducir_numero_pasos.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `dimensionar_plantilla_administrativa_pronostico` | similitud_texto | 0.351 | 0.000 | 0.439 | SANO |
+
+**El vecino es el de su bloque y la linea se paso tal cual**; ninguno nuevo contra `479` (`367` del grafo mas `112`
+de bandejas, linea `6` de su salida), ninguno que dejara de levantarse. Ninguna arista que cablear.
+
+**`T2` CERRADA: las dos dentro, una por vez.** Cero solapes: la `21` volvio a las `00:49:07` y la `22` arranco a las
+`00:51:28` (`.v66ext/insertar_21_*.txt` linea final, `.v66ext/insertar_22_*.txt` linea `3`), y los dos `.fin` dicen
+`0`. El cerrojo del arbol, `nodos.jsonl.679b2259.cerrojo`, aparecio en `procesos/` durante cada `insertar` y se
+solto al volver (`ls procesos/` vacio tras la `22`).
