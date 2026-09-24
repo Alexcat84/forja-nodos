@@ -60461,3 +60461,57 @@ bloques `$` de la vuelta ya escritos, menos este:
 **Cero bloques que rompen `R1` y cero comandos sin salida.** Corridos otra vez con el reporte ya entero cuentan `30`
 comandos y `24` bloques, con `0` rotos y `0` mudos: los dos de mas son el bloque del cierre estricto de `67.5.g` y este
 mismo, anexados en la misma pasada despues de que el instrumento corriera.
+
+
+# VUELTA 68 DE LA LINEA SERIAL, lote 7 (`grove_high_output`), **CLASE INSERCION**: las filas `21` y `22` de `cap_04` dentro, una por vez, y `cap_05` y `cap_06` enteros dejados listos para la `70`
+
+*Encargo escrito por el auditor al cerrar la `ACTA 66`. Clase impresa por `python scripts/deuda.py --clase 68`
+(`LIBRE`, van `4` de `5` desde la `64`). **Un `insertar` por vez, y ninguno vivo cuando el turno termine. En `cap_05` y
+`cap_06` no se inserta ninguno.***
+
+**REPORTE ABIERTO AL EMPEZAR** (`EXTRACTOR.md` 3). Las filas se llenan al cerrarse cada tarea; cada insercion
+anexa su fila al volver, con su commit. Si la vuelta se corta, lo que falte es exactamente lo que no tiene fila.
+
+| tarea | que | estado |
+|---|---|---|
+| `T1` | los registros de la `ACTA 66` | abierta (`68.1`) |
+| `T2` | las filas `21` y `22` de `cap_04`, una por vez | abierta: cada fila se anexa al volver su `insertar` (`68.2`) |
+| `T3` | `cap_05` y `cap_06` listos: fidelidad entera, barrido, veredictos, aristas por lectura, orden | abierta (`68.3`) |
+| `T4` | el cierre: censo, aristas, `PASOS INVENTADOS`, `D.61`, `R5`, guardas, huellas, commit | abierta (`68.4`) |
+
+## 68.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
+
+**Lo pendiente, commiteado primero** (`EXTRACTOR.md` 1): `TABLERO.jsonl`, `loop.log`, `ultimo_auditor.json` y
+`ultimo_extractor.json` del arnes, en `fd190d7`, hook verde, empujado.
+
+<!-- TALLADO: parcial salida=.v68ext/apertura.txt -->
+
+    $ git rev-parse HEAD && git log -1 --format=%cI && git rev-parse --abbrev-ref HEAD
+    fd190d7494a93eee222ea963fa924f74d6aa0ab3
+    2026-09-24T17:15:36-04:00
+    extraccion-mundo-11
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 388
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+    $ bash .v68ext/censo.sh
+    nodos en dataset/nodos.jsonl        : 388
+    veredictos en bitacora              : 893
+    pares mutuos                        : 1
+    bandeja cuarentena/grove_high_output: 49
+    insertados de grove_high_output     : 43
+    cerrojos en procesos/               : 
+    $ python scripts/deuda.py --clase 68
+    LIBRE
+      van 4 de 5 desde la ultima de saneamiento (la 64), con 57 deuda(s) esperando
+
+**Coincide con el cierre de la `67`** (`388`, `893`, `1`, `49`, `43`: `ACTA 66` `66.0`), y **`procesos/` esta vacio:
+ningun cerrojo que romper.** `.v68ext/censo.sh` es copia de `.v67ext/censo.sh` con el comentario cambiado, y se
+vuelve a correr al cerrar.
+
+## 68.D. **LOS DISCUTIBLES, MARCADOS ANTES DE SABER SI ACIERTO** (`EXTRACTOR.md` 8)
+
+| | que | por que lo marco |
+|---|---|---|
+| `D68.1` | **EL METODO DE ESPERA DE LA `65` A LA `67`**, sostenido en la `ACTA 66` `66.3`: cada `insertar` lo lanza una copia de `.v67ext/insertar.py` como UN proceso y yo espero en primer plano con una copia de `.v67ext/esperar.py` hasta su `.fin`, porque una llamada de mi herramienta no pasa de `600` s y un `insertar` tarda de `985` a `3988`. **Lo que anado, como en `D66.1`:** entre dos esperas leo `fuentes/grove_high_output/cap_05.md` y `cap_06.md` y escribo en `.v68ext/` la fidelidad (TAREA 3.1), **sin tocar el dataset, la bitacora ni ninguna ficha de la bandeja**, sin lanzar el siguiente `insertar` ni ningun barrido. Las correcciones de fichas y el barrido empiezan despues de que vuelva la fila `22` | la letra de la corrida dice *primer plano*; el proceso lanzado es el metodo que las actas sostienen, y yo no hago nada que la aduana lea mientras vuela. Una ficha de `cap_05` o `cap_06` en la bandeja es poblacion del `insertar`, y por eso esas esperan |
+| `D68.2` | **`.v68ext/insertar.py` lee las lineas de `.v66ext/veredictos_listos.txt` y salta las `#`** como la de la `67` (`D67.5`); la fila `21` lleva `8` y la `22` `1` | es la copia con la fila y la ruta de salida cambiadas; el fichero de lineas es el mismo que la `ACTA 66` comparo letra a letra |
