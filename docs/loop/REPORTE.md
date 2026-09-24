@@ -59976,3 +59976,23 @@ La aduana de hoy: **BLOQUEARIA** con `7` vecino(s) contra `479`; lineas `--vered
 **Arista cableada por la aduana en el acto**: `subir_productividad_gerencial_tres_vias > buscar_actividad_alta_palanca_tres_vias`
 
 **Los siete vecinos son los siete de su bloque y las siete lineas se pasaron tal cual**, con las dos de la `T2`. **`C1` pagada aqui**: la arista `subir` a `buscar` que la fila `6` dejo en cola la cablea la aduana en el acto, una sola vez. **La de `C2`, `buscar` a `elegir`, queda en cola hasta la fila `8`.** **`C3` no se cablea** (`D67.2`): `buscar` a `detectar` es `NO SOSTENGO`.
+
+### Fila `8`: `elegir_momento_actividad_palanca_maxima`, **INSERTADO** en `1481.6` s, codigo `0`, commit `29e26c8`
+
+La aduana de hoy: **BLOQUEARIA** con `7` vecino(s) contra `479`; lineas `--veredicto` pasadas: `7`. Salida entera en `.v67ext/insertar_08_elegir_momento_actividad_palanca_maxima.txt`.
+
+<!-- TALLADO: parcial salida=.v67ext/insertar_08_elegir_momento_actividad_palanca_maxima.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `subir_productividad_gerencial_tres_vias` | similitud_texto | 0.411 | 0.000 | 0.596 | SANO |
+| `programar_visita_area_observar_despachar` | similitud_texto | 0.461 | 0.000 | 0.420 | SANO |
+| `escalonar_fuentes_informacion_gerencial` | similitud_texto | 0.442 | 0.000 | 0.402 | SANO |
+| `reunir_informacion_gerencial_vias_variadas` | similitud_texto | 0.438 | 0.000 | 0.425 | SANO |
+| `transmitir_objetivos_prioridades_preferencias` | similitud_texto | 0.422 | 0.000 | 0.395 | SANO |
+| `empujar_persona_reunion_direccion_preferida` | similitud_texto | 0.419 | 0.000 | 0.404 | SANO |
+| `buscar_actividad_alta_palanca_tres_vias` | similitud_texto | 0.418 | 0.222 | 0.376 | CONTINUA |
+
+**Arista cableada por la aduana en el acto**: `buscar_actividad_alta_palanca_tres_vias > elegir_momento_actividad_palanca_maxima`
+
+**Los siete vecinos son los siete de su bloque y las siete lineas se pasaron tal cual**, con las dos de la `T2`. **`C2` pagada aqui**: la arista `buscar` a `elegir` que la fila `7` dejo en cola la cablea la aduana en el acto (`D67.1`).
