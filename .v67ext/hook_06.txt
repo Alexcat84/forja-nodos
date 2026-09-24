@@ -1,0 +1,213 @@
+[pre-commit] gate de integridad
+GATE VERDE.
+  nodos verificados: 374
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+[pre-commit] barrido de guiones
+BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+[pre-commit] tallado del reporte (D.41) y censo de rutas (D.42)
+============================================================================
+TALLADO DEL REPORTE (D.41): la tabla que dice ser de instrumento
+============================================================================
+tablas que declaran instrumento : 331
+  talladas, celda a celda       : 157
+  que DIFIEREN de su instrumento: 0
+  con la ruta VACIA             : 0   (cero bytes, 7.B)
+  sin poder comprobar           : 1
+  que CITAN y no reproducen     : 173   (declaradas PARCIAL)
+      linea 27198 de docs/loop/REPORTE.md
+      linea 27324 de docs/loop/REPORTE.md
+      linea 27622 de docs/loop/REPORTE.md
+      linea 28467 de docs/loop/REPORTE.md
+      linea 29796 de docs/loop/REPORTE.md
+      linea 29981 de docs/loop/REPORTE.md
+      linea 30032 de docs/loop/REPORTE.md
+      linea 30074 de docs/loop/REPORTE.md
+      linea 30142 de docs/loop/REPORTE.md
+      linea 30279 de docs/loop/REPORTE.md
+      linea 30431 de docs/loop/REPORTE.md
+      linea 30575 de docs/loop/REPORTE.md
+      linea 30721 de docs/loop/REPORTE.md
+      linea 31003 de docs/loop/REPORTE.md
+      linea 31050 de docs/loop/REPORTE.md
+      linea 31161 de docs/loop/REPORTE.md
+      linea 31265 de docs/loop/REPORTE.md
+      linea 31308 de docs/loop/REPORTE.md
+      linea 31339 de docs/loop/REPORTE.md
+      linea 31365 de docs/loop/REPORTE.md
+      linea 31524 de docs/loop/REPORTE.md
+      linea 31700 de docs/loop/REPORTE.md
+      linea 31776 de docs/loop/REPORTE.md
+      linea 31831 de docs/loop/REPORTE.md
+      linea 31845 de docs/loop/REPORTE.md
+      linea 31892 de docs/loop/REPORTE.md
+      linea 31903 de docs/loop/REPORTE.md
+      linea 31930 de docs/loop/REPORTE.md
+      linea 31979 de docs/loop/REPORTE.md
+      linea 32049 de docs/loop/REPORTE.md
+      linea 32072 de docs/loop/REPORTE.md
+      linea 32120 de docs/loop/REPORTE.md
+      linea 32226 de docs/loop/REPORTE.md
+      linea 32258 de docs/loop/REPORTE.md
+      linea 32280 de docs/loop/REPORTE.md
+      linea 32320 de docs/loop/REPORTE.md
+      linea 32435 de docs/loop/REPORTE.md
+      linea 32471 de docs/loop/REPORTE.md
+      linea 32510 de docs/loop/REPORTE.md
+      linea 32599 de docs/loop/REPORTE.md
+      linea 32670 de docs/loop/REPORTE.md
+      linea 32684 de docs/loop/REPORTE.md
+      linea 33020 de docs/loop/REPORTE.md
+      linea 33088 de docs/loop/REPORTE.md
+      linea 33129 de docs/loop/REPORTE.md
+      linea 33157 de docs/loop/REPORTE.md
+      linea 33257 de docs/loop/REPORTE.md
+      linea 33306 de docs/loop/REPORTE.md
+      linea 33375 de docs/loop/REPORTE.md
+      linea 33398 de docs/loop/REPORTE.md
+      linea 33506 de docs/loop/REPORTE.md
+      linea 33527 de docs/loop/REPORTE.md
+      linea 33544 de docs/loop/REPORTE.md
+      linea 33611 de docs/loop/REPORTE.md
+      linea 33636 de docs/loop/REPORTE.md
+      linea 33708 de docs/loop/REPORTE.md
+      linea 33720 de docs/loop/REPORTE.md
+      linea 35010 de docs/loop/REPORTE.md
+      linea 35416 de docs/loop/REPORTE.md
+      linea 35631 de docs/loop/REPORTE.md
+      linea 35749 de docs/loop/REPORTE.md
+      linea 37122 de docs/loop/REPORTE.md
+      linea 37889 de docs/loop/REPORTE.md
+      linea 38375 de docs/loop/REPORTE.md
+      linea 38484 de docs/loop/REPORTE.md
+      linea 39077 de docs/loop/REPORTE.md
+      linea 39143 de docs/loop/REPORTE.md
+      linea 39258 de docs/loop/REPORTE.md
+      linea 39285 de docs/loop/REPORTE.md
+      linea 40337 de docs/loop/REPORTE.md
+      linea 40535 de docs/loop/REPORTE.md
+      linea 40961 de docs/loop/REPORTE.md
+      linea 41041 de docs/loop/REPORTE.md
+      linea 41461 de docs/loop/REPORTE.md
+      linea 41647 de docs/loop/REPORTE.md
+      linea 42996 de docs/loop/REPORTE.md
+      linea 43177 de docs/loop/REPORTE.md
+      linea 43189 de docs/loop/REPORTE.md
+      linea 43235 de docs/loop/REPORTE.md
+      linea 43315 de docs/loop/REPORTE.md
+      linea 43707 de docs/loop/REPORTE.md
+      linea 44013 de docs/loop/REPORTE.md
+      linea 44351 de docs/loop/REPORTE.md
+      linea 44604 de docs/loop/REPORTE.md
+      linea 44917 de docs/loop/REPORTE.md
+      linea 45028 de docs/loop/REPORTE.md
+      linea 45116 de docs/loop/REPORTE.md
+      linea 45218 de docs/loop/REPORTE.md
+      linea 45423 de docs/loop/REPORTE.md
+      linea 45474 de docs/loop/REPORTE.md
+      linea 45799 de docs/loop/REPORTE.md
+      linea 45939 de docs/loop/REPORTE.md
+      linea 46073 de docs/loop/REPORTE.md
+      linea 46171 de docs/loop/REPORTE.md
+      linea 46260 de docs/loop/REPORTE.md
+      linea 46629 de docs/loop/REPORTE.md
+      linea 46931 de docs/loop/REPORTE.md
+      linea 47169 de docs/loop/REPORTE.md
+      linea 47360 de docs/loop/REPORTE.md
+      linea 47528 de docs/loop/REPORTE.md
+      linea 47620 de docs/loop/REPORTE.md
+      linea 47728 de docs/loop/REPORTE.md
+      linea 48041 de docs/loop/REPORTE.md
+      linea 48085 de docs/loop/REPORTE.md
+      linea 48227 de docs/loop/REPORTE.md
+      linea 48616 de docs/loop/REPORTE.md
+      linea 48751 de docs/loop/REPORTE.md
+      linea 48998 de docs/loop/REPORTE.md
+      linea 49022 de docs/loop/REPORTE.md
+      linea 49171 de docs/loop/REPORTE.md
+      linea 49618 de docs/loop/REPORTE.md
+      linea 49939 de docs/loop/REPORTE.md
+      linea 49979 de docs/loop/REPORTE.md
+      linea 50036 de docs/loop/REPORTE.md
+      linea 50074 de docs/loop/REPORTE.md
+      linea 50153 de docs/loop/REPORTE.md
+      linea 50246 de docs/loop/REPORTE.md
+      linea 50297 de docs/loop/REPORTE.md
+      linea 50485 de docs/loop/REPORTE.md
+      linea 50546 de docs/loop/REPORTE.md
+      linea 51177 de docs/loop/REPORTE.md
+      linea 51221 de docs/loop/REPORTE.md
+      linea 51283 de docs/loop/REPORTE.md
+      linea 51354 de docs/loop/REPORTE.md
+      linea 51433 de docs/loop/REPORTE.md
+      linea 52207 de docs/loop/REPORTE.md
+      linea 52254 de docs/loop/REPORTE.md
+      linea 52337 de docs/loop/REPORTE.md
+      linea 52526 de docs/loop/REPORTE.md
+      linea 52565 de docs/loop/REPORTE.md
+      linea 52937 de docs/loop/REPORTE.md
+      linea 53407 de docs/loop/REPORTE.md
+      linea 53487 de docs/loop/REPORTE.md
+      linea 53885 de docs/loop/REPORTE.md
+      linea 54061 de docs/loop/REPORTE.md
+      linea 54725 de docs/loop/REPORTE.md
+      linea 54741 de docs/loop/REPORTE.md
+      linea 54758 de docs/loop/REPORTE.md
+      linea 54783 de docs/loop/REPORTE.md
+      linea 56233 de docs/loop/REPORTE.md
+      linea 56305 de docs/loop/REPORTE.md
+      linea 57288 de docs/loop/REPORTE.md
+      linea 57537 de docs/loop/REPORTE.md
+      linea 57673 de docs/loop/REPORTE.md
+      linea 57747 de docs/loop/REPORTE.md
+      linea 58183 de docs/loop/REPORTE.md
+      linea 58250 de docs/loop/REPORTE.md
+      linea 58480 de docs/loop/REPORTE.md
+      linea 58503 de docs/loop/REPORTE.md
+      linea 58513 de docs/loop/REPORTE.md
+      linea 58527 de docs/loop/REPORTE.md
+      linea 58540 de docs/loop/REPORTE.md
+      linea 58556 de docs/loop/REPORTE.md
+      linea 58581 de docs/loop/REPORTE.md
+      linea 58605 de docs/loop/REPORTE.md
+      linea 58622 de docs/loop/REPORTE.md
+      linea 58675 de docs/loop/REPORTE.md
+      linea 58709 de docs/loop/REPORTE.md
+      linea 58721 de docs/loop/REPORTE.md
+      linea 58734 de docs/loop/REPORTE.md
+      linea 58786 de docs/loop/REPORTE.md
+      linea 58820 de docs/loop/REPORTE.md
+      linea 58845 de docs/loop/REPORTE.md
+      linea 58945 de docs/loop/REPORTE.md
+      linea 59141 de docs/loop/REPORTE.md
+      linea 59155 de docs/loop/REPORTE.md
+      linea 59464 de docs/loop/REPORTE.md
+      linea 59489 de docs/loop/REPORTE.md
+      linea 59850 de docs/loop/REPORTE.md
+      linea 59870 de docs/loop/REPORTE.md
+      linea 59890 de docs/loop/REPORTE.md
+      linea 59908 de docs/loop/REPORTE.md
+      linea 59926 de docs/loop/REPORTE.md
+
+SIN COMPROBAR  docs/loop/REPORTE.md linea 59709
+  el instrumento no imprime ninguna tabla: esta la resume, no la reproduce
+
+TALLADO VERDE: las 157 tabla(s) comprobables son las de su instrumento, celda a celda.
+Quedan 1 sin comprobar, y no tumban el commit: el reporte es acumulativo y un andamio borrado hace tres vueltas no es una mentira sobre hoy. En el cierre de vuelta si tumban (--estricto).
+============================================================================
+CENSO DE RUTAS (D.42): la unidad de la ruta es la celda
+============================================================================
+rutas publicadas y censadas : 948
+  pasan                     : 948
+  CAEN                      : 0
+      PATRON                           74
+      VACIA A PROPOSITO                5
+      con contenido                    857
+      vacia por protocolo              12
+
+CENSO VERDE: las 948 rutas publicadas sostienen lo que dicen sostener.
+[cierre] tallado del reporte (D.41)
+[cierre] censo de rutas (D.42)
+[cierre] tabla de cierre de tareas (D.52)
+
+CIERRE VERDE: el tallado y el censo de rutas.
+[pre-commit] verde

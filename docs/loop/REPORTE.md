@@ -59934,3 +59934,23 @@ La aduana de hoy: **BLOQUEARIA** con `7` vecino(s) contra `479`; lineas `--vered
 | `elegir_momento_actividad_palanca_maxima` | similitud_texto | 0.420 | 0.000 | 0.398 | SANO |
 
 **Los siete vecinos son los siete de su bloque y las siete lineas se pasaron tal cual.** Sin arista.
+
+### Fila `6`: `subir_productividad_gerencial_tres_vias`, **INSERTADO** en `1138.4` s, codigo `0`, commit `a9bc821`
+
+La aduana de hoy: **BLOQUEARIA** con `7` vecino(s) contra `479`; lineas `--veredicto` pasadas: `7`. Salida entera en `.v67ext/insertar_06_subir_productividad_gerencial_tres_vias.txt`.
+
+<!-- TALLADO: parcial salida=.v67ext/insertar_06_subir_productividad_gerencial_tres_vias.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `elegir_momento_actividad_palanca_maxima` | similitud_texto | 0.403 | 0.000 | 0.553 | SANO |
+| `buscar_actividad_alta_palanca_tres_vias` | similitud_texto | 0.544 | 0.222 | 0.500 | CONTINUA |
+| `escalonar_fuentes_informacion_gerencial` | similitud_texto | 0.430 | 0.125 | 0.447 | SANO |
+| `reunir_informacion_gerencial_vias_variadas` | similitud_texto | 0.430 | 0.250 | 0.403 | SANO |
+| `empujar_persona_reunion_direccion_preferida` | similitud_texto | 0.422 | 0.000 | 0.413 | SANO |
+| `transmitir_objetivos_prioridades_preferencias` | similitud_texto | 0.420 | 0.000 | 0.407 | SANO |
+| `programar_visita_area_observar_despachar` | similitud_texto | 0.393 | 0.000 | 0.415 | SANO |
+
+**Arista en cola (`D.29`)**: `subir_productividad_gerencial_tres_vias > buscar_actividad_alta_palanca_tres_vias`
+
+**Los siete vecinos son los siete de su bloque y las siete lineas se pasaron tal cual**, las dos que la `T2` corrigio incluidas (`buscar` a `CONTINUA` madre `subir`, `C1`; `elegir` `SANO` con su razon nueva, `D67.4`), y **ninguna linea `#` pasada** (`D67.5`, cabecera de su salida). La arista a `buscar` queda en cola hasta la fila `7` (`D.29`).
