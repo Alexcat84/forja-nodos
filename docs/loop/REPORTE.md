@@ -60168,3 +60168,28 @@ La aduana de hoy: **BLOQUEARIA** con `4` vecino(s) contra `479`; lineas `--vered
 | `identificar_paso_limitante_jornada_desfases` | similitud_texto | 0.364 | 0.000 | 0.397 | SANO |
 
 **Los cuatro vecinos son los cuatro de su bloque y las cuatro lineas se pasaron tal cual**, `usar_calendario` `SANO` como la `ACTA 65` adjudico. Sin arista.
+
+### Fila `16`: `usar_calendario_herramienta_planificacion_produccion`, **INSERTADO** en `1766.7` s, codigo `0`, commit `35054f4`
+
+La aduana de hoy: **BLOQUEARIA** con `1` vecino(s) contra `479`; lineas `--veredicto` pasadas: `1`. Salida entera en `.v67ext/insertar_16_usar_calendario_herramienta_planificacion_produccion.txt`.
+
+<!-- TALLADO: parcial salida=.v67ext/insertar_16_usar_calendario_herramienta_planificacion_produccion.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `decir_no_trabajo_excede_capacidad` | similitud_texto | 0.371 | 0.000 | 0.431 | SANO |
+
+**El vecino es el de su bloque y la linea se paso tal cual.** **Arista por lectura cableada con la madre ya en el grafo**: `identificar_paso_limitante_jornada_desfases > usar_calendario_herramienta_planificacion_produccion`, `--paso 4`, el que su fila cita. Salida entera en `.v67ext/arista_identificar_paso_limitante_jornada_desfases__usar_calendario_herramienta_planificacion_produccion.txt`:
+
+    $ python forja.py arista --madre identificar_paso_limitante_jornada_desfases --hijo usar_calendario_herramienta_planificacion_produccion --paso 4 --razon <fila 11> --veredicto CONTINUA --cita-veredicto <fila 11>
+    DECLARACION DE ARISTA POR LECTURA (D.37)
+      madre: identificar_paso_limitante_jornada_desfases
+      hijo : usar_calendario_herramienta_planificacion_produccion
+      paso citado de la madre: 4
+        Crea desfases y programa el resto de tu trabajo alrededor de ese paso limitante.
+      señales del par: familia_id 0.0, paso_contra_nodo 0.413, similitud_texto 0.312
+        NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+    GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: identificar_paso_limitante_jornada_desfases > usar_calendario_herramienta_planificacion_produccion
+      razon en bitacora/VEREDICTOS.jsonl
+
