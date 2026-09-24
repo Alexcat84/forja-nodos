@@ -60132,3 +60132,8 @@ La aduana de hoy: **BLOQUEARIA** con `6` vecino(s) contra `479`; lineas `--vered
     GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: construir_flujo_produccion_paso_limitante > identificar_paso_limitante_jornada_desfases
       razon en bitacora/VEREDICTOS.jsonl
 
+
+**`d072` pagada**, citando el commit donde la arista quedo escrita en el grafo y en la bitacora (`88a7d3e`). Salida en `.v67ext/pagar_d072.txt`:
+
+    $ python scripts/deuda.py --pagar d072 --vuelta 67 --como "<la arista, su paso, su fila y el commit 88a7d3e>"
+    PAGADA d072 en la vuelta 67
