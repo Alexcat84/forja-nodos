@@ -59583,3 +59583,6 @@ vacio.
     bloques que ROMPEN R1 (ACTA 60 60.15)                : 0
     $ python .v66ext/bloques_mudos66.py
     bloques abiertos con `$`: 14 | comandos `$`: 27 | comandos sin ninguna linea de salida en su bloque: 0
+
+Corridos otra vez despues de anexar ese bloque, cuentan `30` bloques y `29` comandos, con `0` rotos y `0` mudos:
+la diferencia son los dos comandos del propio bloque, que se cuentan a si mismos.
