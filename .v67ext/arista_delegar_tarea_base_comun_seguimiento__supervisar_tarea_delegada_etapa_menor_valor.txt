@@ -1,0 +1,13 @@
+$ python forja.py arista --madre delegar_tarea_base_comun_seguimiento --hijo supervisar_tarea_delegada_etapa_menor_valor --paso 7 --razon <fila 7> --veredicto CONTINUA --cita-veredicto <fila 7>
+DECLARACION DE ARISTA POR LECTURA (D.37)
+  madre: delegar_tarea_base_comun_seguimiento
+  hijo : supervisar_tarea_delegada_etapa_menor_valor
+  paso citado de la madre: 7
+    Cuenta con que nunca puedes lavarte las manos de una tarea: aun despues de delegarla sigues siendo responsable de que se cumpla, y supervisar la tarea
+  señales del par: familia_id 0.1, paso_contra_nodo 0.453, similitud_texto 0.287
+    NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: delegar_tarea_base_comun_seguimiento > supervisar_tarea_delegada_etapa_menor_valor
+  razon en bitacora/VEREDICTOS.jsonl
+
+codigo 0

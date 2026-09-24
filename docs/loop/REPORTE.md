@@ -60031,3 +60031,47 @@ La aduana de hoy: **ENTRARIA** con `0` vecino(s) contra `479`; lineas `--veredic
     GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: transmitir_objetivos_prioridades_preferencias > delegar_tarea_base_comun_seguimiento
       razon en bitacora/VEREDICTOS.jsonl
 
+
+### Fila `11`: `supervisar_tarea_delegada_etapa_menor_valor`, **INSERTADO** en `1588.2` s, codigo `0`, commit `641ac27`
+
+La aduana de hoy: **BLOQUEARIA** con `3` vecino(s) contra `479`; lineas `--veredicto` pasadas: `3`. Salida entera en `.v67ext/insertar_11_supervisar_tarea_delegada_etapa_menor_valor.txt`.
+
+<!-- TALLADO: parcial salida=.v67ext/insertar_11_supervisar_tarea_delegada_etapa_menor_valor.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `detectar_arreglar_fallo_etapa_menor_valor` | familia_id | 0.226 | 0.333 | 0.435 | CONTINUA |
+| `supervisar_decision_delegada_preguntas_concretas` | similitud_texto | 0.356 | 0.222 | 0.429 | SANO |
+| `identificar_paso_limitante_jornada_desfases` | similitud_texto | 0.362 | 0.000 | 0.361 | SANO |
+
+**Arista cableada por la aduana en el acto**: `detectar_arreglar_fallo_etapa_menor_valor > supervisar_tarea_delegada_etapa_menor_valor`
+
+**Los tres vecinos son los tres de su bloque y las tres lineas se pasaron tal cual.** **La arista EN COLA de la `65`, pagada aqui**: `detectar_arreglar_fallo_etapa_menor_valor > supervisar_tarea_delegada_etapa_menor_valor`, cableada por la aduana en el acto con la linea `CONTINUA` de su bloque (`ACTA 61` `61.5`). **Y las dos aristas por lectura de la fila, con sus madres ya en el grafo.** La primera, `--paso 7`, el que su fila cita: Salida entera en `.v67ext/arista_delegar_tarea_base_comun_seguimiento__supervisar_tarea_delegada_etapa_menor_valor.txt`:
+
+    $ python forja.py arista --madre delegar_tarea_base_comun_seguimiento --hijo supervisar_tarea_delegada_etapa_menor_valor --paso 7 --razon <fila 7> --veredicto CONTINUA --cita-veredicto <fila 7>
+    DECLARACION DE ARISTA POR LECTURA (D.37)
+      madre: delegar_tarea_base_comun_seguimiento
+      hijo : supervisar_tarea_delegada_etapa_menor_valor
+      paso citado de la madre: 7
+        Cuenta con que nunca puedes lavarte las manos de una tarea: aun despues de delegarla sigues siendo responsable de que se cumpla, y supervisar la tarea
+      señales del par: familia_id 0.1, paso_contra_nodo 0.453, similitud_texto 0.287
+        NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+    GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: delegar_tarea_base_comun_seguimiento > supervisar_tarea_delegada_etapa_menor_valor
+      razon en bitacora/VEREDICTOS.jsonl
+
+
+La segunda, `--paso 2`, el primero del tramo `2 a 4` que su fila cita en la madre, que es el que manda variar la frecuencia (`D65.3`, `D66.10`): Salida entera en `.v67ext/arista_variar_frecuencia_inspeccion_nivel_calidad__supervisar_tarea_delegada_etapa_menor_valor.txt`:
+
+    $ python forja.py arista --madre variar_frecuencia_inspeccion_nivel_calidad --hijo supervisar_tarea_delegada_etapa_menor_valor --paso 2 --razon <fila 10> --veredicto CONTINUA --cita-veredicto <fila 10>
+    DECLARACION DE ARISTA POR LECTURA (D.37)
+      madre: variar_frecuencia_inspeccion_nivel_calidad
+      hijo : supervisar_tarea_delegada_etapa_menor_valor
+      paso citado de la madre: 2
+        Varia cada cuanto inspeccionas, porque los niveles de calidad varian con el tiempo y es solo sentido comun que la frecuencia los siga.
+      señales del par: familia_id 0.0, paso_contra_nodo 0.452, similitud_texto 0.233
+        NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+    GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: variar_frecuencia_inspeccion_nivel_calidad > supervisar_tarea_delegada_etapa_menor_valor
+      razon en bitacora/VEREDICTOS.jsonl
+
