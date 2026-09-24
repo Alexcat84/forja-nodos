@@ -1013,3 +1013,7 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-24 | llevar_inventario_proyectos_discrecionales | otro_idioma | raw material inventory | ingles | - |
 | 2026-09-24 | llevar_inventario_proyectos_discrecionales | otro_idioma | work-in-process inventory | ingles | - |
 | 2026-09-24 | llevar_inventario_proyectos_discrecionales | otro_idioma | discretionary projects | ingles | - |
+| 2026-09-24 | agrupar_interrupciones_subordinados_reuniones_regulares | nombre_largo | El principio de produccion de la tanda aplicado a las interrupciones de los subordinados: acumularlas en vez de atenderlas al azar, llevarlas a las reuniones regulares, y pedir a la gente que agrupe sus preguntas para esos momentos programados | castellano | - |
+| 2026-09-24 | agrupar_interrupciones_subordinados_reuniones_regulares | otro_idioma | batching | ingles | - |
+| 2026-09-24 | agrupar_interrupciones_subordinados_reuniones_regulares | otro_idioma | staff meeting | ingles | - |
+| 2026-09-24 | agrupar_interrupciones_subordinados_reuniones_regulares | otro_idioma | one-on-one meeting | ingles | - |

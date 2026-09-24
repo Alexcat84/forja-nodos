@@ -1,0 +1,82 @@
+fila 21, agrupar_interrupciones_subordinados_reuniones_regulares, lineas --veredicto: 8
+  --veredicto sostener_contacto_oferta_aceptacion|SANO|Ajenos, de otro libro (smart_who): la senial de paso (0.700) casa el paso 4 de aqui, manten las reuniones con regularidad, con el paso 3 del vecino, manten el contacto con el candidato con regularidad. Comparten el adverbio: uno agrupa las interrupciones de los subordinados en reuniones, el otro corteja a un candidato despues de la oferta.
+  --veredicto agendar_cuidados_propios_cumplirlos|SANO|Ajenos, de otro libro (scott_radical_candor): la senial de paso (0.615) casa el paso 4 de aqui con el paso 4 del vecino, no te saltes las reuniones contigo mismo. Comparten reuniones y constancia; uno agrupa interrupciones ajenas, el otro protege en el calendario el tiempo propio.
+  --veredicto nombrar_delegados_amigos_casa|SANO|Ajenos, de otro libro (smart_who): la senial de paso (0.609) casa el paso 4 de aqui con el paso 4 del vecino, asegurate de que los delegados reportan con regularidad. Comparten la regularidad; uno agrupa interrupciones, el otro monta una red de referencias para contratar.
+  --veredicto llevar_inventario_proyectos_discrecionales|SANO|El mismo par que el inventario lee desde su lado.
+  --veredicto preparar_respuestas_estandar_interrupciones_repetidas|SANO|El mismo par que las respuestas estandar lee desde su lado: hermanos.
+  --veredicto canalizar_interrupciones_cartel_hora_oficina|SANO|Hermanos: los dos llevan las interrupciones a una forma programada, este por la tanda en las reuniones de personal y de uno a uno (L317) y el vecino por el cartel en la puerta y la hora de oficina (L321). El paso 6 del vecino nombra la reunion programada como alternativa, sin ejecutar la tanda; fuera queda procedimiento en los dos lados.
+  --veredicto buscar_regularidad_bloques_iguales_trabajo_mando|SANO|El mismo par que la regularidad lee desde su lado.
+  --veredicto identificar_paso_limitante_jornada_desfases|SANO|El mismo par que el paso limitante lee desde su lado. Ajenos.
+inicio 2026-09-24 17:21:38
+======================================================================
+ADUANA DE INSERCION, candidato 'agrupar_interrupciones_subordinados_reuniones_regulares'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (388 del grafo mas 91 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 8. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino sostener_contacto_oferta_aceptacion  [Sostener el contacto entre tu oferta y la aceptacion del candidato]
+    levantada por: paso_contra_nodo
+    similitud_texto    0.094 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.700 (umbral 0.60)
+    paso 4 del candidato contra paso 3 de sostener_contacto_oferta_aceptacion
+
+  vecino agendar_cuidados_propios_cumplirlos  [Poner en el calendario lo que necesitas hacer por ti, y despues presentarte a esas citas como te presentarias a una con tu jefe]
+    levantada por: paso_contra_nodo
+    similitud_texto    0.129 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.615 (umbral 0.60)
+    paso 4 del candidato contra paso 4 de agendar_cuidados_propios_cumplirlos
+
+  vecino nombrar_delegados_amigos_casa  [Nombrar delegados entre los amigos de la casa]
+    levantada por: paso_contra_nodo
+    similitud_texto    0.127 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.609 (umbral 0.60)
+    paso 4 del candidato contra paso 4 de nombrar_delegados_amigos_casa
+
+  vecino llevar_inventario_proyectos_discrecionales  [Llevar un inventario de materia prima en forma de proyectos discrecionales, distinto del trabajo en curso, para no gastar el tiempo libre metiendote en el trabajo ajeno]
+    levantada por: similitud_texto
+    similitud_texto    0.352 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.478 (umbral 0.60)
+    paso 1 del candidato contra paso 1 de llevar_inventario_proyectos_discrecionales
+
+  vecino preparar_respuestas_estandar_interrupciones_repetidas  [Preparar respuestas estandar para las clases de interrupcion que se repiten, y tenerlas disponibles para delegar buena parte del trabajo en personal con menos experiencia]
+    levantada por: similitud_texto
+    similitud_texto    0.472 (umbral 0.35)
+    familia_id         0.111 (umbral 0.30)
+    paso_contra_nodo   0.417 (umbral 0.60)
+    paso 1 del candidato contra paso 1 de preparar_respuestas_estandar_interrupciones_repetidas
+
+  vecino canalizar_interrupciones_cartel_hora_oficina  [Canalizar las interrupciones a una forma organizada y programada colgando el cartel en la puerta y teniendo despues una hora de oficina abierta]
+    levantada por: similitud_texto
+    similitud_texto    0.403 (umbral 0.35)
+    familia_id         0.111 (umbral 0.30)
+    paso_contra_nodo   0.452 (umbral 0.60)
+    paso 1 del candidato contra paso 8 de canalizar_interrupciones_cartel_hora_oficina
+
+  vecino buscar_regularidad_bloques_iguales_trabajo_mando  [Buscar la regularidad en el trabajo de mando alisando la carga, abriendo ventanas en la caja negra, y usando los mismos bloques de tiempo para las actividades iguales]
+    levantada por: similitud_texto
+    similitud_texto    0.380 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.415 (umbral 0.60)
+    paso 1 del candidato contra paso 1 de buscar_regularidad_bloques_iguales_trabajo_mando
+
+  vecino identificar_paso_limitante_jornada_desfases  [Identificar el paso limitante de tu jornada y crear desfases alrededor: determinar lo inamovible y mover lo flexible a su alrededor]
+    levantada por: similitud_texto
+    similitud_texto    0.351 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.377 (umbral 0.60)
+    paso 4 del candidato contra paso 1 de identificar_paso_limitante_jornada_desfases
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 389
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 8
+
+======================================================================
+fin 2026-09-24 17:51:24 | codigo de salida 0 | 1786.6 s

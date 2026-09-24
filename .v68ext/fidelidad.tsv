@@ -1,0 +1,152 @@
+# Vuelta 68, TAREA 3.1: la relectura de fidelidad ENTERA (D.30, D.58) de los 20 de cap_05 y cap_06, paso a paso contra
+# fuentes/grove_high_output/cap_05.md (175 lineas) y cap_06.md (95 lineas), leidos enteros en esta vuelta. Marca: T
+# transcripcion, P puente (entero o de clausula; la clausula reescrita CUENTA como P, ACTA 62 62.5). Separador: barra
+# vertical. Formato de .v66ext/fidelidad.tsv. Las citas van recortadas; la linea la localiza .v68ext/citas.sh, con su salida
+# en .v68ext/citas_fidelidad.txt. Lo marcado DISCUTIBLE se marco al escribir la fila, antes de ninguna comprobacion.
+# id | paso | marca | linea | lo que decide la marca
+infundir_regularidad_reunion_proceso | 1 | T | L21 | To make the most of this kind of meeting, we should aim to infuse it with regularity
+infundir_regularidad_reunion_proceso | 2 | T | L21 | the people attending should know how the meeting is run
+infundir_regularidad_reunion_proceso | 3 | T | L21 | what kinds of substantive matters are discussed
+infundir_regularidad_reunion_proceso | 4 | T | L21 | and what is to be accomplished
+infundir_regularidad_reunion_proceso | 5 | T | L21 | set-up time and effort to take care of many similar managerial tasks
+infundir_regularidad_reunion_proceso | 6 | T | L21 | given the regularity, you and the others attending can begin to forecast the time required
+infundir_regularidad_reunion_proceso | 7 | T | L21 | system, as recorded on various calendars, can take shape
+infundir_regularidad_reunion_proceso | 8 | T | L21 | a scheduled meeting will have minimum impact on other things people are doing
+usar_tres_clases_reunion_proceso | 1 | T | L23 | At Intel we use three kinds of process-oriented meetings
+usar_tres_clases_reunion_proceso | 2 | T | L23 | the one-on-one, the staff meeting, and the operation review. Primera de las tres
+usar_tres_clases_reunion_proceso | 3 | T | L23 | the staff meeting, and the operation review. Segunda de las tres
+usar_tres_clases_reunion_proceso | 4 | T | L23 | and the operation review. Tercera de las tres
+fijar_frecuencia_reunion_individual_madurez_tarea | 1 | T | L33 | how do you decide how often somebody needs such a meeting? La clausula en vez de poner la misma frecuencia para todas glosa el somebody y el each of your subordinates de la respuesta; no manda nada que el libro no pida (DISCUTIBLE D68.3)
+fijar_frecuencia_reunion_individual_madurez_tarea | 2 | T | L33 | The answer is the job- or task-relevant maturity of each of your subordinates
+fijar_frecuencia_reunion_individual_madurez_tarea | 3 | T | L33 | how much experience does a given subordinate have with the specific task at hand
+fijar_frecuencia_reunion_individual_madurez_tarea | 4 | T | L33 | This is not the same as the experience he has in general or how old he is
+fijar_frecuencia_reunion_individual_madurez_tarea | 5 | T | L33 | varies from very close to very loose supervision
+fijar_frecuencia_reunion_individual_madurez_tarea | 6 | T | L33 | you should have one-on-ones frequently (for example, once a week) with a subordinate who is inexperienced
+fijar_frecuencia_reunion_individual_madurez_tarea | 7 | T | L33 | less frequently (perhaps once every few weeks) with an experienced veteran
+fijar_frecuencia_reunion_individual_madurez_tarea | 8 | T | L35 | Another consideration here is how quickly things change in a job area
+fijar_frecuencia_reunion_individual_madurez_tarea | 9 | T | L35 | In marketing, for example, the pace may be so rapid that a supervisor needs to have frequent one-on-ones
+fijar_frecuencia_reunion_individual_madurez_tarea | 10 | T | L35 | in a research environment, life may be quieter
+fijar_duracion_lugar_reunion_individual | 1 | T | L37 | There really is no answer to this, but the subordinate must feel that there is enough time
+fijar_duracion_lugar_reunion_individual | 2 | T | L37 | would you want to bring it up in a meeting scheduled to last only fifteen minutes
+fijar_duracion_lugar_reunion_individual | 3 | T | L37 | I feel that a one-on-one should last an hour at a minimum
+fijar_duracion_lugar_reunion_individual | 4 | T | L37 | tends to make the subordinate confine himself to simple things that can be handled quickly
+fijar_duracion_lugar_reunion_individual | 5 | T | L39 | I think you should have the meeting in or near the subordinate. La clausula y no en la del supervisor ni en otro sitio contesta a las otras dos salidas que la misma pregunta del libro pone, In the supervisor
+fijar_duracion_lugar_reunion_individual | 6 | T | L39 | A supervisor can learn a lot simply by going to his subordinate
+fijar_duracion_lugar_reunion_individual | 7 | T | L39 | Is he organized or not
+fijar_duracion_lugar_reunion_individual | 8 | T | L39 | Does he repeatedly have to spend time looking for a document he wants
+fijar_duracion_lugar_reunion_individual | 9 | T | L39 | Does he get interrupted all the time? Never
+fijar_duracion_lugar_reunion_individual | 10 | T | L39 | And in general, how does the subordinate approach his work
+preparar_guion_reunion_individual_subordinado | 1 | T | L41 | It should be regarded as the subordinate
+preparar_guion_reunion_individual_subordinado | 2 | T | L41 | The supervisor with eight subordinates would have to prepare eight times
+preparar_guion_reunion_individual_subordinado | 3 | T | L41 | So the latter should be asked to prepare an outline
+preparar_guion_reunion_individual_subordinado | 4 | T | L41 | it forces him to think through in advance all of the issues and points he plans to raise
+preparar_guion_reunion_individual_subordinado | 5 | T | L41 | the supervisor knows at the outset what is to be covered
+preparar_guion_reunion_individual_subordinado | 6 | T | L41 | An outline also provides a framework for supporting information, which the subordinate should prepare in advance
+preparar_guion_reunion_individual_subordinado | 7 | T | L41 | The subordinate should then walk the supervisor through all the material
+cubrir_indicadores_problemas_reunion_individual | 1 | T | L43 | We can start with performance figures, indicators used by the subordinate
+cubrir_indicadores_problemas_reunion_individual | 2 | T | L43 | Emphasis should be on indicators that signal trouble
+cubrir_indicadores_problemas_reunion_individual | 3 | T | L43 | The meeting should also cover anything important that has happened since the last meeting
+cubrir_indicadores_problemas_reunion_individual | 4 | T | L43 | current hiring problems
+cubrir_indicadores_problemas_reunion_individual | 5 | T | L43 | people problems in general
+cubrir_indicadores_problemas_reunion_individual | 6 | T | L43 | organizational problems and future plans
+cubrir_indicadores_problemas_reunion_individual | 7 | T | L43 | very, very important
+cubrir_indicadores_problemas_reunion_individual | 8 | T | L43 | Even when a problem isn
+cubrir_indicadores_problemas_reunion_individual | 9 | T | L43 | The most important criterion governing matters to be talked about
+cubrir_indicadores_problemas_reunion_individual | 10 | T | L43 | These are often obscure and take time to surface, consider, and resolve
+facilitar_expresion_subordinado_pregunta_mas | 1 | T | L45 | He should facilitate the subordinate
+facilitar_expresion_subordinado_pregunta_mas | 2 | T | L45 | The supervisor is there to learn and to coach
+facilitar_expresion_subordinado_pregunta_mas | 3 | T | L45 | Peter Drucker sums up the supervisor
+facilitar_expresion_subordinado_pregunta_mas | 4 | T | L47 | By applying Grove
+facilitar_expresion_subordinado_pregunta_mas | 5 | T | L47 | he should ask another question
+facilitar_expresion_subordinado_pregunta_mas | 6 | T | L47 | He should try to keep the flow of thoughts coming by prompting the subordinate with queries
+tomar_notas_copia_guion_reunion_individual | 1 | T | L49 | First, both the supervisor and subordinate should have a copy of the outline
+tomar_notas_copia_guion_reunion_individual | 2 | T | L49 | and both should take notes on it
+tomar_notas_copia_guion_reunion_individual | 3 | T | L49 | I do it to keep my mind from drifting and also to help me digest the information I hear and see
+tomar_notas_copia_guion_reunion_individual | 4 | T | L49 | Since I take notes in outline form, I am forced to categorize the information logically. El libro cuenta la costumbre del autor y el paso la pone de mandato, con la razon del libro (DISCUTIBLE D68.4)
+tomar_notas_copia_guion_reunion_individual | 5 | T | L49 | Many issues in a one-on-one lead to action required on the part of the subordinate
+tomar_notas_copia_guion_reunion_individual | 6 | T | L49 | the act implies a commitment, like a handshake, that something will be done
+tomar_notas_copia_guion_reunion_individual | 7 | T | L49 | also having taken notes, can then follow up at the next one-on-one
+acumular_asuntos_importantes_fichero_espera | 1 | T | L51 | where both the supervisor and subordinate accumulate important but not altogether urgent issues
+acumular_asuntos_importantes_fichero_espera | 2 | T | L51 | accumulate important but not altogether urgent issues for discussion at the next meeting
+acumular_asuntos_importantes_fichero_espera | 3 | T | L51 | This kind of file applies the production principle of batching
+acumular_asuntos_importantes_fichero_espera | 4 | T | L51 | saves time for both involved by minimizing the need for ad hoc contact
+alentar_asuntos_corazon_vigilar_final_reunion | 1 | T | L53 | The supervisor should also encourage the discussion of heart-to-heart issues during one-on-ones
+alentar_asuntos_corazon_vigilar_final_reunion | 2 | T | L53 | this is the perfect forum for getting at subtle and deep work-related problems
+alentar_asuntos_corazon_vigilar_final_reunion | 3 | T | L53 | Is he satisfied with his own performance? El libro pone las tres preguntas como los asuntos a los que se llega; el preguntale es verbo de marco sobre el objeto del libro (DISCUTIBLE D68.5)
+alentar_asuntos_corazon_vigilar_final_reunion | 4 | T | L53 | Does some frustration or obstacle gnaw at him? El mismo verbo de marco (DISCUTIBLE D68.5)
+alentar_asuntos_corazon_vigilar_final_reunion | 5 | T | L53 | Does he have doubts about where he is going? El mismo verbo de marco (DISCUTIBLE D68.5)
+alentar_asuntos_corazon_vigilar_final_reunion | 6 | T | L53 | But the supervisor should be wary of the
+alentar_asuntos_corazon_vigilar_final_reunion | 7 | T | L53 | More often than not, these come near the end of a meeting
+alentar_asuntos_corazon_vigilar_final_reunion | 8 | T | L53 | If you let that happen, the subordinate might tell you something like he
+conducir_reunion_individual_telefono_distancia | 1 | T | L55 | Long-distance telephone one-on-ones have become necessary because many organizations are now spread out geographically
+conducir_reunion_individual_telefono_distancia | 2 | T | L55 | the supervisor must have the outline before the meeting begins
+conducir_reunion_individual_telefono_distancia | 3 | T | L55 | both parties should take notes
+conducir_reunion_individual_telefono_distancia | 4 | T | L55 | note-taking can
+conducir_reunion_individual_telefono_distancia | 5 | T | L55 | Exchanging notes after the meeting is a way to make sure each knows what the other committed himself to do
+programar_reunion_individual_cadena | 1 | T | L57 | One-on-ones should be scheduled on a rolling basis
+programar_reunion_individual_cadena | 2 | T | L57 | setting up the next one as the meeting taking place ends
+programar_reunion_individual_cadena | 3 | T | L57 | Other commitments can thereby be taken into account and cancellations avoided
+programar_reunion_individual_cadena | 4 | T | L57 | If the supervisor uses a set schedule for a one-on-one, such as every second Wednesday morning
+programar_reunion_individual_cadena | 5 | T | L57 | By scheduling on a rolling basis, this can be easily avoided
+conducir_etapas_modelo_ideal_decision | 1 | T | L23 | The first stage should be free discussion, in which all points of view and all aspects of an issue are openly welcomed and debated
+conducir_etapas_modelo_ideal_decision | 2 | T | L23 | The greater the disagreement and controversy, the more important becomes the word free
+conducir_etapas_modelo_ideal_decision | 3 | T | L23 | Usually when a meeting gets heated, participants hang back, trying to sense the direction of things. El vigila es verbo de marco sobre la practica que el libro describe
+conducir_etapas_modelo_ideal_decision | 4 | T | L23 | because if knowledgeable people withhold opinions, whatever is decided will be based on information and insight less complete
+conducir_etapas_modelo_ideal_decision | 5 | T | L27 | The next stage is reaching a clear decision
+conducir_etapas_modelo_ideal_decision | 6 | T | L27 | particular pains should be taken to frame the terms of the decision with utter clarity
+conducir_etapas_modelo_ideal_decision | 7 | T | L27 | when we know a decision is controversial we want to obscure matters to avoid an argument
+conducir_etapas_modelo_ideal_decision | 8 | T | L27 | will be a lot madder if they don
+conducir_etapas_modelo_ideal_decision | 9 | T | L29 | Finally, everyone involved must give the decision reached by the group full support
+conducir_etapas_modelo_ideal_decision | 10 | T | L29 | This does not necessarily mean agreement
+conducir_etapas_modelo_ideal_decision | 11 | T | L29 | No matter how much time we may spend trying to forge agreement
+conducir_etapas_modelo_ideal_decision | 12 | T | L29 | All a manager can expect is that the commitment to support is honestly present. La clausula y no solo a algunos glosa el everyone del libro (DISCUTIBLE D68.3)
+decidir_nivel_competente_inferior | 1 | T | L33 | any decision be worked out and reached at the lowest competent level
+decidir_nivel_competente_inferior | 2 | T | L33 | people who are closest to the situation and know the most about it
+decidir_nivel_competente_inferior | 3 | T | L33 | That kind of expertise must be tempered with judgment
+decidir_nivel_competente_inferior | 4 | T | L33 | which is developed through experience and learning from the many errors one has made
+decidir_nivel_competente_inferior | 5 | T | L33 | decision-making should occur in the middle ground
+decidir_nivel_competente_inferior | 6 | T | L33 | you should aim to get the best possible mix of participants available
+decidir_nivel_competente_inferior | 7 | T | L33 | For experience, we at Intel are likely to ask a person in management senior to the other members of the group to come to the meeting. El libro cuenta la costumbre de Intel y el paso la pone de mandato (DISCUTIBLE D68.4)
+decidir_nivel_competente_inferior | 8 | T | L33 | But it is very important that everybody there voice opinions and beliefs as equals throughout the free discussion stage
+vencer_sindrome_grupo_pares_autoconfianza | 1 | T | L49 | You can overcome the peer-group syndrome if each of the members has self-confidence
+vencer_sindrome_grupo_pares_autoconfianza | 2 | T | L49 | which stems in part from being familiar with the issue under consideration
+vencer_sindrome_grupo_pares_autoconfianza | 3 | T | L49 | and from experience
+vencer_sindrome_grupo_pares_autoconfianza | 4 | T | L49 | nobody has ever died from making a wrong business decision, or taking inappropriate action, or being overruled
+vencer_sindrome_grupo_pares_autoconfianza | 5 | T | L49 | And everyone in your operation should be made to understand this. La clausula y no solo los que se sientan a la mesa glosa el everyone in your operation (DISCUTIBLE D68.3)
+tomar_mando_reunion_pares_presidente_ausente | 1 | T | L51 | If the peer-group syndrome manifests itself, and the meeting has no formal chairman
+tomar_mando_reunion_pares_presidente_ausente | 2 | T | L51 | the person who has the most at stake should take charge
+tomar_mando_reunion_pares_presidente_ausente | 3 | T | L51 | one can always ask the senior person present to assume control. El paso dice pide siempre que puedas donde el libro dice que siempre se puede pedir; el objeto y el orden son del libro (DISCUTIBLE D68.6)
+tomar_mando_reunion_pares_presidente_ausente | 4 | T | L51 | He is likely to be no more expert in the issues at hand than other members of the group
+tomar_mando_reunion_pares_presidente_ausente | 5 | T | L51 | a repository of knowledge about how decisions should be made
+tomar_mando_reunion_pares_presidente_ausente | 6 | T | L51 | and give the group the confidence needed to make a decision
+ejercer_poder_posicion_etapa_decision_clara | 1 | T | L61 | Sometimes no amount of discussion will produce a consensus, yet the time for a decision has clearly arrived
+ejercer_poder_posicion_etapa_decision_clara | 2 | T | L61 | who until now has guided, coached, and prodded the group along has no choice but to make a decision himself
+ejercer_poder_posicion_etapa_decision_clara | 3 | T | L61 | If the decision-making process has proceeded correctly up to this point
+ejercer_poder_posicion_etapa_decision_clara | 4 | T | L61 | for the senior person to wield position-power authority if the clear decision stage is reached and no consensus has developed
+ejercer_poder_posicion_etapa_decision_clara | 5 | T | L61 | for him to wield that authority any earlier
+ejercer_poder_posicion_etapa_decision_clara | 6 | T | L61 | We Americans tend to be reluctant to exercise position power deliberately and explicitly
+ejercer_poder_posicion_etapa_decision_clara | 7 | T | L61 | Such reluctance on the part of the senior manager can prolong the first phase of the decision-making process
+cortar_discusion_libre_momento_justo | 1 | T | L63 | If you either enter the decision-making stage too early or wait too long
+cortar_discusion_libre_momento_justo | 2 | T | L63 | The criterion to follow is this
+cortar_discusion_libre_momento_justo | 3 | T | L63 | Make sure you have heard and considered the real issues rather than the superficial comments
+cortar_discusion_libre_momento_justo | 4 | T | L63 | But if you feel that you have already heard everything, that all sides of the issue have been raised, it is time to push for a consensus
+cortar_discusion_libre_momento_justo | 5 | T | L63 | to step in and make a decision
+cortar_discusion_libre_momento_justo | 6 | T | L63 | people can drift away from the near consensus when they are close to being right
+cortar_discusion_libre_momento_justo | 7 | T | L63 | So moving on to make the decision at the right time is crucial
+zanjar_seis_preguntas_decision_adelantado | 1 | T | L65 | decision-making has an output associated with it, which in this case is the decision itself
+zanjar_seis_preguntas_decision_adelantado | 2 | T | L65 | if we say clearly at the outset that we expect exactly that
+zanjar_seis_preguntas_decision_adelantado | 3 | T | L65 | key tasks is to settle six important questions in advance
+zanjar_seis_preguntas_decision_adelantado | 4 | T | L67 | What decision needs to be made
+zanjar_seis_preguntas_decision_adelantado | 5 | T | L69 | When does it have to be made
+zanjar_seis_preguntas_decision_adelantado | 6 | T | L71 | Who will decide
+zanjar_seis_preguntas_decision_adelantado | 7 | T | L73 | Who will need to be consulted prior to making the decision
+zanjar_seis_preguntas_decision_adelantado | 8 | T | L75 | Who will ratify or veto the decision
+zanjar_seis_preguntas_decision_adelantado | 9 | T | L77 | Who will need to be informed of the decision
+anunciar_decision_inesperada_reconvocar_reunion | 1 | T | L93 | If the final word has to be dramatically different from the expectations of the people who participated
+anunciar_decision_inesperada_reconvocar_reunion | 2 | T | L93 | make your announcement
+anunciar_decision_inesperada_reconvocar_reunion | 3 | T | L93 | walk away from the issue
+anunciar_decision_inesperada_reconvocar_reunion | 4 | T | L93 | People need time to adjust, rationalize, and in general put their heads back together
+anunciar_decision_inesperada_reconvocar_reunion | 5 | T | L93 | Adjourn, reconvene the meeting
+anunciar_decision_inesperada_reconvocar_reunion | 6 | T | L93 | reconvene the meeting after people have had a chance to recover
+anunciar_decision_inesperada_reconvocar_reunion | 7 | T | L93 | and solicit their views of the decision at that time
+anunciar_decision_inesperada_reconvocar_reunion | 8 | T | L93 | This will help everybody accept and learn to live with the unexpected
