@@ -51,6 +51,21 @@ MAX_VUELTAS="${MAX_VUELTAS:-20}"
 # `claude update`. Si un turno sale con ese error, es el binario, no el modelo.
 MODELO_EXTRACTOR="${MODELO_EXTRACTOR:-claude-opus-5-5}"
 MODELO_AUDITOR="${MODELO_AUDITOR:-claude-opus-5-5}"
+
+# NINGUN ASIENTO POR DEBAJO DE OPUS 5.5 (instruccion del fundador del 23 sep 2026:
+# "asegurate que cualquier ejecutor/auditor use el modelo opus 5.5, no menos que eso").
+#
+# LA LISTA VA ESCRITA AQUI Y NO EN UNA VARIABLE DE ENTORNO, a proposito: una variable
+# la puede bajar cualquiera que lance el arnes; cambiar esta linea deja rastro en git.
+# Cuando exista un modelo por encima, se anade aqui con la cita de quien lo decida.
+MODELOS_ADMITIDOS="claude-opus-5-5"
+
+# Y LO MISMO POR DENTRO. Un asiento puede lanzar subagentes, y un subagente que pida
+# `sonnet` o `opus` a secas tomaria el modelo al que apunte ese alias. Las tres variables
+# existen en Claude Code 2.1.280 (comprobado en el binario el 23 sep).
+export CLAUDE_CODE_SUBAGENT_MODEL="claude-opus-5-5"
+export ANTHROPIC_DEFAULT_OPUS_MODEL="claude-opus-5-5"
+export ANTHROPIC_DEFAULT_SONNET_MODEL="claude-opus-5-5"
 # El bucle vive en su propia rama. El merge a main es SIEMPRE decision de
 # Alexis, nunca del bucle (docs/loop/AUDITOR_FORJA.md, condiciones de parada).
 RAMA="${RAMA:-bucle}"
@@ -180,7 +195,20 @@ comprobar_arranque() {
   #    porque "rama equivocada" sin decir cuales obliga a ir a mirar.
   # 2. MODO_INSERCION tiene que ser uno de los dos valores. Un modo mal escrito
   #    NO cae al default: se detiene.
-  local activa
+  # 3. LOS DOS ASIENTOS EN UN MODELO ADMITIDO (23 sep 2026). Por debajo de Opus 5.5
+  #    no se arranca, y se dice cual y en que asiento.
+  local activa asiento modelo
+  for asiento in EXTRACTOR AUDITOR; do
+    if [ "$asiento" = "EXTRACTOR" ]; then modelo="$MODELO_EXTRACTOR"; else modelo="$MODELO_AUDITOR"; fi
+    case " $MODELOS_ADMITIDOS " in
+      *" $modelo "*) ;;
+      *)
+        log "DETENIDO ANTES DE ARRANCAR: el asiento $asiento pide \"$modelo\", y solo se admite: $MODELOS_ADMITIDOS."
+        log "  Instruccion del fundador del 23 sep 2026: ningun ejecutor ni auditor por debajo de Opus 5.5."
+        exit 1
+        ;;
+    esac
+  done
   activa="$(git rev-parse --abbrev-ref HEAD 2>/dev/null || echo desconocida)"
   if [ "$activa" != "$RAMA" ]; then
     log "DETENIDO ANTES DE ARRANCAR: la rama activa es \"$activa\" y RAMA es \"$RAMA\"."

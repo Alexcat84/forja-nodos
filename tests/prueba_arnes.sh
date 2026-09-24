@@ -176,6 +176,8 @@ printf '%s' "$prompt" > "prompt_${rol// /_}.txt"
 # prompt de varias lineas trae alguna vacia, el patron vacio casa con todo, y el
 # fichero salia VACIO. Los negativos de 19b pasaban en falso por eso.
 printf '%s\n' "${@:1:$#-1}" > "argumentos_${rol// /_}.txt"
+# Y EL MODELO QUE UN SUBAGENTE HEREDARIA (escenario 21).
+echo "${CLAUDE_CODE_SUBAGENT_MODEL:-SIN}|${ANTHROPIC_DEFAULT_SONNET_MODEL:-SIN}" > "subagente_${rol// /_}.txt"
 sleep "${FALSO_SEGUNDOS:-2}"
 if [ "$escribe" = "vacio" ]; then
   # el turno TOCA su testigo pero lo deja en cero bytes: la ruta promete
@@ -816,6 +818,30 @@ comprobar_no "sin cerrojo, sin aviso"          "INSERCION EN VUELO"       "$sali
 taller="$(montar_banco e20d)"
 salida="$(MODO_INSERCION=cuarentena FALSO_CERROJO=muerto FALSO_EXTRACTOR=si FALSO_AUDITOR=si correr "$taller")"
 comprobar_no "en cuarentena no se mira"        "INSERCION EN VUELO"       "$salida"
+
+# -------------------------------------------------------------- escenario 21
+echo ""
+echo "ESCENARIO 21: NINGUN ASIENTO POR DEBAJO DE OPUS 5.5 (23 sep 2026). Con Sonnet en"
+echo "             el extractor, el arnes NO ARRANCA y no gasta un solo turno."
+taller="$(montar_banco e21)"
+salida="$(MODELO_EXTRACTOR=claude-sonnet-5 FALSO_EXTRACTOR=si FALSO_AUDITOR=si correr "$taller")"
+echo "$salida" | sed 's/^/  | /'
+comprobar "no arranca, y dice el asiento"      "el asiento EXTRACTOR pide"   "$salida"
+comprobar_no "no gasta ningun turno"           "VUELTA 1 : EXTRACTOR"        "$salida"
+
+echo ""
+echo "ESCENARIO 21b: TAMPOCO UN OPUS ANTERIOR en el auditor."
+taller="$(montar_banco e21b)"
+salida="$(MODELO_AUDITOR=claude-opus-5 FALSO_EXTRACTOR=si FALSO_AUDITOR=si correr "$taller")"
+comprobar "no arranca con claude-opus-5"       "el asiento AUDITOR pide"     "$salida"
+
+echo ""
+echo "ESCENARIO 21c: EL CASO NEGATIVO. Con Opus 5.5 en los dos arranca, y un subagente"
+echo "              heredaria Opus 5.5 aunque pidiera sonnet."
+taller="$(montar_banco e21c)"
+salida="$(FALSO_EXTRACTOR=si FALSO_AUDITOR=si correr "$taller")"
+comprobar "arranca y el extractor corre"       "VUELTA 1 : EXTRACTOR (claude-opus-5-5" "$salida"
+comprobar "el subagente heredaria opus 5.5"    "claude-opus-5-5|claude-opus-5-5" "$(cat "$taller/subagente_extractor.txt" 2>/dev/null)"
 
 echo ""
 echo "================================================================"
