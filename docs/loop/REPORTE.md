@@ -60007,3 +60007,27 @@ La aduana de hoy: **ENTRARIA** con `0` vecino(s) contra `479`; lineas `--veredic
 |---|---|---:|---:|---:|---|
 
 **Ningun vecino, como en el barrido de la `66`, y ninguna linea que pasar.** Sin arista: la de `C3` desde `buscar` no se sostiene (`D67.2`).
+
+### Fila `10`: `delegar_tarea_base_comun_seguimiento`, **INSERTADO** en `1960.4` s, codigo `0`, commit `7f67f18`
+
+La aduana de hoy: **ENTRARIA** con `0` vecino(s) contra `479`; lineas `--veredicto` pasadas: `0`. Salida entera en `.v67ext/insertar_10_delegar_tarea_base_comun_seguimiento.txt`.
+
+<!-- TALLADO: parcial salida=.v67ext/insertar_10_delegar_tarea_base_comun_seguimiento.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+
+**Ningun vecino y ninguna linea, como en el barrido de la `66`.** **Arista por lectura cableada con la madre ya en el grafo** (`D.29`, `D65.2`): `transmitir_objetivos_prioridades_preferencias > delegar_tarea_base_comun_seguimiento`, `--paso 3`, el paso de la madre que su fila cita (`D66.10`, sostenido en la `ACTA 65`). Salida entera en `.v67ext/arista_transmitir_objetivos_prioridades_preferencias__delegar_tarea_base_comun_seguimiento.txt`:
+
+    $ python forja.py arista --madre transmitir_objetivos_prioridades_preferencias --hijo delegar_tarea_base_comun_seguimiento --paso 3 --razon <fila 9> --veredicto CONTINUA --cita-veredicto <fila 9>
+    DECLARACION DE ARISTA POR LECTURA (D.37)
+      madre: transmitir_objetivos_prioridades_preferencias
+      hijo : delegar_tarea_base_comun_seguimiento
+      paso citado de la madre: 3
+        Ve mas alla de retransmitir hechos: comunica tus objetivos, tus prioridades y tus preferencias, en aquello en que tocan la manera de abordar ciertas t
+      señales del par: familia_id 0.0, paso_contra_nodo 0.364, similitud_texto 0.282
+        NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+    GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: transmitir_objetivos_prioridades_preferencias > delegar_tarea_base_comun_seguimiento
+      razon en bitacora/VEREDICTOS.jsonl
+
