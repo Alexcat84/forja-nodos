@@ -996,3 +996,8 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-24 | usar_calendario_herramienta_planificacion_produccion | otro_idioma | production planning tool | ingles | - |
 | 2026-09-24 | usar_calendario_herramienta_planificacion_produccion | otro_idioma | mindless passivity | ingles | - |
 | 2026-09-24 | usar_calendario_herramienta_planificacion_produccion | otro_idioma | job shop | ingles | - |
+| 2026-09-24 | dimensionar_numero_subordinados_medio_dia_semanal | nombre_largo | La palanca integrada: cuantos subordinados deberia tener un mando, con la guia de medio dia por semana, el equivalente de subordinado del mando de saber hacer, y el arreglo del jefe de planta con solo dos secciones | castellano | - |
+| 2026-09-24 | dimensionar_numero_subordinados_medio_dia_semanal | otro_idioma | built-in leverage | ingles | - |
+| 2026-09-24 | dimensionar_numero_subordinados_medio_dia_semanal | otro_idioma | know-how manager | ingles | - |
+| 2026-09-24 | dimensionar_numero_subordinados_medio_dia_semanal | otro_idioma | fan-out | ingles | - |
+| 2026-09-24 | dimensionar_numero_subordinados_medio_dia_semanal | otro_idioma | on-the-job retirement | ingles | - |
