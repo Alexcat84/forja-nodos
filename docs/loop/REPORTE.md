@@ -60102,3 +60102,33 @@ La aduana de hoy: **BLOQUEARIA** con `3` vecino(s) contra `479`; lineas `--vered
     GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: delegar_tarea_base_comun_seguimiento > supervisar_decision_delegada_preguntas_concretas
       razon en bitacora/VEREDICTOS.jsonl
 
+
+### Fila `13`: `identificar_paso_limitante_jornada_desfases`, **INSERTADO** en `1150.5` s, codigo `0`, commit `76c53c1`
+
+La aduana de hoy: **BLOQUEARIA** con `6` vecino(s) contra `479`; lineas `--veredicto` pasadas: `6`. Salida entera en `.v67ext/insertar_13_identificar_paso_limitante_jornada_desfases.txt`.
+
+<!-- TALLADO: parcial salida=.v67ext/insertar_13_identificar_paso_limitante_jornada_desfases.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `agrupar_tareas_semejantes_aprovechar_preparacion` | similitud_texto | 0.410 | 0.000 | 0.450 | SANO |
+| `decir_no_trabajo_excede_capacidad` | similitud_texto | 0.369 | 0.000 | 0.413 | SANO |
+| `supervisar_decision_delegada_preguntas_concretas` | similitud_texto | 0.398 | 0.000 | 0.406 | SANO |
+| `agrupar_interrupciones_subordinados_reuniones_regulares` | similitud_texto | 0.371 | 0.000 | 0.404 | SANO |
+| `llevar_inventario_proyectos_discrecionales` | similitud_texto | 0.401 | 0.000 | 0.392 | SANO |
+| `supervisar_tarea_delegada_etapa_menor_valor` | similitud_texto | 0.379 | 0.000 | 0.398 | SANO |
+
+**Los seis vecinos son los seis de su bloque y las seis lineas se pasaron tal cual.** **Arista por lectura cableada con la madre ya en el grafo, y es `d072`**: `construir_flujo_produccion_paso_limitante > identificar_paso_limitante_jornada_desfases`, `--paso 5`, el que su fila cita. Salida entera en `.v67ext/arista_construir_flujo_produccion_paso_limitante__identificar_paso_limitante_jornada_desfases.txt`:
+
+    $ python forja.py arista --madre construir_flujo_produccion_paso_limitante --hijo identificar_paso_limitante_jornada_desfases --paso 5 --razon <fila 6> --veredicto CONTINUA --cita-veredicto <fila 6>
+    DECLARACION DE ARISTA POR LECTURA (D.37)
+      madre: construir_flujo_produccion_paso_limitante
+      hijo : identificar_paso_limitante_jornada_desfases
+      paso citado de la madre: 5
+        Fija el paso limitante, que es el paso del flujo que determina la forma del conjunto, y para encontrarlo pregunta cual de los componentes tarda mas en
+      señales del par: familia_id 0.25, paso_contra_nodo 0.377, similitud_texto 0.192
+        NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+    GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: construir_flujo_produccion_paso_limitante > identificar_paso_limitante_jornada_desfases
+      razon en bitacora/VEREDICTOS.jsonl
+
