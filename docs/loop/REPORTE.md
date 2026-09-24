@@ -60137,3 +60137,19 @@ La aduana de hoy: **BLOQUEARIA** con `6` vecino(s) contra `479`; lineas `--vered
 
     $ python scripts/deuda.py --pagar d072 --vuelta 67 --como "<la arista, su paso, su fila y el commit 88a7d3e>"
     PAGADA d072 en la vuelta 67
+
+### Fila `14`: `agrupar_tareas_semejantes_aprovechar_preparacion`, **INSERTADO** en `1284.3` s, codigo `0`, commit `b186278`
+
+La aduana de hoy: **BLOQUEARIA** con `5` vecino(s) contra `479`; lineas `--veredicto` pasadas: `5`. Salida entera en `.v67ext/insertar_14_agrupar_tareas_semejantes_aprovechar_preparacion.txt`.
+
+<!-- TALLADO: parcial salida=.v67ext/insertar_14_agrupar_tareas_semejantes_aprovechar_preparacion.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `buscar_regularidad_bloques_iguales_trabajo_mando` | paso_contra_nodo | 0.294 | 0.000 | 0.718 | SANO |
+| `llevar_inventario_proyectos_discrecionales` | similitud_texto | 0.367 | 0.000 | 0.444 | SANO |
+| `decir_no_trabajo_excede_capacidad` | similitud_texto | 0.358 | 0.000 | 0.440 | SANO |
+| `identificar_paso_limitante_jornada_desfases` | similitud_texto | 0.409 | 0.000 | 0.414 | SANO |
+| `supervisar_decision_delegada_preguntas_concretas` | similitud_texto | 0.363 | 0.000 | 0.394 | SANO |
+
+**Los cinco vecinos son los cinco de su bloque y las cinco lineas se pasaron tal cual.** Sin arista en esta fila: la suya por lectura a `agrupar_interrupciones` es de la `68`.
