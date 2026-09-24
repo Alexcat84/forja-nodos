@@ -1017,3 +1017,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-24 | agrupar_interrupciones_subordinados_reuniones_regulares | otro_idioma | batching | ingles | - |
 | 2026-09-24 | agrupar_interrupciones_subordinados_reuniones_regulares | otro_idioma | staff meeting | ingles | - |
 | 2026-09-24 | agrupar_interrupciones_subordinados_reuniones_regulares | otro_idioma | one-on-one meeting | ingles | - |
+| 2026-09-24 | canalizar_interrupciones_cartel_hora_oficina | nombre_largo | La alternativa a esconderse: obligar al que interrumpe a decidir si el asunto puede esperar, colgar en la puerta el cartel cuyo texto da el libro, tener despues una hora de oficina abierta, y volver regular lo que era irregular | castellano | - |
+| 2026-09-24 | canalizar_interrupciones_cartel_hora_oficina | otro_idioma | open office hour | ingles | - |
+| 2026-09-24 | canalizar_interrupciones_cartel_hora_oficina | otro_idioma | sign | ingles | - |

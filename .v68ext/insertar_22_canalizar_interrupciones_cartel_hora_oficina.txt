@@ -1,0 +1,26 @@
+fila 22, canalizar_interrupciones_cartel_hora_oficina, lineas --veredicto: 1
+  --veredicto agrupar_interrupciones_subordinados_reuniones_regulares|SANO|El mismo par que la tanda de interrupciones lee desde su lado: hermanos, el cartel y la hora de oficina contra la tanda en las reuniones.
+inicio 2026-09-24 17:52:38
+======================================================================
+ADUANA DE INSERCION, candidato 'canalizar_interrupciones_cartel_hora_oficina'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (389 del grafo mas 90 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino agrupar_interrupciones_subordinados_reuniones_regulares  [Agrupar en tanda las interrupciones que llegan de los subordinados y atenderlas en las reuniones regulares de personal y de uno a uno, en vez de atenderlas al azar]
+    levantada por: similitud_texto
+    similitud_texto    0.408 (umbral 0.35)
+    familia_id         0.111 (umbral 0.30)
+    paso_contra_nodo   0.422 (umbral 0.60)
+    paso 8 del candidato contra paso 2 de agrupar_interrupciones_subordinados_reuniones_regulares
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 390
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 1
+
+======================================================================
+fin 2026-09-24 18:28:32 | codigo de salida 0 | 2153.7 s
