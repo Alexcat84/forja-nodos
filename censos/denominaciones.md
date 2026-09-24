@@ -981,3 +981,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-24 | supervisar_decision_delegada_preguntas_concretas | nombre_largo | Como se supervisa lo que no es una tarea sino una decision: mirando el proceso de decision del subordinado en vez de rehacer su reflexion | castellano | - |
 | 2026-09-24 | supervisar_decision_delegada_preguntas_concretas | otro_idioma | monitoring their decision-making process | ingles | - |
 | 2026-09-24 | supervisar_decision_delegada_preguntas_concretas | otro_idioma | review meeting | ingles | - |
+| 2026-09-24 | identificar_paso_limitante_jornada_desfases | nombre_largo | El primer principio de produccion aplicado al tiempo de un mando: cual es el huevo de tu trabajo, y como se programa el resto de la jornada alrededor de el | castellano | - |
+| 2026-09-24 | identificar_paso_limitante_jornada_desfases | otro_idioma | limiting step | ingles | - |
+| 2026-09-24 | identificar_paso_limitante_jornada_desfases | otro_idioma | offsets | ingles | - |

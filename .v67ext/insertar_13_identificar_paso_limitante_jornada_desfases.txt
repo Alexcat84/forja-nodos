@@ -1,0 +1,66 @@
+fila 13, identificar_paso_limitante_jornada_desfases, lineas --veredicto: 6
+  --veredicto agrupar_tareas_semejantes_aprovechar_preparacion|SANO|Hermanos: el primer y el segundo principio de produccion aplicados al trabajo de mando (L267, First; L269, A second production principle). Ninguno usa al otro.
+  --veredicto decir_no_trabajo_excede_capacidad|SANO|Hermanos: el paso limitante (L267) contra decir que no al trabajo que excede la capacidad (L277 a L285). Ningun paso compartido.
+  --veredicto supervisar_decision_delegada_preguntas_concretas|SANO|El mismo par que la decision delegada lee desde su lado. Ajenos.
+  --veredicto agrupar_interrupciones_subordinados_reuniones_regulares|SANO|Ajenos: el paso limitante de la jornada contra agrupar las interrupciones de los subordinados en las reuniones regulares (L317). Ningun paso compartido.
+  --veredicto llevar_inventario_proyectos_discrecionales|SANO|Hermanos del mismo tramo de principios de produccion: el paso limitante (L267) contra el inventario de proyectos discrecionales (L289). Ninguno usa al otro.
+  --veredicto supervisar_tarea_delegada_etapa_menor_valor|SANO|El mismo par que la tarea delegada lee desde su lado. Ajenos.
+inicio 2026-09-24 11:45:58
+======================================================================
+ADUANA DE INSERCION, candidato 'identificar_paso_limitante_jornada_desfases'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (380 del grafo mas 99 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 6. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino agrupar_tareas_semejantes_aprovechar_preparacion  [Agrupar las tareas semejantes en una tanda para aprovechar un solo esfuerzo de preparacion]
+    levantada por: similitud_texto
+    similitud_texto    0.410 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.450 (umbral 0.60)
+    paso 4 del candidato contra paso 6 de agrupar_tareas_semejantes_aprovechar_preparacion
+
+  vecino decir_no_trabajo_excede_capacidad  [Decir que no de salida al trabajo que excede tu capacidad, antes y no despues, usando tu propia idea del tiempo que cada cosa te lleva]
+    levantada por: similitud_texto
+    similitud_texto    0.369 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.413 (umbral 0.60)
+    paso 4 del candidato contra paso 6 de decir_no_trabajo_excede_capacidad
+
+  vecino supervisar_decision_delegada_preguntas_concretas  [Supervisar una decision delegada por su proceso de reflexion: preguntas bastante concretas en la reunion de revision]
+    levantada por: similitud_texto
+    similitud_texto    0.398 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.406 (umbral 0.60)
+    paso 2 del candidato contra paso 3 de supervisar_decision_delegada_preguntas_concretas
+
+  vecino agrupar_interrupciones_subordinados_reuniones_regulares  [Agrupar en tanda las interrupciones que llegan de los subordinados y atenderlas en las reuniones regulares de personal y de uno a uno, en vez de atenderlas al azar]
+    levantada por: similitud_texto
+    similitud_texto    0.371 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.404 (umbral 0.60)
+    paso 3 del candidato contra paso 2 de agrupar_interrupciones_subordinados_reuniones_regulares
+
+  vecino llevar_inventario_proyectos_discrecionales  [Llevar un inventario de materia prima en forma de proyectos discrecionales, distinto del trabajo en curso, para no gastar el tiempo libre metiendote en el trabajo ajeno]
+    levantada por: similitud_texto
+    similitud_texto    0.401 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.392 (umbral 0.60)
+    paso 3 del candidato contra paso 2 de llevar_inventario_proyectos_discrecionales
+
+  vecino supervisar_tarea_delegada_etapa_menor_valor  [Supervisar una tarea delegada como se supervisa la calidad: en la etapa de menor valor anadido, con frecuencia variable y entrando en el detalle al azar]
+    levantada por: similitud_texto
+    similitud_texto    0.379 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.398 (umbral 0.60)
+    paso 4 del candidato contra paso 2 de supervisar_tarea_delegada_etapa_menor_valor
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 381
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 6
+
+======================================================================
+fin 2026-09-24 12:05:09 | codigo de salida 0 | 1150.5 s
