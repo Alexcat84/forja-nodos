@@ -974,3 +974,7 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-24 | delegar_tarea_base_comun_seguimiento | otro_idioma | delegation as leverage | ingles | - |
 | 2026-09-24 | delegar_tarea_base_comun_seguimiento | otro_idioma | insincere delegation | ingles | - |
 | 2026-09-24 | delegar_tarea_base_comun_seguimiento | otro_idioma | delegation without follow-through is abdication | ingles | - |
+| 2026-09-24 | supervisar_tarea_delegada_etapa_menor_valor | nombre_largo | El seguimiento de lo delegado tratado con los principios del aseguramiento de la calidad: donde se mira, cada cuanto se mira, y cuanto detalle se mira | castellano | - |
+| 2026-09-24 | supervisar_tarea_delegada_etapa_menor_valor | otro_idioma | monitoring the results of delegation | ingles | - |
+| 2026-09-24 | supervisar_tarea_delegada_etapa_menor_valor | otro_idioma | quality assurance principles | ingles | - |
+| 2026-09-24 | supervisar_tarea_delegada_etapa_menor_valor | otro_idioma | task-relevant maturity | ingles | - |
