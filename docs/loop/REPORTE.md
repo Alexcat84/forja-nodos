@@ -59161,5 +59161,5 @@ de bandejas, linea `6` de su salida), ninguno que dejara de levantarse. Ninguna 
 
 **`T2` CERRADA: las dos dentro, una por vez.** Cero solapes: la `21` volvio a las `00:49:07` y la `22` arranco a las
 `00:51:28` (`.v66ext/insertar_21_*.txt` linea final, `.v66ext/insertar_22_*.txt` linea `3`), y los dos `.fin` dicen
-`0`. El cerrojo del arbol, `nodos.jsonl.679b2259.cerrojo`, aparecio en `procesos/` durante cada `insertar` y se
-solto al volver (`ls procesos/` vacio tras la `22`).
+`0`. El cerrojo del arbol, `nodos.jsonl.679b2259.cerrojo`, lo vi en `procesos/` con la `21` en vuelo (`ls` de las
+`00:22`; con la `22` no lo mire), y `ls procesos/` sale vacio tras volver la `22`.
