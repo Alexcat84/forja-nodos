@@ -933,3 +933,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-23 | elegir_inspeccion_barrera_monitorizacion | otro_idioma | gate-like inspection | ingles | - |
 | 2026-09-23 | elegir_inspeccion_barrera_monitorizacion | otro_idioma | monitoring step | ingles | - |
 | 2026-09-23 | elegir_inspeccion_barrera_monitorizacion | otro_idioma | throughput time | ingles | - |
+| 2026-09-24 | variar_frecuencia_inspeccion_nivel_calidad | nombre_largo | La inspeccion variable: aflojar la frecuencia cuando pasan semanas sin problemas y apretarla cuando empiezan a aparecer, hasta que la calidad vuelve a su nivel alto | castellano | - |
+| 2026-09-24 | variar_frecuencia_inspeccion_nivel_calidad | otro_idioma | variable inspections | ingles | - |
+| 2026-09-24 | variar_frecuencia_inspeccion_nivel_calidad | otro_idioma | creatures of habit | ingles | - |
