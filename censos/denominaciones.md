@@ -1005,3 +1005,7 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-24 | buscar_regularidad_bloques_iguales_trabajo_mando | otro_idioma | regularity | ingles | - |
 | 2026-09-24 | buscar_regularidad_bloques_iguales_trabajo_mando | otro_idioma | black box | ingles | - |
 | 2026-09-24 | buscar_regularidad_bloques_iguales_trabajo_mando | otro_idioma | job shop | ingles | - |
+| 2026-09-24 | preparar_respuestas_estandar_interrupciones_repetidas | nombre_largo | El concepto de produccion del producto estandar aplicado a las interrupciones del trabajo de mando: fijar que clase de interrupcion te llega, preparar de antemano la respuesta de las que mas se repiten, y delegarlas | castellano | - |
+| 2026-09-24 | preparar_respuestas_estandar_interrupciones_repetidas | otro_idioma | standard products | ingles | - |
+| 2026-09-24 | preparar_respuestas_estandar_interrupciones_repetidas | otro_idioma | standard responses | ingles | - |
+| 2026-09-24 | preparar_respuestas_estandar_interrupciones_repetidas | otro_idioma | interruptions | ingles | - |
