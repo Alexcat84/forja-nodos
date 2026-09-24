@@ -951,3 +951,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-24 | programar_visita_area_observar_despachar | otro_idioma | programmed visits | ingles | - |
 | 2026-09-24 | programar_visita_area_observar_despachar | otro_idioma | ad hoc mini-transactions | ingles | - |
 | 2026-09-24 | programar_visita_area_observar_despachar | otro_idioma | Mr. Clean inspections | ingles | - |
+| 2026-09-24 | transmitir_objetivos_prioridades_preferencias | nombre_largo | El mando como fuente de informacion y no solo como recolector: lo que traslada a su organizacion y a los grupos sobre los que influye, y por que los objetivos y los modos preferidos son la llave de la delegacion | castellano | - |
+| 2026-09-24 | transmitir_objetivos_prioridades_preferencias | otro_idioma | information-giving | ingles | - |
+| 2026-09-24 | transmitir_objetivos_prioridades_preferencias | otro_idioma | preferred approaches | ingles | - |
