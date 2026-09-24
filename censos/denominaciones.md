@@ -944,3 +944,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-24 | reunir_informacion_gerencial_vias_variadas | otro_idioma | information-gathering | ingles | - |
 | 2026-09-24 | reunir_informacion_gerencial_vias_variadas | otro_idioma | standard reports | ingles | - |
 | 2026-09-24 | reunir_informacion_gerencial_vias_variadas | otro_idioma | internal supplier | ingles | - |
+| 2026-09-24 | escalonar_fuentes_informacion_gerencial | nombre_largo | La jerarquia de la informacion: la fuente verbal como titular, el articulo entero para el quien que donde por que y como, y la revista o el libro para la reiteracion y la perspectiva, con las tres complementandose y solapandose | castellano | - |
+| 2026-09-24 | escalonar_fuentes_informacion_gerencial | otro_idioma | information hierarchy | ingles | - |
+| 2026-09-24 | escalonar_fuentes_informacion_gerencial | otro_idioma | redundant | ingles | - |
