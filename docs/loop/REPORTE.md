@@ -60232,3 +60232,16 @@ La aduana de hoy: **BLOQUEARIA** con `4` vecino(s) contra `479`; lineas `--vered
     GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: representar_actividad_caja_negra_ventanas > buscar_regularidad_bloques_iguales_trabajo_mando
       razon en bitacora/VEREDICTOS.jsonl
 
+
+### Fila `19`: `preparar_respuestas_estandar_interrupciones_repetidas`, **INSERTADO** en `2186.2` s, codigo `0`, commit `ae3475d`
+
+La aduana de hoy: **BLOQUEARIA** con `2` vecino(s) contra `479`; lineas `--veredicto` pasadas: `2`. Salida entera en `.v67ext/insertar_19_preparar_respuestas_estandar_interrupciones_repetidas.txt`.
+
+<!-- TALLADO: parcial salida=.v67ext/insertar_19_preparar_respuestas_estandar_interrupciones_repetidas.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `buscar_regularidad_bloques_iguales_trabajo_mando` | similitud_texto | 0.389 | 0.000 | 0.551 | SANO |
+| `agrupar_interrupciones_subordinados_reuniones_regulares` | similitud_texto | 0.467 | 0.111 | 0.435 | SANO |
+
+**Los dos vecinos son los dos de su bloque y las dos lineas se pasaron tal cual.** Sin arista.
