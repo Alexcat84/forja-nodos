@@ -58335,10 +58335,10 @@ anexa su fila al volver, con su commit. Si la vuelta se corta, lo que falte es e
 
 | tarea | que | estado |
 |---|---|---|
-| `T1` | los registros de la `ACTA 63` | PENDIENTE |
-| `T2` | las tres comprobaciones antes del primer `insertar` | PENDIENTE |
-| `T3` | la tanda, fila a fila, filas `1` a `20` | PENDIENTE |
-| `T4` | el cierre: censo, `PASOS INVENTADOS`, `D.61`, `R5`, guardas, commit | PENDIENTE |
+| `T1` | los registros de la `ACTA 63` | **CERRADA** (`65.1`) |
+| `T2` | las tres comprobaciones antes del primer `insertar` | **CERRADA** (`65.2`) |
+| `T3` | la tanda, fila a fila, filas `1` a `20` | **CERRADA**, las `20` dentro (`65.3`) |
+| `T4` | el cierre: censo, `PASOS INVENTADOS`, `D.61`, `R5`, guardas, commit | **CERRADA** (`65.4`) |
 
 ## 65.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
 
@@ -58846,3 +58846,174 @@ La aduana de hoy: **BLOQUEARIA** con `2` vecino(s) contra `462`; lineas `--vered
 |---|---|---:|---:|---:|---|
 | `construir_grafico_escalonado_pronosticos` | similitud_texto | 0.365 | 0.000 | 0.454 | SANO |
 | `emparejar_indicadores_efecto_contraefecto` | similitud_texto | 0.374 | 0.000 | 0.450 | SANO |
+
+
+**`T3` CERRADA: las `20` filas entraron, una por vez, cada una con su fila y su commit arriba.** Ninguna
+aduana dijo nada que no esperara: **cero `CAERIA`, cero vecinos sin linea y cero lineas cuyo vecino ya no
+se levantara** (en las `20` tablas no hay ni un `SIN LINEA` ni un `no levanta hoy`). Los vecinos de cada fila
+son los de su bloque de `.v64ext/veredictos_listos.txt`, y su numero el de la columna `vec` de `orden.txt`.
+**Ninguna madre nueva aparecio**, asi que la cola no se toco.
+
+**`D.37`, mirado y sin caso:** tres titulos de la tanda dicen cuantas partes tienen (`clasificar_trabajo`, las
+tres operaciones; `elegir_cinco_indicadores`, los cinco; `elegir_indicador_salida`, las dos varas), y
+**ninguna de esas partes es un nodo**: no hay arista cabeza a parte que declarar.
+
+## 65.4. TAREA 4: EL CIERRE
+
+### 65.4.a. El censo antes y despues
+
+    $ bash .v65ext/censo.sh
+    nodos en dataset/nodos.jsonl        : 366
+    veredictos en bitacora              : 795
+    pares mutuos                        : 1
+    bandeja cuarentena/grove_high_output: 71
+    insertados de grove_high_output     : 21
+    cerrojos en procesos/               : nodos.jsonl.218e43e4.cerrojo nodos.jsonl.e52fd5d2.cerrojo 
+
+| | al abrir (`65.0`) | al cerrar | delta |
+|---|---:|---:|---:|
+| nodos | `346` | `366` | `+20` |
+| veredictos | `740` | `795` | `+55`: `48` lineas `--veredicto` y `7` aristas por lectura |
+| pares mutuos | `1` | `1` | `0` |
+| bandeja de Grove | `91` | `71` | `-20` |
+| insertados de Grove | `1` | `21` | `+20` |
+
+**`366` y `71`, los del encargo.** Las `48` lineas son las `49` de `veredictos_listos.txt` menos la de
+`simplificar_trabajo_reducir_numero_pasos` (fila `22`, fuera de la tanda); la de `detectar` salio de
+`.v63ext/cmd_02_detectar.sh` (`D65.4`). **El cerrojo de este dataset ya no esta en `procesos/`**: lo rompio el
+primer `insertar` (`65.3`, fila `1`) y cada uno solto el suyo. Los otros dos siguen sin tocar.
+
+### 65.4.b. Las aristas de la vuelta, leidas de la bitacora y comprobadas en el grafo
+
+    $ python .v65ext/aristas_vuelta.py
+    registros de la vuelta en la bitacora: 55
+    EN GRAFO   veredicto CONTINUA  construir_flujo_produccion_paso_limitante > rehacer_flujo_paso_limitante_capacidad
+    EN COLA    veredicto CONTINUA  detectar_arreglar_fallo_etapa_menor_valor > supervisar_tarea_delegada_etapa_menor_valor
+    EN GRAFO   veredicto CONTINUA  detectar_arreglar_fallo_etapa_menor_valor > dimensionar_inventario_materia_prima_reposicion
+    EN GRAFO   veredicto CONTINUA  construir_flujo_produccion_paso_limitante > rehacer_flujo_paso_limitante_capacidad
+    EN GRAFO   lectura declarada   rehacer_flujo_paso_limitante_capacidad > equilibrar_capacidad_personal_inventario_plazo
+    EN GRAFO   veredicto CONTINUA  emparejar_indicadores_efecto_contraefecto > elegir_indicador_salida_trabajo_administrativo
+    EN GRAFO   veredicto CONTINUA  emparejar_indicadores_efecto_contraefecto > elegir_indicador_salida_trabajo_administrativo
+    EN GRAFO   lectura declarada   representar_actividad_caja_negra_ventanas > construir_indicador_linealidad_alerta_temprana
+    EN GRAFO   veredicto CONTINUA  construir_indicador_tendencia_patron > dimensionar_plantilla_administrativa_pronostico
+    EN GRAFO   lectura declarada   representar_actividad_caja_negra_ventanas > construir_indicador_tendencia_patron
+    EN GRAFO   lectura declarada   elegir_fabricar_pedido_pronostico > casar_flujo_fabricacion_flujo_ventas
+    EN GRAFO   lectura declarada   construir_grafico_escalonado_pronosticos > casar_flujo_fabricacion_flujo_ventas
+    EN GRAFO   veredicto CONTINUA  construir_indicador_tendencia_patron > dimensionar_plantilla_administrativa_pronostico
+    EN GRAFO   lectura declarada   elegir_indicador_salida_trabajo_administrativo > dimensionar_plantilla_administrativa_pronostico
+    EN GRAFO   lectura declarada   dimensionar_inventario_materia_prima_reposicion > decidir_aceptar_rechazar_material_defectuoso
+    registros con arista: 15 | aristas DISTINTAS: 12 | en el grafo: 11 | en cola: 1 (un par CONTINUA leido desde sus dos lados deja dos registros y una sola arista)
+    supervisar_tarea_delegada_etapa_menor_valor sigue en la bandeja: True
+
+**Las siete `SOSTENGO` de `.v64ext/aristas_lectura.txt` que no iban como veredicto, cableadas las siete**, y la
+octava (`construir_indicador_tendencia_patron` a `dimensionar_plantilla`) una sola vez, por su `CONTINUA`. **La de
+`detectar` a `supervisar_tarea_delegada` queda EN COLA** (`D.29`), como manda el encargo: su hijo es de `cap_04`.
+
+### 65.4.c. `PASOS INVENTADOS POR CAPITULO`, sobre lo que ENTRO
+
+**Contado por instrumento desde las lecturas enteras ya adjudicadas, no desde cero:** `.v63aud/fidelidad.tsv`
+con las dos adjudicaciones de la `ACTA 62` `62.5` (`D1` CAE: los pasos `2` a `5` de `equilibrar` cuentan
+PUENTE; la duda de `detectar` paso `1` cerrada TRANSCRIPCION) y `.v64ext/fidelidad.tsv` para los seis de
+`d005` (`ACTA 63` `63.3.a` y `63.5`). Los pasos se cuentan de la ficha en `_insertados`, y cada uno tiene su fila.
+
+<!-- TALLADO: parcial salida=.v65ext/pasos_inventados.txt -->
+
+    $ python .v65ext/pasos_inventados.py
+    candidato que ENTRO                                cap     pasos   T   P
+    construir_flujo_produccion_paso_limitante          cap_02     10  10   0
+    clasificar_trabajo_proceso_montaje_prueba          cap_02      7   7   0
+    detectar_arreglar_fallo_etapa_menor_valor          cap_02      6   6   0
+    dimensionar_inventario_materia_prima_reposicion    cap_02      7   7   0
+    rehacer_flujo_paso_limitante_capacidad             cap_02      6   6   0
+    equilibrar_capacidad_personal_inventario_plazo     cap_02      8   4   4
+    preferir_inspeccion_proceso_prueba_destructiva     cap_02      6   6   0
+    elegir_cinco_indicadores_diarios_fabrica           cap_03     10  10   0
+    emparejar_indicadores_efecto_contraefecto          cap_03      7   7   0
+    elegir_indicador_salida_trabajo_administrativo     cap_03      7   7   0
+    representar_actividad_caja_negra_ventanas          cap_03      9   9   0
+    construir_indicador_linealidad_alerta_temprana     cap_03      9   9   0
+    construir_indicador_tendencia_patron               cap_03      6   6   0
+    construir_grafico_escalonado_pronosticos           cap_03      8   7   1
+    archivar_indicadores_resolver_problemas            cap_03      4   4   0
+    elegir_fabricar_pedido_pronostico                  cap_03      9   8   1
+    casar_flujo_fabricacion_flujo_ventas               cap_03     12  12   0
+    dimensionar_plantilla_administrativa_pronostico    cap_03      7   7   0
+    decidir_aceptar_rechazar_material_defectuoso       cap_03      8   8   0
+    elegir_inspeccion_barrera_monitorizacion           cap_03     12  12   0
+    entraron: 20 de la tanda de 20 | pasos sin fila de lectura: 0 []
+
+    | capitulo | candidatos que entraron | pasos | PUENTE | por ciento |
+    |---|---:|---:|---:|---:|
+    | `cap_02` | 7 | 50 | 4 | 8,00 |
+    | `cap_03` | 13 | 108 | 2 | 1,85 |
+
+**`cap_02`: `4` de `50`, el `8,00` por ciento, que es la cifra de la `ACTA 62` `62.6`, porque entro entero.
+`cap_03`: `2` de `108`**, los `7` de los nueve de la `63` que estaban en la tanda (`67` pasos, `0` PUENTE) mas los
+seis de `d005` (`41`, `2` PUENTE). **Los dos por debajo del `10`.** Los seis PUENTE son de clausula y **entraron
+ya reescritos**: la lectura los cuenta porque `8.4` dice que corregirlos no los borra.
+
+### 65.4.d. El reloj de la tanda
+
+<!-- TALLADO: parcial salida=.v65ext/relojes.txt -->
+
+    $ python .v65ext/relojes.py | tail -1
+    insertar: 20 | minimo 816.3 s | mediana 1351.8 s | maximo 2378.6 s | suma 27644.0 s (7.68 h)
+
+**`7,68` horas de aduana en un solo turno**, con la otra linea del arnes en la misma maquina. Lo digo para el
+tamanio de la tanda de la `66`: son `71` en la bandeja y cada ficha costo hoy de `13,6` a `39,6` minutos.
+
+### 65.4.e. `D.61`: los discutibles, cada uno ejecutado o cerrado
+
+| | que | estado |
+|---|---|---|
+| `D65.1` | el metodo de espera: cada `insertar` como un proceso y yo bloqueado en primer plano con `esperar.py` hasta su `.fin` | **EJECUTADO** `20` veces; al cerrar no queda ningun `insertar` vivo y el cerrojo del dataset no esta (`65.4.a`). Queda para el auditor si es primer plano |
+| `D65.2` | las siete aristas por lectura con `--veredicto CONTINUA` y su cita | **EJECUTADO** siete veces (`65.4.b`) |
+| `D65.3` | el `--paso` de las cuatro filas con tramo: `4` (rehacer), `4` (elegir_fabricar), `1` (construir_grafico), `4` (elegir_indicador_salida) | **EJECUTADO**, con el texto del paso citado pegado en cada bloque de `65.3` |
+| `D65.4` | la linea de `detectar` desde `cmd_02_detectar.sh` | **EJECUTADO** en la fila `3` |
+
+**Ninguno abierto.**
+
+### 65.4.f. Las guardas
+
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 366
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+    $ python forja.py guiones
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+    $ python tests/test_aceptacion.py | tail -2
+      total: 379 pruebas, 0 fallos, 0 errores
+    ========================================================================
+
+### 65.4.g. `R5`, medido con los dos instrumentos de la TAREA 1 sobre el tramo de la vuelta 65
+
+    $ python .v65ext/pegado65.py
+    bloques abiertos con `$` en el tramo de la vuelta 65 : 29
+    bloques que ROMPEN R1 (ACTA 60 60.15)                : 1
+    (recortado, entero en .v65ext/pegado65.txt)
+
+    $ python .v65ext/bloques_mudos65.py
+    bloques abiertos con `$`: 20 | comandos `$`: 29 | comandos sin ninguna linea de salida en su bloque: 0
+
+El bloque que marca lo nombran las dos lineas recortadas: `$ wc -l bitacora/VEREDICTOS.jsonl dataset/nodos.jsonl config/pares_mutuos.jsonl`, *NO ES LA SALIDA DEL COMANDO: 3 de 4 lineas pegadas que el comando no imprime*. Las recorto porque pegadas dentro de un bloque indentado el propio instrumento las vuelve a leer como un comando mas.
+
+**EL UNICO BLOQUE QUE `pegado65.py` MARCA ES MI APERTURA, Y LO DECLARO EN VEZ DE ESCONDERLO.** Es el
+`wc -l` de `65.0`, pegado de `.v65ext/apertura.txt` antes de la primera operacion; el instrumento lo vuelve a
+correr hoy, **despues de las `20` inserciones**, y le salen `795`, `366` y `1`. La salida pegada es la del
+estado de apertura, y se reproduce contra el commit de apertura:
+
+    $ for f in bitacora/VEREDICTOS.jsonl dataset/nodos.jsonl config/pares_mutuos.jsonl; do echo "$f $(git show 90028c0:$f | wc -l)"; done
+    bitacora/VEREDICTOS.jsonl 740
+    dataset/nodos.jsonl 346
+    config/pares_mutuos.jsonl 1
+
+**No toco el instrumento del auditor ni el bloque**: si la vara lee esto como rotura, es mia, y es la
+especie de una medida de apertura que la propia vuelta movio (`EXTRACTOR.md` 4, *el estado tras la primera
+operacion ya es estado intermedio*). **Los comandos sin salida debajo son `0`.**
+
+    $ python scripts/cerrar_reporte.py | tail -3
+    persona, y por eso esto no pone nada en rojo.
+
+    CIERRE VERDE: las cuatro guardas que muerden, el tallado y el censo. La vigencia corrio y publico su cuenta arriba: es cola, no guarda (D.15).
+
+**Salida entera en `.v65ext/cierre_reporte.txt`, codigo `0`.** Todo verde. **Ningun proceso mio vive al cerrar el turno**: el ultimo `insertar` volvio a las `19:50:31` con codigo `0` (`.v65ext/relojes.txt`), y en `procesos/` solo quedan los dos cerrojos que no son de este dataset. **Nada me obliga a parar: no hay `PARA_ALEXIS.md`.** Pasan a la `66`, en el mismo orden, las filas `21` y `22` de `.v65ext/orden.txt`, y la arista de `detectar` a `supervisar_tarea_delegada` sigue en cola hasta que entre `cap_04`.

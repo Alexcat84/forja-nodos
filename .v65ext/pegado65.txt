@@ -1,0 +1,4 @@
+bloques abiertos con `$` en el tramo de la vuelta 65 : 29
+bloques que ROMPEN R1 (ACTA 60 60.15)                : 1
+   $ wc -l bitacora/VEREDICTOS.jsonl dataset/nodos.jsonl config/pares_mutuos.jsonl
+       NO ES LA SALIDA DEL COMANDO: 3 de 4 lineas pegadas que el comando no imprime
