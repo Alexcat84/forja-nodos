@@ -60245,3 +60245,20 @@ La aduana de hoy: **BLOQUEARIA** con `2` vecino(s) contra `479`; lineas `--vered
 | `agrupar_interrupciones_subordinados_reuniones_regulares` | similitud_texto | 0.467 | 0.111 | 0.435 | SANO |
 
 **Los dos vecinos son los dos de su bloque y las dos lineas se pasaron tal cual.** Sin arista.
+
+### Fila `20`: `llevar_inventario_proyectos_discrecionales`, **INSERTADO** en `1465.9` s, codigo `0`, commit `41acbbc`
+
+La aduana de hoy: **BLOQUEARIA** con `6` vecino(s) contra `479`; lineas `--veredicto` pasadas: `6`. Salida entera en `.v67ext/insertar_20_llevar_inventario_proyectos_discrecionales.txt`.
+
+<!-- TALLADO: parcial salida=.v67ext/insertar_20_llevar_inventario_proyectos_discrecionales.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `agrupar_interrupciones_subordinados_reuniones_regulares` | similitud_texto | 0.355 | 0.000 | 0.494 | SANO |
+| `agrupar_tareas_semejantes_aprovechar_preparacion` | similitud_texto | 0.368 | 0.000 | 0.456 | SANO |
+| `preparar_respuestas_estandar_interrupciones_repetidas` | similitud_texto | 0.355 | 0.000 | 0.437 | SANO |
+| `decir_no_trabajo_excede_capacidad` | similitud_texto | 0.377 | 0.000 | 0.409 | SANO |
+| `buscar_regularidad_bloques_iguales_trabajo_mando` | similitud_texto | 0.375 | 0.000 | 0.404 | SANO |
+| `identificar_paso_limitante_jornada_desfases` | similitud_texto | 0.394 | 0.000 | 0.392 | SANO |
+
+**Los seis vecinos son los seis de su bloque y las seis lineas se pasaron tal cual.** Sin arista. **Es el corte del tope: aqui acaba la tanda.**
