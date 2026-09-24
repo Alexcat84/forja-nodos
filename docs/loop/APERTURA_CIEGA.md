@@ -1,403 +1,376 @@
-# APERTURA CIEGA DE LA VUELTA 64 (SANEAMIENTO, `grove_high_output`), LA QUE EL ARNES NUMERA `2` EN ESTA CORRIDA
+# APERTURA CIEGA DE LA VUELTA 65, lote 7 (`grove_high_output`), **CLASE INSERCION**
 
-*Auditor `claude-opus-5-5`, 23 sep 2026, fase ciega. Linea **serial**, rama `extraccion-mundo-11`.
-Modo austero (`D.47`). Toda cifra de esta pagina sale de un instrumento corrido en esta fase y lleva
-su salida pegada al lado (`D.38.3`); toda conclusion sobre contenido va en linea aparte marcada
-`LECTURA`.*
+*Auditor `claude-opus-5-5`, fase ciega, 23 sep 2026, la que el arnes numera `VUELTA 1` en la corrida que
+arranco a las `21:50`. Linea **serial**, rama `extraccion-mundo-11`, arbol en `f770c8c`. **Es la segunda fase
+ciega de la `65`**: la primera se paro a las `21:04` para reiniciar el equipo y quedo anulada sin sello
+(`docs/loop/archivo/interrumpidas/2026-09-23-v65-fase-ciega/LEEME.md`: *no se reutiliza nada de aqui*). **No
+he abierto sus clases ni sus partes**: todo lo de esta pagina sale de `.v65aud/`, escrito y corrido en esta
+fase. Modo austero (`D.47`).*
 
-## 0. LA HERENCIA (`D.40`)
+## 0. **LA HERENCIA** (`D.40`)
 
-    ACTA ANTERIOR LEIDA: 291e816f205a74483056cffaf06038e3dc242b6b
-    HEREDADO 1: NO APLICA: R5 es del extractor y se comprueba en su reporte de la 64, retirado en esta fase
-    HEREDADO 2: CUMPLIDO
+ACTA ANTERIOR LEIDA: 37ecde5c2c542fb52426e7fac85127efb5e226d7
 
-**HEREDADO 1 (`R5`, del extractor): NO APLICA en esta fase.** `R5` es un remedio **del extractor** y
-su sitio de comprobacion, escrito en la `ACTA 62` `62.13`, es *el reporte de la `64`*. **Ese reporte
-esta retirado del arbol en esta fase** (`D.34.2`) y no lo recupero, asi que no hay nada que medir
-aqui: se mide en mi turno normal, con `.v63aud/pegado63.py` apuntado al tramo de la `64`.
-
-    $ ls docs/loop/REPORTE.md
-    ls: cannot access 'docs/loop/REPORTE.md': No such file or directory
-
-**Y aun asi me aplico su letra**: cada bloque `$` de esta pagina lleva lo que el comando imprimio y
-nada mas; si alguno va cortado, se corta por el final y lo dice dentro del bloque con
-`(recortado, entero en <fichero>)`.
-
-**HEREDADO 2 (`R8`, mio): CUMPLIDO.** Mi metrica de fidelidad (seccion `3`) va con su **poblacion
-escrita en el rotulo**: *los pasos de las seis fichas TAL COMO EL EXTRACTOR LAS ESCRIBIO, en su
-version al abrir la vuelta `64` (`067c9df`)*, que es la poblacion que cuenta `PASOS INVENTADOS POR
-CAPITULO` (`8`: pasos escritos). **No he medido el material corregido por la `64`**, y ninguna cifra
-de esta pagina lleva el rotulo de la metrica encima de otra poblacion. Donde mido otra cosa (el
-barrido de vecinos sobre las fichas de HOY, seccion `5`), el rotulo dice cual.
-
-## 1. LO QUE ESTE TURNO NO VE, Y LO QUE SI VIO SIN BUSCARLO (`D.57`)
-
-**La linea del arnes esta en el `loop.log` y la compruebo ahi:**
-
-    $ grep -n '2026-09-23 10:40:19. VUELTA 2 : APERTURA CIEGA' docs/loop/loop.log
-    5014:[2026-09-23 10:40:19] VUELTA 2 : APERTURA CIEGA (claude-opus-5-5), retirados: REPORTE.md ultimo_extractor.json ultimo_auditor.json CREDITO_serial.jsonl
+HEREDADO 1: NO APLICA en esta fase. **Motivo:** `R5` es un remedio **del extractor** y se mide **sobre su
+reporte de la `65`** (`ACTA 63` `63.11`: *el reporte de la `65`, con `.v64ext/pegado64.py` y
+`.v64aud/normal/bloques_mudos.py`*), y el reporte **no esta en el arbol**: el arnes lo retiro para esta fase
+(`D.34.2`) y no lo recupero por ninguna via. **Se mide en mi turno normal**, con los dos instrumentos y la
+cabecera del tramo cambiada a la vuelta `65`. Lo que si esta en mi mano lo cumplo en mi propia pagina:
+**cada bloque `$` de esta apertura lleva la salida entera de su comando**, copiada de su fichero de
+`.v65aud/`.
 
     $ ls docs/loop/REPORTE.md docs/loop/ultimo_extractor.json docs/loop/ultimo_auditor.json docs/loop/CREDITO_serial.jsonl
     ls: cannot access 'docs/loop/REPORTE.md': No such file or directory
     ls: cannot access 'docs/loop/ultimo_extractor.json': No such file or directory
     ls: cannot access 'docs/loop/ultimo_auditor.json': No such file or directory
     ls: cannot access 'docs/loop/CREDITO_serial.jsonl': No such file or directory
+    $ grep -n "VUELTA 1 : APERTURA CIEGA" docs/loop/loop.log | tail -1
+    5251:[2026-09-23 21:50:18] VUELTA 1 : APERTURA CIEGA (claude-opus-5-5), retirados: REPORTE.md ultimo_extractor.json ultimo_auditor.json CREDITO_serial.jsonl
 
-**Los cuatro que la linea nombra estan fuera. `loop.log` esta dentro**, como dice la linea y en contra
-del parrafo `AVISO` del prompt, que lo cuenta entre los retirados. **Manda la linea del arnes** (`D.57`),
-y lo digo para que la contradiccion del prompt no viaje.
+**LA HUELLA** es la que el prompt me entrega; **no la he recomputado**, porque `forja.py herencia` lee en esta
+fase un fichero retirado (`d146`) y no lo corro aqui.
 
-**TRES COSAS QUE ESTE TURNO VIO SIN BUSCARLAS, Y LAS DECLARO PORQUE UNA LECTURA CIEGA QUE LAS CALLA NO
-ES CIEGA:**
+## 1. **LO QUE VI SIN BUSCARLO, Y LO DIGO ANTES DE MEDIR** (`d146`)
 
-1. **Los asuntos de los dos commits del extractor de la `64`.** Me llegaron en la foto de `git status`
-   que el propio entorno pone al principio de mi contexto, y los volvi a ver al correr `git log` para
-   fechar las fichas. El de `6e42f06` resume su fidelidad de `d005` con una cifra, y el de `997054d`
-   resume su cierre. **No los busque, pero los he leido antes de clasificar**, asi que mi seccion `3`
-   **no puede certificar que sea independiente de esa cifra**. Lo que si puedo decir es como la hice:
-   paso a paso contra `cap_03`, con la linea al lado en `.v64aud/fidelidad.tsv`, y las dos dudas que
-   me quedan las dejo como DUDA en vez de resolverlas hacia ningun numero. **LECTURA:** la foto de
-   `git status` del entorno es una fuga de `D.34.2` que el arnes no controla; el asunto de un commit
-   del extractor es un resumen de su reporte.
-2. **La carpeta `.v64ext/` del extractor esta en el arbol, y dentro hay `reporte_t1_t2.md`,
-   `reporte_t3.md`, `reporte_t3b.md`, `reporte_t4.md` y `reporte_t5.md`.** Lo se porque liste la raiz y
-   esa carpeta **por nombre**; **no he abierto ningun fichero de `.v64ext/`**. **LECTURA:** son el
-   reporte en trozos, y `D.34.2` retira `REPORTE.md` pero no sus borradores. Lo dejo escrito para el
-   dueno del arnes, **sin doctrina nueva** (`D.55`): es un hueco de la retirada, no una regla.
-3. **`python forja.py herencia` corrido en esta fase dice `heredados : 0` y *LINEA RECIEN NACIDA***,
-   porque lee `CREDITO_serial.jsonl` y ese fichero esta retirado. **El prompt me entrega `2`**, y los
-   declaro los dos arriba. **LECTURA:** el instrumento y el prompt no miden lo mismo en la fase ciega;
-   el prompt lo calculo antes de retirar. No es mio arreglarlo (`D.45`).
+**La foto de `git status` que el entorno me pone delante trae los asuntos de los commits del extractor**, y
+uno es el cierre de su vuelta: `d122a40` *Vuelta 65 cerrada: las 20 filas de Grove insertadas una por vez
+(grafo 366, bandeja 71), 55 registros en la bitacora, 7 aristas por lectura cableadas, pasos inventados cap_02
+4 de 50 y cap_03 2 de 108, guardas en verde*. **Lo lei antes de medir nada.** Es el tercer hueco de `d146`,
+ya anotado por la `ACTA 63`, y no lo arreglo yo (`D.45`).
 
-## 2. EL ESTADO, MEDIDO EN ESTA FASE
+**LO QUE HAGO CON ELLO:** ninguna cifra de esta pagina sale de ese asunto. **Todas salen de un instrumento
+corrido en esta fase**, con su salida al lado, y donde coinciden con el asunto lo digo como coincidencia y no
+como fuente. **Las clases no las toca**: el asunto no nombra ningun veredicto ni ningun vecino. **No he
+abierto `bitacora/VEREDICTOS.jsonl` por dentro**: de ella solo cuento lineas.
 
-    $ wc -l dataset/nodos.jsonl
-    346 dataset/nodos.jsonl
+## 2. **EL ALCANCE, Y EL CENSO QUE LO SOSTIENE**
 
-    $ for b in cuarentena/*/; do echo "$b $(ls $b*.json 2>/dev/null | wc -l)"; done
-    cuarentena/_derivadas/ 2
-    cuarentena/_insertados/ 0
-    cuarentena/ensayo_referencia_163/ 163
-    cuarentena/gerber_emyth/ 22
-    cuarentena/grove_high_output/ 91
-    cuarentena/marquet_turn_the_ship/ 3
-    cuarentena/onu_consumidor/ 0
-    cuarentena/scott_radical_candor/ 0
-    cuarentena/smart_who/ 0
-    cuarentena/zhuo_manager/ 0
+**La tanda son las filas `1` a `20` del orden comprobado** (encargo de la `65`, TAREA 2 punto 2), que son
+las `20` primeras lineas de `.v64ext/los22.txt`: siete de `cap_02` y trece de `cap_03`. Las filas `21` y `22`
+(`variar_frecuencia_inspeccion_nivel_calidad` y `simplificar_trabajo_reducir_numero_pasos`) **no entraban**.
 
-**`346` en el grafo y `91` en la bandeja de Grove**, los del encargo. La poblacion del barrido
-(`D.38.4`) la escribe la propia aduana en la cabecera de cada informe de la seccion `5`.
+    $ wc -l dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl config/pares_mutuos.jsonl
+        366 dataset/nodos.jsonl
+        795 bitacora/VEREDICTOS.jsonl
+          1 config/pares_mutuos.jsonl
+       1162 total
+    $ ls cuarentena/grove_high_output/*.json | wc -l
+    71
+    $ ls cuarentena/_insertados/grove_high_output/*.json | wc -l
+    21
+    $ ls cuarentena/grove_high_output/ | grep -E "variar_frecuencia|simplificar_trabajo"
+    simplificar_trabajo_reducir_numero_pasos.json
+    variar_frecuencia_inspeccion_nivel_calidad.json
 
-**EL ALCANCE DE MI LECTURA ES EL DEL ENCARGO DE LA `64`** (`PROMPT_SIGUIENTE.md`, que es mio): la
-fidelidad de los seis de `d005` (`T2.a`), sus vecinos (`T2.b`), los pares de los nueve `BLOQUEARIA` de
-`d140` (`T3`) y los pares de `d141` (`T4`). **Las seis fichas las leo en su version al abrir la
-vuelta**, sacada de git, **y no la de hoy**, para no ver en ellas la clase que el extractor les puso:
+(`.v65aud/censo.txt`.) **LECTURA:** contra el censo de la `ACTA 63` `63.1` (`346`, `740`, `1`, `91`), el grafo
+sube `20`, la bandeja baja `20`, la bitacora gana `55` lineas y los pares mutuos no se mueven. **De los `21` de
+`_insertados`, `20` son la tanda** (el instrumento de la seccion `3` encuentra los `20` ahi) y el
+otro es `revisar_tres_preguntas_valor_carrera`, que ya estaba en `997054d`
+(`git ls-tree --name-only 997054d cuarentena/_insertados/grove_high_output/` da solo ese, en
+`.v65aud/insertados_antes.txt`). **Las dos filas que no entraban siguen en
+la bandeja.** Cuanto de los `55` es de cada candidato no lo mido aqui: seria abrir la bitacora.
 
-    $ for id in archivar_indicadores_resolver_problemas construir_grafico_escalonado_pronosticos construir_indicador_tendencia_patron elegir_fabricar_pedido_pronostico elegir_indicador_salida_trabajo_administrativo emparejar_indicadores_efecto_contraefecto; do echo "$id: $(git log --format='%h' -- cuarentena/grove_high_output/$id.json | tr '\n' ' ')"; done
-    archivar_indicadores_resolver_problemas: a84b84e 
-    construir_grafico_escalonado_pronosticos: 6e42f06 a84b84e 
-    construir_indicador_tendencia_patron: 6e42f06 a84b84e 
-    elegir_fabricar_pedido_pronostico: 6e42f06 a84b84e 
-    elegir_indicador_salida_trabajo_administrativo: 6e42f06 a84b84e 
-    emparejar_indicadores_efecto_contraefecto: 6e42f06 a84b84e 
+**Y DESDE QUE LA `65` CERRO, EL DATO NO SE HA MOVIDO; LA BANDEJA DE OTRO LIBRO, SI:**
 
-    $ git diff --stat a84b84e 067c9df -- $(for id in archivar_indicadores_resolver_problemas construir_grafico_escalonado_pronosticos construir_indicador_tendencia_patron elegir_fabricar_pedido_pronostico elegir_indicador_salida_trabajo_administrativo emparejar_indicadores_efecto_contraefecto; do echo cuarentena/grove_high_output/$id.json; done) | wc -l
+    $ git diff --stat d122a40 HEAD -- dataset/ bitacora/ censos/ config/pares_mutuos.jsonl cuarentena/grove_high_output cuarentena/_insertados | wc -l
     0
+    $ git diff --name-status d122a40 HEAD -- cuarentena/ | awk '{print $1, $2}' | sed 's#cuarentena/\([^/]*\)/.*#\1#' | sort | uniq -c
+         17 A marquet_turn_the_ship
+          3 M marquet_turn_the_ship
 
-**`067c9df` es el commit de apertura de la `64` y las seis fichas estan ahi igual que el `16` sep**:
-esa es la version que escribio el extractor que las extrajo. `archivar_indicadores_resolver_problemas`
-**no tiene commit de la `64`**; las otras cinco si (`6e42f06`). Las copias que leo estan en
-`.v64aud/antes_<id>.json`.
+(`.v65aud/desde_d122a40.txt`.) **LECTURA:** la cosecha de Marquet (`f770c8c`, `21:49`) trajo a esta rama `17`
+candidatos nuevos en `cuarentena/marquet_turn_the_ship/` (la lista en `.v65aud/marquet_nuevos.txt`) **despues
+de que la `65` insertara**. **Mi barrido los tiene en su poblacion y la aduana de la `65` no los tenia.** No es
+falta de nadie; es la razon de que la seccion `6` los cuente aparte.
 
-## 3. LA FIDELIDAD DE LOS SEIS DE `d005`, ENTERA Y SIN MUESTRA (`D.30`, encargo `T2.a`)
+## 3. **LO QUE ENTRO ES LO QUE SE LEYO** (`D.58`)
 
-**Cada paso contra su linea de `fuentes/grove_high_output/cap_03.md`**, una fila por paso en
-`.v64aud/fidelidad.tsv` con la linea y la frase del libro que lo sostiene. **TRANSCRIPCION** si el libro
-pone el medio, la etapa o el objeto; **PUENTE** si lo escribio el extractor.
+`D.58` pide la relectura de fidelidad **entera** del lote en la vuelta de insercion, sobre lo que entra, y la
+`ACTA 63` `63.1` dejo escrito que **ya estaba hecha sobre esos mismos bytes** (`b63405c` para los `16` de la
+`63`, `997054d` para los seis de `d005`). **Lo compruebo del lado del grafo**, que es el que importa ahora: el
+nodo que vive hoy en `dataset/nodos.jsonl` contra la ficha del commit de su lectura, campo a campo, y el
+fichero de `_insertados` contra ese mismo blob.
 
-### 3.1. **`PASOS INVENTADOS POR CAPITULO`, `cap_03`, POBLACION: LOS `41` PASOS DE LAS SEIS FICHAS TAL COMO LAS ESCRIBIO EL EXTRACTOR (version de `067c9df`, antes de cualquier correccion de la `64`). MI LECTURA CIEGA**
+    $ python .v65aud/entra_lo_leido.py | tail -6
+    nodos de la tanda en el grafo iguales a su lectura entera: 20 | distintos: 0
+    fichas de _insertados con el mismo blob que su lectura entera: 20 | distintas: 0
+    capitulo  cand pasos    P   por100
+    cap_02       7    50    4     8.00
+    cap_03      13   108    2     1.85
+    tanda       20   158    6     3.80
 
-    $ python .v64aud/contar_fidelidad.py
-    candidato                                        ficha filas   T   P  DUDA
-    archivar_indicadores_resolver_problemas              4     4   4   0     0
-    construir_grafico_escalonado_pronosticos             8     8   8   0     0
-    construir_indicador_tendencia_patron                 6     6   6   0     0
-    elegir_fabricar_pedido_pronostico                    9     9   9   0     0
-    elegir_indicador_salida_trabajo_administrativo       7     7   7   0     0
-    emparejar_indicadores_efecto_contraefecto            7     7   6   1     2
-    total cap_03, seis de d005                          41    41  40   1     2
-    PUENTE sobre pasos escritos: 1 de 41 = 2.44 por ciento
-    si las 2 DUDA cayesen a PUENTE: 3 de 41 = 7.32 por ciento
+(El `tail` va en el comando y el bloque trae todo lo que imprime; la salida del instrumento sin `tail`, con una
+fila por candidato, esta en `.v65aud/entra_lo_leido.txt`.)
 
-**El instrumento cuenta los pasos de cada ficha de `067c9df` y comprueba que mi tabla trae una fila
-por paso, ni mas ni menos: cero `DESCUADRE`.** Sale **`1` PUENTE de `41`**, y **`3` de `41` si las dos
-dudas caen**. Las dos cifras quedan por debajo del `10` de `8.1`, asi que **el escalon no se mueve con
-ninguna de las dos lecturas**.
+**LECTURA:** los `20` nodos del grafo tienen **el mismo titulo, las mismas condiciones, los mismos pasos y el
+mismo entregable** que la ficha sobre la que se leyo su fidelidad entera, y el registro de `_insertados` es el
+mismo blob. **La lectura entera que `D.58` pide esta hecha sobre lo que entro, y no se repite.**
 
-**Y NO ES LA METRICA DE LA VUELTA:** la vuelta `64` es de saneamiento y mide seis fichas de `cap_03`, no
-un capitulo entero. **El rotulo dice lo que medi y nada mas**, que es lo que `R8` me pide.
+## 4. **`PASOS INVENTADOS POR CAPITULO`, SOBRE LO QUE ENTRO** (`8`, `8.2`)
 
-### 3.2. **EL PUENTE Y LAS DOS DUDAS, LOS TRES EN `emparejar_indicadores_efecto_contraefecto`**
+La misma salida de la seccion `3`, **y rotulo su poblacion antes de la cifra** (`R8`, que la `ACTA 63` retiro
+cumplido y yo sigo usando): **los pasos de los `20` nodos tal como viven hoy en el grafo, y los PUENTE que las
+lecturas enteras YA ADJUDICADAS les encontraron** (`ACTA 62` `62.5`: los cuatro de `equilibrar`, clausula
+reescrita, columna `verbo` de `.v63ext/fidelidad.txt`; `ACTA 63` `63.3.a`: `construir_grafico` paso `5` y
+`elegir_fabricar` paso `8`, filas `P` de `.v64ext/fidelidad.tsv`). **No es una lectura mia nueva: es la cuenta
+de las adjudicadas, hecha por instrumento.**
 
-| paso | mi clase | la linea del libro, y por que |
-|---|---|---|
-| `1`, *Antes de soltar un indicador, mira hacia donde va a dirigir la atencion, porque el indicador dirige la atencion... bicicleta* | **PUENTE de clausula** | L31 da **una propiedad** (*Indicators tend to direct your attention toward what they are monitoring... you will probably steer it where you are looking*) y **su remedio** (*you should guard against overreacting. This you can do by pairing indicators*). **La inspeccion previa, *antes de soltar... mira*, no la manda el libro**: el acto que manda es emparejar. El porque del paso si es del libro, y por eso es de clausula y no de paso entero |
-| `2`, *Nombra el efecto que ese indicador va a empujar* | **TRANSCRIPCION, con DUDA** | *nombrar* no esta como orden; **pero el libro hace ese razonamiento en su ejemplo** (*you are likely to take action to drive your inventory levels down, which is good up to a point*) **y pone el objeto**, *effect*. Por `D.30` (*el libro pone el objeto*) va a TRANSCRIPCION. El lector estricto lo llama PUENTE, y por eso esta la segunda cifra |
-| `3`, *Nombra el contraefecto, que es lo que se estropea si ese empuje se pasa de largo* | **TRANSCRIPCION, con la misma DUDA** | *your inventories could become so lean that you can't react to changes in demand without creating shortages*, y el objeto *counter-effect* |
+| capitulo | que es | pasos que entraron | PUENTE adjudicados | por ciento |
+|---|---|---:|---:|---:|
+| `cap_02` | Cap. 1, *The Basics of Production* | `50` | `4` | **`8,00`** |
+| `cap_03` | Cap. 2, *Managing the Breakfast Factory*, sin las filas `21` y `22` | `108` | `2` | **`1,85`** |
+| tanda | | `158` | `6` | `3,80` |
 
-**LECTURA:** los tres primeros pasos de `emparejar` montan un procedimiento de entrada (mirar, nombrar,
-nombrar) sobre un parrafo que da una propiedad, un ejemplo y un remedio. **Es el reparto de `D.30`**: el
-puente aparece donde el parrafo es mas pobre en actos. Los pasos `4` a `7` son del libro frase a frase
-(L31 y L33).
+**LECTURA:** los dos capitulos por debajo del `10`, y **los seis puentes entraron ya reescritos** (seccion `3`:
+lo que entro es la ficha corregida). **`cap_02` repite la cifra de la `ACTA 62` `62.6` porque entraron sus
+siete**; `cap_03` no es ni el `0 de 80` de la `62` ni el `2 de 41` de la `63`, porque aqui van **nueve de la
+`63` menos las dos filas que no entraban, mas los seis de `d005`**. **Coincide con el asunto de `d122a40`** que
+declare en la seccion `1`; la fuente es el instrumento.
 
-**LOS OTROS CINCO, LIMPIOS, Y LO QUE MIRE DE CERCA PARA DECIRLO:** `archivar` paso `1` (*en vez de dejar
-que se pierdan segun pasan los dias*) es la negacion del mismo acto de L99 (*If you do not
-systematically collect and maintain an archive*), no un acto nuevo; `construir_grafico` paso `3`
-(*marca con un asterisco*) sale de la leyenda de la figura, L95 (*\* means the actual number for that
-month*); `construir_grafico` paso `5` convierte en orden el ejemplo de L93, que el propio libro abre
-diciendo que ahi es donde el grafico rinde mas; `elegir_fabricar` paso `3` (*compara tu plazo con el de
-tu competencia*) es la condicional de L105 puesta como etapa. **Los cuatro: TRANSCRIPCION.**
+**MI RELECTURA DE HOY, Y SU LIMITE.** He vuelto a leer `cap_02` y `cap_03` enteros (`79` y `179` lineas) y los
+`158` pasos tal como viven en el grafo (`.v65aud/pasos_20.txt`), **de corrido y sin fila por paso**: no
+encuentro ningun paso que hoy lea como PUENTE en la version que entro. **No lo publico como cifra**, porque no
+lleva instrumento de fila por paso; lo digo como lectura para que el turno normal sepa que no traigo ninguna
+discrepancia de fidelidad que adjudicar.
 
-## 4. LA CLASE DE CADA UNO DE LOS SEIS COMO NODO, CON SUS LINEAS
+## 5. **LAS ARISTAS QUE LA `ACTA 63` DEJO ADJUDICADAS, CONTRA LAS QUE VIVEN** (`D.29`, `D.53`)
 
-| candidato | lineas | mi clase |
-|---|---|---|
-| `archivar_indicadores_resolver_problemas` | L99 | **nodo**, delgado: `4` pasos de un solo parrafo, pero con su inventario (recoger, banco, repasar, buscar desviaciones) |
-| `construir_grafico_escalonado_pronosticos` | L91 a L97 | **nodo**, inventario rico |
-| `construir_indicador_tendencia_patron` | L89 | **nodo**; un solo parrafo con cinco actos |
-| `elegir_fabricar_pedido_pronostico` | L103 a L109 | **nodo**, inventario rico |
-| `elegir_indicador_salida_trabajo_administrativo` | L35 a L67 | **nodo**; el paso `4` es la tabla de L39 a L67 entera |
-| `emparejar_indicadores_efecto_contraefecto` | L31 a L33 | **nodo**, con el puente de `3.2` |
+    $ python .v65aud/aristas.py
+    VIVE      construir_flujo_produccion_paso_limitante        -> rehacer_flujo_paso_limitante_capacidad           (veredictos_listos CONTINUA en construir_flujo_produccion_paso_limitante)
+    VIVE      construir_grafico_escalonado_pronosticos         -> casar_flujo_fabricacion_flujo_ventas             (aristas_lectura SOSTENGO)
+    VIVE      construir_indicador_tendencia_patron             -> dimensionar_plantilla_administrativa_pronostico  (aristas_lectura SOSTENGO)
+    VIVE      detectar_arreglar_fallo_etapa_menor_valor        -> dimensionar_inventario_materia_prima_reposicion  (veredictos_listos CONTINUA en dimensionar_inventario_materia_prima_reposicion)
+    NO VIVE   detectar_arreglar_fallo_etapa_menor_valor        -> supervisar_tarea_delegada_etapa_menor_valor      (veredictos_listos CONTINUA en detectar_arreglar_fallo_etapa_menor_valor)
+    VIVE      dimensionar_inventario_materia_prima_reposicion  -> decidir_aceptar_rechazar_material_defectuoso     (aristas_lectura SOSTENGO)
+    VIVE      elegir_fabricar_pedido_pronostico                -> casar_flujo_fabricacion_flujo_ventas             (aristas_lectura SOSTENGO)
+    VIVE      elegir_indicador_salida_trabajo_administrativo   -> dimensionar_plantilla_administrativa_pronostico  (aristas_lectura SOSTENGO)
+    VIVE      emparejar_indicadores_efecto_contraefecto        -> elegir_indicador_salida_trabajo_administrativo   (veredictos_listos CONTINUA en elegir_indicador_salida_trabajo_administrativo)
+    VIVE      rehacer_flujo_paso_limitante_capacidad           -> equilibrar_capacidad_personal_inventario_plazo   (aristas_lectura SOSTENGO)
+    VIVE      representar_actividad_caja_negra_ventanas        -> construir_indicador_linealidad_alerta_temprana   (aristas_lectura SOSTENGO)
+    VIVE      representar_actividad_caja_negra_ventanas        -> construir_indicador_tendencia_patron             (aristas_lectura SOSTENGO)
+    la de cola (detectar_arreglar_fallo_etapa_menor_valor -> supervisar_tarea_delegada_etapa_menor_valor): no vive
+    esperadas 12 | viven 11 | no viven 1 | vivas sin adjudicar 0
 
-## 5. EL BARRIDO DE VECINOS DE LOS SEIS DE `d005`, SOBRE GRAFO MAS BANDEJAS Y CORRIDO EN ESTA FASE (`D.38.4`)
+(`.v65aud/aristas.txt`; mide `nodos_previos` y `nodos_siguientes` de los `20` en el grafo.) **LECTURA:** las
+`8` filas `SOSTENGO` de `.v64ext/aristas_lectura.txt` viven las `8`, y las tres `CONTINUA` de los veredictos
+listos cuyo hijo esta en la tanda viven las tres. **La unica que no vive es la que el encargo mando dejar EN
+COLA** (el hijo, `supervisar_tarea_delegada_etapa_menor_valor`, es de `cap_04` y sigue en la bandeja), **y no
+hay ninguna arista entre los `20` que nadie adjudicara.** De las `8` `SOSTENGO`, la de
+`construir_indicador_tendencia_patron` a `dimensionar_plantilla_administrativa_pronostico` era la que iba
+**tambien** como `CONTINUA` en los veredictos (encargo, TAREA 3): **las otras siete son las que solo se
+cablean por lectura.** Por que medio entro cada una (`arista` o veredicto) **no lo mido aqui**: esta en la
+bitacora y en el reporte.
 
-**POBLACION DE ESTA MEDIDA, Y NO ES LA DE LA SECCION `3`:** los seis informes corren sobre las fichas
-**tal como estan HOY en la bandeja**, cinco de ellas con commit de la `64`. **El informe no imprime
-pasos, solo ids, seniales y numero de paso**, asi que correrlo no me ensenia que corrigio el extractor.
-Lo corri porque `d031` dice que retocar una ficha mueve su senial, y la lista de pares del encargo es
-de las fichas de `067c9df`.
+## 6. **MI BARRIDO DE VECINOS, SOBRE GRAFO MAS BANDEJAS** (`D.38.4`, `D.38.5`)
 
-    $ cat .v64aud/barrido.log
-    INICIO 2026-09-23 10:42:57
-    archivar_indicadores_resolver_problemas rc=0 segundos=826
-    construir_indicador_tendencia_patron rc=0 segundos=1326
-    emparejar_indicadores_efecto_contraefecto rc=0 segundos=1519
-    elegir_indicador_salida_trabajo_administrativo rc=0 segundos=1656
-    construir_grafico_escalonado_pronosticos rc=0 segundos=1789
-    elegir_fabricar_pedido_pronostico rc=0 segundos=1979
-    TODOS TERMINADOS 2026-09-23 11:15:56
+**El metodo.** `.v65aud/barrido_uno.py` toma la ficha de cada uno de los `20` tal como entro
+(`cuarentena/_insertados/grove_high_output/`), la normaliza como la normaliza la aduana y le pasa
+`aduana.buscar_vecinos` de `src/aduana.py`, **el mismo que usa `insertar`**, contra `dataset/nodos.jsonl` mas
+`aduana.poblacion_de_bandejas()` de hoy, que descarta `_insertados` y `_derivadas`. **El candidato no se mide
+contra si mismo**: lo excluye `buscar_vecinos` por su id. `.v65aud/barrer.sh` los corrio **cinco a la vez y no
+mas**, y los recogio todos dentro de este turno:
 
-    $ python .v64aud/vecinos_hoy.py
-    BLOQUEARIA  archivar_indicadores_resolver_problemas  hoy poblacion 462 | archivo: BLOQUEARIA poblacion 462
-        SIGUE             cerrar_brecha_dos_preguntas_estrategia           similitud_texto            texto 0.353 familia 0.000 paso 0.393  paso 4 del candidato contra paso 6
-        SIGUE             construir_indicador_tendencia_patron             similitud_texto            texto 0.361 familia 0.143 paso 0.420  paso 2 del candidato contra paso 3
-        SIGUE             revisar_tres_preguntas_valor_carrera             similitud_texto            texto 0.369 familia 0.000 paso 0.414  paso 2 del candidato contra paso 1
-        SIGUE             vencer_sindrome_grupo_pares_autoconfianza        similitud_texto            texto 0.364 familia 0.000 paso 0.405  paso 1 del candidato contra paso 5
-    BLOQUEARIA  construir_grafico_escalonado_pronosticos  hoy poblacion 462 | archivo: BLOQUEARIA poblacion 462
-        SIGUE             construir_indicador_tendencia_patron             similitud_texto            texto 0.365 familia 0.143 paso 0.453  paso 4 del candidato contra paso 5
-        SIGUE             elegir_fabricar_pedido_pronostico                similitud_texto            texto 0.393 familia 0.143 paso 0.453  paso 7 del candidato contra paso 4
-        SIGUE             emparejar_indicadores_efecto_contraefecto        similitud_texto            texto 0.378 familia 0.000 paso 0.434  paso 1 del candidato contra paso 3
-    BLOQUEARIA  construir_indicador_tendencia_patron  hoy poblacion 462 | archivo: BLOQUEARIA poblacion 462
-        SIGUE             archivar_indicadores_resolver_problemas          similitud_texto            texto 0.365 familia 0.143 paso 0.427  paso 2 del candidato contra paso 1
-        SIGUE             construir_grafico_escalonado_pronosticos         similitud_texto            texto 0.362 familia 0.143 paso 0.461  paso 5 del candidato contra paso 4
-        NUEVO             dimensionar_plantilla_administrativa_pronostico  similitud_texto            texto 0.373 familia 0.000 paso 0.405  paso 5 del candidato contra paso 6
-        NUEVO             elegir_indicador_salida_trabajo_administrativo   similitud_texto            texto 0.378 familia 0.125 paso 0.378  paso 5 del candidato contra paso 3
-        NUEVO             emparejar_indicadores_efecto_contraefecto        similitud_texto            texto 0.393 familia 0.143 paso 0.427  paso 5 del candidato contra paso 2
-        NUEVO             equilibrar_capacidad_personal_inventario_plazo   similitud_texto            texto 0.353 familia 0.000 paso 0.424  paso 1 del candidato contra paso 4
-    BLOQUEARIA  elegir_fabricar_pedido_pronostico  hoy poblacion 462 | archivo: BLOQUEARIA poblacion 462
-        SIGUE             construir_grafico_escalonado_pronosticos         similitud_texto            texto 0.387 familia 0.143 paso 0.440  paso 4 del candidato contra paso 7
-        NUEVO             emparejar_indicadores_efecto_contraefecto        similitud_texto            texto 0.362 familia 0.000 paso 0.419  paso 2 del candidato contra paso 3
-    BLOQUEARIA  elegir_indicador_salida_trabajo_administrativo  hoy poblacion 462 | archivo: BLOQUEARIA poblacion 462
-        NUEVO             construir_indicador_tendencia_patron             similitud_texto            texto 0.374 familia 0.125 paso 0.403  paso 6 del candidato contra paso 3
-        SIGUE             emparejar_indicadores_efecto_contraefecto        similitud_texto            texto 0.394 familia 0.125 paso 0.489  paso 3 del candidato contra paso 4
-        SIGUE             evaluar_directivo_resultados_fortaleza           paso_contra_nodo           texto 0.170 familia 0.000 paso 0.766  paso 2 del candidato contra paso 1
-    BLOQUEARIA  emparejar_indicadores_efecto_contraefecto  hoy poblacion 462 | archivo: BLOQUEARIA poblacion 462
-        SIGUE             construir_grafico_escalonado_pronosticos         similitud_texto            texto 0.384 familia 0.000 paso 0.446  paso 3 del candidato contra paso 1
-        SIGUE             construir_indicador_tendencia_patron             similitud_texto            texto 0.397 familia 0.143 paso 0.453  paso 3 del candidato contra paso 5
-        NUEVO             dimensionar_plantilla_administrativa_pronostico  similitud_texto            texto 0.355 familia 0.000 paso 0.396  paso 4 del candidato contra paso 2
-        NUEVO             elegir_cinco_indicadores_diarios_fabrica         similitud_texto            texto 0.359 familia 0.125 paso 0.445  paso 4 del candidato contra paso 8
-        SIGUE             elegir_fabricar_pedido_pronostico                similitud_texto            texto 0.367 familia 0.000 paso 0.408  paso 4 del candidato contra paso 1
-        NUEVO             elegir_indicador_salida_trabajo_administrativo   similitud_texto            texto 0.383 familia 0.125 paso 0.468  paso 4 del candidato contra paso 3
-        DEJA DE LEVANTAR  revisar_tres_preguntas_valor_carrera             similitud_texto            texto 0.354 familia 0.000 paso 0.386  paso 2 del candidato contra paso 2
-    pares que siguen: 15 | dejan de levantar: 1 | nuevos: 9
+    $ grep -E "INICIO|TODOS" .v65aud/barrido.log
+    INICIO 2026-09-23 21:52:26
+    TODOS TERMINADOS 2026-09-23 23:46:11
+    $ grep -c 'rc=0' .v65aud/barrido.log
+    20
+    $ sort -t= -k3 -n .v65aud/barrido.log | grep rc= | sed -n '1p;$p'
+    dimensionar_inventario_materia_prima_reposicion rc=0 segundos=841
+    clasificar_trabajo_proceso_montaje_prueba rc=0 segundos=2503
 
-**Las cifras de esas filas son las de HOY**; la fila `DEJA DE LEVANTAR` lleva las del archivo, porque hoy
-no hay. **El `15`, `1` y `9` cuentan filas candidato a vecino**, no pares: un par visto desde los dos
-lados cuenta dos veces ahi. **Los pares distintos los cuenta otro instrumento:**
+**LECTURA:** la poblacion de hoy es `366` del grafo mas `113` de las bandejas (la cabecera de cada
+`.v65aud/barrido_<id>.txt`). **Como los `20` estaban en grafo o en bandeja en cada momento de la `65`, la
+union que midio la aduana al insertar es la misma que mido yo, salvo los `17` de Marquet de la seccion `2`.**
 
-    $ python .v64aud/pares_d005.py
-    pares distintos: archivo 12 | hoy 16 | en los dos 11 | solo archivo 1 | solo hoy 5
-       SOLO ARCHIVO   emparejar_indicadores_efecto_contraefecto | revisar_tres_preguntas_valor_carrera
-       SOLO HOY       construir_indicador_tendencia_patron | dimensionar_plantilla_administrativa_pronostico
-       SOLO HOY       construir_indicador_tendencia_patron | elegir_indicador_salida_trabajo_administrativo
-       SOLO HOY       construir_indicador_tendencia_patron | equilibrar_capacidad_personal_inventario_plazo
-       SOLO HOY       dimensionar_plantilla_administrativa_pronostico | emparejar_indicadores_efecto_contraefecto
-       SOLO HOY       elegir_cinco_indicadores_diarios_fabrica | emparejar_indicadores_efecto_contraefecto
+**EL CRUCE, contra las lineas que la `ACTA 63` dejo adjudicadas** (`.v64ext/veredictos_listos.txt` y, para
+`detectar`, `.v63ext/cmd_02_detectar.sh`). El instrumento **no lee la bitacora**:
 
-**Los seis siguen en `BLOQUEARIA` y la poblacion sigue en `462`.** `archivar...` **no tiene commit de la
-`64` y aun asi sus cifras se mueven** (`0.384` en el archivo, `0.361` hoy, contra `construir_indicador_tendencia`):
-**LECTURA:** es `d031` desde el otro lado, porque el que cambio es el vecino.
+    $ python .v65aud/cruce_barrido.py
+    construir_flujo_produccion_paso_limitante        pob 479 barrido  3 | con linea  3 | sin linea  0 (de marquet nuevo 0) | linea sin vecino hoy 0
+    clasificar_trabajo_proceso_montaje_prueba        pob 479 barrido  1 | con linea  1 | sin linea  0 (de marquet nuevo 0) | linea sin vecino hoy 0
+    rehacer_flujo_paso_limitante_capacidad           pob 479 barrido  3 | con linea  3 | sin linea  0 (de marquet nuevo 0) | linea sin vecino hoy 0
+    equilibrar_capacidad_personal_inventario_plazo   pob 479 barrido  1 | con linea  1 | sin linea  0 (de marquet nuevo 0) | linea sin vecino hoy 0
+    preferir_inspeccion_proceso_prueba_destructiva   pob 479 barrido  4 | con linea  4 | sin linea  0 (de marquet nuevo 0) | linea sin vecino hoy 0
+    dimensionar_inventario_materia_prima_reposicion  pob 479 barrido  2 | con linea  2 | sin linea  0 (de marquet nuevo 0) | linea sin vecino hoy 0
+    detectar_arreglar_fallo_etapa_menor_valor        pob 479 barrido  1 | con linea  1 | sin linea  0 (de marquet nuevo 0) | linea sin vecino hoy 0
+    elegir_cinco_indicadores_diarios_fabrica         pob 479 barrido  0 | con linea  0 | sin linea  0 (de marquet nuevo 0) | linea sin vecino hoy 0
+    emparejar_indicadores_efecto_contraefecto        pob 479 barrido  6 | con linea  6 | sin linea  0 (de marquet nuevo 0) | linea sin vecino hoy 0
+    elegir_indicador_salida_trabajo_administrativo   pob 479 barrido  3 | con linea  3 | sin linea  0 (de marquet nuevo 0) | linea sin vecino hoy 0
+    representar_actividad_caja_negra_ventanas        pob 479 barrido  0 | con linea  0 | sin linea  0 (de marquet nuevo 0) | linea sin vecino hoy 0
+    construir_indicador_linealidad_alerta_temprana   pob 479 barrido  0 | con linea  0 | sin linea  0 (de marquet nuevo 0) | linea sin vecino hoy 0
+    construir_indicador_tendencia_patron             pob 479 barrido  6 | con linea  6 | sin linea  0 (de marquet nuevo 0) | linea sin vecino hoy 0
+    construir_grafico_escalonado_pronosticos         pob 479 barrido  3 | con linea  3 | sin linea  0 (de marquet nuevo 0) | linea sin vecino hoy 0
+    archivar_indicadores_resolver_problemas          pob 479 barrido  4 | con linea  4 | sin linea  0 (de marquet nuevo 0) | linea sin vecino hoy 0
+    elegir_fabricar_pedido_pronostico                pob 479 barrido  2 | con linea  2 | sin linea  0 (de marquet nuevo 0) | linea sin vecino hoy 0
+    casar_flujo_fabricacion_flujo_ventas             pob 479 barrido  0 | con linea  0 | sin linea  0 (de marquet nuevo 0) | linea sin vecino hoy 0
+    dimensionar_plantilla_administrativa_pronostico  pob 479 barrido  6 | con linea  6 | sin linea  0 (de marquet nuevo 0) | linea sin vecino hoy 0
+    decidir_aceptar_rechazar_material_defectuoso     pob 479 barrido  1 | con linea  1 | sin linea  0 (de marquet nuevo 0) | linea sin vecino hoy 0
+    elegir_inspeccion_barrera_monitorizacion         pob 479 barrido  2 | con linea  2 | sin linea  0 (de marquet nuevo 0) | linea sin vecino hoy 0
+    pares del barrido 48 | con linea adjudicada 48 | sin linea 0, de ellos de los 17 de marquet 0 | lineas sin vecino hoy 0 | candidatos sin barrido 0
+    lineas adjudicadas en total: 49 en 17 bloques
 
-**MI CLASE DE LOS SEIS PARES QUE CAMBIAN** (los once que siguen van en la seccion `6.1`):
+(`.v65aud/cruce_barrido.txt`; los `48` pares con sus tres seniales, en `.v65aud/pares48.txt`.)
 
-| par | estado | mi clase | lo que la sostiene |
-|---|---|---|---|
-| `emparejar...` con `revisar_tres_preguntas_valor_carrera` | **deja de levantar** | **SANO** (sin cambios) | ya lo leia SANO en `6.1`. **Si hay un veredicto escrito sobre este par, esta escrito sobre un vecino que la senial ya no levanta**, y eso se tiene que decir (encargo `2.c`) |
-| `construir_indicador_tendencia_patron` con `dimensionar_plantilla_administrativa_pronostico` | **nuevo** | **CONTINUA, madre `construir_indicador_tendencia...`, hijo `dimensionar_plantilla...`** | **es uno de los pares de `d141` que la seccion `7` lee sin senial**: L125, *de facto standards, inferred from the trend data*. **LECTURA:** la senial lo levanta hoy y no lo levantaba el `23` a primera hora; la arista que leia sin senial ahora tiene tambien senial |
-| `construir_indicador_tendencia...` con `elegir_indicador_salida_trabajo_administrativo` | **nuevo** | **SANO** | los dos hablan de salida (*vouchers processed* sale en L37 a L45 y en L89), pero la condicion del indicador de tendencia es *cuando ya tienes nombrada la salida de tu caja*, que es la caja negra de L73 y no la tabla administrativa. Ninguno toma lo que el otro produce |
-| `construir_indicador_tendencia...` con `equilibrar_capacidad_personal_inventario_plazo` | **nuevo** | **SANO** | la tendencia de la salida contra los cuatro costes del tostador (`cap_02` L57 a L61): nada en comun |
-| `emparejar...` con `dimensionar_plantilla...` | **nuevo** | **SANO** | emparejar indicadores contra ajustar la plantilla a la carga pronosticada |
-| `emparejar...` con `elegir_cinco_indicadores_diarios_fabrica` | **nuevo** | **SANO** | ya lo miraba en la seccion `7` sin senial: el quinto dato de `elegir_cinco` pone calidad junto a cantidad (L27), **pero el libro no lo presenta como par de efecto y contraefecto**; eso llega en L31 |
+**LECTURA, en tres partes:**
 
-## 6. MI CLASE DE CADA PAR, POR LA VARA `6.1` Y SOLO ESA (`R7`), CON LOS PASOS DE LOS DOS DELANTE
+1. **Ningun vecino sin linea.** Los `48` pares que la aduana entera levanta hoy a los `20` **tienen los `48`
+   su linea adjudicada** en la `ACTA 63`, y ninguna linea adjudicada de los `20` se queda sin su vecino. **Si la
+   `65` escribio algun veredicto de lectura suya** (encargo, TAREA 3: *si levanta a un vecino que no tiene
+   linea*), **no sale de ningun vecino que la aduana levante hoy**: lo busco en el turno normal.
+2. **Marquet no levanta nada.** Ninguno de los `17` candidatos que la cosecha trajo despues de la `65` es
+   vecino de ninguno de los `20` en el sentido candidato a vecino. **La aduana de la `65` no los tenia y no se
+   ha perdido nada por eso.** El otro sentido (Marquet contra Grove) lo medira la insercion de Marquet cuando le
+   toque; no es de esta vuelta.
+3. **`48` contra `55`.** La bitacora gano `55` lineas (seccion `2`) y hoy levantan `48` pares. **La diferencia
+   no la mido aqui**, porque medirla es abrir la bitacora. *Hipotesis, a comprobar y no cifra*: las `7` aristas
+   que solo se cablean por lectura (seccion `5`), si `arista` escribe su registro en la bitacora. **Y si no son
+   esas, son veredictos que la aduana levanto en su momento y hoy no**, que es justo lo que el turno normal
+   tiene que mirar.
 
-*La senial dijo donde mirar y ahi acabo su trabajo (`D.19`). Los pasos los imprime `.v64aud/pasos.py`,
-que busca cada id en el grafo y en las bandejas y dice de donde lo saca. Un par levantado desde los
-dos lados va en una sola fila. **Las fichas de la tanda de la `63` las leo en su version de hoy**,
-porque la `64` no las toca; **las seis de `d005`, en su version de `067c9df`** (seccion `2`).*
+## 7. **MI LECTURA CIEGA DE LOS PARES** (`1.2`, `6.1`, y solo la vara `6.1`)
 
-### 6.1. **LOS PARES DE LOS SEIS DE `d005`** (encargo `T2.b`; la lista de pares es la de `.v63aud/vecinos_d005.txt`, poblacion `462`, y el barrido de hoy de la seccion `5` dice si sigue en pie)
+**LO PRIMERO, LO QUE YA HABIA VISTO.** Antes de leer ningun par abri, para preparar el cruce, ficheros donde
+esta escrita la clase adjudicada de muchos de estos pares: las primeras `30` lineas de
+`.v64ext/veredictos_listos.txt` (los bloques de `archivar`, `construir_grafico`, `construir_indicador_tendencia`
+y `elegir_fabricar`, y la primera linea del de `elegir_indicador`), `.v64ext/aristas_lectura.txt` entero, la
+salida de `.v64aud/normal/cruce_clases.txt` sin las lineas `COINCIDE`, `.v63ext/cmd_02_detectar.sh` y la salida
+de mi propio `.v65aud/aristas.py`. **Un par cuya clase vi antes de leerlo no lo publico como lectura ciega.**
+Esos son `31` de las `48` filas, y son todos pares **ya adjudicados** en la `ACTA 62` o la `ACTA 63`, que no
+reabro (`D.47`).
 
-| par | mi clase | lo que la sostiene |
-|---|---|---|
-| `emparejar_indicadores_efecto_contraefecto` con `elegir_indicador_salida_trabajo_administrativo` | **CONTINUA, madre `emparejar...`, hijo `elegir_indicador...`** | L35 abre el tramo del hijo con *Nowhere can indicators, and paired indicators, be of more help than in administrative work*: el libro lleva el emparejamiento de L31 al trabajo administrativo. **El paso `5` del hijo** (*emparejalos con una pareja que insista en la calidad*) **es el paso `4` de la madre** (*empareja el indicador con un segundo que mida ese contraefecto*) **aplicado a indicadores de cantidad**, y los pasos `6` y `7` son sus dos ejemplos (L37). Lo que el hijo trae y la madre no: salida y no actividad, lo fisico y contable, la tabla de L39 a L67. **No REPITE: lo que queda fuera es procedimiento en los dos lados** |
-| `construir_grafico_escalonado_pronosticos` con `construir_indicador_tendencia_patron` | **SANO, hermanos** | L91 abre el grafico con *Another sound way to anticipate the future*, y lo compara con *a simple trend chart*: **son dos ventanas distintas**. El grafico trabaja sobre pronosticos sucesivos; el indicador de tendencia, sobre la salida real contra el tiempo y un patron. Ninguno toma lo que el otro produce |
-| `construir_grafico...` con `elegir_fabricar_pedido_pronostico` | **SANO** | los dos hablan de pronostico, pero el grafico lee como se mueve un pronostico y `elegir_fabricar` decide si se fabrica contra el. **El puente entre los dos lo pone `casar_flujo...` (L121), no ninguno de ellos** (seccion `7`) |
-| `construir_grafico...` con `emparejar...` | **SANO** | vocabulario de indicador; procedimientos sin paso comun |
-| `construir_indicador_tendencia_patron` con `archivar_indicadores_resolver_problemas` | **SANO** | el archivo guarda indicadores para cuando algo falla (L99); la tendencia mira la salida contra el tiempo (L89). Ningun paso de uno desarrolla uno del otro |
-| `construir_indicador_tendencia_patron` con `emparejar...` | **SANO** | lo mismo |
-| `elegir_fabricar...` con `emparejar...` | **SANO** | fabricar contra pronostico contra emparejar indicadores: nada que continuar |
-| `archivar...` con `revisar_tres_preguntas_valor_carrera` (grafo) | **SANO** | un archivo de indicadores contra tres preguntas sobre tu carrera. La senial sale del vocabulario (*repasa*, *preguntate*) |
-| `archivar...` con `vencer_sindrome_grupo_pares_autoconfianza` (bandeja) | **SANO** | nada en comun |
-| `archivar...` con `cerrar_brecha_dos_preguntas_estrategia` (bandeja) | **SANO** | nada en comun |
-| `emparejar...` con `revisar_tres_preguntas_valor_carrera` (grafo) | **SANO** | nada en comun |
-| `elegir_indicador_salida_trabajo_administrativo` con `evaluar_directivo_resultados_fortaleza` (grafo, `zhuo_manager`) | **SANO, con frontera declarada** | **comparten un paso casi palabra por palabra**: el `2` del candidato y el `1` del vecino son la regla de Grove, *salida y no actividad, al vendedor por los pedidos y no por las visitas* (L35; Zhuo la toma de Grove). **Sin bascula** (`6.1`): lo que queda fuera es procedimiento en los dos lados, la tabla y la pareja de calidad en uno, las dos mitades del juicio y los dos casos que enganan en el otro. **No REPITE y no CONTINUA**: ninguno toma lo que el otro produce; los dos aplican la misma regla a objetos distintos, una unidad administrativa y un directivo |
+**LOS OTROS `17`, que son `11` pares sin direccion, los lei con los pasos de los dos delante y el libro
+abierto, sin haber visto su clase escrita junto a su nombre en ningun sitio** (y el limite de eso, debajo de la
+tabla):
 
-### 6.2. **LOS PARES DE LOS NUEVE `BLOQUEARIA` DE `d140`** (encargo `T3`; la lista es la de `python .v63aud/vecinos.py`, poblacion `462`)
+    $ python .v65aud/clases_48.py
+    CIEGA  SANO   alta  clasificar_trabajo_proceso_montaje_prueba -> preferir_inspeccion_proceso_prueba_destructiva
+    CIEGA  SANO   alta  construir_flujo_produccion_paso_limitante -> retirar_barreras_politicas_metodo
+    CIEGA  SANO   alta  construir_flujo_produccion_paso_limitante -> preferir_inspeccion_proceso_prueba_destructiva
+    CIEGA  SANO   alta  decidir_aceptar_rechazar_material_defectuoso -> dimensionar_plantilla_administrativa_pronostico
+    CIEGA  SANO   alta  dimensionar_inventario_materia_prima_reposicion -> preferir_inspeccion_proceso_prueba_destructiva
+    CIEGA  SANO   media dimensionar_plantilla_administrativa_pronostico -> elegir_cinco_indicadores_diarios_fabrica
+    CIEGA  SANO   alta  dimensionar_plantilla_administrativa_pronostico -> emparejar_indicadores_efecto_contraefecto
+    CIEGA  SANO   alta  dimensionar_plantilla_administrativa_pronostico -> simplificar_trabajo_reducir_numero_pasos
+    CIEGA  SANO   alta  dimensionar_plantilla_administrativa_pronostico -> decidir_aceptar_rechazar_material_defectuoso
+    CIEGA  SANO   media emparejar_indicadores_efecto_contraefecto -> elegir_cinco_indicadores_diarios_fabrica
+    CIEGA  SANO   alta  emparejar_indicadores_efecto_contraefecto -> dimensionar_plantilla_administrativa_pronostico
+    CIEGA  SANO   alta  preferir_inspeccion_proceso_prueba_destructiva -> clasificar_trabajo_proceso_montaje_prueba
+    CIEGA  SANO   alta  preferir_inspeccion_proceso_prueba_destructiva -> rehacer_flujo_paso_limitante_capacidad
+    CIEGA  SANO   alta  preferir_inspeccion_proceso_prueba_destructiva -> construir_flujo_produccion_paso_limitante
+    CIEGA  SANO   alta  preferir_inspeccion_proceso_prueba_destructiva -> dimensionar_inventario_materia_prima_reposicion
+    CIEGA  SANO   alta  rehacer_flujo_paso_limitante_capacidad -> preferir_inspeccion_proceso_prueba_destructiva
+    CIEGA  SANO   alta  rehacer_flujo_paso_limitante_capacidad -> dimensionar_inventario_materia_prima_reposicion
+    filas del barrido: 48 | con mi lectura ciega: 17 (SANO 17) | con la clase ya vista antes de leer: 31
+    pares no ordenados en mi lectura: 11 | de ellos sin fila en el barrido: 0
 
-    $ python .v63aud/vecinos.py 2>&1 | grep -v '^ENTRARIA' | awk '/^ENTRARIA/{skip=1} /^BLOQUEARIA/{skip=0} !skip'
-    BLOQUEARIA  clasificar_trabajo_proceso_montaje_prueba  poblacion 462  
-        preferir_inspeccion_proceso_prueba_destructiva       similitud_texto              texto 0.372 familia 0.250 paso 0.461  paso 5 del candidato contra paso 6
-    BLOQUEARIA  construir_flujo_produccion_paso_limitante  poblacion 462  
-        retirar_barreras_politicas_metodo                    paso_contra_nodo             texto 0.108 familia 0.000 paso 0.614  paso 4 del candidato contra paso 1
-        rehacer_flujo_paso_limitante_capacidad               similitud_texto, familia_id  texto 0.412 familia 0.429 paso 0.430  paso 9 del candidato contra paso 5
-        preferir_inspeccion_proceso_prueba_destructiva       similitud_texto              texto 0.397 familia 0.000 paso 0.421  paso 8 del candidato contra paso 6
-    BLOQUEARIA  detectar_arreglar_fallo_etapa_menor_valor  poblacion 462  
-        supervisar_tarea_delegada_etapa_menor_valor          familia_id                   texto 0.242 familia 0.333 paso 0.459  paso 2 del candidato contra paso 1
-    BLOQUEARIA  dimensionar_inventario_materia_prima_reposicion  poblacion 462  
-        preferir_inspeccion_proceso_prueba_destructiva       similitud_texto              texto 0.391 familia 0.000 paso 0.403  paso 2 del candidato contra paso 2
-        detectar_arreglar_fallo_etapa_menor_valor            similitud_texto              texto 0.357 familia 0.000 paso 0.401  paso 1 del candidato contra paso 2
-    BLOQUEARIA  preferir_inspeccion_proceso_prueba_destructiva  poblacion 462  
-        clasificar_trabajo_proceso_montaje_prueba            similitud_texto              texto 0.366 familia 0.250 paso 0.461  paso 6 del candidato contra paso 5
-        rehacer_flujo_paso_limitante_capacidad               similitud_texto              texto 0.445 familia 0.000 paso 0.384  paso 1 del candidato contra paso 6
-        construir_flujo_produccion_paso_limitante            similitud_texto              texto 0.410 familia 0.000 paso 0.442  paso 6 del candidato contra paso 8
-        dimensionar_inventario_materia_prima_reposicion      similitud_texto              texto 0.384 familia 0.000 paso 0.417  paso 5 del candidato contra paso 6
-    BLOQUEARIA  rehacer_flujo_paso_limitante_capacidad  poblacion 462  
-        preferir_inspeccion_proceso_prueba_destructiva       similitud_texto              texto 0.460 familia 0.000 paso 0.378  paso 3 del candidato contra paso 2
-        construir_flujo_produccion_paso_limitante            similitud_texto, familia_id  texto 0.419 familia 0.429 paso 0.430  paso 5 del candidato contra paso 9
-        dimensionar_inventario_materia_prima_reposicion      similitud_texto              texto 0.357 familia 0.000 paso 0.387  paso 2 del candidato contra paso 3
-    BLOQUEARIA  decidir_aceptar_rechazar_material_defectuoso  poblacion 462  
-        dimensionar_plantilla_administrativa_pronostico      similitud_texto              texto 0.372 familia 0.000 paso 0.364  paso 4 del candidato contra paso 2
-    BLOQUEARIA  dimensionar_plantilla_administrativa_pronostico  poblacion 462  
-        elegir_cinco_indicadores_diarios_fabrica             similitud_texto              texto 0.351 familia 0.000 paso 0.434  paso 6 del candidato contra paso 3
-        simplificar_trabajo_reducir_numero_pasos             similitud_texto              texto 0.351 familia 0.000 paso 0.388  paso 6 del candidato contra paso 6
-        decidir_aceptar_rechazar_material_defectuoso         similitud_texto              texto 0.367 familia 0.000 paso 0.359  paso 2 del candidato contra paso 3
-    BLOQUEARIA  simplificar_trabajo_reducir_numero_pasos  poblacion 462  
-        dimensionar_plantilla_administrativa_pronostico      similitud_texto              texto 0.351 familia 0.000 paso 0.439  paso 4 del candidato contra paso 5
-
-**Los pares distintos los cuenta un instrumento**, no mi ojo sobre el bloque: un par levantado desde
-los dos lados cuenta una vez.
-
-    $ python .v64aud/pares_d140.py
-    candidatos BLOQUEARIA: 9 | pares distintos: 12
-        clasificar_trabajo_proceso_montaje_prueba | preferir_inspeccion_proceso_prueba_destructiva
-        construir_flujo_produccion_paso_limitante | preferir_inspeccion_proceso_prueba_destructiva
-        construir_flujo_produccion_paso_limitante | rehacer_flujo_paso_limitante_capacidad
-        construir_flujo_produccion_paso_limitante | retirar_barreras_politicas_metodo
-        decidir_aceptar_rechazar_material_defectuoso | dimensionar_plantilla_administrativa_pronostico
-        detectar_arreglar_fallo_etapa_menor_valor | dimensionar_inventario_materia_prima_reposicion
-        detectar_arreglar_fallo_etapa_menor_valor | supervisar_tarea_delegada_etapa_menor_valor
-        dimensionar_inventario_materia_prima_reposicion | preferir_inspeccion_proceso_prueba_destructiva
-        dimensionar_inventario_materia_prima_reposicion | rehacer_flujo_paso_limitante_capacidad
-        dimensionar_plantilla_administrativa_pronostico | elegir_cinco_indicadores_diarios_fabrica
-        dimensionar_plantilla_administrativa_pronostico | simplificar_trabajo_reducir_numero_pasos
-        preferir_inspeccion_proceso_prueba_destructiva | rehacer_flujo_paso_limitante_capacidad
-
-**La tabla de abajo lleva una fila por cada uno de esos pares**, en otro orden.
+**Las razones, una por par y con su linea del libro, estan en `.v65aud/mis_clases.tsv`**, escritas antes de
+abrir nada que las juzgue. Las que sostienen algo mas que *comparten palabras*:
 
 | par | mi clase | lo que la sostiene |
 |---|---|---|
-| `construir_flujo_produccion_paso_limitante` con `rehacer_flujo_paso_limitante_capacidad` | **CONTINUA, madre `construir_flujo...`, hijo `rehacer_flujo...`** | la condicion del hijo es *cuando ya tienes un flujo construido*; su paso `4` rehace el flujo de la madre alrededor del paso limitante nuevo, **calculando otra vez hacia atras** (madre pasos `5`, `7` y `8`), y su paso `5` cambia solo los desfases (madre paso `9`). Lo que el hijo trae: la capacidad infinita supuesta, la cola, la espera dentro del flujo. L51 a L55 sobre L23 a L27 (`cap_02`) |
-| `detectar_arreglar_fallo_etapa_menor_valor` con `supervisar_tarea_delegada_etapa_menor_valor` (bandeja) | **CONTINUA, madre `detectar...`, hijo `supervisar...`** | el paso `2` del hijo es la regla del paso `3` de la madre aplicada a la delegacion, y el hijo trae procedimiento propio (los borradores, la frecuencia por madurez, el detalle al azar). **Coincide con lo que la `ACTA 62` `62.5` sostuvo** y con los veredictos que el encargo manda reutilizar de `.v63ext/cmd_02_detectar.sh` |
-| `construir_flujo...` con `retirar_barreras_politicas_metodo` (grafo, `smart_who`) | **SANO** | contratar sin barreras de politica contra construir un flujo. La senial (`paso_contra_nodo` `0.614`) sale de la muletilla *que es por donde el libro dice* contra *que es con quien el libro dice* |
-| `construir_flujo...` con `preferir_inspeccion_proceso_prueba_destructiva` | **SANO** | la misma fabrica de desayunos; ningun paso de uno desarrolla uno del otro |
-| `rehacer_flujo...` con `preferir_inspeccion...` | **SANO** | lo mismo |
-| `clasificar_trabajo_proceso_montaje_prueba` con `preferir_inspeccion...` | **SANO** | las pruebas de `clasificar` (unitaria, del sistema, L45) no son la eleccion entre prueba funcional e inspeccion dentro del proceso de L67 |
-| `dimensionar_inventario_materia_prima_reposicion` con `preferir_inspeccion...` | **SANO, hermanos** | los dos cuelgan de la maquina continua (L67 y L69, *What else could go wrong*): uno vigila el proceso, el otro la entrada y el inventario |
-| `dimensionar_inventario...` con `detectar_arreglar_fallo...` | **SANO, y lo sigo marcando DISCUTIBLE** | lo comun es un ejemplo, el huevo podrido rechazado al recibirlo (paso `4` de `detectar` contra pasos `1` a `3` de `dimensionar`). Lo que `dimensionar` anade, el inventario por el tiempo de reposicion y la oportunidad en riesgo (L69), **no desarrolla la regla del menor valor**: desarrolla otra cosa. Lo que queda fuera es procedimiento en los dos lados |
-| `rehacer_flujo...` con `dimensionar_inventario...` | **SANO** | vocabulario comun (parar, esperar), procedimientos distintos |
-| `decidir_aceptar_rechazar_material_defectuoso` con `dimensionar_plantilla_administrativa_pronostico` | **SANO** | material que no llega a especificacion contra plantilla administrativa. La senial sale de *grupo equilibrado de mandos* contra *patrones de hecho* |
-| `dimensionar_plantilla...` con `elegir_cinco_indicadores_diarios_fabrica` | **SANO** | los cinco datos del dia de la fabrica contra la plantilla por pronostico |
-| `dimensionar_plantilla...` con `simplificar_trabajo_reducir_numero_pasos` | **SANO** | quitar pasos de un flujo contra ajustar la plantilla a la carga |
+| `dimensionar_inventario` con `preferir_inspeccion` | **SANO, hermanos** | `cap_02` L69 abre con *What else could go wrong with our continuous egg-machine?*: el huevo que entra, despues de la temperatura que se sale de L67. Ninguno usa al otro |
+| `clasificar_trabajo` con `preferir_inspeccion` | **SANO** | L67 no vuelve sobre los tres tipos de operacion de L39; la prueba del uno y la del otro solo comparten la palabra |
+| `rehacer_flujo` con `preferir_inspeccion` | **SANO** | la similitud de texto mas alta de mis `17` filas (`0,460`, seccion `7`, `.v65aud/sim_ciegas.txt`) sale del huevo de tres minutos que se estropea en L51 y en L67, no de un paso comun |
+| `emparejar_indicadores` con `elegir_cinco_indicadores` | **SANO, confianza media: DUDA MIA** | el paso `8` de los cinco (L27, *It is not enough to monitor the number of breakfasts each waiter delivers*) es la semilla de lo que L31 hace principio, pero **no lo procedimenta**: no nombra efecto ni contraefecto ni manda vigilar dos a la vez. *Nombrar no es procedimentar*, y aqui ni siquiera se nombra. **Si la `65` o la `63` lo leyeron CONTINUA, esa es la discrepancia que traigo** |
+| `dimensionar_plantilla` con `elegir_cinco_indicadores` | **SANO, confianza media** | el paso `1` de la plantilla elige los indicadores de una unidad **administrativa** (L125), que es el procedimiento de `elegir_indicador_salida_trabajo_administrativo` (su madre por lectura, seccion `5`), no el de los cinco datos diarios de la fabrica |
 
-## 7. LOS PARES QUE LEO Y LA SENIAL NO LEVANTA (`D.29`, encargo `T4`, `d141`)
+**UN LIMITE DE LO CIEGO, QUE DECLARO, Y COMO LO CIERRO.** Antes de leer, lei entera la `ACTA 63`, y su
+`63.3.c` dice que el discutible `D64.3` eran *tres pares con texto sobre `0,4`, SANO*, leidos SANO *en la
+ciega (`APERTURA_CIEGA.md` `6.2`)*, **sin nombrarlos**. Tres de mis `17` filas pasan de `0,4`:
 
-| madre | hijo | lo que lo sostiene | mi confianza |
-|---|---|---|---|
-| `elegir_indicador_salida_trabajo_administrativo` (`d005`) | `dimensionar_plantilla_administrativa_pronostico` | L125, *if we have carefully chosen indicators that characterize an administrative unit and watch them closely*: **el paso `1` del hijo presupone el producto de la madre**, y los pasos `3` a `7` siguen donde ella acaba | **alta: la sostengo** |
-| `construir_indicador_tendencia_patron` (`d005`) | `dimensionar_plantilla...` | L125, *de facto standards, inferred from the trend data*: **el paso `2` del hijo sale de la serie y el patron que la madre mide** en sus pasos `3` y `4` | **alta: la sostengo**. **Hoy la senial si lo levanta** (seccion `5`, fila `NUEVO`); en la lista de poblacion `462` no |
-| `elegir_fabricar_pedido_pronostico` (`d005`) | `casar_flujo_fabricacion_flujo_ventas` | L111, *Delivering a product that was built to forecast*: **la condicion del hijo** (*cuando fabricas contra pronostico*) **es la decision que la madre toma** en su paso `4` | **alta: la sostengo** |
-| `construir_grafico_escalonado_pronosticos` (`d005`) | `casar_flujo...` | L121, *It is a good idea to use stagger charts in both the manufacturing and sales forecasts. As noted...*: el paso `12` del hijo usa el grafico de la madre en los dos pronosticos | **baja**: es un paso de doce, y lo que ese paso hace (mirar la variacion de un pronostico a otro) **es el paso `4` de la madre, no procedimiento nuevo**. Nombrar no es procedimentar. **No la sostengo como arista**; la dejo escrita para que conste que la mire |
-| `dimensionar_inventario_materia_prima_reposicion` | `decidir_aceptar_rechazar_material_defectuoso` | el paso `1` del hijo (*cuando rechaces material en la inspeccion de recepcion*) abre la decision que la madre cierra con una sola salida en su paso `3` (*devuelve*); L135 anade la segunda (usar lo que no llega) y el grupo que decide | **alta: la sostengo**. No es de `d141`, pero es de la tanda y la senial tampoco lo levanta |
-| `emparejar_indicadores_efecto_contraefecto` (`d005`) | `elegir_indicador_salida_trabajo_administrativo` (`d005`) | **este si lo levanta la senial** (seccion `6.1`): lo pongo aqui solo para que el orden lo tenga | **alta** |
+    $ python .v65aud/sim_ciegas.py | tail -1
+    filas ciegas: 17 | con similitud de texto sobre 0,4: 3
 
-**Y DOS QUE LEO COMO NO CONTINUA**, para que conste que las mire: `casar_flujo...` paso `11` nombra la
-regla de `detectar_arreglar_fallo...` (L119, *as we've learned before*) y la aplica al inventario en una
-sola linea: SANO, nombrar no es procedimentar. Y `elegir_cinco_indicadores_diarios_fabrica` con
-`emparejar...`: el paso `8` de `elegir_cinco` (*no te quedes en contar cuantas unidades sirve cada
-persona*) es un indicador de calidad junto a uno de cantidad (L27), **pero el libro no lo presenta como
-par de efecto y contraefecto**; eso llega despues, en L31. SANO. **Hoy la senial lo levanta** (seccion `5`), y la clase no cambia.
+(las `17` ordenadas, en `.v65aud/sim_ciegas.txt`: las tres son `rehacer_flujo` con `preferir_inspeccion` en los
+dos sentidos y `preferir_inspeccion` contra `construir_flujo`.)
 
-## 8. LO QUE EL ORDEN TIENE QUE RESPETAR, LEIDO (encargo `T4`)
+**DESPUES de escribir mis `11` pares** (`.v65aud/mis_clases.tsv`, guardado a las `23:47:50`) abri **mi propia
+apertura sellada de la `64`** (`git show 5b866f1:docs/loop/APERTURA_CIEGA.md`, copiada en
+`.v65aud/apertura_v64_propia.md`). **No es ninguno de los cuatro ficheros que `D.34.2` retira: es obra mia.** Su
+`6.2` es la tabla de los pares de `cap_02` y del final de `cap_03`, **asi que las tres filas sobre `0,4` son, con
+toda probabilidad, las de `D64.3`, y su clase SANO la sabia por la `ACTA 63` antes de leerlas.** **No las cuento
+como ciegas:** mis filas ciegas de verdad son `14`, y las otras tres son una relectura con la clase sabida.
 
-**No fijo el orden** (`D.36`: lo fija quien autoriza). **Lo que si leo son las madres que tienen que ir
-delante**, con las aristas de `6` y `7`:
+**Y EL CONTRASTE QUE ESA APERTURA ME DA, con instrumento:**
 
-| hijo | madre que tiene que ir delante | capitulo de cada uno |
-|---|---|---|
-| `rehacer_flujo_paso_limitante_capacidad` | `construir_flujo_produccion_paso_limitante` | `cap_02` y `cap_02` |
-| `decidir_aceptar_rechazar_material_defectuoso` | `dimensionar_inventario_materia_prima_reposicion` | `cap_03` y `cap_02` |
-| `elegir_indicador_salida_trabajo_administrativo` | `emparejar_indicadores_efecto_contraefecto` | `cap_03` y `cap_03` |
-| `dimensionar_plantilla_administrativa_pronostico` | `elegir_indicador_salida_trabajo_administrativo` **y** `construir_indicador_tendencia_patron` | `cap_03`, los tres |
-| `casar_flujo_fabricacion_flujo_ventas` | `elegir_fabricar_pedido_pronostico` | `cap_03` y `cap_03` |
+    $ python .v65aud/cruce_mi_v64.py | tail -1
+    pares: 11 | misma clase que mi apertura de la 64: 11 | distinta: 0 | sin fila alli: 0
 
-**LECTURA:** la cadena mas larga es de tres: `emparejar`, despues `elegir_indicador`, despues
-`dimensionar_plantilla`. **Si la tanda de la `65` tiene tope, `dimensionar_plantilla` no puede entrar
-sin sus dos madres de `d005` delante.** `supervisar_tarea_delegada...` es hijo de `detectar...` y vive en
-`cap_04`: queda fuera de los `22`, pero su veredicto se escribe cuando entre el.
+(fila a fila en `.v65aud/cruce_mi_v64.txt`.) **LECTURA:** dos lecturas mias hechas a ciegas con un dia de
+distancia, la segunda sin mirar la primera, **dan la misma clase en los `11` pares**. No prueba que acierten:
+**la `ACTA 63` me gano cinco discrepancias en esa misma apertura**, dos de ellas de pares, y por usar la vara
+para una pregunta que no era la suya. **Ninguno de estos `11` era una de esas dos.**
 
-## 9. LO QUE ESTA PAGINA NO HACE, Y LO QUE DEJA PARA EL TURNO NORMAL
+**LECTURA:** **cero CONTINUA, cero REPITE y cero MUTUO en lo que lei**, `14` filas ciegas de verdad y tres con la
+clase sabida, y **dos dudas** marcadas. Lo que comparo en el turno normal es **cada una de estas `17` filas contra
+la linea que la `65` escribio en la bitacora para ese par**, con los pasos ya leidos y **solo despues** su razon.
 
-- **No compara con el extractor.** Su reporte, sus fichas corregidas de la `64` y su carpeta `.v64ext/`
-  quedan sin abrir hasta que el arnes selle esta pagina.
-- **No escribe veredictos en `bitacora/` ni aristas en el dataset**: son clases leidas, no insertadas.
-- **Lo que queda para el turno normal:** `R5` sobre el reporte de la `64`; la fidelidad de las cinco
-  fichas corregidas **contra mi tabla de `067c9df`**, para ver si lo que el extractor reescribio es el
-  paso `1` de `emparejar` y que hizo con mis dos dudas; y cada par de `6` y `7` contra sus veredictos
-  listos.
-- **Mi evidencia se queda en `.v64aud/`**: `antes_<id>.json`, `fidelidad.tsv`, `contar_fidelidad.py` y
-  su salida, `pasos.py`, `pares_d140.py`, `vecinos_hoy.py` con su salida, los seis `informe_<id>.txt` y
-  `barrido.log`.
+## 8. **MI CLASIFICACION, CANDIDATO POR CANDIDATO**
 
-## 10. LAS GUARDAS AL CERRAR ESTA PAGINA
+La tabla es la salida de `.v65aud/tabla_20.py`, que **solo junta** las salidas ya guardadas de las secciones
+`3`, `5`, `6` y `7`; la columna de la izquierda es la linea de `.v64ext/los22.txt`, **no la fila del orden de
+insercion**, que esta en el reporte y no la he visto.
 
-    $ python forja.py gate 2>&1 | tail -3
-    GATE VERDE.
-      nodos verificados: 346
-      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+    $ python .v65aud/tabla_20.py | head -2
+    | linea de los22 | candidato | cap | pieza | leida en | pasos | PUENTE | vecinos hoy | con linea | sin linea | filas mias ciegas | aristas vivas |
+    |---|---|---|---|---|---:|---:|---:|---:|---:|---:|---:|
 
-    $ python forja.py guiones docs/loop/APERTURA_CIEGA.md .v64aud/
-    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+(El `head` va en el comando; la tabla entera, pegada debajo como tabla, es `.v65aud/tabla_20.txt`. La columna
+*filas mias ciegas* cuenta las `17` de la seccion `7`, tres de ellas con la clase sabida.)
 
-**Gate y guiones en VERDE al cerrar la pagina. Ningun proceso mio queda vivo**: el barrido de la seccion `5` termino a las `11:15:56` con los seis `rc=0`, y lo recogi dentro del turno. **No commiteo**: sella y commitea el arnes.
+| linea de los22 | candidato | cap | pieza | leida en | pasos | PUENTE | vecinos hoy | con linea | sin linea | filas mias ciegas | aristas vivas |
+|---|---|---|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 1 | `construir_flujo_produccion_paso_limitante` | `cap_02` | P2 | `b63405c` | 10 | 0 | 3 | 3 | 0 | 2 | 1 |
+| 2 | `clasificar_trabajo_proceso_montaje_prueba` | `cap_02` | P5 | `b63405c` | 7 | 0 | 1 | 1 | 0 | 1 | 0 |
+| 3 | `rehacer_flujo_paso_limitante_capacidad` | `cap_02` | P6 | `b63405c` | 6 | 0 | 3 | 3 | 0 | 2 | 2 |
+| 4 | `equilibrar_capacidad_personal_inventario_plazo` | `cap_02` | P7 | `b63405c` | 8 | 4 | 1 | 1 | 0 | 0 | 1 |
+| 5 | `preferir_inspeccion_proceso_prueba_destructiva` | `cap_02` | P9 | `b63405c` | 6 | 0 | 4 | 4 | 0 | 4 | 0 |
+| 6 | `dimensionar_inventario_materia_prima_reposicion` | `cap_02` | P10 | `b63405c` | 7 | 0 | 2 | 2 | 0 | 1 | 2 |
+| 7 | `detectar_arreglar_fallo_etapa_menor_valor` | `cap_02` | P11 | `b63405c` | 6 | 0 | 1 | 1 | 0 | 0 | 1 |
+| 8 | `elegir_cinco_indicadores_diarios_fabrica` | `cap_03` | P2 | `b63405c` | 10 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 9 | `emparejar_indicadores_efecto_contraefecto` | `cap_03` | P3 | `997054d` | 7 | 0 | 6 | 6 | 0 | 2 | 1 |
+| 10 | `elegir_indicador_salida_trabajo_administrativo` | `cap_03` | P4 | `997054d` | 7 | 0 | 3 | 3 | 0 | 0 | 2 |
+| 11 | `representar_actividad_caja_negra_ventanas` | `cap_03` | P7 | `b63405c` | 9 | 0 | 0 | 0 | 0 | 0 | 2 |
+| 12 | `construir_indicador_linealidad_alerta_temprana` | `cap_03` | P9 | `b63405c` | 9 | 0 | 0 | 0 | 0 | 0 | 1 |
+| 13 | `construir_indicador_tendencia_patron` | `cap_03` | P10 | `997054d` | 6 | 0 | 6 | 6 | 0 | 0 | 2 |
+| 14 | `construir_grafico_escalonado_pronosticos` | `cap_03` | P11 | `997054d` | 8 | 1 | 3 | 3 | 0 | 0 | 1 |
+| 15 | `archivar_indicadores_resolver_problemas` | `cap_03` | P12 | `997054d` | 4 | 0 | 4 | 4 | 0 | 0 | 0 |
+| 16 | `elegir_fabricar_pedido_pronostico` | `cap_03` | P13 | `997054d` | 9 | 1 | 2 | 2 | 0 | 0 | 1 |
+| 17 | `casar_flujo_fabricacion_flujo_ventas` | `cap_03` | P14 | `b63405c` | 12 | 0 | 0 | 0 | 0 | 0 | 2 |
+| 18 | `dimensionar_plantilla_administrativa_pronostico` | `cap_03` | P15 | `b63405c` | 7 | 0 | 6 | 6 | 0 | 4 | 2 |
+| 19 | `decidir_aceptar_rechazar_material_defectuoso` | `cap_03` | P17 | `b63405c` | 8 | 0 | 1 | 1 | 0 | 1 | 1 |
+| 20 | `elegir_inspeccion_barrera_monitorizacion` | `cap_03` | P18 | `b63405c` | 12 | 0 | 2 | 2 | 0 | 0 | 0 |
+
+**MI CLASE PARA LOS `20`: ENTRA, Y ENTRO COMO SE LEYO.** Los `20` estan en el grafo con los bytes de su lectura
+entera (seccion `3`), los seis PUENTE que esa lectura les encontro entraron reescritos (seccion `4`), todas sus
+aristas adjudicadas viven y ninguna sobra (seccion `5`), y **la aduana entera de hoy no les levanta ni un vecino
+que no tenga su linea** (seccion `6`). **No traigo ninguna clase de fidelidad distinta de la adjudicada**, y de
+los pares traigo `17` filas leidas (`14` ciegas de verdad, seccion `7`), todas SANO, con dos dudas.
+
+**Y LAS DOS FILAS QUE NO ENTRABAN SIGUEN FUERA** (seccion `2`): `variar_frecuencia_inspeccion_nivel_calidad` y
+`simplificar_trabajo_reducir_numero_pasos`, en la bandeja.
+
+## 9. **LO QUE DEJO PARA MI TURNO NORMAL, ESCRITO ANTES DE VER EL REPORTE**
+
+1. **`R5`** (seccion `0`): los dos instrumentos sobre el tramo de la `65` del reporte.
+2. **La bitacora contra lo adjudicado**: las `55` lineas nuevas contra los `48` pares de mi barrido y las
+   lineas de `.v64ext/veredictos_listos.txt`, **tal cual** (encargo, TAREA 3: *no se reescriben*); y que es lo
+   que no cuadra entre `48` y `55` (seccion `6`, punto `3`).
+3. **Mis `17` filas contra las suyas** (seccion `7`), empezando por mis dos dudas, **y sin contar como ciegas
+   las tres que pasan de `0,4`** hasta haber mirado si eran las de `D64.3`.
+4. **LA MUESTRA PINEADA DE LOS SANO (`7`), REGISTRADA AQUI Y SIN CORRER:** `.v65aud/muestra_sano.py`, poblacion
+   las lineas SANO de la bitacora desde la `741`, tamano el mayor entre `3` y el `20` por ciento con techo de
+   `20`, **semilla `65`**. **La dejo escrita ahora para que la eleccion no dependa de nada que vea despues.** No
+   la corro en esta fase porque correrla es leer las clases de la bitacora.
+5. **Los cerrojos** (`D.44`): el encargo mandaba al primer `insertar` romper y declarar
+   `nodos.jsonl.679b2259.cerrojo`. **Hoy no queda ninguno**, ni ese ni los otros dos:
+
+       $ ls procesos/ | wc -l
+       0
+       $ python .v64aud/normal/cerrojos.py
+       cerrojo de dataset/nodos.jsonl en este arbol: nodos.jsonl.679b2259.cerrojo
+
+   (La linea del instrumento es el **nombre** que tendria el cerrojo de este dataset, y debajo no lista ningun
+   fichero.) **Quien quito cada uno no lo mido aqui**: el del dataset lo digo contra el reporte, y los otros dos
+   no son de este arbol.
