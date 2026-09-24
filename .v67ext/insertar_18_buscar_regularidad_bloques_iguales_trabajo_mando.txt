@@ -1,0 +1,50 @@
+fila 18, buscar_regularidad_bloques_iguales_trabajo_mando, lineas --veredicto: 4
+  --veredicto agrupar_tareas_semejantes_aprovechar_preparacion|SANO|El mismo par que la tanda lee desde su lado (senial de paso 0.718 entre los dos pasos 1, que comparten el molde y no el principio).
+  --veredicto preparar_respuestas_estandar_interrupciones_repetidas|SANO|Hermanos del tramo de las interrupciones: la regularidad (L305 a L307) contra las respuestas estandar (L315). La senial de paso (0.551) sale del molde aplica el concepto de produccion. Ninguno usa al otro.
+  --veredicto agrupar_interrupciones_subordinados_reuniones_regulares|SANO|Hermanos: la regularidad entre mandos (L305 a L307) contra la tanda de interrupciones en reuniones regulares (L317). El paso 4 del vecino pide reuniones regulares pero no ejecuta el procedimiento de aqui, coordinar bloques de tiempo con otros mandos y abrir ventanas.
+  --veredicto llevar_inventario_proyectos_discrecionales|SANO|El mismo par que el inventario lee desde su lado.
+inicio 2026-09-24 14:38:53
+======================================================================
+ADUANA DE INSERCION, candidato 'buscar_regularidad_bloques_iguales_trabajo_mando'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (385 del grafo mas 94 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 4. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino agrupar_tareas_semejantes_aprovechar_preparacion  [Agrupar las tareas semejantes en una tanda para aprovechar un solo esfuerzo de preparacion]
+    levantada por: paso_contra_nodo
+    similitud_texto    0.292 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.718 (umbral 0.60)
+    paso 1 del candidato contra paso 1 de agrupar_tareas_semejantes_aprovechar_preparacion
+
+  vecino preparar_respuestas_estandar_interrupciones_repetidas  [Preparar respuestas estandar para las clases de interrupcion que se repiten, y tenerlas disponibles para delegar buena parte del trabajo en personal con menos experiencia]
+    levantada por: similitud_texto
+    similitud_texto    0.396 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.543 (umbral 0.60)
+    paso 1 del candidato contra paso 1 de preparar_respuestas_estandar_interrupciones_repetidas
+
+  vecino agrupar_interrupciones_subordinados_reuniones_regulares  [Agrupar en tanda las interrupciones que llegan de los subordinados y atenderlas en las reuniones regulares de personal y de uno a uno, en vez de atenderlas al azar]
+    levantada por: similitud_texto
+    similitud_texto    0.375 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.417 (umbral 0.60)
+    paso 6 del candidato contra paso 2 de agrupar_interrupciones_subordinados_reuniones_regulares
+
+  vecino llevar_inventario_proyectos_discrecionales  [Llevar un inventario de materia prima en forma de proyectos discrecionales, distinto del trabajo en curso, para no gastar el tiempo libre metiendote en el trabajo ajeno]
+    levantada por: similitud_texto
+    similitud_texto    0.361 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.374 (umbral 0.60)
+    paso 5 del candidato contra paso 5 de llevar_inventario_proyectos_discrecionales
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 386
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 4
+
+======================================================================
+fin 2026-09-24 15:19:18 | codigo de salida 0 | 2424.9 s

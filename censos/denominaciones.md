@@ -1001,3 +1001,7 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-24 | dimensionar_numero_subordinados_medio_dia_semanal | otro_idioma | know-how manager | ingles | - |
 | 2026-09-24 | dimensionar_numero_subordinados_medio_dia_semanal | otro_idioma | fan-out | ingles | - |
 | 2026-09-24 | dimensionar_numero_subordinados_medio_dia_semanal | otro_idioma | on-the-job retirement | ingles | - |
+| 2026-09-24 | buscar_regularidad_bloques_iguales_trabajo_mando | nombre_largo | El concepto de produccion de la regularidad aplicado al trabajo de mando: parar los parones y arranques, buscar la bomba de relojeria antes de que estalle, y coordinar los bloques de tiempo con los demas mandos | castellano | - |
+| 2026-09-24 | buscar_regularidad_bloques_iguales_trabajo_mando | otro_idioma | regularity | ingles | - |
+| 2026-09-24 | buscar_regularidad_bloques_iguales_trabajo_mando | otro_idioma | black box | ingles | - |
+| 2026-09-24 | buscar_regularidad_bloques_iguales_trabajo_mando | otro_idioma | job shop | ingles | - |
