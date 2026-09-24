@@ -947,3 +947,7 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-24 | escalonar_fuentes_informacion_gerencial | nombre_largo | La jerarquia de la informacion: la fuente verbal como titular, el articulo entero para el quien que donde por que y como, y la revista o el libro para la reiteracion y la perspectiva, con las tres complementandose y solapandose | castellano | - |
 | 2026-09-24 | escalonar_fuentes_informacion_gerencial | otro_idioma | information hierarchy | ingles | - |
 | 2026-09-24 | escalonar_fuentes_informacion_gerencial | otro_idioma | redundant | ingles | - |
+| 2026-09-24 | programar_visita_area_observar_despachar | nombre_largo | La visita al sitio como via de informacion: el asunto de dos minutos que en el despacho cuesta media hora, y la visita programada con tarea formal que abre paso a las microtransacciones sueltas | castellano | - |
+| 2026-09-24 | programar_visita_area_observar_despachar | otro_idioma | programmed visits | ingles | - |
+| 2026-09-24 | programar_visita_area_observar_despachar | otro_idioma | ad hoc mini-transactions | ingles | - |
+| 2026-09-24 | programar_visita_area_observar_despachar | otro_idioma | Mr. Clean inspections | ingles | - |
