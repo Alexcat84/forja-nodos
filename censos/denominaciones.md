@@ -960,3 +960,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-24 | subir_productividad_gerencial_tres_vias | nombre_largo | Las tres vias de subir la productividad de un mando, que es su salida por unidad de tiempo trabajado: acelerar el ritmo de sus actividades, subir la palanca de cada una, y correr la mezcla de las de menor palanca a las de mayor | castellano | - |
 | 2026-09-24 | subir_productividad_gerencial_tres_vias | otro_idioma | managerial productivity | ingles | - |
 | 2026-09-24 | subir_productividad_gerencial_tres_vias | otro_idioma | leverage | ingles | - |
+| 2026-09-24 | buscar_actividad_alta_palanca_tres_vias | nombre_largo | Las tres vias basicas por las que se consigue una actividad de alta palanca: que un solo mando afecte a mucha gente, que un conjunto breve y bien enfocado de palabras o acciones afecte a una persona durante mucho tiempo, y que un individuo con una pieza unica y clave de conocimiento afecte al trabajo de un grupo grande | castellano | - |
+| 2026-09-24 | buscar_actividad_alta_palanca_tres_vias | otro_idioma | high-leverage activities | ingles | - |
+| 2026-09-24 | buscar_actividad_alta_palanca_tres_vias | otro_idioma | leverage | ingles | - |
