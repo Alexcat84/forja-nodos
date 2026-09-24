@@ -1,0 +1,20 @@
+{
+ "id": "usar_calendario_herramienta_planificacion_produccion",
+ "grafo": 368,
+ "bandejas": 111,
+ "vecinos": [
+  {
+   "id": "decir_no_trabajo_excede_capacidad",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.371,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.431
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 7 del candidato contra paso 7 de decir_no_trabajo_excede_capacidad"
+  }
+ ]
+}

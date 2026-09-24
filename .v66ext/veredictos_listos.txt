@@ -1,0 +1,150 @@
+# VEREDICTOS LISTOS DE LA VUELTA 66 para los 22 de cap_04, uno por vecino, en el formato de --veredicto (src/aduana.py, parsear_veredicto).
+# Leidos con los pasos de los dos delante (python .v64aud/pasos.py <a> <b>) y por la vara 6.1 de AUDITOR_FORJA.md, y solo esa.
+# Una seccion por candidato, en el orden de .v66ext/los22_cap04.txt; cada linea es un vecino que la senial levanta HOY en el sentido
+# candidato a vecino, en el barrido de .v66ext/vecinos_<id>.json (poblacion 479, 368 grafo mas 111 bandejas), sobre las fichas
+# de la bandeja tal como estan: la fidelidad de .v66ext/fidelidad.tsv no dio ningun PUENTE y ninguna ficha se toco.
+# Una seccion sin lineas es un candidato que no levanta ningun vecino. Lo comprueba .v66ext/comprobar_veredictos.py.
+# La senial 1 de los ocho primeros sale de la prosa comun de los resumenes de cap_04 (d058): se leen igual, par a par.
+
+## reunir_informacion_gerencial_vias_variadas
+transmitir_objetivos_prioridades_preferencias|SANO|Las dos caras del mismo tramo, y ninguna usa a la otra: este candidato reune la informacion por sus vias (L145 a L147) y el vecino la da, con objetivos, prioridades y preferencias para que el subordinado decida solo (L159, a manager not only gathers information but is also a source of it). La senial sale de la prosa comun de los resumenes de cap_04 (d058).
+programar_visita_area_observar_despachar|SANO|Hermanos: la visita es otra via de enterarse que el libro trae aparte (L155, There is an especially efficient way to get information), y ninguno de los ocho pasos de este candidato la nombra, asi que el vecino no despliega ningun paso de aqui ni al reves. Cada uno lleva su procedimiento entero.
+escalonar_fuentes_informacion_gerencial|CONTINUA|madre=reunir_informacion_gerencial_vias_variadas|El vecino sigue donde este candidato acaba: con las vias abiertas (pasos 1 a 6), el vecino las ordena en una jerarquia, de la verbal esquematica al articulo y a la revista, y las monta redundantes para verificar (sus pasos 1 a 7; L153, To improve and maintain your capacity to get information, you have to understand the way it comes to you). Solapan en un paso, la verbal por delante (paso 7 aqui, paso 2 alli), y fuera del solape queda procedimiento en los dos lados: no repite. La frontera ya la declara el resumen de este candidato (DISCUTIBLE D66.8).
+empujar_persona_reunion_direccion_preferida|SANO|Ajenos dentro del tramo de las actividades del mando: reunir informacion (L145) contra empujar una decision sin ordenarla (L167). Ningun paso de uno hace lo que hace un paso del otro; la senial es la prosa comun del resumen (d058).
+elegir_momento_actividad_palanca_maxima|SANO|Ajenos: las vias de la informacion contra el momento de una actividad para que su palanca sea maxima (L215 a L217). Comparten la oportunidad como palabra (paso 8 aqui, la informacion mas oportuna; paso 7 alli, la oportunidad del momento), no un procedimiento.
+subir_productividad_gerencial_tres_vias|SANO|Ajenos: el vecino nombra las tres vias de la productividad del mando, ritmo, palanca y mezcla (L195 a L201); este candidato reune informacion. Ningun paso compartido.
+buscar_actividad_alta_palanca_tres_vias|SANO|Ajenos: el vecino nombra las tres vias de la alta palanca (L207 a L213); este candidato reune informacion. La tercera via del vecino, el que aporta un saber unico, es quien da la informacion, no quien la reune, y no es ninguna de las vias de aqui.
+
+## escalonar_fuentes_informacion_gerencial
+programar_visita_area_observar_despachar|SANO|Hermanos del mismo tramo: este candidato ordena las fuentes de la verbal a la reposada y las solapa (L153); el vecino es la visita como via eficiente de enterarse y de despachar lo de dos minutos (L155 a L157). La escala de aqui no nombra la visita, y la visita no ordena ninguna fuente.
+reunir_informacion_gerencial_vias_variadas|CONTINUA|madre=reunir_informacion_gerencial_vias_variadas|El mismo par que reunir lee desde su lado y con la misma direccion: este candidato ordena en jerarquia y solapa para verificar las vias que la madre abre (madre L145 a L147, hijo L153). Solapan en la verbal por delante; fuera queda procedimiento en los dos lados (DISCUTIBLE D66.8).
+empujar_persona_reunion_direccion_preferida|SANO|Ajenos: ordenar las fuentes de informacion (L153) contra empujar una decision sin ordenarla (L167). Ningun paso compartido; la senial es la prosa comun del resumen (d058).
+transmitir_objetivos_prioridades_preferencias|SANO|Ajenos: ordenar las fuentes por las que te enteras (L153) contra dar tu informacion, tus objetivos y tus preferencias (L159). Direcciones opuestas y ningun paso compartido.
+subir_productividad_gerencial_tres_vias|SANO|Ajenos: la escala de las fuentes contra las tres vias de la productividad del mando (L195 a L201). Ningun paso compartido.
+elegir_momento_actividad_palanca_maxima|SANO|Ajenos: el paso 6 de aqui, no esperar una semana a la fuente mas cabal, y el paso 5 del vecino, atender al instante al subordinado que se va, comparten la prisa y no el procedimiento: uno ordena fuentes y el otro elige el momento de una actividad (L217).
+buscar_actividad_alta_palanca_tres_vias|SANO|Ajenos: la escala de las fuentes (L153) contra las tres vias de la alta palanca (L207 a L213). Ningun paso compartido.
+
+## programar_visita_area_observar_despachar
+escalonar_fuentes_informacion_gerencial|SANO|El mismo par que escalonar lee desde su lado: la visita programada (L155 a L157) contra la escala de las fuentes (L153). Hermanos, y ninguno usa al otro.
+reunir_informacion_gerencial_vias_variadas|SANO|El mismo par que reunir lee desde su lado: la visita es otra via que el libro trae aparte (L155), y las vias del vecino (L145 a L147) no la nombran. Hermanos.
+elegir_momento_actividad_palanca_maxima|SANO|Ajenos: la visita a un area para observar y despachar (L155 a L157) contra el momento de una actividad para su palanca (L215 a L217). Ningun paso compartido.
+empujar_persona_reunion_direccion_preferida|SANO|Ajenos: el paso 3 de aqui despacha al paso un asunto de dos minutos; el vecino empuja una decision con una llamada, una nota o un comentario (L167). Ninguno es el procedimiento del otro.
+transmitir_objetivos_prioridades_preferencias|SANO|Ajenos: la visita para enterarse (L155) contra dar objetivos y preferencias (L159). Ningun paso compartido.
+subir_productividad_gerencial_tres_vias|SANO|Ajenos: la visita contra las tres vias de la productividad del mando (L195 a L201). Ningun paso compartido.
+buscar_actividad_alta_palanca_tres_vias|SANO|Ajenos: la visita contra las tres vias de la alta palanca (L207 a L213). Ningun paso compartido.
+
+## transmitir_objetivos_prioridades_preferencias
+reunir_informacion_gerencial_vias_variadas|SANO|El mismo par que reunir lee desde su lado: dar la informacion y los objetivos (L159) contra reunirla (L145 a L147). Las dos caras del mismo tramo; ninguna usa a la otra.
+empujar_persona_reunion_direccion_preferida|SANO|Hermanos: el vecino se define contra este candidato (su paso 5, algo mas fuerte que limitarte a transmitir informacion, L167), y esa frontera escrita es la prueba de que son dos cosas: transmitir objetivos para que el subordinado decida solo contra empujar hacia un curso preferido sin ordenarlo.
+escalonar_fuentes_informacion_gerencial|SANO|El mismo par que escalonar lee desde su lado: dar objetivos contra ordenar las fuentes por las que te enteras. Ajenos.
+elegir_momento_actividad_palanca_maxima|SANO|Ajenos: dar objetivos y preferencias (L159) contra el momento de una actividad (L215 a L217). Ningun paso compartido.
+subir_productividad_gerencial_tres_vias|SANO|Ajenos: dar objetivos y preferencias contra las tres vias de la productividad del mando. Ningun paso compartido.
+buscar_actividad_alta_palanca_tres_vias|SANO|Ajenos: dar objetivos y preferencias contra las tres vias de la alta palanca. La segunda via del vecino, palabras breves de efecto largo, describe una clase de actividad y no el procedimiento de transmitir objetivos.
+programar_visita_area_observar_despachar|SANO|El mismo par que la visita lee desde su lado: dar objetivos contra enterarse recorriendo un area. Ajenos.
+
+## empujar_persona_reunion_direccion_preferida
+reunir_informacion_gerencial_vias_variadas|SANO|El mismo par que reunir lee desde su lado: empujar una decision (L167) contra reunir informacion (L145). Ajenos.
+programar_visita_area_observar_despachar|SANO|El mismo par que la visita lee desde su lado: empujar una decision contra despachar al paso lo de dos minutos. Ajenos.
+escalonar_fuentes_informacion_gerencial|SANO|El mismo par que escalonar lee desde su lado: empujar contra ordenar fuentes. Ajenos.
+buscar_actividad_alta_palanca_tres_vias|SANO|Ajenos: empujar una decision (L167) contra las tres vias de la alta palanca (L207 a L213). Ningun paso compartido.
+transmitir_objetivos_prioridades_preferencias|SANO|El mismo par que transmitir lee desde su lado: el paso 5 de aqui se define contra transmitir informacion, y esa frontera escrita separa los dos procedimientos.
+subir_productividad_gerencial_tres_vias|SANO|Ajenos: empujar una decision contra las tres vias de la productividad del mando. Ningun paso compartido.
+elegir_momento_actividad_palanca_maxima|SANO|Ajenos: empujar una decision (L167) contra el momento de una actividad (L215 a L217). Ningun paso compartido.
+
+## subir_productividad_gerencial_tres_vias
+elegir_momento_actividad_palanca_maxima|SANO|La senial de paso (0.553) casa el paso 3 de aqui, sube la palanca, con el vecino, que saca la maxima palanca eligiendo el momento. El paso 3 nombra una meta y no un procedimiento, y el vecino no despliega esa meta entera sino una manera de acercarse a ella: nombrar adonde hay que llegar sigue siendo nombrar (EXTRACTOR 9.1, restriccion 1). Hermanos del mismo capitulo (DISCUTIBLE D66.9).
+buscar_actividad_alta_palanca_tres_vias|SANO|Mismo molde de tres vias y ninguna via compartida: las de aqui son ritmo, palanca y mezcla (L197 a L201); las del vecino, mucha gente, un acto breve de efecto largo y el saber unico (L209 a L213). La similitud de 0.54 sale de la prosa del resumen y del molde (d058). El paso 3 de aqui nombra subir la palanca como meta; el vecino no la despliega, dice por donde se consigue la alta palanca: nombrar adonde hay que llegar sigue siendo nombrar (EXTRACTOR 9.1, restriccion 1). No repite y no continua (DISCUTIBLE D66.9).
+escalonar_fuentes_informacion_gerencial|SANO|El mismo par que escalonar lee desde su lado: las tres vias de la productividad contra la escala de las fuentes. Ajenos.
+reunir_informacion_gerencial_vias_variadas|SANO|El mismo par que reunir lee desde su lado: las tres vias de la productividad contra las vias de la informacion. Ajenos.
+empujar_persona_reunion_direccion_preferida|SANO|El mismo par que empujar lee desde su lado. Ajenos.
+transmitir_objetivos_prioridades_preferencias|SANO|El mismo par que transmitir lee desde su lado. Ajenos.
+programar_visita_area_observar_despachar|SANO|El mismo par que la visita lee desde su lado. Ajenos.
+
+## buscar_actividad_alta_palanca_tres_vias
+subir_productividad_gerencial_tres_vias|SANO|El mismo par que subir lee desde su lado: dos moldes de tres vias sin ninguna via compartida, y el paso 3 del vecino es una meta, no un procedimiento que este candidato despliegue (EXTRACTOR 9.1, restriccion 1; DISCUTIBLE D66.9).
+empujar_persona_reunion_direccion_preferida|SANO|El mismo par que empujar lee desde su lado: las tres vias de la alta palanca contra empujar una decision. Ajenos.
+reunir_informacion_gerencial_vias_variadas|SANO|El mismo par que reunir lee desde su lado. Ajenos.
+escalonar_fuentes_informacion_gerencial|SANO|El mismo par que escalonar lee desde su lado. Ajenos.
+elegir_momento_actividad_palanca_maxima|SANO|Hermanos: el ejemplo de Robin del vecino (L215) es el que el libro pone para la primera via de aqui (The first is the most obvious example), pero el vecino no despliega esa via: ensena el momento, por delante o inmediato (L215 a L217), que ninguna de las tres vias de aqui nombra.
+programar_visita_area_observar_despachar|SANO|El mismo par que la visita lee desde su lado. Ajenos.
+transmitir_objetivos_prioridades_preferencias|SANO|El mismo par que transmitir lee desde su lado. Ajenos.
+
+## elegir_momento_actividad_palanca_maxima
+subir_productividad_gerencial_tres_vias|SANO|El mismo par que subir lee desde su lado (senial de paso 0.596): el paso 3 del vecino, sube la palanca, es una meta que este candidato no despliega entera (EXTRACTOR 9.1, restriccion 1; DISCUTIBLE D66.9).
+programar_visita_area_observar_despachar|SANO|El mismo par que la visita lee desde su lado. Ajenos.
+escalonar_fuentes_informacion_gerencial|SANO|El mismo par que escalonar lee desde su lado: el momento de una actividad contra la escala de las fuentes. Ajenos.
+reunir_informacion_gerencial_vias_variadas|SANO|El mismo par que reunir lee desde su lado. Ajenos.
+transmitir_objetivos_prioridades_preferencias|SANO|El mismo par que transmitir lee desde su lado. Ajenos.
+empujar_persona_reunion_direccion_preferida|SANO|El mismo par que empujar lee desde su lado. Ajenos.
+buscar_actividad_alta_palanca_tres_vias|SANO|El mismo par que buscar lee desde su lado: el ejemplo de Robin ilustra la primera via del vecino, y este candidato ensena el momento, que el vecino no nombra. Hermanos.
+
+## detectar_palanca_negativa_actividad_mando
+
+## delegar_tarea_base_comun_seguimiento
+
+## supervisar_tarea_delegada_etapa_menor_valor
+detectar_arreglar_fallo_etapa_menor_valor|CONTINUA|madre=detectar_arreglar_fallo_etapa_menor_valor|La arista EN COLA de la 65 (65.4.b), leida hoy desde el lado del hijo con los 6 y los 9 pasos delante, porque el barrido de hoy la levanta en este sentido (familia_id 0.333): el paso 2 de este candidato aplica la regla del paso 3 de la madre, detectar y arreglar en la etapa de menor valor, al seguimiento de una tarea delegada (L253, We should apply quality assurance principles and monitor at the lowest-added-value stage of the process), y le anade lo que la madre no tiene: el borrador en sucio como etapa de menor valor, la frecuencia variable por subordinado, la madurez relativa a la tarea, la desescalada y la entrada al detalle al azar (pasos 3 a 9). Es la adjudicacion de la ACTA 61 61.5 y la linea de .v63ext/cmd_02_detectar.sh, sostenidas.
+supervisar_decision_delegada_preguntas_concretas|SANO|Hermanos: los dos despliegan el seguimiento que el paso 7 de delegar_tarea_base_comun_seguimiento nombra en una linea, este sobre una tarea (L253 a L255) y el vecino sobre una decision, por preguntas concretas en la reunion de revision (L257). Ningun paso de uno hace lo que hace un paso del otro.
+identificar_paso_limitante_jornada_desfases|SANO|Ajenos: supervisar una tarea delegada contra ordenar la jornada alrededor de su paso limitante (L267). La senial sale de la prosa del resumen (d058).
+
+## supervisar_decision_delegada_preguntas_concretas
+identificar_paso_limitante_jornada_desfases|SANO|Ajenos: supervisar una decision delegada por preguntas (L257) contra el paso limitante de la jornada (L267). Ningun paso compartido.
+supervisar_tarea_delegada_etapa_menor_valor|SANO|El mismo par que la tarea delegada lee desde su lado: hermanos bajo el paso 7 de delegar_tarea_base_comun_seguimiento, la decision contra la tarea.
+agrupar_tareas_semejantes_aprovechar_preparacion|SANO|Ajenos: supervisar una decision delegada contra agrupar tareas semejantes en tanda (L269 a L271). Ningun paso compartido.
+
+## identificar_paso_limitante_jornada_desfases
+agrupar_tareas_semejantes_aprovechar_preparacion|SANO|Hermanos: el primer y el segundo principio de produccion aplicados al trabajo de mando (L267, First; L269, A second production principle). Ninguno usa al otro.
+decir_no_trabajo_excede_capacidad|SANO|Hermanos: el paso limitante (L267) contra decir que no al trabajo que excede la capacidad (L277 a L285). Ningun paso compartido.
+supervisar_decision_delegada_preguntas_concretas|SANO|El mismo par que la decision delegada lee desde su lado. Ajenos.
+agrupar_interrupciones_subordinados_reuniones_regulares|SANO|Ajenos: el paso limitante de la jornada contra agrupar las interrupciones de los subordinados en las reuniones regulares (L317). Ningun paso compartido.
+llevar_inventario_proyectos_discrecionales|SANO|Hermanos del mismo tramo de principios de produccion: el paso limitante (L267) contra el inventario de proyectos discrecionales (L289). Ninguno usa al otro.
+supervisar_tarea_delegada_etapa_menor_valor|SANO|El mismo par que la tarea delegada lee desde su lado. Ajenos.
+
+## agrupar_tareas_semejantes_aprovechar_preparacion
+buscar_regularidad_bloques_iguales_trabajo_mando|SANO|La senial de paso (0.718) casa los dos pasos 1, que comparten el molde aplica a tu trabajo de mando el principio de produccion, y no el principio: aqui es la tanda para aprovechar la preparacion (L269 a L271), alli la regularidad y los mismos bloques de tiempo para coordinarse con otros mandos (L305 a L307). El paso 8 del vecino, los mismos bloques de tiempo para las actividades iguales, se parece a la tanda, pero su razon es la coordinacion entre mandos (L307) y no el tiempo de preparacion; fuera queda procedimiento en los dos lados.
+llevar_inventario_proyectos_discrecionales|SANO|Hermanos: la tanda (L269) contra el inventario de proyectos (L289). Ninguno usa al otro.
+decir_no_trabajo_excede_capacidad|SANO|Hermanos: la tanda contra decir que no de salida (L277 a L285). Ningun paso compartido.
+identificar_paso_limitante_jornada_desfases|SANO|El mismo par que el paso limitante lee desde su lado: primer y segundo principio de produccion.
+supervisar_decision_delegada_preguntas_concretas|SANO|El mismo par que la decision delegada lee desde su lado. Ajenos.
+
+## decir_no_trabajo_excede_capacidad
+usar_calendario_herramienta_planificacion_produccion|SANO|Hermanos: las dos responsabilidades que L279 numera (To use your calendar as a production-planning tool, you must accept responsibility for two things), la 1 en el vecino (L281) y la 2 aqui (L283). Ninguna usa a la otra; cada una lleva su procedimiento.
+llevar_inventario_proyectos_discrecionales|SANO|Hermanos del tramo de principios de produccion: decir que no (L277 a L285) contra el inventario de proyectos (L289). Ningun paso compartido.
+agrupar_tareas_semejantes_aprovechar_preparacion|SANO|El mismo par que la tanda lee desde su lado.
+identificar_paso_limitante_jornada_desfases|SANO|El mismo par que el paso limitante lee desde su lado.
+
+## usar_calendario_herramienta_planificacion_produccion
+decir_no_trabajo_excede_capacidad|SANO|El mismo par que decir que no lee desde su lado: las dos responsabilidades de L279, hermanas.
+
+## llevar_inventario_proyectos_discrecionales
+agrupar_interrupciones_subordinados_reuniones_regulares|SANO|Ajenos: el inventario de proyectos (L289) contra agrupar las interrupciones en reuniones (L317). Ningun paso compartido.
+agrupar_tareas_semejantes_aprovechar_preparacion|SANO|El mismo par que la tanda lee desde su lado.
+preparar_respuestas_estandar_interrupciones_repetidas|SANO|Ajenos: el inventario de proyectos contra las respuestas estandar a las interrupciones (L315). Ningun paso compartido. La senial levanta este sentido y no el contrario, y el orden lo respeta (D.36).
+decir_no_trabajo_excede_capacidad|SANO|El mismo par que decir que no lee desde su lado.
+buscar_regularidad_bloques_iguales_trabajo_mando|SANO|Hermanos del tramo de principios de produccion: el inventario (L289) contra la regularidad (L305 a L307). Ninguno usa al otro.
+identificar_paso_limitante_jornada_desfases|SANO|El mismo par que el paso limitante lee desde su lado.
+
+## dimensionar_numero_subordinados_medio_dia_semanal
+
+## buscar_regularidad_bloques_iguales_trabajo_mando
+agrupar_tareas_semejantes_aprovechar_preparacion|SANO|El mismo par que la tanda lee desde su lado (senial de paso 0.718 entre los dos pasos 1, que comparten el molde y no el principio).
+preparar_respuestas_estandar_interrupciones_repetidas|SANO|Hermanos del tramo de las interrupciones: la regularidad (L305 a L307) contra las respuestas estandar (L315). La senial de paso (0.551) sale del molde aplica el concepto de produccion. Ninguno usa al otro.
+agrupar_interrupciones_subordinados_reuniones_regulares|SANO|Hermanos: la regularidad entre mandos (L305 a L307) contra la tanda de interrupciones en reuniones regulares (L317). El paso 4 del vecino pide reuniones regulares pero no ejecuta el procedimiento de aqui, coordinar bloques de tiempo con otros mandos y abrir ventanas.
+llevar_inventario_proyectos_discrecionales|SANO|El mismo par que el inventario lee desde su lado.
+
+## preparar_respuestas_estandar_interrupciones_repetidas
+buscar_regularidad_bloques_iguales_trabajo_mando|SANO|El mismo par que la regularidad lee desde su lado.
+agrupar_interrupciones_subordinados_reuniones_regulares|SANO|Hermanos: dos principios de produccion contra las mismas interrupciones, el producto estandar aqui (L315) y la tanda alli (L317, Also, if you use the production principle of batching). Ninguno usa al otro.
+
+## agrupar_interrupciones_subordinados_reuniones_regulares
+sostener_contacto_oferta_aceptacion|SANO|Ajenos, de otro libro (smart_who): la senial de paso (0.700) casa el paso 4 de aqui, manten las reuniones con regularidad, con el paso 3 del vecino, manten el contacto con el candidato con regularidad. Comparten el adverbio: uno agrupa las interrupciones de los subordinados en reuniones, el otro corteja a un candidato despues de la oferta.
+agendar_cuidados_propios_cumplirlos|SANO|Ajenos, de otro libro (scott_radical_candor): la senial de paso (0.615) casa el paso 4 de aqui con el paso 4 del vecino, no te saltes las reuniones contigo mismo. Comparten reuniones y constancia; uno agrupa interrupciones ajenas, el otro protege en el calendario el tiempo propio.
+nombrar_delegados_amigos_casa|SANO|Ajenos, de otro libro (smart_who): la senial de paso (0.609) casa el paso 4 de aqui con el paso 4 del vecino, asegurate de que los delegados reportan con regularidad. Comparten la regularidad; uno agrupa interrupciones, el otro monta una red de referencias para contratar.
+llevar_inventario_proyectos_discrecionales|SANO|El mismo par que el inventario lee desde su lado.
+preparar_respuestas_estandar_interrupciones_repetidas|SANO|El mismo par que las respuestas estandar lee desde su lado: hermanos.
+canalizar_interrupciones_cartel_hora_oficina|SANO|Hermanos: los dos llevan las interrupciones a una forma programada, este por la tanda en las reuniones de personal y de uno a uno (L317) y el vecino por el cartel en la puerta y la hora de oficina (L321). El paso 6 del vecino nombra la reunion programada como alternativa, sin ejecutar la tanda; fuera queda procedimiento en los dos lados.
+buscar_regularidad_bloques_iguales_trabajo_mando|SANO|El mismo par que la regularidad lee desde su lado.
+identificar_paso_limitante_jornada_desfases|SANO|El mismo par que el paso limitante lee desde su lado. Ajenos.
+
+## canalizar_interrupciones_cartel_hora_oficina
+agrupar_interrupciones_subordinados_reuniones_regulares|SANO|El mismo par que la tanda de interrupciones lee desde su lado: hermanos, el cartel y la hora de oficina contra la tanda en las reuniones.

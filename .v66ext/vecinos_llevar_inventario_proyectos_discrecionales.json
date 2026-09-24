@@ -1,0 +1,85 @@
+{
+ "id": "llevar_inventario_proyectos_discrecionales",
+ "grafo": 368,
+ "bandejas": 111,
+ "vecinos": [
+  {
+   "id": "agrupar_interrupciones_subordinados_reuniones_regulares",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.355,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.494
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 1 de agrupar_interrupciones_subordinados_reuniones_regulares"
+  },
+  {
+   "id": "agrupar_tareas_semejantes_aprovechar_preparacion",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.368,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.456
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 5 del candidato contra paso 2 de agrupar_tareas_semejantes_aprovechar_preparacion"
+  },
+  {
+   "id": "preparar_respuestas_estandar_interrupciones_repetidas",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.355,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.437
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 5 de preparar_respuestas_estandar_interrupciones_repetidas"
+  },
+  {
+   "id": "decir_no_trabajo_excede_capacidad",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.377,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.409
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 5 del candidato contra paso 7 de decir_no_trabajo_excede_capacidad"
+  },
+  {
+   "id": "buscar_regularidad_bloques_iguales_trabajo_mando",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.375,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.404
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 5 del candidato contra paso 4 de buscar_regularidad_bloques_iguales_trabajo_mando"
+  },
+  {
+   "id": "identificar_paso_limitante_jornada_desfases",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.394,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.392
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 2 del candidato contra paso 3 de identificar_paso_limitante_jornada_desfases"
+  }
+ ]
+}

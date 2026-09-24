@@ -1,0 +1,12 @@
+$ grep -n -o -F 'This is something we should remember, apart from whether we do as they' fuentes/grove_high_output/cap_04.md    # reunir_informacion_gerencial_vias_variadas paso 6 
+145:This is something we should remember, apart from whether we do as they
+$ grep -n -o -F 'These can be achieved in three basic ways' fuentes/grove_high_output/cap_04.md    # buscar_actividad_alta_palanca_tres_vias paso 1 
+207:These can be achieved in three basic ways
+$ grep -n -o -F 'The manager became depressed' fuentes/grove_high_output/cap_04.md    # detectar_palanca_negativa_actividad_mando paso 3 
+231:The manager became depressed
+$ grep -n -o -F 'must share a common information base and a common set of operational i' fuentes/grove_high_output/cap_04.md    # delegar_tarea_base_comun_seguimiento paso 2 
+245:must share a common information base and a common set of operational i
+$ grep -n -o -F 'the manufacturing manager will still report to him' fuentes/grove_high_output/cap_04.md    # dimensionar_numero_subordinados_medio_dia_semanal paso 10 
+299:the manufacturing manager will still report to him
+$ grep -n -o -F 'If such meetings are held regularly' fuentes/grove_high_output/cap_04.md    # agrupar_interrupciones_subordinados_reuniones_regulares paso 4 
+317:If such meetings are held regularly

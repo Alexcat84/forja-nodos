@@ -59163,3 +59163,286 @@ de bandejas, linea `6` de su salida), ninguno que dejara de levantarse. Ninguna 
 `00:51:28` (`.v66ext/insertar_21_*.txt` linea final, `.v66ext/insertar_22_*.txt` linea `3`), y los dos `.fin` dicen
 `0`. El cerrojo del arbol, `nodos.jsonl.679b2259.cerrojo`, lo vi en `procesos/` con la `21` en vuelo (`ls` de las
 `00:22`; con la `22` no lo mire), y `ls procesos/` sale vacio tras volver la `22`.
+
+## 66.D bis. **LOS DISCUTIBLES DE LA TAREA 3, MARCADOS AL ESCRIBIR CADA FICHERO** (`EXTRACTOR.md` 8)
+
+Se marcaron dentro de `.v66ext/fidelidad.tsv`, `.v66ext/veredictos_listos.txt` y `.v66ext/aristas_lectura.txt` en el
+acto de escribir cada fila, antes de cualquier comprobacion; aqui se juntan por numero.
+
+| | que | por que lo marco |
+|---|---|---|
+| `D66.3` | `buscar_actividad_alta_palanca_tres_vias` paso `1` va `T`: *repasa tus actividades buscando las de alta palanca* es marco mio sobre `L203` y `L207` | el verbo de buscar no esta en el tramo; si el auditor lo lee como clausula reescrita, es `P` y `cap_04` sale `1` de `156` |
+| `D66.4` | los *revisa si* de `detectar_palanca_negativa_actividad_mando` pasos `3`, `5` y `7`, y el *antes de delegar, comprueba que* de `delegar_tarea_base_comun_seguimiento` paso `2`, van `T`: verbos de marco sobre el inventario o el requisito del libro (`EXTRACTOR.md` `9.1`) | la frontera con la clausula reescrita de la `ACTA 62` `62.5` la pongo yo |
+| `D66.5` | `reunir_informacion_gerencial_vias_variadas` paso `6` va `T`: leo *this is something we should remember* como quedarse con lo util que traen | *remember* admite la otra lectura, recordar el hecho |
+| `D66.6` | `dimensionar_numero_subordinados_medio_dia_semanal` paso `10` va `T`: *colocalo de forma que* pone de mandato el arreglo que el libro ensena dibujado | el libro describe, no manda |
+| `D66.7` | `agrupar_interrupciones_subordinados_reuniones_regulares` paso `4` va `T`: *manten esas reuniones con regularidad* sale de *if such meetings are held regularly* | el libro lo pone de condicion |
+| `D66.8` | `reunir_informacion_gerencial_vias_variadas` madre de `escalonar_fuentes_informacion_gerencial`, `CONTINUA` en los dos bloques | podria leerse como dos hermanos del mismo tema |
+| `D66.9` | `subir_productividad_gerencial_tres_vias`: sus tres vias son metas, ninguna es nodo (`D.37` sin caso), y `SANO` contra `buscar_actividad_alta_palanca_tres_vias` (similitud `0,54`) y contra `elegir_momento_actividad_palanca_maxima`; `NO SOSTENGO` contra los cinco principios de produccion de `L259` a `L291` | la estructura del libro cuelga esos tramos de sus vias; lo sostengo por `9.1`, restriccion `1` |
+| `D66.10` | dos aristas por lectura nuevas hacia hijos de la delegacion: `transmitir_objetivos_prioridades_preferencias` a `delegar_tarea_base_comun_seguimiento`, y `variar_frecuencia_inspeccion_nivel_calidad` a `supervisar_tarea_delegada_etapa_menor_valor` | lecturas mias; la segunda es la figura de la `ACTA 61` `61.5` |
+| `D66.11` | dos aristas por lectura hacia y desde la regularidad: `buscar_regularidad_bloques_iguales_trabajo_mando` a `canalizar_interrupciones_cartel_hora_oficina`, y `representar_actividad_caja_negra_ventanas` a `buscar_regularidad_bloques_iguales_trabajo_mando` | el hijo nombra el procedimiento de la madre en un solo paso |
+
+## 66.3. TAREA 3: `cap_04` ENTERO, DEJADO LISTO PARA LA INSERCION DE LA `67`. **NINGUNO INSERTADO**
+
+Todo en `.v66ext/`, con copias de instrumentos que ya existen y la ruta cambiada (`7.F`); cada copia lo dice en su
+cabecera. Los `22` son las filas `3` a `24` de `.v65aud/normal/cola_grove.txt`, en `.v66ext/los22_cap04.txt`.
+
+### 66.3.1. La fidelidad ENTERA (`D.30`, `D.58`)
+
+`fuentes/grove_high_output/cap_04.md` leido entero (`323` lineas) y **cada paso de los `22` marcado `T` o `P` con su
+linea**, una fila por paso, en `.v66ext/fidelidad.tsv`. Contado por la copia de `.v64ext/contar_fidelidad.py`:
+
+<!-- TALLADO: parcial salida=.v66ext/contar_fidelidad.txt -->
+
+    $ python .v66ext/contar_fidelidad.py
+    candidato                                        cap     pasos   T   P
+    reunir_informacion_gerencial_vias_variadas       cap_04      8   8   0
+    escalonar_fuentes_informacion_gerencial          cap_04      7   7   0
+    programar_visita_area_observar_despachar         cap_04      8   8   0
+    transmitir_objetivos_prioridades_preferencias    cap_04      5   5   0
+    empujar_persona_reunion_direccion_preferida      cap_04      7   7   0
+    subir_productividad_gerencial_tres_vias          cap_04      4   4   0
+    buscar_actividad_alta_palanca_tres_vias          cap_04      4   4   0
+    elegir_momento_actividad_palanca_maxima          cap_04      7   7   0
+    detectar_palanca_negativa_actividad_mando        cap_04      9   9   0
+    delegar_tarea_base_comun_seguimiento             cap_04     10  10   0
+    supervisar_tarea_delegada_etapa_menor_valor      cap_04      9   9   0
+    supervisar_decision_delegada_preguntas_concretas cap_04      6   6   0
+    identificar_paso_limitante_jornada_desfases      cap_04      5   5   0
+    agrupar_tareas_semejantes_aprovechar_preparacion cap_04      6   6   0
+    decir_no_trabajo_excede_capacidad                cap_04     10  10   0
+    usar_calendario_herramienta_planificacion_produccion cap_04      7   7   0
+    llevar_inventario_proyectos_discrecionales       cap_04      5   5   0
+    dimensionar_numero_subordinados_medio_dia_semanal cap_04     11  11   0
+    buscar_regularidad_bloques_iguales_trabajo_mando cap_04      9   9   0
+    preparar_respuestas_estandar_interrupciones_repetidas cap_04      6   6   0
+    agrupar_interrupciones_subordinados_reuniones_regulares cap_04      5   5   0
+    canalizar_interrupciones_cartel_hora_oficina     cap_04      8   8   0
+    pasos sin fila: 0 [] | filas sin paso: 0 []
+    
+    PASOS INVENTADOS POR CAPITULO, los 22 de cap_04 (COPIA de la vuelta 66 de .v64ext/contar_fidelidad.py, ruta cambiada)
+    cap_04  candidatos 22  pasos 156  T 156  P 0  inventado 0,0 por ciento
+
+**`PASOS INVENTADOS` de `cap_04`: `0` de `156`, el `0,0` por ciento.** Ningun PUENTE, asi que **ninguna ficha de
+la bandeja se corrigio** y el barrido corrio sobre las fichas tal como estaban (`d031`). Los discutibles de la
+marca son `D66.3` a `D66.7`: si caen todos como `P`, `cap_04` sale `8` de `156`, el `5,1` por ciento, bajo el `10`.
+
+**Las `156` citas, localizadas por instrumento** (`D.35`): `.v66ext/citas.sh` corre un `grep -n -o -F` del arranque
+literal de cada cita y mira que caiga en su linea declarada. Salida entera en `.v66ext/citas_fidelidad.txt`; su
+ultima linea y las seis de los discutibles:
+
+    $ bash .v66ext/citas.sh | tail -1
+    filas: 156 | en su linea declarada: 156 | fuera: 0
+    $ grep -n -o -F 'This is something we should remember, apart from whether we do as they' fuentes/grove_high_output/cap_04.md    # reunir_informacion_gerencial_vias_variadas paso 6 
+    145:This is something we should remember, apart from whether we do as they
+    $ grep -n -o -F 'These can be achieved in three basic ways' fuentes/grove_high_output/cap_04.md    # buscar_actividad_alta_palanca_tres_vias paso 1 
+    207:These can be achieved in three basic ways
+    $ grep -n -o -F 'The manager became depressed' fuentes/grove_high_output/cap_04.md    # detectar_palanca_negativa_actividad_mando paso 3 
+    231:The manager became depressed
+    $ grep -n -o -F 'must share a common information base and a common set of operational i' fuentes/grove_high_output/cap_04.md    # delegar_tarea_base_comun_seguimiento paso 2 
+    245:must share a common information base and a common set of operational i
+    $ grep -n -o -F 'the manufacturing manager will still report to him' fuentes/grove_high_output/cap_04.md    # dimensionar_numero_subordinados_medio_dia_semanal paso 10 
+    299:the manufacturing manager will still report to him
+    $ grep -n -o -F 'If such meetings are held regularly' fuentes/grove_high_output/cap_04.md    # agrupar_interrupciones_subordinados_reuniones_regulares paso 4 
+    317:If such meetings are held regularly
+
+### 66.3.2. El barrido de los `22`, contra GRAFO MAS BANDEJAS (`D.38.4`)
+
+Copia de `.v65aud/barrido_uno.py` que lee la ficha de `cuarentena/grove_high_output/` (`.v66ext/barrido_uno.py`) y
+copia de `.v65aud/barrer.sh` con la lista de `cap_04` (`.v66ext/barrer.sh`): **cinco a la vez**, lanzado despues de
+volver la fila `22`, con el grafo ya en `368`, y **recogido entero dentro del turno**, esperandolo en primer plano:
+
+<!-- TALLADO: parcial salida=.v66ext/barrido.log -->
+
+    $ cat .v66ext/barrido.log
+    INICIO 2026-09-24 01:13:58
+    empujar_persona_reunion_direccion_preferida rc=0 segundos=1249
+    reunir_informacion_gerencial_vias_variadas rc=0 segundos=1307
+    transmitir_objetivos_prioridades_preferencias rc=0 segundos=1371
+    programar_visita_area_observar_despachar rc=0 segundos=1412
+    escalonar_fuentes_informacion_gerencial rc=0 segundos=1432
+    subir_productividad_gerencial_tres_vias rc=0 segundos=1064
+    buscar_actividad_alta_palanca_tres_vias rc=0 segundos=1127
+    elegir_momento_actividad_palanca_maxima rc=0 segundos=1410
+    delegar_tarea_base_comun_seguimiento rc=0 segundos=1742
+    detectar_palanca_negativa_actividad_mando rc=0 segundos=1775
+    supervisar_decision_delegada_preguntas_concretas rc=0 segundos=935
+    supervisar_tarea_delegada_etapa_menor_valor rc=0 segundos=1489
+    identificar_paso_limitante_jornada_desfases rc=0 segundos=1083
+    agrupar_tareas_semejantes_aprovechar_preparacion rc=0 segundos=1216
+    decir_no_trabajo_excede_capacidad rc=0 segundos=1682
+    usar_calendario_herramienta_planificacion_produccion rc=0 segundos=1656
+    llevar_inventario_proyectos_discrecionales rc=0 segundos=1435
+    buscar_regularidad_bloques_iguales_trabajo_mando rc=0 segundos=2255
+    agrupar_interrupciones_subordinados_reuniones_regulares rc=0 segundos=1652
+    preparar_respuestas_estandar_interrupciones_repetidas rc=0 segundos=2132
+    canalizar_interrupciones_cartel_hora_oficina rc=0 segundos=2096
+    dimensionar_numero_subordinados_medio_dia_semanal rc=0 segundos=3779
+    TODOS TERMINADOS 2026-09-24 03:21:22
+
+**`22` de `22` con `rc=0`, de `01:13:58` a `03:21:22`, `2` h `7` min.** Poblacion `479` en los `22`
+(`368` del grafo mas `111` de bandejas, primera linea de cada `.v66ext/barrido_<id>.txt`). **Cero vivos al
+cerrar**: `ps -W` no lista ningun `python` de la forja tras el `TODOS TERMINADOS`.
+
+**Lo que levanta, en una linea:** `19` de los `22` levantan vecinos, **`99` pares en el sentido del candidato**;
+tres no levantan ninguno (`delegar_tarea_base_comun_seguimiento`, `detectar_palanca_negativa_actividad_mando`,
+`dimensionar_numero_subordinados_medio_dia_semanal`). **Solo cuatro vecinos viven en el grafo**:
+`detectar_arreglar_fallo_etapa_menor_valor` (desde `supervisar_tarea_delegada_etapa_menor_valor`) y tres de otros
+libros desde el paso `4` de `agrupar_interrupciones_subordinados_reuniones_regulares`. **Los `17` nuevos de la
+cosecha de Marquet no levantan ninguno.** Los ocho primeros de `cap_04` (`P7` a `P20`) se levantan todos contra
+todos por similitud de texto entre `0,39` y `0,54`: la prosa comun de sus resumenes, que es `d058`.
+
+### 66.3.3. Los veredictos listos, uno por vecino, y su comprobacion por instrumento
+
+`.v66ext/veredictos_listos.txt`: **un bloque por candidato, en el formato de `--veredicto`**, leidos con los pasos de
+los dos delante (`python .v64aud/pasos.py <a> <b>`) y por la vara `6.1`, y solo esa. **Tres `CONTINUA`** (el par
+`reunir` y `escalonar` en sus dos bloques, `D66.8`, y `detectar_arreglar_fallo_etapa_menor_valor` en el de
+`supervisar_tarea_delegada_etapa_menor_valor`), **`96` `SANO`**, cero `REPITE`. La comprobacion es una copia de
+`.v64ext/comprobar_veredictos.py` que lee los vecinos del barrido de hoy:
+
+<!-- TALLADO: parcial salida=.v66ext/comprobar_veredictos.txt -->
+
+    $ python .v66ext/comprobar_veredictos.py | grep -v '^  OK'
+    reunir_informacion_gerencial_vias_variadas         lineas 7 | levantados hoy 7 | FALTAN 0 | SOBRAN 0
+    escalonar_fuentes_informacion_gerencial            lineas 7 | levantados hoy 7 | FALTAN 0 | SOBRAN 0
+    programar_visita_area_observar_despachar           lineas 7 | levantados hoy 7 | FALTAN 0 | SOBRAN 0
+    transmitir_objetivos_prioridades_preferencias      lineas 7 | levantados hoy 7 | FALTAN 0 | SOBRAN 0
+    empujar_persona_reunion_direccion_preferida        lineas 7 | levantados hoy 7 | FALTAN 0 | SOBRAN 0
+    subir_productividad_gerencial_tres_vias            lineas 7 | levantados hoy 7 | FALTAN 0 | SOBRAN 0
+    buscar_actividad_alta_palanca_tres_vias            lineas 7 | levantados hoy 7 | FALTAN 0 | SOBRAN 0
+    elegir_momento_actividad_palanca_maxima            lineas 7 | levantados hoy 7 | FALTAN 0 | SOBRAN 0
+    detectar_palanca_negativa_actividad_mando          lineas 0 | levantados hoy 0 | FALTAN 0 | SOBRAN 0
+    delegar_tarea_base_comun_seguimiento               lineas 0 | levantados hoy 0 | FALTAN 0 | SOBRAN 0
+    supervisar_tarea_delegada_etapa_menor_valor        lineas 3 | levantados hoy 3 | FALTAN 0 | SOBRAN 0
+    supervisar_decision_delegada_preguntas_concretas   lineas 3 | levantados hoy 3 | FALTAN 0 | SOBRAN 0
+    identificar_paso_limitante_jornada_desfases        lineas 6 | levantados hoy 6 | FALTAN 0 | SOBRAN 0
+    agrupar_tareas_semejantes_aprovechar_preparacion   lineas 5 | levantados hoy 5 | FALTAN 0 | SOBRAN 0
+    decir_no_trabajo_excede_capacidad                  lineas 4 | levantados hoy 4 | FALTAN 0 | SOBRAN 0
+    usar_calendario_herramienta_planificacion_produccion lineas 1 | levantados hoy 1 | FALTAN 0 | SOBRAN 0
+    llevar_inventario_proyectos_discrecionales         lineas 6 | levantados hoy 6 | FALTAN 0 | SOBRAN 0
+    dimensionar_numero_subordinados_medio_dia_semanal  lineas 0 | levantados hoy 0 | FALTAN 0 | SOBRAN 0
+    buscar_regularidad_bloques_iguales_trabajo_mando   lineas 4 | levantados hoy 4 | FALTAN 0 | SOBRAN 0
+    preparar_respuestas_estandar_interrupciones_repetidas lineas 2 | levantados hoy 2 | FALTAN 0 | SOBRAN 0
+    agrupar_interrupciones_subordinados_reuniones_regulares lineas 8 | levantados hoy 8 | FALTAN 0 | SOBRAN 0
+    canalizar_interrupciones_cartel_hora_oficina       lineas 1 | levantados hoy 1 | FALTAN 0 | SOBRAN 0
+    secciones 22 de 22, lineas 99, ilegibles 0, vecinos sin linea 0, lineas sin vecino 0
+    
+    ARISTAS POR LECTURA (SOSTENGO) contra el barrido de hoy
+      construir_flujo_produccion_paso_limitante          > identificar_paso_limitante_jornada_desfases          levantada hoy: NO
+      delegar_tarea_base_comun_seguimiento               > supervisar_tarea_delegada_etapa_menor_valor          levantada hoy: NO
+      delegar_tarea_base_comun_seguimiento               > supervisar_decision_delegada_preguntas_concretas     levantada hoy: NO
+      transmitir_objetivos_prioridades_preferencias      > delegar_tarea_base_comun_seguimiento                 levantada hoy: NO
+      variar_frecuencia_inspeccion_nivel_calidad         > supervisar_tarea_delegada_etapa_menor_valor          levantada hoy: NO
+      identificar_paso_limitante_jornada_desfases        > usar_calendario_herramienta_planificacion_produccion levantada hoy: NO
+      agrupar_tareas_semejantes_aprovechar_preparacion   > agrupar_interrupciones_subordinados_reuniones_regulares levantada hoy: NO
+      buscar_regularidad_bloques_iguales_trabajo_mando   > canalizar_interrupciones_cartel_hora_oficina         levantada hoy: NO
+      representar_actividad_caja_negra_ventanas          > buscar_regularidad_bloques_iguales_trabajo_mando     levantada hoy: NO
+
+### 66.3.4. Las aristas por lectura (`D.29`, `D.53`), en `.v66ext/aristas_lectura.txt`
+
+**Nueve `SOSTENGO` y cuatro `NO SOSTENGO`**, cada una con el paso de la madre y el del hijo, su linea del libro y su
+razon. La comprobacion de arriba dice que **ninguna de las nueve la levanta el barrido de hoy**: por eso van aqui y no
+en los veredictos. Se cablean en la `67` con `python forja.py arista`, en el acto de insertar el hijo.
+
+| madre | hijo | pasos | linea |
+|---|---|---|---|
+| `construir_flujo_produccion_paso_limitante` (grafo) | `identificar_paso_limitante_jornada_desfases` | madre `5`, hijo `2` | `cap_04` `L267` |
+| `delegar_tarea_base_comun_seguimiento` | `supervisar_tarea_delegada_etapa_menor_valor` | madre `7`, hijo `1` | `cap_04` `L253` |
+| `delegar_tarea_base_comun_seguimiento` | `supervisar_decision_delegada_preguntas_concretas` | madre `7`, hijo `2` | `cap_04` `L257` |
+| `transmitir_objetivos_prioridades_preferencias` | `delegar_tarea_base_comun_seguimiento` | madre `3`, hijo `2` | `cap_04` `L159` (`D66.10`) |
+| `variar_frecuencia_inspeccion_nivel_calidad` (grafo) | `supervisar_tarea_delegada_etapa_menor_valor` | madre `2`, hijo `4` | `cap_04` `L253` (`D66.10`) |
+| `identificar_paso_limitante_jornada_desfases` | `usar_calendario_herramienta_planificacion_produccion` | madre `4`, hijo `6` | `cap_04` `L275` |
+| `agrupar_tareas_semejantes_aprovechar_preparacion` | `agrupar_interrupciones_subordinados_reuniones_regulares` | madre `3`, hijo `1` | `cap_04` `L317` |
+| `buscar_regularidad_bloques_iguales_trabajo_mando` | `canalizar_interrupciones_cartel_hora_oficina` | madre `1`, hijo `8` | `cap_04` `L323` (`D66.11`) |
+| `representar_actividad_caja_negra_ventanas` (grafo) | `buscar_regularidad_bloques_iguales_trabajo_mando` | madre `8`, hijo `5` | `cap_04` `L305` (`D66.11`) |
+
+Las lineas, por instrumento (`D.35`):
+
+    $ for p in 'what is the' 'monitor at the lowest-added-value stage' 'By monitoring their decision-making process' 'constitutes a key to successful delegation' 'A second principle applies to the frequency' 'limiting steps' 'the production principle of batching' 'To make something regular that was once irregular' 'cutting windows into the black box'; do grep -n -o -F "$p" fuentes/grove_high_output/cap_04.md | head -1; done
+    267:what is the
+    253:monitor at the lowest-added-value stage
+    257:By monitoring their decision-making process
+    159:constitutes a key to successful delegation
+    253:A second principle applies to the frequency
+    275:limiting steps
+    317:the production principle of batching
+    323:To make something regular that was once irregular
+    305:cutting windows into the black box
+
+**Las dos que se cobraban aqui:**
+
+- **`d072`, SOSTENIDA**: `construir_flujo_produccion_paso_limitante` madre de `identificar_paso_limitante_jornada_desfases`,
+  madre paso `5` (fija el paso limitante) e hijo paso `2` (*identifica primero tu paso limitante preguntandote cual es
+  el huevo de tu trabajo*); el paso `4` del hijo, *crea desfases*, es el paso `9` de la madre, y `L267` remite al huevo
+  de `cap_02`. **El barrido de hoy tampoco la levanta desde el hijo** (`levantada hoy: NO` arriba); el lado de la madre
+  no se barrio hoy, porque ya esta en el grafo.
+- **La arista EN COLA de la `65`** (`65.4.b`), `detectar_arreglar_fallo_etapa_menor_valor` a
+  `supervisar_tarea_delegada_etapa_menor_valor`: **el barrido de `supervisar` SI levanta a `detectar`**, por familia de
+  id, y por eso **su linea `CONTINUA` con `madre=` va en sus veredictos** y no aqui:
+
+      $ python -c "import json; d=json.load(open('.v66ext/vecinos_supervisar_tarea_delegada_etapa_menor_valor.json', encoding='utf-8')); v=d['vecinos'][0]; print(v['id'], v['sede'], v['levantada_por'], v['senales'])"
+      detectar_arreglar_fallo_etapa_menor_valor grafo ['familia_id'] {'similitud_texto': 0.226, 'familia_id': 0.333, 'paso_contra_nodo': 0.435}
+
+  Al insertar `supervisar` en la `67`, esa linea cablea la arista en el acto, como la fila `5` de la `65` pago la que
+  la fila `1` dejo en cola.
+
+**`D.37`, mirado:** dos titulos de `cap_04` dicen cuantas partes tienen y las nombran:
+`subir_productividad_gerencial_tres_vias` (ritmo, palanca y mezcla, `L197` a `L201`) y
+`buscar_actividad_alta_palanca_tres_vias` (mucha gente, acto breve de efecto largo, saber unico, `L209` a `L213`).
+**Ninguna de esas seis partes es un nodo**: no hay arista cabeza a parte que declarar. Las dos responsabilidades que
+`L279` numera si son nodos (`usar_calendario_herramienta_planificacion_produccion` y
+`decir_no_trabajo_excede_capacidad`), pero **no hay cabeza**: `L279` no tiene ficha. Lo que la estructura del libro
+cuelga de las tres vias de `subir` lo leo y no lo sostengo, con su razon, en la fila `NO SOSTENGO` de
+`.v66ext/aristas_lectura.txt` (`D66.9`).
+
+**Los cuatro `NO SOSTENGO`**, con su razon en el fichero: `detectar_arreglar_fallo_etapa_menor_valor` a
+`decir_no_trabajo_excede_capacidad` (el *we have learned* de `L285`, dos consecuencias del mismo principio);
+`subir_productividad_gerencial_tres_vias` a los cinco principios de produccion (`D66.9`);
+`usar_calendario_herramienta_planificacion_produccion` a `buscar_regularidad_bloques_iguales_trabajo_mando` (el *as
+noted* de `L305` comparte principio, no procedimiento); `dimensionar_inventario_materia_prima_reposicion` a
+`llevar_inventario_proyectos_discrecionales` (analogia).
+
+### 66.3.5. El orden de insercion de los `22`, con una copia de `.v64ext/orden.py`
+
+`.v66ext/orden.py`: rutas cambiadas a `cap_04`, el informe de cada fila es su barrido de hoy, y **una madre que ya
+esta en el grafo no ordena nada** (la copia lo dice en su cabecera). **El orden del libro rompia `D.36` en un par**,
+`llevar_inventario_proyectos_discrecionales` levanta a `preparar_respuestas_estandar_interrupciones_repetidas` y no al
+reves, asi que `llevar` pasa detras de `preparar`; todo lo demas va en el orden de sus piezas.
+
+<!-- TALLADO: parcial salida=.v66ext/orden.txt -->
+
+    $ python .v66ext/orden.py
+    #   candidato                                                cap    pza  madre(s)                                           pob  dijo       vec  lin   listos
+    1   reunir_informacion_gerencial_vias_variadas               cap_04 P7   -                                                  479  BLOQUEARIA 7    7     SI
+    2   escalonar_fuentes_informacion_gerencial                  cap_04 P9   reunir_informacion_gerencial_vias_variadas         479  BLOQUEARIA 7    7     SI
+    3   programar_visita_area_observar_despachar                 cap_04 P10  -                                                  479  BLOQUEARIA 7    7     SI
+    4   transmitir_objetivos_prioridades_preferencias            cap_04 P11  -                                                  479  BLOQUEARIA 7    7     SI
+    5   empujar_persona_reunion_direccion_preferida              cap_04 P13  -                                                  479  BLOQUEARIA 7    7     SI
+    6   subir_productividad_gerencial_tres_vias                  cap_04 P18  -                                                  479  BLOQUEARIA 7    7     SI
+    7   buscar_actividad_alta_palanca_tres_vias                  cap_04 P19  -                                                  479  BLOQUEARIA 7    7     SI
+    8   elegir_momento_actividad_palanca_maxima                  cap_04 P20  -                                                  479  BLOQUEARIA 7    7     SI
+    9   detectar_palanca_negativa_actividad_mando                cap_04 P21  -                                                  479  ENTRARIA   0    0     SI
+    10  delegar_tarea_base_comun_seguimiento                     cap_04 P27  transmitir_objetivos_prioridades_preferencias      479  ENTRARIA   0    0     SI
+    11  supervisar_tarea_delegada_etapa_menor_valor              cap_04 P29  delegar_tarea_base_comun_seguimiento, detectar_arreglar_fallo_etapa_menor_valor, variar_frecuencia_inspeccion_nivel_calidad 479  BLOQUEARIA 3    3     SI
+    12  supervisar_decision_delegada_preguntas_concretas         cap_04 P30  delegar_tarea_base_comun_seguimiento               479  BLOQUEARIA 3    3     SI
+    13  identificar_paso_limitante_jornada_desfases              cap_04 P32  construir_flujo_produccion_paso_limitante          479  BLOQUEARIA 6    6     SI
+    14  agrupar_tareas_semejantes_aprovechar_preparacion         cap_04 P33  -                                                  479  BLOQUEARIA 5    5     SI
+    15  decir_no_trabajo_excede_capacidad                        cap_04 P34  -                                                  479  BLOQUEARIA 4    4     SI
+    16  usar_calendario_herramienta_planificacion_produccion     cap_04 P34  identificar_paso_limitante_jornada_desfases        479  BLOQUEARIA 1    1     SI
+    17  dimensionar_numero_subordinados_medio_dia_semanal        cap_04 P38  -                                                  479  ENTRARIA   0    0     SI
+    18  buscar_regularidad_bloques_iguales_trabajo_mando         cap_04 P39  representar_actividad_caja_negra_ventanas          479  BLOQUEARIA 4    4     SI
+    19  preparar_respuestas_estandar_interrupciones_repetidas    cap_04 P41  -                                                  479  BLOQUEARIA 2    2     SI
+    20  llevar_inventario_proyectos_discrecionales               cap_04 P36  -                                                  479  BLOQUEARIA 6    6     SI   <- corte del tope
+    21  agrupar_interrupciones_subordinados_reuniones_regulares  cap_04 P42  agrupar_tareas_semejantes_aprovechar_preparacion   479  BLOQUEARIA 8    8     SI
+    22  canalizar_interrupciones_cartel_hora_oficina             cap_04 P44  buscar_regularidad_bloques_iguales_trabajo_mando   479  BLOQUEARIA 1    1     SI
+    
+    COMPROBACIONES
+      hijo delante de su madre: 0 []
+      D.36, par que levanta en un solo sentido con el que lo levanta entrando antes: 0 []
+      hijo dentro del tope con su madre fuera: 0 []
+      tanda propuesta: 20 de 22; fuera del tope: agrupar_interrupciones_subordinados_reuniones_regulares, canalizar_interrupciones_cartel_hora_oficina
+
+**Las tres comprobaciones en cero. Entran en la `67` las filas `1` a `20`; `agrupar_interrupciones` y `canalizar`
+pasan a la `68`**, y sus dos madres de lectura (`agrupar_tareas`, fila `14`, y `buscar_regularidad`, fila `18`)
+quedan dentro del tope.
+
+**`T3` CERRADA: las cinco partes hechas, ninguna fila vacia, ninguno insertado.**

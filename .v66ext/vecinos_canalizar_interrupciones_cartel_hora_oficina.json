@@ -1,0 +1,20 @@
+{
+ "id": "canalizar_interrupciones_cartel_hora_oficina",
+ "grafo": 368,
+ "bandejas": 111,
+ "vecinos": [
+  {
+   "id": "agrupar_interrupciones_subordinados_reuniones_regulares",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.408,
+    "familia_id": 0.111,
+    "paso_contra_nodo": 0.422
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 8 del candidato contra paso 2 de agrupar_interrupciones_subordinados_reuniones_regulares"
+  }
+ ]
+}
