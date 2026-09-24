@@ -1,0 +1,21 @@
+.v67ext\insertar_01_reunir_informacion_gerencial_vias_variadas.txt       codigo 0   1489.5 s  fin 2026-09-24 07:07:15
+.v67ext\insertar_02_escalonar_fuentes_informacion_gerencial.txt          codigo 0   1500.1 s  fin 2026-09-24 07:33:19
+.v67ext\insertar_03_programar_visita_area_observar_despachar.txt         codigo 0   1485.7 s  fin 2026-09-24 07:58:59
+.v67ext\insertar_04_transmitir_objetivos_prioridades_preferencias.txt    codigo 0   1447.1 s  fin 2026-09-24 08:24:09
+.v67ext\insertar_05_empujar_persona_reunion_direccion_preferida.txt      codigo 0   1314.7 s  fin 2026-09-24 08:46:57
+.v67ext\insertar_06_subir_productividad_gerencial_tres_vias.txt          codigo 0   1138.4 s  fin 2026-09-24 09:06:48
+.v67ext\insertar_07_buscar_actividad_alta_palanca_tres_vias.txt          codigo 0   1210.7 s  fin 2026-09-24 09:27:48
+.v67ext\insertar_08_elegir_momento_actividad_palanca_maxima.txt          codigo 0   1481.6 s  fin 2026-09-24 09:53:25
+.v67ext\insertar_09_detectar_palanca_negativa_actividad_mando.txt        codigo 0   1897.0 s  fin 2026-09-24 10:25:53
+.v67ext\insertar_10_delegar_tarea_base_comun_seguimiento.txt             codigo 0   1960.4 s  fin 2026-09-24 10:59:41
+.v67ext\insertar_11_supervisar_tarea_delegada_etapa_menor_valor.txt      codigo 0   1588.2 s  fin 2026-09-24 11:27:30
+.v67ext\insertar_12_supervisar_decision_delegada_preguntas_concretas.txt codigo 0    985.8 s  fin 2026-09-24 11:45:04
+.v67ext\insertar_13_identificar_paso_limitante_jornada_desfases.txt      codigo 0   1150.5 s  fin 2026-09-24 12:05:09
+.v67ext\insertar_14_agrupar_tareas_semejantes_aprovechar_preparacion.txt codigo 0   1284.3 s  fin 2026-09-24 12:27:56
+.v67ext\insertar_15_decir_no_trabajo_excede_capacidad.txt                codigo 0   1871.9 s  fin 2026-09-24 13:00:09
+.v67ext\insertar_16_usar_calendario_herramienta_planificacion_produccion.txt codigo 0   1766.7 s  fin 2026-09-24 13:30:29
+.v67ext\insertar_17_dimensionar_numero_subordinados_medio_dia_semanal.txt codigo 0   3988.1 s  fin 2026-09-24 14:37:50
+.v67ext\insertar_18_buscar_regularidad_bloques_iguales_trabajo_mando.txt codigo 0   2424.9 s  fin 2026-09-24 15:19:18
+.v67ext\insertar_19_preparar_respuestas_estandar_interrupciones_repetidas.txt codigo 0   2186.2 s  fin 2026-09-24 15:56:36
+.v67ext\insertar_20_llevar_inventario_proyectos_discrecionales.txt       codigo 0   1465.9 s  fin 2026-09-24 16:21:51
+insertar: 20 | minimo 985.8 s | mediana 1487.6 s | maximo 3988.1 s | suma 33637.7 s (9.34 h)

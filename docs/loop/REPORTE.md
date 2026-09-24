@@ -59706,6 +59706,8 @@ leido en la `ACTA 65` `65.4.b`:
     207: These can be achieved in three basic ways:
     219: Leverage can also be negative. Some managerial activities can reduce the output of an organization. I mean something very simple. Suppose I am a key participant at a meet
 
+<!-- TALLADO: parcial salida=.v67ext/pasos_conjunta.txt -->
+
 | | par | decido, por `6.1` y solo esa | la razon, en una linea |
 |---|---|---|---|
 | `C1` | `subir_productividad` con `buscar_actividad` | **`CONTINUA`, madre `subir`. GANA LA LINEA DEL AUDITOR** | **la tension se resuelve del lado de los medios:** ritmo, palanca y mezcla son objetos de trabajo que L197 a L201 nombran uno a uno, asi que `subir` pasa `9.1` y entra en esta tanda. La condicion escrita de `buscar` es el producto de los pasos `3` y `4` de `subir`, y L203 abre su tramo. **Mi razon vieja usaba `9.1` restriccion `1` para decidir una arista, que es lo que la restriccion `3` prohibe** |
@@ -60262,3 +60264,200 @@ La aduana de hoy: **BLOQUEARIA** con `6` vecino(s) contra `479`; lineas `--vered
 | `identificar_paso_limitante_jornada_desfases` | similitud_texto | 0.394 | 0.000 | 0.392 | SANO |
 
 **Los seis vecinos son los seis de su bloque y las seis lineas se pasaron tal cual.** Sin arista. **Es el corte del tope: aqui acaba la tanda.**
+
+
+**`T4` CERRADA: las `20` filas dentro, una por vez**, cada una con su `.fin` en `0`, ninguna arrancada antes de que
+volviera la anterior, y en todas los vecinos de hoy fueron exactamente los de su bloque: **cero vecinos sin linea, cero
+lineas sin vecino, cero `CAERIA`, cero lecturas mias nuevas en esta vuelta.** `agrupar_interrupciones` y `canalizar` siguen
+en la bandeja para la `68`, con sus dos aristas.
+
+**Correccion declarada de la nota de la fila `11`**: dice que el `--paso 2` de `variar` es *el primero del tramo `2 a 4` que
+su fila cita en la madre*. La columna de su fila dice `madre paso 2` a secas; el tramo `2 a 4` es de su razon. El paso
+cableado es el que la fila cita, y no cambia nada.
+
+## 67.5. TAREA 5: EL CIERRE
+
+### 67.5.a. El censo antes y despues
+
+<!-- TALLADO: parcial salida=.v67ext/censo_cierre.txt -->
+
+    $ bash .v67ext/censo.sh
+    nodos en dataset/nodos.jsonl        : 388
+    veredictos en bitacora              : 893
+    pares mutuos                        : 1
+    bandeja cuarentena/grove_high_output: 49
+    insertados de grove_high_output     : 43
+    cerrojos en procesos/               : 
+
+| | al abrir (`67.0`) | al cerrar | delta |
+|---|---:|---:|---:|
+| nodos | `368` | `388` | `+20` |
+| veredictos | `796` | `893` | `+97`: `90` lineas `--veredicto` de las `20` filas y `7` aristas por lectura |
+| pares mutuos | `1` | `1` | `0` |
+| bandeja de Grove | `69` | `49` | `-20` |
+| insertados de Grove | `23` | `43` | `+20` |
+
+**`388`, `49` y `43`, los del encargo.** **`procesos/` vacio al abrir y al cerrar.** Las `90` lineas son la suma de la
+columna `lin` de las filas `1` a `20` de `.v67ext/orden.txt` (`67.2`).
+
+El `$ bash .v67ext/censo.sh` de `67.0` es el estado de apertura y hoy imprime el de cierre; **se reproduce contra el
+commit de apertura**, `5e3664f`:
+
+    $ for f in dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl config/pares_mutuos.jsonl; do echo "$f $(git show 5e3664f:$f | wc -l)"; done; for d in cuarentena/grove_high_output/ cuarentena/_insertados/grove_high_output/; do echo "$d $(git ls-tree --name-only 5e3664f $d | grep -c '\.json$')"; done
+    dataset/nodos.jsonl 368
+    bitacora/VEREDICTOS.jsonl 796
+    config/pares_mutuos.jsonl 1
+    cuarentena/grove_high_output/ 69
+    cuarentena/_insertados/grove_high_output/ 23
+
+### 67.5.b. Las aristas de la tanda, contadas por instrumento
+
+`.v67ext/aristas_vuelta.py`, copia de `.v65ext/aristas_vuelta.py` que lee la bitacora desde la linea `797` y cruza con
+las esperadas de los dos ficheros de la `66` tras la `T2`:
+
+    $ python .v67ext/aristas_vuelta.py
+    registros de la vuelta en la bitacora: 97
+    EN GRAFO   veredicto CONTINUA  reunir_informacion_gerencial_vias_variadas > escalonar_fuentes_informacion_gerencial
+    EN GRAFO   veredicto CONTINUA  reunir_informacion_gerencial_vias_variadas > escalonar_fuentes_informacion_gerencial
+    EN GRAFO   veredicto CONTINUA  subir_productividad_gerencial_tres_vias > buscar_actividad_alta_palanca_tres_vias
+    EN GRAFO   veredicto CONTINUA  subir_productividad_gerencial_tres_vias > buscar_actividad_alta_palanca_tres_vias
+    EN GRAFO   veredicto CONTINUA  buscar_actividad_alta_palanca_tres_vias > elegir_momento_actividad_palanca_maxima
+    EN GRAFO   veredicto CONTINUA  buscar_actividad_alta_palanca_tres_vias > elegir_momento_actividad_palanca_maxima
+    EN GRAFO   lectura declarada   transmitir_objetivos_prioridades_preferencias > delegar_tarea_base_comun_seguimiento
+    EN GRAFO   veredicto CONTINUA  detectar_arreglar_fallo_etapa_menor_valor > supervisar_tarea_delegada_etapa_menor_valor
+    EN GRAFO   lectura declarada   delegar_tarea_base_comun_seguimiento > supervisar_tarea_delegada_etapa_menor_valor
+    EN GRAFO   lectura declarada   variar_frecuencia_inspeccion_nivel_calidad > supervisar_tarea_delegada_etapa_menor_valor
+    EN GRAFO   lectura declarada   delegar_tarea_base_comun_seguimiento > supervisar_decision_delegada_preguntas_concretas
+    EN GRAFO   lectura declarada   construir_flujo_produccion_paso_limitante > identificar_paso_limitante_jornada_desfases
+    EN GRAFO   lectura declarada   identificar_paso_limitante_jornada_desfases > usar_calendario_herramienta_planificacion_produccion
+    EN GRAFO   lectura declarada   representar_actividad_caja_negra_ventanas > buscar_regularidad_bloques_iguales_trabajo_mando
+    registros con arista: 14 | aristas DISTINTAS: 11 | en el grafo: 11 | en cola: 0 (un par CONTINUA leido desde sus dos lados deja dos registros y una sola arista)
+    esperadas: 11 | esperadas que viven en el grafo: 11 | esperadas sin registro: 0 | registradas no esperadas: 0
+
+**`11` esperadas, `11` en el grafo, `0` en cola, `0` sin registro y `0` registradas sin esperar.** Son las cuatro `CONTINUA`
+con `madre=` que cablea la aduana (`reunir` a `escalonar`, `C1`, `C2` y la EN COLA de la `65`) y las siete por lectura del
+encargo; `C3` no, porque es `NO SOSTENGO` (`D67.2`). **Ninguna sin adjudicar**: las cuatro `CONTINUA` y las siete
+`SOSTENGO` estan adjudicadas en la `ACTA 65` `65.4.b` o decididas en la conjunta de `67.2`, y `d072` esta pagada (fila `13`).
+
+### 67.5.c. `PASOS INVENTADOS POR CAPITULO`, de lo que ENTRO
+
+**Contado desde `.v66ext/fidelidad.tsv`**, la lectura entera que la `ACTA 65` `65.5` firmo en `0` de `156`, con la copia
+`.v67ext/pasos_inventados.py` cuya tanda son las filas `1` a `20`:
+
+<!-- TALLADO: parcial salida=.v67ext/pasos_inventados.txt -->
+
+    $ python .v67ext/pasos_inventados.py
+    candidato que ENTRO                                      cap     pasos   T   P
+    reunir_informacion_gerencial_vias_variadas               cap_04      8   8   0
+    escalonar_fuentes_informacion_gerencial                  cap_04      7   7   0
+    programar_visita_area_observar_despachar                 cap_04      8   8   0
+    transmitir_objetivos_prioridades_preferencias            cap_04      5   5   0
+    empujar_persona_reunion_direccion_preferida              cap_04      7   7   0
+    subir_productividad_gerencial_tres_vias                  cap_04      4   4   0
+    buscar_actividad_alta_palanca_tres_vias                  cap_04      4   4   0
+    elegir_momento_actividad_palanca_maxima                  cap_04      7   7   0
+    detectar_palanca_negativa_actividad_mando                cap_04      9   9   0
+    delegar_tarea_base_comun_seguimiento                     cap_04     10  10   0
+    supervisar_tarea_delegada_etapa_menor_valor              cap_04      9   9   0
+    supervisar_decision_delegada_preguntas_concretas         cap_04      6   6   0
+    identificar_paso_limitante_jornada_desfases              cap_04      5   5   0
+    agrupar_tareas_semejantes_aprovechar_preparacion         cap_04      6   6   0
+    decir_no_trabajo_excede_capacidad                        cap_04     10  10   0
+    usar_calendario_herramienta_planificacion_produccion     cap_04      7   7   0
+    dimensionar_numero_subordinados_medio_dia_semanal        cap_04     11  11   0
+    buscar_regularidad_bloques_iguales_trabajo_mando         cap_04      9   9   0
+    preparar_respuestas_estandar_interrupciones_repetidas    cap_04      6   6   0
+    llevar_inventario_proyectos_discrecionales               cap_04      5   5   0
+    entraron: 20 de la tanda de 20 | pasos sin fila de lectura: 0 []
+
+    | capitulo | candidatos que entraron | pasos | PUENTE | por ciento |
+    |---|---:|---:|---:|---:|
+    | `cap_04` | 20 | 143 | 0 | 0,00 |
+
+**`0` de `143`. Bajo el `10`.** Los `13` pasos que faltan hasta `156` son los de `agrupar_interrupciones` (`7`) y
+`canalizar` (`6`), que no entraron.
+
+### 67.5.d. `D.61`: los discutibles, cada uno ejecutado o cerrado
+
+| | que | estado |
+|---|---|---|
+| `D67.1` | `C2`, `buscar` madre de `elegir` | **EJECUTADO**: sus dos lineas corregidas (`67.2`) y la arista cableada por la aduana en la fila `8` |
+| `D67.2` | `C3`, `NO SOSTENGO` de `buscar` a `detectar` | **EJECUTADO**: su fila `NO SOSTENGO` en `.v66ext/aristas_lectura.txt`, y `detectar` entro sin arista en la fila `9`. Si la `ACTA` lo tumba, la arista se cablea con `forja.py arista` sin mover dato |
+| `D67.3` | la razon reescrita del `NO SOSTENGO` de `subir` a los cinco | **EJECUTADO**: la fila vieja comentada encima, la nueva debajo; ninguna arista cableada |
+| `D67.4` | `subir` con `elegir`, `SANO` con razon reescrita | **EJECUTADO** en sus dos lineas, pasadas en las filas `6` y `8` |
+| `D67.5` | la copia de `insertar.py` que salta las lineas `#` | **EJECUTADO**: la cabecera de cada `.v67ext/insertar_*.txt` lista las lineas pasadas, y en las `20` coinciden con `vec` y `lin` de su fila del orden |
+
+**Ninguno abierto.**
+
+### 67.5.e. Las guardas
+
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 388
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+
+    $ python forja.py guiones
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+
+    $ tail -2 .v67ext/cierre_tests.txt
+      total: 379 pruebas, 0 fallos, 0 errores
+    ========================================================================
+
+(`.v67ext/cierre_tests.txt` es la salida entera de `python tests/test_aceptacion.py`, corrida al cerrar con codigo `0`.)
+
+### 67.5.f. El reloj
+
+    $ python .v67ext/relojes.py | tail -1
+    insertar: 20 | minimo 985.8 s | mediana 1487.6 s | maximo 3988.1 s | suma 33637.7 s (9.34 h)
+
+**No son techos: es lo que costo.** La fila `17` tardo `3988,1` s, el doble que la mediana, sin vecinos que leer; **no he
+medido por que**, y no lo adivino. **Ningun proceso mio vive al cerrar el turno**: los `20` `.fin` en `0` (`.v67ext/relojes.txt`)
+y `procesos/` vacio (`67.5.a`).
+
+
+### 67.5.g. El cierre estricto, en verde
+
+**Correccion declarada antes del verde:** la primera corrida (codigo `1`) marco `SIN COMPROBAR` una sola tabla, la de
+decisiones de `C1` a `C3` en `67.2`: el tallador le atribuyo la frase *salida entera en `.v67ext/pasos_conjunta.txt`*,
+que habla del bloque de pasos de encima. La tabla cita las condiciones que ese fichero imprime y no lo reproduce, asi
+que lleva ahora encima `<!-- TALLADO: parcial salida=.v67ext/pasos_conjunta.txt -->`, anadido al cerrar, y se cuenta
+como cita. **No se tecleo ninguna celda.** La segunda corrida, con la salida entera (y la de las pruebas que lanza, que va por stderr) en
+`.v67ext/cierre_reporte.txt`:
+
+    $ python scripts/cerrar_reporte.py 2>/dev/null | grep -E '^(TALLADO|CENSO|TABLA DE CIERRE|CIERRE|GATE|BARRIDO)'
+    TALLADO DEL REPORTE (D.41): la tabla que dice ser de instrumento
+    TALLADO VERDE: las 157 tabla(s) comprobables son las de su instrumento, celda a celda.
+    CENSO DE RUTAS (D.42): la unidad de la ruta es la celda
+    CENSO VERDE: las 948 rutas publicadas sostienen lo que dicen sostener.
+    TABLA DE CIERRE DE TAREAS (D.52): toda tabla del reporte declara su instrumento
+    TABLA DE CIERRE VERDE: ninguna celda medible difiere del dato.
+    GATE VERDE.
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+    CIERRE VERDE: las cuatro guardas que muerden, el tallado y el censo. La vigencia corrio y publico su cuenta arriba: es cola, no guarda (D.15).
+
+**Ningun rojo.**
+
+**Tabla de tareas, al cerrar:**
+
+| tarea | que | estado |
+|---|---|---|
+| `T1` | los registros de la `ACTA 65` | **CERRADA** (`67.1`) |
+| `T2` | la relectura conjunta de `C1`, `C2` y `C3` | **CERRADA** (`67.2`): `C1` y `C2` `CONTINUA`, `C3` `NO SOSTENGO` |
+| `T3` | las `20` fichas contra `d8f4e2a` | **CERRADA** (`67.3`): `20` iguales |
+| `T4` | las filas `1` a `20`, una por vez | **CERRADA** (`67.4`): las `20` dentro, `11` aristas vivas |
+| `T5` | el cierre | **CERRADA** (`67.5`) |
+
+### 67.5.h. `R5`, medido con las dos copias de la cabecera cambiada a la `67`
+
+`.v67ext/pegado67.py` es `.v64ext/pegado64.py` y `.v67ext/bloques_mudos67.py` es `.v64aud/normal/bloques_mudos.py`, las
+dos con la cabecera del tramo en `# VUELTA 67 ` y el comentario de cabecera, nada mas cambiado. Corridas con todos los
+bloques `$` de la vuelta ya escritos, menos este:
+
+    $ python .v67ext/pegado67.py; python .v67ext/bloques_mudos67.py
+    bloques abiertos con `$` en el tramo de la vuelta 67 : 28
+    bloques que ROMPEN R1 (ACTA 60 60.15)                : 0
+    bloques abiertos con `$`: 22 | comandos `$`: 28 | comandos sin ninguna linea de salida en su bloque: 0
+
+**Cero bloques que rompen `R1` y cero comandos sin salida.** Corridos otra vez con el reporte ya entero cuentan `30`
+comandos y `24` bloques, con `0` rotos y `0` mudos: los dos de mas son el bloque del cierre estricto de `67.5.g` y este
+mismo, anexados en la misma pasada despues de que el instrumento corriera.
