@@ -59031,10 +59031,10 @@ anexa su fila al volver, con su commit. Si la vuelta se corta, lo que falte es e
 
 | tarea | que | estado |
 |---|---|---|
-| `T1` | los registros de la `ACTA 64` | ABIERTA |
-| `T2` | las filas `21` y `22`, una por vez | ABIERTA |
-| `T3` | `cap_04` listo: fidelidad entera, barrido, veredictos, aristas por lectura, orden | ABIERTA |
-| `T4` | el cierre: censo, `PASOS INVENTADOS`, `D.61`, `R5`, guardas, commit | ABIERTA |
+| `T1` | los registros de la `ACTA 64` | **CERRADA** (`66.1`) |
+| `T2` | las filas `21` y `22`, una por vez | **CERRADA**, las dos dentro (`66.2`) |
+| `T3` | `cap_04` listo: fidelidad entera, barrido, veredictos, aristas por lectura, orden | **CERRADA**, ninguno insertado (`66.3`) |
+| `T4` | el cierre: censo, `PASOS INVENTADOS`, `D.61`, `R5`, guardas, commit | **CERRADA** (`66.4`), con el rojo de `d167` declarado |
 
 ## 66.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
 
@@ -59446,3 +59446,140 @@ pasan a la `68`**, y sus dos madres de lectura (`agrupar_tareas`, fila `14`, y `
 quedan dentro del tope.
 
 **`T3` CERRADA: las cinco partes hechas, ninguna fila vacia, ninguno insertado.**
+
+## 66.4. TAREA 4: EL CIERRE
+
+### 66.4.a. El censo antes y despues
+
+<!-- TALLADO: parcial salida=.v66ext/censo_cierre.txt -->
+
+    $ bash .v66ext/censo.sh
+    nodos en dataset/nodos.jsonl        : 368
+    veredictos en bitacora              : 796
+    pares mutuos                        : 1
+    bandeja cuarentena/grove_high_output: 69
+    insertados de grove_high_output     : 23
+    cerrojos en procesos/               : 
+
+| | al abrir (`66.0`) | al cerrar | delta |
+|---|---:|---:|---:|
+| nodos | `366` | `368` | `+2` |
+| veredictos | `795` | `796` | `+1`: la linea `--veredicto` de la fila `22` |
+| pares mutuos | `1` | `1` | `0` |
+| bandeja de Grove | `71` | `69` | `-2` |
+| insertados de Grove | `21` | `23` | `+2` |
+
+**`368` y `69`, los del encargo.** La fila `21` entro sin linea y sin arista; la `22` con su linea `SANO` y sin arista.
+**`procesos/` vacio al abrir y al cerrar**: ningun cerrojo que romper, ninguno dejado.
+
+### 66.4.b. `PASOS INVENTADOS POR CAPITULO`
+
+**Lo que ENTRO, `cap_03`, las dos filas**, contado desde su lectura entera adjudicada (`.v63aud/fidelidad.tsv`, que la
+`ACTA 62` `62.6` da `0` de `80` para los de `cap_03` de la `63`), con la copia de `.v65ext/pasos_inventados.py` cuya
+tanda son las filas `21` y `22`:
+
+<!-- TALLADO: parcial salida=.v66ext/pasos_inventados.txt -->
+
+    $ python .v66ext/pasos_inventados.py
+    candidato que ENTRO                                cap     pasos   T   P
+    variar_frecuencia_inspeccion_nivel_calidad         cap_03      6   6   0
+    simplificar_trabajo_reducir_numero_pasos           cap_03      7   7   0
+    entraron: 2 de la tanda de 2 | pasos sin fila de lectura: 0 []
+    
+    | capitulo | candidatos que entraron | pasos | PUENTE | por ciento |
+    |---|---:|---:|---:|---:|
+    | `cap_03` | 2 | 13 | 0 | 0,00 |
+
+**Y aparte `cap_04`, que es preparacion y no entrada** (`66.3.1`, `.v66ext/contar_fidelidad.txt`):
+
+| capitulo | que | candidatos | pasos | PUENTE | por ciento |
+|---|---|---:|---:|---:|---:|
+| `cap_03` | ENTRO en esta vuelta | `2` | `13` | `0` | `0,00` |
+| `cap_04` | preparado para la `67`, no entro | `22` | `156` | `0` | `0,0` |
+
+**Los dos bajo el `10`.** Si caen como `P` todos los pasos de `D66.3` a `D66.7`, `cap_04` sale `8` de `156`, el `5,1`.
+
+### 66.4.c. `D.61`: los discutibles, cada uno ejecutado o cerrado
+
+| | que | estado |
+|---|---|---|
+| `D66.1` | el metodo de espera de la `65`, y leer `cap_04` entre dos esperas sin tocar dataset, bitacora ni bandeja | **EJECUTADO** dos veces: `.fin` en `0` las dos, sin solape (`66.2`); ninguna ficha de la bandeja se toco en toda la vuelta, porque la fidelidad no dio PUENTE |
+| `D66.2` | la copia de `pasos_y_huellas.py` con la ruta a `_insertados` | **EJECUTADO** (`66.2`): `22` iguales, `0` distintas |
+| `D66.3` a `D66.7` | las cinco marcas `T` dudosas de la fidelidad de `cap_04` | **CERRADOS** en `.v66ext/fidelidad.tsv` con su nota en la fila; la cifra si cayeran, dicha en `66.4.b` |
+| `D66.8` | `reunir` madre de `escalonar`, `CONTINUA` | **EJECUTADO** en sus dos bloques de `.v66ext/veredictos_listos.txt` y en el orden (fila `1` antes que la `2`) |
+| `D66.9` | las tres vias de `subir` como metas: `SANO` en tres bloques y `NO SOSTENGO` en aristas | **EJECUTADO** en los dos ficheros |
+| `D66.10` y `D66.11` | cuatro aristas por lectura nuevas | **EJECUTADO**: escritas en `.v66ext/aristas_lectura.txt` y metidas en el orden; se cablean en la `67` |
+
+**Ninguno abierto.** Los que la `ACTA 65` tumbe son caida dentro del marcado.
+
+### 66.4.d. Las guardas
+
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 368
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+    $ python forja.py guiones
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+    $ python tests/test_aceptacion.py | tail -2
+      total: 379 pruebas, 0 fallos, 0 errores
+    ========================================================================
+
+### 66.4.e. `R5`, medido con las dos copias de la cabecera cambiada a la `66`
+
+`.v66ext/pegado66.py` es `.v64ext/pegado64.py` y `.v66ext/bloques_mudos66.py` es `.v64aud/normal/bloques_mudos.py`,
+las dos con la cabecera del tramo en `# VUELTA 66 ` y nada mas cambiado. Corridas sobre el reporte con todos los
+bloques `$` de esta vuelta ya escritos, menos este y el del cierre estricto que viene detras:
+
+    $ python .v66ext/pegado66.py
+    bloques abiertos con `$` en el tramo de la vuelta 66 : 23
+    bloques que ROMPEN R1 (ACTA 60 60.15)                : 0
+    $ python .v66ext/bloques_mudos66.py
+    bloques abiertos con `$`: 11 | comandos `$`: 22 | comandos sin ninguna linea de salida en su bloque: 0
+
+**Cero bloques que rompen `R1` y cero comandos sin salida.** Lo que declaro sin que el instrumento lo pida: el
+`$ bash .v66ext/censo.sh` de `66.0` es el estado de apertura y hoy imprime el de cierre (`66.4.a`); se reproduce
+contra el commit de apertura:
+
+    $ for f in dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl config/pares_mutuos.jsonl; do echo "$f $(git show 94f98b2:$f | wc -l)"; done
+    dataset/nodos.jsonl 366
+    bitacora/VEREDICTOS.jsonl 795
+    config/pares_mutuos.jsonl 1
+
+### 66.4.f. El cierre estricto, y el unico rojo, que no es mio (`d167`)
+
+    $ python scripts/cerrar_reporte.py | grep -A1 "SIN COMPROBAR  docs"
+    SIN COMPROBAR  docs/loop/APERTURA_CIEGA.md linea 270
+      el instrumento no imprime ninguna tabla: esta la resume, no la reproduce
+    $ python scripts/cerrar_reporte.py | tail -5
+    CIERRE EN ROJO. No pasa: tallado del reporte (D.41)
+
+    Si lo que cayo es el tallado, la tabla NO se corrige tecleando:
+      python scripts/tallar_reporte.py --arreglar
+    y se escribe al lado de que caida sale (correccion declarada).
+
+**Salida entera en `.v66ext/cierre_reporte.txt`, codigo `1`. EL ROJO ES UNA SOLA LINEA Y ES LA DE `d167`**: la tabla
+de la apertura sellada del auditor de la `65`, `APERTURA_CIEGA.md` linea `270`, que el tallador no puede comprobar.
+**No toco `APERTURA_CIEGA.md`**: su sello no es mio. **De mi reporte**: `0` tablas que difieren, `0` rutas vacias,
+`0` rutas que caen en el censo, y la tabla de cierre, el gate, los guiones y la aceptacion en verde en la misma
+corrida (`.v66ext/cierre_reporte.txt` lineas `6`, `189`, `207`, `208` y `211`). **Ningun otro rojo.**
+
+**Ningun proceso mio vive al cerrar el turno**: los dos `insertar` volvieron con `.fin` en `0` (`00:49:07` y
+`01:12:39`), el barrido escribio su `TODOS TERMINADOS` a las `03:21:22` con los `22` en `rc=0`, y `procesos/` esta
+vacio.
+
+**Tabla de tareas, al cerrar:**
+
+| tarea | que | estado |
+|---|---|---|
+| `T1` | los registros de la `ACTA 64` | **CERRADA** (`66.1`) |
+| `T2` | las filas `21` y `22`, una por vez | **CERRADA**, las dos dentro (`66.2`) |
+| `T3` | `cap_04` listo: fidelidad entera, barrido, veredictos, aristas por lectura, orden | **CERRADA**, ninguno insertado (`66.3`) |
+| `T4` | el cierre | **CERRADA** (`66.4`), con el rojo de `d167` declarado |
+
+**`R5` vuelto a medir con el reporte ya entero**, este bloque aparte:
+
+    $ python .v66ext/pegado66.py
+    bloques abiertos con `$` en el tramo de la vuelta 66 : 28
+    bloques que ROMPEN R1 (ACTA 60 60.15)                : 0
+    $ python .v66ext/bloques_mudos66.py
+    bloques abiertos con `$`: 14 | comandos `$`: 27 | comandos sin ninguna linea de salida en su bloque: 0

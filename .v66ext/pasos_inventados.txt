@@ -1,0 +1,8 @@
+candidato que ENTRO                                cap     pasos   T   P
+variar_frecuencia_inspeccion_nivel_calidad         cap_03      6   6   0
+simplificar_trabajo_reducir_numero_pasos           cap_03      7   7   0
+entraron: 2 de la tanda de 2 | pasos sin fila de lectura: 0 []
+
+| capitulo | candidatos que entraron | pasos | PUENTE | por ciento |
+|---|---:|---:|---:|---:|
+| `cap_03` | 2 | 13 | 0 | 0,00 |
