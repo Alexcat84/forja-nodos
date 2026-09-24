@@ -60153,3 +60153,18 @@ La aduana de hoy: **BLOQUEARIA** con `5` vecino(s) contra `479`; lineas `--vered
 | `supervisar_decision_delegada_preguntas_concretas` | similitud_texto | 0.363 | 0.000 | 0.394 | SANO |
 
 **Los cinco vecinos son los cinco de su bloque y las cinco lineas se pasaron tal cual.** Sin arista en esta fila: la suya por lectura a `agrupar_interrupciones` es de la `68`.
+
+### Fila `15`: `decir_no_trabajo_excede_capacidad`, **INSERTADO** en `1871.9` s, codigo `0`, commit `7770b2c`
+
+La aduana de hoy: **BLOQUEARIA** con `4` vecino(s) contra `479`; lineas `--veredicto` pasadas: `4`. Salida entera en `.v67ext/insertar_15_decir_no_trabajo_excede_capacidad.txt`.
+
+<!-- TALLADO: parcial salida=.v67ext/insertar_15_decir_no_trabajo_excede_capacidad.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `usar_calendario_herramienta_planificacion_produccion` | similitud_texto | 0.365 | 0.000 | 0.441 | SANO |
+| `llevar_inventario_proyectos_discrecionales` | similitud_texto | 0.376 | 0.000 | 0.428 | SANO |
+| `agrupar_tareas_semejantes_aprovechar_preparacion` | similitud_texto | 0.354 | 0.000 | 0.417 | SANO |
+| `identificar_paso_limitante_jornada_desfases` | similitud_texto | 0.364 | 0.000 | 0.397 | SANO |
+
+**Los cuatro vecinos son los cuatro de su bloque y las cuatro lineas se pasaron tal cual**, `usar_calendario` `SANO` como la `ACTA 65` adjudico. Sin arista.
