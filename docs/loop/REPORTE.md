@@ -60474,8 +60474,8 @@ anexa su fila al volver, con su commit. Si la vuelta se corta, lo que falte es e
 
 | tarea | que | estado |
 |---|---|---|
-| `T1` | los registros de la `ACTA 66` | abierta (`68.1`) |
-| `T2` | las filas `21` y `22` de `cap_04`, una por vez | abierta: cada fila se anexa al volver su `insertar` (`68.2`) |
+| `T1` | los registros de la `ACTA 66` | **CERRADA** (`68.1`) |
+| `T2` | las filas `21` y `22` de `cap_04`, una por vez | **CERRADA**, las dos dentro (`68.2`) |
 | `T3` | `cap_05` y `cap_06` listos: fidelidad entera, barrido, veredictos, aristas por lectura, orden | abierta (`68.3`) |
 | `T4` | el cierre: censo, aristas, `PASOS INVENTADOS`, `D.61`, `R5`, guardas, huellas, commit | abierta (`68.4`) |
 
@@ -60582,3 +60582,112 @@ La aduana de hoy: **BLOQUEARIA** con `8` vecino(s) contra `479`; lineas `--vered
     GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: agrupar_tareas_semejantes_aprovechar_preparacion > agrupar_interrupciones_subordinados_reuniones_regulares
       razon en bitacora/VEREDICTOS.jsonl
 
+
+### Fila `22`: `canalizar_interrupciones_cartel_hora_oficina`, **INSERTADO** en `2153.7` s, codigo `0`, commit `fd88cdb`
+
+La aduana de hoy: **BLOQUEARIA** con `1` vecino(s) contra `479`; lineas `--veredicto` pasadas: `1`. Salida entera en `.v68ext/insertar_22_canalizar_interrupciones_cartel_hora_oficina.txt`.
+
+<!-- TALLADO: parcial salida=.v68ext/insertar_22_canalizar_interrupciones_cartel_hora_oficina.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `agrupar_interrupciones_subordinados_reuniones_regulares` | similitud_texto | 0.408 | 0.111 | 0.422 | SANO |
+
+**El vecino es el de su bloque y la linea se paso tal cual**; ninguno nuevo contra `479` (`389` del grafo mas `90` de bandejas, linea `7` de su salida), ninguno que dejara de levantarse.
+
+**Arista por lectura cableada con la madre ya en el grafo** (`D.29`, `D66.11`, sostenida en la `ACTA 65` `65.4.b`): `buscar_regularidad_bloques_iguales_trabajo_mando > canalizar_interrupciones_cartel_hora_oficina`, `--paso 1`, el que su fila (linea `13` de `.v66ext/aristas_lectura.txt`) cita. Salida entera en `.v68ext/arista_buscar_regularidad_bloques_iguales_trabajo_mando__canalizar_interrupciones_cartel_hora_oficina.txt`:
+
+    $ python forja.py arista --madre buscar_regularidad_bloques_iguales_trabajo_mando --hijo canalizar_interrupciones_cartel_hora_oficina --paso 1 --razon <fila 13> --veredicto CONTINUA --cita-veredicto <fila 13>
+    DECLARACION DE ARISTA POR LECTURA (D.37)
+      madre: buscar_regularidad_bloques_iguales_trabajo_mando
+      hijo : canalizar_interrupciones_cartel_hora_oficina
+      paso citado de la madre: 1
+        Aplica a tu trabajo de mando el siguiente concepto de produccion: ve hacia la regularidad.
+      señales del par: familia_id 0.0, paso_contra_nodo 0.471, similitud_texto 0.341
+        NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+    GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: buscar_regularidad_bloques_iguales_trabajo_mando > canalizar_interrupciones_cartel_hora_oficina
+      razon en bitacora/VEREDICTOS.jsonl
+
+
+**`T2` CERRADA: las dos dentro, una por vez, y `cap_04` queda entero en el grafo.** Cero solapes: la `21` volvio a las `17:51:24` y la `22` arranco a las `17:52:38` (`.v68ext/insertar_21_*.txt` linea final, `.v68ext/insertar_22_*.txt` linea `3`), y los dos `.fin` dicen `0`. El cerrojo del arbol, `nodos.jsonl.679b2259.cerrojo`, estaba en `procesos/` con cada una en vuelo, y `procesos/` sale vacio tras volver la `22`. Ninguna ficha de la bandeja ni el dataset se tocaron entre el lanzamiento y el `.fin` de cada una (`D68.1`): lo que se escribio en medio fue `.v68ext/fidelidad.tsv` y sus dos copias de instrumento.
+
+## 68.D bis. **LOS DISCUTIBLES DE LA TAREA 3, MARCADOS AL ESCRIBIR CADA FICHERO** (`EXTRACTOR.md` 8)
+
+Se marcaron dentro de `.v68ext/fidelidad.tsv` en el acto de escribir cada fila, antes de correr `citas.sh` ni
+`contar_fidelidad.py`; aqui se juntan por numero. Los de veredictos y aristas se anaden debajo cuando se escriban.
+
+| | que | por que lo marco |
+|---|---|---|
+| `D68.3` | **tres clausulas de contraste que glosan un cuantificador del libro van `T`**: `fijar_frecuencia_reunion_individual_madurez_tarea` paso `1` (*en vez de poner la misma frecuencia para todas*, sobre el *somebody* y el *each of your subordinates* de `cap_05` L33), `conducir_etapas_modelo_ideal_decision` paso `12` (*y no solo a algunos*, sobre el *everyone* de `cap_06` L29) y `vencer_sindrome_grupo_pares_autoconfianza` paso `5` (*y no solo los que se sientan a la mesa*, sobre el *everyone in your operation* de L49) | no mandan nada que el libro no pida, pero la letra del contraste es mia; si el auditor las lee como clausula reescrita, son `3` `P` |
+| `D68.4` | **dos costumbres del autor puestas de mandato van `T`**: `tomar_notas_copia_guion_reunion_individual` paso `4` (*Since I take notes in outline form*, `cap_05` L49) y `decidir_nivel_competente_inferior` paso `7` (*we at Intel are likely to ask a person in management senior*, `cap_06` L33) | es la figura de `D66.6`: el libro describe, el paso manda, y la razon es del libro |
+| `D68.5` | **los *preguntale si* de `alentar_asuntos_corazon_vigilar_final_reunion` pasos `3` a `5` van `T`**: las tres preguntas son del libro (`cap_05` L53) y el verbo es de marco, como los *revisa si* de `D66.4` | el libro las pone como los asuntos a los que se llega, no como preguntas que se hacen en voz alta |
+| `D68.6` | **`tomar_mando_reunion_pares_presidente_ausente` paso `3` va `T`**: *pide siempre que puedas* donde `cap_06` L51 dice *one can always ask* | el matiz cambia de *siempre se puede* a *siempre que se pueda*; el objeto y el orden son del libro |
+
+## 68.3. TAREA 3: `cap_05` Y `cap_06` ENTEROS, DEJADOS LISTOS PARA LA INSERCION DE LA `70`. **NINGUNO INSERTADO**
+
+Todo en `.v68ext/`, con copias de instrumentos que ya existen y la ruta cambiada (`7.F`); cada copia lo dice en su
+cabecera. Los `20` son las filas `25` a `44` de `.v65aud/normal/cola_grove.txt`, en `.v68ext/los20_cap05_cap06.txt`
+(`cap_05` `12`, piezas `P6` a `P20`; `cap_06` `8`, piezas `P7` a `P31`).
+
+### 68.3.1. La fidelidad ENTERA (`D.30`, `D.58`)
+
+`fuentes/grove_high_output/cap_05.md` (`175` lineas) y `cap_06.md` (`95` lineas) leidos enteros, **leidos entre dos esperas
+de la fila `21` sin tocar dataset, bitacora ni bandeja** (`D68.1`), y **cada paso de los `20` marcado `T` o `P` con su
+linea**, una fila por paso, en `.v68ext/fidelidad.tsv`. Contado por la copia de `.v66ext/contar_fidelidad.py`:
+
+<!-- TALLADO: parcial salida=.v68ext/contar_fidelidad.txt -->
+
+    $ python .v68ext/contar_fidelidad.py
+    candidato                                        cap     pasos   T   P
+    infundir_regularidad_reunion_proceso             cap_05      8   8   0
+    usar_tres_clases_reunion_proceso                 cap_05      4   4   0
+    fijar_frecuencia_reunion_individual_madurez_tarea cap_05     10  10   0
+    fijar_duracion_lugar_reunion_individual          cap_05     10  10   0
+    preparar_guion_reunion_individual_subordinado    cap_05      7   7   0
+    cubrir_indicadores_problemas_reunion_individual  cap_05     10  10   0
+    facilitar_expresion_subordinado_pregunta_mas     cap_05      6   6   0
+    tomar_notas_copia_guion_reunion_individual       cap_05      7   7   0
+    acumular_asuntos_importantes_fichero_espera      cap_05      4   4   0
+    alentar_asuntos_corazon_vigilar_final_reunion    cap_05      8   8   0
+    conducir_reunion_individual_telefono_distancia   cap_05      5   5   0
+    programar_reunion_individual_cadena              cap_05      5   5   0
+    conducir_etapas_modelo_ideal_decision            cap_06     12  12   0
+    decidir_nivel_competente_inferior                cap_06      8   8   0
+    vencer_sindrome_grupo_pares_autoconfianza        cap_06      5   5   0
+    tomar_mando_reunion_pares_presidente_ausente     cap_06      6   6   0
+    ejercer_poder_posicion_etapa_decision_clara      cap_06      7   7   0
+    cortar_discusion_libre_momento_justo             cap_06      7   7   0
+    zanjar_seis_preguntas_decision_adelantado        cap_06      9   9   0
+    anunciar_decision_inesperada_reconvocar_reunion  cap_06      8   8   0
+    pasos sin fila: 0 [] | filas sin paso: 0 []
+    
+    PASOS INVENTADOS POR CAPITULO, los 20 de cap_05 y cap_06 (COPIA de la vuelta 68 de .v66ext/contar_fidelidad.py, ruta cambiada)
+    cap_05  candidatos 12  pasos 84  T 84  P 0  inventado 0,0 por ciento
+    cap_06  candidatos 8  pasos 62  T 62  P 0  inventado 0,0 por ciento
+
+**`PASOS INVENTADOS`: `cap_05` `0` de `84` y `cap_06` `0` de `62`, el `0,0` por ciento los dos.** Ningun PUENTE, asi que
+**ninguna ficha de la bandeja se corrigio** y el barrido corre sobre las fichas tal como estaban en `d8f4e2a` (`d031`). Si
+caen como `P` todos los pasos de `D68.3` a `D68.6`, `cap_05` sale `5` de `84` (`D68.3` uno, `D68.4` uno, `D68.5` tres), el
+`6,0`, y `cap_06` `4` de `62` (`D68.3` dos, `D68.4` uno, `D68.6` uno), el `6,5`: los dos bajo el `10`.
+
+**Las `146` citas, localizadas por instrumento** (`D.35`): `.v68ext/citas.sh`, copia de `.v66ext/citas.sh` con tres
+cambios dichos en su cabecera (la ruta, el capitulo de cada fila leido de su ficha, y el corte en el primer `? ` con
+mayuscula). Salida entera en `.v68ext/citas_fidelidad.txt`; su ultima linea y las de los discutibles:
+
+    $ bash .v68ext/citas.sh | tail -1
+    filas: 146 | en su linea declarada: 146 | fuera: 0
+    $ grep -n -o -F 'how do you decide how often somebody needs such a meeting' fuentes/grove_high_output/cap_05.md    # fijar_frecuencia_reunion_individual_madurez_tarea paso 1
+    33:how do you decide how often somebody needs such a meeting
+    $ grep -n -o -F 'Since I take notes in outline form, I am forced to categorize the info' fuentes/grove_high_output/cap_05.md    # tomar_notas_copia_guion_reunion_individual paso 4
+    49:Since I take notes in outline form, I am forced to categorize the info
+    $ grep -n -o -F 'Is he satisfied with his own performance' fuentes/grove_high_output/cap_05.md    # alentar_asuntos_corazon_vigilar_final_reunion paso 3
+    53:Is he satisfied with his own performance
+    $ grep -n -o -F 'All a manager can expect is that the commitment to support is honestly' fuentes/grove_high_output/cap_06.md    # conducir_etapas_modelo_ideal_decision paso 12
+    29:All a manager can expect is that the commitment to support is honestly
+    $ grep -n -o -F 'For experience, we at Intel are likely to ask a person in management s' fuentes/grove_high_output/cap_06.md    # decidir_nivel_competente_inferior paso 7
+    33:For experience, we at Intel are likely to ask a person in management s
+    $ grep -n -o -F 'And everyone in your operation should be made to understand this' fuentes/grove_high_output/cap_06.md    # vencer_sindrome_grupo_pares_autoconfianza paso 5
+    49:And everyone in your operation should be made to understand this
+    $ grep -n -o -F 'one can always ask the senior person present to assume control' fuentes/grove_high_output/cap_06.md    # tomar_mando_reunion_pares_presidente_ausente paso 3
+    51:one can always ask the senior person present to assume control
