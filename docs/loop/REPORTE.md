@@ -59131,3 +59131,17 @@ iguales al blob de `b63405c`**, el commit de su lectura entera: ninguna se relee
 bloque `## simplificar_trabajo_reducir_numero_pasos` en `.v64ext/veredictos_listos.txt`, tal cual, que es lo que
 `.v66ext/insertar.py` lee. La `NO SOSTENGO` de `elegir_inspeccion_barrera_monitorizacion` a `variar` en
 `.v64ext/aristas_lectura.txt` no cablea nada: son hermanos.
+
+### Fila `21`: `variar_frecuencia_inspeccion_nivel_calidad`, **INSERTADO** en `1637.2` s, codigo `0`, commit `95b8b1b`
+
+La aduana de hoy: **ENTRARIA** con `0` vecino(s) contra `479`; lineas `--veredicto` pasadas: `0`. Salida entera en `.v66ext/insertar_21_variar_frecuencia_inspeccion_nivel_calidad.txt`.
+
+<!-- TALLADO: parcial salida=.v66ext/insertar_21_variar_frecuencia_inspeccion_nivel_calidad.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| ninguno | | | | | ninguna |
+
+**Cero vecinos contra `479`** (`366` del grafo mas `113` de bandejas, linea `6` de su salida): **los `17` nuevos de
+la cosecha de Marquet no levantan nada contra esta ficha**, y entra sin linea, como la `64` la dejo. Ninguna arista
+que cablear (la de `elegir_inspeccion_barrera_monitorizacion` es `NO SOSTENGO`, hermanos).
