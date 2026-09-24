@@ -992,3 +992,7 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-24 | decir_no_trabajo_excede_capacidad | otro_idioma | say no at the outset | ingles | - |
 | 2026-09-24 | decir_no_trabajo_excede_capacidad | otro_idioma | capacity | ingles | - |
 | 2026-09-24 | decir_no_trabajo_excede_capacidad | otro_idioma | bottleneck | ingles | - |
+| 2026-09-24 | usar_calendario_herramienta_planificacion_produccion | nombre_largo | El calendario como medio del pronostico de un mando: pronosticar lo que se puede pronosticar, y tomar la iniciativa de llenar los huecos entre los pasos limitantes de la jornada | castellano | - |
+| 2026-09-24 | usar_calendario_herramienta_planificacion_produccion | otro_idioma | production planning tool | ingles | - |
+| 2026-09-24 | usar_calendario_herramienta_planificacion_produccion | otro_idioma | mindless passivity | ingles | - |
+| 2026-09-24 | usar_calendario_herramienta_planificacion_produccion | otro_idioma | job shop | ingles | - |
