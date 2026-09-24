@@ -1,0 +1,42 @@
+fila 12, supervisar_decision_delegada_preguntas_concretas, lineas --veredicto: 3
+  --veredicto identificar_paso_limitante_jornada_desfases|SANO|Ajenos: supervisar una decision delegada por preguntas (L257) contra el paso limitante de la jornada (L267). Ningun paso compartido.
+  --veredicto supervisar_tarea_delegada_etapa_menor_valor|SANO|El mismo par que la tarea delegada lee desde su lado: hermanos bajo el paso 7 de delegar_tarea_base_comun_seguimiento, la decision contra la tarea.
+  --veredicto agrupar_tareas_semejantes_aprovechar_preparacion|SANO|Ajenos: supervisar una decision delegada contra agrupar tareas semejantes en tanda (L269 a L271). Ningun paso compartido.
+inicio 2026-09-24 11:28:38
+======================================================================
+ADUANA DE INSERCION, candidato 'supervisar_decision_delegada_preguntas_concretas'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (379 del grafo mas 100 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 3. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino identificar_paso_limitante_jornada_desfases  [Identificar el paso limitante de tu jornada y crear desfases alrededor: determinar lo inamovible y mover lo flexible a su alrededor]
+    levantada por: similitud_texto
+    similitud_texto    0.399 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.439 (umbral 0.60)
+    paso 3 del candidato contra paso 2 de identificar_paso_limitante_jornada_desfases
+
+  vecino supervisar_tarea_delegada_etapa_menor_valor  [Supervisar una tarea delegada como se supervisa la calidad: en la etapa de menor valor anadido, con frecuencia variable y entrando en el detalle al azar]
+    levantada por: similitud_texto
+    similitud_texto    0.368 (umbral 0.35)
+    familia_id         0.222 (umbral 0.30)
+    paso_contra_nodo   0.413 (umbral 0.60)
+    paso 1 del candidato contra paso 9 de supervisar_tarea_delegada_etapa_menor_valor
+
+  vecino agrupar_tareas_semejantes_aprovechar_preparacion  [Agrupar las tareas semejantes en una tanda para aprovechar un solo esfuerzo de preparacion]
+    levantada por: similitud_texto
+    similitud_texto    0.368 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.407 (umbral 0.60)
+    paso 3 del candidato contra paso 3 de agrupar_tareas_semejantes_aprovechar_preparacion
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 380
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 3
+
+======================================================================
+fin 2026-09-24 11:45:04 | codigo de salida 0 | 985.8 s

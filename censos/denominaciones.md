@@ -978,3 +978,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-24 | supervisar_tarea_delegada_etapa_menor_valor | otro_idioma | monitoring the results of delegation | ingles | - |
 | 2026-09-24 | supervisar_tarea_delegada_etapa_menor_valor | otro_idioma | quality assurance principles | ingles | - |
 | 2026-09-24 | supervisar_tarea_delegada_etapa_menor_valor | otro_idioma | task-relevant maturity | ingles | - |
+| 2026-09-24 | supervisar_decision_delegada_preguntas_concretas | nombre_largo | Como se supervisa lo que no es una tarea sino una decision: mirando el proceso de decision del subordinado en vez de rehacer su reflexion | castellano | - |
+| 2026-09-24 | supervisar_decision_delegada_preguntas_concretas | otro_idioma | monitoring their decision-making process | ingles | - |
+| 2026-09-24 | supervisar_decision_delegada_preguntas_concretas | otro_idioma | review meeting | ingles | - |
