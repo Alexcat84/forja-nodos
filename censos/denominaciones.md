@@ -940,3 +940,7 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-24 | simplificar_trabajo_reducir_numero_pasos | otro_idioma | work simplification | ingles | - |
 | 2026-09-24 | simplificar_trabajo_reducir_numero_pasos | otro_idioma | flow chart | ingles | - |
 | 2026-09-24 | simplificar_trabajo_reducir_numero_pasos | otro_idioma | leverage | ingles | - |
+| 2026-09-24 | reunir_informacion_gerencial_vias_variadas | nombre_largo | Las vias por las que un mando se entera de lo que pasa: informes normalizados, memorandos, informacion ad hoc, conversacion con gente de dentro y de fuera, quejas de clientes externos e internos, y el intercambio verbal rapido, que es el que mas vale | castellano | - |
+| 2026-09-24 | reunir_informacion_gerencial_vias_variadas | otro_idioma | information-gathering | ingles | - |
+| 2026-09-24 | reunir_informacion_gerencial_vias_variadas | otro_idioma | standard reports | ingles | - |
+| 2026-09-24 | reunir_informacion_gerencial_vias_variadas | otro_idioma | internal supplier | ingles | - |
