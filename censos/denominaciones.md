@@ -936,3 +936,7 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-24 | variar_frecuencia_inspeccion_nivel_calidad | nombre_largo | La inspeccion variable: aflojar la frecuencia cuando pasan semanas sin problemas y apretarla cuando empiezan a aparecer, hasta que la calidad vuelve a su nivel alto | castellano | - |
 | 2026-09-24 | variar_frecuencia_inspeccion_nivel_calidad | otro_idioma | variable inspections | ingles | - |
 | 2026-09-24 | variar_frecuencia_inspeccion_nivel_calidad | otro_idioma | creatures of habit | ingles | - |
+| 2026-09-24 | simplificar_trabajo_reducir_numero_pasos | nombre_largo | La simplificacion del trabajo: el diagrama de flujo con todos los pasos a la vista, la cuenta de cuantos son, la meta de reduccion y la pregunta critica a cada paso | castellano | - |
+| 2026-09-24 | simplificar_trabajo_reducir_numero_pasos | otro_idioma | work simplification | ingles | - |
+| 2026-09-24 | simplificar_trabajo_reducir_numero_pasos | otro_idioma | flow chart | ingles | - |
+| 2026-09-24 | simplificar_trabajo_reducir_numero_pasos | otro_idioma | leverage | ingles | - |
