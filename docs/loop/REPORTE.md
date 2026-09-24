@@ -60193,3 +60193,14 @@ La aduana de hoy: **BLOQUEARIA** con `1` vecino(s) contra `479`; lineas `--vered
     GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: identificar_paso_limitante_jornada_desfases > usar_calendario_herramienta_planificacion_produccion
       razon en bitacora/VEREDICTOS.jsonl
 
+
+### Fila `17`: `dimensionar_numero_subordinados_medio_dia_semanal`, **INSERTADO** en `3988.1` s, codigo `0`, commit `6279292`
+
+La aduana de hoy: **ENTRARIA** con `0` vecino(s) contra `479`; lineas `--veredicto` pasadas: `0`. Salida entera en `.v67ext/insertar_17_dimensionar_numero_subordinados_medio_dia_semanal.txt`.
+
+<!-- TALLADO: parcial salida=.v67ext/insertar_17_dimensionar_numero_subordinados_medio_dia_semanal.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+
+**Ningun vecino y ninguna linea, como en el barrido de la `66`.** Sin arista.
