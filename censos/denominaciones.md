@@ -984,3 +984,7 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-24 | identificar_paso_limitante_jornada_desfases | nombre_largo | El primer principio de produccion aplicado al tiempo de un mando: cual es el huevo de tu trabajo, y como se programa el resto de la jornada alrededor de el | castellano | - |
 | 2026-09-24 | identificar_paso_limitante_jornada_desfases | otro_idioma | limiting step | ingles | - |
 | 2026-09-24 | identificar_paso_limitante_jornada_desfases | otro_idioma | offsets | ingles | - |
+| 2026-09-24 | agrupar_tareas_semejantes_aprovechar_preparacion | nombre_largo | El segundo principio de produccion aplicado al trabajo de un mando: el tiempo de preparacion existe tambien aqui, y se amortiza haciendo juntas las actividades semejantes | castellano | - |
+| 2026-09-24 | agrupar_tareas_semejantes_aprovechar_preparacion | otro_idioma | batching similar tasks | ingles | - |
+| 2026-09-24 | agrupar_tareas_semejantes_aprovechar_preparacion | otro_idioma | set-up time | ingles | - |
+| 2026-09-24 | agrupar_tareas_semejantes_aprovechar_preparacion | otro_idioma | mental set-up time | ingles | - |
