@@ -59996,3 +59996,14 @@ La aduana de hoy: **BLOQUEARIA** con `7` vecino(s) contra `479`; lineas `--vered
 **Arista cableada por la aduana en el acto**: `buscar_actividad_alta_palanca_tres_vias > elegir_momento_actividad_palanca_maxima`
 
 **Los siete vecinos son los siete de su bloque y las siete lineas se pasaron tal cual**, con las dos de la `T2`. **`C2` pagada aqui**: la arista `buscar` a `elegir` que la fila `7` dejo en cola la cablea la aduana en el acto (`D67.1`).
+
+### Fila `9`: `detectar_palanca_negativa_actividad_mando`, **INSERTADO** en `1897.0` s, codigo `0`, commit `57879b3`
+
+La aduana de hoy: **ENTRARIA** con `0` vecino(s) contra `479`; lineas `--veredicto` pasadas: `0`. Salida entera en `.v67ext/insertar_09_detectar_palanca_negativa_actividad_mando.txt`.
+
+<!-- TALLADO: parcial salida=.v67ext/insertar_09_detectar_palanca_negativa_actividad_mando.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+
+**Ningun vecino, como en el barrido de la `66`, y ninguna linea que pasar.** Sin arista: la de `C3` desde `buscar` no se sostiene (`D67.2`).
