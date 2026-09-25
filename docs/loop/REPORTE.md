@@ -61837,3 +61837,25 @@ La aduana de hoy: **BLOQUEARIA** con `7` vecino(s) contra `479`; lineas `--vered
 | `facilitar_expresion_subordinado_pregunta_mas` | similitud_texto | 0.355 | 0.000 | 0.458 | SANO |
 
 **Los siete vecinos son los siete de su bloque y las siete lineas se pasaron tal cual**; ninguno nuevo contra `479` (`393` del grafo mas `86` de bandejas, linea `13` de su salida), ninguno que dejara de levantarse. Sin arista: `d053` la dejo sin partir (`ACTA 68` `68.5`) y su linea con la cabeza es `SANO`.
+
+### Fila `5`: `preparar_guion_reunion_individual_subordinado`, **INSERTADO** en `3302.0` s, codigo `0`, commit `e385257`
+
+La aduana de hoy: **BLOQUEARIA** con `9` vecino(s) contra `479`; lineas `--veredicto` pasadas: `9`. Salida entera en `.v70ext/insertar_05_preparar_guion_reunion_individual_subordinado.txt`.
+
+<!-- TALLADO: parcial salida=.v70ext/insertar_05_preparar_guion_reunion_individual_subordinado.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `fijar_duracion_lugar_reunion_individual` | similitud_texto | 0.603 | 0.250 | 0.527 | SANO |
+| `fijar_frecuencia_reunion_individual_madurez_tarea` | similitud_texto | 0.601 | 0.222 | 0.460 | SANO |
+| `cubrir_indicadores_problemas_reunion_individual` | similitud_texto | 0.540 | 0.250 | 0.459 | SANO |
+| `infundir_regularidad_reunion_proceso` | similitud_texto | 0.485 | 0.125 | 0.427 | SANO |
+| `facilitar_expresion_subordinado_pregunta_mas` | similitud_texto | 0.388 | 0.111 | 0.480 | SANO |
+| `tomar_notas_copia_guion_reunion_individual` | similitud_texto, familia_id | 0.402 | 0.375 | 0.460 | CONTINUA |
+| `usar_tres_clases_reunion_proceso` | similitud_texto | 0.422 | 0.111 | 0.450 | SANO |
+| `alentar_asuntos_corazon_vigilar_final_reunion` | similitud_texto | 0.379 | 0.100 | 0.433 | SANO |
+| `acumular_asuntos_importantes_fichero_espera` | similitud_texto | 0.383 | 0.000 | 0.417 | SANO |
+
+**Arista en cola (`D.29`)**: `preparar_guion_reunion_individual_subordinado > tomar_notas_copia_guion_reunion_individual`
+
+**Los nueve vecinos son los nueve de su bloque y las nueve lineas se pasaron tal cual**; ninguno nuevo contra `479` (`394` del grafo mas `85` de bandejas, linea `15` de su salida), ninguno que dejara de levantarse. **La `CONTINUA` con `tomar_notas_copia_guion_reunion_individual` queda `EN COLA`** (lineas `83` y `91` de su salida), porque el hijo espera en la bandeja: es lo que `D70.4` preve, y la cablea la fila `8`.
