@@ -6808,3 +6808,5 @@ TABLERO VERDE: la vuelta puede abrir.
 [2026-09-25 16:34:54]   tablero comprobado: la vuelta puede abrir (D.49, D.51)
 [2026-09-25 16:34:54] VUELTA 7 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
 [2026-09-25 16:34:54] VUELTA 7 : EXTRACTOR (claude-opus-5-5, esfuerzo high)
+[2026-09-25 19:14:28] extractor: fallo instantaneo (probable limite de uso), 9573s, costo "vacio", intento 1 de 7
+[2026-09-25 19:14:28] fallo "instantaneo"; espero 1800 segundos y reintento
