@@ -1048,3 +1048,7 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-25 | tomar_notas_copia_guion_reunion_individual | otro_idioma | one-on-one | ingles | - |
 | 2026-09-25 | tomar_notas_copia_guion_reunion_individual | otro_idioma | outline | ingles | - |
 | 2026-09-25 | tomar_notas_copia_guion_reunion_individual | otro_idioma | mechanical hints | ingles | - |
+| 2026-09-25 | acumular_asuntos_importantes_fichero_espera | nombre_largo | El fichero de espera de la reunion individual: el sitio compartido por supervisor y subordinado donde se acumula lo importante pero no del todo urgente, que aplica a la relacion el principio de produccion del agrupamiento y ahorra tiempo a los dos al reducir al minimo el contacto improvisado | castellano | - |
+| 2026-09-25 | acumular_asuntos_importantes_fichero_espera | otro_idioma | hold file | ingles | - |
+| 2026-09-25 | acumular_asuntos_importantes_fichero_espera | otro_idioma | batching | ingles | - |
+| 2026-09-25 | acumular_asuntos_importantes_fichero_espera | otro_idioma | ad hoc contact | ingles | - |
