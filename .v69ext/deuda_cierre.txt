@@ -1,0 +1,9 @@
+$ python scripts/deuda.py --saneamiento --vuelta 69
+DECLARADA vuelta de SANEAMIENTO: 69
+$ python scripts/deuda.py --pagar d053 --vuelta 69 --como "<.v69ext/como_d053.txt>"
+PAGADA d053 en la vuelta 69
+$ python scripts/deuda.py --pagar d056 --vuelta 69 --como "<.v69ext/como_d056.txt>"
+PAGADA d056 en la vuelta 69
+$ python scripts/deuda.py --clase 70
+LIBRE
+  van 1 de 5 desde la ultima de saneamiento (la 69), con 56 deuda(s) esperando

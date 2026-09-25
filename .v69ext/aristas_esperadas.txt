@@ -1,0 +1,1 @@
+  CONTINUA con madre= (aristas distintas): 2 | SOSTENGO por lectura: 5 | solapes entre las dos: 0 | aristas esperadas en la 70: 7

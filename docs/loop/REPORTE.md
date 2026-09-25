@@ -61108,9 +61108,9 @@ falte es exactamente lo que no tiene fila.
 |---|---|---|
 | `T1` | los registros de la `ACTA 67` | **CERRADA** (`69.1`) |
 | `T2` | la relectura conjunta de `D68.7` y `D68.15`, y las comprobaciones sobre `.v69ext/` | **CERRADA** (`69.2`): `D68.7` a `SANO` y `NO SOSTENGO`, `D68.15` a `NO` en espera, `7` aristas esperadas |
-| `T3` | `d053`: se parte o no `fijar_duracion_lugar_reunion_individual` | abierta |
-| `T4` | `d056`: la cola de lectura de la tanda `52` | abierta |
-| `T5` | el cierre: saneamiento declarado, pagos, aristas y huellas, `PASOS INVENTADOS`, `D.61`, `R5`, guardas, censo, commit | abierta |
+| `T3` | `d053`: se parte o no `fijar_duracion_lugar_reunion_individual` | **CERRADA** (`69.3`): **no se parte**, la mitad de L37 no pasa `9.1` sola |
+| `T4` | `d056`: la cola de lectura de la tanda `52` | **CERRADA** (`69.4`): el recorrido de la `68` citado y la comprobacion pegada, `0` y `0` |
+| `T5` | el cierre: saneamiento declarado, pagos, aristas y huellas, `PASOS INVENTADOS`, `D.61`, `R5`, guardas, censo, commit | **CERRADA** (`69.5`) |
 
 ## 69.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
 
@@ -61344,3 +61344,286 @@ SOSTENGO`, en `11` pares**:
     pares NO SOSTENGO: 11
 
 **`T2` CERRADA.**
+
+## 69.3. TAREA 3: `d053`, SE PARTE O NO `fijar_duracion_lugar_reunion_individual`
+
+**La ficha leida con `cap_05` L37 y L39 delante** (pasos en `.v69ext/pasos_conjunta.txt`, que la trae entera), y las frases que
+deciden, localizadas por instrumento (`D.35`):
+
+<!-- TALLADO: parcial salida=.v69ext/citas_d053.txt -->
+
+    $ for p in 'How long should a one-on-one meeting last' 'there is enough time to broach and get into thorny issues' 'Look at it this way' 'I feel that a one-on-one should last an hour at a minimum' 'Anything less, in my experience, tends to make the subordinate confine' 'Where should a one-on-one take place' 'I think you should have the meeting in or near the subordinate' 'A supervisor can learn a lot simply by going to his subordinate' 'Is he organized or not' 'Does he repeatedly have to spend time looking for a document he wants' 'Does he get interrupted all the time' 'how does the subordinate approach his work' 'One-on-ones should be scheduled on a rolling basis' 'setting up the next one as the meeting taking place ends'; do grep -n -o -F "$p" fuentes/grove_high_output/cap_05.md | head -1; done
+    37:How long should a one-on-one meeting last
+    37:there is enough time to broach and get into thorny issues
+    37:Look at it this way
+    37:I feel that a one-on-one should last an hour at a minimum
+    37:Anything less, in my experience, tends to make the subordinate confine
+    39:Where should a one-on-one take place
+    39:I think you should have the meeting in or near the subordinate
+    39:A supervisor can learn a lot simply by going to his subordinate
+    39:Is he organized or not
+    39:Does he repeatedly have to spend time looking for a document he wants
+    39:Does he get interrupted all the time
+    39:how does the subordinate approach his work
+    57:One-on-ones should be scheduled on a rolling basis
+    57:setting up the next one as the meeting taking place ends
+
+**Cada mitad contra la vara `9.1`** (el inventario propio de MEDIOS, ETAPAS u OBJETOS DE TRABAJO, y el adjetivo de adecuacion en el
+sitio del criterio):
+
+| mitad | linea normativa | pasos | lo que el libro inventaria | pasa `9.1` sola |
+|---|---|---|---|---|
+| **pasos `1` a `4`, CUANTO DURA** | L37, *I feel that a one-on-one should last an hour at a minimum* | un solo imperativo que se ejecuta (`3`, *Haz que dure una hora como minimo*), una prueba mental (`2`, *Look at it this way*) y dos *Cuenta con* (`1` y `4`) | **ninguno de medios, etapas u objetos**: un criterio, *enough time to broach and get into thorny issues*, que es un adjetivo de adecuacion; su contraste, los quince minutos; la cifra del autor, que va en `atribuciones`; y su consecuencia | **NO**: es una cifra con su argumento. Sola, la mitad es una **linea** que fija un parametro de otra decision, programar la reunion |
+| **pasos `5` a `10`, DONDE SE TIENE** | L39, *I think you should have the meeting in or near the subordinate's work area if possible* | el sitio elegido entre los tres que L39 enumera (`5`), el porque (`6`) y **cuatro cosas que mirar alli** (`7` a `10`) | **SI**: los tres sitios y **cuatro objetos de trabajo nombrados uno a uno** (*Is he organized or not? ... how does the subordinate approach his work?*) | **SI** |
+
+**DECIDO: NO SE PARTE** (`D69.4`). La letra del encargo es la vara: *si cada mitad es un nodo por si sola, o si una de las dos no pasa la
+vara sin la otra*. **La de L37 no la pasa sola**: el libro no pone ahi inventario, pone una cifra y el argumento que la sostiene, y
+todo lo que tiene de ejecutable es un imperativo (`3`). **Juntas son un procedimiento**, el de L39, **con el parametro de duracion de la
+misma reunion que se programa**, que es como la ficha ya las leia (*las dos preguntas son la misma decision de calendario*). Que L37 y
+L39 contesten a dos preguntas del libro (`ACTA 50` `50.5.f`) es cierto y no decide: **dos preguntas no son dos procedimientos**, y
+partir fabricaria un nodo de un solo paso ejecutable. **Los pasos no cambian, y ninguna ficha de la bandeja se toca.**
+
+**EL CASO CONTRA MI, escrito antes de saber** (`D69.4`): `programar_reunion_individual_cadena` (L57) es tambien un solo mandato con su
+razon (*One-on-ones should be scheduled on a rolling basis*, pasos `1` y `2`, y tres *Cuenta con*), y va como nodo en la misma tanda.
+**Lo que los separa, y es lo que sostengo:** L57 pone una **ETAPA**, *setting up the next one as the meeting taking place ends*, que es
+cuando y como se hace un acto; L37 pone **una cantidad**. Si el auditor lee que una cifra prescrita basta como procedimiento de una
+linea, la mitad de L37 pasa sola y la ficha se parte en una vuelta posterior, con el corte ya escrito entre el paso `4` y el `5` y con
+el barrido de la tanda entera que el encargo pide: **cae dentro de mi marcado**.
+
+**`d053` SE PAGA** en el cierre con esta razon (`69.5`). **Como no se parte, nada del barrido de la `68` se repite**: la bandeja sigue
+en `47` y las `20` fichas son las mismas (huella en `69.5`).
+
+**`T3` CERRADA.**
+
+## 69.4. TAREA 4: `d056`, LA COLA DE LECTURA DE LA TANDA `52`
+
+**La deuda pide recorrer la cola sobre la poblacion del dia de la insercion y veredictar lo que falte.** **La `68` hizo ese recorrido**
+sobre poblacion `479` (`390` del grafo mas `89` de bandejas) con las `20` fichas dentro: `118` pares y `118` lineas, cero vecinos sin
+linea (`68.3.3`), y el auditor lo reprodujo identico (`ACTA 67` `67.1`, *comprobar_veredictos: IDENTICO*) y levanto con su propio
+barrido los mismos `118` pares dirigidos (`67.4.b`). **Las seis fichas de la tanda `52`** (`infundir`, `usar_tres_clases`,
+`fijar_frecuencia`, `fijar_duracion_lugar`, `preparar_guion`, `cubrir_indicadores`) **son seis de esas `20`**, con su resumen tal como
+quedo tras los pagos de `d051` y `d052` que movieron la cola.
+
+**La salida de mi copia de la TAREA 2**, sobre ese barrido y con las lineas corregidas por la conjunta (salida entera en
+`.v69ext/comprobar_veredictos.txt`; sin las lineas `OK` en `.v69ext/comprobar_resumen.txt`):
+
+<!-- TALLADO: parcial salida=.v69ext/comprobar_resumen.txt -->
+
+    $ python .v69ext/comprobar_veredictos.py | grep -v '^  OK'
+    infundir_regularidad_reunion_proceso               lineas 5 | levantados hoy 5 | FALTAN 0 | SOBRAN 0
+    usar_tres_clases_reunion_proceso                   lineas 5 | levantados hoy 5 | FALTAN 0 | SOBRAN 0
+    fijar_frecuencia_reunion_individual_madurez_tarea  lineas 6 | levantados hoy 6 | FALTAN 0 | SOBRAN 0
+    fijar_duracion_lugar_reunion_individual            lineas 7 | levantados hoy 7 | FALTAN 0 | SOBRAN 0
+    preparar_guion_reunion_individual_subordinado      lineas 9 | levantados hoy 9 | FALTAN 0 | SOBRAN 0
+    cubrir_indicadores_problemas_reunion_individual    lineas 6 | levantados hoy 6 | FALTAN 0 | SOBRAN 0
+    facilitar_expresion_subordinado_pregunta_mas       lineas 8 | levantados hoy 8 | FALTAN 0 | SOBRAN 0
+    tomar_notas_copia_guion_reunion_individual         lineas 7 | levantados hoy 7 | FALTAN 0 | SOBRAN 0
+    acumular_asuntos_importantes_fichero_espera        lineas 6 | levantados hoy 6 | FALTAN 0 | SOBRAN 0
+    alentar_asuntos_corazon_vigilar_final_reunion      lineas 7 | levantados hoy 7 | FALTAN 0 | SOBRAN 0
+    conducir_reunion_individual_telefono_distancia     lineas 6 | levantados hoy 6 | FALTAN 0 | SOBRAN 0
+    programar_reunion_individual_cadena                lineas 7 | levantados hoy 7 | FALTAN 0 | SOBRAN 0
+    conducir_etapas_modelo_ideal_decision              lineas 0 | levantados hoy 0 | FALTAN 0 | SOBRAN 0
+    decidir_nivel_competente_inferior                  lineas 3 | levantados hoy 3 | FALTAN 0 | SOBRAN 0
+    vencer_sindrome_grupo_pares_autoconfianza          lineas 13 | levantados hoy 13 | FALTAN 0 | SOBRAN 0
+    tomar_mando_reunion_pares_presidente_ausente       lineas 4 | levantados hoy 4 | FALTAN 0 | SOBRAN 0
+    ejercer_poder_posicion_etapa_decision_clara        lineas 2 | levantados hoy 2 | FALTAN 0 | SOBRAN 0
+    cortar_discusion_libre_momento_justo               lineas 6 | levantados hoy 6 | FALTAN 0 | SOBRAN 0
+    zanjar_seis_preguntas_decision_adelantado          lineas 2 | levantados hoy 2 | FALTAN 0 | SOBRAN 0
+    anunciar_decision_inesperada_reconvocar_reunion    lineas 9 | levantados hoy 9 | FALTAN 0 | SOBRAN 0
+    secciones 20 de 20, lineas 118, ilegibles 0, vecinos sin linea 0, lineas sin vecino 0
+
+    ARISTAS POR LECTURA (SOSTENGO) contra el barrido de hoy
+      agrupar_tareas_semejantes_aprovechar_preparacion   > infundir_regularidad_reunion_proceso                 levantada hoy: NO
+      buscar_regularidad_bloques_iguales_trabajo_mando   > infundir_regularidad_reunion_proceso                 levantada hoy: NO
+      agrupar_interrupciones_subordinados_reuniones_regulares > acumular_asuntos_importantes_fichero_espera          levantada hoy: NO
+      conducir_etapas_modelo_ideal_decision              > cortar_discusion_libre_momento_justo                 levantada hoy: NO
+      conducir_etapas_modelo_ideal_decision              > ejercer_poder_posicion_etapa_decision_clara          levantada hoy: NO
+
+**Cero vecinos sin linea y cero lineas sin vecino en las `20` secciones**, las seis de la tanda `52` incluidas: `5`, `5`, `6`, `7`, `9`
+y `6` lineas con sus `5`, `5`, `6`, `7`, `9` y `6` levantados. **`d056` SE PAGA** en el cierre citando esto (`69.5`).
+
+**LO QUE QUEDA PARA LA `70`, en una linea:** la aduana de cada `insertar` vuelve a medir sobre la poblacion de ese dia (grafo mas
+bandejas: en la `68` cada fila que entro paso de una a otro y el total siguio en `479`, `388` mas `91` y `389` mas `90`), y **lo que levante sin linea se lee en el acto con los pasos de
+los dos delante y se veredicta antes de insertar** (`d031`).
+
+**`T4` CERRADA.**
+
+## 69.5. TAREA 5: EL CIERRE
+
+### 69.5.a. La vuelta de saneamiento declarada, y lo que se paga
+
+Los dos textos de `--como`, enteros, en `.v69ext/como_d053.txt` y `.v69ext/como_d056.txt` (sacados de su registro en
+`docs/loop/DEUDA.jsonl`); la salida de las cuatro ordenes en `.v69ext/deuda_cierre.txt`:
+
+<!-- TALLADO: parcial salida=.v69ext/deuda_cierre.txt -->
+
+    $ python scripts/deuda.py --saneamiento --vuelta 69
+    DECLARADA vuelta de SANEAMIENTO: 69
+    $ python scripts/deuda.py --pagar d053 --vuelta 69 --como "<.v69ext/como_d053.txt>"
+    PAGADA d053 en la vuelta 69
+    $ python scripts/deuda.py --pagar d056 --vuelta 69 --como "<.v69ext/como_d056.txt>"
+    PAGADA d056 en la vuelta 69
+    $ python scripts/deuda.py --clase 70
+    LIBRE
+      van 1 de 5 desde la ultima de saneamiento (la 69), con 56 deuda(s) esperando
+
+**Pago solo lo que pague**: `d053` decidida y **no partida** (`69.3`), y `d056` con su comprobacion pegada (`69.4`). **`d170` no se
+paga** (se paga cuando entre la madre, `cap_13`): su comentario `EN ESPERA` lleva ya las dos lecturas y la mia (`69.2.c`). **La `70`
+sale `LIBRE`, `1` de `5`, con `56` deudas esperando**: las `58` de la apertura menos las dos pagadas.
+
+### 69.5.b. Las aristas esperadas en la `70` y la huella de las fichas preparadas, por instrumento
+
+Corridas despues del ultimo cambio, que en esta vuelta es la correccion declarada de la TAREA 2 (ninguna ficha cambio). La cuenta,
+de `.v69ext/orden.py` (su salida entera en `.v69ext/orden.txt`, identica al volver a correrla al cerrar):
+
+<!-- TALLADO: parcial salida=.v69ext/aristas_esperadas.txt -->
+
+    $ python .v69ext/orden.py | tail -1
+      CONTINUA con madre= (aristas distintas): 2 | SOSTENGO por lectura: 5 | solapes entre las dos: 0 | aristas esperadas en la 70: 7
+
+**`7`**: `preparar_guion` a `tomar_notas` y `tomar_notas` a `conducir_telefono`, que cablea la aduana por sus lineas `CONTINUA`, y las
+cinco por lectura con `forja.py arista`: `agrupar_tareas` y `buscar_regularidad` a `infundir`, `agrupar_interrupciones` a `acumular`, y
+`conducir_etapas` a `cortar_discusion` y a `ejercer_poder`.
+
+La huella, con `.v69ext/pasos_y_huellas.py`, copia de `.v68ext/pasos_y_huellas.py` con el orden leido de `.v69ext/orden.txt` (el mismo
+`ORDEN`) y el commit cambiado a `0715b58`, la apertura de esta vuelta:
+
+<!-- TALLADO: parcial salida=.v69ext/pasos_y_huellas.txt -->
+
+    $ python .v69ext/pasos_y_huellas.py
+    1   infundir_regularidad_reunion_proceso                     bandeja    6b93ad4500 igual
+    2   usar_tres_clases_reunion_proceso                         bandeja    ebc47c2b9a igual
+    3   fijar_frecuencia_reunion_individual_madurez_tarea        bandeja    f4ac56c90b igual
+    4   fijar_duracion_lugar_reunion_individual                  bandeja    e8d8a2f3ab igual
+    5   preparar_guion_reunion_individual_subordinado            bandeja    331d9fd308 igual
+    6   cubrir_indicadores_problemas_reunion_individual          bandeja    072eac4a5d igual
+    7   facilitar_expresion_subordinado_pregunta_mas             bandeja    34494b45b2 igual
+    8   tomar_notas_copia_guion_reunion_individual               bandeja    1735220c5b igual
+    9   acumular_asuntos_importantes_fichero_espera              bandeja    53219c730f igual
+    10  alentar_asuntos_corazon_vigilar_final_reunion            bandeja    e9f737aa26 igual
+    11  conducir_reunion_individual_telefono_distancia           bandeja    203f3cb565 igual
+    12  programar_reunion_individual_cadena                      bandeja    54ae3ce499 igual
+    13  conducir_etapas_modelo_ideal_decision                    bandeja    19df4c4999 igual
+    14  ejercer_poder_posicion_etapa_decision_clara              bandeja    684f1ec71c igual
+    15  vencer_sindrome_grupo_pares_autoconfianza                bandeja    871784f6cc igual
+    16  tomar_mando_reunion_pares_presidente_ausente             bandeja    a848b2a1ce igual
+    17  cortar_discusion_libre_momento_justo                     bandeja    5e7b1d6e9f igual
+    18  zanjar_seis_preguntas_decision_adelantado                bandeja    aec52e3dda igual
+    19  anunciar_decision_inesperada_reconvocar_reunion          bandeja    b7d394670d igual
+    20  decidir_nivel_competente_inferior                        bandeja    5ee59feaac igual
+    fichas de las filas 1 a 20: 20 | iguales a su blob en 0715b58: 20 | distintas: 0
+
+**`20` iguales y `0` distintas, y las `20` filas identicas letra a letra a las de `.v68ext/pasos_y_huellas.txt`** (`diff` de las
+veinte primeras lineas, vacio): **los blobs contra los que la `70` comprobara que entra lo que se leyo son los de la `68`.**
+
+### 69.5.c. `PASOS INVENTADOS POR CAPITULO`
+
+**Ninguna ficha cambio** (`d053` no partio la suya, y ningun paso se reescribio): **`cap_05` `0` de `84` y `cap_06` `0` de `62`**, los de
+`.v68ext/contar_fidelidad.txt` firmados en la `ACTA 67` `67.4.a`. Esta vuelta no inserta, asi que no hay fila de lo que entro.
+
+### 69.5.d. `D.61`: los discutibles, cada uno ejecutado o cerrado
+
+| | que | estado |
+|---|---|---|
+| `D69.1` | `D68.7`: `SANO` en las `8` lineas de la cabeza y `NO SOSTENGO` en sus `4` filas | **EJECUTADO** por correccion declarada (`69.2.d`): `16` comentarios `# vuelta 69` en veredictos y `7` en aristas, `21` de `21` lineas viejas presentes |
+| `D69.2` | las razones que caen con el mismo argumento: `8` *tio y sobrino*, la fila de la abuela, el comentario `D.37` | **EJECUTADO** en la misma correccion; ninguna cambia de clase |
+| `D69.3` | `D68.15` a `NO`, con las dos lecturas | **CERRADO**: escrito en el comentario `EN ESPERA` de `.v68ext/aristas_lectura.txt`; lo aplica la vuelta que inserte `cap_13` (`d170`) |
+| `D69.4` | `d053`: no se parte | **EJECUTADO**: `d053` pagada con su razon (`69.5.a`), ninguna ficha tocada (`69.5.b`) |
+
+**Ninguno abierto.**
+
+### 69.5.e. El censo antes y despues
+
+<!-- TALLADO: parcial salida=.v69ext/censo_cierre.txt -->
+
+    $ bash .v69ext/censo.sh
+    nodos en dataset/nodos.jsonl        : 390
+    veredictos en bitacora              : 904
+    pares mutuos                        : 1
+    bandeja cuarentena/grove_high_output: 47
+    insertados de grove_high_output     : 45
+    cerrojos en procesos/               : 
+
+| | al abrir (`69.0`) | al cerrar | delta |
+|---|---:|---:|---:|
+| nodos | `390` | `390` | `0` |
+| veredictos | `904` | `904` | `0` |
+| pares mutuos | `1` | `1` | `0` |
+| bandeja de Grove | `47` | `47` | `0` |
+| insertados de Grove | `45` | `45` | `0` |
+
+**Igual en el dato, como el encargo pide: `390`, `904`, `1`, `45`, y la bandeja en `47`** porque `d053` no parte la ficha. **`procesos/`
+vacio al abrir y al cerrar.** Y en git, contra la apertura:
+
+    $ git diff --stat 0715b58 -- dataset/ bitacora/ censos/ config/ cuarentena/ src/ scripts/ | wc -l
+    0
+
+### 69.5.f. Las guardas
+
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 390
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+
+    $ python forja.py guiones
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+
+    $ tail -2 .v69ext/cierre_tests.txt
+      total: 379 pruebas, 0 fallos, 0 errores
+    ========================================================================
+
+(`.v69ext/cierre_tests.txt` es la salida entera de `python tests/test_aceptacion.py`, corrida al cerrar con codigo `0` en `3` min
+`46` s; `.v69ext/cierre_gate.txt` y `.v69ext/cierre_guiones.txt` las de las otras dos.)
+
+### 69.5.g. El reloj
+
+**Ningun proceso lanzado en esta vuelta sobrevive al turno**: no se lanzo ningun `insertar` ni ningun barrido, porque `d053` no parte la
+ficha y la conjunta no cambia ninguna. Lo mas largo fue la suite de aceptacion, `3` min `46` s en primer plano.
+
+### 69.5.h. `R5`, medido con las dos copias de la cabecera cambiada a la `69`
+
+`.v69ext/pegado69.py` es `.v64ext/pegado64.py` y `.v69ext/bloques_mudos69.py` es `.v64aud/normal/bloques_mudos.py`, las dos con la
+cabecera del tramo en `# VUELTA 69 ` y el comentario de cabecera, nada mas cambiado. Corridas con todos los bloques `$` de la vuelta ya
+escritos, este incluido, menos el del cierre estricto que viene detras:
+
+    $ python .v69ext/pegado69.py; python .v69ext/bloques_mudos69.py
+    bloques abiertos con `$` en el tramo de la vuelta 69 : 28
+    bloques que ROMPEN R1 (ACTA 60 60.15)                : 0
+    bloques abiertos con `$`: 16 | comandos `$`: 28 | comandos sin ninguna linea de salida en su bloque: 0
+
+### 69.5.i. El cierre estricto, en verde
+
+Salida entera en `.v69ext/cierre_reporte.txt` (y la de las pruebas que lanza, que va por stderr, en `.v69ext/cierre_reporte_err.txt`),
+codigo `0`:
+
+    $ python scripts/cerrar_reporte.py 2>/dev/null | grep -E '^(TALLADO|CENSO|TABLA DE CIERRE|CIERRE|GATE|BARRIDO)'
+    TALLADO DEL REPORTE (D.41): la tabla que dice ser de instrumento
+    TALLADO VERDE: las 157 tabla(s) comprobables son las de su instrumento, celda a celda.
+    CENSO DE RUTAS (D.42): la unidad de la ruta es la celda
+    CENSO VERDE: las 974 rutas publicadas sostienen lo que dicen sostener.
+    TABLA DE CIERRE DE TAREAS (D.52): toda tabla del reporte declara su instrumento
+    TABLA DE CIERRE VERDE: ninguna celda medible difiere del dato.
+    GATE VERDE.
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+    CIERRE VERDE: las cuatro guardas que muerden, el tallado y el censo. La vigencia corrio y publico su cuenta arriba: es cola, no guarda (D.15).
+
+**Ningun rojo. Nada me obliga a parar, asi que no hay `PARA_ALEXIS.md` ni parada.**
+
+**Tabla de tareas, al cerrar:**
+
+| tarea | que | estado |
+|---|---|---|
+| `T1` | los registros de la `ACTA 67` | **CERRADA** (`69.1`) |
+| `T2` | la relectura conjunta de `D68.7` y `D68.15` | **CERRADA** (`69.2`): `D68.7` a `SANO` y `NO SOSTENGO` en los ocho, `D68.15` a `NO` y en espera; `118` lineas sin hueco, orden en cero, `7` aristas esperadas en la `70` |
+| `T3` | `d053` | **CERRADA** (`69.3`): no se parte |
+| `T4` | `d056` | **CERRADA** (`69.4`) |
+| `T5` | el cierre | **CERRADA** (`69.5`): saneamiento declarado, `d053` y `d056` pagadas, `20` huellas iguales, censo igual en el dato |
+
+**LO QUE LA `70` ENCUENTRA:** los `20` de `cap_05` y `cap_06` en el orden de `.v69ext/orden.txt` (el de la `68`), `118` lineas de veredicto
+en `.v68ext/veredictos_listos.txt` (`4` `CONTINUA` y `114` `SANO`), `5` filas `SOSTENGO` por lectura en `.v68ext/aristas_lectura.txt`, `7`
+aristas esperadas, y las `20` huellas de `69.5.b`. **Ninguna pregunta abierta sobre esos `20`**: `D68.7` decidido aqui, `D68.15` no les
+toca, `d053` decidida, `d056` pagada.
+
+**`R5` vuelto a medir con el reporte ya entero** (`.v69ext/pegado69.py` y `.v69ext/bloques_mudos69.py` otra vez, salida en
+`.v69ext/r5_final.txt`): `29` comandos en `17` bloques, con `0` rotos y `0` mudos; el de mas es el bloque del cierre estricto de
+`69.5.i`, anexado despues de la medida de `69.5.h`.
