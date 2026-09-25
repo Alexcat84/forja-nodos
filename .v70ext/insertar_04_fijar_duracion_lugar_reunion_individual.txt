@@ -1,0 +1,74 @@
+fila 04, fijar_duracion_lugar_reunion_individual, lineas --veredicto: 7
+  --veredicto fijar_frecuencia_reunion_individual_madurez_tarea|SANO|El mismo par que la frecuencia lee desde su lado: hermanos, cada cuanto contra cuanto dura y donde.
+  --veredicto alentar_asuntos_corazon_vigilar_final_reunion|SANO|Hermanos bajo ONE-ON-ONES. La senial de paso (0,612) casa el criterio del paso 1 de aqui, que haya tiempo para sacar los asuntos espinosos y meterse en ellos (L37), con los asuntos de corazon que el vecino alienta y vigila cerca del final (L53). Este fija la duracion y el sitio; el vecino alienta esos asuntos y gobierna el momento en que salen. Ninguno usa el producto del otro, y fuera queda procedimiento en los dos lados.
+  --veredicto preparar_guion_reunion_individual_subordinado|SANO|Hermanos bajo ONE-ON-ONES: cuanto dura y donde (L37 a L39) contra de quien es la reunion y quien prepara el guion (L41). La similitud (0,60) es la prosa comun de la reunion individual.
+  --veredicto cubrir_indicadores_problemas_reunion_individual|SANO|Hermanos bajo ONE-ON-ONES: cuanto dura y donde (L37 a L39) contra que se trata dentro (L43). Ninguno usa el producto del otro.
+  --veredicto infundir_regularidad_reunion_proceso|SANO|El mismo par que infundir lee desde su lado: del mismo tramo y sin jerarquia (DISCUTIBLE D68.8; razon corregida en la vuelta 69, D69.2).
+  --veredicto usar_tres_clases_reunion_proceso|SANO|El mismo par que la cabeza lee desde su lado (relectura conjunta de la vuelta 69, D68.7): este candidato parte de su propia situacion con el uno a uno en marcha y contesta su propia pregunta del libro (L37 y L39, How long should a one-on-one meeting last y Where should a one-on-one take place); no usa el saber de cuantas clases de reunion de proceso hay y como se llaman, que es todo lo que la cabeza produce (L23). SANO. Correccion declarada: la linea vieja decia CONTINUA madre=usar_tres_clases_reunion_proceso (DISCUTIBLE D69.1).
+  --veredicto facilitar_expresion_subordinado_pregunta_mas|SANO|Hermanos bajo ONE-ON-ONES: cuanto dura y donde (L37 a L39) contra el papel del supervisor dentro, facilitar y preguntar una vez mas (L45 a L47). Ninguno usa el producto del otro.
+inicio 2026-09-25 05:26:26
+======================================================================
+ADUANA DE INSERCION, candidato 'fijar_duracion_lugar_reunion_individual'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (393 del grafo mas 86 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 7. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino fijar_frecuencia_reunion_individual_madurez_tarea  [Fijar cada cuanto tienes la reunion individual con cada subordinado segun su madurez relevante para la tarea, y ajustarla por lo deprisa que cambia su area]
+    levantada por: similitud_texto, familia_id
+    similitud_texto    0.630 (umbral 0.35)
+    familia_id         0.375 (umbral 0.30)
+    paso_contra_nodo   0.435 (umbral 0.60)
+    paso 4 del candidato contra paso 3 de fijar_frecuencia_reunion_individual_madurez_tarea
+
+  vecino alentar_asuntos_corazon_vigilar_final_reunion  [Alentar en la reunion individual los asuntos de corazon a corazon con las tres preguntas del libro, y ponerse en guardia contra el que se suelta cerca del final]
+    levantada por: paso_contra_nodo
+    similitud_texto    0.320 (umbral 0.35)
+    familia_id         0.100 (umbral 0.30)
+    paso_contra_nodo   0.612 (umbral 0.60)
+    paso 3 del candidato contra paso 1 de alentar_asuntos_corazon_vigilar_final_reunion
+
+  vecino preparar_guion_reunion_individual_subordinado  [Tratar la reunion individual como reunion del subordinado y hacer que sea el quien prepare el guion y pasee al supervisor por el material]
+    levantada por: similitud_texto
+    similitud_texto    0.601 (umbral 0.35)
+    familia_id         0.250 (umbral 0.30)
+    paso_contra_nodo   0.517 (umbral 0.60)
+    paso 3 del candidato contra paso 1 de preparar_guion_reunion_individual_subordinado
+
+  vecino cubrir_indicadores_problemas_reunion_individual  [Cubrir en la reunion individual los indicadores del subordinado, lo ocurrido desde la anterior y el problema potencial, con el criterio de que sean los asuntos que le preocupan]
+    levantada por: similitud_texto
+    similitud_texto    0.506 (umbral 0.35)
+    familia_id         0.250 (umbral 0.30)
+    paso_contra_nodo   0.452 (umbral 0.60)
+    paso 7 del candidato contra paso 6 de cubrir_indicadores_problemas_reunion_individual
+
+  vecino infundir_regularidad_reunion_proceso  [Infundir regularidad a la reunion de proceso, para poder agrupar en tanda las tareas de mando semejantes y pronosticar el tiempo que piden]
+    levantada por: similitud_texto
+    similitud_texto    0.460 (umbral 0.35)
+    familia_id         0.125 (umbral 0.30)
+    paso_contra_nodo   0.468 (umbral 0.60)
+    paso 4 del candidato contra paso 8 de infundir_regularidad_reunion_proceso
+
+  vecino usar_tres_clases_reunion_proceso  [Usar las tres clases de reunion de proceso que el libro cuenta y nombra: el uno a uno, la reunion de personal y la revision de operaciones]
+    levantada por: similitud_texto
+    similitud_texto    0.395 (umbral 0.35)
+    familia_id         0.111 (umbral 0.30)
+    paso_contra_nodo   0.463 (umbral 0.60)
+    paso 3 del candidato contra paso 4 de usar_tres_clases_reunion_proceso
+
+  vecino facilitar_expresion_subordinado_pregunta_mas  [Hacer del supervisor en la reunion individual el que facilita, aprende y orienta, y sacar lo que falta aplicando el principio de preguntar una vez mas]
+    levantada por: similitud_texto
+    similitud_texto    0.355 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.458 (umbral 0.60)
+    paso 4 del candidato contra paso 3 de facilitar_expresion_subordinado_pregunta_mas
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 394
+  censos escritos: atribuciones, denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 7
+
+======================================================================
+fin 2026-09-25 06:20:10 | codigo de salida 0 | 3223.4 s

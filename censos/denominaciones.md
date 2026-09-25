@@ -1032,3 +1032,5 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-25 | fijar_frecuencia_reunion_individual_madurez_tarea | nombre_largo | La frecuencia de la reunion individual: la madurez relevante para el puesto o para la tarea como respuesta a cada cuanto, con sus dos frecuencias y con la velocidad de cambio del area como segunda consideracion | castellano | - |
 | 2026-09-25 | fijar_frecuencia_reunion_individual_madurez_tarea | otro_idioma | one-on-one | ingles | - |
 | 2026-09-25 | fijar_frecuencia_reunion_individual_madurez_tarea | otro_idioma | task-relevant maturity | ingles | - |
+| 2026-09-25 | fijar_duracion_lugar_reunion_individual | nombre_largo | La duracion y el sitio de la reunion individual: la hora como minimo sostenida en el tiempo que pide un asunto espinoso, y el area de trabajo del subordinado como sitio, con las cuatro cosas que alli se aprenden mirando | castellano | - |
+| 2026-09-25 | fijar_duracion_lugar_reunion_individual | otro_idioma | one-on-one | ingles | - |
