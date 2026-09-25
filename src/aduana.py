@@ -28,7 +28,9 @@ AVISO DEL MANUAL, PRINCIPIO 4, QUE ESTE ARCHIVO NO PUEDE DESOBEDECER:
 
 import datetime
 import difflib
+import json
 import os
+import subprocess
 import sys
 
 from . import censos
@@ -292,6 +294,107 @@ def senal_similitud_texto(texto_a, texto_b):
     return max(directa, por_palabras)
 
 
+# --------------------------------------------- el reparto de la señal 1 entre procesos
+#
+# DECISION DEL FUNDADOR, 25 sep 2026: SE APRUEBA UNA OPTIMIZACION DE RENDIMIENTO DE LA
+# ADUANA, NINGUNA DE METODO. La señal 1 es la que cuesta: `_ratio` letra a letra
+# (autojunk=False) sobre titulo, resumen y pasos enteros, unos 2,3 s por par con los
+# candidatos de Grove y 479 pares por candidato. Medido en la vuelta 70: el tiempo de
+# cada fila era casi proporcional a la longitud del candidato (0,26 s por caracter).
+#
+# LO QUE CAMBIA ES SOLO QUIEN CALCULA: los pares se reparten entre procesos (como
+# mucho tantos como nucleos menos uno, y la variable FORJA_PROCESOS_SIMILITUD lo
+# puede bajar). La formula es la misma funcion, `senal_similitud_texto`, llamada
+# con los mismos dos textos; el resultado vuelve por `repr` y `float`, que en
+# Python es un viaje exacto, y en el mismo orden de la poblacion. Si un proceso
+# falla, ese trozo se calcula aqui, en serie: el resultado no depende del reparto.
+#
+# Los procesos se lanzan con `subprocess` y no con `multiprocessing` A PROPOSITO: en
+# Windows `multiprocessing` vuelve a importar el programa principal en cada hijo, y
+# las copias de `barrido_uno.py` de cada vuelta no tienen guarda de `__main__`.
+
+VARIABLE_PROCESOS_SIMILITUD = "FORJA_PROCESOS_SIMILITUD"
+MINIMO_PARA_REPARTIR = 40
+
+
+def _procesos_similitud(n):
+    nucleos = max(1, (os.cpu_count() or 1) - 1)
+    try:
+        tope = int(os.environ.get(VARIABLE_PROCESOS_SIMILITUD, "0") or "0")
+    except ValueError:
+        tope = 0
+    if tope > 0:
+        nucleos = min(nucleos, tope)
+    return max(1, min(nucleos, n))
+
+
+def _codificar_senal(valor):
+    if isinstance(valor, NoAplica):
+        return {"no_aplica": valor.motivo}
+    return {"valor": repr(valor)}
+
+
+def _decodificar_senal(dato):
+    if "no_aplica" in dato:
+        return NoAplica(dato["no_aplica"])
+    return float(dato["valor"])
+
+
+def trabajador_similitud():
+    """Un proceso del reparto: lee {"a": texto, "bs": [textos]} por la entrada y
+    devuelve la señal 1 de cada par, en el mismo orden, por la salida."""
+    datos = json.loads(sys.stdin.buffer.read().decode("utf-8"))
+    salida = [_codificar_senal(senal_similitud_texto(datos["a"], b)) for b in datos["bs"]]
+    sys.stdout.buffer.write(json.dumps(salida).encode("utf-8"))
+
+
+def similitudes_repartidas(texto_a, textos_b):
+    """La señal 1 de `texto_a` contra cada texto de `textos_b`, en su orden."""
+    n = len(textos_b)
+    procesos = _procesos_similitud(n)
+    if procesos <= 1 or n < MINIMO_PARA_REPARTIR:
+        return [senal_similitud_texto(texto_a, b) for b in textos_b]
+    tamano = -(-n // procesos)
+    trozos = [textos_b[i:i + tamano] for i in range(0, n, tamano)]
+    raiz = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    codigo = ("import sys; sys.path.insert(0, %r); from src import aduana; "
+              "aduana.trabajador_similitud()" % raiz)
+    lanzados = []
+    for trozo in trozos:
+        try:
+            proceso = subprocess.Popen([sys.executable, "-c", codigo], cwd=raiz,
+                                       stdin=subprocess.PIPE, stdout=subprocess.PIPE,
+                                       stderr=subprocess.DEVNULL)
+        except OSError:
+            proceso = None
+        lanzados.append((proceso, trozo))
+    for proceso, trozo in lanzados:
+        if proceso is None:
+            continue
+        try:
+            proceso.stdin.write(json.dumps({"a": texto_a, "bs": trozo}).encode("utf-8"))
+            proceso.stdin.close()
+        except OSError:
+            pass
+    resultado = []
+    for proceso, trozo in lanzados:
+        parte = None
+        if proceso is not None:
+            try:
+                crudo = proceso.stdout.read()
+                proceso.wait()
+                if proceso.returncode == 0:
+                    parte = [_decodificar_senal(d) for d in json.loads(crudo.decode("utf-8"))]
+                    if len(parte) != len(trozo):
+                        parte = None
+            except (OSError, ValueError, KeyError):
+                parte = None
+        if parte is None:
+            parte = [senal_similitud_texto(texto_a, b) for b in trozo]
+        resultado.extend(parte)
+    return resultado
+
+
 def senal_familia_id(id_a, id_b):
     """Señal 2: familia de id, normalizando sufijos, preposiciones,
     articulos, plurales y orden de palabras."""
@@ -337,10 +440,16 @@ def senal_paso_contra_nodo(candidato, vecino):
     return mejor, detalle
 
 
-def medir(candidato, vecino, umbrales=None):
+_SIN_MEDIR = object()
+
+
+def medir(candidato, vecino, umbrales=None, similitud=_SIN_MEDIR):
+    """`similitud` llega ya calculada cuando buscar_vecinos reparte la señal 1; si
+    no llega, se calcula aqui, igual que siempre."""
     umbrales = umbrales or modulo_config.cargar()
-    similitud = senal_similitud_texto(comun.texto_comparable(candidato),
-                                      comun.texto_comparable(vecino))
+    if similitud is _SIN_MEDIR:
+        similitud = senal_similitud_texto(comun.texto_comparable(candidato),
+                                          comun.texto_comparable(vecino))
     familia = senal_familia_id(candidato.get("id") or "", vecino.get("id") or "")
     paso, detalle_paso = senal_paso_contra_nodo(candidato, vecino)
 
@@ -491,6 +600,7 @@ def buscar_vecinos(candidato, nodos, umbrales=None):
     umbrales = umbrales or modulo_config.cargar()
     resolutor = Resolutor(nodos)
     vecinos = []
+    elegibles = []
     for nodo in nodos:
         if resolutor.mismo(nodo.get("id"), candidato.get("id")):
             continue
@@ -504,7 +614,13 @@ def buscar_vecinos(candidato, nodos, umbrales=None):
             permitidos.add(candidato.get("dominio"))
             if nodo.get("dominio") not in permitidos:
                 continue
-        medicion = medir(candidato, nodo, umbrales)
+        elegibles.append(nodo)
+    # LA SEÑAL 1 SE REPARTE (decision del fundador, 25 sep 2026): mismos pares, misma
+    # funcion, mismo orden; solo cambia cuantos procesos la calculan a la vez.
+    similitudes = similitudes_repartidas(comun.texto_comparable(candidato),
+                                         [comun.texto_comparable(n) for n in elegibles])
+    for nodo, similitud in zip(elegibles, similitudes):
+        medicion = medir(candidato, nodo, umbrales, similitud=similitud)
         if medicion["levantada_por"]:
             vecinos.append(medicion)
     vecinos.sort(key=lambda v: max(_ordenable_de_senal(x) for x in v["senales"].values()),
