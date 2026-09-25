@@ -61967,3 +61967,22 @@ La aduana de hoy: **BLOQUEARIA** con `7` vecino(s) contra `479`; lineas `--vered
 | `facilitar_expresion_subordinado_pregunta_mas` | similitud_texto | 0.432 | 0.000 | 0.406 | SANO |
 
 **Los siete vecinos son los siete de su bloque y las siete lineas se pasaron tal cual**; ninguno nuevo contra `479` (`399` del grafo mas `80` de bandejas, linea `13` de su salida), ninguno que dejara de levantarse. Sin arista (`D69.1`). **Correccion declarada del metodo, no del dato:** una de mis esperas de `580` s paso de los `600` s de la herramienta y quedo como tarea de fondo; era solo `esperar.py`, que no toca nada, salio con su codigo `3` y la recogi en el turno. Desde aqui las esperas van con tope de `480` s.
+
+### Fila `11`: `conducir_reunion_individual_telefono_distancia`, **INSERTADO** en `3045.1` s, codigo `0`, commit `991765e`
+
+La aduana de hoy: **BLOQUEARIA** con `6` vecino(s) contra `479`; lineas `--veredicto` pasadas: `6`. Salida entera en `.v70ext/insertar_11_conducir_reunion_individual_telefono_distancia.txt`.
+
+<!-- TALLADO: parcial salida=.v70ext/insertar_11_conducir_reunion_individual_telefono_distancia.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `tomar_notas_copia_guion_reunion_individual` | similitud_texto, paso_contra_nodo | 0.474 | 0.222 | 0.675 | CONTINUA |
+| `preguntar_conducir_reunion_individual` | familia_id | 0.077 | 0.500 | 0.395 | SANO |
+| `acumular_asuntos_importantes_fichero_espera` | similitud_texto | 0.500 | 0.000 | 0.406 | SANO |
+| `programar_reunion_individual_cadena` | similitud_texto | 0.476 | 0.286 | 0.474 | SANO |
+| `alentar_asuntos_corazon_vigilar_final_reunion` | similitud_texto | 0.462 | 0.100 | 0.441 | SANO |
+| `facilitar_expresion_subordinado_pregunta_mas` | similitud_texto | 0.416 | 0.000 | 0.434 | SANO |
+
+**Arista cableada por la aduana en el acto**: `tomar_notas_copia_guion_reunion_individual > conducir_reunion_individual_telefono_distancia`
+
+**Los seis vecinos son los seis de su bloque y las seis lineas se pasaron tal cual**; ninguno nuevo contra `479` (`400` del grafo mas `79` de bandejas, linea `12` de su salida), ninguno que dejara de levantarse. **La aduana cablea en el acto la `CONTINUA` que la fila `8` dejo en cola**, `tomar_notas_copia_guion_reunion_individual > conducir_reunion_individual_telefono_distancia` (linea `59` de su salida): **las dos `CONTINUA` con `madre=` de la tanda viven ya en el grafo**, y `D70.4` queda ejecutado.
