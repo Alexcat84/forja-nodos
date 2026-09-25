@@ -1083,3 +1083,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-25 | cortar_discusion_libre_momento_justo | nombre_largo | El criterio del momento de decidir: no empujar prematuramente, asegurarse de haber oido los asuntos de verdad y no los comentarios superficiales, y empujar hacia el consenso en cuanto todos los lados se hayan planteado | castellano | - |
 | 2026-09-25 | cortar_discusion_libre_momento_justo | otro_idioma | unending search for consensus | ingles | - |
 | 2026-09-25 | cortar_discusion_libre_momento_justo | otro_idioma | near consensus | ingles | - |
+| 2026-09-25 | zanjar_seis_preguntas_decision_adelantado | nombre_largo | Las seis preguntas importantes que el mando zanja antes de que empiece la decision, porque la toma de decisiones tiene una salida y se le pide calidad y plazo como a cualquier otro proceso de mando | castellano | - |
+| 2026-09-25 | zanjar_seis_preguntas_decision_adelantado | otro_idioma | six important questions | ingles | - |
+| 2026-09-25 | zanjar_seis_preguntas_decision_adelantado | otro_idioma | ratify or veto | ingles | - |
