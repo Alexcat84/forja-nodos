@@ -318,3 +318,8 @@
 {"cae": false, "cita": "ACTA 67, secciones 67.1, 67.3 y 67.7", "especie": "DATO MOVIDO", "linea": "serial", "racha": "0 de 2", "tanda": "ACTA 67", "tipo": "tanda", "vuelta": 68}
 {"cae": false, "cita": "ACTA 67, secciones 67.2 y 67.7", "especie": "REPORTE", "linea": "serial", "racha": "0 de 3", "tanda": "ACTA 67", "tipo": "tanda", "vuelta": 68}
 {"cae": true, "cita": "ACTA 67, seccion 67.9: CIFRA PUBLICADA PROPIA en APERTURA_CIEGA.md 7, NO: 5 donde el fichero tiene 11", "especie": "AUDITOR", "linea": "serial", "racha": "1 de 3", "tanda": "ACTA 67", "tipo": "tanda", "vuelta": 68}
+{"cae": false, "cita": "ACTA 68, secciones 68.1, 68.3 y 68.8", "especie": "CLASE", "linea": "serial", "racha": "0 de 2", "tanda": "ACTA 68", "tipo": "tanda", "vuelta": 69}
+{"cae": false, "cita": "ACTA 68, secciones 68.1, 68.3 y 68.8", "especie": "CIFRA PUBLICADA", "linea": "serial", "racha": "0 de 2", "tanda": "ACTA 68", "tipo": "tanda", "vuelta": 69}
+{"cae": false, "cita": "ACTA 68, secciones 68.1, 68.3 y 68.8", "especie": "DATO MOVIDO", "linea": "serial", "racha": "0 de 2", "tanda": "ACTA 68", "tipo": "tanda", "vuelta": 69}
+{"cae": false, "cita": "ACTA 68, secciones 68.2 y 68.8", "especie": "REPORTE", "linea": "serial", "racha": "0 de 3", "tanda": "ACTA 68", "tipo": "tanda", "vuelta": 69}
+{"cae": false, "cita": "ACTA 68, secciones 68.0, 68.8 y 68.10: los tres heredados cumplidos y ninguna cifra falsa en la apertura sellada", "especie": "AUDITOR", "linea": "serial", "racha": "0 de 3", "tanda": "ACTA 68", "tipo": "tanda", "vuelta": 69}

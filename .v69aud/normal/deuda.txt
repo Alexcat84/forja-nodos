@@ -1,0 +1,9 @@
+$ git diff 08eb797 HEAD -- docs/loop/DEUDA.jsonl | grep "^[-+]{" | cut -c1-220
++{"cita": "D.55, cadencia de una de cada cinco", "linea": "serial", "tipo": "saneamiento", "vuelta": 69}
++{"como": "DECIDIDA EN LA VUELTA 69 (REPORTE 69.3): fijar_duracion_lugar_reunion_individual NO SE PARTE. Por la vara de EXTRACTOR.md 9.1: la mitad de L37 (pasos 1 a 4, How long should a one-on-one meeting last) no pasa s
++{"como": "PAGADA EN LA VUELTA 69 (REPORTE 69.4) citando el recorrido de la 68: la cola de las 20 fichas de cap_05 y cap_06, las seis de la tanda 52 dentro (infundir, usar_tres_clases, fijar_frecuencia, fijar_duracion_lu
+$ python scripts/deuda.py --clase 70
+LIBRE
+  van 1 de 5 desde la ultima de saneamiento (la 69), con 56 deuda(s) esperando
+$ python scripts/deuda.py | grep -E "d053|d056|d170"
+  d170   68      deuda              ARISTA EN ESPERA DE D68.15, CON DOS LECTURAS: elegir

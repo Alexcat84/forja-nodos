@@ -1,0 +1,21 @@
+$ python forja.py credito
+CREDITO DE LA LINEA 'serial' (D.48)
+  registro: docs/loop/CREDITO_serial.jsonl
+  tandas: 67, en 315 suceso(s) de especie
+
+  especie            racha      de donde sale
+  ----------------------------------------------------------------------
+  AUDITOR            1 de 3     ACTA 67
+  CIFRA PUBLICADA    0 de 2     ACTA 67
+  CLASE              0 de 2     ACTA 67
+  DATO MOVIDO        0 de 2     ACTA 67
+  REPORTE            0 de 3     ACTA 67
+
+  CREDITO ENTERO: ninguna especie en su tope.
+$ python forja.py tablero --puedo grove_high_output
+LINEA 'serial', LIBRO 'grove_high_output': SI
+  'grove_high_output' esta COSECHADO y sin dueño: su trabajo ya llego a esta rama, asi que se continua desde el capitulo siguiente al ultimo minado (cap_18), citando su frontera. D.50.
+$ grep -n 'listo (USD' docs/loop/loop.log | tail -3
+6241:[2026-09-25 01:59:21] auditor listo (USD 7.840813599999998), 1266s, intento 1 de 7
+6254:[2026-09-25 02:24:23] extractor listo (USD 5.508369000000001), 1500s, intento 1 de 7
+6258:[2026-09-25 02:34:12] auditor ciego listo (USD 3.1669166000000004), 587s, intento 1 de 7

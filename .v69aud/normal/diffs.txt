@@ -1,0 +1,18 @@
+$ git diff --stat 08eb797 HEAD -- dataset/ bitacora/ censos/ config/ cuarentena/ src/ scripts/ | wc -l
+0
+$ git diff --name-only 08eb797 HEAD | grep -v "^.v69ext/" 
+.v68ext/aristas_lectura.txt
+.v68ext/veredictos_listos.txt
+docs/loop/APERTURA_CIEGA.md
+docs/loop/DEUDA.jsonl
+docs/loop/REPORTE.md
+docs/loop/SELLOS_APERTURA.jsonl
+docs/loop/TABLERO.jsonl
+docs/loop/loop.log
+docs/loop/ultimo_auditor.json
+docs/loop/ultimo_extractor.json
+$ git diff --name-only 08eb797 HEAD -- .v69ext/ | wc -l
+32
+$ git diff --name-only 4b17f8b 10ea309
+docs/loop/APERTURA_CIEGA.md
+docs/loop/SELLOS_APERTURA.jsonl
