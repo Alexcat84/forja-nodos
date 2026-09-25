@@ -1089,3 +1089,7 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-25 | anunciar_decision_inesperada_reconvocar_reunion | nombre_largo | Que hacer cuando la palabra final es radicalmente distinta de lo que esperaban los que participaron: anunciar, no marcharse, levantar la sesion, reconvocar cuando se hayan recuperado y pedirles entonces su opinion | castellano | - |
 | 2026-09-25 | anunciar_decision_inesperada_reconvocar_reunion | otro_idioma | final word | ingles | - |
 | 2026-09-25 | anunciar_decision_inesperada_reconvocar_reunion | otro_idioma | adjourn | ingles | - |
+| 2026-09-25 | decidir_nivel_competente_inferior | nombre_largo | La segunda caracteristica del modelo ideal: que la decision se trabaje y se alcance en el nivel competente mas bajo, en el terreno intermedio entre el conocimiento tecnico y la experiencia | castellano | - |
+| 2026-09-25 | decidir_nivel_competente_inferior | otro_idioma | lowest competent level | ingles | - |
+| 2026-09-25 | decidir_nivel_competente_inferior | otro_idioma | best possible mix of participants | ingles | - |
+| 2026-09-25 | decidir_nivel_competente_inferior | otro_idioma | status differentials | ingles | - |

@@ -1,0 +1,42 @@
+fila 20, decidir_nivel_competente_inferior, lineas --veredicto: 3
+  --veredicto anunciar_decision_inesperada_reconvocar_reunion|SANO|Del mismo capitulo y sin jerarquia entre ellos: la senial casa el paso 2 de aqui, la gente mas cerca de la situacion, con el paso 8 del vecino, aceptar lo inesperado. Este compone el grupo que decide y lo lleva al nivel competente mas bajo (L33); el vecino anuncia la palabra final cuando es muy distinta de lo esperado y reconvoca la reunion (L93). Ninguno usa el producto del otro.
+  --veredicto vencer_sindrome_grupo_pares_autoconfianza|SANO|El mismo par que el sindrome de pares lee desde su lado: del mismo capitulo y sin jerarquia entre ellos.
+  --veredicto tomar_mando_reunion_pares_presidente_ausente|SANO|Del mismo capitulo y sin jerarquia entre ellos (DISCUTIBLE D68.12): la senial casa el paso 7 de aqui, pedir que venga a la reunion una persona de rango superior para poner la experiencia (L33), con el paso 3 del vecino, pedir a la persona presente de mayor rango que asuma el control (L51). Los dos traen a la de mayor rango, pero a cosas distintas: aqui a la composicion del grupo, por la experiencia; alli al mando de una reunion de iguales sin presidente formal donde el sindrome ya se manifiesta, y la condicion del vecino no parte de la composicion de aqui. Fuera queda procedimiento en los dos lados.
+inicio 2026-09-25 15:32:52
+======================================================================
+ADUANA DE INSERCION, candidato 'decidir_nivel_competente_inferior'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (409 del grafo mas 70 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 3. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino anunciar_decision_inesperada_reconvocar_reunion  [Anunciar una decision radicalmente distinta de lo que el grupo esperaba, y reconvocar la reunion en vez de marcharse]
+    levantada por: similitud_texto
+    similitud_texto    0.364 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.472 (umbral 0.60)
+    paso 2 del candidato contra paso 8 de anunciar_decision_inesperada_reconvocar_reunion
+
+  vecino vencer_sindrome_grupo_pares_autoconfianza  [Vencer el sindrome del grupo de pares infundiendo autoconfianza, y la constatacion de que nadie se muere por decidir mal]
+    levantada por: similitud_texto
+    similitud_texto    0.368 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.462 (umbral 0.60)
+    paso 4 del candidato contra paso 1 de vencer_sindrome_grupo_pares_autoconfianza
+
+  vecino tomar_mando_reunion_pares_presidente_ausente  [Decidir quien toma el mando en una reunion de iguales sin presidente formal: el que mas se juega, y si no, el de mayor rango presente]
+    levantada por: similitud_texto
+    similitud_texto    0.354 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.460 (umbral 0.60)
+    paso 7 del candidato contra paso 3 de tomar_mando_reunion_pares_presidente_ausente
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 410
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 3
+
+======================================================================
+fin 2026-09-25 15:51:34 | codigo de salida 0 | 1121.8 s
