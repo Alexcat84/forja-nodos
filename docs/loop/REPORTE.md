@@ -62082,3 +62082,35 @@ La aduana de hoy: **BLOQUEARIA** con `4` vecino(s) contra `479`; lineas `--vered
 | `priorizar_lista_entrenamiento_subordinados` | similitud_texto | 0.362 | 0.000 | 0.404 | SANO |
 
 **Los cuatro vecinos son los cuatro de su bloque y las cuatro lineas se pasaron tal cual**; ninguno nuevo contra `479` (`405` del grafo mas `74` de bandejas, linea `10` de su salida), ninguno que dejara de levantarse. Sin arista (`D68.14`).
+
+### Fila `17`: `cortar_discusion_libre_momento_justo`, **INSERTADO** en `955.0` s, codigo `0`, commit `8706e44`
+
+La aduana de hoy: **BLOQUEARIA** con `6` vecino(s) contra `479`; lineas `--veredicto` pasadas: `6`. Salida entera en `.v70ext/insertar_17_cortar_discusion_libre_momento_justo.txt`.
+
+<!-- TALLADO: parcial salida=.v70ext/insertar_17_cortar_discusion_libre_momento_justo.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `anunciar_decision_inesperada_reconvocar_reunion` | similitud_texto | 0.406 | 0.000 | 0.526 | SANO |
+| `ejercer_poder_posicion_etapa_decision_clara` | similitud_texto | 0.361 | 0.000 | 0.458 | SANO |
+| `vencer_sindrome_grupo_pares_autoconfianza` | similitud_texto | 0.394 | 0.000 | 0.443 | SANO |
+| `cerrar_brecha_dos_preguntas_estrategia` | similitud_texto | 0.358 | 0.000 | 0.412 | SANO |
+| `pedir_critica_anonima_curso_entrenamiento_dictado` | similitud_texto | 0.352 | 0.000 | 0.409 | SANO |
+| `construir_indicador_tendencia_patron` | similitud_texto | 0.353 | 0.000 | 0.401 | SANO |
+
+**Los seis vecinos son los seis de su bloque y las seis lineas se pasaron tal cual**; ninguno nuevo contra `479` (`406` del grafo mas `73` de bandejas, linea `12` de su salida), ninguno que dejara de levantarse.
+
+**Arista por lectura cableada con la madre ya en el grafo** (`D.29`, sostenida en la `ACTA 67` `67.4.c`): `conducir_etapas_modelo_ideal_decision > cortar_discusion_libre_momento_justo`, `--paso 5`, el que su fila (linea `23` de `.v68ext/aristas_lectura.txt`) cita. **Es la quinta y ultima por lectura.** Salida entera en `.v70ext/arista_conducir_etapas_modelo_ideal_decision__cortar_discusion_libre_momento_justo.txt`:
+
+    $ python forja.py arista --madre conducir_etapas_modelo_ideal_decision --hijo cortar_discusion_libre_momento_justo --paso 5 --razon <fila 23> --veredicto CONTINUA --cita-veredicto <fila 23>
+    DECLARACION DE ARISTA POR LECTURA (D.37)
+      madre: conducir_etapas_modelo_ideal_decision
+      hijo : cortar_discusion_libre_momento_justo
+      paso citado de la madre: 5
+        Pasa despues a la etapa siguiente, que es alcanzar una decision clara, y cuanto mayor sea el desacuerdo sobre el asunto, mas importante se vuelve la p
+      señales del par: familia_id 0.0, paso_contra_nodo 0.463, similitud_texto 0.294
+        NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+    GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: conducir_etapas_modelo_ideal_decision > cortar_discusion_libre_momento_justo
+      razon en bitacora/VEREDICTOS.jsonl
+
