@@ -1080,3 +1080,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-25 | tomar_mando_reunion_pares_presidente_ausente | otro_idioma | peer-plus-one approach | ingles | - |
 | 2026-09-25 | tomar_mando_reunion_pares_presidente_ausente | otro_idioma | peer-group syndrome | ingles | - |
 | 2026-09-25 | tomar_mando_reunion_pares_presidente_ausente | otro_idioma | godfather | ingles | - |
+| 2026-09-25 | cortar_discusion_libre_momento_justo | nombre_largo | El criterio del momento de decidir: no empujar prematuramente, asegurarse de haber oido los asuntos de verdad y no los comentarios superficiales, y empujar hacia el consenso en cuanto todos los lados se hayan planteado | castellano | - |
+| 2026-09-25 | cortar_discusion_libre_momento_justo | otro_idioma | unending search for consensus | ingles | - |
+| 2026-09-25 | cortar_discusion_libre_momento_justo | otro_idioma | near consensus | ingles | - |

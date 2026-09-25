@@ -1,0 +1,66 @@
+fila 17, cortar_discusion_libre_momento_justo, lineas --veredicto: 6
+  --veredicto anunciar_decision_inesperada_reconvocar_reunion|SANO|Del mismo capitulo y sin jerarquia entre ellos: la senial casa el paso 5 de aqui, entra tu y decide, con el paso 7 del vecino, pideles su opinion sobre la decision. Este corta la discusion libre en su momento (L63); el vecino anuncia una palabra final muy distinta de lo esperado y reconvoca la reunion (L93). Ninguno usa el producto del otro.
+  --veredicto ejercer_poder_posicion_etapa_decision_clara|SANO|El mismo par que el poder de posicion lee desde su lado: hermanos bajo Striving for the Output (DISCUTIBLE D68.13).
+  --veredicto vencer_sindrome_grupo_pares_autoconfianza|SANO|El mismo par que el sindrome de pares lee desde su lado: del mismo capitulo y sin jerarquia entre ellos.
+  --veredicto cerrar_brecha_dos_preguntas_estrategia|SANO|Ajenos, de otro capitulo del mismo libro: la senial casa el paso 5 de aqui, entra tu y decide, con el paso 7 del vecino, llama estrategia al conjunto que decidas. Cortar una discusion en su momento contra cerrar la brecha de la planificacion.
+  --veredicto pedir_critica_anonima_curso_entrenamiento_dictado|SANO|Ajenos, de otro capitulo del mismo libro: la senial casa el paso 4 de aqui, empuja hacia un consenso cuando lo has oido todo, con el paso 2 del vecino, el formulario de la critica anonima. Cortar una discusion contra pedir critica de un curso; nada comun que hacer.
+  --veredicto construir_indicador_tendencia_patron|SANO|Ajenos, de otro capitulo del mismo libro (cap_03): la senial casa el paso 3 de aqui, los asuntos de verdad y no los comentarios superficiales, con el paso 2 del vecino, la salida de la operacion. Cortar una discusion contra medir una tendencia; nada comun que hacer.
+inicio 2026-09-25 14:41:20
+======================================================================
+ADUANA DE INSERCION, candidato 'cortar_discusion_libre_momento_justo'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (406 del grafo mas 73 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 6. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino anunciar_decision_inesperada_reconvocar_reunion  [Anunciar una decision radicalmente distinta de lo que el grupo esperaba, y reconvocar la reunion en vez de marcharse]
+    levantada por: similitud_texto
+    similitud_texto    0.406 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.526 (umbral 0.60)
+    paso 5 del candidato contra paso 7 de anunciar_decision_inesperada_reconvocar_reunion
+
+  vecino ejercer_poder_posicion_etapa_decision_clara  [Ejercer el poder de posicion solo al llegar a la etapa de decision clara sin consenso, y nunca antes]
+    levantada por: similitud_texto
+    similitud_texto    0.361 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.458 (umbral 0.60)
+    paso 7 del candidato contra paso 5 de ejercer_poder_posicion_etapa_decision_clara
+
+  vecino vencer_sindrome_grupo_pares_autoconfianza  [Vencer el sindrome del grupo de pares infundiendo autoconfianza, y la constatacion de que nadie se muere por decidir mal]
+    levantada por: similitud_texto
+    similitud_texto    0.394 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.443 (umbral 0.60)
+    paso 5 del candidato contra paso 5 de vencer_sindrome_grupo_pares_autoconfianza
+
+  vecino cerrar_brecha_dos_preguntas_estrategia  [Cerrar la brecha entre demanda y rendimiento contestando por separado que necesitas hacer y que puedes hacer, y llamar estrategia al conjunto que decidas]
+    levantada por: similitud_texto
+    similitud_texto    0.358 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.412 (umbral 0.60)
+    paso 5 del candidato contra paso 7 de cerrar_brecha_dos_preguntas_estrategia
+
+  vecino pedir_critica_anonima_curso_entrenamiento_dictado  [Pedir critica anonima tras dictar un curso de entrenamiento, con formulario numerico y preguntas abiertas]
+    levantada por: similitud_texto
+    similitud_texto    0.352 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.409 (umbral 0.60)
+    paso 4 del candidato contra paso 2 de pedir_critica_anonima_curso_entrenamiento_dictado
+
+  vecino construir_indicador_tendencia_patron  [Construir el indicador de tendencia midiendo la salida contra el tiempo y contra un patron]
+    levantada por: similitud_texto
+    similitud_texto    0.353 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.401 (umbral 0.60)
+    paso 3 del candidato contra paso 2 de construir_indicador_tendencia_patron
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 407
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 6
+
+======================================================================
+fin 2026-09-25 14:57:15 | codigo de salida 0 | 955.0 s
