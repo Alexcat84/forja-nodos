@@ -61093,3 +61093,254 @@ Salida entera (y la de las pruebas que lanza, que va por stderr) en `.v68ext/cie
 
 **`R5` vuelto a medir con el reporte ya entero** (`pegado68.py` y `bloques_mudos68.py` otra vez): `30` comandos en `18` bloques, con `0`
 rotos y `0` mudos; el de mas es el bloque del cierre estricto de `68.4.i`, anexado despues de la medida de `68.4.h`.
+
+---
+
+# VUELTA 69 DE LA LINEA SERIAL, lote 7 (`grove_high_output`), **CLASE SANEAMIENTO**: la relectura conjunta de `D68.7` y `D68.15`, `d053` y `d056`, **sin insertar nada**
+
+*Encargo escrito por el auditor al cerrar la `ACTA 67`. Clase impresa por `python scripts/deuda.py --clase 69` (`SANEAMIENTO`,
+`5` vueltas desde la `64`). **Ni un `insertar`, ni un veredicto en `bitacora/`, ni una arista en el dataset.***
+
+**REPORTE ABIERTO AL EMPEZAR** (`EXTRACTOR.md` 3). Las filas se llenan al cerrarse cada tarea. Si la vuelta se corta, lo que
+falte es exactamente lo que no tiene fila.
+
+| tarea | que | estado |
+|---|---|---|
+| `T1` | los registros de la `ACTA 67` | **CERRADA** (`69.1`) |
+| `T2` | la relectura conjunta de `D68.7` y `D68.15`, y las comprobaciones sobre `.v69ext/` | **CERRADA** (`69.2`): `D68.7` a `SANO` y `NO SOSTENGO`, `D68.15` a `NO` en espera, `7` aristas esperadas |
+| `T3` | `d053`: se parte o no `fijar_duracion_lugar_reunion_individual` | abierta |
+| `T4` | `d056`: la cola de lectura de la tanda `52` | abierta |
+| `T5` | el cierre: saneamiento declarado, pagos, aristas y huellas, `PASOS INVENTADOS`, `D.61`, `R5`, guardas, censo, commit | abierta |
+
+## 69.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
+
+**Lo pendiente, commiteado primero** (`EXTRACTOR.md` 1): `TABLERO.jsonl`, `loop.log`, `ultimo_auditor.json` y
+`ultimo_extractor.json` del arnes, en `0715b58`, hook verde, empujado.
+
+<!-- TALLADO: parcial salida=.v69ext/apertura.txt -->
+
+    $ git rev-parse HEAD && git log -1 --format=%cI && git rev-parse --abbrev-ref HEAD
+    0715b58bb174e6b4e5abcdb7c37e0227e6ca70db
+    2026-09-25T02:00:00-04:00
+    extraccion-mundo-11
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 390
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+    $ bash .v69ext/censo.sh
+    nodos en dataset/nodos.jsonl        : 390
+    veredictos en bitacora              : 904
+    pares mutuos                        : 1
+    bandeja cuarentena/grove_high_output: 47
+    insertados de grove_high_output     : 45
+    cerrojos en procesos/               : 
+    $ python scripts/deuda.py --clase 69
+    SANEAMIENTO
+      han pasado 5 vuelta(s) desde la ultima de saneamiento (la 64) y la cadencia es 5, con 58 deuda(s) pendientes
+
+**Coincide con el cierre de la `68`** (`390`, `904`, `1`, `47`, `45`: `ACTA 67` y `68.4.a`), y **`procesos/` esta vacio.**
+`.v69ext/censo.sh` es copia de `.v68ext/censo.sh` con el comentario cambiado, y se vuelve a correr al cerrar.
+
+## 69.D. **LOS DISCUTIBLES, MARCADOS ANTES DE SABER SI ACIERTO** (`EXTRACTOR.md` 8)
+
+| | que | por que lo marco |
+|---|---|---|
+| `D69.1` | **`D68.7`: cambio mi lectura. `SANO` en las `8` lineas `CONTINUA` de la cabeza y `NO SOSTENGO` en sus `4` filas por lectura** | la cabeza solo produce saber cuantas clases hay y como se llaman, y ninguna de las ocho condiciones parte de eso; si el fundador lee `C1` mas ancho (el encabezado que abre el tramo como hilo), caigo yo y no el auditor |
+| `D69.2` | **razones que caen con el mismo argumento aunque el encargo no las liste**: las `8` lineas `SANO` *tio y sobrino* de `D68.8` (la clase se sostiene, la razon deja de decir *tio*), la fila `NO SOSTENGO` de la cabeza a `tomar_notas` y `conducir_telefono` (la clase se sostiene, la razon deja de decir *abuela*) y el comentario `D.37` | es la figura de `D67.3` y `D67.4`: si no las reescribo, el fichero dice dos cosas; ninguna cambia de clase |
+| `D69.3` | **`D68.15`: muevo mi lectura a `NO`** y la dejo escrita con las dos en el comentario `EN ESPERA`, para `d170` | el *Accordingly* de L33 si deriva la frecuencia del principio del estilo; lo que decide es que el hijo no usa el estilo elegido que la madre produce, sino la madurez que mide el mismo en su paso `3` |
+| `D69.4` | **`d053`: NO se parte** `fijar_duracion_lugar_reunion_individual` | la mitad de L37 no pasa `9.1` sola: una cifra del autor con su criterio y su prueba, sin inventario propio de medios, etapas ni objetos. **El caso contra mi:** `programar_reunion_individual_cadena` (L57) es un solo mandato con su razon y va como nodo en la misma tanda |
+
+## 69.1. TAREA 1: LOS REGISTROS DE LA `ACTA 67`, SIN REABRIR EL ARGUMENTO (`D.47`)
+
+| que | donde |
+|---|---|
+| las filas `21` y `22` dentro y firmadas: `9` lineas iguales a las preparadas y a la lectura ciega del auditor, las `2` aristas las esperadas, sin solape; `cap_04` entra entero en `0` de `156` | `ACTA 67` `67.3`, `67.5` |
+| `cap_05` `0` de `84` y `cap_06` `0` de `62`, firmados: `D68.3` a `D68.6` se sostienen y las cuatro dudas del auditor quedan `T` | `67.4.a` |
+| barrido identico al del auditor, `118` de `118` pares, y `66` de `70` clases iguales; `D68.8` a `D68.14` se sostienen y el orden queda como esta | `67.4.b`, `67.4.c`, `67.4.e` |
+| `agrupar_tareas` a `infundir`, `SOSTENGO`: gana mi lectura dentro de la duda del auditor | `67.4.d` |
+| una caida de `REPORTE` que no acumula: en `68.3.4` los `NO SOSTENGO` son `5` filas y `7` pares, no *seis* | `67.2` |
+| `R5` cumplido, cuatro rachas en cero y la del auditor en `1 de 3` por una cifra suya | `67.0`, `67.7`, `67.9` |
+
+**`T1` CERRADA.** La caida de `67.2` la tengo delante para esta vuelta: toda cuenta de filas de `aristas_lectura.txt` que publique
+la saco por instrumento, en filas y en pares.
+
+## 69.2. TAREA 2: LA RELECTURA CONJUNTA (`AUDITOR_FORJA.md` `1.3`), ANTES DE TOCAR NADA MAS
+
+**Los pasos de los diez, impresos primero** (salida entera en `.v69ext/pasos_conjunta.txt`), y el caso del auditor leido en la
+`ACTA 67` `67.4.d` despues. Las condiciones, que son lo que decide:
+
+<!-- TALLADO: parcial salida=.v69ext/pasos_conjunta.txt -->
+
+    $ python .v64aud/pasos.py usar_tres_clases_reunion_proceso fijar_frecuencia_reunion_individual_madurez_tarea fijar_duracion_lugar_reunion_individual preparar_guion_reunion_individual_subordinado cubrir_indicadores_problemas_reunion_individual facilitar_expresion_subordinado_pregunta_mas acumular_asuntos_importantes_fichero_espera alentar_asuntos_corazon_vigilar_final_reunion programar_reunion_individual_cadena elegir_estilo_direccion_madurez_relevante_tarea | grep -E '^=====|cond:' | sed 's/ | cuarentena.*//'
+    ===== usar_tres_clases_reunion_proceso
+      cond: Cuando vas a montar las reuniones de proceso de tu organizacion y necesitas saber cuantas clases hay y cuales son, antes de entrar en como se lleva cada una.
+    ===== fijar_frecuencia_reunion_individual_madurez_tarea
+      cond: Cuando tienes que decidir cada cuanto te reunes a solas con cada uno de los profesionales que te reportan, y no sabes con que criterio separar a unos de otros.
+    ===== fijar_duracion_lugar_reunion_individual
+      cond: Cuando vas a programar la reunion individual con un subordinado y tienes que poner en el calendario cuanto va a durar y en que sitio se tiene.
+    ===== preparar_guion_reunion_individual_subordinado
+      cond: Cuando ya tienes programada la reunion individual y hay que decidir de quien es la reunion y quien la prepara.
+    ===== cubrir_indicadores_problemas_reunion_individual
+      cond: Cuando estas dentro de la reunion individual, o preparando su guion, y hay que decidir que asuntos se tratan en ella.
+    ===== facilitar_expresion_subordinado_pregunta_mas
+      cond: Cuando estas dentro de la reunion individual como supervisor y hay que decidir que papel juegas tu en ella y como sacas lo que el subordinado todavia no ha dicho.
+    ===== acumular_asuntos_importantes_fichero_espera
+      cond: Cuando entre una reunion individual y la siguiente aparecen asuntos importantes que no son del todo urgentes y hay que decidir si se interrumpe al otro o se esperan.
+    ===== alentar_asuntos_corazon_vigilar_final_reunion
+      cond: Cuando la reunion individual esta en marcha y hay que decidir si se abre la puerta a los problemas sutiles y profundos del subordinado, y como se gobierna el momento en que salen.
+    ===== programar_reunion_individual_cadena
+      cond: Cuando hay que poner en el calendario la reunion individual siguiente y se elige entre un horario fijo y fijarla al terminar la que se esta teniendo.
+    ===== elegir_estilo_direccion_madurez_relevante_tarea
+      cond: Cuando tienes que decidir con que estilo dirigir a un subordinado en una tarea concreta y no sabes si conviene darle instrucciones detalladas, acompanarlo con comunicacion y apoyo, o dejarlo actuar con poca supervision.
+
+Los pasos de la cabeza, del mismo fichero: `P1` *Cuenta con que las reuniones de proceso que se usan son de tres clases, y con que
+el libro las nombra una a una*, `P2` *Primera clase: el uno a uno*, `P3` *Segunda clase: la reunion de personal*, `P4` *Tercera
+clase: la revision de operaciones*.
+
+**Las lineas del libro de cada lado, pegadas** (`D.35`; los guiones largos del original cambiados por espacio):
+
+<!-- TALLADO: parcial salida=.v69ext/lineas_conjunta.txt -->
+
+    $ for n in 23 25 33 37 39 41 43 45 51 53 57; do grep -n "" fuentes/grove_high_output/cap_05.md | sed -n "${n}p" | cut -c1-140; done | sed 's/\xe2\x80\x94/ /g'
+    23:At Intel we use three kinds of process-oriented meetings: the one-on-one, the staff meeting, and the operation review.
+    25:ONE-ON-ONES
+    33:How often should you have one-on-ones? Or put another way, how do you decide how often somebody needs such a meeting? The answer is the j
+    37:How long should a one-on-one meeting last? There really is no answer to this, but the subordinate must feel that there is enough time to 
+    39:Where should a one-on-one take place? In the supervisor’s office, in the subordinate’s office, or somewhere else? I think you should 
+    41:A key point about a one-on-one: It should be regarded as the subordinate’s meeting, with its agenda and tone set by him. There’s good
+    43:What should be covered in a one-on-one? We can start with performance figures, indicators used by the subordinate, such as incoming order
+    45:What is the role of the supervisor in a one-on-one? He should facilitate the subordinate’s expression of what’s going on and what’s
+    51:A real time-saver is using a “hold” file where both the supervisor and subordinate accumulate important but not altogether urgent iss
+    53:The supervisor should also encourage the discussion of heart-to-heart issues during one-on-ones, because this is the perfect forum for ge
+    57:One-on-ones should be scheduled on a rolling basis setting up the next one as the meeting taking place ends. Other commitments can ther
+
+### 69.2.a. `D68.7`: EL CASO DEL AUDITOR, PUNTO POR PUNTO
+
+| punto de `67.4.d` | su evidencia | mi lectura, con la vara `6.1` | se sostiene |
+|---|---|---|---|
+| `1`, lo que produce la madre | los cuatro pasos son un *Cuenta con* y tres rotulos; la condicion dice *antes de entrar en como se lleva cada una* | es lo que imprimen `P1` a `P4`: la cabeza no manda nada sobre el uno a uno, solo lo nombra (L23). Su producto es saber que hay tres clases y como se llaman | **SI** |
+| `2`, de donde parten los hijos | las ocho condiciones, cada una con su situacion y su pregunta (L33, L37 y L39, L41, L43, L45, L51, L53, L57) | las ocho condiciones de arriba parten todas del uno a uno ya en marcha, y ninguna de saber cuantas clases hay. Mi razon de la `68` decia *parte del producto del paso 2*, y el paso `2` no produce nada que ellas usen: solo el nombre | **SI** |
+| `3`, el criterio de `C1` y `D67.3` | en `C1` la condicion de `buscar` era el producto de los pasos `3` y `4` de `subir`, que MANDAN algo; en `D67.3` los cinco de L259 a L291 quedaron sin arista porque su condicion parte de su situacion | es la misma distincion que yo mismo escribi en `67.2` para `D67.3`: *ninguna de las cinco condiciones es el producto del paso 2 de subir*. Aqui el paso `2` de la cabeza es un rotulo, no un mandato; **la figura es la de `D67.3`** | **SI** |
+| `4`, nombrar no es procedimentar, y `D.37` | el unico hilo es un rotulo de tres palabras; `D.37` ya miro la cabeza y ninguna parte es nodo | colgar los aspectos del uno a uno de la cabeza se salta el escalon que falta: el nodo del uno a uno no existe, y yo lo dije en mi comentario `D.37` de la `68` | **SI** |
+| `5`, el encabezado ONE-ON-ONES es formato | *la lectura vence al metadato* (`6.2`, `P.17`) | mi razon de la `68` apoyaba la mitad del peso en *bajo el encabezado ONE-ON-ONES que abre su tramo* (L25). Un encabezado dice donde esta el texto, no que continue el trabajo de otro nodo | **SI** |
+
+**DECIDO, CON LA VARA `6.1`: CAMBIO MI LECTURA. `SANO` en las `8` lineas y `NO SOSTENGO` en las `4` filas** (`D69.1`). **Ningun punto
+de su caso deja de sostenerse.** Lo que mi lectura de la `68` tenia de verdad (los ocho despliegan aspectos del uno a uno, que es la
+primera clase de L23) no es continuar el trabajo de la cabeza: es que la cabeza y los ocho hablan de lo mismo, y eso es tema, no arista
+(`15.6`: *LO QUE NO AUTORIZA*).
+
+### 69.2.b. `D68.7`, PAR POR PAR
+
+| par (cabeza a hijo) | sede en `.v68ext/` | lado de la cabeza | lado del hijo | antes | ahora |
+|---|---|---|---|---|---|
+| `fijar_frecuencia_reunion_individual_madurez_tarea` | veredictos, lineas `23` y `31` de la `68` | L23, *the one-on-one* | L33, *How often should you have one-on-ones?* | `CONTINUA` | **`SANO`** |
+| `fijar_duracion_lugar_reunion_individual` | veredictos, lineas `20` y `39` | L23 | L37 *How long*, L39 *Where* | `CONTINUA` | **`SANO`** |
+| `preparar_guion_reunion_individual_subordinado` | veredictos, lineas `21` y `49` | L23 | L41, *A key point about a one-on-one* | `CONTINUA` | **`SANO`** |
+| `cubrir_indicadores_problemas_reunion_individual` | veredictos, lineas `22` y `57` | L23 | L43, *What should be covered in a one-on-one?* | `CONTINUA` | **`SANO`** |
+| `facilitar_expresion_subordinado_pregunta_mas` | aristas, fila `SOSTENGO` | L23 | L45, *What is the role of the supervisor* | `SOSTENGO` | **`NO SOSTENGO`** |
+| `acumular_asuntos_importantes_fichero_espera` | aristas, fila `SOSTENGO` | L23 | L51, *A real time-saver is using a hold file* | `SOSTENGO` | **`NO SOSTENGO`** |
+| `alentar_asuntos_corazon_vigilar_final_reunion` | aristas, fila `SOSTENGO` | L23 | L53, *encourage the discussion of heart-to-heart issues* | `SOSTENGO` | **`NO SOSTENGO`** |
+| `programar_reunion_individual_cadena` | aristas, fila `SOSTENGO` | L23 | L57, *scheduled on a rolling basis* | `SOSTENGO` | **`NO SOSTENGO`** |
+
+**Las lineas de un mismo par, leido desde sus dos lados, cambian juntas**: las `8` de los veredictos son los cuatro pares desde la
+cabeza y desde el hijo. **Y caen con el mismo argumento, sin cambiar de clase** (`D69.2`, figura de `D67.3` y `D67.4`): las `8`
+lineas `SANO` de `D68.8` que decian *tio y sobrino* (la cabeza ya no es madre de nadie, asi que `infundir` no es tio: son del mismo
+tramo y sin jerarquia), la fila `NO SOSTENGO` de la cabeza a `tomar_notas` y `conducir_telefono` (decia *abuela y bisabuela* por
+`preparar_guion`), y el comentario `D.37`, al que anado debajo lo que cambia (lo que `D.37` decidia no cambia: ninguna clase es nodo).
+
+### 69.2.c. `D68.15`: MI LECTURA SE MUEVE A `NO`, Y SIGUE EN ESPERA
+
+**El paso `5` del hijo** (*Cuenta con que el estilo de mando mas eficaz en un caso concreto va de la supervision muy estrecha a la muy
+suelta a medida que sube la madurez de tarea*) nombra el principio que la madre despliega en sus pasos `4` a `6`. **Pero el hijo no
+parte del estilo elegido**, que es el producto de la madre (su condicion: *decidir con que estilo dirigir a un subordinado*): mide la
+madurez el mismo (paso `3`, L33 *how much experience does a given subordinate have with the specific task at hand*) y saca la
+frecuencia de esa madurez (pasos `6` y `7`) y del ritmo del area (pasos `8` a `10`, L35). **El *Accordingly* de L33 deriva la
+frecuencia del principio, no del estilo que se elige con el**, y *As we will see later* es una remision, que es metadato (`P.17`).
+**Decido `NO`** (`D69.3`), la misma vara que en `D68.7`: la condicion del hijo no nace del producto de la madre. Escrito con las dos
+lecturas de la `68` y del auditor en el comentario `EN ESPERA` de `.v68ext/aristas_lectura.txt`, para que `d170` lo encuentre. **No
+toca a la `70` y `d170` no se paga aqui.**
+
+### 69.2.d. ESCRITO POR CORRECCION DECLARADA, SIN BORRAR
+
+`.v69ext/corregir_t2.py`, la forma de `.v67ext/corregir_t2.py` con los pares cambiados; las copias de antes en
+`.v69ext/veredictos_listos_antes.txt` y `.v69ext/aristas_lectura_antes.txt`. Cada linea vieja queda encima de la nueva como
+comentario `# vuelta 69, <motivo>:`.
+
+    $ python .v69ext/corregir_t2.py
+    veredictos_listos: 8 lineas CONTINUA a SANO y 8 razones tio y sobrino corregidas, la vieja encima como comentario
+    aristas_lectura: 4 filas SOSTENGO a NO SOSTENGO, 1 razon corregida, y los comentarios de D.37 y de la EN ESPERA anadidos
+    $ grep -c '^# vuelta 69' .v68ext/veredictos_listos.txt .v68ext/aristas_lectura.txt
+    .v68ext/veredictos_listos.txt:16
+    .v68ext/aristas_lectura.txt:7
+    $ git diff --stat .v68ext/
+     .v68ext/aristas_lectura.txt   | 28 ++++++++++++++++++++-----
+     .v68ext/veredictos_listos.txt | 48 ++++++++++++++++++++++++++++---------------
+     2 files changed, 55 insertions(+), 21 deletions(-)
+    $ cat .v69ext/sin_borrar.txt
+    lineas quitadas: 21 | presentes todavia dentro de un comentario # vuelta 69: 21
+
+**Las `21` lineas que el diff quita siguen en el fichero, letra a letra, dentro de su comentario** (`16` de veredictos y `5` de
+aristas; los `7` comentarios de aristas son esas `5` mas los dos bloques anadidos). `.v69ext/sin_borrar.txt` lo comprueba buscando
+cada linea quitada en los dos ficheros.
+
+### 69.2.e. LAS COMPROBACIONES, CON COPIAS EN `.v69ext/`
+
+`.v69ext/comprobar_veredictos.py` es `.v68ext/comprobar_veredictos.py` con la cabecera cambiada y nada del codigo; `.v69ext/orden.py` es
+`.v68ext/orden.py` con la cabecera cambiada y **la cuenta de aristas esperadas en la `70` anadida al final**, que la TAREA 2.3 pide
+por instrumento. Leen los mismos ficheros de `.v68ext/` y el mismo barrido (**ninguna ficha cambio**, `69.3`); sus salidas van a
+`.v69ext/`.
+
+<!-- TALLADO: parcial salida=.v69ext/comprobar_veredictos.txt -->
+
+    $ python .v69ext/comprobar_veredictos.py | grep -E 'CONTINUA|^secciones|^ARISTAS|levantada hoy'
+      OK  preparar_guion_reunion_individual_subordinado    tomar_notas_copia_guion_reunion_individual       CONTINUA  madre=preparar_guion_reunion_individual_subordinado
+      OK  tomar_notas_copia_guion_reunion_individual       conducir_reunion_individual_telefono_distancia   CONTINUA  madre=tomar_notas_copia_guion_reunion_individual
+      OK  tomar_notas_copia_guion_reunion_individual       preparar_guion_reunion_individual_subordinado    CONTINUA  madre=preparar_guion_reunion_individual_subordinado
+      OK  conducir_reunion_individual_telefono_distancia   tomar_notas_copia_guion_reunion_individual       CONTINUA  madre=tomar_notas_copia_guion_reunion_individual
+    secciones 20 de 20, lineas 118, ilegibles 0, vecinos sin linea 0, lineas sin vecino 0
+    ARISTAS POR LECTURA (SOSTENGO) contra el barrido de hoy
+      agrupar_tareas_semejantes_aprovechar_preparacion   > infundir_regularidad_reunion_proceso                 levantada hoy: NO
+      buscar_regularidad_bloques_iguales_trabajo_mando   > infundir_regularidad_reunion_proceso                 levantada hoy: NO
+      agrupar_interrupciones_subordinados_reuniones_regulares > acumular_asuntos_importantes_fichero_espera          levantada hoy: NO
+      conducir_etapas_modelo_ideal_decision              > cortar_discusion_libre_momento_justo                 levantada hoy: NO
+      conducir_etapas_modelo_ideal_decision              > ejercer_poder_posicion_etapa_decision_clara          levantada hoy: NO
+    $ grep '^  OK' .v69ext/comprobar_veredictos.txt | awk '{print $4}' | sort | uniq -c
+          4 CONTINUA
+        114 SANO
+
+**Cero vecinos sin linea y cero lineas sin vecino**, `118` lineas como en la `68`: **`4` `CONTINUA`** (dos aristas leidas desde sus dos
+lados) y **`114` `SANO`**, ocho mas que los `106` de la `68`, que son las ocho de `D68.7`.
+
+<!-- TALLADO: parcial salida=.v69ext/orden.txt -->
+
+    $ python .v69ext/orden.py | sed -n '/^COMPROBACIONES/,$p'
+    COMPROBACIONES
+      hijo delante de su madre: 0 []
+      D.36, par que levanta en un solo sentido con el que lo levanta entrando antes: 0 []
+      hijo dentro del tope con su madre fuera: 0 []
+      tanda propuesta: 20 de 20; fuera del tope: 
+    
+    ARISTAS ESPERADAS EN LA 70
+      CONTINUA   preparar_guion_reunion_individual_subordinado            > tomar_notas_copia_guion_reunion_individual
+      CONTINUA   tomar_notas_copia_guion_reunion_individual               > conducir_reunion_individual_telefono_distancia
+      LECTURA    agrupar_tareas_semejantes_aprovechar_preparacion         > infundir_regularidad_reunion_proceso
+      LECTURA    buscar_regularidad_bloques_iguales_trabajo_mando         > infundir_regularidad_reunion_proceso
+      LECTURA    agrupar_interrupciones_subordinados_reuniones_regulares  > acumular_asuntos_importantes_fichero_espera
+      LECTURA    conducir_etapas_modelo_ideal_decision                    > cortar_discusion_libre_momento_justo
+      LECTURA    conducir_etapas_modelo_ideal_decision                    > ejercer_poder_posicion_etapa_decision_clara
+      CONTINUA con madre= (aristas distintas): 2 | SOSTENGO por lectura: 5 | solapes entre las dos: 0 | aristas esperadas en la 70: 7
+
+**Las tres comprobaciones del orden en cero, y el orden no se mueve**: `ORDEN` es el de la `68` sin tocar, y lo unico que cambia en
+la tabla es la columna de madres de las filas `3` a `7`, `9`, `10` y `12`, que pierden la cabeza (`diff .v68ext/orden.txt
+.v69ext/orden.txt`, `8` filas). **Aristas esperadas en la `70`: `7`**, `2` que cablea la aduana y `5` por lectura; eran `15` en la
+`68` (`6` y `9`), y la diferencia son las `8` de `D68.7`, como el auditor calculo en `67.4.d`.
+
+**Las filas de `.v68ext/aristas_lectura.txt` al cerrar la tarea, contadas** (la caida de `67.2`): **`5` `SOSTENGO` y `9` `NO
+SOSTENGO`, en `11` pares**:
+
+    $ grep -c '^SOSTENGO' .v68ext/aristas_lectura.txt; grep -c '^NO SOSTENGO' .v68ext/aristas_lectura.txt; grep '^NO SOSTENGO' .v68ext/aristas_lectura.txt | awk -F' [|] ' '{n=split($3,a,", "); s+=n} END {print "pares NO SOSTENGO:", s}'
+    5
+    9
+    pares NO SOSTENGO: 11
+
+**`T2` CERRADA.**

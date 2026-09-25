@@ -1,0 +1,1 @@
+lineas quitadas: 21 | presentes todavia dentro de un comentario # vuelta 69: 21
