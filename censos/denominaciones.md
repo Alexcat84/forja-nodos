@@ -1040,3 +1040,7 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-25 | cubrir_indicadores_problemas_reunion_individual | nombre_largo | El contenido de la reunion individual: las cifras de rendimiento con enfasis en las que avisan de problema, lo importante ocurrido desde la reunion anterior con sus cuatro clases, la intuicion que dispara una mirada a la caja negra de la organizacion, y el criterio que manda sobre todos ellos | castellano | - |
 | 2026-09-25 | cubrir_indicadores_problemas_reunion_individual | otro_idioma | one-on-one | ingles | - |
 | 2026-09-25 | cubrir_indicadores_problemas_reunion_individual | otro_idioma | organizational black box | ingles | - |
+| 2026-09-25 | facilitar_expresion_subordinado_pregunta_mas | nombre_largo | El papel del supervisor en la reunion individual: facilitar que el subordinado exprese lo que pasa y lo que le molesta, estar alli para aprender y para orientar, y aplicar el principio de direccion didactica de una pregunta mas hasta que los dos se den por satisfechos de haber llegado al fondo del problema | castellano | - |
+| 2026-09-25 | facilitar_expresion_subordinado_pregunta_mas | otro_idioma | one-on-one | ingles | - |
+| 2026-09-25 | facilitar_expresion_subordinado_pregunta_mas | otro_idioma | Principle of Didactic Management | ingles | - |
+| 2026-09-25 | facilitar_expresion_subordinado_pregunta_mas | otro_idioma | Ask one more question | ingles | - |
