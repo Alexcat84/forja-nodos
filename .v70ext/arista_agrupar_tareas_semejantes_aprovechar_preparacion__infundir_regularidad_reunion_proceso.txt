@@ -1,0 +1,13 @@
+$ python forja.py arista --madre agrupar_tareas_semejantes_aprovechar_preparacion --hijo infundir_regularidad_reunion_proceso --paso 3 --razon <fila 8> --veredicto CONTINUA --cita-veredicto <fila 8>
+DECLARACION DE ARISTA POR LECTURA (D.37)
+  madre: agrupar_tareas_semejantes_aprovechar_preparacion
+  hijo : infundir_regularidad_reunion_proceso
+  paso citado de la madre: 3
+    Para que el trabajo de mando avance con eficiencia, usa un mismo esfuerzo de preparacion y aplicalo a todo un grupo de actividades semejantes.
+  señales del par: familia_id 0.0, paso_contra_nodo 0.541, similitud_texto 0.254
+    NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: agrupar_tareas_semejantes_aprovechar_preparacion > infundir_regularidad_reunion_proceso
+  razon en bitacora/VEREDICTOS.jsonl
+
+codigo 0

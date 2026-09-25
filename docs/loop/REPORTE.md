@@ -61740,3 +61740,49 @@ Y sus `20` filas contra las de la `69` (salida en `.v70ext/huellas_contra_69.txt
 Copias de la `68` con la ruta cambiada a `.v70ext/` (`7.F`): `insertar.py` (la sede de las lineas cambiada a
 `.v68ext/veredictos_listos.txt`), `esperar.py`, `fila.py`, `arista.py` (la sede cambiada a `.v68ext/aristas_lectura.txt` y la
 cita a las actas `67` y `68`), `tras_insertar.sh`, `empujar_fila.sh` y `bloque_arista.sh`; cada una lo dice en su cabecera.
+
+### Fila `1`: `infundir_regularidad_reunion_proceso`, **INSERTADO** en `2565.0` s, codigo `0`, commit `307e1da`
+
+La aduana de hoy: **BLOQUEARIA** con `5` vecino(s) contra `479`; lineas `--veredicto` pasadas: `5`. Salida entera en `.v70ext/insertar_01_infundir_regularidad_reunion_proceso.txt`.
+
+<!-- TALLADO: parcial salida=.v70ext/insertar_01_infundir_regularidad_reunion_proceso.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `usar_tres_clases_reunion_proceso` | similitud_texto | 0.494 | 0.286 | 0.449 | SANO |
+| `preparar_guion_reunion_individual_subordinado` | similitud_texto | 0.483 | 0.125 | 0.473 | SANO |
+| `fijar_frecuencia_reunion_individual_madurez_tarea` | similitud_texto | 0.473 | 0.111 | 0.462 | SANO |
+| `fijar_duracion_lugar_reunion_individual` | similitud_texto | 0.466 | 0.125 | 0.454 | SANO |
+| `cubrir_indicadores_problemas_reunion_individual` | similitud_texto | 0.421 | 0.125 | 0.424 | SANO |
+
+**Los cinco vecinos son los cinco de su bloque y las cinco lineas se pasaron tal cual**; ninguno nuevo contra `479` (`390` del grafo mas `89` de bandejas, linea `11` de su salida), ninguno que dejara de levantarse.
+
+**Arista por lectura cableada con la madre ya en el grafo** (`D.29`, adjudicada en la `ACTA 67` `67.4.d`): `agrupar_tareas_semejantes_aprovechar_preparacion > infundir_regularidad_reunion_proceso`, `--paso 3`, el que su fila (linea `8` de `.v68ext/aristas_lectura.txt`) cita. Salida entera en `.v70ext/arista_agrupar_tareas_semejantes_aprovechar_preparacion__infundir_regularidad_reunion_proceso.txt`:
+
+    $ python forja.py arista --madre agrupar_tareas_semejantes_aprovechar_preparacion --hijo infundir_regularidad_reunion_proceso --paso 3 --razon <fila 8> --veredicto CONTINUA --cita-veredicto <fila 8>
+    DECLARACION DE ARISTA POR LECTURA (D.37)
+      madre: agrupar_tareas_semejantes_aprovechar_preparacion
+      hijo : infundir_regularidad_reunion_proceso
+      paso citado de la madre: 3
+        Para que el trabajo de mando avance con eficiencia, usa un mismo esfuerzo de preparacion y aplicalo a todo un grupo de actividades semejantes.
+      señales del par: familia_id 0.0, paso_contra_nodo 0.541, similitud_texto 0.254
+        NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+    GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: agrupar_tareas_semejantes_aprovechar_preparacion > infundir_regularidad_reunion_proceso
+      razon en bitacora/VEREDICTOS.jsonl
+
+
+**Arista por lectura cableada con la madre ya en el grafo** (`D.29`, `D68.10`, sostenida en la `ACTA 67` `67.4.c`): `buscar_regularidad_bloques_iguales_trabajo_mando > infundir_regularidad_reunion_proceso`, `--paso 1`, el que su fila (linea `9` de `.v68ext/aristas_lectura.txt`) cita. Salida entera en `.v70ext/arista_buscar_regularidad_bloques_iguales_trabajo_mando__infundir_regularidad_reunion_proceso.txt`:
+
+    $ python forja.py arista --madre buscar_regularidad_bloques_iguales_trabajo_mando --hijo infundir_regularidad_reunion_proceso --paso 1 --razon <fila 9> --veredicto CONTINUA --cita-veredicto <fila 9>
+    DECLARACION DE ARISTA POR LECTURA (D.37)
+      madre: buscar_regularidad_bloques_iguales_trabajo_mando
+      hijo : infundir_regularidad_reunion_proceso
+      paso citado de la madre: 1
+        Aplica a tu trabajo de mando el siguiente concepto de produccion: ve hacia la regularidad.
+      señales del par: familia_id 0.111, paso_contra_nodo 0.453, similitud_texto 0.285
+        NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+    GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: buscar_regularidad_bloques_iguales_trabajo_mando > infundir_regularidad_reunion_proceso
+      razon en bitacora/VEREDICTOS.jsonl
+
