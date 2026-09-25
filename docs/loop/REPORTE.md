@@ -61859,3 +61859,20 @@ La aduana de hoy: **BLOQUEARIA** con `9` vecino(s) contra `479`; lineas `--vered
 **Arista en cola (`D.29`)**: `preparar_guion_reunion_individual_subordinado > tomar_notas_copia_guion_reunion_individual`
 
 **Los nueve vecinos son los nueve de su bloque y las nueve lineas se pasaron tal cual**; ninguno nuevo contra `479` (`394` del grafo mas `85` de bandejas, linea `15` de su salida), ninguno que dejara de levantarse. **La `CONTINUA` con `tomar_notas_copia_guion_reunion_individual` queda `EN COLA`** (lineas `83` y `91` de su salida), porque el hijo espera en la bandeja: es lo que `D70.4` preve, y la cablea la fila `8`.
+
+### Fila `6`: `cubrir_indicadores_problemas_reunion_individual`, **INSERTADO** en `4236.0` s, codigo `0`, commit `272d6d9`
+
+La aduana de hoy: **BLOQUEARIA** con `6` vecino(s) contra `479`; lineas `--veredicto` pasadas: `6`. Salida entera en `.v70ext/insertar_06_cubrir_indicadores_problemas_reunion_individual.txt`.
+
+<!-- TALLADO: parcial salida=.v70ext/insertar_06_cubrir_indicadores_problemas_reunion_individual.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `preparar_guion_reunion_individual_subordinado` | similitud_texto | 0.550 | 0.250 | 0.459 | SANO |
+| `fijar_frecuencia_reunion_individual_madurez_tarea` | similitud_texto | 0.516 | 0.222 | 0.434 | SANO |
+| `fijar_duracion_lugar_reunion_individual` | similitud_texto | 0.505 | 0.250 | 0.444 | SANO |
+| `usar_tres_clases_reunion_proceso` | similitud_texto | 0.366 | 0.111 | 0.464 | SANO |
+| `infundir_regularidad_reunion_proceso` | similitud_texto | 0.416 | 0.125 | 0.441 | SANO |
+| `facilitar_expresion_subordinado_pregunta_mas` | similitud_texto | 0.363 | 0.000 | 0.423 | SANO |
+
+**Los seis vecinos son los seis de su bloque y las seis lineas se pasaron tal cual**; ninguno nuevo contra `479` (`395` del grafo mas `84` de bandejas, linea `12` de su salida), ninguno que dejara de levantarse. Sin arista (`D68.9`: hermano y no hijo del guion). **`4236,0` s, por encima del mas largo de la `67` (`3988,1`)**: no es techo, es lo que costo, y se dice.
