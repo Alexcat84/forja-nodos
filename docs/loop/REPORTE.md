@@ -62900,3 +62900,29 @@ veredicto. **Esa ficha ya entro en la `70`** (fila `10`) y no esta en la bandeja
 `C:/Users/AlexDesk/Documents/forja-perfil-wt/`, es la prueba de equivalencia del reparto de la senial 1 del fundador (`68d6946`)
 repitiendo las inserciones de la `70`. **No lo mato**: un `insertar` cortado a medias es la caida que el cerrojo de `D.44` existe
 para impedir, y no es mio. **No escribo `PARA_ALEXIS.md`: nada me obliga a parar.**
+
+## 71.R. EL REINTENTO DEL ARNES, SIN TRABAJO NUEVO
+
+**El arnes relanzo el turno del extractor de la `71`** despues de anotar en `loop.log` *`extractor: fallo instantaneo (probable
+limite de uso), 9573s, costo "vacio", intento 1 de 7`* a las `19:14:28`. **La vuelta ya estaba cerrada y empujada antes de ese
+fallo**: `6b2f7215` (T5, `19:06:42`) y `4b4f6c28` (la salida del hook, `19:10:00`), ya en `origin/extraccion-mundo-11` al abrir
+este reintento. **No se rehace nada**: el encargo es el mismo, sus cinco tareas estan `CERRADA` en `71.5.g`, y repetirlas cambiaria
+fichas y blobs que ya estan sellados en `71.5.c`.
+
+**Ningun `insertar`**: el encargo de la `71` lo prohibe (*AQUI NO SE INSERTA NINGUNA*), y no hay ninguna tanda con acta que la
+certifique pendiente. La ultima acta de `docs/loop/ACTA_AUDITOR.md` es la `ACTA 69`, que certifico las `20` de `cap_05` y `cap_06`,
+ya dentro desde la `70`. Las `20` fichas preparadas aqui esperan a la `ACTA 70` (`D.39`).
+
+Lo pendiente del arnes (`loop.log`) se commiteo primero, `4a8e56d5`, con el hook en verde. El censo, remedido en este reintento:
+
+<!-- TALLADO: parcial salida=.v71ext/reintento_censo.txt -->
+
+    $ bash .v71ext/censo.sh
+    nodos en dataset/nodos.jsonl        : 410
+    veredictos en bitacora              : 1027
+    pares mutuos                        : 1
+    bandeja cuarentena/grove_high_output: 27
+    insertados de grove_high_output     : 65
+    cerrojos en procesos/               : 
+
+**El mismo que en `71.0` y en `71.5.a`**, sin cerrojos. **Ningun proceso lanzado en este reintento.** No escribo `PARA_ALEXIS.md`.
