@@ -61876,3 +61876,22 @@ La aduana de hoy: **BLOQUEARIA** con `6` vecino(s) contra `479`; lineas `--vered
 | `facilitar_expresion_subordinado_pregunta_mas` | similitud_texto | 0.363 | 0.000 | 0.423 | SANO |
 
 **Los seis vecinos son los seis de su bloque y las seis lineas se pasaron tal cual**; ninguno nuevo contra `479` (`395` del grafo mas `84` de bandejas, linea `12` de su salida), ninguno que dejara de levantarse. Sin arista (`D68.9`: hermano y no hijo del guion). **`4236,0` s, por encima del mas largo de la `67` (`3988,1`)**: no es techo, es lo que costo, y se dice.
+
+### Fila `7`: `facilitar_expresion_subordinado_pregunta_mas`, **INSERTADO** en `2941.0` s, codigo `0`, commit `3b17eb0`
+
+La aduana de hoy: **BLOQUEARIA** con `8` vecino(s) contra `479`; lineas `--veredicto` pasadas: `8`. Salida entera en `.v70ext/insertar_07_facilitar_expresion_subordinado_pregunta_mas.txt`.
+
+<!-- TALLADO: parcial salida=.v70ext/insertar_07_facilitar_expresion_subordinado_pregunta_mas.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `preparar_guion_reunion_individual_subordinado` | similitud_texto | 0.397 | 0.111 | 0.480 | SANO |
+| `acumular_asuntos_importantes_fichero_espera` | similitud_texto | 0.475 | 0.000 | 0.426 | SANO |
+| `alentar_asuntos_corazon_vigilar_final_reunion` | similitud_texto | 0.414 | 0.000 | 0.474 | SANO |
+| `fijar_duracion_lugar_reunion_individual` | similitud_texto | 0.361 | 0.000 | 0.464 | SANO |
+| `conducir_reunion_individual_telefono_distancia` | similitud_texto | 0.411 | 0.000 | 0.447 | SANO |
+| `programar_reunion_individual_cadena` | similitud_texto | 0.445 | 0.000 | 0.447 | SANO |
+| `tomar_notas_copia_guion_reunion_individual` | similitud_texto | 0.434 | 0.000 | 0.406 | SANO |
+| `cubrir_indicadores_problemas_reunion_individual` | similitud_texto | 0.362 | 0.000 | 0.420 | SANO |
+
+**Los ocho vecinos son los ocho de su bloque y las ocho lineas se pasaron tal cual**; ninguno nuevo contra `479` (`396` del grafo mas `83` de bandejas, linea `14` de su salida), ninguno que dejara de levantarse. Sin arista: su fila con la cabeza es `NO SOSTENGO` desde la conjunta (`D69.1`).
