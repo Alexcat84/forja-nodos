@@ -1,376 +1,188 @@
-# APERTURA CIEGA DE LA VUELTA 69, lote 7 (`grove_high_output`), **CLASE SANEAMIENTO**
+# APERTURA CIEGA DE LA VUELTA 70, lote 7 (`grove_high_output`), **CLASE INSERCION**
 
-*Auditor `claude-opus-5-5`, fase ciega, 25 sep 2026, la que el arnes numera `VUELTA 5` en la corrida que arranco el
+*Auditor `claude-opus-5-5`, fase ciega, 25 sep 2026, la que el arnes numera `VUELTA 6` en la corrida que arranco el
 23 a las `21:50`. Linea **serial**, rama `extraccion-mundo-11`. Modo austero (`D.47`). Todo lo de esta pagina sale de
-`.v69aud/`, escrito y corrido en esta fase; cada bloque `$` lo pega `.v69aud/generar_apertura.py` corriendo el
-comando en el momento de escribirla. **No hay ninguna tabla en esta pagina**, a proposito, como en la `66` y la `68`.
-**En esta fase no corro `git`** (ni `log`, ni `diff`, ni `status`): mido el arbol por sus ficheros, sus huellas y sus
-fechas, y donde eso no alcanza lo digo como limitacion.*
+`.v70aud/`, escrito y corrido en esta fase; cada bloque `$` lo pega `.v70aud/generar_apertura.py` corriendo el
+comando en el momento de escribirla. **No hay ninguna tabla en esta pagina**, a proposito, como en la `66`, la `68` y la
+`69`. **En esta fase no corro `git`** (ni `log`, ni `diff`, ni `status`, ni `hash-object`): mido el arbol por sus
+ficheros, sus huellas y sus fechas, y donde eso no alcanza lo digo como limitacion.*
 
 ## 0. **LA HERENCIA** (`D.40`)
 
-ACTA ANTERIOR LEIDA: 1c91f518d8ca311aa937caa91c8f8ec27366fbde
+ACTA ANTERIOR LEIDA: a2ad919527f64c4aefe1fee58278246df8191c74
+
+**Y esta vez la compruebo sin git**: es el blob de `docs/loop/ACTA_AUDITOR.md` tal como esta hoy en el arbol,
+calculado a mano como lo calcula git, con los finales de linea pasados a LF como manda `.gitattributes`. Tal cual no
+cuadra y normalizado si, y lo pego las dos cosas para que se vea por que. La `ACTA 68` la lei entera, de su linea de
+cabecera a la ultima del fichero:
+
+    $ python .v70aud/huella_acta.py
+    sha1 del blob tal cual: 4ea9ba4e6b7808fb8e078d5a6f4955dbf18fae4f
+    lineas con CRLF en el arbol: 395 | sha1 del blob normalizado a LF: a2ad919527f64c4aefe1fee58278246df8191c74
+    lineas del fichero: 47722 | la ACTA 68 empieza en la linea: [47401]
 
 HEREDADO 1: NO APLICA en esta fase. **Motivo:** `R5` es un remedio **del extractor** y se mide **sobre su
-reporte de la `69`** (`ACTA 67` `67.11`: *el reporte de la `69`, con `.v64ext/pegado64.py` y
-`.v64aud/normal/bloques_mudos.py`, los dos con la cabecera del tramo cambiada a la `69`*), y el reporte **no esta
+reporte de la `70`** (`ACTA 68` `68.12`: *el reporte de la `70`, con `.v64ext/pegado64.py` y
+`.v64aud/normal/bloques_mudos.py`, los dos con la cabecera del tramo cambiada a la `70`*), y el reporte **no esta
 en el arbol**: el arnes lo retiro para esta fase (`D.34.2`) y no lo he recuperado por ninguna via. **Se mide en mi
-turno normal**, con los dos instrumentos sacados otra vez de los originales. Lo que si esta en mi mano lo cumplo en
-mi pagina: cada bloque `$` lleva la salida del comando que abre, y nada mas.
+turno normal**, con los dos instrumentos sacados otra vez de los originales y no de sus copias. Lo que si esta en mi
+mano lo cumplo en mi pagina: cada bloque `$` lleva la salida del comando que abre, y nada mas.
 
     $ ls docs/loop/REPORTE.md docs/loop/ultimo_extractor.json docs/loop/ultimo_auditor.json docs/loop/CREDITO_serial.jsonl
     ls: cannot access 'docs/loop/REPORTE.md': No such file or directory
     ls: cannot access 'docs/loop/ultimo_extractor.json': No such file or directory
     ls: cannot access 'docs/loop/ultimo_auditor.json': No such file or directory
     ls: cannot access 'docs/loop/CREDITO_serial.jsonl': No such file or directory
-    $ grep -n "VUELTA 5 : APERTURA CIEGA" docs/loop/loop.log | tail -1
-    6255:[2026-09-25 02:24:24] VUELTA 5 : APERTURA CIEGA (claude-opus-5-5), retirados: REPORTE.md ultimo_extractor.json ultimo_auditor.json CREDITO_serial.jsonl
+    $ grep -n "VUELTA 6 : APERTURA CIEGA" docs/loop/loop.log | tail -1
+    6523:[2026-09-25 16:05:36] VUELTA 6 : APERTURA CIEGA (claude-opus-5-5), retirados: REPORTE.md ultimo_extractor.json ultimo_auditor.json CREDITO_serial.jsonl
 
-HEREDADO 2: CUMPLIDO. **`R6`, mio** (`ACTA 67` `67.11`): en esta fase los pasos de cualquier nodo los imprime
-`.v67aud/normal/pasos_ciego.py`, que no enseña `previos` ni `siguientes`, y **todos los bloques de pasos de esta
-pagina lo corren** (secciones `3`, `4` y `5`). Ningun instrumento mio de esta fase nombra esas claves:
+HEREDADO 2: CUMPLIDO. **`R6`, mio** (`ACTA 68` `68.12`): en esta fase los pasos de cualquier nodo los imprime
+`.v67aud/normal/pasos_ciego.py`, que no enseña `previos` ni `siguientes`, y **el unico bloque de pasos de esta pagina lo
+corre** (seccion `5`). Ningun instrumento mio de esta fase nombra esas claves:
 
-    $ grep -l -E "previos|siguientes" .v69aud/*.py | wc -l
-    0
-    $ cat .v69aud/pasos_conjunta.txt | grep -c -E "previos|siguientes"
+    $ grep -l -E "previos|siguientes" .v70aud/*.py | wc -l
     0
 
-**LECTURA:** no vi ninguna clave de relacion de un nodo tocado en esta fase. `.v69aud/pasos_conjunta.txt` es la
-salida de `pasos_ciego.py` para los diez nodos que leo aqui, guardada para mi turno normal. Y el cumplimiento de la
-pagina entera lo mide un `grep` sobre ella antes de cerrarla (seccion `9`).
+**Y DIGO LO UNICO QUE SE ACERCA, para que se juzgue:** `.v70aud/grafo_sin_tanda.py` (seccion `2`) quita los ids de las
+`20` de **cualquier lista** de los nodos viejos, sin nombrar ninguna clave, para reconstruir el grafo que barri en la
+`68`, y **cuenta** cuantos nodos viejos tenian alguno. **No imprime ninguna clave ni ningun id de relacion**: una cuenta y
+un `SI` o un `NO`. Es la misma cuenta que la `67` publico sacandola de `git` (*reescritos solo en claves de relacion*), y
+como alli es **cuenta y no identidad**: que nodos son lo miro en el turno normal. El cumplimiento de la pagina entera lo
+mide un `grep` sobre ella al cerrarla (seccion `7`).
 
-HEREDADO 3: CUMPLIDO. **`R7`, mio** (`ACTA 67` `67.11`): toda linea de esta pagina que reparte un total en clases la
-imprime un instrumento que cuenta **todas** las clases con el mismo predicado y **dice su `suma`**. Los instrumentos que
-copie de la `68` y no la decian los he copiado a `.v69aud/` con la suma dentro (`cruce_clases.py`,
-`contar_fidelidad.py`, `restricciones_orden.py`), y los nuevos la traen desde que nacen (`poblacion.py`,
-`cabeza_d68_7.py`, `d053_mitades.py`, `d68_15.py`, `aristas_70.py`). **Medido sobre la pagina misma** en la seccion `9`,
-con `.v69aud/r7_pagina.py`.
-
-**LA HUELLA** es la que el prompt me entrega, comprobada solo contra el propio prompt: **no la recomputo**, porque
-`forja.py herencia` lee en esta fase un fichero retirado (`d146`).
+HEREDADO 3: CUMPLIDO. **`R7`, mio** (`ACTA 68` `68.12`): toda linea de esta pagina que reparte un total en clases la
+imprime un instrumento que cuenta **todas** las clases con el mismo predicado y **dice su `suma`**: los nuevos de
+`.v70aud/` la traen desde que nacen (`huellas_hoy.py`, `entra_lo_leido.py`, `esperado_70.py`, `clasificacion_20.py`), y
+los que reuso de la `69` ya la traian (`poblacion.py`, `aristas_70.py`). **Medido sobre la pagina misma** en la
+seccion `7`, con `.v70aud/r7_pagina.py`.
 
 ## 1. **LO QUE VI SIN BUSCARLO, Y LO DIGO ANTES DE MEDIR** (`d146`)
 
-**La foto de `git status` que el entorno me pone delante trae los asuntos de los cuatro commits del extractor, y dos
-traen sus conclusiones de esta vuelta**, que lei antes de leer nada:
+**La foto de `git status` que el entorno me pone delante trae los asuntos de los cinco ultimos commits del extractor,
+y tres traen sus conclusiones de esta vuelta**, que lei antes de leer nada:
 
-- `3721928` *Vuelta 69, T1 y T2: los registros de la ACTA 67 y la relectura conjunta (D68.7 a SANO y NO SOSTENGO en
-  los ocho, D68.15 a NO en espera; 118 lineas sin hueco, orden en cero, 7 aristas esperadas en la 70)*;
-- `4ec8c16` *Vuelta 69, T3 a T5: d053 decidida sin partir la ficha (la mitad de L37 no pasa 9.1 sola), d056 pagada
-  citando el recorrido de la 68 (118 de 118), saneamiento declarado, 7 aristas esperadas en la 70 y las 20 huellas
-  iguales, censo igual en el dato (390, 904, 1, 47, 45), guardas y cierre estricto en verde*;
-- y `0715b58` y `4b17f8b`, sin cifras.
+- `6c40696` *Vuelta 70, T3 a T5: las 20 filas de cap_05 y cap_06 dentro, 7 de 7 aristas en el grafo, censo
+  410/1027/1/27/65, 0 de 84 y 0 de 62, guardas en verde*;
+- `4a10a65` *Vuelta 70: el cierre estricto en verde y la tabla de tareas al cerrar*;
+- `d58cd8c` *Vuelta 70, fila 20: decidir_nivel_competente_inferior insertado por la aduana, movido a _insertados*;
+- y `a34a1f7` y `cfcbbb6`, sin cifras (*fila 20: su fila en el reporte* y *la salida del hook del cierre*).
 
-**Y al leer las tres deudas de esta vuelta en `docs/loop/DEUDA.jsonl`** para copiar su letra, vi que `d053` y `d056`
-tienen **cada una una segunda linea con `vuelta` `69` y una clave `como`**, que es la forma de un pago; **su `como` no lo
-imprimi**. Tambien lei la cola de `docs/loop/loop.log`, que no se retira. Es el mismo hueco de `d146` que declararon las
-aperturas de la `65` a la `68`, y no lo arreglo yo (`D.45`).
+**Tambien lei la cola de `docs/loop/loop.log`**, que no se retira (el turno del extractor, su coste y su duracion), **mi
+propio encargo** (`docs/loop/PROMPT_SIGUIENTE.md`, que es mio) y, para calcular la huella, `.gitattributes`; y busque con
+`grep` una clave de fin de linea en el fichero `.git/config` **leyendolo como texto**, sin correr git, y no salio nada. Es
+el mismo hueco de `d146` que declararon las aperturas de la `65` a la `69`, y no lo arreglo yo (`D.45`).
 
 **LO QUE ESO LE HACE A ESTA PAGINA, SIN REBAJARLO:**
 
-1. **`D68.7` y `D68.15` no las decido hoy: las decidi y las selle en la `68`** (`.v68aud/mis_clases.tsv` y
-   `.v68aud/aristas_lectura.tsv`, que no toco, y mi caso en la `ACTA 67` `67.4.d`), antes de que existiera su
-   relectura. Aqui las releo con los pasos delante y digo si las mantengo; **la coincidencia con su asunto la digo
-   como coincidencia y no como fuente**.
-2. **`d053` SI la leo hoy por primera vez con la vara `9.1`, y la leo despues de haber visto su decision en el asunto
-   de `4ec8c16`.** Esa lectura **no es ciega** y no la presento como tal: escribo la linea de cada lado para que se
-   pueda juzgar sin mi, y **si coincide con la suya no cuenta como una segunda lectura independiente**.
-3. **Ninguna cifra de esta pagina sale de esos asuntos**; todas salen de un instrumento corrido en esta fase.
-4. **No he abierto nada de `.v68ext/` ni de `.v69ext/`**, ni `bitacora/VEREDICTOS.jsonl` por dentro: de ella solo cuento
-   lineas.
+1. **Mis clases de la tanda no las decido hoy**: son las de mis ficheros sellados de la `68` (`.v68aud/mis_clases.tsv` y
+   `.v68aud/aristas_lectura.tsv`), que la conjunta de la `69` dejo iguales en los `70` pares (`ACTA 68` `68.3`), mas la
+   unica correccion que yo mismo adjudique en la `ACTA 67` `67.4.d`, declarada dentro de `.v69aud/aristas_70.py`.
+2. **Ninguna cifra de esta pagina sale de esos asuntos**; todas salen de un instrumento corrido en esta fase, y **donde
+   coinciden lo digo como coincidencia y no como fuente**.
+3. **No he abierto nada de `.v70ext/`, `.v69ext/` ni `.v68ext/`**, ni `bitacora/VEREDICTOS.jsonl` por dentro: de ella solo
+   cuento lineas.
+4. **Lo que `d58cd8c` quiere decir con *insertado por la aduana* no lo se**, y no lo adivino: lo leo en el reporte.
 
-## 2. **EL ALCANCE, Y EL DATO QUE NO SE MOVIO**
+## 2. **EL CENSO, Y QUE LA POBLACION DE LA ADUANA ES LA DE MI BARRIDO DE LA `68`** (`D.38.4`, `D.38.5`)
 
-La vuelta es de **saneamiento sin insercion** (encargo de la `69`, seccion `0`): la relectura conjunta de `D68.7` y
-`D68.15`, `d053` (se parte o no `fijar_duracion_lugar_reunion_individual`) y `d056` (la cola de lectura de la tanda
-`52`). **Lo que puede mover en el dato es una sola cosa: si parte la ficha, la bandeja sube a `48`.**
+La vuelta es **de insercion** (mi encargo, seccion `0`): las `20` filas de `cap_05` y `cap_06`, una por vez.
 
     $ wc -l dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl config/pares_mutuos.jsonl
-        390 dataset/nodos.jsonl
-        904 bitacora/VEREDICTOS.jsonl
+        410 dataset/nodos.jsonl
+       1027 bitacora/VEREDICTOS.jsonl
           1 config/pares_mutuos.jsonl
-       1295 total
+       1438 total
     $ ls cuarentena/grove_high_output/*.json | wc -l
-    47
+    27
     $ ls cuarentena/_insertados/grove_high_output/*.json | wc -l
-    45
+    65
+    $ ls cuarentena/gerber_emyth/*.json cuarentena/marquet_turn_the_ship/*.json | wc -l
+    42
     $ ls -A procesos/ | wc -l
     0
     $ python forja.py gate | head -2
     GATE VERDE.
-      nodos verificados: 390
+      nodos verificados: 410
 
-**Y sin `git`, lo que cambio desde mi barrido de la `68`**, por dos instrumentos: las `50` huellas que tome al lanzarlo
-(la bandeja de Grove, las dos filas de `cap_04` en `_insertados` y el grafo), y **cualquier fichero de `cuarentena/`,
-`dataset/`, `bitacora/`, `censos/` o `config/` con fecha posterior a ese fichero de huellas**:
+**Sin `git`, lo que cambio desde mi barrido de la `68`, por tres instrumentos.** Primero, **cualquier fichero** del dato,
+de las bandejas, del codigo o de la configuracion con fecha de escritura posterior a las huellas que tome al lanzarlo,
+uno por linea:
 
     $ ls -l --time-style=full-iso .v68aud/huellas_al_barrer.txt | awk '{print $6, $7, $9}'
     2026-09-24 21:59:13.578070900 .v68aud/huellas_al_barrer.txt
-    $ wc -l < .v68aud/huellas_al_barrer.txt
-    50
-    $ sha1sum -c --quiet .v68aud/huellas_al_barrer.txt && echo "bandeja de grove, las dos filas y el grafo: mismas huellas que al barrer en la 68"
-    bandeja de grove, las dos filas y el grafo: mismas huellas que al barrer en la 68
-    $ find cuarentena dataset bitacora censos config -type f -newer .v68aud/huellas_al_barrer.txt | wc -l
-    0
-    $ python .v69aud/poblacion.py
-    poblacion: 479 | por sede: {'grafo': 390, 'bandeja': 89} | suma: 479
+    $ find cuarentena dataset bitacora censos config fuentes esquema src scripts -type f -newer .v68aud/huellas_al_barrer.txt | sort
+    bitacora/VEREDICTOS.jsonl
+    censos/atribuciones.md
+    censos/denominaciones.md
+    dataset/nodos.jsonl
 
-**LECTURA:** `390`, `904`, `1`, `47` y `45`, **los de mi `ACTA 67` `67.1`**; el grafo y las `47` fichas de Grove son
-byte a byte las que barri, **ningun fichero del dato ni de ninguna bandeja tiene fecha de escritura posterior a mis
-huellas**, y la poblacion del
-barrido es hoy `479`, la de la `68`. **La vuelta no partio la ficha** (la bandeja sigue en `47` y ninguna ficha de Grove
-cambio), **no escribio en la bitacora** y **no toco ninguna otra bandeja**. `procesos/` esta vacio. **Coincide con el
-censo del asunto de `4ec8c16`, y lo digo como coincidencia.** Lo que estos instrumentos NO ven: lo que la vuelta
-cambio en `.v68ext/` y `.v69ext/`, que no abro.
+Segundo, **las `50` huellas de entonces** (las `47` fichas de Grove, las dos filas de `cap_04` y el grafo) contra los
+ficheros de hoy, buscando en `_insertados` la ficha que ya no esta en la bandeja:
 
-## 3. **`D68.7`: LA CABEZA DE LAS TRES CLASES, RELEIDA** (`6.1`, y solo la vara `6.1`)
+    $ python .v70aud/huellas_hoy.py
+    huellas: 50 | por estado: {'movida a _insertados, misma huella': 20, 'en su sitio, misma huella': 29, 'grafo, aparte': 1} | suma: 50
+    movidas a _insertados: 20 | son las 20 de .v68aud/los20.txt: SI | fuera de ellas: []
+    ficheros que no cuadran: []
 
-Los pasos de la cabeza y de los ocho que el extractor le colgo en la `68` (los cuatro pares que el barrido levanta:
-`cubrir_indicadores`, `fijar_duracion`, `fijar_frecuencia`, `preparar_guion`; y las cuatro aristas por lectura:
-`acumular`, `alentar`, `facilitar`, `programar`), por `pasos_ciego.py` (`R6`):
+Tercero, **el grafo**: si al de hoy le quito las `20` filas de la tanda, y ademas los ids de las `20` de las listas de los
+nodos viejos, sale el fichero que barri, byte a byte:
 
-    $ python .v67aud/normal/pasos_ciego.py usar_tres_clases_reunion_proceso fijar_frecuencia_reunion_individual_madurez_tarea fijar_duracion_lugar_reunion_individual preparar_guion_reunion_individual_subordinado cubrir_indicadores_problemas_reunion_individual facilitar_expresion_subordinado_pregunta_mas acumular_asuntos_importantes_fichero_espera alentar_asuntos_corazon_vigilar_final_reunion programar_reunion_individual_cadena
-    ===== usar_tres_clases_reunion_proceso | cuarentena\grove_high_output\usar_tres_clases_reunion_proceso.json
-      titulo: Usar las tres clases de reunion de proceso que el libro cuenta y nombra: el uno a uno, la reunion de personal y la revision de operaciones
-      fuente: ['grove_high_output']
-      cond: Cuando vas a montar las reuniones de proceso de tu organizacion y necesitas saber cuantas clases hay y cuales son, antes de entrar en como se lleva cada una.
-      P1. Cuenta con que las reuniones de proceso que se usan son de tres clases, y con que el libro las nombra una a una.
-      P2. Primera clase: el uno a uno.
-      P3. Segunda clase: la reunion de personal.
-      P4. Tercera clase: la revision de operaciones.
-    ===== fijar_frecuencia_reunion_individual_madurez_tarea | cuarentena\grove_high_output\fijar_frecuencia_reunion_individual_madurez_tarea.json
-      titulo: Fijar cada cuanto tienes la reunion individual con cada subordinado segun su madurez relevante para la tarea, y ajustarla por lo deprisa que cambia su area
-      fuente: ['grove_high_output']
-      cond: Cuando tienes que decidir cada cuanto te reunes a solas con cada uno de los profesionales que te reportan, y no sabes con que criterio separar a unos de otros.
-      P1. Decide cada cuanto necesita reunion individual cada persona, en vez de poner la misma frecuencia para todas.
-      P2. Contesta a esa pregunta con la madurez relevante para el puesto o para la tarea de cada uno de tus subordinados, que es la respuesta que el libro da.
-      P3. Mide esa madurez por cuanta experiencia tiene ese subordinado con la tarea concreta que tiene entre manos.
-      P4. No la confundas con la experiencia que tiene en general ni con lo mayor que sea.
-      P5. Cuenta con que el estilo de mando mas eficaz en un caso concreto va de la supervision muy estrecha a la muy suelta a medida que sube la madurez de tarea del subordinado.
-      P6. Ten reuniones individuales con frecuencia, por ejemplo una vez por semana, con el subordinado que es inexperto en una situacion concreta.
-      P7. Tenlas con menos frecuencia, quiza una vez cada pocas semanas, con el veterano experimentado.
-      P8. Ten en cuenta ademas una segunda consideracion: lo deprisa que cambian las cosas en el area del puesto.
-      P9. Cuenta con que en un area de ritmo muy rapido, y el libro pone como ejemplo la de marketing, el supervisor necesita reuniones individuales frecuentes para seguir al dia de lo que pasa.
-      P10. Cuenta con que en un entorno mas tranquilo, y el libro pone como ejemplo el de investigacion, pueden bastar reuniones menos frecuentes para un mismo nivel de madurez relevante para la tarea.
-    ===== fijar_duracion_lugar_reunion_individual | cuarentena\grove_high_output\fijar_duracion_lugar_reunion_individual.json
-      titulo: Fijar cuanto dura la reunion individual y donde se tiene: una hora como minimo, y en el area de trabajo del subordinado o cerca de ella
-      fuente: ['grove_high_output']
-      cond: Cuando vas a programar la reunion individual con un subordinado y tienes que poner en el calendario cuanto va a durar y en que sitio se tiene.
-      P1. Cuenta con que a cuanto tiene que durar no hay de verdad una respuesta, pero con que el subordinado tiene que sentir que hay tiempo suficiente para sacar los asuntos espinosos y meterse en ellos.
-      P2. Comprueba ese criterio poniendote en su sitio: si tuvieras un problema grande al que quisieras dar vueltas con tu supervisor, que es la persona cuyo interes profesional en el asunto solo va por detras del tuyo, no querrias sacarlo en una reunion programada para durar solo quince minutos.
-      P3. Haz que la reunion individual dure una hora como minimo.
-      P4. Cuenta con que cualquier cosa menos que eso tiende a hacer que el subordinado se limite a las cosas sencillas que se despachan deprisa.
-      P5. Ten la reunion en el area de trabajo del subordinado o cerca de ella siempre que se pueda, y no en la del supervisor ni en otro sitio.
-      P6. Aprovecha que un supervisor aprende mucho con solo ir al despacho de su subordinado.
-      P7. Mira si esta organizado o no.
-      P8. Mira si tiene que pasar tiempo una y otra vez buscando un documento que quiere.
-      P9. Mira si lo interrumpen todo el rato, o si no lo interrumpen nunca.
-      P10. Mira en general como se enfrenta el subordinado a su trabajo.
-    ===== preparar_guion_reunion_individual_subordinado | cuarentena\grove_high_output\preparar_guion_reunion_individual_subordinado.json
-      titulo: Tratar la reunion individual como reunion del subordinado y hacer que sea el quien prepare el guion y pasee al supervisor por el material
-      fuente: ['grove_high_output']
-      cond: Cuando ya tienes programada la reunion individual y hay que decidir de quien es la reunion y quien la prepara.
-      P1. Ten la reunion individual por reunion del subordinado, con su agenda y su tono puestos por el.
-      P2. Cuenta con la razon que lo sostiene: alguien tiene que preparar la reunion, y el supervisor que tiene ocho subordinados tendria que prepararla ocho veces mientras que el subordinado solo una.
-      P3. Pidele por eso al subordinado que prepare un guion.
-      P4. Cuenta con lo que ese guion consigue en el, que es lo que lo hace muy importante: le obliga a pensar de antemano todos los asuntos y puntos que piensa plantear.
-      P5. Cuenta con lo que consigue en ti: con un guion, el supervisor sabe desde el principio que se va a tratar y puede por tanto ayudar a marcar el ritmo de la reunion segun lo sustancioso de cada punto de la agenda.
-      P6. Aprovecha que el guion da ademas un armazon para la informacion de apoyo, que el subordinado tiene que preparar por adelantado.
-      P7. Haz que el subordinado pasee despues al supervisor por todo el material.
-    ===== cubrir_indicadores_problemas_reunion_individual | cuarentena\grove_high_output\cubrir_indicadores_problemas_reunion_individual.json
-      titulo: Cubrir en la reunion individual los indicadores del subordinado, lo ocurrido desde la anterior y el problema potencial, con el criterio de que sean los asuntos que le preocupan
-      fuente: ['grove_high_output']
-      cond: Cuando estas dentro de la reunion individual, o preparando su guion, y hay que decidir que asuntos se tratan en ella.
-      P1. Empieza por las cifras de rendimiento, o sea los indicadores que usa el subordinado, como los ritmos de pedidos entrantes, la produccion o el estado de los proyectos.
-      P2. Pon el enfasis en los indicadores que avisan de un problema.
-      P3. Cubre ademas cualquier cosa importante que haya ocurrido desde la reunion anterior.
-      P4. Trata dentro de eso los problemas de contratacion del momento.
-      P5. Trata los problemas de personas en general.
-      P6. Trata los problemas de organizacion y los planes futuros.
-      P7. Y trata, muy muy importante, los problemas potenciales.
-      P8. Cuenta con que aunque un problema no sea tangible, aunque sea solo una intuicion de que algo va mal, el subordinado se lo debe a su supervisor y tiene que decirselo, porque eso dispara una mirada dentro de la caja negra de la organizacion.
-      P9. Rige todo lo anterior por el criterio mas importante de los asuntos que se hablan: que sean cuestiones que preocupan al subordinado y le dan la lata.
-      P10. Cuenta con que esas cuestiones suelen ser oscuras y tardan en aflorar, en considerarse y en resolverse.
-    ===== facilitar_expresion_subordinado_pregunta_mas | cuarentena\grove_high_output\facilitar_expresion_subordinado_pregunta_mas.json
-      titulo: Hacer del supervisor en la reunion individual el que facilita, aprende y orienta, y sacar lo que falta aplicando el principio de preguntar una vez mas
-      fuente: ['grove_high_output']
-      cond: Cuando estas dentro de la reunion individual como supervisor y hay que decidir que papel juegas tu en ella y como sacas lo que el subordinado todavia no ha dicho.
-      P1. Facilita que el subordinado exprese lo que esta pasando y lo que le molesta.
-      P2. Ponte en la reunion para aprender y para orientar.
-      P3. Cuenta con como resume Drucker el trabajo del supervisor aqui: los que usan bien el tiempo entre los mandos no hablan con sus subordinados de los problemas de ellos mismos, sino que saben como hacer que los subordinados hablen de los suyos.
-      P4. Aplica para conseguirlo el principio de direccion didactica de Grove, que es preguntar una vez mas.
-      P5. Cuando creas que el subordinado ha dicho ya todo lo que queria sobre un asunto, hazle otra pregunta.
-      P6. Manten el flujo de ideas pinchando al subordinado con preguntas hasta que los dos os deis por satisfechos de haber llegado al fondo de un problema.
-    ===== acumular_asuntos_importantes_fichero_espera | cuarentena\grove_high_output\acumular_asuntos_importantes_fichero_espera.json
-      titulo: Abrir un fichero de espera compartido donde las dos partes acumulan lo importante que no es del todo urgente, para tratarlo en la reunion siguiente
-      fuente: ['grove_high_output']
-      cond: Cuando entre una reunion individual y la siguiente aparecen asuntos importantes que no son del todo urgentes y hay que decidir si se interrumpe al otro o se esperan.
-      P1. Usa un fichero de espera compartido por el supervisor y el subordinado.
-      P2. Acumula ahi los asuntos importantes pero no del todo urgentes, para tratarlos en la reunion siguiente.
-      P3. Cuenta con que esa clase de fichero aplica el principio de produccion del agrupamiento.
-      P4. Cuenta con que el ahorro de tiempo para los dos implicados sale de reducir al minimo la necesidad de contacto improvisado, como las llamadas de telefono o las visitas sin avisar, que son las interrupciones que el libro considero antes.
-    ===== alentar_asuntos_corazon_vigilar_final_reunion | cuarentena\grove_high_output\alentar_asuntos_corazon_vigilar_final_reunion.json
-      titulo: Alentar en la reunion individual los asuntos de corazon a corazon con las tres preguntas del libro, y ponerse en guardia contra el que se suelta cerca del final
-      fuente: ['grove_high_output']
-      cond: Cuando la reunion individual esta en marcha y hay que decidir si se abre la puerta a los problemas sutiles y profundos del subordinado, y como se gobierna el momento en que salen.
-      P1. Alienta que en la reunion individual se hablen los asuntos de corazon a corazon.
-      P2. Cuenta con la razon que lo sostiene: es el foro perfecto para llegar a los problemas sutiles y profundos del trabajo que afectan al subordinado.
-      P3. Preguntale si esta satisfecho con su propio rendimiento.
-      P4. Preguntale si alguna frustracion o algun obstaculo le esta carcomiendo.
-      P5. Preguntale si tiene dudas sobre adonde va.
-      P6. Ponte en guardia contra el asunto de corazon a corazon sacado en un momento inoportuno.
-      P7. Cuenta con que la mayoria de las veces esos llegan cerca del final de la reunion.
-      P8. Cuenta con lo que pasa si lo dejas correr: el subordinado puede decirte algo como que no esta contento y que lleva tiempo buscando trabajo fuera, y dejarte solo cinco minutos para lidiar con ello.
-    ===== programar_reunion_individual_cadena | cuarentena\grove_high_output\programar_reunion_individual_cadena.json
-      titulo: Programar la reunion individual en cadena, fijando la siguiente en el momento en que termina la que se esta teniendo
-      fuente: ['grove_high_output']
-      cond: Cuando hay que poner en el calendario la reunion individual siguiente y se elige entre un horario fijo y fijarla al terminar la que se esta teniendo.
-      P1. Programa las reuniones individuales en cadena.
-      P2. Fija la siguiente en el momento en que termina la reunion que se esta teniendo.
-      P3. Cuenta con lo que eso consigue: asi se pueden tener en cuenta los demas compromisos y se evitan las cancelaciones.
-      P4. Cuenta con el caso contrario que el libro pone: si el supervisor usa un horario fijo para la reunion individual, por ejemplo la manana de cada segundo miercoles, y las vacaciones del subordinado caen en esa fecha, la reunion no se va a celebrar.
-      P5. Cuenta con que programando en cadena eso se evita facilmente.
+    $ python .v70aud/grafo_sin_tanda.py
+    filas del grafo hoy: 410 | la reconstruccion reproduce el fichero de hoy: SI
+    de las 20 de la tanda en el grafo: 20 | filas que quedan sin ellas: 390
+    las 20 son las ultimas filas del fichero: SI
+    (a) sin las 20 filas, sha1 igual a la huella de mi barrido de la 68: NO
+    (b) nodos viejos con algun id de las 20 en alguna lista: 3 | sin esos ids, sha1 igual a la huella: SI
+    $ python .v70aud/poblacion.py
+    poblacion: 479 | por sede: {'grafo': 410, 'bandeja': 69} | suma: 479
 
-**Lo que la cabeza produce y de donde parten los ocho, medido:**
+**LECTURA:**
 
-    $ python .v69aud/cabeza_d68_7.py
-    cabeza: pasos 4 | por forma: {'Cuenta con': 1, 'rotulo de clase': 3} | suma: 4
-    pasos de la cabeza que dicen uno a uno: [2]
-      fijar_frecuencia_reunion_individual_madurez_tarea    | palabras de la cabeza: -          | dice reunion individual: False
-      fijar_duracion_lugar_reunion_individual              | palabras de la cabeza: -          | dice reunion individual: True
-      preparar_guion_reunion_individual_subordinado        | palabras de la cabeza: -          | dice reunion individual: True
-      cubrir_indicadores_problemas_reunion_individual      | palabras de la cabeza: -          | dice reunion individual: True
-      facilitar_expresion_subordinado_pregunta_mas         | palabras de la cabeza: -          | dice reunion individual: True
-      acumular_asuntos_importantes_fichero_espera          | palabras de la cabeza: -          | dice reunion individual: True
-      alentar_asuntos_corazon_vigilar_final_reunion        | palabras de la cabeza: -          | dice reunion individual: True
-      programar_reunion_individual_cadena                  | palabras de la cabeza: -          | dice reunion individual: True
-    hijos: 8 | por condicion: {'sin palabra del producto de la cabeza': 8} | suma: 8
+- **El grafo tiene `410` filas, la bandeja de Grove `27`, sus insertados `65`, los pares mutuos `1` y `procesos/` esta
+  vacio.** Coincide con el `410/1027/1/27/65` del asunto de `6c40696`, y lo digo como coincidencia.
+- **Las `20` fichas movidas a `_insertados` son las `20` de mi lista, con la huella que tenian cuando las barri**, y las
+  `27` que quedan en la bandeja y las dos filas de `cap_04`, tambien.
+- **Los `390` nodos viejos son byte a byte los que barri, salvo `3` que ganaron algun id de la tanda en alguna lista**: sin
+  esos ids, el fichero reconstruido tiene la huella de mi barrido. Quitando solo las filas no la tiene, y eso es lo que
+  se espera si la tanda cableo madres viejas. **La cuenta `3` coincide con las `3` madres viejas que mi lectura espera**
+  (seccion `4`), y es **cuenta y no identidad**. Las `20` son las ultimas filas del fichero.
+- **Ningun fichero de `src/`, `scripts/`, `config/`, `esquema/`, `fuentes/` ni de ninguna bandeja se escribio despues
+  de mis huellas**; lo que se escribio es el grafo, la bitacora y dos censos, que es lo que escribe una insercion. **Lo que
+  no veo:** Gerber y Marquet no estan en mis huellas, asi que de ellas **mido la fecha y no el contenido**.
+- **La poblacion de hoy es `479`**, la de mi barrido, con `20` en otra sede. Con el codigo, los umbrales y los textos
+  iguales, **la aduana de cada `insertar` tuvo delante lo que tuvo mi barrido**, porque mover una ficha de la bandeja al
+  grafo no la saca de la poblacion, y `buscar_vecinos` y `medir` miden titulo, resumen, pasos, id y dominio, **no las claves
+  de relacion** (`src/aduana.py` y `texto_comparable` de `src/comun.py`, que lei).
 
-**Y los pares que mi barrido de la `68` levanta con la cabeza, con mi clase sellada:**
+## 3. **LAS `20`: LO QUE ENTRO ES LO QUE SE LEYO** (`D.58`), **Y SUS PASOS INVENTADOS** (`8`, `8.2`)
 
-    $ python .v69aud/cruce_clases.py | sed -n '/cabeza/,$p'
-    pares con la cabeza usar_tres_clases_reunion_proceso: 5 | por clase: {'SANO': 5} | suma: 5
-      SANO      cubrir_indicadores_problemas_reunion_individual
-      SANO      fijar_duracion_lugar_reunion_individual
-      SANO      fijar_frecuencia_reunion_individual_madurez_tarea
-      SANO      infundir_regularidad_reunion_proceso
-      SANO      preparar_guion_reunion_individual_subordinado
+Cada nodo del grafo contra su ficha de `_insertados` (cuya huella es la leida, seccion `2`) en titulo, condiciones,
+pasos, entregable y resumen; y sus pasos contra **mi** lectura entera sellada en la `68`, `.v68aud/fidelidad_fuente.txt`,
+una fila por paso:
 
-**LECTURA, Y LA MANTENGO: `SANO` EN LOS CUATRO PARES Y `NO` EN LAS CUATRO ARISTAS.**
+    $ python .v70aud/entra_lo_leido.py
+    las 20 por sede hoy: {'grafo y _insertados': 20} | suma: 20
+    nodos del grafo contra su ficha, cinco campos: {'igual': 20} | suma: 20
+    nodos con descuadre entre sus pasos en el grafo y mis filas selladas: 0 []
+    cap_05 lo que ENTRO: candidatos 12 | pasos 84 | mis marcas: {'T': 81, 'P': 0, 'D': 3} | suma: 84 | PUENTE 0 de 84 = 0.00 por ciento | con las D adjudicadas T: T 84, P 0, suma 84
+    cap_06 lo que ENTRO: candidatos 8 | pasos 62 | mis marcas: {'T': 61, 'P': 0, 'D': 1} | suma: 62 | PUENTE 0 de 62 = 0.00 por ciento | con las D adjudicadas T: T 62, P 0, suma 62
 
-*(El bloque de arriba trae **cinco** pares con la cabeza: el quinto, `infundir_regularidad_reunion_proceso`, **no esta en
-`D68.7`**, que son los cuatro del barrido mas las cuatro aristas que nombra el encargo.)*
+**LECTURA:** las `20` viven en el grafo **con los textos que se leyeron**, y cada una con tantos pasos como filas tiene mi
+lectura. **`PASOS INVENTADOS` de lo que ENTRO: `cap_05` `0` de `84` y `cap_06` `0` de `62`**, las cifras firmadas en la
+`ACTA 67` `67.5` y la `ACTA 68` `68.6`; mis `D` las adjudico `T` la `ACTA 67` `67.4.a`, y no lo reabro (`D.47`). **Por debajo
+del `10`: no se baja escalon** (`8.1`). Coincide con el *0 de 84 y 0 de 62* de `6c40696`, y lo digo como coincidencia.
 
-- **La cabeza no manda nada sobre el uno a uno.** De sus cuatro pasos, uno es un *Cuenta con* y tres son rotulos
-  (*Primera clase: el uno a uno*); su producto es **saber que hay tres clases y como se llaman**, que es lo que dice
-  `cap_05` L23 (*At Intel we use three kinds of process-oriented meetings: the one-on-one, the staff meeting, and the
-  operation review*). Su propia condicion lo dice: *antes de entrar en como se lleva cada una*.
-- **Ninguna de las ocho condiciones parte de ese producto.** Ninguna trae una palabra de el (`clase`, `tres`,
-  `proceso`), y cada una arranca de su propia situacion con el uno a uno (fijarlo, prepararlo, llevarlo, seguirlo) y contesta **su** pregunta del libro:
-  L33 (*How often*), L37 y L39 (*How long*, *Where*), L41 (*the subordinate's meeting*), L43 (*What should be covered*),
-  L45 (*What is the role of the supervisor*), L51 (*hold file*), L53 (*heart-to-heart*), L57 (*rolling basis*).
-- **Nombrar no es procedimentar** (`6.1`): el unico hilo es el rotulo del paso `2`. Y **el encabezado `ONE-ON-ONES`
-  (L25) es formato**: dice donde estan los ocho en el libro, no que continuen el trabajo de la cabeza (`6.2`, `P.17`).
-- **La contraria, escrita para que se vea:** los ocho son aspectos del uno a uno y la cabeza es el unico nodo que lo
-  nombra como pieza. Pero colgarlos de ella **se salta el escalon que falta**: la parte *el uno a uno* no existe como
-  nodo (`D.37`, mi `APERTURA_CIEGA.md` de la `68` seccion `7`), y la cabeza produce un nombre, no el uno a uno.
+## 4. **LO QUE MI LECTURA ESPERA QUE LA TANDA DEJE**
 
-**LO QUE MI LECTURA ESPERA DE SU RELECTURA** (sin haberla abierto): las `8` lineas `CONTINUA` con
-`madre=usar_tres_clases_reunion_proceso` pasadas a `SANO` y las cuatro filas `SOSTENGO` de la cabeza pasadas a `NO
-SOSTENGO`, por correccion declarada y con la vieja encima; **ninguna ficha cambia**. **Coincide con el asunto de
-`3721928`, y lo digo como coincidencia**: el texto de sus lineas lo leo en mi turno normal.
+Sacado **solo** de mis ficheros sellados de la `68` y de `.v69aud/aristas_70.py`; la bitacora, solo contada:
 
-## 4. **`D68.15`: `elegir_estilo` Y `fijar_frecuencia`, RELEIDA**
-
-    $ python .v67aud/normal/pasos_ciego.py elegir_estilo_direccion_madurez_relevante_tarea
-    ===== elegir_estilo_direccion_madurez_relevante_tarea | cuarentena\grove_high_output\elegir_estilo_direccion_madurez_relevante_tarea.json
-      titulo: Elegir el estilo de direccion de un subordinado segun su madurez relevante para la tarea concreta: estructurado si es baja, comunicador si es media, minimo si es alta, y siempre con vigilancia para no abandonar
-      fuente: ['grove_high_output']
-      cond: Cuando tienes que decidir con que estilo dirigir a un subordinado en una tarea concreta y no sabes si conviene darle instrucciones detalladas, acompanarlo con comunicacion y apoyo, o dejarlo actuar con poca supervision.
-      P1. Evalua la madurez relevante para la tarea (TRM) de tu subordinado: la combinacion de su orientacion al logro, su disposicion a asumir responsabilidad, su educacion, su formacion y su experiencia.
-      P2. Trata esa TRM como especifica de la tarea concreta y no como la madurez general de la persona: puede ser alta en un puesto y baja en otro.
-      P3. Cuenta con que la TRM de una persona puede caer si el ritmo del puesto se acelera o si el puesto cambia de golpe, aunque antes fuera alta para ese nivel de complejidad, incertidumbre y ambiguedad.
-      P4. Si la TRM es baja, usa un estilo estructurado y orientado a la tarea: dile al subordinado que hay que hacer, cuando y como, con instrucciones precisas y detalladas.
-      P5. Si la TRM del subordinado crece, mueve el estilo hacia uno mas dado a la comunicacion, el apoyo emocional y el animo, prestando mas atencion al subordinado como individuo que a la tarea misma.
-      P6. Si la TRM se vuelve todavia mayor, mantén tu involucramiento al minimo y limitate sobre todo a asegurar que los objetivos hacia los que trabaja el subordinado esten acordados mutuamente.
-      P7. Sea cual sea la TRM, vigila siempre el trabajo del subordinado lo bastante de cerca para evitar sorpresas: la presencia o ausencia de esa vigilancia es la diferencia entre delegar una tarea y abandonarla.
-      P8. No juzgues un estilo estructurado como menos valioso que uno orientado a la comunicacion, ni dejes que lo que te parezca mas simpatico decida tu eleccion: lo que importa es cual de los dos es mas eficaz.
-    $ python .v69aud/d68_15.py
-    pasos con estilo  : [5] | por forma: {'Cuenta con': 1} | suma: 1
-    pasos con madurez : [2, 3, 5, 10] | por forma: {'otro imperativo': 2, 'Cuenta con': 2} | suma: 4
-
-**LECTURA, Y LA MANTENGO: `NO`.** El producto de la madre es **un estilo elegido para un subordinado** (sus pasos `4` a
-`6`: estructurado, comunicador, minimo). En `fijar_frecuencia` la palabra *estilo* sale **una vez, en un *Cuenta con***
-(paso `5`), y ningun paso usa un estilo elegido: la madurez que usa **la mide el mismo** (paso `3`, *por cuanta
-experiencia tiene con la tarea concreta*) y de ella saca la frecuencia (pasos `6` y `7`). *As we will see later* (L33)
-es una remision del libro, y una remision es metadato (`6.2`). **No toca a la `70`**: la madre es de `cap_13` y no entra
-antes que el hijo, y `d170` guarda las dos lecturas para la vuelta que la inserte. **Si el la cambio a `NO` en espera,
-como dice el asunto de `3721928`, coincide.**
-
-## 5. **`d053`: SE PARTE O NO `fijar_duracion_lugar_reunion_individual`** (`EXTRACTOR.md` `9`, `9.1`)
-
-**Esta lectura NO es ciega** (seccion `1`, punto `2`). La deuda pone el corte entre el paso `4` y el paso `5`; sus pasos
-estan arriba, en la seccion `3`. Cada mitad contra su linea:
-
-    $ python .v69aud/d053_mitades.py
-    pasos en la ficha: 10
-    mitad duracion: pasos [1, 2, 3, 4] | por forma: {'Cuenta con': 2, 'otro imperativo': 2} | suma: 4
-      L37: 628 caracteres | signos de interrogacion: 2 | empieza: How long should a one-on-one meeting last? There really is n
-      P2. Comprueba ese criterio poniendote en su sitio: si tuvieras un problema grande al que quisieras dar vueltas con tu supervisor, que es la persona cuyo interes profesional en el asunto solo va por detras del tuyo, no querrias sacarlo en una reunion programada para durar solo quince minutos.
-      P3. Haz que la reunion individual dure una hora como minimo.
-    mitad lugar: pasos [5, 6, 7, 8, 9, 10] | por forma: {'otro imperativo': 2, 'Mira': 4} | suma: 6
-      L39: 475 caracteres | signos de interrogacion: 7 | empieza: Where should a one-on-one take place? In the supervisor’s of
-      P5. Ten la reunion en el area de trabajo del subordinado o cerca de ella siempre que se pueda, y no en la del supervisor ni en otro sitio.
-      P6. Aprovecha que un supervisor aprende mucho con solo ir al despacho de su subordinado.
-
-**LECTURA: NO SE PARTE**, con `DUDA` escrita.
-
-- **La mitad del lugar (L39) pasaria sola**: el libro pone **su propio inventario de objetos** que mirar en el despacho
-  del subordinado (*Is he organized or not? Does he repeatedly have to spend time looking for a document ...? Does he
-  get interrupted all the time? Never? ... how does the subordinate approach his work?*), y sus pasos `7` a `10` lo
-  transcriben uno a uno. Es la cara positiva de `9.1`.
-- **La mitad de la duracion (L37) no pasa sola**: lo que el libro pone es **un criterio con adjetivo de adecuacion**
-  (*the subordinate must feel that there is **enough** time*), **una prueba de pensamiento** (el problema grande en
-  quince minutos) y **una cifra** (*an hour at a minimum*). De sus cuatro pasos, dos son *Cuenta con*, uno es la prueba y
-  **uno solo manda algo** (paso `3`, *dure una hora como minimo*). **No hay inventario de medios, etapas ni objetos**
-  (restriccion `1` de `9.1`): sola seria **una linea con un umbral**, no un procedimiento (`9`, *un procedimiento real
-  por nodo*), y un nodo de un paso es una advertencia con numero.
-- **Y juntas son un solo procedimiento**: su condicion es una (*programar la reunion individual ... cuanto va a durar y
-  en que sitio*), las dos son las dos casillas que se rellenan al ponerla en el calendario, y ninguna de las dos usa el
-  producto de la otra, asi que tampoco hay madre e hija dentro.
-- **LA DUDA, la contraria:** L37 si pone una cifra del autor y un criterio que se comprueba, y se podria leer como un
-  procedimiento corto de *decidir la duracion*. **No la sigo** porque la cifra y el criterio son un solo acto (fijarla
-  en una hora), y el paso `2` es la razon del paso `3`, no otro acto.
-
-**Si no se parte, nada cambia en la bandeja, en el barrido ni en la fidelidad**, y la seccion `2` mide que no se partio.
-**Coincide con el asunto de `4ec8c16`**, y por el punto `2` de la seccion `1` **no la cuento como confirmacion**.
-
-## 6. **`d056`: LA COLA DE LECTURA DE LA TANDA `52`**
-
-La deuda se cobra *recorriendo la cola sobre la poblacion de ese dia y veredictando lo que falte*. **Mi barrido de la
-`68`** (sobre la poblacion de entonces, `479`) **contra mis clases selladas**, par a par:
-
-    $ python .v69aud/cruce_clases.py | sed '/cabeza/,$d'
-    pares del barrido: 78 | filas de clase: 78 | pares sin fila: [] | filas sin par: []
-    todas las filas por clase: {'SANO': 76, 'CONTINUA': 2} | suma: 78
-    filas de vecino (dirigidas) de los 20: 118
-    pares sin orden que tocan a los 20: 70 | por clase: {'SANO': 68, 'CONTINUA': 2} | suma: 70
-      CONTINUA  tomar_notas_copia_guion_reunion_individual ~ conducir_reunion_individual_telefono_distancia | madre tomar_notas_copia_guion_reunion_individual
-      CONTINUA  preparar_guion_reunion_individual_subordinado ~ tomar_notas_copia_guion_reunion_individual | madre preparar_guion_reunion_individual_subordinado
-
-**LECTURA:** los `118` vecinos de los `20` son `70` pares sin orden, **cada uno con su fila de clase** y ninguna fila sin
-par; y la seccion `2` mide que **la poblacion de hoy es la de ese barrido**, byte a byte en Grove y en el grafo y sin
-ningun fichero de ninguna bandeja escrito despues. **Asi que el recorrido de la `68` sigue siendo el recorrido de la
-cola sobre la poblacion de hoy, y `d056` SE PAGA CITANDOLO**, con su comprobacion (cero vecinos sin linea) pegada. **Lo
-que queda para la `70` es otra cosa y no se paga aqui:** la aduana de `insertar` mide sobre la poblacion del dia de
-cada fila, y lo que levante sin linea preparada se lee en el acto (`d031`). **Que su comprobacion salga en cero lo
-cruzo en mi turno normal**, contra su copia de `comprobar_veredictos.py`.
-
-## 7. **LO QUE MI LECTURA ESPERA DE LA TANDA, PARA LA `70`**
-
-**Las aristas**, de mis dos ficheros sellados de la `68` con la unica correccion que yo mismo adjudique en la `ACTA 67`
-`67.4.d` (`agrupar_tareas` a `infundir`, **gana el**), declarada dentro del instrumento:
-
+    $ python .v70aud/esperado_70.py
+    filas dirigidas de mi barrido con candidato de las 20: 118 | por vecino: {'vecino en la tanda': 98, 'vecino fuera de la tanda': 20} | suma: 118
+    aristas esperadas: 7 | por origen: {'CONTINUA': 2, 'SOSTENGO': 5} | suma: 7
+    madres esperadas que no son de las 20 (viven en el grafo desde antes): 3 ['agrupar_interrupciones_subordinados_reuniones_regulares', 'agrupar_tareas_semejantes_aprovechar_preparacion', 'buscar_regularidad_bloques_iguales_trabajo_mando']
+    hijos esperados que no son de las 20: 0 []
+    bitacora esperada: 904 + 118 + 5 = 1027 | hoy (lineas): 1027 | IGUAL
+    filas dirigidas por la clase sellada de su par: {'SANO': 114, 'CONTINUA': 4} | suma: 118
     $ python .v69aud/aristas_70.py
     filas de aristas_lectura.tsv: 17 | por clase (sin la marca DUDA, con ACTA 67 67.4.d aplicada): {'SOSTENGO': 5, 'EN VEREDICTO': 2, 'NO': 10} | suma: 17
     aristas esperadas en la 70: 7 | por origen: {'CONTINUA de veredicto': 2, 'SOSTENGO por lectura': 5} | suma: 7
@@ -383,59 +195,210 @@ cruzo en mi turno normal**, contra su copia de `comprobar_veredictos.py`.
       SOSTENGO   conducir_etapas_modelo_ideal_decision                > cortar_discusion_libre_momento_justo
     de ellas con madre usar_tres_clases_reunion_proceso: 0
 
-**El orden**, por las restricciones que mi lectura pone, y cuantas cumple el orden de pieza del libro:
+**LECTURA, y lo que se compara en el turno normal, no aqui:**
 
-    $ python .v69aud/restricciones_orden.py | tail -4
-    restricciones: 6 | por clase: {'obligan (madre antes que hijo)': 4, 'D.36 de un solo lado, informativas': 2} | suma: 6
-    de las que obligan, violadas por el orden del libro: 0
-    con madre usar_tres_clases_reunion_proceso: 0
-    ultimas dos del orden del libro: ['zanjar_seis_preguntas_decision_adelantado', 'anunciar_decision_inesperada_reconvocar_reunion']
+- **Lineas de bitacora.** Si cada `insertar` escribio una linea por vecino que su aduana levanto, y la aduana levanto lo
+  que mi barrido (seccion `2`), son `118`: `4` `CONTINUA` y `114` `SANO` por la clase sellada de su par; y `python forja.py
+  arista` escribe su propia linea, asi que con mis `5` por lectura son `904` mas `118` mas `5`. **La bitacora tiene `1027`.** **Es
+  coincidencia de cuenta y no de contenido**: no he abierto ni una linea. **Mi lectura no espera ningun vecino sin linea
+  preparada**, porque la poblacion es la del barrido; uno que apareciera seria un hallazgo.
+- **Aristas: `7`**, las `2` `CONTINUA` de las notas y `5` por lectura, **ninguna con madre
+  `usar_tres_clases_reunion_proceso`**, y `3` de ellas con madre vieja (`buscar_regularidad` y `agrupar_tareas` a
+  `infundir`, y `agrupar_interrupciones` a `acumular`). Coincide con el *7 de 7* de `6c40696`, y con la cuenta `3` de la
+  seccion `2`: **par a par lo cruzo en el turno normal**, que es donde un `7` igual con pares distintos se veria.
 
-**La fidelidad**, mi lectura sellada contra los pasos de las fichas de hoy:
+## 5. **MI CLASIFICACION DE CADA CANDIDATO, Y LAS CINCO ARISTAS POR LECTURA RELEIDAS** (`6.1`, y solo la vara `6.1`)
 
-    $ python .v69aud/contar_fidelidad.py
-    fichas con descuadre entre sus pasos de hoy y mis filas: 0 []
-    cap_05: candidatos 12 | pasos en ficha 84 | mis marcas selladas: {'T': 81, 'P': 0, 'D': 3} | suma: 84 | PUENTE 0 de 84 = 0.00 por ciento | con las D adjudicadas T (ACTA 67 67.4.a): T 84, P 0, suma 84
-    cap_06: candidatos 8 | pasos en ficha 62 | mis marcas selladas: {'T': 61, 'P': 0, 'D': 1} | suma: 62 | PUENTE 0 de 62 = 0.00 por ciento | con las D adjudicadas T (ACTA 67 67.4.a): T 62, P 0, suma 62
+**Las `20`, una por una**, de mis ficheros sellados: las lineas del libro que sus pasos transcriben, las filas dirigidas
+de mi barrido en las que es candidata, sus pares sin orden por clase (cuenta los pares en los que esta de cualquiera de
+los dos lados, y por eso puede pasar de sus filas) y las aristas que mi lectura le espera como hija:
 
-**LECTURA:**
+    $ python .v70aud/clasificacion_20.py
+     1 cap_05 infundir_regularidad_reunion_proceso               NODO | L21 a L21 | filas 5 | pares {'SANO': 5} suma 5 | hija: SOSTENGO de buscar_regularidad_bloques_iguales_trabajo_mando; SOSTENGO de agrupar_tareas_semejantes_aprovechar_preparacion
+     2 cap_05 usar_tres_clases_reunion_proceso                   NODO | L23 a L23 | filas 5 | pares {'SANO': 5} suma 5 | hija: ninguna
+     3 cap_05 fijar_frecuencia_reunion_individual_madurez_tarea  NODO | L33 a L35 | filas 6 | pares {'SANO': 6} suma 6 | hija: ninguna
+     4 cap_05 fijar_duracion_lugar_reunion_individual            NODO | L37 a L39 | filas 7 | pares {'SANO': 7} suma 7 | hija: ninguna
+     5 cap_05 preparar_guion_reunion_individual_subordinado      NODO | L41 a L41 | filas 9 | pares {'SANO': 8, 'CONTINUA': 1} suma 9 | hija: ninguna
+     6 cap_05 cubrir_indicadores_problemas_reunion_individual    NODO | L43 a L43 | filas 6 | pares {'SANO': 6} suma 6 | hija: ninguna
+     7 cap_05 facilitar_expresion_subordinado_pregunta_mas       NODO | L45 a L47 | filas 8 | pares {'SANO': 8} suma 8 | hija: ninguna
+     8 cap_05 tomar_notas_copia_guion_reunion_individual         NODO | L49 a L49 | filas 7 | pares {'SANO': 5, 'CONTINUA': 2} suma 7 | hija: CONTINUA de preparar_guion_reunion_individual_subordinado
+     9 cap_05 acumular_asuntos_importantes_fichero_espera        NODO | L51 a L51 | filas 6 | pares {'SANO': 6} suma 6 | hija: SOSTENGO de agrupar_interrupciones_subordinados_reuniones_regulares
+    10 cap_05 alentar_asuntos_corazon_vigilar_final_reunion      NODO | L53 a L53 | filas 7 | pares {'SANO': 7} suma 7 | hija: ninguna
+    11 cap_05 conducir_reunion_individual_telefono_distancia     NODO | L55 a L55 | filas 6 | pares {'SANO': 5, 'CONTINUA': 1} suma 6 | hija: CONTINUA de tomar_notas_copia_guion_reunion_individual
+    12 cap_05 programar_reunion_individual_cadena                NODO | L57 a L57 | filas 7 | pares {'SANO': 7} suma 7 | hija: ninguna
+    13 cap_06 conducir_etapas_modelo_ideal_decision              NODO | L23 a L29 | filas 0 | pares {} suma 0 | hija: ninguna
+    14 cap_06 decidir_nivel_competente_inferior                  NODO | L33 a L33 | filas 3 | pares {'SANO': 3} suma 3 | hija: ninguna
+    15 cap_06 vencer_sindrome_grupo_pares_autoconfianza          NODO | L49 a L49 | filas 13 | pares {'SANO': 13} suma 13 | hija: ninguna
+    16 cap_06 tomar_mando_reunion_pares_presidente_ausente       NODO | L51 a L51 | filas 4 | pares {'SANO': 4} suma 4 | hija: ninguna
+    17 cap_06 ejercer_poder_posicion_etapa_decision_clara        NODO | L61 a L61 | filas 2 | pares {'SANO': 3} suma 3 | hija: SOSTENGO de conducir_etapas_modelo_ideal_decision
+    18 cap_06 cortar_discusion_libre_momento_justo               NODO | L63 a L63 | filas 6 | pares {'SANO': 6} suma 6 | hija: SOSTENGO de conducir_etapas_modelo_ideal_decision
+    19 cap_06 zanjar_seis_preguntas_decision_adelantado          NODO | L65 a L77 | filas 2 | pares {'SANO': 2} suma 2 | hija: ninguna
+    20 cap_06 anunciar_decision_inesperada_reconvocar_reunion    NODO | L93 a L93 | filas 9 | pares {'SANO': 10} suma 10 | hija: ninguna
 
-- **`7` aristas esperadas en la `70`, ninguna con madre `usar_tres_clases_reunion_proceso`**: las `2` `CONTINUA` de las
-  notas y `5` por lectura. Son las `15` que el extractor esperaba en la `68` **menos las `8` de `D68.7`**, que es lo que
-  mi `ACTA 67` `67.4.d` predijo si la conjunta me daba la razon. **Coincide con el `7` de sus dos asuntos**, y lo digo
-  como coincidencia: **par a par lo cruzo en mi turno normal**, y ahi es donde un `7` igual con pares distintos se veria.
-- **El orden no depende de la cabeza**: ninguna restriccion la tiene de madre, las `4` que obligan las cumple el orden de
-  pieza, y las `2` de `D.36` son informativas. Quitar las ocho madres no rompe nada.
-- **`PASOS INVENTADOS POR CAPITULO` no se mueve**: las `20` fichas tienen hoy los pasos que lei, uno por fila, y siguen
-  en **`cap_05` `0` de `84`** y **`cap_06` `0` de `62`**, las cifras firmadas en la `ACTA 67` `67.5`.
+**LECTURA: LAS `20` SON NODO**, con la clase de cada par que selle en la `68`. De la `68` a hoy no he cambiado ninguna: la
+conjunta de la `69` las dejo como estaban (`ACTA 68` `68.3`).
 
-## 8. **LO QUE DEJO PARA MI TURNO NORMAL, ESCRITO ANTES DE VER EL REPORTE**
+**Las cinco aristas por lectura son las que el extractor cablea a mano con `python forja.py arista`**, y por eso las releo
+hoy con el libro y los pasos delante. Las lineas del libro que las sostienen (tambien las de las dos `CONTINUA`):
+
+    $ python .v70aud/lineas_fuente.py
+    cap_05 L21 (723 caracteres): To make the most of this kind of meeting, we should aim to infuse it with regularity. In other words, the people attending should know how the meeting is run, what kinds of substantive matters are discussed, and what is to be accomplished. It should be designed to allow a manager to “batch” transactions, to use the same “production” set-up time and effort to [...]
+    cap_05 L41 (852 caracteres): A key point about a one-on-one: It should be regarded as the subordinate’s meeting, with its agenda and tone set by him. There’s good reason for this. Somebody needs to prepare for the meeting. The supervisor with eight subordinates would have to prepare eight times; the subordinate only once. So the latter should be asked to prepare an outline, which is ver [...]
+    cap_05 L49 (907 caracteres): I’d like to suggest some mechanical hints for effective one-on-one meetings. First, both the supervisor and subordinate should have a copy of the outline and both should take notes on it, which serves a number of purposes. I take notes in just about all circumstances, and most often end up never looking at them again. I do it to keep my mind from drifting an [...]
+    cap_05 L51 (412 caracteres): A real time-saver is using a “hold” file where both the supervisor and subordinate accumulate important but not altogether urgent issues for discussion at the next meeting. This kind of file applies the production principle of batching and saves time for both involved by minimizing the need for ad hoc contact (raya) like phone calls, drop-in visits, and so on (raya) which [...]
+    cap_05 L55 (533 caracteres): Long-distance telephone one-on-ones have become necessary because many organizations are now spread out geographically. But these can work well enough with proper preparation and attention: the supervisor must have the outline before the meeting begins, both parties should take notes, and so on. Because you can’t see the other participant in the meeting, not [...]
+    cap_06 L61 (1176 caracteres): Sometimes no amount of discussion will produce a consensus, yet the time for a decision has clearly arrived. When this happens, the senior person (or “peer-plus-one”) who until now has guided, coached, and prodded the group along has no choice but to make a decision himself. If the decision-making process has proceeded correctly up to this point, the senior  [...]
+    cap_06 L63 (825 caracteres): If you either enter the decision-making stage too early or wait too long, you won’t derive the full benefit of open discussion. The criterion to follow is this: don’t push for a decision prematurely. Make sure you have heard and considered the real issues rather than the superficial comments that often dominate the early part of a meeting. But if you feel th [...]
+
+Y los pasos de sus ocho nodos, por `pasos_ciego.py` (`R6`):
+
+    $ python .v67aud/normal/pasos_ciego.py conducir_etapas_modelo_ideal_decision ejercer_poder_posicion_etapa_decision_clara cortar_discusion_libre_momento_justo agrupar_interrupciones_subordinados_reuniones_regulares acumular_asuntos_importantes_fichero_espera buscar_regularidad_bloques_iguales_trabajo_mando agrupar_tareas_semejantes_aprovechar_preparacion infundir_regularidad_reunion_proceso
+    ===== conducir_etapas_modelo_ideal_decision | grafo
+      titulo: Conducir una decision por las etapas del modelo ideal: discusion libre, decision clara y apoyo pleno
+      fuente: ['grove_high_output']
+      cond: Cuando un grupo tiene que tomar una decision en un negocio que depende de lo que sabe, y quieres que el conocimiento de los que saben llegue a la decision en vez de quedarse callado.
+      P1. Abre la primera etapa con discusion libre, en la que todos los puntos de vista y todos los aspectos del asunto se acogen abiertamente y se debaten.
+      P2. Cuanto mayores sean el desacuerdo y la controversia, mas importante se vuelve la palabra libre.
+      P3. Vigila la practica contraria, que es la corriente: cuando la reunion se calienta, los participantes se echan atras, tantean hacia donde van las cosas y no dicen nada hasta ver que postura va a imponerse, para apoyarla despues y no quedar asociados a la que pierde.
+      P4. Cuenta con que, si los que saben se guardan su opinion, lo que se decida se apoyara en informacion y criterio mas incompletos de lo que podrian haber sido.
+      P5. Pasa despues a la etapa siguiente, que es alcanzar una decision clara, y cuanto mayor sea el desacuerdo sobre el asunto, mas importante se vuelve la palabra clara.
+      P6. Pon cuidado especial en enmarcar los terminos de la decision con claridad absoluta.
+      P7. No oscurezcas el asunto para ahorrarte la discusion cuando sepas que la decision es polemica: hablando con medias palabras no evitas la discusion, solo la aplazas.
+      P8. Cuenta con que a quien no le guste la decision se enfadara bastante mas si no recibe una version pronta y directa de lo que se decidio.
+      P9. Exige por ultimo que todos los implicados den pleno apoyo a la decision alcanzada por el grupo.
+      P10. No confundas ese apoyo con el acuerdo: basta con que los participantes se comprometan a respaldar la decision, y ese es un resultado satisfactorio.
+      P11. Cuenta con que ni el mismo tiempo ni los mismos hechos van a producir acuerdo en muchos asuntos, porque las diferencias de opinion honestas y sentidas existen, y una organizacion no vive de que sus miembros esten de acuerdo en todo.
+      P12. Pide a todos, y no solo a algunos, que ese compromiso de apoyo este honestamente presente: es lo unico que un mando puede esperar y lo que tiene que conseguir de cada uno.
+    ===== ejercer_poder_posicion_etapa_decision_clara | grafo
+      titulo: Ejercer el poder de posicion solo al llegar a la etapa de decision clara sin consenso, y nunca antes
+      fuente: ['grove_high_output']
+      cond: Cuando ninguna cantidad de discusion va a producir consenso y el momento de decidir ha llegado claramente, y el que dirige el grupo tiene que decidir si usa ya su autoridad de rango.
+      P1. Reconoce la situacion por sus dos mitades: ninguna cantidad de discusion va a producir consenso, y aun asi el momento de decidir ha llegado claramente.
+      P2. Cuando eso pase, acepta que la persona de mayor rango, la del par mas uno, que hasta ahora ha guiado, entrenado y espoleado al grupo, no tiene mas remedio que tomar ella misma la decision.
+      P3. Comprueba que el proceso vino bien hasta ese punto: que quien decide lo hace con el beneficio completo de la discusion libre, en la que todos los puntos de vista, hechos, opiniones y juicios se expusieron sin el prejuicio del poder de posicion.
+      P4. Ejerce entonces la autoridad del poder de posicion, que ahi es legitima y a veces inevitable, porque se alcanzo la etapa de decision clara y no aparecio ningun consenso.
+      P5. No la ejerzas ni un momento antes: ejercerla antes no es legitimo, y es destructivo.
+      P6. Cuenta con que esto no suele ser facil, porque existe reticencia a ejercer el poder de posicion de forma deliberada y explicita, ya que dar ordenes parece poco amable.
+      P7. Vigila la consecuencia de esa reticencia: alarga la primera fase del proceso, que es el tiempo de discusion libre, mas alla del punto optimo, y la decision se aplaza.
+    ===== cortar_discusion_libre_momento_justo | grafo
+      titulo: Cortar la discusion libre en el momento justo: ni antes de oir los asuntos de verdad, ni cuando ya se ha oido todo
+      fuente: ['grove_high_output']
+      cond: Cuando diriges una discusion libre y tienes que decidir si ya es momento de pasar a la decision, o si todavia falta por oir lo que de verdad importa.
+      P1. Cuenta con que entrar en la etapa de decision demasiado pronto o esperar demasiado te deja sin el beneficio completo de la discusion abierta.
+      P2. Sigue el criterio que el libro escribe: no empujes hacia una decision prematuramente.
+      P3. Asegurate de haber oido y considerado los asuntos de verdad, y no los comentarios superficiales que suelen dominar la primera parte de una reunion.
+      P4. Pero en cuanto sientas que ya lo has oido todo y que todos los lados del asunto se han planteado, empuja hacia un consenso.
+      P5. Si el consenso no sale, entra tu y toma la decision.
+      P6. Vigila la discusion libre que sigue en una busqueda interminable de consenso: cuando eso pasa, la gente se aleja del consenso cercano justo cuando esta cerca de acertar, y eso rebaja las posibilidades de llegar a la decision correcta.
+      P7. Pasa a tomar la decision en el momento justo, que es lo decisivo.
+    ===== agrupar_interrupciones_subordinados_reuniones_regulares | grafo
+      titulo: Agrupar en tanda las interrupciones que llegan de los subordinados y atenderlas en las reuniones regulares de personal y de uno a uno, en vez de atenderlas al azar
+      fuente: ['grove_high_output']
+      cond: Cuando las interrupciones de tus subordinados te caen al azar a lo largo del dia y las atiendes segun llegan.
+      P1. Usa ademas el principio de produccion de la tanda, que es atender de una vez un grupo de tareas semejantes.
+      P2. Acumula con ese principio muchas de las interrupciones que te vienen de tus subordinados, en vez de atenderlas al azar.
+      P3. Atiende esas interrupciones acumuladas en las reuniones de personal y en las reuniones de uno a uno.
+      P4. Manten esas reuniones con regularidad.
+      P5. Pide entonces a tu gente que agrupe sus preguntas y problemas para esos momentos programados en vez de interrumpirte cuando quiera, porque con las reuniones celebradas con regularidad no pueden protestar mucho.
+    ===== acumular_asuntos_importantes_fichero_espera | grafo
+      titulo: Abrir un fichero de espera compartido donde las dos partes acumulan lo importante que no es del todo urgente, para tratarlo en la reunion siguiente
+      fuente: ['grove_high_output']
+      cond: Cuando entre una reunion individual y la siguiente aparecen asuntos importantes que no son del todo urgentes y hay que decidir si se interrumpe al otro o se esperan.
+      P1. Usa un fichero de espera compartido por el supervisor y el subordinado.
+      P2. Acumula ahi los asuntos importantes pero no del todo urgentes, para tratarlos en la reunion siguiente.
+      P3. Cuenta con que esa clase de fichero aplica el principio de produccion del agrupamiento.
+      P4. Cuenta con que el ahorro de tiempo para los dos implicados sale de reducir al minimo la necesidad de contacto improvisado, como las llamadas de telefono o las visitas sin avisar, que son las interrupciones que el libro considero antes.
+    ===== buscar_regularidad_bloques_iguales_trabajo_mando | grafo
+      titulo: Buscar la regularidad en el trabajo de mando alisando la carga, abriendo ventanas en la caja negra, y usando los mismos bloques de tiempo para las actividades iguales
+      fuente: ['grove_high_output']
+      cond: Cuando tu jornada de mando se te llena de parones y arranques y las actividades iguales te caen en momentos distintos cada semana.
+      P1. Aplica a tu trabajo de mando el siguiente concepto de produccion: ve hacia la regularidad.
+      P2. Alisa tu carga de trabajo todo lo que puedas, aunque no puedas controlar los habitos de los que te llegan, igual que una fabrica de desayunos iria mas eficiente si los clientes llegaran en un flujo estable y predecible en vez de entrar de uno en uno y de dos en dos.
+      P3. Haz que tu trabajo de mando tome las caracteristicas de una fabrica y no las de un taller a pedido.
+      P4. Impide en consecuencia, con todo lo que puedas, los pequenos parones y arranques de tu jornada, y tambien las interrupciones que traen las emergencias grandes.
+      P5. Busca siempre las fuentes de problemas futuros de prioridad alta abriendo ventanas en la caja negra de tu organizacion, aunque algunas de esas emergencias sean inevitables.
+      P6. Cuenta con lo que ganas al reconocer que tienes una bomba de relojeria entre manos: puedes atender el problema cuando tu quieras y no despues de que la bomba haya estallado.
+      P7. Coordina tu trabajo con el de los demas mandos, porque solo puedes ir hacia la regularidad si los otros van tambien.
+      P8. Usa, dicho de otro modo, los mismos bloques de tiempo para las actividades iguales.
+      P9. Toma el ejemplo que el libro da de Intel: las mananas de los lunes se apartaron en toda la empresa como el momento en que se reunen los grupos de planificacion, asi que quien pertenece a uno puede contar con el lunes para eso y queda libre de choques de agenda.
+    ===== agrupar_tareas_semejantes_aprovechar_preparacion | grafo
+      titulo: Agrupar las tareas semejantes en una tanda para aprovechar un solo esfuerzo de preparacion
+      fuente: ['grove_high_output']
+      cond: Cuando tienes por delante varias actividades de mando del mismo tipo y las estas atendiendo una a una segun llegan, pagando su preparacion cada vez.
+      P1. Aplica a tu trabajo de mando el segundo principio de produccion: agrupar las tareas semejantes.
+      P2. Cuenta con que toda operacion de fabricacion exige una cierta cantidad de tiempo de preparacion, y con que ese tiempo tiene muchos paralelos en el trabajo de mando.
+      P3. Para que el trabajo de mando avance con eficiencia, usa un mismo esfuerzo de preparacion y aplicalo a todo un grupo de actividades semejantes.
+      P4. Reutiliza lo que ya preparaste: una vez preparado un juego de ilustraciones para una clase de formacion, tu productividad sube si puedes usar ese mismo juego una y otra vez con otras clases o grupos.
+      P5. Cuando tengas varios informes que leer o varias evaluaciones de desempeno que aprobar, reserva un bloque de tiempo y hazlos en tanda, uno tras otro.
+      P6. Hazlo asi para aprovechar al maximo el tiempo de preparacion mental que esa tarea necesita.
+    ===== infundir_regularidad_reunion_proceso | grafo
+      titulo: Infundir regularidad a la reunion de proceso, para poder agrupar en tanda las tareas de mando semejantes y pronosticar el tiempo que piden
+      fuente: ['grove_high_output']
+      cond: Cuando llevas una reunion de las que se repiten en un calendario fijo y quieres sacarle el maximo, en vez de dejar que cada convocatoria se organice sola.
+      P1. Apunta a infundir regularidad a esta clase de reunion, que es la manera de sacarle el maximo.
+      P2. Consigue que los que asisten sepan como se lleva la reunion.
+      P3. Consigue que sepan que clases de asuntos de fondo se tratan en ella.
+      P4. Consigue que sepan que es lo que hay que conseguir en ella.
+      P5. Disenala de forma que te deje agrupar transacciones en tanda, o sea usar el mismo tiempo y esfuerzo de preparacion de produccion para atender muchas tareas de mando semejantes.
+      P6. Aprovecha que, dada esa regularidad, tu y los demas asistentes podeis empezar a pronosticar el tiempo que piden las clases de trabajo que hay que hacer.
+      P7. Deja que de ahi tome forma un sistema de control de produccion, registrado en los distintos calendarios.
+      P8. Cuenta con lo que ese sistema consigue: que una reunion programada tenga el minimo impacto en las otras cosas que la gente esta haciendo.
+
+**LECTURA, UNA POR UNA, Y LAS CINCO LAS SOSTENGO:**
+
+- **`conducir_etapas` a `ejercer_poder`: SOSTENGO.** La condicion de la hija (*ninguna cantidad de discusion va a producir
+  consenso y el momento de decidir ha llegado claramente*) es el producto del paso `5` de la madre, **pasar a la etapa de
+  decision clara**; y la hija anade lo que la madre no dice, **quien decide y con que autoridad** (sus pasos `2` a `5`, L61:
+  *legitimate ... if the clear decision stage is reached and no consensus has developed*). No repite: la madre no nombra
+  el poder de posicion.
+- **`conducir_etapas` a `cortar_discusion`: SOSTENGO.** La condicion de la hija (*diriges una discusion libre y tienes que
+  decidir si ya es momento de pasar a la decision*) es el paso `1` de la madre ya en marcha, que desemboca en su paso `5`; y
+  la hija anade **el criterio del momento** (L63, *don't push for a decision prematurely* y *if you feel that you have
+  already heard everything*), que la madre no trae. **Las dos hijas son hermanas entre si** (mi `NO, DUDA` de
+  `cortar_discusion` a `ejercer_poder`, sellado): las dos parten de la frontera entre la etapa `1` y la `2`, una por el
+  cuando y otra por el quien.
+- **`agrupar_interrupciones` a `acumular`: SOSTENGO.** L51 remite con palabras a la pieza de la madre (*which constitute
+  the interruptions we considered earlier*); la condicion de la hija (*entre una reunion individual y la siguiente
+  aparecen asuntos*) parte del producto de la madre, las interrupciones acumuladas para las reuniones regulares (sus pasos
+  `2` y `3`), y la hija anade **el fichero compartido por las dos partes** y el filtro de lo importante y no urgente.
+- **`buscar_regularidad` a `infundir`: SOSTENGO, con la `DUDA` sellada.** La condicion de la hija (*una reunion de las que
+  se repiten en un calendario fijo*) es el producto de los pasos `8` y `9` de la madre, **los mismos bloques de tiempo para
+  las actividades iguales**, con el lunes de los grupos de planificacion; y la hija anade la regularidad **dentro** de la
+  reunion (sus pasos `2` a `4`) y el pronostico (`6` y `7`). La duda sigue escrita: se pueden leer como el mismo principio
+  aplicado a la jornada y a la reunion.
+- **`agrupar_tareas` a `infundir`: SOSTENGO, por la adjudicacion de la `ACTA 67` `67.4.d`**, que dio la razon al extractor
+  dentro de mi `DUDA`. El paso `5` de la hija **procedimenta** la tanda (*usar el mismo tiempo y esfuerzo de preparacion ...
+  para atender muchas tareas de mando semejantes*, L21), no solo la nombra, y eso es usar el producto de `agrupar_tareas`
+  (su paso `3`, el mismo esfuerzo de preparacion aplicado a un grupo). **No la reabro** (`D.47`): la escribo para que se vea
+  que la releo y que se sostiene.
+
+## 6. **LO QUE DEJO PARA MI TURNO NORMAL, ESCRITO ANTES DE VER EL REPORTE**
 
 1. **`R5`** en su reporte, con `.v64ext/pegado64.py` y `.v64aud/normal/bloques_mudos.py` sacados otra vez de los
-   originales y con la cabecera cambiada a la `69`.
-2. **Su relectura de `D68.7`, par a par**: que las `8` lineas de la cabeza y sus `4` filas `SOSTENGO` esten cambiadas
-   por correccion declarada, con la vieja encima como `# vuelta 69`, **las dos lineas de cada par juntas**, y que no
-   haya cambiado **ninguna otra** linea de `.v68ext/veredictos_listos.txt` ni de `.v68ext/aristas_lectura.txt`. Y **que
-   punto de mi caso sostiene o tumba**, contra la seccion `3`.
-3. **`D68.15`**: su comentario `EN ESPERA` con las dos lecturas, y `d170` sin pagar.
-4. **`d053`**: su razon contra la seccion `5`, con la linea de cada lado; y como mi lectura no es ciega, **la leo buscando
-   lo que su razon diga y la mia no**.
-5. **`d056`**: su salida de `comprobar_veredictos.py` contra mi seccion `6`, y que el pago cite el recorrido de la `68`.
-6. **Sus `7` aristas esperadas contra mis `7`, par a par**, y su orden contra mis `4` restricciones.
-7. **La huella de las `20`** que su cierre dice tomar, contra `.v68aud/huellas_al_barrer.txt`, y el censo contra la
-   seccion `2`.
-8. **La clase de la vuelta**: que declaro el saneamiento en el registro (`d085`) y que pago solo lo que pago.
-9. **La muestra pineada de los SANO**: esta vuelta no escribe en la bitacora (seccion `2`), asi que **no hay poblacion
-   que muestrear** (`7`); los de `cap_05` y `cap_06` se muestrean cuando entren, en la `70`.
+   originales y con la cabecera cambiada a la `70`.
+2. **Las lineas nuevas de la bitacora**, una a una: las `118` contra las vivas de `.v68ext/veredictos_listos.txt`
+   (con las corregidas por la conjunta de la `69` y sin ninguna de las que quedaron en comentario) y contra mis clases
+   selladas, y las `5` de `forja.py arista` contra mis cinco `SOSTENGO` de la seccion `5`, con su paso.
+3. **Las `7` aristas, par a par**, contra `.v69aud/aristas_70.py`; que los `3` nodos viejos reescritos son las `3` madres
+   viejas y que **solo** cambiaron sus claves de relacion; y **ninguna con madre `usar_tres_clases_reunion_proceso`**.
+4. **Que cada `insertar` volvio con su `.fin` en `0`, en el orden de `.v69aud/restricciones_orden.py`, uno por vez y sin
+   solaparse**, y que **ninguna aduana levanto un vecino fuera de mi barrido**; y que quiere decir `d58cd8c` con *insertado
+   por la aduana* en la fila `20` (seccion `1`, punto `4`).
+5. **La muestra pineada de los SANO** que la `70` escribio en la bitacora, **con semilla `70`**, el tamaño de la seccion
+   `7` y su banda, releida contra mis clases selladas.
+6. **El censo, las guardas y el cierre estricto**, que tallara esta pagina: no tiene tablas, asi que un rojo en el suyo
+   sera suyo. Y el coste de su turno, del `loop.log`, contra su clase (`D.55`).
 
-## 9. **ESTA PAGINA CONTRA `R6` Y `R7`, MEDIDA SOBRE ELLA MISMA**
+## 7. **ESTA PAGINA CONTRA `R6` Y `R7`, MEDIDA SOBRE ELLA MISMA**
 
-El generador corre dos veces, y estos dos bloques de la segunda pasada leen la pagina que escribio la primera,
-identica salvo ellos. El primero cuenta las lineas de bloque `$` que empiezan por una clave de relacion (las que la
-nombran en mis frases y comandos no cuentan, porque la nombran para decir que no la imprimo); el segundo, las lineas de
-bloque que reparten en clases, y cuantas traen su `suma`:
+El generador corre dos veces, y estos bloques de la segunda pasada leen la pagina que escribio la primera, identica
+salvo ellos. El primero cuenta las lineas de bloque `$` que empiezan por una clave de relacion (las que la nombran en
+mis frases y comandos no cuentan, porque la nombran para decir que no la imprimo); el segundo, las lineas de bloque que
+reparten en clases, y cuantas traen su `suma`; el tercero, las rayas y guiones medios de la pagina:
 
     $ grep -c -E "^    +(previos|siguientes|nodos_previos|nodos_siguientes)" docs/loop/APERTURA_CIEGA.md
     0
-    $ python .v69aud/r7_pagina.py
-    lineas de bloque que reparten en clases: 16 | por estado: {'con suma': 16} | suma: 16
+    $ python .v70aud/r7_pagina.py
+    lineas de bloque que reparten en clases: 31 | por estado: {'con suma': 31} | suma: 31
+    $ grep -c -P "\x{2014}|\x{2013}" docs/loop/APERTURA_CIEGA.md
+    0
