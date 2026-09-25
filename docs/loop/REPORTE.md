@@ -62393,3 +62393,61 @@ codigo `0`:
 
 **`R5` vuelto a medir con el reporte ya entero** (`pegado70.py` y `bloques_mudos70.py` otra vez, salida en `.v70ext/r5_final.txt`): `23` comandos en `18` bloques, con `0` rotos y `0` mudos; el de mas es el bloque del cierre estricto de `70.5.g`, anexado despues de la medida de `70.5.f`.
 **No escribo `PARA_ALEXIS.md`: nada me obliga a parar.**
+
+---
+
+# VUELTA 71 DE LA LINEA SERIAL, lote 7 (`grove_high_output`), **CLASE INSERCION**: las `20` fichas siguientes de Grove (`cap_07`, `cap_10`, `cap_11`, `cap_12`, `cap_13` y `cap_14`) dejadas listas para insertar. **Ninguna insertada**
+
+*Encargo escrito por el auditor al cerrar la `ACTA 69`. Clase impresa por `python scripts/deuda.py --clase 71` (`LIBRE`, van
+`2` de `5` desde la `69`). **Ningun `insertar` en esta vuelta, ni en primer plano ni de fondo, y ningun barrido vivo cuando el
+turno termine.***
+
+**REPORTE ABIERTO AL EMPEZAR** (`EXTRACTOR.md` 3). Las filas se llenan al cerrarse cada tarea. Si la vuelta se corta, lo que
+falte es exactamente lo que no tiene fila.
+
+| tarea | que | estado |
+|---|---|---|
+| `T1` | los registros de la `ACTA 69` | |
+| `T2` | la fidelidad entera de las `20` | |
+| `T3` | el barrido de las `20`, sobre las fichas ya corregidas | |
+| `T4` | los veredictos, las aristas y el orden | |
+| `T5` | el cierre: censo, `PASOS INVENTADOS`, huellas, `D.61`, `R5`, guardas, commit | |
+
+## 71.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
+
+**Lo pendiente, commiteado primero** (`EXTRACTOR.md` 1): `TABLERO.jsonl`, `loop.log`, `ultimo_auditor.json` y
+`ultimo_extractor.json` del arnes. El primer empuje lo rechazo el remoto: traia dos commits del fundador sobre `src/aduana.py`
+(`68d6946`, la señal 1 repartida entre procesos, y `f480b47`, su prueba). Rebasado encima sin conflicto y empujado como `7be17c0`,
+hook verde.
+
+<!-- TALLADO: parcial salida=.v71ext/apertura.txt -->
+
+    $ git rev-parse HEAD && git log -1 --format=%cI && git rev-parse --abbrev-ref HEAD
+    7be17c06d70d6fe6e004c999a80a9c7e627a84b0
+    2026-09-25T16:36:42-04:00
+    extraccion-mundo-11
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 410
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+    $ bash .v71ext/censo.sh
+    nodos en dataset/nodos.jsonl        : 410
+    veredictos en bitacora              : 1027
+    pares mutuos                        : 1
+    bandeja cuarentena/grove_high_output: 27
+    insertados de grove_high_output     : 65
+    cerrojos en procesos/               : 
+    $ python scripts/deuda.py --clase 71
+    LIBRE
+      van 2 de 5 desde la ultima de saneamiento (la 69), con 56 deuda(s) esperando
+
+**Coincide con las cifras de apertura del encargo** (`410`, `1027`, `1`, `27`, `65`, TAREA 5), y **`procesos/` esta vacio**.
+`.v71ext/censo.sh` es copia de `.v70ext/censo.sh` con el comentario cambiado, y se vuelve a correr al cerrar. La lista de las `20`
+es `.v71ext/los20.txt`: las `20` primeras lineas de `.v70aud/normal/bandeja_grove.txt`, `121` pasos.
+
+## 71.D. **LOS DISCUTIBLES, MARCADOS ANTES DE SABER SI ACIERTO** (`EXTRACTOR.md` 8)
+
+| | que | por que lo marco |
+|---|---|---|
+| `D71.1` | **el barrido corre con `FORJA_PROCESOS_SIMILITUD=3`**, cinco fichas a la vez: `15` procesos de la señal 1 mas los `5` barridos en una maquina de `20` nucleos (`os.cpu_count()`). Sin la variable, cada barrido abriria `19` procesos y los cinco juntos `95` | la variable es la del propio `src/aduana.py` del fundador (`68d6946`), que la escribe para bajar el reparto; el resultado no depende del reparto (su comentario y `tests/test_reparto_similitud.py`). No cambia pares, funcion ni orden: cambia quien calcula |
+| `D71.2` | **el barrido se lanza en dos tandas, por capitulo**: `cap_07` (`9`) en cuanto su fidelidad y sus correcciones esten hechas, y los `11` restantes al terminar la suya, cinco a la vez como mucho sumadas las dos | es el orden que pide el encargo (*`cap_07` entero antes que los demas, la fidelidad antes que el barrido*); ninguna ficha se barre antes de su ultima correccion |
