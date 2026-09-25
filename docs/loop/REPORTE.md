@@ -61627,3 +61627,116 @@ toca, `d053` decidida, `d056` pagada.
 **`R5` vuelto a medir con el reporte ya entero** (`.v69ext/pegado69.py` y `.v69ext/bloques_mudos69.py` otra vez, salida en
 `.v69ext/r5_final.txt`): `29` comandos en `17` bloques, con `0` rotos y `0` mudos; el de mas es el bloque del cierre estricto de
 `69.5.i`, anexado despues de la medida de `69.5.h`.
+
+---
+
+# VUELTA 70 DE LA LINEA SERIAL, lote 7 (`grove_high_output`), **CLASE INSERCION**: las `20` filas de `cap_05` y `cap_06`, una por vez, con las `118` lineas y las `7` aristas que las dos lecturas ya comparten
+
+*Encargo escrito por el auditor al cerrar la `ACTA 68`. Clase impresa por `python scripts/deuda.py --clase 70` (`LIBRE`, van
+`1` de `5` desde la `69`). **Un `insertar` por vez, y ninguno vivo cuando el turno termine.***
+
+**REPORTE ABIERTO AL EMPEZAR** (`EXTRACTOR.md` 3). Las filas se llenan al cerrarse cada tarea; cada insercion anexa su fila al
+volver, con su commit. Si la vuelta se corta, lo que falte es exactamente lo que no tiene fila.
+
+| tarea | que | estado |
+|---|---|---|
+| `T1` | los registros de la `ACTA 68` | abierta |
+| `T2` | lo que entra es lo que se leyo: las `20` huellas contra `4ec8c16` | abierta |
+| `T3` | las `20` filas de `.v69ext/orden.txt`, una por vez | abierta |
+| `T4` | las aristas de la tanda, por instrumento | abierta |
+| `T5` | el cierre: censo, `PASOS INVENTADOS`, `D.61`, `R5`, guardas, commit | abierta |
+
+## 70.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
+
+**Lo pendiente, commiteado primero** (`EXTRACTOR.md` 1): `TABLERO.jsonl`, `loop.log`, `ultimo_auditor.json` y
+`ultimo_extractor.json` del arnes, en `3e52cad`, hook verde, empujado.
+
+<!-- TALLADO: parcial salida=.v70ext/apertura.txt -->
+
+    $ git rev-parse HEAD && git log -1 --format=%cI && git rev-parse --abbrev-ref HEAD
+    3e52cad3b7833ac6b4f3143be34b3ad307d08185
+    2026-09-25T02:52:44-04:00
+    extraccion-mundo-11
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 390
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+    $ bash .v70ext/censo.sh
+    nodos en dataset/nodos.jsonl        : 390
+    veredictos en bitacora              : 904
+    pares mutuos                        : 1
+    bandeja cuarentena/grove_high_output: 47
+    insertados de grove_high_output     : 45
+    cerrojos en procesos/               : 
+    $ python scripts/deuda.py --clase 70
+    LIBRE
+      van 1 de 5 desde la ultima de saneamiento (la 69), con 56 deuda(s) esperando
+
+**Coincide con el cierre de la `69`** (`390`, `904`, `1`, `47`, `45`: `ACTA 68` `68.1`), y **`procesos/` esta vacio: ningun
+cerrojo que romper.** `.v70ext/censo.sh` es copia de `.v68ext/censo.sh` con el comentario cambiado, y se vuelve a correr al cerrar.
+
+## 70.D. **LOS DISCUTIBLES, MARCADOS ANTES DE SABER SI ACIERTO** (`EXTRACTOR.md` 8)
+
+| | que | por que lo marco |
+|---|---|---|
+| `D70.1` | **EL METODO DE ESPERA DE LA `67` Y LA `68`**, que el encargo da por bueno (`0`): cada `insertar` lo lanza una copia de `.v68ext/insertar.py` como UN proceso y yo espero en primer plano con una copia de `.v68ext/esperar.py` hasta su `.fin`, porque una llamada de mi herramienta no pasa de `600` s y un `insertar` tarda de `985` a `3988`. **Entre el lanzamiento y el `.fin` no lanzo el siguiente, no toco el dataset, la bitacora ni la bandeja**; solo leo y escribo prosa del reporte | la letra de la corrida dice *primer plano*; el proceso lanzado es el metodo que las actas sostienen y el encargo nombra, y nada de lo que hago mientras vuela lo lee la aduana |
+| `D70.2` | **`.v70ext/insertar.py` lee las lineas de `.v68ext/veredictos_listos.txt` y salta las `#`**, como la de la `68` (`D68.2`) con la sede cambiada; contadas en seco antes del primer `insertar`, salen `118` y por candidato las de la columna `lin` de `.v69ext/orden.txt` | es la copia con la sede y la ruta de salida cambiadas; si la cuenta de una cabecera difiere de `lin`, la fila se declara |
+| `D70.3` | **la cita de `.v70ext/arista.py`**: las cinco por lectura van `--cita-veredicto` a su linea de `.v68ext/aristas_lectura.txt` y a la `ACTA 67` `67.4.c` y `67.4.d` (donde se adjudicaron) y la `ACTA 68` `68.3` y `68.5` (donde la conjunta las dejo en `7` par a par) | la de la `68` citaba la `ACTA 65`; aqui la sede de la adjudicacion es otra, y la elijo yo leyendo las dos actas |
+| `D70.4` | **las dos `CONTINUA` con `madre=` las cablea la aduana al entrar el hijo** (filas `8` y `11`), como en la `67`: la linea de la madre (fila `5` y fila `8`) deja la arista `EN COLA` porque el hijo espera en la bandeja, y la del hijo la cablea | es lo que hizo la aduana en la `67` (`.v67ext/insertar_07_*.txt`: *ARISTA EN COLA* y despues *cableada y escrita RESUELTA*); si hoy hace otra cosa, se declara en su fila |
+
+## 70.1. TAREA 1: LOS REGISTROS DE LA `ACTA 68`, SIN REABRIR EL ARGUMENTO (`D.47`)
+
+| que | donde |
+|---|---|
+| **la relectura conjunta se cierra sin discrepancia**: mis `D69.1` a `D69.3` se sostienen; de mis `118` pares dirigidos cambian justo los `8` de la cabeza, mis `70` pares sin orden son los `70` de la lectura sellada del auditor, y **mis `7` aristas esperadas son las suyas, par a par** | `ACTA 68` `68.3`, `68.5` |
+| **`d053`: no se parte, y mi `D69.4` se sostiene por la vara**: la mitad de L37 cae por la restriccion `2` de `9.1` y su cifra va en `atribuciones`; L57 nombra una ETAPA y L37 una cantidad | `68.5` |
+| **saneamiento declarado y `d053` y `d056` bien pagadas**; `d170` sigue esperando a la madre | `68.4` |
+| **cero caidas, ni de prosa**: las cinco rachas de la serial en cero y `R5` cumplido | `68.2`, `68.8`, `68.0` |
+
+**`T1` CERRADA.**
+
+## 70.2. TAREA 2: LO QUE ENTRA ES LO QUE SE LEYO
+
+Copia de `.v69ext/pasos_y_huellas.py` con el commit cambiado a `4ec8c16`, el cierre de la `69` (`.v70ext/pasos_y_huellas.py`,
+lo dice en su cabecera). **Corrida antes del primer `insertar`:**
+
+<!-- TALLADO: parcial salida=.v70ext/pasos_y_huellas.txt -->
+
+    $ python .v70ext/pasos_y_huellas.py
+    1   infundir_regularidad_reunion_proceso                     bandeja    6b93ad4500 igual
+    2   usar_tres_clases_reunion_proceso                         bandeja    ebc47c2b9a igual
+    3   fijar_frecuencia_reunion_individual_madurez_tarea        bandeja    f4ac56c90b igual
+    4   fijar_duracion_lugar_reunion_individual                  bandeja    e8d8a2f3ab igual
+    5   preparar_guion_reunion_individual_subordinado            bandeja    331d9fd308 igual
+    6   cubrir_indicadores_problemas_reunion_individual          bandeja    072eac4a5d igual
+    7   facilitar_expresion_subordinado_pregunta_mas             bandeja    34494b45b2 igual
+    8   tomar_notas_copia_guion_reunion_individual               bandeja    1735220c5b igual
+    9   acumular_asuntos_importantes_fichero_espera              bandeja    53219c730f igual
+    10  alentar_asuntos_corazon_vigilar_final_reunion            bandeja    e9f737aa26 igual
+    11  conducir_reunion_individual_telefono_distancia           bandeja    203f3cb565 igual
+    12  programar_reunion_individual_cadena                      bandeja    54ae3ce499 igual
+    13  conducir_etapas_modelo_ideal_decision                    bandeja    19df4c4999 igual
+    14  ejercer_poder_posicion_etapa_decision_clara              bandeja    684f1ec71c igual
+    15  vencer_sindrome_grupo_pares_autoconfianza                bandeja    871784f6cc igual
+    16  tomar_mando_reunion_pares_presidente_ausente             bandeja    a848b2a1ce igual
+    17  cortar_discusion_libre_momento_justo                     bandeja    5e7b1d6e9f igual
+    18  zanjar_seis_preguntas_decision_adelantado                bandeja    aec52e3dda igual
+    19  anunciar_decision_inesperada_reconvocar_reunion          bandeja    b7d394670d igual
+    20  decidir_nivel_competente_inferior                        bandeja    5ee59feaac igual
+    fichas de las filas 1 a 20: 20 | iguales a su blob en 4ec8c16: 20 | distintas: 0
+
+Y sus `20` filas contra las de la `69` (salida en `.v70ext/huellas_contra_69.txt`):
+
+    $ diff --strip-trailing-cr <(head -20 .v69ext/pasos_y_huellas.txt) <(head -20 .v70ext/pasos_y_huellas.txt) && echo "las 20 filas iguales a las de .v69ext/pasos_y_huellas.txt"
+    las 20 filas iguales a las de .v69ext/pasos_y_huellas.txt
+
+**`20` iguales a su blob en `4ec8c16` y `20` filas iguales a las de `.v69ext/pasos_y_huellas.txt`: ninguna se relee.** El
+`--strip-trailing-cr` es porque el fichero de la `69` quedo con finales `CRLF` y el mio con `LF`; el texto es el mismo.
+
+**`T2` CERRADA.**
+
+## 70.3. TAREA 3: LAS `20` FILAS, UNA POR VEZ
+
+Copias de la `68` con la ruta cambiada a `.v70ext/` (`7.F`): `insertar.py` (la sede de las lineas cambiada a
+`.v68ext/veredictos_listos.txt`), `esperar.py`, `fila.py`, `arista.py` (la sede cambiada a `.v68ext/aristas_lectura.txt` y la
+cita a las actas `67` y `68`), `tras_insertar.sh`, `empujar_fila.sh` y `bloque_arista.sh`; cada una lo dice en su cabecera.

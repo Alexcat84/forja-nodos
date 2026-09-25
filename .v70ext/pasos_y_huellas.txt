@@ -1,0 +1,21 @@
+1   infundir_regularidad_reunion_proceso                     bandeja    6b93ad4500 igual
+2   usar_tres_clases_reunion_proceso                         bandeja    ebc47c2b9a igual
+3   fijar_frecuencia_reunion_individual_madurez_tarea        bandeja    f4ac56c90b igual
+4   fijar_duracion_lugar_reunion_individual                  bandeja    e8d8a2f3ab igual
+5   preparar_guion_reunion_individual_subordinado            bandeja    331d9fd308 igual
+6   cubrir_indicadores_problemas_reunion_individual          bandeja    072eac4a5d igual
+7   facilitar_expresion_subordinado_pregunta_mas             bandeja    34494b45b2 igual
+8   tomar_notas_copia_guion_reunion_individual               bandeja    1735220c5b igual
+9   acumular_asuntos_importantes_fichero_espera              bandeja    53219c730f igual
+10  alentar_asuntos_corazon_vigilar_final_reunion            bandeja    e9f737aa26 igual
+11  conducir_reunion_individual_telefono_distancia           bandeja    203f3cb565 igual
+12  programar_reunion_individual_cadena                      bandeja    54ae3ce499 igual
+13  conducir_etapas_modelo_ideal_decision                    bandeja    19df4c4999 igual
+14  ejercer_poder_posicion_etapa_decision_clara              bandeja    684f1ec71c igual
+15  vencer_sindrome_grupo_pares_autoconfianza                bandeja    871784f6cc igual
+16  tomar_mando_reunion_pares_presidente_ausente             bandeja    a848b2a1ce igual
+17  cortar_discusion_libre_momento_justo                     bandeja    5e7b1d6e9f igual
+18  zanjar_seis_preguntas_decision_adelantado                bandeja    aec52e3dda igual
+19  anunciar_decision_inesperada_reconvocar_reunion          bandeja    b7d394670d igual
+20  decidir_nivel_competente_inferior                        bandeja    5ee59feaac igual
+fichas de las filas 1 a 20: 20 | iguales a su blob en 4ec8c16: 20 | distintas: 0
