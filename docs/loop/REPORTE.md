@@ -62407,11 +62407,11 @@ falte es exactamente lo que no tiene fila.
 
 | tarea | que | estado |
 |---|---|---|
-| `T1` | los registros de la `ACTA 69` | |
-| `T2` | la fidelidad entera de las `20` | |
-| `T3` | el barrido de las `20`, sobre las fichas ya corregidas | |
-| `T4` | los veredictos, las aristas y el orden | |
-| `T5` | el cierre: censo, `PASOS INVENTADOS`, huellas, `D.61`, `R5`, guardas, commit | |
+| `T1` | los registros de la `ACTA 69` | **CERRADA** (`71.1`) |
+| `T2` | la fidelidad entera de las `20` | **CERRADA** (`71.2`): `4` PUENTE de `121`, corregidos |
+| `T3` | el barrido de las `20`, sobre las fichas ya corregidas | **CERRADA** (`71.3`): `20` de `20`, `50` pares |
+| `T4` | los veredictos, las aristas y el orden | **CERRADA** (`71.4`): `50` lineas, `4` aristas por lectura, `D.36` en cero |
+| `T5` | el cierre: censo, `PASOS INVENTADOS`, huellas, `D.61`, `R5`, guardas, commit | **CERRADA** (`71.5`): ninguna insertada |
 
 ## 71.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
 
@@ -62525,13 +62525,15 @@ serializa como se leyo, y no toca una ficha ya marcada:
 | `repartir_supervision_puesto_funcional_mision` | `8` | ... *dentro de la funcion, promocionandolo si lo hace bien.* | ... *dentro de la funcion, quiza promocionandolo si lo hace bien.* |
 | `entregar_evaluacion_desempeno_tres_claves` | `2` | ... *hacer llegar el pensamiento completo de tu cabeza a la del subordinado, y que las palabras son solo el medio para transmitirlo.* | ... *hacer llegar tus pensamientos de tu cabeza a la del subordinado, y que las palabras son solo el medio: el fin es que se comunique el pensamiento correcto.* |
 
-    $ git diff --stat cuarentena/
-     .../entregar_evaluacion_desempeno_tres_claves.json                  | 4 ++--
-     .../planificar_tres_pasos_demanda_estado_brecha.json                | 6 +++---
-     .../repartir_supervision_puesto_funcional_mision.json               | 4 ++--
+    $ git diff --stat=200 7be17c0 HEAD -- cuarentena/
+     cuarentena/grove_high_output/entregar_evaluacion_desempeno_tres_claves.json    | 4 ++--
+     cuarentena/grove_high_output/planificar_tres_pasos_demanda_estado_brecha.json  | 6 +++---
+     cuarentena/grove_high_output/repartir_supervision_puesto_funcional_mision.json | 4 ++--
      3 files changed, 7 insertions(+), 7 deletions(-)
 
-**Ninguna otra ficha cambia.** Las `20` se normalizan con `aduana.normalizar_candidato` despues de la ultima correccion, y el
+**Correccion declarada de este bloque, en el cierre:** el primero que pegue era `git diff --stat cuarentena/` corrido antes del
+commit, y `git` recorto las rutas con `...`, que `R5` lee como elision sin declarar; lo sustituye el mismo diff contra la apertura,
+ancho y despues del commit de las fichas, que da los mismos tres ficheros y las mismas cifras. **Ninguna otra ficha cambia.** Las `20` se normalizan con `aduana.normalizar_candidato` despues de la ultima correccion, y el
 barrido de las `20` se lanzo despues (`71.3`).
 
 ### 71.2.3. `PASOS INVENTADOS POR CAPITULO`, seis filas
@@ -62750,3 +62752,151 @@ delante de todos sus hijos. **Aristas esperadas en la vuelta de insercion: `6`**
 por lectura con `forja.py arista`.
 
 **`T4` CERRADA: las cuatro partes hechas, ninguna fila vacia, ninguna insertada.**
+
+## 71.5. TAREA 5: EL CIERRE
+
+### 71.5.a. El censo antes y despues
+
+<!-- TALLADO: parcial salida=.v71ext/censo_cierre.txt -->
+
+    $ bash .v71ext/censo.sh
+    nodos en dataset/nodos.jsonl        : 410
+    veredictos en bitacora              : 1027
+    pares mutuos                        : 1
+    bandeja cuarentena/grove_high_output: 27
+    insertados de grove_high_output     : 65
+    cerrojos en procesos/               : 
+
+**`410`, `1027`, `1`, `27` y `65` al abrir (`71.0`) y al cerrar: no entro nada**, ningun `insertar` corrio en esta vuelta, y
+`procesos/` esta vacio.
+
+### 71.5.b. `PASOS INVENTADOS POR CAPITULO`, seis filas, que son preparacion y no entrada
+
+Las de `71.2.3`, de `.v71ext/contar_fidelidad.txt`, que no cambian despues: ninguna ficha se toco despues de la TAREA 2.
+
+| capitulo | candidatos | pasos | PUENTE en la relectura | por ciento | PUENTE que entrara |
+|---|---:|---:|---:|---:|---:|
+| `cap_07` | `9` | `53` | `2` | `3,8` | `0` |
+| `cap_10` | `1` | `8` | `1` | `12,5` | `0` |
+| `cap_11` | `2` | `17` | `0` | `0,0` | `0` |
+| `cap_12` | `3` | `11` | `0` | `0,0` | `0` |
+| `cap_13` | `2` | `14` | `0` | `0,0` | `0` |
+| `cap_14` | `3` | `18` | `1` | `5,6` | `0` |
+
+**El peor, `cap_10`, `1` de `8`, por encima del `10`: releido entero** (`71.2.3`). Los cuatro corregidos por correccion declarada.
+
+### 71.5.c. La huella de las `20` fichas preparadas, despues del ultimo cambio de ficha
+
+Copia de `.v70ext/pasos_y_huellas.py` con la lista a las filas `1` a `20` de `.v71ext/orden.txt`, el commit de comparacion a
+`7be17c0` (la apertura) y dos columnas mas, la cuenta de pasos y si el fichero de trabajo es el blob de HEAD (su cabecera lo dice):
+
+<!-- TALLADO: parcial salida=.v71ext/pasos_y_huellas.txt -->
+
+    $ python .v71ext/pasos_y_huellas.py
+    1   planificar_tres_pasos_demanda_estado_brecha                  bandeja     6 pasos d9f186ccbf DISTINTA trabajo=HEAD
+    2   fijar_periodo_direccion_objetivos_retroalimentacion          bandeja     5 pasos 1a043672c5 igual trabajo=HEAD
+    3   fijar_horizonte_ventana_replanificacion                      bandeja     5 pasos f06b1accbb igual trabajo=HEAD
+    4   definir_entorno_grupo_clientes_proveedores_competidores      bandeja     6 pasos 9f4a0619c9 igual trabajo=HEAD
+    5   examinar_entorno_expectativas_tecnologia_proveedores_grupos  bandeja     5 pasos c464a31c97 igual trabajo=HEAD
+    6   examinar_demanda_entorno_dos_marcos_temporales               bandeja     7 pasos ce07fe53ee igual trabajo=HEAD
+    7   determinar_estado_presente_capacidades_proyectos_merma       bandeja     7 pasos 12d77e436c igual trabajo=HEAD
+    8   cerrar_brecha_dos_preguntas_estrategia                       bandeja     7 pasos 5d99ca8393 igual trabajo=HEAD
+    9   contestar_dos_preguntas_direccion_objetivos                  bandeja     5 pasos 67370bbe1c igual trabajo=HEAD
+    10  repartir_supervision_puesto_funcional_mision                 bandeja     8 pasos 931056ae49 DISTINTA trabajo=HEAD
+    11  elegir_modo_control_motivacion_factor_cua                    bandeja     8 pasos 6d2523f2d2 igual trabajo=HEAD
+    12  escalonar_complejidad_puesto_empleado_nuevo                  bandeja     9 pasos c740e2ff62 igual trabajo=HEAD
+    13  diagnosticar_capacidad_motivacion_prueba_vida                bandeja     4 pasos 5fd300d024 igual trabajo=HEAD
+    14  fijar_meta_direccion_objetivos_mitad_probabilidad            bandeja     4 pasos eae449d97b igual trabajo=HEAD
+    15  diagnosticar_nivel_motivacion_reaccion_aumento_salario       bandeja     3 pasos 3fa1b5d695 igual trabajo=HEAD
+    16  elegir_estilo_direccion_madurez_relevante_tarea              bandeja     8 pasos 86903eca6c igual trabajo=HEAD
+    17  decidir_amistad_subordinado_prueba_revision_dificil          bandeja     6 pasos 5338591fa7 igual trabajo=HEAD
+    18  entregar_evaluacion_desempeno_tres_claves                    bandeja     6 pasos 9e34377a5d DISTINTA trabajo=HEAD
+    19  preparar_resena_mixta_hoja_trabajo                           bandeja     6 pasos 21a4572310 igual trabajo=HEAD
+    20  guiar_subordinado_etapas_resistencia_desempeno               bandeja     6 pasos 17094eeca6 igual trabajo=HEAD
+    fichas de las filas 1 a 20: 20 | pasos: 121 | iguales a su blob en 7be17c0: 17 | distintas: 3 | fichero de trabajo distinto de HEAD: 0
+
+**Las tres `DISTINTA` son las tres corregidas en `71.2.2`, y solo ellas**; las `121` pasos son los de `.v71ext/fidelidad.tsv`. Es
+contra estos blobs contra lo que la vuelta de insercion comprobara que entra lo que se leyo.
+
+### 71.5.d. `D.61`: cada discutible, ejecutado o cerrado
+
+| | estado |
+|---|---|
+| `D71.1` | **EJECUTADO**: el barrido corrio con `FORJA_PROCESOS_SIMILITUD=3` (`.v71ext/barrer.sh`), `20` de `20` con `rc=0` y poblacion `479` en las `20` (`71.3`) |
+| `D71.2` | **CERRADO por correccion declarada** (`71.D`): la tanda de `cap_07` se paro a los `29` s sin escribir ningun `vecinos_*.json`, y el barrido se hizo de una vez con las `20` corregidas |
+| `D71.3` a `D71.9` | **EJECUTADOS**: las marcas en `.v71ext/fidelidad.tsv`, los cuatro `P` corregidos en la bandeja (`71.2.2`) y la cifra en `71.2.3`; quedan para la relectura del auditor |
+| `D71.10` a `D71.13` | **EJECUTADOS**: escritos en `.v71ext/veredictos_listos.txt` y `.v71ext/aristas_lectura.txt`, comprobados por `comprobar_veredictos.py` y `orden.py` (`71.4`); quedan para la relectura del auditor |
+
+**Ninguno abierto.**
+
+### 71.5.e. `R5`, medido con las copias de `.v64ext/pegado64.py` y `.v64aud/normal/bloques_mudos.py`
+
+`.v71ext/pegado71.py` y `.v71ext/bloques_mudos71.py`, sacadas con `sed` de los originales con la cabecera del tramo cambiada a la
+`71` (el `diff --strip-trailing-cr` contra el original da `3` y `2` lineas cambiadas, las de la cabecera y el rotulo):
+
+<!-- TALLADO: parcial salida=.v71ext/r5.txt -->
+
+    $ python .v71ext/pegado71.py; python .v71ext/bloques_mudos71.py
+    bloques abiertos con `$` en el tramo de la vuelta 71 : 24
+    bloques que ROMPEN R1 (ACTA 60 60.15)                : 0
+    bloques abiertos con `$`: 14 | comandos `$`: 24 | comandos sin ninguna linea de salida en su bloque: 0
+
+**Cero bloques que rompen `R1` y cero comandos sin salida.** El bloque se anexo con tres lineas de relleno en el sitio de la salida,
+se corrieron los dos instrumentos (`.v71ext/r5.txt`) y la salida sustituyo al relleno; vueltos a correr con el bloque ya entero, salen
+iguales (`.v71ext/r5_bis.txt`, `diff` vacio). El unico bloque que `R1` tumbo en la primera medida fue el `git diff --stat` de
+`71.2.2`, sustituido por correccion declarada en su sitio.
+
+### 71.5.f. Las guardas
+
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 410
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+    $ python forja.py guiones
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+    $ python tests/test_aceptacion.py | tail -2
+      total: 379 pruebas, 0 fallos, 0 errores
+    ========================================================================
+
+(Salidas enteras en `.v71ext/cierre_gate.txt`, `.v71ext/cierre_guiones.txt` y `.v71ext/cierre_tests.txt`.)
+
+### 71.5.g. El cierre estricto, en verde
+
+Salida entera en `.v71ext/cierre_reporte.txt` (y la de las pruebas que lanza, que va por stderr, en `.v71ext/cierre_reporte_err.txt`),
+codigo `0`. Tardo mas de los `600` s de una llamada de mi herramienta y paso a segundo plano; lo espere en primer plano con un bucle
+`until` hasta su `rc=` y **no quedo vivo**:
+
+    $ grep -E '^(TALLADO|CENSO|TABLA DE CIERRE|CIERRE|GATE|BARRIDO)' .v71ext/cierre_reporte.txt
+    TALLADO DEL REPORTE (D.41): la tabla que dice ser de instrumento
+    TALLADO VERDE: las 157 tabla(s) comprobables son las de su instrumento, celda a celda.
+    CENSO DE RUTAS (D.42): la unidad de la ruta es la celda
+    CENSO VERDE: las 997 rutas publicadas sostienen lo que dicen sostener.
+    TABLA DE CIERRE DE TAREAS (D.52): toda tabla del reporte declara su instrumento
+    TABLA DE CIERRE VERDE: ninguna celda medible difiere del dato.
+    GATE VERDE.
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+    CIERRE VERDE: las cuatro guardas que muerden, el tallado y el censo. La vigencia corrio y publico su cuenta arriba: es cola, no guarda (D.15).
+
+**Ningun rojo.**
+
+**Tabla de tareas, al cerrar:**
+
+| tarea | que | estado |
+|---|---|---|
+| `T1` | los registros de la `ACTA 69` | **CERRADA** (`71.1`) |
+| `T2` | la fidelidad entera de las `20` | **CERRADA** (`71.2`): `121` pasos, `4` PUENTE corregidos en la bandeja antes del barrido, `cap_10` releido entero |
+| `T3` | el barrido de las `20` | **CERRADA** (`71.3`): `20` de `20`, poblacion `479`, `50` pares, recogido dentro del turno |
+| `T4` | los veredictos, las aristas y el orden | **CERRADA** (`71.4`): `50` lineas para `50` vecinos, `4` aristas por lectura, `d170` sin linea ni arista, `D.36` en cero |
+| `T5` | el cierre | **CERRADA** (`71.5`): censo `410`, `1027`, `1`, `27`, `65` al abrir y al cerrar; ninguna insertada |
+
+**`R5` vuelto a medir con el reporte ya entero** (`pegado71.py` y `bloques_mudos71.py` otra vez, salida en `.v71ext/r5_final.txt`):
+`25` comandos en `15` bloques, con `0` que rompen `R1` y `0` sin salida.
+**Ningun proceso MIO vivo al cerrar**: el ultimo que lance, el cierre estricto, volvio con `rc=0`, y `procesos/` de esta carpeta
+esta vacio. **LO QUE SI VIVE Y NO ES MIO, y lo declaro sin tocarlo:** al cerrar, `Get-CimInstance Win32_Process` lista dos `python`
+que no lanzo esta vuelta: `equivalencia_cinco.py correr`, arrancado a las `18:06:19`, y su hijo, arrancado a las `18:29:16`, que
+corre `forja.py insertar cuarentena/grove_high_output/alentar_asuntos_corazon_vigilar_final_reunion.json` con sus lineas de
+veredicto. **Esa ficha ya entro en la `70`** (fila `10`) y no esta en la bandeja de esta carpeta, y el dataset de aqui sigue en
+`410` sin cerrojo, asi que ese `insertar` corre en otra copia: por el nombre y por las carpetas `07_cinco` a `11_cinco2` de
+`C:/Users/AlexDesk/Documents/forja-perfil-wt/`, es la prueba de equivalencia del reparto de la senial 1 del fundador (`68d6946`)
+repitiendo las inserciones de la `70`. **No lo mato**: un `insertar` cortado a medias es la caida que el cerrojo de `D.44` existe
+para impedir, y no es mio. **No escribo `PARA_ALEXIS.md`: nada me obliga a parar.**
