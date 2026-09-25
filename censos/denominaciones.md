@@ -1052,3 +1052,7 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-25 | acumular_asuntos_importantes_fichero_espera | otro_idioma | hold file | ingles | - |
 | 2026-09-25 | acumular_asuntos_importantes_fichero_espera | otro_idioma | batching | ingles | - |
 | 2026-09-25 | acumular_asuntos_importantes_fichero_espera | otro_idioma | ad hoc contact | ingles | - |
+| 2026-09-25 | alentar_asuntos_corazon_vigilar_final_reunion | nombre_largo | Los asuntos de corazon a corazon en la reunion individual: por que es el foro perfecto para los problemas sutiles y profundos del trabajo, las tres preguntas con las que el libro los abre, y la guardia contra el asunto de corazon a corazon sacado en un momento inoportuno, que casi siempre llega cerca del final de la reunion | castellano | - |
+| 2026-09-25 | alentar_asuntos_corazon_vigilar_final_reunion | otro_idioma | heart-to-heart issues | ingles | - |
+| 2026-09-25 | alentar_asuntos_corazon_vigilar_final_reunion | otro_idioma | zinger | ingles | - |
+| 2026-09-25 | alentar_asuntos_corazon_vigilar_final_reunion | otro_idioma | one-on-one | ingles | - |
