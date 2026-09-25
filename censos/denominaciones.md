@@ -1024,3 +1024,8 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-25 | infundir_regularidad_reunion_proceso | otro_idioma | process-oriented meeting | ingles | - |
 | 2026-09-25 | infundir_regularidad_reunion_proceso | otro_idioma | batch | ingles | - |
 | 2026-09-25 | infundir_regularidad_reunion_proceso | otro_idioma | production control | ingles | - |
+| 2026-09-25 | usar_tres_clases_reunion_proceso | nombre_largo | La cabeza de serie de las reuniones de proceso: las tres clases que el autor dice usar, contadas y nombradas una a una, cada una con su propio despliegue mas adelante en el capitulo | castellano | - |
+| 2026-09-25 | usar_tres_clases_reunion_proceso | otro_idioma | process-oriented meetings | ingles | - |
+| 2026-09-25 | usar_tres_clases_reunion_proceso | otro_idioma | one-on-one | ingles | - |
+| 2026-09-25 | usar_tres_clases_reunion_proceso | otro_idioma | staff meeting | ingles | - |
+| 2026-09-25 | usar_tres_clases_reunion_proceso | otro_idioma | operation review | ingles | - |
