@@ -61786,3 +61786,19 @@ La aduana de hoy: **BLOQUEARIA** con `5` vecino(s) contra `479`; lineas `--vered
     GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: buscar_regularidad_bloques_iguales_trabajo_mando > infundir_regularidad_reunion_proceso
       razon en bitacora/VEREDICTOS.jsonl
 
+
+### Fila `2`: `usar_tres_clases_reunion_proceso`, **INSERTADO** en `2545.9` s, codigo `0`, commit `ab4fc32`
+
+La aduana de hoy: **BLOQUEARIA** con `5` vecino(s) contra `479`; lineas `--veredicto` pasadas: `5`. Salida entera en `.v70ext/insertar_02_usar_tres_clases_reunion_proceso.txt`.
+
+<!-- TALLADO: parcial salida=.v70ext/insertar_02_usar_tres_clases_reunion_proceso.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `infundir_regularidad_reunion_proceso` | similitud_texto | 0.500 | 0.286 | 0.409 | SANO |
+| `fijar_duracion_lugar_reunion_individual` | similitud_texto | 0.394 | 0.111 | 0.465 | SANO |
+| `preparar_guion_reunion_individual_subordinado` | similitud_texto | 0.408 | 0.111 | 0.463 | SANO |
+| `cubrir_indicadores_problemas_reunion_individual` | similitud_texto | 0.363 | 0.111 | 0.445 | SANO |
+| `fijar_frecuencia_reunion_individual_madurez_tarea` | similitud_texto | 0.404 | 0.100 | 0.420 | SANO |
+
+**Los cinco vecinos son los cinco de su bloque y las cinco lineas se pasaron tal cual**; ninguno nuevo contra `479` (`391` del grafo mas `88` de bandejas, linea `11` de su salida), ninguno que dejara de levantarse. La fila no trae arista: la cabeza de las tres clases queda sin hijos por la relectura conjunta (`ACTA 68` `68.3`).
