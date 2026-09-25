@@ -62127,3 +62127,23 @@ La aduana de hoy: **BLOQUEARIA** con `2` vecino(s) contra `479`; lineas `--vered
 | `entregar_evaluacion_desempeno_tres_claves` | similitud_texto | 0.370 | 0.000 | 0.394 | SANO |
 
 **Los dos vecinos son los dos de su bloque y las dos lineas se pasaron tal cual**; ninguno nuevo contra `479` (`407` del grafo mas `72` de bandejas, linea `8` de su salida), ninguno que dejara de levantarse. Sin arista: dice cuantas preguntas tiene (seis) y las nombra, y ninguna es un nodo (`D.37`, mirado en `.v68ext/aristas_lectura.txt`).
+
+### Fila `19`: `anunciar_decision_inesperada_reconvocar_reunion`, **INSERTADO** en `864.0` s, codigo `0`, commit `a065d0d`
+
+La aduana de hoy: **BLOQUEARIA** con `9` vecino(s) contra `479`; lineas `--veredicto` pasadas: `9`. Salida entera en `.v70ext/insertar_19_anunciar_decision_inesperada_reconvocar_reunion.txt`.
+
+<!-- TALLADO: parcial salida=.v70ext/insertar_19_anunciar_decision_inesperada_reconvocar_reunion.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `cortar_discusion_libre_momento_justo` | similitud_texto | 0.405 | 0.000 | 0.526 | SANO |
+| `zanjar_seis_preguntas_decision_adelantado` | similitud_texto | 0.366 | 0.111 | 0.495 | SANO |
+| `contestar_dos_preguntas_direccion_objetivos` | similitud_texto | 0.376 | 0.000 | 0.448 | SANO |
+| `vencer_sindrome_grupo_pares_autoconfianza` | similitud_texto | 0.441 | 0.000 | 0.418 | SANO |
+| `tomar_mando_reunion_pares_presidente_ausente` | similitud_texto | 0.359 | 0.100 | 0.441 | SANO |
+| `definir_entorno_grupo_clientes_proveedores_competidores` | similitud_texto | 0.370 | 0.000 | 0.431 | SANO |
+| `dirigir_reunion_decision` | familia_id | 0.171 | 0.333 | 0.420 | SANO |
+| `ejercer_poder_posicion_etapa_decision_clara` | similitud_texto | 0.371 | 0.100 | 0.415 | SANO |
+| `entregar_evaluacion_desempeno_tres_claves` | similitud_texto | 0.365 | 0.000 | 0.350 | SANO |
+
+**Los nueve vecinos son los nueve de su bloque y las nueve lineas se pasaron tal cual**; ninguno nuevo contra `479` (`408` del grafo mas `71` de bandejas, linea `15` de su salida), ninguno que dejara de levantarse. Sin arista.
