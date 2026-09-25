@@ -1059,3 +1059,7 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-25 | conducir_reunion_individual_telefono_distancia | nombre_largo | La reunion individual por telefono a larga distancia, que la dispersion geografica de la organizacion hace necesaria: funciona con el guion en manos del supervisor antes de empezar y con notas de las dos partes, y como no se ven las caras las notas no pueden funcionar igual que en la reunion cara a cara, asi que se intercambian al terminar | castellano | - |
 | 2026-09-25 | conducir_reunion_individual_telefono_distancia | otro_idioma | long-distance telephone one-on-ones | ingles | - |
 | 2026-09-25 | conducir_reunion_individual_telefono_distancia | otro_idioma | outline | ingles | - |
+| 2026-09-25 | programar_reunion_individual_cadena | nombre_largo | La programacion en cadena de la reunion individual: se fija la siguiente cuando termina la que se esta teniendo, con lo que se pueden tener en cuenta los demas compromisos y se evitan las cancelaciones, al contrario de lo que pasa con el horario fijo, donde unas vacaciones que caigan en la fecha se llevan por delante la reunion | castellano | - |
+| 2026-09-25 | programar_reunion_individual_cadena | otro_idioma | rolling basis | ingles | - |
+| 2026-09-25 | programar_reunion_individual_cadena | otro_idioma | set schedule | ingles | - |
+| 2026-09-25 | programar_reunion_individual_cadena | otro_idioma | one-on-one | ingles | - |
