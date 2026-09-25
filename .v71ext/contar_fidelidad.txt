@@ -1,0 +1,31 @@
+candidato                                                    cap     pasos   T   P
+planificar_tres_pasos_demanda_estado_brecha                  cap_07      6   4   2
+definir_entorno_grupo_clientes_proveedores_competidores      cap_07      6   6   0
+examinar_entorno_expectativas_tecnologia_proveedores_grupos  cap_07      5   5   0
+examinar_demanda_entorno_dos_marcos_temporales               cap_07      7   7   0
+determinar_estado_presente_capacidades_proyectos_merma       cap_07      7   7   0
+cerrar_brecha_dos_preguntas_estrategia                       cap_07      7   7   0
+fijar_horizonte_ventana_replanificacion                      cap_07      5   5   0
+contestar_dos_preguntas_direccion_objetivos                  cap_07      5   5   0
+fijar_periodo_direccion_objetivos_retroalimentacion          cap_07      5   5   0
+repartir_supervision_puesto_funcional_mision                 cap_10      8   7   1
+elegir_modo_control_motivacion_factor_cua                    cap_11      8   8   0
+escalonar_complejidad_puesto_empleado_nuevo                  cap_11      9   9   0
+diagnosticar_capacidad_motivacion_prueba_vida                cap_12      4   4   0
+diagnosticar_nivel_motivacion_reaccion_aumento_salario       cap_12      3   3   0
+fijar_meta_direccion_objetivos_mitad_probabilidad            cap_12      4   4   0
+decidir_amistad_subordinado_prueba_revision_dificil          cap_13      6   6   0
+elegir_estilo_direccion_madurez_relevante_tarea              cap_13      8   8   0
+entregar_evaluacion_desempeno_tres_claves                    cap_14      6   5   1
+guiar_subordinado_etapas_resistencia_desempeno               cap_14      6   6   0
+preparar_resena_mixta_hoja_trabajo                           cap_14      6   6   0
+pasos sin fila: 0 [] | filas sin paso: 0 []
+
+PASOS INVENTADOS POR CAPITULO, las 20 de cap_07 a cap_14 (COPIA de la vuelta 71 de .v68ext/contar_fidelidad.py, ruta cambiada)
+cap_07  candidatos 9  pasos 53  T 51  P 2  inventado 3,8 por ciento
+cap_10  candidatos 1  pasos 8  T 7  P 1  inventado 12,5 por ciento
+cap_11  candidatos 2  pasos 17  T 17  P 0  inventado 0,0 por ciento
+cap_12  candidatos 3  pasos 11  T 11  P 0  inventado 0,0 por ciento
+cap_13  candidatos 2  pasos 14  T 14  P 0  inventado 0,0 por ciento
+cap_14  candidatos 3  pasos 18  T 17  P 1  inventado 5,6 por ciento
+peor capitulo: cap_10, 1 de 8, 12,5 por ciento; por encima del 10: cap_10

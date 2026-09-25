@@ -1,0 +1,128 @@
+# Vuelta 71, TAREA 2.1: la relectura de fidelidad ENTERA (D.30, D.58) de las 20 de cap_07, cap_10, cap_11, cap_12, cap_13 y
+# cap_14, paso a paso contra su capitulo de fuentes/grove_high_output/, leido entero en esta vuelta. Marca: T transcripcion,
+# P puente (entero o de clausula; la clausula reescrita CUENTA como P, ACTA 62 62.5). Separador: barra vertical. Formato de
+# .v68ext/fidelidad.tsv. Las citas van recortadas; la linea la localiza .v71ext/citas.sh, con su salida en
+# .v71ext/citas_fidelidad.txt. Lo marcado DISCUTIBLE se marco al escribir la fila, antes de ninguna comprobacion. Los P se
+# marcan sobre el texto de la ficha tal como estaba al abrir la vuelta, y se corrigen despues en la ficha (TAREA 2.2).
+# id | paso | marca | linea | lo que decide la marca
+planificar_tres_pasos_demanda_estado_brecha | 1 | P | L19 | Your general planning process should consist of analogous thinking. La clausula y no sobre otra cosa no esta en el libro: la anadi yo. PUENTE de clausula, se retira (D71.3)
+planificar_tres_pasos_demanda_estado_brecha | 2 | T | L19 | Step 1 is to establish projected need or demand
+planificar_tres_pasos_demanda_estado_brecha | 3 | T | L19 | Step 2 is to establish your present status
+planificar_tres_pasos_demanda_estado_brecha | 4 | P | L19 | Put another way, where will your business be if you do nothing different from what you are now doing? La clausula que es la que obliga a contestarlo no esta en el libro, que solo dice Put another way. PUENTE de clausula, se retira (D71.3)
+planificar_tres_pasos_demanda_estado_brecha | 5 | T | L19 | Step 3 is to compare and reconcile steps 1 and 2
+planificar_tres_pasos_demanda_estado_brecha | 6 | T | L19 | Namely, what more (or less) do you need to do to produce what your environment will demand? Convierte esa conciliacion en la pregunta es el Namely del libro puesto de verbo de marco (DISCUTIBLE D71.4)
+definir_entorno_grupo_clientes_proveedores_competidores | 1 | T | L25 | If you look at your own group within an organization as if it were a stand-alone company
+definir_entorno_grupo_clientes_proveedores_competidores | 2 | T | L25 | your environment is made up of other such groups that directly influence what you do. Anota es verbo de marco (DISCUTIBLE D71.4)
+definir_entorno_grupo_clientes_proveedores_competidores | 3 | T | L25 | customers who need your services
+definir_entorno_grupo_clientes_proveedores_competidores | 4 | T | L25 | vendors who are able to provide you with certain capabilities
+definir_entorno_grupo_clientes_proveedores_competidores | 5 | T | L25 | and finally, your competitors
+definir_entorno_grupo_clientes_proveedores_competidores | 6 | T | L25 | but you can compare your service to one like United Parcel as a way to judge performance and set standards
+examinar_entorno_expectativas_tecnologia_proveedores_grupos | 1 | T | L27 | You should attempt to determine your customers
+examinar_entorno_expectativas_tecnologia_proveedores_grupos | 2 | T | L27 | You should keep abreast of technological developments like electronic mail and other alternative ways of doing your job
+examinar_entorno_expectativas_tecnologia_proveedores_grupos | 3 | T | L27 | You should evaluate the performance of your vendors
+examinar_entorno_expectativas_tecnologia_proveedores_grupos | 4 | T | L27 | You should also evaluate the performance of other groups in the organization to which you belong
+examinar_entorno_expectativas_tecnologia_proveedores_grupos | 5 | T | L27 | Does some other group (like the traffic department) affect how well you can do your work? Can that group meet your needs? El para cada uno de esos grupos glosa el some other group del libro (DISCUTIBLE D71.5)
+examinar_demanda_entorno_dos_marcos_temporales | 1 | T | L29 | you need to examine it in two time frames
+examinar_demanda_entorno_dos_marcos_temporales | 2 | T | L29 | What do my customers want from me now
+examinar_demanda_entorno_dos_marcos_temporales | 3 | T | L29 | Am I satisfying them
+examinar_demanda_entorno_dos_marcos_temporales | 4 | T | L29 | What will they expect from me one year from now
+examinar_demanda_entorno_dos_marcos_temporales | 5 | T | L29 | You need to focus on the difference between what your environment demands from you now
+examinar_demanda_entorno_dos_marcos_temporales | 6 | T | L31 | Should you at this stage consider what practical steps you can actually take to handle matters? No, that will just confuse the issue
+examinar_demanda_entorno_dos_marcos_temporales | 7 | T | L31 | if the marketing organization adjusted its demand forecast on the basis of its own assessment ... manufacturing would never tool up to satisfy the real demand. La regla es la que la pregunta retorica del libro pone, sin las cifras del ejemplo (DISCUTIBLE D71.6)
+determinar_estado_presente_capacidades_proyectos_merma | 1 | T | L35 | You do this by listing your present capabilities and the projects you have in the works
+determinar_estado_presente_capacidades_proyectos_merma | 2 | T | L35 | be sure to use the same terms, or
+determinar_estado_presente_capacidades_proyectos_merma | 3 | T | L35 | For instance, if your demand is listed in terms of completed product designs
+determinar_estado_presente_capacidades_proyectos_merma | 4 | T | L35 | You also need to look at timing
+determinar_estado_presente_capacidades_proyectos_merma | 5 | T | L35 | will every project now moving through be completed
+determinar_estado_presente_capacidades_proyectos_merma | 6 | T | L35 | Chances are, no, some will get scrapped or aborted, and you have to factor this into your forecasted output
+determinar_estado_presente_capacidades_proyectos_merma | 7 | T | L35 | while it is impossible to be precise in every case, it is prudent to factor in some percentage of loss for managerial projects as well
+cerrar_brecha_dos_preguntas_estrategia | 1 | T | L39 | The final step of planning consists of undertaking new tasks or modifying old ones to close the gap
+cerrar_brecha_dos_preguntas_estrategia | 2 | T | L39 | The first question is, What do you need to do to close the gap
+cerrar_brecha_dos_preguntas_estrategia | 3 | T | L39 | The second is, What can you do to close the gap
+cerrar_brecha_dos_preguntas_estrategia | 4 | T | L39 | Consider each question separately
+cerrar_brecha_dos_preguntas_estrategia | 5 | T | L39 | and then decide what you actually will do
+cerrar_brecha_dos_preguntas_estrategia | 6 | T | L39 | evaluating what effect your actions will have on narrowing the gap, and when
+cerrar_brecha_dos_preguntas_estrategia | 7 | T | L39 | The set of actions you decide upon is your strategy
+fijar_horizonte_ventana_replanificacion | 1 | T | L61 | But what is really being influenced here? It is the next year. La practica de Intel (five years off) puesta de mandato sin su cifra, que va a atribuciones (DISCUTIBLE D71.7)
+fijar_horizonte_ventana_replanificacion | 2 | T | L61 | you implement only that portion of a plan that lies within the time window between now and the next time you go through the exercise
+fijar_horizonte_ventana_replanificacion | 3 | T | L61 | Everything else you can look at again
+fijar_horizonte_ventana_replanificacion | 4 | T | L61 | We should also be careful not to plan too frequently, allowing ourselves time to judge the impact of the decisions we made
+fijar_horizonte_ventana_replanificacion | 5 | T | L61 | In other words, we need the feedback that will be indispensable to our planning the next time around. Regula esa frecuencia por es el In other words que ata la frecuencia a la retroalimentacion (DISCUTIBLE D71.7)
+contestar_dos_preguntas_direccion_objetivos | 1 | T | L71 | A successful MBO system needs only to answer two questions
+contestar_dos_preguntas_direccion_objetivos | 2 | T | L73 | Where do I want to go
+contestar_dos_preguntas_direccion_objetivos | 3 | T | L73 | The answer provides the objective
+contestar_dos_preguntas_direccion_objetivos | 4 | T | L75 | How will I pace myself to see if I am getting there
+contestar_dos_preguntas_direccion_objetivos | 5 | T | L75 | The answer gives us milestones, or key results
+fijar_periodo_direccion_objetivos_retroalimentacion | 1 | T | L79 | MBO is largely designed to provide feedback relevant to the specific task at hand
+fijar_periodo_direccion_objetivos_retroalimentacion | 2 | T | L79 | it should tell us how we are doing so we can make adjustments in whatever we are doing if need be
+fijar_periodo_direccion_objetivos_retroalimentacion | 3 | T | L79 | For the feedback to be effective, it must be received very soon after the activity it is measuring occurs
+fijar_periodo_direccion_objetivos_retroalimentacion | 4 | T | L79 | Accordingly, an MBO system should set objectives for a relatively short period
+fijar_periodo_direccion_objetivos_retroalimentacion | 5 | T | L79 | if we plan on a yearly basis, the corresponding MBO system
+repartir_supervision_puesto_funcional_mision | 1 | T | L43 | To make hybrid organizations work, you need a way to coordinate the mission-oriented units and the functional groups
+repartir_supervision_puesto_funcional_mision | 2 | T | L43 | His professional methods, practices, and standards are set by the functional group to which he belongs. El Deja que pone de mandato lo que el libro describe del controller (DISCUTIBLE D71.8)
+repartir_supervision_puesto_funcional_mision | 3 | T | L43 | Consequently, the controller for a business unit should report to someone in both the functional and the mission-oriented organizations
+repartir_supervision_puesto_funcional_mision | 4 | T | L43 | with the type of supervision reflecting the varying needs of the two
+repartir_supervision_puesto_funcional_mision | 5 | T | L43 | The divisional general manager gives the controller mission-oriented priorities by asking him to work on specific business problems. El Encarga pone de mandato el reparto que el libro describe, y el reparto es del libro (DISCUTIBLE D71.8)
+repartir_supervision_puesto_funcional_mision | 6 | T | L43 | The finance manager makes sure that the controller is trained to do his work in a technically proficient manner (DISCUTIBLE D71.8)
+repartir_supervision_puesto_funcional_mision | 7 | T | L43 | supervises and monitors his technical performance (DISCUTIBLE D71.8)
+repartir_supervision_puesto_funcional_mision | 8 | P | L43 | and looks after his career inside finance, promoting him, perhaps, to the position of controller of a bigger, more complex division if he performs well. El paso dice promocionandolo si lo hace bien y se come el perhaps: lo que el libro da como posibilidad el paso lo manda. PUENTE de clausula, se reescribe con el quiza del libro (D71.9)
+elegir_modo_control_motivacion_factor_cua | 1 | T | L57 | There are two variables here: first, the nature of a person
+elegir_modo_control_motivacion_factor_cua | 2 | T | L57 | An imaginary composite index can be applied to measure an environment
+elegir_modo_control_motivacion_factor_cua | 3 | T | L59 | It is our task as managers to identify which mode of control is most appropriate
+elegir_modo_control_motivacion_factor_cua | 4 | T | L61 | The individual motivation can run from self-interest to group-interest, and the CUA factor of a working environment can vary from low to high
+elegir_modo_control_motivacion_factor_cua | 5 | T | L61 | When self-interest is high and the CUA factor is low, the most appropriate is the market mode, which governed our tire purchase
+elegir_modo_control_motivacion_factor_cua | 6 | T | L61 | As individual motivation moves toward group interest, the contractual mode becomes appropriate, which governed our stopping for a red light
+elegir_modo_control_motivacion_factor_cua | 7 | T | L61 | When group-interest orientation and the CUA factor are both high, the cultural values mode becomes the best choice
+elegir_modo_control_motivacion_factor_cua | 8 | T | L61 | when the CUA factor is high and individual motivation is based on self-interest, no mode of control will work well
+escalonar_complejidad_puesto_empleado_nuevo | 1 | T | L63 | What is his motivation? It is very much based on self-interest
+escalonar_complejidad_puesto_empleado_nuevo | 2 | T | L63 | So you should give him a clearly structured job with a low CUA factor
+escalonar_complejidad_puesto_empleado_nuevo | 3 | T | L63 | If he does well, he will begin to feel more at home, worry less about himself, and start to care more about his team
+escalonar_complejidad_puesto_empleado_nuevo | 4 | T | L63 | The employee can then be promoted into a more complex, uncertain, ambiguous job
+escalonar_complejidad_puesto_empleado_nuevo | 5 | T | L63 | As time passes, he will continue to gain an increasing amount of shared experience with other members of the organization
+escalonar_complejidad_puesto_empleado_nuevo | 6 | T | L63 | This is why promotion from within tends to be the approach favored by corporations with strong corporate cultures
+escalonar_complejidad_puesto_empleado_nuevo | 7 | T | L63 | Bring young people in at relatively low-level, well-defined jobs with low CUA factors
+escalonar_complejidad_puesto_empleado_nuevo | 8 | T | L63 | and over time they will share experiences with their peers, supervisors, and subordinates
+escalonar_complejidad_puesto_empleado_nuevo | 9 | T | L63 | They will gradually accept, even flourish in, the complex world of multiple bosses and peer decision-making
+diagnosticar_capacidad_motivacion_prueba_vida | 1 | T | L17 | When a person is not doing his job, there can only be two reasons for it
+diagnosticar_capacidad_motivacion_prueba_vida | 2 | T | L17 | To determine which, we can employ a simple mental test: if the person
+diagnosticar_capacidad_motivacion_prueba_vida | 3 | T | L17 | If the answer is yes, that person is not motivated
+diagnosticar_capacidad_motivacion_prueba_vida | 4 | T | L17 | if the answer is no, he is not capable
+diagnosticar_nivel_motivacion_reaccion_aumento_salario | 1 | T | L85 | A simple test can be used to determine where someone is in the motivational hierarchy. El observa como reacciona a un aumento es el verbo de marco de la prueba, cuyo objeto es el aumento de las dos ramas siguientes (DISCUTIBLE D71.4)
+diagnosticar_nivel_motivacion_reaccion_aumento_salario | 2 | T | L85 | If the absolute sum of a raise in salary an individual receives is important to him, he is working mostly within the physiological or safety modes
+diagnosticar_nivel_motivacion_reaccion_aumento_salario | 3 | T | L85 | If, however, what matters to him is how his raise stacks up against what other people got
+fijar_meta_direccion_objetivos_mitad_probabilidad | 1 | T | L75 | When the need to stretch is not spontaneous, management needs to create an environment to foster it
+fijar_meta_direccion_objetivos_mitad_probabilidad | 2 | T | L75 | In an MBO system, for example, objectives should be set at a point high enough
+fijar_meta_direccion_objetivos_mitad_probabilidad | 3 | T | L75 | Output will tend to be greater when everybody strives for a level of achievement beyond his immediate grasp
+fijar_meta_direccion_objetivos_mitad_probabilidad | 4 | T | L75 | Such goal-setting is extremely important if what you want is peak performance from yourself and your subordinates
+decidir_amistad_subordinado_prueba_revision_dificil | 1 | T | L75 | In fact, there are pluses and minuses here, y L77 Everyone must decide for himself what is professional and appropriate here
+decidir_amistad_subordinado_prueba_revision_dificil | 2 | T | L75 | If the subordinate is a personal friend, the supervisor can move into a communicating management style quite easily
+decidir_amistad_subordinado_prueba_revision_dificil | 3 | T | L75 | but the what-when-how mode becomes harder to revert to when necessary
+decidir_amistad_subordinado_prueba_revision_dificil | 4 | T | L77 | A test might be to imagine yourself delivering a tough performance review to your friend
+decidir_amistad_subordinado_prueba_revision_dificil | 5 | T | L77 | Do you cringe at the thought? If so, don
+decidir_amistad_subordinado_prueba_revision_dificil | 6 | T | L77 | If your stomach remains unaffected, you are likely to be someone whose personal relationships will strengthen work relationships
+elegir_estilo_direccion_madurez_relevante_tarea | 1 | T | L19 | That variable is the task-relevant maturity (TRM) of the subordinates, which is a combination of the degree of their achievement orientation
+elegir_estilo_direccion_madurez_relevante_tarea | 2 | T | L19 | Moreover, all this is very specific to the task at hand
+elegir_estilo_direccion_madurez_relevante_tarea | 3 | T | L23 | but if the pace of the job accelerates or if the job itself abruptly changes, the TRM of that individual will drop
+elegir_estilo_direccion_madurez_relevante_tarea | 4 | T | L25 | Specifically, when the TRM is low, the most effective approach is one that offers very precise and detailed instructions
+elegir_estilo_direccion_madurez_relevante_tarea | 5 | T | L25 | As the TRM of the subordinate grows, the most effective style moves from the structured to one more given to communication
+elegir_estilo_direccion_madurez_relevante_tarea | 6 | T | L25 | As the TRM becomes even greater, the effective management style changes again
+elegir_estilo_direccion_madurez_relevante_tarea | 7 | T | L25 | But regardless of what the TRM may be, the manager should always monitor a subordinate
+elegir_estilo_direccion_madurez_relevante_tarea | 8 | T | L27 | A word of caution is in order: do not make a value judgment and consider a structured management style less worthy than a communication-oriented one
+entregar_evaluacion_desempeno_tres_claves | 1 | T | L109 | You must level with your subordinate
+entregar_evaluacion_desempeno_tres_claves | 2 | P | L111 | The aim of communication is to transmit thoughts from the brain of person A to the brain of person B. El paso dice el pensamiento completo y el libro dice thoughts y getting the right thought communicated is the end: el completo es mio. PUENTE de clausula, se reescribe con el pensamiento correcto del libro (D71.9)
+entregar_evaluacion_desempeno_tres_claves | 3 | T | L113 | Is it enough to have your subordinate paraphrase your words? I don
+entregar_evaluacion_desempeno_tres_claves | 4 | T | L115 | employing your entire arsenal of sensory capabilities to make certain your points are being properly interpreted
+entregar_evaluacion_desempeno_tres_claves | 5 | T | L119 | So your own insecurities, anxieties, guilt, or whatever should be kept out of it
+entregar_evaluacion_desempeno_tres_claves | 6 | T | L119 | You should work to control these emotions so that they don
+guiar_subordinado_etapas_resistencia_desempeno | 1 | T | L167 | A poor performer has a strong tendency to ignore his problem, y L171 The supervisor should keep track of what stage things are in
+guiar_subordinado_etapas_resistencia_desempeno | 2 | T | L167 | Here a manager needs facts and examples so that he can demonstrate its reality
+guiar_subordinado_etapas_resistencia_desempeno | 3 | T | L167 | Evidence can overcome resistance here as well
+guiar_subordinado_etapas_resistencia_desempeno | 4 | T | L167 | Instead he will blame others, a standard defense mechanism
+guiar_subordinado_etapas_resistencia_desempeno | 5 | T | L171 | The supervisor should keep track of what stage things are in
+guiar_subordinado_etapas_resistencia_desempeno | 6 | T | L179 | If it becomes clear that you are not going to get your subordinate past the blame-others stage, you will have to assume the formal role of the supervisor
+preparar_resena_mixta_hoja_trabajo | 1 | T | L129 | You should scan material such as progress reports, performance against quarterly objectives, and one-on-one meeting notes
+preparar_resena_mixta_hoja_trabajo | 2 | T | L129 | Then sit down with a blank piece of paper
+preparar_resena_mixta_hoja_trabajo | 3 | T | L129 | When you have run out of items, you can put all of your supporting documentation away
+preparar_resena_mixta_hoja_trabajo | 4 | T | L131 | look for relationships between the various items listed
+preparar_resena_mixta_hoja_trabajo | 5 | T | L131 | When you find such relationships, you can start calling them
+preparar_resena_mixta_hoja_trabajo | 6 | T | L131 | ask yourself if your subordinate will be able to remember all of the messages you have chosen to deliver

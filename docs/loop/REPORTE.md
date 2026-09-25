@@ -62451,3 +62451,111 @@ es `.v71ext/los20.txt`: las `20` primeras lineas de `.v70aud/normal/bandeja_grov
 |---|---|---|
 | `D71.1` | **el barrido corre con `FORJA_PROCESOS_SIMILITUD=3`**, cinco fichas a la vez: `15` procesos de la señal 1 mas los `5` barridos en una maquina de `20` nucleos (`os.cpu_count()`). Sin la variable, cada barrido abriria `19` procesos y los cinco juntos `95` | la variable es la del propio `src/aduana.py` del fundador (`68d6946`), que la escribe para bajar el reparto; el resultado no depende del reparto (su comentario y `tests/test_reparto_similitud.py`). No cambia pares, funcion ni orden: cambia quien calcula |
 | `D71.2` | **el barrido se lanza en dos tandas, por capitulo**: `cap_07` (`9`) en cuanto su fidelidad y sus correcciones esten hechas, y los `11` restantes al terminar la suya, cinco a la vez como mucho sumadas las dos | es el orden que pide el encargo (*`cap_07` entero antes que los demas, la fidelidad antes que el barrido*); ninguna ficha se barre antes de su ultima correccion |
+
+## 71.1. TAREA 1: LOS REGISTROS DE LA `ACTA 69`, SIN REABRIR EL ARGUMENTO (`D.47`)
+
+| que | donde |
+|---|---|
+| **las `20` filas dentro, una por vez, sin solape y en su orden**: `118` lineas iguales letra a letra a las vivas preparadas, sobre los `118` pares del barrido del auditor y con sus clases selladas; `7` aristas iguales par a par; `3` madres viejas que solo ganan su `nodos_siguientes` | `ACTA 69` `69.3`, `69.4` |
+| **mis cuatro discutibles se sostienen**, `D70.1` a `D70.4`, y la espera de fondo de la fila `10` queda declarada y sin cargo | `69.4`, `69.5` |
+| **la muestra de los SANO, `20` de `20`**; `cap_05` y `cap_06` entran en `0` de `84` y `0` de `62`; la guarda `D.59` muerde por mutacion | `69.5`, `69.6`, `69.1` |
+| **cero caidas, ni de prosa**: las cinco rachas de la serial en cero y `R5` cumplido | `69.2`, `69.8`, `69.0` |
+| **`d170` se paga en la vuelta que inserte `elegir_estilo_direccion_madurez_relevante_tarea`**: no hay arista; si el barrido levanta el par, es `SANO` | `69.13` |
+
+**`T1` CERRADA.**
+
+**CORRECCION DECLARADA DE `D71.2`, EN EL MINUTO EN QUE LA VI, antes de ninguna lectura de su salida.** Lance la tanda de `cap_07`
+a las `16:43:17` y la pare a los `29` s: **la poblacion del barrido es GRAFO MAS BANDEJAS**, asi que las `11` fichas de `cap_10` a
+`cap_14` estan dentro de la poblacion de cada barrido de `cap_07`, y si la fidelidad de una de ellas trae un PUENTE, su correccion
+llegaria despues de que un barrido de `cap_07` la midiera con el texto viejo. Es `d031` visto desde el otro extremo del par. **El
+barrido se hace de una vez, con las `20`, cuando las `20` esten corregidas.** El paro: `TaskStop` mato el `bash` pero no a sus
+hijos, y el `xargs` volvio a lanzar las cuatro fichas que quedaban; los mate a mano (`kill` al `bash` y al `xargs`, `taskkill` a
+los `python`) y `tasklist` no lista ningun `python` despues. **Ningun barrido escribio su `vecinos_*.json`**: los cinco primeros
+salieron con `rc=1` a los `29` s y sus `.txt` quedaron vacios, borrados. Queda solo el log, apartado en
+`.v71ext/abortado/barrido_cap07.log`, que no es sede de ninguna cifra. `barrer.sh` no cambia: se llama con `.v71ext/los20.txt`.
+
+## 71.D bis. **LOS DISCUTIBLES DE LA TAREA 2, MARCADOS AL ESCRIBIR CADA FILA** (`EXTRACTOR.md` 8)
+
+Se marcaron dentro de `.v71ext/fidelidad.tsv` en el acto de escribir cada fila, antes de correr `citas.sh` ni
+`contar_fidelidad.py`; aqui se juntan por numero.
+
+| | que | por que lo marco |
+|---|---|---|
+| `D71.3` | **dos clausulas de `planificar_tres_pasos_demanda_estado_brecha` van `P`**: *y no sobre otra cosa* (paso `1`) y *que es la que obliga a contestarlo* (paso `4`), las dos sobre `cap_07` L19 | ninguna manda un medio nuevo, pero las dos son letra mia pegada a una frase del libro; por `62.5` la clausula reescrita cuenta. Si el auditor las lee como enfasis sin contenido, son `2` `T` y `cap_07` baja a `0` de `53` |
+| `D71.4` | **tres verbos de marco van `T`**: *Convierte esa conciliacion en la pregunta* (`planificar_tres_pasos` paso `6`, el *Namely* de L19), *Anota como entorno* (`definir_entorno` paso `2`, L25), *observa como reacciona a un aumento* (`diagnosticar_nivel_motivacion` paso `1`, L85) | es la figura de `D68.5`: el objeto es del libro y el verbo solo lo pone en imperativo |
+| `D71.5` | **`examinar_entorno_expectativas` paso `5` va `T`**: *para cada uno de esos grupos* glosa el *some other group* de L27 | es la figura de `D68.3`, un cuantificador del libro glosado |
+| `D71.6` | **`examinar_demanda_entorno_dos_marcos_temporales` paso `7` va `T`**: la regla de no rebajar la demanda es la que la pregunta retorica de L31 pone, sin las cifras del ejemplo | la ficha ya la marco discutible al escribirse; el libro la da como ilustracion y no como mandato |
+| `D71.7` | **`fijar_horizonte_ventana_replanificacion` pasos `1` y `5` van `T`**: el `1` pone de mandato la practica de Intel sin su cifra (que va a `atribuciones`), y el `5` lee *Regula esa frecuencia por la retroalimentacion* en el *In other words* de L61 | el `1` es la figura de `D68.4`; el `5` ata dos frases que el libro ata con *In other words*, y si se lee como criterio nuevo es `1` `P` mas |
+| `D71.8` | **`repartir_supervision_puesto_funcional_mision` pasos `2`, `5`, `6` y `7` van `T`**: *Deja que* y *Encarga* ponen de mandato el reparto que L43 describe del controller | el reparto y sus dos jefes son del libro, asi que no es la especie *el responsable*; es la figura de `D68.4` |
+| `D71.9` | **dos matices van `P`**: `repartir_supervision` paso `8` se comia el *perhaps* de L43 (*promocionandolo si lo hace bien*), y `entregar_evaluacion_desempeno_tres_claves` paso `2` decia *el pensamiento completo* donde L111 dice *thoughts* y *the right thought* | los dos cambian lo que el libro manda: el primero convierte una posibilidad en orden, el segundo cambia el fin. Si el auditor los lee como matiz sin contenido, `cap_10` baja a `0` de `8` y `cap_14` a `0` de `18` |
+
+## 71.2. TAREA 2: LA FIDELIDAD ENTERA DE LAS `20` (`D.30`, `D.58`)
+
+Los seis capitulos de `fuentes/grove_high_output/` leidos enteros (`cap_07` `105` lineas, `cap_10` `79`, `cap_11` `83`,
+`cap_12` `117`, `cap_13` `77`, `cap_14` `203`, por `wc -l`), y **cada paso de las `20` marcado `T` o `P` con su linea**, una fila por
+paso, en `.v71ext/fidelidad.tsv`. Las fichas se imprimieron para leer con `.v71ext/ver_fichas.py`, que solo lee.
+
+### 71.2.1. Las citas, por instrumento (`D.35`)
+
+`.v71ext/citas.sh`, copia de `.v68ext/citas.sh` con la ruta cambiada y el capitulo leido de la ficha con cualquier numero de dos
+cifras (su cabecera lo dice). Salida entera en `.v71ext/citas_fidelidad.txt`; su ultima linea y las de los cuatro `P`:
+
+    $ bash .v71ext/citas.sh | tail -1
+    filas: 121 | en su linea declarada: 121 | fuera: 0
+    $ grep -n -o -F 'Your general planning process should consist of analogous thinking' fuentes/grove_high_output/cap_07.md    # planificar_tres_pasos_demanda_estado_brecha paso 1
+    19:Your general planning process should consist of analogous thinking
+    $ grep -n -o -F 'Put another way, where will your business be if you do nothing different' fuentes/grove_high_output/cap_07.md    # planificar_tres_pasos_demanda_estado_brecha paso 4
+    19:Put another way, where will your business be if you do nothing different
+    $ grep -n -o -F 'and looks after his career inside finance, promoting him, perhaps, to th' fuentes/grove_high_output/cap_10.md    # repartir_supervision_puesto_funcional_mision paso 8
+    43:and looks after his career inside finance, promoting him, perhaps, to th
+    $ grep -n -o -F 'The aim of communication is to transmit thoughts from the brain of perso' fuentes/grove_high_output/cap_14.md    # entregar_evaluacion_desempeno_tres_claves paso 2
+    111:The aim of communication is to transmit thoughts from the brain of perso
+
+### 71.2.2. Los cuatro PUENTE, corregidos en la bandeja ANTES del barrido (`d031`)
+
+`.v71ext/corregir_t2.py` reescribe el paso y anexa al `resumen_teorico` un parrafo `CORRECCION DECLARADA DE LA VUELTA 71` con el
+texto viejo, el nuevo, la linea del libro que no lo dice y la cifra de relectura vieja al lado de la buena (la forma de la vuelta
+`64` en `construir_grafico_escalonado_pronosticos`). Comprueba antes de escribir que el paso viejo es el que dice y que la ficha se
+serializa como se leyo, y no toca una ficha ya marcada:
+
+| ficha | paso | decia | dice |
+|---|---:|---|---|
+| `planificar_tres_pasos_demanda_estado_brecha` | `1` | ... *analogo al de la fabrica, y no sobre otra cosa.* | ... *analogo al de la fabrica.* |
+| `planificar_tres_pasos_demanda_estado_brecha` | `4` | *Formula ese paso 2 tambien de la otra manera, que es la que obliga a contestarlo: donde* ... | *Formula ese paso 2 tambien de la otra manera: donde* ... |
+| `repartir_supervision_puesto_funcional_mision` | `8` | ... *dentro de la funcion, promocionandolo si lo hace bien.* | ... *dentro de la funcion, quiza promocionandolo si lo hace bien.* |
+| `entregar_evaluacion_desempeno_tres_claves` | `2` | ... *hacer llegar el pensamiento completo de tu cabeza a la del subordinado, y que las palabras son solo el medio para transmitirlo.* | ... *hacer llegar tus pensamientos de tu cabeza a la del subordinado, y que las palabras son solo el medio: el fin es que se comunique el pensamiento correcto.* |
+
+    $ git diff --stat cuarentena/
+     .../entregar_evaluacion_desempeno_tres_claves.json                  | 4 ++--
+     .../planificar_tres_pasos_demanda_estado_brecha.json                | 6 +++---
+     .../repartir_supervision_puesto_funcional_mision.json               | 4 ++--
+     3 files changed, 7 insertions(+), 7 deletions(-)
+
+**Ninguna otra ficha cambia.** Las `20` se normalizan con `aduana.normalizar_candidato` despues de la ultima correccion, y el
+barrido de las `20` se lanzo despues (`71.3`).
+
+### 71.2.3. `PASOS INVENTADOS POR CAPITULO`, seis filas
+
+Copia de `.v68ext/contar_fidelidad.py` con la ruta, el rotulo, el ancho del id y una linea final que nombra el peor capitulo,
+calculada (su cabecera lo dice):
+
+<!-- TALLADO: parcial salida=.v71ext/contar_fidelidad.txt -->
+
+    $ python .v71ext/contar_fidelidad.py | tail -8
+    PASOS INVENTADOS POR CAPITULO, las 20 de cap_07 a cap_14 (COPIA de la vuelta 71 de .v68ext/contar_fidelidad.py, ruta cambiada)
+    cap_07  candidatos 9  pasos 53  T 51  P 2  inventado 3,8 por ciento
+    cap_10  candidatos 1  pasos 8  T 7  P 1  inventado 12,5 por ciento
+    cap_11  candidatos 2  pasos 17  T 17  P 0  inventado 0,0 por ciento
+    cap_12  candidatos 3  pasos 11  T 11  P 0  inventado 0,0 por ciento
+    cap_13  candidatos 2  pasos 14  T 14  P 0  inventado 0,0 por ciento
+    cap_14  candidatos 3  pasos 18  T 17  P 1  inventado 5,6 por ciento
+    peor capitulo: cap_10, 1 de 8, 12,5 por ciento; por encima del 10: cap_10
+
+(La tabla por candidato, entera, en `.v71ext/contar_fidelidad.txt`: `pasos sin fila: 0 [] | filas sin paso: 0 []`.) **El peor
+capitulo es `cap_10`, `1` de `8`, el `12,5` por ciento, POR ENCIMA DEL `10`.** Es una sola ficha de ocho pasos, asi que un solo
+matiz la pasa del tope. **Por `D.58` se releyo `cap_10` entero antes de seguir**: sus `79` lineas otra vez contra los ocho pasos, y
+el recuento sale igual, el paso `8` y ningun otro; los pasos `2`, `5`, `6` y `7` quedan `T` con `D71.8`. **Con los cuatro
+corregidos, lo que entrara lleva `0` PUENTE en los `121` pasos**; la cifra de la relectura sobre el texto de la mineria es `4` de
+`121`.
+
+**`T2` CERRADA.**

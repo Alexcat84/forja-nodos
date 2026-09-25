@@ -1,0 +1,243 @@
+$ grep -n -o -F 'Your general planning process should consist of analogous thinking' fuentes/grove_high_output/cap_07.md    # planificar_tres_pasos_demanda_estado_brecha paso 1 
+19:Your general planning process should consist of analogous thinking
+$ grep -n -o -F 'Step 1 is to establish projected need or demand' fuentes/grove_high_output/cap_07.md    # planificar_tres_pasos_demanda_estado_brecha paso 2 
+19:Step 1 is to establish projected need or demand
+$ grep -n -o -F 'Step 2 is to establish your present status' fuentes/grove_high_output/cap_07.md    # planificar_tres_pasos_demanda_estado_brecha paso 3 
+19:Step 2 is to establish your present status
+$ grep -n -o -F 'Put another way, where will your business be if you do nothing differe' fuentes/grove_high_output/cap_07.md    # planificar_tres_pasos_demanda_estado_brecha paso 4 
+19:Put another way, where will your business be if you do nothing differe
+$ grep -n -o -F 'Step 3 is to compare and reconcile steps 1 and 2' fuentes/grove_high_output/cap_07.md    # planificar_tres_pasos_demanda_estado_brecha paso 5 
+19:Step 3 is to compare and reconcile steps 1 and 2
+$ grep -n -o -F 'Namely, what more' fuentes/grove_high_output/cap_07.md    # planificar_tres_pasos_demanda_estado_brecha paso 6 
+19:Namely, what more
+$ grep -n -o -F 'If you look at your own group within an organization as if it were a s' fuentes/grove_high_output/cap_07.md    # definir_entorno_grupo_clientes_proveedores_competidores paso 1 
+25:If you look at your own group within an organization as if it were a s
+$ grep -n -o -F 'your environment is made up of other such groups that directly influen' fuentes/grove_high_output/cap_07.md    # definir_entorno_grupo_clientes_proveedores_competidores paso 2 
+25:your environment is made up of other such groups that directly influen
+$ grep -n -o -F 'customers who need your services' fuentes/grove_high_output/cap_07.md    # definir_entorno_grupo_clientes_proveedores_competidores paso 3 
+25:customers who need your services
+$ grep -n -o -F 'vendors who are able to provide you with certain capabilities' fuentes/grove_high_output/cap_07.md    # definir_entorno_grupo_clientes_proveedores_competidores paso 4 
+25:vendors who are able to provide you with certain capabilities
+$ grep -n -o -F 'and finally, your competitors' fuentes/grove_high_output/cap_07.md    # definir_entorno_grupo_clientes_proveedores_competidores paso 5 
+25:and finally, your competitors
+$ grep -n -o -F 'but you can compare your service to one like United Parcel as a way to' fuentes/grove_high_output/cap_07.md    # definir_entorno_grupo_clientes_proveedores_competidores paso 6 
+25:but you can compare your service to one like United Parcel as a way to
+$ grep -n -o -F 'You should attempt to determine your customers' fuentes/grove_high_output/cap_07.md    # examinar_entorno_expectativas_tecnologia_proveedores_grupos paso 1 
+27:You should attempt to determine your customers
+$ grep -n -o -F 'You should keep abreast of technological developments like electronic ' fuentes/grove_high_output/cap_07.md    # examinar_entorno_expectativas_tecnologia_proveedores_grupos paso 2 
+27:You should keep abreast of technological developments like electronic 
+$ grep -n -o -F 'You should evaluate the performance of your vendors' fuentes/grove_high_output/cap_07.md    # examinar_entorno_expectativas_tecnologia_proveedores_grupos paso 3 
+27:You should evaluate the performance of your vendors
+$ grep -n -o -F 'You should also evaluate the performance of other groups in the organi' fuentes/grove_high_output/cap_07.md    # examinar_entorno_expectativas_tecnologia_proveedores_grupos paso 4 
+27:You should also evaluate the performance of other groups in the organi
+$ grep -n -o -F 'Does some other group' fuentes/grove_high_output/cap_07.md    # examinar_entorno_expectativas_tecnologia_proveedores_grupos paso 5 
+27:Does some other group
+$ grep -n -o -F 'you need to examine it in two time frames' fuentes/grove_high_output/cap_07.md    # examinar_demanda_entorno_dos_marcos_temporales paso 1 
+29:you need to examine it in two time frames
+$ grep -n -o -F 'What do my customers want from me now' fuentes/grove_high_output/cap_07.md    # examinar_demanda_entorno_dos_marcos_temporales paso 2 
+29:What do my customers want from me now
+$ grep -n -o -F 'Am I satisfying them' fuentes/grove_high_output/cap_07.md    # examinar_demanda_entorno_dos_marcos_temporales paso 3 
+29:Am I satisfying them
+$ grep -n -o -F 'What will they expect from me one year from now' fuentes/grove_high_output/cap_07.md    # examinar_demanda_entorno_dos_marcos_temporales paso 4 
+29:What will they expect from me one year from now
+$ grep -n -o -F 'You need to focus on the difference between what your environment dema' fuentes/grove_high_output/cap_07.md    # examinar_demanda_entorno_dos_marcos_temporales paso 5 
+29:You need to focus on the difference between what your environment dema
+$ grep -n -o -F 'Should you at this stage consider what practical steps you can actuall' fuentes/grove_high_output/cap_07.md    # examinar_demanda_entorno_dos_marcos_temporales paso 6 
+31:Should you at this stage consider what practical steps you can actuall
+$ grep -n -o -F 'if the marketing organization adjusted its demand forecast on the basi' fuentes/grove_high_output/cap_07.md    # examinar_demanda_entorno_dos_marcos_temporales paso 7 
+31:if the marketing organization adjusted its demand forecast on the basi
+$ grep -n -o -F 'You do this by listing your present capabilities and the projects you ' fuentes/grove_high_output/cap_07.md    # determinar_estado_presente_capacidades_proyectos_merma paso 1 
+35:You do this by listing your present capabilities and the projects you 
+$ grep -n -o -F 'be sure to use the same terms, or' fuentes/grove_high_output/cap_07.md    # determinar_estado_presente_capacidades_proyectos_merma paso 2 
+35:be sure to use the same terms, or
+$ grep -n -o -F 'For instance, if your demand is listed in terms of completed product d' fuentes/grove_high_output/cap_07.md    # determinar_estado_presente_capacidades_proyectos_merma paso 3 
+35:For instance, if your demand is listed in terms of completed product d
+$ grep -n -o -F 'You also need to look at timing' fuentes/grove_high_output/cap_07.md    # determinar_estado_presente_capacidades_proyectos_merma paso 4 
+35:You also need to look at timing
+$ grep -n -o -F 'will every project now moving through be completed' fuentes/grove_high_output/cap_07.md    # determinar_estado_presente_capacidades_proyectos_merma paso 5 
+35:will every project now moving through be completed
+$ grep -n -o -F 'Chances are, no, some will get scrapped or aborted, and you have to fa' fuentes/grove_high_output/cap_07.md    # determinar_estado_presente_capacidades_proyectos_merma paso 6 
+35:Chances are, no, some will get scrapped or aborted, and you have to fa
+$ grep -n -o -F 'while it is impossible to be precise in every case, it is prudent to f' fuentes/grove_high_output/cap_07.md    # determinar_estado_presente_capacidades_proyectos_merma paso 7 
+35:while it is impossible to be precise in every case, it is prudent to f
+$ grep -n -o -F 'The final step of planning consists of undertaking new tasks or modify' fuentes/grove_high_output/cap_07.md    # cerrar_brecha_dos_preguntas_estrategia paso 1 
+39:The final step of planning consists of undertaking new tasks or modify
+$ grep -n -o -F 'The first question is, What do you need to do to close the gap' fuentes/grove_high_output/cap_07.md    # cerrar_brecha_dos_preguntas_estrategia paso 2 
+39:The first question is, What do you need to do to close the gap
+$ grep -n -o -F 'The second is, What can you do to close the gap' fuentes/grove_high_output/cap_07.md    # cerrar_brecha_dos_preguntas_estrategia paso 3 
+39:The second is, What can you do to close the gap
+$ grep -n -o -F 'Consider each question separately' fuentes/grove_high_output/cap_07.md    # cerrar_brecha_dos_preguntas_estrategia paso 4 
+39:Consider each question separately
+$ grep -n -o -F 'and then decide what you actually will do' fuentes/grove_high_output/cap_07.md    # cerrar_brecha_dos_preguntas_estrategia paso 5 
+39:and then decide what you actually will do
+$ grep -n -o -F 'evaluating what effect your actions will have on narrowing the gap, an' fuentes/grove_high_output/cap_07.md    # cerrar_brecha_dos_preguntas_estrategia paso 6 
+39:evaluating what effect your actions will have on narrowing the gap, an
+$ grep -n -o -F 'The set of actions you decide upon is your strategy' fuentes/grove_high_output/cap_07.md    # cerrar_brecha_dos_preguntas_estrategia paso 7 
+39:The set of actions you decide upon is your strategy
+$ grep -n -o -F 'But what is really being influenced here' fuentes/grove_high_output/cap_07.md    # fijar_horizonte_ventana_replanificacion paso 1 
+61:But what is really being influenced here
+$ grep -n -o -F 'you implement only that portion of a plan that lies within the time wi' fuentes/grove_high_output/cap_07.md    # fijar_horizonte_ventana_replanificacion paso 2 
+61:you implement only that portion of a plan that lies within the time wi
+$ grep -n -o -F 'Everything else you can look at again' fuentes/grove_high_output/cap_07.md    # fijar_horizonte_ventana_replanificacion paso 3 
+61:Everything else you can look at again
+$ grep -n -o -F 'We should also be careful not to plan too frequently, allowing ourselv' fuentes/grove_high_output/cap_07.md    # fijar_horizonte_ventana_replanificacion paso 4 
+61:We should also be careful not to plan too frequently, allowing ourselv
+$ grep -n -o -F 'In other words, we need the feedback that will be indispensable to our' fuentes/grove_high_output/cap_07.md    # fijar_horizonte_ventana_replanificacion paso 5 
+61:In other words, we need the feedback that will be indispensable to our
+$ grep -n -o -F 'A successful MBO system needs only to answer two questions' fuentes/grove_high_output/cap_07.md    # contestar_dos_preguntas_direccion_objetivos paso 1 
+71:A successful MBO system needs only to answer two questions
+$ grep -n -o -F 'Where do I want to go' fuentes/grove_high_output/cap_07.md    # contestar_dos_preguntas_direccion_objetivos paso 2 
+73:Where do I want to go
+$ grep -n -o -F 'The answer provides the objective' fuentes/grove_high_output/cap_07.md    # contestar_dos_preguntas_direccion_objetivos paso 3 
+73:The answer provides the objective
+$ grep -n -o -F 'How will I pace myself to see if I am getting there' fuentes/grove_high_output/cap_07.md    # contestar_dos_preguntas_direccion_objetivos paso 4 
+75:How will I pace myself to see if I am getting there
+$ grep -n -o -F 'The answer gives us milestones, or key results' fuentes/grove_high_output/cap_07.md    # contestar_dos_preguntas_direccion_objetivos paso 5 
+75:The answer gives us milestones, or key results
+$ grep -n -o -F 'MBO is largely designed to provide feedback relevant to the specific t' fuentes/grove_high_output/cap_07.md    # fijar_periodo_direccion_objetivos_retroalimentacion paso 1 
+79:MBO is largely designed to provide feedback relevant to the specific t
+$ grep -n -o -F 'it should tell us how we are doing so we can make adjustments in whate' fuentes/grove_high_output/cap_07.md    # fijar_periodo_direccion_objetivos_retroalimentacion paso 2 
+79:it should tell us how we are doing so we can make adjustments in whate
+$ grep -n -o -F 'For the feedback to be effective, it must be received very soon after ' fuentes/grove_high_output/cap_07.md    # fijar_periodo_direccion_objetivos_retroalimentacion paso 3 
+79:For the feedback to be effective, it must be received very soon after 
+$ grep -n -o -F 'Accordingly, an MBO system should set objectives for a relatively shor' fuentes/grove_high_output/cap_07.md    # fijar_periodo_direccion_objetivos_retroalimentacion paso 4 
+79:Accordingly, an MBO system should set objectives for a relatively shor
+$ grep -n -o -F 'if we plan on a yearly basis, the corresponding MBO system' fuentes/grove_high_output/cap_07.md    # fijar_periodo_direccion_objetivos_retroalimentacion paso 5 
+79:if we plan on a yearly basis, the corresponding MBO system
+$ grep -n -o -F 'To make hybrid organizations work, you need a way to coordinate the mi' fuentes/grove_high_output/cap_10.md    # repartir_supervision_puesto_funcional_mision paso 1 
+43:To make hybrid organizations work, you need a way to coordinate the mi
+$ grep -n -o -F 'His professional methods, practices, and standards are set by the func' fuentes/grove_high_output/cap_10.md    # repartir_supervision_puesto_funcional_mision paso 2 
+43:His professional methods, practices, and standards are set by the func
+$ grep -n -o -F 'Consequently, the controller for a business unit should report to some' fuentes/grove_high_output/cap_10.md    # repartir_supervision_puesto_funcional_mision paso 3 
+43:Consequently, the controller for a business unit should report to some
+$ grep -n -o -F 'with the type of supervision reflecting the varying needs of the two' fuentes/grove_high_output/cap_10.md    # repartir_supervision_puesto_funcional_mision paso 4 
+43:with the type of supervision reflecting the varying needs of the two
+$ grep -n -o -F 'The divisional general manager gives the controller mission-oriented p' fuentes/grove_high_output/cap_10.md    # repartir_supervision_puesto_funcional_mision paso 5 
+43:The divisional general manager gives the controller mission-oriented p
+$ grep -n -o -F 'The finance manager makes sure that the controller is trained to do hi' fuentes/grove_high_output/cap_10.md    # repartir_supervision_puesto_funcional_mision paso 6 
+43:The finance manager makes sure that the controller is trained to do hi
+$ grep -n -o -F 'supervises and monitors his technical performance' fuentes/grove_high_output/cap_10.md    # repartir_supervision_puesto_funcional_mision paso 7 
+43:supervises and monitors his technical performance
+$ grep -n -o -F 'and looks after his career inside finance, promoting him, perhaps, to ' fuentes/grove_high_output/cap_10.md    # repartir_supervision_puesto_funcional_mision paso 8 
+43:and looks after his career inside finance, promoting him, perhaps, to 
+$ grep -n -o -F 'There are two variables here: first, the nature of a person' fuentes/grove_high_output/cap_11.md    # elegir_modo_control_motivacion_factor_cua paso 1 
+57:There are two variables here: first, the nature of a person
+$ grep -n -o -F 'An imaginary composite index can be applied to measure an environment' fuentes/grove_high_output/cap_11.md    # elegir_modo_control_motivacion_factor_cua paso 2 
+57:An imaginary composite index can be applied to measure an environment
+$ grep -n -o -F 'It is our task as managers to identify which mode of control is most a' fuentes/grove_high_output/cap_11.md    # elegir_modo_control_motivacion_factor_cua paso 3 
+59:It is our task as managers to identify which mode of control is most a
+$ grep -n -o -F 'The individual motivation can run from self-interest to group-interest' fuentes/grove_high_output/cap_11.md    # elegir_modo_control_motivacion_factor_cua paso 4 
+61:The individual motivation can run from self-interest to group-interest
+$ grep -n -o -F 'When self-interest is high and the CUA factor is low, the most appropr' fuentes/grove_high_output/cap_11.md    # elegir_modo_control_motivacion_factor_cua paso 5 
+61:When self-interest is high and the CUA factor is low, the most appropr
+$ grep -n -o -F 'As individual motivation moves toward group interest, the contractual ' fuentes/grove_high_output/cap_11.md    # elegir_modo_control_motivacion_factor_cua paso 6 
+61:As individual motivation moves toward group interest, the contractual 
+$ grep -n -o -F 'When group-interest orientation and the CUA factor are both high, the ' fuentes/grove_high_output/cap_11.md    # elegir_modo_control_motivacion_factor_cua paso 7 
+61:When group-interest orientation and the CUA factor are both high, the 
+$ grep -n -o -F 'when the CUA factor is high and individual motivation is based on self' fuentes/grove_high_output/cap_11.md    # elegir_modo_control_motivacion_factor_cua paso 8 
+61:when the CUA factor is high and individual motivation is based on self
+$ grep -n -o -F 'What is his motivation' fuentes/grove_high_output/cap_11.md    # escalonar_complejidad_puesto_empleado_nuevo paso 1 
+63:What is his motivation
+$ grep -n -o -F 'So you should give him a clearly structured job with a low CUA factor' fuentes/grove_high_output/cap_11.md    # escalonar_complejidad_puesto_empleado_nuevo paso 2 
+63:So you should give him a clearly structured job with a low CUA factor
+$ grep -n -o -F 'If he does well, he will begin to feel more at home, worry less about ' fuentes/grove_high_output/cap_11.md    # escalonar_complejidad_puesto_empleado_nuevo paso 3 
+63:If he does well, he will begin to feel more at home, worry less about 
+$ grep -n -o -F 'The employee can then be promoted into a more complex, uncertain, ambi' fuentes/grove_high_output/cap_11.md    # escalonar_complejidad_puesto_empleado_nuevo paso 4 
+63:The employee can then be promoted into a more complex, uncertain, ambi
+$ grep -n -o -F 'As time passes, he will continue to gain an increasing amount of share' fuentes/grove_high_output/cap_11.md    # escalonar_complejidad_puesto_empleado_nuevo paso 5 
+63:As time passes, he will continue to gain an increasing amount of share
+$ grep -n -o -F 'This is why promotion from within tends to be the approach favored by ' fuentes/grove_high_output/cap_11.md    # escalonar_complejidad_puesto_empleado_nuevo paso 6 
+63:This is why promotion from within tends to be the approach favored by 
+$ grep -n -o -F 'Bring young people in at relatively low-level, well-defined jobs with ' fuentes/grove_high_output/cap_11.md    # escalonar_complejidad_puesto_empleado_nuevo paso 7 
+63:Bring young people in at relatively low-level, well-defined jobs with 
+$ grep -n -o -F 'and over time they will share experiences with their peers, supervisor' fuentes/grove_high_output/cap_11.md    # escalonar_complejidad_puesto_empleado_nuevo paso 8 
+63:and over time they will share experiences with their peers, supervisor
+$ grep -n -o -F 'They will gradually accept, even flourish in, the complex world of mul' fuentes/grove_high_output/cap_11.md    # escalonar_complejidad_puesto_empleado_nuevo paso 9 
+63:They will gradually accept, even flourish in, the complex world of mul
+$ grep -n -o -F 'When a person is not doing his job, there can only be two reasons for ' fuentes/grove_high_output/cap_12.md    # diagnosticar_capacidad_motivacion_prueba_vida paso 1 
+17:When a person is not doing his job, there can only be two reasons for 
+$ grep -n -o -F 'To determine which, we can employ a simple mental test: if the person' fuentes/grove_high_output/cap_12.md    # diagnosticar_capacidad_motivacion_prueba_vida paso 2 
+17:To determine which, we can employ a simple mental test: if the person
+$ grep -n -o -F 'If the answer is yes, that person is not motivated' fuentes/grove_high_output/cap_12.md    # diagnosticar_capacidad_motivacion_prueba_vida paso 3 
+17:If the answer is yes, that person is not motivated
+$ grep -n -o -F 'if the answer is no, he is not capable' fuentes/grove_high_output/cap_12.md    # diagnosticar_capacidad_motivacion_prueba_vida paso 4 
+17:if the answer is no, he is not capable
+$ grep -n -o -F 'A simple test can be used to determine where someone is in the motivat' fuentes/grove_high_output/cap_12.md    # diagnosticar_nivel_motivacion_reaccion_aumento_salario paso 1 
+85:A simple test can be used to determine where someone is in the motivat
+$ grep -n -o -F 'If the absolute sum of a raise in salary an individual receives is imp' fuentes/grove_high_output/cap_12.md    # diagnosticar_nivel_motivacion_reaccion_aumento_salario paso 2 
+85:If the absolute sum of a raise in salary an individual receives is imp
+$ grep -n -o -F 'If, however, what matters to him is how his raise stacks up against wh' fuentes/grove_high_output/cap_12.md    # diagnosticar_nivel_motivacion_reaccion_aumento_salario paso 3 
+85:If, however, what matters to him is how his raise stacks up against wh
+$ grep -n -o -F 'When the need to stretch is not spontaneous, management needs to creat' fuentes/grove_high_output/cap_12.md    # fijar_meta_direccion_objetivos_mitad_probabilidad paso 1 
+75:When the need to stretch is not spontaneous, management needs to creat
+$ grep -n -o -F 'In an MBO system, for example, objectives should be set at a point hig' fuentes/grove_high_output/cap_12.md    # fijar_meta_direccion_objetivos_mitad_probabilidad paso 2 
+75:In an MBO system, for example, objectives should be set at a point hig
+$ grep -n -o -F 'Output will tend to be greater when everybody strives for a level of a' fuentes/grove_high_output/cap_12.md    # fijar_meta_direccion_objetivos_mitad_probabilidad paso 3 
+75:Output will tend to be greater when everybody strives for a level of a
+$ grep -n -o -F 'Such goal-setting is extremely important if what you want is peak perf' fuentes/grove_high_output/cap_12.md    # fijar_meta_direccion_objetivos_mitad_probabilidad paso 4 
+75:Such goal-setting is extremely important if what you want is peak perf
+$ grep -n -o -F 'In fact, there are pluses and minuses here' fuentes/grove_high_output/cap_13.md    # decidir_amistad_subordinado_prueba_revision_dificil paso 1 
+75:In fact, there are pluses and minuses here
+$ grep -n -o -F 'If the subordinate is a personal friend, the supervisor can move into ' fuentes/grove_high_output/cap_13.md    # decidir_amistad_subordinado_prueba_revision_dificil paso 2 
+75:If the subordinate is a personal friend, the supervisor can move into 
+$ grep -n -o -F 'but the what-when-how mode becomes harder to revert to when necessary' fuentes/grove_high_output/cap_13.md    # decidir_amistad_subordinado_prueba_revision_dificil paso 3 
+75:but the what-when-how mode becomes harder to revert to when necessary
+$ grep -n -o -F 'A test might be to imagine yourself delivering a tough performance rev' fuentes/grove_high_output/cap_13.md    # decidir_amistad_subordinado_prueba_revision_dificil paso 4 
+77:A test might be to imagine yourself delivering a tough performance rev
+$ grep -n -o -F 'Do you cringe at the thought' fuentes/grove_high_output/cap_13.md    # decidir_amistad_subordinado_prueba_revision_dificil paso 5 
+77:Do you cringe at the thought
+$ grep -n -o -F 'If your stomach remains unaffected, you are likely to be someone whose' fuentes/grove_high_output/cap_13.md    # decidir_amistad_subordinado_prueba_revision_dificil paso 6 
+77:If your stomach remains unaffected, you are likely to be someone whose
+$ grep -n -o -F 'That variable is the task-relevant maturity' fuentes/grove_high_output/cap_13.md    # elegir_estilo_direccion_madurez_relevante_tarea paso 1 
+19:That variable is the task-relevant maturity
+$ grep -n -o -F 'Moreover, all this is very specific to the task at hand' fuentes/grove_high_output/cap_13.md    # elegir_estilo_direccion_madurez_relevante_tarea paso 2 
+19:Moreover, all this is very specific to the task at hand
+$ grep -n -o -F 'but if the pace of the job accelerates or if the job itself abruptly c' fuentes/grove_high_output/cap_13.md    # elegir_estilo_direccion_madurez_relevante_tarea paso 3 
+23:but if the pace of the job accelerates or if the job itself abruptly c
+$ grep -n -o -F 'Specifically, when the TRM is low, the most effective approach is one ' fuentes/grove_high_output/cap_13.md    # elegir_estilo_direccion_madurez_relevante_tarea paso 4 
+25:Specifically, when the TRM is low, the most effective approach is one 
+$ grep -n -o -F 'As the TRM of the subordinate grows, the most effective style moves fr' fuentes/grove_high_output/cap_13.md    # elegir_estilo_direccion_madurez_relevante_tarea paso 5 
+25:As the TRM of the subordinate grows, the most effective style moves fr
+$ grep -n -o -F 'As the TRM becomes even greater, the effective management style change' fuentes/grove_high_output/cap_13.md    # elegir_estilo_direccion_madurez_relevante_tarea paso 6 
+25:As the TRM becomes even greater, the effective management style change
+$ grep -n -o -F 'But regardless of what the TRM may be, the manager should always monit' fuentes/grove_high_output/cap_13.md    # elegir_estilo_direccion_madurez_relevante_tarea paso 7 
+25:But regardless of what the TRM may be, the manager should always monit
+$ grep -n -o -F 'A word of caution is in order: do not make a value judgment and consid' fuentes/grove_high_output/cap_13.md    # elegir_estilo_direccion_madurez_relevante_tarea paso 8 
+27:A word of caution is in order: do not make a value judgment and consid
+$ grep -n -o -F 'You must level with your subordinate' fuentes/grove_high_output/cap_14.md    # entregar_evaluacion_desempeno_tres_claves paso 1 
+109:You must level with your subordinate
+$ grep -n -o -F 'The aim of communication is to transmit thoughts from the brain of per' fuentes/grove_high_output/cap_14.md    # entregar_evaluacion_desempeno_tres_claves paso 2 
+111:The aim of communication is to transmit thoughts from the brain of per
+$ grep -n -o -F 'Is it enough to have your subordinate paraphrase your words? I don' fuentes/grove_high_output/cap_14.md    # entregar_evaluacion_desempeno_tres_claves paso 3 
+113:Is it enough to have your subordinate paraphrase your words? I don
+$ grep -n -o -F 'employing your entire arsenal of sensory capabilities to make certain ' fuentes/grove_high_output/cap_14.md    # entregar_evaluacion_desempeno_tres_claves paso 4 
+115:employing your entire arsenal of sensory capabilities to make certain 
+$ grep -n -o -F 'So your own insecurities, anxieties, guilt, or whatever should be kept' fuentes/grove_high_output/cap_14.md    # entregar_evaluacion_desempeno_tres_claves paso 5 
+119:So your own insecurities, anxieties, guilt, or whatever should be kept
+$ grep -n -o -F 'You should work to control these emotions so that they don' fuentes/grove_high_output/cap_14.md    # entregar_evaluacion_desempeno_tres_claves paso 6 
+119:You should work to control these emotions so that they don
+$ grep -n -o -F 'A poor performer has a strong tendency to ignore his problem' fuentes/grove_high_output/cap_14.md    # guiar_subordinado_etapas_resistencia_desempeno paso 1 
+167:A poor performer has a strong tendency to ignore his problem
+$ grep -n -o -F 'Here a manager needs facts and examples so that he can demonstrate its' fuentes/grove_high_output/cap_14.md    # guiar_subordinado_etapas_resistencia_desempeno paso 2 
+167:Here a manager needs facts and examples so that he can demonstrate its
+$ grep -n -o -F 'Evidence can overcome resistance here as well' fuentes/grove_high_output/cap_14.md    # guiar_subordinado_etapas_resistencia_desempeno paso 3 
+167:Evidence can overcome resistance here as well
+$ grep -n -o -F 'Instead he will blame others, a standard defense mechanism' fuentes/grove_high_output/cap_14.md    # guiar_subordinado_etapas_resistencia_desempeno paso 4 
+167:Instead he will blame others, a standard defense mechanism
+$ grep -n -o -F 'The supervisor should keep track of what stage things are in' fuentes/grove_high_output/cap_14.md    # guiar_subordinado_etapas_resistencia_desempeno paso 5 
+171:The supervisor should keep track of what stage things are in
+$ grep -n -o -F 'If it becomes clear that you are not going to get your subordinate pas' fuentes/grove_high_output/cap_14.md    # guiar_subordinado_etapas_resistencia_desempeno paso 6 
+179:If it becomes clear that you are not going to get your subordinate pas
+$ grep -n -o -F 'You should scan material such as progress reports, performance against' fuentes/grove_high_output/cap_14.md    # preparar_resena_mixta_hoja_trabajo paso 1 
+129:You should scan material such as progress reports, performance against
+$ grep -n -o -F 'Then sit down with a blank piece of paper' fuentes/grove_high_output/cap_14.md    # preparar_resena_mixta_hoja_trabajo paso 2 
+129:Then sit down with a blank piece of paper
+$ grep -n -o -F 'When you have run out of items, you can put all of your supporting doc' fuentes/grove_high_output/cap_14.md    # preparar_resena_mixta_hoja_trabajo paso 3 
+129:When you have run out of items, you can put all of your supporting doc
+$ grep -n -o -F 'look for relationships between the various items listed' fuentes/grove_high_output/cap_14.md    # preparar_resena_mixta_hoja_trabajo paso 4 
+131:look for relationships between the various items listed
+$ grep -n -o -F 'When you find such relationships, you can start calling them' fuentes/grove_high_output/cap_14.md    # preparar_resena_mixta_hoja_trabajo paso 5 
+131:When you find such relationships, you can start calling them
+$ grep -n -o -F 'ask yourself if your subordinate will be able to remember all of the m' fuentes/grove_high_output/cap_14.md    # preparar_resena_mixta_hoja_trabajo paso 6 
+131:ask yourself if your subordinate will be able to remember all of the m
+filas: 121 | en su linea declarada: 121 | fuera: 0
