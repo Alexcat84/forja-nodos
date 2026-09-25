@@ -1044,3 +1044,7 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-25 | facilitar_expresion_subordinado_pregunta_mas | otro_idioma | one-on-one | ingles | - |
 | 2026-09-25 | facilitar_expresion_subordinado_pregunta_mas | otro_idioma | Principle of Didactic Management | ingles | - |
 | 2026-09-25 | facilitar_expresion_subordinado_pregunta_mas | otro_idioma | Ask one more question | ingles | - |
+| 2026-09-25 | tomar_notas_copia_guion_reunion_individual | nombre_largo | Las pistas mecanicas de la reunion individual eficaz: las dos copias del guion, las notas que los dos toman sobre ellas, lo que la nota hace en la cabeza del que la toma, lo que el escribirlo simboliza como compromiso, y el seguimiento que las notas del supervisor permiten en la reunion siguiente | castellano | - |
+| 2026-09-25 | tomar_notas_copia_guion_reunion_individual | otro_idioma | one-on-one | ingles | - |
+| 2026-09-25 | tomar_notas_copia_guion_reunion_individual | otro_idioma | outline | ingles | - |
+| 2026-09-25 | tomar_notas_copia_guion_reunion_individual | otro_idioma | mechanical hints | ingles | - |

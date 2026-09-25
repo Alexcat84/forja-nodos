@@ -1,0 +1,81 @@
+fila 08, tomar_notas_copia_guion_reunion_individual, lineas --veredicto: 7
+  --veredicto conducir_reunion_individual_telefono_distancia|CONTINUA|madre=tomar_notas_copia_guion_reunion_individual|El vecino lleva este procedimiento a la reunion por telefono a larga distancia (L55, the supervisor must have the outline before the meeting begins, both parties should take notes, and so on): su paso 3 es el paso 2 de aqui, y la senial de paso (0,675) los casa. Su condicion, la organizacion repartida y la reunion por telefono, parte de la reunion con guion y notas que este monta, y anade lo que este no tiene: que la toma de notas no funciona igual sin ver al otro (paso 4) y el intercambio de notas al acabar (paso 5). No lo repite: fuera queda procedimiento en el hijo.
+  --veredicto alentar_asuntos_corazon_vigilar_final_reunion|SANO|Tio y sobrino: la senial casa el paso 7 de aqui, el seguimiento en la reunion siguiente, con el paso 1 del vecino, alentar los asuntos de corazon. Notas de las dos partes sobre la copia del guion (L49) contra los asuntos de corazon y el que llega al final (L53); ninguno usa el producto del otro.
+  --veredicto acumular_asuntos_importantes_fichero_espera|SANO|El mismo par que el fichero de espera lee desde su lado: tio y sobrino.
+  --veredicto fijar_frecuencia_reunion_individual_madurez_tarea|SANO|El mismo par que la frecuencia lee desde su lado: tio y sobrino.
+  --veredicto programar_reunion_individual_cadena|SANO|Tio y sobrino: la senial casa el paso 5 de aqui, lo que simboliza escribirlo, con el paso 4 del vecino, el horario fijo que cae en vacaciones. Notas y seguimiento en la reunion siguiente (L49) contra fijar la siguiente al terminar la que se tiene (L57); el vecino no usa las notas ni este la cadena.
+  --veredicto preparar_guion_reunion_individual_subordinado|CONTINUA|madre=preparar_guion_reunion_individual_subordinado|El mismo par que el guion lee desde su lado y con la misma direccion: este candidato reparte a las dos partes la copia del guion que la madre hace preparar al subordinado (L41, L49) y trae siete pasos propios que la madre no tiene.
+  --veredicto facilitar_expresion_subordinado_pregunta_mas|SANO|El mismo par que el papel del supervisor lee desde su lado: tio y sobrino.
+inicio 2026-09-25 09:18:41
+======================================================================
+ADUANA DE INSERCION, candidato 'tomar_notas_copia_guion_reunion_individual'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (397 del grafo mas 82 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 7. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino conducir_reunion_individual_telefono_distancia  [Conducir la reunion individual por telefono a distancia con el guion por delante, notas de las dos partes e intercambio de notas al terminar]
+    levantada por: similitud_texto, paso_contra_nodo
+    similitud_texto    0.472 (umbral 0.35)
+    familia_id         0.222 (umbral 0.30)
+    paso_contra_nodo   0.675 (umbral 0.60)
+    paso 2 del candidato contra paso 3 de conducir_reunion_individual_telefono_distancia
+
+  vecino alentar_asuntos_corazon_vigilar_final_reunion  [Alentar en la reunion individual los asuntos de corazon a corazon con las tres preguntas del libro, y ponerse en guardia contra el que se suelta cerca del final]
+    levantada por: similitud_texto
+    similitud_texto    0.515 (umbral 0.35)
+    familia_id         0.091 (umbral 0.30)
+    paso_contra_nodo   0.553 (umbral 0.60)
+    paso 7 del candidato contra paso 1 de alentar_asuntos_corazon_vigilar_final_reunion
+
+  vecino acumular_asuntos_importantes_fichero_espera  [Abrir un fichero de espera compartido donde las dos partes acumulan lo importante que no es del todo urgente, para tratarlo en la reunion siguiente]
+    levantada por: similitud_texto
+    similitud_texto    0.503 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.549 (umbral 0.60)
+    paso 1 del candidato contra paso 1 de acumular_asuntos_importantes_fichero_espera
+
+  vecino fijar_frecuencia_reunion_individual_madurez_tarea  [Fijar cada cuanto tienes la reunion individual con cada subordinado segun su madurez relevante para la tarea, y ajustarla por lo deprisa que cambia su area]
+    levantada por: similitud_texto
+    similitud_texto    0.355 (umbral 0.35)
+    familia_id         0.200 (umbral 0.30)
+    paso_contra_nodo   0.506 (umbral 0.60)
+    paso 5 del candidato contra paso 5 de fijar_frecuencia_reunion_individual_madurez_tarea
+
+  vecino programar_reunion_individual_cadena  [Programar la reunion individual en cadena, fijando la siguiente en el momento en que termina la que se esta teniendo]
+    levantada por: similitud_texto
+    similitud_texto    0.468 (umbral 0.35)
+    familia_id         0.250 (umbral 0.30)
+    paso_contra_nodo   0.469 (umbral 0.60)
+    paso 5 del candidato contra paso 4 de programar_reunion_individual_cadena
+
+  vecino preparar_guion_reunion_individual_subordinado  [Tratar la reunion individual como reunion del subordinado y hacer que sea el quien prepare el guion y pasee al supervisor por el material]
+    levantada por: similitud_texto, familia_id
+    similitud_texto    0.400 (umbral 0.35)
+    familia_id         0.375 (umbral 0.30)
+    paso_contra_nodo   0.466 (umbral 0.60)
+    paso 5 del candidato contra paso 4 de preparar_guion_reunion_individual_subordinado
+
+  vecino facilitar_expresion_subordinado_pregunta_mas  [Hacer del supervisor en la reunion individual el que facilita, aprende y orienta, y sacar lo que falta aplicando el principio de preguntar una vez mas]
+    levantada por: similitud_texto
+    similitud_texto    0.432 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.412 (umbral 0.60)
+    paso 6 del candidato contra paso 6 de facilitar_expresion_subordinado_pregunta_mas
+  ARISTA EN COLA, no cableada: tomar_notas_copia_guion_reunion_individual > conducir_reunion_individual_telefono_distancia
+    el otro extremo espera en la bandeja (D.29). El veredicto CONTINUA queda escrito y la arista se cablea cuando entre:
+      python forja.py arista --madre tomar_notas_copia_guion_reunion_individual --hijo conducir_reunion_individual_telefono_distancia --paso <n> --razon "..."
+  arista madre-hijo cableada y escrita RESUELTA: preparar_guion_reunion_individual_subordinado > tomar_notas_copia_guion_reunion_individual
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 398
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 7
+  ARISTAS EN COLA, sin cablear: 1
+    tomar_notas_copia_guion_reunion_individual > conducir_reunion_individual_telefono_distancia
+    D.29: van a un bloque propio y titulado del reporte, y se cablean con `forja.py arista` cuando el otro extremo entre.
+
+======================================================================
+fin 2026-09-25 09:59:22 | codigo de salida 0 | 2441.0 s
