@@ -1029,3 +1029,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-25 | usar_tres_clases_reunion_proceso | otro_idioma | one-on-one | ingles | - |
 | 2026-09-25 | usar_tres_clases_reunion_proceso | otro_idioma | staff meeting | ingles | - |
 | 2026-09-25 | usar_tres_clases_reunion_proceso | otro_idioma | operation review | ingles | - |
+| 2026-09-25 | fijar_frecuencia_reunion_individual_madurez_tarea | nombre_largo | La frecuencia de la reunion individual: la madurez relevante para el puesto o para la tarea como respuesta a cada cuanto, con sus dos frecuencias y con la velocidad de cambio del area como segunda consideracion | castellano | - |
+| 2026-09-25 | fijar_frecuencia_reunion_individual_madurez_tarea | otro_idioma | one-on-one | ingles | - |
+| 2026-09-25 | fijar_frecuencia_reunion_individual_madurez_tarea | otro_idioma | task-relevant maturity | ingles | - |
