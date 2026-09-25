@@ -61986,3 +61986,21 @@ La aduana de hoy: **BLOQUEARIA** con `6` vecino(s) contra `479`; lineas `--vered
 **Arista cableada por la aduana en el acto**: `tomar_notas_copia_guion_reunion_individual > conducir_reunion_individual_telefono_distancia`
 
 **Los seis vecinos son los seis de su bloque y las seis lineas se pasaron tal cual**; ninguno nuevo contra `479` (`400` del grafo mas `79` de bandejas, linea `12` de su salida), ninguno que dejara de levantarse. **La aduana cablea en el acto la `CONTINUA` que la fila `8` dejo en cola**, `tomar_notas_copia_guion_reunion_individual > conducir_reunion_individual_telefono_distancia` (linea `59` de su salida): **las dos `CONTINUA` con `madre=` de la tanda viven ya en el grafo**, y `D70.4` queda ejecutado.
+
+### Fila `12`: `programar_reunion_individual_cadena`, **INSERTADO** en `3593.2` s, codigo `0`, commit `157b79e`
+
+La aduana de hoy: **BLOQUEARIA** con `7` vecino(s) contra `479`; lineas `--veredicto` pasadas: `7`. Salida entera en `.v70ext/insertar_12_programar_reunion_individual_cadena.txt`.
+
+<!-- TALLADO: parcial salida=.v70ext/insertar_12_programar_reunion_individual_cadena.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `alentar_asuntos_corazon_vigilar_final_reunion` | similitud_texto | 0.474 | 0.111 | 0.548 | SANO |
+| `conducir_reunion_individual_telefono_distancia` | similitud_texto | 0.474 | 0.286 | 0.463 | SANO |
+| `tomar_notas_copia_guion_reunion_individual` | similitud_texto | 0.472 | 0.250 | 0.449 | SANO |
+| `acumular_asuntos_importantes_fichero_espera` | similitud_texto | 0.431 | 0.000 | 0.465 | SANO |
+| `facilitar_expresion_subordinado_pregunta_mas` | similitud_texto | 0.449 | 0.000 | 0.426 | SANO |
+| `preguntar_conducir_reunion_individual` | familia_id | 0.080 | 0.333 | 0.418 | SANO |
+| `dirigir_reunion_individual_semanal` | familia_id | 0.049 | 0.333 | 0.350 | SANO |
+
+**Los siete vecinos son los siete de su bloque y las siete lineas se pasaron tal cual**; ninguno nuevo contra `479` (`401` del grafo mas `78` de bandejas, linea `13` de su salida), ninguno que dejara de levantarse. Sin arista (`D69.1`). **Con esta fila, los `12` de `cap_05` estan en el grafo.**
