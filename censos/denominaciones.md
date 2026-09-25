@@ -1037,3 +1037,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-25 | preparar_guion_reunion_individual_subordinado | nombre_largo | La reunion individual es del subordinado: su agenda y su tono los pone el, y el guion que prepara sirve a las dos partes, porque le obliga a pensar de antemano y deja al supervisor marcar el ritmo | castellano | - |
 | 2026-09-25 | preparar_guion_reunion_individual_subordinado | otro_idioma | one-on-one | ingles | - |
 | 2026-09-25 | preparar_guion_reunion_individual_subordinado | otro_idioma | outline | ingles | - |
+| 2026-09-25 | cubrir_indicadores_problemas_reunion_individual | nombre_largo | El contenido de la reunion individual: las cifras de rendimiento con enfasis en las que avisan de problema, lo importante ocurrido desde la reunion anterior con sus cuatro clases, la intuicion que dispara una mirada a la caja negra de la organizacion, y el criterio que manda sobre todos ellos | castellano | - |
+| 2026-09-25 | cubrir_indicadores_problemas_reunion_individual | otro_idioma | one-on-one | ingles | - |
+| 2026-09-25 | cubrir_indicadores_problemas_reunion_individual | otro_idioma | organizational black box | ingles | - |

@@ -1,0 +1,66 @@
+fila 06, cubrir_indicadores_problemas_reunion_individual, lineas --veredicto: 6
+  --veredicto preparar_guion_reunion_individual_subordinado|SANO|El mismo par que el guion lee desde su lado: hermanos bajo ONE-ON-ONES (DISCUTIBLE D68.9).
+  --veredicto fijar_frecuencia_reunion_individual_madurez_tarea|SANO|El mismo par que la frecuencia lee desde su lado: hermanos.
+  --veredicto fijar_duracion_lugar_reunion_individual|SANO|El mismo par que la duracion lee desde su lado: hermanos.
+  --veredicto usar_tres_clases_reunion_proceso|SANO|El mismo par que la cabeza lee desde su lado (relectura conjunta de la vuelta 69, D68.7): este candidato parte de su propia situacion con el uno a uno en marcha y contesta su propia pregunta del libro (L43, What should be covered in a one-on-one); no usa el saber de cuantas clases de reunion de proceso hay y como se llaman, que es todo lo que la cabeza produce (L23). SANO. Correccion declarada: la linea vieja decia CONTINUA madre=usar_tres_clases_reunion_proceso (DISCUTIBLE D69.1).
+  --veredicto infundir_regularidad_reunion_proceso|SANO|El mismo par que infundir lee desde su lado: del mismo tramo y sin jerarquia (DISCUTIBLE D68.8; razon corregida en la vuelta 69, D69.2).
+  --veredicto facilitar_expresion_subordinado_pregunta_mas|SANO|El mismo par que el papel del supervisor lee desde su lado: hermanos.
+inicio 2026-09-25 07:17:11
+======================================================================
+ADUANA DE INSERCION, candidato 'cubrir_indicadores_problemas_reunion_individual'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (395 del grafo mas 84 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 6. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino preparar_guion_reunion_individual_subordinado  [Tratar la reunion individual como reunion del subordinado y hacer que sea el quien prepare el guion y pasee al supervisor por el material]
+    levantada por: similitud_texto
+    similitud_texto    0.550 (umbral 0.35)
+    familia_id         0.250 (umbral 0.30)
+    paso_contra_nodo   0.459 (umbral 0.60)
+    paso 2 del candidato contra paso 3 de preparar_guion_reunion_individual_subordinado
+
+  vecino fijar_frecuencia_reunion_individual_madurez_tarea  [Fijar cada cuanto tienes la reunion individual con cada subordinado segun su madurez relevante para la tarea, y ajustarla por lo deprisa que cambia su area]
+    levantada por: similitud_texto
+    similitud_texto    0.516 (umbral 0.35)
+    familia_id         0.222 (umbral 0.30)
+    paso_contra_nodo   0.434 (umbral 0.60)
+    paso 1 del candidato contra paso 2 de fijar_frecuencia_reunion_individual_madurez_tarea
+
+  vecino fijar_duracion_lugar_reunion_individual  [Fijar cuanto dura la reunion individual y donde se tiene: una hora como minimo, y en el area de trabajo del subordinado o cerca de ella]
+    levantada por: similitud_texto
+    similitud_texto    0.505 (umbral 0.35)
+    familia_id         0.250 (umbral 0.30)
+    paso_contra_nodo   0.444 (umbral 0.60)
+    paso 8 del candidato contra paso 4 de fijar_duracion_lugar_reunion_individual
+
+  vecino usar_tres_clases_reunion_proceso  [Usar las tres clases de reunion de proceso que el libro cuenta y nombra: el uno a uno, la reunion de personal y la revision de operaciones]
+    levantada por: similitud_texto
+    similitud_texto    0.366 (umbral 0.35)
+    familia_id         0.111 (umbral 0.30)
+    paso_contra_nodo   0.464 (umbral 0.60)
+    paso 10 del candidato contra paso 1 de usar_tres_clases_reunion_proceso
+
+  vecino infundir_regularidad_reunion_proceso  [Infundir regularidad a la reunion de proceso, para poder agrupar en tanda las tareas de mando semejantes y pronosticar el tiempo que piden]
+    levantada por: similitud_texto
+    similitud_texto    0.416 (umbral 0.35)
+    familia_id         0.125 (umbral 0.30)
+    paso_contra_nodo   0.441 (umbral 0.60)
+    paso 2 del candidato contra paso 2 de infundir_regularidad_reunion_proceso
+
+  vecino facilitar_expresion_subordinado_pregunta_mas  [Hacer del supervisor en la reunion individual el que facilita, aprende y orienta, y sacar lo que falta aplicando el principio de preguntar una vez mas]
+    levantada por: similitud_texto
+    similitud_texto    0.363 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.423 (umbral 0.60)
+    paso 2 del candidato contra paso 4 de facilitar_expresion_subordinado_pregunta_mas
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 396
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 6
+
+======================================================================
+fin 2026-09-25 08:27:47 | codigo de salida 0 | 4236.0 s
