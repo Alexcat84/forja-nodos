@@ -62043,3 +62043,27 @@ La aduana de hoy: **BLOQUEARIA** con `2` vecino(s) contra `479`; lineas `--vered
     GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: conducir_etapas_modelo_ideal_decision > ejercer_poder_posicion_etapa_decision_clara
       razon en bitacora/VEREDICTOS.jsonl
 
+
+### Fila `15`: `vencer_sindrome_grupo_pares_autoconfianza`, **INSERTADO** en `747.0` s, codigo `0`, commit `6624591`
+
+La aduana de hoy: **BLOQUEARIA** con `13` vecino(s) contra `479`; lineas `--veredicto` pasadas: `13`. Salida entera en `.v70ext/insertar_15_vencer_sindrome_grupo_pares_autoconfianza.txt`.
+
+<!-- TALLADO: parcial salida=.v70ext/insertar_15_vencer_sindrome_grupo_pares_autoconfianza.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `aprender_resultados_vencer_dos_presiones` | paso_contra_nodo | 0.217 | 0.111 | 0.712 | SANO |
+| `tomar_mando_reunion_pares_presidente_ausente` | similitud_texto | 0.356 | 0.100 | 0.484 | SANO |
+| `decidir_nivel_competente_inferior` | similitud_texto | 0.363 | 0.000 | 0.462 | SANO |
+| `anunciar_decision_inesperada_reconvocar_reunion` | similitud_texto | 0.431 | 0.000 | 0.404 | SANO |
+| `planificar_tres_pasos_demanda_estado_brecha` | similitud_texto | 0.406 | 0.000 | 0.390 | SANO |
+| `responder_primer_aviso_renuncia_subordinado` | similitud_texto | 0.360 | 0.000 | 0.404 | SANO |
+| `cortar_discusion_libre_momento_justo` | similitud_texto | 0.396 | 0.000 | 0.400 | SANO |
+| `definir_entorno_grupo_clientes_proveedores_competidores` | similitud_texto | 0.388 | 0.100 | 0.400 | SANO |
+| `archivar_indicadores_resolver_problemas` | similitud_texto | 0.363 | 0.000 | 0.396 | SANO |
+| `ejercer_poder_posicion_etapa_decision_clara` | similitud_texto | 0.354 | 0.000 | 0.383 | SANO |
+| `supervisar_decision_delegada_preguntas_concretas` | similitud_texto | 0.364 | 0.000 | 0.379 | SANO |
+| `contestar_dos_preguntas_direccion_objetivos` | similitud_texto | 0.370 | 0.000 | 0.360 | SANO |
+| `cerrar_brecha_dos_preguntas_estrategia` | similitud_texto | 0.355 | 0.000 | 0.337 | SANO |
+
+**Los trece vecinos son los trece de su bloque y las trece lineas se pasaron tal cual**; ninguno nuevo contra `479` (`404` del grafo mas `75` de bandejas, linea `19` de su salida), ninguno que dejara de levantarse. Sin arista (`D68.14`, `NO SOSTENGO` con `conducir_etapas`).
