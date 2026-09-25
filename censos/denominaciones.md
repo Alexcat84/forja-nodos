@@ -1056,3 +1056,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-25 | alentar_asuntos_corazon_vigilar_final_reunion | otro_idioma | heart-to-heart issues | ingles | - |
 | 2026-09-25 | alentar_asuntos_corazon_vigilar_final_reunion | otro_idioma | zinger | ingles | - |
 | 2026-09-25 | alentar_asuntos_corazon_vigilar_final_reunion | otro_idioma | one-on-one | ingles | - |
+| 2026-09-25 | conducir_reunion_individual_telefono_distancia | nombre_largo | La reunion individual por telefono a larga distancia, que la dispersion geografica de la organizacion hace necesaria: funciona con el guion en manos del supervisor antes de empezar y con notas de las dos partes, y como no se ven las caras las notas no pueden funcionar igual que en la reunion cara a cara, asi que se intercambian al terminar | castellano | - |
+| 2026-09-25 | conducir_reunion_individual_telefono_distancia | otro_idioma | long-distance telephone one-on-ones | ingles | - |
+| 2026-09-25 | conducir_reunion_individual_telefono_distancia | otro_idioma | outline | ingles | - |
