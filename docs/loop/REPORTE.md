@@ -62114,3 +62114,16 @@ La aduana de hoy: **BLOQUEARIA** con `6` vecino(s) contra `479`; lineas `--vered
     GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: conducir_etapas_modelo_ideal_decision > cortar_discusion_libre_momento_justo
       razon en bitacora/VEREDICTOS.jsonl
 
+
+### Fila `18`: `zanjar_seis_preguntas_decision_adelantado`, **INSERTADO** en `1104.7` s, codigo `0`, commit `cad2877`
+
+La aduana de hoy: **BLOQUEARIA** con `2` vecino(s) contra `479`; lineas `--veredicto` pasadas: `2`. Salida entera en `.v70ext/insertar_18_zanjar_seis_preguntas_decision_adelantado.txt`.
+
+<!-- TALLADO: parcial salida=.v70ext/insertar_18_zanjar_seis_preguntas_decision_adelantado.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `anunciar_decision_inesperada_reconvocar_reunion` | similitud_texto | 0.370 | 0.111 | 0.516 | SANO |
+| `entregar_evaluacion_desempeno_tres_claves` | similitud_texto | 0.370 | 0.000 | 0.394 | SANO |
+
+**Los dos vecinos son los dos de su bloque y las dos lineas se pasaron tal cual**; ninguno nuevo contra `479` (`407` del grafo mas `72` de bandejas, linea `8` de su salida), ninguno que dejara de levantarse. Sin arista: dice cuantas preguntas tiene (seis) y las nombra, y ninguna es un nodo (`D.37`, mirado en `.v68ext/aristas_lectura.txt`).
