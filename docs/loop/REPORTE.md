@@ -62067,3 +62067,18 @@ La aduana de hoy: **BLOQUEARIA** con `13` vecino(s) contra `479`; lineas `--vere
 | `cerrar_brecha_dos_preguntas_estrategia` | similitud_texto | 0.355 | 0.000 | 0.337 | SANO |
 
 **Los trece vecinos son los trece de su bloque y las trece lineas se pasaron tal cual**; ninguno nuevo contra `479` (`404` del grafo mas `75` de bandejas, linea `19` de su salida), ninguno que dejara de levantarse. Sin arista (`D68.14`, `NO SOSTENGO` con `conducir_etapas`).
+
+### Fila `16`: `tomar_mando_reunion_pares_presidente_ausente`, **INSERTADO** en `860.1` s, codigo `0`, commit `ffbc99b`
+
+La aduana de hoy: **BLOQUEARIA** con `4` vecino(s) contra `479`; lineas `--veredicto` pasadas: `4`. Salida entera en `.v70ext/insertar_16_tomar_mando_reunion_pares_presidente_ausente.txt`.
+
+<!-- TALLADO: parcial salida=.v70ext/insertar_16_tomar_mando_reunion_pares_presidente_ausente.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `vencer_sindrome_grupo_pares_autoconfianza` | similitud_texto | 0.351 | 0.100 | 0.472 | SANO |
+| `decidir_nivel_competente_inferior` | similitud_texto | 0.356 | 0.000 | 0.468 | SANO |
+| `anunciar_decision_inesperada_reconvocar_reunion` | similitud_texto | 0.368 | 0.100 | 0.453 | SANO |
+| `priorizar_lista_entrenamiento_subordinados` | similitud_texto | 0.362 | 0.000 | 0.404 | SANO |
+
+**Los cuatro vecinos son los cuatro de su bloque y las cuatro lineas se pasaron tal cual**; ninguno nuevo contra `479` (`405` del grafo mas `74` de bandejas, linea `10` de su salida), ninguno que dejara de levantarse. Sin arista (`D68.14`).
