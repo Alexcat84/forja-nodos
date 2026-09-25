@@ -1020,3 +1020,7 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-24 | canalizar_interrupciones_cartel_hora_oficina | nombre_largo | La alternativa a esconderse: obligar al que interrumpe a decidir si el asunto puede esperar, colgar en la puerta el cartel cuyo texto da el libro, tener despues una hora de oficina abierta, y volver regular lo que era irregular | castellano | - |
 | 2026-09-24 | canalizar_interrupciones_cartel_hora_oficina | otro_idioma | open office hour | ingles | - |
 | 2026-09-24 | canalizar_interrupciones_cartel_hora_oficina | otro_idioma | sign | ingles | - |
+| 2026-09-25 | infundir_regularidad_reunion_proceso | nombre_largo | La regularidad de la reunion de proceso: que los asistentes sepan como se lleva, que asuntos se tratan y que hay que conseguir, para agrupar transacciones en tanda y dejar que tome forma un sistema de control de produccion registrado en los calendarios | castellano | - |
+| 2026-09-25 | infundir_regularidad_reunion_proceso | otro_idioma | process-oriented meeting | ingles | - |
+| 2026-09-25 | infundir_regularidad_reunion_proceso | otro_idioma | batch | ingles | - |
+| 2026-09-25 | infundir_regularidad_reunion_proceso | otro_idioma | production control | ingles | - |
