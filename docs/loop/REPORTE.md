@@ -61802,3 +61802,20 @@ La aduana de hoy: **BLOQUEARIA** con `5` vecino(s) contra `479`; lineas `--vered
 | `fijar_frecuencia_reunion_individual_madurez_tarea` | similitud_texto | 0.404 | 0.100 | 0.420 | SANO |
 
 **Los cinco vecinos son los cinco de su bloque y las cinco lineas se pasaron tal cual**; ninguno nuevo contra `479` (`391` del grafo mas `88` de bandejas, linea `11` de su salida), ninguno que dejara de levantarse. La fila no trae arista: la cabeza de las tres clases queda sin hijos por la relectura conjunta (`ACTA 68` `68.3`).
+
+### Fila `3`: `fijar_frecuencia_reunion_individual_madurez_tarea`, **INSERTADO** en `3566.0` s, codigo `0`, commit `7bb9e37`
+
+La aduana de hoy: **BLOQUEARIA** con `6` vecino(s) contra `479`; lineas `--veredicto` pasadas: `6`. Salida entera en `.v70ext/insertar_03_fijar_frecuencia_reunion_individual_madurez_tarea.txt`.
+
+<!-- TALLADO: parcial salida=.v70ext/insertar_03_fijar_frecuencia_reunion_individual_madurez_tarea.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `fijar_duracion_lugar_reunion_individual` | similitud_texto, familia_id | 0.629 | 0.375 | 0.435 | SANO |
+| `preparar_guion_reunion_individual_subordinado` | similitud_texto | 0.606 | 0.222 | 0.496 | SANO |
+| `cubrir_indicadores_problemas_reunion_individual` | similitud_texto | 0.511 | 0.222 | 0.436 | SANO |
+| `infundir_regularidad_reunion_proceso` | similitud_texto | 0.472 | 0.111 | 0.438 | SANO |
+| `tomar_notas_copia_guion_reunion_individual` | similitud_texto | 0.359 | 0.200 | 0.469 | SANO |
+| `usar_tres_clases_reunion_proceso` | similitud_texto | 0.410 | 0.100 | 0.428 | SANO |
+
+**Los seis vecinos son los seis de su bloque y las seis lineas se pasaron tal cual**; ninguno nuevo contra `479` (`392` del grafo mas `87` de bandejas, linea `12` de su salida), ninguno que dejara de levantarse. La fila no trae arista: la de `D68.15` (`elegir_estilo_direccion_madurez_relevante_tarea`, en la bandeja de `cap_13`) no es de esta vuelta (`d170`), y hoy tampoco la levanta la senal.
