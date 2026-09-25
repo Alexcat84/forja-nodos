@@ -1068,3 +1068,7 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-25 | conducir_etapas_modelo_ideal_decision | otro_idioma | free discussion | ingles | - |
 | 2026-09-25 | conducir_etapas_modelo_ideal_decision | otro_idioma | clear decision | ingles | - |
 | 2026-09-25 | conducir_etapas_modelo_ideal_decision | otro_idioma | full support | ingles | - |
+| 2026-09-25 | ejercer_poder_posicion_etapa_decision_clara | nombre_largo | La condicion y la prohibicion del poder de posicion: legitimo, y a veces inevitable, cuando se alcanza la etapa de decision clara y no hay consenso; no legitimo y destructivo un minuto antes | castellano | - |
+| 2026-09-25 | ejercer_poder_posicion_etapa_decision_clara | otro_idioma | position-power authority | ingles | - |
+| 2026-09-25 | ejercer_poder_posicion_etapa_decision_clara | otro_idioma | peer-plus-one | ingles | - |
+| 2026-09-25 | ejercer_poder_posicion_etapa_decision_clara | otro_idioma | position-power prejudice | ingles | - |

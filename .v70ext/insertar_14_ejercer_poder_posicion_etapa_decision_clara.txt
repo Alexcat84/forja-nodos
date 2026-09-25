@@ -1,0 +1,34 @@
+fila 14, ejercer_poder_posicion_etapa_decision_clara, lineas --veredicto: 2
+  --veredicto cortar_discusion_libre_momento_justo|SANO|Hermanos bajo Striving for the Output (L59) (DISCUTIBLE D68.13): este dice que el de mayor rango ejerce el poder de su puesto al llegar a la decision clara sin consenso, y nunca antes (L61); el vecino fija el momento de pasar de la discusion a la decision, ni antes de oir los asuntos de verdad ni despues de oirlo todo (L63). Se tocan en el paso 4 de aqui, que es el paso 5 del vecino (entra tu y decide), y en el paso 7 de aqui, la reticencia que alarga la discusion mas alla del punto optimo; pero este no da el criterio del momento ni el vecino la legitimidad de la autoridad. Los dos despliegan la transicion que nombra el paso 5 de conducir_etapas_modelo_ideal_decision, y fuera queda procedimiento en los dos lados.
+  --veredicto anunciar_decision_inesperada_reconvocar_reunion|SANO|Del mismo capitulo y sin jerarquia entre ellos: la senial casa el paso 6 de aqui, la reticencia a dar ordenes, con el paso 4 del vecino, el tiempo que la gente necesita para ajustarse. El de mayor rango decide al llegar a la decision clara sin consenso (L61); el vecino anuncia una palabra final muy distinta de lo que el grupo esperaba y reconvoca (L93), y su condicion no es la falta de consenso sino la distancia con lo esperado. Ninguno usa el producto del otro.
+inicio 2026-09-25 13:52:55
+======================================================================
+ADUANA DE INSERCION, candidato 'ejercer_poder_posicion_etapa_decision_clara'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (403 del grafo mas 76 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 2. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino cortar_discusion_libre_momento_justo  [Cortar la discusion libre en el momento justo: ni antes de oir los asuntos de verdad, ni cuando ya se ha oido todo]
+    levantada por: similitud_texto
+    similitud_texto    0.375 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.444 (umbral 0.60)
+    paso 5 del candidato contra paso 7 de cortar_discusion_libre_momento_justo
+
+  vecino anunciar_decision_inesperada_reconvocar_reunion  [Anunciar una decision radicalmente distinta de lo que el grupo esperaba, y reconvocar la reunion en vez de marcharse]
+    levantada por: similitud_texto
+    similitud_texto    0.365 (umbral 0.35)
+    familia_id         0.100 (umbral 0.30)
+    paso_contra_nodo   0.420 (umbral 0.60)
+    paso 6 del candidato contra paso 4 de anunciar_decision_inesperada_reconvocar_reunion
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 404
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 2
+
+======================================================================
+fin 2026-09-25 14:11:45 | codigo de salida 0 | 1130.0 s
