@@ -381,7 +381,8 @@ def similitudes_repartidas(texto_a, textos_b):
         parte = None
         if proceso is not None:
             try:
-                crudo = proceso.stdout.read()
+                with proceso.stdout:
+                    crudo = proceso.stdout.read()
                 proceso.wait()
                 if proceso.returncode == 0:
                     parte = [_decodificar_senal(d) for d in json.loads(crudo.decode("utf-8"))]
