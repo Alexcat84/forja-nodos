@@ -61895,3 +61895,25 @@ La aduana de hoy: **BLOQUEARIA** con `8` vecino(s) contra `479`; lineas `--vered
 | `cubrir_indicadores_problemas_reunion_individual` | similitud_texto | 0.362 | 0.000 | 0.420 | SANO |
 
 **Los ocho vecinos son los ocho de su bloque y las ocho lineas se pasaron tal cual**; ninguno nuevo contra `479` (`396` del grafo mas `83` de bandejas, linea `14` de su salida), ninguno que dejara de levantarse. Sin arista: su fila con la cabeza es `NO SOSTENGO` desde la conjunta (`D69.1`).
+
+### Fila `8`: `tomar_notas_copia_guion_reunion_individual`, **INSERTADO** en `2441.0` s, codigo `0`, commit `14a6378`
+
+La aduana de hoy: **BLOQUEARIA** con `7` vecino(s) contra `479`; lineas `--veredicto` pasadas: `7`. Salida entera en `.v70ext/insertar_08_tomar_notas_copia_guion_reunion_individual.txt`.
+
+<!-- TALLADO: parcial salida=.v70ext/insertar_08_tomar_notas_copia_guion_reunion_individual.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `conducir_reunion_individual_telefono_distancia` | similitud_texto, paso_contra_nodo | 0.472 | 0.222 | 0.675 | CONTINUA |
+| `alentar_asuntos_corazon_vigilar_final_reunion` | similitud_texto | 0.515 | 0.091 | 0.553 | SANO |
+| `acumular_asuntos_importantes_fichero_espera` | similitud_texto | 0.503 | 0.000 | 0.549 | SANO |
+| `fijar_frecuencia_reunion_individual_madurez_tarea` | similitud_texto | 0.355 | 0.200 | 0.506 | SANO |
+| `programar_reunion_individual_cadena` | similitud_texto | 0.468 | 0.250 | 0.469 | SANO |
+| `preparar_guion_reunion_individual_subordinado` | similitud_texto, familia_id | 0.400 | 0.375 | 0.466 | CONTINUA |
+| `facilitar_expresion_subordinado_pregunta_mas` | similitud_texto | 0.432 | 0.000 | 0.412 | SANO |
+
+**Arista en cola (`D.29`)**: `tomar_notas_copia_guion_reunion_individual > conducir_reunion_individual_telefono_distancia`
+
+**Arista cableada por la aduana en el acto**: `preparar_guion_reunion_individual_subordinado > tomar_notas_copia_guion_reunion_individual`
+
+**Los siete vecinos son los siete de su bloque y las siete lineas se pasaron tal cual**; ninguno nuevo contra `479` (`397` del grafo mas `82` de bandejas, linea `13` de su salida), ninguno que dejara de levantarse. **La aduana cablea en el acto la `CONTINUA` que la fila `5` dejo en cola**, `preparar_guion_reunion_individual_subordinado > tomar_notas_copia_guion_reunion_individual` (linea `70` de su salida), y **deja en cola la siguiente**, `tomar_notas_copia_guion_reunion_individual > conducir_reunion_individual_telefono_distancia` (lineas `67` y `76`), que cablea la fila `11`: `D70.4` tal como se marco.
