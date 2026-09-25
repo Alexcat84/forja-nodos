@@ -62147,3 +62147,17 @@ La aduana de hoy: **BLOQUEARIA** con `9` vecino(s) contra `479`; lineas `--vered
 | `entregar_evaluacion_desempeno_tres_claves` | similitud_texto | 0.365 | 0.000 | 0.350 | SANO |
 
 **Los nueve vecinos son los nueve de su bloque y las nueve lineas se pasaron tal cual**; ninguno nuevo contra `479` (`408` del grafo mas `71` de bandejas, linea `15` de su salida), ninguno que dejara de levantarse. Sin arista.
+
+### Fila `20`: `decidir_nivel_competente_inferior`, **INSERTADO** en `1121.8` s, codigo `0`, commit `d58cd8c`
+
+La aduana de hoy: **BLOQUEARIA** con `3` vecino(s) contra `479`; lineas `--veredicto` pasadas: `3`. Salida entera en `.v70ext/insertar_20_decidir_nivel_competente_inferior.txt`.
+
+<!-- TALLADO: parcial salida=.v70ext/insertar_20_decidir_nivel_competente_inferior.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `anunciar_decision_inesperada_reconvocar_reunion` | similitud_texto | 0.364 | 0.000 | 0.472 | SANO |
+| `vencer_sindrome_grupo_pares_autoconfianza` | similitud_texto | 0.368 | 0.000 | 0.462 | SANO |
+| `tomar_mando_reunion_pares_presidente_ausente` | similitud_texto | 0.354 | 0.000 | 0.460 | SANO |
+
+**Los tres vecinos son los tres de su bloque y las tres lineas se pasaron tal cual**; ninguno nuevo contra `479` (`409` del grafo mas `70` de bandejas, linea `9` de su salida), ninguno que dejara de levantarse. Sin arista (`D68.14`, `NO SOSTENGO` con `conducir_etapas`).
