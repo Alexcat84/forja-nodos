@@ -62004,3 +62004,14 @@ La aduana de hoy: **BLOQUEARIA** con `7` vecino(s) contra `479`; lineas `--vered
 | `dirigir_reunion_individual_semanal` | familia_id | 0.049 | 0.333 | 0.350 | SANO |
 
 **Los siete vecinos son los siete de su bloque y las siete lineas se pasaron tal cual**; ninguno nuevo contra `479` (`401` del grafo mas `78` de bandejas, linea `13` de su salida), ninguno que dejara de levantarse. Sin arista (`D69.1`). **Con esta fila, los `12` de `cap_05` estan en el grafo.**
+
+### Fila `13`: `conducir_etapas_modelo_ideal_decision`, **INSERTADO** en `1674.4` s, codigo `0`, commit `c56bf03`
+
+La aduana de hoy: **ENTRARIA** con `0` vecino(s) contra `479`; lineas `--veredicto` pasadas: `0`. Salida entera en `.v70ext/insertar_13_conducir_etapas_modelo_ideal_decision.txt`.
+
+<!-- TALLADO: parcial salida=.v70ext/insertar_13_conducir_etapas_modelo_ideal_decision.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+
+**Ningun vecino y ninguna linea, como su bloque**: la aduana la deja entrar sin cola contra `479` (`402` del grafo mas `77` de bandejas, linea `6` de su salida). La tabla de arriba sale vacia porque no hay fila que tallar. Es la madre de las dos aristas por lectura de las filas `14` y `17`, y desde aqui esta en el grafo.
