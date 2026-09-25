@@ -234,26 +234,21 @@ tablas que declaran instrumento : 375
       linea 62279 de docs/loop/REPORTE.md
 
 TALLADO VERDE: las 157 tabla(s) comprobables son las de su instrumento, celda a celda.
-
 ============================================================================
-CIFRAS DERIVADAS SIN INSTRUMENTO (D.59): 1 en la vuelta viva
+CENSO DE RUTAS (D.42): la unidad de la ruta es la celda
 ============================================================================
-  linea 62341 de docs/loop/REPORTE.md
-     **Los `20` `insertar`, de `747,0` a `4236,0` s, con mediana `2493,45` y `45201,6` s en suma**, contra poblacio
+rutas publicadas y censadas : 987
+  pasan                     : 987
+  CAEN                      : 0
+      PATRON                           74
+      VACIA A PROPOSITO                5
+      con contenido                    896
+      vacia por protocolo              12
 
-UNA MEDIA, UN PORCENTAJE, UNA RAZON O UNA DIFERENCIA LAS IMPRIME UN
-INSTRUMENTO, con su numerador y su denominador nombrados. Una cifra
-derivada a mano de dos celdas no se publica: la vuelta 53 dividio 11
-pasadas entre 9 y de ahi salio un 29,2 por ciento donde la caida real
-es 42,1. Nombra el instrumento en el mismo parrafo, o regenera la cifra.
+CENSO VERDE: las 987 rutas publicadas sostienen lo que dicen sostener.
 [cierre] tallado del reporte (D.41)
+[cierre] censo de rutas (D.42)
+[cierre] tabla de cierre de tareas (D.52)
 
-CIERRE EN ROJO. No pasa: tallado del reporte (D.41)
-
-Si lo que cayo es el tallado, la tabla NO se corrige tecleando:
-  python scripts/tallar_reporte.py --arreglar
-y se escribe al lado de que caida sale (correccion declarada).
-
-[pre-commit] COMMIT ABORTADO: una tabla no coincide con su instrumento
-(D.41), o una ruta publicada como sede de una cifra no sostiene nada (D.42).
-Ninguna de las dos se corrige tecleando la celda buena.
+CIERRE VERDE: el tallado y el censo de rutas.
+[pre-commit] verde

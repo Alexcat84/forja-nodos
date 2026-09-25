@@ -62362,3 +62362,34 @@ ya escritos, este incluido, menos el del cierre estricto que viene detras:
 **Cero bloques que rompen `R1` y cero comandos sin salida.** El bloque se anexo con tres lineas de relleno en el sitio de la salida, se corrieron los dos instrumentos (`.v70ext/r5.txt`) y la salida sustituyo al relleno; vueltos a correr con el bloque ya entero, salen iguales (`.v70ext/r5_bis.txt`, `diff` vacio). Asi no se cuenta a si mismo como mudo, que fue la correccion declarada de la `68`.
 
 **Correccion declarada de `70.5.e`, antes de que saliera de mi turno:** el primer commit del cierre lo aborto el hook por `D.59`, porque la mediana y la suma del reloj las habia sacado a mano de las veinte lineas `fin`. Se regeneraron con la copia de `.v67ext/relojes.py`, que las imprime, y `R5` se volvio a medir con ese bloque dentro (el relleno y la sustitucion, otra vez, como arriba).
+
+### 70.5.g. El cierre estricto, en verde
+
+Salida entera en `.v70ext/cierre_reporte.txt` (y la de las pruebas que lanza, que va por stderr, en `.v70ext/cierre_reporte_err.txt`),
+codigo `0`:
+
+    $ python scripts/cerrar_reporte.py 2>/dev/null | grep -E '^(TALLADO|CENSO|TABLA DE CIERRE|CIERRE|GATE|BARRIDO)'
+    TALLADO DEL REPORTE (D.41): la tabla que dice ser de instrumento
+    TALLADO VERDE: las 157 tabla(s) comprobables son las de su instrumento, celda a celda.
+    CENSO DE RUTAS (D.42): la unidad de la ruta es la celda
+    CENSO VERDE: las 987 rutas publicadas sostienen lo que dicen sostener.
+    TABLA DE CIERRE DE TAREAS (D.52): toda tabla del reporte declara su instrumento
+    TABLA DE CIERRE VERDE: ninguna celda medible difiere del dato.
+    GATE VERDE.
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+    CIERRE VERDE: las cuatro guardas que muerden, el tallado y el censo. La vigencia corrio y publico su cuenta arriba: es cola, no guarda (D.15).
+
+**Ningun rojo.**
+
+**Tabla de tareas, al cerrar:**
+
+| tarea | que | estado |
+|---|---|---|
+| `T1` | los registros de la `ACTA 68` | **CERRADA** (`70.1`) |
+| `T2` | lo que entra es lo que se leyo | **CERRADA** (`70.2`): las `20` huellas iguales a `4ec8c16` y a las filas de la `69` |
+| `T3` | las `20` filas, una por vez | **CERRADA** (`70.3`): las `20` dentro, `118` lineas pasadas tal cual, ningun vecino sin linea, `cap_05` y `cap_06` enteros en el grafo |
+| `T4` | las aristas de la tanda | **CERRADA** (`70.4`): `7` esperadas, `7` en el grafo, `0` en cola; ningun nodo viejo cambio fuera del `nodos_siguientes` de sus madres |
+| `T5` | el cierre | **CERRADA** (`70.5`) |
+
+**`R5` vuelto a medir con el reporte ya entero** (`pegado70.py` y `bloques_mudos70.py` otra vez, salida en `.v70ext/r5_final.txt`): `23` comandos en `18` bloques, con `0` rotos y `0` mudos; el de mas es el bloque del cierre estricto de `70.5.g`, anexado despues de la medida de `70.5.f`.
+**No escribo `PARA_ALEXIS.md`: nada me obliga a parar.**
