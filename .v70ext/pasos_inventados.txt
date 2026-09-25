@@ -1,0 +1,27 @@
+candidato que ENTRO                                      cap     pasos   T   P
+infundir_regularidad_reunion_proceso                     cap_05      8   8   0
+usar_tres_clases_reunion_proceso                         cap_05      4   4   0
+fijar_frecuencia_reunion_individual_madurez_tarea        cap_05     10  10   0
+fijar_duracion_lugar_reunion_individual                  cap_05     10  10   0
+preparar_guion_reunion_individual_subordinado            cap_05      7   7   0
+cubrir_indicadores_problemas_reunion_individual          cap_05     10  10   0
+facilitar_expresion_subordinado_pregunta_mas             cap_05      6   6   0
+tomar_notas_copia_guion_reunion_individual               cap_05      7   7   0
+acumular_asuntos_importantes_fichero_espera              cap_05      4   4   0
+alentar_asuntos_corazon_vigilar_final_reunion            cap_05      8   8   0
+conducir_reunion_individual_telefono_distancia           cap_05      5   5   0
+programar_reunion_individual_cadena                      cap_05      5   5   0
+conducir_etapas_modelo_ideal_decision                    cap_06     12  12   0
+ejercer_poder_posicion_etapa_decision_clara              cap_06      7   7   0
+vencer_sindrome_grupo_pares_autoconfianza                cap_06      5   5   0
+tomar_mando_reunion_pares_presidente_ausente             cap_06      6   6   0
+cortar_discusion_libre_momento_justo                     cap_06      7   7   0
+zanjar_seis_preguntas_decision_adelantado                cap_06      9   9   0
+anunciar_decision_inesperada_reconvocar_reunion          cap_06      8   8   0
+decidir_nivel_competente_inferior                        cap_06      8   8   0
+entraron: 20 de la tanda de 20 | pasos sin fila de lectura: 0 []
+
+| capitulo | candidatos que entraron | pasos | PUENTE | por ciento |
+|---|---:|---:|---:|---:|
+| `cap_05` | 12 | 84 | 0 | 0,00 |
+| `cap_06` | 8 | 62 | 0 | 0,00 |

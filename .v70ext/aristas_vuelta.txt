@@ -1,0 +1,12 @@
+registros de la vuelta en la bitacora: 123
+EN GRAFO   lectura declarada   agrupar_tareas_semejantes_aprovechar_preparacion > infundir_regularidad_reunion_proceso
+EN GRAFO   lectura declarada   buscar_regularidad_bloques_iguales_trabajo_mando > infundir_regularidad_reunion_proceso
+EN GRAFO   veredicto CONTINUA  preparar_guion_reunion_individual_subordinado > tomar_notas_copia_guion_reunion_individual
+EN GRAFO   veredicto CONTINUA  tomar_notas_copia_guion_reunion_individual > conducir_reunion_individual_telefono_distancia
+EN GRAFO   veredicto CONTINUA  preparar_guion_reunion_individual_subordinado > tomar_notas_copia_guion_reunion_individual
+EN GRAFO   lectura declarada   agrupar_interrupciones_subordinados_reuniones_regulares > acumular_asuntos_importantes_fichero_espera
+EN GRAFO   veredicto CONTINUA  tomar_notas_copia_guion_reunion_individual > conducir_reunion_individual_telefono_distancia
+EN GRAFO   lectura declarada   conducir_etapas_modelo_ideal_decision > ejercer_poder_posicion_etapa_decision_clara
+EN GRAFO   lectura declarada   conducir_etapas_modelo_ideal_decision > cortar_discusion_libre_momento_justo
+registros con arista: 9 | aristas DISTINTAS: 7 | en el grafo: 7 | en cola: 0 (un par CONTINUA leido desde sus dos lados deja dos registros y una sola arista)
+esperadas: 7 | esperadas que viven en el grafo: 7 | esperadas sin registro: 0 | registradas no esperadas: 0

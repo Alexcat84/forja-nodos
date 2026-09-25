@@ -61640,11 +61640,11 @@ volver, con su commit. Si la vuelta se corta, lo que falte es exactamente lo que
 
 | tarea | que | estado |
 |---|---|---|
-| `T1` | los registros de la `ACTA 68` | abierta |
-| `T2` | lo que entra es lo que se leyo: las `20` huellas contra `4ec8c16` | abierta |
-| `T3` | las `20` filas de `.v69ext/orden.txt`, una por vez | abierta |
-| `T4` | las aristas de la tanda, por instrumento | abierta |
-| `T5` | el cierre: censo, `PASOS INVENTADOS`, `D.61`, `R5`, guardas, commit | abierta |
+| `T1` | los registros de la `ACTA 68` | **CERRADA** (`70.1`) |
+| `T2` | lo que entra es lo que se leyo: las `20` huellas contra `4ec8c16` | **CERRADA** (`70.2`): `20` iguales, ninguna se relee |
+| `T3` | las `20` filas de `.v69ext/orden.txt`, una por vez | **CERRADA** (`70.3`): las `20` dentro |
+| `T4` | las aristas de la tanda, por instrumento | **CERRADA** (`70.4`): `7` de `7` en el grafo |
+| `T5` | el cierre: censo, `PASOS INVENTADOS`, `D.61`, `R5`, guardas, commit | **CERRADA** (`70.5`) |
 
 ## 70.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
 
@@ -62161,3 +62161,204 @@ La aduana de hoy: **BLOQUEARIA** con `3` vecino(s) contra `479`; lineas `--vered
 | `tomar_mando_reunion_pares_presidente_ausente` | similitud_texto | 0.354 | 0.000 | 0.460 | SANO |
 
 **Los tres vecinos son los tres de su bloque y las tres lineas se pasaron tal cual**; ninguno nuevo contra `479` (`409` del grafo mas `70` de bandejas, linea `9` de su salida), ninguno que dejara de levantarse. Sin arista (`D68.14`, `NO SOSTENGO` con `conducir_etapas`).
+
+**`T3` CERRADA: las `20` dentro, una por vez, en su orden, y `cap_05` y `cap_06` quedan enteros en el grafo.** Los `20` `.fin` dicen
+`0`, ninguna aduana levanto un vecino sin linea ni dejo de levantar uno de su bloque, ninguna dijo `CAERIA` ni dio error, y no hubo
+lectura mia de esta vuelta que marcar (TAREA 3.3). **Cero solapes:** cada `insertar` arranco despues de la linea `fin` del anterior
+(la linea `inicio` de cada `.v70ext/insertar_*.txt` contra la `fin` del de antes; las `fin`, en `.v70ext/relojes.txt`, en `70.5.e`).
+`procesos/` salio vacio tras volver cada uno.
+
+## 70.4. TAREA 4: LAS ARISTAS DE LA TANDA, POR INSTRUMENTO
+
+`.v70ext/aristas_vuelta.py`, copia de `.v68ext/aristas_vuelta.py` que lee la bitacora desde la linea `905` y cruza con las
+esperadas de las filas `1` a `20` en `.v68ext/veredictos_listos.txt` (sin las `#`) y `.v68ext/aristas_lectura.txt` (las
+`SOSTENGO`):
+
+<!-- TALLADO: parcial salida=.v70ext/aristas_vuelta.txt -->
+
+    $ python .v70ext/aristas_vuelta.py
+    registros de la vuelta en la bitacora: 123
+    EN GRAFO   lectura declarada   agrupar_tareas_semejantes_aprovechar_preparacion > infundir_regularidad_reunion_proceso
+    EN GRAFO   lectura declarada   buscar_regularidad_bloques_iguales_trabajo_mando > infundir_regularidad_reunion_proceso
+    EN GRAFO   veredicto CONTINUA  preparar_guion_reunion_individual_subordinado > tomar_notas_copia_guion_reunion_individual
+    EN GRAFO   veredicto CONTINUA  tomar_notas_copia_guion_reunion_individual > conducir_reunion_individual_telefono_distancia
+    EN GRAFO   veredicto CONTINUA  preparar_guion_reunion_individual_subordinado > tomar_notas_copia_guion_reunion_individual
+    EN GRAFO   lectura declarada   agrupar_interrupciones_subordinados_reuniones_regulares > acumular_asuntos_importantes_fichero_espera
+    EN GRAFO   veredicto CONTINUA  tomar_notas_copia_guion_reunion_individual > conducir_reunion_individual_telefono_distancia
+    EN GRAFO   lectura declarada   conducir_etapas_modelo_ideal_decision > ejercer_poder_posicion_etapa_decision_clara
+    EN GRAFO   lectura declarada   conducir_etapas_modelo_ideal_decision > cortar_discusion_libre_momento_justo
+    registros con arista: 9 | aristas DISTINTAS: 7 | en el grafo: 7 | en cola: 0 (un par CONTINUA leido desde sus dos lados deja dos registros y una sola arista)
+    esperadas: 7 | esperadas que viven en el grafo: 7 | esperadas sin registro: 0 | registradas no esperadas: 0
+
+**`7` esperadas, `7` en el grafo, `0` en cola, `0` sin registro y `0` registradas sin esperar**: las `2` `CONTINUA` con `madre=`
+(cada una leida desde sus dos lados, cuatro registros) y las `5` por lectura. **Ninguna sin adjudicar**: las cinco por lectura son
+`SOSTENGO` de la `ACTA 67` `67.4.c` y `67.4.d`, y las siete son las del auditor par a par (`ACTA 68` `68.5`). Los `123` registros
+son las `118` lineas de veredicto y las `5` aristas por lectura.
+
+**Y ningun nodo viejo cambio fuera del `nodos_siguientes` de sus madres**, con `.v70ext/nodos_viejos.py` (instrumento que ordena
+esta tarea, `13`: compara `dataset/nodos.jsonl` en `3e52cad` con el de hoy):
+
+<!-- TALLADO: parcial salida=.v70ext/nodos_viejos.txt -->
+
+    $ python .v70ext/nodos_viejos.py
+    SOLO MADRE agrupar_interrupciones_subordinados_reuniones_regulares  campos ['nodos_siguientes'] | gana ['acumular_asuntos_importantes_fichero_espera'] | pierde []
+    SOLO MADRE agrupar_tareas_semejantes_aprovechar_preparacion         campos ['nodos_siguientes'] | gana ['infundir_regularidad_reunion_proceso'] | pierde []
+    SOLO MADRE buscar_regularidad_bloques_iguales_trabajo_mando         campos ['nodos_siguientes'] | gana ['infundir_regularidad_reunion_proceso'] | pierde []
+    nodos al abrir: 390 | hoy: 410 | nuevos: 20 | nuevos que son de las 20 filas: 20 | viejos que cambian: 3 | cambios fuera de nodos_siguientes de una madre: 0
+
+**Tres madres viejas y solo su `nodos_siguientes`**, cada una ganando el hijo de su arista por lectura; las otras cuatro aristas
+tienen la madre entre los `20` nuevos (`preparar_guion`, `tomar_notas` y `conducir_etapas` dos veces).
+
+**`T4` CERRADA.**
+
+## 70.5. TAREA 5: EL CIERRE
+
+### 70.5.a. El censo antes y despues
+
+<!-- TALLADO: parcial salida=.v70ext/censo_cierre.txt -->
+
+    $ bash .v70ext/censo.sh
+    nodos en dataset/nodos.jsonl        : 410
+    veredictos en bitacora              : 1027
+    pares mutuos                        : 1
+    bandeja cuarentena/grove_high_output: 27
+    insertados de grove_high_output     : 65
+    cerrojos en procesos/               : 
+
+| | al abrir (`70.0`) | al cerrar | delta |
+|---|---:|---:|---:|
+| nodos | `390` | `410` | `+20` |
+| veredictos | `904` | `1027` | `+123`: `118` lineas `--veredicto` de las `20` filas y `5` aristas por lectura |
+| pares mutuos | `1` | `1` | `0` |
+| bandeja de Grove | `47` | `27` | `-20` |
+| insertados de Grove | `45` | `65` | `+20` |
+
+**`410`, `27` y `65`, los del encargo**, y la bitacora gana `118` mas `5`, como la `67` (`90` mas `7`) y la `68` (`9` mas `2`).
+**`procesos/` vacio al abrir y al cerrar.** El `$ bash .v70ext/censo.sh` de `70.0` es el estado de apertura y hoy imprime el de
+cierre; **se reproduce contra el commit de apertura**, `3e52cad` (salida en `.v70ext/censo_apertura_git.txt`):
+
+    $ for f in dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl config/pares_mutuos.jsonl; do echo "$f $(git show 3e52cad:$f | wc -l)"; done; for d in cuarentena/grove_high_output/ cuarentena/_insertados/grove_high_output/; do echo "$d $(git ls-tree --name-only 3e52cad $d | grep -c '\.json$')"; done
+    dataset/nodos.jsonl 390
+    bitacora/VEREDICTOS.jsonl 904
+    config/pares_mutuos.jsonl 1
+    cuarentena/grove_high_output/ 47
+    cuarentena/_insertados/grove_high_output/ 45
+
+### 70.5.b. `PASOS INVENTADOS POR CAPITULO`, de lo que ENTRO
+
+**`cap_05` y `cap_06`, las `20` filas**, contado desde `.v68ext/fidelidad.tsv`, la lectura entera que `.v68ext/contar_fidelidad.txt`
+cuenta y la `ACTA 67` `67.4.a` firmo en `0` de `84` y `0` de `62`, con la copia `.v70ext/pasos_inventados.py` cuya tanda son las
+filas `1` a `20` de `.v69ext/orden.txt`:
+
+<!-- TALLADO: parcial salida=.v70ext/pasos_inventados.txt -->
+
+    $ python .v70ext/pasos_inventados.py
+    candidato que ENTRO                                      cap     pasos   T   P
+    infundir_regularidad_reunion_proceso                     cap_05      8   8   0
+    usar_tres_clases_reunion_proceso                         cap_05      4   4   0
+    fijar_frecuencia_reunion_individual_madurez_tarea        cap_05     10  10   0
+    fijar_duracion_lugar_reunion_individual                  cap_05     10  10   0
+    preparar_guion_reunion_individual_subordinado            cap_05      7   7   0
+    cubrir_indicadores_problemas_reunion_individual          cap_05     10  10   0
+    facilitar_expresion_subordinado_pregunta_mas             cap_05      6   6   0
+    tomar_notas_copia_guion_reunion_individual               cap_05      7   7   0
+    acumular_asuntos_importantes_fichero_espera              cap_05      4   4   0
+    alentar_asuntos_corazon_vigilar_final_reunion            cap_05      8   8   0
+    conducir_reunion_individual_telefono_distancia           cap_05      5   5   0
+    programar_reunion_individual_cadena                      cap_05      5   5   0
+    conducir_etapas_modelo_ideal_decision                    cap_06     12  12   0
+    ejercer_poder_posicion_etapa_decision_clara              cap_06      7   7   0
+    vencer_sindrome_grupo_pares_autoconfianza                cap_06      5   5   0
+    tomar_mando_reunion_pares_presidente_ausente             cap_06      6   6   0
+    cortar_discusion_libre_momento_justo                     cap_06      7   7   0
+    zanjar_seis_preguntas_decision_adelantado                cap_06      9   9   0
+    anunciar_decision_inesperada_reconvocar_reunion          cap_06      8   8   0
+    decidir_nivel_competente_inferior                        cap_06      8   8   0
+    entraron: 20 de la tanda de 20 | pasos sin fila de lectura: 0 []
+
+| capitulo | candidatos que entraron | pasos | PUENTE | por ciento |
+|---|---:|---:|---:|---:|
+| `cap_05` | 12 | 84 | 0 | 0,00 |
+| `cap_06` | 8 | 62 | 0 | 0,00 |
+
+**`0` de `84` y `0` de `62`, las cifras de `.v68ext/contar_fidelidad.txt`**: entraron los `20` preparados y ningun paso
+sin su fila de lectura.
+
+### 70.5.c. `D.61`: los discutibles, cada uno ejecutado o cerrado
+
+| | que | estado |
+|---|---|---|
+| `D70.1` | el metodo de espera de la `67` y la `68` | **EJECUTADO** veinte veces: `20` `.fin` en `0`, sin solape (`70.3`, `70.5.e`); nada tocado entre el lanzamiento y el `.fin` de cada uno. Una espera de `580` s paso de los `600` de la herramienta y quedo de fondo: era `esperar.py`, salio con `3` y se recogio en el turno (nota de la fila `10`); desde ahi, tope de `480` |
+| `D70.2` | `insertar.py` lee `.v68ext/veredictos_listos.txt` y salta las `#` | **EJECUTADO**: la cabecera de cada `.v70ext/insertar_*.txt` lista las lineas de `lin` en `.v69ext/orden.txt`, `118` en total, y cada tabla de fila casa vecino con linea sin `SIN LINEA` ni `no levanta hoy` |
+| `D70.3` | la cita de `arista.py` a las actas `67` y `68` | **EJECUTADO** en las cinco (`70.4`); si el auditor la quiere en otra seccion, es texto de `--cita-veredicto` y no mueve ninguna arista |
+| `D70.4` | las dos `CONTINUA` con `madre=` las cablea la aduana al entrar el hijo | **EJECUTADO**: en cola en las filas `5` y `8`, cableadas en las filas `8` y `11` (`70.4`, `0` en cola) |
+
+**Ninguno abierto.**
+
+### 70.5.d. Las guardas
+
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 410
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+
+    $ python forja.py guiones
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+
+    $ tail -2 .v70ext/cierre_tests.txt
+      total: 379 pruebas, 0 fallos, 0 errores
+    ========================================================================
+
+(`.v70ext/cierre_tests.txt` es la salida entera de `python tests/test_aceptacion.py`, corrida al cerrar con codigo `0`;
+`.v70ext/cierre_gate.txt` y `.v70ext/cierre_guiones.txt` las de las otras dos.)
+
+### 70.5.e. El reloj
+
+<!-- TALLADO: parcial salida=.v70ext/relojes.txt -->
+
+    $ grep -h "^fin " .v70ext/insertar_*.txt
+    fin 2026-09-25 03:41:25 | codigo de salida 0 | 2565.0 s
+    fin 2026-09-25 04:25:05 | codigo de salida 0 | 2545.9 s
+    fin 2026-09-25 05:25:32 | codigo de salida 0 | 3566.0 s
+    fin 2026-09-25 06:20:10 | codigo de salida 0 | 3223.4 s
+    fin 2026-09-25 07:16:18 | codigo de salida 0 | 3302.0 s
+    fin 2026-09-25 08:27:47 | codigo de salida 0 | 4236.0 s
+    fin 2026-09-25 09:17:47 | codigo de salida 0 | 2941.0 s
+    fin 2026-09-25 09:59:22 | codigo de salida 0 | 2441.0 s
+    fin 2026-09-25 10:33:16 | codigo de salida 0 | 1975.8 s
+    fin 2026-09-25 11:29:38 | codigo de salida 0 | 3310.2 s
+    fin 2026-09-25 12:22:13 | codigo de salida 0 | 3045.1 s
+    fin 2026-09-25 13:23:00 | codigo de salida 0 | 3593.2 s
+    fin 2026-09-25 13:51:58 | codigo de salida 0 | 1674.4 s
+    fin 2026-09-25 14:11:45 | codigo de salida 0 | 1130.0 s
+    fin 2026-09-25 14:25:12 | codigo de salida 0 | 747.0 s
+    fin 2026-09-25 14:40:25 | codigo de salida 0 | 860.1 s
+    fin 2026-09-25 14:57:15 | codigo de salida 0 | 955.0 s
+    fin 2026-09-25 15:16:39 | codigo de salida 0 | 1104.7 s
+    fin 2026-09-25 15:31:56 | codigo de salida 0 | 864.0 s
+    fin 2026-09-25 15:51:34 | codigo de salida 0 | 1121.8 s
+
+Y el resumen, por la copia de `.v67ext/relojes.py` con la ruta cambiada (`.v70ext/relojes.py`, salida entera en
+`.v70ext/relojes_resumen.txt`):
+
+    $ python .v70ext/relojes.py | tail -1
+    insertar: 20 | minimo 747.0 s | mediana 2493.4 s | maximo 4236.0 s | suma 45201.6 s (12.56 h)
+
+**Los `20` `insertar`, contra poblacion `479`**: los doce de `cap_05` tardaron de `1975,8` a `4236,0` s y los ocho de `cap_06` de
+`747,0` a `1674,4` (las lineas `fin` de arriba). **No son techos: es lo que costo.** **Ningun
+proceso mio vive al cerrar el turno**: los `20` `.fin` en `0`, las tareas de fondo recogidas, y `procesos/` vacio (`70.5.a`).
+
+### 70.5.f. `R5`, medido con las dos copias de la cabecera cambiada a la `70`
+
+`.v70ext/pegado70.py` es `.v64ext/pegado64.py` y `.v70ext/bloques_mudos70.py` es `.v64aud/normal/bloques_mudos.py`, las dos con la
+cabecera del tramo en `# VUELTA 70 ` y el comentario de cabecera, nada mas cambiado. Corridas con todos los bloques `$` de la vuelta
+ya escritos, este incluido, menos el del cierre estricto que viene detras:
+
+    $ python .v70ext/pegado70.py; python .v70ext/bloques_mudos70.py
+    bloques abiertos con `$` en el tramo de la vuelta 70 : 22
+    bloques que ROMPEN R1 (ACTA 60 60.15)                : 0
+    bloques abiertos con `$`: 17 | comandos `$`: 22 | comandos sin ninguna linea de salida en su bloque: 0
+
+**Cero bloques que rompen `R1` y cero comandos sin salida.** El bloque se anexo con tres lineas de relleno en el sitio de la salida, se corrieron los dos instrumentos (`.v70ext/r5.txt`) y la salida sustituyo al relleno; vueltos a correr con el bloque ya entero, salen iguales (`.v70ext/r5_bis.txt`, `diff` vacio). Asi no se cuenta a si mismo como mudo, que fue la correccion declarada de la `68`.
+
+**Correccion declarada de `70.5.e`, antes de que saliera de mi turno:** el primer commit del cierre lo aborto el hook por `D.59`, porque la mediana y la suma del reloj las habia sacado a mano de las veinte lineas `fin`. Se regeneraron con la copia de `.v67ext/relojes.py`, que las imprime, y `R5` se volvio a medir con ese bloque dentro (el relleno y la sustitucion, otra vez, como arriba).
