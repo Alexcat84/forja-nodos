@@ -1034,3 +1034,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-25 | fijar_frecuencia_reunion_individual_madurez_tarea | otro_idioma | task-relevant maturity | ingles | - |
 | 2026-09-25 | fijar_duracion_lugar_reunion_individual | nombre_largo | La duracion y el sitio de la reunion individual: la hora como minimo sostenida en el tiempo que pide un asunto espinoso, y el area de trabajo del subordinado como sitio, con las cuatro cosas que alli se aprenden mirando | castellano | - |
 | 2026-09-25 | fijar_duracion_lugar_reunion_individual | otro_idioma | one-on-one | ingles | - |
+| 2026-09-25 | preparar_guion_reunion_individual_subordinado | nombre_largo | La reunion individual es del subordinado: su agenda y su tono los pone el, y el guion que prepara sirve a las dos partes, porque le obliga a pensar de antemano y deja al supervisor marcar el ritmo | castellano | - |
+| 2026-09-25 | preparar_guion_reunion_individual_subordinado | otro_idioma | one-on-one | ingles | - |
+| 2026-09-25 | preparar_guion_reunion_individual_subordinado | otro_idioma | outline | ingles | - |
