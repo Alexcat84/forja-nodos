@@ -1,0 +1,86 @@
+{
+ "id": "conducir_reunion_individual_telefono_distancia",
+ "grafo": 390,
+ "bandejas": 89,
+ "vecinos": [
+  {
+   "id": "tomar_notas_copia_guion_reunion_individual",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.474,
+    "familia_id": 0.222,
+    "paso_contra_nodo": 0.675
+   },
+   "levantada_por": [
+    "similitud_texto",
+    "paso_contra_nodo"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 2 de tomar_notas_copia_guion_reunion_individual"
+  },
+  {
+   "id": "preguntar_conducir_reunion_individual",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.077,
+    "familia_id": 0.5,
+    "paso_contra_nodo": 0.395
+   },
+   "levantada_por": [
+    "familia_id"
+   ],
+   "detalle_paso": "paso 4 del candidato contra paso 7 de preguntar_conducir_reunion_individual"
+  },
+  {
+   "id": "acumular_asuntos_importantes_fichero_espera",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.5,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.406
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 5 del candidato contra paso 3 de acumular_asuntos_importantes_fichero_espera"
+  },
+  {
+   "id": "programar_reunion_individual_cadena",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.476,
+    "familia_id": 0.286,
+    "paso_contra_nodo": 0.474
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 4 del candidato contra paso 4 de programar_reunion_individual_cadena"
+  },
+  {
+   "id": "alentar_asuntos_corazon_vigilar_final_reunion",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.462,
+    "familia_id": 0.1,
+    "paso_contra_nodo": 0.441
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 5 del candidato contra paso 1 de alentar_asuntos_corazon_vigilar_final_reunion"
+  },
+  {
+   "id": "facilitar_expresion_subordinado_pregunta_mas",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.416,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.434
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 2 de facilitar_expresion_subordinado_pregunta_mas"
+  }
+ ]
+}

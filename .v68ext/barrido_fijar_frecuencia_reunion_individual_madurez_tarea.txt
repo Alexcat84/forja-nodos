@@ -1,0 +1,1 @@
+fijar_frecuencia_reunion_individual_madurez_tarea poblacion 479 (390 grafo mas 89 bandejas) vecinos 6

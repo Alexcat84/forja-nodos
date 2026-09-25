@@ -1,0 +1,59 @@
+{
+ "id": "tomar_mando_reunion_pares_presidente_ausente",
+ "grafo": 390,
+ "bandejas": 89,
+ "vecinos": [
+  {
+   "id": "vencer_sindrome_grupo_pares_autoconfianza",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.351,
+    "familia_id": 0.1,
+    "paso_contra_nodo": 0.472
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 2 del candidato contra paso 5 de vencer_sindrome_grupo_pares_autoconfianza"
+  },
+  {
+   "id": "decidir_nivel_competente_inferior",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.356,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.468
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 7 de decidir_nivel_competente_inferior"
+  },
+  {
+   "id": "anunciar_decision_inesperada_reconvocar_reunion",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.368,
+    "familia_id": 0.1,
+    "paso_contra_nodo": 0.453
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 6 del candidato contra paso 4 de anunciar_decision_inesperada_reconvocar_reunion"
+  },
+  {
+   "id": "priorizar_lista_entrenamiento_subordinados",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.362,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.404
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 5 del candidato contra paso 1 de priorizar_lista_entrenamiento_subordinados"
+  }
+ ]
+}

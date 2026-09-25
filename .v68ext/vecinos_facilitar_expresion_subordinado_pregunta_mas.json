@@ -1,0 +1,111 @@
+{
+ "id": "facilitar_expresion_subordinado_pregunta_mas",
+ "grafo": 390,
+ "bandejas": 89,
+ "vecinos": [
+  {
+   "id": "preparar_guion_reunion_individual_subordinado",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.397,
+    "familia_id": 0.111,
+    "paso_contra_nodo": 0.48
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 3 de preparar_guion_reunion_individual_subordinado"
+  },
+  {
+   "id": "acumular_asuntos_importantes_fichero_espera",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.475,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.426
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 4 de acumular_asuntos_importantes_fichero_espera"
+  },
+  {
+   "id": "alentar_asuntos_corazon_vigilar_final_reunion",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.414,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.474
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 2 del candidato contra paso 6 de alentar_asuntos_corazon_vigilar_final_reunion"
+  },
+  {
+   "id": "fijar_duracion_lugar_reunion_individual",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.361,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.464
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 5 de fijar_duracion_lugar_reunion_individual"
+  },
+  {
+   "id": "conducir_reunion_individual_telefono_distancia",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.411,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.447
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 4 del candidato contra paso 4 de conducir_reunion_individual_telefono_distancia"
+  },
+  {
+   "id": "programar_reunion_individual_cadena",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.445,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.447
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 2 del candidato contra paso 1 de programar_reunion_individual_cadena"
+  },
+  {
+   "id": "tomar_notas_copia_guion_reunion_individual",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.434,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.406
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 4 del candidato contra paso 7 de tomar_notas_copia_guion_reunion_individual"
+  },
+  {
+   "id": "cubrir_indicadores_problemas_reunion_individual",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.362,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.42
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 6 del candidato contra paso 2 de cubrir_indicadores_problemas_reunion_individual"
+  }
+ ]
+}

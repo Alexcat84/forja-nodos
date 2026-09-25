@@ -1,0 +1,8 @@
+candidato que ENTRO                                      cap     pasos   T   P
+agrupar_interrupciones_subordinados_reuniones_regulares  cap_04      5   5   0
+canalizar_interrupciones_cartel_hora_oficina             cap_04      8   8   0
+entraron: 2 de la tanda de 2 | pasos sin fila de lectura: 0 []
+
+| capitulo | candidatos que entraron | pasos | PUENTE | por ciento |
+|---|---:|---:|---:|---:|
+| `cap_04` | 2 | 13 | 0 | 0,00 |

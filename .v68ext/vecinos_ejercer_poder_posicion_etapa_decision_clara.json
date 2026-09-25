@@ -1,0 +1,33 @@
+{
+ "id": "ejercer_poder_posicion_etapa_decision_clara",
+ "grafo": 390,
+ "bandejas": 89,
+ "vecinos": [
+  {
+   "id": "cortar_discusion_libre_momento_justo",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.375,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.444
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 5 del candidato contra paso 7 de cortar_discusion_libre_momento_justo"
+  },
+  {
+   "id": "anunciar_decision_inesperada_reconvocar_reunion",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.365,
+    "familia_id": 0.1,
+    "paso_contra_nodo": 0.42
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 6 del candidato contra paso 4 de anunciar_decision_inesperada_reconvocar_reunion"
+  }
+ ]
+}

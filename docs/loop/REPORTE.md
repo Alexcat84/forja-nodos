@@ -60476,7 +60476,7 @@ anexa su fila al volver, con su commit. Si la vuelta se corta, lo que falte es e
 |---|---|---|
 | `T1` | los registros de la `ACTA 66` | **CERRADA** (`68.1`) |
 | `T2` | las filas `21` y `22` de `cap_04`, una por vez | **CERRADA**, las dos dentro (`68.2`) |
-| `T3` | `cap_05` y `cap_06` listos: fidelidad entera, barrido, veredictos, aristas por lectura, orden | abierta (`68.3`) |
+| `T3` | `cap_05` y `cap_06` listos: fidelidad entera, barrido, veredictos, aristas por lectura, orden | **CERRADA**, ninguno insertado (`68.3`) |
 | `T4` | el cierre: censo, aristas, `PASOS INVENTADOS`, `D.61`, `R5`, guardas, huellas, commit | abierta (`68.4`) |
 
 ## 68.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
@@ -60691,3 +60691,205 @@ mayuscula). Salida entera en `.v68ext/citas_fidelidad.txt`; su ultima linea y la
     49:And everyone in your operation should be made to understand this
     $ grep -n -o -F 'one can always ask the senior person present to assume control' fuentes/grove_high_output/cap_06.md    # tomar_mando_reunion_pares_presidente_ausente paso 3
     51:one can always ask the senior person present to assume control
+
+## 68.D ter. **LOS DISCUTIBLES DE VEREDICTOS, ARISTAS Y ORDEN, MARCADOS AL ESCRIBIR CADA LINEA** (`EXTRACTOR.md` 8)
+
+Se marcaron dentro de `.v68ext/veredictos_listos.txt` y `.v68ext/aristas_lectura.txt` en el acto de escribir cada linea,
+antes de correr `comprobar_veredictos.py` ni `orden.py`; aqui se juntan por numero.
+
+| | que | por que lo marco |
+|---|---|---|
+| `D68.7` | **`usar_tres_clases_reunion_proceso`, cabeza de las tres clases, MADRE de las preguntas del uno a uno que no tienen madre mas cercana**: `CONTINUA` en los veredictos con `fijar_frecuencia`, `fijar_duracion_lugar`, `preparar_guion` y `cubrir_indicadores`, y `SOSTENGO` por lectura con `facilitar_expresion`, `acumular_asuntos`, `alentar_asuntos` y `programar_reunion`: `8` aristas de una cabeza de `4` pasos | es la figura de `C1` (`ACTA 66` `66.4.a`): el paso `2` nombra el uno a uno en una linea, el encabezado ONE-ON-ONES (L25) abre su tramo y la condicion de cada hijo parte de ese producto. Ninguna de las tres clases es un nodo, asi que no es `D.37` sino `D.29`; si el auditor lee que la cabeza solo nombra y los hijos son de la clase y no de la cabeza, caen las `8` |
+| `D68.8` | **`infundir_regularidad_reunion_proceso`, TIO y no madre de esas preguntas**: `SANO` con las cuatro que levanta | su paso `3` pide que se sepa que asuntos se tratan, sin nombrar ninguno; ninguna pregunta del uno a uno parte de la regularidad |
+| `D68.9` | **`cubrir_indicadores_problemas_reunion_individual` HERMANO y no hijo de `preparar_guion_reunion_individual_subordinado`**: `SANO` | su condicion nombra *o preparando su guion*, pero ninguno de sus diez pasos parte del guion |
+| `D68.10` | **`buscar_regularidad_bloques_iguales_trabajo_mando` (grafo) madre de `infundir_regularidad_reunion_proceso`**, `SOSTENGO` | L21 no dice *production principle* con esas palabras, como si lo dice L323 para `canalizar`; lo ato por las comillas de produccion de la misma linea |
+| `D68.11` | **`agrupar_interrupciones_subordinados_reuniones_regulares` (entro en esta vuelta) madre de `acumular_asuntos_importantes_fichero_espera`**, `SOSTENGO`, y por eso `agrupar_tareas` a `acumular` queda `NO SOSTENGO`, abuela | L51 nombra el principio de la tanda con las mismas palabras que L317; la madre directa la decido por *the interruptions we considered earlier* |
+| `D68.12` | **`decidir_nivel_competente_inferior` con `tomar_mando_reunion_pares_presidente_ausente`: `SANO`** | los dos traen a la persona de mayor rango; decido que a cosas distintas y que la condicion del segundo no parte de la composicion del primero |
+| `D68.13` | **`ejercer_poder_posicion_etapa_decision_clara` con `cortar_discusion_libre_momento_justo`: `SANO`, hermanos** | el paso `7` del primero nombra el punto optimo que el segundo despliega; lo leo como dos despliegues hermanos de la transicion de `conducir_etapas`, no como madre e hijo |
+| `D68.14` | **`conducir_etapas_modelo_ideal_decision` NO es madre de `decidir_nivel_competente_inferior`, `vencer_sindrome_grupo_pares_autoconfianza` ni `tomar_mando_reunion_pares_presidente_ausente`**: `NO SOSTENGO` | el libro los cuelga del modelo (L33 *feature of the model*, L39 *The model is also hard to implement*), pero ninguno usa el producto de la cabeza ni despliega una etapa |
+| `D68.15` | **una arista EN ESPERA**: `elegir_estilo_direccion_madurez_relevante_tarea` (bandeja, `cap_13`) madre de `fijar_frecuencia_reunion_individual_madurez_tarea`, por L33 *As we will see later*. No se cablea en la `70`: se declara cuando entre la madre, con el hijo ya en el grafo | es la primera arista de esta linea con la madre en un capitulo posterior; la dejo escrita como comentario en `.v68ext/aristas_lectura.txt` para que ningun instrumento la tome por cableable |
+
+### 68.3.2. El barrido de los `20`, contra GRAFO MAS BANDEJAS (`D.38.4`)
+
+Copia de `.v66ext/barrido_uno.py` que escribe en `.v68ext/` (`.v68ext/barrido_uno.py`) y copia de `.v66ext/barrer.sh` con la
+lista de `cap_05` y `cap_06` (`.v68ext/barrer.sh`): **cinco a la vez**, lanzado despues de volver la fila `22`, con el grafo ya en
+`390` y **ninguna ficha corregida, porque la fidelidad no dio PUENTE**, y **recogido entero dentro del turno**, esperandolo en
+primer plano:
+
+<!-- TALLADO: parcial salida=.v68ext/barrido.log -->
+
+    $ cat .v68ext/barrido.log
+    INICIO 2026-09-24 18:29:53
+    infundir_regularidad_reunion_proceso rc=0 segundos=2400
+    usar_tres_clases_reunion_proceso rc=0 segundos=2418
+    fijar_duracion_lugar_reunion_individual rc=0 segundos=3195
+    preparar_guion_reunion_individual_subordinado rc=0 segundos=3301
+    fijar_frecuencia_reunion_individual_madurez_tarea rc=0 segundos=3442
+    facilitar_expresion_subordinado_pregunta_mas rc=0 segundos=3128
+    acumular_asuntos_importantes_fichero_espera rc=0 segundos=2933
+    tomar_notas_copia_guion_reunion_individual rc=0 segundos=3286
+    cubrir_indicadores_problemas_reunion_individual rc=0 segundos=4566
+    alentar_asuntos_corazon_vigilar_final_reunion rc=0 segundos=3597
+    vencer_sindrome_grupo_pares_autoconfianza rc=0 segundos=1033
+    decidir_nivel_competente_inferior rc=0 segundos=1424
+    conducir_etapas_modelo_ideal_decision rc=0 segundos=1984
+    tomar_mando_reunion_pares_presidente_ausente rc=0 segundos=980
+    conducir_reunion_individual_telefono_distancia rc=0 segundos=3733
+    cortar_discusion_libre_momento_justo rc=0 segundos=1016
+    ejercer_poder_posicion_etapa_decision_clara rc=0 segundos=1222
+    anunciar_decision_inesperada_reconvocar_reunion rc=0 segundos=865
+    zanjar_seis_preguntas_decision_adelantado rc=0 segundos=1095
+    programar_reunion_individual_cadena rc=0 segundos=4200
+    TODOS TERMINADOS 2026-09-24 21:23:47
+
+**`20` de `20` con `rc=0`, de `18:29:53` a `21:23:47`, `2` h `54` min.** Poblacion `479` en los `20` (`390` del grafo mas `89`
+de bandejas, primera linea de cada `.v68ext/barrido_<id>.txt`). **Cero vivos al cerrar**: `ps -W` no lista ningun `python` de la
+forja tras el `TODOS TERMINADOS`. Los de `cap_05` tardaron de `2400` a `4566` s, los de `cap_06` de `865` a `1984`.
+
+**Lo que levanta, en una linea:** `19` de los `20` levantan vecinos, **`118` pares en el sentido del candidato**; solo
+`conducir_etapas_modelo_ideal_decision` no levanta ninguno. **Solo ocho pares tocan el grafo, con siete vecinos
+distintos**, todos `SANO`: tres de `zhuo_manager` (`preguntar_conducir_reunion_individual` desde dos candidatos,
+`dirigir_reunion_individual_semanal` y `dirigir_reunion_decision`), uno de `scott_radical_candor` y tres de otros capitulos de Grove.
+Los doce de `cap_05` se levantan entre si en `76` pares, con similitud de texto entre `0,32` y `0,63`: la prosa comun de *reunion
+individual* de sus resumenes, que es `d058`.
+
+### 68.3.3. Los veredictos listos, uno por vecino, y su comprobacion por instrumento
+
+`.v68ext/veredictos_listos.txt`: **un bloque por candidato, en el formato de `--veredicto`**, leidos con los pasos de los dos
+delante (`python .v64aud/pasos.py <a> <b>`) y por la vara `6.1`, y solo esa. **`12` lineas `CONTINUA`**, que son **seis aristas**
+leidas desde sus dos lados: la cabeza `usar_tres_clases_reunion_proceso` a cuatro preguntas del uno a uno (`D68.7`),
+`preparar_guion_reunion_individual_subordinado` a `tomar_notas_copia_guion_reunion_individual` y esta a
+`conducir_reunion_individual_telefono_distancia`. **`106` `SANO`**, cero `REPITE`. La comprobacion es una copia de
+`.v67ext/comprobar_veredictos.py` con las rutas a `.v68ext/` y la lista de los `20`:
+
+<!-- TALLADO: parcial salida=.v68ext/comprobar_veredictos.txt -->
+
+    $ python .v68ext/comprobar_veredictos.py | grep -v '^  OK'
+    infundir_regularidad_reunion_proceso               lineas 5 | levantados hoy 5 | FALTAN 0 | SOBRAN 0
+    usar_tres_clases_reunion_proceso                   lineas 5 | levantados hoy 5 | FALTAN 0 | SOBRAN 0
+    fijar_frecuencia_reunion_individual_madurez_tarea  lineas 6 | levantados hoy 6 | FALTAN 0 | SOBRAN 0
+    fijar_duracion_lugar_reunion_individual            lineas 7 | levantados hoy 7 | FALTAN 0 | SOBRAN 0
+    preparar_guion_reunion_individual_subordinado      lineas 9 | levantados hoy 9 | FALTAN 0 | SOBRAN 0
+    cubrir_indicadores_problemas_reunion_individual    lineas 6 | levantados hoy 6 | FALTAN 0 | SOBRAN 0
+    facilitar_expresion_subordinado_pregunta_mas       lineas 8 | levantados hoy 8 | FALTAN 0 | SOBRAN 0
+    tomar_notas_copia_guion_reunion_individual         lineas 7 | levantados hoy 7 | FALTAN 0 | SOBRAN 0
+    acumular_asuntos_importantes_fichero_espera        lineas 6 | levantados hoy 6 | FALTAN 0 | SOBRAN 0
+    alentar_asuntos_corazon_vigilar_final_reunion      lineas 7 | levantados hoy 7 | FALTAN 0 | SOBRAN 0
+    conducir_reunion_individual_telefono_distancia     lineas 6 | levantados hoy 6 | FALTAN 0 | SOBRAN 0
+    programar_reunion_individual_cadena                lineas 7 | levantados hoy 7 | FALTAN 0 | SOBRAN 0
+    conducir_etapas_modelo_ideal_decision              lineas 0 | levantados hoy 0 | FALTAN 0 | SOBRAN 0
+    decidir_nivel_competente_inferior                  lineas 3 | levantados hoy 3 | FALTAN 0 | SOBRAN 0
+    vencer_sindrome_grupo_pares_autoconfianza          lineas 13 | levantados hoy 13 | FALTAN 0 | SOBRAN 0
+    tomar_mando_reunion_pares_presidente_ausente       lineas 4 | levantados hoy 4 | FALTAN 0 | SOBRAN 0
+    ejercer_poder_posicion_etapa_decision_clara        lineas 2 | levantados hoy 2 | FALTAN 0 | SOBRAN 0
+    cortar_discusion_libre_momento_justo               lineas 6 | levantados hoy 6 | FALTAN 0 | SOBRAN 0
+    zanjar_seis_preguntas_decision_adelantado          lineas 2 | levantados hoy 2 | FALTAN 0 | SOBRAN 0
+    anunciar_decision_inesperada_reconvocar_reunion    lineas 9 | levantados hoy 9 | FALTAN 0 | SOBRAN 0
+    secciones 20 de 20, lineas 118, ilegibles 0, vecinos sin linea 0, lineas sin vecino 0
+
+    ARISTAS POR LECTURA (SOSTENGO) contra el barrido de hoy
+      agrupar_tareas_semejantes_aprovechar_preparacion   > infundir_regularidad_reunion_proceso                 levantada hoy: NO
+      buscar_regularidad_bloques_iguales_trabajo_mando   > infundir_regularidad_reunion_proceso                 levantada hoy: NO
+      usar_tres_clases_reunion_proceso                   > facilitar_expresion_subordinado_pregunta_mas         levantada hoy: NO
+      usar_tres_clases_reunion_proceso                   > acumular_asuntos_importantes_fichero_espera          levantada hoy: NO
+      usar_tres_clases_reunion_proceso                   > alentar_asuntos_corazon_vigilar_final_reunion        levantada hoy: NO
+      usar_tres_clases_reunion_proceso                   > programar_reunion_individual_cadena                  levantada hoy: NO
+      agrupar_interrupciones_subordinados_reuniones_regulares > acumular_asuntos_importantes_fichero_espera          levantada hoy: NO
+      conducir_etapas_modelo_ideal_decision              > cortar_discusion_libre_momento_justo                 levantada hoy: NO
+      conducir_etapas_modelo_ideal_decision              > ejercer_poder_posicion_etapa_decision_clara          levantada hoy: NO
+
+### 68.3.4. Las aristas por lectura (`D.29`, `D.53`), en `.v68ext/aristas_lectura.txt`
+
+**Nueve `SOSTENGO` y seis `NO SOSTENGO`**, cada una con el paso de la madre y el del hijo, su linea del libro y su razon, y una
+**EN ESPERA** escrita como comentario (`D68.15`). La comprobacion de arriba dice que **ninguna de las nueve la levanta el barrido de
+hoy**: por eso van aqui y no en los veredictos. Se cablean en la `70` con `python forja.py arista`, en el acto de insertar el hijo.
+**Tres madres ya viven en el grafo** (`agrupar_tareas`, `buscar_regularidad` y `agrupar_interrupciones`, esta desde la fila `21`
+de hoy).
+
+<!-- TALLADO: parcial salida=.v68ext/aristas_lectura.txt -->
+
+| madre | hijo | pasos | linea |
+|---|---|---|---|
+| `agrupar_tareas_semejantes_aprovechar_preparacion` (grafo) | `infundir_regularidad_reunion_proceso` | madre `3`, hijo `5` | `cap_05` `L21` |
+| `buscar_regularidad_bloques_iguales_trabajo_mando` (grafo) | `infundir_regularidad_reunion_proceso` | madre `1`, hijo `1` | `cap_05` `L21` (`D68.10`) |
+| `usar_tres_clases_reunion_proceso` | `facilitar_expresion_subordinado_pregunta_mas` | madre `2`, hijo `1` | `cap_05` `L45` (`D68.7`) |
+| `usar_tres_clases_reunion_proceso` | `acumular_asuntos_importantes_fichero_espera` | madre `2`, hijo `2` | `cap_05` `L51` (`D68.7`) |
+| `usar_tres_clases_reunion_proceso` | `alentar_asuntos_corazon_vigilar_final_reunion` | madre `2`, hijo `1` | `cap_05` `L53` (`D68.7`) |
+| `usar_tres_clases_reunion_proceso` | `programar_reunion_individual_cadena` | madre `2`, hijo `1` | `cap_05` `L57` (`D68.7`) |
+| `agrupar_interrupciones_subordinados_reuniones_regulares` (grafo) | `acumular_asuntos_importantes_fichero_espera` | madre `2`, hijo `2` | `cap_05` `L51` (`D68.11`) |
+| `conducir_etapas_modelo_ideal_decision` | `cortar_discusion_libre_momento_justo` | madre `5`, hijo `1` | `cap_06` `L63` |
+| `conducir_etapas_modelo_ideal_decision` | `ejercer_poder_posicion_etapa_decision_clara` | madre `5`, hijo `4` | `cap_06` `L61` |
+
+Las lineas, por instrumento (`D.35`):
+
+    $ for p in 'It should be designed to allow a manager to' 'we should aim to infuse it with regularity' 'What is the role of the supervisor in a one-on-one' 'for discussion at the next meeting' 'encourage the discussion of heart-to-heart issues during one-on-ones' 'One-on-ones should be scheduled on a rolling basis' 'which constitute the interruptions we considered earlier'; do grep -n -o -F "$p" fuentes/grove_high_output/cap_05.md | head -1; done; for p in 'If you either enter the decision-making stage too early' 'if the clear decision stage is reached'; do grep -n -o -F "$p" fuentes/grove_high_output/cap_06.md | head -1; done
+    21:It should be designed to allow a manager to
+    21:we should aim to infuse it with regularity
+    45:What is the role of the supervisor in a one-on-one
+    51:for discussion at the next meeting
+    53:encourage the discussion of heart-to-heart issues during one-on-ones
+    57:One-on-ones should be scheduled on a rolling basis
+    51:which constitute the interruptions we considered earlier
+    63:If you either enter the decision-making stage too early
+    61:if the clear decision stage is reached
+
+**Los seis `NO SOSTENGO`**, con su razon en el fichero: `usar_calendario_herramienta_planificacion_produccion` a `infundir` (L21
+*Hence*: consecuencia de la regularidad, no despliegue del calendario); la cabeza de las tres clases a `tomar_notas` y a
+`conducir_telefono` (abuela y bisabuela, `D67.4`); `agrupar_tareas` a `acumular` (abuela por `agrupar_interrupciones`, `D68.11`);
+`conducir_etapas` a `decidir_nivel` y a los dos remedios del sindrome de pares (`D68.14`).
+
+**`D.37`, mirado:** dos titulos dicen cuantas partes tienen y las nombran: `usar_tres_clases_reunion_proceso` (el uno a uno, la
+reunion de personal y la revision de operaciones, L23) y `zanjar_seis_preguntas_decision_adelantado` (las seis de L67 a L77).
+**Ninguna de esas nueve partes es un nodo**: no hay arista cabeza a parte que declarar. El uno a uno lo despliegan sus preguntas,
+que cuelgan de la cabeza por `D.29` (`D68.7`); la reunion de personal y la revision de operaciones no tienen ficha. **`conducir_etapas`
+nombra sus tres etapas sin decir cuantas**: no es `D.37` sino `D.29`, y sus dos aristas van en la tabla.
+
+### 68.3.5. El orden de insercion de los `20`, con una copia de `.v67ext/orden.py`
+
+`.v68ext/orden.py`: rutas cambiadas a `.v68ext/` y la lista a los `20`; lo unico escrito a mano es `ORDEN`, la propuesta. **El orden
+del libro rompia `D.36` en dos pares de `cap_06`**: `decidir_nivel_competente_inferior` levanta a
+`anunciar_decision_inesperada_reconvocar_reunion` y no al reves, y `vencer_sindrome_grupo_pares_autoconfianza` levanta a
+`ejercer_poder_posicion_etapa_decision_clara` y no al reves. **`decidir_nivel` pasa al final y `ejercer_poder` sube detras de su
+madre `conducir_etapas`**; todo lo demas va en el orden de sus piezas.
+
+<!-- TALLADO: parcial salida=.v68ext/orden.txt -->
+
+    $ python .v68ext/orden.py
+    #   candidato                                                cap    pza  madre(s)                                           pob  dijo       vec  lin   listos
+    1   infundir_regularidad_reunion_proceso                     cap_05 P6   agrupar_tareas_semejantes_aprovechar_preparacion, buscar_regularidad_bloques_iguales_trabajo_mando 479  BLOQUEARIA 5    5     SI
+    2   usar_tres_clases_reunion_proceso                         cap_05 P7   -                                                  479  BLOQUEARIA 5    5     SI
+    3   fijar_frecuencia_reunion_individual_madurez_tarea        cap_05 P11  usar_tres_clases_reunion_proceso                   479  BLOQUEARIA 6    6     SI
+    4   fijar_duracion_lugar_reunion_individual                  cap_05 P12  usar_tres_clases_reunion_proceso                   479  BLOQUEARIA 7    7     SI
+    5   preparar_guion_reunion_individual_subordinado            cap_05 P13  usar_tres_clases_reunion_proceso                   479  BLOQUEARIA 9    9     SI
+    6   cubrir_indicadores_problemas_reunion_individual          cap_05 P14  usar_tres_clases_reunion_proceso                   479  BLOQUEARIA 6    6     SI
+    7   facilitar_expresion_subordinado_pregunta_mas             cap_05 P15  usar_tres_clases_reunion_proceso                   479  BLOQUEARIA 8    8     SI
+    8   tomar_notas_copia_guion_reunion_individual               cap_05 P16  preparar_guion_reunion_individual_subordinado      479  BLOQUEARIA 7    7     SI
+    9   acumular_asuntos_importantes_fichero_espera              cap_05 P17  agrupar_interrupciones_subordinados_reuniones_regulares, usar_tres_clases_reunion_proceso 479  BLOQUEARIA 6    6     SI
+    10  alentar_asuntos_corazon_vigilar_final_reunion            cap_05 P18  usar_tres_clases_reunion_proceso                   479  BLOQUEARIA 7    7     SI
+    11  conducir_reunion_individual_telefono_distancia           cap_05 P19  tomar_notas_copia_guion_reunion_individual         479  BLOQUEARIA 6    6     SI
+    12  programar_reunion_individual_cadena                      cap_05 P20  usar_tres_clases_reunion_proceso                   479  BLOQUEARIA 7    7     SI
+    13  conducir_etapas_modelo_ideal_decision                    cap_06 P7   -                                                  479  ENTRARIA   0    0     SI
+    14  ejercer_poder_posicion_etapa_decision_clara              cap_06 P23  conducir_etapas_modelo_ideal_decision              479  BLOQUEARIA 2    2     SI
+    15  vencer_sindrome_grupo_pares_autoconfianza                cap_06 P17  -                                                  479  BLOQUEARIA 13   13    SI
+    16  tomar_mando_reunion_pares_presidente_ausente             cap_06 P18  -                                                  479  BLOQUEARIA 4    4     SI
+    17  cortar_discusion_libre_momento_justo                     cap_06 P24  conducir_etapas_modelo_ideal_decision              479  BLOQUEARIA 6    6     SI
+    18  zanjar_seis_preguntas_decision_adelantado                cap_06 P25  -                                                  479  BLOQUEARIA 2    2     SI
+    19  anunciar_decision_inesperada_reconvocar_reunion          cap_06 P31  -                                                  479  BLOQUEARIA 9    9     SI
+    20  decidir_nivel_competente_inferior                        cap_06 P9   -                                                  479  BLOQUEARIA 3    3     SI   <- corte del tope
+
+    COMPROBACIONES
+      hijo delante de su madre: 0 []
+      D.36, par que levanta en un solo sentido con el que lo levanta entrando antes: 0 []
+      hijo dentro del tope con su madre fuera: 0 []
+      tanda propuesta: 20 de 20; fuera del tope: 
+
+**Las tres comprobaciones en cero, y los `20` caben en el tope**: la `70` los inserta todos, en este orden. Las madres que ya viven
+en el grafo no ordenan nada; las madres de dentro de los `20` (`usar_tres_clases` fila `2`, `preparar_guion` fila `5`, `tomar_notas`
+fila `8`, `conducir_etapas` fila `13`) van delante de todos sus hijos.
+
+**Aristas esperadas en la `70`**: las seis `CONTINUA` con `madre=` de los veredictos, que cablea la aduana, y las nueve `SOSTENGO` por
+lectura, que se cablean con `forja.py arista`: **`15`**.
+
+**`T3` CERRADA: las cinco partes hechas, ninguna fila vacia, ninguno insertado.** La huella de las `20` fichas, contra la que la
+`70` comprobara que entra lo que se leyo, va en el cierre (`68.4`), despues del ultimo cambio de ficha, que en esta vuelta es
+ninguno.
