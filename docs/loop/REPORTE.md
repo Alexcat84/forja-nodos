@@ -62015,3 +62015,31 @@ La aduana de hoy: **ENTRARIA** con `0` vecino(s) contra `479`; lineas `--veredic
 |---|---|---:|---:|---:|---|
 
 **Ningun vecino y ninguna linea, como su bloque**: la aduana la deja entrar sin cola contra `479` (`402` del grafo mas `77` de bandejas, linea `6` de su salida). La tabla de arriba sale vacia porque no hay fila que tallar. Es la madre de las dos aristas por lectura de las filas `14` y `17`, y desde aqui esta en el grafo.
+
+### Fila `14`: `ejercer_poder_posicion_etapa_decision_clara`, **INSERTADO** en `1130.0` s, codigo `0`, commit `02cc1a2`
+
+La aduana de hoy: **BLOQUEARIA** con `2` vecino(s) contra `479`; lineas `--veredicto` pasadas: `2`. Salida entera en `.v70ext/insertar_14_ejercer_poder_posicion_etapa_decision_clara.txt`.
+
+<!-- TALLADO: parcial salida=.v70ext/insertar_14_ejercer_poder_posicion_etapa_decision_clara.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `cortar_discusion_libre_momento_justo` | similitud_texto | 0.375 | 0.000 | 0.444 | SANO |
+| `anunciar_decision_inesperada_reconvocar_reunion` | similitud_texto | 0.365 | 0.100 | 0.420 | SANO |
+
+**Los dos vecinos son los dos de su bloque y las dos lineas se pasaron tal cual**; ninguno nuevo contra `479` (`403` del grafo mas `76` de bandejas, linea `8` de su salida), ninguno que dejara de levantarse.
+
+**Arista por lectura cableada con la madre ya en el grafo** (`D.29`, sostenida en la `ACTA 67` `67.4.c`): `conducir_etapas_modelo_ideal_decision > ejercer_poder_posicion_etapa_decision_clara`, `--paso 5`, el que su fila (linea `24` de `.v68ext/aristas_lectura.txt`) cita. Salida entera en `.v70ext/arista_conducir_etapas_modelo_ideal_decision__ejercer_poder_posicion_etapa_decision_clara.txt`:
+
+    $ python forja.py arista --madre conducir_etapas_modelo_ideal_decision --hijo ejercer_poder_posicion_etapa_decision_clara --paso 5 --razon <fila 24> --veredicto CONTINUA --cita-veredicto <fila 24>
+    DECLARACION DE ARISTA POR LECTURA (D.37)
+      madre: conducir_etapas_modelo_ideal_decision
+      hijo : ejercer_poder_posicion_etapa_decision_clara
+      paso citado de la madre: 5
+        Pasa despues a la etapa siguiente, que es alcanzar una decision clara, y cuanto mayor sea el desacuerdo sobre el asunto, mas importante se vuelve la p
+      señales del par: familia_id 0.222, paso_contra_nodo 0.474, similitud_texto 0.287
+        NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+    GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: conducir_etapas_modelo_ideal_decision > ejercer_poder_posicion_etapa_decision_clara
+      razon en bitacora/VEREDICTOS.jsonl
+

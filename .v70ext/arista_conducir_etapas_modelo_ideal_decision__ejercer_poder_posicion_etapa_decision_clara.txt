@@ -1,0 +1,13 @@
+$ python forja.py arista --madre conducir_etapas_modelo_ideal_decision --hijo ejercer_poder_posicion_etapa_decision_clara --paso 5 --razon <fila 24> --veredicto CONTINUA --cita-veredicto <fila 24>
+DECLARACION DE ARISTA POR LECTURA (D.37)
+  madre: conducir_etapas_modelo_ideal_decision
+  hijo : ejercer_poder_posicion_etapa_decision_clara
+  paso citado de la madre: 5
+    Pasa despues a la etapa siguiente, que es alcanzar una decision clara, y cuanto mayor sea el desacuerdo sobre el asunto, mas importante se vuelve la p
+  señales del par: familia_id 0.222, paso_contra_nodo 0.474, similitud_texto 0.287
+    NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: conducir_etapas_modelo_ideal_decision > ejercer_poder_posicion_etapa_decision_clara
+  razon en bitacora/VEREDICTOS.jsonl
+
+codigo 0
