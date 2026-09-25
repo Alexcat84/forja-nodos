@@ -62559,3 +62559,194 @@ corregidos, lo que entrara lleva `0` PUENTE en los `121` pasos**; la cifra de la
 `121`.
 
 **`T2` CERRADA.**
+
+## 71.3. TAREA 3: EL BARRIDO DE LAS `20`, SOBRE LAS FICHAS YA CORREGIDAS
+
+Copia de `.v68ext/barrido_uno.py` que escribe en `.v71ext/` (`.v71ext/barrido_uno.py`) y copia de `.v68ext/barrer.sh` con la lista
+y el log por argumento y `FORJA_PROCESOS_SIMILITUD=3` (`.v71ext/barrer.sh`, `D71.1`): **cinco a la vez**, lanzado con
+`.v71ext/los20.txt` despues de la ultima correccion de ficha (`71.2.2`), y **recogido entero dentro del turno**, esperandolo en
+primer plano con un bucle `until` sobre el log:
+
+<!-- TALLADO: parcial salida=.v71ext/barrido.log -->
+
+    $ cat .v71ext/barrido.log
+    INICIO 2026-09-25 16:50:12
+    contestar_dos_preguntas_direccion_objetivos rc=0 segundos=578
+    cerrar_brecha_dos_preguntas_estrategia rc=0 segundos=642
+    definir_entorno_grupo_clientes_proveedores_competidores rc=0 segundos=674
+    determinar_estado_presente_capacidades_proyectos_merma rc=0 segundos=785
+    examinar_demanda_entorno_dos_marcos_temporales rc=0 segundos=801
+    examinar_entorno_expectativas_tecnologia_proveedores_grupos rc=0 segundos=683
+    fijar_horizonte_ventana_replanificacion rc=0 segundos=747
+    fijar_periodo_direccion_objetivos_retroalimentacion rc=0 segundos=748
+    planificar_tres_pasos_demanda_estado_brecha rc=0 segundos=1042
+    repartir_supervision_puesto_funcional_mision rc=0 segundos=1170
+    escalonar_complejidad_puesto_empleado_nuevo rc=0 segundos=1060
+    elegir_modo_control_motivacion_factor_cua rc=0 segundos=1195
+    diagnosticar_capacidad_motivacion_prueba_vida rc=0 segundos=1145
+    diagnosticar_nivel_motivacion_reaccion_aumento_salario rc=0 segundos=1250
+    fijar_meta_direccion_objetivos_mitad_probabilidad rc=0 segundos=1194
+    decidir_amistad_subordinado_prueba_revision_dificil rc=0 segundos=1077
+    entregar_evaluacion_desempeno_tres_claves rc=0 segundos=1032
+    preparar_resena_mixta_hoja_trabajo rc=0 segundos=696
+    guiar_subordinado_etapas_resistencia_desempeno rc=0 segundos=844
+    elegir_estilo_direccion_madurez_relevante_tarea rc=0 segundos=1640
+    TODOS TERMINADOS 2026-09-25 17:58:28
+
+**`20` de `20` con `rc=0`, de `16:50:12` a `17:58:28`.** La poblacion es `479` en las `20`, `410` del grafo mas `69` de bandejas,
+la que el encargo da al abrir:
+
+    $ head -1 .v71ext/barrido_*.txt | grep poblacion | awk '{print $3,$4,$5,$6,$7,$8,$9}' | sort | uniq -c
+         20 479 (410 grafo mas 69 bandejas) vecinos
+
+**Cero vivos al cerrar**: `tasklist` no lista ningun `python` despues del `TODOS TERMINADOS` (*INFO: No tasks are running which
+match the specified criteria.*). **LECTURA, sin firmar cifra nueva:** con la senial 1 repartida por el fundador (`68d6946`), las
+fichas tardan de `578` a `1640` s con cinco a la vez; en la `68` tardaron de `865` a `4566` (`.v68ext/barrido.log`).
+
+**Una tabla por candidato de sus vecinos**, con su sede, las tres seniales y cual lo levanto, impresa del barrido por
+`.v71ext/tabla_vecinos.py` (solo lee) en `.v71ext/tablas_vecinos.md`. **Lo que levanta, en una linea:** `13` de las `20`
+levantan vecinos, **`50` pares en el sentido del candidato**, `11` con vecino en el grafo y `39` en bandeja; `repartir_supervision`,
+`elegir_modo_control`, `escalonar_complejidad`, `elegir_estilo_direccion` y `guiar_subordinado` no levantan ninguno. Las nueve de
+`cap_07` se levantan entre si por la prosa comun de planificacion de sus resumenes, y sus vecinos del grafo son ajenos (`zhuo_manager`,
+`scott_radical_candor` y `cap_03` y `cap_06` de Grove). Un vecino de bandeja es de fuera de la tanda: `usar_banco_nueve_preguntas_entrevista`,
+de `cap_15`, levantado por `preparar_resena_mixta_hoja_trabajo`.
+
+**`T3` CERRADA.**
+
+## 71.D ter. **LOS DISCUTIBLES DE VEREDICTOS, ARISTAS Y ORDEN, MARCADOS AL ESCRIBIR CADA LINEA** (`EXTRACTOR.md` 8)
+
+Se marcaron dentro de `.v71ext/veredictos_listos.txt` y `.v71ext/aristas_lectura.txt` en el acto de escribir cada linea, antes de
+correr `comprobar_veredictos.py` ni `orden.py`; aqui se juntan por numero.
+
+| | que | por que lo marco |
+|---|---|---|
+| `D71.10` | **`definir_entorno_grupo_clientes_proveedores_competidores` MADRE de `examinar_entorno_expectativas` y de `examinar_demanda_entorno_dos_marcos`**: `CONTINUA` en los dos sentidos de cada par, y **`NO SOSTENGO` de la cabeza `planificar_tres_pasos` a `definir_entorno`** | L29 dice *Once you have established what constitutes your environment* y L27 *What should you look for when you examine your environment*: las dos condiciones parten del entorno definido. `definir_entorno` no es una de las tres partes que la cabeza nombra; si el auditor lo lee como parte del paso 1, cae el `NO SOSTENGO` y la cabeza gana una hija |
+| `D71.11` | **`examinar_entorno_expectativas` y `examinar_demanda_entorno_dos_marcos` HERMANOS**, `SANO`, pese al solape en el cliente | sus expectativas en uno, que quiere ahora y si esta satisfecho en el otro; fuera queda procedimiento en los dos lados, sin bascula |
+| `D71.12` | **las tres partes de la serie de `planificar_tres_pasos` son HERMANAS entre si**, `SANO`, aunque `cerrar_brecha` parte de tener medidas la demanda y el estado presente | comparar y conciliar los pasos 1 y 2 es el paso 5 de la cabeza, que lleva el orden de la serie y a la que las tres cuelgan por `D.37`; si el auditor lee `CONTINUA` de las partes `1` y `2` a la `3`, son `2` aristas mas y `4` lineas que cambian de clase |
+| `D71.13` | **`fijar_horizonte_ventana_replanificacion` y `fijar_periodo_direccion_objetivos_retroalimentacion` HERMANOS**, `SANO` | el paso 5 del segundo contrasta su periodo con la base anual del plan, pero L79 lo pone como ejemplo (*For example*) y su condicion es la suya |
+
+## 71.4. TAREA 4: LOS VEREDICTOS, LAS ARISTAS Y EL ORDEN
+
+### 71.4.1. Los veredictos listos, uno por vecino, y su comprobacion por instrumento
+
+`.v71ext/veredictos_listos.txt`: **un bloque por candidato, en el formato de `--veredicto`**, leidos con los pasos de los dos delante
+(`python .v64aud/pasos.py <a> <b>`) y por la vara `6.1`, y solo esa. **`4` lineas `CONTINUA`**, que son **dos aristas** leidas
+desde sus dos lados, las dos de `definir_entorno` (`D71.10`); **`46` `SANO`**, cero `REPITE`. La comprobacion es una copia de
+`.v69ext/comprobar_veredictos.py` con las rutas a `.v71ext/` y la lista de las `20` (su cabecera lo dice):
+
+<!-- TALLADO: parcial salida=.v71ext/comprobar_veredictos.txt -->
+
+    $ python .v71ext/comprobar_veredictos.py | grep -v '^  OK'
+    cerrar_brecha_dos_preguntas_estrategia                       lineas 10 | levantados hoy 10 | FALTAN 0 | SOBRAN 0
+    contestar_dos_preguntas_direccion_objetivos                  lineas 6 | levantados hoy 6 | FALTAN 0 | SOBRAN 0
+    definir_entorno_grupo_clientes_proveedores_competidores      lineas 6 | levantados hoy 6 | FALTAN 0 | SOBRAN 0
+    determinar_estado_presente_capacidades_proyectos_merma       lineas 5 | levantados hoy 5 | FALTAN 0 | SOBRAN 0
+    examinar_demanda_entorno_dos_marcos_temporales               lineas 4 | levantados hoy 4 | FALTAN 0 | SOBRAN 0
+    examinar_entorno_expectativas_tecnologia_proveedores_grupos  lineas 6 | levantados hoy 6 | FALTAN 0 | SOBRAN 0
+    fijar_horizonte_ventana_replanificacion                      lineas 3 | levantados hoy 3 | FALTAN 0 | SOBRAN 0
+    fijar_periodo_direccion_objetivos_retroalimentacion          lineas 2 | levantados hoy 2 | FALTAN 0 | SOBRAN 0
+    planificar_tres_pasos_demanda_estado_brecha                  lineas 1 | levantados hoy 1 | FALTAN 0 | SOBRAN 0
+    repartir_supervision_puesto_funcional_mision                 lineas 0 | levantados hoy 0 | FALTAN 0 | SOBRAN 0
+    elegir_modo_control_motivacion_factor_cua                    lineas 0 | levantados hoy 0 | FALTAN 0 | SOBRAN 0
+    escalonar_complejidad_puesto_empleado_nuevo                  lineas 0 | levantados hoy 0 | FALTAN 0 | SOBRAN 0
+    diagnosticar_capacidad_motivacion_prueba_vida                lineas 2 | levantados hoy 2 | FALTAN 0 | SOBRAN 0
+    diagnosticar_nivel_motivacion_reaccion_aumento_salario       lineas 1 | levantados hoy 1 | FALTAN 0 | SOBRAN 0
+    fijar_meta_direccion_objetivos_mitad_probabilidad            lineas 1 | levantados hoy 1 | FALTAN 0 | SOBRAN 0
+    decidir_amistad_subordinado_prueba_revision_dificil          lineas 1 | levantados hoy 1 | FALTAN 0 | SOBRAN 0
+    elegir_estilo_direccion_madurez_relevante_tarea              lineas 0 | levantados hoy 0 | FALTAN 0 | SOBRAN 0
+    entregar_evaluacion_desempeno_tres_claves                    lineas 1 | levantados hoy 1 | FALTAN 0 | SOBRAN 0
+    guiar_subordinado_etapas_resistencia_desempeno               lineas 0 | levantados hoy 0 | FALTAN 0 | SOBRAN 0
+    preparar_resena_mixta_hoja_trabajo                           lineas 1 | levantados hoy 1 | FALTAN 0 | SOBRAN 0
+    secciones 20 de 20, lineas 50, ilegibles 0, vecinos sin linea 0, lineas sin vecino 0
+    
+    ARISTAS POR LECTURA (SOSTENGO) contra el barrido de hoy
+      planificar_tres_pasos_demanda_estado_brecha                  > examinar_demanda_entorno_dos_marcos_temporales               levantada hoy: NO
+      planificar_tres_pasos_demanda_estado_brecha                  > determinar_estado_presente_capacidades_proyectos_merma       levantada hoy: NO
+      planificar_tres_pasos_demanda_estado_brecha                  > cerrar_brecha_dos_preguntas_estrategia                       levantada hoy: NO
+      elegir_modo_control_motivacion_factor_cua                    > escalonar_complejidad_puesto_empleado_nuevo                  levantada hoy: NO
+
+**Cada vecino del barrido tiene su linea y cada linea su vecino**: `50` y `50`, cero ilegibles.
+
+### 71.4.2. Las aristas por lectura (`D.29`, `D.37`, `D.53`), en `.v71ext/aristas_lectura.txt`
+
+**Cuatro `SOSTENGO` y once `NO SOSTENGO`**, cada una con el paso de la madre y el del hijo, su linea del libro y su razon. La
+comprobacion de arriba dice que **ninguna de las cuatro la levanta el barrido de hoy**: por eso van aqui y no en los veredictos. Se
+cablean en la vuelta de insercion con `python forja.py arista`, en el acto de insertar el hijo.
+
+<!-- TALLADO: parcial salida=.v71ext/aristas_lectura.txt -->
+
+| madre | hijo | pasos | linea | via |
+|---|---|---|---|---|
+| `planificar_tres_pasos_demanda_estado_brecha` | `examinar_demanda_entorno_dos_marcos_temporales` | madre `2`, hijo `1` | `cap_07` `L19`, `L29` | `D.37` (`D71.12`) |
+| `planificar_tres_pasos_demanda_estado_brecha` | `determinar_estado_presente_capacidades_proyectos_merma` | madre `3`, hijo `1` | `cap_07` `L19`, `L35` | `D.37` |
+| `planificar_tres_pasos_demanda_estado_brecha` | `cerrar_brecha_dos_preguntas_estrategia` | madre `5`, hijo `1` | `cap_07` `L19`, `L39` | `D.37` |
+| `elegir_modo_control_motivacion_factor_cua` | `escalonar_complejidad_puesto_empleado_nuevo` | madre `4` y `5`, hijo `1` y `2` | `cap_11` `L61`, `L63` | `D.29` |
+
+Las lineas, por instrumento (`D.35`), con los encabezados de las tres partes:
+
+    $ for p in 'Step 1 is to establish projected need or demand' 'Step 2 is to establish your present status' 'Step 3 is to compare and reconcile steps 1 and 2' 'Once you have established what constitutes your environment' 'What should you look for when you examine your environment'; do grep -n -o -F "$p" fuentes/grove_high_output/cap_07.md; done; grep -n -o -F 'apply our model to the work of a new employee' fuentes/grove_high_output/cap_11.md
+    19:Step 1 is to establish projected need or demand
+    19:Step 2 is to establish your present status
+    19:Step 3 is to compare and reconcile steps 1 and 2
+    29:Once you have established what constitutes your environment
+    27:What should you look for when you examine your environment
+    63:apply our model to the work of a new employee
+    $ grep -n -o '^STEP [0-9]' fuentes/grove_high_output/cap_07.md
+    23:STEP 1
+    33:STEP 2
+    37:STEP 3
+
+**Los once `NO SOSTENGO`**, con su razon en el fichero: la cabeza a `definir_entorno` (`D71.10`) y a `examinar_entorno` (abuela,
+`D67.4`); **cinco con madre que ya vive en el grafo**: `elegir_fabricar_pedido_pronostico` a `planificar_tres_pasos` (L17 nombra la
+fabrica), `supervisar_tarea_delegada_etapa_menor_valor` y `delegar_tarea_base_comun_seguimiento` a `elegir_estilo_direccion` (nombran
+la madurez y el delegar sin abdicar), `tomar_notas_copia_guion_reunion_individual` a `preparar_resena_mixta` (nombra las notas) y
+`d170`; y los hermanos de la direccion por objetivos y del plan (la cabeza a `contestar_dos_preguntas` y a `fijar_horizonte`,
+`contestar_dos_preguntas` a `fijar_periodo` y a `fijar_meta`) y `elegir_estilo` a `decidir_amistad`.
+
+**`D.37`, mirado** (el comentario final del fichero): de los titulos que dicen cuantas partes tienen, **solo las tres de
+`planificar_tres_pasos` son nodos**, y van las tres filas `D.37` de arriba. **Las *dos preguntas* de `cerrar_brecha` y las de
+`contestar_dos_preguntas` no son nodos: las dos cabezas solo cuentan y nombran, la figura de `D68.7`, sin arista.** Tampoco lo son las
+tres claves de `entregar_evaluacion` (son sus propios pasos) ni las dos razones de `diagnosticar_capacidad`.
+
+### 71.4.3. `d170`, CON LA SALIDA DEL BARRIDO DELANTE
+
+**El barrido NO levanta el par**, en ningun sentido: `elegir_estilo_direccion_madurez_relevante_tarea` no levanta ningun vecino, y
+la otra punta, `fijar_frecuencia_reunion_individual_madurez_tarea`, vive en el grafo y no se barre.
+
+    $ python -c "import json; d=json.load(open('.v71ext/vecinos_elegir_estilo_direccion_madurez_relevante_tarea.json', encoding='utf-8')); print(d['grafo'], d['bandejas'], len(d['vecinos']))"
+    410 69 0
+
+**Asi que no hay linea ni arista**, como decidio la conjunta de la `69` (`D69.3`, `ACTA 68` `68.5`); queda escrita como `NO SOSTENGO`
+con esa cita en `.v71ext/aristas_lectura.txt`. **`d170` se paga en la vuelta que inserte la ficha.**
+
+### 71.4.4. El orden de insercion de las `20`, con una copia de `.v69ext/orden.py`
+
+`.v71ext/orden.py`: rutas a `.v71ext/`, la lista a las `20` con su pieza leida de la ficha, y `ORDEN`, que es lo unico escrito a
+mano. **El orden del libro rompia `D.36` en dos pares de `cap_07`**: `definir_entorno` levanta a `fijar_horizonte` y no al reves, y
+`fijar_horizonte` levanta a `fijar_periodo` y no al reves. **`fijar_periodo` y `fijar_horizonte` suben detras de la cabeza y
+delante de `definir_entorno`**; todo lo demas va en el orden de sus piezas.
+
+<!-- TALLADO: parcial salida=.v71ext/orden.txt -->
+
+    $ python .v71ext/orden.py | tail -16
+    COMPROBACIONES
+      hijo delante de su madre: 0 []
+      D.36, par que levanta en un solo sentido con el que lo levanta entrando antes: 0 []
+      hijo dentro del tope con su madre fuera: 0 []
+      tanda propuesta: 20 de 20; fuera del tope: 
+    
+    ARISTAS ESPERADAS EN LA VUELTA QUE INSERTE ESTAS 20
+      CONTINUA   definir_entorno_grupo_clientes_proveedores_competidores  > examinar_demanda_entorno_dos_marcos_temporales
+      CONTINUA   definir_entorno_grupo_clientes_proveedores_competidores  > examinar_entorno_expectativas_tecnologia_proveedores_grupos
+      LECTURA    planificar_tres_pasos_demanda_estado_brecha              > examinar_demanda_entorno_dos_marcos_temporales
+      LECTURA    planificar_tres_pasos_demanda_estado_brecha              > determinar_estado_presente_capacidades_proyectos_merma
+      LECTURA    planificar_tres_pasos_demanda_estado_brecha              > cerrar_brecha_dos_preguntas_estrategia
+      LECTURA    elegir_modo_control_motivacion_factor_cua                > escalonar_complejidad_puesto_empleado_nuevo
+      CONTINUA con madre= (aristas distintas): 2 | SOSTENGO por lectura: 4 | solapes entre las dos: 0 | aristas esperadas: 6
+
+(La tabla de las `20` filas, entera, en `.v71ext/orden.txt`.) **Las tres comprobaciones en cero, y las `20` caben en el tope.** Las
+madres de dentro de las `20` (`planificar_tres_pasos` fila `1`, `definir_entorno` fila `4`, `elegir_modo_control` fila `11`) van
+delante de todos sus hijos. **Aristas esperadas en la vuelta de insercion: `6`**, dos que cablea la aduana por `CONTINUA` y cuatro
+por lectura con `forja.py arista`.
+
+**`T4` CERRADA: las cuatro partes hechas, ninguna fila vacia, ninguna insertada.**

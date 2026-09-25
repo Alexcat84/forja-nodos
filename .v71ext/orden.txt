@@ -1,0 +1,36 @@
+#   candidato                                                    cap    pza       madre(s)                                                     pob  dijo       vec  lin   listos
+1   planificar_tres_pasos_demanda_estado_brecha                  cap_07 P5        -                                                            479  BLOQUEARIA 1    1     SI
+2   fijar_periodo_direccion_objetivos_retroalimentacion          cap_07 P29       -                                                            479  BLOQUEARIA 2    2     SI
+3   fijar_horizonte_ventana_replanificacion                      cap_07 P22       -                                                            479  BLOQUEARIA 3    3     SI
+4   definir_entorno_grupo_clientes_proveedores_competidores      cap_07 P8        -                                                            479  BLOQUEARIA 6    6     SI
+5   examinar_entorno_expectativas_tecnologia_proveedores_grupos  cap_07 P9        definir_entorno_grupo_clientes_proveedores_competidores      479  BLOQUEARIA 6    6     SI
+6   examinar_demanda_entorno_dos_marcos_temporales               cap_07 P10       definir_entorno_grupo_clientes_proveedores_competidores, planificar_tres_pasos_demanda_estado_brecha 479  BLOQUEARIA 4    4     SI
+7   determinar_estado_presente_capacidades_proyectos_merma       cap_07 P12       planificar_tres_pasos_demanda_estado_brecha                  479  BLOQUEARIA 5    5     SI
+8   cerrar_brecha_dos_preguntas_estrategia                       cap_07 P14       planificar_tres_pasos_demanda_estado_brecha                  479  BLOQUEARIA 10   10    SI
+9   contestar_dos_preguntas_direccion_objetivos                  cap_07 P27       -                                                            479  BLOQUEARIA 6    6     SI
+10  repartir_supervision_puesto_funcional_mision                 cap_10 P17       -                                                            479  ENTRARIA   0    0     SI
+11  elegir_modo_control_motivacion_factor_cua                    cap_11 P25       -                                                            479  ENTRARIA   0    0     SI
+12  escalonar_complejidad_puesto_empleado_nuevo                  cap_11 P26       elegir_modo_control_motivacion_factor_cua                    479  ENTRARIA   0    0     SI
+13  diagnosticar_capacidad_motivacion_prueba_vida                cap_12 P5        -                                                            479  BLOQUEARIA 2    2     SI
+14  fijar_meta_direccion_objetivos_mitad_probabilidad            cap_12 P34       -                                                            479  BLOQUEARIA 1    1     SI
+15  diagnosticar_nivel_motivacion_reaccion_aumento_salario       cap_12 P39       -                                                            479  BLOQUEARIA 1    1     SI
+16  elegir_estilo_direccion_madurez_relevante_tarea              cap_13 COMPUESTA -                                                            479  ENTRARIA   0    0     SI
+17  decidir_amistad_subordinado_prueba_revision_dificil          cap_13 P26       -                                                            479  BLOQUEARIA 1    1     SI
+18  entregar_evaluacion_desempeno_tres_claves                    cap_14 P30       -                                                            479  BLOQUEARIA 1    1     SI
+19  preparar_resena_mixta_hoja_trabajo                           cap_14 P41       -                                                            479  BLOQUEARIA 1    1     SI
+20  guiar_subordinado_etapas_resistencia_desempeno               cap_14 P48       -                                                            479  ENTRARIA   0    0     SI   <- corte del tope
+
+COMPROBACIONES
+  hijo delante de su madre: 0 []
+  D.36, par que levanta en un solo sentido con el que lo levanta entrando antes: 0 []
+  hijo dentro del tope con su madre fuera: 0 []
+  tanda propuesta: 20 de 20; fuera del tope: 
+
+ARISTAS ESPERADAS EN LA VUELTA QUE INSERTE ESTAS 20
+  CONTINUA   definir_entorno_grupo_clientes_proveedores_competidores  > examinar_demanda_entorno_dos_marcos_temporales
+  CONTINUA   definir_entorno_grupo_clientes_proveedores_competidores  > examinar_entorno_expectativas_tecnologia_proveedores_grupos
+  LECTURA    planificar_tres_pasos_demanda_estado_brecha              > examinar_demanda_entorno_dos_marcos_temporales
+  LECTURA    planificar_tres_pasos_demanda_estado_brecha              > determinar_estado_presente_capacidades_proyectos_merma
+  LECTURA    planificar_tres_pasos_demanda_estado_brecha              > cerrar_brecha_dos_preguntas_estrategia
+  LECTURA    elegir_modo_control_motivacion_factor_cua                > escalonar_complejidad_puesto_empleado_nuevo
+  CONTINUA con madre= (aristas distintas): 2 | SOSTENGO por lectura: 4 | solapes entre las dos: 0 | aristas esperadas: 6

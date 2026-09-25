@@ -1,0 +1,1 @@
+determinar_estado_presente_capacidades_proyectos_merma poblacion 479 (410 grafo mas 69 bandejas) vecinos 5

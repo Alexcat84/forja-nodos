@@ -1,0 +1,77 @@
+  OK  cerrar_brecha_dos_preguntas_estrategia                       preguntar_seguimiento_hallar_huecos                          SANO      
+  OK  cerrar_brecha_dos_preguntas_estrategia                       responder_tres_preguntas_vocacion_directiva                  SANO      
+  OK  cerrar_brecha_dos_preguntas_estrategia                       contestar_dos_preguntas_direccion_objetivos                  SANO      
+  OK  cerrar_brecha_dos_preguntas_estrategia                       preparar_preguntas_entrevista_antemano                       SANO      
+  OK  cerrar_brecha_dos_preguntas_estrategia                       examinar_demanda_entorno_dos_marcos_temporales               SANO      
+  OK  cerrar_brecha_dos_preguntas_estrategia                       determinar_estado_presente_capacidades_proyectos_merma       SANO      
+  OK  cerrar_brecha_dos_preguntas_estrategia                       examinar_entorno_expectativas_tecnologia_proveedores_grupos  SANO      
+  OK  cerrar_brecha_dos_preguntas_estrategia                       archivar_indicadores_resolver_problemas                      SANO      
+  OK  cerrar_brecha_dos_preguntas_estrategia                       cortar_discusion_libre_momento_justo                         SANO      
+  OK  cerrar_brecha_dos_preguntas_estrategia                       definir_entorno_grupo_clientes_proveedores_competidores      SANO      
+cerrar_brecha_dos_preguntas_estrategia                       lineas 10 | levantados hoy 10 | FALTAN 0 | SOBRAN 0
+  OK  contestar_dos_preguntas_direccion_objetivos                  cerrar_brecha_dos_preguntas_estrategia                       SANO      
+  OK  contestar_dos_preguntas_direccion_objetivos                  examinar_demanda_entorno_dos_marcos_temporales               SANO      
+  OK  contestar_dos_preguntas_direccion_objetivos                  zanjar_seis_preguntas_decision_adelantado                    SANO      
+  OK  contestar_dos_preguntas_direccion_objetivos                  anunciar_decision_inesperada_reconvocar_reunion              SANO      
+  OK  contestar_dos_preguntas_direccion_objetivos                  examinar_entorno_expectativas_tecnologia_proveedores_grupos  SANO      
+  OK  contestar_dos_preguntas_direccion_objetivos                  vencer_sindrome_grupo_pares_autoconfianza                    SANO      
+contestar_dos_preguntas_direccion_objetivos                  lineas 6 | levantados hoy 6 | FALTAN 0 | SOBRAN 0
+  OK  definir_entorno_grupo_clientes_proveedores_competidores      examinar_entorno_expectativas_tecnologia_proveedores_grupos  CONTINUA  madre=definir_entorno_grupo_clientes_proveedores_competidores
+  OK  definir_entorno_grupo_clientes_proveedores_competidores      examinar_demanda_entorno_dos_marcos_temporales               CONTINUA  madre=definir_entorno_grupo_clientes_proveedores_competidores
+  OK  definir_entorno_grupo_clientes_proveedores_competidores      anunciar_decision_inesperada_reconvocar_reunion              SANO      
+  OK  definir_entorno_grupo_clientes_proveedores_competidores      cerrar_brecha_dos_preguntas_estrategia                       SANO      
+  OK  definir_entorno_grupo_clientes_proveedores_competidores      vencer_sindrome_grupo_pares_autoconfianza                    SANO      
+  OK  definir_entorno_grupo_clientes_proveedores_competidores      fijar_horizonte_ventana_replanificacion                      SANO      
+definir_entorno_grupo_clientes_proveedores_competidores      lineas 6 | levantados hoy 6 | FALTAN 0 | SOBRAN 0
+  OK  determinar_estado_presente_capacidades_proyectos_merma       definir_entorno_grupo_clientes_proveedores_competidores      SANO      
+  OK  determinar_estado_presente_capacidades_proyectos_merma       examinar_entorno_expectativas_tecnologia_proveedores_grupos  SANO      
+  OK  determinar_estado_presente_capacidades_proyectos_merma       cerrar_brecha_dos_preguntas_estrategia                       SANO      
+  OK  determinar_estado_presente_capacidades_proyectos_merma       examinar_demanda_entorno_dos_marcos_temporales               SANO      
+  OK  determinar_estado_presente_capacidades_proyectos_merma       fijar_horizonte_ventana_replanificacion                      SANO      
+determinar_estado_presente_capacidades_proyectos_merma       lineas 5 | levantados hoy 5 | FALTAN 0 | SOBRAN 0
+  OK  examinar_demanda_entorno_dos_marcos_temporales               cerrar_brecha_dos_preguntas_estrategia                       SANO      
+  OK  examinar_demanda_entorno_dos_marcos_temporales               definir_entorno_grupo_clientes_proveedores_competidores      CONTINUA  madre=definir_entorno_grupo_clientes_proveedores_competidores
+  OK  examinar_demanda_entorno_dos_marcos_temporales               determinar_estado_presente_capacidades_proyectos_merma       SANO      
+  OK  examinar_demanda_entorno_dos_marcos_temporales               examinar_entorno_expectativas_tecnologia_proveedores_grupos  SANO      
+examinar_demanda_entorno_dos_marcos_temporales               lineas 4 | levantados hoy 4 | FALTAN 0 | SOBRAN 0
+  OK  examinar_entorno_expectativas_tecnologia_proveedores_grupos  definir_entorno_grupo_clientes_proveedores_competidores      CONTINUA  madre=definir_entorno_grupo_clientes_proveedores_competidores
+  OK  examinar_entorno_expectativas_tecnologia_proveedores_grupos  determinar_estado_presente_capacidades_proyectos_merma       SANO      
+  OK  examinar_entorno_expectativas_tecnologia_proveedores_grupos  examinar_demanda_entorno_dos_marcos_temporales               SANO      
+  OK  examinar_entorno_expectativas_tecnologia_proveedores_grupos  cerrar_brecha_dos_preguntas_estrategia                       SANO      
+  OK  examinar_entorno_expectativas_tecnologia_proveedores_grupos  contestar_dos_preguntas_direccion_objetivos                  SANO      
+  OK  examinar_entorno_expectativas_tecnologia_proveedores_grupos  fijar_periodo_direccion_objetivos_retroalimentacion          SANO      
+examinar_entorno_expectativas_tecnologia_proveedores_grupos  lineas 6 | levantados hoy 6 | FALTAN 0 | SOBRAN 0
+  OK  fijar_horizonte_ventana_replanificacion                      fijar_periodo_direccion_objetivos_retroalimentacion          SANO      
+  OK  fijar_horizonte_ventana_replanificacion                      determinar_estado_presente_capacidades_proyectos_merma       SANO      
+  OK  fijar_horizonte_ventana_replanificacion                      anunciar_decision_inesperada_reconvocar_reunion              SANO      
+fijar_horizonte_ventana_replanificacion                      lineas 3 | levantados hoy 3 | FALTAN 0 | SOBRAN 0
+  OK  fijar_periodo_direccion_objetivos_retroalimentacion          examinar_entorno_expectativas_tecnologia_proveedores_grupos  SANO      
+  OK  fijar_periodo_direccion_objetivos_retroalimentacion          fijar_meta_direccion_objetivos_mitad_probabilidad            SANO      
+fijar_periodo_direccion_objetivos_retroalimentacion          lineas 2 | levantados hoy 2 | FALTAN 0 | SOBRAN 0
+  OK  planificar_tres_pasos_demanda_estado_brecha                  entregar_evaluacion_desempeno_tres_claves                    SANO      
+planificar_tres_pasos_demanda_estado_brecha                  lineas 1 | levantados hoy 1 | FALTAN 0 | SOBRAN 0
+repartir_supervision_puesto_funcional_mision                 lineas 0 | levantados hoy 0 | FALTAN 0 | SOBRAN 0
+elegir_modo_control_motivacion_factor_cua                    lineas 0 | levantados hoy 0 | FALTAN 0 | SOBRAN 0
+escalonar_complejidad_puesto_empleado_nuevo                  lineas 0 | levantados hoy 0 | FALTAN 0 | SOBRAN 0
+  OK  diagnosticar_capacidad_motivacion_prueba_vida                decidir_amistad_subordinado_prueba_revision_dificil          SANO      
+  OK  diagnosticar_capacidad_motivacion_prueba_vida                diagnosticar_nivel_motivacion_reaccion_aumento_salario       SANO      
+diagnosticar_capacidad_motivacion_prueba_vida                lineas 2 | levantados hoy 2 | FALTAN 0 | SOBRAN 0
+  OK  diagnosticar_nivel_motivacion_reaccion_aumento_salario       diagnosticar_capacidad_motivacion_prueba_vida                SANO      
+diagnosticar_nivel_motivacion_reaccion_aumento_salario       lineas 1 | levantados hoy 1 | FALTAN 0 | SOBRAN 0
+  OK  fijar_meta_direccion_objetivos_mitad_probabilidad            fijar_periodo_direccion_objetivos_retroalimentacion          SANO      
+fijar_meta_direccion_objetivos_mitad_probabilidad            lineas 1 | levantados hoy 1 | FALTAN 0 | SOBRAN 0
+  OK  decidir_amistad_subordinado_prueba_revision_dificil          diagnosticar_capacidad_motivacion_prueba_vida                SANO      
+decidir_amistad_subordinado_prueba_revision_dificil          lineas 1 | levantados hoy 1 | FALTAN 0 | SOBRAN 0
+elegir_estilo_direccion_madurez_relevante_tarea              lineas 0 | levantados hoy 0 | FALTAN 0 | SOBRAN 0
+  OK  entregar_evaluacion_desempeno_tres_claves                    planificar_tres_pasos_demanda_estado_brecha                  SANO      
+entregar_evaluacion_desempeno_tres_claves                    lineas 1 | levantados hoy 1 | FALTAN 0 | SOBRAN 0
+guiar_subordinado_etapas_resistencia_desempeno               lineas 0 | levantados hoy 0 | FALTAN 0 | SOBRAN 0
+  OK  preparar_resena_mixta_hoja_trabajo                           usar_banco_nueve_preguntas_entrevista                        SANO      
+preparar_resena_mixta_hoja_trabajo                           lineas 1 | levantados hoy 1 | FALTAN 0 | SOBRAN 0
+secciones 20 de 20, lineas 50, ilegibles 0, vecinos sin linea 0, lineas sin vecino 0
+
+ARISTAS POR LECTURA (SOSTENGO) contra el barrido de hoy
+  planificar_tres_pasos_demanda_estado_brecha                  > examinar_demanda_entorno_dos_marcos_temporales               levantada hoy: NO
+  planificar_tres_pasos_demanda_estado_brecha                  > determinar_estado_presente_capacidades_proyectos_merma       levantada hoy: NO
+  planificar_tres_pasos_demanda_estado_brecha                  > cerrar_brecha_dos_preguntas_estrategia                       levantada hoy: NO
+  elegir_modo_control_motivacion_factor_cua                    > escalonar_complejidad_puesto_empleado_nuevo                  levantada hoy: NO

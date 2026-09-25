@@ -1,0 +1,1 @@
+cerrar_brecha_dos_preguntas_estrategia poblacion 479 (410 grafo mas 69 bandejas) vecinos 10

@@ -1,0 +1,1 @@
+decidir_amistad_subordinado_prueba_revision_dificil poblacion 479 (410 grafo mas 69 bandejas) vecinos 1

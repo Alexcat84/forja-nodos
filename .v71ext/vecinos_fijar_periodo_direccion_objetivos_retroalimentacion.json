@@ -1,0 +1,33 @@
+{
+ "id": "fijar_periodo_direccion_objetivos_retroalimentacion",
+ "grafo": 410,
+ "bandejas": 69,
+ "vecinos": [
+  {
+   "id": "examinar_entorno_expectativas_tecnologia_proveedores_grupos",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.359,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.419
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 4 del candidato contra paso 4 de examinar_entorno_expectativas_tecnologia_proveedores_grupos"
+  },
+  {
+   "id": "fijar_meta_direccion_objetivos_mitad_probabilidad",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.281,
+    "familia_id": 0.375,
+    "paso_contra_nodo": 0.376
+   },
+   "levantada_por": [
+    "familia_id"
+   ],
+   "detalle_paso": "paso 2 del candidato contra paso 2 de fijar_meta_direccion_objetivos_mitad_probabilidad"
+  }
+ ]
+}

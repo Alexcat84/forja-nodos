@@ -1,0 +1,21 @@
+1   planificar_tres_pasos_demanda_estado_brecha                  bandeja     6 pasos d9f186ccbf DISTINTA trabajo=HEAD
+2   fijar_periodo_direccion_objetivos_retroalimentacion          bandeja     5 pasos 1a043672c5 igual trabajo=HEAD
+3   fijar_horizonte_ventana_replanificacion                      bandeja     5 pasos f06b1accbb igual trabajo=HEAD
+4   definir_entorno_grupo_clientes_proveedores_competidores      bandeja     6 pasos 9f4a0619c9 igual trabajo=HEAD
+5   examinar_entorno_expectativas_tecnologia_proveedores_grupos  bandeja     5 pasos c464a31c97 igual trabajo=HEAD
+6   examinar_demanda_entorno_dos_marcos_temporales               bandeja     7 pasos ce07fe53ee igual trabajo=HEAD
+7   determinar_estado_presente_capacidades_proyectos_merma       bandeja     7 pasos 12d77e436c igual trabajo=HEAD
+8   cerrar_brecha_dos_preguntas_estrategia                       bandeja     7 pasos 5d99ca8393 igual trabajo=HEAD
+9   contestar_dos_preguntas_direccion_objetivos                  bandeja     5 pasos 67370bbe1c igual trabajo=HEAD
+10  repartir_supervision_puesto_funcional_mision                 bandeja     8 pasos 931056ae49 DISTINTA trabajo=HEAD
+11  elegir_modo_control_motivacion_factor_cua                    bandeja     8 pasos 6d2523f2d2 igual trabajo=HEAD
+12  escalonar_complejidad_puesto_empleado_nuevo                  bandeja     9 pasos c740e2ff62 igual trabajo=HEAD
+13  diagnosticar_capacidad_motivacion_prueba_vida                bandeja     4 pasos 5fd300d024 igual trabajo=HEAD
+14  fijar_meta_direccion_objetivos_mitad_probabilidad            bandeja     4 pasos eae449d97b igual trabajo=HEAD
+15  diagnosticar_nivel_motivacion_reaccion_aumento_salario       bandeja     3 pasos 3fa1b5d695 igual trabajo=HEAD
+16  elegir_estilo_direccion_madurez_relevante_tarea              bandeja     8 pasos 86903eca6c igual trabajo=HEAD
+17  decidir_amistad_subordinado_prueba_revision_dificil          bandeja     6 pasos 5338591fa7 igual trabajo=HEAD
+18  entregar_evaluacion_desempeno_tres_claves                    bandeja     6 pasos 9e34377a5d DISTINTA trabajo=HEAD
+19  preparar_resena_mixta_hoja_trabajo                           bandeja     6 pasos 21a4572310 igual trabajo=HEAD
+20  guiar_subordinado_etapas_resistencia_desempeno               bandeja     6 pasos 17094eeca6 igual trabajo=HEAD
+fichas de las filas 1 a 20: 20 | pasos: 121 | iguales a su blob en 7be17c0: 17 | distintas: 3 | fichero de trabajo distinto de HEAD: 0

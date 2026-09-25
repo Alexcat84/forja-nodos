@@ -1,0 +1,1 @@
+definir_entorno_grupo_clientes_proveedores_competidores poblacion 479 (410 grafo mas 69 bandejas) vecinos 6

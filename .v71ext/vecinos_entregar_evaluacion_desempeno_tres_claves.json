@@ -1,0 +1,20 @@
+{
+ "id": "entregar_evaluacion_desempeno_tres_claves",
+ "grafo": 410,
+ "bandejas": 69,
+ "vecinos": [
+  {
+   "id": "planificar_tres_pasos_demanda_estado_brecha",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.362,
+    "familia_id": 0.1,
+    "paso_contra_nodo": 0.364
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 6 del candidato contra paso 6 de planificar_tres_pasos_demanda_estado_brecha"
+  }
+ ]
+}
