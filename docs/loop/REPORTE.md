@@ -61949,3 +61949,21 @@ La aduana de hoy: **BLOQUEARIA** con `6` vecino(s) contra `479`; lineas `--vered
     GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: agrupar_interrupciones_subordinados_reuniones_regulares > acumular_asuntos_importantes_fichero_espera
       razon en bitacora/VEREDICTOS.jsonl
 
+
+### Fila `10`: `alentar_asuntos_corazon_vigilar_final_reunion`, **INSERTADO** en `3310.2` s, codigo `0`, commit `6670048`
+
+La aduana de hoy: **BLOQUEARIA** con `7` vecino(s) contra `479`; lineas `--veredicto` pasadas: `7`. Salida entera en `.v70ext/insertar_10_alentar_asuntos_corazon_vigilar_final_reunion.txt`.
+
+<!-- TALLADO: parcial salida=.v70ext/insertar_10_alentar_asuntos_corazon_vigilar_final_reunion.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `fijar_duracion_lugar_reunion_individual` | paso_contra_nodo | 0.324 | 0.100 | 0.612 | SANO |
+| `conducir_reunion_individual_telefono_distancia` | similitud_texto | 0.466 | 0.100 | 0.529 | SANO |
+| `programar_reunion_individual_cadena` | similitud_texto | 0.472 | 0.111 | 0.516 | SANO |
+| `tomar_notas_copia_guion_reunion_individual` | similitud_texto | 0.510 | 0.091 | 0.500 | SANO |
+| `preparar_guion_reunion_individual_subordinado` | similitud_texto | 0.380 | 0.100 | 0.503 | SANO |
+| `acumular_asuntos_importantes_fichero_espera` | similitud_texto | 0.499 | 0.100 | 0.446 | SANO |
+| `facilitar_expresion_subordinado_pregunta_mas` | similitud_texto | 0.432 | 0.000 | 0.406 | SANO |
+
+**Los siete vecinos son los siete de su bloque y las siete lineas se pasaron tal cual**; ninguno nuevo contra `479` (`399` del grafo mas `80` de bandejas, linea `13` de su salida), ninguno que dejara de levantarse. Sin arista (`D69.1`). **Correccion declarada del metodo, no del dato:** una de mis esperas de `580` s paso de los `600` s de la herramienta y quedo como tarea de fondo; era solo `esperar.py`, que no toca nada, salio con su codigo `3` y la recogi en el turno. Desde aqui las esperas van con tope de `480` s.
