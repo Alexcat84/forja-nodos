@@ -1076,3 +1076,7 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-25 | vencer_sindrome_grupo_pares_autoconfianza | otro_idioma | peer-group syndrome | ingles | - |
 | 2026-09-25 | vencer_sindrome_grupo_pares_autoconfianza | otro_idioma | self-confidence | ingles | - |
 | 2026-09-25 | vencer_sindrome_grupo_pares_autoconfianza | otro_idioma | gut-level realization | ingles | - |
+| 2026-09-25 | tomar_mando_reunion_pares_presidente_ausente | nombre_largo | El remedio del par mas uno: cuando el sindrome del grupo de pares se manifiesta y la reunion no tiene presidente formal, toma el mando el que mas se juega, y si eso no funciona, la persona presente de mayor rango | castellano | - |
+| 2026-09-25 | tomar_mando_reunion_pares_presidente_ausente | otro_idioma | peer-plus-one approach | ingles | - |
+| 2026-09-25 | tomar_mando_reunion_pares_presidente_ausente | otro_idioma | peer-group syndrome | ingles | - |
+| 2026-09-25 | tomar_mando_reunion_pares_presidente_ausente | otro_idioma | godfather | ingles | - |
