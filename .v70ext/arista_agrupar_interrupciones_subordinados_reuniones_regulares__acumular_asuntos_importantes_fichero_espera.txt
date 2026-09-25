@@ -1,0 +1,13 @@
+$ python forja.py arista --madre agrupar_interrupciones_subordinados_reuniones_regulares --hijo acumular_asuntos_importantes_fichero_espera --paso 2 --razon <fila 21> --veredicto CONTINUA --cita-veredicto <fila 21>
+DECLARACION DE ARISTA POR LECTURA (D.37)
+  madre: agrupar_interrupciones_subordinados_reuniones_regulares
+  hijo : acumular_asuntos_importantes_fichero_espera
+  paso citado de la madre: 2
+    Acumula con ese principio muchas de las interrupciones que te vienen de tus subordinados, en vez de atenderlas al azar.
+  señales del par: familia_id 0.0, paso_contra_nodo 0.503, similitud_texto 0.265
+    NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: agrupar_interrupciones_subordinados_reuniones_regulares > acumular_asuntos_importantes_fichero_espera
+  razon en bitacora/VEREDICTOS.jsonl
+
+codigo 0

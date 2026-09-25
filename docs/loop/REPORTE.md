@@ -61917,3 +61917,35 @@ La aduana de hoy: **BLOQUEARIA** con `7` vecino(s) contra `479`; lineas `--vered
 **Arista cableada por la aduana en el acto**: `preparar_guion_reunion_individual_subordinado > tomar_notas_copia_guion_reunion_individual`
 
 **Los siete vecinos son los siete de su bloque y las siete lineas se pasaron tal cual**; ninguno nuevo contra `479` (`397` del grafo mas `82` de bandejas, linea `13` de su salida), ninguno que dejara de levantarse. **La aduana cablea en el acto la `CONTINUA` que la fila `5` dejo en cola**, `preparar_guion_reunion_individual_subordinado > tomar_notas_copia_guion_reunion_individual` (linea `70` de su salida), y **deja en cola la siguiente**, `tomar_notas_copia_guion_reunion_individual > conducir_reunion_individual_telefono_distancia` (lineas `67` y `76`), que cablea la fila `11`: `D70.4` tal como se marco.
+
+### Fila `9`: `acumular_asuntos_importantes_fichero_espera`, **INSERTADO** en `1975.8` s, codigo `0`, commit `88df5e5`
+
+La aduana de hoy: **BLOQUEARIA** con `6` vecino(s) contra `479`; lineas `--veredicto` pasadas: `6`. Salida entera en `.v70ext/insertar_09_acumular_asuntos_importantes_fichero_espera.txt`.
+
+<!-- TALLADO: parcial salida=.v70ext/insertar_09_acumular_asuntos_importantes_fichero_espera.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `tomar_notas_copia_guion_reunion_individual` | similitud_texto | 0.508 | 0.000 | 0.562 | SANO |
+| `alentar_asuntos_corazon_vigilar_final_reunion` | similitud_texto | 0.498 | 0.100 | 0.446 | SANO |
+| `conducir_reunion_individual_telefono_distancia` | similitud_texto | 0.491 | 0.000 | 0.451 | SANO |
+| `facilitar_expresion_subordinado_pregunta_mas` | similitud_texto | 0.484 | 0.000 | 0.437 | SANO |
+| `programar_reunion_individual_cadena` | similitud_texto | 0.432 | 0.000 | 0.438 | SANO |
+| `preparar_guion_reunion_individual_subordinado` | similitud_texto | 0.380 | 0.000 | 0.433 | SANO |
+
+**Los seis vecinos son los seis de su bloque y las seis lineas se pasaron tal cual**; ninguno nuevo contra `479` (`398` del grafo mas `81` de bandejas, linea `12` de su salida), ninguno que dejara de levantarse.
+
+**Arista por lectura cableada con la madre ya en el grafo** (`D.29`, `D68.11`, sostenida en la `ACTA 67` `67.4.c`): `agrupar_interrupciones_subordinados_reuniones_regulares > acumular_asuntos_importantes_fichero_espera`, `--paso 2`, el que su fila (linea `21` de `.v68ext/aristas_lectura.txt`) cita. Salida entera en `.v70ext/arista_agrupar_interrupciones_subordinados_reuniones_regulares__acumular_asuntos_importantes_fichero_espera.txt`:
+
+    $ python forja.py arista --madre agrupar_interrupciones_subordinados_reuniones_regulares --hijo acumular_asuntos_importantes_fichero_espera --paso 2 --razon <fila 21> --veredicto CONTINUA --cita-veredicto <fila 21>
+    DECLARACION DE ARISTA POR LECTURA (D.37)
+      madre: agrupar_interrupciones_subordinados_reuniones_regulares
+      hijo : acumular_asuntos_importantes_fichero_espera
+      paso citado de la madre: 2
+        Acumula con ese principio muchas de las interrupciones que te vienen de tus subordinados, en vez de atenderlas al azar.
+      señales del par: familia_id 0.0, paso_contra_nodo 0.503, similitud_texto 0.265
+        NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+    GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: agrupar_interrupciones_subordinados_reuniones_regulares > acumular_asuntos_importantes_fichero_espera
+      razon en bitacora/VEREDICTOS.jsonl
+
