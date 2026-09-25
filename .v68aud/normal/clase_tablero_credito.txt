@@ -1,0 +1,20 @@
+$ python scripts/deuda.py --clase 69
+SANEAMIENTO
+  han pasado 5 vuelta(s) desde la ultima de saneamiento (la 64) y la cadencia es 5, con 57 deuda(s) pendientes
+$ python forja.py tablero --puedo grove_high_output
+LINEA 'serial', LIBRO 'grove_high_output': SI
+  'grove_high_output' esta COSECHADO y sin dueño: su trabajo ya llego a esta rama, asi que se continua desde el capitulo siguiente al ultimo minado (cap_18), citando su frontera. D.50.
+$ python forja.py credito
+CREDITO DE LA LINEA 'serial' (D.48)
+  registro: docs/loop/CREDITO_serial.jsonl
+  tandas: 66, en 310 suceso(s) de especie
+
+  especie            racha      de donde sale
+  ----------------------------------------------------------------------
+  AUDITOR            0 de 3     ACTA 66
+  CIFRA PUBLICADA    0 de 2     ACTA 66
+  CLASE              0 de 2     ACTA 66
+  DATO MOVIDO        0 de 2     ACTA 66
+  REPORTE            0 de 3     ACTA 66
+
+  CREDITO ENTERO: ninguna especie en su tope.

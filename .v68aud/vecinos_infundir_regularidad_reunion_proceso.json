@@ -1,0 +1,72 @@
+{
+ "id": "infundir_regularidad_reunion_proceso",
+ "grafo": 390,
+ "bandejas": 89,
+ "vecinos": [
+  {
+   "id": "usar_tres_clases_reunion_proceso",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.494,
+    "familia_id": 0.286,
+    "paso_contra_nodo": 0.449
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 8 del candidato contra paso 1 de usar_tres_clases_reunion_proceso"
+  },
+  {
+   "id": "preparar_guion_reunion_individual_subordinado",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.483,
+    "familia_id": 0.125,
+    "paso_contra_nodo": 0.473
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 8 del candidato contra paso 4 de preparar_guion_reunion_individual_subordinado"
+  },
+  {
+   "id": "fijar_frecuencia_reunion_individual_madurez_tarea",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.473,
+    "familia_id": 0.111,
+    "paso_contra_nodo": 0.462
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 2 de fijar_frecuencia_reunion_individual_madurez_tarea"
+  },
+  {
+   "id": "fijar_duracion_lugar_reunion_individual",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.466,
+    "familia_id": 0.125,
+    "paso_contra_nodo": 0.454
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 8 del candidato contra paso 4 de fijar_duracion_lugar_reunion_individual"
+  },
+  {
+   "id": "cubrir_indicadores_problemas_reunion_individual",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.421,
+    "familia_id": 0.125,
+    "paso_contra_nodo": 0.424
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 2 del candidato contra paso 2 de cubrir_indicadores_problemas_reunion_individual"
+  }
+ ]
+}

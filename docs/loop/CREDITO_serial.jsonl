@@ -313,3 +313,8 @@
 {"cae": false, "cita": "ACTA 66, secciones 66.1 y 66.7", "especie": "DATO MOVIDO", "linea": "serial", "racha": "0 de 2", "tanda": "ACTA 66", "tipo": "tanda", "vuelta": 67}
 {"cae": false, "cita": "ACTA 66, secciones 66.2 y 66.7", "especie": "REPORTE", "linea": "serial", "racha": "0 de 3", "tanda": "ACTA 66", "tipo": "tanda", "vuelta": 67}
 {"cae": false, "cita": "ACTA 66, seccion 66.9", "especie": "AUDITOR", "linea": "serial", "racha": "0 de 3", "tanda": "ACTA 66", "tipo": "tanda", "vuelta": 67}
+{"cae": false, "cita": "ACTA 67, secciones 67.3, 67.4 y 67.7", "especie": "CLASE", "linea": "serial", "racha": "0 de 2", "tanda": "ACTA 67", "tipo": "tanda", "vuelta": 68}
+{"cae": false, "cita": "ACTA 67, secciones 67.1 y 67.7", "especie": "CIFRA PUBLICADA", "linea": "serial", "racha": "0 de 2", "tanda": "ACTA 67", "tipo": "tanda", "vuelta": 68}
+{"cae": false, "cita": "ACTA 67, secciones 67.1, 67.3 y 67.7", "especie": "DATO MOVIDO", "linea": "serial", "racha": "0 de 2", "tanda": "ACTA 67", "tipo": "tanda", "vuelta": 68}
+{"cae": false, "cita": "ACTA 67, secciones 67.2 y 67.7", "especie": "REPORTE", "linea": "serial", "racha": "0 de 3", "tanda": "ACTA 67", "tipo": "tanda", "vuelta": 68}
+{"cae": true, "cita": "ACTA 67, seccion 67.9: CIFRA PUBLICADA PROPIA en APERTURA_CIEGA.md 7, NO: 5 donde el fichero tiene 11", "especie": "AUDITOR", "linea": "serial", "racha": "1 de 3", "tanda": "ACTA 67", "tipo": "tanda", "vuelta": 68}

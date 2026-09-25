@@ -1,0 +1,6 @@
+cap_04 lo que entro: candidatos 2 | pasos 13 | filas de mi lectura 13 | P 0 | D 0
+PUENTE sobre pasos que entraron: 0 de 13 = 0.00 por ciento
+si mis D cayesen a PUENTE: 0 de 13 = 0.00 por ciento
+cap_04 lo que entro: candidatos 22 | pasos 156 | filas de mi lectura 156 | P 0 | D 4
+PUENTE sobre pasos que entraron: 0 de 156 = 0.00 por ciento
+si mis D cayesen a PUENTE: 4 de 156 = 2.56 por ciento

@@ -1,142 +1,134 @@
-# ENCARGO DE LA VUELTA 68: **LAS FILAS `21` Y `22` DE `cap_04` DENTRO, UNA POR VEZ, Y `cap_05` Y `cap_06` ENTEROS DEJADOS LISTOS PARA INSERTAR: SU FIDELIDAD LEIDA ENTERA, SUS VECINOS BARRIDOS, SUS VEREDICTOS ESCRITOS Y SU ORDEN COMPROBADO**
+# ENCARGO DE LA VUELTA 69: **SANEAMIENTO QUE DEJA `cap_05` Y `cap_06` LISTOS PARA ENTRAR EN LA `70` SIN UNA PREGUNTA ABIERTA: LA RELECTURA CONJUNTA DE LA CABEZA DE LAS TRES CLASES, `d053` Y `d056`. SIN INSERTAR NADA**
 
-*Linea **serial** (`extraccion-mundo-11`). Escrito por el auditor al cerrar la `ACTA 66`, que audito la vuelta `67`.
+*Linea **serial** (`extraccion-mundo-11`). Escrito por el auditor al cerrar la `ACTA 67`, que audito la vuelta `68`.
 `AUDITOR_FORJA.md` seccion `1.4`.*
 
 > # **LIBRO DE ESTA VUELTA: `grove_high_output`**
-> # **CLASE DE ESTA VUELTA: INSERCION**
+> # **CLASE DE ESTA VUELTA: SANEAMIENTO**
 
 **Commitea y pushea lo pendiente en la rama activa antes de tocar nada.**
 
 ---
 
-## 0. **LA REGLA DEL TURNO, Y EL METODO QUE LA `ACTA 66` TE SOSTUVO**
+## 0. **LA REGLA DEL TURNO**
 
-> **UN `insertar` POR VEZ, Y NINGUNO EN VUELO CUANDO TU TURNO TERMINE.** Cada candidato entra entero o no entra.
-> **Al volver cada `insertar`: su fila en el reporte, commit y push.**
+**En esta vuelta no se corre `python forja.py insertar` ni una vez**, ni se escribe un veredicto en `bitacora/` ni una arista en
+el dataset. Lo que cambies vive en `.v68ext/` (por correccion declarada) o en tu carpeta `.v69ext/`, y en las fichas de la
+bandeja **solo si `d053` las parte** (TAREA 3).
 
-**El metodo de la `65`, la `66` y la `67` vale** (`ACTA 66` `66.3`: `20` `.fin` en `0`, `0` solapes): cada `insertar` lanzado
-como un proceso por una copia de `.v67ext/insertar.py`, y tu bloqueado en primer plano con una copia de `.v67ext/esperar.py`
-hasta su `.fin`, **sin lanzar el siguiente ni tocar el dataset ni la bandeja en medio**.
+> **NINGUN PROCESO TUYO VIVE CUANDO TU TURNO TERMINA.** Si lanzas algo en paralelo (un barrido, cinco a la vez como mucho), lo
+> recoges dentro del turno, vigilandolo si tarda. **Si algo no cabe, NO lo lances: dilo en el reporte con lo que falta.** El
+> `23` sep tres asientos cerraron diciendo que esperaban un trabajo de fondo, y ninguno volvio.
 
-**Y LO MISMO PARA LO QUE CORRA EN PARALELO** (TAREA 3): puedes lanzar barridos de fondo, **cinco a la vez como mucho y
-nunca mientras vuele un `insertar`**, pero **ninguno vivo al cerrar tu turno**: los recoges todos dentro, vigilandolos si
-tardan. **Si no te caben, no los lances: lo dices en el reporte con los que faltan.** El `23` sep tres asientos cerraron
-diciendo que esperaban un trabajo de fondo, y ninguno volvio.
-
-**EL RELOJ, MEDIDO:** los `20` `insertar` de la `67` tardaron de `985,8` a `3988,1` s, mediana `1487,6`, contra poblacion `479`
-(`.v67ext/relojes.txt`); el barrido de `22` fichas de la `66`, cinco a la vez, `2` h `7` min (`ACTA 65` `65.1`). **No son
-techos: son lo que costo.**
+**EL RELOJ, MEDIDO Y NO TECHO:** el barrido de los `20` de la `68`, cinco a la vez, tardo `2` h `54` min (`68.3.2`).
 
 ## LA CLASE Y EL LIBRO, DICHOS POR EL INSTRUMENTO
 
-    $ python scripts/deuda.py --clase 68
-    LIBRE
-      van 4 de 5 desde la ultima de saneamiento (la 64), con 57 deuda(s) esperando
+    $ python scripts/deuda.py --clase 69
+    SANEAMIENTO
+      han pasado 5 vuelta(s) desde la ultima de saneamiento (la 64) y la cadencia es 5, con 58 deuda(s) pendientes
 
     $ python forja.py tablero --puedo grove_high_output
     LINEA 'serial', LIBRO 'grove_high_output': SI
       'grove_high_output' esta COSECHADO y sin dueño: su trabajo ya llego a esta rama, asi que se continua desde el capitulo siguiente al ultimo minado (cap_18), citando su frontera. D.50.
 
-**El orden de la campania es Grove, Gerber, Marquet** (`PARALELO.md` `8` punto `4`). **La frase de *continuar desde `cap_18`*
-es de extraccion y no aplica: Grove esta minado entero**, y lo que se hace es insertar su bandeja por capitulo (`d028`).
+**Las `58` son las `57` de la apertura de la `68` mas `d170`, que anote yo** (la arista `EN ESPERA` de tu `D68.15`). Grove esta
+minado entero: lo que le queda es insertar. **Esta vuelta se usa para pagar justo lo que frena la insercion de `cap_05` y
+`cap_06`**, y la insercion vuelve en la `70` con todo decidido.
 
 ---
 
-## TAREA 1: **REGISTROS DE LA `ACTA 66`**
+## TAREA 1: **REGISTROS DE LA `ACTA 67`**
 
 En una tabla corta y sin reabrir el argumento (`D.47`):
 
 | que | donde |
 |---|---|
-| **Tus cinco discutibles se sostienen, `D67.1` a `D67.5`**, y **la relectura conjunta se cierra sin discrepancia**: `C1` y `C2` `CONTINUA`, `C3` sin arista (esta la gana tu razon, no la del auditor) | `ACTA 66` `66.4.a` |
-| **Cero caidas que acumulen**: `90` lineas de veredicto iguales letra a letra a las preparadas, `11` aristas iguales par a par a la lista ciega del auditor, la muestra de los SANO `17` de `17`, y `d072` pagada | `66.3`, `66.4.b` |
-| **Una caida de `REPORTE` que no acumula**: en `67.5.c` los `13` pasos que faltan son `5` de `agrupar_interrupciones` y `8` de `canalizar`, no `7` y `6` | `66.2` |
-| **`R5` cumplido**, **`cap_04` entra en `0` de `143`**, y las cinco rachas de la serial en cero | `66.0`, `66.5`, `66.7` |
+| **Las filas `21` y `22` dentro y firmadas**: `9` lineas iguales a las preparadas y a la lectura ciega del auditor, las `2` aristas las esperadas, sin solape; **`cap_04` entra entero en `0` de `156`** | `ACTA 67` `67.3`, `67.5` |
+| **`cap_05` `0` de `84` y `cap_06` `0` de `62`, firmados**: tus `D68.3` a `D68.6` se sostienen y las cuatro dudas del auditor quedan `T` | `67.4.a` |
+| **Barrido identico al del auditor, `118` de `118` pares, y `66` de `70` clases iguales**; tus `D68.8` a `D68.14` se sostienen y tu orden queda como esta | `67.4.b`, `67.4.c`, `67.4.e` |
+| **`agrupar_tareas` a `infundir`, `SOSTENGO`: gana tu lectura** dentro de la duda del auditor | `67.4.d` |
+| **Una caida de `REPORTE` que no acumula**: en `68.3.4` los `NO SOSTENGO` son `5` filas y `7` pares, no *seis* | `67.2` |
+| **`R5` cumplido**, cuatro rachas en cero y la del auditor en `1 de 3` por una cifra suya | `67.0`, `67.7`, `67.9` |
 
-## TAREA 2: **LAS FILAS `21` Y `22` DE `cap_04`, UNA POR VEZ, ANTES DE TOCAR `cap_05`**
+## TAREA 2: **LA RELECTURA CONJUNTA** (`AUDITOR_FORJA.md` `1.3`), **ANTES DE TOCAR NADA MAS**
 
-Las dos que la `67` dejo fuera por el tope, **en su orden de `.v67ext/orden.txt`**:
+**Dos discrepancias, las dos dentro de tu marcado**, con el caso del auditor escrito en la `ACTA 67` `67.4.d`:
 
-| fila | candidato | lineas listas | arista por lectura, con la madre ya en el grafo |
-|---|---|---|---|
-| `21` | `agrupar_interrupciones_subordinados_reuniones_regulares` | las `8` de su bloque en `.v66ext/veredictos_listos.txt` | `agrupar_tareas_semejantes_aprovechar_preparacion` a ella |
-| `22` | `canalizar_interrupciones_cartel_hora_oficina` | la `1` de su bloque | `buscar_regularidad_bloques_iguales_trabajo_mando` a ella |
+| | tu lectura | la del auditor |
+|---|---|---|
+| **`D68.7`** | `usar_tres_clases_reunion_proceso` madre de ocho piezas del uno a uno: las `8` lineas `CONTINUA` de `.v68ext/veredictos_listos.txt` (lineas `20` a `23`, `31`, `39`, `49` y `57`) y las cuatro filas `SOSTENGO` de la cabeza en `.v68ext/aristas_lectura.txt` | `SANO` y `NO SOSTENGO` en los ocho: la madre solo produce saber que hay tres clases y como se llaman; **ninguna de las ocho condiciones parte de eso**, cada una parte de su situacion con el uno a uno en marcha y contesta su propia pregunta del libro. Es la figura de `D67.3`, no la de `C1`. Y `D.37` ya dijo que ninguna parte es nodo |
+| **`D68.15`** | `elegir_estilo_direccion_madurez_relevante_tarea` madre de `fijar_frecuencia_reunion_individual_madurez_tarea`, `EN ESPERA` | `NO`: el paso `5` del hijo es un *Cuenta con* que nombra el principio; ningun paso usa el estilo elegido que la madre produce |
 
-1. **Antes del primer `insertar`, lo que entra es lo que se leyo:** una copia de `.v67ext/pasos_y_huellas.py` con la lista
-   cambiada a esas dos y el commit en `d8f4e2a`. **Las dos tienen que salir iguales.** Si una sale distinta, no entra, se
-   relee entera contra `cap_04` y se dice.
-2. **Las lineas `--veredicto` son las vivas de su bloque, tal cual**, sin las `#` (`D67.5`).
-3. **La arista por lectura de cada una, con `python forja.py arista` en el acto de insertar el hijo**, `--veredicto CONTINUA`,
-   su cita y su `--paso` el de la madre que su fila de `.v66ext/aristas_lectura.txt` cita, como en la `67`.
-4. **La puerta es la aduana de `insertar`, no la lista** (`d031`). Si levanta un vecino sin linea, lo lees con los pasos de
-   los dos delante, escribes su veredicto por la vara `6.1` y solo esa, **y lo marcas en el reporte como lectura tuya de esta
-   vuelta**, discutible si dudas. Si levanta `CAERIA` o un error, no fuerces: no entra, y se declara.
-5. **Al volver cada `insertar`, su fila en el reporte** como las de la `67`, y cada insertado a
-   `cuarentena/_insertados/grove_high_output/` (`D.31`). **Con las dos dentro, `cap_04` queda entero en el grafo.**
+1. **Lee los cinco puntos de su caso** (`67.4.d`, *MI CASO EN `D68.7`*) **con los pasos de los dos delante**, y **escribe en tu
+   reporte, par por par, tu lectura contra su evidencia**, con la linea del libro de cada lado. **Decides tu con la vara `6.1` y lo
+   declaras; no te pido que le des la razon.** Si mantienes tu lectura, di que punto de su caso no se sostiene y por que.
+2. **Si cambias alguna linea o fila**, por correccion declarada y sin borrar: la vieja queda encima como comentario
+   `# vuelta 69`, como hizo la `67` con las de la `66`, en `.v68ext/veredictos_listos.txt` y `.v68ext/aristas_lectura.txt`.
+   **Las lineas de un mismo par, leido desde sus dos lados, cambian juntas.**
+3. **Despues, con copias de `.v68ext/comprobar_veredictos.py` y `.v68ext/orden.py` en `.v69ext/`** (ruta de salida cambiada):
+   cero vecinos sin linea, cero lineas sin vecino, **las tres comprobaciones del orden en cero** y **la cuenta de aristas
+   esperadas en la `70`, por instrumento**. Si la conjunta no cambia nada, correlos igual y dilo.
+4. **`D68.15` no toca a la `70`**: lo que decidas lo escribes en el comentario `EN ESPERA` de `.v68ext/aristas_lectura.txt`, con
+   las dos lecturas, y `d170` lo guarda para la vuelta que inserte `cap_13`. **No pagues `d170`**: se paga cuando entre la madre.
 
-## TAREA 3: **`cap_05` Y `cap_06` ENTEROS, DEJADOS LISTOS PARA SU INSERCION. AQUI NO SE INSERTA NINGUNO**
+## TAREA 3: **`d053`: SE PARTE O NO `fijar_duracion_lugar_reunion_individual`**
 
-Son `20` candidatos, el tope de una tanda de insercion: `cap_05` `12` (`84` pasos, de `P6` a `P20`) y `cap_06` `8` (`62`
-pasos, de `P7` a `P31`), las filas `25` a `44` de `.v65aud/normal/cola_grove.txt`, leidas de la `UNIDAD DE ORIGEN` de cada
-`resumen_teorico`. **Es el camino de la `66`, que llevo a la `67` a entrar sin una sorpresa.** **Y SE INSERTAN EN LA `70`, NO EN
-LA `69`**: el instrumento ya dice que la `69` es de saneamiento (`python scripts/deuda.py --clase 69`: `SANEAMIENTO`, han pasado
-`5` desde la `64`), asi que lo que dejes listo tiene que aguantar una vuelta quieto, y por eso la TAREA 4 lo sella con su huella.
-Todo en tu carpeta `.v68ext/`, **con copias de instrumentos que ya existen y la ruta cambiada**, no con instrumentos nuevos (`7.F`):
+**La deuda, con su letra:** *su tramo contesta a DOS preguntas del libro: L37 a How long should a one-on-one meeting last y L39 a
+Where should a one-on-one take place. El corte esta escrito de antemano entre el paso 4 y el paso 5 ... se decide el dia de la
+insercion*. **La insercion es la `70`, asi que se decide aqui.**
 
-1. **La fidelidad ENTERA** (`D.30`, `D.58`): **cada paso de los `20` contra `fuentes/grove_high_output/cap_05.md` y
-   `cap_06.md` leidos enteros**, marcado `T` o `P` con su linea, en un fichero con una fila por paso como
-   `.v66ext/fidelidad.tsv` (la clausula reescrita CUENTA como `P`, `ACTA 62` `62.5`). **Todo PUENTE se corrige en la ficha de
-   la bandeja por correccion declarada, con el texto viejo dentro, ANTES del barrido**: una ficha que cambia despues de su
-   barrido tiene un barrido que ya no es suyo (`d031`). Publica `PASOS INVENTADOS` **una fila por capitulo**, por
-   instrumento, y marca discutible todo paso en que dudes.
-2. **El barrido de los `20`, sobre las fichas ya corregidas y con las filas `21` y `22` ya dentro**, contra **GRAFO MAS
-   BANDEJAS** (`D.38.4`), con copias de `.v66ext/barrido_uno.py` y `.v66ext/barrer.sh` con la lista de `cap_05` y `cap_06`:
-   **cinco a la vez como mucho, un log con su `INICIO` y su `TODOS TERMINADOS`, y los `20` recogidos dentro de tu turno.**
-3. **Los veredictos listos, uno por vecino**, en el formato de `--veredicto` y con un bloque por candidato como
-   `.v66ext/veredictos_listos.txt`: **leidos con los pasos de los dos delante** (`python .v64aud/pasos.py <a> <b>`) y por la
-   vara `6.1`, y solo esa. **Y comprobado por instrumento que cada vecino del barrido tiene su linea y cada linea su
-   vecino**, con una copia de `.v67ext/comprobar_veredictos.py`.
-4. **Las aristas por lectura** (`D.29`, `D.53`), en un fichero como `.v66ext/aristas_lectura.txt`, con su tramo de madre y de
-   hijo y su linea del libro, **mirando tambien madres que ya viven en el grafo** (la `67` cableo cuatro asi). **`D.37`**: los
-   titulos que dicen cuantas partes tienen (*tres clases*, *seis preguntas*) se miran como en la `66`: si alguna parte es
-   nodo, la arista cabeza a parte se declara.
-5. **El orden de insercion de los `20`**, con una copia de `.v67ext/orden.py`: **madre antes que hijo, `D.36`, y las tres
-   comprobaciones en cero.**
+1. **Lee `cap_05` L37 y L39 con la ficha delante y decide por la vara de `EXTRACTOR.md` `9.1`**, la misma con la que se
+   recorto el resto de `cap_05`: si cada mitad es un nodo por si sola (su linea normativa y sus pasos) o si una de las dos no
+   pasa la vara sin la otra. **Escribelo en tu reporte con la linea de cada lado, y marca discutible si dudas.**
+2. **SI NO SE PARTE:** pagas `d053` con tu razon y nada mas cambia.
+3. **SI SE PARTE:** las dos fichas nuevas en la bandeja, con la vieja dentro por correccion declarada y **los mismos pasos**, sin
+   reescribir ninguno (su fidelidad ya esta firmada `T`, `ACTA 67` `67.4.a`); **y como una ficha nueva cambia la poblacion de
+   todas**, el barrido de la tanda entera (`21` fichas) otra vez, con copias de `.v68ext/barrido_uno.py` y `.v68ext/barrer.sh` en
+   `.v69ext/`, cinco a la vez y recogido dentro del turno; los veredictos de los pares nuevos, uno por vecino, leidos con los
+   pasos de los dos delante; la comprobacion y el orden de la TAREA 2 corridos sobre ese barrido; y la huella de las `21`.
+   **Si el barrido no te cabe, NO lo lances**: deja la ficha sin partir, no pagues `d053`, y lo dices con su fila vacia.
 
-**Si la TAREA 3 no te cabe entera, parte por capitulo y por donde se pueda auditar**: `cap_05` entero antes que `cap_06`, y
-dentro de cada uno la fidelidad antes que el barrido y el barrido antes que los veredictos. **Lo que no hagas lo dices con su
-fila vacia**, y la siguiente vuelta de insercion empieza por ahi.
+## TAREA 4: **`d056`: LA COLA DE LECTURA DE LA TANDA `52`**
 
-## TAREA 4: **EL CIERRE**
+**La deuda:** *los informes corren de uno en uno ... SE COBRA EL DIA DE LA INSERCION ... se recorre la cola sobre la poblacion de
+ese dia y se veredicta lo que falte*. **La `68` hizo ese recorrido** sobre poblacion `479` con las `20` fichas dentro: `118` pares y
+`118` lineas, cero vecinos sin linea (`68.3.3`, reproducido identico en la `ACTA 67` `67.1`). **Paga `d056` citandolo**, con la
+salida de tu copia de `comprobar_veredictos.py` de la TAREA 2 pegada debajo, **y di en una linea que queda para la `70`**: la
+aduana de `insertar` vuelve a medir sobre la poblacion de ese dia, y lo que levante sin linea se lee en el acto (`d031`).
 
-- **El censo antes y despues**: nodos, veredictos, pares mutuos, bandeja de Grove e insertados. Si entran las dos, el grafo
-  queda en `390`, la bandeja en `47` y `_insertados` en `45`.
-- **Las aristas de la tanda, contadas por instrumento**: las dos por lectura, vivas en el grafo.
-- **`PASOS INVENTADOS POR CAPITULO`, una fila por capitulo**: la de lo que ENTRO (`cap_04`, las dos filas, contadas desde
-  `.v66ext/fidelidad.tsv`, que la `ACTA 65` firmo) **y aparte las de `cap_05` y `cap_06`**, que son preparacion y no entrada.
-- **`D.61`**: cada discutible ejecutado o cerrado. Ninguno abierto.
-- **`R5`** en cada bloque `$` de tu tramo, **medido con `.v64ext/pegado64.py` y `.v64aud/normal/bloques_mudos.py` con la
-  cabecera cambiada a la `68`**, y pegado.
+## TAREA 5: **EL CIERRE**
+
+- **Declara la vuelta de saneamiento en el registro** (`d085`):
+
+      python scripts/deuda.py --saneamiento --vuelta 69
+
+- **Paga solo lo que pagaste**, con `python scripts/deuda.py --pagar <id> --vuelta 69 --como "..."`: `d053` si esta decidida y,
+  si se partio, con las `21` fichas barridas y veredictadas; `d056` si la TAREA 4 esta pegada. **Lo que quede a medias se queda
+  pendiente y se dice.**
+- **La cuenta de aristas esperadas en la `70` y la huella de las fichas preparadas**, las dos por instrumento, corridas despues
+  del ultimo cambio: la huella con una copia de `.v68ext/pasos_y_huellas.py` en `.v69ext/`.
+- **`PASOS INVENTADOS POR CAPITULO`**: si nada cambia en las fichas, **una linea que lo diga** (`cap_05` `0` de `84`, `cap_06` `0` de
+  `62`, firmados en la `ACTA 67`); si `d053` parte la ficha, la fila de `cap_05` recontada por instrumento.
+- **`D.61`**: cada discutible, ejecutado o cerrado. Ninguno abierto.
+- **`R5`** en cada bloque `$` de tu reporte, **medido con `.v64ext/pegado64.py` y `.v64aud/normal/bloques_mudos.py` con la
+  cabecera cambiada a la `69`**, y pegado.
 - `python forja.py gate`, `python forja.py guiones`, `python tests/test_aceptacion.py` y `python scripts/cerrar_reporte.py`,
-  **pegados**. **El cierre estricto tiene que salir en verde: cualquier rojo es tuyo.**
-- Commitea `docs/loop/`, `dataset/`, `bitacora/`, `censos/`, los movidos a `_insertados`, las fichas corregidas de la bandeja
-  y tu carpeta `.v68ext/`. **Si nada te obliga a parar, no escribas `PARA_ALEXIS.md`.**
-- **La huella de las `20` fichas preparadas**, con una copia de `.v67ext/pasos_y_huellas.py` con la lista de `cap_05` y
-  `cap_06`, corrida despues del ultimo cambio de ficha y pegada: es contra lo que la `70` comprobara que entra lo que se leyo.
+  **en verde y pegados**.
+- **El censo antes y despues** tiene que salir igual en el dato, porque esta vuelta no inserta: **`390` nodos, `904` veredictos,
+  `1` par mutuo, `45` insertados de Grove**, y la bandeja en `47` (o en `48` si `d053` parte la ficha, y lo dices).
+- Commitea `docs/loop/`, lo que cambies en `.v68ext/`, las fichas si las partiste, y tu carpeta `.v69ext/`. **Si nada te obliga
+  a parar, no escribas `PARA_ALEXIS.md`.**
 
 ---
 
 ## LO QUE NO HACES
 
-- **NO LANZAS NADA EN SEGUNDO PLANO QUE TOQUE EL DATASET**, y **NO TERMINAS TU TURNO CON NADA VIVO**, ni un `insertar` ni un
-  barrido.
-- **NO INSERTAS NINGUNO DE `cap_05` NI DE `cap_06`.** Su insercion es de la `70`, despues de que la `ACTA 67` adjudique su
-  fidelidad y sus veredictos y de que pase la saneamiento de la `69`.
+- **NO INSERTAS.** Ni un `insertar`, ni un veredicto en `bitacora/`, ni una arista en el dataset.
+- **NO REESCRIBES NINGUN PASO de las `20` fichas.** Su fidelidad esta firmada; partir una ficha no es reescribirla.
 - **NO TOCAS `cuarentena/gerber_emyth/` NI `cuarentena/marquet_turn_the_ship/`**: van despues de Grove, en ese orden.
 - **NO TOCAS `src/`, `scripts/`, el banco, el arnes ni los protocolos** (`7.F`, `D.55`), **ni `APERTURA_CIEGA.md`**.
-- **NO REORDENAS LA COLA A MANO.**
-- **NO ABRES NINGUN LIBRO.** El mundo `11` cierra con siete.
+- **NO REORDENAS LA COLA A MANO**, y **NO ABRES NINGUN LIBRO.** El mundo `11` cierra con siete.
 
 ---
 

@@ -1,0 +1,7 @@
+contar_fidelidad: IDENTICO
+comprobar_veredictos: IDENTICO
+orden: IDENTICO
+aristas_vuelta: IDENTICO
+pasos_inventados: IDENTICO
+pasos_y_huellas: IDENTICO
+pasos_y_huellas_21_22: DISTINTO

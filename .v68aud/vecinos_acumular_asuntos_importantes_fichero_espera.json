@@ -1,0 +1,85 @@
+{
+ "id": "acumular_asuntos_importantes_fichero_espera",
+ "grafo": 390,
+ "bandejas": 89,
+ "vecinos": [
+  {
+   "id": "tomar_notas_copia_guion_reunion_individual",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.508,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.562
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 1 de tomar_notas_copia_guion_reunion_individual"
+  },
+  {
+   "id": "alentar_asuntos_corazon_vigilar_final_reunion",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.498,
+    "familia_id": 0.1,
+    "paso_contra_nodo": 0.446
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 7 de alentar_asuntos_corazon_vigilar_final_reunion"
+  },
+  {
+   "id": "conducir_reunion_individual_telefono_distancia",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.491,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.451
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 4 de conducir_reunion_individual_telefono_distancia"
+  },
+  {
+   "id": "facilitar_expresion_subordinado_pregunta_mas",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.484,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.437
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 4 de facilitar_expresion_subordinado_pregunta_mas"
+  },
+  {
+   "id": "programar_reunion_individual_cadena",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.432,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.438
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 5 de programar_reunion_individual_cadena"
+  },
+  {
+   "id": "preparar_guion_reunion_individual_subordinado",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.38,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.433
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 3 de preparar_guion_reunion_individual_subordinado"
+  }
+ ]
+}

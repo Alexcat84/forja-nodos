@@ -1,0 +1,26 @@
+pares suyos: 17 (SOSTENGO 9) | filas mias: 17 (SOSTENGO 4)
+  COINCIDE  agrupar_interrupciones_subordinados_reuniones_regulares > acumular_asuntos_importantes_fichero_espera        | suya SOSTENGO     | mia SOSTENGO
+  COINCIDE  agrupar_tareas_semejantes_aprovechar_preparacion   > acumular_asuntos_importantes_fichero_espera        | suya NO SOSTENGO  | mia (sin fila)
+  DISCREPA  agrupar_tareas_semejantes_aprovechar_preparacion   > infundir_regularidad_reunion_proceso               | suya SOSTENGO     | mia NO, DUDA
+  COINCIDE  buscar_regularidad_bloques_iguales_trabajo_mando   > infundir_regularidad_reunion_proceso               | suya SOSTENGO     | mia SOSTENGO, DUDA
+  COINCIDE  conducir_etapas_modelo_ideal_decision              > cortar_discusion_libre_momento_justo               | suya SOSTENGO     | mia SOSTENGO
+  COINCIDE  conducir_etapas_modelo_ideal_decision              > decidir_nivel_competente_inferior                  | suya NO SOSTENGO  | mia NO, DUDA
+  COINCIDE  conducir_etapas_modelo_ideal_decision              > ejercer_poder_posicion_etapa_decision_clara        | suya SOSTENGO     | mia SOSTENGO
+  COINCIDE  conducir_etapas_modelo_ideal_decision              > tomar_mando_reunion_pares_presidente_ausente       | suya NO SOSTENGO  | mia (sin fila)
+  COINCIDE  conducir_etapas_modelo_ideal_decision              > vencer_sindrome_grupo_pares_autoconfianza          | suya NO SOSTENGO  | mia (sin fila)
+  COINCIDE  cortar_discusion_libre_momento_justo               > ejercer_poder_posicion_etapa_decision_clara        | suya (sin fila)   | mia NO, DUDA
+  DISCREPA  elegir_estilo_direccion_madurez_relevante_tarea    > fijar_frecuencia_reunion_individual_madurez_tarea  | suya EN ESPERA    | mia NO, DUDA
+  COINCIDE  preparar_guion_reunion_individual_subordinado      > conducir_reunion_individual_telefono_distancia     | suya (sin fila)   | mia NO
+  COINCIDE  preparar_guion_reunion_individual_subordinado      > cubrir_indicadores_problemas_reunion_individual    | suya (sin fila)   | mia NO, DUDA
+  COINCIDE  supervisar_tarea_delegada_etapa_menor_valor        > fijar_frecuencia_reunion_individual_madurez_tarea  | suya (sin fila)   | mia NO
+  COINCIDE  tomar_mando_reunion_pares_presidente_ausente       > ejercer_poder_posicion_etapa_decision_clara        | suya (sin fila)   | mia NO
+  COINCIDE  usar_calendario_herramienta_planificacion_produccion > infundir_regularidad_reunion_proceso               | suya NO SOSTENGO  | mia (sin fila)
+  DISCREPA  usar_tres_clases_reunion_proceso                   > acumular_asuntos_importantes_fichero_espera        | suya SOSTENGO     | mia (sin fila)
+  DISCREPA  usar_tres_clases_reunion_proceso                   > alentar_asuntos_corazon_vigilar_final_reunion      | suya SOSTENGO     | mia (sin fila)
+  COINCIDE  usar_tres_clases_reunion_proceso                   > conducir_reunion_individual_telefono_distancia     | suya NO SOSTENGO  | mia (sin fila)
+  DISCREPA  usar_tres_clases_reunion_proceso                   > facilitar_expresion_subordinado_pregunta_mas       | suya SOSTENGO     | mia (sin fila)
+  COINCIDE  usar_tres_clases_reunion_proceso                   > fijar_frecuencia_reunion_individual_madurez_tarea  | suya (sin fila)   | mia NO, DUDA
+  DISCREPA  usar_tres_clases_reunion_proceso                   > programar_reunion_individual_cadena                | suya SOSTENGO     | mia (sin fila)
+  COINCIDE  usar_tres_clases_reunion_proceso                   > tomar_notas_copia_guion_reunion_individual         | suya NO SOSTENGO  | mia (sin fila)
+  COINCIDE  vencer_sindrome_grupo_pares_autoconfianza          > tomar_mando_reunion_pares_presidente_ausente       | suya (sin fila)   | mia NO
+  COINCIDE  zanjar_seis_preguntas_decision_adelantado          > anunciar_decision_inesperada_reconvocar_reunion    | suya (sin fila)   | mia NO

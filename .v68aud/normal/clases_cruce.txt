@@ -1,0 +1,9 @@
+pares dirigidos: suyos 118 | mios 118 | solo suyos [] | solo mios []
+pares sin orden: suyos 70 | mios (sin los 8 de cap_04) 70
+pares suyos leidos desde los dos lados con clase o madre distinta: 0 []
+pares con clase igual y madre igual: 66 | distintos: 4 | (igual/distinta, con duda mia): {('igual', False): 63, ('igual', True): 3, ('distinta', False): 4}
+   (['cubrir_indicadores_problemas_reunion_individual', 'usar_tres_clases_reunion_proceso'], 'mia SANO ', 'suya CONTINUA usar_tres_clases_reunion_proceso')
+   (['fijar_duracion_lugar_reunion_individual', 'usar_tres_clases_reunion_proceso'], 'mia SANO ', 'suya CONTINUA usar_tres_clases_reunion_proceso')
+   (['fijar_frecuencia_reunion_individual_madurez_tarea', 'usar_tres_clases_reunion_proceso'], 'mia SANO ', 'suya CONTINUA usar_tres_clases_reunion_proceso')
+   (['preparar_guion_reunion_individual_subordinado', 'usar_tres_clases_reunion_proceso'], 'mia SANO ', 'suya CONTINUA usar_tres_clases_reunion_proceso')
+clases suyas por linea: {'SANO': 106, 'CONTINUA': 12}

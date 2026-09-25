@@ -1,0 +1,11 @@
+INICIO 2026-09-24 21:58:06
+fijar_frecuencia_reunion_individual_madurez_tarea rc=127 segundos=33
+agrupar_interrupciones_subordinados_reuniones_regulares rc=127 segundos=33
+canalizar_interrupciones_cartel_hora_oficina rc=127 segundos=33
+usar_tres_clases_reunion_proceso rc=127 segundos=33
+fijar_duracion_lugar_reunion_individual rc=127 segundos=33
+preparar_guion_reunion_individual_subordinado rc=1 segundos=7
+cubrir_indicadores_problemas_reunion_individual rc=1 segundos=8
+facilitar_expresion_subordinado_pregunta_mas rc=1 segundos=8
+tomar_notas_copia_guion_reunion_individual rc=1 segundos=8
+acumular_asuntos_importantes_fichero_espera rc=1 segundos=8

@@ -1,0 +1,111 @@
+{
+ "id": "agrupar_interrupciones_subordinados_reuniones_regulares",
+ "grafo": 390,
+ "bandejas": 89,
+ "vecinos": [
+  {
+   "id": "sostener_contacto_oferta_aceptacion",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.094,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.7
+   },
+   "levantada_por": [
+    "paso_contra_nodo"
+   ],
+   "detalle_paso": "paso 4 del candidato contra paso 3 de sostener_contacto_oferta_aceptacion"
+  },
+  {
+   "id": "agendar_cuidados_propios_cumplirlos",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.129,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.615
+   },
+   "levantada_por": [
+    "paso_contra_nodo"
+   ],
+   "detalle_paso": "paso 4 del candidato contra paso 4 de agendar_cuidados_propios_cumplirlos"
+  },
+  {
+   "id": "nombrar_delegados_amigos_casa",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.127,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.609
+   },
+   "levantada_por": [
+    "paso_contra_nodo"
+   ],
+   "detalle_paso": "paso 4 del candidato contra paso 4 de nombrar_delegados_amigos_casa"
+  },
+  {
+   "id": "llevar_inventario_proyectos_discrecionales",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.352,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.478
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 1 de llevar_inventario_proyectos_discrecionales"
+  },
+  {
+   "id": "preparar_respuestas_estandar_interrupciones_repetidas",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.472,
+    "familia_id": 0.111,
+    "paso_contra_nodo": 0.417
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 1 de preparar_respuestas_estandar_interrupciones_repetidas"
+  },
+  {
+   "id": "canalizar_interrupciones_cartel_hora_oficina",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.403,
+    "familia_id": 0.111,
+    "paso_contra_nodo": 0.452
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 8 de canalizar_interrupciones_cartel_hora_oficina"
+  },
+  {
+   "id": "buscar_regularidad_bloques_iguales_trabajo_mando",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.38,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.415
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 1 de buscar_regularidad_bloques_iguales_trabajo_mando"
+  },
+  {
+   "id": "identificar_paso_limitante_jornada_desfases",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.351,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.377
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 4 del candidato contra paso 1 de identificar_paso_limitante_jornada_desfases"
+  }
+ ]
+}

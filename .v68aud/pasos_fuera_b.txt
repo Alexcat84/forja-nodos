@@ -1,0 +1,108 @@
+===== buscar_regularidad_bloques_iguales_trabajo_mando | grafo
+  titulo: Buscar la regularidad en el trabajo de mando alisando la carga, abriendo ventanas en la caja negra, y usando los mismos bloques de tiempo para las actividades iguales
+  fuente: ['grove_high_output']
+  cond: Cuando tu jornada de mando se te llena de parones y arranques y las actividades iguales te caen en momentos distintos cada semana.
+  P1. Aplica a tu trabajo de mando el siguiente concepto de produccion: ve hacia la regularidad.
+  P2. Alisa tu carga de trabajo todo lo que puedas, aunque no puedas controlar los habitos de los que te llegan, igual que una fabrica de desayunos iria mas eficiente si los clientes llegaran en un flujo estable y predecible en vez de entrar de uno en uno y de dos en dos.
+  P3. Haz que tu trabajo de mando tome las caracteristicas de una fabrica y no las de un taller a pedido.
+  P4. Impide en consecuencia, con todo lo que puedas, los pequenos parones y arranques de tu jornada, y tambien las interrupciones que traen las emergencias grandes.
+  P5. Busca siempre las fuentes de problemas futuros de prioridad alta abriendo ventanas en la caja negra de tu organizacion, aunque algunas de esas emergencias sean inevitables.
+  P6. Cuenta con lo que ganas al reconocer que tienes una bomba de relojeria entre manos: puedes atender el problema cuando tu quieras y no despues de que la bomba haya estallado.
+  P7. Coordina tu trabajo con el de los demas mandos, porque solo puedes ir hacia la regularidad si los otros van tambien.
+  P8. Usa, dicho de otro modo, los mismos bloques de tiempo para las actividades iguales.
+  P9. Toma el ejemplo que el libro da de Intel: las mananas de los lunes se apartaron en toda la empresa como el momento en que se reunen los grupos de planificacion, asi que quien pertenece a uno puede contar con el lunes para eso y queda libre de choques de agenda.
+===== agrupar_tareas_semejantes_aprovechar_preparacion | grafo
+  titulo: Agrupar las tareas semejantes en una tanda para aprovechar un solo esfuerzo de preparacion
+  fuente: ['grove_high_output']
+  cond: Cuando tienes por delante varias actividades de mando del mismo tipo y las estas atendiendo una a una segun llegan, pagando su preparacion cada vez.
+  P1. Aplica a tu trabajo de mando el segundo principio de produccion: agrupar las tareas semejantes.
+  P2. Cuenta con que toda operacion de fabricacion exige una cierta cantidad de tiempo de preparacion, y con que ese tiempo tiene muchos paralelos en el trabajo de mando.
+  P3. Para que el trabajo de mando avance con eficiencia, usa un mismo esfuerzo de preparacion y aplicalo a todo un grupo de actividades semejantes.
+  P4. Reutiliza lo que ya preparaste: una vez preparado un juego de ilustraciones para una clase de formacion, tu productividad sube si puedes usar ese mismo juego una y otra vez con otras clases o grupos.
+  P5. Cuando tengas varios informes que leer o varias evaluaciones de desempeno que aprobar, reserva un bloque de tiempo y hazlos en tanda, uno tras otro.
+  P6. Hazlo asi para aprovechar al maximo el tiempo de preparacion mental que esa tarea necesita.
+===== agrupar_interrupciones_subordinados_reuniones_regulares | grafo
+  titulo: Agrupar en tanda las interrupciones que llegan de los subordinados y atenderlas en las reuniones regulares de personal y de uno a uno, en vez de atenderlas al azar
+  fuente: ['grove_high_output']
+  cond: Cuando las interrupciones de tus subordinados te caen al azar a lo largo del dia y las atiendes segun llegan.
+  P1. Usa ademas el principio de produccion de la tanda, que es atender de una vez un grupo de tareas semejantes.
+  P2. Acumula con ese principio muchas de las interrupciones que te vienen de tus subordinados, en vez de atenderlas al azar.
+  P3. Atiende esas interrupciones acumuladas en las reuniones de personal y en las reuniones de uno a uno.
+  P4. Manten esas reuniones con regularidad.
+  P5. Pide entonces a tu gente que agrupe sus preguntas y problemas para esos momentos programados en vez de interrumpirte cuando quiera, porque con las reuniones celebradas con regularidad no pueden protestar mucho.
+===== canalizar_interrupciones_cartel_hora_oficina | grafo
+  titulo: Canalizar las interrupciones a una forma organizada y programada colgando el cartel en la puerta y teniendo despues una hora de oficina abierta
+  fuente: ['grove_high_output']
+  cond: Cuando los que te interrumpen a menudo te cortan el trabajo individual sin decidir antes si su asunto puede esperar, y tu unica salida hasta ahora era esconderte.
+  P1. Cuenta con que si los que te interrumpen supieran cuanto te estan molestando, probablemente se vigilarian mas de cerca y bajarian el numero de veces que sienten que tienen que hablar contigo ahora mismo.
+  P2. Obliga en todo caso a los que te interrumpen a menudo a tomar una decision activa sobre si su asunto puede esperar.
+  P3. Cuelga en tu puerta, en vez de esconderte, un cartel que diga: estoy haciendo trabajo individual, por favor no me interrumpas a menos que de verdad no pueda esperar hasta las 2:00.
+  P4. Ten despues una hora de oficina abierta, y se completamente receptivo con cualquiera que quiera verte.
+  P5. Entiende lo que es la clave: los que te interrumpen tienen problemas legitimos que hay que atender, y por eso te los traen.
+  P6. Canaliza el tiempo que hace falta para atenderlos a una forma organizada y programada, ofreciendo una alternativa a la interrupcion: una reunion programada o una hora de oficina.
+  P7. Impon con todo ello un patron a la forma en que afrontas los problemas.
+  P8. Vuelve regular lo que antes era irregular, que es un principio de produccion fundamental, y afronta asi las interrupciones que te plagan.
+===== preparar_respuestas_estandar_interrupciones_repetidas | grafo
+  titulo: Preparar respuestas estandar para las clases de interrupcion que se repiten, y tenerlas disponibles para delegar buena parte del trabajo en personal con menos experiencia
+  fuente: ['grove_high_output']
+  cond: Cuando las mismas preguntas y los mismos problemas te llegan como interrupcion una y otra vez, y cada vez los atiendes desde cero.
+  P1. Aplica a las interrupciones que te llegan el siguiente concepto de produccion, porque hay formas mejores que esconderte: los fabricantes sacan productos estandar.
+  P2. Fija por esa analogia que clase de interrupciones estas recibiendo.
+  P3. Prepara respuestas estandar para las que aparecen mas a menudo.
+  P4. Cuenta con lo que hace que eso funcione: los clientes no salen con preguntas y problemas totalmente nuevos un dia tras otro, y las mismas tienden a aflorar una y otra vez.
+  P5. Reduce con esas respuestas estandar el tiempo que gastas atendiendo interrupciones.
+  P6. Ten esas respuestas disponibles, porque tenerlas a mano es ademas lo que te deja delegar buena parte de ese trabajo en personal con menos experiencia.
+===== elegir_estilo_direccion_madurez_relevante_tarea | cuarentena\grove_high_output\elegir_estilo_direccion_madurez_relevante_tarea.json
+  titulo: Elegir el estilo de direccion de un subordinado segun su madurez relevante para la tarea concreta: estructurado si es baja, comunicador si es media, minimo si es alta, y siempre con vigilancia para no abandonar
+  fuente: ['grove_high_output']
+  cond: Cuando tienes que decidir con que estilo dirigir a un subordinado en una tarea concreta y no sabes si conviene darle instrucciones detalladas, acompanarlo con comunicacion y apoyo, o dejarlo actuar con poca supervision.
+  P1. Evalua la madurez relevante para la tarea (TRM) de tu subordinado: la combinacion de su orientacion al logro, su disposicion a asumir responsabilidad, su educacion, su formacion y su experiencia.
+  P2. Trata esa TRM como especifica de la tarea concreta y no como la madurez general de la persona: puede ser alta en un puesto y baja en otro.
+  P3. Cuenta con que la TRM de una persona puede caer si el ritmo del puesto se acelera o si el puesto cambia de golpe, aunque antes fuera alta para ese nivel de complejidad, incertidumbre y ambiguedad.
+  P4. Si la TRM es baja, usa un estilo estructurado y orientado a la tarea: dile al subordinado que hay que hacer, cuando y como, con instrucciones precisas y detalladas.
+  P5. Si la TRM del subordinado crece, mueve el estilo hacia uno mas dado a la comunicacion, el apoyo emocional y el animo, prestando mas atencion al subordinado como individuo que a la tarea misma.
+  P6. Si la TRM se vuelve todavia mayor, mantén tu involucramiento al minimo y limitate sobre todo a asegurar que los objetivos hacia los que trabaja el subordinado esten acordados mutuamente.
+  P7. Sea cual sea la TRM, vigila siempre el trabajo del subordinado lo bastante de cerca para evitar sorpresas: la presencia o ausencia de esa vigilancia es la diferencia entre delegar una tarea y abandonarla.
+  P8. No juzgues un estilo estructurado como menos valioso que uno orientado a la comunicacion, ni dejes que lo que te parezca mas simpatico decida tu eleccion: lo que importa es cual de los dos es mas eficaz.
+===== supervisar_tarea_delegada_etapa_menor_valor | grafo
+  titulo: Supervisar una tarea delegada como se supervisa la calidad: en la etapa de menor valor anadido, con frecuencia variable y entrando en el detalle al azar
+  fuente: ['grove_high_output']
+  cond: Cuando ya has delegado una tarea y tienes que decidir en que punto la miras, cada cuanto la miras y hasta que detalle entras, sin convertir el seguimiento en intromision.
+  P1. Trata el seguimiento de los resultados de la delegacion como lo que el libro dice que se parece: el seguimiento que se usa en el aseguramiento de la calidad.
+  P2. Aplica los principios del aseguramiento de la calidad y supervisa en la etapa del proceso de menor valor anadido.
+  P3. Revisa, por ejemplo, los borradores en sucio de los informes que has delegado, y no esperes a que tus subordinados hayan gastado su tiempo en pulirlos hasta su forma final para descubrir entonces que tienes un problema basico con el contenido.
+  P4. Emplea un enfoque variable para la frecuencia con la que compruebas el trabajo de tus subordinados, usando esquemas de muestreo distintos con subordinados distintos.
+  P5. Sube o baja esa frecuencia segun el subordinado este ejecutando una tarea recien delegada o una con la que ya tiene experiencia.
+  P6. No bases cada cuanto supervisas en lo que creas que tu subordinado puede hacer en general, sino en su experiencia con esa tarea concreta y en su desempeno previo con ella, que es su madurez relativa a la tarea.
+  P7. A medida que el trabajo del subordinado mejora con el tiempo, responde con una reduccion correspondiente de la intensidad del seguimiento.
+  P8. Para aplicar bien los principios del aseguramiento de la calidad, entra en los detalles solo al azar, lo justo para intentar asegurar que el subordinado avanza de forma satisfactoria.
+  P9. Cuenta con que entrar en todos los detalles de una tarea delegada seria como probar en aseguramiento de la calidad el cien por cien de lo que fabricacion saco.
+===== dimensionar_numero_subordinados_medio_dia_semanal | grafo
+  titulo: Dimensionar cuantos subordinados llevas a partir del medio dia por semana que cada uno pide, contando tambien los equivalentes y el caso del reparto estrecho
+  fuente: ['grove_high_output']
+  cond: Cuando tienes que decidir de cuantas personas respondes como mando, o cuando la organizacion de tu negocio te deja con muy pocas reportando directamente.
+  P1. Cuenta cuantos subordinados tienes, porque su numero es un componente importante de la palanca de un mando: si no tienes bastantes tu palanca baja, y si tienes demasiados te atascas, con el mismo resultado.
+  P2. Toma como regla de andar por casa que un mando cuyo trabajo es en su mayor parte de supervision deberia tener de seis a ocho subordinados: tres o cuatro son demasiado pocos y diez son demasiados.
+  P3. Saca esa horquilla de la guia de la que viene: dedica alrededor de medio dia por semana a cada uno de tus subordinados.
+  P4. Contrasta esa guia por sus dos extremos: dos dias por semana y por subordinado llevarian probablemente a meterte en su trabajo, y una hora por semana no da oportunidad suficiente de supervisarlo.
+  P5. Aplica la regla de seis a ocho al mando clasicamente jerarquico, cuyo trabajo principal es la supervision de otros.
+  P6. Cuenta con que un mando de saber hacer, el mando intermedio que sobre todo aporta pericia e informacion, puede tener una jornada completa atendiendo a varios clientes internos como consultor interno aunque no tenga ni un solo subordinado.
+  P7. Cuenta como equivalente de un subordinado a cada dedicacion de alrededor de medio dia por semana como miembro de un grupo de planificacion, de asesoria o de coordinacion.
+  P8. Si eres a la vez supervisor jerarquico y proveedor de saber hacer, intenta tener un total de seis a ocho subordinados o sus equivalentes.
+  P9. Cuando el negocio este organizado de forma que ese reparto ideal sea dificil de alcanzar, como en la planta que solo tiene una seccion de ingenieria y una de produccion, elige actuar tu como uno de los dos subordinados y haz de jefe de una de las dos secciones.
+  P10. Comprueba lo que ese arreglo te deja: el jefe de la otra seccion te sigue reportando y has sumado a las personas que reportarian al jefe de la seccion que asumiste, y colocalo de forma que esas personas no aparezcan al mismo nivel de organizacion que el jefe que ya estaba, porque se lo tomaria a mal.
+  P11. Cuenta con lo que ese arreglo evita: que el jefe de planta se vea empujado a la jubilacion en el puesto o a meterse en el trabajo de otros.
+===== delegar_tarea_base_comun_seguimiento | grafo
+  titulo: Delegar una tarea sobre una base comun de informacion, sin farsa y con su seguimiento, porque delegar sin seguimiento es abdicar
+  fuente: ['grove_high_output']
+  cond: Cuando vas a pasar una tarea tuya a un subordinado y quieres que el resultado llegue sin tener que prescribirle cada actividad en detalle.
+  P1. Cuenta con que el tiempo de un mando tiene una jerarquia de valores, y con que por eso la delegacion es un aspecto esencial del mando.
+  P2. Antes de delegar, comprueba que quien delega y quien recibe comparten una base comun de informacion y un conjunto comun de ideas o nociones operativas sobre como abordar la resolucion de problemas, que es un requisito que muchas veces no se cumple.
+  P3. Cuenta con que, si las dos partes no comparten esa base comun relevante, quien recibe solo puede llegar a ser un delegado efectivo con instrucciones especificas, y eso, igual que en la intromision donde las actividades concretas se prescriben en detalle, produce palanca de mando baja.
+  P4. Revisa que tareas no quieres soltar en realidad: todos tenemos algunas que no queremos delegar simplemente porque nos gusta hacerlas y preferimos no soltarlas.
+  P5. Deja que eso pase solo si se apoya en una decision consciente de retener ciertas tareas que disfrutas haciendo aunque pudieras delegarlas si quisieras; sabe exactamente lo que estas haciendo y evita la farsa de la delegacion insincera, que produce una palanca de mando negativa inmensa.
+  P6. Antes de decidir si delegas las actividades que te son familiares o las que no, aplica el principio: delegar sin seguimiento es abdicar.
+  P7. Cuenta con que nunca puedes lavarte las manos de una tarea: aun despues de delegarla sigues siendo responsable de que se cumpla, y supervisar la tarea delegada es la unica via practica que tienes de asegurar un resultado.
+  P8. Separa el seguimiento de la intromision: supervisar no es entrometerse, sino comprobar que una actividad avanza en linea con lo que se espera de ella.
+  P9. Elige con esa vara que delegas: como es mas facil supervisar algo que te resulta familiar, si tienes eleccion delega aquellas actividades que mejor conoces.
+  P10. Cuenta de antemano con lo que el experimento del lapiz ensena: es muy probable que hacerlo asi vaya en contra de tu fibra emocional.

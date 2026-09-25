@@ -1,0 +1,1 @@
+conducir_etapas_modelo_ideal_decision poblacion 479 (390 grafo mas 89 bandejas) vecinos 0

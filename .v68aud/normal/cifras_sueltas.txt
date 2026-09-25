@@ -1,0 +1,4 @@
+aristas_lectura.txt: filas {'SOSTENGO': 9, 'NO SOSTENGO': 5} | pares {'SOSTENGO': 9, 'NO SOSTENGO': 7}
+pares dirigidos entre dos de cap_05: 76 | similitud de texto min 0.320 max 0.630
+.v68ext\insertar_21_agrupar_in linea 14: blocking multi señal contra 479   (388 del grafo mas 91 que esperan en bandejas)
+.v68ext\insertar_22_canalizar_ linea 7: blocking multi señal contra 479   (389 del grafo mas 90 que esperan en bandejas)

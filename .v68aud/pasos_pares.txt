@@ -1,0 +1,134 @@
+===== aprender_resultados_vencer_dos_presiones | grafo
+  titulo: Aprender de los resultados venciendo las dos presiones que empujan a dejar de aprender
+  fuente: ['scott_radical_candor']
+  cond: Cuando tu equipo y tu habeis dado la vuelta entera a la rueda, habeis conseguido algo, y ahora hay que mirar el resultado de verdad.
+  P1. Cuenta con lo que el texto llama naturaleza humana: que nos apegamos, a menudo de forma poco razonable, a los proyectos en los que hemos metido mucho tiempo y mucha energia.
+  P2. Reune la disciplina casi sobrehumana que hace falta para dar un paso atras.
+  P3. Reconoce cuando vuestros resultados podrian ser mucho mejores, o cuando directamente no son buenos.
+  P4. Aprende de la experiencia.
+  P5. Cuenta con que la negacion es la reaccion mas comun a una ejecucion imperfecta, mas comun que el aprendizaje, y con el motivo que el texto pone en boca de un colega: es insoportablemente doloroso admitirlo cuando tienes un bebe feo.
+  P6. Vence las dos enormes presiones que el texto dice que tentaban a la autora a dejar de aprender cuando dirigia un equipo grande: la presion de ser coherente, y el agotamiento.
+===== archivar_indicadores_resolver_problemas | grafo
+  titulo: Mantener un archivo de indicadores para poder repasarlos el dia que algo vaya mal
+  fuente: ['grove_high_output']
+  cond: Cuando ya tienes indicadores en marcha y tienes que decidir si los guardas o los tiras, sabiendo que el dia que algo se rompa no vas a tener tiempo de salir a buscar la informacion.
+  P1. Recoge de forma sistematica los indicadores de tu operacion y mantenlos en un archivo, en vez de dejar que se pierdan segun pasan los dias.
+  P2. Haz que ese archivo sea un banco de informacion que ensene de golpe todos los parametros de tu operacion.
+  P3. Cuando algo vaya mal, repasa en ese archivo todos esos parametros.
+  P4. Busca en ese repaso las desviaciones no sanas respecto de la norma, que es lo que te senala donde esta el problema.
+===== cerrar_brecha_dos_preguntas_estrategia | cuarentena\grove_high_output\cerrar_brecha_dos_preguntas_estrategia.json
+  titulo: Cerrar la brecha entre demanda y rendimiento contestando por separado que necesitas hacer y que puedes hacer, y llamar estrategia al conjunto que decidas
+  fuente: ['grove_high_output']
+  cond: Cuando ya tienes medida la demanda de tu entorno y tu estado presente, y te queda decidir que vas a hacer con la diferencia entre los dos.
+  P1. Emprende tareas nuevas o modifica las que ya tienes para cerrar la brecha entre la demanda de tu entorno y lo que tus actividades presentes van a rendir.
+  P2. Contesta la primera pregunta: que necesitas hacer para cerrar la brecha.
+  P3. Contesta la segunda pregunta: que puedes hacer para cerrar la brecha.
+  P4. Considera cada una de las dos preguntas por separado.
+  P5. Decide despues que vas a hacer realmente.
+  P6. Evalua al decidirlo que efecto van a tener tus acciones sobre el estrechamiento de la brecha, y cuando lo van a tener.
+  P7. Llama estrategia al conjunto de acciones que decidas.
+===== contestar_dos_preguntas_direccion_objetivos | cuarentena\grove_high_output\contestar_dos_preguntas_direccion_objetivos.json
+  titulo: Montar el sistema de direccion por objetivos sobre las dos unicas preguntas que tiene que contestar: adonde quiero ir, y como me marco el ritmo para ver si estoy llegando
+  fuente: ['grove_high_output']
+  cond: Cuando vas a montar un sistema de direccion por objetivos, o cuando el que tienes ha crecido tanto que ya no sabes que es lo que tiene que contestar.
+  P1. Monta el sistema sabiendo que para tener exito solo necesita contestar dos preguntas.
+  P2. Contesta la primera pregunta: adonde quiero ir.
+  P3. Toma la respuesta de esa primera pregunta como tu objetivo.
+  P4. Contesta la segunda pregunta: como voy a marcarme el ritmo para ver si estoy llegando.
+  P5. Toma la respuesta de esa segunda pregunta como tus hitos, es decir, tus resultados clave.
+===== definir_entorno_grupo_clientes_proveedores_competidores | cuarentena\grove_high_output\definir_entorno_grupo_clientes_proveedores_competidores.json
+  titulo: Definir tu entorno mirando tu grupo como si fuera una empresa independiente: clientes, proveedores y competidores
+  fuente: ['grove_high_output']
+  cond: Cuando vas a dar el paso 1 de la planificacion, el de la demanda del entorno, y no sabes todavia que cuenta como tu entorno ni donde acaba.
+  P1. Mira tu propio grupo dentro de la organizacion como si fuera una empresa independiente.
+  P2. Anota como entorno los otros grupos de ese tipo que influyen directamente en lo que haces.
+  P3. Lista a tus clientes, que son quienes necesitan tus servicios.
+  P4. Lista a tus proveedores, que son quienes pueden darte determinadas capacidades.
+  P5. Lista por ultimo a tus competidores.
+  P6. Cuenta con que dentro de la organizacion no tienes competidores, y en su lugar compara tu servicio con uno de fuera para juzgar tu desempeno y fijar tus estandares.
+===== planificar_tres_pasos_demanda_estado_brecha | cuarentena\grove_high_output\planificar_tres_pasos_demanda_estado_brecha.json
+  titulo: Planificar en los tres pasos del libro: la demanda del entorno, el estado presente, y lo que hay que hacer para conciliarlos
+  fuente: ['grove_high_output']
+  cond: Cuando tienes que planificar el trabajo de tu grupo y no sabes por donde empezar, o cuando lo que llamas plan es una lista de intenciones y no una comparacion entre lo que te van a pedir y lo que vas a producir.
+  P1. Monta tu proceso general de planificacion sobre un razonamiento analogo al de la fabrica, y no sobre otra cosa.
+  P2. Da el paso 1 estableciendo la necesidad o demanda proyectada: que va a demandar de ti el entorno, de tu negocio o de tu organizacion.
+  P3. Da el paso 2 estableciendo tu estado presente: que estas produciendo ahora, y que vas a estar produciendo cuando se completen los proyectos que ya tienes en marcha.
+  P4. Formula ese paso 2 tambien de la otra manera, que es la que obliga a contestarlo: donde va a estar tu negocio si no haces nada distinto de lo que estas haciendo.
+  P5. Da el paso 3 comparando y conciliando los pasos 1 y 2.
+  P6. Convierte esa conciliacion en la pregunta concreta: que mas, o que menos, necesitas hacer para producir lo que tu entorno va a demandar.
+===== responder_primer_aviso_renuncia_subordinado | cuarentena\grove_high_output\responder_primer_aviso_renuncia_subordinado.json
+  titulo: Responder al primer momento en que un subordinado valioso avisa que quiere renunciar: dejar lo que haces, escucharlo sin discutir y comprarte tiempo antes de actuar
+  fuente: ['grove_high_output']
+  cond: Cuando un subordinado valioso y estimado se acerca al mando y anuncia, de pasada, que ha decidido dejar la empresa.
+  P1. Deja lo que estas haciendo en cuanto el subordinado te avisa de que quiere renunciar, en vez de posponer la conversacion para mas tarde.
+  P2. Sientalo y preguntale por que se va.
+  P3. Dejalo hablar sin discutir nada de lo que diga, aunque sus razones no te parezcan buenas.
+  P4. Cuando haya terminado de exponer sus razones, hazle mas preguntas para que los asuntos de fondo puedan salir a la luz.
+  P5. No discutas, no sermonees y no entres en panico durante esta primera conversacion.
+  P6. Pide el tiempo que necesites para prepararte antes del siguiente encuentro, en vez de intentar resolverlo todo en el momento.
+  P7. Cumple despues con lo que te hayas comprometido a hacer en esta primera conversacion.
+===== supervisar_decision_delegada_preguntas_concretas | grafo
+  titulo: Supervisar una decision delegada por su proceso de reflexion: preguntas bastante concretas en la reunion de revision
+  fuente: ['grove_high_output']
+  cond: Cuando lo que has delegado en un subordinado no es una tarea sino un tipo de decision, y tienes que aprobarla sin volver a hacer tu mismo toda la reflexion que el ya hizo.
+  P1. Cuenta con que hay tipos de decision que los mandos delegan con frecuencia en sus subordinados.
+  P2. Supervisa esa delegacion por su proceso de decision, que es la mejor manera de hacerla.
+  P3. Pide al subordinado que piense el asunto entero con cuidado antes de presentarte su peticion de aprobacion.
+  P4. Para supervisar lo buena que es su reflexion, hazle preguntas bastante concretas sobre su peticion durante una reunion de revision.
+  P5. Si las responde de forma convincente, aprueba lo que pide.
+  P6. Cuenta con que esta tecnica te permite averiguar lo buena que es la reflexion sin tener que recorrerla tu mismo.
+===== dirigir_reunion_decision | grafo
+  titulo: Dirigir una reunion cuyo resultado excelente es una decision tomada
+  fuente: ['zhuo_manager']
+  cond: Cuando el resultado excelente que persigues es que se tome una decision y que quede tomada, y hay opciones distintas sobre la mesa.
+  P1. Enmarca las distintas opciones que hay sobre la mesa y pide a quien decide que tome la decision.
+  P2. Persigue las dos cosas a la vez: llegar a una decision clara, y que todo el mundo salga con sensacion de confianza en el proceso.
+  P3. No busques consenso. Lo que hace falta es que aquellos a quienes la decision afecta sientan que la manera en que se tomo fue eficiente y justa. Si la gente no confia en el proceso, lo que veras es que la decision se alarga.
+  P4. Incluye a las personas mas directamente afectadas por la decision, y tambien a alguien claramente designado como quien decide.
+  P5. Presenta todas las opciones creibles de forma objetiva y con la informacion de contexto relevante, e incluye la recomendacion del equipo si la hay.
+  P6. Da el mismo tiempo de palabra a las opiniones discrepantes y haz que la gente sienta que fue escuchada.
+  P7. No tomes la decision habiendo oido un solo trozo de contexto. La autora cuenta el caso: su reporte le pidio mover una semana el plazo del trabajo de diseno porque no daba tiempo a explorar las tres opciones, ella contesto que le parecia bien, y despues aparecio el responsable de ingenieria diciendo que tenia siete ingenieros esperando los disenos terminados y que asi no llegaban a su propio hito.
+  P8. Si ya has decidido de esa manera y el otro lado aparece pidiendote rehacer la decision, admite que te equivocaste con tu proceso y reune a todos para volver a decidir. El libro dice que esa es la mejor salida que te queda, porque cambiar la decision a solas frustra al primero y no cambiarla enfada al segundo.
+  P9. No aceptes el argumento de que cualquier decision va a dejar a alguien descontento porque los dos lados discrepan. Todos en un equipo comparten en ultima instancia las mismas metas, y parte de trabajar bien juntos es depositar confianza en quien decide y en un proceso justo.
+  P10. Evita el primer mal resultado: que la gente sienta que su lado no se presento bien y por eso no confie en la decision que salio.
+  P11. Evita el segundo: que las decisiones tarden mucho en tomarse y eso retrase el avance. Las decisiones importantes y dificiles de revertir merecen consideracion profunda, pero desconfia de gastar demasiado tiempo en las pequenias y faciles de revertir.
+  P12. Evita el tercero: que las decisiones vayan y vuelvan una y otra vez, porque asi es dificil confiar en ellas y actuar sobre ellas.
+  P13. Evita el cuarto: que se gaste demasiado tiempo intentando llevar al grupo al consenso en vez de escalar rapido a quien decide.
+  P14. Evita el quinto: que se pierda tiempo rumiando el mismo argumento de veinte maneras distintas.
+===== entregar_evaluacion_desempeno_tres_claves | cuarentena\grove_high_output\entregar_evaluacion_desempeno_tres_claves.json
+  titulo: Entregar la evaluacion de desempeno cara a cara con las tres claves del mando: franqueza, escucha total y dejar fuera las emociones propias
+  fuente: ['grove_high_output']
+  cond: Cuando el mando va a entregar cara a cara, en la conversacion de revision, la evaluacion de desempeno de un subordinado.
+  P1. Se totalmente franco con el subordinado al entregarle la revision, tanto al elogiar como al criticar, porque la credibilidad y la integridad de todo el sistema de revision dependen de esa franqueza.
+  P2. Recuerda que el objetivo de la comunicacion es hacer llegar el pensamiento completo de tu cabeza a la del subordinado, y que las palabras son solo el medio para transmitirlo.
+  P3. Observa al subordinado mientras hablas y sigue insistiendo hasta estar seguro de que tu mensaje llego y se entendio, sin conformarte con que haya parafraseado tus palabras.
+  P4. Emplea toda tu capacidad sensorial, no solo el oido, para confirmar que tus puntos se estan interpretando correctamente en la cabeza del subordinado.
+  P5. Deja fuera tus propias inseguridades, ansiedades o culpa: la revision trata de los problemas del subordinado y no de los tuyos.
+  P6. Controla esas emociones propias para que no afecten tu tarea mientras entregas la revision, aunque sepas que van a aflorar.
+===== construir_indicador_tendencia_patron | grafo
+  titulo: Construir el indicador de tendencia midiendo la salida contra el tiempo y contra un patron
+  fuente: ['grove_high_output']
+  cond: Cuando ya tienes nombrada la salida de tu caja y quieres una ventana que te empuje a mirar hacia delante, en vez de una foto suelta del mes que acaba de cerrar.
+  P1. Monta el indicador de tendencia, que es otra ventana recortada en tu caja.
+  P2. Pon en el la salida de tu operacion: los desayunos entregados, los modulos de programa terminados o los comprobantes tramitados, segun lo que hagas.
+  P3. Mide esa salida contra el tiempo, o sea lo de este mes contra lo de una serie de meses anteriores.
+  P4. Mide esa misma salida tambien contra algun patron o nivel esperado.
+  P5. Extrapola del pasado hacia delante, que es a lo que te lleva casi solo el hecho de tener la tendencia a la vista.
+  P6. Cuando el resultado no coincida con lo que decia el patron, parate a pensar por que fue el que fue y no el que el patron anunciaba.
+===== pedir_critica_anonima_curso_entrenamiento_dictado | cuarentena\grove_high_output\pedir_critica_anonima_curso_entrenamiento_dictado.json
+  titulo: Pedir critica anonima tras dictar un curso de entrenamiento, con formulario numerico y preguntas abiertas
+  fuente: ['grove_high_output']
+  cond: Cuando el mando ya dicto su curso de entrenamiento y quiere saber si esta cumpliendo el proposito que se propuso.
+  P1. Despues de dar el curso, pide criticas anonimas a los empleados de tu clase.
+  P2. Usa un formulario que pida calificaciones numericas y que ademas plantee algunas preguntas abiertas.
+  P3. Estudia y considera las respuestas, entendiendo que nunca podras complacer a todos los miembros de tu clase por igual.
+  P4. Ten como objetivo ultimo satisfacerte a ti mismo de que estas logrando lo que te propusiste.
+===== priorizar_lista_entrenamiento_subordinados | cuarentena\grove_high_output\priorizar_lista_entrenamiento_subordinados.json
+  titulo: Priorizar la lista de en que hay que entrenar a los subordinados, tras preguntarles e inventariar los medios disponibles
+  fuente: ['grove_high_output']
+  cond: Cuando el mando decide abrazar el entrenamiento como tarea propia y necesita decidir por donde empezar, antes de desarrollar ningun curso.
+  P1. Haz una lista de las cosas en que crees que tus subordinados o los miembros de tu departamento deberian entrenarse, sin limitar el alcance de la lista.
+  P2. Incluye items que van desde lo que parece simple, como entrenar a la persona que atiende el telefono, hasta cosas mas generales y elevadas, como los objetivos y los sistemas de valores de tu departamento, tu planta y tu empresa.
+  P3. Pregunta a la gente que trabaja para ti que siente que necesita: es probable que te sorprenda contandote necesidades que nunca supiste que existian.
+  P4. Hecho esto, toma inventario de los mando maestros y los materiales instructivos disponibles para ayudar a impartir el entrenamiento de los items de tu lista.
+  P5. Asigna prioridades entre esos items.

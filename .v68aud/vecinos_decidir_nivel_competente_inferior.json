@@ -1,0 +1,46 @@
+{
+ "id": "decidir_nivel_competente_inferior",
+ "grafo": 390,
+ "bandejas": 89,
+ "vecinos": [
+  {
+   "id": "anunciar_decision_inesperada_reconvocar_reunion",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.364,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.472
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 2 del candidato contra paso 8 de anunciar_decision_inesperada_reconvocar_reunion"
+  },
+  {
+   "id": "vencer_sindrome_grupo_pares_autoconfianza",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.368,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.462
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 4 del candidato contra paso 1 de vencer_sindrome_grupo_pares_autoconfianza"
+  },
+  {
+   "id": "tomar_mando_reunion_pares_presidente_ausente",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.354,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.46
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 7 del candidato contra paso 3 de tomar_mando_reunion_pares_presidente_ausente"
+  }
+ ]
+}

@@ -1,0 +1,6 @@
+    390 dataset/nodos.jsonl
+    904 bitacora/VEREDICTOS.jsonl
+      1 config/pares_mutuos.jsonl
+   1295 total
+47
+45

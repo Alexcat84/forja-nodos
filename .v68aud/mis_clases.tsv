@@ -1,0 +1,79 @@
+a	b	clase	madre	lectura
+tomar_notas_copia_guion_reunion_individual	acumular_asuntos_importantes_fichero_espera	SANO		notas sobre el guion contra fichero de espera; los dos van al seguimiento de la reunion siguiente por caminos distintos
+acumular_asuntos_importantes_fichero_espera	alentar_asuntos_corazon_vigilar_final_reunion	SANO		fichero contra corazon a corazon
+acumular_asuntos_importantes_fichero_espera	conducir_reunion_individual_telefono_distancia	SANO		fichero contra telefono
+facilitar_expresion_subordinado_pregunta_mas	acumular_asuntos_importantes_fichero_espera	SANO		papel contra fichero
+acumular_asuntos_importantes_fichero_espera	programar_reunion_individual_cadena	SANO		fichero entre reuniones contra fecha de la siguiente
+preparar_guion_reunion_individual_subordinado	acumular_asuntos_importantes_fichero_espera	SANO		guion contra fichero de espera
+agrupar_interrupciones_subordinados_reuniones_regulares	sostener_contacto_oferta_aceptacion	SANO		ajeno (smart_who); comparten la palabra regularidad del paso 4 (sellada en la 66)
+agendar_cuidados_propios_cumplirlos	agrupar_interrupciones_subordinados_reuniones_regulares	SANO		ajeno (scott_radical_candor); agendar 4 es no saltarte tus citas contigo (sellada en la 66)
+agrupar_interrupciones_subordinados_reuniones_regulares	nombrar_delegados_amigos_casa	SANO		ajeno (smart_who); comparten la palabra regularidad del paso 4 (sellada en la 66)
+agrupar_interrupciones_subordinados_reuniones_regulares	llevar_inventario_proyectos_discrecionales	SANO		ajenos dentro del capitulo (sellada en la 66)
+agrupar_interrupciones_subordinados_reuniones_regulares	preparar_respuestas_estandar_interrupciones_repetidas	SANO		hermanos: dos remedios distintos a la interrupcion, L315 y L317 (sellada en la 66)
+agrupar_interrupciones_subordinados_reuniones_regulares	canalizar_interrupciones_cartel_hora_oficina	SANO		hermanos: tanda en reuniones (L317) contra cartel y hora de oficina (L321) (sellada en la 66)
+agrupar_interrupciones_subordinados_reuniones_regulares	buscar_regularidad_bloques_iguales_trabajo_mando	SANO		agrupar paso 4 (mantener las reuniones con regularidad) nombra la regularidad; su procedimiento es la tanda (L317) (sellada en la 66)
+agrupar_interrupciones_subordinados_reuniones_regulares	identificar_paso_limitante_jornada_desfases	SANO		ajenos dentro del capitulo (sellada en la 66)
+fijar_duracion_lugar_reunion_individual	alentar_asuntos_corazon_vigilar_final_reunion	SANO		duracion y lugar contra corazon a corazon
+alentar_asuntos_corazon_vigilar_final_reunion	conducir_reunion_individual_telefono_distancia	SANO		corazon a corazon contra telefono
+alentar_asuntos_corazon_vigilar_final_reunion	programar_reunion_individual_cadena	SANO		los dos miran el final de la reunion, AC para el asunto que se suelta y PC para fijar la siguiente; ningun paso compartido
+tomar_notas_copia_guion_reunion_individual	alentar_asuntos_corazon_vigilar_final_reunion	SANO		notas contra corazon a corazon
+preparar_guion_reunion_individual_subordinado	alentar_asuntos_corazon_vigilar_final_reunion	SANO		guion contra corazon a corazon
+facilitar_expresion_subordinado_pregunta_mas	alentar_asuntos_corazon_vigilar_final_reunion	SANO		hermanos del papel del supervisor: facilitar y preguntar una vez mas contra abrir la puerta al corazon a corazon y vigilar el final
+cortar_discusion_libre_momento_justo	anunciar_decision_inesperada_reconvocar_reunion	SANO		momento contra anuncio
+zanjar_seis_preguntas_decision_adelantado	anunciar_decision_inesperada_reconvocar_reunion	SANO		el ratificador de ZS paso 8 es el que da la palabra final en el ejemplo de L93, pero AD no usa la pregunta
+anunciar_decision_inesperada_reconvocar_reunion	contestar_dos_preguntas_direccion_objetivos	SANO		reconvocar tras una palabra final inesperada contra las dos preguntas de la direccion por objetivos. Ajenos
+tomar_mando_reunion_pares_presidente_ausente	anunciar_decision_inesperada_reconvocar_reunion	SANO		mando contra anuncio
+vencer_sindrome_grupo_pares_autoconfianza	anunciar_decision_inesperada_reconvocar_reunion	SANO		sindrome contra anuncio
+anunciar_decision_inesperada_reconvocar_reunion	definir_entorno_grupo_clientes_proveedores_competidores	SANO		anuncio y reconvocatoria contra definir el entorno del grupo. Ajenos
+anunciar_decision_inesperada_reconvocar_reunion	dirigir_reunion_decision	SANO		levantado por familia_id: el paso 8 de Zhuo reune a todos para volver a decidir cuando el proceso fue malo y el otro lado pide rehacer; Grove reconvoca para que la gente digiera una palabra final inesperada y opine, sin rehacer nada. El mismo gesto con dos fines y dos libros; ninguno repite al otro
+ejercer_poder_posicion_etapa_decision_clara	anunciar_decision_inesperada_reconvocar_reunion	SANO		rango contra anuncio; la decision de EP puede ser la inesperada, pero AD no parte de ella
+anunciar_decision_inesperada_reconvocar_reunion	entregar_evaluacion_desempeno_tres_claves	SANO		anuncio de una decision contra entregar la evaluacion de desempeno. Ajenos
+tomar_notas_copia_guion_reunion_individual	conducir_reunion_individual_telefono_distancia	CONTINUA	tomar_notas_copia_guion_reunion_individual	CT adapta a la distancia la toma de notas de TN (L55: note-taking can't work in the same way) y anade el intercambio de notas al terminar. DUDA: la condicion de CT es geografica y no el producto de TN
+conducir_reunion_individual_telefono_distancia	preguntar_conducir_reunion_individual	SANO		levantado por familia_id: el uno a uno por telefono (guion antes, notas, intercambio de notas) contra los tres grupos de preguntas de Zhuo para que lo lleve la persona a cargo. Ningun paso compartido; dos libros sobre la misma reunion, ninguno repite al otro
+conducir_reunion_individual_telefono_distancia	programar_reunion_individual_cadena	SANO		telefono contra fecha en cadena
+facilitar_expresion_subordinado_pregunta_mas	conducir_reunion_individual_telefono_distancia	SANO		papel contra telefono
+ejercer_poder_posicion_etapa_decision_clara	cortar_discusion_libre_momento_justo	SANO		hermanos, los dos hijos de CE: EP la legitimidad del rango, CD el momento. DUDA: el paso 5 de CD (si no sale el consenso, entra tu y decide) es el nucleo de EP, y la condicion de EP (el momento de decidir ha llegado claramente) es lo que CD decide
+vencer_sindrome_grupo_pares_autoconfianza	cortar_discusion_libre_momento_justo	SANO		sindrome contra momento de cortar
+cortar_discusion_libre_momento_justo	cerrar_brecha_dos_preguntas_estrategia	SANO		momento de cortar la discusion contra las dos preguntas de la estrategia. Ajenos
+cortar_discusion_libre_momento_justo	pedir_critica_anonima_curso_entrenamiento_dictado	SANO		momento de cortar contra critica anonima de un curso. Ajenos
+cortar_discusion_libre_momento_justo	construir_indicador_tendencia_patron	SANO		momento de cortar contra indicador de tendencia. Ajenos
+preparar_guion_reunion_individual_subordinado	cubrir_indicadores_problemas_reunion_individual	SANO		hermanos: PG decide QUIEN prepara y que hace el guion, CI QUE se trata. DUDA: la condicion de CI dice o preparando su guion, y el contenido de CI es el que va dentro del guion
+fijar_frecuencia_reunion_individual_madurez_tarea	cubrir_indicadores_problemas_reunion_individual	SANO		frecuencia contra contenido
+fijar_duracion_lugar_reunion_individual	cubrir_indicadores_problemas_reunion_individual	SANO		duracion y lugar contra contenido; FD paso 1 (tiempo para asuntos espinosos) no fija que se trata
+usar_tres_clases_reunion_proceso	cubrir_indicadores_problemas_reunion_individual	SANO		taxonomia contra contenido
+infundir_regularidad_reunion_proceso	cubrir_indicadores_problemas_reunion_individual	SANO		que clases de asuntos se tratan (IR paso 3, en general) contra la lista concreta del uno a uno; CI no parte de IR
+cubrir_indicadores_problemas_reunion_individual	facilitar_expresion_subordinado_pregunta_mas	SANO		hermanos: CI da la lista de que se trata y el criterio de lo que preocupa al subordinado (L43), FE el papel del supervisor y el principio de preguntar una vez mas (L45, L47)
+decidir_nivel_competente_inferior	anunciar_decision_inesperada_reconvocar_reunion	SANO		composicion contra anuncio
+decidir_nivel_competente_inferior	vencer_sindrome_grupo_pares_autoconfianza	SANO		nivel competente y mezcla de participantes contra autoconfianza contra el sindrome
+decidir_nivel_competente_inferior	tomar_mando_reunion_pares_presidente_ausente	SANO		los dos piden a una persona de mayor rango, DN para poner experiencia en la composicion (L33) y TM para que tome el control del grupo que da vueltas (L51): el mismo gesto con dos fines, ninguno parte del producto del otro
+preparar_guion_reunion_individual_subordinado	facilitar_expresion_subordinado_pregunta_mas	SANO		el subordinado prepara y pasea al supervisor por el material contra el supervisor que facilita y pregunta una vez mas: dos papeles distintos de la misma reunion
+fijar_duracion_lugar_reunion_individual	facilitar_expresion_subordinado_pregunta_mas	SANO		duracion y lugar contra papel del supervisor
+facilitar_expresion_subordinado_pregunta_mas	programar_reunion_individual_cadena	SANO		papel contra fecha
+facilitar_expresion_subordinado_pregunta_mas	tomar_notas_copia_guion_reunion_individual	SANO		papel del supervisor contra notas
+fijar_frecuencia_reunion_individual_madurez_tarea	fijar_duracion_lugar_reunion_individual	SANO		hermanos del uno a uno: cada cuanto (L33, L35) contra cuanto dura y donde (L37, L39); ningun paso compartido
+fijar_duracion_lugar_reunion_individual	preparar_guion_reunion_individual_subordinado	SANO		duracion y lugar contra guion
+infundir_regularidad_reunion_proceso	fijar_duracion_lugar_reunion_individual	SANO		regularidad de formato contra duracion y lugar del uno a uno
+usar_tres_clases_reunion_proceso	fijar_duracion_lugar_reunion_individual	SANO		taxonomia contra duracion y lugar
+fijar_frecuencia_reunion_individual_madurez_tarea	preparar_guion_reunion_individual_subordinado	SANO		frecuencia contra guion
+infundir_regularidad_reunion_proceso	fijar_frecuencia_reunion_individual_madurez_tarea	SANO		la regularidad de la reunion de proceso en general contra cada cuanto se tiene el uno a uno con cada subordinado; ningun paso compartido
+fijar_frecuencia_reunion_individual_madurez_tarea	tomar_notas_copia_guion_reunion_individual	SANO		frecuencia contra notas
+usar_tres_clases_reunion_proceso	fijar_frecuencia_reunion_individual_madurez_tarea	SANO		la taxonomia no es condicion de fijar la frecuencia; D.37 no dispara (seccion 7)
+infundir_regularidad_reunion_proceso	usar_tres_clases_reunion_proceso	SANO		hermanos de la cabeza de las reuniones de proceso: la regularidad de L21 contra la taxonomia de L23; ninguno usa el producto del otro
+infundir_regularidad_reunion_proceso	preparar_guion_reunion_individual_subordinado	SANO		que los asistentes sepan como se lleva la reunion contra quien prepara el guion del uno a uno; el paso 2 de IR no pide guion
+preparar_guion_reunion_individual_subordinado	tomar_notas_copia_guion_reunion_individual	CONTINUA	preparar_guion_reunion_individual_subordinado	la condicion de TN (la reunion ya tiene su guion preparado) es el producto de PG, y TN anade la copia a cada parte, las notas sobre ella, lo que simbolizan y el seguimiento (L49)
+usar_tres_clases_reunion_proceso	preparar_guion_reunion_individual_subordinado	SANO		taxonomia contra guion
+tomar_notas_copia_guion_reunion_individual	programar_reunion_individual_cadena	SANO		notas contra fecha
+programar_reunion_individual_cadena	preguntar_conducir_reunion_individual	SANO		levantado por familia_id: calendario en cadena contra los tres grupos de preguntas. Ajenos dentro del mismo uno a uno
+programar_reunion_individual_cadena	dirigir_reunion_individual_semanal	SANO		levantado por familia_id: fijar la siguiente en cadena contra la reunion semanal de Zhuo y lo que se trata en ella; ningun paso compartido. Zhuo pone una por semana y treinta minutos, que choca con Grove en fijar_frecuencia y fijar_duracion, pero ese choque no es este par (seccion 6)
+vencer_sindrome_grupo_pares_autoconfianza	tomar_mando_reunion_pares_presidente_ausente	SANO		hermanos, dos remedios del mismo sindrome: la autoconfianza (L49) y quien toma el mando (L51)
+tomar_mando_reunion_pares_presidente_ausente	priorizar_lista_entrenamiento_subordinados	SANO		quien toma el mando en la reunion de pares contra priorizar el entrenamiento. Ajenos
+vencer_sindrome_grupo_pares_autoconfianza	aprender_resultados_vencer_dos_presiones	SANO		paso 3 contra paso 4 a paso_contra_nodo 0,712 es el mismo verbo (apoya en la experiencia / aprende de la experiencia): autoconfianza contra el sindrome de pares contra aprender de un resultado venciendo la coherencia y el agotamiento (Scott). Ajenos
+vencer_sindrome_grupo_pares_autoconfianza	planificar_tres_pasos_demanda_estado_brecha	SANO		sindrome contra los tres pasos de la planificacion. Ajenos
+vencer_sindrome_grupo_pares_autoconfianza	responder_primer_aviso_renuncia_subordinado	SANO		autoconfianza del grupo contra la primera conversacion con el que renuncia. Ajenos
+vencer_sindrome_grupo_pares_autoconfianza	definir_entorno_grupo_clientes_proveedores_competidores	SANO		el grupo de pares contra el grupo como empresa independiente: solo comparten la palabra grupo. Ajenos
+vencer_sindrome_grupo_pares_autoconfianza	archivar_indicadores_resolver_problemas	SANO		autoconfianza del grupo contra archivo de indicadores. Ajenos
+vencer_sindrome_grupo_pares_autoconfianza	ejercer_poder_posicion_etapa_decision_clara	SANO		sindrome de pares contra poder de posicion
+vencer_sindrome_grupo_pares_autoconfianza	supervisar_decision_delegada_preguntas_concretas	SANO		sindrome de pares contra supervisar la reflexion de una decision delegada con preguntas concretas. Ajenos
+vencer_sindrome_grupo_pares_autoconfianza	contestar_dos_preguntas_direccion_objetivos	SANO		sindrome de pares contra las dos preguntas de la direccion por objetivos. Ajenos
+vencer_sindrome_grupo_pares_autoconfianza	cerrar_brecha_dos_preguntas_estrategia	SANO		sindrome de pares contra las dos preguntas de la estrategia (cap_07). Ajenos
+zanjar_seis_preguntas_decision_adelantado	entregar_evaluacion_desempeno_tres_claves	SANO		las seis preguntas de una decision contra entregar la evaluacion. Ajenos

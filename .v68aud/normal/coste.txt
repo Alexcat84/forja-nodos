@@ -1,0 +1,4 @@
+coste USD 15.14 | duracion 16870 s | api 1544 s | turnos 159
+entrada 306 | cache creada 414185 | cache leida 42783711 | salida 163336 (pensamiento 60808)
+modelo claude-opus-5-5
+contexto medio releido por turno: 269079 tokens | segundos fuera de la api: 15325

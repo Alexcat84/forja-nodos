@@ -1,0 +1,1 @@
+tomar_mando_reunion_pares_presidente_ausente poblacion 479 (390 grafo mas 89 bandejas) vecinos 4
