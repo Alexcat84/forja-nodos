@@ -1,0 +1,40 @@
+linea 920  fijar_frecuencia_reunion_individual_madurez_tarea | infundir_regularidad_reunion_proceso | SANO
+    El mismo par que infundir lee desde su lado: del mismo tramo y sin jerarquia (DISCUTIBLE D68.8; razon corregida en la vuelta 69, D69.2).
+linea 922  fijar_frecuencia_reunion_individual_madurez_tarea | usar_tres_clases_reunion_proceso | SANO
+    El mismo par que la cabeza lee desde su lado (relectura conjunta de la vuelta 69, D68.7): este candidato parte de su propia situacion con el uno a uno en marcha y contesta su propia pregunta del libro (L33 a L35, How often should you have one-on-ones); no usa el saber de cuantas clases de reunion de proceso hay y como se llaman, que es todo lo que la cabeza produce (L23). SANO. Correccion declarada: la linea vieja decia CONTINUA madre=usar_tres_clases_reunion_proceso (DISCUTIBLE D69.1).
+linea 924  fijar_duracion_lugar_reunion_individual | alentar_asuntos_corazon_vigilar_final_reunion | SANO
+    Hermanos bajo ONE-ON-ONES. La senial de paso (0,612) casa el criterio del paso 1 de aqui, que haya tiempo para sacar los asuntos espinosos y meterse en ellos (L37), con los asuntos de corazon que el vecino alienta y vigila cerca del final (L53). Este fija la duracion y el sitio; el vecino alienta esos asuntos y gobierna el momento en que salen. Ninguno usa el producto del otro, y fuera queda procedimiento en los dos lados.
+linea 926  fijar_duracion_lugar_reunion_individual | cubrir_indicadores_problemas_reunion_individual | SANO
+    Hermanos bajo ONE-ON-ONES: cuanto dura y donde (L37 a L39) contra que se trata dentro (L43). Ninguno usa el producto del otro.
+linea 934  preparar_guion_reunion_individual_subordinado | facilitar_expresion_subordinado_pregunta_mas | SANO
+    Hermanos bajo ONE-ON-ONES: se tocan en que la reunion es del subordinado (L41) y el supervisor esta para que el hable (L45), pero el vecino no usa el guion: facilita y pregunta una vez mas (L47). Ninguno usa el producto del otro.
+linea 938  preparar_guion_reunion_individual_subordinado | acumular_asuntos_importantes_fichero_espera | SANO
+    Hermanos bajo ONE-ON-ONES: el guion de la reunion (L41) contra el fichero de espera donde las dos partes acumulan lo importante y no urgente para la reunion siguiente (L51). El libro no lleva el fichero al guion ni el guion al fichero, y ninguno usa el producto del otro.
+linea 945  facilitar_expresion_subordinado_pregunta_mas | preparar_guion_reunion_individual_subordinado | SANO
+    El mismo par que el guion lee desde su lado: hermanos.
+linea 949  facilitar_expresion_subordinado_pregunta_mas | conducir_reunion_individual_telefono_distancia | SANO
+    Del mismo tramo ONE-ON-ONES y sin jerarquia entre ellos: el vecino es hijo de tomar_notas_copia_guion_reunion_individual y lleva el guion y las notas a la reunion por telefono (L55); este es el papel del supervisor dentro (L45 a L47). Ninguno usa el producto del otro.
+linea 957  tomar_notas_copia_guion_reunion_individual | programar_reunion_individual_cadena | SANO
+    Tio y sobrino: la senial casa el paso 5 de aqui, lo que simboliza escribirlo, con el paso 4 del vecino, el horario fijo que cae en vacaciones. Notas y seguimiento en la reunion siguiente (L49) contra fijar la siguiente al terminar la que se tiene (L57); el vecino no usa las notas ni este la cadena.
+linea 961  acumular_asuntos_importantes_fichero_espera | alentar_asuntos_corazon_vigilar_final_reunion | SANO
+    Hermanos bajo ONE-ON-ONES: la senial casa el paso 3 de aqui, el principio de la tanda, con el paso 7 del vecino, los asuntos que llegan cerca del final. Lo importante y no urgente que se guarda para la reunion siguiente (L51) contra el asunto de corazon que se suelta al final de esta (L53); ninguno usa el producto del otro.
+linea 962  acumular_asuntos_importantes_fichero_espera | conducir_reunion_individual_telefono_distancia | SANO
+    Del mismo tramo ONE-ON-ONES y sin jerarquia entre ellos: el vecino, hijo de tomar_notas_copia_guion_reunion_individual, lleva guion y notas a la reunion por telefono y cambia notas al acabar (L55); este acumula lo no urgente entre reuniones (L51). Ninguno usa el producto del otro.
+linea 968  alentar_asuntos_corazon_vigilar_final_reunion | conducir_reunion_individual_telefono_distancia | SANO
+    Del mismo tramo ONE-ON-ONES y sin jerarquia entre ellos: el vecino es hijo de tomar_notas_copia_guion_reunion_individual y lleva guion y notas a la reunion por telefono (L55); este alienta los asuntos de corazon y vigila el que llega al final (L53). Ninguno usa el producto del otro.
+linea 969  alentar_asuntos_corazon_vigilar_final_reunion | programar_reunion_individual_cadena | SANO
+    Hermanos bajo ONE-ON-ONES: los asuntos de corazon dentro de la reunion (L53) contra fijar la siguiente al terminar la que se tiene (L57). Ninguno usa el producto del otro.
+linea 988  ejercer_poder_posicion_etapa_decision_clara | anunciar_decision_inesperada_reconvocar_reunion | SANO
+    Del mismo capitulo y sin jerarquia entre ellos: la senial casa el paso 6 de aqui, la reticencia a dar ordenes, con el paso 4 del vecino, el tiempo que la gente necesita para ajustarse. El de mayor rango decide al llegar a la decision clara sin consenso (L61); el vecino anuncia una palabra final muy distinta de lo que el grupo esperaba y reconvoca (L93), y su condicion no es la falta de consenso sino la distancia con lo esperado. Ninguno usa el producto del otro.
+linea 998  vencer_sindrome_grupo_pares_autoconfianza | archivar_indicadores_resolver_problemas | SANO
+    Ajenos, de otro capitulo del mismo libro (cap_03): el archivo de indicadores para repasar cuando algo va mal contra vencer el sindrome de pares. La senial casa el paso 5 de aqui, que todos lo entiendan, con el paso 1 del vecino, y no hay nada comun que hacer.
+linea 999  vencer_sindrome_grupo_pares_autoconfianza | ejercer_poder_posicion_etapa_decision_clara | SANO
+    Del mismo capitulo y sin jerarquia entre ellos: este vence el sindrome por la autoconfianza de cada miembro (L49); el vecino dice cuando el de mayor rango usa la autoridad de su puesto, al llegar a la decision clara sin consenso (L61). Ninguno usa el producto del otro.
+linea 1002  vencer_sindrome_grupo_pares_autoconfianza | cerrar_brecha_dos_preguntas_estrategia | SANO
+    Ajenos, de otro capitulo del mismo libro: cerrar la brecha entre demanda y rendimiento contra vencer el sindrome de pares. La similitud es prosa comun.
+linea 1004  tomar_mando_reunion_pares_presidente_ausente | decidir_nivel_competente_inferior | SANO
+    El mismo par que el nivel competente lee desde su lado: del mismo capitulo y sin jerarquia entre ellos (DISCUTIBLE D68.12).
+linea 1017  anunciar_decision_inesperada_reconvocar_reunion | zanjar_seis_preguntas_decision_adelantado | SANO
+    El mismo par que las seis preguntas leen desde su lado: del mismo capitulo y sin jerarquia entre ellos.
+linea 1018  anunciar_decision_inesperada_reconvocar_reunion | contestar_dos_preguntas_direccion_objetivos | SANO
+    Ajenos, de otro capitulo del mismo libro: la senial casa el paso 6 de aqui, reconvoca la reunion, con el paso 5 del vecino, los resultados clave. Anunciar y reconvocar contra las dos preguntas de la direccion por objetivos; nada comun que hacer.

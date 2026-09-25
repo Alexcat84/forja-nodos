@@ -1,0 +1,6 @@
+aristas_vuelta: IDENTICO
+nodos_viejos: IDENTICO
+pasos_inventados: IDENTICO
+relojes: DISTINTO tal cual (ver la linea siguiente)
+censo_cierre: IDENTICO
+relojes: IDENTICO salvo el separador de ruta (python en Windows imprime la barra invertida)

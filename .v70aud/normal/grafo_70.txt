@@ -1,0 +1,15 @@
+nodos al abrir: 390 | hoy: 410 | nuevos: 20 | nuevos que son mis 20: 20 | desaparecidos: 0
+  VIEJO agrupar_interrupciones_subordinados_reuniones_regulares  campos ['nodos_siguientes'] | gana ['acumular_asuntos_importantes_fichero_espera'] | pierde []
+  VIEJO agrupar_tareas_semejantes_aprovechar_preparacion         campos ['nodos_siguientes'] | gana ['infundir_regularidad_reunion_proceso'] | pierde []
+  VIEJO buscar_regularidad_bloques_iguales_trabajo_mando         campos ['nodos_siguientes'] | gana ['infundir_regularidad_reunion_proceso'] | pierde []
+viejos que cambian: {'solo nodos_siguientes': 3} | suma: 3
+aristas del grafo que tocan a las 20: 7 | por lados: {'en los dos lados': 7} | suma: 7
+esperadas por mi lectura sellada: 7 | iguales: 7 | solo en el grafo: [] | solo esperadas: []
+  agrupar_interrupciones_subordinados_reuniones_regulares  > acumular_asuntos_importantes_fichero_espera
+  agrupar_tareas_semejantes_aprovechar_preparacion         > infundir_regularidad_reunion_proceso
+  buscar_regularidad_bloques_iguales_trabajo_mando         > infundir_regularidad_reunion_proceso
+  conducir_etapas_modelo_ideal_decision                    > cortar_discusion_libre_momento_justo
+  conducir_etapas_modelo_ideal_decision                    > ejercer_poder_posicion_etapa_decision_clara
+  preparar_guion_reunion_individual_subordinado            > tomar_notas_copia_guion_reunion_individual
+  tomar_notas_copia_guion_reunion_individual               > conducir_reunion_individual_telefono_distancia
+con madre usar_tres_clases_reunion_proceso: 0

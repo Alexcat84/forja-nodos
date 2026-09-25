@@ -1,6 +1,6 @@
-# ENCARGO DE LA VUELTA 70: **LAS `20` FILAS DE `cap_05` Y `cap_06` DENTRO, UNA POR VEZ, CON LAS `118` LINEAS Y LAS `7` ARISTAS QUE LAS DOS LECTURAS YA COMPARTEN**
+# ENCARGO DE LA VUELTA 71: **LAS `20` FICHAS SIGUIENTES DE GROVE (`cap_07`, `cap_10`, `cap_11`, `cap_12`, `cap_13` Y `cap_14`) DEJADAS LISTAS PARA INSERTAR: SU FIDELIDAD LEIDA ENTERA, SUS VECINOS BARRIDOS, SUS VEREDICTOS ESCRITOS, SUS ARISTAS LEIDAS Y SU ORDEN COMPROBADO. AQUI NO SE INSERTA NINGUNA**
 
-*Linea **serial** (`extraccion-mundo-11`). Escrito por el auditor al cerrar la `ACTA 68`, que audito la vuelta `69`.
+*Linea **serial** (`extraccion-mundo-11`). Escrito por el auditor al cerrar la `ACTA 69`, que audito la vuelta `70`.
 `AUDITOR_FORJA.md` seccion `1.4`.*
 
 > # **LIBRO DE ESTA VUELTA: `grove_high_output`**
@@ -10,24 +10,25 @@
 
 ---
 
-## 0. **LA REGLA DEL TURNO, Y EL METODO QUE YA FUNCIONO DOS VECES**
+## 0. **LA REGLA DEL TURNO, Y POR QUE ESTA VUELTA NO INSERTA**
 
-> **UN `insertar` POR VEZ, Y NINGUNO EN VUELO CUANDO TU TURNO TERMINE.** Cada candidato entra entero o no entra.
-> **Al volver cada `insertar`: su fila en el reporte, commit y push.**
+**La tanda que estaba lista entro entera en la `70`** (`ACTA 69`): no queda nada adjudicado que insertar. Esta vuelta hace para
+las `20` fichas siguientes lo que la `68` hizo para `cap_05` y `cap_06` (su TAREA 3), que llevo a la `70` a meter `20` de `20` sin
+una sola sorpresa. **Es regimen de insercion (`D.58`): la relectura de fidelidad del lote se hace ENTERA, aqui, antes de que entre.**
+Su insercion es de la vuelta siguiente, despues de que mi fase ciega barra y lea lo que dejes y la `ACTA 70` lo adjudique.
 
-**El metodo de la `67` y la `68` vale**: cada `insertar` lanzado como un proceso por una copia de `.v68ext/insertar.py`, y tu
-bloqueado en primer plano con una copia de `.v68ext/esperar.py` hasta su `.fin`, **sin lanzar el siguiente ni tocar el dataset ni
-la bandeja en medio**. **NO LANZAS NADA EN SEGUNDO PLANO QUE SIGA VIVO AL CERRAR TU TURNO.** Si algo no te cabe, no lo lances:
-lo dices en el reporte con las filas que faltan, y entran en la `71`.
+**PUEDES LANZAR BARRIDOS DE FONDO, CINCO A LA VEZ COMO MUCHO, PERO NINGUNO VIVO AL CERRAR TU TURNO**: los recoges todos dentro,
+vigilandolos si tardan. **Si no te caben, no los lances: lo dices en el reporte con los que faltan.** El `23` sep tres asientos
+cerraron diciendo que esperaban un trabajo de fondo, y ninguno volvio. **Y NINGUN `insertar`**, ni en primer plano ni de fondo.
 
-**EL RELOJ, MEDIDO:** la `67` metio `20` filas en `36983` s de turno, con `insertar` de `985,8` a `3988,1` s y mediana `1487,6`
-contra poblacion `479`; las dos de la `68` tardaron `1786,6` y `2153,7` s (`ACTA 67` `67.8`). **No son techos: son lo que costo.**
+**EL RELOJ, MEDIDO:** el barrido de las `20` fichas de `cap_05` y `cap_06` en la `68`, cinco a la vez, fue de `18:29:53` a
+`21:23:47` (`.v68ext/barrido.log`), con fichas de `2400` a `4200` s. **No es un techo: es lo que costo.**
 
 ## LA CLASE Y EL LIBRO, DICHOS POR EL INSTRUMENTO
 
-    $ python scripts/deuda.py --clase 70
+    $ python scripts/deuda.py --clase 71
     LIBRE
-      van 1 de 5 desde la ultima de saneamiento (la 69), con 56 deuda(s) esperando
+      van 2 de 5 desde la ultima de saneamiento (la 69), con 56 deuda(s) esperando
 
     $ python forja.py tablero --puedo grove_high_output
     LINEA 'serial', LIBRO 'grove_high_output': SI
@@ -38,75 +39,85 @@ es de extraccion y no aplica: Grove esta minado entero**, y lo que se hace es in
 
 ---
 
-## TAREA 1: **REGISTROS DE LA `ACTA 68`**
+## TAREA 1: **REGISTROS DE LA `ACTA 69`**
 
 En una tabla corta y sin reabrir el argumento (`D.47`):
 
 | que | donde |
 |---|---|
-| **La relectura conjunta se cierra sin discrepancia**: tus `D69.1` a `D69.3` se sostienen; de tus `118` pares dirigidos cambian justo los `8` de la cabeza, tus `70` pares sin orden son los `70` de la lectura sellada del auditor, y **tus `7` aristas esperadas son las suyas, par a par** | `ACTA 68` `68.3`, `68.5` |
-| **`d053`: no se parte, y tu `D69.4` se sostiene por la vara**: la mitad de L37 cae por la restriccion `2` de `9.1` y su cifra va en `atribuciones`; L57 nombra una ETAPA y L37 una cantidad | `68.5` |
-| **Saneamiento declarado y `d053` y `d056` bien pagadas**; `d170` sigue esperando a la madre | `68.4` |
-| **Cero caidas, ni de prosa**: las cinco rachas de la serial en cero y `R5` cumplido | `68.2`, `68.8`, `68.0` |
+| **Las `20` filas dentro, una por vez, sin solape y en su orden**: `118` lineas iguales letra a letra a las vivas preparadas, sobre los `118` pares del barrido del auditor y con sus clases selladas; `7` aristas iguales par a par; `3` madres viejas que solo ganan su `nodos_siguientes` | `ACTA 69` `69.3`, `69.4` |
+| **Tus cuatro discutibles se sostienen**, `D70.1` a `D70.4`, y la espera de fondo de la fila `10` queda declarada y sin cargo | `69.4`, `69.5` |
+| **La muestra de los SANO, `20` de `20`**; `cap_05` y `cap_06` entran en `0` de `84` y `0` de `62`; la guarda `D.59` muerde por mutacion | `69.5`, `69.6`, `69.1` |
+| **Cero caidas, ni de prosa**: las cinco rachas de la serial en cero y `R5` cumplido | `69.2`, `69.8`, `69.0` |
 
-## TAREA 2: **LO QUE ENTRA ES LO QUE SE LEYO**
+## TAREA 2: **LA FIDELIDAD ENTERA DE LAS `20`** (`D.30`, `D.58`)
 
-Antes del primer `insertar`, con una copia de `.v69ext/pasos_y_huellas.py` con el commit cambiado a `4ec8c16` (el cierre de la
-`69`: ninguna ficha cambio en ella, `ACTA 68` `68.1`): **las `20` fichas de la bandeja iguales a su blob en `4ec8c16`**, y sus `20`
-filas iguales a las de `.v69ext/pasos_y_huellas.txt`. Si una sale distinta, no entra, se relee entera contra su capitulo y se dice.
+Las `20` son las fichas de la bandeja de Grove cuya `UNIDAD DE ORIGEN` es `cap_07` (`9`), `cap_10` (`1`), `cap_11` (`2`), `cap_12`
+(`3`), `cap_13` (`2`) y `cap_14` (`3`); **una por linea, con su capitulo y su cuenta de pasos, en `.v70aud/normal/bandeja_grove.txt`,
+sus `20` primeras lineas**. Las `7` de `cap_15`, `cap_16` y `cap_17` **no son de esta vuelta**. Todo en tu carpeta `.v71ext/`, **con
+copias de instrumentos que ya existen y la ruta cambiada**, no con instrumentos nuevos (`7.F`):
 
-## TAREA 3: **LAS `20` FILAS DE `.v69ext/orden.txt`, UNA POR VEZ**
+1. **Cada paso de las `20` contra su capitulo de `fuentes/grove_high_output/` leido entero**, marcado `T` o `P` con su linea, en un
+   fichero con una fila por paso como `.v68ext/fidelidad.tsv` (la clausula reescrita CUENTA como `P`, `ACTA 62` `62.5`), y sus citas
+   comprobadas con una copia de `.v68ext/citas.sh`.
+2. **Todo PUENTE se corrige en la ficha de la bandeja por correccion declarada, con el texto viejo dentro, ANTES del barrido**: una
+   ficha que cambia despues de su barrido tiene un barrido que ya no es suyo (`d031`).
+3. **`PASOS INVENTADOS POR CAPITULO`, una fila por capitulo, seis filas**, por una copia de `.v68ext/contar_fidelidad.py`, **y el
+   peor capitulo nombrado** (`8.2`). **Si uno pasa del `10` por ciento, ese capitulo se relee entero antes de seguir** (`D.58`).
+4. **Marca discutible todo paso en que dudes, al escribirlo.**
 
-**En su orden, filas `1` a `20`**: los `12` de `cap_05` y los `8` de `cap_06`. Con las `20` dentro, **los dos capitulos quedan
-enteros en el grafo.**
+## TAREA 3: **EL BARRIDO DE LAS `20`, SOBRE LAS FICHAS YA CORREGIDAS**
 
-1. **Las lineas `--veredicto` son las vivas del bloque de cada candidato en `.v68ext/veredictos_listos.txt`, tal cual, sin las
-   `#`**: las que la relectura conjunta corrigio en la `69` incluidas, y ninguna de las viejas que quedaron en comentario. Las
-   `CONTINUA` con `madre=` cablean su arista en el acto: `preparar_guion_reunion_individual_subordinado` a
-   `tomar_notas_copia_guion_reunion_individual` en la fila `8`, y `tomar_notas_copia_guion_reunion_individual` a
-   `conducir_reunion_individual_telefono_distancia` en la fila `11`.
-2. **Las cinco aristas por lectura, con `python forja.py arista` en el acto de insertar el hijo**, `--veredicto CONTINUA`, su cita y
-   su `--paso` el de la madre que su fila `SOSTENGO` de `.v68ext/aristas_lectura.txt` cita, como en la `67` y la `68`:
-   `agrupar_tareas_semejantes_aprovechar_preparacion` y `buscar_regularidad_bloques_iguales_trabajo_mando` a
-   `infundir_regularidad_reunion_proceso` (fila `1`); `agrupar_interrupciones_subordinados_reuniones_regulares` a
-   `acumular_asuntos_importantes_fichero_espera` (fila `9`); y `conducir_etapas_modelo_ideal_decision` a
-   `ejercer_poder_posicion_etapa_decision_clara` (fila `14`) y a `cortar_discusion_libre_momento_justo` (fila `17`). **Ninguna
-   con madre `usar_tres_clases_reunion_proceso`**, y la de `D68.15` no es de esta vuelta (`d170`).
-3. **La puerta es la aduana de `insertar`, no la lista** (`d031`). Si levanta un vecino sin linea, lo lees con los pasos de los
-   dos delante, escribes su veredicto por la vara `6.1` y solo esa, **y lo marcas en el reporte como lectura tuya de esta
-   vuelta**, discutible si dudas. Si levanta `CAERIA` o un error, no fuerces: no entra, y se declara.
-4. **Al volver cada `insertar`, su fila en el reporte** como las de la `67` y la `68`: la aduana de hoy con sus vecinos, las lineas
-   que pasaste, las aristas que cableaste y su commit. Cada insertado a `cuarentena/_insertados/grove_high_output/` (`D.31`).
+Contra **GRAFO MAS BANDEJAS** (`D.38.4`), con copias de `.v68ext/barrido_uno.py` y `.v68ext/barrer.sh` con la lista de las `20` y la
+ruta `.v71ext/`: **cinco a la vez como mucho, un log con su `INICIO` y su `TODOS TERMINADOS`, y las `20` recogidas dentro de tu
+turno.** La poblacion al abrir es `479`: `410` del grafo mas `69` de bandejas (`27` de Grove, `22` de Gerber y `20` de Marquet,
+`ACTA 69` `69.1`). **Una tabla por candidato de sus vecinos**, como `.v68ext/` la dejo para la `70`.
 
-## TAREA 4: **LAS ARISTAS DE LA TANDA, POR INSTRUMENTO**
+## TAREA 4: **LOS VEREDICTOS, LAS ARISTAS Y EL ORDEN**
 
-Al terminar la ultima fila que entre: **cuantas se esperaban (`7`), cuantas viven en el grafo, y ninguna sin adjudicar**; y que
-ningun nodo viejo cambio fuera del `nodos_siguientes` de sus madres. Si alguna fila no entro, la cuenta dice cuales de las `7`
-quedan pendientes con ella.
+1. **Los veredictos listos, uno por vecino**, en el formato de `--veredicto` y con un bloque por candidato como
+   `.v68ext/veredictos_listos.txt`: **leidos con los pasos de los dos delante** (`python .v64aud/pasos.py <a> <b>`) y por la vara
+   `6.1`, y solo esa. **Y comprobado por instrumento que cada vecino del barrido tiene su linea y cada linea su vecino**, con una
+   copia de `.v69ext/comprobar_veredictos.py`.
+2. **Las aristas por lectura** (`D.29`, `D.53`), en un fichero como `.v68ext/aristas_lectura.txt`, con su tramo de madre y de hijo
+   y su linea del libro, **mirando tambien madres que ya viven en el grafo** (la `70` cableo tres asi). **`D.37`**: los titulos que
+   dicen cuantas partes tienen se miran como en la `68`, y aqui hay varios: `planificar_tres_pasos_demanda_estado_brecha` contra
+   `examinar_demanda_entorno_dos_marcos_temporales`, `determinar_estado_presente_capacidades_proyectos_merma` y
+   `cerrar_brecha_dos_preguntas_estrategia`; y las *dos preguntas* de `cerrar_brecha` y de
+   `contestar_dos_preguntas_direccion_objetivos`. **Si alguna parte es nodo, la arista cabeza a parte se declara; si la cabeza solo
+   cuenta y nombra, es la figura de `D68.7`, que la conjunta de la `69` cerro sin arista.** Marca discutible lo que dudes.
+3. **`d170`, EN ESTA TANDA**: `elegir_estilo_direccion_madurez_relevante_tarea` (`cap_13`) y
+   `fijar_frecuencia_reunion_individual_madurez_tarea` (en el grafo desde la `70`). **La conjunta de la `69` lo decidio: NO es
+   arista** (`D69.3`, `ACTA 68` `68.5`). Si tu barrido levanta el par, su linea es `SANO` con esa cita; si no lo levanta, no hay
+   linea ni arista. **Dilo en el reporte con la salida del barrido delante.** `d170` se paga en la vuelta que inserte la ficha.
+4. **El orden de insercion de las `20`**, con una copia de `.v69ext/orden.py`: **madre antes que hijo, `D.36`, y las comprobaciones
+   en cero.**
+
+**Si no te cabe todo, parte por capitulo y por donde se pueda auditar**: `cap_07` entero antes que los demas, y dentro de cada uno
+la fidelidad antes que el barrido y el barrido antes que los veredictos. **Lo que no hagas lo dices con su fila vacia**, y la
+vuelta siguiente empieza por ahi.
 
 ## TAREA 5: **EL CIERRE**
 
-- **El censo antes y despues**: nodos, veredictos, pares mutuos, bandeja de Grove e insertados. **Si entran las `20`**, el grafo
-  queda en `410`, la bandeja de Grove en `27` y `_insertados` en `65`; y la bitacora gana las `118` lineas de veredicto mas una por
-  cada arista por lectura, como en la `67` (`90` mas `7`) y la `68` (`9` mas `2`).
-- **`PASOS INVENTADOS POR CAPITULO`, una fila por capitulo, de lo que ENTRO**: `cap_05` y `cap_06`, contados desde
-  `.v68ext/contar_fidelidad.txt`, que la `ACTA 67` `67.4.a` firmo en `0` de `84` y `0` de `62`, no a ojo.
+- **El censo antes y despues**: nodos, veredictos, pares mutuos, bandeja de Grove e insertados. **No entra nada**: `410`, `1027`,
+  `1`, `27` y `65` al abrir y al cerrar.
+- **`PASOS INVENTADOS POR CAPITULO`, seis filas**, que son **preparacion y no entrada**.
+- **La huella de las `20` fichas preparadas**, con una copia de `.v70ext/pasos_y_huellas.py` con la lista de las `20`, corrida
+  despues del ultimo cambio de ficha y pegada: es contra lo que la vuelta de insercion comprobara que entra lo que se leyo.
 - **`D.61`**: cada discutible ejecutado o cerrado. Ninguno abierto.
-- **`R5`** en cada bloque `$` de tu tramo, medido con `.v64ext/pegado64.py` y `.v64aud/normal/bloques_mudos.py` con la
-  cabecera cambiada a la `70`, y pegado.
+- **`R5`** en cada bloque `$` de tu tramo, **medido con `.v64ext/pegado64.py` y `.v64aud/normal/bloques_mudos.py` con la cabecera
+  cambiada a la `71`**, y pegado.
 - `python forja.py gate`, `python forja.py guiones`, `python tests/test_aceptacion.py` y `python scripts/cerrar_reporte.py`,
   **pegados**. **El cierre estricto tiene que salir en verde: cualquier rojo es tuyo.**
-- Commitea `docs/loop/`, `dataset/`, `bitacora/`, `censos/`, los movidos a `_insertados` y tu carpeta `.v70ext/`. **Si nada te
-  obliga a parar, no escribas `PARA_ALEXIS.md`.**
+- Commitea `docs/loop/`, las fichas corregidas de la bandeja y tu carpeta `.v71ext/`. **Si nada te obliga a parar, no escribas
+  `PARA_ALEXIS.md`.**
 
 ---
 
 ## LO QUE NO HACES
 
-- **NO LANZAS NADA EN SEGUNDO PLANO QUE TOQUE EL DATASET**, y **NO TERMINAS TU TURNO CON NADA VIVO**, ni un `insertar` ni un
-  barrido.
-- **NO CAMBIAS NINGUNA LINEA PREPARADA NI NINGUNA FICHA** fuera de lo que la aduana levante en el acto (TAREA 3.3). Su fidelidad
-  y sus clases estan firmadas.
+- **NO INSERTAS NINGUNA FICHA**, y **NO TERMINAS TU TURNO CON NADA VIVO**, ni un barrido.
+- **NO TOCAS LAS `7` FICHAS DE `cap_15`, `cap_16` Y `cap_17`**: van en la vuelta que inserte estas `20`.
 - **NO TOCAS `cuarentena/gerber_emyth/` NI `cuarentena/marquet_turn_the_ship/`**: van despues de Grove, en ese orden.
 - **NO TOCAS `src/`, `scripts/`, el banco, el arnes ni los protocolos** (`7.F`, `D.55`), **ni `APERTURA_CIEGA.md`**.
 - **NO REORDENAS LA COLA A MANO.**

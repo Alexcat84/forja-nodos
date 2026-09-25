@@ -47720,3 +47720,354 @@ lecturas esperan. **La apertura de lote (`D.32`) no aplica**: despues de Marquet
 - **`docs/loop/DEUDA.jsonl`**: nada nuevo. `d170` sigue esperando a la madre, en `cap_13`.
 - **`docs/loop/PROMPT_SIGUIENTE.md`**: el encargo de la vuelta `70`, **INSERCION**: las `20` filas de `cap_05` y `cap_06`.
 - **`.v69aud/`**: mi evidencia de las dos fases, commiteada con `docs/loop/`.
+
+# ACTA 69. VUELTA 70, lote 7 (`grove_high_output`), **CLASE INSERCION**: **LAS `20` FILAS DE `cap_05` Y `cap_06` ENTRARON UNA POR VEZ, SIN SOLAPARSE, EN SU ORDEN Y CON LOS BYTES QUE SE LEYERON; SUS `118` LINEAS DE VEREDICTO SON LAS PREPARADAS LETRA A LETRA, LOS `118` PARES DE MI BARRIDO Y MIS CLASES SELLADAS; SUS `7` ARISTAS SON MIS `7`, PAR A PAR, Y LOS `3` NODOS VIEJOS QUE CAMBIAN SON MIS `3` MADRES, SOLO EN `nodos_siguientes`. `cap_05` Y `cap_06` ENTRAN EN `0` DE `84` Y `0` DE `62`, LA MUESTRA DE LOS SANO SE SOSTIENE `20` DE `20`, CERO CAIDAS SUYAS Y CERO MIAS: LAS CINCO RACHAS EN CERO. LA `71` PREPARA LAS `20` FICHAS SIGUIENTES DE GROVE**
+
+*Auditor `claude-opus-5-5`, 25 sep 2026, turno normal de la vuelta que el arnes numera `6` en la corrida que arranco el
+23 a las `21:50`. Linea **serial**, rama `extraccion-mundo-11`, hash auditado `6c40696` (cierre del extractor, mas `4a10a65` y
+`cfcbbb6`, que solo anaden la tabla de tareas y la salida del hook), arbol en `a930fa6` con mi apertura sellada. Modo austero
+(`D.47`). Toda mi evidencia de este turno esta en `.v70aud/normal/`, y la de mi fase ciega en `.v70aud/`.*
+
+## 69.0. **HUECO DE ACTA Y HERENCIA** (`1.0`, `D.40`)
+
+**NO HAY HUECO.** La `ACTA 68` cubre la vuelta `69`; esta cubre la `70` entera: el turno del extractor (`02:52` a `16:05` del
+25, de `3e52cad` a `cfcbbb6`, `44` commits despues del primero) y mi fase ciega, sellada en `a930fa6`, que solo toca sus dos ficheros:
+
+    $ git diff --name-only cfcbbb6 a930fa6
+    docs/loop/APERTURA_CIEGA.md
+    docs/loop/SELLOS_APERTURA.jsonl
+
+**HEREDADO 1, `R5` del extractor: CUMPLIDO.** Con mis copias sacadas con `sed` de los originales `.v64ext/pegado64.py` y
+`.v64aud/normal/bloques_mudos.py`, no de las suyas, y la cabecera cambiada a la `70` (el `diff --strip-trailing-cr` contra el
+original solo cambia la cabecera del tramo, en `pegado` tambien su rotulo impreso y el comentario de cabecera):
+
+    $ python .v70aud/normal/pegado70_aud.py; python .v70aud/normal/bloques_mudos70_aud.py
+    bloques abiertos con `$` en el tramo de la vuelta 70 : 23
+    bloques que ROMPEN R1 (ACTA 60 60.15)                : 0
+    bloques abiertos con `$`: 18 | comandos `$`: 23 | comandos sin ninguna linea de salida en su bloque: 0
+
+**Los `23` comandos en `18` bloques son los que su ultima frase dice** (`.v70ext/r5_final.txt`), y los bloques que corren
+instrumentos suyos los reproduzco identicos en `69.1`.
+
+**HEREDADO 2, `R6`, mio: CUMPLIDO en la fase ciega** (`APERTURA_CIEGA.md` `0` y `7`: `0` instrumentos de `.v70aud/` que nombren
+claves de relacion y `0` lineas de bloque de la pagina que empiecen por ellas). **HEREDADO 3, `R7`, mio: CUMPLIDO** en la apertura
+(`31` lineas de bloque que reparten en clases, las `31` con su `suma`, medido por `.v70aud/r7_pagina.py` sobre la pagina) **y en
+esta acta**: toda linea mia que reparte un total en clases trae su `suma`.
+
+## 69.1. **LO QUE VERIFICO, CON MIS PROPIOS COMANDOS** (`1.1`)
+
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 410
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+    $ python forja.py guiones
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+    $ python forja.py resolutor
+    nodos vivos: 410
+    nodos deprecados (archivo): 0
+    alias registrados: 0
+    $ grep 'total:' .v70aud/normal/suite.txt; tail -1 .v70aud/normal/suite.txt
+      total: 379 pruebas, 0 fallos, 0 errores
+    rc=0
+    $ cat .v70aud/normal/censo.txt
+        410 dataset/nodos.jsonl
+       1027 bitacora/VEREDICTOS.jsonl
+          1 config/pares_mutuos.jsonl
+       1438 total
+    27
+    65
+    0
+    22
+    20
+
+(Las cinco cifras sueltas del censo son la bandeja de Grove, sus insertados, `procesos/`, la bandeja de Gerber y la de Marquet.)
+**`410`, `1027`, `1`, `27` y `65`, los de su `70.5.a`**; Gerber y Marquet siguen en `22` y `20`, sin tocar. **`procesos/` vacio**
+antes y despues de mi suite y de mi cierre estricto. Lo que la vuelta movio fuera de `docs/loop/` y de su `.v70ext/` es el grafo,
+la bitacora, dos censos y las `20` fichas movidas a `_insertados` (`git diff --stat 5eda302 cfcbbb6`: `24` ficheros); **ni `src/`,
+ni `scripts/`, ni `config/`, ni `esquema/`, ni `fuentes/`, ni `tests/`, ni el banco, ni `docs/loop/DEUDA.jsonl`**.
+
+**EL CIERRE ESTRICTO, CORRIDO POR MI, SALE EN VERDE:**
+
+    $ grep -nE '^(CIERRE|CENSO|TALLADO|TABLA DE CIERRE)|DIFIEREN|CAEN  ' .v70aud/normal/cerrar_reporte.txt; tail -1 .v70aud/normal/cerrar_reporte.txt
+    2:TALLADO DEL REPORTE (D.41): la tabla que dice ser de instrumento
+    6:  que DIFIEREN de su instrumento: 0
+    229:TALLADO VERDE: las 157 tabla(s) comprobables son las de su instrumento, celda a celda.
+    231:CENSO DE RUTAS (D.42): la unidad de la ruta es la celda
+    235:  CAEN                      : 0
+    241:CENSO VERDE: las 987 rutas publicadas sostienen lo que dicen sostener.
+    243:TABLA DE CIERRE DE TAREAS (D.52): toda tabla del reporte declara su instrumento
+    253:TABLA DE CIERRE VERDE: ninguna celda medible difiere del dato.
+    423:CIERRE VERDE: las cuatro guardas que muerden, el tallado y el censo. La vigencia corrio y publico su cuenta arriba: es cola, no guarda (D.15).
+    rc=0
+
+**LO QUE REPRODUZCO DE SU TRAMO**, corriendo sus instrumentos contra sus salidas guardadas:
+
+    $ cat .v70aud/normal/reproduce.txt
+    aristas_vuelta: IDENTICO
+    nodos_viejos: IDENTICO
+    pasos_inventados: IDENTICO
+    relojes: DISTINTO tal cual (ver la linea siguiente)
+    censo_cierre: IDENTICO
+    relojes: IDENTICO salvo el separador de ruta (python en Windows imprime la barra invertida)
+
+**LECTURA:** `relojes.py` imprime la ruta que le da `glob`, y mi python la da con barra invertida; con la barra cambiada, las `20`
+lineas son las suyas. **No es una diferencia de dato.** Su `pasos_y_huellas.py` no lo reproduzco: compara la bandeja contra
+`4ec8c16`, y las `20` fichas ya no estan en la bandeja; **lo mide por el otro lado mi fase ciega** (`APERTURA_CIEGA.md` `2`: las
+`20` movidas a `_insertados` con la huella que tenian cuando las barri).
+
+**LA GUARDA QUE EL REPORTE DECLARA MORDIENDO, RE CORRIDA POR MUTACION** (`5.5`, *la guarda que no muerde es cifra*). Su `70.5.f`
+declara que el hook aborto su primer commit del cierre por `D.59`. Sobre el texto, sin tocar el arbol:
+
+    $ python .v70aud/normal/mutacion_d59.py
+    (0) el reporte de hoy: cifras derivadas sueltas 0
+    (1) mutado, la mediana sin instrumento: 1
+    (2) mutado, la misma frase con su fichero: 0
+
+**Muerde, y suelta cuando la frase nombra su fichero.** La correccion declarada es la que la guarda pide.
+
+## 69.2. **EL REPORTE, AFIRMACION POR AFIRMACION** (`5.2`)
+
+| afirmacion del reporte | sale | sede | especie |
+|---|---|---|---|
+| `70.0`: `390`/`904`/`1`/`47`/`45` al abrir, `procesos/` vacio, `LIBRE` con `56`; lo pendiente del arnes en `3e52cad` | **cierta** (`git show --stat 3e52cad`: los cuatro ficheros que nombra; y su propio bloque contra `3e52cad` en `70.5.a`) | bloques y prosa | |
+| `70.D`: los cuatro discutibles | **marcados antes de la primera fila** (`44ab221`, antes de `307e1da`) | tabla | |
+| `70.2`: `20` fichas iguales a su blob en `4ec8c16` y `20` filas iguales a las de la `69` | **cierta** por el otro lado (mi apertura `2`: las `50` huellas de mi barrido) | bloques | |
+| `70.3`: las `20` filas, sus vecinos, sus lineas pasadas, sus `5` aristas por lectura con su paso; ningun vecino sin linea; `20` `.fin` en `0`; cero solapes | **cierta** (`69.3`, `69.4`) | tablas, bloques y prosa | |
+| `70.4`: `123` registros, `7` aristas, `0` en cola; `3` madres viejas solo en `nodos_siguientes` | **cierta** (`69.3`, reproducido en `69.1`) | bloques | |
+| `70.5.a` y `70.5.b`: el censo y `0` de `84` y `0` de `62` | **cierta** (`69.1`, `69.6`) | tablas y bloques | |
+| `70.5.c`: los cuatro discutibles cerrados, y la espera de fondo de la fila `10` | **cierta** (`69.5`) | tabla | |
+| `70.5.d` a `70.5.g`: guardas, `379` pruebas, reloj, `R5` y el cierre estricto en verde | **cierta** (`69.0`, `69.1`, `69.4`) | bloques | |
+
+**NINGUNA AFIRMACION FALSA, NI EN TABLA, CABECERA Y CONCLUSION NI EN PROSA: TANDA LIMPIA DE `REPORTE`.** Tambien la prosa de
+acompanamiento la miro por el otro lado: los tramos del reloj por capitulo (`1975,8` a `4236,0` en `cap_05` y `747,0` a `1674,4` en
+`cap_06`) son los de las lineas `fin`, y las `20` cabeceras de `.v70ext/insertar_*.txt` suman las `118` lineas de la columna `lin`.
+
+## 69.3. **LA BITACORA Y LAS ARISTAS, LINEA A LINEA Y PAR A PAR** (`APERTURA_CIEGA.md` `6`, puntos `2` y `3`)
+
+**Las `123` lineas nuevas de la bitacora**, contra las lineas vivas preparadas, contra mi barrido sellado de la `68`, contra mis
+clases selladas y contra mis aristas selladas:
+
+    $ python .v70aud/normal/bitacora_70.py
+    lineas nuevas: 123 | por tipo: {'veredicto': 118, 'arista declarada por lectura (D.37)': 5} | suma: 123
+    (a) lineas de veredicto: 118 | lineas vivas preparadas: 118 | por estado: {'igual en clase, madre y razon': 118} | suma: 118
+        pares vivos sin linea en la bitacora: [] | lineas de la bitacora repetidas: 0
+        por clase: {'SANO': 114, 'CONTINUA': 4} | suma: 118
+    (b) pares dirigidos de mi barrido: 118 | de la bitacora: 118 | iguales: 118 | solo mios: [] | solo suyos: []
+    (c) lineas contra mis clases selladas: {'igual clase y madre': 118} | suma: 118
+        agrupar_tareas_semejantes_aprovechar_preparacion         > infundir_regularidad_reunion_proceso          paso 3 | suya: 3 | mia sellada: SI
+        buscar_regularidad_bloques_iguales_trabajo_mando         > infundir_regularidad_reunion_proceso          paso 1 | suya: 1 | mia sellada: SI
+        agrupar_interrupciones_subordinados_reuniones_regulares  > acumular_asuntos_importantes_fichero_espera   paso 2 | suya: 2 | mia sellada: SI
+        conducir_etapas_modelo_ideal_decision                    > ejercer_poder_posicion_etapa_decision_clara   paso 5 | suya: 5 | mia sellada: SI
+        conducir_etapas_modelo_ideal_decision                    > cortar_discusion_libre_momento_justo          paso 5 | suya: 5 | mia sellada: SI
+    (d) lineas de arista por lectura: 5 | por estado: {'SOSTENGO suya y mia, mismo paso': 5} | suma: 5 | SOSTENGO suyas: 5 | mias con 67.4.d: 5
+
+**Y el grafo de apertura (`3e52cad`) contra el de hoy**, con todas las aristas que tocan a las `20`, de cualquier lado:
+
+    $ python .v70aud/normal/grafo_70.py
+    nodos al abrir: 390 | hoy: 410 | nuevos: 20 | nuevos que son mis 20: 20 | desaparecidos: 0
+      VIEJO agrupar_interrupciones_subordinados_reuniones_regulares  campos ['nodos_siguientes'] | gana ['acumular_asuntos_importantes_fichero_espera'] | pierde []
+      VIEJO agrupar_tareas_semejantes_aprovechar_preparacion         campos ['nodos_siguientes'] | gana ['infundir_regularidad_reunion_proceso'] | pierde []
+      VIEJO buscar_regularidad_bloques_iguales_trabajo_mando         campos ['nodos_siguientes'] | gana ['infundir_regularidad_reunion_proceso'] | pierde []
+    viejos que cambian: {'solo nodos_siguientes': 3} | suma: 3
+    aristas del grafo que tocan a las 20: 7 | por lados: {'en los dos lados': 7} | suma: 7
+    esperadas por mi lectura sellada: 7 | iguales: 7 | solo en el grafo: [] | solo esperadas: []
+      agrupar_interrupciones_subordinados_reuniones_regulares  > acumular_asuntos_importantes_fichero_espera
+      agrupar_tareas_semejantes_aprovechar_preparacion         > infundir_regularidad_reunion_proceso
+      buscar_regularidad_bloques_iguales_trabajo_mando         > infundir_regularidad_reunion_proceso
+      conducir_etapas_modelo_ideal_decision                    > cortar_discusion_libre_momento_justo
+      conducir_etapas_modelo_ideal_decision                    > ejercer_poder_posicion_etapa_decision_clara
+      preparar_guion_reunion_individual_subordinado            > tomar_notas_copia_guion_reunion_individual
+      tomar_notas_copia_guion_reunion_individual               > conducir_reunion_individual_telefono_distancia
+    con madre usar_tres_clases_reunion_proceso: 0
+
+**LECTURA:** lo que la tanda dejo en la bitacora es **exactamente** lo preparado y adjudicado: las `118` lineas vivas, ninguna de las
+que quedaron en comentario, con la razon letra a letra, sobre los `118` pares de mi barrido y con mi clase y mi madre en cada uno.
+Las `5` por lectura citan el paso que su fila cita y son mis `5` `SOSTENGO`. **Las `7` aristas del grafo que tocan a la tanda son
+mis `7`, cada una en los dos lados**, ninguna con madre `usar_tres_clases_reunion_proceso`; y **la cuenta `3` de mi apertura ya
+tiene identidad**: son mis `3` madres viejas, que solo ganan su hijo en `nodos_siguientes`.
+
+## 69.4. **LOS VEINTE `insertar`, POR SUS FICHEROS** (`APERTURA_CIEGA.md` `6`, punto `4`)
+
+    $ python .v70aud/normal/relojes_orden.py | tail -3
+    insertar: 20 | por estado: {'fin 0, .fin 0, INSERTADO, sin solape': 20} | suma: 20
+    orden de entrada igual a las filas 1 a 20 de .v69ext/orden.txt: SI
+    mis restricciones que obligan con los dos extremos en la tanda: 4 | violadas por el orden real: 0 []
+
+(Las `20` filas, con su inicio, su fin, su poblacion y el hueco con el anterior, de `53` a `110` s, en
+`.v70aud/normal/relojes_orden.txt`.) **Cada aduana midio contra `479`**, de `390` mas `89` en la fila `1` a `409` mas `70` en la `20`:
+la poblacion de mi barrido con la tanda pasando de sede, que es lo que mi apertura `2` esperaba. **Y *insertado por la aduana*
+en los asuntos de commit** (mi apertura `1`, punto `4`) **quiere decir lo que dice**: la linea `NODO INSERTADO` de la aduana de
+cada fila, las `20`.
+
+**La espera de fondo de la fila `10`** (su `70.5.c`, `D70.1`): el que quedo de fondo fue `esperar.py`, que solo mira si existe un
+`.fin` y sale (lo leo en `.v70ext/esperar.py`), no un `insertar`; el hueco entre la fila `10` y la `11` es de `110` s y ningun
+`insertar` se solapa. **Lo declaro sin cargo**: la regla del turno es que nada toque el dato en segundo plano ni quede vivo al
+cerrar, y las dos se cumplen.
+
+## 69.5. **LA RELECTURA** (`1.2`, `5.1`, `6.1`, `7`)
+
+**Los cuatro discutibles marcados son de METODO, no de clase**: ninguno pone un veredicto ni una arista que no estuviera ya
+adjudicada, y los cuatro los mido, no los releo con la vara.
+
+| | su marca | lo mido con | adjudico |
+|---|---|---|---|
+| `D70.1` | el metodo de espera de la `67` y la `68` | `69.4`: `20` de `20` sin solape, en su orden | **SE SOSTIENE**, con la espera de fondo declarada y sin cargo (`69.4`) |
+| `D70.2` | `insertar.py` lee las lineas vivas y salta las `#` | `69.3` (a): `118` iguales en clase, madre y razon, ninguna de comentario | **SE SOSTIENE** |
+| `D70.3` | la cita de las cinco por lectura a las actas `67` y `68` | la `cita_del_veredicto` de las `5` lineas: la `ACTA 67` `67.4.c` y `67.4.d` y la `ACTA 68` `68.3` y `68.5` | **SE SOSTIENE**: son las secciones donde se adjudicaron y donde la conjunta las dejo en `7` |
+| `D70.4` | las dos `CONTINUA` con `madre=` las cablea la aduana al entrar el hijo | `69.3`: las dos en el grafo, en los dos lados; su `70.4`, `0` en cola | **SE SOSTIENE** |
+
+**DENTRO CONTRA FUERA DEL MARCADO:** cuatro marcados, **cuatro se sostienen**; **fuera del marcado no hay ninguna discrepancia**,
+porque las `123` lineas y las `7` aristas las cruzo enteras en `69.3`, no solo las marcadas.
+
+**LA MUESTRA PINEADA DE LOS SANO** (`7`), con la semilla `70` que registre en la fase ciega (`APERTURA_CIEGA.md` `6`, punto `5`):
+
+    $ python .v70aud/normal/muestra_sano.py | head -1
+    lineas de la 70: 123 | SANO: 114 | muestra: 20 | semilla 70
+
+(Las `20` lineas elegidas, en `.v70aud/normal/muestra_sano.txt`.) **Releidos con los pasos de los dos delante**
+(`.v70aud/normal/pasos_muestra.txt`, impresos por `.v67aud/normal/pasos_ciego.py`) **y solo despues su razon**
+(`.v70aud/normal/razones_muestra.txt`). **Su limite, dicho:** los `20` pares estan entre los que lei a ciegas en la `68`, asi que
+esto es relectura y no primera lectura.
+
+| lineas | lo que decide, por `6.1` | queda |
+|---|---|---|
+| `920`, `922` | la frecuencia del uno a uno por la madurez de tarea contra la regularidad de la reunion de proceso y contra la cabeza que solo cuenta las tres clases: ninguno usa el producto del otro, y la cabeza la cerro la conjunta de la `69` | **SANO** |
+| `924`, `926`, `934`, `938`, `945`, `949`, `957`, `961`, `962`, `968`, `969` | las piezas del tramo ONE-ON-ONES entre si: duracion y sitio, contenido, guion, papel del supervisor, notas, fichero de espera, corazon a corazon, telefono y cadena. **Todas cuelgan del mismo encabezado y ninguna parte del producto de otra**; las dos de las notas tienen su arista y no estan en la muestra | **SANO, hermanos** |
+| `988` | el de mayor rango decide sin consenso contra anunciar una palabra final muy distinta de lo esperado: la condicion del segundo es **la distancia con lo esperado**, no la falta de consenso, y puede venir de cualquier decision. **La mas delgada de las veinte**, y su razon dice lo mismo que mi lectura | **SANO, hermanos** |
+| `998`, `1002`, `1018` | ajenos, de otros capitulos: el archivo de indicadores, la brecha de la estrategia y las dos preguntas de la direccion por objetivos | **SANO** |
+| `999`, `1004`, `1017` | el sindrome de pares, el poder de posicion, el nivel competente, el mando sin presidente y las seis preguntas: rasgos del mismo modelo de decision, sin que uno use el producto del otro (`D68.12` en `1004`) | **SANO, hermanos** |
+
+    $ python .v70aud/normal/banda_muestra.py
+    SANO de la vuelta: 114 | sin razon escrita: 0
+    releidos 20 | se sostienen 20 | caen 0 | tasa 0.0 por ciento | banda Wilson 95: 0.0 a 16.1 por ciento
+
+**`20` DE `20` SE SOSTIENEN, TASA `0` CON BANDA DE `0` A `16,1` POR CIENTO** (`.v70aud/normal/banda_muestra.txt`), y **ningun SANO
+sin razon escrita** (`D.8`). La muestra es el `20` por ciento de `114` redondeado hacia arriba, `23`, **cortado por el techo de
+`20`**; el exceso no se dobla ni se arrastra, porque ninguna cae (`7.G`).
+
+## 69.6. **`PASOS INVENTADOS POR CAPITULO`, DE LO QUE ENTRO** (`8`, `8.2`, `8.3`)
+
+**Contado por los dos lados**: por mi instrumento de la fase ciega, que cruza cada nodo del grafo con **mi** lectura entera sellada
+en la `68`, y por el suyo, que lee su `.v68ext/fidelidad.tsv` y reproduzco identico (`69.1`):
+
+    $ python .v70aud/entra_lo_leido.py | tail -2
+    cap_05 lo que ENTRO: candidatos 12 | pasos 84 | mis marcas: {'T': 81, 'P': 0, 'D': 3} | suma: 84 | PUENTE 0 de 84 = 0.00 por ciento | con las D adjudicadas T: T 84, P 0, suma 84
+    cap_06 lo que ENTRO: candidatos 8 | pasos 62 | mis marcas: {'T': 61, 'P': 0, 'D': 1} | suma: 62 | PUENTE 0 de 62 = 0.00 por ciento | con las D adjudicadas T: T 62, P 0, suma 62
+
+| capitulo | que es | candidatos | pasos | PUENTE | por ciento |
+|---|---|---:|---:|---:|---:|
+| `cap_05` | Cap. 4, *Meetings*; ENTRO: las filas `1` a `12` | `12` | `84` | `0` | **`0,00`** |
+| `cap_06` | Cap. 5, *Decisions, Decisions*; ENTRO: las filas `13` a `20` | `8` | `62` | `0` | **`0,00`** |
+
+**Mis cuatro `D` las adjudico `T` la `ACTA 67` `67.4.a`**, asi que la cifra firmada es el `0`. **Por debajo del `10`: no se baja
+escalon** (`8.1`). La relectura de los `T` no es muestra: son los `146` pasos de las dos filas, leidos enteros en mi fase ciega de
+la `68`, y **los dos capitulos quedan enteros en el grafo**.
+
+## 69.7. **LAS CUATRO GUARDAS DE DATO** (`D.55`)
+
+| guarda | estado | medida |
+|---|---|---|
+| `gate` | **VERDE** | `410`, `13` guardas (`69.1`) |
+| el cerrojo (`D.44`) | **VERDE**: `20` `insertar`, uno por vez y sin solape; `procesos/` vacio al cerrar el extractor y hoy | `69.4`, `69.1` |
+| censo no decreciente | **VERDE** | dentro del gate, `390` a `410` |
+| fidelidad `D.30` con puente | **VERDE** | `0` de `84` y `0` de `62` (`69.6`) |
+
+**NO DEJO NINGUNA TAREA BLOQUEANTE.**
+
+## 69.8. **EL CREDITO DE LA LINEA `serial`** (`5.3`, `D.48`)
+
+| especie | tanda `ACTA 69` | racha | el motivo, medido |
+|---|---|---|---|
+| **`CLASE`** | **LIMPIA** | `0 de 2` | las `118` lineas son mis clases selladas y la muestra se sostiene `20` de `20` (`69.3`, `69.5`) |
+| **`CIFRA PUBLICADA`** | **LIMPIA** | `0 de 2` | lo que escribio en sede duradera son los dos censos, que escribe la aduana, y ninguna cifra en `docs/`, `config/` ni `src/` (`69.1`) |
+| **`DATO MOVIDO`** | **LIMPIA** | `0 de 2` | el grafo gana las `20` y los `3` viejos solo su `nodos_siguientes`; ninguna operacion fuera de la tanda (`69.3`) |
+| **`REPORTE`** | **LIMPIA** | `0 de 3` | ninguna afirmacion falsa (`69.2`) |
+| **`AUDITOR`** | **LIMPIA** | `0 de 3` | `69.10`: mis tres heredados cumplidos y ninguna cifra falsa en mi apertura |
+
+(Las cinco lineas las escribo en `docs/loop/CREDITO_serial.jsonl` al cerrar este acta.)
+
+## 69.9. **EL COSTE** (`D.55`)
+
+    $ grep -n 'listo (USD' docs/loop/loop.log | tail -2
+    6522:[2026-09-25 16:05:36] extractor listo (USD 9.293631000000003), 47596s, intento 1 de 7
+    6526:[2026-09-25 16:17:02] auditor ciego listo (USD 3.5899375999999994), 685s, intento 1 de 7
+
+**El extractor, `9,29` USD en `47596` s, y mi fase ciega `3,59` USD en `685` s.** Bajo el `10`: no hay desglose que declarar.
+**LECTURA:** el turno dura `13` h `13` min y el reloj se va en esperar a la aduana, no en tokens: los `20` `insertar` suman `12,56`
+h (`.v70ext/relojes_resumen.txt`), y los de `cap_06`, con menos vecinos, tardaron bastante menos que los de `cap_05` (las lineas
+`fin` de `.v70aud/normal/relojes_orden.txt`).
+
+## 69.10. **MI PROPIA TANDA** (`D.38.2`)
+
+**Las cifras de mi apertura sellada, contra lo medido hoy por el otro lado:** `410`, `1027`, `1`, `27`, `65`, `42` y `0` (`69.1`:
+`22` mas `20`); la poblacion `479` (`69.4`); las `20` en el grafo con los textos de su ficha y `0` de `84` y `0` de `62` (`69.6`);
+los `3` nodos viejos con algun id de la tanda (`69.3`, ahora con identidad); las `118` filas dirigidas con `98` vecinos dentro de la
+tanda y `20` fuera, remedidas desde la bitacora:
+
+    $ cat .v70aud/normal/vecino_tanda.txt
+    lineas de veredicto de la 70 por vecino, desde la bitacora: {'vecino en la tanda': 98, 'vecino fuera de la tanda': 20} | suma: 118
+
+y las `118` por clase, las `7` aristas y la bitacora en `1027` (`69.3`). **Todas cuadran.** Mi lectura de las cinco aristas por
+lectura, `SOSTENGO` las cinco, es la que el grafo tiene.
+
+**Lo que mi apertura dijo que haria en el turno normal** (su seccion `6`, seis puntos) **esta todo aqui**: `R5` en `69.0`, las lineas
+nuevas en `69.3`, las `7` aristas par a par y los `3` viejos en `69.3`, los `.fin`, el orden, los solapes y *insertado por la aduana*
+en `69.4`, la muestra con semilla `70` en `69.5`, y el censo, las guardas, el cierre estricto y el coste en `69.1`, `69.7` y `69.9`.
+
+**Las rutas que publico existen y no estan vacias** (`7.B`): todo lo de `.v70aud/normal/`, que se commitea con `docs/loop/`.
+
+## 69.11. **LAS CONDICIONES DE PARADA, UNA A UNA** (`3`)
+
+| condicion | se cumple | como lo mido |
+|---|---|---|
+| doctrina nueva | **NO** | los cuatro discutibles son de metodo, y la muestra se lee con `6.1` sin mover la vara (`6.3`) |
+| contradiccion | **NO** | ninguna cifra publicada queda desmentida (`69.2`, `69.10`) |
+| decision de Alexis | **NO** | la insercion de Grove esta autorizada (`ACTA 64` `64.10`) |
+| fallo tecnico repetido | **NO** | gate, guiones, `379` pruebas y el cierre estricto en verde (`69.1`) |
+| credito roto | **NO** | las cinco rachas en cero (`69.8`) |
+| campania consumada | **NO** | Grove tiene `27` en la bandeja; Gerber `22` y Marquet `20`, enteras en las suyas |
+
+    $ python scripts/deuda.py --clase 71
+    LIBRE
+      van 2 de 5 desde la ultima de saneamiento (la 69), con 56 deuda(s) esperando
+    $ python forja.py tablero --puedo grove_high_output
+    LINEA 'serial', LIBRO 'grove_high_output': SI
+      'grove_high_output' esta COSECHADO y sin dueño: su trabajo ya llego a esta rama, asi que se continua desde el capitulo siguiente al ultimo minado (cap_18), citando su frontera. D.50.
+
+**NO ESCRIBO `PARA_ALEXIS.md`.** La `71` sale `LIBRE` y **no tiene nada adjudicado que insertar**: la tanda preparada entro entera.
+Asi que es la vuelta que **deja lista la tanda siguiente**, como la `68` hizo con `cap_05` y `cap_06`: las `20` fichas de `cap_07`,
+`cap_10`, `cap_11`, `cap_12`, `cap_13` y `cap_14`, por capitulo de su `UNIDAD DE ORIGEN` (una ficha por linea, con su capitulo y
+su cuenta de pasos, en `.v70aud/normal/bandeja_grove.txt`):
+
+    $ awk '{print $1}' .v70aud/normal/bandeja_grove.txt | uniq -c
+          9 cap_07
+          1 cap_10
+          2 cap_11
+          3 cap_12
+          2 cap_13
+          3 cap_14
+          3 cap_15
+          1 cap_16
+          3 cap_17
+
+**LECTURA:** los seis primeros capitulos suman `20`, el tope de una tanda, y cortan justo en frontera de capitulo; `cap_15`,
+`cap_16` y `cap_17` son las `7` ultimas de Grove, para la vuelta que inserte estas `20`. **La apertura de lote (`D.32`) no
+aplica**: despues de Marquet no hay libro siguiente.
+
+## 69.12. **LOS REMEDIOS**
+
+| # | de quien | remedio | donde se comprueba |
+|---|---|---|---|
+| `R5` | del extractor | **Sigue vivo con su letra**, cumplido de la `65` a la `70`: un bloque `$` contiene lo que el comando imprimio y nada mas; si se corta, por el final y dentro del bloque `(recortado, entero en <fichero>)`; un comando que imprime algo no queda sin ninguna linea debajo; y un bloque de apertura que el instrumento marque porque el estado se movio despues se declara reproducido contra el commit de apertura | el reporte de la `71`, con `.v64ext/pegado64.py` y `.v64aud/normal/bloques_mudos.py`, los dos con la cabecera del tramo cambiada a la `71` |
+| `R6` | del auditor | **Sigue vivo con su letra**: en la fase ciega, los pasos de cualquier nodo se imprimen con `.v67aud/normal/pasos_ciego.py`, que no enseña `previos` ni `siguientes`, y ningun instrumento de esa fase imprime claves de relacion de un nodo que la vuelta haya tocado | la apertura ciega de la `71` |
+| `R7` | del auditor | **Sigue vivo con su letra**: toda linea de conteo por clases que publique en la apertura o en el acta cuenta todas las clases con el mismo predicado y trae su suma, y el instrumento que la imprime la calcula y la dice (`suma: N`) | la apertura ciega de la `71` y la `ACTA 70` |
+
+## 69.13. **LO QUE ANOTO AL CERRAR**
+
+- **`docs/loop/CREDITO_serial.jsonl`**: las cinco lineas de la tanda `ACTA 69`, las cinco `--limpia`.
+- **`docs/loop/DEUDA.jsonl`**: nada nuevo. **`d170` se paga en la vuelta que inserte `elegir_estilo_direccion_madurez_relevante_tarea`**
+  (`cap_13`, en la tanda que prepara la `71`), aplicando lo que la conjunta de la `69` decidio (`D69.3`, `ACTA 68` `68.5`): **no hay
+  arista**; si su barrido levanta el par, es una linea `SANO`.
+- **`docs/loop/PROMPT_SIGUIENTE.md`**: el encargo de la vuelta `71`: las `20` fichas siguientes de Grove, dejadas listas para
+  insertar, **ninguna insertada**.
+- **`.v70aud/`**: mi evidencia de las dos fases, commiteada con `docs/loop/`.

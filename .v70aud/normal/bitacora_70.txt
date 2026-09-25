@@ -1,0 +1,12 @@
+lineas nuevas: 123 | por tipo: {'veredicto': 118, 'arista declarada por lectura (D.37)': 5} | suma: 123
+(a) lineas de veredicto: 118 | lineas vivas preparadas: 118 | por estado: {'igual en clase, madre y razon': 118} | suma: 118
+    pares vivos sin linea en la bitacora: [] | lineas de la bitacora repetidas: 0
+    por clase: {'SANO': 114, 'CONTINUA': 4} | suma: 118
+(b) pares dirigidos de mi barrido: 118 | de la bitacora: 118 | iguales: 118 | solo mios: [] | solo suyos: []
+(c) lineas contra mis clases selladas: {'igual clase y madre': 118} | suma: 118
+    agrupar_tareas_semejantes_aprovechar_preparacion         > infundir_regularidad_reunion_proceso          paso 3 | suya: 3 | mia sellada: SI
+    buscar_regularidad_bloques_iguales_trabajo_mando         > infundir_regularidad_reunion_proceso          paso 1 | suya: 1 | mia sellada: SI
+    agrupar_interrupciones_subordinados_reuniones_regulares  > acumular_asuntos_importantes_fichero_espera   paso 2 | suya: 2 | mia sellada: SI
+    conducir_etapas_modelo_ideal_decision                    > ejercer_poder_posicion_etapa_decision_clara   paso 5 | suya: 5 | mia sellada: SI
+    conducir_etapas_modelo_ideal_decision                    > cortar_discusion_libre_momento_justo          paso 5 | suya: 5 | mia sellada: SI
+(d) lineas de arista por lectura: 5 | por estado: {'SOSTENGO suya y mia, mismo paso': 5} | suma: 5 | SOSTENGO suyas: 5 | mias con 67.4.d: 5
