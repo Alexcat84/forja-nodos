@@ -1063,3 +1063,8 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-25 | programar_reunion_individual_cadena | otro_idioma | rolling basis | ingles | - |
 | 2026-09-25 | programar_reunion_individual_cadena | otro_idioma | set schedule | ingles | - |
 | 2026-09-25 | programar_reunion_individual_cadena | otro_idioma | one-on-one | ingles | - |
+| 2026-09-25 | conducir_etapas_modelo_ideal_decision | nombre_largo | El modelo ideal de toma de decisiones en un negocio que vive de lo que sabe, con su primera etapa de discusion libre, su etapa de decision clara y su cierre de apoyo pleno | castellano | - |
+| 2026-09-25 | conducir_etapas_modelo_ideal_decision | otro_idioma | ideal model of decision-making | ingles | - |
+| 2026-09-25 | conducir_etapas_modelo_ideal_decision | otro_idioma | free discussion | ingles | - |
+| 2026-09-25 | conducir_etapas_modelo_ideal_decision | otro_idioma | clear decision | ingles | - |
+| 2026-09-25 | conducir_etapas_modelo_ideal_decision | otro_idioma | full support | ingles | - |

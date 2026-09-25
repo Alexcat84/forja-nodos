@@ -1,0 +1,13 @@
+fila 13, conducir_etapas_modelo_ideal_decision, lineas --veredicto: 0
+inicio 2026-09-25 13:24:03
+======================================================================
+ADUANA DE INSERCION, candidato 'conducir_etapas_modelo_ideal_decision'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (402 del grafo mas 77 que esperan en bandejas)
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 403
+  censos escritos: denominaciones
+
+======================================================================
+fin 2026-09-25 13:51:58 | codigo de salida 0 | 1674.4 s
