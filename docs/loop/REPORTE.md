@@ -61819,3 +61819,21 @@ La aduana de hoy: **BLOQUEARIA** con `6` vecino(s) contra `479`; lineas `--vered
 | `usar_tres_clases_reunion_proceso` | similitud_texto | 0.410 | 0.100 | 0.428 | SANO |
 
 **Los seis vecinos son los seis de su bloque y las seis lineas se pasaron tal cual**; ninguno nuevo contra `479` (`392` del grafo mas `87` de bandejas, linea `12` de su salida), ninguno que dejara de levantarse. La fila no trae arista: la de `D68.15` (`elegir_estilo_direccion_madurez_relevante_tarea`, en la bandeja de `cap_13`) no es de esta vuelta (`d170`), y hoy tampoco la levanta la senal.
+
+### Fila `4`: `fijar_duracion_lugar_reunion_individual`, **INSERTADO** en `3223.4` s, codigo `0`, commit `d735642`
+
+La aduana de hoy: **BLOQUEARIA** con `7` vecino(s) contra `479`; lineas `--veredicto` pasadas: `7`. Salida entera en `.v70ext/insertar_04_fijar_duracion_lugar_reunion_individual.txt`.
+
+<!-- TALLADO: parcial salida=.v70ext/insertar_04_fijar_duracion_lugar_reunion_individual.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `fijar_frecuencia_reunion_individual_madurez_tarea` | similitud_texto, familia_id | 0.630 | 0.375 | 0.435 | SANO |
+| `alentar_asuntos_corazon_vigilar_final_reunion` | paso_contra_nodo | 0.320 | 0.100 | 0.612 | SANO |
+| `preparar_guion_reunion_individual_subordinado` | similitud_texto | 0.601 | 0.250 | 0.517 | SANO |
+| `cubrir_indicadores_problemas_reunion_individual` | similitud_texto | 0.506 | 0.250 | 0.452 | SANO |
+| `infundir_regularidad_reunion_proceso` | similitud_texto | 0.460 | 0.125 | 0.468 | SANO |
+| `usar_tres_clases_reunion_proceso` | similitud_texto | 0.395 | 0.111 | 0.463 | SANO |
+| `facilitar_expresion_subordinado_pregunta_mas` | similitud_texto | 0.355 | 0.000 | 0.458 | SANO |
+
+**Los siete vecinos son los siete de su bloque y las siete lineas se pasaron tal cual**; ninguno nuevo contra `479` (`393` del grafo mas `86` de bandejas, linea `13` de su salida), ninguno que dejara de levantarse. Sin arista: `d053` la dejo sin partir (`ACTA 68` `68.5`) y su linea con la cabeza es `SANO`.
