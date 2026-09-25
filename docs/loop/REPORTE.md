@@ -60477,7 +60477,7 @@ anexa su fila al volver, con su commit. Si la vuelta se corta, lo que falte es e
 | `T1` | los registros de la `ACTA 66` | **CERRADA** (`68.1`) |
 | `T2` | las filas `21` y `22` de `cap_04`, una por vez | **CERRADA**, las dos dentro (`68.2`) |
 | `T3` | `cap_05` y `cap_06` listos: fidelidad entera, barrido, veredictos, aristas por lectura, orden | **CERRADA**, ninguno insertado (`68.3`) |
-| `T4` | el cierre: censo, aristas, `PASOS INVENTADOS`, `D.61`, `R5`, guardas, huellas, commit | abierta (`68.4`) |
+| `T4` | el cierre: censo, aristas, `PASOS INVENTADOS`, `D.61`, `R5`, guardas, huellas, commit | **CERRADA** (`68.4`) |
 
 ## 68.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
 
@@ -60893,3 +60893,203 @@ lectura, que se cablean con `forja.py arista`: **`15`**.
 **`T3` CERRADA: las cinco partes hechas, ninguna fila vacia, ninguno insertado.** La huella de las `20` fichas, contra la que la
 `70` comprobara que entra lo que se leyo, va en el cierre (`68.4`), despues del ultimo cambio de ficha, que en esta vuelta es
 ninguno.
+
+## 68.4. TAREA 4: EL CIERRE
+
+### 68.4.a. El censo antes y despues
+
+<!-- TALLADO: parcial salida=.v68ext/censo_cierre.txt -->
+
+    $ bash .v68ext/censo.sh
+    nodos en dataset/nodos.jsonl        : 390
+    veredictos en bitacora              : 904
+    pares mutuos                        : 1
+    bandeja cuarentena/grove_high_output: 47
+    insertados de grove_high_output     : 45
+    cerrojos en procesos/               :
+
+| | al abrir (`68.0`) | al cerrar | delta |
+|---|---:|---:|---:|
+| nodos | `388` | `390` | `+2` |
+| veredictos | `893` | `904` | `+11`: `9` lineas `--veredicto` de las dos filas (`8` y `1`) y `2` aristas por lectura |
+| pares mutuos | `1` | `1` | `0` |
+| bandeja de Grove | `49` | `47` | `-2` |
+| insertados de Grove | `43` | `45` | `+2` |
+
+**`390`, `47` y `45`, los del encargo.** **`procesos/` vacio al abrir y al cerrar.** El `$ bash .v68ext/censo.sh` de `68.0` es el
+estado de apertura y hoy imprime el de cierre; **se reproduce contra el commit de apertura**, `fd190d7`:
+
+    $ for f in dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl config/pares_mutuos.jsonl; do echo "$f $(git show fd190d7:$f | wc -l)"; done; for d in cuarentena/grove_high_output/ cuarentena/_insertados/grove_high_output/; do echo "$d $(git ls-tree --name-only fd190d7 $d | grep -c '\.json$')"; done
+    dataset/nodos.jsonl 388
+    bitacora/VEREDICTOS.jsonl 893
+    config/pares_mutuos.jsonl 1
+    cuarentena/grove_high_output/ 49
+    cuarentena/_insertados/grove_high_output/ 43
+
+### 68.4.b. Las aristas de la tanda, contadas por instrumento
+
+`.v68ext/aristas_vuelta.py`, copia de `.v67ext/aristas_vuelta.py` que lee la bitacora desde la linea `894` y cruza con las esperadas
+de los dos ficheros de la `66` para las filas `21` y `22`:
+
+<!-- TALLADO: parcial salida=.v68ext/aristas_vuelta.txt -->
+
+    $ python .v68ext/aristas_vuelta.py
+    registros de la vuelta en la bitacora: 11
+    EN GRAFO   lectura declarada   agrupar_tareas_semejantes_aprovechar_preparacion > agrupar_interrupciones_subordinados_reuniones_regulares
+    EN GRAFO   lectura declarada   buscar_regularidad_bloques_iguales_trabajo_mando > canalizar_interrupciones_cartel_hora_oficina
+    registros con arista: 2 | aristas DISTINTAS: 2 | en el grafo: 2 | en cola: 0 (un par CONTINUA leido desde sus dos lados deja dos registros y una sola arista)
+    esperadas: 2 | esperadas que viven en el grafo: 2 | esperadas sin registro: 0 | registradas no esperadas: 0
+
+**`2` esperadas, `2` en el grafo, `0` en cola, `0` sin registro y `0` registradas sin esperar**: las dos por lectura del encargo,
+las dos adjudicadas `SOSTENGO` en la `ACTA 65` `65.4.b`. Las dos filas no traian ninguna `CONTINUA` con `madre=`. Los `11`
+registros son las `9` lineas de veredicto y las `2` aristas.
+
+### 68.4.c. `PASOS INVENTADOS POR CAPITULO`
+
+**Lo que ENTRO, `cap_04`, las dos filas**, contado desde `.v66ext/fidelidad.tsv`, la lectura entera que la `ACTA 65` firmo en `0`
+de `156`, con la copia `.v68ext/pasos_inventados.py` cuya tanda son las filas `21` y `22`:
+
+<!-- TALLADO: parcial salida=.v68ext/pasos_inventados.txt -->
+
+    $ python .v68ext/pasos_inventados.py
+    candidato que ENTRO                                      cap     pasos   T   P
+    agrupar_interrupciones_subordinados_reuniones_regulares  cap_04      5   5   0
+    canalizar_interrupciones_cartel_hora_oficina             cap_04      8   8   0
+    entraron: 2 de la tanda de 2 | pasos sin fila de lectura: 0 []
+
+    | capitulo | candidatos que entraron | pasos | PUENTE | por ciento |
+    |---|---:|---:|---:|---:|
+    | `cap_04` | 2 | 13 | 0 | 0,00 |
+
+**`0` de `13`**: `5` de `agrupar_interrupciones` y `8` de `canalizar`, la cuenta que la `ACTA 66` `66.2` corrigio. **Con estas dos,
+`cap_04` entra entero, `0` de `156`.**
+
+**Y aparte `cap_05` y `cap_06`, que son preparacion y no entrada** (`68.3.1`, `.v68ext/contar_fidelidad.txt`):
+
+<!-- TALLADO: parcial salida=.v68ext/contar_fidelidad.txt -->
+
+| capitulo | que | candidatos | pasos | PUENTE | por ciento |
+|---|---|---:|---:|---:|---:|
+| `cap_04` | ENTRO en esta vuelta, filas `21` y `22` | `2` | `13` | `0` | `0,00` |
+| `cap_05` | preparado para la `70`, no entro | `12` | `84` | `0` | `0,0` |
+| `cap_06` | preparado para la `70`, no entro | `8` | `62` | `0` | `0,0` |
+
+**Los tres bajo el `10`.** Si caen como `P` todos los pasos de `D68.3` a `D68.6`, `cap_05` sale `5` de `84`, el `6,0`, y `cap_06`
+`4` de `62`, el `6,5`.
+
+### 68.4.d. `D.61`: los discutibles, cada uno ejecutado o cerrado
+
+| | que | estado |
+|---|---|---|
+| `D68.1` | el metodo de espera de la `65` a la `67`, y leer `cap_05` y `cap_06` entre dos esperas sin tocar dataset, bitacora ni bandeja | **EJECUTADO** dos veces: `.fin` en `0` las dos, sin solape (`68.2`); ninguna ficha de la bandeja se toco en toda la vuelta (`68.4.e`, las `20` iguales a su blob de la apertura) |
+| `D68.2` | la copia de `insertar.py` que lee las lineas de `.v66ext/veredictos_listos.txt` y salta las `#` | **EJECUTADO**: la cabecera de cada `.v68ext/insertar_*.txt` lista `8` y `1` lineas, las de `lin` en `.v66ext/orden.txt` |
+| `D68.3` a `D68.6` | las marcas `T` dudosas de la fidelidad de `cap_05` y `cap_06` | **CERRADOS** en `.v68ext/fidelidad.tsv` con su nota en la fila; la cifra si cayeran, dicha en `68.4.c` |
+| `D68.7` | la cabeza de las tres clases, madre de ocho preguntas del uno a uno | **EJECUTADO**: cuatro `CONTINUA` en los veredictos y cuatro `SOSTENGO` en aristas, y en el orden (fila `2` delante de todas) |
+| `D68.8`, `D68.9`, `D68.12`, `D68.13` | cuatro `SANO` dudosos | **EJECUTADOS** en sus lineas de `.v68ext/veredictos_listos.txt` |
+| `D68.10`, `D68.11` | dos aristas por lectura con madre en el grafo | **EJECUTADO**: escritas `SOSTENGO` en `.v68ext/aristas_lectura.txt`; se cablean en la `70` |
+| `D68.14` | tres `NO SOSTENGO` desde `conducir_etapas` | **EJECUTADO** en `.v68ext/aristas_lectura.txt` |
+| `D68.15` | la arista EN ESPERA de `elegir_estilo` a `fijar_frecuencia` | **CERRADO**: escrita como comentario en `.v68ext/aristas_lectura.txt`, fuera de lo que la `70` cablea; se declara cuando entre `cap_13` |
+
+**Ninguno abierto.** Los que la `ACTA 67` tumbe son caida dentro del marcado.
+
+### 68.4.e. La huella de las `20` fichas preparadas
+
+Copia de `.v67ext/pasos_y_huellas.py` con la lista de las filas `1` a `20` de `.v68ext/orden.txt` y el commit a `fd190d7`, la
+apertura de esta vuelta: **corrida despues del ultimo cambio de ficha, que en esta vuelta es ninguno**. El blob que imprime es
+contra lo que la `70` comprobara que entra lo que se leyo:
+
+<!-- TALLADO: parcial salida=.v68ext/pasos_y_huellas.txt -->
+
+    $ python .v68ext/pasos_y_huellas.py
+    1   infundir_regularidad_reunion_proceso                     bandeja    6b93ad4500 igual
+    2   usar_tres_clases_reunion_proceso                         bandeja    ebc47c2b9a igual
+    3   fijar_frecuencia_reunion_individual_madurez_tarea        bandeja    f4ac56c90b igual
+    4   fijar_duracion_lugar_reunion_individual                  bandeja    e8d8a2f3ab igual
+    5   preparar_guion_reunion_individual_subordinado            bandeja    331d9fd308 igual
+    6   cubrir_indicadores_problemas_reunion_individual          bandeja    072eac4a5d igual
+    7   facilitar_expresion_subordinado_pregunta_mas             bandeja    34494b45b2 igual
+    8   tomar_notas_copia_guion_reunion_individual               bandeja    1735220c5b igual
+    9   acumular_asuntos_importantes_fichero_espera              bandeja    53219c730f igual
+    10  alentar_asuntos_corazon_vigilar_final_reunion            bandeja    e9f737aa26 igual
+    11  conducir_reunion_individual_telefono_distancia           bandeja    203f3cb565 igual
+    12  programar_reunion_individual_cadena                      bandeja    54ae3ce499 igual
+    13  conducir_etapas_modelo_ideal_decision                    bandeja    19df4c4999 igual
+    14  ejercer_poder_posicion_etapa_decision_clara              bandeja    684f1ec71c igual
+    15  vencer_sindrome_grupo_pares_autoconfianza                bandeja    871784f6cc igual
+    16  tomar_mando_reunion_pares_presidente_ausente             bandeja    a848b2a1ce igual
+    17  cortar_discusion_libre_momento_justo                     bandeja    5e7b1d6e9f igual
+    18  zanjar_seis_preguntas_decision_adelantado                bandeja    aec52e3dda igual
+    19  anunciar_decision_inesperada_reconvocar_reunion          bandeja    b7d394670d igual
+    20  decidir_nivel_competente_inferior                        bandeja    5ee59feaac igual
+    fichas de las filas 1 a 20: 20 | iguales a su blob en fd190d7: 20 | distintas: 0
+
+**`20` iguales y `0` distintas**: lo que se leyo en `68.3.1`, lo que se barrio en `68.3.2` y lo que tiene veredicto en `68.3.3` son
+las mismas fichas.
+
+### 68.4.f. Las guardas
+
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 390
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+
+    $ python forja.py guiones
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+
+    $ tail -2 .v68ext/cierre_tests.txt
+      total: 379 pruebas, 0 fallos, 0 errores
+    ========================================================================
+
+(`.v68ext/cierre_tests.txt` es la salida entera de `python tests/test_aceptacion.py`, corrida al cerrar con codigo `0`;
+`.v68ext/cierre_gate.txt` y `.v68ext/cierre_guiones.txt` las de las otras dos.)
+
+### 68.4.g. El reloj
+
+Los dos `insertar`: la fila `21` `1786,6` s y la `22` `2153,7` s (ultima linea de cada `.v68ext/insertar_*.txt`). El barrido de los
+`20`, `2` h `54` min con cinco a la vez (`68.3.2`). **No son techos: es lo que costo.** **Ningun proceso mio vive al cerrar el
+turno**: los dos `.fin` en `0`, el barrido con su `TODOS TERMINADOS` y sus `20` `rc=0`, y `procesos/` vacio (`68.4.a`).
+
+### 68.4.h. `R5`, medido con las dos copias de la cabecera cambiada a la `68`
+
+`.v68ext/pegado68.py` es `.v64ext/pegado64.py` y `.v68ext/bloques_mudos68.py` es `.v64aud/normal/bloques_mudos.py`, las dos con la
+cabecera del tramo en `# VUELTA 68 ` y el comentario de cabecera, nada mas cambiado. Corridas con todos los bloques `$` de la vuelta
+ya escritos, este incluido, menos el del cierre estricto que viene detras:
+
+    $ python .v68ext/pegado68.py; python .v68ext/bloques_mudos68.py
+    bloques abiertos con `$` en el tramo de la vuelta 68 : 29
+    bloques que ROMPEN R1 (ACTA 60 60.15)                : 0
+    bloques abiertos con `$`: 17 | comandos `$`: 29 | comandos sin ninguna linea de salida en su bloque: 0
+
+**Cero bloques que rompen `R1` y cero comandos sin salida.** **Correccion declarada:** la primera corrida de este bloque se
+hizo en la misma orden que lo escribia, con el bloque todavia sin salida, y se conto a si misma como el unico comando mudo
+(`linea 61058 ... 1`); la salida de arriba es la de volver a correr los dos instrumentos con el bloque ya entero, pegada por
+instrumento y no tecleada. El cierre estricto de la primera pasada salio en verde igual (`.v68ext/cierre_reporte.txt`).
+
+### 68.4.i. El cierre estricto, en verde
+
+Salida entera (y la de las pruebas que lanza, que va por stderr) en `.v68ext/cierre_reporte.txt`, codigo `0`:
+
+    $ python scripts/cerrar_reporte.py 2>/dev/null | grep -E '^(TALLADO|CENSO|TABLA DE CIERRE|CIERRE|GATE|BARRIDO)'
+    TALLADO DEL REPORTE (D.41): la tabla que dice ser de instrumento
+    TALLADO VERDE: las 157 tabla(s) comprobables son las de su instrumento, celda a celda.
+    CENSO DE RUTAS (D.42): la unidad de la ruta es la celda
+    CENSO VERDE: las 962 rutas publicadas sostienen lo que dicen sostener.
+    TABLA DE CIERRE DE TAREAS (D.52): toda tabla del reporte declara su instrumento
+    TABLA DE CIERRE VERDE: ninguna celda medible difiere del dato.
+    GATE VERDE.
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+    CIERRE VERDE: las cuatro guardas que muerden, el tallado y el censo. La vigencia corrio y publico su cuenta arriba: es cola, no guarda (D.15).
+
+**Ningun rojo.**
+
+**Tabla de tareas, al cerrar:**
+
+| tarea | que | estado |
+|---|---|---|
+| `T1` | los registros de la `ACTA 66` | **CERRADA** (`68.1`) |
+| `T2` | las filas `21` y `22` de `cap_04`, una por vez | **CERRADA** (`68.2`): las dos dentro, `cap_04` entero en el grafo, `2` aristas vivas |
+| `T3` | `cap_05` y `cap_06` listos: fidelidad, barrido, veredictos, aristas por lectura, orden | **CERRADA** (`68.3`): ninguno insertado, `20` en el orden de la `70` |
+| `T4` | el cierre | **CERRADA** (`68.4`) |
+
+**`R5` vuelto a medir con el reporte ya entero** (`pegado68.py` y `bloques_mudos68.py` otra vez): `30` comandos en `18` bloques, con `0`
+rotos y `0` mudos; el de mas es el bloque del cierre estricto de `68.4.i`, anexado despues de la medida de `68.4.h`.
