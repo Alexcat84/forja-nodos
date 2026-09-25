@@ -1072,3 +1072,7 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-25 | ejercer_poder_posicion_etapa_decision_clara | otro_idioma | position-power authority | ingles | - |
 | 2026-09-25 | ejercer_poder_posicion_etapa_decision_clara | otro_idioma | peer-plus-one | ingles | - |
 | 2026-09-25 | ejercer_poder_posicion_etapa_decision_clara | otro_idioma | position-power prejudice | ingles | - |
+| 2026-09-25 | vencer_sindrome_grupo_pares_autoconfianza | nombre_largo | Las tres fuentes de la autoconfianza que vence al sindrome del grupo de pares: la familiaridad con el asunto, la experiencia, y la constatacion visceral de que nadie se ha muerto por una decision de negocio equivocada | castellano | - |
+| 2026-09-25 | vencer_sindrome_grupo_pares_autoconfianza | otro_idioma | peer-group syndrome | ingles | - |
+| 2026-09-25 | vencer_sindrome_grupo_pares_autoconfianza | otro_idioma | self-confidence | ingles | - |
+| 2026-09-25 | vencer_sindrome_grupo_pares_autoconfianza | otro_idioma | gut-level realization | ingles | - |
