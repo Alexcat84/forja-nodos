@@ -65847,7 +65847,7 @@ falte es exactamente lo que no tiene fila.
 |---|---|---|
 | `T1` | los registros de la `ACTA 75` | **CERRADA** (`77.1`) |
 | `T2` | la relectura conjunta: el par de la contratacion y la arista `fingir` a `recorrer` | **CERRADA** (`77.2`): las dos me convencen; aristas esperadas de `8` a `10`, el orden sin mover |
-| `T3` | lo que entra es lo que se leyo: las huellas de las `22` fichas | ABIERTA |
+| `T3` | lo que entra es lo que se leyo: las huellas de las `22` fichas | **CERRADA** (`77.3`): identicas a `.v76ext/pasos_y_huellas.txt` |
 | `T4` | las `22` filas de `.v76ext/orden.txt`, una por vez | ABIERTA |
 | `T5` | el cierre | ABIERTA |
 
@@ -66081,3 +66081,62 @@ se cablea con `.v77ext/arista.py` al entrar `recorrer`, con `--veredicto CONTINU
 
 **`T2` CERRADA**, con su commit antes del primer `insertar`.
 
+## 77.3. TAREA 3: LO QUE ENTRA ES LO QUE SE LEYO
+
+Corrido despues de la TAREA 2 y antes del primer `insertar` (salida entera en `.v77ext/t3.txt`):
+
+<!-- TALLADO: parcial salida=.v77ext/t3.txt -->
+
+    $ python .v76ext/pasos_y_huellas.py > .v77ext/huellas_t3.txt; diff .v77ext/huellas_t3.txt .v76ext/pasos_y_huellas.txt && echo IDENTICO
+    IDENTICO
+    $ cat .v77ext/huellas_t3.txt
+    1   hacer_trabajo_futuro_imaginar_negocio                        bandeja     7 pasos 4ef47d89d2 igual trabajo=HEAD
+    2   dictar_ritmo_crecimiento_preguntas_escritas                  bandeja     8 pasos 1830b96359 DISTINTA trabajo=HEAD
+    3   construir_empresa_plantilla_vision_diaria                    bandeja     8 pasos 25b2c1b6d1 igual trabajo=HEAD
+    4   trazar_modelo_negocio_cliente_primero                        bandeja     9 pasos c3a1cf1caa igual trabajo=HEAD
+    5   fingir_prototipo_cinco_mil_replicas                          bandeja    11 pasos 70552170e5 igual trabajo=HEAD
+    6   dar_valor_constante_cuatro_publicos                          bandeja     8 pasos 2c531186bc igual trabajo=HEAD
+    7   interrogar_negocio_cinco_preguntas                           bandeja    10 pasos 2fc9d4cdb4 DISTINTA trabajo=HEAD
+    8   operar_modelo_gente_destreza_minima                          bandeja    10 pasos c6fd6206cd DISTINTA trabajo=HEAD
+    9   unificar_color_forma_vestuario_modelo                        bandeja     8 pasos 01fecf6fc4 igual trabajo=HEAD
+    10  cambiar_saludo_cliente_dos_ramas                             bandeja     4 pasos a8e8e0f482 DISTINTA trabajo=HEAD
+    11  probar_traje_azul_seis_semanas                               bandeja     2 pasos ef38e0f89b igual trabajo=HEAD
+    12  cuantificar_impacto_innovacion_6_pasos                       bandeja     6 pasos d5f1c3b3ff DISTINTA trabajo=HEAD
+    13  recorrer_siete_pasos_programa_desarrollo_negocio             bandeja    10 pasos 883148b9f2 igual trabajo=HEAD
+    14  responder_8_preguntas_construir_primary_aim                  bandeja     9 pasos 1487eff2aa igual trabajo=HEAD
+    15  responder_4_preguntas_estandares_objetivo_estrategico        bandeja     5 pasos a1e00b0afe igual trabajo=HEAD
+    16  distinguir_tres_tipos_sistemas_negocio                       bandeja     5 pasos b8ac9e6437 igual trabajo=HEAD
+    17  aplicar_seis_pasos_sistema_venta                             bandeja     6 pasos d1602be350 igual trabajo=HEAD
+    18  medir_sistema_venta_trece_indicadores_benchmark              bandeja    14 pasos d5634b830a igual trabajo=HEAD
+    19  construir_estrategia_gente_cuatro_componentes                bandeja     5 pasos 6050dd6576 igual trabajo=HEAD
+    20  documentar_trabajo_manual_operaciones                        bandeja    10 pasos f548184ad7 igual trabajo=HEAD
+    21  aplicar_ocho_reglas_juego_personas                           bandeja     9 pasos e51bcde092 DISTINTA trabajo=HEAD
+    22  aplicar_cinco_pasos_proceso_contratacion                     bandeja    12 pasos 725f810859 igual trabajo=HEAD
+    fichas de las filas 1 a 22: 22 | pasos: 176 | iguales a su blob en 2407dbb: 16 | distintas: 6 | fichero de trabajo distinto de HEAD: 0
+
+**Identica a `.v76ext/pasos_y_huellas.txt`**, como la reprodujo el auditor (`ACTA 75` `75.1`) y como al abrir esta vuelta (`77.0`): **las
+`22` fichas entran con la huella que la `76` sello**, `176` pasos, ninguna se relee. La TAREA 2 no toco ninguna ficha: solo las dos sedes
+de `.v77ext/`.
+
+**`T3` CERRADA.**
+
+## 77.4. TAREA 4: LAS `22` FILAS DE `.v76ext/orden.txt`, UNA POR VEZ
+
+Las copias del metodo de la `75`, con las rutas cambiadas (el `diff` contra su original da solo esas lineas y los comentarios de
+cabecera): `.v77ext/insertar.py` (lineas de `.v77ext/veredictos_listos.txt`, sin las `#`, y bandeja `cuarentena/gerber_emyth/`),
+`.v77ext/esperar.py`, `.v77ext/contra_barrido.py` (contra `.v76ext/vecinos_<id>.json`), `.v77ext/fila.py`, `.v77ext/tras_insertar.sh`
+(con el `mkdir -p` de `cuarentena/_insertados/gerber_emyth/`, que no existe hasta la primera) y `.v77ext/empujar_fila.sh`; y de la `72`,
+`.v77ext/arista.py` (sede `.v77ext/aristas_lectura.txt`, y el `--veredicto` el de la lectura por `D.53`: `SANO` en las filas `D.37`,
+`CONTINUA` en la de `D.29`) y `.v77ext/bloque_arista.sh`.
+
+<!-- TALLADO: parcial salida=.v77ext/censo_antes_t4.txt -->
+
+    $ bash .v77ext/censo.sh   # antes de la TAREA 4
+    nodos en dataset/nodos.jsonl        : 437
+    veredictos en bitacora              : 1111
+    pares mutuos                        : 1
+    bandeja cuarentena/gerber_emyth     : 22
+    insertados de gerber_emyth          : 0
+    cerrojos en procesos/               : 
+
+Es el de `77.0`: `437`, `1111`, `1`, `22`, `0`, y `procesos/` vacio. Las TAREAS 1 a 3 no movieron dato.
