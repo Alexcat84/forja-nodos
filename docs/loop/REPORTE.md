@@ -65008,3 +65008,26 @@ La aduana de hoy: **BLOQUEARIA** con `2` vecino(s) contra `479`; lineas `--vered
     hoy 2 vecinos, barrido de la 73 2 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (435 grafo, 44 bandejas), en la 73 479 (430, 49)
 
 **Los dos vecinos son los de su bloque y las dos lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `73`, las tres seniales al digito; la poblacion, `479` (`435` mas `44`). **La aduana cablea en el acto `priorizar_lista_entrenamiento_subordinados > desarrollar_primer_curso_entrenamiento`**, la que la fila `5` dejo en cola (segunda de las `3` esperadas), y **deja EN COLA `desarrollar_primer_curso_entrenamiento > pedir_critica_anonima_curso_entrenamiento_dictado`** hasta la fila `7`. Bitacora de `1102` a `1104`.
+
+### Fila `7`: `pedir_critica_anonima_curso_entrenamiento_dictado`, **INSERTADO** en `473.9` s, codigo `0`, commit `11a630db`
+
+La aduana de hoy: **BLOQUEARIA** con `7` vecino(s) contra `479`; lineas `--veredicto` pasadas: `7`. Salida entera en `.v75ext/insertar_07_pedir_critica_anonima_curso_entrenamiento_dictado.txt`.
+
+<!-- TALLADO: parcial salida=.v75ext/insertar_07_pedir_critica_anonima_curso_entrenamiento_dictado.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `gestionar_retencion_subordinado_valioso_renuncia` | similitud_texto | 0.369 | 0.000 | 0.516 | SANO |
+| `priorizar_lista_entrenamiento_subordinados` | similitud_texto | 0.472 | 0.111 | 0.447 | SANO |
+| `desarrollar_primer_curso_entrenamiento` | similitud_texto | 0.447 | 0.250 | 0.396 | CONTINUA |
+| `usar_banco_nueve_preguntas_entrevista` | similitud_texto | 0.388 | 0.000 | 0.431 | SANO |
+| `repartir_supervision_puesto_funcional_mision` | similitud_texto | 0.351 | 0.000 | 0.425 | SANO |
+| `responder_primer_aviso_renuncia_subordinado` | similitud_texto | 0.410 | 0.000 | 0.389 | SANO |
+| `entregar_evaluacion_desempeno_tres_claves` | similitud_texto | 0.385 | 0.000 | 0.400 | SANO |
+
+**Arista cableada por la aduana en el acto**: `desarrollar_primer_curso_entrenamiento > pedir_critica_anonima_curso_entrenamiento_dictado`
+
+    $ python .v75ext/contra_barrido.py 07 pedir_critica_anonima_curso_entrenamiento_dictado
+    hoy 7 vecinos, barrido de la 73 7 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (436 grafo, 43 bandejas), en la 73 479 (430, 49)
+
+**Los siete vecinos son los de su bloque y las siete lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `73`, las tres seniales al digito; la poblacion, `479` (`436` mas `43`). **La aduana cablea en el acto `desarrollar_primer_curso_entrenamiento > pedir_critica_anonima_curso_entrenamiento_dictado`**, la tercera de las `3` esperadas. **Con `priorizar_lista_entrenamiento_subordinados` su linea es `SANO`** (abuela y nieta, `D73.9`). Bitacora de `1104` a `1111`. **Es la ultima fila: la bandeja de Grove queda vacia.**
