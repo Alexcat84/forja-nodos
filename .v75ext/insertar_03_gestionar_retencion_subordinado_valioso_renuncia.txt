@@ -1,0 +1,43 @@
+fila 03, gestionar_retencion_subordinado_valioso_renuncia, lineas --veredicto: 3
+  --veredicto responder_primer_aviso_renuncia_subordinado|CONTINUA|madre=responder_primer_aviso_renuncia_subordinado|Este candidato parte del producto del vecino, y lo dice el libro: el vecino compra tiempo para prepararse para the next round (L111) y este abre con What's your next move? (L113). Su condicion es haber tenido ya la primera conversacion, y su paso 4 vuelve con una solucion a las razones reales que el paso 4 del vecino hace salir. Lo que queda fuera es procedimiento en los dos lados: dejar lo que haces, escuchar sin discutir, preguntar mas y comprar tiempo en la madre; escalar al jefe, perseguir cada via, gestionar la transferencia, volver con la solucion y atender la objecion del otro empleo en el hijo (DISCUTIBLE D73.8).
+  --veredicto entregar_evaluacion_desempeno_tres_claves|SANO|Ajenos: el vecino del grafo, de cap_14, entrega cara a cara una revision de desempeno con franqueza y escucha; este retiene a un subordinado que quiere renunciar (L113 a L121). La similitud es de la prosa del mando con su subordinado; ninguno usa el producto del otro.
+  --veredicto usar_banco_nueve_preguntas_entrevista|SANO|Ajenos dentro del mismo capitulo: son las dos tareas dificiles que L13 nombra, entrevistar a un candidato (L37 a L55) y retener a quien se va (L113 a L121). Comparten el capitulo y la prosa, no el procedimiento.
+inicio 2026-09-26 05:03:15
+======================================================================
+ADUANA DE INSERCION, candidato 'gestionar_retencion_subordinado_valioso_renuncia'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (432 del grafo mas 47 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 3. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino responder_primer_aviso_renuncia_subordinado  [Responder al primer momento en que un subordinado valioso avisa que quiere renunciar: dejar lo que haces, escucharlo sin discutir y comprarte tiempo antes de actuar]
+    levantada por: similitud_texto
+    similitud_texto    0.376 (umbral 0.35)
+    familia_id         0.250 (umbral 0.30)
+    paso_contra_nodo   0.421 (umbral 0.60)
+    paso 4 del candidato contra paso 3 de responder_primer_aviso_renuncia_subordinado
+
+  vecino entregar_evaluacion_desempeno_tres_claves  [Entregar la evaluacion de desempeno cara a cara con las tres claves del mando: franqueza, escucha total y dejar fuera las emociones propias]
+    levantada por: similitud_texto
+    similitud_texto    0.403 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.390 (umbral 0.60)
+    paso 2 del candidato contra paso 6 de entregar_evaluacion_desempeno_tres_claves
+
+  vecino usar_banco_nueve_preguntas_entrevista  [Usar el banco de nueve preguntas que un grupo de mandos considero las mejores para entrevistar a un candidato]
+    levantada por: similitud_texto
+    similitud_texto    0.388 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.398 (umbral 0.60)
+    paso 4 del candidato contra paso 2 de usar_banco_nueve_preguntas_entrevista
+  arista madre-hijo cableada y escrita RESUELTA: responder_primer_aviso_renuncia_subordinado > gestionar_retencion_subordinado_valioso_renuncia
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 433
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 3
+
+======================================================================
+fin 2026-09-26 05:15:07 | codigo de salida 0 | 711.9 s
