@@ -1,0 +1,26 @@
+fila 14, responder_8_preguntas_construir_primary_aim, lineas --veredicto: 1
+  --veredicto responder_4_preguntas_estandares_objetivo_estrategico|SANO|El mismo par que responder_4 lee desde su lado: hermanos, los pasos 1 y 2 del Business Development Program; este construye el Primary Aim (L117 a L133) y el vecino completa los estandares tercero en adelante del Objetivo Estrategico (cap_15 L169 a L177), sin usar estas respuestas (DISCUTIBLE D76.18).
+inicio 2026-09-26 11:27:20
+======================================================================
+ADUANA DE INSERCION, candidato 'responder_8_preguntas_construir_primary_aim'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (450 del grafo mas 29 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino responder_4_preguntas_estandares_objetivo_estrategico  [Responder las cuatro preguntas que el libro enumera para completar los estandares de tu Objetivo Estrategico]
+    levantada por: similitud_texto
+    similitud_texto    0.395 (umbral 0.35)
+    familia_id         0.250 (umbral 0.30)
+    paso_contra_nodo   0.429 (umbral 0.60)
+    paso 7 del candidato contra paso 2 de responder_4_preguntas_estandares_objetivo_estrategico
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 451
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 1
+
+======================================================================
+fin 2026-09-26 11:33:36 | codigo de salida 0 | 376.2 s
