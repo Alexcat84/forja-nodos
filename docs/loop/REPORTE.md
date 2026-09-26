@@ -64576,3 +64576,77 @@ la `ACTA 73` sin mover dato, y es lo que hago.
 **El hook del commit del cierre** (`6312424`, salida en `.v74ext/hook_t4.txt`) sale en verde y cuenta `1035` rutas donde mi segunda
 corrida conto `1034`: la de mas es `.v74ext/r5_bis.txt`, que el parrafo de `74.4.f` publico despues de esa corrida. Las dos cifras son
 ciertas de su momento.
+
+# VUELTA 75 DE LA LINEA SERIAL, lote 7 (`grove_high_output`), **CLASE INSERCION**: la bloqueante por `D.54` sobre `dar_elogio_disciplina_igual_critica` (los pasos `8` y `17` fuera del campo) y despues las `7` fichas que quedan de Grove, una por vez
+
+*Encargo escrito por el auditor al cerrar la `ACTA 73`. Clase impresa por `python scripts/deuda.py --clase 75` (`LIBRE`, `75.0`) y
+declarada `INSERCION` en la cabecera del encargo. **Ningun `insertar` antes de cerrar la TAREA 2, uno por vez en primer plano, y
+ninguno en vuelo al cerrar el turno.***
+
+**REPORTE ABIERTO AL EMPEZAR** (`EXTRACTOR.md` 3). Las filas se llenan al cerrarse cada tarea. Si la vuelta se corta, lo que
+falte es exactamente lo que no tiene fila.
+
+| tarea | que | estado |
+|---|---|---|
+| `T1` | los registros de la `ACTA 73` | **CERRADA** (`75.1`) |
+| `T2` | BLOQUEANTE: los pasos `8` y `17` de `dar_elogio_disciplina_igual_critica` salen del campo por `D.54` | ABIERTA |
+| `T3` | lo que entra es lo que se leyo: las huellas de las `7` fichas | ABIERTA |
+| `T4` | las filas de `.v73ext/orden.txt`, una por vez | ABIERTA |
+| `T5` | el cierre | ABIERTA |
+
+## 75.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
+
+**Lo pendiente, commiteado primero** (`EXTRACTOR.md` 1): `loop.log`, `ultimo_auditor.json` y `ultimo_extractor.json` del arnes,
+empujados como `9a5151a`, hook verde.
+
+<!-- TALLADO: parcial salida=.v75ext/apertura.txt -->
+
+    $ git rev-parse HEAD && git log -1 --format=%cI && git rev-parse --abbrev-ref HEAD
+    9a5151a4534342ad80e73763d4f9a14cea2539a3
+    2026-09-26T04:31:28-04:00
+    extraccion-mundo-11
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 430
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+    $ bash .v75ext/censo.sh
+    nodos en dataset/nodos.jsonl        : 430
+    veredictos en bitacora              : 1081
+    pares mutuos                        : 1
+    bandeja cuarentena/grove_high_output: 7
+    insertados de grove_high_output     : 85
+    cerrojos en procesos/               : 
+    $ python scripts/deuda.py --clase 75
+    LIBRE
+      van 1 de 5 desde la ultima de saneamiento (la 74), con 52 deuda(s) esperando
+    $ python .v70aud/poblacion.py
+    poblacion: 479 | por sede: {'grafo': 430, 'bandeja': 49} | suma: 479
+    $ python scripts/retirar_paso.py --ver
+    RETIRADAS DECLARADAS QUE SIGUEN VIVAS EN EL CAMPO (D.54)
+      poblacion: dataset/nodos.jsonl, sin filtrar
+      encontradas: 0
+    $ python .v73ext/pasos_y_huellas.py > .v75ext/huellas_apertura.txt; diff .v75ext/huellas_apertura.txt .v73ext/pasos_y_huellas.txt && echo IDENTICO
+    IDENTICO
+
+**Coincide con la `ACTA 73` `73.1`** (`430`, `1081`, `1`, `7`, `85`; poblacion `479`, `430` del grafo mas `49` de bandejas), y
+**`procesos/` esta vacio**. `.v75ext/censo.sh` es copia de `.v74ext/censo.sh` con el comentario cambiado. **Una discrepancia, y se
+declara**: el encargo pega `51` deudas esperando y hoy el instrumento da `52`; la de mas es `d180`, que la `ACTA 73` anoto al cerrar
+(`73.13`; su linea en `docs/loop/DEUDA.jsonl` lleva `"anotada": "2026-09-26 04:28:05"`), despues de la medida que el encargo pega.
+`retirar_paso.py --ver` en `0` antes de tocar nada.
+
+## 75.1. TAREA 1: LOS REGISTROS DE LA `ACTA 73`, SIN REABRIR EL ARGUMENTO (`D.47`)
+
+| que | donde |
+|---|---|
+| **mi vuelta, reproducida**: no movio dato; mis instrumentos dan lo que pegue y mis cuatro `como` estan en el registro como sus ficheros | `ACTA 73` `73.1` |
+| **mis ocho discutibles se sostienen**, `D74.1` a `D74.8`; en `D74.6` gana mi `P` y cae la lectura ciega del auditor | `73.5` |
+| **un PUENTE que no vi**: `dar_elogio_disciplina_igual_critica` paso `8`, *y la critica no*, fuera de mi marcado. **Mi cuenta es `2` de `70` y no `1`**, y los `como` de `d084` y `d006` quedan corregidos por correccion declarada en el acta | `73.5` |
+| **`REPORTE` cae y sube a `2 de 3`**: la cifra vive en mi tabla de `74.3.2`, en mi cabecera y en mi tabla de cierre. **La siguiente caida de `REPORTE` que acumule es la de la linea** | `73.2`, `73.7` |
+| **mi remedio nuevo, `R9`**, y `R5` sigue vivo | `73.11` |
+
+**Lo que aprendo de la caida, sin reabrirla:** una fila `T` cuyo paso lleva una clausula que compara (*y la critica no*) no se sostiene
+con la linea que trae el medio; hace falta el tramo que trae la comparacion. Es `R9`, y en esta vuelta lo corro sobre los `18` pasos
+que quedan de `dar_elogio` (`75.2`). **Y como `REPORTE` esta a un escalon**, la cabecera y la tabla de cierre de esta vuelta se
+reescriben al final contra lo que las tablas de dentro dicen, celda a celda.
+
+**`T1` CERRADA.**

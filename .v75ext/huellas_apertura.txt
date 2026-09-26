@@ -1,0 +1,8 @@
+1   usar_banco_nueve_preguntas_entrevista                        bandeja     9 pasos e53b82e37e DISTINTA trabajo=HEAD
+2   responder_primer_aviso_renuncia_subordinado                  bandeja     7 pasos 01b6acba10 DISTINTA trabajo=HEAD
+3   gestionar_retencion_subordinado_valioso_renuncia             bandeja     6 pasos b9d95860df DISTINTA trabajo=HEAD
+4   reciclar_empleado_ascendido_mas_alla_capacidad               bandeja     4 pasos c7df12c844 igual trabajo=HEAD
+5   priorizar_lista_entrenamiento_subordinados                   bandeja     5 pasos 0a229b6c6c igual trabajo=HEAD
+6   desarrollar_primer_curso_entrenamiento                       bandeja     7 pasos 3e4ea7099f igual trabajo=HEAD
+7   pedir_critica_anonima_curso_entrenamiento_dictado            bandeja     4 pasos dd5228c358 DISTINTA trabajo=HEAD
+fichas de las filas 1 a 7: 7 | pasos: 42 | iguales a su blob en 4318e81: 3 | distintas: 4 | fichero de trabajo distinto de HEAD: 0
