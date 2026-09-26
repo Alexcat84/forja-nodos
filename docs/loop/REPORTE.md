@@ -63056,3 +63056,19 @@ La aduana de hoy: **BLOQUEARIA** con `1` vecino(s) contra `479`; lineas `--vered
     hoy 1 vecinos, barrido de la 71 1 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (410 grafo, 69 bandejas), en la 71 479 (410, 69)
 
 **El vecino es el de su bloque y la linea se paso tal cual**: ni nuevos ni caidos contra el barrido de la `71`, las tres seniales al digito. Sin aristas en esta fila: la cabeza es madre de las filas `6`, `7` y `8`, que se cablean al entrar cada hijo.
+
+### Fila `2`: `fijar_periodo_direccion_objetivos_retroalimentacion`, **INSERTADO** en `422.1` s, codigo `0`, commit `14a042d7`
+
+La aduana de hoy: **BLOQUEARIA** con `2` vecino(s) contra `479`; lineas `--veredicto` pasadas: `2`. Salida entera en `.v72ext/insertar_02_fijar_periodo_direccion_objetivos_retroalimentacion.txt`.
+
+<!-- TALLADO: parcial salida=.v72ext/insertar_02_fijar_periodo_direccion_objetivos_retroalimentacion.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `examinar_entorno_expectativas_tecnologia_proveedores_grupos` | similitud_texto | 0.359 | 0.000 | 0.419 | SANO |
+| `fijar_meta_direccion_objetivos_mitad_probabilidad` | familia_id | 0.281 | 0.375 | 0.376 | SANO |
+
+    $ python .v72ext/contra_barrido.py 02 fijar_periodo_direccion_objetivos_retroalimentacion
+    hoy 2 vecinos, barrido de la 71 2 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (411 grafo, 68 bandejas), en la 71 479 (410, 69)
+
+**Los dos vecinos son los de su bloque y las dos lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `71`, las tres seniales al digito. Sin aristas en esta fila.
