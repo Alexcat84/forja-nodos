@@ -66921,3 +66921,7 @@ encargo prohibe tocar.
 **Ningun proceso MIO vivo al cerrar**: los `22` `insertar` volvieron con su `.fin` en `0` antes de lanzar el siguiente (`.v77ext/relojes.txt`),
 y todo lo demas corrio en primer plano. **La bandeja de Gerber queda vacia**: el libro entero vive en el grafo o en `_insertados`.
 **No escribo `PARA_ALEXIS.md`: nada me obliga a parar.** Marquet no se toco.
+
+**El hook del commit del cierre** (`b2d27bbc`, salida en `.v77ext/hook_t5.txt`) sale en verde y cuenta `1079` rutas donde mi corrida del
+cierre estricto conto `1074`: las de mas son las que `77.5.f` y `77.5.g` publicaron despues de esa corrida. Las dos cifras son ciertas
+de su momento, y en ninguna cae una ruta.
