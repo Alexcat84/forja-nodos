@@ -66177,3 +66177,18 @@ La aduana de hoy: **BLOQUEARIA** con `8` vecino(s) contra `479`; lineas `--vered
     hoy 8 vecinos, barrido de la 76 8 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (438 grafo, 41 bandejas), en la 76 479 (437, 42)
 
 **Los ocho vecinos son los de su bloque y las ocho lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `76`, las tres seniales al digito; la poblacion, `479`, con la fila `1` ya en el grafo (`438` mas `41`). Sin aristas en esta fila. Bitacora de `1112` a `1120`, sus ocho lineas SANO.
+
+### Fila `3`: `construir_empresa_plantilla_vision_diaria`, **INSERTADO** en `403.2` s, codigo `0`, commit `04f34e5a`
+
+La aduana de hoy: **BLOQUEARIA** con `1` vecino(s) contra `479`; lineas `--veredicto` pasadas: `1`. Salida entera en `.v77ext/insertar_03_construir_empresa_plantilla_vision_diaria.txt`.
+
+<!-- TALLADO: parcial salida=.v77ext/insertar_03_construir_empresa_plantilla_vision_diaria.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `recorrer_trece_elementos_proceso_evaluacion_formal` | similitud_texto | 0.353 | 0.000 | 0.397 | SANO |
+
+    $ python .v77ext/contra_barrido.py 03 construir_empresa_plantilla_vision_diaria
+    hoy 1 vecinos, barrido de la 76 1 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (439 grafo, 40 bandejas), en la 76 479 (437, 42)
+
+**El vecino es el de su bloque y la linea se paso tal cual**: ni nuevos ni caidos contra el barrido de la `76`, las tres seniales al digito; la poblacion, `479` (`439` mas `40`). Sin aristas en esta fila. Bitacora de `1120` a `1121`, su linea SANO.
