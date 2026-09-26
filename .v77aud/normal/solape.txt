@@ -1,0 +1,25 @@
+commit de T1 y T2: 09:33:46 | de T3: 09:36:32 | arranque del insertar 1: 09:37:06 | despues de los dos: SI
+   1 arranque 09:37:06 fin 09:45:09 rc 0 | commits de su fila: 2, el ultimo 09:45:47 | el siguiente arranca despues: SI
+   2 arranque 09:46:15 fin 09:54:45 rc 0 | commits de su fila: 2, el ultimo 09:55:19 | el siguiente arranca despues: SI
+   3 arranque 09:55:45 fin 10:02:29 rc 0 | commits de su fila: 2, el ultimo 10:03:03 | el siguiente arranca despues: SI
+   4 arranque 10:03:32 fin 10:10:02 rc 0 | commits de su fila: 2, el ultimo 10:10:38 | el siguiente arranca despues: SI
+   5 arranque 10:11:04 fin 10:18:04 rc 0 | commits de su fila: 2, el ultimo 10:18:39 | el siguiente arranca despues: SI
+   6 arranque 10:19:07 fin 10:25:13 rc 0 | commits de su fila: 2, el ultimo 10:25:55 | el siguiente arranca despues: SI
+   7 arranque 10:26:21 fin 10:35:22 rc 0 | commits de su fila: 2, el ultimo 10:35:53 | el siguiente arranca despues: SI
+   8 arranque 10:36:18 fin 10:46:17 rc 0 | commits de su fila: 2, el ultimo 10:46:55 | el siguiente arranca despues: SI
+   9 arranque 10:47:21 fin 10:54:59 rc 0 | commits de su fila: 2, el ultimo 10:55:35 | el siguiente arranca despues: SI
+  10 arranque 10:56:00 fin 11:03:50 rc 0 | commits de su fila: 2, el ultimo 11:04:29 | el siguiente arranca despues: SI
+  11 arranque 11:04:56 fin 11:09:36 rc 0 | commits de su fila: 2, el ultimo 11:10:11 | el siguiente arranca despues: SI
+  12 arranque 11:10:35 fin 11:18:27 rc 0 | commits de su fila: 2, el ultimo 11:19:03 | el siguiente arranca despues: SI
+  13 arranque 11:19:30 fin 11:25:37 rc 0 | commits de su fila: 3, el ultimo 11:26:53 | el siguiente arranca despues: SI
+  14 arranque 11:27:19 fin 11:33:36 rc 0 | commits de su fila: 2, el ultimo 11:34:14 | el siguiente arranca despues: SI
+  15 arranque 11:34:41 fin 11:40:01 rc 0 | commits de su fila: 2, el ultimo 11:40:35 | el siguiente arranca despues: SI
+  16 arranque 11:41:00 fin 11:46:26 rc 0 | commits de su fila: 2, el ultimo 11:47:01 | el siguiente arranca despues: SI
+  17 arranque 11:47:25 fin 11:52:35 rc 0 | commits de su fila: 2, el ultimo 11:53:08 | el siguiente arranca despues: SI
+  18 arranque 11:53:32 fin 11:58:30 rc 0 | commits de su fila: 2, el ultimo 11:59:05 | el siguiente arranca despues: SI
+  19 arranque 11:59:34 fin 12:04:41 rc 0 | commits de su fila: 2, el ultimo 12:05:32 | el siguiente arranca despues: SI
+  20 arranque 12:05:59 fin 12:13:11 rc 0 | commits de su fila: 2, el ultimo 12:13:53 | el siguiente arranca despues: SI
+  21 arranque 12:14:15 fin 12:27:18 rc 0 | commits de su fila: 2, el ultimo 12:27:51 | el siguiente arranca despues: SI
+  22 arranque 12:28:16 fin 12:36:19 rc 0 | commits de su fila: 2, el ultimo 12:36:55 | el siguiente arranca despues: (ultimo)
+insertar: 22 | codigos: {'0': 22} | suma: 22 | con solape o sin commit antes del siguiente: 0
+ficheros .fin: 22 | su contenido: ['0']

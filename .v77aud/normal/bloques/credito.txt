@@ -1,0 +1,17 @@
+$ sed -n '5,12p' .v77aud/normal/credito_abrir.txt
+  especie            racha      de donde sale
+  ----------------------------------------------------------------------
+  AUDITOR            0 de 3     ACTA 75
+  CIFRA PUBLICADA    0 de 2     ACTA 75
+  CLASE              0 de 2     ACTA 75
+  DATO MOVIDO        0 de 2     ACTA 75
+  REPORTE            1 de 3     ACTA 75
+
+$ python forja.py credito | sed -n "5,11p"
+  especie            racha      de donde sale
+  ----------------------------------------------------------------------
+  AUDITOR            0 de 3     ACTA 76
+  CIFRA PUBLICADA    0 de 2     ACTA 76
+  CLASE              0 de 2     ACTA 76
+  DATO MOVIDO        0 de 2     ACTA 76
+  REPORTE            0 de 3     ACTA 76

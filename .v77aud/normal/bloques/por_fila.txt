@@ -1,0 +1,23 @@
+$ cut -d' ' -f2,4- .v77aud/normal/por_fila.txt
+1 grafo 438 bitacora 1112 | el reporte: Bitacora de 1111 a 1112
+2 grafo 439 bitacora 1120 | el reporte: Bitacora de 1112 a 1120
+3 grafo 440 bitacora 1121 | el reporte: Bitacora de 1120 a 1121
+4 grafo 441 bitacora 1122 | el reporte: Bitacora de 1121 a 1122
+5 grafo 442 bitacora 1122 | el reporte: Bitacora sin movimiento: 1122
+6 grafo 443 bitacora 1126 | el reporte: Bitacora de 1122 a 1126
+7 grafo 444 bitacora 1127 | el reporte: Bitacora de 1126 a 1127
+8 grafo 445 bitacora 1132 | el reporte: Bitacora de 1127 a 1132
+9 grafo 446 bitacora 1135 | el reporte: Bitacora de 1132 a 1135
+10 grafo 447 bitacora 1141 | el reporte: Bitacora de 1135 a 1141
+11 grafo 448 bitacora 1144 | el reporte: Bitacora de 1141 a 1144
+12 grafo 449 bitacora 1149 | el reporte: Bitacora de 1144 a 1149
+13 grafo 450 bitacora 1151 | el reporte: Bitacora de 1149 a 1151
+14 grafo 451 bitacora 1152 | el reporte: Bitacora de 1151 a 1152
+15 grafo 452 bitacora 1154 | el reporte: Bitacora de 1152 a 1154
+16 grafo 453 bitacora 1157 | el reporte: Bitacora de 1154 a 1157
+17 grafo 454 bitacora 1159 | el reporte: Bitacora de 1157 a 1159
+18 grafo 455 bitacora 1161 | el reporte: Bitacora de 1159 a 1161
+19 grafo 456 bitacora 1166 | el reporte: Bitacora de 1161 a 1166
+20 grafo 457 bitacora 1170 | el reporte: Bitacora de 1166 a 1170
+21 grafo 458 bitacora 1170 | el reporte: Bitacora sin movimiento: 1170
+22 grafo 459 bitacora 1172 | el reporte: Bitacora de 1170 a 1172

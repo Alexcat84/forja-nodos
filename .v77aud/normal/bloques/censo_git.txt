@@ -1,0 +1,30 @@
+$ cat .v77aud/normal/censo_git.txt
+$ git log --format="%h %an %cI %s" 658d4018..78ed0408 | grep -v ", fila [0-9]*: " | cut -c1-140
+78ed0408 alexcat84 2026-09-26T13:07:30-04:00 Apertura ciega de la vuelta 1, sellada antes de exponer el reporte
+a70bdf05 alexcat84 2026-09-26T12:55:29-04:00 Vuelta 77: la salida del hook del commit del cierre
+b2d27bbc alexcat84 2026-09-26T12:54:18-04:00 Vuelta 77, T5: el cierre (censo 459, 1172, 1, 0, 22; 8 PUENTE marcados y 0 que entraron; gate, 
+bd29146f alexcat84 2026-09-26T12:38:14-04:00 Vuelta 77, T4 cerrada: las 22 de Gerber dentro, las 10 aristas esperadas en el grafo por los do
+d967b0e4 alexcat84 2026-09-26T09:36:32-04:00 Vuelta 77, T3: las huellas de las 22, identicas a las de la 76; el censo antes de la TAREA 4
+e6f46ffb alexcat84 2026-09-26T09:33:46-04:00 Vuelta 77, T1 y T2: los registros de la ACTA 75 y la relectura conjunta (el par de la contratac
+70a827c9 alexcat84 2026-09-26T09:27:37-04:00 Vuelta 77: lo pendiente del arnes antes de tocar nada
+9fa5c94b alexcat84 2026-09-26T09:26:48-04:00 Paradas: el presupuesto baja a 6 plazas por la regla del fundador del 25 sep (mediana en uso 4,
+$ git log --format="%s" 658d4018..78ed0408 | grep -c ", fila [0-9]*: "
+45
+$ git diff --name-status 658d4018 a70bdf05 | grep -v "\.v77ext/" | awk '{print $1, $NF}' | sed "s|/[^/]*\.json$|/*.json|" | sort | uniq -c
+      1 A docs/loop/paradas/2026-09-26-seis-plazas-NOTA.md
+      1 M bitacora/VEREDICTOS.jsonl
+      1 M censos/atribuciones.md
+      1 M censos/denominaciones.md
+      1 M dataset/nodos.jsonl
+      2 M docs/loop/*.json
+      1 M docs/loop/DEUDA.jsonl
+      1 M docs/loop/loop.log
+      1 M docs/loop/REPORTE.md
+     22 R100 cuarentena/_insertados/gerber_emyth/*.json
+$ git diff --name-only a70bdf05 78ed0408
+docs/loop/APERTURA_CIEGA.md
+docs/loop/SELLOS_APERTURA.jsonl
+$ git log --format="%h %an" 658d4018..78ed0408 -- src tests scripts forja.py config esquema fuentes | wc -l
+0
+$ git status --short -- dataset bitacora censos config esquema fuentes src scripts tests cuarentena forja.py | wc -l
+0

@@ -1,0 +1,6 @@
+$ python .v77aud/normal/coste.py
+ultimo_extractor.json | USD 9.73 | 775 s de API | turnos 179 | entrada 294 | cache escrita 285707 | cache leida 28779007 | salida 84499 (pensamiento 15456)
+ultimo_apertura.json | USD 4.87 | 567 s de API | turnos 50 | entrada 98 | cache escrita 259126 | cache leida 7754353 | salida 62244 (pensamiento 21040)
+$ grep "extractor listo\|auditor ciego listo" docs/loop/loop.log | tail -2
+[2026-09-26 12:56:09] extractor listo (USD 9.732613400000002), 12547s, intento 1 de 7
+[2026-09-26 13:07:10] auditor ciego listo (USD 4.869150600000001), 659s, intento 1 de 7

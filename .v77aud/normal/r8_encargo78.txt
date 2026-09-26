@@ -1,0 +1,72 @@
+  L1 S ['78', '76', '76.11'] [] | # ENCARGO DE LA VUELTA 78: **LAS FICHAS DE MARQUET DEJADAS LISTAS PARA INSERTAR: SU FIDELIDAD LEIDA 
+  L3 - ['11', '76', '77'] [] | *Linea **serial** (`extraccion-mundo-11`). Escrito por el auditor al cerrar la `ACTA 76`, que audito
+  L4 - ['1.4'] [] | `AUDITOR_FORJA.md` seccion `1.4`. **Toda cifra de medida de esta pagina va dentro de un bloque `$` c
+  L5 S ['76', '8', '76', '76.12'] [] | su misma linea la seccion de la `ACTA 76` donde esta pegada** (`R8`, `ACTA 76` `76.12`).*
+  L14 - ['0'] [] | ## 0. **LA REGLA DEL TURNO, Y POR QUE ESTA VUELTA NO INSERTA**
+  L16 S ['77', '76', '76.1'] [] | **Gerber entro entero en la `77`**: su bandeja esta vacia y el libro vive en el grafo y en `_inserta
+  L17 S ['8', '4', '76.11'] [] | orden de la campania es Grove, Gerber, Marquet** (`PARALELO.md` seccion `8` punto `4`), y Marquet es
+  L18 - ['76', '77'] [] | vuelta hace para la bandeja de Marquet lo que la `76` hizo para la de Gerber, que llevo a la `77` a 
+  L19 - ['58'] [] | sorpresa. **Es regimen de insercion (`D.58`): la relectura de fidelidad se hace ENTERA, aqui, antes 
+  L21 - ['77'] [] | posterior, despues de que mi fase ciega barra y lea lo que dejes y la `ACTA 77` lo adjudique.
+  L23 - [] ['CINCO'] | **PUEDES LANZAR BARRIDOS DE FONDO, CINCO A LA VEZ COMO MUCHO, PERO NINGUNO VIVO AL CERRAR TU TURNO**
+  L24 - ['23'] [] | vigilandolos si tardan. **Si no te caben, no los lances: lo dices en el reporte con los que faltan.*
+  L26 - ['26', '2026', '09', '26'] ['seis'] | presupuesto de plazas de la maquina bajo el 26 sep (`docs/loop/paradas/2026-09-26-seis-plazas-NOTA.m
+  L29 - ['76'] [] | **EL RELOJ, MEDIDO, Y NO ES UN TECHO: ES LO QUE COSTO.** El barrido de la `76`, por ficha (el menor 
+  L47 - ['17'] [] | **La frase de *continuar desde `cap_17`* es de extraccion y no aplica: el frente de Marquet se cosec
+  L48 - ['8', '3'] [] | cerrado para siempre** (`PARALELO.md` seccion `8` punto `3`). Lo que se hace es preparar su bandeja 
+  L52 - ['1', '76'] [] | ## TAREA 1: **REGISTROS DE LA `ACTA 76`**
+  L54 - ['47'] [] | En una tabla corta y sin reabrir el argumento (`D.47`):
+  L58 S ['76', '76.1'] [] | | **Tu vuelta, reproducida**: tus instrumentos dan lo que pegaste, y el cierre estricto del auditor 
+  L59 S ['22', '2', '76.4'] ['dos'] | | **Las `22` de Gerber dentro, una por vez, sin solape, en su orden y despues del commit de la TAREA
+  L60 S ['1', '76.3'] ['dos'] | | **La relectura conjunta se cierra**: las dos piezas las gana la lectura del auditor y tu las ejecu
+  L61 S ['77.4', '76.3'] ['cuatro'] | | **Tus cuatro discutibles se sostienen**, y `D77.4` se adjudica sin especie | `76.3` |
+  L62 S ['111', '108', '76.3'] [] | | **`d111` y `d108` firmadas** | `76.3` |
+  L63 S ['5', '9', '76.2', '76.8', '76.0'] ['Cero', 'cero'] | | **Cero caidas tuyas**: `REPORTE` vuelve a cero, `R5` cumplido y `R9` sin objeto | `76.2`, `76.8`, 
+  L65 - ['2', '30', '58'] [] | ## TAREA 2: **LA FIDELIDAD ENTERA DE LAS FICHAS DE MARQUET** (`D.30`, `D.58`)
+  L68 S ['76', '76.11', '77'] [] | `ACTA 76` `76.11`, bloque de `.v77aud/normal/bandeja_marquet.py`**, y tu primera medida es volver a 
+  L69 - ['78', '7'] [] | `.v78ext/`, **con copias de instrumentos que ya existen y la ruta cambiada**, no con instrumentos nu
+  L71 - ['1'] [] | 1. **Cada paso contra la linea del libro que lo sostiene, en `fuentes/marquet_turn_the_ship/`, con s
+  L72 - ['76'] [] | marcado `T` o `P` con su linea, en un fichero con una fila por paso como `.v76ext/fidelidad.tsv` (la
+  L73 - ['62', '62.5', '76'] [] | como `P`, `ACTA 62` `62.5`), y sus citas comprobadas con una copia de `.v76ext/citas.sh`. **El capit
+  L75 - ['2', '9'] [] | 2. **`R9`, del extractor y con su letra**: toda fila `T` cuyo paso compare, contraste o califique la
+  L77 - ['76', '9'] [] | pasos que marcas `T`**, con una copia de `.v76ext/r9.py`, pegado con lo que encuentre.
+  L78 - ['3'] [] | 3. **Todo PUENTE se corrige en la ficha de la bandeja por correccion declarada, con el texto viejo d
+  L79 - ['76', '2', '031'] [] | una copia de `.v76ext/corregir_t2.py`: una ficha que cambia despues de su barrido tiene un barrido q
+  L80 - ['76'] [] | despues de la ultima correccion, **cada ficha normalizada y pasada por `aduana.validar_candidato`**,
+  L81 - ['4', '76'] [] | 4. **`PASOS INVENTADOS POR CAPITULO`, una fila por capitulo**, por una copia de `.v76ext/contar_fide
+  L82 - ['8.2', '10', '58'] [] | nombrado** (`8.2`). **Si uno pasa del `10` por ciento, ese capitulo se relee entero antes de seguir*
+  L83 - ['5', '150'] [] | 5. **`d150` se prepara aqui.** Su texto:
+  L88 - ['03', '150'] [] | **Tu fila de `cap_03`, contada entera paso a paso, es la cifra que `d150` pedia**: la pegas con su t
+  L90 - ['6'] [] | 6. **Marca discutible todo paso en que dudes, al escribirlo.**
+  L92 - ['3'] [] | ## TAREA 3: **EL BARRIDO, SOBRE LAS FICHAS YA CORREGIDAS**
+  L94 - ['38.4', '76', '76'] [] | Contra **GRAFO MAS BANDEJAS** (`D.38.4`), con copias de `.v76ext/barrido_uno.py` y `.v76ext/barrer.s
+  L95 - ['78'] ['cinco'] | la ruta `.v78ext/`: **cinco a la vez como mucho, un log con su `INICIO` y su `TODOS TERMINADOS`, y t
+  L96 S ['76', '76.1', '70'] [] | turno.** **La poblacion al abrir, con su reparto por sede, esta en la `ACTA 76` `76.1`, bloque de `.
+  L97 - ['76'] [] | correrlo al abrir y pega su salida. **Una tabla por candidato de sus vecinos**, con una copia de `.v
+  L98 - ['11'] ['tres'] | **Marquet solapa en parte con Zhuo y con Scott, que ya viven en el grafo** (`PARALELO.md`, *Los tres
+  L101 - ['4'] [] | ## TAREA 4: **LOS VEREDICTOS, LAS ARISTAS Y EL ORDEN**
+  L103 - ['1'] [] | 1. **Los veredictos listos, uno por vecino**, en el formato de `--veredicto` y con un bloque por can
+  L104 - ['76', '64'] ['dos'] | `.v76ext/veredictos_listos.txt`: **leidos con los pasos de los dos delante** (`python .v64aud/pasos.
+  L105 - ['6.1'] [] | `6.1`, y solo esa. **Y comprobado por instrumento que cada vecino del barrido tiene su linea y cada 
+  L106 - ['76'] [] | copia de `.v76ext/comprobar_veredictos.py`.
+  L107 - ['2', '29', '37', '53', '76'] [] | 2. **Las aristas por lectura** (`D.29`, `D.37`, `D.53`), en un fichero como `.v76ext/aristas_lectura
+  L108 - ['37'] [] | de hijo y su linea del libro, **mirando tambien madres que ya viven en el grafo**, las de Zhuo y Sco
+  L110 - ['68.7'] [] | cabeza solo cuenta y nombra, no hay arista (`D68.7`). **Un par cabeza a parte que la senial levanta 
+  L111 - ['53', '75', '75.4'] [] | arista aparte** (`D.53`, como la `ACTA 75` `75.4` adjudico en Gerber). Marca discutible lo que dudes
+  L112 - ['3', '76', '36'] ['cero'] | 3. **El orden de insercion**, con una copia de `.v76ext/orden.py`: **madre antes que hijo, `D.36`, y
+  L115 S ['03', '76.11'] [] | **Si no te cabe todo, parte por capitulo y por donde se pueda auditar**: primero `cap_03`, que es el
+  L116 - ['150'] [] | de `d150`, y dentro de cada uno la fidelidad antes que el barrido y el barrido antes que los veredic
+  L119 - ['5'] [] | ## TAREA 5: **EL CIERRE**
+  L122 S ['77', '76', '76.1'] ['dos'] | `.v77ext/censo.sh` con esas dos rutas. **No entra nada**: al abrir son los de la `ACTA 76` `76.1`, y
+  L125 - ['76'] [] | - **La huella de las fichas preparadas**, con una copia de `.v76ext/pasos_y_huellas.py` con la lista
+  L127 - ['61'] [] | - **`D.61`**: cada discutible ejecutado o cerrado. Ninguno abierto.
+  L128 - ['5', '64', '64', '64'] [] | - **`R5`** en cada bloque `$` de tu tramo, **medido con `.v64ext/pegado64.py` y `.v64aud/normal/bloq
+  L129 - ['78', '9'] [] | cambiada a la `78`**, y pegado. **Y `R9`** en toda cuenta de PUENTE que publiques.
+  L131 - ['77'] [] | y se reescriben al cerrar contra lo que se hizo, como hiciste en la `77`.
+  L134 - ['78'] [] | - Commitea `docs/loop/`, las fichas corregidas de la bandeja y tu carpeta `.v78ext/`. **Si nada te o
+  L143 - ['7', '55'] [] | - **NO TOCAS `src/`, `scripts/`, `config/`, el banco, el arnes, el tablero ni los protocolos** (`7.F
+  L145 - ['150'] [] | - **NO REORDENAS LA COLA A MANO**, **NO PAGAS NINGUNA DEUDA** (`d150` se prepara aqui y se paga en l
+  L147 - ['8'] [] | - **NO CREAS EL TAG NI PARAS LA CAMPANIA**: eso es de la vuelta que meta la ultima ficha de Marquet 
+  L148 - ['4', '5'] [] | puntos `4` y `5`).
+  L152 - [] ['Cero', 'cero'] | **Cero guiones largos y cero guiones medios. Deja correr el hook. Si algo contradice una regla vigen
+lineas del encargo: {'linea de bloque sangrado': 13, 'prosa con numero, con seccion de la ACTA 76': 14, 'prosa con numero, sin seccion de la ACTA 76': 57, 'prosa sin digito ni palabra de numero': 69} | suma: 153

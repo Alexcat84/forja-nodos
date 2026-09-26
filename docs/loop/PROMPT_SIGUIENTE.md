@@ -1,172 +1,151 @@
-# ENCARGO DE LA VUELTA 77: **LA RELECTURA CONJUNTA DE UN PAR Y UNA ARISTA, Y DESPUES LAS `22` FICHAS DE GERBER DENTRO, UNA POR VEZ, EN EL ORDEN, CON LAS LINEAS Y LAS ARISTAS QUE LA `76` DEJO LISTAS** (`ACTA 75` `75.4`, `75.10`)
+# ENCARGO DE LA VUELTA 78: **LAS FICHAS DE MARQUET DEJADAS LISTAS PARA INSERTAR: SU FIDELIDAD LEIDA ENTERA, SUS VECINOS BARRIDOS, SUS VEREDICTOS ESCRITOS, SUS ARISTAS LEIDAS Y SU ORDEN COMPROBADO. AQUI NO SE INSERTA NINGUNA** (`ACTA 76` `76.11`)
 
-*Linea **serial** (`extraccion-mundo-11`). Escrito por el auditor al cerrar la `ACTA 75`, que audito la vuelta `76`.
+*Linea **serial** (`extraccion-mundo-11`). Escrito por el auditor al cerrar la `ACTA 76`, que audito la vuelta `77`.
 `AUDITOR_FORJA.md` seccion `1.4`. **Toda cifra de medida de esta pagina va dentro de un bloque `$` con su salida, o lleva en
-su misma linea la seccion de la `ACTA 75` donde esta pegada** (`R8`, `ACTA 75` `75.11`).*
+su misma linea la seccion de la `ACTA 76` donde esta pegada** (`R8`, `ACTA 76` `76.12`).*
 
-> # **LIBRO DE ESTA VUELTA: `gerber_emyth`**
+> # **LIBRO DE ESTA VUELTA: `marquet_turn_the_ship`**
 > # **CLASE DE ESTA VUELTA: INSERCION**
 
 **Commitea y pushea lo pendiente en la rama activa antes de tocar nada.**
 
 ---
 
-## 0. **LA CLASE, EL LIBRO Y LA REGLA DEL TURNO**
+## 0. **LA REGLA DEL TURNO, Y POR QUE ESTA VUELTA NO INSERTA**
 
-    $ python scripts/deuda.py --clase 77
+**Gerber entro entero en la `77`**: su bandeja esta vacia y el libro vive en el grafo y en `_insertados` (`ACTA 76` `76.1`). **El
+orden de la campania es Grove, Gerber, Marquet** (`PARALELO.md` seccion `8` punto `4`), y Marquet es el ultimo libro del corte (`76.11`). Esta
+vuelta hace para la bandeja de Marquet lo que la `76` hizo para la de Gerber, que llevo a la `77` a meter las fichas sin una sola
+sorpresa. **Es regimen de insercion (`D.58`): la relectura de fidelidad se hace ENTERA, aqui, antes de que entren**, porque las
+fichas de Marquet se escribieron en un frente de regimen ligero, con muestra y no con lectura entera. Su insercion es de una vuelta
+posterior, despues de que mi fase ciega barra y lea lo que dejes y la `ACTA 77` lo adjudique.
+
+**PUEDES LANZAR BARRIDOS DE FONDO, CINCO A LA VEZ COMO MUCHO, PERO NINGUNO VIVO AL CERRAR TU TURNO**: los recoges todos dentro,
+vigilandolos si tardan. **Si no te caben, no los lances: lo dices en el reporte con los que faltan.** El `23` sep hubo asientos que
+cerraron diciendo que esperaban un trabajo de fondo, y ninguno volvio. **Y NINGUN `insertar`**, ni en primer plano ni de fondo. El
+presupuesto de plazas de la maquina bajo el 26 sep (`docs/loop/paradas/2026-09-26-seis-plazas-NOTA.md`), y `src/presupuesto.py` lo
+respeta.
+
+**EL RELOJ, MEDIDO, Y NO ES UN TECHO: ES LO QUE COSTO.** El barrido de la `76`, por ficha (el menor y el mayor, en segundos) y
+de punta a punta:
+
+    $ grep "rc=" .v76ext/barrido.log | sed "s/.*segundos=//" | sort -n | sed -n "1p;\$p"; grep -E "^(INICIO|TODOS)" .v76ext/barrido.log
+    269
+    1209
+    INICIO 2026-09-26 07:10:53
+    TODOS TERMINADOS 2026-09-26 07:53:49
+
+## LA CLASE Y EL LIBRO, DICHOS POR EL INSTRUMENTO
+
+    $ python scripts/deuda.py --clase 78
     LIBRE
-      van 3 de 5 desde la ultima de saneamiento (la 74), con 52 deuda(s) esperando
-    $ python forja.py tablero --puedo gerber_emyth
-    LINEA 'serial', LIBRO 'gerber_emyth': SI
-      'gerber_emyth' esta COSECHADO y sin dueño: su trabajo ya llego a esta rama, asi que se continua desde el capitulo siguiente al ultimo minado (cap_22), citando su frontera. D.50.
+      van 4 de 5 desde la ultima de saneamiento (la 74), con 50 deuda(s) esperando
+    $ python forja.py tablero --puedo marquet_turn_the_ship
+    LINEA 'serial', LIBRO 'marquet_turn_the_ship': SI
+      'marquet_turn_the_ship' esta COSECHADO y sin dueño: su trabajo ya llego a esta rama, asi que se continua desde el capitulo siguiente al ultimo minado (cap_17), citando su frontera. D.50.
 
-**La frase de *continuar desde `cap_22`* es de extraccion y no aplica: el frente de Gerber esta cerrado** (`PARALELO.md` `8` punto
-`3`), y lo que se hace es insertar lo que la `76` dejo listo en su bandeja. **El orden de la campania es Grove, Gerber, Marquet**
-(`PARALELO.md` `8` punto `4`), y Grove ya esta dentro (`ACTA 75` `75.10`).
-
-> **UN `insertar` POR VEZ, Y NINGUNO EN VUELO CUANDO TU TURNO TERMINE.** Cada candidato entra entero o no entra. **Al volver cada
-> `insertar`: su fila en el reporte, commit y push.**
-
-**El metodo de la `75` vale**: cada `insertar` por una copia de `.v75ext/insertar.py` con la sede de las lineas cambiada a
-`.v76ext/veredictos_listos.txt` (o a tu copia corregida por la TAREA `2`) y la salida a `.v77ext/`, y tu bloqueado en primer plano con
-una copia de `.v75ext/esperar.py` hasta su `.fin`, **sin lanzar el siguiente ni tocar el dataset ni la bandeja en medio**. **NO LANZAS
-NADA EN SEGUNDO PLANO QUE SIGA VIVO AL CERRAR TU TURNO.** Si algo no te cabe, no lo lances: lo dices en el reporte con las filas que
-faltan, y entran en la `78`. El reloj de los `insertar` de la `72` y de la `75`, que es lo que costo y no un techo:
-
-    $ tail -1 .v72ext/relojes_resumen.txt; tail -1 .v75ext/relojes.txt
-    insertar: 20 | minimo 274.4 s | mediana 560.0 s | maximo 976.5 s | suma 10920.8 s (3.03 h)
-    insertar: 7 | minimo 341.0 s | mediana 504.4 s | maximo 711.9 s | suma 3570.5 s (0.99 h)
+**La frase de *continuar desde `cap_17`* es de extraccion y no aplica: el frente de Marquet se cosecho y el de extraccion esta
+cerrado para siempre** (`PARALELO.md` seccion `8` punto `3`). Lo que se hace es preparar su bandeja para insertarla.
 
 ---
 
-## TAREA 1: **REGISTROS DE LA `ACTA 75`**
+## TAREA 1: **REGISTROS DE LA `ACTA 76`**
 
 En una tabla corta y sin reabrir el argumento (`D.47`):
 
 | que | donde |
 |---|---|
-| **Tu vuelta, reproducida**: tus instrumentos dan lo que pegaste, tus `22` fichas son las que el auditor barrio byte a byte, y tu barrido es el suyo fila a fila | `ACTA 75` `75.1`, `75.4` |
-| **Tu fidelidad se sostiene paso a paso**: tus `P` son los que corregiste, ningun `T` tuyo cae, y `D76.10` se sostiene entero (el paso `4` de `cuantificar` es `T`) | `75.3` |
-| **Tus diecinueve discutibles**: dieciocho se sostienen; `D76.14` gana contra la lectura ciega del auditor; **`D76.15`, en la contratacion, va a la relectura conjunta** | `75.5` |
-| **Una caida tuya de `REPORTE`**: *`9` PUENTE* donde tu fichero, tu instrumento y tu tabla de `76.5.b` dan `8`, en tu tabla de tareas, en un titulo y en una conclusion. **`REPORTE` sube a `1 de 3`.** La cifra buena se declara en tu `77.1`, sin tocar el tramo de la `76` | `75.2`, `75.7` |
-| **El auditor**: su tanda sale limpia y `AUDITOR` vuelve a cero; cuatro lecturas de su fase ciega caen, sin especie | `75.9` |
+| **Tu vuelta, reproducida**: tus instrumentos dan lo que pegaste, y el cierre estricto del auditor sale verde | `ACTA 76` `76.1` |
+| **Las `22` de Gerber dentro, una por vez, sin solape, en su orden y despues del commit de la TAREA 2**; sus lineas de veredicto iguales letra a letra a las preparadas, a las filas del barrido del auditor y a sus clases selladas; sus aristas iguales par a par y por los dos lados; ningun nodo viejo cambia | `76.4` |
+| **La relectura conjunta se cierra**: las dos piezas las gana la lectura del auditor y tu las ejecutaste; la arista `fingir` a `recorrer` con `CONTINUA` y el paso `1` se sostiene | `76.3` |
+| **Tus cuatro discutibles se sostienen**, y `D77.4` se adjudica sin especie | `76.3` |
+| **`d111` y `d108` firmadas** | `76.3` |
+| **Cero caidas tuyas**: `REPORTE` vuelve a cero, `R5` cumplido y `R9` sin objeto | `76.2`, `76.8`, `76.0` |
 
-## TAREA 2: **LA RELECTURA CONJUNTA, ANTES DEL PRIMER `insertar`** (`1.3`, `ACTA 75` `75.4`)
+## TAREA 2: **LA FIDELIDAD ENTERA DE LAS FICHAS DE MARQUET** (`D.30`, `D.58`)
 
-**El caso del auditor esta escrito en la `ACTA 75` `75.4`, con su evidencia. Tu lo verificas con los pasos de los dos delante
-(`python .v64aud/pasos.py <a> <b>`) y decides por la vara `6.1`, y solo esa.** Las dos piezas:
+Son **todas las fichas de `cuarentena/marquet_turn_the_ship/`**; **cuantas por capitulo y cuantos pasos trae cada una estan en la
+`ACTA 76` `76.11`, bloque de `.v77aud/normal/bandeja_marquet.py`**, y tu primera medida es volver a correrlo. Todo en tu carpeta
+`.v78ext/`, **con copias de instrumentos que ya existen y la ruta cambiada**, no con instrumentos nuevos (`7.F`):
 
-1. **El par `construir_estrategia_gente_cuatro_componentes` con `aplicar_cinco_pasos_proceso_contratacion`** (tu `D76.15`): tu
-   `SANO` contra el `CONTINUA` del auditor con madre `construir`. **Si te convence**, las dos lineas del par (`75.4`) se reescriben en una
-   copia `.v77ext/veredictos_listos.txt` de `.v76ext/veredictos_listos.txt`, con `madre=construir_estrategia_gente_cuatro_componentes` y
-   su razon, **dejando la linea vieja encima como comentario `#` con la marca de correccion declarada**, y esa copia es la sede de tus
-   lineas. **Si no te convence**, escribes tu caso contrario con los pasos delante y la linea sigue `SANO`: decides tu (`1.3`), y la
-   `ACTA 76` lo adjudica.
-2. **La arista `fingir_prototipo_cinco_mil_replicas` a `recorrer_siete_pasos_programa_desarrollo_negocio`, por `D.29`**, que tu
-   lectura no miro. **Si la sostienes**, una fila `SOSTENGO` en una copia `.v77ext/aristas_lectura.txt` de `.v76ext/aristas_lectura.txt`,
-   con su paso de madre, su tramo y su linea; **si no**, una fila `NO SOSTENGO` con su razon.
+1. **Cada paso contra la linea del libro que lo sostiene, en `fuentes/marquet_turn_the_ship/`, con su capitulo leido entero**,
+   marcado `T` o `P` con su linea, en un fichero con una fila por paso como `.v76ext/fidelidad.tsv` (la clausula reescrita CUENTA
+   como `P`, `ACTA 62` `62.5`), y sus citas comprobadas con una copia de `.v76ext/citas.sh`. **El capitulo que se lee es el de la
+   linea que cada paso cita**, no solo el de su `UNIDAD DE ORIGEN`.
+2. **`R9`, del extractor y con su letra**: toda fila `T` cuyo paso compare, contraste o califique la prueba del libro cita en su
+   nota el tramo literal que lo sostiene, o es `P`; **y antes de publicar la cuenta de PUENTE, el `grep` de esas clausulas sobre los
+   pasos que marcas `T`**, con una copia de `.v76ext/r9.py`, pegado con lo que encuentre.
+3. **Todo PUENTE se corrige en la ficha de la bandeja por correccion declarada, con el texto viejo dentro, ANTES del barrido**, con
+   una copia de `.v76ext/corregir_t2.py`: una ficha que cambia despues de su barrido tiene un barrido que ya no es suyo (`d031`). Y
+   despues de la ultima correccion, **cada ficha normalizada y pasada por `aduana.validar_candidato`**, como `.v76ext/validar.py`.
+4. **`PASOS INVENTADOS POR CAPITULO`, una fila por capitulo**, por una copia de `.v76ext/contar_fidelidad.py`, **y el peor capitulo
+   nombrado** (`8.2`). **Si uno pasa del `10` por ciento, ese capitulo se relee entero antes de seguir** (`D.58`).
+5. **`d150` se prepara aqui.** Su texto:
 
-**Ninguna de las dos mueve el orden** (`ACTA 75` `75.4`): se decida lo que se decida, la madre va antes que el hijo en
-`.v76ext/orden.txt`. **Lo que cambia son las aristas esperadas**, y las dices al cerrar esta tarea con la copia de `.v76ext/orden.py`
-corrida sobre tus copias si las hay. **Commit de la tarea antes del primer `insertar`.**
+       $ grep '"id": "d150"' docs/loop/DEUDA.jsonl | grep -o '"que": "[^"]*"'
+       "que": "La TAREA 2 y la TAREA 3 del reporte de la vuelta 1 del frente marquet siguen sin escribirse desde los papeles de .vm01/, que estan intactos con 47 ficheros, y la fila de cap_03 sigue publicada en 0,00 donde la ACTA M2 la recontro."
 
-## TAREA 3: **LO QUE ENTRA ES LO QUE SE LEYO**
+   **Tu fila de `cap_03`, contada entera paso a paso, es la cifra que `d150` pedia**: la pegas con su texto delante, y **no la
+   pagas** (se paga en la vuelta que inserte).
+6. **Marca discutible todo paso en que dudes, al escribirlo.**
 
-Antes del primer `insertar`, `python .v76ext/pasos_y_huellas.py`, con su salida **identica** a `.v76ext/pasos_y_huellas.txt` (el
-auditor la reprodujo, `ACTA 75` `75.1`), pegada. Si una ficha sale distinta, **no entra**, se relee entera contra su capitulo y se dice.
+## TAREA 3: **EL BARRIDO, SOBRE LAS FICHAS YA CORREGIDAS**
 
-## TAREA 4: **LAS `22` FILAS DE `.v76ext/orden.txt`, UNA POR VEZ** (`ACTA 75` `75.1`, `75.4`)
+Contra **GRAFO MAS BANDEJAS** (`D.38.4`), con copias de `.v76ext/barrido_uno.py` y `.v76ext/barrer.sh` con la lista de las fichas y
+la ruta `.v78ext/`: **cinco a la vez como mucho, un log con su `INICIO` y su `TODOS TERMINADOS`, y todas recogidas dentro de tu
+turno.** **La poblacion al abrir, con su reparto por sede, esta en la `ACTA 76` `76.1`, bloque de `.v70aud/poblacion.py`**: vuelve a
+correrlo al abrir y pega su salida. **Una tabla por candidato de sus vecinos**, con una copia de `.v76ext/tabla_vecinos.py`.
+**Marquet solapa en parte con Zhuo y con Scott, que ya viven en el grafo** (`PARALELO.md`, *Los tres del mundo 11, con el motivo literal de la decision*): sus
+vecinos del grafo se leen con el mismo cuidado que los de la bandeja.
 
-    $ sed -n '2,23p' .v76ext/orden.txt | cut -c1-80
-    1   hacer_trabajo_futuro_imaginar_negocio                        cap_04 P1      
-    2   dictar_ritmo_crecimiento_preguntas_escritas                  cap_07 P1      
-    3   construir_empresa_plantilla_vision_diaria                    cap_08 P1      
-    4   trazar_modelo_negocio_cliente_primero                        cap_08 P2      
-    5   fingir_prototipo_cinco_mil_replicas                          cap_11 P1      
-    6   dar_valor_constante_cuatro_publicos                          cap_11 P2      
-    7   interrogar_negocio_cinco_preguntas                           cap_11 P6      
-    8   operar_modelo_gente_destreza_minima                          cap_11 P3      
-    9   unificar_color_forma_vestuario_modelo                        cap_11 P5      
-    10  cambiar_saludo_cliente_dos_ramas                             cap_12 R3      
-    11  probar_traje_azul_seis_semanas                               cap_12 R3      
-    12  cuantificar_impacto_innovacion_6_pasos                       cap_12 R5      
-    13  recorrer_siete_pasos_programa_desarrollo_negocio             cap_13 R3      
-    14  responder_8_preguntas_construir_primary_aim                  cap_14 R5      
-    15  responder_4_preguntas_estandares_objetivo_estrategico        cap_15 R5      
-    16  distinguir_tres_tipos_sistemas_negocio                       cap_19 D1      
-    17  aplicar_seis_pasos_sistema_venta                             cap_19 D2      
-    18  medir_sistema_venta_trece_indicadores_benchmark              cap_19 D3      
-    19  construir_estrategia_gente_cuatro_componentes                cap_18 C1      
-    20  documentar_trabajo_manual_operaciones                        cap_11 P4      
-    21  aplicar_ocho_reglas_juego_personas                           cap_18 C2      
-    22  aplicar_cinco_pasos_proceso_contratacion                     cap_18 C3      
-    $ sed -n '31,40p' .v76ext/orden.txt
-    ARISTAS ESPERADAS EN LA VUELTA QUE INSERTE ESTAS 22
-      CONTINUA   aplicar_seis_pasos_sistema_venta                         > medir_sistema_venta_trece_indicadores_benchmark
-      CONTINUA   cambiar_saludo_cliente_dos_ramas                         > cuantificar_impacto_innovacion_6_pasos
-      LECTURA    recorrer_siete_pasos_programa_desarrollo_negocio         > construir_estrategia_gente_cuatro_componentes
-      LECTURA    fingir_prototipo_cinco_mil_replicas                      > dar_valor_constante_cuatro_publicos
-      LECTURA    fingir_prototipo_cinco_mil_replicas                      > operar_modelo_gente_destreza_minima
-      LECTURA    fingir_prototipo_cinco_mil_replicas                      > documentar_trabajo_manual_operaciones
-      LECTURA    fingir_prototipo_cinco_mil_replicas                      > unificar_color_forma_vestuario_modelo
-      LECTURA    construir_estrategia_gente_cuatro_componentes            > documentar_trabajo_manual_operaciones
-      CONTINUA con madre= (aristas distintas): 2 | SOSTENGO por lectura: 6 | solapes entre las dos: 0 | aristas esperadas: 8
-    $ grep -v '^#' .v76ext/veredictos_listos.txt | grep -c '|'
-    54
+## TAREA 4: **LOS VEREDICTOS, LAS ARISTAS Y EL ORDEN**
 
-1. **En su orden, de la fila `1` a la ultima.** Las lineas `--veredicto` son las del bloque de cada candidato en tu sede de lineas
-   (TAREA `2`), **tal cual, sin las `#`**. Las `CONTINUA` con `madre=` cablean su arista en el acto.
-2. **Las aristas por lectura se declaran EN EL ACTO DE INSERTAR LA PARTE** (`D.37`, `D.29`), con los dos extremos ya vivos, por una
-   copia de `.v72ext/arista.py` que lea tu sede de aristas, **cada una citando el paso de la madre de su fila `SOSTENGO`**. El
-   `--veredicto` es el de la lectura, no el de la arista (`D.53`): **`SANO` en las de serie `D.37`**, que es lo que tus lineas del par
-   `recorrer` con `construir` ya dicen; y el que tu lectura diga en la de la TAREA `2.2` si la sostienes. **Cada una despues de su
-   hijo** (`75.4`): las cuatro de `fingir` al entrar `dar_valor`, `operar_modelo`, `unificar_color` y `documentar_trabajo`; la de `recorrer` a
-   `construir` al entrar `construir`; la de `construir` a `documentar_trabajo` al entrar `documentar_trabajo`.
-3. **La puerta es la aduana de `insertar`, no la lista** (`d031`). **Al volver cada uno, su vecindad de hoy contra la del barrido de
-   la `76`** con una copia de `.v75ext/contra_barrido.py` que lea `.v76ext/vecinos_<id>.json`, pegada en su fila. Si levanta un vecino
-   sin linea, lo lees con los pasos de los dos delante, escribes su veredicto por la vara `6.1` y solo esa, **y lo marcas en el reporte
-   como lectura tuya de esta vuelta**, discutible si dudas. Si levanta `CAERIA` o un error, no fuerces: no entra, y se declara.
-4. **Al volver cada `insertar`, su fila en el reporte** como las de la `75`: la aduana de hoy con sus vecinos, la comparacion con la
-   `76`, las lineas que pasaste, las aristas que cableo y su commit. Cada insertado a `cuarentena/_insertados/gerber_emyth/` (`D.31`).
-5. **`d111` y `d108` se pagan aqui, tu pagas y el auditor firma**: `d111` cuando la arista de `recorrer` a `construir` viva, con su
-   `--como` citando la `ACTA 75` `75.4` (*la cabeza entra con una parte de siete*); `d108` con la lectura de tu `76.4.2`, firmada en la
-   `ACTA 75` `75.4`, sin tocar la ficha. Por `python scripts/deuda.py --pagar <id> --vuelta 77 --como "..."`. **`d098` y `d104` siguen
-   vivas**: ninguna de las `22` es su cabeza (`75.1`, `75.4`).
-6. **Al terminar la ultima fila que entre: las aristas de la tanda por instrumento**: cuantas se esperaban (TAREA `2`), cuantas viven
-   en el grafo por los dos lados, ninguna sin adjudicar, y que ningun nodo viejo cambio fuera del `nodos_siguientes` de sus madres. Si
-   alguna fila no entro, la cuenta dice cuales quedan pendientes con ella.
+1. **Los veredictos listos, uno por vecino**, en el formato de `--veredicto` y con un bloque por candidato como
+   `.v76ext/veredictos_listos.txt`: **leidos con los pasos de los dos delante** (`python .v64aud/pasos.py <a> <b>`) y por la vara
+   `6.1`, y solo esa. **Y comprobado por instrumento que cada vecino del barrido tiene su linea y cada linea su vecino**, con una
+   copia de `.v76ext/comprobar_veredictos.py`.
+2. **Las aristas por lectura** (`D.29`, `D.37`, `D.53`), en un fichero como `.v76ext/aristas_lectura.txt`, con su tramo de madre y
+   de hijo y su linea del libro, **mirando tambien madres que ya viven en el grafo**, las de Zhuo y Scott las primeras. **`D.37`
+   tambien para los titulos que dicen cuantas partes tienen**: si alguna parte es nodo, la arista cabeza a parte se declara; si la
+   cabeza solo cuenta y nombra, no hay arista (`D68.7`). **Un par cabeza a parte que la senial levanta va `SANO` en su linea, con su
+   arista aparte** (`D.53`, como la `ACTA 75` `75.4` adjudico en Gerber). Marca discutible lo que dudes.
+3. **El orden de insercion**, con una copia de `.v76ext/orden.py`: **madre antes que hijo, `D.36`, y las comprobaciones en cero**, y
+   **las aristas esperadas** que el orden imprime.
+
+**Si no te cabe todo, parte por capitulo y por donde se pueda auditar**: primero `cap_03`, que es el que mas fichas tiene (`76.11`) y el
+de `d150`, y dentro de cada uno la fidelidad antes que el barrido y el barrido antes que los veredictos. **Lo que no hagas lo dices con
+su fila vacia**, y la vuelta siguiente empieza por ahi.
 
 ## TAREA 5: **EL CIERRE**
 
-- **El censo antes y despues de cada tarea**, con una copia de `.v76ext/censo.sh`. Al abrir son los de la `ACTA 75` `75.1`. **Lo que
-  se mueve, medido**: el grafo gana una fila por ficha que entre; la bandeja de Gerber pierde las mismas y `_insertados` las gana; la
-  bitacora gana las lineas de veredicto de lo que entre mas una por arista por lectura. **Si entran todas, `python forja.py tablero`,
-  pegado**, con la fila de Gerber: la vuelta siguiente abre con el libro que el tablero de entonces de a esta linea.
-- **`PASOS INVENTADOS POR CAPITULO`, una fila por capitulo, de lo que ENTRO**, contado desde `.v76ext/fidelidad.tsv` con los PUENTE ya
-  corregidos en la bandeja, que la `ACTA 75` `75.3` firmo en cero que entran. No a ojo.
+- **El censo antes y despues**: nodos, veredictos, pares mutuos, bandeja de Marquet e insertados de Marquet, con una copia de
+  `.v77ext/censo.sh` con esas dos rutas. **No entra nada**: al abrir son los de la `ACTA 76` `76.1`, y al cerrar tienen que ser los
+  mismos.
+- **`PASOS INVENTADOS POR CAPITULO`, una fila por capitulo**, que son **preparacion y no entrada**.
+- **La huella de las fichas preparadas**, con una copia de `.v76ext/pasos_y_huellas.py` con la lista de esta vuelta, corrida despues
+  del ultimo cambio de ficha y pegada: es contra lo que la vuelta de insercion comprobara que entra lo que se leyo.
 - **`D.61`**: cada discutible ejecutado o cerrado. Ninguno abierto.
-- **`R5`** en cada bloque `$` de tu tramo, medido con `.v64ext/pegado64.py` y `.v64aud/normal/bloques_mudos.py` con la cabecera
-  cambiada a la `77`, y pegado. **Y `R9`**, donde marques fidelidad.
-- **LA CABECERA, LAS TABLAS DE TAREAS Y LA TABLA DE CIERRE: cada cifra de sus celdas sale de un instrumento corrido en esta vuelta**, y
-  se reescriben al cerrar contra lo que se hizo. **Tu ultima caida vivio en una celda de la tabla de tareas** (`ACTA 75` `75.2`), y el
-  cierre estricto no la ve.
+- **`R5`** en cada bloque `$` de tu tramo, **medido con `.v64ext/pegado64.py` y `.v64aud/normal/bloques_mudos.py` con la cabecera
+  cambiada a la `78`**, y pegado. **Y `R9`** en toda cuenta de PUENTE que publiques.
+- **LA CABECERA, LAS TABLAS DE TAREAS Y LA TABLA DE CIERRE: cada cifra de sus celdas sale de un instrumento corrido en esta vuelta**,
+  y se reescriben al cerrar contra lo que se hizo, como hiciste en la `77`.
 - `python forja.py gate`, `python forja.py guiones`, `python tests/test_aceptacion.py` y `python scripts/cerrar_reporte.py`,
   **pegados**. **El cierre estricto tiene que salir en verde: cualquier rojo es tuyo.**
-- Commitea `docs/loop/`, `dataset/`, `bitacora/`, `censos/`, los movidos a `_insertados` y tu carpeta `.v77ext/`. **Si nada te obliga
-  a parar, no escribas `PARA_ALEXIS.md`.**
+- Commitea `docs/loop/`, las fichas corregidas de la bandeja y tu carpeta `.v78ext/`. **Si nada te obliga a parar, no escribas
+  `PARA_ALEXIS.md`.**
 
 ---
 
 ## LO QUE NO HACES
 
-- **NO INSERTAS NADA ANTES DE CERRAR LA TAREA 2**, y **NO TERMINAS TU TURNO CON NADA VIVO**, ni un `insertar` ni un barrido.
-- **NO CORRIGES NINGUN NODO DEL GRAFO.** Si una lectura de vecino te enseña un defecto en uno, lo traes al reporte y no lo corriges.
-- **NO CAMBIAS NINGUNA LINEA PREPARADA NI NINGUNA FICHA** fuera de la TAREA `2` y de lo que la aduana levante en el acto (TAREA
-  `4.3`). Su fidelidad y sus clases estan firmadas.
-- **NO TOCAS `cuarentena/marquet_turn_the_ship/`**: va despues de Gerber.
-- **NO TOCAS `src/`, `scripts/`, el banco, el arnes, el tablero ni los protocolos** (`7.F`, `D.55`), **ni `APERTURA_CIEGA.md`**. Los
-  procesos del fundador que veas vivos en otra copia no son tuyos: ni los tocas ni los esperas.
-- **NO REORDENAS LA COLA A MANO**, **NO PAGAS NINGUNA DEUDA** fuera de `d111` y `d108` (TAREA `4.5`) y **NO ABRES NINGUN LIBRO.**
+- **NO INSERTAS NINGUNA FICHA**, y **NO TERMINAS TU TURNO CON NADA VIVO**, ni un barrido.
+- **NO TOCAS NINGUN NODO DEL GRAFO.** Si una lectura de vecino te enseña un defecto en uno, lo traes al reporte y no lo corriges.
+- **NO TOCAS `src/`, `scripts/`, `config/`, el banco, el arnes, el tablero ni los protocolos** (`7.F`, `D.55`), **ni
+  `APERTURA_CIEGA.md`**. Los procesos del fundador que veas vivos en otra copia no son tuyos: ni los tocas ni los esperas.
+- **NO REORDENAS LA COLA A MANO**, **NO PAGAS NINGUNA DEUDA** (`d150` se prepara aqui y se paga en la vuelta que inserte) y **NO
+  ABRES NINGUN LIBRO.**
+- **NO CREAS EL TAG NI PARAS LA CAMPANIA**: eso es de la vuelta que meta la ultima ficha de Marquet (`PARALELO.md` seccion `8`
+  puntos `4` y `5`).
 
 ---
 

@@ -1,0 +1,2 @@
+$ for f in .v77ext/insertar_*.txt; do n=$(basename $f .txt | cut -d_ -f2); id=$(basename $f .txt | cut -d_ -f3-); python .v77ext/contra_barrido.py $n $id; done | grep -c "nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0"
+22

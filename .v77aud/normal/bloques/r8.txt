@@ -1,0 +1,2 @@
+$ python .v77aud/normal/r8_encargo78.py | tail -1
+lineas del encargo: {'linea de bloque sangrado': 13, 'prosa con numero, con seccion de la ACTA 76': 14, 'prosa con numero, sin seccion de la ACTA 76': 57, 'prosa sin digito ni palabra de numero': 69} | suma: 153

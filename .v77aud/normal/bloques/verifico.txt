@@ -1,0 +1,29 @@
+$ cat .v77aud/normal/gate.txt .v77aud/normal/guiones.txt .v77aud/normal/resolutor.txt
+GATE VERDE.
+  nodos verificados: 459
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+rc=0
+BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+rc=0
+nodos vivos: 459
+nodos deprecados (archivo): 0
+alias registrados: 0
+rc=0
+$ grep 'total:' .v77aud/normal/suite.txt; tail -1 .v77aud/normal/suite.txt; cat .v77aud/normal/suite_hora.txt
+  total: 382 pruebas, 0 fallos, 0 errores
+rc=0
+INICIO SUITE 13:09:10
+FIN SUITE 13:13:12
+$ cat .v77aud/normal/censo.txt
+$ wc -l dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl config/pares_mutuos.jsonl
+    459 dataset/nodos.jsonl
+   1172 bitacora/VEREDICTOS.jsonl
+      1 config/pares_mutuos.jsonl
+   1632 total
+$ for d in cuarentena/gerber_emyth cuarentena/_insertados/gerber_emyth cuarentena/marquet_turn_the_ship; do echo "$d $(find $d -maxdepth 1 -name "*.json" 2>/dev/null | wc -l)"; done; echo "procesos $(ls -A procesos/ | wc -l)"
+cuarentena/gerber_emyth 0
+cuarentena/_insertados/gerber_emyth 22
+cuarentena/marquet_turn_the_ship 20
+procesos 0
+$ python .v70aud/poblacion.py
+poblacion: 479 | por sede: {'grafo': 459, 'bandeja': 20} | suma: 479

@@ -1,0 +1,13 @@
+$ python .v77aud/normal/muestra_sano.py
+lineas de la 77: 61 | SANO: 54 | muestra: 11 | semilla 77
+linea 1119  dictar_ritmo_crecimiento_preguntas_escritas | cambiar_saludo_cliente_dos_ramas
+linea 1124  dar_valor_constante_cuatro_publicos | documentar_trabajo_manual_operaciones
+linea 1127  interrogar_negocio_cinco_preguntas | dictar_ritmo_crecimiento_preguntas_escritas
+linea 1128  operar_modelo_gente_destreza_minima | interrogar_negocio_cinco_preguntas
+linea 1130  operar_modelo_gente_destreza_minima | dictar_ritmo_crecimiento_preguntas_escritas
+linea 1132  operar_modelo_gente_destreza_minima | fingir_prototipo_cinco_mil_replicas
+linea 1143  probar_traje_azul_seis_semanas | cambiar_saludo_cliente_dos_ramas
+linea 1149  cuantificar_impacto_innovacion_6_pasos | entregar_evaluacion_desempeno_tres_claves
+linea 1154  responder_4_preguntas_estandares_objetivo_estrategico | probar_traje_azul_seis_semanas
+linea 1168  documentar_trabajo_manual_operaciones | unificar_color_forma_vestuario_modelo
+linea 1169  documentar_trabajo_manual_operaciones | fingir_prototipo_cinco_mil_replicas

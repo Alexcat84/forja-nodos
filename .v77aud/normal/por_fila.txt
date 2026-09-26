@@ -1,0 +1,22 @@
+fila 1 9ea0564f grafo 438 bitacora 1112 | el reporte: Bitacora de 1111 a 1112
+fila 2 86f27afd grafo 439 bitacora 1120 | el reporte: Bitacora de 1112 a 1120
+fila 3 f592733d grafo 440 bitacora 1121 | el reporte: Bitacora de 1120 a 1121
+fila 4 8f8c3a3a grafo 441 bitacora 1122 | el reporte: Bitacora de 1121 a 1122
+fila 5 95fcc0ac grafo 442 bitacora 1122 | el reporte: Bitacora sin movimiento: 1122
+fila 6 09c17dd6 grafo 443 bitacora 1126 | el reporte: Bitacora de 1122 a 1126
+fila 7 dded88de grafo 444 bitacora 1127 | el reporte: Bitacora de 1126 a 1127
+fila 8 72e75443 grafo 445 bitacora 1132 | el reporte: Bitacora de 1127 a 1132
+fila 9 529f3839 grafo 446 bitacora 1135 | el reporte: Bitacora de 1132 a 1135
+fila 10 eadf31d5 grafo 447 bitacora 1141 | el reporte: Bitacora de 1135 a 1141
+fila 11 83aa53a0 grafo 448 bitacora 1144 | el reporte: Bitacora de 1141 a 1144
+fila 12 1003f86a grafo 449 bitacora 1149 | el reporte: Bitacora de 1144 a 1149
+fila 13 91129510 grafo 450 bitacora 1151 | el reporte: Bitacora de 1149 a 1151
+fila 14 d062a553 grafo 451 bitacora 1152 | el reporte: Bitacora de 1151 a 1152
+fila 15 21df4550 grafo 452 bitacora 1154 | el reporte: Bitacora de 1152 a 1154
+fila 16 ad150170 grafo 453 bitacora 1157 | el reporte: Bitacora de 1154 a 1157
+fila 17 911b355f grafo 454 bitacora 1159 | el reporte: Bitacora de 1157 a 1159
+fila 18 be419226 grafo 455 bitacora 1161 | el reporte: Bitacora de 1159 a 1161
+fila 19 a4177c48 grafo 456 bitacora 1166 | el reporte: Bitacora de 1161 a 1166
+fila 20 244b4e03 grafo 457 bitacora 1170 | el reporte: Bitacora de 1166 a 1170
+fila 21 5d6f4f47 grafo 458 bitacora 1170 | el reporte: Bitacora sin movimiento: 1170
+fila 22 7f14a790 grafo 459 bitacora 1172 | el reporte: Bitacora de 1170 a 1172

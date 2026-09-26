@@ -358,3 +358,8 @@
 {"cae": false, "cita": "ACTA 75, secciones 75.1 y 75.7", "especie": "DATO MOVIDO", "linea": "serial", "racha": "0 de 2", "tanda": "ACTA 75", "tipo": "tanda", "vuelta": 76}
 {"cae": true, "cita": "ACTA 75, secciones 75.2 y 75.7", "especie": "REPORTE", "linea": "serial", "racha": "1 de 3", "tanda": "ACTA 75", "tipo": "tanda", "vuelta": 76}
 {"cae": false, "cita": "ACTA 75, secciones 75.7 y 75.9", "especie": "AUDITOR", "linea": "serial", "racha": "0 de 3", "tanda": "ACTA 75", "tipo": "tanda", "vuelta": 76}
+{"cae": false, "cita": "ACTA 76, secciones 76.3, 76.4, 76.5 y 76.8", "especie": "CLASE", "linea": "serial", "racha": "0 de 2", "tanda": "ACTA 76", "tipo": "tanda", "vuelta": 77}
+{"cae": false, "cita": "ACTA 76, secciones 76.0 y 76.8", "especie": "CIFRA PUBLICADA", "linea": "serial", "racha": "0 de 2", "tanda": "ACTA 76", "tipo": "tanda", "vuelta": 77}
+{"cae": false, "cita": "ACTA 76, secciones 76.3, 76.4 y 76.8", "especie": "DATO MOVIDO", "linea": "serial", "racha": "0 de 2", "tanda": "ACTA 76", "tipo": "tanda", "vuelta": 77}
+{"cae": false, "cita": "ACTA 76, secciones 76.2 y 76.8", "especie": "REPORTE", "linea": "serial", "racha": "0 de 3", "tanda": "ACTA 76", "tipo": "tanda", "vuelta": 77}
+{"cae": false, "cita": "ACTA 76, secciones 76.8 y 76.10", "especie": "AUDITOR", "linea": "serial", "racha": "0 de 3", "tanda": "ACTA 76", "tipo": "tanda", "vuelta": 77}

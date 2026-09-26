@@ -1,0 +1,20 @@
+(1) lineas desde la 1112: 61 | por tipo: {'veredicto de insertar': 54, 'arista por lectura': 7} | suma: 61
+(2) lineas de veredicto contra su sede: {'igual en clase y razon': 54} | suma: 54 | distintas: []
+    lineas de la sede sin linea en la bitacora: 0
+    filas dirigidas: bitacora 54 (distintas 54) | mi barrido 54 | iguales: SI
+(3) contra mis clases selladas (con 75.4 (i) y la conjunta como la mantengo): {'mi clase y madre': 54} | suma: 54 | distintas: []
+    lineas de veredicto por clase: {'SANO': 48, 'CONTINUA': 6} | suma: 54
+      CONTINUA cambiar_saludo_cliente_dos_ramas ~ cuantificar_impacto_innovacion_6_pasos | arista: cambiar_saludo_cliente_dos_ramas > cuantificar_impacto_innovacion_6_pasos
+      CONTINUA cuantificar_impacto_innovacion_6_pasos ~ cambiar_saludo_cliente_dos_ramas | arista: cambiar_saludo_cliente_dos_ramas > cuantificar_impacto_innovacion_6_pasos
+      CONTINUA aplicar_seis_pasos_sistema_venta ~ medir_sistema_venta_trece_indicadores_benchmark | arista: aplicar_seis_pasos_sistema_venta > medir_sistema_venta_trece_indicadores_benchmark
+      CONTINUA medir_sistema_venta_trece_indicadores_benchmark ~ aplicar_seis_pasos_sistema_venta | arista: aplicar_seis_pasos_sistema_venta > medir_sistema_venta_trece_indicadores_benchmark
+      CONTINUA construir_estrategia_gente_cuatro_componentes ~ aplicar_cinco_pasos_proceso_contratacion | arista: construir_estrategia_gente_cuatro_componentes > aplicar_cinco_pasos_proceso_contratacion
+      CONTINUA aplicar_cinco_pasos_proceso_contratacion ~ construir_estrategia_gente_cuatro_componentes | arista: construir_estrategia_gente_cuatro_componentes > aplicar_cinco_pasos_proceso_contratacion
+    SANO      paso  5 | fingir_prototipo_cinco_mil_replicas > dar_valor_constante_cuatro_publicos | fila SOSTENGO paso 5
+    SANO      paso  6 | fingir_prototipo_cinco_mil_replicas > operar_modelo_gente_destreza_minima | fila SOSTENGO paso 6
+    SANO      paso 10 | fingir_prototipo_cinco_mil_replicas > unificar_color_forma_vestuario_modelo | fila SOSTENGO paso 10
+    CONTINUA  paso  1 | fingir_prototipo_cinco_mil_replicas > recorrer_siete_pasos_programa_desarrollo_negocio | fila SOSTENGO paso 1
+    SANO      paso  8 | recorrer_siete_pasos_programa_desarrollo_negocio > construir_estrategia_gente_cuatro_componentes | fila SOSTENGO paso 8
+    SANO      paso  8 | fingir_prototipo_cinco_mil_replicas > documentar_trabajo_manual_operaciones | fila SOSTENGO paso 8
+    SANO      paso  5 | construir_estrategia_gente_cuatro_componentes > documentar_trabajo_manual_operaciones | fila SOSTENGO paso 5
+(4) aristas por lectura: 7 | {'con su fila SOSTENGO y su paso': 7} | suma: 7 | filas SOSTENGO en la sede: 7

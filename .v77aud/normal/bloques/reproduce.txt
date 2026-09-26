@@ -1,0 +1,10 @@
+$ grep -v "^\$ " .v77aud/normal/reproduce.txt
+aristas_vuelta.py: IDENTICO a .v77ext/aristas_vuelta.txt
+nodos_viejos.py: IDENTICO a .v77ext/nodos_viejos.txt
+pasos_inventados.py: IDENTICO a .v77ext/pasos_inventados.txt
+relojes.py: IDENTICO a .v77ext/relojes.txt
+censo.sh: IDENTICO a .v77ext/censo_cierre.txt
+pasos_y_huellas.py de hoy: IDENTICO a .v76ext/pasos_y_huellas.txt salvo la columna de la sede
+     22 _insertados
+      1 las
+orden.py sobre el arbol de d967b0e4 (T3, antes del primer insertar): IDENTICO a .v77ext/orden.txt

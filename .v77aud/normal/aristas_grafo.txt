@@ -1,0 +1,13 @@
+  aplicar_seis_pasos_sistema_venta                 > medir_sistema_venta_trece_indicadores_benchmark        | en la madre: SI | en el hijo: SI | esperada: SI
+  cambiar_saludo_cliente_dos_ramas                 > cuantificar_impacto_innovacion_6_pasos                 | en la madre: SI | en el hijo: SI | esperada: SI
+  construir_estrategia_gente_cuatro_componentes    > aplicar_cinco_pasos_proceso_contratacion               | en la madre: SI | en el hijo: SI | esperada: SI
+  construir_estrategia_gente_cuatro_componentes    > documentar_trabajo_manual_operaciones                  | en la madre: SI | en el hijo: SI | esperada: SI
+  fingir_prototipo_cinco_mil_replicas              > dar_valor_constante_cuatro_publicos                    | en la madre: SI | en el hijo: SI | esperada: SI
+  fingir_prototipo_cinco_mil_replicas              > documentar_trabajo_manual_operaciones                  | en la madre: SI | en el hijo: SI | esperada: SI
+  fingir_prototipo_cinco_mil_replicas              > operar_modelo_gente_destreza_minima                    | en la madre: SI | en el hijo: SI | esperada: SI
+  fingir_prototipo_cinco_mil_replicas              > recorrer_siete_pasos_programa_desarrollo_negocio       | en la madre: SI | en el hijo: SI | esperada: SI
+  fingir_prototipo_cinco_mil_replicas              > unificar_color_forma_vestuario_modelo                  | en la madre: SI | en el hijo: SI | esperada: SI
+  recorrer_siete_pasos_programa_desarrollo_negocio > construir_estrategia_gente_cuatro_componentes          | en la madre: SI | en el hijo: SI | esperada: SI
+aristas con extremo en las 22: 10 | por los dos lados: 10 | esperadas: 10 | esperadas presentes: 10 | no esperadas: 0
+grafo al abrir la 77: 437 | hoy: 459 | viejos que faltan hoy: 0 | viejos que cambian: 0 [] | nuevos: 22 | nuevos que son las 22: SI
+las 22 ultimas filas del fichero, en su orden: 1:hacer_trabajo_futu 2:dictar_ritmo_creci 3:construir_empresa_ 4:trazar_modelo_nego 5:fingir_prototipo_c 6:dar_valor_constant 7:interrogar_negocio 8:operar_modelo_gent 9:unificar_color_for 10:cambiar_saludo_cli 11:probar_traje_azul_ 12:cuantificar_impact 13:recorrer_siete_pas 14:responder_8_pregun 15:responder_4_pregun 16:distinguir_tres_ti 17:aplicar_seis_pasos 18:medir_sistema_vent 19:construir_estrateg 20:documentar_trabajo 21:aplicar_ocho_regla 22:aplicar_cinco_paso
