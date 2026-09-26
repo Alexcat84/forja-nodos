@@ -63241,3 +63241,23 @@ La aduana de hoy: **BLOQUEARIA** con `10` vecino(s) contra `479`; lineas `--vere
     hoy 10 vecinos, barrido de la 71 10 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (417 grafo, 62 bandejas), en la 71 479 (410, 69)
 
 **Los diez vecinos son los de su bloque y las diez lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `71`, las tres seniales al digito. La arista de lectura, cableada (bloque de arriba): **la serie de tres pasos de la cabeza queda cableada entera** (`D.37`, filas `6`, `7` y `8`), y ninguna de las partes entre si (`D71.12`, `ACTA 70` `70.5`). Van `5` de las `6` aristas esperadas.
+
+### Fila `9`: `contestar_dos_preguntas_direccion_objetivos`, **INSERTADO** en `274.4` s, codigo `0`, commit `fb012e38`
+
+La aduana de hoy: **BLOQUEARIA** con `6` vecino(s) contra `479`; lineas `--veredicto` pasadas: `6`. Salida entera en `.v72ext/insertar_09_contestar_dos_preguntas_direccion_objetivos.txt`.
+
+<!-- TALLADO: parcial salida=.v72ext/insertar_09_contestar_dos_preguntas_direccion_objetivos.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `cerrar_brecha_dos_preguntas_estrategia` | similitud_texto, paso_contra_nodo | 0.438 | 0.250 | 0.626 | SANO |
+| `examinar_demanda_entorno_dos_marcos_temporales` | similitud_texto | 0.352 | 0.100 | 0.511 | SANO |
+| `zanjar_seis_preguntas_decision_adelantado` | similitud_texto | 0.351 | 0.111 | 0.482 | SANO |
+| `anunciar_decision_inesperada_reconvocar_reunion` | similitud_texto | 0.362 | 0.000 | 0.473 | SANO |
+| `examinar_entorno_expectativas_tecnologia_proveedores_grupos` | similitud_texto | 0.385 | 0.000 | 0.448 | SANO |
+| `vencer_sindrome_grupo_pares_autoconfianza` | similitud_texto | 0.350 | 0.000 | 0.370 | SANO |
+
+    $ python .v72ext/contra_barrido.py 09 contestar_dos_preguntas_direccion_objetivos
+    hoy 6 vecinos, barrido de la 71 6 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (418 grafo, 61 bandejas), en la 71 479 (410, 69)
+
+**Los seis vecinos son los de su bloque y las seis lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `71`, las tres seniales al digito. Sin aristas en esta fila. **Con ella, las nueve de `cap_07` quedan dentro.**
