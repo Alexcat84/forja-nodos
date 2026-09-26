@@ -63694,7 +63694,7 @@ falte es exactamente lo que no tiene fila.
 | tarea | que | estado |
 |---|---|---|
 | `T1` | los registros de la `ACTA 71` | **CERRADA** (`73.1`) |
-| `T2` | la fidelidad entera de las `7` | |
+| `T2` | la fidelidad entera de las `7` | **CERRADA** (`73.2`): `6` PUENTE de `42`, corregidos en la bandeja antes del barrido |
 | `T3` | el barrido de las `7`, sobre las fichas ya corregidas | |
 | `T4` | los veredictos, las aristas y el orden | |
 | `T5` | el cierre: censo, `PASOS INVENTADOS`, huellas, `D.61`, `R5`, guardas, commit | |
@@ -63753,3 +63753,116 @@ y se vuelve a correr al cerrar. La salida entera de `siete.py`, una ficha por li
 | **una caida del auditor**: `R8` roto en su encargo de la `72`, su racha `AUDITOR` sube, y su remedio se escala | `71.9`, `71.11` |
 
 **`T1` CERRADA.**
+
+## 73.D bis. **LOS DISCUTIBLES DE LA TAREA 2, MARCADOS AL ESCRIBIR CADA FILA** (`EXTRACTOR.md` 8)
+
+Se marcaron dentro de `.v73ext/fidelidad.tsv` en el acto de escribir cada fila, antes de correr `citas.sh` ni
+`contar_fidelidad.py`; aqui se juntan por numero.
+
+| | que | por que lo marco |
+|---|---|---|
+| `D73.3` | **seis clausulas van `P`**: `usar_banco_nueve_preguntas_entrevista` pasos `3` y `8`, `responder_primer_aviso_renuncia_subordinado` paso `6`, `gestionar_retencion_subordinado_valioso_renuncia` pasos `1` y `5`, y `pedir_critica_anonima_curso_entrenamiento_dictado` paso `3` | ninguna trae un medio nuevo, pero las seis son letra mia pegada a una frase del libro, y por `62.5` la clausula reescrita cuenta. El `5` de `gestionar_retencion` lo marco la relectura entera de `cap_15` (`73.2.3`): pone de mandato un *You might say something like*, la figura de `D71.9`. Si el auditor lee alguna como matiz sin contenido, es un `T` mas y su capitulo baja |
+| `D73.4` | **`responder_primer_aviso_renuncia_subordinado` paso `3` va `T`**: *aunque sus razones no te parezcan buenas* glosa el *(they won't be good ones)* de `L111` | es la figura de `D68.3`, un inciso del libro glosado; si se lee como condicion nueva, es un `P` mas |
+| `D73.5` | **`d078`: los pasos `3` y `5` de `responder_primer_aviso_renuncia_subordinado` se quedan los dos, sin fundir** | el libro dice *don't argue* dos veces en `L111` (`73.2.1`), asi que el solape es suyo; y el `5` trae *no sermonees* y *no entres en panico*, que el `3` no trae. Si el auditor lee `P.19` (repeticion interna), se funden en uno y la ficha baja a `6` pasos |
+| `D73.6` | **dos verbos de marco van `T`**: `reciclar_empleado_ascendido_mas_alla_capacidad` paso `4` (*Haz el reciclaje abiertamente*, del *If recycling is done openly* de `L49`) y `desarrollar_primer_curso_entrenamiento` paso `4` (*y dictala*, del *and go* de `L55`) | el primero es la figura de `D68.4`, la practica que el libro recomienda puesta de mandato; el segundo la de `D71.4` |
+| `D73.7` | **dos correcciones fuera de los pasos**: la condicion de `usar_banco_nueve_preguntas_entrevista` (*la hora u hora y media*, donde `L27` dice *an hour or two*) y el entregable de `pedir_critica_anonima_curso_entrenamiento_dictado` (el mismo *por igual* de su paso `3`) | no cuentan en `PASOS INVENTADOS`, que mide pasos; las corrijo en el mismo acto porque son el mismo dato puesto por mi, y la copia de `corregir_t2.py` gana para eso su clave `campos`, dicha en su cabecera |
+
+## 73.2. TAREA 2: LA FIDELIDAD ENTERA DE LAS `7` (`D.30`, `D.58`)
+
+Los tres capitulos de `fuentes/grove_high_output/` leidos enteros (`cap_15` `123` lineas, `cap_16` `51`, `cap_17` `69`, por
+`wc -l`), y **cada paso de las `7` marcado `T` o `P` con su linea**, una fila por paso, en `.v73ext/fidelidad.tsv`. La lista de las
+`7` es `.v73ext/las7.txt`, sacada de `.v73ext/siete.txt`.
+
+### 73.2.1. Las citas, por instrumento (`D.35`)
+
+`.v73ext/citas.sh`, copia de `.v71ext/citas.sh` con la ruta cambiada (su cabecera lo dice). Salida entera en
+`.v73ext/citas_fidelidad.txt`; su ultima linea, las de los seis `P` y la de la condicion (`.v73ext/citas_puente.txt`), y la de
+`d078` (`.v73ext/d078.txt`):
+
+    $ bash .v73ext/citas.sh | tail -1
+    filas: 42 | en su linea declarada: 42 | fuera: 0
+    $ grep -n -o -F 'Convince me why my company should hire you' fuentes/grove_high_output/cap_15.md    # usar_banco_nueve_preguntas_entrevista paso 3
+    43:Convince me why my company should hire you
+    $ grep -n -o -F '(Vary this one according to the situation.)' fuentes/grove_high_output/cap_15.md    # usar_banco_nueve_preguntas_entrevista paso 8
+    53:(Vary this one according to the situation.)
+    $ grep -n -o -F 'Don’t try to change his mind at this point, but buy time' fuentes/grove_high_output/cap_15.md    # responder_primer_aviso_renuncia_subordinado paso 6
+    111:Don’t try to change his mind at this point, but buy time
+    $ grep -n -o -F 'you go to your supervisor for help and advice' fuentes/grove_high_output/cap_15.md    # gestionar_retencion_subordinado_valioso_renuncia paso 1
+    113:you go to your supervisor for help and advice
+    $ grep -n -o -F 'You might say something like' fuentes/grove_high_output/cap_15.md    # gestionar_retencion_subordinado_valioso_renuncia paso 5
+    119:You might say something like
+    $ grep -n -o -F 'you will never be able to please all members of your class' fuentes/grove_high_output/cap_17.md    # pedir_critica_anonima_curso_entrenamiento_dictado paso 3
+    61:you will never be able to please all members of your class
+    $ grep -n -o -F 'an hour or two of interview time' fuentes/grove_high_output/cap_15.md    # usar_banco_nueve_preguntas_entrevista condicion
+    27:an hour or two of interview time
+    $ grep -n -o -i -F 'don’t argue' fuentes/grove_high_output/cap_15.md
+    111:don’t argue
+    111:Don’t argue
+
+**`d078`, LEIDO IGUAL, CON LA LINEA DELANTE:** el solape de los pasos `3` y `5` de `responder_primer_aviso_renuncia_subordinado`
+es la repeticion del propio libro en `L111`, que dice *don't argue* dos veces (*Let him talk, don't argue about anything with him* y
+*Don't argue, don't lecture, and don't panic*). **No es puente y no es caida**; los dos pasos se quedan, porque el `5` trae lo que el
+`3` no trae (`D73.5`). La ficha no cambia por esto.
+
+### 73.2.2. Los seis PUENTE, corregidos en la bandeja ANTES del barrido (`d031`)
+
+`.v73ext/corregir_t2.py`, copia de `.v71ext/corregir_t2.py`: reescribe el paso y anexa al `resumen_teorico` un parrafo
+`CORRECCION DECLARADA DE LA VUELTA 73` con el texto viejo, el nuevo, la linea del libro que no lo dice y la cifra de relectura vieja
+al lado de la buena. Comprueba antes de escribir que el texto viejo es el que dice y que la ficha se serializa como se leyo, y no
+toca una ficha ya marcada. Lo que gana la copia es la clave `campos` (`D73.7`):
+
+| ficha | que | decia | dice |
+|---|---|---|---|
+| `usar_banco_nueve_preguntas_entrevista` | paso `3` | *Preguntale que te convenceria de que tu empresa deberia contratarlo.* | *Pidele que te convenza de por que tu empresa deberia contratarlo.* |
+| `usar_banco_nueve_preguntas_entrevista` | paso `8` | *Si el puesto lo justifica, preguntale* ... *o la variante equivalente segun la situacion.* | *Preguntale* ... *variando esta pregunta segun la situacion.* |
+| `usar_banco_nueve_preguntas_entrevista` | condicion | ... *para llenar la hora u hora y media de que dispone.* | ... *para la hora o dos de entrevista de que dispone.* |
+| `responder_primer_aviso_renuncia_subordinado` | paso `6` | *Pide el tiempo que necesites* ... *en vez de intentar resolverlo todo en el momento.* | *No intentes cambiarle la idea en este momento, sino compra tiempo: cuando haya dicho todo lo que tiene que decir, pide el tiempo que necesites para prepararte para el siguiente encuentro.* |
+| `gestionar_retencion_subordinado_valioso_renuncia` | paso `1` | ... *y hazlo participar de la solucion, en vez de cargar con todo tu solo.* | ... *en busca de ayuda y consejo y, aunque el tambien intente posponerlo, haz que sea problema suyo y que participe de la solucion.* |
+| `gestionar_retencion_subordinado_valioso_renuncia` | paso `5` | *Ayudalo a sentirse comodo con el nuevo arreglo, dejando claro que no se trata de una concesion arrancada por chantaje* ... | *Haz que se sienta comodo con el nuevo arreglo; puedes decirle algo como que no les arranco por chantaje* ... |
+| `pedir_critica_anonima_curso_entrenamiento_dictado` | paso `3` y entregable | ... *complacer a todos los miembros de tu clase por igual.* | ... *complacer a todos los miembros de tu clase.* |
+
+    $ git diff --stat=200 4318e81 c98d891b -- cuarentena/
+     cuarentena/grove_high_output/gestionar_retencion_subordinado_valioso_renuncia.json  | 6 +++---
+     cuarentena/grove_high_output/pedir_critica_anonima_curso_entrenamiento_dictado.json | 6 +++---
+     cuarentena/grove_high_output/responder_primer_aviso_renuncia_subordinado.json       | 4 ++--
+     cuarentena/grove_high_output/usar_banco_nueve_preguntas_entrevista.json             | 8 ++++----
+     4 files changed, 12 insertions(+), 12 deletions(-)
+
+**Ninguna otra ficha cambia.** Despues de la ultima correccion, las `7` se normalizan con `aduana.normalizar_candidato` y pasan
+`aduana.validar_candidato` (esquema, reglas de id, fuentes y guiones), que es lo que haria caer una ficha en la puerta:
+
+<!-- TALLADO: parcial salida=.v73ext/validar_siete.txt -->
+
+    $ cat .v73ext/validar_siete.txt
+    desarrollar_primer_curso_entrenamiento               avisos 0 | errores 0
+    gestionar_retencion_subordinado_valioso_renuncia     avisos 0 | errores 0
+    pedir_critica_anonima_curso_entrenamiento_dictado    avisos 0 | errores 0
+    priorizar_lista_entrenamiento_subordinados           avisos 0 | errores 0
+    reciclar_empleado_ascendido_mas_alla_capacidad       avisos 0 | errores 0
+    responder_primer_aviso_renuncia_subordinado          avisos 0 | errores 0
+    usar_banco_nueve_preguntas_entrevista                avisos 0 | errores 0
+
+y el barrido de las `7` se lanzo despues, sobre las fichas de `c98d891b` (`73.3`).
+
+### 73.2.3. `PASOS INVENTADOS POR CAPITULO`, tres filas
+
+Copia de `.v71ext/contar_fidelidad.py` con la ruta y el rotulo cambiados (su cabecera lo dice):
+
+<!-- TALLADO: parcial salida=.v73ext/contar_fidelidad.txt -->
+
+    $ python .v73ext/contar_fidelidad.py | tail -5
+    PASOS INVENTADOS POR CAPITULO, las 7 de cap_15 a cap_17 (COPIA de la vuelta 73 de .v71ext/contar_fidelidad.py, ruta cambiada)
+    cap_15  candidatos 3  pasos 22  T 17  P 5  inventado 22,7 por ciento
+    cap_16  candidatos 1  pasos 4  T 4  P 0  inventado 0,0 por ciento
+    cap_17  candidatos 3  pasos 16  T 15  P 1  inventado 6,2 por ciento
+    peor capitulo: cap_15, 5 de 22, 22,7 por ciento; por encima del 10: cap_15
+
+(La tabla por candidato, entera, en `.v73ext/contar_fidelidad.txt`: `pasos sin fila: 0 [] | filas sin paso: 0 []`.) **El peor
+capitulo es `cap_15`, `5` de `22`, el `22,7` por ciento, POR ENCIMA DEL `10`.** **Por `D.58` se releyo `cap_15` entero antes de
+seguir**: sus `123` lineas otra vez contra los `22` pasos. **La relectura no salio igual, y lo digo**: la primera pasada llevaba
+`4` `P`, y la relectura marco el quinto, el paso `5` de `gestionar_retencion_subordinado_valioso_renuncia`, que la primera habia
+dado `T` (un *might* de `L119` puesto de mandato, `D73.3`). La fila se reescribio en `.v73ext/fidelidad.tsv` antes de correr la
+cuenta de arriba, y ningun otro paso de `cap_15` cambio de marca. **Con los seis corregidos, lo que entrara lleva `0` PUENTE en
+los `42` pasos**; la cifra de la relectura sobre el texto de la mineria es `6` de `42`.
+
+**`T2` CERRADA.**
