@@ -63318,3 +63318,19 @@ La aduana de hoy: **ENTRARIA** con `0` vecino(s) contra `479`; lineas `--veredic
     hoy 0 vecinos, barrido de la 71 0 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (421 grafo, 58 bandejas), en la 71 479 (410, 69)
 
 **Entra limpia, sin vecinos, como en el barrido de la `71`**; sin lineas. La arista de lectura, cableada (bloque de arriba). **Van `6` de las `6` aristas esperadas**, y **`cap_11` queda entero en el grafo.**
+
+### Fila `13`: `diagnosticar_capacidad_motivacion_prueba_vida`, **INSERTADO** en `609.8` s, codigo `0`, commit `3777db2f`
+
+La aduana de hoy: **BLOQUEARIA** con `2` vecino(s) contra `479`; lineas `--veredicto` pasadas: `2`. Salida entera en `.v72ext/insertar_13_diagnosticar_capacidad_motivacion_prueba_vida.txt`.
+
+<!-- TALLADO: parcial salida=.v72ext/insertar_13_diagnosticar_capacidad_motivacion_prueba_vida.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `decidir_amistad_subordinado_prueba_revision_dificil` | similitud_texto | 0.356 | 0.100 | 0.484 | SANO |
+| `diagnosticar_nivel_motivacion_reaccion_aumento_salario` | similitud_texto | 0.366 | 0.222 | 0.385 | SANO |
+
+    $ python .v72ext/contra_barrido.py 13 diagnosticar_capacidad_motivacion_prueba_vida
+    hoy 2 vecinos, barrido de la 71 2 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (422 grafo, 57 bandejas), en la 71 479 (410, 69)
+
+**Los dos vecinos son los de su bloque y las dos lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `71`, las tres seniales al digito. Sin aristas en esta fila.
