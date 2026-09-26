@@ -64164,7 +64164,7 @@ falte es exactamente lo que no tiene fila.
 | `T1` | los registros de la `ACTA 72` | **CERRADA** (`74.1`) |
 | `T2` | `d078` y `d077`, las deudas de las fichas de Grove | **CERRADA** (`74.2`): las dos pagadas, la vuelta declarada de saneamiento |
 | `T3` | `d084` y `d006`: la fidelidad de los tres nodos de `cap_13` de Scott sin firma | **CERRADA** (`74.3`): `70` filas, `1` PUENTE traido sin tocar el grafo, las dos pagadas a falta de la firma de la `ACTA 73` |
-| `T4` | el cierre: censo, huellas, `D.61`, `R5`, guardas, commit | |
+| `T4` | el cierre: censo, huellas, `D.61`, `R5`, guardas, commit | **CERRADA** (`74.4`): nada movido, huellas identicas, guardas y cierre estricto en verde |
 
 ## 74.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
 
@@ -64228,7 +64228,7 @@ su hora medida al lado.
 | | que | por que lo marco |
 |---|---|---|
 | `D74.2` | **`d077` se paga entera, tambien por las cuatro de la bandeja**, con el barrido de la `73` (el de *quedar lista*) y no con uno del dia de su insercion, que es la `75` | el encargo acepta *antes de entrar o de quedar lista* (TAREA 2.2), y la cola de hoy es la de ese barrido: desde su cierre no cambio ningun fichero de la poblacion ni del codigo (`74.2.2`). Si el auditor lee que `d077` pide la cola del dia de la insercion, las cuatro se pagan en la `75` con el `contra` de su `insertar`, como las tres de `cap_14` en la `72` |
-| `D74.3` | **las horas de los dos barridos se escriben contra la ultima escritura de ficha, y el commit va despues**: en la `71` y en la `73` el barrido abrio ANTES del commit de las correcciones | es la caida de `72.2` mirada en su sitio: lo que protege `d031` es la escritura, y las dos horas estan pegadas en su acta (`ACTA 70` `L48156`, `ACTA 72` `L49030` y `L49032`). No digo en ningun sitio *despues del commit* |
+| `D74.3` | **las horas de los dos barridos se escriben contra la ultima escritura de ficha, y el commit va despues**: en la `71` y en la `73` el barrido abrio ANTES del commit de las correcciones | es la caida de `72.2` mirada en su sitio: lo que protege `d031` es la escritura, y las dos horas estan pegadas en su acta (`ACTA 70` `L48156`, `ACTA 72` `L49030` y `L49032`). Ninguna frase mia de esta vuelta pone un barrido despues de su commit; la unica vez que la frase aparece es la cita de mi caida, en `74.1` |
 
 ## 74.2. TAREA 2: `d078` Y `d077`, LAS DEUDAS DE LAS FICHAS DE GROVE
 
@@ -64363,24 +64363,23 @@ se ha tocado**: esta tarea solo escribe en `.v74ext/`.
 
 `.v74ext/citas.sh`, copia de `.v73ext/citas.sh` con la ruta cambiada y el capitulo fijo en `cap_13` de Scott, porque los tres nodos
 viven en el grafo (su cabecera lo dice). Salida entera en `.v74ext/citas_fidelidad.txt`; su ultima linea, y las de las filas
-discutibles (`.v74ext/citas_discutibles.txt`):
+discutibles, tal como las imprime (`.v74ext/citas_discutibles.txt`, sacadas de esa salida con `grep -A1`):
 
     $ bash .v74ext/citas.sh | tail -1
     filas: 70 | en su linea declarada: 70 | fuera: 0
-    $ cat .v74ext/citas_discutibles.txt
-    $ grep -n -o -F 'If you tell your team your story and what it means to you' fuentes/scott_radical_candor/cap_13.md    # contar_cuatro_historias_propias_ver_hueco_intencion paso 3
+    $ grep -n -o -F 'If you tell your team your story and what it means to you' fuentes/scott_radical_candor/cap_13.md    # contar_cuatro_historias_propias_ver_hueco_intencion paso 3 
     45:If you tell your team your story and what it means to you
-    $ grep -n -o -F 'Your story is by definition better than the story Kim tells' fuentes/scott_radical_candor/cap_13.md    # contar_cuatro_historias_propias_ver_hueco_intencion paso 8
+    $ grep -n -o -F 'Your story is by definition better than the story Kim tells' fuentes/scott_radical_candor/cap_13.md    # contar_cuatro_historias_propias_ver_hueco_intencion paso 8 
     49:Your story is by definition better than the story Kim tells
-    $ grep -n -o -F 'We’ve found that people walk away from this exercise feeling seen, c' fuentes/scott_radical_candor/cap_13.md    # dar_elogio_disciplina_igual_critica paso 17
+    $ grep -n -o -F 'We’ve found that people walk away from this exercise feeling seen, c' fuentes/scott_radical_candor/cap_13.md    # dar_elogio_disciplina_igual_critica paso 17 
     283:We’ve found that people walk away from this exercise feeling seen, c
-    $ grep -n -o -F 'use the Radical Candor framework like a compass' fuentes/scott_radical_candor/cap_13.md    # medir_critica_respuesta_oyente_brujula paso 4
+    $ grep -n -o -F 'use the Radical Candor framework like a compass' fuentes/scott_radical_candor/cap_13.md    # medir_critica_respuesta_oyente_brujula paso 4 
     295:use the Radical Candor framework like a compass
-    $ grep -n -o -F 'Using the framework like a compass can help keep you out of the Ruinou' fuentes/scott_radical_candor/cap_13.md    # medir_critica_respuesta_oyente_brujula paso 11
+    $ grep -n -o -F 'Using the framework like a compass can help keep you out of the Ruinou' fuentes/scott_radical_candor/cap_13.md    # medir_critica_respuesta_oyente_brujula paso 11 
     301:Using the framework like a compass can help keep you out of the Ruinou
-    $ grep -n -o -F 'One way to show you care when confronted with negative emotions is to ' fuentes/scott_radical_candor/cap_13.md    # medir_critica_respuesta_oyente_brujula paso 14
-    305:One way to show you care when confronted with negative emotions is to
-    $ grep -n -o -F 'It can also help to bring several specific examples of the problem' fuentes/scott_radical_candor/cap_13.md    # medir_critica_respuesta_oyente_brujula paso 32
+    $ grep -n -o -F 'One way to show you care when confronted with negative emotions is to ' fuentes/scott_radical_candor/cap_13.md    # medir_critica_respuesta_oyente_brujula paso 14 
+    305:One way to show you care when confronted with negative emotions is to 
+    $ grep -n -o -F 'It can also help to bring several specific examples of the problem' fuentes/scott_radical_candor/cap_13.md    # medir_critica_respuesta_oyente_brujula paso 32 
     321:It can also help to bring several specific examples of the problem
 
 ### 74.3.2. `PASOS INVENTADOS`, una fila por nodo y el total
@@ -64430,8 +64429,7 @@ Salida entera en `.v74ext/libro_mayor.txt`; sus lineas de cuenta:
 
 <!-- TALLADO: parcial salida=.v74ext/libro_mayor.txt -->
 
-    $ python .v60aud/libro_mayor_cap13.py | tail -7
-
+    $ python .v60aud/libro_mayor_cap13.py | tail -6
     el 154, recontado por mi sobre los ficheros : 154
       de esos, ya firmados por alguna acta      : 84  (mejorar_consciencia_propia, practicar_triangulo_critic, pedir_critica_primero_crea, elegir_pregunta_recurrente, resolver_dudas_frecuentes_)
       de esos, firmados HOY por la vuelta 59    : 43
@@ -64458,4 +64456,120 @@ sus firmas son de acta y la de estos tres la pone la `ACTA 73`.
 **Los dos `como` quedan en `docs/loop/DEUDA.jsonl` letra a letra iguales a sus ficheros** (comprobado leyendo el registro). **La `75`
 sale `LIBRE`, `1` de `5`, con `51` deudas esperando**: las `55` de la apertura (`74.0`) menos las cuatro pagadas. **`d084` y `d006`
 quedan pagadas a falta de la firma de la `ACTA 73`**, como manda el encargo. **`T3` CERRADA.**
+
+## 74.4. TAREA 4: EL CIERRE
+
+### 74.4.a. El censo antes y despues: no se mueve nada
+
+<!-- TALLADO: parcial salida=.v74ext/censo_cierre.txt -->
+
+    $ bash .v74ext/censo.sh; python .v70aud/poblacion.py
+    nodos en dataset/nodos.jsonl        : 430
+    veredictos en bitacora              : 1081
+    pares mutuos                        : 1
+    bandeja cuarentena/grove_high_output: 7
+    insertados de grove_high_output     : 85
+    cerrojos en procesos/               : 
+    poblacion: 479 | por sede: {'grafo': 430, 'bandeja': 49} | suma: 479
+    $ git diff --name-only e76746f HEAD -- dataset cuarentena bitacora censos config src | wc -l
+    0
+    $ git status --short -- dataset cuarentena bitacora censos config src | wc -l
+    0
+
+**Al digito el de `74.0` y el de la `ACTA 72` `72.1`**: `430`, `1081`, `1`, `7`, `85`, poblacion `479`, y `procesos/` vacio. **Ni un fichero
+del grafo, la bandeja, la bitacora, los censos, `config/` o `src/` cambiado desde la apertura**, ni commiteado ni en el arbol de trabajo.
+
+### 74.4.b. Las fichas de Grove, byte a byte las que sello la `73`
+
+    $ python .v73ext/pasos_y_huellas.py > .v74ext/pasos_y_huellas_cierre.txt; diff .v74ext/pasos_y_huellas_cierre.txt .v73ext/pasos_y_huellas.txt && echo IDENTICO
+    IDENTICO
+    $ cat .v74ext/pasos_y_huellas_cierre.txt
+    1   usar_banco_nueve_preguntas_entrevista                        bandeja     9 pasos e53b82e37e DISTINTA trabajo=HEAD
+    2   responder_primer_aviso_renuncia_subordinado                  bandeja     7 pasos 01b6acba10 DISTINTA trabajo=HEAD
+    3   gestionar_retencion_subordinado_valioso_renuncia             bandeja     6 pasos b9d95860df DISTINTA trabajo=HEAD
+    4   reciclar_empleado_ascendido_mas_alla_capacidad               bandeja     4 pasos c7df12c844 igual trabajo=HEAD
+    5   priorizar_lista_entrenamiento_subordinados                   bandeja     5 pasos 0a229b6c6c igual trabajo=HEAD
+    6   desarrollar_primer_curso_entrenamiento                       bandeja     7 pasos 3e4ea7099f igual trabajo=HEAD
+    7   pedir_critica_anonima_curso_entrenamiento_dictado            bandeja     4 pasos dd5228c358 DISTINTA trabajo=HEAD
+    fichas de las filas 1 a 7: 7 | pasos: 42 | iguales a su blob en 4318e81: 3 | distintas: 4 | fichero de trabajo distinto de HEAD: 0
+
+**Identica a `.v73ext/pasos_y_huellas.txt`**, como al abrir (`74.0`): las `7` fichas entran en la `75` con la huella que la `73` sello.
+
+### 74.4.c. `D.61`: cada discutible, ejecutado o cerrado
+
+| | estado |
+|---|---|
+| `D74.1` | **EJECUTADO**: `d078` pagada citando `D73.5` y la `ACTA 72` `72.5`; la ficha con el blob del cierre de la `73` (`74.2.1`, `74.2.2`) |
+| `D74.2` | **EJECUTADO**: `d077` pagada entera, las cuatro de la bandeja con el barrido de la `73` y los `0` ficheros cambiados desde su cierre (`74.2.2`) |
+| `D74.3` | **EJECUTADO**: las horas de los dos barridos van contra la ultima escritura de ficha, con su linea de acta pegada (`74.2.2`) |
+| `D74.4` a `D74.8` | **EJECUTADOS**: las marcas estan en `.v74ext/fidelidad.tsv`, contadas en `74.3.2`, y el `P` de `D74.6` traido con su correccion en `74.3.3`; quedan para la relectura de la `ACTA 73` |
+
+**Ninguno abierto.**
+
+### 74.4.d. Las guardas
+
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 430
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+    $ python forja.py guiones
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+    $ python tests/test_aceptacion.py | tail -2
+      total: 379 pruebas, 0 fallos, 0 errores
+    ========================================================================
+
+(Salidas enteras en `.v74ext/cierre_gate.txt`, `.v74ext/cierre_guiones.txt` y `.v74ext/cierre_tests.txt`; cada una lleva al final el
+`rc=0` que le anexe al correrla. La suite corrio en primer plano, de `03:45:12` a `03:48:46`.)
+
+### 74.4.e. El cierre estricto
+
+Salida entera en `.v74ext/cierre_reporte.txt`, y su codigo en `.v74ext/cierre_reporte_rc.txt`. Corrido en primer plano:
+
+    $ grep -E '^(TALLADO|CENSO|TABLA DE CIERRE|CIERRE|GATE|BARRIDO)' .v74ext/cierre_reporte.txt
+    TALLADO DEL REPORTE (D.41): la tabla que dice ser de instrumento
+    TALLADO VERDE: las 157 tabla(s) comprobables son las de su instrumento, celda a celda.
+    CENSO DE RUTAS (D.42): la unidad de la ruta es la celda
+    CENSO VERDE: las 1034 rutas publicadas sostienen lo que dicen sostener.
+    TABLA DE CIERRE DE TAREAS (D.52): toda tabla del reporte declara su instrumento
+    TABLA DE CIERRE VERDE: ninguna celda medible difiere del dato.
+    GATE VERDE.
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+    CIERRE VERDE: las cuatro guardas que muerden, el tallado y el censo. La vigencia corrio y publico su cuenta arriba: es cola, no guarda (D.15).
+
+**VERDE, `rc=0`**, de `03:53:17` a `03:57:12`. **Es la segunda corrida, y la primera salio en ROJO, y lo digo:** corrio de `03:49:41` a
+`03:53:00` cuando el fichero del codigo de salida todavia no existia, y como esta seccion ya lo publicaba como sede, el censo de rutas
+lo tumbo (`CAEN 1`), y la prueba `test_e_guion_largo_rompe_el_hook`, que corre el hook sobre el arbol limpio, cayo por lo mismo
+(`379` pruebas, `1` fallo). Las dos salidas de esa corrida quedan guardadas junto a estas, con el sufijo `intento1`. **Nada se
+arreglo tecleando**: el fichero lo escribio la propia corrida, y la segunda lo encuentra.
+
+### 74.4.f. `R5`, medido con las copias de `.v64ext/pegado64.py` y `.v64aud/normal/bloques_mudos.py`
+
+`.v74ext/pegado74.py` y `.v74ext/bloques_mudos74.py`, sacadas con `sed` de los originales con la cabecera del tramo cambiada a la
+`74` (el `diff --strip-trailing-cr` contra el original da `3` y `2` lineas cambiadas, las de la cabecera y el rotulo):
+
+<!-- TALLADO: parcial salida=.v74ext/r5.txt -->
+
+    $ python .v74ext/pegado74.py; python .v74ext/bloques_mudos74.py
+    bloques abiertos con `$` en el tramo de la vuelta 74 : 42
+    bloques que ROMPEN R1 (ACTA 60 60.15)                : 0
+    bloques abiertos con `$`: 15 | comandos `$`: 41 | comandos sin ninguna linea de salida en su bloque: 0
+
+**Cero bloques que rompen `R1` y cero comandos sin salida.** El bloque se anexo con tres lineas de relleno en el sitio de la salida, se
+corrieron los dos instrumentos (`.v74ext/r5.txt`) y la salida sustituyo al relleno; vueltos a correr con el bloque ya entero, salen
+iguales (`.v74ext/r5_bis.txt`). **Los dos cuentan distinto por uno, y es esto**: `pegado74.py` cuenta toda linea sangrada que empieza
+por `$`, y en `74.2.2` la salida de `sed` sobre la `ACTA 70` trae dentro una linea suya que empieza por `$` (su `cruce_barridos.py`,
+en su `L48195`); `bloques_mudos74.py` solo cuenta los `$` de un bloque que abre con `$`, y esa linea va en medio de una salida.
+
+**Tabla de tareas, al cerrar:**
+
+| tarea | que | estado |
+|---|---|---|
+| `T1` | los registros de la `ACTA 72` | **CERRADA** (`74.1`) |
+| `T2` | `d078` y `d077` | **CERRADA** (`74.2`): las dos pagadas; las `7` de la tanda `58` barridas antes de entrar o de quedar lista, ninguna cambiada por lectura de vecino |
+| `T3` | `d084` y `d006` | **CERRADA** (`74.3`): `70` pasos en `70` filas, `1` PUENTE traido sin tocar el grafo; las dos pagadas a falta de la firma de la `ACTA 73` |
+| `T4` | el cierre | **CERRADA** (`74.4`): censo `430`, `1081`, `1`, `7`, `85` al abrir y al cerrar; huellas de Grove identicas; ninguna insertada |
+
+**Ningun proceso MIO vivo al cerrar**: todo lo que corri en esta vuelta corrio en primer plano y volvio. **Ningun `insertar` corrio en
+esta vuelta.** **No escribo `PARA_ALEXIS.md`: nada me obliga a parar.** El puente de `74.3.3` no es parada: el encargo manda traerlo a
+la `ACTA 73` sin mover dato, y es lo que hago.
 
