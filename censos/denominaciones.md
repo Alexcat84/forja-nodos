@@ -1252,3 +1252,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-26 | seguir_frustrado_preguntar_implantacion_ideas | nombre_largo | La conversacion que el autor tiene al salir de la reunion con el responsable que vio frustrado: nombrarle lo que vio, dejarle contar la vision que tiene de lo suyo, y preguntar por cada idea de mejora como la llego a implantar | castellano | - |
 | 2026-09-26 | seguir_frustrado_preguntar_implantacion_ideas | otro_idioma | leader-follower | ingles | - |
 | 2026-09-26 | seguir_frustrado_preguntar_implantacion_ideas | otro_idioma | chain of command | ingles | - |
+| 2026-09-26 | contar_firmas_cadena_tramite_parado | nombre_largo | El tramite de permiso que el autor persigue despues de ver a un subordinado con mala cara: la norma que dice quien firma, la cadena entera de siete puestos que la regla de cadena de mando obliga, el formulario de cinco lineas, y el veredicto de que fallo el sistema y no la gente | castellano | - |
+| 2026-09-26 | contar_firmas_cadena_tramite_parado | otro_idioma | leave chit | ingles | - |
+| 2026-09-26 | contar_firmas_cadena_tramite_parado | otro_idioma | chain of command | ingles | - |
