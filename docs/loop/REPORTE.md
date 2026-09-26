@@ -64589,7 +64589,7 @@ falte es exactamente lo que no tiene fila.
 | tarea | que | estado |
 |---|---|---|
 | `T1` | los registros de la `ACTA 73` | **CERRADA** (`75.1`) |
-| `T2` | BLOQUEANTE: los pasos `8` y `17` de `dar_elogio_disciplina_igual_critica` salen del campo por `D.54` | ABIERTA |
+| `T2` | BLOQUEANTE: los pasos `8` y `17` de `dar_elogio_disciplina_igual_critica` salen del campo por `D.54` | **CERRADA** (`75.2`): gate verde tras cada operacion, `18` pasos, `--ver` en `0`, `R9` sin puente nuevo |
 | `T3` | lo que entra es lo que se leyo: las huellas de las `7` fichas | ABIERTA |
 | `T4` | las filas de `.v73ext/orden.txt`, una por vez | ABIERTA |
 | `T5` | el cierre | ABIERTA |
@@ -64650,3 +64650,194 @@ que quedan de `dar_elogio` (`75.2`). **Y como `REPORTE` esta a un escalon**, la 
 reescriben al final contra lo que las tablas de dentro dicen, celda a celda.
 
 **`T1` CERRADA.**
+
+## 75.D. **LOS DISCUTIBLES DE LA TAREA 2, MARCADOS ANTES DE EJECUTARLA** (`EXTRACTOR.md` 8)
+
+| | que | por que lo marco |
+|---|---|---|
+| `D75.1` | **la correccion declarada no escribe en el nodo la cuenta de despues de retirar** (*`18` pasos, `18` TRANSCRIPCION, `0` PUENTE*); escribe la que el encargo pide, *`20` pasos, `18` y `2`* | la cuenta de despues es una afirmacion de fidelidad nueva sobre los `18`, y la unica prueba que hoy le hago es `R9`, que es un `grep` de clausulas y no una relectura. Si el auditor lee que el nodo tiene que decir tambien su cuenta de hoy, es una segunda correccion declarada en la `76` |
+| `D75.2` | **las lineas del libro van pegadas con sus comillas tipograficas** (*We’ve*, *“I’ve*) dentro del `resumen_teorico`, tal como las imprime `grep -n -o`, y no normalizadas | es la letra de `D.35`: la salida literal. El precedente del `P13` de `practicar_franqueza_radical_jefe_propio` pega la suya sin comillas porque su linea no las trae. Si la casa prefiere el apostrofo recto en el dataset, es una correccion de forma, no de dato |
+
+Los textos, enteros y antes de correr nada, en `.v75ext/t2_anade.txt`, `.v75ext/t2_razon_corregir.txt`, `.v75ext/t2_razon_17.txt` y
+`.v75ext/t2_razon_8.txt`; los cuatro pasan `python forja.py guiones` en verde y ninguno trae la palabra que el medidor de `D.54`
+lee como retirada declarada.
+
+## 75.2. TAREA 2: **BLOQUEANTE (`D.55`)**: LOS PASOS `8` Y `17` DE `dar_elogio_disciplina_igual_critica` SALEN DEL CAMPO (`ACTA 73` `73.5`, `73.6`)
+
+**Antes de ningun `insertar`**, las tres operaciones en el orden del encargo, cada una con su `gate` y su censo detras, en primer
+plano. El censo antes de la tarea, en `.v75ext/censo_antes_t2.txt`, es el de `75.0`.
+
+### 75.2.1. `corregir`, una vez y antes de retirar nada
+
+Las lineas del libro que la correccion pega, con su instrumento (`D.35`):
+
+    $ grep -n -o 'Also, praise helps people focus on their strengths and on doing more work that they enjoy and less of what they hate' fuentes/scott_radical_candor/cap_13.md
+    273:Also, praise helps people focus on their strengths and on doing more work that they enjoy and less of what they hate
+    $ grep -n -o 'We.ve found that people walk away from this exercise feeling seen, connected, and inspired' fuentes/scott_radical_candor/cap_13.md
+    283:We’ve found that people walk away from this exercise feeling seen, connected, and inspired
+    $ grep -n -o 'We.ve heard things like, .I.ve been doing X, Y, Z for years and didn.t know anyone noticed!. leading to more engagement when they are back at the office' fuentes/scott_radical_candor/cap_13.md
+    283:We’ve heard things like, “I’ve been doing X, Y, Z for years and didn’t know anyone noticed!” leading to more engagement when they are back at the office
+
+El texto entero de `--anade` esta en `.v75ext/t2_anade.txt` y la `--razon` en `.v75ext/t2_razon_corregir.txt`. Dice, sin borrar
+nada: **los pasos `8` y `17` son PUENTE de clausula** por la `ACTA 73` `73.5`, con esas tres lineas pegadas; **que parte de cada paso
+si es del libro**; que la cuenta de su resumen, *`20` pasos, `20` TRANSCRIPCION, `0` PUENTE*, **vale `18` TRANSCRIPCION y `2`
+PUENTE**; y **la tabla de numeros de paso**, con lo que la bitacora y las actas citen de antes de hoy en la numeracion vieja.
+
+<!-- TALLADO: parcial salida=.v75ext/t2_op1_corregir.txt -->
+
+    $ python forja.py corregir --nodo dar_elogio_disciplina_igual_critica --anade "$(cat .v75ext/t2_anade.txt)" --razon "$(cat .v75ext/t2_razon_corregir.txt)"
+    CORRECCION DECLARADA SOBRE UN NODO YA INSERTADO
+      nodo : dar_elogio_disciplina_igual_critica
+      campo: resumen_teorico
+      el texto viejo SIGUE ENTERO: 5382 caracteres, ninguno borrado
+      se aniaden 2337 caracteres al final
+      huella antes  : e61505b50710934d
+      huella despues: 6bdd3603854e9f2b
+
+    GATE VERDE sobre la simulacion. CORRECCION ESCRITA EN: dar_elogio_disciplina_igual_critica
+      razon en bitacora/VEREDICTOS.jsonl
+    rc=0
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 430
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+    rc=0
+    $ bash .v75ext/censo.sh
+    nodos en dataset/nodos.jsonl        : 430
+    veredictos en bitacora              : 1082
+    pares mutuos                        : 1
+    bandeja cuarentena/grove_high_output: 7
+    insertados de grove_high_output     : 85
+    cerrojos en procesos/               : 
+
+### 75.2.2. `retirar_paso.py`, primero el `17` y despues el `8`
+
+<!-- TALLADO: parcial salida=.v75ext/t2_op2_retirar17.txt -->
+
+    $ python scripts/retirar_paso.py --nodo dar_elogio_disciplina_igual_critica --paso 17 --razon "$(cat .v75ext/t2_razon_17.txt)"
+    RETIRADO del campo (D.54): dar_elogio_disciplina_igual_critica, paso 17
+      su texto queda escrito en el nodo y no se pierde:
+        "Cuenta con lo que el texto ha medido de ese ejercicio: la gente sale sintiendose vista, conectada e inspirada, y dicen cosas como llevo anios haciendo esto y no"
+    rc=0
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 430
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+    rc=0
+    $ bash .v75ext/censo.sh
+    nodos en dataset/nodos.jsonl        : 430
+    veredictos en bitacora              : 1082
+    pares mutuos                        : 1
+    bandeja cuarentena/grove_high_output: 7
+    insertados de grove_high_output     : 85
+    cerrojos en procesos/               : 
+
+<!-- TALLADO: parcial salida=.v75ext/t2_op3_retirar8.txt -->
+
+    $ python scripts/retirar_paso.py --nodo dar_elogio_disciplina_igual_critica --paso 8 --razon "$(cat .v75ext/t2_razon_8.txt)"
+    RETIRADO del campo (D.54): dar_elogio_disciplina_igual_critica, paso 8
+      su texto queda escrito en el nodo y no se pierde:
+        "Cuenta ademas con lo que el elogio consigue y la critica no: ayuda a la gente a centrarse en sus fuerzas y a hacer mas del trabajo que disfruta y menos del que "
+    rc=0
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 430
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+    rc=0
+    $ bash .v75ext/censo.sh
+    nodos en dataset/nodos.jsonl        : 430
+    veredictos en bitacora              : 1082
+    pares mutuos                        : 1
+    bandeja cuarentena/grove_high_output: 7
+    insertados de grove_high_output     : 85
+    cerrojos en procesos/               : 
+
+Entre las dos, el paso `8` seguia siendo el `8` (`19` pasos, y su `8` era *Cuenta ademas con lo que el elogio consigue y la critica
+no*, leido del grafo antes de retirarlo). Las dos `--razon` llevan la fecha de hoy, `26 sep 2026`, y el instrumento pone en su frase
+la de `D.54`, `17 sep 2026`, como el encargo avisa.
+
+### 75.2.3. Lo que se movio, medido
+
+<!-- TALLADO: parcial salida=.v75ext/t2_despues.txt -->
+
+    $ python .v75ext/t2_despues.py | head -7
+    nodos antes: 430 | hoy: 430 | nuevos: 0 | que desaparecen: 0 | que cambian: 1 [('dar_elogio_disciplina_igual_critica', ['pasos_accionables', 'resumen_teorico'])]
+    pasos de dar_elogio_disciplina_igual_critica: antes 20 | hoy 18
+    numeracion vieja > nueva: 1>1, 2>2, 3>3, 4>4, 5>5, 6>6, 7>7, 8>SALE, 9>8, 10>9, 11>10, 12>11, 13>12, 14>13, 15>14, 16>15, 17>SALE, 18>16, 19>17, 20>18
+    el resumen viejo sigue entero al principio del nuevo: True | caracteres 5382 > 9390
+    lo que gana el resumen, por sus frases de apertura:
+      CORRECCION DECLARADA (26 sep 2026                            1 vez
+      CORRECCION DECLARADA (17 sep 2026, D.54): EL PASO 17         1 vez
+    $ python scripts/retirar_paso.py --ver
+    RETIRADAS DECLARADAS QUE SIGUEN VIVAS EN EL CAMPO (D.54)
+      poblacion: dataset/nodos.jsonl, sin filtrar
+      encontradas: 0
+    rc=0
+
+**Los pasos del nodo son `18`** (los `18`, enteros, en `.v75ext/t2_despues.txt`), **`--ver` da `0`**, y **la tabla de numeros que el
+instrumento lee del grafo es la de la correccion**: `1` a `7` quietos, `8` fuera, `9` a `16` pasan a `8` a `15`, `17` fuera, `18` a `20`
+pasan a `16` a `18`. **El censo**: el grafo sigue con `430` nodos y **un solo nodo cambia, este, en `pasos_accionables` y
+`resumen_teorico`**; la bitacora pasa de `1081` a `1082` por la linea `CORREGIDO` que `corregir` escribe (su salida lo dice:
+*razon en bitacora/VEREDICTOS.jsonl*); los dos `retirar_paso` no escriben en la bitacora (`1082` antes y despues de cada uno); pares,
+bandeja e insertados quietos; `procesos/` vacio despues de cada operacion. **El resumen viejo sigue entero** al principio del nuevo.
+
+### 75.2.4. `R9` sobre los `18` que quedan (`ACTA 73` `73.11`)
+
+<!-- TALLADO: parcial salida=.v75ext/r9.txt -->
+
+    $ python .v75ext/r9.py
+    paso  1 | casa: mas que / y si no / mas seguro pisando el acelerador si sabes que
+    paso  4 | casa: en vez de
+    paso  9 | casa: mas partido centrandote en las fuerzas que / en vez de
+    paso 10 | casa: no solo / demuestra / mas de lo que
+    paso 12 | casa: igual de / lo contrario
+    paso 13 | casa: el texto dice
+    pasos: 18 | pasos que casan: 6 | pasos sin ninguna clausula del patron: 12
+
+Cada hallazgo con su tramo del libro, por `grep -n -o` (salida entera en `.v75ext/r9_tramos.txt`):
+
+<!-- TALLADO: parcial salida=.v75ext/r9_tramos.txt -->
+
+    $ grep -n -o -F 'use your accelerator more than your brake' fuentes/scott_radical_candor/cap_13.md    # paso 1
+    251:use your accelerator more than your brake
+    $ grep -n -o -F 'If you never use your brake you crash and never get anywhere' fuentes/scott_radical_candor/cap_13.md    # paso 1
+    251:If you never use your brake you crash and never get anywhere
+    $ grep -n -o -F 'you’ll feel safer pressing your accelerator if you know your brakes work' fuentes/scott_radical_candor/cap_13.md    # paso 1
+    251:you’ll feel safer pressing your accelerator if you know your brakes work
+    $ grep -n -o -F 'inspires others rather than making odious comparisons' fuentes/scott_radical_candor/cap_13.md    # paso 4
+    269:inspires others rather than making odious comparisons
+    $ grep -n -o -F 'more bang for the buck out of focusing on strengths than weaknesses' fuentes/scott_radical_candor/cap_13.md    # paso 9
+    273:more bang for the buck out of focusing on strengths than weaknesses
+    $ grep -n -o -F 'maximizing the upside rather than minimizing the downside' fuentes/scott_radical_candor/cap_13.md    # paso 9
+    273:maximizing the upside rather than minimizing the downside
+    $ grep -n -o -F 'Giving praise doesn’t just make people feel good' fuentes/scott_radical_candor/cap_13.md    # paso 10
+    273:Giving praise doesn’t just make people feel good
+    $ grep -n -o -F 'Praise shows that you care personally' fuentes/scott_radical_candor/cap_13.md    # paso 10
+    273:Praise shows that you care personally
+    $ grep -n -o -F 'keep doing more of what’s great' fuentes/scott_radical_candor/cap_13.md    # paso 10
+    273:keep doing more of what’s great
+    $ grep -n -o -F 'it is just as likely to leave a person feeling patronized' fuentes/scott_radical_candor/cap_13.md    # paso 12
+    279:it is just as likely to leave a person feeling patronized
+    $ grep -n -o -F 'exactly the opposite effect' fuentes/scott_radical_candor/cap_13.md    # paso 12
+    279:exactly the opposite effect
+    $ grep -n -o -F 'Specific praise helps the person and the team understand what success looks like' fuentes/scott_radical_candor/cap_13.md    # paso 13
+    279:Specific praise helps the person and the team understand what success looks like
+
+| paso de hoy | clausula que casa | tramo del libro que la sostiene | lectura |
+|---:|---|---|---|
+| `1` | *mas que*, *y si no*, *mas seguro ... si sabes que* | `L251`: *more than your brake*, *If you never use your brake*, *feel safer ... if you know your brakes work* | **sostenida** |
+| `4` | *en vez de hacer comparaciones odiosas* | `L269`: *rather than making odious comparisons* | **sostenida** |
+| `9` | *mas partido ... en las fuerzas que en las debilidades*, *en vez de* | `L273`: *more bang for the buck out of focusing on strengths than weaknesses*, *rather than minimizing the downside* | **sostenida** |
+| `10` | *no solo agradable*, *demuestra*, *mas de lo que* | `L273`: *doesn’t just make people feel good*, *Praise shows that you care personally*, *more of what’s great* | **sostenida** (`D75.3`) |
+| `12` | *igual de probable*, *lo contrario* | `L279`: *just as likely*, *exactly the opposite effect* | **sostenida** |
+| `13` | *el texto dice que ayuda* | `L279`: *Specific praise helps the person and the team understand* | **sostenida**: atribuye al texto lo que el texto dice, sin calificar su prueba |
+
+**Seis pasos casan y los seis traen su tramo literal**: `R9` no levanta ningun puente nuevo en este nodo, y **no corrijo nada mas en
+el**, como manda el encargo. Los doce que no casan no traen clausula del patron.
+
+**`D75.3`, marcado al escribir la fila**: el `demuestra` del paso `10` casa con el patron de *calificar la prueba*, y lo leo como la
+traduccion de *shows* sobre lo que el elogio muestra, no como una calificacion de la prueba del libro. Si el auditor lo lee como
+clausula de prueba, es un `P` que va a la `ACTA 74` y no se corrige hoy.
+
+**`T2` CERRADA**: la guarda `D.30` de `dar_elogio` sale del rojo en el grafo; los dos pasos estan fuera del campo y su literal queda
+escrito en el nodo.

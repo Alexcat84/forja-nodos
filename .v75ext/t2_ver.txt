@@ -1,0 +1,4 @@
+RETIRADAS DECLARADAS QUE SIGUEN VIVAS EN EL CAMPO (D.54)
+  poblacion: dataset/nodos.jsonl, sin filtrar
+  encontradas: 0
+rc=0

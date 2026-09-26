@@ -1,0 +1,27 @@
+nodos antes: 430 | hoy: 430 | nuevos: 0 | que desaparecen: 0 | que cambian: 1 [('dar_elogio_disciplina_igual_critica', ['pasos_accionables', 'resumen_teorico'])]
+pasos de dar_elogio_disciplina_igual_critica: antes 20 | hoy 18
+numeracion vieja > nueva: 1>1, 2>2, 3>3, 4>4, 5>5, 6>6, 7>7, 8>SALE, 9>8, 10>9, 11>10, 12>11, 13>12, 14>13, 15>14, 16>15, 17>SALE, 18>16, 19>17, 20>18
+el resumen viejo sigue entero al principio del nuevo: True | caracteres 5382 > 9390
+lo que gana el resumen, por sus frases de apertura:
+  CORRECCION DECLARADA (26 sep 2026                            1 vez
+  CORRECCION DECLARADA (17 sep 2026, D.54): EL PASO 17         1 vez
+  CORRECCION DECLARADA (17 sep 2026, D.54): EL PASO 8          1 vez
+ 1 Parte de la imagen con la que el texto ordena las dos: cuando diriges un equipo, la critica es tu freno y el elogio es tu acelerador. Si quieres ir a algun sitio tienes que usar el acelerador mas que el freno, y si no usas nunca el freno te estrellas y no llegas a ninguna parte. Y te sentiras mas seguro pisando el acelerador si sabes que los frenos funcionan.
+ 2 Cuenta con la razon por la que la gente se resiste a elogiar, que el texto nombra sin rodeos: es mucho mas facil parecer listo criticando. Y la meta de la guia es ayudar a los demas a tener exito, no demostrar lo listo que eres tu.
+ 3 No uses el elogio como arma, que es el otro mal uso que el texto nombra: decir que fulano es estupendo, que os pasa al resto de perdedores, tira a quien tuvo exito debajo de un autobus lleno de companieros que ahora le guardan rencor, y no vas a conseguir que el exito se repita.
+ 4 Haz que tu elogio sea concreto y sincero, y que inspire a los demas en vez de hacer comparaciones odiosas.
+ 5 Pon disciplina de verdad en el foco sobre el elogio, y cuenta con por que cuesta: despues del trabajo duro y doloroso de pedir critica, apetece dar algo de la tuya, y probablemente llevas un tiempo guardandote alguna.
+ 6 Cuenta con el aviso que el texto te da justo ahi: muy a menudo lo que te molesta lleva molestandote tanto tiempo que es todo lo que puedes ver o sentir, y has dejado de notar todo lo que te gusta de trabajar con esa persona. Si solo ves lo negativo, probablemente no estas en la mentalidad correcta para dar critica.
+ 7 Asi que centrate en lo bueno y elogia primero.
+ 8 Cuenta con la excepcion que el texto deja escrita: a veces tienes que asegurarte de que una persona llega a un nivel de competencia en el que un defecto no se vuelve fatal.
+ 9 Pero cuenta con donde esta el rendimiento: sacas mas partido centrandote en las fuerzas que en las debilidades, maximizando lo de arriba en vez de minimizando lo de abajo.
+10 Y cuenta con lo que el elogio hace que lo vuelve practico y no solo agradable: revela lo que funciona y lo hace usable y repetible, ensenia como una fuerza puede llevar al exito y como se puede construir un exito sobre otro, demuestra que te importa personalmente, y desafia directamente, porque anima a la gente a seguir haciendo mas de lo que esta bien.
+11 Hazte la pregunta que el texto hace en sus talleres, tomada de Karen Sipprell: cuanto tiempo dedicas a asegurarte de que tienes los hechos claros antes de dar elogio a alguien de tu equipo? Y cuenta con que la respuesta tipica es ninguno.
+12 Cuenta con lo que pasa cuando eres vago con el elogio: es igual de probable que dejes a la persona sintiendose tratada con condescendencia, y en cualquier caso la positividad vaga tiene muy poco impacto a largo plazo. Un gran trabajo vacio puede sonar condescendiente y desmoralizar, que es justo lo contrario del efecto que buscabas.
+13 Da elogio concreto, porque el texto dice que ayuda a la persona y al equipo a entender como es el exito, y le da a los miembros ambiciosos del equipo un modelo que seguir.
+14 Y aplicale al elogio las mismas pautas que a la critica, que el texto repite aqui: hazlo con humildad, con utilidad y de inmediato; elogia en publico y critica en privado; y no des guia sobre atributos de personalidad.
+15 Practicalo asi: emparejate con un companiero y compartid un elogio concreto cada uno.
+16 Cuenta con que no cuesta tanto como parece: no es dificil encontrar cosas que elogiarse unos a otros, incluso con alguien que acabas de conocer en un taller. Se vuelve mas facil centrarse en lo bueno cuando pones la intencion de hacerlo, te da curiosidad, y despues dices algo de verdad concreto.
+17 Ten delante los dos ejemplares que el texto escribe de ese elogio concreto: gracias por hacer esa pregunta sobre llegar tarde a las reuniones, no sabia si ibamos a tratarlo y ayudo a mover la conversacion. Y gracias por escucharme cuando hablaba de mi hija, de verdad necesitaba hablar de ello.
+18 Y cuenta con para que sirve ademas del proposito principal: el proposito primero del elogio es ensenar hacia donde vamos y como es lo bueno, y este ejercicio corto es ademas una via rapida y facil de construir la habilidad de dar voz a lo que aprecias.
+bitacora: 1082 lineas; la ultima: candidato dar_elogio_disciplina_igual_critica | veredicto CORREGIDO | levantada_por ['correccion declarada'] | huella_vecino (antes) e61505b50710934d | huella_candidato (despues de corregir) 6bdd3603854e9f2b
