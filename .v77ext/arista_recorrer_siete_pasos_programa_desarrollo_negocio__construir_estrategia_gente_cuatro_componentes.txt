@@ -1,0 +1,13 @@
+$ python forja.py arista --madre recorrer_siete_pasos_programa_desarrollo_negocio --hijo construir_estrategia_gente_cuatro_componentes --paso 8 --razon <fila 16> --veredicto SANO --cita-veredicto <fila 16>
+DECLARACION DE ARISTA POR LECTURA (D.37)
+  madre: recorrer_siete_pasos_programa_desarrollo_negocio
+  hijo : construir_estrategia_gente_cuatro_componentes
+  paso citado de la madre: 8
+    Paso 5: Your People Strategy.
+  señales del par: familia_id 0.0, paso_contra_nodo 0.698, similitud_texto 0.238
+    levantada tambien por la señal: paso_contra_nodo
+
+GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: recorrer_siete_pasos_programa_desarrollo_negocio > construir_estrategia_gente_cuatro_componentes
+  razon en bitacora/VEREDICTOS.jsonl
+
+codigo 0

@@ -1,0 +1,4 @@
+$ python scripts/deuda.py --pagar d111 --vuelta 77 --como "<como>"
+PAGADA d111 en la vuelta 77
+rc=0
+como: La arista recorrer_siete_pasos_programa_desarrollo_negocio > construir_estrategia_gente_cuatro_componentes vive en el grafo desde la vuelta 77, fila 19, cableada por lectura D.37 con el paso 8 de la cabeza (Paso 5: Your People Strategy, cap_13 L53) y veredicto SANO por D.53. La cabeza entra con una parte de siete, como adjudico la ACTA 75 seccion 75.4: las partes 1 y 2 sin arista por la ACTA G5 seccion 6.2, la 3 y la 4 sin candidato, la 6 apartada y la 7 sin parte que sea la estrategia (D76.13).

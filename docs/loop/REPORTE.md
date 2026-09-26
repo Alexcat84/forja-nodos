@@ -66512,3 +66512,47 @@ La aduana de hoy: **BLOQUEARIA** con `2` vecino(s) contra `479`; lineas `--vered
     hoy 2 vecinos, barrido de la 76 2 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (454 grafo, 25 bandejas), en la 76 479 (437, 42)
 
 **Los dos vecinos son los de su bloque y las dos lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `76`, las tres seniales al digito; la poblacion, `479` (`454` mas `25`). **La aduana cablea en el acto la arista `aplicar_seis_pasos_sistema_venta > medir_sistema_venta_trece_indicadores_benchmark`**, la que la fila `17` dejo en cola: **sexta de las `10` aristas esperadas en el grafo.** Bitacora de `1159` a `1161`.
+
+### Fila `19`: `construir_estrategia_gente_cuatro_componentes`, **INSERTADO** en `306.1` s, codigo `0`, commit `358f6070`
+
+La aduana de hoy: **BLOQUEARIA** con `4` vecino(s) contra `479`; lineas `--veredicto` pasadas: `4`. Salida entera en `.v77ext/insertar_19_construir_estrategia_gente_cuatro_componentes.txt`.
+
+<!-- TALLADO: parcial salida=.v77ext/insertar_19_construir_estrategia_gente_cuatro_componentes.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `recorrer_siete_pasos_programa_desarrollo_negocio` | paso_contra_nodo | 0.238 | 0.000 | 0.698 | SANO |
+| `aplicar_cinco_pasos_proceso_contratacion` | similitud_texto | 0.363 | 0.000 | 0.456 | CONTINUA |
+| `medir_sistema_venta_trece_indicadores_benchmark` | similitud_texto | 0.368 | 0.000 | 0.444 | SANO |
+| `distinguir_tres_tipos_sistemas_negocio` | similitud_texto | 0.399 | 0.000 | 0.422 | SANO |
+
+**Arista en cola (`D.29`)**: `construir_estrategia_gente_cuatro_componentes > aplicar_cinco_pasos_proceso_contratacion`
+
+    $ python .v77ext/contra_barrido.py 19 construir_estrategia_gente_cuatro_componentes
+    hoy 4 vecinos, barrido de la 76 4 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (455 grafo, 24 bandejas), en la 76 479 (437, 42)
+
+**La arista por lectura `D.37` de la fila, cableada en el acto con los dos extremos vivos**: `recorrer_siete_pasos_programa_desarrollo_negocio > construir_estrategia_gente_cuatro_componentes`, paso `8` de la madre (`cap_13` `L53`), `--veredicto SANO` por `D.53`. Salida entera en `.v77ext/arista_recorrer_siete_pasos_programa_desarrollo_negocio__construir_estrategia_gente_cuatro_componentes.txt`:
+
+    $ python forja.py arista --madre recorrer_siete_pasos_programa_desarrollo_negocio --hijo construir_estrategia_gente_cuatro_componentes --paso 8 --razon <fila 16> --veredicto SANO --cita-veredicto <fila 16>
+    DECLARACION DE ARISTA POR LECTURA (D.37)
+      madre: recorrer_siete_pasos_programa_desarrollo_negocio
+      hijo : construir_estrategia_gente_cuatro_componentes
+      paso citado de la madre: 8
+        Paso 5: Your People Strategy.
+      señales del par: familia_id 0.0, paso_contra_nodo 0.698, similitud_texto 0.238
+        levantada tambien por la señal: paso_contra_nodo
+
+    GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: recorrer_siete_pasos_programa_desarrollo_negocio > construir_estrategia_gente_cuatro_componentes
+      razon en bitacora/VEREDICTOS.jsonl
+
+
+**Y `d111` SE PAGA AQUI** (encargo TAREA 4.5), con la arista ya viva, y su `--como` cita la `ACTA 75` `75.4`:
+
+<!-- TALLADO: parcial salida=.v77ext/pagar_d111.txt -->
+
+    $ python scripts/deuda.py --pagar d111 --vuelta 77 --como "<como>"
+    PAGADA d111 en la vuelta 77
+    rc=0
+    como: La arista recorrer_siete_pasos_programa_desarrollo_negocio > construir_estrategia_gente_cuatro_componentes vive en el grafo desde la vuelta 77, fila 19, cableada por lectura D.37 con el paso 8 de la cabeza (Paso 5: Your People Strategy, cap_13 L53) y veredicto SANO por D.53. La cabeza entra con una parte de siete, como adjudico la ACTA 75 seccion 75.4: las partes 1 y 2 sin arista por la ACTA G5 seccion 6.2, la 3 y la 4 sin candidato, la 6 apartada y la 7 sin parte que sea la estrategia (D76.13).
+
+**Los cuatro vecinos son los de su bloque y las cuatro lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `76`, las tres seniales al digito; la poblacion, `479` (`455` mas `24`). **Su linea con la contratacion es la `CONTINUA` de la relectura conjunta** (`77.2.1`), y **su arista hacia `aplicar_cinco_pasos_proceso_contratacion` queda EN COLA**: se cablea al entrar la fila `22`. **Septima de las `10` aristas esperadas en el grafo**, la de `recorrer`. Bitacora de `1161` a `1166`: sus cuatro lineas y la de la arista.
