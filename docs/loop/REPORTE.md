@@ -66192,3 +66192,18 @@ La aduana de hoy: **BLOQUEARIA** con `1` vecino(s) contra `479`; lineas `--vered
     hoy 1 vecinos, barrido de la 76 1 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (439 grafo, 40 bandejas), en la 76 479 (437, 42)
 
 **El vecino es el de su bloque y la linea se paso tal cual**: ni nuevos ni caidos contra el barrido de la `76`, las tres seniales al digito; la poblacion, `479` (`439` mas `40`). Sin aristas en esta fila. Bitacora de `1120` a `1121`, su linea SANO.
+
+### Fila `4`: `trazar_modelo_negocio_cliente_primero`, **INSERTADO** en `389.4` s, codigo `0`, commit `5dc5a66a`
+
+La aduana de hoy: **BLOQUEARIA** con `1` vecino(s) contra `479`; lineas `--veredicto` pasadas: `1`. Salida entera en `.v77ext/insertar_04_trazar_modelo_negocio_cliente_primero.txt`.
+
+<!-- TALLADO: parcial salida=.v77ext/insertar_04_trazar_modelo_negocio_cliente_primero.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `dar_valor_constante_cuatro_publicos` | similitud_texto | 0.390 | 0.000 | 0.556 | SANO |
+
+    $ python .v77ext/contra_barrido.py 04 trazar_modelo_negocio_cliente_primero
+    hoy 1 vecinos, barrido de la 76 1 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (440 grafo, 39 bandejas), en la 76 479 (437, 42)
+
+**El vecino es el de su bloque y la linea se paso tal cual**: ni nuevos ni caidos contra el barrido de la `76`, las tres seniales al digito; la poblacion, `479` (`440` mas `39`). Sin aristas en esta fila. Bitacora de `1121` a `1122`, su linea SANO.
