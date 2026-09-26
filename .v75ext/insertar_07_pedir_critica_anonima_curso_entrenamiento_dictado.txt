@@ -1,0 +1,75 @@
+fila 07, pedir_critica_anonima_curso_entrenamiento_dictado, lineas --veredicto: 7
+  --veredicto gestionar_retencion_subordinado_valioso_renuncia|SANO|Ajenos: la senial 3 casa el formulario de aqui (L61) con el volver con una solucion de la retencion (cap_15 L117). Uno cierra un curso dictado y el otro retiene a quien se va; ninguno usa el producto del otro.
+  --veredicto priorizar_lista_entrenamiento_subordinados|SANO|Abuela y nieta por desarrollar_primer_curso_entrenamiento, la figura de D67.4: este candidato parte del curso dictado (L61), que es el producto de desarrollar_primer_curso_entrenamiento (CONTINUA en esta misma seccion), y ese parte de la lista priorizada del vecino (L51, L53). Ninguno de los cuatro pasos de aqui usa la lista, las necesidades ni el inventario de medios del vecino; la relacion vive en las dos aristas de la cadena y una tercera directa seria redundante. LA ACTA 60 60.5 ADJUDICO ESTE PAR CONTINUA (su par 2), y mi lectura de hoy difiere: no la fuerzo, la marco (DISCUTIBLE D73.9).
+  --veredicto desarrollar_primer_curso_entrenamiento|CONTINUA|madre=desarrollar_primer_curso_entrenamiento|El mismo par que desarrollar lee desde su lado: este parte del curso dictado (L61, After you've given the course), producto del vecino (L53 a L59). La critica del paso 6 del vecino es la de los subordinados mas informados en la primera vuelta desechable (L57); la de aqui es anonima, de toda la clase, con formulario y despues del curso. Procedimiento en los dos lados (ACTA 60 60.5, par 3).
+  --veredicto usar_banco_nueve_preguntas_entrevista|SANO|Ajenos, el mismo par que usar_banco lee desde su lado: preguntas a un candidato en una entrevista (cap_15 L37 a L55) contra un formulario de critica de un curso (L61).
+  --veredicto repartir_supervision_puesto_funcional_mision|SANO|Ajenos: el vecino del grafo, de cap_10, reparte la supervision de un puesto entre dos jefes, y su paso 6 encarga al funcional que el puesto este formado; este pide critica de un curso dictado (L61). El vecino nombra la formacion en una linea y no produce ni usa un curso.
+  --veredicto responder_primer_aviso_renuncia_subordinado|SANO|Ajenos, el mismo par que responder_primer_aviso lee desde su lado: la critica de un curso (L61) contra el primer aviso de renuncia (cap_15 L111).
+  --veredicto entregar_evaluacion_desempeno_tres_claves|SANO|Ajenos: el vecino del grafo, de cap_14, entrega una revision de desempeno; este recoge la critica de un curso (L61). La senial casa hacer llegar un mensaje con plantear preguntas; comparten prosa.
+inicio 2026-09-26 05:40:38
+======================================================================
+ADUANA DE INSERCION, candidato 'pedir_critica_anonima_curso_entrenamiento_dictado'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (436 del grafo mas 43 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 7. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino gestionar_retencion_subordinado_valioso_renuncia  [Gestionar la retencion de un subordinado valioso tras su primer aviso de renuncia: escalar al propio jefe, perseguir cada via para conservarlo y volver con una solucion a sus razones reales]
+    levantada por: similitud_texto
+    similitud_texto    0.369 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.516 (umbral 0.60)
+    paso 2 del candidato contra paso 4 de gestionar_retencion_subordinado_valioso_renuncia
+
+  vecino priorizar_lista_entrenamiento_subordinados  [Priorizar la lista de en que hay que entrenar a los subordinados, tras preguntarles e inventariar los medios disponibles]
+    levantada por: similitud_texto
+    similitud_texto    0.472 (umbral 0.35)
+    familia_id         0.111 (umbral 0.30)
+    paso_contra_nodo   0.447 (umbral 0.60)
+    paso 3 del candidato contra paso 1 de priorizar_lista_entrenamiento_subordinados
+
+  vecino desarrollar_primer_curso_entrenamiento  [Desarrollar el primer curso de entrenamiento en siete pasos, desde el alcance sin ambicion hasta decidir si hacen falta mas instructores]
+    levantada por: similitud_texto
+    similitud_texto    0.447 (umbral 0.35)
+    familia_id         0.250 (umbral 0.30)
+    paso_contra_nodo   0.396 (umbral 0.60)
+    paso 1 del candidato contra paso 1 de desarrollar_primer_curso_entrenamiento
+
+  vecino usar_banco_nueve_preguntas_entrevista  [Usar el banco de nueve preguntas que un grupo de mandos considero las mejores para entrevistar a un candidato]
+    levantada por: similitud_texto
+    similitud_texto    0.388 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.431 (umbral 0.60)
+    paso 3 del candidato contra paso 4 de usar_banco_nueve_preguntas_entrevista
+
+  vecino repartir_supervision_puesto_funcional_mision  [Repartir la supervision de un puesto entre su grupo funcional y su division, dando a cada jefe lo que le toca: al de mision las prioridades, al funcional el oficio y la carrera]
+    levantada por: similitud_texto
+    similitud_texto    0.351 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.425 (umbral 0.60)
+    paso 4 del candidato contra paso 6 de repartir_supervision_puesto_funcional_mision
+
+  vecino responder_primer_aviso_renuncia_subordinado  [Responder al primer momento en que un subordinado valioso avisa que quiere renunciar: dejar lo que haces, escucharlo sin discutir y comprarte tiempo antes de actuar]
+    levantada por: similitud_texto
+    similitud_texto    0.410 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.389 (umbral 0.60)
+    paso 3 del candidato contra paso 7 de responder_primer_aviso_renuncia_subordinado
+
+  vecino entregar_evaluacion_desempeno_tres_claves  [Entregar la evaluacion de desempeno cara a cara con las tres claves del mando: franqueza, escucha total y dejar fuera las emociones propias]
+    levantada por: similitud_texto
+    similitud_texto    0.385 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.400 (umbral 0.60)
+    paso 2 del candidato contra paso 6 de entregar_evaluacion_desempeno_tres_claves
+  arista madre-hijo cableada y escrita RESUELTA: desarrollar_primer_curso_entrenamiento > pedir_critica_anonima_curso_entrenamiento_dictado
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 437
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 7
+
+======================================================================
+fin 2026-09-26 05:48:32 | codigo de salida 0 | 473.9 s
