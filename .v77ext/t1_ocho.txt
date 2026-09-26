@@ -1,0 +1,4 @@
+$ grep "^cap_" .v76ext/contar_fidelidad.txt | awk '{s+=$9; p+=$5} END {print "P suma", s, "pasos", p}'
+P suma 8 pasos 176
+$ grep -c "| P |" .v76ext/fidelidad.tsv
+8

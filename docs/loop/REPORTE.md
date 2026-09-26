@@ -65833,3 +65833,251 @@ vuelta siguiente si la `ACTA 75` las certifica (`D.39`), en el orden de `.v76ext
 `d111` y `d108` pagados por la lectura de `76.4.2`; despues, Marquet, que esta vuelta no toco.
 
 **`R5` vuelto a medir con el reporte ya entero** (`pegado76.py` y `bloques_mudos76.py` otra vez, salida en `.v76ext/r5_final.txt`): `30` comandos en `19` bloques, con `0` que rompen `R1` y `0` sin salida; el de mas es el bloque del cierre estricto.
+
+# VUELTA 77 DE LA LINEA SERIAL, lote 9 (`gerber_emyth`), **CLASE INSERCION**: la relectura conjunta del par de la contratacion y de la arista `fingir` a `recorrer`, y despues las `22` fichas de Gerber, una por vez
+
+*Encargo escrito por el auditor al cerrar la `ACTA 75`. Clase impresa por `python scripts/deuda.py --clase 77` (`LIBRE`, `77.0`) y
+declarada `INSERCION` en la cabecera del encargo. **Ningun `insertar` antes de cerrar la TAREA 2, uno por vez, y ninguno en vuelo al
+cerrar el turno.***
+
+**REPORTE ABIERTO AL EMPEZAR** (`EXTRACTOR.md` 3). Las filas se llenan al cerrarse cada tarea. Si la vuelta se corta, lo que
+falte es exactamente lo que no tiene fila.
+
+| tarea | que | estado |
+|---|---|---|
+| `T1` | los registros de la `ACTA 75` | **CERRADA** (`77.1`) |
+| `T2` | la relectura conjunta: el par de la contratacion y la arista `fingir` a `recorrer` | **CERRADA** (`77.2`): las dos me convencen; aristas esperadas de `8` a `10`, el orden sin mover |
+| `T3` | lo que entra es lo que se leyo: las huellas de las `22` fichas | ABIERTA |
+| `T4` | las `22` filas de `.v76ext/orden.txt`, una por vez | ABIERTA |
+| `T5` | el cierre | ABIERTA |
+
+## 77.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
+
+**Lo pendiente, commiteado primero** (`EXTRACTOR.md` 1): `loop.log`, `ultimo_auditor.json` y `ultimo_extractor.json` del arnes,
+empujados como `70a827c`, hook verde.
+
+<!-- TALLADO: parcial salida=.v77ext/apertura.txt -->
+
+    $ git rev-parse HEAD && git log -1 --format=%cI && git rev-parse --abbrev-ref HEAD
+    70a827c95f1328cb3cb5f1c5c358ddab70cb00c2
+    2026-09-26T09:27:37-04:00
+    extraccion-mundo-11
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 437
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+    $ bash .v77ext/censo.sh
+    nodos en dataset/nodos.jsonl        : 437
+    veredictos en bitacora              : 1111
+    pares mutuos                        : 1
+    bandeja cuarentena/gerber_emyth     : 22
+    insertados de gerber_emyth          : 0
+    cerrojos en procesos/               : 
+    $ python scripts/deuda.py --clase 77
+    LIBRE
+      van 3 de 5 desde la ultima de saneamiento (la 74), con 52 deuda(s) esperando
+    $ python .v70aud/poblacion.py
+    poblacion: 479 | por sede: {'grafo': 437, 'bandeja': 42} | suma: 479
+    $ python scripts/retirar_paso.py --ver
+    RETIRADAS DECLARADAS QUE SIGUEN VIVAS EN EL CAMPO (D.54)
+      poblacion: dataset/nodos.jsonl, sin filtrar
+      encontradas: 0
+    $ python .v76ext/pasos_y_huellas.py > .v77ext/huellas_apertura.txt; diff .v77ext/huellas_apertura.txt .v76ext/pasos_y_huellas.txt && echo IDENTICO
+    IDENTICO
+
+**Coincide con la `ACTA 75` `75.1`** (`437`, `1111`, `1`, `22` en la bandeja de Gerber, `0` insertados; poblacion `479`, `437` del
+grafo mas `42` de bandejas), y **`procesos/` esta vacio**. La clase y las `52` deudas, las mismas que pega el encargo. `.v77ext/censo.sh`
+es copia de `.v76ext/censo.sh` con el comentario cambiado. **Las huellas de las `22`, identicas a las que la `76` sello** antes de tocar
+nada.
+
+## 77.1. TAREA 1: LOS REGISTROS DE LA `ACTA 75`, SIN REABRIR EL ARGUMENTO (`D.47`)
+
+| que | donde |
+|---|---|
+| **mi vuelta, reproducida**: mis instrumentos dan lo que pegue, mis `22` fichas son las que el auditor barrio byte a byte y mi barrido es el suyo, `54` de `54` filas | `ACTA 75` `75.1`, `75.4` |
+| **mi fidelidad se sostiene paso a paso**: mis `P` son los que corregi, ningun `T` mio cae, y `D76.10` se sostiene entero | `75.3` |
+| **mis diecinueve discutibles**: dieciocho se sostienen; `D76.14` gana contra la lectura ciega del auditor; **`D76.15`, en la contratacion, va a la relectura conjunta** (`77.2`) | `75.5` |
+| **una caida mia de `REPORTE`**: *`9` PUENTE* donde son `8`, en mi tabla de tareas, en un titulo y en una conclusion. **`REPORTE` sube a `1 de 3`** | `75.2`, `75.7` |
+| **el auditor**: su tanda sale limpia y `AUDITOR` vuelve a cero | `75.9` |
+
+**LA CIFRA BUENA, DECLARADA AQUI Y SIN TOCAR EL TRAMO DE LA `76`**: los PUENTE de la TAREA 2 de la `76` son **`8` de `176`** pasos, no
+`9`. Donde el tramo de la `76` dice *`9` PUENTE*, *`9` de `176`* o *los `9` `P`*, se lee `8`:
+
+<!-- TALLADO: parcial salida=.v77ext/t1_ocho.txt -->
+
+    $ grep "^cap_" .v76ext/contar_fidelidad.txt | awk '{s+=$9; p+=$5} END {print "P suma", s, "pasos", p}'
+    P suma 8 pasos 176
+    $ grep -c "| P |" .v76ext/fidelidad.tsv
+    8
+
+**Lo que aprendo, sin reabrirla:** la cifra buena vivia en mi fichero y en mi tabla de `76.5.b`, y la falsa en las celdas de prosa que
+teclee antes de contar. **En esta vuelta toda celda de la cabecera y de las tablas de tareas se reescribe al cerrar contra la salida de
+su instrumento**, y la tabla de cierre cita el fichero de cada cifra.
+
+**`T1` CERRADA.**
+
+## 77.D. **LOS DISCUTIBLES DE LA TAREA 2 Y DEL METODO, MARCADOS ANTES DE SABER SI ACIERTO** (`EXTRACTOR.md` 8)
+
+| | que | por que lo marco |
+|---|---|---|
+| `D77.1` | **el par de la contratacion pasa a `CONTINUA`, madre `construir_estrategia_gente_cuatro_componentes`**: me convence el caso del auditor | solo `2` de los `12` pasos del hijo (`10` y `11`) consumen el producto de la madre; el resto del hijo es un procedimiento propio que la madre no toca. `6.1` no tiene bascula y por eso no me detiene, pero la lectura contraria, la mia de la `76`, se sostenia en que la madre no nombra la contratacion |
+| `D77.2` | **la arista `fingir_prototipo_cinco_mil_replicas` a `recorrer_siete_pasos_programa_desarrollo_negocio` se sostiene por `D.29`, con veredicto de la lectura `CONTINUA` y `--paso 1`** | no es `D.37`: ningun paso de la madre enumera al hijo, y el paso `1` es el que el hijo continua, no uno que lo nombre. Si el auditor lee que la relacion es de otro paso (el `4`, *juega con las reglas*) o que el veredicto de la lectura es `SANO`, cambia la cita y no la arista |
+| `D77.3` | **EL METODO DE LA `75`, QUE EL ENCARGO DA POR BUENO**: cada `insertar` lo lanza `.v77ext/insertar.py` como UN proceso, y yo espero en primer plano con `.v77ext/esperar.py` hasta su `.fin`, porque una llamada de mi herramienta no pasa de `600` s y un `insertar` de la `72` llego a `976,5` s. **Entre el lanzamiento y el `.fin` no lanzo el siguiente ni toco el dataset, la bitacora ni la bandeja.** Ninguno queda vivo al cerrar mi turno, y si uno no cabe, no lo lanzo | la letra de la corrida dice *primer plano* y *nunca en segundo plano*; es el mismo marcado que `D75.4` y `D72.1` |
+
+## 77.2. TAREA 2: LA RELECTURA CONJUNTA, ANTES DEL PRIMER `insertar` (`1.3`, `ACTA 75` `75.4`)
+
+**Los pasos de los dos pares, impresos por el instrumento del encargo** (salidas enteras en `.v77ext/t2_pasos_contratacion.txt` y
+`.v77ext/t2_pasos_fingir_recorrer.txt`), **y las lineas del libro que cito, con su `grep` pegado** (`D.35`; en `.v77ext/t2_lineas.txt`,
+por fragmento para no arrastrar los guiones largos del libro):
+
+<!-- TALLADO: parcial salida=.v77ext/t2_pasos_contratacion.txt -->
+
+    ===== construir_estrategia_gente_cuatro_componentes | cuarentena\gerber_emyth\construir_estrategia_gente_cuatro_componentes.json
+      titulo: Construir tu Your People Strategy con los cuatro componentes que el libro nombra uno a uno
+      fuente: ['gerber_emyth'] | previos: [] | siguientes: []
+      cond: Cuando ya tienes tu Primary Aim y tu Strategic Objective escritos y tu Organizational Strategy construida, y necesitas comunicarle esa idea a tu gente para que compre el juego que le propones.
+      P1. Entiende que tu Your People Strategy es la forma en que le comunicas a tu gente la idea de tu negocio.
+      P2. Arranca con tu Primary Aim.
+      P3. Sigue con tu Strategic Objective.
+      P4. Construye tu Organizational Strategy: tu Organization Chart y los Position Contracts de todas las posiciones que contiene.
+      P5. Escribe tus Operations Manuals, que son los que definen el trabajo que hace tu gente.
+    ===== aplicar_cinco_pasos_proceso_contratacion | cuarentena\gerber_emyth\aplicar_cinco_pasos_proceso_contratacion.json
+      titulo: Aplicar los cinco componentes del proceso de contratacion que el libro enumera para comunicar tu idea desde el primer dia
+      fuente: ['gerber_emyth'] | previos: [] | siguientes: []
+      cond: Cuando vas a contratar gente nueva y quieres que el proceso mismo, desde la primera reunion hasta el primer dia de entrenamiento, sea el primer medio con el que le comunicas la idea de tu negocio.
+      P1. Disena una presentacion guionizada que comunique la idea de tu negocio en una reunion grupal a todos los aspirantes al mismo tiempo, describiendo la idea, la historia y la experiencia del negocio implementandola, y los atributos que exige el puesto.
+      P2. Reunete con cada aspirante de forma individual para hablar de sus reacciones y sentimientos sobre la idea, su trasfondo y su experiencia, y pregunta por que se cree apropiado para el papel que el puesto juega en implementar esa idea.
+      P3. Notifica por telefono al candidato elegido, otra vez con una presentacion guionizada.
+      P4. Notifica a los aspirantes no elegidos agradeciendo su interes, con una carta estandar firmada por quien entrevisto.
+      P5. Dedica el primer dia de entrenamiento a las siguientes actividades, tanto para ti como para el nuevo empleado.
+      P6. Revisa con el la idea del negocio.
+      P7. Resume el sistema con el que todo el negocio hace realidad esa idea.
+      P8. Llevalo de recorrido por las instalaciones, resaltando a la gente trabajando y los sistemas funcionando para mostrar la interdependencia entre los sistemas y la gente.
+      P9. Responde clara y completamente todas sus preguntas.
+      P10. Entregale su uniforme y su Manual de Operaciones.
+      P11. Revisa con el su Manual de Operaciones, incluyendo el Objetivo Estrategico, la Organizational Strategy y el Position Contract de su propio puesto.
+      P12. Completa con el los papeles de empleo.
+
+<!-- TALLADO: parcial salida=.v77ext/t2_pasos_fingir_recorrer.txt -->
+
+    ===== fingir_prototipo_cinco_mil_replicas | cuarentena\gerber_emyth\fingir_prototipo_cinco_mil_replicas.json
+      titulo: Fingir que tu negocio es el prototipo de 5.000 iguales, y jugar con las seis reglas que el libro pone para ganar
+      fuente: ['gerber_emyth'] | previos: [] | siguientes: []
+      cond: Cuando quieres dejar de trabajar dentro de tu negocio y ponerte a trabajar sobre el, y necesitas el modelo con el que se hace.
+      P1. Finge que el negocio que tienes, o que quieres tener, es el prototipo de otros 5.000 iguales, y que va a servir de modelo para esos 5.000.
+      P2. Entiende iguales como el texto lo entiende: no casi iguales, sino iguales; replicas perfectas, clones.
+      P3. Dicho de otro modo, finge que vas a franquiciar tu negocio, y quedate con que el texto dice fingir y no dice que debas hacerlo.
+      P4. Juega entonces con las reglas que el texto pone para ganar el juego de la franquicia, que son seis y estan enumeradas a continuacion.
+      P5. Regla 1: el modelo dara valor constante a tus clientes, empleados, proveedores y prestamistas, por encima de lo que esperan.
+      P6. Regla 2: el modelo lo operara gente con el nivel de destreza mas bajo posible.
+      P7. Regla 3: el modelo destacara como un sitio de orden impecable.
+      P8. Regla 4: todo el trabajo del modelo estara documentado en Manuales de Operaciones.
+      P9. Regla 5: el modelo dara al cliente un servicio uniformemente predecible.
+      P10. Regla 6: el modelo usara un codigo uniforme de color, vestuario e instalaciones.
+      P11. Recorre las seis reglas una a una, que es lo que el texto hace justo despues de enumerarlas.
+    ===== recorrer_siete_pasos_programa_desarrollo_negocio | cuarentena\gerber_emyth\recorrer_siete_pasos_programa_desarrollo_negocio.json
+      titulo: Recorrer los siete pasos del Business Development Program, empezando por tu Primary Aim
+      fuente: ['gerber_emyth'] | previos: [] | siguientes: []
+      cond: Cuando ya finges que tu negocio es el prototipo de 5.000 replicas y necesitas el programa paso a paso con el que conviertes ese negocio, el que tienes o el que vas a crear, en un modelo organizado.
+      P1. Entiende tu Business Development Program como el proceso paso a paso con el que conviertes tu negocio actual, o el que vas a crear, en un modelo perfectamente organizado para miles de replicas iguales.
+      P2. Usalo tambien como el vehiculo con el que construyes tu Franchise Prototype.
+      P3. Recorre el programa en sus siete pasos distintos, en este orden.
+      P4. Paso 1: Your Primary Aim.
+      P5. Paso 2: Your Strategic Objective.
+      P6. Paso 3: Your Organizational Strategy.
+      P7. Paso 4: Your Management Strategy.
+      P8. Paso 5: Your People Strategy.
+      P9. Paso 6: Your Marketing Strategy.
+      P10. Paso 7: Your Systems Strategy.
+
+<!-- TALLADO: parcial salida=.v77ext/t2_lineas.txt -->
+
+    $ grep -n -o 'Your People Strategy is the way you communicate this idea' fuentes/gerber_emyth/cap_18.md
+    117:Your People Strategy is the way you communicate this idea
+    $ grep -n -o 'It starts with your Primary Aim and your Strategic Objective, and continues through your Organizational Strategy (your Organization Chart and the Position Contracts for all of the positions in it) and the Operations Manuals that define the work your people do' fuentes/gerber_emyth/cap_18.md
+    119:It starts with your Primary Aim and your Strategic Objective, and continues through your Organizational Strategy (your Organization Chart and the Position Contracts for all of the positions in it) and the Operations Manuals that define the work your people do
+    $ grep -n -o 'hiring process became the first and most essential medium for communicating the Boss' fuentes/gerber_emyth/cap_18.md
+    245:hiring process became the first and most essential medium for communicating the Boss
+    $ grep -n -o 'Reviewing the Operations Manual , including the Strategic Objective, the Organizational Strategy, and the Position Contract of the employee' fuentes/gerber_emyth/cap_18.md
+    269:Reviewing the Operations Manual , including the Strategic Objective, the Organizational Strategy, and the Position Contract of the employee
+    $ grep -n -o 'is the prototype, or will be the prototype, for 5,000 more just like it' fuentes/gerber_emyth/cap_11.md
+    35:is the prototype, or will be the prototype, for 5,000 more just like it
+    $ grep -n -o 'go on to the next step, the Business Development Process' fuentes/gerber_emyth/cap_11.md
+    321:go on to the next step, the Business Development Process
+    $ grep -n -o 'ow you understand the task ahead: to think of your business as though it were the prototype for 5,000 more just like it' fuentes/gerber_emyth/cap_13.md
+    21:ow you understand the task ahead: to think of your business as though it were the prototype for 5,000 more just like it
+    $ grep -n -o 'into a perfectly organized model for thousands more just like it' fuentes/gerber_emyth/cap_13.md
+    39:into a perfectly organized model for thousands more just like it
+    $ grep -n -o 'Your Business Development Program is the vehicle through which you can create your Franchise Prototype' fuentes/gerber_emyth/cap_13.md
+    41:Your Business Development Program is the vehicle through which you can create your Franchise Prototype
+
+### 77.2.1. **El par de la contratacion: ME CONVENCE. `CONTINUA`, madre `construir_estrategia_gente_cuatro_componentes`**
+
+**Por la vara `6.1`, y solo esa: que anade el HIJO a la MADRE.** Mi `SANO` de la `76` descansaba en que *ningun paso del vecino nombra
+la contratacion*. **Esa es la pregunta de la expansion, no la de la continuacion**, y el auditor lo dice bien: el hijo no despliega una
+linea de la madre, **parte de su producto**. Los pasos `10` y `11` de `aplicar_cinco_pasos_proceso_contratacion` entregan y repasan el
+Manual de Operaciones *con el Objetivo Estrategico, la Organizational Strategy y el Position Contract* del puesto (`L269`), que son
+exactamente lo que `construir` compone en sus pasos `3`, `4` y `5` (`L119`): **sin la madre hecha, esos dos pasos no se pueden ejecutar.**
+Y el libro los encadena con palabras: `L117` hace de la People Strategy *la forma en que comunicas la idea*, y `L245` hace de la
+contratacion *el primer y mas esencial medio* para comunicarla. **Lo que queda fuera es procedimiento en los dos lados** (la madre arma
+componentes, el hijo contrata en cinco), **y ninguno repite un paso del otro: no es `REPITE`.** Mi propia razon de la `76` ya concedia el
+dato (*solo entrega y repasa el Manual de Operaciones en el primer dia*); lo que fallo fue la vara con la que lo pese.
+
+**Lo escrito**, en la copia `.v77ext/veredictos_listos.txt` de `.v76ext/veredictos_listos.txt`: las dos lineas del par, `CONTINUA` con
+`madre=construir_estrategia_gente_cuatro_componentes`, **con la vieja encima como comentario `#` y su marca de correccion declarada**; y en
+la copia `.v77ext/aristas_lectura.txt`, la fila `NO SOSTENGO` de `construir` a la contratacion queda como comentario con la misma marca,
+**porque la arista la cablea la aduana por la linea `CONTINUA`, no una fila de lectura**. `D76.15` queda cerrado en la contratacion por
+esta correccion; en el juego (`aplicar_ocho_reglas_juego_personas`) se sostuvo (`ACTA 75` `75.5`) y no se toca.
+
+### 77.2.2. **La arista `fingir` a `recorrer`: LA SOSTENGO, por `D.29`, con veredicto de la lectura `CONTINUA`**
+
+**Es un par que mi lectura de la `76` no miro, y lo leo ahora con los pasos delante.** La condicion del hijo arranca *cuando ya finges que
+tu negocio es el prototipo de 5.000 replicas*, que es el paso `1` de la madre con sus palabras (`cap_11` `L35`); sus pasos `1` y `2` son el
+programa con el que conviertes ese negocio en el modelo para miles de replicas y *el vehiculo con el que construyes tu Franchise
+Prototype* (`cap_13` `L39`, `L41`). **El libro los encadena**: `cap_11` cierra con *go on to the next step, the Business Development
+Process* (`L321`) y `cap_13` abre con la tarea que `cap_11` deja (`L21`). **Procedimiento en los dos lados, sin paso repetido**: alli se
+finge y se juega con seis reglas, aqui se recorren siete pasos. **No es `D.37`**: ningun paso de la madre enumera al hijo, asi que va por
+`D.29` con su razon escrita, y el barrido no levanta el par en ningun sentido (`.v76ext/vecinos_fingir_prototipo_cinco_mil_replicas.json`
+tiene `0` vecinos). **Lo escrito**: una fila `SOSTENGO` en `.v77ext/aristas_lectura.txt`, con madre paso `1`, su tramo y sus lineas.
+
+### 77.2.3. **Lo que cambia: las aristas esperadas, no el orden**
+
+`.v77ext/orden.py` es copia de `.v76ext/orden.py` con las dos sedes cambiadas a mis copias y el rotulo de las aristas; la lista, el
+barrido y `ORDEN` siguen leyendose de `.v76ext/`:
+
+<!-- TALLADO: parcial salida=.v77ext/orden.txt -->
+
+    $ python .v77ext/orden.py > .v77ext/orden.txt; diff <(sed -n '1,29p' .v76ext/orden.txt) <(sed -n '1,29p' .v77ext/orden.txt)
+    14c14
+    < 13  recorrer_siete_pasos_programa_desarrollo_negocio             cap_13 R3        -                                                            479  BLOQUEARIA 1    1     SI
+    ---
+    > 13  recorrer_siete_pasos_programa_desarrollo_negocio             cap_13 R3        fingir_prototipo_cinco_mil_replicas                          479  BLOQUEARIA 1    1     SI
+    23c23
+    < 22  aplicar_cinco_pasos_proceso_contratacion                     cap_18 C3        -                                                            479  BLOQUEARIA 2    2     SI   <- corte del tope
+    ---
+    > 22  aplicar_cinco_pasos_proceso_contratacion                     cap_18 C3        construir_estrategia_gente_cuatro_componentes                479  BLOQUEARIA 2    2     SI   <- corte del tope
+    $ sed -n '25,40p' .v77ext/orden.txt
+    COMPROBACIONES
+      hijo delante de su madre: 0 []
+      D.36, par que levanta en un solo sentido con el que lo levanta entrando antes: 0 []
+      hijo dentro del tope con su madre fuera: 0 []
+      tanda propuesta: 22 de 22; fuera del tope: 
+    
+    ARISTAS ESPERADAS EN LA VUELTA 77, CON LAS SEDES DE LA TAREA 2
+      CONTINUA   aplicar_seis_pasos_sistema_venta                         > medir_sistema_venta_trece_indicadores_benchmark
+      CONTINUA   cambiar_saludo_cliente_dos_ramas                         > cuantificar_impacto_innovacion_6_pasos
+      CONTINUA   construir_estrategia_gente_cuatro_componentes            > aplicar_cinco_pasos_proceso_contratacion
+      LECTURA    recorrer_siete_pasos_programa_desarrollo_negocio         > construir_estrategia_gente_cuatro_componentes
+      LECTURA    fingir_prototipo_cinco_mil_replicas                      > dar_valor_constante_cuatro_publicos
+      LECTURA    fingir_prototipo_cinco_mil_replicas                      > operar_modelo_gente_destreza_minima
+      LECTURA    fingir_prototipo_cinco_mil_replicas                      > documentar_trabajo_manual_operaciones
+      LECTURA    fingir_prototipo_cinco_mil_replicas                      > unificar_color_forma_vestuario_modelo
+      LECTURA    fingir_prototipo_cinco_mil_replicas                      > recorrer_siete_pasos_programa_desarrollo_negocio
+
+**El orden no se mueve**: las tres comprobaciones siguen en `0`, `construir` es la fila `19` y la contratacion la `22`, `fingir` la `5`
+y `recorrer` la `13`. **Las aristas esperadas pasan de `8` a `10`**, como la `ACTA 75` `75.4` dijo antes: `3` por linea `CONTINUA` con
+`madre=` y `7` por lectura, sin solapes. **La linea de `recorrer` a `fingir` no existe** (el barrido no levanta el par), asi que esa arista
+se cablea con `.v77ext/arista.py` al entrar `recorrer`, con `--veredicto CONTINUA`; las seis de `D.37`, con `--veredicto SANO`.
+
+**`T2` CERRADA**, con su commit antes del primer `insertar`.
+

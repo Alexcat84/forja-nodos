@@ -1,0 +1,42 @@
+#   candidato                                                    cap    pza       madre(s)                                                     pob  dijo       vec  lin   listos
+1   hacer_trabajo_futuro_imaginar_negocio                        cap_04 P1        -                                                            479  BLOQUEARIA 1    1     SI
+2   dictar_ritmo_crecimiento_preguntas_escritas                  cap_07 P1        -                                                            479  BLOQUEARIA 8    8     SI
+3   construir_empresa_plantilla_vision_diaria                    cap_08 P1        -                                                            479  BLOQUEARIA 1    1     SI
+4   trazar_modelo_negocio_cliente_primero                        cap_08 P2        -                                                            479  BLOQUEARIA 1    1     SI
+5   fingir_prototipo_cinco_mil_replicas                          cap_11 P1        -                                                            479  ENTRARIA   0    0     SI
+6   dar_valor_constante_cuatro_publicos                          cap_11 P2        fingir_prototipo_cinco_mil_replicas                          479  BLOQUEARIA 3    3     SI
+7   interrogar_negocio_cinco_preguntas                           cap_11 P6        -                                                            479  BLOQUEARIA 1    1     SI
+8   operar_modelo_gente_destreza_minima                          cap_11 P3        fingir_prototipo_cinco_mil_replicas                          479  BLOQUEARIA 4    4     SI
+9   unificar_color_forma_vestuario_modelo                        cap_11 P5        fingir_prototipo_cinco_mil_replicas                          479  BLOQUEARIA 2    2     SI
+10  cambiar_saludo_cliente_dos_ramas                             cap_12 R3        -                                                            479  BLOQUEARIA 6    6     SI
+11  probar_traje_azul_seis_semanas                               cap_12 R3        -                                                            479  BLOQUEARIA 3    3     SI
+12  cuantificar_impacto_innovacion_6_pasos                       cap_12 R5        cambiar_saludo_cliente_dos_ramas                             479  BLOQUEARIA 5    5     SI
+13  recorrer_siete_pasos_programa_desarrollo_negocio             cap_13 R3        fingir_prototipo_cinco_mil_replicas                          479  BLOQUEARIA 1    1     SI
+14  responder_8_preguntas_construir_primary_aim                  cap_14 R5        -                                                            479  BLOQUEARIA 1    1     SI
+15  responder_4_preguntas_estandares_objetivo_estrategico        cap_15 R5        -                                                            479  BLOQUEARIA 2    2     SI
+16  distinguir_tres_tipos_sistemas_negocio                       cap_19 D1        -                                                            479  BLOQUEARIA 3    3     SI
+17  aplicar_seis_pasos_sistema_venta                             cap_19 D2        -                                                            479  BLOQUEARIA 2    2     SI
+18  medir_sistema_venta_trece_indicadores_benchmark              cap_19 D3        aplicar_seis_pasos_sistema_venta                             479  BLOQUEARIA 2    2     SI
+19  construir_estrategia_gente_cuatro_componentes                cap_18 C1        recorrer_siete_pasos_programa_desarrollo_negocio             479  BLOQUEARIA 4    4     SI
+20  documentar_trabajo_manual_operaciones                        cap_11 P4        construir_estrategia_gente_cuatro_componentes, fingir_prototipo_cinco_mil_replicas 479  BLOQUEARIA 2    2     SI
+21  aplicar_ocho_reglas_juego_personas                           cap_18 C2        -                                                            479  ENTRARIA   0    0     SI
+22  aplicar_cinco_pasos_proceso_contratacion                     cap_18 C3        construir_estrategia_gente_cuatro_componentes                479  BLOQUEARIA 2    2     SI   <- corte del tope
+
+COMPROBACIONES
+  hijo delante de su madre: 0 []
+  D.36, par que levanta en un solo sentido con el que lo levanta entrando antes: 0 []
+  hijo dentro del tope con su madre fuera: 0 []
+  tanda propuesta: 22 de 22; fuera del tope: 
+
+ARISTAS ESPERADAS EN LA VUELTA 77, CON LAS SEDES DE LA TAREA 2
+  CONTINUA   aplicar_seis_pasos_sistema_venta                         > medir_sistema_venta_trece_indicadores_benchmark
+  CONTINUA   cambiar_saludo_cliente_dos_ramas                         > cuantificar_impacto_innovacion_6_pasos
+  CONTINUA   construir_estrategia_gente_cuatro_componentes            > aplicar_cinco_pasos_proceso_contratacion
+  LECTURA    recorrer_siete_pasos_programa_desarrollo_negocio         > construir_estrategia_gente_cuatro_componentes
+  LECTURA    fingir_prototipo_cinco_mil_replicas                      > dar_valor_constante_cuatro_publicos
+  LECTURA    fingir_prototipo_cinco_mil_replicas                      > operar_modelo_gente_destreza_minima
+  LECTURA    fingir_prototipo_cinco_mil_replicas                      > documentar_trabajo_manual_operaciones
+  LECTURA    fingir_prototipo_cinco_mil_replicas                      > unificar_color_forma_vestuario_modelo
+  LECTURA    fingir_prototipo_cinco_mil_replicas                      > recorrer_siete_pasos_programa_desarrollo_negocio
+  LECTURA    construir_estrategia_gente_cuatro_componentes            > documentar_trabajo_manual_operaciones
+  CONTINUA con madre= (aristas distintas): 3 | SOSTENGO por lectura: 7 | solapes entre las dos: 0 | aristas esperadas: 10

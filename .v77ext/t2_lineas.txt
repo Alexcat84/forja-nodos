@@ -1,0 +1,18 @@
+$ grep -n -o 'Your People Strategy is the way you communicate this idea' fuentes/gerber_emyth/cap_18.md
+117:Your People Strategy is the way you communicate this idea
+$ grep -n -o 'It starts with your Primary Aim and your Strategic Objective, and continues through your Organizational Strategy (your Organization Chart and the Position Contracts for all of the positions in it) and the Operations Manuals that define the work your people do' fuentes/gerber_emyth/cap_18.md
+119:It starts with your Primary Aim and your Strategic Objective, and continues through your Organizational Strategy (your Organization Chart and the Position Contracts for all of the positions in it) and the Operations Manuals that define the work your people do
+$ grep -n -o 'hiring process became the first and most essential medium for communicating the Boss' fuentes/gerber_emyth/cap_18.md
+245:hiring process became the first and most essential medium for communicating the Boss
+$ grep -n -o 'Reviewing the Operations Manual , including the Strategic Objective, the Organizational Strategy, and the Position Contract of the employee' fuentes/gerber_emyth/cap_18.md
+269:Reviewing the Operations Manual , including the Strategic Objective, the Organizational Strategy, and the Position Contract of the employee
+$ grep -n -o 'is the prototype, or will be the prototype, for 5,000 more just like it' fuentes/gerber_emyth/cap_11.md
+35:is the prototype, or will be the prototype, for 5,000 more just like it
+$ grep -n -o 'go on to the next step, the Business Development Process' fuentes/gerber_emyth/cap_11.md
+321:go on to the next step, the Business Development Process
+$ grep -n -o 'ow you understand the task ahead: to think of your business as though it were the prototype for 5,000 more just like it' fuentes/gerber_emyth/cap_13.md
+21:ow you understand the task ahead: to think of your business as though it were the prototype for 5,000 more just like it
+$ grep -n -o 'into a perfectly organized model for thousands more just like it' fuentes/gerber_emyth/cap_13.md
+39:into a perfectly organized model for thousands more just like it
+$ grep -n -o 'Your Business Development Program is the vehicle through which you can create your Franchise Prototype' fuentes/gerber_emyth/cap_13.md
+41:Your Business Development Program is the vehicle through which you can create your Franchise Prototype
