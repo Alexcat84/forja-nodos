@@ -1192,3 +1192,5 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-26 | cambiar_saludo_cliente_dos_ramas | otro_idioma | Hi, may I help you? | ingles | - |
 | 2026-09-26 | cambiar_saludo_cliente_dos_ramas | otro_idioma | Hi, have you been in here before? | ingles | - |
 | 2026-09-26 | probar_traje_azul_seis_semanas | nombre_largo | La segunda Innovacion de ejemplo del capitulo del proceso de desarrollo del negocio: tres semanas de vestuario marron contra tres semanas de vestuario azul marino, con las ocho prendas de las dos etapas nombradas una a una | castellano | - |
+| 2026-09-26 | cuantificar_impacto_innovacion_6_pasos | nombre_largo | Los seis pasos que el capitulo del proceso de desarrollo del negocio enumera uno a uno para saber si una innovacion de verdad funciono, y no solo suponerlo | castellano | - |
+| 2026-09-26 | cuantificar_impacto_innovacion_6_pasos | otro_idioma | quantification | ingles | - |
