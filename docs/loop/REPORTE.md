@@ -64592,7 +64592,7 @@ falte es exactamente lo que no tiene fila.
 | `T2` | BLOQUEANTE: los pasos `8` y `17` de `dar_elogio_disciplina_igual_critica` salen del campo por `D.54` | **CERRADA** (`75.2`): gate verde tras cada operacion, `18` pasos, `--ver` en `0`, `R9` sin puente nuevo |
 | `T3` | lo que entra es lo que se leyo: las huellas de las `7` fichas | **CERRADA** (`75.3`): identicas a `.v73ext/pasos_y_huellas.txt` |
 | `T4` | las filas de `.v73ext/orden.txt`, una por vez | **CERRADA** (`75.4`): las `7` insertadas, sus `29` lineas pasadas, las `3` aristas esperadas en el grafo |
-| `T5` | el cierre | ABIERTA |
+| `T5` | el cierre | **CERRADA** (`75.5`): censo `430`, `1081`, `1`, `7`, `85` al abrir y `437`, `1111`, `1`, `0`, `92` al cerrar; `0` PUENTE que entraron; guardas y cierre estricto en verde |
 
 ## 75.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
 
@@ -65078,3 +65078,184 @@ la tanda, asi que ningun nodo que estaba al abrir gana hijos. **Entraron las `7`
     insertar: 7 | minimo 341.0 s | mediana 504.4 s | maximo 711.9 s | suma 3570.5 s (0.99 h)
 
 **`T4` CERRADA.**
+
+## 75.5. TAREA 5: EL CIERRE
+
+### 75.5.a. El censo, antes y despues de cada tarea, y al cierre
+
+| momento | nodos | bitacora | pares | bandeja de Grove | `_insertados` de Grove | `procesos/` | sede |
+|---|---:|---:|---:|---:|---:|---|---|
+| al abrir, antes de la TAREA 1 | `430` | `1081` | `1` | `7` | `85` | vacio | `.v75ext/apertura.txt` |
+| antes de la TAREA 2 | `430` | `1081` | `1` | `7` | `85` | vacio | `.v75ext/censo_antes_t2.txt` |
+| despues de la TAREA 2, y antes de la 3 y la 4 | `430` | `1082` | `1` | `7` | `85` | vacio | `.v75ext/censo_antes_t4.txt` |
+| al cierre, despues de la TAREA 4 | `437` | `1111` | `1` | `0` | `92` | vacio | `.v75ext/censo_cierre.txt` |
+
+<!-- TALLADO: parcial salida=.v75ext/censo_cierre.txt -->
+
+    $ bash .v75ext/censo.sh 2>&1; python .v70aud/poblacion.py
+    nodos en dataset/nodos.jsonl        : 437
+    veredictos en bitacora              : 1111
+    pares mutuos                        : 1
+    ls: cannot access 'cuarentena/grove_high_output/*.json': No such file or directory
+    bandeja cuarentena/grove_high_output: 0
+    insertados de grove_high_output     : 92
+    cerrojos en procesos/               : 
+    poblacion: 479 | por sede: {'grafo': 437, 'bandeja': 42} | suma: 479
+    $ git diff --name-status 9a5151a HEAD -- dataset cuarentena bitacora censos config src scripts
+    M	bitacora/VEREDICTOS.jsonl
+    M	censos/denominaciones.md
+    R100	cuarentena/grove_high_output/desarrollar_primer_curso_entrenamiento.json	cuarentena/_insertados/grove_high_output/desarrollar_primer_curso_entrenamiento.json
+    R100	cuarentena/grove_high_output/gestionar_retencion_subordinado_valioso_renuncia.json	cuarentena/_insertados/grove_high_output/gestionar_retencion_subordinado_valioso_renuncia.json
+    R100	cuarentena/grove_high_output/pedir_critica_anonima_curso_entrenamiento_dictado.json	cuarentena/_insertados/grove_high_output/pedir_critica_anonima_curso_entrenamiento_dictado.json
+    R100	cuarentena/grove_high_output/priorizar_lista_entrenamiento_subordinados.json	cuarentena/_insertados/grove_high_output/priorizar_lista_entrenamiento_subordinados.json
+    R100	cuarentena/grove_high_output/reciclar_empleado_ascendido_mas_alla_capacidad.json	cuarentena/_insertados/grove_high_output/reciclar_empleado_ascendido_mas_alla_capacidad.json
+    R100	cuarentena/grove_high_output/responder_primer_aviso_renuncia_subordinado.json	cuarentena/_insertados/grove_high_output/responder_primer_aviso_renuncia_subordinado.json
+    R100	cuarentena/grove_high_output/usar_banco_nueve_preguntas_entrevista.json	cuarentena/_insertados/grove_high_output/usar_banco_nueve_preguntas_entrevista.json
+    M	dataset/nodos.jsonl
+    $ git status --short -- dataset cuarentena bitacora censos config src scripts | wc -l
+    0
+    $ python scripts/retirar_paso.py --ver | tail -1
+      encontradas: 0
+    $ python .v73ext/pasos_y_huellas.py | tail -1
+    fichas de las filas 1 a 7: 7 | pasos: 42 | iguales a su blob en 4318e81: 3 | distintas: 4 | fichero de trabajo distinto de HEAD: 0
+
+**Lo que se movio, medido, y cuadra con lo que el encargo espera**: el grafo gana `7` filas, una por ficha que entro, y **ninguna por la
+TAREA 2** (`430` antes y despues de ella); la bandeja de Grove pierde las `7` (`7` a `0`) y `_insertados` las gana (`85` a `92`),
+**las `7` como `R100`, byte a byte las fichas que la `73` sello** (y la ultima linea de `pasos_y_huellas.py` es la de `.v73ext/pasos_y_huellas.txt`);
+la bitacora gana `30`: `1` de `corregir` en la TAREA 2 y `29` de veredicto de la tanda, las del bloque de la TAREA 4 (`75.4.a`). Los
+pares, `1`. `censos/denominaciones.md` lo escribe la aduana al entrar cada nodo (su salida: *censos escritos: denominaciones*). **Ni
+`src/`, ni `scripts/`, ni `config/`, ni las bandejas de Gerber y de Marquet cambian**, y nada queda sin commitear en esas carpetas. La
+poblacion sigue en `479`, ahora `437` del grafo mas `42` de bandejas, las `22` de Gerber y las `20` de Marquet (`ACTA 73` `73.1`). La
+linea de error de `ls` en el censo es la bandeja de Grove vacia, que el mismo censo cuenta `0`.
+
+### 75.5.b. `PASOS INVENTADOS POR CAPITULO`, de lo que ENTRO
+
+`.v75ext/pasos_inventados.py`, copia de la de la `72` con la lectura cambiada a `.v73ext/fidelidad.tsv` (la que la `ACTA 72` `72.4`
+firmo), la base a `4318e81` (la apertura de la `73`, antes de que su TAREA 2 corrigiera los P en la ficha) y la tanda a las `7` filas:
+
+<!-- TALLADO: parcial salida=.v75ext/pasos_inventados.txt -->
+
+    $ python .v75ext/pasos_inventados.py
+    candidato que ENTRO                                          cap     pasos   T   P corr
+    usar_banco_nueve_preguntas_entrevista                        cap_15      9   7   2    2
+    responder_primer_aviso_renuncia_subordinado                  cap_15      7   6   1    1
+    gestionar_retencion_subordinado_valioso_renuncia             cap_15      6   4   2    2
+    reciclar_empleado_ascendido_mas_alla_capacidad               cap_16      4   4   0    0
+    priorizar_lista_entrenamiento_subordinados                   cap_17      5   5   0    0
+    desarrollar_primer_curso_entrenamiento                       cap_17      7   7   0    0
+    pedir_critica_anonima_curso_entrenamiento_dictado            cap_17      4   3   1    1
+    entraron: 7 de la tanda de 7 | pasos sin fila de lectura: 0 []
+
+    | capitulo | candidatos que entraron | pasos | PUENTE marcados | por ciento | corregidos en la ficha | PUENTE que entro |
+    |---|---:|---:|---:|---:|---:|---:|
+    | `cap_15` | 3 | 22 | 5 | 22,73 | 5 | 0 |
+    | `cap_16` | 1 | 4 | 0 | 0,00 | 0 | 0 |
+    | `cap_17` | 3 | 16 | 1 | 6,25 | 1 | 0 |
+
+**`6` PUENTE marcados en `42` pasos** (`5` en `cap_15`, `0` en `cap_16`, `1` en `cap_17`), las cifras de `.v73ext/contar_fidelidad.txt`;
+**los `6` con el texto de su paso cambiado en la ficha que entro, y `0` PUENTE que entraron** en los tres capitulos, como firmo la
+`ACTA 72` `72.4`. Entraron las `7` y ningun paso sin su fila de lectura. El `22,73` de `cap_15` es el de la marca, no el de lo que
+entro.
+
+**Y la fila de `cap_13` de Scott despues de la TAREA 2** (`.v75ext/cap13_scott.py`: las `70` marcas de `.v74ext/fidelidad.tsv` con la
+unica adjudicacion de la `ACTA 73` que las mueve, el paso `8` de `dar_elogio` a `P`, y para cada PUENTE si su texto sigue hoy en el
+campo):
+
+<!-- TALLADO: parcial salida=.v75ext/cap13_scott.txt -->
+
+    $ python .v75ext/cap13_scott.py
+    contar_cuatro_historias_propias_ver_hueco_intencion  marcas 17 | T 17 P 0 | pasos en 9a5151a 17 | hoy 17 | PUENTE - | que siguen hoy en el grafo: 0
+    dar_elogio_disciplina_igual_critica                  marcas 20 | T 18 P 2 | pasos en 9a5151a 20 | hoy 18 | PUENTE [8, 17] | que siguen hoy en el grafo: 0
+    medir_critica_respuesta_oyente_brujula               marcas 33 | T 33 P 0 | pasos en 9a5151a 33 | hoy 33 | PUENTE - | que siguen hoy en el grafo: 0
+    cap_13 de scott, los tres: pasos marcados 70 | PUENTE 2 | 2,86 por ciento | pasos hoy en el grafo 68 | PUENTE que siguen en el grafo 0
+
+| capitulo | nodos | pasos marcados | PUENTE | por ciento | pasos hoy en el grafo | PUENTE que siguen en el grafo |
+|---|---:|---:|---:|---:|---:|---:|
+| `cap_13` de `scott_radical_candor`, los tres de `d084` | `3` | `70` | `2` | `2,86` | `68` | `0` |
+
+**Los `2` PUENTE de la `ACTA 73` `73.4` estan fuera del campo**: `dar_elogio` tiene `18` pasos y ninguno de los dos textos sigue en
+el. **La guarda `D.30` de estos tres nodos queda sin puente vivo en el grafo.**
+
+### 75.5.c. `D.61`: cada discutible, ejecutado o cerrado
+
+| | que | estado |
+|---|---|---|
+| `D75.1` | la correccion no escribe la cuenta de despues de retirar | **EJECUTADO**: el nodo dice *`20` pasos, `18` y `2`* y la tabla de numeros (`75.2.1`); la cuenta de hoy la mide `.v75ext/cap13_scott.txt` (`18` pasos, `0` PUENTE vivos) y queda para la relectura de la `ACTA 74` |
+| `D75.2` | las comillas tipograficas de las lineas pegadas en el resumen | **EJECUTADO**: pegadas como las imprime `grep -n -o` (`.v75ext/t2_anade.txt`); gate y guiones en verde tras `corregir` (`75.2.1`) |
+| `D75.3` | el `demuestra` del paso `10` de `dar_elogio`, leido como *shows* | **EJECUTADO**: marcado `sostenido` con su tramo de `L273` pegado (`75.2.4`); si cae, es un `P` para la `ACTA 74` y no se corrige hoy |
+| `D75.4` | el metodo de espera de la `72` | **EJECUTADO** siete veces: `7` `.fin`, los `7` en `0`, sin solape; entre cada lanzamiento y su `.fin` no toque dataset, bitacora ni bandeja. **Ningun proceso mio vivo al cerrar** (`75.5.f`) |
+
+**Ninguno abierto.**
+
+### 75.5.d. Las guardas
+
+    $ cat .v75ext/cierre_gate.txt .v75ext/cierre_guiones.txt
+    GATE VERDE.
+      nodos verificados: 437
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+    rc=0
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+    rc=0
+    $ tail -3 .v75ext/cierre_tests.txt
+      total: 379 pruebas, 0 fallos, 0 errores
+    ========================================================================
+    rc=0
+
+La suite corrio en primer plano, de `05:52:59` a `05:56:31`, despues de la ultima fila; `procesos/` vacio al volver.
+
+### 75.5.e. El cierre estricto
+
+Salida entera en `.v75ext/cierre_reporte.txt`, y su codigo en `.v75ext/cierre_reporte_rc.txt`, los dos escritos por la propia
+corrida, en primer plano.
+
+    $ grep -E '^(TALLADO|CENSO|TABLA DE CIERRE|CIERRE|GATE|BARRIDO)' .v75ext/cierre_reporte.txt; cat .v75ext/cierre_reporte_rc.txt .v75ext/cierre_reporte_hora.txt
+    TALLADO DEL REPORTE (D.41): la tabla que dice ser de instrumento
+    TALLADO VERDE: las 157 tabla(s) comprobables son las de su instrumento, celda a celda.
+    CENSO DE RUTAS (D.42): la unidad de la ruta es la celda
+    CENSO VERDE: las 1045 rutas publicadas sostienen lo que dicen sostener.
+    TABLA DE CIERRE DE TAREAS (D.52): toda tabla del reporte declara su instrumento
+    TABLA DE CIERRE VERDE: ninguna celda medible difiere del dato.
+    GATE VERDE.
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+    CIERRE VERDE: las cuatro guardas que muerden, el tallado y el censo. La vigencia corrio y publico su cuenta arriba: es cola, no guarda (D.15).
+    rc=0
+    05:57:25
+    06:01:22
+
+**VERDE, `rc=0`, a la primera**, de `05:57:25` a `06:01:22`. (La salida de error, `.v75ext/cierre_reporte_err.txt`, es la de la suite
+que el cierre corre dentro, prueba a prueba, como en la `74`.)
+
+### 75.5.f. `R5`, medido con las copias de `.v64ext/pegado64.py` y `.v64aud/normal/bloques_mudos.py`
+
+`.v75ext/pegado75.py` y `.v75ext/bloques_mudos75.py`, sacadas con `sed` de los originales con la cabecera del tramo cambiada a la
+`75` (el `diff --strip-trailing-cr` contra el original da `3` y `2` lineas cambiadas, las de la cabecera y el rotulo):
+
+<!-- TALLADO: parcial salida=.v75ext/r5.txt -->
+
+    $ python .v75ext/pegado75.py; python .v75ext/bloques_mudos75.py
+    bloques abiertos con `$` en el tramo de la vuelta 75 : 60
+    bloques que ROMPEN R1 (ACTA 60 60.15)                : 0
+    bloques abiertos con `$`: 28 | comandos `$`: 60 | comandos sin ninguna linea de salida en su bloque: 0
+
+**Cero bloques que rompen `R1` y cero comandos sin salida.** El bloque se anexo con tres lineas de relleno en el sitio de la salida,
+se corrieron los dos instrumentos (`.v75ext/r5.txt`) y la salida sustituyo al relleno; vueltos a correr con el bloque ya entero, salen
+iguales (`.v75ext/r5_bis.txt`). **`R9`** solo se aplica donde marco fidelidad, y en esta vuelta es la TAREA 2 (`75.2.4`): las fichas
+de Grove entraron con la lectura que la `ACTA 72` firmo, que el encargo prohibe tocar.
+
+**Una nota para reproducir `75.2.3`**: `.v75ext/t2_despues.py` compara el dataset de trabajo contra `HEAD`, y se corrio antes del
+commit de la TAREA 2 (`4a5d2b2`), cuando `HEAD` era `3253122`; corrido hoy contra `HEAD` no ve nada. Quien lo reproduzca cambia
+`HEAD` por `3253122` y el dataset por el de `4a5d2b2`.
+
+**Tabla de tareas, al cerrar:**
+
+| tarea | que | estado |
+|---|---|---|
+| `T1` | los registros de la `ACTA 73` | **CERRADA** (`75.1`) |
+| `T2` | BLOQUEANTE: los pasos `8` y `17` de `dar_elogio_disciplina_igual_critica` salen del campo por `D.54` | **CERRADA** (`75.2`): gate verde tras cada operacion, `18` pasos, `--ver` en `0`, `R9` sin puente nuevo |
+| `T3` | lo que entra es lo que se leyo: las huellas de las `7` fichas | **CERRADA** (`75.3`): identicas a `.v73ext/pasos_y_huellas.txt` |
+| `T4` | las filas de `.v73ext/orden.txt`, una por vez | **CERRADA** (`75.4`): las `7` insertadas, sus `29` lineas pasadas, las `3` aristas esperadas en el grafo |
+| `T5` | el cierre | **CERRADA** (`75.5`): censo `430`, `1081`, `1`, `7`, `85` al abrir y `437`, `1111`, `1`, `0`, `92` al cerrar; `0` PUENTE que entraron; guardas y cierre estricto en verde |
+
+**Ningun proceso MIO vivo al cerrar**: los `7` `insertar` volvieron con su `.fin` en `0` antes de lanzar el siguiente, y todo lo demas
+corrio en primer plano. **La bandeja de Grove queda vacia**: el libro entero vive en el grafo o en `_insertados`. **No escribo
+`PARA_ALEXIS.md`: nada me obliga a parar.** Gerber y Marquet no se tocaron.

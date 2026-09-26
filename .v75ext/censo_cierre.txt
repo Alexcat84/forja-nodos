@@ -1,0 +1,26 @@
+$ bash .v75ext/censo.sh 2>&1; python .v70aud/poblacion.py
+nodos en dataset/nodos.jsonl        : 437
+veredictos en bitacora              : 1111
+pares mutuos                        : 1
+ls: cannot access 'cuarentena/grove_high_output/*.json': No such file or directory
+bandeja cuarentena/grove_high_output: 0
+insertados de grove_high_output     : 92
+cerrojos en procesos/               : 
+poblacion: 479 | por sede: {'grafo': 437, 'bandeja': 42} | suma: 479
+$ git diff --name-status 9a5151a HEAD -- dataset cuarentena bitacora censos config src scripts
+M	bitacora/VEREDICTOS.jsonl
+M	censos/denominaciones.md
+R100	cuarentena/grove_high_output/desarrollar_primer_curso_entrenamiento.json	cuarentena/_insertados/grove_high_output/desarrollar_primer_curso_entrenamiento.json
+R100	cuarentena/grove_high_output/gestionar_retencion_subordinado_valioso_renuncia.json	cuarentena/_insertados/grove_high_output/gestionar_retencion_subordinado_valioso_renuncia.json
+R100	cuarentena/grove_high_output/pedir_critica_anonima_curso_entrenamiento_dictado.json	cuarentena/_insertados/grove_high_output/pedir_critica_anonima_curso_entrenamiento_dictado.json
+R100	cuarentena/grove_high_output/priorizar_lista_entrenamiento_subordinados.json	cuarentena/_insertados/grove_high_output/priorizar_lista_entrenamiento_subordinados.json
+R100	cuarentena/grove_high_output/reciclar_empleado_ascendido_mas_alla_capacidad.json	cuarentena/_insertados/grove_high_output/reciclar_empleado_ascendido_mas_alla_capacidad.json
+R100	cuarentena/grove_high_output/responder_primer_aviso_renuncia_subordinado.json	cuarentena/_insertados/grove_high_output/responder_primer_aviso_renuncia_subordinado.json
+R100	cuarentena/grove_high_output/usar_banco_nueve_preguntas_entrevista.json	cuarentena/_insertados/grove_high_output/usar_banco_nueve_preguntas_entrevista.json
+M	dataset/nodos.jsonl
+$ git status --short -- dataset cuarentena bitacora censos config src scripts | wc -l
+0
+$ python scripts/retirar_paso.py --ver | tail -1
+  encontradas: 0
+$ python .v73ext/pasos_y_huellas.py | tail -1
+fichas de las filas 1 a 7: 7 | pasos: 42 | iguales a su blob en 4318e81: 3 | distintas: 4 | fichero de trabajo distinto de HEAD: 0
