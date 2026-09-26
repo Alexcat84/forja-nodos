@@ -1,0 +1,42 @@
+fila 06, dar_valor_constante_cuatro_publicos, lineas --veredicto: 3
+  --veredicto trazar_modelo_negocio_cliente_primero|SANO|Ajenos de dos capitulos: el vecino, de cap_08, traza el modelo desde el retrato del cliente (L109 a L121); este da valor a los cuatro publicos del prototipo (L59 a L81). Los dos hablan de lo que el cliente percibe, pero ninguno usa el producto del otro ni nombra al otro en una linea.
+  --veredicto documentar_trabajo_manual_operaciones|SANO|Hermanos: son las reglas 1 y 4 de la serie de fingir_prototipo_cinco_mil_replicas (L45, L51), partes de la misma cabeza. La similitud de 0,406, por encima de 0,4, se lee primero y no es gemelo: uno da valor y el otro documenta el trabajo; ninguno usa el producto del otro.
+  --veredicto unificar_color_forma_vestuario_modelo|SANO|Hermanos: son las reglas 1 y 6 de la misma serie (L45, L55). La similitud de 0,419, por encima de 0,4, se lee primero y no es gemelo: uno da valor a cuatro publicos, el otro unifica color y forma; ninguno usa el producto del otro.
+inicio 2026-09-26 10:19:07
+======================================================================
+ADUANA DE INSERCION, candidato 'dar_valor_constante_cuatro_publicos'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (442 del grafo mas 37 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 3. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino trazar_modelo_negocio_cliente_primero  [Trazar el modelo de tu negocio arrancando del retrato del cliente y no del retrato del negocio]
+    levantada por: similitud_texto
+    similitud_texto    0.395 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.564 (umbral 0.60)
+    paso 1 del candidato contra paso 1 de trazar_modelo_negocio_cliente_primero
+
+  vecino documentar_trabajo_manual_operaciones  [Documentar todo el trabajo del modelo en el Manual de Operaciones, con los tres contenidos que el libro le exige]
+    levantada por: similitud_texto
+    similitud_texto    0.406 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.466 (umbral 0.60)
+    paso 3 del candidato contra paso 1 de documentar_trabajo_manual_operaciones
+
+  vecino unificar_color_forma_vestuario_modelo  [Unificar el codigo de color, forma y vestuario del modelo, y llevarlo a los sitios que el libro enumera]
+    levantada por: similitud_texto
+    similitud_texto    0.419 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.423 (umbral 0.60)
+    paso 1 del candidato contra paso 3 de unificar_color_forma_vestuario_modelo
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 443
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 3
+
+======================================================================
+fin 2026-09-26 10:25:13 | codigo de salida 0 | 366.0 s

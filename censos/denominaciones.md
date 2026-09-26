@@ -1175,3 +1175,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-26 | fingir_prototipo_cinco_mil_replicas | nombre_largo | La cabeza de la serie del Prototipo de Franquicia: el fingimiento de las 5.000 replicas perfectas y las seis reglas del juego, enumeradas una a una por el propio libro | castellano | - |
 | 2026-09-26 | fingir_prototipo_cinco_mil_replicas | otro_idioma | Franchise Prototype | ingles | - |
 | 2026-09-26 | fingir_prototipo_cinco_mil_replicas | otro_idioma | the franchise game | ingles | - |
+| 2026-09-26 | dar_valor_constante_cuatro_publicos | nombre_largo | La regla 1 del Prototipo de Franquicia: el valor es lo que la gente percibe, la pregunta que todo emprendedor tiene que hacerse, y las formas concretas de valor que el libro enumera | castellano | - |
+| 2026-09-26 | dar_valor_constante_cuatro_publicos | otro_idioma | consistent value | ingles | - |
+| 2026-09-26 | dar_valor_constante_cuatro_publicos | otro_idioma | beyond what they expect | ingles | - |
