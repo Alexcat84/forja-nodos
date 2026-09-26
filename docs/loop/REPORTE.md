@@ -65259,3 +65259,7 @@ commit de la TAREA 2 (`4a5d2b2`), cuando `HEAD` era `3253122`; corrido hoy contr
 **Ningun proceso MIO vivo al cerrar**: los `7` `insertar` volvieron con su `.fin` en `0` antes de lanzar el siguiente, y todo lo demas
 corrio en primer plano. **La bandeja de Grove queda vacia**: el libro entero vive en el grafo o en `_insertados`. **No escribo
 `PARA_ALEXIS.md`: nada me obliga a parar.** Gerber y Marquet no se tocaron.
+
+**El hook del commit del cierre** (`d02ed21`, salida en `.v75ext/hook_t5.txt`) sale en verde y cuenta `1050` rutas donde mi corrida del
+cierre estricto conto `1045`: las de mas son las que `75.5.e` y `75.5.f` publicaron despues de esa corrida. Las dos cifras son ciertas
+de su momento, y en ninguna cae una ruta.
