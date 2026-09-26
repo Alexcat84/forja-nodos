@@ -1,0 +1,1 @@
+nodos al abrir: 410 | hoy: 430 | nuevos: 20 | nuevos que son de las 20 filas: 20 | viejos que cambian: 0 | cambios fuera de nodos_siguientes de una madre: 0

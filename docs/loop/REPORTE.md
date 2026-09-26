@@ -63446,3 +63446,48 @@ La aduana de hoy: **ENTRARIA** con `0` vecino(s) contra `479`; lineas `--veredic
     hoy 0 vecinos, barrido de la 71 0 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (429 grafo, 50 bandejas), en la 71 479 (410, 69)
 
 **Entra limpia, sin vecinos, como en el barrido de la `71`**; sin lineas y sin aristas. **Con ella, `cap_14` queda entero en el grafo, y las `20` filas de `.v71ext/orden.txt` estan dentro.**
+
+
+**`T3` CERRADA: las `20` filas dentro**, cada una con su commit de insercion y su commit de fila, en el orden de
+`.v71ext/orden.txt`. **Ninguna aduana levanto un vecino sin linea, ninguna `CAERIA` y ningun error**: en las `20`, los vecinos
+de hoy son los del barrido de la `71`, con sus tres seniales al digito (`.v72ext/contra_<fila>.txt`, una por fila). Ningun
+`insertar` quedo vivo: cada uno volvio con su `.fin` antes de lanzar el siguiente.
+
+## 72.4. TAREA 4: LAS ARISTAS DE LA TANDA, POR INSTRUMENTO
+
+Copias de `.v70ext/aristas_vuelta.py` y `.v70ext/nodos_viejos.py`, con la apertura cambiada a la de la `72` (linea `1027` de la
+bitacora, `4c7a838` para el dataset) y las sedes a `.v71ext/`; lo dicen en su cabecera.
+
+<!-- TALLADO: parcial salida=.v72ext/aristas_vuelta.txt -->
+
+    $ python .v72ext/aristas_vuelta.py
+    registros de la vuelta en la bitacora: 54
+    EN GRAFO   veredicto CONTINUA  definir_entorno_grupo_clientes_proveedores_competidores > examinar_entorno_expectativas_tecnologia_proveedores_grupos
+    EN GRAFO   veredicto CONTINUA  definir_entorno_grupo_clientes_proveedores_competidores > examinar_demanda_entorno_dos_marcos_temporales
+    EN GRAFO   veredicto CONTINUA  definir_entorno_grupo_clientes_proveedores_competidores > examinar_entorno_expectativas_tecnologia_proveedores_grupos
+    EN GRAFO   veredicto CONTINUA  definir_entorno_grupo_clientes_proveedores_competidores > examinar_demanda_entorno_dos_marcos_temporales
+    EN GRAFO   lectura declarada   planificar_tres_pasos_demanda_estado_brecha > examinar_demanda_entorno_dos_marcos_temporales
+    EN GRAFO   lectura declarada   planificar_tres_pasos_demanda_estado_brecha > determinar_estado_presente_capacidades_proyectos_merma
+    EN GRAFO   lectura declarada   planificar_tres_pasos_demanda_estado_brecha > cerrar_brecha_dos_preguntas_estrategia
+    EN GRAFO   lectura declarada   elegir_modo_control_motivacion_factor_cua > escalonar_complejidad_puesto_empleado_nuevo
+    registros con arista: 8 | aristas DISTINTAS: 6 | en el grafo: 6 | en cola: 0 (un par CONTINUA leido desde sus dos lados deja dos registros y una sola arista)
+    esperadas: 6 | esperadas que viven en el grafo: 6 | esperadas sin registro: 0 | registradas no esperadas: 0
+
+<!-- TALLADO: parcial salida=.v72ext/aristas_adjudicadas.txt -->
+
+    $ python -c "<los registros con arista de la vuelta: veredicto, razon y sin adjudicar; y los veredictos por clase>"
+    registros con arista: 8 | con veredicto CONTINUA: 8 | con razon escrita: 8 | sin adjudicar: 0
+    veredictos de la vuelta por clase: [('CONTINUA', 8), ('SANO', 46)]
+
+<!-- TALLADO: parcial salida=.v72ext/nodos_viejos.txt -->
+
+    $ python .v72ext/nodos_viejos.py
+    nodos al abrir: 410 | hoy: 430 | nuevos: 20 | nuevos que son de las 20 filas: 20 | viejos que cambian: 0 | cambios fuera de nodos_siguientes de una madre: 0
+
+**Se esperaban `6` (la ultima linea de `.v71ext/orden.txt`) y viven `6` en el grafo, las `6` adjudicadas `CONTINUA` con su
+razon, `0` en cola y `0` no esperadas.** Los `8` registros son `6` aristas: las dos de `definir_entorno_grupo_clientes_proveedores_competidores`
+dejan dos registros cada una, la linea de la madre (fila `4`) y la del hijo (filas `5` y `6`). **Ningun nodo viejo cambia**: las
+tres madres de la tanda son de la propia tanda, asi que ni el `nodos_siguientes` de un viejo se mueve. **La bitacora gana `54`
+registros, las `50` lineas (`46` `SANO` y `4` `CONTINUA`) mas las `4` aristas por lectura.**
+
+**`T4` CERRADA.**
