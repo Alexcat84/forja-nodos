@@ -66221,3 +66221,35 @@ La aduana de hoy: **ENTRARIA** con `0` vecino(s) contra `479`; lineas `--veredic
     hoy 0 vecinos, barrido de la 76 0 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (441 grafo, 38 bandejas), en la 76 479 (437, 42)
 
 **Entra sin vecinos, como en el barrido de la `76`**, y la tabla de arriba sale vacia por eso; la poblacion, `479` (`441` mas `38`). **Es la cabeza de las cinco aristas por lectura de la tanda** (las cuatro de `D.37` y la de `D.29` a `recorrer`, `77.2.2`): ninguna se cablea aqui, cada una al entrar su hijo. Bitacora sin movimiento: `1122`.
+
+### Fila `6`: `dar_valor_constante_cuatro_publicos`, **INSERTADO** en `366.0` s, codigo `0`, commit `6227ca73`
+
+La aduana de hoy: **BLOQUEARIA** con `3` vecino(s) contra `479`; lineas `--veredicto` pasadas: `3`. Salida entera en `.v77ext/insertar_06_dar_valor_constante_cuatro_publicos.txt`.
+
+<!-- TALLADO: parcial salida=.v77ext/insertar_06_dar_valor_constante_cuatro_publicos.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `trazar_modelo_negocio_cliente_primero` | similitud_texto | 0.395 | 0.000 | 0.564 | SANO |
+| `documentar_trabajo_manual_operaciones` | similitud_texto | 0.406 | 0.000 | 0.466 | SANO |
+| `unificar_color_forma_vestuario_modelo` | similitud_texto | 0.419 | 0.000 | 0.423 | SANO |
+
+    $ python .v77ext/contra_barrido.py 06 dar_valor_constante_cuatro_publicos
+    hoy 3 vecinos, barrido de la 76 3 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (442 grafo, 37 bandejas), en la 76 479 (437, 42)
+
+**La arista por lectura `D.37` de la fila, cableada en el acto con los dos extremos vivos**: `fingir_prototipo_cinco_mil_replicas > dar_valor_constante_cuatro_publicos`, paso `5` de la madre (`cap_11` `L45`), `--veredicto SANO` por `D.53`. Salida entera en `.v77ext/arista_fingir_prototipo_cinco_mil_replicas__dar_valor_constante_cuatro_publicos.txt`:
+
+    $ python forja.py arista --madre fingir_prototipo_cinco_mil_replicas --hijo dar_valor_constante_cuatro_publicos --paso 5 --razon <fila 30> --veredicto SANO --cita-veredicto <fila 30>
+    DECLARACION DE ARISTA POR LECTURA (D.37)
+      madre: fingir_prototipo_cinco_mil_replicas
+      hijo : dar_valor_constante_cuatro_publicos
+      paso citado de la madre: 5
+        Regla 1: el modelo dara valor constante a tus clientes, empleados, proveedores y prestamistas, por encima de lo que esperan.
+      señales del par: familia_id 0.0, paso_contra_nodo 0.571, similitud_texto 0.33
+        NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+    GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: fingir_prototipo_cinco_mil_replicas > dar_valor_constante_cuatro_publicos
+      razon en bitacora/VEREDICTOS.jsonl
+
+
+**Los tres vecinos son los de su bloque y las tres lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `76`, las tres seniales al digito; la poblacion, `479` (`442` mas `37`). **Primera de las `10` aristas esperadas en el grafo.** Bitacora de `1122` a `1126`: sus tres lineas SANO y la de la arista.
