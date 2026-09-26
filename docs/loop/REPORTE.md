@@ -63680,3 +63680,76 @@ codigo `0`:
 `cap_17`, que se preparan en la vuelta siguiente; despues, Gerber y Marquet, en ese orden.
 
 **`R5` vuelto a medir con el reporte ya entero** (`pegado72.py` y `bloques_mudos72.py` otra vez, salida en `.v72ext/r5_final.txt`): `47` comandos en `35` bloques, con `0` rotos y `0` mudos; el de mas es el bloque del cierre estricto. **El commit del cierre, `4b6382a0`, paso el hook en verde** (salida en `.v72ext/hook_t5.txt`).
+
+
+# VUELTA 73 DE LA LINEA SERIAL, lote 7 (`grove_high_output`), **CLASE INSERCION**: las `7` fichas que quedan de Grove (`cap_15`, `cap_16` y `cap_17`) dejadas listas para insertar. **Ninguna insertada**
+
+*Encargo escrito por el auditor al cerrar la `ACTA 71`. Clase impresa por `python scripts/deuda.py --clase 73` (`LIBRE`, van
+`4` de `5` desde la `69`, `73.0`). **Ningun `insertar` en esta vuelta, ni en primer plano ni de fondo, y ningun barrido vivo
+cuando el turno termine.***
+
+**REPORTE ABIERTO AL EMPEZAR** (`EXTRACTOR.md` 3). Las filas se llenan al cerrarse cada tarea. Si la vuelta se corta, lo que
+falte es exactamente lo que no tiene fila.
+
+| tarea | que | estado |
+|---|---|---|
+| `T1` | los registros de la `ACTA 71` | **CERRADA** (`73.1`) |
+| `T2` | la fidelidad entera de las `7` | |
+| `T3` | el barrido de las `7`, sobre las fichas ya corregidas | |
+| `T4` | los veredictos, las aristas y el orden | |
+| `T5` | el cierre: censo, `PASOS INVENTADOS`, huellas, `D.61`, `R5`, guardas, commit | |
+
+## 73.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
+
+**Lo pendiente, commiteado primero** (`EXTRACTOR.md` 1): `TABLERO.jsonl`, `loop.log`, `ultimo_auditor.json` y
+`ultimo_extractor.json` del arnes, empujados como `4318e81`, hook verde.
+
+<!-- TALLADO: parcial salida=.v73ext/apertura.txt -->
+
+    $ git rev-parse HEAD && git log -1 --format=%cI && git rev-parse --abbrev-ref HEAD
+    4318e81681aba466b13d4450c020e3c833cc2e0e
+    2026-09-26T01:54:24-04:00
+    extraccion-mundo-11
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 430
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+    $ bash .v73ext/censo.sh
+    nodos en dataset/nodos.jsonl        : 430
+    veredictos en bitacora              : 1081
+    pares mutuos                        : 1
+    bandeja cuarentena/grove_high_output: 7
+    insertados de grove_high_output     : 85
+    cerrojos en procesos/               : 
+    $ python scripts/deuda.py --clase 73
+    LIBRE
+      van 4 de 5 desde la ultima de saneamiento (la 69), con 55 deuda(s) esperando
+    $ python .v70aud/poblacion.py
+    poblacion: 479 | por sede: {'grafo': 430, 'bandeja': 49} | suma: 479
+    $ python .v72aud/normal/siete.py | tail -2
+    fichas por capitulo: {'cap_15': 3, 'cap_16': 1, 'cap_17': 3} | suma: 7
+    pasos por capitulo: {'cap_15': 22, 'cap_16': 4, 'cap_17': 16} | suma: 42
+
+**Coincide con la `ACTA 71` `71.1`** (`430`, `1081`, `1`, `7`, `85`; poblacion `479`, `430` del grafo mas `49` de bandejas; `7`
+fichas y `42` pasos), y **`procesos/` esta vacio**. `.v73ext/censo.sh` es copia de `.v72ext/censo.sh` con el comentario cambiado,
+y se vuelve a correr al cerrar. La salida entera de `siete.py`, una ficha por linea, en `.v73ext/siete.txt`: esa es la lista de las
+`7` de esta vuelta.
+
+## 73.D. **LOS DISCUTIBLES, MARCADOS ANTES DE SABER SI ACIERTO** (`EXTRACTOR.md` 8)
+
+| | que | por que lo marco |
+|---|---|---|
+| `D73.1` | **el barrido corre con `FORJA_PROCESOS_SIMILITUD=3`, como en la `71`**, cinco fichas a la vez y las dos que quedan al soltarse plaza, aunque desde `27290c6` el presupuesto unico de `src/presupuesto.py` ya pone el tope de toda la maquina | la copia de `barrer.sh` que pide el encargo la trae; con el presupuesto unico solo puede bajar el reparto de cada barrido, no subirlo, y el resultado no depende del reparto (`src/aduana.py`, comentario de `similitudes_repartidas`) |
+| `D73.2` | **el barrido se lanza de una vez con las `7`, despues de la ultima correccion de ficha de los tres capitulos**, y no `cap_17` primero | es la correccion declarada de `D71.2`: la poblacion es grafo mas bandejas, y una ficha de `cap_15` corregida despues de que un barrido de `cap_17` la midiera dejaria ese barrido sin ser suyo (`d031`). El encargo pide `cap_17` antes solo *si no cabe todo* |
+
+## 73.1. TAREA 1: LOS REGISTROS DE LA `ACTA 71`, SIN REABRIR EL ARGUMENTO (`D.47`)
+
+| que | donde |
+|---|---|
+| **las filas de `.v71ext/orden.txt` dentro, una por vez, sin solape y en su orden**; sus lineas de veredicto iguales letra a letra a las preparadas, sobre los pares del barrido del auditor, con sus seniales y sus clases selladas; sus aristas iguales par a par; ningun nodo viejo cambia | `ACTA 71` `71.3` |
+| **mis seis discutibles se sostienen**, `D72.1` a `D72.6` | `71.5` |
+| **la muestra de los SANO se sostiene entera**; lo que entro lleva cero PUENTE en los seis capitulos | `71.5`, `71.4` |
+| **cero caidas mias, ni de prosa**, y `R5` cumplido | `71.2`, `71.0` |
+| **una caida del auditor**: `R8` roto en su encargo de la `72`, su racha `AUDITOR` sube, y su remedio se escala | `71.9`, `71.11` |
+
+**`T1` CERRADA.**

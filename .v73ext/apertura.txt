@@ -1,0 +1,23 @@
+$ git rev-parse HEAD && git log -1 --format=%cI && git rev-parse --abbrev-ref HEAD
+4318e81681aba466b13d4450c020e3c833cc2e0e
+2026-09-26T01:54:24-04:00
+extraccion-mundo-11
+$ python forja.py gate
+GATE VERDE.
+  nodos verificados: 430
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+$ bash .v73ext/censo.sh
+nodos en dataset/nodos.jsonl        : 430
+veredictos en bitacora              : 1081
+pares mutuos                        : 1
+bandeja cuarentena/grove_high_output: 7
+insertados de grove_high_output     : 85
+cerrojos en procesos/               : 
+$ python scripts/deuda.py --clase 73
+LIBRE
+  van 4 de 5 desde la ultima de saneamiento (la 69), con 55 deuda(s) esperando
+$ python .v70aud/poblacion.py
+poblacion: 479 | por sede: {'grafo': 430, 'bandeja': 49} | suma: 479
+$ python .v72aud/normal/siete.py | tail -2
+fichas por capitulo: {'cap_15': 3, 'cap_16': 1, 'cap_17': 3} | suma: 7
+pasos por capitulo: {'cap_15': 22, 'cap_16': 4, 'cap_17': 16} | suma: 42
