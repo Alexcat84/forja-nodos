@@ -1142,3 +1142,5 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-26 | elegir_estilo_direccion_madurez_relevante_tarea | otro_idioma | task-relevant maturity | ingles | - |
 | 2026-09-26 | decidir_amistad_subordinado_prueba_revision_dificil | nombre_largo | La pregunta de si conviene la amistad entre supervisor y subordinado, con sus pros y sus contras, y la prueba de imaginar una revision de desempeno dificil para decidirla | castellano | - |
 | 2026-09-26 | decidir_amistad_subordinado_prueba_revision_dificil | otro_idioma | a test | ingles | - |
+| 2026-09-26 | entregar_evaluacion_desempeno_tres_claves | nombre_largo | Las tres L que el autor pide tener en cuenta al entregar una revision de desempeno: Level (nivelar con franqueza), Listen (escuchar con toda la capacidad sensorial) y Leave yourself out (dejar fuera las propias emociones) | castellano | - |
+| 2026-09-26 | entregar_evaluacion_desempeno_tres_claves | otro_idioma | three L's: level, listen, and leave yourself out | ingles | - |
