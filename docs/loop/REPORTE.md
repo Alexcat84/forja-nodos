@@ -64892,3 +64892,23 @@ Las copias de la `72`, con las rutas cambiadas (el `diff` contra su original da 
     cerrojos en procesos/               : 
 
 Es el de despues de la TAREA 2 (`75.2.3`): `430`, `1082`, `1`, `7`, `85`, y `procesos/` vacio.
+
+### Fila `1`: `usar_banco_nueve_preguntas_entrevista`, **INSERTADO** en `604.3` s, codigo `0`, commit `3f83d062`
+
+La aduana de hoy: **BLOQUEARIA** con `6` vecino(s) contra `479`; lineas `--veredicto` pasadas: `6`. Salida entera en `.v75ext/insertar_01_usar_banco_nueve_preguntas_entrevista.txt`.
+
+<!-- TALLADO: parcial salida=.v75ext/insertar_01_usar_banco_nueve_preguntas_entrevista.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `identificar_disparadores_propios_reaccion` | paso_contra_nodo | 0.175 | 0.000 | 0.607 | SANO |
+| `responder_primer_aviso_renuncia_subordinado` | similitud_texto | 0.394 | 0.000 | 0.458 | SANO |
+| `gestionar_retencion_subordinado_valioso_renuncia` | similitud_texto | 0.412 | 0.000 | 0.426 | SANO |
+| `entregar_evaluacion_desempeno_tres_claves` | similitud_texto | 0.369 | 0.000 | 0.422 | SANO |
+| `pedir_critica_anonima_curso_entrenamiento_dictado` | similitud_texto | 0.383 | 0.000 | 0.419 | SANO |
+| `planificar_tres_pasos_demanda_estado_brecha` | similitud_texto | 0.355 | 0.000 | 0.402 | SANO |
+
+    $ python .v75ext/contra_barrido.py 01 usar_banco_nueve_preguntas_entrevista
+    hoy 6 vecinos, barrido de la 73 6 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (430 grafo, 49 bandejas), en la 73 479 (430, 49)
+
+**Los seis vecinos son los de su bloque y las seis lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `73`, las tres seniales al digito; la poblacion, la misma (`430` mas `49`). Sin aristas en esta fila: no tiene madre ni hijo en la tanda. Bitacora de `1082` a `1088`, sus seis lineas SANO.
