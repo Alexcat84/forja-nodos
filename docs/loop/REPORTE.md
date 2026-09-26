@@ -63289,3 +63289,32 @@ La aduana de hoy: **ENTRARIA** con `0` vecino(s) contra `479`; lineas `--veredic
     hoy 0 vecinos, barrido de la 71 0 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (420 grafo, 59 bandejas), en la 71 479 (410, 69)
 
 **Entra limpia, sin vecinos, como en el barrido de la `71`**; sin lineas. Es madre de la fila `12`, cuya arista por lectura se cablea al entrar el hijo.
+
+### Fila `12`: `escalonar_complejidad_puesto_empleado_nuevo`, **INSERTADO** en `665.2` s, codigo `0`, commit `94946f86`
+
+La aduana de hoy: **ENTRARIA** con `0` vecino(s) contra `479`; lineas `--veredicto` pasadas: `0`. Salida entera en `.v72ext/insertar_12_escalonar_complejidad_puesto_empleado_nuevo.txt`.
+
+<!-- TALLADO: parcial salida=.v72ext/insertar_12_escalonar_complejidad_puesto_empleado_nuevo.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+
+**Arista por lectura cableada con la madre ya en el grafo** (`D.29`, la de la `ACTA 70` `70.3`): `elegir_modo_control_motivacion_factor_cua > escalonar_complejidad_puesto_empleado_nuevo`, `--paso 4`. Su fila (linea `12` de `.v71ext/aristas_lectura.txt`) cita *madre pasos 4 y 5*; el instrumento toma un solo paso, y **elijo el `4`** (DISCUTIBLE `D72.6`, marcado aqui antes del cierre): es el cuadro de cuatro cuadrantes, el modelo que el hijo aplica (*Let's apply our model*, `L63`); es el primero del tramo que cita mi fila, como la `65` cableo el primero de *madre pasos 4 a 7*; y es el unico paso que mi fila y la del auditor (*pasos 1, 2 y 4*, `.v71aud/aristas_lectura.tsv` linea `16`) citan las dos. La cabecera del instrumento dice `D.37` para toda arista por lectura; la razon escrita es la `D.29` de su fila. Salida entera en `.v72ext/arista_elegir_modo_control_motivacion_factor_cua__escalonar_complejidad_puesto_empleado_nuevo.txt`:
+
+    $ python forja.py arista --madre elegir_modo_control_motivacion_factor_cua --hijo escalonar_complejidad_puesto_empleado_nuevo --paso 4 --razon <fila 12> --veredicto CONTINUA --cita-veredicto <fila 12>
+    DECLARACION DE ARISTA POR LECTURA (D.37)
+      madre: elegir_modo_control_motivacion_factor_cua
+      hijo : escalonar_complejidad_puesto_empleado_nuevo
+      paso citado de la madre: 4
+        Cruza las dos variables en un cuadro de cuatro cuadrantes: motivacion, de interes propio a interes de grupo, contra factor CUA, de bajo a alto.
+      señales del par: familia_id 0.0, paso_contra_nodo 0.472, similitud_texto 0.225
+        NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+    GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: elegir_modo_control_motivacion_factor_cua > escalonar_complejidad_puesto_empleado_nuevo
+      razon en bitacora/VEREDICTOS.jsonl
+
+
+    $ python .v72ext/contra_barrido.py 12 escalonar_complejidad_puesto_empleado_nuevo
+    hoy 0 vecinos, barrido de la 71 0 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (421 grafo, 58 bandejas), en la 71 479 (410, 69)
+
+**Entra limpia, sin vecinos, como en el barrido de la `71`**; sin lineas. La arista de lectura, cableada (bloque de arriba). **Van `6` de las `6` aristas esperadas**, y **`cap_11` queda entero en el grafo.**
