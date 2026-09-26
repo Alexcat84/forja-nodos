@@ -8688,3 +8688,28 @@ CENSO VERDE: las 1061 rutas publicadas sostienen lo que dicen sostener.
 CIERRE VERDE: el tallado y el censo de rutas.
 [pre-commit] verde
 [2026-09-26 08:59:51] VUELTA 1 : AUDITOR (claude-opus-5-5, esfuerzo high)
+[2026-09-26 09:26:06] auditor listo (USD 9.1424924), 1574s, intento 1 de 7
+[2026-09-26 09:26:06]   sello de la apertura ciega verificado: intacto tras el turno
+[2026-09-26 09:26:08]   tablero puesto al dia al cerrar la vuelta 1 (d102)
+GUARDA DEL TABLERO (D.49)
+  linea de este arbol : serial
+  libro que declara el encargo : gerber_emyth
+  libro que el orden le da (D.51): gerber_emyth
+    prioridad 2 del orden del mundo 11. 'gerber_emyth' esta COSECHADO y sin dueño: su trabajo ya llego a esta rama, asi que se continua desde el capitulo 
+
+TABLERO VERDE: la vuelta puede abrir.
+[2026-09-26 09:26:09]   tablero comprobado: la vuelta puede abrir (D.49, D.51)
+[2026-09-26 09:26:09] VUELTA 2 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
+[2026-09-26 09:26:09] VUELTA 2 : EXTRACTOR (claude-opus-5-5, esfuerzo high)
+[2026-09-26 09:27:00] arranque: rama extraccion-mundo-11, MODO_INSERCION=insertar
+GUARDA DEL TABLERO (D.49)
+  linea de este arbol : serial
+  libro que declara el encargo : gerber_emyth
+  libro que el orden le da (D.51): gerber_emyth
+    prioridad 2 del orden del mundo 11. 'gerber_emyth' esta COSECHADO y sin dueño: su trabajo ya llego a esta rama, asi que se continua desde el capitulo 
+
+TABLERO VERDE: la vuelta puede abrir.
+[2026-09-26 09:27:01]   tablero comprobado: la vuelta puede abrir (D.49, D.51)
+[2026-09-26 09:27:01] ROL INICIAL FORZADO por EMPEZAR_EN: extractor (gana sobre la medicion)
+[2026-09-26 09:27:01] VUELTA 1 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
+[2026-09-26 09:27:01] VUELTA 1 : EXTRACTOR (claude-opus-5-5, esfuerzo high)
