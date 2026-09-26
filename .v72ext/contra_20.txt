@@ -1,0 +1,1 @@
+hoy 0 vecinos, barrido de la 71 0 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (429 grafo, 50 bandejas), en la 71 479 (410, 69)

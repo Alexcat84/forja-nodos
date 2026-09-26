@@ -63432,3 +63432,17 @@ La aduana de hoy: **BLOQUEARIA** con `1` vecino(s) contra `479`; lineas `--vered
     hoy 1 vecinos, barrido de la 71 1 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (428 grafo, 51 bandejas), en la 71 479 (410, 69)
 
 **El vecino es el de su bloque y la linea se paso tal cual**: ni nuevos ni caidos contra el barrido de la `71`, las tres seniales al digito. El vecino (`usar_banco_nueve_preguntas_entrevista`, de `cap_15`) sigue en la bandeja y no se toca (LO QUE NO HACES). Sin aristas en esta fila.
+
+### Fila `20`: `guiar_subordinado_etapas_resistencia_desempeno`, **INSERTADO** en `536.3` s, codigo `0`, commit `9805e44a`
+
+La aduana de hoy: **ENTRARIA** con `0` vecino(s) contra `479`; lineas `--veredicto` pasadas: `0`. Salida entera en `.v72ext/insertar_20_guiar_subordinado_etapas_resistencia_desempeno.txt`.
+
+<!-- TALLADO: parcial salida=.v72ext/insertar_20_guiar_subordinado_etapas_resistencia_desempeno.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+
+    $ python .v72ext/contra_barrido.py 20 guiar_subordinado_etapas_resistencia_desempeno
+    hoy 0 vecinos, barrido de la 71 0 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (429 grafo, 50 bandejas), en la 71 479 (410, 69)
+
+**Entra limpia, sin vecinos, como en el barrido de la `71`**; sin lineas y sin aristas. **Con ella, `cap_14` queda entero en el grafo, y las `20` filas de `.v71ext/orden.txt` estan dentro.**
