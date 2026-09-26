@@ -1130,3 +1130,5 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-25 | escalonar_complejidad_puesto_empleado_nuevo | nombre_largo | Aplicar el cuadro de motivacion contra factor CUA a la carrera de un empleado nuevo: puesto de bajo factor CUA al entrar, subida gradual de complejidad conforme gana experiencia compartida, y la promocion interna como su razon de fondo | castellano | - |
 | 2026-09-25 | escalonar_complejidad_puesto_empleado_nuevo | otro_idioma | promotion from within | ingles | - |
 | 2026-09-25 | escalonar_complejidad_puesto_empleado_nuevo | otro_idioma | CUA factor | ingles | - |
+| 2026-09-25 | diagnosticar_capacidad_motivacion_prueba_vida | nombre_largo | La prueba mental simple para separar la incapacidad de la desmotivacion cuando alguien no esta haciendo su trabajo: preguntar si podria hacerlo si su vida dependiera de ello | castellano | - |
+| 2026-09-25 | diagnosticar_capacidad_motivacion_prueba_vida | otro_idioma | simple mental test | ingles | - |

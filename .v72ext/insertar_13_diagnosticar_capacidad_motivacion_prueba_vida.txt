@@ -1,0 +1,34 @@
+fila 13, diagnosticar_capacidad_motivacion_prueba_vida, lineas --veredicto: 2
+  --veredicto decidir_amistad_subordinado_prueba_revision_dificil|SANO|Ajenos: los dos son una prueba mental de dos ramas, pero este separa el no puede del no quiere ante un bajo rendimiento (cap_12 L17) y el vecino decide si hacerte amigo de un subordinado imaginando una revision dura (cap_13 L77). Ninguno usa el producto del otro.
+  --veredicto diagnosticar_nivel_motivacion_reaccion_aumento_salario|SANO|Hermanos del mismo capitulo, dos pruebas de motivacion con dos ramas: este separa incapacidad de desmotivacion (L17) y el vecino ubica a alguien en la jerarquia de necesidades por su reaccion a un aumento (L85). El vecino no parte del diagnostico de aqui: vale para cualquiera, este motivado o no. Cero pasos comunes.
+inicio 2026-09-25 23:39:25
+======================================================================
+ADUANA DE INSERCION, candidato 'diagnosticar_capacidad_motivacion_prueba_vida'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (422 del grafo mas 57 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 2. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino decidir_amistad_subordinado_prueba_revision_dificil  [Decidir si conviene hacerse amigo de un subordinado sopesando sus pros y contras, y resolverlo con la prueba de imaginar que le das una revision de desempeno dura]
+    levantada por: similitud_texto
+    similitud_texto    0.356 (umbral 0.35)
+    familia_id         0.100 (umbral 0.30)
+    paso_contra_nodo   0.484 (umbral 0.60)
+    paso 1 del candidato contra paso 1 de decidir_amistad_subordinado_prueba_revision_dificil
+
+  vecino diagnosticar_nivel_motivacion_reaccion_aumento_salario  [Ubicar a alguien en la jerarquia motivacional segun si le importa la suma absoluta de un aumento de sueldo o como se compara contra lo que recibieron otros]
+    levantada por: similitud_texto
+    similitud_texto    0.366 (umbral 0.35)
+    familia_id         0.222 (umbral 0.30)
+    paso_contra_nodo   0.385 (umbral 0.60)
+    paso 1 del candidato contra paso 2 de diagnosticar_nivel_motivacion_reaccion_aumento_salario
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 423
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 2
+
+======================================================================
+fin 2026-09-25 23:49:35 | codigo de salida 0 | 609.8 s
