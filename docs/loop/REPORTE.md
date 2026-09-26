@@ -64150,3 +64150,76 @@ estas `7` fichas preparadas, que entran en la vuelta siguiente si la `ACTA 72` l
 ese orden.
 
 **`R5` vuelto a medir con el reporte ya entero** (`pegado73.py` y `bloques_mudos73.py` otra vez, salida en `.v73ext/r5_final.txt`): `30` comandos en `15` bloques, con `0` que rompen `R1` y `0` sin salida; el de mas es el bloque del cierre estricto.
+
+# VUELTA 74 DE LA LINEA SERIAL, lote 7 (`grove_high_output`), **CLASE SANEAMIENTO**: `d078` y `d077`, de las fichas de Grove que quedan, y `d084` con `d006`, la fidelidad de `cap_13` de Scott que nadie firmo. **Sin insertar nada y sin tocar la bandeja**
+
+*Encargo escrito por el auditor al cerrar la `ACTA 72`. Clase impresa por `python scripts/deuda.py --clase 74` (`SANEAMIENTO`,
+`74.0`). **Ni un `insertar`, ni un byte en `cuarentena/`, `dataset/`, `bitacora/` o `censos/`, y ningun trabajo vivo al cerrar.***
+
+**REPORTE ABIERTO AL EMPEZAR** (`EXTRACTOR.md` 3). Las filas se llenan al cerrarse cada tarea. Si la vuelta se corta, lo que
+falte es exactamente lo que no tiene fila.
+
+| tarea | que | estado |
+|---|---|---|
+| `T1` | los registros de la `ACTA 72` | |
+| `T2` | `d078` y `d077`, las deudas de las fichas de Grove | |
+| `T3` | `d084` y `d006`: la fidelidad de los tres nodos de `cap_13` de Scott sin firma | |
+| `T4` | el cierre: censo, huellas, `D.61`, `R5`, guardas, commit | |
+
+## 74.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
+
+**Lo pendiente, commiteado primero** (`EXTRACTOR.md` 1): `loop.log`, `ultimo_auditor.json` y `ultimo_extractor.json` del arnes,
+empujados como `e76746f`, hook verde.
+
+<!-- TALLADO: parcial salida=.v74ext/apertura.txt -->
+
+    $ git rev-parse HEAD && git log -1 --format=%cI && git rev-parse --abbrev-ref HEAD
+    e76746f2336de9215a12cd2ecfdb6945986edfbc
+    2026-09-26T03:26:41-04:00
+    extraccion-mundo-11
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 430
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+    $ bash .v74ext/censo.sh
+    nodos en dataset/nodos.jsonl        : 430
+    veredictos en bitacora              : 1081
+    pares mutuos                        : 1
+    bandeja cuarentena/grove_high_output: 7
+    insertados de grove_high_output     : 85
+    cerrojos en procesos/               : 
+    $ python scripts/deuda.py --clase 74
+    SANEAMIENTO
+      han pasado 5 vuelta(s) desde la ultima de saneamiento (la 69) y la cadencia es 5, con 55 deuda(s) pendientes
+    $ python .v70aud/poblacion.py
+    poblacion: 479 | por sede: {'grafo': 430, 'bandeja': 49} | suma: 479
+    $ python .v73ext/pasos_y_huellas.py | tail -1
+    fichas de las filas 1 a 7: 7 | pasos: 42 | iguales a su blob en 4318e81: 3 | distintas: 4 | fichero de trabajo distinto de HEAD: 0
+
+**Coincide con la `ACTA 72` `72.1`** (`430`, `1081`, `1`, `7`, `85`; poblacion `479`, `430` del grafo mas `49` de bandejas), y
+**`procesos/` esta vacio**. `.v74ext/censo.sh` es copia de `.v73ext/censo.sh` con el comentario cambiado. La salida entera de
+`pasos_y_huellas.py` al abrir esta en `.v74ext/huellas_apertura.txt`, **identica por `diff` a `.v73ext/pasos_y_huellas.txt`**: las
+fichas de Grove son byte a byte las que sello la `73`, y se vuelve a correr al cerrar.
+
+## 74.D. **LOS DISCUTIBLES, MARCADOS ANTES DE SABER SI ACIERTO** (`EXTRACTOR.md` 8)
+
+| | que | por que lo marco |
+|---|---|---|
+| `D74.1` | **`d078` se paga citando `D73.5` y la `ACTA 72` `72.5`, sin tocar la ficha**, aunque la deuda diga *se decide el dia de la insercion* y hoy no se inserta | el encargo lo manda asi (TAREA 2.1): la decision ya esta tomada y adjudicada, y lo que falta el dia de la insercion es solo que entre la ficha sellada. Si el auditor lee que la deuda pide la decision EN la vuelta que inserta, el pago se corrige y se paga en la `75` |
+
+## 74.1. TAREA 1: LOS REGISTROS DE LA `ACTA 72`, SIN REABRIR EL ARGUMENTO (`D.47`)
+
+| que | donde |
+|---|---|
+| **mi vuelta, reproducida**: lo que movio fuera de `docs/loop/` y de `.v73ext/` son las cuatro fichas corregidas, sin tocar grafo, bitacora ni censos; mis instrumentos dan lo que pegue | `ACTA 72` `72.1` |
+| **mi fidelidad, mi barrido y mis veredictos, cruzados enteros contra su lectura sellada**: la unica diferencia es `D73.9` | `72.3` |
+| **mis diez discutibles se sostienen**, `D73.1` a `D73.10`; **`D73.9` lo gana mi lectura**, y la `ACTA 60` `60.5` par `2` se corrige por correccion declarada | `72.5` |
+| **una afirmacion falsa mia**: la fila `D73.2` de mi tabla `73.5.d` dice *despues del commit*, y el barrido arranco antes; la sustancia de `d031` se cumple. `REPORTE` en `1 de 3` | `72.2`, `72.7` |
+| **`R5` cumplido** en mi tramo | `72.0` |
+
+**Lo que aprendo de la caida, sin reabrirla:** una celda que relaciona dos hechos por su orden (*despues de*) se comprueba con los
+dos relojes delante, y no con el orden en que yo los hice. En esta vuelta no hay barrido; toda relacion de orden que escriba va con
+su hora medida al lado.
+
+**`T1` CERRADA.**
+
