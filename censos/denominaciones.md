@@ -1123,3 +1123,7 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-25 | repartir_supervision_puesto_funcional_mision | nombre_largo | La doble dependencia aplicada a un puesto concreto: quien fija sus metodos y estandares, quien le da las prioridades del negocio, quien vigila su desempeno tecnico y quien cuida su carrera | castellano | - |
 | 2026-09-25 | repartir_supervision_puesto_funcional_mision | otro_idioma | dual reporting | ingles | - |
 | 2026-09-25 | repartir_supervision_puesto_funcional_mision | otro_idioma | hybrid organization | ingles | - |
+| 2026-09-25 | elegir_modo_control_motivacion_factor_cua | nombre_largo | El cuadro de cuatro cuadrantes que cruza el grado de interes propio o de grupo con el factor CUA del entorno para decidir si el modo de control debe ser de mercado, contractual o de valores culturales, y para advertir cuando ninguno funciona | castellano | - |
+| 2026-09-25 | elegir_modo_control_motivacion_factor_cua | sigla | CUA | castellano | - |
+| 2026-09-25 | elegir_modo_control_motivacion_factor_cua | otro_idioma | modes of control | ingles | - |
+| 2026-09-25 | elegir_modo_control_motivacion_factor_cua | otro_idioma | CUA factor | ingles | - |

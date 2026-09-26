@@ -1,0 +1,13 @@
+fila 11, elegir_modo_control_motivacion_factor_cua, lineas --veredicto: 0
+inicio 2026-09-25 23:13:18
+======================================================================
+ADUANA DE INSERCION, candidato 'elegir_modo_control_motivacion_factor_cua'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (420 del grafo mas 59 que esperan en bandejas)
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 421
+  censos escritos: denominaciones
+
+======================================================================
+fin 2026-09-25 23:25:52 | codigo de salida 0 | 753.6 s
