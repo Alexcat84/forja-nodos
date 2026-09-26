@@ -63202,3 +63202,42 @@ La aduana de hoy: **BLOQUEARIA** con `5` vecino(s) contra `479`; lineas `--vered
     hoy 5 vecinos, barrido de la 71 5 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (416 grafo, 63 bandejas), en la 71 479 (410, 69)
 
 **Los cinco vecinos son los de su bloque y las cinco lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `71`, las tres seniales al digito. La arista de lectura, cableada (bloque de arriba). Van `4` de las `6` aristas esperadas.
+
+### Fila `8`: `cerrar_brecha_dos_preguntas_estrategia`, **INSERTADO** en `344.8` s, codigo `0`, commit `5d7c3e7b`
+
+La aduana de hoy: **BLOQUEARIA** con `10` vecino(s) contra `479`; lineas `--veredicto` pasadas: `10`. Salida entera en `.v72ext/insertar_08_cerrar_brecha_dos_preguntas_estrategia.txt`.
+
+<!-- TALLADO: parcial salida=.v72ext/insertar_08_cerrar_brecha_dos_preguntas_estrategia.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `preguntar_seguimiento_hallar_huecos` | paso_contra_nodo | 0.265 | 0.000 | 0.645 | SANO |
+| `responder_tres_preguntas_vocacion_directiva` | paso_contra_nodo | 0.225 | 0.111 | 0.628 | SANO |
+| `contestar_dos_preguntas_direccion_objetivos` | similitud_texto, paso_contra_nodo | 0.431 | 0.250 | 0.626 | SANO |
+| `preparar_preguntas_entrevista_antemano` | paso_contra_nodo | 0.126 | 0.125 | 0.614 | SANO |
+| `examinar_demanda_entorno_dos_marcos_temporales` | similitud_texto | 0.399 | 0.100 | 0.454 | SANO |
+| `determinar_estado_presente_capacidades_proyectos_merma` | similitud_texto | 0.384 | 0.000 | 0.451 | SANO |
+| `examinar_entorno_expectativas_tecnologia_proveedores_grupos` | similitud_texto | 0.449 | 0.000 | 0.418 | SANO |
+| `archivar_indicadores_resolver_problemas` | similitud_texto | 0.351 | 0.000 | 0.431 | SANO |
+| `cortar_discusion_libre_momento_justo` | similitud_texto | 0.370 | 0.000 | 0.423 | SANO |
+| `definir_entorno_grupo_clientes_proveedores_competidores` | similitud_texto | 0.417 | 0.000 | 0.393 | SANO |
+
+**Arista por lectura cableada con la madre ya en el grafo** (`D.37`, la de la `ACTA 70` `70.3`): `planificar_tres_pasos_demanda_estado_brecha > cerrar_brecha_dos_preguntas_estrategia`, `--paso 5`, el que su fila (linea `11` de `.v71ext/aristas_lectura.txt`) cita. Salida entera en `.v72ext/arista_planificar_tres_pasos_demanda_estado_brecha__cerrar_brecha_dos_preguntas_estrategia.txt`:
+
+    $ python forja.py arista --madre planificar_tres_pasos_demanda_estado_brecha --hijo cerrar_brecha_dos_preguntas_estrategia --paso 5 --razon <fila 11> --veredicto CONTINUA --cita-veredicto <fila 11>
+    DECLARACION DE ARISTA POR LECTURA (D.37)
+      madre: planificar_tres_pasos_demanda_estado_brecha
+      hijo : cerrar_brecha_dos_preguntas_estrategia
+      paso citado de la madre: 5
+        Da el paso 3 comparando y conciliando los pasos 1 y 2.
+      señales del par: familia_id 0.1, paso_contra_nodo 0.545, similitud_texto 0.299
+        NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+    GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: planificar_tres_pasos_demanda_estado_brecha > cerrar_brecha_dos_preguntas_estrategia
+      razon en bitacora/VEREDICTOS.jsonl
+
+
+    $ python .v72ext/contra_barrido.py 08 cerrar_brecha_dos_preguntas_estrategia
+    hoy 10 vecinos, barrido de la 71 10 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (417 grafo, 62 bandejas), en la 71 479 (410, 69)
+
+**Los diez vecinos son los de su bloque y las diez lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `71`, las tres seniales al digito. La arista de lectura, cableada (bloque de arriba): **la serie de tres pasos de la cabeza queda cableada entera** (`D.37`, filas `6`, `7` y `8`), y ninguna de las partes entre si (`D71.12`, `ACTA 70` `70.5`). Van `5` de las `6` aristas esperadas.
