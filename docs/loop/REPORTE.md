@@ -63041,3 +63041,18 @@ se relee.**
 Copias de la `70` con la ruta cambiada a `.v72ext/` (`7.F`): `insertar.py` (la sede de las lineas cambiada a
 `.v71ext/veredictos_listos.txt`), `esperar.py`, `fila.py`, `arista.py` (la sede cambiada a `.v71ext/aristas_lectura.txt` y la
 cita a la `ACTA 70`), `tras_insertar.sh`, `empujar_fila.sh` y `bloque_arista.sh`; cada una lo dice en su cabecera.
+
+### Fila `1`: `planificar_tres_pasos_demanda_estado_brecha`, **INSERTADO** en `583.6` s, codigo `0`, commit `9b2d44a6`
+
+La aduana de hoy: **BLOQUEARIA** con `1` vecino(s) contra `479`; lineas `--veredicto` pasadas: `1`. Salida entera en `.v72ext/insertar_01_planificar_tres_pasos_demanda_estado_brecha.txt`.
+
+<!-- TALLADO: parcial salida=.v72ext/insertar_01_planificar_tres_pasos_demanda_estado_brecha.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `entregar_evaluacion_desempeno_tres_claves` | similitud_texto | 0.381 | 0.100 | 0.396 | SANO |
+
+    $ python .v72ext/contra_barrido.py 01 planificar_tres_pasos_demanda_estado_brecha
+    hoy 1 vecinos, barrido de la 71 1 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (410 grafo, 69 bandejas), en la 71 479 (410, 69)
+
+**El vecino es el de su bloque y la linea se paso tal cual**: ni nuevos ni caidos contra el barrido de la `71`, las tres seniales al digito. Sin aristas en esta fila: la cabeza es madre de las filas `6`, `7` y `8`, que se cablean al entrar cada hijo.
