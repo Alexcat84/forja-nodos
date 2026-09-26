@@ -68316,3 +68316,23 @@ La aduana de hoy: **BLOQUEARIA** con `2` vecino(s) contra `479`; lineas `--vered
     hoy 2 vecinos, barrido de la 78 2 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (467 grafo, 12 bandejas), en la 78 479 (459, 20)
 
 **Los dos vecinos son los de su bloque y las dos lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `78`, las tres seniales al digito; la poblacion, `479` (`467` mas `12`). Sin aristas en esta fila. Bitacora de `1195` a `1197`, sus dos lineas SANO.
+
+### Fila `10`: `informar_cierre_jornada_conservar_propiedad_trabajo`, **INSERTADO** en `550.9` s, codigo `0`, commit `14eea0bb`
+
+La aduana de hoy: **BLOQUEARIA** con `6` vecino(s) contra `479`; lineas `--veredicto` pasadas: `6`. Salida entera en `.v80ext/insertar_10_informar_cierre_jornada_conservar_propiedad_trabajo.txt`.
+
+<!-- TALLADO: parcial salida=.v80ext/insertar_10_informar_cierre_jornada_conservar_propiedad_trabajo.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `seguir_frustrado_preguntar_implantacion_ideas` | similitud_texto | 0.412 | 0.000 | 0.391 | SANO |
+| `operar_modelo_gente_destreza_minima` | similitud_texto | 0.364 | 0.000 | 0.399 | SANO |
+| `cuantificar_impacto_innovacion_6_pasos` | similitud_texto | 0.392 | 0.000 | 0.294 | SANO |
+| `dictar_ritmo_crecimiento_preguntas_escritas` | similitud_texto | 0.361 | 0.000 | 0.390 | SANO |
+| `interrogar_negocio_cinco_preguntas` | similitud_texto | 0.360 | 0.000 | 0.390 | SANO |
+| `usar_banco_nueve_preguntas_entrevista` | similitud_texto | 0.351 | 0.000 | 0.329 | SANO |
+
+    $ python .v80ext/contra_barrido.py 10 informar_cierre_jornada_conservar_propiedad_trabajo
+    hoy 6 vecinos, barrido de la 78 6 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (468 grafo, 11 bandejas), en la 78 479 (459, 20)
+
+**Los seis vecinos son los de su bloque y las seis lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `78`, las tres seniales al digito; la poblacion, `479` (`468` mas `11`). Sin aristas en esta fila: su fila con `eliminar_seguimiento_descendente_responsabilizar_dueno` es `NO SOSTENGO` (un modelo no es una madre). Bitacora de `1197` a `1203`, sus seis lineas SANO.
