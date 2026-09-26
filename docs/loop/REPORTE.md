@@ -64969,3 +64969,22 @@ La aduana de hoy: **BLOQUEARIA** con `1` vecino(s) contra `479`; lineas `--vered
     hoy 1 vecinos, barrido de la 73 1 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (433 grafo, 46 bandejas), en la 73 479 (430, 49)
 
 **El vecino es el de su bloque y la linea se paso tal cual**: ni nuevos ni caidos contra el barrido de la `73`, las tres seniales al digito; la poblacion, `479` (`433` mas `46`). Sin aristas en esta fila. Bitacora de `1098` a `1099`.
+
+### Fila `5`: `priorizar_lista_entrenamiento_subordinados`, **INSERTADO** en `410.4` s, codigo `0`, commit `f36ae29c`
+
+La aduana de hoy: **BLOQUEARIA** con `3` vecino(s) contra `479`; lineas `--veredicto` pasadas: `3`. Salida entera en `.v75ext/insertar_05_priorizar_lista_entrenamiento_subordinados.txt`.
+
+<!-- TALLADO: parcial salida=.v75ext/insertar_05_priorizar_lista_entrenamiento_subordinados.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `pedir_critica_anonima_curso_entrenamiento_dictado` | similitud_texto | 0.466 | 0.111 | 0.439 | SANO |
+| `desarrollar_primer_curso_entrenamiento` | similitud_texto | 0.411 | 0.143 | 0.401 | CONTINUA |
+| `reciclar_empleado_ascendido_mas_alla_capacidad` | similitud_texto | 0.355 | 0.000 | 0.384 | SANO |
+
+**Arista en cola (`D.29`)**: `priorizar_lista_entrenamiento_subordinados > desarrollar_primer_curso_entrenamiento`
+
+    $ python .v75ext/contra_barrido.py 05 priorizar_lista_entrenamiento_subordinados
+    hoy 3 vecinos, barrido de la 73 3 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (434 grafo, 45 bandejas), en la 73 479 (430, 49)
+
+**Los tres vecinos son los de su bloque y las tres lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `73`, las tres seniales al digito; la poblacion, `479` (`434` mas `45`). **Su arista hacia `desarrollar_primer_curso_entrenamiento` queda EN COLA** (su linea `CONTINUA` con `madre=`), y se cablea al entrar la fila `6`. **Con `pedir_critica_anonima_curso_entrenamiento_dictado` su linea es `SANO`**, abuela y nieta (`D73.9`, `ACTA 72` `72.5`), y no deja arista. Bitacora de `1099` a `1102`.
