@@ -68166,3 +68166,19 @@ La aduana de hoy: **BLOQUEARIA** con `1` vecino(s) contra `479`; lineas `--vered
     hoy 1 vecinos, barrido de la 78 1 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (459 grafo, 20 bandejas), en la 78 479 (459, 20)
 
 **El vecino es el de su bloque y la linea se paso tal cual**: ni nuevos ni caidos contra el barrido de la `78`, las tres seniales al digito; la poblacion, la misma (`459` mas `20`). Sin aristas en esta fila: `.v78ext/aristas_lectura.txt` la deja sin madre ni hijo (sus nueve filas son `NO SOSTENGO`). Bitacora de `1172` a `1173`, su linea SANO.
+
+### Fila `2`: `cambiar_forma_trabajar_conservar_plantilla`, **INSERTADO** en `661.4` s, codigo `0`, commit `5f0c4e3a`
+
+La aduana de hoy: **BLOQUEARIA** con `2` vecino(s) contra `479`; lineas `--veredicto` pasadas: `2`. Salida entera en `.v80ext/insertar_02_cambiar_forma_trabajar_conservar_plantilla.txt`.
+
+<!-- TALLADO: parcial salida=.v80ext/insertar_02_cambiar_forma_trabajar_conservar_plantilla.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `escuchar_entender_critica_dominar_defensa` | paso_contra_nodo | 0.201 | 0.000 | 0.612 | SANO |
+| `encargar_meta_especifica_dejar_libre_metodo` | similitud_texto | 0.441 | 0.000 | 0.455 | SANO |
+
+    $ python .v80ext/contra_barrido.py 02 cambiar_forma_trabajar_conservar_plantilla
+    hoy 2 vecinos, barrido de la 78 2 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (460 grafo, 19 bandejas), en la 78 479 (459, 20)
+
+**Los dos vecinos son los de su bloque y las dos lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `78`, las tres seniales al digito; la poblacion, `479`, con la fila `1` ya en el grafo (`460` mas `19`). Sin aristas en esta fila. Bitacora de `1173` a `1175`, sus dos lineas SANO.
