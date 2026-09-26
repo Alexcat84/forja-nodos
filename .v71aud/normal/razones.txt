@@ -1,0 +1,1 @@
+lineas por clase y razon: {'CONTINUA con razon': 4, 'SANO con razon': 46} | suma: 50

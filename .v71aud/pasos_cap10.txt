@@ -1,0 +1,12 @@
+===== repartir_supervision_puesto_funcional_mision | cuarentena\grove_high_output\repartir_supervision_puesto_funcional_mision.json
+  titulo: Repartir la supervision de un puesto entre su grupo funcional y su division, dando a cada jefe lo que le toca: al de mision las prioridades, al funcional el oficio y la carrera
+  fuente: ['grove_high_output']
+  cond: Cuando un puesto pertenece a un grupo funcional y trabaja para una unidad de mision, y hay que decidir de quien depende sin dejar fuera ni las prioridades del negocio ni el oficio de su especialidad.
+  P1. Parte de lo que hace falta para que la organizacion hibrida funcione: una manera de coordinar las unidades de mision y los grupos funcionales, de modo que los recursos de los segundos se asignen y se entreguen para cubrir las necesidades de las primeras.
+  P2. Deja que el grupo funcional al que el puesto pertenece fije sus metodos profesionales, sus practicas y sus estandares.
+  P3. Haz en consecuencia que ese puesto dependa de alguien de la organizacion funcional y de alguien de la organizacion de mision.
+  P4. Ajusta el tipo de supervision de cada uno de los dos a las necesidades distintas de las dos organizaciones.
+  P5. Encarga al jefe de la unidad de mision que le de las prioridades de mision, pidiendole que trabaje en problemas concretos del negocio.
+  P6. Encarga al jefe funcional que se asegure de que esta formado para hacer su trabajo de manera tecnicamente competente.
+  P7. Encarga a ese mismo jefe funcional que supervise y vigile su desempeno tecnico.
+  P8. Encarga al jefe funcional que cuide su carrera dentro de la funcion, quiza promocionandolo si lo hace bien.

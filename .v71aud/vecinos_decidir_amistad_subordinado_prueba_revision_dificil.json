@@ -1,0 +1,20 @@
+{
+ "id": "decidir_amistad_subordinado_prueba_revision_dificil",
+ "grafo": 410,
+ "bandejas": 69,
+ "vecinos": [
+  {
+   "id": "diagnosticar_capacidad_motivacion_prueba_vida",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.351,
+    "familia_id": 0.1,
+    "paso_contra_nodo": 0.467
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 1 de diagnosticar_capacidad_motivacion_prueba_vida"
+  }
+ ]
+}

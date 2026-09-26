@@ -1,0 +1,1 @@
+contestar_dos_preguntas_direccion_objetivos poblacion 479 (410 grafo mas 69 bandejas) vecinos 6

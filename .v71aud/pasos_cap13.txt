@@ -1,0 +1,22 @@
+===== decidir_amistad_subordinado_prueba_revision_dificil | cuarentena\grove_high_output\decidir_amistad_subordinado_prueba_revision_dificil.json
+  titulo: Decidir si conviene hacerse amigo de un subordinado sopesando sus pros y contras, y resolverlo con la prueba de imaginar que le das una revision de desempeno dura
+  fuente: ['grove_high_output']
+  cond: Cuando dudas si conviene dejar que se desarrolle una amistad personal con alguien que te reporta, y no tienes un criterio para decidirlo mas alla de la intuicion.
+  P1. Cuando dudes si conviene hacerte amigo de un subordinado, cuenta con que hay pros y contras y que la decision es tuya.
+  P2. Reconoce el pro: si el subordinado es tu amigo personal, te resultara mas facil pasar a un estilo de direccion comunicador.
+  P3. Reconoce el contra: te costara mas volver al modo estructurado de que, cuando y como si hace falta, y te resultara desagradable darle ordenes.
+  P4. Aplica esta prueba para decidirlo: imaginate dandole a tu amigo una revision de desempeno dura.
+  P5. Si la sola idea te hace encogerte, no te hagas amigo de tus subordinados en el trabajo.
+  P6. Si tu estomago no se inmuta, es probable que seas alguien cuyas relaciones personales van a reforzar las relaciones de trabajo.
+===== elegir_estilo_direccion_madurez_relevante_tarea | cuarentena\grove_high_output\elegir_estilo_direccion_madurez_relevante_tarea.json
+  titulo: Elegir el estilo de direccion de un subordinado segun su madurez relevante para la tarea concreta: estructurado si es baja, comunicador si es media, minimo si es alta, y siempre con vigilancia para no abandonar
+  fuente: ['grove_high_output']
+  cond: Cuando tienes que decidir con que estilo dirigir a un subordinado en una tarea concreta y no sabes si conviene darle instrucciones detalladas, acompanarlo con comunicacion y apoyo, o dejarlo actuar con poca supervision.
+  P1. Evalua la madurez relevante para la tarea (TRM) de tu subordinado: la combinacion de su orientacion al logro, su disposicion a asumir responsabilidad, su educacion, su formacion y su experiencia.
+  P2. Trata esa TRM como especifica de la tarea concreta y no como la madurez general de la persona: puede ser alta en un puesto y baja en otro.
+  P3. Cuenta con que la TRM de una persona puede caer si el ritmo del puesto se acelera o si el puesto cambia de golpe, aunque antes fuera alta para ese nivel de complejidad, incertidumbre y ambiguedad.
+  P4. Si la TRM es baja, usa un estilo estructurado y orientado a la tarea: dile al subordinado que hay que hacer, cuando y como, con instrucciones precisas y detalladas.
+  P5. Si la TRM del subordinado crece, mueve el estilo hacia uno mas dado a la comunicacion, el apoyo emocional y el animo, prestando mas atencion al subordinado como individuo que a la tarea misma.
+  P6. Si la TRM se vuelve todavia mayor, mantén tu involucramiento al minimo y limitate sobre todo a asegurar que los objetivos hacia los que trabaja el subordinado esten acordados mutuamente.
+  P7. Sea cual sea la TRM, vigila siempre el trabajo del subordinado lo bastante de cerca para evitar sorpresas: la presencia o ausencia de esa vigilancia es la diferencia entre delegar una tarea y abandonarla.
+  P8. No juzgues un estilo estructurado como menos valioso que uno orientado a la comunicacion, ni dejes que lo que te parezca mas simpatico decida tu eleccion: lo que importa es cual de los dos es mas eficaz.

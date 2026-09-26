@@ -1,0 +1,5 @@
+contar_fidelidad.py: IDENTICO a .v71ext/contar_fidelidad.txt
+comprobar_veredictos.py: IDENTICO a .v71ext/comprobar_veredictos.txt
+orden.py: IDENTICO a .v71ext/orden.txt
+pasos_y_huellas.py: IDENTICO a .v71ext/pasos_y_huellas.txt
+citas.sh: IDENTICO a .v71ext/citas_fidelidad.txt

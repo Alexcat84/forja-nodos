@@ -1,0 +1,11 @@
+cerrar_brecha_dos_preguntas_estrategia                     preguntar_seguimiento_hallar_huecos              ['paso_contra_nodo'] {'similitud_texto': 0.265, 'familia_id': 0.0, 'paso_contra_nodo': 0.645}
+cerrar_brecha_dos_preguntas_estrategia                     responder_tres_preguntas_vocacion_directiva      ['paso_contra_nodo'] {'similitud_texto': 0.225, 'familia_id': 0.111, 'paso_contra_nodo': 0.628}
+cerrar_brecha_dos_preguntas_estrategia                     preparar_preguntas_entrevista_antemano           ['paso_contra_nodo'] {'similitud_texto': 0.126, 'familia_id': 0.125, 'paso_contra_nodo': 0.614}
+cerrar_brecha_dos_preguntas_estrategia                     archivar_indicadores_resolver_problemas          ['similitud_texto'] {'similitud_texto': 0.351, 'familia_id': 0.0, 'paso_contra_nodo': 0.431}
+cerrar_brecha_dos_preguntas_estrategia                     cortar_discusion_libre_momento_justo             ['similitud_texto'] {'similitud_texto': 0.37, 'familia_id': 0.0, 'paso_contra_nodo': 0.423}
+contestar_dos_preguntas_direccion_objetivos                zanjar_seis_preguntas_decision_adelantado        ['similitud_texto'] {'similitud_texto': 0.351, 'familia_id': 0.111, 'paso_contra_nodo': 0.482}
+contestar_dos_preguntas_direccion_objetivos                anunciar_decision_inesperada_reconvocar_reunion  ['similitud_texto'] {'similitud_texto': 0.362, 'familia_id': 0.0, 'paso_contra_nodo': 0.473}
+contestar_dos_preguntas_direccion_objetivos                vencer_sindrome_grupo_pares_autoconfianza        ['similitud_texto'] {'similitud_texto': 0.35, 'familia_id': 0.0, 'paso_contra_nodo': 0.37}
+definir_entorno_grupo_clientes_proveedores_competidores    anunciar_decision_inesperada_reconvocar_reunion  ['similitud_texto'] {'similitud_texto': 0.374, 'familia_id': 0.0, 'paso_contra_nodo': 0.444}
+definir_entorno_grupo_clientes_proveedores_competidores    vencer_sindrome_grupo_pares_autoconfianza        ['similitud_texto'] {'similitud_texto': 0.374, 'familia_id': 0.1, 'paso_contra_nodo': 0.395}
+fijar_horizonte_ventana_replanificacion                    anunciar_decision_inesperada_reconvocar_reunion  ['similitud_texto'] {'similitud_texto': 0.357, 'familia_id': 0.0, 'paso_contra_nodo': 0.365}

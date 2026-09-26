@@ -1,0 +1,89 @@
+===== cerrar_brecha_dos_preguntas_estrategia | cuarentena\grove_high_output\cerrar_brecha_dos_preguntas_estrategia.json
+  titulo: Cerrar la brecha entre demanda y rendimiento contestando por separado que necesitas hacer y que puedes hacer, y llamar estrategia al conjunto que decidas
+  fuente: ['grove_high_output']
+  cond: Cuando ya tienes medida la demanda de tu entorno y tu estado presente, y te queda decidir que vas a hacer con la diferencia entre los dos.
+  P1. Emprende tareas nuevas o modifica las que ya tienes para cerrar la brecha entre la demanda de tu entorno y lo que tus actividades presentes van a rendir.
+  P2. Contesta la primera pregunta: que necesitas hacer para cerrar la brecha.
+  P3. Contesta la segunda pregunta: que puedes hacer para cerrar la brecha.
+  P4. Considera cada una de las dos preguntas por separado.
+  P5. Decide despues que vas a hacer realmente.
+  P6. Evalua al decidirlo que efecto van a tener tus acciones sobre el estrechamiento de la brecha, y cuando lo van a tener.
+  P7. Llama estrategia al conjunto de acciones que decidas.
+===== contestar_dos_preguntas_direccion_objetivos | cuarentena\grove_high_output\contestar_dos_preguntas_direccion_objetivos.json
+  titulo: Montar el sistema de direccion por objetivos sobre las dos unicas preguntas que tiene que contestar: adonde quiero ir, y como me marco el ritmo para ver si estoy llegando
+  fuente: ['grove_high_output']
+  cond: Cuando vas a montar un sistema de direccion por objetivos, o cuando el que tienes ha crecido tanto que ya no sabes que es lo que tiene que contestar.
+  P1. Monta el sistema sabiendo que para tener exito solo necesita contestar dos preguntas.
+  P2. Contesta la primera pregunta: adonde quiero ir.
+  P3. Toma la respuesta de esa primera pregunta como tu objetivo.
+  P4. Contesta la segunda pregunta: como voy a marcarme el ritmo para ver si estoy llegando.
+  P5. Toma la respuesta de esa segunda pregunta como tus hitos, es decir, tus resultados clave.
+===== definir_entorno_grupo_clientes_proveedores_competidores | cuarentena\grove_high_output\definir_entorno_grupo_clientes_proveedores_competidores.json
+  titulo: Definir tu entorno mirando tu grupo como si fuera una empresa independiente: clientes, proveedores y competidores
+  fuente: ['grove_high_output']
+  cond: Cuando vas a dar el paso 1 de la planificacion, el de la demanda del entorno, y no sabes todavia que cuenta como tu entorno ni donde acaba.
+  P1. Mira tu propio grupo dentro de la organizacion como si fuera una empresa independiente.
+  P2. Anota como entorno los otros grupos de ese tipo que influyen directamente en lo que haces.
+  P3. Lista a tus clientes, que son quienes necesitan tus servicios.
+  P4. Lista a tus proveedores, que son quienes pueden darte determinadas capacidades.
+  P5. Lista por ultimo a tus competidores.
+  P6. Cuenta con que dentro de la organizacion no tienes competidores, y en su lugar compara tu servicio con uno de fuera para juzgar tu desempeno y fijar tus estandares.
+===== determinar_estado_presente_capacidades_proyectos_merma | cuarentena\grove_high_output\determinar_estado_presente_capacidades_proyectos_merma.json
+  titulo: Determinar tu estado presente listando capacidades y proyectos en curso, en la misma moneda de la demanda, con su plazo de salida y su merma descontada
+  fuente: ['grove_high_output']
+  cond: Cuando tienes que dar el paso 2 de la planificacion y necesitas una cifra de lo que vas a producir que se pueda restar de la demanda, no una lista de intenciones.
+  P1. Lista tus capacidades presentes y los proyectos que tienes en marcha.
+  P2. Expresalos en los mismos terminos, en la misma moneda, en la que has declarado la demanda.
+  P3. Si la demanda esta en disenos de producto terminados, pon el trabajo en curso como disenos de producto parcialmente terminados.
+  P4. Mira el plazo, es decir, cuando va a salir cada uno de esos proyectos de tu tuberia.
+  P5. Preguntate si todos los proyectos que estan avanzando ahora van a completarse.
+  P6. Cuenta con que la respuesta probablemente sea que no, con que algunos se descarten o se aborten, y mete ese hecho en tu produccion prevista.
+  P7. Aunque no se pueda ser preciso en cada caso, descuenta tambien un porcentaje de perdida en los proyectos de gestion.
+===== examinar_demanda_entorno_dos_marcos_temporales | cuarentena\grove_high_output\examinar_demanda_entorno_dos_marcos_temporales.json
+  titulo: Examinar la demanda de tu entorno en dos marcos temporales y trabajar sobre la diferencia, sin rebajarla por lo que creas que puedes entregar
+  fuente: ['grove_high_output']
+  cond: Cuando ya tienes establecido que constituye tu entorno y tienes que convertirlo en demanda, o cuando te sorprendas bajando la demanda que declaras porque no crees que se pueda entregar.
+  P1. Examina tu entorno en dos marcos temporales una vez que has establecido que lo constituye: ahora, y en algun momento futuro, digamos dentro de un ano.
+  P2. Contesta que quieren de ti tus clientes ahora.
+  P3. Contesta si los estas satisfaciendo.
+  P4. Contesta que esperaran de ti dentro de un ano.
+  P5. Concentrate en la diferencia entre lo que tu entorno te demanda ahora y lo que esperas que te demande dentro de un ano.
+  P6. No pases todavia a que medidas practicas puedes tomar para atender el asunto, porque en esta fase eso solo confunde la cuestion.
+  P7. No rebajes la demanda que declaras por lo que creas que la otra parte puede entregar: una demanda rebajada asi deja que nunca se prepare la capacidad para la demanda real.
+===== examinar_entorno_expectativas_tecnologia_proveedores_grupos | cuarentena\grove_high_output\examinar_entorno_expectativas_tecnologia_proveedores_grupos.json
+  titulo: Examinar tu entorno por los cuatro objetos que el libro nombra: las expectativas del cliente, la tecnologia, tus proveedores y los otros grupos de tu organizacion
+  fuente: ['grove_high_output']
+  cond: Cuando ya tienes definido que es tu entorno y tienes que examinarlo, y no sabes en que fijarte ni por donde empezar a mirar.
+  P1. Determina las expectativas de tus clientes y la percepcion que tienen de tu desempeno.
+  P2. Mantente al corriente de los desarrollos tecnologicos y de las maneras alternativas de hacer tu trabajo.
+  P3. Evalua el desempeno de tus proveedores.
+  P4. Evalua el desempeno de los otros grupos de la organizacion a la que perteneces.
+  P5. Contesta para cada uno de esos grupos las dos preguntas que el libro pone: si ese grupo afecta a lo bien que puedes hacer tu trabajo, y si ese grupo puede cubrir lo que necesitas de el.
+===== fijar_horizonte_ventana_replanificacion | cuarentena\grove_high_output\fijar_horizonte_ventana_replanificacion.json
+  titulo: Fijar el horizonte de la planificacion, implementar solo la ventana que llega hasta la proxima vez, y no replanificar tan seguido que no de tiempo a juzgar
+  fuente: ['grove_high_output']
+  cond: Cuando montas el ejercicio de planificacion y tienes que decidir hasta donde mirar, que parte de lo que salga se pone en marcha, y cada cuanto se repite el ejercicio.
+  P1. Mira hacia delante mas alla del periodo que vas a implementar, aunque lo que de verdad estes influyendo sea solo el periodo siguiente.
+  P2. Implementa unicamente la parte del plan que cae dentro de la ventana temporal entre ahora y la proxima vez que vuelvas a hacer el ejercicio.
+  P3. Deja todo lo demas para volver a mirarlo, contando con que tendras otra oportunidad de replanificarlo cuando ese periodo se convierta en el primero.
+  P4. No planifiques con demasiada frecuencia: date tiempo a juzgar el impacto de las decisiones que tomaste y a determinar si iban por buen camino.
+  P5. Regula esa frecuencia por la retroalimentacion, que es lo indispensable para planificar la vez siguiente.
+===== fijar_periodo_direccion_objetivos_retroalimentacion | cuarentena\grove_high_output\fijar_periodo_direccion_objetivos_retroalimentacion.json
+  titulo: Fijar el periodo del sistema de direccion por objetivos por el plazo en que su retroalimentacion sigue sirviendo, y contrastarlo con la base del plan
+  fuente: ['grove_high_output']
+  cond: Cuando tienes que decidir en que periodo se fijan los objetivos de tu sistema, o cuando la retroalimentacion te llega tan tarde que ya no puedes corregir nada con ella.
+  P1. Parte de para que sirve el sistema: dar retroalimentacion relevante a la tarea concreta que tienes entre manos.
+  P2. Exigele que te diga como lo estas haciendo, para que puedas ajustar lo que sea que estes haciendo si hace falta.
+  P3. Recibe esa retroalimentacion muy poco despues de que ocurra la actividad que mide, porque si llega mas tarde deja de ser efectiva.
+  P4. Fija en consecuencia los objetivos para un periodo relativamente corto.
+  P5. Contrastalo con la base sobre la que planificas: si planificas con base anual, el marco temporal del sistema tiene que ser al menos tan frecuente como trimestral, y quizas incluso mensual.
+===== planificar_tres_pasos_demanda_estado_brecha | cuarentena\grove_high_output\planificar_tres_pasos_demanda_estado_brecha.json
+  titulo: Planificar en los tres pasos del libro: la demanda del entorno, el estado presente, y lo que hay que hacer para conciliarlos
+  fuente: ['grove_high_output']
+  cond: Cuando tienes que planificar el trabajo de tu grupo y no sabes por donde empezar, o cuando lo que llamas plan es una lista de intenciones y no una comparacion entre lo que te van a pedir y lo que vas a producir.
+  P1. Monta tu proceso general de planificacion sobre un razonamiento analogo al de la fabrica.
+  P2. Da el paso 1 estableciendo la necesidad o demanda proyectada: que va a demandar de ti el entorno, de tu negocio o de tu organizacion.
+  P3. Da el paso 2 estableciendo tu estado presente: que estas produciendo ahora, y que vas a estar produciendo cuando se completen los proyectos que ya tienes en marcha.
+  P4. Formula ese paso 2 tambien de la otra manera: donde va a estar tu negocio si no haces nada distinto de lo que estas haciendo.
+  P5. Da el paso 3 comparando y conciliando los pasos 1 y 2.
+  P6. Convierte esa conciliacion en la pregunta concreta: que mas, o que menos, necesitas hacer para producir lo que tu entorno va a demandar.

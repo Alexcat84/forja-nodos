@@ -1,0 +1,86 @@
+{
+ "id": "definir_entorno_grupo_clientes_proveedores_competidores",
+ "grafo": 410,
+ "bandejas": 69,
+ "vecinos": [
+  {
+   "id": "examinar_entorno_expectativas_tecnologia_proveedores_grupos",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.406,
+    "familia_id": 0.333,
+    "paso_contra_nodo": 0.524
+   },
+   "levantada_por": [
+    "similitud_texto",
+    "familia_id"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 1 de examinar_entorno_expectativas_tecnologia_proveedores_grupos"
+  },
+  {
+   "id": "examinar_demanda_entorno_dos_marcos_temporales",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.396,
+    "familia_id": 0.091,
+    "paso_contra_nodo": 0.45
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 5 del candidato contra paso 2 de examinar_demanda_entorno_dos_marcos_temporales"
+  },
+  {
+   "id": "anunciar_decision_inesperada_reconvocar_reunion",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.374,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.444
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 4 de anunciar_decision_inesperada_reconvocar_reunion"
+  },
+  {
+   "id": "cerrar_brecha_dos_preguntas_estrategia",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.428,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.444
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 4 del candidato contra paso 3 de cerrar_brecha_dos_preguntas_estrategia"
+  },
+  {
+   "id": "vencer_sindrome_grupo_pares_autoconfianza",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.374,
+    "familia_id": 0.1,
+    "paso_contra_nodo": 0.395
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 2 del candidato contra paso 1 de vencer_sindrome_grupo_pares_autoconfianza"
+  },
+  {
+   "id": "fijar_horizonte_ventana_replanificacion",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.372,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.392
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 5 de fijar_horizonte_ventana_replanificacion"
+  }
+ ]
+}

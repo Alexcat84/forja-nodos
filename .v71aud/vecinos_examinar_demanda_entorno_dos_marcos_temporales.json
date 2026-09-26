@@ -1,0 +1,59 @@
+{
+ "id": "examinar_demanda_entorno_dos_marcos_temporales",
+ "grafo": 410,
+ "bandejas": 69,
+ "vecinos": [
+  {
+   "id": "cerrar_brecha_dos_preguntas_estrategia",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.412,
+    "familia_id": 0.1,
+    "paso_contra_nodo": 0.483
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 4 de cerrar_brecha_dos_preguntas_estrategia"
+  },
+  {
+   "id": "definir_entorno_grupo_clientes_proveedores_competidores",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.392,
+    "familia_id": 0.091,
+    "paso_contra_nodo": 0.426
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 2 del candidato contra paso 4 de definir_entorno_grupo_clientes_proveedores_competidores"
+  },
+  {
+   "id": "determinar_estado_presente_capacidades_proyectos_merma",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.371,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.404
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 5 de determinar_estado_presente_capacidades_proyectos_merma"
+  },
+  {
+   "id": "examinar_entorno_expectativas_tecnologia_proveedores_grupos",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.377,
+    "familia_id": 0.2,
+    "paso_contra_nodo": 0.391
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 2 de examinar_entorno_expectativas_tecnologia_proveedores_grupos"
+  }
+ ]
+}

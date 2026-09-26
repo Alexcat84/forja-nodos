@@ -1,0 +1,14 @@
+filas del orden: 20
+  6   examinar_demanda_entorno_dos_marcos_temporales             antes que 8   cerrar_brecha_dos_preguntas_estrategia                     obliga | la cumple
+  7   determinar_estado_presente_capacidades_proyectos_merma     antes que 8   cerrar_brecha_dos_preguntas_estrategia                     obliga | la cumple
+  4   definir_entorno_grupo_clientes_proveedores_competidores    antes que 5   examinar_entorno_expectativas_tecnologia_proveedores_grupos obliga | la cumple
+  4   definir_entorno_grupo_clientes_proveedores_competidores    antes que 6   examinar_demanda_entorno_dos_marcos_temporales             obliga | la cumple
+  1   planificar_tres_pasos_demanda_estado_brecha                antes que 6   examinar_demanda_entorno_dos_marcos_temporales             obliga | la cumple
+  1   planificar_tres_pasos_demanda_estado_brecha                antes que 7   determinar_estado_presente_capacidades_proyectos_merma     obliga | la cumple
+  1   planificar_tres_pasos_demanda_estado_brecha                antes que 8   cerrar_brecha_dos_preguntas_estrategia                     obliga | la cumple
+  11  elegir_modo_control_motivacion_factor_cua                  antes que 12  escalonar_complejidad_puesto_empleado_nuevo                obliga | la cumple
+  6   examinar_demanda_entorno_dos_marcos_temporales             antes que 9   contestar_dos_preguntas_direccion_objetivos                D.36 de un solo lado | la cumple
+  3   fijar_horizonte_ventana_replanificacion                    antes que 4   definir_entorno_grupo_clientes_proveedores_competidores    D.36 de un solo lado | la cumple
+  4   definir_entorno_grupo_clientes_proveedores_competidores    antes que 7   determinar_estado_presente_capacidades_proyectos_merma     D.36 de un solo lado | la cumple
+  2   fijar_periodo_direccion_objetivos_retroalimentacion        antes que 3   fijar_horizonte_ventana_replanificacion                    D.36 de un solo lado | la cumple
+restricciones: {'D.36 de un solo lado, la cumple': 4, 'obliga, la cumple': 8} | suma: 12

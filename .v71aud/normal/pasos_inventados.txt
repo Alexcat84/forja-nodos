@@ -1,0 +1,7 @@
+cap_07: candidatos 9 | por marca: {'P': 2, 'T': 51} | suma: 53 | PUENTE 2 de 53 = 3.77 por ciento
+cap_10: candidatos 1 | por marca: {'P': 1, 'T': 7} | suma: 8 | PUENTE 1 de 8 = 12.50 por ciento
+cap_11: candidatos 2 | por marca: {'T': 17} | suma: 17 | PUENTE 0 de 17 = 0.00 por ciento
+cap_12: candidatos 3 | por marca: {'T': 11} | suma: 11 | PUENTE 0 de 11 = 0.00 por ciento
+cap_13: candidatos 2 | por marca: {'T': 14} | suma: 14 | PUENTE 0 de 14 = 0.00 por ciento
+cap_14: candidatos 3 | por marca: {'P': 1, 'T': 17} | suma: 18 | PUENTE 1 de 18 = 5.56 por ciento
+los seis: por marca: {'P': 4, 'T': 117} | suma: 121 | PUENTE 4 de 121 = 3.31 por ciento

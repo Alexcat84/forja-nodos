@@ -1,0 +1,18 @@
+sus lineas: 50 | por clase: {'SANO': 46, 'CONTINUA': 4} | suma: 50
+sus pares sin orden: 33
+mis filas: 33 | pares solo suyos: [] | solo mios: []
+pares: {'igual clase y madre': 31, 'distinto': 2} | suma: 33
+  DISTINTO cerrar_brecha_dos_preguntas_estrategia ~ determinar_estado_presente_capacidades_proyectos_merma | suya: SANO - (2 lineas) | mia sellada: CONTINUA determinar_estado_presente_capacidades_proyectos_merma
+  DISTINTO cerrar_brecha_dos_preguntas_estrategia ~ examinar_demanda_entorno_dos_marcos_temporales | suya: SANO - (2 lineas) | mia sellada: CONTINUA examinar_demanda_entorno_dos_marcos_temporales
+fidelidad: sus filas 121 | mis filas 121 | solo suyas [] | solo mias []
+fidelidad (suya, mia): {('P', 'T'): 4, ('T', 'D'): 6, ('T', 'T'): 111} | suma: 121
+   definir_entorno_grupo_clientes_proveedores_competidores paso 3 | suya T | mia D
+   definir_entorno_grupo_clientes_proveedores_competidores paso 4 | suya T | mia D
+   definir_entorno_grupo_clientes_proveedores_competidores paso 5 | suya T | mia D
+   elegir_modo_control_motivacion_factor_cua paso 6 | suya T | mia D
+   entregar_evaluacion_desempeno_tres_claves paso 2 | suya P | mia T
+   examinar_demanda_entorno_dos_marcos_temporales paso 7 | suya T | mia D
+   fijar_horizonte_ventana_replanificacion paso 5 | suya T | mia D
+   planificar_tres_pasos_demanda_estado_brecha paso 1 | suya P | mia T
+   planificar_tres_pasos_demanda_estado_brecha paso 4 | suya P | mia T
+   repartir_supervision_puesto_funcional_mision paso 8 | suya P | mia T
