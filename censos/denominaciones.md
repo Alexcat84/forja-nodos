@@ -1127,3 +1127,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-25 | elegir_modo_control_motivacion_factor_cua | sigla | CUA | castellano | - |
 | 2026-09-25 | elegir_modo_control_motivacion_factor_cua | otro_idioma | modes of control | ingles | - |
 | 2026-09-25 | elegir_modo_control_motivacion_factor_cua | otro_idioma | CUA factor | ingles | - |
+| 2026-09-25 | escalonar_complejidad_puesto_empleado_nuevo | nombre_largo | Aplicar el cuadro de motivacion contra factor CUA a la carrera de un empleado nuevo: puesto de bajo factor CUA al entrar, subida gradual de complejidad conforme gana experiencia compartida, y la promocion interna como su razon de fondo | castellano | - |
+| 2026-09-25 | escalonar_complejidad_puesto_empleado_nuevo | otro_idioma | promotion from within | ingles | - |
+| 2026-09-25 | escalonar_complejidad_puesto_empleado_nuevo | otro_idioma | CUA factor | ingles | - |
