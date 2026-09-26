@@ -68283,3 +68283,20 @@ La aduana de hoy: **BLOQUEARIA** con `2` vecino(s) contra `479`; lineas `--vered
     hoy 2 vecinos, barrido de la 78 2 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (465 grafo, 14 bandejas), en la 78 479 (459, 20)
 
 **Los dos vecinos son los de su bloque y las dos lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `78`, las tres seniales al digito; la poblacion, `479` (`465` mas `14`). Sin aristas en esta fila: su fila con `recorrer_organizacion_escuchar_plantilla` es `NO SOSTENGO` (calendario). Bitacora de `1190` a `1192`, sus dos lineas SANO.
+
+### Fila `8`: `recorrer_organizacion_escuchar_plantilla`, **INSERTADO** en `474.3` s, codigo `0`, commit `b14e46f5`
+
+La aduana de hoy: **BLOQUEARIA** con `3` vecino(s) contra `479`; lineas `--veredicto` pasadas: `3`. Salida entera en `.v80ext/insertar_08_recorrer_organizacion_escuchar_plantilla.txt`.
+
+<!-- TALLADO: parcial salida=.v80ext/insertar_08_recorrer_organizacion_escuchar_plantilla.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `observar_reunion_rutinaria_senales_plantilla` | similitud_texto | 0.420 | 0.125 | 0.437 | SANO |
+| `encargar_meta_especifica_dejar_libre_metodo` | similitud_texto | 0.401 | 0.000 | 0.426 | SANO |
+| `inspeccionar_reparto_informacion_notas_jefe` | similitud_texto | 0.352 | 0.000 | 0.383 | SANO |
+
+    $ python .v80ext/contra_barrido.py 08 recorrer_organizacion_escuchar_plantilla
+    hoy 3 vecinos, barrido de la 78 3 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (466 grafo, 13 bandejas), en la 78 479 (459, 20)
+
+**Los tres vecinos son los de su bloque y las tres lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `78`, las tres seniales al digito; la poblacion, `479` (`466` mas `13`). Sin aristas en esta fila: sus tres filas de madre en `.v78ext/aristas_lectura.txt` son `NO SOSTENGO` (calendario, `D78.13`), y la de `desplegar_plan_orden_operaciones_franqueza_radical` tambien. Bitacora de `1192` a `1195`, sus tres lineas SANO.
