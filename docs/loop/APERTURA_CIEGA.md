@@ -1,404 +1,611 @@
-# APERTURA CIEGA DE LA VUELTA 70, lote 7 (`grove_high_output`), **CLASE INSERCION**
+# APERTURA CIEGA DE LA VUELTA 71, lote 7 (`grove_high_output`), **CLASE INSERCION, VUELTA DE PREPARACION**
 
-*Auditor `claude-opus-5-5`, fase ciega, 25 sep 2026, la que el arnes numera `VUELTA 6` en la corrida que arranco el
-23 a las `21:50`. Linea **serial**, rama `extraccion-mundo-11`. Modo austero (`D.47`). Todo lo de esta pagina sale de
-`.v70aud/`, escrito y corrido en esta fase; cada bloque `$` lo pega `.v70aud/generar_apertura.py` corriendo el
-comando en el momento de escribirla. **No hay ninguna tabla en esta pagina**, a proposito, como en la `66`, la `68` y la
-`69`. **En esta fase no corro `git`** (ni `log`, ni `diff`, ni `status`, ni `hash-object`): mido el arbol por sus
-ficheros, sus huellas y sus fechas, y donde eso no alcanza lo digo como limitacion.*
+*Auditor `claude-opus-5-5`, fase ciega, 25 sep 2026, la que el arnes numera `VUELTA 7` en la corrida que arranco el 23 a
+las `21:50`. Linea **serial**, rama `extraccion-mundo-11`. Modo austero (`D.47`). Todo lo de esta pagina sale de `.v71aud/`,
+escrito y corrido en esta fase; cada bloque `$` lo pega `.v71aud/generar_apertura.py` corriendo el comando en el momento de
+escribirla. **No hay ninguna tabla en esta pagina**, a proposito, como en la `68`.*
+
+**UNA LIMITACION DE METODO, DICHA ANTES DE NADA: EN ESTA FASE NO HE CORRIDO `git` EN LA CARPETA.** La carpeta de una linea
+viva es solo del arnes (`PARALELO.md` `7`: *ni siquiera `git status`, que refresca el indice*), y lo aplico tambien a mi
+asiento. **Lo que las aperturas de la `68` y la `70` median con `git diff` aqui no lo mido**: que ficheros cambio la vuelta
+desde mi acta, y contra que commit. El commit en que esta el arbol lo leo de los ficheros de `.git/`, sin correr `git`:
+
+    $ cat .git/HEAD; cat .git/refs/heads/extraccion-mundo-11
+    ref: refs/heads/extraccion-mundo-11
+    682a39c98ae87b49b3e9e4aabf05a35d4e166982
 
 ## 0. **LA HERENCIA** (`D.40`)
 
-ACTA ANTERIOR LEIDA: a2ad919527f64c4aefe1fee58278246df8191c74
+ACTA ANTERIOR LEIDA: 1415acdc421ba8a562e191f458c590924d82a75a
 
-**Y esta vez la compruebo sin git**: es el blob de `docs/loop/ACTA_AUDITOR.md` tal como esta hoy en el arbol,
-calculado a mano como lo calcula git, con los finales de linea pasados a LF como manda `.gitattributes`. Tal cual no
-cuadra y normalizado si, y lo pego las dos cosas para que se vea por que. La `ACTA 68` la lei entera, de su linea de
-cabecera a la ultima del fichero:
-
-    $ python .v70aud/huella_acta.py
-    sha1 del blob tal cual: 4ea9ba4e6b7808fb8e078d5a6f4955dbf18fae4f
-    lineas con CRLF en el arbol: 395 | sha1 del blob normalizado a LF: a2ad919527f64c4aefe1fee58278246df8191c74
-    lineas del fichero: 47722 | la ACTA 68 empieza en la linea: [47401]
-
-HEREDADO 1: NO APLICA en esta fase. **Motivo:** `R5` es un remedio **del extractor** y se mide **sobre su
-reporte de la `70`** (`ACTA 68` `68.12`: *el reporte de la `70`, con `.v64ext/pegado64.py` y
-`.v64aud/normal/bloques_mudos.py`, los dos con la cabecera del tramo cambiada a la `70`*), y el reporte **no esta
-en el arbol**: el arnes lo retiro para esta fase (`D.34.2`) y no lo he recuperado por ninguna via. **Se mide en mi
-turno normal**, con los dos instrumentos sacados otra vez de los originales y no de sus copias. Lo que si esta en mi
-mano lo cumplo en mi pagina: cada bloque `$` lleva la salida del comando que abre, y nada mas.
+HEREDADO 1: NO APLICA en esta fase. **Motivo:** `R5` es un remedio **del extractor** y se mide **sobre su reporte de la
+`71`** (`ACTA 69` `69.12`: *el reporte de la `71`, con `.v64ext/pegado64.py` y `.v64aud/normal/bloques_mudos.py`, los dos con
+la cabecera del tramo cambiada a la `71`*), y el reporte **no esta en el arbol**: el arnes lo retiro para esta fase
+(`D.34.2`) y no lo he recuperado por ninguna via. **Se mide en mi turno normal**, con los dos instrumentos sacados otra vez de
+los originales y no de las copias del extractor. Lo que si esta en mi mano lo cumplo en mi pagina: cada bloque `$` lleva la
+salida del comando que abre, y nada mas.
 
     $ ls docs/loop/REPORTE.md docs/loop/ultimo_extractor.json docs/loop/ultimo_auditor.json docs/loop/CREDITO_serial.jsonl
     ls: cannot access 'docs/loop/REPORTE.md': No such file or directory
     ls: cannot access 'docs/loop/ultimo_extractor.json': No such file or directory
     ls: cannot access 'docs/loop/ultimo_auditor.json': No such file or directory
     ls: cannot access 'docs/loop/CREDITO_serial.jsonl': No such file or directory
-    $ grep -n "VUELTA 6 : APERTURA CIEGA" docs/loop/loop.log | tail -1
-    6523:[2026-09-25 16:05:36] VUELTA 6 : APERTURA CIEGA (claude-opus-5-5), retirados: REPORTE.md ultimo_extractor.json ultimo_auditor.json CREDITO_serial.jsonl
+    $ grep -n "VUELTA 7 : APERTURA CIEGA" docs/loop/loop.log | tail -1
+    6814:[2026-09-25 19:55:38] VUELTA 7 : APERTURA CIEGA (claude-opus-5-5), retirados: REPORTE.md ultimo_extractor.json ultimo_auditor.json CREDITO_serial.jsonl
 
-HEREDADO 2: CUMPLIDO. **`R6`, mio** (`ACTA 68` `68.12`): en esta fase los pasos de cualquier nodo los imprime
-`.v67aud/normal/pasos_ciego.py`, que no enseña `previos` ni `siguientes`, y **el unico bloque de pasos de esta pagina lo
-corre** (seccion `5`). Ningun instrumento mio de esta fase nombra esas claves:
+HEREDADO 2: CUMPLIDO. **`R6`, mio** (`ACTA 69` `69.12`): en esta fase los pasos de cualquier nodo los imprime
+`.v67aud/normal/pasos_ciego.py`, que no enseña `previos` ni `siguientes`, y ningun instrumento de esta fase imprime claves de
+relacion de un nodo que la vuelta haya tocado. Los ficheros de pasos que lei, y cuantas lineas con esas claves traen; y
+cuantos instrumentos mios las nombran:
 
-    $ grep -l -E "previos|siguientes" .v70aud/*.py | wc -l
+    $ grep -c -E "previos|siguientes" .v71aud/pasos_*.txt
+    .v71aud/pasos_cap07.txt:0
+    .v71aud/pasos_cap10.txt:0
+    .v71aud/pasos_cap11.txt:0
+    .v71aud/pasos_cap12.txt:0
+    .v71aud/pasos_cap13.txt:0
+    .v71aud/pasos_cap14.txt:0
+    .v71aud/pasos_fuera_a.txt:0
+    .v71aud/pasos_fuera_b.txt:0
+    .v71aud/pasos_grafo_madres.txt:0
+    $ grep -l -E "nodos_previos|nodos_siguientes|previos|siguientes" .v71aud/*.py .v71aud/*.sh | wc -l
     0
 
-**Y DIGO LO UNICO QUE SE ACERCA, para que se juzgue:** `.v70aud/grafo_sin_tanda.py` (seccion `2`) quita los ids de las
-`20` de **cualquier lista** de los nodos viejos, sin nombrar ninguna clave, para reconstruir el grafo que barri en la
-`68`, y **cuenta** cuantos nodos viejos tenian alguno. **No imprime ninguna clave ni ningun id de relacion**: una cuenta y
-un `SI` o un `NO`. Es la misma cuenta que la `67` publico sacandola de `git` (*reescritos solo en claves de relacion*), y
-como alli es **cuenta y no identidad**: que nodos son lo miro en el turno normal. El cumplimiento de la pagina entera lo
-mide un `grep` sobre ella al cerrarla (seccion `7`).
+**UNA COSA QUE DECLARO AQUI Y NO ESCONDO:** al abrir, para saber que campos trae una ficha de la bandeja, corri a mano un
+`python -c` que imprimio **la lista de NOMBRES de campos** de `cerrar_brecha_dos_preguntas_estrategia`, y en esa lista
+estan los nombres `nodos_previos` y `nodos_siguientes`; **sus valores NO se imprimieron** (el mismo comando se los saltaba
+por nombre), ni de esa ni de ninguna otra. No vi ninguna arista cableada. Lo cuento porque `R6` habla de no imprimir
+*claves de relacion*, y un lector estricto puede leer que el nombre de la clave ya lo es.
 
-HEREDADO 3: CUMPLIDO. **`R7`, mio** (`ACTA 68` `68.12`): toda linea de esta pagina que reparte un total en clases la
-imprime un instrumento que cuenta **todas** las clases con el mismo predicado y **dice su `suma`**: los nuevos de
-`.v70aud/` la traen desde que nacen (`huellas_hoy.py`, `entra_lo_leido.py`, `esperado_70.py`, `clasificacion_20.py`), y
-los que reuso de la `69` ya la traian (`poblacion.py`, `aristas_70.py`). **Medido sobre la pagina misma** en la
-seccion `7`, con `.v70aud/r7_pagina.py`.
+**LECTURA:** ningun instrumento mio de esta fase nombra esas claves, y ninguna salida de pasos las trae. **No vi ninguna
+clave de relacion con su valor de un nodo tocado en esta fase.** Y el cumplimiento de la pagina entera lo mide un `grep`
+sobre ella antes de cerrarla (seccion `9`).
+
+HEREDADO 3: CUMPLIDO. **`R7`, mio** (`ACTA 69` `69.12`): toda linea de conteo por clases que publico en esta pagina cuenta
+todas las clases con el mismo predicado y trae su `suma`, y la calcula e imprime el instrumento que la saca (`contar_fidelidad`,
+`vecinos_tabla`, `armar_clases`, `cruce_clases`, `cruce_aristas`, `cobertura` y `poblacion` la llevan). La medida sobre la
+pagina, con la copia de `.v70aud/r7_pagina.py`, esta en la seccion `9`.
+
+**LA HUELLA** es la que el prompt me entrega, comprobada solo contra el propio prompt: **no la recomputo**, porque
+`forja.py herencia` lee en esta fase un fichero retirado (`d146`).
 
 ## 1. **LO QUE VI SIN BUSCARLO, Y LO DIGO ANTES DE MEDIR** (`d146`)
 
-**La foto de `git status` que el entorno me pone delante trae los asuntos de los cinco ultimos commits del extractor,
-y tres traen sus conclusiones de esta vuelta**, que lei antes de leer nada:
+**La foto de `git status` que el entorno me pone delante trae los asuntos de los commits del extractor, y tres son cifras
+de su vuelta**: `682a39c` (*censo 410/1027/1/27/65 remedido, ninguna insertada*), `6b2f721` (*PASOS INVENTADOS de cap_07 a
+cap_14 en seis filas, 4 de 121 corregidos; huellas de las 20 contra 7be17c0, 17 iguales y las 3 corregidas; D.61 sin
+abiertos; R5 en cero; gate, guiones, 379 pruebas y cierre estricto en verde*) y `8f5e84b` (*el barrido de las 20 (20 de 20,
+poblacion 479, 50 pares), 50 lineas de veredicto listas (46 SANO, 4 CONTINUA), 4 aristas por lectura (3 D.37 de
+planificar_tres_pasos y 1 D.29), d170 sin linea ni arista, y el orden con D.36 en cero*). **Los lei antes de medir nada.** Es
+el mismo hueco de `d146` que declararon las aperturas de la `65` a la `70`, y no lo arreglo yo (`D.45`). Tambien lei la cola
+de `docs/loop/loop.log`, que no se retira, y mi propio encargo, `docs/loop/PROMPT_SIGUIENTE.md`.
 
-- `6c40696` *Vuelta 70, T3 a T5: las 20 filas de cap_05 y cap_06 dentro, 7 de 7 aristas en el grafo, censo
-  410/1027/1/27/65, 0 de 84 y 0 de 62, guardas en verde*;
-- `4a10a65` *Vuelta 70: el cierre estricto en verde y la tabla de tareas al cerrar*;
-- `d58cd8c` *Vuelta 70, fila 20: decidir_nivel_competente_inferior insertado por la aduana, movido a _insertados*;
-- y `a34a1f7` y `cfcbbb6`, sin cifras (*fila 20: su fila en el reporte* y *la salida del hook del cierre*).
+**Y DOS COSAS MAS, DEL MISMO TIPO:** un `ls -la .v71ext | head` me enseño **los nombres** de los primeros ficheros de su
+carpeta (`abortado/`, `apertura.txt`, `aristas_lectura.txt`, `barrer.sh`, `barrido.log`, `barrido_cerrar_brecha...txt`), **no
+su contenido**; y **las fichas de la bandeja llevan dentro, en su `resumen_teorico`, la lectura del propio extractor** (de
+que linea sale cada paso, y en tres de ellas la CORRECCION DECLARADA DE LA VUELTA 71 con el texto viejo dentro). **Esas
+correcciones las lei DESPUES de escribir mi fidelidad paso a paso**, y lo que dicen va en la seccion `3`, separado. **Pero el
+reparto de lineas de UNA ficha, `cerrar_brecha_dos_preguntas_estrategia`, si lo vi ANTES**: el mismo `python -c` de la
+seccion `0` imprimio los primeros `1500` caracteres de su `resumen_teorico`, que dicen de que frase de L39 sale cada uno de
+sus siete pasos. Mis siete filas de esa ficha dicen lo mismo, y no puedo probar que las leyera sin eso delante.
 
-**Tambien lei la cola de `docs/loop/loop.log`**, que no se retira (el turno del extractor, su coste y su duracion), **mi
-propio encargo** (`docs/loop/PROMPT_SIGUIENTE.md`, que es mio) y, para calcular la huella, `.gitattributes`; y busque con
-`grep` una clave de fin de linea en el fichero `.git/config` **leyendolo como texto**, sin correr git, y no salio nada. Es
-el mismo hueco de `d146` que declararon las aperturas de la `65` a la `69`, y no lo arreglo yo (`D.45`).
+**LO QUE HAGO CON ELLO:** ninguna cifra de esta pagina sale de esos asuntos; todas salen de un instrumento corrido en esta
+fase, y donde coinciden lo digo como coincidencia y no como fuente. **No he abierto nada de `.v71ext/` por dentro** (ni su
+fidelidad, ni su barrido, ni sus veredictos, ni sus aristas, ni su orden), **ni `bitacora/VEREDICTOS.jsonl` por dentro**:
+de ella solo cuento lineas. **Y ESTO SI PESA SOBRE MI LECTURA, Y LO DIGO:** el asunto de `8f5e84b` me dijo *3 D.37 de
+planificar_tres_pasos* y *4 CONTINUA* antes de leer. Mis tres `D.37` salen de la seccion `6` con su busqueda y su linea, y
+mis `CONTINUA` son los que son; pero no puedo probar que no me empujo, y por eso lo escribo aqui.
 
-**LO QUE ESO LE HACE A ESTA PAGINA, SIN REBAJARLO:**
+## 2. **EL ALCANCE, Y EL CENSO QUE LO SOSTIENE**
 
-1. **Mis clases de la tanda no las decido hoy**: son las de mis ficheros sellados de la `68` (`.v68aud/mis_clases.tsv` y
-   `.v68aud/aristas_lectura.tsv`), que la conjunta de la `69` dejo iguales en los `70` pares (`ACTA 68` `68.3`), mas la
-   unica correccion que yo mismo adjudique en la `ACTA 67` `67.4.d`, declarada dentro de `.v69aud/aristas_70.py`.
-2. **Ninguna cifra de esta pagina sale de esos asuntos**; todas salen de un instrumento corrido en esta fase, y **donde
-   coinciden lo digo como coincidencia y no como fuente**.
-3. **No he abierto nada de `.v70ext/`, `.v69ext/` ni `.v68ext/`**, ni `bitacora/VEREDICTOS.jsonl` por dentro: de ella solo
-   cuento lineas.
-4. **Lo que `d58cd8c` quiere decir con *insertado por la aduana* no lo se**, y no lo adivino: lo leo en el reporte.
+El encargo de la `71` (`docs/loop/PROMPT_SIGUIENTE.md`) es **dejar listas sin insertar ninguna** las `20` fichas de la bandeja
+de Grove cuya `UNIDAD DE ORIGEN` es `cap_07` (`9`), `cap_10` (`1`), `cap_11` (`2`), `cap_12` (`3`), `cap_13` (`2`) y `cap_14`
+(`3`): fidelidad entera, barrido, veredictos, aristas por lectura, orden y la huella de las `20`. Mi lista son las `20`
+primeras lineas de `.v70aud/normal/bandeja_grove.txt`, como el encargo manda:
 
-## 2. **EL CENSO, Y QUE LA POBLACION DE LA ADUANA ES LA DE MI BARRIDO DE LA `68`** (`D.38.4`, `D.38.5`)
+    $ head -20 .v70aud/normal/bandeja_grove.txt | awk '{print $1}' | sort | uniq -c; wc -l < .v71aud/los20.txt; head -20 .v70aud/normal/bandeja_grove.txt | awk '{print $2}' | diff - .v71aud/los20.txt && echo "los20.txt es la columna de ids de esas 20 lineas"
+          9 cap_07
+          1 cap_10
+          2 cap_11
+          3 cap_12
+          2 cap_13
+          3 cap_14
+    20
+    los20.txt es la columna de ids de esas 20 lineas
 
-La vuelta es **de insercion** (mi encargo, seccion `0`): las `20` filas de `cap_05` y `cap_06`, una por vez.
+**El censo de hoy**, sin `git` (grafo, bitacora, pares mutuos; y las bandejas de Grove, Gerber y Marquet, los insertados de
+Grove y `procesos/`):
 
     $ wc -l dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl config/pares_mutuos.jsonl
         410 dataset/nodos.jsonl
        1027 bitacora/VEREDICTOS.jsonl
           1 config/pares_mutuos.jsonl
        1438 total
-    $ ls cuarentena/grove_high_output/*.json | wc -l
-    27
-    $ ls cuarentena/_insertados/grove_high_output/*.json | wc -l
-    65
-    $ ls cuarentena/gerber_emyth/*.json cuarentena/marquet_turn_the_ship/*.json | wc -l
-    42
-    $ ls -A procesos/ | wc -l
-    0
-    $ python forja.py gate | head -2
-    GATE VERDE.
-      nodos verificados: 410
-
-**Sin `git`, lo que cambio desde mi barrido de la `68`, por tres instrumentos.** Primero, **cualquier fichero** del dato,
-de las bandejas, del codigo o de la configuracion con fecha de escritura posterior a las huellas que tome al lanzarlo,
-uno por linea:
-
-    $ ls -l --time-style=full-iso .v68aud/huellas_al_barrer.txt | awk '{print $6, $7, $9}'
-    2026-09-24 21:59:13.578070900 .v68aud/huellas_al_barrer.txt
-    $ find cuarentena dataset bitacora censos config fuentes esquema src scripts -type f -newer .v68aud/huellas_al_barrer.txt | sort
-    bitacora/VEREDICTOS.jsonl
-    censos/atribuciones.md
-    censos/denominaciones.md
-    dataset/nodos.jsonl
-
-Segundo, **las `50` huellas de entonces** (las `47` fichas de Grove, las dos filas de `cap_04` y el grafo) contra los
-ficheros de hoy, buscando en `_insertados` la ficha que ya no esta en la bandeja:
-
-    $ python .v70aud/huellas_hoy.py
-    huellas: 50 | por estado: {'movida a _insertados, misma huella': 20, 'en su sitio, misma huella': 29, 'grafo, aparte': 1} | suma: 50
-    movidas a _insertados: 20 | son las 20 de .v68aud/los20.txt: SI | fuera de ellas: []
-    ficheros que no cuadran: []
-
-Tercero, **el grafo**: si al de hoy le quito las `20` filas de la tanda, y ademas los ids de las `20` de las listas de los
-nodos viejos, sale el fichero que barri, byte a byte:
-
-    $ python .v70aud/grafo_sin_tanda.py
-    filas del grafo hoy: 410 | la reconstruccion reproduce el fichero de hoy: SI
-    de las 20 de la tanda en el grafo: 20 | filas que quedan sin ellas: 390
-    las 20 son las ultimas filas del fichero: SI
-    (a) sin las 20 filas, sha1 igual a la huella de mi barrido de la 68: NO
-    (b) nodos viejos con algun id de las 20 en alguna lista: 3 | sin esos ids, sha1 igual a la huella: SI
+    $ for d in cuarentena/grove_high_output cuarentena/_insertados/grove_high_output cuarentena/gerber_emyth cuarentena/marquet_turn_the_ship; do echo "$d $(ls $d/*.json | wc -l)"; done; echo "procesos $(ls -A procesos/ | wc -l)"
+    cuarentena/grove_high_output 27
+    cuarentena/_insertados/grove_high_output 65
+    cuarentena/gerber_emyth 22
+    cuarentena/marquet_turn_the_ship 20
+    procesos 0
     $ python .v70aud/poblacion.py
     poblacion: 479 | por sede: {'grafo': 410, 'bandeja': 69} | suma: 479
 
+**LECTURA:** `410`, `1027`, `1`, `27` y `65` son los de mi `ACTA 69` `69.1` al cerrar la `70`, y Gerber y Marquet siguen en
+`22` y `20`: **la vuelta no inserto nada ni movio nada de sede**, que es lo que el encargo pedia. `procesos/` esta vacio. La
+poblacion del barrido es `479`, `410` mas `69`, la que el encargo daba. **Lo que no puedo decir sin `git`**: si alguna linea
+de la bitacora o algun byte del grafo cambio sin cambiar la cuenta. Eso lo mido en mi turno normal, con el hash del
+reporte delante.
+
+**Y LAS `20` SON TODO LO QUE GROVE TIENE DE ESOS SEIS CAPITULOS**, en cualquier sede, por la `UNIDAD DE ORIGEN` de su
+`resumen_teorico`:
+
+    $ python .v71aud/cobertura.py
+    por sede y capitulo: {('bandeja', 'cap_07'): 9, ('bandeja', 'cap_10'): 1, ('bandeja', 'cap_11'): 2, ('bandeja', 'cap_12'): 3, ('bandeja', 'cap_13'): 2, ('bandeja', 'cap_14'): 3} | suma: 20
+    de esos seis capitulos y fuera de los 20: 0
+
+**LECTURA, sin medirla mas:** hay piezas de esos capitulos sin candidato en ninguna sede (en `cap_07`, *decir que no* de L65 y
+L81 y los casos de Colon y Filipinas; en `cap_10`, el grupo de pares de L29 a L35, la publicidad de L45 a L51 y la
+organizacion de dos planos de L59 a L79; en `cap_12`, la jerarquia de Maslow, el dinero, el miedo y la analogia deportiva
+de L97 a L117; en `cap_13`, la transmision de valores de L53 y L55; en `cap_14`, la evaluacion del desempeño de L81 a L103,
+las sorpresas de L159, los tres desenlaces de L173 a L181, el as de L183 a L191 y la autoevaluacion y la entrega por escrito
+de L193 a L201). **Es la frontera de las vueltas que minaron Grove, que no reabro (`D.47`)**; solo digo que la vi.
+
+## 3. **LA FIDELIDAD DE LAS `20`, LEIDA ENTERA** (`D.30`, `D.58`, `8`)
+
+Lei **enteros** los seis capitulos, `cap_07` (Cap. 6, *Planning*), `cap_10` (Cap. 9, *Dual Reporting*), `cap_11` (Cap. 10,
+*Modes of Control*), `cap_12` (Cap. 11, *The Sports Analogy*), `cap_13` (Cap. 12, *Task-Relevant Maturity*) y `cap_14` (Cap.
+13, *Performance Appraisal*), y cada paso de las `20` contra su linea, con los pasos delante por `pasos_ciego.py`
+(`.v71aud/pasos_cap07.txt` a `.v71aud/pasos_cap14.txt`).
+
+    $ wc -l fuentes/grove_high_output/cap_07.md fuentes/grove_high_output/cap_1[0-4].md
+       105 fuentes/grove_high_output/cap_07.md
+        79 fuentes/grove_high_output/cap_10.md
+        83 fuentes/grove_high_output/cap_11.md
+       117 fuentes/grove_high_output/cap_12.md
+        77 fuentes/grove_high_output/cap_13.md
+       203 fuentes/grove_high_output/cap_14.md
+       664 total
+
+Una fila por paso en `.v71aud/fidelidad.tsv`: `T` transcripcion, `P` puente (**la clausula reescrita cuenta como `P`**, `ACTA
+62` `62.5`), `D` mi duda, con su capitulo, su linea y la frase del libro. El contador es copia de `.v68aud/contar_fidelidad.py`
+con las rutas cambiadas, **una fila por capitulo** (`8.2`) y la suma de cada reparto (`R7`), y cruza cada fila con los pasos
+de la ficha de la bandeja de hoy:
+
+    $ python .v71aud/contar_fidelidad.py
+    candidato                                                    ficha filas   T   P  DUDA  suma
+    cerrar_brecha_dos_preguntas_estrategia                           7     7   7   0     0     7
+    contestar_dos_preguntas_direccion_objetivos                      5     5   5   0     0     5
+    definir_entorno_grupo_clientes_proveedores_competidores          6     6   3   0     3     6
+    determinar_estado_presente_capacidades_proyectos_merma           7     7   7   0     0     7
+    examinar_demanda_entorno_dos_marcos_temporales                   7     7   6   0     1     7
+    examinar_entorno_expectativas_tecnologia_proveedores_grupos      5     5   5   0     0     5
+    fijar_horizonte_ventana_replanificacion                          5     5   4   0     1     5
+    fijar_periodo_direccion_objetivos_retroalimentacion              5     5   5   0     0     5
+    planificar_tres_pasos_demanda_estado_brecha                      6     6   6   0     0     6
+    repartir_supervision_puesto_funcional_mision                     8     8   8   0     0     8
+    elegir_modo_control_motivacion_factor_cua                        8     8   7   0     1     8
+    escalonar_complejidad_puesto_empleado_nuevo                      9     9   9   0     0     9
+    diagnosticar_capacidad_motivacion_prueba_vida                    4     4   4   0     0     4
+    diagnosticar_nivel_motivacion_reaccion_aumento_salario           3     3   3   0     0     3
+    fijar_meta_direccion_objetivos_mitad_probabilidad                4     4   4   0     0     4
+    decidir_amistad_subordinado_prueba_revision_dificil              6     6   6   0     0     6
+    elegir_estilo_direccion_madurez_relevante_tarea                  8     8   8   0     0     8
+    entregar_evaluacion_desempeno_tres_claves                        6     6   6   0     0     6
+    guiar_subordinado_etapas_resistencia_desempeno                   6     6   6   0     0     6
+    preparar_resena_mixta_hoja_trabajo                               6     6   6   0     0     6
+    cap_07: candidatos 9 | pasos en ficha 53 | filas 53 | T 48 | P 0 | DUDA 5 | suma: 53 | PUENTE 0 de 53 = 0.00 por ciento | si las DUDA cayesen: 5 de 53 = 9.43 por ciento
+    cap_10: candidatos 1 | pasos en ficha 8 | filas 8 | T 8 | P 0 | DUDA 0 | suma: 8 | PUENTE 0 de 8 = 0.00 por ciento | si las DUDA cayesen: 0 de 8 = 0.00 por ciento
+    cap_11: candidatos 2 | pasos en ficha 17 | filas 17 | T 16 | P 0 | DUDA 1 | suma: 17 | PUENTE 0 de 17 = 0.00 por ciento | si las DUDA cayesen: 1 de 17 = 5.88 por ciento
+    cap_12: candidatos 3 | pasos en ficha 11 | filas 11 | T 11 | P 0 | DUDA 0 | suma: 11 | PUENTE 0 de 11 = 0.00 por ciento | si las DUDA cayesen: 0 de 11 = 0.00 por ciento
+    cap_13: candidatos 2 | pasos en ficha 14 | filas 14 | T 14 | P 0 | DUDA 0 | suma: 14 | PUENTE 0 de 14 = 0.00 por ciento | si las DUDA cayesen: 0 de 14 = 0.00 por ciento
+    cap_14: candidatos 3 | pasos en ficha 18 | filas 18 | T 18 | P 0 | DUDA 0 | suma: 18 | PUENTE 0 de 18 = 0.00 por ciento | si las DUDA cayesen: 0 de 18 = 0.00 por ciento
+    los seis: candidatos 20 | pasos en ficha 121 | filas 121 | T 115 | P 0 | DUDA 6 | suma: 121
+
+**LECTURA: los seis capitulos son de inventario rico** (frases con *should*, *must*, *you need to*, preguntas literales y
+cuadros con sus casillas), y los pasos los transcriben casi frase a frase. **No encuentro ningun PUENTE en el texto de hoy
+de las fichas.** Mis seis dudas son **tres figuras**, y en las tres me inclino a `T`:
+
+- **el ejemplo convertido en mandato**: `definir_entorno_grupo_clientes_proveedores_competidores` pasos `3`, `4` y `5` (*Lista
+  a tus clientes / proveedores / competidores*), que L25 da **dentro del ejemplo del mailroom** (*your environment would
+  consist of*); y `examinar_demanda_entorno_dos_marcos_temporales` paso `7` (*No rebajes la demanda que declaras por lo que
+  creas que la otra parte puede entregar*), que L31 da como **el ejemplo de marketing** que sostiene el *No* del paso `6`.
+- **la razon convertida en instruccion**: `fijar_horizonte_ventana_replanificacion` paso `5` (*Regula esa frecuencia por la
+  retroalimentacion*), donde L61 da la retroalimentacion como **el motivo** de no replanificar demasiado.
+- **la clausula añadida por descarte**: `elegir_modo_control_motivacion_factor_cua` paso `6` (*... con el factor CUA bajo, usa
+  el modo contractual*): la frase de L61 **no dice** *CUA bajo*; se deduce del cuadro de cuatro cuadrantes que la misma
+  linea pone.
+
+**`PASOS INVENTADOS` por mi instrumento, sobre el texto de hoy: `0` en los seis capitulos**; si mis dudas cayesen, `cap_07`
+`5` de `53` (`9,43`), `cap_11` `1` de `17` (`5,88`) y los otros cuatro en `0`. **Por debajo del `10` en las dos lecturas, y el
+peor capitulo es `cap_07`** en la lectura estricta. Es preparacion y no entrada.
+
+**Y LO QUE LEI DESPUES, EN LAS FICHAS:** tres de las `20` traen en su `resumen_teorico` una *CORRECCION DECLARADA DE LA
+VUELTA 71* con el texto viejo dentro: `planificar_tres_pasos_demanda_estado_brecha` pasos `1` (*y no sobre otra cosa*) y
+`4`, `repartir_supervision_puesto_funcional_mision` paso `8` (el *quiza* que el paso viejo se comia del *perhaps* de L43) y
+`entregar_evaluacion_desempeno_tres_claves` paso `2` (el *completo* que L111 no pone). **Los cuatro pasos corregidos los lei
+yo `T` en su texto de hoy, y sus cuatro textos viejos los habria leido `P`**: las cuatro correcciones se sostienen por mi
+lectura. **Lo que no puedo decir** es si mi lectura ciega habria cazado esos cuatro puentes, porque cuando lei ya no estaban.
+**Coincide con los *4 de 121 corregidos* y las *3* fichas corregidas del asunto de `6b2f721`, y lo digo como coincidencia**;
+fila a fila lo cruzo en mi turno normal.
+
+    $ grep -l "CORRECCION DECLARADA DE LA VUELTA 71" cuarentena/grove_high_output/*.json | wc -l; grep -l "CORRECCION DECLARADA DE LA VUELTA 71" cuarentena/grove_high_output/*.json | sed 's|.*/||'
+    3
+    entregar_evaluacion_desempeno_tres_claves.json
+    planificar_tres_pasos_demanda_estado_brecha.json
+    repartir_supervision_puesto_funcional_mision.json
+
+## 4. **MI BARRIDO DE LAS `20`, SOBRE GRAFO MAS BANDEJAS** (`D.38.4`, `D.38.5`)
+
+Copia de `.v68aud/barrido_uno.py` (la ficha normalizada como la aduana, contra `dataset/nodos.jsonl` mas
+`aduana.poblacion_de_bandejas`, con `buscar_vecinos` de `src/aduana.py`) y de `.v68aud/barrer.sh` con la lista cambiada a
+`.v71aud/los20.txt`, **cinco a la vez, recogido entero dentro de este turno**. Antes de lanzarlo guarde la huella de cada
+ficha de las tres bandejas y del grafo, y al recogerlo las comprobe:
+
+    $ head -1 .v71aud/barrido.log; tail -1 .v71aud/barrido.log; grep -c "rc=0" .v71aud/barrido.log; grep -c "rc=" .v71aud/barrido.log
+    INICIO 2026-09-25 19:57:20
+    TODOS TERMINADOS 2026-09-25 21:15:44
+    20
+    20
+    $ wc -l < .v71aud/huellas_al_barrer.txt; sha1sum -c --quiet .v71aud/huellas_al_barrer.txt && echo "las 69 fichas de las tres bandejas y el grafo: mismas huellas que al barrer"
+    70
+    las 69 fichas de las tres bandejas y el grafo: mismas huellas que al barrer
+
+**Poblacion y vecinos por candidato:**
+
+    $ python .v71aud/vecinos_tabla.py | tee .v71aud/vecinos_tabla.txt | sed -n '1,/^sin fichero/p'
+    (1) candidato | poblacion | vecinos | en grafo | en bandeja
+        cerrar_brecha_dos_preguntas_estrategia                   479  10   5   5
+        contestar_dos_preguntas_direccion_objetivos              479   6   3   3
+        definir_entorno_grupo_clientes_proveedores_competidores  479   6   2   4
+        determinar_estado_presente_capacidades_proyectos_merma   479   5   0   5
+        examinar_demanda_entorno_dos_marcos_temporales           479   4   0   4
+        examinar_entorno_expectativas_tecnologia_proveedores_grupos 479   6   0   6
+        fijar_horizonte_ventana_replanificacion                  479   3   1   2
+        fijar_periodo_direccion_objetivos_retroalimentacion      479   2   0   2
+        planificar_tres_pasos_demanda_estado_brecha              479   1   0   1
+        repartir_supervision_puesto_funcional_mision             479   0   0   0
+        elegir_modo_control_motivacion_factor_cua                479   0   0   0
+        escalonar_complejidad_puesto_empleado_nuevo              479   0   0   0
+        diagnosticar_capacidad_motivacion_prueba_vida            479   2   0   2
+        diagnosticar_nivel_motivacion_reaccion_aumento_salario   479   1   0   1
+        fijar_meta_direccion_objetivos_mitad_probabilidad        479   1   0   1
+        decidir_amistad_subordinado_prueba_revision_dificil      479   1   0   1
+        elegir_estilo_direccion_madurez_relevante_tarea          479   0   0   0
+        entregar_evaluacion_desempeno_tres_claves                479   1   0   1
+        guiar_subordinado_etapas_resistencia_desempeno           479   0   0   0
+        preparar_resena_mixta_hoja_trabajo                       479   1   0   1
+    sin fichero de vecinos: 0 []
+    $ grep "^filas de vecino" .v71aud/vecinos_tabla.txt; grep ">" .v71aud/vecinos_tabla.txt | grep -c " grafo "; tail -1 .v71aud/vecinos_tabla.txt
+    filas de vecino: 50
+    11
+    pares sin orden: 33 | {'con fuera': 12, 'tanda-tanda': 21} | suma: 33
+
+**Las filas de vecino con un extremo en el grafo, y los pares con un extremo fuera de la tanda:**
+
+    $ grep ">" .v71aud/vecinos_tabla.txt | grep " grafo " | awk '{print $1, $3}'
+    cerrar_brecha_dos_preguntas_estrategia preguntar_seguimiento_hallar_huecos
+    cerrar_brecha_dos_preguntas_estrategia responder_tres_preguntas_vocacion_directiva
+    cerrar_brecha_dos_preguntas_estrategia preparar_preguntas_entrevista_antemano
+    cerrar_brecha_dos_preguntas_estrategia archivar_indicadores_resolver_problemas
+    cerrar_brecha_dos_preguntas_estrategia cortar_discusion_libre_momento_justo
+    contestar_dos_preguntas_direccion_objetivos zanjar_seis_preguntas_decision_adelantado
+    contestar_dos_preguntas_direccion_objetivos anunciar_decision_inesperada_reconvocar_reunion
+    contestar_dos_preguntas_direccion_objetivos vencer_sindrome_grupo_pares_autoconfianza
+    definir_entorno_grupo_clientes_proveedores_competidores anunciar_decision_inesperada_reconvocar_reunion
+    definir_entorno_grupo_clientes_proveedores_competidores vencer_sindrome_grupo_pares_autoconfianza
+    fijar_horizonte_ventana_replanificacion anunciar_decision_inesperada_reconvocar_reunion
+    $ grep "~" .v71aud/vecinos_tabla.txt | grep "con fuera" | awk '{print $1, $3}'
+    cerrar_brecha_dos_preguntas_estrategia preguntar_seguimiento_hallar_huecos
+    cerrar_brecha_dos_preguntas_estrategia responder_tres_preguntas_vocacion_directiva
+    cerrar_brecha_dos_preguntas_estrategia preparar_preguntas_entrevista_antemano
+    archivar_indicadores_resolver_problemas cerrar_brecha_dos_preguntas_estrategia
+    cerrar_brecha_dos_preguntas_estrategia cortar_discusion_libre_momento_justo
+    contestar_dos_preguntas_direccion_objetivos zanjar_seis_preguntas_decision_adelantado
+    anunciar_decision_inesperada_reconvocar_reunion contestar_dos_preguntas_direccion_objetivos
+    contestar_dos_preguntas_direccion_objetivos vencer_sindrome_grupo_pares_autoconfianza
+    anunciar_decision_inesperada_reconvocar_reunion definir_entorno_grupo_clientes_proveedores_competidores
+    definir_entorno_grupo_clientes_proveedores_competidores vencer_sindrome_grupo_pares_autoconfianza
+    anunciar_decision_inesperada_reconvocar_reunion fijar_horizonte_ventana_replanificacion
+    preparar_resena_mixta_hoja_trabajo usar_banco_nueve_preguntas_entrevista
+
 **LECTURA:**
 
-- **El grafo tiene `410` filas, la bandeja de Grove `27`, sus insertados `65`, los pares mutuos `1` y `procesos/` esta
-  vacio.** Coincide con el `410/1027/1/27/65` del asunto de `6c40696`, y lo digo como coincidencia.
-- **Las `20` fichas movidas a `_insertados` son las `20` de mi lista, con la huella que tenian cuando las barri**, y las
-  `27` que quedan en la bandeja y las dos filas de `cap_04`, tambien.
-- **Los `390` nodos viejos son byte a byte los que barri, salvo `3` que ganaron algun id de la tanda en alguna lista**: sin
-  esos ids, el fichero reconstruido tiene la huella de mi barrido. Quitando solo las filas no la tiene, y eso es lo que
-  se espera si la tanda cableo madres viejas. **La cuenta `3` coincide con las `3` madres viejas que mi lectura espera**
-  (seccion `4`), y es **cuenta y no identidad**. Las `20` son las ultimas filas del fichero.
-- **Ningun fichero de `src/`, `scripts/`, `config/`, `esquema/`, `fuentes/` ni de ninguna bandeja se escribio despues
-  de mis huellas**; lo que se escribio es el grafo, la bitacora y dos censos, que es lo que escribe una insercion. **Lo que
-  no veo:** Gerber y Marquet no estan en mis huellas, asi que de ellas **mido la fecha y no el contenido**.
-- **La poblacion de hoy es `479`**, la de mi barrido, con `20` en otra sede. Con el codigo, los umbrales y los textos
-  iguales, **la aduana de cada `insertar` tuvo delante lo que tuvo mi barrido**, porque mover una ficha de la bandeja al
-  grafo no la saca de la poblacion, y `buscar_vecinos` y `medir` miden titulo, resumen, pasos, id y dominio, **no las claves
-  de relacion** (`src/aduana.py` y `texto_comparable` de `src/comun.py`, que lei).
+1. **Las `20` dan `50` filas de vecino en `33` pares sin orden**, `21` entre dos de la tanda y `12` con uno de fuera.
+   **Coincide con los *50 pares* y las *50 lineas de veredicto* del asunto de `8f5e84b`**, que ahi llama *pares* a mis
+   filas, como en la `68`; y lo digo como coincidencia.
+2. **Cinco no levantan a nadie contra `479`**: `repartir_supervision_puesto_funcional_mision`,
+   `elegir_modo_control_motivacion_factor_cua`, `escalonar_complejidad_puesto_empleado_nuevo`,
+   `elegir_estilo_direccion_madurez_relevante_tarea` y `guiar_subordinado_etapas_resistencia_desempeno`. **Lo que mas levanta
+   es `cap_07`**, un capitulo de nueve piezas sobre el mismo proceso: `cerrar_brecha` levanta `10`, cinco hermanas y cinco del
+   grafo por la forma *pregunta*.
+3. **Los vecinos del grafo** son todos por la forma o por palabras sueltas, y ninguno de otro capitulo de Grove que sea del
+   mismo asunto: `preguntar_seguimiento_hallar_huecos` de Scott y `responder_tres_preguntas_vocacion_directiva` y
+   `preparar_preguntas_entrevista_antemano` de Zhuo, por `paso_contra_nodo` entre `0,614` y `0,645` sobre el verbo
+   *preguntar*; y de Grove `archivar_indicadores`, `cortar_discusion`, `zanjar_seis_preguntas`, `anunciar_decision` y
+   `vencer_sindrome`, por `similitud_texto` entre `0,350` y `0,374`. **El unico de fuera que esta en una bandeja** es
+   `usar_banco_nueve_preguntas_entrevista`, de `cap_15`, levantado por `preparar_resena`.
+4. **`d170`, CON LA SALIDA DELANTE:** `elegir_estilo_direccion_madurez_relevante_tarea` no levanta a nadie, y
+   `fijar_frecuencia_reunion_individual_madurez_tarea` no aparece en ninguna fila de mi barrido:
 
-## 3. **LAS `20`: LO QUE ENTRO ES LO QUE SE LEYO** (`D.58`), **Y SUS PASOS INVENTADOS** (`8`, `8.2`)
+    $ grep -c "fijar_frecuencia_reunion_individual_madurez_tarea" .v71aud/vecinos_tabla.txt; grep "^    elegir_estilo" .v71aud/vecinos_tabla.txt
+    0
+        elegir_estilo_direccion_madurez_relevante_tarea          479   0   0   0
 
-Cada nodo del grafo contra su ficha de `_insertados` (cuya huella es la leida, seccion `2`) en titulo, condiciones,
-pasos, entregable y resumen; y sus pasos contra **mi** lectura entera sellada en la `68`, `.v68aud/fidelidad_fuente.txt`,
-una fila por paso:
+   **Mi barrido no levanta el par: no hay linea ni arista** (`D69.3`), que es lo que el encargo dice que toca en ese caso.
+   Coincide con el *d170 sin linea ni arista* del asunto de `8f5e84b`.
+5. **LO QUE EL BARRIDO NO LEVANTA Y SE LEE:** las tres partes de la serie de `planificar_tres_pasos` (seccion `6`), y
+   `elegir_modo` con `escalonar_complejidad`, que el libro une con palabras (*Let's apply our model*, `cap_11` L63). **Las dos
+   cosas van por lectura.**
 
-    $ python .v70aud/entra_lo_leido.py
-    las 20 por sede hoy: {'grafo y _insertados': 20} | suma: 20
-    nodos del grafo contra su ficha, cinco campos: {'igual': 20} | suma: 20
-    nodos con descuadre entre sus pasos en el grafo y mis filas selladas: 0 []
-    cap_05 lo que ENTRO: candidatos 12 | pasos 84 | mis marcas: {'T': 81, 'P': 0, 'D': 3} | suma: 84 | PUENTE 0 de 84 = 0.00 por ciento | con las D adjudicadas T: T 84, P 0, suma 84
-    cap_06 lo que ENTRO: candidatos 8 | pasos 62 | mis marcas: {'T': 61, 'P': 0, 'D': 1} | suma: 62 | PUENTE 0 de 62 = 0.00 por ciento | con las D adjudicadas T: T 62, P 0, suma 62
+**EL RELOJ, medido y no techo:** de las `19:57:20` a las `21:15:44` del 25, con fichas de estos segundos (la menor y la mayor):
 
-**LECTURA:** las `20` viven en el grafo **con los textos que se leyeron**, y cada una con tantos pasos como filas tiene mi
-lectura. **`PASOS INVENTADOS` de lo que ENTRO: `cap_05` `0` de `84` y `cap_06` `0` de `62`**, las cifras firmadas en la
-`ACTA 67` `67.5` y la `ACTA 68` `68.6`; mis `D` las adjudico `T` la `ACTA 67` `67.4.a`, y no lo reabro (`D.47`). **Por debajo
-del `10`: no se baja escalon** (`8.1`). Coincide con el *0 de 84 y 0 de 62* de `6c40696`, y lo digo como coincidencia.
+    $ grep "rc=" .v71aud/barrido.log | sed 's/.*segundos=//' | sort -n | sed -n '1p;$p'
+    515
+    1755
 
-## 4. **LO QUE MI LECTURA ESPERA QUE LA TANDA DEJE**
+## 5. **MI LECTURA CIEGA DE LOS PARES** (`1.2`, `6.1`, y solo la vara `6.1`)
 
-Sacado **solo** de mis ficheros sellados de la `68` y de `.v69aud/aristas_70.py`; la bitacora, solo contada:
+**Leidos con los pasos de los dos delante**, todos con `pasos_ciego.py` (`R6`): `.v71aud/pasos_cap07.txt` a
+`.v71aud/pasos_cap14.txt` para las `20`, y `.v71aud/pasos_fuera_a.txt` y `.v71aud/pasos_fuera_b.txt` para los de fuera. **Una
+fila por par** en `.v71aud/mis_clases.tsv`, con su razon. **De donde sale cada fila:** los pares de dentro de un mismo capitulo
+los escribi **todos** (`44`, los `36` de `cap_07` y los `8` de `cap_11` a `cap_14`) **antes de mirar ninguna fila del barrido**,
+en `.v71aud/clases_intra.txt`; los de entre capitulos y los de fuera, al recogerlo, en `.v71aud/clases_fuera.txt`.
+`armar_clases.py` los junta, y el cruce comprueba que cada par del barrido tiene su fila y cada fila su par:
 
-    $ python .v70aud/esperado_70.py
-    filas dirigidas de mi barrido con candidato de las 20: 118 | por vecino: {'vecino en la tanda': 98, 'vecino fuera de la tanda': 20} | suma: 118
-    aristas esperadas: 7 | por origen: {'CONTINUA': 2, 'SOSTENGO': 5} | suma: 7
-    madres esperadas que no son de las 20 (viven en el grafo desde antes): 3 ['agrupar_interrupciones_subordinados_reuniones_regulares', 'agrupar_tareas_semejantes_aprovechar_preparacion', 'buscar_regularidad_bloques_iguales_trabajo_mando']
-    hijos esperados que no son de las 20: 0 []
-    bitacora esperada: 904 + 118 + 5 = 1027 | hoy (lineas): 1027 | IGUAL
-    filas dirigidas por la clase sellada de su par: {'SANO': 114, 'CONTINUA': 4} | suma: 118
-    $ python .v69aud/aristas_70.py
-    filas de aristas_lectura.tsv: 17 | por clase (sin la marca DUDA, con ACTA 67 67.4.d aplicada): {'SOSTENGO': 5, 'EN VEREDICTO': 2, 'NO': 10} | suma: 17
-    aristas esperadas en la 70: 7 | por origen: {'CONTINUA de veredicto': 2, 'SOSTENGO por lectura': 5} | suma: 7
-      CONTINUA   tomar_notas_copia_guion_reunion_individual           > conducir_reunion_individual_telefono_distancia
-      CONTINUA   preparar_guion_reunion_individual_subordinado        > tomar_notas_copia_guion_reunion_individual
-      SOSTENGO   buscar_regularidad_bloques_iguales_trabajo_mando     > infundir_regularidad_reunion_proceso
-      SOSTENGO   agrupar_tareas_semejantes_aprovechar_preparacion     > infundir_regularidad_reunion_proceso   (ACTA 67 67.4.d)
-      SOSTENGO   agrupar_interrupciones_subordinados_reuniones_regulares > acumular_asuntos_importantes_fichero_espera
-      SOSTENGO   conducir_etapas_modelo_ideal_decision                > ejercer_poder_posicion_etapa_decision_clara
-      SOSTENGO   conducir_etapas_modelo_ideal_decision                > cortar_discusion_libre_momento_justo
-    de ellas con madre usar_tres_clases_reunion_proceso: 0
+    $ python .v71aud/armar_clases.py
+    pares del barrido: 33 | filas escritas: 33 | sin clase: 0 []
+    de donde sale cada fila: {'fuera': 15, 'intra': 18} | suma: 33
+    filas de clases_intra.txt: 44 | por el barrido: {'no levantada': 26, 'levantada': 18} | suma: 44
+    $ python .v71aud/cruce_clases.py
+    pares del barrido: 33 | filas de clase: 33
+    pares sin fila: []
+    filas sin par: []
+    clases: {'SANO': 29, 'CONTINUA': 4} | suma: 33
+    con DUDA escrita: 5
+      CONTINUA  cerrar_brecha_dos_preguntas_estrategia ~ examinar_demanda_entorno_dos_marcos_temporales | madre examinar_demanda_entorno_dos_marcos_temporales
+      CONTINUA  cerrar_brecha_dos_preguntas_estrategia ~ determinar_estado_presente_capacidades_proyectos_merma | madre determinar_estado_presente_capacidades_proyectos_merma
+      CONTINUA  definir_entorno_grupo_clientes_proveedores_competidores ~ examinar_entorno_expectativas_tecnologia_proveedores_grupos | madre definir_entorno_grupo_clientes_proveedores_competidores
+      CONTINUA  definir_entorno_grupo_clientes_proveedores_competidores ~ examinar_demanda_entorno_dos_marcos_temporales | madre definir_entorno_grupo_clientes_proveedores_competidores
 
-**LECTURA, y lo que se compara en el turno normal, no aqui:**
+**LECTURA, los cuatro `CONTINUA`**, los cuatro dentro de la pieza de planificacion de `cap_07`, y en los cuatro el hijo trae
+procedimiento propio, asi que ninguno es `REPITE`:
 
-- **Lineas de bitacora.** Si cada `insertar` escribio una linea por vecino que su aduana levanto, y la aduana levanto lo
-  que mi barrido (seccion `2`), son `118`: `4` `CONTINUA` y `114` `SANO` por la clase sellada de su par; y `python forja.py
-  arista` escribe su propia linea, asi que con mis `5` por lectura son `904` mas `118` mas `5`. **La bitacora tiene `1027`.** **Es
-  coincidencia de cuenta y no de contenido**: no he abierto ni una linea. **Mi lectura no espera ningun vecino sin linea
-  preparada**, porque la poblacion es la del barrido; uno que apareciera seria un hallazgo.
-- **Aristas: `7`**, las `2` `CONTINUA` de las notas y `5` por lectura, **ninguna con madre
-  `usar_tres_clases_reunion_proceso`**, y `3` de ellas con madre vieja (`buscar_regularidad` y `agrupar_tareas` a
-  `infundir`, y `agrupar_interrupciones` a `acumular`). Coincide con el *7 de 7* de `6c40696`, y con la cuenta `3` de la
-  seccion `2`: **par a par lo cruzo en el turno normal**, que es donde un `7` igual con pares distintos se veria.
+- `definir_entorno_grupo_clientes_proveedores_competidores` madre de `examinar_demanda_entorno_dos_marcos_temporales`: L29
+  remite con palabras (*Once you have established what constitutes your environment*), y el hijo anade los dos marcos, la
+  diferencia y no rebajar.
+- `definir_entorno_grupo_clientes_proveedores_competidores` madre de
+  `examinar_entorno_expectativas_tecnologia_proveedores_grupos`: la condicion del hijo es el entorno ya definido, y anade los
+  cuatro objetos y las dos preguntas sobre los otros grupos.
+- `examinar_demanda_entorno_dos_marcos_temporales` y `determinar_estado_presente_capacidades_proyectos_merma` madres, cada una
+  en su par, de `cerrar_brecha_dos_preguntas_estrategia`: la condicion de la hija es *ya tienes medida la demanda de tu
+  entorno y tu estado presente*, el producto de las dos (L39).
 
-## 5. **MI CLASIFICACION DE CADA CANDIDATO, Y LAS CINCO ARISTAS POR LECTURA RELEIDAS** (`6.1`, y solo la vara `6.1`)
+**MIS DUDAS EN PARES QUE EL BARRIDO LEVANTA, escritas antes de saber:** los dos `CONTINUA` de `cerrar_brecha` **pueden leerse
+`SANO` de pasos hermanos** de una serie que su cabeza ya cablea por `D.37`; el de `examinar_entorno` puede leerse `SANO`
+porque L27 no remite con palabras como L29; el `SANO` de `examinar_entorno` con `examinar_demanda` **COMPARTE UN PASO** (las
+expectativas del cliente hoy, L27 contra L29) **y lo leo `SANO` y no `REPITE` porque fuera del solape hay procedimiento en los
+dos lados** (`6.1`, sin bascula), con la contraria escrita (`CONTINUA` con madre `examinar_entorno`); y el `SANO` de
+`examinar_demanda` con `determinar_estado` puede leerse `CONTINUA` por la moneda de L35. **Si alguna me cae, cae dentro de lo
+que marco aqui.** Los demas `SANO`, incluidos los doce de fuera, comparten la forma *pregunta*, la palabra *grupo* o la cuenta
+del titulo, y ningun paso.
 
-**Las `20`, una por una**, de mis ficheros sellados: las lineas del libro que sus pasos transcriben, las filas dirigidas
-de mi barrido en las que es candidata, sus pares sin orden por clase (cuenta los pares en los que esta de cualquiera de
-los dos lados, y por eso puede pasar de sus filas) y las aristas que mi lectura le espera como hija:
+## 6. **LAS ARISTAS POR LECTURA** (`D.29`, `D.37`, `D.53`)
 
-    $ python .v70aud/clasificacion_20.py
-     1 cap_05 infundir_regularidad_reunion_proceso               NODO | L21 a L21 | filas 5 | pares {'SANO': 5} suma 5 | hija: SOSTENGO de buscar_regularidad_bloques_iguales_trabajo_mando; SOSTENGO de agrupar_tareas_semejantes_aprovechar_preparacion
-     2 cap_05 usar_tres_clases_reunion_proceso                   NODO | L23 a L23 | filas 5 | pares {'SANO': 5} suma 5 | hija: ninguna
-     3 cap_05 fijar_frecuencia_reunion_individual_madurez_tarea  NODO | L33 a L35 | filas 6 | pares {'SANO': 6} suma 6 | hija: ninguna
-     4 cap_05 fijar_duracion_lugar_reunion_individual            NODO | L37 a L39 | filas 7 | pares {'SANO': 7} suma 7 | hija: ninguna
-     5 cap_05 preparar_guion_reunion_individual_subordinado      NODO | L41 a L41 | filas 9 | pares {'SANO': 8, 'CONTINUA': 1} suma 9 | hija: ninguna
-     6 cap_05 cubrir_indicadores_problemas_reunion_individual    NODO | L43 a L43 | filas 6 | pares {'SANO': 6} suma 6 | hija: ninguna
-     7 cap_05 facilitar_expresion_subordinado_pregunta_mas       NODO | L45 a L47 | filas 8 | pares {'SANO': 8} suma 8 | hija: ninguna
-     8 cap_05 tomar_notas_copia_guion_reunion_individual         NODO | L49 a L49 | filas 7 | pares {'SANO': 5, 'CONTINUA': 2} suma 7 | hija: CONTINUA de preparar_guion_reunion_individual_subordinado
-     9 cap_05 acumular_asuntos_importantes_fichero_espera        NODO | L51 a L51 | filas 6 | pares {'SANO': 6} suma 6 | hija: SOSTENGO de agrupar_interrupciones_subordinados_reuniones_regulares
-    10 cap_05 alentar_asuntos_corazon_vigilar_final_reunion      NODO | L53 a L53 | filas 7 | pares {'SANO': 7} suma 7 | hija: ninguna
-    11 cap_05 conducir_reunion_individual_telefono_distancia     NODO | L55 a L55 | filas 6 | pares {'SANO': 5, 'CONTINUA': 1} suma 6 | hija: CONTINUA de tomar_notas_copia_guion_reunion_individual
-    12 cap_05 programar_reunion_individual_cadena                NODO | L57 a L57 | filas 7 | pares {'SANO': 7} suma 7 | hija: ninguna
-    13 cap_06 conducir_etapas_modelo_ideal_decision              NODO | L23 a L29 | filas 0 | pares {} suma 0 | hija: ninguna
-    14 cap_06 decidir_nivel_competente_inferior                  NODO | L33 a L33 | filas 3 | pares {'SANO': 3} suma 3 | hija: ninguna
-    15 cap_06 vencer_sindrome_grupo_pares_autoconfianza          NODO | L49 a L49 | filas 13 | pares {'SANO': 13} suma 13 | hija: ninguna
-    16 cap_06 tomar_mando_reunion_pares_presidente_ausente       NODO | L51 a L51 | filas 4 | pares {'SANO': 4} suma 4 | hija: ninguna
-    17 cap_06 ejercer_poder_posicion_etapa_decision_clara        NODO | L61 a L61 | filas 2 | pares {'SANO': 3} suma 3 | hija: SOSTENGO de conducir_etapas_modelo_ideal_decision
-    18 cap_06 cortar_discusion_libre_momento_justo               NODO | L63 a L63 | filas 6 | pares {'SANO': 6} suma 6 | hija: SOSTENGO de conducir_etapas_modelo_ideal_decision
-    19 cap_06 zanjar_seis_preguntas_decision_adelantado          NODO | L65 a L77 | filas 2 | pares {'SANO': 2} suma 2 | hija: ninguna
-    20 cap_06 anunciar_decision_inesperada_reconvocar_reunion    NODO | L93 a L93 | filas 9 | pares {'SANO': 10} suma 10 | hija: ninguna
+**Las que mi lectura sostiene o descarta**, una fila cada una en `.v71aud/aristas_lectura.tsv`, con su tramo de madre, de hijo y
+su linea del libro, **escritas antes de que el barrido terminara**; al recogerlo marque `EN VEREDICTO` las cuatro que el
+barrido levanta, que no son aristas por lectura sino las cuatro lineas `CONTINUA` de la seccion `5`. El cruce dice si el
+barrido levanto el par y donde vive hoy cada extremo:
 
-**LECTURA: LAS `20` SON NODO**, con la clase de cada par que selle en la `68`. De la `68` a hoy no he cambiado ninguna: la
-conjunta de la `69` las dejo como estaban (`ACTA 68` `68.3`).
+    $ python .v71aud/cruce_aristas.py
+    SOSTENGO D.37, DUDA planificar_tres_pasos_demanda_estado_brecha        (bandeja) > examinar_demanda_entorno_dos_marcos_temporales         (bandeja) | levantado por el barrido: no
+    SOSTENGO D.37  planificar_tres_pasos_demanda_estado_brecha        (bandeja) > determinar_estado_presente_capacidades_proyectos_merma (bandeja) | levantado por el barrido: no
+    SOSTENGO D.37  planificar_tres_pasos_demanda_estado_brecha        (bandeja) > cerrar_brecha_dos_preguntas_estrategia                 (bandeja) | levantado por el barrido: no
+    NO, DUDA       planificar_tres_pasos_demanda_estado_brecha        (bandeja) > definir_entorno_grupo_clientes_proveedores_competidores (bandeja) | levantado por el barrido: no
+    NO, DUDA       planificar_tres_pasos_demanda_estado_brecha        (bandeja) > examinar_entorno_expectativas_tecnologia_proveedores_grupos (bandeja) | levantado por el barrido: no
+    EN VEREDICTO   definir_entorno_grupo_clientes_proveedores_competidores (bandeja) > examinar_demanda_entorno_dos_marcos_temporales         (bandeja) | levantado por el barrido: SI
+    EN VEREDICTO, DUDA definir_entorno_grupo_clientes_proveedores_competidores (bandeja) > examinar_entorno_expectativas_tecnologia_proveedores_grupos (bandeja) | levantado por el barrido: SI
+    EN VEREDICTO, DUDA examinar_demanda_entorno_dos_marcos_temporales     (bandeja) > cerrar_brecha_dos_preguntas_estrategia                 (bandeja) | levantado por el barrido: SI
+    EN VEREDICTO, DUDA determinar_estado_presente_capacidades_proyectos_merma (bandeja) > cerrar_brecha_dos_preguntas_estrategia                 (bandeja) | levantado por el barrido: SI
+    NO, DUDA       examinar_demanda_entorno_dos_marcos_temporales     (bandeja) > determinar_estado_presente_capacidades_proyectos_merma (bandeja) | levantado por el barrido: SI
+    NO, DUDA       examinar_entorno_expectativas_tecnologia_proveedores_grupos (bandeja) > examinar_demanda_entorno_dos_marcos_temporales         (bandeja) | levantado por el barrido: SI
+    NO, DUDA       contestar_dos_preguntas_direccion_objetivos        (bandeja) > fijar_periodo_direccion_objetivos_retroalimentacion    (bandeja) | levantado por el barrido: no
+    NO, DUDA       contestar_dos_preguntas_direccion_objetivos        (bandeja) > fijar_meta_direccion_objetivos_mitad_probabilidad      (bandeja) | levantado por el barrido: no
+    NO             planificar_tres_pasos_demanda_estado_brecha        (bandeja) > fijar_horizonte_ventana_replanificacion                (bandeja) | levantado por el barrido: no
+    SOSTENGO D.29, DUDA elegir_modo_control_motivacion_factor_cua          (bandeja) > escalonar_complejidad_puesto_empleado_nuevo            (bandeja) | levantado por el barrido: no
+    NO             elegir_estilo_direccion_madurez_relevante_tarea    (bandeja) > decidir_amistad_subordinado_prueba_revision_dificil    (bandeja) | levantado por el barrido: no
+    NO, DUDA       preparar_resena_mixta_hoja_trabajo                 (bandeja) > entregar_evaluacion_desempeno_tres_claves              (bandeja) | levantado por el barrido: no
+    NO             elegir_estilo_direccion_madurez_relevante_tarea    (bandeja) > fijar_frecuencia_reunion_individual_madurez_tarea      (grafo) | levantado por el barrido: no
+    NO             delegar_tarea_base_comun_seguimiento               (grafo) > elegir_estilo_direccion_madurez_relevante_tarea        (bandeja) | levantado por el barrido: no
+    NO             supervisar_tarea_delegada_etapa_menor_valor        (grafo) > elegir_estilo_direccion_madurez_relevante_tarea        (bandeja) | levantado por el barrido: no
+    NO             casar_flujo_fabricacion_flujo_ventas               (grafo) > planificar_tres_pasos_demanda_estado_brecha            (bandeja) | levantado por el barrido: no
+    filas: 21 | por lo que queda: {'SOSTENGO': 4, 'NO': 13, 'EN VEREDICTO': 4} | suma: 21
+    filas con DUDA escrita: 12 de 21
+    por el barrido: {'no levantada': 15, 'levantada': 6} | suma: 21
 
-**Las cinco aristas por lectura son las que el extractor cablea a mano con `python forja.py arista`**, y por eso las releo
-hoy con el libro y los pasos delante. Las lineas del libro que las sostienen (tambien las de las dos `CONTINUA`):
+**`D.37`, LOS TITULOS QUE DICEN CUANTAS PARTES TIENEN:** cinco de la tanda dicen cuantas y las nombran:
+`planificar_tres_pasos_demanda_estado_brecha` (la demanda, el estado presente, la brecha),
+`examinar_entorno_expectativas_tecnologia_proveedores_grupos` (cuatro objetos), `contestar_dos_preguntas_direccion_objetivos`
+y `cerrar_brecha_dos_preguntas_estrategia` (dos preguntas cada una) y `entregar_evaluacion_desempeno_tres_claves` (tres
+claves). La busqueda de cada parte por id y titulo sobre grafo mas bandejas:
 
-    $ python .v70aud/lineas_fuente.py
-    cap_05 L21 (723 caracteres): To make the most of this kind of meeting, we should aim to infuse it with regularity. In other words, the people attending should know how the meeting is run, what kinds of substantive matters are discussed, and what is to be accomplished. It should be designed to allow a manager to “batch” transactions, to use the same “production” set-up time and effort to [...]
-    cap_05 L41 (852 caracteres): A key point about a one-on-one: It should be regarded as the subordinate’s meeting, with its agenda and tone set by him. There’s good reason for this. Somebody needs to prepare for the meeting. The supervisor with eight subordinates would have to prepare eight times; the subordinate only once. So the latter should be asked to prepare an outline, which is ver [...]
-    cap_05 L49 (907 caracteres): I’d like to suggest some mechanical hints for effective one-on-one meetings. First, both the supervisor and subordinate should have a copy of the outline and both should take notes on it, which serves a number of purposes. I take notes in just about all circumstances, and most often end up never looking at them again. I do it to keep my mind from drifting an [...]
-    cap_05 L51 (412 caracteres): A real time-saver is using a “hold” file where both the supervisor and subordinate accumulate important but not altogether urgent issues for discussion at the next meeting. This kind of file applies the production principle of batching and saves time for both involved by minimizing the need for ad hoc contact (raya) like phone calls, drop-in visits, and so on (raya) which [...]
-    cap_05 L55 (533 caracteres): Long-distance telephone one-on-ones have become necessary because many organizations are now spread out geographically. But these can work well enough with proper preparation and attention: the supervisor must have the outline before the meeting begins, both parties should take notes, and so on. Because you can’t see the other participant in the meeting, not [...]
-    cap_06 L61 (1176 caracteres): Sometimes no amount of discussion will produce a consensus, yet the time for a decision has clearly arrived. When this happens, the senior person (or “peer-plus-one”) who until now has guided, coached, and prodded the group along has no choice but to make a decision himself. If the decision-making process has proceeded correctly up to this point, the senior  [...]
-    cap_06 L63 (825 caracteres): If you either enter the decision-making stage too early or wait too long, you won’t derive the full benefit of open discussion. The criterion to follow is this: don’t push for a decision prematurely. Make sure you have heard and considered the real issues rather than the superficial comments that often dominate the early part of a meeting. But if you feel th [...]
+    $ python .v71aud/d37_partes.py
+    poblacion: 479
+    planificar tres pasos: 1 la demanda del entorno: 4
+        cerrar_brecha_dos_preguntas_estrategia                             ['grove_high_output']
+        determinar_estado_presente_capacidades_proyectos_merma             ['grove_high_output']
+        examinar_demanda_entorno_dos_marcos_temporales                     ['grove_high_output']
+        planificar_tres_pasos_demanda_estado_brecha                        ['grove_high_output']
+    planificar tres pasos: 2 el estado presente: 2
+        determinar_estado_presente_capacidades_proyectos_merma             ['grove_high_output']
+        planificar_tres_pasos_demanda_estado_brecha                        ['grove_high_output']
+    planificar tres pasos: 3 cerrar la brecha: 2
+        cerrar_brecha_dos_preguntas_estrategia                             ['grove_high_output']
+        planificar_tres_pasos_demanda_estado_brecha                        ['grove_high_output']
+    examinar entorno cuatro objetos: expectativas del cliente: 3
+        avisar_pronto_incumplimiento_expectativas                          ['zhuo_manager']
+        fijar_expectativas_claras_comienzo                                 ['zhuo_manager']
+        examinar_entorno_expectativas_tecnologia_proveedores_grupos        ['grove_high_output']
+    examinar entorno cuatro objetos: tecnologia: 1
+        examinar_entorno_expectativas_tecnologia_proveedores_grupos        ['grove_high_output']
+    examinar entorno cuatro objetos: proveedores: 2
+        definir_entorno_grupo_clientes_proveedores_competidores            ['grove_high_output']
+        examinar_entorno_expectativas_tecnologia_proveedores_grupos        ['grove_high_output']
+    examinar entorno cuatro objetos: otros grupos de la organizacion: 1
+        examinar_entorno_expectativas_tecnologia_proveedores_grupos        ['grove_high_output']
+    direccion por objetivos dos preguntas: el objetivo: 5
+        transmitir_objetivos_prioridades_preferencias                      ['grove_high_output']
+        responder_4_preguntas_estandares_objetivo_estrategico              ['gerber_emyth']
+        contestar_dos_preguntas_direccion_objetivos                        ['grove_high_output']
+        fijar_meta_direccion_objetivos_mitad_probabilidad                  ['grove_high_output']
+        fijar_periodo_direccion_objetivos_retroalimentacion                ['grove_high_output']
+    direccion por objetivos dos preguntas: los resultados clave: 1
+        partir_meta_grande_hitos                                           ['zhuo_manager']
+    cerrar brecha dos preguntas: que necesitas y que puedes hacer: 2
+        agendar_cuidados_propios_cumplirlos                                ['scott_radical_candor']
+        cerrar_brecha_dos_preguntas_estrategia                             ['grove_high_output']
+    evaluacion tres claves: franqueza: 15
+        despedir_persona_respeto_franqueza                                 ['zhuo_manager']
+        desplegar_marco_franqueza_radical                                  ['scott_radical_candor']
+        delimitar_franqueza_radical_cinco_noes                             ['scott_radical_candor']
+        ajustar_franqueza_oido_oyente                                      ['scott_radical_candor']
+        empezar_cultura_franqueza_radical                                  ['scott_radical_candor']
+        pedir_critica_equipo_premiarla                                     ['scott_radical_candor']
+        despedir_persona_franqueza_radical                                 ['scott_radical_candor']
+        practicar_franqueza_radical_jefe_propio                            ['scott_radical_candor']
+        desplegar_plan_orden_operaciones_franqueza_radical                 ['scott_radical_candor']
+        contar_historias_propias_explicar_franqueza_radical                ['scott_radical_candor']
+        mejorar_consciencia_propia_relacional_dos_practicas                ['scott_radical_candor']
+        contar_cuatro_historias_propias_ver_hueco_intencion                ['scott_radical_candor']
+        premiar_franqueza_hacer_escucha_tangible                           ['scott_radical_candor']
+        medir_critica_respuesta_oyente_brujula                             ['scott_radical_candor']
+        entregar_evaluacion_desempeno_tres_claves                          ['grove_high_output']
+    evaluacion tres claves: escucha total: 14
+        interrumpir_candidato_escucha_reflexiva                            ['smart_who']
+        ajustar_franqueza_oido_oyente                                      ['scott_radical_candor']
+        adaptar_escucha_cultura_ajena                                      ['scott_radical_candor']
+        escuchar_callado_equipo_tranquilizar_incomodo                      ['scott_radical_candor']
+        escuchar_ruidoso_opinion_fuerte_pedir_agujeros                     ['scott_radical_candor']
+        crear_cultura_escucha_equipo                                       ['scott_radical_candor']
+        persuadir_emocion_oyente_no_propia                                 ['scott_radical_candor']
+        conducir_reunion_equipo_agenda_tres_bloques                        ['scott_radical_candor']
+        impedir_punialadas_espalda_equipo                                  ['scott_radical_candor']
+        escuchar_entender_critica_dominar_defensa                          ['scott_radical_candor']
+        premiar_franqueza_hacer_escucha_tangible                           ['scott_radical_candor']
+        entregar_evaluacion_desempeno_tres_claves                          ['grove_high_output']
+        responder_primer_aviso_renuncia_subordinado                        ['grove_high_output']
+        recorrer_organizacion_escuchar_plantilla                           ['marquet_turn_the_ship']
+    evaluacion tres claves: dejarse fuera: 6
+        dar_estabilidad_situacion_emocional                                ['zhuo_manager']
+        parar_debate_emocion_agotamiento                                   ['scott_radical_candor']
+        persuadir_emocion_oyente_no_propia                                 ['scott_radical_candor']
+        reconocer_emociones_propias_avisar_equipo                          ['scott_radical_candor']
+        dominar_reacciones_emociones_ajenas                                ['scott_radical_candor']
+        entregar_evaluacion_desempeno_tres_claves                          ['grove_high_output']
 
-Y los pasos de sus ocho nodos, por `pasos_ciego.py` (`R6`):
+**LECTURA:**
 
-    $ python .v67aud/normal/pasos_ciego.py conducir_etapas_modelo_ideal_decision ejercer_poder_posicion_etapa_decision_clara cortar_discusion_libre_momento_justo agrupar_interrupciones_subordinados_reuniones_regulares acumular_asuntos_importantes_fichero_espera buscar_regularidad_bloques_iguales_trabajo_mando agrupar_tareas_semejantes_aprovechar_preparacion infundir_regularidad_reunion_proceso
-    ===== conducir_etapas_modelo_ideal_decision | grafo
-      titulo: Conducir una decision por las etapas del modelo ideal: discusion libre, decision clara y apoyo pleno
-      fuente: ['grove_high_output']
-      cond: Cuando un grupo tiene que tomar una decision en un negocio que depende de lo que sabe, y quieres que el conocimiento de los que saben llegue a la decision en vez de quedarse callado.
-      P1. Abre la primera etapa con discusion libre, en la que todos los puntos de vista y todos los aspectos del asunto se acogen abiertamente y se debaten.
-      P2. Cuanto mayores sean el desacuerdo y la controversia, mas importante se vuelve la palabra libre.
-      P3. Vigila la practica contraria, que es la corriente: cuando la reunion se calienta, los participantes se echan atras, tantean hacia donde van las cosas y no dicen nada hasta ver que postura va a imponerse, para apoyarla despues y no quedar asociados a la que pierde.
-      P4. Cuenta con que, si los que saben se guardan su opinion, lo que se decida se apoyara en informacion y criterio mas incompletos de lo que podrian haber sido.
-      P5. Pasa despues a la etapa siguiente, que es alcanzar una decision clara, y cuanto mayor sea el desacuerdo sobre el asunto, mas importante se vuelve la palabra clara.
-      P6. Pon cuidado especial en enmarcar los terminos de la decision con claridad absoluta.
-      P7. No oscurezcas el asunto para ahorrarte la discusion cuando sepas que la decision es polemica: hablando con medias palabras no evitas la discusion, solo la aplazas.
-      P8. Cuenta con que a quien no le guste la decision se enfadara bastante mas si no recibe una version pronta y directa de lo que se decidio.
-      P9. Exige por ultimo que todos los implicados den pleno apoyo a la decision alcanzada por el grupo.
-      P10. No confundas ese apoyo con el acuerdo: basta con que los participantes se comprometan a respaldar la decision, y ese es un resultado satisfactorio.
-      P11. Cuenta con que ni el mismo tiempo ni los mismos hechos van a producir acuerdo en muchos asuntos, porque las diferencias de opinion honestas y sentidas existen, y una organizacion no vive de que sus miembros esten de acuerdo en todo.
-      P12. Pide a todos, y no solo a algunos, que ese compromiso de apoyo este honestamente presente: es lo unico que un mando puede esperar y lo que tiene que conseguir de cada uno.
-    ===== ejercer_poder_posicion_etapa_decision_clara | grafo
-      titulo: Ejercer el poder de posicion solo al llegar a la etapa de decision clara sin consenso, y nunca antes
-      fuente: ['grove_high_output']
-      cond: Cuando ninguna cantidad de discusion va a producir consenso y el momento de decidir ha llegado claramente, y el que dirige el grupo tiene que decidir si usa ya su autoridad de rango.
-      P1. Reconoce la situacion por sus dos mitades: ninguna cantidad de discusion va a producir consenso, y aun asi el momento de decidir ha llegado claramente.
-      P2. Cuando eso pase, acepta que la persona de mayor rango, la del par mas uno, que hasta ahora ha guiado, entrenado y espoleado al grupo, no tiene mas remedio que tomar ella misma la decision.
-      P3. Comprueba que el proceso vino bien hasta ese punto: que quien decide lo hace con el beneficio completo de la discusion libre, en la que todos los puntos de vista, hechos, opiniones y juicios se expusieron sin el prejuicio del poder de posicion.
-      P4. Ejerce entonces la autoridad del poder de posicion, que ahi es legitima y a veces inevitable, porque se alcanzo la etapa de decision clara y no aparecio ningun consenso.
-      P5. No la ejerzas ni un momento antes: ejercerla antes no es legitimo, y es destructivo.
-      P6. Cuenta con que esto no suele ser facil, porque existe reticencia a ejercer el poder de posicion de forma deliberada y explicita, ya que dar ordenes parece poco amable.
-      P7. Vigila la consecuencia de esa reticencia: alarga la primera fase del proceso, que es el tiempo de discusion libre, mas alla del punto optimo, y la decision se aplaza.
-    ===== cortar_discusion_libre_momento_justo | grafo
-      titulo: Cortar la discusion libre en el momento justo: ni antes de oir los asuntos de verdad, ni cuando ya se ha oido todo
-      fuente: ['grove_high_output']
-      cond: Cuando diriges una discusion libre y tienes que decidir si ya es momento de pasar a la decision, o si todavia falta por oir lo que de verdad importa.
-      P1. Cuenta con que entrar en la etapa de decision demasiado pronto o esperar demasiado te deja sin el beneficio completo de la discusion abierta.
-      P2. Sigue el criterio que el libro escribe: no empujes hacia una decision prematuramente.
-      P3. Asegurate de haber oido y considerado los asuntos de verdad, y no los comentarios superficiales que suelen dominar la primera parte de una reunion.
-      P4. Pero en cuanto sientas que ya lo has oido todo y que todos los lados del asunto se han planteado, empuja hacia un consenso.
-      P5. Si el consenso no sale, entra tu y toma la decision.
-      P6. Vigila la discusion libre que sigue en una busqueda interminable de consenso: cuando eso pasa, la gente se aleja del consenso cercano justo cuando esta cerca de acertar, y eso rebaja las posibilidades de llegar a la decision correcta.
-      P7. Pasa a tomar la decision en el momento justo, que es lo decisivo.
-    ===== agrupar_interrupciones_subordinados_reuniones_regulares | grafo
-      titulo: Agrupar en tanda las interrupciones que llegan de los subordinados y atenderlas en las reuniones regulares de personal y de uno a uno, en vez de atenderlas al azar
-      fuente: ['grove_high_output']
-      cond: Cuando las interrupciones de tus subordinados te caen al azar a lo largo del dia y las atiendes segun llegan.
-      P1. Usa ademas el principio de produccion de la tanda, que es atender de una vez un grupo de tareas semejantes.
-      P2. Acumula con ese principio muchas de las interrupciones que te vienen de tus subordinados, en vez de atenderlas al azar.
-      P3. Atiende esas interrupciones acumuladas en las reuniones de personal y en las reuniones de uno a uno.
-      P4. Manten esas reuniones con regularidad.
-      P5. Pide entonces a tu gente que agrupe sus preguntas y problemas para esos momentos programados en vez de interrumpirte cuando quiera, porque con las reuniones celebradas con regularidad no pueden protestar mucho.
-    ===== acumular_asuntos_importantes_fichero_espera | grafo
-      titulo: Abrir un fichero de espera compartido donde las dos partes acumulan lo importante que no es del todo urgente, para tratarlo en la reunion siguiente
-      fuente: ['grove_high_output']
-      cond: Cuando entre una reunion individual y la siguiente aparecen asuntos importantes que no son del todo urgentes y hay que decidir si se interrumpe al otro o se esperan.
-      P1. Usa un fichero de espera compartido por el supervisor y el subordinado.
-      P2. Acumula ahi los asuntos importantes pero no del todo urgentes, para tratarlos en la reunion siguiente.
-      P3. Cuenta con que esa clase de fichero aplica el principio de produccion del agrupamiento.
-      P4. Cuenta con que el ahorro de tiempo para los dos implicados sale de reducir al minimo la necesidad de contacto improvisado, como las llamadas de telefono o las visitas sin avisar, que son las interrupciones que el libro considero antes.
-    ===== buscar_regularidad_bloques_iguales_trabajo_mando | grafo
-      titulo: Buscar la regularidad en el trabajo de mando alisando la carga, abriendo ventanas en la caja negra, y usando los mismos bloques de tiempo para las actividades iguales
-      fuente: ['grove_high_output']
-      cond: Cuando tu jornada de mando se te llena de parones y arranques y las actividades iguales te caen en momentos distintos cada semana.
-      P1. Aplica a tu trabajo de mando el siguiente concepto de produccion: ve hacia la regularidad.
-      P2. Alisa tu carga de trabajo todo lo que puedas, aunque no puedas controlar los habitos de los que te llegan, igual que una fabrica de desayunos iria mas eficiente si los clientes llegaran en un flujo estable y predecible en vez de entrar de uno en uno y de dos en dos.
-      P3. Haz que tu trabajo de mando tome las caracteristicas de una fabrica y no las de un taller a pedido.
-      P4. Impide en consecuencia, con todo lo que puedas, los pequenos parones y arranques de tu jornada, y tambien las interrupciones que traen las emergencias grandes.
-      P5. Busca siempre las fuentes de problemas futuros de prioridad alta abriendo ventanas en la caja negra de tu organizacion, aunque algunas de esas emergencias sean inevitables.
-      P6. Cuenta con lo que ganas al reconocer que tienes una bomba de relojeria entre manos: puedes atender el problema cuando tu quieras y no despues de que la bomba haya estallado.
-      P7. Coordina tu trabajo con el de los demas mandos, porque solo puedes ir hacia la regularidad si los otros van tambien.
-      P8. Usa, dicho de otro modo, los mismos bloques de tiempo para las actividades iguales.
-      P9. Toma el ejemplo que el libro da de Intel: las mananas de los lunes se apartaron en toda la empresa como el momento en que se reunen los grupos de planificacion, asi que quien pertenece a uno puede contar con el lunes para eso y queda libre de choques de agenda.
-    ===== agrupar_tareas_semejantes_aprovechar_preparacion | grafo
-      titulo: Agrupar las tareas semejantes en una tanda para aprovechar un solo esfuerzo de preparacion
-      fuente: ['grove_high_output']
-      cond: Cuando tienes por delante varias actividades de mando del mismo tipo y las estas atendiendo una a una segun llegan, pagando su preparacion cada vez.
-      P1. Aplica a tu trabajo de mando el segundo principio de produccion: agrupar las tareas semejantes.
-      P2. Cuenta con que toda operacion de fabricacion exige una cierta cantidad de tiempo de preparacion, y con que ese tiempo tiene muchos paralelos en el trabajo de mando.
-      P3. Para que el trabajo de mando avance con eficiencia, usa un mismo esfuerzo de preparacion y aplicalo a todo un grupo de actividades semejantes.
-      P4. Reutiliza lo que ya preparaste: una vez preparado un juego de ilustraciones para una clase de formacion, tu productividad sube si puedes usar ese mismo juego una y otra vez con otras clases o grupos.
-      P5. Cuando tengas varios informes que leer o varias evaluaciones de desempeno que aprobar, reserva un bloque de tiempo y hazlos en tanda, uno tras otro.
-      P6. Hazlo asi para aprovechar al maximo el tiempo de preparacion mental que esa tarea necesita.
-    ===== infundir_regularidad_reunion_proceso | grafo
-      titulo: Infundir regularidad a la reunion de proceso, para poder agrupar en tanda las tareas de mando semejantes y pronosticar el tiempo que piden
-      fuente: ['grove_high_output']
-      cond: Cuando llevas una reunion de las que se repiten en un calendario fijo y quieres sacarle el maximo, en vez de dejar que cada convocatoria se organice sola.
-      P1. Apunta a infundir regularidad a esta clase de reunion, que es la manera de sacarle el maximo.
-      P2. Consigue que los que asisten sepan como se lleva la reunion.
-      P3. Consigue que sepan que clases de asuntos de fondo se tratan en ella.
-      P4. Consigue que sepan que es lo que hay que conseguir en ella.
-      P5. Disenala de forma que te deje agrupar transacciones en tanda, o sea usar el mismo tiempo y esfuerzo de preparacion de produccion para atender muchas tareas de mando semejantes.
-      P6. Aprovecha que, dada esa regularidad, tu y los demas asistentes podeis empezar a pronosticar el tiempo que piden las clases de trabajo que hay que hacer.
-      P7. Deja que de ahi tome forma un sistema de control de produccion, registrado en los distintos calendarios.
-      P8. Cuenta con lo que ese sistema consigue: que una reunion programada tenga el minimo impacto en las otras cosas que la gente esta haciendo.
+- **`D.37` DISPARA EN UNA SOLA CABEZA, `planificar_tres_pasos`, Y POR SUS TRES PARTES**: el paso 1 es
+  `examinar_demanda_entorno_dos_marcos_temporales` (**con DUDA**: la pieza *STEP 1* del libro, L23 a L31, tiene tres nodos, y
+  leo que la parte es la que produce la demanda y que `definir_entorno` y `examinar_entorno` son su entrada, que quedan de
+  nietas por `CONTINUA`), el paso 2 `determinar_estado_presente_capacidades_proyectos_merma` y el paso 3
+  `cerrar_brecha_dos_preguntas_estrategia`, las tres **citando L19** y **ninguna levantada por el barrido**, y sus pares son
+  de cabeza y parte, sin linea de veredicto (`D.53`). **Coincide con las *3 D.37 de planificar_tres_pasos* del asunto de
+  `8f5e84b`, que me llego antes de leer y lo he dicho en la seccion `1`.**
+- **En las otras cuatro no dispara**: ninguna parte existe como nodo. Lo que la busqueda levanta son la propia cabeza, sus
+  hermanas de `cap_07`, y de otros libros la *franqueza radical* de Scott, la escucha de Scott, Smart y Marquet, las
+  expectativas del equipo de Zhuo y los hitos de una meta grande de Zhuo (`partir_meta_grande_hitos`), **que son otras
+  doctrinas y no las partes que la cabeza de Grove nombra**. `D.37` pide la parte que el texto de la cabeza enumera, no un
+  nodo de otro libro que use la misma palabra.
+- **UNA `D.29` POR LECTURA, CON DUDA:** `elegir_modo_control_motivacion_factor_cua` madre de
+  `escalonar_complejidad_puesto_empleado_nuevo`, por L63 (*Let's apply our model to the work of a new employee*), que el
+  barrido no levanta. La duda esta escrita en su fila: el hijo no elige un modo de control, elige el puesto. **Coincide con
+  la *1 D.29* del asunto de `8f5e84b` en la cuenta; si es el mismo par lo vere en mi turno normal.**
+- **Los `NO`, para que se vea el criterio**, y los que llevan DUDA la llevan escrita en su fila: el horizonte, el periodo y
+  la altura de la meta **son parametros del ejercicio que se deciden al montarlo**, no hijos de su producto; la entrega de la
+  revision vale para cualquier tipo y el libro la pone antes que los tipos; la amistad **nombra** los estilos de
+  `elegir_estilo` sin procedimentarlos; `elegir_estilo` **remite** a `delegar_tarea_base_comun_seguimiento` del grafo (*as
+  we've said before*) en un paso de ocho, y comparte concepto con `supervisar_tarea_delegada_etapa_menor_valor` sin ser la
+  condicion de ella; y **la planificacion se monta por ANALOGIA con la fabrica** (L17), que no es arista con
+  `casar_flujo_fabricacion_flujo_ventas`. **Ninguna madre del grafo** para las `20`, por mi lectura.
+- **`d170`**: la fila de `fijar_frecuencia` queda `NO`, con la cita de la conjunta.
 
-**LECTURA, UNA POR UNA, Y LAS CINCO LAS SOSTENGO:**
+## 7. **EL ORDEN QUE MI LECTURA OBLIGA** (`D.36`)
 
-- **`conducir_etapas` a `ejercer_poder`: SOSTENGO.** La condicion de la hija (*ninguna cantidad de discusion va a producir
-  consenso y el momento de decidir ha llegado claramente*) es el producto del paso `5` de la madre, **pasar a la etapa de
-  decision clara**; y la hija anade lo que la madre no dice, **quien decide y con que autoridad** (sus pasos `2` a `5`, L61:
-  *legitimate ... if the clear decision stage is reached and no consensus has developed*). No repite: la madre no nombra
-  el poder de posicion.
-- **`conducir_etapas` a `cortar_discusion`: SOSTENGO.** La condicion de la hija (*diriges una discusion libre y tienes que
-  decidir si ya es momento de pasar a la decision*) es el paso `1` de la madre ya en marcha, que desemboca en su paso `5`; y
-  la hija anade **el criterio del momento** (L63, *don't push for a decision prematurely* y *if you feel that you have
-  already heard everything*), que la madre no trae. **Las dos hijas son hermanas entre si** (mi `NO, DUDA` de
-  `cortar_discusion` a `ejercer_poder`, sellado): las dos parten de la frontera entre la etapa `1` y la `2`, una por el
-  cuando y otra por el quien.
-- **`agrupar_interrupciones` a `acumular`: SOSTENGO.** L51 remite con palabras a la pieza de la madre (*which constitute
-  the interruptions we considered earlier*); la condicion de la hija (*entre una reunion individual y la siguiente
-  aparecen asuntos*) parte del producto de la madre, las interrupciones acumuladas para las reuniones regulares (sus pasos
-  `2` y `3`), y la hija anade **el fichero compartido por las dos partes** y el filtro de lo importante y no urgente.
-- **`buscar_regularidad` a `infundir`: SOSTENGO, con la `DUDA` sellada.** La condicion de la hija (*una reunion de las que
-  se repiten en un calendario fijo*) es el producto de los pasos `8` y `9` de la madre, **los mismos bloques de tiempo para
-  las actividades iguales**, con el lunes de los grupos de planificacion; y la hija anade la regularidad **dentro** de la
-  reunion (sus pasos `2` a `4`) y el pronostico (`6` y `7`). La duda sigue escrita: se pueden leer como el mismo principio
-  aplicado a la jornada y a la reunion.
-- **`agrupar_tareas` a `infundir`: SOSTENGO, por la adjudicacion de la `ACTA 67` `67.4.d`**, que dio la razon al extractor
-  dentro de mi `DUDA`. El paso `5` de la hija **procedimenta** la tanda (*usar el mismo tiempo y esfuerzo de preparacion ...
-  para atender muchas tareas de mando semejantes*, L21), no solo la nombra, y eso es usar el producto de `agrupar_tareas`
-  (su paso `3`, el mismo esfuerzo de preparacion aplicado a un grupo). **No la reabro** (`D.47`): la escribo para que se vea
-  que la releo y que se sostiene.
+**No es un orden: son las restricciones**, escritas antes de ver el del extractor. Madre antes que hijo por mis `CONTINUA` y
+mis `SOSTENGO` con los dos extremos en la tanda, y cuantas cumple el orden de pieza del libro, **que aqui saco de mi
+fidelidad** (capitulo y primera linea), porque `.v71aud/los20.txt` va por capitulo y alfabetica y no es orden de pieza:
 
-## 6. **LO QUE DEJO PARA MI TURNO NORMAL, ESCRITO ANTES DE VER EL REPORTE**
+    $ python .v71aud/restricciones_orden.py
+    orden de pieza del libro (capitulo y primera linea de mi fidelidad): 20
+       1 cap_07 L19 planificar_tres_pasos_demanda_estado_brecha
+       2 cap_07 L25 definir_entorno_grupo_clientes_proveedores_competidores
+       3 cap_07 L27 examinar_entorno_expectativas_tecnologia_proveedores_grupos
+       4 cap_07 L29 examinar_demanda_entorno_dos_marcos_temporales
+       5 cap_07 L35 determinar_estado_presente_capacidades_proyectos_merma
+       6 cap_07 L39 cerrar_brecha_dos_preguntas_estrategia
+       7 cap_07 L61 fijar_horizonte_ventana_replanificacion
+       8 cap_07 L71 contestar_dos_preguntas_direccion_objetivos
+       9 cap_07 L79 fijar_periodo_direccion_objetivos_retroalimentacion
+      10 cap_10 L43 repartir_supervision_puesto_funcional_mision
+      11 cap_11 L57 elegir_modo_control_motivacion_factor_cua
+      12 cap_11 L63 escalonar_complejidad_puesto_empleado_nuevo
+      13 cap_12 L17 diagnosticar_capacidad_motivacion_prueba_vida
+      14 cap_12 L75 fijar_meta_direccion_objetivos_mitad_probabilidad
+      15 cap_12 L85 diagnosticar_nivel_motivacion_reaccion_aumento_salario
+      16 cap_13 L19 elegir_estilo_direccion_madurez_relevante_tarea
+      17 cap_13 L75 decidir_amistad_subordinado_prueba_revision_dificil
+      18 cap_14 L109 entregar_evaluacion_desempeno_tres_claves
+      19 cap_14 L129 preparar_resena_mixta_hoja_trabajo
+      20 cap_14 L167 guiar_subordinado_etapas_resistencia_desempeno
+    restricciones: 12
+      examinar_demanda_entorno_dos_marcos_temporales             antes que cerrar_brecha_dos_preguntas_estrategia                       CONTINUA               el orden del libro la cumple
+      determinar_estado_presente_capacidades_proyectos_merma     antes que cerrar_brecha_dos_preguntas_estrategia                       CONTINUA               el orden del libro la cumple
+      definir_entorno_grupo_clientes_proveedores_competidores    antes que examinar_entorno_expectativas_tecnologia_proveedores_grupos  CONTINUA               el orden del libro la cumple
+      definir_entorno_grupo_clientes_proveedores_competidores    antes que examinar_demanda_entorno_dos_marcos_temporales               CONTINUA               el orden del libro la cumple
+      planificar_tres_pasos_demanda_estado_brecha                antes que examinar_demanda_entorno_dos_marcos_temporales               arista por lectura     el orden del libro la cumple
+      planificar_tres_pasos_demanda_estado_brecha                antes que determinar_estado_presente_capacidades_proyectos_merma       arista por lectura     el orden del libro la cumple
+      planificar_tres_pasos_demanda_estado_brecha                antes que cerrar_brecha_dos_preguntas_estrategia                       arista por lectura     el orden del libro la cumple
+      elegir_modo_control_motivacion_factor_cua                  antes que escalonar_complejidad_puesto_empleado_nuevo                  arista por lectura     el orden del libro la cumple
+      examinar_demanda_entorno_dos_marcos_temporales             antes que contestar_dos_preguntas_direccion_objetivos                  D.36, solo lo levanta contestar_dos_preguntas_direccion_objetivos el orden del libro la cumple
+      fijar_horizonte_ventana_replanificacion                    antes que definir_entorno_grupo_clientes_proveedores_competidores      D.36, solo lo levanta definir_entorno_grupo_clientes_proveedores_competidores EL ORDEN DEL LIBRO LA VIOLA
+      definir_entorno_grupo_clientes_proveedores_competidores    antes que determinar_estado_presente_capacidades_proyectos_merma       D.36, solo lo levanta determinar_estado_presente_capacidades_proyectos_merma el orden del libro la cumple
+      fijar_periodo_direccion_objetivos_retroalimentacion        antes que fijar_horizonte_ventana_replanificacion                      D.36, solo lo levanta fijar_horizonte_ventana_replanificacion EL ORDEN DEL LIBRO LA VIOLA
+    que obligan (madre antes que hijo): 8 | violadas por el orden del libro: 0
+    D.36 de un solo lado, informativas: 4
 
-1. **`R5`** en su reporte, con `.v64ext/pegado64.py` y `.v64aud/normal/bloques_mudos.py` sacados otra vez de los
-   originales y con la cabecera cambiada a la `70`.
-2. **Las lineas nuevas de la bitacora**, una a una: las `118` contra las vivas de `.v68ext/veredictos_listos.txt`
-   (con las corregidas por la conjunta de la `69` y sin ninguna de las que quedaron en comentario) y contra mis clases
-   selladas, y las `5` de `forja.py arista` contra mis cinco `SOSTENGO` de la seccion `5`, con su paso.
-3. **Las `7` aristas, par a par**, contra `.v69aud/aristas_70.py`; que los `3` nodos viejos reescritos son las `3` madres
-   viejas y que **solo** cambiaron sus claves de relacion; y **ninguna con madre `usar_tres_clases_reunion_proceso`**.
-4. **Que cada `insertar` volvio con su `.fin` en `0`, en el orden de `.v69aud/restricciones_orden.py`, uno por vez y sin
-   solaparse**, y que **ninguna aduana levanto un vecino fuera de mi barrido**; y que quiere decir `d58cd8c` con *insertado
-   por la aduana* en la fila `20` (seccion `1`, punto `4`).
-5. **La muestra pineada de los SANO** que la `70` escribio en la bitacora, **con semilla `70`**, el tamaño de la seccion
-   `7` y su banda, releida contra mis clases selladas.
-6. **El censo, las guardas y el cierre estricto**, que tallara esta pagina: no tiene tablas, asi que un rojo en el suyo
-   sera suyo. Y el coste de su turno, del `loop.log`, contra su clase (`D.55`).
+**LECTURA:** las ocho que obligan (`planificar_tres_pasos` antes que sus tres partes, `definir_entorno` antes que sus dos
+hijas, las dos madres antes que `cerrar_brecha`, y `elegir_modo` antes que `escalonar`) **las cumple ya el orden de pieza del
+libro**. Las cuatro `D.36` de un solo lado son informativas y **no obligan**, porque la aduana de `insertar` mide grafo mas
+bandejas (`D.38.5`); dos de ellas van contra el orden del libro, y da igual por esa misma razon. **Su orden, contra estas
+ocho, lo compruebo en mi turno normal.**
 
-## 7. **ESTA PAGINA CONTRA `R6` Y `R7`, MEDIDA SOBRE ELLA MISMA**
+## 8. **LO QUE DEJO PARA MI TURNO NORMAL, ESCRITO ANTES DE VER EL REPORTE**
 
-El generador corre dos veces, y estos bloques de la segunda pasada leen la pagina que escribio la primera, identica
-salvo ellos. El primero cuenta las lineas de bloque `$` que empiezan por una clave de relacion (las que la nombran en
-mis frases y comandos no cuentan, porque la nombran para decir que no la imprimo); el segundo, las lineas de bloque que
-reparten en clases, y cuantas traen su `suma`; el tercero, las rayas y guiones medios de la pagina:
+1. **`R5`** en su reporte, con `.v64ext/pegado64.py` y `.v64aud/normal/bloques_mudos.py` sacados otra vez de los originales y
+   con la cabecera cambiada a la `71`.
+2. **El censo con su hash**: que la vuelta no movio el grafo, la bitacora, los censos ni las bandejas de Gerber y Marquet, y
+   que en la de Grove solo cambiaron las fichas corregidas, **con `git diff` en un clon aparte o con la linea parada**, que es
+   lo que en esta fase no he medido.
+3. **Mi fidelidad contra la suya, paso a paso**: `121` filas mias contra las suyas. Si mis seis `D` se quedan en `T`, las seis
+   cifras siguen en `0`; si alguna cae a PUENTE, cae dentro de lo que marque aqui; **y si el marca PUENTE un paso que yo lei `T`
+   sin duda, y gana, la caida de lectura es mia.** Y sus cuatro correcciones contra mi lectura de sus textos viejos (seccion
+   `3`).
+4. **Mis clases contra sus lineas de veredicto, par a par** (`33` pares, `50` filas), y mis aristas por lectura contra las
+   suyas, por par y no por cuenta.
+5. **Su orden contra mis ocho restricciones.**
+6. **La huella de las `20` fichas** que su cierre dice sellar, contra las mias de `.v71aud/huellas_al_barrer.txt`, tomadas
+   antes de barrer y comprobadas al recoger.
+7. **La muestra pineada de los SANO**: esta vuelta no escribe en la bitacora; los `SANO` de las `20` se muestrean cuando
+   entren.
+
+## 9. **ESTA PAGINA CONTRA `R6` Y `R7`, MEDIDA SOBRE ELLA MISMA**
+
+El generador corre dos veces, y estos bloques de la segunda pasada leen la pagina que escribio la primera, identica salvo
+estos bloques. El primero cuenta las lineas de bloque `$` que empiezan por una clave de relacion (las que la nombran en mis
+frases y comandos no cuentan, porque la nombran para decir que no la imprimo); el segundo, con la copia de
+`.v70aud/r7_pagina.py`, cuenta las lineas de bloque que reparten una cifra en clases y cuantas traen su `suma`:
 
     $ grep -c -E "^    +(previos|siguientes|nodos_previos|nodos_siguientes)" docs/loop/APERTURA_CIEGA.md
     0
-    $ python .v70aud/r7_pagina.py
-    lineas de bloque que reparten en clases: 31 | por estado: {'con suma': 31} | suma: 31
-    $ grep -c -P "\x{2014}|\x{2013}" docs/loop/APERTURA_CIEGA.md
-    0
+    $ python .v71aud/r7_pagina.py
+    lineas de bloque que reparten en clases: 7 | por estado: {'con suma': 7} | suma: 7
