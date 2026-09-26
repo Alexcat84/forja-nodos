@@ -63387,3 +63387,18 @@ La aduana de hoy: **ENTRARIA** con `0` vecino(s) contra `479`; lineas `--veredic
     PAGADA d170 en la vuelta 72
 
 **Con ella, `cap_13` tiene dentro su primera de dos**; la otra es la fila `17`.
+
+### Fila `17`: `decidir_amistad_subordinado_prueba_revision_dificil`, **INSERTADO** en `601.0` s, codigo `0`, commit `05026318`
+
+La aduana de hoy: **BLOQUEARIA** con `1` vecino(s) contra `479`; lineas `--veredicto` pasadas: `1`. Salida entera en `.v72ext/insertar_17_decidir_amistad_subordinado_prueba_revision_dificil.txt`.
+
+<!-- TALLADO: parcial salida=.v72ext/insertar_17_decidir_amistad_subordinado_prueba_revision_dificil.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `diagnosticar_capacidad_motivacion_prueba_vida` | similitud_texto | 0.351 | 0.100 | 0.467 | SANO |
+
+    $ python .v72ext/contra_barrido.py 17 decidir_amistad_subordinado_prueba_revision_dificil
+    hoy 1 vecinos, barrido de la 71 1 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (426 grafo, 53 bandejas), en la 71 479 (410, 69)
+
+**El vecino es el de su bloque y la linea se paso tal cual**: ni nuevos ni caidos contra el barrido de la `71`, las tres seniales al digito. Sin aristas en esta fila. **Con ella, `cap_13` queda entero en el grafo.**
