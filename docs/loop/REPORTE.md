@@ -68199,3 +68199,20 @@ La aduana de hoy: **BLOQUEARIA** con `3` vecino(s) contra `479`; lineas `--vered
     hoy 3 vecinos, barrido de la 78 3 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (461 grafo, 18 bandejas), en la 78 479 (459, 20)
 
 **Los tres vecinos son los de su bloque y las tres lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `78`, las tres seniales al digito; la poblacion, `479` (`461` mas `18`). Sin aristas en esta fila. Bitacora de `1175` a `1178`, sus tres lineas SANO.
+
+### Fila `4`: `observar_reunion_rutinaria_senales_plantilla`, **INSERTADO** en `465.5` s, codigo `0`, commit `717ad341`
+
+La aduana de hoy: **BLOQUEARIA** con `3` vecino(s) contra `479`; lineas `--veredicto` pasadas: `3`. Salida entera en `.v80ext/insertar_04_observar_reunion_rutinaria_senales_plantilla.txt`.
+
+<!-- TALLADO: parcial salida=.v80ext/insertar_04_observar_reunion_rutinaria_senales_plantilla.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `auditar_formacion_premios_ultima_fila` | similitud_texto | 0.361 | 0.000 | 0.463 | SANO |
+| `recorrer_organizacion_escuchar_plantilla` | similitud_texto | 0.414 | 0.125 | 0.435 | SANO |
+| `inspeccionar_reparto_informacion_notas_jefe` | similitud_texto | 0.367 | 0.000 | 0.406 | SANO |
+
+    $ python .v80ext/contra_barrido.py 04 observar_reunion_rutinaria_senales_plantilla
+    hoy 3 vecinos, barrido de la 78 3 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (462 grafo, 17 bandejas), en la 78 479 (459, 20)
+
+**Los tres vecinos son los de su bloque y las tres lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `78`, las tres seniales al digito; la poblacion, `479` (`462` mas `17`). **Es la madre de la unica arista por lectura de la tanda** (`.v78ext/aristas_lectura.txt` linea `28`, paso `7`): no se cablea aqui, sino al entrar su hijo en la fila `5`. Bitacora de `1178` a `1181`, sus tres lineas SANO.
