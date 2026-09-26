@@ -1,0 +1,35 @@
+fila 22, aplicar_cinco_pasos_proceso_contratacion, lineas --veredicto: 2
+  --veredicto construir_estrategia_gente_cuatro_componentes|CONTINUA|madre=construir_estrategia_gente_cuatro_componentes|Este candidato parte del producto del vecino, y el libro los encadena: L117 dice que la People Strategy es la forma en que comunicas la idea, y L245 que el proceso de contratacion fue el primer y mas esencial medio para comunicarla. Sus pasos 10 y 11 entregan y repasan el Manual de Operaciones con el Objetivo Estrategico, la Organizational Strategy y el Position Contract del puesto (L269), que son lo que el vecino compone en sus pasos 3 a 5 (L119): sin ellos esos dos pasos no se ejecutan. Procedimiento en los dos lados y ningun paso repetido: alli se arman los componentes, aqui los cinco del proceso de contratacion (L247 a L271). Que la madre no nombre al hijo no decide, porque nombrar es la vara de la expansion y no la de la continuacion. Relectura conjunta de la vuelta 77 sobre la ACTA 75 seccion 75.4, que corrige el SANO de D76.15 (DISCUTIBLE D77.1).
+  --veredicto fingir_prototipo_cinco_mil_replicas|SANO|Ajenos: el vecino, de cap_11, finge el prototipo de 5.000 replicas con sus seis reglas (L35 a L57); este contrata en cinco componentes (L247 a L271). La similitud es del vocabulario de Gerber, idea, sistema, Manual de Operaciones; ningun paso de uno usa el producto del otro.
+inicio 2026-09-26 12:28:17
+======================================================================
+ADUANA DE INSERCION, candidato 'aplicar_cinco_pasos_proceso_contratacion'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (458 del grafo mas 21 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 2. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino construir_estrategia_gente_cuatro_componentes  [Construir tu Your People Strategy con los cuatro componentes que el libro nombra uno a uno]
+    levantada por: similitud_texto
+    similitud_texto    0.375 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.532 (umbral 0.60)
+    paso 11 del candidato contra paso 4 de construir_estrategia_gente_cuatro_componentes
+
+  vecino fingir_prototipo_cinco_mil_replicas  [Fingir que tu negocio es el prototipo de 5.000 iguales, y jugar con las seis reglas que el libro pone para ganar]
+    levantada por: similitud_texto
+    similitud_texto    0.355 (umbral 0.35)
+    familia_id         0.111 (umbral 0.30)
+    paso_contra_nodo   0.512 (umbral 0.60)
+    paso 10 del candidato contra paso 10 de fingir_prototipo_cinco_mil_replicas
+  arista madre-hijo cableada y escrita RESUELTA: construir_estrategia_gente_cuatro_componentes > aplicar_cinco_pasos_proceso_contratacion
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 459
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 2
+
+======================================================================
+fin 2026-09-26 12:36:19 | codigo de salida 0 | 482.3 s

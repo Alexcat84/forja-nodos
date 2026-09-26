@@ -1232,3 +1232,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-26 | aplicar_ocho_reglas_juego_personas | nombre_largo | The Rules of the Game: las ocho reglas del juego de personas de Your People Strategy | castellano | - |
 | 2026-09-26 | aplicar_ocho_reglas_juego_personas | otro_idioma | The Rules of the Game | ingles | - |
 | 2026-09-26 | aplicar_ocho_reglas_juego_personas | otro_idioma | the people game | ingles | - |
+| 2026-09-26 | aplicar_cinco_pasos_proceso_contratacion | nombre_largo | El proceso de contratacion como el primer y mas esencial medio para comunicar la idea del negocio a la gente nueva | castellano | - |
+| 2026-09-26 | aplicar_cinco_pasos_proceso_contratacion | otro_idioma | hiring process | ingles | - |
+| 2026-09-26 | aplicar_cinco_pasos_proceso_contratacion | otro_idioma | scripted presentation | ingles | - |
