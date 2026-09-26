@@ -1158,3 +1158,4 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-26 | reciclar_empleado_ascendido_mas_alla_capacidad | otro_idioma | recycle him | ingles | - |
 | 2026-09-26 | priorizar_lista_entrenamiento_subordinados | nombre_largo | El listado y la priorizacion de los temas de entrenamiento antes de desarrollar ningun curso | castellano | - |
 | 2026-09-26 | priorizar_lista_entrenamiento_subordinados | otro_idioma | embrace the gospel of training | ingles | - |
+| 2026-09-26 | desarrollar_primer_curso_entrenamiento | nombre_largo | El desarrollo del primer curso propio de entrenamiento, tratando la primera vez como un desechable | castellano | - |
