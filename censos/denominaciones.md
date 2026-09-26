@@ -1120,3 +1120,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-25 | contestar_dos_preguntas_direccion_objetivos | otro_idioma | management by objectives | ingles | - |
 | 2026-09-25 | contestar_dos_preguntas_direccion_objetivos | otro_idioma | key results | ingles | - |
 | 2026-09-25 | contestar_dos_preguntas_direccion_objetivos | otro_idioma | milestones | ingles | - |
+| 2026-09-25 | repartir_supervision_puesto_funcional_mision | nombre_largo | La doble dependencia aplicada a un puesto concreto: quien fija sus metodos y estandares, quien le da las prioridades del negocio, quien vigila su desempeno tecnico y quien cuida su carrera | castellano | - |
+| 2026-09-25 | repartir_supervision_puesto_funcional_mision | otro_idioma | dual reporting | ingles | - |
+| 2026-09-25 | repartir_supervision_puesto_funcional_mision | otro_idioma | hybrid organization | ingles | - |

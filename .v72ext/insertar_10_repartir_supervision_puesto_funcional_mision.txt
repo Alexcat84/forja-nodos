@@ -1,0 +1,13 @@
+fila 10, repartir_supervision_puesto_funcional_mision, lineas --veredicto: 0
+inicio 2026-09-25 23:00:45
+======================================================================
+ADUANA DE INSERCION, candidato 'repartir_supervision_puesto_funcional_mision'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (419 del grafo mas 60 que esperan en bandejas)
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 420
+  censos escritos: denominaciones
+
+======================================================================
+fin 2026-09-25 23:12:17 | codigo de salida 0 | 691.7 s
