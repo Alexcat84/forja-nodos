@@ -66253,3 +66253,18 @@ La aduana de hoy: **BLOQUEARIA** con `3` vecino(s) contra `479`; lineas `--vered
 
 
 **Los tres vecinos son los de su bloque y las tres lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `76`, las tres seniales al digito; la poblacion, `479` (`442` mas `37`). **Primera de las `10` aristas esperadas en el grafo.** Bitacora de `1122` a `1126`: sus tres lineas SANO y la de la arista.
+
+### Fila `7`: `interrogar_negocio_cinco_preguntas`, **INSERTADO** en `540.7` s, codigo `0`, commit `e579e542`
+
+La aduana de hoy: **BLOQUEARIA** con `1` vecino(s) contra `479`; lineas `--veredicto` pasadas: `1`. Salida entera en `.v77ext/insertar_07_interrogar_negocio_cinco_preguntas.txt`.
+
+<!-- TALLADO: parcial salida=.v77ext/insertar_07_interrogar_negocio_cinco_preguntas.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `dictar_ritmo_crecimiento_preguntas_escritas` | similitud_texto | 0.369 | 0.125 | 0.473 | SANO |
+
+    $ python .v77ext/contra_barrido.py 07 interrogar_negocio_cinco_preguntas
+    hoy 1 vecinos, barrido de la 76 1 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (443 grafo, 36 bandejas), en la 76 479 (437, 42)
+
+**El vecino es el de su bloque y la linea se paso tal cual**: ni nuevos ni caidos contra el barrido de la `76`, las tres seniales al digito; la poblacion, `479` (`443` mas `36`). Sin aristas en esta fila. Bitacora de `1126` a `1127`, su linea SANO.
