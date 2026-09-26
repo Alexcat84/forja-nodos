@@ -1,0 +1,35 @@
+fila 18, medir_sistema_venta_trece_indicadores_benchmark, lineas --veredicto: 2
+  --veredicto aplicar_seis_pasos_sistema_venta|CONTINUA|madre=aplicar_seis_pasos_sistema_venta|El mismo par que aplicar_seis lee desde su lado: este parte del producto del vecino, el sistema de venta operando, y lo dice el libro: L303 dice que sabras cuan predecible es por un Information System, y L339 que este sigue la actividad del Selling System de Benchmark a Benchmark. Procedimiento en los dos lados: alli identificar, escribir el guion, memorizar y entregar; aqui contar trece cifras y registrarlas (DISCUTIBLE D76.16).
+  --veredicto distinguir_tres_tipos_sistemas_negocio|SANO|El mismo par que distinguir lee desde su lado: este es el ejemplo de Information System del libro (L303, L307), no el Information System que el vecino nombra. La similitud de 0,446, por encima de 0,4, se lee primero y no es gemelo: uno registra y el otro clasifica. Sin arista (DISCUTIBLE D76.13).
+inicio 2026-09-26 11:53:32
+======================================================================
+ADUANA DE INSERCION, candidato 'medir_sistema_venta_trece_indicadores_benchmark'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (454 del grafo mas 25 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 2. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino aplicar_seis_pasos_sistema_venta  [Aplicar los seis pasos principales que el libro enumera para un sistema de venta]
+    levantada por: similitud_texto
+    similitud_texto    0.353 (umbral 0.35)
+    familia_id         0.222 (umbral 0.30)
+    paso_contra_nodo   0.455 (umbral 0.60)
+    paso 14 del candidato contra paso 5 de aplicar_seis_pasos_sistema_venta
+
+  vecino distinguir_tres_tipos_sistemas_negocio  [Distinguir los tres tipos de sistemas que el libro nombra en tu negocio: Hard, Soft e Information Systems]
+    levantada por: similitud_texto
+    similitud_texto    0.446 (umbral 0.35)
+    familia_id         0.100 (umbral 0.30)
+    paso_contra_nodo   0.378 (umbral 0.60)
+    paso 14 del candidato contra paso 5 de distinguir_tres_tipos_sistemas_negocio
+  arista madre-hijo cableada y escrita RESUELTA: aplicar_seis_pasos_sistema_venta > medir_sistema_venta_trece_indicadores_benchmark
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 455
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 2
+
+======================================================================
+fin 2026-09-26 11:58:30 | codigo de salida 0 | 297.2 s

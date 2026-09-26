@@ -1215,3 +1215,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-26 | aplicar_seis_pasos_sistema_venta | nombre_largo | Un sistema de venta como interaccion orquestada con el cliente, en sus seis pasos principales | castellano | - |
 | 2026-09-26 | aplicar_seis_pasos_sistema_venta | otro_idioma | selling system | ingles | - |
 | 2026-09-26 | aplicar_seis_pasos_sistema_venta | otro_idioma | Benchmarks | ingles | - |
+| 2026-09-26 | medir_sistema_venta_trece_indicadores_benchmark | nombre_largo | El Information Benchmark: trece preguntas para que un Information System interactue con tu sistema de venta | castellano | - |
+| 2026-09-26 | medir_sistema_venta_trece_indicadores_benchmark | otro_idioma | Information Benchmark | ingles | - |
+| 2026-09-26 | medir_sistema_venta_trece_indicadores_benchmark | otro_idioma | Information System | ingles | - |
