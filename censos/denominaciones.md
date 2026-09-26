@@ -1096,3 +1096,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-25 | planificar_tres_pasos_demanda_estado_brecha | nombre_largo | El proceso general de planificacion con sus tres pasos contados y nombrados: establecer la necesidad o demanda proyectada, establecer el estado presente, y comparar y conciliar los dos | castellano | - |
 | 2026-09-25 | planificar_tres_pasos_demanda_estado_brecha | otro_idioma | environmental demand | ingles | - |
 | 2026-09-25 | planificar_tres_pasos_demanda_estado_brecha | otro_idioma | present status | ingles | - |
+| 2026-09-25 | fijar_periodo_direccion_objetivos_retroalimentacion | nombre_largo | En que periodo se enfoca un sistema de direccion por objetivos: el que deja que la retroalimentacion llegue poco despues de la actividad que mide, contrastado contra la base sobre la que se planifica | castellano | - |
+| 2026-09-25 | fijar_periodo_direccion_objetivos_retroalimentacion | otro_idioma | management by objectives | ingles | - |
+| 2026-09-25 | fijar_periodo_direccion_objetivos_retroalimentacion | otro_idioma | feedback | ingles | - |

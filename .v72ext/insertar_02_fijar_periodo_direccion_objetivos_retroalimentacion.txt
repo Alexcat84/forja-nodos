@@ -1,0 +1,34 @@
+fila 02, fijar_periodo_direccion_objetivos_retroalimentacion, lineas --veredicto: 2
+  --veredicto examinar_entorno_expectativas_tecnologia_proveedores_grupos|SANO|El mismo par que examinar_entorno lee desde su lado: ajenos dentro del mismo capitulo (L79, L27).
+  --veredicto fijar_meta_direccion_objetivos_mitad_probabilidad|SANO|Hermanos, dos aspectos distintos de la direccion por objetivos: este fija CADA CUANTO, por la retroalimentacion (cap_07 L79), y el vecino CUANTO DE ALTO, en la mitad de probabilidad (cap_12 L75). El vecino trae la direccion por objetivos como ejemplo de un entorno que fomenta estirarse (In an MBO system, for example), y ninguno usa el producto del otro.
+inicio 2026-09-25 22:00:53
+======================================================================
+ADUANA DE INSERCION, candidato 'fijar_periodo_direccion_objetivos_retroalimentacion'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (411 del grafo mas 68 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 2. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino examinar_entorno_expectativas_tecnologia_proveedores_grupos  [Examinar tu entorno por los cuatro objetos que el libro nombra: las expectativas del cliente, la tecnologia, tus proveedores y los otros grupos de tu organizacion]
+    levantada por: similitud_texto
+    similitud_texto    0.359 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.419 (umbral 0.60)
+    paso 4 del candidato contra paso 4 de examinar_entorno_expectativas_tecnologia_proveedores_grupos
+
+  vecino fijar_meta_direccion_objetivos_mitad_probabilidad  [Fijar la meta de un sistema de direccion por objetivos en el punto donde, esforzandose al maximo, la persona solo tiene una probabilidad de exito de la mitad]
+    levantada por: familia_id
+    similitud_texto    0.281 (umbral 0.35)
+    familia_id         0.375 (umbral 0.30)
+    paso_contra_nodo   0.376 (umbral 0.60)
+    paso 2 del candidato contra paso 2 de fijar_meta_direccion_objetivos_mitad_probabilidad
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 412
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 2
+
+======================================================================
+fin 2026-09-25 22:07:55 | codigo de salida 0 | 422.1 s
