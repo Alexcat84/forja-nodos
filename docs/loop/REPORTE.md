@@ -68267,3 +68267,19 @@ La aduana de hoy: **BLOQUEARIA** con `2` vecino(s) contra `479`; lineas `--vered
     hoy 2 vecinos, barrido de la 78 2 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (464 grafo, 15 bandejas), en la 78 479 (459, 20)
 
 **Los dos vecinos son los de su bloque y las dos lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `78`, las tres seniales al digito; la poblacion, `479` (`464` mas `15`). Sin aristas en esta fila. Bitacora de `1188` a `1190`, sus dos lineas SANO.
+
+### Fila `7`: `inspeccionar_reparto_informacion_notas_jefe`, **INSERTADO** en `743.8` s, codigo `0`, commit `d0b906e9`
+
+La aduana de hoy: **BLOQUEARIA** con `2` vecino(s) contra `479`; lineas `--veredicto` pasadas: `2`. Salida entera en `.v80ext/insertar_07_inspeccionar_reparto_informacion_notas_jefe.txt`.
+
+<!-- TALLADO: parcial salida=.v80ext/insertar_07_inspeccionar_reparto_informacion_notas_jefe.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `observar_reunion_rutinaria_senales_plantilla` | similitud_texto | 0.358 | 0.000 | 0.452 | SANO |
+| `contar_firmas_cadena_tramite_parado` | similitud_texto | 0.379 | 0.000 | 0.428 | SANO |
+
+    $ python .v80ext/contra_barrido.py 07 inspeccionar_reparto_informacion_notas_jefe
+    hoy 2 vecinos, barrido de la 78 2 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (465 grafo, 14 bandejas), en la 78 479 (459, 20)
+
+**Los dos vecinos son los de su bloque y las dos lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `78`, las tres seniales al digito; la poblacion, `479` (`465` mas `14`). Sin aristas en esta fila: su fila con `recorrer_organizacion_escuchar_plantilla` es `NO SOSTENGO` (calendario). Bitacora de `1190` a `1192`, sus dos lineas SANO.
