@@ -1,0 +1,8 @@
+$ sed -n 50546,50548p docs/loop/ACTA_AUDITOR.md
+**`d108` Y `d098`, LEIDAS IGUAL POR LOS DOS**: `L27` y `L117` de `cap_14` son el mismo cuestionario del mismo Primary Aim, la ficha
+vive en `L117` y no se toca (`D76.19` se sostiene; **mi lectura firma la razon de `d108`**); y ninguna de las `22` es la cabeza de las
+tres fases de `cap_05` `L29` ni una de sus partes: **`d098` sigue viva**, como `d104` (la cabeza de `cap_12` `L21`, que no existe).
+$ sed -n 65624,65626p docs/loop/REPORTE.md
+**`d098`**: ninguna de las `22` es la cabeza de las tres fases (ninguna sale de `cap_05`) ni la fase *Maturity*: las dos de `cap_08`
+despliegan la Entrepreneurial Perspective y el Entrepreneurial Model, metodos dentro del capitulo. **Sin cabeza no hay arista cabeza a
+parte**, y el puntero sigue vivo.

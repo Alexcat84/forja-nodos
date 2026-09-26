@@ -1,0 +1,68 @@
+# d098: cabeza de las tres fases de cap_05 L29
+$ sed -n 29p fuentes/gerber_emyth/cap_05.md
+To understand why, let’s take a look at the three phases of a business’s growth: Infancy, Adolescence, and Maturity.
+$ grep -i -E 'infancy|infancia' dataset/nodos.jsonl | grep -i -E 'adolescen' | grep -i -E 'maturity|madurez' | grep -o "\"id\": \"[^\"]*\"" | wc -l
+0
+$ grep '"clave": "gerber_emyth"' dataset/nodos.jsonl | grep -i -E 'infancy|infancia|adolescen|maturity|madurez' | grep -o "\"id\": \"[^\"]*\""
+"id": "dictar_ritmo_crecimiento_preguntas_escritas"
+"id": "construir_empresa_plantilla_vision_diaria"
+"id": "trazar_modelo_negocio_cliente_primero"
+$ grep '"clave": "gerber_emyth"' dataset/nodos.jsonl | grep -i -E 'infancy|infancia' | grep -o "\"id\": \"[^\"]*\"" | wc -l
+0
+# d104: cabeza de las tres palabras de cap_12 L21
+$ sed -n 21p fuentes/gerber_emyth/cap_12.md
+B uilding the Prototype of your business is a continuous process, a Business Development Process. Its foundation is three distinct yet thoroughly integrated activities through which your business can pursue its natural evolution. They are Innovation, Quantification, and Orchestration.
+$ grep -i -E 'innovation|innovaci' dataset/nodos.jsonl | grep -i -E 'quantification|cuantificaci' | grep -i -E 'orchestration|orquestaci' | grep -o "\"id\": \"[^\"]*\""
+"id": "cuantificar_impacto_innovacion_6_pasos"
+"id": "distinguir_tres_tipos_sistemas_negocio"
+$ grep '"id": "distinguir_tres_tipos_sistemas_negocio"' dataset/nodos.jsonl | grep -o 'Ten presente que la Innovacion, la Cuantificacion y la Orquestacion[^"]*'
+Ten presente que la Innovacion, la Cuantificacion y la Orquestacion de estos tres tipos de sistemas en tu negocio es de lo que trata tu Business Development Program.
+$ grep -n -o 'Innovation, Quantification, and Orchestration of these three kinds of systems[^.]*' fuentes/gerber_emyth/cap_19.md
+$ grep '"id": "cuantificar_impacto_innovacion_6_pasos"' dataset/nodos.jsonl | grep -o 'LA CABEZA DE TRES QUE NO SE CABLEA[^:]*'
+LA CABEZA DE TRES QUE NO SE CABLEA, D.37 vs D.29
+$ grep '"id": "distinguir_tres_tipos_sistemas_negocio"\|"id": "cuantificar_impacto_innovacion_6_pasos"' dataset/nodos.jsonl | grep -o '"nodos_previos": \[[^]]*\], "nodos_siguientes": \[[^]]*\]'
+"nodos_previos": ["cambiar_saludo_cliente_dos_ramas"], "nodos_siguientes": []
+"nodos_previos": [], "nodos_siguientes": []
+$ grep -c 'distinguir_tres_tipos_sistemas_negocio' bitacora/VEREDICTOS.jsonl
+6
+# d099: el nodo de la delegacion, cap_18 L345 a L349
+$ sed -n '345p;347p;349p' fuentes/gerber_emyth/cap_18.md
+“Remember Delegation rather than Abdication?
+“You can’t delegate your accountabilities, Sarah.
+“Delegating your accountabilities is abdication.
+$ grep 'UNIDAD DE ORIGEN: fuentes/gerber_emyth/cap_18.md' dataset/nodos.jsonl | grep -o "\"id\": \"[^\"]*\""
+"id": "construir_estrategia_gente_cuatro_componentes"
+"id": "aplicar_ocho_reglas_juego_personas"
+"id": "aplicar_cinco_pasos_proceso_contratacion"
+$ grep 'UNIDAD DE ORIGEN: fuentes/gerber_emyth/cap_18.md' dataset/nodos.jsonl | grep -i -c -E 'delega|abdica'
+0
+$ grep 'UNIDAD DE ORIGEN: fuentes/gerber_emyth/cap_18.md' dataset/nodos.jsonl | grep -o 'Sale de la PIEZA [A-Z0-9]* de la frontera[^,]*, L[0-9]* a L[0-9]*'
+Sale de la PIEZA C1 de la frontera publicada en esta misma vuelta (.gerber_v7/frontera_cap18.txt), L117 a L120
+Sale de la PIEZA C2 de la frontera publicada en esta misma vuelta (.gerber_v7/frontera_cap18.txt), L137 a L166
+Sale de la PIEZA C3 de la frontera publicada en esta misma vuelta (.gerber_v7/frontera_cap18.txt), L247 a L272
+$ grep -o '^| .R8. | L289 a L413 | \*\*1678\*\* |' .gerber_v7/frontera_cap18.txt; grep -o 'CASO: dialogo con Sarah[^*]*' .gerber_v7/frontera_cap18.txt
+| `R8` | L289 a L413 | **1678** |
+CASO: dialogo con Sarah, y discutible sobre la Hierarchy de sistemas
+$ grep '"clave": "gerber_emyth"' dataset/nodos.jsonl | grep -i -E 'delega|abdica' | grep -o "\"id\": \"[^\"]*\""
+"id": "operar_modelo_gente_destreza_minima"
+$ grep -n -o 'prefers Management by Abdication to Management by Delegation' fuentes/gerber_emyth/cap_11.md
+113:prefers Management by Abdication to Management by Delegation
+# d135: nodos de gerber_emyth que citan cap_03 como origen
+$ grep '"clave": "gerber_emyth"' dataset/nodos.jsonl | wc -l
+22
+$ grep '"clave": "gerber_emyth"' dataset/nodos.jsonl | grep -o 'UNIDAD DE ORIGEN: fuentes/gerber_emyth/cap_[0-9]*\.md' | sort | uniq -c
+      1 UNIDAD DE ORIGEN: fuentes/gerber_emyth/cap_04.md
+      1 UNIDAD DE ORIGEN: fuentes/gerber_emyth/cap_07.md
+      2 UNIDAD DE ORIGEN: fuentes/gerber_emyth/cap_08.md
+      6 UNIDAD DE ORIGEN: fuentes/gerber_emyth/cap_11.md
+      3 UNIDAD DE ORIGEN: fuentes/gerber_emyth/cap_12.md
+      1 UNIDAD DE ORIGEN: fuentes/gerber_emyth/cap_13.md
+      1 UNIDAD DE ORIGEN: fuentes/gerber_emyth/cap_14.md
+      1 UNIDAD DE ORIGEN: fuentes/gerber_emyth/cap_15.md
+      3 UNIDAD DE ORIGEN: fuentes/gerber_emyth/cap_18.md
+      3 UNIDAD DE ORIGEN: fuentes/gerber_emyth/cap_19.md
+$ grep '"clave": "gerber_emyth"' dataset/nodos.jsonl | grep -c 'gerber_emyth/cap_03'
+0
+$ ls cuarentena/gerber_emyth/*.json 2>/dev/null | wc -l; ls cuarentena/_insertados/gerber_emyth/*.json | wc -l
+0
+22

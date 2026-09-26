@@ -67452,7 +67452,7 @@ falte es exactamente lo que no tiene fila.
 | `T1` | los registros de la `ACTA 77` | **CERRADA** (`79.1`) |
 | `T2` | la relectura conjunta de la frontera de Zhuo, y el texto de las fronteras en pie dejado listo | **CERRADA** (`79.2`): gana la lectura del auditor y la de Zhuo cae por correccion declarada; el texto de Grove, preparado y no escrito |
 | `T3` | `d150` y `d180` | **CERRADA** (`79.3`): las dos pagadas por medida; `.vm01/` con `47` ficheros; grove y gerber `INSERTADO` en el tablero |
-| `T4` | `d098`, `d104`, `d099` y `d135`, los punteros de Gerber contra el grafo de hoy | abierta |
+| `T4` | `d098`, `d104`, `d099` y `d135`, los punteros de Gerber contra el grafo de hoy | **CERRADA** (`79.4`): `d098`, `d099` y `d135` pagadas por medida; `d104` NO pagada y traida, con su fila |
 | `T5` | el cierre: declaracion, censo, huellas, `D.61`, `R5`, guardas, commit | abierta |
 
 ## 79.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
@@ -67692,3 +67692,149 @@ rama de `cosechados` (lineas `302` y `316` de hoy) con su prueba en la suite. **
 
 **Los dos `como` quedan en `docs/loop/DEUDA.jsonl` letra a letra iguales a sus ficheros** (comprobado leyendo el registro y comparando
 con `==`: `True` y `True`). **`T3` CERRADA.**
+
+## 79.D bis. **LOS DISCUTIBLES DE LA TAREA 4, MARCADOS ANTES DE PAGAR** (`EXTRACTOR.md` 8)
+
+| | que | por que lo marco |
+|---|---|---|
+| `D79.3` | **`d104` NO se paga y se trae**, aunque por la letra de `D.37` el paso `5` de `distinguir_tres_tipos_sistemas_negocio` no es cabeza | el paso nombra las tres actividades de `cap_12` `L21` en una linea sin decir cuantas, y eso es la puerta de `D.29`. Si la `ACTA 78` lee que ese paso no es cabeza ni madre, `d104` se paga en el saneamiento siguiente con esta misma medida; si lee que es madre, la arista es suya y no mia |
+| `D79.4` | **`d098` se paga aunque existan dos nodos de `cap_08`**, el capitulo de *Maturity* | la segunda condicion de `d098` (*un nodo de Maturity desde `cap_08`*) la leo como la fase, no como el capitulo, que es como la leyeron la `76` y la `ACTA 75` `75.4`; y sin cabeza no hay arista cabeza a parte que declarar. Si el auditor lee que un nodo del capitulo basta, la deuda sigue sin poder pagarse por su mitad y la cabeza tampoco nacera: lo que cambia es solo la razon |
+
+## 79.4. TAREA 4: `d098`, `d104`, `d099` Y `d135`, LOS PUNTEROS DE GERBER CONTRA EL GRAFO DE HOY
+
+Cada medida con su `grep` sobre `dataset/nodos.jsonl` y su salida, en `.v79ext/t4_medidas.txt`, que se pega entero:
+
+    # d098: cabeza de las tres fases de cap_05 L29
+    $ sed -n 29p fuentes/gerber_emyth/cap_05.md
+    To understand why, let’s take a look at the three phases of a business’s growth: Infancy, Adolescence, and Maturity.
+    $ grep -i -E 'infancy|infancia' dataset/nodos.jsonl | grep -i -E 'adolescen' | grep -i -E 'maturity|madurez' | grep -o "\"id\": \"[^\"]*\"" | wc -l
+    0
+    $ grep '"clave": "gerber_emyth"' dataset/nodos.jsonl | grep -i -E 'infancy|infancia|adolescen|maturity|madurez' | grep -o "\"id\": \"[^\"]*\""
+    "id": "dictar_ritmo_crecimiento_preguntas_escritas"
+    "id": "construir_empresa_plantilla_vision_diaria"
+    "id": "trazar_modelo_negocio_cliente_primero"
+    $ grep '"clave": "gerber_emyth"' dataset/nodos.jsonl | grep -i -E 'infancy|infancia' | grep -o "\"id\": \"[^\"]*\"" | wc -l
+    0
+    # d104: cabeza de las tres palabras de cap_12 L21
+    $ sed -n 21p fuentes/gerber_emyth/cap_12.md
+    B uilding the Prototype of your business is a continuous process, a Business Development Process. Its foundation is three distinct yet thoroughly integrated activities through which your business can pursue its natural evolution. They are Innovation, Quantification, and Orchestration.
+    $ grep -i -E 'innovation|innovaci' dataset/nodos.jsonl | grep -i -E 'quantification|cuantificaci' | grep -i -E 'orchestration|orquestaci' | grep -o "\"id\": \"[^\"]*\""
+    "id": "cuantificar_impacto_innovacion_6_pasos"
+    "id": "distinguir_tres_tipos_sistemas_negocio"
+    $ grep '"id": "distinguir_tres_tipos_sistemas_negocio"' dataset/nodos.jsonl | grep -o 'Ten presente que la Innovacion, la Cuantificacion y la Orquestacion[^"]*'
+    Ten presente que la Innovacion, la Cuantificacion y la Orquestacion de estos tres tipos de sistemas en tu negocio es de lo que trata tu Business Development Program.
+    $ grep -n -o 'Innovation, Quantification, and Orchestration of these three kinds of systems[^.]*' fuentes/gerber_emyth/cap_19.md
+    $ grep '"id": "cuantificar_impacto_innovacion_6_pasos"' dataset/nodos.jsonl | grep -o 'LA CABEZA DE TRES QUE NO SE CABLEA[^:]*'
+    LA CABEZA DE TRES QUE NO SE CABLEA, D.37 vs D.29
+    $ grep '"id": "distinguir_tres_tipos_sistemas_negocio"\|"id": "cuantificar_impacto_innovacion_6_pasos"' dataset/nodos.jsonl | grep -o '"nodos_previos": \[[^]]*\], "nodos_siguientes": \[[^]]*\]'
+    "nodos_previos": ["cambiar_saludo_cliente_dos_ramas"], "nodos_siguientes": []
+    "nodos_previos": [], "nodos_siguientes": []
+    $ grep -c 'distinguir_tres_tipos_sistemas_negocio' bitacora/VEREDICTOS.jsonl
+    6
+    # d099: el nodo de la delegacion, cap_18 L345 a L349
+    $ sed -n '345p;347p;349p' fuentes/gerber_emyth/cap_18.md
+    “Remember Delegation rather than Abdication?
+    “You can’t delegate your accountabilities, Sarah.
+    “Delegating your accountabilities is abdication.
+    $ grep 'UNIDAD DE ORIGEN: fuentes/gerber_emyth/cap_18.md' dataset/nodos.jsonl | grep -o "\"id\": \"[^\"]*\""
+    "id": "construir_estrategia_gente_cuatro_componentes"
+    "id": "aplicar_ocho_reglas_juego_personas"
+    "id": "aplicar_cinco_pasos_proceso_contratacion"
+    $ grep 'UNIDAD DE ORIGEN: fuentes/gerber_emyth/cap_18.md' dataset/nodos.jsonl | grep -i -c -E 'delega|abdica'
+    0
+    $ grep 'UNIDAD DE ORIGEN: fuentes/gerber_emyth/cap_18.md' dataset/nodos.jsonl | grep -o 'Sale de la PIEZA [A-Z0-9]* de la frontera[^,]*, L[0-9]* a L[0-9]*'
+    Sale de la PIEZA C1 de la frontera publicada en esta misma vuelta (.gerber_v7/frontera_cap18.txt), L117 a L120
+    Sale de la PIEZA C2 de la frontera publicada en esta misma vuelta (.gerber_v7/frontera_cap18.txt), L137 a L166
+    Sale de la PIEZA C3 de la frontera publicada en esta misma vuelta (.gerber_v7/frontera_cap18.txt), L247 a L272
+    $ grep -o '^| .R8. | L289 a L413 | \*\*1678\*\* |' .gerber_v7/frontera_cap18.txt; grep -o 'CASO: dialogo con Sarah[^*]*' .gerber_v7/frontera_cap18.txt
+    | `R8` | L289 a L413 | **1678** |
+    CASO: dialogo con Sarah, y discutible sobre la Hierarchy de sistemas
+    $ grep '"clave": "gerber_emyth"' dataset/nodos.jsonl | grep -i -E 'delega|abdica' | grep -o "\"id\": \"[^\"]*\""
+    "id": "operar_modelo_gente_destreza_minima"
+    $ grep -n -o 'prefers Management by Abdication to Management by Delegation' fuentes/gerber_emyth/cap_11.md
+    113:prefers Management by Abdication to Management by Delegation
+    # d135: nodos de gerber_emyth que citan cap_03 como origen
+    $ grep '"clave": "gerber_emyth"' dataset/nodos.jsonl | wc -l
+    22
+    $ grep '"clave": "gerber_emyth"' dataset/nodos.jsonl | grep -o 'UNIDAD DE ORIGEN: fuentes/gerber_emyth/cap_[0-9]*\.md' | sort | uniq -c
+          1 UNIDAD DE ORIGEN: fuentes/gerber_emyth/cap_04.md
+          1 UNIDAD DE ORIGEN: fuentes/gerber_emyth/cap_07.md
+          2 UNIDAD DE ORIGEN: fuentes/gerber_emyth/cap_08.md
+          6 UNIDAD DE ORIGEN: fuentes/gerber_emyth/cap_11.md
+          3 UNIDAD DE ORIGEN: fuentes/gerber_emyth/cap_12.md
+          1 UNIDAD DE ORIGEN: fuentes/gerber_emyth/cap_13.md
+          1 UNIDAD DE ORIGEN: fuentes/gerber_emyth/cap_14.md
+          1 UNIDAD DE ORIGEN: fuentes/gerber_emyth/cap_15.md
+          3 UNIDAD DE ORIGEN: fuentes/gerber_emyth/cap_18.md
+          3 UNIDAD DE ORIGEN: fuentes/gerber_emyth/cap_19.md
+    $ grep '"clave": "gerber_emyth"' dataset/nodos.jsonl | grep -c 'gerber_emyth/cap_03'
+    0
+    $ ls cuarentena/gerber_emyth/*.json 2>/dev/null | wc -l; ls cuarentena/_insertados/gerber_emyth/*.json | wc -l
+    0
+    22
+
+(El `grep -n -o` de `cap_19` no casa porque `L43` dice *Innovation, Quantification, Orchestration, and integration*, con cuatro y sin la
+*and* delante de *Orchestration*; la linea entera, por `grep -n -i orchestration`, es `43:The Innovation, Quantification, Orchestration,
+and integration of these three kinds of systems in your business is what your Business Development Program is all about.` Lo dejo
+pegado como salio y no lo reescribo.)
+
+Las lecturas previas de `d098` y `d104` que cito, con su `sed` (`.v79ext/t4_firmas.txt`):
+
+    $ sed -n 50546,50548p docs/loop/ACTA_AUDITOR.md
+    **`d108` Y `d098`, LEIDAS IGUAL POR LOS DOS**: `L27` y `L117` de `cap_14` son el mismo cuestionario del mismo Primary Aim, la ficha
+    vive en `L117` y no se toca (`D76.19` se sostiene; **mi lectura firma la razon de `d108`**); y ninguna de las `22` es la cabeza de las
+    tres fases de `cap_05` `L29` ni una de sus partes: **`d098` sigue viva**, como `d104` (la cabeza de `cap_12` `L21`, que no existe).
+    $ sed -n 65624,65626p docs/loop/REPORTE.md
+    **`d098`**: ninguna de las `22` es la cabeza de las tres fases (ninguna sale de `cap_05`) ni la fase *Maturity*: las dos de `cap_08`
+    despliegan la Entrepreneurial Perspective y el Entrepreneurial Model, metodos dentro del capitulo. **Sin cabeza no hay arista cabeza a
+    parte**, y el puntero sigue vivo.
+
+### 79.4.1. `d098`: la cabeza de las tres fases no nacio
+
+**`0` nodos nombran las tres fases a la vez, y `0` de Gerber nombran *Infancy***. Los `3` de Gerber que nombran una son de `cap_07` y
+`cap_08`, y la `76` y la `ACTA 75` `75.4` ya leyeron que ninguno es la cabeza ni una de sus partes (`D79.4`). **Sin cabeza no hay arista
+cabeza a parte, y no va a nacer**: Gerber esta `INSERTADO` (`79.3.2`) con su bandeja en `0`. **PAGADA.** `.v79ext/como_d098.txt`.
+
+### 79.4.2. `d104`: NO SE PAGA, SE TRAE
+
+**La medida levanta `2` nodos que nombran las tres palabras de `cap_12` `L21`**: el hijo que la propia deuda nombra
+(`cuantificar_impacto_innovacion_6_pasos`, que las cita para decir que la cabeza no existe) y **`distinguir_tres_tipos_sistemas_negocio`**,
+de `cap_19`, cuyo **paso `5`** dice que *la Innovacion, la Cuantificacion y la Orquestacion de estos tres tipos de sistemas* es de lo que
+trata el Business Development Program. **Por la letra de `D.37` no es la cabeza**: lo que cuenta y nombra son los tres tipos de
+sistemas, y las actividades las nombra sin decir cuantas. **Pero eso es exactamente la puerta de `D.29`**, y entre ese paso y
+`cuantificar_impacto_innovacion_6_pasos` (o los dos ejemplos de Innovacion de `R3`) no hay arista ni linea en la bitacora. **Una arista
+que falta en el grafo es de la `ACTA 78`, no mia: la traigo y no la decido** (`D79.3`). La fila entera, en `.v79ext/fila_d104.txt`.
+
+**Y UNA OBSERVACION QUE NO ES DEUDA MIA NI LA ANOTO:** `cap_19` `L43` nombra cuatro (*and integration*) y el paso `5` de
+`distinguir_tres_tipos_sistemas_negocio` transcribe tres. **Es omision, no puente**: no escribe nada que el libro no diga. Va aqui para
+que el auditor la vea al leer `D79.3`.
+
+### 79.4.3. `d099`: el nodo de la delegacion no nacio
+
+**Los `3` nodos de `cap_18` salen de `C1`, `C2` y `C3` de `.gerber_v7/frontera_cap18.txt`, y `0` hablan de delegar**; sus pasos, leidos
+contra `L345` a `L349`, no transcriben nada de ese tramo, que cae en `R8` (`L289` a `L413`), clasificada *CASO: dialogo con Sarah*
+cuando el frente mino `cap_18`. **El unico nodo de Gerber que nombra la delegacion es `operar_modelo_gente_destreza_minima` paso `10`**,
+de `cap_11` `L113`, que es el *de pasada* que la propia `d099` contaba. **PAGADA diciendo que no nacio.** `.v79ext/como_d099.txt`.
+
+### 79.4.4. `d135`: ningun nodo de Gerber viene de `cap_03`
+
+**`22` nodos de Gerber, los `22` con su unidad de origen, de `cap_04` a `cap_19`; `0` citan `cap_03`, y ninguno sale de `cap_01`.** Los
+tramos que `d135` nombra quedan leidos y descartados en la `ACTA G9` `4.1`, y la insercion no tuvo nada que mirar. **PAGADA.**
+`.v79ext/como_d135.txt`.
+
+### 79.4.5. Los pagos
+
+<!-- TALLADO: parcial salida=.v79ext/deuda_t4.txt -->
+
+    $ python scripts/deuda.py --pagar d098 --vuelta 79 --como "$(cat .v79ext/como_d098.txt)"
+    PAGADA d098 en la vuelta 79
+    $ python scripts/deuda.py --pagar d099 --vuelta 79 --como "$(cat .v79ext/como_d099.txt)"
+    PAGADA d099 en la vuelta 79
+    $ python scripts/deuda.py --pagar d135 --vuelta 79 --como "$(cat .v79ext/como_d135.txt)"
+    PAGADA d135 en la vuelta 79
+    $ python scripts/deuda.py | grep -E "^  (d098|d099|d104|d135|d150|d180|d183) "
+      d104   3       relectura          PUNTERO D.37 DE cap_12: L21 nombra Innovation, Quant
+      d183   78      relectura          LA FRONTERA DECLARADA ENTRE grove_high_output Y marq
+
+**Los tres `como` quedan en `docs/loop/DEUDA.jsonl` letra a letra iguales a sus ficheros** (comprobado con `==`: `True`, `True`, `True`),
+y **de las siete del encargo quedan pendientes dos: `d104`, que traigo, y `d183`, que el encargo manda no pagar aqui.** **`T4` CERRADA.**

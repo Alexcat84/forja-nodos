@@ -1,0 +1,9 @@
+$ python scripts/deuda.py --pagar d098 --vuelta 79 --como "$(cat .v79ext/como_d098.txt)"
+PAGADA d098 en la vuelta 79
+$ python scripts/deuda.py --pagar d099 --vuelta 79 --como "$(cat .v79ext/como_d099.txt)"
+PAGADA d099 en la vuelta 79
+$ python scripts/deuda.py --pagar d135 --vuelta 79 --como "$(cat .v79ext/como_d135.txt)"
+PAGADA d135 en la vuelta 79
+$ python scripts/deuda.py | grep -E "^  (d098|d099|d104|d135|d150|d180|d183) "
+  d104   3       relectura          PUNTERO D.37 DE cap_12: L21 nombra Innovation, Quant
+  d183   78      relectura          LA FRONTERA DECLARADA ENTRE grove_high_output Y marq
