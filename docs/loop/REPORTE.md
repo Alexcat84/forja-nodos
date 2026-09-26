@@ -68351,3 +68351,17 @@ La aduana de hoy: **BLOQUEARIA** con `1` vecino(s) contra `479`; lineas `--vered
     hoy 1 vecinos, barrido de la 78 1 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (469 grafo, 10 bandejas), en la 78 479 (459, 20)
 
 **El vecino es el de su bloque y la linea se paso tal cual**: ni nuevos ni caidos contra el barrido de la `78`, las tres seniales al digito; la poblacion, `479` (`469` mas `10`). Sin aristas en esta fila: sus filas con `ceder_control_reforzar_competencia_claridad`, `contar_firmas_cadena_tramite_parado` y `asignar_responsable_unico_evolucion_planificada` son `NO SOSTENGO`. Bitacora de `1203` a `1204`, su linea SANO.
+
+### Fila `12`: `asignar_responsable_unico_evolucion_planificada`, **INSERTADO** en `309.6` s, codigo `0`, commit `4a47419a`
+
+La aduana de hoy: **ENTRARIA** con `0` vecino(s) contra `479`; lineas `--veredicto` pasadas: `0`. Salida entera en `.v80ext/insertar_12_asignar_responsable_unico_evolucion_planificada.txt`.
+
+<!-- TALLADO: parcial salida=.v80ext/insertar_12_asignar_responsable_unico_evolucion_planificada.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+
+    $ python .v80ext/contra_barrido.py 12 asignar_responsable_unico_evolucion_planificada
+    hoy 0 vecinos, barrido de la 78 0 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (470 grafo, 9 bandejas), en la 78 479 (459, 20)
+
+**Entra sin vecinos, como en el barrido de la `78`**, y la tabla de arriba sale vacia por eso; la poblacion, `479` (`470` mas `9`). Sin aristas en esta fila: su fila con `aplicar_ejercicio_codigo_genetico_control` y la de `definir_quien_responde_cada_cosa` son `NO SOSTENGO`. Bitacora sin movimiento: `1204`.
