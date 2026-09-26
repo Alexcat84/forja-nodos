@@ -1,0 +1,6 @@
+aplicar_ocho_reglas_juego_personas: pasos 8, 9 reescritos, nota anexada al resumen_teorico
+dictar_ritmo_crecimiento_preguntas_escritas: pasos 8 reescritos, entregable_esperado, nota anexada al resumen_teorico
+operar_modelo_gente_destreza_minima: pasos 4 reescritos, nota anexada al resumen_teorico
+cambiar_saludo_cliente_dos_ramas: pasos 1, 2, 3 reescritos, entregable_esperado, nota anexada al resumen_teorico
+cuantificar_impacto_innovacion_6_pasos: pasos 6 reescritos, condiciones_activacion, entregable_esperado, nota anexada al resumen_teorico
+interrogar_negocio_cinco_preguntas: pasos ninguno reescritos, entregable_esperado, nota anexada al resumen_teorico

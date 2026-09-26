@@ -1,0 +1,185 @@
+# Vuelta 76, TAREA 2.1: la relectura de fidelidad ENTERA (D.30, D.58) de las 22 fichas de la bandeja de Gerber
+# (.v76ext/bandeja.txt), paso a paso contra su capitulo de fuentes/gerber_emyth/, leido entero en esta vuelta. Orden de lectura: cap_13,
+# cap_18 y cap_19 primero (los de d111, encargo TAREA 4), despues los demas. Marca: T transcripcion, P puente (entero o de clausula;
+# la clausula reescrita CUENTA como P, ACTA 62 62.5). Separador: barra vertical. Formato de .v73ext/fidelidad.tsv, con UNA cosa mas:
+# la columna de linea admite cap_NN:LNN cuando el paso cita un capitulo que no es el de la UNIDAD DE ORIGEN de su ficha (encargo
+# TAREA 2.1). Las citas van recortadas; la linea la localiza .v76ext/citas.sh, con su salida en .v76ext/citas_fidelidad.txt. Lo
+# marcado DISCUTIBLE se marco al escribir la fila, antes de ninguna comprobacion. Los P se marcan sobre el texto de la ficha tal como
+# estaba al abrir la vuelta, y se corrigen despues en la ficha (TAREA 2.3).
+# id | paso | marca | linea | lo que decide la marca
+recorrer_siete_pasos_programa_desarrollo_negocio | 1 | T | L39 | Your Business Development Program is the step-by-step process through which you convert your existing business
+recorrer_siete_pasos_programa_desarrollo_negocio | 2 | T | L41 | Your Business Development Program is the vehicle through which you can create your Franchise Prototype
+recorrer_siete_pasos_programa_desarrollo_negocio | 3 | T | L43 | The Program is composed of seven distinct steps. La clausula en este orden la sostienen la numeracion 1 a 7 de L45 a L57 y el step-by-step process de L39 (DISCUTIBLE D76.3)
+recorrer_siete_pasos_programa_desarrollo_negocio | 4 | T | L45 | 1. Your Primary Aim
+recorrer_siete_pasos_programa_desarrollo_negocio | 5 | T | L47 | 2. Your Strategic Objective
+recorrer_siete_pasos_programa_desarrollo_negocio | 6 | T | L49 | 3. Your Organizational Strategy
+recorrer_siete_pasos_programa_desarrollo_negocio | 7 | T | L51 | 4. Your Management Strategy
+recorrer_siete_pasos_programa_desarrollo_negocio | 8 | T | L53 | 5. Your People Strategy
+recorrer_siete_pasos_programa_desarrollo_negocio | 9 | T | L55 | 6. Your Marketing Strategy
+recorrer_siete_pasos_programa_desarrollo_negocio | 10 | T | L57 | 7. Your Systems Strategy
+construir_estrategia_gente_cuatro_componentes | 1 | T | L117 | Your People Strategy is the way you communicate this idea
+construir_estrategia_gente_cuatro_componentes | 2 | T | L119 | It starts with your Primary Aim and your Strategic Objective
+construir_estrategia_gente_cuatro_componentes | 3 | T | L119 | It starts with your Primary Aim and your Strategic Objective. El Sigue con de la ficha es el and continues through de la misma linea
+construir_estrategia_gente_cuatro_componentes | 4 | T | L119 | and continues through your Organizational Strategy (your Organization Chart and the Position Contracts for all of the positions in it). El verbo Construye es verbo de marco sobre el objeto que el libro nombra, la figura de D73.6 (DISCUTIBLE D76.4)
+construir_estrategia_gente_cuatro_componentes | 5 | T | L119 | the Operations Manuals that define the work your people do. El verbo Escribe es verbo de marco sobre el objeto que el libro nombra, la figura de D73.6 (DISCUTIBLE D76.4)
+aplicar_ocho_reglas_juego_personas | 1 | T | L139 | As in any game, the
+aplicar_ocho_reglas_juego_personas | 2 | T | L143 | Never figure out what you want your people to do and then try to create a game out of it
+aplicar_ocho_reglas_juego_personas | 3 | T | L145 | Never create a game for your people you’re unwilling to play yourself
+aplicar_ocho_reglas_juego_personas | 4 | T | L147 | Make sure there are specific ways of winning the game without ending it. El dale a tu gente victorias de vez en cuando es el Hence, the value of victories now and then de la misma linea puesto de mandato, la figura de D68.4
+aplicar_ocho_reglas_juego_personas | 5 | T | L149 | Change the game from time to time, y L151 To know when change is called for, watch your people. Their results will tell you when the game’s all but over. The trick is to anticipate the end before anyone else does and to change it by executive action
+aplicar_ocho_reglas_juego_personas | 6 | T | L153 | Never expect the game to be self-sustaining
+aplicar_ocho_reglas_juego_personas | 7 | T | L157 | The best games are built on universally verifiable truths, y L159 So wheel out the logic often; el para sostener el compromiso emocional cuando decaiga es el All the logic does is give your people the rational armament to support their emotional commitment. If their commitment wanes de L159
+aplicar_ocho_reglas_juego_personas | 8 | P | L163 | But not too often, maybe once every six months. La ficha dice no la repitas mas de una vez cada seis meses: el libro da un quiza (maybe) y la ficha lo vuelve tope firme, la figura de D71.9 (una posibilidad vuelta orden). PUENTE de clausula, se reescribe con el maybe del libro (DISCUTIBLE D76.5)
+aplicar_ocho_reglas_juego_personas | 9 | P | L165 | once you steal somebody else’s game, learn it by heart. La clausula antes de jugarlo con tu gente no esta en el libro, que da la razon There’s nothing worse than pretending to play a game y no pone el momento. PUENTE de clausula, se reescribe con la razon del libro (DISCUTIBLE D76.5)
+aplicar_cinco_pasos_proceso_contratacion | 1 | T | L249 | A scripted presentation communicating the Boss’s idea in a group meeting to all of the applicants at the same time
+aplicar_cinco_pasos_proceso_contratacion | 2 | T | L251 | Meeting with each applicant individually to discuss his reactions to and feelings about the idea
+aplicar_cinco_pasos_proceso_contratacion | 3 | T | L253 | Notification of the successful candidate by telephone
+aplicar_cinco_pasos_proceso_contratacion | 4 | T | L255 | Notification of the unsuccessful applicants, thanking each for his interest
+aplicar_cinco_pasos_proceso_contratacion | 5 | T | L257 | First day of training to include the following activities for both the Boss and the new employee
+aplicar_cinco_pasos_proceso_contratacion | 6 | T | L259 | Reviewing the Boss’s idea
+aplicar_cinco_pasos_proceso_contratacion | 7 | T | L261 | Summarizing the system through which the entire business brings the idea to reality
+aplicar_cinco_pasos_proceso_contratacion | 8 | T | L263 | Taking the new employee on a tour of the facilities, highlighting people at work and systems at work to demonstrate the interdependence
+aplicar_cinco_pasos_proceso_contratacion | 9 | T | L265 | Answering clearly and fully all the employee’s questions
+aplicar_cinco_pasos_proceso_contratacion | 10 | T | L267 | Issuing the employee his uniform and his Operations Manual
+aplicar_cinco_pasos_proceso_contratacion | 11 | T | L269 | Reviewing the Operations Manual , including the Strategic Objective, the Organizational Strategy, and the Position Contract
+aplicar_cinco_pasos_proceso_contratacion | 12 | T | L271 | Completing the employment papers
+distinguir_tres_tipos_sistemas_negocio | 1 | T | L35 | There are three kinds of systems in your business: Hard Systems, Soft Systems, and Information Systems
+distinguir_tres_tipos_sistemas_negocio | 2 | T | L37 | Hard Systems are inanimate, unliving things
+distinguir_tres_tipos_sistemas_negocio | 3 | T | L39 | Soft Systems are either animate. El guion de una obra de teatro generaliza el script for Hamlet de la misma linea
+distinguir_tres_tipos_sistemas_negocio | 4 | T | L41 | Information Systems are those that provide us with information about the interaction between the other two
+distinguir_tres_tipos_sistemas_negocio | 5 | T | L43 | The Innovation, Quantification, Orchestration, and integration of these three kinds of systems. La ficha omite el and integration de la lista, que es omision y no puente (DISCUTIBLE D76.6)
+aplicar_seis_pasos_sistema_venta | 1 | T | L143 | Identification of the specific Benchmarks
+aplicar_seis_pasos_sistema_venta | 2 | T | L145 | The literal scripting of the words that will get you to each one successfully (yes, written down like the script for a play!)
+aplicar_seis_pasos_sistema_venta | 3 | T | L147 | The creation of the various materials to be used with each script
+aplicar_seis_pasos_sistema_venta | 4 | T | L149 | The memorization of each Benchmark’s script
+aplicar_seis_pasos_sistema_venta | 5 | T | L151 | The delivery of each script by your salespeople in identical fashion
+aplicar_seis_pasos_sistema_venta | 6 | T | L153 | Leaving your people to communicate more effectively, by articulating, watching, listening, hearing, acknowledging, understanding, and engaging each and every prospect. El tan a fondo como el lo necesite es el literal as fully as he needs to be de esta linea (R9)
+medir_sistema_venta_trece_indicadores_benchmark | 1 | T | L311 | How many calls were made
+medir_sistema_venta_trece_indicadores_benchmark | 2 | T | L313 | How many prospects were reached
+medir_sistema_venta_trece_indicadores_benchmark | 3 | T | L315 | How many appointments were scheduled
+medir_sistema_venta_trece_indicadores_benchmark | 4 | T | L317 | How many appointments were confirmed
+medir_sistema_venta_trece_indicadores_benchmark | 5 | T | L319 | How many appointments were held
+medir_sistema_venta_trece_indicadores_benchmark | 6 | T | L321 | How many Needs Analysis Presentations were scheduled
+medir_sistema_venta_trece_indicadores_benchmark | 7 | T | L323 | How many Needs Analyses were confirmed
+medir_sistema_venta_trece_indicadores_benchmark | 8 | T | L325 | How many Needs Analyses were completed
+medir_sistema_venta_trece_indicadores_benchmark | 9 | T | L327 | How many Solutions Presentations were scheduled
+medir_sistema_venta_trece_indicadores_benchmark | 10 | T | L329 | How many Solutions Presentations were confirmed
+medir_sistema_venta_trece_indicadores_benchmark | 11 | T | L331 | How many Solutions Presentations were completed
+medir_sistema_venta_trece_indicadores_benchmark | 12 | T | L333 | How many solutions were sold
+medir_sistema_venta_trece_indicadores_benchmark | 13 | T | L335 | What was the average dollar value
+medir_sistema_venta_trece_indicadores_benchmark | 14 | T | L337 | The information should be recorded on a form, either manually or as a database on your computer
+responder_8_preguntas_construir_primary_aim | 1 | T | L117 | So before you start your business, or before you return to it tomorrow, ask yourself the following questions
+responder_8_preguntas_construir_primary_aim | 2 | T | L119 | What do I wish my life to look like
+responder_8_preguntas_construir_primary_aim | 3 | T | L121 | How do I wish my life to be on a day-to-day basis
+responder_8_preguntas_construir_primary_aim | 4 | T | L123 | What would I like to be able to say I truly know in my life, about my life
+responder_8_preguntas_construir_primary_aim | 5 | T | L125 | How would I like to be with other people in my life
+responder_8_preguntas_construir_primary_aim | 6 | T | L127 | How would I like people to think about me
+responder_8_preguntas_construir_primary_aim | 7 | T | L129 | What would I like to be doing two years from now
+responder_8_preguntas_construir_primary_aim | 8 | T | L131 | What specifically would I like to learn during my life
+responder_8_preguntas_construir_primary_aim | 9 | T | L133 | How much money will I need to do the things I wish to do
+responder_4_preguntas_estandares_objetivo_estrategico | 1 | T | L169 | There is no specific number of standards in your Strategic Objective
+responder_4_preguntas_estandares_objetivo_estrategico | 2 | T | L171 | When is your Prototype going to be completed
+responder_4_preguntas_estandares_objetivo_estrategico | 3 | T | L173 | Where are you going to be in business
+responder_4_preguntas_estandares_objetivo_estrategico | 4 | T | L175 | How are you going to be in business
+responder_4_preguntas_estandares_objetivo_estrategico | 5 | T | L177 | What standards are you going to insist upon regarding reporting, cleanliness, clothing, management, hiring, firing, training, and so forth
+hacer_trabajo_futuro_imaginar_negocio | 1 | T | L285 | An Entrepreneur does the work of envisioning the business as something apart from you, the owner
+hacer_trabajo_futuro_imaginar_negocio | 2 | T | L285 | The work of asking all the right questions about why this business, as opposed to that business
+hacer_trabajo_futuro_imaginar_negocio | 3 | T | L285 | you would leave your pie-baking experience behind you and engage in the internal dialogue. El antes de seguir de la ficha es el orden del and engage de la misma frase, que el paso 4 sigue
+hacer_trabajo_futuro_imaginar_negocio | 4 | T | L287 | It’s time for me to create a new life
+hacer_trabajo_futuro_imaginar_negocio | 5 | T | L287 | One that can give me everything that I want, one that doesn’t require me to be there all the time
+hacer_trabajo_futuro_imaginar_negocio | 6 | T | L289 | is the truly entrepreneurial question
+hacer_trabajo_futuro_imaginar_negocio | 7 | T | L291 | That’s the work the entrepreneurial personality does at the outset of her business and at each and every stage along the way. El Repite es la practica que el libro describe puesta de mandato, la figura de D68.4
+dictar_ritmo_crecimiento_preguntas_escritas | 1 | T | L279 | by understanding the key processes that need to be performed. El se dicta el ritmo de crecimiento es el literal It’s up to you to dictate your business’s rate of growth as best you can de esta linea
+dictar_ritmo_crecimiento_preguntas_escritas | 2 | T | L279 | the key objectives that need to be achieved
+dictar_ritmo_crecimiento_preguntas_escritas | 3 | T | L279 | the key position you are aiming your business to hold in the marketplace
+dictar_ritmo_crecimiento_preguntas_escritas | 4 | T | L281 | By asking the right questions, such as: Where do I wish to be
+dictar_ritmo_crecimiento_preguntas_escritas | 5 | T | L283 | you will also have contingency plans in place. El por eso de la ficha es el But, done right de la misma linea. El mejor caso y peor caso es el literal Best case, worst case de esta linea (R9)
+dictar_ritmo_crecimiento_preguntas_escritas | 6 | T | L285 | the key is to plan, envision, and articulate what you see in the future both for yourself and for your employees
+dictar_ritmo_crecimiento_preguntas_escritas | 7 | T | L285 | write it down, clearly, so others can understand it. El si no lo articulas asi entonces no lo posees es el literal Because if you don’t articulate it ... you don’t own it de esta linea
+dictar_ritmo_crecimiento_preguntas_escritas | 8 | P | L287 | any plan is better than no plan. La clausula No te pares por no tener un plan bueno no esta en el libro, que pone Remember, Sarah y la frase: el mandato de no pararse es mio. PUENTE de clausula, se reescribe con el Remember del libro (DISCUTIBLE D76.7)
+construir_empresa_plantilla_vision_diaria | 1 | T | L39 | I had a very clear picture of what the company would look like when it was finally done
+construir_empresa_plantilla_vision_diaria | 2 | T | L41 | I then asked myself how a company which looked like that would have to act
+construir_empresa_plantilla_vision_diaria | 3 | T | L43 | unless we began to act that way from the very beginning, we would never get there
+construir_empresa_plantilla_vision_diaria | 4 | T | L45 | it would have to act like a great company long before it ever became one
+construir_empresa_plantilla_vision_diaria | 5 | T | L47 | And each and every day we attempted to model the company after that template
+construir_empresa_plantilla_vision_diaria | 6 | T | L47 | At the end of each day, we asked ourselves how well we did, discovered the disparity between where we were and where we had committed ourselves to be
+construir_empresa_plantilla_vision_diaria | 7 | T | L47 | at the start of the following day, set out to make up for the difference
+construir_empresa_plantilla_vision_diaria | 8 | T | L49 | Every day at IBM was a day devoted to business development, not doing business. El contraste y no a hacer negocio es el literal de esta linea (R9), y la cita final es L51 We didn’t do business at IBM, we built one
+trazar_modelo_negocio_cliente_primero | 1 | T | L109 | a model of a business that fulfills the perceived needs of a specific segment of customers in an innovative way
+trazar_modelo_negocio_cliente_primero | 2 | T | L115 | he surveys the world and asks. El por donde el emprendedor empieza cuando crea el modelo es el literal When The Entrepreneur creates the model de esta linea
+trazar_modelo_negocio_cliente_primero | 3 | T | L115 | he then goes back to the drawing board
+trazar_modelo_negocio_cliente_primero | 4 | T | L115 | constructs a solution to the frustrations he finds among a certain group of customers
+trazar_modelo_negocio_cliente_primero | 5 | T | L115 | A solution in the form of a business that looks and acts in a very specific way, the way the customer needs it to look and act, not The Entrepreneur. El contraste y no la que necesites tu es el literal not The Entrepreneur (R9)
+trazar_modelo_negocio_cliente_primero | 6 | T | L117 | How will my business look to the customer
+trazar_modelo_negocio_cliente_primero | 7 | T | L117 | How will my business stand out from all the rest
+trazar_modelo_negocio_cliente_primero | 8 | T | L119 | the Entrepreneurial Model does not start with a picture of the business to be created but of the customer for whom the business is to be created. El contraste es el literal de esta linea (R9)
+trazar_modelo_negocio_cliente_primero | 9 | T | L121 | without a clear picture of that customer, no business can succeed
+dar_valor_constante_cuatro_publicos | 1 | T | L63 | value is what people perceive it to be, and nothing more
+dar_valor_constante_cuatro_publicos | 2 | T | L65 | So what could your Prototype do that would not only provide consistent value to your customers, employees, suppliers, and lenders but would provide it beyond their wildest expectations. El no solo ... sino es el literal not only ... but de esta linea (R9). El que el texto dice que todo emprendedor tiene que hacerse es L67 That is the question every Entrepreneur must ask
+dar_valor_constante_cuatro_publicos | 3 | T | L71 | as it impacts every person with whom your business comes into contact. El donde vive todo negocio extraordinario es el literal that every extraordinary business lives de esta linea
+dar_valor_constante_cuatro_publicos | 4 | T | L73 | Value can be a word said at the door of the business as a customer leaves
+dar_valor_constante_cuatro_publicos | 5 | T | L75 | Value can be an unexpected gift from the business arriving in the mail
+dar_valor_constante_cuatro_publicos | 6 | T | L77 | Value can be a word of recognition to a new recruit for a job well done
+dar_valor_constante_cuatro_publicos | 7 | T | L79 | Value can be the reasonable price of your products, or the dedication you show in the process of explaining them to a customer who needs more help than usual. El mas de lo normal es el literal more help than usual (R9)
+dar_valor_constante_cuatro_publicos | 8 | T | L81 | Value can be a simple word of thanks to your banker for his conscientiousness
+documentar_trabajo_manual_operaciones | 1 | T | L155 | This is how we do it here
+documentar_trabajo_manual_operaciones | 2 | T | L157 | Without documentation, all routinized work turns into exceptions
+documentar_trabajo_manual_operaciones | 3 | T | L159 | Documentation provides your people with the structure they need and with a written account of how to
+documentar_trabajo_manual_operaciones | 4 | T | L159 | It communicates to the new employees, as well as to the old, that there is a logic to the world in which they have chosen to work
+documentar_trabajo_manual_operaciones | 5 | T | L163 | The operative word here is clear, y L165 Documentation provides the clarity structure needs if it is to be meaningful to your people
+documentar_trabajo_manual_operaciones | 6 | T | L167 | structure is reduced to specific means rather than generalized ends. El contraste en vez de a fines generales es el literal rather than generalized ends (R9)
+documentar_trabajo_manual_operaciones | 7 | T | L169 | is therefore best described as a company’s How-to-Do-It Guide
+documentar_trabajo_manual_operaciones | 8 | T | L171 | It designates the purpose of the work
+documentar_trabajo_manual_operaciones | 9 | T | L171 | specifies the steps needed to be taken while doing that work
+documentar_trabajo_manual_operaciones | 10 | T | L171 | summarizes the standards associated with both the process and the result
+fingir_prototipo_cinco_mil_replicas | 1 | T | L35 | is the prototype, or will be the prototype, for 5,000 more just like it, y L37 That your business is going to serve as the model for 5,000 more just like it
+fingir_prototipo_cinco_mil_replicas | 2 | T | L39 | Not almost like it, but just like it. El no casi iguales, sino iguales es el literal de esta linea (R9)
+fingir_prototipo_cinco_mil_replicas | 3 | T | L41 | In other words, pretend that you are going to franchise your business. El contraste dice fingir y no dice que debas hacerlo es el literal Note: I said pretend. I’m not saying that you should (R9)
+fingir_prototipo_cinco_mil_replicas | 4 | T | L43 | understand that there are rules to follow if you are to win
+fingir_prototipo_cinco_mil_replicas | 5 | T | L45 | The model will provide consistent value to your customers, employees, suppliers, and lenders, beyond what they expect
+fingir_prototipo_cinco_mil_replicas | 6 | T | L47 | The model will be operated by people with the lowest possible level of skill
+fingir_prototipo_cinco_mil_replicas | 7 | T | L49 | The model will stand out as a place of impeccable order
+fingir_prototipo_cinco_mil_replicas | 8 | T | L51 | All work in the model will be documented in Operations Manuals
+fingir_prototipo_cinco_mil_replicas | 9 | T | L53 | The model will provide a uniformly predictable service to the customer
+fingir_prototipo_cinco_mil_replicas | 10 | T | L55 | The model will utilize a uniform color, dress, and facilities code
+fingir_prototipo_cinco_mil_replicas | 11 | T | L57 | Let’s take a look at each of these rules in turn
+interrogar_negocio_cinco_preguntas | 1 | T | L245 | Go to work on your business rather than in it. El en vez de dentro de el es el literal rather than in it (R9)
+interrogar_negocio_cinco_preguntas | 2 | T | L247 | Go to work on your business as if it were the pre-production prototype of a mass-produceable product
+interrogar_negocio_cinco_preguntas | 3 | T | L249 | Think of your business as something apart from yourself, as a world of its own. El distinto de todos los demas es el literal as a place that acts distinctly different from all other places (R9)
+interrogar_negocio_cinco_preguntas | 4 | T | L251 | Think of your business as anything but a job
+interrogar_negocio_cinco_preguntas | 5 | T | L255 | How can I get my business to work, but without me
+interrogar_negocio_cinco_preguntas | 6 | T | L257 | How can I get my people to work, but without my constant interference
+interrogar_negocio_cinco_preguntas | 7 | T | L259 | How can I systematize my business in such a way that it could be replicated 5,000 times, so the 5,000th unit would run as smoothly as the first. El tan bien como la primera es el literal as smoothly as the first (R9)
+interrogar_negocio_cinco_preguntas | 8 | T | L261 | How can I own my business, and still be free of it
+interrogar_negocio_cinco_preguntas | 9 | T | L263 | How can I spend my time doing the work I love to do rather than the work I have to do. El en vez de es el literal rather than (R9)
+interrogar_negocio_cinco_preguntas | 10 | T | L265 | you’ll eventually come face-to-face with the real problem: that you don’t know the answers
+operar_modelo_gente_destreza_minima | 1 | T | L87 | Because if your model depends on highly skilled people, it’s going to be impossible to replicate
+operar_modelo_gente_destreza_minima | 2 | T | L89 | By lowest possible level of skill I mean the lowest possible level necessary to fulfill the functions for which each is intended
+operar_modelo_gente_destreza_minima | 3 | T | L89 | Obviously, if yours is a legal firm, you must have attorneys
+operar_modelo_gente_destreza_minima | 4 | P | L89 | But you don’t need to hire brilliant attorneys or brilliant physicians. La ficha dice No contrates a los brillantes: el libro dice que no hace falta, y la ficha lo vuelve prohibicion. PUENTE de clausula, se reescribe con el don’t need del libro (DISCUTIBLE D76.8)
+operar_modelo_gente_destreza_minima | 5 | T | L91 | How can I give my customer the results he wants systematically rather than personally. El en vez de es el literal rather than (R9) El que el texto manda repetirse es el literal The question you need to keep asking yourself is de esta linea
+operar_modelo_gente_destreza_minima | 6 | T | L93 | How can I create an expert system rather than hire one. El en vez de es el literal rather than (R9)
+operar_modelo_gente_destreza_minima | 7 | T | L103 | the system becomes the tools your people use to increase their productivity
+operar_modelo_gente_destreza_minima | 8 | T | L105 | to develop those tools and to teach your people how to use them
+operar_modelo_gente_destreza_minima | 9 | T | L107 | It’s your people’s job to use the tools you’ve developed and to recommend improvements based on their experience with them
+operar_modelo_gente_destreza_minima | 10 | T | L111 | The typical owner of a small business prefers highly skilled people because he believes they make his job easier, y L113 prefers Management by Abdication to Management by Delegation, que es el literal de la comparacion (R9). El Comprueba que no estas es verbo de marco sobre la advertencia del libro (DISCUTIBLE D76.8)
+unificar_color_forma_vestuario_modelo | 1 | T | L215 | Marketing studies tell us that all consumers are moved to act by the colors and shapes they find in the marketplace. Es el literal de la prueba que el paso cita (R9), y L217 Different consumer groups simply respond differently to specific colors and shapes
+unificar_color_forma_vestuario_modelo | 2 | T | L229 | The colors you show your customer must be scientifically determined
+unificar_color_forma_vestuario_modelo | 3 | T | L229 | and then used throughout your model
+unificar_color_forma_vestuario_modelo | 4 | T | L231 | The model must be thought of as a package for your one and only product
+unificar_color_forma_vestuario_modelo | 5 | T | L233 | there are shapes that work and shapes that don’t, on your business card, your signs, your logo, your merchandise displays
+unificar_color_forma_vestuario_modelo | 6 | T | L235 | In one test, Cheskin showed that a triangle produced far fewer sales than a circle, and a crest outproduced both by a significant margin. Es el literal de la prueba y de la comparacion (R9); el midio de la ficha es el showed de un test, y el fundador del Color Research Institute es L221
+unificar_color_forma_vestuario_modelo | 7 | T | L239 | The shape of your sign, your logo, the type style used on your business cards will have a significant impact on sales whether you care to think about it or not
+unificar_color_forma_vestuario_modelo | 8 | T | L241 | Your Prototype must be packaged as carefully as any box of cereal. El con el mismo cuidado con el que es el literal as carefully as (R9)
+cambiar_saludo_cliente_dos_ramas | 1 | P | L51 | Instead of asking. El En vez de es el literal de esta linea (R9), pero la ficha dice pregunta exactamente donde el libro dice try, y L49 lo presenta como una Innovacion que se prueba (Here’s a perfect opportunity to try a simple and inexpensive Innovation): el exactamente vuelve orden una prueba. PUENTE de clausula, se reescribe con el try del libro (DISCUTIBLE D76.9; marcado en la relectura entera de cap_12, D.58)
+cambiar_saludo_cliente_dos_ramas | 2 | P | L53 | If the answer is yes, you can say. La ficha dice dile exactamente: el libro da un puedes decir (you can say), y la ficha lo vuelve orden, la figura de D71.9 que la vuelta 73 marco P en gestionar_retencion. PUENTE de clausula, se reescribe con el can del libro (DISCUTIBLE D76.9)
+cambiar_saludo_cliente_dos_ramas | 3 | P | L55 | If the answer is no, you can say. La misma figura del paso 2. PUENTE de clausula, se reescribe con el can del libro (DISCUTIBLE D76.9)
+cambiar_saludo_cliente_dos_ramas | 4 | T | L57 | you’ll have to have created a special new program to talk about in either case
+cuantificar_impacto_innovacion_6_pasos | 1 | T | L95 | determining how many people came in the door before the Innovation was put into effect
+cuantificar_impacto_innovacion_6_pasos | 2 | T | L95 | determining how many people bought products and what the dollar value of those products were before you changed the words
+cuantificar_impacto_innovacion_6_pasos | 3 | T | L95 | counting the number of people who came in the door after you changed the words
+cuantificar_impacto_innovacion_6_pasos | 4 | T | L95 | counting the number of people who purchased something. El despues del cambio de la ficha no esta en el conteo 4, y lo leo como el after you changed the words del conteo 3, que lo precede en la misma enumeracion (DISCUTIBLE D76.10)
+cuantificar_impacto_innovacion_6_pasos | 5 | T | L95 | determining the average unit value of a sale
+cuantificar_impacto_innovacion_6_pasos | 6 | P | L95 | determining what the improvement was as a result of your Innovation. La clausula comparando los numeros de antes con los de despues compara y no tiene tramo literal en el libro, que pide determinar la mejora y no dice como: es P por R9. PUENTE de clausula, se retira, y la misma clausula sale del entregable (DISCUTIBLE D76.10)
+probar_traje_azul_seis_semanas | 1 | T | L63 | For the first three weeks, wear a brown suit to work, a starched tan shirt, a brown tie. El haz que el vendedor vista pone al mando de la prueba a quien la lee, y el libro la escribe for salespeople (DISCUTIBLE D76.11)
+probar_traje_azul_seis_semanas | 2 | T | L63 | For the following three weeks wear a navy blue suit, a good, starched white shirt, a tie with red in it. La misma lectura del paso 1 (DISCUTIBLE D76.11)

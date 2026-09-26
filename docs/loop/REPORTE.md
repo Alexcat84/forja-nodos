@@ -65263,3 +65263,240 @@ corrio en primer plano. **La bandeja de Grove queda vacia**: el libro entero viv
 **El hook del commit del cierre** (`d02ed21`, salida en `.v75ext/hook_t5.txt`) sale en verde y cuenta `1050` rutas donde mi corrida del
 cierre estricto conto `1045`: las de mas son las que `75.5.e` y `75.5.f` publicaron despues de esa corrida. Las dos cifras son ciertas
 de su momento, y en ninguna cae una ruta.
+
+# VUELTA 76 DE LA LINEA SERIAL, lote 9 (`gerber_emyth`), **CLASE INSERCION**: las `22` fichas de la bandeja de Gerber dejadas listas para insertar. **Ninguna insertada**
+
+*Encargo escrito por el auditor al cerrar la `ACTA 74`. Clase impresa por `python scripts/deuda.py --clase 76` (`LIBRE`, `76.0`) y
+declarada `INSERCION` en la cabecera del encargo. **Ningun `insertar` en esta vuelta, ni en primer plano ni de fondo, y ningun
+barrido vivo cuando el turno termine.***
+
+**REPORTE ABIERTO AL EMPEZAR** (`EXTRACTOR.md` 3). Las filas se llenan al cerrarse cada tarea. Si la vuelta se corta, lo que
+falte es exactamente lo que no tiene fila.
+
+| tarea | que | estado |
+|---|---|---|
+| `T1` | los registros de la `ACTA 74` | **CERRADA** (`76.1`) |
+| `T2` | la fidelidad entera de las fichas de Gerber | **CERRADA** (`76.2`): `9` PUENTE de `176`, corregidos en la bandeja antes del barrido; `cap_07` y `cap_12` releidos enteros |
+| `T3` | el barrido, sobre las fichas ya corregidas | abierta |
+| `T4` | los veredictos, las aristas (`d111`, `d108`, `d098`, `D.37`) y el orden | abierta |
+| `T5` | el cierre: censo, `PASOS INVENTADOS`, huellas, `D.61`, `R5`, guardas, commit | abierta |
+
+## 76.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
+
+**Lo pendiente, commiteado primero** (`EXTRACTOR.md` 1): `TABLERO.jsonl`, `loop.log`, `ultimo_auditor.json` y
+`ultimo_extractor.json` del arnes, empujados como `2407dbb`, hook verde.
+
+<!-- TALLADO: parcial salida=.v76ext/apertura.txt -->
+
+    $ git rev-parse HEAD && git log -1 --format=%cI && git rev-parse --abbrev-ref HEAD
+    2407dbb0c67413fa70b35612c6c1070be82f523e
+    2026-09-26T06:45:48-04:00
+    extraccion-mundo-11
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 437
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+    $ bash .v76ext/censo.sh
+    nodos en dataset/nodos.jsonl        : 437
+    veredictos en bitacora              : 1111
+    pares mutuos                        : 1
+    bandeja cuarentena/gerber_emyth     : 22
+    insertados de gerber_emyth          : 0
+    cerrojos en procesos/               : 
+    $ python scripts/deuda.py --clase 76
+    LIBRE
+      van 2 de 5 desde la ultima de saneamiento (la 74), con 52 deuda(s) esperando
+    $ python .v70aud/poblacion.py
+    poblacion: 479 | por sede: {'grafo': 437, 'bandeja': 42} | suma: 479
+    $ python .v75aud/normal/bandeja_gerber.py | tail -2
+    fichas por capitulo: {'cap_04': 1, 'cap_07': 1, 'cap_08': 2, 'cap_11': 6, 'cap_12': 3, 'cap_13': 1, 'cap_14': 1, 'cap_15': 1, 'cap_18': 3, 'cap_19': 3} | suma: 22
+    pasos por capitulo: {'cap_04': 7, 'cap_07': 8, 'cap_08': 17, 'cap_11': 57, 'cap_12': 12, 'cap_13': 10, 'cap_14': 9, 'cap_15': 5, 'cap_18': 26, 'cap_19': 25} | suma: 176
+
+**Coincide con la `ACTA 74` `74.1` y `74.10`** (`437`, `1111`, `1`; bandeja de Gerber `22`; poblacion `479`, `437` del grafo mas `42`
+de bandejas; `22` fichas y `176` pasos), la clase con la del encargo, y **`procesos/` esta vacio**. `.v76ext/censo.sh` es copia de
+`.v75ext/censo.sh` con las dos rutas de Gerber y el `ls` de insertados con `2>/dev/null` (su cabecera lo dice), y se vuelve a correr al
+cerrar. La salida entera de `bandeja_gerber.py`, una ficha por linea, en `.v76ext/bandeja.txt`: esa es la lista de las `22`.
+
+## 76.D. **LOS DISCUTIBLES DEL METODO, MARCADOS ANTES DE EMPEZAR** (`EXTRACTOR.md` 8)
+
+| | que | por que lo marco |
+|---|---|---|
+| `D76.1` | **intento las `22` en esta vuelta, y el barrido se lanza UNA vez con las `22`, despues de la ultima correccion de ficha de los diez capitulos**, y no `cap_13`, `cap_18` y `cap_19` primero | es la figura de `D73.2`: la poblacion es grafo mas bandejas, y una ficha de `cap_11` corregida despues de que el barrido de una de `cap_18` la midiera dejaria ese barrido sin ser suyo (`d031`). El encargo pide el orden `cap_13`, `cap_18`, `cap_19` primero *si no cabe todo*; la fidelidad la hago en ese orden, para que lo que quede sin hacer, si la vuelta se corta, sea lo de menos prioridad |
+| `D76.2` | **el barrido corre con la copia de `.v73ext/barrer.sh`, cinco a la vez**, con la lista de las `22` y la ruta a `.v76ext/` | es lo que pide el encargo; con `22` fichas son unas cinco rondas, y si el reloj de la `73` se repite (`411` a `998` s por ficha) caben dentro del turno |
+
+## 76.1. TAREA 1: LOS REGISTROS DE LA `ACTA 74`, SIN REABRIR EL ARGUMENTO (`D.47`)
+
+| que | donde |
+|---|---|
+| **la bloqueante cumplida**: los pasos `8` y `17` de `dar_elogio_disciplina_igual_critica` fuera del campo, en su orden, con su correccion declarada; `D.30` en verde | `ACTA 74` `74.0`, `74.3` |
+| **las `7` de Grove dentro, una por vez, sin solape y en su orden**; sus lineas de veredicto iguales letra a letra a las preparadas, a los pares del barrido del auditor y a sus clases selladas; sus aristas iguales par a par y por los dos lados | `74.3` |
+| **mis cuatro discutibles se sostienen**, `D75.1` a `D75.4`, y la muestra de los SANO tambien | `74.5` |
+| **cero caidas mias**: `REPORTE` vuelve a cero, y `R5` y `R9` cumplidos | `74.2`, `74.7`, `74.0` |
+| **una caida del auditor**: la cifra de deudas de su encargo de la `75`, que declare en mi `75.0`; `AUDITOR` sube | `74.9` |
+
+**Lo que me llevo, sin reabrirlo:** mi patron de `R9` de la `75` no veia *demostrar* (`74.4`), y en esta vuelta lo ensancho en la copia
+(`76.2`). **`R9` sigue vivo con su letra** (`74.11`): toda fila `T` cuyo paso compare, contraste o califique la prueba del libro cita su
+tramo literal, o es `P`.
+
+**`T1` CERRADA.**
+
+## 76.D bis. **LOS DISCUTIBLES DE LA TAREA 2, MARCADOS AL ESCRIBIR CADA FILA** (`EXTRACTOR.md` 8)
+
+Se marcaron dentro de `.v76ext/fidelidad.tsv` en el acto de escribir cada fila, antes de correr `citas.sh`, `r9.py` ni
+`contar_fidelidad.py`; aqui se juntan por numero.
+
+| | que | por que lo marco |
+|---|---|---|
+| `D76.3` | **`recorrer_siete_pasos_programa_desarrollo_negocio` paso `3` va `T`**: *en este orden* | lo sostienen la numeracion `1` a `7` de `L45` a `L57` y el *step-by-step process* de `L39`; si el auditor lo lee como orden puesto por mi, es un `P` y `cap_13` sube a `10,0` |
+| `D76.4` | **`construir_estrategia_gente_cuatro_componentes` pasos `4` y `5` van `T`**: *Construye* y *Escribe* | son verbos de marco sobre los objetos que `L119` nombra (la figura de `D73.6`); el libro dice *continues through*, no manda construir ni escribir |
+| `D76.5` | **`aplicar_ocho_reglas_juego_personas` pasos `8` y `9` van `P`** | el `8` vuelve tope firme el *maybe once every six months* de `L163` (la figura de `D71.9`); el `9` pone *antes de jugarlo con tu gente* donde `L165` da la razon y no el momento. Si el auditor lee alguno como matiz, es un `T` mas y `cap_18` baja |
+| `D76.6` | **`distinguir_tres_tipos_sistemas_negocio` paso `5` va `T`** aunque omite el *and integration* de `L43` | una omision no pone nada que el libro no diga; si se lee como alteracion de la lista, es un `P` |
+| `D76.7` | **`dictar_ritmo_crecimiento_preguntas_escritas` paso `8` va `P`, y el `5` va `T`** | el `8` pone de mandato *No te pares por no tener un plan bueno*, que `L287` no dice; el `5` lee el *por eso* como el *But, done right* de `L283`. Y el entregable ponia *para cada marca* en todas las preguntas, cuando `L281` pone las tres marcas solo en la del espacio: lo corrijo como campo, la figura de `D73.7` |
+| `D76.8` | **`operar_modelo_gente_destreza_minima` paso `4` va `P`, y el `10` va `T`** | el `4` vuelve prohibicion (*No contrates*) el *you don't need to hire* de `L89`; el `10` pone *Comprueba* sobre la advertencia de `L111` y `L113`, verbo de marco |
+| `D76.9` | **`cambiar_saludo_cliente_dos_ramas` pasos `1`, `2` y `3` van `P`** | `2` y `3` vuelven orden (*dile exactamente*) el *you can say* de `L53` y `L55`, la figura que la `73` marco `P` en `gestionar_retencion`; el `1` lo marco la relectura entera de `cap_12` (`76.2.3`): *pregunta exactamente* donde `L51` dice *try* y `L49` lo presenta como prueba |
+| `D76.10` | **`cuantificar_impacto_innovacion_6_pasos` paso `6` va `P` por `R9`, y el `4` va `T`** | el `6` compara (*comparando los numeros de antes con los de despues*) sin tramo literal en `L95`; el `4` lleva *despues del cambio*, que el conteo `(4)` no dice y leo como el *after* del `(3)` que lo precede. La condicion y el entregable llevaban el mismo contraste y salen con el paso |
+| `D76.11` | **`probar_traje_azul_seis_semanas` pasos `1` y `2` van `T`** | *haz que el vendedor vista* pone al mando de la prueba a quien la lee; `L63` la escribe *for salespeople* en imperativo. Si el auditor lo lee como destinatario puesto por mi, son dos `P` y `cap_12` sube a `6` de `12` |
+| `D76.12` | **el entregable de `interrogar_negocio_cinco_preguntas` se corrige, sin paso `P`** | decia *la constatacion escrita de cuales de ellas no sabes contestar*; `L265` no pide escribir ni separar preguntas. No cuenta en `PASOS INVENTADOS`, que mide pasos |
+
+## 76.2. TAREA 2: LA FIDELIDAD ENTERA DE LAS `22` FICHAS DE GERBER (`D.30`, `D.58`)
+
+Los diez capitulos de `fuentes/gerber_emyth/` que citan las `22`, leidos enteros en el orden del encargo: `cap_13`, `cap_18` y `cap_19`
+primero, despues `cap_14`, `cap_15`, `cap_04`, `cap_07`, `cap_08`, `cap_11` y `cap_12`. **Cada paso marcado `T` o `P` con su linea**,
+una fila por paso, en `.v76ext/fidelidad.tsv`. **Ningun paso cita un capitulo que no sea el de la `UNIDAD DE ORIGEN` de su ficha**:
+la columna `cap_NN:LNN` que la copia de `citas.sh` admite no hizo falta (las citas a otros capitulos que traen algunos
+`resumen_teorico`, como `cap_11` y `cap_17` en `construir_estrategia_gente_cuatro_componentes`, son de su frontera y de sus deudas,
+no de un paso).
+
+### 76.2.1. Las citas, por instrumento (`D.35`), y `R9`
+
+`.v76ext/citas.sh`, copia de `.v73ext/citas.sh` con las rutas cambiadas y la columna `cap_NN:LNN` (su cabecera lo dice). Salida entera
+en `.v76ext/citas_fidelidad.txt`; su ultima linea, y las lineas de los `P`:
+
+<!-- TALLADO: parcial salida=.v76ext/citas_fidelidad.txt -->
+
+    $ bash .v76ext/citas.sh | tail -1
+    filas: 176 | en su linea declarada: 176 | fuera: 0
+    $ for p in 'But not too often, maybe once every six months' 'learn it by heart'; do grep -n -o -F "$p" fuentes/gerber_emyth/cap_18.md; done
+    163:But not too often, maybe once every six months
+    165:learn it by heart
+    $ grep -n -o -F 'any plan is better than no plan' fuentes/gerber_emyth/cap_07.md
+    287:any plan is better than no plan
+    $ grep -n -o -F 'But you don’t need to hire brilliant attorneys or brilliant physicians' fuentes/gerber_emyth/cap_11.md
+    89:But you don’t need to hire brilliant attorneys or brilliant physicians
+    $ for p in 'Instead of asking' 'If the answer is yes, you can say' 'If the answer is no, you can say' 'determining what the improvement was as a result of your Innovation'; do grep -n -o -F "$p" fuentes/gerber_emyth/cap_12.md; done
+    51:Instead of asking
+    53:If the answer is yes, you can say
+    55:If the answer is no, you can say
+    95:determining what the improvement was as a result of your Innovation
+
+**`R9`, ANTES DE PUBLICAR LA CUENTA DE PUENTE** (`ACTA 73` `73.11`): `.v76ext/r9.py` es copia de `.v75ext/r9.py` con la poblacion
+cambiada a los pasos que marco `T` y **el patron ensanchado**, como pide el encargo: *demostr*, que el de la `75` no veia (`ACTA 74`
+`74.4`), y las comparaciones que no tenia (*mejor*, *peor*, *mayor*, *menor*, *tan* hasta *como*, *en lugar de*, *compar*, *supera*).
+Imprime cada paso que casa con su texto y la nota de su fila (entero en `.v76ext/r9.txt`); aqui, lo que casa:
+
+<!-- TALLADO: parcial salida=.v76ext/r9.txt -->
+
+    $ grep "casa:" .v76ext/r9.txt; tail -1 .v76ext/r9.txt
+    aplicar_seis_pasos_sistema_venta paso 6 | casa: tan a fondo como
+    medir_sistema_venta_trece_indicadores_benchmark paso 14 | casa: datos
+    responder_4_preguntas_estandares_objetivo_estrategico paso 4 | casa: mayor
+    hacer_trabajo_futuro_imaginar_negocio paso 7 | casa: el texto dice
+    dictar_ritmo_crecimiento_preguntas_escritas paso 1 | casa: el texto dice
+    dictar_ritmo_crecimiento_preguntas_escritas paso 5 | casa: mejor / peor
+    dictar_ritmo_crecimiento_preguntas_escritas paso 7 | casa: el texto dice
+    trazar_modelo_negocio_cliente_primero paso 1 | casa: el texto dice
+    trazar_modelo_negocio_cliente_primero paso 2 | casa: el texto dice
+    trazar_modelo_negocio_cliente_primero paso 8 | casa: sino
+    dar_valor_constante_cuatro_publicos paso 2 | casa: el texto dice / no solo / sino
+    dar_valor_constante_cuatro_publicos paso 3 | casa: el texto dice
+    documentar_trabajo_manual_operaciones paso 1 | casa: el texto dice
+    documentar_trabajo_manual_operaciones paso 6 | casa: en vez de
+    documentar_trabajo_manual_operaciones paso 7 | casa: el texto dice
+    fingir_prototipo_cinco_mil_replicas paso 2 | casa: sino
+    fingir_prototipo_cinco_mil_replicas paso 3 | casa: y quedate con que el texto dice fingir y no
+    interrogar_negocio_cinco_preguntas paso 1 | casa: en vez de
+    interrogar_negocio_cinco_preguntas paso 7 | casa: tan bien como
+    interrogar_negocio_cinco_preguntas paso 10 | casa: el texto dice
+    operar_modelo_gente_destreza_minima paso 5 | casa: en vez de
+    operar_modelo_gente_destreza_minima paso 6 | casa: en vez de
+    unificar_color_forma_vestuario_modelo paso 1 | casa: el texto dice / estudios
+    unificar_color_forma_vestuario_modelo paso 5 | casa: y formas que no
+    unificar_color_forma_vestuario_modelo paso 6 | casa: midio / menos ventas que / supero
+    pasos T: 168 | pasos T que casan: 25 | pasos T sin ninguna clausula del patron: 143
+
+**LECTURA, paso a paso, de los `25`:** tres no comparan ni califican nada (*datos* es *database* en `L337`, *mayor* es *wholesale* en
+`L175`, *mejor caso y peor caso* es *Best case, worst case* en `L283`); los demas **llevan en la nota de su fila el tramo literal que
+los sostiene** (*not only* con su *but*, *rather than*, *as smoothly as*, *Marketing studies tell us*, *In one test, Cheskin showed*, y
+cada *el texto dice* con la frase que atribuye). **Ocho notas no lo llevaban al escribirse y lo ganaron al leer esta salida, antes de
+publicar la cuenta**: `aplicar_seis_pasos` `6`, `dictar_ritmo` `1`, `5` y `7`, `trazar_modelo` `2`, `dar_valor` `2` y `3`, y
+`operar_modelo` `5`; ninguna cambio de marca. **`R9` no levanta ningun `P` nuevo sobre los `T`**; el unico `P` que es de `R9` es el
+`6` de `cuantificar_impacto_innovacion_6_pasos`, que ya se escribio `P` por esa razon (`D76.10`).
+
+### 76.2.2. Los `9` PUENTE, corregidos en la bandeja ANTES del barrido (`d031`)
+
+`.v76ext/corregir_t2.py`, copia de `.v73ext/corregir_t2.py`: reescribe el paso o el campo y anexa al `resumen_teorico` un parrafo
+`CORRECCION DECLARADA DE LA VUELTA 76` con el texto viejo, el nuevo, la linea del libro que no lo dice y la cifra de relectura vieja al
+lado de la buena. **Lo que gana la copia, dicho en su cabecera**: las fichas de Gerber no se serializan con `indent=1`, asi que no
+reescribe el fichero entero sino que sustituye cada cadena vieja codificada como JSON, y comprueba despues que lo escrito es la ficha
+de antes con los cambios de la tabla y nada mas. Salida en `.v76ext/corregir.txt`.
+
+| ficha | que | decia | dice |
+|---|---|---|---|
+| `aplicar_ocho_reglas_juego_personas` | paso `8` | *y no la repitas mas de una vez cada seis meses para que siga siendo algo que esperar* | *y no demasiado a menudo, quiza una vez cada seis meses, para que sea algo que esperar* |
+| `aplicar_ocho_reglas_juego_personas` | paso `9` | *pero aprendetelo de memoria antes de jugarlo con tu gente* | *pero una vez robado aprendetelo de memoria, porque no hay nada peor que fingir que juegas un juego* |
+| `dictar_ritmo_crecimiento_preguntas_escritas` | paso `8` y entregable | *No te pares por no tener un plan bueno, que el texto lo zanja en una linea: cualquier plan es mejor que ningun plan*; el entregable, *contestadas para cada marca* | *Recuerda que cualquier plan es mejor que ningun plan*; el entregable, *contestadas* |
+| `operar_modelo_gente_destreza_minima` | paso `4` | *No contrates a los brillantes: crea el mejor sistema posible* | *No necesitas contratar abogados brillantes ni medicos brillantes: necesitas crear el mejor sistema posible* |
+| `cambiar_saludo_cliente_dos_ramas` | pasos `1`, `2`, `3` y entregable | *pregunta exactamente*; *dile exactamente*, dos veces; *El guion exacto* | *prueba a preguntar*; *puedes decirle*, dos veces; *El guion* |
+| `cuantificar_impacto_innovacion_6_pasos` | paso `6`, condicion y entregable | *comparando los numeros de antes con los de despues*; *en vez de suponerlo*; *comparando los conteos de antes del cambio con los conteos de despues* | sin las tres clausulas |
+| `interrogar_negocio_cinco_preguntas` | entregable | *la constatacion escrita de cuales de ellas no sabes contestar* | *la constatacion de que no sabes las respuestas* |
+
+    $ git diff --stat=200 -- cuarentena/
+     cuarentena/gerber_emyth/aplicar_ocho_reglas_juego_personas.json          |  6 +++---
+     cuarentena/gerber_emyth/cambiar_saludo_cliente_dos_ramas.json            | 10 +++++-----
+     cuarentena/gerber_emyth/cuantificar_impacto_innovacion_6_pasos.json      |  8 ++++----
+     cuarentena/gerber_emyth/dictar_ritmo_crecimiento_preguntas_escritas.json |  6 +++---
+     cuarentena/gerber_emyth/interrogar_negocio_cinco_preguntas.json          |  4 ++--
+     cuarentena/gerber_emyth/operar_modelo_gente_destreza_minima.json         |  4 ++--
+     6 files changed, 19 insertions(+), 19 deletions(-)
+
+**Ninguna otra ficha cambia.** Despues de la ultima correccion, las `22` se normalizan con `aduana.normalizar_candidato` y pasan
+`aduana.validar_candidato` (esquema, reglas de id, fuentes y guiones) con `.v76ext/validar.py`, copia de `.v64ext/validar.py` con la
+bandeja cambiada y la salida al formato de `.v73ext/validar_siete.txt` (su cabecera lo dice):
+
+<!-- TALLADO: parcial salida=.v76ext/validar.txt -->
+
+    $ cut -c58- .v76ext/validar.txt | tr -d '\r' | sort | uniq -c
+         22 avisos 0 | errores 0
+
+(Las `22` lineas, una por ficha, en `.v76ext/validar.txt`.)
+
+### 76.2.3. `PASOS INVENTADOS POR CAPITULO`, diez filas
+
+Copia de `.v73ext/contar_fidelidad.py` con las rutas y el rotulo cambiados (su cabecera lo dice):
+
+<!-- TALLADO: parcial salida=.v76ext/contar_fidelidad.txt -->
+
+    $ python .v76ext/contar_fidelidad.py | tail -12
+    PASOS INVENTADOS POR CAPITULO, las 22 de Gerber (COPIA de la vuelta 76 de .v73ext/contar_fidelidad.py, ruta cambiada)
+    cap_04  candidatos 1  pasos 7  T 7  P 0  inventado 0,0 por ciento
+    cap_07  candidatos 1  pasos 8  T 7  P 1  inventado 12,5 por ciento
+    cap_08  candidatos 2  pasos 17  T 17  P 0  inventado 0,0 por ciento
+    cap_11  candidatos 6  pasos 57  T 56  P 1  inventado 1,8 por ciento
+    cap_12  candidatos 3  pasos 12  T 8  P 4  inventado 33,3 por ciento
+    cap_13  candidatos 1  pasos 10  T 10  P 0  inventado 0,0 por ciento
+    cap_14  candidatos 1  pasos 9  T 9  P 0  inventado 0,0 por ciento
+    cap_15  candidatos 1  pasos 5  T 5  P 0  inventado 0,0 por ciento
+    cap_18  candidatos 3  pasos 26  T 24  P 2  inventado 7,7 por ciento
+    cap_19  candidatos 3  pasos 25  T 25  P 0  inventado 0,0 por ciento
+    peor capitulo: cap_12, 4 de 12, 33,3 por ciento; por encima del 10: cap_07, cap_12
+
+(La tabla por candidato, entera, en `.v76ext/contar_fidelidad.txt`: `pasos sin fila: 0 [] | filas sin paso: 0 []`.) **El peor
+capitulo es `cap_12`, `4` de `12`, el `33,3` por ciento, y `cap_07` tambien pasa del `10`, `1` de `8`.** **Por `D.58` se releyeron los
+dos enteros antes de seguir**, `cap_12` (`293` lineas) contra sus `12` pasos y `cap_07` (`329`) contra sus `8`. **La relectura de
+`cap_12` no salio igual, y lo digo**: la primera pasada llevaba `3` `P` (`.v76ext/contar_fidelidad_marca.txt`, `25,0` por ciento), y
+la relectura marco el cuarto, el paso `1` de `cambiar_saludo_cliente_dos_ramas`, que la primera habia dado `T` (`D76.9`). La fila se
+reescribio en `.v76ext/fidelidad.tsv` antes de correr la cuenta de arriba. **La de `cap_07` salio igual**: su `5` sigue `T` (`D76.7`).
+**Con los `9` corregidos, lo que entrara lleva `0` PUENTE en los `176` pasos**; la cifra de la relectura sobre el texto de la mineria
+es `9` de `176`, y el `resumen_teorico` de cada ficha corregida la dice al lado de su cifra vieja.
+
+**`T2` CERRADA.**
