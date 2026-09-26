@@ -1194,3 +1194,12 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-26 | probar_traje_azul_seis_semanas | nombre_largo | La segunda Innovacion de ejemplo del capitulo del proceso de desarrollo del negocio: tres semanas de vestuario marron contra tres semanas de vestuario azul marino, con las ocho prendas de las dos etapas nombradas una a una | castellano | - |
 | 2026-09-26 | cuantificar_impacto_innovacion_6_pasos | nombre_largo | Los seis pasos que el capitulo del proceso de desarrollo del negocio enumera uno a uno para saber si una innovacion de verdad funciono, y no solo suponerlo | castellano | - |
 | 2026-09-26 | cuantificar_impacto_innovacion_6_pasos | otro_idioma | quantification | ingles | - |
+| 2026-09-26 | recorrer_siete_pasos_programa_desarrollo_negocio | nombre_largo | La cabeza de la serie numerada de cap_13: el Business Development Program como el proceso paso a paso y el vehiculo del Franchise Prototype, con sus siete pasos nombrados uno a uno | castellano | - |
+| 2026-09-26 | recorrer_siete_pasos_programa_desarrollo_negocio | otro_idioma | Business Development Program | ingles | - |
+| 2026-09-26 | recorrer_siete_pasos_programa_desarrollo_negocio | otro_idioma | Your Primary Aim | ingles | - |
+| 2026-09-26 | recorrer_siete_pasos_programa_desarrollo_negocio | otro_idioma | Your Strategic Objective | ingles | - |
+| 2026-09-26 | recorrer_siete_pasos_programa_desarrollo_negocio | otro_idioma | Your Organizational Strategy | ingles | - |
+| 2026-09-26 | recorrer_siete_pasos_programa_desarrollo_negocio | otro_idioma | Your Management Strategy | ingles | - |
+| 2026-09-26 | recorrer_siete_pasos_programa_desarrollo_negocio | otro_idioma | Your People Strategy | ingles | - |
+| 2026-09-26 | recorrer_siete_pasos_programa_desarrollo_negocio | otro_idioma | Your Marketing Strategy | ingles | - |
+| 2026-09-26 | recorrer_siete_pasos_programa_desarrollo_negocio | otro_idioma | Your Systems Strategy | ingles | - |
