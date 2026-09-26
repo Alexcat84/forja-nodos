@@ -1181,3 +1181,7 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-26 | interrogar_negocio_cinco_preguntas | nombre_largo | El resumen que el propio libro hace del capitulo: trabajar sobre el negocio y no dentro de el, pensarlo como cualquier cosa menos como un empleo, y las cinco preguntas que hay que hacerse hasta dar con que no sabes las respuestas | castellano | - |
 | 2026-09-26 | interrogar_negocio_cinco_preguntas | otro_idioma | working on your business, not in it | ingles | - |
 | 2026-09-26 | interrogar_negocio_cinco_preguntas | otro_idioma | pre-production prototype | ingles | - |
+| 2026-09-26 | operar_modelo_gente_destreza_minima | nombre_largo | La regla 2 del Prototipo de Franquicia y su Rule of Ordinary People: que significa el nivel de destreza mas bajo posible, las preguntas que hay que seguir haciendose, y el reparto de trabajo entre el dueno y su gente | castellano | - |
+| 2026-09-26 | operar_modelo_gente_destreza_minima | otro_idioma | lowest possible level of skill | ingles | - |
+| 2026-09-26 | operar_modelo_gente_destreza_minima | otro_idioma | Rule of Ordinary People | ingles | - |
+| 2026-09-26 | operar_modelo_gente_destreza_minima | otro_idioma | Management by Abdication | ingles | - |
