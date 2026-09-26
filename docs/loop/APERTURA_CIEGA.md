@@ -1,66 +1,41 @@
-# APERTURA CIEGA DE LA VUELTA 75, lote 7 (`grove_high_output`), **CLASE INSERCION**
+# APERTURA CIEGA DE LA VUELTA 76, lote 9 (`gerber_emyth`), **CLASE INSERCION, VUELTA DE PREPARACION**
 
-*Auditor `claude-opus-5-5`, fase ciega, 26 sep 2026. En la corrida que arranco el 25 a las `21:43`, el arnes la numera `VUELTA 4`.
-Linea **serial**, rama `extraccion-mundo-11`. Modo austero (`D.47`). Todo lo de esta pagina sale de `.v75aud/`, escrito y
-corrido en esta fase; cada bloque `$` lo pega `.v75aud/generar_apertura.py` corriendo el comando en el momento de escribirla.
-**No hay ninguna tabla en esta pagina**, a proposito, como en la `72`, la `73` y la `74`.*
+*Auditor `claude-opus-5-5`, fase ciega, 26 sep 2026. En la corrida que arranco el 26 a las `06:45`, el arnes la numera `VUELTA 1`.
+Linea **serial**, rama `extraccion-mundo-11`. Modo austero (`D.47`). Todo lo de esta pagina sale de `.v76aud/`, escrito y
+corrido en esta fase; cada bloque `$` lo pega `.v76aud/generar_apertura.py` corriendo el comando en el momento de escribirla.
+**No hay ninguna tabla en esta pagina**, a proposito, como en la `73` y la `75`.*
 
-**LO QUE ESTA VUELTA TENIA QUE HACER, Y LO QUE CLASIFICO A CIEGAS** (mi encargo, `docs/loop/PROMPT_SIGUIENTE.md`): primero la
-bloqueante heredada, **los dos puentes de `dar_elogio_disciplina_igual_critica` fuera del campo por `D.54`** (seccion `3`); despues,
-**las `7` fichas que quedaban de Grove, una por vez**, con las lineas y las aristas que la `73` dejo listas (secciones `4` a `6`). Los
-candidatos ya no estan en la bandeja: **los leo donde estan hoy**, en el grafo y en `_insertados`, contra mi lectura sellada de la
-`73` y contra el libro.
+**LO QUE ESTA VUELTA TENIA QUE HACER, Y LO QUE CLASIFICO A CIEGAS** (mi encargo, `docs/loop/PROMPT_SIGUIENTE.md`): **dejar listas sin
+insertar ninguna las `22` fichas de la bandeja de Gerber**: su fidelidad leida entera, su barrido, sus veredictos, sus aristas por
+lectura con `d111`, `d108` y `d098` delante, y su orden. **Yo hago lo mismo por mi cuenta**: leo los diez capitulos enteros y cada
+paso contra su linea (seccion `3`), barro las `22` sobre grafo mas bandejas (seccion `4`), escribo mis clases y mis aristas (secciones
+`5` y `6`) y las restricciones de orden que mi lectura pone (seccion `7`).
 
-**UNA LIMITACION DE METODO, DICHA ANTES DE NADA: EN ESTA FASE NO HE CORRIDO `git` SOBRE EL REPOSITORIO**, como en la `73` y la
-`74`: la carpeta de una linea viva es solo del arnes (`PARALELO.md` `7`). **Y UN DESLIZ MIO, DICHO PARA QUE SE JUZGUE:** al revisar
-la pagina, al final de la fase, cole un `git --version` en la cola de un comando de comprobacion, con su salida tirada a
-`/dev/null`. **No lee el repositorio**: imprime la version del programa y nada mas, y aqui ni eso. **No recupere nada**: los cuatro
-retirados siguen sin estar (seccion `0`). **Lo que se mide con `git` aqui no lo mido**: que commit movio que y a que hora. El commit en
-que esta el arbol lo leo de los ficheros de `.git/`:
+**UNA LIMITACION DE METODO, DICHA ANTES DE NADA: EN ESTA FASE NO HE CORRIDO `git` SOBRE EL REPOSITORIO**, ni una vez, como en la
+`73` y la `75`: la carpeta de una linea viva es solo del arnes (`PARALELO.md` `7`). **Lo que se mide con `git` aqui no lo mido**: que
+commit movio que y a que hora, y el contenido viejo de un fichero que cambio. Lo que si mido sin `git` es que ficheros son mas nuevos
+que mi encargo y que fichas cambiaron contra mis propias huellas de la `73` (seccion `2`). El commit en que esta el arbol lo leo de
+los ficheros de `.git/`:
 
     $ cat .git/HEAD; cat .git/refs/heads/extraccion-mundo-11
     ref: refs/heads/extraccion-mundo-11
-    7a8cd24118dd5575267342ab63e4c6863487e93e
-
-**Y LO QUE ESA LIMITACION NO ME QUITA, porque lo mido por el dato** (seccion `2`): el grafo de hoy, con las `7` filas quitadas y las
-tres operaciones de la TAREA `2` deshechas por lo que su codigo escribe, **es byte a byte el grafo que barri en la `73`**.
+    45e46d54bf2b4e22cde5e41d6a68d151fcbbabff
 
 ## 0. **LA HERENCIA** (`D.40`)
 
-ACTA ANTERIOR LEIDA: c32dfaf57eb26b8cc4617f8e925e695b3a9b58c5
+ACTA ANTERIOR LEIDA: 259ed9a152ac06afded98d8ab7a57ada89b0d817
 
 **Comprobada sin git**: es el blob de `docs/loop/ACTA_AUDITOR.md` tal como esta hoy en el arbol, calculado como lo calcula git. **La
-`ACTA 73` la lei entera**, de su linea de cabecera a la ultima del fichero:
+`ACTA 74` la lei entera**, de su linea de cabecera a la ultima del fichero, y con ella el encargo que me deje:
 
-    $ python .v75aud/huella_acta.py
-    sha1 del blob tal cual: c32dfaf57eb26b8cc4617f8e925e695b3a9b58c5
-    lineas con CRLF en el arbol: 0 | sha1 del blob normalizado a LF: c32dfaf57eb26b8cc4617f8e925e695b3a9b58c5
-    lineas del fichero: 49760 | la ACTA 73 empieza en la linea: [49325]
+    $ python .v76aud/huella_acta.py
+    sha1 del blob tal cual: 2bd8d9f35aca693cc75a7ff6c0bbfff42a140277
+    lineas con CRLF en el arbol: 466 | sha1 del blob normalizado a LF: 259ed9a152ac06afded98d8ab7a57ada89b0d817
+    lineas del fichero: 50226 | la ACTA 74 empieza en la linea: [49762]
 
-HEREDADO 1: CUMPLIDO. **La TAREA BLOQUEANTE de mi `ACTA 73` `73.6`**, con la guarda `D.30` en rojo: los dos puentes de
-`dar_elogio_disciplina_igual_critica` fuera del campo por `D.54`, primero `forja.py corregir` y despues `retirar_paso.py` sobre el
-`17` y luego sobre el `8`. **La mido sobre el dato y no sobre el reporte**, que no tengo: los `18` pasos de hoy son los `20` que yo
-imprimi en la `74` sin el `8` y sin el `17`, texto a texto; los dos literales retirados son esos dos; las tres operaciones estan en el
-resumen **en el orden que pedi**; la correccion trae, literal, cada cosa que le pedi; y **ninguna retirada declarada sigue
-viva en el campo**. Todo en la seccion `3`; aqui, la guarda y la linea del instrumento:
-
-    $ python scripts/retirar_paso.py --ver; echo "rc=$?"
-    RETIRADAS DECLARADAS QUE SIGUEN VIVAS EN EL CAMPO (D.54)
-      poblacion: dataset/nodos.jsonl, sin filtrar
-      encontradas: 0
-    rc=0
-    $ python .v75aud/dar_elogio.py | sed -n '1,3p'
-    pasos viejos (.v74aud/pasos_tres.txt): 20 | pasos hoy en el grafo: 18
-    (1) los de hoy son los viejos sin el 8 y sin el 17, en su orden y texto a texto: SI
-    (2) literal retirado del paso 17 igual al 17 viejo: SI | del paso 8 igual al 8 viejo: SI
-
-**LO QUE DE ELLA NO PUEDO MEDIR AQUI, Y LO DIGO:** que el `gate` saliera verde **despues de cada una** de las tres operaciones (hoy
-sale verde, seccion `2`, pero el intermedio vive en su reporte), y la `--razon` de `corregir`, que va a la bitacora y **no la abro**
-en esta fase. Las dos, en mi turno normal.
-
-HEREDADO 2: NO APLICA en esta fase. **Motivo:** `R5` es un remedio **del extractor** y se mide **sobre su reporte de la `75`**
-(`ACTA 73` `73.11`: *el reporte de la `75`, con `.v64ext/pegado64.py` y `.v64aud/normal/bloques_mudos.py` con la cabecera cambiada a
-la `75`*), y el reporte **no esta en el arbol**: el arnes lo retiro para esta fase (`D.34.2`) y no lo he recuperado por ninguna via.
+HEREDADO 1: NO APLICA en esta fase. **Motivo:** `R5` es un remedio **del extractor** y se mide **sobre su reporte de la `76`**
+(`ACTA 74` `74.11`: *el reporte de la `76`, con `.v64ext/pegado64.py` y `.v64aud/normal/bloques_mudos.py` con la cabecera cambiada a
+la `76`*), y el reporte **no esta en el arbol**: el arnes lo retiro para esta fase (`D.34.2`) y no lo he recuperado por ninguna via.
 **Se mide en mi turno normal**, con los dos instrumentos sacados otra vez de los originales y no de las copias del extractor. Lo que
 si esta en mi mano lo cumplo en mi pagina: cada bloque `$` lleva la salida del comando que abre, y nada mas.
 
@@ -69,89 +44,112 @@ si esta en mi mano lo cumplo en mi pagina: cada bloque `$` lleva la salida del c
     ls: cannot access 'docs/loop/ultimo_extractor.json': No such file or directory
     ls: cannot access 'docs/loop/ultimo_auditor.json': No such file or directory
     ls: cannot access 'docs/loop/CREDITO_serial.jsonl': No such file or directory
-    $ grep -n "VUELTA 4 : APERTURA CIEGA" docs/loop/loop.log | tail -1
-    8045:[2026-09-26 06:03:52] VUELTA 4 : APERTURA CIEGA (claude-opus-5-5), retirados: REPORTE.md ultimo_extractor.json ultimo_auditor.json CREDITO_serial.jsonl
+    $ grep -n "VUELTA 1 : APERTURA CIEGA" docs/loop/loop.log | tail -1
+    8381:[2026-09-26 08:09:52] VUELTA 1 : APERTURA CIEGA (claude-opus-5-5), retirados: REPORTE.md ultimo_extractor.json ultimo_auditor.json CREDITO_serial.jsonl
 
-HEREDADO 3: CUMPLIDO. **`R6`, mio** (`ACTA 73` `73.11`): en esta fase los pasos de cualquier nodo los imprime
-`.v67aud/normal/pasos_ciego.py`, que no ensenia `previos` ni `siguientes`, y **el unico bloque de pasos de esta pagina lo corre**
-(seccion `6`). Los instrumentos mios de esta fase que **nombran** esas claves en su codigo:
+HEREDADO 2: CUMPLIDO. **`R6`, mio** (`ACTA 74` `74.11`): en esta fase los pasos de cualquier nodo los imprime
+`.v67aud/normal/pasos_ciego.py`, que no ensenia `previos` ni `siguientes`: con el lei las `22` fichas (`.v76aud/pasos_22.txt`) y los
+nodos de fuera que el barrido levanta (`.v76aud/pasos_fuera.txt`), y los bloques de pasos de esta pagina los corre el (seccion `5`).
+Las lineas de esos ficheros que **empiezan** por una clave de relacion, y los instrumentos mios de esta fase que las **nombran**:
 
-    $ grep -l -E "previos|siguientes" .v75aud/*.py
-    .v75aud/esperado_75.py
+    $ grep -c -E "^ *(previos|siguientes|nodos_previos|nodos_siguientes)" .v76aud/pasos_22.txt .v76aud/pasos_fuera.txt
+    .v76aud/pasos_22.txt:0
+    .v76aud/pasos_fuera.txt:0
+    $ grep -l -E "previos|siguientes" .v76aud/*.py | wc -l
+    0
 
-**Y LO DIGO PARA QUE SE JUZGUE:** `esperado_75.py` (seccion `5`) **las nombra para leer las aristas de la tanda en el grafo**, y
-**no imprime ninguna clave ni ningun id de relacion**: imprime dos cuentas y dos `SI` o `NO` (cuantas aristas tiene escritas la
-madre, cuantas el hijo, si las dos listas dicen lo mismo y si el conjunto es el que mi lectura sellada esperaba, que el mismo
-instrumento imprime **antes** de mirar el grafo). `grafo_sin_tanda.py` (seccion `2`) quita los ids de la tanda de **cualquier** lista
-sin nombrar ninguna clave, y solo cuenta. **No vi ninguna clave de relacion con su valor de ningun nodo en esta fase.** El
-cumplimiento de la pagina entera lo mide un `grep` sobre ella al cerrarla (seccion `9`).
+**LO UNICO QUE SE ACERCA, para que se juzgue:** `pasos_22.txt` trae dos lineas con la palabra *siguientes* dentro de un paso
+(*las siguientes actividades*, *las tres semanas siguientes*), que son texto del libro y no claves; y `.v76aud/correcciones.py`
+(seccion `3`) imprime los tramos *CORRECCION DECLARADA* del `resumen_teorico`, prosa del extractor sobre pasos y citas. **No vi
+ninguna clave de relacion con su valor de ningun nodo en esta fase.** La pagina entera la mide un `grep` sobre ella al cerrarla
+(seccion `10`).
 
-HEREDADO 4: CUMPLIDO. **`R7`, mio** (`ACTA 73` `73.11`): toda linea de esta pagina que reparte un total en clases la imprime un
-instrumento que cuenta **todas** las clases con el mismo predicado y **dice su `suma`**: los de `.v75aud/` la traen desde que nacen,
-y los que reuso (`.v70aud/poblacion.py`, `.v73aud/restricciones_orden.py` y el de `R8` de la `ACTA 73`) ya la traian. **Medido sobre
-la pagina misma** en la seccion `9`, con la copia de `.v74aud/r7_pagina.py`.
+HEREDADO 3: CUMPLIDO. **`R7`, mio** (`ACTA 74` `74.11`): toda linea de esta pagina que reparte un total en clases la imprime un
+instrumento que cuenta **todas** las clases con el mismo predicado y **dice su `suma`**: los de `.v76aud/` la traen, copiados de los
+de la `73` o escritos en esta fase con ella, y los que reuso sin copiar (`.v70aud/poblacion.py`, `.v75aud/normal/bandeja_gerber.py` y
+el de `R8`) ya la traian. **Medido sobre la pagina misma** en la seccion `10`, con la copia de `.v73aud/r7_pagina.py`.
 
-HEREDADO 5: CUMPLIDO. **`R8`, mio** (`ACTA 73` `73.11`): se comprueba **aqui**, en mi fase ciega, sobre el encargo de la `75`, **con
-el mismo instrumento con el que lo medi al cerrarlo** (`.v74aud/normal/r8_encargo75.py`), sin copiarlo, y leyendo sus lineas otra
-vez. Su salida de hoy es identica a la que la `ACTA 73` `73.12` guardo, y la lectura, con las cuentas en letra buscadas aparte, esta en
-la seccion `7`. El encargo de la `76` lo escribo en mi turno normal y se mide alli.
+HEREDADO 4: CUMPLIDO. **`R8`, mio** (`ACTA 74` `74.11`, *mi fase ciega de la `76`, sobre el encargo de la `76`*): **lo mido aqui con
+el mismo instrumento de la `74.12`, sin copiarlo**, y su salida de hoy es identica a la que aquella acta guardo; la lectura, linea a
+linea, en la seccion `8`. El encargo de la `77` lo escribo en mi turno normal y se mide alli.
 
-HEREDADO 6: NO APLICA en esta fase. **Motivo:** `R9` es un remedio **del extractor**, nuevo en mi `ACTA 73` `73.11`, y se comprueba
-en *el reporte de la `75` y siguientes que marquen fidelidad; en la `75`, sobre la correccion de `dar_elogio`*. **Ese reporte no esta
-en el arbol** (el bloque de `ls` del `HEREDADO 2`, que es el mismo fichero), y no lo he recuperado. **Se mide en mi turno normal.**
-**Lo que si hago aqui es aplicar su letra a mi propia lectura**: el `grep` de clausulas que comparan o califican la prueba, sobre los
-`68` pasos de `cap_13` de Scott que quedan y sobre los `42` de Grove que entraron, **cada coincidencia con su tramo literal del libro**
-(secciones `3` y `4`). La salida que sostiene que el reporte no esta:
+HEREDADO 5: NO APLICA en esta fase. **Motivo:** `R9` es un remedio **del extractor** y se comprueba **en el reporte de la `76`, en
+cada fila de fidelidad y en cada cuenta de PUENTE** (`ACTA 74` `74.11`), que el arnes retiro (bloque del HEREDADO `1`). **Lo que si
+esta en mi mano**, y lo cumplo en mi lectura: **cada una de mis `176` filas trae su tramo literal del libro, y el instrumento
+comprueba que ese tramo esta en la linea que cito** (seccion `3`); el cruce de su patron con el mio, en mi turno normal.
 
-    $ ls docs/loop/REPORTE.md
-    ls: cannot access 'docs/loop/REPORTE.md': No such file or directory
+    $ python .v76aud/contar_fidelidad.py | tail -1
+    citas: filas 176 | el tramo esta en su linea: 176 | no esta: 0 | suma: 176
+
+HEREDADO 6: CUMPLIDO. **`R10`, mio, NUEVO en la `ACTA 74`** (`74.9` y `74.11`): toda salida pegada en `PROMPT_SIGUIENTE.md` se corre
+despues de la ultima escritura del auditor en el registro que mide, o se vuelve a correr antes del commit y se compara. **Lo mido
+sobre el encargo de la `76` por los dos caminos**: el registro que mide la clase, `DEUDA.jsonl`, es de antes que el encargo, y las
+dos salidas pegadas (la clase y el tablero) **salen hoy identicas a lo pegado**, con la comparacion que la `74.13` guardo en
+`.v75aud/normal/r10.txt` delante. El `TABLERO.jsonl` es de despues, y no es escritura mia: es la del arnes al arrancar esta corrida
+(seccion `1`). **La otra mitad de su sitio, la `ACTA 75`, es de mi turno normal.**
+
+    $ ls -l --time-style=full-iso docs/loop/DEUDA.jsonl docs/loop/PROMPT_SIGUIENTE.md .v75aud/normal/r10.txt docs/loop/TABLERO.jsonl | awk '{print $6, substr($7,1,8), $9}'
+    2026-09-26 06:34:02 .v75aud/normal/r10.txt
+    2026-09-26 04:28:05 docs/loop/DEUDA.jsonl
+    2026-09-26 06:29:54 docs/loop/PROMPT_SIGUIENTE.md
+    2026-09-26 06:45:20 docs/loop/TABLERO.jsonl
+    $ python scripts/deuda.py --clase 76 | diff --strip-trailing-cr - <(sed -n "39,40p" docs/loop/PROMPT_SIGUIENTE.md | sed "s/^    //") && echo "clase: IDENTICA a la pegada en el encargo de la 76"
+    clase: IDENTICA a la pegada en el encargo de la 76
+    $ python forja.py tablero --puedo gerber_emyth | diff --strip-trailing-cr - <(sed -n "42,43p" docs/loop/PROMPT_SIGUIENTE.md | sed "s/^    //") && echo "tablero --puedo: IDENTICO al pegado en el encargo de la 76"
+    tablero --puedo: IDENTICO al pegado en el encargo de la 76
 
 ## 1. **LO QUE VI SIN BUSCARLO, Y LO DIGO ANTES DE MEDIR** (`d146`)
 
-**La foto de `git status` que el entorno me pone delante trae los asuntos de los cinco ultimos commits del extractor de la `75`, y
-dos traen cifras y conclusiones de su vuelta**, que lei antes de medir nada:
+**La foto de `git status` que el entorno me pone delante trae los asuntos de los commits del extractor, y tres son cifras de su
+vuelta**: `b0dda029` (*la fidelidad entera de las 22 fichas de Gerber (176 pasos, 9 PUENTE corregidos en la bandeja por correccion
+declarada antes del barrido, cap_07 y cap_12 releidos enteros por D.58)*), `a0d42852` (*el barrido de las 22 de Gerber (22 de 22, 54
+pares, recogido dentro del turno), sus 54 veredictos listos, 6 aristas por lectura con d111, d108 y d098 leidas, y el orden con D.36
+en cero*) y `dfca777d` (*el cierre (censo igual al abrir y al cerrar, 22 fichas de Gerber preparadas y ninguna insertada, huellas,
+D.61 sin discutible abierto, R5, gate, guiones, 382 pruebas y cierre estricto en verde)*). **Los lei antes de medir nada.** Es el
+mismo hueco de `d146` que declararon las aperturas de la `65` a la `75`, y no lo arreglo yo (`D.45`).
 
-- `d02ed219` *Vuelta 75, T5: el cierre (censo 430/1081/1/7/85 al abrir y 437/1111/1/0/92 al cerrar; las 7 de Grove dentro con 0
-  PUENTE que entraron; cap_13 de Scott sin puente vivo en el grafo; D.61 sin abiertos; R5, guardas y cierre estricto en verde)*;
-- `4f3f21a3` *Vuelta 75, T4: las 7 de Grove insertadas, las 3 aristas esperadas en el grafo, ningun nodo viejo cambiado fuera de la
-  TAREA 2*;
-- y `7a8cd241`, `3651efd4` y `11a630db`, sin cifras de medida (*la salida del hook*, *fila 7: su fila en el reporte*, y la fila `7`
-  insertada por la aduana y movida a `_insertados`).
-
-**Y CUATRO COSAS MAS, DEL MISMO TIPO, QUE SON MIAS:**
-
-1. un `ls .v75ext` me ensenio **los nombres** de los ficheros de su carpeta (entre ellos `t2_op1_corregir.txt`, `t2_op2_retirar17.txt`,
-   `t2_op3_retirar8.txt`, `t2_ver.txt`, `r9.txt`, `r9_tramos.txt`, `cap13_scott.txt`, `aristas_vuelta.txt`, `nodos_viejos.txt`, un
-   `contra_0N.txt`, un `insertar_0N_<id>.txt` y su `.fin` por fila, del `01` al `07`), **no su contenido**;
-2. la cola de `docs/loop/loop.log`, que no se retira, con el coste y el reloj del turno del extractor:
-
-    $ grep -n "VUELTA 4 : EXTRACTOR\|extractor listo" docs/loop/loop.log | tail -2
-    8043:[2026-09-26 04:30:59] VUELTA 4 : EXTRACTOR (claude-opus-5-5, esfuerzo high)
-    8044:[2026-09-26 06:03:52] extractor listo (USD 5.9120888), 5572s, intento 1 de 7
-
-3. **el `resumen_teorico` entero de `dar_elogio` en el grafo**, que lei para escribir el instrumento que lo mide: trae el texto de la
-   correccion y de las dos retiradas **que el extractor escribio en esta vuelta**. Es dato del grafo y no reporte, y es justo lo que la
-   bloqueante le mandaba escribir; **pero es prosa suya**, y lo digo;
-4. el codigo de `src/correccion.py` y de `scripts/retirar_paso.py`, para saber **que escribe cada operacion** y poder deshacerla en mi
-   reconstruccion (seccion `2`). Tambien lei mi `ACTA 73` entera, mi encargo y `AUDITOR_FORJA.md` entero.
+**Y LO DEMAS DEL MISMO TIPO:** la cola de `docs/loop/loop.log`, que no se retira (el coste y la hora del turno del extractor, y la
+parada de las `06:37` por la guarda del tablero con el relanzamiento de las `06:45`); mi `ACTA 74` entera y mi encargo; el texto de
+`d098`, `d108` y `d111` en `docs/loop/DEUDA.jsonl`, que mi encargo manda leer; un `ls .v76ext`, que me enseño **los nombres** de su
+carpeta (entre ellos `fidelidad.tsv`, `veredictos_listos.txt`, `aristas_lectura.txt`, `orden.txt` y un `vecinos_<id>.json` por
+ficha), **no su contenido**; y **seis fichas de la bandeja llevan dentro, en su `resumen_teorico`, la lectura del propio extractor**
+(la *CORRECCION DECLARADA DE LA VUELTA 76* con el texto viejo dentro). **Esas correcciones las lei DESPUES de escribir y contar mi
+fidelidad paso a paso**: para leer las lineas que cada ficha cita sin leer su prosa, `.v76aud/citas_ficha.py` imprime solo los
+`cap_NN` y los `LNN` que el resumen nombra antes de la primera correccion, y cuantas correcciones trae; lo que dicen, en la seccion
+`3`, separado.
 
 **LO QUE HAGO CON ELLO:** ninguna cifra de esta pagina sale de esos asuntos; todas salen de un instrumento corrido en esta fase, y
-**donde coinciden lo digo como coincidencia y no como fuente**. **No he abierto nada de `.v75ext/` por dentro**, **ni
-`bitacora/VEREDICTOS.jsonl` por dentro**: de la bitacora solo cuento lineas. **Mis clases de la tanda no las decido hoy**: son las de
-mis ficheros sellados de la `73`, con la unica correccion que la `ACTA 72` `72.5` adjudico (`D73.9`), declarada dentro de cada
-instrumento que la aplica.
+donde coinciden lo digo como coincidencia y no como fuente. **No he abierto nada de `.v76ext/` por dentro**, **ni
+`bitacora/VEREDICTOS.jsonl` por dentro**: de ella solo cuento lineas. **Y ESTO SI PESA SOBRE MI LECTURA, Y LO DIGO:** el asunto de
+`a0d42852` me dijo *54 pares* y *6 aristas por lectura* antes de barrer y de leer. Mis pares salen de mi barrido y mis aristas de la
+seccion `6` con su linea del libro, y son las que son; **pero no puedo probar que no me empujaron**, y por eso lo escribo aqui.
 
-## 2. **EL CENSO, Y QUE LO UNICO QUE SE MOVIO ES LO QUE EL ENCARGO MANDABA** (`D.38.4`, `D.38.5`)
+## 2. **EL ALCANCE, Y EL CENSO QUE LO SOSTIENE**
+
+Mi lista es la bandeja entera, leida del directorio, y su reparto por capitulo y por pasos lo da el instrumento de la `ACTA 74`
+`74.10`, corrido hoy sin copiarlo:
+
+    $ wc -l < .v76aud/las22.txt; ls cuarentena/gerber_emyth | grep "\.json$" | sed 's/\.json$//' | diff - .v76aud/las22.txt && echo "las22.txt es la bandeja de Gerber entera, fichero a fichero"
+    22
+    las22.txt es la bandeja de Gerber entera, fichero a fichero
+    $ python .v75aud/normal/bandeja_gerber.py | diff - .v75aud/normal/bandeja_gerber.txt && echo "bandeja_gerber.py de hoy: IDENTICO a su salida de la ACTA 74 74.10"; tail -2 .v75aud/normal/bandeja_gerber.txt
+    bandeja_gerber.py de hoy: IDENTICO a su salida de la ACTA 74 74.10
+    fichas por capitulo: {'cap_04': 1, 'cap_07': 1, 'cap_08': 2, 'cap_11': 6, 'cap_12': 3, 'cap_13': 1, 'cap_14': 1, 'cap_15': 1, 'cap_18': 3, 'cap_19': 3} | suma: 22
+    pasos por capitulo: {'cap_04': 7, 'cap_07': 8, 'cap_08': 17, 'cap_11': 57, 'cap_12': 12, 'cap_13': 10, 'cap_14': 9, 'cap_15': 5, 'cap_18': 26, 'cap_19': 25} | suma: 176
+
+**El censo de hoy**, sin `git` (grafo, bitacora, pares mutuos; la bandeja de Gerber y sus insertados, la de Grove y sus insertados,
+la de Marquet y `procesos/`), la poblacion de la aduana y el `gate`:
 
     $ wc -l dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl config/pares_mutuos.jsonl
         437 dataset/nodos.jsonl
        1111 bitacora/VEREDICTOS.jsonl
           1 config/pares_mutuos.jsonl
        1549 total
-    $ for d in cuarentena/grove_high_output cuarentena/_insertados/grove_high_output cuarentena/gerber_emyth cuarentena/marquet_turn_the_ship; do echo "$d $(find $d -maxdepth 1 -name '*.json' | wc -l)"; done; echo "procesos $(ls -A procesos/ | wc -l)"
+    $ for d in cuarentena/gerber_emyth cuarentena/_insertados/gerber_emyth cuarentena/grove_high_output cuarentena/_insertados/grove_high_output cuarentena/marquet_turn_the_ship; do echo "$d $(find $d -maxdepth 1 -name '*.json' 2>/dev/null | wc -l)"; done; echo "procesos $(ls -A procesos/ | wc -l)"
+    cuarentena/gerber_emyth 22
+    cuarentena/_insertados/gerber_emyth 0
     cuarentena/grove_high_output 0
     cuarentena/_insertados/grove_high_output 92
-    cuarentena/gerber_emyth 22
     cuarentena/marquet_turn_the_ship 20
     procesos 0
     $ python .v70aud/poblacion.py
@@ -160,504 +158,665 @@ instrumento que la aplica.
     GATE VERDE.
       nodos verificados: 437
 
-**Sin `git`, lo que cambio desde que escribi mi encargo, por tres instrumentos.** Primero, **cualquier fichero** del dato, de las
-bandejas, del codigo o de la configuracion con fecha de escritura posterior a mi encargo (las fichas de una misma carpeta, juntas):
+**Lo que es mas nuevo que mi encargo** en las carpetas de dato, de codigo y de libro; la hora de cada cosa; y **las fichas de Gerber y
+de Marquet contra mis huellas de la `73`**, tomadas antes de mi barrido de entonces:
 
-    $ ls -l --time-style=full-iso docs/loop/PROMPT_SIGUIENTE.md | awk '{print $6, $7, $9}'
-    2026-09-26 04:27:25.592730100 docs/loop/PROMPT_SIGUIENTE.md
     $ find cuarentena dataset bitacora censos config fuentes esquema src scripts tests forja.py -type f -newer docs/loop/PROMPT_SIGUIENTE.md | sed 's|/[^/]*\.json$|/*.json|' | sort | uniq -c
-          1 bitacora/VEREDICTOS.jsonl
-          1 censos/denominaciones.md
-          1 dataset/nodos.jsonl
-
-Segundo, **las `50` huellas que tome al lanzar mi barrido de la `73`** (las fichas de las tres bandejas y el grafo) contra los ficheros
-de hoy, buscando en `_insertados` la ficha que ya no esta en la bandeja:
-
-    $ python .v75aud/huellas_hoy.py
-    huellas: 50 | suma: 50
-      gerber_emyth, en su sitio, misma huella: 22
-      grafo, aparte: 1
-      grove_high_output, movida a _insertados, misma huella: 7
-      marquet_turn_the_ship, en su sitio, misma huella: 20
-    movidas a _insertados: 7 | son las 7 de .v73aud/los7.txt: SI | fuera de ellas: []
-    ficheros que no cuadran: []
-
-Tercero, **el grafo**: si al de hoy le quito las `7` filas de la tanda, y ademas los ids de las `7` de las listas de los nodos viejos,
-y ademas **deshago en `dar_elogio` las tres operaciones de la TAREA `2`** por lo que su codigo escribe (`src/correccion.py` solo
-agrega al final del resumen; `scripts/retirar_paso.py` saca el paso y agrega al final del resumen su literal), sale el fichero que
-barri, byte a byte. **La vuelta `74` no movio ningun dato** (mi `ACTA 73` `73.1`, con `git diff`), asi que ese fichero es tambien el
-de la apertura de la `75`:
-
-    $ python .v75aud/grafo_sin_tanda.py
-    filas del grafo hoy: 437 | la reconstruccion reproduce el fichero de hoy: SI
-    de las 7 de la tanda en el grafo: 7 | filas que quedan sin ellas: 430
-    las 7 son las ultimas filas del fichero: SI
-    (a) sin las 7 filas, sha1 igual a la huella de mi barrido de la 73: NO
-    (b) nodos viejos con algun id de las 7 en alguna lista: 0 | sin esos ids, sha1 igual a la huella: NO
-    (c) en dar_elogio: pasos hoy 18 | retiradas escritas en su resumen despues de la primera correccion del 26 sep: 2, en este orden: paso 17 (de 20 a 19), paso 8 (de 19 a 18)
-        deshechas: pasos 20 | caracteres del resumen quitados del final: 4008 de 9390
-        y con dar_elogio deshecho, sha1 igual a la huella de mi barrido de la 73: SI
+          6 cuarentena/gerber_emyth/*.json
+          1 src/__pycache__/tablero.cpython-312.pyc
+          1 src/tablero.py
+          1 tests/test_aceptacion.py
+    $ ls -l --time-style=full-iso docs/loop/PROMPT_SIGUIENTE.md src/tablero.py tests/test_aceptacion.py | awk '{print $6, substr($7,1,8), $9}'; ls -l --time-style=full-iso cuarentena/gerber_emyth/*.json | awk '{print $6, substr($7,1,8)}' | sort | sed -n '$p'
+    2026-09-26 06:29:54 docs/loop/PROMPT_SIGUIENTE.md
+    2026-09-26 06:45:09 src/tablero.py
+    2026-09-26 06:45:09 tests/test_aceptacion.py
+    2026-09-26 07:05:30
+    $ grep -n -E "DETENIDO en la vuelta 5|^\[2026-09-26 06:45:19\] arranque|VUELTA 1 : EXTRACTOR" docs/loop/loop.log | tail -3
+    8365:[2026-09-26 06:37:07] DETENIDO en la vuelta 5: la guarda del tablero esta en ROJO (D.49, D.51).
+    8368:[2026-09-26 06:45:19] arranque: rama extraccion-mundo-11, MODO_INSERCION=insertar
+    8379:[2026-09-26 06:45:20] VUELTA 1 : EXTRACTOR (claude-opus-5-5, esfuerzo high)
+    $ python .v76aud/huellas_contra_73.py
+    fichas hoy: {'gerber_emyth': 22, 'marquet_turn_the_ship': 20} | suma: 42
+    contra mis huellas de la 73: {'gerber_emyth, CAMBIA': 6, 'gerber_emyth, igual': 16, 'marquet_turn_the_ship, igual': 20} | suma: 42
+      CAMBIA: cuarentena/gerber_emyth/aplicar_ocho_reglas_juego_personas.json
+      CAMBIA: cuarentena/gerber_emyth/cambiar_saludo_cliente_dos_ramas.json
+      CAMBIA: cuarentena/gerber_emyth/cuantificar_impacto_innovacion_6_pasos.json
+      CAMBIA: cuarentena/gerber_emyth/dictar_ritmo_crecimiento_preguntas_escritas.json
+      CAMBIA: cuarentena/gerber_emyth/interrogar_negocio_cinco_preguntas.json
+      CAMBIA: cuarentena/gerber_emyth/operar_modelo_gente_destreza_minima.json
 
 **LECTURA:**
 
-- **El grafo tiene `437` filas, la bandeja de Grove `0`, sus insertados `92`, los pares mutuos `1`, la bitacora `1111` lineas, y
-  `procesos/` esta vacio.** Gerber y Marquet siguen en `22` y `20`, **con la huella de mi barrido de la `73`**, que es lo que el
-  encargo pedia (*no tocas*). Coincide con el `437/1111/1/0/92` del asunto de `d02ed219`, y lo digo como coincidencia.
-- **Las `7` fichas movidas a `_insertados` son las `7` de mi lista, con la huella que tenian cuando las barri**, y son las ultimas `7`
-  filas del grafo.
-- **(a) y (b) salen `NO`, y tienen que salir `NO`**: `dar_elogio` cambio por mandato. **(c) sale `SI`**: con las tres operaciones
-  deshechas, **los `430` nodos viejos son byte a byte los que barri**, y eso dice cuatro cosas a la vez: **ningun nodo viejo tiene un
-  id de la tanda en ninguna lista** (las `3` aristas son entre nodos de la tanda, seccion `5`); **ningun otro nodo del grafo cambio**;
-  **en `dar_elogio` no cambio nada mas** que los dos pasos y el final del resumen (ni el titulo, ni la condicion, ni el entregable, ni
-  un caracter del resumen viejo); y **las dos retiradas se aplicaron sobre el `17` y despues sobre el `8`**, porque reponiendolas al
-  reves sale la huella. Coincide con el *ningun nodo viejo cambiado fuera de la TAREA 2* de `4f3f21a3`, y lo digo como coincidencia.
-- **La poblacion de hoy es `479`**, la de mi barrido de la `73`, con `7` en otra sede.
-- **Lo que se escribio despues de mi encargo en el dato** es el grafo, la bitacora y `censos/denominaciones.md`, que es lo que escriben
-  una insercion y una correccion; **nada en `config/`, `esquema/`, `fuentes/`, `src/`, `scripts/` ni `tests/`**. Las fichas movidas no
-  salen en el `find` porque mover no cambia la fecha de escritura; las mide el segundo instrumento.
+1. `437`, `1111`, `1`, `92` en los insertados de Grove y `0` en su bandeja son los de mi `ACTA 74` `74.1` al cerrar la `75`; Gerber
+   sigue en `22` y sin insertados, y Marquet en `20`: **la vuelta no inserto nada ni movio nada de sede**, que es lo que el encargo
+   pedia, y `procesos/` esta vacio. La poblacion del barrido sigue en `479`.
+2. **Lo unico de dato mas nuevo que mi encargo son `6` fichas de Gerber, y son las `6` cuyas huellas cambiaron contra las mias de la
+   `73`**; las otras `16` de Gerber y las `20` de Marquet son byte a byte las de entonces. La ultima ficha se escribio a las `07:05:30`.
+3. **Y DOS FICHEROS DE CODIGO, QUE MI ENCARGO PROHIBIA TOCAR**: `src/tablero.py` y `tests/test_aceptacion.py`, los dos a las
+   `06:45:09`. **No los toco el extractor, por la hora**: el arnes paro a las `06:37:07` porque la guarda del tablero no dejaba abrir
+   la vuelta con Gerber, se relanzo a las `06:45:19` y el extractor arranco a las `06:45:20`. **Lo que dicen ellos mismos**: el
+   comentario nuevo de `src/tablero.py` (*UN COSECHADO QUE YA ENTRO ENTERO ES INSERTADO (26 sep 2026)*) y el test nuevo (*LA VUELTA 76
+   NO ABRIO (26 sep 2026, 06:37)*) son el remedio de esa parada, que es lo que `d180` anoto en la `ACTA 73`. **Quien lo escribio no lo
+   se sin `git`**: lo mido en mi turno normal, y si es del fundador no es de nadie de esta linea (`D.45`). **Lo que si mido**: el
+   asunto de `dfca777d` dice *382 pruebas* y mi `ACTA 74` `74.1` conto `379`; la suite la corro en mi turno normal.
+4. **Lo que no puedo decir sin `git`**: si alguna linea de la bitacora o algun byte del grafo cambio sin cambiar la cuenta ni la
+   fecha. Eso lo mido en mi turno normal, con el hash del reporte delante.
 
-## 3. **LA TAREA `2`: LOS DOS PUENTES DE `dar_elogio` FUERA DEL CAMPO** (`HEREDADO 1`; `D.30`, `D.54`; `ACTA 73` `73.5`, `73.6`)
+## 3. **LA FIDELIDAD DE LAS `22`, LEIDA ENTERA** (`D.30`, `D.58`, `8`)
 
-El instrumento lee los `20` pasos viejos de mi fase ciega de la `74` (`.v74aud/pasos_tres.txt`, impresos con `pasos_ciego.py`) y los
-de hoy del grafo, y busca **literal** en la correccion cada cosa que mi encargo le pidio:
+Lei **enteros** los diez capitulos que las `22` citan en su `UNIDAD DE ORIGEN` (`cap_04`, `cap_07`, `cap_08`, `cap_11`, `cap_12`,
+`cap_13`, `cap_14`, `cap_15`, `cap_18` y `cap_19`), y cada paso contra su linea, con los pasos delante por `pasos_ciego.py`
+(`.v76aud/pasos_22.txt`). Para `d098` lei ademas la apertura de `cap_05`. Las citas que cada ficha nombra, sin su prosa:
 
-    $ python .v75aud/dar_elogio.py
-    pasos viejos (.v74aud/pasos_tres.txt): 20 | pasos hoy en el grafo: 18
-    (1) los de hoy son los viejos sin el 8 y sin el 17, en su orden y texto a texto: SI
-    (2) literal retirado del paso 17 igual al 17 viejo: SI | del paso 8 igual al 8 viejo: SI
-    (3) posicion en el resumen: corregir 5383, retirar 17 7762, retirar 8 8628 | en el orden corregir, 17, 8: SI
-    (4) lo que el encargo pedia a la correccion, frase por frase: {'esta': 11} | suma: 11
-    (5) tramos del libro pegados en la correccion: 3, lineas [273, 283, 283] | por estado: {'en su linea': 3} | suma: 3
-        las dos razones de retirar_paso.py traen la fecha de hoy y la ACTA 73 73.5: ['SI', 'SI']
+    $ wc -l fuentes/gerber_emyth/cap_{04,07,08,11,12,13,14,15,18,19}.md | tail -1
+      2836 total
+    $ python .v76aud/citas_ficha.py
+    aplicar_cinco_pasos_proceso_contratacion                correcciones 0 | citas antes de la primera: cap_18 L247 L272 L249 L257 L259 L269 cap_11
+    aplicar_ocho_reglas_juego_personas                      correcciones 1 | citas antes de la primera: cap_18 L137 L166 L143 L165 cap_14 cap_15 L141
+    aplicar_seis_pasos_sistema_venta                        correcciones 0 | citas antes de la primera: cap_19 L141 L154 L143 L153 cap_18 L155 L304 L215 L253
+    cambiar_saludo_cliente_dos_ramas                        correcciones 1 | citas antes de la primera: cap_12 L51 L58 L22 L83 L59 L62
+    construir_empresa_plantilla_vision_diaria               correcciones 0 | citas antes de la primera: cap_08 L36 L51 L53
+    construir_estrategia_gente_cuatro_componentes           correcciones 0 | citas antes de la primera: cap_18 L117 L120 L119 cap_17 L221 cap_11 L121 L135
+    cuantificar_impacto_innovacion_6_pasos                  correcciones 1 | citas antes de la primera: cap_12 L95 L21
+    dar_valor_constante_cuatro_publicos                     correcciones 0 | citas antes de la primera: cap_11 L58 L83
+    dictar_ritmo_crecimiento_preguntas_escritas             correcciones 1 | citas antes de la primera: cap_07 L278 L287
+    distinguir_tres_tipos_sistemas_negocio                  correcciones 0 | citas antes de la primera: cap_19 L33 L46 L35 L37 L39 L41 cap_18 cap_12 L45 L47
+    documentar_trabajo_manual_operaciones                   correcciones 0 | citas antes de la primera: cap_11 L152 L173 L159 L161
+    fingir_prototipo_cinco_mil_replicas                     correcciones 0 | citas antes de la primera: cap_11 L34 L57
+    hacer_trabajo_futuro_imaginar_negocio                   correcciones 0 | citas antes de la primera: cap_04 L284 L291
+    interrogar_negocio_cinco_preguntas                      correcciones 1 | citas antes de la primera: cap_11 L242 L265
+    medir_sistema_venta_trece_indicadores_benchmark         correcciones 0 | citas antes de la primera: cap_19 L307 L338 L311 L335 L337
+    operar_modelo_gente_destreza_minima                     correcciones 1 | citas antes de la primera: cap_11 L84 L133
+    probar_traje_azul_seis_semanas                          correcciones 0 | citas antes de la primera: cap_12 L63 L64 L22 L83 L65 L68
+    recorrer_siete_pasos_programa_desarrollo_negocio        correcciones 0 | citas antes de la primera: cap_13 L39 L58 cap_11 cap_14 cap_19 L43 L57 cap_09 cap_10
+    responder_4_preguntas_estandares_objetivo_estrategico   correcciones 0 | citas antes de la primera: cap_15 L167 L178 cap_13 L43 L57
+    responder_8_preguntas_construir_primary_aim             correcciones 0 | citas antes de la primera: cap_14 L117 L136 L27 L133
+    trazar_modelo_negocio_cliente_primero                   correcciones 0 | citas antes de la primera: cap_08 L106 L121
+    unificar_color_forma_vestuario_modelo                   correcciones 0 | citas antes de la primera: cap_11 L212 L241
 
-**LECTURA:** **la bloqueante esta cumplida por el dato.** Los `18` pasos son los viejos sin el `8` y sin el `17`; los dos literales
-estan escritos en el nodo y son los que eran; **la correccion va antes de las dos retiradas y la del `17` antes que la del `8`**, que es
-el orden que pedi para que el numero del segundo no se moviera; y la correccion trae, **literal**, que los dos son `PUENTE` de clausula,
-la `73.5`, las dos lineas del libro, que parte de cada paso es del libro, la cuenta `18` y `2` en lugar de `20` y `0`, y la tabla de
-numeros vieja contra nueva. **Los tres tramos del libro que pega estan en su linea del capitulo.** Las dos razones de
-`retirar_paso.py` traen la fecha de hoy y la `73.5`, **ademas** de la fecha fija de `D.54` que el instrumento escribe (`17 sep 2026`),
-que es lo que el encargo avisaba.
+Una fila por paso en `.v76aud/fidelidad.tsv`: `T` transcripcion, `P` puente (**la clausula reescrita cuenta como `P`**, `ACTA 62`
+`62.5`), `D` mi duda, con su capitulo, su linea y **el tramo literal del libro**. El contador es copia de `.v73aud/contar_fidelidad.py`
+con las rutas cambiadas, **una fila por capitulo** (`8.2`) y la suma de cada reparto (`R7`); cruza cada fila con los pasos de la
+ficha de la bandeja de hoy, **y comprueba que el tramo que copio esta en la linea que cito**:
 
-**`PASOS INVENTADOS` de `cap_13` DESPUES DE LA TAREA `2`**, desde **mi** lectura sellada de la `74` (`.v74aud/fidelidad.tsv`) con las
-cinco adjudicaciones de la `ACTA 73` `73.5` aplicadas y declaradas en el instrumento, quitadas las filas de los dos pasos que salieron y
-cruzada cada fila que queda con su paso de hoy, texto a texto. Y **`R9` con su letra aplicada a mi propia lectura**: el `grep` de
-clausulas que comparan, contrastan o califican la prueba, sobre los pasos de hoy:
+    $ python .v76aud/contar_fidelidad.py
+    candidato                                                    ficha filas   T   P  DUDA  suma
+    aplicar_cinco_pasos_proceso_contratacion                        12    12  12   0     0    12
+    aplicar_ocho_reglas_juego_personas                               9     9   9   0     0     9
+    aplicar_seis_pasos_sistema_venta                                 6     6   6   0     0     6
+    cambiar_saludo_cliente_dos_ramas                                 4     4   4   0     0     4
+    construir_empresa_plantilla_vision_diaria                        8     8   8   0     0     8
+    construir_estrategia_gente_cuatro_componentes                    5     5   5   0     0     5
+    cuantificar_impacto_innovacion_6_pasos                           6     6   5   0     1     6
+    dar_valor_constante_cuatro_publicos                              8     8   8   0     0     8
+    dictar_ritmo_crecimiento_preguntas_escritas                      8     8   8   0     0     8
+    distinguir_tres_tipos_sistemas_negocio                           5     5   5   0     0     5
+    documentar_trabajo_manual_operaciones                           10    10  10   0     0    10
+    fingir_prototipo_cinco_mil_replicas                             11    11  11   0     0    11
+    hacer_trabajo_futuro_imaginar_negocio                            7     7   7   0     0     7
+    interrogar_negocio_cinco_preguntas                              10    10  10   0     0    10
+    medir_sistema_venta_trece_indicadores_benchmark                 14    14  14   0     0    14
+    operar_modelo_gente_destreza_minima                             10    10  10   0     0    10
+    probar_traje_azul_seis_semanas                                   2     2   2   0     0     2
+    recorrer_siete_pasos_programa_desarrollo_negocio                10    10  10   0     0    10
+    responder_4_preguntas_estandares_objetivo_estrategico            5     5   5   0     0     5
+    responder_8_preguntas_construir_primary_aim                      9     9   9   0     0     9
+    trazar_modelo_negocio_cliente_primero                            9     9   9   0     0     9
+    unificar_color_forma_vestuario_modelo                            8     8   8   0     0     8
+    cap_18: candidatos 3 | pasos en ficha 26 | filas 26 | T 26 | P 0 | DUDA 0 | suma: 26 | PUENTE 0 de 26 = 0.00 por ciento | si las DUDA cayesen: 0 de 26 = 0.00 por ciento
+    cap_19: candidatos 3 | pasos en ficha 25 | filas 25 | T 25 | P 0 | DUDA 0 | suma: 25 | PUENTE 0 de 25 = 0.00 por ciento | si las DUDA cayesen: 0 de 25 = 0.00 por ciento
+    cap_12: candidatos 3 | pasos en ficha 12 | filas 12 | T 11 | P 0 | DUDA 1 | suma: 12 | PUENTE 0 de 12 = 0.00 por ciento | si las DUDA cayesen: 1 de 12 = 8.33 por ciento
+    cap_08: candidatos 2 | pasos en ficha 17 | filas 17 | T 17 | P 0 | DUDA 0 | suma: 17 | PUENTE 0 de 17 = 0.00 por ciento | si las DUDA cayesen: 0 de 17 = 0.00 por ciento
+    cap_11: candidatos 6 | pasos en ficha 57 | filas 57 | T 57 | P 0 | DUDA 0 | suma: 57 | PUENTE 0 de 57 = 0.00 por ciento | si las DUDA cayesen: 0 de 57 = 0.00 por ciento
+    cap_07: candidatos 1 | pasos en ficha 8 | filas 8 | T 8 | P 0 | DUDA 0 | suma: 8 | PUENTE 0 de 8 = 0.00 por ciento | si las DUDA cayesen: 0 de 8 = 0.00 por ciento
+    cap_04: candidatos 1 | pasos en ficha 7 | filas 7 | T 7 | P 0 | DUDA 0 | suma: 7 | PUENTE 0 de 7 = 0.00 por ciento | si las DUDA cayesen: 0 de 7 = 0.00 por ciento
+    cap_13: candidatos 1 | pasos en ficha 10 | filas 10 | T 10 | P 0 | DUDA 0 | suma: 10 | PUENTE 0 de 10 = 0.00 por ciento | si las DUDA cayesen: 0 de 10 = 0.00 por ciento
+    cap_15: candidatos 1 | pasos en ficha 5 | filas 5 | T 5 | P 0 | DUDA 0 | suma: 5 | PUENTE 0 de 5 = 0.00 por ciento | si las DUDA cayesen: 0 de 5 = 0.00 por ciento
+    cap_14: candidatos 1 | pasos en ficha 9 | filas 9 | T 9 | P 0 | DUDA 0 | suma: 9 | PUENTE 0 de 9 = 0.00 por ciento | si las DUDA cayesen: 0 de 9 = 0.00 por ciento
+    los diez: candidatos 22 | pasos en ficha 176 | filas 176 | T 175 | P 0 | DUDA 1 | suma: 176
+    citas: filas 176 | el tramo esta en su linea: 176 | no esta: 0 | suma: 176
 
-    $ python .v75aud/cap13_despues.py
-    adjudicaciones de la ACTA 73 73.5 aplicadas: {'D a T (73.5)': 4, 'dar_elogio 17, T a P (73.5)': 1} | suma: 5
-    contar_cuatro_historias_propias_ver_hueco_intencion  pasos hoy 17 | mis filas que quedan 17, cada una su paso de hoy texto a texto: SI | por marca: {'T': 17} | suma: 17 | PUENTE 0 de 17
-    dar_elogio_disciplina_igual_critica                  pasos hoy 18 | mis filas que quedan 18, cada una su paso de hoy texto a texto: SI | por marca: {'T': 18} | suma: 18 | PUENTE 0 de 18
-    medir_critica_respuesta_oyente_brujula               pasos hoy 33 | mis filas que quedan 33, cada una su paso de hoy texto a texto: SI | por marca: {'T': 33} | suma: 33 | PUENTE 0 de 33
-    cap_13, los tres, despues de la TAREA 2: pasos 68 | por marca: {'T': 68, 'P': 0} | suma: 68 | PUENTE 0 de 68 = 0.00 por ciento
-    R9, clausulas que comparan o califican la prueba en los pasos de hoy: 19 coincidencias
-      contar_cuatro_historias_ paso 4 (viejo 4) L45: ...que haces a la vez al mostrar algo de vulnerabilidad contandola: una, demuestras consciencia de ti mismo y humildad; dos, ensenias...
-      contar_cuatro_historias_ paso 8 (viejo 8) L49: ...o la del libro, y el texto da la razon: tu historia es por definicion mejor que la del correo grosero sobre los sitios desordenad...
-      contar_cuatro_historias_ paso 13 (viejo 13) L53: ...ladora: cuando no le dijiste a una persona un problema directamente y en cambio se lo contaste a otros? O le dijiste que su traba...
-      contar_cuatro_historias_ paso 15 (viejo 15) L55: ...Desempaqueta tus historias y compartelas con tu equipo, porque el texto dice que ahi es cu...
-      dar_elogio_disciplina_ig paso 1 (viejo 1) L251: ...acelerador. Si quieres ir a algun sitio tienes que usar el acelerador mas que el freno, y si no usas nunca el freno te estrella...
-      dar_elogio_disciplina_ig paso 1 (viejo 1) L251: ...eres ir a algun sitio tienes que usar el acelerador mas que el freno, y si no usas nunca el freno te estrellas y no llegas a ni...
-      dar_elogio_disciplina_ig paso 2 (viejo 2) L267: ...ticando. Y la meta de la guia es ayudar a los demas a tener exito, no demostrar lo listo que eres tu....
-      dar_elogio_disciplina_ig paso 4 (viejo 4) L269: ...gio sea concreto y sincero, y que inspire a los demas en vez de hacer comparaciones odiosas....
-      dar_elogio_disciplina_ig paso 10 (viejo 11) L273: ...Y cuenta con lo que el elogio hace que lo vuelve practico y no solo agradable: revela lo que funciona y lo hace usabl...
-      dar_elogio_disciplina_ig paso 10 (viejo 11) L273: ... puede llevar al exito y como se puede construir un exito sobre otro, demuestra que te importa personalmente, y desafia directame...
-      dar_elogio_disciplina_ig paso 15 (viejo 16) L283: ...Practicalo asi: emparejate con un companiero y compartid un elogio concreto cada uno....
-      medir_critica_respuesta_ paso 1 (viejo 1) L291: ...el texto trae aqui para ponerla en accion: la franqueza radical no se mide en tu boca, sino en el oido de la otra persona....
-      medir_critica_respuesta_ paso 1 (viejo 1) L291: ...i para ponerla en accion: la franqueza radical no se mide en tu boca, sino en el oido de la otra persona....
-      medir_critica_respuesta_ paso 6 (viejo 6) L297: ... con la regla que el texto pone por encima: la manera en que escuchas importa mas que la manera en que hablas....
-      medir_critica_respuesta_ paso 7 (viejo 7) L297: ...Cuando ofrezcas franqueza compasiva, empieza suave y despues mide la respuesta del otro: escucha lo que dice, obser...
-      medir_critica_respuesta_ paso 20 (viejo 20) L309: ...Si en cambio la persona sencillamente no te oye, porque esta a...
-      medir_critica_respuesta_ paso 26 (viejo 26) L315: ...Y si aun asi no te oye, prueba a preguntar: solo para asegurarme de que estamos ...
-      medir_critica_respuesta_ paso 28 (viejo 28) L315: ...O prueba con: puedo ser mucho mas directo contigo?...
-      medir_critica_respuesta_ paso 33 (viejo 33) L321: ... primero, di algo como: antes de meternos muy a fondo en esto, quiero compartir contigo varios ejemplos mas para que veas el patr...
+**LECTURA: los diez capitulos son de inventario rico donde hay fichas**: las seis reglas numeradas de `cap_11` (L45 a L55) y su
+recorrido regla a regla, las listas numeradas de `cap_12` (L95), `cap_13` (L45 a L57), `cap_18` (L143 a L165 y L249 a L271) y
+`cap_19` (L143 a L153 y L311 a L335), y las listas de preguntas de `cap_07` (L281), `cap_14` (L119 a L133) y `cap_15` (L171 a L177).
+**Los pasos de hoy los transcriben casi frase a frase. No encuentro ningun PUENTE en el texto de hoy de las fichas.** Las figuras
+que mire y dejo en `T`, para que se juzguen:
 
-**Y el tramo literal del libro de cada coincidencia**, con un patron que escribo yo leyendo su linea (una fila por coincidencia, en el
-orden del `grep`):
+- `operar_modelo_gente_destreza_minima` paso `10`: *Comprueba que no estas prefiriendo gente muy cualificada...* donde L111 y L113
+  **describen** el error del dueño tipico. Es **el aviso vuelto mandato** con el contenido del libro, la figura que la `ACTA 70`
+  `70.4` adjudico `T`.
+- `fingir_prototipo_cinco_mil_replicas` paso `4` (*que son seis*) y `recorrer_siete_pasos_programa_desarrollo_negocio` paso `3`
+  (*en este orden*): la cuenta y el orden son los de la lista numerada del libro, no una clausula.
+- `cambiar_saludo_cliente_dos_ramas` paso `4`: *sin el programa listo, ninguna de las dos respuestas tiene de que hablar* dice con
+  otras palabras el *to talk about* de L57.
 
-    $ python .v75aud/r9_tramos.py
-      contar_cuatro 4, demuestras                L45: you are demonstrating self-awareness and humility
-      contar_cuatro 8, mejor que                 L49: Your story is by definition better than the story Kim tells
-      contar_cuatro 13, en cambio                L53: but you instead talked to others
-      contar_cuatro 15, compartelas              L55: share them
-      dar_elogio 1, mas que el freno             L251: use your accelerator more than your brake
-      dar_elogio 1, y si no usas                 L251: If you never use your brake
-      dar_elogio 2, no demostrar                 L267: not to prove how smart you are
-      dar_elogio 4, en vez de comparaciones      L269: rather than making odious comparisons
-      dar_elogio 10, y no solo agradable         L273: Giving praise doesn't just make people feel good, it's practical
-      dar_elogio 10, demuestra que te importa    L273: Praise shows that you care personally
-      dar_elogio 15, compartid                   L283: share one specific piece of praise
-      medir_critica 1, no se mide                L291: measured not at your mouth
-      medir_critica 1, sino en el oido           L291: but at the other person's ear
-      medir_critica 6, importa mas que           L297: The way you listen is more important than the way you talk
-      medir_critica 7, mide la respuesta         L297: gauge the other person's response
-      medir_critica 20, si en cambio             L309: Other times, you'll work up the courage to give someone feedback, but then they just don't hear you
-      medir_critica 26, prueba a preguntar       L315: Another thing that can help when you've told someone something and they just aren't hearing you is to ask
-      medir_critica 28, prueba con               L315: Or you can try saying
-      medir_critica 33, compartir                L321: share
-    coincidencias del grep R9 con su tramo literal: {'tramo hallado': 19} | suma: 19
+**MI UNICA DUDA, y me inclino a `T`:** `cuantificar_impacto_innovacion_6_pasos` paso `4`, *Cuenta cuantas personas compraron algo,
+despues del cambio*: el `(4)` de L95 no dice *despues*; lo dice el `(3)`. **Es la figura de la serie leida de corrido.**
+
+**`PASOS INVENTADOS` por mi instrumento, sobre el texto de hoy: `0` en los diez capitulos**; si mi duda cayese, `cap_12` `1` de `12`
+(`8,33`). **Por debajo del `10` en las dos lecturas.** Es preparacion y no entrada.
+
+**Y LO QUE LEI DESPUES, EN LAS FICHAS:** seis de las `22` traen en su `resumen_teorico` una *CORRECCION DECLARADA DE LA VUELTA 76*
+con el texto viejo dentro, y son las `6` cuyas huellas cambiaron (seccion `2`). Cuantos PUENTE dice cada una sobre su texto viejo, y
+que pasos o campos nombra, leido de su propia prosa:
+
+    $ python .v76aud/puentes_declarados.py
+    aplicar_ocho_reglas_juego_personas                 PUENTE sobre el texto viejo: 2 | LOS PASOS 8 Y 9
+    cambiar_saludo_cliente_dos_ramas                   PUENTE sobre el texto viejo: 3 | LOS PASOS 1, 2 Y 3  EL ENTREGABLE
+    cuantificar_impacto_innovacion_6_pasos             PUENTE sobre el texto viejo: 1 | EL PASO 6 LA CONDICION EL ENTREGABLE
+    dictar_ritmo_crecimiento_preguntas_escritas        PUENTE sobre el texto viejo: 1 | EL PASO 8 EL ENTREGABLE
+    interrogar_negocio_cinco_preguntas                 PUENTE sobre el texto viejo: 0 | EL ENTREGABLE
+    operar_modelo_gente_destreza_minima                PUENTE sobre el texto viejo: 1 | EL PASO 4
+    fichas con correccion de la 76: 6 | PUENTE que declaran, suma: 8
+
+**Leo sus textos viejos y los clasifico yo, pasos citados por la propia correccion** (`.v76aud/correcciones.py`):
+
+- `aplicar_ocho_reglas_juego_personas` paso `8` (*no la repitas mas de una vez cada seis meses*, contra el *maybe once every six
+  months* de L163): **`P`**, vuelve tope firme lo que el libro da con un *maybe*. Paso `9` (*antes de jugarlo con tu gente*, L165):
+  **`P`**, el libro da la razon y no el momento.
+- `cambiar_saludo_cliente_dos_ramas` pasos `1`, `2` y `3` (*pregunta exactamente*, *dile exactamente*, contra el *try* de L51 y el
+  *you can say* de L53 y L55): **`P` los tres**. La regla de decirlo cada vez es de la Orquestacion (L161), **despues** de probar y
+  cuantificar, no de esta pieza.
+- `cuantificar_impacto_innovacion_6_pasos` paso `6` (*comparando los numeros de antes con los de despues*): **lo habria leido `D`,
+  inclinado a `T`**: comparar antes y despues es como la serie de L95 llega a *the improvement*. **Su lectura `P` es mas estricta que
+  la mia y la correccion es mas fiel que el texto viejo**, asi que no hay nada que corregir en lo que queda. **PERO ME DEJA UNA
+  PREGUNTA QUE LLEVO AL TURNO NORMAL:** su paso `4` conserva *despues del cambio*, que es **la misma figura** (la serie leida de
+  corrido, seccion de arriba) y **es mi unica duda**. Si su vara retira el *comparando* del `6`, **por la misma vara el *despues del
+  cambio* del `4` es `P`** y quedo en la bandeja.
+- `dictar_ritmo_crecimiento_preguntas_escritas` paso `8` (*No te pares por no tener un plan bueno*, contra el *Remember, Sarah, any
+  plan is better than no plan* de L287): **`P`**.
+- `operar_modelo_gente_destreza_minima` paso `4` (*No contrates a los brillantes*, contra el *you don't need to hire* de L89):
+  **`P`**, vuelve prohibicion lo que el libro da como innecesario.
+- `interrogar_negocio_cinco_preguntas`: corrige el entregable y ningun paso; no cuenta en pasos.
+
+**LECTURA:** sobre el texto viejo, **mi lectura da `7` `P` seguros y `1` `D`** en los ocho pasos que las correcciones nombran:
+`cap_12` `3` o `4` de `12`, `cap_07` `1` de `8`, `cap_18` `2` de `26` y `cap_11` `1` de `57`. **`cap_12` y `cap_07` pasan del `10`
+en las dos lecturas, y por eso se releen enteros antes de seguir** (`D.58`); **coincide con el *cap_07 y cap_12 releidos enteros*
+del asunto de `b0dda029`**, y lo digo como coincidencia. **Lo que no coincide, y lo llevo a mi turno normal:** las fichas declaran
+**`8`** PUENTE en pasos (bloque de arriba) y el asunto de `b0dda029` dice **`9`** PUENTE corregidos. Puede ser un campo que no es
+paso contado como puente (hay dos entregables y una condicion corregidos), o un paso mas; **no lo decido sin su reporte**. **Los ocho
+pasos corregidos los lei yo `T` en su texto de hoy**: las correcciones se sostienen. **Lo que no puedo decir** es si mi lectura ciega
+habria cazado esos puentes, porque cuando lei ya no estaban.
+
+## 4. **MI BARRIDO DE LAS `22`, SOBRE GRAFO MAS BANDEJAS** (`D.38.4`, `D.38.5`)
+
+Copia de `.v73aud/barrido_uno.py` (la ficha normalizada como la aduana, contra `dataset/nodos.jsonl` mas
+`aduana.poblacion_de_bandejas`, con `buscar_vecinos` de `src/aduana.py`) y de `.v73aud/barrer.sh` con la lista cambiada a
+`.v76aud/las22.txt`, **cinco a la vez, recogido entero dentro de este turno**, lanzado **despues** de que las fichas cambiasen por
+ultima vez (seccion `2`: la ultima es de las `07:05:30`). Antes de lanzarlo guarde la huella de cada ficha de las bandejas de Gerber
+y de Marquet y del grafo, y al recogerlo las comprobe:
+
+    $ head -1 .v76aud/barrido.log; tail -1 .v76aud/barrido.log; grep -c "rc=0" .v76aud/barrido.log; grep -c "rc=" .v76aud/barrido.log
+    INICIO 2026-09-26 08:11:22
+    TODOS TERMINADOS 2026-09-26 08:55:29
+    22
+    22
+    $ wc -l < .v76aud/huellas_al_barrer.txt; sha1sum -c --quiet .v76aud/huellas_al_barrer.txt && echo "las 42 fichas de las dos bandejas y el grafo: mismas huellas que al barrer"
+    43
+    las 42 fichas de las dos bandejas y el grafo: mismas huellas que al barrer
+
+**Poblacion y vecinos por candidato, cada fila de vecino con su senial, y los pares sin orden:**
+
+    $ python .v76aud/vecinos_tabla.py | tee .v76aud/vecinos_tabla.txt
+    (1) candidato | poblacion | vecinos | en grafo | en bandeja
+        aplicar_cinco_pasos_proceso_contratacion                 479   2   0   2
+        aplicar_ocho_reglas_juego_personas                       479   0   0   0
+        aplicar_seis_pasos_sistema_venta                         479   2   0   2
+        cambiar_saludo_cliente_dos_ramas                         479   6   2   4
+        construir_empresa_plantilla_vision_diaria                479   1   1   0
+        construir_estrategia_gente_cuatro_componentes            479   4   0   4
+        cuantificar_impacto_innovacion_6_pasos                   479   5   3   2
+        dar_valor_constante_cuatro_publicos                      479   3   0   3
+        dictar_ritmo_crecimiento_preguntas_escritas              479   8   3   5
+        distinguir_tres_tipos_sistemas_negocio                   479   3   0   3
+        documentar_trabajo_manual_operaciones                    479   2   0   2
+        fingir_prototipo_cinco_mil_replicas                      479   0   0   0
+        hacer_trabajo_futuro_imaginar_negocio                    479   1   0   1
+        interrogar_negocio_cinco_preguntas                       479   1   0   1
+        medir_sistema_venta_trece_indicadores_benchmark          479   2   0   2
+        operar_modelo_gente_destreza_minima                      479   4   1   3
+        probar_traje_azul_seis_semanas                           479   3   0   3
+        recorrer_siete_pasos_programa_desarrollo_negocio         479   1   0   1
+        responder_4_preguntas_estandares_objetivo_estrategico    479   2   0   2
+        responder_8_preguntas_construir_primary_aim              479   1   0   1
+        trazar_modelo_negocio_cliente_primero                    479   1   0   1
+        unificar_color_forma_vestuario_modelo                    479   2   0   2
+    sin fichero de vecinos: 0 []
+    (2) vecino levantado | senial | texto familia paso
+        aplicar_cinco_pasos_proceso_contratacion               > construir_estrategia_gente_cuatro_componentes          bandeja similitud_texto  0.375 0.000 0.532
+        aplicar_cinco_pasos_proceso_contratacion               > fingir_prototipo_cinco_mil_replicas                    bandeja similitud_texto  0.355 0.111 0.512
+        aplicar_seis_pasos_sistema_venta                       > medir_sistema_venta_trece_indicadores_benchmark        bandeja similitud_texto  0.361 0.222 0.466
+        aplicar_seis_pasos_sistema_venta                       > distinguir_tres_tipos_sistemas_negocio                 bandeja similitud_texto  0.396 0.111 0.394
+        cambiar_saludo_cliente_dos_ramas                       > cuantificar_impacto_innovacion_6_pasos                 bandeja similitud_texto  0.442 0.000 0.325
+        cambiar_saludo_cliente_dos_ramas                       > probar_traje_azul_seis_semanas                         bandeja similitud_texto  0.426 0.000 0.260
+        cambiar_saludo_cliente_dos_ramas                       > dictar_ritmo_crecimiento_preguntas_escritas            bandeja similitud_texto  0.421 0.000 0.364
+        cambiar_saludo_cliente_dos_ramas                       > operar_modelo_gente_destreza_minima                    bandeja similitud_texto  0.373 0.000 0.349
+        cambiar_saludo_cliente_dos_ramas                       > responder_primer_aviso_renuncia_subordinado            grafo   similitud_texto  0.350 0.000 0.352
+        cambiar_saludo_cliente_dos_ramas                       > entregar_evaluacion_desempeno_tres_claves              grafo   similitud_texto  0.351 0.000 0.349
+        construir_empresa_plantilla_vision_diaria              > recorrer_trece_elementos_proceso_evaluacion_formal     grafo   similitud_texto  0.353 0.000 0.397
+        construir_estrategia_gente_cuatro_componentes          > recorrer_siete_pasos_programa_desarrollo_negocio       bandeja paso_contra_nodo 0.238 0.000 0.698
+        construir_estrategia_gente_cuatro_componentes          > aplicar_cinco_pasos_proceso_contratacion               bandeja similitud_texto  0.363 0.000 0.456
+        construir_estrategia_gente_cuatro_componentes          > medir_sistema_venta_trece_indicadores_benchmark        bandeja similitud_texto  0.368 0.000 0.444
+        construir_estrategia_gente_cuatro_componentes          > distinguir_tres_tipos_sistemas_negocio                 bandeja similitud_texto  0.399 0.000 0.422
+        cuantificar_impacto_innovacion_6_pasos                 > dictar_ritmo_crecimiento_preguntas_escritas            bandeja similitud_texto  0.412 0.000 0.528
+        cuantificar_impacto_innovacion_6_pasos                 > responder_primer_aviso_renuncia_subordinado            grafo   similitud_texto  0.371 0.000 0.464
+        cuantificar_impacto_innovacion_6_pasos                 > cambiar_saludo_cliente_dos_ramas                       bandeja similitud_texto  0.435 0.000 0.366
+        cuantificar_impacto_innovacion_6_pasos                 > pedir_critica_anonima_curso_entrenamiento_dictado      grafo   similitud_texto  0.357 0.000 0.391
+        cuantificar_impacto_innovacion_6_pasos                 > entregar_evaluacion_desempeno_tres_claves              grafo   similitud_texto  0.366 0.000 0.382
+        dar_valor_constante_cuatro_publicos                    > trazar_modelo_negocio_cliente_primero                  bandeja similitud_texto  0.395 0.000 0.564
+        dar_valor_constante_cuatro_publicos                    > documentar_trabajo_manual_operaciones                  bandeja similitud_texto  0.406 0.000 0.466
+        dar_valor_constante_cuatro_publicos                    > unificar_color_forma_vestuario_modelo                  bandeja similitud_texto  0.419 0.000 0.423
+        dictar_ritmo_crecimiento_preguntas_escritas            > descubrir_motivacion_sentido_persona                   grafo   paso_contra_nodo 0.203 0.000 0.603
+        dictar_ritmo_crecimiento_preguntas_escritas            > cuantificar_impacto_innovacion_6_pasos                 bandeja similitud_texto  0.420 0.000 0.478
+        dictar_ritmo_crecimiento_preguntas_escritas            > hacer_trabajo_futuro_imaginar_negocio                  bandeja similitud_texto  0.385 0.000 0.442
+        dictar_ritmo_crecimiento_preguntas_escritas            > planificar_tres_pasos_demanda_estado_brecha            grafo   similitud_texto  0.350 0.000 0.439
+        dictar_ritmo_crecimiento_preguntas_escritas            > operar_modelo_gente_destreza_minima                    bandeja similitud_texto  0.377 0.000 0.439
+        dictar_ritmo_crecimiento_preguntas_escritas            > responder_primer_aviso_renuncia_subordinado            grafo   similitud_texto  0.352 0.000 0.423
+        dictar_ritmo_crecimiento_preguntas_escritas            > cambiar_saludo_cliente_dos_ramas                       bandeja similitud_texto  0.423 0.000 0.355
+        dictar_ritmo_crecimiento_preguntas_escritas            > interrogar_negocio_cinco_preguntas                     bandeja similitud_texto  0.367 0.125 0.418
+        distinguir_tres_tipos_sistemas_negocio                 > medir_sistema_venta_trece_indicadores_benchmark        bandeja similitud_texto  0.451 0.100 0.394
+        distinguir_tres_tipos_sistemas_negocio                 > construir_estrategia_gente_cuatro_componentes          bandeja similitud_texto  0.399 0.000 0.442
+        distinguir_tres_tipos_sistemas_negocio                 > aplicar_seis_pasos_sistema_venta                       bandeja similitud_texto  0.358 0.111 0.413
+        documentar_trabajo_manual_operaciones                  > dar_valor_constante_cuatro_publicos                    bandeja similitud_texto  0.430 0.000 0.430
+        documentar_trabajo_manual_operaciones                  > unificar_color_forma_vestuario_modelo                  bandeja similitud_texto  0.366 0.000 0.425
+        hacer_trabajo_futuro_imaginar_negocio                  > dictar_ritmo_crecimiento_preguntas_escritas            bandeja similitud_texto  0.400 0.000 0.441
+        interrogar_negocio_cinco_preguntas                     > dictar_ritmo_crecimiento_preguntas_escritas            bandeja similitud_texto  0.369 0.125 0.473
+        medir_sistema_venta_trece_indicadores_benchmark        > aplicar_seis_pasos_sistema_venta                       bandeja similitud_texto  0.353 0.222 0.455
+        medir_sistema_venta_trece_indicadores_benchmark        > distinguir_tres_tipos_sistemas_negocio                 bandeja similitud_texto  0.446 0.100 0.378
+        operar_modelo_gente_destreza_minima                    > interrogar_negocio_cinco_preguntas                     bandeja similitud_texto  0.357 0.000 0.416
+        operar_modelo_gente_destreza_minima                    > responder_primer_aviso_renuncia_subordinado            grafo   similitud_texto  0.370 0.000 0.415
+        operar_modelo_gente_destreza_minima                    > dictar_ritmo_crecimiento_preguntas_escritas            bandeja similitud_texto  0.371 0.000 0.408
+        operar_modelo_gente_destreza_minima                    > cambiar_saludo_cliente_dos_ramas                       bandeja similitud_texto  0.355 0.000 0.357
+        probar_traje_azul_seis_semanas                         > responder_4_preguntas_estandares_objetivo_estrategico  bandeja similitud_texto  0.394 0.000 0.291
+        probar_traje_azul_seis_semanas                         > cambiar_saludo_cliente_dos_ramas                       bandeja similitud_texto  0.390 0.000 0.268
+        probar_traje_azul_seis_semanas                         > dar_valor_constante_cuatro_publicos                    bandeja similitud_texto  0.362 0.000 0.315
+        recorrer_siete_pasos_programa_desarrollo_negocio       > construir_estrategia_gente_cuatro_componentes          bandeja paso_contra_nodo 0.232 0.000 0.762
+        responder_4_preguntas_estandares_objetivo_estrategico  > responder_8_preguntas_construir_primary_aim            bandeja similitud_texto  0.380 0.250 0.451
+        responder_4_preguntas_estandares_objetivo_estrategico  > probar_traje_azul_seis_semanas                         bandeja similitud_texto  0.393 0.000 0.305
+        responder_8_preguntas_construir_primary_aim            > responder_4_preguntas_estandares_objetivo_estrategico  bandeja similitud_texto  0.395 0.250 0.429
+        trazar_modelo_negocio_cliente_primero                  > dar_valor_constante_cuatro_publicos                    bandeja similitud_texto  0.390 0.000 0.556
+        unificar_color_forma_vestuario_modelo                  > dar_valor_constante_cuatro_publicos                    bandeja similitud_texto  0.425 0.000 0.421
+        unificar_color_forma_vestuario_modelo                  > documentar_trabajo_manual_operaciones                  bandeja similitud_texto  0.358 0.000 0.425
+    filas de vecino: 54
+    (3) pares sin orden | levantado desde
+        aplicar_cinco_pasos_proceso_contratacion               ~ construir_estrategia_gente_cuatro_componentes          tanda-tanda los dos
+        aplicar_cinco_pasos_proceso_contratacion               ~ fingir_prototipo_cinco_mil_replicas                    tanda-tanda solo aplicar_cinco_pasos_proceso_contratacion
+        aplicar_seis_pasos_sistema_venta                       ~ medir_sistema_venta_trece_indicadores_benchmark        tanda-tanda los dos
+        aplicar_seis_pasos_sistema_venta                       ~ distinguir_tres_tipos_sistemas_negocio                 tanda-tanda los dos
+        cambiar_saludo_cliente_dos_ramas                       ~ cuantificar_impacto_innovacion_6_pasos                 tanda-tanda los dos
+        cambiar_saludo_cliente_dos_ramas                       ~ probar_traje_azul_seis_semanas                         tanda-tanda los dos
+        cambiar_saludo_cliente_dos_ramas                       ~ dictar_ritmo_crecimiento_preguntas_escritas            tanda-tanda los dos
+        cambiar_saludo_cliente_dos_ramas                       ~ operar_modelo_gente_destreza_minima                    tanda-tanda los dos
+        cambiar_saludo_cliente_dos_ramas                       ~ responder_primer_aviso_renuncia_subordinado            con fuera   solo cambiar_saludo_cliente_dos_ramas
+        cambiar_saludo_cliente_dos_ramas                       ~ entregar_evaluacion_desempeno_tres_claves              con fuera   solo cambiar_saludo_cliente_dos_ramas
+        construir_empresa_plantilla_vision_diaria              ~ recorrer_trece_elementos_proceso_evaluacion_formal     con fuera   solo construir_empresa_plantilla_vision_diaria
+        construir_estrategia_gente_cuatro_componentes          ~ recorrer_siete_pasos_programa_desarrollo_negocio       tanda-tanda los dos
+        construir_estrategia_gente_cuatro_componentes          ~ medir_sistema_venta_trece_indicadores_benchmark        tanda-tanda solo construir_estrategia_gente_cuatro_componentes
+        construir_estrategia_gente_cuatro_componentes          ~ distinguir_tres_tipos_sistemas_negocio                 tanda-tanda los dos
+        cuantificar_impacto_innovacion_6_pasos                 ~ dictar_ritmo_crecimiento_preguntas_escritas            tanda-tanda los dos
+        cuantificar_impacto_innovacion_6_pasos                 ~ responder_primer_aviso_renuncia_subordinado            con fuera   solo cuantificar_impacto_innovacion_6_pasos
+        cuantificar_impacto_innovacion_6_pasos                 ~ pedir_critica_anonima_curso_entrenamiento_dictado      con fuera   solo cuantificar_impacto_innovacion_6_pasos
+        cuantificar_impacto_innovacion_6_pasos                 ~ entregar_evaluacion_desempeno_tres_claves              con fuera   solo cuantificar_impacto_innovacion_6_pasos
+        dar_valor_constante_cuatro_publicos                    ~ trazar_modelo_negocio_cliente_primero                  tanda-tanda los dos
+        dar_valor_constante_cuatro_publicos                    ~ documentar_trabajo_manual_operaciones                  tanda-tanda los dos
+        dar_valor_constante_cuatro_publicos                    ~ unificar_color_forma_vestuario_modelo                  tanda-tanda los dos
+        descubrir_motivacion_sentido_persona                   ~ dictar_ritmo_crecimiento_preguntas_escritas            con fuera   solo dictar_ritmo_crecimiento_preguntas_escritas
+        dictar_ritmo_crecimiento_preguntas_escritas            ~ hacer_trabajo_futuro_imaginar_negocio                  tanda-tanda los dos
+        dictar_ritmo_crecimiento_preguntas_escritas            ~ planificar_tres_pasos_demanda_estado_brecha            con fuera   solo dictar_ritmo_crecimiento_preguntas_escritas
+        dictar_ritmo_crecimiento_preguntas_escritas            ~ operar_modelo_gente_destreza_minima                    tanda-tanda los dos
+        dictar_ritmo_crecimiento_preguntas_escritas            ~ responder_primer_aviso_renuncia_subordinado            con fuera   solo dictar_ritmo_crecimiento_preguntas_escritas
+        dictar_ritmo_crecimiento_preguntas_escritas            ~ interrogar_negocio_cinco_preguntas                     tanda-tanda los dos
+        distinguir_tres_tipos_sistemas_negocio                 ~ medir_sistema_venta_trece_indicadores_benchmark        tanda-tanda los dos
+        documentar_trabajo_manual_operaciones                  ~ unificar_color_forma_vestuario_modelo                  tanda-tanda los dos
+        interrogar_negocio_cinco_preguntas                     ~ operar_modelo_gente_destreza_minima                    tanda-tanda solo operar_modelo_gente_destreza_minima
+        operar_modelo_gente_destreza_minima                    ~ responder_primer_aviso_renuncia_subordinado            con fuera   solo operar_modelo_gente_destreza_minima
+        probar_traje_azul_seis_semanas                         ~ responder_4_preguntas_estandares_objetivo_estrategico  tanda-tanda los dos
+        dar_valor_constante_cuatro_publicos                    ~ probar_traje_azul_seis_semanas                         tanda-tanda solo probar_traje_azul_seis_semanas
+        responder_4_preguntas_estandares_objetivo_estrategico  ~ responder_8_preguntas_construir_primary_aim            tanda-tanda los dos
+    pares sin orden: 34 | {'tanda-tanda': 24, 'con fuera': 10} | suma: 34
 
 **LECTURA:**
 
-- **`cap_13` de Scott queda en `0` PUENTE de `68`**: los tres nodos de `d084`, `17`, `18` y `33` pasos, **cada fila mia cruzada con su
-  paso de hoy**. La guarda `D.30` que mi `ACTA 73` `73.6` puso en rojo **esta en verde por el dato**. Coincide con el *cap_13 de Scott
-  sin puente vivo en el grafo* de `d02ed219`, y lo digo como coincidencia.
-- **`R9` sobre mi lectura: `19` coincidencias, las `19` con su tramo literal.** **Las que son de forma y no de clausula, una por
-  una**: `compartelas`, `compartid` y `compartir` son *share*, no *compare*; los dos `prueba` de `medir_critica` pasos `26` y `28` son
-  *try*, no *proof* (`L315`, *is to ask* y *you can try saying*); y el *y si no usas* de `dar_elogio` paso `1` es una condicional
-  (*If you never use your brake*), no un contraste. **Todas las demas son clausulas que el libro pone**, y la que mas se parece a las dos
-  que salieron es `dar_elogio` paso `10` (el `11` viejo): *practico y no solo agradable* y *demuestra que te importa*, que `L273` dice
-  con todas sus letras (*doesn't just make people feel good, it's practical* y *Praise shows that you care personally*). **No
-  encuentro otro puente** en los `68`.
-- **Lo que el `grep` no ve, y lo digo:** es un `grep` de forma. Una comparacion sin *que* (*pesa mas*) solo la ve porque le anadi ese
-  patron al leer Grove (seccion `4`); una calificacion de la prueba con un verbo que no este en la lista (*confirma*, *se sabe*) no la
-  ve. **No es una relectura**: la relectura de estos `68` es la de mi fase ciega de la `74`, firmada en la `ACTA 73`, y no la rehago
-  (`D.47`).
+1. **Las `22` dan `54` filas de vecino en `34` pares sin orden**, `24` entre dos de la tanda y `10` con uno de fuera, todos del
+   grafo. **Coincide con los *54 pares* del asunto de `a0d42852`**, que ahi llama *pares* a mis filas dirigidas, como en la `73`; y lo
+   digo como coincidencia.
+2. **Dos fichas no levantan a nadie**: `aplicar_ocho_reglas_juego_personas` (tampoco la levanta nadie) y
+   `fingir_prototipo_cinco_mil_replicas` (solo la levanta la contratacion). **Por eso las cuatro partes de la serie de las seis reglas
+   quedan sin par**, y su arista es por lectura (seccion `6`).
+3. **Los de fuera son todos del grafo**: de Grove, `responder_primer_aviso_renuncia_subordinado` (levantada por cuatro de las `22`),
+   `entregar_evaluacion_desempeno_tres_claves`, `pedir_critica_anonima_curso_entrenamiento_dictado` y
+   `planificar_tres_pasos_demanda_estado_brecha`; de Scott, `recorrer_trece_elementos_proceso_evaluacion_formal` y
+   `descubrir_motivacion_sentido_persona`. **Ninguno de la bandeja de Marquet.** El mas cercano por lectura es
+   `planificar_tres_pasos_demanda_estado_brecha` con `dictar_ritmo_crecimiento_preguntas_escritas` (seccion `5`).
+4. **`D.36`, lo que un solo lado levanta dentro de la tanda**: va a la seccion `7`, y no obliga.
 
-## 4. **LAS `7`: LO QUE ENTRO ES LO QUE SE LEYO** (`D.58`), **Y SUS PASOS INVENTADOS** (`8`, `8.2`)
+**EL RELOJ, medido y no techo:** de punta a punta en el log de arriba, con fichas de estos segundos (la menor y la mayor):
 
-Cada nodo del grafo contra su ficha de `_insertados` (cuya huella es la leida, seccion `2`) en titulo, condiciones, pasos, entregable y
-resumen; y sus pasos contra **mi** lectura entera sellada en la `73`, `.v73aud/fidelidad_fuente.txt`, una fila por paso:
+    $ grep "rc=" .v76aud/barrido.log | sed 's/.*segundos=//' | sort -n | sed -n '1p;$p'
+    295
+    1155
 
-    $ python .v75aud/entra_lo_leido.py
-    las 7 por sede hoy: {'grafo y _insertados': 7} | suma: 7
-    nodos del grafo contra su ficha, cinco campos: {'igual': 7} | suma: 7
-    nodos con descuadre entre sus pasos en el grafo y mis filas selladas: 0 []
-    cap_15 lo que ENTRO: candidatos 3 | pasos 22 | mis marcas: {'T': 21, 'P': 0, 'D': 1} | suma: 22 | PUENTE 0 de 22 = 0.00 por ciento | con la D adjudicada T (ACTA 72 72.5): T 22, P 0, suma 22
-    cap_16 lo que ENTRO: candidatos 1 | pasos 4 | mis marcas: {'T': 4, 'P': 0, 'D': 0} | suma: 4 | PUENTE 0 de 4 = 0.00 por ciento | con la D adjudicada T (ACTA 72 72.5): T 4, P 0, suma 4
-    cap_17 lo que ENTRO: candidatos 3 | pasos 16 | mis marcas: {'T': 16, 'P': 0, 'D': 0} | suma: 16 | PUENTE 0 de 16 = 0.00 por ciento | con la D adjudicada T (ACTA 72 72.5): T 16, P 0, suma 16
-    los tres: candidatos 7 | pasos 42 | mis marcas: {'T': 41, 'P': 0, 'D': 1} | suma: 42 | PUENTE 0 de 42
+## 5. **MI LECTURA CIEGA DE LOS PARES** (`1.2`, `6.1`, y solo la vara `6.1`)
 
-**Y `R9` con su letra sobre los `42` pasos que entraron**, con el mismo patron (importado del instrumento de la seccion `3`, no
-copiado) y el tramo literal de cada coincidencia:
+**Leidos con los pasos de los dos delante**, todos con `pasos_ciego.py` (`R6`): `.v76aud/pasos_22.txt` para las `22` y
+`.v76aud/pasos_fuera.txt` para los seis de fuera. **Una fila por par** en `.v76aud/mis_clases.tsv`, con su razon. **De donde sale cada
+fila:** los `25` pares posibles dentro de un mismo capitulo los escribi **todos antes de que el barrido terminara** (con `4` de `22`
+recogidas), en `.v76aud/clases_intra.txt`; los de entre capitulos y los de fuera, al recogerlo, en `.v76aud/clases_fuera.txt`.
+**Cuando escribi cada fichero, contra cuando cerro cada ficha del barrido** (las seis primeras):
 
-    $ python .v75aud/r9_grove.py
-      cap_15 gestionar_retencion_subord paso 6 L121: ... con la gente con la que trabaja a diario, y que el segundo pesa mas....
-          el libro: commitments he has made to the people he has been working with daily are far stronger than one made to a casual new acquaintance
-      cap_16 reciclar_empleado_ascendid paso 2 L49: ...Toma medidas deliberadas y directas para colocar a la persona ...
-          el libro: take forthright and deliberate steps
-      cap_15 responder_primer_aviso_ren paso 6 L111: ...No intentes cambiarle la idea en este momento, sino compra tiempo: cuando haya dicho todo lo que tien...
-          el libro: Don't try to change his mind at this point, but buy time
-    pasos leidos: 42 | coincidencias por capitulo: {'cap_15': 2, 'cap_16': 1} | suma: 3
-    coincidencias con su tramo literal: {'tramo hallado': 3} | suma: 3
+    $ ls -l --time-style=full-iso .v76aud/clases_intra.txt .v76aud/aristas_lectura.tsv .v76aud/clases_fuera.txt | awk '{print $6, substr($7,1,8), $9}'; ls -l --time-style=full-iso .v76aud/vecinos_*.json | awk '{print substr($7,1,8)}' | sort | head -6
+    2026-09-26 08:26:39 .v76aud/aristas_lectura.tsv
+    2026-09-26 08:57:55 .v76aud/clases_fuera.txt
+    2026-09-26 08:25:52 .v76aud/clases_intra.txt
+    08:19:34
+    08:21:18
+    08:22:03
+    08:22:41
+    08:26:01
+    08:30:22
+
+`armar_clases.py` los junta, y el cruce comprueba que cada par del barrido tiene su fila y cada fila su par:
+
+    $ python .v76aud/armar_clases.py
+    pares del barrido: 34 | filas escritas: 34 | sin clase: 0 []
+    de donde sale cada fila: {'intra': 10, 'fuera': 24} | suma: 34
+    filas de clases_intra.txt: 25 | por el barrido: {'levantada': 10, 'no levantada': 15} | suma: 25
+    $ python .v76aud/cruce_clases.py
+    pares del barrido: 34 | filas de clase: 34
+    pares sin fila: []
+    filas sin par: []
+    clases: {'CONTINUA': 4, 'SANO': 30} | suma: 34
+    con DUDA escrita: 4
+      CONTINUA  construir_estrategia_gente_cuatro_componentes ~ aplicar_cinco_pasos_proceso_contratacion | madre construir_estrategia_gente_cuatro_componentes
+      CONTINUA  aplicar_seis_pasos_sistema_venta ~ medir_sistema_venta_trece_indicadores_benchmark | madre aplicar_seis_pasos_sistema_venta
+      CONTINUA  cambiar_saludo_cliente_dos_ramas ~ cuantificar_impacto_innovacion_6_pasos | madre cambiar_saludo_cliente_dos_ramas
+      CONTINUA  construir_estrategia_gente_cuatro_componentes ~ recorrer_siete_pasos_programa_desarrollo_negocio | madre recorrer_siete_pasos_programa_desarrollo_negocio
+
+**El par de fuera mas cercano**, con los pasos de los dos delante:
+
+    $ python .v67aud/normal/pasos_ciego.py dictar_ritmo_crecimiento_preguntas_escritas planificar_tres_pasos_demanda_estado_brecha
+    ===== dictar_ritmo_crecimiento_preguntas_escritas | cuarentena\gerber_emyth\dictar_ritmo_crecimiento_preguntas_escritas.json
+      titulo: Dictar el ritmo de crecimiento de tu negocio con los tres conocimientos clave, las preguntas correctas y el plan escrito
+      fuente: ['gerber_emyth']
+      cond: Cuando tu negocio va a crecer y quieres dictar tu su ritmo en vez de reaccionar al crecimiento que se te venga encima.
+      P1. Entiende los procesos clave que hay que ejecutar, que es el primero de los tres conocimientos con los que el texto dice que se dicta el ritmo de crecimiento.
+      P2. Entiende los objetivos clave que hay que alcanzar, que es el segundo.
+      P3. Entiende la posicion clave que quieres que tu negocio ocupe en el mercado, que es el tercero.
+      P4. Hazte las preguntas correctas, que el texto enumera una a una: donde quiero estar, cuando quiero estar alli, cuanto capital hara falta, cuanta gente haciendo que trabajo y como, que tecnologia hara falta, y cuanto espacio hara falta en la marca uno, en la marca dos y en la marca tres.
+      P5. Cuenta con equivocarte a veces, con cometer errores y con cambiar de opinion, y ten por eso los planes de contingencia puestos: mejor caso y peor caso.
+      P6. Planifica, imagina y articula lo que ves en el futuro tanto para ti como para tus empleados, incluso mientras estas adivinando.
+      P7. Escribelo, con claridad, de modo que otros puedan entenderlo, porque el texto dice que si no lo articulas asi entonces no lo posees.
+      P8. Recuerda que cualquier plan es mejor que ningun plan.
+    ===== planificar_tres_pasos_demanda_estado_brecha | grafo
+      titulo: Planificar en los tres pasos del libro: la demanda del entorno, el estado presente, y lo que hay que hacer para conciliarlos
+      fuente: ['grove_high_output']
+      cond: Cuando tienes que planificar el trabajo de tu grupo y no sabes por donde empezar, o cuando lo que llamas plan es una lista de intenciones y no una comparacion entre lo que te van a pedir y lo que vas a producir.
+      P1. Monta tu proceso general de planificacion sobre un razonamiento analogo al de la fabrica.
+      P2. Da el paso 1 estableciendo la necesidad o demanda proyectada: que va a demandar de ti el entorno, de tu negocio o de tu organizacion.
+      P3. Da el paso 2 estableciendo tu estado presente: que estas produciendo ahora, y que vas a estar produciendo cuando se completen los proyectos que ya tienes en marcha.
+      P4. Formula ese paso 2 tambien de la otra manera: donde va a estar tu negocio si no haces nada distinto de lo que estas haciendo.
+      P5. Da el paso 3 comparando y conciliando los pasos 1 y 2.
+      P6. Convierte esa conciliacion en la pregunta concreta: que mas, o que menos, necesitas hacer para producir lo que tu entorno va a demandar.
+
+**LECTURA, los cuatro `CONTINUA`**, y en los cuatro el hijo trae procedimiento propio y ningun paso del otro, asi que ninguno es
+`REPITE`:
+
+- `aplicar_seis_pasos_sistema_venta` madre de `medir_sistema_venta_trece_indicadores_benchmark`: la condicion del hijo es el sistema
+  de venta operando, y L303 y L307 encadenan con palabras el Information System al Soft System *in our example*. **El mas firme.**
+- `cambiar_saludo_cliente_dos_ramas` madre de `cuantificar_impacto_innovacion_6_pasos`: los pasos `2` y `3` del hijo cuentan antes y
+  despues de *cambiar las palabras* del saludo, que es lo que L95 cuantifica.
+- `construir_estrategia_gente_cuatro_componentes` madre de `aplicar_cinco_pasos_proceso_contratacion`: los pasos `10` y `11` del hijo
+  entregan y repasan el Manual, el Objetivo Estrategico, la Organizational Strategy y el Position Contract que la madre compone (L119
+  y L269), y L245 hace de la contratacion el primer medio de esa estrategia.
+- `recorrer_siete_pasos_programa_desarrollo_negocio` madre de `construir_estrategia_gente_cuatro_componentes`: el hijo es el paso `5`
+  que la madre nombra (su paso `8`, L53), y es la parte de `d111` (seccion `6`).
+
+**MIS DUDAS, escritas antes de saber, y si alguna me cae, cae dentro de lo que marco aqui:**
+
+- **Las tres ultimas `CONTINUA` pueden leerse `SANO`**: el saludo es el ejemplo del libro y la cuantificacion vale para cualquier
+  innovacion; la estrategia de gente solo **nombra** en una linea lo que la contratacion repasa; y `recorrer` con la estrategia de
+  gente es la pregunta de `d111`.
+- **Dos `SANO` de dentro de un capitulo que el barrido no levanta pueden leerse `CONTINUA`**: `interrogar_negocio_cinco_preguntas`
+  con madre `fingir_prototipo_cinco_mil_replicas` (su condicion es cerrar el trabajo del prototipo), y `aplicar_ocho_reglas_juego_personas`
+  con madre `construir_estrategia_gente_cuatro_componentes` (su condicion nombra la People Strategy entre parentesis). **No los
+  levanta el barrido, asi que no llevan linea**; si alguno fuese madre e hijo, seria arista por lectura, y **mi lectura no la
+  sostiene**.
+- **`responder_4_preguntas_estandares_objetivo_estrategico` con `responder_8_preguntas_construir_primary_aim`**, `SANO`: cap_15 L21
+  encadena los dos capitulos, pero ningun paso del hijo usa las respuestas del Primary Aim.
+
+**Los `30` `SANO`** comparten la forma pregunta, la palabra sistema, plan o crecimiento, o la imagen del negocio mirado desde fuera,
+y ningun paso. **El mas cercano es `dictar_ritmo_crecimiento_preguntas_escritas` con `planificar_tres_pasos_demanda_estado_brecha`**
+de Grove: los dos planifican, pero Grove compara demanda y estado presente y los concilia, y Gerber contesta sus preguntas de donde,
+cuando, cuanto capital, gente, tecnologia y espacio, con contingencias y por escrito. **Hay procedimiento fuera del solape en los dos
+lados** (`6.1`, sin bascula): dos doctrinas legitimas, no duplicado.
+
+## 6. **LAS ARISTAS POR LECTURA** (`D.29`, `D.37`, `D.53`), **CON `d111`, `d108` Y `d098` DELANTE**
+
+**Las que mi lectura sostiene o descarta**, una fila cada una en `.v76aud/aristas_lectura.tsv`, con su tramo de madre, de hijo y su
+linea del libro, **escritas antes de que el barrido terminara** (con `5` de `22` recogidas), **mirando tambien madres que viven en el
+grafo y en otras bandejas** (la busqueda por asunto, abajo). El cruce dice si el barrido levanto el par y donde vive hoy cada extremo:
+
+    $ python .v76aud/cruce_aristas.py
+    SOSTENGO D.37  fingir_prototipo_cinco_mil_replicas                (bandeja) > dar_valor_constante_cuatro_publicos                    (bandeja) | levantado por el barrido: no
+    SOSTENGO D.37  fingir_prototipo_cinco_mil_replicas                (bandeja) > operar_modelo_gente_destreza_minima                    (bandeja) | levantado por el barrido: no
+    SOSTENGO D.37  fingir_prototipo_cinco_mil_replicas                (bandeja) > documentar_trabajo_manual_operaciones                  (bandeja) | levantado por el barrido: no
+    SOSTENGO D.37  fingir_prototipo_cinco_mil_replicas                (bandeja) > unificar_color_forma_vestuario_modelo                  (bandeja) | levantado por el barrido: no
+    SOSTENGO D.29  fingir_prototipo_cinco_mil_replicas                (bandeja) > recorrer_siete_pasos_programa_desarrollo_negocio       (bandeja) | levantado por el barrido: no
+    SOSTENGO D.37, DUDA recorrer_siete_pasos_programa_desarrollo_negocio   (bandeja) > construir_estrategia_gente_cuatro_componentes          (bandeja) | levantado por el barrido: SI
+    NO SOSTENGO    recorrer_siete_pasos_programa_desarrollo_negocio   (bandeja) > distinguir_tres_tipos_sistemas_negocio                 (bandeja) | levantado por el barrido: no
+    NO SOSTENGO    recorrer_siete_pasos_programa_desarrollo_negocio   (bandeja) > aplicar_seis_pasos_sistema_venta                       (bandeja) | levantado por el barrido: no
+    NO SOSTENGO    recorrer_siete_pasos_programa_desarrollo_negocio   (bandeja) > medir_sistema_venta_trece_indicadores_benchmark        (bandeja) | levantado por el barrido: no
+    NO SOSTENGO    recorrer_siete_pasos_programa_desarrollo_negocio   (bandeja) > aplicar_cinco_pasos_proceso_contratacion               (bandeja) | levantado por el barrido: no
+    NO SOSTENGO    recorrer_siete_pasos_programa_desarrollo_negocio   (bandeja) > aplicar_ocho_reglas_juego_personas                     (bandeja) | levantado por el barrido: no
+    NO SOSTENGO    recorrer_siete_pasos_programa_desarrollo_negocio   (bandeja) > responder_8_preguntas_construir_primary_aim            (bandeja) | levantado por el barrido: no
+    NO SOSTENGO    recorrer_siete_pasos_programa_desarrollo_negocio   (bandeja) > responder_4_preguntas_estandares_objetivo_estrategico  (bandeja) | levantado por el barrido: no
+    SOSTENGO D.29, DUDA responder_8_preguntas_construir_primary_aim        (bandeja) > construir_estrategia_gente_cuatro_componentes          (bandeja) | levantado por el barrido: no
+    SOSTENGO D.29, DUDA responder_4_preguntas_estandares_objetivo_estrategico (bandeja) > construir_estrategia_gente_cuatro_componentes          (bandeja) | levantado por el barrido: no
+    NO SOSTENGO    documentar_trabajo_manual_operaciones              (bandeja) > construir_estrategia_gente_cuatro_componentes          (bandeja) | levantado por el barrido: no
+    NO SOSTENGO    responder_8_preguntas_construir_primary_aim        (bandeja) > responder_4_preguntas_estandares_objetivo_estrategico  (bandeja) | levantado por el barrido: SI
+    SOSTENGO D.29, DUDA construir_estrategia_gente_cuatro_componentes      (bandeja) > aplicar_cinco_pasos_proceso_contratacion               (bandeja) | levantado por el barrido: SI
+    SOSTENGO D.29  aplicar_seis_pasos_sistema_venta                   (bandeja) > medir_sistema_venta_trece_indicadores_benchmark        (bandeja) | levantado por el barrido: SI
+    SOSTENGO D.29, DUDA cambiar_saludo_cliente_dos_ramas                   (bandeja) > cuantificar_impacto_innovacion_6_pasos                 (bandeja) | levantado por el barrido: SI
+    NO SOSTENGO    probar_traje_azul_seis_semanas                     (bandeja) > unificar_color_forma_vestuario_modelo                  (bandeja) | levantado por el barrido: no
+    filas: 21 | por lo que queda: {'SOSTENGO': 11, 'NO SOSTENGO': 10} | suma: 21
+    filas con DUDA escrita: 5 de 21
+    por el barrido: {'no levantada': 16, 'levantada': 5} | suma: 21
+
+**La busqueda por asunto, y las partes de los titulos que dicen cuantas tienen**, por id y titulo sobre grafo mas bandejas:
+
+    $ python .v76aud/temas.py | grep -v "^    "
+    poblacion: 479 | por sede: grafo 437, bandeja 42 | suma: 479
+    regla 3: orden impecable: 0
+    regla 5: servicio uniforme y predecible: 0
+    Primary Aim y proposito de vida: 2
+    Strategic Objective y estandares: 2
+    Organizational Strategy: organigrama y contrato de puesto: 12
+    Management Strategy y Marketing Strategy: 0
+    franquicia y prototipo: 2
+    contratacion: 49
+    juego y reglas del juego: 1
+    sistema de venta, guion y benchmark: 25
+    innovacion, cuantificacion y orquestacion: 1
+    sistemas: 12
+    manual de operaciones y documentacion: 4
+    color, forma y vestuario: 3
+    el emprendedor y el tecnico: 3
+    crecimiento y fases del negocio (d098): 8
+    valor al cliente: 17
+    plan escrito: 26
+
+(La salida entera, un id por linea con su sede y su libro, en `.v76aud/temas.txt`.)
 
 **LECTURA:**
 
-- **Las `7` viven en el grafo con los textos que se leyeron**, cada una con tantos pasos como filas tiene mi lectura. **`PASOS
-  INVENTADOS` de lo que ENTRO: `0` en los tres capitulos** (`cap_15` `0` de `22`, `cap_16` `0` de `4`, `cap_17` `0` de `16`), que son
-  las cifras que la `ACTA 72` `72.4` firmo como *PUENTE que entrara*: los PUENTE de la preparacion (`72.4`) se corrigieron en la bandeja
-  **antes** de mi barrido, y mi unica `D` la adjudico `T` la `72.5`, que no reabro (`D.47`). **Por debajo del `10`: no se baja
-  escalon** (`8.1`), y de todos modos no queda lote de extraccion en el mundo `11`. Coincide con el *0 PUENTE que entraron* de
-  `d02ed219`, y lo digo como coincidencia.
-- **`R9` sobre Grove: `3` coincidencias, las `3` con su tramo.** `medidas` es *steps* (`cap_16` `L49`), de forma. *Sino compra tiempo*
-  es *but buy time* (`cap_15` `L111`). **Y `gestionar_retencion` paso `6`, *el segundo pesa mas***, contra *commitments he has made to
-  the people he has been working with daily are far stronger than one made to a casual new acquaintance* (`cap_15` `L121`): el paso
-  junta en el segundo compromiso al jefe y a la gente de cada dia, y el libro compara solo el de la gente con el del conocido nuevo.
-  **Es mi `D` sellada de la `73`, la que la `ACTA 72` `72.5` adjudico `T`** (*la misma comparacion leida de corrido, sin medio nuevo*),
-  **y no la reabro** (`D.47`); la dejo escrita porque es exactamente la figura de `R9` y el que la lea en el turno normal debe saber que
-  ya tiene adjudicacion.
+- **MIS `11` `SOSTENGO` SON `4` LINEAS `CONTINUA` DE LA SECCION `5`, QUE EL BARRIDO LEVANTA, Y `7` ARISTAS POR LECTURA QUE NO**
+  (`D.53`): las **`4` de `D.37`** de `fingir_prototipo_cinco_mil_replicas` a las reglas `1`, `2`, `4` y `6` (sus pasos `5`, `6`, `8` y
+  `10`, cap_11 L45, L47, L51 y L55), que el barrido no levanta en ningun sentido; **`fingir_prototipo_cinco_mil_replicas` a
+  `recorrer_siete_pasos_programa_desarrollo_negocio`** por `D.29` (cap_13 L21 y L41: el programa es el vehiculo del prototipo que la
+  madre manda fingir); y **las dos de la pregunta de regla de abajo**, con su duda. **El asunto de `a0d42852` dice *6 aristas por
+  lectura*: si es la misma cosa, difiere de mi cuenta en una, y mis dudas son justo donde puede estar.** Lo cruzo par a par en mi
+  turno normal, sin decidir aqui cual.
+- **`D.37` DISPARA EN UNA SERIE Y NO EN LAS DEMAS.** En `fingir_prototipo_cinco_mil_replicas` si: su titulo y su paso `4` dicen seis,
+  sus pasos `5` a `10` las nombran, y **cuatro de las seis partes existen como nodo**; las reglas `3` y `5` no tienen ficha en ninguna
+  sede (la busqueda de arriba da `0` en las dos). **En las demas no**: los cinco componentes de la contratacion, las ocho reglas del
+  juego, los seis pasos de venta, los trece indicadores y las cinco preguntas **son los propios pasos de su ficha**, y ninguna parte
+  existe como nodo aparte; en los tres tipos de sistemas, la venta y la medicion son **ejemplares** de un Soft System y de un
+  Information System (L137 y L303), no las clases, y `D.37` pide que la parte sea *la que ese paso nombra*.
+- **`d111`, LA SERIE DE `recorrer_siete_pasos_programa_desarrollo_negocio`**: **de las fichas de `cap_18`, la parte es
+  `construir_estrategia_gente_cuatro_componentes`**, que es la People Strategy misma (L117 y L119 son su definicion), y el barrido la
+  levanta desde los dos lados: **es linea `CONTINUA`, no arista por lectura**, citando el paso `8` de la cabeza (cap_13 L53). La
+  contratacion y las reglas del juego son piezas dentro del paso, no el paso. **De `cap_19`, ninguna es el paso `7`**: cap_19 nunca
+  define la Systems Strategy como procedimiento, y sus tres fichas son la tipologia y dos ejemplares. **Mi lectura: la cabeza entra
+  con `1` de `7` y su unica arista a parte es esa.** Y lo dejo a la vista porque es el punto que `d111` pide decidir con la medida
+  delante: **si la estrategia de gente se lee como METODO DENTRO del paso**, que es como la frontera de la vuelta `5` leyo los pasos
+  `1` y `2`, **la cabeza entra con `0` de `7` y sin arista a parte**. `D.37` cubre las dos lecturas por su letra; lo que cambia es si
+  esta ficha *es* la parte, y eso es lectura, no doctrina.
+- **LA PREGUNTA DE REGLA, la de mas peso de esta pagina, y no la decido aqui:** `construir_estrategia_gente_cuatro_componentes` dice en
+  su **titulo** *cuatro componentes* y los nombra (Primary Aim, Strategic Objective, Organizational Strategy, Operations Manuals), y dos
+  de esas partes tienen ficha que las construye: `responder_8_preguntas_construir_primary_aim` y
+  `responder_4_preguntas_estandares_objetivo_estrategico`. **Leido por la letra de `D.37`, la estrategia de gente seria CABEZA y esas
+  dos, sus PARTES**; **mi lectura va en la direccion contraria, por `D.29`**: esas dos son **madres** de la estrategia de gente, cuya
+  condicion es tenerlas escritas y cuyo paso `2` *arranca con* el Primary Aim. Mis razones: **la cuenta es del titulo de la ficha y
+  no del libro** (L119 enumera sin contar, y la correccion del titular de `D.37` manda `D.29` cuando el texto solo enumera), y **esas
+  dos fichas son metodos dentro de los pasos `1` y `2` del programa**, no el Primary Aim ni el Objetivo Estrategico (la misma lectura
+  de `d111`). **Si la letra de `D.37` alcanza a una cuenta que solo pone la ficha, la direccion se invierte y eso es doctrina**: mi
+  encargo dice que se para y se trae. **Lo llevo a mi turno normal con la lectura del extractor delante.**
+- **`d108`, cap_14 L27 contra L117, con las dos delante:** L27 pregunta *What do I value most? What kind of life do I want? What do I
+  want my life to look like, to feel like? Who do I wish to be?* y L117 abre *the following questions*, las ocho de L119 a L133 que
+  `responder_8_preguntas_construir_primary_aim` transcribe enteras (seccion `3`). **Mi lectura firma la razon que escribe `d108`** (la `ACTA G4` no la he abierto; su razon la leo en la deuda): L27 es el
+  mismo cuestionario del mismo Primary Aim en corto, su *look like* esta en L119, y separarlo haria el gemelo de su propio donante. **La
+  ficha no le da nodo aparte y no hace falta.**
+- **`d098`, el puntero de las tres fases de `cap_05` L29:** **ninguna ficha es su cabeza** (ninguna enumera Infancy, Adolescence y
+  Maturity) **y ninguna es una de sus partes**: las dos de `cap_08`, el capitulo de Maturity, son piezas de ese capitulo (la plantilla
+  de Watson y el modelo desde el cliente), no la fase; y `dictar_ritmo_crecimiento_preguntas_escritas`, de `cap_07`, es el remedio
+  que el libro da al salir de la zona de confort, no la Adolescencia. En grafo mas bandejas **no hay cabeza ni nodo de fase** (la
+  busqueda de arriba: lo que levanta *madurez* es la madurez relevante a la tarea de Grove, otra doctrina). **Sin arista**, y `d098`
+  sigue esperando su cabeza.
+- **Ninguna madre del grafo ni de otra bandeja para las `22`**, por mi lectura: lo que la busqueda levanta por contratacion,
+  organizacion, sistema, manual, color o plan son otras doctrinas de otros libros (`6.1`), y ninguna es la condicion de una de las
+  `22` ni la remite con palabras.
 
-## 5. **LO QUE MI LECTURA ESPERA QUE LA VUELTA DEJE, Y EL ORDEN EN QUE ENTRO**
+## 7. **EL ORDEN QUE MI LECTURA OBLIGA** (`D.36`)
 
-Sacado **solo** de mis ficheros sellados de la `73`, con la correccion de la `ACTA 72` `72.5` aplicada y declarada dentro del
-instrumento; la bitacora, solo contada; **y las aristas del grafo, solo en cuentas y `SI` o `NO`, despues de imprimir las esperadas**:
+**No es un orden: son las restricciones**, escritas antes de ver el del extractor. Madre antes que hijo por mis `CONTINUA` y mis
+`SOSTENGO` con los dos extremos en la tanda, y cuantas cumple el orden de pieza del libro, **que saco de mi fidelidad** (capitulo y
+primera linea), porque `.v76aud/las22.txt` va alfabetica:
 
-    $ python .v75aud/esperado_75.py
-    pares sellados: 20 | con la correccion de la ACTA 72 72.5 aplicada: 1
-    filas dirigidas de mi barrido con candidato de las 7: 29 | por vecino: {'vecino en la tanda': 19, 'vecino fuera de la tanda': 10} | suma: 29
-    lineas de veredicto esperadas, por la clase de su par: {'CONTINUA': 6, 'SANO': 23} | suma: 29
-    SOSTENGO de mi lectura: {'cae en una CONTINUA': 3, 'es el par corregido a SANO': 1} | suma: 4
-    aristas esperadas: 3, todas CONTINUA con madre=
-      desarrollar_primer_curso_entrenamiento > pedir_critica_anonima_curso_entrenamiento_dictado
-      priorizar_lista_entrenamiento_subordinados > desarrollar_primer_curso_entrenamiento
-      responder_primer_aviso_renuncia_subordinado > gestionar_retencion_subordinado_valioso_renuncia
-    extremos de esas aristas que no son de las 7: 0
-    bitacora esperada: 1081 + 29 + 1 = 1111 | hoy (lineas): 1111 | IGUAL
-    aristas del grafo con algun extremo en las 7: escritas en la madre 3 | en el hijo 3 | las dos listas dicen lo mismo: SI | el conjunto es el esperado: SI
+    $ python .v76aud/restricciones_orden.py
+    orden de pieza del libro (capitulo y primera linea de mi fidelidad): 22
+       1 cap_04 L285 hacer_trabajo_futuro_imaginar_negocio
+       2 cap_07 L279 dictar_ritmo_crecimiento_preguntas_escritas
+       3 cap_08 L39 construir_empresa_plantilla_vision_diaria
+       4 cap_08 L109 trazar_modelo_negocio_cliente_primero
+       5 cap_11 L35 fingir_prototipo_cinco_mil_replicas
+       6 cap_11 L63 dar_valor_constante_cuatro_publicos
+       7 cap_11 L87 operar_modelo_gente_destreza_minima
+       8 cap_11 L155 documentar_trabajo_manual_operaciones
+       9 cap_11 L215 unificar_color_forma_vestuario_modelo
+      10 cap_11 L245 interrogar_negocio_cinco_preguntas
+      11 cap_12 L51 cambiar_saludo_cliente_dos_ramas
+      12 cap_12 L63 probar_traje_azul_seis_semanas
+      13 cap_12 L95 cuantificar_impacto_innovacion_6_pasos
+      14 cap_13 L39 recorrer_siete_pasos_programa_desarrollo_negocio
+      15 cap_14 L117 responder_8_preguntas_construir_primary_aim
+      16 cap_15 L169 responder_4_preguntas_estandares_objetivo_estrategico
+      17 cap_18 L117 construir_estrategia_gente_cuatro_componentes
+      18 cap_18 L139 aplicar_ocho_reglas_juego_personas
+      19 cap_18 L249 aplicar_cinco_pasos_proceso_contratacion
+      20 cap_19 L35 distinguir_tres_tipos_sistemas_negocio
+      21 cap_19 L143 aplicar_seis_pasos_sistema_venta
+      22 cap_19 L311 medir_sistema_venta_trece_indicadores_benchmark
+    restricciones: 15
+      construir_estrategia_gente_cuatro_componentes              antes que aplicar_cinco_pasos_proceso_contratacion                     CONTINUA               el orden del libro la cumple
+      aplicar_seis_pasos_sistema_venta                           antes que medir_sistema_venta_trece_indicadores_benchmark              CONTINUA               el orden del libro la cumple
+      cambiar_saludo_cliente_dos_ramas                           antes que cuantificar_impacto_innovacion_6_pasos                       CONTINUA               el orden del libro la cumple
+      recorrer_siete_pasos_programa_desarrollo_negocio           antes que construir_estrategia_gente_cuatro_componentes                CONTINUA               el orden del libro la cumple
+      fingir_prototipo_cinco_mil_replicas                        antes que dar_valor_constante_cuatro_publicos                          arista por lectura     el orden del libro la cumple
+      fingir_prototipo_cinco_mil_replicas                        antes que operar_modelo_gente_destreza_minima                          arista por lectura     el orden del libro la cumple
+      fingir_prototipo_cinco_mil_replicas                        antes que documentar_trabajo_manual_operaciones                        arista por lectura     el orden del libro la cumple
+      fingir_prototipo_cinco_mil_replicas                        antes que unificar_color_forma_vestuario_modelo                        arista por lectura     el orden del libro la cumple
+      fingir_prototipo_cinco_mil_replicas                        antes que recorrer_siete_pasos_programa_desarrollo_negocio             arista por lectura     el orden del libro la cumple
+      responder_8_preguntas_construir_primary_aim                antes que construir_estrategia_gente_cuatro_componentes                arista por lectura     el orden del libro la cumple
+      responder_4_preguntas_estandares_objetivo_estrategico      antes que construir_estrategia_gente_cuatro_componentes                arista por lectura     el orden del libro la cumple
+      fingir_prototipo_cinco_mil_replicas                        antes que aplicar_cinco_pasos_proceso_contratacion                     D.36, solo lo levanta aplicar_cinco_pasos_proceso_contratacion el orden del libro la cumple
+      medir_sistema_venta_trece_indicadores_benchmark            antes que construir_estrategia_gente_cuatro_componentes                D.36, solo lo levanta construir_estrategia_gente_cuatro_componentes EL ORDEN DEL LIBRO LA VIOLA
+      interrogar_negocio_cinco_preguntas                         antes que operar_modelo_gente_destreza_minima                          D.36, solo lo levanta operar_modelo_gente_destreza_minima EL ORDEN DEL LIBRO LA VIOLA
+      dar_valor_constante_cuatro_publicos                        antes que probar_traje_azul_seis_semanas                               D.36, solo lo levanta probar_traje_azul_seis_semanas el orden del libro la cumple
+    que obligan (madre antes que hijo): 11 | violadas por el orden del libro: 0
+    D.36 de un solo lado, informativas: 4
 
-**LECTURA, y lo que se compara en el turno normal, no aqui:**
+**LECTURA:** las `11` que obligan **las cumple ya el orden de pieza del libro**. De las `4` de `D.36` de un solo lado, **dos no las
+cumple** (`medir_sistema_venta_trece_indicadores_benchmark` antes que `construir_estrategia_gente_cuatro_componentes`, y
+`interrogar_negocio_cinco_preguntas` antes que `operar_modelo_gente_destreza_minima`); **son informativas y no obligan**, porque la
+aduana de `insertar` mide grafo mas bandejas (`D.38.5`) y el par se levanta igual desde el lado que entre despues. **Su orden, contra
+estas once, lo compruebo en mi turno normal.**
 
-- **Lineas de bitacora.** Si cada `insertar` escribio una linea por fila dirigida que su aduana levanto, y la aduana levanto lo que mi
-  barrido, son `29`: `6` `CONTINUA` y `23` `SANO` por la clase de su par; y `corregir` escribe **una** mas. **La bitacora tiene las
-  `1111` que eso da.** **Es coincidencia de cuenta y no de contenido**: no he abierto ni una linea. `retirar_paso.py` no escribe en la
-  bitacora (su codigo, seccion `1`), y la cuenta lo confirma. **Mi lectura no espera ningun vecino sin linea preparada**, porque la
-  poblacion es la del barrido (seccion `2`); uno que apareciera seria un hallazgo, y lo busco par a par en el turno normal.
-- **Aristas: `3`, las tres `CONTINUA` con `madre=` y las tres con los dos extremos dentro de las `7`.** Mis cuatro `SOSTENGO` sellados
-  **no son aristas aparte**: tres son esas mismas `CONTINUA` y el cuarto es el par que `D73.9` dejo en `SANO`. **Y el grafo tiene
-  exactamente esas `3`, escritas por los dos lados.** Coincide con el *las 3 aristas esperadas en el grafo* de `4f3f21a3`, y lo digo
-  como coincidencia.
+## 8. **`R8` MEDIDO SOBRE MI ENCARGO DE LA `76`, CON EL MISMO INSTRUMENTO** (`ACTA 74` `74.11` y `74.12`)
 
-**El orden en que entraron, leido del grafo** (`src/aduana.py` escribe `nodos + [nuevo]`, asi que el orden de las filas es el de
-entrada), contra el orden de pieza del libro y las `5` restricciones que imprime **mi** `.v73aud/restricciones_orden.py`, sellado en la
-`73`:
-
-    $ python .v75aud/orden_grafo.py
-    orden de entrada leido del grafo: 7 filas
-       1 usar_banco_nueve_preguntas_entrevista
-       2 responder_primer_aviso_renuncia_subordinado
-       3 gestionar_retencion_subordinado_valioso_renuncia
-       4 reciclar_empleado_ascendido_mas_alla_capacidad
-       5 priorizar_lista_entrenamiento_subordinados
-       6 desarrollar_primer_curso_entrenamiento
-       7 pedir_critica_anonima_curso_entrenamiento_dictado
-    el orden de entrada es el orden de pieza del libro de mi instrumento sellado: SI
-      cumple    6 desarrollar_primer_curso_entrenamiento               antes que 7 pedir_critica_anonima_curso_entrenamiento_dictado    obliga
-      cumple    5 priorizar_lista_entrenamiento_subordinados           antes que 6 desarrollar_primer_curso_entrenamiento               obliga
-      cumple    2 responder_primer_aviso_renuncia_subordinado          antes que 3 gestionar_retencion_subordinado_valioso_renuncia     obliga
-      cumple    5 priorizar_lista_entrenamiento_subordinados           antes que 7 pedir_critica_anonima_curso_entrenamiento_dictado    caida a SANO en la ACTA 72 72.5
-      cumple    3 gestionar_retencion_subordinado_valioso_renuncia     antes que 7 pedir_critica_anonima_curso_entrenamiento_dictado    D.36 de un solo lado
-    restricciones: {'obliga, la cumple': 3, 'caida a SANO en la ACTA 72 72.5, la cumple': 1, 'D.36 de un solo lado, la cumple': 1} | suma: 5
-
-**LECTURA:** **las `7` entraron en el orden de pieza del libro de mi instrumento sellado**, y **las `5` restricciones se cumplen**: las
-`3` que obligan (cada madre antes que su hijo), la que salia de mi `CONTINUA` caido a `SANO` y ya no obliga, y la `D.36` de un solo
-lado, informativa. **Que ese orden sea el de `.v73ext/orden.txt` fila a fila** lo dice el bloque de mi propio encargo (`TAREA 4`), que
-lo pega de ese fichero; que cada `insertar` volviera antes de lanzar el siguiente **lo miro en mi turno normal**.
-
-## 6. **MI CLASIFICACION DE CADA CANDIDATO, Y LAS TRES ARISTAS RELEIDAS** (`6.1`, y solo la vara `6.1`)
-
-**Las `7`, una por una**, de mis ficheros sellados: las lineas del libro que sus pasos transcriben, las filas dirigidas de mi barrido en
-las que es candidata, sus pares sin orden por clase con la correccion de `D73.9` (cuenta los pares en los que esta de cualquiera de los
-dos lados, y por eso puede pasar de sus filas), y las aristas que mi lectura le espera como hija y cuantas como madre:
-
-    $ python .v75aud/clasificacion_7.py
-    1 cap_17 desarrollar_primer_curso_entrenamiento             NODO | L53 a L59 | filas 2 | pares {'CONTINUA': 2} suma 2 | hija: CONTINUA de priorizar_lista_entrenamiento_subordinados | madre de: 1
-    2 cap_15 gestionar_retencion_subordinado_valioso_renuncia   NODO | L113 a L121 | filas 3 | pares {'CONTINUA': 1, 'SANO': 3} suma 4 | hija: CONTINUA de responder_primer_aviso_renuncia_subordinado | madre de: 0
-    3 cap_17 pedir_critica_anonima_curso_entrenamiento_dictado  NODO | L61 a L61 | filas 7 | pares {'CONTINUA': 1, 'SANO': 6} suma 7 | hija: CONTINUA de desarrollar_primer_curso_entrenamiento | madre de: 0
-    4 cap_17 priorizar_lista_entrenamiento_subordinados         NODO | L49 a L51 | filas 3 | pares {'CONTINUA': 1, 'SANO': 2} suma 3 | hija: ninguna | madre de: 1
-    5 cap_16 reciclar_empleado_ascendido_mas_alla_capacidad     NODO | L49 a L49 | filas 1 | pares {'SANO': 1} suma 1 | hija: ninguna | madre de: 0
-    6 cap_15 responder_primer_aviso_renuncia_subordinado        NODO | L111 a L111 | filas 7 | pares {'CONTINUA': 1, 'SANO': 6} suma 7 | hija: ninguna | madre de: 1
-    7 cap_15 usar_banco_nueve_preguntas_entrevista              NODO | L39 a L55 | filas 6 | pares {'SANO': 6} suma 6 | hija: ninguna | madre de: 0
-
-**LECTURA: LAS `7` SON NODO**, con la clase de cada par que selle en la `73` y la unica correccion adjudicada en la `ACTA 72`. **No
-cambio ninguna**: lo que entro es byte a byte lo que lei (secciones `2` y `4`).
-
-**Las tres aristas son las que el extractor cablea en el acto**, y **por eso las releo hoy con el libro y los pasos delante**. Las
-lineas del libro que las sostienen, y la del par de `D73.9`:
-
-    $ python .v75aud/lineas_fuente.py
-    cap_15 L111 (968 caracteres): Drop what you are doing. Sit him down and ask him why he is quitting. Let him talk (raya) don’t argue about anything with him. Believe me, he’s rehearsed his speech countless times during more than one sleepless night. After he’s finished going through all his reasons for wanting to leave (they won’t be good ones), ask him more questions. Make him talk, because after the prepared points are delivered, the real issues may come out. Don’t argue, don’t lecture, and don’t panic. Remembe [...]
-    cap_15 L113 (481 caracteres): What’s your next move? Because you have a major problem, you go to your supervisor for help and advice. He no doubt is also on his way to an important meeting…He, like you, will try to put things off, and most probably not because he doesn’t care, but because the situation affects you more than your supervisor (raya) after all, it is your subordinate who has decided to quit. It is up to you to make it your supervisor’s problem and make him participate in the solution to your problem [...]
-    cap_17 L51 (187 caracteres): Having done this, take an inventory of the manager-teachers and instructional materials available to help deliver training on items on your list. Then assign priorities among these items.
-    cap_17 L53 (493 caracteres): Especially if you haven’t done this sort of thing before, start very unambitiously (raya) like developing one short course (three to four lectures) on the most urgent subject. You will find that skills that you have had for years (raya) things that you could do in your sleep, as it were (raya) are much harder to explain than to practice. You may find that in your attempt to explain things, you’ll be tempted to go into more and more background until this begins to obscure the original objective of [...]
-    cap_17 L57 (603 caracteres): Develop the second lecture after you have given the first. Regard the first time you teach the course as a throwaway (raya) it won’t be great, because no matter how hard you try, you’ll have to go through one version that won’t be. Rather than agonize over it, accept the inevitability of the first time being unsatisfactory and consider it the path to a more satisfactory second round. To make sure that your first attempt causes no damage, teach this course to the more knowledgeable o [...]
-    cap_17 L61 (524 caracteres): After you’ve given the course, ask for anonymous critiques from the employees in your class. Prompt them with a form that asks for numerical ratings but that also poses some open-ended questions. Study and consider the responses, but understand that you will never be able to please all members of your class: typical feedback will be that the course was too detailed, too superficial, and just right, in about equal balance. Your ultimate aim should be to satisfy yourself that y [...]
-
-Y el final de `L111`, que el corte de `480` deja fuera y la primera arista necesita:
-
-    $ sed -n 111p fuentes/grove_high_output/cap_15.md | grep -o "Don.t try to change his mind[^.]*\. After he.s said all he has to say[^.]*\."
-    Don’t try to change his mind at this point, but buy time. After he’s said all he has to say, ask for whatever time you feel is necessary to prepare yourself for the next round.
-
-Y los pasos de sus cinco nodos, por `pasos_ciego.py` (`R6`), que hoy los encuentra en el grafo:
-
-    $ python .v67aud/normal/pasos_ciego.py responder_primer_aviso_renuncia_subordinado gestionar_retencion_subordinado_valioso_renuncia priorizar_lista_entrenamiento_subordinados desarrollar_primer_curso_entrenamiento pedir_critica_anonima_curso_entrenamiento_dictado
-    ===== responder_primer_aviso_renuncia_subordinado | grafo
-      titulo: Responder al primer momento en que un subordinado valioso avisa que quiere renunciar: dejar lo que haces, escucharlo sin discutir y comprarte tiempo antes de actuar
-      fuente: ['grove_high_output']
-      cond: Cuando un subordinado valioso y estimado se acerca al mando y anuncia, de pasada, que ha decidido dejar la empresa.
-      P1. Deja lo que estas haciendo en cuanto el subordinado te avisa de que quiere renunciar, en vez de posponer la conversacion para mas tarde.
-      P2. Sientalo y preguntale por que se va.
-      P3. Dejalo hablar sin discutir nada de lo que diga, aunque sus razones no te parezcan buenas.
-      P4. Cuando haya terminado de exponer sus razones, hazle mas preguntas para que los asuntos de fondo puedan salir a la luz.
-      P5. No discutas, no sermonees y no entres en panico durante esta primera conversacion.
-      P6. No intentes cambiarle la idea en este momento, sino compra tiempo: cuando haya dicho todo lo que tiene que decir, pide el tiempo que necesites para prepararte para el siguiente encuentro.
-      P7. Cumple despues con lo que te hayas comprometido a hacer en esta primera conversacion.
-    ===== gestionar_retencion_subordinado_valioso_renuncia | grafo
-      titulo: Gestionar la retencion de un subordinado valioso tras su primer aviso de renuncia: escalar al propio jefe, perseguir cada via para conservarlo y volver con una solucion a sus razones reales
-      fuente: ['grove_high_output']
-      cond: Cuando, tras la primera conversacion en la que un subordinado valioso anuncio que queria renunciar, el mando tiene que buscarle una salida que lo retenga en la empresa.
-      P1. Lleva el problema a tu propio jefe en busca de ayuda y consejo y, aunque el tambien intente posponerlo, haz que sea problema suyo y que participe de la solucion.
-      P2. Persigue con energia cada via disponible para retener al subordinado en la empresa, incluida la de transferirlo a otro departamento.
-      P3. Si la transferencia parece la salida mas probable, asume tu mismo el papel de gestor de ese proyecto hasta que quede resuelto del todo.
-      P4. Vuelve al subordinado con una solucion que atienda sus razones reales para querer irse y que ademas beneficie a la empresa.
-      P5. Haz que se sienta comodo con el nuevo arreglo; puedes decirle algo como que no les arranco por chantaje nada que no debieran haber hecho igual, que al estar a punto de irse les hizo ver su error, y que solo hacen lo que debieron hacer sin que pasara nada de esto.
-      P6. Si el subordinado dice que ya acepto un puesto en otra empresa, hazle ver que tiene dos compromisos distintos, uno con un futuro empleador que apenas conoce y otro contigo y con la gente con la que trabaja a diario, y que el segundo pesa mas.
-    ===== priorizar_lista_entrenamiento_subordinados | grafo
-      titulo: Priorizar la lista de en que hay que entrenar a los subordinados, tras preguntarles e inventariar los medios disponibles
-      fuente: ['grove_high_output']
-      cond: Cuando el mando decide abrazar el entrenamiento como tarea propia y necesita decidir por donde empezar, antes de desarrollar ningun curso.
-      P1. Haz una lista de las cosas en que crees que tus subordinados o los miembros de tu departamento deberian entrenarse, sin limitar el alcance de la lista.
-      P2. Incluye items que van desde lo que parece simple, como entrenar a la persona que atiende el telefono, hasta cosas mas generales y elevadas, como los objetivos y los sistemas de valores de tu departamento, tu planta y tu empresa.
-      P3. Pregunta a la gente que trabaja para ti que siente que necesita: es probable que te sorprenda contandote necesidades que nunca supiste que existian.
-      P4. Hecho esto, toma inventario de los mando maestros y los materiales instructivos disponibles para ayudar a impartir el entrenamiento de los items de tu lista.
-      P5. Asigna prioridades entre esos items.
-    ===== desarrollar_primer_curso_entrenamiento | grafo
-      titulo: Desarrollar el primer curso de entrenamiento en siete pasos, desde el alcance sin ambicion hasta decidir si hacen falta mas instructores
-      fuente: ['grove_high_output']
-      cond: Cuando el mando ya priorizó en que entrenar a sus subordinados y elige el tema mas urgente para desarrollar su primer curso propio.
-      P1. Empieza sin ambicion: desarrolla un curso corto, de tres a cuatro clases, sobre el tema mas urgente de tu lista.
-      P2. Fija un calendario para el curso, con plazos, y comprometete con el para no atascarte en la preparacion.
-      P3. Crea un esquema para el curso entero.
-      P4. Desarrolla solo la primera clase, y dictala.
-      P5. Desarrolla la segunda clase despues de haber dado la primera.
-      P6. Trata la primera vez que enseñas el curso como un desechable: enseñaselo a los subordinados mas informados, que te ayudaran a perfeccionarlo con su interaccion y su critica.
-      P7. Preguntate si podras cubrir tu solo a toda la organizacion o si, por su tamaño, hace falta que prepares a unos cuantos instructores con tu primer set de clases.
-    ===== pedir_critica_anonima_curso_entrenamiento_dictado | grafo
-      titulo: Pedir critica anonima tras dictar un curso de entrenamiento, con formulario numerico y preguntas abiertas
-      fuente: ['grove_high_output']
-      cond: Cuando el mando ya dicto su curso de entrenamiento y quiere saber si esta cumpliendo el proposito que se propuso.
-      P1. Despues de dar el curso, pide criticas anonimas a los empleados de tu clase.
-      P2. Usa un formulario que pida calificaciones numericas y que ademas plantee algunas preguntas abiertas.
-      P3. Estudia y considera las respuestas, entendiendo que nunca podras complacer a todos los miembros de tu clase.
-      P4. Ten como objetivo ultimo satisfacerte a ti mismo de que estas logrando lo que te propusiste.
-
-**LECTURA, UNA POR UNA, Y LAS TRES LAS SOSTENGO:**
-
-- **`responder_primer_aviso` madre de `gestionar_retencion`, `CONTINUA`: SOSTENGO.** La condicion del hijo (*tras la primera
-  conversacion en la que un subordinado valioso anuncio que queria renunciar*) es el producto de la madre, y `L113` encadena con
-  palabras la segunda ronda a la primera (*What's your next move?*), despues de que `L111` cierre la primera con *buy time* y *the
-  next round*, que es el paso `6` de la madre. **El hijo anade** escalar al propio jefe, perseguir cada via, la transferencia, la
-  solucion a las razones reales y los dos compromisos (pasos `1` a `6`), que la madre no trae. **No repite.** Mi duda sellada de
-  hermanas la cerro la `ACTA 72` `72.5` (`D73.8`) y no la reabro.
-- **`priorizar_lista` madre de `desarrollar_primer_curso`, `CONTINUA`: SOSTENGO.** El paso `1` del hijo arranca *sobre el tema mas
-  urgente de tu lista*, que es el producto del paso `5` de la madre (*Asigna prioridades entre esos items*); `L53` sigue a `L51` en el
-  libro (*assign priorities* y *the most urgent subject*). **Procedimiento en los dos lados fuera del solape, sin bascula** (`6.1`):
-  la madre lista, pregunta e inventaria; el hijo calendariza, esquematiza y dicta.
-- **`desarrollar_primer_curso` madre de `pedir_critica_anonima`, `CONTINUA`: SOSTENGO.** La condicion del hijo (*ya dicto su curso*) es
-  el producto de los pasos `4` a `6` de la madre, y `L61` abre con *After you've given the course*. La critica del paso `6` de la madre
-  (los subordinados mas informados, en la primera vuelta) y el formulario anonimo del hijo son **publico, instrumento y momento
-  distintos**: el hijo procedimenta, no nombra.
-- **Y `priorizar_lista` con `pedir_critica_anonima` sin arista**, abuela y nieta: ningun paso del hijo usa la lista ni las prioridades,
-  y su condicion es el producto de `desarrollar`. Es `D73.9`, adjudicado en la `ACTA 72` `72.5`, **y con los pasos delante lo leo
-  igual**.
-
-## 7. **`R8` MEDIDO SOBRE MI ENCARGO DE LA `75`, CON EL MISMO INSTRUMENTO** (`ACTA 73` `73.11`, `73.12`)
-
-`R8` dice: *toda cifra de medida que escriba en `PROMPT_SIGUIENTE.md` (un reloj, una banda, una cuenta que solo se comprueba abriendo un
-fichero, en digito o en letra) va DENTRO de un bloque `$` con su salida, o lleva EN SU MISMA LINEA la seccion del acta donde esta
-pegada*. Que el fichero es el encargo que escribi al cerrar la `ACTA 73`, y el instrumento de la `73.12` corrido sin copiarlo, con su
-salida de hoy contra la que guardo aquella acta:
+`R8` dice: *toda cifra de medida que escriba en `PROMPT_SIGUIENTE.md` (un reloj, una banda, una cuenta que solo se comprueba abriendo
+un fichero, en digito o en letra) va DENTRO de un bloque `$` con su salida, o lleva EN SU MISMA LINEA la seccion del acta donde esta
+pegada: ni la de la linea de al lado, ni una ruta de fichero*. El fichero es el encargo que escribi al cerrar la `ACTA 74`, y el
+instrumento es el de la `74.12`, corrido sin copiarlo, con su salida de hoy contra la que guardo aquella acta:
 
     $ head -1 docs/loop/PROMPT_SIGUIENTE.md | cut -c1-100; ls -l --time-style=full-iso docs/loop/PROMPT_SIGUIENTE.md | awk '{print $6, $7, $9}'
-    # ENCARGO DE LA VUELTA 75: **PRIMERO LOS DOS PUENTES DE `dar_elogio_disciplina_igual_critica` SALEN
-    2026-09-26 04:27:25.592730100 docs/loop/PROMPT_SIGUIENTE.md
-    $ python .v74aud/normal/r8_encargo75.py | diff - .v74aud/normal/r8_encargo75.txt && echo "IDENTICO a .v74aud/normal/r8_encargo75.txt, la salida de la ACTA 73 73.12"; python .v74aud/normal/r8_encargo75.py | tail -1
-    IDENTICO a .v74aud/normal/r8_encargo75.txt, la salida de la ACTA 73 73.12
-    lineas del encargo: {'linea de bloque sangrado': 22, 'prosa con numero, con seccion de la ACTA 73': 18, 'prosa con numero, sin seccion de la ACTA 73': 53, 'prosa sin digito ni palabra de numero': 60} | suma: 153
+    # ENCARGO DE LA VUELTA 76: **LAS FICHAS DE GERBER DEJADAS LISTAS PARA INSERTAR: SU FIDELIDAD LEIDA E
+    2026-09-26 06:29:54.289087600 docs/loop/PROMPT_SIGUIENTE.md
+    $ python .v75aud/normal/r8_encargo76.py | diff - .v75aud/normal/r8_encargo76.txt && echo "IDENTICO a .v75aud/normal/r8_encargo76.txt, la salida de la ACTA 74 74.12"; python .v75aud/normal/r8_encargo76.py | tail -1
+    IDENTICO a .v75aud/normal/r8_encargo76.txt, la salida de la ACTA 74 74.12
+    lineas del encargo: {'linea de bloque sangrado': 14, 'prosa con numero, con seccion de la ACTA 74': 12, 'prosa con numero, sin seccion de la ACTA 74': 55, 'prosa sin digito ni palabra de numero': 65} | suma: 146
 
-Las lineas de prosa con numero y **sin** seccion, cada una con los numeros que el instrumento le ve:
+(Cada linea con numero, con sus digitos y sus palabras de numero, en `.v75aud/normal/r8_encargo76.txt`.) **LECTURA, grupo a grupo,
+que es mia y no del instrumento; las volvi a leer una a una y no copio la de la `74.12`, aunque llego al mismo reparto:**
 
-    $ python .v74aud/normal/r8_encargo75.py | grep -E "^  L[0-9]+ - " | sed -E 's/\] \|.*$/]/'
-      L3 - ['11', '73', '74'] []
-      L4 - ['1.4'] []
-      L14 - ['0'] []
-      L23 - ['18'] []
-      L24 - ['8', '4'] []
-      L31 - ['72', '72'] []
-      L32 - ['73', '75', '72'] []
-      L34 - ['76'] []
-      L35 - ['72'] []
-      L42 - ['1', '73'] []
-      L44 - ['47'] []
-      L57 - ['30', '54', '13'] []
-      L60 - ['1'] []
-      L61 - ['8', '17'] []
-      L63 - ['8'] []
-      L64 - ['17'] []
-      L67 - ['1', '7'] []
-      L68 - ['9', '16', '8', '15', '18', '20', '16', '18'] []
-      L70 - ['2', '17', '8'] []
-      L72 - ['54'] []
-      L73 - ['3'] ['tres']
-      L76 - ['4'] []
-      L77 - ['7', '55'] []
-      L80 - ['74'] []
-      L82 - ['3'] []
-      L84 - ['73', '73'] []
-      L88 - ['4', '73'] []
-      L105 - ['1', '1'] []
-      L106 - ['73'] []
-      L107 - ['3', '6', '7'] []
-      L108 - ['73.9', '72', '72.5'] []
-      L109 - ['2', '031'] []
-      L110 - ['73', '72', '73'] []
-      L111 - ['6.1'] ['dos']
-      L113 - ['3', '72'] []
-      L114 - ['73', '31'] []
-      L115 - ['4'] []
-      L117 - ['2'] []
-      L119 - ['5'] []
-      L122 - ['2'] []
-      L123 - ['4', '2'] []
-      L124 - ['15', '16', '17'] []
-      L125 - ['73', '72', '72.4'] ['cero']
-      L127 - ['61'] []
-      L128 - ['5', '64', '64', '64'] []
-      L129 - ['75', '9'] []
-      L130 - ['4', '59', '59.18'] []
-      L134 - ['75'] []
-      L141 - ['2'] []
-      L142 - ['8', '17'] []
-      L143 - ['4.2'] []
-      L146 - ['7', '55'] []
-      L152 - [] ['Cero', 'cero']
+- **Numeros de vuelta, de acta, de rama o de carpeta de la casa**: `L3`, `L18`, `L21`, `L50`, `L64`, `L69`, `L70`,
+  `L74`, `L77`, `L78`, `L79`, `L85`, `L86`, `L88`, `L93`, `L95`, `L96`, `L109`, `L121`, `L124`, `L125`, `L128`.
+- **Secciones, reglas, deudas y numeros de tarea o de punto**: `L4`, `L14`, `L17`, `L19`, `L46`, `L52`, `L62`, `L66`, `L68`, `L72`,
+  `L76`, `L80`, `L81`, `L83`, `L90`, `L92`, `L94`, `L96`, `L99`, `L105`, `L108`, `L109`, `L112`, `L115`, `L123`, `L138`, `L140`.
+- **Identificadores de capitulo, de linea del libro o de fecha**: `cap_22` en `L45`; `cap_14`, `L27` y `L117` en `L103`; `cap_05` y
+  `L29` en `L104`; `cap_13`, `cap_18` y `cap_19` en `L111`; el `23` sep en `L24`.
+- **Umbrales de la casa**: el `10` por ciento de `L80`, que es regla y no medida.
+- **Palabras de numero sin seccion**: *cinco a la vez* (`L23` y `L86`, un tope de la casa), *cinco fichas a la vez* (`L27`, el
+  parametro del barrido de la `73`, cuyo reloj va dentro del bloque de `L30` a `L34`), *tres asientos* (`L24`, la frase fija del arnes,
+  que el prompt de este turno trae igual), *los dos delante* y *las dos delante* (`L93` y `L103`, los dos nodos de un par y las dos
+  lineas del libro), *las tres fases* (`L104`, lo que dice `cap_05` `L29`, citada en la misma linea), *en cero* (`L109`, la meta) y
+  *cero guiones* (`L145`, la frase fija). **Ninguna es una cuenta de fichero.**
+- **Las cifras de medida** van dentro de un bloque `$` (el reloj de la `73`, la clase, el tablero) o llevan su seccion de la `ACTA 74`
+  en la misma linea: `L1`, `L5`, `L16`, `L56` a `L60`, `L65`, `L75`, `L87` y `L118`.
 
-**LECTURA, grupo a grupo, que es mia y no del instrumento; las volvi a leer una a una y no copio la de la `73.12`:**
+**`R8` CUMPLIDO EN EL ENCARGO DE LA `76`, medido otra vez aqui.**
 
-- **Numeros de vuelta, de acta, de rama, de mundo o de carpeta de la casa**: `L3`, `L31`, `L32`, `L34`, `L35`, `L80`, `L84`, `L106`,
-  `L110`, `L114`, `L134`, el `72` de `L113` y el `75` de `L129`; y las actas y carpetas de `L42`, `L88`, `L108`, `L125` y `L130`, que
-  ademas llevan en su misma linea la seccion de la `ACTA 72` o de la `ACTA 59` que citan (`72.5`, `72.4`, `59.18`).
-- **Secciones, reglas, deudas, remedios y numeros de tarea, de punto o de lista**: `L4`, `L14`, `L24` (`PARALELO.md` `8` punto `4`),
-  `L44`, `L60`, `L72`, `L73`, `L76`, `L77`, `L82`, `L109`, `L111`, `L113`, `L115`, `L117`, `L119`, `L122`, `L123`, `L127`, `L128`,
-  `L141`, `L143`, `L146`, el `R9` de `L129` y el `R4` de `L130`, y los numeros de tarea de `L42` y `L88`.
-- **Identificadores de capitulo, de fila o de paso**: `cap_18` en `L23`; `cap_15` a `cap_17` en `L124`; el `P13` del precedente en
-  `L57`; las filas `1`, `3`, `6` y `7` de `L105` y `L107`; los pasos `8` y `17` en `L61`, `L63`, `L64`, `L70` y `L142`; y **la tabla de
-  numeros de paso de `L67` y `L68`**, aritmetica de esos dos identificadores sobre los `20` pasos que la misma TAREA cita con su
-  seccion.
-- **Las cifras de medida** van dentro de un bloque `$` (la clase, el tablero, el reloj de la `72`, las filas y las aristas de la tanda,
-  las lineas preparadas) o llevan su seccion de la `ACTA 73` en la misma linea (las lineas con seccion del instrumento).
-
-**LAS CUENTAS EN LETRA**, que el instrumento ve por palabra y que busco tambien con un `grep` mas ancho:
-
-    $ grep -n -i -w -E "uno|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|once|doce|veinte|treinta|cero|mil|cien|ambas|ambos" docs/loop/PROMPT_SIGUIENTE.md | cut -c1-120
-    1:# ENCARGO DE LA VUELTA 75: **PRIMERO LOS DOS PUENTES DE `dar_elogio_disciplina_igual_critica` SALEN DEL GRAFO POR `D.5
-    48:| **Tu vuelta, reproducida**: no movio dato; tus instrumentos dan lo que pegaste y tus cuatro `como` estan en el regi
-    49:| **Tus ocho discutibles se sostienen**, `D74.1` a `D74.8`; en `D74.6` gana tu `P` y cae la lectura ciega del auditor
-    54:## TAREA 2: **BLOQUEANTE (`D.55`), CON LA GUARDA `D.30` EN ROJO: LOS DOS PUENTES DE `dar_elogio_disciplina_igual_crit
-    56:**Antes de ningun `insertar`.** La guarda, los dos pasos y sus lineas estan en la `ACTA 73` `73.5` y `73.6`. **La via
-    73:3. **Despues de cada una de las tres operaciones, `python forja.py gate`, pegado.** Al terminar, **pegados**: los pas
-    101:      CONTINUA con madre= (aristas distintas): 3 | SOSTENGO por lectura: 0 | solapes entre las dos: 0 | aristas espe
-    109:2. **La puerta es la aduana de `insertar`, no la lista** (`d031`). **Al volver cada uno, su vecindad de hoy contra l
-    111:   sin linea, lo lees con los pasos de los dos delante, escribes su veredicto por la vara `6.1` y solo esa, **y lo m
-    125:  `.v73ext/fidelidad.tsv` con los PUENTE ya corregidos en la bandeja, que la `ACTA 72` `72.4` firmo en cero que entr
-    126:  `cap_13` de Scott** despues de la TAREA 2, con los dos pasos fuera (`73.4`, `73.5`). No a ojo.
-    131:  parada**, y las dos ultimas caidas vivieron en celdas de tabla (`73.7`).
-    152:**Cero guiones largos y cero guiones medios. Deja correr el hook. Si algo contradice una regla vigente, paras y lo t
-
-**LECTURA, linea a linea:** `L101` esta **dentro de un bloque `$`**; `L1` (*los dos puentes*) lleva `73.5` y `73.1` en su misma
-linea; `L109` (*al volver cada uno*) es **una manera**, no una cuenta;
-`L48` (*tus cuatro `como`*) y `L49` (*tus ocho discutibles*) son filas de tabla con su seccion (`73.1` y `73.5`) en la misma linea;
-`L54` (*los dos puentes*, titulo de la TAREA `2`) lleva `73.6`; `L56` (*los dos pasos*) lleva `73.5` y `73.6`; `L126` (*los dos pasos
-fuera*) lleva `73.4` y `73.5`; `L131` (*las dos ultimas caidas*) lleva `73.7`; `L125` (*en cero que entran*) lleva `72.4`; `L73` (*las
-tres operaciones*) son las que la misma TAREA enumera; `L111` (*los dos*) son los dos nodos de un par; y `L152` (*cero guiones*) es
-**la meta de la frase fija de cierre**. **Ninguna linea de prosa trae una cifra de medida sin su bloque o su seccion en la misma
-linea: `R8` CUMPLIDO en el encargo de la `75`.**
-
-## 8. **LO QUE DEJO PARA MI TURNO NORMAL, ESCRITO ANTES DE VER EL REPORTE**
+## 9. **LO QUE DEJO PARA MI TURNO NORMAL, ESCRITO ANTES DE VER EL REPORTE**
 
 1. **`R5`** en su reporte, con `.v64ext/pegado64.py` y `.v64aud/normal/bloques_mudos.py` sacados otra vez de los originales y con la
-   cabecera cambiada a la `75`; y **`R9`** en su reporte: su `grep` de clausulas sobre la correccion de `dar_elogio` y sobre lo que
-   marque `T`, **contra el mio de las secciones `3` y `4`**, coincidencia a coincidencia.
-2. **La TAREA `2` con su reporte y con `git`**: el `gate` verde **despues de cada una** de las tres operaciones, la `--razon` de
-   `corregir` en su linea de la bitacora, y que ningun `insertar` se lanzo antes de cerrarla.
-3. **Las lineas nuevas de la bitacora, una a una** (seccion `5`): las de veredicto contra las vivas de `.v73ext/veredictos_listos.txt` y contra mis
-   clases selladas con `D73.9`, y **par a par contra las filas de mi barrido**; y la de `corregir`, contra su correccion.
-4. **Que cada `insertar` volvio con su `.fin` en `0`, en el orden de `.v73ext/orden.txt`, uno por vez y sin solaparse**, y que **ninguna
-   aduana levanto un vecino fuera de mi barrido**.
-5. **La muestra pineada de los `SANO`** que la `75` escribio en la bitacora, **con semilla `75`**, el tamanio de la seccion `7` de
-   `AUDITOR_FORJA.md` y su banda, releida contra mis clases selladas.
-6. **Las aristas par a par y por los dos lados, con sus ids**, contra las `3` de la seccion `5`, que aqui solo medi en cuentas (`R6`).
-7. **El censo con `git diff`, las guardas y el cierre estricto**, que tallara esta pagina: no tiene tablas, asi que un rojo en el suyo
-   sera suyo. Y el coste de su turno (seccion `1`) contra su clase (`D.55`).
-8. **`R8`** sobre el encargo de la `76`, medido antes de cerrarlo, con las cuentas en letra incluidas.
+   cabecera cambiada a la `76`; **y `R9`** en cada fila de su fidelidad y en cada cuenta de PUENTE, con su patron ensanchado contra
+   el mio.
+2. **El censo con su hash**: que la vuelta no movio el grafo, la bitacora, los censos ni la bandeja de Marquet, y que en la de Gerber
+   solo cambiaron las `6` fichas corregidas, **con `git diff`**; **y quien escribio `src/tablero.py` y `tests/test_aceptacion.py` a
+   las `06:45:09`** (seccion `2`, punto `3`), con la suite corrida por mi.
+3. **Mi fidelidad contra la suya, paso a paso**: mis `176` filas contra las suyas; sus correcciones contra mi lectura de sus textos
+   viejos (seccion `3`); **los `8` PUENTE que declaran las fichas contra los `9` de su asunto de commit**; y **el *despues del cambio*
+   del paso `4` de `cuantificar_impacto_innovacion_6_pasos`**, que es mi duda y su misma figura del paso `6`. **Si el marca PUENTE un
+   paso de hoy que yo lei `T` sin duda, y gana, la caida de lectura es mia.**
+4. **Mi barrido contra el suyo, fila dirigida a fila dirigida**, y **mis clases contra sus lineas de veredicto, par a par**; mis
+   aristas por lectura contra las suyas, **por par y no por cuenta** (secciones `4` a `6`), con **`d111`, `d108` y `d098`** y **la
+   pregunta de regla de la seccion `6`** delante.
+5. **Su orden contra mis restricciones** (seccion `7`).
+6. **La huella de las `22` fichas** que su cierre dice sellar, contra las mias de `.v76aud/huellas_al_barrer.txt`, tomadas antes de
+   barrer y comprobadas al recogerlo.
+7. **La muestra pineada de los SANO**: esta vuelta no escribe en la bitacora; los `SANO` de las `22` se muestrean cuando entren.
+8. **`R8` sobre el encargo de la `77`**, medido antes de cerrarlo, y **`R10`**: toda salida que pegue en el encargo, corrida despues de
+   mi ultima escritura en el registro que mide, o vuelta a correr antes del commit y comparada.
 
-## 9. **ESTA PAGINA CONTRA `R6`, `R7` Y LOS GUIONES, MEDIDA SOBRE ELLA MISMA**
+## 10. **ESTA PAGINA CONTRA `R6`, `R7` Y LOS GUIONES, MEDIDA SOBRE ELLA MISMA**
 
 El generador corre dos veces, y estos bloques de la segunda pasada leen la pagina que escribio la primera, identica salvo estos
 bloques. El primero cuenta las lineas de bloque `$` que empiezan por una clave de relacion; el segundo, con la copia de
-`.v74aud/r7_pagina.py`, cuenta las lineas de bloque que reparten una cifra en clases y cuantas traen su `suma`; el tercero cuenta
+`.v73aud/r7_pagina.py`, cuenta las lineas de bloque que reparten una cifra en clases y cuantas traen su `suma`; el tercero cuenta
 guiones largos y medios:
 
     $ grep -c -E "^    +(previos|siguientes|nodos_previos|nodos_siguientes)" docs/loop/APERTURA_CIEGA.md
     0
-    $ python .v75aud/r7_pagina.py
-    lineas de bloque que reparten en clases: 30 | por estado: {'con suma': 30} | suma: 30
+    $ python .v76aud/r7_pagina.py
+    lineas de bloque que reparten en clases: 13 | por estado: {'con suma': 13} | suma: 13
     $ grep -c -P "\x{2014}|\x{2013}" docs/loop/APERTURA_CIEGA.md
     0
