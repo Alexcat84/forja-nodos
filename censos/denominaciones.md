@@ -1267,3 +1267,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-26 | informar_cierre_jornada_conservar_propiedad_trabajo | nombre_largo | El guion que el jefe de departamento usa al terminar el dia para reportarle al segundo al mando, en vez de preguntarle que mas necesita de el | castellano | - |
 | 2026-09-26 | informar_cierre_jornada_conservar_propiedad_trabajo | otro_idioma | checkout | ingles | - |
 | 2026-09-26 | informar_cierre_jornada_conservar_propiedad_trabajo | otro_idioma | psychological ownership | ingles | - |
+| 2026-09-26 | aplicar_ejercicio_codigo_genetico_control | nombre_largo | El ejercicio de un retiro con el liderazgo senior para localizar donde vive la autoridad de decision en los documentos de politica y redactar el cambio que la mueve hacia abajo | castellano | - |
+| 2026-09-26 | aplicar_ejercicio_codigo_genetico_control | otro_idioma | genetic code for control | ingles | - |
+| 2026-09-26 | aplicar_ejercicio_codigo_genetico_control | otro_idioma | off-site | ingles | - |
