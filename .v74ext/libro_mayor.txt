@@ -1,0 +1,25 @@
+nodos de cap_13 que encuentro: 12   pasos: 212
+
+nodo                                                 pasos sede     quien lo firmo
+------------------------------------------------------------------------------------------------------------------------------------
+* medir_critica_respuesta_oyente_brujula                33 GRAFO    NADIE
+* elegir_pregunta_recurrente_pedir_critica              24 GRAFO    ACTA 38 (linea 31630 y 31634): los 56 de su tramo, 0 PUENTE, LA FIRMO
+  premiar_franqueza_hacer_escucha_tangible              20 GRAFO    ACTA 39 (linea 31987): los 58 de su tramo, 0 PUENTE, LA FIRMO
+* dar_elogio_disciplina_igual_critica                   20 GRAFO    NADIE
+* contar_cuatro_historias_propias_ver_hueco_intencio    17 GRAFO    NADIE
+* pedir_critica_primero_crear_seguridad_psicologica     17 GRAFO    ACTA 38 (linea 31630 y 31634): los 56 de su tramo, 0 PUENTE, LA FIRMO
+* practicar_triangulo_critica_tres_papeles              15 GRAFO    VUELTA 59 (SS.3.b), y la ACTA 58 la firma tras releer sus 15 citas
+* resolver_dudas_frecuentes_pedir_critica               15 GRAFO    ACTA 38 (linea 31630 y 31634) Y OTRA VEZ la vuelta 59 (SS.3.b)
+* mejorar_consciencia_propia_relacional_dos_practica    13 GRAFO    VUELTA 59 (SS.3.b), y la ACTA 58 la firma tras releer sus 13 citas
+  escuchar_entender_critica_dominar_defensa             13 GRAFO    ACTA 39 (linea 31987): los 58 de su tramo, 0 PUENTE, LA FIRMO
+  integrar_peticion_critica_rutina_existente            13 GRAFO    ACTA 39 (linea 31987): los 58 de su tramo, 0 PUENTE, LA FIRMO
+  abrazar_incomodidad_silencio_contar_seis              12 GRAFO    ACTA 39 (linea 31987) y ACTA 40 (7.2): los 58 y los 12, 0 PUENTE
+
+(*) los ocho candidatos que componen el 154 de `d006` (ACTA 39, linea 31857: NO releidos: 8 candidatos, 154 pasos)
+
+el 154, recontado por mi sobre los ficheros : 154
+  de esos, ya firmados por alguna acta      : 84  (mejorar_consciencia_propia, practicar_triangulo_critic, pedir_critica_primero_crea, elegir_pregunta_recurrente, resolver_dudas_frecuentes_)
+  de esos, firmados HOY por la vuelta 59    : 43
+  SIN FIRMA DE NADIE, hoy incluido          : 70  (contar_cuatro_historias_propias_ve, dar_elogio_disciplina_igual_critic, medir_critica_respuesta_oyente_bru)
+
+cap_13 ENTERO sin firma de nadie            : 70 de 212 pasos

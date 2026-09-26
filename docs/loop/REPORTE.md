@@ -64163,7 +64163,7 @@ falte es exactamente lo que no tiene fila.
 |---|---|---|
 | `T1` | los registros de la `ACTA 72` | **CERRADA** (`74.1`) |
 | `T2` | `d078` y `d077`, las deudas de las fichas de Grove | **CERRADA** (`74.2`): las dos pagadas, la vuelta declarada de saneamiento |
-| `T3` | `d084` y `d006`: la fidelidad de los tres nodos de `cap_13` de Scott sin firma | |
+| `T3` | `d084` y `d006`: la fidelidad de los tres nodos de `cap_13` de Scott sin firma | **CERRADA** (`74.3`): `70` filas, `1` PUENTE traido sin tocar el grafo, las dos pagadas a falta de la firma de la `ACTA 73` |
 | `T4` | el cierre: censo, huellas, `D.61`, `R5`, guardas, commit | |
 
 ## 74.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
@@ -64339,4 +64339,123 @@ de su barrido. **Se paga entera** (`D74.2`). El `como`, entero, en `.v74ext/como
 
 **Los dos `como` quedan en `docs/loop/DEUDA.jsonl` letra a letra iguales a sus ficheros** (comprobado leyendo el registro y
 comparando). **`T2` CERRADA.**
+
+## 74.D ter. **LOS DISCUTIBLES DE LA TAREA 3, MARCADOS AL ESCRIBIR CADA FILA** (`EXTRACTOR.md` 8)
+
+Se marcaron dentro de `.v74ext/fidelidad.tsv` en el acto de escribir cada fila (el guion que la escribe, `.v74ext/escribir_fidelidad.py`,
+los lleva en su lista), antes de correr `citas.sh` ni `contar_fidelidad.py`; aqui se juntan por numero.
+
+| | que | por que lo marco |
+|---|---|---|
+| `D74.4` | **`contar_cuatro_historias_propias_ver_hueco_intencion` paso `3` va `T`**: *Cuentala a tu equipo*, donde `L45` dice *If you tell your team your story* | el condicional es la premisa del propio ejercicio, que es contar historias al equipo (`L43`, y el *share them with their teams* de `L55`); no es un *perhaps* comido. Si el auditor lo lee como posibilidad convertida en orden (`D71.9`), es un `P` y el nodo sube a `1` de `17` |
+| `D74.5` | **el mismo nodo, paso `8`, va `T`**: *Cuenta la tuya y no la del libro*, donde `L49` dice *Your story is by definition better than the story Kim tells* | el libro compara y el paso manda; la misma orden la escribe el libro para la historia siguiente en `L51` (*Don’t tell Kim’s Bob story from Chapter Two, tell yours*). Si se lee como orden puesta por mi, es un `P` mas |
+| `D74.6` | **`dar_elogio_disciplina_igual_critica` paso `17` va `P`**: *lo que el texto ha medido de ese ejercicio*, donde `L283` dice *We’ve found* y *We’ve heard* | el verbo es del marco del paso y no de lo que manda, pero atribuye al libro una medida que el libro no dice haber hecho, y por `62.5` la clausula reescrita cuenta. Si el auditor lo lee como verbo de marco sin contenido (`D73.6`), es `T` y el nodo baja a `0` de `20` |
+| `D74.7` | **`medir_critica_respuesta_oyente_brujula` pasos `4`, `11` y `32` van `T`**: tres *can* del libro en imperativo (*You can, however, use* de `L295`, *can help keep you out* de `L301`, *It can also help to bring* de `L321`) | el *can* de `L295` se opone a que no haya palabras magicas y la frase siguiente ya va en imperativo; el de `L301` va en el paso como fin (*para no caer*); el de `L321` lo conserva el paso en su letra (*lo otro que el texto dice que ayuda*). Si se leen como posibilidad convertida en orden, son `3` `P` |
+| `D74.8` | **el mismo nodo, paso `14`, va `T`**: *que es la via que el texto da*, donde `L305` dice *One way* | el paso manda lo mismo que el libro y no excluye otra via (el `19` trae la del *How can I help?*), pero el articulo es mio. Si se lee como clausula reescrita, es un `P` mas |
+
+## 74.3. TAREA 3: `d084` Y `d006`, LA FIDELIDAD DE LOS TRES NODOS DE `cap_13` DE SCOTT QUE NADIE HABIA FIRMADO (`D.30`)
+
+`fuentes/scott_radical_candor/cap_13.md` leido **entero** (`347` lineas por `wc -l`), y **cada paso de los tres nodos marcado `T` o `P`
+con su linea**, una fila por paso, en `.v74ext/fidelidad.tsv`. Los pasos, leidos del grafo, en `.v74ext/pasos_tres.txt`. **Ningun nodo
+se ha tocado**: esta tarea solo escribe en `.v74ext/`.
+
+### 74.3.1. Las citas, por instrumento (`D.35`)
+
+`.v74ext/citas.sh`, copia de `.v73ext/citas.sh` con la ruta cambiada y el capitulo fijo en `cap_13` de Scott, porque los tres nodos
+viven en el grafo (su cabecera lo dice). Salida entera en `.v74ext/citas_fidelidad.txt`; su ultima linea, y las de las filas
+discutibles (`.v74ext/citas_discutibles.txt`):
+
+    $ bash .v74ext/citas.sh | tail -1
+    filas: 70 | en su linea declarada: 70 | fuera: 0
+    $ cat .v74ext/citas_discutibles.txt
+    $ grep -n -o -F 'If you tell your team your story and what it means to you' fuentes/scott_radical_candor/cap_13.md    # contar_cuatro_historias_propias_ver_hueco_intencion paso 3
+    45:If you tell your team your story and what it means to you
+    $ grep -n -o -F 'Your story is by definition better than the story Kim tells' fuentes/scott_radical_candor/cap_13.md    # contar_cuatro_historias_propias_ver_hueco_intencion paso 8
+    49:Your story is by definition better than the story Kim tells
+    $ grep -n -o -F 'We’ve found that people walk away from this exercise feeling seen, c' fuentes/scott_radical_candor/cap_13.md    # dar_elogio_disciplina_igual_critica paso 17
+    283:We’ve found that people walk away from this exercise feeling seen, c
+    $ grep -n -o -F 'use the Radical Candor framework like a compass' fuentes/scott_radical_candor/cap_13.md    # medir_critica_respuesta_oyente_brujula paso 4
+    295:use the Radical Candor framework like a compass
+    $ grep -n -o -F 'Using the framework like a compass can help keep you out of the Ruinou' fuentes/scott_radical_candor/cap_13.md    # medir_critica_respuesta_oyente_brujula paso 11
+    301:Using the framework like a compass can help keep you out of the Ruinou
+    $ grep -n -o -F 'One way to show you care when confronted with negative emotions is to ' fuentes/scott_radical_candor/cap_13.md    # medir_critica_respuesta_oyente_brujula paso 14
+    305:One way to show you care when confronted with negative emotions is to
+    $ grep -n -o -F 'It can also help to bring several specific examples of the problem' fuentes/scott_radical_candor/cap_13.md    # medir_critica_respuesta_oyente_brujula paso 32
+    321:It can also help to bring several specific examples of the problem
+
+### 74.3.2. `PASOS INVENTADOS`, una fila por nodo y el total
+
+`.v74ext/contar_fidelidad.py`, copia de `.v73ext/contar_fidelidad.py` que lee los pasos de `dataset/nodos.jsonl` (su cabecera lo dice):
+
+<!-- TALLADO: parcial salida=.v74ext/contar_fidelidad.txt -->
+
+    $ python .v74ext/contar_fidelidad.py
+    candidato                                                    cap     pasos   T   P
+    contar_cuatro_historias_propias_ver_hueco_intencion          cap_13     17  17   0
+    dar_elogio_disciplina_igual_critica                          cap_13     20  19   1
+    medir_critica_respuesta_oyente_brujula                       cap_13     33  33   0
+    pasos sin fila: 0 [] | filas sin paso: 0 []
+
+    PASOS INVENTADOS, los tres nodos de cap_13 de scott_radical_candor que nombra d084 (COPIA de la vuelta 74 de .v73ext/contar_fidelidad.py)
+    cap_13  candidatos 3  pasos 70  T 69  P 1  inventado 1,4 por ciento
+    peor capitulo: cap_13, 1 de 70, 1,4 por ciento; por encima del 10: ninguno
+
+| nodo | pasos | `T` | `P` |
+|---|---:|---:|---:|
+| `contar_cuatro_historias_propias_ver_hueco_intencion` | `17` | `17` | `0` |
+| `dar_elogio_disciplina_igual_critica` | `20` | `19` | `1` |
+| `medir_critica_respuesta_oyente_brujula` | `33` | `33` | `0` |
+
+**Los tres, `1` de `70`, el `1,4` por ciento, y por encima del `10`: ninguno** (las dos ultimas lineas del bloque). El total es el de los `70` pasos que nadie habia firmado; los otros pasos del capitulo los firmaron las
+actas que nombra el libro mayor (`74.3.4`), y **la cifra de `cap_13` entero la firma la `ACTA 73`**, que es quien firma (encargo, TAREA
+3.3). No la compongo yo con el `4` de `212` de `d006`, que es de un acta y no lo he medido hoy.
+
+### 74.3.3. **EL PUENTE, TRAIDO Y NO CORREGIDO** (encargo, TAREA 3.2)
+
+    $ python -c "import json; ids=['dar_elogio_disciplina_igual_critica']; [print(17, d['pasos_accionables'][16]) for d in map(json.loads, open('dataset/nodos.jsonl', encoding='utf-8')) if d['id'] in ids]"
+    17 Cuenta con lo que el texto ha medido de ese ejercicio: la gente sale sintiendose vista, conectada e inspirada, y dicen cosas como llevo anios haciendo esto y no sabia que nadie se hubiera dado cuenta, lo que lleva a mas implicacion cuando vuelven a la oficina.
+    $ sed -n 283p fuentes/scott_radical_candor/cap_13.md
+    Pair up with a colleague and share one specific piece of praise with each other. We’ve found that people walk away from this exercise feeling seen, connected, and inspired. We’ve heard things like, “I’ve been doing X, Y, Z for years and didn’t know anyone noticed!” leading to more engagement when they are back at the office.
+
+| nodo | paso | lo que dice | lo que dice el libro | correccion que propongo |
+|---|---:|---|---|---|
+| `dar_elogio_disciplina_igual_critica` | `17` | *Cuenta con lo que el texto **ha medido** de ese ejercicio* | `L283`: *We’ve found* y *We’ve heard*, lo que vieron en sus talleres | *Cuenta con lo que el texto **dice haber visto** en ese ejercicio*, y el resto del paso igual |
+
+**No toco `dataset/`, ni la bitacora, ni los censos.** Es la guarda de fidelidad `D.30` con un puente en el grafo, y **lo adjudica la
+`ACTA 73` antes de que nadie mueva un dato**. Es mi `D74.6`: si el auditor lo lee como verbo de marco, no hay nada que mover.
+
+### 74.3.4. El libro mayor de la `ACTA 58` `58.2.d`, vuelto a correr al final
+
+Salida entera en `.v74ext/libro_mayor.txt`; sus lineas de cuenta:
+
+<!-- TALLADO: parcial salida=.v74ext/libro_mayor.txt -->
+
+    $ python .v60aud/libro_mayor_cap13.py | tail -7
+
+    el 154, recontado por mi sobre los ficheros : 154
+      de esos, ya firmados por alguna acta      : 84  (mejorar_consciencia_propia, practicar_triangulo_critic, pedir_critica_primero_crea, elegir_pregunta_recurrente, resolver_dudas_frecuentes_)
+      de esos, firmados HOY por la vuelta 59    : 43
+      SIN FIRMA DE NADIE, hoy incluido          : 70  (contar_cuatro_historias_propias_ve, dar_elogio_disciplina_igual_critic, medir_critica_respuesta_oyente_bru)
+
+    cap_13 ENTERO sin firma de nadie            : 70 de 212 pasos
+
+**Mi fichero cubre, uno por uno, los `70` pasos que su linea *SIN FIRMA DE NADIE* cuenta**: son los de los tres nodos que esa linea
+nombra, y `contar_fidelidad.py` da `0` pasos sin fila y `0` filas sin paso contra el grafo. El instrumento sigue diciendo `NADIE` porque
+sus firmas son de acta y la de estos tres la pone la `ACTA 73`.
+
+### 74.3.5. Los pagos
+
+<!-- TALLADO: parcial salida=.v74ext/deuda_t3.txt -->
+
+    $ python scripts/deuda.py --pagar d084 --vuelta 74 --como "<.v74ext/como_d084.txt>"
+    PAGADA d084 en la vuelta 74
+    $ python scripts/deuda.py --pagar d006 --vuelta 74 --como "<.v74ext/como_d006.txt>"
+    PAGADA d006 en la vuelta 74
+    $ python scripts/deuda.py --clase 75
+    LIBRE
+      van 1 de 5 desde la ultima de saneamiento (la 74), con 51 deuda(s) esperando
+
+**Los dos `como` quedan en `docs/loop/DEUDA.jsonl` letra a letra iguales a sus ficheros** (comprobado leyendo el registro). **La `75`
+sale `LIBRE`, `1` de `5`, con `51` deudas esperando**: las `55` de la apertura (`74.0`) menos las cuatro pagadas. **`d084` y `d006`
+quedan pagadas a falta de la firma de la `ACTA 73`**, como manda el encargo. **`T3` CERRADA.**
 

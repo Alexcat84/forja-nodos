@@ -1,0 +1,141 @@
+$ grep -n -o -F 'Storytelling is a great way to develop both self-awareness and relatio' fuentes/scott_radical_candor/cap_13.md    # contar_cuatro_historias_propias_ver_hueco_intencion paso 1 
+43:Storytelling is a great way to develop both self-awareness and relatio
+$ grep -n -o -F 'First, think of your Radical Candor story' fuentes/scott_radical_candor/cap_13.md    # contar_cuatro_historias_propias_ver_hueco_intencion paso 2 
+45:First, think of your Radical Candor story
+$ grep -n -o -F 'If you tell your team your story and what it means to you' fuentes/scott_radical_candor/cap_13.md    # contar_cuatro_historias_propias_ver_hueco_intencion paso 3 
+45:If you tell your team your story and what it means to you
+$ grep -n -o -F 'you are doing two important things at once' fuentes/scott_radical_candor/cap_13.md    # contar_cuatro_historias_propias_ver_hueco_intencion paso 4 
+45:you are doing two important things at once
+$ grep -n -o -F 'The next three stories' fuentes/scott_radical_candor/cap_13.md    # contar_cuatro_historias_propias_ver_hueco_intencion paso 5 
+47:The next three stories
+$ grep -n -o -F 'Think about your Obnoxious Aggression story' fuentes/scott_radical_candor/cap_13.md    # contar_cuatro_historias_propias_ver_hueco_intencion paso 6 
+49:Think about your Obnoxious Aggression story
+$ grep -n -o -F 'Dig deep here' fuentes/scott_radical_candor/cap_13.md    # contar_cuatro_historias_propias_ver_hueco_intencion paso 7 
+49:Dig deep here
+$ grep -n -o -F 'Your story is by definition better than the story Kim tells' fuentes/scott_radical_candor/cap_13.md    # contar_cuatro_historias_propias_ver_hueco_intencion paso 8 
+49:Your story is by definition better than the story Kim tells
+$ grep -n -o -F 'It will help you understand the impact you have on others' fuentes/scott_radical_candor/cap_13.md    # contar_cuatro_historias_propias_ver_hueco_intencion paso 9 
+49:It will help you understand the impact you have on others
+$ grep -n -o -F 'Next, think about your Ruinous Empathy story' fuentes/scott_radical_candor/cap_13.md    # contar_cuatro_historias_propias_ver_hueco_intencion paso 10 
+51:Next, think about your Ruinous Empathy story
+$ grep -n -o -F 'Don’t tell Kim’s Bob story from Chapter Two, tell yours' fuentes/scott_radical_candor/cap_13.md    # contar_cuatro_historias_propias_ver_hueco_intencion paso 11 
+51:Don’t tell Kim’s Bob story from Chapter Two, tell yours
+$ grep -n -o -F 'The regret you feel recalling the incident' fuentes/scott_radical_candor/cap_13.md    # contar_cuatro_historias_propias_ver_hueco_intencion paso 12 
+51:The regret you feel recalling the incident
+$ grep -n -o -F 'Finally, and hardest of all, think of your Manipulative Insincerity st' fuentes/scott_radical_candor/cap_13.md    # contar_cuatro_historias_propias_ver_hueco_intencion paso 13 
+53:Finally, and hardest of all, think of your Manipulative Insincerity st
+$ grep -n -o -F 'It’s really hard to see yourself as backstabbing' fuentes/scott_radical_candor/cap_13.md    # contar_cuatro_historias_propias_ver_hueco_intencion paso 14 
+53:It’s really hard to see yourself as backstabbing
+$ grep -n -o -F 'When people unpack their own stories, and share them with their teams' fuentes/scott_radical_candor/cap_13.md    # contar_cuatro_historias_propias_ver_hueco_intencion paso 15 
+55:When people unpack their own stories, and share them with their teams
+$ grep -n -o -F 'Awareness is the first step toward change' fuentes/scott_radical_candor/cap_13.md    # contar_cuatro_historias_propias_ver_hueco_intencion paso 16 
+55:Awareness is the first step toward change
+$ grep -n -o -F 'Every person is different' fuentes/scott_radical_candor/cap_13.md    # contar_cuatro_historias_propias_ver_hueco_intencion paso 17 
+57:Every person is different
+$ grep -n -o -F 'criticism is like your brake and praise is like your accelerator' fuentes/scott_radical_candor/cap_13.md    # dar_elogio_disciplina_igual_critica paso 1 
+251:criticism is like your brake and praise is like your accelerator
+$ grep -n -o -F 'reluctant to praise others because it’s much easier to look' fuentes/scott_radical_candor/cap_13.md    # dar_elogio_disciplina_igual_critica paso 2 
+267:reluctant to praise others because it’s much easier to look
+$ grep -n -o -F 'Other times people use praise as a weapon' fuentes/scott_radical_candor/cap_13.md    # dar_elogio_disciplina_igual_critica paso 3 
+269:Other times people use praise as a weapon
+$ grep -n -o -F 'Good praise is specific and sincere, and inspires others rather than m' fuentes/scott_radical_candor/cap_13.md    # dar_elogio_disciplina_igual_critica paso 4 
+269:Good praise is specific and sincere, and inspires others rather than m
+$ grep -n -o -F 'The focus on praise requires real discipline' fuentes/scott_radical_candor/cap_13.md    # dar_elogio_disciplina_igual_critica paso 5 
+271:The focus on praise requires real discipline
+$ grep -n -o -F 'very often the thing that has been bothering you has been bothering yo' fuentes/scott_radical_candor/cap_13.md    # dar_elogio_disciplina_igual_critica paso 6 
+271:very often the thing that has been bothering you has been bothering yo
+$ grep -n -o -F 'So focus on the good stuff' fuentes/scott_radical_candor/cap_13.md    # dar_elogio_disciplina_igual_critica paso 7 
+271:So focus on the good stuff
+$ grep -n -o -F 'praise helps people focus on their strengths' fuentes/scott_radical_candor/cap_13.md    # dar_elogio_disciplina_igual_critica paso 8 
+273:praise helps people focus on their strengths
+$ grep -n -o -F 'Sometimes, you have to make sure a person gets to a level of proficien' fuentes/scott_radical_candor/cap_13.md    # dar_elogio_disciplina_igual_critica paso 9 
+273:Sometimes, you have to make sure a person gets to a level of proficien
+$ grep -n -o -F 'you get more bang for the buck out of focusing on strengths than weakn' fuentes/scott_radical_candor/cap_13.md    # dar_elogio_disciplina_igual_critica paso 10 
+273:you get more bang for the buck out of focusing on strengths than weakn
+$ grep -n -o -F 'Praise reveals what works and makes it usable, repeatable' fuentes/scott_radical_candor/cap_13.md    # dar_elogio_disciplina_igual_critica paso 11 
+273:Praise reveals what works and makes it usable, repeatable
+$ grep -n -o -F 'borrowed from Karen Sipprell' fuentes/scott_radical_candor/cap_13.md    # dar_elogio_disciplina_igual_critica paso 12 
+277:borrowed from Karen Sipprell
+$ grep -n -o -F 'When you’re vague with praise, it is just as likely to leave a perso' fuentes/scott_radical_candor/cap_13.md    # dar_elogio_disciplina_igual_critica paso 13 
+279:When you’re vague with praise, it is just as likely to leave a perso
+$ grep -n -o -F 'Specific praise helps the person and the team understand what success ' fuentes/scott_radical_candor/cap_13.md    # dar_elogio_disciplina_igual_critica paso 14 
+279:Specific praise helps the person and the team understand what success 
+$ grep -n -o -F 'the guidelines for giving Radically Candid feedback work for both prai' fuentes/scott_radical_candor/cap_13.md    # dar_elogio_disciplina_igual_critica paso 15 
+279:the guidelines for giving Radically Candid feedback work for both prai
+$ grep -n -o -F 'Pair up with a colleague and share one specific piece of praise with e' fuentes/scott_radical_candor/cap_13.md    # dar_elogio_disciplina_igual_critica paso 16 
+283:Pair up with a colleague and share one specific piece of praise with e
+$ grep -n -o -F 'We’ve found that people walk away from this exercise feeling seen, c' fuentes/scott_radical_candor/cap_13.md    # dar_elogio_disciplina_igual_critica paso 17 
+283:We’ve found that people walk away from this exercise feeling seen, c
+$ grep -n -o -F 'It’s actually not hard to find things to praise each other for' fuentes/scott_radical_candor/cap_13.md    # dar_elogio_disciplina_igual_critica paso 18 
+285:It’s actually not hard to find things to praise each other for
+$ grep -n -o -F 'Thanks for asking that question about being late for meetings' fuentes/scott_radical_candor/cap_13.md    # dar_elogio_disciplina_igual_critica paso 19 
+285:Thanks for asking that question about being late for meetings
+$ grep -n -o -F 'While the primary purpose of praise is to show people what direction w' fuentes/scott_radical_candor/cap_13.md    # dar_elogio_disciplina_igual_critica paso 20 
+287:While the primary purpose of praise is to show people what direction w
+$ grep -n -o -F 'Radical Candor gets measured not at your mouth but at the other person' fuentes/scott_radical_candor/cap_13.md    # medir_critica_respuesta_oyente_brujula paso 1 
+291:Radical Candor gets measured not at your mouth but at the other person
+$ grep -n -o -F 'there are no words that serve simultaneously as a scalpel and emotiona' fuentes/scott_radical_candor/cap_13.md    # medir_critica_respuesta_oyente_brujula paso 2 
+293:there are no words that serve simultaneously as a scalpel and emotiona
+$ grep -n -o -F 'Sometimes Radical Candor will sting a little bit' fuentes/scott_radical_candor/cap_13.md    # medir_critica_respuesta_oyente_brujula paso 3 
+293:Sometimes Radical Candor will sting a little bit
+$ grep -n -o -F 'use the Radical Candor framework like a compass' fuentes/scott_radical_candor/cap_13.md    # medir_critica_respuesta_oyente_brujula paso 4 
+295:use the Radical Candor framework like a compass
+$ grep -n -o -F 'Pay close attention to the other person’s response to what you’ve ' fuentes/scott_radical_candor/cap_13.md    # medir_critica_respuesta_oyente_brujula paso 5 
+295:Pay close attention to the other person’s response to what you’ve 
+$ grep -n -o -F 'The way you listen is more important than the way you talk' fuentes/scott_radical_candor/cap_13.md    # medir_critica_respuesta_oyente_brujula paso 6 
+297:The way you listen is more important than the way you talk
+$ grep -n -o -F 'When offering Compassionate Candor, start gently and then gauge the ot' fuentes/scott_radical_candor/cap_13.md    # medir_critica_respuesta_oyente_brujula paso 7 
+297:When offering Compassionate Candor, start gently and then gauge the ot
+$ grep -n -o -F 'You cannot do this if you are on your phone or on your computer' fuentes/scott_radical_candor/cap_13.md    # medir_critica_respuesta_oyente_brujula paso 8 
+297:You cannot do this if you are on your phone or on your computer
+$ grep -n -o -F 'If the person you’re talking to seems sad, this is your cue' fuentes/scott_radical_candor/cap_13.md    # medir_critica_respuesta_oyente_brujula paso 9 
+299:If the person you’re talking to seems sad, this is your cue
+$ grep -n -o -F 'This is hard because when confronted with someone who seems upset' fuentes/scott_radical_candor/cap_13.md    # medir_critica_respuesta_oyente_brujula paso 10 
+299:This is hard because when confronted with someone who seems upset
+$ grep -n -o -F 'Using the framework like a compass can help keep you out of the Ruinou' fuentes/scott_radical_candor/cap_13.md    # medir_critica_respuesta_oyente_brujula paso 11 
+301:Using the framework like a compass can help keep you out of the Ruinou
+$ grep -n -o -F 'when you get an angry response from the person you’re talking to' fuentes/scott_radical_candor/cap_13.md    # medir_critica_respuesta_oyente_brujula paso 12 
+303:when you get an angry response from the person you’re talking to
+$ grep -n -o -F 'This is hard because when the other person is angry' fuentes/scott_radical_candor/cap_13.md    # medir_critica_respuesta_oyente_brujula paso 13 
+303:This is hard because when the other person is angry
+$ grep -n -o -F 'One way to show you care when confronted with negative emotions is to ' fuentes/scott_radical_candor/cap_13.md    # medir_critica_respuesta_oyente_brujula paso 14 
+305:One way to show you care when confronted with negative emotions is to 
+$ grep -n -o -F 'Don’t use my phrasing, use your own words' fuentes/scott_radical_candor/cap_13.md    # medir_critica_respuesta_oyente_brujula paso 15 
+305:Don’t use my phrasing, use your own words
+$ grep -n -o -F 'Often just naming an emotion can help a person feel seen' fuentes/scott_radical_candor/cap_13.md    # medir_critica_respuesta_oyente_brujula paso 16 
+305:Often just naming an emotion can help a person feel seen
+$ grep -n -o -F 'you might misunderstand the emotion you’re seeing' fuentes/scott_radical_candor/cap_13.md    # medir_critica_respuesta_oyente_brujula paso 17 
+307:you might misunderstand the emotion you’re seeing
+$ grep -n -o -F 'And whatever you do, don’t judge the emotion' fuentes/scott_radical_candor/cap_13.md    # medir_critica_respuesta_oyente_brujula paso 18 
+307:And whatever you do, don’t judge the emotion
+$ grep -n -o -F 'When all else fails, a simple response to negative emotions is to ask' fuentes/scott_radical_candor/cap_13.md    # medir_critica_respuesta_oyente_brujula paso 19 
+307:When all else fails, a simple response to negative emotions is to ask
+$ grep -n -o -F 'They are defensive or oblivious or hopelessly optimistic or overconfid' fuentes/scott_radical_candor/cap_13.md    # medir_critica_respuesta_oyente_brujula paso 20 
+309:They are defensive or oblivious or hopelessly optimistic or overconfid
+$ grep -n -o -F 'Being extremely clear can feel harsh' fuentes/scott_radical_candor/cap_13.md    # medir_critica_respuesta_oyente_brujula paso 21 
+309:Being extremely clear can feel harsh
+$ grep -n -o -F 'One thing that helps in these moments is to focus on the long term' fuentes/scott_radical_candor/cap_13.md    # medir_critica_respuesta_oyente_brujula paso 22 
+311:One thing that helps in these moments is to focus on the long term
+$ grep -n -o -F 'Sometimes when someone is shutting down it’s because they disagree' fuentes/scott_radical_candor/cap_13.md    # medir_critica_respuesta_oyente_brujula paso 23 
+313:Sometimes when someone is shutting down it’s because they disagree
+$ grep -n -o -F 'There’s a risk that when you do this, the other person will come bac' fuentes/scott_radical_candor/cap_13.md    # medir_critica_respuesta_oyente_brujula paso 24 
+313:There’s a risk that when you do this, the other person will come bac
+$ grep -n -o -F 'A useful mantra for giving criticism is listen-challenge-commit' fuentes/scott_radical_candor/cap_13.md    # medir_critica_respuesta_oyente_brujula paso 25 
+313:A useful mantra for giving criticism is listen-challenge-commit
+$ grep -n -o -F 'Just to make sure we’re on the same page, can you tell me what you j' fuentes/scott_radical_candor/cap_13.md    # medir_critica_respuesta_oyente_brujula paso 26 
+315:Just to make sure we’re on the same page, can you tell me what you j
+$ grep -n -o -F 'I don’t feel like I’m being heard' fuentes/scott_radical_candor/cap_13.md    # medir_critica_respuesta_oyente_brujula paso 27 
+315:I don’t feel like I’m being heard
+$ grep -n -o -F 'May I be much more direct with you' fuentes/scott_radical_candor/cap_13.md    # medir_critica_respuesta_oyente_brujula paso 28 
+315:May I be much more direct with you
+$ grep -n -o -F 'ONE MISTAKE THAT people often make is to draw attention to consequence' fuentes/scott_radical_candor/cap_13.md    # medir_critica_respuesta_oyente_brujula paso 29 
+319:ONE MISTAKE THAT people often make is to draw attention to consequence
+$ grep -n -o -F 'You’re trying to engage the person’s intrinsic desire to improve' fuentes/scott_radical_candor/cap_13.md    # medir_critica_respuesta_oyente_brujula paso 30 
+319:You’re trying to engage the person’s intrinsic desire to improve
+$ grep -n -o -F 'if the problem is going to cause the person to be put on a performance' fuentes/scott_radical_candor/cap_13.md    # medir_critica_respuesta_oyente_brujula paso 31 
+319:if the problem is going to cause the person to be put on a performance
+$ grep -n -o -F 'It can also help to bring several specific examples of the problem' fuentes/scott_radical_candor/cap_13.md    # medir_critica_respuesta_oyente_brujula paso 32 
+321:It can also help to bring several specific examples of the problem
+$ grep -n -o -F 'If you get interrupted after the first one with excuses' fuentes/scott_radical_candor/cap_13.md    # medir_critica_respuesta_oyente_brujula paso 33 
+321:If you get interrupted after the first one with excuses
+filas: 70 | en su linea declarada: 70 | fuera: 0

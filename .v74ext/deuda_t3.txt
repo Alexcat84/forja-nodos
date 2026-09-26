@@ -1,0 +1,7 @@
+$ python scripts/deuda.py --pagar d084 --vuelta 74 --como "<.v74ext/como_d084.txt>"
+PAGADA d084 en la vuelta 74
+$ python scripts/deuda.py --pagar d006 --vuelta 74 --como "<.v74ext/como_d006.txt>"
+PAGADA d006 en la vuelta 74
+$ python scripts/deuda.py --clase 75
+LIBRE
+  van 1 de 5 desde la ultima de saneamiento (la 74), con 51 deuda(s) esperando

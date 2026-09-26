@@ -1,0 +1,14 @@
+$ grep -n -o -F 'If you tell your team your story and what it means to you' fuentes/scott_radical_candor/cap_13.md    # contar_cuatro_historias_propias_ver_hueco_intencion paso 3 
+45:If you tell your team your story and what it means to you
+$ grep -n -o -F 'Your story is by definition better than the story Kim tells' fuentes/scott_radical_candor/cap_13.md    # contar_cuatro_historias_propias_ver_hueco_intencion paso 8 
+49:Your story is by definition better than the story Kim tells
+$ grep -n -o -F 'We’ve found that people walk away from this exercise feeling seen, c' fuentes/scott_radical_candor/cap_13.md    # dar_elogio_disciplina_igual_critica paso 17 
+283:We’ve found that people walk away from this exercise feeling seen, c
+$ grep -n -o -F 'use the Radical Candor framework like a compass' fuentes/scott_radical_candor/cap_13.md    # medir_critica_respuesta_oyente_brujula paso 4 
+295:use the Radical Candor framework like a compass
+$ grep -n -o -F 'Using the framework like a compass can help keep you out of the Ruinou' fuentes/scott_radical_candor/cap_13.md    # medir_critica_respuesta_oyente_brujula paso 11 
+301:Using the framework like a compass can help keep you out of the Ruinou
+$ grep -n -o -F 'One way to show you care when confronted with negative emotions is to ' fuentes/scott_radical_candor/cap_13.md    # medir_critica_respuesta_oyente_brujula paso 14 
+305:One way to show you care when confronted with negative emotions is to 
+$ grep -n -o -F 'It can also help to bring several specific examples of the problem' fuentes/scott_radical_candor/cap_13.md    # medir_critica_respuesta_oyente_brujula paso 32 
+321:It can also help to bring several specific examples of the problem
