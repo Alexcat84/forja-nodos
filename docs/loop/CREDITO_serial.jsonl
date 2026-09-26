@@ -368,3 +368,8 @@
 {"cae": false, "cita": "ACTA 77, secciones 77.0, 77.4 y 77.7", "especie": "DATO MOVIDO", "linea": "serial", "racha": "0 de 2", "tanda": "ACTA 77", "tipo": "tanda", "vuelta": 78}
 {"cae": false, "cita": "ACTA 77, secciones 77.2 y 77.7", "especie": "REPORTE", "linea": "serial", "racha": "0 de 3", "tanda": "ACTA 77", "tipo": "tanda", "vuelta": 78}
 {"cae": false, "cita": "ACTA 77, secciones 77.7 y 77.9", "especie": "AUDITOR", "linea": "serial", "racha": "0 de 3", "tanda": "ACTA 77", "tipo": "tanda", "vuelta": 78}
+{"cae": false, "cita": "ACTA 78, secciones 78.3 y 78.7", "especie": "CLASE", "linea": "serial", "racha": "0 de 2", "tanda": "ACTA 78", "tipo": "tanda", "vuelta": 79}
+{"cae": false, "cita": "ACTA 78, secciones 78.0 y 78.7", "especie": "CIFRA PUBLICADA", "linea": "serial", "racha": "0 de 2", "tanda": "ACTA 78", "tipo": "tanda", "vuelta": 79}
+{"cae": false, "cita": "ACTA 78, secciones 78.0, 78.1 y 78.7", "especie": "DATO MOVIDO", "linea": "serial", "racha": "0 de 2", "tanda": "ACTA 78", "tipo": "tanda", "vuelta": 79}
+{"cae": false, "cita": "ACTA 78, secciones 78.2 y 78.7 (una caida registrada que no acumula, en bloque)", "especie": "REPORTE", "linea": "serial", "racha": "0 de 3", "tanda": "ACTA 78", "tipo": "tanda", "vuelta": 79}
+{"cae": false, "cita": "ACTA 78, secciones 78.7 y 78.9", "especie": "AUDITOR", "linea": "serial", "racha": "0 de 3", "tanda": "ACTA 78", "tipo": "tanda", "vuelta": 79}

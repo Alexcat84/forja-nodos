@@ -1,0 +1,76 @@
+  L1 S ['80', '20', '78', '183', '104', '78', '78.3', '78.10'] [] | # ENCARGO DE LA VUELTA 80: **LAS `20` FICHAS DE MARQUET DENTRO, UNA POR VEZ, EN SU ORDEN, CON LAS LI
+  L3 - ['11', '78', '79'] [] | *Linea **serial** (`extraccion-mundo-11`). Escrito por el auditor al cerrar la `ACTA 78`, que audito
+  L4 - ['1.4'] [] | `AUDITOR_FORJA.md` seccion `1.4`. **Toda cifra de medida de esta pagina va dentro de un bloque `$` c
+  L5 S ['78', '77', '8', '78', '78.11'] [] | su misma linea la seccion de la `ACTA 78` o de la `ACTA 77` donde esta pegada** (`R8`, `ACTA 78` `78
+  L14 - ['0'] [] | ## 0. **LA CLASE, EL LIBRO Y LA REGLA DEL TURNO**
+  L23 - ['17'] [] | **La frase de *continuar desde `cap_17`* es de extraccion y no aplica: el frente de Marquet esta cos
+  L24 - ['11', '8', '3', '78'] [] | `11` esta cerrada** (`PARALELO.md` seccion `8` punto `3`). Lo que se hace es insertar lo que la `78`
+  L25 S ['8', '4', '78', '78.10'] [] | de la campania es Grove, Gerber, Marquet** (`PARALELO.md` seccion `8` punto `4`), y Grove y Gerber y
+  L30 - ['77', '80'] [] | **El metodo de la `77` vale**, con copias en `.v80ext/` que digan en su cabecera que cambiaron y nad
+  L32 - ['77', '78'] [] | - `insertar.py` de `.v77ext/`, con la sede de las lineas en `.v78ext/veredictos_listos.txt`, la band
+  L33 - ['78', '80'] [] | `cuarentena/marquet_turn_the_ship/`, la tanda en las filas de `.v78ext/orden.txt` y la salida en `.v
+  L34 - ['78'] [] | `contra_barrido.py` (que lea `.v78ext/vecinos_<id>.json`), `relojes.py` y `tras_insertar.sh` (con `_
+  L36 - ['78', '77', '77.4', '77.5'] [] | - `arista.py`, con la sede en `.v78ext/aristas_lectura.txt`, la cita a la `ACTA 77` `77.4` y `77.5`,
+  L37 - ['29', '75', '75.4', '77'] [] | fila `SOSTENGO` de esta tanda **empieza por *D.29, con el criterio de la ACTA 75 seccion 75.4***, qu
+  L38 - ['77', '53'] [] | no cablearia. **Su veredicto de lectura es `CONTINUA`**, como el de `fingir` a `recorrer` en la `77`
+  L39 - ['77', '77.4'] [] | la arista): el hijo parte del producto de un paso de la madre, que es lo que la `ACTA 77` `77.4` sos
+  L41 S ['1172', '78', '78.1', '80'] [] | - `aristas_vuelta.py`, con la linea de apertura en la `1172` (`ACTA 78` `78.1`: lo que escriba la `8
+  L42 - ['1173', '78', '78'] [] | `1173` en adelante), las sedes en `.v78ext/` y la tanda en las filas de `.v78ext/orden.txt`.
+  L46 - ['81', '77', '75'] [] | las filas que faltan, y entran en la `81`. El reloj de los `insertar` de la `77` y de la `75`, que e
+  L54 - ['1', '78', '104'] [] | ## TAREA 1: **REGISTROS DE LA `ACTA 78`, Y EL PAGO DE `d104`**
+  L56 - ['47'] [] | En una tabla corta y sin reabrir el argumento (`D.47`):
+  L60 S ['53', '55', '2', '78', '78.0', '78.1'] [] | | **Tu vuelta, reproducida**: no movio ni un byte de dato; `53` de tus `55` comandos corridos dan ho
+  L61 S ['77', '183', '78.3'] [] | | **La conjunta de Zhuo, cerrada**: gana la lectura de la `ACTA 77`; no hay frontera de Zhuo y `d183
+  L62 S ['78.3'] ['dos'] | | **Tu texto de Grove es el de las dos posiciones del auditor**, y queda listo tal cual | `78.3` |
+  L63 S ['79.1', '79.4', '104', '37', '29', '78.3'] ['cuatro'] | | **Tus cuatro discutibles se sostienen**, `D79.1` a `D79.4`; **`d104`, adjudicada**: ni `D.37` ni `
+  L64 S ['150', '180', '098', '099', '135', '78.4'] [] | | **`d150`, `d180`, `d098`, `d099` y `d135` se sostienen como pagadas** | `78.4` |
+  L65 S ['79.3.1', '78.1', '78.2', '78.7'] ['cinco', 'cero'] | | **Una caida tuya de `REPORTE` que no acumula**: el bloque de `79.3.1` pega un `grep` con comillas 
+  L67 - ['104', '104', '80', '80', '104'] [] | **`d104` la pagas tu** con `python scripts/deuda.py --pagar d104 --vuelta 80 --como "$(cat .v80ext/c
+  L68 S ['78', '78.3', '12', '21', '5'] [] | cita la `ACTA 78` `78.3`: la cabeza de `cap_12` `L21` no nacio y no nacera, y el paso `5` de `distin
+  L69 - ['29'] [] | nombra las actividades sin procedimentarlas, asi que tampoco hay arista por `D.29`. **No toques el g
+  L71 - ['2'] [] | ## TAREA 2: **LO QUE ENTRA ES LO QUE SE LEYO**
+  L73 - ['78', '78'] [] | Antes del primer `insertar`, `python .v78ext/pasos_y_huellas.py`, con su salida **identica** a `.v78
+  L74 S ['78', '78.1'] [] | reprodujo, `ACTA 78` `78.1`), pegada. Si una ficha sale distinta, **no entra**, se relee entera cont
+  L75 - ['1', '78', '78'] [] | `sha1sum -c --quiet .v78aud/huellas_al_barrer.txt`, pegado: la bandeja y el grafo que barrio el audi
+  L77 - ['3', '20', '78', '77', '77.4'] [] | ## TAREA 3: **LAS `20` FILAS DE `.v78ext/orden.txt`, UNA POR VEZ** (`ACTA 77` `77.4`)
+  L106 - ['1', '1'] [] | 1. **En su orden, de la fila `1` a la ultima.** Las lineas `--veredicto` son las del bloque de cada 
+  L107 - ['78'] [] | `.v78ext/veredictos_listos.txt`, **tal cual, sin las `#`**. Ninguna es `CONTINUA` con `madre=`.
+  L108 - ['2', '29'] ['dos'] | 2. **La arista por lectura se declara EN EL ACTO DE INSERTAR EL HIJO** (`D.29`), con los dos extremo
+  L109 - ['7'] [] | a `seguir_frustrado_preguntar_implantacion_ideas`, **paso `7` de la madre**, por tu copia de `arista
+  L110 - ['5'] [] | fila `5`**.
+  L111 - ['3', '031'] [] | 3. **La puerta es la aduana de `insertar`, no la lista** (`d031`). **Al volver cada uno, su vecindad
+  L112 - ['78'] ['dos'] | `78`** con tu copia de `contra_barrido.py`, pegada en su fila. Si levanta un vecino sin linea, lo le
+  L113 - ['6.1'] [] | escribes su veredicto por la vara `6.1` y solo esa, **y lo marcas en el reporte como lectura tuya de
+  L115 - ['4', '77', '78'] [] | 4. **Al volver cada `insertar`, su fila en el reporte** como las de la `77`: la aduana de hoy con su
+  L116 - ['31'] [] | las lineas que pasaste, la arista si la hay y su commit. Cada insertado a `cuarentena/_insertados/ma
+  L117 - ['5'] [] | 5. **Al terminar la ultima fila que entre: las aristas de la tanda por instrumento** (tu copia de `a
+  L118 - [] ['dos'] | esperaban, cuantas viven por los dos lados, ninguna sin adjudicar, y que ningun nodo viejo cambio fu
+  L121 S ['4', '183', '77', '77.5', '78', '78.3'] [] | ## TAREA 4: **`d183`: LA FRONTERA DE GROVE, ESCRITA DESPUES DE QUE ENTRE SU NODO** (`ACTA 77` `77.5`
+  L123 - ['16'] [] | **Cuando `eliminar_seguimiento_descendente_responsabilizar_dueno` (fila `16`) viva en el grafo, y no
+  L124 - [] ['dos'] | eliminar_seguimiento_descendente_responsabilizar_dueno --anade "<la linea de ANADE>" --razon "<la li
+  L125 - ['79', '183'] [] | `.v79ext/frontera_grove.txt` **tal cual**, leidas del fichero por un guion y no copiadas a mano, peg
+  L126 - ['183', '80', '78'] [] | `python scripts/deuda.py --pagar d183 --vuelta 80 --como "..."`, citando la linea de la bitacora que
+  L127 S ['78.3', '16', '183'] [] | `78.3`. **Si la fila `16` no entra, `d183` no se paga** y lo dices.
+  L129 - ['5', '8', '4', '5'] [] | ## TAREA 5: **EL CIERRE, Y SI TODO ENTRO, EL DE LA CAMPANIA** (`PARALELO.md` seccion `8` puntos `4` 
+  L131 S ['79', '78', '78.1'] [] | - **El censo antes y despues de cada tarea**, con una copia de `.v79ext/censo.sh`. Al abrir son los 
+  L134 - ['78'] [] | - **`PASOS INVENTADOS POR CAPITULO`, una fila por capitulo, de lo que ENTRO**, contado desde `.v78ex
+  L135 - ['77', '77.3'] ['cero'] | corregidos en la bandeja, que la `ACTA 77` `77.3` firmo en cero que entran. No a ojo.
+  L136 - ['61'] [] | - **`D.61`**: cada discutible ejecutado o cerrado. Ninguno abierto.
+  L137 - ['5', '64', '64', '64'] [] | - **`R5`** en cada bloque `$` de tu tramo, medido con `.v64ext/pegado64.py` y `.v64aud/normal/bloque
+  L138 - ['80', '9'] [] | la `80`, y pegado. **Y `R9`**, donde marques fidelidad.
+  L143 S ['20', '78.1', '183'] [] | - **SI ENTRARON LAS `20` DE LA BANDEJA (`78.1`), `d183` ESTA PAGADA Y TODO LO DE ARRIBA SALIO VERDE:
+  L144 - ['1', '11'] [] | 1. **`python forja.py tablero`, pegado**, con Marquet `INSERTADO` y la linea del mundo `11` completa
+  L146 - ['2', '80'] [] | 2. **El censo por libro y las aristas entre libros**, con un guion de `.v80ext/` que lea `dataset/no
+  L148 - ['3'] [] | 3. **El tag**: `git tag -a primer-equipo-completo -m "..." <hash>` sobre el commit en que el grafo q
+  L151 - ['4'] [] | 4. **Tu tramo del reporte abre con `PRIMER EQUIPO COMPLETO`**, ese hash y el censo por libro, en la 
+  L153 S ['20', '78.1', '81'] [] | - **SI NO ENTRARON LAS `20` DE LA BANDEJA (`78.1`)**, no hay tag: lo dices con las filas que faltan,
+  L154 - ['80'] [] | - Commitea `docs/loop/`, `dataset/`, `bitacora/`, `censos/`, los movidos a `_insertados` y tu carpet
+  L155 - ['79'] [] | `PARA_ALEXIS.md` salvo que algo te obligue a parar**: el de cierre es de la `ACTA 79`, que audita es
+  L156 - ['8', '5'] [] | escribe y deja `PROMPT_SIGUIENTE.md` vacio (`PARALELO.md` seccion `8` punto `5`).
+  L163 - ['183', '4'] [] | - **NO CORRIGES NINGUN NODO DEL GRAFO** fuera de `d183` (TAREA `4`). Si una lectura de vecino te ens
+  L165 - ['3.3'] [] | - **NO CAMBIAS NINGUNA LINEA PREPARADA NI NINGUNA FICHA** fuera de lo que la aduana levante en el ac
+  L167 - ['7', '55'] [] | - **NO TOCAS `src/`, `scripts/`, `config/`, el banco, el arnes, el tablero ni los protocolos** (`7.F
+  L169 - ['104', '183'] [] | - **NO REORDENAS LA COLA A MANO**, **NO PAGAS NINGUNA DEUDA** fuera de `d104` y `d183`, **NO ABRES N
+  L170 - ['183'] [] | falta una fila, `d183` o una guarda en verde.
+  L174 - [] ['Cero', 'cero'] | **Cero guiones largos y cero guiones medios. Deja correr el hook. Si algo contradice una regla vigen
+lineas del encargo: {'linea de bloque sangrado': 40, 'prosa con numero, con seccion de la ACTA 78': 17, 'prosa con numero, sin seccion de la ACTA 78': 58, 'prosa sin digito ni palabra de numero': 60} | suma: 175

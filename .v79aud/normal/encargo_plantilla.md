@@ -13,12 +13,8 @@ su misma linea la seccion de la `ACTA 78` o de la `ACTA 77` donde esta pegada** 
 
 ## 0. **LA CLASE, EL LIBRO Y LA REGLA DEL TURNO**
 
-    $ python scripts/deuda.py --clase 80
-    LIBRE
-      van 1 de 5 desde la ultima de saneamiento (la 79), con 46 deuda(s) esperando
-    $ python forja.py tablero --puedo marquet_turn_the_ship
-    LINEA 'serial', LIBRO 'marquet_turn_the_ship': SI
-      'marquet_turn_the_ship' esta COSECHADO y sin dueño: su trabajo ya llego a esta rama, asi que se continua desde el capitulo siguiente al ultimo minado (cap_17), citando su frontera. D.50.
+@@CMD python scripts/deuda.py --clase 80@@
+@@CMD python forja.py tablero --puedo marquet_turn_the_ship@@
 
 **La frase de *continuar desde `cap_17`* es de extraccion y no aplica: el frente de Marquet esta cosechado y la extraccion del mundo
 `11` esta cerrada** (`PARALELO.md` seccion `8` punto `3`). Lo que se hace es insertar lo que la `78` dejo listo en su bandeja. **El orden
@@ -45,9 +41,7 @@ Tu bloqueado en primer plano con tu copia de `esperar.py` hasta su `.fin`, **sin
 medio**. **NO LANZAS NADA EN SEGUNDO PLANO QUE SIGA VIVO AL CERRAR TU TURNO.** Si algo no te cabe, no lo lances: lo dices en el reporte con
 las filas que faltan, y entran en la `81`. El reloj de los `insertar` de la `77` y de la `75`, que es lo que costo y no un techo:
 
-    $ tail -1 .v77ext/relojes.txt; tail -1 .v75ext/relojes.txt
-    insertar: 22 | minimo 279.4 s | mediana 419.2 s | maximo 782.4 s | suma 9382.6 s (2.61 h)
-    insertar: 7 | minimo 341.0 s | mediana 504.4 s | maximo 711.9 s | suma 3570.5 s (0.99 h)
+@@CMD tail -1 .v77ext/relojes.txt; tail -1 .v75ext/relojes.txt@@
 
 ---
 
@@ -76,32 +70,8 @@ reprodujo, `ACTA 78` `78.1`), pegada. Si una ficha sale distinta, **no entra**, 
 
 ## TAREA 3: **LAS `20` FILAS DE `.v78ext/orden.txt`, UNA POR VEZ** (`ACTA 77` `77.4`)
 
-    $ sed -n '2,21p' .v78ext/orden.txt | cut -c1-80
-    1   ceder_control_reforzar_competencia_claridad                  cap_01 P1
-    2   cambiar_forma_trabajar_conservar_plantilla                   cap_02 P1
-    3   encargar_meta_especifica_dejar_libre_metodo                  cap_02 P2
-    4   observar_reunion_rutinaria_senales_plantilla                 cap_03 R3
-    5   seguir_frustrado_preguntar_implantacion_ideas                cap_03 P4
-    6   contar_firmas_cadena_tramite_parado                          cap_03 P5
-    7   inspeccionar_reparto_informacion_notas_jefe                  cap_03 P6
-    8   recorrer_organizacion_escuchar_plantilla                     cap_03 P1
-    9   auditar_formacion_premios_ultima_fila                        cap_03 P7
-    10  informar_cierre_jornada_conservar_propiedad_trabajo          cap_04 P1
-    11  aplicar_ejercicio_codigo_genetico_control                    cap_06 P1
-    12  asignar_responsable_unico_evolucion_planificada              cap_06 P2
-    13  reforzar_principios_guia_lenguaje_prueba_conocimiento        cap_14 P1a
-    14  declarar_intencion_reemplazar_peticion_permiso               cap_07 P1
-    15  resistir_dar_solucion_clasificar_decision_urgencia           cap_08 P1
-    16  eliminar_seguimiento_descendente_responsabilizar_dueno       cap_09 ?
-    17  acoger_inspectores_externos_fuente_aprendizaje               cap_10 P1
-    18  tomar_accion_deliberada_pausar_vocalizar_gesticular          cap_11 P1
-    19  identificar_temas_formacion_tarjetas_decision                cap_12 P1
-    20  repetir_mensaje_invariable_diario_reunion_evento             cap_13 P1
-    $ sed -n '/^ARISTAS ESPERADAS/,$p' .v78ext/orden.txt; grep -v '^#' .v78ext/veredictos_listos.txt | grep -c '|'
-    ARISTAS ESPERADAS EN LA VUELTA QUE INSERTE ESTAS 20
-      LECTURA    observar_reunion_rutinaria_senales_plantilla             > seguir_frustrado_preguntar_implantacion_ideas
-      CONTINUA con madre= (aristas distintas): 0 | SOSTENGO por lectura: 1 | solapes entre las dos: 0 | aristas esperadas: 1
-    52
+@@CMD sed -n '2,21p' .v78ext/orden.txt | cut -c1-80@@
+@@CMD sed -n '/^ARISTAS ESPERADAS/,$p' .v78ext/orden.txt; grep -v '^#' .v78ext/veredictos_listos.txt | grep -c '|'@@
 
 1. **En su orden, de la fila `1` a la ultima.** Las lineas `--veredicto` son las del bloque de cada candidato en
    `.v78ext/veredictos_listos.txt`, **tal cual, sin las `#`**. Ninguna es `CONTINUA` con `madre=`.
