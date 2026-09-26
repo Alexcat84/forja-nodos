@@ -1191,3 +1191,4 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-26 | cambiar_saludo_cliente_dos_ramas | nombre_largo | La primera Innovacion de ejemplo del capitulo del proceso de desarrollo del negocio: sustituir Hi, may I help you? por Hi, have you been in here before?, con la respuesta exacta preparada para cuando el cliente dice que si y para cuando dice que no | castellano | - |
 | 2026-09-26 | cambiar_saludo_cliente_dos_ramas | otro_idioma | Hi, may I help you? | ingles | - |
 | 2026-09-26 | cambiar_saludo_cliente_dos_ramas | otro_idioma | Hi, have you been in here before? | ingles | - |
+| 2026-09-26 | probar_traje_azul_seis_semanas | nombre_largo | La segunda Innovacion de ejemplo del capitulo del proceso de desarrollo del negocio: tres semanas de vestuario marron contra tres semanas de vestuario azul marino, con las ocho prendas de las dos etapas nombradas una a una | castellano | - |
