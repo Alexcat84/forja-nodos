@@ -63475,7 +63475,7 @@ bitacora, `4c7a838` para el dataset) y las sedes a `.v71ext/`; lo dicen en su ca
 
 <!-- TALLADO: parcial salida=.v72ext/aristas_adjudicadas.txt -->
 
-    $ python -c "<los registros con arista de la vuelta: veredicto, razon y sin adjudicar; y los veredictos por clase>"
+    $ python .v72ext/aristas_adjudicadas.py
     registros con arista: 8 | con veredicto CONTINUA: 8 | con razon escrita: 8 | sin adjudicar: 0
     veredictos de la vuelta por clase: [('CONTINUA', 8), ('SANO', 46)]
 
@@ -63491,3 +63491,190 @@ tres madres de la tanda son de la propia tanda, asi que ni el `nodos_siguientes`
 registros, las `50` lineas (`46` `SANO` y `4` `CONTINUA`) mas las `4` aristas por lectura.**
 
 **`T4` CERRADA.**
+
+## 72.5. TAREA 5: EL CIERRE
+
+### 72.5.a. El censo antes y despues
+
+<!-- TALLADO: parcial salida=.v72ext/censo_cierre.txt -->
+
+    $ bash .v72ext/censo.sh
+    nodos en dataset/nodos.jsonl        : 430
+    veredictos en bitacora              : 1081
+    pares mutuos                        : 1
+    bandeja cuarentena/grove_high_output: 7
+    insertados de grove_high_output     : 85
+    cerrojos en procesos/               : 
+    $ python .v72ext/bandeja_por_capitulo.py
+    fichas en la bandeja de grove por capitulo: cap_15 3, cap_16 1, cap_17 3 | total 7
+
+| | al abrir (`72.0`) | al cerrar | delta |
+|---|---:|---:|---:|
+| nodos | `410` | `430` | `+20` |
+| veredictos | `1027` | `1081` | `+54`: `50` lineas `--veredicto` de las `20` filas y `4` aristas por lectura |
+| pares mutuos | `1` | `1` | `0` |
+| bandeja de Grove | `27` | `7` | `-20` |
+| insertados de Grove | `65` | `85` | `+20` |
+
+**Lo que el encargo esperaba si entraban las `20`**: el grafo gana `20`, la bandeja pierde `20`, `_insertados` gana `20` y la
+bitacora gana las `50` lineas mas una por arista por lectura, `4`. **Las `7` que quedan son las de `cap_15`, `cap_16` y `cap_17`**,
+que no se tocan (LO QUE NO HACES). **`procesos/` vacio al abrir y al cerrar.** El `$ bash .v72ext/censo.sh` de `72.0` es el estado
+de apertura y hoy imprime el de cierre; **se reproduce contra el commit de apertura**, `4c7a838` (salida en
+`.v72ext/censo_apertura_git.txt`):
+
+    $ for f in dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl config/pares_mutuos.jsonl; do echo "$f $(git show 4c7a838:$f | wc -l)"; done; for d in cuarentena/grove_high_output/ cuarentena/_insertados/grove_high_output/; do echo "$d $(git ls-tree --name-only 4c7a838 $d | grep -c json)"; done
+    dataset/nodos.jsonl 410
+    bitacora/VEREDICTOS.jsonl 1027
+    config/pares_mutuos.jsonl 1
+    cuarentena/grove_high_output/ 27
+    cuarentena/_insertados/grove_high_output/ 65
+
+### 72.5.b. `PASOS INVENTADOS POR CAPITULO`, de lo que ENTRO
+
+**Los seis capitulos, las `20` filas**, contado desde `.v71ext/fidelidad.tsv`, la lectura entera que `.v71ext/contar_fidelidad.txt`
+cuenta y la `ACTA 70` `70.6` firmo en `4` PUENTE de `121` y `0` que entran, con la copia `.v72ext/pasos_inventados.py`. **Lo que la
+copia anade, porque en la `70` no hubo ningun PUENTE**: los `4` P se marcaron sobre el texto de la ficha al abrir la `71`
+(`7be17c0`) y se corrigieron en la ficha; la columna `corr` compara el texto de cada paso P en la ficha que ENTRO con el de
+`7be17c0`, y cuenta como corregido el que cambio.
+
+<!-- TALLADO: parcial salida=.v72ext/pasos_inventados.txt -->
+
+    $ python .v72ext/pasos_inventados.py
+    candidato que ENTRO                                          cap     pasos   T   P corr
+    planificar_tres_pasos_demanda_estado_brecha                  cap_07      6   4   2    2
+    fijar_periodo_direccion_objetivos_retroalimentacion          cap_07      5   5   0    0
+    fijar_horizonte_ventana_replanificacion                      cap_07      5   5   0    0
+    definir_entorno_grupo_clientes_proveedores_competidores      cap_07      6   6   0    0
+    examinar_entorno_expectativas_tecnologia_proveedores_grupos  cap_07      5   5   0    0
+    examinar_demanda_entorno_dos_marcos_temporales               cap_07      7   7   0    0
+    determinar_estado_presente_capacidades_proyectos_merma       cap_07      7   7   0    0
+    cerrar_brecha_dos_preguntas_estrategia                       cap_07      7   7   0    0
+    contestar_dos_preguntas_direccion_objetivos                  cap_07      5   5   0    0
+    repartir_supervision_puesto_funcional_mision                 cap_10      8   7   1    1
+    elegir_modo_control_motivacion_factor_cua                    cap_11      8   8   0    0
+    escalonar_complejidad_puesto_empleado_nuevo                  cap_11      9   9   0    0
+    diagnosticar_capacidad_motivacion_prueba_vida                cap_12      4   4   0    0
+    fijar_meta_direccion_objetivos_mitad_probabilidad            cap_12      4   4   0    0
+    diagnosticar_nivel_motivacion_reaccion_aumento_salario       cap_12      3   3   0    0
+    elegir_estilo_direccion_madurez_relevante_tarea              cap_13      8   8   0    0
+    decidir_amistad_subordinado_prueba_revision_dificil          cap_13      6   6   0    0
+    entregar_evaluacion_desempeno_tres_claves                    cap_14      6   5   1    1
+    preparar_resena_mixta_hoja_trabajo                           cap_14      6   6   0    0
+    guiar_subordinado_etapas_resistencia_desempeno               cap_14      6   6   0    0
+    entraron: 20 de la tanda de 20 | pasos sin fila de lectura: 0 []
+
+    | capitulo | candidatos que entraron | pasos | PUENTE marcados | por ciento | corregidos en la ficha | PUENTE que entro |
+    |---|---:|---:|---:|---:|---:|---:|
+    | `cap_07` | 9 | 53 | 2 | 3,77 | 2 | 0 |
+    | `cap_10` | 1 | 8 | 1 | 12,50 | 1 | 0 |
+    | `cap_11` | 2 | 17 | 0 | 0,00 | 0 | 0 |
+    | `cap_12` | 3 | 11 | 0 | 0,00 | 0 | 0 |
+    | `cap_13` | 2 | 14 | 0 | 0,00 | 0 | 0 |
+    | `cap_14` | 3 | 18 | 1 | 5,56 | 1 | 0 |
+
+**`4` PUENTE marcados en `121` pasos (`2` en `cap_07`, `1` en `cap_10`, `1` en `cap_14`), las cifras de `.v71ext/contar_fidelidad.txt`,
+los `4` con el texto de su paso cambiado en la ficha que entro, y `0` PUENTE que entraron en los seis capitulos**, como firmo la
+`ACTA 70` `70.6`. Entraron los `20` preparados y ningun paso sin su fila de lectura. El `12,50` de `cap_10` es el de la marca, no
+el de lo que entro; su escalada de `D.58` la hicieron los dos lados en la `71` (`70.6`).
+
+### 72.5.c. `D.61`: los discutibles, cada uno ejecutado o cerrado
+
+| | que | estado |
+|---|---|---|
+| `D72.1` | el metodo de espera de la `67`, la `68` y la `70` | **EJECUTADO** veinte veces: `20` `.fin`, los `20` en `0`, sin solape; nada tocado entre el lanzamiento y el `.fin` de cada uno. **Ningun proceso mio vivo al cerrar** (`72.5.e`) |
+| `D72.2` | `insertar.py` lee `.v71ext/veredictos_listos.txt` y salta las `#` | **EJECUTADO**: la cabecera de cada `.v72ext/insertar_*.txt` lista las lineas de la columna `lin`, `50` en total, y en las `20` filas los vecinos que levanto la aduana son los de su bloque (`.v72ext/contra_<fila>.txt`) |
+| `D72.3` | la cita de `arista.py` a la `ACTA 70` | **EJECUTADO** en las cuatro (`72.4`); si el auditor la quiere en otra seccion, es texto de `--cita-veredicto` y no mueve ninguna arista |
+| `D72.4` | las dos `CONTINUA` con `madre=` las cablea la aduana al entrar el hijo | **EJECUTADO**: en cola en la fila `4`, cableadas en las filas `5` y `6` (`72.4`, `0` en cola) |
+| `D72.5` | `d170` se paga al volver la fila `16` | **EJECUTADO**: el par no se levanta, entra sin linea ni arista, `d170` pagada (fila `16`) |
+| `D72.6` | el `--paso 4` de la `D.29` de la fila `12`, cuando mi fila cita *madre pasos 4 y 5* | **EJECUTADO** (fila `12`): el `4` es el cuadro de cuatro cuadrantes que el hijo aplica, el primero de mi tramo y el unico paso que citan mi fila y la del auditor (las dos lineas, pegadas debajo). Si el auditor lo quiere en el `5`, es el paso citado de una arista que ya vive, y no cambia la arista |
+
+<!-- TALLADO: parcial salida=.v72ext/d72_6.txt -->
+
+    $ sed -n '12p' .v71ext/aristas_lectura.txt | cut -c1-150
+    SOSTENGO | elegir_modo_control_motivacion_factor_cua | escalonar_complejidad_puesto_empleado_nuevo | madre pasos 4 y 5, hijo pasos 1 y 2 | cap_11 L61,
+    $ grep -n "escalonar" .v71aud/aristas_lectura.tsv | cut -c1-150
+    16:elegir_modo_control_motivacion_factor_cua	escalonar_complejidad_puesto_empleado_nuevo	SOSTENGO D.29, DUDA	pasos 1, 2 y 4	pasos 1, 2 y 7	cap_11 L63	
+
+**Ninguno abierto.**
+
+### 72.5.d. Las guardas
+
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 430
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+
+    $ python forja.py guiones
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+
+    $ tail -3 .v72ext/cierre_tests.txt
+      total: 379 pruebas, 0 fallos, 0 errores
+    ========================================================================
+    codigo de salida 0
+
+(`.v72ext/cierre_tests.txt` es la salida entera de `python tests/test_aceptacion.py`, corrida al cerrar; `.v72ext/cierre_gate.txt`
+y `.v72ext/cierre_guiones.txt` las de las otras dos.)
+
+### 72.5.e. El reloj
+
+Por la copia de `.v70ext/relojes.py` con la ruta cambiada (`.v72ext/relojes.py`, salida entera en `.v72ext/relojes.txt`):
+
+<!-- TALLADO: parcial salida=.v72ext/relojes_resumen.txt -->
+
+    $ python .v72ext/relojes.py | tail -1
+    insertar: 20 | minimo 274.4 s | mediana 560.0 s | maximo 976.5 s | suma 10920.8 s (3.03 h)
+
+**Los `20` `insertar`, contra poblacion `479`, cada uno solo**: el reloj esta en la linea `fin` de cada `.v72ext/insertar_*.txt` y
+en cada fila de `72.3`. **No son techos: es lo que costo.** **Ningun proceso mio vive al cerrar el turno**: los `20` `.fin` en `0`,
+cada tarea de fondo recogida con su aviso antes de lanzar la siguiente, y la lista de procesos `python` con `v72ext` o `insertar` en
+su linea de orden, vacia tras la fila `20`; `procesos/` vacio (`72.5.a`).
+
+### 72.5.f. `R5`, medido con las dos copias de la cabecera cambiada a la `72`
+
+`.v72ext/pegado72.py` es `.v64ext/pegado64.py` y `.v72ext/bloques_mudos72.py` es `.v64aud/normal/bloques_mudos.py`, las dos con la
+cabecera del tramo en `# VUELTA 72 ` y el comentario de cabecera, nada mas cambiado (la segunda queda con finales `LF` y el original
+los tiene `CRLF`, por eso su `diff` sale entero). Corridas con todos los bloques `$` de la vuelta ya escritos, este incluido, menos el
+del cierre estricto que viene detras:
+
+<!-- TALLADO: parcial salida=.v72ext/r5.txt -->
+
+    $ python .v72ext/pegado72.py; python .v72ext/bloques_mudos72.py
+    bloques abiertos con `$` en el tramo de la vuelta 72 : 46
+    bloques que ROMPEN R1 (ACTA 60 60.15)                : 0
+    bloques abiertos con `$`: 34 | comandos `$`: 46 | comandos sin ninguna linea de salida en su bloque: 0
+
+**Cero bloques que rompen `R1` y cero comandos sin salida.** El bloque se anexo con tres lineas de relleno en el sitio de la salida,
+se corrieron los dos instrumentos (`.v72ext/r5.txt`) y la salida sustituyo al relleno, como en la `70`.
+
+### 72.5.g. El cierre estricto
+
+Salida entera en `.v72ext/cierre_reporte.txt` (y la de las pruebas que lanza, que va por stderr, en `.v72ext/cierre_reporte_err.txt`),
+codigo `0`:
+
+<!-- TALLADO: parcial salida=.v72ext/cierre_reporte_sel.txt -->
+
+    $ python scripts/cerrar_reporte.py 2>/dev/null | grep -E '^(TALLADO|CENSO|TABLA DE CIERRE|CIERRE|GATE|BARRIDO)'
+    TALLADO DEL REPORTE (D.41): la tabla que dice ser de instrumento
+    TALLADO VERDE: las 157 tabla(s) comprobables son las de su instrumento, celda a celda.
+    CENSO DE RUTAS (D.42): la unidad de la ruta es la celda
+    CENSO VERDE: las 1007 rutas publicadas sostienen lo que dicen sostener.
+    TABLA DE CIERRE DE TAREAS (D.52): toda tabla del reporte declara su instrumento
+    TABLA DE CIERRE VERDE: ninguna celda medible difiere del dato.
+    GATE VERDE.
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+    CIERRE VERDE: las cuatro guardas que muerden, el tallado y el censo. La vigencia corrio y publico su cuenta arriba: es cola, no guarda (D.15).
+
+**Ningun rojo.**
+
+**Tabla de tareas, al cerrar:**
+
+| tarea | que | estado |
+|---|---|---|
+| `T1` | los registros de la `ACTA 70` | **CERRADA** (`72.1`) |
+| `T2` | lo que entra es lo que se leyo | **CERRADA** (`72.2`): las `20` huellas iguales a `682a39c` y a las filas de la `71` |
+| `T3` | las `20` filas, una por vez | **CERRADA** (`72.3`): las `20` dentro, `50` lineas pasadas tal cual, ningun vecino sin linea, `d170` pagada; `cap_07`, `cap_10`, `cap_11`, `cap_12`, `cap_13` y `cap_14` enteros en el grafo |
+| `T4` | las aristas de la tanda | **CERRADA** (`72.4`): `6` esperadas, `6` en el grafo, `0` en cola, `0` sin adjudicar; ningun nodo viejo cambio |
+| `T5` | el cierre | **CERRADA** (`72.5`) |
+
+**No escribo `PARA_ALEXIS.md`: nada me obliga a parar.** Lo que queda de Grove son las `7` fichas de `cap_15`, `cap_16` y
+`cap_17`, que se preparan en la vuelta siguiente; despues, Gerber y Marquet, en ese orden.

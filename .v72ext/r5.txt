@@ -1,0 +1,3 @@
+bloques abiertos con `$` en el tramo de la vuelta 72 : 46
+bloques que ROMPEN R1 (ACTA 60 60.15)                : 0
+bloques abiertos con `$`: 34 | comandos `$`: 46 | comandos sin ninguna linea de salida en su bloque: 0

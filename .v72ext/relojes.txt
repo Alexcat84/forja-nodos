@@ -1,0 +1,21 @@
+.v72ext\insertar_01_planificar_tres_pasos_demanda_estado_brecha.txt      codigo 0    583.6 s  fin 2026-09-25 21:59:30
+.v72ext\insertar_02_fijar_periodo_direccion_objetivos_retroalimentacion.txt codigo 0    422.1 s  fin 2026-09-25 22:07:55
+.v72ext\insertar_03_fijar_horizonte_ventana_replanificacion.txt          codigo 0    415.3 s  fin 2026-09-25 22:15:52
+.v72ext\insertar_04_definir_entorno_grupo_clientes_proveedores_competidores.txt codigo 0    335.7 s  fin 2026-09-25 22:22:28
+.v72ext\insertar_05_examinar_entorno_expectativas_tecnologia_proveedores_grupos.txt codigo 0    394.7 s  fin 2026-09-25 22:30:10
+.v72ext\insertar_06_examinar_demanda_entorno_dos_marcos_temporales.txt   codigo 0    442.9 s  fin 2026-09-25 22:38:32
+.v72ext\insertar_07_determinar_estado_presente_capacidades_proyectos_merma.txt codigo 0    418.0 s  fin 2026-09-25 22:47:16
+.v72ext\insertar_08_cerrar_brecha_dos_preguntas_estrategia.txt           codigo 0    344.8 s  fin 2026-09-25 22:54:09
+.v72ext\insertar_09_contestar_dos_preguntas_direccion_objetivos.txt      codigo 0    274.4 s  fin 2026-09-25 22:59:48
+.v72ext\insertar_10_repartir_supervision_puesto_funcional_mision.txt     codigo 0    691.7 s  fin 2026-09-25 23:12:17
+.v72ext\insertar_11_elegir_modo_control_motivacion_factor_cua.txt        codigo 0    753.6 s  fin 2026-09-25 23:25:52
+.v72ext\insertar_12_escalonar_complejidad_puesto_empleado_nuevo.txt      codigo 0    665.2 s  fin 2026-09-25 23:38:12
+.v72ext\insertar_13_diagnosticar_capacidad_motivacion_prueba_vida.txt    codigo 0    609.8 s  fin 2026-09-25 23:49:35
+.v72ext\insertar_14_fijar_meta_direccion_objetivos_mitad_probabilidad.txt codigo 0    702.8 s  fin 2026-09-26 00:02:11
+.v72ext\insertar_15_diagnosticar_nivel_motivacion_reaccion_aumento_salario.txt codigo 0    717.1 s  fin 2026-09-26 00:15:04
+.v72ext\insertar_16_elegir_estilo_direccion_madurez_relevante_tarea.txt  codigo 0    976.5 s  fin 2026-09-26 00:32:20
+.v72ext\insertar_17_decidir_amistad_subordinado_prueba_revision_dificil.txt codigo 0    601.0 s  fin 2026-09-26 00:43:39
+.v72ext\insertar_18_entregar_evaluacion_desempeno_tres_claves.txt        codigo 0    587.8 s  fin 2026-09-26 00:54:26
+.v72ext\insertar_19_preparar_resena_mixta_hoja_trabajo.txt               codigo 0    447.5 s  fin 2026-09-26 01:02:51
+.v72ext\insertar_20_guiar_subordinado_etapas_resistencia_desempeno.txt   codigo 0    536.3 s  fin 2026-09-26 01:12:46
+insertar: 20 | minimo 274.4 s | mediana 560.0 s | maximo 976.5 s | suma 10920.8 s (3.03 h)
