@@ -64954,3 +64954,18 @@ La aduana de hoy: **BLOQUEARIA** con `3` vecino(s) contra `479`; lineas `--vered
     hoy 3 vecinos, barrido de la 73 3 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (432 grafo, 47 bandejas), en la 73 479 (430, 49)
 
 **Los tres vecinos son los de su bloque y las tres lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `73`, las tres seniales al digito; la poblacion, `479` (`432` mas `47`). **La aduana cablea en el acto la arista `responder_primer_aviso_renuncia_subordinado > gestionar_retencion_subordinado_valioso_renuncia`** (su salida: *arista madre-hijo cableada y escrita RESUELTA*), la que la fila `2` dejo en cola: es la primera de las `3` esperadas. Bitacora de `1095` a `1098`.
+
+### Fila `4`: `reciclar_empleado_ascendido_mas_alla_capacidad`, **INSERTADO** en `341.0` s, codigo `0`, commit `0d123bed`
+
+La aduana de hoy: **BLOQUEARIA** con `1` vecino(s) contra `479`; lineas `--veredicto` pasadas: `1`. Salida entera en `.v75ext/insertar_04_reciclar_empleado_ascendido_mas_alla_capacidad.txt`.
+
+<!-- TALLADO: parcial salida=.v75ext/insertar_04_reciclar_empleado_ascendido_mas_alla_capacidad.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `priorizar_lista_entrenamiento_subordinados` | similitud_texto | 0.355 | 0.000 | 0.416 | SANO |
+
+    $ python .v75ext/contra_barrido.py 04 reciclar_empleado_ascendido_mas_alla_capacidad
+    hoy 1 vecinos, barrido de la 73 1 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (433 grafo, 46 bandejas), en la 73 479 (430, 49)
+
+**El vecino es el de su bloque y la linea se paso tal cual**: ni nuevos ni caidos contra el barrido de la `73`, las tres seniales al digito; la poblacion, `479` (`433` mas `46`). Sin aristas en esta fila. Bitacora de `1098` a `1099`.
