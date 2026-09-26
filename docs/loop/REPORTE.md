@@ -63402,3 +63402,18 @@ La aduana de hoy: **BLOQUEARIA** con `1` vecino(s) contra `479`; lineas `--vered
     hoy 1 vecinos, barrido de la 71 1 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (426 grafo, 53 bandejas), en la 71 479 (410, 69)
 
 **El vecino es el de su bloque y la linea se paso tal cual**: ni nuevos ni caidos contra el barrido de la `71`, las tres seniales al digito. Sin aristas en esta fila. **Con ella, `cap_13` queda entero en el grafo.**
+
+### Fila `18`: `entregar_evaluacion_desempeno_tres_claves`, **INSERTADO** en `587.8` s, codigo `0`, commit `66990348`
+
+La aduana de hoy: **BLOQUEARIA** con `1` vecino(s) contra `479`; lineas `--veredicto` pasadas: `1`. Salida entera en `.v72ext/insertar_18_entregar_evaluacion_desempeno_tres_claves.txt`.
+
+<!-- TALLADO: parcial salida=.v72ext/insertar_18_entregar_evaluacion_desempeno_tres_claves.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `planificar_tres_pasos_demanda_estado_brecha` | similitud_texto | 0.362 | 0.100 | 0.364 | SANO |
+
+    $ python .v72ext/contra_barrido.py 18 entregar_evaluacion_desempeno_tres_claves
+    hoy 1 vecinos, barrido de la 71 1 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (427 grafo, 52 bandejas), en la 71 479 (410, 69)
+
+**El vecino es el de su bloque y la linea se paso tal cual**: ni nuevos ni caidos contra el barrido de la `71`, las tres seniales al digito. Es el mismo par que la fila `1` leyo desde su lado. Sin aristas en esta fila.
