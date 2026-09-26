@@ -1,0 +1,1 @@
+repetir_mensaje_invariable_diario_reunion_evento poblacion 479 (459 grafo mas 20 bandejas) vecinos 0

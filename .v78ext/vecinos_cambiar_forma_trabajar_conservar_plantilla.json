@@ -1,0 +1,33 @@
+{
+ "id": "cambiar_forma_trabajar_conservar_plantilla",
+ "grafo": 459,
+ "bandejas": 20,
+ "vecinos": [
+  {
+   "id": "escuchar_entender_critica_dominar_defensa",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.201,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.612
+   },
+   "levantada_por": [
+    "paso_contra_nodo"
+   ],
+   "detalle_paso": "paso 2 del candidato contra paso 4 de escuchar_entender_critica_dominar_defensa"
+  },
+  {
+   "id": "encargar_meta_especifica_dejar_libre_metodo",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.441,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.455
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 2 del candidato contra paso 2 de encargar_meta_especifica_dejar_libre_metodo"
+  }
+ ]
+}

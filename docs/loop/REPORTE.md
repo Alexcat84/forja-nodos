@@ -67151,3 +67151,130 @@ entrara lleva `0` PUENTE en los `110` pasos**; la cifra de la relectura sobre el
 inserte (encargo, TAREA 2.5), con esta fila citada.
 
 **`T2` CERRADA.**
+
+## 78.3. TAREA 3: EL BARRIDO DE LAS `20`, SOBRE LAS FICHAS YA CORREGIDAS
+
+Copia de `.v76ext/barrido_uno.py` que lee de `cuarentena/marquet_turn_the_ship/` y escribe en `.v78ext/` (`.v78ext/barrido_uno.py`) y copia
+de `.v76ext/barrer.sh` con la ruta cambiada (`.v78ext/barrer.sh`, con su `FORJA_PROCESOS_SIMILITUD=3` y el presupuesto de `6` plazas de la
+maquina, `D78.2`): **cinco a la vez**, lanzado con `.v78ext/lista_barrido.txt` despues del commit de las correcciones (`d19671a1`, `78.2.2`,
+`D78.1`), en segundo plano, y **recogido entero dentro del turno**, esperandolo con bucles `until` sobre el log:
+
+<!-- TALLADO: parcial salida=.v78ext/barrido.log -->
+
+    $ grep -E "^(INICIO|TODOS)" .v78ext/barrido.log; grep -c "rc=0" .v78ext/barrido.log; grep "rc=" .v78ext/barrido.log | sed "s/.*segundos=//" | sort -n | sed -n "1p;\$p"
+    INICIO 2026-09-26 13:44:27
+    TODOS TERMINADOS 2026-09-26 14:43:48
+    20
+    398
+    1225
+
+**`20` de `20` con `rc=0`, de `13:44:27` a `14:43:48`**, de `398` a `1225` segundos por ficha (el log entero, una linea por ficha, en
+`.v78ext/barrido.log`). La poblacion es `479` en las `20`, `459` del grafo mas `20` de bandejas, la de la apertura (`78.0`):
+
+    $ head -1 .v78ext/barrido_*.txt | grep poblacion | awk '{print $3,$4,$5,$6,$7,$8,$9}' | sort | uniq -c
+         20 479 (459 grafo mas 20 bandejas) vecinos
+
+**Cero vivos al cerrar el barrido**: `tasklist /FI "IMAGENAME eq python.exe"` despues del `TODOS TERMINADOS` dice *INFO: No tasks
+are running which match the specified criteria.*, y `procesos/` esta vacio.
+
+**Una tabla por candidato de sus vecinos**, con su sede, las tres seniales y cual lo levanto, impresa del barrido por
+`.v78ext/tabla_vecinos.py` (copia de `.v76ext/tabla_vecinos.py` con las rutas y la lista cambiadas, solo lee) en `.v78ext/tablas_vecinos.md`.
+**Lo que levanta, en una linea:** `16` de las `20` levantan vecinos (`asignar_responsable_unico_evolucion_planificada`,
+`eliminar_seguimiento_descendente_responsabilizar_dueno`, `identificar_temas_formacion_tarjetas_decision` y
+`repetir_mensaje_invariable_diario_reunion_evento` salen con `0`), **`52` pares en el sentido del candidato**, `42` con vecino en bandeja y
+`10` en el grafo; **los `42` de bandeja son todos de entre las `20`**. Los del grafo son `interrogar_negocio_cinco_preguntas` y
+`dictar_ritmo_crecimiento_preguntas_escritas` (`2` veces cada uno), `operar_modelo_gente_destreza_minima`,
+`cuantificar_impacto_innovacion_6_pasos` y `cambiar_saludo_cliente_dos_ramas` de Gerber, `usar_banco_nueve_preguntas_entrevista` y
+`pedir_critica_anonima_curso_entrenamiento_dictado` de Grove, y `escuchar_entender_critica_dominar_defensa` de `scott_radical_candor`, este
+por la senial `3` sola (`0,612`). **De Zhuo, ninguno.** `51` pares los levanta la similitud de texto y `1` el paso contra nodo.
+**Diecinueve pares, en el sentido del candidato, pasan de `0,4` de similitud**, todos entre fichas de Marquet, y se leyeron primero
+(`EXTRACTOR.md` 11): ninguno es gemelo. El mas alto es `0,464` (`tomar_accion_deliberada` contra `acoger_inspectores`).
+
+**`T3` CERRADA.**
+
+## 78.D ter. **LOS DISCUTIBLES DE VEREDICTOS, ARISTAS Y ORDEN, MARCADOS AL ESCRIBIR CADA LINEA** (`EXTRACTOR.md` 8)
+
+Se marcaron dentro de `.v78ext/aristas_lectura.txt` y `.v78ext/veredictos_listos.txt` en el acto de escribir cada linea, antes de correr
+`comprobar_veredictos.py` ni `orden.py`; aqui se juntan por numero.
+
+| | que | por que lo marco |
+|---|---|---|
+| `D78.11` | **`ceder_control_reforzar_competencia_claridad` SIN arista a los cinco mecanismos de CONTROL de la bandeja** | su paso `3` nombra la operacion, ceder el control, y no nombra ningun mecanismo; los mecanismos son ejemplares de la categoria (*is a mechanism for CONTROL*) y su lista de `cap_05` `L115` a `L129` es un indice que no es nodo (`ACTA M3` del frente, `M3.6.a`). Si el auditor lee `D.29` en *cede el control*, son hasta cinco aristas por lectura mas |
+| `D78.12` | **`ceder_control` SIN arista a los cuatro mecanismos de COMPETENCE y CLARITY** | su paso `5` cuenta dos pilares y los nombra, pero los pilares son categorias y no nodos (`D68.7`); la lista de `cap_10` `L79` a `L89` tampoco es nodo. Si el auditor lee que el pilar es la parte y el mecanismo su despliegue, son hasta cuatro aristas mas |
+| `D78.13` | **`observar_reunion_rutinaria_senales_plantilla` MADRE de `seguir_frustrado_preguntar_implantacion_ideas` por `D.29`; `recorrer_organizacion_escuchar_plantilla` SIN arista a `contar_firmas`, `inspeccionar_reparto` ni `auditar_formacion`** | la primera la sostengo por el criterio de la `ACTA 75` `75.4` (el hijo parte del producto de un paso de la madre, el `7`, y `L23` los encadena); las otras tres son calendario (`ACTA M2` `3.5`): el paseo las precede o las contiene, pero ninguna parte de su producto. Si el auditor lee la primera como calendario, las aristas esperadas bajan de `1` a `0`; si lee `contar_firmas` como despliegue del paso `3` del paseo, suben a `2` |
+| `D78.14` | **`contar_firmas_cadena_tramite_parado` SIN arista a `aplicar_ejercicio_codigo_genetico_control`** | `cap_06` `L85` cambia justo la regla de la papeleta que `cap_03` `L39` cuenta, pero el ejercicio es generico (`L99` a `L111`) y no parte de la cadena contada. Si el auditor lee que el libro los encadena, es una arista mas |
+
+## 78.4. TAREA 4: LOS VEREDICTOS, LAS ARISTAS Y EL ORDEN
+
+### 78.4.1. Los veredictos listos, uno por vecino, y su comprobacion por instrumento
+
+`.v78ext/veredictos_listos.txt`: **un bloque por candidato, en el formato de `--veredicto`**, leidos con los pasos de los dos delante
+(`python .v64aud/pasos.py <a> <b>`, las `20` en `.v78ext/pasos_20.txt` y los vecinos del grafo en `.v78ext/pasos_grafo.txt`) y por la vara
+`6.1`, y solo esa. **Las `52` lineas van `SANO`**: cero `CONTINUA` y cero `REPITE`. Diez pares ya los leyo el auditor del frente (`ACTA
+M9.4`, sus diez de banda alta, y `M8.5`) y se citan como contraste; se leyeron otra vez con los pasos de hoy, y en ninguno cambia la
+clase. La comprobacion es una copia de `.v76ext/comprobar_veredictos.py` con las rutas y la lista cambiadas (su cabecera lo dice):
+
+<!-- TALLADO: parcial salida=.v78ext/comprobar_veredictos.txt -->
+
+    $ python .v78ext/comprobar_veredictos.py | sed -n '/^secciones/,$p'
+    secciones 20 de 20, lineas 52, ilegibles 0, vecinos sin linea 0, lineas sin vecino 0
+    
+    ARISTAS POR LECTURA (SOSTENGO) contra el barrido de hoy
+      observar_reunion_rutinaria_senales_plantilla                 > seguir_frustrado_preguntar_implantacion_ideas                levantada hoy: NO
+
+**Cada vecino del barrido tiene su linea y cada linea su vecino**: `52` y `52`, cero ilegibles (las `20` filas por candidato, con
+`FALTAN 0 | SOBRAN 0` cada una, en `.v78ext/comprobar_veredictos.txt`). **El `NO` de la unica arista por lectura es lo esperado**: el
+barrido no levanta el par en ningun sentido, y por eso la arista va por lectura y no como `CONTINUA` (`D78.13`).
+
+### 78.4.2. Las aristas por lectura (`D.29`, `D.37`, `D.53`), en `.v78ext/aristas_lectura.txt`
+
+**`1` `SOSTENGO` y `21` `NO SOSTENGO`**, cada una con su paso, su linea del libro y su razon; **`5` `NO SOSTENGO` con madre que ya vive
+en el grafo**, las de Zhuo y Scott primero (`desplegar_plan_orden_operaciones_franqueza_radical` de Scott; `alinear_equipo_proposito_comun`,
+`comunicar_valores_diez_formas` y `definir_quien_responde_cada_cosa` de Zhuo; `delegar_tarea_base_comun_seguimiento` de Grove), ninguna
+levantada por la senial. **Dos de esas cinco no son madre ni hermana: son FRONTERA DECLARADA** (`6.1`, dos doctrinas legitimas): Zhuo
+manda decir el mensaje de diez formas y Marquet no cambiarlo, y Grove dice que delegar sin seguimiento es abdicar donde Marquet quita el
+seguimiento de arriba. La vara de la sede la dicen su cabecera y dos precedentes del frente de Marquet que no se reabren (`D.47`): **la
+arista es de despliegue y no de calendario** (`ACTA M2` `3.5`) y **una lista de mecanismos que no es nodo no es cabeza** (`ACTA M3`
+`M3.6.a`). Las lineas de la unica `SOSTENGO`:
+
+    $ for p in 'Dave was earnest and forthright but frustrated and defensive' 'After the meeting I followed Dave to his stateroom'; do grep -n -o -F "$p" fuentes/marquet_turn_the_ship/cap_03.md; done
+    21:Dave was earnest and forthright but frustrated and defensive
+    23:After the meeting I followed Dave to his stateroom
+
+**`D.37` en los titulos que dicen cuantas partes tienen** (el comentario final del fichero): `ceder_control_reforzar_competencia_claridad`
+cuenta dos pilares que no son nodo, y las otras seis fichas que cuentan (tres gestos, tres ocasiones, tres plazos, tres clases de
+mensaje, siete firmas, dos listas de frases) cuentan sus propios pasos u objetos, ninguno un nodo (`D68.7`). **Sin arista `D.37` en esta
+tanda.**
+
+### 78.4.3. El orden de insercion de las `20`, con una copia de `.v76ext/orden.py`
+
+`.v78ext/orden.py`: rutas a `.v78ext/`, la lista a `.v78ext/lista_barrido.txt`, el tope a `20`, el patron de la `PIEZA` sin distinguir
+mayusculas y con letra final opcional (las de Marquet escriben *la pieza P1* y *pieza combinada P1a*), y `ORDEN`, que es lo unico escrito
+a mano (su cabecera lo dice). La columna `pza` es solo de lectura y toma la primera pieza que nombra el resumen: por eso
+`observar_reunion` sale `R3` (su resumen nombra primero la pieza residuo de su activacion) y `eliminar_seguimiento` sale `?` (*la pieza
+que se mina es P1*). **`ORDEN` es el del libro, con dos movimientos que `D.36` obliga y se dicen**: `recorrer_organizacion_escuchar_plantilla`
+baja dentro de `cap_03` a detras de `inspeccionar_reparto_informacion_notas_jefe`, que levanta en un solo sentido, y queda delante de
+`auditar_formacion_premios_ultima_fila`, que lo levanta a el en un solo sentido; y `reforzar_principios_guia_lenguaje_prueba_conocimiento`
+sube de `cap_14` a delante de `declarar_intencion_reemplazar_peticion_permiso`, que lo levanta en un solo sentido. La primera corrida, con el
+orden del libro, dio esas dos de `D.36` y se corrigio antes de publicar:
+
+<!-- TALLADO: parcial salida=.v78ext/orden.txt -->
+
+    $ python .v78ext/orden.py | tail -10
+    
+    COMPROBACIONES
+      hijo delante de su madre: 0 []
+      D.36, par que levanta en un solo sentido con el que lo levanta entrando antes: 0 []
+      hijo dentro del tope con su madre fuera: 0 []
+      tanda propuesta: 20 de 20; fuera del tope: 
+    
+    ARISTAS ESPERADAS EN LA VUELTA QUE INSERTE ESTAS 20
+      LECTURA    observar_reunion_rutinaria_senales_plantilla             > seguir_frustrado_preguntar_implantacion_ideas
+      CONTINUA con madre= (aristas distintas): 0 | SOSTENGO por lectura: 1 | solapes entre las dos: 0 | aristas esperadas: 1
+
+(La tabla de las `20` filas, entera, en `.v78ext/orden.txt`: `asignar_responsable_unico`, `eliminar_seguimiento`, `identificar_temas` y
+`repetir_mensaje` salen `ENTRARIA`, las otras `16` `BLOQUEARIA`, y las `20` con sus lineas listas.) **Las tres comprobaciones en cero, y
+las `20` caben en el tope.** **Aristas esperadas en la vuelta de insercion: `1`**, por lectura con `forja.py arista`, citando el paso `7`
+de la madre.
+
+**`T4` CERRADA: las tres partes hechas, ninguna fila vacia, ninguna insertada.**

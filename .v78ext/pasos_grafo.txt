@@ -1,0 +1,260 @@
+===== pasear_organizacion_hallar_problemas_pequenios | grafo
+  titulo: Pasear una hora a la semana por la organizacion para enterarte de los problemas pequenios antes de que se vuelvan grandes
+  fuente: ['scott_radical_candor'] | previos: ['decidir_quien_comunica_cada_cuanto'] | siguientes: []
+  cond: Cuando eres jefe de jefes y escuchar hondo en tu organizacion se te ha vuelto imposible: no puedes tener reuniones a solas con cientos o miles de personas, y si pones horas de consulta te llegan los mismos tres quejicas semana tras semana.
+  P1. Parte de la dificultad que el texto mide antes de dar el remedio: escuchar a quienes te reportan directamente es relativamente sencillo aunque lleve tiempo y disciplina, pero si eres jefe de jefes escuchar hondo en tu organizacion es mucho mas dificil, porque no puedes escuchar a todo el mundo ni tener reuniones a solas con cientos o miles de personas, y las horas de consulta te traen a los mismos tres quejicas semana tras semana.
+  P2. Agenda una hora a la semana de tiempo para pasear.
+  P3. Cuenta con que no es un invento nuevo: el texto lo llama una tecnica probada y contrastada, la gestion paseando, y dice que no tiene ninguna complicacion hacerlo.
+  P4. Fijate en las cosas en las que no te fijas cuando estas enterrado en el trabajo en tu mesa o corriendo con la cabeza gacha de una reunion a la siguiente.
+  P5. Preguntale a la gente que te llame la atencion, e idealmente a gente con la que hace tiempo que no hablas, en que estan trabajando.
+  P6. Encuentra algunos problemas pequenios y tratalos como el texto dice, como el universo dentro de un grano de arena.
+  P7. Cuenta con lo primero para lo que sirve ser consciente de esos problemas pequenios: te ayudan a encontrar el diablo en los detalles. Demasiadas veces el jefe es el ultimo en enterarse de que algo va mal, y el texto dice que la razon no suele ser que la gente esconda los problemas a proposito, sino que solo quieren traerte las cosas importantes, y un problema puede ser mas importante de lo que ellos creen.
+  P8. Cuenta con lo segundo: ser consciente de los problemas pequenios y quiza incluso arremangarte y arreglarlos tu misma es la mejor manera de matar la mentalidad del esto no es mi trabajo o, peor, la del esto esta por debajo de mi. Si nada esta por debajo de tu atencion, los demas tambien prestaran atencion a los detalles.
+  P9. Cuenta con lo tercero: cuando demuestras que te importan las cosas pequenias que contribuyen a la felicidad del cliente o a la calidad de vida de tu equipo, de repente a todo el mundo le importan mas, y algunas de las cosas grandes empiezan a funcionar mejor tambien.
+===== equilibrar_microdireccion_ausencia | grafo
+  titulo: Equilibrar la microdireccion y la ausencia al delegar
+  fuente: ['zhuo_manager'] | previos: [] | siguientes: []
+  cond: Siempre que tengas que decidir si te metes tu o das un paso atras y confias en otro.
+  P1. Ten clara la definicion de delegar que el libro usa: el arte de saber cuando meterte tu y cuando dar un paso atras y confiar en otros. El equilibrio es dificil de sostener, como cruzar la cuerda floja con los ojos vendados.
+  P2. Reconoce el primer extremo, el microdirectivo: pides a tus reportes que te consulten cada decision, estas constantemente preguntando como van las cosas y metiendote en la minucia de las tareas, y tienes fama de rondar por detras de las mesas dando tu opinion sobre lo que hay en las pantallas.
+  P3. Cuenta con el coste de ese extremo aunque consigas resultados: tu estilo asfixia. La gente con talento se va porque no soporta trabajar contigo, no siente que le des confianza ni espacio para operar, y no esta aprendiendo porque no tiene ocasion de resolver problemas por su cuenta.
+  P4. Reconoce el otro extremo, el directivo ausente: algunos de tus reportes agradecen la independencia, pero la mayoria desearia mas apoyo, y cuando las cosas se ponen feas el equipo se siente como en tierra de nadie, un sitio sin reglas porque no hay sheriff en el pueblo.
+  P5. Cuenta con el coste de ese: tus manos estan impolutas porque rara vez te remangas y bajas al detalle, no tomas decisiones dificiles ni empujas las cosas por iniciativa propia, y con el tiempo pierdes credibilidad como lider porque no haces gran cosa. Y tus reportes tampoco aprenden, porque no les estas entrenando ni retando.
+  P6. Asume que en el mundo real rara vez estamos en los extremos, pero que si tendemos a inclinarnos hacia un lado o hacia otro segun nuestros valores. La autora, de directiva nueva, estaba del lado ausente porque a ella personalmente le disgustaba que la microgestionaran, y cuando recibio la opinion de que sus reportes querian que se implicara mas, sobrecorrigio y entonces le dijeron que se habia pasado.
+  P7. Cuenta con que lo normal es inclinarte de forma distinta en aspectos distintos del trabajo segun donde este tu equipo. En una misma semana, a ella un reporte le dijo que opinaba demasiado sobre un detalle concreto de diseno, mientras otro le pidio que se implicara mas en la estrategia de otro proyecto: uno estaba seguro de lo que hacia y su implicacion le parecia agobiante, el otro no lo estaba y queria mas ayuda.
+  P8. Cuenta con que en el momento no siempre sabes como lo estas haciendo. Ella ha dado un paso atras en un area pensando que iba bien, y unas semanas despues se ha dado cuenta de que no habia dejado el trabajo bien montado y de que deberia haberse quedado mas cerca del detalle.
+===== comunicar_valores_diez_formas | grafo
+  titulo: No dejar de hablar de lo que te importa, dicho de diez formas distintas
+  fuente: ['zhuo_manager'] | previos: ['alinear_equipo_proposito_comun'] | siguientes: []
+  cond: Cuando algo te importa de verdad y quieres que le importe tambien a tu equipo, y te frena la idea de que repetirte va a resultar pesado o condescendiente.
+  P1. Quitate la idea de que repetirse es de mal estilo, que es lo que la autora creia al empezar a dirigir: se figuraba que su equipo lo encontraria molesto, y quiza incluso condescendiente, si decia lo mismo una y otra vez.
+  P2. Cuando algo te importe hondamente, no rehuyas hablar de ello: al contrario, abraza el decirle a la gente por que te importa.
+  P3. Cuenta con que para que el mensaje cale hay que oirlo diez veces distintas y decirlo de diez formas distintas.
+  P4. Recluta a otros para que ayuden a extender tu mensaje, porque cuantos mas puedas reclutar mas probable es que tenga efecto.
+  P5. Usa las cuatro vias que la autora nombra como las que ella prueba: conversaciones a solas sobre lo que le ronda la cabeza, correos a sus directivos con sus reflexiones de la semana, notas a todo su equipo sobre las prioridades de arriba, y sesiones de preguntas y respuestas en persona centradas en como trabajamos.
+  P6. Mete dentro tus propios traspies y lo que has aprendido con ellos, porque la autora midio que cuanto mas a menudo y mas apasionadamente habla de lo que le importa, incluidos esos traspies, mas positivamente responde su equipo.
+  P7. Mira el metodo que el libro cuenta de Sheryl Sandberg con las conversaciones dificiles, y fijate en que ella misma no recuerda cuando empezo, que es justamente el punto: pudo ser en una reunion de toda la empresa, en un turno de preguntas o en una cena en su casa. Pedia levantar la mano a quien hubiera tenido una conversacion dificil el ultimo mes, y luego contaba una de las suyas recientes.
+  P8. Cuenta con lo que eso produce, que es la razon de hacerlo: notas de gente diciendo a mi tambien me importa eso, como puedo ayudar; otros reforzando los mismos mensajes y apoyandose entre si para cambiar su conducta; y, aun cuando la gente no este de acuerdo contigo, el propio acto de discutirlo abiertamente arroja luz sobre el tema para todos.
+  P9. Cuenta tambien con lo que la autora dice que NO le ha pasado ni una sola vez: que nadie le haya dicho que resulta molesto o condescendiente. La opinion que recibe es la contraria, que hablar de tus valores te hace un lider mas autentico e inspirador.
+===== vivir_valores_propios_evitar_listarlos | grafo
+  titulo: Vivir tus valores y demostrarlos en como diriges, en vez de montar un ejercicio que obligue a la gente a escribirlos y compartirlos
+  fuente: ['scott_radical_candor'] | previos: [] | siguientes: []
+  cond: Cuando alguien propone empezar la formacion de jefes con un ejercicio en el que cada cual escribe y comparte sus valores personales.
+  P1. No montes un ejercicio que obligue a la gente a escribir y compartir sus valores personales, por razonable que suene el argumento a favor, que es que tus valores son lo que te mantiene centrado.
+  P2. Cuenta con la primera razon: desarrollar los valores de uno es el trabajo de toda una vida, y se puede sentir abaratado por un ejercicio de cuarenta y cinco minutos.
+  P3. Cuenta con la segunda: aunque a algunas personas les resulte util enunciar sus valores de forma explicita, otras sienten que es imposible hacerlo de una manera que signifique algo.
+  P4. Y cuenta con la tercera, que el texto pone por la mas importante: mucha gente siente que sus valores son un conjunto de creencias muy privado que no quiere hablar con sus companieros.
+  P5. Cuenta tambien con que otros pueden tomarse el ejercicio como una invitacion a predicar, y con que la forma en que hablen de sus valores puede subrayar diferencias que en realidad no tienen nada que ver con su capacidad de trabajar juntos.
+  P6. Cuenta con que un ejercicio que obliga a hablar de los valores en publico puede abrir una brecha en vez de ayudar a la gente a encontrar lo que tiene en comun: el texto cuenta el caso de un alumno suyo, un hombre homosexual del medio oeste, que estaba seguro de que si hubiera salido del armario en su trabajo anterior muchos companieros le habrian apartado, y para quien hacer alli un ejercicio de valores habria significado mentir sobre los suyos.
+  P7. Manten tu el contacto con tus propios valores personales.
+  P8. Y demuestralos en como diriges a tu equipo, no escribiendo cosas como trabajo duro, honradez o innovacion en un papel.
+  P9. Vive tus valores, y no intentes listarlos como un ejercicio de recursos humanos.
+===== repartir_decision_cercanos_hechos | grafo
+  titulo: Repartir las decisiones entre los mas cercanos a los hechos en vez de tomarlas tu por ser el jefe
+  fuente: ['scott_radical_candor'] | previos: [] | siguientes: []
+  cond: Cuando en tu equipo las decisiones las estas tomando tu, o las toma el mas veterano de la sala, y no quien tiene delante los hechos.
+  P1. Mete las decisiones en los hechos, o trae los hechos a las decisiones, y deja el ego fuera, empezando por el tuyo.
+  P2. No des por hecho que ser jefe te convierte en el que decide. El texto lo dice con el ejemplo de George W. Bush, que dijo yo soy el que decide y parecia ser el unico que no sabia que no lo era.
+  P3. Cuenta con la averia que James March llama decidir a bote de basura: deciden los que por casualidad estan alrededor de la mesa, en vez de los que tienen la mejor informacion.
+  P4. Cuenta con que la mayoria de las culturas tienden a favorecer o a los mas veteranos o a los que tienen la clase de caracter que insiste en sentarse a la mesa, y que las malas decisiones que salen de ahi estan entre las mayores causas de mediocridad de una organizacion y de insatisfaccion de su gente.
+  P5. En vez de decidir tu, crea un proceso de decision claro que de poder a los que estan mas cerca de los hechos para tomar tantas decisiones como sea posible.
+  P6. Cuenta con lo que el texto dice que se gana con eso: no solo mejores decisiones, tambien mejor animo.
+  P7. Si sospechas que alguien de tu equipo esta decidiendo por todos, ve a su reunion y mira a la sala, no al que habla. La autora vio hombros caidos, brazos cruzados, caras de piedra y un silencio tan alto que atravesaba el discurso bien preparado de Mark.
+  P8. Cuando veas eso, haz la pregunta a la sala que abre la conversacion. La autora pregunto: si Mark no hubiera decidido estos objetivos, que habriais planeado hacer vosotros el trimestre que viene.
+  P9. Da la vuelta a la mesa hasta oir a todo el mundo, y convoca de nuevo al dia siguiente.
+  P10. Comprueba las tres cosas que el texto pone como el diagnostico de ese caso: si las decisiones estan apoyadas en los hechos, si alguien va a ejecutarlas aunque fueran las correctas, y si el jefe esta en peligro de perder a su equipo.
+  P11. Cuenta con que saltarse escuchar, clarificar, debatir y decidir para ir directo a persuadir es un error corriente que no se limita a los jefes nuevos.
+===== montar_reunion_general_presentaciones_preguntas | grafo
+  titulo: Montar la reunion general del equipo entero con sus dos partes: las presentaciones que persuaden y las preguntas abiertas que dejan oir el disenso
+  fuente: ['scott_radical_candor'] | previos: ['decidir_quien_comunica_cada_cuanto'] | siguientes: []
+  cond: Cuando tu equipo ha crecido lo bastante como para que las decisiones que se toman empiecen a parecer misteriosas o incluso turbias a quien no estuvo cerca del proceso.
+  P1. Mira primero si te hace falta, con el corte que el texto da: si tienes un equipo de diez personas o menos, probablemente no necesitas una reunion aparte para asegurarte de que todo el mundo esta persuadido de que se han tomado las decisiones correctas.
+  P2. Pero segun tu equipo se hace mas grande, empieza a pensar como te traes a todos contigo, porque el texto dice que es chocante lo rapido que las decisiones que toman algunos empiezan a parecerles misteriosas o incluso turbias a quienes no estuvieron cerca del proceso.
+  P3. Si tu equipo es de cien personas o mas, monta una reunion general con regularidad, que el texto dice que ayuda de verdad a conseguir respaldo amplio para las decisiones que se toman y tambien a enterarte del disenso.
+  P4. Montala con las dos partes que el texto dice que suelen incluir: presentaciones para persuadir a la gente de que la empresa esta tomando buenas decisiones y va en la direccion correcta, y un turno de preguntas y respuestas llevado de manera que quien dirige pueda oir el disenso y responderlo de frente.
+  P5. Cuenta con lo que el texto dice que pasa cuando se lleva bien: las respuestas que dan los que dirigen a esas preguntas, que a menudo son bastante incomodas, suelen persuadir mas que las presentaciones.
+  P6. Centra las presentaciones en una o dos iniciativas que sean especialmente emocionantes e importantes.
+  P7. Usalas para las dos cosas que el texto les pone: informar a todos de las prioridades mas amplias y conseguir su respaldo.
+  P8. Y haz que las presente el equipo que esta trabajando en la iniciativa, no tu: el texto dice que esa practica construia el musculo de persuadir en toda la empresa, y que a la gente normalmente le encantaba presentar en esas reuniones. Si tu equipo quiere el escenario, dale el escenario.
+  P9. Deja el turno de preguntas en manos de quien dirige la empresa o la fundo, porque es a ellos a quienes les toca responder esas preguntas a menudo desagradables, desafiantes o incomodas, y porque es asi como se enteran de lo que la gente piensa de verdad.
+  P10. Cuida como se responden esas preguntas, porque el texto dice que es enormemente importante para persuadir a mucha gente a la vez de que se estan tomando las decisiones correctas de la manera correcta.
+  P11. Y responde como el texto dice que respondian los dos fundadores que pone de ejemplo: aceptando toda clase de preguntas semana tras semana, sin ese tono sobrepreparado y sobremensajeado en el que caen a veces los que dirigen, con respuestas espontaneas, humanas y del todo autenticas, y volviendo a la reunion siguiente a recibir otra vez preguntas duras e incomodas.
+===== delegar_tarea_base_comun_seguimiento | grafo
+  titulo: Delegar una tarea sobre una base comun de informacion, sin farsa y con su seguimiento, porque delegar sin seguimiento es abdicar
+  fuente: ['grove_high_output'] | previos: ['transmitir_objetivos_prioridades_preferencias'] | siguientes: ['supervisar_tarea_delegada_etapa_menor_valor', 'supervisar_decision_delegada_preguntas_concretas']
+  cond: Cuando vas a pasar una tarea tuya a un subordinado y quieres que el resultado llegue sin tener que prescribirle cada actividad en detalle.
+  P1. Cuenta con que el tiempo de un mando tiene una jerarquia de valores, y con que por eso la delegacion es un aspecto esencial del mando.
+  P2. Antes de delegar, comprueba que quien delega y quien recibe comparten una base comun de informacion y un conjunto comun de ideas o nociones operativas sobre como abordar la resolucion de problemas, que es un requisito que muchas veces no se cumple.
+  P3. Cuenta con que, si las dos partes no comparten esa base comun relevante, quien recibe solo puede llegar a ser un delegado efectivo con instrucciones especificas, y eso, igual que en la intromision donde las actividades concretas se prescriben en detalle, produce palanca de mando baja.
+  P4. Revisa que tareas no quieres soltar en realidad: todos tenemos algunas que no queremos delegar simplemente porque nos gusta hacerlas y preferimos no soltarlas.
+  P5. Deja que eso pase solo si se apoya en una decision consciente de retener ciertas tareas que disfrutas haciendo aunque pudieras delegarlas si quisieras; sabe exactamente lo que estas haciendo y evita la farsa de la delegacion insincera, que produce una palanca de mando negativa inmensa.
+  P6. Antes de decidir si delegas las actividades que te son familiares o las que no, aplica el principio: delegar sin seguimiento es abdicar.
+  P7. Cuenta con que nunca puedes lavarte las manos de una tarea: aun despues de delegarla sigues siendo responsable de que se cumpla, y supervisar la tarea delegada es la unica via practica que tienes de asegurar un resultado.
+  P8. Separa el seguimiento de la intromision: supervisar no es entrometerse, sino comprobar que una actividad avanza en linea con lo que se espera de ella.
+  P9. Elige con esa vara que delegas: como es mas facil supervisar algo que te resulta familiar, si tienes eleccion delega aquellas actividades que mejor conoces.
+  P10. Cuenta de antemano con lo que el experimento del lapiz ensena: es muy probable que hacerlo asi vaya en contra de tu fibra emocional.
+===== definir_quien_responde_cada_cosa | grafo
+  titulo: Definir quien responde de cada cosa antes de que la conversacion termine
+  fuente: ['zhuo_manager'] | previos: ['fijar_proceso_trabajo_equipo'] | siguientes: []
+  cond: Al final de cualquier conversacion de la que tenga que salir trabajo, y tambien cada vez que escribes a mas de una persona sobre un asunto que pide seguimiento.
+  P1. Reconoce la escena en la que no va a pasar nada. El libro la describe: cinco personas generando ideas, alguien propone permitir deslizar entre secciones, otro pregunta si la gente lo descubriria, un tercero dice hagamos investigacion para entenderlo, un cuarto anade que se puede hablar con quien intento algo parecido hace un anio, y la conversacion sigue y sigue.
+  P2. Cuenta con lo que va a pasar ahi, que es nada: se hablo de investigar y de hablar con alguien, pero no se creo ninguna tarea porque nadie se apunto explicitamente a hacerla.
+  P3. Entiende la regla general: cuando la responsabilidad no esta clara, las cosas se cuelan por las grietas.
+  P4. Aplicalo tambien fuera de las reuniones: cada vez que escribes a mas de una persona sobre un asunto que necesita seguimiento, quienes lo reciben pueden quedar confundidos sobre de quien esperas que haga que, y cada uno puede suponer que el responsable es otro.
+  P5. No confies en las buenas intenciones. La autora sento a dos de las personas mas talentosas de su equipo, les conto un problema nuevo y dificil y les pidio que trabajaran juntos para dar con una solucion, pensando que sus fuerzas se complementarian bien.
+  P6. Cuenta con como fallo eso, que es la parte util del caso: tenian opiniones muy distintas sobre que hacer, y como ella no definio ni como queria que trabajaran juntos ni quien tenia en ultima instancia la autoridad de decidir, discutieron en circulos intentando convencerse uno al otro, y el avance se paro en seco.
+  P7. Quedate con la leccion que ella saca: cuanto mas claro seas sobre a quien haces responsable de que, menos espacio hay para la ambiguedad y para los cables cruzados.
+  P8. Aclara la expectativa por delante en una de las dos formas que el libro escribe. La primera, repartiendo por partes: me gustaria que tu llevaras la delantera en enmarcar las opciones, y que tu te hicieras cargo de definir el lenguaje visual.
+  P9. La segunda, repartiendo y reservandote la decision: que cada uno de vosotros haga su intento de como lo disenaria, y en las areas donde tengais opiniones distintas nos juntamos los tres y yo decido.
+===== alinear_equipo_proposito_comun | grafo
+  titulo: Alinear al equipo con un proposito comun
+  fuente: ['zhuo_manager'] | previos: [] | siguientes: ['ligar_tareas_proposito_organizacion', 'comunicar_valores_diez_formas']
+  cond: Cuando alguien de tu equipo esta haciendo cosas que a ti te parecen poco importantes o un derroche, o cuando notas conflictos y expectativas desalineadas: son lo que produce un proposito que falta o que esta poco claro.
+  P1. Ten claro que el proposito es el resultado que tu equipo intenta lograr, el porque, y contesta las tres preguntas con las que el libro lo despliega. Por que te levantas y eliges hacer esto en vez de las otras mil cosas que podrias estar haciendo, por que vuelcas tu tiempo y tu energia en esta meta concreta con este grupo concreto de personas, y que seria distinto en el mundo si tu equipo tuviera un exito descomunal.
+  P2. Comprueba que todos en el equipo tienen una imagen parecida de por que importa nuestro trabajo.
+  P3. Entiende y cree tu mismo en el proposito, porque conseguir que los demas lo entiendan y crean en el lo exige antes de ti.
+  P4. Compartelo en cada ocasion que tengas: al escribir correos, al fijar objetivos, al verte con una sola persona de tu equipo y al dirigir reuniones grandes.
+  P5. No te limites a exigir que todos crean en tu vision: quien piense que tu gran plan es una tonteria no va a estar motivado para sacarlo adelante, y puede decidir irse a un proyecto que le importe mas.
+  P6. Cuando veas a alguien de tu equipo trabajando sobre una impresion distinta de para que existe esto, subelo a bordo de lo que de verdad te importa, que es lo que evita esos desalineamientos.
+===== desplegar_plan_orden_operaciones_franqueza_radical | grafo
+  titulo: Desplegar en tu equipo el plan de franqueza radical por el orden de operaciones que el texto pone, etapa a etapa y con su parada de evaluacion en medio
+  fuente: ['scott_radical_candor'] | previos: [] | siguientes: ['armar_plan_anual_crecimiento_equipo', 'bloquear_tiempo_pensar_calendario', 'desplegar_tres_conversaciones_carrera', 'evitar_obsesion_ascenso_estatus', 'reconocer_excelencia_trayectoria_gradual', 'contar_historias_propias_explicar_franqueza_radical', 'desplegar_marco_franqueza_radical', 'contar_cuatro_historias_propias_ver_hueco_intencion', 'pedir_critica_primero_crear_seguridad_psicologica']
+  cond: Cuando has leido el libro y vas a empezar a poner sus sugerencias en practica en tu equipo, y no sabes por donde empezar ni en que orden.
+  P1. Parte de lo que el texto pone: ya toca empezar a poner en practica las sugerencias del libro, y la pregunta es que hacer primero, que es lo que el texto llama el orden de operaciones.
+  P2. Cuenta con lo que el texto distingue antes de darte el plan: explicar ideas y tecnicas es un negocio muy distinto de ponerlas a funcionar, y lo que viene es un plan para construir una cultura de franqueza radical en tu equipo.
+  P3. Y si te atascas en alguna parte del plan, ve al epilogo: el texto dice que ahi hay consejo mas detallado sobre compartir tus historias, pedir critica, dar elogio y medir tu critica.
+  P4. Empieza por la etapa que el texto pone primera, y su rotulo es comparte tus historias.
+  P5. Sigue por la segunda, cuyo rotulo es prueba que aguantas antes de empezar a repartir: empieza a pedir a tu equipo que te critique.
+  P6. Y no dejes que la gente se libre cuando no diga gran cosa, porque al principio no la va a decir. Abraza la incomodidad para pasar de ella.
+  P7. Presta mucha atencion si no te esta llegando ninguna critica: que no te critiquen no significa que te crean perfecto.
+  P8. Si quieres, copia el marco de la franqueza radical del capitulo dos y lleva ahi la cuenta de quien te dice que.
+  P9. Y si te das cuenta de que no te llega ninguna critica, prueba la tecnica de la caja naranja de Michael Dearing.
+  P10. Cuenta con lo que el texto dice que es pedir guia, y sobre todo critica: no es algo que se hace una vez y se tacha de la lista, es algo que vas a hacer a diario, en conversaciones pequenias de uno a dos minutos, y no en reuniones que tengas que anadir al calendario. Es algo de lo que ser consciente, no algo que programar.
+  P11. Cuenta tambien con que al principio se te va a hacer raro, y con que cuando cojas la costumbre lo raro sera no hacerlo: el texto dice que nunca pasaras de recibir guia, igual que nunca pasaras de tener que beber agua o lavarte los dientes.
+  P12. Cuando eso este en marcha ya estas listo para las conversaciones de carrera: empiezalas con tu equipo, y empieza por las personas con las que llevas mas tiempo trabajando.
+  P13. Cuenta con que tampoco son algo que se hace una vez y se tacha de la lista: la gente cambia, y tu tienes que cambiar con ella.
+  P14. Por eso el texto dice que es buena idea hacer una ronda de conversaciones de carrera al anio con cada persona a tu cargo, dentro de vuestro tiempo de reunion a solas.
+  P15. En paralelo, perfecciona tus reuniones a solas, y el texto dice por que en paralelo: vas a tardar al menos de tres a seis semanas en pasar esas tres conversaciones con todo tu equipo, porque quieres dejar una o dos semanas entre cada una de las tres.
+  P16. Asegurate en ese tiempo de que estas teniendo reuniones a solas con sentido con las personas a tu cargo.
+  P17. Despues de haber explicado la franqueza radical, pedido guia, tenido las conversaciones de carrera y mejorado tus reuniones a solas, notaras que te estas ganando la confianza de tu equipo y construyendo una cultura mejor. Entonces estas listo para empezar a mejorar como das elogio y critica improvisados.
+  P18. Acuerdate de que la guia improvisada ocurre mejor en conversaciones de uno a dos minutos.
+  P19. Y asegurate de medir tu guia, porque el texto avisa: puedes creerte radicalmente franco y que una persona no haya oido ninguna critica, otra la haya oido como empatia ruinosa y otra como agresion odiosa. Tienes que ajustar para cada persona, y no basta con ser consciente de ti mismo: hay que serlo tambien de la relacion y de la cultura.
+  P20. Respira hondo y evalua, con las preguntas que el texto pone: como va la cosa, que esta funcionando, que no esta funcionando, con quien puedes hablar, puede ayudarte tu jefe, tu equipo, un mentor de fuera del trabajo, un coach, otra gente de la comunidad de la franqueza radical.
+  P21. Y no intentes hacer mas cosas nuevas hasta que sientas estas tres: que has avanzado bien en el ladrillo fundamental de la gestion, que es recibir y dar guia; que conoces mejor a las personas a tu cargo; y que estas contento con tus reuniones a solas.
+  P22. Si la respuesta a esas tres es si, estas listo para perfeccionar las reuniones de equipo, las decisiones y los debates: el texto dice que ya has construido los cimientos de confianza que son el centro de tu capacidad de sacar cosas adelante.
+  P23. Asegurate de que tus reuniones de equipo son lo mas productivas posible: durante la reunion revisas las metricas clave, compartes actualizaciones e identificas tus grandes decisiones y tus grandes debates. No dejes que se alarguen demasiado, y no te las saltes.
+  P24. Y aprovecha que es buen momento para estrenar las reuniones de gran decision y las de gran debate.
+  P25. Vuelve a la guia: asegurate de que estas fomentando la guia entre las personas de tu equipo.
+  P26. Establece en tu equipo una norma de nada de punialadas por la espalda, o de escalada limpia, y explicala: no vas a permitir que una persona venga a hablarte de otra.
+  P27. Puedes darles a leer el apartado de impedir las punialadas por la espalda del capitulo seis, pero el texto dice que lo importante no es que lo lean sino que tu lo hagas cumplir, y que vas a tener que hacer seguimiento.
+  P28. Cuenta con lo que esa norma cuesta y con lo que ahorra: a veces te caeran en el calendario reuniones extra para resolver disputas, y aun asi ahorrara mas tiempo del que cuesta, porque habra menos situaciones politicas estallandote en la cara.
+  P29. Pelea la multiplicacion de reuniones: asegurate de que no te estan sobreprogramando, y piensa muy a conciencia que estas haciendo que puedas dejar de hacer.
+  P30. Pon algo de tiempo para pensar en tu calendario.
+  P31. Y cuenta con que el desorden de calendario es una pelea permanente para la mayoria de las organizaciones: pelea la buena pelea, no solo por ti sino en nombre de tu equipo.
+  P32. Planea el futuro de tu equipo: empieza a hacer un plan de gestion del crecimiento para cada persona de tu equipo.
+  P33. Asegurate de que no estas creando una cultura obsesionada con el ascenso, y dedica un pensamiento extra a como estas recompensando a tus estrellas de rock.
+  P34. Vuelve otra vez a la guia, ahora entre ellos: pide a tu equipo que empiece a medirse la guia unos a otros. El texto da la razon: son mas que tu, asi que cualquier cosa que consigas para que se den entre ellos mas elogio y mas critica radicalmente francos reforzara la cultura y te dara mas palanca que toda la guia que puedas dar o recibir tu en persona.
+  P35. Si se resisten, prueba a empezar con la tecnica del uy, que despiste de Dan Woods en tu proxima reunion de equipo.
+  P36. Y aprovecha ese momento para evaluar si sigues haciendo un buen trabajo recibiendo y dando guia, acordandote de que es dificil, de que no es natural, y de que es el ladrillo atomico de la gestion.
+  P37. Pasea por la organizacion: llevas ya un tiempo en esto, asi que preguntate si las cosas se sienten distintas en el equipo, y que cosas quieres saber y no estas oyendo.
+  P38. Aparta un rato cada semana para pasear y tener charlas informales y espontaneas con la gente.
+  P39. Si tienes la sensacion de que las cosas siguen sin ir bien y de que hay mucho escepticismo en el equipo, vuelve al paso uno.
+  P40. Y valora ademas estrenar una semana de arreglo de averias de gestion. Preguntate tambien como se siente tu cultura y que puedes hacer para mejorarla.
+  P41. Si eres jefe de jefes, prueba las reuniones de salto de nivel con todo tu equipo: el texto dice que solo hace falta hacerlas una vez al anio, y que es buena idea agruparlas en un periodo de dos semanas para que nadie se sienta senialado.
+  P42. Y empieza a llevar un enfoque mas radicalmente franco a los procesos que tu empresa ya tenga: se radicalmente franco al contratar, al despedir y al ascender, y tambien al dar las evaluaciones formales de desempenio.
+===== escuchar_entender_critica_dominar_defensa | grafo
+  titulo: Escuchar la critica con intencion de entender y no de responder, dominando tu propia defensa con la practica de escuchar tres minutos sin interrumpir
+  fuente: ['scott_radical_candor'] | previos: ['abrazar_incomodidad_arrancar_critica_equipo', 'pedir_critica_primero_crear_seguridad_psicologica'] | siguientes: []
+  cond: Cuando estas recibiendo una critica y notas que te estas poniendo a la defensiva, aunque la hayas pedido tu.
+  P1. Parte de lo que el texto reconoce que pasa: recibir critica puede disparar en nosotros la respuesta de pelea, huida o bloqueo, incluso cuando la hemos pedido.
+  P2. Cuenta con que no solo cuesta la critica injusta: la critica justa, sobre todo cuando toca algo que ya no nos gusta de nosotros mismos, tambien cuesta.
+  P3. Averigua que te ayuda a ti a procesar lo que oyes sin caer en una respuesta defensiva, que es lo que el texto encarga: un ejercicio de respiracion puede ayudar, y tambien dar un trago largo de una botella de agua.
+  P4. Y sobre todo practica con otros, que es lo que el texto pone por encima de lo demas.
+  P5. Practicalo asi: busca una pareja con quien practicar, sea companiero de trabajo, amigo o familiar.
+  P6. Que una persona hable durante tres minutos.
+  P7. Despues cambiad los papeles y escucha a la otra persona hablar, sin interrumpir.
+  P8. Podeis hablar de lo que querais: cualquier cosa que os importe de verdad, del trabajo o de fuera de el.
+  P9. Si eres tu quien escucha, dale a quien habla el regalo de tu atencion completa.
+  P10. Puedes asentir, o decir ya veo o entiendo, pero este no es el momento de preguntas.
+  P11. Ni de que relaciones su historia con algo que te importe a ti, como tu historia favorita de las vacaciones en Hawai.
+  P12. Ni de darle a quien habla ese consejo que le va a cambiar la vida para siempre: tu trabajo no es dar consejo, es escuchar.
+  P13. Y cuenta con lo que el texto ha medido haciendo esto: companieros que llevaban mas de diez anios en el mismo equipo aprendieron mas unos de otros en tres minutos que en una decada trabajando juntos. Escuchar, escuchar de verdad, es increibleme
+===== operar_modelo_gente_destreza_minima | grafo
+  titulo: Operar el modelo con gente del nivel de destreza mas bajo posible, y construir el sistema que la apalanca
+  fuente: ['gerber_emyth'] | previos: ['fingir_prototipo_cinco_mil_replicas'] | siguientes: []
+  cond: Cuando trabajas la regla 2 del prototipo de tu negocio y tienes que decidir con que gente se opera el modelo para que se pueda replicar.
+  P1. Cuenta con el motivo por el que la regla existe: si tu modelo depende de gente muy cualificada sera imposible de replicar, esa gente es escasa en el mercado, y ademas es cara, lo que sube el precio que tendras que cobrar.
+  P2. Lee el nivel mas bajo posible como el texto lo define: el nivel mas bajo necesario para cumplir las funciones a las que cada puesto esta destinado.
+  P3. Ten los titulados que tu oficio exija, que es la salvedad que el texto pone: si lo tuyo es un despacho de abogados tienes que tener abogados, y si es una consulta medica tienes que tener medicos.
+  P4. No necesitas contratar abogados brillantes ni medicos brillantes: necesitas crear el mejor sistema posible para que buenos abogados y buenos medicos queden apalancados y produzcan resultados exquisitos.
+  P5. Sigue haciendote la pregunta que el texto manda repetirse: como le doy a mi cliente el resultado que quiere de forma sistematica en vez de personal.
+  P6. Hazte esa misma pregunta de la otra manera en que el texto la escribe: como creo un sistema experto en vez de contratar uno.
+  P7. Trata el sistema como las herramientas que tu gente usa para subir su productividad y hacer el trabajo como hay que hacerlo para que tu negocio se distinga de su competencia.
+  P8. Asume que tu trabajo, o mas exactamente el trabajo de tu negocio, es desarrollar esas herramientas y ensenar a tu gente a usarlas.
+  P9. Deja claro que el trabajo de tu gente es usar las herramientas que has desarrollado y recomendar mejoras a partir de su experiencia con ellas.
+  P10. Comprueba que no estas prefiriendo gente muy cualificada solo porque te haga a ti el trabajo mas facil, que es lo que el texto llama preferir la Management by Abdication a la Management by Delegation.
+===== cuantificar_impacto_innovacion_6_pasos | grafo
+  titulo: Cuantificar el impacto real de una innovacion en tu negocio con los seis conteos que el libro enumera
+  fuente: ['gerber_emyth'] | previos: ['cambiar_saludo_cliente_dos_ramas'] | siguientes: []
+  cond: Cuando pruebas una innovacion en tu negocio, por ejemplo cambiar las palabras con que saludas a un cliente que entra, y quieres saber si de verdad funciono.
+  P1. Determina cuantas personas entraron por la puerta antes de poner en marcha la innovacion.
+  P2. Determina cuantas personas compraron productos y cual fue el valor en dolares de esos productos, antes de cambiar las palabras y lo que decias para producir esas ventas.
+  P3. Cuenta cuantas personas entraron por la puerta despues de cambiar las palabras.
+  P4. Cuenta cuantas personas compraron algo, despues del cambio.
+  P5. Determina el valor promedio de una venta.
+  P6. Determina cual fue la mejora que produjo tu innovacion.
+===== dictar_ritmo_crecimiento_preguntas_escritas | grafo
+  titulo: Dictar el ritmo de crecimiento de tu negocio con los tres conocimientos clave, las preguntas correctas y el plan escrito
+  fuente: ['gerber_emyth'] | previos: [] | siguientes: []
+  cond: Cuando tu negocio va a crecer y quieres dictar tu su ritmo en vez de reaccionar al crecimiento que se te venga encima.
+  P1. Entiende los procesos clave que hay que ejecutar, que es el primero de los tres conocimientos con los que el texto dice que se dicta el ritmo de crecimiento.
+  P2. Entiende los objetivos clave que hay que alcanzar, que es el segundo.
+  P3. Entiende la posicion clave que quieres que tu negocio ocupe en el mercado, que es el tercero.
+  P4. Hazte las preguntas correctas, que el texto enumera una a una: donde quiero estar, cuando quiero estar alli, cuanto capital hara falta, cuanta gente haciendo que trabajo y como, que tecnologia hara falta, y cuanto espacio hara falta en la marca uno, en la marca dos y en la marca tres.
+  P5. Cuenta con equivocarte a veces, con cometer errores y con cambiar de opinion, y ten por eso los planes de contingencia puestos: mejor caso y peor caso.
+  P6. Planifica, imagina y articula lo que ves en el futuro tanto para ti como para tus empleados, incluso mientras estas adivinando.
+  P7. Escribelo, con claridad, de modo que otros puedan entenderlo, porque el texto dice que si no lo articulas asi entonces no lo posees.
+  P8. Recuerda que cualquier plan es mejor que ningun plan.
+===== interrogar_negocio_cinco_preguntas | grafo
+  titulo: Ponerte a trabajar en tu negocio como si fuera un prototipo de preproduccion, y hacerte las cinco preguntas del capitulo
+  fuente: ['gerber_emyth'] | previos: [] | siguientes: []
+  cond: Cuando cierras el trabajo del prototipo de tu negocio y quieres comprobar si estas trabajando sobre el o dentro de el.
+  P1. Ponte a trabajar sobre tu negocio en vez de dentro de el.
+  P2. Ponte a trabajar sobre el como si fuera el prototipo de preproduccion de un producto fabricable en serie.
+  P3. Piensa tu negocio como algo aparte de ti mismo, en las formas que el texto enumera: un mundo propio, un producto de tu esfuerzo, una maquina disenada para cubrir una necesidad muy concreta, un mecanismo para darte mas vida, un sistema de piezas interconectadas, un paquete de cereales, una lata de judias, algo creado para satisfacer las necesidades percibidas de tus consumidores, un sitio que actua claramente distinto de todos los demas, y una solucion al problema de otro.
+  P4. Piensa tu negocio como cualquier cosa menos como un empleo.
+  P5. Hazte la primera pregunta: como consigo que mi negocio funcione, pero sin mi.
+  P6. Hazte la segunda: como consigo que mi gente trabaje, pero sin mi interferencia constante.
+  P7. Hazte la tercera: como sistematizo mi negocio de manera que se pudiera replicar 5.000 veces y la unidad numero 5.000 funcionara tan bien como la primera.
+  P8. Hazte la cuarta: como poseo mi negocio y sigo estando libre de el.
+  P9. Hazte la quinta: como paso el tiempo haciendo el trabajo que me gusta hacer en vez del trabajo que tengo que hacer.
+  P10. Quedate con lo que el texto dice que va a pasar cuando te las hagas: acabaras dando de bruces con el problema de verdad, que es que no sabes las respuestas.
+===== usar_banco_nueve_preguntas_entrevista | grafo
+  titulo: Usar el banco de nueve preguntas que un grupo de mandos considero las mejores para entrevistar a un candidato
+  fuente: ['grove_high_output'] | previos: [] | siguientes: []
+  cond: Cuando el mando va a entrevistar a un candidato a un puesto y necesita preguntas concretas para la hora o dos de entrevista de que dispone.
+  P1. Pide al candidato que describa proyectos que fueron muy valorados por su direccion, en especial por los niveles por encima de su supervisor inmediato.
+  P2. Preguntale cuales son sus debilidades y que esta haciendo para eliminarlas.
+  P3. Pidele que te convenza de por que tu empresa deberia contratarlo.
+  P4. Preguntale que problemas esta encontrando en su puesto actual, como los esta resolviendo y que podria haber hecho para evitar que aparecieran.
+  P5. Preguntale por que cree que esta listo para este nuevo puesto.
+  P6. Preguntale cuales considera sus logros mas importantes y por que fueron importantes para el.
+  P7. Preguntale cuales considera sus fracasos mas importantes y que aprendio de ellos.
+  P8. Preguntale por que cree que deberia elegirse a un ingeniero para un puesto de marketing, variando esta pregunta segun la situacion.
+  P9. Preguntale cual fue el curso o proyecto mas importante que completo en su etapa universitaria y por que fue tan importante.
+===== pedir_critica_anonima_curso_entrenamiento_dictado | grafo
+  titulo: Pedir critica anonima tras dictar un curso de entrenamiento, con formulario numerico y preguntas abiertas
+  fuente: ['grove_high_output'] | previos: ['desarrollar_primer_curso_entrenamiento'] | siguientes: []
+  cond: Cuando el mando ya dicto su curso de entrenamiento y quiere saber si esta cumpliendo el proposito que se propuso.
+  P1. Despues de dar el curso, pide criticas anonimas a los empleados de tu clase.
+  P2. Usa un formulario que pida calificaciones numericas y que ademas plantee algunas preguntas abiertas.
+  P3. Estudia y considera las respuestas, entendiendo que nunca podras complacer a todos los miembros de tu clase.
+  P4. Ten como objetivo ultimo satisfacerte a ti mismo de que estas logrando lo que te propusiste.
+===== cambiar_saludo_cliente_dos_ramas | grafo
+  titulo: Cambiar el saludo del vendedor por una pregunta con dos ramas de respuesta ya escritas
+  fuente: ['gerber_emyth'] | previos: [] | siguientes: ['cuantificar_impacto_innovacion_6_pasos']
+  cond: Cuando un cliente entra a tu negocio al por menor y tu vendedor va a saludarlo, en vez de usar el saludo habitual que invita a la respuesta automatica no gracias, solo estoy mirando.
+  P1. En vez de preguntar Hi, may I help you?, prueba a preguntar Hi, have you been in here before?
+  P2. Si el cliente responde que si, puedes decirle: Great. We've created a special new program for people who have shopped here before. Let me take just a minute to tell you about it.
+  P3. Si el cliente responde que no, puedes decirle: Great, we've created a special new program for people who haven't shopped here before. Let me take just a minute to tell you about it.
+  P4. Ten creado de antemano ese programa especial nuevo del que hablas en cualquiera de las dos ramas: sin el programa listo, ninguna de las dos respuestas tiene de que hablar.

@@ -1,0 +1,1 @@
+aplicar_ejercicio_codigo_genetico_control poblacion 479 (459 grafo mas 20 bandejas) vecinos 1

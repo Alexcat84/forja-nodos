@@ -1,0 +1,33 @@
+{
+ "id": "contar_firmas_cadena_tramite_parado",
+ "grafo": 459,
+ "bandejas": 20,
+ "vecinos": [
+  {
+   "id": "seguir_frustrado_preguntar_implantacion_ideas",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.354,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.463
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 2 del candidato contra paso 7 de seguir_frustrado_preguntar_implantacion_ideas"
+  },
+  {
+   "id": "inspeccionar_reparto_informacion_notas_jefe",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.36,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.405
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 8 del candidato contra paso 5 de inspeccionar_reparto_informacion_notas_jefe"
+  }
+ ]
+}

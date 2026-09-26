@@ -1,0 +1,31 @@
+#   candidato                                                    cap    pza       madre(s)                                                     pob  dijo       vec  lin   listos
+1   ceder_control_reforzar_competencia_claridad                  cap_01 P1        -                                                            479  BLOQUEARIA 1    1     SI
+2   cambiar_forma_trabajar_conservar_plantilla                   cap_02 P1        -                                                            479  BLOQUEARIA 2    2     SI
+3   encargar_meta_especifica_dejar_libre_metodo                  cap_02 P2        -                                                            479  BLOQUEARIA 3    3     SI
+4   observar_reunion_rutinaria_senales_plantilla                 cap_03 R3        -                                                            479  BLOQUEARIA 3    3     SI
+5   seguir_frustrado_preguntar_implantacion_ideas                cap_03 P4        observar_reunion_rutinaria_senales_plantilla                 479  BLOQUEARIA 6    6     SI
+6   contar_firmas_cadena_tramite_parado                          cap_03 P5        -                                                            479  BLOQUEARIA 2    2     SI
+7   inspeccionar_reparto_informacion_notas_jefe                  cap_03 P6        -                                                            479  BLOQUEARIA 2    2     SI
+8   recorrer_organizacion_escuchar_plantilla                     cap_03 P1        -                                                            479  BLOQUEARIA 3    3     SI
+9   auditar_formacion_premios_ultima_fila                        cap_03 P7        -                                                            479  BLOQUEARIA 2    2     SI
+10  informar_cierre_jornada_conservar_propiedad_trabajo          cap_04 P1        -                                                            479  BLOQUEARIA 6    6     SI
+11  aplicar_ejercicio_codigo_genetico_control                    cap_06 P1        -                                                            479  BLOQUEARIA 1    1     SI
+12  asignar_responsable_unico_evolucion_planificada              cap_06 P2        -                                                            479  ENTRARIA   0    0     SI
+13  reforzar_principios_guia_lenguaje_prueba_conocimiento        cap_14 P1a       -                                                            479  BLOQUEARIA 3    3     SI
+14  declarar_intencion_reemplazar_peticion_permiso               cap_07 P1        -                                                            479  BLOQUEARIA 4    4     SI
+15  resistir_dar_solucion_clasificar_decision_urgencia           cap_08 P1        -                                                            479  BLOQUEARIA 5    5     SI
+16  eliminar_seguimiento_descendente_responsabilizar_dueno       cap_09 ?         -                                                            479  ENTRARIA   0    0     SI
+17  acoger_inspectores_externos_fuente_aprendizaje               cap_10 P1        -                                                            479  BLOQUEARIA 6    6     SI
+18  tomar_accion_deliberada_pausar_vocalizar_gesticular          cap_11 P1        -                                                            479  BLOQUEARIA 3    3     SI
+19  identificar_temas_formacion_tarjetas_decision                cap_12 P1        -                                                            479  ENTRARIA   0    0     SI
+20  repetir_mensaje_invariable_diario_reunion_evento             cap_13 P1        -                                                            479  ENTRARIA   0    0     SI   <- corte del tope
+
+COMPROBACIONES
+  hijo delante de su madre: 0 []
+  D.36, par que levanta en un solo sentido con el que lo levanta entrando antes: 0 []
+  hijo dentro del tope con su madre fuera: 0 []
+  tanda propuesta: 20 de 20; fuera del tope: 
+
+ARISTAS ESPERADAS EN LA VUELTA QUE INSERTE ESTAS 20
+  LECTURA    observar_reunion_rutinaria_senales_plantilla             > seguir_frustrado_preguntar_implantacion_ideas
+  CONTINUA con madre= (aristas distintas): 0 | SOSTENGO por lectura: 1 | solapes entre las dos: 0 | aristas esperadas: 1

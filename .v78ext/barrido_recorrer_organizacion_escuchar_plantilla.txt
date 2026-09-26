@@ -1,0 +1,1 @@
+recorrer_organizacion_escuchar_plantilla poblacion 479 (459 grafo mas 20 bandejas) vecinos 3

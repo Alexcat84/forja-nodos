@@ -1,0 +1,46 @@
+{
+ "id": "encargar_meta_especifica_dejar_libre_metodo",
+ "grafo": 459,
+ "bandejas": 20,
+ "vecinos": [
+  {
+   "id": "ceder_control_reforzar_competencia_claridad",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.381,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.473
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 4 del candidato contra paso 4 de ceder_control_reforzar_competencia_claridad"
+  },
+  {
+   "id": "cambiar_forma_trabajar_conservar_plantilla",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.436,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.459
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 5 del candidato contra paso 2 de cambiar_forma_trabajar_conservar_plantilla"
+  },
+  {
+   "id": "recorrer_organizacion_escuchar_plantilla",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.412,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.416
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 2 del candidato contra paso 4 de recorrer_organizacion_escuchar_plantilla"
+  }
+ ]
+}

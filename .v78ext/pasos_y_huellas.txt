@@ -1,0 +1,21 @@
+1   ceder_control_reforzar_competencia_claridad                  bandeja     6 pasos ef81c96864 igual trabajo=HEAD
+2   cambiar_forma_trabajar_conservar_plantilla                   bandeja     5 pasos 36cfd9d6f7 igual trabajo=HEAD
+3   encargar_meta_especifica_dejar_libre_metodo                  bandeja     5 pasos cda982ac44 igual trabajo=HEAD
+4   observar_reunion_rutinaria_senales_plantilla                 bandeja     9 pasos 9d6356c978 igual trabajo=HEAD
+5   seguir_frustrado_preguntar_implantacion_ideas                bandeja     8 pasos aa5b776b07 DISTINTA trabajo=HEAD
+6   contar_firmas_cadena_tramite_parado                          bandeja    10 pasos 71426b3f58 igual trabajo=HEAD
+7   inspeccionar_reparto_informacion_notas_jefe                  bandeja     8 pasos 34ea4932a9 igual trabajo=HEAD
+8   recorrer_organizacion_escuchar_plantilla                     bandeja     7 pasos fdda3b318a igual trabajo=HEAD
+9   auditar_formacion_premios_ultima_fila                        bandeja    11 pasos 319bc9d6de igual trabajo=HEAD
+10  informar_cierre_jornada_conservar_propiedad_trabajo          bandeja     5 pasos 95b58d58d7 DISTINTA trabajo=HEAD
+11  aplicar_ejercicio_codigo_genetico_control                    bandeja     6 pasos b11e5ee02a igual trabajo=HEAD
+12  asignar_responsable_unico_evolucion_planificada              bandeja     2 pasos d76a2e6d1d igual trabajo=HEAD
+13  reforzar_principios_guia_lenguaje_prueba_conocimiento        bandeja     2 pasos 022ce67ec7 igual trabajo=HEAD
+14  declarar_intencion_reemplazar_peticion_permiso               bandeja     3 pasos d9c0b0ec2b igual trabajo=HEAD
+15  resistir_dar_solucion_clasificar_decision_urgencia           bandeja     5 pasos c75cd39493 igual trabajo=HEAD
+16  eliminar_seguimiento_descendente_responsabilizar_dueno       bandeja     2 pasos 7706b13c41 igual trabajo=HEAD
+17  acoger_inspectores_externos_fuente_aprendizaje               bandeja     3 pasos b00239a102 igual trabajo=HEAD
+18  tomar_accion_deliberada_pausar_vocalizar_gesticular          bandeja     3 pasos d4077e278a igual trabajo=HEAD
+19  identificar_temas_formacion_tarjetas_decision                bandeja     8 pasos d9d18e5a0e igual trabajo=HEAD
+20  repetir_mensaje_invariable_diario_reunion_evento             bandeja     2 pasos 777b8d5ac1 igual trabajo=HEAD
+fichas de las filas 1 a 20: 20 | pasos: 110 | iguales a su blob en e9d0309: 18 | distintas: 2 | fichero de trabajo distinto de HEAD: 0

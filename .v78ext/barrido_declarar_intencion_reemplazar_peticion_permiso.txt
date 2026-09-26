@@ -1,0 +1,1 @@
+declarar_intencion_reemplazar_peticion_permiso poblacion 479 (459 grafo mas 20 bandejas) vecinos 4

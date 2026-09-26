@@ -1,0 +1,102 @@
+# VEREDICTOS LISTOS DE LA VUELTA 78 para las 20 fichas de Marquet, uno por vecino, en el formato de --veredicto
+# (src/aduana.py, parsear_veredicto). Leidos con los pasos de los dos delante (python .v64aud/pasos.py <a> <b>; las 20 en
+# .v78ext/pasos_20.txt, los vecinos del grafo en .v78ext/pasos_grafo.txt) y por la vara 6.1 de AUDITOR_FORJA.md, y solo esa.
+# Una seccion por candidato, en el orden de .v78ext/lista_barrido.txt; cada linea es un vecino que la senial levanta HOY en el sentido
+# candidato a vecino, en el barrido de .v78ext/vecinos_<id>.json (poblacion 479, 459 grafo mas 20 bandejas), sobre las fichas de la
+# bandeja ya corregidas por la TAREA 2 (.v78ext/corregir_t2.py, commit d19671a1). Lo comprueba .v78ext/comprobar_veredictos.py.
+# Por D.53, un par de cabeza a parte (D.37) que la senial levanta iria SANO aqui con su arista aparte; en esta tanda no hay ninguno.
+# La unica arista por lectura (observar_reunion a seguir_frustrado, .v78ext/aristas_lectura.txt) no la levanta el barrido en ningun
+# sentido, asi que no tiene linea aqui. Varios pares ya los leyo el auditor del frente (ACTA M8.5 y M9.4 del archivo de Marquet) desde
+# el barrido de su vuelta 8; se citan como contraste y se leen otra vez con los pasos de hoy. Lo DISCUTIBLE se marco al escribir la linea.
+
+## acoger_inspectores_externos_fuente_aprendizaje
+tomar_accion_deliberada_pausar_vocalizar_gesticular|SANO|Hermanos del mismo libro, dos mecanismos distintos: el vecino es el ritual de pausar, decir en voz alta y senalar antes de actuar (cap_11 L75, L95), y este usa la visita del inspector para difundir, aprender y documentar, con trato distinto segun el area sea fuerte o debil (cap_10 L45, L49). La similitud de 0,457, por encima de 0,4, se lee primero y no es gemelo: comparten la palabra inspector, que en el paso 2 del vecino sale para decir que el ritual no se hace para el. Ninguno usa el producto del otro; el frente lo leyo igual (ACTA M9.4, fila 5).
+resistir_dar_solucion_clasificar_decision_urgencia|SANO|Hermanos, dos mecanismos de CONTROL (cap_08 L107, cap_10 L47): el vecino da espacio al equipo antes de decidir y clasifica la decision por urgencia (L107, L117 a L121), y este trata al inspector como aliado o como fuente segun el area (L49). La similitud de 0,412, por encima de 0,4, se lee primero: solo comparten solucion. Ninguno usa el producto del otro (ACTA M9.4, fila 6).
+declarar_intencion_reemplazar_peticion_permiso|SANO|Hermanos, dos mecanismos de CONTROL: el vecino cambia las frases que piden permiso por frases de intencion (cap_07 L55, L73 a L93), y este usa a los inspectores (cap_10 L45, L49). La similitud de 0,406, por encima de 0,4, se lee primero y es del vocabulario del libro, sin paso comun (ACTA M9.4, fila 2).
+reforzar_principios_guia_lenguaje_prueba_conocimiento|SANO|Ajenos: el vecino escribe premios y evaluaciones en el lenguaje de los principios guia y pregunta a tres personas cuales son (cap_14 L89, L99), y este usa la visita del inspector (cap_10 L45, L49). Ninguno usa el producto del otro (ACTA M9.4, fila 9).
+seguir_frustrado_preguntar_implantacion_ideas|SANO|Ajenos: el vecino sigue al responsable frustrado y le pregunta idea por idea como la implanto (cap_03 L23 a L29), y este usa a los inspectores (cap_10 L45, L49). La similitud es de la prosa del mismo autor, sin paso comun.
+recorrer_organizacion_escuchar_plantilla|SANO|Ajenos: el vecino deja los expedientes y recorre el barco escuchando, con la linterna para las inspecciones de cada jefe (cap_03 L11, L15), y este recibe a inspectores de fuera (cap_10 L45, L49). Comparten la palabra inspeccion, que en el vecino son sus propios recorridos; ninguno usa el producto del otro.
+
+## aplicar_ejercicio_codigo_genetico_control
+resistir_dar_solucion_clasificar_decision_urgencia|SANO|Hermanos, dos mecanismos de CONTROL (cap_06 L117, cap_08 L107): este reescribe en la politica escrita quien tiene la autoridad de decision, con la tarjeta de preocupaciones en la pared (L101 a L111), y el vecino da espacio al equipo antes de decidir y clasifica la decision por urgencia (L107, L117 a L121). Ninguno usa el producto del otro.
+
+## asignar_responsable_unico_evolucion_planificada
+
+## auditar_formacion_premios_ultima_fila
+observar_reunion_rutinaria_senales_plantilla|SANO|Hermanos del mismo capitulo, dos rutinas distintas que el recien llegado lee por su gente: el vecino se sienta en la reunion de jefes y mira ocho senales (cap_03 L17 a L21), y este audita la formacion del muelle desde la ultima fila con sus cinco defectos (L55, L57). Ninguno usa el producto del otro, y el libro no pone a uno dentro del otro.
+recorrer_organizacion_escuchar_plantilla|SANO|Hermanos del mismo capitulo: el vecino recorre el barco y escucha al tomar el mando (cap_03 L11, L15), y este audita la formacion del muelle (L55, L57), que L45 pone despues, entre las rutinas. Calendario y no despliegue (.v78ext/aristas_lectura.txt, DISCUTIBLE D78.13).
+
+## cambiar_forma_trabajar_conservar_plantilla
+escuchar_entender_critica_dominar_defensa|SANO|Ajenos: el vecino del grafo, de scott_radical_candor, es la practica de escuchar tres minutos sin interrumpir para no ponerse a la defensiva ante la critica; este conserva la plantilla y cambia como interactua (cap_02 L25, L27, L29). La senial es paso contra nodo, 0,612, del paso 2 de este (Centrate en trabajar con lo que tienes) contra el paso 4 del vecino (practica con otros): la forma verbal, no el objeto. El frente lo leyo igual (ACTA M9.4, fila 4).
+encargar_meta_especifica_dejar_libre_metodo|SANO|Hermanos del mismo capitulo y del mismo encargo del mismo jefe: el vecino da una meta especifica sin el como, con los mismos recursos y con apoyo (cap_02 L49, L33), y este conserva la plantilla, avisa si hay que cambiar a alguien y fija el reto en como interactua la gente (L25, L27, L29). Se tocan en no cambies a la gente, cambia el como; lo que queda fuera es procedimiento en los dos lados (plazo, canal y mensaje aqui; meta, recursos y apoyo alli). La similitud de 0,441, por encima de 0,4, se lee primero y no es gemelo (ACTA M9.4, fila 3).
+
+## ceder_control_reforzar_competencia_claridad
+encargar_meta_especifica_dejar_libre_metodo|SANO|Hermanos: el vecino encarga una meta sin decir como (cap_02 L49), y este cede el control reteniendo la responsabilidad y refuerza los dos pilares (cap_01 L97). Se tocan en una sola cosa, no decir como frente a ceder el control, y cada uno trae procedimiento propio fuera de ese punto. Ninguno usa el producto del otro (ACTA M8.5 del frente, con el mismo par).
+
+## contar_firmas_cadena_tramite_parado
+seguir_frustrado_preguntar_implantacion_ideas|SANO|Hermanos del mismo capitulo: el vecino sigue a un responsable frustrado y pregunta por cada idea como la implanto (cap_03 L23 a L29), y este sigue un tramite parado por su cadena de firmas (L37 a L43). Los dos acaban en que falla el sistema y no la persona (el paso 10 de este contra el paso 5 del vecino), pero cada uno llega por su propio objeto; ninguno usa el producto del otro.
+inspeccionar_reparto_informacion_notas_jefe|SANO|Hermanos del mismo capitulo: el vecino lee el tablero de mensajes y el orden de reparto por la cadena de mando (cap_03 L45 a L53), y este la cadena de firmas de una papeleta (L37 a L43). Los dos leen un circuito que baja por la cadena de mando, con objetos y pasos distintos; ninguno usa el producto del otro.
+
+## declarar_intencion_reemplazar_peticion_permiso
+resistir_dar_solucion_clasificar_decision_urgencia|SANO|Hermanos, dos mecanismos de CONTROL: los dos tocan quien decide, pero este reescribe el lenguaje de la propuesta (cap_07 L55, L73 a L93) y el vecino clasifica la decision en tres plazos y fija quien opina en cada uno (cap_08 L107, L117 a L121). La similitud de 0,422, por encima de 0,4, se lee primero y no es gemelo: procedimiento propio en los dos lados (ACTA M9.4, fila 1).
+acoger_inspectores_externos_fuente_aprendizaje|SANO|El mismo par que acoger_inspectores lee desde su lado: protocolo de lenguaje contra trato del inspector (cap_07 L55, L73 a L93; cap_10 L45, L49). La similitud de 0,404, por encima de 0,4, se lee primero, sin paso comun (ACTA M9.4, fila 2).
+informar_cierre_jornada_conservar_propiedad_trabajo|SANO|Hermanos: el vecino da el reporte de cierre de jornada que deja la propiedad del trabajo en quien lo hace (cap_04 L35), y este declara la intencion antes de actuar (cap_07 L55, L87 a L93). Los dos cambian lo que el subordinado dice a su superior, en dos momentos y con dos guiones distintos; ninguno usa el producto del otro, y el libro no pone a uno dentro del otro.
+reforzar_principios_guia_lenguaje_prueba_conocimiento|SANO|Ajenos: el vecino escribe premios y evaluaciones en el lenguaje de los principios (cap_14 L89, L99), y este cambia las frases de la peticion de permiso (cap_07 L73 a L93). Los dos hablan de palabras, no del mismo procedimiento.
+
+## eliminar_seguimiento_descendente_responsabilizar_dueno
+
+## encargar_meta_especifica_dejar_libre_metodo
+ceder_control_reforzar_competencia_claridad|SANO|El mismo par que ceder_control lee desde su lado: meta sin el como y con los mismos recursos (cap_02 L49) contra ceder el control y reforzar los pilares (cap_01 L97). Procedimiento propio en los dos lados (ACTA M8.5 del frente).
+cambiar_forma_trabajar_conservar_plantilla|SANO|El mismo par que cambiar_forma lee desde su lado: meta, recursos y apoyo aqui (cap_02 L49, L33), plazo, canal y mensaje alli (L25, L27, L29). La similitud de 0,436, por encima de 0,4, se lee primero y no es gemelo (ACTA M9.4, fila 3).
+recorrer_organizacion_escuchar_plantilla|SANO|Ajenos: el vecino recorre y escucha al tomar el mando (cap_03 L11, L15), y este encarga una meta sin el como (cap_02 L49). La similitud de 0,401, por encima de 0,4, se lee primero, y es del mismo relevo de mando contado por el mismo autor, sin paso comun (ACTA M9.4, fila 7).
+
+## identificar_temas_formacion_tarjetas_decision
+
+## informar_cierre_jornada_conservar_propiedad_trabajo
+seguir_frustrado_preguntar_implantacion_ideas|SANO|Hermanos: el vecino sigue al responsable frustrado y le pregunta por sus ideas (cap_03 L23 a L29), y este es el guion del cierre de jornada (cap_04 L35). La similitud de 0,412, por encima de 0,4, se lee primero: los dos tratan a un jefe de departamento y su superior, con objetos distintos; ninguno usa el producto del otro.
+operar_modelo_gente_destreza_minima|SANO|Ajenos: el vecino del grafo, de gerber_emyth, opera el modelo del negocio con la destreza minima y un sistema que la apalanca; este es el reporte de cierre de jornada al segundo al mando (cap_04 L35). La similitud es de prosa, sin paso comun.
+cuantificar_impacto_innovacion_6_pasos|SANO|Ajenos: el vecino del grafo, de gerber_emyth, cuenta seis cifras antes y despues de una innovacion; este reporta al cerrar el dia (cap_04 L35). La similitud es de la forma de guion citado, sin paso comun.
+dictar_ritmo_crecimiento_preguntas_escritas|SANO|Ajenos: el vecino del grafo, de gerber_emyth, dicta el ritmo de crecimiento con preguntas y un plan escrito; este reporta al cerrar el dia (cap_04 L35). Sin paso comun.
+interrogar_negocio_cinco_preguntas|SANO|Ajenos: el vecino del grafo, de gerber_emyth, se hace cinco preguntas sobre el prototipo del negocio; este reporta al cerrar el dia (cap_04 L35). Sin paso comun.
+usar_banco_nueve_preguntas_entrevista|SANO|Ajenos: el vecino del grafo, de grove_high_output, entrevista a un candidato con nueve preguntas; este reporta al cerrar el dia (cap_04 L35). La similitud es de las frases citadas entre comillas, sin paso comun.
+
+## inspeccionar_reparto_informacion_notas_jefe
+observar_reunion_rutinaria_senales_plantilla|SANO|Hermanos del mismo capitulo: el vecino lee una reunion rutinaria por sus senales de gente (cap_03 L17 a L21), y este lee el tablero de mensajes y las notas del jefe con el responsable delante (L45 a L53). Dos rutinas distintas que el recien llegado observa; ninguno usa el producto del otro.
+contar_firmas_cadena_tramite_parado|SANO|El mismo par que contar_firmas lee desde su lado: reparto de mensajes por la cadena de mando (cap_03 L45 a L53) contra cadena de firmas de una papeleta (L37 a L43). Objetos y pasos distintos.
+
+## observar_reunion_rutinaria_senales_plantilla
+auditar_formacion_premios_ultima_fila|SANO|El mismo par que auditar_formacion lee desde su lado: la reunion de jefes y sus ocho senales (cap_03 L17 a L21) contra la formacion del muelle desde la ultima fila (L55, L57). Dos rutinas, sin paso comun.
+recorrer_organizacion_escuchar_plantilla|SANO|Hermanos del mismo capitulo y el par mas cercano de los veinte: los dos son un recien llegado que lee la organizacion por su gente y no por sus papeles. Pero lo que queda fuera es procedimiento en los dos lados: este se sienta en una reunion que ya existe y lee sus senales (cap_03 L17 a L21), el vecino deja los expedientes, camina, monta recorridos por jefe y lee las linternas (L11, L15). La similitud de 0,414, por encima de 0,4, se lee primero y no es gemelo; ningun paso de uno despliega uno del otro (ACTA M9.4, fila 8).
+inspeccionar_reparto_informacion_notas_jefe|SANO|El mismo par que inspeccionar lee desde su lado: senales de una reunion (cap_03 L17 a L21) contra tablero de mensajes y notas del jefe (L45 a L53). Sin paso comun.
+
+## recorrer_organizacion_escuchar_plantilla
+observar_reunion_rutinaria_senales_plantilla|SANO|El mismo par que observar lee desde su lado: recorrido y escucha al tomar el mando (cap_03 L11, L15) contra la reunion rutinaria y sus senales (L17 a L21). La similitud de 0,420, por encima de 0,4, se lee primero y no es gemelo (ACTA M9.4, fila 8).
+encargar_meta_especifica_dejar_libre_metodo|SANO|El mismo par que encargar_meta lee desde su lado: recorrido y escucha (cap_03 L11, L15) contra meta sin el como (cap_02 L49). La similitud de 0,401, por encima de 0,4, se lee primero, sin paso comun (ACTA M9.4, fila 7).
+inspeccionar_reparto_informacion_notas_jefe|SANO|Hermanos del mismo capitulo: recorrido y escucha (cap_03 L11, L15) contra el tablero de mensajes, que L45 pone despues entre las rutinas (L45 a L53). Calendario y no despliegue (DISCUTIBLE D78.13).
+
+## reforzar_principios_guia_lenguaje_prueba_conocimiento
+acoger_inspectores_externos_fuente_aprendizaje|SANO|El mismo par que acoger_inspectores lee desde su lado: principios en premios y la pregunta a tres personas (cap_14 L89, L99) contra el trato del inspector (cap_10 L45, L49). La similitud de 0,401, por encima de 0,4, se lee primero, sin paso comun (ACTA M9.4, fila 9).
+tomar_accion_deliberada_pausar_vocalizar_gesticular|SANO|Ajenos: el vecino es el ritual de pausar, decir y senalar antes de actuar (cap_11 L75, L95), y este usa los principios guia en premios y evaluaciones (cap_14 L89, L99). Un mecanismo de COMPETENCE y otro de CLARITY, sin paso comun.
+resistir_dar_solucion_clasificar_decision_urgencia|SANO|Ajenos: el vecino clasifica la decision por urgencia (cap_08 L117 a L121), y este usa los principios guia como vocabulario (cap_14 L89, L99). Sin paso comun.
+
+## repetir_mensaje_invariable_diario_reunion_evento
+
+## resistir_dar_solucion_clasificar_decision_urgencia
+aplicar_ejercicio_codigo_genetico_control|SANO|El mismo par que aplicar_ejercicio lee desde su lado: espacio para decidir y clasificacion por urgencia (cap_08 L107, L117 a L121) contra reescribir la autoridad de decision en la politica (cap_06 L101 a L111). Ninguno usa el producto del otro.
+declarar_intencion_reemplazar_peticion_permiso|SANO|El mismo par que declarar_intencion lee desde su lado: clasificacion por urgencia (cap_08 L117 a L121) contra frases de intencion (cap_07 L55, L73 a L93). La similitud de 0,411, por encima de 0,4, se lee primero y no es gemelo (ACTA M9.4, fila 1).
+acoger_inspectores_externos_fuente_aprendizaje|SANO|El mismo par que acoger_inspectores lee desde su lado: reparto de la decision por urgencia (cap_08 L117 a L121) contra el inspector como fuente de soluciones (cap_10 L49). La similitud de 0,428, por encima de 0,4, se lee primero, sin paso comun (ACTA M9.4, fila 6).
+tomar_accion_deliberada_pausar_vocalizar_gesticular|SANO|Ajenos: reparto de autoridad por urgencia (cap_08 L117 a L121) contra el ritual fisico antes de actuar (cap_11 L75). La similitud de 0,402, por encima de 0,4, se lee primero, sin paso comun (ACTA M9.4, fila 10).
+reforzar_principios_guia_lenguaje_prueba_conocimiento|SANO|El mismo par que reforzar_principios lee desde su lado: clasificacion por urgencia contra principios como vocabulario (cap_08 L117 a L121; cap_14 L89, L99). Sin paso comun.
+
+## seguir_frustrado_preguntar_implantacion_ideas
+interrogar_negocio_cinco_preguntas|SANO|Ajenos: el vecino del grafo, de gerber_emyth, se hace cinco preguntas sobre si trabaja sobre su negocio o dentro de el; este sigue a un responsable frustrado y le pregunta por sus ideas (cap_03 L23 a L29). La senial va del paso 8 de este (leer el resultado como el texto lo lee) al paso 10 del vecino: la forma de la lectura final, no el objeto.
+contar_firmas_cadena_tramite_parado|SANO|El mismo par que contar_firmas lee desde su lado: las ideas de un responsable que no pasan (cap_03 L23 a L29) contra la cadena de firmas de una papeleta (L37 a L43). Los dos acaban en el sistema y no en la persona, por objetos distintos.
+dictar_ritmo_crecimiento_preguntas_escritas|SANO|Ajenos: el vecino del grafo, de gerber_emyth, dicta el ritmo de crecimiento con preguntas y un plan escrito; este sigue al responsable frustrado (cap_03 L23 a L29). Sin paso comun.
+informar_cierre_jornada_conservar_propiedad_trabajo|SANO|El mismo par que informar_cierre lee desde su lado: la conversacion con el responsable frustrado (cap_03 L23 a L29) contra el guion del cierre de jornada (cap_04 L35). La similitud de 0,411, por encima de 0,4, se lee primero, sin paso comun.
+pedir_critica_anonima_curso_entrenamiento_dictado|SANO|Ajenos: el vecino del grafo, de grove_high_output, pide critica anonima con un formulario despues de dictar un curso; este nombra al responsable lo que se vio y le deja contar su vision (cap_03 L25, L27). La senial va del paso 2 de este al paso 2 del vecino, dos formas de pedir que el otro hable, con objetos distintos.
+cambiar_saludo_cliente_dos_ramas|SANO|Ajenos: el vecino del grafo, de gerber_emyth, cambia el saludo del vendedor a un cliente; este sigue a un responsable frustrado (cap_03 L23 a L29). Sin paso comun.
+
+## tomar_accion_deliberada_pausar_vocalizar_gesticular
+acoger_inspectores_externos_fuente_aprendizaje|SANO|El mismo par que acoger_inspectores lee desde su lado: el ritual antes de actuar (cap_11 L75, L95) contra la visita del inspector (cap_10 L45, L49). La similitud de 0,464, por encima de 0,4, se lee primero y no es gemelo: comparten la palabra inspector (ACTA M9.4, fila 5).
+resistir_dar_solucion_clasificar_decision_urgencia|SANO|El mismo par que resistir lee desde su lado: el ritual fisico contra el reparto de la decision por urgencia (cap_11 L75; cap_08 L117 a L121). La similitud de 0,411, por encima de 0,4, se lee primero, sin paso comun (ACTA M9.4, fila 10).
+reforzar_principios_guia_lenguaje_prueba_conocimiento|SANO|El mismo par que reforzar_principios lee desde su lado: un mecanismo de COMPETENCE contra uno de CLARITY (cap_11 L75; cap_14 L89, L99), sin paso comun.
