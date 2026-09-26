@@ -1,0 +1,3 @@
+filas dirigidas: suyas 29 | mias 29
+por estado: {'identica': 29} | suma: 29
+poblacion por candidato (grafo, bandejas) igual en los dos: {'igual': 7} | suma: 7 | [(430, 49)]

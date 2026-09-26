@@ -1,0 +1,16 @@
+# Fase ciega de la 73: mi clase de cada par DENTRO de un mismo capitulo de la tanda (cap_15 y cap_17; cap_16 tiene una sola
+# ficha), escrita con los pasos de los dos delante (.v73aud/pasos_siete.txt, por pasos_ciego.py, R6) y ANTES de mirar que
+# pares levanta el barrido, por la vara 6.1 y solo esa. Una arista D.37 o D.29 NO cambia la clase (D.53): va en
+# .v73aud/aristas_lectura.tsv. Abreviaturas: la tabla de abajo. Formato: A|B|clase|madre|lectura
+@U=usar_banco_nueve_preguntas_entrevista
+@R=responder_primer_aviso_renuncia_subordinado
+@G=gestionar_retencion_subordinado_valioso_renuncia
+@P=priorizar_lista_entrenamiento_subordinados
+@D=desarrollar_primer_curso_entrenamiento
+@C=pedir_critica_anonima_curso_entrenamiento_dictado
+U|R|SANO||las dos tareas dificiles del capitulo son dos tareas (L13: interviewing ... and trying to talk a valued employee out of quitting); nueve preguntas a un candidato contra la primera conversacion con quien renuncia; ningun paso compartido
+U|G|SANO||la entrevista contra la retencion tras el aviso; ningun paso compartido, y la unica palabra comun (el puesto, la empresa) es prosa
+R|G|CONTINUA|R|con direccion (6.1): la condicion de G es R hecho (tras la primera conversacion), L113 remite con palabras (What's your next move?), y R compra el tiempo (P6) y promete cumplir (P7) para lo que G ejecuta: escalar al propio jefe, perseguir cada via, volver con una solucion, las dos frases. Ningun paso de G esta en R ni al reves: no es REPITE. DUDA: pueden leerse SANO de dos fases hermanas de una misma pieza (I Quit, L105 a L123), que ninguna cabeza enumera; la contraria escrita es SANO
+P|D|CONTINUA|P|con direccion: la condicion de D es el producto de P (ya priorizo y elige el tema mas urgente), L53 sigue a L51 (assign priorities, the most urgent subject); procedimiento en los dos fuera del solape, sin bascula (ACTA 60 60.5 par 1, que releo y sostengo)
+D|C|CONTINUA|D|con direccion: la condicion de C es el producto de D (ya dicto su curso, L61 After you've given the course); la critica de D P6 (los subordinados mas informados durante la primera vuelta) y el formulario anonimo de C son publico, instrumento y momento distintos: C procedimenta, no nombra (ACTA 60 60.5 par 3, que releo y sostengo)
+P|C|CONTINUA|P|con direccion y por la cadena: C cierra el ciclo que P abre (la lista priorizada, el curso, su critica), y ningun paso compartido. DUDA: la condicion de C no es el producto de P sino el de D; leido solo par a par, P es su abuela y cabria SANO con la relacion llevada por D (como definir_entorno con cerrar_brecha en mi fase ciega de la 71); lo dejo CONTINUA porque la ACTA 60 60.5 par 2 lo adjudico asi con la vara y mi lectura de hoy no lo contradice, solo lo afina

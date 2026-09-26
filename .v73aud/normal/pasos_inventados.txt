@@ -1,0 +1,4 @@
+cap_15: candidatos 3 | pasos en ficha 22 | por marca: {'P': 5, 'T': 17} | suma: 22 | PUENTE 5 de 22 = 22.73 por ciento
+cap_16: candidatos 1 | pasos en ficha 4 | por marca: {'T': 4} | suma: 4 | PUENTE 0 de 4 = 0.00 por ciento
+cap_17: candidatos 3 | pasos en ficha 16 | por marca: {'P': 1, 'T': 15} | suma: 16 | PUENTE 1 de 16 = 6.25 por ciento
+los tres: por marca: {'P': 6, 'T': 36} | suma: 42 | PUENTE 6 de 42

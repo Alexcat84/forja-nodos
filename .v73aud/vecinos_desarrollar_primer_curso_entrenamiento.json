@@ -1,0 +1,33 @@
+{
+ "id": "desarrollar_primer_curso_entrenamiento",
+ "grafo": 430,
+ "bandejas": 49,
+ "vecinos": [
+  {
+   "id": "pedir_critica_anonima_curso_entrenamiento_dictado",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.45,
+    "familia_id": 0.25,
+    "paso_contra_nodo": 0.451
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 1 de pedir_critica_anonima_curso_entrenamiento_dictado"
+  },
+  {
+   "id": "priorizar_lista_entrenamiento_subordinados",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.409,
+    "familia_id": 0.143,
+    "paso_contra_nodo": 0.394
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 5 de priorizar_lista_entrenamiento_subordinados"
+  }
+ ]
+}

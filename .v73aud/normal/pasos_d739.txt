@@ -1,0 +1,28 @@
+===== priorizar_lista_entrenamiento_subordinados | cuarentena\grove_high_output\priorizar_lista_entrenamiento_subordinados.json
+  titulo: Priorizar la lista de en que hay que entrenar a los subordinados, tras preguntarles e inventariar los medios disponibles
+  fuente: ['grove_high_output']
+  cond: Cuando el mando decide abrazar el entrenamiento como tarea propia y necesita decidir por donde empezar, antes de desarrollar ningun curso.
+  P1. Haz una lista de las cosas en que crees que tus subordinados o los miembros de tu departamento deberian entrenarse, sin limitar el alcance de la lista.
+  P2. Incluye items que van desde lo que parece simple, como entrenar a la persona que atiende el telefono, hasta cosas mas generales y elevadas, como los objetivos y los sistemas de valores de tu departamento, tu planta y tu empresa.
+  P3. Pregunta a la gente que trabaja para ti que siente que necesita: es probable que te sorprenda contandote necesidades que nunca supiste que existian.
+  P4. Hecho esto, toma inventario de los mando maestros y los materiales instructivos disponibles para ayudar a impartir el entrenamiento de los items de tu lista.
+  P5. Asigna prioridades entre esos items.
+===== desarrollar_primer_curso_entrenamiento | cuarentena\grove_high_output\desarrollar_primer_curso_entrenamiento.json
+  titulo: Desarrollar el primer curso de entrenamiento en siete pasos, desde el alcance sin ambicion hasta decidir si hacen falta mas instructores
+  fuente: ['grove_high_output']
+  cond: Cuando el mando ya priorizó en que entrenar a sus subordinados y elige el tema mas urgente para desarrollar su primer curso propio.
+  P1. Empieza sin ambicion: desarrolla un curso corto, de tres a cuatro clases, sobre el tema mas urgente de tu lista.
+  P2. Fija un calendario para el curso, con plazos, y comprometete con el para no atascarte en la preparacion.
+  P3. Crea un esquema para el curso entero.
+  P4. Desarrolla solo la primera clase, y dictala.
+  P5. Desarrolla la segunda clase despues de haber dado la primera.
+  P6. Trata la primera vez que enseñas el curso como un desechable: enseñaselo a los subordinados mas informados, que te ayudaran a perfeccionarlo con su interaccion y su critica.
+  P7. Preguntate si podras cubrir tu solo a toda la organizacion o si, por su tamaño, hace falta que prepares a unos cuantos instructores con tu primer set de clases.
+===== pedir_critica_anonima_curso_entrenamiento_dictado | cuarentena\grove_high_output\pedir_critica_anonima_curso_entrenamiento_dictado.json
+  titulo: Pedir critica anonima tras dictar un curso de entrenamiento, con formulario numerico y preguntas abiertas
+  fuente: ['grove_high_output']
+  cond: Cuando el mando ya dicto su curso de entrenamiento y quiere saber si esta cumpliendo el proposito que se propuso.
+  P1. Despues de dar el curso, pide criticas anonimas a los empleados de tu clase.
+  P2. Usa un formulario que pida calificaciones numericas y que ademas plantee algunas preguntas abiertas.
+  P3. Estudia y considera las respuestas, entendiendo que nunca podras complacer a todos los miembros de tu clase.
+  P4. Ten como objetivo ultimo satisfacerte a ti mismo de que estas logrando lo que te propusiste.

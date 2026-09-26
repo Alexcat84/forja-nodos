@@ -1,0 +1,17 @@
+# Fase ciega de la 73: mi clase de cada par que el barrido levanta entre capitulos distintos de la tanda o con un extremo fuera
+# de ella, leida al recoger el barrido con los pasos de los dos delante (.v73aud/pasos_siete.txt y .v73aud/pasos_fuera_b.txt,
+# todos por pasos_ciego.py, R6), por la vara 6.1 y solo esa. Formato: A|B|clase|madre|lectura
+gestionar_retencion_subordinado_valioso_renuncia|pedir_critica_anonima_curso_entrenamiento_dictado|SANO||retener a quien renuncia contra recoger la critica anonima de un curso: comparten la prosa (la empresa, la gente), ningun paso
+pedir_critica_anonima_curso_entrenamiento_dictado|usar_banco_nueve_preguntas_entrevista|SANO||un formulario anonimo tras un curso contra nueve preguntas a un candidato: comparten la forma pregunta, no el procedimiento ni la condicion
+pedir_critica_anonima_curso_entrenamiento_dictado|responder_primer_aviso_renuncia_subordinado|SANO||la critica del curso contra la primera conversacion con quien renuncia: comparten preguntar y escuchar, a otra gente y para otra cosa
+priorizar_lista_entrenamiento_subordinados|reciclar_empleado_ascendido_mas_alla_capacidad|SANO||la lista de entrenamiento contra devolver a un ascendido a su puesto: solo comparten subordinado y puesto
+entregar_evaluacion_desempeno_tres_claves|gestionar_retencion_subordinado_valioso_renuncia|SANO||entregar la revision (cap_14) contra retener al que renuncia: dos conversaciones con un subordinado, ningun paso comun
+entregar_evaluacion_desempeno_tres_claves|pedir_critica_anonima_curso_entrenamiento_dictado|SANO||la revision que da el mando contra la critica que recibe de su clase: direcciones opuestas y ningun paso comun
+entregar_evaluacion_desempeno_tres_claves|responder_primer_aviso_renuncia_subordinado|SANO||las dos piden escuchar al subordinado, pero la revision es franqueza y comprobar que el mensaje llego, y el aviso es callar, preguntar y comprar tiempo: procedimiento en los dos lados, sin bascula
+entregar_evaluacion_desempeno_tres_claves|usar_banco_nueve_preguntas_entrevista|SANO||evaluar al de dentro contra entrevistar al de fuera; el libro las compara en L27 y L89 de cap_15 y las separa (la trampa del potencial), y ningun paso comun
+pedir_critica_anonima_curso_entrenamiento_dictado|repartir_supervision_puesto_funcional_mision|SANO||el jefe funcional que cuida la formacion del puesto (paso 6) no dicta ni evalua un curso: comparten la palabra formado
+preguntar_seguimiento_hallar_huecos|responder_primer_aviso_renuncia_subordinado|SANO||las preguntas de seguimiento de Scott en la reunion a solas contra hazle mas preguntas del aviso de renuncia: la forma pregunta, en otra conversacion y con otro fin
+construir_indicador_tendencia_patron|responder_primer_aviso_renuncia_subordinado|SANO||un indicador de salida contra una conversacion: solo la prosa
+planificar_tres_pasos_demanda_estado_brecha|responder_primer_aviso_renuncia_subordinado|SANO||planificar contra la conversacion del aviso: solo la prosa
+identificar_disparadores_propios_reaccion|usar_banco_nueve_preguntas_entrevista|SANO||las cuatro preguntas de Zhuo para hallar tus disparadores contra las nueve a un candidato: la forma pregunta y la palabra debilidad
+planificar_tres_pasos_demanda_estado_brecha|usar_banco_nueve_preguntas_entrevista|SANO||planificar contra entrevistar: solo la prosa

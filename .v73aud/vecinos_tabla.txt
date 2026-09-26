@@ -1,0 +1,62 @@
+(1) candidato | poblacion | vecinos | en grafo | en bandeja
+    desarrollar_primer_curso_entrenamiento                   479   2   0   2
+    gestionar_retencion_subordinado_valioso_renuncia         479   3   1   2
+    pedir_critica_anonima_curso_entrenamiento_dictado        479   7   2   5
+    priorizar_lista_entrenamiento_subordinados               479   3   0   3
+    reciclar_empleado_ascendido_mas_alla_capacidad           479   1   0   1
+    responder_primer_aviso_renuncia_subordinado              479   7   4   3
+    usar_banco_nueve_preguntas_entrevista                    479   6   3   3
+sin fichero de vecinos: 0 []
+(2) vecino levantado | senial | texto familia paso
+    desarrollar_primer_curso_entrenamiento                 > pedir_critica_anonima_curso_entrenamiento_dictado      bandeja similitud_texto  0.450 0.250 0.451
+    desarrollar_primer_curso_entrenamiento                 > priorizar_lista_entrenamiento_subordinados             bandeja similitud_texto  0.409 0.143 0.394
+    gestionar_retencion_subordinado_valioso_renuncia       > responder_primer_aviso_renuncia_subordinado            bandeja similitud_texto  0.376 0.250 0.421
+    gestionar_retencion_subordinado_valioso_renuncia       > entregar_evaluacion_desempeno_tres_claves              grafo   similitud_texto  0.403 0.000 0.390
+    gestionar_retencion_subordinado_valioso_renuncia       > usar_banco_nueve_preguntas_entrevista                  bandeja similitud_texto  0.388 0.000 0.398
+    pedir_critica_anonima_curso_entrenamiento_dictado      > gestionar_retencion_subordinado_valioso_renuncia       bandeja similitud_texto  0.369 0.000 0.516
+    pedir_critica_anonima_curso_entrenamiento_dictado      > priorizar_lista_entrenamiento_subordinados             bandeja similitud_texto  0.472 0.111 0.447
+    pedir_critica_anonima_curso_entrenamiento_dictado      > desarrollar_primer_curso_entrenamiento                 bandeja similitud_texto  0.447 0.250 0.396
+    pedir_critica_anonima_curso_entrenamiento_dictado      > usar_banco_nueve_preguntas_entrevista                  bandeja similitud_texto  0.388 0.000 0.431
+    pedir_critica_anonima_curso_entrenamiento_dictado      > repartir_supervision_puesto_funcional_mision           grafo   similitud_texto  0.351 0.000 0.425
+    pedir_critica_anonima_curso_entrenamiento_dictado      > responder_primer_aviso_renuncia_subordinado            bandeja similitud_texto  0.410 0.000 0.389
+    pedir_critica_anonima_curso_entrenamiento_dictado      > entregar_evaluacion_desempeno_tres_claves              grafo   similitud_texto  0.385 0.000 0.400
+    priorizar_lista_entrenamiento_subordinados             > pedir_critica_anonima_curso_entrenamiento_dictado      bandeja similitud_texto  0.466 0.111 0.439
+    priorizar_lista_entrenamiento_subordinados             > desarrollar_primer_curso_entrenamiento                 bandeja similitud_texto  0.411 0.143 0.401
+    priorizar_lista_entrenamiento_subordinados             > reciclar_empleado_ascendido_mas_alla_capacidad         bandeja similitud_texto  0.355 0.000 0.384
+    reciclar_empleado_ascendido_mas_alla_capacidad         > priorizar_lista_entrenamiento_subordinados             bandeja similitud_texto  0.355 0.000 0.416
+    responder_primer_aviso_renuncia_subordinado            > preguntar_seguimiento_hallar_huecos                    grafo   paso_contra_nodo 0.190 0.000 0.627
+    responder_primer_aviso_renuncia_subordinado            > usar_banco_nueve_preguntas_entrevista                  bandeja similitud_texto  0.386 0.000 0.458
+    responder_primer_aviso_renuncia_subordinado            > gestionar_retencion_subordinado_valioso_renuncia       bandeja similitud_texto  0.378 0.250 0.450
+    responder_primer_aviso_renuncia_subordinado            > entregar_evaluacion_desempeno_tres_claves              grafo   similitud_texto  0.418 0.000 0.408
+    responder_primer_aviso_renuncia_subordinado            > construir_indicador_tendencia_patron                   grafo   similitud_texto  0.351 0.000 0.417
+    responder_primer_aviso_renuncia_subordinado            > planificar_tres_pasos_demanda_estado_brecha            grafo   similitud_texto  0.363 0.000 0.409
+    responder_primer_aviso_renuncia_subordinado            > pedir_critica_anonima_curso_entrenamiento_dictado      bandeja similitud_texto  0.395 0.000 0.389
+    usar_banco_nueve_preguntas_entrevista                  > identificar_disparadores_propios_reaccion              grafo   paso_contra_nodo 0.175 0.000 0.607
+    usar_banco_nueve_preguntas_entrevista                  > responder_primer_aviso_renuncia_subordinado            bandeja similitud_texto  0.394 0.000 0.458
+    usar_banco_nueve_preguntas_entrevista                  > gestionar_retencion_subordinado_valioso_renuncia       bandeja similitud_texto  0.412 0.000 0.426
+    usar_banco_nueve_preguntas_entrevista                  > entregar_evaluacion_desempeno_tres_claves              grafo   similitud_texto  0.369 0.000 0.422
+    usar_banco_nueve_preguntas_entrevista                  > pedir_critica_anonima_curso_entrenamiento_dictado      bandeja similitud_texto  0.383 0.000 0.419
+    usar_banco_nueve_preguntas_entrevista                  > planificar_tres_pasos_demanda_estado_brecha            grafo   similitud_texto  0.355 0.000 0.402
+filas de vecino: 29
+(3) pares sin orden | levantado desde
+    desarrollar_primer_curso_entrenamiento                 ~ pedir_critica_anonima_curso_entrenamiento_dictado      tanda-tanda los dos
+    desarrollar_primer_curso_entrenamiento                 ~ priorizar_lista_entrenamiento_subordinados             tanda-tanda los dos
+    gestionar_retencion_subordinado_valioso_renuncia       ~ responder_primer_aviso_renuncia_subordinado            tanda-tanda los dos
+    entregar_evaluacion_desempeno_tres_claves              ~ gestionar_retencion_subordinado_valioso_renuncia       con fuera   solo gestionar_retencion_subordinado_valioso_renuncia
+    gestionar_retencion_subordinado_valioso_renuncia       ~ usar_banco_nueve_preguntas_entrevista                  tanda-tanda los dos
+    gestionar_retencion_subordinado_valioso_renuncia       ~ pedir_critica_anonima_curso_entrenamiento_dictado      tanda-tanda solo pedir_critica_anonima_curso_entrenamiento_dictado
+    pedir_critica_anonima_curso_entrenamiento_dictado      ~ priorizar_lista_entrenamiento_subordinados             tanda-tanda los dos
+    pedir_critica_anonima_curso_entrenamiento_dictado      ~ usar_banco_nueve_preguntas_entrevista                  tanda-tanda los dos
+    pedir_critica_anonima_curso_entrenamiento_dictado      ~ repartir_supervision_puesto_funcional_mision           con fuera   solo pedir_critica_anonima_curso_entrenamiento_dictado
+    pedir_critica_anonima_curso_entrenamiento_dictado      ~ responder_primer_aviso_renuncia_subordinado            tanda-tanda los dos
+    entregar_evaluacion_desempeno_tres_claves              ~ pedir_critica_anonima_curso_entrenamiento_dictado      con fuera   solo pedir_critica_anonima_curso_entrenamiento_dictado
+    priorizar_lista_entrenamiento_subordinados             ~ reciclar_empleado_ascendido_mas_alla_capacidad         tanda-tanda los dos
+    preguntar_seguimiento_hallar_huecos                    ~ responder_primer_aviso_renuncia_subordinado            con fuera   solo responder_primer_aviso_renuncia_subordinado
+    responder_primer_aviso_renuncia_subordinado            ~ usar_banco_nueve_preguntas_entrevista                  tanda-tanda los dos
+    entregar_evaluacion_desempeno_tres_claves              ~ responder_primer_aviso_renuncia_subordinado            con fuera   solo responder_primer_aviso_renuncia_subordinado
+    construir_indicador_tendencia_patron                   ~ responder_primer_aviso_renuncia_subordinado            con fuera   solo responder_primer_aviso_renuncia_subordinado
+    planificar_tres_pasos_demanda_estado_brecha            ~ responder_primer_aviso_renuncia_subordinado            con fuera   solo responder_primer_aviso_renuncia_subordinado
+    identificar_disparadores_propios_reaccion              ~ usar_banco_nueve_preguntas_entrevista                  con fuera   solo usar_banco_nueve_preguntas_entrevista
+    entregar_evaluacion_desempeno_tres_claves              ~ usar_banco_nueve_preguntas_entrevista                  con fuera   solo usar_banco_nueve_preguntas_entrevista
+    planificar_tres_pasos_demanda_estado_brecha            ~ usar_banco_nueve_preguntas_entrevista                  con fuera   solo usar_banco_nueve_preguntas_entrevista
+pares sin orden: 20 | {'tanda-tanda': 10, 'con fuera': 10} | suma: 20

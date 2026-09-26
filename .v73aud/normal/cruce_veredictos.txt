@@ -1,0 +1,5 @@
+lineas suyas: 29 | pares sin orden: 20 | mis pares: 20
+lineas por clase: {'CONTINUA': 6, 'SANO': 23} | suma: 29
+pares con sus dos lineas en distinta clase o madre: 0
+pares: {'igual clase y madre': 19, 'difiere': 1} | suma: 20
+  pedir_critica_anonima_curso_entrenamiento_dictado ~ priorizar_lista_entrenamiento_subordinados | suya [('SANO', None), ('SANO', None)] | mia ('CONTINUA', 'priorizar_lista_entrenamiento_subordinados')
