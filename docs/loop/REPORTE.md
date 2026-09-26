@@ -63168,3 +63168,37 @@ La aduana de hoy: **BLOQUEARIA** con `4` vecino(s) contra `479`; lineas `--vered
     hoy 4 vecinos, barrido de la 71 4 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (415 grafo, 64 bandejas), en la 71 479 (410, 69)
 
 **Los cuatro vecinos son los de su bloque y las cuatro lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `71`, las tres seniales al digito. **Las dos madres de la fila, cableadas**: la `CONTINUA` con `madre=` la cablea la aduana en el acto y la escribe `RESUELTA` (`D72.4`), y la de lectura la cableo yo con `.v72ext/arista.py` (bloque de arriba). Van `3` de las `6` aristas esperadas.
+
+### Fila `7`: `determinar_estado_presente_capacidades_proyectos_merma`, **INSERTADO** en `418.0` s, codigo `0`, commit `e9def652`
+
+La aduana de hoy: **BLOQUEARIA** con `5` vecino(s) contra `479`; lineas `--veredicto` pasadas: `5`. Salida entera en `.v72ext/insertar_07_determinar_estado_presente_capacidades_proyectos_merma.txt`.
+
+<!-- TALLADO: parcial salida=.v72ext/insertar_07_determinar_estado_presente_capacidades_proyectos_merma.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `definir_entorno_grupo_clientes_proveedores_competidores` | similitud_texto | 0.356 | 0.000 | 0.516 | SANO |
+| `examinar_entorno_expectativas_tecnologia_proveedores_grupos` | similitud_texto | 0.390 | 0.000 | 0.484 | SANO |
+| `cerrar_brecha_dos_preguntas_estrategia` | similitud_texto | 0.366 | 0.000 | 0.430 | SANO |
+| `examinar_demanda_entorno_dos_marcos_temporales` | similitud_texto | 0.357 | 0.000 | 0.413 | SANO |
+| `fijar_horizonte_ventana_replanificacion` | similitud_texto | 0.378 | 0.000 | 0.404 | SANO |
+
+**Arista por lectura cableada con la madre ya en el grafo** (`D.37`, la de la `ACTA 70` `70.3`): `planificar_tres_pasos_demanda_estado_brecha > determinar_estado_presente_capacidades_proyectos_merma`, `--paso 3`, el que su fila (linea `10` de `.v71ext/aristas_lectura.txt`) cita. Salida entera en `.v72ext/arista_planificar_tres_pasos_demanda_estado_brecha__determinar_estado_presente_capacidades_proyectos_merma.txt`:
+
+    $ python forja.py arista --madre planificar_tres_pasos_demanda_estado_brecha --hijo determinar_estado_presente_capacidades_proyectos_merma --paso 3 --razon <fila 10> --veredicto CONTINUA --cita-veredicto <fila 10>
+    DECLARACION DE ARISTA POR LECTURA (D.37)
+      madre: planificar_tres_pasos_demanda_estado_brecha
+      hijo : determinar_estado_presente_capacidades_proyectos_merma
+      paso citado de la madre: 3
+        Da el paso 2 estableciendo tu estado presente: que estas produciendo ahora, y que vas a estar produciendo cuando se completen los proyectos que ya tie
+      señales del par: familia_id 0.091, paso_contra_nodo 0.498, similitud_texto 0.26
+        NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+    GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: planificar_tres_pasos_demanda_estado_brecha > determinar_estado_presente_capacidades_proyectos_merma
+      razon en bitacora/VEREDICTOS.jsonl
+
+
+    $ python .v72ext/contra_barrido.py 07 determinar_estado_presente_capacidades_proyectos_merma
+    hoy 5 vecinos, barrido de la 71 5 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (416 grafo, 63 bandejas), en la 71 479 (410, 69)
+
+**Los cinco vecinos son los de su bloque y las cinco lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `71`, las tres seniales al digito. La arista de lectura, cableada (bloque de arriba). Van `4` de las `6` aristas esperadas.
