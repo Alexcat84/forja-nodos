@@ -66268,3 +66268,36 @@ La aduana de hoy: **BLOQUEARIA** con `1` vecino(s) contra `479`; lineas `--vered
     hoy 1 vecinos, barrido de la 76 1 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (443 grafo, 36 bandejas), en la 76 479 (437, 42)
 
 **El vecino es el de su bloque y la linea se paso tal cual**: ni nuevos ni caidos contra el barrido de la `76`, las tres seniales al digito; la poblacion, `479` (`443` mas `36`). Sin aristas en esta fila. Bitacora de `1126` a `1127`, su linea SANO.
+
+### Fila `8`: `operar_modelo_gente_destreza_minima`, **INSERTADO** en `598.4` s, codigo `0`, commit `ebbffd0d`
+
+La aduana de hoy: **BLOQUEARIA** con `4` vecino(s) contra `479`; lineas `--veredicto` pasadas: `4`. Salida entera en `.v77ext/insertar_08_operar_modelo_gente_destreza_minima.txt`.
+
+<!-- TALLADO: parcial salida=.v77ext/insertar_08_operar_modelo_gente_destreza_minima.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `interrogar_negocio_cinco_preguntas` | similitud_texto | 0.357 | 0.000 | 0.416 | SANO |
+| `responder_primer_aviso_renuncia_subordinado` | similitud_texto | 0.370 | 0.000 | 0.415 | SANO |
+| `dictar_ritmo_crecimiento_preguntas_escritas` | similitud_texto | 0.371 | 0.000 | 0.408 | SANO |
+| `cambiar_saludo_cliente_dos_ramas` | similitud_texto | 0.355 | 0.000 | 0.357 | SANO |
+
+    $ python .v77ext/contra_barrido.py 08 operar_modelo_gente_destreza_minima
+    hoy 4 vecinos, barrido de la 76 4 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (444 grafo, 35 bandejas), en la 76 479 (437, 42)
+
+**La arista por lectura `D.37` de la fila, cableada en el acto con los dos extremos vivos**: `fingir_prototipo_cinco_mil_replicas > operar_modelo_gente_destreza_minima`, paso `6` de la madre (`cap_11` `L47`), `--veredicto SANO` por `D.53`. Salida entera en `.v77ext/arista_fingir_prototipo_cinco_mil_replicas__operar_modelo_gente_destreza_minima.txt`:
+
+    $ python forja.py arista --madre fingir_prototipo_cinco_mil_replicas --hijo operar_modelo_gente_destreza_minima --paso 6 --razon <fila 31> --veredicto SANO --cita-veredicto <fila 31>
+    DECLARACION DE ARISTA POR LECTURA (D.37)
+      madre: fingir_prototipo_cinco_mil_replicas
+      hijo : operar_modelo_gente_destreza_minima
+      paso citado de la madre: 6
+        Regla 2: el modelo lo operara gente con el nivel de destreza mas bajo posible.
+      señales del par: familia_id 0.0, paso_contra_nodo 0.44, similitud_texto 0.233
+        NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+    GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: fingir_prototipo_cinco_mil_replicas > operar_modelo_gente_destreza_minima
+      razon en bitacora/VEREDICTOS.jsonl
+
+
+**Los cuatro vecinos son los de su bloque y las cuatro lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `76`, las tres seniales al digito; la poblacion, `479` (`444` mas `35`). **Segunda de las `10` aristas esperadas en el grafo.** Bitacora de `1127` a `1132`: sus cuatro lineas SANO y la de la arista.
