@@ -1135,3 +1135,5 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-25 | fijar_meta_direccion_objetivos_mitad_probabilidad | nombre_largo | Como fijar el objetivo de un sistema de direccion por objetivos cuando el impulso a estirarse no es espontaneo: en el punto en que, esforzandose al maximo, la probabilidad de conseguirlo es de cincuenta por ciento | castellano | - |
 | 2026-09-25 | fijar_meta_direccion_objetivos_mitad_probabilidad | otro_idioma | management by objectives | ingles | - |
 | 2026-09-25 | fijar_meta_direccion_objetivos_mitad_probabilidad | otro_idioma | MBO | ingles | - |
+| 2026-09-26 | diagnosticar_nivel_motivacion_reaccion_aumento_salario | nombre_largo | La prueba sencilla para determinar donde esta alguien en la jerarquia motivacional de Maslow, leyendo si reacciona al aumento de sueldo por su suma absoluta o por como se compara contra el de otros | castellano | - |
+| 2026-09-26 | diagnosticar_nivel_motivacion_reaccion_aumento_salario | otro_idioma | a simple test | ingles | - |
