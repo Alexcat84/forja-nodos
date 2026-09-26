@@ -1172,3 +1172,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-26 | trazar_modelo_negocio_cliente_primero | nombre_largo | El Modelo Emprendedor tal como el libro lo traza: buscar donde esta la oportunidad, volver al tablero, construir una solucion a las frustraciones de un grupo concreto de clientes, y empezar por el retrato de ese cliente | castellano | - |
 | 2026-09-26 | trazar_modelo_negocio_cliente_primero | otro_idioma | Entrepreneurial Model | ingles | - |
 | 2026-09-26 | trazar_modelo_negocio_cliente_primero | otro_idioma | perceived needs | ingles | - |
+| 2026-09-26 | fingir_prototipo_cinco_mil_replicas | nombre_largo | La cabeza de la serie del Prototipo de Franquicia: el fingimiento de las 5.000 replicas perfectas y las seis reglas del juego, enumeradas una a una por el propio libro | castellano | - |
+| 2026-09-26 | fingir_prototipo_cinco_mil_replicas | otro_idioma | Franchise Prototype | ingles | - |
+| 2026-09-26 | fingir_prototipo_cinco_mil_replicas | otro_idioma | the franchise game | ingles | - |
