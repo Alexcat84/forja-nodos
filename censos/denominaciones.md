@@ -1255,3 +1255,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-26 | contar_firmas_cadena_tramite_parado | nombre_largo | El tramite de permiso que el autor persigue despues de ver a un subordinado con mala cara: la norma que dice quien firma, la cadena entera de siete puestos que la regla de cadena de mando obliga, el formulario de cinco lineas, y el veredicto de que fallo el sistema y no la gente | castellano | - |
 | 2026-09-26 | contar_firmas_cadena_tramite_parado | otro_idioma | leave chit | ingles | - |
 | 2026-09-26 | contar_firmas_cadena_tramite_parado | otro_idioma | chain of command | ingles | - |
+| 2026-09-26 | inspeccionar_reparto_informacion_notas_jefe | nombre_largo | El tablero de mensajes del barco leido con el jefe de maquinas delante: el orden de reparto que fija el protocolo, las notas que el comandante y el segundo dejan escritas, la pregunta que se le hace al subordinado y los dos costes que el subordinado nombra | castellano | - |
+| 2026-09-26 | inspeccionar_reparto_informacion_notas_jefe | otro_idioma | message board | ingles | - |
+| 2026-09-26 | inspeccionar_reparto_informacion_notas_jefe | otro_idioma | routing stamp | ingles | - |
