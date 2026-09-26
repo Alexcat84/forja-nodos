@@ -63111,3 +63111,25 @@ La aduana de hoy: **BLOQUEARIA** con `6` vecino(s) contra `479`; lineas `--vered
     hoy 6 vecinos, barrido de la 71 6 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (413 grafo, 66 bandejas), en la 71 479 (410, 69)
 
 **Los seis vecinos son los de su bloque y las seis lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `71`, las tres seniales al digito. **Las dos `CONTINUA` con `madre=` quedan EN COLA**, como marque en `D72.4`: los dos hijos esperan en la bandeja y se cablean al entrar ellos, en las filas `5` y `6`.
+
+### Fila `5`: `examinar_entorno_expectativas_tecnologia_proveedores_grupos`, **INSERTADO** en `394.7` s, codigo `0`, commit `91444d7d`
+
+La aduana de hoy: **BLOQUEARIA** con `6` vecino(s) contra `479`; lineas `--veredicto` pasadas: `6`. Salida entera en `.v72ext/insertar_05_examinar_entorno_expectativas_tecnologia_proveedores_grupos.txt`.
+
+<!-- TALLADO: parcial salida=.v72ext/insertar_05_examinar_entorno_expectativas_tecnologia_proveedores_grupos.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `definir_entorno_grupo_clientes_proveedores_competidores` | similitud_texto, familia_id | 0.408 | 0.333 | 0.527 | CONTINUA |
+| `determinar_estado_presente_capacidades_proyectos_merma` | similitud_texto | 0.398 | 0.000 | 0.497 | SANO |
+| `examinar_demanda_entorno_dos_marcos_temporales` | similitud_texto | 0.372 | 0.200 | 0.482 | SANO |
+| `cerrar_brecha_dos_preguntas_estrategia` | similitud_texto | 0.419 | 0.000 | 0.433 | SANO |
+| `fijar_periodo_direccion_objetivos_retroalimentacion` | similitud_texto | 0.356 | 0.000 | 0.406 | SANO |
+| `contestar_dos_preguntas_direccion_objetivos` | similitud_texto | 0.378 | 0.000 | 0.406 | SANO |
+
+**Arista cableada por la aduana en el acto**: `definir_entorno_grupo_clientes_proveedores_competidores > examinar_entorno_expectativas_tecnologia_proveedores_grupos`
+
+    $ python .v72ext/contra_barrido.py 05 examinar_entorno_expectativas_tecnologia_proveedores_grupos
+    hoy 6 vecinos, barrido de la 71 6 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (414 grafo, 65 bandejas), en la 71 479 (410, 69)
+
+**Los seis vecinos son los de su bloque y las seis lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `71`, las tres seniales al digito. **La `CONTINUA` con `madre=` la cablea la aduana en el acto** y la escribe `RESUELTA`, como marque en `D72.4`: `definir_entorno_grupo_clientes_proveedores_competidores > examinar_entorno_expectativas_tecnologia_proveedores_grupos`, primera de las `6` aristas esperadas.
