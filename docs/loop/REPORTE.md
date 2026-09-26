@@ -63349,3 +63349,18 @@ La aduana de hoy: **BLOQUEARIA** con `1` vecino(s) contra `479`; lineas `--vered
     hoy 1 vecinos, barrido de la 71 1 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (423 grafo, 56 bandejas), en la 71 479 (410, 69)
 
 **El vecino es el de su bloque y la linea se paso tal cual**: ni nuevos ni caidos contra el barrido de la `71`, las tres seniales al digito. Sin aristas en esta fila.
+
+### Fila `15`: `diagnosticar_nivel_motivacion_reaccion_aumento_salario`, **INSERTADO** en `717.1` s, codigo `0`, commit `d7858c09`
+
+La aduana de hoy: **BLOQUEARIA** con `1` vecino(s) contra `479`; lineas `--veredicto` pasadas: `1`. Salida entera en `.v72ext/insertar_15_diagnosticar_nivel_motivacion_reaccion_aumento_salario.txt`.
+
+<!-- TALLADO: parcial salida=.v72ext/insertar_15_diagnosticar_nivel_motivacion_reaccion_aumento_salario.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `diagnosticar_capacidad_motivacion_prueba_vida` | similitud_texto | 0.361 | 0.222 | 0.347 | SANO |
+
+    $ python .v72ext/contra_barrido.py 15 diagnosticar_nivel_motivacion_reaccion_aumento_salario
+    hoy 1 vecinos, barrido de la 71 1 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (424 grafo, 55 bandejas), en la 71 479 (410, 69)
+
+**El vecino es el de su bloque y la linea se paso tal cual**: ni nuevos ni caidos contra el barrido de la `71`, las tres seniales al digito. Sin aristas en esta fila. **Con ella, `cap_12` queda entero en el grafo.**
