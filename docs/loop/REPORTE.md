@@ -66392,3 +66392,33 @@ La aduana de hoy: **BLOQUEARIA** con `5` vecino(s) contra `479`; lineas `--vered
     hoy 5 vecinos, barrido de la 76 5 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (448 grafo, 31 bandejas), en la 76 479 (437, 42)
 
 **Los cinco vecinos son los de su bloque y las cinco lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `76`, las tres seniales al digito; la poblacion, `479` (`448` mas `31`). **La aduana cablea en el acto la arista `cambiar_saludo_cliente_dos_ramas > cuantificar_impacto_innovacion_6_pasos`**, la que la fila `10` dejo en cola: **cuarta de las `10` aristas esperadas en el grafo.** Bitacora de `1144` a `1149`.
+
+### Fila `13`: `recorrer_siete_pasos_programa_desarrollo_negocio`, **INSERTADO** en `366.2` s, codigo `0`, commit `fec00b3a`
+
+La aduana de hoy: **BLOQUEARIA** con `1` vecino(s) contra `479`; lineas `--veredicto` pasadas: `1`. Salida entera en `.v77ext/insertar_13_recorrer_siete_pasos_programa_desarrollo_negocio.txt`.
+
+<!-- TALLADO: parcial salida=.v77ext/insertar_13_recorrer_siete_pasos_programa_desarrollo_negocio.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `construir_estrategia_gente_cuatro_componentes` | paso_contra_nodo | 0.232 | 0.000 | 0.762 | SANO |
+
+    $ python .v77ext/contra_barrido.py 13 recorrer_siete_pasos_programa_desarrollo_negocio
+    hoy 1 vecinos, barrido de la 76 1 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (449 grafo, 30 bandejas), en la 76 479 (437, 42)
+
+**La arista por lectura `D.29` de la TAREA 2.2, cableada en el acto con los dos extremos vivos**: `fingir_prototipo_cinco_mil_replicas > recorrer_siete_pasos_programa_desarrollo_negocio`, paso `1` de la madre (`cap_11` `L35`), `--veredicto CONTINUA`, el de mi lectura (`77.2.2`, `D77.2`). Salida entera en `.v77ext/arista_fingir_prototipo_cinco_mil_replicas__recorrer_siete_pasos_programa_desarrollo_negocio.txt`:
+
+    $ python forja.py arista --madre fingir_prototipo_cinco_mil_replicas --hijo recorrer_siete_pasos_programa_desarrollo_negocio --paso 1 --razon <fila 35> --veredicto CONTINUA --cita-veredicto <fila 35>
+    DECLARACION DE ARISTA POR LECTURA (D.37)
+      madre: fingir_prototipo_cinco_mil_replicas
+      hijo : recorrer_siete_pasos_programa_desarrollo_negocio
+      paso citado de la madre: 1
+        Finge que el negocio que tienes, o que quieres tener, es el prototipo de otros 5.000 iguales, y que va a servir de modelo para esos 5.000.
+      señales del par: familia_id 0.0, paso_contra_nodo 0.43, similitud_texto 0.312
+        NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+    GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: fingir_prototipo_cinco_mil_replicas > recorrer_siete_pasos_programa_desarrollo_negocio
+      razon en bitacora/VEREDICTOS.jsonl
+
+
+**El vecino es el de su bloque y la linea se paso tal cual**: ni nuevos ni caidos contra el barrido de la `76`, las tres seniales al digito; la poblacion, `479` (`449` mas `30`). **Su linea con `construir_estrategia_gente_cuatro_componentes` es `SANO` por `D.53`**, y la arista `D.37` de ese par se cablea al entrar `construir`, en la fila `19`. **Quinta de las `10` aristas esperadas en el grafo.** Bitacora de `1149` a `1151`: su linea SANO y la de la arista.
