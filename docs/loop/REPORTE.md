@@ -66443,3 +66443,19 @@ La aduana de hoy: **BLOQUEARIA** con `1` vecino(s) contra `479`; lineas `--vered
     hoy 1 vecinos, barrido de la 76 1 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (450 grafo, 29 bandejas), en la 76 479 (437, 42)
 
 **El vecino es el de su bloque y la linea se paso tal cual**: ni nuevos ni caidos contra el barrido de la `76`, las tres seniales al digito; la poblacion, `479` (`450` mas `29`). Sin aristas en esta fila (`ACTA 75` `75.4`: los cuestionarios no llevan arista a `construir`). **Es la ficha de `d108`**, que se paga al cerrar la TAREA 4 sin tocarla. Bitacora de `1151` a `1152`, su linea SANO.
+
+### Fila `15`: `responder_4_preguntas_estandares_objetivo_estrategico`, **INSERTADO** en `319.8` s, codigo `0`, commit `8690757d`
+
+La aduana de hoy: **BLOQUEARIA** con `2` vecino(s) contra `479`; lineas `--veredicto` pasadas: `2`. Salida entera en `.v77ext/insertar_15_responder_4_preguntas_estandares_objetivo_estrategico.txt`.
+
+<!-- TALLADO: parcial salida=.v77ext/insertar_15_responder_4_preguntas_estandares_objetivo_estrategico.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `responder_8_preguntas_construir_primary_aim` | similitud_texto | 0.380 | 0.250 | 0.451 | SANO |
+| `probar_traje_azul_seis_semanas` | similitud_texto | 0.393 | 0.000 | 0.305 | SANO |
+
+    $ python .v77ext/contra_barrido.py 15 responder_4_preguntas_estandares_objetivo_estrategico
+    hoy 2 vecinos, barrido de la 76 2 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (451 grafo, 28 bandejas), en la 76 479 (437, 42)
+
+**Los dos vecinos son los de su bloque y las dos lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `76`, las tres seniales al digito; la poblacion, `479` (`451` mas `28`). Sin aristas en esta fila. Bitacora de `1152` a `1154`, sus dos lineas SANO.
