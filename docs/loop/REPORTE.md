@@ -66354,3 +66354,20 @@ La aduana de hoy: **BLOQUEARIA** con `6` vecino(s) contra `479`; lineas `--vered
     hoy 6 vecinos, barrido de la 76 6 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (446 grafo, 33 bandejas), en la 76 479 (437, 42)
 
 **Los seis vecinos son los de su bloque y las seis lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `76`, las tres seniales al digito; la poblacion, `479` (`446` mas `33`). **Su arista hacia `cuantificar_impacto_innovacion_6_pasos` queda EN COLA**, como su linea `CONTINUA` con `madre=` manda mientras el hijo espera en la bandeja: se cablea al entrar la fila `12`. Bitacora de `1135` a `1141`.
+
+### Fila `11`: `probar_traje_azul_seis_semanas`, **INSERTADO** en `279.4` s, codigo `0`, commit `7a15b2cd`
+
+La aduana de hoy: **BLOQUEARIA** con `3` vecino(s) contra `479`; lineas `--veredicto` pasadas: `3`. Salida entera en `.v77ext/insertar_11_probar_traje_azul_seis_semanas.txt`.
+
+<!-- TALLADO: parcial salida=.v77ext/insertar_11_probar_traje_azul_seis_semanas.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `responder_4_preguntas_estandares_objetivo_estrategico` | similitud_texto | 0.394 | 0.000 | 0.291 | SANO |
+| `cambiar_saludo_cliente_dos_ramas` | similitud_texto | 0.390 | 0.000 | 0.268 | SANO |
+| `dar_valor_constante_cuatro_publicos` | similitud_texto | 0.362 | 0.000 | 0.315 | SANO |
+
+    $ python .v77ext/contra_barrido.py 11 probar_traje_azul_seis_semanas
+    hoy 3 vecinos, barrido de la 76 3 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (447 grafo, 32 bandejas), en la 76 479 (437, 42)
+
+**Los tres vecinos son los de su bloque y las tres lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `76`, las tres seniales al digito; la poblacion, `479` (`447` mas `32`). Sin aristas en esta fila. Bitacora de `1141` a `1144`, sus tres lineas SANO.
