@@ -67977,3 +67977,153 @@ con la huella que la `78` sello, y el texto de `d183`, listo para pasarse despue
 
 **VERDE, `rc=0`**, de vuelta a las `16:58:41`, sin ningun rojo. Cuenta `1102` rutas en el arbol de ese momento; el hook del commit del
 cierre las vuelve a contar con este parrafo y los ficheros del cierre ya dentro.
+
+---
+
+# VUELTA 80 DE LA LINEA SERIAL, lote 5 (`marquet_turn_the_ship`), **CLASE INSERCION**: las `20` fichas de Marquet, una por vez, con la arista por lectura; `d104` y `d183`; y el cierre de la campania
+
+*Encargo escrito por el auditor al cerrar la `ACTA 78`. Clase impresa por `python scripts/deuda.py --clase 80` (`LIBRE`, `80.0`) y
+declarada `INSERCION` en la cabecera del encargo. **Uno por vez, cada `insertar` esperado en primer plano hasta su `.fin`, y ninguno en
+vuelo al cerrar el turno.***
+
+**REPORTE ABIERTO AL EMPEZAR** (`EXTRACTOR.md` 3). Las filas se llenan al cerrarse cada tarea. Si la vuelta se corta, lo que
+falte es exactamente lo que no tiene fila.
+
+| tarea | que | estado |
+|---|---|---|
+| `T1` | los registros de la `ACTA 78`, y el pago de `d104` | **CERRADA** (`80.1`): `d104` pagada citando `78.3`, sin tocar el grafo |
+| `T2` | lo que entra es lo que se leyo: las huellas de las `20` fichas y del grafo | **CERRADA** (`80.2`): identicas a `.v78ext/pasos_y_huellas.txt`; `sha1sum -c` sin quejas |
+| `T3` | las `20` filas de `.v78ext/orden.txt`, una por vez, con la arista por lectura | abierta |
+| `T4` | `d183`: la frontera de Grove, escrita despues de que entre su nodo | abierta |
+| `T5` | el cierre, y si todo entro, el de la campania | abierta |
+
+## 80.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
+
+**Lo pendiente, commiteado primero** (`EXTRACTOR.md` 1): `loop.log`, `ultimo_auditor.json` y `ultimo_extractor.json` del arnes,
+empujados como `fcb1cdc9`, hook verde.
+
+<!-- TALLADO: parcial salida=.v80ext/apertura.txt -->
+
+    $ git rev-parse HEAD && git log -1 --format=%cI && git rev-parse --abbrev-ref HEAD
+    fcb1cdc953d98a5636817849c07624cc8b23b436
+    2026-09-26T17:32:15-04:00
+    extraccion-mundo-11
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 459
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+    $ bash .v80ext/censo.sh
+    nodos en dataset/nodos.jsonl        : 459
+    veredictos en bitacora              : 1172
+    pares mutuos                        : 1
+    bandeja cuarentena/marquet_turn_the_ship : 20
+    insertados de marquet_turn_the_ship : 0
+    cerrojos en procesos/               : 
+    $ python scripts/deuda.py --clase 80
+    LIBRE
+      van 1 de 5 desde la ultima de saneamiento (la 79), con 46 deuda(s) esperando
+    $ python .v70aud/poblacion.py
+    poblacion: 479 | por sede: {'grafo': 459, 'bandeja': 20} | suma: 479
+    $ python scripts/retirar_paso.py --ver
+    RETIRADAS DECLARADAS QUE SIGUEN VIVAS EN EL CAMPO (D.54)
+      poblacion: dataset/nodos.jsonl, sin filtrar
+      encontradas: 0
+    $ python .v78ext/pasos_y_huellas.py > .v80ext/huellas_apertura.txt; diff .v80ext/huellas_apertura.txt .v78ext/pasos_y_huellas.txt && echo IDENTICO
+    IDENTICO
+
+**Coincide con la `ACTA 78` `78.1`** (`459`, `1172`, `1`; bandeja de Marquet `20`, insertados `0`; poblacion `479`, `459` del grafo mas
+`20` de bandejas), la clase y las `46` deudas con las que pega el encargo, y **`procesos/` esta vacio**. `.v80ext/censo.sh` es copia de
+`.v79ext/censo.sh` con el comentario cambiado y ninguna linea de medida tocada (su cabecera lo dice). **Las huellas de las `20`,
+identicas a las que la `78` sello**, antes de tocar nada.
+
+## 80.1. TAREA 1: LOS REGISTROS DE LA `ACTA 78`, Y EL PAGO DE `d104` (`D.47`)
+
+| que | donde |
+|---|---|
+| **mi vuelta, reproducida**: no movio ni un byte de dato; `53` de mis `55` comandos corridos dan hoy su salida pegada, y las `2` que no, con su motivo | `ACTA 78` `78.0`, `78.1` |
+| **la conjunta de Zhuo, cerrada**: gana la lectura de la `ACTA 77`; no hay frontera de Zhuo y `d183` se paga solo con la de Grove | `78.3` |
+| **mi texto de Grove es el de las dos posiciones del auditor**, y queda listo tal cual | `78.3` |
+| **mis cuatro discutibles se sostienen**, `D79.1` a `D79.4`; **`d104`, adjudicada**: ni `D.37` ni `D.29` dan arista, y se paga aqui | `78.3` |
+| **`d150`, `d180`, `d098`, `d099` y `d135` se sostienen como pagadas** | `78.4` |
+| **una caida mia de `REPORTE` que no acumula**: el bloque de `79.3.1` pega un `grep` con comillas invertidas entre comillas dobles que, corrido tal cual, no da su salida; las cifras eran ciertas. Las cinco rachas siguen en cero | `78.1`, `78.2`, `78.7` |
+
+**Lo que aprendo, sin reabrirla:** **un comando con comillas invertidas se pega con comillas simples**, y en esta vuelta todo bloque
+`$` sale de un fichero que el propio comando escribio, no de una linea tecleada al lado.
+
+**`d104`, PAGADA** con el `como` de `.v80ext/como_d104.txt`, que cita la `ACTA 78` `78.3` por sus lineas; el grafo, sin tocar (salida
+entera en `.v80ext/t1_d104.txt`):
+
+<!-- TALLADO: parcial salida=.v80ext/t1_d104.txt -->
+
+    $ grep -n '^\*\*`d104`, ADJUDICADA\*\*\|^\*\*`d104` SE PAGA\|^- \*\*`D.37`, NO\.\*\*\|^- \*\*`D.29`, NO\.\*\*' docs/loop/ACTA_AUDITOR.md | cut -c1-90
+    52103:**`d104`, ADJUDICADA** (`1.3`: el extractor la trajo; decido con la vara). La pregun
+    52115:- **`D.37`, NO.** El texto de la cabeza tiene que decir **cuantas** partes hay **y**
+    52119:- **`D.29`, NO.** Con direccion (`6.1`): lo que el hijo tendria que continuar es el 
+    52128:**`d104` SE PAGA: la cabeza no nacio y no nacera** (Gerber esta `INSERTADO`, `78.10`
+    $ python .v80ext/aristas_d104.py
+      distinguir_tres_tipos_sistemas_negocio   previos [] | siguientes []
+      cuantificar_impacto_innovacion_6_pasos   previos ['cambiar_saludo_cliente_dos_ramas'] | siguientes []
+      cambiar_saludo_cliente_dos_ramas         previos [] | siguientes ['cuantificar_impacto_innovacion_6_pasos']
+      probar_traje_azul_seis_semanas           previos [] | siguientes []
+    $ python scripts/deuda.py --pagar d104 --vuelta 80 --como "$(cat .v80ext/como_d104.txt)"
+    PAGADA d104 en la vuelta 80
+    $ python scripts/deuda.py | grep -E '^  (d104|d183) '
+      d183   78      relectura          LA FRONTERA DECLARADA ENTRE grove_high_output Y marq
+    $ python scripts/deuda.py --clase 80
+    LIBRE
+      van 1 de 5 desde la ultima de saneamiento (la 79), con 45 deuda(s) esperando
+
+**Las deudas esperando bajan de `46` a `45`**, y la unica de las dos que el encargo me da que queda en pie es `d183`, que se paga en la
+TAREA `4`. `distinguir_tres_tipos_sistemas_negocio` sigue sin aristas: **no se toco el grafo por `d104`.**
+
+**`T1` CERRADA.**
+
+## 80.2. TAREA 2: LO QUE ENTRA ES LO QUE SE LEYO
+
+Corrido despues de la TAREA 1 (que no toco la bandeja ni el grafo) y antes del primer `insertar` (salida entera en `.v80ext/t2.txt`):
+
+<!-- TALLADO: parcial salida=.v80ext/t2.txt -->
+
+    $ python .v78ext/pasos_y_huellas.py > .v80ext/huellas_t2.txt; diff .v80ext/huellas_t2.txt .v78ext/pasos_y_huellas.txt && echo IDENTICO
+    IDENTICO
+    $ cat .v80ext/huellas_t2.txt
+    1   ceder_control_reforzar_competencia_claridad                  bandeja     6 pasos ef81c96864 igual trabajo=HEAD
+    2   cambiar_forma_trabajar_conservar_plantilla                   bandeja     5 pasos 36cfd9d6f7 igual trabajo=HEAD
+    3   encargar_meta_especifica_dejar_libre_metodo                  bandeja     5 pasos cda982ac44 igual trabajo=HEAD
+    4   observar_reunion_rutinaria_senales_plantilla                 bandeja     9 pasos 9d6356c978 igual trabajo=HEAD
+    5   seguir_frustrado_preguntar_implantacion_ideas                bandeja     8 pasos aa5b776b07 DISTINTA trabajo=HEAD
+    6   contar_firmas_cadena_tramite_parado                          bandeja    10 pasos 71426b3f58 igual trabajo=HEAD
+    7   inspeccionar_reparto_informacion_notas_jefe                  bandeja     8 pasos 34ea4932a9 igual trabajo=HEAD
+    8   recorrer_organizacion_escuchar_plantilla                     bandeja     7 pasos fdda3b318a igual trabajo=HEAD
+    9   auditar_formacion_premios_ultima_fila                        bandeja    11 pasos 319bc9d6de igual trabajo=HEAD
+    10  informar_cierre_jornada_conservar_propiedad_trabajo          bandeja     5 pasos 95b58d58d7 DISTINTA trabajo=HEAD
+    11  aplicar_ejercicio_codigo_genetico_control                    bandeja     6 pasos b11e5ee02a igual trabajo=HEAD
+    12  asignar_responsable_unico_evolucion_planificada              bandeja     2 pasos d76a2e6d1d igual trabajo=HEAD
+    13  reforzar_principios_guia_lenguaje_prueba_conocimiento        bandeja     2 pasos 022ce67ec7 igual trabajo=HEAD
+    14  declarar_intencion_reemplazar_peticion_permiso               bandeja     3 pasos d9c0b0ec2b igual trabajo=HEAD
+    15  resistir_dar_solucion_clasificar_decision_urgencia           bandeja     5 pasos c75cd39493 igual trabajo=HEAD
+    16  eliminar_seguimiento_descendente_responsabilizar_dueno       bandeja     2 pasos 7706b13c41 igual trabajo=HEAD
+    17  acoger_inspectores_externos_fuente_aprendizaje               bandeja     3 pasos b00239a102 igual trabajo=HEAD
+    18  tomar_accion_deliberada_pausar_vocalizar_gesticular          bandeja     3 pasos d4077e278a igual trabajo=HEAD
+    19  identificar_temas_formacion_tarjetas_decision                bandeja     8 pasos d9d18e5a0e igual trabajo=HEAD
+    20  repetir_mensaje_invariable_diario_reunion_evento             bandeja     2 pasos 777b8d5ac1 igual trabajo=HEAD
+    fichas de las filas 1 a 20: 20 | pasos: 110 | iguales a su blob en e9d0309: 18 | distintas: 2 | fichero de trabajo distinto de HEAD: 0
+    $ sha1sum -c --quiet .v78aud/huellas_al_barrer.txt && echo "las 20 fichas y el grafo de hoy: mismas huellas que al barrer en la fase ciega de la 78"
+    las 20 fichas y el grafo de hoy: mismas huellas que al barrer en la fase ciega de la 78
+    $ wc -l < .v78aud/huellas_al_barrer.txt
+    21
+
+**Identica a `.v78ext/pasos_y_huellas.txt`**, como la reprodujo el auditor (`ACTA 78` `78.1`) y como al abrir esta vuelta (`80.0`): **las
+`20` fichas entran con la huella que la `78` sello**, `110` pasos; las `2` `DISTINTA` son las que la TAREA 2 de la `78` corrigio contra
+`e9d0309`, y el fichero de trabajo de las `20` es el de `HEAD`. **Ninguna sale distinta de lo sellado, asi que ninguna se relee.** Y las
+`21` huellas de la fase ciega de la `78` (las `20` fichas y el grafo) **pasan `sha1sum -c` sin una sola queja**: la bandeja y el grafo son
+byte a byte los que barrio el auditor.
+
+**`T2` CERRADA.**
+
+## 80.D. **LOS DISCUTIBLES DEL METODO, MARCADOS ANTES DEL PRIMER `insertar`** (`EXTRACTOR.md` 8)
+
+| | que | por que lo marco |
+|---|---|---|
+| `D80.1` | **EL METODO DE LA `77`, QUE EL ENCARGO DA POR BUENO**: cada `insertar` lo lanza `.v80ext/insertar.py` como UN proceso, y yo espero bloqueado en primer plano con `.v80ext/esperar.py` hasta su `.fin`, porque una llamada de mi herramienta no pasa de `600` s y un `insertar` de la `77` llego a `782,4` s. **Entre el lanzamiento y el `.fin` no lanzo el siguiente ni toco el dataset, la bitacora ni la bandeja.** Ninguno queda vivo al cerrar mi turno, y si uno no cabe, no lo lanzo | la letra de la corrida dice *primer plano* y *nunca en segundo plano*; es el mismo marcado que `D77.3`, `D75.4` y `D72.1` |
+| `D80.2` | **`.v80ext/insertar.py` comprueba, antes de lanzar, que el id es el de su fila en `.v78ext/orden.txt`**, y si no lo es no lanza (sale `2` sin escribir nada) | es una linea que la copia de la `77` no tenia; el encargo dice *la tanda en las filas de `.v78ext/orden.txt`* y lo leo como que la tanda la manda ese fichero y no mi teclado. No cambia lo que entra ni las lineas que se pasan; su cabecera lo dice |

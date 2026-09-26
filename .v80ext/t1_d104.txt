@@ -1,0 +1,17 @@
+$ grep -n '^\*\*`d104`, ADJUDICADA\*\*\|^\*\*`d104` SE PAGA\|^- \*\*`D.37`, NO\.\*\*\|^- \*\*`D.29`, NO\.\*\*' docs/loop/ACTA_AUDITOR.md | cut -c1-90
+52103:**`d104`, ADJUDICADA** (`1.3`: el extractor la trajo; decido con la vara). La pregun
+52115:- **`D.37`, NO.** El texto de la cabeza tiene que decir **cuantas** partes hay **y**
+52119:- **`D.29`, NO.** Con direccion (`6.1`): lo que el hijo tendria que continuar es el 
+52128:**`d104` SE PAGA: la cabeza no nacio y no nacera** (Gerber esta `INSERTADO`, `78.10`
+$ python .v80ext/aristas_d104.py
+  distinguir_tres_tipos_sistemas_negocio   previos [] | siguientes []
+  cuantificar_impacto_innovacion_6_pasos   previos ['cambiar_saludo_cliente_dos_ramas'] | siguientes []
+  cambiar_saludo_cliente_dos_ramas         previos [] | siguientes ['cuantificar_impacto_innovacion_6_pasos']
+  probar_traje_azul_seis_semanas           previos [] | siguientes []
+$ python scripts/deuda.py --pagar d104 --vuelta 80 --como "$(cat .v80ext/como_d104.txt)"
+PAGADA d104 en la vuelta 80
+$ python scripts/deuda.py | grep -E '^  (d104|d183) '
+  d183   78      relectura          LA FRONTERA DECLARADA ENTRE grove_high_output Y marq
+$ python scripts/deuda.py --clase 80
+LIBRE
+  van 1 de 5 desde la ultima de saneamiento (la 79), con 45 deuda(s) esperando

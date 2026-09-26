@@ -1,0 +1,26 @@
+$ git rev-parse HEAD && git log -1 --format=%cI && git rev-parse --abbrev-ref HEAD
+fcb1cdc953d98a5636817849c07624cc8b23b436
+2026-09-26T17:32:15-04:00
+extraccion-mundo-11
+$ python forja.py gate
+GATE VERDE.
+  nodos verificados: 459
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+$ bash .v80ext/censo.sh
+nodos en dataset/nodos.jsonl        : 459
+veredictos en bitacora              : 1172
+pares mutuos                        : 1
+bandeja cuarentena/marquet_turn_the_ship : 20
+insertados de marquet_turn_the_ship : 0
+cerrojos en procesos/               : 
+$ python scripts/deuda.py --clase 80
+LIBRE
+  van 1 de 5 desde la ultima de saneamiento (la 79), con 46 deuda(s) esperando
+$ python .v70aud/poblacion.py
+poblacion: 479 | por sede: {'grafo': 459, 'bandeja': 20} | suma: 479
+$ python scripts/retirar_paso.py --ver
+RETIRADAS DECLARADAS QUE SIGUEN VIVAS EN EL CAMPO (D.54)
+  poblacion: dataset/nodos.jsonl, sin filtrar
+  encontradas: 0
+$ python .v78ext/pasos_y_huellas.py > .v80ext/huellas_apertura.txt; diff .v80ext/huellas_apertura.txt .v78ext/pasos_y_huellas.txt && echo IDENTICO
+IDENTICO
