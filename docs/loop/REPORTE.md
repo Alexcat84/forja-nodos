@@ -68300,3 +68300,19 @@ La aduana de hoy: **BLOQUEARIA** con `3` vecino(s) contra `479`; lineas `--vered
     hoy 3 vecinos, barrido de la 78 3 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (466 grafo, 13 bandejas), en la 78 479 (459, 20)
 
 **Los tres vecinos son los de su bloque y las tres lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `78`, las tres seniales al digito; la poblacion, `479` (`466` mas `13`). Sin aristas en esta fila: sus tres filas de madre en `.v78ext/aristas_lectura.txt` son `NO SOSTENGO` (calendario, `D78.13`), y la de `desplegar_plan_orden_operaciones_franqueza_radical` tambien. Bitacora de `1192` a `1195`, sus tres lineas SANO.
+
+### Fila `9`: `auditar_formacion_premios_ultima_fila`, **INSERTADO** en `687.3` s, codigo `0`, commit `28e45919`
+
+La aduana de hoy: **BLOQUEARIA** con `2` vecino(s) contra `479`; lineas `--veredicto` pasadas: `2`. Salida entera en `.v80ext/insertar_09_auditar_formacion_premios_ultima_fila.txt`.
+
+<!-- TALLADO: parcial salida=.v80ext/insertar_09_auditar_formacion_premios_ultima_fila.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `observar_reunion_rutinaria_senales_plantilla` | similitud_texto | 0.370 | 0.000 | 0.489 | SANO |
+| `recorrer_organizacion_escuchar_plantilla` | similitud_texto | 0.353 | 0.000 | 0.462 | SANO |
+
+    $ python .v80ext/contra_barrido.py 09 auditar_formacion_premios_ultima_fila
+    hoy 2 vecinos, barrido de la 78 2 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (467 grafo, 12 bandejas), en la 78 479 (459, 20)
+
+**Los dos vecinos son los de su bloque y las dos lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `78`, las tres seniales al digito; la poblacion, `479` (`467` mas `12`). Sin aristas en esta fila. Bitacora de `1195` a `1197`, sus dos lineas SANO.
