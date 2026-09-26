@@ -63072,3 +63072,20 @@ La aduana de hoy: **BLOQUEARIA** con `2` vecino(s) contra `479`; lineas `--vered
     hoy 2 vecinos, barrido de la 71 2 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (411 grafo, 68 bandejas), en la 71 479 (410, 69)
 
 **Los dos vecinos son los de su bloque y las dos lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `71`, las tres seniales al digito. Sin aristas en esta fila.
+
+### Fila `3`: `fijar_horizonte_ventana_replanificacion`, **INSERTADO** en `415.3` s, codigo `0`, commit `969ee983`
+
+La aduana de hoy: **BLOQUEARIA** con `3` vecino(s) contra `479`; lineas `--veredicto` pasadas: `3`. Salida entera en `.v72ext/insertar_03_fijar_horizonte_ventana_replanificacion.txt`.
+
+<!-- TALLADO: parcial salida=.v72ext/insertar_03_fijar_horizonte_ventana_replanificacion.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `fijar_periodo_direccion_objetivos_retroalimentacion` | similitud_texto | 0.385 | 0.125 | 0.430 | SANO |
+| `determinar_estado_presente_capacidades_proyectos_merma` | similitud_texto | 0.358 | 0.000 | 0.394 | SANO |
+| `anunciar_decision_inesperada_reconvocar_reunion` | similitud_texto | 0.357 | 0.000 | 0.365 | SANO |
+
+    $ python .v72ext/contra_barrido.py 03 fijar_horizonte_ventana_replanificacion
+    hoy 3 vecinos, barrido de la 71 3 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (412 grafo, 67 bandejas), en la 71 479 (410, 69)
+
+**Los tres vecinos son los de su bloque y las tres lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `71`, las tres seniales al digito. La aduana escribio ademas el censo de `atribuciones` (la ficha trae la suya). Sin aristas en esta fila.
