@@ -66140,3 +66140,18 @@ cabecera): `.v77ext/insertar.py` (lineas de `.v77ext/veredictos_listos.txt`, sin
     cerrojos en procesos/               : 
 
 Es el de `77.0`: `437`, `1111`, `1`, `22`, `0`, y `procesos/` vacio. Las TAREAS 1 a 3 no movieron dato.
+
+### Fila `1`: `hacer_trabajo_futuro_imaginar_negocio`, **INSERTADO** en `482.4` s, codigo `0`, commit `3d707999`
+
+La aduana de hoy: **BLOQUEARIA** con `1` vecino(s) contra `479`; lineas `--veredicto` pasadas: `1`. Salida entera en `.v77ext/insertar_01_hacer_trabajo_futuro_imaginar_negocio.txt`.
+
+<!-- TALLADO: parcial salida=.v77ext/insertar_01_hacer_trabajo_futuro_imaginar_negocio.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `dictar_ritmo_crecimiento_preguntas_escritas` | similitud_texto | 0.400 | 0.000 | 0.441 | SANO |
+
+    $ python .v77ext/contra_barrido.py 01 hacer_trabajo_futuro_imaginar_negocio
+    hoy 1 vecinos, barrido de la 76 1 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (437 grafo, 42 bandejas), en la 76 479 (437, 42)
+
+**El vecino es el de su bloque y la linea se paso tal cual**: ni nuevos ni caidos contra el barrido de la `76`, las tres seniales al digito; la poblacion, la misma (`437` mas `42`). Sin aristas en esta fila: no tiene madre ni hijo en la tanda. Bitacora de `1111` a `1112`, su linea SANO.
