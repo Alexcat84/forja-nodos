@@ -66937,11 +66937,11 @@ falte es exactamente lo que no tiene fila.
 
 | tarea | que | estado |
 |---|---|---|
-| `T1` | los registros de la `ACTA 76` | PENDIENTE |
-| `T2` | la fidelidad entera de las fichas de Marquet, y `d150` preparada | PENDIENTE |
-| `T3` | el barrido, sobre las fichas ya corregidas | PENDIENTE |
-| `T4` | los veredictos, las aristas y el orden | PENDIENTE |
-| `T5` | el cierre: censo, `PASOS INVENTADOS`, huellas, `D.61`, `R5`, guardas, commit | PENDIENTE |
+| `T1` | los registros de la `ACTA 76` | **CERRADA** (`78.1`) |
+| `T2` | la fidelidad entera de las fichas de Marquet, y `d150` preparada | **CERRADA** (`78.2`): `110` pasos, `3` PUENTE corregidos en la bandeja antes del barrido, `cap_04` releido entero, `R9` sin `P` nuevo; la fila de `cap_03` para `d150` |
+| `T3` | el barrido, sobre las fichas ya corregidas | **CERRADA** (`78.3`): `20` de `20`, poblacion `479`, `52` pares, recogido dentro del turno |
+| `T4` | los veredictos, las aristas y el orden | **CERRADA** (`78.4`): `52` lineas para `52` vecinos, todas `SANO`; `1` arista por lectura, `1` esperada, `D.36` en cero |
+| `T5` | el cierre: censo, `PASOS INVENTADOS`, huellas, `D.61`, `R5`, guardas, commit | **CERRADA** (`78.5`): censo igual al abrir y al cerrar; ninguna insertada; guardas y cierre estricto en verde |
 
 ## 78.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
 
@@ -67260,8 +67260,7 @@ orden del libro, dio esas dos de `D.36` y se corrigio antes de publicar:
 
 <!-- TALLADO: parcial salida=.v78ext/orden.txt -->
 
-    $ python .v78ext/orden.py | tail -10
-    
+    $ python .v78ext/orden.py | tail -9
     COMPROBACIONES
       hijo delante de su madre: 0 []
       D.36, par que levanta en un solo sentido con el que lo levanta entrando antes: 0 []
@@ -67278,3 +67277,163 @@ las `20` caben en el tope.** **Aristas esperadas en la vuelta de insercion: `1`*
 de la madre.
 
 **`T4` CERRADA: las tres partes hechas, ninguna fila vacia, ninguna insertada.**
+
+## 78.5. TAREA 5: EL CIERRE
+
+### 78.5.a. El censo antes y despues
+
+<!-- TALLADO: parcial salida=.v78ext/censo_cierre.txt -->
+
+    $ bash .v78ext/censo.sh
+    nodos en dataset/nodos.jsonl        : 459
+    veredictos en bitacora              : 1172
+    pares mutuos                        : 1
+    bandeja cuarentena/marquet_turn_the_ship : 20
+    insertados de marquet_turn_the_ship : 0
+    cerrojos en procesos/               : 
+
+**`459`, `1172`, `1`, `20` y `0` al abrir (`78.0`) y al cerrar: no entro nada**, ningun `insertar` corrio en esta vuelta, y `procesos/`
+esta vacio.
+
+### 78.5.b. `PASOS INVENTADOS POR CAPITULO`, trece filas, que son preparacion y no entrada
+
+Las de `78.2.3`, de `.v78ext/contar_fidelidad.txt`, que no cambian despues: ninguna ficha se toco despues de la TAREA 2.
+
+<!-- TALLADO: parcial salida=.v78ext/contar_fidelidad.txt -->
+
+| capitulo | candidatos | pasos | PUENTE en la relectura | por ciento | PUENTE que entrara |
+|---|---:|---:|---:|---:|---:|
+| `cap_01` | `1` | `6` | `0` | `0,0` | `0` |
+| `cap_02` | `2` | `10` | `0` | `0,0` | `0` |
+| `cap_03` | `6` | `53` | `1` | `1,9` | `0` |
+| `cap_04` | `1` | `5` | `2` | `40,0` | `0` |
+| `cap_06` | `2` | `8` | `0` | `0,0` | `0` |
+| `cap_07` | `1` | `3` | `0` | `0,0` | `0` |
+| `cap_08` | `1` | `5` | `0` | `0,0` | `0` |
+| `cap_09` | `1` | `2` | `0` | `0,0` | `0` |
+| `cap_10` | `1` | `3` | `0` | `0,0` | `0` |
+| `cap_11` | `1` | `3` | `0` | `0,0` | `0` |
+| `cap_12` | `1` | `8` | `0` | `0,0` | `0` |
+| `cap_13` | `1` | `2` | `0` | `0,0` | `0` |
+| `cap_14` | `1` | `2` | `0` | `0,0` | `0` |
+
+**El peor, `cap_04`, `2` de `5`, el unico por encima del `10`: releido entero** (`78.2.3`). Los `3` corregidos por correccion declarada
+(`78.2.2`); la ultima columna es la cuenta despues de esa correccion, no una salida del instrumento, y por eso la tabla va marcada
+parcial. **`R9`** corrido antes de publicar esta cuenta, con su salida pegada en `78.2.1`. **La fila de `cap_03` es la que `d150` pedia**
+(`78.2.4`), y se paga en la vuelta que inserte.
+
+### 78.5.c. La huella de las `20` fichas preparadas, despues del ultimo cambio de ficha
+
+Copia de `.v76ext/pasos_y_huellas.py` con la lista a las filas `1` a `20` de `.v78ext/orden.txt`, la bandeja a
+`cuarentena/marquet_turn_the_ship/` y el commit de comparacion a `e9d0309` (la apertura), su cabecera lo dice; corrida despues del commit
+de las correcciones (`d19671a1`) y del orden:
+
+<!-- TALLADO: parcial salida=.v78ext/pasos_y_huellas.txt -->
+
+    $ python .v78ext/pasos_y_huellas.py
+    1   ceder_control_reforzar_competencia_claridad                  bandeja     6 pasos ef81c96864 igual trabajo=HEAD
+    2   cambiar_forma_trabajar_conservar_plantilla                   bandeja     5 pasos 36cfd9d6f7 igual trabajo=HEAD
+    3   encargar_meta_especifica_dejar_libre_metodo                  bandeja     5 pasos cda982ac44 igual trabajo=HEAD
+    4   observar_reunion_rutinaria_senales_plantilla                 bandeja     9 pasos 9d6356c978 igual trabajo=HEAD
+    5   seguir_frustrado_preguntar_implantacion_ideas                bandeja     8 pasos aa5b776b07 DISTINTA trabajo=HEAD
+    6   contar_firmas_cadena_tramite_parado                          bandeja    10 pasos 71426b3f58 igual trabajo=HEAD
+    7   inspeccionar_reparto_informacion_notas_jefe                  bandeja     8 pasos 34ea4932a9 igual trabajo=HEAD
+    8   recorrer_organizacion_escuchar_plantilla                     bandeja     7 pasos fdda3b318a igual trabajo=HEAD
+    9   auditar_formacion_premios_ultima_fila                        bandeja    11 pasos 319bc9d6de igual trabajo=HEAD
+    10  informar_cierre_jornada_conservar_propiedad_trabajo          bandeja     5 pasos 95b58d58d7 DISTINTA trabajo=HEAD
+    11  aplicar_ejercicio_codigo_genetico_control                    bandeja     6 pasos b11e5ee02a igual trabajo=HEAD
+    12  asignar_responsable_unico_evolucion_planificada              bandeja     2 pasos d76a2e6d1d igual trabajo=HEAD
+    13  reforzar_principios_guia_lenguaje_prueba_conocimiento        bandeja     2 pasos 022ce67ec7 igual trabajo=HEAD
+    14  declarar_intencion_reemplazar_peticion_permiso               bandeja     3 pasos d9c0b0ec2b igual trabajo=HEAD
+    15  resistir_dar_solucion_clasificar_decision_urgencia           bandeja     5 pasos c75cd39493 igual trabajo=HEAD
+    16  eliminar_seguimiento_descendente_responsabilizar_dueno       bandeja     2 pasos 7706b13c41 igual trabajo=HEAD
+    17  acoger_inspectores_externos_fuente_aprendizaje               bandeja     3 pasos b00239a102 igual trabajo=HEAD
+    18  tomar_accion_deliberada_pausar_vocalizar_gesticular          bandeja     3 pasos d4077e278a igual trabajo=HEAD
+    19  identificar_temas_formacion_tarjetas_decision                bandeja     8 pasos d9d18e5a0e igual trabajo=HEAD
+    20  repetir_mensaje_invariable_diario_reunion_evento             bandeja     2 pasos 777b8d5ac1 igual trabajo=HEAD
+    fichas de las filas 1 a 20: 20 | pasos: 110 | iguales a su blob en e9d0309: 18 | distintas: 2 | fichero de trabajo distinto de HEAD: 0
+
+**Las dos `DISTINTA` son las dos corregidas en `78.2.2`, y solo ellas**; los `110` pasos son los de `.v78ext/fidelidad.tsv`. Es contra estos
+blobs contra lo que la vuelta de insercion comprobara que entra lo que se leyo.
+
+### 78.5.d. `D.61`: cada discutible, ejecutado o cerrado
+
+| | estado |
+|---|---|
+| `D78.1` | **EJECUTADO**: las `20` en esta vuelta, y el barrido se lanzo una vez con las `20`, despues del commit de las correcciones (`d19671a1`); la fidelidad se hizo con `cap_03` primero (`78.2`) |
+| `D78.2` | **EJECUTADO**: el barrido corrio con `FORJA_PROCESOS_SIMILITUD=3` y el presupuesto de `6` plazas (`.v78ext/barrer.sh`), cinco a la vez, `20` de `20` con `rc=0` y poblacion `479` en las `20`, recogido dentro del turno (`78.3`) |
+| `D78.3` a `D78.10` | **EJECUTADOS**: las marcas en `.v78ext/fidelidad.tsv`, los `3` `P` corregidos en la bandeja (`78.2.2`) y la cifra en `78.2.3`; quedan para la relectura del auditor |
+| `D78.11` a `D78.14` | **EJECUTADOS**: escritos en `.v78ext/aristas_lectura.txt` y `.v78ext/veredictos_listos.txt`, comprobados por `comprobar_veredictos.py` y `orden.py` (`78.4`); quedan para la relectura del auditor |
+
+**Ninguno abierto.**
+
+### 78.5.e. `R5`, medido con las copias de `.v64ext/pegado64.py` y `.v64aud/normal/bloques_mudos.py`
+
+`.v78ext/pegado78.py` y `.v78ext/bloques_mudos78.py`, sacadas con `sed` de los originales con la cabecera del tramo cambiada a la `78`
+(el `diff --strip-trailing-cr` contra el original da `3` y `2` lineas cambiadas, las de la cabecera y el rotulo):
+
+<!-- TALLADO: parcial salida=.v78ext/r5.txt -->
+
+    $ python .v78ext/pegado78.py; python .v78ext/bloques_mudos78.py
+    bloques abiertos con `$` en el tramo de la vuelta 78 : 20
+    bloques que ROMPEN R1 (ACTA 60 60.15)                : 0
+    bloques abiertos con `$`: 12 | comandos `$`: 20 | comandos sin ninguna linea de salida en su bloque: 0
+
+**Cero bloques que rompen `R1` y cero comandos sin salida**, medido con el reporte hasta `78.4`. **La primera medida dio `1` comando sin
+salida**: el bloque del orden en `78.4.3` empezaba con la linea en blanco que `orden.py` imprime antes de `COMPROBACIONES`. Se cambio el
+comando a `tail -9`, que empieza en `COMPROBACIONES`, sin tocar ninguna linea de salida, y la segunda medida es la de arriba. **`R9`** se
+aplico en la unica cuenta de PUENTE que publico, la de `78.2.3`, con su `grep` pegado en `78.2.1` antes de ella.
+
+### 78.5.f. Las guardas
+
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 459
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+    $ python forja.py guiones
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+    $ python tests/test_aceptacion.py | grep "total:"
+      total: 382 pruebas, 0 fallos, 0 errores
+
+(Salidas enteras en `.v78ext/cierre_gate.txt`, `.v78ext/cierre_guiones.txt` y `.v78ext/cierre_tests.txt`; las tres llevan al final el `rc=0`
+que les anexe al correrlas.) La suite cuenta `382` pruebas, lo mismo que la `ACTA 76` `76.1`.
+
+### 78.5.g. El cierre estricto, en verde
+
+Salida entera en `.v78ext/cierre_reporte.txt` (y la de las pruebas que lanza, que va por stderr, en `.v78ext/cierre_reporte_err.txt`),
+codigo y hora en `.v78ext/cierre_reporte_rc.txt`. Corrio en primer plano y volvio antes de seguir:
+
+    $ grep -E '^(TALLADO|CENSO|TABLA DE CIERRE|CIERRE|GATE|BARRIDO)' .v78ext/cierre_reporte.txt; cat .v78ext/cierre_reporte_rc.txt
+    TALLADO DEL REPORTE (D.41): la tabla que dice ser de instrumento
+    TALLADO VERDE: las 157 tabla(s) comprobables son las de su instrumento, celda a celda.
+    CENSO DE RUTAS (D.42): la unidad de la ruta es la celda
+    CENSO VERDE: las 1086 rutas publicadas sostienen lo que dicen sostener.
+    TABLA DE CIERRE DE TAREAS (D.52): toda tabla del reporte declara su instrumento
+    TABLA DE CIERRE VERDE: ninguna celda medible difiere del dato.
+    GATE VERDE.
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+    CIERRE VERDE: las cuatro guardas que muerden, el tallado y el censo. La vigencia corrio y publico su cuenta arriba: es cola, no guarda (D.15).
+    rc=0
+    15:00:33
+
+**Ningun rojo**, `rc=0`, de vuelta a las `15:00:33`.
+
+**Tabla de tareas, al cerrar:**
+
+| tarea | que | estado |
+|---|---|---|
+| `T1` | los registros de la `ACTA 76` | **CERRADA** (`78.1`) |
+| `T2` | la fidelidad entera de las fichas de Marquet, y `d150` preparada | **CERRADA** (`78.2`): `110` pasos, `3` PUENTE corregidos en la bandeja antes del barrido, `cap_04` releido entero, `R9` sin `P` nuevo; la fila de `cap_03` para `d150`, sin pagar |
+| `T3` | el barrido, sobre las fichas ya corregidas | **CERRADA** (`78.3`): `20` de `20`, poblacion `479`, `52` pares, recogido dentro del turno |
+| `T4` | los veredictos, las aristas y el orden | **CERRADA** (`78.4`): `52` lineas para `52` vecinos, todas `SANO`; `1` arista por lectura, `1` esperada, `D.36` en cero |
+| `T5` | el cierre | **CERRADA** (`78.5`): censo `459`, `1172`, `1`, `20`, `0` al abrir y al cerrar; ninguna insertada |
+
+**Ningun proceso MIO vivo al cerrar**: el barrido volvio con su `TODOS TERMINADOS`, los bucles de espera con el, y el cierre estricto con
+su `rc=`; `procesos/` esta vacio. **Ningun `insertar` corrio en esta vuelta, ninguna deuda se pago, no toque ningun nodo del grafo, ni
+`src/`, `scripts/`, `config/`, el tablero, los protocolos ni `APERTURA_CIEGA.md`, y no cree el tag.** **No escribo `PARA_ALEXIS.md`: nada
+me obliga a parar.** Lo que queda de Marquet, y de la campania, son estas `20` fichas preparadas, que entran en la vuelta de insercion si
+la `ACTA 77` las certifica (`D.39`), en el orden de `.v78ext/orden.txt`, con la arista de `78.4.2` y con `d150` pagada por la fila de
+`78.2.4`; por la cadencia, la `79` es de saneamiento (`ACTA 76` `76.11`).
+
+**`R5` vuelto a medir con el reporte ya entero** (`pegado78.py` y `bloques_mudos78.py` otra vez, salida en `.v78ext/r5_final.txt`): `27`
+comandos en `17` bloques, con `0` que rompen `R1` y `0` sin salida; el de mas es el bloque del cierre estricto.
