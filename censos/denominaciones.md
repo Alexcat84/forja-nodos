@@ -1185,3 +1185,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-26 | operar_modelo_gente_destreza_minima | otro_idioma | lowest possible level of skill | ingles | - |
 | 2026-09-26 | operar_modelo_gente_destreza_minima | otro_idioma | Rule of Ordinary People | ingles | - |
 | 2026-09-26 | operar_modelo_gente_destreza_minima | otro_idioma | Management by Abdication | ingles | - |
+| 2026-09-26 | unificar_color_forma_vestuario_modelo | nombre_largo | La regla 6 del Prototipo de Franquicia: los colores determinados cientificamente y aplicados en los ocho sitios que el libro nombra, las formas en sus cuatro soportes, y el modelo pensado como el envase de tu unico producto | castellano | - |
+| 2026-09-26 | unificar_color_forma_vestuario_modelo | otro_idioma | uniform color, dress, and facilities code | ingles | - |
+| 2026-09-26 | unificar_color_forma_vestuario_modelo | otro_idioma | Color Research Institute | ingles | - |
