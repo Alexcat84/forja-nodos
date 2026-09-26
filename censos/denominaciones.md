@@ -1150,3 +1150,5 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-26 | guiar_subordinado_etapas_resistencia_desempeno | otro_idioma | the blast, stages of problem-solving | ingles | - |
 | 2026-09-26 | usar_banco_nueve_preguntas_entrevista | nombre_largo | Las nueve preguntas que un grupo de mandos aporto como las mejores para plantear durante una entrevista de contratacion | castellano | - |
 | 2026-09-26 | usar_banco_nueve_preguntas_entrevista | otro_idioma | best questions for an interview | ingles | - |
+| 2026-09-26 | responder_primer_aviso_renuncia_subordinado | nombre_largo | La respuesta inmediata del mando en el primer momento en que un subordinado valioso anuncia que va a renunciar, antes de intentar retenerlo | castellano | - |
+| 2026-09-26 | responder_primer_aviso_renuncia_subordinado | otro_idioma | I Quit! | ingles | - |
