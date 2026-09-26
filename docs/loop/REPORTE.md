@@ -65279,7 +65279,7 @@ falte es exactamente lo que no tiene fila.
 | `T2` | la fidelidad entera de las fichas de Gerber | **CERRADA** (`76.2`): `9` PUENTE de `176`, corregidos en la bandeja antes del barrido; `cap_07` y `cap_12` releidos enteros |
 | `T3` | el barrido, sobre las fichas ya corregidas | **CERRADA** (`76.3`): `22` de `22`, poblacion `479`, `54` pares, recogido dentro del turno |
 | `T4` | los veredictos, las aristas (`d111`, `d108`, `d098`, `D.37`) y el orden | **CERRADA** (`76.4`): `54` lineas para `54` vecinos, `6` aristas por lectura, `8` esperadas, `D.36` en cero; la cabeza de `d111` entra con `1` de `7` |
-| `T5` | el cierre: censo, `PASOS INVENTADOS`, huellas, `D.61`, `R5`, guardas, commit | abierta |
+| `T5` | el cierre: censo, `PASOS INVENTADOS`, huellas, `D.61`, `R5`, guardas, commit | **CERRADA** (`76.5`): censo igual al abrir y al cerrar; ninguna insertada; guardas y cierre estricto en verde |
 
 ## 76.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
 
@@ -65674,3 +65674,162 @@ tope.** **Aristas esperadas en la vuelta de insercion: `8`**, `2` por `CONTINUA`
 con `forja.py arista`, cada una citando su paso.
 
 **`T4` CERRADA: las tres partes hechas, ninguna fila vacia, ninguna insertada.**
+
+## 76.5. TAREA 5: EL CIERRE
+
+### 76.5.a. El censo antes y despues
+
+<!-- TALLADO: parcial salida=.v76ext/censo_cierre.txt -->
+
+    $ bash .v76ext/censo.sh
+    nodos en dataset/nodos.jsonl        : 437
+    veredictos en bitacora              : 1111
+    pares mutuos                        : 1
+    bandeja cuarentena/gerber_emyth     : 22
+    insertados de gerber_emyth          : 0
+    cerrojos en procesos/               : 
+
+**`437`, `1111`, `1`, `22` y `0` al abrir (`76.0`) y al cerrar: no entro nada**, ningun `insertar` corrio en esta vuelta, y `procesos/`
+esta vacio.
+
+### 76.5.b. `PASOS INVENTADOS POR CAPITULO`, diez filas, que son preparacion y no entrada
+
+Las de `76.2.3`, de `.v76ext/contar_fidelidad.txt`, que no cambian despues: ninguna ficha se toco despues de la TAREA 2.
+
+<!-- TALLADO: parcial salida=.v76ext/contar_fidelidad.txt -->
+
+| capitulo | candidatos | pasos | PUENTE en la relectura | por ciento | PUENTE que entrara |
+|---|---:|---:|---:|---:|---:|
+| `cap_04` | `1` | `7` | `0` | `0,0` | `0` |
+| `cap_07` | `1` | `8` | `1` | `12,5` | `0` |
+| `cap_08` | `2` | `17` | `0` | `0,0` | `0` |
+| `cap_11` | `6` | `57` | `1` | `1,8` | `0` |
+| `cap_12` | `3` | `12` | `4` | `33,3` | `0` |
+| `cap_13` | `1` | `10` | `0` | `0,0` | `0` |
+| `cap_14` | `1` | `9` | `0` | `0,0` | `0` |
+| `cap_15` | `1` | `5` | `0` | `0,0` | `0` |
+| `cap_18` | `3` | `26` | `2` | `7,7` | `0` |
+| `cap_19` | `3` | `25` | `0` | `0,0` | `0` |
+
+**El peor, `cap_12`, `4` de `12`, y `cap_07`, `1` de `8`, por encima del `10`: releidos enteros** (`76.2.3`). Los `9` corregidos por
+correccion declarada (`76.2.2`); la ultima columna es la cuenta despues de esa correccion, no una salida del instrumento, y por eso la
+tabla va marcada parcial. **`R9`** corrido antes de publicar esta cuenta, con su salida pegada en `76.2.1`.
+
+### 76.5.c. La huella de las `22` fichas preparadas, despues del ultimo cambio de ficha
+
+Copia de `.v73ext/pasos_y_huellas.py` con la lista a las filas `1` a `22` de `.v76ext/orden.txt`, la bandeja a `cuarentena/gerber_emyth/` y
+el commit de comparacion a `2407dbb` (la apertura), su cabecera lo dice; corrida despues del commit de las correcciones y vuelta a correr
+al cerrar, con `diff` en `IDENTICO` (`.v76ext/pasos_y_huellas_cierre.txt`):
+
+<!-- TALLADO: parcial salida=.v76ext/pasos_y_huellas.txt -->
+
+    $ python .v76ext/pasos_y_huellas.py
+    1   hacer_trabajo_futuro_imaginar_negocio                        bandeja     7 pasos 4ef47d89d2 igual trabajo=HEAD
+    2   dictar_ritmo_crecimiento_preguntas_escritas                  bandeja     8 pasos 1830b96359 DISTINTA trabajo=HEAD
+    3   construir_empresa_plantilla_vision_diaria                    bandeja     8 pasos 25b2c1b6d1 igual trabajo=HEAD
+    4   trazar_modelo_negocio_cliente_primero                        bandeja     9 pasos c3a1cf1caa igual trabajo=HEAD
+    5   fingir_prototipo_cinco_mil_replicas                          bandeja    11 pasos 70552170e5 igual trabajo=HEAD
+    6   dar_valor_constante_cuatro_publicos                          bandeja     8 pasos 2c531186bc igual trabajo=HEAD
+    7   interrogar_negocio_cinco_preguntas                           bandeja    10 pasos 2fc9d4cdb4 DISTINTA trabajo=HEAD
+    8   operar_modelo_gente_destreza_minima                          bandeja    10 pasos c6fd6206cd DISTINTA trabajo=HEAD
+    9   unificar_color_forma_vestuario_modelo                        bandeja     8 pasos 01fecf6fc4 igual trabajo=HEAD
+    10  cambiar_saludo_cliente_dos_ramas                             bandeja     4 pasos a8e8e0f482 DISTINTA trabajo=HEAD
+    11  probar_traje_azul_seis_semanas                               bandeja     2 pasos ef38e0f89b igual trabajo=HEAD
+    12  cuantificar_impacto_innovacion_6_pasos                       bandeja     6 pasos d5f1c3b3ff DISTINTA trabajo=HEAD
+    13  recorrer_siete_pasos_programa_desarrollo_negocio             bandeja    10 pasos 883148b9f2 igual trabajo=HEAD
+    14  responder_8_preguntas_construir_primary_aim                  bandeja     9 pasos 1487eff2aa igual trabajo=HEAD
+    15  responder_4_preguntas_estandares_objetivo_estrategico        bandeja     5 pasos a1e00b0afe igual trabajo=HEAD
+    16  distinguir_tres_tipos_sistemas_negocio                       bandeja     5 pasos b8ac9e6437 igual trabajo=HEAD
+    17  aplicar_seis_pasos_sistema_venta                             bandeja     6 pasos d1602be350 igual trabajo=HEAD
+    18  medir_sistema_venta_trece_indicadores_benchmark              bandeja    14 pasos d5634b830a igual trabajo=HEAD
+    19  construir_estrategia_gente_cuatro_componentes                bandeja     5 pasos 6050dd6576 igual trabajo=HEAD
+    20  documentar_trabajo_manual_operaciones                        bandeja    10 pasos f548184ad7 igual trabajo=HEAD
+    21  aplicar_ocho_reglas_juego_personas                           bandeja     9 pasos e51bcde092 DISTINTA trabajo=HEAD
+    22  aplicar_cinco_pasos_proceso_contratacion                     bandeja    12 pasos 725f810859 igual trabajo=HEAD
+    fichas de las filas 1 a 22: 22 | pasos: 176 | iguales a su blob en 2407dbb: 16 | distintas: 6 | fichero de trabajo distinto de HEAD: 0
+
+**Las seis `DISTINTA` son las seis corregidas en `76.2.2`, y solo ellas**; los `176` pasos son los de `.v76ext/fidelidad.tsv`. Es contra
+estos blobs contra lo que la vuelta de insercion comprobara que entra lo que se leyo.
+
+### 76.5.d. `D.61`: cada discutible, ejecutado o cerrado
+
+| | estado |
+|---|---|
+| `D76.1` | **EJECUTADO**: las `22` en esta vuelta, y el barrido se lanzo una vez con las `22`, despues del commit de las correcciones (`b0dda02`); la fidelidad se hizo en el orden del encargo (`76.2`) |
+| `D76.2` | **EJECUTADO**: el barrido corrio con `FORJA_PROCESOS_SIMILITUD=3` (`.v76ext/barrer.sh`), cinco a la vez, `22` de `22` con `rc=0` y poblacion `479` en las `22` (`76.3`) |
+| `D76.3` a `D76.12` | **EJECUTADOS**: las marcas en `.v76ext/fidelidad.tsv`, los `9` `P` y los cuatro campos corregidos en la bandeja (`76.2.2`) y la cifra en `76.2.3`; quedan para la relectura del auditor |
+| `D76.13` a `D76.19` | **EJECUTADOS**: escritos en `.v76ext/veredictos_listos.txt` y `.v76ext/aristas_lectura.txt`, comprobados por `comprobar_veredictos.py` y `orden.py` (`76.4`); `D76.19` es la lectura de `d108` preparada para la vuelta que inserte, sin tocar la ficha; quedan para la relectura del auditor |
+
+**Ninguno abierto.**
+
+### 76.5.e. `R5`, medido con las copias de `.v64ext/pegado64.py` y `.v64aud/normal/bloques_mudos.py`
+
+`.v76ext/pegado76.py` y `.v76ext/bloques_mudos76.py`, sacadas con `sed` de los originales con la cabecera del tramo cambiada a la `76`
+(el `diff --strip-trailing-cr` contra el original da `3` y `2` lineas cambiadas, las de la cabecera y el rotulo):
+
+<!-- TALLADO: parcial salida=.v76ext/r5.txt -->
+
+    $ python .v76ext/pegado76.py; python .v76ext/bloques_mudos76.py
+    bloques abiertos con `$` en el tramo de la vuelta 76 : 29
+    bloques que ROMPEN R1 (ACTA 60 60.15)                : 0
+    bloques abiertos con `$`: 18 | comandos `$`: 29 | comandos sin ninguna linea de salida en su bloque: 0
+
+**Cero bloques que rompen `R1` y cero comandos sin salida.** El bloque se anexo con tres lineas de relleno en el sitio de la salida,
+se corrieron los dos instrumentos (`.v76ext/r5.txt`) y la salida sustituyo al relleno; vueltos a correr con el bloque ya entero, salen
+iguales (`.v76ext/r5_bis.txt`). **`R9`** se aplico en la unica cuenta de PUENTE que publico, la de `76.2.3`, con su `grep` pegado en
+`76.2.1` antes de ella.
+
+### 76.5.f. Las guardas
+
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 437
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+    $ python forja.py guiones
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+    $ python tests/test_aceptacion.py | grep "total:"
+      total: 382 pruebas, 0 fallos, 0 errores
+
+(Salidas enteras en `.v76ext/cierre_gate.txt`, `.v76ext/cierre_guiones.txt` y `.v76ext/cierre_tests.txt`; las tres llevan al final el `rc=0`
+que les anexe al correrlas.) **Una discrepancia, y se declara**: la suite cuenta `382` pruebas donde la `ACTA 74` `74.1` pego `379`; las
+tres de mas llegaron con el commit del fundador `ccf9498f` (el tablero que ve un libro insertado entero), el unico que toca `tests/`
+desde el acta: `git log --oneline 9dcaa4b3..HEAD -- tests/` lo da solo a el, y anade tres pruebas. No es mio y no lo toco.
+
+### 76.5.g. El cierre estricto, en verde
+
+Salida entera en `.v76ext/cierre_reporte.txt` (y la de las pruebas que lanza, que va por stderr, en `.v76ext/cierre_reporte_err.txt`),
+codigo en `.v76ext/cierre_reporte_rc.txt`. Lo lance en segundo plano y lo espere en primer plano con un bucle `until` hasta su `rc=`, y
+**no quedo vivo**:
+
+    $ grep -E '^(TALLADO|CENSO|TABLA DE CIERRE|CIERRE|GATE|BARRIDO)' .v76ext/cierre_reporte.txt; cat .v76ext/cierre_reporte_rc.txt
+    TALLADO DEL REPORTE (D.41): la tabla que dice ser de instrumento
+    TALLADO VERDE: las 157 tabla(s) comprobables son las de su instrumento, celda a celda.
+    CENSO DE RUTAS (D.42): la unidad de la ruta es la celda
+    CENSO VERDE: las 1060 rutas publicadas sostienen lo que dicen sostener.
+    TABLA DE CIERRE DE TAREAS (D.52): toda tabla del reporte declara su instrumento
+    TABLA DE CIERRE VERDE: ninguna celda medible difiere del dato.
+    GATE VERDE.
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+    CIERRE VERDE: las cuatro guardas que muerden, el tallado y el censo. La vigencia corrio y publico su cuenta arriba: es cola, no guarda (D.15).
+    rc=0
+    08:07:53
+
+**Ningun rojo**, `rc=0`, de vuelta a las `08:07:53`.
+
+**Tabla de tareas, al cerrar:**
+
+| tarea | que | estado |
+|---|---|---|
+| `T1` | los registros de la `ACTA 74` | **CERRADA** (`76.1`) |
+| `T2` | la fidelidad entera de las fichas de Gerber | **CERRADA** (`76.2`): `176` pasos, `9` PUENTE corregidos en la bandeja antes del barrido, `cap_07` y `cap_12` releidos enteros, `R9` sin `P` nuevo |
+| `T3` | el barrido, sobre las fichas ya corregidas | **CERRADA** (`76.3`): `22` de `22`, poblacion `479`, `54` pares, recogido dentro del turno |
+| `T4` | los veredictos, las aristas (`d111`, `d108`, `d098`, `D.37`) y el orden | **CERRADA** (`76.4`): `54` lineas para `54` vecinos, `6` aristas por lectura, `8` esperadas, `D.36` en cero; la cabeza de `d111` entra con `1` de `7` |
+| `T5` | el cierre | **CERRADA** (`76.5`): censo `437`, `1111`, `1`, `22`, `0` al abrir y al cerrar; ninguna insertada |
+
+**Ningun proceso MIO vivo al cerrar**: el barrido volvio con su `TODOS TERMINADOS` y el cierre estricto con su `rc=`; despues,
+`tasklist /FI "IMAGENAME eq python.exe"` no encuentra ninguno y `procesos/` esta vacio. **Ningun `insertar` corrio en esta vuelta.**
+**No escribo `PARA_ALEXIS.md`: nada me obliga a parar.** Lo que queda de Gerber son estas `22` fichas preparadas, que entran en la
+vuelta siguiente si la `ACTA 75` las certifica (`D.39`), en el orden de `.v76ext/orden.txt`, con las `8` aristas de `76.4.3` y con
+`d111` y `d108` pagados por la lectura de `76.4.2`; despues, Marquet, que esta vuelta no toco.
+
+**`R5` vuelto a medir con el reporte ya entero** (`pegado76.py` y `bloques_mudos76.py` otra vez, salida en `.v76ext/r5_final.txt`): `30` comandos en `19` bloques, con `0` que rompen `R1` y `0` sin salida; el de mas es el bloque del cierre estricto.
