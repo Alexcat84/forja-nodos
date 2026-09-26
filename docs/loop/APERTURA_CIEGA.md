@@ -1,54 +1,42 @@
-# APERTURA CIEGA DE LA VUELTA 77, lote 9 (`gerber_emyth`), **CLASE INSERCION**
+# APERTURA CIEGA DE LA VUELTA 78, lote 5 (`marquet_turn_the_ship`), **CLASE INSERCION, VUELTA DE PREPARACION**
 
-*Auditor `claude-opus-5-5`, fase ciega, 26 sep 2026. En la corrida que arranco el 26 a las `09:27`, el arnes la numera `VUELTA 1`.
-Linea **serial**, rama `extraccion-mundo-11`. Modo austero (`D.47`). Todo lo de esta pagina sale de `.v77aud/`, escrito y
-corrido en esta fase; cada bloque `$` lo pega `.v77aud/generar_apertura.py` corriendo el comando en el momento de escribirla.
-**No hay ninguna tabla en esta pagina**, a proposito, como en la `73`, la `75` y la `76`.*
+*Auditor `claude-opus-5-5`, fase ciega, 26 sep 2026. En la corrida que arranco el 26 a las `09:27`, el arnes la numera `VUELTA 2`.
+Linea **serial**, rama `extraccion-mundo-11`. Modo austero (`D.47`). Todo lo de esta pagina sale de `.v78aud/`, escrito y
+corrido en esta fase; cada bloque `$` lo pega `.v78aud/generar_apertura.py` corriendo el comando en el momento de escribirla.
+**No hay ninguna tabla en esta pagina**, a proposito, como en la `73`, la `75`, la `76` y la `77`.*
 
-**LO QUE ESTA VUELTA TENIA QUE HACER, Y LO QUE CLASIFICO A CIEGAS** (mi encargo, `docs/loop/PROMPT_SIGUIENTE.md`): primero **la
-relectura conjunta** de las dos piezas que la `ACTA 75` `75.4` dejo abiertas (el par de la contratacion y la arista de `fingir` a
-`recorrer`); despues, **las `22` fichas de Gerber dentro, una por vez, en el orden**, con las lineas y las aristas que la `76` dejo
-listas. Los candidatos ya no estan en la bandeja: **los leo donde estan hoy**, en el grafo y en `_insertados`, contra mi lectura
-sellada de la `76` (con las adjudicaciones de la `ACTA 75`) y contra el libro, y **releo las dos piezas de la conjunta con los pasos
-y las lineas delante** (seccion `5`).
+**LO QUE ESTA VUELTA TENIA QUE HACER, Y LO QUE CLASIFICO A CIEGAS** (mi encargo, `docs/loop/PROMPT_SIGUIENTE.md`): **dejar listas sin
+insertar ninguna las fichas de la bandeja de Marquet**: su fidelidad leida entera (con `d150` preparada), su barrido, sus veredictos,
+sus aristas por lectura y su orden. **Yo hago lo mismo por mi cuenta**: leo enteros los trece capitulos que las fichas citan y cada
+paso contra su linea (seccion `3`), barro las fichas sobre grafo mas bandejas (seccion `4`), escribo mis clases y mis aristas
+(secciones `5` y `6`) y las restricciones de orden que mi lectura pone (seccion `7`).
 
 **UNA LIMITACION DE METODO, DICHA ANTES DE NADA: EN ESTA FASE NO HE CORRIDO `git` SOBRE EL REPOSITORIO**, ni una vez, como en la
-`73`, la `75` y la `76`: la carpeta de una linea viva es solo del arnes (`PARALELO.md` `7`). **Lo que se mide con `git` aqui no lo
-mido**: que commit movio que y a que hora, y si cada `insertar` volvio antes de lanzarse el siguiente. Lo que si mido sin `git` es
-el dato contra mis propias huellas de la `76` (seccion `2`). El commit en que esta el arbol lo leo de los ficheros de `.git/`:
+`73`, la `75`, la `76` y la `77`: la carpeta de una linea viva es solo del arnes (`PARALELO.md` `7`). **Lo que se mide con `git` aqui
+no lo mido**: que commit movio que y a que hora, y el contenido viejo de las fichas que cambiaron. Lo que si mido sin `git` es que
+ficheros son mas nuevos que mi encargo y que fichas cambiaron contra mis propias huellas de la `76` (seccion `2`). El commit en que
+esta el arbol lo leo de los ficheros de `.git/`:
 
     $ cat .git/HEAD; cat .git/refs/heads/extraccion-mundo-11
     ref: refs/heads/extraccion-mundo-11
-    a70bdf05b36a2d81a7ddc3a595973e83a78f614e
-
-**NO HAY HUECO DE ACTA** (`1.0`): la ultima acta escrita es la `75`, que cubre la vuelta `76`, y la vuelta que viene a auditarse es
-la `77`, la de mi encargo; el arnes arranco esta corrida en modo de insercion:
-
-    $ grep -n "^# ACTA 7[3-9]\. VUELTA" docs/loop/ACTA_AUDITOR.md | cut -c1-60
-    49325:# ACTA 73. VUELTA 74, lote 7 (`grove_high_output`), **
-    49762:# ACTA 74. VUELTA 75, lote 7 (`grove_high_output`), **
-    50228:# ACTA 75. VUELTA 76, lote 9 (`gerber_emyth`), **CLASE
-    $ grep -n "arranque: rama\|VUELTA 1 : EXTRACTOR\|extractor listo\|VUELTA 1 : APERTURA CIEGA" docs/loop/loop.log | tail -4
-    8704:[2026-09-26 09:27:00] arranque: rama extraccion-mundo-11, MODO_INSERCION=insertar
-    8715:[2026-09-26 09:27:01] VUELTA 1 : EXTRACTOR (claude-opus-5-5, esfuerzo high)
-    8716:[2026-09-26 12:56:09] extractor listo (USD 9.732613400000002), 12547s, intento 1 de 7
-    8717:[2026-09-26 12:56:10] VUELTA 1 : APERTURA CIEGA (claude-opus-5-5), retirados: REPORTE.md ultimo_extractor.json ultimo_auditor.json CREDITO_serial.jsonl
+    463248f5cbb605331345f3b6eadea40ee22a2453
 
 ## 0. **LA HERENCIA** (`D.40`)
 
-ACTA ANTERIOR LEIDA: 277d08beb156cc3b336c626140a9b15b46e9b1a9
+ACTA ANTERIOR LEIDA: f790389111f662ce8d8133e3ddd7256d4b8cd98d
 
 **Comprobada sin git**: es el blob de `docs/loop/ACTA_AUDITOR.md` tal como esta hoy en el arbol, calculado como lo calcula git. **La
-`ACTA 75` la lei entera**, de su linea de cabecera a la ultima del fichero, y con ella el encargo que me deje:
+`ACTA 76` la lei entera**, de su linea de cabecera a la ultima del fichero, y con ella el encargo que me deje. **No hay hueco de acta**
+(`1.0`): la `ACTA 76` cubre la vuelta `77`, y la que viene a auditarse es la `78`.
 
-    $ python .v77aud/huella_acta.py
-    sha1 del blob tal cual: 2aac41a35124a045e246aec5269986e9af3787dd
-    lineas con CRLF en el arbol: 466 | sha1 del blob normalizado a LF: 277d08beb156cc3b336c626140a9b15b46e9b1a9
-    lineas del fichero: 50763 | la ACTA 75 empieza en la linea: [50228]
+    $ python .v78aud/huella_acta.py
+    sha1 del blob tal cual: 7689ab047fe1db1717d7b7ff7415c4f310f1f600
+    lineas con CRLF en el arbol: 466 | sha1 del blob normalizado a LF: f790389111f662ce8d8133e3ddd7256d4b8cd98d
+    lineas del fichero: 51327 | la ACTA 76 empieza en la linea: [50764]
 
-HEREDADO 1: NO APLICA en esta fase. **Motivo:** `R5` es un remedio **del extractor** y se mide **sobre su reporte de la `77`**
-(`ACTA 75` `75.11`: *el reporte de la `77`, con `.v64ext/pegado64.py` y `.v64aud/normal/bloques_mudos.py` con la cabecera cambiada a
-la `77`*), y el reporte **no esta en el arbol**: el arnes lo retiro para esta fase (`D.34.2`) y no lo he recuperado por ninguna via.
+HEREDADO 1: NO APLICA en esta fase. **Motivo:** `R5` es un remedio **del extractor** y se mide **sobre su reporte de la `78`**
+(`ACTA 76` `76.12`: *el reporte de la `78`, con `.v64ext/pegado64.py` y `.v64aud/normal/bloques_mudos.py` con la cabecera cambiada a
+la `78`*), y el reporte **no esta en el arbol**: el arnes lo retiro para esta fase (`D.34.2`) y no lo he recuperado por ninguna via.
 **Se mide en mi turno normal**, con los dos instrumentos sacados otra vez de los originales y no de las copias del extractor. Lo que
 si esta en mi mano lo cumplo en mi pagina: cada bloque `$` lleva la salida del comando que abre, y nada mas.
 
@@ -57,607 +45,698 @@ si esta en mi mano lo cumplo en mi pagina: cada bloque `$` lleva la salida del c
     ls: cannot access 'docs/loop/ultimo_extractor.json': No such file or directory
     ls: cannot access 'docs/loop/ultimo_auditor.json': No such file or directory
     ls: cannot access 'docs/loop/CREDITO_serial.jsonl': No such file or directory
+    $ grep -n "VUELTA 2 : APERTURA CIEGA" docs/loop/loop.log | tail -1
+    9063:[2026-09-26 15:03:22] VUELTA 2 : APERTURA CIEGA (claude-opus-5-5), retirados: REPORTE.md ultimo_extractor.json ultimo_auditor.json CREDITO_serial.jsonl
 
-HEREDADO 2: CUMPLIDO. **`R6`, mio** (`ACTA 75` `75.11`): en esta fase los pasos de cualquier nodo los imprime
-`.v67aud/normal/pasos_ciego.py`, que no ensenia `previos` ni `siguientes`, y **el unico bloque de pasos de esta pagina lo corre**
-(seccion `5`). Los instrumentos mios de esta fase que **nombran** esas claves en su codigo:
+HEREDADO 2: CUMPLIDO. **`R6`, mio** (`ACTA 76` `76.12`): en esta fase los pasos de cualquier nodo los imprime
+`.v67aud/normal/pasos_ciego.py`, que no ensenia `previos` ni `siguientes`: con el lei las fichas (`.v78aud/pasos_20.txt`) y los nodos
+de fuera que el barrido levanta (`.v78aud/pasos_fuera.txt`), y los bloques de pasos de esta pagina los corre el. Las lineas de esos
+ficheros que **empiezan** por una clave de relacion, y los instrumentos mios de esta fase que las **nombran**:
 
-    $ grep -l -E "previos|siguientes" .v77aud/*.py
-    .v77aud/esperado_77.py
+    $ grep -c -E "^ *(previos|siguientes|nodos_previos|nodos_siguientes)" .v78aud/pasos_20.txt .v78aud/pasos_fuera.txt
+    .v78aud/pasos_20.txt:0
+    .v78aud/pasos_fuera.txt:0
+    $ grep -l -E "previos|siguientes" .v78aud/*.py | wc -l
+    0
 
-**Y LO DIGO PARA QUE SE JUZGUE:** `esperado_77.py` (seccion `4`) **las nombra para leer las aristas de la tanda en el grafo**, y
-**no imprime ninguna clave ni ningun id de relacion leido del grafo**: imprime cuentas y `SI` o `NO` (cuantas aristas tiene escritas
-la madre, cuantas el hijo, si las dos listas dicen lo mismo, si el conjunto es el que mi lectura esperaba, y cuantas de las esperadas
-estan y cuantas sobran), **despues** de imprimir las esperadas, que salen de mis ficheros y no del grafo. `grafo_sin_tanda.py` (seccion
-`2`) quita los ids de la tanda de **cualquier** lista sin nombrar ninguna clave, y solo cuenta. **No vi ninguna clave de relacion con
-su valor de ningun nodo en esta fase.** **Lo unico que se acerca, para que se juzgue:** el bloque de palabras de numero de la seccion
-`6` copia la `L136` de mi encargo, que **nombra** `nodos_siguientes`; es texto mio de la `ACTA 75` y no el valor de ningun nodo. La
-pagina entera la mide un `grep` sobre ella al cerrarla (seccion `8`).
+**LO UNICO QUE SE ACERCA, para que se juzgue:** al abrir la fase imprimi las claves de UNA ficha de la bandeja
+(`contar_firmas_cadena_tramite_parado`) con la longitud de cada valor, para saber su forma, y ahi salieron `nodos_previos` y
+`nodos_siguientes` **con su valor, que es la lista vacia**, como manda `D.29` para toda ficha en cuarentena. **No vi ninguna clave de
+relacion con valor de ningun nodo del grafo en esta fase.** La pagina entera la mide un `grep` sobre ella al cerrarla (seccion `10`).
 
-HEREDADO 3: CUMPLIDO. **`R7`, mio** (`ACTA 75` `75.11`): toda linea de esta pagina que reparte un total en clases la imprime un
-instrumento que cuenta **todas** las clases con el mismo predicado y **dice su `suma`**: los de `.v77aud/` la traen desde que nacen,
-y los que reuso sin copiar (`.v70aud/poblacion.py` y el de `R8`) ya la traian. **Medido sobre la pagina misma** en la seccion `8`,
-con la copia de `.v76aud/r7_pagina.py`.
+HEREDADO 3: CUMPLIDO. **`R7`, mio** (`ACTA 76` `76.12`): toda linea de esta pagina que reparte un total en clases la imprime un
+instrumento que cuenta **todas** las clases con el mismo predicado y **dice su `suma`**: los de `.v78aud/` la traen, copiados de los
+de la `76` o escritos en esta fase con ella, y los que reuso sin copiar (`.v70aud/poblacion.py`, `.v77aud/normal/bandeja_marquet.py` y
+el de `R8`) ya la traian. **Medido sobre la pagina misma** en la seccion `10`, con la copia de `.v76aud/r7_pagina.py`.
 
-HEREDADO 4: CUMPLIDO. **`R8`, mio** (`ACTA 75` `75.11`, *mi fase ciega de la `77`, sobre el encargo de la `77`*): **lo mido aqui con
-el mismo instrumento de la `75.12`, sin copiarlo**, y su salida de hoy es identica a la que aquella acta guardo; la lectura, linea a
-linea, en la seccion `6`. El encargo de la `78` lo escribo en mi turno normal y se mide alli.
+HEREDADO 4: CUMPLIDO. **`R8`, mio** (`ACTA 76` `76.12`, *mi fase ciega de la `78`, sobre el encargo de la `78`*): **lo mido aqui con
+el mismo instrumento de la `76.13`, sin copiarlo**, y su salida de hoy es identica a la que aquella acta guardo; la lectura, en la
+seccion `8`. El encargo de la `79` lo escribo en mi turno normal y se mide alli.
 
-HEREDADO 5: NO APLICA en esta fase. **Motivo:** `R9` es un remedio **del extractor** y se comprueba **en el reporte de la `77`, si
-marca fidelidad sobre algo que la aduana levante en el acto** (`ACTA 75` `75.11`), y ese reporte **no esta en el arbol** (el bloque
-de `ls` del HEREDADO `1`, que es el mismo fichero); no lo he recuperado. **Se mide en mi turno normal.** **Lo que si hago aqui es
-aplicar su letra a mi propia lectura**: el `grep` de clausulas que comparan o califican la prueba, sobre los pasos de las `22` que
-entraron, **cada coincidencia con su tramo literal del libro** (seccion `3`). La salida que sostiene que el reporte no esta:
+HEREDADO 5: NO APLICA en esta fase. **Motivo:** `R9` es un remedio **del extractor** y se comprueba **en el reporte de la `78`, en su
+cuenta de PUENTE** (`ACTA 76` `76.12`), que el arnes retiro (bloque del HEREDADO `1`). **Lo que si esta en mi mano**, y lo cumplo en mi
+lectura: **cada una de mis filas de fidelidad trae su tramo literal del libro, y el instrumento comprueba que ese tramo esta en la
+linea que cito** (seccion `3`); el cruce de su patron con el mio, en mi turno normal:
 
-    $ ls docs/loop/REPORTE.md
-    ls: cannot access 'docs/loop/REPORTE.md': No such file or directory
+    $ python .v78aud/contar_fidelidad.py | tail -1
+    citas: filas 110 | el tramo esta en su linea: 110 | no esta: 0 | suma: 110
 
-HEREDADO 6: CUMPLIDO. **`R10`, mio** (`ACTA 75` `75.11`, *esta acta, `75.13`, y la `ACTA 76`*): toda salida pegada en
-`PROMPT_SIGUIENTE.md` se corre despues de la ultima escritura del auditor en el registro que mide, o se vuelve a correr antes del
-commit y se compara. **Lo mido sobre el encargo de la `77`**: las dos salidas pegadas (la clase y el tablero) **se volvieron a correr
-despues de escribir el encargo y salieron identicas**, que es lo que guarda `.v76aud/normal/r10.txt`, escrito a las `09:17:58` contra
-un encargo de las `09:16:28`. **No las vuelvo a correr hoy contra el encargo**, y lo digo: `DEUDA.jsonl` y `TABLERO.jsonl` cambiaron
-despues (el pago de dos deudas y la escritura del arnes al arrancar, seccion `2`), asi que hoy saldrian distintas **sin que eso diga
-nada del encargo**. **La otra mitad de su sitio, la `ACTA 76`, es de mi turno normal.**
+HEREDADO 6: CUMPLIDO. **`R10`, mio** (`ACTA 76` `76.12` y `76.14`): toda salida pegada en `PROMPT_SIGUIENTE.md` se corre despues de la
+ultima escritura del auditor en el registro que mide, o se vuelve a correr antes del commit y se compara. **Lo mido sobre el encargo
+de la `78`**: las cuatro salidas pegadas (el reloj del barrido de la `76`, la clase, el tablero y el texto de `d150`) **salen hoy
+identicas a lo pegado**, con la copia de `.v77aud/normal/r10.sh`. **Una limitacion, dicha:** la copia no lee la hora de
+`CREDITO_serial.jsonl`, porque el arnes lo retiro en esta fase; la que la `76.14` guardo, con esa hora delante, es la primera linea
+de abajo. `DEUDA.jsonl` es de antes que el encargo y no la ha vuelto a escribir nadie. **La otra mitad de su sitio, la `ACTA 77`, es
+de mi turno normal.**
 
-    $ cat .v76aud/normal/r10.txt
-    $ python scripts/deuda.py --clase 77 | diff --strip-trailing-cr - <(sed -n "17,18p" docs/loop/PROMPT_SIGUIENTE.md | sed "s/^    //") && echo "clase: IDENTICA a la pegada en el encargo de la 77"
-    clase: IDENTICA a la pegada en el encargo de la 77
-    $ python forja.py tablero --puedo gerber_emyth | diff --strip-trailing-cr - <(sed -n "20,21p" docs/loop/PROMPT_SIGUIENTE.md | sed "s/^    //") && echo "tablero --puedo: IDENTICO al pegado en el encargo de la 77"
-    tablero --puedo: IDENTICO al pegado en el encargo de la 77
-    2026-09-26 09:10:41 docs/loop/CREDITO_serial.jsonl
-    2026-09-26 04:28:05 docs/loop/DEUDA.jsonl
-    2026-09-26 09:16:28 docs/loop/PROMPT_SIGUIENTE.md
-    $ ls -l --time-style=full-iso docs/loop/PROMPT_SIGUIENTE.md .v76aud/normal/r10.txt docs/loop/DEUDA.jsonl docs/loop/TABLERO.jsonl | awk '{print $6, substr($7,1,8), $9}'
-    2026-09-26 09:17:58 .v76aud/normal/r10.txt
+    $ cat .v77aud/normal/r10.txt | sed -n '5p'
+    2026-09-26 13:18:26 docs/loop/CREDITO_serial.jsonl
+    $ bash .v78aud/r10.sh
+    reloj del barrido de la 76: IDENTICO al pegado
+    clase 78: IDENTICA a la pegada
+    tablero --puedo: IDENTICO al pegado
+    texto de d150: IDENTICO al pegado
     2026-09-26 12:37:57 docs/loop/DEUDA.jsonl
-    2026-09-26 09:16:28 docs/loop/PROMPT_SIGUIENTE.md
-    2026-09-26 09:27:01 docs/loop/TABLERO.jsonl
+    2026-09-26 13:19:12 docs/loop/PROMPT_SIGUIENTE.md
+    ahora: 2026-09-26 16:11:01
 
 ## 1. **LO QUE VI SIN BUSCARLO, Y LO DIGO ANTES DE MEDIR** (`d146`)
 
-**La foto de `git status` que el entorno me pone delante trae los asuntos de los ultimos commits del extractor de la `77`, y
-varios traen cifras y conclusiones de su vuelta**, que lei antes de medir nada:
+**La foto de `git status` que el entorno me pone delante trae los asuntos de los commits del extractor, y tres son cifras de su
+vuelta**: `d19671a1` (*la fidelidad entera de las 20 de Marquet (110 pasos, 3 PUENTE corregidos en la bandeja antes del barrido,
+cap_04 releido entero, R9 sin P nuevo; d150 preparada)*), `cc46a0da` (*el barrido de las 20 de Marquet (20 de 20, poblacion 479, 52
+pares, recogido dentro del turno), 52 veredictos SANO listos, 1 arista por lectura y el orden con D.36 en cero; ninguna insertada*) y
+`91bf4863` (*el cierre (censo 459, 1172, 1, 20, 0 al abrir y al cerrar; 3 PUENTE marcados y 0 que entraran; huellas de las 20; gate,
+guiones, suite y cierre estricto en verde; R5 en cero; ninguna insertada)*). **Los lei antes de medir nada.** Es el mismo hueco de
+`d146` que declararon las aperturas de la `65` a la `77`, y no lo arreglo yo (`D.45`).
 
-- `b2d27bbc` *Vuelta 77, T5: el cierre (censo 459, 1172, 1, 0, 22; 8 PUENTE marcados y 0 que entraron; gate, guiones, suite y cierre
-  estricto en verde; R5 en cero; tablero con gerber_emyth INSERTADO)*;
-- `bd29146f` *Vuelta 77, T4 cerrada: las 22 de Gerber dentro, las 10 aristas esperadas en el grafo por los dos lados, ningun nodo viejo
-  cambiado; d108 pagada*;
-- `ddfc1d08` *Vuelta 77, fila 22: aplicar_cinco_pasos_proceso_contratacion insertado por la aduana, movido a _insertados*;
-- y `a70bdf05` y `7f14a790`, sin cifras de medida (*la salida del hook del commit del cierre* y *fila 22: su fila en el reporte*).
-
-Es el mismo hueco de `d146` que declararon las aperturas de la `65` a la `76`, y no lo arreglo yo (`D.45`).
-
-**Y LO DEMAS DEL MISMO TIPO, QUE ES MIO:**
-
-1. un `ls .v77ext` me ensenio **los nombres** de los ficheros de su carpeta, **no su contenido**: entre ellos un
-   `arista_<madre>__<hijo>.txt` por arista declarada, y **uno es el de `fingir` a `recorrer`**, que me dice que **la arista de la
-   conjunta que yo sostengo se declaro**; un `hook_NN.txt` y un `hook_fila_NN.txt` por fila, `aristas_vuelta.txt`, `censo_cierre.txt`,
-   `cierre_reporte.txt`, `huellas_apertura.txt`, `contra_barrido.py`, `esperar.py` y `fila.py`. Los de arista, que son los que pesan,
-   vueltos a listar por su nombre y nada mas:
-
-    $ ls .v77ext | grep "^arista_.*__"
-    arista_construir_estrategia_gente_cuatro_componentes__documentar_trabajo_manual_operaciones.txt
-    arista_fingir_prototipo_cinco_mil_replicas__dar_valor_constante_cuatro_publicos.txt
-    arista_fingir_prototipo_cinco_mil_replicas__documentar_trabajo_manual_operaciones.txt
-    arista_fingir_prototipo_cinco_mil_replicas__operar_modelo_gente_destreza_minima.txt
-    arista_fingir_prototipo_cinco_mil_replicas__recorrer_siete_pasos_programa_desarrollo_negocio.txt
-    arista_fingir_prototipo_cinco_mil_replicas__unificar_color_forma_vestuario_modelo.txt
-    arista_recorrer_siete_pasos_programa_desarrollo_negocio__construir_estrategia_gente_cuatro_componentes.txt
-
-2. la cola de `docs/loop/loop.log`, que no se retira, con el coste y el reloj del turno del extractor (bloque de la cabecera);
-3. un `grep` de `d111` y `d108` en `docs/loop/DEUDA.jsonl`, que mi encargo manda pagar, **me enseno el principio de sus dos lineas
-   de pago**: *La arista recorrer_siete_pasos_programa_desarrollo_negocio > construir_estrategia_gente_cuatro_componentes*
-   y *Releida con las dos delante en la vuelta 76 (REPORTE 76.4.2, D76.19) y firmada por el auditor en la ACTA 7*. **Es prosa suya**, y
-   lo digo; despues las medi **por campo** y sin su prosa (seccion `2`);
-4. `python forja.py tablero`, que `D.49` manda leer y citar (seccion `2`). Tambien lei mi `ACTA 75` entera, mi encargo y
-   `AUDITOR_FORJA.md` entero.
+**Y LO DEMAS DEL MISMO TIPO:** la cola de `docs/loop/loop.log`, que no se retira (el coste y la hora del turno del extractor); mi
+`ACTA 76` entera y mi encargo; un `ls .v78ext`, que me enseno **los nombres** de su carpeta (entre ellos `fidelidad.tsv`,
+`aristas_lectura.txt`, `orden.txt`, `grafo_zhuo_scott.txt` y un `vecinos_<id>.json` por ficha), **no su contenido**; la hora de las
+fichas de la bandeja, que dice que dos cambiaron hoy; y **dos fichas llevan dentro, en su `resumen_teorico`, la *CORRECCION
+DECLARADA DE LA VUELTA 78***, con el texto viejo dentro. **Esas correcciones las lei DESPUES de escribir y contar mi fidelidad paso a
+paso**: para leer las lineas que cada ficha cita sin leer su prosa, `.v78aud/citas_ficha.py` imprime solo los `cap_NN` y los `LNN` que
+el resumen nombra antes de la primera correccion, y cuantas correcciones trae; lo que dicen, en la seccion `3`, separado.
 
 **LO QUE HAGO CON ELLO:** ninguna cifra de esta pagina sale de esos asuntos; todas salen de un instrumento corrido en esta fase, y
-**donde coinciden lo digo como coincidencia y no como fuente**. **No he abierto nada de `.v77ext/` por dentro**, **ni
-`bitacora/VEREDICTOS.jsonl` por dentro**: de la bitacora solo cuento lineas. **Mis clases de la tanda no las decido hoy**: son las de
-mis ficheros sellados de la `76`, con las adjudicaciones de la `ACTA 75` `75.4` declaradas dentro de cada instrumento que las aplica.
-**Y ESTO SI PESA SOBRE MI LECTURA, Y LO DIGO:** el nombre del fichero de la arista de `fingir` a `recorrer` lo vi **antes** de releer
-esa pieza (seccion `5`). Mi `SOSTENGO` es el que selle en la `76` y el que mantuve en la `ACTA 75`, y lo releo con el libro delante;
-**pero no puedo probar que no me empujo**.
+donde coinciden lo digo como coincidencia y no como fuente. **No he abierto nada de `.v78ext/` por dentro**, **ni
+`bitacora/VEREDICTOS.jsonl` por dentro**: de ella solo cuento lineas. **Y ESTO SI PESA SOBRE MI LECTURA, Y LO DIGO:** el asunto de
+`cc46a0da` me dijo *52 pares*, *52 veredictos SANO* y *1 arista por lectura* antes de barrer y de leer. Mis pares salen de mi barrido y
+mis clases y aristas de las secciones `5` y `6` con su linea del libro, y son las que son; **pero no puedo probar que no me
+empujaron**, y por eso lo escribo aqui. **Donde mi lectura puede no coincidir con lo que ese asunto dice es en el par de su arista
+por lectura**, que el asunto no nombra: la mia lleva veredicto de la lectura `CONTINUA` (secciones `5` y `6`), y no la he movido por
+eso.
 
-## 2. **EL CENSO, Y QUE LO UNICO QUE SE MOVIO ES LO QUE EL ENCARGO MANDABA** (`D.38.4`, `D.38.5`, `D.49`)
+## 2. **EL ALCANCE, Y EL CENSO QUE LO SOSTIENE**
+
+Mi lista es la bandeja entera, leida del directorio, y su reparto por capitulo y por pasos lo da el instrumento de la `ACTA 76`
+`76.11`, corrido hoy sin copiarlo:
+
+    $ wc -l < .v78aud/las20.txt; ls cuarentena/marquet_turn_the_ship | grep "\.json$" | sed 's/\.json$//' | diff - .v78aud/las20.txt && echo "las20.txt es la bandeja de Marquet entera, fichero a fichero"
+    20
+    las20.txt es la bandeja de Marquet entera, fichero a fichero
+    $ python .v77aud/normal/bandeja_marquet.py | diff - .v77aud/normal/bandeja_marquet.txt && echo "bandeja_marquet.py de hoy: IDENTICO a su salida de la ACTA 76 76.11"; tail -2 .v77aud/normal/bandeja_marquet.txt
+    bandeja_marquet.py de hoy: IDENTICO a su salida de la ACTA 76 76.11
+    fichas por capitulo: {'cap_01': 1, 'cap_02': 2, 'cap_03': 6, 'cap_04': 1, 'cap_06': 2, 'cap_07': 1, 'cap_08': 1, 'cap_09': 1, 'cap_10': 1, 'cap_11': 1, 'cap_12': 1, 'cap_13': 1, 'cap_14': 1} | suma: 20
+    pasos por capitulo: {'cap_01': 6, 'cap_02': 10, 'cap_03': 53, 'cap_04': 5, 'cap_06': 8, 'cap_07': 3, 'cap_08': 5, 'cap_09': 2, 'cap_10': 3, 'cap_11': 3, 'cap_12': 8, 'cap_13': 2, 'cap_14': 2} | suma: 110
+
+**El censo de hoy**, sin `git` (grafo, bitacora, pares mutuos; la bandeja de Marquet y sus insertados, la de Gerber y sus insertados,
+y `procesos/`), la poblacion de la aduana y el `gate`:
 
     $ wc -l dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl config/pares_mutuos.jsonl
         459 dataset/nodos.jsonl
        1172 bitacora/VEREDICTOS.jsonl
           1 config/pares_mutuos.jsonl
        1632 total
-    $ for d in cuarentena/gerber_emyth cuarentena/_insertados/gerber_emyth cuarentena/_insertados/grove_high_output cuarentena/marquet_turn_the_ship; do echo "$d $(find $d -maxdepth 1 -name '*.json' 2>/dev/null | wc -l)"; done; echo "procesos $(ls -A procesos/ | wc -l)"
+    $ for d in cuarentena/marquet_turn_the_ship cuarentena/_insertados/marquet_turn_the_ship cuarentena/gerber_emyth cuarentena/_insertados/gerber_emyth; do echo "$d $(find $d -maxdepth 1 -name '*.json' 2>/dev/null | wc -l)"; done; echo "procesos $(ls -A procesos/ | wc -l)"
+    cuarentena/marquet_turn_the_ship 20
+    cuarentena/_insertados/marquet_turn_the_ship 0
     cuarentena/gerber_emyth 0
     cuarentena/_insertados/gerber_emyth 22
-    cuarentena/_insertados/grove_high_output 92
-    cuarentena/marquet_turn_the_ship 20
     procesos 0
     $ python .v70aud/poblacion.py
     poblacion: 479 | por sede: {'grafo': 459, 'bandeja': 20} | suma: 479
     $ python forja.py gate | head -2
     GATE VERDE.
       nodos verificados: 459
-    $ python forja.py tablero | sed -n '11,13p;24p'
-      1    7    grove_high_output              INSERTADO              NINGUNO                  0  cap_18
-      2    9    gerber_emyth                   INSERTADO              NINGUNO                  0  cap_22
-      3    5    marquet_turn_the_ship          COSECHADO              NINGUNO                 20  cap_17
-      MUNDO 11: faltan 1 de 7 libros del corte (marquet_turn_the_ship)
 
-**Sin `git`, lo que cambio desde que escribi mi encargo, por tres instrumentos.** Primero, **cualquier fichero** del dato, de las
-bandejas, del codigo, de la configuracion o de los dos registros de la linea con fecha de escritura posterior a mi encargo (las fichas
-de una misma carpeta, juntas):
+**Lo que es mas nuevo que mi encargo** en las carpetas de dato, de codigo y de libro; la hora de la ultima ficha; y **las fichas de
+Marquet contra mis huellas de la `76`**, tomadas antes de mi barrido de entonces:
 
-    $ find cuarentena dataset bitacora censos config fuentes esquema src scripts tests forja.py docs/loop/DEUDA.jsonl docs/loop/TABLERO.jsonl -type f -newer docs/loop/PROMPT_SIGUIENTE.md | sed 's|/[^/]*\.json$|/*.json|' | sort | uniq -c
-          1 bitacora/VEREDICTOS.jsonl
-          1 censos/atribuciones.md
-          1 censos/denominaciones.md
-          1 dataset/nodos.jsonl
-          1 docs/loop/DEUDA.jsonl
-          1 docs/loop/TABLERO.jsonl
-
-Segundo, **las huellas que tome al lanzar mi barrido de la `76`** (las fichas de Gerber y de Marquet y el grafo) contra los ficheros de
-hoy, buscando en `_insertados` la ficha que ya no esta en la bandeja:
-
-    $ python .v77aud/huellas_hoy.py
-    huellas: 43 | suma: 43
-      gerber_emyth, movida a _insertados, misma huella: 22
-      grafo, aparte: 1
-      marquet_turn_the_ship, en su sitio, misma huella: 20
-    movidas a _insertados: 22 | son las 22 de .v76aud/las22.txt: SI | fichas en _insertados de Gerber fuera de ellas: []
-    ficheros que no cuadran: []
-
-Tercero, **el grafo**: si al de hoy le quito las `22` filas de la tanda, y ademas los ids de las `22` de las listas de los nodos viejos,
-sale el fichero que barri, byte a byte. **La vuelta `76` no movio el grafo** (mi `ACTA 75` `75.1`, con `git diff`), asi que ese
-fichero es tambien el de la apertura de la `77`:
-
-    $ python .v77aud/grafo_sin_tanda.py
-    filas del grafo hoy: 459 | la reconstruccion reproduce el fichero de hoy: SI
-    de las 22 de la tanda en el grafo: 22 | filas que quedan sin ellas: 437
-    las 22 son las ultimas filas del fichero: SI
-    (a) sin las 22 filas, sha1 igual a la huella de mi barrido de la 76: SI
-    (b) nodos viejos con algun id de las 22 en alguna lista: 0 | sin esos ids, sha1 igual a la huella: SI
-
-**Y las cuatro deudas que nombra mi encargo** (TAREA `4.5`), por campo y sin su prosa:
-
-    $ python .v77aud/deudas_encargo.py
-    d111 | anotada: SI | lineas de pago: 1, en la vuelta ['77'] | mi encargo la quiere pagada en la 77
-    d108 | anotada: SI | lineas de pago: 1, en la vuelta ['77'] | mi encargo la quiere pagada en la 77
-    d098 | anotada: SI | lineas de pago: 0, en la vuelta [] | mi encargo la quiere viva
-    d104 | anotada: SI | lineas de pago: 0, en la vuelta [] | mi encargo la quiere viva
-    lineas de DEUDA.jsonl con vuelta 77 (el campo es texto), por tipo: {'pago': 2} | suma: 2
+    $ find cuarentena dataset bitacora censos config fuentes esquema src scripts tests forja.py -type f -newer docs/loop/PROMPT_SIGUIENTE.md | sed 's|/[^/]*\.json$|/*.json|' | sort | uniq -c
+          2 cuarentena/marquet_turn_the_ship/*.json
+    $ ls -l --time-style=full-iso docs/loop/PROMPT_SIGUIENTE.md | awk '{print $6, substr($7,1,8), $9}'; ls -l --time-style=full-iso cuarentena/marquet_turn_the_ship/*.json | awk '{print $6, substr($7,1,8)}' | sort | sed -n '$p'
+    2026-09-26 13:19:12 docs/loop/PROMPT_SIGUIENTE.md
+    2026-09-26 13:40:35
+    $ python .v78aud/huellas_contra_76.py
+    fichas hoy: {'marquet_turn_the_ship': 20} | suma: 20
+    contra mis huellas de la 76: {'gerber_emyth, NO ESTA': 22, 'marquet_turn_the_ship, CAMBIA': 2, 'marquet_turn_the_ship, igual': 18} | suma: 42
+      CAMBIA: cuarentena/marquet_turn_the_ship/informar_cierre_jornada_conservar_propiedad_trabajo.json
+      CAMBIA: cuarentena/marquet_turn_the_ship/seguir_frustrado_preguntar_implantacion_ideas.json
 
 **LECTURA:**
 
-- **El grafo tiene `459` filas, la bitacora `1172` lineas, los pares mutuos `1`, la bandeja de Gerber `0` y sus insertados `22`, y
-  `procesos/` esta vacio.** Marquet sigue en `20`, **con la huella de mi barrido de la `76`**, que es lo que el encargo pedia (*no
-  tocas*). El tablero da a Gerber `INSERTADO` y deja a Marquet como el unico libro del corte que falta. **Coincide con el *censo 459,
-  1172, 1, 0, 22* y el *tablero con gerber_emyth INSERTADO* del asunto de `b2d27bbc`**, y lo digo como coincidencia.
-- **Las `22` fichas movidas a `_insertados` son las `22` de mi lista, con la huella que tenian cuando las barri**, y son las ultimas
-  `22` filas del grafo.
-- **(a) y (b) salen `SI`**, y el conteo de (b) es `0`: **los `437` nodos viejos son byte a byte los que barri**, y **ningun nodo viejo
-  tiene un id de la tanda en ninguna lista**. Dice dos cosas a la vez: **las aristas de la tanda son todas entre nodos de la tanda**
-  (seccion `4`), y **ningun otro nodo del grafo cambio**. Coincide con el *ningun nodo viejo cambiado* de `bd29146f`, y lo digo como
-  coincidencia.
-- **La poblacion de hoy es `479`**, la de mi barrido de la `76`, con `22` en otra sede.
-- **Lo que se escribio despues de mi encargo** es el grafo, la bitacora, los dos `censos/` y los dos registros de la linea: lo que
-  escriben una insercion, un pago de deuda y el arnes al arrancar; **nada en `config/`, `esquema/`, `fuentes/`, `src/`, `scripts/` ni
-  `tests/`**. Las fichas movidas no salen en el `find` porque mover no cambia la fecha de escritura; las mide el segundo instrumento.
-- **`d111` y `d108` tienen su linea de pago, en la `77`, y `d098` y `d104` siguen vivas**, que es lo que el encargo pedia. **Lo que
-  cada pago dice** (su `--como`) **lo firmo o no en mi turno normal**, con la `ACTA 75` `75.4` delante.
+1. `459`, `1172`, `1`, `20` en la bandeja de Marquet y `0` en sus insertados, y `22` insertados de Gerber con su bandeja vacia, son los
+   de mi `ACTA 76` `76.1` al cerrar la `77`: **la vuelta no inserto nada ni movio nada de sede**, que es lo que el encargo pedia, y
+   `procesos/` esta vacio. La poblacion del barrido sigue en `479`.
+2. **Lo unico de dato mas nuevo que mi encargo son `2` fichas de Marquet, y son las `2` cuyas huellas cambiaron contra las mias de la
+   `76`** (`informar_cierre_jornada_conservar_propiedad_trabajo` y `seguir_frustrado_preguntar_implantacion_ideas`); las otras `18`
+   son byte a byte las de entonces. **Ningun fichero de `src/`, `scripts/`, `tests/`, `config/` ni del grafo es mas nuevo que mi encargo.**
+   (Las `22` de Gerber salen `NO ESTA` porque viven en `_insertados` desde la `77`.)
+3. **Lo que no puedo decir sin `git`**: si alguna linea de la bitacora o algun byte del grafo cambio sin cambiar la cuenta ni la
+   fecha. Eso lo mido en mi turno normal, con el hash del reporte delante.
 
-## 3. **LAS `22`: LO QUE ENTRO ES LO QUE SE LEYO** (`D.58`), **Y SUS PASOS INVENTADOS** (`8`, `8.2`)
+## 3. **LA FIDELIDAD DE LAS `20`, LEIDA ENTERA** (`D.30`, `D.58`, `8`)
 
-Cada nodo del grafo contra su ficha de `_insertados` (cuya huella es la leida, seccion `2`) en titulo, condiciones, pasos, entregable y
-resumen; y sus pasos contra **mi** lectura entera sellada en la `76`, `.v76aud/fidelidad.tsv`, una fila por paso con su capitulo:
+Lei **enteros** los trece capitulos que las fichas citan (`cap_01`, `cap_02`, `cap_03`, `cap_04`, `cap_06` a `cap_14`), y cada paso
+contra su linea, con los pasos delante por `pasos_ciego.py` (`.v78aud/pasos_20.txt`). Las citas que cada ficha nombra, sin su prosa:
 
-    $ python .v77aud/entra_lo_leido.py
-    las 22 por sede hoy: {'grafo y _insertados': 22} | suma: 22
-    nodos del grafo contra su ficha, cinco campos: {'igual': 22} | suma: 22
-    nodos con descuadre entre sus pasos en el grafo y mis filas selladas: 0 []
-    cap_04 lo que ENTRO: candidatos 1 | pasos 7 | mis marcas: {'T': 7, 'P': 0, 'D': 0} | suma: 7 | PUENTE 0 de 7 = 0.00 por ciento
-    cap_07 lo que ENTRO: candidatos 1 | pasos 8 | mis marcas: {'T': 8, 'P': 0, 'D': 0} | suma: 8 | PUENTE 0 de 8 = 0.00 por ciento
-    cap_08 lo que ENTRO: candidatos 2 | pasos 17 | mis marcas: {'T': 17, 'P': 0, 'D': 0} | suma: 17 | PUENTE 0 de 17 = 0.00 por ciento
-    cap_11 lo que ENTRO: candidatos 6 | pasos 57 | mis marcas: {'T': 57, 'P': 0, 'D': 0} | suma: 57 | PUENTE 0 de 57 = 0.00 por ciento
-    cap_12 lo que ENTRO: candidatos 3 | pasos 12 | mis marcas: {'T': 11, 'P': 0, 'D': 1} | suma: 12 | PUENTE 0 de 12 = 0.00 por ciento
-    cap_13 lo que ENTRO: candidatos 1 | pasos 10 | mis marcas: {'T': 10, 'P': 0, 'D': 0} | suma: 10 | PUENTE 0 de 10 = 0.00 por ciento
-    cap_14 lo que ENTRO: candidatos 1 | pasos 9 | mis marcas: {'T': 9, 'P': 0, 'D': 0} | suma: 9 | PUENTE 0 de 9 = 0.00 por ciento
-    cap_15 lo que ENTRO: candidatos 1 | pasos 5 | mis marcas: {'T': 5, 'P': 0, 'D': 0} | suma: 5 | PUENTE 0 de 5 = 0.00 por ciento
-    cap_18 lo que ENTRO: candidatos 3 | pasos 26 | mis marcas: {'T': 26, 'P': 0, 'D': 0} | suma: 26 | PUENTE 0 de 26 = 0.00 por ciento
-    cap_19 lo que ENTRO: candidatos 3 | pasos 25 | mis marcas: {'T': 25, 'P': 0, 'D': 0} | suma: 25 | PUENTE 0 de 25 = 0.00 por ciento
-    los diez: candidatos 22 | pasos 176 | mis marcas: {'T': 175, 'P': 0, 'D': 1} | suma: 176 | PUENTE 0 de 176 | con la D adjudicada T (ACTA 75 75.3): T 176, P 0, suma 176
+    $ wc -l fuentes/marquet_turn_the_ship/cap_{01,02,03,04,06,07,08,09,10,11,12,13,14}.md | tail -1
+      1433 total
+    $ python .v78aud/citas_ficha.py
+    acoger_inspectores_externos_fuente_aprendizaje          correcciones 0 | citas antes de la primera: cap_10 L45 L49
+    aplicar_ejercicio_codigo_genetico_control               correcciones 1 | citas antes de la primera: cap_06
+    asignar_responsable_unico_evolucion_planificada         correcciones 0 | citas antes de la primera: cap_06
+    auditar_formacion_premios_ultima_fila                   correcciones 0 | citas antes de la primera: cap_03 L55 L57
+    cambiar_forma_trabajar_conservar_plantilla              correcciones 2 | citas antes de la primera: cap_02 L25 L29
+    ceder_control_reforzar_competencia_claridad             correcciones 0 | citas antes de la primera: cap_01
+    contar_firmas_cadena_tramite_parado                     correcciones 0 | citas antes de la primera: cap_03
+    declarar_intencion_reemplazar_peticion_permiso          correcciones 1 | citas antes de la primera: cap_07 L55 L73 L93
+    eliminar_seguimiento_descendente_responsabilizar_dueno  correcciones 0 | citas antes de la primera: cap_09
+    encargar_meta_especifica_dejar_libre_metodo             correcciones 1 | citas antes de la primera: cap_02 L49 L33
+    identificar_temas_formacion_tarjetas_decision           correcciones 0 | citas antes de la primera: cap_12
+    informar_cierre_jornada_conservar_propiedad_trabajo     correcciones 1 | citas antes de la primera: cap_04 cap_03
+    inspeccionar_reparto_informacion_notas_jefe             correcciones 0 | citas antes de la primera: cap_03
+    observar_reunion_rutinaria_senales_plantilla            correcciones 0 | citas antes de la primera: cap_03
+    recorrer_organizacion_escuchar_plantilla                correcciones 0 | citas antes de la primera: cap_03
+    reforzar_principios_guia_lenguaje_prueba_conocimiento   correcciones 0 | citas antes de la primera: cap_14 L89 L99 L91 L93 L95
+    repetir_mensaje_invariable_diario_reunion_evento        correcciones 0 | citas antes de la primera: cap_13
+    resistir_dar_solucion_clasificar_decision_urgencia      correcciones 0 | citas antes de la primera: cap_08 L107 L115 L121
+    seguir_frustrado_preguntar_implantacion_ideas           correcciones 1 | citas antes de la primera: cap_03
+    tomar_accion_deliberada_pausar_vocalizar_gesticular     correcciones 0 | citas antes de la primera: cap_11 L75 L95
 
-**Y `R9` con su letra sobre los pasos que entraron**, con el patron de mi `.v75aud/cap13_despues.py` (importado, no copiado) y el
-tramo literal de cada coincidencia en la linea que mi fila le da:
+Una fila por paso en `.v78aud/fidelidad.tsv`: `T` transcripcion, `P` puente (**la clausula reescrita cuenta como `P`**, `ACTA 62`
+`62.5`), `D` mi duda, con su linea y **el tramo literal del libro**. El contador es copia de `.v76aud/contar_fidelidad.py` con las rutas
+cambiadas, **una fila por capitulo** (`8.2`) y la suma de cada reparto (`R7`); cruza cada fila con los pasos de la ficha de la bandeja
+de hoy, **y comprueba que el tramo que copio esta en la linea que cito**:
 
-    $ python .v77aud/r9_gerber.py
-      cap_18 L165 aplicar_ocho_reglas_juego_pers paso 9 [peor que] | el libro: There's nothing worse than pretending to play a game
-      cap_12 L51 cambiar_saludo_cliente_dos_ram paso 1 [prueba] | el libro: Instead of asking, “Hi, may I help you?” try
-      cap_11 L65 dar_valor_constante_cuatro_pub paso 2 [no solo] | el libro: would not only provide consistent value
-      cap_11 L65 dar_valor_constante_cuatro_pub paso 2 [sino] | el libro: but would provide it beyond their wildest expectations
-      cap_07 L287 dictar_ritmo_crecimiento_pregu paso 8 [mejor que] | el libro: any plan is better than no plan
-      cap_11 L39 fingir_prototipo_cinco_mil_rep paso 2 [sino] | el libro: Not almost like it, but just like it
-      cap_19 L337 medir_sistema_venta_trece_indi paso 14 [datos] | el libro: as a database on your computer
-      cap_08 L119 trazar_modelo_negocio_cliente_ paso 8 [sino] | el libro: does not start with a picture of the business to be created but of the customer
-      cap_08 L119 trazar_modelo_negocio_cliente_ paso 8 [a diferencia de] | el libro: Thus, the Entrepreneurial Model does not start with
-      cap_11 L215 unificar_color_forma_vestuario paso 1 [estudios] | el libro: Marketing studies tell us
-    pasos leidos: 176 | coincidencias por capitulo: {'cap_18': 1, 'cap_12': 1, 'cap_11': 4, 'cap_07': 1, 'cap_19': 1, 'cap_08': 2} | suma: 10
-    coincidencias con su tramo literal: {'tramo hallado': 10} | suma: 10
+    $ python .v78aud/contar_fidelidad.py
+    candidato                                                    ficha filas   T   P  DUDA  suma
+    acoger_inspectores_externos_fuente_aprendizaje                   3     3   3   0     0     3
+    aplicar_ejercicio_codigo_genetico_control                        6     6   6   0     0     6
+    asignar_responsable_unico_evolucion_planificada                  2     2   2   0     0     2
+    auditar_formacion_premios_ultima_fila                           11    11  10   0     1    11
+    cambiar_forma_trabajar_conservar_plantilla                       5     5   5   0     0     5
+    ceder_control_reforzar_competencia_claridad                      6     6   6   0     0     6
+    contar_firmas_cadena_tramite_parado                             10    10  10   0     0    10
+    declarar_intencion_reemplazar_peticion_permiso                   3     3   3   0     0     3
+    eliminar_seguimiento_descendente_responsabilizar_dueno           2     2   2   0     0     2
+    encargar_meta_especifica_dejar_libre_metodo                      5     5   5   0     0     5
+    identificar_temas_formacion_tarjetas_decision                    8     8   8   0     0     8
+    informar_cierre_jornada_conservar_propiedad_trabajo              5     5   5   0     0     5
+    inspeccionar_reparto_informacion_notas_jefe                      8     8   8   0     0     8
+    observar_reunion_rutinaria_senales_plantilla                     9     9   9   0     0     9
+    recorrer_organizacion_escuchar_plantilla                         7     7   7   0     0     7
+    reforzar_principios_guia_lenguaje_prueba_conocimiento            2     2   2   0     0     2
+    repetir_mensaje_invariable_diario_reunion_evento                 2     2   2   0     0     2
+    resistir_dar_solucion_clasificar_decision_urgencia               5     5   5   0     0     5
+    seguir_frustrado_preguntar_implantacion_ideas                    8     8   7   0     1     8
+    tomar_accion_deliberada_pausar_vocalizar_gesticular              3     3   3   0     0     3
+    cap_10: candidatos 1 | pasos en ficha 3 | filas 3 | T 3 | P 0 | DUDA 0 | suma: 3 | PUENTE 0 de 3 = 0.00 por ciento | si las DUDA cayesen: 0 de 3 = 0.00 por ciento
+    cap_06: candidatos 2 | pasos en ficha 8 | filas 8 | T 8 | P 0 | DUDA 0 | suma: 8 | PUENTE 0 de 8 = 0.00 por ciento | si las DUDA cayesen: 0 de 8 = 0.00 por ciento
+    cap_03: candidatos 6 | pasos en ficha 53 | filas 53 | T 51 | P 0 | DUDA 2 | suma: 53 | PUENTE 0 de 53 = 0.00 por ciento | si las DUDA cayesen: 2 de 53 = 3.77 por ciento
+    cap_02: candidatos 2 | pasos en ficha 10 | filas 10 | T 10 | P 0 | DUDA 0 | suma: 10 | PUENTE 0 de 10 = 0.00 por ciento | si las DUDA cayesen: 0 de 10 = 0.00 por ciento
+    cap_01: candidatos 1 | pasos en ficha 6 | filas 6 | T 6 | P 0 | DUDA 0 | suma: 6 | PUENTE 0 de 6 = 0.00 por ciento | si las DUDA cayesen: 0 de 6 = 0.00 por ciento
+    cap_07: candidatos 1 | pasos en ficha 3 | filas 3 | T 3 | P 0 | DUDA 0 | suma: 3 | PUENTE 0 de 3 = 0.00 por ciento | si las DUDA cayesen: 0 de 3 = 0.00 por ciento
+    cap_09: candidatos 1 | pasos en ficha 2 | filas 2 | T 2 | P 0 | DUDA 0 | suma: 2 | PUENTE 0 de 2 = 0.00 por ciento | si las DUDA cayesen: 0 de 2 = 0.00 por ciento
+    cap_12: candidatos 1 | pasos en ficha 8 | filas 8 | T 8 | P 0 | DUDA 0 | suma: 8 | PUENTE 0 de 8 = 0.00 por ciento | si las DUDA cayesen: 0 de 8 = 0.00 por ciento
+    cap_04: candidatos 1 | pasos en ficha 5 | filas 5 | T 5 | P 0 | DUDA 0 | suma: 5 | PUENTE 0 de 5 = 0.00 por ciento | si las DUDA cayesen: 0 de 5 = 0.00 por ciento
+    cap_14: candidatos 1 | pasos en ficha 2 | filas 2 | T 2 | P 0 | DUDA 0 | suma: 2 | PUENTE 0 de 2 = 0.00 por ciento | si las DUDA cayesen: 0 de 2 = 0.00 por ciento
+    cap_13: candidatos 1 | pasos en ficha 2 | filas 2 | T 2 | P 0 | DUDA 0 | suma: 2 | PUENTE 0 de 2 = 0.00 por ciento | si las DUDA cayesen: 0 de 2 = 0.00 por ciento
+    cap_08: candidatos 1 | pasos en ficha 5 | filas 5 | T 5 | P 0 | DUDA 0 | suma: 5 | PUENTE 0 de 5 = 0.00 por ciento | si las DUDA cayesen: 0 de 5 = 0.00 por ciento
+    cap_11: candidatos 1 | pasos en ficha 3 | filas 3 | T 3 | P 0 | DUDA 0 | suma: 3 | PUENTE 0 de 3 = 0.00 por ciento | si las DUDA cayesen: 0 de 3 = 0.00 por ciento
+    los trece: candidatos 20 | pasos en ficha 110 | filas 110 | T 108 | P 0 | DUDA 2 | suma: 110
+    citas: filas 110 | el tramo esta en su linea: 110 | no esta: 0 | suma: 110
+
+**LECTURA: Marquet es un libro de relato**, y las fichas convierten en mandato lo que el autor cuenta que hizo o vio: *Mira si...*,
+*Pregunta...*, *Quedate con...*, cada una con el contenido de su linea. **Esa figura es `T`** (el aviso o el relato vuelto mandato con
+el contenido del libro, la que la `ACTA 70` `70.4` adjudico `T`), y solo es `P` cuando el mandato **anade** lo que la linea no da. Los
+tramos donde el libro ya habla en mandato o en lista (`cap_06` L101 a L111, `cap_07` L75 a L93, `cap_08` L107 y L117 a L121, `cap_12`
+L125 a L139, `cap_13` L119 y `cap_14` L89 y L99) **los transcriben casi frase a frase**, con la cita inglesa en el propio paso. **No encuentro ningun PUENTE en
+el texto de hoy de las fichas.** Las figuras que mire y dejo en `T`, para que se juzguen:
+
+- `informar_cierre_jornada_conservar_propiedad_trabajo` paso `1`: *no le preguntes que mas necesita de ti* es el contraejemplo de L31
+  (*asked the XO if he had anything more for him that day*), el mismo capitulo; y paso `5`, *Cierra el reporte dejando la propiedad de
+  la tarea donde corresponde*, que es la conclusion de L35 y no una frase mas del guion.
+- `cambiar_forma_trabajar_conservar_plantilla` paso `1`, *Cuenta el plazo que tienes antes de decidir nada sobre la gente*: el
+  argumento de L25 es el plazo contra el tiempo de encontrar sustitutos.
+- `contar_firmas_cadena_tramite_parado` paso `5`: traduce *department chief* y *department head* los dos por *jefe de departamento*;
+  la cadena es la de L39 puesto por puesto, y la cuenta de siete tambien.
+- `auditar_formacion_premios_ultima_fila`: reordena la escena (L55 da los premios antes de que el autor se vaya a la periferia en L57);
+  el orden no es fidelidad de paso.
+
+**MIS DOS DUDAS, las dos de `cap_03` y las dos la misma figura, y me inclino a `T`:** `auditar_formacion_premios_ultima_fila` paso `6`
+(*Escucha la respuesta entera, tambien su segunda mitad*) y `seguir_frustrado_preguntar_implantacion_ideas` paso `3` (*escuchale hasta
+el final*): el libro registra la respuesta entera y escucha, pero **no manda** oirla entera. **Si cayesen las dos, `cap_03` queda en
+`2` de `53`, el `3,77` por ciento**, por debajo del `10`.
+
+**`PASOS INVENTADOS` por mi instrumento, sobre el texto de hoy: `0` en los trece capitulos.** Es preparacion y no entrada.
+
+**`d150`, CON SU TEXTO DELANTE** (mi encargo, TAREA `2` punto `5`): la fila de `cap_03`, contada entera paso a paso, es la de mi
+instrumento de arriba, y la vuelvo a pegar sola:
+
+    $ grep '"id": "d150"' docs/loop/DEUDA.jsonl | grep -o '"que": "[^"]*"'
+    "que": "La TAREA 2 y la TAREA 3 del reporte de la vuelta 1 del frente marquet siguen sin escribirse desde los papeles de .vm01/, que estan intactos con 47 ficheros, y la fila de cap_03 sigue publicada en 0,00 donde la ACTA M2 la recontro."
+    $ python .v78aud/contar_fidelidad.py | grep "^cap_03:"
+    cap_03: candidatos 6 | pasos en ficha 53 | filas 53 | T 51 | P 0 | DUDA 2 | suma: 53 | PUENTE 0 de 53 = 0.00 por ciento | si las DUDA cayesen: 2 de 53 = 3.77 por ciento
+
+**Y LO QUE LEI DESPUES, EN LAS FICHAS:** seis de las `20` traen en su `resumen_teorico` alguna *CORRECCION DECLARADA*; **cuatro son
+del frente de Marquet** (vueltas `1`, `3` y `4` del frente y la `27` de la serial, con su texto viejo dentro), y **dos son de la vuelta `78`**, las de las
+dos fichas cuyas huellas cambiaron (seccion `2`). Leido de su propia prosa (`.v78aud/correcciones.py`, salida en
+`.v78aud/correcciones.txt`):
+
+    $ grep -c "CORRECCION DECLARADA DE LA VUELTA 78" .v78aud/correcciones.txt; grep -o "decia: [^.]*\." .v78aud/correcciones.txt
+    2
+    decia: Reporta primero el estado de un trabajo en curso con signo positivo, nombrando el propio trabajo.
+    decia: Si algo quedo sin hacer, dilo sin disculpa vacia y da el plan de cuando se hara.
+    decia: Nombrale lo que viste, sin pregunta y sin acusacion.
+
+**Leo sus textos viejos y los clasifico yo:**
+
+- `informar_cierre_jornada_conservar_propiedad_trabajo` paso `2`, *con signo positivo*: **`P`**. L35 da el ejemplo *coming along fine*
+  y no pide que el estado que se reporta sea bueno. Paso `4`, *sin disculpa vacia*: **`P`**. Ninguna linea de `cap_04` habla de
+  disculpas.
+- `seguir_frustrado_preguntar_implantacion_ideas` paso `2`, *sin pregunta y sin acusacion*: **`P`**. L25 da solo la frase.
+
+**LECTURA:** sobre el texto viejo, **mi lectura da `P` a las tres lineas *decia* del bloque de arriba**: dos de la ficha de `cap_04`, cuyos
+`5` pasos cuenta mi instrumento, y una de `cap_03`, de `53`. **`cap_04`
+pasa del `10`, y por eso se relee entero antes de seguir** (`D.58`); **coincide con el *cap_04 releido entero* y los *3 PUENTE* del
+asunto de `d19671a1`**, y lo digo como coincidencia. **Los tres pasos corregidos los lei yo `T` en su texto de hoy**: las correcciones
+se sostienen. **Lo que no puedo decir** es si mi lectura ciega habria cazado esos puentes, porque cuando lei ya no estaban. **Y ME
+DEJA UNA PREGUNTA QUE LLEVO AL TURNO NORMAL:** su vara retira *sin pregunta y sin acusacion*, una clausula de modo que la linea no da;
+**mis dos dudas son la misma figura en positivo** (*entera, tambien su segunda mitad*; *hasta el final*). Si por su vara son `P`,
+`cap_03` queda en `2` de `53` y se corrigen en la bandeja antes de entrar.
+
+## 4. **MI BARRIDO DE LAS `20`, SOBRE GRAFO MAS BANDEJAS** (`D.38.4`, `D.38.5`)
+
+Copia de `.v76aud/barrido_uno.py` (la ficha normalizada como la aduana, contra `dataset/nodos.jsonl` mas
+`aduana.poblacion_de_bandejas`, con `buscar_vecinos` de `src/aduana.py`) y de `.v76aud/barrer.sh` con la lista cambiada a
+`.v78aud/las20.txt`, **cinco a la vez, recogido entero dentro de este turno**, lanzado **despues** de que las fichas cambiasen por
+ultima vez (seccion `2`: la ultima es de las `13:40:35`). Antes de lanzarlo guarde la huella de cada ficha de la bandeja y del grafo,
+y al recogerlo las comprobe:
+
+    $ head -1 .v78aud/barrido.log; tail -1 .v78aud/barrido.log; grep -c "rc=0" .v78aud/barrido.log; grep -c "rc=" .v78aud/barrido.log
+    INICIO 2026-09-26 15:05:11
+    TODOS TERMINADOS 2026-09-26 16:05:25
+    20
+    20
+    $ wc -l < .v78aud/huellas_al_barrer.txt; sha1sum -c --quiet .v78aud/huellas_al_barrer.txt && echo "las 20 fichas de la bandeja y el grafo: mismas huellas que al barrer"
+    21
+    las 20 fichas de la bandeja y el grafo: mismas huellas que al barrer
+
+**Poblacion y vecinos por candidato, cada fila de vecino con su senial, y los pares sin orden:**
+
+    $ python .v78aud/vecinos_tabla.py | tee .v78aud/vecinos_tabla.txt
+    (1) candidato | poblacion | vecinos | en grafo | en bandeja
+        acoger_inspectores_externos_fuente_aprendizaje           479   6   0   6
+        aplicar_ejercicio_codigo_genetico_control                479   1   0   1
+        asignar_responsable_unico_evolucion_planificada          479   0   0   0
+        auditar_formacion_premios_ultima_fila                    479   2   0   2
+        cambiar_forma_trabajar_conservar_plantilla               479   2   1   1
+        ceder_control_reforzar_competencia_claridad              479   1   0   1
+        contar_firmas_cadena_tramite_parado                      479   2   0   2
+        declarar_intencion_reemplazar_peticion_permiso           479   4   0   4
+        eliminar_seguimiento_descendente_responsabilizar_dueno   479   0   0   0
+        encargar_meta_especifica_dejar_libre_metodo              479   3   0   3
+        identificar_temas_formacion_tarjetas_decision            479   0   0   0
+        informar_cierre_jornada_conservar_propiedad_trabajo      479   6   5   1
+        inspeccionar_reparto_informacion_notas_jefe              479   2   0   2
+        observar_reunion_rutinaria_senales_plantilla             479   3   0   3
+        recorrer_organizacion_escuchar_plantilla                 479   3   0   3
+        reforzar_principios_guia_lenguaje_prueba_conocimiento    479   3   0   3
+        repetir_mensaje_invariable_diario_reunion_evento         479   0   0   0
+        resistir_dar_solucion_clasificar_decision_urgencia       479   5   0   5
+        seguir_frustrado_preguntar_implantacion_ideas            479   6   4   2
+        tomar_accion_deliberada_pausar_vocalizar_gesticular      479   3   0   3
+    sin fichero de vecinos: 0 []
+    (2) vecino levantado | senial | texto familia paso
+        acoger_inspectores_externos_fuente_aprendizaje         > tomar_accion_deliberada_pausar_vocalizar_gesticular    bandeja similitud_texto  0.457 0.000 0.399
+        acoger_inspectores_externos_fuente_aprendizaje         > resistir_dar_solucion_clasificar_decision_urgencia     bandeja similitud_texto  0.412 0.000 0.410
+        acoger_inspectores_externos_fuente_aprendizaje         > declarar_intencion_reemplazar_peticion_permiso         bandeja similitud_texto  0.406 0.000 0.393
+        acoger_inspectores_externos_fuente_aprendizaje         > reforzar_principios_guia_lenguaje_prueba_conocimiento  bandeja similitud_texto  0.397 0.000 0.376
+        acoger_inspectores_externos_fuente_aprendizaje         > seguir_frustrado_preguntar_implantacion_ideas          bandeja similitud_texto  0.356 0.000 0.294
+        acoger_inspectores_externos_fuente_aprendizaje         > recorrer_organizacion_escuchar_plantilla               bandeja similitud_texto  0.353 0.000 0.327
+        aplicar_ejercicio_codigo_genetico_control              > resistir_dar_solucion_clasificar_decision_urgencia     bandeja similitud_texto  0.366 0.000 0.432
+        auditar_formacion_premios_ultima_fila                  > observar_reunion_rutinaria_senales_plantilla           bandeja similitud_texto  0.370 0.000 0.489
+        auditar_formacion_premios_ultima_fila                  > recorrer_organizacion_escuchar_plantilla               bandeja similitud_texto  0.353 0.000 0.462
+        cambiar_forma_trabajar_conservar_plantilla             > escuchar_entender_critica_dominar_defensa              grafo   paso_contra_nodo 0.201 0.000 0.612
+        cambiar_forma_trabajar_conservar_plantilla             > encargar_meta_especifica_dejar_libre_metodo            bandeja similitud_texto  0.441 0.000 0.455
+        ceder_control_reforzar_competencia_claridad            > encargar_meta_especifica_dejar_libre_metodo            bandeja similitud_texto  0.372 0.000 0.486
+        contar_firmas_cadena_tramite_parado                    > seguir_frustrado_preguntar_implantacion_ideas          bandeja similitud_texto  0.354 0.000 0.463
+        contar_firmas_cadena_tramite_parado                    > inspeccionar_reparto_informacion_notas_jefe            bandeja similitud_texto  0.360 0.000 0.405
+        declarar_intencion_reemplazar_peticion_permiso         > resistir_dar_solucion_clasificar_decision_urgencia     bandeja similitud_texto  0.422 0.000 0.439
+        declarar_intencion_reemplazar_peticion_permiso         > acoger_inspectores_externos_fuente_aprendizaje         bandeja similitud_texto  0.404 0.000 0.350
+        declarar_intencion_reemplazar_peticion_permiso         > informar_cierre_jornada_conservar_propiedad_trabajo    bandeja similitud_texto  0.352 0.000 0.391
+        declarar_intencion_reemplazar_peticion_permiso         > reforzar_principios_guia_lenguaje_prueba_conocimiento  bandeja similitud_texto  0.355 0.000 0.353
+        encargar_meta_especifica_dejar_libre_metodo            > ceder_control_reforzar_competencia_claridad            bandeja similitud_texto  0.381 0.000 0.473
+        encargar_meta_especifica_dejar_libre_metodo            > cambiar_forma_trabajar_conservar_plantilla             bandeja similitud_texto  0.436 0.000 0.459
+        encargar_meta_especifica_dejar_libre_metodo            > recorrer_organizacion_escuchar_plantilla               bandeja similitud_texto  0.412 0.000 0.416
+        informar_cierre_jornada_conservar_propiedad_trabajo    > seguir_frustrado_preguntar_implantacion_ideas          bandeja similitud_texto  0.412 0.000 0.391
+        informar_cierre_jornada_conservar_propiedad_trabajo    > operar_modelo_gente_destreza_minima                    grafo   similitud_texto  0.364 0.000 0.399
+        informar_cierre_jornada_conservar_propiedad_trabajo    > cuantificar_impacto_innovacion_6_pasos                 grafo   similitud_texto  0.392 0.000 0.294
+        informar_cierre_jornada_conservar_propiedad_trabajo    > dictar_ritmo_crecimiento_preguntas_escritas            grafo   similitud_texto  0.361 0.000 0.390
+        informar_cierre_jornada_conservar_propiedad_trabajo    > interrogar_negocio_cinco_preguntas                     grafo   similitud_texto  0.360 0.000 0.390
+        informar_cierre_jornada_conservar_propiedad_trabajo    > usar_banco_nueve_preguntas_entrevista                  grafo   similitud_texto  0.351 0.000 0.329
+        inspeccionar_reparto_informacion_notas_jefe            > observar_reunion_rutinaria_senales_plantilla           bandeja similitud_texto  0.358 0.000 0.452
+        inspeccionar_reparto_informacion_notas_jefe            > contar_firmas_cadena_tramite_parado                    bandeja similitud_texto  0.379 0.000 0.428
+        observar_reunion_rutinaria_senales_plantilla           > auditar_formacion_premios_ultima_fila                  bandeja similitud_texto  0.361 0.000 0.463
+        observar_reunion_rutinaria_senales_plantilla           > recorrer_organizacion_escuchar_plantilla               bandeja similitud_texto  0.414 0.125 0.435
+        observar_reunion_rutinaria_senales_plantilla           > inspeccionar_reparto_informacion_notas_jefe            bandeja similitud_texto  0.367 0.000 0.406
+        recorrer_organizacion_escuchar_plantilla               > observar_reunion_rutinaria_senales_plantilla           bandeja similitud_texto  0.420 0.125 0.437
+        recorrer_organizacion_escuchar_plantilla               > encargar_meta_especifica_dejar_libre_metodo            bandeja similitud_texto  0.401 0.000 0.426
+        recorrer_organizacion_escuchar_plantilla               > inspeccionar_reparto_informacion_notas_jefe            bandeja similitud_texto  0.352 0.000 0.383
+        reforzar_principios_guia_lenguaje_prueba_conocimiento  > acoger_inspectores_externos_fuente_aprendizaje         bandeja similitud_texto  0.401 0.000 0.372
+        reforzar_principios_guia_lenguaje_prueba_conocimiento  > tomar_accion_deliberada_pausar_vocalizar_gesticular    bandeja similitud_texto  0.358 0.000 0.326
+        reforzar_principios_guia_lenguaje_prueba_conocimiento  > resistir_dar_solucion_clasificar_decision_urgencia     bandeja similitud_texto  0.355 0.000 0.329
+        resistir_dar_solucion_clasificar_decision_urgencia     > aplicar_ejercicio_codigo_genetico_control              bandeja similitud_texto  0.356 0.000 0.452
+        resistir_dar_solucion_clasificar_decision_urgencia     > declarar_intencion_reemplazar_peticion_permiso         bandeja similitud_texto  0.411 0.000 0.434
+        resistir_dar_solucion_clasificar_decision_urgencia     > acoger_inspectores_externos_fuente_aprendizaje         bandeja similitud_texto  0.428 0.000 0.402
+        resistir_dar_solucion_clasificar_decision_urgencia     > tomar_accion_deliberada_pausar_vocalizar_gesticular    bandeja similitud_texto  0.402 0.000 0.382
+        resistir_dar_solucion_clasificar_decision_urgencia     > reforzar_principios_guia_lenguaje_prueba_conocimiento  bandeja similitud_texto  0.369 0.000 0.346
+        seguir_frustrado_preguntar_implantacion_ideas          > interrogar_negocio_cinco_preguntas                     grafo   similitud_texto  0.363 0.000 0.477
+        seguir_frustrado_preguntar_implantacion_ideas          > contar_firmas_cadena_tramite_parado                    bandeja similitud_texto  0.375 0.000 0.441
+        seguir_frustrado_preguntar_implantacion_ideas          > dictar_ritmo_crecimiento_preguntas_escritas            grafo   similitud_texto  0.389 0.000 0.436
+        seguir_frustrado_preguntar_implantacion_ideas          > informar_cierre_jornada_conservar_propiedad_trabajo    bandeja similitud_texto  0.411 0.000 0.399
+        seguir_frustrado_preguntar_implantacion_ideas          > pedir_critica_anonima_curso_entrenamiento_dictado      grafo   similitud_texto  0.357 0.000 0.405
+        seguir_frustrado_preguntar_implantacion_ideas          > cambiar_saludo_cliente_dos_ramas                       grafo   similitud_texto  0.366 0.000 0.355
+        tomar_accion_deliberada_pausar_vocalizar_gesticular    > acoger_inspectores_externos_fuente_aprendizaje         bandeja similitud_texto  0.464 0.000 0.391
+        tomar_accion_deliberada_pausar_vocalizar_gesticular    > resistir_dar_solucion_clasificar_decision_urgencia     bandeja similitud_texto  0.411 0.000 0.372
+        tomar_accion_deliberada_pausar_vocalizar_gesticular    > reforzar_principios_guia_lenguaje_prueba_conocimiento  bandeja similitud_texto  0.366 0.000 0.349
+    filas de vecino: 52
+    (3) pares sin orden | levantado desde
+        acoger_inspectores_externos_fuente_aprendizaje         ~ tomar_accion_deliberada_pausar_vocalizar_gesticular    tanda-tanda los dos
+        acoger_inspectores_externos_fuente_aprendizaje         ~ resistir_dar_solucion_clasificar_decision_urgencia     tanda-tanda los dos
+        acoger_inspectores_externos_fuente_aprendizaje         ~ declarar_intencion_reemplazar_peticion_permiso         tanda-tanda los dos
+        acoger_inspectores_externos_fuente_aprendizaje         ~ reforzar_principios_guia_lenguaje_prueba_conocimiento  tanda-tanda los dos
+        acoger_inspectores_externos_fuente_aprendizaje         ~ seguir_frustrado_preguntar_implantacion_ideas          tanda-tanda solo acoger_inspectores_externos_fuente_aprendizaje
+        acoger_inspectores_externos_fuente_aprendizaje         ~ recorrer_organizacion_escuchar_plantilla               tanda-tanda solo acoger_inspectores_externos_fuente_aprendizaje
+        aplicar_ejercicio_codigo_genetico_control              ~ resistir_dar_solucion_clasificar_decision_urgencia     tanda-tanda los dos
+        auditar_formacion_premios_ultima_fila                  ~ observar_reunion_rutinaria_senales_plantilla           tanda-tanda los dos
+        auditar_formacion_premios_ultima_fila                  ~ recorrer_organizacion_escuchar_plantilla               tanda-tanda solo auditar_formacion_premios_ultima_fila
+        cambiar_forma_trabajar_conservar_plantilla             ~ escuchar_entender_critica_dominar_defensa              con fuera   solo cambiar_forma_trabajar_conservar_plantilla
+        cambiar_forma_trabajar_conservar_plantilla             ~ encargar_meta_especifica_dejar_libre_metodo            tanda-tanda los dos
+        ceder_control_reforzar_competencia_claridad            ~ encargar_meta_especifica_dejar_libre_metodo            tanda-tanda los dos
+        contar_firmas_cadena_tramite_parado                    ~ seguir_frustrado_preguntar_implantacion_ideas          tanda-tanda los dos
+        contar_firmas_cadena_tramite_parado                    ~ inspeccionar_reparto_informacion_notas_jefe            tanda-tanda los dos
+        declarar_intencion_reemplazar_peticion_permiso         ~ resistir_dar_solucion_clasificar_decision_urgencia     tanda-tanda los dos
+        declarar_intencion_reemplazar_peticion_permiso         ~ informar_cierre_jornada_conservar_propiedad_trabajo    tanda-tanda solo declarar_intencion_reemplazar_peticion_permiso
+        declarar_intencion_reemplazar_peticion_permiso         ~ reforzar_principios_guia_lenguaje_prueba_conocimiento  tanda-tanda solo declarar_intencion_reemplazar_peticion_permiso
+        encargar_meta_especifica_dejar_libre_metodo            ~ recorrer_organizacion_escuchar_plantilla               tanda-tanda los dos
+        informar_cierre_jornada_conservar_propiedad_trabajo    ~ seguir_frustrado_preguntar_implantacion_ideas          tanda-tanda los dos
+        informar_cierre_jornada_conservar_propiedad_trabajo    ~ operar_modelo_gente_destreza_minima                    con fuera   solo informar_cierre_jornada_conservar_propiedad_trabajo
+        cuantificar_impacto_innovacion_6_pasos                 ~ informar_cierre_jornada_conservar_propiedad_trabajo    con fuera   solo informar_cierre_jornada_conservar_propiedad_trabajo
+        dictar_ritmo_crecimiento_preguntas_escritas            ~ informar_cierre_jornada_conservar_propiedad_trabajo    con fuera   solo informar_cierre_jornada_conservar_propiedad_trabajo
+        informar_cierre_jornada_conservar_propiedad_trabajo    ~ interrogar_negocio_cinco_preguntas                     con fuera   solo informar_cierre_jornada_conservar_propiedad_trabajo
+        informar_cierre_jornada_conservar_propiedad_trabajo    ~ usar_banco_nueve_preguntas_entrevista                  con fuera   solo informar_cierre_jornada_conservar_propiedad_trabajo
+        inspeccionar_reparto_informacion_notas_jefe            ~ observar_reunion_rutinaria_senales_plantilla           tanda-tanda los dos
+        observar_reunion_rutinaria_senales_plantilla           ~ recorrer_organizacion_escuchar_plantilla               tanda-tanda los dos
+        inspeccionar_reparto_informacion_notas_jefe            ~ recorrer_organizacion_escuchar_plantilla               tanda-tanda solo recorrer_organizacion_escuchar_plantilla
+        reforzar_principios_guia_lenguaje_prueba_conocimiento  ~ tomar_accion_deliberada_pausar_vocalizar_gesticular    tanda-tanda los dos
+        reforzar_principios_guia_lenguaje_prueba_conocimiento  ~ resistir_dar_solucion_clasificar_decision_urgencia     tanda-tanda los dos
+        resistir_dar_solucion_clasificar_decision_urgencia     ~ tomar_accion_deliberada_pausar_vocalizar_gesticular    tanda-tanda los dos
+        interrogar_negocio_cinco_preguntas                     ~ seguir_frustrado_preguntar_implantacion_ideas          con fuera   solo seguir_frustrado_preguntar_implantacion_ideas
+        dictar_ritmo_crecimiento_preguntas_escritas            ~ seguir_frustrado_preguntar_implantacion_ideas          con fuera   solo seguir_frustrado_preguntar_implantacion_ideas
+        pedir_critica_anonima_curso_entrenamiento_dictado      ~ seguir_frustrado_preguntar_implantacion_ideas          con fuera   solo seguir_frustrado_preguntar_implantacion_ideas
+        cambiar_saludo_cliente_dos_ramas                       ~ seguir_frustrado_preguntar_implantacion_ideas          con fuera   solo seguir_frustrado_preguntar_implantacion_ideas
+    pares sin orden: 34 | {'tanda-tanda': 24, 'con fuera': 10} | suma: 34
+
+**Y las cifras que la lectura de abajo cita, contadas sobre los mismos ficheros y no a ojo** (`D.38.3`):
+
+    $ python .v78aud/cifras_barrido.py
+    filas por senial: {'similitud_texto': 51, 'paso_contra_nodo': 1} | suma: 52
+    nodos de fuera: 8 | por libro: {'scott_radical_candor': 1, 'gerber_emyth': 5, 'grove_high_output': 2} | suma: 8
+    fichas que no levantan a nadie: 4 ['asignar_responsable_unico_evolucion_planificada', 'eliminar_seguimiento_descendente_responsabilizar_dueno', 'identificar_temas_formacion_tarjetas_decision', 'repetir_mensaje_invariable_diario_reunion_evento']
+    fichas a las que no levanta nadie: 4 ['asignar_responsable_unico_evolucion_planificada', 'eliminar_seguimiento_descendente_responsabilizar_dueno', 'identificar_temas_formacion_tarjetas_decision', 'repetir_mensaje_invariable_diario_reunion_evento']
+    similitud_texto en las filas que levanta solo esa senial: filas 51 | menor 0.351 | mayor 0.464
 
 **LECTURA:**
 
-- **Las `22` viven en el grafo con los textos que se leyeron**, cada una con tantos pasos como filas tiene mi lectura. **`PASOS
-  INVENTADOS` de lo que ENTRO: `0` en los diez capitulos**, que es la columna *PUENTE que entrara* que mi `ACTA 75` `75.3` firmo: los
-  PUENTE de la preparacion se corrigieron en la bandeja **antes** de mi barrido, y mi unica `D` (`cap_12`, el paso `4` de
-  `cuantificar_impacto_innovacion_6_pasos`) la adjudique `T` en la `75.3`, que no reabro (`D.47`). **Por debajo del `10`: no se baja
-  escalon** (`8.1`), y de todos modos no queda lote de extraccion en el mundo `11`. **La relectura de fidelidad de `D.58` sobre lo que
-  entra es esa lectura entera de la `76`**, porque lo que entro es byte a byte lo que lei. Coincide con el *0 que entraron* de
-  `b2d27bbc`, y lo digo como coincidencia.
-- **`R9` sobre Gerber: las coincidencias, todas con su tramo literal.** **Las de forma, una por una**: *prueba a preguntar* es el *try*
-  de `cap_12` `L51`, no una prueba; *base de datos* es el *database* de `cap_19` `L337`; y el *a diferencia de* de
-  `trazar_modelo_negocio_cliente_primero` paso `8` casa dentro de *la diferencia del*. **Las demas son clausulas que el libro pone**:
-  *no hay nada peor que fingir* (`cap_18` `L165`), *no solo ... sino* (`cap_11` `L65`), *cualquier plan es mejor que ningun plan*
-  (`cap_07` `L287`), *no casi iguales, sino iguales* (`cap_11` `L39`), *no del retrato del negocio sino del cliente* (`cap_08` `L119`) y
-  *los estudios de mercado* (`cap_11` `L215`). **La que mas se acerca a un marco puesto, y la dejo escrita:** el mismo paso `8` de
-  `trazar_modelo` cierra con *que es lo que el texto pone como la diferencia del modelo emprendedor*; el libro no escribe *difference*
-  en `L119`, pero su *Thus, the Entrepreneurial Model does not start with* **es** la diferencia que el capitulo traza contra el modelo
-  del tecnico, y el paso no anade procedimiento ni prueba. **Es mi `T` sellado de la `76`, firmado en la `75.3`, y no lo reabro.**
-- **Lo que el `grep` no ve, y lo digo:** es un `grep` de forma, y una calificacion de la prueba con un verbo que no este en su lista no
-  la ve. **No es una relectura**: la relectura de estos pasos es la de mi fase ciega de la `76`, firmada en la `ACTA 75`, y no la rehago
-  (`D.47`).
+1. **Las `20` dan `52` filas de vecino en `34` pares sin orden**, `24` entre dos de la tanda y `10` con uno de fuera, todos del
+   grafo. **Coincide con los *52 pares* del asunto de `cc46a0da`**, que ahi llama *pares* a mis filas dirigidas, como en la `73` y la
+   `76`; y lo digo como coincidencia.
+2. **Todo menos una fila lo levanta `similitud_texto`, casi siempre entre fichas del mismo libro, entre `0,351` y `0,464`**: las fichas de Marquet
+   comparten la forma (*El texto lo dice asi*, la cita inglesa en el paso) mas que el procedimiento. La unica fila de otra senial es
+   `cambiar_forma_trabajar_conservar_plantilla` contra `escuchar_entender_critica_dominar_defensa` de Scott, por `paso_contra_nodo`.
+3. **Cuatro fichas no levantan a nadie, y son las mismas cuatro a las que no levanta nadie**: `asignar_responsable_unico_evolucion_planificada`,
+   `eliminar_seguimiento_descendente_responsabilizar_dueno`, `identificar_temas_formacion_tarjetas_decision` y
+   `repetir_mensaje_invariable_diario_reunion_evento`.
+4. **Los de fuera son `8` nodos del grafo**: de Gerber, `operar_modelo_gente_destreza_minima`, `cuantificar_impacto_innovacion_6_pasos`,
+   `dictar_ritmo_crecimiento_preguntas_escritas`, `interrogar_negocio_cinco_preguntas` y `cambiar_saludo_cliente_dos_ramas`; de Grove,
+   `usar_banco_nueve_preguntas_entrevista` y `pedir_critica_anonima_curso_entrenamiento_dictado`; de Scott,
+   `escuchar_entender_critica_dominar_defensa`. **De Zhuo, ninguno.** Los levantan `cambiar_forma_trabajar_conservar_plantilla`,
+   `informar_cierre_jornada_conservar_propiedad_trabajo` o `seguir_frustrado_preguntar_implantacion_ideas`, siempre desde un solo lado.
+5. **El par de mi `CONTINUA` de la seccion `5` NO lo levanta el barrido en ningun sentido**
+   (`observar_reunion_rutinaria_senales_plantilla` con `seguir_frustrado_preguntar_implantacion_ideas`): es arista por lectura
+   (seccion `6`).
+6. **`D.36`, lo que un solo lado levanta dentro de la tanda**: va a la seccion `7`, y no obliga.
 
-## 4. **LO QUE MI LECTURA ESPERA QUE LA VUELTA DEJE, Y EL ORDEN EN QUE ENTRO**
+**EL RELOJ, medido y no techo:** de punta a punta en el log de arriba, con fichas de estos segundos (la menor y la mayor):
 
-Sacado **solo** de mis ficheros sellados de la `76`, con las tres adjudicaciones de la `ACTA 75` `75.4` aplicadas y declaradas dentro
-del instrumento, y **con mi lectura en las dos piezas de la conjunta** (seccion `5`); la bitacora, solo contada; **y las aristas del
-grafo, solo en cuentas y `SI` o `NO`, despues de imprimir las esperadas**:
+    $ grep "rc=" .v78aud/barrido.log | sed 's/.*segundos=//' | sort -n | sed -n '1p;$p'
+    483
+    1144
 
-    $ python .v77aud/esperado_77.py
-    pares sellados: 34 | con la adjudicacion (i) de la ACTA 75 75.4 aplicada: 1
-    filas dirigidas de mi barrido con candidato de las 22: 54 | por vecino: {'vecino en la tanda': 44, 'vecino fuera de la tanda': 10} | suma: 54
-    lineas de veredicto esperadas, por la clase de su par: {'CONTINUA': 6, 'SANO': 48} | suma: 54
-    SOSTENGO de mi lectura sellada y la de la ACTA 75: {'arista por lectura': 6, 'cae por la ACTA 75 75.4 (ii)': 2, 'cae en una CONTINUA': 3, 'anadida por la ACTA 75 75.4 (iii)': 1} | suma: 12
-    aristas esperadas: 10 | CONTINUA con madre= 3 | por lectura 7 | en las dos: 0
-      CONTINUA  aplicar_seis_pasos_sistema_venta > medir_sistema_venta_trece_indicadores_benchmark
-      CONTINUA  cambiar_saludo_cliente_dos_ramas > cuantificar_impacto_innovacion_6_pasos
-      CONTINUA  construir_estrategia_gente_cuatro_componentes > aplicar_cinco_pasos_proceso_contratacion
-      LECTURA   construir_estrategia_gente_cuatro_componentes > documentar_trabajo_manual_operaciones
-      LECTURA   fingir_prototipo_cinco_mil_replicas > dar_valor_constante_cuatro_publicos
-      LECTURA   fingir_prototipo_cinco_mil_replicas > documentar_trabajo_manual_operaciones
-      LECTURA   fingir_prototipo_cinco_mil_replicas > operar_modelo_gente_destreza_minima
-      LECTURA   fingir_prototipo_cinco_mil_replicas > recorrer_siete_pasos_programa_desarrollo_negocio
-      LECTURA   fingir_prototipo_cinco_mil_replicas > unificar_color_forma_vestuario_modelo
-      LECTURA   recorrer_siete_pasos_programa_desarrollo_negocio > construir_estrategia_gente_cuatro_componentes
-    extremos de esas aristas que no son de las 22: 0
-    bitacora esperada: 1111 + 54 + 7 = 1172 | hoy (lineas): 1172 | IGUAL
-    aristas del grafo con algun extremo en las 22: escritas en la madre 10 | en el hijo 10 | las dos listas dicen lo mismo: SI | el conjunto es el esperado: SI
-    de las 10 esperadas, en el grafo por los dos lados: 10 | en el grafo y no esperadas: 0
+## 5. **MI LECTURA CIEGA DE LOS PARES** (`1.2`, `6.1`, y solo la vara `6.1`)
 
-**LECTURA, y lo que se compara en el turno normal, no aqui:**
+**Leidos con los pasos de los dos delante**, todos con `pasos_ciego.py` (`R6`): `.v78aud/pasos_20.txt` para las `20` y
+`.v78aud/pasos_fuera.txt` para los ocho de fuera. **Una fila por par** en `.v78aud/mis_clases.tsv`, con su razon. **De donde sale cada
+fila:** los pares posibles dentro de un mismo capitulo los escribi **antes de recoger ninguna ficha del barrido**, en
+`.v78aud/clases_intra.txt`, **salvo uno que me faltaba** (`recorrer` con `seguir`, que el barrido no levanta) y que anadi al recogerlo,
+con su nota dentro del fichero; **por eso la hora de ese fichero es de despues**, y lo que queda de la hora de antes es la de
+`.v78aud/aristas_lectura.tsv`, que escribi despues de las clases de dentro y antes de que cerrara la primera ficha. **Esa secuencia
+no la prueba ningun instrumento: la declaro.** Los de entre capitulos y los de fuera, al recogerlo, en `.v78aud/clases_fuera.txt`:
 
-- **Aristas: `10`, las tres `CONTINUA` con `madre=` y las siete por lectura, todas con los dos extremos dentro de las `22`.** **Y el
-  grafo tiene exactamente esas `10`, escritas por los dos lados, ninguna de mas.** Eso incluye **las dos de la conjunta tal como yo las
-  leo**: `construir` a `aplicar_cinco` y `fingir` a `recorrer`. Coincide con el *las 10 aristas esperadas en el grafo por los dos
-  lados* de `bd29146f`, y lo digo como coincidencia.
-- **Lineas de bitacora.** Si cada `insertar` escribio una linea por fila dirigida que su aduana levanto, y la aduana levanto lo que mi
-  barrido, son `54`: `6` `CONTINUA` y `48` `SANO` por la clase de su par; y cada arista por lectura escribe **una** mas. **La bitacora
-  tiene las `1172` que eso da.** **Es coincidencia de cuenta y no de contenido**: no he abierto ni una linea. **Y LO QUE LA CUENTA NO
-  DECIDE, dicho para que se mire:** la arista de `construir` a `aplicar_cinco` puede vivir por dos caminos, la linea `CONTINUA` con
-  `madre=` que mi lectura pide, o una linea `SANO` mas una arista por lectura (`D.53`); **el segundo camino daria una linea mas**, y la
-  cuenta no la tiene, **pero una cuenta que cuadra no prueba el contenido**: lo leo par a par en mi turno normal. **Mi lectura no espera
-  ningun vecino sin linea preparada**, porque la poblacion es la del barrido (seccion `2`); uno que apareciera seria un hallazgo.
+    $ ls -l --time-style=full-iso .v78aud/aristas_lectura.tsv .v78aud/clases_intra.txt .v78aud/clases_fuera.txt | awk '{print $6, substr($7,1,8), $9}'; ls -l --time-style=full-iso .v78aud/vecinos_*.json | awk '{print substr($7,1,8)}' | sort | head -3
+    2026-09-26 15:13:15 .v78aud/aristas_lectura.tsv
+    2026-09-26 16:06:31 .v78aud/clases_fuera.txt
+    2026-09-26 16:06:45 .v78aud/clases_intra.txt
+    15:13:23
+    15:15:42
+    15:22:50
 
-**El orden en que entraron, leido del grafo** (`src/aduana.py` escribe `nodos + [nuevo]`, asi que el orden de las filas es el de
-entrada), contra el bloque de orden de mi encargo y contra las `16` restricciones de la `ACTA 75` `75.4`, leidas de su instrumento:
+`armar_clases.py` los junta, y el cruce comprueba que cada par del barrido tiene su fila y cada fila su par:
 
-    $ python .v77aud/orden_grafo.py
-    orden de entrada leido del grafo: 22 filas | el del bloque de mi encargo: 22 filas | fila a fila iguales: SI
-       1 hacer_trabajo_futuro_imaginar_negocio
-       2 dictar_ritmo_crecimiento_preguntas_escritas
-       3 construir_empresa_plantilla_vision_diaria
-       4 trazar_modelo_negocio_cliente_primero
-       5 fingir_prototipo_cinco_mil_replicas
-       6 dar_valor_constante_cuatro_publicos
-       7 interrogar_negocio_cinco_preguntas
-       8 operar_modelo_gente_destreza_minima
-       9 unificar_color_forma_vestuario_modelo
-      10 cambiar_saludo_cliente_dos_ramas
-      11 probar_traje_azul_seis_semanas
-      12 cuantificar_impacto_innovacion_6_pasos
-      13 recorrer_siete_pasos_programa_desarrollo_negocio
-      14 responder_8_preguntas_construir_primary_aim
-      15 responder_4_preguntas_estandares_objetivo_estrategico
-      16 distinguir_tres_tipos_sistemas_negocio
-      17 aplicar_seis_pasos_sistema_venta
-      18 medir_sistema_venta_trece_indicadores_benchmark
-      19 construir_estrategia_gente_cuatro_componentes
-      20 documentar_trabajo_manual_operaciones
-      21 aplicar_ocho_reglas_juego_personas
-      22 aplicar_cinco_pasos_proceso_contratacion
-      cumple 19 construir_estrategia_gente_cuatro_componentes        antes que 22 aplicar_cinco_pasos_proceso_contratacion             mi CONTINUA, 75.4 relectura conjunta
-      cumple 17 aplicar_seis_pasos_sistema_venta                     antes que 18 medir_sistema_venta_trece_indicadores_benchmark      CONTINUA de los dos
-      cumple 10 cambiar_saludo_cliente_dos_ramas                     antes que 12 cuantificar_impacto_innovacion_6_pasos               CONTINUA de los dos
-      cumple 13 recorrer_siete_pasos_programa_desarrollo_negocio     antes que 19 construir_estrategia_gente_cuatro_componentes        D.37 de los dos
-      cumple  5 fingir_prototipo_cinco_mil_replicas                  antes que  6 dar_valor_constante_cuatro_publicos                  D.37 de los dos
-      cumple  5 fingir_prototipo_cinco_mil_replicas                  antes que  8 operar_modelo_gente_destreza_minima                  D.37 de los dos
-      cumple  5 fingir_prototipo_cinco_mil_replicas                  antes que 20 documentar_trabajo_manual_operaciones                D.37 de los dos
-      cumple  5 fingir_prototipo_cinco_mil_replicas                  antes que  9 unificar_color_forma_vestuario_modelo                D.37 de los dos
-      cumple  5 fingir_prototipo_cinco_mil_replicas                  antes que 13 recorrer_siete_pasos_programa_desarrollo_negocio     mi D.29, 75.4 relectura conjunta
-      cumple 19 construir_estrategia_gente_cuatro_componentes        antes que 20 documentar_trabajo_manual_operaciones                su D.37 (D76.14), 75.4
-      cumple 14 responder_8_preguntas_construir_primary_aim          antes que 19 construir_estrategia_gente_cuatro_componentes        mi D.29 sellada, que cae en 75.4
-      cumple 15 responder_4_preguntas_estandares_objetivo_estrategico antes que 19 construir_estrategia_gente_cuatro_componentes        mi D.29 sellada, que cae en 75.4
-      cumple  5 fingir_prototipo_cinco_mil_replicas                  antes que 22 aplicar_cinco_pasos_proceso_contratacion             D.36 de un solo lado
-      cumple 18 medir_sistema_venta_trece_indicadores_benchmark      antes que 19 construir_estrategia_gente_cuatro_componentes        D.36 de un solo lado
-      cumple  7 interrogar_negocio_cinco_preguntas                   antes que  8 operar_modelo_gente_destreza_minima                  D.36 de un solo lado
-      cumple  6 dar_valor_constante_cuatro_publicos                  antes que 11 probar_traje_azul_seis_semanas                       D.36 de un solo lado
-    restricciones: 16 | {'obliga, la cumple': 10, 'cae en la ACTA 75 75.4, la cumple': 2, 'D.36 de un solo lado, la cumple': 4} | suma: 16
+    $ python .v78aud/armar_clases.py
+    pares del barrido: 34 | filas escritas: 34 | sin clase: 0 []
+    de donde sale cada fila: {'fuera': 26, 'intra': 8} | suma: 34
+    filas de clases_intra.txt: 17 | por el barrido: {'no levantada': 9, 'levantada': 8} | suma: 17
+    $ python .v78aud/cruce_clases.py
+    pares del barrido: 34 | filas de clase: 34
+    pares sin fila: []
+    filas sin par: []
+    clases: {'SANO': 34} | suma: 34
+    con DUDA escrita: 3
 
-**LECTURA:** **las `22` entraron en el orden que mi encargo pego, fila a fila**, y **las `16` restricciones se cumplen**: las que obligan
-(madre antes que hijo, las dos de la conjunta incluidas), las dos de mis `D.29` que cayeron en la `75.4` y ya no obligan, y las cuatro
-de `D.36` de un solo lado, informativas. **Que cada `insertar` volviera antes de lanzar el siguiente lo miro en mi turno normal.**
+**LECTURA: LOS `34` PARES QUE EL BARRIDO LEVANTA SON `SANO`, LOS `34`.** Ninguno es `REPITE`: en todos hay procedimiento fuera del
+solape en los dos lados, y en casi todos no hay solape de procedimiento sino de forma (seccion `4`, punto `2`). **Ninguno es
+`CONTINUA`**: ningun hijo arranca del producto del otro. **Coincide con los *52 veredictos SANO* del asunto de `cc46a0da`** en la clase
+de todas las filas del barrido, y lo digo como coincidencia.
 
-## 5. **MI CLASIFICACION DE CADA CANDIDATO, Y LAS DOS PIEZAS DE LA CONJUNTA RELEIDAS** (`6.1`, y solo la vara `6.1`)
+**MI UNICO `CONTINUA` ES DE UN PAR QUE EL BARRIDO NO LEVANTA**, y por eso no es linea de veredicto sino arista por lectura con su
+veredicto de la lectura (`D.53`; asi entro `fingir` a `recorrer` en la `77`, `ACTA 76` `76.3`):
+`observar_reunion_rutinaria_senales_plantilla` **madre de** `seguir_frustrado_preguntar_implantacion_ideas`. Los pasos de los dos:
 
-**Las `22`, una por una, en su orden de entrada**, de mis ficheros sellados: las lineas del libro que sus pasos transcriben, las filas
-dirigidas de mi barrido en las que es candidata, sus pares sin orden por clase con la adjudicacion `(i)` de la `75.4`, y las aristas que
-mi lectura le espera como hija y cuantas como madre:
+    $ python .v67aud/normal/pasos_ciego.py observar_reunion_rutinaria_senales_plantilla seguir_frustrado_preguntar_implantacion_ideas | cut -c1-200
+    ===== observar_reunion_rutinaria_senales_plantilla | cuarentena\marquet_turn_the_ship\observar_reunion_rutinaria_senales_plantilla.json
+      titulo: Sentarse en una reunion rutinaria que ya existe y leerla por sus senales de gente en vez de por su asunto tecnico
+      fuente: ['marquet_turn_the_ship']
+      cond: Cuando entras nuevo en una organizacion y tienes delante una de sus reuniones de repaso rutinarias, de las que ya existen y no convocas tu.
+      P1. Asiste a una reunion rutinaria de repaso de la organizacion. La del texto es una reunion de jefes de departamento, un repaso rutinario de asuntos de mantenimiento.
+      P2. No atiendas al asunto tecnico: observa a la gente de la sala. El texto lo escribe como eleccion deliberada, y dice incluso que probablemente deberia haber atendido a lo tecnico porque ese sistem
+      P3. Mira quien llega tarde y como llega. En el texto los asistentes iban entrando tarde.
+      P4. Mira si el jefe se queda fuera hasta que estan todos reunidos y entra despues, invitado. Es lo que el texto describe.
+      P5. Mira si la reunion empieza tarde.
+      P6. Mira a quien esta esperando cada uno. En esa reunion, dice el texto, todos estaban esperando a algun otro.
+      P7. Mira como esta el que expone. El texto describe al suyo serio y directo, pero frustrado y a la defensiva ante todas las preguntas que tenia que contestar.
+      P8. Mira como estan los demas. Los otros jefes de departamento y los suboficiales estaban aburridos.
+      P9. Lee la falta de puntualidad con la regla que el texto escribe: puede parecer una cosa pequena, pero a bordo de un submarino nuclear las cosas pequenas como la falta de puntualidad son indicativa
+    ===== seguir_frustrado_preguntar_implantacion_ideas | cuarentena\marquet_turn_the_ship\seguir_frustrado_preguntar_implantacion_ideas.json
+      titulo: Seguir al que viste frustrado en una reunion y preguntarle, idea por idea, como la implanto
+      fuente: ['marquet_turn_the_ship']
+      cond: Cuando acabas de ver en una reunion a un responsable frustrado o a la defensiva y quieres saber si la causa esta en el o en el sistema en que trabaja.
+      P1. Al acabar la reunion, siguelo a su sitio de trabajo. El texto lo dice asi: despues de la reunion segui a Dave a su camarote.
+      P2. Nombrale lo que viste. La frase del texto es que parecias un poco frustrado.
+      P3. Dejale contar la vision que tiene de como quiere que funcione lo suyo, y escuchale hasta el final. El texto registra que al escucharle se fue poniendo cada vez mas entusiasmado e impresionado, y
+      P4. Segun vaya desgranando las ideas que tiene para mejorar su area, pregunta por cada una como la implanto.
+      P5. Fijate en si la respuesta es siempre la misma. En el texto lo fue todas las veces: alguien mas arriba en la cadena de mando no habia apoyado la iniciativa, asi que no paso nada.
+      P6. Mira si lo mismo pasa un piso mas abajo. El texto registra que los suboficiales que trabajaban para el tampoco parecian dispuestos a salir con ideas propias.
+      P7. Quedate con el ejemplo concreto que salga de ahi. El del texto es el adiestramiento de ataque con misiles Tomahawk que habia querido dar a los oficiales varias veces, con el examen de enero por
+      P8. Lee el resultado como el texto lo lee: en esencia te estaba describiendo un problema propio del modelo de lider a seguidores, aunque no usara esas palabras.
 
-    $ python .v77aud/clasificacion_22.py
-     1 cap_04 hacer_trabajo_futuro_imaginar_negocio                NODO | L285 a L291 | filas 1 | pares {'SANO': 1} suma 1 | hija: ninguna | madre de: 0
-     2 cap_07 dictar_ritmo_crecimiento_preguntas_escritas          NODO | L279 a L287 | filas 8 | pares {'SANO': 8} suma 8 | hija: ninguna | madre de: 0
-     3 cap_08 construir_empresa_plantilla_vision_diaria            NODO | L39 a L49 | filas 1 | pares {'SANO': 1} suma 1 | hija: ninguna | madre de: 0
-     4 cap_08 trazar_modelo_negocio_cliente_primero                NODO | L109 a L121 | filas 1 | pares {'SANO': 1} suma 1 | hija: ninguna | madre de: 0
-     5 cap_11 fingir_prototipo_cinco_mil_replicas                  NODO | L35 a L57 | filas 0 | pares {'SANO': 1} suma 1 | hija: ninguna | madre de: 5
-     6 cap_11 dar_valor_constante_cuatro_publicos                  NODO | L63 a L81 | filas 3 | pares {'SANO': 4} suma 4 | hija: LECTURA de fingir_prototipo_cinco_mil_replicas | madre de: 0
-     7 cap_11 interrogar_negocio_cinco_preguntas                   NODO | L245 a L265 | filas 1 | pares {'SANO': 2} suma 2 | hija: ninguna | madre de: 0
-     8 cap_11 operar_modelo_gente_destreza_minima                  NODO | L87 a L111 | filas 4 | pares {'SANO': 4} suma 4 | hija: LECTURA de fingir_prototipo_cinco_mil_replicas | madre de: 0
-     9 cap_11 unificar_color_forma_vestuario_modelo                NODO | L215 a L241 | filas 2 | pares {'SANO': 2} suma 2 | hija: LECTURA de fingir_prototipo_cinco_mil_replicas | madre de: 0
-    10 cap_12 cambiar_saludo_cliente_dos_ramas                     NODO | L51 a L57 | filas 6 | pares {'CONTINUA': 1, 'SANO': 5} suma 6 | hija: ninguna | madre de: 1
-    11 cap_12 probar_traje_azul_seis_semanas                       NODO | L63 a L63 | filas 3 | pares {'SANO': 3} suma 3 | hija: ninguna | madre de: 0
-    12 cap_12 cuantificar_impacto_innovacion_6_pasos               NODO | L95 a L95 | filas 5 | pares {'CONTINUA': 1, 'SANO': 4} suma 5 | hija: CONTINUA de cambiar_saludo_cliente_dos_ramas | madre de: 0
-    13 cap_13 recorrer_siete_pasos_programa_desarrollo_negocio     NODO | L39 a L57 | filas 1 | pares {'SANO': 1} suma 1 | hija: LECTURA de fingir_prototipo_cinco_mil_replicas | madre de: 1
-    14 cap_14 responder_8_preguntas_construir_primary_aim          NODO | L117 a L133 | filas 1 | pares {'SANO': 1} suma 1 | hija: ninguna | madre de: 0
-    15 cap_15 responder_4_preguntas_estandares_objetivo_estrategico NODO | L169 a L177 | filas 2 | pares {'SANO': 2} suma 2 | hija: ninguna | madre de: 0
-    16 cap_19 distinguir_tres_tipos_sistemas_negocio               NODO | L35 a L43 | filas 3 | pares {'SANO': 3} suma 3 | hija: ninguna | madre de: 0
-    17 cap_19 aplicar_seis_pasos_sistema_venta                     NODO | L143 a L153 | filas 2 | pares {'CONTINUA': 1, 'SANO': 1} suma 2 | hija: ninguna | madre de: 1
-    18 cap_19 medir_sistema_venta_trece_indicadores_benchmark      NODO | L311 a L337 | filas 2 | pares {'CONTINUA': 1, 'SANO': 2} suma 3 | hija: CONTINUA de aplicar_seis_pasos_sistema_venta | madre de: 0
-    19 cap_18 construir_estrategia_gente_cuatro_componentes        NODO | L117 a L119 | filas 4 | pares {'CONTINUA': 1, 'SANO': 3} suma 4 | hija: LECTURA de recorrer_siete_pasos_programa_desarrollo_negocio | madre de: 2
-    20 cap_11 documentar_trabajo_manual_operaciones                NODO | L155 a L171 | filas 2 | pares {'SANO': 2} suma 2 | hija: LECTURA de construir_estrategia_gente_cuatro_componentes; LECTURA de fingir_prototipo_cinco_mil_replicas | madre de: 0
-    21 cap_18 aplicar_ocho_reglas_juego_personas                   NODO | L139 a L165 | filas 0 | pares {} suma 0 | hija: ninguna | madre de: 0
-    22 cap_18 aplicar_cinco_pasos_proceso_contratacion             NODO | L249 a L271 | filas 2 | pares {'CONTINUA': 1, 'SANO': 1} suma 2 | hija: CONTINUA de construir_estrategia_gente_cuatro_componentes | madre de: 0
+**La condicion del hijo es lo que el paso `7` de la madre deja visto** (*haber visto en una reunion a un responsable frustrado o a la
+defensiva*; L21, *frustrated and defensive*), y **el hijo arranca al acabar esa misma reunion** (L23, *After the meeting I followed
+Dave*). El hijo trae procedimiento propio y ningun paso de la madre: no es `REPITE`.
 
-**LECTURA: LAS `22` SON NODO**, con la clase de cada par que selle en la `76` y las adjudicaciones de la `ACTA 75`. **No cambio
-ninguna**: lo que entro es byte a byte lo que lei (secciones `2` y `3`). **`aplicar_ocho_reglas_juego_personas`** no levanta a nadie
-ni la levanta nadie, y **`fingir_prototipo_cinco_mil_replicas`** solo esta en el par que levanta la contratacion: por eso la serie de
-las seis reglas va por lectura (`D.37`), como la `ACTA 75` `75.4` firmo.
+**MIS DUDAS, escritas antes de saber, y si alguna me cae, cae dentro de lo que marco aqui:**
 
-**LAS DOS PIEZAS DE LA CONJUNTA, RELEIDAS HOY CON EL LIBRO Y LOS PASOS DELANTE.** Las lineas que citan mis filas selladas:
+- **Ese `CONTINUA` puede leerse `SANO` con la misma arista `D.29`** si el paso `7` se lee como una senial entre ocho y no como el
+  producto del nodo. La arista la sostengo en las dos lecturas; lo que cambia es el veredicto de la lectura.
+- **`encargar_meta_especifica_dejar_libre_metodo` con `cambiar_forma_trabajar_conservar_plantilla`**, que el barrido levanta por los
+  dos lados: `SANO`, las dos caras de la misma conversacion; si el reto de `cambiar` paso `5` se lee como la consecuencia que
+  `encargar` paso `4` saca, seria `CONTINUA` con madre `encargar`.
+- **`contar_firmas_cadena_tramite_parado` con `seguir_frustrado_preguntar_implantacion_ideas`**, el par mas cercano del capitulo: sus
+  condiciones hacen la misma pregunta (la gente o el sistema) y los dos acaban en el mismo veredicto (falla el sistema). `SANO`: fuera
+  de esa pregunta, procedimiento en los dos lados y ningun paso comun.
+- **`auditar_formacion_premios_ultima_fila` con `observar_reunion_rutinaria_senales_plantilla`**: la misma familia (leer una rutina
+  por sus seniales de gente), `SANO` por `6.1` sin bascula.
 
-    $ python .v77aud/lineas_fuente.py
-    cap_18 L117 (58 caracteres): Your People Strategy is the way you communicate this idea.
-    cap_18 L119 (260 caracteres): It starts with your Primary Aim and your Strategic Objective, and continues through your Organizational Strategy (your Organization Chart and the Position Contracts for all of the positions in it) and the Operations Manuals that define the work your people do.
-    cap_18 L245 (108 caracteres): And the hotel’s hiring process became the first and most essential medium for communicating the Boss’s idea.
-    cap_18 L247 (99 caracteres): As the Manager explained it to me, the hiring process was comprised of several distinct components:
-    cap_18 L267 (60 caracteres): • Issuing the employee his uniform and his Operations Manual
-    cap_18 L269 (152 caracteres): • Reviewing the Operations Manual , including the Strategic Objective, the Organizational Strategy, and the Position Contract of the employee’s position
-    cap_11 L35 (121 caracteres): Pretend that the business you own (raya) or want to own (raya) is the prototype, or will be the prototype, for 5,000 more just like it.
-    cap_13 L21 (122 caracteres): N ow you understand the task ahead: to think of your business as though it were the prototype for 5,000 more just like it.
-    cap_13 L39 (210 caracteres): Your Business Development Program is the step-by-step process through which you convert your existing business (raya) or the one you’re about to create (raya) into a perfectly organized model for thousands more just like it.
-    cap_13 L41 (103 caracteres): Your Business Development Program is the vehicle through which you can create your Franchise Prototype.
+**Las madres del grafo que busque por asunto y el barrido no levanta**, leidas con sus pasos y descartadas: Scott
+`pasear_organizacion_hallar_problemas_pequenios` (la hora semanal de paseo del jefe de jefes) contra `recorrer`; Scott
+`repartir_decision_cercanos_hechos` (su paso `7`, *mira a la sala, no al que habla*) contra `observar`; Zhuo
+`comunicar_valores_diez_formas` (*decirlo de diez formas distintas*) contra `repetir_mensaje` (*No cambies el mensaje*); Scott
+`ceder_autoridad_unilateral_equipo` contra `ceder_control`; Grove `decidir_nivel_competente_inferior` contra el ejercicio de `cap_06`.
+**Dos doctrinas legitimas en cada par, con procedimiento propio en los dos lados, y ninguna es la condicion de la otra**: sin linea,
+porque no los levanta el barrido, y sin arista, porque no son madre e hijo. **El de mas peso es el de Zhuo con `repetir_mensaje`**: no
+lo leo contradiccion (Zhuo varia la forma y la via; Marquet no cambia el contenido), y lo dejo escrito por si alguien lo lee frontera.
 
-Y los pasos de sus cuatro nodos, por `pasos_ciego.py` (`R6`), que hoy los encuentra en el grafo:
+## 6. **LAS ARISTAS POR LECTURA** (`D.29`, `D.37`, `D.53`)
 
-    $ python .v67aud/normal/pasos_ciego.py construir_estrategia_gente_cuatro_componentes aplicar_cinco_pasos_proceso_contratacion fingir_prototipo_cinco_mil_replicas recorrer_siete_pasos_programa_desarrollo_negocio
-    ===== construir_estrategia_gente_cuatro_componentes | grafo
-      titulo: Construir tu Your People Strategy con los cuatro componentes que el libro nombra uno a uno
-      fuente: ['gerber_emyth']
-      cond: Cuando ya tienes tu Primary Aim y tu Strategic Objective escritos y tu Organizational Strategy construida, y necesitas comunicarle esa idea a tu gente para que compre el juego que le propones.
-      P1. Entiende que tu Your People Strategy es la forma en que le comunicas a tu gente la idea de tu negocio.
-      P2. Arranca con tu Primary Aim.
-      P3. Sigue con tu Strategic Objective.
-      P4. Construye tu Organizational Strategy: tu Organization Chart y los Position Contracts de todas las posiciones que contiene.
-      P5. Escribe tus Operations Manuals, que son los que definen el trabajo que hace tu gente.
-    ===== aplicar_cinco_pasos_proceso_contratacion | grafo
-      titulo: Aplicar los cinco componentes del proceso de contratacion que el libro enumera para comunicar tu idea desde el primer dia
-      fuente: ['gerber_emyth']
-      cond: Cuando vas a contratar gente nueva y quieres que el proceso mismo, desde la primera reunion hasta el primer dia de entrenamiento, sea el primer medio con el que le comunicas la idea de tu negocio.
-      P1. Disena una presentacion guionizada que comunique la idea de tu negocio en una reunion grupal a todos los aspirantes al mismo tiempo, describiendo la idea, la historia y la experiencia del negocio implementandola, y los atributos que exige el puesto.
-      P2. Reunete con cada aspirante de forma individual para hablar de sus reacciones y sentimientos sobre la idea, su trasfondo y su experiencia, y pregunta por que se cree apropiado para el papel que el puesto juega en implementar esa idea.
-      P3. Notifica por telefono al candidato elegido, otra vez con una presentacion guionizada.
-      P4. Notifica a los aspirantes no elegidos agradeciendo su interes, con una carta estandar firmada por quien entrevisto.
-      P5. Dedica el primer dia de entrenamiento a las siguientes actividades, tanto para ti como para el nuevo empleado.
-      P6. Revisa con el la idea del negocio.
-      P7. Resume el sistema con el que todo el negocio hace realidad esa idea.
-      P8. Llevalo de recorrido por las instalaciones, resaltando a la gente trabajando y los sistemas funcionando para mostrar la interdependencia entre los sistemas y la gente.
-      P9. Responde clara y completamente todas sus preguntas.
-      P10. Entregale su uniforme y su Manual de Operaciones.
-      P11. Revisa con el su Manual de Operaciones, incluyendo el Objetivo Estrategico, la Organizational Strategy y el Position Contract de su propio puesto.
-      P12. Completa con el los papeles de empleo.
-    ===== fingir_prototipo_cinco_mil_replicas | grafo
-      titulo: Fingir que tu negocio es el prototipo de 5.000 iguales, y jugar con las seis reglas que el libro pone para ganar
-      fuente: ['gerber_emyth']
-      cond: Cuando quieres dejar de trabajar dentro de tu negocio y ponerte a trabajar sobre el, y necesitas el modelo con el que se hace.
-      P1. Finge que el negocio que tienes, o que quieres tener, es el prototipo de otros 5.000 iguales, y que va a servir de modelo para esos 5.000.
-      P2. Entiende iguales como el texto lo entiende: no casi iguales, sino iguales; replicas perfectas, clones.
-      P3. Dicho de otro modo, finge que vas a franquiciar tu negocio, y quedate con que el texto dice fingir y no dice que debas hacerlo.
-      P4. Juega entonces con las reglas que el texto pone para ganar el juego de la franquicia, que son seis y estan enumeradas a continuacion.
-      P5. Regla 1: el modelo dara valor constante a tus clientes, empleados, proveedores y prestamistas, por encima de lo que esperan.
-      P6. Regla 2: el modelo lo operara gente con el nivel de destreza mas bajo posible.
-      P7. Regla 3: el modelo destacara como un sitio de orden impecable.
-      P8. Regla 4: todo el trabajo del modelo estara documentado en Manuales de Operaciones.
-      P9. Regla 5: el modelo dara al cliente un servicio uniformemente predecible.
-      P10. Regla 6: el modelo usara un codigo uniforme de color, vestuario e instalaciones.
-      P11. Recorre las seis reglas una a una, que es lo que el texto hace justo despues de enumerarlas.
-    ===== recorrer_siete_pasos_programa_desarrollo_negocio | grafo
-      titulo: Recorrer los siete pasos del Business Development Program, empezando por tu Primary Aim
-      fuente: ['gerber_emyth']
-      cond: Cuando ya finges que tu negocio es el prototipo de 5.000 replicas y necesitas el programa paso a paso con el que conviertes ese negocio, el que tienes o el que vas a crear, en un modelo organizado.
-      P1. Entiende tu Business Development Program como el proceso paso a paso con el que conviertes tu negocio actual, o el que vas a crear, en un modelo perfectamente organizado para miles de replicas iguales.
-      P2. Usalo tambien como el vehiculo con el que construyes tu Franchise Prototype.
-      P3. Recorre el programa en sus siete pasos distintos, en este orden.
-      P4. Paso 1: Your Primary Aim.
-      P5. Paso 2: Your Strategic Objective.
-      P6. Paso 3: Your Organizational Strategy.
-      P7. Paso 4: Your Management Strategy.
-      P8. Paso 5: Your People Strategy.
-      P9. Paso 6: Your Marketing Strategy.
-      P10. Paso 7: Your Systems Strategy.
+**Las que mi lectura sostiene o descarta**, una fila cada una en `.v78aud/aristas_lectura.tsv`, con su tramo de madre, de hijo y su
+linea del libro, **escritas antes de que cerrara la primera ficha del barrido** (seccion `5`), **mirando tambien madres que viven en el
+grafo** (la busqueda por asunto, abajo). El cruce dice si el barrido levanto el par y donde vive hoy cada extremo:
 
-**LECTURA, UNA POR UNA, Y LAS DOS LAS MANTENGO:**
+    $ python .v78aud/cruce_aristas.py
+    SOSTENGO D.29  observar_reunion_rutinaria_senales_plantilla       (bandeja) > seguir_frustrado_preguntar_implantacion_ideas          (bandeja) | levantado por el barrido: no
+    DESCARTO D.29, DUDA informar_cierre_jornada_conservar_propiedad_trabajo (bandeja) > eliminar_seguimiento_descendente_responsabilizar_dueno (bandeja) | levantado por el barrido: no
+    DESCARTO D.29, DUDA recorrer_organizacion_escuchar_plantilla           (bandeja) > contar_firmas_cadena_tramite_parado                    (bandeja) | levantado por el barrido: no
+    DESCARTO D.29, DUDA encargar_meta_especifica_dejar_libre_metodo        (bandeja) > cambiar_forma_trabajar_conservar_plantilla             (bandeja) | levantado por el barrido: SI
+    DESCARTO D.29, DUDA aplicar_ejercicio_codigo_genetico_control          (bandeja) > identificar_temas_formacion_tarjetas_decision          (bandeja) | levantado por el barrido: no
+    DESCARTO D.37  ceder_control_reforzar_competencia_claridad        (bandeja) > NINGUNO (competencia tecnica y claridad organizativa)  (NINGUNA) | levantado por el barrido: no
+    filas: 6 | por lo que queda: {'SOSTENGO': 1, 'DESCARTO': 5} | suma: 6
+    filas con DUDA escrita: 4 de 6
+    por el barrido: {'no levantada': 5, 'levantada': 1} | suma: 6
 
-- **`construir_estrategia_gente_cuatro_componentes` madre de `aplicar_cinco_pasos_proceso_contratacion`, `CONTINUA`: MANTENGO.** Lo
-  que el hijo anade a la madre (`6.1`, con direccion): la madre define la estrategia como **la forma de comunicar la idea** (su paso `1`,
-  `L117`) y **compone** el Primary Aim, el Objetivo Estrategico, la Organizational Strategy con sus Position Contracts y los Operations
-  Manuals (pasos `2` a `5`, `L119`); el hijo es **el primer medio de comunicarla** (su condicion, con las palabras de `L245`) y **usa
-  el producto de la madre**: sus pasos `10` y `11` entregan el Manual de Operaciones y lo repasan *incluyendo el Objetivo Estrategico, la
-  Organizational Strategy y el Position Contract de su propio puesto* (`L267` y `L269`), que es lo que la madre escribio en sus pasos
-  `3` a `5`. **El libro los encadena con palabras**: `L245` abre la contratacion como medio de la idea que `L117` define, y `L247`
-  abre la lista de sus componentes. **Procedimiento en los dos lados fuera del solape, sin bascula**: la madre compone documentos; el hijo
-  presenta, entrevista, notifica y recibe (pasos `1` a `12`), y **no repite ningun paso de la madre**, asi que no es `REPITE`. **Lo que
-  la madre no hace es nombrar al hijo**, y esa es la razon del `SANO` que `D76.15` escribio (`ACTA 75` `75.4`); **nombrar es la vara de
-  la expansion, no la de la continuacion**, y la pregunta de `6.1` es la otra: que anade el hijo a lo que la madre deja hecho.
-- **`fingir_prototipo_cinco_mil_replicas` madre de `recorrer_siete_pasos_programa_desarrollo_negocio`, arista por lectura `D.29`:
-  MANTENGO.** La condicion del hijo es **el producto de la madre con sus palabras** (*Cuando ya finges que tu negocio es el prototipo
-  de 5.000 replicas*, que es el paso `1` de la madre, `cap_11` `L35`); su paso `2` hace del programa **el vehiculo** con el que se
-  construye ese prototipo (`cap_13` `L41`), y `cap_13` `L21` abre el capitulo **con la tarea que deja `cap_11`** (*Now you understand
-  the task ahead*). **El hijo anade** el programa de siete pasos que la madre no trae; la madre pone el fingimiento y las seis reglas.
-  **El barrido no levanta el par en ningun sentido** (`ACTA 75` `75.4`), y por eso va por `D.29` y no por linea. **No es `D.37`**: la
-  madre no enumera los siete pasos ni el hijo es una de sus seis reglas.
+**La busqueda por asunto**, por id y titulo sobre grafo mas bandejas:
 
-**Y LO QUE ESTA RELECTURA NO PUEDE DECIR:** con que clase entro la linea del par de la contratacion en la bitacora, y que razon
-escribio el extractor en la conjunta. **La arista vive** (seccion `4`), y eso es compatible con mi `CONTINUA` y con un `SANO` con arista
-por lectura; lo decido con su reporte y su linea delante, en mi turno normal.
+    $ python .v78aud/temas.py | grep -v "^    "
+    poblacion: 479 | por sede: grafo 459, bandeja 20 | suma: 479
+    delegar decisiones y autoridad: 28
+    control: 5
+    intencion y permiso: 5
+    recorrer, caminar, escuchar: 22
+    reunion: 58
+    inspectores, auditores, inspeccion: 7
+    formacion, entrenamiento, aprendizaje: 21
+    principios y valores: 11
+    mensaje y repeticion: 4
+    seguimiento y pendientes: 10
+    cierre de jornada, reporte, informar: 8
+    meta, objetivo, metodo: 20
+    premios, reconocimiento, elogio: 18
+    errores y accion deliberada: 6
+    solucion y urgencia: 4
+    plantilla, despedir, rotacion, contratar: 27
+    frustracion, ideas, iniciativa: 11
+    firmas, tramite, burocracia: 2
+    informacion y su reparto: 10
+    responsable, a cargo, dueno: 17
+    liderazgo y lider: 2
+    tarjetas y retiro: 10
 
-## 6. **`R8` MEDIDO SOBRE MI ENCARGO DE LA `77`, CON EL MISMO INSTRUMENTO** (`ACTA 75` `75.11`, `75.12`)
+(La salida entera, un id por linea con su sede y su libro, en `.v78aud/temas.txt`.)
+
+**LECTURA:**
+
+- **MI UNICO `SOSTENGO` ES `observar_reunion_rutinaria_senales_plantilla` A `seguir_frustrado_preguntar_implantacion_ideas`, POR
+  `D.29`**, citando el paso `7` de la madre (`cap_03` L21 y L23), con veredicto de la lectura `CONTINUA` (seccion `5`). El barrido no la
+  levanta en ningun sentido: **es arista por lectura, no linea** (`D.53`). **El asunto de `cc46a0da` dice *1 arista por lectura***:
+  coincide en la cuenta, y **si no es la misma, difiere de la mia en el par**; lo cruzo par a par en mi turno normal.
+- **CUATRO `D.29` DESCARTADAS CON DUDA ESCRITA**, las cuatro por la misma razon: el libro las pone una detras de otra o por analogia,
+  pero el hijo no usa el producto de la madre. **`informar_cierre` a `eliminar_seguimiento`** (`cap_09` L43: el tickler se suprime
+  *modelado* sobre el cierre de jornada); **`recorrer` a `contar_firmas`** (el paseo es la ocasion, `cap_03` L37); **`encargar_meta` a
+  `cambiar_forma`** (la consecuencia de `cap_02` L49 es el reto de L29; este par el barrido si lo levanta, y es su linea `SANO`); y
+  **`aplicar_ejercicio` a `identificar_temas_formacion`** (dos ejercicios hermanos de tarjetas; el segundo ataca la preocupacion de
+  competencia que `cap_06` L113 nombra, pero sin usar las tarjetas del primero).
+- **`D.37` NO DISPARA EN ESTA TANDA.** La unica ficha cuyo texto cuenta partes y las nombra es `ceder_control_reforzar_competencia_claridad`
+  (su paso `5`, *las dos cosas*: competencia tecnica y claridad organizativa, `cap_01` L97), y **ninguna de las dos partes existe como
+  nodo**: los mecanismos de la bandeja que el libro pone bajo cada pilar son ejemplares del pilar, no el pilar (`D68.7`; la `76` leyo
+  asi los tres tipos de sistemas de Gerber). Las listas del libro que si cuentan o enumeran (las frases de `cap_07`, los tres casos de
+  urgencia de `cap_08`, los pasos de los dos ejercicios) **son los propios pasos de su ficha**, y ninguna parte vive como nodo aparte.
+- **Ninguna madre del grafo para las `20`**, por mi lectura (seccion `5`, ultimo parrafo).
+
+## 7. **EL ORDEN QUE MI LECTURA OBLIGA** (`D.36`)
+
+**No es un orden: son las restricciones**, escritas antes de ver el del extractor. Madre antes que hijo por mis `CONTINUA` y mis
+`SOSTENGO` con los dos extremos en la tanda, y cuantas cumple el orden de pieza del libro, **que saco de mi fidelidad** (capitulo y
+primera linea), porque `.v78aud/las20.txt` va alfabetica:
+
+    $ python .v78aud/restricciones_orden.py
+    orden de pieza del libro (capitulo y primera linea de mi fidelidad): 20
+       1 cap_01 L97 ceder_control_reforzar_competencia_claridad
+       2 cap_02 L25 cambiar_forma_trabajar_conservar_plantilla
+       3 cap_02 L33 encargar_meta_especifica_dejar_libre_metodo
+       4 cap_03 L11 recorrer_organizacion_escuchar_plantilla
+       5 cap_03 L17 observar_reunion_rutinaria_senales_plantilla
+       6 cap_03 L23 seguir_frustrado_preguntar_implantacion_ideas
+       7 cap_03 L37 contar_firmas_cadena_tramite_parado
+       8 cap_03 L45 inspeccionar_reparto_informacion_notas_jefe
+       9 cap_03 L55 auditar_formacion_premios_ultima_fila
+      10 cap_04 L35 informar_cierre_jornada_conservar_propiedad_trabajo
+      11 cap_06 L101 aplicar_ejercicio_codigo_genetico_control
+      12 cap_06 L127 asignar_responsable_unico_evolucion_planificada
+      13 cap_07 L55 declarar_intencion_reemplazar_peticion_permiso
+      14 cap_08 L107 resistir_dar_solucion_clasificar_decision_urgencia
+      15 cap_09 L71 eliminar_seguimiento_descendente_responsabilizar_dueno
+      16 cap_10 L45 acoger_inspectores_externos_fuente_aprendizaje
+      17 cap_11 L75 tomar_accion_deliberada_pausar_vocalizar_gesticular
+      18 cap_12 L125 identificar_temas_formacion_tarjetas_decision
+      19 cap_13 L119 repetir_mensaje_invariable_diario_reunion_evento
+      20 cap_14 L89 reforzar_principios_guia_lenguaje_prueba_conocimiento
+    restricciones: 7
+      observar_reunion_rutinaria_senales_plantilla               antes que seguir_frustrado_preguntar_implantacion_ideas                arista por lectura     el orden del libro la cumple
+      seguir_frustrado_preguntar_implantacion_ideas              antes que acoger_inspectores_externos_fuente_aprendizaje               D.36, solo lo levanta acoger_inspectores_externos_fuente_aprendizaje el orden del libro la cumple
+      recorrer_organizacion_escuchar_plantilla                   antes que acoger_inspectores_externos_fuente_aprendizaje               D.36, solo lo levanta acoger_inspectores_externos_fuente_aprendizaje el orden del libro la cumple
+      recorrer_organizacion_escuchar_plantilla                   antes que auditar_formacion_premios_ultima_fila                        D.36, solo lo levanta auditar_formacion_premios_ultima_fila el orden del libro la cumple
+      informar_cierre_jornada_conservar_propiedad_trabajo        antes que declarar_intencion_reemplazar_peticion_permiso               D.36, solo lo levanta declarar_intencion_reemplazar_peticion_permiso el orden del libro la cumple
+      reforzar_principios_guia_lenguaje_prueba_conocimiento      antes que declarar_intencion_reemplazar_peticion_permiso               D.36, solo lo levanta declarar_intencion_reemplazar_peticion_permiso EL ORDEN DEL LIBRO LA VIOLA
+      inspeccionar_reparto_informacion_notas_jefe                antes que recorrer_organizacion_escuchar_plantilla                     D.36, solo lo levanta recorrer_organizacion_escuchar_plantilla EL ORDEN DEL LIBRO LA VIOLA
+    que obligan (madre antes que hijo): 1 | violadas por el orden del libro: 0
+    D.36 de un solo lado, informativas: 6
+    $ python .v78aud/restricciones_orden.py | grep -c "LA VIOLA"
+    2
+
+**LECTURA:** **la unica que obliga** (`observar` antes que `seguir`, por la arista de la seccion `6`) **la cumple ya el orden de pieza
+del libro**. De las `6` de `D.36` de un solo lado, **dos no las cumple** (`reforzar_principios_guia_lenguaje_prueba_conocimiento` antes
+que `declarar_intencion_reemplazar_peticion_permiso`, e `inspeccionar_reparto_informacion_notas_jefe` antes que
+`recorrer_organizacion_escuchar_plantilla`); **son informativas y no obligan**, porque la aduana de `insertar` mide grafo mas bandejas
+(`D.38.5`) y el par se levanta igual desde el lado que entre despues. **Su orden, contra estas siete, lo compruebo en mi turno normal.**
+
+
+## 8. **`R8` MEDIDO SOBRE MI ENCARGO DE LA `78`, CON EL MISMO INSTRUMENTO** (`ACTA 76` `76.12` y `76.13`)
 
 `R8` dice: *toda cifra de medida que escriba en `PROMPT_SIGUIENTE.md` (un reloj, una banda, una cuenta que solo se comprueba abriendo
 un fichero, en digito o en letra) va DENTRO de un bloque `$` con su salida, o lleva EN SU MISMA LINEA la seccion del acta donde esta
-pegada: ni la de la linea de al lado, ni una ruta de fichero*. El fichero es el encargo que escribi al cerrar la `ACTA 75`, y el
-instrumento es el de la `75.12`, corrido sin copiarlo, con su salida de hoy contra la que guardo aquella acta:
+pegada: ni la de la linea de al lado, ni una ruta de fichero*. El fichero es el encargo que escribi al cerrar la `ACTA 76`, y el
+instrumento es el de la `76.13`, corrido sin copiarlo, con su salida de hoy contra la que guardo aquella acta:
 
     $ head -1 docs/loop/PROMPT_SIGUIENTE.md | cut -c1-100; ls -l --time-style=full-iso docs/loop/PROMPT_SIGUIENTE.md | awk '{print $6, $7, $9}'
-    # ENCARGO DE LA VUELTA 77: **LA RELECTURA CONJUNTA DE UN PAR Y UNA ARISTA, Y DESPUES LAS `22` FICHAS
-    2026-09-26 09:16:28.009805200 docs/loop/PROMPT_SIGUIENTE.md
-    $ python .v76aud/normal/r8_encargo77.py | diff - .v76aud/normal/r8_encargo77.txt && echo "IDENTICO a .v76aud/normal/r8_encargo77.txt, la salida de la ACTA 75 75.12"; python .v76aud/normal/r8_encargo77.py | tail -1
-    IDENTICO a .v76aud/normal/r8_encargo77.txt, la salida de la ACTA 75 75.12
-    lineas del encargo: {'linea de bloque sangrado': 45, 'prosa con numero, con seccion de la ACTA 75': 21, 'prosa con numero, sin seccion de la ACTA 75': 47, 'prosa sin digito ni palabra de numero': 61} | suma: 174
+    # ENCARGO DE LA VUELTA 78: **LAS FICHAS DE MARQUET DEJADAS LISTAS PARA INSERTAR: SU FIDELIDAD LEIDA
+    2026-09-26 13:19:12.123204000 docs/loop/PROMPT_SIGUIENTE.md
+    $ python .v77aud/normal/r8_encargo78.py | diff - .v77aud/normal/r8_encargo78.txt && echo "IDENTICO a .v77aud/normal/r8_encargo78.txt, la salida de la ACTA 76 76.13"; python .v77aud/normal/r8_encargo78.py | tail -1
+    IDENTICO a .v77aud/normal/r8_encargo78.txt, la salida de la ACTA 76 76.13
+    lineas del encargo: {'linea de bloque sangrado': 13, 'prosa con numero, con seccion de la ACTA 76': 14, 'prosa con numero, sin seccion de la ACTA 76': 57, 'prosa sin digito ni palabra de numero': 69} | suma: 153
 
-Las lineas de prosa con numero y **sin** seccion, cada una con los numeros que el instrumento le ve:
+(Cada linea con numero, con sus digitos y sus palabras de numero, en `.v77aud/normal/r8_encargo78.txt`.) **LECTURA, que es mia y no
+del instrumento: volvi a leer una a una las `57` lineas de prosa con numero sin seccion** (las de la salida de arriba, con sus numeros
+de linea en ese fichero) **y llego al mismo reparto que la `76.13`**: numeros de vuelta, de acta, de mundo, de fecha o de carpeta de la
+casa; secciones, reglas, deudas, remedios y numeros de tarea o de punto; identificadores de capitulo y de fichero; umbrales y topes de
+regla (*cinco a la vez como mucho*, el `10` por ciento); y palabras de numero que no son cuenta de fichero (*los dos delante*, *en
+cero*, *cero guiones*). **Las cifras de medida** van dentro de un bloque `$` (el reloj del barrido de la `76`, la clase, el tablero y el
+texto de `d150`, los cuatro que `R10` compara arriba) o llevan su seccion de la `ACTA 76` en la misma linea. **Ninguna cuenta de fichero
+suelta.**
 
-    $ python .v76aud/normal/r8_encargo77.py | grep -E "^  L[0-9]+ - " | sed -E 's/\] \|.*$/]/'
-      L3 - ['11', '75', '76'] []
-      L4 - ['1.4'] []
-      L14 - ['0'] []
-      L23 - ['22', '8'] []
-      L24 - ['3', '76'] []
-      L30 - ['75', '75'] []
-      L31 - ['76', '2', '77'] []
-      L32 - ['75'] []
-      L34 - ['78', '72', '75'] []
-      L42 - ['1', '75'] []
-      L44 - ['47'] []
-      L57 - ['64', '6.1'] ['dos']
-      L59 - ['1', '76.15'] []
-      L61 - ['77', '76'] []
-      L63 - ['1.3'] []
-      L64 - ['76'] []
-      L65 - ['2', '29'] []
-      L66 - ['77', '76'] []
-      L70 - ['76', '76'] []
-      L73 - ['3'] []
-      L75 - ['76', '76'] []
-      L117 - ['1', '1'] []
-      L118 - ['2'] []
-      L119 - ['2', '37', '29'] ['dos']
-      L120 - ['72'] []
-      L121 - ['53', '37'] []
-      L122 - ['2.2'] []
-      L125 - ['3', '031'] []
-      L126 - ['76', '75', '76'] []
-      L127 - ['6.1'] ['dos']
-      L129 - ['4', '75'] []
-      L130 - ['76', '31'] []
-      L131 - ['5', '111', '108', '111'] []
-      L135 - ['6', '2'] []
-      L136 - [] ['dos']
-      L139 - ['5'] []
-      L145 - ['76'] []
-      L147 - ['61'] []
-      L148 - ['5', '64', '64', '64'] []
-      L149 - ['77', '9'] []
-      L155 - ['77'] []
-      L162 - ['2'] []
-      L164 - ['2'] []
-      L165 - ['4.3'] []
-      L167 - ['7', '55'] []
-      L169 - ['111', '108', '4.5'] []
-      L173 - [] ['Cero', 'cero']
+**`R8` CUMPLIDO EN EL ENCARGO DE LA `78`, medido otra vez aqui.**
 
-**LECTURA, grupo a grupo, que es mia y no del instrumento; las volvi a leer una a una y no copio la de la `75.12`, aunque llego al
-mismo reparto:**
-
-- **Numeros de vuelta, de acta, de mundo o de carpeta de la casa**: `L3`, `L24`, `L30`, `L31`, `L32`, `L34`, `L42`, `L61`, `L64`,
-  `L66`, `L70`, `L75`, `L120`, `L126`, `L129`, `L130`, `L145`, `L148`, `L149`, `L155` (`77`, `76`, `75`, `78`, `72`, `11`, y
-  `.v64ext/`, `.v64aud/`, `.v72ext/`, `.v75ext/`, `.v76ext/` y `.v77ext/`).
-- **Secciones, reglas, deudas, remedios y numeros de tarea, de punto o de lista**: `L4`, `L14`, `L44`, `L57`, `L59`, `L63`, `L65`,
-  `L73`, `L117`, `L118`, `L119`, `L121`, `L122`, `L125`, `L127`, `L131`, `L135`, `L139`, `L147`, `L148`, `L162`, `L164`, `L165`,
-  `L167`, `L169` (`1.4`, `1.3`, `6.1`, `2.2`, `4.3`, `4.5`, `D.29`, `D.31`, `D.37`, `D.47`, `D.53`, `D.55`, `D.61`, `D76.15`, `7.F`,
-  `d031`, `d108`, `d111`, `R5`, `R9`, y los numeros de tarea, de punto y de fila).
-- **Identificadores de capitulo o de punto de otro documento**: `cap_22` y el `8` punto `3` de `PARALELO.md` en `L23`.
-- **Palabras de numero sin seccion**: *las dos piezas* (`L57`, los dos puntos numerados que siguen), *los dos extremos* (`L119`, los de
-  una arista), *los dos delante* (`L127`, los dos nodos de un par), *por los dos lados* (`L136`, los dos extremos de una arista) y
-  *cero guiones* (`L173`, la frase fija). **Ninguna es una cuenta de fichero.**
-
-**LAS CUENTAS EN LETRA**, que el instrumento ve por palabra y que busco tambien con un `grep` mas ancho:
-
-    $ grep -n -i -w -E "uno|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|once|doce|veinte|treinta|cero|mil|cien|ambas|ambos" docs/loop/PROMPT_SIGUIENTE.md | cut -c1-120
-    52:| **El auditor**: su tanda sale limpia y `AUDITOR` vuelve a cero; cuatro lecturas de su fase ciega caen, sin especie
-    56:**El caso del auditor esta escrito en la `ACTA 75` `75.4`, con su evidencia. Tu lo verificas con los pasos de los dos
-    57:(`python .v64aud/pasos.py <a> <b>`) y decides por la vara `6.1`, y solo esa.** Las dos piezas:
-    60:   `SANO` contra el `CONTINUA` del auditor con madre `construir`. **Si te convence**, las dos lineas del par (`75.4`)
-    69:**Ninguna de las dos mueve el orden** (`ACTA 75` `75.4`): se decida lo que se decida, la madre va antes que el hijo e
-    113:      CONTINUA con madre= (aristas distintas): 2 | SOSTENGO por lectura: 6 | solapes entre las dos: 0 | aristas espe
-    119:2. **Las aristas por lectura se declaran EN EL ACTO DE INSERTAR LA PARTE** (`D.37`, `D.29`), con los dos extremos ya
-    123:   hijo** (`75.4`): las cuatro de `fingir` al entrar `dar_valor`, `operar_modelo`, `unificar_color` y `documentar_tr
-    125:3. **La puerta es la aduana de `insertar`, no la lista** (`d031`). **Al volver cada uno, su vecindad de hoy contra l
-    127:   sin linea, lo lees con los pasos de los dos delante, escribes su veredicto por la vara `6.1` y solo esa, **y lo m
-    132:   `--como` citando la `ACTA 75` `75.4` (*la cabeza entra con una parte de siete*); `d108` con la lectura de tu `76.
-    136:   en el grafo por los dos lados, ninguna sin adjudicar, y que ningun nodo viejo cambio fuera del `nodos_siguientes`
-    146:  corregidos en la bandeja, que la `ACTA 75` `75.3` firmo en cero que entran. No a ojo.
-    163:- **NO CORRIGES NINGUN NODO DEL GRAFO.** Si una lectura de vecino te enseña un defecto en uno, lo traes al reporte
-    173:**Cero guiones largos y cero guiones medios. Deja correr el hook. Si algo contradice una regla vigente, paras y lo t
-
-**LECTURA, linea a linea:** `L113` esta **dentro de un bloque `$`**; `L52` (*cuatro lecturas*), `L60` (*las dos lineas del par*),
-`L69` (*ninguna de las dos*), `L123` (*las cuatro de `fingir`*), `L132` (*una parte de siete*) y `L146` (*en cero que entran*) llevan en
-su misma linea su seccion de la `ACTA 75` (`75.9`, `75.4` y `75.3`); `L56` (*los dos delante*) lleva `75.4`; `L57` (*las dos piezas*)
-son los dos puntos numerados que la siguen; `L119`, `L127` y `L136` son los dos extremos de una arista o los dos nodos de un par;
-`L125` (*al volver cada uno*) es **una manera**, no una cuenta; `L163` (*en uno*) es un articulo; y `L173` (*cero guiones*) es **la meta
-de la frase fija de cierre**. **Ninguna linea de prosa trae una cifra de medida sin su bloque o su seccion en la misma linea: `R8`
-CUMPLIDO en el encargo de la `77`.**
-
-## 7. **LO QUE DEJO PARA MI TURNO NORMAL, ESCRITO ANTES DE VER EL REPORTE**
+## 9. **LO QUE DEJO PARA MI TURNO NORMAL, ESCRITO ANTES DE VER EL REPORTE**
 
 1. **`R5`** en su reporte, con `.v64ext/pegado64.py` y `.v64aud/normal/bloques_mudos.py` sacados otra vez de los originales y con la
-   cabecera cambiada a la `77`; y **`R9`** en su reporte, donde marque fidelidad sobre algo que la aduana levante en el acto, **contra
-   el mio de la seccion `3`**.
-2. **La conjunta** (TAREA `2`): su decision y su razon en las dos piezas, contra mi lectura de la seccion `5`; las lineas del par de la
-   contratacion **en la bitacora**, con su clase y su `madre=`; la fila `SOSTENGO` o `NO SOSTENGO` de `fingir` a `recorrer`; y que el
-   commit de la tarea sea anterior al primer `insertar`.
-3. **Las lineas nuevas de la bitacora, una a una** (seccion `4`): las de veredicto contra las de `.v76ext/veredictos_listos.txt` o su
-   copia corregida y contra mis clases selladas, **par a par contra las filas de mi barrido**; y las de arista por lectura, con su paso de
-   madre.
-4. **Que cada `insertar` volvio con su `.fin` en `0`, en el orden de `.v76ext/orden.txt`, uno por vez y sin solaparse**, y que **ninguna
-   aduana levanto un vecino fuera de mi barrido**.
-5. **La muestra pineada de los `SANO`** que la `77` escribio en la bitacora, **con semilla `77`**, el tamanio de la seccion `7` de
-   `AUDITOR_FORJA.md` y su banda, releida contra mis clases selladas, que es lo que la `ACTA 75` `75.5` dejo para la `ACTA 76`.
-6. **Las aristas par a par y por los dos lados, con sus ids**, contra las `10` de la seccion `4`, que aqui solo medi en cuentas (`R6`).
-7. **Los pagos de `d111` y `d108`**: lo que dice cada `--como`, contra la `ACTA 75` `75.4`, para firmarlos o no.
-8. **El censo con `git diff`, las guardas y el cierre estricto**, que tallara esta pagina: no tiene tablas, asi que un rojo en el suyo
-   sera suyo. Y el coste de su turno (bloque de la cabecera) contra su clase (`D.55`).
-9. **`R8`** sobre el encargo de la `78`, medido antes de cerrarlo, con las cuentas en letra incluidas; y **`R10`** en la `ACTA 76`.
+   cabecera cambiada a la `78`; **y `R9`** en su cuenta de PUENTE, con su patron contra el mio.
+2. **El censo con su hash**: que la vuelta no movio el grafo, la bitacora, los censos ni la bandeja de Gerber, y que en la de Marquet
+   solo cambiaron las `2` fichas corregidas, **con `git diff`**; y quien escribio que y a que hora.
+3. **Mi fidelidad contra la suya, paso a paso**: mis `110` filas contra las suyas; sus tres correcciones contra mi lectura de sus textos
+   viejos (seccion `3`); **mis dos dudas de `cap_03`**, que son su misma figura; y **`d150`**, su fila de `cap_03` contra la mia.
+4. **Mi barrido contra el suyo, fila dirigida a fila dirigida**, y **mis clases contra sus lineas de veredicto, par a par**, con **mi
+   `CONTINUA` de la seccion `5`, que es arista por lectura, contra su *1 arista por lectura***, **por par y no por cuenta**, y mis
+   cuatro `D.29` descartadas con duda contra lo que el lea (secciones `4` a `6`).
+5. **Su orden contra mis restricciones** (seccion `7`).
+6. **La huella de las `20` fichas** que su cierre dice sellar, contra las mias de `.v78aud/huellas_al_barrer.txt`, tomadas antes de
+   barrer y comprobadas al recogerlo.
+7. **La muestra pineada de los SANO**: esta vuelta no escribe en la bitacora; los `SANO` de las `20` se muestrean cuando entren.
+8. **`R8` sobre el encargo de la `79`**, medido antes de cerrarlo, y **`R10`**: toda salida que pegue en el encargo, corrida despues de
+   mi ultima escritura en el registro que mide, o vuelta a correr antes del commit y comparada. **La `79` es de saneamiento por
+   cadencia** (`ACTA 76` `76.11`), y la insercion de Marquet cae despues.
 
-## 8. **ESTA PAGINA CONTRA `R6`, `R7` Y LOS GUIONES, MEDIDA SOBRE ELLA MISMA**
+## 10. **ESTA PAGINA CONTRA `R6`, `R7` Y LOS GUIONES, MEDIDA SOBRE ELLA MISMA**
 
 El generador corre dos veces, y estos bloques de la segunda pasada leen la pagina que escribio la primera, identica salvo estos
 bloques. El primero cuenta las lineas de bloque `$` que empiezan por una clave de relacion; el segundo, con la copia de
@@ -666,7 +745,7 @@ guiones largos y medios:
 
     $ grep -c -E "^    +(previos|siguientes|nodos_previos|nodos_siguientes)" docs/loop/APERTURA_CIEGA.md
     0
-    $ python .v77aud/r7_pagina.py
-    lineas de bloque que reparten en clases: 44 | por estado: {'con suma': 44} | suma: 44
+    $ python .v78aud/r7_pagina.py
+    lineas de bloque que reparten en clases: 15 | por estado: {'con suma': 15} | suma: 15
     $ grep -c -P "\x{2014}|\x{2013}" docs/loop/APERTURA_CIEGA.md
     0
