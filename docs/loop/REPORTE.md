@@ -66371,3 +66371,24 @@ La aduana de hoy: **BLOQUEARIA** con `3` vecino(s) contra `479`; lineas `--vered
     hoy 3 vecinos, barrido de la 76 3 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (447 grafo, 32 bandejas), en la 76 479 (437, 42)
 
 **Los tres vecinos son los de su bloque y las tres lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `76`, las tres seniales al digito; la poblacion, `479` (`447` mas `32`). Sin aristas en esta fila. Bitacora de `1141` a `1144`, sus tres lineas SANO.
+
+### Fila `12`: `cuantificar_impacto_innovacion_6_pasos`, **INSERTADO** en `471.6` s, codigo `0`, commit `1470dbda`
+
+La aduana de hoy: **BLOQUEARIA** con `5` vecino(s) contra `479`; lineas `--veredicto` pasadas: `5`. Salida entera en `.v77ext/insertar_12_cuantificar_impacto_innovacion_6_pasos.txt`.
+
+<!-- TALLADO: parcial salida=.v77ext/insertar_12_cuantificar_impacto_innovacion_6_pasos.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `dictar_ritmo_crecimiento_preguntas_escritas` | similitud_texto | 0.412 | 0.000 | 0.528 | SANO |
+| `responder_primer_aviso_renuncia_subordinado` | similitud_texto | 0.371 | 0.000 | 0.464 | SANO |
+| `cambiar_saludo_cliente_dos_ramas` | similitud_texto | 0.435 | 0.000 | 0.366 | CONTINUA |
+| `pedir_critica_anonima_curso_entrenamiento_dictado` | similitud_texto | 0.357 | 0.000 | 0.391 | SANO |
+| `entregar_evaluacion_desempeno_tres_claves` | similitud_texto | 0.366 | 0.000 | 0.382 | SANO |
+
+**Arista cableada por la aduana en el acto**: `cambiar_saludo_cliente_dos_ramas > cuantificar_impacto_innovacion_6_pasos`
+
+    $ python .v77ext/contra_barrido.py 12 cuantificar_impacto_innovacion_6_pasos
+    hoy 5 vecinos, barrido de la 76 5 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (448 grafo, 31 bandejas), en la 76 479 (437, 42)
+
+**Los cinco vecinos son los de su bloque y las cinco lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `76`, las tres seniales al digito; la poblacion, `479` (`448` mas `31`). **La aduana cablea en el acto la arista `cambiar_saludo_cliente_dos_ramas > cuantificar_impacto_innovacion_6_pasos`**, la que la fila `10` dejo en cola: **cuarta de las `10` aristas esperadas en el grafo.** Bitacora de `1144` a `1149`.
