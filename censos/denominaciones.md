@@ -1156,3 +1156,5 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-26 | gestionar_retencion_subordinado_valioso_renuncia | otro_idioma | I Quit! | ingles | - |
 | 2026-09-26 | reciclar_empleado_ascendido_mas_alla_capacidad | nombre_largo | El reciclaje del empleado promovido por encima de su capacidad, devolviendolo abiertamente al puesto que desempeñaba bien antes del ascenso | castellano | - |
 | 2026-09-26 | reciclar_empleado_ascendido_mas_alla_capacidad | otro_idioma | recycle him | ingles | - |
+| 2026-09-26 | priorizar_lista_entrenamiento_subordinados | nombre_largo | El listado y la priorizacion de los temas de entrenamiento antes de desarrollar ningun curso | castellano | - |
+| 2026-09-26 | priorizar_lista_entrenamiento_subordinados | otro_idioma | embrace the gospel of training | ingles | - |
