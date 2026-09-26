@@ -1102,3 +1102,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-25 | fijar_horizonte_ventana_replanificacion | nombre_largo | Hasta donde miran los planificadores y que parte del plan se implementa: la ventana entre ahora y la proxima vez que se hace el ejercicio, y la cadencia que deja llegar la retroalimentacion | castellano | - |
 | 2026-09-25 | fijar_horizonte_ventana_replanificacion | otro_idioma | long-range planning | ingles | - |
 | 2026-09-25 | fijar_horizonte_ventana_replanificacion | otro_idioma | time window | ingles | - |
+| 2026-09-25 | definir_entorno_grupo_clientes_proveedores_competidores | nombre_largo | El paso 1 de la planificacion, la demanda del entorno, resuelto por su pregunta previa: que es exactamente tu entorno, y de que tres clases de grupo esta hecho | castellano | - |
+| 2026-09-25 | definir_entorno_grupo_clientes_proveedores_competidores | otro_idioma | environmental demand | ingles | - |
+| 2026-09-25 | definir_entorno_grupo_clientes_proveedores_competidores | otro_idioma | stand-alone company | ingles | - |
