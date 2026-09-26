@@ -1246,3 +1246,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-26 | encargar_meta_especifica_dejar_libre_metodo | nombre_largo | Lo que el texto senala como buen liderazgo en el encargo que recibio: una meta especifica, ningun metodo impuesto, y los mismos recursos de siempre | castellano | - |
 | 2026-09-26 | encargar_meta_especifica_dejar_libre_metodo | otro_idioma | specific goal | ingles | - |
 | 2026-09-26 | encargar_meta_especifica_dejar_libre_metodo | otro_idioma | micromanage | ingles | - |
+| 2026-09-26 | observar_reunion_rutinaria_senales_plantilla | nombre_largo | Las seis senales que el texto lee en una reunion de repaso a la que asiste como observador: quien llega tarde, el jefe que espera fuera, la reunion que empieza tarde, cada uno esperando a otro, el ponente a la defensiva y los demas aburridos | castellano | - |
+| 2026-09-26 | observar_reunion_rutinaria_senales_plantilla | otro_idioma | department head meeting | ingles | - |
+| 2026-09-26 | observar_reunion_rutinaria_senales_plantilla | otro_idioma | lack of punctuality | ingles | - |
