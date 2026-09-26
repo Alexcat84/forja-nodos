@@ -63133,3 +63133,38 @@ La aduana de hoy: **BLOQUEARIA** con `6` vecino(s) contra `479`; lineas `--vered
     hoy 6 vecinos, barrido de la 71 6 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (414 grafo, 65 bandejas), en la 71 479 (410, 69)
 
 **Los seis vecinos son los de su bloque y las seis lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `71`, las tres seniales al digito. **La `CONTINUA` con `madre=` la cablea la aduana en el acto** y la escribe `RESUELTA`, como marque en `D72.4`: `definir_entorno_grupo_clientes_proveedores_competidores > examinar_entorno_expectativas_tecnologia_proveedores_grupos`, primera de las `6` aristas esperadas.
+
+### Fila `6`: `examinar_demanda_entorno_dos_marcos_temporales`, **INSERTADO** en `442.9` s, codigo `0`, commit `8294b5a1`
+
+La aduana de hoy: **BLOQUEARIA** con `4` vecino(s) contra `479`; lineas `--veredicto` pasadas: `4`. Salida entera en `.v72ext/insertar_06_examinar_demanda_entorno_dos_marcos_temporales.txt`.
+
+<!-- TALLADO: parcial salida=.v72ext/insertar_06_examinar_demanda_entorno_dos_marcos_temporales.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `cerrar_brecha_dos_preguntas_estrategia` | similitud_texto | 0.412 | 0.100 | 0.483 | SANO |
+| `definir_entorno_grupo_clientes_proveedores_competidores` | similitud_texto | 0.392 | 0.091 | 0.426 | CONTINUA |
+| `determinar_estado_presente_capacidades_proyectos_merma` | similitud_texto | 0.371 | 0.000 | 0.404 | SANO |
+| `examinar_entorno_expectativas_tecnologia_proveedores_grupos` | similitud_texto | 0.377 | 0.200 | 0.391 | SANO |
+
+**Arista cableada por la aduana en el acto**: `definir_entorno_grupo_clientes_proveedores_competidores > examinar_demanda_entorno_dos_marcos_temporales`
+
+**Arista por lectura cableada con la madre ya en el grafo** (`D.37`, la de la `ACTA 70` `70.3`): `planificar_tres_pasos_demanda_estado_brecha > examinar_demanda_entorno_dos_marcos_temporales`, `--paso 2`, el que su fila (linea `9` de `.v71ext/aristas_lectura.txt`) cita. Salida entera en `.v72ext/arista_planificar_tres_pasos_demanda_estado_brecha__examinar_demanda_entorno_dos_marcos_temporales.txt`:
+
+    $ python forja.py arista --madre planificar_tres_pasos_demanda_estado_brecha --hijo examinar_demanda_entorno_dos_marcos_temporales --paso 2 --razon <fila 9> --veredicto CONTINUA --cita-veredicto <fila 9>
+    DECLARACION DE ARISTA POR LECTURA (D.37)
+      madre: planificar_tres_pasos_demanda_estado_brecha
+      hijo : examinar_demanda_entorno_dos_marcos_temporales
+      paso citado de la madre: 2
+        Da el paso 1 estableciendo la necesidad o demanda proyectada: que va a demandar de ti el entorno, de tu negocio o de tu organizacion.
+      señales del par: familia_id 0.091, paso_contra_nodo 0.425, similitud_texto 0.263
+        NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+    GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: planificar_tres_pasos_demanda_estado_brecha > examinar_demanda_entorno_dos_marcos_temporales
+      razon en bitacora/VEREDICTOS.jsonl
+
+
+    $ python .v72ext/contra_barrido.py 06 examinar_demanda_entorno_dos_marcos_temporales
+    hoy 4 vecinos, barrido de la 71 4 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (415 grafo, 64 bandejas), en la 71 479 (410, 69)
+
+**Los cuatro vecinos son los de su bloque y las cuatro lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `71`, las tres seniales al digito. **Las dos madres de la fila, cableadas**: la `CONTINUA` con `madre=` la cablea la aduana en el acto y la escribe `RESUELTA` (`D72.4`), y la de lectura la cableo yo con `.v72ext/arista.py` (bloque de arriba). Van `3` de las `6` aristas esperadas.
