@@ -1,0 +1,26 @@
+fila 19, preparar_resena_mixta_hoja_trabajo, lineas --veredicto: 1
+  --veredicto usar_banco_nueve_preguntas_entrevista|SANO|Ajenos del mismo libro: el vecino, de cap_15 y en la bandeja, es el banco de nueve preguntas de una entrevista de seleccion; este prepara una revision de desempeno mixta con la hoja de trabajo (cap_14 L129 a L131). La senial 1 casa la prosa de los dos sobre el subordinado y sus fracasos; ninguno usa el producto del otro.
+inicio 2026-09-26 00:55:24
+======================================================================
+ADUANA DE INSERCION, candidato 'preparar_resena_mixta_hoja_trabajo'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (428 del grafo mas 51 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino usar_banco_nueve_preguntas_entrevista  [Usar el banco de nueve preguntas que un grupo de mandos considero las mejores para entrevistar a un candidato]
+    levantada por: similitud_texto
+    similitud_texto    0.357 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.378 (umbral 0.60)
+    paso 3 del candidato contra paso 7 de usar_banco_nueve_preguntas_entrevista
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 429
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 1
+
+======================================================================
+fin 2026-09-26 01:02:51 | codigo de salida 0 | 447.5 s

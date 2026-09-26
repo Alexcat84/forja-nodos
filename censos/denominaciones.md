@@ -1144,3 +1144,5 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-26 | decidir_amistad_subordinado_prueba_revision_dificil | otro_idioma | a test | ingles | - |
 | 2026-09-26 | entregar_evaluacion_desempeno_tres_claves | nombre_largo | Las tres L que el autor pide tener en cuenta al entregar una revision de desempeno: Level (nivelar con franqueza), Listen (escuchar con toda la capacidad sensorial) y Leave yourself out (dejar fuera las propias emociones) | castellano | - |
 | 2026-09-26 | entregar_evaluacion_desempeno_tres_claves | otro_idioma | three L's: level, listen, and leave yourself out | ingles | - |
+| 2026-09-26 | preparar_resena_mixta_hoja_trabajo | nombre_largo | El metodo de la hoja de trabajo para preparar una revision del tipo por un lado y por otro, que mezcla lo positivo y lo negativo | castellano | - |
+| 2026-09-26 | preparar_resena_mixta_hoja_trabajo | otro_idioma | worksheet for performance review | ingles | - |
