@@ -1261,3 +1261,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-26 | recorrer_organizacion_escuchar_plantilla | nombre_largo | El primer paso del autor al preparar el mando: caminar y escuchar lo bueno, lo malo y lo feo de la gestion de arriba abajo, montar recorridos donde cada jefe ensena sus propios espacios, y pedir una linterna para inspeccionarlos | castellano | - |
 | 2026-09-26 | recorrer_organizacion_escuchar_plantilla | otro_idioma | walkabout | ingles | - |
 | 2026-09-26 | recorrer_organizacion_escuchar_plantilla | otro_idioma | top-down management | ingles | - |
+| 2026-09-26 | auditar_formacion_premios_ultima_fila | nombre_largo | La formacion en el muelle vista desde el borde por el capitan entrante: si se oye al jefe desde el fondo, a quien se premia, si se invito a las familias, si habia fotografo, cuando se juntaron las menciones, y si el que habla sabe de donde viene y adonde va su gente | castellano | - |
+| 2026-09-26 | auditar_formacion_premios_ultima_fila | otro_idioma | quarters | ingles | - |
+| 2026-09-26 | auditar_formacion_premios_ultima_fila | otro_idioma | awards ceremony | ingles | - |
