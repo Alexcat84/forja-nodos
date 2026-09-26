@@ -1226,3 +1226,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-26 | construir_estrategia_gente_cuatro_componentes | otro_idioma | Organization Chart | ingles | - |
 | 2026-09-26 | construir_estrategia_gente_cuatro_componentes | otro_idioma | Position Contracts | ingles | - |
 | 2026-09-26 | construir_estrategia_gente_cuatro_componentes | otro_idioma | Operations Manuals | ingles | - |
+| 2026-09-26 | documentar_trabajo_manual_operaciones | nombre_largo | La regla 4 del Prototipo de Franquicia: la documentacion como afirmacion de orden, y el Manual de Operaciones como la guia de como se hace aqui, con el proposito, los pasos y los estandares dentro | castellano | - |
+| 2026-09-26 | documentar_trabajo_manual_operaciones | otro_idioma | Operations Manuals | ingles | - |
+| 2026-09-26 | documentar_trabajo_manual_operaciones | otro_idioma | How-to-Do-It Guide | ingles | - |
