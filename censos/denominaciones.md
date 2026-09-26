@@ -1178,3 +1178,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-26 | dar_valor_constante_cuatro_publicos | nombre_largo | La regla 1 del Prototipo de Franquicia: el valor es lo que la gente percibe, la pregunta que todo emprendedor tiene que hacerse, y las formas concretas de valor que el libro enumera | castellano | - |
 | 2026-09-26 | dar_valor_constante_cuatro_publicos | otro_idioma | consistent value | ingles | - |
 | 2026-09-26 | dar_valor_constante_cuatro_publicos | otro_idioma | beyond what they expect | ingles | - |
+| 2026-09-26 | interrogar_negocio_cinco_preguntas | nombre_largo | El resumen que el propio libro hace del capitulo: trabajar sobre el negocio y no dentro de el, pensarlo como cualquier cosa menos como un empleo, y las cinco preguntas que hay que hacerse hasta dar con que no sabes las respuestas | castellano | - |
+| 2026-09-26 | interrogar_negocio_cinco_preguntas | otro_idioma | working on your business, not in it | ingles | - |
+| 2026-09-26 | interrogar_negocio_cinco_preguntas | otro_idioma | pre-production prototype | ingles | - |

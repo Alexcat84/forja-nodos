@@ -1,0 +1,26 @@
+fila 07, interrogar_negocio_cinco_preguntas, lineas --veredicto: 1
+  --veredicto dictar_ritmo_crecimiento_preguntas_escritas|SANO|El mismo par que dictar_ritmo lee desde su lado: ajenos de dos capitulos, dos listas de preguntas del dueno, una para trabajar sobre el negocio y no dentro (L255 a L263) y otra para crecer (cap_07 L281). Ninguno usa el producto del otro.
+inicio 2026-09-26 10:26:22
+======================================================================
+ADUANA DE INSERCION, candidato 'interrogar_negocio_cinco_preguntas'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (443 del grafo mas 36 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino dictar_ritmo_crecimiento_preguntas_escritas  [Dictar el ritmo de crecimiento de tu negocio con los tres conocimientos clave, las preguntas correctas y el plan escrito]
+    levantada por: similitud_texto
+    similitud_texto    0.369 (umbral 0.35)
+    familia_id         0.125 (umbral 0.30)
+    paso_contra_nodo   0.473 (umbral 0.60)
+    paso 4 del candidato contra paso 8 de dictar_ritmo_crecimiento_preguntas_escritas
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 444
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 1
+
+======================================================================
+fin 2026-09-26 10:35:22 | codigo de salida 0 | 540.7 s
