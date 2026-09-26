@@ -63697,7 +63697,7 @@ falte es exactamente lo que no tiene fila.
 | `T2` | la fidelidad entera de las `7` | **CERRADA** (`73.2`): `6` PUENTE de `42`, corregidos en la bandeja antes del barrido |
 | `T3` | el barrido de las `7`, sobre las fichas ya corregidas | **CERRADA** (`73.3`): `7` de `7`, `29` pares |
 | `T4` | los veredictos, las aristas y el orden | **CERRADA** (`73.4`): `29` lineas, `0` aristas por lectura, `3` esperadas, `D.36` en cero |
-| `T5` | el cierre: censo, `PASOS INVENTADOS`, huellas, `D.61`, `R5`, guardas, commit | |
+| `T5` | el cierre: censo, `PASOS INVENTADOS`, huellas, `D.61`, `R5`, guardas, commit | **CERRADA** (`73.5`): ninguna insertada |
 
 ## 73.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
 
@@ -64018,3 +64018,135 @@ delante de sus hijos. **Aristas esperadas en la vuelta de insercion: `3`**, las 
 aduana; ninguna por lectura con `forja.py arista`. Si `D73.9` cae, son `4`.
 
 **`T4` CERRADA: las tres partes hechas, ninguna fila vacia, ninguna insertada.**
+
+## 73.5. TAREA 5: EL CIERRE
+
+### 73.5.a. El censo antes y despues
+
+<!-- TALLADO: parcial salida=.v73ext/censo_cierre.txt -->
+
+    $ bash .v73ext/censo.sh
+    nodos en dataset/nodos.jsonl        : 430
+    veredictos en bitacora              : 1081
+    pares mutuos                        : 1
+    bandeja cuarentena/grove_high_output: 7
+    insertados de grove_high_output     : 85
+    cerrojos en procesos/               : 
+
+**`430`, `1081`, `1`, `7` y `85` al abrir (`73.0`) y al cerrar: no entro nada**, ningun `insertar` corrio en esta vuelta, y
+`procesos/` esta vacio.
+
+### 73.5.b. `PASOS INVENTADOS POR CAPITULO`, tres filas, que son preparacion y no entrada
+
+Las de `73.2.3`, de `.v73ext/contar_fidelidad.txt`, que no cambian despues: ninguna ficha se toco despues de la TAREA 2.
+
+<!-- TALLADO: parcial salida=.v73ext/contar_fidelidad.txt -->
+
+| capitulo | candidatos | pasos | PUENTE en la relectura | por ciento | PUENTE que entrara |
+|---|---:|---:|---:|---:|---:|
+| `cap_15` | `3` | `22` | `5` | `22,7` | `0` |
+| `cap_16` | `1` | `4` | `0` | `0,0` | `0` |
+| `cap_17` | `3` | `16` | `1` | `6,2` | `0` |
+
+**El peor, `cap_15`, `5` de `22`, por encima del `10`: releido entero** (`73.2.3`). Los seis corregidos por correccion declarada
+(`73.2.2`); la ultima columna es la cuenta despues de esa correccion, no una salida del instrumento, y por eso la tabla va marcada
+parcial.
+
+### 73.5.c. La huella de las `7` fichas preparadas, despues del ultimo cambio de ficha
+
+Copia de `.v71ext/pasos_y_huellas.py` con la lista a las filas `1` a `7` de `.v73ext/orden.txt` y el commit de comparacion a
+`4318e81` (la apertura), su cabecera lo dice:
+
+<!-- TALLADO: parcial salida=.v73ext/pasos_y_huellas.txt -->
+
+    $ python .v73ext/pasos_y_huellas.py
+    1   usar_banco_nueve_preguntas_entrevista                        bandeja     9 pasos e53b82e37e DISTINTA trabajo=HEAD
+    2   responder_primer_aviso_renuncia_subordinado                  bandeja     7 pasos 01b6acba10 DISTINTA trabajo=HEAD
+    3   gestionar_retencion_subordinado_valioso_renuncia             bandeja     6 pasos b9d95860df DISTINTA trabajo=HEAD
+    4   reciclar_empleado_ascendido_mas_alla_capacidad               bandeja     4 pasos c7df12c844 igual trabajo=HEAD
+    5   priorizar_lista_entrenamiento_subordinados                   bandeja     5 pasos 0a229b6c6c igual trabajo=HEAD
+    6   desarrollar_primer_curso_entrenamiento                       bandeja     7 pasos 3e4ea7099f igual trabajo=HEAD
+    7   pedir_critica_anonima_curso_entrenamiento_dictado            bandeja     4 pasos dd5228c358 DISTINTA trabajo=HEAD
+    fichas de las filas 1 a 7: 7 | pasos: 42 | iguales a su blob en 4318e81: 3 | distintas: 4 | fichero de trabajo distinto de HEAD: 0
+
+**Las cuatro `DISTINTA` son las cuatro corregidas en `73.2.2`, y solo ellas**; los `42` pasos son los de `.v73ext/fidelidad.tsv`. Es
+contra estos blobs contra lo que la vuelta de insercion comprobara que entra lo que se leyo.
+
+### 73.5.d. `D.61`: cada discutible, ejecutado o cerrado
+
+| | estado |
+|---|---|
+| `D73.1` | **EJECUTADO**: el barrido corrio con `FORJA_PROCESOS_SIMILITUD=3` (`.v73ext/barrer.sh`), `7` de `7` con `rc=0` y poblacion `479` en las `7` (`73.3`) |
+| `D73.2` | **EJECUTADO**: el barrido se lanzo una vez, con las `7`, despues del commit de las correcciones (`c98d891b`, `73.2.2`) |
+| `D73.3` a `D73.7` | **EJECUTADOS**: las marcas en `.v73ext/fidelidad.tsv`, los seis `P` y los dos campos corregidos en la bandeja (`73.2.2`) y la cifra en `73.2.3`; `d078` leido igual y sin fundir; quedan para la relectura del auditor |
+| `D73.8` a `D73.10` | **EJECUTADOS**: escritos en `.v73ext/veredictos_listos.txt` y `.v73ext/aristas_lectura.txt`, comprobados por `comprobar_veredictos.py` y `orden.py` (`73.4`); `D73.9` lleva la cita de la `ACTA 60` `60.5` dentro de sus dos lineas; quedan para la relectura del auditor |
+
+**Ninguno abierto.**
+
+### 73.5.e. `R5`, medido con las copias de `.v64ext/pegado64.py` y `.v64aud/normal/bloques_mudos.py`
+
+`.v73ext/pegado73.py` y `.v73ext/bloques_mudos73.py`, sacadas con `sed` de los originales con la cabecera del tramo cambiada a la
+`73` (el `diff --strip-trailing-cr` contra el original da `3` y `2` lineas cambiadas, las de la cabecera y el rotulo):
+
+<!-- TALLADO: parcial salida=.v73ext/r5.txt -->
+
+    $ python .v73ext/pegado73.py; python .v73ext/bloques_mudos73.py
+    bloques abiertos con `$` en el tramo de la vuelta 73 : 29
+    bloques que ROMPEN R1 (ACTA 60 60.15)                : 0
+    bloques abiertos con `$`: 14 | comandos `$`: 29 | comandos sin ninguna linea de salida en su bloque: 0
+
+**Cero bloques que rompen `R1` y cero comandos sin salida.** El bloque se anexo con tres lineas de relleno en el sitio de la salida,
+se corrieron los dos instrumentos (`.v73ext/r5.txt`) y la salida sustituyo al relleno; vueltos a correr con el bloque ya entero, salen
+iguales (`.v73ext/r5_bis.txt`).
+
+### 73.5.f. Las guardas
+
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 430
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+    $ python forja.py guiones
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+    $ python tests/test_aceptacion.py | tail -2
+      total: 379 pruebas, 0 fallos, 0 errores
+    ========================================================================
+
+(Salidas enteras en `.v73ext/cierre_gate.txt`, `.v73ext/cierre_guiones.txt` y `.v73ext/cierre_tests.txt`; la ultima lleva al final
+el `rc=0` que le anexe al correrla.)
+
+### 73.5.g. El cierre estricto, en verde
+
+Salida entera en `.v73ext/cierre_reporte.txt` (y la de las pruebas que lanza, que va por stderr, en `.v73ext/cierre_reporte_err.txt`),
+codigo `0` (`.v73ext/cierre_reporte_rc.txt`). Lo lance en segundo plano y lo espere en primer plano con un bucle `until` hasta su
+`rc=`; volvio a las `02:39:26` y **no quedo vivo**:
+
+    $ grep -E '^(TALLADO|CENSO|TABLA DE CIERRE|CIERRE|GATE|BARRIDO)' .v73ext/cierre_reporte.txt
+    TALLADO DEL REPORTE (D.41): la tabla que dice ser de instrumento
+    TALLADO VERDE: las 157 tabla(s) comprobables son las de su instrumento, celda a celda.
+    CENSO DE RUTAS (D.42): la unidad de la ruta es la celda
+    CENSO VERDE: las 1024 rutas publicadas sostienen lo que dicen sostener.
+    TABLA DE CIERRE DE TAREAS (D.52): toda tabla del reporte declara su instrumento
+    TABLA DE CIERRE VERDE: ninguna celda medible difiere del dato.
+    GATE VERDE.
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+    CIERRE VERDE: las cuatro guardas que muerden, el tallado y el censo. La vigencia corrio y publico su cuenta arriba: es cola, no guarda (D.15).
+
+**Ningun rojo.**
+
+**Tabla de tareas, al cerrar:**
+
+| tarea | que | estado |
+|---|---|---|
+| `T1` | los registros de la `ACTA 71` | **CERRADA** (`73.1`) |
+| `T2` | la fidelidad entera de las `7` | **CERRADA** (`73.2`): `42` pasos, `6` PUENTE corregidos en la bandeja antes del barrido, `cap_15` releido entero, `d078` leido igual |
+| `T3` | el barrido de las `7` | **CERRADA** (`73.3`): `7` de `7`, poblacion `479`, `29` pares, recogido dentro del turno |
+| `T4` | los veredictos, las aristas y el orden | **CERRADA** (`73.4`): `29` lineas para `29` vecinos, `0` aristas por lectura, `3` esperadas, `D.36` en cero; el par `2` de la `ACTA 60` `60.5` leido distinto y marcado (`D73.9`) |
+| `T5` | el cierre | **CERRADA** (`73.5`): censo `430`, `1081`, `1`, `7`, `85` al abrir y al cerrar; ninguna insertada |
+
+**Ningun proceso MIO vivo al cerrar**: el barrido volvio con su `TODOS TERMINADOS` y el cierre estricto con `rc=0`; despues,
+`tasklist /FI "IMAGENAME eq python.exe"` dice *INFO: No tasks are running which match the specified criteria.* y `procesos/` esta
+vacio. **Ningun `insertar` corrio en esta vuelta.** **No escribo `PARA_ALEXIS.md`: nada me obliga a parar.** Lo que queda de Grove son
+estas `7` fichas preparadas, que entran en la vuelta siguiente si la `ACTA 72` las certifica (`D.39`); despues, Gerber y Marquet, en
+ese orden.
+
+**`R5` vuelto a medir con el reporte ya entero** (`pegado73.py` y `bloques_mudos73.py` otra vez, salida en `.v73ext/r5_final.txt`): `30` comandos en `15` bloques, con `0` que rompen `R1` y `0` sin salida; el de mas es el bloque del cierre estricto.
