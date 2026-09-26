@@ -1132,3 +1132,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-25 | escalonar_complejidad_puesto_empleado_nuevo | otro_idioma | CUA factor | ingles | - |
 | 2026-09-25 | diagnosticar_capacidad_motivacion_prueba_vida | nombre_largo | La prueba mental simple para separar la incapacidad de la desmotivacion cuando alguien no esta haciendo su trabajo: preguntar si podria hacerlo si su vida dependiera de ello | castellano | - |
 | 2026-09-25 | diagnosticar_capacidad_motivacion_prueba_vida | otro_idioma | simple mental test | ingles | - |
+| 2026-09-25 | fijar_meta_direccion_objetivos_mitad_probabilidad | nombre_largo | Como fijar el objetivo de un sistema de direccion por objetivos cuando el impulso a estirarse no es espontaneo: en el punto en que, esforzandose al maximo, la probabilidad de conseguirlo es de cincuenta por ciento | castellano | - |
+| 2026-09-25 | fijar_meta_direccion_objetivos_mitad_probabilidad | otro_idioma | management by objectives | ingles | - |
+| 2026-09-25 | fijar_meta_direccion_objetivos_mitad_probabilidad | otro_idioma | MBO | ingles | - |

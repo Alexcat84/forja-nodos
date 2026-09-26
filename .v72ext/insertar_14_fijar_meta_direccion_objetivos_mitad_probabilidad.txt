@@ -1,0 +1,26 @@
+fila 14, fijar_meta_direccion_objetivos_mitad_probabilidad, lineas --veredicto: 1
+  --veredicto fijar_periodo_direccion_objetivos_retroalimentacion|SANO|El mismo par que fijar_periodo lee desde su lado: hermanos, dos aspectos distintos de la direccion por objetivos, cuanto de alto (cap_12 L75) y cada cuanto (cap_07 L79).
+inicio 2026-09-25 23:50:28
+======================================================================
+ADUANA DE INSERCION, candidato 'fijar_meta_direccion_objetivos_mitad_probabilidad'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (423 del grafo mas 56 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino fijar_periodo_direccion_objetivos_retroalimentacion  [Fijar el periodo del sistema de direccion por objetivos por el plazo en que su retroalimentacion sigue sirviendo, y contrastarlo con la base del plan]
+    levantada por: familia_id
+    similitud_texto    0.282 (umbral 0.35)
+    familia_id         0.375 (umbral 0.30)
+    paso_contra_nodo   0.381 (umbral 0.60)
+    paso 4 del candidato contra paso 2 de fijar_periodo_direccion_objetivos_retroalimentacion
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 424
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 1
+
+======================================================================
+fin 2026-09-26 00:02:11 | codigo de salida 0 | 702.8 s
