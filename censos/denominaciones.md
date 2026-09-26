@@ -1166,3 +1166,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-26 | dictar_ritmo_crecimiento_preguntas_escritas | nombre_largo | El trabajo del dueno cuando el negocio va a crecer: entender los tres asuntos clave, hacerse las preguntas que el libro enumera, y articular el plan por escrito para que otros lo entiendan | castellano | - |
 | 2026-09-26 | dictar_ritmo_crecimiento_preguntas_escritas | otro_idioma | rate of growth | ingles | - |
 | 2026-09-26 | dictar_ritmo_crecimiento_preguntas_escritas | otro_idioma | contingency plans | ingles | - |
+| 2026-09-26 | construir_empresa_plantilla_vision_diaria | nombre_largo | Las tres razones que el libro atribuye a Tom Watson para IBM, y el bucle diario que les pone detras: los dos retratos, actuar asi desde el primer dia, y el repaso de cada noche contra la plantilla | castellano | - |
+| 2026-09-26 | construir_empresa_plantilla_vision_diaria | otro_idioma | business development | ingles | - |
+| 2026-09-26 | construir_empresa_plantilla_vision_diaria | otro_idioma | template of my vision | ingles | - |
