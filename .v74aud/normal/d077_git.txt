@@ -1,0 +1,35 @@
+===== entregar_evaluacion_desempeno_tres_claves
+  66990348 2026-09-26T00:54:39-04:00 Vuelta 72, fila 18: entregar_evaluacion_desempeno_tres_claves insertado por la aduana, movido a _insertados
+    numstat 0 0
+  3e90afcc 2026-09-25T16:54:54-04:00 Vuelta 71, T1 y T2: los registros de la ACTA 69 y la fidelidad entera de las 20 (121 pasos, 4 PUENTE corregidos en 
+    numstat 2 2
+  db70fe94 2026-09-20T22:56:21-04:00 VUELTA 58: cap_14, cap_15 y cap_16 minados con la aduana probada en el acto, siete candidatos en cuarentena
+    numstat 37 0
+===== preparar_resena_mixta_hoja_trabajo
+  014ab223 2026-09-26T01:03:07-04:00 Vuelta 72, fila 19: preparar_resena_mixta_hoja_trabajo insertado por la aduana, movido a _insertados
+    numstat 0 0
+  db70fe94 2026-09-20T22:56:21-04:00 VUELTA 58: cap_14, cap_15 y cap_16 minados con la aduana probada en el acto, siete candidatos en cuarentena
+    numstat 37 0
+===== guiar_subordinado_etapas_resistencia_desempeno
+  9805e44a 2026-09-26T01:12:57-04:00 Vuelta 72, fila 20: guiar_subordinado_etapas_resistencia_desempeno insertado por la aduana, movido a _insertados
+    numstat 0 0
+  db70fe94 2026-09-20T22:56:21-04:00 VUELTA 58: cap_14, cap_15 y cap_16 minados con la aduana probada en el acto, siete candidatos en cuarentena
+    numstat 37 0
+===== usar_banco_nueve_preguntas_entrevista
+  c98d891b 2026-09-26T02:05:45-04:00 Vuelta 73, T2: la fidelidad entera de las 7 (42 pasos, 6 PUENTE corregidos en la bandeja antes del barrido, cap_15 
+    numstat 4 4
+  db70fe94 2026-09-20T22:56:21-04:00 VUELTA 58: cap_14, cap_15 y cap_16 minados con la aduana probada en el acto, siete candidatos en cuarentena
+    numstat 40 0
+===== responder_primer_aviso_renuncia_subordinado
+  c98d891b 2026-09-26T02:05:45-04:00 Vuelta 73, T2: la fidelidad entera de las 7 (42 pasos, 6 PUENTE corregidos en la bandeja antes del barrido, cap_15 
+    numstat 2 2
+  db70fe94 2026-09-20T22:56:21-04:00 VUELTA 58: cap_14, cap_15 y cap_16 minados con la aduana probada en el acto, siete candidatos en cuarentena
+    numstat 38 0
+===== gestionar_retencion_subordinado_valioso_renuncia
+  c98d891b 2026-09-26T02:05:45-04:00 Vuelta 73, T2: la fidelidad entera de las 7 (42 pasos, 6 PUENTE corregidos en la bandeja antes del barrido, cap_15 
+    numstat 3 3
+  db70fe94 2026-09-20T22:56:21-04:00 VUELTA 58: cap_14, cap_15 y cap_16 minados con la aduana probada en el acto, siete candidatos en cuarentena
+    numstat 37 0
+===== reciclar_empleado_ascendido_mas_alla_capacidad
+  db70fe94 2026-09-20T22:56:21-04:00 VUELTA 58: cap_14, cap_15 y cap_16 minados con la aduana probada en el acto, siete candidatos en cuarentena
+    numstat 35 0

@@ -1,0 +1,1 @@
+pagos de la vuelta 74 en DEUDA.jsonl: 4 | como contra su fichero: {'d006': 'igual', 'd077': 'igual', 'd078': 'igual', 'd084': 'igual'}

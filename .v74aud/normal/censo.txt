@@ -1,0 +1,26 @@
+$ git diff --name-only e76746f2 7f6bf647 | grep -v "^\.v74ext/"
+docs/loop/DEUDA.jsonl
+docs/loop/REPORTE.md
+$ git diff --name-only eb9d0c04 e76746f2
+docs/loop/loop.log
+docs/loop/ultimo_auditor.json
+docs/loop/ultimo_extractor.json
+$ git diff --name-only 7f6bf647 05e588bf
+docs/loop/APERTURA_CIEGA.md
+docs/loop/SELLOS_APERTURA.jsonl
+$ git diff --name-only eb9d0c04 HEAD -- dataset bitacora censos config esquema fuentes src scripts tests cuarentena forja.py | wc -l
+0
+$ git status --short -- dataset bitacora censos config esquema fuentes src scripts tests cuarentena | wc -l
+0
+$ wc -l dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl config/pares_mutuos.jsonl
+    430 dataset/nodos.jsonl
+   1081 bitacora/VEREDICTOS.jsonl
+      1 config/pares_mutuos.jsonl
+   1512 total
+cuarentena/grove_high_output 7
+cuarentena/_insertados/grove_high_output 85
+cuarentena/gerber_emyth 22
+cuarentena/marquet_turn_the_ship 20
+procesos 0
+$ python .v70aud/poblacion.py
+poblacion: 479 | por sede: {'grafo': 430, 'bandeja': 49} | suma: 479
