@@ -66422,3 +66422,9 @@ La aduana de hoy: **BLOQUEARIA** con `1` vecino(s) contra `479`; lineas `--vered
 
 
 **El vecino es el de su bloque y la linea se paso tal cual**: ni nuevos ni caidos contra el barrido de la `76`, las tres seniales al digito; la poblacion, `479` (`449` mas `30`). **Su linea con `construir_estrategia_gente_cuatro_componentes` es `SANO` por `D.53`**, y la arista `D.37` de ese par se cablea al entrar `construir`, en la fila `19`. **Quinta de las `10` aristas esperadas en el grafo.** Bitacora de `1149` a `1151`: su linea SANO y la de la arista.
+
+**Una precision sobre la cita que la arista escribio, y la declaro aqui porque ya esta en la bitacora y no se toca:** su
+`cita_del_veredicto` dice *adjudicada en la ACTA 75 seccion 75.4*, que es la frase de `.v77ext/arista.py` para las siete. **Para las seis de
+`D.37` es exacta** (`75.4` las adjudico); **para esta no**: `75.4` la mantuvo y la mando a la relectura conjunta, y la que la decide es
+mi lectura de `77.2.2`, que adjudicara la `ACTA 76`. La fila que cita (`.v77ext/aristas_lectura.txt` linea `35`) si es la de mi lectura.
+**Discutible `D77.4`**, marcado ahora y antes de saber como se lee: una cita de bitacora con una sede de adjudicacion adelantada.
