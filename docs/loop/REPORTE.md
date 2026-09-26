@@ -68182,3 +68182,20 @@ La aduana de hoy: **BLOQUEARIA** con `2` vecino(s) contra `479`; lineas `--vered
     hoy 2 vecinos, barrido de la 78 2 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (460 grafo, 19 bandejas), en la 78 479 (459, 20)
 
 **Los dos vecinos son los de su bloque y las dos lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `78`, las tres seniales al digito; la poblacion, `479`, con la fila `1` ya en el grafo (`460` mas `19`). Sin aristas en esta fila. Bitacora de `1173` a `1175`, sus dos lineas SANO.
+
+### Fila `3`: `encargar_meta_especifica_dejar_libre_metodo`, **INSERTADO** en `491.4` s, codigo `0`, commit `b9d9367e`
+
+La aduana de hoy: **BLOQUEARIA** con `3` vecino(s) contra `479`; lineas `--veredicto` pasadas: `3`. Salida entera en `.v80ext/insertar_03_encargar_meta_especifica_dejar_libre_metodo.txt`.
+
+<!-- TALLADO: parcial salida=.v80ext/insertar_03_encargar_meta_especifica_dejar_libre_metodo.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `ceder_control_reforzar_competencia_claridad` | similitud_texto | 0.381 | 0.000 | 0.473 | SANO |
+| `cambiar_forma_trabajar_conservar_plantilla` | similitud_texto | 0.436 | 0.000 | 0.459 | SANO |
+| `recorrer_organizacion_escuchar_plantilla` | similitud_texto | 0.412 | 0.000 | 0.416 | SANO |
+
+    $ python .v80ext/contra_barrido.py 03 encargar_meta_especifica_dejar_libre_metodo
+    hoy 3 vecinos, barrido de la 78 3 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (461 grafo, 18 bandejas), en la 78 479 (459, 20)
+
+**Los tres vecinos son los de su bloque y las tres lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `78`, las tres seniales al digito; la poblacion, `479` (`461` mas `18`). Sin aristas en esta fila. Bitacora de `1175` a `1178`, sus tres lineas SANO.
