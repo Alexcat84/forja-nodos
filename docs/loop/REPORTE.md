@@ -64573,3 +64573,6 @@ en su `L48195`); `bloques_mudos74.py` solo cuenta los `$` de un bloque que abre 
 esta vuelta.** **No escribo `PARA_ALEXIS.md`: nada me obliga a parar.** El puente de `74.3.3` no es parada: el encargo manda traerlo a
 la `ACTA 73` sin mover dato, y es lo que hago.
 
+**El hook del commit del cierre** (`6312424`, salida en `.v74ext/hook_t4.txt`) sale en verde y cuenta `1035` rutas donde mi segunda
+corrida conto `1034`: la de mas es `.v74ext/r5_bis.txt`, que el parrafo de `74.4.f` publico despues de esa corrida. Las dos cifras son
+ciertas de su momento.
