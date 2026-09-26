@@ -1235,3 +1235,8 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-26 | aplicar_cinco_pasos_proceso_contratacion | nombre_largo | El proceso de contratacion como el primer y mas esencial medio para comunicar la idea del negocio a la gente nueva | castellano | - |
 | 2026-09-26 | aplicar_cinco_pasos_proceso_contratacion | otro_idioma | hiring process | ingles | - |
 | 2026-09-26 | aplicar_cinco_pasos_proceso_contratacion | otro_idioma | scripted presentation | ingles | - |
+| 2026-09-26 | ceder_control_reforzar_competencia_claridad | nombre_largo | La arquitectura del metodo de lider a lider: el puente es el control, y los dos pilares que lo sostienen son la competencia tecnica y la claridad organizativa | castellano | - |
+| 2026-09-26 | ceder_control_reforzar_competencia_claridad | otro_idioma | leader-leader | ingles | - |
+| 2026-09-26 | ceder_control_reforzar_competencia_claridad | otro_idioma | divesting control | ingles | - |
+| 2026-09-26 | ceder_control_reforzar_competencia_claridad | otro_idioma | technical competence | ingles | - |
+| 2026-09-26 | ceder_control_reforzar_competencia_claridad | otro_idioma | organizational clarity | ingles | - |
