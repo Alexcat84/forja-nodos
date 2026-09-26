@@ -1,0 +1,13 @@
+fila 21, aplicar_ocho_reglas_juego_personas, lineas --veredicto: 0
+inicio 2026-09-26 12:14:16
+======================================================================
+ADUANA DE INSERCION, candidato 'aplicar_ocho_reglas_juego_personas'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (457 del grafo mas 22 que esperan en bandejas)
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 458
+  censos escritos: denominaciones
+
+======================================================================
+fin 2026-09-26 12:27:18 | codigo de salida 0 | 782.4 s

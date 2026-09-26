@@ -1229,3 +1229,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-26 | documentar_trabajo_manual_operaciones | nombre_largo | La regla 4 del Prototipo de Franquicia: la documentacion como afirmacion de orden, y el Manual de Operaciones como la guia de como se hace aqui, con el proposito, los pasos y los estandares dentro | castellano | - |
 | 2026-09-26 | documentar_trabajo_manual_operaciones | otro_idioma | Operations Manuals | ingles | - |
 | 2026-09-26 | documentar_trabajo_manual_operaciones | otro_idioma | How-to-Do-It Guide | ingles | - |
+| 2026-09-26 | aplicar_ocho_reglas_juego_personas | nombre_largo | The Rules of the Game: las ocho reglas del juego de personas de Your People Strategy | castellano | - |
+| 2026-09-26 | aplicar_ocho_reglas_juego_personas | otro_idioma | The Rules of the Game | ingles | - |
+| 2026-09-26 | aplicar_ocho_reglas_juego_personas | otro_idioma | the people game | ingles | - |
