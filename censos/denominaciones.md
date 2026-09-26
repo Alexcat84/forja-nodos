@@ -1212,3 +1212,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-26 | distinguir_tres_tipos_sistemas_negocio | otro_idioma | Hard Systems | ingles | - |
 | 2026-09-26 | distinguir_tres_tipos_sistemas_negocio | otro_idioma | Soft Systems | ingles | - |
 | 2026-09-26 | distinguir_tres_tipos_sistemas_negocio | otro_idioma | Information Systems | ingles | - |
+| 2026-09-26 | aplicar_seis_pasos_sistema_venta | nombre_largo | Un sistema de venta como interaccion orquestada con el cliente, en sus seis pasos principales | castellano | - |
+| 2026-09-26 | aplicar_seis_pasos_sistema_venta | otro_idioma | selling system | ingles | - |
+| 2026-09-26 | aplicar_seis_pasos_sistema_venta | otro_idioma | Benchmarks | ingles | - |
