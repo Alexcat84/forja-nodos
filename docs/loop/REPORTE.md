@@ -66616,3 +66616,21 @@ La aduana de hoy: **ENTRARIA** con `0` vecino(s) contra `479`; lineas `--veredic
     hoy 0 vecinos, barrido de la 76 0 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (457 grafo, 22 bandejas), en la 76 479 (437, 42)
 
 **Entra sin vecinos, como en el barrido de la `76`**, y la tabla de arriba sale vacia por eso; la poblacion, `479` (`457` mas `22`). Sin aristas en esta fila (`D76.15` en el juego, sostenido en la `ACTA 75` `75.5`). Bitacora sin movimiento: `1170`.
+
+### Fila `22`: `aplicar_cinco_pasos_proceso_contratacion`, **INSERTADO** en `482.3` s, codigo `0`, commit `ddfc1d08`
+
+La aduana de hoy: **BLOQUEARIA** con `2` vecino(s) contra `479`; lineas `--veredicto` pasadas: `2`. Salida entera en `.v77ext/insertar_22_aplicar_cinco_pasos_proceso_contratacion.txt`.
+
+<!-- TALLADO: parcial salida=.v77ext/insertar_22_aplicar_cinco_pasos_proceso_contratacion.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `construir_estrategia_gente_cuatro_componentes` | similitud_texto | 0.375 | 0.000 | 0.532 | CONTINUA |
+| `fingir_prototipo_cinco_mil_replicas` | similitud_texto | 0.355 | 0.111 | 0.512 | SANO |
+
+**Arista cableada por la aduana en el acto**: `construir_estrategia_gente_cuatro_componentes > aplicar_cinco_pasos_proceso_contratacion`
+
+    $ python .v77ext/contra_barrido.py 22 aplicar_cinco_pasos_proceso_contratacion
+    hoy 2 vecinos, barrido de la 76 2 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (458 grafo, 21 bandejas), en la 76 479 (437, 42)
+
+**Los dos vecinos son los de su bloque y las dos lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `76`, las tres seniales al digito; la poblacion, `479` (`458` mas `21`). **La aduana cablea en el acto la arista `construir_estrategia_gente_cuatro_componentes > aplicar_cinco_pasos_proceso_contratacion`**, la de la relectura conjunta (`77.2.1`) que la fila `19` dejo en cola: **decima de las `10` aristas esperadas en el grafo.** Bitacora de `1170` a `1172`: la linea `CONTINUA` y la `SANO` con `fingir`.
