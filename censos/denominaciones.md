@@ -1258,3 +1258,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-26 | inspeccionar_reparto_informacion_notas_jefe | nombre_largo | El tablero de mensajes del barco leido con el jefe de maquinas delante: el orden de reparto que fija el protocolo, las notas que el comandante y el segundo dejan escritas, la pregunta que se le hace al subordinado y los dos costes que el subordinado nombra | castellano | - |
 | 2026-09-26 | inspeccionar_reparto_informacion_notas_jefe | otro_idioma | message board | ingles | - |
 | 2026-09-26 | inspeccionar_reparto_informacion_notas_jefe | otro_idioma | routing stamp | ingles | - |
+| 2026-09-26 | recorrer_organizacion_escuchar_plantilla | nombre_largo | El primer paso del autor al preparar el mando: caminar y escuchar lo bueno, lo malo y lo feo de la gestion de arriba abajo, montar recorridos donde cada jefe ensena sus propios espacios, y pedir una linterna para inspeccionarlos | castellano | - |
+| 2026-09-26 | recorrer_organizacion_escuchar_plantilla | otro_idioma | walkabout | ingles | - |
+| 2026-09-26 | recorrer_organizacion_escuchar_plantilla | otro_idioma | top-down management | ingles | - |
