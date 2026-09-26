@@ -68365,3 +68365,20 @@ La aduana de hoy: **ENTRARIA** con `0` vecino(s) contra `479`; lineas `--veredic
     hoy 0 vecinos, barrido de la 78 0 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (470 grafo, 9 bandejas), en la 78 479 (459, 20)
 
 **Entra sin vecinos, como en el barrido de la `78`**, y la tabla de arriba sale vacia por eso; la poblacion, `479` (`470` mas `9`). Sin aristas en esta fila: su fila con `aplicar_ejercicio_codigo_genetico_control` y la de `definir_quien_responde_cada_cosa` son `NO SOSTENGO`. Bitacora sin movimiento: `1204`.
+
+### Fila `13`: `reforzar_principios_guia_lenguaje_prueba_conocimiento`, **INSERTADO** en `508.8` s, codigo `0`, commit `6053e7ee`
+
+La aduana de hoy: **BLOQUEARIA** con `3` vecino(s) contra `479`; lineas `--veredicto` pasadas: `3`. Salida entera en `.v80ext/insertar_13_reforzar_principios_guia_lenguaje_prueba_conocimiento.txt`.
+
+<!-- TALLADO: parcial salida=.v80ext/insertar_13_reforzar_principios_guia_lenguaje_prueba_conocimiento.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `acoger_inspectores_externos_fuente_aprendizaje` | similitud_texto | 0.401 | 0.000 | 0.372 | SANO |
+| `tomar_accion_deliberada_pausar_vocalizar_gesticular` | similitud_texto | 0.358 | 0.000 | 0.326 | SANO |
+| `resistir_dar_solucion_clasificar_decision_urgencia` | similitud_texto | 0.355 | 0.000 | 0.329 | SANO |
+
+    $ python .v80ext/contra_barrido.py 13 reforzar_principios_guia_lenguaje_prueba_conocimiento
+    hoy 3 vecinos, barrido de la 78 3 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (471 grafo, 8 bandejas), en la 78 479 (459, 20)
+
+**Los tres vecinos son los de su bloque y las tres lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `78`, las tres seniales al digito; la poblacion, `479` (`471` mas `8`). Sin aristas en esta fila: sus filas con `ceder_control_reforzar_competencia_claridad` y `alinear_equipo_proposito_comun` son `NO SOSTENGO`. Bitacora de `1204` a `1207`, sus tres lineas SANO.
