@@ -64935,3 +64935,22 @@ La aduana de hoy: **BLOQUEARIA** con `7` vecino(s) contra `479`; lineas `--vered
     hoy 7 vecinos, barrido de la 73 7 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (431 grafo, 48 bandejas), en la 73 479 (430, 49)
 
 **Los siete vecinos son los de su bloque y las siete lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `73`, las tres seniales al digito; la poblacion, `479`, con la fila `1` ya en el grafo (`431` mas `48`). **Su arista hacia `gestionar_retencion_subordinado_valioso_renuncia` queda EN COLA**, como su linea `CONTINUA` con `madre=` manda mientras el hijo espera en la bandeja: se cablea al entrar la fila `3`. Bitacora de `1088` a `1095`.
+
+### Fila `3`: `gestionar_retencion_subordinado_valioso_renuncia`, **INSERTADO** en `711.9` s, codigo `0`, commit `ab763f56`
+
+La aduana de hoy: **BLOQUEARIA** con `3` vecino(s) contra `479`; lineas `--veredicto` pasadas: `3`. Salida entera en `.v75ext/insertar_03_gestionar_retencion_subordinado_valioso_renuncia.txt`.
+
+<!-- TALLADO: parcial salida=.v75ext/insertar_03_gestionar_retencion_subordinado_valioso_renuncia.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `responder_primer_aviso_renuncia_subordinado` | similitud_texto | 0.376 | 0.250 | 0.421 | CONTINUA |
+| `entregar_evaluacion_desempeno_tres_claves` | similitud_texto | 0.403 | 0.000 | 0.390 | SANO |
+| `usar_banco_nueve_preguntas_entrevista` | similitud_texto | 0.388 | 0.000 | 0.398 | SANO |
+
+**Arista cableada por la aduana en el acto**: `responder_primer_aviso_renuncia_subordinado > gestionar_retencion_subordinado_valioso_renuncia`
+
+    $ python .v75ext/contra_barrido.py 03 gestionar_retencion_subordinado_valioso_renuncia
+    hoy 3 vecinos, barrido de la 73 3 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (432 grafo, 47 bandejas), en la 73 479 (430, 49)
+
+**Los tres vecinos son los de su bloque y las tres lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `73`, las tres seniales al digito; la poblacion, `479` (`432` mas `47`). **La aduana cablea en el acto la arista `responder_primer_aviso_renuncia_subordinado > gestionar_retencion_subordinado_valioso_renuncia`** (su salida: *arista madre-hijo cableada y escrita RESUELTA*), la que la fila `2` dejo en cola: es la primera de las `3` esperadas. Bitacora de `1095` a `1098`.
