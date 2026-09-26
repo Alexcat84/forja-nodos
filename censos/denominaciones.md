@@ -1169,3 +1169,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-26 | construir_empresa_plantilla_vision_diaria | nombre_largo | Las tres razones que el libro atribuye a Tom Watson para IBM, y el bucle diario que les pone detras: los dos retratos, actuar asi desde el primer dia, y el repaso de cada noche contra la plantilla | castellano | - |
 | 2026-09-26 | construir_empresa_plantilla_vision_diaria | otro_idioma | business development | ingles | - |
 | 2026-09-26 | construir_empresa_plantilla_vision_diaria | otro_idioma | template of my vision | ingles | - |
+| 2026-09-26 | trazar_modelo_negocio_cliente_primero | nombre_largo | El Modelo Emprendedor tal como el libro lo traza: buscar donde esta la oportunidad, volver al tablero, construir una solucion a las frustraciones de un grupo concreto de clientes, y empezar por el retrato de ese cliente | castellano | - |
+| 2026-09-26 | trazar_modelo_negocio_cliente_primero | otro_idioma | Entrepreneurial Model | ingles | - |
+| 2026-09-26 | trazar_modelo_negocio_cliente_primero | otro_idioma | perceived needs | ingles | - |
