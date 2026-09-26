@@ -63678,3 +63678,5 @@ codigo `0`:
 
 **No escribo `PARA_ALEXIS.md`: nada me obliga a parar.** Lo que queda de Grove son las `7` fichas de `cap_15`, `cap_16` y
 `cap_17`, que se preparan en la vuelta siguiente; despues, Gerber y Marquet, en ese orden.
+
+**`R5` vuelto a medir con el reporte ya entero** (`pegado72.py` y `bloques_mudos72.py` otra vez, salida en `.v72ext/r5_final.txt`): `47` comandos en `35` bloques, con `0` rotos y `0` mudos; el de mas es el bloque del cierre estricto. **El commit del cierre, `4b6382a0`, paso el hook en verde** (salida en `.v72ext/hook_t5.txt`).
