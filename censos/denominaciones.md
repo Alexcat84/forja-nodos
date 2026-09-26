@@ -1107,3 +1107,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-25 | definir_entorno_grupo_clientes_proveedores_competidores | otro_idioma | stand-alone company | ingles | - |
 | 2026-09-25 | examinar_entorno_expectativas_tecnologia_proveedores_grupos | nombre_largo | Que buscar cuando examinas tu entorno: los cuatro objetos de revision del paso 1 de la planificacion, nombrados uno a uno por el libro | castellano | - |
 | 2026-09-25 | examinar_entorno_expectativas_tecnologia_proveedores_grupos | otro_idioma | examine your environment | ingles | - |
+| 2026-09-25 | examinar_demanda_entorno_dos_marcos_temporales | nombre_largo | El analisis de la diferencia entre lo que tu entorno te demanda ahora y lo que esperas que te demande dentro de un ano, con la prohibicion de rebajar la demanda por la capacidad | castellano | - |
+| 2026-09-25 | examinar_demanda_entorno_dos_marcos_temporales | otro_idioma | difference analysis | ingles | - |
+| 2026-09-25 | examinar_demanda_entorno_dos_marcos_temporales | otro_idioma | demand forecast | ingles | - |
