@@ -1,0 +1,39 @@
+DECISION DE LA RELECTURA CONJUNTA DE LA FRONTERA DE ZHUO (vuelta 79, encargo TAREA 2.1; ACTA 77 77.5). Vara: AUDITOR_FORJA.md 6.1 y solo esa.
+Par: comunicar_valores_diez_formas (zhuo_manager, en el grafo) contra repetir_mensaje_invariable_diario_reunion_evento (marquet_turn_the_ship, bandeja).
+Evidencia, con cada grep -n -o pegado: .v79ext/zhuo_evidencia.txt.
+
+MI FILA DE LA 78 (.v78ext/aristas_lectura.txt linea 43) decia: NO SOSTENGO, y no es despliegue sino FRONTERA DECLARADA (6.1, dos doctrinas
+legitimas): Zhuo manda decir el mensaje de diez formas distintas (paso 3) y Marquet manda no cambiarlo (L119).
+
+LA LECTURA DEL AUDITOR (ACTA 77 77.5): sin contradiccion. Los dos mandan repetir el mismo mensaje; lo que Zhuo varia es la forma y la via,
+y lo que Marquet prohibe cambiar es el mensaje, que es el contenido.
+
+DECIDO: GANA LA LECTURA DEL AUDITOR. LA FRONTERA DE ZHUO NO QUEDA EN PIE.
+
+LA RAZON, con la vara 6.1 (la fila DOS DOCTRINAS LEGITIMAS pide dos doctrinas que manden cosas distintas sobre el mismo acto; el
+precedente, ACTA 50 50.5.b, eran dos ordenes contrarias sobre con que se empieza la misma reunion):
+1. Lo invariable es lo mismo en los dos libros, y es el mensaje. Zhuo cap_11 L91 pone la variacion en el decir y la invariante en el
+   mensaje en la misma frase: for the message to stick, it should be heard ten different times and said in ten different ways. El
+   sujeto que tiene que calar es EL mensaje, uno. Y en L95 la autora cuenta el efecto como otros reforzando the same messages: los
+   mismos mensajes, con su propia letra.
+2. Lo que Marquet prohibe es cambiar el mensaje, no la forma. cap_13 L119: Changing the message? That results in confusion and a lack
+   of direction. Lo que manda repetir en L119 es el mismo mensaje en tres ocasiones distintas (dia, reunion, evento), que es tambien
+   variar la ocasion. Nada en L119 ni en los dos pasos de la ficha manda decirlo con las mismas palabras.
+3. Lo que Zhuo varia, las diez formas y las cuatro vias (su paso 5, cap_11 L93, I try different approaches), no lo prohibe ningun paso
+   de Marquet. Lo que Marquet prohibe, cambiar el contenido, no lo manda ningun paso de Zhuo.
+4. Entonces no hay acto sobre el que manden cosas contrarias. Con direccion (6.1): lo que la ficha de Marquet anade a Zhuo es la
+   prohibicion expresa de cambiar el mensaje y su motivo (confusion y falta de direccion); no la contradice. Ninguna es madre de la
+   otra (mi fila de la 78 ya lo decia, y eso no cambia) y no son duplicado: la clase del par no se mueve porque el par no es vecino
+   del barrido (0 lineas con comunicar_valores_diez_formas en .v78ext/vecinos_repetir_mensaje_invariable_diario_reunion_evento.json).
+5. Una frontera se pierde por poda, no por fusion: aqui no se poda ni se funde nada. Los dos nodos quedan enteros, cada uno con su
+   fuente; lo unico que no se escribe es una contradiccion que los dos textos no tienen.
+
+DISCUTIBLE, MARCADO AL ESCRIBIRLO (D79.1): cap_13 L127, el poster del perro Barclay (The first eight frames were identical, Sit, sit,
+sit), puede leerse como que Marquet quiere la repeticion identica tambien en la forma, y eso reabriria la tension con las diez formas
+de Zhuo. No lo peso porque es CASO que la ficha deja fuera por su nombre (su resumen_teorico lo dice), y el poster es para el propio
+autor, colgado detras de su puerta, no una forma de decirle el mensaje a nadie. Si el auditor lo lee como doctrina de forma, la
+frontera vuelve a estar en pie y su texto se prepara en la vuelta que inserte, por la misma via que la de Grove.
+
+CORRECCION DECLARADA DE MI FILA, SIN BORRARLA (encargo TAREA 2.1): la fila 43 de .v78ext/aristas_lectura.txt se queda escrita como
+esta. Su clase NO SOSTENGO se sostiene (no hay arista); su razon FRONTERA DECLARADA se corrige: no es frontera, es convergencia sin
+contradiccion, y no se escribe texto de frontera para este par. La correccion vive en REPORTE.md 79.2 y en este fichero.

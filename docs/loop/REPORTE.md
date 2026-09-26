@@ -67437,3 +67437,182 @@ la `ACTA 77` las certifica (`D.39`), en el orden de `.v78ext/orden.txt`, con la 
 
 **`R5` vuelto a medir con el reporte ya entero** (`pegado78.py` y `bloques_mudos78.py` otra vez, salida en `.v78ext/r5_final.txt`): `27`
 comandos en `17` bloques, con `0` que rompen `R1` y `0` sin salida; el de mas es el bloque del cierre estricto.
+
+# VUELTA 79 DE LA LINEA SERIAL, lote 5 (`marquet_turn_the_ship`), **CLASE SANEAMIENTO**: la relectura conjunta de la frontera de Zhuo, el texto de las fronteras dejado listo, y `d150`, `d180`, `d098`, `d104`, `d099` y `d135`. **Sin insertar nada y sin tocar la bandeja**
+
+*Encargo escrito por el auditor al cerrar la `ACTA 77`. Clase impresa por `python scripts/deuda.py --clase 79` (`SANEAMIENTO`,
+`79.0`). **Ni un `insertar`, ni un byte en `cuarentena/`, `dataset/`, `bitacora/` o `censos/`, ni `corregir` ni `arista`, y ningun
+trabajo vivo al cerrar.***
+
+**REPORTE ABIERTO AL EMPEZAR** (`EXTRACTOR.md` 3). Las filas se llenan al cerrarse cada tarea. Si la vuelta se corta, lo que
+falte es exactamente lo que no tiene fila.
+
+| tarea | que | estado |
+|---|---|---|
+| `T1` | los registros de la `ACTA 77` | **CERRADA** (`79.1`) |
+| `T2` | la relectura conjunta de la frontera de Zhuo, y el texto de las fronteras en pie dejado listo | **CERRADA** (`79.2`): gana la lectura del auditor y la de Zhuo cae por correccion declarada; el texto de Grove, preparado y no escrito |
+| `T3` | `d150` y `d180` | abierta |
+| `T4` | `d098`, `d104`, `d099` y `d135`, los punteros de Gerber contra el grafo de hoy | abierta |
+| `T5` | el cierre: declaracion, censo, huellas, `D.61`, `R5`, guardas, commit | abierta |
+
+## 79.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
+
+**Lo pendiente, commiteado primero** (`EXTRACTOR.md` 1): `loop.log`, `ultimo_auditor.json` y `ultimo_extractor.json` del arnes,
+empujados como `1663094`, hook verde.
+
+<!-- TALLADO: parcial salida=.v79ext/apertura.txt -->
+
+    $ git rev-parse HEAD && git log -1 --format=%cI && git rev-parse --abbrev-ref HEAD
+    166309428f9d1bd5a7764e605ea91cdcbda478c9
+    2026-09-26T16:31:56-04:00
+    extraccion-mundo-11
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 459
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+    $ bash .v79ext/censo.sh
+    nodos en dataset/nodos.jsonl        : 459
+    veredictos en bitacora              : 1172
+    pares mutuos                        : 1
+    bandeja cuarentena/marquet_turn_the_ship : 20
+    insertados de marquet_turn_the_ship : 0
+    cerrojos en procesos/               : 
+    $ python scripts/deuda.py --clase 79
+    SANEAMIENTO
+      han pasado 5 vuelta(s) desde la ultima de saneamiento (la 74) y la cadencia es 5, con 51 deuda(s) pendientes
+    $ python .v70aud/poblacion.py
+    poblacion: 479 | por sede: {'grafo': 459, 'bandeja': 20} | suma: 479
+    $ python .v78ext/pasos_y_huellas.py | tail -1
+    fichas de las filas 1 a 20: 20 | pasos: 110 | iguales a su blob en e9d0309: 18 | distintas: 2 | fichero de trabajo distinto de HEAD: 0
+
+**Coincide con la `ACTA 77` `77.1`** (`459`, `1172`, `1`; bandeja de Marquet `20`, insertados `0`; poblacion `479`, `459` del grafo mas
+`20` de bandejas), la clase con la del encargo, y **`procesos/` esta vacio**. `.v79ext/censo.sh` es copia de `.v78ext/censo.sh` con el
+comentario cambiado y ninguna linea de medida tocada (su cabecera lo dice). La salida entera de `pasos_y_huellas.py` al abrir esta en
+`.v79ext/huellas_apertura.txt`, **identica por `diff` a `.v78ext/pasos_y_huellas.txt`**: las `20` fichas de Marquet son byte a byte
+las que sello la `78`, y se vuelve a correr al cerrar.
+
+## 79.1. TAREA 1: LOS REGISTROS DE LA `ACTA 77`, SIN REABRIR EL ARGUMENTO (`D.47`)
+
+| que | donde |
+|---|---|
+| **mi vuelta, reproducida**: movio las `2` fichas corregidas y nada mas de dato; mis nueve instrumentos dan lo que pegue y el cierre estricto del auditor sale verde | `ACTA 77` `77.0`, `77.1` |
+| **mi fidelidad, mi barrido, mis lineas, mi arista y mi orden, cruzados enteros contra su lectura sellada**: ninguna diferencia de clase, de fila ni de arista | `77.3`, `77.4` |
+| **mis catorce discutibles se sostienen**, `D78.1` a `D78.14`; sus dos dudas de `cap_03` se cierran `T` por la figura de `D76.8` | `77.5` |
+| **mis dos fronteras declaradas**: la de Grove se sostiene y se agenda como `d183`; la de Zhuo va a relectura conjunta (TAREA 2) | `77.5` |
+| **`d150` firmada en su sustancia**: mi fila de `cap_03` es la que pedia | `77.3` |
+| **cero caidas mias**; `R5` y `R9` cumplidos | `77.0`, `77.2`, `77.7` |
+
+**Lo que aprendo, sin reabrir nada:** una frontera declarada que no marco discutible se lee igual que una marcada; la de Zhuo la
+escribi sin marca y el auditor la leyo al reves a ciegas. En esta vuelta marco lo que dude en el acto de escribirlo (TAREA 2.3).
+
+**`T1` CERRADA.**
+
+## 79.D. **LOS DISCUTIBLES DE LA TAREA 2, MARCADOS AL ESCRIBIR CADA FICHERO** (`EXTRACTOR.md` 8)
+
+Se marcaron dentro de `.v79ext/zhuo_decision.txt` y aqui, en el acto de escribir la decision y el texto, antes de saber si acierto.
+
+| | que | por que lo marco |
+|---|---|---|
+| `D79.1` | **la frontera de Zhuo no queda en pie: gana la lectura del auditor**, y el poster de `cap_13` `L127` no lo peso | el poster (ocho vinietas identicas, *Sit, sit, sit*) puede leerse como que Marquet quiere la repeticion identica tambien en la forma, y eso reabre la tension con las diez formas de Zhuo. No lo peso porque es CASO que la ficha deja fuera por su nombre y es un recordatorio para el propio autor, no una forma de decir el mensaje a nadie. Si el auditor lo lee como doctrina de forma, la frontera vuelve y su texto se prepara en la vuelta que inserte, por la misma via que la de Grove |
+| `D79.2` | **el texto de Grove escribe que lo que los dos conservan no los junta**: el seguimiento de Grove (`L249`, *comprobar que la actividad avanza segun lo esperado*) no es la medicion sin juicio que Marquet conserva (`cap_09` `L85`) | si se leen como la misma cosa, la contradiccion se estrecha a *quien decide lo que el de abajo hace*, y el parrafo de *EN QUE SE CONTRADICEN* diria mas de lo que los dos libros dicen. Lo leo distinto porque Grove vigila la tarea contra lo que el que delega espera, que es exactamente el sistema *whereby senior personnel are determining what junior personnel should be doing* que `L85` quita |
+
+## 79.2. TAREA 2: LA RELECTURA CONJUNTA DE LA FRONTERA DE ZHUO, Y EL TEXTO DE LAS FRONTERAS DEJADO LISTO (`1.3`, `6.1`, `ACTA 77` `77.5`)
+
+### 79.2.1. La de Zhuo: los pasos de los dos y las lineas de los dos libros
+
+Salida entera en `.v79ext/zhuo_evidencia.txt`:
+
+    $ python .v64aud/pasos.py comunicar_valores_diez_formas repetir_mensaje_invariable_diario_reunion_evento | grep -E "^=====|P2\.|P3\.|P5\.|P1\."
+    ===== comunicar_valores_diez_formas | grafo
+      P1. Quitate la idea de que repetirse es de mal estilo, que es lo que la autora creia al empezar a dirigir: se figuraba que su equipo lo encontraria molesto, y quiza incluso condescendiente, si decia lo mismo una y otra vez.
+      P2. Cuando algo te importe hondamente, no rehuyas hablar de ello: al contrario, abraza el decirle a la gente por que te importa.
+      P3. Cuenta con que para que el mensaje cale hay que oirlo diez veces distintas y decirlo de diez formas distintas.
+      P5. Usa las cuatro vias que la autora nombra como las que ella prueba: conversaciones a solas sobre lo que le ronda la cabeza, correos a sus directivos con sus reflexiones de la semana, notas a todo su equipo sobre las prioridades de arriba, y sesiones de preguntas y respuestas en persona centradas en como trabajamos.
+    ===== repetir_mensaje_invariable_diario_reunion_evento | cuarentena\marquet_turn_the_ship\repetir_mensaje_invariable_diario_reunion_evento.json
+      P1. Repite el mismo mensaje dia tras dia, reunion tras reunion, evento tras evento. El texto lo dice asi: Repeat the same message day after day, meeting after meeting, event after event.
+      P2. No cambies el mensaje aunque suene redundante, repetitivo y aburrido: la alternativa, cambiarlo, produce confusion y falta de direccion. El texto lo dice asi: Sounds redundant, repetitive, and boring. But what's the alternative? Changing the message? That results in confusion and a lack of direction.
+    $ grep -n -o 'Repeat the same message day after day, meeting after meeting, event after event' fuentes/marquet_turn_the_ship/cap_13.md
+    119:Repeat the same message day after day, meeting after meeting, event after event
+    $ grep -n -o 'Changing the message? That results in confusion and a lack of direction' fuentes/marquet_turn_the_ship/cap_13.md
+    119:Changing the message? That results in confusion and a lack of direction
+    $ grep -n -o 'CONTINUALLY AND CONSISTENTLY REPEAT THE MESSAGE' fuentes/marquet_turn_the_ship/cap_13.md
+    117:CONTINUALLY AND CONSISTENTLY REPEAT THE MESSAGE
+    $ grep -n -o 'The first eight frames were identical' fuentes/marquet_turn_the_ship/cap_13.md
+    127:The first eight frames were identical
+    $ grep -n -o 'for the message to stick, it should be heard ten different times and said in ten different ways' fuentes/zhuo_manager/cap_11.md
+    91:for the message to stick, it should be heard ten different times and said in ten different ways
+    $ grep -n -o 'reinforcing the same messages' fuentes/zhuo_manager/cap_11.md
+    95:reinforcing the same messages
+    $ grep -n -o 'I try different approaches' fuentes/zhuo_manager/cap_11.md
+    93:I try different approaches
+
+**DECIDO, CON LA VARA `6.1` Y SOLO ESA: GANA LA LECTURA DEL AUDITOR, Y LA FRONTERA DE ZHUO NO QUEDA EN PIE** (`D79.1`). La razon entera
+esta en `.v79ext/zhuo_decision.txt`; en cuatro lineas:
+
+- **Lo invariable es lo mismo en los dos libros, y es el mensaje.** Zhuo pone en la misma frase de `L91` la variacion en el decir y la
+  invariante en el mensaje (*for the message to stick*), y en `L95` cuenta el efecto como otros reforzando *the same messages*.
+- **Lo que Marquet prohibe es cambiar el mensaje, no la forma** (`L119`), y lo que manda es repetirlo en tres ocasiones distintas.
+  Ningun paso de la ficha manda decirlo con las mismas palabras.
+- **Lo que Zhuo varia (las diez formas y las cuatro vias, su paso `5`, `L93`) no lo prohibe ningun paso de Marquet, y lo que Marquet
+  prohibe no lo manda ningun paso de Zhuo.** No hay acto sobre el que manden cosas contrarias, que es lo que la fila *dos doctrinas
+  legitimas* pide y lo que el precedente de la `ACTA 50` `50.5.b` tenia (dos ordenes contrarias sobre con que se abre la misma reunion).
+- **No se poda ni se funde nada**: los dos nodos quedan enteros con su fuente. El par no es vecino del barrido (`0` lineas con
+  `comunicar_valores_diez_formas` en `.v78ext/vecinos_repetir_mensaje_invariable_diario_reunion_evento.json`), asi que ninguna clase ni
+  linea se mueve, y la arista sigue en `NO SOSTENGO`.
+
+**CORRECCION DECLARADA DE MI FILA DE LA `78`, SIN BORRARLA** (encargo TAREA 2.1): la fila de `.v78ext/aristas_lectura.txt` que lee
+`comunicar_valores_diez_formas` contra `repetir_mensaje_invariable_diario_reunion_evento` se queda escrita como esta. **Su clase `NO
+SOSTENGO` se sostiene; su razon `FRONTERA DECLARADA` se corrige: es convergencia sin contradiccion, ni madre ni frontera**, y para este
+par no se prepara texto. Mi fila leia *diez formas distintas* como *cambiar el mensaje*, y el libro de Zhuo dice en la misma frase que
+lo que tiene que calar es el mensaje.
+
+### 79.2.2. La de Grove: el texto preparado y NO escrito
+
+**Es la unica que queda en pie**, sostenida en la `ACTA 77` `77.5`. Las citas, en `.v79ext/grove_evidencia.txt`:
+
+    $ python .v64aud/pasos.py delegar_tarea_base_comun_seguimiento eliminar_seguimiento_descendente_responsabilizar_dueno | grep -E "^=====|P6\.|P7\.|P8\.|P1\.|P2\."
+    ===== delegar_tarea_base_comun_seguimiento | grafo
+      P1. Cuenta con que el tiempo de un mando tiene una jerarquia de valores, y con que por eso la delegacion es un aspecto esencial del mando.
+      P2. Antes de delegar, comprueba que quien delega y quien recibe comparten una base comun de informacion y un conjunto comun de ideas o nociones operativas sobre como abordar la resolucion de problemas, que es un requisito que muchas veces no se cumple.
+      P6. Antes de decidir si delegas las actividades que te son familiares o las que no, aplica el principio: delegar sin seguimiento es abdicar.
+      P7. Cuenta con que nunca puedes lavarte las manos de una tarea: aun despues de delegarla sigues siendo responsable de que se cumpla, y supervisar la tarea delegada es la unica via practica que tienes de asegurar un resultado.
+      P8. Separa el seguimiento de la intromision: supervisar no es entrometerse, sino comprobar que una actividad avanza en linea con lo que se espera de ella.
+    ===== eliminar_seguimiento_descendente_responsabilizar_dueno | cuarentena\marquet_turn_the_ship\eliminar_seguimiento_descendente_responsabilizar_dueno.json
+      P1. Dile a cada responsable de un area que el mismo, y no su superior, es quien debe vigilar sus propios pendientes y responder por completarlos. El texto lo dice asi: You are all going to monitor your own departments and whatever is due. You are responsible, not me and not the XO, for getting it done.
+      P2. Deja de mantener el sistema centralizado que solo vigilaba y reportaba el estado de esos pendientes, con sus reuniones de revision, porque ya no hace falta. El texto lo dice asi: we unburdened ourselves of the effort of maintaining the tickler.
+    $ grep -n -o 'delegation without follow-through is abdication' fuentes/grove_high_output/cap_04.md
+    249:delegation without follow-through is abdication
+    $ grep -n -o 'You can never wash your hands of a task' fuentes/grove_high_output/cap_04.md
+    249:You can never wash your hands of a task
+    $ grep -n -o 'monitoring the delegated task is the only practical way for you to ensure a result' fuentes/grove_high_output/cap_04.md
+    249:monitoring the delegated task is the only practical way for you to ensure a result
+    $ grep -n -o 'Monitoring is not meddling' fuentes/grove_high_output/cap_04.md
+    249:Monitoring is not meddling
+    $ grep -n -o 'You are all going to monitor your own departments and whatever is due' fuentes/marquet_turn_the_ship/cap_09.md
+    71:You are all going to monitor your own departments and whatever is due
+    $ grep -n -o 'You are responsible, not me and not the XO, for getting it done' fuentes/marquet_turn_the_ship/cap_09.md
+    71:You are responsible, not me and not the XO, for getting it done
+    $ grep -n -o 'we unburdened ourselves of the effort of maintaining the tickler' fuentes/marquet_turn_the_ship/cap_09.md
+    73:we unburdened ourselves of the effort of maintaining the tickler
+    $ grep -n -o 'Eliminating top-down monitoring systems will do it for you' fuentes/marquet_turn_the_ship/cap_09.md
+    85:Eliminating top-down monitoring systems will do it for you
+    $ grep -n -o 'simply report conditions without judgment' fuentes/marquet_turn_the_ship/cap_09.md
+    85:simply report conditions without judgment
+    $ grep -n -o 'What you want to avoid are the systems whereby senior personnel are determining what junior personnel should be doing' fuentes/marquet_turn_the_ship/cap_09.md
+    85:What you want to avoid are the systems whereby senior personnel are determining what junior personnel should be doing
+
+**El texto, en `.v79ext/frontera_grove.txt`**: una linea `ANADE`, que empieza por `CORRECCION DECLARADA` y escribe las dos posiciones con
+sus pasos impresos y sus lineas (`cap_09` `L71`, `L73` y `L85`; `cap_04` `L249`), en que se contradicen dicho sin suavizarlo, y por que
+no es duplicado ni madre; y una linea `RAZON`, con el pago de `d183`. La cabecera del fichero dice el comando exacto, con
+`--nodo eliminar_seguimiento_descendente_responsabilizar_dueno`, y que **se corre despues de que el nodo entre**. Sigue el molde del unico
+texto de frontera que vive hoy en el grafo, el de `cubrir_indicadores_problemas_reunion_individual` (pago de `d052`, `ACTA 50` `50.5.b`).
+**Comprobado sin correr `corregir`**, contra las constantes de `src/correccion.py` y el barrido de guiones de `src/comun.py`:
+
+    $ python -c "import io,sys; sys.path.insert(0,\".\"); from src import comun, correccion; l=io.open(\".v79ext/frontera_grove.txt\",encoding=\"utf-8\").read().split(\"\n\"); a=l[l.index(\"ANADE:\")+1]; r=l[l.index(\"RAZON:\")+1]; print(\"anade: empieza por la marca:\", a.startswith(correccion.MARCA), \"| caracteres:\", len(a), \"minimo:\", correccion.MINIMO_TEXTO, \"| guiones prohibidos:\", len(comun.buscar_guiones(a)), \"| comillas dobles:\", a.count(chr(34))); print(\"razon: caracteres:\", len(r), \"| guiones prohibidos:\", len(comun.buscar_guiones(r)), \"| comillas dobles:\", r.count(chr(34)))"
+    anade: empieza por la marca: True | caracteres: 3296 minimo: 40 | guiones prohibidos: 0 | comillas dobles: 0
+    razon: caracteres: 498 | guiones prohibidos: 0 | comillas dobles: 0
+
+**No corro `corregir` en esta vuelta**: `eliminar_seguimiento_descendente_responsabilizar_dueno` vive en la bandeja, no en el grafo.
+**`d183` no se paga aqui**: se paga en la vuelta que inserte, con este texto.
+
+**`T2` CERRADA.**

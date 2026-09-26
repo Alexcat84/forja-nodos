@@ -1,0 +1,23 @@
+$ python .v64aud/pasos.py comunicar_valores_diez_formas repetir_mensaje_invariable_diario_reunion_evento | grep -E "^=====|P2\.|P3\.|P5\.|P1\."
+===== comunicar_valores_diez_formas | grafo
+  P1. Quitate la idea de que repetirse es de mal estilo, que es lo que la autora creia al empezar a dirigir: se figuraba que su equipo lo encontraria molesto, y quiza incluso condescendiente, si decia lo mismo una y otra vez.
+  P2. Cuando algo te importe hondamente, no rehuyas hablar de ello: al contrario, abraza el decirle a la gente por que te importa.
+  P3. Cuenta con que para que el mensaje cale hay que oirlo diez veces distintas y decirlo de diez formas distintas.
+  P5. Usa las cuatro vias que la autora nombra como las que ella prueba: conversaciones a solas sobre lo que le ronda la cabeza, correos a sus directivos con sus reflexiones de la semana, notas a todo su equipo sobre las prioridades de arriba, y sesiones de preguntas y respuestas en persona centradas en como trabajamos.
+===== repetir_mensaje_invariable_diario_reunion_evento | cuarentena\marquet_turn_the_ship\repetir_mensaje_invariable_diario_reunion_evento.json
+  P1. Repite el mismo mensaje dia tras dia, reunion tras reunion, evento tras evento. El texto lo dice asi: Repeat the same message day after day, meeting after meeting, event after event.
+  P2. No cambies el mensaje aunque suene redundante, repetitivo y aburrido: la alternativa, cambiarlo, produce confusion y falta de direccion. El texto lo dice asi: Sounds redundant, repetitive, and boring. But what's the alternative? Changing the message? That results in confusion and a lack of direction.
+$ grep -n -o 'Repeat the same message day after day, meeting after meeting, event after event' fuentes/marquet_turn_the_ship/cap_13.md
+119:Repeat the same message day after day, meeting after meeting, event after event
+$ grep -n -o 'Changing the message? That results in confusion and a lack of direction' fuentes/marquet_turn_the_ship/cap_13.md
+119:Changing the message? That results in confusion and a lack of direction
+$ grep -n -o 'CONTINUALLY AND CONSISTENTLY REPEAT THE MESSAGE' fuentes/marquet_turn_the_ship/cap_13.md
+117:CONTINUALLY AND CONSISTENTLY REPEAT THE MESSAGE
+$ grep -n -o 'The first eight frames were identical' fuentes/marquet_turn_the_ship/cap_13.md
+127:The first eight frames were identical
+$ grep -n -o 'for the message to stick, it should be heard ten different times and said in ten different ways' fuentes/zhuo_manager/cap_11.md
+91:for the message to stick, it should be heard ten different times and said in ten different ways
+$ grep -n -o 'reinforcing the same messages' fuentes/zhuo_manager/cap_11.md
+95:reinforcing the same messages
+$ grep -n -o 'I try different approaches' fuentes/zhuo_manager/cap_11.md
+93:I try different approaches

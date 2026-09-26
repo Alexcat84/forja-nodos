@@ -1,0 +1,30 @@
+$ python .v64aud/pasos.py delegar_tarea_base_comun_seguimiento eliminar_seguimiento_descendente_responsabilizar_dueno | grep -E "^=====|P6\.|P7\.|P8\.|P1\.|P2\."
+===== delegar_tarea_base_comun_seguimiento | grafo
+  P1. Cuenta con que el tiempo de un mando tiene una jerarquia de valores, y con que por eso la delegacion es un aspecto esencial del mando.
+  P2. Antes de delegar, comprueba que quien delega y quien recibe comparten una base comun de informacion y un conjunto comun de ideas o nociones operativas sobre como abordar la resolucion de problemas, que es un requisito que muchas veces no se cumple.
+  P6. Antes de decidir si delegas las actividades que te son familiares o las que no, aplica el principio: delegar sin seguimiento es abdicar.
+  P7. Cuenta con que nunca puedes lavarte las manos de una tarea: aun despues de delegarla sigues siendo responsable de que se cumpla, y supervisar la tarea delegada es la unica via practica que tienes de asegurar un resultado.
+  P8. Separa el seguimiento de la intromision: supervisar no es entrometerse, sino comprobar que una actividad avanza en linea con lo que se espera de ella.
+===== eliminar_seguimiento_descendente_responsabilizar_dueno | cuarentena\marquet_turn_the_ship\eliminar_seguimiento_descendente_responsabilizar_dueno.json
+  P1. Dile a cada responsable de un area que el mismo, y no su superior, es quien debe vigilar sus propios pendientes y responder por completarlos. El texto lo dice asi: You are all going to monitor your own departments and whatever is due. You are responsible, not me and not the XO, for getting it done.
+  P2. Deja de mantener el sistema centralizado que solo vigilaba y reportaba el estado de esos pendientes, con sus reuniones de revision, porque ya no hace falta. El texto lo dice asi: we unburdened ourselves of the effort of maintaining the tickler.
+$ grep -n -o 'delegation without follow-through is abdication' fuentes/grove_high_output/cap_04.md
+249:delegation without follow-through is abdication
+$ grep -n -o 'You can never wash your hands of a task' fuentes/grove_high_output/cap_04.md
+249:You can never wash your hands of a task
+$ grep -n -o 'monitoring the delegated task is the only practical way for you to ensure a result' fuentes/grove_high_output/cap_04.md
+249:monitoring the delegated task is the only practical way for you to ensure a result
+$ grep -n -o 'Monitoring is not meddling' fuentes/grove_high_output/cap_04.md
+249:Monitoring is not meddling
+$ grep -n -o 'You are all going to monitor your own departments and whatever is due' fuentes/marquet_turn_the_ship/cap_09.md
+71:You are all going to monitor your own departments and whatever is due
+$ grep -n -o 'You are responsible, not me and not the XO, for getting it done' fuentes/marquet_turn_the_ship/cap_09.md
+71:You are responsible, not me and not the XO, for getting it done
+$ grep -n -o 'we unburdened ourselves of the effort of maintaining the tickler' fuentes/marquet_turn_the_ship/cap_09.md
+73:we unburdened ourselves of the effort of maintaining the tickler
+$ grep -n -o 'Eliminating top-down monitoring systems will do it for you' fuentes/marquet_turn_the_ship/cap_09.md
+85:Eliminating top-down monitoring systems will do it for you
+$ grep -n -o 'simply report conditions without judgment' fuentes/marquet_turn_the_ship/cap_09.md
+85:simply report conditions without judgment
+$ grep -n -o 'What you want to avoid are the systems whereby senior personnel are determining what junior personnel should be doing' fuentes/marquet_turn_the_ship/cap_09.md
+85:What you want to avoid are the systems whereby senior personnel are determining what junior personnel should be doing
