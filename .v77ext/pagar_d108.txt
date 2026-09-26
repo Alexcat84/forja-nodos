@@ -1,0 +1,7 @@
+$ python scripts/deuda.py --pagar d108 --vuelta 77 --como "<como>"
+PAGADA d108 en la vuelta 77
+rc=0
+como: Releida con las dos delante en la vuelta 76 (REPORTE 76.4.2, D76.19) y firmada por el auditor en la ACTA 75 seccion 75.4: cap_14 L27 y L117 son el mismo objeto, el cuestionario del Primary Aim (L29 dice que el Primary Aim es la respuesta a las preguntas de L27, y L135 que las de L117 son algunas de las que te haces para crearlo). La ficha responder_8_preguntas_construir_primary_aim vive en L117, la lista que el libro da como procedimiento, y L27 es el marco del capitulo. Entra en el grafo en la vuelta 77, fila 14, SIN TOCAR LA FICHA y sin segundo nodo, que es la decision que la ACTA G4 firmo.
+$ python scripts/deuda.py --clase 78
+LIBRE
+  van 4 de 5 desde la ultima de saneamiento (la 74), con 50 deuda(s) esperando

@@ -65848,7 +65848,7 @@ falte es exactamente lo que no tiene fila.
 | `T1` | los registros de la `ACTA 75` | **CERRADA** (`77.1`) |
 | `T2` | la relectura conjunta: el par de la contratacion y la arista `fingir` a `recorrer` | **CERRADA** (`77.2`): las dos me convencen; aristas esperadas de `8` a `10`, el orden sin mover |
 | `T3` | lo que entra es lo que se leyo: las huellas de las `22` fichas | **CERRADA** (`77.3`): identicas a `.v76ext/pasos_y_huellas.txt` |
-| `T4` | las `22` filas de `.v76ext/orden.txt`, una por vez | ABIERTA |
+| `T4` | las `22` filas de `.v76ext/orden.txt`, una por vez | **CERRADA** (`77.4`): las `22` insertadas, sus `54` lineas pasadas, las `10` aristas esperadas en el grafo; `d111` y `d108` pagadas |
 | `T5` | el cierre | ABIERTA |
 
 ## 77.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
@@ -66634,3 +66634,59 @@ La aduana de hoy: **BLOQUEARIA** con `2` vecino(s) contra `479`; lineas `--vered
     hoy 2 vecinos, barrido de la 76 2 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (458 grafo, 21 bandejas), en la 76 479 (437, 42)
 
 **Los dos vecinos son los de su bloque y las dos lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `76`, las tres seniales al digito; la poblacion, `479` (`458` mas `21`). **La aduana cablea en el acto la arista `construir_estrategia_gente_cuatro_componentes > aplicar_cinco_pasos_proceso_contratacion`**, la de la relectura conjunta (`77.2.1`) que la fila `19` dejo en cola: **decima de las `10` aristas esperadas en el grafo.** Bitacora de `1170` a `1172`: la linea `CONTINUA` y la `SANO` con `fingir`.
+
+### 77.4.5. **`d108`, PAGADA** (encargo TAREA 4.5)
+
+Con la lectura de mi `76.4.2`, firmada en la `ACTA 75` `75.4`, y **sin tocar la ficha**: `responder_8_preguntas_construir_primary_aim` entro
+en la fila `14` con la huella que la `76` sello (`77.3`). `d111` se pago en la fila `19`, con la arista ya viva. **`d098` y `d104` siguen
+vivas**: ninguna de las `22` es su cabeza (`ACTA 75` `75.1`, `75.4`). La cuenta de deudas, de `52` al abrir (`77.0`) a `50`:
+
+<!-- TALLADO: parcial salida=.v77ext/pagar_d108.txt -->
+
+    $ python scripts/deuda.py --pagar d108 --vuelta 77 --como "<como>"
+    PAGADA d108 en la vuelta 77
+    rc=0
+    como: Releida con las dos delante en la vuelta 76 (REPORTE 76.4.2, D76.19) y firmada por el auditor en la ACTA 75 seccion 75.4: cap_14 L27 y L117 son el mismo objeto, el cuestionario del Primary Aim (L29 dice que el Primary Aim es la respuesta a las preguntas de L27, y L135 que las de L117 son algunas de las que te haces para crearlo). La ficha responder_8_preguntas_construir_primary_aim vive en L117, la lista que el libro da como procedimiento, y L27 es el marco del capitulo. Entra en el grafo en la vuelta 77, fila 14, SIN TOCAR LA FICHA y sin segundo nodo, que es la decision que la ACTA G4 firmo.
+    $ python scripts/deuda.py --clase 78
+    LIBRE
+      van 4 de 5 desde la ultima de saneamiento (la 74), con 50 deuda(s) esperando
+
+### 77.4.6. **LAS ARISTAS DE LA TANDA, POR INSTRUMENTO** (encargo TAREA 4.6)
+
+`.v77ext/aristas_vuelta.py` y `.v77ext/nodos_viejos.py` son copias de las de la `75` con la apertura, la tanda y las sedes cambiadas;
+la primera mira ademas **los dos lados** de cada arista (la madre con el hijo en `nodos_siguientes` Y el hijo con la madre en
+`nodos_previos`) y el veredicto que cada registro lleva en la bitacora:
+
+<!-- TALLADO: parcial salida=.v77ext/aristas_vuelta.txt -->
+
+    $ python .v77ext/aristas_vuelta.py
+    registros de la vuelta en la bitacora: 61
+    EN GRAFO   lectura declarada   SANO      fingir_prototipo_cinco_mil_replicas > dar_valor_constante_cuatro_publicos
+    EN GRAFO   lectura declarada   SANO      fingir_prototipo_cinco_mil_replicas > operar_modelo_gente_destreza_minima
+    EN GRAFO   lectura declarada   SANO      fingir_prototipo_cinco_mil_replicas > unificar_color_forma_vestuario_modelo
+    EN GRAFO   veredicto CONTINUA  CONTINUA  cambiar_saludo_cliente_dos_ramas > cuantificar_impacto_innovacion_6_pasos
+    EN GRAFO   veredicto CONTINUA  CONTINUA  cambiar_saludo_cliente_dos_ramas > cuantificar_impacto_innovacion_6_pasos
+    EN GRAFO   lectura declarada   CONTINUA  fingir_prototipo_cinco_mil_replicas > recorrer_siete_pasos_programa_desarrollo_negocio
+    EN GRAFO   veredicto CONTINUA  CONTINUA  aplicar_seis_pasos_sistema_venta > medir_sistema_venta_trece_indicadores_benchmark
+    EN GRAFO   veredicto CONTINUA  CONTINUA  aplicar_seis_pasos_sistema_venta > medir_sistema_venta_trece_indicadores_benchmark
+    EN GRAFO   veredicto CONTINUA  CONTINUA  construir_estrategia_gente_cuatro_componentes > aplicar_cinco_pasos_proceso_contratacion
+    EN GRAFO   lectura declarada   SANO      recorrer_siete_pasos_programa_desarrollo_negocio > construir_estrategia_gente_cuatro_componentes
+    EN GRAFO   lectura declarada   SANO      fingir_prototipo_cinco_mil_replicas > documentar_trabajo_manual_operaciones
+    EN GRAFO   lectura declarada   SANO      construir_estrategia_gente_cuatro_componentes > documentar_trabajo_manual_operaciones
+    EN GRAFO   veredicto CONTINUA  CONTINUA  construir_estrategia_gente_cuatro_componentes > aplicar_cinco_pasos_proceso_contratacion
+    registros con arista sin veredicto: 0
+    registros con arista: 13 | aristas DISTINTAS: 10 | en el grafo: 10 | en cola: 0 (un par CONTINUA leido desde sus dos lados deja dos registros y una sola arista)
+    esperadas: 10 | esperadas que viven en el grafo: 10 | esperadas sin registro: 0 | registradas no esperadas: 0
+
+<!-- TALLADO: parcial salida=.v77ext/nodos_viejos.txt -->
+
+    $ python .v77ext/nodos_viejos.py
+    nodos al abrir: 437 | hoy: 459 | nuevos: 22 | nuevos que son de las 22 filas: 22 | viejos que cambian: 0 | cambios fuera de nodos_siguientes de una madre y de la TAREA 2: 0
+
+**LECTURA:** **las `10` esperadas de `77.2.3` viven en el grafo por los dos lados**, ninguna en cola y ninguna registrada sin esperar;
+**ningun registro de arista sin veredicto**: `6` `SANO` por `D.37` y `D.53`, `1` `CONTINUA` por mi lectura `D.29` (`fingir` a `recorrer`), y
+`3` `CONTINUA` por linea, que dejan `6` registros (cada par leido desde sus dos lados). La bitacora gano `61` registros, de `1111` a
+`1172`: las `54` lineas de las `22` mas las `7` aristas por lectura. **Ningun nodo viejo cambio**: todas las madres de la tanda son de la
+tanda, asi que los `437` de la apertura siguen como estaban, y los `22` nuevos son exactamente las `22` filas.
+
+**`T4` CERRADA**: las `22` filas insertadas, cada una con su fila y su commit.
