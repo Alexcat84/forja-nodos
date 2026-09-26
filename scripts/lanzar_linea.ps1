@@ -17,6 +17,13 @@
 # sesion) que corre `wscript` con un .vbs que arranca el Git Bash con la ventana OCULTA
 # (estilo 0) y sin esperarlo. Sin ventana que cerrar, y sin atadura a la sesion.
 #
+# PRIORIDAD BAJA (decision del fundador, 25 sep 2026). Lo primero que hace el envoltorio es
+# bajarse a si mismo a BelowNormal (scripts/prioridad_baja.ps1, con su pid de Windows, que Git
+# Bash da en /proc/$$/winpid), y solo despues arranca la orden: todo lo que cuelga de la linea
+# nace BelowNormal por herencia. El resultado queda en <Log>.prioridad y este lanzador lo
+# muestra. Con cinco barridos a la vez el equipo se trabo el 25 sep; con la prioridad baja,
+# el que teclea va primero.
+#
 # EL PID QUE SE VIGILA es el del bash ENVOLTORIO en el espacio de Git Bash, escrito en
 # <Log>.pid por el propio envoltorio. El envoltorio NO hace exec (lleva una orden detras)
 # y por eso su pid dura lo que dura la linea. Se comprueba con `kill -0` desde Git Bash.
@@ -33,7 +40,9 @@ $bash = "C:\Program Files\Git\usr\bin\bash.exe"
 if (-not (Test-Path $bash)) { throw "no encuentro el Git Bash en $bash (y bash.exe a secas es el de WSL)" }
 
 $unix = "/" + ($Arbol.Substring(0, 1).ToLower()) + ($Arbol.Substring(2) -replace '\\', '/')
-$linea = "cd '$unix' && echo `$`$ > '$Log.pid' && env $Variables $Orden > '$Log' 2>&1; echo FIN `$(date) >> '$Log'"
+$prioridad = ((Join-Path $PSScriptRoot "prioridad_baja.ps1") -replace '\\', '/')
+& $bash -lc "rm -f '$Log.prioridad'"
+$linea = "cd '$unix' && echo `$`$ > '$Log.pid' && powershell.exe -NoProfile -ExecutionPolicy Bypass -File '$prioridad' -Id `$(cat /proc/`$`$/winpid) > '$Log.prioridad' 2>&1; env $Variables $Orden > '$Log' 2>&1; echo FIN `$(date) >> '$Log'"
 
 # el .vbs arranca el bash OCULTO (0) y no lo espera (False)
 $vbs = Join-Path $env:TEMP "forja_lanzar_$Nombre.vbs"
@@ -48,3 +57,12 @@ $ajustes = New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries -DontStopIfGoin
 Register-ScheduledTask -TaskName $tarea -Action $accion -Settings $ajustes -Force | Out-Null
 Start-ScheduledTask -TaskName $tarea
 Write-Output "LANZADA por la tarea '$tarea', oculta, log $Log, pid en $Log.pid"
+
+# la prioridad baja, comprobada: el envoltorio la escribe en <Log>.prioridad antes de arrancar la orden
+$visto = ""
+for ($i = 0; $i -lt 60 -and -not $visto; $i++) {
+    Start-Sleep -Seconds 1
+    $visto = (& $bash -lc "cat '$Log.prioridad' 2>/dev/null") -join " "
+}
+if ($visto -match "BelowNormal") { Write-Output "PRIORIDAD BAJA: $visto" }
+else { Write-Output "AVISO: la prioridad baja no se confirmo en 60 s ($visto); bajala a mano" }

@@ -32,6 +32,8 @@ import json
 import os
 import subprocess
 import sys
+import threading
+import time
 
 from . import censos
 from . import cerrojo
@@ -39,6 +41,7 @@ from . import comun
 from . import config as modulo_config
 from . import esquema as modulo_esquema
 from . import gate
+from . import presupuesto
 from . import reglas_id
 from .resolutor import Resolutor
 
@@ -302,12 +305,18 @@ def senal_similitud_texto(texto_a, texto_b):
 # candidatos de Grove y 479 pares por candidato. Medido en la vuelta 70: el tiempo de
 # cada fila era casi proporcional a la longitud del candidato (0,26 s por caracter).
 #
-# LO QUE CAMBIA ES SOLO QUIEN CALCULA: los pares se reparten entre procesos (como
-# mucho tantos como nucleos menos uno, y la variable FORJA_PROCESOS_SIMILITUD lo
-# puede bajar). La formula es la misma funcion, `senal_similitud_texto`, llamada
-# con los mismos dos textos; el resultado vuelve por `repr` y `float`, que en
-# Python es un viaje exacto, y en el mismo orden de la poblacion. Si un proceso
+# LO QUE CAMBIA ES SOLO QUIEN CALCULA: los pares se reparten entre procesos. La
+# formula es la misma funcion, `senal_similitud_texto`, llamada con los mismos dos
+# textos; el resultado vuelve por `repr` y `float`, que en Python es un viaje
+# exacto, y cada trozo vuelve a su sitio en el orden de la poblacion. Si un proceso
 # falla, ese trozo se calcula aqui, en serie: el resultado no depende del reparto.
+#
+# CUANTOS PROCESOS: los que da el PRESUPUESTO UNICO de la maquina (`presupuesto.py`,
+# decision del fundador del 25 sep 2026). Entre todos los barridos y aduanas que
+# corran a la vez nunca hay mas procesos de calculo que nucleos menos uno: cada
+# proceso arranca con una plaza tomada, y cada reparto toma solo su parte justa,
+# que se vuelve a mirar antes de cada trozo. La variable FORJA_PROCESOS_SIMILITUD
+# baja aun mas el tope de un reparto.
 #
 # Los procesos se lanzan con `subprocess` y no con `multiprocessing` A PROPOSITO: en
 # Windows `multiprocessing` vuelve a importar el programa principal en cada hijo, y
@@ -315,10 +324,11 @@ def senal_similitud_texto(texto_a, texto_b):
 
 VARIABLE_PROCESOS_SIMILITUD = "FORJA_PROCESOS_SIMILITUD"
 MINIMO_PARA_REPARTIR = 40
+TROZOS_POR_PLAZA = 2         # trozos mas pequenos que plazas: la cuota se revisa a menudo
 
 
 def _procesos_similitud(n):
-    nucleos = max(1, (os.cpu_count() or 1) - 1)
+    nucleos = presupuesto.total()
     try:
         tope = int(os.environ.get(VARIABLE_PROCESOS_SIMILITUD, "0") or "0")
     except ValueError:
@@ -348,50 +358,69 @@ def trabajador_similitud():
     sys.stdout.buffer.write(json.dumps(salida).encode("utf-8"))
 
 
+def _trozo_en_proceso(texto_a, trozo, raiz):
+    """La señal 1 de un trozo, calculada en un proceso aparte; en serie si falla."""
+    codigo = ("import sys; sys.path.insert(0, %r); from src import aduana; "
+              "aduana.trabajador_similitud()" % raiz)
+    try:
+        proceso = subprocess.Popen([sys.executable, "-c", codigo], cwd=raiz,
+                                   stdin=subprocess.PIPE, stdout=subprocess.PIPE,
+                                   stderr=subprocess.DEVNULL)
+        crudo, _ = proceso.communicate(json.dumps({"a": texto_a, "bs": trozo}).encode("utf-8"))
+        if proceso.returncode == 0:
+            parte = [_decodificar_senal(d) for d in json.loads(crudo.decode("utf-8"))]
+            if len(parte) == len(trozo):
+                return parte
+    except (OSError, ValueError, KeyError):
+        pass
+    return [senal_similitud_texto(texto_a, b) for b in trozo]
+
+
 def similitudes_repartidas(texto_a, textos_b):
     """La señal 1 de `texto_a` contra cada texto de `textos_b`, en su orden."""
     n = len(textos_b)
     procesos = _procesos_similitud(n)
     if procesos <= 1 or n < MINIMO_PARA_REPARTIR:
         return [senal_similitud_texto(texto_a, b) for b in textos_b]
-    tamano = -(-n // procesos)
+    try:
+        presupuesto.directorio()
+    except OSError:
+        return [senal_similitud_texto(texto_a, b) for b in textos_b]
+    tamano = max(1, -(-n // (presupuesto.total() * TROZOS_POR_PLAZA)))
     trozos = [textos_b[i:i + tamano] for i in range(0, n, tamano)]
     raiz = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    codigo = ("import sys; sys.path.insert(0, %r); from src import aduana; "
-              "aduana.trabajador_similitud()" % raiz)
-    lanzados = []
-    for trozo in trozos:
-        try:
-            proceso = subprocess.Popen([sys.executable, "-c", codigo], cwd=raiz,
-                                       stdin=subprocess.PIPE, stdout=subprocess.PIPE,
-                                       stderr=subprocess.DEVNULL)
-        except OSError:
-            proceso = None
-        lanzados.append((proceso, trozo))
-    for proceso, trozo in lanzados:
-        if proceso is None:
-            continue
-        try:
-            proceso.stdin.write(json.dumps({"a": texto_a, "bs": trozo}).encode("utf-8"))
-            proceso.stdin.close()
-        except OSError:
-            pass
-    resultado = []
-    for proceso, trozo in lanzados:
-        parte = None
-        if proceso is not None:
+    partes = [None] * len(trozos)
+    pendientes = list(range(len(trozos)))
+    candado = threading.Lock()
+    plazas = presupuesto.Plazas()
+
+    def hilo():
+        while True:
+            with candado:
+                if not pendientes:
+                    return
+            plaza = plazas.tomar()
+            if plaza is None:
+                time.sleep(presupuesto.ESPERA)
+                continue
             try:
-                with proceso.stdout:
-                    crudo = proceso.stdout.read()
-                proceso.wait()
-                if proceso.returncode == 0:
-                    parte = [_decodificar_senal(d) for d in json.loads(crudo.decode("utf-8"))]
-                    if len(parte) != len(trozo):
-                        parte = None
-            except (OSError, ValueError, KeyError):
-                parte = None
-        if parte is None:
-            parte = [senal_similitud_texto(texto_a, b) for b in trozo]
+                with candado:
+                    if not pendientes:
+                        return
+                    i = pendientes.pop(0)
+                partes[i] = _trozo_en_proceso(texto_a, trozos[i], raiz)
+            finally:
+                plazas.devolver(plaza)
+
+    with presupuesto.Presencia():
+        hilos = [threading.Thread(target=hilo) for _ in range(min(procesos, len(trozos)))]
+        for h in hilos:
+            h.start()
+        for h in hilos:
+            h.join()
+    similitudes_repartidas.maximo_de_plazas = plazas.maximo
+    resultado = []
+    for parte in partes:
         resultado.extend(parte)
     return resultado
 
@@ -620,10 +649,13 @@ def buscar_vecinos(candidato, nodos, umbrales=None):
     # funcion, mismo orden; solo cambia cuantos procesos la calculan a la vez.
     similitudes = similitudes_repartidas(comun.texto_comparable(candidato),
                                          [comun.texto_comparable(n) for n in elegibles])
-    for nodo, similitud in zip(elegibles, similitudes):
-        medicion = medir(candidato, nodo, umbrales, similitud=similitud)
-        if medicion["levantada_por"]:
-            vecinos.append(medicion)
+    # EL RESTO SE CALCULA AQUI, EN SERIE (la señal 3, vecino a vecino), y tambien es
+    # un proceso de calculo: va con su plaza del presupuesto unico de la maquina.
+    with presupuesto.PlazaPropia():
+        for nodo, similitud in zip(elegibles, similitudes):
+            medicion = medir(candidato, nodo, umbrales, similitud=similitud)
+            if medicion["levantada_por"]:
+                vecinos.append(medicion)
     vecinos.sort(key=lambda v: max(_ordenable_de_senal(x) for x in v["senales"].values()),
                  reverse=True)
     # SE DEVUELVEN TODOS. El tope de config/umbrales.json es de IMPRESION, no de
