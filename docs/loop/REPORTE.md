@@ -64912,3 +64912,26 @@ La aduana de hoy: **BLOQUEARIA** con `6` vecino(s) contra `479`; lineas `--vered
     hoy 6 vecinos, barrido de la 73 6 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (430 grafo, 49 bandejas), en la 73 479 (430, 49)
 
 **Los seis vecinos son los de su bloque y las seis lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `73`, las tres seniales al digito; la poblacion, la misma (`430` mas `49`). Sin aristas en esta fila: no tiene madre ni hijo en la tanda. Bitacora de `1082` a `1088`, sus seis lineas SANO.
+
+### Fila `2`: `responder_primer_aviso_renuncia_subordinado`, **INSERTADO** en `504.4` s, codigo `0`, commit `4a3eb539`
+
+La aduana de hoy: **BLOQUEARIA** con `7` vecino(s) contra `479`; lineas `--veredicto` pasadas: `7`. Salida entera en `.v75ext/insertar_02_responder_primer_aviso_renuncia_subordinado.txt`.
+
+<!-- TALLADO: parcial salida=.v75ext/insertar_02_responder_primer_aviso_renuncia_subordinado.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `preguntar_seguimiento_hallar_huecos` | paso_contra_nodo | 0.190 | 0.000 | 0.627 | SANO |
+| `usar_banco_nueve_preguntas_entrevista` | similitud_texto | 0.386 | 0.000 | 0.458 | SANO |
+| `gestionar_retencion_subordinado_valioso_renuncia` | similitud_texto | 0.378 | 0.250 | 0.450 | CONTINUA |
+| `entregar_evaluacion_desempeno_tres_claves` | similitud_texto | 0.418 | 0.000 | 0.408 | SANO |
+| `construir_indicador_tendencia_patron` | similitud_texto | 0.351 | 0.000 | 0.417 | SANO |
+| `planificar_tres_pasos_demanda_estado_brecha` | similitud_texto | 0.363 | 0.000 | 0.409 | SANO |
+| `pedir_critica_anonima_curso_entrenamiento_dictado` | similitud_texto | 0.395 | 0.000 | 0.389 | SANO |
+
+**Arista en cola (`D.29`)**: `responder_primer_aviso_renuncia_subordinado > gestionar_retencion_subordinado_valioso_renuncia`
+
+    $ python .v75ext/contra_barrido.py 02 responder_primer_aviso_renuncia_subordinado
+    hoy 7 vecinos, barrido de la 73 7 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (431 grafo, 48 bandejas), en la 73 479 (430, 49)
+
+**Los siete vecinos son los de su bloque y las siete lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `73`, las tres seniales al digito; la poblacion, `479`, con la fila `1` ya en el grafo (`431` mas `48`). **Su arista hacia `gestionar_retencion_subordinado_valioso_renuncia` queda EN COLA**, como su linea `CONTINUA` con `madre=` manda mientras el hijo espera en la bandeja: se cablea al entrar la fila `3`. Bitacora de `1088` a `1095`.
