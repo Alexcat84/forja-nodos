@@ -66459,3 +66459,20 @@ La aduana de hoy: **BLOQUEARIA** con `2` vecino(s) contra `479`; lineas `--vered
     hoy 2 vecinos, barrido de la 76 2 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (451 grafo, 28 bandejas), en la 76 479 (437, 42)
 
 **Los dos vecinos son los de su bloque y las dos lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `76`, las tres seniales al digito; la poblacion, `479` (`451` mas `28`). Sin aristas en esta fila. Bitacora de `1152` a `1154`, sus dos lineas SANO.
+
+### Fila `16`: `distinguir_tres_tipos_sistemas_negocio`, **INSERTADO** en `325.3` s, codigo `0`, commit `a9b41d37`
+
+La aduana de hoy: **BLOQUEARIA** con `3` vecino(s) contra `479`; lineas `--veredicto` pasadas: `3`. Salida entera en `.v77ext/insertar_16_distinguir_tres_tipos_sistemas_negocio.txt`.
+
+<!-- TALLADO: parcial salida=.v77ext/insertar_16_distinguir_tres_tipos_sistemas_negocio.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `medir_sistema_venta_trece_indicadores_benchmark` | similitud_texto | 0.451 | 0.100 | 0.394 | SANO |
+| `construir_estrategia_gente_cuatro_componentes` | similitud_texto | 0.399 | 0.000 | 0.442 | SANO |
+| `aplicar_seis_pasos_sistema_venta` | similitud_texto | 0.358 | 0.111 | 0.413 | SANO |
+
+    $ python .v77ext/contra_barrido.py 16 distinguir_tres_tipos_sistemas_negocio
+    hoy 3 vecinos, barrido de la 76 3 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (452 grafo, 27 bandejas), en la 76 479 (437, 42)
+
+**Los tres vecinos son los de su bloque y las tres lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `76`, las tres seniales al digito; la poblacion, `479` (`452` mas `27`). Sin aristas en esta fila (`D76.13`, sostenido en la `ACTA 75` `75.5`). Bitacora de `1154` a `1157`, sus tres lineas SANO.
