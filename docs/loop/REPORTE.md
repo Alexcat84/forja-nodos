@@ -64591,7 +64591,7 @@ falte es exactamente lo que no tiene fila.
 | `T1` | los registros de la `ACTA 73` | **CERRADA** (`75.1`) |
 | `T2` | BLOQUEANTE: los pasos `8` y `17` de `dar_elogio_disciplina_igual_critica` salen del campo por `D.54` | **CERRADA** (`75.2`): gate verde tras cada operacion, `18` pasos, `--ver` en `0`, `R9` sin puente nuevo |
 | `T3` | lo que entra es lo que se leyo: las huellas de las `7` fichas | **CERRADA** (`75.3`): identicas a `.v73ext/pasos_y_huellas.txt` |
-| `T4` | las filas de `.v73ext/orden.txt`, una por vez | ABIERTA |
+| `T4` | las filas de `.v73ext/orden.txt`, una por vez | **CERRADA** (`75.4`): las `7` insertadas, sus `29` lineas pasadas, las `3` aristas esperadas en el grafo |
 | `T5` | el cierre | ABIERTA |
 
 ## 75.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
@@ -65031,3 +65031,50 @@ La aduana de hoy: **BLOQUEARIA** con `7` vecino(s) contra `479`; lineas `--vered
     hoy 7 vecinos, barrido de la 73 7 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (436 grafo, 43 bandejas), en la 73 479 (430, 49)
 
 **Los siete vecinos son los de su bloque y las siete lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `73`, las tres seniales al digito; la poblacion, `479` (`436` mas `43`). **La aduana cablea en el acto `desarrollar_primer_curso_entrenamiento > pedir_critica_anonima_curso_entrenamiento_dictado`**, la tercera de las `3` esperadas. **Con `priorizar_lista_entrenamiento_subordinados` su linea es `SANO`** (abuela y nieta, `D73.9`). Bitacora de `1104` a `1111`. **Es la ultima fila: la bandeja de Grove queda vacia.**
+
+### 75.4.a. Las aristas de la tanda, por instrumento (encargo, TAREA 4.4)
+
+`.v75ext/aristas_vuelta.py` y `.v75ext/nodos_viejos.py` son copias de las de la `72` con la apertura cambiada (la linea `1081` de la
+bitacora y el commit `9a5151a`, `75.0`) y la tanda a las filas `1` a `7` de `.v73ext/orden.txt`; la de nodos viejos lleva una
+etiqueta mas, `TAREA 2`, para `dar_elogio_disciplina_igual_critica` si cambia solo en `pasos_accionables` y `resumen_teorico`
+(su cabecera lo dice).
+
+<!-- TALLADO: parcial salida=.v75ext/aristas_vuelta.txt -->
+
+    $ python .v75ext/aristas_vuelta.py
+    registros de la vuelta en la bitacora: 30
+    EN GRAFO   veredicto CONTINUA  responder_primer_aviso_renuncia_subordinado > gestionar_retencion_subordinado_valioso_renuncia
+    EN GRAFO   veredicto CONTINUA  responder_primer_aviso_renuncia_subordinado > gestionar_retencion_subordinado_valioso_renuncia
+    EN GRAFO   veredicto CONTINUA  priorizar_lista_entrenamiento_subordinados > desarrollar_primer_curso_entrenamiento
+    EN GRAFO   veredicto CONTINUA  desarrollar_primer_curso_entrenamiento > pedir_critica_anonima_curso_entrenamiento_dictado
+    EN GRAFO   veredicto CONTINUA  priorizar_lista_entrenamiento_subordinados > desarrollar_primer_curso_entrenamiento
+    EN GRAFO   veredicto CONTINUA  desarrollar_primer_curso_entrenamiento > pedir_critica_anonima_curso_entrenamiento_dictado
+    registros con arista: 6 | aristas DISTINTAS: 3 | en el grafo: 3 | en cola: 0 (un par CONTINUA leido desde sus dos lados deja dos registros y una sola arista)
+    esperadas: 3 | esperadas que viven en el grafo: 3 | esperadas sin registro: 0 | registradas no esperadas: 0
+
+<!-- TALLADO: parcial salida=.v75ext/nodos_viejos.txt -->
+
+    $ python .v75ext/nodos_viejos.py
+    TAREA 2    dar_elogio_disciplina_igual_critica                      campos ['pasos_accionables', 'resumen_teorico'] | gana [] | pierde []
+    nodos al abrir: 430 | hoy: 437 | nuevos: 7 | nuevos que son de las 7 filas: 7 | viejos que cambian: 1 | cambios fuera de nodos_siguientes de una madre y de la TAREA 2: 0
+
+<!-- TALLADO: parcial salida=.v75ext/veredictos_vuelta.txt -->
+
+    $ python .v75ext/veredictos_vuelta.py
+    lineas de la vuelta 75 en la bitacora (1082 en adelante): 30 | por veredicto: {'CORREGIDO': 1, 'SANO': 23, 'CONTINUA': 6} | suma: 30 | sin razon: 0
+
+**LECTURA:** **las `3` aristas esperadas viven en el grafo, las `3` y ninguna mas**, cada una cableada por la aduana en el acto de
+entrar su hijo (filas `3`, `6` y `7`), con `0` en cola y `0` registradas sin esperar; cada una deja dos registros porque su par se
+leyo `CONTINUA` desde los dos lados. **Ninguna sin adjudicar**: los `6` registros con arista son `CONTINUA` con su razon, y las `30`
+lineas de la vuelta (`1` `CORREGIDO` de la TAREA 2 mas las `29` de la tanda, `23` `SANO` y `6` `CONTINUA`) traen todas razon. **Ningun
+nodo viejo cambio** fuera de lo que la TAREA 2 movio en `dar_elogio_disciplina_igual_critica`: las madres de las tres aristas son de
+la tanda, asi que ningun nodo que estaba al abrir gana hijos. **Entraron las `7` filas; ninguna queda pendiente.**
+
+**El reloj**, que es lo que costo (`.v75ext/relojes.py`, copia de la de la `72` con la ruta y la mediana de `7` cambiadas):
+
+<!-- TALLADO: parcial salida=.v75ext/relojes.txt -->
+
+    $ tail -1 .v75ext/relojes.txt
+    insertar: 7 | minimo 341.0 s | mediana 504.4 s | maximo 711.9 s | suma 3570.5 s (0.99 h)
+
+**`T4` CERRADA.**

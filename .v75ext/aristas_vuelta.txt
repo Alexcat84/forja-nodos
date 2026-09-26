@@ -1,0 +1,9 @@
+registros de la vuelta en la bitacora: 30
+EN GRAFO   veredicto CONTINUA  responder_primer_aviso_renuncia_subordinado > gestionar_retencion_subordinado_valioso_renuncia
+EN GRAFO   veredicto CONTINUA  responder_primer_aviso_renuncia_subordinado > gestionar_retencion_subordinado_valioso_renuncia
+EN GRAFO   veredicto CONTINUA  priorizar_lista_entrenamiento_subordinados > desarrollar_primer_curso_entrenamiento
+EN GRAFO   veredicto CONTINUA  desarrollar_primer_curso_entrenamiento > pedir_critica_anonima_curso_entrenamiento_dictado
+EN GRAFO   veredicto CONTINUA  priorizar_lista_entrenamiento_subordinados > desarrollar_primer_curso_entrenamiento
+EN GRAFO   veredicto CONTINUA  desarrollar_primer_curso_entrenamiento > pedir_critica_anonima_curso_entrenamiento_dictado
+registros con arista: 6 | aristas DISTINTAS: 3 | en el grafo: 3 | en cola: 0 (un par CONTINUA leido desde sus dos lados deja dos registros y una sola arista)
+esperadas: 3 | esperadas que viven en el grafo: 3 | esperadas sin registro: 0 | registradas no esperadas: 0

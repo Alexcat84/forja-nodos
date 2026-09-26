@@ -1,0 +1,1 @@
+lineas de la vuelta 75 en la bitacora (1082 en adelante): 30 | por veredicto: {'CORREGIDO': 1, 'SANO': 23, 'CONTINUA': 6} | suma: 30 | sin razon: 0
