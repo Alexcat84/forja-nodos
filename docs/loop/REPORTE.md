@@ -66476,3 +66476,21 @@ La aduana de hoy: **BLOQUEARIA** con `3` vecino(s) contra `479`; lineas `--vered
     hoy 3 vecinos, barrido de la 76 3 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (452 grafo, 27 bandejas), en la 76 479 (437, 42)
 
 **Los tres vecinos son los de su bloque y las tres lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `76`, las tres seniales al digito; la poblacion, `479` (`452` mas `27`). Sin aristas en esta fila (`D76.13`, sostenido en la `ACTA 75` `75.5`). Bitacora de `1154` a `1157`, sus tres lineas SANO.
+
+### Fila `17`: `aplicar_seis_pasos_sistema_venta`, **INSERTADO** en `309.6` s, codigo `0`, commit `a4765cf2`
+
+La aduana de hoy: **BLOQUEARIA** con `2` vecino(s) contra `479`; lineas `--veredicto` pasadas: `2`. Salida entera en `.v77ext/insertar_17_aplicar_seis_pasos_sistema_venta.txt`.
+
+<!-- TALLADO: parcial salida=.v77ext/insertar_17_aplicar_seis_pasos_sistema_venta.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `medir_sistema_venta_trece_indicadores_benchmark` | similitud_texto | 0.361 | 0.222 | 0.466 | CONTINUA |
+| `distinguir_tres_tipos_sistemas_negocio` | similitud_texto | 0.396 | 0.111 | 0.394 | SANO |
+
+**Arista en cola (`D.29`)**: `aplicar_seis_pasos_sistema_venta > medir_sistema_venta_trece_indicadores_benchmark`
+
+    $ python .v77ext/contra_barrido.py 17 aplicar_seis_pasos_sistema_venta
+    hoy 2 vecinos, barrido de la 76 2 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (453 grafo, 26 bandejas), en la 76 479 (437, 42)
+
+**Los dos vecinos son los de su bloque y las dos lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `76`, las tres seniales al digito; la poblacion, `479` (`453` mas `26`). **Su arista hacia `medir_sistema_venta_trece_indicadores_benchmark` queda EN COLA** (su linea `CONTINUA` con `madre=`), y se cablea al entrar la fila `18`. Bitacora de `1157` a `1159`.
