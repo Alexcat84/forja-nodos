@@ -1218,3 +1218,11 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-26 | medir_sistema_venta_trece_indicadores_benchmark | nombre_largo | El Information Benchmark: trece preguntas para que un Information System interactue con tu sistema de venta | castellano | - |
 | 2026-09-26 | medir_sistema_venta_trece_indicadores_benchmark | otro_idioma | Information Benchmark | ingles | - |
 | 2026-09-26 | medir_sistema_venta_trece_indicadores_benchmark | otro_idioma | Information System | ingles | - |
+| 2026-09-26 | construir_estrategia_gente_cuatro_componentes | nombre_largo | Your People Strategy armada desde tu Primary Aim y tu Strategic Objective, tu Organizational Strategy y tus Operations Manuals | castellano | - |
+| 2026-09-26 | construir_estrategia_gente_cuatro_componentes | otro_idioma | Your People Strategy | ingles | - |
+| 2026-09-26 | construir_estrategia_gente_cuatro_componentes | otro_idioma | Primary Aim | ingles | - |
+| 2026-09-26 | construir_estrategia_gente_cuatro_componentes | otro_idioma | Strategic Objective | ingles | - |
+| 2026-09-26 | construir_estrategia_gente_cuatro_componentes | otro_idioma | Organizational Strategy | ingles | - |
+| 2026-09-26 | construir_estrategia_gente_cuatro_componentes | otro_idioma | Organization Chart | ingles | - |
+| 2026-09-26 | construir_estrategia_gente_cuatro_componentes | otro_idioma | Position Contracts | ingles | - |
+| 2026-09-26 | construir_estrategia_gente_cuatro_componentes | otro_idioma | Operations Manuals | ingles | - |

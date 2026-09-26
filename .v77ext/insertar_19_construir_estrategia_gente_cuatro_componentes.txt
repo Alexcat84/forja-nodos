@@ -1,0 +1,56 @@
+fila 19, construir_estrategia_gente_cuatro_componentes, lineas --veredicto: 4
+  --veredicto recorrer_siete_pasos_programa_desarrollo_negocio|SANO|Cabeza y parte de una serie D.37, que por D.53 no es CONTINUA: el paso 8 del vecino, Paso 5: Your People Strategy (cap_13 L53), nombra en una linea lo que este candidato despliega en cinco pasos (cap_18 L117, L119). Son procedimientos distintos, recorrer el programa entero y armar una de sus partes; la relacion va como arista en .v76ext/aristas_lectura.txt (d111).
+  --veredicto aplicar_cinco_pasos_proceso_contratacion|CONTINUA|madre=construir_estrategia_gente_cuatro_componentes|El mismo par que aplicar_cinco_pasos lee desde su lado: el vecino parte del producto de este candidato. L117 dice que la People Strategy es la forma en que comunicas la idea y L245 que la contratacion fue su primer medio; los pasos 10 y 11 del vecino entregan y repasan el Manual de Operaciones, el Objetivo Estrategico, la Organizational Strategy y el Position Contract (L269), que este candidato compone en sus pasos 3 a 5 (L119). Procedimiento en los dos lados, sin paso repetido. Relectura conjunta de la vuelta 77 sobre la ACTA 75 seccion 75.4, que corrige el SANO de D76.15 (DISCUTIBLE D77.1).
+  --veredicto medir_sistema_venta_trece_indicadores_benchmark|SANO|Ajenos: el vecino, de cap_19, registra trece cifras del proceso de venta (L311 a L337); este arma la People Strategy (L117, L119). La similitud es del vocabulario de Gerber, sin paso comun.
+  --veredicto distinguir_tres_tipos_sistemas_negocio|SANO|Ajenos: el vecino, de cap_19, distingue los tres tipos de sistemas (L35 a L43); este arma la People Strategy (L117, L119). Comparten capitulo vecino y vocabulario del Business Development Program, no procedimiento.
+inicio 2026-09-26 11:59:35
+======================================================================
+ADUANA DE INSERCION, candidato 'construir_estrategia_gente_cuatro_componentes'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (455 del grafo mas 24 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 4. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino recorrer_siete_pasos_programa_desarrollo_negocio  [Recorrer los siete pasos del Business Development Program, empezando por tu Primary Aim]
+    levantada por: paso_contra_nodo
+    similitud_texto    0.238 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.698 (umbral 0.60)
+    paso 3 del candidato contra paso 5 de recorrer_siete_pasos_programa_desarrollo_negocio
+
+  vecino aplicar_cinco_pasos_proceso_contratacion  [Aplicar los cinco componentes del proceso de contratacion que el libro enumera para comunicar tu idea desde el primer dia]
+    levantada por: similitud_texto
+    similitud_texto    0.363 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.456 (umbral 0.60)
+    paso 4 del candidato contra paso 11 de aplicar_cinco_pasos_proceso_contratacion
+
+  vecino medir_sistema_venta_trece_indicadores_benchmark  [Medir tu sistema de venta con los trece indicadores del Information Benchmark que el libro enumera]
+    levantada por: similitud_texto
+    similitud_texto    0.368 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.444 (umbral 0.60)
+    paso 2 del candidato contra paso 3 de medir_sistema_venta_trece_indicadores_benchmark
+
+  vecino distinguir_tres_tipos_sistemas_negocio  [Distinguir los tres tipos de sistemas que el libro nombra en tu negocio: Hard, Soft e Information Systems]
+    levantada por: similitud_texto
+    similitud_texto    0.399 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.422 (umbral 0.60)
+    paso 1 del candidato contra paso 2 de distinguir_tres_tipos_sistemas_negocio
+  ARISTA EN COLA, no cableada: construir_estrategia_gente_cuatro_componentes > aplicar_cinco_pasos_proceso_contratacion
+    el otro extremo espera en la bandeja (D.29). El veredicto CONTINUA queda escrito y la arista se cablea cuando entre:
+      python forja.py arista --madre construir_estrategia_gente_cuatro_componentes --hijo aplicar_cinco_pasos_proceso_contratacion --paso <n> --razon "..."
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 456
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 4
+  ARISTAS EN COLA, sin cablear: 1
+    construir_estrategia_gente_cuatro_componentes > aplicar_cinco_pasos_proceso_contratacion
+    D.29: van a un bloque propio y titulado del reporte, y se cablean con `forja.py arista` cuando el otro extremo entre.
+
+======================================================================
+fin 2026-09-26 12:04:41 | codigo de salida 0 | 306.1 s
