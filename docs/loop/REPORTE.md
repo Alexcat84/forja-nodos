@@ -63261,3 +63261,17 @@ La aduana de hoy: **BLOQUEARIA** con `6` vecino(s) contra `479`; lineas `--vered
     hoy 6 vecinos, barrido de la 71 6 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (418 grafo, 61 bandejas), en la 71 479 (410, 69)
 
 **Los seis vecinos son los de su bloque y las seis lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `71`, las tres seniales al digito. Sin aristas en esta fila. **Con ella, las nueve de `cap_07` quedan dentro.**
+
+### Fila `10`: `repartir_supervision_puesto_funcional_mision`, **INSERTADO** en `691.7` s, codigo `0`, commit `cdaca5fe`
+
+La aduana de hoy: **ENTRARIA** con `0` vecino(s) contra `479`; lineas `--veredicto` pasadas: `0`. Salida entera en `.v72ext/insertar_10_repartir_supervision_puesto_funcional_mision.txt`.
+
+<!-- TALLADO: parcial salida=.v72ext/insertar_10_repartir_supervision_puesto_funcional_mision.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+
+    $ python .v72ext/contra_barrido.py 10 repartir_supervision_puesto_funcional_mision
+    hoy 0 vecinos, barrido de la 71 0 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (419 grafo, 60 bandejas), en la 71 479 (410, 69)
+
+**Entra limpia, sin vecinos, como en el barrido de la `71`**; sin lineas y sin aristas. **Con ella, `cap_10` queda entero en el grafo.**
