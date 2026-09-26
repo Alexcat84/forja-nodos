@@ -63275,3 +63275,17 @@ La aduana de hoy: **ENTRARIA** con `0` vecino(s) contra `479`; lineas `--veredic
     hoy 0 vecinos, barrido de la 71 0 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (419 grafo, 60 bandejas), en la 71 479 (410, 69)
 
 **Entra limpia, sin vecinos, como en el barrido de la `71`**; sin lineas y sin aristas. **Con ella, `cap_10` queda entero en el grafo.**
+
+### Fila `11`: `elegir_modo_control_motivacion_factor_cua`, **INSERTADO** en `753.6` s, codigo `0`, commit `276b8663`
+
+La aduana de hoy: **ENTRARIA** con `0` vecino(s) contra `479`; lineas `--veredicto` pasadas: `0`. Salida entera en `.v72ext/insertar_11_elegir_modo_control_motivacion_factor_cua.txt`.
+
+<!-- TALLADO: parcial salida=.v72ext/insertar_11_elegir_modo_control_motivacion_factor_cua.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+
+    $ python .v72ext/contra_barrido.py 11 elegir_modo_control_motivacion_factor_cua
+    hoy 0 vecinos, barrido de la 71 0 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (420 grafo, 59 bandejas), en la 71 479 (410, 69)
+
+**Entra limpia, sin vecinos, como en el barrido de la `71`**; sin lineas. Es madre de la fila `12`, cuya arista por lectura se cablea al entrar el hijo.
