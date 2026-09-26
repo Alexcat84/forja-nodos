@@ -1,0 +1,13 @@
+$ python forja.py arista --madre observar_reunion_rutinaria_senales_plantilla --hijo seguir_frustrado_preguntar_implantacion_ideas --paso 7 --razon <fila 28> --veredicto CONTINUA --cita-veredicto <fila 28>
+DECLARACION DE ARISTA POR LECTURA (D.37)
+  madre: observar_reunion_rutinaria_senales_plantilla
+  hijo : seguir_frustrado_preguntar_implantacion_ideas
+  paso citado de la madre: 7
+    Mira como esta el que expone. El texto describe al suyo serio y directo, pero frustrado y a la defensiva ante todas las preguntas que tenia que contes
+  señales del par: familia_id 0.0, paso_contra_nodo 0.457, similitud_texto 0.324
+    NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: observar_reunion_rutinaria_senales_plantilla > seguir_frustrado_preguntar_implantacion_ideas
+  razon en bitacora/VEREDICTOS.jsonl
+
+codigo 0

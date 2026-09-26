@@ -68216,3 +68216,38 @@ La aduana de hoy: **BLOQUEARIA** con `3` vecino(s) contra `479`; lineas `--vered
     hoy 3 vecinos, barrido de la 78 3 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (462 grafo, 17 bandejas), en la 78 479 (459, 20)
 
 **Los tres vecinos son los de su bloque y las tres lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `78`, las tres seniales al digito; la poblacion, `479` (`462` mas `17`). **Es la madre de la unica arista por lectura de la tanda** (`.v78ext/aristas_lectura.txt` linea `28`, paso `7`): no se cablea aqui, sino al entrar su hijo en la fila `5`. Bitacora de `1178` a `1181`, sus tres lineas SANO.
+
+### Fila `5`: `seguir_frustrado_preguntar_implantacion_ideas`, **INSERTADO** en `606.6` s, codigo `0`, commit `fb4a215a`
+
+La aduana de hoy: **BLOQUEARIA** con `6` vecino(s) contra `479`; lineas `--veredicto` pasadas: `6`. Salida entera en `.v80ext/insertar_05_seguir_frustrado_preguntar_implantacion_ideas.txt`.
+
+<!-- TALLADO: parcial salida=.v80ext/insertar_05_seguir_frustrado_preguntar_implantacion_ideas.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `interrogar_negocio_cinco_preguntas` | similitud_texto | 0.363 | 0.000 | 0.477 | SANO |
+| `contar_firmas_cadena_tramite_parado` | similitud_texto | 0.375 | 0.000 | 0.441 | SANO |
+| `dictar_ritmo_crecimiento_preguntas_escritas` | similitud_texto | 0.389 | 0.000 | 0.436 | SANO |
+| `informar_cierre_jornada_conservar_propiedad_trabajo` | similitud_texto | 0.411 | 0.000 | 0.399 | SANO |
+| `pedir_critica_anonima_curso_entrenamiento_dictado` | similitud_texto | 0.357 | 0.000 | 0.405 | SANO |
+| `cambiar_saludo_cliente_dos_ramas` | similitud_texto | 0.366 | 0.000 | 0.355 | SANO |
+
+    $ python .v80ext/contra_barrido.py 05 seguir_frustrado_preguntar_implantacion_ideas
+    hoy 6 vecinos, barrido de la 78 6 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (463 grafo, 16 bandejas), en la 78 479 (459, 20)
+
+**La arista por lectura de la fila, cableada en el acto con los dos extremos vivos**: `observar_reunion_rutinaria_senales_plantilla > seguir_frustrado_preguntar_implantacion_ideas`, paso `7` de la madre (`cap_03` `L21`, `L23` a `L29`), por `D.29` con el criterio de la `ACTA 75` `75.4`, `--veredicto CONTINUA` por `D.53` (el de la lectura, `ACTA 77` `77.4`). Salida entera en `.v80ext/arista_observar_reunion_rutinaria_senales_plantilla__seguir_frustrado_preguntar_implantacion_ideas.txt`:
+
+    $ python forja.py arista --madre observar_reunion_rutinaria_senales_plantilla --hijo seguir_frustrado_preguntar_implantacion_ideas --paso 7 --razon <fila 28> --veredicto CONTINUA --cita-veredicto <fila 28>
+    DECLARACION DE ARISTA POR LECTURA (D.37)
+      madre: observar_reunion_rutinaria_senales_plantilla
+      hijo : seguir_frustrado_preguntar_implantacion_ideas
+      paso citado de la madre: 7
+        Mira como esta el que expone. El texto describe al suyo serio y directo, pero frustrado y a la defensiva ante todas las preguntas que tenia que contes
+      señales del par: familia_id 0.0, paso_contra_nodo 0.457, similitud_texto 0.324
+        NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+    GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: observar_reunion_rutinaria_senales_plantilla > seguir_frustrado_preguntar_implantacion_ideas
+      razon en bitacora/VEREDICTOS.jsonl
+
+
+**Los seis vecinos son los de su bloque y las seis lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `78`, las tres seniales al digito; la poblacion, `479` (`463` mas `16`). **La madre no esta entre los vecinos, como en el barrido de la `78`**, y por eso la arista no tiene linea `--veredicto` y se cablea por `.v80ext/arista.py`: el paso citado es el `7` de la madre, impreso arriba, y las seniales del par (`0.324`, `0.0`, `0.457`) no la levantan. **Vive por los dos lados**: `observar_reunion_rutinaria_senales_plantilla` con el hijo en `nodos_siguientes` y `seguir_frustrado_preguntar_implantacion_ideas` con la madre en `nodos_previos`. **La unica arista esperada de la tanda, en el grafo.** Bitacora de `1181` a `1188`: sus seis lineas SANO y la de la arista, `CONTINUA`.
