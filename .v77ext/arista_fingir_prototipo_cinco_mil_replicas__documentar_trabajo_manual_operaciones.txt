@@ -1,0 +1,13 @@
+$ python forja.py arista --madre fingir_prototipo_cinco_mil_replicas --hijo documentar_trabajo_manual_operaciones --paso 8 --razon <fila 32> --veredicto SANO --cita-veredicto <fila 32>
+DECLARACION DE ARISTA POR LECTURA (D.37)
+  madre: fingir_prototipo_cinco_mil_replicas
+  hijo : documentar_trabajo_manual_operaciones
+  paso citado de la madre: 8
+    Regla 4: todo el trabajo del modelo estara documentado en Manuales de Operaciones.
+  señales del par: familia_id 0.0, paso_contra_nodo 0.462, similitud_texto 0.34
+    NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: fingir_prototipo_cinco_mil_replicas > documentar_trabajo_manual_operaciones
+  razon en bitacora/VEREDICTOS.jsonl
+
+codigo 0

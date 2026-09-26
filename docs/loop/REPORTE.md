@@ -66556,3 +66556,49 @@ La aduana de hoy: **BLOQUEARIA** con `4` vecino(s) contra `479`; lineas `--vered
     como: La arista recorrer_siete_pasos_programa_desarrollo_negocio > construir_estrategia_gente_cuatro_componentes vive en el grafo desde la vuelta 77, fila 19, cableada por lectura D.37 con el paso 8 de la cabeza (Paso 5: Your People Strategy, cap_13 L53) y veredicto SANO por D.53. La cabeza entra con una parte de siete, como adjudico la ACTA 75 seccion 75.4: las partes 1 y 2 sin arista por la ACTA G5 seccion 6.2, la 3 y la 4 sin candidato, la 6 apartada y la 7 sin parte que sea la estrategia (D76.13).
 
 **Los cuatro vecinos son los de su bloque y las cuatro lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `76`, las tres seniales al digito; la poblacion, `479` (`455` mas `24`). **Su linea con la contratacion es la `CONTINUA` de la relectura conjunta** (`77.2.1`), y **su arista hacia `aplicar_cinco_pasos_proceso_contratacion` queda EN COLA**: se cablea al entrar la fila `22`. **Septima de las `10` aristas esperadas en el grafo**, la de `recorrer`. Bitacora de `1161` a `1166`: sus cuatro lineas y la de la arista.
+
+### Fila `20`: `documentar_trabajo_manual_operaciones`, **INSERTADO** en `431.3` s, codigo `0`, commit `887a24da`
+
+La aduana de hoy: **BLOQUEARIA** con `2` vecino(s) contra `479`; lineas `--veredicto` pasadas: `2`. Salida entera en `.v77ext/insertar_20_documentar_trabajo_manual_operaciones.txt`.
+
+<!-- TALLADO: parcial salida=.v77ext/insertar_20_documentar_trabajo_manual_operaciones.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `dar_valor_constante_cuatro_publicos` | similitud_texto | 0.430 | 0.000 | 0.430 | SANO |
+| `unificar_color_forma_vestuario_modelo` | similitud_texto | 0.366 | 0.000 | 0.425 | SANO |
+
+    $ python .v77ext/contra_barrido.py 20 documentar_trabajo_manual_operaciones
+    hoy 2 vecinos, barrido de la 76 2 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (456 grafo, 23 bandejas), en la 76 479 (437, 42)
+
+**La primera arista por lectura `D.37` de la fila, cableada en el acto con los dos extremos vivos**: `fingir_prototipo_cinco_mil_replicas > documentar_trabajo_manual_operaciones`, paso `8` de la madre (`cap_11` `L51`), `--veredicto SANO` por `D.53`. Salida entera en `.v77ext/arista_fingir_prototipo_cinco_mil_replicas__documentar_trabajo_manual_operaciones.txt`:
+
+    $ python forja.py arista --madre fingir_prototipo_cinco_mil_replicas --hijo documentar_trabajo_manual_operaciones --paso 8 --razon <fila 32> --veredicto SANO --cita-veredicto <fila 32>
+    DECLARACION DE ARISTA POR LECTURA (D.37)
+      madre: fingir_prototipo_cinco_mil_replicas
+      hijo : documentar_trabajo_manual_operaciones
+      paso citado de la madre: 8
+        Regla 4: todo el trabajo del modelo estara documentado en Manuales de Operaciones.
+      señales del par: familia_id 0.0, paso_contra_nodo 0.462, similitud_texto 0.34
+        NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+    GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: fingir_prototipo_cinco_mil_replicas > documentar_trabajo_manual_operaciones
+      razon en bitacora/VEREDICTOS.jsonl
+
+
+**La segunda arista por lectura `D.37` de la fila** (`D76.14`, sostenido en la `ACTA 75` `75.4`): `construir_estrategia_gente_cuatro_componentes > documentar_trabajo_manual_operaciones`, paso `5` de la madre (`cap_18` `L119`), `--veredicto SANO` por `D.53`. Salida entera en `.v77ext/arista_construir_estrategia_gente_cuatro_componentes__documentar_trabajo_manual_operaciones.txt`:
+
+    $ python forja.py arista --madre construir_estrategia_gente_cuatro_componentes --hijo documentar_trabajo_manual_operaciones --paso 5 --razon <fila 38> --veredicto SANO --cita-veredicto <fila 38>
+    DECLARACION DE ARISTA POR LECTURA (D.37)
+      madre: construir_estrategia_gente_cuatro_componentes
+      hijo : documentar_trabajo_manual_operaciones
+      paso citado de la madre: 5
+        Escribe tus Operations Manuals, que son los que definen el trabajo que hace tu gente.
+      señales del par: familia_id 0.0, paso_contra_nodo 0.418, similitud_texto 0.264
+        NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+    GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: construir_estrategia_gente_cuatro_componentes > documentar_trabajo_manual_operaciones
+      razon en bitacora/VEREDICTOS.jsonl
+
+
+**Los dos vecinos son los de su bloque y las dos lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `76`, las tres seniales al digito; la poblacion, `479` (`456` mas `23`). **Octava y novena de las `10` aristas esperadas en el grafo**: el hijo queda con dos madres, la cabeza de las seis reglas y la de los cuatro componentes. Bitacora de `1166` a `1170`: sus dos lineas SANO y las dos de las aristas.
