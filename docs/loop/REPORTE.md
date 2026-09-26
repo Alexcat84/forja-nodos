@@ -66494,3 +66494,21 @@ La aduana de hoy: **BLOQUEARIA** con `2` vecino(s) contra `479`; lineas `--vered
     hoy 2 vecinos, barrido de la 76 2 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (453 grafo, 26 bandejas), en la 76 479 (437, 42)
 
 **Los dos vecinos son los de su bloque y las dos lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `76`, las tres seniales al digito; la poblacion, `479` (`453` mas `26`). **Su arista hacia `medir_sistema_venta_trece_indicadores_benchmark` queda EN COLA** (su linea `CONTINUA` con `madre=`), y se cablea al entrar la fila `18`. Bitacora de `1157` a `1159`.
+
+### Fila `18`: `medir_sistema_venta_trece_indicadores_benchmark`, **INSERTADO** en `297.2` s, codigo `0`, commit `f9bc2954`
+
+La aduana de hoy: **BLOQUEARIA** con `2` vecino(s) contra `479`; lineas `--veredicto` pasadas: `2`. Salida entera en `.v77ext/insertar_18_medir_sistema_venta_trece_indicadores_benchmark.txt`.
+
+<!-- TALLADO: parcial salida=.v77ext/insertar_18_medir_sistema_venta_trece_indicadores_benchmark.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `aplicar_seis_pasos_sistema_venta` | similitud_texto | 0.353 | 0.222 | 0.455 | CONTINUA |
+| `distinguir_tres_tipos_sistemas_negocio` | similitud_texto | 0.446 | 0.100 | 0.378 | SANO |
+
+**Arista cableada por la aduana en el acto**: `aplicar_seis_pasos_sistema_venta > medir_sistema_venta_trece_indicadores_benchmark`
+
+    $ python .v77ext/contra_barrido.py 18 medir_sistema_venta_trece_indicadores_benchmark
+    hoy 2 vecinos, barrido de la 76 2 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (454 grafo, 25 bandejas), en la 76 479 (437, 42)
+
+**Los dos vecinos son los de su bloque y las dos lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `76`, las tres seniales al digito; la poblacion, `479` (`454` mas `25`). **La aduana cablea en el acto la arista `aplicar_seis_pasos_sistema_venta > medir_sistema_venta_trece_indicadores_benchmark`**, la que la fila `17` dejo en cola: **sexta de las `10` aristas esperadas en el grafo.** Bitacora de `1159` a `1161`.
