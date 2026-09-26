@@ -67451,7 +67451,7 @@ falte es exactamente lo que no tiene fila.
 |---|---|---|
 | `T1` | los registros de la `ACTA 77` | **CERRADA** (`79.1`) |
 | `T2` | la relectura conjunta de la frontera de Zhuo, y el texto de las fronteras en pie dejado listo | **CERRADA** (`79.2`): gana la lectura del auditor y la de Zhuo cae por correccion declarada; el texto de Grove, preparado y no escrito |
-| `T3` | `d150` y `d180` | abierta |
+| `T3` | `d150` y `d180` | **CERRADA** (`79.3`): las dos pagadas por medida; `.vm01/` con `47` ficheros; grove y gerber `INSERTADO` en el tablero |
 | `T4` | `d098`, `d104`, `d099` y `d135`, los punteros de Gerber contra el grafo de hoy | abierta |
 | `T5` | el cierre: declaracion, censo, huellas, `D.61`, `R5`, guardas, commit | abierta |
 
@@ -67616,3 +67616,79 @@ texto de frontera que vive hoy en el grafo, el de `cubrir_indicadores_problemas_
 **`d183` no se paga aqui**: se paga en la vuelta que inserte, con este texto.
 
 **`T2` CERRADA.**
+
+## 79.3. TAREA 3: `d150` Y `d180`, LAS DOS DEUDAS DE LA CAMPANIA QUE YA TIENEN SU PRUEBA
+
+### 79.3.1. `d150`: medida antes de pagar
+
+Salida entera en `.v79ext/d150.txt`:
+
+    $ find .vm01 -type f | wc -l; git status --short -- .vm01 | wc -l
+    47
+    0
+    $ python scripts/deuda.py | grep -E "^  d150 "
+      d150   2       relectura          La TAREA 2 y la TAREA 3 del reporte de la vuelta 1 d
+    $ grep -n "^\*\*`d150`" docs/loop/ACTA_AUDITOR.md | cut -c1-60
+    51277:**`d150`, de Marquet, entra en el encargo para prepara
+    51586:**`d150`, FIRMADA EN SU SUSTANCIA.** Su texto pedia la
+    $ grep -n "^### 78.2.4" docs/loop/REPORTE.md
+    67142:### 78.2.4. `d150`, preparada y no pagada
+    $ python .v78ext/contar_fidelidad.py | grep "^cap_03"
+    cap_03  candidatos 6  pasos 53  T 52  P 1  inventado 1,9 por ciento
+    $ grep -o '47 ficheros' docs/loop/DEUDA.jsonl | sort | uniq -c
+          1 47 ficheros
+
+**`.vm01/` sigue intacto: `47` ficheros, que es lo que la cita de `d150` cuenta, y `0` lineas de `git status`.** La fila de `cap_03` que
+`78.2.4` publico sale igual hoy (`6`, `53`, `52` `T`, `1` `P`, `1,9` por ciento), y la `ACTA 77` `77.3` la firma (sus dos lineas
+`d150` son la `51277` y la `51586` de la acta, en el bloque). **Lo que queda de su letra no se escribe** (encargo TAREA 3.1): es el
+reporte archivado de un frente cosechado, y la relectura entera de la `78` lo sustituye. El `como`, entero, en `.v79ext/como_d150.txt`.
+
+### 79.3.2. `d180`: por medida, sin tocar `src/`
+
+Salida entera, con el tablero completo, en `.v79ext/d180.txt`; las filas de los libros y la linea del mundo, en `.v79ext/d180_corto.txt`:
+
+    $ python forja.py tablero | sed -n "5,17p;24p"
+      --------------------------------------------------------------------------------------------------------
+      .    1    onu_consumidor                 INSERTADO              NINGUNO                  0  cap_02
+      .    2    smart_who                      INSERTADO              NINGUNO                  0  cap_05
+      .    3    zhuo_manager                   INSERTADO              NINGUNO                  0       .
+      .    4    scott_radical_candor           INSERTADO              NINGUNO                  0  cap_14
+      .    11   gerber_emyth_cap17_reservado   ANULADO                NINGUNO                  0       .
+      1    7    grove_high_output              INSERTADO              NINGUNO                  0  cap_18
+      2    9    gerber_emyth                   INSERTADO              NINGUNO                  0  cap_22
+      3    5    marquet_turn_the_ship          COSECHADO              NINGUNO                 20  cap_17
+      4*   8    bernerslee_bananas             SIN EMPEZAR            NINGUNO                  0       .
+      5*   6    openstax_business_ethics       SIN EMPEZAR            NINGUNO                  0       .
+      6*   10   openstax_org_behavior          SIN EMPEZAR            NINGUNO                  0       .
+    
+      MUNDO 11: faltan 1 de 7 libros del corte (marquet_turn_the_ship)
+
+    $ git log --format="%h %cI %s" -1 -- src/tablero.py
+    ccf9498f 2026-09-26T06:44:59-04:00 Tablero: un libro COSECHADO que ya entro entero sale INSERTADO (la vuelta 76 no abrio, 26 sep 2026)
+    $ git log --format="%h %an %cI" -1 ccf9498f; git show --stat --format= ccf9498f | tail -3
+    ccf9498f alexcat84 2026-09-26T06:44:59-04:00
+     src/tablero.py           | 12 ++++++++++++
+     tests/test_aceptacion.py | 42 ++++++++++++++++++++++++++++++++++++++++++
+     2 files changed, 54 insertions(+)
+    $ grep -n "in cosechados\|candidatos == 0 and en_grafo > 0" src/tablero.py
+    264:        arbol = (comun.RAIZ if clave in cosechados
+    302:        elif clave in cosechados:
+    316:            if candidatos == 0 and en_grafo > 0 and unidades and len(capitulos) >= unidades:
+    328:        elif candidatos == 0 and en_grafo > 0:
+
+**`grove_high_output` y `gerber_emyth` salen `INSERTADO`, con la bandeja en `0`**, y el unico `COSECHADO` es Marquet, con sus `20`. **El
+commit que lo cambio es `ccf9498f`**, con autor `alexcat84` en `git log`, que anadio la comprobacion de *bandeja en cero y nodos en el grafo* dentro de la
+rama de `cosechados` (lineas `302` y `316` de hoy) con su prueba en la suite. **No toco `src/`** (`7.F`, `D.55`). El `como`, entero, en
+`.v79ext/como_d180.txt`.
+
+### 79.3.3. Los pagos
+
+<!-- TALLADO: parcial salida=.v79ext/deuda_t3.txt -->
+
+    $ python scripts/deuda.py --pagar d150 --vuelta 79 --como "$(cat .v79ext/como_d150.txt)"
+    PAGADA d150 en la vuelta 79
+    $ python scripts/deuda.py --pagar d180 --vuelta 79 --como "$(cat .v79ext/como_d180.txt)"
+    PAGADA d180 en la vuelta 79
+
+**Los dos `como` quedan en `docs/loop/DEUDA.jsonl` letra a letra iguales a sus ficheros** (comprobado leyendo el registro y comparando
+con `==`: `True` y `True`). **`T3` CERRADA.**

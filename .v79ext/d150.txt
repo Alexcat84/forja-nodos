@@ -1,0 +1,14 @@
+$ find .vm01 -type f | wc -l; git status --short -- .vm01 | wc -l
+47
+0
+$ python scripts/deuda.py | grep -E "^  d150 "
+  d150   2       relectura          La TAREA 2 y la TAREA 3 del reporte de la vuelta 1 d
+$ grep -n "^\*\*`d150`" docs/loop/ACTA_AUDITOR.md | cut -c1-60
+51277:**`d150`, de Marquet, entra en el encargo para prepara
+51586:**`d150`, FIRMADA EN SU SUSTANCIA.** Su texto pedia la
+$ grep -n "^### 78.2.4" docs/loop/REPORTE.md
+67142:### 78.2.4. `d150`, preparada y no pagada
+$ python .v78ext/contar_fidelidad.py | grep "^cap_03"
+cap_03  candidatos 6  pasos 53  T 52  P 1  inventado 1,9 por ciento
+$ grep -o '47 ficheros' docs/loop/DEUDA.jsonl | sort | uniq -c
+      1 47 ficheros
