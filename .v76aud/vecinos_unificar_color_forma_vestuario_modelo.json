@@ -1,0 +1,33 @@
+{
+ "id": "unificar_color_forma_vestuario_modelo",
+ "grafo": 437,
+ "bandejas": 42,
+ "vecinos": [
+  {
+   "id": "dar_valor_constante_cuatro_publicos",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.425,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.421
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 4 del candidato contra paso 7 de dar_valor_constante_cuatro_publicos"
+  },
+  {
+   "id": "documentar_trabajo_manual_operaciones",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.358,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.425
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 2 del candidato contra paso 1 de documentar_trabajo_manual_operaciones"
+  }
+ ]
+}

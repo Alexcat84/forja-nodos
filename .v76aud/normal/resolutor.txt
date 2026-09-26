@@ -1,0 +1,4 @@
+nodos vivos: 437
+nodos deprecados (archivo): 0
+alias registrados: 0
+rc=0

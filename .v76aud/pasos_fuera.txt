@@ -1,0 +1,16 @@
+===== descubrir_motivacion_sentido_persona | None
+===== entregar_evaluacion_desempeno_tres_claves | None
+===== pedir_critica_anonima_curso_entrenamiento_dictado | None
+===== planificar_tres_pasos_demanda_estado_brecha | None
+===== recorrer_trece_elementos_proceso_evaluacion_formal | None
+===== responder_primer_aviso_renuncia_subordinado | grafo
+  titulo: Responder al primer momento en que un subordinado valioso avisa que quiere renunciar: dejar lo que haces, escucharlo sin discutir y comprarte tiempo antes de actuar
+  fuente: ['grove_high_output']
+  cond: Cuando un subordinado valioso y estimado se acerca al mando y anuncia, de pasada, que ha decidido dejar la empresa.
+  P1. Deja lo que estas haciendo en cuanto el subordinado te avisa de que quiere renunciar, en vez de posponer la conversacion para mas tarde.
+  P2. Sientalo y preguntale por que se va.
+  P3. Dejalo hablar sin discutir nada de lo que diga, aunque sus razones no te parezcan buenas.
+  P4. Cuando haya terminado de exponer sus razones, hazle mas preguntas para que los asuntos de fondo puedan salir a la luz.
+  P5. No discutas, no sermonees y no entres en panico durante esta primera conversacion.
+  P6. No intentes cambiarle la idea en este momento, sino compra tiempo: cuando haya dicho todo lo que tiene que decir, pide el tiempo que necesites para prepararte para el siguiente encuentro.
+  P7. Cumple despues con lo que te hayas comprometido a hacer en esta primera conversacion.

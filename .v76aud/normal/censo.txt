@@ -1,0 +1,16 @@
+$ wc -l dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl config/pares_mutuos.jsonl
+    437 dataset/nodos.jsonl
+   1111 bitacora/VEREDICTOS.jsonl
+      1 config/pares_mutuos.jsonl
+   1549 total
+$ for d in cuarentena/gerber_emyth cuarentena/_insertados/gerber_emyth cuarentena/grove_high_output cuarentena/_insertados/grove_high_output cuarentena/marquet_turn_the_ship; do echo "$d $(find $d -maxdepth 1 -name "*.json" 2>/dev/null | wc -l)"; done; echo "procesos $(ls -A procesos/ | wc -l)"
+cuarentena/gerber_emyth 22
+cuarentena/_insertados/gerber_emyth 0
+cuarentena/grove_high_output 0
+cuarentena/_insertados/grove_high_output 92
+cuarentena/marquet_turn_the_ship 20
+procesos 0
+$ python .v70aud/poblacion.py
+poblacion: 479 | por sede: {'grafo': 437, 'bandeja': 42} | suma: 479
+$ git diff --stat 9dcaa4b3 a4c80681 -- dataset bitacora censos config/pares_mutuos.jsonl | wc -l
+0

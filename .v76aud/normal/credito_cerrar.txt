@@ -1,0 +1,8 @@
+  especie            racha      de donde sale
+  ----------------------------------------------------------------------
+  AUDITOR            0 de 3     ACTA 75
+  CIFRA PUBLICADA    0 de 2     ACTA 75
+  CLASE              0 de 2     ACTA 75
+  DATO MOVIDO        0 de 2     ACTA 75
+  REPORTE            1 de 3     ACTA 75
+

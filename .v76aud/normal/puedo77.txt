@@ -1,0 +1,2 @@
+LINEA 'serial', LIBRO 'gerber_emyth': SI
+  'gerber_emyth' esta COSECHADO y sin dueño: su trabajo ya llego a esta rama, asi que se continua desde el capitulo siguiente al ultimo minado (cap_22), citando su frontera. D.50.

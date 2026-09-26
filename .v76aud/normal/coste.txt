@@ -1,0 +1,6 @@
+$ python .v76aud/normal/coste.py
+ultimo_extractor.json | USD 15.97 | 1555 s de API | turnos 142 | entrada 282 | cache escrita 480554 | cache leida 43311897 | salida 172892 (pensamiento 59799)
+ultimo_apertura.json | USD 11.00 | 1092 s de API | turnos 103 | entrada 196 | cache escrita 433609 | cache leida 26005317 | salida 116398 (pensamiento 40755)
+$ sed -n "8380p;8384p" docs/loop/loop.log
+[2026-09-26 08:09:51] extractor listo (USD 15.965779399999997), 5070s, intento 1 de 7
+[2026-09-26 08:59:01] auditor ciego listo (USD 10.998679400000004), 2949s, intento 1 de 7

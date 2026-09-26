@@ -1,0 +1,9 @@
+(1) filas dirigidas suyas: 54 | mias: 54 | {'en las dos, igual': 54} | suma: 54
+    poblacion (grafo, bandejas) suya y mia por candidato: {'((437, 42), (437, 42))': 22} | suma: 22
+(2) lineas suyas: 54 | con DISCUTIBLE: 12 | las mismas filas dirigidas que mi barrido: True
+   DISTINTA aplicar_cinco_pasos_proceso_contratacion ~ construir_estrategia_gente_cuatro_componentes | suya SANO  | mia CONTINUA construir_estrategia_gente_cuatro_componentes
+   DISTINTA construir_estrategia_gente_cuatro_componentes ~ aplicar_cinco_pasos_proceso_contratacion | suya SANO  | mia CONTINUA construir_estrategia_gente_cuatro_componentes
+   DISTINTA construir_estrategia_gente_cuatro_componentes ~ recorrer_siete_pasos_programa_desarrollo_negocio | suya SANO  | mia CONTINUA recorrer_siete_pasos_programa_desarrollo_negocio
+   DISTINTA recorrer_siete_pasos_programa_desarrollo_negocio ~ construir_estrategia_gente_cuatro_componentes | suya SANO  | mia CONTINUA recorrer_siete_pasos_programa_desarrollo_negocio
+    sus clases: {'SANO': 50, 'CONTINUA': 4} | suma: 54
+    contra mis clases: {'DISTINTA': 4, 'igual clase y madre': 50} | suma: 54

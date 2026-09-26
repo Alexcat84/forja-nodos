@@ -1,0 +1,20 @@
+{
+ "id": "construir_empresa_plantilla_vision_diaria",
+ "grafo": 437,
+ "bandejas": 42,
+ "vecinos": [
+  {
+   "id": "recorrer_trece_elementos_proceso_evaluacion_formal",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.353,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.397
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 5 del candidato contra paso 7 de recorrer_trece_elementos_proceso_evaluacion_formal"
+  }
+ ]
+}

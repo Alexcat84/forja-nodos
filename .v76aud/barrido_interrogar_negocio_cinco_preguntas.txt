@@ -1,0 +1,1 @@
+interrogar_negocio_cinco_preguntas poblacion 479 (437 grafo mas 42 bandejas) vecinos 1

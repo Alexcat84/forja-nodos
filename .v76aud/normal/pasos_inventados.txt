@@ -1,0 +1,11 @@
+cap_04 | The Entrepreneur the Manager, and the Technician | candidatos 1 | pasos 7 | PUENTE sobre el texto de al abrir 0 = 0,00 por ciento | PUENTE en el texto de hoy 0
+cap_07 | Beyond the Comfort Zone | candidatos 1 | pasos 8 | PUENTE sobre el texto de al abrir 1 = 12,50 por ciento | PUENTE en el texto de hoy 0
+cap_08 | Maturity and the Entrepreneurial Perspective | candidatos 2 | pasos 17 | PUENTE sobre el texto de al abrir 0 = 0,00 por ciento | PUENTE en el texto de hoy 0
+cap_11 | Working On Your Business, Not In It | candidatos 6 | pasos 57 | PUENTE sobre el texto de al abrir 1 = 1,75 por ciento | PUENTE en el texto de hoy 0
+cap_12 | The Business Development Process | candidatos 3 | pasos 12 | PUENTE sobre el texto de al abrir 4 = 33,33 por ciento | PUENTE en el texto de hoy 0
+cap_13 | Your Business Development Program | candidatos 1 | pasos 10 | PUENTE sobre el texto de al abrir 0 = 0,00 por ciento | PUENTE en el texto de hoy 0
+cap_14 | Your Primary Aim | candidatos 1 | pasos 9 | PUENTE sobre el texto de al abrir 0 = 0,00 por ciento | PUENTE en el texto de hoy 0
+cap_15 | Your Strategic Objective | candidatos 1 | pasos 5 | PUENTE sobre el texto de al abrir 0 = 0,00 por ciento | PUENTE en el texto de hoy 0
+cap_18 | Your People Strategy | candidatos 3 | pasos 26 | PUENTE sobre el texto de al abrir 2 = 7,69 por ciento | PUENTE en el texto de hoy 0
+cap_19 | Your Systems Strategy | candidatos 3 | pasos 25 | PUENTE sobre el texto de al abrir 0 = 0,00 por ciento | PUENTE en el texto de hoy 0
+lote: pasos 176 | PUENTE al abrir 8 = 4,55 por ciento | PUENTE hoy 0 | suma de pasos por capitulo: 176

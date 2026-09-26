@@ -1,0 +1,33 @@
+{
+ "id": "aplicar_cinco_pasos_proceso_contratacion",
+ "grafo": 437,
+ "bandejas": 42,
+ "vecinos": [
+  {
+   "id": "construir_estrategia_gente_cuatro_componentes",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.375,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.532
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 11 del candidato contra paso 4 de construir_estrategia_gente_cuatro_componentes"
+  },
+  {
+   "id": "fingir_prototipo_cinco_mil_replicas",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.355,
+    "familia_id": 0.111,
+    "paso_contra_nodo": 0.512
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 10 del candidato contra paso 10 de fingir_prototipo_cinco_mil_replicas"
+  }
+ ]
+}

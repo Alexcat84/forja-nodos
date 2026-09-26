@@ -1,0 +1,29 @@
+$ git log --format="%h %an %cI %s" 9dcaa4b3..a4c80681 | cut -c1-140
+a4c80681 alexcat84 2026-09-26T08:59:31-04:00 Apertura ciega de la vuelta 1, sellada antes de exponer el reporte
+45e46d54 alexcat84 2026-09-26T08:09:12-04:00 Vuelta 76: la salida del hook del commit del cierre
+dfca777d alexcat84 2026-09-26T08:08:19-04:00 Vuelta 76, TAREA 5: el cierre (censo igual al abrir y al cerrar, 22 fichas de Gerber preparadas
+a0d42852 alexcat84 2026-09-26T07:56:56-04:00 Vuelta 76, TAREA 3 y 4: el barrido de las 22 de Gerber (22 de 22, 54 pares, recogido dentro del
+b0dda029 alexcat84 2026-09-26T07:08:54-04:00 Vuelta 76, TAREA 1 y 2: los registros de la ACTA 74 y la fidelidad entera de las 22 fichas de G
+2407dbb0 alexcat84 2026-09-26T06:45:48-04:00 Vuelta 76: lo pendiente del arnes antes de tocar nada
+57db4ac1 alexcat84 2026-09-26T06:45:00-04:00 Paradas: dictamen de la parada del 26 sep 2026 (Grove entro entero y el tablero no lo veia), co
+ccf9498f alexcat84 2026-09-26T06:44:59-04:00 Tablero: un libro COSECHADO que ya entro entero sale INSERTADO (la vuelta 76 no abrio, 26 sep 2
+$ git diff --name-only 9dcaa4b3 45e46d54 | grep -v "^\.v76ext/" | sed "s|/[^/]*\.json$|/*.json|" | sort | uniq -c
+      6 cuarentena/gerber_emyth/*.json
+      2 docs/loop/*.json
+      1 docs/loop/loop.log
+      1 docs/loop/paradas/2026-09-26-grove-entro-entero-y-el-tablero-no-lo-veia-DICTAMEN.md
+      1 docs/loop/REPORTE.md
+      1 docs/loop/TABLERO.jsonl
+      1 src/tablero.py
+      1 tests/test_aceptacion.py
+$ git diff --name-only 45e46d54 a4c80681
+docs/loop/APERTURA_CIEGA.md
+docs/loop/SELLOS_APERTURA.jsonl
+$ git log --format="%h %an" 9dcaa4b3..a4c80681 -- src tests scripts forja.py config esquema fuentes dataset bitacora censos
+ccf9498f alexcat84
+$ git diff --stat 9dcaa4b3 45e46d54 -- src tests
+ src/tablero.py           | 12 ++++++++++++
+ tests/test_aceptacion.py | 42 ++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 54 insertions(+)
+$ git status --short -- dataset bitacora censos config esquema fuentes src scripts tests cuarentena forja.py | wc -l
+0

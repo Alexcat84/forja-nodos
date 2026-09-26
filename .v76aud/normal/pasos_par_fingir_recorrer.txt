@@ -1,0 +1,29 @@
+===== fingir_prototipo_cinco_mil_replicas | cuarentena\gerber_emyth\fingir_prototipo_cinco_mil_replicas.json
+  titulo: Fingir que tu negocio es el prototipo de 5.000 iguales, y jugar con las seis reglas que el libro pone para ganar
+  fuente: ['gerber_emyth']
+  cond: Cuando quieres dejar de trabajar dentro de tu negocio y ponerte a trabajar sobre el, y necesitas el modelo con el que se hace.
+  P1. Finge que el negocio que tienes, o que quieres tener, es el prototipo de otros 5.000 iguales, y que va a servir de modelo para esos 5.000.
+  P2. Entiende iguales como el texto lo entiende: no casi iguales, sino iguales; replicas perfectas, clones.
+  P3. Dicho de otro modo, finge que vas a franquiciar tu negocio, y quedate con que el texto dice fingir y no dice que debas hacerlo.
+  P4. Juega entonces con las reglas que el texto pone para ganar el juego de la franquicia, que son seis y estan enumeradas a continuacion.
+  P5. Regla 1: el modelo dara valor constante a tus clientes, empleados, proveedores y prestamistas, por encima de lo que esperan.
+  P6. Regla 2: el modelo lo operara gente con el nivel de destreza mas bajo posible.
+  P7. Regla 3: el modelo destacara como un sitio de orden impecable.
+  P8. Regla 4: todo el trabajo del modelo estara documentado en Manuales de Operaciones.
+  P9. Regla 5: el modelo dara al cliente un servicio uniformemente predecible.
+  P10. Regla 6: el modelo usara un codigo uniforme de color, vestuario e instalaciones.
+  P11. Recorre las seis reglas una a una, que es lo que el texto hace justo despues de enumerarlas.
+===== recorrer_siete_pasos_programa_desarrollo_negocio | cuarentena\gerber_emyth\recorrer_siete_pasos_programa_desarrollo_negocio.json
+  titulo: Recorrer los siete pasos del Business Development Program, empezando por tu Primary Aim
+  fuente: ['gerber_emyth']
+  cond: Cuando ya finges que tu negocio es el prototipo de 5.000 replicas y necesitas el programa paso a paso con el que conviertes ese negocio, el que tienes o el que vas a crear, en un modelo organizado.
+  P1. Entiende tu Business Development Program como el proceso paso a paso con el que conviertes tu negocio actual, o el que vas a crear, en un modelo perfectamente organizado para miles de replicas iguales.
+  P2. Usalo tambien como el vehiculo con el que construyes tu Franchise Prototype.
+  P3. Recorre el programa en sus siete pasos distintos, en este orden.
+  P4. Paso 1: Your Primary Aim.
+  P5. Paso 2: Your Strategic Objective.
+  P6. Paso 3: Your Organizational Strategy.
+  P7. Paso 4: Your Management Strategy.
+  P8. Paso 5: Your People Strategy.
+  P9. Paso 6: Your Marketing Strategy.
+  P10. Paso 7: Your Systems Strategy.

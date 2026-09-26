@@ -1,0 +1,111 @@
+{
+ "id": "dictar_ritmo_crecimiento_preguntas_escritas",
+ "grafo": 437,
+ "bandejas": 42,
+ "vecinos": [
+  {
+   "id": "descubrir_motivacion_sentido_persona",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.203,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.603
+   },
+   "levantada_por": [
+    "paso_contra_nodo"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 10 de descubrir_motivacion_sentido_persona"
+  },
+  {
+   "id": "cuantificar_impacto_innovacion_6_pasos",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.42,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.478
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 8 del candidato contra paso 5 de cuantificar_impacto_innovacion_6_pasos"
+  },
+  {
+   "id": "hacer_trabajo_futuro_imaginar_negocio",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.385,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.442
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 7 del candidato contra paso 7 de hacer_trabajo_futuro_imaginar_negocio"
+  },
+  {
+   "id": "planificar_tres_pasos_demanda_estado_brecha",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.35,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.439
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 4 de planificar_tres_pasos_demanda_estado_brecha"
+  },
+  {
+   "id": "operar_modelo_gente_destreza_minima",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.377,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.439
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 6 del candidato contra paso 6 de operar_modelo_gente_destreza_minima"
+  },
+  {
+   "id": "responder_primer_aviso_renuncia_subordinado",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.352,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.423
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 7 de responder_primer_aviso_renuncia_subordinado"
+  },
+  {
+   "id": "cambiar_saludo_cliente_dos_ramas",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.423,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.355
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 8 del candidato contra paso 4 de cambiar_saludo_cliente_dos_ramas"
+  },
+  {
+   "id": "interrogar_negocio_cinco_preguntas",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.367,
+    "familia_id": 0.125,
+    "paso_contra_nodo": 0.418
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 8 del candidato contra paso 4 de interrogar_negocio_cinco_preguntas"
+  }
+ ]
+}

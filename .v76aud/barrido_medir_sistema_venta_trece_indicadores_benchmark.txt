@@ -1,0 +1,1 @@
+medir_sistema_venta_trece_indicadores_benchmark poblacion 479 (437 grafo mas 42 bandejas) vecinos 2

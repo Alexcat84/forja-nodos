@@ -14,11 +14,9 @@ su misma linea la seccion de la `ACTA 75` donde esta pegada** (`R8`, `ACTA 75` `
 ## 0. **LA CLASE, EL LIBRO Y LA REGLA DEL TURNO**
 
     $ python scripts/deuda.py --clase 77
-    LIBRE
-      van 3 de 5 desde la ultima de saneamiento (la 74), con 52 deuda(s) esperando
+    {{SALIDA}}
     $ python forja.py tablero --puedo gerber_emyth
-    LINEA 'serial', LIBRO 'gerber_emyth': SI
-      'gerber_emyth' esta COSECHADO y sin dueño: su trabajo ya llego a esta rama, asi que se continua desde el capitulo siguiente al ultimo minado (cap_22), citando su frontera. D.50.
+    {{SALIDA}}
 
 **La frase de *continuar desde `cap_22`* es de extraccion y no aplica: el frente de Gerber esta cerrado** (`PARALELO.md` `8` punto
 `3`), y lo que se hace es insertar lo que la `76` dejo listo en su bandeja. **El orden de la campania es Grove, Gerber, Marquet**
@@ -34,8 +32,7 @@ NADA EN SEGUNDO PLANO QUE SIGA VIVO AL CERRAR TU TURNO.** Si algo no te cabe, no
 faltan, y entran en la `78`. El reloj de los `insertar` de la `72` y de la `75`, que es lo que costo y no un techo:
 
     $ tail -1 .v72ext/relojes_resumen.txt; tail -1 .v75ext/relojes.txt
-    insertar: 20 | minimo 274.4 s | mediana 560.0 s | maximo 976.5 s | suma 10920.8 s (3.03 h)
-    insertar: 7 | minimo 341.0 s | mediana 504.4 s | maximo 711.9 s | suma 3570.5 s (0.99 h)
+    {{SALIDA}}
 
 ---
 
@@ -78,41 +75,11 @@ auditor la reprodujo, `ACTA 75` `75.1`), pegada. Si una ficha sale distinta, **n
 ## TAREA 4: **LAS `22` FILAS DE `.v76ext/orden.txt`, UNA POR VEZ** (`ACTA 75` `75.1`, `75.4`)
 
     $ sed -n '2,23p' .v76ext/orden.txt | cut -c1-80
-    1   hacer_trabajo_futuro_imaginar_negocio                        cap_04 P1      
-    2   dictar_ritmo_crecimiento_preguntas_escritas                  cap_07 P1      
-    3   construir_empresa_plantilla_vision_diaria                    cap_08 P1      
-    4   trazar_modelo_negocio_cliente_primero                        cap_08 P2      
-    5   fingir_prototipo_cinco_mil_replicas                          cap_11 P1      
-    6   dar_valor_constante_cuatro_publicos                          cap_11 P2      
-    7   interrogar_negocio_cinco_preguntas                           cap_11 P6      
-    8   operar_modelo_gente_destreza_minima                          cap_11 P3      
-    9   unificar_color_forma_vestuario_modelo                        cap_11 P5      
-    10  cambiar_saludo_cliente_dos_ramas                             cap_12 R3      
-    11  probar_traje_azul_seis_semanas                               cap_12 R3      
-    12  cuantificar_impacto_innovacion_6_pasos                       cap_12 R5      
-    13  recorrer_siete_pasos_programa_desarrollo_negocio             cap_13 R3      
-    14  responder_8_preguntas_construir_primary_aim                  cap_14 R5      
-    15  responder_4_preguntas_estandares_objetivo_estrategico        cap_15 R5      
-    16  distinguir_tres_tipos_sistemas_negocio                       cap_19 D1      
-    17  aplicar_seis_pasos_sistema_venta                             cap_19 D2      
-    18  medir_sistema_venta_trece_indicadores_benchmark              cap_19 D3      
-    19  construir_estrategia_gente_cuatro_componentes                cap_18 C1      
-    20  documentar_trabajo_manual_operaciones                        cap_11 P4      
-    21  aplicar_ocho_reglas_juego_personas                           cap_18 C2      
-    22  aplicar_cinco_pasos_proceso_contratacion                     cap_18 C3      
+    {{SALIDA}}
     $ sed -n '31,40p' .v76ext/orden.txt
-    ARISTAS ESPERADAS EN LA VUELTA QUE INSERTE ESTAS 22
-      CONTINUA   aplicar_seis_pasos_sistema_venta                         > medir_sistema_venta_trece_indicadores_benchmark
-      CONTINUA   cambiar_saludo_cliente_dos_ramas                         > cuantificar_impacto_innovacion_6_pasos
-      LECTURA    recorrer_siete_pasos_programa_desarrollo_negocio         > construir_estrategia_gente_cuatro_componentes
-      LECTURA    fingir_prototipo_cinco_mil_replicas                      > dar_valor_constante_cuatro_publicos
-      LECTURA    fingir_prototipo_cinco_mil_replicas                      > operar_modelo_gente_destreza_minima
-      LECTURA    fingir_prototipo_cinco_mil_replicas                      > documentar_trabajo_manual_operaciones
-      LECTURA    fingir_prototipo_cinco_mil_replicas                      > unificar_color_forma_vestuario_modelo
-      LECTURA    construir_estrategia_gente_cuatro_componentes            > documentar_trabajo_manual_operaciones
-      CONTINUA con madre= (aristas distintas): 2 | SOSTENGO por lectura: 6 | solapes entre las dos: 0 | aristas esperadas: 8
+    {{SALIDA}}
     $ grep -v '^#' .v76ext/veredictos_listos.txt | grep -c '|'
-    54
+    {{SALIDA}}
 
 1. **En su orden, de la fila `1` a la ultima.** Las lineas `--veredicto` son las del bloque de cada candidato en tu sede de lineas
    (TAREA `2`), **tal cual, sin las `#`**. Las `CONTINUA` con `madre=` cablean su arista en el acto.

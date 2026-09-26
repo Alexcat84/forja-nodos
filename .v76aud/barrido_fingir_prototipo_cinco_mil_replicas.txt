@@ -1,0 +1,1 @@
+fingir_prototipo_cinco_mil_replicas poblacion 479 (437 grafo mas 42 bandejas) vecinos 0

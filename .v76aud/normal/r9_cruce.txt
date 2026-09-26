@@ -1,0 +1,1 @@
+pasos: 176 | por patron que casa: {'ninguno': 147, 'suyo+mio': 8, 'suyo': 21} | suma: 176
