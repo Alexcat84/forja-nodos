@@ -1105,3 +1105,5 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-25 | definir_entorno_grupo_clientes_proveedores_competidores | nombre_largo | El paso 1 de la planificacion, la demanda del entorno, resuelto por su pregunta previa: que es exactamente tu entorno, y de que tres clases de grupo esta hecho | castellano | - |
 | 2026-09-25 | definir_entorno_grupo_clientes_proveedores_competidores | otro_idioma | environmental demand | ingles | - |
 | 2026-09-25 | definir_entorno_grupo_clientes_proveedores_competidores | otro_idioma | stand-alone company | ingles | - |
+| 2026-09-25 | examinar_entorno_expectativas_tecnologia_proveedores_grupos | nombre_largo | Que buscar cuando examinas tu entorno: los cuatro objetos de revision del paso 1 de la planificacion, nombrados uno a uno por el libro | castellano | - |
+| 2026-09-25 | examinar_entorno_expectativas_tecnologia_proveedores_grupos | otro_idioma | examine your environment | ingles | - |

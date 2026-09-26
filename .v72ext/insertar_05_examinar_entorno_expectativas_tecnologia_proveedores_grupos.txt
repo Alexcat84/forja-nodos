@@ -1,0 +1,67 @@
+fila 05, examinar_entorno_expectativas_tecnologia_proveedores_grupos, lineas --veredicto: 6
+  --veredicto definir_entorno_grupo_clientes_proveedores_competidores|CONTINUA|madre=definir_entorno_grupo_clientes_proveedores_competidores|El mismo par que definir_entorno lee desde su lado: la condicion de este candidato es tener ya definido que es tu entorno y tener que examinarlo, producto del vecino (L25), y el libro abre su tramo con What should you look for when you examine your environment (L27). Trae cinco pasos propios que el vecino no tiene (DISCUTIBLE D71.10).
+  --veredicto determinar_estado_presente_capacidades_proyectos_merma|SANO|El mismo par que determinar_estado lee desde su lado: hermanos del mismo plan, pasos 1 y 2 (L27, L35).
+  --veredicto examinar_demanda_entorno_dos_marcos_temporales|SANO|El mismo par que examinar_demanda lee desde su lado: hermanos, los dos hijos de definir_entorno, con el solape en el cliente y procedimiento propio en los dos lados (DISCUTIBLE D71.11).
+  --veredicto cerrar_brecha_dos_preguntas_estrategia|SANO|El mismo par que cerrar_brecha lee desde su lado: del mismo capitulo y sin jerarquia (L27, L39).
+  --veredicto contestar_dos_preguntas_direccion_objetivos|SANO|El mismo par que contestar_dos_preguntas lee desde su lado: la direccion por objetivos da por sabida la demanda del entorno (L69), y ninguno usa el producto del otro.
+  --veredicto fijar_periodo_direccion_objetivos_retroalimentacion|SANO|Ajenos dentro del mismo capitulo: la senial 3 casa el Evalua el desempeno de los otros grupos de aqui (L27) con el exigir que el sistema te diga como lo estas haciendo del vecino (L79). Uno examina el entorno y el otro fija el periodo de los objetivos.
+inicio 2026-09-25 22:23:36
+======================================================================
+ADUANA DE INSERCION, candidato 'examinar_entorno_expectativas_tecnologia_proveedores_grupos'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (414 del grafo mas 65 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 6. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino definir_entorno_grupo_clientes_proveedores_competidores  [Definir tu entorno mirando tu grupo como si fuera una empresa independiente: clientes, proveedores y competidores]
+    levantada por: similitud_texto, familia_id
+    similitud_texto    0.408 (umbral 0.35)
+    familia_id         0.333 (umbral 0.30)
+    paso_contra_nodo   0.527 (umbral 0.60)
+    paso 4 del candidato contra paso 2 de definir_entorno_grupo_clientes_proveedores_competidores
+
+  vecino determinar_estado_presente_capacidades_proyectos_merma  [Determinar tu estado presente listando capacidades y proyectos en curso, en la misma moneda de la demanda, con su plazo de salida y su merma descontada]
+    levantada por: similitud_texto
+    similitud_texto    0.398 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.497 (umbral 0.60)
+    paso 1 del candidato contra paso 1 de determinar_estado_presente_capacidades_proyectos_merma
+
+  vecino examinar_demanda_entorno_dos_marcos_temporales  [Examinar la demanda de tu entorno en dos marcos temporales y trabajar sobre la diferencia, sin rebajarla por lo que creas que puedes entregar]
+    levantada por: similitud_texto
+    similitud_texto    0.372 (umbral 0.35)
+    familia_id         0.200 (umbral 0.30)
+    paso_contra_nodo   0.482 (umbral 0.60)
+    paso 3 del candidato contra paso 2 de examinar_demanda_entorno_dos_marcos_temporales
+
+  vecino cerrar_brecha_dos_preguntas_estrategia  [Cerrar la brecha entre demanda y rendimiento contestando por separado que necesitas hacer y que puedes hacer, y llamar estrategia al conjunto que decidas]
+    levantada por: similitud_texto
+    similitud_texto    0.419 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.433 (umbral 0.60)
+    paso 4 del candidato contra paso 6 de cerrar_brecha_dos_preguntas_estrategia
+
+  vecino fijar_periodo_direccion_objetivos_retroalimentacion  [Fijar el periodo del sistema de direccion por objetivos por el plazo en que su retroalimentacion sigue sirviendo, y contrastarlo con la base del plan]
+    levantada por: similitud_texto
+    similitud_texto    0.356 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.406 (umbral 0.60)
+    paso 4 del candidato contra paso 1 de fijar_periodo_direccion_objetivos_retroalimentacion
+
+  vecino contestar_dos_preguntas_direccion_objetivos  [Montar el sistema de direccion por objetivos sobre las dos unicas preguntas que tiene que contestar: adonde quiero ir, y como me marco el ritmo para ver si estoy llegando]
+    levantada por: similitud_texto
+    similitud_texto    0.378 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.406 (umbral 0.60)
+    paso 1 del candidato contra paso 3 de contestar_dos_preguntas_direccion_objetivos
+  arista madre-hijo cableada y escrita RESUELTA: definir_entorno_grupo_clientes_proveedores_competidores > examinar_entorno_expectativas_tecnologia_proveedores_grupos
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 415
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 6
+
+======================================================================
+fin 2026-09-25 22:30:10 | codigo de salida 0 | 394.7 s
