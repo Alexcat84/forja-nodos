@@ -62926,3 +62926,118 @@ Lo pendiente del arnes (`loop.log`) se commiteo primero, `4a8e56d5`, con el hook
     cerrojos en procesos/               : 
 
 **El mismo que en `71.0` y en `71.5.a`**, sin cerrojos. **Ningun proceso lanzado en este reintento.** No escribo `PARA_ALEXIS.md`.
+
+
+# VUELTA 72 DE LA LINEA SERIAL, lote 7 (`grove_high_output`), **CLASE INSERCION**: las `20` filas de `.v71ext/orden.txt` (`cap_07`, `cap_10`, `cap_11`, `cap_12`, `cap_13` y `cap_14`), una por vez, con las `50` lineas y las `6` aristas que las dos lecturas ya comparten
+
+*Encargo escrito por el auditor al cerrar la `ACTA 70`. Clase impresa por `python scripts/deuda.py --clase 72` (`LIBRE`, van
+`3` de `5` desde la `69`). **Un `insertar` por vez, y ninguno vivo cuando el turno termine.***
+
+**REPORTE ABIERTO AL EMPEZAR** (`EXTRACTOR.md` 3). Las filas se llenan al cerrarse cada tarea; cada insercion anexa su fila al
+volver, con su commit. Si la vuelta se corta, lo que falte es exactamente lo que no tiene fila.
+
+| tarea | que | estado |
+|---|---|---|
+| `T1` | los registros de la `ACTA 70` | **CERRADA** (`72.1`) |
+| `T2` | lo que entra es lo que se leyo: las `20` huellas contra `682a39c` | **CERRADA** (`72.2`): `20` iguales, ninguna se relee |
+| `T3` | las `20` filas de `.v71ext/orden.txt`, una por vez | ABIERTA: cada fila anexa su bloque en `72.3` al volver su `insertar` |
+| `T4` | las aristas de la tanda, por instrumento | ABIERTA, tras la ultima fila |
+| `T5` | el cierre: censo, `PASOS INVENTADOS`, `D.61`, `R5`, guardas, commit | ABIERTA |
+
+## 72.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
+
+**Lo pendiente, commiteado primero** (`EXTRACTOR.md` 1): `TABLERO.jsonl`, `loop.log`, `ultimo_auditor.json` y
+`ultimo_extractor.json` del arnes, en `4c7a838`, hook verde, empujado.
+
+<!-- TALLADO: parcial salida=.v72ext/apertura.txt -->
+
+    $ git rev-parse HEAD && git log -1 --format=%cI && git rev-parse --abbrev-ref HEAD
+    4c7a838fe154725fedaec691782009eae87348d1
+    2026-09-25T21:44:39-04:00
+    extraccion-mundo-11
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 410
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+    $ bash .v72ext/censo.sh
+    nodos en dataset/nodos.jsonl        : 410
+    veredictos en bitacora              : 1027
+    pares mutuos                        : 1
+    bandeja cuarentena/grove_high_output: 27
+    insertados de grove_high_output     : 65
+    cerrojos en procesos/               : 
+    $ python scripts/deuda.py --clase 72
+    LIBRE
+      van 3 de 5 desde la ultima de saneamiento (la 69), con 56 deuda(s) esperando
+
+**Coincide con el cierre de la `71`** (`410`, `1027`, `1`, `27`, `65`: `ACTA 70` `70.1`), y **`procesos/` esta vacio: ningun
+cerrojo que romper.** `.v72ext/censo.sh` es copia de `.v70ext/censo.sh` con el comentario cambiado, y se vuelve a correr al cerrar.
+
+## 72.D. **LOS DISCUTIBLES, MARCADOS ANTES DE SABER SI ACIERTO** (`EXTRACTOR.md` 8)
+
+| | que | por que lo marco |
+|---|---|---|
+| `D72.1` | **EL METODO DE ESPERA DE LA `67`, LA `68` Y LA `70`**, que el encargo da por bueno (`0`): cada `insertar` lo lanza una copia de `.v70ext/insertar.py` como UN proceso y yo espero en primer plano con una copia de `.v70ext/esperar.py` hasta su `.fin`, porque una llamada de mi herramienta no pasa de `600` s y un `insertar` de la `70` tardo de `747` a `4236`. **Entre el lanzamiento y el `.fin` no lanzo el siguiente, no toco el dataset, la bitacora ni la bandeja**; solo leo y escribo prosa del reporte. **Ninguno queda vivo al cerrar mi turno** | la letra de la corrida dice *primer plano*; el proceso lanzado es el metodo que las actas sostienen y el encargo nombra, y nada de lo que hago mientras vuela lo lee la aduana |
+| `D72.2` | **`.v72ext/insertar.py` lee las lineas de `.v71ext/veredictos_listos.txt` y salta las `#`**, como la de la `70` con la sede cambiada; contadas en seco antes del primer `insertar` (`.v72ext/lineas_en_seco.txt`), salen `50`, y por candidato las de la columna `lin` de `.v71ext/orden.txt`, `0` filas que difieran | es la copia con la sede y la ruta de salida cambiadas; si la aduana de hoy levanta otra cosa, la fila lo declara |
+| `D72.3` | **la cita de `.v72ext/arista.py`**: las cuatro por lectura van `--cita-veredicto` a su linea de `.v71ext/aristas_lectura.txt` y a la `ACTA 70` `70.3` (donde el auditor las dio por suyas) y `70.5` (donde `D71.12` se sostuvo) | la de la `70` citaba las actas `67` y `68`; la sede de la adjudicacion de estas es otra, y la elijo yo leyendo la `ACTA 70` |
+| `D72.4` | **las dos `CONTINUA` con `madre=` las cablea la aduana al entrar el hijo** (filas `5` y `6`): la linea de la madre en la fila `4` deja la arista `EN COLA` porque el hijo espera en la bandeja, y la del hijo la cablea | es lo que hizo la aduana en la `67` y en la `70` (`D70.4`); si hoy hace otra cosa, se declara en su fila |
+| `D72.5` | **`d170` se paga al volver la fila `16`** con la cita de `D69.3` y la medida de la aduana de hoy, sin linea ni arista si el par no se levanta | el encargo (TAREA `3.3`) lo manda asi; si la aduana lo levanta, la linea `SANO` es mia de esta vuelta y se marca |
+
+## 72.1. TAREA 1: LOS REGISTROS DE LA `ACTA 70`, SIN REABRIR EL ARGUMENTO (`D.47`)
+
+| que | donde |
+|---|---|
+| **mis `13` discutibles se sostienen**; en `D71.12` cae la lectura ciega del auditor en `2` pares y **mis `50` lineas quedan como estan** | `ACTA 70` `70.5` |
+| **mi barrido es el del auditor fila a fila, `50` de `50` con sus seniales**, y mis instrumentos se reproducen identicos; mis `4` PUENTE y sus correcciones se sostienen, y las `6` dudas del auditor caen a mi `T` | `70.1`, `70.4` |
+| **mis `4` aristas por lectura son las del auditor** y mi orden cumple sus `12` restricciones | `70.3` |
+| **una cifra mia falsa en prosa**: *`13` de las `20` levantan vecinos*, donde son `15`. Registrada, no acumula | `70.2` |
+| **una cifra falsa del auditor en el encargo de la `71`** (*fichas de `2400` a `4200` s* en la `68`, que son `865` a `4566`): su racha `AUDITOR` en `1 de 3`, y su remedio `R8` | `70.10`, `70.12` |
+
+**`T1` CERRADA.**
+
+## 72.2. TAREA 2: LO QUE ENTRA ES LO QUE SE LEYO
+
+Copia de `.v71ext/pasos_y_huellas.py` con el commit cambiado a `682a39c`, el cierre del reintento de la `71`
+(`.v72ext/pasos_y_huellas.py`, lo dice en su cabecera). **Corrida antes del primer `insertar`:**
+
+<!-- TALLADO: parcial salida=.v72ext/pasos_y_huellas.txt -->
+
+    $ python .v72ext/pasos_y_huellas.py
+    1   planificar_tres_pasos_demanda_estado_brecha                  bandeja     6 pasos d9f186ccbf igual trabajo=HEAD
+    2   fijar_periodo_direccion_objetivos_retroalimentacion          bandeja     5 pasos 1a043672c5 igual trabajo=HEAD
+    3   fijar_horizonte_ventana_replanificacion                      bandeja     5 pasos f06b1accbb igual trabajo=HEAD
+    4   definir_entorno_grupo_clientes_proveedores_competidores      bandeja     6 pasos 9f4a0619c9 igual trabajo=HEAD
+    5   examinar_entorno_expectativas_tecnologia_proveedores_grupos  bandeja     5 pasos c464a31c97 igual trabajo=HEAD
+    6   examinar_demanda_entorno_dos_marcos_temporales               bandeja     7 pasos ce07fe53ee igual trabajo=HEAD
+    7   determinar_estado_presente_capacidades_proyectos_merma       bandeja     7 pasos 12d77e436c igual trabajo=HEAD
+    8   cerrar_brecha_dos_preguntas_estrategia                       bandeja     7 pasos 5d99ca8393 igual trabajo=HEAD
+    9   contestar_dos_preguntas_direccion_objetivos                  bandeja     5 pasos 67370bbe1c igual trabajo=HEAD
+    10  repartir_supervision_puesto_funcional_mision                 bandeja     8 pasos 931056ae49 igual trabajo=HEAD
+    11  elegir_modo_control_motivacion_factor_cua                    bandeja     8 pasos 6d2523f2d2 igual trabajo=HEAD
+    12  escalonar_complejidad_puesto_empleado_nuevo                  bandeja     9 pasos c740e2ff62 igual trabajo=HEAD
+    13  diagnosticar_capacidad_motivacion_prueba_vida                bandeja     4 pasos 5fd300d024 igual trabajo=HEAD
+    14  fijar_meta_direccion_objetivos_mitad_probabilidad            bandeja     4 pasos eae449d97b igual trabajo=HEAD
+    15  diagnosticar_nivel_motivacion_reaccion_aumento_salario       bandeja     3 pasos 3fa1b5d695 igual trabajo=HEAD
+    16  elegir_estilo_direccion_madurez_relevante_tarea              bandeja     8 pasos 86903eca6c igual trabajo=HEAD
+    17  decidir_amistad_subordinado_prueba_revision_dificil          bandeja     6 pasos 5338591fa7 igual trabajo=HEAD
+    18  entregar_evaluacion_desempeno_tres_claves                    bandeja     6 pasos 9e34377a5d igual trabajo=HEAD
+    19  preparar_resena_mixta_hoja_trabajo                           bandeja     6 pasos 21a4572310 igual trabajo=HEAD
+    20  guiar_subordinado_etapas_resistencia_desempeno               bandeja     6 pasos 17094eeca6 igual trabajo=HEAD
+    fichas de las filas 1 a 20: 20 | pasos: 121 | iguales a su blob en 682a39c: 20 | distintas: 0 | fichero de trabajo distinto de HEAD: 0
+
+Y sus `20` filas contra las de la `71`, con la columna `igual`/`DISTINTA` enmascarada porque la de la `71` comparaba contra
+`7be17c0` (su apertura, antes de sus tres correcciones) y esta contra `682a39c`:
+
+    $ diff --strip-trailing-cr <(head -20 .v71ext/pasos_y_huellas.txt | sed 's/ DISTINTA / X /; s/ igual / X /') <(head -20 .v72ext/pasos_y_huellas.txt | sed 's/ DISTINTA / X /; s/ igual / X /') && echo "las 20 filas iguales (salvo la columna igual/DISTINTA, que compara contra otro commit)"
+    las 20 filas iguales (salvo la columna igual/DISTINTA, que compara contra otro commit)
+
+**`20` iguales a su blob en `682a39c`, `121` pasos, y las `20` huellas iguales a las de `.v71ext/pasos_y_huellas.txt`: ninguna
+se relee.**
+
+**`T2` CERRADA.**
+
+## 72.3. TAREA 3: LAS `20` FILAS, UNA POR VEZ
+
+Copias de la `70` con la ruta cambiada a `.v72ext/` (`7.F`): `insertar.py` (la sede de las lineas cambiada a
+`.v71ext/veredictos_listos.txt`), `esperar.py`, `fila.py`, `arista.py` (la sede cambiada a `.v71ext/aristas_lectura.txt` y la
+cita a la `ACTA 70`), `tras_insertar.sh`, `empujar_fila.sh` y `bloque_arista.sh`; cada una lo dice en su cabecera.

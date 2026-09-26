@@ -1,0 +1,21 @@
+1   planificar_tres_pasos_demanda_estado_brecha                  lineas  1 | lin de orden.txt  1 
+2   fijar_periodo_direccion_objetivos_retroalimentacion          lineas  2 | lin de orden.txt  2 
+3   fijar_horizonte_ventana_replanificacion                      lineas  3 | lin de orden.txt  3 
+4   definir_entorno_grupo_clientes_proveedores_competidores      lineas  6 | lin de orden.txt  6 
+5   examinar_entorno_expectativas_tecnologia_proveedores_grupos  lineas  6 | lin de orden.txt  6 
+6   examinar_demanda_entorno_dos_marcos_temporales               lineas  4 | lin de orden.txt  4 
+7   determinar_estado_presente_capacidades_proyectos_merma       lineas  5 | lin de orden.txt  5 
+8   cerrar_brecha_dos_preguntas_estrategia                       lineas 10 | lin de orden.txt 10 
+9   contestar_dos_preguntas_direccion_objetivos                  lineas  6 | lin de orden.txt  6 
+10  repartir_supervision_puesto_funcional_mision                 lineas  0 | lin de orden.txt  0 
+11  elegir_modo_control_motivacion_factor_cua                    lineas  0 | lin de orden.txt  0 
+12  escalonar_complejidad_puesto_empleado_nuevo                  lineas  0 | lin de orden.txt  0 
+13  diagnosticar_capacidad_motivacion_prueba_vida                lineas  2 | lin de orden.txt  2 
+14  fijar_meta_direccion_objetivos_mitad_probabilidad            lineas  1 | lin de orden.txt  1 
+15  diagnosticar_nivel_motivacion_reaccion_aumento_salario       lineas  1 | lin de orden.txt  1 
+16  elegir_estilo_direccion_madurez_relevante_tarea              lineas  0 | lin de orden.txt  0 
+17  decidir_amistad_subordinado_prueba_revision_dificil          lineas  1 | lin de orden.txt  1 
+18  entregar_evaluacion_desempeno_tres_claves                    lineas  1 | lin de orden.txt  1 
+19  preparar_resena_mixta_hoja_trabajo                           lineas  1 | lin de orden.txt  1 
+20  guiar_subordinado_etapas_resistencia_desempeno               lineas  0 | lin de orden.txt  0 
+lineas --veredicto en seco: 50 | filas cuya cuenta difiere de lin: 0
