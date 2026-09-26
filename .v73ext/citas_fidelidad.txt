@@ -1,0 +1,85 @@
+$ grep -n -o -F 'Describe some projects that were highly regarded by your management' fuentes/grove_high_output/cap_15.md    # usar_banco_nueve_preguntas_entrevista paso 1 
+39:Describe some projects that were highly regarded by your management
+$ grep -n -o -F 'What are your weaknesses' fuentes/grove_high_output/cap_15.md    # usar_banco_nueve_preguntas_entrevista paso 2 
+41:What are your weaknesses
+$ grep -n -o -F 'Convince me why my company should hire you' fuentes/grove_high_output/cap_15.md    # usar_banco_nueve_preguntas_entrevista paso 3 
+43:Convince me why my company should hire you
+$ grep -n -o -F 'What are some of the problems you are encountering in your current pos' fuentes/grove_high_output/cap_15.md    # usar_banco_nueve_preguntas_entrevista paso 4 
+45:What are some of the problems you are encountering in your current pos
+$ grep -n -o -F 'Why do you think you' fuentes/grove_high_output/cap_15.md    # usar_banco_nueve_preguntas_entrevista paso 5 
+47:Why do you think you
+$ grep -n -o -F 'What do you consider your most significant achievements' fuentes/grove_high_output/cap_15.md    # usar_banco_nueve_preguntas_entrevista paso 6 
+49:What do you consider your most significant achievements
+$ grep -n -o -F 'What do you consider your most significant failures' fuentes/grove_high_output/cap_15.md    # usar_banco_nueve_preguntas_entrevista paso 7 
+51:What do you consider your most significant failures
+$ grep -n -o -F 'Why do you think an engineer should be chosen for a marketing position' fuentes/grove_high_output/cap_15.md    # usar_banco_nueve_preguntas_entrevista paso 8 
+53:Why do you think an engineer should be chosen for a marketing position
+$ grep -n -o -F 'What was the most important course or project you completed in your co' fuentes/grove_high_output/cap_15.md    # usar_banco_nueve_preguntas_entrevista paso 9 
+55:What was the most important course or project you completed in your co
+$ grep -n -o -F 'Drop what you are doing' fuentes/grove_high_output/cap_15.md    # responder_primer_aviso_renuncia_subordinado paso 1 
+111:Drop what you are doing
+$ grep -n -o -F 'Sit him down and ask him why he is quitting' fuentes/grove_high_output/cap_15.md    # responder_primer_aviso_renuncia_subordinado paso 2 
+111:Sit him down and ask him why he is quitting
+$ grep -n -o -F 'Let him talk' fuentes/grove_high_output/cap_15.md    # responder_primer_aviso_renuncia_subordinado paso 3 
+111:Let him talk
+$ grep -n -o -F 'After he’s finished going through all his reasons for wanting to lea' fuentes/grove_high_output/cap_15.md    # responder_primer_aviso_renuncia_subordinado paso 4 
+111:After he’s finished going through all his reasons for wanting to lea
+$ grep -n -o -F 'Don’t argue, don’t lecture, and don’t panic' fuentes/grove_high_output/cap_15.md    # responder_primer_aviso_renuncia_subordinado paso 5 
+111:Don’t argue, don’t lecture, and don’t panic
+$ grep -n -o -F 'Don’t try to change his mind at this point, but buy time' fuentes/grove_high_output/cap_15.md    # responder_primer_aviso_renuncia_subordinado paso 6 
+111:Don’t try to change his mind at this point, but buy time
+$ grep -n -o -F 'But know that you must follow through on whatever you’ve committed y' fuentes/grove_high_output/cap_15.md    # responder_primer_aviso_renuncia_subordinado paso 7 
+111:But know that you must follow through on whatever you’ve committed y
+$ grep -n -o -F 'Because you have a major problem, you go to your supervisor for help a' fuentes/grove_high_output/cap_15.md    # gestionar_retencion_subordinado_valioso_renuncia paso 1 
+113:Because you have a major problem, you go to your supervisor for help a
+$ grep -n -o -F 'You now must vigorously pursue every avenue available to you to keep h' fuentes/grove_high_output/cap_15.md    # gestionar_retencion_subordinado_valioso_renuncia paso 2 
+115:You now must vigorously pursue every avenue available to you to keep h
+$ grep -n -o -F 'If it seems that is the likely solution, you must become the project m' fuentes/grove_high_output/cap_15.md    # gestionar_retencion_subordinado_valioso_renuncia paso 3 
+115:If it seems that is the likely solution, you must become the project m
+$ grep -n -o -F 'Now you may be ready to go back to your subordinate with a solution' fuentes/grove_high_output/cap_15.md    # gestionar_retencion_subordinado_valioso_renuncia paso 4 
+117:Now you may be ready to go back to your subordinate with a solution
+$ grep -n -o -F 'You now have to make him feel comfortable with the new arrangement' fuentes/grove_high_output/cap_15.md    # gestionar_retencion_subordinado_valioso_renuncia paso 5 
+119:You now have to make him feel comfortable with the new arrangement
+$ grep -n -o -F 'Then your subordinate may say he’s accepted a job somewhere else and' fuentes/grove_high_output/cap_15.md    # gestionar_retencion_subordinado_valioso_renuncia paso 6 
+121:Then your subordinate may say he’s accepted a job somewhere else and
+$ grep -n -o -F 'In fact, management was at fault for misjudging the employee’s readi' fuentes/grove_high_output/cap_16.md    # reciclar_empleado_ascendido_mas_alla_capacidad paso 1 
+49:In fact, management was at fault for misjudging the employee’s readi
+$ grep -n -o -F 'Instead, I think management ought to face up to its own error in judgm' fuentes/grove_high_output/cap_16.md    # reciclar_empleado_ascendido_mas_alla_capacidad paso 2 
+49:Instead, I think management ought to face up to its own error in judgm
+$ grep -n -o -F 'Management should also support the employee in the face of the embarra' fuentes/grove_high_output/cap_16.md    # reciclar_empleado_ascendido_mas_alla_capacidad paso 3 
+49:Management should also support the employee in the face of the embarra
+$ grep -n -o -F 'If recycling is done openly, all will be pleasantly surprised how shor' fuentes/grove_high_output/cap_16.md    # reciclar_empleado_ascendido_mas_alla_capacidad paso 4 
+49:If recycling is done openly, all will be pleasantly surprised how shor
+$ grep -n -o -F 'For starters, make a list of the things you feel your subordinates or ' fuentes/grove_high_output/cap_17.md    # priorizar_lista_entrenamiento_subordinados paso 1 
+49:For starters, make a list of the things you feel your subordinates or 
+$ grep -n -o -F 'Items should range from what seems simple' fuentes/grove_high_output/cap_17.md    # priorizar_lista_entrenamiento_subordinados paso 2 
+49:Items should range from what seems simple
+$ grep -n -o -F 'Ask the people working for you what they feel they need' fuentes/grove_high_output/cap_17.md    # priorizar_lista_entrenamiento_subordinados paso 3 
+49:Ask the people working for you what they feel they need
+$ grep -n -o -F 'Having done this, take an inventory of the manager-teachers and instru' fuentes/grove_high_output/cap_17.md    # priorizar_lista_entrenamiento_subordinados paso 4 
+51:Having done this, take an inventory of the manager-teachers and instru
+$ grep -n -o -F 'Then assign priorities among these items' fuentes/grove_high_output/cap_17.md    # priorizar_lista_entrenamiento_subordinados paso 5 
+51:Then assign priorities among these items
+$ grep -n -o -F 'Especially if you haven’t done this sort of thing before, start very' fuentes/grove_high_output/cap_17.md    # desarrollar_primer_curso_entrenamiento paso 1 
+53:Especially if you haven’t done this sort of thing before, start very
+$ grep -n -o -F 'To avoid letting yourself bog down in the difficult task of course pre' fuentes/grove_high_output/cap_17.md    # desarrollar_primer_curso_entrenamiento paso 2 
+55:To avoid letting yourself bog down in the difficult task of course pre
+$ grep -n -o -F 'Create an outline for the whole course' fuentes/grove_high_output/cap_17.md    # desarrollar_primer_curso_entrenamiento paso 3 
+55:Create an outline for the whole course
+$ grep -n -o -F 'develop just the first lecture, and go' fuentes/grove_high_output/cap_17.md    # desarrollar_primer_curso_entrenamiento paso 4 
+55:develop just the first lecture, and go
+$ grep -n -o -F 'Develop the second lecture after you have given the first' fuentes/grove_high_output/cap_17.md    # desarrollar_primer_curso_entrenamiento paso 5 
+57:Develop the second lecture after you have given the first
+$ grep -n -o -F 'Regard the first time you teach the course as a throwaway' fuentes/grove_high_output/cap_17.md    # desarrollar_primer_curso_entrenamiento paso 6 
+57:Regard the first time you teach the course as a throwaway
+$ grep -n -o -F 'With your second attempt in the offing, ask yourself one final questio' fuentes/grove_high_output/cap_17.md    # desarrollar_primer_curso_entrenamiento paso 7 
+59:With your second attempt in the offing, ask yourself one final questio
+$ grep -n -o -F 'After you’ve given the course, ask for anonymous critiques from the ' fuentes/grove_high_output/cap_17.md    # pedir_critica_anonima_curso_entrenamiento_dictado paso 1 
+61:After you’ve given the course, ask for anonymous critiques from the 
+$ grep -n -o -F 'Prompt them with a form that asks for numerical ratings but that also ' fuentes/grove_high_output/cap_17.md    # pedir_critica_anonima_curso_entrenamiento_dictado paso 2 
+61:Prompt them with a form that asks for numerical ratings but that also 
+$ grep -n -o -F 'Study and consider the responses, but understand that you will never b' fuentes/grove_high_output/cap_17.md    # pedir_critica_anonima_curso_entrenamiento_dictado paso 3 
+61:Study and consider the responses, but understand that you will never b
+$ grep -n -o -F 'Your ultimate aim should be to satisfy yourself that you are accomplis' fuentes/grove_high_output/cap_17.md    # pedir_critica_anonima_curso_entrenamiento_dictado paso 4 
+61:Your ultimate aim should be to satisfy yourself that you are accomplis
+filas: 42 | en su linea declarada: 42 | fuera: 0

@@ -1,0 +1,14 @@
+$ grep -n -o -F 'Convince me why my company should hire you' fuentes/grove_high_output/cap_15.md    # usar_banco_nueve_preguntas_entrevista paso 3
+43:Convince me why my company should hire you
+$ grep -n -o -F '(Vary this one according to the situation.)' fuentes/grove_high_output/cap_15.md    # usar_banco_nueve_preguntas_entrevista paso 8
+53:(Vary this one according to the situation.)
+$ grep -n -o -F 'Don’t try to change his mind at this point, but buy time' fuentes/grove_high_output/cap_15.md    # responder_primer_aviso_renuncia_subordinado paso 6
+111:Don’t try to change his mind at this point, but buy time
+$ grep -n -o -F 'you go to your supervisor for help and advice' fuentes/grove_high_output/cap_15.md    # gestionar_retencion_subordinado_valioso_renuncia paso 1
+113:you go to your supervisor for help and advice
+$ grep -n -o -F 'You might say something like' fuentes/grove_high_output/cap_15.md    # gestionar_retencion_subordinado_valioso_renuncia paso 5
+119:You might say something like
+$ grep -n -o -F 'you will never be able to please all members of your class' fuentes/grove_high_output/cap_17.md    # pedir_critica_anonima_curso_entrenamiento_dictado paso 3
+61:you will never be able to please all members of your class
+$ grep -n -o -F 'an hour or two of interview time' fuentes/grove_high_output/cap_15.md    # usar_banco_nueve_preguntas_entrevista condicion
+27:an hour or two of interview time

@@ -1,0 +1,8 @@
+# Vuelta 73, las 7 de cap_15, cap_16 y cap_17: las 7 primeras lineas de .v73ext/siete.txt (capitulo, id, pasos), en el orden de su capitulo
+cap_15 gestionar_retencion_subordinado_valioso_renuncia 6
+cap_15 responder_primer_aviso_renuncia_subordinado 7
+cap_15 usar_banco_nueve_preguntas_entrevista 9
+cap_16 reciclar_empleado_ascendido_mas_alla_capacidad 4
+cap_17 desarrollar_primer_curso_entrenamiento 7
+cap_17 pedir_critica_anonima_curso_entrenamiento_dictado 4
+cap_17 priorizar_lista_entrenamiento_subordinados 5

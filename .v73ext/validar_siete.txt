@@ -1,0 +1,7 @@
+desarrollar_primer_curso_entrenamiento               avisos 0 | errores 0
+gestionar_retencion_subordinado_valioso_renuncia     avisos 0 | errores 0
+pedir_critica_anonima_curso_entrenamiento_dictado    avisos 0 | errores 0
+priorizar_lista_entrenamiento_subordinados           avisos 0 | errores 0
+reciclar_empleado_ascendido_mas_alla_capacidad       avisos 0 | errores 0
+responder_primer_aviso_renuncia_subordinado          avisos 0 | errores 0
+usar_banco_nueve_preguntas_entrevista                avisos 0 | errores 0
