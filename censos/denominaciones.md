@@ -1240,3 +1240,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-26 | ceder_control_reforzar_competencia_claridad | otro_idioma | divesting control | ingles | - |
 | 2026-09-26 | ceder_control_reforzar_competencia_claridad | otro_idioma | technical competence | ingles | - |
 | 2026-09-26 | ceder_control_reforzar_competencia_claridad | otro_idioma | organizational clarity | ingles | - |
+| 2026-09-26 | cambiar_forma_trabajar_conservar_plantilla | nombre_largo | El arranque del Santa Fe sin un solo despido: trabajar con lo que hay, y el mensaje que eso manda a cada persona | castellano | - |
+| 2026-09-26 | cambiar_forma_trabajar_conservar_plantilla | otro_idioma | turnover | ingles | - |
+| 2026-09-26 | cambiar_forma_trabajar_conservar_plantilla | otro_idioma | leadership vacuum | ingles | - |

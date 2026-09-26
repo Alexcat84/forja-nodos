@@ -1,0 +1,34 @@
+fila 02, cambiar_forma_trabajar_conservar_plantilla, lineas --veredicto: 2
+  --veredicto escuchar_entender_critica_dominar_defensa|SANO|Ajenos: el vecino del grafo, de scott_radical_candor, es la practica de escuchar tres minutos sin interrumpir para no ponerse a la defensiva ante la critica; este conserva la plantilla y cambia como interactua (cap_02 L25, L27, L29). La senial es paso contra nodo, 0,612, del paso 2 de este (Centrate en trabajar con lo que tienes) contra el paso 4 del vecino (practica con otros): la forma verbal, no el objeto. El frente lo leyo igual (ACTA M9.4, fila 4).
+  --veredicto encargar_meta_especifica_dejar_libre_metodo|SANO|Hermanos del mismo capitulo y del mismo encargo del mismo jefe: el vecino da una meta especifica sin el como, con los mismos recursos y con apoyo (cap_02 L49, L33), y este conserva la plantilla, avisa si hay que cambiar a alguien y fija el reto en como interactua la gente (L25, L27, L29). Se tocan en no cambies a la gente, cambia el como; lo que queda fuera es procedimiento en los dos lados (plazo, canal y mensaje aqui; meta, recursos y apoyo alli). La similitud de 0,441, por encima de 0,4, se lee primero y no es gemelo (ACTA M9.4, fila 3).
+inicio 2026-09-26 17:49:21
+======================================================================
+ADUANA DE INSERCION, candidato 'cambiar_forma_trabajar_conservar_plantilla'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (460 del grafo mas 19 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 2. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino escuchar_entender_critica_dominar_defensa  [Escuchar la critica con intencion de entender y no de responder, dominando tu propia defensa con la practica de escuchar tres minutos sin interrumpir]
+    levantada por: paso_contra_nodo
+    similitud_texto    0.201 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.612 (umbral 0.60)
+    paso 2 del candidato contra paso 4 de escuchar_entender_critica_dominar_defensa
+
+  vecino encargar_meta_especifica_dejar_libre_metodo  [Encargar una meta especifica sin decir como se cumple, y dejar los recursos como estaban]
+    levantada por: similitud_texto
+    similitud_texto    0.441 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.455 (umbral 0.60)
+    paso 2 del candidato contra paso 2 de encargar_meta_especifica_dejar_libre_metodo
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 461
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 2
+
+======================================================================
+fin 2026-09-26 18:00:22 | codigo de salida 0 | 661.4 s
