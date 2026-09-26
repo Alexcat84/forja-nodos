@@ -1140,3 +1140,5 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-26 | elegir_estilo_direccion_madurez_relevante_tarea | nombre_largo | La madurez relevante para la tarea (TRM) como variable que decide el estilo de direccion mas eficaz: estructurado en TRM baja, orientado al individuo en TRM media, minimo en TRM alta, con la vigilancia constante como frontera entre delegar y abandonar | castellano | - |
 | 2026-09-26 | elegir_estilo_direccion_madurez_relevante_tarea | sigla | TRM | castellano | - |
 | 2026-09-26 | elegir_estilo_direccion_madurez_relevante_tarea | otro_idioma | task-relevant maturity | ingles | - |
+| 2026-09-26 | decidir_amistad_subordinado_prueba_revision_dificil | nombre_largo | La pregunta de si conviene la amistad entre supervisor y subordinado, con sus pros y sus contras, y la prueba de imaginar una revision de desempeno dificil para decidirla | castellano | - |
+| 2026-09-26 | decidir_amistad_subordinado_prueba_revision_dificil | otro_idioma | a test | ingles | - |
