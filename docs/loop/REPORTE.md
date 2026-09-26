@@ -64590,7 +64590,7 @@ falte es exactamente lo que no tiene fila.
 |---|---|---|
 | `T1` | los registros de la `ACTA 73` | **CERRADA** (`75.1`) |
 | `T2` | BLOQUEANTE: los pasos `8` y `17` de `dar_elogio_disciplina_igual_critica` salen del campo por `D.54` | **CERRADA** (`75.2`): gate verde tras cada operacion, `18` pasos, `--ver` en `0`, `R9` sin puente nuevo |
-| `T3` | lo que entra es lo que se leyo: las huellas de las `7` fichas | ABIERTA |
+| `T3` | lo que entra es lo que se leyo: las huellas de las `7` fichas | **CERRADA** (`75.3`): identicas a `.v73ext/pasos_y_huellas.txt` |
 | `T4` | las filas de `.v73ext/orden.txt`, una por vez | ABIERTA |
 | `T5` | el cierre | ABIERTA |
 
@@ -64841,3 +64841,54 @@ clausula de prueba, es un `P` que va a la `ACTA 74` y no se corrige hoy.
 
 **`T2` CERRADA**: la guarda `D.30` de `dar_elogio` sale del rojo en el grafo; los dos pasos estan fuera del campo y su literal queda
 escrito en el nodo.
+
+## 75.3. TAREA 3: LO QUE ENTRA ES LO QUE SE LEYO
+
+Corrido despues de la TAREA 2 y antes del primer `insertar` (salida entera en `.v75ext/t3.txt`):
+
+<!-- TALLADO: parcial salida=.v75ext/t3.txt -->
+
+    $ python .v73ext/pasos_y_huellas.py > .v75ext/huellas_t3.txt; diff .v75ext/huellas_t3.txt .v73ext/pasos_y_huellas.txt && echo IDENTICO
+    IDENTICO
+    $ cat .v75ext/huellas_t3.txt
+    1   usar_banco_nueve_preguntas_entrevista                        bandeja     9 pasos e53b82e37e DISTINTA trabajo=HEAD
+    2   responder_primer_aviso_renuncia_subordinado                  bandeja     7 pasos 01b6acba10 DISTINTA trabajo=HEAD
+    3   gestionar_retencion_subordinado_valioso_renuncia             bandeja     6 pasos b9d95860df DISTINTA trabajo=HEAD
+    4   reciclar_empleado_ascendido_mas_alla_capacidad               bandeja     4 pasos c7df12c844 igual trabajo=HEAD
+    5   priorizar_lista_entrenamiento_subordinados                   bandeja     5 pasos 0a229b6c6c igual trabajo=HEAD
+    6   desarrollar_primer_curso_entrenamiento                       bandeja     7 pasos 3e4ea7099f igual trabajo=HEAD
+    7   pedir_critica_anonima_curso_entrenamiento_dictado            bandeja     4 pasos dd5228c358 DISTINTA trabajo=HEAD
+    fichas de las filas 1 a 7: 7 | pasos: 42 | iguales a su blob en 4318e81: 3 | distintas: 4 | fichero de trabajo distinto de HEAD: 0
+
+**Identica a `.v73ext/pasos_y_huellas.txt`**, como en la `74` al abrir y al cerrar (`ACTA 73` `73.1`) y como al abrir esta vuelta
+(`75.0`): **las `7` fichas entran con la huella que la `73` sello**, ninguna se relee. Y **`dar_elogio_disciplina_igual_critica`, el
+unico nodo que la TAREA 2 movio, no es vecino de ninguna de las `7`** en el barrido de la `73`:
+
+    $ grep -l dar_elogio .v73ext/vecinos_*.json .v73ext/veredictos_listos.txt; echo "fin grep"
+    fin grep
+
+**`T3` CERRADA.**
+
+## 75.D bis. **EL DISCUTIBLE DEL METODO DE LA TAREA 4, MARCADO ANTES DEL PRIMER `insertar`** (`EXTRACTOR.md` 8)
+
+| | que | por que lo marco |
+|---|---|---|
+| `D75.4` | **EL METODO DE LA `72`, QUE EL ENCARGO DA POR BUENO** (encargo, `0`): cada `insertar` lo lanza `.v75ext/insertar.py` como UN proceso y yo espero en primer plano con `.v75ext/esperar.py` hasta su `.fin`, porque una llamada de mi herramienta no pasa de `600` s y un `insertar` de la `72` llego a `976,5` s. **Entre el lanzamiento y el `.fin` no lanzo el siguiente ni toco el dataset, la bitacora ni la bandeja**; solo leo y escribo prosa del reporte. **Ninguno queda vivo al cerrar mi turno**, y si uno no cabe, no lo lanzo | la letra de la corrida dice *primer plano* y *nunca en segundo plano*; es el mismo marcado que `D72.1`, y lo que corre suelto es un solo proceso vigilado de principio a fin, no un trabajo que sobreviva al turno |
+
+Las copias de la `72`, con las rutas cambiadas (el `diff` contra su original da solo esas lineas): `.v75ext/insertar.py` (lineas de
+`.v73ext/veredictos_listos.txt`, sin las `#`), `.v75ext/esperar.py`, `.v75ext/contra_barrido.py` (contra `.v73ext/vecinos_<id>.json`),
+`.v75ext/fila.py`, `.v75ext/tras_insertar.sh` y `.v75ext/empujar_fila.sh`.
+
+## 75.4. TAREA 4: LAS FILAS DE `.v73ext/orden.txt`, UNA POR VEZ
+
+<!-- TALLADO: parcial salida=.v75ext/censo_antes_t4.txt -->
+
+    $ bash .v75ext/censo.sh   # antes de la TAREA 4
+    nodos en dataset/nodos.jsonl        : 430
+    veredictos en bitacora              : 1082
+    pares mutuos                        : 1
+    bandeja cuarentena/grove_high_output: 7
+    insertados de grove_high_output     : 85
+    cerrojos en procesos/               : 
+
+Es el de despues de la TAREA 2 (`75.2.3`): `430`, `1082`, `1`, `7`, `85`, y `procesos/` vacio.
