@@ -66155,3 +66155,25 @@ La aduana de hoy: **BLOQUEARIA** con `1` vecino(s) contra `479`; lineas `--vered
     hoy 1 vecinos, barrido de la 76 1 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (437 grafo, 42 bandejas), en la 76 479 (437, 42)
 
 **El vecino es el de su bloque y la linea se paso tal cual**: ni nuevos ni caidos contra el barrido de la `76`, las tres seniales al digito; la poblacion, la misma (`437` mas `42`). Sin aristas en esta fila: no tiene madre ni hijo en la tanda. Bitacora de `1111` a `1112`, su linea SANO.
+
+### Fila `2`: `dictar_ritmo_crecimiento_preguntas_escritas`, **INSERTADO** en `509.2` s, codigo `0`, commit `3cf0f280`
+
+La aduana de hoy: **BLOQUEARIA** con `8` vecino(s) contra `479`; lineas `--veredicto` pasadas: `8`. Salida entera en `.v77ext/insertar_02_dictar_ritmo_crecimiento_preguntas_escritas.txt`.
+
+<!-- TALLADO: parcial salida=.v77ext/insertar_02_dictar_ritmo_crecimiento_preguntas_escritas.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `descubrir_motivacion_sentido_persona` | paso_contra_nodo | 0.203 | 0.000 | 0.603 | SANO |
+| `cuantificar_impacto_innovacion_6_pasos` | similitud_texto | 0.420 | 0.000 | 0.478 | SANO |
+| `hacer_trabajo_futuro_imaginar_negocio` | similitud_texto | 0.385 | 0.000 | 0.442 | SANO |
+| `planificar_tres_pasos_demanda_estado_brecha` | similitud_texto | 0.350 | 0.000 | 0.439 | SANO |
+| `operar_modelo_gente_destreza_minima` | similitud_texto | 0.377 | 0.000 | 0.439 | SANO |
+| `responder_primer_aviso_renuncia_subordinado` | similitud_texto | 0.352 | 0.000 | 0.423 | SANO |
+| `cambiar_saludo_cliente_dos_ramas` | similitud_texto | 0.423 | 0.000 | 0.355 | SANO |
+| `interrogar_negocio_cinco_preguntas` | similitud_texto | 0.367 | 0.125 | 0.418 | SANO |
+
+    $ python .v77ext/contra_barrido.py 02 dictar_ritmo_crecimiento_preguntas_escritas
+    hoy 8 vecinos, barrido de la 76 8 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (438 grafo, 41 bandejas), en la 76 479 (437, 42)
+
+**Los ocho vecinos son los de su bloque y las ocho lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `76`, las tres seniales al digito; la poblacion, `479`, con la fila `1` ya en el grafo (`438` mas `41`). Sin aristas en esta fila. Bitacora de `1112` a `1120`, sus ocho lineas SANO.
