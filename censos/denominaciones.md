@@ -1272,3 +1272,5 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-26 | aplicar_ejercicio_codigo_genetico_control | otro_idioma | off-site | ingles | - |
 | 2026-09-26 | asignar_responsable_unico_evolucion_planificada | nombre_largo | La linea que se anade a los documentos de planificacion para dejar escrito quien es el jefe a cargo de cada evento, en vez de enumerar todo lo que podria salir mal | castellano | - |
 | 2026-09-26 | asignar_responsable_unico_evolucion_planificada | otro_idioma | chief in charge | ingles | - |
+| 2026-09-26 | reforzar_principios_guia_lenguaje_prueba_conocimiento | nombre_largo | Usar el lenguaje de los principios guia al redactar premios y evaluaciones, y poner a prueba si son reales preguntando a las tres primeras personas que veas en la organizacion cuales son | castellano | - |
+| 2026-09-26 | reforzar_principios_guia_lenguaje_prueba_conocimiento | otro_idioma | use guiding principles for decision criteria | ingles | - |
