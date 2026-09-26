@@ -63695,8 +63695,8 @@ falte es exactamente lo que no tiene fila.
 |---|---|---|
 | `T1` | los registros de la `ACTA 71` | **CERRADA** (`73.1`) |
 | `T2` | la fidelidad entera de las `7` | **CERRADA** (`73.2`): `6` PUENTE de `42`, corregidos en la bandeja antes del barrido |
-| `T3` | el barrido de las `7`, sobre las fichas ya corregidas | |
-| `T4` | los veredictos, las aristas y el orden | |
+| `T3` | el barrido de las `7`, sobre las fichas ya corregidas | **CERRADA** (`73.3`): `7` de `7`, `29` pares |
+| `T4` | los veredictos, las aristas y el orden | **CERRADA** (`73.4`): `29` lineas, `0` aristas por lectura, `3` esperadas, `D.36` en cero |
 | `T5` | el cierre: censo, `PASOS INVENTADOS`, huellas, `D.61`, `R5`, guardas, commit | |
 
 ## 73.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
@@ -63866,3 +63866,155 @@ cuenta de arriba, y ningun otro paso de `cap_15` cambio de marca. **Con los seis
 los `42` pasos**; la cifra de la relectura sobre el texto de la mineria es `6` de `42`.
 
 **`T2` CERRADA.**
+
+## 73.3. TAREA 3: EL BARRIDO DE LAS `7`, SOBRE LAS FICHAS YA CORREGIDAS
+
+Copia de `.v71ext/barrido_uno.py` que escribe en `.v73ext/` (`.v73ext/barrido_uno.py`) y copia de `.v71ext/barrer.sh` con la ruta
+cambiada (`.v73ext/barrer.sh`, con su `FORJA_PROCESOS_SIMILITUD=3`, `D73.1`): **cinco a la vez**, lanzado con `.v73ext/las7.txt`
+despues de la ultima correccion de ficha (`73.2.2`, `D73.2`), en segundo plano, y **recogido entero dentro del turno**, esperandolo
+en primer plano con un bucle `until` sobre el log:
+
+<!-- TALLADO: parcial salida=.v73ext/barrido.log -->
+
+    $ cat .v73ext/barrido.log
+    INICIO 2026-09-26 02:04:16
+    reciclar_empleado_ascendido_mas_alla_capacidad rc=0 segundos=546
+    responder_primer_aviso_renuncia_subordinado rc=0 segundos=767
+    desarrollar_primer_curso_entrenamiento rc=0 segundos=815
+    usar_banco_nueve_preguntas_entrevista rc=0 segundos=911
+    gestionar_retencion_subordinado_valioso_renuncia rc=0 segundos=998
+    pedir_critica_anonima_curso_entrenamiento_dictado rc=0 segundos=511
+    priorizar_lista_entrenamiento_subordinados rc=0 segundos=411
+    TODOS TERMINADOS 2026-09-26 02:23:54
+
+**`7` de `7` con `rc=0`, de `02:04:16` a `02:23:54`.** La poblacion es `479` en las `7`, `430` del grafo mas `49` de bandejas, la
+que dio la apertura (`73.0`):
+
+    $ head -1 .v73ext/barrido_*.txt | grep poblacion | awk '{print $3,$4,$5,$6,$7,$8,$9}' | sort | uniq -c
+          7 479 (430 grafo mas 49 bandejas) vecinos
+
+**Cero vivos al cerrar el barrido**: `tasklist /FI "IMAGENAME eq python.exe"` despues del `TODOS TERMINADOS` dice *INFO: No tasks
+are running which match the specified criteria.* **LECTURA, sin firmar cifra nueva:** con cinco a la vez, las fichas tardan de `411`
+a `998` s; en la `71` fueron de `578` a `1640` con `20` fichas (`.v71ext/barrido.log`).
+
+**Una tabla por candidato de sus vecinos**, con su sede, las tres seniales y cual lo levanto, impresa del barrido por
+`.v73ext/tabla_vecinos.py` (copia de `.v71ext/tabla_vecinos.py` con la ruta y la lista cambiadas, solo lee) en
+`.v73ext/tablas_vecinos.md`. **Lo que levanta, en una linea:** las `7` levantan vecinos, **`29` pares en el sentido del candidato**,
+`10` con vecino en el grafo y `19` en bandeja; **los `19` de bandeja son todos de entre las `7`**: ningun vecino de Gerber ni de
+Marquet. Los del grafo son `entregar_evaluacion_desempeno_tres_claves`, `planificar_tres_pasos_demanda_estado_brecha`,
+`repartir_supervision_puesto_funcional_mision` y `construir_indicador_tendencia_patron` de Grove, `preguntar_seguimiento_hallar_huecos`
+de `scott_radical_candor` e `identificar_disparadores_propios_reaccion` de `zhuo_manager`; los dos ultimos, por la senial `3` sola.
+
+**`T3` CERRADA.**
+
+## 73.D ter. **LOS DISCUTIBLES DE VEREDICTOS, ARISTAS Y ORDEN, MARCADOS AL ESCRIBIR CADA LINEA** (`EXTRACTOR.md` 8)
+
+Se marcaron dentro de `.v73ext/veredictos_listos.txt` y `.v73ext/aristas_lectura.txt` en el acto de escribir cada linea, antes de
+correr `comprobar_veredictos.py` ni `orden.py`; aqui se juntan por numero.
+
+| | que | por que lo marco |
+|---|---|---|
+| `D73.8` | **`responder_primer_aviso_renuncia_subordinado` MADRE de `gestionar_retencion_subordinado_valioso_renuncia`**: `CONTINUA` en los dos sentidos del par | es el par que el encargo pide mirar con direccion: `L111` compra tiempo para *the next round* y `L113` abre *What's your next move?*, asi que el hijo parte del producto de la madre. Si el auditor los lee como hermanos de la misma escena, son `2` lineas `SANO` y una arista menos; si los lee como un solo procedimiento, es la pregunta que las dos fichas ya marcaron al escribirse |
+| `D73.9` | **`priorizar_lista_entrenamiento_subordinados` y `pedir_critica_anonima_curso_entrenamiento_dictado`, `SANO`**, abuela y nieta por `desarrollar_primer_curso_entrenamiento` (`D67.4`), **donde la `ACTA 60` `60.5` adjudico `CONTINUA` (su par `2`)** | **mi lectura de hoy difiere, y no la fuerzo**: la nieta parte del curso dictado (`L61`) y no de la lista (`L51`), y la relacion vive en las dos aristas de la cadena. Si el auditor sostiene la `ACTA 60`, son `2` lineas que pasan a `CONTINUA` con `madre=priorizar_lista_entrenamiento_subordinados` y una arista mas, sin cambiar el orden |
+| `D73.10` | **`preparar_preguntas_entrevista_antemano` a `usar_banco_nueve_preguntas_entrevista`, `NO SOSTENGO`** | la vecina del grafo nombra en su paso `3` tener una lista de preguntas preparada, y el candidato es una lista. La leo como dos bancos de dos autores, doctrinas legitimas sin jerarquia (`6.1`); si el auditor la lee como `D.29`, es una arista por lectura mas |
+
+## 73.4. TAREA 4: LOS VEREDICTOS, LAS ARISTAS Y EL ORDEN
+
+### 73.4.1. Los veredictos listos, uno por vecino, y su comprobacion por instrumento
+
+`.v73ext/veredictos_listos.txt`: **un bloque por candidato, en el formato de `--veredicto`**, leidos con los pasos de los dos delante
+(`python .v64aud/pasos.py <a> <b>`, salidas en `.v73ext/pasos_siete.txt` y `.v73ext/pasos_grafo.txt`) y por la vara `6.1`, y solo
+esa. **`6` lineas `CONTINUA`**, que son **tres aristas** leidas desde sus dos lados (`D73.8` y los pares `1` y `3` de la `ACTA 60`
+`60.5`); **`23` `SANO`**, dos de ellas el par `2` de esa acta (`D73.9`); cero `REPITE`. La comprobacion es una copia de
+`.v71ext/comprobar_veredictos.py` con las rutas a `.v73ext/` y la lista de las `7` (su cabecera lo dice):
+
+<!-- TALLADO: parcial salida=.v73ext/comprobar_veredictos.txt -->
+
+    $ python .v73ext/comprobar_veredictos.py | grep -v '^  OK'
+    gestionar_retencion_subordinado_valioso_renuncia             lineas 3 | levantados hoy 3 | FALTAN 0 | SOBRAN 0
+    responder_primer_aviso_renuncia_subordinado                  lineas 7 | levantados hoy 7 | FALTAN 0 | SOBRAN 0
+    usar_banco_nueve_preguntas_entrevista                        lineas 6 | levantados hoy 6 | FALTAN 0 | SOBRAN 0
+    reciclar_empleado_ascendido_mas_alla_capacidad               lineas 1 | levantados hoy 1 | FALTAN 0 | SOBRAN 0
+    desarrollar_primer_curso_entrenamiento                       lineas 2 | levantados hoy 2 | FALTAN 0 | SOBRAN 0
+    pedir_critica_anonima_curso_entrenamiento_dictado            lineas 7 | levantados hoy 7 | FALTAN 0 | SOBRAN 0
+    priorizar_lista_entrenamiento_subordinados                   lineas 3 | levantados hoy 3 | FALTAN 0 | SOBRAN 0
+    secciones 7 de 7, lineas 29, ilegibles 0, vecinos sin linea 0, lineas sin vecino 0
+    
+    ARISTAS POR LECTURA (SOSTENGO) contra el barrido de hoy
+
+**Cada vecino del barrido tiene su linea y cada linea su vecino**: `29` y `29`, cero ilegibles. La lista de aristas por lectura sale
+vacia porque no hay ninguna `SOSTENGO` (`73.4.2`).
+
+### 73.4.2. Las aristas por lectura (`D.29`, `D.37`, `D.53`), en `.v73ext/aristas_lectura.txt`
+
+**Cero `SOSTENGO` y cuatro `NO SOSTENGO`**, cada una con su paso, su linea del libro y su razon. **Toda madre que la lectura encuentra
+para las `7` la levanta ya la senial**, y por eso va en los veredictos como `CONTINUA` y no aqui:
+
+| madre | hijo | como la levanta | linea | via |
+|---|---|---|---|---|
+| `responder_primer_aviso_renuncia_subordinado` | `gestionar_retencion_subordinado_valioso_renuncia` | los dos sentidos, senial `1` | `cap_15` `L111`, `L113` | `CONTINUA` (`D73.8`) |
+| `priorizar_lista_entrenamiento_subordinados` | `desarrollar_primer_curso_entrenamiento` | los dos sentidos, senial `1` | `cap_17` `L51`, `L53` | `CONTINUA` (`ACTA 60` `60.5`, par `1`) |
+| `desarrollar_primer_curso_entrenamiento` | `pedir_critica_anonima_curso_entrenamiento_dictado` | los dos sentidos, senial `1` | `cap_17` `L55` a `L61` | `CONTINUA` (`ACTA 60` `60.5`, par `3`) |
+
+Las lineas, por instrumento (`D.35`):
+
+    $ for p in 'ask for whatever time you feel is necessary to prepare yourself for the next round' 'What’s your next move?'; do grep -n -o -F "$p" fuentes/grove_high_output/cap_15.md; done; for p in 'Then assign priorities among these items' 'on the most urgent subject' 'After you’ve given the course'; do grep -n -o -F "$p" fuentes/grove_high_output/cap_17.md; done
+    111:ask for whatever time you feel is necessary to prepare yourself for the next round
+    113:What’s your next move?
+    51:Then assign priorities among these items
+    53:on the most urgent subject
+    61:After you’ve given the course
+
+**LA LECTURA PREVIA DE LA CASA SOBRE `cap_17`, CITADA** (`ACTA 60` `60.5`): adjudico `CONTINUA` los tres pares de su cadena. **Leo
+igual los pares `1` y `3`. El par `2`, `priorizar_lista_entrenamiento_subordinados` a `pedir_critica_anonima_curso_entrenamiento_dictado`,
+lo leo hoy distinto**: con los pasos de los dos delante, ninguno de los cuatro pasos de la nieta usa la lista, las necesidades ni el
+inventario de medios de la abuela, y su condicion (*ya dicto su curso*) es el producto de `desarrollar_primer_curso_entrenamiento`.
+Es la figura de `D67.4`, abuelo y nieto por un intermedio, que la casa sostuvo sin arista directa (`ACTA 66` `66.4`, en su adjudicacion
+de `D67.4`: *una tercera directa seria redundante*). **No la fuerzo: sus dos lineas van `SANO` con la cita de la `60.5` dentro, y la
+marco `D73.9`** para que la adjudique la `ACTA 72`.
+
+**Los cuatro `NO SOSTENGO`**, con su razon en el fichero, **tres con madre que ya vive en el grafo** y una de un libro distinto:
+`preparar_preguntas_entrevista_antemano` de `zhuo_manager` a `usar_banco_nueve_preguntas_entrevista` (`D73.10`);
+`diagnosticar_capacidad_motivacion_prueba_vida` a `priorizar_lista_entrenamiento_subordinados` (su paso `4` concluye *no es capaz* sin
+nombrar el entrenamiento); `repartir_supervision_puesto_funcional_mision` a `priorizar_lista_entrenamiento_subordinados` (nombra la
+formacion en una linea); y `reconocer_recompensar_gente_estable` de `scott_radical_candor` a
+`reciclar_empleado_ascendido_mas_alla_capacidad` (nombra la promocion por encima de la competencia; el candidato la deshace).
+
+**El par del encargo en `cap_15`, `responder_primer_aviso_renuncia_subordinado` y `gestionar_retencion_subordinado_valioso_renuncia`,
+por `6.1` y con direccion**: se pregunta que anade el hijo a la madre. **El hijo es `gestionar_retencion`**, porque parte del tiempo
+comprado por la madre para *the next round* (`L111`) y del hallazgo de *the real issues* (paso `4` de la madre), que su paso `4`
+atiende. Lo que anade es escalar al jefe, perseguir cada via, gestionar la transferencia, volver con la solucion, hacerlo sentir
+comodo y la objecion del otro empleo (`L113` a `L121`); lo que la madre tiene y el hijo no es dejar lo que haces, escuchar sin
+discutir y comprar tiempo. **Procedimiento en los dos lados, sin bascula: `CONTINUA`** (`D73.8`).
+
+**`D.37`, mirado** (el comentario final del fichero): dos titulos dicen cuantas partes tienen, *nueve preguntas* y *siete pasos*, y
+en los dos las partes son los propios pasos del candidato; **ninguna es un nodo, ninguna arista cabeza a parte.**
+
+### 73.4.3. El orden de insercion de las `7`, con una copia de `.v71ext/orden.py`
+
+`.v73ext/orden.py`: rutas a `.v73ext/`, la lista a las `7`, el tope a `7` y `ORDEN`, que es lo unico escrito a mano (su cabecera lo
+dice). **`ORDEN` es el del libro**: `cap_15` (`L37`, `L111`, `L113`), `cap_16` y `cap_17` (`L49`, `L53`, `L61`). **El unico par que
+levanta en un solo sentido es `pedir_critica_anonima_curso_entrenamiento_dictado` a `gestionar_retencion_subordinado_valioso_renuncia`**
+(`.v73ext/tablas_vecinos.md`: `gestionar_retencion` no levanta a `pedir_critica`), y el que lo levanta ya entra despues:
+
+<!-- TALLADO: parcial salida=.v73ext/orden.txt -->
+
+    $ python .v73ext/orden.py | tail -13
+    COMPROBACIONES
+      hijo delante de su madre: 0 []
+      D.36, par que levanta en un solo sentido con el que lo levanta entrando antes: 0 []
+      hijo dentro del tope con su madre fuera: 0 []
+      tanda propuesta: 7 de 7; fuera del tope: 
+    
+    ARISTAS ESPERADAS EN LA VUELTA QUE INSERTE ESTAS 7
+      CONTINUA   desarrollar_primer_curso_entrenamiento                   > pedir_critica_anonima_curso_entrenamiento_dictado
+      CONTINUA   priorizar_lista_entrenamiento_subordinados               > desarrollar_primer_curso_entrenamiento
+      CONTINUA   responder_primer_aviso_renuncia_subordinado              > gestionar_retencion_subordinado_valioso_renuncia
+      CONTINUA con madre= (aristas distintas): 3 | SOSTENGO por lectura: 0 | solapes entre las dos: 0 | aristas esperadas: 3
+
+(La tabla de las `7` filas, entera, en `.v73ext/orden.txt`.) **Las tres comprobaciones en cero, y las `7` caben en el tope.** Las
+madres de dentro de las `7` (`responder_primer_aviso` fila `2`, `priorizar_lista` fila `5`, `desarrollar_primer_curso` fila `6`) van
+delante de sus hijos. **Aristas esperadas en la vuelta de insercion: `3`**, las tres por `CONTINUA` con `madre=`, que cablea la
+aduana; ninguna por lectura con `forja.py arista`. Si `D73.9` cae, son `4`.
+
+**`T4` CERRADA: las tres partes hechas, ninguna fila vacia, ninguna insertada.**

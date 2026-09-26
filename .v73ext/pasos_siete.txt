@@ -1,0 +1,70 @@
+===== responder_primer_aviso_renuncia_subordinado | cuarentena\grove_high_output\responder_primer_aviso_renuncia_subordinado.json
+  titulo: Responder al primer momento en que un subordinado valioso avisa que quiere renunciar: dejar lo que haces, escucharlo sin discutir y comprarte tiempo antes de actuar
+  fuente: ['grove_high_output'] | previos: [] | siguientes: []
+  cond: Cuando un subordinado valioso y estimado se acerca al mando y anuncia, de pasada, que ha decidido dejar la empresa.
+  P1. Deja lo que estas haciendo en cuanto el subordinado te avisa de que quiere renunciar, en vez de posponer la conversacion para mas tarde.
+  P2. Sientalo y preguntale por que se va.
+  P3. Dejalo hablar sin discutir nada de lo que diga, aunque sus razones no te parezcan buenas.
+  P4. Cuando haya terminado de exponer sus razones, hazle mas preguntas para que los asuntos de fondo puedan salir a la luz.
+  P5. No discutas, no sermonees y no entres en panico durante esta primera conversacion.
+  P6. No intentes cambiarle la idea en este momento, sino compra tiempo: cuando haya dicho todo lo que tiene que decir, pide el tiempo que necesites para prepararte para el siguiente encuentro.
+  P7. Cumple despues con lo que te hayas comprometido a hacer en esta primera conversacion.
+===== gestionar_retencion_subordinado_valioso_renuncia | cuarentena\grove_high_output\gestionar_retencion_subordinado_valioso_renuncia.json
+  titulo: Gestionar la retencion de un subordinado valioso tras su primer aviso de renuncia: escalar al propio jefe, perseguir cada via para conservarlo y volver con una solucion a sus razones reales
+  fuente: ['grove_high_output'] | previos: [] | siguientes: []
+  cond: Cuando, tras la primera conversacion en la que un subordinado valioso anuncio que queria renunciar, el mando tiene que buscarle una salida que lo retenga en la empresa.
+  P1. Lleva el problema a tu propio jefe en busca de ayuda y consejo y, aunque el tambien intente posponerlo, haz que sea problema suyo y que participe de la solucion.
+  P2. Persigue con energia cada via disponible para retener al subordinado en la empresa, incluida la de transferirlo a otro departamento.
+  P3. Si la transferencia parece la salida mas probable, asume tu mismo el papel de gestor de ese proyecto hasta que quede resuelto del todo.
+  P4. Vuelve al subordinado con una solucion que atienda sus razones reales para querer irse y que ademas beneficie a la empresa.
+  P5. Haz que se sienta comodo con el nuevo arreglo; puedes decirle algo como que no les arranco por chantaje nada que no debieran haber hecho igual, que al estar a punto de irse les hizo ver su error, y que solo hacen lo que debieron hacer sin que pasara nada de esto.
+  P6. Si el subordinado dice que ya acepto un puesto en otra empresa, hazle ver que tiene dos compromisos distintos, uno con un futuro empleador que apenas conoce y otro contigo y con la gente con la que trabaja a diario, y que el segundo pesa mas.
+===== usar_banco_nueve_preguntas_entrevista | cuarentena\grove_high_output\usar_banco_nueve_preguntas_entrevista.json
+  titulo: Usar el banco de nueve preguntas que un grupo de mandos considero las mejores para entrevistar a un candidato
+  fuente: ['grove_high_output'] | previos: [] | siguientes: []
+  cond: Cuando el mando va a entrevistar a un candidato a un puesto y necesita preguntas concretas para la hora o dos de entrevista de que dispone.
+  P1. Pide al candidato que describa proyectos que fueron muy valorados por su direccion, en especial por los niveles por encima de su supervisor inmediato.
+  P2. Preguntale cuales son sus debilidades y que esta haciendo para eliminarlas.
+  P3. Pidele que te convenza de por que tu empresa deberia contratarlo.
+  P4. Preguntale que problemas esta encontrando en su puesto actual, como los esta resolviendo y que podria haber hecho para evitar que aparecieran.
+  P5. Preguntale por que cree que esta listo para este nuevo puesto.
+  P6. Preguntale cuales considera sus logros mas importantes y por que fueron importantes para el.
+  P7. Preguntale cuales considera sus fracasos mas importantes y que aprendio de ellos.
+  P8. Preguntale por que cree que deberia elegirse a un ingeniero para un puesto de marketing, variando esta pregunta segun la situacion.
+  P9. Preguntale cual fue el curso o proyecto mas importante que completo en su etapa universitaria y por que fue tan importante.
+===== reciclar_empleado_ascendido_mas_alla_capacidad | cuarentena\grove_high_output\reciclar_empleado_ascendido_mas_alla_capacidad.json
+  titulo: Reciclar abiertamente a un empleado ascendido mas alla de su capacidad: reconocer el error de la direccion, devolverlo a un puesto que sepa hacer bien y apoyarlo frente a la verguenza
+  fuente: ['grove_high_output'] | previos: [] | siguientes: []
+  cond: Cuando una persona fue ascendida a un puesto que la supera y lleva demasiado tiempo rindiendo por debajo de lo esperado en el.
+  P1. Reconoce que el error fue de la direccion al juzgar mal la disposicion del empleado para asumir mas responsabilidad, en vez de dejar que el empleado cargue con la culpa y termine saliendo de la empresa.
+  P2. Toma medidas deliberadas y directas para colocar a la persona de vuelta en un puesto que sepa desempeñar bien, en lugar de forzar su salida de la empresa.
+  P3. Apoya al empleado frente a la verguenza que es probable que sienta por el retroceso.
+  P4. Haz el reciclaje abiertamente y no a escondidas, porque hecho asi la verguenza dura mucho menos de lo que todos esperan.
+===== priorizar_lista_entrenamiento_subordinados | cuarentena\grove_high_output\priorizar_lista_entrenamiento_subordinados.json
+  titulo: Priorizar la lista de en que hay que entrenar a los subordinados, tras preguntarles e inventariar los medios disponibles
+  fuente: ['grove_high_output'] | previos: [] | siguientes: []
+  cond: Cuando el mando decide abrazar el entrenamiento como tarea propia y necesita decidir por donde empezar, antes de desarrollar ningun curso.
+  P1. Haz una lista de las cosas en que crees que tus subordinados o los miembros de tu departamento deberian entrenarse, sin limitar el alcance de la lista.
+  P2. Incluye items que van desde lo que parece simple, como entrenar a la persona que atiende el telefono, hasta cosas mas generales y elevadas, como los objetivos y los sistemas de valores de tu departamento, tu planta y tu empresa.
+  P3. Pregunta a la gente que trabaja para ti que siente que necesita: es probable que te sorprenda contandote necesidades que nunca supiste que existian.
+  P4. Hecho esto, toma inventario de los mando maestros y los materiales instructivos disponibles para ayudar a impartir el entrenamiento de los items de tu lista.
+  P5. Asigna prioridades entre esos items.
+===== desarrollar_primer_curso_entrenamiento | cuarentena\grove_high_output\desarrollar_primer_curso_entrenamiento.json
+  titulo: Desarrollar el primer curso de entrenamiento en siete pasos, desde el alcance sin ambicion hasta decidir si hacen falta mas instructores
+  fuente: ['grove_high_output'] | previos: [] | siguientes: []
+  cond: Cuando el mando ya priorizó en que entrenar a sus subordinados y elige el tema mas urgente para desarrollar su primer curso propio.
+  P1. Empieza sin ambicion: desarrolla un curso corto, de tres a cuatro clases, sobre el tema mas urgente de tu lista.
+  P2. Fija un calendario para el curso, con plazos, y comprometete con el para no atascarte en la preparacion.
+  P3. Crea un esquema para el curso entero.
+  P4. Desarrolla solo la primera clase, y dictala.
+  P5. Desarrolla la segunda clase despues de haber dado la primera.
+  P6. Trata la primera vez que enseñas el curso como un desechable: enseñaselo a los subordinados mas informados, que te ayudaran a perfeccionarlo con su interaccion y su critica.
+  P7. Preguntate si podras cubrir tu solo a toda la organizacion o si, por su tamaño, hace falta que prepares a unos cuantos instructores con tu primer set de clases.
+===== pedir_critica_anonima_curso_entrenamiento_dictado | cuarentena\grove_high_output\pedir_critica_anonima_curso_entrenamiento_dictado.json
+  titulo: Pedir critica anonima tras dictar un curso de entrenamiento, con formulario numerico y preguntas abiertas
+  fuente: ['grove_high_output'] | previos: [] | siguientes: []
+  cond: Cuando el mando ya dicto su curso de entrenamiento y quiere saber si esta cumpliendo el proposito que se propuso.
+  P1. Despues de dar el curso, pide criticas anonimas a los empleados de tu clase.
+  P2. Usa un formulario que pida calificaciones numericas y que ademas plantee algunas preguntas abiertas.
+  P3. Estudia y considera las respuestas, entendiendo que nunca podras complacer a todos los miembros de tu clase.
+  P4. Ten como objetivo ultimo satisfacerte a ti mismo de que estas logrando lo que te propusiste.
