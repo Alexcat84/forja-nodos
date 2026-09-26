@@ -306,6 +306,18 @@ def medir():
             # orden un frente cosechado seguiria pareciendo un frente vivo.
             estado, dueno = "COSECHADO", NINGUNO
             de = "declarado: %s" % cosechados[clave]["cita"]
+            # UN COSECHADO QUE YA ENTRO ENTERO ES INSERTADO (26 sep 2026). La
+            # declaracion dice de donde vienen sus candidatos, no que queden: con la
+            # bandeja a cero, TODOS los capitulos del libro minados y sus nodos en el
+            # grafo, el libro esta terminado. Sin esto Grove seguia COSECHADO despues
+            # de su ultima insercion, D.51 se lo seguia dando a la serial ("se continua
+            # desde el capitulo siguiente") y la guarda del tablero paro la vuelta 76
+            # con el encargo de Gerber; y D.60 no habria podido cerrar el mundo 11.
+            if candidatos == 0 and en_grafo > 0 and unidades and len(capitulos) >= unidades:
+                estado = "INSERTADO"
+                de = ("medido: bandeja a cero, %d de %d capitulos minados y %d nodos en el "
+                      "grafo (cosechado: %s)" % (len(capitulos), unidades, en_grafo,
+                                                 cosechados[clave]["cita"]))
         elif rama and propios and clave not in liberados:
             estado = "EN CURSO" if clave in activos else "PAUSADO"
             dueno = clave if clave in activos else NINGUNO

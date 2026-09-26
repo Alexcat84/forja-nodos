@@ -3958,6 +3958,48 @@ class PruebaTresDefectosDelFrente(BaseForja):
                   "lote": 1, "tipo": "libro"}]
         self.assertTrue(tablero.puede_abrir("dos", "serial", filas)[0])
 
+    # ------------- el libro COSECHADO que ya entro entero (26 sep 2026, vuelta 76)
+
+    def test_un_cosechado_insertado_entero_sale_insertado(self):
+        """**LA VUELTA 76 NO ABRIO** (26 sep 2026, 06:37). Grove esta COSECHADO por
+        declaracion; la `75` metio sus 7 ultimas fichas y su bandeja quedo a cero, con sus
+        18 capitulos minados y sus nodos en el grafo. El estado declarado COSECHADO se
+        miraba ANTES que la medida INSERTADO, asi que Grove seguia COSECHADO para siempre:
+        `D.51` se lo seguia dando a la serial ("se continua desde el capitulo siguiente"),
+        la guarda del tablero bloqueo el encargo de Gerber, y `D.60` (MUNDO 11 COMPLETO)
+        no habria podido cerrar nunca, porque los tres libros del corte son cosechados."""
+        from src import tablero
+        medidas = tablero.medir()
+        filas = dict((f["clave"], f) for f in tablero.libros(medidas))
+        grove = filas["grove_high_output"]
+        self.assertEqual(grove["candidatos_en_bandeja"], 0)
+        self.assertEqual(len(grove["capitulos_minados"]), grove["unidades_del_libro"])
+        self.assertGreater(grove["nodos_en_grafo"], 0)
+        self.assertEqual(grove["estado"], "INSERTADO")
+
+    def test_d51_no_le_da_a_la_linea_un_libro_sin_nada_que_hacer(self):
+        from src import tablero
+        medidas = tablero.medir()
+        filas = dict((f["clave"], f) for f in tablero.libros(medidas))
+        clave = tablero.siguiente_por_prioridad("serial", medidas)[0]
+        if clave is not None:
+            fila = filas[clave]
+            self.assertNotEqual(fila["estado"], "INSERTADO",
+                                "D.51 le da a la serial '%s', que ya esta INSERTADO" % clave)
+            pendiente = fila["candidatos_en_bandeja"] + (fila["unidades_del_libro"]
+                                                         - len(fila["capitulos_minados"]))
+            self.assertGreater(pendiente, 0,
+                               "D.51 le da a la serial '%s', que no tiene nada que hacer" % clave)
+
+    def test_caso_negativo_un_cosechado_con_bandeja_sigue_cosechado(self):
+        """Gerber y Marquet, cosechados y con su bandeja llena, siguen COSECHADOS hasta
+        que su ultima ficha entre."""
+        from src import tablero
+        cosechados = tablero.declaraciones().get("cosechados") or {}
+        for fila in tablero.libros(tablero.medir()):
+            if fila["clave"] in cosechados and fila["candidatos_en_bandeja"] > 0:
+                self.assertEqual(fila["estado"], "COSECHADO", fila["clave"])
+
     def test_lo_declarado_anulado_sale_anulado_en_el_tablero(self):
         """El cable: cada clave de `anulados` sale ANULADO en la fila medida."""
         from src import tablero
