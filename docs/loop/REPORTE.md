@@ -63417,3 +63417,18 @@ La aduana de hoy: **BLOQUEARIA** con `1` vecino(s) contra `479`; lineas `--vered
     hoy 1 vecinos, barrido de la 71 1 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (427 grafo, 52 bandejas), en la 71 479 (410, 69)
 
 **El vecino es el de su bloque y la linea se paso tal cual**: ni nuevos ni caidos contra el barrido de la `71`, las tres seniales al digito. Es el mismo par que la fila `1` leyo desde su lado. Sin aristas en esta fila.
+
+### Fila `19`: `preparar_resena_mixta_hoja_trabajo`, **INSERTADO** en `447.5` s, codigo `0`, commit `014ab223`
+
+La aduana de hoy: **BLOQUEARIA** con `1` vecino(s) contra `479`; lineas `--veredicto` pasadas: `1`. Salida entera en `.v72ext/insertar_19_preparar_resena_mixta_hoja_trabajo.txt`.
+
+<!-- TALLADO: parcial salida=.v72ext/insertar_19_preparar_resena_mixta_hoja_trabajo.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `usar_banco_nueve_preguntas_entrevista` | similitud_texto | 0.357 | 0.000 | 0.378 | SANO |
+
+    $ python .v72ext/contra_barrido.py 19 preparar_resena_mixta_hoja_trabajo
+    hoy 1 vecinos, barrido de la 71 1 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (428 grafo, 51 bandejas), en la 71 479 (410, 69)
+
+**El vecino es el de su bloque y la linea se paso tal cual**: ni nuevos ni caidos contra el barrido de la `71`, las tres seniales al digito. El vecino (`usar_banco_nueve_preguntas_entrevista`, de `cap_15`) sigue en la bandeja y no se toca (LO QUE NO HACES). Sin aristas en esta fila.
