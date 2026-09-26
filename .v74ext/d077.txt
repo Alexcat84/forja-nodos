@@ -1,0 +1,58 @@
+tanda 58 por .v58ext/informe_*.txt (7): entregar_evaluacion_desempeno_tres_claves preparar_resena_mixta_hoja_trabajo guiar_subordinado_etapas_resistencia_desempeno usar_banco_nueve_preguntas_entrevista responder_primer_aviso_renuncia_subordinado gestionar_retencion_subordinado_valioso_renuncia reciclar_empleado_ascendido_mas_alla_capacidad
+tanda 58 por el commit db70fe94 (7): misma lista: True
+
+1 entregar_evaluacion_desempeno_tres_claves | sede hoy: _insertados | su fuente dice de si: grove_high_output 2026-09-20
+  barrido .v71ext: entregar_evaluacion_desempeno_tres_claves poblacion 479 (410 grafo mas 69 bandejas) vecinos 1 | INICIO 2026-09-25 16:50:12
+    vecinos: planificar_tres_pasos_demanda_estado_brecha (bandeja)
+    blob en 6b2f721 (cierre de su vuelta de barrido): 9e34377a5d | blob hoy en HEAD: 9e34377a5d | igual: True
+  commit 66990348 2026-09-26T00:54:39-04:00 Vuelta 72, fila 18: entregar_evaluacion_desempeno_tres_claves insertad | +0 -0
+  commit 3e90afcc 2026-09-25T16:54:54-04:00 Vuelta 71, T1 y T2: los registros de la ACTA 69 y la fidelidad entera  | +2 -2
+  commit db70fe94 2026-09-20T22:56:21-04:00 VUELTA 58: cap_14, cap_15 y cap_16 minados con la aduana probada en el | +37 -0
+  lineas de la bitacora con ella de candidato: 1 1080
+
+2 preparar_resena_mixta_hoja_trabajo | sede hoy: _insertados | su fuente dice de si: grove_high_output 2026-09-20
+  barrido .v71ext: preparar_resena_mixta_hoja_trabajo poblacion 479 (410 grafo mas 69 bandejas) vecinos 1 | INICIO 2026-09-25 16:50:12
+    vecinos: usar_banco_nueve_preguntas_entrevista (bandeja)
+    blob en 6b2f721 (cierre de su vuelta de barrido): 21a4572310 | blob hoy en HEAD: 21a4572310 | igual: True
+  commit 014ab223 2026-09-26T01:03:07-04:00 Vuelta 72, fila 19: preparar_resena_mixta_hoja_trabajo insertado por l | +0 -0
+  commit db70fe94 2026-09-20T22:56:21-04:00 VUELTA 58: cap_14, cap_15 y cap_16 minados con la aduana probada en el | +37 -0
+  lineas de la bitacora con ella de candidato: 1 1081
+
+3 guiar_subordinado_etapas_resistencia_desempeno | sede hoy: _insertados | su fuente dice de si: grove_high_output 2026-09-20
+  barrido .v71ext: guiar_subordinado_etapas_resistencia_desempeno poblacion 479 (410 grafo mas 69 bandejas) vecinos 0 | INICIO 2026-09-25 16:50:12
+    vecinos: ninguno
+    blob en 6b2f721 (cierre de su vuelta de barrido): 17094eeca6 | blob hoy en HEAD: 17094eeca6 | igual: True
+  commit 9805e44a 2026-09-26T01:12:57-04:00 Vuelta 72, fila 20: guiar_subordinado_etapas_resistencia_desempeno ins | +0 -0
+  commit db70fe94 2026-09-20T22:56:21-04:00 VUELTA 58: cap_14, cap_15 y cap_16 minados con la aduana probada en el | +37 -0
+  lineas de la bitacora con ella de candidato: 0 
+
+4 usar_banco_nueve_preguntas_entrevista | sede hoy: bandeja | su fuente dice de si: grove_high_output 2026-09-20
+  barrido .v73ext: usar_banco_nueve_preguntas_entrevista poblacion 479 (430 grafo mas 49 bandejas) vecinos 6 | INICIO 2026-09-26 02:04:16
+    vecinos: identificar_disparadores_propios_reaccion (grafo), responder_primer_aviso_renuncia_subordinado (bandeja), gestionar_retencion_subordinado_valioso_renuncia (bandeja), entregar_evaluacion_desempeno_tres_claves (grafo), pedir_critica_anonima_curso_entrenamiento_dictado (bandeja), planificar_tres_pasos_demanda_estado_brecha (grafo)
+    blob en 70916d6 (cierre de su vuelta de barrido): e53b82e37e | blob hoy en HEAD: e53b82e37e | igual: True
+  commit c98d891b 2026-09-26T02:05:45-04:00 Vuelta 73, T2: la fidelidad entera de las 7 (42 pasos, 6 PUENTE correg | +4 -4
+  commit db70fe94 2026-09-20T22:56:21-04:00 VUELTA 58: cap_14, cap_15 y cap_16 minados con la aduana probada en el | +40 -0
+  lineas de la bitacora con ella de candidato: 0 
+
+5 responder_primer_aviso_renuncia_subordinado | sede hoy: bandeja | su fuente dice de si: grove_high_output 2026-09-20
+  barrido .v73ext: responder_primer_aviso_renuncia_subordinado poblacion 479 (430 grafo mas 49 bandejas) vecinos 7 | INICIO 2026-09-26 02:04:16
+    vecinos: preguntar_seguimiento_hallar_huecos (grafo), usar_banco_nueve_preguntas_entrevista (bandeja), gestionar_retencion_subordinado_valioso_renuncia (bandeja), entregar_evaluacion_desempeno_tres_claves (grafo), construir_indicador_tendencia_patron (grafo), planificar_tres_pasos_demanda_estado_brecha (grafo), pedir_critica_anonima_curso_entrenamiento_dictado (bandeja)
+    blob en 70916d6 (cierre de su vuelta de barrido): 01b6acba10 | blob hoy en HEAD: 01b6acba10 | igual: True
+  commit c98d891b 2026-09-26T02:05:45-04:00 Vuelta 73, T2: la fidelidad entera de las 7 (42 pasos, 6 PUENTE correg | +2 -2
+  commit db70fe94 2026-09-20T22:56:21-04:00 VUELTA 58: cap_14, cap_15 y cap_16 minados con la aduana probada en el | +38 -0
+  lineas de la bitacora con ella de candidato: 0 
+
+6 gestionar_retencion_subordinado_valioso_renuncia | sede hoy: bandeja | su fuente dice de si: grove_high_output 2026-09-20
+  barrido .v73ext: gestionar_retencion_subordinado_valioso_renuncia poblacion 479 (430 grafo mas 49 bandejas) vecinos 3 | INICIO 2026-09-26 02:04:16
+    vecinos: responder_primer_aviso_renuncia_subordinado (bandeja), entregar_evaluacion_desempeno_tres_claves (grafo), usar_banco_nueve_preguntas_entrevista (bandeja)
+    blob en 70916d6 (cierre de su vuelta de barrido): b9d95860df | blob hoy en HEAD: b9d95860df | igual: True
+  commit c98d891b 2026-09-26T02:05:45-04:00 Vuelta 73, T2: la fidelidad entera de las 7 (42 pasos, 6 PUENTE correg | +3 -3
+  commit db70fe94 2026-09-20T22:56:21-04:00 VUELTA 58: cap_14, cap_15 y cap_16 minados con la aduana probada en el | +37 -0
+  lineas de la bitacora con ella de candidato: 0 
+
+7 reciclar_empleado_ascendido_mas_alla_capacidad | sede hoy: bandeja | su fuente dice de si: grove_high_output 2026-09-20
+  barrido .v73ext: reciclar_empleado_ascendido_mas_alla_capacidad poblacion 479 (430 grafo mas 49 bandejas) vecinos 1 | INICIO 2026-09-26 02:04:16
+    vecinos: priorizar_lista_entrenamiento_subordinados (bandeja)
+    blob en 70916d6 (cierre de su vuelta de barrido): c7df12c844 | blob hoy en HEAD: c7df12c844 | igual: True
+  commit db70fe94 2026-09-20T22:56:21-04:00 VUELTA 58: cap_14, cap_15 y cap_16 minados con la aduana probada en el | +35 -0
+  lineas de la bitacora con ella de candidato: 0 

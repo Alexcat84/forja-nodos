@@ -64161,8 +64161,8 @@ falte es exactamente lo que no tiene fila.
 
 | tarea | que | estado |
 |---|---|---|
-| `T1` | los registros de la `ACTA 72` | |
-| `T2` | `d078` y `d077`, las deudas de las fichas de Grove | |
+| `T1` | los registros de la `ACTA 72` | **CERRADA** (`74.1`) |
+| `T2` | `d078` y `d077`, las deudas de las fichas de Grove | **CERRADA** (`74.2`): las dos pagadas, la vuelta declarada de saneamiento |
 | `T3` | `d084` y `d006`: la fidelidad de los tres nodos de `cap_13` de Scott sin firma | |
 | `T4` | el cierre: censo, huellas, `D.61`, `R5`, guardas, commit | |
 
@@ -64222,4 +64222,121 @@ dos relojes delante, y no con el orden en que yo los hice. En esta vuelta no hay
 su hora medida al lado.
 
 **`T1` CERRADA.**
+
+## 74.D bis. **LOS DISCUTIBLES DE LA TAREA 2, MARCADOS ANTES DE PAGAR** (`EXTRACTOR.md` 8)
+
+| | que | por que lo marco |
+|---|---|---|
+| `D74.2` | **`d077` se paga entera, tambien por las cuatro de la bandeja**, con el barrido de la `73` (el de *quedar lista*) y no con uno del dia de su insercion, que es la `75` | el encargo acepta *antes de entrar o de quedar lista* (TAREA 2.2), y la cola de hoy es la de ese barrido: desde su cierre no cambio ningun fichero de la poblacion ni del codigo (`74.2.2`). Si el auditor lee que `d077` pide la cola del dia de la insercion, las cuatro se pagan en la `75` con el `contra` de su `insertar`, como las tres de `cap_14` en la `72` |
+| `D74.3` | **las horas de los dos barridos se escriben contra la ultima escritura de ficha, y el commit va despues**: en la `71` y en la `73` el barrido abrio ANTES del commit de las correcciones | es la caida de `72.2` mirada en su sitio: lo que protege `d031` es la escritura, y las dos horas estan pegadas en su acta (`ACTA 70` `L48156`, `ACTA 72` `L49030` y `L49032`). No digo en ningun sitio *despues del commit* |
+
+## 74.2. TAREA 2: `d078` Y `d077`, LAS DEUDAS DE LAS FICHAS DE GROVE
+
+### 74.2.1. `d078`: decidida en la `73`, se paga citando
+
+    $ python -c "import json; d=json.load(open('cuarentena/grove_high_output/responder_primer_aviso_renuncia_subordinado.json',encoding='utf-8')); p=d['pasos_accionables']; print(len(p),'pasos'); [print(k, p[k-1]) for k in (3,5)]"
+    7 pasos
+    3 Dejalo hablar sin discutir nada de lo que diga, aunque sus razones no te parezcan buenas.
+    5 No discutas, no sermonees y no entres en panico durante esta primera conversacion.
+    $ grep -n -o -i -F 'don’t argue' fuentes/grove_high_output/cap_15.md
+    111:don’t argue
+    111:Don’t argue
+    $ grep -n "^| \`D73.5\`" docs/loop/ACTA_AUDITOR.md | cut -c1-80
+    49131:| `D73.5` | `d078`: los pasos `3` y `5` se quedan los dos | **SE SOSTIENE*
+
+**Ya esta decidido**: `D73.5` (reporte de la `73`, tabla `73.D bis`) deja los dos, porque el solape es del libro y el `5` trae *no
+sermonees* y *no entres en panico*, que el `3` no trae; la `ACTA 72` `72.5` lo sostiene. **La ficha no se toca** (su blob, en
+`74.2.2`, es el del cierre de la `73`). El `como`, entero, en `.v74ext/como_d078.txt`.
+
+### 74.2.2. `d077`: cuales son, y una fila por ficha
+
+**Por instrumento y no de memoria**: `.v74ext/d077.py` saca la tanda de los `.v58ext/informe_N_<id>.txt` que la cita de `d077`
+nombra, la contrasta con lo que el commit de la `58` anadio a la bandeja y lee de cada ficha la fecha de su fuente; despues, por
+ficha, su barrido, sus vecinos, sus commits con `numstat` y su blob. Salida entera en `.v74ext/d077.txt`:
+
+<!-- TALLADO: parcial salida=.v74ext/d077.txt -->
+
+    $ python .v74ext/d077.py | grep -E "^tanda|^[0-9] |barrido|blob|lineas"
+    tanda 58 por .v58ext/informe_*.txt (7): entregar_evaluacion_desempeno_tres_claves preparar_resena_mixta_hoja_trabajo guiar_subordinado_etapas_resistencia_desempeno usar_banco_nueve_preguntas_entrevista responder_primer_aviso_renuncia_subordinado gestionar_retencion_subordinado_valioso_renuncia reciclar_empleado_ascendido_mas_alla_capacidad
+    tanda 58 por el commit db70fe94 (7): misma lista: True
+    1 entregar_evaluacion_desempeno_tres_claves | sede hoy: _insertados | su fuente dice de si: grove_high_output 2026-09-20
+      barrido .v71ext: entregar_evaluacion_desempeno_tres_claves poblacion 479 (410 grafo mas 69 bandejas) vecinos 1 | INICIO 2026-09-25 16:50:12
+        blob en 6b2f721 (cierre de su vuelta de barrido): 9e34377a5d | blob hoy en HEAD: 9e34377a5d | igual: True
+      lineas de la bitacora con ella de candidato: 1 1080
+    2 preparar_resena_mixta_hoja_trabajo | sede hoy: _insertados | su fuente dice de si: grove_high_output 2026-09-20
+      barrido .v71ext: preparar_resena_mixta_hoja_trabajo poblacion 479 (410 grafo mas 69 bandejas) vecinos 1 | INICIO 2026-09-25 16:50:12
+        blob en 6b2f721 (cierre de su vuelta de barrido): 21a4572310 | blob hoy en HEAD: 21a4572310 | igual: True
+      lineas de la bitacora con ella de candidato: 1 1081
+    3 guiar_subordinado_etapas_resistencia_desempeno | sede hoy: _insertados | su fuente dice de si: grove_high_output 2026-09-20
+      barrido .v71ext: guiar_subordinado_etapas_resistencia_desempeno poblacion 479 (410 grafo mas 69 bandejas) vecinos 0 | INICIO 2026-09-25 16:50:12
+        blob en 6b2f721 (cierre de su vuelta de barrido): 17094eeca6 | blob hoy en HEAD: 17094eeca6 | igual: True
+      lineas de la bitacora con ella de candidato: 0 
+    4 usar_banco_nueve_preguntas_entrevista | sede hoy: bandeja | su fuente dice de si: grove_high_output 2026-09-20
+      barrido .v73ext: usar_banco_nueve_preguntas_entrevista poblacion 479 (430 grafo mas 49 bandejas) vecinos 6 | INICIO 2026-09-26 02:04:16
+        blob en 70916d6 (cierre de su vuelta de barrido): e53b82e37e | blob hoy en HEAD: e53b82e37e | igual: True
+      lineas de la bitacora con ella de candidato: 0 
+    5 responder_primer_aviso_renuncia_subordinado | sede hoy: bandeja | su fuente dice de si: grove_high_output 2026-09-20
+      barrido .v73ext: responder_primer_aviso_renuncia_subordinado poblacion 479 (430 grafo mas 49 bandejas) vecinos 7 | INICIO 2026-09-26 02:04:16
+        blob en 70916d6 (cierre de su vuelta de barrido): 01b6acba10 | blob hoy en HEAD: 01b6acba10 | igual: True
+      lineas de la bitacora con ella de candidato: 0 
+    6 gestionar_retencion_subordinado_valioso_renuncia | sede hoy: bandeja | su fuente dice de si: grove_high_output 2026-09-20
+      barrido .v73ext: gestionar_retencion_subordinado_valioso_renuncia poblacion 479 (430 grafo mas 49 bandejas) vecinos 3 | INICIO 2026-09-26 02:04:16
+        blob en 70916d6 (cierre de su vuelta de barrido): b9d95860df | blob hoy en HEAD: b9d95860df | igual: True
+      lineas de la bitacora con ella de candidato: 0 
+    7 reciclar_empleado_ascendido_mas_alla_capacidad | sede hoy: bandeja | su fuente dice de si: grove_high_output 2026-09-20
+      barrido .v73ext: reciclar_empleado_ascendido_mas_alla_capacidad poblacion 479 (430 grafo mas 49 bandejas) vecinos 1 | INICIO 2026-09-26 02:04:16
+        blob en 70916d6 (cierre de su vuelta de barrido): c7df12c844 | blob hoy en HEAD: c7df12c844 | igual: True
+      lineas de la bitacora con ella de candidato: 0 
+    $ cat .v72ext/contra_18.txt .v72ext/contra_19.txt .v72ext/contra_20.txt
+    hoy 1 vecinos, barrido de la 71 1 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (427 grafo, 52 bandejas), en la 71 479 (410, 69)
+    hoy 1 vecinos, barrido de la 71 1 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (428 grafo, 51 bandejas), en la 71 479 (410, 69)
+    hoy 0 vecinos, barrido de la 71 0 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (429 grafo, 50 bandejas), en la 71 479 (410, 69)
+    $ git diff --name-only 70916d6 HEAD -- dataset cuarentena bitacora censos config src | wc -l
+    0
+
+**Las firmas, con su linea pegada** (`D.35`):
+
+    $ sed -n '48156,48157p;48195,48198p;48614p;48645,48646p;49030p;49032p;49068,49069p' docs/loop/ACTA_AUDITOR.md
+    tabla letra a letra (`70.4`). **Y se corrigieron antes de su barrido**: la ultima ficha corregida tiene hora `16:49:50` y su
+    barrido abre a las `16:50:12` (`stat` de las fichas y primera linea de `.v71ext/barrido.log`). **Y ninguna ficha cambio despues de su commit
+        $ python .v71aud/normal/cruce_barridos.py
+        filas dirigidas: mias 50 | suyas 50
+        por estado: {'en los dos, igual con sus seniales': 50} | suma: 50
+    
+        contra_barrido.py, 20 filas: identicas 20 | difieren 0
+        (2) veredictos contra mi barrido sellado: {'par de mi barrido, seniales, levantada_por y detalle iguales': 50} | suma: 50
+            filas dirigidas de mi barrido: 50 | sin linea en la bitacora: 0 []
+        INICIO 2026-09-26 02:04:16
+        2026-09-26 02:03:10
+        filas dirigidas: suyas 29 | mias 29
+        por estado: {'identica': 29} | suma: 29
+
+| # | ficha | sede hoy | barrido antes de entrar o de quedar lista | acta que lo firma, y sus lineas | el dia de su insercion | una lectura de vecino le cambio el texto |
+|---|---|---|---|---|---|---|
+| `1` | `entregar_evaluacion_desempeno_tres_claves` | grafo | vuelta `71`, poblacion `479` (`410` mas `69`), `1` vecino | `ACTA 70`, `L48156` y `L48157` (horas), `L48195` a `L48197` (barrido) | vuelta `72`, `.v72ext/contra_18.txt`: mismo vecino; `ACTA 71` `L48614`, `L48645` y `L48646`; su linea, la `1080` | **no**: su cambio `+2 -2` es la fidelidad de la `71` (`3e90afcc`), escrita antes del barrido; la insercion la mueve `+0 -0` |
+| `2` | `preparar_resena_mixta_hoja_trabajo` | grafo | vuelta `71`, poblacion `479`, `1` vecino | `ACTA 70`, las mismas | vuelta `72`, `.v72ext/contra_19.txt`: mismo vecino; `ACTA 71`, las mismas; su linea, la `1081` | **no**: sin cambio de contenido desde la `58`; la insercion la mueve `+0 -0` |
+| `3` | `guiar_subordinado_etapas_resistencia_desempeno` | grafo | vuelta `71`, poblacion `479`, `0` vecinos | `ACTA 70`, las mismas | vuelta `72`, `.v72ext/contra_20.txt`: `0` y `0`; `ACTA 71`, las mismas; sin linea, porque no tiene vecino | **no**: sin cambio de contenido desde la `58`; la insercion la mueve `+0 -0` |
+| `4` | `usar_banco_nueve_preguntas_entrevista` | bandeja | vuelta `73`, poblacion `479` (`430` mas `49`), `6` vecinos | `ACTA 72`, `L49030` y `L49032` (horas), `L49068` y `L49069` (barrido) | la `75`; su cola de hoy es la de su barrido (`0` ficheros cambiados desde `70916d6`) | **no**: su cambio `+4 -4` es la fidelidad de la `73` (`c98d891b`), escrita antes del barrido |
+| `5` | `responder_primer_aviso_renuncia_subordinado` | bandeja | vuelta `73`, poblacion `479`, `7` vecinos | `ACTA 72`, las mismas | la `75`, igual | **no**: `+2 -2`, la fidelidad de la `73`, antes del barrido |
+| `6` | `gestionar_retencion_subordinado_valioso_renuncia` | bandeja | vuelta `73`, poblacion `479`, `3` vecinos | `ACTA 72`, las mismas | la `75`, igual | **no**: `+3 -3`, la fidelidad de la `73`, antes del barrido |
+| `7` | `reciclar_empleado_ascendido_mas_alla_capacidad` | bandeja | vuelta `73`, poblacion `479`, `1` vecino | `ACTA 72`, las mismas | la `75`, igual | **no**: sin cambio de contenido desde la `58` |
+
+**LECTURA:** **ninguna entro ni quedo lista sin barrido de su dia**, y **en las siete el blob de hoy es el del cierre de su vuelta de
+barrido**. Lo que `d077` temia, que una vecindad que el `20 sep` no existia hubiera cambiado el texto, **se leyo en las dos vueltas de
+barrido y no cambio ninguno**: los unicos cambios de contenido despues de la `58` son correcciones de fidelidad `D.30`, escritas antes
+de su barrido. **Se paga entera** (`D74.2`). El `como`, entero, en `.v74ext/como_d077.txt`.
+
+### 74.2.3. Los pagos y la declaracion
+
+<!-- TALLADO: parcial salida=.v74ext/deuda_t2.txt -->
+
+    $ python scripts/deuda.py --saneamiento --vuelta 74
+    DECLARADA vuelta de SANEAMIENTO: 74
+    $ python scripts/deuda.py --pagar d078 --vuelta 74 --como "<.v74ext/como_d078.txt>"
+    PAGADA d078 en la vuelta 74
+    $ python scripts/deuda.py --pagar d077 --vuelta 74 --como "<.v74ext/como_d077.txt>"
+    PAGADA d077 en la vuelta 74
+
+**Los dos `como` quedan en `docs/loop/DEUDA.jsonl` letra a letra iguales a sus ficheros** (comprobado leyendo el registro y
+comparando). **`T2` CERRADA.**
 
