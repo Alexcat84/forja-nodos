@@ -17,8 +17,7 @@ $ grep -i -E 'innovation|innovaci' dataset/nodos.jsonl | grep -i -E 'quantificat
 "id": "distinguir_tres_tipos_sistemas_negocio"
 $ grep '"id": "distinguir_tres_tipos_sistemas_negocio"' dataset/nodos.jsonl | grep -o 'Ten presente que la Innovacion, la Cuantificacion y la Orquestacion[^"]*'
 Ten presente que la Innovacion, la Cuantificacion y la Orquestacion de estos tres tipos de sistemas en tu negocio es de lo que trata tu Business Development Program.
-$ grep -n -o 'Innovation, Quantification, Orchestration, and integration of these three kinds of systems[^.]*' fuentes/gerber_emyth/cap_19.md
-43:Innovation, Quantification, Orchestration, and integration of these three kinds of systems in your business is what your Business Development Program is all about
+$ grep -n -o 'Innovation, Quantification, and Orchestration of these three kinds of systems[^.]*' fuentes/gerber_emyth/cap_19.md
 $ grep '"id": "cuantificar_impacto_innovacion_6_pasos"' dataset/nodos.jsonl | grep -o 'LA CABEZA DE TRES QUE NO SE CABLEA[^:]*'
 LA CABEZA DE TRES QUE NO SE CABLEA, D.37 vs D.29
 $ grep '"id": "distinguir_tres_tipos_sistemas_negocio"\|"id": "cuantificar_impacto_innovacion_6_pasos"' dataset/nodos.jsonl | grep -o '"nodos_previos": \[[^]]*\], "nodos_siguientes": \[[^]]*\]'

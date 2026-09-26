@@ -67453,7 +67453,7 @@ falte es exactamente lo que no tiene fila.
 | `T2` | la relectura conjunta de la frontera de Zhuo, y el texto de las fronteras en pie dejado listo | **CERRADA** (`79.2`): gana la lectura del auditor y la de Zhuo cae por correccion declarada; el texto de Grove, preparado y no escrito |
 | `T3` | `d150` y `d180` | **CERRADA** (`79.3`): las dos pagadas por medida; `.vm01/` con `47` ficheros; grove y gerber `INSERTADO` en el tablero |
 | `T4` | `d098`, `d104`, `d099` y `d135`, los punteros de Gerber contra el grafo de hoy | **CERRADA** (`79.4`): `d098`, `d099` y `d135` pagadas por medida; `d104` NO pagada y traida, con su fila |
-| `T5` | el cierre: declaracion, censo, huellas, `D.61`, `R5`, guardas, commit | abierta |
+| `T5` | el cierre: declaracion, censo, huellas, `D.61`, `R5`, guardas, commit | **CERRADA** (`79.5`): la vuelta declarada; nada de dato movido; huellas identicas; guardas y cierre estricto en verde |
 
 ## 79.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
 
@@ -67702,9 +67702,11 @@ con `==`: `True` y `True`). **`T3` CERRADA.**
 
 ## 79.4. TAREA 4: `d098`, `d104`, `d099` Y `d135`, LOS PUNTEROS DE GERBER CONTRA EL GRAFO DE HOY
 
-Cada medida con su `grep` sobre `dataset/nodos.jsonl` y su salida, en `.v79ext/t4_medidas.txt`, que se pega entero:
+Cada medida con su `grep` sobre `dataset/nodos.jsonl` y su salida, en `.v79ext/t4_medidas.txt`, que se pega entero, partido en cuatro
+bloques por sus cuatro rotulos (las lineas `#` del fichero van aqui en negrita, fuera del bloque, para que cada bloque abra con su `$`):
 
-    # d098: cabeza de las tres fases de cap_05 L29
+**d098: cabeza de las tres fases de cap_05 L29**
+
     $ sed -n 29p fuentes/gerber_emyth/cap_05.md
     To understand why, let’s take a look at the three phases of a business’s growth: Infancy, Adolescence, and Maturity.
     $ grep -i -E 'infancy|infancia' dataset/nodos.jsonl | grep -i -E 'adolescen' | grep -i -E 'maturity|madurez' | grep -o "\"id\": \"[^\"]*\"" | wc -l
@@ -67715,7 +67717,9 @@ Cada medida con su `grep` sobre `dataset/nodos.jsonl` y su salida, en `.v79ext/t
     "id": "trazar_modelo_negocio_cliente_primero"
     $ grep '"clave": "gerber_emyth"' dataset/nodos.jsonl | grep -i -E 'infancy|infancia' | grep -o "\"id\": \"[^\"]*\"" | wc -l
     0
-    # d104: cabeza de las tres palabras de cap_12 L21
+
+**d104: cabeza de las tres palabras de cap_12 L21**
+
     $ sed -n 21p fuentes/gerber_emyth/cap_12.md
     B uilding the Prototype of your business is a continuous process, a Business Development Process. Its foundation is three distinct yet thoroughly integrated activities through which your business can pursue its natural evolution. They are Innovation, Quantification, and Orchestration.
     $ grep -i -E 'innovation|innovaci' dataset/nodos.jsonl | grep -i -E 'quantification|cuantificaci' | grep -i -E 'orchestration|orquestaci' | grep -o "\"id\": \"[^\"]*\""
@@ -67723,7 +67727,8 @@ Cada medida con su `grep` sobre `dataset/nodos.jsonl` y su salida, en `.v79ext/t
     "id": "distinguir_tres_tipos_sistemas_negocio"
     $ grep '"id": "distinguir_tres_tipos_sistemas_negocio"' dataset/nodos.jsonl | grep -o 'Ten presente que la Innovacion, la Cuantificacion y la Orquestacion[^"]*'
     Ten presente que la Innovacion, la Cuantificacion y la Orquestacion de estos tres tipos de sistemas en tu negocio es de lo que trata tu Business Development Program.
-    $ grep -n -o 'Innovation, Quantification, and Orchestration of these three kinds of systems[^.]*' fuentes/gerber_emyth/cap_19.md
+    $ grep -n -o 'Innovation, Quantification, Orchestration, and integration of these three kinds of systems[^.]*' fuentes/gerber_emyth/cap_19.md
+    43:Innovation, Quantification, Orchestration, and integration of these three kinds of systems in your business is what your Business Development Program is all about
     $ grep '"id": "cuantificar_impacto_innovacion_6_pasos"' dataset/nodos.jsonl | grep -o 'LA CABEZA DE TRES QUE NO SE CABLEA[^:]*'
     LA CABEZA DE TRES QUE NO SE CABLEA, D.37 vs D.29
     $ grep '"id": "distinguir_tres_tipos_sistemas_negocio"\|"id": "cuantificar_impacto_innovacion_6_pasos"' dataset/nodos.jsonl | grep -o '"nodos_previos": \[[^]]*\], "nodos_siguientes": \[[^]]*\]'
@@ -67731,7 +67736,9 @@ Cada medida con su `grep` sobre `dataset/nodos.jsonl` y su salida, en `.v79ext/t
     "nodos_previos": [], "nodos_siguientes": []
     $ grep -c 'distinguir_tres_tipos_sistemas_negocio' bitacora/VEREDICTOS.jsonl
     6
-    # d099: el nodo de la delegacion, cap_18 L345 a L349
+
+**d099: el nodo de la delegacion, cap_18 L345 a L349**
+
     $ sed -n '345p;347p;349p' fuentes/gerber_emyth/cap_18.md
     “Remember Delegation rather than Abdication?
     “You can’t delegate your accountabilities, Sarah.
@@ -67753,7 +67760,9 @@ Cada medida con su `grep` sobre `dataset/nodos.jsonl` y su salida, en `.v79ext/t
     "id": "operar_modelo_gente_destreza_minima"
     $ grep -n -o 'prefers Management by Abdication to Management by Delegation' fuentes/gerber_emyth/cap_11.md
     113:prefers Management by Abdication to Management by Delegation
-    # d135: nodos de gerber_emyth que citan cap_03 como origen
+
+**d135: nodos de gerber_emyth que citan cap_03 como origen**
+
     $ grep '"clave": "gerber_emyth"' dataset/nodos.jsonl | wc -l
     22
     $ grep '"clave": "gerber_emyth"' dataset/nodos.jsonl | grep -o 'UNIDAD DE ORIGEN: fuentes/gerber_emyth/cap_[0-9]*\.md' | sort | uniq -c
@@ -67773,10 +67782,10 @@ Cada medida con su `grep` sobre `dataset/nodos.jsonl` y su salida, en `.v79ext/t
     0
     22
 
-(El `grep -n -o` de `cap_19` no casa porque `L43` dice *Innovation, Quantification, Orchestration, and integration*, con cuatro y sin la
-*and* delante de *Orchestration*; la linea entera, por `grep -n -i orchestration`, es `43:The Innovation, Quantification, Orchestration,
-and integration of these three kinds of systems in your business is what your Business Development Program is all about.` Lo dejo
-pegado como salio y no lo reescribo.)
+**Esta es la segunda corrida del fichero, y lo digo**: en la primera (`.v79ext/t4_medidas_intento1.txt`) el `grep -n -o` de `cap_19`
+llevaba *and* delante de *Orchestration* y no caso, porque `L43` nombra cuatro (*Innovation, Quantification, Orchestration, and
+integration*); `R5` lo cazo como comando sin salida. Corregido el patron y vuelto a correr todo el fichero, el `diff` contra la primera
+da solo esa linea y su salida. Ninguna otra cifra cambio.
 
 Las lecturas previas de `d098` y `d104` que cito, con su `sed` (`.v79ext/t4_firmas.txt`):
 
@@ -67838,3 +67847,133 @@ tramos que `d135` nombra quedan leidos y descartados en la `ACTA G9` `4.1`, y la
 
 **Los tres `como` quedan en `docs/loop/DEUDA.jsonl` letra a letra iguales a sus ficheros** (comprobado con `==`: `True`, `True`, `True`),
 y **de las siete del encargo quedan pendientes dos: `d104`, que traigo, y `d183`, que el encargo manda no pagar aqui.** **`T4` CERRADA.**
+
+## 79.5. TAREA 5: EL CIERRE
+
+### 79.5.a. La vuelta, declarada de saneamiento (`d085`)
+
+<!-- TALLADO: parcial salida=.v79ext/saneamiento.txt -->
+
+    $ python scripts/deuda.py --saneamiento --vuelta 79
+    DECLARADA vuelta de SANEAMIENTO: 79
+    $ python scripts/deuda.py --clase 80
+    LIBRE
+      van 1 de 5 desde la ultima de saneamiento (la 79), con 46 deuda(s) esperando
+
+**Declarada.** La `80` sale `LIBRE`, `1` de `5`, con `46` deudas esperando: las `51` de la apertura (`79.0`) menos las cinco pagadas
+(`d150`, `d180`, `d098`, `d099` y `d135`).
+
+### 79.5.b. El censo antes y despues: no se mueve nada de dato
+
+<!-- TALLADO: parcial salida=.v79ext/censo_cierre.txt -->
+
+    $ bash .v79ext/censo.sh; python .v70aud/poblacion.py
+    nodos en dataset/nodos.jsonl        : 459
+    veredictos en bitacora              : 1172
+    pares mutuos                        : 1
+    bandeja cuarentena/marquet_turn_the_ship : 20
+    insertados de marquet_turn_the_ship : 0
+    cerrojos en procesos/               : 
+    poblacion: 479 | por sede: {'grafo': 459, 'bandeja': 20} | suma: 479
+    $ git diff --name-only 1663094 HEAD -- dataset cuarentena bitacora censos config src scripts | wc -l
+    0
+    $ git status --short -- dataset cuarentena bitacora censos config src scripts | wc -l
+    0
+
+**Al digito el de `79.0` y el de la `ACTA 77` `77.1`**: `459`, `1172`, `1`, `20`, `0`, poblacion `479`, y `procesos/` vacio. **Ni un
+fichero del grafo, la bandeja, la bitacora, los censos, `config/`, `src/` o `scripts/` cambiado desde la apertura** (`1663094`), ni
+commiteado ni en el arbol de trabajo. Lo unico de registro que se movio es `docs/loop/DEUDA.jsonl`: cinco pagos y la declaracion.
+
+### 79.5.c. Las fichas de Marquet, byte a byte las que sello la `78`
+
+    $ python .v78ext/pasos_y_huellas.py > .v79ext/pasos_y_huellas_cierre.txt; diff .v79ext/pasos_y_huellas_cierre.txt .v78ext/pasos_y_huellas.txt && echo IDENTICO
+    IDENTICO
+    $ tail -1 .v79ext/pasos_y_huellas_cierre.txt
+    fichas de las filas 1 a 20: 20 | pasos: 110 | iguales a su blob en e9d0309: 18 | distintas: 2 | fichero de trabajo distinto de HEAD: 0
+
+**Identica a `.v78ext/pasos_y_huellas.txt` al abrir (`79.0`, `.v79ext/huellas_apertura.txt`) y al cerrar**: las `20` fichas entran en la
+`80` con la huella que la `78` sello.
+
+### 79.5.d. `D.61`: cada discutible, ejecutado o cerrado
+
+| | estado |
+|---|---|
+| `D79.1` | **EJECUTADO**: la frontera de Zhuo no queda en pie, mi fila de la `78` corregida por correccion declarada sin borrarla, y el poster de `L127` escrito como la lectura contraria (`79.2.1`, `.v79ext/zhuo_decision.txt`); queda para la relectura de la `ACTA 78` |
+| `D79.2` | **EJECUTADO**: el texto de Grove escribe que lo que los dos conservan no los junta (`79.2.2`, `.v79ext/frontera_grove.txt`); queda para la relectura de la `ACTA 78` |
+| `D79.3` | **EJECUTADO**: `d104` no pagada, su fila en `.v79ext/fila_d104.txt` y traida en `79.4.2` |
+| `D79.4` | **EJECUTADO**: `d098` pagada con la lectura de la `76` y de la `ACTA 75` `75.4` citadas (`79.4.1`) |
+
+**Ninguno abierto.**
+
+### 79.5.e. Las guardas
+
+    $ cat .v79ext/cierre_gate.txt .v79ext/cierre_guiones.txt; tail -3 .v79ext/cierre_tests.txt; cat .v79ext/suite_hora.txt
+    GATE VERDE.
+      nodos verificados: 459
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+    rc=0
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+    rc=0
+      total: 382 pruebas, 0 fallos, 0 errores
+    ========================================================================
+    rc=0
+    16:49:29
+    16:53:30
+
+**Las tres en verde**, cada una con su `rc=0`; la suite cuenta `382` pruebas, como en la `ACTA 77` `77.1`, y corrio en primer plano.
+
+### 79.5.f. `R5`, medido con las copias de `.v64ext/pegado64.py` y `.v64aud/normal/bloques_mudos.py`
+
+`.v79ext/pegado79.py` y `.v79ext/bloques_mudos79.py`, sacadas con `sed` de los originales con la cabecera del tramo cambiada a la `79`
+(el `diff --strip-trailing-cr` contra el original da `3` y `2` lineas cambiadas, las de la cabecera y el rotulo):
+
+<!-- TALLADO: parcial salida=.v79ext/r5.txt -->
+
+    $ python .v79ext/pegado79.py; python .v79ext/bloques_mudos79.py
+    bloques abiertos con `$` en el tramo de la vuelta 79 : 76
+    bloques que ROMPEN R1 (ACTA 60 60.15)                : 0
+    bloques abiertos con `$`: 19 | comandos `$`: 76 | comandos sin ninguna linea de salida en su bloque: 0
+
+**Cero bloques que rompen `R1` y cero comandos sin salida.** El bloque se anexo con tres lineas de relleno en el sitio de la salida, se
+corrieron los dos instrumentos con el reporte entero (`.v79ext/r5.txt`, despues de anexar tambien el bloque del cierre estricto de
+`79.5.g`) y la salida sustituyo al relleno. **Los dos cuentan lo mismo** porque desde la segunda corrida de `.v79ext/t4_medidas.txt`
+cada bloque de mi tramo abre con su `$` (`79.4`).
+
+### 79.5.g. El cierre estricto
+
+Salida entera en `.v79ext/cierre_reporte.txt`, con su `rc=` y su hora de vuelta anexados al final. Corrido en primer plano, despues de
+la suite y con `procesos/` vacio:
+
+    $ grep -E '^(TALLADO|CENSO|TABLA DE CIERRE|CIERRE|GATE|BARRIDO)|^rc=' .v79ext/cierre_reporte.txt; tail -1 .v79ext/cierre_reporte.txt
+    TALLADO DEL REPORTE (D.41): la tabla que dice ser de instrumento
+    TALLADO VERDE: las 157 tabla(s) comprobables son las de su instrumento, celda a celda.
+    CENSO DE RUTAS (D.42): la unidad de la ruta es la celda
+    CENSO VERDE: las 1102 rutas publicadas sostienen lo que dicen sostener.
+    TABLA DE CIERRE DE TAREAS (D.52): toda tabla del reporte declara su instrumento
+    TABLA DE CIERRE VERDE: ninguna celda medible difiere del dato.
+    GATE VERDE.
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+    CIERRE VERDE: las cuatro guardas que muerden, el tallado y el censo. La vigencia corrio y publico su cuenta arriba: es cola, no guarda (D.15).
+    rc=0
+    16:58:41
+
+**Tabla de tareas, al cerrar:**
+
+| tarea | que | estado |
+|---|---|---|
+| `T1` | los registros de la `ACTA 77` | **CERRADA** (`79.1`) |
+| `T2` | la relectura conjunta de la frontera de Zhuo, y el texto de las fronteras en pie | **CERRADA** (`79.2`): gana la lectura del auditor y mi fila se corrige sin borrarla; el texto de Grove, preparado en `.v79ext/frontera_grove.txt` y no escrito |
+| `T3` | `d150` y `d180` | **CERRADA** (`79.3`): las dos pagadas por medida |
+| `T4` | `d098`, `d104`, `d099` y `d135` | **CERRADA** (`79.4`): tres pagadas por medida; `d104` no pagada y traida |
+| `T5` | el cierre | **CERRADA** (`79.5`): la vuelta declarada; censo `459`, `1172`, `1`, `20`, `0` al abrir y al cerrar; huellas de Marquet identicas; ninguna insertada |
+
+**Ningun proceso MIO vivo al cerrar**: todo lo que corri en esta vuelta corrio en primer plano y volvio, y `procesos/` esta vacio.
+**Ningun `insertar`, `corregir` ni `arista` corrio en esta vuelta; no toque `cuarentena/`, `dataset/`, `bitacora/`, `censos/`, `src/`,
+`scripts/`, `config/`, el tablero, los protocolos ni `APERTURA_CIEGA.md`; no pague `d183` ni ninguna deuda que el encargo no nombre, y
+no cree el tag.** **No escribo `PARA_ALEXIS.md`: nada me obliga a parar.** `d104` no es parada: el encargo manda traerla con su fila si
+no se puede pagar con su medida, y es lo que hago. Lo que queda de la campania son las `20` fichas de Marquet, que entran en la `80`
+con la huella que la `78` sello, y el texto de `d183`, listo para pasarse despues de que entre
+`eliminar_seguimiento_descendente_responsabilizar_dueno`.
+
+**VERDE, `rc=0`**, de vuelta a las `16:58:41`, sin ningun rojo. Cuenta `1102` rutas en el arbol de ese momento; el hook del commit del
+cierre las vuelve a contar con este parrafo y los ficheros del cierre ya dentro.
