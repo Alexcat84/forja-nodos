@@ -1,0 +1,15 @@
+lineas de la bitacora: 1081 | nuevas desde la 1028: 54
+nuevas por tipo: {'veredicto': 50, 'arista declarada por lectura (D.37)': 4} | suma: 54
+(1) veredictos contra .v71ext/veredictos_listos.txt: {'igual letra a letra a una linea preparada': 50} | suma: 50
+    lineas vivas preparadas: 50 | usadas: 50 | usadas dos veces: 0
+(2) veredictos contra mi barrido sellado: {'par de mi barrido, seniales, levantada_por y detalle iguales': 50} | suma: 50
+    filas dirigidas de mi barrido: 50 | sin linea en la bitacora: 0 []
+(3) clase contra mis clases selladas, con la 70.5: {'igual clase y madre': 50} | suma: 50
+    pares sin orden en la bitacora: 33 | en mis clases: 33
+    planificar_tres_pasos_demanda_estado_brecha > examinar_demanda_entorno_dos_marcos_temporales | paso citado 2 | mi fila: SOSTENGO D.37, DUDA, madre paso 2
+    planificar_tres_pasos_demanda_estado_brecha > determinar_estado_presente_capacidades_proyectos_merma | paso citado 3 | mi fila: SOSTENGO D.37, madre pasos 3 y 4
+    planificar_tres_pasos_demanda_estado_brecha > cerrar_brecha_dos_preguntas_estrategia | paso citado 5 | mi fila: SOSTENGO D.37, madre pasos 5 y 6
+    elegir_modo_control_motivacion_factor_cua > escalonar_complejidad_puesto_empleado_nuevo | paso citado 4 | mi fila: SOSTENGO D.29, DUDA, madre pasos 1, 2 y 4
+(4) aristas por lectura: {'un SOSTENGO mio': 4} | suma: 4 | mis SOSTENGO: 4
+    aristas distintas en las nuevas: 6
+(5) lineas nuevas con fijar_frecuencia_reunion_individual_madurez_tarea: 0

@@ -1,0 +1,2 @@
+insertar: 20 | con codigo 0: 20 | con otro codigo: 0 | suma: 20
+solapes entre consecutivos: 0 | primer inicio 2026-09-25 21:49:47 | ultimo fin 2026-09-26 01:12:46

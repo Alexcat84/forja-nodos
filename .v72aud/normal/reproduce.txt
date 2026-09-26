@@ -1,0 +1,7 @@
+aristas_vuelta.py: IDENTICO a .v72ext/aristas_vuelta.txt
+aristas_adjudicadas.py: IDENTICO a .v72ext/aristas_adjudicadas.txt
+nodos_viejos.py: IDENTICO a .v72ext/nodos_viejos.txt
+pasos_inventados.py: IDENTICO a .v72ext/pasos_inventados.txt
+relojes.py: IDENTICO a .v72ext/relojes.txt
+bandeja_por_capitulo.py: IDENTICO a su linea de .v72ext/censo_cierre.txt
+contra_barrido.py, 20 filas: identicas 20 | difieren 0

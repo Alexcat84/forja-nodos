@@ -1,0 +1,9 @@
+    430 dataset/nodos.jsonl
+   1081 bitacora/VEREDICTOS.jsonl
+      1 config/pares_mutuos.jsonl
+   1512 total
+cuarentena/grove_high_output 7
+cuarentena/_insertados/grove_high_output 85
+procesos 0
+cuarentena/gerber_emyth 22
+cuarentena/marquet_turn_the_ship 20
