@@ -65849,7 +65849,7 @@ falte es exactamente lo que no tiene fila.
 | `T2` | la relectura conjunta: el par de la contratacion y la arista `fingir` a `recorrer` | **CERRADA** (`77.2`): las dos me convencen; aristas esperadas de `8` a `10`, el orden sin mover |
 | `T3` | lo que entra es lo que se leyo: las huellas de las `22` fichas | **CERRADA** (`77.3`): identicas a `.v76ext/pasos_y_huellas.txt` |
 | `T4` | las `22` filas de `.v76ext/orden.txt`, una por vez | **CERRADA** (`77.4`): las `22` insertadas, sus `54` lineas pasadas, las `10` aristas esperadas en el grafo; `d111` y `d108` pagadas |
-| `T5` | el cierre | ABIERTA |
+| `T5` | el cierre | **CERRADA** (`77.5`): censo `437`, `1111`, `1`, `22`, `0` al abrir y `459`, `1172`, `1`, `0`, `22` al cerrar; `8` PUENTE marcados y `0` que entraron; guardas y cierre estricto en verde |
 
 ## 77.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
 
@@ -66690,3 +66690,234 @@ la primera mira ademas **los dos lados** de cada arista (la madre con el hijo en
 tanda, asi que los `437` de la apertura siguen como estaban, y los `22` nuevos son exactamente las `22` filas.
 
 **`T4` CERRADA**: las `22` filas insertadas, cada una con su fila y su commit.
+
+## 77.5. TAREA 5: EL CIERRE
+
+### 77.5.a. El censo, antes y despues de cada tarea, y al cierre
+
+| momento | nodos | bitacora | pares | bandeja de Gerber | `_insertados` de Gerber | `procesos/` | sede |
+|---|---:|---:|---:|---:|---:|---|---|
+| al abrir, antes de la TAREA 1 | `437` | `1111` | `1` | `22` | `0` | vacio | `.v77ext/apertura.txt` |
+| despues de las TAREAS 1 a 3, antes de la 4 | `437` | `1111` | `1` | `22` | `0` | vacio | `.v77ext/censo_antes_t4.txt` |
+| al cierre, despues de la TAREA 4 | `459` | `1172` | `1` | `0` | `22` | vacio | `.v77ext/censo_cierre.txt` |
+
+Las TAREAS 1 a 3 no tocan dato (solo `.v77ext/` y el reporte), y por eso su censo es uno; dentro de la TAREA 4, el de despues de cada
+fila va en su commit (`.v77ext/censo.sh` corrido tras cada `empujar_fila.sh`, y la bitacora citada en cada nota de fila).
+
+<!-- TALLADO: parcial salida=.v77ext/censo_cierre_entero.txt -->
+
+    $ bash .v77ext/censo.sh 2>/dev/null; python .v70aud/poblacion.py
+    nodos en dataset/nodos.jsonl        : 459
+    veredictos en bitacora              : 1172
+    pares mutuos                        : 1
+    bandeja cuarentena/gerber_emyth     : 0
+    insertados de gerber_emyth          : 22
+    cerrojos en procesos/               : 
+    poblacion: 479 | por sede: {'grafo': 459, 'bandeja': 20} | suma: 479
+    $ git diff --name-status 70a827c HEAD -- dataset cuarentena bitacora censos config src scripts | cut -f1 | sort | uniq -c
+          4 M
+         22 R100
+    $ git diff --name-status 70a827c HEAD -- dataset cuarentena bitacora censos config src scripts | grep -v "^R100.cuarentena/gerber_emyth/"
+    M	bitacora/VEREDICTOS.jsonl
+    M	censos/atribuciones.md
+    M	censos/denominaciones.md
+    M	dataset/nodos.jsonl
+    $ git status --short -- dataset cuarentena bitacora censos config src scripts | wc -l
+    0
+
+**Lo que se movio, medido, y cuadra con lo que el encargo espera**: el grafo gana `22` filas, una por ficha que entro (`437` a `459`);
+la bandeja de Gerber pierde las `22` y `_insertados` las gana, **las `22` como `R100`, byte a byte las fichas que la `76` sello**, y las
+huellas de cierre son las de `.v76ext/pasos_y_huellas.txt` salvo la columna de la sede, que pasa de `bandeja` a `_insertados`
+(`.v77ext/huellas_cierre_diff.txt`); la bitacora gana `61`: las `54` lineas de veredicto de las `22` mas **una por arista por lectura, `7`**
+(`77.4.6`). Los pares, `1`. `censos/denominaciones.md` y `censos/atribuciones.md` los escribe la aduana al entrar cada nodo (su salida:
+`19` veces *censos escritos: denominaciones* y `3` *atribuciones, denominaciones*, filas `9`, `10` y `11`). **Ni `src/`, ni `scripts/`, ni
+`config/`, ni la bandeja de Marquet cambian**, y nada queda sin commitear en esas carpetas. La poblacion sigue en `479`, ahora `459` del
+grafo mas las `20` de Marquet. **`procesos/` vacio.**
+
+<!-- TALLADO: parcial salida=.v77ext/huellas_cierre_diff.txt -->
+
+    $ diff <(awk '{$3=""; print}' .v77ext/huellas_cierre.txt) <(awk '{$3=""; print}' .v76ext/pasos_y_huellas.txt) && echo 'IDENTICO SALVO LA SEDE'
+    IDENTICO SALVO LA SEDE
+    $ cut -c63-75 .v77ext/huellas_cierre.txt | sort | uniq -c
+         22    _insertado
+          1 b en 2407dbb:
+
+**Y EL TABLERO, porque entraron todas** (salida entera en `.v77ext/tablero.txt`; pego la cabecera y las filas, y el resto es el coste y la
+cola de doctrina que el tablero imprime detras):
+
+<!-- TALLADO: parcial salida=.v77ext/tablero.txt -->
+
+    $ python forja.py tablero
+    TABLERO DE FRENTES (D.49, D.50): sede unica del estado de la campania
+      registro: docs/loop/TABLERO.jsonl
+    
+      prio lote clave                          estado                 dueno                 band ult cap
+      --------------------------------------------------------------------------------------------------------
+      .    1    onu_consumidor                 INSERTADO              NINGUNO                  0  cap_02
+      .    2    smart_who                      INSERTADO              NINGUNO                  0  cap_05
+      .    3    zhuo_manager                   INSERTADO              NINGUNO                  0       .
+      .    4    scott_radical_candor           INSERTADO              NINGUNO                  0  cap_14
+      .    11   gerber_emyth_cap17_reservado   ANULADO                NINGUNO                  0       .
+      1    7    grove_high_output              INSERTADO              NINGUNO                  0  cap_18
+      2    9    gerber_emyth                   INSERTADO              NINGUNO                  0  cap_22
+      3    5    marquet_turn_the_ship          COSECHADO              NINGUNO                 20  cap_17
+      4*   8    bernerslee_bananas             SIN EMPEZAR            NINGUNO                  0       .
+      5*   6    openstax_business_ethics       SIN EMPEZAR            NINGUNO                  0       .
+      6*   10   openstax_org_behavior          SIN EMPEZAR            NINGUNO                  0       .
+    
+      prioridad: el orden del mundo 11 (D.51). El asterisco es FUERA DE
+      CAMPANIA: no se extrae, queda en bandeja para la aduana de a uno.
+      Sin prioridad: ya dentro del mundo 11, no hay nada que elegir.
+    
+      libros CON DUEÑO ahora mismo: 0
+    
+      MUNDO 11: faltan 1 de 7 libros del corte (marquet_turn_the_ship)
+    
+    (recortado, entero en .v77ext/tablero.txt)
+
+**`gerber_emyth` queda `INSERTADO`**, con la bandeja en `0`. **El unico libro del corte que falta es `marquet_turn_the_ship`**, `COSECHADO`
+con `20` en su bandeja: la vuelta siguiente abre con el libro que el tablero de entonces de a esta linea.
+
+### 77.5.b. `PASOS INVENTADOS POR CAPITULO`, de lo que ENTRO
+
+`.v77ext/pasos_inventados.py`, copia de la de la `75` con la lectura cambiada a `.v76ext/fidelidad.tsv` (la que la `ACTA 75` `75.3`
+firmo), la base a `2407dbb` (la apertura de la `76`, antes de que su TAREA 2 corrigiera los P en la ficha), la bandeja a Gerber y la
+tanda a las `22` filas:
+
+<!-- TALLADO: parcial salida=.v77ext/pasos_inventados.txt -->
+
+    $ python .v77ext/pasos_inventados.py
+    candidato que ENTRO                                          cap     pasos   T   P corr
+    hacer_trabajo_futuro_imaginar_negocio                        cap_04      7   7   0    0
+    dictar_ritmo_crecimiento_preguntas_escritas                  cap_07      8   7   1    1
+    construir_empresa_plantilla_vision_diaria                    cap_08      8   8   0    0
+    trazar_modelo_negocio_cliente_primero                        cap_08      9   9   0    0
+    fingir_prototipo_cinco_mil_replicas                          cap_11     11  11   0    0
+    dar_valor_constante_cuatro_publicos                          cap_11      8   8   0    0
+    interrogar_negocio_cinco_preguntas                           cap_11     10  10   0    0
+    operar_modelo_gente_destreza_minima                          cap_11     10   9   1    1
+    unificar_color_forma_vestuario_modelo                        cap_11      8   8   0    0
+    cambiar_saludo_cliente_dos_ramas                             cap_12      4   1   3    3
+    probar_traje_azul_seis_semanas                               cap_12      2   2   0    0
+    cuantificar_impacto_innovacion_6_pasos                       cap_12      6   5   1    1
+    recorrer_siete_pasos_programa_desarrollo_negocio             cap_13     10  10   0    0
+    responder_8_preguntas_construir_primary_aim                  cap_14      9   9   0    0
+    responder_4_preguntas_estandares_objetivo_estrategico        cap_15      5   5   0    0
+    distinguir_tres_tipos_sistemas_negocio                       cap_19      5   5   0    0
+    aplicar_seis_pasos_sistema_venta                             cap_19      6   6   0    0
+    medir_sistema_venta_trece_indicadores_benchmark              cap_19     14  14   0    0
+    construir_estrategia_gente_cuatro_componentes                cap_18      5   5   0    0
+    documentar_trabajo_manual_operaciones                        cap_11     10  10   0    0
+    aplicar_ocho_reglas_juego_personas                           cap_18      9   7   2    2
+    aplicar_cinco_pasos_proceso_contratacion                     cap_18     12  12   0    0
+    entraron: 22 de la tanda de 22 | pasos sin fila de lectura: 0 []
+    
+    | capitulo | candidatos que entraron | pasos | PUENTE marcados | por ciento | corregidos en la ficha | PUENTE que entro |
+    |---|---:|---:|---:|---:|---:|---:|
+    | `cap_04` | 1 | 7 | 0 | 0,00 | 0 | 0 |
+    | `cap_07` | 1 | 8 | 1 | 12,50 | 1 | 0 |
+    | `cap_08` | 2 | 17 | 0 | 0,00 | 0 | 0 |
+    | `cap_11` | 6 | 57 | 1 | 1,75 | 1 | 0 |
+    | `cap_12` | 3 | 12 | 4 | 33,33 | 4 | 0 |
+    | `cap_13` | 1 | 10 | 0 | 0,00 | 0 | 0 |
+    | `cap_14` | 1 | 9 | 0 | 0,00 | 0 | 0 |
+    | `cap_15` | 1 | 5 | 0 | 0,00 | 0 | 0 |
+    | `cap_18` | 3 | 26 | 2 | 7,69 | 2 | 0 |
+    | `cap_19` | 3 | 25 | 0 | 0,00 | 0 | 0 |
+
+**`8` PUENTE marcados en `176` pasos** (`1` en `cap_07`, `1` en `cap_11`, `4` en `cap_12`, `2` en `cap_18`), la cifra buena de `77.1`;
+**los `8` con el texto de su paso cambiado en la ficha que entro, y `0` PUENTE que entraron** en los diez capitulos, como firmo la
+`ACTA 75` `75.3`. Entraron las `22` y ningun paso sin su fila de lectura. El `33,33` de `cap_12` y el `12,50` de `cap_07` son los de la
+marca, no los de lo que entro; los dos se releyeron enteros en la `76` por el disparador de `D.58`.
+
+### 77.5.c. `D.61`: cada discutible, ejecutado o cerrado
+
+| | que | estado |
+|---|---|---|
+| `D77.1` | el par de la contratacion pasa a `CONTINUA`, madre `construir` | **EJECUTADO**: las dos lineas corregidas en `.v77ext/veredictos_listos.txt` (`77.2.1`), pasadas en las filas `19` y `22`; la arista, cableada por la aduana en la `22` (`77.4.6`). Queda para la relectura de la `ACTA 76` |
+| `D77.2` | la arista `fingir` a `recorrer` por `D.29`, `CONTINUA`, paso `1` | **EJECUTADO**: fila `SOSTENGO` en `.v77ext/aristas_lectura.txt` (`77.2.2`), cableada en la fila `13` con `--veredicto CONTINUA` (`77.4.6`) |
+| `D77.3` | el metodo de espera de la `75` | **EJECUTADO** veintidos veces: `22` `.fin`, los `22` en `0`, sin solape (`.v77ext/relojes.txt`); entre cada lanzamiento y su `.fin` no toque dataset, bitacora ni bandeja. **Ningun proceso mio vivo al cerrar** |
+| `D77.4` | la cita de la arista `fingir` a `recorrer` dice *adjudicada en la ACTA 75 seccion 75.4* | **CERRADO POR DECLARACION** en la fila `13`: la bitacora no se toca; la sede real de la decision es `77.2.2`, y la adjudica la `ACTA 76` |
+
+**Ninguno abierto.**
+
+### 77.5.d. El reloj de los `22`
+
+<!-- TALLADO: parcial salida=.v77ext/relojes.txt -->
+
+    $ python .v77ext/relojes.py | tail -1
+    insertar: 22 | minimo 279.4 s | mediana 419.2 s | maximo 782.4 s | suma 9382.6 s (2.61 h)
+
+Contra la `72` (`20`, mediana `560,0` s, ultima linea de `.v72ext/relojes_resumen.txt`) y la `75` (`7`, mediana `504,4` s, ultima linea
+de `.v75ext/relojes.txt`), que el encargo pega: esta tanda fue mas rapida por insercion. **Las filas `8` y `21` pasaron del tope de `580` s de una espera** y se esperaron con una segunda, en primer plano, sin
+lanzar nada en medio.
+
+### 77.5.e. Las guardas
+
+    $ cat .v77ext/cierre_gate.txt .v77ext/cierre_guiones.txt
+    GATE VERDE.
+      nodos verificados: 459
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+    rc=0
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+    rc=0
+    $ grep "total:" .v77ext/cierre_tests.txt; tail -2 .v77ext/cierre_tests.txt; head -1 .v77ext/cierre_tests.txt
+      total: 382 pruebas, 0 fallos, 0 errores
+    rc=0
+    FIN SUITE 12:44:16
+    INICIO SUITE 12:40:26
+
+La suite corrio en primer plano despues de la ultima fila; `procesos/` vacio al volver.
+
+### 77.5.f. El cierre estricto
+
+Salida entera en `.v77ext/cierre_reporte.txt`, y su codigo en `.v77ext/cierre_reporte_rc.txt`, los dos escritos por la propia corrida,
+en primer plano.
+
+    $ grep -E '^(TALLADO|CENSO|TABLA DE CIERRE|CIERRE|GATE|BARRIDO)' .v77ext/cierre_reporte.txt; cat .v77ext/cierre_reporte_rc.txt .v77ext/cierre_reporte_hora.txt
+    TALLADO DEL REPORTE (D.41): la tabla que dice ser de instrumento
+    TALLADO VERDE: las 157 tabla(s) comprobables son las de su instrumento, celda a celda.
+    CENSO DE RUTAS (D.42): la unidad de la ruta es la celda
+    CENSO VERDE: las 1074 rutas publicadas sostienen lo que dicen sostener.
+    TABLA DE CIERRE DE TAREAS (D.52): toda tabla del reporte declara su instrumento
+    TABLA DE CIERRE VERDE: ninguna celda medible difiere del dato.
+    GATE VERDE.
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+    CIERRE VERDE: las cuatro guardas que muerden, el tallado y el censo. La vigencia corrio y publico su cuenta arriba: es cola, no guarda (D.15).
+    rc=0
+    12:49:20
+    12:53:30
+
+**VERDE, `rc=0`, a la segunda**, de `12:49:20` a `12:53:30`. **La primera corrida salio en ROJO y es mia**: la guarda de cifras derivadas
+(`scripts/tallar_reporte.py`, `cifras_derivadas_sueltas`) cazo mi parrafo de `77.5.d`, que comparaba las medianas de la `72` y la `75`
+sin nombrar en el parrafo los ficheros de donde salen, y la prueba del hook cayo por la misma frase. **Se arreglo antes de ningun
+commit**, anadiendo al parrafo las dos sedes (`.v72ext/relojes_resumen.txt` y `.v75ext/relojes.txt`), cuyas ultimas lineas dan esas
+cifras; ninguna cifra cambio. (La salida de error, `.v77ext/cierre_reporte_err.txt`, es la de la suite que el cierre corre dentro.)
+
+### 77.5.g. `R5`, medido con las copias de `.v64ext/pegado64.py` y `.v64aud/normal/bloques_mudos.py`
+
+`.v77ext/pegado77.py` y `.v77ext/bloques_mudos77.py`, sacadas con `sed` de las de la `76` con la cabecera del tramo cambiada a la `77`
+(el `diff --strip-trailing-cr` contra el de la `76` da `3` y `2` lineas cambiadas, las de la cabecera y el rotulo). **`R9`** solo se
+aplica donde marco fidelidad, y en esta vuelta no marco ninguna: las `22` entraron con la lectura que la `ACTA 75` `75.3` firmo, que el
+encargo prohibe tocar.
+
+<!-- TALLADO: parcial salida=.v77ext/r5.txt -->
+
+    $ python .v77ext/pegado77.py; python .v77ext/bloques_mudos77.py
+    bloques abiertos con `$` en el tramo de la vuelta 77 : 70
+    bloques que ROMPEN R1 (ACTA 60 60.15)                : 0
+    bloques abiertos con `$`: 47 | comandos `$`: 70 | comandos sin ninguna linea de salida en su bloque: 0
+
+**Tabla de tareas, al cerrar:**
+
+| tarea | que | estado |
+|---|---|---|
+| `T1` | los registros de la `ACTA 75` | **CERRADA** (`77.1`) |
+| `T2` | la relectura conjunta: el par de la contratacion y la arista `fingir` a `recorrer` | **CERRADA** (`77.2`): las dos me convencen; aristas esperadas de `8` a `10`, el orden sin mover |
+| `T3` | lo que entra es lo que se leyo: las huellas de las `22` fichas | **CERRADA** (`77.3`): identicas a `.v76ext/pasos_y_huellas.txt` |
+| `T4` | las `22` filas de `.v76ext/orden.txt`, una por vez | **CERRADA** (`77.4`): las `22` insertadas, sus `54` lineas pasadas, las `10` aristas esperadas en el grafo; `d111` y `d108` pagadas |
+| `T5` | el cierre | **CERRADA** (`77.5`): censo `437`, `1111`, `1`, `22`, `0` al abrir y `459`, `1172`, `1`, `0`, `22` al cerrar; `8` PUENTE marcados y `0` que entraron; guardas y cierre estricto en verde |
+
+**Ningun proceso MIO vivo al cerrar**: los `22` `insertar` volvieron con su `.fin` en `0` antes de lanzar el siguiente (`.v77ext/relojes.txt`),
+y todo lo demas corrio en primer plano. **La bandeja de Gerber queda vacia**: el libro entero vive en el grafo o en `_insertados`.
+**No escribo `PARA_ALEXIS.md`: nada me obliga a parar.** Marquet no se toco.

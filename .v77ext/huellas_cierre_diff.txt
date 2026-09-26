@@ -1,0 +1,5 @@
+$ diff <(awk '{$3=""; print}' .v77ext/huellas_cierre.txt) <(awk '{$3=""; print}' .v76ext/pasos_y_huellas.txt) && echo 'IDENTICO SALVO LA SEDE'
+IDENTICO SALVO LA SEDE
+$ cut -c63-75 .v77ext/huellas_cierre.txt | sort | uniq -c
+     22    _insertado
+      1 b en 2407dbb:
