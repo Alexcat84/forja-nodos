@@ -1116,3 +1116,7 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-25 | cerrar_brecha_dos_preguntas_estrategia | nombre_largo | El paso 3 de la planificacion, que hacer para cerrar la brecha, con sus dos preguntas consideradas por separado y la definicion de estrategia que sale de ellas | castellano | - |
 | 2026-09-25 | cerrar_brecha_dos_preguntas_estrategia | otro_idioma | close the gap | ingles | - |
 | 2026-09-25 | cerrar_brecha_dos_preguntas_estrategia | otro_idioma | strategy | ingles | - |
+| 2026-09-25 | contestar_dos_preguntas_direccion_objetivos | nombre_largo | Las dos preguntas contadas y nombradas que un sistema de direccion por objetivos necesita contestar, y las dos piezas que salen de ellas: el objetivo y los resultados clave | castellano | - |
+| 2026-09-25 | contestar_dos_preguntas_direccion_objetivos | otro_idioma | management by objectives | ingles | - |
+| 2026-09-25 | contestar_dos_preguntas_direccion_objetivos | otro_idioma | key results | ingles | - |
+| 2026-09-25 | contestar_dos_preguntas_direccion_objetivos | otro_idioma | milestones | ingles | - |
