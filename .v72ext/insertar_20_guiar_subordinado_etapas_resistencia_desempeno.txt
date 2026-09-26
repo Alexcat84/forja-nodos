@@ -1,0 +1,13 @@
+fila 20, guiar_subordinado_etapas_resistencia_desempeno, lineas --veredicto: 0
+inicio 2026-09-26 01:03:49
+======================================================================
+ADUANA DE INSERCION, candidato 'guiar_subordinado_etapas_resistencia_desempeno'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (429 del grafo mas 50 que esperan en bandejas)
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 430
+  censos escritos: denominaciones
+
+======================================================================
+fin 2026-09-26 01:12:46 | codigo de salida 0 | 536.3 s

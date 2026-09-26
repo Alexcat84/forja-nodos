@@ -1146,3 +1146,5 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-26 | entregar_evaluacion_desempeno_tres_claves | otro_idioma | three L's: level, listen, and leave yourself out | ingles | - |
 | 2026-09-26 | preparar_resena_mixta_hoja_trabajo | nombre_largo | El metodo de la hoja de trabajo para preparar una revision del tipo por un lado y por otro, que mezcla lo positivo y lo negativo | castellano | - |
 | 2026-09-26 | preparar_resena_mixta_hoja_trabajo | otro_idioma | worksheet for performance review | ingles | - |
+| 2026-09-26 | guiar_subordinado_etapas_resistencia_desempeno | nombre_largo | Las etapas de resolucion de un problema grave de desempeno, desde ignorar el problema hasta asumir la responsabilidad de resolverlo, en la revision llamada the blast | castellano | - |
+| 2026-09-26 | guiar_subordinado_etapas_resistencia_desempeno | otro_idioma | the blast, stages of problem-solving | ingles | - |
