@@ -1,0 +1,98 @@
+fila 08, cerrar_brecha_dos_preguntas_estrategia, lineas --veredicto: 10
+  --veredicto preguntar_seguimiento_hallar_huecos|SANO|Ajenos: la senial 3 casa el Contesta la primera pregunta de aqui con las preguntas de seguimiento de la reunion a solas de scott_radical_candor. Este cierra la brecha entre demanda y rendimiento con dos preguntas del plan (cap_07 L39); el vecino saca en una conversacion los huecos entre lo que la persona hace y quiere hacer. Ninguno usa el producto del otro.
+  --veredicto responder_tres_preguntas_vocacion_directiva|SANO|Ajenos: el vecino, de zhuo_manager, son tres preguntas para saber si la gestion es tu camino; aqui dos preguntas del plan para cerrar una brecha (L39). Comparten la forma de pregunta, no el procedimiento.
+  --veredicto contestar_dos_preguntas_direccion_objetivos|SANO|Ajenos dentro del mismo capitulo: los dos contestan dos preguntas, pero este cierra la brecha del paso 3 del plan con que necesitas hacer y que puedes hacer (L39) y el vecino monta la direccion por objetivos con adonde quiero ir y como me marco el ritmo (L71 a L75). La direccion por objetivos se concentra en los pasos 2 y 3 del plan (L69), pero ninguno de los cinco pasos del vecino usa las dos preguntas de aqui ni la estrategia que producen.
+  --veredicto preparar_preguntas_entrevista_antemano|SANO|Ajenos: el vecino, de zhuo_manager, prepara las preguntas de una entrevista de seleccion; aqui dos preguntas del plan (L39). Solo comparten la palabra pregunta.
+  --veredicto examinar_demanda_entorno_dos_marcos_temporales|SANO|Hermanos, partes de la misma serie de tres pasos que nombra planificar_tres_pasos_demanda_estado_brecha (L19): el vecino es el paso 1, la demanda del entorno (L29 a L31), y este el paso 3 (L39). Este parte de tener medida la demanda, pero comparar y conciliar los pasos 1 y 2 es el paso 5 de la cabeza, que es quien lleva el orden de la serie y a quien los dos cuelgan por D.37 (.v71ext/aristas_lectura.txt); lo que queda fuera es procedimiento en los dos lados (DISCUTIBLE D71.12).
+  --veredicto determinar_estado_presente_capacidades_proyectos_merma|SANO|Hermanos, partes de la misma serie (L19): el vecino es el paso 2, el estado presente (L35), y este el paso 3 (L39). La conciliacion de los dos es de la cabeza, que los cuelga a los dos por D.37; ninguno de los siete pasos del vecino usa la estrategia de aqui, y los de aqui emprenden tareas sobre la brecha, no listan capacidades (DISCUTIBLE D71.12).
+  --veredicto examinar_entorno_expectativas_tecnologia_proveedores_grupos|SANO|Del mismo capitulo, sin jerarquia entre ellos: el vecino examina los cuatro objetos del entorno (L27), que es parte del paso 1 del plan; este cierra la brecha del paso 3 (L39). La similitud sale de la prosa comun de planificacion de los resumenes.
+  --veredicto archivar_indicadores_resolver_problemas|SANO|Ajenos: el vecino, de cap_03, guarda los indicadores en un archivo para repasarlos cuando algo falla; aqui se cierra la brecha del plan (L39). La similitud es de prosa, sin paso comun.
+  --veredicto cortar_discusion_libre_momento_justo|SANO|Ajenos: el vecino, de cap_06, decide cuando pasar de la discusion libre a la decision; aqui se decide que hacer con la brecha del plan (L39). Comparten el verbo decidir, no el procedimiento.
+  --veredicto definir_entorno_grupo_clientes_proveedores_competidores|SANO|Del mismo capitulo, sin jerarquia entre ellos: el vecino define que es tu entorno por sus clientes, proveedores y competidores (L25), que es parte del paso 1 del plan, y este cierra la brecha del paso 3 (L39). Ninguno usa el producto del otro.
+inicio 2026-09-25 22:48:24
+======================================================================
+ADUANA DE INSERCION, candidato 'cerrar_brecha_dos_preguntas_estrategia'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (417 del grafo mas 62 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 10. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino preguntar_seguimiento_hallar_huecos  [Preguntar en la reunion a solas las preguntas de seguimiento que ensenian los huecos entre lo que la persona hace, lo que cree que deberia hacer y lo que quiere hacer]
+    levantada por: paso_contra_nodo
+    similitud_texto    0.265 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.645 (umbral 0.60)
+    paso 3 del candidato contra paso 11 de preguntar_seguimiento_hallar_huecos
+
+  vecino responder_tres_preguntas_vocacion_directiva  [Responder las tres preguntas que dicen si la gestion es tu camino]
+    levantada por: paso_contra_nodo
+    similitud_texto    0.225 (umbral 0.35)
+    familia_id         0.111 (umbral 0.30)
+    paso_contra_nodo   0.628 (umbral 0.60)
+    paso 3 del candidato contra paso 3 de responder_tres_preguntas_vocacion_directiva
+
+  vecino contestar_dos_preguntas_direccion_objetivos  [Montar el sistema de direccion por objetivos sobre las dos unicas preguntas que tiene que contestar: adonde quiero ir, y como me marco el ritmo para ver si estoy llegando]
+    levantada por: similitud_texto, paso_contra_nodo
+    similitud_texto    0.431 (umbral 0.35)
+    familia_id         0.250 (umbral 0.30)
+    paso_contra_nodo   0.626 (umbral 0.60)
+    paso 2 del candidato contra paso 2 de contestar_dos_preguntas_direccion_objetivos
+
+  vecino preparar_preguntas_entrevista_antemano  [Preparar tus preguntas de entrevista de antemano y hacer las mismas a todos]
+    levantada por: paso_contra_nodo
+    similitud_texto    0.126 (umbral 0.35)
+    familia_id         0.125 (umbral 0.30)
+    paso_contra_nodo   0.614 (umbral 0.60)
+    paso 4 del candidato contra paso 3 de preparar_preguntas_entrevista_antemano
+
+  vecino examinar_demanda_entorno_dos_marcos_temporales  [Examinar la demanda de tu entorno en dos marcos temporales y trabajar sobre la diferencia, sin rebajarla por lo que creas que puedes entregar]
+    levantada por: similitud_texto
+    similitud_texto    0.399 (umbral 0.35)
+    familia_id         0.100 (umbral 0.30)
+    paso_contra_nodo   0.454 (umbral 0.60)
+    paso 4 del candidato contra paso 4 de examinar_demanda_entorno_dos_marcos_temporales
+
+  vecino determinar_estado_presente_capacidades_proyectos_merma  [Determinar tu estado presente listando capacidades y proyectos en curso, en la misma moneda de la demanda, con su plazo de salida y su merma descontada]
+    levantada por: similitud_texto
+    similitud_texto    0.384 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.451 (umbral 0.60)
+    paso 4 del candidato contra paso 4 de determinar_estado_presente_capacidades_proyectos_merma
+
+  vecino examinar_entorno_expectativas_tecnologia_proveedores_grupos  [Examinar tu entorno por los cuatro objetos que el libro nombra: las expectativas del cliente, la tecnologia, tus proveedores y los otros grupos de tu organizacion]
+    levantada por: similitud_texto
+    similitud_texto    0.449 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.418 (umbral 0.60)
+    paso 3 del candidato contra paso 5 de examinar_entorno_expectativas_tecnologia_proveedores_grupos
+
+  vecino archivar_indicadores_resolver_problemas  [Mantener un archivo de indicadores para poder repasarlos el dia que algo vaya mal]
+    levantada por: similitud_texto
+    similitud_texto    0.351 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.431 (umbral 0.60)
+    paso 4 del candidato contra paso 3 de archivar_indicadores_resolver_problemas
+
+  vecino cortar_discusion_libre_momento_justo  [Cortar la discusion libre en el momento justo: ni antes de oir los asuntos de verdad, ni cuando ya se ha oido todo]
+    levantada por: similitud_texto
+    similitud_texto    0.370 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.423 (umbral 0.60)
+    paso 5 del candidato contra paso 2 de cortar_discusion_libre_momento_justo
+
+  vecino definir_entorno_grupo_clientes_proveedores_competidores  [Definir tu entorno mirando tu grupo como si fuera una empresa independiente: clientes, proveedores y competidores]
+    levantada por: similitud_texto
+    similitud_texto    0.417 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.393 (umbral 0.60)
+    paso 7 del candidato contra paso 3 de definir_entorno_grupo_clientes_proveedores_competidores
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 418
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 10
+
+======================================================================
+fin 2026-09-25 22:54:09 | codigo de salida 0 | 344.8 s

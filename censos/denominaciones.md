@@ -1113,3 +1113,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-25 | determinar_estado_presente_capacidades_proyectos_merma | nombre_largo | El paso 2 de la planificacion, el estado presente: que estas produciendo ahora y que vas a producir cuando salga lo que ya tienes en marcha, descontada la parte que no llega a terminarse | castellano | - |
 | 2026-09-25 | determinar_estado_presente_capacidades_proyectos_merma | otro_idioma | present status | ingles | - |
 | 2026-09-25 | determinar_estado_presente_capacidades_proyectos_merma | otro_idioma | work-in-process | ingles | - |
+| 2026-09-25 | cerrar_brecha_dos_preguntas_estrategia | nombre_largo | El paso 3 de la planificacion, que hacer para cerrar la brecha, con sus dos preguntas consideradas por separado y la definicion de estrategia que sale de ellas | castellano | - |
+| 2026-09-25 | cerrar_brecha_dos_preguntas_estrategia | otro_idioma | close the gap | ingles | - |
+| 2026-09-25 | cerrar_brecha_dos_preguntas_estrategia | otro_idioma | strategy | ingles | - |
