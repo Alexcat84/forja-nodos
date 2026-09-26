@@ -1264,3 +1264,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-26 | auditar_formacion_premios_ultima_fila | nombre_largo | La formacion en el muelle vista desde el borde por el capitan entrante: si se oye al jefe desde el fondo, a quien se premia, si se invito a las familias, si habia fotografo, cuando se juntaron las menciones, y si el que habla sabe de donde viene y adonde va su gente | castellano | - |
 | 2026-09-26 | auditar_formacion_premios_ultima_fila | otro_idioma | quarters | ingles | - |
 | 2026-09-26 | auditar_formacion_premios_ultima_fila | otro_idioma | awards ceremony | ingles | - |
+| 2026-09-26 | informar_cierre_jornada_conservar_propiedad_trabajo | nombre_largo | El guion que el jefe de departamento usa al terminar el dia para reportarle al segundo al mando, en vez de preguntarle que mas necesita de el | castellano | - |
+| 2026-09-26 | informar_cierre_jornada_conservar_propiedad_trabajo | otro_idioma | checkout | ingles | - |
+| 2026-09-26 | informar_cierre_jornada_conservar_propiedad_trabajo | otro_idioma | psychological ownership | ingles | - |
