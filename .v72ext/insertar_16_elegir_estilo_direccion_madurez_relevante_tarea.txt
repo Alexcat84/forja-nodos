@@ -1,0 +1,13 @@
+fila 16, elegir_estilo_direccion_madurez_relevante_tarea, lineas --veredicto: 0
+inicio 2026-09-26 00:16:04
+======================================================================
+ADUANA DE INSERCION, candidato 'elegir_estilo_direccion_madurez_relevante_tarea'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (425 del grafo mas 54 que esperan en bandejas)
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 426
+  censos escritos: atribuciones, denominaciones
+
+======================================================================
+fin 2026-09-26 00:32:20 | codigo de salida 0 | 976.5 s

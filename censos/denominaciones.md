@@ -1137,3 +1137,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-25 | fijar_meta_direccion_objetivos_mitad_probabilidad | otro_idioma | MBO | ingles | - |
 | 2026-09-26 | diagnosticar_nivel_motivacion_reaccion_aumento_salario | nombre_largo | La prueba sencilla para determinar donde esta alguien en la jerarquia motivacional de Maslow, leyendo si reacciona al aumento de sueldo por su suma absoluta o por como se compara contra el de otros | castellano | - |
 | 2026-09-26 | diagnosticar_nivel_motivacion_reaccion_aumento_salario | otro_idioma | a simple test | ingles | - |
+| 2026-09-26 | elegir_estilo_direccion_madurez_relevante_tarea | nombre_largo | La madurez relevante para la tarea (TRM) como variable que decide el estilo de direccion mas eficaz: estructurado en TRM baja, orientado al individuo en TRM media, minimo en TRM alta, con la vigilancia constante como frontera entre delegar y abandonar | castellano | - |
+| 2026-09-26 | elegir_estilo_direccion_madurez_relevante_tarea | sigla | TRM | castellano | - |
+| 2026-09-26 | elegir_estilo_direccion_madurez_relevante_tarea | otro_idioma | task-relevant maturity | ingles | - |
