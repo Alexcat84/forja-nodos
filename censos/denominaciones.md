@@ -1205,3 +1205,5 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-26 | recorrer_siete_pasos_programa_desarrollo_negocio | otro_idioma | Your Systems Strategy | ingles | - |
 | 2026-09-26 | responder_8_preguntas_construir_primary_aim | nombre_largo | El cuestionario en vinetas del capitulo Your Primary Aim: ocho preguntas para preguntarte antes de empezar tu negocio, o antes de volver a el manana | castellano | - |
 | 2026-09-26 | responder_8_preguntas_construir_primary_aim | otro_idioma | Primary Aim | ingles | - |
+| 2026-09-26 | responder_4_preguntas_estandares_objetivo_estrategico | nombre_largo | El cuestionario en vinetas de Standards Three Through?, del capitulo Your Strategic Objective: cuatro preguntas para completar los estandares de tu Objetivo Estrategico despues del dinero y la Oportunidad que Vale la Pena | castellano | - |
+| 2026-09-26 | responder_4_preguntas_estandares_objetivo_estrategico | otro_idioma | Standards Three Through? | ingles | - |
