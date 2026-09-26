@@ -1,0 +1,3 @@
+nodos antes: 430 | despues: 430 | nuevos: 0 | que desaparecen: 0 | que cambian: 1 {'dar_elogio_disciplina_igual_critica': ['pasos_accionables', 'resumen_teorico']}
+pasos antes 20 | despues 18 | el resumen viejo entero al principio del nuevo: True | caracteres 5382 > 9390
+los de despues son los de antes sin el 8 y sin el 17: True

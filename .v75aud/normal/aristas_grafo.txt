@@ -1,0 +1,5 @@
+  desarrollar_primer_curso_entrenamiento > pedir_critica_anonima_curso_entrenamiento_dictado | en siguientes de la madre: SI | en previos del hijo: SI
+  priorizar_lista_entrenamiento_subordinados > desarrollar_primer_curso_entrenamiento | en siguientes de la madre: SI | en previos del hijo: SI
+  responder_primer_aviso_renuncia_subordinado > gestionar_retencion_subordinado_valioso_renuncia | en siguientes de la madre: SI | en previos del hijo: SI
+de las 7 en el grafo: 7 | aristas del grafo que tocan la tanda: 3 | declaradas por los dos lados: 3
+esperadas: 3 | en el grafo: 3 | en el grafo y no esperadas: 0 | esperadas y no en el grafo: 0

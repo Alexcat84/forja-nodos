@@ -1,0 +1,2 @@
+insertar: 7 | con codigo 0: 7 | con otro codigo: 0 | suma: 7
+solapes entre consecutivos: 0 | primer inicio 2026-09-26 04:42:30 | ultimo fin 2026-09-26 05:48:32

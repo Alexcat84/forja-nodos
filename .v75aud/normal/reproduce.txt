@@ -1,0 +1,13 @@
+aristas_vuelta.py: IDENTICO a .v75ext/aristas_vuelta.txt
+nodos_viejos.py: IDENTICO a .v75ext/nodos_viejos.txt
+veredictos_vuelta.py: IDENTICO a .v75ext/veredictos_vuelta.txt
+pasos_inventados.py: IDENTICO a .v75ext/pasos_inventados.txt
+cap13_scott.py: IDENTICO a .v75ext/cap13_scott.txt
+r9.py: IDENTICO a .v75ext/r9.txt
+contra_barrido.py 01 usar_banco_nueve_preguntas_entrevista: IDENTICO a .v75ext/contra_01.txt
+contra_barrido.py 02 responder_primer_aviso_renuncia_subordinado: IDENTICO a .v75ext/contra_02.txt
+contra_barrido.py 03 gestionar_retencion_subordinado_valioso_renuncia: IDENTICO a .v75ext/contra_03.txt
+contra_barrido.py 04 reciclar_empleado_ascendido_mas_alla_capacidad: IDENTICO a .v75ext/contra_04.txt
+contra_barrido.py 05 priorizar_lista_entrenamiento_subordinados: IDENTICO a .v75ext/contra_05.txt
+contra_barrido.py 06 desarrollar_primer_curso_entrenamiento: IDENTICO a .v75ext/contra_06.txt
+contra_barrido.py 07 pedir_critica_anonima_curso_entrenamiento_dictado: IDENTICO a .v75ext/contra_07.txt

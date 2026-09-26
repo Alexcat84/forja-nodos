@@ -1,0 +1,9 @@
+paso  1 | suyo: mas que / y si no / mas seguro pisando el acelerador si sabes que | mio: mas que / y si no
+paso  2 | suyo: - | mio: demostrar
+paso  4 | suyo: en vez de | mio: comparaciones
+paso  9 | suyo: mas partido centrandote en las fuerzas que / en vez de | mio: -
+paso 10 | suyo: no solo / demuestra / mas de lo que | mio: no solo / demuestra
+paso 12 | suyo: igual de / lo contrario | mio: -
+paso 13 | suyo: el texto dice | mio: -
+paso 15 | suyo: - | mio: compartid
+pasos: 18 | por patron que casa: {'suyo+mio': 3, 'mio': 2, 'ninguno': 10, 'suyo': 3} | suma: 18
