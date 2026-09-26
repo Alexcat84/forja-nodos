@@ -1,0 +1,26 @@
+fila 01, planificar_tres_pasos_demanda_estado_brecha, lineas --veredicto: 1
+  --veredicto entregar_evaluacion_desempeno_tres_claves|SANO|Ajenos: la senial 1 casa la prosa de dos cabezas de tres (los tres pasos del plan, L19; las tres claves de la revision de desempeno, cap_14 L107). Uno planifica el trabajo del grupo y el otro entrega una evaluacion; ningun paso comun.
+inicio 2026-09-25 21:49:47
+======================================================================
+ADUANA DE INSERCION, candidato 'planificar_tres_pasos_demanda_estado_brecha'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (410 del grafo mas 69 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino entregar_evaluacion_desempeno_tres_claves  [Entregar la evaluacion de desempeno cara a cara con las tres claves del mando: franqueza, escucha total y dejar fuera las emociones propias]
+    levantada por: similitud_texto
+    similitud_texto    0.381 (umbral 0.35)
+    familia_id         0.100 (umbral 0.30)
+    paso_contra_nodo   0.396 (umbral 0.60)
+    paso 4 del candidato contra paso 3 de entregar_evaluacion_desempeno_tres_claves
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 411
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 1
+
+======================================================================
+fin 2026-09-25 21:59:30 | codigo de salida 0 | 583.6 s

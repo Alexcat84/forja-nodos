@@ -1093,3 +1093,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-25 | decidir_nivel_competente_inferior | otro_idioma | lowest competent level | ingles | - |
 | 2026-09-25 | decidir_nivel_competente_inferior | otro_idioma | best possible mix of participants | ingles | - |
 | 2026-09-25 | decidir_nivel_competente_inferior | otro_idioma | status differentials | ingles | - |
+| 2026-09-25 | planificar_tres_pasos_demanda_estado_brecha | nombre_largo | El proceso general de planificacion con sus tres pasos contados y nombrados: establecer la necesidad o demanda proyectada, establecer el estado presente, y comparar y conciliar los dos | castellano | - |
+| 2026-09-25 | planificar_tres_pasos_demanda_estado_brecha | otro_idioma | environmental demand | ingles | - |
+| 2026-09-25 | planificar_tres_pasos_demanda_estado_brecha | otro_idioma | present status | ingles | - |
