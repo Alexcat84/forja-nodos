@@ -68251,3 +68251,19 @@ La aduana de hoy: **BLOQUEARIA** con `6` vecino(s) contra `479`; lineas `--vered
 
 
 **Los seis vecinos son los de su bloque y las seis lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `78`, las tres seniales al digito; la poblacion, `479` (`463` mas `16`). **La madre no esta entre los vecinos, como en el barrido de la `78`**, y por eso la arista no tiene linea `--veredicto` y se cablea por `.v80ext/arista.py`: el paso citado es el `7` de la madre, impreso arriba, y las seniales del par (`0.324`, `0.0`, `0.457`) no la levantan. **Vive por los dos lados**: `observar_reunion_rutinaria_senales_plantilla` con el hijo en `nodos_siguientes` y `seguir_frustrado_preguntar_implantacion_ideas` con la madre en `nodos_previos`. **La unica arista esperada de la tanda, en el grafo.** Bitacora de `1181` a `1188`: sus seis lineas SANO y la de la arista, `CONTINUA`.
+
+### Fila `6`: `contar_firmas_cadena_tramite_parado`, **INSERTADO** en `599.7` s, codigo `0`, commit `1d472232`
+
+La aduana de hoy: **BLOQUEARIA** con `2` vecino(s) contra `479`; lineas `--veredicto` pasadas: `2`. Salida entera en `.v80ext/insertar_06_contar_firmas_cadena_tramite_parado.txt`.
+
+<!-- TALLADO: parcial salida=.v80ext/insertar_06_contar_firmas_cadena_tramite_parado.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `seguir_frustrado_preguntar_implantacion_ideas` | similitud_texto | 0.354 | 0.000 | 0.463 | SANO |
+| `inspeccionar_reparto_informacion_notas_jefe` | similitud_texto | 0.360 | 0.000 | 0.405 | SANO |
+
+    $ python .v80ext/contra_barrido.py 06 contar_firmas_cadena_tramite_parado
+    hoy 2 vecinos, barrido de la 78 2 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (464 grafo, 15 bandejas), en la 78 479 (459, 20)
+
+**Los dos vecinos son los de su bloque y las dos lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `78`, las tres seniales al digito; la poblacion, `479` (`464` mas `15`). Sin aristas en esta fila. Bitacora de `1188` a `1190`, sus dos lineas SANO.
