@@ -1,0 +1,42 @@
+fila 03, encargar_meta_especifica_dejar_libre_metodo, lineas --veredicto: 3
+  --veredicto ceder_control_reforzar_competencia_claridad|SANO|El mismo par que ceder_control lee desde su lado: meta sin el como y con los mismos recursos (cap_02 L49) contra ceder el control y reforzar los pilares (cap_01 L97). Procedimiento propio en los dos lados (ACTA M8.5 del frente).
+  --veredicto cambiar_forma_trabajar_conservar_plantilla|SANO|El mismo par que cambiar_forma lee desde su lado: meta, recursos y apoyo aqui (cap_02 L49, L33), plazo, canal y mensaje alli (L25, L27, L29). La similitud de 0,436, por encima de 0,4, se lee primero y no es gemelo (ACTA M9.4, fila 3).
+  --veredicto recorrer_organizacion_escuchar_plantilla|SANO|Ajenos: el vecino recorre y escucha al tomar el mando (cap_03 L11, L15), y este encarga una meta sin el como (cap_02 L49). La similitud de 0,401, por encima de 0,4, se lee primero, y es del mismo relevo de mando contado por el mismo autor, sin paso comun (ACTA M9.4, fila 7).
+inicio 2026-09-26 18:01:30
+======================================================================
+ADUANA DE INSERCION, candidato 'encargar_meta_especifica_dejar_libre_metodo'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (461 del grafo mas 18 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 3. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino ceder_control_reforzar_competencia_claridad  [Ceder el control sin ceder la responsabilidad, y reforzar la competencia tecnica y la claridad organizativa segun se cede]
+    levantada por: similitud_texto
+    similitud_texto    0.381 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.473 (umbral 0.60)
+    paso 4 del candidato contra paso 4 de ceder_control_reforzar_competencia_claridad
+
+  vecino cambiar_forma_trabajar_conservar_plantilla  [Cambiar como trabaja la gente que ya tienes en vez de renovarla, y decir por que]
+    levantada por: similitud_texto
+    similitud_texto    0.436 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.459 (umbral 0.60)
+    paso 5 del candidato contra paso 2 de cambiar_forma_trabajar_conservar_plantilla
+
+  vecino recorrer_organizacion_escuchar_plantilla  [Recorrer la organizacion y escuchar a su gente en vez de revisar sus expedientes, con el recorrido guiado y la linterna como excusa de inspeccion]
+    levantada por: similitud_texto
+    similitud_texto    0.412 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.416 (umbral 0.60)
+    paso 2 del candidato contra paso 4 de recorrer_organizacion_escuchar_plantilla
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 462
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 3
+
+======================================================================
+fin 2026-09-26 18:09:42 | codigo de salida 0 | 491.4 s

@@ -1243,3 +1243,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-26 | cambiar_forma_trabajar_conservar_plantilla | nombre_largo | El arranque del Santa Fe sin un solo despido: trabajar con lo que hay, y el mensaje que eso manda a cada persona | castellano | - |
 | 2026-09-26 | cambiar_forma_trabajar_conservar_plantilla | otro_idioma | turnover | ingles | - |
 | 2026-09-26 | cambiar_forma_trabajar_conservar_plantilla | otro_idioma | leadership vacuum | ingles | - |
+| 2026-09-26 | encargar_meta_especifica_dejar_libre_metodo | nombre_largo | Lo que el texto senala como buen liderazgo en el encargo que recibio: una meta especifica, ningun metodo impuesto, y los mismos recursos de siempre | castellano | - |
+| 2026-09-26 | encargar_meta_especifica_dejar_libre_metodo | otro_idioma | specific goal | ingles | - |
+| 2026-09-26 | encargar_meta_especifica_dejar_libre_metodo | otro_idioma | micromanage | ingles | - |
