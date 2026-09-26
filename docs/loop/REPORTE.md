@@ -66332,3 +66332,25 @@ La aduana de hoy: **BLOQUEARIA** con `2` vecino(s) contra `479`; lineas `--vered
 
 
 **Los dos vecinos son los de su bloque y las dos lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `76`, las tres seniales al digito; la poblacion, `479` (`445` mas `34`). **Tercera de las `10` aristas esperadas en el grafo.** Bitacora de `1132` a `1135`: sus dos lineas SANO y la de la arista.
+
+### Fila `10`: `cambiar_saludo_cliente_dos_ramas`, **INSERTADO** en `469.3` s, codigo `0`, commit `0d4f9143`
+
+La aduana de hoy: **BLOQUEARIA** con `6` vecino(s) contra `479`; lineas `--veredicto` pasadas: `6`. Salida entera en `.v77ext/insertar_10_cambiar_saludo_cliente_dos_ramas.txt`.
+
+<!-- TALLADO: parcial salida=.v77ext/insertar_10_cambiar_saludo_cliente_dos_ramas.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `cuantificar_impacto_innovacion_6_pasos` | similitud_texto | 0.442 | 0.000 | 0.325 | CONTINUA |
+| `probar_traje_azul_seis_semanas` | similitud_texto | 0.426 | 0.000 | 0.260 | SANO |
+| `dictar_ritmo_crecimiento_preguntas_escritas` | similitud_texto | 0.421 | 0.000 | 0.364 | SANO |
+| `operar_modelo_gente_destreza_minima` | similitud_texto | 0.373 | 0.000 | 0.349 | SANO |
+| `responder_primer_aviso_renuncia_subordinado` | similitud_texto | 0.350 | 0.000 | 0.352 | SANO |
+| `entregar_evaluacion_desempeno_tres_claves` | similitud_texto | 0.351 | 0.000 | 0.349 | SANO |
+
+**Arista en cola (`D.29`)**: `cambiar_saludo_cliente_dos_ramas > cuantificar_impacto_innovacion_6_pasos`
+
+    $ python .v77ext/contra_barrido.py 10 cambiar_saludo_cliente_dos_ramas
+    hoy 6 vecinos, barrido de la 76 6 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (446 grafo, 33 bandejas), en la 76 479 (437, 42)
+
+**Los seis vecinos son los de su bloque y las seis lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `76`, las tres seniales al digito; la poblacion, `479` (`446` mas `33`). **Su arista hacia `cuantificar_impacto_innovacion_6_pasos` queda EN COLA**, como su linea `CONTINUA` con `madre=` manda mientras el hijo espera en la bandeja: se cablea al entrar la fila `12`. Bitacora de `1135` a `1141`.
