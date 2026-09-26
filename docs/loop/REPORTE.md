@@ -63334,3 +63334,18 @@ La aduana de hoy: **BLOQUEARIA** con `2` vecino(s) contra `479`; lineas `--vered
     hoy 2 vecinos, barrido de la 71 2 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (422 grafo, 57 bandejas), en la 71 479 (410, 69)
 
 **Los dos vecinos son los de su bloque y las dos lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `71`, las tres seniales al digito. Sin aristas en esta fila.
+
+### Fila `14`: `fijar_meta_direccion_objetivos_mitad_probabilidad`, **INSERTADO** en `702.8` s, codigo `0`, commit `0c06caf9`
+
+La aduana de hoy: **BLOQUEARIA** con `1` vecino(s) contra `479`; lineas `--veredicto` pasadas: `1`. Salida entera en `.v72ext/insertar_14_fijar_meta_direccion_objetivos_mitad_probabilidad.txt`.
+
+<!-- TALLADO: parcial salida=.v72ext/insertar_14_fijar_meta_direccion_objetivos_mitad_probabilidad.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `fijar_periodo_direccion_objetivos_retroalimentacion` | familia_id | 0.282 | 0.375 | 0.381 | SANO |
+
+    $ python .v72ext/contra_barrido.py 14 fijar_meta_direccion_objetivos_mitad_probabilidad
+    hoy 1 vecinos, barrido de la 71 1 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (423 grafo, 56 bandejas), en la 71 479 (410, 69)
+
+**El vecino es el de su bloque y la linea se paso tal cual**: ni nuevos ni caidos contra el barrido de la `71`, las tres seniales al digito. Sin aristas en esta fila.
