@@ -1188,3 +1188,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-26 | unificar_color_forma_vestuario_modelo | nombre_largo | La regla 6 del Prototipo de Franquicia: los colores determinados cientificamente y aplicados en los ocho sitios que el libro nombra, las formas en sus cuatro soportes, y el modelo pensado como el envase de tu unico producto | castellano | - |
 | 2026-09-26 | unificar_color_forma_vestuario_modelo | otro_idioma | uniform color, dress, and facilities code | ingles | - |
 | 2026-09-26 | unificar_color_forma_vestuario_modelo | otro_idioma | Color Research Institute | ingles | - |
+| 2026-09-26 | cambiar_saludo_cliente_dos_ramas | nombre_largo | La primera Innovacion de ejemplo del capitulo del proceso de desarrollo del negocio: sustituir Hi, may I help you? por Hi, have you been in here before?, con la respuesta exacta preparada para cuando el cliente dice que si y para cuando dice que no | castellano | - |
+| 2026-09-26 | cambiar_saludo_cliente_dos_ramas | otro_idioma | Hi, may I help you? | ingles | - |
+| 2026-09-26 | cambiar_saludo_cliente_dos_ramas | otro_idioma | Hi, have you been in here before? | ingles | - |

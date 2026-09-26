@@ -1,0 +1,72 @@
+fila 10, cambiar_saludo_cliente_dos_ramas, lineas --veredicto: 6
+  --veredicto cuantificar_impacto_innovacion_6_pasos|CONTINUA|madre=cambiar_saludo_cliente_dos_ramas|El vecino parte del producto de este candidato, y lo dice el libro: L95 cuantifica exactamente esta Innovacion (by changing the words you use to greet an incoming customer), y sus pasos 2 y 3 cuentan antes y despues de cambiar las palabras. Procedimiento en los dos lados: aqui el saludo y sus dos ramas (L51 a L57); alli los seis conteos (L95). La similitud de 0,442, por encima de 0,4, se lee primero y no es gemelo: comparten el ejemplo del saludo, no los pasos (DISCUTIBLE D76.17).
+  --veredicto probar_traje_azul_seis_semanas|SANO|Hermanos: son dos Innovaciones distintas que cap_12 pone una tras otra, el saludo (L51) y el traje azul (L63). La similitud de 0,426, por encima de 0,4, se lee primero y no es gemelo: uno cambia las palabras y el otro el vestuario, y ninguno usa el producto del otro.
+  --veredicto dictar_ritmo_crecimiento_preguntas_escritas|SANO|Ajenos: el vecino, de cap_07, dicta el ritmo de crecimiento con tres conocimientos, preguntas y un plan escrito (L279 a L287); este cambia el saludo del vendedor (L51 a L57). La similitud de 0,421, por encima de 0,4, se lee primero y es de la forma de pregunta y respuesta del mismo autor, sin paso comun.
+  --veredicto operar_modelo_gente_destreza_minima|SANO|Ajenos: el vecino, de cap_11, opera el modelo con la destreza minima y un sistema (L87 a L113); este cambia el saludo (L51 a L57). Comparten la prosa de Gerber, no el procedimiento.
+  --veredicto responder_primer_aviso_renuncia_subordinado|SANO|Ajenos: el vecino del grafo, de grove_high_output, escucha el primer aviso de renuncia de un subordinado; este saluda a un cliente que entra (L51). La similitud es de la forma si responde, dile, sin paso comun.
+  --veredicto entregar_evaluacion_desempeno_tres_claves|SANO|Ajenos: el vecino del grafo, de grove_high_output, entrega cara a cara una evaluacion de desempeno; este saluda a un cliente con un guion de dos ramas (L51 a L57). Comparten la prosa de la conversacion, no el procedimiento.
+inicio 2026-09-26 10:56:01
+======================================================================
+ADUANA DE INSERCION, candidato 'cambiar_saludo_cliente_dos_ramas'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (446 del grafo mas 33 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 6. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino cuantificar_impacto_innovacion_6_pasos  [Cuantificar el impacto real de una innovacion en tu negocio con los seis conteos que el libro enumera]
+    levantada por: similitud_texto
+    similitud_texto    0.442 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.325 (umbral 0.60)
+    paso 4 del candidato contra paso 3 de cuantificar_impacto_innovacion_6_pasos
+
+  vecino probar_traje_azul_seis_semanas  [Correr un test de seis semanas comparando dos vestuarios completos para medir el efecto del color en las ventas]
+    levantada por: similitud_texto
+    similitud_texto    0.426 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.260 (umbral 0.60)
+    paso 2 del candidato contra paso 1 de probar_traje_azul_seis_semanas
+
+  vecino dictar_ritmo_crecimiento_preguntas_escritas  [Dictar el ritmo de crecimiento de tu negocio con los tres conocimientos clave, las preguntas correctas y el plan escrito]
+    levantada por: similitud_texto
+    similitud_texto    0.421 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.364 (umbral 0.60)
+    paso 4 del candidato contra paso 8 de dictar_ritmo_crecimiento_preguntas_escritas
+
+  vecino operar_modelo_gente_destreza_minima  [Operar el modelo con gente del nivel de destreza mas bajo posible, y construir el sistema que la apalanca]
+    levantada por: similitud_texto
+    similitud_texto    0.373 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.349 (umbral 0.60)
+    paso 4 del candidato contra paso 1 de operar_modelo_gente_destreza_minima
+
+  vecino responder_primer_aviso_renuncia_subordinado  [Responder al primer momento en que un subordinado valioso avisa que quiere renunciar: dejar lo que haces, escucharlo sin discutir y comprarte tiempo antes de actuar]
+    levantada por: similitud_texto
+    similitud_texto    0.350 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.352 (umbral 0.60)
+    paso 4 del candidato contra paso 4 de responder_primer_aviso_renuncia_subordinado
+
+  vecino entregar_evaluacion_desempeno_tres_claves  [Entregar la evaluacion de desempeno cara a cara con las tres claves del mando: franqueza, escucha total y dejar fuera las emociones propias]
+    levantada por: similitud_texto
+    similitud_texto    0.351 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.349 (umbral 0.60)
+    paso 4 del candidato contra paso 5 de entregar_evaluacion_desempeno_tres_claves
+  ARISTA EN COLA, no cableada: cambiar_saludo_cliente_dos_ramas > cuantificar_impacto_innovacion_6_pasos
+    el otro extremo espera en la bandeja (D.29). El veredicto CONTINUA queda escrito y la arista se cablea cuando entre:
+      python forja.py arista --madre cambiar_saludo_cliente_dos_ramas --hijo cuantificar_impacto_innovacion_6_pasos --paso <n> --razon "..."
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 447
+  censos escritos: atribuciones, denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 6
+  ARISTAS EN COLA, sin cablear: 1
+    cambiar_saludo_cliente_dos_ramas > cuantificar_impacto_innovacion_6_pasos
+    D.29: van a un bloque propio y titulado del reporte, y se cablean con `forja.py arista` cuando el otro extremo entre.
+
+======================================================================
+fin 2026-09-26 11:03:50 | codigo de salida 0 | 469.3 s
