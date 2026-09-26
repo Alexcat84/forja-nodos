@@ -1,0 +1,42 @@
+fila 03, fijar_horizonte_ventana_replanificacion, lineas --veredicto: 3
+  --veredicto fijar_periodo_direccion_objetivos_retroalimentacion|SANO|Hermanos del mismo capitulo, los dos sobre periodo y retroalimentacion: este fija el horizonte y la cadencia del ejercicio de planificacion (L61) y el vecino el periodo de los objetivos de la direccion por objetivos (L79). El paso 5 del vecino contrasta su periodo con la base anual del plan, pero el libro lo pone como ejemplo (L79, For example, if we plan on a yearly basis) y la condicion del vecino es la suya, no la cadencia que aqui se escribe (DISCUTIBLE D71.13).
+  --veredicto determinar_estado_presente_capacidades_proyectos_merma|SANO|El mismo par que determinar_estado lee desde su lado: del mismo capitulo y sin jerarquia (L61, L35).
+  --veredicto anunciar_decision_inesperada_reconvocar_reunion|SANO|Ajenos: la senial 3 casa el No planifiques con demasiada frecuencia, date tiempo a juzgar de aqui con el Reconvoca la reunion despues de que la gente haya tenido ocasion de recuperarse del vecino, de cap_06. Uno fija la cadencia del plan y el otro gestiona una decision inesperada.
+inicio 2026-09-25 22:08:56
+======================================================================
+ADUANA DE INSERCION, candidato 'fijar_horizonte_ventana_replanificacion'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (412 del grafo mas 67 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 3. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino fijar_periodo_direccion_objetivos_retroalimentacion  [Fijar el periodo del sistema de direccion por objetivos por el plazo en que su retroalimentacion sigue sirviendo, y contrastarlo con la base del plan]
+    levantada por: similitud_texto
+    similitud_texto    0.385 (umbral 0.35)
+    familia_id         0.125 (umbral 0.30)
+    paso_contra_nodo   0.430 (umbral 0.60)
+    paso 1 del candidato contra paso 2 de fijar_periodo_direccion_objetivos_retroalimentacion
+
+  vecino determinar_estado_presente_capacidades_proyectos_merma  [Determinar tu estado presente listando capacidades y proyectos en curso, en la misma moneda de la demanda, con su plazo de salida y su merma descontada]
+    levantada por: similitud_texto
+    similitud_texto    0.358 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.394 (umbral 0.60)
+    paso 1 del candidato contra paso 4 de determinar_estado_presente_capacidades_proyectos_merma
+
+  vecino anunciar_decision_inesperada_reconvocar_reunion  [Anunciar una decision radicalmente distinta de lo que el grupo esperaba, y reconvocar la reunion en vez de marcharse]
+    levantada por: similitud_texto
+    similitud_texto    0.357 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.365 (umbral 0.60)
+    paso 4 del candidato contra paso 6 de anunciar_decision_inesperada_reconvocar_reunion
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 413
+  censos escritos: atribuciones, denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 3
+
+======================================================================
+fin 2026-09-25 22:15:52 | codigo de salida 0 | 415.3 s

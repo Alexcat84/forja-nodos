@@ -1099,3 +1099,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-25 | fijar_periodo_direccion_objetivos_retroalimentacion | nombre_largo | En que periodo se enfoca un sistema de direccion por objetivos: el que deja que la retroalimentacion llegue poco despues de la actividad que mide, contrastado contra la base sobre la que se planifica | castellano | - |
 | 2026-09-25 | fijar_periodo_direccion_objetivos_retroalimentacion | otro_idioma | management by objectives | ingles | - |
 | 2026-09-25 | fijar_periodo_direccion_objetivos_retroalimentacion | otro_idioma | feedback | ingles | - |
+| 2026-09-25 | fijar_horizonte_ventana_replanificacion | nombre_largo | Hasta donde miran los planificadores y que parte del plan se implementa: la ventana entre ahora y la proxima vez que se hace el ejercicio, y la cadencia que deja llegar la retroalimentacion | castellano | - |
+| 2026-09-25 | fijar_horizonte_ventana_replanificacion | otro_idioma | long-range planning | ingles | - |
+| 2026-09-25 | fijar_horizonte_ventana_replanificacion | otro_idioma | time window | ingles | - |
