@@ -8351,3 +8351,29 @@ CENSO VERDE: las 1049 rutas publicadas sostienen lo que dicen sostener.
 CIERRE VERDE: el tallado y el censo de rutas.
 [pre-commit] verde
 [2026-09-26 06:18:16] VUELTA 4 : AUDITOR (claude-opus-5-5, esfuerzo high)
+[2026-09-26 06:37:05] auditor listo (USD 6.928761000000004), 1128s, intento 1 de 7
+[2026-09-26 06:37:05]   sello de la apertura ciega verificado: intacto tras el turno
+[2026-09-26 06:37:06]   tablero puesto al dia al cerrar la vuelta 4 (d102)
+GUARDA DEL TABLERO (D.49)
+  linea de este arbol : serial
+  libro que declara el encargo : gerber_emyth
+  libro que el orden le da (D.51): grove_high_output
+    prioridad 1 del orden del mundo 11. 'grove_high_output' esta COSECHADO y sin dueño: su trabajo ya llego a esta rama, asi que se continua desde el capi
+
+TABLERO EN ROJO. La vuelta NO abre:
+  D.51: el encargo declara 'gerber_emyth' y el orden del mundo 11 le da a esta linea 'grove_high_output'. prioridad 1 del orden del mundo 11. 'grove_high_output' esta COSECHADO y sin dueño: su trabajo ya llego a esta rama, asi que se continua desde el capitulo siguiente al ultimo minado (cap_18), citando su frontera. D.50.
+[2026-09-26 06:37:07] DETENIDO en la vuelta 5: la guarda del tablero esta en ROJO (D.49, D.51).
+[2026-09-26 06:37:07]   El encargo no puede abrir el libro que declara. Ver docs/loop/TABLERO.jsonl
+[2026-09-26 06:37:07] Arnes terminado. Revisa docs/loop/PARA_ALEXIS.md si existe, y docs/loop/ACTA_AUDITOR.md.
+[2026-09-26 06:45:19] arranque: rama extraccion-mundo-11, MODO_INSERCION=insertar
+GUARDA DEL TABLERO (D.49)
+  linea de este arbol : serial
+  libro que declara el encargo : gerber_emyth
+  libro que el orden le da (D.51): gerber_emyth
+    prioridad 2 del orden del mundo 11. 'gerber_emyth' esta COSECHADO y sin dueño: su trabajo ya llego a esta rama, asi que se continua desde el capitulo 
+
+TABLERO VERDE: la vuelta puede abrir.
+[2026-09-26 06:45:20]   tablero comprobado: la vuelta puede abrir (D.49, D.51)
+[2026-09-26 06:45:20] ROL INICIAL FORZADO por EMPEZAR_EN: extractor (gana sobre la medicion)
+[2026-09-26 06:45:20] VUELTA 1 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
+[2026-09-26 06:45:20] VUELTA 1 : EXTRACTOR (claude-opus-5-5, esfuerzo high)
