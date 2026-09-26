@@ -1,0 +1,62 @@
+# ARISTAS POR LECTURA (D.29, D.37, D.53) DE LA VUELTA 76 para las 22 fichas de Gerber (.v76ext/lista_barrido.txt), leidas con los
+# pasos de los dos delante (python .v64aud/pasos.py <a> <b>, las 22 en .v76ext/pasos_22.txt) y mirando tambien madres que ya viven
+# en el grafo. Formato, el de .v73ext/aristas_lectura.txt: SOSTENGO o NO SOSTENGO | madre | hijo | paso de la madre y paso del hijo |
+# linea del libro | razon. Se cablean en la vuelta que inserte estas 22, en el acto de insertar el hijo, con la madre ya en el grafo:
+# python forja.py arista --madre --hijo --paso --razon. Lo DISCUTIBLE se marco al escribir la fila.
+# LO QUE CAMBIA RESPECTO DE LA 73, y se dice: aqui hay aristas D.37 de cabeza a parte, y por D.53 una arista D.37 NO es CONTINUA
+# (si lo fuera, la cabeza devoraria sus partes). Asi que un par D.37 que la senial SI levanta lleva su linea SANO en
+# .v76ext/veredictos_listos.txt, con la arista citada en la razon, y su arista va AQUI como SOSTENGO; comprobar_veredictos.py imprime
+# para cada SOSTENGO si el barrido de hoy lo levanta, y en un par D.37 un SI no es falta: es la puerta del veredicto, distinta de la de
+# la arista. Las madres por continuacion que la senial levanta van como CONTINUA en los veredictos y no aqui.
+#
+# d111 (serie D.37 de cap_13, recorrer_siete_pasos_programa_desarrollo_negocio, 7 partes nombradas en L45 a L57, la cuenta en L43):
+SOSTENGO | recorrer_siete_pasos_programa_desarrollo_negocio | construir_estrategia_gente_cuatro_componentes | madre paso 8, hijo pasos 1 a 5 | cap_13 L43, L53; cap_18 L117, L119 | D.37, d111. El texto de la madre dice cuantas partes tiene (seven distinct steps, L43) y las nombra; su paso 8, Paso 5: Your People Strategy, nombra la parte en una linea, y el hijo es esa parte: su paso 1 dice que Your People Strategy es la forma en que comunicas la idea (L117) y sus pasos 2 a 5 la despliegan en los componentes que L119 nombra, que la cabeza no tiene. La ACTA G7 seccion 6 ya lo escribio: la arista de ese par es declarable por lectura.
+NO SOSTENGO | recorrer_siete_pasos_programa_desarrollo_negocio | responder_8_preguntas_construir_primary_aim | madre paso 4 | cap_13 L45; cap_14 L117 | d111, adjudicado en la ACTA G5 seccion 6.2 y no se reabre (D.47): el cuestionario de L117 es un metodo dentro del paso 1, no el paso, y cablearlo como cabeza fabrica una arista falsa.
+NO SOSTENGO | recorrer_siete_pasos_programa_desarrollo_negocio | responder_4_preguntas_estandares_objetivo_estrategico | madre paso 5 | cap_13 L47; cap_15 L167 a L177 | d111, adjudicado en la ACTA G5 seccion 6.2 y no se reabre (D.47): las preguntas de los estandares tercero en adelante son un metodo dentro del paso 2, que tambien trae el dinero y la Oportunidad que Vale la Pena.
+NO SOSTENGO | recorrer_siete_pasos_programa_desarrollo_negocio | distinguir_tres_tipos_sistemas_negocio | madre paso 10 | cap_13 L57; cap_19 L33 a L45 | d111. El paso 10 nombra Your Systems Strategy, y ninguna de las tres fichas de cap_19 es esa estrategia: cap_19 no la define como procedimiento (solo L357, If your Systems Strategy is the glue), y esta ficha clasifica los sistemas en tres tipos (L35 a L41), que es un metodo dentro del paso, la misma figura que la ACTA G5 adjudico para cap_14 y cap_15 (DISCUTIBLE D76.13).
+NO SOSTENGO | recorrer_siete_pasos_programa_desarrollo_negocio | aplicar_seis_pasos_sistema_venta | madre paso 10 | cap_13 L57; cap_19 L137, L141 | d111. Un sistema de venta es un Soft System (L137), un ejemplo dentro del paso 7 y no el paso (DISCUTIBLE D76.13).
+NO SOSTENGO | recorrer_siete_pasos_programa_desarrollo_negocio | medir_sistema_venta_trece_indicadores_benchmark | madre paso 10 | cap_13 L57; cap_19 L303, L307 | d111. Es el Information System del ejemplo de venta (L303, L307), un ejemplo dentro del paso 7 y no el paso (DISCUTIBLE D76.13).
+# La cuenta de d111 con la medida delante: de las 7 partes, 1 con arista (la 5, People Strategy); la 1 y la 2 adjudicadas sin arista
+# (ACTA G5); la 3 y la 4 sin candidato (cap_16 y cap_17 dieron cero); la 6 apartada (fuentes/gerber_emyth_cap17_reservado, no se
+# toca); la 7 sin parte que sea la estrategia. LA CABEZA ENTRA CON 1 DE 7, y eso lo cubre D.37 por su letra: la arista se declara para
+# la parte que existe como nodo, y una serie incompleta tiene precedente (fingir_prototipo_cinco_mil_replicas con 4 de 6, y
+# recorrer_trece_elementos_proceso_evaluacion_formal entro con 0 de 13). No pide nada que D.37 no cubra: no es parada.
+#
+# La serie D.37 de cap_11 (fingir_prototipo_cinco_mil_replicas: su paso 4 dice que son seis y los pasos 5 a 10 las nombran; su
+# resumen_teorico ya declara las cuatro partes que salieron y por que la 3 y la 5 no tienen nodo):
+SOSTENGO | fingir_prototipo_cinco_mil_replicas | dar_valor_constante_cuatro_publicos | madre paso 5, hijo pasos 1 a 8 | cap_11 L45, L59 a L83 | D.37. El paso 5 de la madre, Regla 1, nombra la parte en una linea (L45) y el hijo la despliega en 8 pasos (L59 a L81) que la cabeza no tiene.
+SOSTENGO | fingir_prototipo_cinco_mil_replicas | operar_modelo_gente_destreza_minima | madre paso 6, hijo pasos 1 a 10 | cap_11 L47, L85 a L133 | D.37. El paso 6 de la madre, Regla 2, nombra la parte en una linea (L47) y el hijo la despliega en 10 pasos (L87 a L113) que la cabeza no tiene.
+SOSTENGO | fingir_prototipo_cinco_mil_replicas | documentar_trabajo_manual_operaciones | madre paso 8, hijo pasos 1 a 10 | cap_11 L51, L153 a L173 | D.37. El paso 8 de la madre, Regla 4, nombra la parte en una linea (L51) y el hijo la despliega en 10 pasos (L155 a L171) que la cabeza no tiene.
+SOSTENGO | fingir_prototipo_cinco_mil_replicas | unificar_color_forma_vestuario_modelo | madre paso 10, hijo pasos 1 a 8 | cap_11 L55, L213 a L241 | D.37. El paso 10 de la madre, Regla 6, nombra la parte en una linea (L55) y el hijo la despliega en 8 pasos (L215 a L241) que la cabeza no tiene.
+#
+# La serie de construir_estrategia_gente_cuatro_componentes (su titulo dice cuatro componentes y sus pasos 2 a 5 los nombran):
+SOSTENGO | construir_estrategia_gente_cuatro_componentes | documentar_trabajo_manual_operaciones | madre paso 5, hijo pasos 1 a 10 | cap_18 L119; cap_11 L153 a L173 | D.37. El titulo de la madre dice cuantos componentes tiene y sus pasos 2 a 5 los nombran; su paso 5 nombra en una linea los Operations Manuals que definen el trabajo de tu gente (L119), y el hijo es el Manual de Operaciones desplegado en 10 pasos (L155 a L171). El propio resumen_teorico de la madre dice que el Manual es uno de sus cuatro componentes nombrado en una linea, y que el contenido vive en este hijo. La cuenta la pone el titulo de la ficha y no el libro, que enumera sin contar (L119): si el auditor lee que D.37 pide la cuenta del libro, es la misma arista por D.29 con esta razon (DISCUTIBLE D76.14).
+NO SOSTENGO | construir_estrategia_gente_cuatro_componentes | responder_8_preguntas_construir_primary_aim | madre paso 2 | cap_18 L119; cap_14 L117 | La misma lectura que la ACTA G5 hizo para la serie de cap_13: el cuestionario de L117 es un metodo dentro del Primary Aim, no el Primary Aim, y el paso 2 de la madre nombra el Primary Aim.
+NO SOSTENGO | construir_estrategia_gente_cuatro_componentes | responder_4_preguntas_estandares_objetivo_estrategico | madre paso 3 | cap_18 L119; cap_15 L167 a L177 | La misma lectura: las preguntas de los estandares tercero en adelante son un metodo dentro del Strategic Objective que el paso 3 nombra.
+NO SOSTENGO | construir_estrategia_gente_cuatro_componentes | aplicar_cinco_pasos_proceso_contratacion | madre paso 1 | cap_18 L117, L245 | L245 dice que el proceso de contratacion fue el primer y mas esencial medio para comunicar la idea, y el paso 1 de la madre dice que la People Strategy es la forma de comunicarla; pero ningun paso de la madre nombra la contratacion. Nombrar no es procedimentar, y aqui ni se nombra (DISCUTIBLE D76.15).
+NO SOSTENGO | construir_estrategia_gente_cuatro_componentes | aplicar_ocho_reglas_juego_personas | madre paso 1 | cap_18 L113 a L117, L139 | Las reglas del juego de la gente (L137 a L165) viven en el mismo capitulo, y la condicion del hijo nombra Your People Strategy; pero ningun paso de la madre nombra el juego ni sus reglas (DISCUTIBLE D76.15).
+#
+# cap_19, los tres tipos de sistemas:
+NO SOSTENGO | distinguir_tres_tipos_sistemas_negocio | aplicar_seis_pasos_sistema_venta | madre paso 3 | cap_19 L39, L137 | La madre dice cuantos tipos hay y los nombra, y las partes de esa enumeracion son los tipos, no sus ejemplos: L45 dice What follows are examples of each, y el sistema de venta es un ejemplo de Soft System (L137), no el Soft System. Una cabeza y un vecino que no es ninguna de sus partes son hermanos (EXTRACTOR.md 15.6) (DISCUTIBLE D76.13).
+NO SOSTENGO | distinguir_tres_tipos_sistemas_negocio | medir_sistema_venta_trece_indicadores_benchmark | madre paso 4 | cap_19 L41, L303 a L307 | La misma lectura: el Information Benchmark es un ejemplo de Information System (L303, L307), no el Information System (DISCUTIBLE D76.13).
+#
+# Madres que ya viven en el grafo, miradas por lectura: ninguna nombra en una linea lo que una ficha de Gerber despliega.
+NO SOSTENGO | crear_manuales_jugadas_repetibles | documentar_trabajo_manual_operaciones | madre pasos 3 a 5 | cap_11 L153 a L173 | La vecina del grafo, de zhuo_manager, manda codificar en un manual lo que se repite, con su propio caso del resumen semanal; el candidato es el Manual de Operaciones de la regla 4 del prototipo, con sus tres contenidos (L171). Dos doctrinas de dos libros sobre documentar el trabajo; ninguna nombra el procedimiento de la otra ni usa su producto.
+NO SOSTENGO | instalar_metodo_contratacion_empresa | aplicar_cinco_pasos_proceso_contratacion | ningun paso | cap_18 L247 a L271 | Las vecinas de contratacion del grafo son de smart_who y de zhuo_manager, cada una con su metodo; ninguna nombra en una linea el proceso de cinco componentes del hotel, que es el del libro de Gerber (L247 a L271), ni lo usa.
+NO SOSTENGO | definir_vision_larga_trabajar_atras | construir_empresa_plantilla_vision_diaria | madre paso 2 | cap_08 L39 a L51 | La vecina del grafo, de zhuo_manager, guia las decisiones con una mision y trabaja hacia atras desde la vision; el candidato modela la empresa cada dia contra la plantilla de su vision (L47). Dos doctrinas sobre la vision, sin jerarquia.
+#
+# d098 (cap_05 L29, las tres fases: Infancy, Adolescence y Maturity): ninguna de las 22 es su cabeza (ninguna sale de cap_05) ni una
+# de sus partes (ninguna es la fase Maturity: las dos de cap_08, construir_empresa_plantilla_vision_diaria y
+# trazar_modelo_negocio_cliente_primero, despliegan la Entrepreneurial Perspective y el Entrepreneurial Model, metodos dentro del
+# capitulo de Maturity, no la fase). Sin cabeza no hay arista cabeza a parte: el puntero sigue vivo para cuando nazca la cabeza.
+#
+# d104 (cap_12 L21, Innovation, Quantification y Orchestration), mirado porque el encargo pide D.37 para los demas titulos: ninguna de
+# las 22 es su cabeza; cuantificar_impacto_innovacion_6_pasos es un metodo dentro de Quantification (L95), y cambiar_saludo y
+# probar_traje son dos Innovaciones del libro (L51, L63). Sin cabeza no hay arista.
+#
+# D.37 en los demas titulos que dicen cuantas partes tienen: aplicar_cinco_pasos_proceso_contratacion, aplicar_seis_pasos_sistema_venta,
+# aplicar_ocho_reglas_juego_personas, interrogar_negocio_cinco_preguntas, medir_sistema_venta_trece_indicadores_benchmark,
+# responder_8_preguntas_construir_primary_aim, responder_4_preguntas_estandares_objetivo_estrategico, cuantificar_impacto_innovacion_6_pasos,
+# dar_valor_constante_cuatro_publicos y cambiar_saludo_cliente_dos_ramas: en los diez las partes son los propios pasos del candidato y
+# ninguna es un nodo; ninguna arista cabeza a parte (D68.7). distinguir_tres_tipos_sistemas_negocio, arriba. probar_traje_azul_seis_semanas
+# y unificar_color_forma_vestuario_modelo cuentan semanas y sitios, no partes.

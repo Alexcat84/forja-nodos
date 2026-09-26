@@ -65277,8 +65277,8 @@ falte es exactamente lo que no tiene fila.
 |---|---|---|
 | `T1` | los registros de la `ACTA 74` | **CERRADA** (`76.1`) |
 | `T2` | la fidelidad entera de las fichas de Gerber | **CERRADA** (`76.2`): `9` PUENTE de `176`, corregidos en la bandeja antes del barrido; `cap_07` y `cap_12` releidos enteros |
-| `T3` | el barrido, sobre las fichas ya corregidas | abierta |
-| `T4` | los veredictos, las aristas (`d111`, `d108`, `d098`, `D.37`) y el orden | abierta |
+| `T3` | el barrido, sobre las fichas ya corregidas | **CERRADA** (`76.3`): `22` de `22`, poblacion `479`, `54` pares, recogido dentro del turno |
+| `T4` | los veredictos, las aristas (`d111`, `d108`, `d098`, `D.37`) y el orden | **CERRADA** (`76.4`): `54` lineas para `54` vecinos, `6` aristas por lectura, `8` esperadas, `D.36` en cero; la cabeza de `d111` entra con `1` de `7` |
 | `T5` | el cierre: censo, `PASOS INVENTADOS`, huellas, `D.61`, `R5`, guardas, commit | abierta |
 
 ## 76.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
@@ -65500,3 +65500,177 @@ reescribio en `.v76ext/fidelidad.tsv` antes de correr la cuenta de arriba. **La 
 es `9` de `176`, y el `resumen_teorico` de cada ficha corregida la dice al lado de su cifra vieja.
 
 **`T2` CERRADA.**
+
+## 76.3. TAREA 3: EL BARRIDO DE LAS `22`, SOBRE LAS FICHAS YA CORREGIDAS
+
+Copia de `.v73ext/barrido_uno.py` que lee de `cuarentena/gerber_emyth/` y escribe en `.v76ext/` (`.v76ext/barrido_uno.py`) y copia de
+`.v73ext/barrer.sh` con la ruta cambiada (`.v76ext/barrer.sh`, con su `FORJA_PROCESOS_SIMILITUD=3`, `D76.2`): **cinco a la vez**,
+lanzado con `.v76ext/lista_barrido.txt` despues del commit de las correcciones (`b0dda02`, `76.2.2`, `D76.1`), en segundo plano, y
+**recogido entero dentro del turno**, esperandolo con bucles `until` sobre el log:
+
+<!-- TALLADO: parcial salida=.v76ext/barrido.log -->
+
+    $ grep -E "^(INICIO|TODOS)" .v76ext/barrido.log; grep -c "rc=0" .v76ext/barrido.log; grep "rc=" .v76ext/barrido.log | sed "s/.*segundos=//" | sort -n | sed -n "1p;\$p"
+    INICIO 2026-09-26 07:10:53
+    TODOS TERMINADOS 2026-09-26 07:53:49
+    22
+    269
+    1209
+
+**`22` de `22` con `rc=0`, de `07:10:53` a `07:53:49`**, de `269` a `1209` segundos por ficha (el log entero, una linea por ficha, en
+`.v76ext/barrido.log`). La poblacion es `479` en las `22`, `437` del grafo mas `42` de bandejas, la de la apertura (`76.0`):
+
+    $ head -1 .v76ext/barrido_*.txt | grep poblacion | awk '{print $3,$4,$5,$6,$7,$8,$9}' | sort | uniq -c
+         22 479 (437 grafo mas 42 bandejas) vecinos
+
+**Cero vivos al cerrar el barrido**: `tasklist /FI "IMAGENAME eq python.exe"` despues del `TODOS TERMINADOS` dice *INFO: No tasks
+are running which match the specified criteria.*
+
+**Una tabla por candidato de sus vecinos**, con su sede, las tres seniales y cual lo levanto, impresa del barrido por
+`.v76ext/tabla_vecinos.py` (copia de `.v73ext/tabla_vecinos.py` con las rutas y la lista cambiadas, solo lee) en
+`.v76ext/tablas_vecinos.md`. **Lo que levanta, en una linea:** `20` de las `22` levantan vecinos (`aplicar_ocho_reglas_juego_personas` y
+`fingir_prototipo_cinco_mil_replicas` salen con `0`), **`54` pares en el sentido del candidato**, `44` con vecino en bandeja y `10` en el
+grafo; **los `44` de bandeja son todos de entre las `22`**: ningun vecino de Marquet. Los del grafo son `responder_primer_aviso_renuncia_subordinado`
+(`4` veces), `entregar_evaluacion_desempeno_tres_claves` (`2`), `pedir_critica_anonima_curso_entrenamiento_dictado` y
+`planificar_tres_pasos_demanda_estado_brecha` de Grove, `recorrer_trece_elementos_proceso_evaluacion_formal` y
+`descubrir_motivacion_sentido_persona` de `scott_radical_candor`; la ultima, por la senial `3` sola. **Trece pares, en el sentido del candidato, pasan de `0,4` de
+similitud de texto**, todos entre fichas de Gerber, y se leyeron primero (`EXTRACTOR.md` 11): ninguno es gemelo.
+
+**`T3` CERRADA.**
+
+## 76.D ter. **LOS DISCUTIBLES DE VEREDICTOS, ARISTAS Y ORDEN, MARCADOS AL ESCRIBIR CADA LINEA** (`EXTRACTOR.md` 8)
+
+Se marcaron dentro de `.v76ext/veredictos_listos.txt` y `.v76ext/aristas_lectura.txt` en el acto de escribir cada linea, antes de
+correr `comprobar_veredictos.py` ni `orden.py`; aqui se juntan por numero.
+
+| | que | por que lo marco |
+|---|---|---|
+| `D76.13` | **`d111`, la parte `7`: ninguna ficha de `cap_19` es *Your Systems Strategy***, y los pares entre `distinguir_tres_tipos_sistemas_negocio` y los otros dos de `cap_19` van `SANO` sin arista | el libro no define la estrategia como procedimiento (`L357` solo la nombra), `distinguir_tres_tipos` es un metodo dentro del paso, la figura que la `ACTA G5` adjudico para `cap_14` y `cap_15`; y el sistema de venta y el Information Benchmark son EJEMPLOS de Soft e Information System (`L45`, `L137`, `L303`), no los tipos. Si el auditor lee `distinguir_tres_tipos` como la parte `7`, es una arista `D.37` mas y la cabeza entra con `2` de `7` |
+| `D76.14` | **`construir_estrategia_gente_cuatro_componentes` MADRE de `documentar_trabajo_manual_operaciones` por `D.37`** | la cuenta *cuatro* la pone el titulo de la ficha y no el libro, que enumera sin contar (`L119`); `D.37` habla del texto del NODO. Si el auditor lee que pide la cuenta del libro, es la misma arista por `D.29`, con la misma razon: el paso `5` nombra el Manual en una linea y el hijo lo despliega |
+| `D76.15` | **`aplicar_cinco_pasos_proceso_contratacion` y `aplicar_ocho_reglas_juego_personas` SIN arista desde `construir_estrategia_gente_cuatro_componentes`** | `L245` llama a la contratacion el primer medio para comunicar la idea, y el paso `1` de la madre dice que la People Strategy es comunicarla; pero ningun paso de la madre nombra la contratacion ni el juego. Si el auditor lee `D.29` ahi, son una o dos aristas por lectura mas |
+| `D76.16` | **`aplicar_seis_pasos_sistema_venta` MADRE de `medir_sistema_venta_trece_indicadores_benchmark`**, `CONTINUA` en los dos sentidos del par | el hijo cuenta los Benchmarks del sistema de venta operando (`L303`, `L339`); si el auditor los lee como dos sistemas hermanos (Soft e Information), son `2` lineas `SANO` y una arista menos |
+| `D76.17` | **`cambiar_saludo_cliente_dos_ramas` MADRE de `cuantificar_impacto_innovacion_6_pasos`**, `CONTINUA` en los dos sentidos | `L95` cuantifica exactamente el saludo cambiado, pero la ficha hija es generica (*una innovacion*, con el saludo de ejemplo); si el auditor lee el saludo como caso de la cuantificacion y no como su madre, son `2` lineas `SANO` y una arista menos |
+| `D76.18` | **`responder_8_preguntas_construir_primary_aim` y `responder_4_preguntas_estandares_objetivo_estrategico`, `SANO`** | `cap_15` `L21` pone el Objetivo Estrategico despues del Primary Aim, pero la condicion de la ficha de `cap_15` son los dos primeros estandares y ninguno de sus pasos usa las respuestas de la de `cap_14`; si el auditor lee continuacion, son `2` lineas `CONTINUA` y una arista mas |
+| `D76.19` | **`d108`: las preguntas de `cap_14` `L27` NO entran en `responder_8_preguntas_construir_primary_aim`** (`76.4.2`) | `L27` y `L117` son el mismo objeto; la ficha transcribe la lista que `L117` da como procedimiento, y `L27` es el marco del capitulo. Si el auditor lee `P.19` como mandato de fundir, la ficha gana las tres preguntas de `L27` que `L117` no repite y necesita una correccion declarada antes de entrar |
+
+## 76.4. TAREA 4: LOS VEREDICTOS, LAS ARISTAS Y EL ORDEN
+
+### 76.4.1. Los veredictos listos, uno por vecino, y su comprobacion por instrumento
+
+`.v76ext/veredictos_listos.txt`: **un bloque por candidato, en el formato de `--veredicto`**, leidos con los pasos de los dos delante
+(`python .v64aud/pasos.py <a> <b>`, las `22` en `.v76ext/pasos_22.txt` y los `6` vecinos del grafo en `.v76ext/pasos_grafo.txt`) y por
+la vara `6.1`, y solo esa. **`4` lineas `CONTINUA`**, que son **dos aristas** leidas desde sus dos lados (`D76.16`, `D76.17`); **`50`
+`SANO`**, dos de ellas el par cabeza a parte de `d111`, que por `D.53` no es `CONTINUA` y lleva su arista por lectura; cero `REPITE`. La
+comprobacion es una copia de `.v73ext/comprobar_veredictos.py` con las rutas y la lista cambiadas (su cabecera lo dice):
+
+<!-- TALLADO: parcial salida=.v76ext/comprobar_veredictos.txt -->
+
+    $ python .v76ext/comprobar_veredictos.py | sed -n '/^secciones/,$p'
+    secciones 22 de 22, lineas 54, ilegibles 0, vecinos sin linea 0, lineas sin vecino 0
+    
+    ARISTAS POR LECTURA (SOSTENGO) contra el barrido de hoy
+      recorrer_siete_pasos_programa_desarrollo_negocio             > construir_estrategia_gente_cuatro_componentes                levantada hoy: SI
+      fingir_prototipo_cinco_mil_replicas                          > dar_valor_constante_cuatro_publicos                          levantada hoy: NO
+      fingir_prototipo_cinco_mil_replicas                          > operar_modelo_gente_destreza_minima                          levantada hoy: NO
+      fingir_prototipo_cinco_mil_replicas                          > documentar_trabajo_manual_operaciones                        levantada hoy: NO
+      fingir_prototipo_cinco_mil_replicas                          > unificar_color_forma_vestuario_modelo                        levantada hoy: NO
+      construir_estrategia_gente_cuatro_componentes                > documentar_trabajo_manual_operaciones                        levantada hoy: NO
+
+**Cada vecino del barrido tiene su linea y cada linea su vecino**: `54` y `54`, cero ilegibles (las `22` filas por candidato, con
+`FALTAN 0 | SOBRAN 0` cada una, en `.v76ext/comprobar_veredictos.txt`). **El `SI` de la primera arista no es falta**: es un par `D.37`
+que la senial `3` levanta en los dos sentidos (`0,698` y `0,762`, `.v76ext/tablas_vecinos.md`), y por `D.53` su veredicto es `SANO` y su
+arista va por la otra puerta (la cabecera de `.v76ext/aristas_lectura.txt` lo dice).
+
+### 76.4.2. Las aristas por lectura (`D.29`, `D.37`, `D.53`), en `.v76ext/aristas_lectura.txt`, con las tres deudas delante
+
+**`6` `SOSTENGO` y `14` `NO SOSTENGO`**, cada una con su paso, su linea del libro y su razon; **`3` `NO SOSTENGO` con madre que ya vive
+en el grafo** (`crear_manuales_jugadas_repetibles` y `definir_vision_larga_trabajar_atras` de `zhuo_manager`, e
+`instalar_metodo_contratacion_empresa` de `smart_who`), ninguna levantada por la senial. Las deudas, con su texto del registro:
+
+    $ grep -E '"id": "(d098|d108|d111)"' docs/loop/DEUDA.jsonl | python -c "import sys,json; [print(d['id'], '|', d['que']) for d in map(json.loads, sys.stdin)]"
+    d098 | EL PUNTERO D.37 DE gerber_emyth, ESCRITO PARA QUE NO SE PIERDA: fuentes/gerber_emyth/cap_05.md L29 dice let us take a look at the three phases of a business growth: Infancy, Adolescence, and Maturity. Dice CUANTAS partes hay y las NOMBRA, que es exactamente el supuesto de D.37. Hoy D.37 no aplica y lo adjudique asi: su letra pide EL TEXTO DE UN NODO que enumere y pide que ESAS PARTES EXISTAN COMO NODOS, y no existe ninguna de las dos cosas (cap_05 y cap_06 dan cero candidatos, y la enumeracion vive en una pieza clasificada POSTURA, que no es un nodo). SI alguna vuelta futura hace nacer una cabeza de las tres fases o un nodo de Maturity desde cap_08, la arista cabeza a parte se declara en el acto de insertar la parte citando cap_05 L29, y no antes
+    d108 | RELEER cap_14 L27 CONTRA L117 CON LAS DOS DELANTE, EN LA VUELTA QUE INSERTE EL LOTE. L27 trae you must ask yourself THESE questions mas cuatro preguntas, que bajo el criterio del puntero deictico (ACTA G4 3.3) es un conjunto cerrado igual que the following questions de L117. La frontera de la vuelta 4 deja L27 dentro de R2 como POSTURA citando P.19, y el auditor FIRMA LA DECISION pero NO la razon: L27 no es nodo porque su objeto ya esta en casa en L117 (el mismo cuestionario del mismo Primary Aim desplegado a ocho) y separarlo fabricaria el gemelo de su propio donante, no porque sea postura. Sin caida: la fila describe las cuatro preguntas con su contenido y la decision esta declarada con su regla.
+    d111 | LA SERIE D.37 DE cap_13 VA POR 0 DE 7 CON CUATRO PASOS YA LEIDOS. recorrer_siete_pasos_programa_desarrollo_negocio es cabeza de SERIE NUMERADA con 7 partes. Los pasos 1 (cap_14), 2 (cap_15), 3 (cap_16) y 4 (cap_17) ya estan minados: los dos primeros dieron METODO DENTRO del paso y no cabeza, y los dos ultimos dieron CERO candidatos. El paso 6 (Marketing) esta apartado en fuentes/gerber_emyth_cap17_reservado y no se toca. QUEDAN SOLO LOS PASOS 5 (cap_18) Y 7 (cap_19) para que esa cabeza gane una sola parte. LA VUELTA QUE INSERTE TIENE QUE DECIDIR QUE SE HACE CON UNA CABEZA DE SERIE QUE ENTRA CON 0 DE 7, y decidirlo con la medida delante y no al vuelo.
+
+**`d111`, LEIDA CON LA MEDIDA DELANTE:** de `cap_18`, **`construir_estrategia_gente_cuatro_componentes` ES la parte `5`**: el paso `8`
+de la cabeza dice *Paso 5: Your People Strategy* (`cap_13` `L53`), y el hijo es esa estrategia (`cap_18` `L117`, `L119`); la `ACTA G7`
+seccion `6` ya la escribio declarable. **Arista cabeza a parte, `SOSTENGO`.** De `cap_19`, **ninguna de las tres es la parte `7`**
+(`D76.13`). Las partes `1` y `2` siguen adjudicadas sin arista por la `ACTA G5` `6.2` (no se reabre, `D.47`), la `3` y la `4` no
+tienen candidato y la `6` esta apartada. **LA CABEZA ENTRA CON `1` DE `7`, Y ESO LO CUBRE `D.37` POR SU LETRA**: la arista se declara
+para la parte que existe como nodo, y la serie incompleta tiene precedente (`fingir_prototipo_cinco_mil_replicas` con `4` de `6`,
+`recorrer_trece_elementos_proceso_evaluacion_formal` entro con `0` de `13`). **No pide nada que `D.37` no cubra: no paro.** La linea:
+
+    $ sed -n '43p;53p' fuentes/gerber_emyth/cap_13.md; sed -n '117p' fuentes/gerber_emyth/cap_18.md
+    The Program is composed of seven distinct steps:
+    5. Your People Strategy
+    Your People Strategy is the way you communicate this idea.
+
+**`d108`, LEIDA CON LAS DOS DELANTE:**
+
+    $ sed -n '27p;29p;117p;135p' fuentes/gerber_emyth/cap_14.md
+    But before you can determine what that role will be, you must ask yourself these questions: What do I value most? What kind of life do I want? What do I want my life to look like, to feel like? Who do I wish to be?
+    Your Primary Aim is the answer to all these questions.
+    So before you start your business, or before you return to it tomorrow, ask yourself the following questions:
+    These are just a few of the questions you might ask yourself in the creation of your Primary Aim.
+
+**LECTURA:** son **el mismo objeto**: `L29` dice que el Primary Aim es la respuesta a las preguntas de `L27`, y `L135` dice que las de
+`L117` son algunas de las que te haces para crearlo. Una pregunta de `L27` casi se repite en `L119` (*What do I want my life to look
+like* contra *What do I wish my life to look like*). **La ficha vive en `L117`**, la lista que el libro da como procedimiento (*before you
+start your business, or before you return to it tomorrow*), y `L27` es el marco del capitulo antes de la escena del funeral. **Lo que
+preparo para la vuelta que inserte**: pagar `d108` con esta lectura, **sin tocar la ficha** y sin segundo nodo, que es lo que la
+`ACTA G4` firmo por su razon (separarlo fabricaria el gemelo de su donante). Lo marco `D76.19` por si el auditor lee que `P.19` manda
+fundir las tres preguntas de `L27` que `L117` no repite.
+
+**`d098`**: ninguna de las `22` es la cabeza de las tres fases (ninguna sale de `cap_05`) ni la fase *Maturity*: las dos de `cap_08`
+despliegan la Entrepreneurial Perspective y el Entrepreneurial Model, metodos dentro del capitulo. **Sin cabeza no hay arista cabeza a
+parte**, y el puntero sigue vivo.
+
+**`D.37` en los titulos que dicen cuantas partes tienen** (el comentario final del fichero): **`fingir_prototipo_cinco_mil_replicas`
+es cabeza de `4` partes que son nodo** (reglas `1`, `2`, `4` y `6`; la `3` y la `5` no tienen nodo, y su `resumen_teorico` ya dice
+por que), **cuatro aristas `SOSTENGO`**, ninguna levantada por la senial; y **`construir_estrategia_gente_cuatro_componentes` lo es de
+una**, el Manual de Operaciones (`D76.14`). En los otros diez titulos las partes son los propios pasos del candidato y ninguna es un
+nodo (`D68.7`). Las lineas de las `6` `SOSTENGO`:
+
+    $ sed -n '45p;47p;51p;55p' fuentes/gerber_emyth/cap_11.md; sed -n '119p' fuentes/gerber_emyth/cap_18.md
+    1. The model will provide consistent value to your customers, employees, suppliers, and lenders, beyond what they expect.
+    2. The model will be operated by people with the lowest possible level of skill.
+    4. All work in the model will be documented in Operations Manuals.
+    6. The model will utilize a uniform color, dress, and facilities code.
+    It starts with your Primary Aim and your Strategic Objective, and continues through your Organizational Strategy (your Organization Chart and the Position Contracts for all of the positions in it) and the Operations Manuals that define the work your people do.
+
+### 76.4.3. El orden de insercion de las `22`, con una copia de `.v73ext/orden.py`
+
+`.v76ext/orden.py`: rutas a `.v76ext/`, la lista a `.v76ext/lista_barrido.txt`, el tope a `22`, el patron de la `PIEZA` a una letra y
+un numero (las de Gerber son `P1`, `R3`, `C1`, `D2`) y `ORDEN`, que es lo unico escrito a mano (su cabecera lo dice). **`ORDEN` es el
+del libro, con tres movimientos que las reglas del orden obligan y se dicen**: `documentar_trabajo_manual_operaciones` baja de `cap_11`
+a detras de `construir_estrategia_gente_cuatro_componentes`, su madre por `D76.14`; `interrogar_negocio_cinco_preguntas` sube delante
+de `operar_modelo_gente_destreza_minima`, que lo levanta en un solo sentido (`D.36`); y `cap_19` entra antes que `cap_18`, porque
+`construir_estrategia_gente` levanta en un solo sentido a `medir_sistema_venta_trece_indicadores_benchmark`. La primera corrida, con el
+orden del libro, dio esas dos de `D.36` y se corrigio antes de publicar:
+
+<!-- TALLADO: parcial salida=.v76ext/orden.txt -->
+
+    $ python .v76ext/orden.py | tail -16
+    COMPROBACIONES
+      hijo delante de su madre: 0 []
+      D.36, par que levanta en un solo sentido con el que lo levanta entrando antes: 0 []
+      hijo dentro del tope con su madre fuera: 0 []
+      tanda propuesta: 22 de 22; fuera del tope: 
+    
+    ARISTAS ESPERADAS EN LA VUELTA QUE INSERTE ESTAS 22
+      CONTINUA   aplicar_seis_pasos_sistema_venta                         > medir_sistema_venta_trece_indicadores_benchmark
+      CONTINUA   cambiar_saludo_cliente_dos_ramas                         > cuantificar_impacto_innovacion_6_pasos
+      LECTURA    recorrer_siete_pasos_programa_desarrollo_negocio         > construir_estrategia_gente_cuatro_componentes
+      LECTURA    fingir_prototipo_cinco_mil_replicas                      > dar_valor_constante_cuatro_publicos
+      LECTURA    fingir_prototipo_cinco_mil_replicas                      > operar_modelo_gente_destreza_minima
+      LECTURA    fingir_prototipo_cinco_mil_replicas                      > documentar_trabajo_manual_operaciones
+      LECTURA    fingir_prototipo_cinco_mil_replicas                      > unificar_color_forma_vestuario_modelo
+      LECTURA    construir_estrategia_gente_cuatro_componentes            > documentar_trabajo_manual_operaciones
+      CONTINUA con madre= (aristas distintas): 2 | SOSTENGO por lectura: 6 | solapes entre las dos: 0 | aristas esperadas: 8
+
+(La tabla de las `22` filas, entera, en `.v76ext/orden.txt`: `aplicar_ocho_reglas_juego_personas` y `fingir_prototipo_cinco_mil_replicas`
+salen `ENTRARIA`, las otras `20` `BLOQUEARIA`, y las `22` con sus lineas listas.) **Las tres comprobaciones en cero, y las `22` caben en el
+tope.** **Aristas esperadas en la vuelta de insercion: `8`**, `2` por `CONTINUA` con `madre=`, que cablea la aduana, y `6` por lectura
+con `forja.py arista`, cada una citando su paso.
+
+**`T4` CERRADA: las tres partes hechas, ninguna fila vacia, ninguna insertada.**

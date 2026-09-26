@@ -1,0 +1,1 @@
+dar_valor_constante_cuatro_publicos poblacion 479 (437 grafo mas 42 bandejas) vecinos 3

@@ -1,0 +1,1 @@
+construir_empresa_plantilla_vision_diaria poblacion 479 (437 grafo mas 42 bandejas) vecinos 1

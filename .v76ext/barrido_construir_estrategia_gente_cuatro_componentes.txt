@@ -1,0 +1,1 @@
+construir_estrategia_gente_cuatro_componentes poblacion 479 (437 grafo mas 42 bandejas) vecinos 4

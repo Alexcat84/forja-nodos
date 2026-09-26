@@ -1,0 +1,1 @@
+probar_traje_azul_seis_semanas poblacion 479 (437 grafo mas 42 bandejas) vecinos 3

@@ -1,0 +1,106 @@
+# VEREDICTOS LISTOS DE LA VUELTA 76 para las 22 fichas de Gerber, uno por vecino, en el formato de --veredicto
+# (src/aduana.py, parsear_veredicto). Leidos con los pasos de los dos delante (python .v64aud/pasos.py <a> <b>; las 22 en
+# .v76ext/pasos_22.txt, los vecinos del grafo en .v76ext/pasos_grafo.txt) y por la vara 6.1 de AUDITOR_FORJA.md, y solo esa.
+# Una seccion por candidato, en el orden de .v76ext/lista_barrido.txt; cada linea es un vecino que la senial levanta HOY en el sentido
+# candidato a vecino, en el barrido de .v76ext/vecinos_<id>.json (poblacion 479, 437 grafo mas 42 bandejas), sobre las fichas de la
+# bandeja ya corregidas por la TAREA 2 (.v76ext/corregir_t2.py, commit b0dda029). Lo comprueba .v76ext/comprobar_veredictos.py.
+# Por D.53, un par de cabeza a parte (D.37) que la senial levanta va SANO aqui, con su arista en .v76ext/aristas_lectura.txt.
+# Lo DISCUTIBLE se marco al escribir la linea.
+
+## aplicar_cinco_pasos_proceso_contratacion
+construir_estrategia_gente_cuatro_componentes|SANO|Hermanos del mismo capitulo sin jerarquia escrita: el vecino arma la People Strategy con sus componentes (L117, L119) y este es el proceso de contratacion que L245 llama el primer medio para comunicar la idea; ningun paso del vecino nombra la contratacion, y este no usa el Primary Aim ni el organigrama como producto: solo entrega y repasa el Manual de Operaciones en el primer dia (pasos 10 y 11). Sin arista (DISCUTIBLE D76.15).
+fingir_prototipo_cinco_mil_replicas|SANO|Ajenos: el vecino, de cap_11, finge el prototipo de 5.000 replicas con sus seis reglas (L35 a L57); este contrata en cinco componentes (L247 a L271). La similitud es del vocabulario de Gerber, idea, sistema, Manual de Operaciones; ningun paso de uno usa el producto del otro.
+
+## aplicar_ocho_reglas_juego_personas
+
+## aplicar_seis_pasos_sistema_venta
+medir_sistema_venta_trece_indicadores_benchmark|CONTINUA|madre=aplicar_seis_pasos_sistema_venta|El vecino parte del producto de este candidato, y lo dice el libro: con el sistema de venta operando, L303 dice que sabras cuan predecible es por un Information System, y L339 que ese sistema sigue la actividad del Selling System de Benchmark a Benchmark; las trece cifras del vecino cuentan los Benchmarks que el paso 1 de este identifica. Procedimiento en los dos lados: aqui se identifica, se escribe el guion, se memoriza y se entrega; alli se cuenta y se registra en un formulario (L311 a L337) (DISCUTIBLE D76.16).
+distinguir_tres_tipos_sistemas_negocio|SANO|Hermanos del mismo capitulo: el vecino distingue los tres tipos de sistemas (L35 a L41), y este es un sistema de venta, que L137 da como ejemplo de Soft System. Un ejemplo no es la parte de la enumeracion (L45, What follows are examples of each): sin arista, y ninguno usa el producto del otro (DISCUTIBLE D76.13).
+
+## cambiar_saludo_cliente_dos_ramas
+cuantificar_impacto_innovacion_6_pasos|CONTINUA|madre=cambiar_saludo_cliente_dos_ramas|El vecino parte del producto de este candidato, y lo dice el libro: L95 cuantifica exactamente esta Innovacion (by changing the words you use to greet an incoming customer), y sus pasos 2 y 3 cuentan antes y despues de cambiar las palabras. Procedimiento en los dos lados: aqui el saludo y sus dos ramas (L51 a L57); alli los seis conteos (L95). La similitud de 0,442, por encima de 0,4, se lee primero y no es gemelo: comparten el ejemplo del saludo, no los pasos (DISCUTIBLE D76.17).
+probar_traje_azul_seis_semanas|SANO|Hermanos: son dos Innovaciones distintas que cap_12 pone una tras otra, el saludo (L51) y el traje azul (L63). La similitud de 0,426, por encima de 0,4, se lee primero y no es gemelo: uno cambia las palabras y el otro el vestuario, y ninguno usa el producto del otro.
+dictar_ritmo_crecimiento_preguntas_escritas|SANO|Ajenos: el vecino, de cap_07, dicta el ritmo de crecimiento con tres conocimientos, preguntas y un plan escrito (L279 a L287); este cambia el saludo del vendedor (L51 a L57). La similitud de 0,421, por encima de 0,4, se lee primero y es de la forma de pregunta y respuesta del mismo autor, sin paso comun.
+operar_modelo_gente_destreza_minima|SANO|Ajenos: el vecino, de cap_11, opera el modelo con la destreza minima y un sistema (L87 a L113); este cambia el saludo (L51 a L57). Comparten la prosa de Gerber, no el procedimiento.
+responder_primer_aviso_renuncia_subordinado|SANO|Ajenos: el vecino del grafo, de grove_high_output, escucha el primer aviso de renuncia de un subordinado; este saluda a un cliente que entra (L51). La similitud es de la forma si responde, dile, sin paso comun.
+entregar_evaluacion_desempeno_tres_claves|SANO|Ajenos: el vecino del grafo, de grove_high_output, entrega cara a cara una evaluacion de desempeno; este saluda a un cliente con un guion de dos ramas (L51 a L57). Comparten la prosa de la conversacion, no el procedimiento.
+
+## construir_empresa_plantilla_vision_diaria
+recorrer_trece_elementos_proceso_evaluacion_formal|SANO|Ajenos: el vecino del grafo, de scott_radical_candor, recorre las trece decisiones de un proceso formal de evaluacion; este modela la empresa cada dia contra la plantilla de su vision (L39 a L51). La similitud es de la forma de enumeracion, sin paso comun.
+
+## construir_estrategia_gente_cuatro_componentes
+recorrer_siete_pasos_programa_desarrollo_negocio|SANO|Cabeza y parte de una serie D.37, que por D.53 no es CONTINUA: el paso 8 del vecino, Paso 5: Your People Strategy (cap_13 L53), nombra en una linea lo que este candidato despliega en cinco pasos (cap_18 L117, L119). Son procedimientos distintos, recorrer el programa entero y armar una de sus partes; la relacion va como arista en .v76ext/aristas_lectura.txt (d111).
+aplicar_cinco_pasos_proceso_contratacion|SANO|El mismo par que aplicar_cinco_pasos lee desde su lado: este arma la People Strategy con sus componentes (L117, L119) y el vecino es el proceso de contratacion que L245 llama el primer medio para comunicar la idea; ningun paso de este nombra la contratacion. Sin arista (DISCUTIBLE D76.15).
+medir_sistema_venta_trece_indicadores_benchmark|SANO|Ajenos: el vecino, de cap_19, registra trece cifras del proceso de venta (L311 a L337); este arma la People Strategy (L117, L119). La similitud es del vocabulario de Gerber, sin paso comun.
+distinguir_tres_tipos_sistemas_negocio|SANO|Ajenos: el vecino, de cap_19, distingue los tres tipos de sistemas (L35 a L43); este arma la People Strategy (L117, L119). Comparten capitulo vecino y vocabulario del Business Development Program, no procedimiento.
+
+## cuantificar_impacto_innovacion_6_pasos
+dictar_ritmo_crecimiento_preguntas_escritas|SANO|Ajenos: el vecino, de cap_07, dicta el ritmo de crecimiento con preguntas y un plan escrito (L279 a L287); este cuenta antes y despues de una Innovacion (L95). La similitud de 0,412, por encima de 0,4, se lee primero y es de las preguntas de cuanto y cuantos del mismo autor, sin paso comun.
+responder_primer_aviso_renuncia_subordinado|SANO|Ajenos: el vecino del grafo, de grove_high_output, escucha el primer aviso de renuncia; este cuantifica una Innovacion (L95). La similitud es de prosa, sin paso comun.
+cambiar_saludo_cliente_dos_ramas|CONTINUA|madre=cambiar_saludo_cliente_dos_ramas|El mismo par que cambiar_saludo lee desde su lado: este parte del producto del vecino, el saludo cambiado, y L95 cuantifica esa Innovacion (by changing the words you use to greet an incoming customer); sus pasos 2 y 3 cuentan antes y despues de cambiar las palabras. Procedimiento en los dos lados: alli el guion de dos ramas, aqui los seis conteos. La similitud de 0,435 se lee primero y no es gemelo (DISCUTIBLE D76.17).
+pedir_critica_anonima_curso_entrenamiento_dictado|SANO|Ajenos: el vecino del grafo, de grove_high_output, pide critica anonima de un curso dictado; este cuenta ventas antes y despues de una Innovacion (L95). Los dos miden si algo funciono, con objetos y medios distintos, y ninguno usa el producto del otro.
+entregar_evaluacion_desempeno_tres_claves|SANO|Ajenos: el vecino del grafo entrega una evaluacion de desempeno; este cuantifica una Innovacion (L95). La similitud es de prosa, sin paso comun.
+
+## dar_valor_constante_cuatro_publicos
+trazar_modelo_negocio_cliente_primero|SANO|Ajenos de dos capitulos: el vecino, de cap_08, traza el modelo desde el retrato del cliente (L109 a L121); este da valor a los cuatro publicos del prototipo (L59 a L81). Los dos hablan de lo que el cliente percibe, pero ninguno usa el producto del otro ni nombra al otro en una linea.
+documentar_trabajo_manual_operaciones|SANO|Hermanos: son las reglas 1 y 4 de la serie de fingir_prototipo_cinco_mil_replicas (L45, L51), partes de la misma cabeza. La similitud de 0,406, por encima de 0,4, se lee primero y no es gemelo: uno da valor y el otro documenta el trabajo; ninguno usa el producto del otro.
+unificar_color_forma_vestuario_modelo|SANO|Hermanos: son las reglas 1 y 6 de la misma serie (L45, L55). La similitud de 0,419, por encima de 0,4, se lee primero y no es gemelo: uno da valor a cuatro publicos, el otro unifica color y forma; ninguno usa el producto del otro.
+
+## dictar_ritmo_crecimiento_preguntas_escritas
+descubrir_motivacion_sentido_persona|SANO|Ajenos: la senial 3 casa el paso 1 de este (entender los procesos clave, L279) con el Escucha del paso 10 del vecino del grafo, de scott_radical_candor, que descubre que da sentido al trabajo de cada persona. Sin paso comun.
+cuantificar_impacto_innovacion_6_pasos|SANO|El mismo par que cuantificar lee desde su lado: ajenos, uno dicta el ritmo de crecimiento (L279 a L287) y el otro cuenta antes y despues de una Innovacion (cap_12 L95). La similitud de 0,420, por encima de 0,4, se lee primero y no es gemelo.
+hacer_trabajo_futuro_imaginar_negocio|SANO|Ajenos de dos capitulos: el vecino, de cap_04, hace el trabajo del emprendedor de imaginar el negocio (L285 a L291); este dicta el ritmo de crecimiento con preguntas y un plan escrito (L279 a L287). Los dos miran al futuro; ninguno usa el producto del otro.
+planificar_tres_pasos_demanda_estado_brecha|SANO|Ajenos: el vecino del grafo, de grove_high_output, planifica en tres pasos, demanda, estado presente y brecha; este dicta el ritmo con tres conocimientos, preguntas y un plan escrito (L279 a L287). Dos doctrinas de planificar de dos libros, sin jerarquia ni paso comun (6.1).
+operar_modelo_gente_destreza_minima|SANO|Ajenos: el vecino, de cap_11, opera el modelo con la destreza minima; este dicta el ritmo de crecimiento. Comparten la prosa de Gerber.
+responder_primer_aviso_renuncia_subordinado|SANO|Ajenos: el vecino del grafo escucha el primer aviso de renuncia; este dicta el ritmo de crecimiento. La similitud es de prosa, sin paso comun.
+cambiar_saludo_cliente_dos_ramas|SANO|El mismo par que cambiar_saludo lee desde su lado: ajenos, la similitud de 0,423, por encima de 0,4, se lee primero y es de la forma de pregunta del mismo autor.
+interrogar_negocio_cinco_preguntas|SANO|Ajenos de dos capitulos: los dos son listas de preguntas que el dueno se hace, pero el vecino, de cap_11, pregunta como trabajar sobre el negocio y no dentro (L255 a L263), y este donde, cuando, cuanto capital y cuanta gente para crecer (L281). Ninguno usa el producto del otro.
+
+## distinguir_tres_tipos_sistemas_negocio
+medir_sistema_venta_trece_indicadores_benchmark|SANO|Hermanos del mismo capitulo: este distingue los tres tipos de sistemas (L35 a L41), y el vecino es el Information Benchmark, que L303 y L307 dan como ejemplo de Information System. La similitud de 0,451, por encima de 0,4, se lee primero y no es gemelo: uno clasifica y el otro registra trece cifras. Un ejemplo no es la parte de la enumeracion (L45): sin arista (DISCUTIBLE D76.13).
+construir_estrategia_gente_cuatro_componentes|SANO|El mismo par que construir_estrategia lee desde su lado: ajenos, la People Strategy (cap_18 L117, L119) y los tipos de sistemas (L35 a L43) comparten el vocabulario del Business Development Program, no procedimiento.
+aplicar_seis_pasos_sistema_venta|SANO|El mismo par que aplicar_seis lee desde su lado: el sistema de venta es un ejemplo de Soft System (L137), no el Soft System; sin arista, y ninguno usa el producto del otro (DISCUTIBLE D76.13).
+
+## documentar_trabajo_manual_operaciones
+dar_valor_constante_cuatro_publicos|SANO|El mismo par que dar_valor lee desde su lado: hermanos, las reglas 4 y 1 de la serie de fingir_prototipo_cinco_mil_replicas (L51, L45). La similitud de 0,430, por encima de 0,4, se lee primero y no es gemelo: uno documenta el trabajo y el otro da valor.
+unificar_color_forma_vestuario_modelo|SANO|Hermanos: las reglas 4 y 6 de la misma serie (L51, L55); uno documenta el trabajo en el Manual de Operaciones, el otro unifica color y forma. Ninguno usa el producto del otro.
+
+## fingir_prototipo_cinco_mil_replicas
+
+## hacer_trabajo_futuro_imaginar_negocio
+dictar_ritmo_crecimiento_preguntas_escritas|SANO|El mismo par que dictar_ritmo lee desde su lado: ajenos de dos capitulos, uno imagina el negocio con la pregunta que suena (L285 a L291) y el otro dicta el ritmo de crecimiento (cap_07 L279 a L287). La similitud de 0,400 se lee primero y no es gemelo.
+
+## interrogar_negocio_cinco_preguntas
+dictar_ritmo_crecimiento_preguntas_escritas|SANO|El mismo par que dictar_ritmo lee desde su lado: ajenos de dos capitulos, dos listas de preguntas del dueno, una para trabajar sobre el negocio y no dentro (L255 a L263) y otra para crecer (cap_07 L281). Ninguno usa el producto del otro.
+
+## medir_sistema_venta_trece_indicadores_benchmark
+aplicar_seis_pasos_sistema_venta|CONTINUA|madre=aplicar_seis_pasos_sistema_venta|El mismo par que aplicar_seis lee desde su lado: este parte del producto del vecino, el sistema de venta operando, y lo dice el libro: L303 dice que sabras cuan predecible es por un Information System, y L339 que este sigue la actividad del Selling System de Benchmark a Benchmark. Procedimiento en los dos lados: alli identificar, escribir el guion, memorizar y entregar; aqui contar trece cifras y registrarlas (DISCUTIBLE D76.16).
+distinguir_tres_tipos_sistemas_negocio|SANO|El mismo par que distinguir lee desde su lado: este es el ejemplo de Information System del libro (L303, L307), no el Information System que el vecino nombra. La similitud de 0,446, por encima de 0,4, se lee primero y no es gemelo: uno registra y el otro clasifica. Sin arista (DISCUTIBLE D76.13).
+
+## operar_modelo_gente_destreza_minima
+interrogar_negocio_cinco_preguntas|SANO|Ajenos dentro del mismo capitulo: el vecino cierra cap_11 con cinco preguntas sobre el negocio (L255 a L263); este es la regla 2 del prototipo (L85 a L133). La pregunta del vecino sobre que la gente trabaje sin tu interferencia no nombra la destreza minima ni el sistema de herramientas, y ninguno usa el producto del otro.
+responder_primer_aviso_renuncia_subordinado|SANO|Ajenos: el vecino del grafo escucha el primer aviso de renuncia; este opera el modelo con gente de destreza minima. La similitud es de prosa, sin paso comun.
+dictar_ritmo_crecimiento_preguntas_escritas|SANO|Ajenos de dos capitulos: el vecino dicta el ritmo de crecimiento (cap_07 L279 a L287); este opera el modelo con la destreza minima (L87 a L113). Comparten la prosa de Gerber.
+cambiar_saludo_cliente_dos_ramas|SANO|Ajenos de dos capitulos: el vecino cambia el saludo del vendedor (cap_12 L51); este opera el modelo con la destreza minima. Comparten la prosa de Gerber.
+
+## probar_traje_azul_seis_semanas
+responder_4_preguntas_estandares_objetivo_estrategico|SANO|Ajenos de dos capitulos: el vecino, de cap_15, responde las preguntas de los estandares del Objetivo Estrategico, entre ellas la del vestuario (L177); este prueba dos vestuarios seis semanas (L63). Nombrar el vestuario como estandar no es procedimentar la prueba, y ninguno usa el producto del otro.
+cambiar_saludo_cliente_dos_ramas|SANO|El mismo par que cambiar_saludo lee desde su lado: hermanos, dos Innovaciones distintas de cap_12 (L51, L63); ninguna usa el producto de la otra.
+dar_valor_constante_cuatro_publicos|SANO|Ajenos: el vecino, de cap_11, da valor a cuatro publicos; este prueba dos vestuarios (L63). La similitud es de la prosa de Gerber, sin paso comun.
+
+## recorrer_siete_pasos_programa_desarrollo_negocio
+construir_estrategia_gente_cuatro_componentes|SANO|Cabeza y parte de una serie D.37, que por D.53 no es CONTINUA: el paso 8 de este, Paso 5: Your People Strategy (L53), nombra en una linea lo que el vecino despliega en cinco pasos (cap_18 L117, L119); la senial 3 lo levanta en los dos sentidos. Son procedimientos distintos, recorrer el programa entero y armar una de sus partes; la relacion va como arista en .v76ext/aristas_lectura.txt (d111).
+
+## responder_4_preguntas_estandares_objetivo_estrategico
+responder_8_preguntas_construir_primary_aim|SANO|Hermanos de dos capitulos seguidos, los pasos 1 y 2 del Business Development Program: el vecino construye el Primary Aim con ocho preguntas (cap_14 L117 a L133) y este completa los estandares tercero en adelante del Objetivo Estrategico (L169 a L177). L21 pone el Objetivo Estrategico despues del Primary Aim, pero la condicion de este es tener ya los dos primeros estandares, dinero y Oportunidad (L45, L87), y ninguno de sus cinco pasos usa las respuestas del vecino (DISCUTIBLE D76.18).
+probar_traje_azul_seis_semanas|SANO|El mismo par que probar_traje lee desde su lado: nombrar el vestuario como estandar (L177) no es procedimentar la prueba del traje (cap_12 L63).
+
+## responder_8_preguntas_construir_primary_aim
+responder_4_preguntas_estandares_objetivo_estrategico|SANO|El mismo par que responder_4 lee desde su lado: hermanos, los pasos 1 y 2 del Business Development Program; este construye el Primary Aim (L117 a L133) y el vecino completa los estandares tercero en adelante del Objetivo Estrategico (cap_15 L169 a L177), sin usar estas respuestas (DISCUTIBLE D76.18).
+
+## trazar_modelo_negocio_cliente_primero
+dar_valor_constante_cuatro_publicos|SANO|El mismo par que dar_valor lee desde su lado: ajenos de dos capitulos, este traza el modelo desde el retrato del cliente (L109 a L121) y el vecino da valor a cuatro publicos (cap_11 L59 a L81); los dos hablan de lo que el cliente percibe, sin paso comun ni linea que nombre al otro.
+
+## unificar_color_forma_vestuario_modelo
+dar_valor_constante_cuatro_publicos|SANO|El mismo par que dar_valor lee desde su lado: hermanos, las reglas 6 y 1 de la serie de fingir_prototipo_cinco_mil_replicas (L55, L45). La similitud de 0,425, por encima de 0,4, se lee primero y no es gemelo.
+documentar_trabajo_manual_operaciones|SANO|El mismo par que documentar lee desde su lado: hermanos, las reglas 6 y 4 de la misma serie (L55, L51), sin paso comun.

@@ -1,0 +1,46 @@
+{
+ "id": "distinguir_tres_tipos_sistemas_negocio",
+ "grafo": 437,
+ "bandejas": 42,
+ "vecinos": [
+  {
+   "id": "medir_sistema_venta_trece_indicadores_benchmark",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.451,
+    "familia_id": 0.1,
+    "paso_contra_nodo": 0.394
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 14 de medir_sistema_venta_trece_indicadores_benchmark"
+  },
+  {
+   "id": "construir_estrategia_gente_cuatro_componentes",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.399,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.442
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 2 del candidato contra paso 1 de construir_estrategia_gente_cuatro_componentes"
+  },
+  {
+   "id": "aplicar_seis_pasos_sistema_venta",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.358,
+    "familia_id": 0.111,
+    "paso_contra_nodo": 0.413
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 2 de aplicar_seis_pasos_sistema_venta"
+  }
+ ]
+}

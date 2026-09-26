@@ -1,0 +1,85 @@
+  OK  aplicar_cinco_pasos_proceso_contratacion                     construir_estrategia_gente_cuatro_componentes                SANO      
+  OK  aplicar_cinco_pasos_proceso_contratacion                     fingir_prototipo_cinco_mil_replicas                          SANO      
+aplicar_cinco_pasos_proceso_contratacion                     lineas 2 | levantados hoy 2 | FALTAN 0 | SOBRAN 0
+aplicar_ocho_reglas_juego_personas                           lineas 0 | levantados hoy 0 | FALTAN 0 | SOBRAN 0
+  OK  aplicar_seis_pasos_sistema_venta                             medir_sistema_venta_trece_indicadores_benchmark              CONTINUA  madre=aplicar_seis_pasos_sistema_venta
+  OK  aplicar_seis_pasos_sistema_venta                             distinguir_tres_tipos_sistemas_negocio                       SANO      
+aplicar_seis_pasos_sistema_venta                             lineas 2 | levantados hoy 2 | FALTAN 0 | SOBRAN 0
+  OK  cambiar_saludo_cliente_dos_ramas                             cuantificar_impacto_innovacion_6_pasos                       CONTINUA  madre=cambiar_saludo_cliente_dos_ramas
+  OK  cambiar_saludo_cliente_dos_ramas                             probar_traje_azul_seis_semanas                               SANO      
+  OK  cambiar_saludo_cliente_dos_ramas                             dictar_ritmo_crecimiento_preguntas_escritas                  SANO      
+  OK  cambiar_saludo_cliente_dos_ramas                             operar_modelo_gente_destreza_minima                          SANO      
+  OK  cambiar_saludo_cliente_dos_ramas                             responder_primer_aviso_renuncia_subordinado                  SANO      
+  OK  cambiar_saludo_cliente_dos_ramas                             entregar_evaluacion_desempeno_tres_claves                    SANO      
+cambiar_saludo_cliente_dos_ramas                             lineas 6 | levantados hoy 6 | FALTAN 0 | SOBRAN 0
+  OK  construir_empresa_plantilla_vision_diaria                    recorrer_trece_elementos_proceso_evaluacion_formal           SANO      
+construir_empresa_plantilla_vision_diaria                    lineas 1 | levantados hoy 1 | FALTAN 0 | SOBRAN 0
+  OK  construir_estrategia_gente_cuatro_componentes                recorrer_siete_pasos_programa_desarrollo_negocio             SANO      
+  OK  construir_estrategia_gente_cuatro_componentes                aplicar_cinco_pasos_proceso_contratacion                     SANO      
+  OK  construir_estrategia_gente_cuatro_componentes                medir_sistema_venta_trece_indicadores_benchmark              SANO      
+  OK  construir_estrategia_gente_cuatro_componentes                distinguir_tres_tipos_sistemas_negocio                       SANO      
+construir_estrategia_gente_cuatro_componentes                lineas 4 | levantados hoy 4 | FALTAN 0 | SOBRAN 0
+  OK  cuantificar_impacto_innovacion_6_pasos                       dictar_ritmo_crecimiento_preguntas_escritas                  SANO      
+  OK  cuantificar_impacto_innovacion_6_pasos                       responder_primer_aviso_renuncia_subordinado                  SANO      
+  OK  cuantificar_impacto_innovacion_6_pasos                       cambiar_saludo_cliente_dos_ramas                             CONTINUA  madre=cambiar_saludo_cliente_dos_ramas
+  OK  cuantificar_impacto_innovacion_6_pasos                       pedir_critica_anonima_curso_entrenamiento_dictado            SANO      
+  OK  cuantificar_impacto_innovacion_6_pasos                       entregar_evaluacion_desempeno_tres_claves                    SANO      
+cuantificar_impacto_innovacion_6_pasos                       lineas 5 | levantados hoy 5 | FALTAN 0 | SOBRAN 0
+  OK  dar_valor_constante_cuatro_publicos                          trazar_modelo_negocio_cliente_primero                        SANO      
+  OK  dar_valor_constante_cuatro_publicos                          documentar_trabajo_manual_operaciones                        SANO      
+  OK  dar_valor_constante_cuatro_publicos                          unificar_color_forma_vestuario_modelo                        SANO      
+dar_valor_constante_cuatro_publicos                          lineas 3 | levantados hoy 3 | FALTAN 0 | SOBRAN 0
+  OK  dictar_ritmo_crecimiento_preguntas_escritas                  descubrir_motivacion_sentido_persona                         SANO      
+  OK  dictar_ritmo_crecimiento_preguntas_escritas                  cuantificar_impacto_innovacion_6_pasos                       SANO      
+  OK  dictar_ritmo_crecimiento_preguntas_escritas                  hacer_trabajo_futuro_imaginar_negocio                        SANO      
+  OK  dictar_ritmo_crecimiento_preguntas_escritas                  planificar_tres_pasos_demanda_estado_brecha                  SANO      
+  OK  dictar_ritmo_crecimiento_preguntas_escritas                  operar_modelo_gente_destreza_minima                          SANO      
+  OK  dictar_ritmo_crecimiento_preguntas_escritas                  responder_primer_aviso_renuncia_subordinado                  SANO      
+  OK  dictar_ritmo_crecimiento_preguntas_escritas                  cambiar_saludo_cliente_dos_ramas                             SANO      
+  OK  dictar_ritmo_crecimiento_preguntas_escritas                  interrogar_negocio_cinco_preguntas                           SANO      
+dictar_ritmo_crecimiento_preguntas_escritas                  lineas 8 | levantados hoy 8 | FALTAN 0 | SOBRAN 0
+  OK  distinguir_tres_tipos_sistemas_negocio                       medir_sistema_venta_trece_indicadores_benchmark              SANO      
+  OK  distinguir_tres_tipos_sistemas_negocio                       construir_estrategia_gente_cuatro_componentes                SANO      
+  OK  distinguir_tres_tipos_sistemas_negocio                       aplicar_seis_pasos_sistema_venta                             SANO      
+distinguir_tres_tipos_sistemas_negocio                       lineas 3 | levantados hoy 3 | FALTAN 0 | SOBRAN 0
+  OK  documentar_trabajo_manual_operaciones                        dar_valor_constante_cuatro_publicos                          SANO      
+  OK  documentar_trabajo_manual_operaciones                        unificar_color_forma_vestuario_modelo                        SANO      
+documentar_trabajo_manual_operaciones                        lineas 2 | levantados hoy 2 | FALTAN 0 | SOBRAN 0
+fingir_prototipo_cinco_mil_replicas                          lineas 0 | levantados hoy 0 | FALTAN 0 | SOBRAN 0
+  OK  hacer_trabajo_futuro_imaginar_negocio                        dictar_ritmo_crecimiento_preguntas_escritas                  SANO      
+hacer_trabajo_futuro_imaginar_negocio                        lineas 1 | levantados hoy 1 | FALTAN 0 | SOBRAN 0
+  OK  interrogar_negocio_cinco_preguntas                           dictar_ritmo_crecimiento_preguntas_escritas                  SANO      
+interrogar_negocio_cinco_preguntas                           lineas 1 | levantados hoy 1 | FALTAN 0 | SOBRAN 0
+  OK  medir_sistema_venta_trece_indicadores_benchmark              aplicar_seis_pasos_sistema_venta                             CONTINUA  madre=aplicar_seis_pasos_sistema_venta
+  OK  medir_sistema_venta_trece_indicadores_benchmark              distinguir_tres_tipos_sistemas_negocio                       SANO      
+medir_sistema_venta_trece_indicadores_benchmark              lineas 2 | levantados hoy 2 | FALTAN 0 | SOBRAN 0
+  OK  operar_modelo_gente_destreza_minima                          interrogar_negocio_cinco_preguntas                           SANO      
+  OK  operar_modelo_gente_destreza_minima                          responder_primer_aviso_renuncia_subordinado                  SANO      
+  OK  operar_modelo_gente_destreza_minima                          dictar_ritmo_crecimiento_preguntas_escritas                  SANO      
+  OK  operar_modelo_gente_destreza_minima                          cambiar_saludo_cliente_dos_ramas                             SANO      
+operar_modelo_gente_destreza_minima                          lineas 4 | levantados hoy 4 | FALTAN 0 | SOBRAN 0
+  OK  probar_traje_azul_seis_semanas                               responder_4_preguntas_estandares_objetivo_estrategico        SANO      
+  OK  probar_traje_azul_seis_semanas                               cambiar_saludo_cliente_dos_ramas                             SANO      
+  OK  probar_traje_azul_seis_semanas                               dar_valor_constante_cuatro_publicos                          SANO      
+probar_traje_azul_seis_semanas                               lineas 3 | levantados hoy 3 | FALTAN 0 | SOBRAN 0
+  OK  recorrer_siete_pasos_programa_desarrollo_negocio             construir_estrategia_gente_cuatro_componentes                SANO      
+recorrer_siete_pasos_programa_desarrollo_negocio             lineas 1 | levantados hoy 1 | FALTAN 0 | SOBRAN 0
+  OK  responder_4_preguntas_estandares_objetivo_estrategico        responder_8_preguntas_construir_primary_aim                  SANO      
+  OK  responder_4_preguntas_estandares_objetivo_estrategico        probar_traje_azul_seis_semanas                               SANO      
+responder_4_preguntas_estandares_objetivo_estrategico        lineas 2 | levantados hoy 2 | FALTAN 0 | SOBRAN 0
+  OK  responder_8_preguntas_construir_primary_aim                  responder_4_preguntas_estandares_objetivo_estrategico        SANO      
+responder_8_preguntas_construir_primary_aim                  lineas 1 | levantados hoy 1 | FALTAN 0 | SOBRAN 0
+  OK  trazar_modelo_negocio_cliente_primero                        dar_valor_constante_cuatro_publicos                          SANO      
+trazar_modelo_negocio_cliente_primero                        lineas 1 | levantados hoy 1 | FALTAN 0 | SOBRAN 0
+  OK  unificar_color_forma_vestuario_modelo                        dar_valor_constante_cuatro_publicos                          SANO      
+  OK  unificar_color_forma_vestuario_modelo                        documentar_trabajo_manual_operaciones                        SANO      
+unificar_color_forma_vestuario_modelo                        lineas 2 | levantados hoy 2 | FALTAN 0 | SOBRAN 0
+secciones 22 de 22, lineas 54, ilegibles 0, vecinos sin linea 0, lineas sin vecino 0
+
+ARISTAS POR LECTURA (SOSTENGO) contra el barrido de hoy
+  recorrer_siete_pasos_programa_desarrollo_negocio             > construir_estrategia_gente_cuatro_componentes                levantada hoy: SI
+  fingir_prototipo_cinco_mil_replicas                          > dar_valor_constante_cuatro_publicos                          levantada hoy: NO
+  fingir_prototipo_cinco_mil_replicas                          > operar_modelo_gente_destreza_minima                          levantada hoy: NO
+  fingir_prototipo_cinco_mil_replicas                          > documentar_trabajo_manual_operaciones                        levantada hoy: NO
+  fingir_prototipo_cinco_mil_replicas                          > unificar_color_forma_vestuario_modelo                        levantada hoy: NO
+  construir_estrategia_gente_cuatro_componentes                > documentar_trabajo_manual_operaciones                        levantada hoy: NO

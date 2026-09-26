@@ -1,0 +1,20 @@
+{
+ "id": "trazar_modelo_negocio_cliente_primero",
+ "grafo": 437,
+ "bandejas": 42,
+ "vecinos": [
+  {
+   "id": "dar_valor_constante_cuatro_publicos",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.39,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.556
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 1 de dar_valor_constante_cuatro_publicos"
+  }
+ ]
+}

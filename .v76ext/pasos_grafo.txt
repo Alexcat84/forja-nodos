@@ -1,0 +1,74 @@
+===== responder_primer_aviso_renuncia_subordinado | grafo
+  titulo: Responder al primer momento en que un subordinado valioso avisa que quiere renunciar: dejar lo que haces, escucharlo sin discutir y comprarte tiempo antes de actuar
+  fuente: ['grove_high_output'] | previos: [] | siguientes: ['gestionar_retencion_subordinado_valioso_renuncia']
+  cond: Cuando un subordinado valioso y estimado se acerca al mando y anuncia, de pasada, que ha decidido dejar la empresa.
+  P1. Deja lo que estas haciendo en cuanto el subordinado te avisa de que quiere renunciar, en vez de posponer la conversacion para mas tarde.
+  P2. Sientalo y preguntale por que se va.
+  P3. Dejalo hablar sin discutir nada de lo que diga, aunque sus razones no te parezcan buenas.
+  P4. Cuando haya terminado de exponer sus razones, hazle mas preguntas para que los asuntos de fondo puedan salir a la luz.
+  P5. No discutas, no sermonees y no entres en panico durante esta primera conversacion.
+  P6. No intentes cambiarle la idea en este momento, sino compra tiempo: cuando haya dicho todo lo que tiene que decir, pide el tiempo que necesites para prepararte para el siguiente encuentro.
+  P7. Cumple despues con lo que te hayas comprometido a hacer en esta primera conversacion.
+===== entregar_evaluacion_desempeno_tres_claves | grafo
+  titulo: Entregar la evaluacion de desempeno cara a cara con las tres claves del mando: franqueza, escucha total y dejar fuera las emociones propias
+  fuente: ['grove_high_output'] | previos: [] | siguientes: []
+  cond: Cuando el mando va a entregar cara a cara, en la conversacion de revision, la evaluacion de desempeno de un subordinado.
+  P1. Se totalmente franco con el subordinado al entregarle la revision, tanto al elogiar como al criticar, porque la credibilidad y la integridad de todo el sistema de revision dependen de esa franqueza.
+  P2. Recuerda que el objetivo de la comunicacion es hacer llegar tus pensamientos de tu cabeza a la del subordinado, y que las palabras son solo el medio: el fin es que se comunique el pensamiento correcto.
+  P3. Observa al subordinado mientras hablas y sigue insistiendo hasta estar seguro de que tu mensaje llego y se entendio, sin conformarte con que haya parafraseado tus palabras.
+  P4. Emplea toda tu capacidad sensorial, no solo el oido, para confirmar que tus puntos se estan interpretando correctamente en la cabeza del subordinado.
+  P5. Deja fuera tus propias inseguridades, ansiedades o culpa: la revision trata de los problemas del subordinado y no de los tuyos.
+  P6. Controla esas emociones propias para que no afecten tu tarea mientras entregas la revision, aunque sepas que van a aflorar.
+===== recorrer_trece_elementos_proceso_evaluacion_formal | grafo
+  titulo: Recorrer los trece elementos que el texto nombra para disenar un proceso formal de evaluacion de desempenio, sabiendo que no hay talla unica
+  fuente: ['scott_radical_candor'] | previos: [] | siguientes: ['decidir_poner_nota_comunicar_proposito_limites', 'elegir_categorias_nota_palabras_propias_empresa', 'escribir_escaleras_puesto_evitar_dos_extremos', 'fijar_cuatro_notas_calcular_nota_global', 'elegir_palabras_nota_definirlas_empresa_entera', 'aplicar_consecuencias_nota_apoyar_fuerzas_persona', 'repartir_notas_publicar_reparto_esperado', 'presionar_curva_notas_evitar_forzarla', 'calibrar_notas_reunion_jefes_pares', 'evaluar_desempenio_dos_veces_anio', 'montar_evaluacion_360_grados_ligera_pares', 'hacer_critica_pares_transparente_ensenar_escribirla', 'mantener_proceso_evaluacion_ligero_vigilar_crecimiento']
+  cond: Cuando tu equipo de gestion del desempenio va a disenar o a rehacer el proceso formal de evaluacion y necesita tener delante todo lo que hay que decidir antes de decidir nada.
+  P1. Parte de lo que el texto avisa antes de empezar: cada empresa tiene necesidades distintas para sus evaluaciones, asi que el texto dice que no puede disenar una evaluacion de talla unica por mucho que quisiera. Lo que si hace es llevarte por las consideraciones clave que tu y tu equipo querreis tener en cuenta.
+  P2. Uno, decide si pones nota o no.
+  P3. Dos, decide las categorias de la nota.
+  P4. Tres, decide las escaleras de puesto.
+  P5. Cuatro, decide cuantas notas.
+  P6. Cinco, cuida el lenguaje, porque el texto dice que las palabras importan.
+  P7. Seis, decide las consecuencias de la nota.
+  P8. Siete, decide el reparto de notas.
+  P9. Ocho, decide si fuerzas la curva o no.
+  P10. Nueve, decide la calibracion de las notas.
+  P11. Diez, decide la frecuencia.
+  P12. Once, decide si haces un proceso de trescientos sesenta grados o te apoyas en el juicio unilateral del jefe.
+  P13. Doce, decide si es transparente o confidencial.
+  P14. Trece, decide si es ligero o pesado.
+===== pedir_critica_anonima_curso_entrenamiento_dictado | grafo
+  titulo: Pedir critica anonima tras dictar un curso de entrenamiento, con formulario numerico y preguntas abiertas
+  fuente: ['grove_high_output'] | previos: ['desarrollar_primer_curso_entrenamiento'] | siguientes: []
+  cond: Cuando el mando ya dicto su curso de entrenamiento y quiere saber si esta cumpliendo el proposito que se propuso.
+  P1. Despues de dar el curso, pide criticas anonimas a los empleados de tu clase.
+  P2. Usa un formulario que pida calificaciones numericas y que ademas plantee algunas preguntas abiertas.
+  P3. Estudia y considera las respuestas, entendiendo que nunca podras complacer a todos los miembros de tu clase.
+  P4. Ten como objetivo ultimo satisfacerte a ti mismo de que estas logrando lo que te propusiste.
+===== descubrir_motivacion_sentido_persona | grafo
+  titulo: Descubrir de donde saca cada persona el sentido de su trabajo, en vez de proveerle tu un proposito
+  fuente: ['scott_radical_candor'] | previos: [] | siguientes: []
+  cond: Cuando quieres saber que mueve a cada persona de tu equipo, y sobre todo cuando te descubres intentando convencerles de que su trabajo tiene un proposito elevado.
+  P1. Averigua que motiva a cada persona de tu equipo, que es lo que el texto pone como condicion para poder gestionar el crecimiento.
+  P2. Averigua cuales son las ambiciones a largo plazo de cada cual.
+  P3. Y entiende como encajan sus circunstancias actuales con esas motivaciones y con sus metas de vida.
+  P4. Cuenta con lo que el texto dice que solo entonces se puede hacer: poner a la gente adecuada en los papeles adecuados y asignar los proyectos adecuados a las personas adecuadas.
+  P5. No te pases de la raya con la pasion. El texto no discute que la gente trabaje mejor cuando encuentra sentido en lo que hace, pero avisa de que los jefes que leen eso como que su trabajo es proveer el proposito tienden a excederse, y de que insistir en que la gente tenga pasion por su trabajo pone presion innecesaria sobre el jefe y sobre el empleado.
+  P6. Acepta que trabajar duro para ganarse un sueldo que sostiene la vida que quieres llevar tiene sentido de sobra. El texto lo ilustra con la respuesta de una escritora sobre por que eligio las empresas en las que trabajo: porque eran las unicas que le ofrecian un trabajo, que le parecio una gran razon entonces y le sigue pareciendo una gran razon hoy.
+  P7. Cuenta con que la persona que ya tiene su propia forma de encontrar sentido no la necesita de ti. El texto pone el caso de una joven que habia estudiado filosofia y que corto en seco el eslogan de su jefa diciendo que el trabajo era un poco aburrido, que habia que admitirlo, que no pasaba nada, y que Plutarco puso ladrillos y Spinoza pulio lentes, porque el tedio es parte de la vida. El texto aniade que aquella forma de encontrar sentido era unica de ella y no habria inspirado al equipo entero.
+  P8. Ten presente que las motivaciones son muy personales, y que un eslogan inspirador para ti puede no serlo para otros: el texto lo dice de uno famoso, y lo dice de si misma admirando a su autor.
+  P9. Haz lo que el texto saca de la historia de los tres albaniles a los que el arquitecto pregunto que hacian, y que contestaron que trabajar, que levantar un muro y que construir una catedral: no inventes tu un sentido de proposito y se lo metas a todos en la cabeza a martillazos.
+  P10. Escucha, que es la primera de las tres cosas que el texto dice que hizo aquel arquitecto.
+  P11. Reconoce el significado de lo que oigas, que es la segunda.
+  P12. Y crea las condiciones de trabajo que permitan a todo el mundo encontrar sentido a su propia manera, que es la tercera.
+  P13. Puedes poner el trabajo del equipo en contexto y contar por que a ti te da sentido, que el texto dice que puede ayudar a otros a encontrar el suyo. Pero recuerda lo que aniade justo despues: no va todo de ti.
+===== planificar_tres_pasos_demanda_estado_brecha | grafo
+  titulo: Planificar en los tres pasos del libro: la demanda del entorno, el estado presente, y lo que hay que hacer para conciliarlos
+  fuente: ['grove_high_output'] | previos: [] | siguientes: ['examinar_demanda_entorno_dos_marcos_temporales', 'determinar_estado_presente_capacidades_proyectos_merma', 'cerrar_brecha_dos_preguntas_estrategia']
+  cond: Cuando tienes que planificar el trabajo de tu grupo y no sabes por donde empezar, o cuando lo que llamas plan es una lista de intenciones y no una comparacion entre lo que te van a pedir y lo que vas a producir.
+  P1. Monta tu proceso general de planificacion sobre un razonamiento analogo al de la fabrica.
+  P2. Da el paso 1 estableciendo la necesidad o demanda proyectada: que va a demandar de ti el entorno, de tu negocio o de tu organizacion.
+  P3. Da el paso 2 estableciendo tu estado presente: que estas produciendo ahora, y que vas a estar produciendo cuando se completen los proyectos que ya tienes en marcha.
+  P4. Formula ese paso 2 tambien de la otra manera: donde va a estar tu negocio si no haces nada distinto de lo que estas haciendo.
+  P5. Da el paso 3 comparando y conciliando los pasos 1 y 2.
+  P6. Convierte esa conciliacion en la pregunta concreta: que mas, o que menos, necesitas hacer para producir lo que tu entorno va a demandar.
