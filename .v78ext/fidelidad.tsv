@@ -1,0 +1,119 @@
+# Vuelta 78, TAREA 2.1: la relectura de fidelidad ENTERA (D.30, D.58) de las 20 fichas de la bandeja de Marquet
+# (.v78ext/bandeja.txt), paso a paso contra su capitulo de fuentes/marquet_turn_the_ship/, leido entero en esta vuelta. Orden de lectura:
+# cap_03 primero (el de mas fichas y el de d150, encargo TAREA 4), despues cap_01, cap_02, cap_04, cap_06 a cap_14. Marca: T transcripcion,
+# P puente (entero o de clausula; la clausula reescrita CUENTA como P, ACTA 62 62.5). Separador: barra vertical. Formato de
+# .v76ext/fidelidad.tsv: la columna de linea admite cap_NN:LNN cuando el paso cita un capitulo que no es el de la UNIDAD DE ORIGEN de su
+# ficha; en esta vuelta ningun paso lo necesita. Las citas van recortadas; la linea la localiza .v78ext/citas.sh, con su salida en
+# .v78ext/citas_fidelidad.txt. Lo marcado DISCUTIBLE se marco al escribir la fila, antes de ninguna comprobacion. Los P se marcan sobre el
+# texto de la ficha tal como estaba al abrir la vuelta, y se corrigen despues en la ficha (TAREA 2.3).
+# id | paso | marca | linea | lo que decide la marca
+recorrer_organizacion_escuchar_plantilla | 1 | T | L11 | When was the last time you walked around your organization to hear about the good, the bad, and the ugly
+recorrer_organizacion_escuchar_plantilla | 2 | T | L15 | According to procedure, I was to spend the next two weeks reviewing everything on the ship, y la lista entera hasta I ignored that
+recorrer_organizacion_escuchar_plantilla | 3 | T | L15 | Instead, I spent my time walking around the ship talking to people
+recorrer_organizacion_escuchar_plantilla | 4 | T | L15 | I also set up a series of walkabouts during which each chief or officer would walk me around his spaces
+recorrer_organizacion_escuchar_plantilla | 5 | T | L15 | In order to do these inspections properly
+recorrer_organizacion_escuchar_plantilla | 6 | T | L15 | but the flashlights were pitiful. Broken, dead batteries, dim bulbs; el como dato y no como examen lee el It wasn’t supposed to be a test de la misma linea y el I figured this was what Commodore Kenny was talking about, que toma las linternas como senal (DISCUTIBLE D78.4)
+recorrer_organizacion_escuchar_plantilla | 7 | T | L15 | I got myself a super Maglite that took four D-cell batteries; y en la misma linea I carried that flashlight around with me everywhere, y Soon, others started carrying flashlights that actually worked as well
+observar_reunion_rutinaria_senales_plantilla | 1 | T | L17 | I attended a department head meeting, a routine review of maintenance issues
+observar_reunion_rutinaria_senales_plantilla | 2 | T | L21 | but instead I observed the people in the room. La razon es la de la misma linea: I probably should have paid attention to the technical issues because this missile system wasn’t on the Olympia
+observar_reunion_rutinaria_senales_plantilla | 3 | T | L19 | the attendees wandered in late
+observar_reunion_rutinaria_senales_plantilla | 4 | T | L19 | the captain stayed away until everyone was assembled. Then he was invited
+observar_reunion_rutinaria_senales_plantilla | 5 | T | L19 | The meeting started late
+observar_reunion_rutinaria_senales_plantilla | 6 | T | L19 | everyone was waiting for someone else
+observar_reunion_rutinaria_senales_plantilla | 7 | T | L21 | Dave was earnest and forthright but frustrated and defensive about all the questions he needed to answer
+observar_reunion_rutinaria_senales_plantilla | 8 | T | L21 | The other department heads and chiefs were bored
+observar_reunion_rutinaria_senales_plantilla | 9 | T | L19 | little things like lack of punctuality are indicative of much, much bigger problems
+seguir_frustrado_preguntar_implantacion_ideas | 1 | T | L23 | After the meeting I followed Dave to his stateroom
+seguir_frustrado_preguntar_implantacion_ideas | 2 | P | L25 | Weps, you seemed a bit frustrated. La frase es del texto; la clausula sin pregunta y sin acusacion la pongo yo: L25 da la frase y ninguna linea dice como no hay que nombrarlo (DISCUTIBLE D78.5)
+seguir_frustrado_preguntar_implantacion_ideas | 3 | T | L27 | As I listened to him tell me about how he wanted things to be, I became more and more enthusiastic, and impressed. Escuchale hasta el final es verbo de marco sobre ese As I listened (DISCUTIBLE D78.6)
+seguir_frustrado_preguntar_implantacion_ideas | 4 | T | L27 | I would ask how he had implemented them
+seguir_frustrado_preguntar_implantacion_ideas | 5 | T | L27 | Each time the answer was the same
+seguir_frustrado_preguntar_implantacion_ideas | 6 | T | L27 | The chiefs working for him
+seguir_frustrado_preguntar_implantacion_ideas | 7 | T | L27 | He had wanted to conduct training with the officers numerous times on Tomahawk missile strikes
+seguir_frustrado_preguntar_implantacion_ideas | 8 | T | L29 | In essence, Dave was describing a problem inherent in the leader-follower model
+contar_firmas_cadena_tramite_parado | 1 | T | L37 | one junior sailor looked particularly forlorn. When I pressed him on how he was doing, y el no lo dejes en la primera respuesta es ese pressed
+contar_firmas_cadena_tramite_parado | 2 | T | L37 | submitted it weeks earlier and the holiday break was coming soon
+contar_firmas_cadena_tramite_parado | 3 | T | L37 | the tickets were bound to be expensive, if they were even available
+contar_firmas_cadena_tramite_parado | 4 | T | L39 | The Standard Submarine Organization and Regulations Manual (SSORM) states that the XO will sign all enlisted leave chits
+contar_firmas_cadena_tramite_parado | 5 | T | L39 | Since we enforce the chain of command, that means that a leave chit from a junior sailor must go though
+contar_firmas_cadena_tramite_parado | 6 | T | L39 | Seven people!
+contar_firmas_cadena_tramite_parado | 7 | T | L39 | The form had only five lines for signatures, so we were using rulers to half-split some of the lines. El compara es el only del texto, que pone las cinco lineas contra las siete firmas
+contar_firmas_cadena_tramite_parado | 8 | T | L43 | I rushed about, tracked down his leave chit
+contar_firmas_cadena_tramite_parado | 9 | T | L43 | and took care of it
+contar_firmas_cadena_tramite_parado | 10 | T | L41 | We had done this sailor wrong, y L43 It was the system, not the people, that failed
+inspeccionar_reparto_informacion_notas_jefe | 1 | T | L45 | the radioman arrived with the message board. In those days, we took all the naval messages that came to the ship each day
+inspeccionar_reparto_informacion_notas_jefe | 2 | T | L45 | Some messages were general and administrative
+inspeccionar_reparto_informacion_notas_jefe | 3 | T | L47 | By protocol the messages are routed first to the captain, then to the XO, and down the chain of command
+inspeccionar_reparto_informacion_notas_jefe | 4 | T | L49 | Many of the messages had notes on them from one or both
+inspeccionar_reparto_informacion_notas_jefe | 5 | T | L49 | getting told to do stuff before I even know I have stuff to do
+inspeccionar_reparto_informacion_notas_jefe | 6 | T | L51 | Why do you think the captain and XO feel they need to write those things
+inspeccionar_reparto_informacion_notas_jefe | 7 | T | L53 | He gets good marks for being very involved, having his fingerprints everywhere
+inspeccionar_reparto_informacion_notas_jefe | 8 | T | L53 | Not only are they telling me to do stuff I already know I have to do, but also frequently I get told exactly how and when to do it
+auditar_formacion_premios_ultima_fila | 1 | T | L55 | Santa Fe had quarters on the pier a couple times a week
+auditar_formacion_premios_ultima_fila | 2 | T | L57 | As the formation went on, I wandered around the periphery
+auditar_formacion_premios_ultima_fila | 3 | T | L57 | Standing in the back, where most of the crew was
+auditar_formacion_premios_ultima_fila | 4 | T | L57 | anything the captain said. His words were muted and garbled
+auditar_formacion_premios_ultima_fila | 5 | T | L57 | I asked one of the crew members if he could hear
+auditar_formacion_premios_ultima_fila | 6 | T | L57 | If there was something important, the chief would tell them at divisional quarters. Escucha la respuesta entera es verbo de marco sobre la respuesta de dos mitades de la misma linea (DISCUTIBLE D78.6)
+auditar_formacion_premios_ultima_fila | 7 | T | L55 | The awards were for people leaving the ship or for the previous upkeep
+auditar_formacion_premios_ultima_fila | 8 | T | L55 | no wives had been invited to attend. Familias por wives generaliza el objeto, y el ejemplo del paso dice esposa (DISCUTIBLE D78.3)
+auditar_formacion_premios_ultima_fila | 9 | T | L55 | there was no photographer, so we lost the chance to promote these accomplishments in front of a wider audience
+auditar_formacion_premios_ultima_fila | 10 | T | L55 | There was a last-minute scramble to assemble the citations and medals
+auditar_formacion_premios_ultima_fila | 11 | T | L55 | The captain seemed unfamiliar with the details about the men
+ceder_control_reforzar_competencia_claridad | 1 | T | L97 | I needed to let go of old ideas to make room for new ones in Part I
+ceder_control_reforzar_competencia_claridad | 2 | T | L97 | I describe the bridge to leader-leader and supporting pillars. The bridge is control
+ceder_control_reforzar_competencia_claridad | 3 | T | L97 | divesting control to others in your organization while keeping responsibility
+ceder_control_reforzar_competencia_claridad | 4 | T | L97 | Control, we discovered, only works with a competent workforce that understands the organization
+ceder_control_reforzar_competencia_claridad | 5 | T | L97 | Hence, as control is divested, both technical competence and organizational clarity need to be strengthened
+ceder_control_reforzar_competencia_claridad | 6 | T | L97 | The book parts are generally grouped into these categories, but the reality of how this works is that these cycles are repeated in ever increasing circles
+cambiar_forma_trabajar_conservar_plantilla | 1 | T | L25 | With only six months to deployment
+cambiar_forma_trabajar_conservar_plantilla | 2 | T | L25 | I think a better focus would be on working with what; el por encima de mucha rotacion es el not interested in a lot of turnover de la misma linea
+cambiar_forma_trabajar_conservar_plantilla | 3 | T | L25 | If you need to change out some people, let me know
+cambiar_forma_trabajar_conservar_plantilla | 4 | T | L29 | This was important because it sent the message to each crew member; el sino el liderazgo es el that he wasn’t screwed up, the leadership was de la misma linea, y L27 In the end, I fired no one
+cambiar_forma_trabajar_conservar_plantilla | 5 | T | L29 | My challenge would be to use the same people and support team
+encargar_meta_especifica_dejar_libre_metodo | 1 | T | L49 | He presented me with a specific goal
+encargar_meta_especifica_dejar_libre_metodo | 2 | T | L49 | but did not tell me how to do it, y L51 Since Mark wasn’t going to micromanage me
+encargar_meta_especifica_dejar_libre_metodo | 3 | T | L49 | The other thing he was telling me was that the people and resources available to the ship would be the same
+encargar_meta_especifica_dejar_libre_metodo | 4 | T | L49 | Consequently, the only thing we could change was how we acted and interacted
+encargar_meta_especifica_dejar_libre_metodo | 5 | T | L33 | one hundred percent from me and my squadron staff; el sin decidir por el encargado es el We aren’t going to walk down there and tell you what you need de la misma linea
+informar_cierre_jornada_conservar_propiedad_trabajo | 1 | T | L35 | Checking out is fine, I said, but it should go more like this. El no le preguntes que mas necesita de ti es la pregunta de L31, asked the XO if he had anything more for him that day, que L35 da por el problema (DISCUTIBLE D78.7)
+informar_cierre_jornada_conservar_propiedad_trabajo | 2 | P | L35 | The charts for next week. El estado de un trabajo en curso es del guion; la clausula con signo positivo la pongo yo: el coming along fine es el ejemplo y L35 no pide que el estado sea bueno (DISCUTIBLE D78.7)
+informar_cierre_jornada_conservar_propiedad_trabajo | 3 | T | L35 | to show the rough plan to the captain tomorrow
+informar_cierre_jornada_conservar_propiedad_trabajo | 4 | P | L35 | for his qualification interview but will be able to make that up tomorrow. Lo pendiente y su plan son del guion; la clausula sin disculpa vacia la pongo yo, y L35 no habla de disculpas (DISCUTIBLE D78.7)
+informar_cierre_jornada_conservar_propiedad_trabajo | 5 | T | L35 | In this scenario, it is the department head, not the XO, who is responsible
+aplicar_ejercicio_codigo_genetico_control | 1 | T | L101 | Identify in the organization
+aplicar_ejercicio_codigo_genetico_control | 2 | T | L103 | Identify decisions that are candidates for being pushed to the next lower level in the organization
+aplicar_ejercicio_codigo_genetico_control | 3 | T | L105 | For the easiest decisions, first draft language that changes the person who will have decision-making authority
+aplicar_ejercicio_codigo_genetico_control | 4 | T | L107 | Next, ask each participant in the group to complete the following sentence
+aplicar_ejercicio_codigo_genetico_control | 5 | T | L109 | Post those cards on the wall, go on a long break, and let the group mill around the comments posted on the wall
+aplicar_ejercicio_codigo_genetico_control | 6 | T | L111 | Last, when the group reconvenes, sort and rank the worries and begin to attack them
+asignar_responsable_unico_evolucion_planificada | 1 | T | L127 | The mechanism was to add a line to our planning documents
+asignar_responsable_unico_evolucion_planificada | 2 | T | L127 | I learned that focusing on who was put in charge was more important than trying to evaluate all the ways the event could go wrong. El no dediques el esfuerzo principal guarda el more important than, sin volverlo prohibicion (DISCUTIBLE D78.8)
+declarar_intencion_reemplazar_peticion_permiso | 1 | T | L75 | Request permission to; la lista de L73 a L83 que el texto llama disempowered phrases que usan los passive followers; el Evita es la lectura de esa etiqueta (DISCUTIBLE D78.10)
+declarar_intencion_reemplazar_peticion_permiso | 2 | T | L87 | I intend to; la lista de L85 a L93 que el texto llama empowered phrases
+declarar_intencion_reemplazar_peticion_permiso | 3 | T | L55 | Officers would state their intentions with; el en vez de dar una orden es el For my part, I would avoid giving orders de la misma linea
+resistir_dar_solucion_clasificar_decision_urgencia | 1 | T | L107 | You have to create a space for open decision by the entire team, even if that space is only a few minutes, or a few seconds, long
+resistir_dar_solucion_clasificar_decision_urgencia | 2 | T | L107 | This is harder than in the leader-follower approach because it requires you to anticipate decisions and alert your team, y L113 How many times do issues that require decisions come up on short notice, que es el surgir de golpe del paso
+resistir_dar_solucion_clasificar_decision_urgencia | 3 | T | L117 | If the decision needs to be made urgently, make it, then have the team
+resistir_dar_solucion_clasificar_decision_urgencia | 4 | T | L119 | If the decision needs to be made reasonably soon, ask for team input, even briefly, then make the decision
+resistir_dar_solucion_clasificar_decision_urgencia | 5 | T | L121 | If the decision can be delayed, then force the team to provide inputs. Do not force the team to come to consensus
+eliminar_seguimiento_descendente_responsabilizar_dueno | 1 | T | L71 | You are all going to monitor your own departments and whatever is due
+eliminar_seguimiento_descendente_responsabilizar_dueno | 2 | T | L73 | And with that, we unburdened ourselves of the effort of maintaining the tickler. El porque ya no hace falta lo leo en el without the overhead of maintaining the tickler and those darned tickler meetings de la misma linea y en el He shouldn’t de L57 (DISCUTIBLE D78.9)
+acoger_inspectores_externos_fuente_aprendizaje | 1 | T | L45 | not only to one-time critiques and problems such as the shore power mishap, but also to entire inspections
+acoger_inspectores_externos_fuente_aprendizaje | 2 | T | L49 | Concerning areas where we were doing something exceptionally innovative or expertly; el compartir es el we viewed the inspectors as advocates to share our good practices with de la misma linea
+acoger_inspectores_externos_fuente_aprendizaje | 3 | T | L49 | Concerning areas where we were doing things poorly and needed help
+tomar_accion_deliberada_pausar_vocalizar_gesticular | 1 | T | L75 | prior to any action, the operator paused and vocalized and gestured toward what he was about to do
+tomar_accion_deliberada_pausar_vocalizar_gesticular | 2 | T | L75 | Deliberate actions were not performed for the benefit of an observer or an inspector. El porque su objetivo es que tu mismo evites el error es el goal of take deliberate action was to introduce deliberateness in the mind of the operator de la misma linea
+tomar_accion_deliberada_pausar_vocalizar_gesticular | 3 | T | L95 | It applies at the moment someone signs a form, authorizes an action, or enters a keystroke
+identificar_temas_formacion_tarjetas_decision | 1 | T | L125 | Hand out a bunch of four-by-six cards and markers
+identificar_temas_formacion_tarjetas_decision | 2 | T | L127 | Start with this sentence completion
+identificar_temas_formacion_tarjetas_decision | 3 | T | L129 | Once you have the set of cards, post them on the wall, and go on break
+identificar_temas_formacion_tarjetas_decision | 4 | T | L131 | Down-select to a couple subjects
+identificar_temas_formacion_tarjetas_decision | 5 | T | L133 | Ask this question: What, technically, do the people at this level of management need to know
+identificar_temas_formacion_tarjetas_decision | 6 | T | L135 | Again, answer on the cards, post them, and go on break
+identificar_temas_formacion_tarjetas_decision | 7 | T | L137 | a relevant list of topics for training
+identificar_temas_formacion_tarjetas_decision | 8 | T | L139 | When you set up the training
+repetir_mensaje_invariable_diario_reunion_evento | 1 | T | L119 | Repeat the same message day after day, meeting after meeting, event after event
+repetir_mensaje_invariable_diario_reunion_evento | 2 | T | L119 | Sounds redundant, repetitive, and boring. But what’s the alternative? Changing the message? That results in confusion and a lack of direction
+reforzar_principios_guia_lenguaje_prueba_conocimiento | 1 | T | L89 | when we wrote awards or evaluations, we tried to couch behaviors in the language of these principles
+reforzar_principios_guia_lenguaje_prueba_conocimiento | 2 | T | L99 | Go out and ask the first three people you see what they are

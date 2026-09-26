@@ -66925,3 +66925,229 @@ y todo lo demas corrio en primer plano. **La bandeja de Gerber queda vacia**: el
 **El hook del commit del cierre** (`b2d27bbc`, salida en `.v77ext/hook_t5.txt`) sale en verde y cuenta `1079` rutas donde mi corrida del
 cierre estricto conto `1074`: las de mas son las que `77.5.f` y `77.5.g` publicaron despues de esa corrida. Las dos cifras son ciertas
 de su momento, y en ninguna cae una ruta.
+
+# VUELTA 78 DE LA LINEA SERIAL, lote 5 (`marquet_turn_the_ship`), **CLASE INSERCION**: las `20` fichas de la bandeja de Marquet dejadas listas para insertar. **Ninguna insertada**
+
+*Encargo escrito por el auditor al cerrar la `ACTA 76`. Clase impresa por `python scripts/deuda.py --clase 78` (`LIBRE`, `78.0`) y
+declarada `INSERCION` en la cabecera del encargo. **Ningun `insertar` en esta vuelta, ni en primer plano ni de fondo, y ningun
+barrido vivo cuando el turno termine.***
+
+**REPORTE ABIERTO AL EMPEZAR** (`EXTRACTOR.md` 3). Las filas se llenan al cerrarse cada tarea. Si la vuelta se corta, lo que
+falte es exactamente lo que no tiene fila.
+
+| tarea | que | estado |
+|---|---|---|
+| `T1` | los registros de la `ACTA 76` | PENDIENTE |
+| `T2` | la fidelidad entera de las fichas de Marquet, y `d150` preparada | PENDIENTE |
+| `T3` | el barrido, sobre las fichas ya corregidas | PENDIENTE |
+| `T4` | los veredictos, las aristas y el orden | PENDIENTE |
+| `T5` | el cierre: censo, `PASOS INVENTADOS`, huellas, `D.61`, `R5`, guardas, commit | PENDIENTE |
+
+## 78.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
+
+**Lo pendiente, commiteado primero** (`EXTRACTOR.md` 1): `TABLERO.jsonl`, `loop.log`, `ultimo_auditor.json` y
+`ultimo_extractor.json` del arnes, empujados como `e9d0309`, hook verde.
+
+<!-- TALLADO: parcial salida=.v78ext/apertura.txt -->
+
+    $ git rev-parse HEAD && git log -1 --format=%cI && git rev-parse --abbrev-ref HEAD
+    e9d0309202306f456306936c66af23099626c3f1
+    2026-09-26T13:29:25-04:00
+    extraccion-mundo-11
+    $ python forja.py gate
+    GATE VERDE.
+      nodos verificados: 459
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+    $ bash .v78ext/censo.sh
+    nodos en dataset/nodos.jsonl        : 459
+    veredictos en bitacora              : 1172
+    pares mutuos                        : 1
+    bandeja cuarentena/marquet_turn_the_ship : 20
+    insertados de marquet_turn_the_ship : 0
+    cerrojos en procesos/               : 
+    $ python scripts/deuda.py --clase 78
+    LIBRE
+      van 4 de 5 desde la ultima de saneamiento (la 74), con 50 deuda(s) esperando
+    $ python .v70aud/poblacion.py
+    poblacion: 479 | por sede: {'grafo': 459, 'bandeja': 20} | suma: 479
+    $ python .v77aud/normal/bandeja_marquet.py | tail -2
+    fichas por capitulo: {'cap_01': 1, 'cap_02': 2, 'cap_03': 6, 'cap_04': 1, 'cap_06': 2, 'cap_07': 1, 'cap_08': 1, 'cap_09': 1, 'cap_10': 1, 'cap_11': 1, 'cap_12': 1, 'cap_13': 1, 'cap_14': 1} | suma: 20
+    pasos por capitulo: {'cap_01': 6, 'cap_02': 10, 'cap_03': 53, 'cap_04': 5, 'cap_06': 8, 'cap_07': 3, 'cap_08': 5, 'cap_09': 2, 'cap_10': 3, 'cap_11': 3, 'cap_12': 8, 'cap_13': 2, 'cap_14': 2} | suma: 110
+
+**Coincide con la `ACTA 76` `76.1` y `76.11`** (`459`, `1172`, `1`; bandeja de Marquet `20`, insertados `0`; poblacion `479`, `459` del
+grafo mas `20` de bandejas; `20` fichas y `110` pasos), la clase con la del encargo, y **`procesos/` esta vacio**. `.v78ext/censo.sh` es
+copia de `.v77ext/censo.sh` con las dos rutas cambiadas a Marquet (su cabecera lo dice), y se vuelve a correr al cerrar. La salida
+entera de `bandeja_marquet.py`, una ficha por linea, en `.v78ext/bandeja.txt`: esa es la lista de las `20`.
+
+## 78.1. TAREA 1: LOS REGISTROS DE LA `ACTA 76`, SIN REABRIR EL ARGUMENTO (`D.47`)
+
+| que | donde |
+|---|---|
+| **mi vuelta, reproducida**: mis instrumentos dan lo que pegue, y el cierre estricto del auditor sale verde | `ACTA 76` `76.1` |
+| **las `22` de Gerber dentro, una por vez, sin solape, en su orden y despues del commit de la TAREA 2**; sus lineas iguales letra a letra a las preparadas, a las filas del barrido del auditor y a sus clases selladas; sus aristas iguales par a par y por los dos lados; ningun nodo viejo cambia | `76.4` |
+| **la relectura conjunta cerrada**: las dos piezas las gana la lectura del auditor y yo las ejecute; la arista `fingir` a `recorrer`, `CONTINUA` y paso `1`, se sostiene | `76.3` |
+| **mis cuatro discutibles se sostienen**, y `D77.4` se adjudica sin especie | `76.3` |
+| **`d111` y `d108` firmadas** | `76.3` |
+| **cero caidas mias**: `REPORTE` vuelve a cero, `R5` cumplido y `R9` sin objeto | `76.2`, `76.8`, `76.0` |
+
+**Lo que me llevo, sin reabrirlo:** en esta vuelta `R9` vuelve a tener objeto (`76.12`), porque la fidelidad es entera; lo aplico con la
+copia de `.v76ext/r9.py` y su patron ensanchado, antes de publicar la cuenta de PUENTE.
+
+**`T1` CERRADA.**
+
+## 78.D. **LOS DISCUTIBLES DEL METODO, MARCADOS ANTES DE EMPEZAR** (`EXTRACTOR.md` 8)
+
+| | que | por que lo marco |
+|---|---|---|
+| `D78.1` | **intento las `20` en esta vuelta, y el barrido se lanza UNA vez con las `20`, despues del commit de la ultima correccion de ficha**, no `cap_03` primero y los demas despues | es la figura de `D76.1`: la poblacion es grafo mas bandejas, y una ficha corregida despues de que el barrido de otra la midiera dejaria ese barrido sin ser suyo (`d031`). La fidelidad la hago en el orden del encargo, `cap_03` primero, para que lo que quedara sin hacer fuera lo de menos prioridad |
+| `D78.2` | **el barrido corre con la copia de `.v76ext/barrer.sh`, cinco a la vez**, con `FORJA_PROCESOS_SIMILITUD=3` y el presupuesto de la maquina en `6` plazas, que `src/presupuesto.py` reparte | es lo que pide el encargo; con seis plazas y no con las de la `76` el reloj por ficha puede alargarse, y si no cabe lo digo con las que falten en vez de dejarlo vivo |
+
+## 78.D bis. **LOS DISCUTIBLES DE LA TAREA 2, MARCADOS AL ESCRIBIR CADA FILA** (`EXTRACTOR.md` 8)
+
+Se marcaron dentro de `.v78ext/fidelidad.tsv` en el acto de escribir cada fila, antes de correr `citas.sh`, `r9.py` ni
+`contar_fidelidad.py`; aqui se juntan por numero.
+
+| | que | por que lo marco |
+|---|---|---|
+| `D78.3` | **`auditar_formacion_premios_ultima_fila` paso `8` va `T`**: *mira si se invito a las familias* | `L55` dice *no wives*; el paso generaliza el objeto y su ejemplo dice *esposa*. Si el auditor lee la generalizacion como clausula mia, es un `P` y `cap_03` sube a `2` de `53` |
+| `D78.4` | **`recorrer_organizacion_escuchar_plantilla` paso `6` va `T`**: *como dato y no como examen* | lo leo en el *It wasn’t supposed to be a test* y en el *I figured this was what Commodore Kenny was talking about* de `L15`; si se lee como lectura puesta por mi, es un `P` |
+| `D78.5` | **`seguir_frustrado_preguntar_implantacion_ideas` paso `2` va `P`**: *sin pregunta y sin acusacion* | `L25` da la frase y nada mas; si el auditor lee la clausula como descripcion de la forma de la frase (que no es una pregunta), es un `T` y `cap_03` baja a `0` |
+| `D78.6` | **`seguir_frustrado` paso `3` (*escuchale hasta el final*) y `auditar_formacion` paso `6` (*escucha la respuesta entera*) van `T`** | son verbos de marco sobre el *As I listened* de `L27` y sobre la respuesta de dos mitades de `L57`, la figura de `D76.8` con su *Comprueba*; si se leen como mandato mio, son dos `P` |
+| `D78.7` | **`informar_cierre_jornada_conservar_propiedad_trabajo`: paso `1` va `T`, pasos `2` y `4` van `P`** | el `1` pone *no le preguntes que mas necesita de ti*, que leo en la pregunta de `L31` que `L35` da por el problema; el `2` pone *con signo positivo* sobre el ejemplo *coming along fine*, y el `4` *sin disculpa vacia*, que `L35` no dice. Si el auditor lee el `1` como prohibicion puesta por mi (la figura de `D76.8` con *No contrates*), `cap_04` sube a `3` de `5` |
+| `D78.8` | **`asignar_responsable_unico_evolucion_planificada` paso `2` va `T`** | *No dediques el esfuerzo principal a evaluar* guarda el *more important than* de `L127` sin volverlo prohibicion; si se lee como prohibicion, es un `P` y `cap_06` sube a `1` de `8` |
+| `D78.9` | **`eliminar_seguimiento_descendente_responsabilizar_dueno` paso `2` va `T`** | el *porque ya no hace falta* lo leo en el *without the overhead* de `L73` y en el *He shouldn’t* de `L57`; si se lee como razon mia, es un `P` y `cap_09` sube a `1` de `2` |
+| `D78.10` | **`declarar_intencion_reemplazar_peticion_permiso` paso `1` va `T`**: *Evita las frases* | `L73` las llama *disempowered phrases* que usan los *passive followers* y no manda evitarlas; si el auditor lee el *Evita* como mandato mio, es un `P` y `cap_07` sube a `1` de `3` |
+
+## 78.2. TAREA 2: LA FIDELIDAD ENTERA DE LAS `20` FICHAS DE MARQUET (`D.30`, `D.58`)
+
+Los trece capitulos de `fuentes/marquet_turn_the_ship/` que citan las `20`, leidos enteros: `cap_03` primero, despues `cap_01`, `cap_02`,
+`cap_04` y `cap_06` a `cap_14`. **Cada paso marcado `T` o `P` con su linea**, una fila por paso, en `.v78ext/fidelidad.tsv`. **Ningun paso
+cita una linea de un capitulo que no sea el de la `UNIDAD DE ORIGEN` de su ficha**, asi que la columna `cap_NN:LNN` no hizo falta; las
+fronteras dentro del nodo que declaran varias lineas (`cambiar_forma` `L25`, `L27` y `L29`; `encargar_meta` `L49`, `L51` y `L33`) son del
+mismo capitulo, y la fila lleva la que sostiene el paso, con la otra en su nota.
+
+### 78.2.1. Las citas, por instrumento (`D.35`), y `R9`
+
+`.v78ext/citas.sh`, copia de `.v76ext/citas.sh` con las tres rutas cambiadas (su cabecera lo dice). Salida entera en
+`.v78ext/citas_fidelidad.txt`; su ultima linea, y las lineas de los `P`:
+
+<!-- TALLADO: parcial salida=.v78ext/citas_fidelidad.txt -->
+
+    $ bash .v78ext/citas.sh | tail -1
+    filas: 110 | en su linea declarada: 110 | fuera: 0
+    $ grep -n -o -F 'Weps, you seemed a bit frustrated' fuentes/marquet_turn_the_ship/cap_03.md
+    25:Weps, you seemed a bit frustrated
+    $ for p in 'The charts for next week' 'but will be able to make that up tomorrow' 'asked the XO if he had anything more for him that day'; do grep -n -o -F "$p" fuentes/marquet_turn_the_ship/cap_04.md; done
+    35:The charts for next week
+    35:but will be able to make that up tomorrow
+    31:asked the XO if he had anything more for him that day
+
+**La primera corrida dio `104` de `110`**: seis notas llevaban detras de su tramo literal un *, y el* mio que el recorte de `citas.sh` no
+corta, y el fragmento buscado ya no era del libro. Se reescribio el separador de esas seis notas (a `;`), sin tocar ni el tramo, ni la
+linea, ni la marca, y la segunda corrida es la de arriba.
+
+**`R9`, ANTES DE PUBLICAR LA CUENTA DE PUENTE** (`ACTA 76` `76.12`): `.v78ext/r9.py` es copia de `.v76ext/r9.py` con la poblacion cambiada
+a los pasos que marco `T` y **el patron de la `76` sin tocar** (su cabecera lo dice). Imprime cada paso que casa con su texto y la nota de
+su fila (entero en `.v78ext/r9.txt`); aqui, lo que casa:
+
+<!-- TALLADO: parcial salida=.v78ext/r9.txt -->
+
+    $ grep "casa:" .v78ext/r9.txt; tail -1 .v78ext/r9.txt
+    recorrer_organizacion_escuchar_plantilla paso 6 | casa: dato / El texto dice
+    seguir_frustrado_preguntar_implantacion_ideas paso 7 | casa: y que o no
+    contar_firmas_cadena_tramite_parado paso 1 | casa: El texto dice
+    contar_firmas_cadena_tramite_parado paso 5 | casa: mayor
+    contar_firmas_cadena_tramite_parado paso 7 | casa: Compara
+    contar_firmas_cadena_tramite_parado paso 9 | casa: El texto dice
+    inspeccionar_reparto_informacion_notas_jefe paso 2 | casa: datos
+    auditar_formacion_premios_ultima_fila paso 1 | casa: mayor
+    auditar_formacion_premios_ultima_fila paso 2 | casa: mayor
+    auditar_formacion_premios_ultima_fila paso 3 | casa: mayor
+    auditar_formacion_premios_ultima_fila paso 11 | casa: El texto dice
+    ceder_control_reforzar_competencia_claridad paso 4 | casa: el texto dice
+    ceder_control_reforzar_competencia_claridad paso 6 | casa: el texto dice
+    cambiar_forma_trabajar_conservar_plantilla paso 4 | casa: sino
+    declarar_intencion_reemplazar_peticion_permiso paso 3 | casa: en vez de
+    resistir_dar_solucion_clasificar_decision_urgencia paso 2 | casa: en vez de
+    acoger_inspectores_externos_fuente_aprendizaje paso 1 | casa: no solo / sino
+    acoger_inspectores_externos_fuente_aprendizaje paso 2 | casa: compartir
+    pasos T: 107 | pasos T que casan: 18 | pasos T sin ninguna clausula del patron: 89
+
+**LECTURA, paso a paso, de los `18`:** siete no comparan ni califican nada: *mayor* es *suboficial mayor* (el *chief of the boat* de
+`L39` y de `L55`) en `contar_firmas` `5` y `auditar_formacion` `1` y `2`, y *la mayor parte de la gente* es el *where most of the crew
+was* de `L57` en el `3`; *datos* es el *requesting data on a particular valve* de `L45`; *y que o no* es el *either had never been
+scheduled or had been canceled* de `L27`; y *compartir* casa por *compar*. **Los demas llevan en la nota de su fila el tramo literal
+que los sostiene** (*only five lines*, *not only* con su *but also*, *For my part, I would avoid giving orders*, *come up on short
+notice*, *but the reality*, y cada *el texto dice* con la frase que atribuye). **Ocho notas ganaron su tramo literal al leer esta salida, antes de publicar la cuenta**: de las que casan, `recorrer` `6` lo traia parafraseado sin su apostrofo (*It wasn’t supposed to be a test*), y `cambiar_forma` `4` y `acoger_inspectores` `2` no lo traian (*that he wasn’t screwed up, the leadership was* y *advocates to share our good practices with*); y cinco que no casan pero citaban parafraseado se escribieron literales en el mismo acto (*wasn’t on the Olympia* en `observar` `2`, *Since Mark wasn’t going to micromanage me* y *We aren’t going to walk down there* en `encargar_meta` `2` y `5`, *He shouldn’t* en `eliminar_seguimiento` `2` y *But what’s the alternative?* en `repetir_mensaje` `2`). Ninguna cambio de marca. **`R9` no levanta ningun `P` nuevo sobre los `T`.**
+
+### 78.2.2. Los `3` PUENTE, corregidos en la bandeja ANTES del barrido (`d031`)
+
+`.v78ext/corregir_t2.py`, copia de `.v76ext/corregir_t2.py` con la marca, la tabla, la bandeja y la ruta de la relectura cambiadas a la
+`78` (su cabecera lo dice): reescribe el paso y anexa al `resumen_teorico` un parrafo `CORRECCION DECLARADA DE LA VUELTA 78` con el texto
+viejo, el nuevo, la linea del libro que no lo dice y la cifra de relectura vieja al lado de la buena; sustituye en el texto crudo y
+comprueba que lo escrito es la ficha de antes con los cambios de la tabla y nada mas. Salida en `.v78ext/corregir.txt`.
+
+| ficha | que | decia | dice |
+|---|---|---|---|
+| `seguir_frustrado_preguntar_implantacion_ideas` | paso `2` | *Nombrale lo que viste, sin pregunta y sin acusacion* | *Nombrale lo que viste* |
+| `informar_cierre_jornada_conservar_propiedad_trabajo` | paso `2` | *el estado de un trabajo en curso con signo positivo* | *el estado de un trabajo en curso* |
+| `informar_cierre_jornada_conservar_propiedad_trabajo` | paso `4` | *dilo sin disculpa vacia y da el plan* | *dilo y da el plan* |
+
+    $ git diff --stat=200 -- cuarentena/
+     cuarentena/marquet_turn_the_ship/informar_cierre_jornada_conservar_propiedad_trabajo.json | 6 +++---
+     cuarentena/marquet_turn_the_ship/seguir_frustrado_preguntar_implantacion_ideas.json       | 4 ++--
+     2 files changed, 5 insertions(+), 5 deletions(-)
+
+**Ninguna otra ficha cambia, y ningun campo que no sea paso.** Despues de la ultima correccion, las `20` se normalizan con
+`aduana.normalizar_candidato` y pasan `aduana.validar_candidato` (esquema, reglas de id, fuentes y guiones) con `.v78ext/validar.py`,
+copia de `.v76ext/validar.py` con la bandeja cambiada (su cabecera lo dice):
+
+<!-- TALLADO: parcial salida=.v78ext/validar.txt -->
+
+    $ cut -c58- .v78ext/validar.txt | tr -d '\r' | sort | uniq -c
+         20 avisos 0 | errores 0
+
+(Las `20` lineas, una por ficha, en `.v78ext/validar.txt`.)
+
+### 78.2.3. `PASOS INVENTADOS POR CAPITULO`, trece filas
+
+Copia de `.v76ext/contar_fidelidad.py` con las rutas y el rotulo cambiados (su cabecera lo dice):
+
+<!-- TALLADO: parcial salida=.v78ext/contar_fidelidad.txt -->
+
+    $ python .v78ext/contar_fidelidad.py | tail -15
+    PASOS INVENTADOS POR CAPITULO, las 20 de Marquet (COPIA de la vuelta 78 de .v76ext/contar_fidelidad.py, ruta cambiada)
+    cap_01  candidatos 1  pasos 6  T 6  P 0  inventado 0,0 por ciento
+    cap_02  candidatos 2  pasos 10  T 10  P 0  inventado 0,0 por ciento
+    cap_03  candidatos 6  pasos 53  T 52  P 1  inventado 1,9 por ciento
+    cap_04  candidatos 1  pasos 5  T 3  P 2  inventado 40,0 por ciento
+    cap_06  candidatos 2  pasos 8  T 8  P 0  inventado 0,0 por ciento
+    cap_07  candidatos 1  pasos 3  T 3  P 0  inventado 0,0 por ciento
+    cap_08  candidatos 1  pasos 5  T 5  P 0  inventado 0,0 por ciento
+    cap_09  candidatos 1  pasos 2  T 2  P 0  inventado 0,0 por ciento
+    cap_10  candidatos 1  pasos 3  T 3  P 0  inventado 0,0 por ciento
+    cap_11  candidatos 1  pasos 3  T 3  P 0  inventado 0,0 por ciento
+    cap_12  candidatos 1  pasos 8  T 8  P 0  inventado 0,0 por ciento
+    cap_13  candidatos 1  pasos 2  T 2  P 0  inventado 0,0 por ciento
+    cap_14  candidatos 1  pasos 2  T 2  P 0  inventado 0,0 por ciento
+    peor capitulo: cap_04, 2 de 5, 40,0 por ciento; por encima del 10: cap_04
+
+(La tabla por candidato, entera, en `.v78ext/contar_fidelidad.txt`: `pasos sin fila: 0 [] | filas sin paso: 0 []`.) **El peor capitulo
+es `cap_04`, `2` de `5`, el `40,0` por ciento, y es el unico por encima del `10`.** **Por `D.58` se releyo entero antes de seguir** (`65`
+lineas, contra sus `5` pasos, su condicion y su entregable): **sale igual**, `2` `P` y el `1` en `T` (`D78.7`). Lo que pesa en el por
+ciento es el denominador: una ficha de cinco pasos, dos de ellos con una clausula mia cada uno. **Con los `3` corregidos, lo que
+entrara lleva `0` PUENTE en los `110` pasos**; la cifra de la relectura sobre el texto de la mineria es `3` de `110`, y el
+`resumen_teorico` de cada ficha corregida la dice al lado de su cifra vieja.
+
+### 78.2.4. `d150`, preparada y no pagada
+
+    $ grep '"id": "d150"' docs/loop/DEUDA.jsonl | grep -o '"que": "[^"]*"'
+    "que": "La TAREA 2 y la TAREA 3 del reporte de la vuelta 1 del frente marquet siguen sin escribirse desde los papeles de .vm01/, que estan intactos con 47 ficheros, y la fila de cap_03 sigue publicada en 0,00 donde la ACTA M2 la recontro."
+    $ python .v78ext/contar_fidelidad.py | grep "^cap_03"
+    cap_03  candidatos 6  pasos 53  T 52  P 1  inventado 1,9 por ciento
+
+**La fila de `cap_03`, contada entera paso a paso**, es la cifra que `d150` pedia: `6` candidatos, `53` pasos, `1` PUENTE (`D78.5`), el
+`1,9` por ciento sobre el texto de la mineria, y `0` despues de la correccion de `78.2.2`. **No la pago**: se paga en la vuelta que
+inserte (encargo, TAREA 2.5), con esta fila citada.
+
+**`T2` CERRADA.**

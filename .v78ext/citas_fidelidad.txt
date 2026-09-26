@@ -1,0 +1,232 @@
+$ grep -n -o -F 'When was the last time you walked around your organization to hear abo' fuentes/marquet_turn_the_ship/cap_03.md    # recorrer_organizacion_escuchar_plantilla paso 1 
+11:When was the last time you walked around your organization to hear abo
+$ grep -n -o -F 'According to procedure, I was to spend the next two weeks reviewing ev' fuentes/marquet_turn_the_ship/cap_03.md    # recorrer_organizacion_escuchar_plantilla paso 2 
+15:According to procedure, I was to spend the next two weeks reviewing ev
+$ grep -n -o -F 'Instead, I spent my time walking around the ship talking to people' fuentes/marquet_turn_the_ship/cap_03.md    # recorrer_organizacion_escuchar_plantilla paso 3 
+15:Instead, I spent my time walking around the ship talking to people
+$ grep -n -o -F 'I also set up a series of walkabouts during which each chief or office' fuentes/marquet_turn_the_ship/cap_03.md    # recorrer_organizacion_escuchar_plantilla paso 4 
+15:I also set up a series of walkabouts during which each chief or office
+$ grep -n -o -F 'In order to do these inspections properly' fuentes/marquet_turn_the_ship/cap_03.md    # recorrer_organizacion_escuchar_plantilla paso 5 
+15:In order to do these inspections properly
+$ grep -n -o -F 'but the flashlights were pitiful' fuentes/marquet_turn_the_ship/cap_03.md    # recorrer_organizacion_escuchar_plantilla paso 6 
+15:but the flashlights were pitiful
+$ grep -n -o -F 'I got myself a super Maglite that took four D-cell batteries' fuentes/marquet_turn_the_ship/cap_03.md    # recorrer_organizacion_escuchar_plantilla paso 7 
+15:I got myself a super Maglite that took four D-cell batteries
+$ grep -n -o -F 'I attended a department head meeting, a routine review of maintenance ' fuentes/marquet_turn_the_ship/cap_03.md    # observar_reunion_rutinaria_senales_plantilla paso 1 
+17:I attended a department head meeting, a routine review of maintenance 
+$ grep -n -o -F 'but instead I observed the people in the room' fuentes/marquet_turn_the_ship/cap_03.md    # observar_reunion_rutinaria_senales_plantilla paso 2 
+21:but instead I observed the people in the room
+$ grep -n -o -F 'the attendees wandered in late' fuentes/marquet_turn_the_ship/cap_03.md    # observar_reunion_rutinaria_senales_plantilla paso 3 
+19:the attendees wandered in late
+$ grep -n -o -F 'the captain stayed away until everyone was assembled' fuentes/marquet_turn_the_ship/cap_03.md    # observar_reunion_rutinaria_senales_plantilla paso 4 
+19:the captain stayed away until everyone was assembled
+$ grep -n -o -F 'The meeting started late' fuentes/marquet_turn_the_ship/cap_03.md    # observar_reunion_rutinaria_senales_plantilla paso 5 
+19:The meeting started late
+$ grep -n -o -F 'everyone was waiting for someone else' fuentes/marquet_turn_the_ship/cap_03.md    # observar_reunion_rutinaria_senales_plantilla paso 6 
+19:everyone was waiting for someone else
+$ grep -n -o -F 'Dave was earnest and forthright but frustrated and defensive about all' fuentes/marquet_turn_the_ship/cap_03.md    # observar_reunion_rutinaria_senales_plantilla paso 7 
+21:Dave was earnest and forthright but frustrated and defensive about all
+$ grep -n -o -F 'The other department heads and chiefs were bored' fuentes/marquet_turn_the_ship/cap_03.md    # observar_reunion_rutinaria_senales_plantilla paso 8 
+21:The other department heads and chiefs were bored
+$ grep -n -o -F 'little things like lack of punctuality are indicative of much, much bi' fuentes/marquet_turn_the_ship/cap_03.md    # observar_reunion_rutinaria_senales_plantilla paso 9 
+19:little things like lack of punctuality are indicative of much, much bi
+$ grep -n -o -F 'After the meeting I followed Dave to his stateroom' fuentes/marquet_turn_the_ship/cap_03.md    # seguir_frustrado_preguntar_implantacion_ideas paso 1 
+23:After the meeting I followed Dave to his stateroom
+$ grep -n -o -F 'Weps, you seemed a bit frustrated' fuentes/marquet_turn_the_ship/cap_03.md    # seguir_frustrado_preguntar_implantacion_ideas paso 2 
+25:Weps, you seemed a bit frustrated
+$ grep -n -o -F 'As I listened to him tell me about how he wanted things to be, I becam' fuentes/marquet_turn_the_ship/cap_03.md    # seguir_frustrado_preguntar_implantacion_ideas paso 3 
+27:As I listened to him tell me about how he wanted things to be, I becam
+$ grep -n -o -F 'I would ask how he had implemented them' fuentes/marquet_turn_the_ship/cap_03.md    # seguir_frustrado_preguntar_implantacion_ideas paso 4 
+27:I would ask how he had implemented them
+$ grep -n -o -F 'Each time the answer was the same' fuentes/marquet_turn_the_ship/cap_03.md    # seguir_frustrado_preguntar_implantacion_ideas paso 5 
+27:Each time the answer was the same
+$ grep -n -o -F 'The chiefs working for him' fuentes/marquet_turn_the_ship/cap_03.md    # seguir_frustrado_preguntar_implantacion_ideas paso 6 
+27:The chiefs working for him
+$ grep -n -o -F 'He had wanted to conduct training with the officers numerous times on ' fuentes/marquet_turn_the_ship/cap_03.md    # seguir_frustrado_preguntar_implantacion_ideas paso 7 
+27:He had wanted to conduct training with the officers numerous times on 
+$ grep -n -o -F 'In essence, Dave was describing a problem inherent in the leader-follo' fuentes/marquet_turn_the_ship/cap_03.md    # seguir_frustrado_preguntar_implantacion_ideas paso 8 
+29:In essence, Dave was describing a problem inherent in the leader-follo
+$ grep -n -o -F 'one junior sailor looked particularly forlorn' fuentes/marquet_turn_the_ship/cap_03.md    # contar_firmas_cadena_tramite_parado paso 1 
+37:one junior sailor looked particularly forlorn
+$ grep -n -o -F 'submitted it weeks earlier and the holiday break was coming soon' fuentes/marquet_turn_the_ship/cap_03.md    # contar_firmas_cadena_tramite_parado paso 2 
+37:submitted it weeks earlier and the holiday break was coming soon
+$ grep -n -o -F 'the tickets were bound to be expensive, if they were even available' fuentes/marquet_turn_the_ship/cap_03.md    # contar_firmas_cadena_tramite_parado paso 3 
+37:the tickets were bound to be expensive, if they were even available
+$ grep -n -o -F 'The Standard Submarine Organization and Regulations Manual' fuentes/marquet_turn_the_ship/cap_03.md    # contar_firmas_cadena_tramite_parado paso 4 
+39:The Standard Submarine Organization and Regulations Manual
+$ grep -n -o -F 'Since we enforce the chain of command, that means that a leave chit fr' fuentes/marquet_turn_the_ship/cap_03.md    # contar_firmas_cadena_tramite_parado paso 5 
+39:Since we enforce the chain of command, that means that a leave chit fr
+$ grep -n -o -F 'Seven people!' fuentes/marquet_turn_the_ship/cap_03.md    # contar_firmas_cadena_tramite_parado paso 6 
+39:Seven people!
+$ grep -n -o -F 'The form had only five lines for signatures, so we were using rulers t' fuentes/marquet_turn_the_ship/cap_03.md    # contar_firmas_cadena_tramite_parado paso 7 
+39:The form had only five lines for signatures, so we were using rulers t
+$ grep -n -o -F 'I rushed about, tracked down his leave chit' fuentes/marquet_turn_the_ship/cap_03.md    # contar_firmas_cadena_tramite_parado paso 8 
+43:I rushed about, tracked down his leave chit
+$ grep -n -o -F 'and took care of it' fuentes/marquet_turn_the_ship/cap_03.md    # contar_firmas_cadena_tramite_parado paso 9 
+43:and took care of it
+$ grep -n -o -F 'We had done this sailor wrong' fuentes/marquet_turn_the_ship/cap_03.md    # contar_firmas_cadena_tramite_parado paso 10 
+41:We had done this sailor wrong
+$ grep -n -o -F 'the radioman arrived with the message board' fuentes/marquet_turn_the_ship/cap_03.md    # inspeccionar_reparto_informacion_notas_jefe paso 1 
+45:the radioman arrived with the message board
+$ grep -n -o -F 'Some messages were general and administrative' fuentes/marquet_turn_the_ship/cap_03.md    # inspeccionar_reparto_informacion_notas_jefe paso 2 
+45:Some messages were general and administrative
+$ grep -n -o -F 'By protocol the messages are routed first to the captain, then to the ' fuentes/marquet_turn_the_ship/cap_03.md    # inspeccionar_reparto_informacion_notas_jefe paso 3 
+47:By protocol the messages are routed first to the captain, then to the 
+$ grep -n -o -F 'Many of the messages had notes on them from one or both' fuentes/marquet_turn_the_ship/cap_03.md    # inspeccionar_reparto_informacion_notas_jefe paso 4 
+49:Many of the messages had notes on them from one or both
+$ grep -n -o -F 'getting told to do stuff before I even know I have stuff to do' fuentes/marquet_turn_the_ship/cap_03.md    # inspeccionar_reparto_informacion_notas_jefe paso 5 
+49:getting told to do stuff before I even know I have stuff to do
+$ grep -n -o -F 'Why do you think the captain and XO feel they need to write those thin' fuentes/marquet_turn_the_ship/cap_03.md    # inspeccionar_reparto_informacion_notas_jefe paso 6 
+51:Why do you think the captain and XO feel they need to write those thin
+$ grep -n -o -F 'He gets good marks for being very involved, having his fingerprints ev' fuentes/marquet_turn_the_ship/cap_03.md    # inspeccionar_reparto_informacion_notas_jefe paso 7 
+53:He gets good marks for being very involved, having his fingerprints ev
+$ grep -n -o -F 'Not only are they telling me to do stuff I already know I have to do, ' fuentes/marquet_turn_the_ship/cap_03.md    # inspeccionar_reparto_informacion_notas_jefe paso 8 
+53:Not only are they telling me to do stuff I already know I have to do, 
+$ grep -n -o -F 'Santa Fe had quarters on the pier a couple times a week' fuentes/marquet_turn_the_ship/cap_03.md    # auditar_formacion_premios_ultima_fila paso 1 
+55:Santa Fe had quarters on the pier a couple times a week
+$ grep -n -o -F 'As the formation went on, I wandered around the periphery' fuentes/marquet_turn_the_ship/cap_03.md    # auditar_formacion_premios_ultima_fila paso 2 
+57:As the formation went on, I wandered around the periphery
+$ grep -n -o -F 'Standing in the back, where most of the crew was' fuentes/marquet_turn_the_ship/cap_03.md    # auditar_formacion_premios_ultima_fila paso 3 
+57:Standing in the back, where most of the crew was
+$ grep -n -o -F 'anything the captain said' fuentes/marquet_turn_the_ship/cap_03.md    # auditar_formacion_premios_ultima_fila paso 4 
+57:anything the captain said
+$ grep -n -o -F 'I asked one of the crew members if he could hear' fuentes/marquet_turn_the_ship/cap_03.md    # auditar_formacion_premios_ultima_fila paso 5 
+57:I asked one of the crew members if he could hear
+$ grep -n -o -F 'If there was something important, the chief would tell them at divisio' fuentes/marquet_turn_the_ship/cap_03.md    # auditar_formacion_premios_ultima_fila paso 6 
+57:If there was something important, the chief would tell them at divisio
+$ grep -n -o -F 'The awards were for people leaving the ship or for the previous upkeep' fuentes/marquet_turn_the_ship/cap_03.md    # auditar_formacion_premios_ultima_fila paso 7 
+55:The awards were for people leaving the ship or for the previous upkeep
+$ grep -n -o -F 'no wives had been invited to attend' fuentes/marquet_turn_the_ship/cap_03.md    # auditar_formacion_premios_ultima_fila paso 8 
+55:no wives had been invited to attend
+$ grep -n -o -F 'there was no photographer, so we lost the chance to promote these acco' fuentes/marquet_turn_the_ship/cap_03.md    # auditar_formacion_premios_ultima_fila paso 9 
+55:there was no photographer, so we lost the chance to promote these acco
+$ grep -n -o -F 'There was a last-minute scramble to assemble the citations and medals' fuentes/marquet_turn_the_ship/cap_03.md    # auditar_formacion_premios_ultima_fila paso 10 
+55:There was a last-minute scramble to assemble the citations and medals
+$ grep -n -o -F 'The captain seemed unfamiliar with the details about the men' fuentes/marquet_turn_the_ship/cap_03.md    # auditar_formacion_premios_ultima_fila paso 11 
+55:The captain seemed unfamiliar with the details about the men
+$ grep -n -o -F 'I needed to let go of old ideas to make room for new ones in Part I' fuentes/marquet_turn_the_ship/cap_01.md    # ceder_control_reforzar_competencia_claridad paso 1 
+97:I needed to let go of old ideas to make room for new ones in Part I
+$ grep -n -o -F 'I describe the bridge to leader-leader and supporting pillars' fuentes/marquet_turn_the_ship/cap_01.md    # ceder_control_reforzar_competencia_claridad paso 2 
+97:I describe the bridge to leader-leader and supporting pillars
+$ grep -n -o -F 'divesting control to others in your organization while keeping respons' fuentes/marquet_turn_the_ship/cap_01.md    # ceder_control_reforzar_competencia_claridad paso 3 
+97:divesting control to others in your organization while keeping respons
+$ grep -n -o -F 'Control, we discovered, only works with a competent workforce that und' fuentes/marquet_turn_the_ship/cap_01.md    # ceder_control_reforzar_competencia_claridad paso 4 
+97:Control, we discovered, only works with a competent workforce that und
+$ grep -n -o -F 'Hence, as control is divested, both technical competence and organizat' fuentes/marquet_turn_the_ship/cap_01.md    # ceder_control_reforzar_competencia_claridad paso 5 
+97:Hence, as control is divested, both technical competence and organizat
+$ grep -n -o -F 'The book parts are generally grouped into these categories, but the re' fuentes/marquet_turn_the_ship/cap_01.md    # ceder_control_reforzar_competencia_claridad paso 6 
+97:The book parts are generally grouped into these categories, but the re
+$ grep -n -o -F 'With only six months to deployment' fuentes/marquet_turn_the_ship/cap_02.md    # cambiar_forma_trabajar_conservar_plantilla paso 1 
+25:With only six months to deployment
+$ grep -n -o -F 'I think a better focus would be on working with what' fuentes/marquet_turn_the_ship/cap_02.md    # cambiar_forma_trabajar_conservar_plantilla paso 2 
+25:I think a better focus would be on working with what
+$ grep -n -o -F 'If you need to change out some people, let me know' fuentes/marquet_turn_the_ship/cap_02.md    # cambiar_forma_trabajar_conservar_plantilla paso 3 
+25:If you need to change out some people, let me know
+$ grep -n -o -F 'This was important because it sent the message to each crew member' fuentes/marquet_turn_the_ship/cap_02.md    # cambiar_forma_trabajar_conservar_plantilla paso 4 
+29:This was important because it sent the message to each crew member
+$ grep -n -o -F 'My challenge would be to use the same people and support team' fuentes/marquet_turn_the_ship/cap_02.md    # cambiar_forma_trabajar_conservar_plantilla paso 5 
+29:My challenge would be to use the same people and support team
+$ grep -n -o -F 'He presented me with a specific goal' fuentes/marquet_turn_the_ship/cap_02.md    # encargar_meta_especifica_dejar_libre_metodo paso 1 
+49:He presented me with a specific goal
+$ grep -n -o -F 'but did not tell me how to do it' fuentes/marquet_turn_the_ship/cap_02.md    # encargar_meta_especifica_dejar_libre_metodo paso 2 
+49:but did not tell me how to do it
+$ grep -n -o -F 'The other thing he was telling me was that the people and resources av' fuentes/marquet_turn_the_ship/cap_02.md    # encargar_meta_especifica_dejar_libre_metodo paso 3 
+49:The other thing he was telling me was that the people and resources av
+$ grep -n -o -F 'Consequently, the only thing we could change was how we acted and inte' fuentes/marquet_turn_the_ship/cap_02.md    # encargar_meta_especifica_dejar_libre_metodo paso 4 
+49:Consequently, the only thing we could change was how we acted and inte
+$ grep -n -o -F 'one hundred percent from me and my squadron staff' fuentes/marquet_turn_the_ship/cap_02.md    # encargar_meta_especifica_dejar_libre_metodo paso 5 
+33:one hundred percent from me and my squadron staff
+$ grep -n -o -F 'Checking out is fine, I said, but it should go more like this' fuentes/marquet_turn_the_ship/cap_04.md    # informar_cierre_jornada_conservar_propiedad_trabajo paso 1 
+35:Checking out is fine, I said, but it should go more like this
+$ grep -n -o -F 'The charts for next week' fuentes/marquet_turn_the_ship/cap_04.md    # informar_cierre_jornada_conservar_propiedad_trabajo paso 2 
+35:The charts for next week
+$ grep -n -o -F 'to show the rough plan to the captain tomorrow' fuentes/marquet_turn_the_ship/cap_04.md    # informar_cierre_jornada_conservar_propiedad_trabajo paso 3 
+35:to show the rough plan to the captain tomorrow
+$ grep -n -o -F 'for his qualification interview but will be able to make that up tomor' fuentes/marquet_turn_the_ship/cap_04.md    # informar_cierre_jornada_conservar_propiedad_trabajo paso 4 
+35:for his qualification interview but will be able to make that up tomor
+$ grep -n -o -F 'In this scenario, it is the department head, not the XO, who is respon' fuentes/marquet_turn_the_ship/cap_04.md    # informar_cierre_jornada_conservar_propiedad_trabajo paso 5 
+35:In this scenario, it is the department head, not the XO, who is respon
+$ grep -n -o -F 'Identify in the organization' fuentes/marquet_turn_the_ship/cap_06.md    # aplicar_ejercicio_codigo_genetico_control paso 1 
+101:Identify in the organization
+$ grep -n -o -F 'Identify decisions that are candidates for being pushed to the next lo' fuentes/marquet_turn_the_ship/cap_06.md    # aplicar_ejercicio_codigo_genetico_control paso 2 
+103:Identify decisions that are candidates for being pushed to the next lo
+$ grep -n -o -F 'For the easiest decisions, first draft language that changes the perso' fuentes/marquet_turn_the_ship/cap_06.md    # aplicar_ejercicio_codigo_genetico_control paso 3 
+105:For the easiest decisions, first draft language that changes the perso
+$ grep -n -o -F 'Next, ask each participant in the group to complete the following sent' fuentes/marquet_turn_the_ship/cap_06.md    # aplicar_ejercicio_codigo_genetico_control paso 4 
+107:Next, ask each participant in the group to complete the following sent
+$ grep -n -o -F 'Post those cards on the wall, go on a long break, and let the group mi' fuentes/marquet_turn_the_ship/cap_06.md    # aplicar_ejercicio_codigo_genetico_control paso 5 
+109:Post those cards on the wall, go on a long break, and let the group mi
+$ grep -n -o -F 'Last, when the group reconvenes, sort and rank the worries and begin t' fuentes/marquet_turn_the_ship/cap_06.md    # aplicar_ejercicio_codigo_genetico_control paso 6 
+111:Last, when the group reconvenes, sort and rank the worries and begin t
+$ grep -n -o -F 'The mechanism was to add a line to our planning documents' fuentes/marquet_turn_the_ship/cap_06.md    # asignar_responsable_unico_evolucion_planificada paso 1 
+127:The mechanism was to add a line to our planning documents
+$ grep -n -o -F 'I learned that focusing on who was put in charge was more important th' fuentes/marquet_turn_the_ship/cap_06.md    # asignar_responsable_unico_evolucion_planificada paso 2 
+127:I learned that focusing on who was put in charge was more important th
+$ grep -n -o -F 'Request permission to' fuentes/marquet_turn_the_ship/cap_07.md    # declarar_intencion_reemplazar_peticion_permiso paso 1 
+75:Request permission to
+$ grep -n -o -F 'I intend to' fuentes/marquet_turn_the_ship/cap_07.md    # declarar_intencion_reemplazar_peticion_permiso paso 2 
+53:I intend to
+55:I intend to
+61:I intend to
+61:I intend to
+61:I intend to
+63:I intend to
+63:I intend to
+65:I intend to
+87:I intend to
+101:I intend to
+109:I intend to
+125:I intend to
+$ grep -n -o -F 'Officers would state their intentions with' fuentes/marquet_turn_the_ship/cap_07.md    # declarar_intencion_reemplazar_peticion_permiso paso 3 
+55:Officers would state their intentions with
+$ grep -n -o -F 'You have to create a space for open decision by the entire team, even ' fuentes/marquet_turn_the_ship/cap_08.md    # resistir_dar_solucion_clasificar_decision_urgencia paso 1 
+107:You have to create a space for open decision by the entire team, even 
+$ grep -n -o -F 'This is harder than in the leader-follower approach because it require' fuentes/marquet_turn_the_ship/cap_08.md    # resistir_dar_solucion_clasificar_decision_urgencia paso 2 
+107:This is harder than in the leader-follower approach because it require
+$ grep -n -o -F 'If the decision needs to be made urgently, make it, then have the team' fuentes/marquet_turn_the_ship/cap_08.md    # resistir_dar_solucion_clasificar_decision_urgencia paso 3 
+117:If the decision needs to be made urgently, make it, then have the team
+$ grep -n -o -F 'If the decision needs to be made reasonably soon, ask for team input, ' fuentes/marquet_turn_the_ship/cap_08.md    # resistir_dar_solucion_clasificar_decision_urgencia paso 4 
+119:If the decision needs to be made reasonably soon, ask for team input, 
+$ grep -n -o -F 'If the decision can be delayed, then force the team to provide inputs' fuentes/marquet_turn_the_ship/cap_08.md    # resistir_dar_solucion_clasificar_decision_urgencia paso 5 
+121:If the decision can be delayed, then force the team to provide inputs
+$ grep -n -o -F 'You are all going to monitor your own departments and whatever is due' fuentes/marquet_turn_the_ship/cap_09.md    # eliminar_seguimiento_descendente_responsabilizar_dueno paso 1 
+71:You are all going to monitor your own departments and whatever is due
+$ grep -n -o -F 'And with that, we unburdened ourselves of the effort of maintaining th' fuentes/marquet_turn_the_ship/cap_09.md    # eliminar_seguimiento_descendente_responsabilizar_dueno paso 2 
+73:And with that, we unburdened ourselves of the effort of maintaining th
+$ grep -n -o -F 'not only to one-time critiques and problems such as the shore power mi' fuentes/marquet_turn_the_ship/cap_10.md    # acoger_inspectores_externos_fuente_aprendizaje paso 1 
+45:not only to one-time critiques and problems such as the shore power mi
+$ grep -n -o -F 'Concerning areas where we were doing something exceptionally innovativ' fuentes/marquet_turn_the_ship/cap_10.md    # acoger_inspectores_externos_fuente_aprendizaje paso 2 
+49:Concerning areas where we were doing something exceptionally innovativ
+$ grep -n -o -F 'Concerning areas where we were doing things poorly and needed help' fuentes/marquet_turn_the_ship/cap_10.md    # acoger_inspectores_externos_fuente_aprendizaje paso 3 
+49:Concerning areas where we were doing things poorly and needed help
+$ grep -n -o -F 'prior to any action, the operator paused and vocalized and gestured to' fuentes/marquet_turn_the_ship/cap_11.md    # tomar_accion_deliberada_pausar_vocalizar_gesticular paso 1 
+75:prior to any action, the operator paused and vocalized and gestured to
+$ grep -n -o -F 'Deliberate actions were not performed for the benefit of an observer o' fuentes/marquet_turn_the_ship/cap_11.md    # tomar_accion_deliberada_pausar_vocalizar_gesticular paso 2 
+75:Deliberate actions were not performed for the benefit of an observer o
+$ grep -n -o -F 'It applies at the moment someone signs a form, authorizes an action, o' fuentes/marquet_turn_the_ship/cap_11.md    # tomar_accion_deliberada_pausar_vocalizar_gesticular paso 3 
+95:It applies at the moment someone signs a form, authorizes an action, o
+$ grep -n -o -F 'Hand out a bunch of four-by-six cards and markers' fuentes/marquet_turn_the_ship/cap_12.md    # identificar_temas_formacion_tarjetas_decision paso 1 
+125:Hand out a bunch of four-by-six cards and markers
+$ grep -n -o -F 'Start with this sentence completion' fuentes/marquet_turn_the_ship/cap_12.md    # identificar_temas_formacion_tarjetas_decision paso 2 
+127:Start with this sentence completion
+$ grep -n -o -F 'Once you have the set of cards, post them on the wall, and go on break' fuentes/marquet_turn_the_ship/cap_12.md    # identificar_temas_formacion_tarjetas_decision paso 3 
+129:Once you have the set of cards, post them on the wall, and go on break
+$ grep -n -o -F 'Down-select to a couple subjects' fuentes/marquet_turn_the_ship/cap_12.md    # identificar_temas_formacion_tarjetas_decision paso 4 
+131:Down-select to a couple subjects
+$ grep -n -o -F 'Ask this question: What, technically, do the people at this level of m' fuentes/marquet_turn_the_ship/cap_12.md    # identificar_temas_formacion_tarjetas_decision paso 5 
+133:Ask this question: What, technically, do the people at this level of m
+$ grep -n -o -F 'Again, answer on the cards, post them, and go on break' fuentes/marquet_turn_the_ship/cap_12.md    # identificar_temas_formacion_tarjetas_decision paso 6 
+135:Again, answer on the cards, post them, and go on break
+$ grep -n -o -F 'a relevant list of topics for training' fuentes/marquet_turn_the_ship/cap_12.md    # identificar_temas_formacion_tarjetas_decision paso 7 
+137:a relevant list of topics for training
+$ grep -n -o -F 'When you set up the training' fuentes/marquet_turn_the_ship/cap_12.md    # identificar_temas_formacion_tarjetas_decision paso 8 
+139:When you set up the training
+$ grep -n -o -F 'Repeat the same message day after day, meeting after meeting, event af' fuentes/marquet_turn_the_ship/cap_13.md    # repetir_mensaje_invariable_diario_reunion_evento paso 1 
+119:Repeat the same message day after day, meeting after meeting, event af
+$ grep -n -o -F 'Sounds redundant, repetitive, and boring' fuentes/marquet_turn_the_ship/cap_13.md    # repetir_mensaje_invariable_diario_reunion_evento paso 2 
+119:Sounds redundant, repetitive, and boring
+$ grep -n -o -F 'when we wrote awards or evaluations, we tried to couch behaviors in th' fuentes/marquet_turn_the_ship/cap_14.md    # reforzar_principios_guia_lenguaje_prueba_conocimiento paso 1 
+89:when we wrote awards or evaluations, we tried to couch behaviors in th
+$ grep -n -o -F 'Go out and ask the first three people you see what they are' fuentes/marquet_turn_the_ship/cap_14.md    # reforzar_principios_guia_lenguaje_prueba_conocimiento paso 2 
+99:Go out and ask the first three people you see what they are
+filas: 110 | en su linea declarada: 110 | fuera: 0
