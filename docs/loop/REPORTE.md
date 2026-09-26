@@ -68127,3 +68127,42 @@ byte a byte los que barrio el auditor.
 |---|---|---|
 | `D80.1` | **EL METODO DE LA `77`, QUE EL ENCARGO DA POR BUENO**: cada `insertar` lo lanza `.v80ext/insertar.py` como UN proceso, y yo espero bloqueado en primer plano con `.v80ext/esperar.py` hasta su `.fin`, porque una llamada de mi herramienta no pasa de `600` s y un `insertar` de la `77` llego a `782,4` s. **Entre el lanzamiento y el `.fin` no lanzo el siguiente ni toco el dataset, la bitacora ni la bandeja.** Ninguno queda vivo al cerrar mi turno, y si uno no cabe, no lo lanzo | la letra de la corrida dice *primer plano* y *nunca en segundo plano*; es el mismo marcado que `D77.3`, `D75.4` y `D72.1` |
 | `D80.2` | **`.v80ext/insertar.py` comprueba, antes de lanzar, que el id es el de su fila en `.v78ext/orden.txt`**, y si no lo es no lanza (sale `2` sin escribir nada) | es una linea que la copia de la `77` no tenia; el encargo dice *la tanda en las filas de `.v78ext/orden.txt`* y lo leo como que la tanda la manda ese fichero y no mi teclado. No cambia lo que entra ni las lineas que se pasan; su cabecera lo dice |
+
+## 80.3. TAREA 3: LAS `20` FILAS DE `.v78ext/orden.txt`, UNA POR VEZ (`ACTA 77` `77.4`)
+
+Las copias del metodo de la `77`, con las rutas cambiadas (el `diff` contra su original da esas lineas y los comentarios de cabecera, y
+en `insertar.py` ademas la comprobacion de fila de `D80.2`): `.v80ext/insertar.py` (lineas de `.v78ext/veredictos_listos.txt`, sin las
+`#`, y bandeja `cuarentena/marquet_turn_the_ship/`), `.v80ext/esperar.py`, `.v80ext/contra_barrido.py` (contra
+`.v78ext/vecinos_<id>.json`), `.v80ext/relojes.py`, `.v80ext/fila.py`, `.v80ext/tras_insertar.sh` (con `_insertados/marquet_turn_the_ship`)
+y `.v80ext/empujar_fila.sh`; `.v80ext/arista.py` (sede `.v78ext/aristas_lectura.txt`, cita a la `ACTA 77` `77.4` y `77.5`, y la regla de
+veredicto mas: la fila que empieza por *D.29, con el criterio de la ACTA 75 seccion 75.4* va `CONTINUA`, dicho en su cabecera),
+`.v80ext/bloque_arista.sh` y `.v80ext/aristas_vuelta.py` (apertura en la linea `1172`, sedes en `.v78ext/`, tanda en las filas de
+`.v78ext/orden.txt`).
+
+<!-- TALLADO: parcial salida=.v80ext/censo_antes_t3.txt -->
+
+    $ bash .v80ext/censo.sh   # antes de la TAREA 3
+    nodos en dataset/nodos.jsonl        : 459
+    veredictos en bitacora              : 1172
+    pares mutuos                        : 1
+    bandeja cuarentena/marquet_turn_the_ship : 20
+    insertados de marquet_turn_the_ship : 0
+    cerrojos en procesos/               : 
+
+Es el de `80.0`: `459`, `1172`, `1`, `20`, `0`, y `procesos/` vacio. Las TAREAS 1 y 2 no movieron dato (el pago de `d104` escribe en
+`docs/loop/DEUDA.jsonl`, que no es dato del grafo).
+
+### Fila `1`: `ceder_control_reforzar_competencia_claridad`, **INSERTADO** en `494.3` s, codigo `0`, commit `ba4dce32`
+
+La aduana de hoy: **BLOQUEARIA** con `1` vecino(s) contra `479`; lineas `--veredicto` pasadas: `1`. Salida entera en `.v80ext/insertar_01_ceder_control_reforzar_competencia_claridad.txt`.
+
+<!-- TALLADO: parcial salida=.v80ext/insertar_01_ceder_control_reforzar_competencia_claridad.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `encargar_meta_especifica_dejar_libre_metodo` | similitud_texto | 0.372 | 0.000 | 0.486 | SANO |
+
+    $ python .v80ext/contra_barrido.py 01 ceder_control_reforzar_competencia_claridad
+    hoy 1 vecinos, barrido de la 78 1 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (459 grafo, 20 bandejas), en la 78 479 (459, 20)
+
+**El vecino es el de su bloque y la linea se paso tal cual**: ni nuevos ni caidos contra el barrido de la `78`, las tres seniales al digito; la poblacion, la misma (`459` mas `20`). Sin aristas en esta fila: `.v78ext/aristas_lectura.txt` la deja sin madre ni hijo (sus nueve filas son `NO SOSTENGO`). Bitacora de `1172` a `1173`, su linea SANO.
