@@ -1,0 +1,33 @@
+{
+ "id": "inspeccionar_reparto_informacion_notas_jefe",
+ "grafo": 459,
+ "bandejas": 20,
+ "vecinos": [
+  {
+   "id": "observar_reunion_rutinaria_senales_plantilla",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.358,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.452
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 5 del candidato contra paso 7 de observar_reunion_rutinaria_senales_plantilla"
+  },
+  {
+   "id": "contar_firmas_cadena_tramite_parado",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.379,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.428
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 7 de contar_firmas_cadena_tramite_parado"
+  }
+ ]
+}

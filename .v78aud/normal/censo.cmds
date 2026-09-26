@@ -1,0 +1,3 @@
+wc -l dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl config/pares_mutuos.jsonl
+for d in cuarentena/marquet_turn_the_ship cuarentena/_insertados/marquet_turn_the_ship cuarentena/gerber_emyth cuarentena/_insertados/gerber_emyth; do echo "$d $(find $d -maxdepth 1 -name "*.json" 2>/dev/null | wc -l)"; done; echo "procesos $(ls -A procesos/ | wc -l)"
+python .v70aud/poblacion.py

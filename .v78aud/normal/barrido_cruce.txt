@@ -1,0 +1,5 @@
+poblacion igual por candidato: {'True': 20} | suma: 20
+filas dirigidas: mias 52 | suyas 52 | {'igual en sede, seniales y quien la levanta': 52} | suma: 52
+sus lineas: 52 | por clase: {'SANO': 52} | suma: 52
+sus lineas contra mis filas dirigidas: iguales en el conjunto: SI
+sus lineas contra mis clases selladas: {'su clase es la mia': 52} | suma: 52 | distintas: []

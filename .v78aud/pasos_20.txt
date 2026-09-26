@@ -1,0 +1,190 @@
+===== acoger_inspectores_externos_fuente_aprendizaje | cuarentena\marquet_turn_the_ship\acoger_inspectores_externos_fuente_aprendizaje.json
+  titulo: Acoger a los inspectores externos como fuente de aprendizaje segun la fortaleza o debilidad del area inspeccionada
+  fuente: ['marquet_turn_the_ship']
+  cond: Cuando una organizacion externa (un inspector, un auditor, un regulador) va a revisar tu equipo o tu unidad, sea en una critica puntual o en una inspeccion completa.
+  P1. Usa a los inspectores no solo para las criticas puntuales de un problema, sino tambien en inspecciones completas: aprovechalos para difundir tus ideas en toda la organizacion, para aprender de otras unidades, y para documentar los problemas y mejorar la tuya. El texto lo dice asi: We would utilize the inspectors to disseminate our ideas throughout the squadron, to learn from others, and to document issues to improve the ship.
+  P2. En las areas donde tu equipo hace algo excepcionalmente innovador o experto, trata a los inspectores como aliados con quienes compartir esas buenas practicas. El texto lo dice asi: Concerning areas where we were doing something exceptionally innovative or expertly, we viewed the inspectors as advocates to share our good practices with.
+  P3. En las areas donde tu equipo hace las cosas mal y necesita ayuda, trata a los inspectores como fuente de informacion y de soluciones. El texto lo dice asi: Concerning areas where we were doing things poorly and needed help, we viewed them as sources of information and solutions.
+===== aplicar_ejercicio_codigo_genetico_control | cuarentena\marquet_turn_the_ship\aplicar_ejercicio_codigo_genetico_control.json
+  titulo: Aplicar con el liderazgo el ejercicio para hallar el codigo genetico del control y reescribirlo
+  fuente: ['marquet_turn_the_ship']
+  cond: Cuando quieres que tu liderazgo senior identifique que autoridad de decision empujar hacia el siguiente nivel de la organizacion, reunido en un retiro (off-site).
+  P1. Identifica en los documentos de politica de la organizacion donde esta especificada la autoridad de decision; puedes hacerlo con antelacion. El texto lo dice asi: identify in the organization's policy documents where decision-making authority is specified.
+  P2. Identifica las decisiones que son candidatas para empujarse al siguiente nivel mas bajo de la organizacion. El texto lo dice asi: identify decisions that are candidates for being pushed to the next lower level in the organization.
+  P3. Para las decisiones mas faciles, redacta primero el lenguaje que cambia quien tendra la autoridad de decision; si la decision es grande, puede que haya que desagregarla. El texto lo dice asi: for the easiest decisions, first draft language that changes the person who will have decision-making authority.
+  P4. Pide a cada participante del grupo que complete, en la tarjeta provista, la frase cuando pienso en delegar esta decision, me preocupa que. El texto lo dice asi: ask each participant in the group to complete the following sentence on the five-by-eight card provided.
+  P5. Pega esas tarjetas en la pared y haz un descanso largo, dejando que el grupo deambule leyendo los comentarios pegados. El texto lo dice asi: post those cards on the wall, go on a long break, and let the group mill around the comments posted on the wall.
+  P6. Al reconvocar al grupo, ordena y clasifica las preocupaciones y empieza a atacarlas. El texto lo dice asi: last, when the group reconvenes, sort and rank the worries and begin to attack them.
+===== asignar_responsable_unico_evolucion_planificada | cuarentena\marquet_turn_the_ship\asignar_responsable_unico_evolucion_planificada.json
+  titulo: Nombrar un jefe a cargo por cada evento en el documento de planificacion
+  fuente: ['marquet_turn_the_ship']
+  cond: Cuando estas planificando cualquier evento o evolucion y quieres que quede claro quien responde de que salga bien, en lugar de enumerar todo lo que podria salir mal.
+  P1. Al planificar cada evento o evolucion, anade una linea al documento de planificacion que nombre quien es el jefe a cargo de ese evento. El texto lo dice asi: the mechanism was to add a line to our planning documents that listed the Chief in Charge next to each event.
+  P2. No dediques el esfuerzo principal a evaluar todas las formas en que el evento podria salir mal: concentra la atencion en dejar senalado quien esta a cargo. El texto lo dice asi: I learned that focusing on who was put in charge was more important than trying to evaluate all the ways the event could go wrong.
+===== auditar_formacion_premios_ultima_fila | cuarentena\marquet_turn_the_ship\auditar_formacion_premios_ultima_fila.json
+  titulo: Auditar la reunion general y su entrega de premios desde la ultima fila, donde esta la mayor parte de la gente
+  fuente: ['marquet_turn_the_ship']
+  cond: Cuando tu organizacion ya tiene una reunion general periodica con anuncios o entrega de premios y quieres saber que llega de ella a la gente que esta al fondo.
+  P1. Ve a la reunion general que ya existe en tu organizacion, de las que se repiten un par de veces por semana. La del texto es la formacion de la manana en el muelle, con la tripulacion formada en cuadro detras de sus suboficiales y oficiales, y el comandante, el segundo y el suboficial mayor en el medio dando los anuncios.
+  P2. Andate por el borde del acto mientras sigue, que es lo que el texto hace: el comandante, el segundo y el suboficial mayor estaban en el medio dando los anuncios, y el autor se fue moviendo por la periferia.
+  P3. Ponte al fondo, donde esta la mayor parte de la gente.
+  P4. Comprueba si desde ahi se entiende lo que dice el jefe. En el texto no se distinguia nada: sus palabras salian sordas y confusas.
+  P5. Preguntale a alguien de la gente formada si el oye.
+  P6. Escucha la respuesta entera, tambien su segunda mitad. La del texto fue que no, pero que no importaba: si habia algo importante, el suboficial se lo diria en la reunion de division que venia despues de esta.
+  P7. Si en ese acto hay entrega de premios, mira a quien se premia. En el texto los premios eran para gente que se iba del barco o por el periodo de mantenimiento anterior.
+  P8. Mira si se invito a las familias. En el texto no se habia invitado a ninguna esposa.
+  P9. Mira si hay quien haga las fotos. En el texto no habia fotografo, y el propio texto escribe el coste: se perdio la ocasion de dar a conocer esos logros ante un publico mas amplio.
+  P10. Mira cuando se juntaron las menciones y las medallas. En el texto hubo una carrera de ultima hora para reunirlas.
+  P11. Mira si el que habla sabe los detalles de su gente. El texto dice que el comandante parecia no estar al tanto de donde venian los hombres y adonde iban, mientras se daba la bienvenida a los nuevos y se despedia a los que se iban.
+===== cambiar_forma_trabajar_conservar_plantilla | cuarentena\marquet_turn_the_ship\cambiar_forma_trabajar_conservar_plantilla.json
+  titulo: Cambiar como trabaja la gente que ya tienes en vez de renovarla, y decir por que
+  fuente: ['marquet_turn_the_ship']
+  cond: Cuando te haces cargo de un equipo que va mal, tienes plazo corto y te planteas cambiar a la gente.
+  P1. Cuenta el plazo que tienes antes de decidir nada sobre la gente. En el caso del texto eran seis meses hasta el despliegue, y el argumento que se da es que con ese plazo no hay tiempo de encontrar sustitutos.
+  P2. Centrate en trabajar con lo que tienes, que es lo que el texto recomienda por encima de mucha rotacion.
+  P3. Avisa a tu jefe si necesitas cambiar a alguien, que es el canal que el texto deja abierto sin que nadie lo pida: avisame si necesitas cambiar a alguien.
+  P4. Cuenta con el mensaje que manda no despedir a nadie, y que el texto pone como la razon de que aquello importara: a cada persona del equipo le llega que el que estaba mal no era el, sino el liderazgo.
+  P5. Fija entonces tu reto donde el texto lo fija: usar la misma gente y el mismo equipo de apoyo, y subir el resultado cambiando la forma en que interactuan y se comportan.
+===== ceder_control_reforzar_competencia_claridad | cuarentena\marquet_turn_the_ship\ceder_control_reforzar_competencia_claridad.json
+  titulo: Ceder el control sin ceder la responsabilidad, y reforzar la competencia tecnica y la claridad organizativa segun se cede
+  fuente: ['marquet_turn_the_ship']
+  cond: Cuando vas a cambiar tu organizacion de un modelo de lider a seguidores a uno de lider a lider y necesitas saber por donde se empieza y que hay que reforzar mientras se hace.
+  P1. Empieza soltando las ideas viejas para hacer sitio a las nuevas, que es lo que el texto pone en su primera parte.
+  P2. Cruza al modelo de lider a lider por el puente que el texto nombra, que es el control.
+  P3. Cede el control a otros de tu organizacion reteniendo la responsabilidad, que es como el texto define ese puente.
+  P4. Cuenta con la condicion que el texto dice haber descubierto sobre el control: solo funciona con una plantilla competente que entienda el proposito de la organizacion.
+  P5. Refuerza por eso las dos cosas que el texto nombra segun vas cediendo control: la competencia tecnica y la claridad organizativa.
+  P6. No lo trates como una secuencia que se recorre una vez: el texto dice que las partes del libro se agrupan en esas categorias, pero que en la realidad estos ciclos se repiten en circulos cada vez mayores.
+===== contar_firmas_cadena_tramite_parado | cuarentena\marquet_turn_the_ship\contar_firmas_cadena_tramite_parado.json
+  titulo: Seguir un tramite parado por su cadena de firmas, contarlas, y compararlas con lo que el formulario aguanta
+  fuente: ['marquet_turn_the_ship']
+  cond: Cuando alguien de abajo esta parado esperando la respuesta de un tramite interno de la casa y quieres saber si el problema es la gente o el circuito.
+  P1. Cuando en uno de tus recorridos veas a alguien de abajo con especial mala cara, preguntale como le va y no lo dejes en la primera respuesta. El texto dice que le apreto sobre como estaba.
+  P2. Deja que salga el tramite concreto que le tiene parado. En el texto es la papeleta de permiso que no habia vuelto, entregada semanas antes, con las vacaciones de Navidad encima.
+  P3. Mira lo que ese retraso le esta costando ya. El texto lo pone en billetes de avion que no habia comprado por no saber si le aprobaban el permiso, y que a esas alturas iban a salir caros si es que quedaban.
+  P4. Abre la norma escrita que dice quien firma ese tramite. En el texto el manual de organizacion y reglamento dice que el segundo comandante firma todas las papeletas de permiso de la tripulacion, y el comandante las de los oficiales.
+  P5. Recorre despues la cadena entera que la regla de cadena de mando obliga a pasar, puesto por puesto. El texto la nombra uno a uno: su contramaestre de primera al mando, el jefe de division, el jefe de departamento, el suboficial mayor del barco, el oficial de division, el jefe de departamento y por fin el segundo comandante.
+  P6. Cuenta las firmas. En el texto son siete, y el propio texto lo exclama: siete personas.
+  P7. Compara esa cuenta con lo que el formulario aguanta. El del texto tenia solo cinco lineas para firmas, y se partian lineas por la mitad con una regla para que cupieran todos.
+  P8. Busca el papel donde este parado. El del texto estaba en la bandeja de entrada de alguien.
+  P9. Resuelvelo en el acto para la persona que lo espera. El texto dice que se movio, lo localizo y se ocupo de el.
+  P10. Saca el veredicto sobre el sistema y no sobre la gente. El texto escribe las dos frases: con este marinero lo habiamos hecho mal, y fue el sistema, no las personas, lo que fallo.
+===== declarar_intencion_reemplazar_peticion_permiso | cuarentena\marquet_turn_the_ship\declarar_intencion_reemplazar_peticion_permiso.json
+  titulo: Reemplazar las frases que piden permiso por frases que declaran intencion, y responder con una aprobacion simple
+  fuente: ['marquet_turn_the_ship']
+  cond: Cuando vas a proponer una accion a quien tiene la autoridad de aprobarla, en vez de pedirle permiso o pedirle que decida por ti.
+  P1. Evita las frases que piden permiso o que otro decida por ti: solicito permiso para, me gustaria, que deberia hacer sobre, crees que deberiamos, podriamos. El texto lo dice asi: Request permission to . . . / I would like to . . . / What should I do about . . . / Do you think we should . . . / Could we . . .
+  P2. En su lugar, declara tu intencion con frases activas: tengo la intencion de, planeo, hare, haremos. El texto lo dice asi: I intend to . . . / I plan on . . . / I will . . . / We will . . .
+  P3. Quien recibe la intencion declarada responde con una aprobacion simple en vez de dar una orden, y deja que cada quien ejecute su propio plan. El texto lo dice asi: officers would state their intentions with 'I intend to . . .' and I would say, 'Very well.' Then each man would execute his plan.
+===== eliminar_seguimiento_descendente_responsabilizar_dueno | cuarentena\marquet_turn_the_ship\eliminar_seguimiento_descendente_responsabilizar_dueno.json
+  titulo: Eliminar el sistema de seguimiento descendente y responsabilizar a cada dueno de vigilar y completar lo suyo
+  fuente: ['marquet_turn_the_ship']
+  cond: Cuando existe un sistema centralizado, sostenido por un superior o una oficina de staff, dedicado a vigilar y reportar el estado de las tareas pendientes de otros en vez de a que esas tareas avancen.
+  P1. Dile a cada responsable de un area que el mismo, y no su superior, es quien debe vigilar sus propios pendientes y responder por completarlos. El texto lo dice asi: You are all going to monitor your own departments and whatever is due. You are responsible, not me and not the XO, for getting it done.
+  P2. Deja de mantener el sistema centralizado que solo vigilaba y reportaba el estado de esos pendientes, con sus reuniones de revision, porque ya no hace falta. El texto lo dice asi: we unburdened ourselves of the effort of maintaining the tickler.
+===== encargar_meta_especifica_dejar_libre_metodo | cuarentena\marquet_turn_the_ship\encargar_meta_especifica_dejar_libre_metodo.json
+  titulo: Encargar una meta especifica sin decir como se cumple, y dejar los recursos como estaban
+  fuente: ['marquet_turn_the_ship']
+  cond: Cuando le encargas a alguien que deje lista una organizacion o un equipo y tienes que decidir cuanto le dices sobre como hacerlo.
+  P1. Presenta una meta especifica. En el caso que el texto cuenta fue dejar el Santa Fe listo para el despliegue en todos los sentidos.
+  P2. No digas como se hace. El texto lo pone como la segunda mitad de lo mismo y es lo que separa este encargo de la microgestion.
+  P3. Di ademas la otra cosa que el texto senala que le estaban diciendo: que la gente y los recursos disponibles iban a ser los mismos que antes y los mismos que para cualquier otra unidad.
+  P4. Cuenta con la consecuencia que el texto saca de esas dos cosas juntas: lo unico que se puede cambiar entonces es como actua y como interactua la gente.
+  P5. Ofrece apoyo sin decidir por el encargado, que es como el texto recoge la oferta: cien por cien de apoyo, pero sin bajar a decirle lo que necesita.
+===== identificar_temas_formacion_tarjetas_decision | cuarentena\marquet_turn_the_ship\identificar_temas_formacion_tarjetas_decision.json
+  titulo: Identificar con un ejercicio de tarjetas los temas de formacion que hacen falta para poder delegar una decision concreta a un nivel de mando
+  fuente: ['marquet_turn_the_ship']
+  cond: En una reunion de liderazgo o un retiro corporativo (offsite) donde se quiere averiguar que decisiones podrian delegarse a un nivel de mando concreto y que necesita saber tecnicamente ese nivel para tomarlas bien.
+  P1. Reparte un monton de tarjetas de cuatro por seis pulgadas y marcadores entre el grupo. El texto lo dice asi: Hand out a bunch of four-by-six cards and markers.
+  P2. Empieza con esta frase para completar: 'Nuestra empresa seria mas efectiva si la direccion de [nivel] pudiera decidir sobre [tema]'; tu especificas el nivel de direccion y pides al grupo que rellene los temas. El texto lo dice asi: Start with this sentence completion: Our company would be more effective if [level] management could make decisions about [subject]. You specify the level of management but ask the group to fill in the subjects.
+  P3. Cuando tengas el conjunto de tarjetas, pegalas en la pared y haz una pausa; deja que la gente se pasee mirando lo que escribieron. El texto lo dice asi: Once you have the set of cards, post them on the wall, and go on break. Let people mill around looking at what they've written.
+  P4. Reduce la seleccion a un par de temas. El texto lo dice asi: Down-select to a couple subjects.
+  P5. Haz esta pregunta al grupo: tecnicamente, que necesitan saber las personas de este nivel de direccion para tomar esa decision? El texto lo dice asi: Ask this question: What, technically, do the people at this level of management need to know in order to make that decision?
+  P6. De nuevo, que respondan en las tarjetas, pegalas en la pared y haz otra pausa. El texto lo dice asi: Again, answer on the cards, post them, and go on break.
+  P7. Con eso tendras una lista de temas de formacion pertinente, y podras conectarla directamente con aumentar la capacidad de decision y control de los empleados, en una palabra, con su empoderamiento. El texto lo dice asi: Now you'll have a relevant list of topics for training, and you can directly connect the training topics to increased employee decision making and control, in a word, empowerment.
+  P8. Al montar la formacion, no olvides comunicar al grupo este razonamiento, para que sepan por que van a asistir y quieran ir, sabiendo que es su camino hacia mas autoridad de decision. El texto lo dice asi: When you set up the training, don't forget to communicate this thought process to the group. That way they'll know why they are going to attend training and want to attend, knowing it's their path to greater decision-making authority.
+===== informar_cierre_jornada_conservar_propiedad_trabajo | cuarentena\marquet_turn_the_ship\informar_cierre_jornada_conservar_propiedad_trabajo.json
+  titulo: Informar al superior al cerrar la jornada sin cederle la propiedad del trabajo
+  fuente: ['marquet_turn_the_ship']
+  cond: Cuando vas a cerrar el dia con tu superior, en el momento del reporte de salida (checkout), y quieres dejar constancia de tu trabajo sin que la responsabilidad de tu tarea se traslade a el.
+  P1. Al terminar el dia, presentate ante tu superior para el cierre de jornada, pero no le preguntes que mas necesita de ti: reportale tu trabajo. El texto lo dice asi: checking out is fine, I said, but it should go more like this.
+  P2. Reporta primero el estado de un trabajo en curso, nombrando el propio trabajo. El texto pone el ejemplo: the charts for next week's underway are coming along fine.
+  P3. Di cuando se vera el resultado o el proximo hito de ese trabajo. El texto sigue el mismo ejemplo: we'll be able to show the rough plan to the captain tomorrow.
+  P4. Si algo quedo sin hacer, dilo y da el plan de cuando se hara. El texto cierra el ejemplo asi: I wasn't able to see Petty Officer Smith for his qualification interview but will be able to make that up tomorrow.
+  P5. Cierra el reporte dejando la propiedad de la tarea donde corresponde: quien responde por el trabajo del jefe de departamento es el jefe de departamento, no el segundo al mando. El texto lo dice asi: in this scenario, it is the department head, not the XO, who is responsible for the department head's job. This is leadership at all levels.
+===== inspeccionar_reparto_informacion_notas_jefe | cuarentena\marquet_turn_the_ship\inspeccionar_reparto_informacion_notas_jefe.json
+  titulo: Inspeccionar con el responsable delante como se reparte la informacion que entra, y leer las notas que el jefe deja escritas en ella
+  fuente: ['marquet_turn_the_ship']
+  cond: Cuando quieres saber si el reparto de la informacion que entra cada dia a la organizacion le esta quitando decisiones a quien las tiene que tomar.
+  P1. Coge el canal por el que entra la informacion del dia y miralo con el responsable delante. El del texto es el tablero de mensajes: los treinta o cuarenta mensajes navales que llegaban al barco cada dia, impresos y repartidos en una tablilla con un sello de reparto que tenia un hueco para que cada uno pusiera sus iniciales al haberlos visto.
+  P2. Mira que clases de cosa entran por ahi. El texto nombra tres: generales y administrativos, que anunciaban cursos o cambios de requisitos de papeleo o actualizaciones de manuales; de material, que informaban de cambios en procedimientos de mantenimiento o pedian datos de una valvula concreta de un fabricante concreto; y operativos, que daban direccion al calendario del barco, le asignaban espacio de navegacion y le encargaban operaciones.
+  P3. Lee el orden de reparto que fija el protocolo, y quedate con el efecto que el propio texto le atribuye. En el suyo los mensajes van primero al comandante, luego al segundo y despues cadena de mando abajo; asi el comandante era el primero en saber cualquier cambio del calendario del barco, y el texto lo cierra diciendo que era asi como controlaban la informacion.
+  P4. Mira las notas que el jefe ha dejado escritas en lo que ya paso por sus manos. El texto pone dos textuales: mete este cambio de mensaje en la publicacion, y quiero un informe de esto para el viernes.
+  P5. Escucha lo que el responsable dice al leerlas. El del texto lo dice asi: me estan diciendo que haga cosas antes de que yo sepa siquiera que tengo cosas que hacer.
+  P6. Preguntale despues por que crees que el comandante y el segundo sienten que necesitan escribir esas cosas. Es la pregunta textual del autor.
+  P7. Quedate con el motivo que el subordinado atribuye al jefe. En el texto es que si algo no pasa y un equipo de inspeccion mira los registros, el comandante puede decir yo le dije que lo hiciera, y saca buena nota por estar muy implicado y por tener sus huellas por todas partes.
+  P8. Quedate con los dos costes que el subordinado nombra, que son los dos que el texto escribe: que le mandan hacer cosas que ya sabe que tiene que hacer, y que muchas veces le dicen exactamente como y cuando hacerlas, lo que le quita cualquier oportunidad de decidir que pudiera tener.
+===== observar_reunion_rutinaria_senales_plantilla | cuarentena\marquet_turn_the_ship\observar_reunion_rutinaria_senales_plantilla.json
+  titulo: Sentarse en una reunion rutinaria que ya existe y leerla por sus senales de gente en vez de por su asunto tecnico
+  fuente: ['marquet_turn_the_ship']
+  cond: Cuando entras nuevo en una organizacion y tienes delante una de sus reuniones de repaso rutinarias, de las que ya existen y no convocas tu.
+  P1. Asiste a una reunion rutinaria de repaso de la organizacion. La del texto es una reunion de jefes de departamento, un repaso rutinario de asuntos de mantenimiento.
+  P2. No atiendas al asunto tecnico: observa a la gente de la sala. El texto lo escribe como eleccion deliberada, y dice incluso que probablemente deberia haber atendido a lo tecnico porque ese sistema de misiles no estaba en su barco anterior y no lo habia mirado en su instruccion.
+  P3. Mira quien llega tarde y como llega. En el texto los asistentes iban entrando tarde.
+  P4. Mira si el jefe se queda fuera hasta que estan todos reunidos y entra despues, invitado. Es lo que el texto describe.
+  P5. Mira si la reunion empieza tarde.
+  P6. Mira a quien esta esperando cada uno. En esa reunion, dice el texto, todos estaban esperando a algun otro.
+  P7. Mira como esta el que expone. El texto describe al suyo serio y directo, pero frustrado y a la defensiva ante todas las preguntas que tenia que contestar.
+  P8. Mira como estan los demas. Los otros jefes de departamento y los suboficiales estaban aburridos.
+  P9. Lee la falta de puntualidad con la regla que el texto escribe: puede parecer una cosa pequena, pero a bordo de un submarino nuclear las cosas pequenas como la falta de puntualidad son indicativas de problemas mucho, mucho mayores.
+===== recorrer_organizacion_escuchar_plantilla | cuarentena\marquet_turn_the_ship\recorrer_organizacion_escuchar_plantilla.json
+  titulo: Recorrer la organizacion y escuchar a su gente en vez de revisar sus expedientes, con el recorrido guiado y la linterna como excusa de inspeccion
+  fuente: ['marquet_turn_the_ship']
+  cond: Cuando vas a tomar el mando de una organizacion que no conoces y el procedimiento de la casa te manda dedicar las primeras semanas a revisar sus expedientes.
+  P1. Pregunta primero por ti mismo cuando fue la ultima vez que caminaste tu organizacion para oir lo bueno, lo malo y lo feo de la gestion de arriba abajo. El texto abre con esa pregunta dirigida al lector y llama a caminar y escuchar su primer paso al preparar el mando.
+  P2. Deja de lado la revision de expedientes que el procedimiento manda. El texto enumera la lista que le tocaba repasar en dos semanas: registros de formacion, de escuela, administrativos, de premios, de ascensos, los de operacion y mantenimiento de la planta del reactor, el sistema de armas, los torpedos y misiles, calendarios, ejercicios y material clasificado; y dice que la ignoro.
+  P3. Gasta ese tiempo caminando la instalacion y hablando con la gente.
+  P4. Monta ademas una serie de recorridos en los que cada jefe o cada oficial te ensene sus propios espacios.
+  P5. Pideles que traigan una linterna para poder hacer esas inspecciones como se deben hacer.
+  P6. Lee el estado de esas linternas como dato y no como examen. El texto dice que no pretendia ser una prueba, y que estaban lamentables: rotas, con las pilas gastadas y las bombillas mortecinas, de forma que no se veia nada.
+  P7. Consiguete una que funcione y llevala encima a todas partes. El texto registra lo que vino despues sin pedirlo: pronto otros empezaron a llevar linternas que tambien funcionaban.
+===== reforzar_principios_guia_lenguaje_prueba_conocimiento | cuarentena\marquet_turn_the_ship\reforzar_principios_guia_lenguaje_prueba_conocimiento.json
+  titulo: Reforzar los principios guia usando su vocabulario en premios y evaluaciones, y comprobar si de verdad los conoce quien no los escribio
+  fuente: ['marquet_turn_the_ship']
+  cond: Cuando tu organizacion ya tiene principios guia escritos y quieres que dejen de ser un cartel en la pared y pasen a formar parte del tejido de la organizacion, con sus decisiones diarias.
+  P1. Cuando escribas premios o evaluaciones, procura describir el comportamiento en el lenguaje de tus principios guia, por ejemplo diciendo que un empleado mostro tal o cual principio al hacer algo. El texto lo dice asi: For example, when we wrote awards or evaluations, we tried to couch behaviors in the language of these principles. 'Petty Officer M exhibited Courage and Openness when reporting . . .'
+  P2. Pon a prueba si tus principios guia son reales de verdad: sal y pregunta a las tres primeras personas que veas en tu organizacion cuales son. El texto lo dice asi: Most of you have organizational principles. Go out and ask the first three people you see what they are.
+===== repetir_mensaje_invariable_diario_reunion_evento | cuarentena\marquet_turn_the_ship\repetir_mensaje_invariable_diario_reunion_evento.json
+  titulo: Repetir el mismo mensaje sin cambiarlo en la rutina diaria, en las reuniones y en cada evento, para que un cambio nuevo se vuelva imagen propia de la gente
+  fuente: ['marquet_turn_the_ship']
+  cond: Cuando estas implantando un cambio o una filosofia nueva en tu organizacion y notas que la gente lo escucha pero no logra imaginarlo de verdad, porque nunca ha visto antes algo parecido y lo interpreta con las imagenes de su experiencia previa.
+  P1. Repite el mismo mensaje dia tras dia, reunion tras reunion, evento tras evento. El texto lo dice asi: Repeat the same message day after day, meeting after meeting, event after event.
+  P2. No cambies el mensaje aunque suene redundante, repetitivo y aburrido: la alternativa, cambiarlo, produce confusion y falta de direccion. El texto lo dice asi: Sounds redundant, repetitive, and boring. But what's the alternative? Changing the message? That results in confusion and a lack of direction.
+===== resistir_dar_solucion_clasificar_decision_urgencia | cuarentena\marquet_turn_the_ship\resistir_dar_solucion_clasificar_decision_urgencia.json
+  titulo: Resistir dar la solucion y clasificar la decision del equipo segun su urgencia
+  fuente: ['marquet_turn_the_ship']
+  cond: Cuando el equipo enfrenta una decision y tu, como responsable, sientes el impulso de darles directamente la solucion en vez de dejar que la piensen.
+  P1. Resiste el impulso de dar tu la solucion: date tiempo, aunque sean solo unos minutos o segundos, para que el equipo entero reaccione y piense antes de decidir. El texto lo dice asi: you have to create a space for open decision by the entire team, even if that space is only a few minutes, or a few seconds, long.
+  P2. Anticipa que decisiones se acercan y avisa a tu equipo con antelacion de que hara falta tomar una, en vez de esperar a que surja de golpe. El texto lo dice asi: this is harder than in the leader-follower approach because it requires you to anticipate decisions and alert your team to the need for an upcoming one.
+  P3. Si la decision es urgente, tomala tu mismo y despues haz que el equipo la someta a critica y la evalue. El texto lo dice asi: if the decision needs to be made urgently, make it, then have the team red-team the decision and evaluate it.
+  P4. Si la decision se puede tomar en un plazo razonablemente proximo, pide la opinion del equipo, aunque sea breve, y despues decide. El texto lo dice asi: if the decision needs to be made reasonably soon, ask for team input, even briefly, then make the decision.
+  P5. Si la decision se puede retrasar, obliga al equipo a dar sus aportes sin forzar el consenso: no elimines las diferencias ni los votos disidentes, valora la disidencia. El texto lo dice asi: if the decision can be delayed, then force the team to provide inputs. Do not force the team to come to consensus... Cherish the dissension.
+===== seguir_frustrado_preguntar_implantacion_ideas | cuarentena\marquet_turn_the_ship\seguir_frustrado_preguntar_implantacion_ideas.json
+  titulo: Seguir al que viste frustrado en una reunion y preguntarle, idea por idea, como la implanto
+  fuente: ['marquet_turn_the_ship']
+  cond: Cuando acabas de ver en una reunion a un responsable frustrado o a la defensiva y quieres saber si la causa esta en el o en el sistema en que trabaja.
+  P1. Al acabar la reunion, siguelo a su sitio de trabajo. El texto lo dice asi: despues de la reunion segui a Dave a su camarote.
+  P2. Nombrale lo que viste. La frase del texto es que parecias un poco frustrado.
+  P3. Dejale contar la vision que tiene de como quiere que funcione lo suyo, y escuchale hasta el final. El texto registra que al escucharle se fue poniendo cada vez mas entusiasmado e impresionado, y que a el lo estaban ignorando.
+  P4. Segun vaya desgranando las ideas que tiene para mejorar su area, pregunta por cada una como la implanto.
+  P5. Fijate en si la respuesta es siempre la misma. En el texto lo fue todas las veces: alguien mas arriba en la cadena de mando no habia apoyado la iniciativa, asi que no paso nada.
+  P6. Mira si lo mismo pasa un piso mas abajo. El texto registra que los suboficiales que trabajaban para el tampoco parecian dispuestos a salir con ideas propias.
+  P7. Quedate con el ejemplo concreto que salga de ahi. El del texto es el adiestramiento de ataque con misiles Tomahawk que habia querido dar a los oficiales varias veces, con el examen de enero por delante, y que o no se llego a programar nunca o se cancelo.
+  P8. Lee el resultado como el texto lo lee: en esencia te estaba describiendo un problema propio del modelo de lider a seguidores, aunque no usara esas palabras.
+===== tomar_accion_deliberada_pausar_vocalizar_gesticular | cuarentena\marquet_turn_the_ship\tomar_accion_deliberada_pausar_vocalizar_gesticular.json
+  titulo: Tomar accion deliberada: pausar, vocalizar y gesticular antes de ejecutar cualquier accion para evitar errores automaticos
+  fuente: ['marquet_turn_the_ship']
+  cond: Cuando una persona esta por ejecutar cualquier accion en la interfaz entre el operador y el equipo o el proceso, incluyendo el momento de firmar un documento, autorizar una accion o introducir una pulsacion de teclado en un negocio de servicios.
+  P1. Antes de cualquier accion, haz una pausa, di en voz alta lo que estas a punto de hacer y senalalo con un gesto; solo despues de esa pausa deliberada ejecuta la accion. El texto lo dice asi: prior to any action, the operator paused and vocalized and gestured toward what he was about to do, and only after taking a deliberate pause would he execute the action.
+  P2. Recuerda que la accion deliberada no se hace para quedar bien ante un observador o un inspector: se hace igual si nadie te esta mirando, porque su objetivo es que tu mismo evites el error, no dar una actuacion. El texto lo dice asi: it didn't matter whether anyone was around or not. Deliberate actions were not performed for the benefit of an observer or an inspector. They weren't for show.
+  P3. Si tu negocio no tiene una interfaz fisica con la naturaleza, por ser de servicios o intelectual, aplica la accion deliberada en el momento de firmar un documento, autorizar una accion o introducir una pulsacion de teclado. El texto lo dice asi: If your business doesn't have an obvious interface with nature and is more service or intellectual, take deliberate action still applies, but in a slightly different way. It applies at the moment someone signs a form, authorizes an action, or enters a keystroke.

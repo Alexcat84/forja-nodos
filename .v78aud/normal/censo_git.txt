@@ -1,0 +1,28 @@
+$ git log --format="%h %an %cI %s" 90457524..e92b1f85 | cut -c1-140
+e92b1f85 alexcat84 2026-09-26T16:11:56-04:00 Apertura ciega de la vuelta 2, sellada antes de exponer el reporte
+463248f5 alexcat84 2026-09-26T15:02:37-04:00 Vuelta 78: la salida del hook del commit del cierre
+91bf4863 alexcat84 2026-09-26T15:01:22-04:00 Vuelta 78, T5: el cierre (censo 459, 1172, 1, 20, 0 al abrir y al cerrar; 3 PUENTE marcados y 0
+cc46a0da alexcat84 2026-09-26T14:49:06-04:00 Vuelta 78, T3 y T4: el barrido de las 20 de Marquet (20 de 20, poblacion 479, 52 pares, recogid
+d19671a1 alexcat84 2026-09-26T13:42:08-04:00 Vuelta 78, T1 y T2: los registros de la ACTA 76 y la fidelidad entera de las 20 de Marquet (110
+e9d03092 alexcat84 2026-09-26T13:29:25-04:00 Vuelta 78: lo pendiente del arnes antes de tocar nada
+$ git diff --name-status 90457524 463248f5 | grep -v "\.v78ext/" | awk '{print $1, $NF}' | sed "s|/[^/]*\.json$|/*.json|" | sort | uniq -c
+      2 M cuarentena/marquet_turn_the_ship/*.json
+      2 M docs/loop/*.json
+      1 M docs/loop/loop.log
+      1 M docs/loop/REPORTE.md
+      1 M docs/loop/TABLERO.jsonl
+$ git diff --name-status 90457524 463248f5 -- .v78ext | awk '{print $1}' | sort | uniq -c
+     86 A
+$ git diff --name-only 463248f5 e92b1f85
+docs/loop/APERTURA_CIEGA.md
+docs/loop/SELLOS_APERTURA.jsonl
+$ git log --format="%h %an" 90457524..e92b1f85 -- src tests scripts forja.py config esquema fuentes dataset bitacora censos | wc -l
+0
+$ git status --short -- dataset bitacora censos config esquema fuentes src scripts tests cuarentena forja.py | wc -l
+0
+$ git diff 90457524 463248f5 -- docs/loop/DEUDA.jsonl | grep -c "^[-+]{"
+0
+$ git diff --stat=200 90457524 463248f5 -- cuarentena/
+ cuarentena/marquet_turn_the_ship/informar_cierre_jornada_conservar_propiedad_trabajo.json | 6 +++---
+ cuarentena/marquet_turn_the_ship/seguir_frustrado_preguntar_implantacion_ideas.json       | 4 ++--
+ 2 files changed, 5 insertions(+), 5 deletions(-)

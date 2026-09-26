@@ -1,0 +1,2 @@
+diff --strip-trailing-cr .v64ext/pegado64.py .v78aud/normal/pegado78_aud.py | grep -c "^>"; diff --strip-trailing-cr .v64aud/normal/bloques_mudos.py .v78aud/normal/bloques_mudos78_aud.py | grep -c "^>"
+python .v78aud/normal/pegado78_aud.py; python .v78aud/normal/bloques_mudos78_aud.py

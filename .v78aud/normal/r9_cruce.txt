@@ -1,0 +1,2 @@
+reforzar_principios_guia_lenguaje_prueba_conocimiento paso 2 | solo el mio: prueba | su marca T | su nota: Go out and ask the first three people you see what they are
+pasos: 110 | por patron que casa: {'suyo+mio': 6, 'ninguno': 91, 'suyo': 12, 'mio': 1} | suma: 110

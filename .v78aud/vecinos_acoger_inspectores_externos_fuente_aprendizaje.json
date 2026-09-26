@@ -1,0 +1,85 @@
+{
+ "id": "acoger_inspectores_externos_fuente_aprendizaje",
+ "grafo": 459,
+ "bandejas": 20,
+ "vecinos": [
+  {
+   "id": "tomar_accion_deliberada_pausar_vocalizar_gesticular",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.457,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.399
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 2 del candidato contra paso 2 de tomar_accion_deliberada_pausar_vocalizar_gesticular"
+  },
+  {
+   "id": "resistir_dar_solucion_clasificar_decision_urgencia",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.412,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.41
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 3 de resistir_dar_solucion_clasificar_decision_urgencia"
+  },
+  {
+   "id": "declarar_intencion_reemplazar_peticion_permiso",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.406,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.393
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 3 de declarar_intencion_reemplazar_peticion_permiso"
+  },
+  {
+   "id": "reforzar_principios_guia_lenguaje_prueba_conocimiento",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.397,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.376
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 2 del candidato contra paso 2 de reforzar_principios_guia_lenguaje_prueba_conocimiento"
+  },
+  {
+   "id": "seguir_frustrado_preguntar_implantacion_ideas",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.356,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.294
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 1 de seguir_frustrado_preguntar_implantacion_ideas"
+  },
+  {
+   "id": "recorrer_organizacion_escuchar_plantilla",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.353,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.327
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 6 de recorrer_organizacion_escuchar_plantilla"
+  }
+ ]
+}

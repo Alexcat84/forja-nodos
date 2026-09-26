@@ -1,0 +1,7 @@
+$ sha1sum -c --quiet .v78aud/huellas_al_barrer.txt && echo "las 20 fichas y el grafo de hoy: mismas huellas que al barrer en mi fase ciega"
+las 20 fichas y el grafo de hoy: mismas huellas que al barrer en mi fase ciega
+$ for f in $(awk '$1 ~ /^[0-9]+$/ {print $2}' .v78ext/pasos_y_huellas.txt); do h=$(git hash-object cuarentena/marquet_turn_the_ship/$f.json | cut -c1-10); grep -q "$f .* $h " .v78ext/pasos_y_huellas.txt && echo igual || echo "DISTINTA $f"; done | sort | uniq -c
+     20 igual
+$ git diff --stat 90457524 e9d03092 -- docs/loop/TABLERO.jsonl | tail -1; git diff --stat e9d03092 e92b1f85 -- docs/loop/TABLERO.jsonl | wc -l
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+0

@@ -1,0 +1,59 @@
+{
+ "id": "declarar_intencion_reemplazar_peticion_permiso",
+ "grafo": 459,
+ "bandejas": 20,
+ "vecinos": [
+  {
+   "id": "resistir_dar_solucion_clasificar_decision_urgencia",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.422,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.439
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 2 del candidato contra paso 4 de resistir_dar_solucion_clasificar_decision_urgencia"
+  },
+  {
+   "id": "acoger_inspectores_externos_fuente_aprendizaje",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.404,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.35
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 1 de acoger_inspectores_externos_fuente_aprendizaje"
+  },
+  {
+   "id": "informar_cierre_jornada_conservar_propiedad_trabajo",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.352,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.391
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 2 del candidato contra paso 3 de informar_cierre_jornada_conservar_propiedad_trabajo"
+  },
+  {
+   "id": "reforzar_principios_guia_lenguaje_prueba_conocimiento",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.355,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.353
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 2 del candidato contra paso 2 de reforzar_principios_guia_lenguaje_prueba_conocimiento"
+  }
+ ]
+}

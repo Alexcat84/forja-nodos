@@ -1,0 +1,1 @@
+resistir_dar_solucion_clasificar_decision_urgencia poblacion 479 (459 grafo mas 20 bandejas) vecinos 5

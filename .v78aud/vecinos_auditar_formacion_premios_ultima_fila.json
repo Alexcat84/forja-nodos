@@ -1,0 +1,33 @@
+{
+ "id": "auditar_formacion_premios_ultima_fila",
+ "grafo": 459,
+ "bandejas": 20,
+ "vecinos": [
+  {
+   "id": "observar_reunion_rutinaria_senales_plantilla",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.37,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.489
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 8 del candidato contra paso 6 de observar_reunion_rutinaria_senales_plantilla"
+  },
+  {
+   "id": "recorrer_organizacion_escuchar_plantilla",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.353,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.462
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 3 de recorrer_organizacion_escuchar_plantilla"
+  }
+ ]
+}
