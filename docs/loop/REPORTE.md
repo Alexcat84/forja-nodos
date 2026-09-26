@@ -64988,3 +64988,23 @@ La aduana de hoy: **BLOQUEARIA** con `3` vecino(s) contra `479`; lineas `--vered
     hoy 3 vecinos, barrido de la 73 3 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (434 grafo, 45 bandejas), en la 73 479 (430, 49)
 
 **Los tres vecinos son los de su bloque y las tres lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `73`, las tres seniales al digito; la poblacion, `479` (`434` mas `45`). **Su arista hacia `desarrollar_primer_curso_entrenamiento` queda EN COLA** (su linea `CONTINUA` con `madre=`), y se cablea al entrar la fila `6`. **Con `pedir_critica_anonima_curso_entrenamiento_dictado` su linea es `SANO`**, abuela y nieta (`D73.9`, `ACTA 72` `72.5`), y no deja arista. Bitacora de `1099` a `1102`.
+
+### Fila `6`: `desarrollar_primer_curso_entrenamiento`, **INSERTADO** en `524.6` s, codigo `0`, commit `3b27784d`
+
+La aduana de hoy: **BLOQUEARIA** con `2` vecino(s) contra `479`; lineas `--veredicto` pasadas: `2`. Salida entera en `.v75ext/insertar_06_desarrollar_primer_curso_entrenamiento.txt`.
+
+<!-- TALLADO: parcial salida=.v75ext/insertar_06_desarrollar_primer_curso_entrenamiento.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `pedir_critica_anonima_curso_entrenamiento_dictado` | similitud_texto | 0.450 | 0.250 | 0.451 | CONTINUA |
+| `priorizar_lista_entrenamiento_subordinados` | similitud_texto | 0.409 | 0.143 | 0.394 | CONTINUA |
+
+**Arista en cola (`D.29`)**: `desarrollar_primer_curso_entrenamiento > pedir_critica_anonima_curso_entrenamiento_dictado`
+
+**Arista cableada por la aduana en el acto**: `priorizar_lista_entrenamiento_subordinados > desarrollar_primer_curso_entrenamiento`
+
+    $ python .v75ext/contra_barrido.py 06 desarrollar_primer_curso_entrenamiento
+    hoy 2 vecinos, barrido de la 73 2 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (435 grafo, 44 bandejas), en la 73 479 (430, 49)
+
+**Los dos vecinos son los de su bloque y las dos lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `73`, las tres seniales al digito; la poblacion, `479` (`435` mas `44`). **La aduana cablea en el acto `priorizar_lista_entrenamiento_subordinados > desarrollar_primer_curso_entrenamiento`**, la que la fila `5` dejo en cola (segunda de las `3` esperadas), y **deja EN COLA `desarrollar_primer_curso_entrenamiento > pedir_critica_anonima_curso_entrenamiento_dictado`** hasta la fila `7`. Bitacora de `1102` a `1104`.
