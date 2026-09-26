@@ -66301,3 +66301,34 @@ La aduana de hoy: **BLOQUEARIA** con `4` vecino(s) contra `479`; lineas `--vered
 
 
 **Los cuatro vecinos son los de su bloque y las cuatro lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `76`, las tres seniales al digito; la poblacion, `479` (`444` mas `35`). **Segunda de las `10` aristas esperadas en el grafo.** Bitacora de `1127` a `1132`: sus cuatro lineas SANO y la de la arista.
+
+### Fila `9`: `unificar_color_forma_vestuario_modelo`, **INSERTADO** en `457.4` s, codigo `0`, commit `c8b3c4d2`
+
+La aduana de hoy: **BLOQUEARIA** con `2` vecino(s) contra `479`; lineas `--veredicto` pasadas: `2`. Salida entera en `.v77ext/insertar_09_unificar_color_forma_vestuario_modelo.txt`.
+
+<!-- TALLADO: parcial salida=.v77ext/insertar_09_unificar_color_forma_vestuario_modelo.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `dar_valor_constante_cuatro_publicos` | similitud_texto | 0.425 | 0.000 | 0.421 | SANO |
+| `documentar_trabajo_manual_operaciones` | similitud_texto | 0.358 | 0.000 | 0.425 | SANO |
+
+    $ python .v77ext/contra_barrido.py 09 unificar_color_forma_vestuario_modelo
+    hoy 2 vecinos, barrido de la 76 2 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (445 grafo, 34 bandejas), en la 76 479 (437, 42)
+
+**La arista por lectura `D.37` de la fila, cableada en el acto con los dos extremos vivos**: `fingir_prototipo_cinco_mil_replicas > unificar_color_forma_vestuario_modelo`, paso `10` de la madre (`cap_11` `L55`), `--veredicto SANO` por `D.53`. Salida entera en `.v77ext/arista_fingir_prototipo_cinco_mil_replicas__unificar_color_forma_vestuario_modelo.txt`:
+
+    $ python forja.py arista --madre fingir_prototipo_cinco_mil_replicas --hijo unificar_color_forma_vestuario_modelo --paso 10 --razon <fila 33> --veredicto SANO --cita-veredicto <fila 33>
+    DECLARACION DE ARISTA POR LECTURA (D.37)
+      madre: fingir_prototipo_cinco_mil_replicas
+      hijo : unificar_color_forma_vestuario_modelo
+      paso citado de la madre: 10
+        Regla 6: el modelo usara un codigo uniforme de color, vestuario e instalaciones.
+      señales del par: familia_id 0.0, paso_contra_nodo 0.476, similitud_texto 0.276
+        NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+    GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: fingir_prototipo_cinco_mil_replicas > unificar_color_forma_vestuario_modelo
+      razon en bitacora/VEREDICTOS.jsonl
+
+
+**Los dos vecinos son los de su bloque y las dos lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `76`, las tres seniales al digito; la poblacion, `479` (`445` mas `34`). **Tercera de las `10` aristas esperadas en el grafo.** Bitacora de `1132` a `1135`: sus dos lineas SANO y la de la arista.

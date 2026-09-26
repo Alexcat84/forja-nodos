@@ -1,0 +1,13 @@
+$ python forja.py arista --madre fingir_prototipo_cinco_mil_replicas --hijo unificar_color_forma_vestuario_modelo --paso 10 --razon <fila 33> --veredicto SANO --cita-veredicto <fila 33>
+DECLARACION DE ARISTA POR LECTURA (D.37)
+  madre: fingir_prototipo_cinco_mil_replicas
+  hijo : unificar_color_forma_vestuario_modelo
+  paso citado de la madre: 10
+    Regla 6: el modelo usara un codigo uniforme de color, vestuario e instalaciones.
+  señales del par: familia_id 0.0, paso_contra_nodo 0.476, similitud_texto 0.276
+    NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: fingir_prototipo_cinco_mil_replicas > unificar_color_forma_vestuario_modelo
+  razon en bitacora/VEREDICTOS.jsonl
+
+codigo 0
