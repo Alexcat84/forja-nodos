@@ -63364,3 +63364,26 @@ La aduana de hoy: **BLOQUEARIA** con `1` vecino(s) contra `479`; lineas `--vered
     hoy 1 vecinos, barrido de la 71 1 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (424 grafo, 55 bandejas), en la 71 479 (410, 69)
 
 **El vecino es el de su bloque y la linea se paso tal cual**: ni nuevos ni caidos contra el barrido de la `71`, las tres seniales al digito. Sin aristas en esta fila. **Con ella, `cap_12` queda entero en el grafo.**
+
+### Fila `16`: `elegir_estilo_direccion_madurez_relevante_tarea`, **INSERTADO** en `976.5` s, codigo `0`, commit `f1ee4868`
+
+La aduana de hoy: **ENTRARIA** con `0` vecino(s) contra `479`; lineas `--veredicto` pasadas: `0`. Salida entera en `.v72ext/insertar_16_elegir_estilo_direccion_madurez_relevante_tarea.txt`.
+
+<!-- TALLADO: parcial salida=.v72ext/insertar_16_elegir_estilo_direccion_madurez_relevante_tarea.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+
+    $ python .v72ext/contra_barrido.py 16 elegir_estilo_direccion_madurez_relevante_tarea
+    hoy 0 vecinos, barrido de la 71 0 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (425 grafo, 54 bandejas), en la 71 479 (410, 69)
+
+**Entra limpia, sin vecinos, como en el barrido de la `71`.** La aduana escribio ademas el censo de `atribuciones`. **`d170`, como mando el encargo (TAREA `3.3`)**: la aduana de hoy **no levanta el par** con `fijar_frecuencia_reunion_individual_madurez_tarea`, asi que entra **sin linea ni arista**, como decidio la conjunta de la `69` (`D69.3`, `ACTA 68` `68.5`); pagada al volver este `insertar`, con el `--como` entero en `docs/loop/DEUDA.jsonl`:
+
+<!-- TALLADO: parcial salida=.v72ext/d170.txt -->
+
+    $ grep -c "fijar_frecuencia_reunion_individual_madurez_tarea" .v72ext/insertar_16_elegir_estilo_direccion_madurez_relevante_tarea.txt
+    0
+    $ python scripts/deuda.py --pagar d170 --vuelta 72 --como "<la de abajo>"
+    PAGADA d170 en la vuelta 72
+
+**Con ella, `cap_13` tiene dentro su primera de dos**; la otra es la fila `17`.

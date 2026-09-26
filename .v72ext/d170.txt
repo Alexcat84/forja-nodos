@@ -1,0 +1,4 @@
+$ grep -c "fijar_frecuencia_reunion_individual_madurez_tarea" .v72ext/insertar_16_elegir_estilo_direccion_madurez_relevante_tarea.txt
+0
+$ python scripts/deuda.py --pagar d170 --vuelta 72 --como "<la de abajo>"
+PAGADA d170 en la vuelta 72
