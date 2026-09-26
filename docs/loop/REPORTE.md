@@ -66602,3 +66602,17 @@ La aduana de hoy: **BLOQUEARIA** con `2` vecino(s) contra `479`; lineas `--vered
 
 
 **Los dos vecinos son los de su bloque y las dos lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `76`, las tres seniales al digito; la poblacion, `479` (`456` mas `23`). **Octava y novena de las `10` aristas esperadas en el grafo**: el hijo queda con dos madres, la cabeza de las seis reglas y la de los cuatro componentes. Bitacora de `1166` a `1170`: sus dos lineas SANO y las dos de las aristas.
+
+### Fila `21`: `aplicar_ocho_reglas_juego_personas`, **INSERTADO** en `782.4` s, codigo `0`, commit `015f3907`
+
+La aduana de hoy: **ENTRARIA** con `0` vecino(s) contra `479`; lineas `--veredicto` pasadas: `0`. Salida entera en `.v77ext/insertar_21_aplicar_ocho_reglas_juego_personas.txt`.
+
+<!-- TALLADO: parcial salida=.v77ext/insertar_21_aplicar_ocho_reglas_juego_personas.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+
+    $ python .v77ext/contra_barrido.py 21 aplicar_ocho_reglas_juego_personas
+    hoy 0 vecinos, barrido de la 76 0 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (457 grafo, 22 bandejas), en la 76 479 (437, 42)
+
+**Entra sin vecinos, como en el barrido de la `76`**, y la tabla de arriba sale vacia por eso; la poblacion, `479` (`457` mas `22`). Sin aristas en esta fila (`D76.15` en el juego, sostenido en la `ACTA 75` `75.5`). Bitacora sin movimiento: `1170`.
