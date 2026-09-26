@@ -1270,3 +1270,5 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-26 | aplicar_ejercicio_codigo_genetico_control | nombre_largo | El ejercicio de un retiro con el liderazgo senior para localizar donde vive la autoridad de decision en los documentos de politica y redactar el cambio que la mueve hacia abajo | castellano | - |
 | 2026-09-26 | aplicar_ejercicio_codigo_genetico_control | otro_idioma | genetic code for control | ingles | - |
 | 2026-09-26 | aplicar_ejercicio_codigo_genetico_control | otro_idioma | off-site | ingles | - |
+| 2026-09-26 | asignar_responsable_unico_evolucion_planificada | nombre_largo | La linea que se anade a los documentos de planificacion para dejar escrito quien es el jefe a cargo de cada evento, en vez de enumerar todo lo que podria salir mal | castellano | - |
+| 2026-09-26 | asignar_responsable_unico_evolucion_planificada | otro_idioma | chief in charge | ingles | - |
