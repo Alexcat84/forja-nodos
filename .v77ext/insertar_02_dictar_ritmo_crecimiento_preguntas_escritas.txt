@@ -1,0 +1,82 @@
+fila 02, dictar_ritmo_crecimiento_preguntas_escritas, lineas --veredicto: 8
+  --veredicto descubrir_motivacion_sentido_persona|SANO|Ajenos: la senial 3 casa el paso 1 de este (entender los procesos clave, L279) con el Escucha del paso 10 del vecino del grafo, de scott_radical_candor, que descubre que da sentido al trabajo de cada persona. Sin paso comun.
+  --veredicto cuantificar_impacto_innovacion_6_pasos|SANO|El mismo par que cuantificar lee desde su lado: ajenos, uno dicta el ritmo de crecimiento (L279 a L287) y el otro cuenta antes y despues de una Innovacion (cap_12 L95). La similitud de 0,420, por encima de 0,4, se lee primero y no es gemelo.
+  --veredicto hacer_trabajo_futuro_imaginar_negocio|SANO|Ajenos de dos capitulos: el vecino, de cap_04, hace el trabajo del emprendedor de imaginar el negocio (L285 a L291); este dicta el ritmo de crecimiento con preguntas y un plan escrito (L279 a L287). Los dos miran al futuro; ninguno usa el producto del otro.
+  --veredicto planificar_tres_pasos_demanda_estado_brecha|SANO|Ajenos: el vecino del grafo, de grove_high_output, planifica en tres pasos, demanda, estado presente y brecha; este dicta el ritmo con tres conocimientos, preguntas y un plan escrito (L279 a L287). Dos doctrinas de planificar de dos libros, sin jerarquia ni paso comun (6.1).
+  --veredicto operar_modelo_gente_destreza_minima|SANO|Ajenos: el vecino, de cap_11, opera el modelo con la destreza minima; este dicta el ritmo de crecimiento. Comparten la prosa de Gerber.
+  --veredicto responder_primer_aviso_renuncia_subordinado|SANO|Ajenos: el vecino del grafo escucha el primer aviso de renuncia; este dicta el ritmo de crecimiento. La similitud es de prosa, sin paso comun.
+  --veredicto cambiar_saludo_cliente_dos_ramas|SANO|El mismo par que cambiar_saludo lee desde su lado: ajenos, la similitud de 0,423, por encima de 0,4, se lee primero y es de la forma de pregunta del mismo autor.
+  --veredicto interrogar_negocio_cinco_preguntas|SANO|Ajenos de dos capitulos: los dos son listas de preguntas que el dueno se hace, pero el vecino, de cap_11, pregunta como trabajar sobre el negocio y no dentro (L255 a L263), y este donde, cuando, cuanto capital y cuanta gente para crecer (L281). Ninguno usa el producto del otro.
+inicio 2026-09-26 09:46:16
+======================================================================
+ADUANA DE INSERCION, candidato 'dictar_ritmo_crecimiento_preguntas_escritas'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (438 del grafo mas 41 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 8. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino descubrir_motivacion_sentido_persona  [Descubrir de donde saca cada persona el sentido de su trabajo, en vez de proveerle tu un proposito]
+    levantada por: paso_contra_nodo
+    similitud_texto    0.203 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.603 (umbral 0.60)
+    paso 1 del candidato contra paso 10 de descubrir_motivacion_sentido_persona
+
+  vecino cuantificar_impacto_innovacion_6_pasos  [Cuantificar el impacto real de una innovacion en tu negocio con los seis conteos que el libro enumera]
+    levantada por: similitud_texto
+    similitud_texto    0.420 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.478 (umbral 0.60)
+    paso 8 del candidato contra paso 5 de cuantificar_impacto_innovacion_6_pasos
+
+  vecino hacer_trabajo_futuro_imaginar_negocio  [Hacer el trabajo futuro del emprendedor: dejar atras el oficio y sostener el dialogo interno hasta la pregunta que imagina el negocio]
+    levantada por: similitud_texto
+    similitud_texto    0.385 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.442 (umbral 0.60)
+    paso 7 del candidato contra paso 7 de hacer_trabajo_futuro_imaginar_negocio
+
+  vecino planificar_tres_pasos_demanda_estado_brecha  [Planificar en los tres pasos del libro: la demanda del entorno, el estado presente, y lo que hay que hacer para conciliarlos]
+    levantada por: similitud_texto
+    similitud_texto    0.350 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.439 (umbral 0.60)
+    paso 3 del candidato contra paso 4 de planificar_tres_pasos_demanda_estado_brecha
+
+  vecino operar_modelo_gente_destreza_minima  [Operar el modelo con gente del nivel de destreza mas bajo posible, y construir el sistema que la apalanca]
+    levantada por: similitud_texto
+    similitud_texto    0.377 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.439 (umbral 0.60)
+    paso 6 del candidato contra paso 6 de operar_modelo_gente_destreza_minima
+
+  vecino responder_primer_aviso_renuncia_subordinado  [Responder al primer momento en que un subordinado valioso avisa que quiere renunciar: dejar lo que haces, escucharlo sin discutir y comprarte tiempo antes de actuar]
+    levantada por: similitud_texto
+    similitud_texto    0.352 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.423 (umbral 0.60)
+    paso 3 del candidato contra paso 7 de responder_primer_aviso_renuncia_subordinado
+
+  vecino cambiar_saludo_cliente_dos_ramas  [Cambiar el saludo del vendedor por una pregunta con dos ramas de respuesta ya escritas]
+    levantada por: similitud_texto
+    similitud_texto    0.423 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.355 (umbral 0.60)
+    paso 8 del candidato contra paso 4 de cambiar_saludo_cliente_dos_ramas
+
+  vecino interrogar_negocio_cinco_preguntas  [Ponerte a trabajar en tu negocio como si fuera un prototipo de preproduccion, y hacerte las cinco preguntas del capitulo]
+    levantada por: similitud_texto
+    similitud_texto    0.367 (umbral 0.35)
+    familia_id         0.125 (umbral 0.30)
+    paso_contra_nodo   0.418 (umbral 0.60)
+    paso 8 del candidato contra paso 4 de interrogar_negocio_cinco_preguntas
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 439
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 8
+
+======================================================================
+fin 2026-09-26 09:54:45 | codigo de salida 0 | 509.2 s

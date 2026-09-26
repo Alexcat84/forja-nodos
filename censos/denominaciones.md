@@ -1163,3 +1163,6 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-26 | hacer_trabajo_futuro_imaginar_negocio | nombre_largo | El trabajo que el libro llama Future Work: el dialogo interno del emprendedor, transcrito entero por el texto, y la pregunta que lo cierra | castellano | - |
 | 2026-09-26 | hacer_trabajo_futuro_imaginar_negocio | otro_idioma | Future Work | ingles | - |
 | 2026-09-26 | hacer_trabajo_futuro_imaginar_negocio | otro_idioma | the dreaming question | ingles | - |
+| 2026-09-26 | dictar_ritmo_crecimiento_preguntas_escritas | nombre_largo | El trabajo del dueno cuando el negocio va a crecer: entender los tres asuntos clave, hacerse las preguntas que el libro enumera, y articular el plan por escrito para que otros lo entiendan | castellano | - |
+| 2026-09-26 | dictar_ritmo_crecimiento_preguntas_escritas | otro_idioma | rate of growth | ingles | - |
+| 2026-09-26 | dictar_ritmo_crecimiento_preguntas_escritas | otro_idioma | contingency plans | ingles | - |
