@@ -68433,3 +68433,9 @@ La aduana de hoy: **ENTRARIA** con `0` vecino(s) contra `479`; lineas `--veredic
     hoy 0 vecinos, barrido de la 78 0 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (474 grafo, 5 bandejas), en la 78 479 (459, 20)
 
 **Entra sin vecinos, como en el barrido de la `78`**, y la tabla de arriba sale vacia por eso; la poblacion, `479` (`474` mas `5`). Sin aristas en esta fila: sus filas con `ceder_control_reforzar_competencia_claridad` e `informar_cierre_jornada_conservar_propiedad_trabajo` son `NO SOSTENGO`, y la de `delegar_tarea_base_comun_seguimiento` es la FRONTERA DECLARADA de `d183`. **Desde aqui vive en el grafo**, y la frontera de Grove se escribe en la TAREA `4`, despues de la fila `20`: escribirla ahora cambiaria el texto de un nodo que las filas `17` a `20` miden contra su barrido de la `78`. Bitacora sin movimiento: `1216`.
+
+#### 80.D bis. **EL DISCUTIBLE DEL ORDEN DE LA TAREA 4, MARCADO AL ENTRAR LA FILA 16** (`EXTRACTOR.md` 8)
+
+| | que | por que lo marco |
+|---|---|---|
+| `D80.3` | **la frontera de Grove (`d183`) se escribe despues de la fila `20`, no justo despues de la `16`** | el encargo dice *cuando la fila `16` viva en el grafo, y no antes*, que fija el suelo y no el techo. `corregir --anade` cambia el texto de `eliminar_seguimiento_descendente_responsabilizar_dueno`, y las filas `17` a `20` se comparan con su barrido de la `78` (TAREA `3.3`), hecho contra el texto sin frontera: escribirla en medio podia mover una senial y levantar un vecino sin linea que no es de la ficha sino mio. Si el auditor lee que tocaba en el acto, el dato es el mismo y lo que cambia es el orden de dos commits |
