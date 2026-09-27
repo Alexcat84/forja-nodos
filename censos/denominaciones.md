@@ -1286,3 +1286,5 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-26 | tomar_accion_deliberada_pausar_vocalizar_gesticular | otro_idioma | take deliberate action | ingles | - |
 | 2026-09-26 | identificar_temas_formacion_tarjetas_decision | nombre_largo | El ejercicio de tarjetas de cuatro por seis pulgadas para una reunion de liderazgo, que conecta las decisiones que se quiere delegar a un nivel de mando con los temas tecnicos de formacion que esa delegacion exige | castellano | - |
 | 2026-09-26 | identificar_temas_formacion_tarjetas_decision | otro_idioma | divest control, increase competence | ingles | - |
+| 2026-09-26 | repetir_mensaje_invariable_diario_reunion_evento | nombre_largo | Repetir dia tras dia, reunion tras reunion y evento tras evento el mismo mensaje sin variarlo, en vez de cambiarlo para que no suene redundante | castellano | - |
+| 2026-09-26 | repetir_mensaje_invariable_diario_reunion_evento | otro_idioma | continually and consistently repeat the message | ingles | - |
