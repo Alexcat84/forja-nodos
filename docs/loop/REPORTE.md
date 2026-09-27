@@ -67980,7 +67980,7 @@ cierre las vuelve a contar con este parrafo y los ficheros del cierre ya dentro.
 
 ---
 
-# VUELTA 80 DE LA LINEA SERIAL, lote 5 (`marquet_turn_the_ship`), **CLASE INSERCION**: las `20` fichas de Marquet, una por vez, con la arista por lectura; `d104` y `d183`; y el cierre de la campania
+# VUELTA 80 DE LA LINEA SERIAL: **PRIMER EQUIPO COMPLETO** en `69d407da` (tag `primer-equipo-completo`), `479` nodos: scott_radical_candor `142`, zhuo_manager `136`, grove_high_output `92`, smart_who `59`, gerber_emyth `22`, marquet_turn_the_ship `20`, onu_consumidor `6`, manual_sistema_conocimiento `2`. Lote 5 (`marquet_turn_the_ship`), **CLASE INSERCION**: las `20` de Marquet dentro, una por vez, con la arista por lectura; `d104` y `d183` pagadas
 
 *Encargo escrito por el auditor al cerrar la `ACTA 78`. Clase impresa por `python scripts/deuda.py --clase 80` (`LIBRE`, `80.0`) y
 declarada `INSERCION` en la cabecera del encargo. **Uno por vez, cada `insertar` esperado en primer plano hasta su `.fin`, y ninguno en
@@ -67995,9 +67995,27 @@ falte es exactamente lo que no tiene fila.
 | `T2` | lo que entra es lo que se leyo: las huellas de las `20` fichas y del grafo | **CERRADA** (`80.2`): identicas a `.v78ext/pasos_y_huellas.txt`; `sha1sum -c` sin quejas |
 | `T3` | las `20` filas de `.v78ext/orden.txt`, una por vez, con la arista por lectura | **CERRADA** (`80.3`): las `20` insertadas, sus `52` lineas pasadas, la `1` arista esperada en el grafo por los dos lados; `0` nodos viejos cambiados |
 | `T4` | `d183`: la frontera de Grove, escrita despues de que entre su nodo | **CERRADA** (`80.4`): `corregir` en la linea `1226`, el texto byte a byte el de `.v79ext/frontera_grove.txt`; `d183` pagada |
-| `T5` | el cierre, y si todo entro, el de la campania | abierta |
+| `T5` | el cierre, y si todo entro, el de la campania | **CERRADA** (`80.5`): censo `459`, `1172`, `1`, `20`, `0` al abrir y `479`, `1226`, `1`, `0`, `20` al cerrar; `3` PUENTE marcados y `0` que entraron; guardas y cierre estricto en verde; **tag `primer-equipo-completo` en `69d407da`** |
 
 ## 80.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
+
+**PRIMER EQUIPO COMPLETO.** El grafo quedo completo en el commit `69d407da` (la TAREA 4, posterior a la fila `20`), y ahi va el tag
+`primer-equipo-completo`, empujado (`80.5.f`). **El censo por libro**, contado por `.v80ext/censo_libros.py` de `dataset/nodos.jsonl`
+por la clave de la primera fuente de cada nodo, con su suma:
+
+<!-- TALLADO: parcial salida=.v80ext/censo_libros_tabla.txt -->
+
+    $ python .v80ext/censo_libros.py | sed -n '2,10p'
+      scott_radical_candor              142
+      zhuo_manager                      136
+      grove_high_output                  92
+      smart_who                          59
+      gerber_emyth                       22
+      marquet_turn_the_ship              20
+      onu_consumidor                      6
+      manual_sistema_conocimiento         2
+      SUMA                              479  (nodos en el fichero: 479)
+
 
 **Lo pendiente, commiteado primero** (`EXTRACTOR.md` 1): `loop.log`, `ultimo_auditor.json` y `ultimo_extractor.json` del arnes,
 empujados como `fcb1cdc9`, hook verde.
@@ -68741,3 +68759,109 @@ final y el cierre pega la ultima:
 
 **Gate, guiones, resolutor y la suite de `382` pruebas, en verde**, con el grafo en `479` y la suite corrida en serie, despues de la
 ultima escritura de dato (la de la TAREA 4).
+
+### 80.5.f. **EL CIERRE DE LA CAMPANIA: ENTRARON LAS `20`, `d183` ESTA PAGADA Y TODO SALIO VERDE** (`PARALELO.md` seccion `8` punto `4`)
+
+**Las tres condiciones, cada una con su sede**: las `20` de la bandeja dentro (`80.3.b`, `.v80ext/t3_cierre.txt`: bandeja `0`,
+`_insertados` `20`, `20` nuevos que son las `20` filas); `d183` pagada (`80.4`, `.v80ext/t4_pago.txt`); y gate, guiones, suite y cierre
+estricto en verde (`80.5.e`; `.v80ext/cierre_reporte.txt`, `CIERRE VERDE`, `rc=0`). **El tablero, el censo por libro con su suma, las
+aristas entre libros nombradas, y el `diff` vacio desde el commit del grafo completo**, en ese orden (salida entera en
+`.v80ext/campania.txt`):
+
+<!-- TALLADO: parcial salida=.v80ext/campania.txt -->
+
+    $ python forja.py tablero | sed -n '1,26p'
+    TABLERO DE FRENTES (D.49, D.50): sede unica del estado de la campania
+      registro: docs/loop/TABLERO.jsonl
+
+      prio lote clave                          estado                 dueno                 band ult cap
+      --------------------------------------------------------------------------------------------------------
+      .    1    onu_consumidor                 INSERTADO              NINGUNO                  0  cap_02
+      .    2    smart_who                      INSERTADO              NINGUNO                  0  cap_05
+      .    3    zhuo_manager                   INSERTADO              NINGUNO                  0       .
+      .    4    scott_radical_candor           INSERTADO              NINGUNO                  0  cap_14
+      .    11   gerber_emyth_cap17_reservado   ANULADO                NINGUNO                  0       .
+      1    7    grove_high_output              INSERTADO              NINGUNO                  0  cap_18
+      2    9    gerber_emyth                   INSERTADO              NINGUNO                  0  cap_22
+      3    5    marquet_turn_the_ship          INSERTADO              NINGUNO                  0  cap_17
+      4*   8    bernerslee_bananas             SIN EMPEZAR            NINGUNO                  0       .
+      5*   6    openstax_business_ethics       SIN EMPEZAR            NINGUNO                  0       .
+      6*   10   openstax_org_behavior          SIN EMPEZAR            NINGUNO                  0       .
+
+      prioridad: el orden del mundo 11 (D.51). El asterisco es FUERA DE
+      CAMPANIA: no se extrae, queda en bandeja para la aduana de a uno.
+      Sin prioridad: ya dentro del mundo 11, no hay nada que elegir.
+
+      libros CON DUEÑO ahora mismo: 0
+
+      MUNDO 11 COMPLETO: los 7 libros del corte estan INSERTADOS (D.60).
+      Lo que toca es el CIERRE (PARALELO.md): PARA_ALEXIS de MUNDO 11
+      COMPLETO con el censo por libro, y parar.
+    $ python .v80ext/censo_libros.py
+    CENSO POR LIBRO (clave de la primera fuente de cada nodo de dataset/nodos.jsonl)
+      scott_radical_candor              142
+      zhuo_manager                      136
+      grove_high_output                  92
+      smart_who                          59
+      gerber_emyth                       22
+      marquet_turn_the_ship              20
+      onu_consumidor                      6
+      manual_sistema_conocimiento         2
+      SUMA                              479  (nodos en el fichero: 479)
+    nodos con mas de una fuente: 0
+    aristas en el grafo: 220 | que no viven por los dos lados: 0  | entre libros distintos: 1
+      despedir_persona_respeto_franqueza (zhuo_manager) > despedir_persona_franqueza_radical (scott_radical_candor)
+      pares de libros: zhuo_manager > scott_radical_candor: 1
+    $ git log -1 --format='%H %an %cI %s' 69d407da | cut -c1-140
+    69d407da4de8389a4f624b2126064e16ff11b3fb alexcat84 2026-09-26T21:01:47-04:00 Vuelta 80, T4: d183 pagada, la frontera de Grove escrita por co
+    $ git diff --stat 69d407da HEAD -- dataset bitacora censos cuarentena config src | wc -l
+    0
+    $ git log --oneline 69d407da..HEAD -- dataset bitacora censos cuarentena config src | wc -l
+    0
+
+**Marquet `INSERTADO` y la linea del mundo `11` completa**: *los 7 libros del corte estan INSERTADOS (D.60)*. **El censo por libro suma
+`479`**, los nodos del fichero, y **ningun nodo lleva dos fuentes**. **De las `220` aristas del grafo, todas viven por los dos lados, y `1`
+es entre libros distintos**: `despedir_persona_respeto_franqueza` (Zhuo) a `despedir_persona_franqueza_radical` (Scott). **El commit del
+grafo completo es `69d407da`**, la TAREA 4, posterior a la fila `20` (`e4d88c5f`): **desde ahi, `0` lineas de `diff` y `0` commits** en
+`dataset`, `bitacora`, `censos`, `cuarentena`, `config` y `src`. **El tag, sobre ese commit, y empujado** (salida entera en `.v80ext/tag.txt`):
+
+<!-- TALLADO: parcial salida=.v80ext/tag.txt -->
+
+    $ git tag -a primer-equipo-completo -m "PRIMER EQUIPO COMPLETO: los 7 libros del mundo 11 INSERTADOS; el grafo en 479 nodos (scott_radical_candor 142, zhuo_manager 136, grove_high_output 92, smart_who 59, gerber_emyth 22, marquet_turn_the_ship 20, onu_consumidor 6, manual_sistema_conocimiento 2), 220 aristas, 1 entre libros. Commit de la vuelta 80 en que el grafo quedo completo: las 20 de Marquet dentro y d183 pagada." 69d407da
+    rc=0
+    $ git rev-parse primer-equipo-completo^{commit}
+    69d407da4de8389a4f624b2126064e16ff11b3fb
+    $ git push origin primer-equipo-completo
+    To https://github.com/Alexcat84/forja-nodos.git
+     * [new tag]           primer-equipo-completo -> primer-equipo-completo
+    rc=0
+    $ git ls-remote --tags origin primer-equipo-completo
+    d80dda756f082d45a03563e787b41365ebb5295c	refs/tags/primer-equipo-completo
+
+**`primer-equipo-completo` apunta a `69d407da`** en local y en `origin` (el `ls-remote` da el objeto del tag anotado). **No se mueve
+despues.** El tablero dice que lo que toca es el cierre con `PARA_ALEXIS.md` y parar; **no lo escribo**: el de cierre es de la `ACTA 79`,
+que audita esta tanda y, si la sostiene, lo escribe y deja `PROMPT_SIGUIENTE.md` vacio (`PARALELO.md` seccion `8` punto `5`).
+
+| | que | por que lo marco |
+|---|---|---|
+| `D80.4` | **la linea de cabecera empieza por `# VUELTA 80 DE LA LINEA SERIAL:` y lleva `PRIMER EQUIPO COMPLETO` justo detras**, con el hash y el censo por libro; y la primera seccion (`80.0`) abre con el mismo bloque, puesto al cerrar y dicho asi | el encargo pide que el tramo *abra con* `PRIMER EQUIPO COMPLETO`; dejo el prefijo `# VUELTA 80 ` porque es como `pegado80.py`, `bloques_mudos80.py` y las copias del auditor encuentran el tramo. **EJECUTADO** en este cierre |
+
+### 80.5.g. **EL CIERRE ESTRICTO, AL FINAL**
+
+`.v80ext/cierre_reporte.txt` es la corrida de `python scripts/cerrar_reporte.py` con las secciones `80.5.a` a `80.5.e` ya escritas
+(`CIERRE VERDE`, `rc=0`, de `21:09:31` a `21:14:18`); se vuelve a correr despues de esta seccion y de la cabecera, y su ultima salida es
+la de `.v80ext/cierre_reporte_final.txt`. El hook del commit del cierre lo corre otra vez sobre el arbol final.
+
+**`R5`, remedido sobre el tramo entero** (con la cabecera, `80.5.f` y esta seccion dentro; salida en `.v80ext/r5_final.txt`):
+
+<!-- TALLADO: parcial salida=.v80ext/r5_final.txt -->
+
+    $ python .v80ext/pegado80.py
+    bloques abiertos con `$` en el tramo de la vuelta 80 : 70
+    bloques que ROMPEN R1 (ACTA 60 60.15)                : 0
+    $ python .v80ext/bloques_mudos80.py
+    bloques abiertos con `$`: 36 | comandos `$`: 70 | comandos sin ninguna linea de salida en su bloque: 0
+
+**El cierre estricto final, VERDE, `rc=0`** (`.v80ext/cierre_reporte_final.txt`, de `21:17:06` a `21:21:55`): `0` tablas que difieren de
+su instrumento, `0` rutas que caen de `1115`, y la tabla de cierre sin ninguna celda que difiera del dato. **Ningun rojo.** Ningun
+`insertar` ni ningun otro trabajo queda vivo: los `20` volvieron con su `.fin` dentro del turno, y `procesos/` esta vacio (`80.5.a`).

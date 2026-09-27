@@ -1,0 +1,5 @@
+$ python .v80ext/pegado80.py
+bloques abiertos con `$` en el tramo de la vuelta 80 : 70
+bloques que ROMPEN R1 (ACTA 60 60.15)                : 0
+$ python .v80ext/bloques_mudos80.py
+bloques abiertos con `$`: 36 | comandos `$`: 70 | comandos sin ninguna linea de salida en su bloque: 0

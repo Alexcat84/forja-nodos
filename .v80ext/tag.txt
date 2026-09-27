@@ -1,0 +1,10 @@
+$ git tag -a primer-equipo-completo -m "PRIMER EQUIPO COMPLETO: los 7 libros del mundo 11 INSERTADOS; el grafo en 479 nodos (scott_radical_candor 142, zhuo_manager 136, grove_high_output 92, smart_who 59, gerber_emyth 22, marquet_turn_the_ship 20, onu_consumidor 6, manual_sistema_conocimiento 2), 220 aristas, 1 entre libros. Commit de la vuelta 80 en que el grafo quedo completo: las 20 de Marquet dentro y d183 pagada." 69d407da
+rc=0
+$ git rev-parse primer-equipo-completo^{commit}
+69d407da4de8389a4f624b2126064e16ff11b3fb
+$ git push origin primer-equipo-completo
+To https://github.com/Alexcat84/forja-nodos.git
+ * [new tag]           primer-equipo-completo -> primer-equipo-completo
+rc=0
+$ git ls-remote --tags origin primer-equipo-completo
+d80dda756f082d45a03563e787b41365ebb5295c	refs/tags/primer-equipo-completo
