@@ -68607,3 +68607,137 @@ cambian. **La linea que `corregir` escribio es la `1226` de la bitacora**, `CORR
 arista y `1` de `corregir`). **La frontera de Zhuo no se escribe** (`ACTA 78` `78.3`).
 
 **`T4` CERRADA.**
+
+## 80.5. TAREA 5: EL CIERRE, Y EL DE LA CAMPANIA (`PARALELO.md` seccion `8` puntos `4` y `5`)
+
+### 80.5.a. **El censo, antes y despues de cada tarea, y al cerrar**
+
+| momento | nodos | bitacora | pares | bandeja de Marquet | `_insertados` de Marquet | `procesos/` | de donde sale |
+|---|---:|---:|---:|---:|---:|---|---|
+| al abrir (`80.0`) | 459 | 1172 | 1 | 20 | 0 | vacio | `.v80ext/apertura.txt` |
+| antes de la TAREA 3 | 459 | 1172 | 1 | 20 | 0 | vacio | `.v80ext/censo_antes_t3.txt` |
+| tras la fila `20`, antes de la TAREA 4 | 479 | 1225 | 1 | 0 | 20 | vacio | `.v80ext/censo_antes_t4.txt` |
+| despues de la TAREA 4 | 479 | 1226 | 1 | 0 | 20 | vacio | `.v80ext/t4_pago.txt` |
+
+<!-- TALLADO: parcial salida=.v80ext/censo_cierre.txt -->
+
+    $ bash .v80ext/censo.sh 2>/dev/null   # al cerrar
+    nodos en dataset/nodos.jsonl        : 479
+    veredictos en bitacora              : 1226
+    pares mutuos                        : 1
+    bandeja cuarentena/marquet_turn_the_ship : 0
+    insertados de marquet_turn_the_ship : 20
+    cerrojos en procesos/               : 
+    $ python .v70aud/poblacion.py
+    poblacion: 479 | por sede: {'grafo': 479} | suma: 479
+    $ python scripts/retirar_paso.py --ver
+    RETIRADAS DECLARADAS QUE SIGUEN VIVAS EN EL CAMPO (D.54)
+      poblacion: dataset/nodos.jsonl, sin filtrar
+      encontradas: 0
+
+**Lo que se movio, medido, y nada mas:** el grafo gano `20` filas (una por ficha que entro); la bandeja de Marquet perdio `20` y
+`_insertados` gano `20`; la bitacora gano `54` lineas: las `52` de veredicto de lo que entro (`.v80ext/t3_lineas.txt`), `1` de la
+arista y `1` de `corregir`. Los pares mutuos, en `1`. **La poblacion es ya solo el grafo**: `479`, sin bandeja. `procesos/` vacio.
+
+### 80.5.b. **`PASOS INVENTADOS POR CAPITULO`, de lo que ENTRO** (`D.30`, `ACTA 77` `77.3`)
+
+Contado por `.v80ext/pasos_inventados.py` (copia de `.v77ext/pasos_inventados.py` con la lectura en `.v78ext/fidelidad.tsv`, la base en
+`e9d0309`, la bandeja de Marquet y la tanda de `.v78ext/orden.txt`, dicho en su cabecera), sobre las fichas de `_insertados` cruzadas con
+el grafo, y un PUENTE cuyo paso cambio en la ficha contra `e9d0309` cuenta como corregido:
+
+<!-- TALLADO: parcial salida=.v80ext/t5_pasos.txt -->
+
+    $ python .v80ext/pasos_inventados.py
+    candidato que ENTRO                                          cap     pasos   T   P corr
+    ceder_control_reforzar_competencia_claridad                  cap_01      6   6   0    0
+    cambiar_forma_trabajar_conservar_plantilla                   cap_02      5   5   0    0
+    encargar_meta_especifica_dejar_libre_metodo                  cap_02      5   5   0    0
+    observar_reunion_rutinaria_senales_plantilla                 cap_03      9   9   0    0
+    seguir_frustrado_preguntar_implantacion_ideas                cap_03      8   7   1    1
+    contar_firmas_cadena_tramite_parado                          cap_03     10  10   0    0
+    inspeccionar_reparto_informacion_notas_jefe                  cap_03      8   8   0    0
+    recorrer_organizacion_escuchar_plantilla                     cap_03      7   7   0    0
+    auditar_formacion_premios_ultima_fila                        cap_03     11  11   0    0
+    informar_cierre_jornada_conservar_propiedad_trabajo          cap_04      5   3   2    2
+    aplicar_ejercicio_codigo_genetico_control                    cap_06      6   6   0    0
+    asignar_responsable_unico_evolucion_planificada              cap_06      2   2   0    0
+    reforzar_principios_guia_lenguaje_prueba_conocimiento        cap_14      2   2   0    0
+    declarar_intencion_reemplazar_peticion_permiso               cap_07      3   3   0    0
+    resistir_dar_solucion_clasificar_decision_urgencia           cap_08      5   5   0    0
+    eliminar_seguimiento_descendente_responsabilizar_dueno       cap_09      2   2   0    0
+    acoger_inspectores_externos_fuente_aprendizaje               cap_10      3   3   0    0
+    tomar_accion_deliberada_pausar_vocalizar_gesticular          cap_11      3   3   0    0
+    identificar_temas_formacion_tarjetas_decision                cap_12      8   8   0    0
+    repetir_mensaje_invariable_diario_reunion_evento             cap_13      2   2   0    0
+    entraron: 20 de la tanda de 20 | pasos sin fila de lectura: 0 []
+
+<!-- TALLADO: salida=.v80ext/pasos_inventados.txt -->
+
+| capitulo | candidatos que entraron | pasos | PUENTE marcados | por ciento | corregidos en la ficha | PUENTE que entro |
+|---|---:|---:|---:|---:|---:|---:|
+| `cap_01` | 1 | 6 | 0 | 0,00 | 0 | 0 |
+| `cap_02` | 2 | 10 | 0 | 0,00 | 0 | 0 |
+| `cap_03` | 6 | 53 | 1 | 1,89 | 1 | 0 |
+| `cap_04` | 1 | 5 | 2 | 40,00 | 2 | 0 |
+| `cap_06` | 2 | 8 | 0 | 0,00 | 0 | 0 |
+| `cap_07` | 1 | 3 | 0 | 0,00 | 0 | 0 |
+| `cap_08` | 1 | 5 | 0 | 0,00 | 0 | 0 |
+| `cap_09` | 1 | 2 | 0 | 0,00 | 0 | 0 |
+| `cap_10` | 1 | 3 | 0 | 0,00 | 0 | 0 |
+| `cap_11` | 1 | 3 | 0 | 0,00 | 0 | 0 |
+| `cap_12` | 1 | 8 | 0 | 0,00 | 0 | 0 |
+| `cap_13` | 1 | 2 | 0 | 0,00 | 0 | 0 |
+| `cap_14` | 1 | 2 | 0 | 0,00 | 0 | 0 |
+
+**`3` PUENTE marcados sobre `110` pasos, los `3` corregidos en la ficha y `0` que entraron**, como la `ACTA 77` `77.3` firmo; el peor
+capitulo sobre el texto de al abrir la `78` es `cap_04` (`2` de `5`), y en lo que entro, `0`. **`R9`**: esta vuelta **no marco ningun
+paso**; la cuenta publica las marcas de `.v78ext/fidelidad.tsv`, que la `78` cruzo con `R9` (`.v78ext/r9.txt`, `55` lineas) y la
+`ACTA 77` `77.3` firmo. No hay marca nueva que cruzar.
+
+### 80.5.c. **`D.61`: CADA DISCUTIBLE, EJECUTADO O CERRADO**
+
+| | que | estado |
+|---|---|---|
+| `D80.1` | el metodo de la `77`: cada `insertar` lanzado como un proceso y esperado en primer plano hasta su `.fin` | **EJECUTADO** en las `20` filas: `20` `.fin` con codigo `0` (`.v80ext/t3_lineas.txt`), ninguno lanzado antes del `.fin` del anterior, y ninguno vivo al cerrar (`procesos/` vacio, `80.5.a`) |
+| `D80.2` | la comprobacion de fila en `.v80ext/insertar.py` | **EJECUTADO**: las `20` filas pasaron la comprobacion (las `20` salidas de `.v80ext/insertar_*.txt` existen, y la comprobacion no escribe nada cuando para) |
+| `D80.3` | la frontera de Grove despues de la fila `20` | **EJECUTADO**: `corregir` corrio con las `20` dentro (`.v80ext/t4.txt`), y las filas `17` a `20` dieron `0` seniales distintas contra la `78` |
+
+**Ninguno abierto.**
+
+### 80.5.d. **`R5`, medido en cada bloque `$` de mi tramo**
+
+`.v80ext/pegado80.py` y `.v80ext/bloques_mudos80.py` son copias de `.v64ext/pegado64.py` y `.v64aud/normal/bloques_mudos.py` con la
+cabecera del tramo cambiada a la `80` y nada mas (el `diff` da esas lineas). Corridos al escribir esta seccion; se vuelven a correr al
+final y el cierre pega la ultima:
+
+<!-- TALLADO: parcial salida=.v80ext/r5.txt -->
+
+    $ python .v80ext/pegado80.py
+    bloques abiertos con `$` en el tramo de la vuelta 80 : 52
+    bloques que ROMPEN R1 (ACTA 60 60.15)                : 0
+    $ python .v80ext/bloques_mudos80.py
+    bloques abiertos con `$`: 29 | comandos `$`: 52 | comandos sin ninguna linea de salida en su bloque: 0
+
+### 80.5.e. **Las guardas**
+
+<!-- TALLADO: parcial salida=.v80ext/cierre_gate.txt -->
+
+    $ python forja.py gate; python forja.py guiones; python forja.py resolutor
+    GATE VERDE.
+      nodos verificados: 479
+      guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+    rc=0
+    BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+    rc=0
+    nodos vivos: 479
+    nodos deprecados (archivo): 0
+    alias registrados: 0
+    rc=0
+    $ grep 'total:' .v80ext/cierre_tests.txt; tail -n 1 .v80ext/cierre_tests.txt; cat .v80ext/suite_hora.txt
+      total: 382 pruebas, 0 fallos, 0 errores
+    rc=0
+    INICIO SUITE 21:04:35
+    FIN SUITE 21:08:49
+
+**Gate, guiones, resolutor y la suite de `382` pruebas, en verde**, con el grafo en `479` y la suite corrida en serie, despues de la
+ultima escritura de dato (la de la TAREA 4).
