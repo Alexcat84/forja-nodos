@@ -68382,3 +68382,21 @@ La aduana de hoy: **BLOQUEARIA** con `3` vecino(s) contra `479`; lineas `--vered
     hoy 3 vecinos, barrido de la 78 3 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (471 grafo, 8 bandejas), en la 78 479 (459, 20)
 
 **Los tres vecinos son los de su bloque y las tres lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `78`, las tres seniales al digito; la poblacion, `479` (`471` mas `8`). Sin aristas en esta fila: sus filas con `ceder_control_reforzar_competencia_claridad` y `alinear_equipo_proposito_comun` son `NO SOSTENGO`. Bitacora de `1204` a `1207`, sus tres lineas SANO.
+
+### Fila `14`: `declarar_intencion_reemplazar_peticion_permiso`, **INSERTADO** en `496.0` s, codigo `0`, commit `de8f0461`
+
+La aduana de hoy: **BLOQUEARIA** con `4` vecino(s) contra `479`; lineas `--veredicto` pasadas: `4`. Salida entera en `.v80ext/insertar_14_declarar_intencion_reemplazar_peticion_permiso.txt`.
+
+<!-- TALLADO: parcial salida=.v80ext/insertar_14_declarar_intencion_reemplazar_peticion_permiso.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `resistir_dar_solucion_clasificar_decision_urgencia` | similitud_texto | 0.422 | 0.000 | 0.439 | SANO |
+| `acoger_inspectores_externos_fuente_aprendizaje` | similitud_texto | 0.404 | 0.000 | 0.350 | SANO |
+| `informar_cierre_jornada_conservar_propiedad_trabajo` | similitud_texto | 0.352 | 0.000 | 0.391 | SANO |
+| `reforzar_principios_guia_lenguaje_prueba_conocimiento` | similitud_texto | 0.355 | 0.000 | 0.353 | SANO |
+
+    $ python .v80ext/contra_barrido.py 14 declarar_intencion_reemplazar_peticion_permiso
+    hoy 4 vecinos, barrido de la 78 4 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (472 grafo, 7 bandejas), en la 78 479 (459, 20)
+
+**Los cuatro vecinos son los de su bloque y las cuatro lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `78`, las tres seniales al digito; la poblacion, `479` (`472` mas `7`). Sin aristas en esta fila: sus filas con `ceder_control_reforzar_competencia_claridad` y `resistir_dar_solucion_clasificar_decision_urgencia` son `NO SOSTENGO`. Bitacora de `1207` a `1211`, sus cuatro lineas SANO.
