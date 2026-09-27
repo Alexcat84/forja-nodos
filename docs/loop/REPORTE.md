@@ -68419,3 +68419,17 @@ La aduana de hoy: **BLOQUEARIA** con `5` vecino(s) contra `479`; lineas `--vered
     hoy 5 vecinos, barrido de la 78 5 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (473 grafo, 6 bandejas), en la 78 479 (459, 20)
 
 **Los cinco vecinos son los de su bloque y las cinco lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `78`, las tres seniales al digito; la poblacion, `479` (`473` mas `6`). Sin aristas en esta fila. Bitacora de `1211` a `1216`, sus cinco lineas SANO.
+
+### Fila `16`: `eliminar_seguimiento_descendente_responsabilizar_dueno`, **INSERTADO** en `338.4` s, codigo `0`, commit `bcc243dc`
+
+La aduana de hoy: **ENTRARIA** con `0` vecino(s) contra `479`; lineas `--veredicto` pasadas: `0`. Salida entera en `.v80ext/insertar_16_eliminar_seguimiento_descendente_responsabilizar_dueno.txt`.
+
+<!-- TALLADO: parcial salida=.v80ext/insertar_16_eliminar_seguimiento_descendente_responsabilizar_dueno.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+
+    $ python .v80ext/contra_barrido.py 16 eliminar_seguimiento_descendente_responsabilizar_dueno
+    hoy 0 vecinos, barrido de la 78 0 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (474 grafo, 5 bandejas), en la 78 479 (459, 20)
+
+**Entra sin vecinos, como en el barrido de la `78`**, y la tabla de arriba sale vacia por eso; la poblacion, `479` (`474` mas `5`). Sin aristas en esta fila: sus filas con `ceder_control_reforzar_competencia_claridad` e `informar_cierre_jornada_conservar_propiedad_trabajo` son `NO SOSTENGO`, y la de `delegar_tarea_base_comun_seguimiento` es la FRONTERA DECLARADA de `d183`. **Desde aqui vive en el grafo**, y la frontera de Grove se escribe en la TAREA `4`, despues de la fila `20`: escribirla ahora cambiaria el texto de un nodo que las filas `17` a `20` miden contra su barrido de la `78`. Bitacora sin movimiento: `1216`.
