@@ -68476,3 +68476,17 @@ La aduana de hoy: **BLOQUEARIA** con `3` vecino(s) contra `479`; lineas `--vered
     hoy 3 vecinos, barrido de la 78 3 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (476 grafo, 3 bandejas), en la 78 479 (459, 20)
 
 **Los tres vecinos son los de su bloque y las tres lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `78`, las tres seniales al digito; la poblacion, `479` (`476` mas `3`). Sin aristas en esta fila: su fila con `ceder_control_reforzar_competencia_claridad` es `NO SOSTENGO` (`D78.12`), y sus tres gestos son sus propios pasos (`D68.7`). Bitacora de `1222` a `1225`, sus tres lineas SANO.
+
+### Fila `19`: `identificar_temas_formacion_tarjetas_decision`, **INSERTADO** en `688.0` s, codigo `0`, commit `f9acb736`
+
+La aduana de hoy: **ENTRARIA** con `0` vecino(s) contra `479`; lineas `--veredicto` pasadas: `0`. Salida entera en `.v80ext/insertar_19_identificar_temas_formacion_tarjetas_decision.txt`.
+
+<!-- TALLADO: parcial salida=.v80ext/insertar_19_identificar_temas_formacion_tarjetas_decision.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+
+    $ python .v80ext/contra_barrido.py 19 identificar_temas_formacion_tarjetas_decision
+    hoy 0 vecinos, barrido de la 78 0 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (477 grafo, 2 bandejas), en la 78 479 (459, 20)
+
+**Entra sin vecinos, como en el barrido de la `78`**, y la tabla de arriba sale vacia por eso; la poblacion, `479` (`477` mas `2`). Sin aristas en esta fila: su fila con `ceder_control_reforzar_competencia_claridad` es `NO SOSTENGO` (`D78.12`). Bitacora sin movimiento: `1225`.
