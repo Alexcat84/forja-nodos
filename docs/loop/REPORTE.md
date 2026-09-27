@@ -68459,3 +68459,20 @@ La aduana de hoy: **BLOQUEARIA** con `6` vecino(s) contra `479`; lineas `--vered
     hoy 6 vecinos, barrido de la 78 6 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (475 grafo, 4 bandejas), en la 78 479 (459, 20)
 
 **Los seis vecinos son los de su bloque y las seis lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `78`, las tres seniales al digito; la poblacion, `479` (`475` mas `4`). Sin aristas en esta fila: su fila con `ceder_control_reforzar_competencia_claridad` es `NO SOSTENGO`. Bitacora de `1216` a `1222`, sus seis lineas SANO.
+
+### Fila `18`: `tomar_accion_deliberada_pausar_vocalizar_gesticular`, **INSERTADO** en `556.0` s, codigo `0`, commit `cd619987`
+
+La aduana de hoy: **BLOQUEARIA** con `3` vecino(s) contra `479`; lineas `--veredicto` pasadas: `3`. Salida entera en `.v80ext/insertar_18_tomar_accion_deliberada_pausar_vocalizar_gesticular.txt`.
+
+<!-- TALLADO: parcial salida=.v80ext/insertar_18_tomar_accion_deliberada_pausar_vocalizar_gesticular.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `acoger_inspectores_externos_fuente_aprendizaje` | similitud_texto | 0.464 | 0.000 | 0.391 | SANO |
+| `resistir_dar_solucion_clasificar_decision_urgencia` | similitud_texto | 0.411 | 0.000 | 0.372 | SANO |
+| `reforzar_principios_guia_lenguaje_prueba_conocimiento` | similitud_texto | 0.366 | 0.000 | 0.349 | SANO |
+
+    $ python .v80ext/contra_barrido.py 18 tomar_accion_deliberada_pausar_vocalizar_gesticular
+    hoy 3 vecinos, barrido de la 78 3 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (476 grafo, 3 bandejas), en la 78 479 (459, 20)
+
+**Los tres vecinos son los de su bloque y las tres lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `78`, las tres seniales al digito; la poblacion, `479` (`476` mas `3`). Sin aristas en esta fila: su fila con `ceder_control_reforzar_competencia_claridad` es `NO SOSTENGO` (`D78.12`), y sus tres gestos son sus propios pasos (`D68.7`). Bitacora de `1222` a `1225`, sus tres lineas SANO.
