@@ -67994,7 +67994,7 @@ falte es exactamente lo que no tiene fila.
 | `T1` | los registros de la `ACTA 78`, y el pago de `d104` | **CERRADA** (`80.1`): `d104` pagada citando `78.3`, sin tocar el grafo |
 | `T2` | lo que entra es lo que se leyo: las huellas de las `20` fichas y del grafo | **CERRADA** (`80.2`): identicas a `.v78ext/pasos_y_huellas.txt`; `sha1sum -c` sin quejas |
 | `T3` | las `20` filas de `.v78ext/orden.txt`, una por vez, con la arista por lectura | **CERRADA** (`80.3`): las `20` insertadas, sus `52` lineas pasadas, la `1` arista esperada en el grafo por los dos lados; `0` nodos viejos cambiados |
-| `T4` | `d183`: la frontera de Grove, escrita despues de que entre su nodo | abierta |
+| `T4` | `d183`: la frontera de Grove, escrita despues de que entre su nodo | **CERRADA** (`80.4`): `corregir` en la linea `1226`, el texto byte a byte el de `.v79ext/frontera_grove.txt`; `d183` pagada |
 | `T5` | el cierre, y si todo entro, el de la campania | abierta |
 
 ## 80.0. LA APERTURA, MEDIDA ANTES DE LA PRIMERA OPERACION (`EXTRACTOR.md` 4)
@@ -68546,3 +68546,64 @@ distintas**, asi que **no hubo ningun vecino sin linea que leer en esta vuelta, 
 `20`: `309,6` s el minimo, `743,8` s el maximo, `2,93` h de suma; ninguno quedo en vuelo al lanzar el siguiente.
 
 **`T3` CERRADA.**
+
+## 80.4. TAREA 4: `d183`: LA FRONTERA DE GROVE, ESCRITA DESPUES DE QUE ENTRE SU NODO (`ACTA 77` `77.5`, `ACTA 78` `78.3`)
+
+**Con `eliminar_seguimiento_descendente_responsabilizar_dueno` vivo desde la fila `16`, y despues de la fila `20`** (`D80.3`). Las dos
+lineas de `.v79ext/frontera_grove.txt` las lee del fichero `.v80ext/frontera.py`, que no corre si el nodo no vive en el grafo, y las
+pasa tal cual; `.v80ext/t4_comprobar.py` mide despues que lo escrito es byte a byte lo leido (salida entera en `.v80ext/t4.txt`):
+
+<!-- TALLADO: parcial salida=.v80ext/t4.txt -->
+
+    $ bash .v80ext/censo.sh 2>/dev/null   # antes de la TAREA 4
+    nodos en dataset/nodos.jsonl        : 479
+    veredictos en bitacora              : 1225
+    pares mutuos                        : 1
+    bandeja cuarentena/marquet_turn_the_ship : 0
+    insertados de marquet_turn_the_ship : 20
+    cerrojos en procesos/               : 
+    $ python forja.py corregir --nodo eliminar_seguimiento_descendente_responsabilizar_dueno --anade "<linea 10 de .v79ext/frontera_grove.txt, 3296 caracteres>" --razon "<linea 12 de .v79ext/frontera_grove.txt, 498 caracteres>"
+    CORRECCION DECLARADA SOBRE UN NODO YA INSERTADO
+      nodo : eliminar_seguimiento_descendente_responsabilizar_dueno
+      campo: resumen_teorico
+      el texto viejo SIGUE ENTERO: 2300 caracteres, ninguno borrado
+      se aniaden 3297 caracteres al final
+      huella antes  : dd5b5be9991b472e
+      huella despues: 3ff785f420baaa10
+
+    GATE VERDE sobre la simulacion. CORRECCION ESCRITA EN: eliminar_seguimiento_descendente_responsabilizar_dueno
+      razon en bitacora/VEREDICTOS.jsonl
+    rc=0
+    $ python .v80ext/t4_comprobar.py
+    linea 1226: veredicto CORREGIDO | candidato eliminar_seguimiento_descendente_responsabilizar_dueno | campo resumen_teorico
+    texto_anadido igual a la linea ANADE: True | razon igual a la linea RAZON: True
+    resumen_teorico de hoy empieza por el de la ficha: True | acaba con la linea ANADE: True | caracteres 5597 = 2300 + 1 + 3296
+    pasos_accionables iguales a los de la ficha: True | fuentes ['marquet_turn_the_ship']
+
+**La frontera, escrita**: `3296` caracteres de `ANADE` y `498` de `RAZON`, los que la `79` preparo y el auditor dio por buenos (`ACTA 78`
+`78.1`, `78.3`); el `resumen_teorico` viejo sigue entero (`2300` caracteres, mas el separador y el texto nuevo) y los pasos del nodo no
+cambian. **La linea que `corregir` escribio es la `1226` de la bitacora**, `CORREGIDO`. **Y `d183`, pagada** con el `como` de
+`.v80ext/como_d183.txt`, que cita esa linea, la `ACTA 77` `77.5` y la `ACTA 78` `78.3` (salida entera en `.v80ext/t4_pago.txt`):
+
+<!-- TALLADO: parcial salida=.v80ext/t4_pago.txt -->
+
+    $ python scripts/deuda.py --pagar d183 --vuelta 80 --como "$(cat .v80ext/como_d183.txt)"
+    PAGADA d183 en la vuelta 80
+    $ python scripts/deuda.py | grep -cE '^  (d104|d183) '
+    0
+    $ python scripts/deuda.py --clase 80
+    LIBRE
+      van 1 de 5 desde la ultima de saneamiento (la 79), con 44 deuda(s) esperando
+    $ bash .v80ext/censo.sh 2>/dev/null   # despues de la TAREA 4
+    nodos en dataset/nodos.jsonl        : 479
+    veredictos en bitacora              : 1226
+    pares mutuos                        : 1
+    bandeja cuarentena/marquet_turn_the_ship : 0
+    insertados de marquet_turn_the_ship : 20
+    cerrojos en procesos/               : 
+
+**`d104` y `d183` ya no estan en lo pendiente, y las deudas esperando bajan a `44`.** El censo, medido: el grafo en `479` (`459` mas las
+`20`), la bandeja de Marquet en `0`, `_insertados` en `20`, y la bitacora en `1226` (`1172` mas `52` lineas de veredicto, `1` de la
+arista y `1` de `corregir`). **La frontera de Zhuo no se escribe** (`ACTA 78` `78.3`).
+
+**`T4` CERRADA.**

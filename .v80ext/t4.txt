@@ -1,0 +1,24 @@
+$ bash .v80ext/censo.sh 2>/dev/null   # antes de la TAREA 4
+nodos en dataset/nodos.jsonl        : 479
+veredictos en bitacora              : 1225
+pares mutuos                        : 1
+bandeja cuarentena/marquet_turn_the_ship : 0
+insertados de marquet_turn_the_ship : 20
+cerrojos en procesos/               : 
+$ python forja.py corregir --nodo eliminar_seguimiento_descendente_responsabilizar_dueno --anade "<linea 10 de .v79ext/frontera_grove.txt, 3296 caracteres>" --razon "<linea 12 de .v79ext/frontera_grove.txt, 498 caracteres>"
+CORRECCION DECLARADA SOBRE UN NODO YA INSERTADO
+  nodo : eliminar_seguimiento_descendente_responsabilizar_dueno
+  campo: resumen_teorico
+  el texto viejo SIGUE ENTERO: 2300 caracteres, ninguno borrado
+  se aniaden 3297 caracteres al final
+  huella antes  : dd5b5be9991b472e
+  huella despues: 3ff785f420baaa10
+
+GATE VERDE sobre la simulacion. CORRECCION ESCRITA EN: eliminar_seguimiento_descendente_responsabilizar_dueno
+  razon en bitacora/VEREDICTOS.jsonl
+rc=0
+$ python .v80ext/t4_comprobar.py
+linea 1226: veredicto CORREGIDO | candidato eliminar_seguimiento_descendente_responsabilizar_dueno | campo resumen_teorico
+texto_anadido igual a la linea ANADE: True | razon igual a la linea RAZON: True
+resumen_teorico de hoy empieza por el de la ficha: True | acaba con la linea ANADE: True | caracteres 5597 = 2300 + 1 + 3296
+pasos_accionables iguales a los de la ficha: True | fuentes ['marquet_turn_the_ship']
