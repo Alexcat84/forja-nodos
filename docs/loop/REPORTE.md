@@ -68490,3 +68490,17 @@ La aduana de hoy: **ENTRARIA** con `0` vecino(s) contra `479`; lineas `--veredic
     hoy 0 vecinos, barrido de la 78 0 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (477 grafo, 2 bandejas), en la 78 479 (459, 20)
 
 **Entra sin vecinos, como en el barrido de la `78`**, y la tabla de arriba sale vacia por eso; la poblacion, `479` (`477` mas `2`). Sin aristas en esta fila: su fila con `ceder_control_reforzar_competencia_claridad` es `NO SOSTENGO` (`D78.12`). Bitacora sin movimiento: `1225`.
+
+### Fila `20`: `repetir_mensaje_invariable_diario_reunion_evento`, **INSERTADO** en `364.6` s, codigo `0`, commit `e4d88c5f`
+
+La aduana de hoy: **ENTRARIA** con `0` vecino(s) contra `479`; lineas `--veredicto` pasadas: `0`. Salida entera en `.v80ext/insertar_20_repetir_mensaje_invariable_diario_reunion_evento.txt`.
+
+<!-- TALLADO: parcial salida=.v80ext/insertar_20_repetir_mensaje_invariable_diario_reunion_evento.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+
+    $ python .v80ext/contra_barrido.py 20 repetir_mensaje_invariable_diario_reunion_evento
+    hoy 0 vecinos, barrido de la 78 0 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (478 grafo, 1 bandejas), en la 78 479 (459, 20)
+
+**Entra sin vecinos, como en el barrido de la `78`**, y la tabla de arriba sale vacia por eso; la poblacion, `479` (`478` mas `1`, que es ella misma en la bandeja). Sin aristas en esta fila: sus filas con `ceder_control_reforzar_competencia_claridad` y `comunicar_valores_diez_formas` son `NO SOSTENGO`, y la frontera de Zhuo no queda en pie (`ACTA 78` `78.3`). Bitacora sin movimiento: `1225`. **Es la ultima fila: las `20` de la bandeja, dentro.**
