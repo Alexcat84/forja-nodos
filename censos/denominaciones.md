@@ -1278,3 +1278,5 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-26 | declarar_intencion_reemplazar_peticion_permiso | otro_idioma | I intend to | ingles | - |
 | 2026-09-26 | resistir_dar_solucion_clasificar_decision_urgencia | nombre_largo | El mecanismo de resistir el impulso de dar soluciones y tratar cada decision segun si es urgente, si se puede tomar pronto o si se puede retrasar | castellano | - |
 | 2026-09-26 | resistir_dar_solucion_clasificar_decision_urgencia | otro_idioma | resist the urge to provide solutions | ingles | - |
+| 2026-09-26 | eliminar_seguimiento_descendente_responsabilizar_dueno | nombre_largo | El mecanismo de eliminar los sistemas de seguimiento de arriba hacia abajo y trasladar la responsabilidad de vigilar y completar cada pendiente a quien esta a cargo de esa area | castellano | - |
+| 2026-09-26 | eliminar_seguimiento_descendente_responsabilizar_dueno | otro_idioma | eliminate top-down monitoring systems | ingles | - |
