@@ -1,0 +1,42 @@
+fila 18, tomar_accion_deliberada_pausar_vocalizar_gesticular, lineas --veredicto: 3
+  --veredicto acoger_inspectores_externos_fuente_aprendizaje|SANO|El mismo par que acoger_inspectores lee desde su lado: el ritual antes de actuar (cap_11 L75, L95) contra la visita del inspector (cap_10 L45, L49). La similitud de 0,464, por encima de 0,4, se lee primero y no es gemelo: comparten la palabra inspector (ACTA M9.4, fila 5).
+  --veredicto resistir_dar_solucion_clasificar_decision_urgencia|SANO|El mismo par que resistir lee desde su lado: el ritual fisico contra el reparto de la decision por urgencia (cap_11 L75; cap_08 L117 a L121). La similitud de 0,411, por encima de 0,4, se lee primero, sin paso comun (ACTA M9.4, fila 10).
+  --veredicto reforzar_principios_guia_lenguaje_prueba_conocimiento|SANO|El mismo par que reforzar_principios lee desde su lado: un mecanismo de COMPETENCE contra uno de CLARITY (cap_11 L75; cap_14 L89, L99), sin paso comun.
+inicio 2026-09-26 20:29:02
+======================================================================
+ADUANA DE INSERCION, candidato 'tomar_accion_deliberada_pausar_vocalizar_gesticular'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (476 del grafo mas 3 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 3. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino acoger_inspectores_externos_fuente_aprendizaje  [Acoger a los inspectores externos como fuente de aprendizaje segun la fortaleza o debilidad del area inspeccionada]
+    levantada por: similitud_texto
+    similitud_texto    0.464 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.391 (umbral 0.60)
+    paso 2 del candidato contra paso 2 de acoger_inspectores_externos_fuente_aprendizaje
+
+  vecino resistir_dar_solucion_clasificar_decision_urgencia  [Resistir dar la solucion y clasificar la decision del equipo segun su urgencia]
+    levantada por: similitud_texto
+    similitud_texto    0.411 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.372 (umbral 0.60)
+    paso 1 del candidato contra paso 3 de resistir_dar_solucion_clasificar_decision_urgencia
+
+  vecino reforzar_principios_guia_lenguaje_prueba_conocimiento  [Reforzar los principios guia usando su vocabulario en premios y evaluaciones, y comprobar si de verdad los conoce quien no los escribio]
+    levantada por: similitud_texto
+    similitud_texto    0.366 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.349 (umbral 0.60)
+    paso 2 del candidato contra paso 2 de reforzar_principios_guia_lenguaje_prueba_conocimiento
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 477
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 3
+
+======================================================================
+fin 2026-09-26 20:38:18 | codigo de salida 0 | 556.0 s

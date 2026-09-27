@@ -1282,3 +1282,5 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-26 | eliminar_seguimiento_descendente_responsabilizar_dueno | otro_idioma | eliminate top-down monitoring systems | ingles | - |
 | 2026-09-26 | acoger_inspectores_externos_fuente_aprendizaje | nombre_largo | El mecanismo de tratar a los inspectores y auditores externos como aliados para difundir ideas, aprender de otros y documentar problemas, en vez de ocultarles informacion | castellano | - |
 | 2026-09-26 | acoger_inspectores_externos_fuente_aprendizaje | otro_idioma | embrace the inspectors | ingles | - |
+| 2026-09-26 | tomar_accion_deliberada_pausar_vocalizar_gesticular | nombre_largo | El mecanismo de pausar, anunciar en voz alta y senalar con un gesto lo que se va a hacer antes de ejecutar cualquier accion, para introducir deliberacion y evitar errores automaticos | castellano | - |
+| 2026-09-26 | tomar_accion_deliberada_pausar_vocalizar_gesticular | otro_idioma | take deliberate action | ingles | - |
