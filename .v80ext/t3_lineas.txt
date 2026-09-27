@@ -1,0 +1,7 @@
+$ grep -h "^fila .*lineas --veredicto:" .v80ext/insertar_*.txt | awk '{s+=$NF} END {print "filas", NR, "lineas pasadas", s}'
+filas 20 lineas pasadas 52
+$ grep -l "NODO INSERTADO" .v80ext/insertar_*.txt | wc -l; cat .v80ext/insertar_*.fin | sort | uniq -c
+20
+     20 0
+$ tail -n +1173 bitacora/VEREDICTOS.jsonl | python -c "import sys,json,collections; print(collections.Counter(json.loads(l).get(\"veredicto\") for l in sys.stdin if l.strip()))"
+Counter({'SANO': 52, 'CONTINUA': 1})

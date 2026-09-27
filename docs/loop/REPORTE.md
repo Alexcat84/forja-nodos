@@ -67993,7 +67993,7 @@ falte es exactamente lo que no tiene fila.
 |---|---|---|
 | `T1` | los registros de la `ACTA 78`, y el pago de `d104` | **CERRADA** (`80.1`): `d104` pagada citando `78.3`, sin tocar el grafo |
 | `T2` | lo que entra es lo que se leyo: las huellas de las `20` fichas y del grafo | **CERRADA** (`80.2`): identicas a `.v78ext/pasos_y_huellas.txt`; `sha1sum -c` sin quejas |
-| `T3` | las `20` filas de `.v78ext/orden.txt`, una por vez, con la arista por lectura | abierta |
+| `T3` | las `20` filas de `.v78ext/orden.txt`, una por vez, con la arista por lectura | **CERRADA** (`80.3`): las `20` insertadas, sus `52` lineas pasadas, la `1` arista esperada en el grafo por los dos lados; `0` nodos viejos cambiados |
 | `T4` | `d183`: la frontera de Grove, escrita despues de que entre su nodo | abierta |
 | `T5` | el cierre, y si todo entro, el de la campania | abierta |
 
@@ -68504,3 +68504,45 @@ La aduana de hoy: **ENTRARIA** con `0` vecino(s) contra `479`; lineas `--veredic
     hoy 0 vecinos, barrido de la 78 0 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (478 grafo, 1 bandejas), en la 78 479 (459, 20)
 
 **Entra sin vecinos, como en el barrido de la `78`**, y la tabla de arriba sale vacia por eso; la poblacion, `479` (`478` mas `1`, que es ella misma en la bandeja). Sin aristas en esta fila: sus filas con `ceder_control_reforzar_competencia_claridad` y `comunicar_valores_diez_formas` son `NO SOSTENGO`, y la frontera de Zhuo no queda en pie (`ACTA 78` `78.3`). Bitacora sin movimiento: `1225`. **Es la ultima fila: las `20` de la bandeja, dentro.**
+
+### 80.3.b. **Las aristas de la tanda, los nodos viejos y el reloj, por instrumento** (TAREA `3.5`)
+
+<!-- TALLADO: parcial salida=.v80ext/t3_cierre.txt -->
+
+    $ python .v80ext/aristas_vuelta.py
+    registros de la vuelta en la bitacora: 53
+    EN GRAFO   lectura declarada   CONTINUA  observar_reunion_rutinaria_senales_plantilla > seguir_frustrado_preguntar_implantacion_ideas
+    registros con arista sin veredicto: 0
+    registros con arista: 1 | aristas DISTINTAS: 1 | en el grafo: 1 | en cola: 0 (un par CONTINUA leido desde sus dos lados deja dos registros y una sola arista)
+    esperadas: 1 | esperadas que viven en el grafo: 1 | esperadas sin registro: 0 | registradas no esperadas: 0
+    $ python .v80ext/nodos_viejos.py
+    nodos al abrir: 459 | hoy: 479 | nuevos: 20 | nuevos que son de las 20 filas: 20 | viejos que cambian: 0 | cambios fuera de nodos_siguientes de una madre y de la TAREA 2: 0
+    $ python .v80ext/relojes.py | tail -1
+    insertar: 20 | minimo 309.6 s | mediana 550.9 s | maximo 743.8 s | suma 10557.0 s (2.93 h)
+    $ bash .v80ext/censo.sh 2>/dev/null   # tras la fila 20, antes de la TAREA 4
+    nodos en dataset/nodos.jsonl        : 479
+    veredictos en bitacora              : 1225
+    pares mutuos                        : 1
+    bandeja cuarentena/marquet_turn_the_ship : 0
+    insertados de marquet_turn_the_ship : 20
+    cerrojos en procesos/               : 
+
+<!-- TALLADO: parcial salida=.v80ext/t3_lineas.txt -->
+
+    $ grep -h "^fila .*lineas --veredicto:" .v80ext/insertar_*.txt | awk '{s+=$NF} END {print "filas", NR, "lineas pasadas", s}'
+    filas 20 lineas pasadas 52
+    $ grep -l "NODO INSERTADO" .v80ext/insertar_*.txt | wc -l; cat .v80ext/insertar_*.fin | sort | uniq -c
+    20
+         20 0
+    $ tail -n +1173 bitacora/VEREDICTOS.jsonl | python -c "import sys,json,collections; print(collections.Counter(json.loads(l).get(\"veredicto\") for l in sys.stdin if l.strip()))"
+    Counter({'SANO': 52, 'CONTINUA': 1})
+
+**Las `20` filas entraron, en su orden, con codigo `0` las `20`.** **Aristas: `1` esperada, `1` en el grafo por los dos lados, `0` sin
+adjudicar, `0` en cola y `0` no esperadas**: la de `observar_reunion_rutinaria_senales_plantilla` a `seguir_frustrado_preguntar_implantacion_ideas`,
+`CONTINUA`. **Ningun nodo viejo cambio**: ni siquiera el `nodos_siguientes` de una madre vieja, porque la unica madre de la tanda es de
+la tanda; los `20` nuevos son las `20` filas. **La bitacora gano `53` lineas** (`1172` a `1225`): las `52` `--veredicto` pasadas, todas
+`SANO`, mas la de la arista. Contra el barrido de la `78`, **las `20` filas dieron `0` vecinos nuevos, `0` caidos y `0` seniales
+distintas**, asi que **no hubo ningun vecino sin linea que leer en esta vuelta, ni `CAERIA`, ni error** (TAREA `3.3`). El reloj de los
+`20`: `309,6` s el minimo, `743,8` s el maximo, `2,93` h de suma; ninguno quedo en vuelo al lanzar el siguiente.
+
+**`T3` CERRADA.**
