@@ -1284,3 +1284,5 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-26 | acoger_inspectores_externos_fuente_aprendizaje | otro_idioma | embrace the inspectors | ingles | - |
 | 2026-09-26 | tomar_accion_deliberada_pausar_vocalizar_gesticular | nombre_largo | El mecanismo de pausar, anunciar en voz alta y senalar con un gesto lo que se va a hacer antes de ejecutar cualquier accion, para introducir deliberacion y evitar errores automaticos | castellano | - |
 | 2026-09-26 | tomar_accion_deliberada_pausar_vocalizar_gesticular | otro_idioma | take deliberate action | ingles | - |
+| 2026-09-26 | identificar_temas_formacion_tarjetas_decision | nombre_largo | El ejercicio de tarjetas de cuatro por seis pulgadas para una reunion de liderazgo, que conecta las decisiones que se quiere delegar a un nivel de mando con los temas tecnicos de formacion que esa delegacion exige | castellano | - |
+| 2026-09-26 | identificar_temas_formacion_tarjetas_decision | otro_idioma | divest control, increase competence | ingles | - |

@@ -1,0 +1,13 @@
+fila 19, identificar_temas_formacion_tarjetas_decision, lineas --veredicto: 0
+inicio 2026-09-26 20:39:19
+======================================================================
+ADUANA DE INSERCION, candidato 'identificar_temas_formacion_tarjetas_decision'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (477 del grafo mas 2 que esperan en bandejas)
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 478
+  censos escritos: denominaciones
+
+======================================================================
+fin 2026-09-26 20:50:47 | codigo de salida 0 | 688.0 s
