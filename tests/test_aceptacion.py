@@ -2999,6 +2999,192 @@ class PruebaCorreccionDeclarada(BaseForja):
         self.assertIn("ya esta escrita", segunda[1])
 
 
+class PruebaSustitucionDeclarada(BaseForja):
+    """La sustitucion declarada de un fragmento (src/sustitucion.py), decision del fundador del 26 sep 2026
+    (docs/loop/paradas/2026-09-26-cierre-de-la-forja-DECISION.md): la cifra de mercado SALE y el empleo va como METODO,
+    cosas que una correccion que solo aniade no puede cumplir. Cada guarda, con su caso positivo."""
+
+    DECISION = "Decision del fundador del 26 sep 2026, cierre de la forja, punto 1"
+    REGLA = "politica marco contra pais, regla de la cifra"
+    RAZON = "cifra de mercado: la regla de la cifra la saca"
+
+    def _nodo(self, **campos):
+        base = dict(pasos_accionables=[
+            "Ofrece una prima de hasta 5.000 dolares si la persona se incorpora.",
+            "Ejecuta el segundo paso de prueba con su objeto."],
+            escala_minima="Una sola persona. La lista del libro vale entera.")
+        base.update(campos)
+        return nodo_base("vender_prima_prueba", **base)
+
+    def _sustituir(self, *extra, **opciones):
+        argumentos = ["sustituir", "--nodo", opciones.get("nodo", "vender_prima_prueba")] + list(extra)
+        if "--regla" not in extra:
+            argumentos += ["--regla", self.REGLA]
+        if "--razon" not in extra:
+            argumentos += ["--razon", self.RAZON]
+        if "--decision" not in extra:
+            argumentos += ["--decision", self.DECISION]
+        return self.forja(*argumentos)
+
+    def _sin_cambios(self, nodo):
+        self.assertEqual(self.nodos()[0], nodo)
+        self.assertEqual(comun.leer_jsonl(self.veredictos), [])
+
+    def test_la_sustitucion_se_escribe_deja_marca_y_el_texto_viejo_queda_en_la_bitacora(self):
+        nodo = self._nodo()
+        self.escribir_dataset([nodo])
+        codigo, salida = self._sustituir("--campo", "pasos_accionables", "--indice", "0",
+                                         "--viejo", "de hasta 5.000 dolares ", "--nuevo", "")
+        self.assertEqual(codigo, 0, salida)
+        nuevo = self.nodos()[0]
+        self.assertEqual(nuevo["pasos_accionables"][0], "Ofrece una prima si la persona se incorpora.")
+        self.assertEqual(nuevo["pasos_accionables"][1], nodo["pasos_accionables"][1])
+        # EL RASTRO EN EL NODO: la marca, sin repetir lo que salio.
+        self.assertTrue(nuevo["resumen_teorico"].startswith(nodo["resumen_teorico"]))
+        self.assertIn("CORRECCION DECLARADA", nuevo["resumen_teorico"])
+        self.assertIn("pasos_accionables, paso 1", nuevo["resumen_teorico"])
+        self.assertNotIn("5.000", nuevo["resumen_teorico"])
+        for campo in ("titulo", "fuentes", "nodos_previos", "nodos_siguientes", "escala_minima"):
+            self.assertEqual(nuevo[campo], nodo[campo])
+        registro = comun.leer_jsonl(self.veredictos)[-1]
+        self.assertEqual(registro["veredicto"], "SUSTITUIDO")
+        self.assertEqual(registro["texto_anterior"], nodo["pasos_accionables"][0])
+        self.assertEqual(registro["decision"], self.DECISION)
+        self.assertEqual(registro["regla"], self.REGLA)
+        self.assertNotEqual(registro["huella_vecino"], registro["huella_candidato"])
+        self.assertEqual(self.forja("gate")[0], 0)
+
+    def test_escala_minima_se_sustituye(self):
+        self.escribir_dataset([self._nodo()])
+        codigo, salida = self._sustituir("--campo", "escala_minima", "--viejo", "La lista del libro vale entera.",
+                                         "--nuevo", "La ley de tu pais vale entera.")
+        self.assertEqual(codigo, 0, salida)
+        self.assertEqual(self.nodos()[0]["escala_minima"], "Una sola persona. La ley de tu pais vale entera.")
+
+    def test_caso_positivo_el_gate_muerde_en_la_simulacion(self):
+        """El paso quedaria por debajo del minimo del esquema: lo tumba el GATE, no un prefiltro."""
+        nodo = self._nodo(pasos_accionables=["Haz esto ahora mismo.", "Ejecuta el segundo paso de prueba con su objeto."])
+        self.escribir_dataset([nodo])
+        codigo, salida = self._sustituir("--campo", "pasos_accionables", "--indice", "0",
+                                         "--viejo", "z esto ahora mismo", "--nuevo", "z")
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("RECHAZADO POR EL GATE", salida)
+        self._sin_cambios(nodo)
+
+    def test_caso_positivo_los_guiones_se_paran_antes(self):
+        nodo = self._nodo()
+        self.escribir_dataset([nodo])
+        codigo, salida = self._sustituir("--campo", "pasos_accionables", "--indice", "0",
+                                         "--viejo", "de hasta 5.000 dolares", "--nuevo", "de un monto " + chr(0x2014) + " pactado")
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("guiones largos", salida)
+        self._sin_cambios(nodo)
+
+    def test_caso_positivo_un_fragmento_que_no_esta_no_se_sustituye(self):
+        nodo = self._nodo()
+        self.escribir_dataset([nodo])
+        codigo, salida = self._sustituir("--campo", "pasos_accionables", "--indice", "0",
+                                         "--viejo", "de hasta 9.000 dolares", "--nuevo", "")
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("aparece 0 veces", salida)
+        self._sin_cambios(nodo)
+
+    def test_caso_positivo_un_fragmento_repetido_es_ambiguo(self):
+        nodo = self._nodo()
+        self.escribir_dataset([nodo])
+        codigo, salida = self._sustituir("--campo", "pasos_accionables", "--indice", "0", "--viejo", "a", "--nuevo", "e")
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("veces en el campo", salida)
+        self._sin_cambios(nodo)
+
+    def test_caso_positivo_un_paso_no_puede_quedar_vacio(self):
+        nodo = self._nodo()
+        self.escribir_dataset([nodo])
+        codigo, salida = self._sustituir("--campo", "pasos_accionables", "--indice", "0",
+                                         "--viejo", nodo["pasos_accionables"][0], "--nuevo", "")
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("retirar_paso.py", salida)
+        self._sin_cambios(nodo)
+
+    def test_caso_positivo_la_costura_no_deja_espacio_doble(self):
+        nodo = self._nodo()
+        self.escribir_dataset([nodo])
+        codigo, salida = self._sustituir("--campo", "pasos_accionables", "--indice", "0",
+                                         "--viejo", "de hasta 5.000 dolares", "--nuevo", "")
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("espacio doble", salida)
+        self._sin_cambios(nodo)
+
+    def test_caso_positivo_una_lista_pide_indice(self):
+        nodo = self._nodo()
+        self.escribir_dataset([nodo])
+        codigo, salida = self._sustituir("--campo", "pasos_accionables", "--viejo", "de hasta 5.000 dolares ", "--nuevo", "")
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("falta un --indice", salida)
+        self._sin_cambios(nodo)
+
+    def test_caso_positivo_sin_decision_del_fundador_no_se_escribe(self):
+        nodo = self._nodo()
+        self.escribir_dataset([nodo])
+        codigo, salida = self._sustituir("--campo", "pasos_accionables", "--indice", "0",
+                                         "--viejo", "de hasta 5.000 dolares ", "--nuevo", "", "--decision", " ")
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("sin decision del fundador", salida)
+        self._sin_cambios(nodo)
+
+    def test_caso_positivo_una_razon_corta_no_basta(self):
+        nodo = self._nodo()
+        self.escribir_dataset([nodo])
+        codigo, salida = self._sustituir("--campo", "pasos_accionables", "--indice", "0",
+                                         "--viejo", "de hasta 5.000 dolares ", "--nuevo", "", "--razon", "porque si")
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("sin razon escrita", salida)
+        self._sin_cambios(nodo)
+
+    def test_caso_positivo_un_nodo_que_no_vive_es_rechazo(self):
+        nodo = self._nodo()
+        self.escribir_dataset([nodo])
+        codigo, salida = self._sustituir("--campo", "pasos_accionables", "--indice", "0",
+                                         "--viejo", "de hasta 5.000 dolares ", "--nuevo", "", nodo="nodo_que_no_existe")
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("no vive en el grafo", salida)
+        self._sin_cambios(nodo)
+
+    def test_caso_positivo_sin_regla_no_hay_marca_y_no_se_escribe(self):
+        nodo = self._nodo()
+        self.escribir_dataset([nodo])
+        codigo, salida = self._sustituir("--campo", "pasos_accionables", "--indice", "0",
+                                         "--viejo", "de hasta 5.000 dolares ", "--nuevo", "", "--regla", " ")
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("no nombra la regla", salida)
+        self._sin_cambios(nodo)
+
+    def test_caso_positivo_un_campo_que_no_es_lista_no_lleva_indice(self):
+        nodo = self._nodo()
+        self.escribir_dataset([nodo])
+        codigo, salida = self._sustituir("--campo", "escala_minima", "--indice", "0",
+                                         "--viejo", "La lista del libro vale entera.", "--nuevo", "La ley de tu pais vale entera.")
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("sobra --indice", salida)
+        self._sin_cambios(nodo)
+
+    def test_caso_positivo_sin_fragmento_no_hay_sustitucion(self):
+        nodo = self._nodo()
+        self.escribir_dataset([nodo])
+        codigo, salida = self._sustituir("--campo", "escala_minima", "--viejo", "   ", "--nuevo", "algo")
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("no hay fragmento que sustituir", salida)
+        self._sin_cambios(nodo)
+
+    def test_caso_positivo_el_titulo_no_se_sustituye_por_aqui(self):
+        nodo = self._nodo()
+        self.escribir_dataset([nodo])
+        codigo, salida = self._sustituir("--campo", "titulo", "--viejo", "Titulo", "--nuevo", "Otro")
+        self.assertEqual(codigo, 1, salida)
+        self.assertIn("no se sustituye por aqui", salida)
+        self._sin_cambios(nodo)
+
+
 class PruebaInsercionAtomica(BaseForja):
     """LA INSERCION ES ATOMICA: una corrida que imprime `RECHAZADO` no escribe nada.
 

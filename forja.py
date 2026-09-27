@@ -6,6 +6,11 @@
     python forja.py arista --madre A --hijo B --paso N --razon R   D.37
     python forja.py corregir --nodo <id> --anade "CORRECCION DECLARADA ..." --razon R
                                                 correccion declarada del resumen_teorico
+    python forja.py sustituir --nodo <id> --campo <campo> [--indice N] --viejo "..." --nuevo "..."
+                              --regla G --razon R --decision D
+                                                sustitucion declarada de un fragmento, solo por
+                                                decision del fundador; el texto viejo queda en la
+                                                bitacora (src/sustitucion.py)
     python forja.py anotar --linea <n> --anade "CORRECCION DECLARADA ..." --razon R
                            [--no-consumada]
                                                 correccion declarada sobre una linea ya
@@ -36,7 +41,7 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from src import (aduana, anotacion, arista, censos, comun, correccion,  # noqa: E402
-                 credito,
+                 credito, sustitucion,
                  tablero,
                  gate, guiones,
                  herencia, informe,
@@ -64,6 +69,8 @@ def main(argumentos):
         return arista.main(resto)
     if comando == "corregir":
         return correccion.main(resto)
+    if comando == "sustituir":
+        return sustitucion.main(resto)
     if comando == "anotar":
         return anotacion.main(resto)
     if comando == "informe":
