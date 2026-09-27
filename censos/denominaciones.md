@@ -1280,3 +1280,5 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-26 | resistir_dar_solucion_clasificar_decision_urgencia | otro_idioma | resist the urge to provide solutions | ingles | - |
 | 2026-09-26 | eliminar_seguimiento_descendente_responsabilizar_dueno | nombre_largo | El mecanismo de eliminar los sistemas de seguimiento de arriba hacia abajo y trasladar la responsabilidad de vigilar y completar cada pendiente a quien esta a cargo de esa area | castellano | - |
 | 2026-09-26 | eliminar_seguimiento_descendente_responsabilizar_dueno | otro_idioma | eliminate top-down monitoring systems | ingles | - |
+| 2026-09-26 | acoger_inspectores_externos_fuente_aprendizaje | nombre_largo | El mecanismo de tratar a los inspectores y auditores externos como aliados para difundir ideas, aprender de otros y documentar problemas, en vez de ocultarles informacion | castellano | - |
+| 2026-09-26 | acoger_inspectores_externos_fuente_aprendizaje | otro_idioma | embrace the inspectors | ingles | - |

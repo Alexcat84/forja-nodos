@@ -1,0 +1,66 @@
+fila 17, acoger_inspectores_externos_fuente_aprendizaje, lineas --veredicto: 6
+  --veredicto tomar_accion_deliberada_pausar_vocalizar_gesticular|SANO|Hermanos del mismo libro, dos mecanismos distintos: el vecino es el ritual de pausar, decir en voz alta y senalar antes de actuar (cap_11 L75, L95), y este usa la visita del inspector para difundir, aprender y documentar, con trato distinto segun el area sea fuerte o debil (cap_10 L45, L49). La similitud de 0,457, por encima de 0,4, se lee primero y no es gemelo: comparten la palabra inspector, que en el paso 2 del vecino sale para decir que el ritual no se hace para el. Ninguno usa el producto del otro; el frente lo leyo igual (ACTA M9.4, fila 5).
+  --veredicto resistir_dar_solucion_clasificar_decision_urgencia|SANO|Hermanos, dos mecanismos de CONTROL (cap_08 L107, cap_10 L47): el vecino da espacio al equipo antes de decidir y clasifica la decision por urgencia (L107, L117 a L121), y este trata al inspector como aliado o como fuente segun el area (L49). La similitud de 0,412, por encima de 0,4, se lee primero: solo comparten solucion. Ninguno usa el producto del otro (ACTA M9.4, fila 6).
+  --veredicto declarar_intencion_reemplazar_peticion_permiso|SANO|Hermanos, dos mecanismos de CONTROL: el vecino cambia las frases que piden permiso por frases de intencion (cap_07 L55, L73 a L93), y este usa a los inspectores (cap_10 L45, L49). La similitud de 0,406, por encima de 0,4, se lee primero y es del vocabulario del libro, sin paso comun (ACTA M9.4, fila 2).
+  --veredicto reforzar_principios_guia_lenguaje_prueba_conocimiento|SANO|Ajenos: el vecino escribe premios y evaluaciones en el lenguaje de los principios guia y pregunta a tres personas cuales son (cap_14 L89, L99), y este usa la visita del inspector (cap_10 L45, L49). Ninguno usa el producto del otro (ACTA M9.4, fila 9).
+  --veredicto seguir_frustrado_preguntar_implantacion_ideas|SANO|Ajenos: el vecino sigue al responsable frustrado y le pregunta idea por idea como la implanto (cap_03 L23 a L29), y este usa a los inspectores (cap_10 L45, L49). La similitud es de la prosa del mismo autor, sin paso comun.
+  --veredicto recorrer_organizacion_escuchar_plantilla|SANO|Ajenos: el vecino deja los expedientes y recorre el barco escuchando, con la linterna para las inspecciones de cada jefe (cap_03 L11, L15), y este recibe a inspectores de fuera (cap_10 L45, L49). Comparten la palabra inspeccion, que en el vecino son sus propios recorridos; ninguno usa el producto del otro.
+inicio 2026-09-26 20:21:18
+======================================================================
+ADUANA DE INSERCION, candidato 'acoger_inspectores_externos_fuente_aprendizaje'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (475 del grafo mas 4 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 6. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino tomar_accion_deliberada_pausar_vocalizar_gesticular  [Tomar accion deliberada: pausar, vocalizar y gesticular antes de ejecutar cualquier accion para evitar errores automaticos]
+    levantada por: similitud_texto
+    similitud_texto    0.457 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.399 (umbral 0.60)
+    paso 2 del candidato contra paso 2 de tomar_accion_deliberada_pausar_vocalizar_gesticular
+
+  vecino resistir_dar_solucion_clasificar_decision_urgencia  [Resistir dar la solucion y clasificar la decision del equipo segun su urgencia]
+    levantada por: similitud_texto
+    similitud_texto    0.412 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.410 (umbral 0.60)
+    paso 3 del candidato contra paso 3 de resistir_dar_solucion_clasificar_decision_urgencia
+
+  vecino declarar_intencion_reemplazar_peticion_permiso  [Reemplazar las frases que piden permiso por frases que declaran intencion, y responder con una aprobacion simple]
+    levantada por: similitud_texto
+    similitud_texto    0.406 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.393 (umbral 0.60)
+    paso 1 del candidato contra paso 3 de declarar_intencion_reemplazar_peticion_permiso
+
+  vecino reforzar_principios_guia_lenguaje_prueba_conocimiento  [Reforzar los principios guia usando su vocabulario en premios y evaluaciones, y comprobar si de verdad los conoce quien no los escribio]
+    levantada por: similitud_texto
+    similitud_texto    0.397 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.376 (umbral 0.60)
+    paso 2 del candidato contra paso 2 de reforzar_principios_guia_lenguaje_prueba_conocimiento
+
+  vecino seguir_frustrado_preguntar_implantacion_ideas  [Seguir al que viste frustrado en una reunion y preguntarle, idea por idea, como la implanto]
+    levantada por: similitud_texto
+    similitud_texto    0.356 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.294 (umbral 0.60)
+    paso 3 del candidato contra paso 1 de seguir_frustrado_preguntar_implantacion_ideas
+
+  vecino recorrer_organizacion_escuchar_plantilla  [Recorrer la organizacion y escuchar a su gente en vez de revisar sus expedientes, con el recorrido guiado y la linterna como excusa de inspeccion]
+    levantada por: similitud_texto
+    similitud_texto    0.353 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.327 (umbral 0.60)
+    paso 3 del candidato contra paso 6 de recorrer_organizacion_escuchar_plantilla
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 476
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 6
+
+======================================================================
+fin 2026-09-26 20:27:56 | codigo de salida 0 | 397.3 s
