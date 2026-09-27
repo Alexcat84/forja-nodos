@@ -68439,3 +68439,23 @@ La aduana de hoy: **ENTRARIA** con `0` vecino(s) contra `479`; lineas `--veredic
 | | que | por que lo marco |
 |---|---|---|
 | `D80.3` | **la frontera de Grove (`d183`) se escribe despues de la fila `20`, no justo despues de la `16`** | el encargo dice *cuando la fila `16` viva en el grafo, y no antes*, que fija el suelo y no el techo. `corregir --anade` cambia el texto de `eliminar_seguimiento_descendente_responsabilizar_dueno`, y las filas `17` a `20` se comparan con su barrido de la `78` (TAREA `3.3`), hecho contra el texto sin frontera: escribirla en medio podia mover una senial y levantar un vecino sin linea que no es de la ficha sino mio. Si el auditor lee que tocaba en el acto, el dato es el mismo y lo que cambia es el orden de dos commits |
+
+### Fila `17`: `acoger_inspectores_externos_fuente_aprendizaje`, **INSERTADO** en `397.3` s, codigo `0`, commit `42d88ae6`
+
+La aduana de hoy: **BLOQUEARIA** con `6` vecino(s) contra `479`; lineas `--veredicto` pasadas: `6`. Salida entera en `.v80ext/insertar_17_acoger_inspectores_externos_fuente_aprendizaje.txt`.
+
+<!-- TALLADO: parcial salida=.v80ext/insertar_17_acoger_inspectores_externos_fuente_aprendizaje.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `tomar_accion_deliberada_pausar_vocalizar_gesticular` | similitud_texto | 0.457 | 0.000 | 0.399 | SANO |
+| `resistir_dar_solucion_clasificar_decision_urgencia` | similitud_texto | 0.412 | 0.000 | 0.410 | SANO |
+| `declarar_intencion_reemplazar_peticion_permiso` | similitud_texto | 0.406 | 0.000 | 0.393 | SANO |
+| `reforzar_principios_guia_lenguaje_prueba_conocimiento` | similitud_texto | 0.397 | 0.000 | 0.376 | SANO |
+| `seguir_frustrado_preguntar_implantacion_ideas` | similitud_texto | 0.356 | 0.000 | 0.294 | SANO |
+| `recorrer_organizacion_escuchar_plantilla` | similitud_texto | 0.353 | 0.000 | 0.327 | SANO |
+
+    $ python .v80ext/contra_barrido.py 17 acoger_inspectores_externos_fuente_aprendizaje
+    hoy 6 vecinos, barrido de la 78 6 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (475 grafo, 4 bandejas), en la 78 479 (459, 20)
+
+**Los seis vecinos son los de su bloque y las seis lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `78`, las tres seniales al digito; la poblacion, `479` (`475` mas `4`). Sin aristas en esta fila: su fila con `ceder_control_reforzar_competencia_claridad` es `NO SOSTENGO`. Bitacora de `1216` a `1222`, sus seis lineas SANO.
