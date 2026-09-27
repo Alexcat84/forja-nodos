@@ -1,0 +1,13 @@
+fila 05, fingir_prototipo_cinco_mil_replicas, lineas --veredicto: 0
+inicio 2026-09-26 10:11:05
+======================================================================
+ADUANA DE INSERCION, candidato 'fingir_prototipo_cinco_mil_replicas'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (441 del grafo mas 38 que esperan en bandejas)
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 442
+  censos escritos: denominaciones
+
+======================================================================
+fin 2026-09-26 10:18:04 | codigo de salida 0 | 419.2 s

@@ -1,0 +1,44 @@
+{
+  "id": "fijar_vision_concreta_equipo",
+  "titulo": "Fijar una vision concreta del equipo que nadie pueda malentender",
+  "denominaciones": {
+    "nombre_largo": "Por que ayudar y mejorar no pintan ningun cuadro, los rasgos de una vision que inspira, la prueba de las cinco personas, y las preguntas con que se arranca",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "start with a concrete vision"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Al escribir el proposito de una hoja de ruta o de un plan de equipo, y cada vez que te salga una frase con las palabras ayudar, mejorar o potenciar.",
+  "entregable_esperado": "Una vision concreta y medible del equipo, repetible palabra por palabra por cualquiera que la haya oido.",
+  "pasos_accionables": [
+    "Desconfia de tu primera frase. La autora escribio como proposito de su hoja de ruta ayudar a la gente a conectar con otros a traves de sus intereses compartidos, y su jefe la subrayo y dijo que era demasiado blanda, que no describia de verdad que iba a ser distinto.",
+    "Quitate las palabras que no pintan un cuadro: es corriente oir ayudar, mejorar o potenciar al hablar de metas, y no sirven. Si alguien del equipo arregla un error, mejora la experiencia? Claro. Contribuye a ayudar a la gente a conectar? Tambien. Pero estaria tu equipo contento si eso fuera todo lo que hiciera en seis meses? De ninguna manera.",
+    "Reconoce el motivo: por la enorme subjetividad de palabras como ayudar o mejorar, esas palabras no hacen gran cosa para crear un sentido compartido de proposito.",
+    "Escribe en cambio una vision tangible, que es la que mas impacto tiene. El eslogan de campana un pollo en cada olla es lo contrario de blando: la promesa no era que el pais se iba a hacer mas rico ni que la gente tendria mas prosperidad economica, sino una imagen de millones de familias disfrutando de una cena sustanciosa.",
+    "Hazla audaz y sin coberturas.",
+    "Hazla medible, de manera que sepas al instante si la has alcanzado o no.",
+    "Hazla facil de repetir de una persona a la siguiente.",
+    "No describas el como, que ya lo averiguara tu equipo: describe simplemente cual va a ser el resultado.",
+    "Pasale la prueba que la autora usa: coge al azar a cinco personas que hayan oido la vision, pideles que te la repitan, y comprueba si las cinco dicen exactamente lo mismo.",
+    "Escribe la tuya con la forma de los ejemplos que el libro da: un servicio de preparacion para un examen de acceso puede fijar como objetivo subir la nota de cada estudiante en al menos doscientos puntos; un laboratorio puede comprometerse a reducir un 50 por ciento su tasa de errores en dos anios; el brazo de captacion de fondos de una entidad sin animo de lucro puede fijarse recaudar cincuenta millones en tres anios.",
+    "Para arrancar, preguntate: si tuvieras una varita magica que hiciera que todo lo que hace tu equipo saliera perfecto, que esperas que sea distinto dentro de dos o tres anios comparado con ahora?",
+    "Preguntate: como querrias que alguien que trabaja en un equipo de al lado describiera lo que hace el tuyo? Que reputacion esperas que tenga tu equipo dentro de unos anios? A que distancia esta eso de donde estan las cosas hoy?",
+    "Preguntate: que superpoder unico tiene tu equipo? Cuando estais en vuestro mejor momento, como estais creando valor? A que se pareceria que tu equipo fuera el doble de bueno? Y cinco veces mejor?",
+    "Preguntate: si tuvieras que crear una prueba rapida que cualquiera pudiera usar para juzgar si tu equipo esta haciendo un mal trabajo, uno mediocre o uno excelente, cual seria esa prueba?"
+  ],
+  "resumen_teorico": "Abre el capitulo y es la pieza de la que cuelgan las demas: sin vision concreta no hay plan que evaluar ni prioridad que ordenar. Lo que la hace procedimentable no es el consejo de ser concreto, que seria un adjetivo de adecuacion, sino tres inventarios propios del libro: los rasgos de la vision que inspira, los ejemplos de vision de tres oficios distintos con su cifra y su plazo, y las preguntas de arranque nombradas una a una. La prueba de las cinco personas es ademas un criterio de exito comprobable, que es lo que separa esto de una postura. Lo que el libro NO dice, y por eso no esta escrito aqui, es quien aprueba la vision, cada cuanto se revisa, ni que hacer si el equipo no se la cree.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}

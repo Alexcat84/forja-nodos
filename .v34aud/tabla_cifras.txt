@@ -1,0 +1,14 @@
+| pieza | **yo, sobre `b698aef`** | **yo, sobre el arbol de hoy** |
+|---|---:|---:|
+| nodos en `dataset/nodos.jsonl` | **282** | **297** |
+| pasos del grafo entero | **2283** | **2464** |
+| lineas en `bitacora/VEREDICTOS.jsonl` | **410** | **423** |
+| veredictos con `consumada == False` | **14** | **14** |
+| aristas por `nodos_siguientes` | **107** | **108** |
+| aristas por `nodos_previos` | **107** | **108** |
+| candidatos en bandeja, lote 4 | **63** | **48** |
+| archivados en `_insertados`, lote 4 | **79** | **94** |
+| candidatos en bandeja, lote 5 | **3** | **3** |
+| nodos que citan `cap_09.md` | **0** | **15** |
+| pasos de los nodos de `cap_09` | **0** | **181** |
+| lote 4 insertado sobre `142`, por ciento | **55.63** | **66.20** |

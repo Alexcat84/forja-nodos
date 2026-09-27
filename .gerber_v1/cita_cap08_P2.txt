@@ -1,0 +1,11 @@
+AVISO: cero celdas tecleadas. Cada linea es la que sed -n imprime de fuentes/gerber_emyth/cap_08.md.
+UNICA TRANSFORMACION DECLARADA: 1 guion(es) largo(s) U+2014 sustituido(s) por coma mas
+espacio y 0 guion(es) medio(s) U+2013 por guion corto, porque el barrido de estilo de
+esta casa tumba los dos. El resto es byte a byte el del libro.
+
+109: It’s a model of a business that fulfills the perceived needs of a specific segment of customers in an innovative way.
+113: Said another way, the Entrepreneurial Model has less to do with what’s done in a business and more to do with how it’s done. The commodity isn’t what’s important, the way it’s delivered is.
+115: When The Entrepreneur creates the model, he surveys the world and asks: “Where is the opportunity?” Having identified it, he then goes back to the drawing board and constructs a solution to the frustrations he finds among a certain group of customers. A solution in the form of a business that looks and acts in a very specific way, the way the customer needs it to look and act, not The Entrepreneur.
+117: “How will my business look to the customer?” The Entrepreneur asks. “How will my business stand out from all the rest?”
+119: Thus, the Entrepreneurial Model does not start with a picture of the business to be created but of the customer for whom the business is to be created.
+121: It understands that without a clear picture of that customer, no business can succeed .

@@ -1,0 +1,13 @@
+$ python forja.py arista --madre planificar_tres_pasos_demanda_estado_brecha --hijo cerrar_brecha_dos_preguntas_estrategia --paso 5 --razon <fila 11> --veredicto CONTINUA --cita-veredicto <fila 11>
+DECLARACION DE ARISTA POR LECTURA (D.37)
+  madre: planificar_tres_pasos_demanda_estado_brecha
+  hijo : cerrar_brecha_dos_preguntas_estrategia
+  paso citado de la madre: 5
+    Da el paso 3 comparando y conciliando los pasos 1 y 2.
+  señales del par: familia_id 0.1, paso_contra_nodo 0.545, similitud_texto 0.299
+    NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: planificar_tres_pasos_demanda_estado_brecha > cerrar_brecha_dos_preguntas_estrategia
+  razon en bitacora/VEREDICTOS.jsonl
+
+codigo 0

@@ -1,0 +1,6 @@
+nodos                                : 267
+aristas por nodos_siguientes         : 102
+aristas por nodos_previos            : 102
+union                                : 102
+solo en siguientes (sin reciproco)   : []
+solo en previos (sin reciproco)      : []

@@ -1,0 +1,58 @@
+{
+  "atribuciones": [
+    {
+      "autor": "Geoff Smart y Randy Street",
+      "cifra": "cuatro mil estudios y metaanalisis examinados por los autores, segun los cuales entrevistar de la manera tradicional simplemente no predice el desempeño en el puesto",
+      "fecha_corte": "2008",
+      "fuente": "smart_who"
+    },
+    {
+      "autor": "Steve Kerr, citado por Geoff Smart y Randy Street",
+      "cifra": "Steve Kerr, director de aprendizaje de Goldman Sachs y antes responsable del centro de formacion de GE, considera que los procesos de entrevista corrientes son casi un predictor aleatorio del desempeño en el puesto",
+      "fecha_corte": "2008",
+      "fuente": "smart_who"
+    }
+  ],
+  "condiciones_activacion": "Cuando ya tienes candidatos encontrados por referencias o identificados por tus reclutadores e investigadores, y hay que cribarlos. Es el tercer paso del metodo A de ghSMART, el que sigue a crear la tarjeta de puntuacion del puesto y a abastecer el flujo de candidatos, y el que precede a vender el puesto a la persona elegida.",
+  "denominaciones": {
+    "nombre_largo": "Select, el tercer paso del metodo A: las cuatro entrevistas para detectar jugadores A",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "Select: The Four Interviews for Spotting A Players"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "HOW TO SELECT AN A PLAYER"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "A Player"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "contratacion",
+  "entregable_esperado": "La decision de a quien contratar, tomada sobre los hechos que las cuatro entrevistas reunieron y calificada contra la tarjeta de puntuacion del puesto.",
+  "escala_minima": "El propio libro la fija por su ejemplo mas corto: la entrevista cronologica baja a noventa minutos en puestos de entrada, frente a las cinco horas de un consejero delegado de una empresa de miles de millones.",
+  "fuentes": [
+    {
+      "clave": "smart_who",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "id": "seleccionar_jugador_cuatro_entrevistas",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Entrevista de criba: conduce una entrevista de criba de veinte a treinta minutos usando las cuatro preguntas clave. Sondea para obtener mas informacion con el marco de que, como y cuentame mas. Filtra fuera de tu flujo de contratacion a los jugadores B y C evidentes.",
+    "Entrevista cronologica de trayectoria: conduce una entrevista de una hora y media a tres horas recorriendo cronologicamente la carrera del candidato, con las mismas cinco preguntas para cada empleo o capitulo de su historia laboral. El responsable de la contratacion y otro colega deben conducirla en tandem.",
+    "Entrevistas enfocadas: involucra a otros en el proceso de contratacion asignando a miembros del equipo entrevistas centradas en los resultados o en las competencias de la tarjeta de puntuacion.",
+    "Discusion del candidato: despues de cada jornada de entrevistas, califica la tarjeta de puntuacion con el marco de habilidad y voluntad. Haz avanzar a aquellos cuya habilidad, lo que se les da bien de raiz, y cuya voluntad, lo que quieren hacer y en que tipo de cultura, encajan con la mision, los resultados y las competencias de tu tarjeta. Busca personas a las que calificarias con una A en los resultados criticos y en las competencias clave. Nadie es perfecto, pero busca a los que son fuertes en los sitios mas importantes de tu tarjeta.",
+    "Entrevistas de referencias: conduce siete llamadas de referencia con personas que eliges tu a partir de la entrevista cronologica. Pide al candidato que organice las llamadas, para atravesar a los guardianes minimizando tu propio esfuerzo.",
+    "Decision final: repite tu analisis del perfil de habilidad y voluntad para asegurarte de que sigues teniendo una diana."
+  ],
+  "resumen_teorico": "Steve Kerr, director de aprendizaje de Goldman Sachs y antes responsable del centro de formacion de GE, sostiene que los procesos de entrevista corrientes son casi un predictor aleatorio del desempeño en el puesto, y los autores dicen que su propia investigacion lo confirma. La salida que proponen no es entrevistar mejor de oido sino una serie de cuatro entrevistas que se apoyan una en otra y que, juntas, dan los hechos necesarios para calificar a una persona contra la tarjeta de puntuacion del puesto. Las cuatro son la entrevista de criba, la entrevista cronologica de trayectoria, las entrevistas enfocadas y las entrevistas de referencias. El giro de metodo esta escrito en el propio capitulo: para ser un buen entrevistador hay que dejar el habito de presenciar pasivamente como se comporta alguien durante una entrevista, porque eso devuelve al terreno de los metodos vudu, donde se decide por como actuo una persona durante unos minutos de un dia concreto; el lapso es demasiado corto para predecir nada util, y las cuatro entrevistas usan el tiempo para reunir hechos y datos de un historial de desempeño que abarca decadas. Este nodo es la cabeza del recuadro HOW TO SELECT AN A PLAYER y es la unica compresion de esa numeracion de seis puntos.",
+  "titulo": "Seleccionar al jugador A con las cuatro entrevistas, en seis pasos"
+}

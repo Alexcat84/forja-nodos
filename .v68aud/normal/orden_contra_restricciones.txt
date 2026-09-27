@@ -1,0 +1,7 @@
+filas en su orden: 20 | distintas: 20 | iguales a mis 20: True
+  tomar_notas_copia_guion_reunion_individual         (fila  8) antes que conducir_reunion_individual_telefono_distancia     (fila 11) | CONTINUA                                     | LA CUMPLE
+  preparar_guion_reunion_individual_subordinado      (fila  5) antes que tomar_notas_copia_guion_reunion_individual         (fila  8) | CONTINUA                                     | LA CUMPLE
+  conducir_etapas_modelo_ideal_decision              (fila 13) antes que ejercer_poder_posicion_etapa_decision_clara        (fila 14) | arista por lectura                           | LA CUMPLE
+  conducir_etapas_modelo_ideal_decision              (fila 13) antes que cortar_discusion_libre_momento_justo               (fila 17) | arista por lectura                           | LA CUMPLE
+  anunciar_decision_inesperada_reconvocar_reunion    (fila 19) antes que decidir_nivel_competente_inferior                  (fila 20) | D.36, solo lo levanta decidir_nivel_competen | LA CUMPLE
+  ejercer_poder_posicion_etapa_decision_clara        (fila 14) antes que vencer_sindrome_grupo_pares_autoconfianza          (fila 15) | D.36, solo lo levanta vencer_sindrome_grupo_ | LA CUMPLE

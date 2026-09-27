@@ -1,0 +1,40 @@
+{
+  "id": "fijar_resultado_excelente_reunion",
+  "titulo": "Fijar a que se parece un resultado excelente antes de convocar la reunion",
+  "denominaciones": {
+    "nombre_largo": "La pregunta que va mas alla del proposito, el punado de razones para juntarse en persona, y como se devuelve la conversacion a su agenda",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "what is a great outcome for your meeting?"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Antes de convocar cualquier reunion, y otra vez dentro de ella en cuanto la conversacion empieza a desviarse del tema.",
+  "entregable_esperado": "Una reunion con su resultado excelente nombrado, con una sola de las razones del libro como proposito primario, y una conversacion que vuelve a la agenda prevista cuando se desvia.",
+  "pasos_accionables": [
+    "No te quedes en el consejo corriente de que toda reunion debe tener un proposito. Es buen consejo, pero no llega lo bastante lejos: la autora cuenta que su reunion de estado si tenia proposito, mantener a todo el mundo informado del avance semanal del equipo, y aun asi salio mala.",
+    "Preguntate a ti mismo, antes de nada, a que se parece un gran resultado. Esa es la pregunta que ella no se hizo.",
+    "Ten cristalinamente claro el resultado que persigues: el libro dice que ese es el primer paso para dirigir grandes reuniones.",
+    "Elige cual es tu razon, porque solo hay un punado de razones para que la gente se junte en persona, y el libro las nombra una a una: tomar una decision, compartir informacion, dar opinion sobre un trabajo en curso, generar ideas, y reforzar relaciones.",
+    "Deja claro en cada reunion cual de esas esta intentando conseguir.",
+    "No intentes que una sola reunion haga demasiado.",
+    "Recuerda al grupo su proposito primario cuando la conversacion empiece a desviarse.",
+    "Si lo que buscas es una decision sobre precios y la gente empieza a proponer funciones nuevas, di que buscaras tiempo aparte para ese otro tema, y despues devuelve la conversacion a la agenda prevista.",
+    "No cuentes con que la estructura de una reunion de decision sirva de foro para generar ideas: en la experiencia de la autora es improbable.",
+    "Practica claridad y eficiencia despiadada con tus reuniones, y la gente te lo agradecera por respetar lo sagrado de su tiempo."
+  ],
+  "resumen_teorico": "Es la cabeza del capitulo de reuniones y la pieza que hace procedimentables a las otras cinco: el libro sostiene que el consejo corriente de tener un proposito no basta, y que lo que ordena una reunion es el resultado concreto que se persigue. El inventario propio del libro es el punado de razones para juntarse en persona, nombradas una a una en los cinco epigrafes que siguen, y por eso escribir el paso 4 es transcribir y no inventar. El libro NO dice cuantas son con un numero, asi que la arista a cada una de las cinco se declara por lectura y no como serie contada. Lo que tampoco dice, y por eso no esta escrito aqui, es quien fija el resultado cuando la reunion la convoca otro, ni donde se apunta ese resultado, ni que hacer si la reunion necesita de verdad dos propositos."
+}

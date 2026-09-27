@@ -1,0 +1,16 @@
+==============================================================================
+FICHA: usar_tres_clases_reunion_proceso   (4 pasos)
+  poblacion barrida: 399 nodos (grafo + bandejas, filtro canonico)
+  medidos al digito: 398 de 398; descartados: 0
+  umbral de la casa (config/umbrales.json): 0.35
+  reloj del barrido: 676.3 s
+  LOS 8 VECINOS MAS PROXIMOS, LISTA ORDENADA ENTERA:
+    0.3359  [bandeja/grove_high_output] infundir_regularidad_reunion_proceso
+    0.3061  [bandeja/grove_high_output] subir_productividad_gerencial_tres_vias
+    0.3024  [bandeja/grove_high_output] preparar_respuestas_estandar_interrupciones_repetidas
+    0.2905  [bandeja/grove_high_output] buscar_actividad_alta_palanca_tres_vias
+    0.2852  [bandeja/grove_high_output] canalizar_interrupciones_cartel_hora_oficina
+    0.2791  [bandeja/grove_high_output] buscar_regularidad_bloques_iguales_trabajo_mando
+    0.2748  [bandeja/grove_high_output] elegir_momento_actividad_palanca_maxima
+    0.2738  [bandeja/grove_high_output] llevar_inventario_proyectos_discrecionales
+  vecinos por encima del umbral 0.35: 0

@@ -1,0 +1,11 @@
+$ python forja.py credito
+
+  especie            racha      de donde sale
+  ----------------------------------------------------------------------
+  AUDITOR            0 de 3     ACTA 46
+  CIFRA PUBLICADA    0 de 2     ACTA 46
+  CLASE              0 de 2     ACTA 46
+  DATO MOVIDO        0 de 2     ACTA 46
+  REPORTE            0 de 3     ACTA 46
+
+  CREDITO ENTERO: ninguna especie en su tope.

@@ -1,0 +1,3 @@
+.v58ext/frontera.py: 1 funciones/clases
+.v60ext/frontera.py: 1 funciones/clases
+LAS FUNCIONES QUE MIDEN: IDENTICAS, ni una linea

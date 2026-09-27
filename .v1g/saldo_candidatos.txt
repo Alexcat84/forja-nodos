@@ -1,0 +1,22 @@
+| # | candidato | unidad | pieza | puerta | poblacion del barrido | vecinos | la cola, nombrada |
+|---:|---|---|---|---|---|---:|---|
+| 1 | `revisar_tres_preguntas_valor_carrera` | `cap_01` | `P12` | **ENTRARIA** | 349 (270 mas 79) | 0 | cola vacia |
+| 2 | `construir_flujo_produccion_paso_limitante` | `cap_02` | `P2` | **BLOQUEARIA** | 356 (270 mas 86) | 2 | `retirar_barreras_politicas_metodo` por `paso_contra_nodo`, similitud 0,122, familia 0,000, paso contra nodo 0,614; `rehacer_flujo_paso_limitante_capacidad` por `familia_id`, similitud 0,268, familia 0,429, paso contra nodo 0,430 |
+| 3 | `clasificar_trabajo_proceso_montaje_prueba` | `cap_02` | `P5` | **ENTRARIA** | 351 (270 mas 81) | 0 | cola vacia |
+| 4 | `rehacer_flujo_paso_limitante_capacidad` | `cap_02` | `P6` | **BLOQUEARIA** | 352 (270 mas 82) | 1 | `construir_flujo_produccion_paso_limitante` por `familia_id`, similitud 0,321, familia 0,429, paso contra nodo 0,430 |
+| 5 | `equilibrar_capacidad_personal_inventario_plazo` | `cap_02` | `P7` | **ENTRARIA** | 353 (270 mas 83) | 0 | cola vacia |
+| 6 | `preferir_inspeccion_proceso_prueba_destructiva` | `cap_02` | `P9` | **BLOQUEARIA** | 354 (270 mas 84) | 2 | `clasificar_trabajo_proceso_montaje_prueba` por `similitud_texto`, similitud 0,385, familia 0,250, paso contra nodo 0,446; `equilibrar_capacidad_personal_inventario_plazo` por `similitud_texto`, similitud 0,370, familia 0,000, paso contra nodo 0,406 |
+| 7 | `dimensionar_inventario_materia_prima_reposicion` | `cap_02` | `P10` | **BLOQUEARIA** | 355 (270 mas 85) | 2 | `preferir_inspeccion_proceso_prueba_destructiva` por `similitud_texto`, similitud 0,432, familia 0,000, paso contra nodo 0,403; `equilibrar_capacidad_personal_inventario_plazo` por `similitud_texto`, similitud 0,374, familia 0,111, paso contra nodo 0,392 |
+| 8 | `detectar_arreglar_fallo_etapa_menor_valor` | `cap_02` | `P11` | **BLOQUEARIA** | 356 (270 mas 86) | 2 | `construir_flujo_produccion_paso_limitante` por `similitud_texto`, similitud 0,354, familia 0,000, paso contra nodo 0,411; `rehacer_flujo_paso_limitante_capacidad` por `similitud_texto`, similitud 0,359, familia 0,000, paso contra nodo 0,397 |
+| | **8 candidatos** | | | **3 ENTRARIAN, 5 BLOQUEARIAN, 0 CAERIAN** | | **9** | |
+
+EL SALDO, RECONTADO DE LAS FILAS DE ARRIBA
+  candidatos escritos y pasados por la aduana en el acto : 8
+  ENTRARIAN                                             : 3
+  BLOQUEARIAN (cola de lectura, no rechazo)              : 5
+  CAERIAN al escribir esta tabla                         : 0
+  vecinos levantados en total                            : 9
+  ficheros en la bandeja del libro                       : 8
+
+AVISO DE LA FILA 2: su informe es el de DESPUES de la correccion de fidelidad del paso 6
+  (.v1g/informe_02b.txt). El de ANTES esta en .v1g/informe_02.txt y no se borra.

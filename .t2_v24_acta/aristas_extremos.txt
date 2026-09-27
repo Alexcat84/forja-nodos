@@ -1,0 +1,5 @@
+nodos en el grafo: 214 | extremos previos: 79 siguientes: 79
+aristas 36..71 leidas: 36
+con LOS DOS extremos ya en el grafo: 0 []
+con UN solo extremo en el grafo: 2
+con NINGUN extremo en el grafo: 34

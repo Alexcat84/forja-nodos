@@ -1,0 +1,16 @@
+bloques abiertos con `$` en el tramo de la vuelta 62 : 29
+bloques que ROMPEN R1 (ACTA 60 60.15)                : 5
+   $ tail -6 docs/loop/CREDITO_serial.jsonl
+       ELISION `...` en medio de la salida, sin declarar
+   $ tail -2 docs/loop/DEUDA.jsonl
+       NO ES LA SALIDA DEL COMANDO: 6 de 6 lineas pegadas que el comando no imprime
+   $ python forja.py tablero --escribir
+       ELISION `...` en medio de la salida, sin declarar
+   $ git show 1b20e64 -- docs/loop/TABLERO.jsonl
+       ELISION `...` en medio de la salida, sin declarar
+   $ date '+%F %T fin informe (extractor)'
+       TEXTO ANADIDO detras de la salida: (579 s, poblacion 440)
+
+CONTROL, y NO es caida: el primer `git hash-object docs/loop/TABLA_DE_CIERRE.txt`
+pega 544ddc8d y hoy imprime e0fac5d1 porque el fichero se relevo DESPUES,
+dentro de la misma vuelta y declarado en 62.5.a. El segundo reproduce IDENTICO.

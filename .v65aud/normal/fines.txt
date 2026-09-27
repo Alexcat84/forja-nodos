@@ -1,0 +1,3 @@
+$ ls .v65ext/insertar_*.fin | wc -l; cat .v65ext/insertar_*.fin | sort | uniq -c
+20
+     20 0

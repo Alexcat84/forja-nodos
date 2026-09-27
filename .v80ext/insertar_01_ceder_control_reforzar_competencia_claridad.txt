@@ -1,0 +1,26 @@
+fila 01, ceder_control_reforzar_competencia_claridad, lineas --veredicto: 1
+  --veredicto encargar_meta_especifica_dejar_libre_metodo|SANO|Hermanos: el vecino encarga una meta sin decir como (cap_02 L49), y este cede el control reteniendo la responsabilidad y refuerza los dos pilares (cap_01 L97). Se tocan en una sola cosa, no decir como frente a ceder el control, y cada uno trae procedimiento propio fuera de ese punto. Ninguno usa el producto del otro (ACTA M8.5 del frente, con el mismo par).
+inicio 2026-09-26 17:39:52
+======================================================================
+ADUANA DE INSERCION, candidato 'ceder_control_reforzar_competencia_claridad'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (459 del grafo mas 20 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino encargar_meta_especifica_dejar_libre_metodo  [Encargar una meta especifica sin decir como se cumple, y dejar los recursos como estaban]
+    levantada por: similitud_texto
+    similitud_texto    0.372 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.486 (umbral 0.60)
+    paso 4 del candidato contra paso 4 de encargar_meta_especifica_dejar_libre_metodo
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 460
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 1
+
+======================================================================
+fin 2026-09-26 17:48:06 | codigo de salida 0 | 494.3 s

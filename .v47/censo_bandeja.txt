@@ -1,0 +1,26 @@
+$ wc -l dataset/nodos.jsonl
+346 dataset/nodos.jsonl
+
+$ ls cuarentena/ | cat
+_derivadas/
+_insertados/
+ensayo_referencia_163/
+grove_high_output/
+LEEME.md
+marquet_turn_the_ship/
+onu_consumidor/
+scott_radical_candor/
+smart_who/
+zhuo_manager/
+
+$ for d in cuarentena/*/; do case "$d" in *_insertados/|*_derivadas/) continue;; esac; printf "%-34s %s\n" "$(basename $d)" "$(ls -1 $d/*.json 2>/dev/null | wc -l)"; done
+ensayo_referencia_163              163
+grove_high_output                  22
+marquet_turn_the_ship              3
+onu_consumidor                     0
+scott_radical_candor               0
+smart_who                          0
+zhuo_manager                       0
+
+$ ls -1 cuarentena/*/*.json | grep -v _insertados | grep -v _derivadas | wc -l   (bandeja total)
+188

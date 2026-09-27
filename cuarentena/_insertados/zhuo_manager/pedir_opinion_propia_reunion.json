@@ -1,0 +1,36 @@
+{
+  "id": "pedir_opinion_propia_reunion",
+  "titulo": "Pedir opinion sobre tu propia reunion en vez de esperar a que alguien se atreva",
+  "denominaciones": {
+    "nombre_largo": "La via fiable para saber si tu reunion sirve, las claves de la pregunta, y el ejemplo literal sobre la reunion de estado fallida",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "get feedback about your meeting"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Con cualquier reunion tuya, y especialmente con las periodicas que tienen un publico grande.",
+  "entregable_esperado": "Una opinion honesta y concreta sobre si tu reunion es un buen uso del tiempo de quienes van a ella, pedida por ti y no esperada.",
+  "pasos_accionables": [
+    "No cuentes con la suerte de tener en el equipo a alguien franco que te diga cuando siente que tu reunion no es un buen uso de su tiempo.",
+    "Usa la via mas fiable: coge la costumbre de pedir opinion, sobre todo en las reuniones periodicas con un publico grande.",
+    "Se especifico sobre lo que quieres saber. El libro dice que ahi esta la clave para conseguir una gran opinion.",
+    "Haz que sea seguro para la persona decirte su opinion honesta. El libro lo pone unido a lo anterior, en la misma frase y como parte de la misma clave.",
+    "Abre diciendo lo que sospechas que puede ser el problema, porque eso da la senal de que esta bien que la persona sea critica.",
+    "Escribe la pregunta con esa forma. El libro pone su propio ejemplo sobre la reunion de estado que fracaso: como de util crees que es mi reunion de estado semanal? Mi meta es dar a todo el mundo contexto sobre quien esta haciendo que, para que haya mejor colaboracion y apoyo en el equipo. Pero me pregunto si ahora mismo esta demasiado metida en los detalles. Tu que opinas?"
+  ],
+  "resumen_teorico": "Cierra el bloque de hacer seguro contribuir aplicando sobre la propia reunion lo que el capitulo pide para el trabajo de los demas. El inventario propio del libro son las dos claves de la buena opinion, ser especifico y hacerlo seguro, mas la tactica concreta de abrir con lo que uno sospecha; y el ejemplo literal de la pregunta es lo que convierte esas dos claves en algo que se ejecuta en vez de algo con lo que se esta de acuerdo. El nodo se queda con la reunion como objeto y no se ensancha a la opinion en general, que es materia de otro capitulo del mismo libro y ya vive en el grafo. Lo que el libro NO dice, y por eso no esta escrito aqui, es a cuanta gente se le pregunta, cada cuanto, ni que se hace con la respuesta cuando dice que la reunion sobra."
+}

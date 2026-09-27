@@ -1,0 +1,17 @@
+$ git diff --stat cuarentena/
+ .../pedir_critica_primero_crear_seguridad_psicologica.json          | 6 +++---
+ .../practicar_triangulo_critica_tres_papeles.json                   | 4 ++--
+ 2 files changed, 5 insertions(+), 5 deletions(-)
+
+$ python .v38/no_ascii.py
+mejorar_consciencia_propia_relacional_dos_practicas  solo ascii
+contar_cuatro_historias_propias_ver_hueco_intencion  solo ascii
+practicar_triangulo_critica_tres_papeles             solo ascii
+pedir_critica_primero_crear_seguridad_psicologica    solo ascii
+elegir_pregunta_recurrente_pedir_critica             solo ascii
+resolver_dudas_frecuentes_pedir_critica              solo ascii
+
+$ los dos pasos reescritos
+  P06: Empieza por el primero y no por otro, y el texto explica por que hace falta decirlo: de las dos historias mas memorables y mas repetidas de la primera edicion, una era de una jefa dando critica con acierto y la otra de lo que pasa cuando una jefa NO la da; al libro le faltaba una historia igual de memorable de una jefa pidiendo critica a un empleado, y por eso muchos lectores se quedaron con la impresion de que la franqueza radical va sobre todo de jefes criticando a empleados, cuando nada podria estar mas lejos de la verdad.
+  P15: Cuenta con lo que eso desencadena hacia abajo: cuando el consejero delegado pide critica y premia a quien se la da, manda una senial a los jefes intermedios de que deberian hacer lo mismo, y segun la gente de todos los niveles de la organizacion se da cuenta de que dar critica honesta es seguro e incluso se fomenta, se produce un circulo virtuoso.
+  P10: O que empiece radicalmente franco, quien recibe la critica se enfade y conteste con groseria, y entonces quien la da se enfade tambien y se vuelva seriamente odioso y agresivo.

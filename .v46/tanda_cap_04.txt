@@ -1,0 +1,58 @@
+==============================================================================
+1. LA TANDA DE cap_04, CANDIDATO POR CANDIDATO
+==============================================================================
+| # | tramo | candidato | pasos | TRANSCRIPCION | PUENTE | la aduana, en el acto | vecinos | s |
+|---:|---|---|---:|---:|---:|---|---:|---:|
+| 1 | `P7` | `reunir_informacion_gerencial_vias_variadas` | 8 | 8 | **0** | `ENTRARIA` | 0 | 513 |
+| 2 | `P9` | `escalonar_fuentes_informacion_gerencial` | 7 | 7 | **0** | `BLOQUEARIA` | 1 | 576 |
+| 3 | `P10` | `programar_visita_area_observar_despachar` | 8 | 8 | **0** | `BLOQUEARIA` | 1 | 559 |
+| 4 | `P11` | `transmitir_objetivos_prioridades_preferencias` | 5 | 5 | **0** | `BLOQUEARIA` | 1 | 447 |
+| 5 | `P13` | `empujar_persona_reunion_direccion_preferida` | 7 | 7 | **0** | `BLOQUEARIA` | 5 | 492 |
+| 6 | `P18` | `subir_productividad_gerencial_tres_vias` | 4 | 4 | **0** | `ENTRARIA` | 0 | 423 |
+| 7 | `P19` | `buscar_actividad_alta_palanca_tres_vias` | 4 | 4 | **0** | `BLOQUEARIA` | 1 | 449 |
+| 8 | `P20` | `elegir_momento_actividad_palanca_maxima` | 7 | 7 | **0** | `BLOQUEARIA` | 4 | 585 |
+| | | **8 candidatos** | **50** | **50** | **0** | | **13** | **4044** |
+
+==============================================================================
+2. PASOS INVENTADOS DE cap_04 (D.30), CON SU DENOMINADOR
+==============================================================================
+| capitulo | PUENTE | pasos escritos | por ciento | tope |
+|---|---:|---:|---:|---:|
+| `cap_04` | **0** | **50** | **0.00** | 10 |
+| **total de la vuelta** | **0** | **50** | **0.00** | 10 |
+
+EL DENOMINADOR SE ESCRIBE AUNQUE EL NUMERADOR SEA CERO: 50 pasos escritos.
+
+==============================================================================
+3. LA COLA DE LECTURA QUE ESTA TANDA ABRE, PAR A PAR
+==============================================================================
+| par | candidato | vecino | senial | sim | fam | paso |
+|---:|---|---|---|---:|---:|---:|
+| 1 | `escalonar_fuentes_informacion_gerencial` | `reunir_informacion_gerencial_vias_variadas` | similitud_texto | 0.364 | 0.286 | 0.463 |
+| 2 | `programar_visita_area_observar_despachar` | `reunir_informacion_gerencial_vias_variadas` | similitud_texto | 0.374 | 0.000 | 0.372 |
+| 3 | `transmitir_objetivos_prioridades_preferencias` | `escalonar_fuentes_informacion_gerencial` | similitud_texto | 0.365 | 0.000 | 0.380 |
+| 4 | `empujar_persona_reunion_direccion_preferida` | `reunir_informacion_gerencial_vias_variadas` | similitud_texto | 0.363 | 0.000 | 0.484 |
+| 5 | `empujar_persona_reunion_direccion_preferida` | `transmitir_objetivos_prioridades_preferencias` | similitud_texto | 0.350 | 0.000 | 0.441 |
+| 6 | `empujar_persona_reunion_direccion_preferida` | `programar_visita_area_observar_despachar` | similitud_texto | 0.375 | 0.000 | 0.433 |
+| 7 | `empujar_persona_reunion_direccion_preferida` | `escalonar_fuentes_informacion_gerencial` | similitud_texto | 0.351 | 0.000 | 0.412 |
+| 8 | `empujar_persona_reunion_direccion_preferida` | `representar_actividad_caja_negra_ventanas` | similitud_texto | 0.373 | 0.000 | 0.408 |
+| 9 | `buscar_actividad_alta_palanca_tres_vias` | `subir_productividad_gerencial_tres_vias` | similitud_texto | 0.437 | 0.222 | 0.519 |
+| 10 | `elegir_momento_actividad_palanca_maxima` | `programar_visita_area_observar_despachar` | similitud_texto | 0.376 | 0.000 | 0.420 |
+| 11 | `elegir_momento_actividad_palanca_maxima` | `construir_indicador_tendencia_patron` | similitud_texto | 0.354 | 0.000 | 0.412 |
+| 12 | `elegir_momento_actividad_palanca_maxima` | `escalonar_fuentes_informacion_gerencial` | similitud_texto | 0.354 | 0.000 | 0.402 |
+| 13 | `elegir_momento_actividad_palanca_maxima` | `transmitir_objetivos_prioridades_preferencias` | similitud_texto | 0.358 | 0.000 | 0.395 |
+| | | | **13 pares** | | | |
+
+PARES CON similitud_texto POR ENCIMA DE 0,40 (EXTRACTOR.md 11: se leen antes que ningun otro): 1
+   buscar_actividad_alta_palanca_tres_vias  contra  subir_productividad_gerencial_tres_vias   sim 0.437
+BANDA DE similitud_texto DE ESTA TANDA: de 0.350 a 0.437
+
+==============================================================================
+4. EL RELOJ DE LA ADUANA EN SECO, QUE ES LO QUE DECIDE EL TRAMO
+==============================================================================
+candidatos pasados por la aduana en esta vuelta : 8
+segundos por candidato, menor y mayor           : 423 y 585
+media por candidato                             : 505.5 s
+total de la tanda                               : 4044 s  (67.4 min)
+lo que costarian los 22 de la frontera          : 11121 s  (185.3 min)
+lo que costaria el techo de 15                  : 7582 s  (126.4 min)

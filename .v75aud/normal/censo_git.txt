@@ -1,0 +1,15 @@
+$ git diff --name-only 702ee04d 7a8cd241 | grep -v "^\.v75ext/" | sed "s|/[^/]*\.json$|/*.json|" | sort | uniq -c
+      1 bitacora/VEREDICTOS.jsonl
+      1 censos/denominaciones.md
+      7 cuarentena/_insertados/grove_high_output/*.json
+      1 dataset/nodos.jsonl
+      2 docs/loop/*.json
+      1 docs/loop/loop.log
+      1 docs/loop/REPORTE.md
+$ git diff --name-only 7a8cd241 34427e31
+docs/loop/APERTURA_CIEGA.md
+docs/loop/SELLOS_APERTURA.jsonl
+$ git log --format=%h 702ee04d..7a8cd241 -- dataset/nodos.jsonl | wc -l
+8
+$ git status --short -- dataset bitacora censos config esquema fuentes src scripts tests cuarentena forja.py | wc -l
+0

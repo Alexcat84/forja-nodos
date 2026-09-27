@@ -1,0 +1,10 @@
+filas mias: 42 | suyas: 42 | solo mias: 0 | solo suyas: 0
+pares (mia, suya): {('D', 'T'): 1, ('T', 'P'): 6, ('T', 'T'): 35} | suma: 42
+filas con linea del libro distinta: 0
+  usar_banco_nueve_preguntas_entrevista                paso 3 | mia T L43 | suya P L43
+  usar_banco_nueve_preguntas_entrevista                paso 8 | mia T L53 | suya P L53
+  responder_primer_aviso_renuncia_subordinado          paso 6 | mia T L111 | suya P L111
+  gestionar_retencion_subordinado_valioso_renuncia     paso 1 | mia T L113 | suya P L113
+  gestionar_retencion_subordinado_valioso_renuncia     paso 5 | mia T L119 | suya P L119
+  gestionar_retencion_subordinado_valioso_renuncia     paso 6 | mia D L121 | suya T L121
+  pedir_critica_anonima_curso_entrenamiento_dictado    paso 3 | mia T L61 | suya P L61

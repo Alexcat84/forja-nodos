@@ -1,0 +1,17 @@
+AVISO: cero celdas tecleadas. Cada linea es la que sed -n imprime de fuentes/gerber_emyth/cap_11.md.
+UNICA TRANSFORMACION DECLARADA: 5 guion(es) largo(s) U+2014 sustituido(s) por coma mas
+espacio y 0 guion(es) medio(s) U+2013 por guion corto, porque el barrido de estilo de
+esta casa tumba los dos. El resto es byte a byte el del libro.
+
+35: Pretend that the business you own, or want to own, is the prototype, or will be the prototype, for 5,000 more just like it.
+37: That your business is going to serve as the model for 5,000 more just like it.
+39: Not almost like it, but just like it. Perfect replicates. Clones.
+41: In other words, pretend that you are going to franchise your business. (Note: I said pretend . I’m not saying that you should. That isn’t the point here, unless, of course, you want it to be.)
+43: Further, now that you know what the game is, the franchise game, understand that there are rules to follow if you are to win:
+45: 1. The model will provide consistent value to your customers, employees, suppliers, and lenders, beyond what they expect.
+47: 2. The model will be operated by people with the lowest possible level of skill.
+49: 3. The model will stand out as a place of impeccable order .
+51: 4. All work in the model will be documented in Operations Manuals.
+53: 5. The model will provide a uniformly predictable service to the customer.
+55: 6. The model will utilize a uniform color, dress, and facilities code.
+57: Let’s take a look at each of these rules in turn.

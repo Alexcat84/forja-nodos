@@ -1,0 +1,43 @@
+{
+  "id": "correr_semana_arreglo_averias_gestion",
+  "titulo": "Correr una semana de arreglo de averias de gestion, con el registro publico, la votacion y el reparto que el texto describe",
+  "denominaciones": {
+    "nombre_largo": "La semana de arreglo aplicada a la gestion y no al producto: registro publico de averias de gestion, voto para priorizar, agrupado de duplicados, reparto entre jefes y cancelacion de lo demas",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "management fix-it weeks"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "bureaucracy busters"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando los problemas de gestion de tu organizacion molestan a todo el mundo y nadie tiene tiempo asignado para arreglarlos.",
+  "entregable_esperado": "Las averias de gestion mas molestas de la organizacion registradas, priorizadas por voto, repartidas entre jefes y arregladas en una semana dedicada a eso.",
+  "pasos_accionables": [
+    "Parte de lo que las organizaciones de ingenieria ya hacen y que el texto toma de ahi: parar de trabajar en funciones nuevas durante una semana y arreglar errores del producto actual, con una lista priorizada preparada de antemano.",
+    "Cuenta con lo que el texto distingue: una semana de arreglo de averias es lo contrario de una semana de ideas nuevas. En vez de una ocasion de trabajar en cosas nuevas y emocionantes, es una ocasion de arreglar problemas viejos y molestos que llevan meses fastidiando a la gente.",
+    "Aplica la misma idea a la gestion, que es lo que el texto cuenta que decidio hacer un equipo de Google por higiene, y que otro equipo hizo despues con otro nombre.",
+    "Crea un sistema donde la gente pueda registrar problemas molestos de gestion. El texto da sus propios ejemplares de que cuenta como averia de gestion: que se tarde demasiado en aprobar las notas de gastos, que las evaluaciones de desempenio caigan siempre en la peor epoca del anio, que la ultima encuesta a empleados se tardara demasiado en rellenar, o que el sistema de promocion parezca injusto.",
+    "Haz publico ese sistema de registro, para que la gente pueda votar y fijar asi las prioridades.",
+    "Asigna a alguien el trabajo de leerlas todas y agrupar las duplicadas.",
+    "Reparte las averias entre los jefes durante la semana de arreglo.",
+    "Haz que esos jefes cancelen todas sus actividades regulares, o casi todas, y se centren en arreglar los problemas de gestion que mas molestan a la organizacion."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_09.md, unidad Cap. 6, Guidance. Sale de las lineas 65 a 71, bajo el rotulo de seccion MANAGEMENT FIX-IT WEEKS, dentro de la seccion SOLICITING IMPROMPTU GUIDANCE. ES LA PIEZA P6 DE LA FRONTERA DE ESTA VUELTA. POR QUE ES PROCEDIMIENTO Y NO POSTURA, con D.27 delante: la linea 69 dice literalmente Here is how it worked, y detras va la mecanica entera con sus ETAPAS nombradas una a una, que es inventario en el sentido literal de D.27. La linea 71 aniade las tres ultimas: sistema publico para votar prioridades, alguien asignado a leerlas y agrupar duplicados, y reparto de averias entre jefes cancelando lo demas. No hay adjetivo de adecuacion en el sitio del criterio: el texto no dice un sistema adecuado, dice como era el sistema. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 8 pasos, 8 TRANSCRIPCION, 0 PUENTE. P1 y P2 salen de la linea 67; P3 y P4 de la 69; P5, P6, P7 y P8 de la 71. EL CASO DE GOOGLE VA DENTRO Y NO ES LA CASA: el texto lo cuenta en pasado, At some point, a team at Google decided, pero lo que sigue no es la cronica de aquel equipo sino la mecanica en abstracto, con sus objetos de trabajo nombrados. Es la misma forma que esta casa ya adjudico a favor en cap_07, con los tres retratos en pasado bajo rotulo imperativo. NO ESCRIBO EL PERIODO: el texto dice regular management fix-it weeks y no dice cada cuanto, asi que el P3 dice lo que el texto dice y ningun paso pone una cadencia. NO ESCRIBO RESPONSABLE de crear el sistema: el P6 si nombra un responsable, pero es el que el texto nombra, Somebody was assigned the job of reading through them all. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: cada cuanto se corre la semana, cuantas averias se reparten por jefe, que se hace con las que no se arreglan, ni quien decide que una averia esta cerrada.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-12"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "atribuciones": []
+}

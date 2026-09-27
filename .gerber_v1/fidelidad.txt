@@ -1,0 +1,155 @@
+LA RELECTURA DE FIDELIDAD D.30 DE LOS DIEZ CANDIDATOS DE LA VUELTA 1 DE gerber_emyth
+AVISO: el trozo del libro lo saca la maquina de fuentes/gerber_emyth/<unidad>.md y
+       revienta si el ancla no esta en esa linea. LA LINEA Y EL VEREDICTO LOS PONGO
+       YO LEYENDO: es el numerador que D.30 dice que ninguna guarda puede poner.
+
+### `hacer_trabajo_futuro_imaginar_negocio`, unidad `cap_04`, 7 pasos, todos releidos
+
+| paso de `hacer_trabajo_futuro_imaginar_negocio` | la salida del libro, pegada por `.gerber_v1/fidelidad.py` | veredicto |
+|---:|---|---|
+| `1` | `285: ...An Entrepreneur does the work of envisioning the business as something apart from you, the owner. The wor...` | **TRANSCRIPCION** |
+| `2` | `285: ...The work of asking all the right questions about why this business, as opposed to that business? Why a pi...` | **TRANSCRIPCION** |
+| `3` | `285: ...you would leave your pie-baking experience behind you and engage in the internal dialogue with which ever...` | **TRANSCRIPCION** |
+| `4` | `287: ...It's time for me to create a new life. It's time for me to challenge my imagination and to begin the proc...` | **TRANSCRIPCION** |
+| `5` | `287: ...One that can give me everything that I want, one that doesn't require me to be there all the time, one th...` | **TRANSCRIPCION**, **mi discutible 1.** Los cuatro rasgos son FINES, y van aqui porque son el contenido del dialogo que el libro transcribe, no el criterio del nodo |
+| `6` | `289: ...The dreaming question, I call it. It's the question that is at the heart of the work of an Entrepreneur. ...` | **TRANSCRIPCION** |
+| `7` | `291: ...I call it Future Work. 'I wonder' is the true work of the entrepreneurial personality."` | **TRANSCRIPCION** |
+
+### `dictar_ritmo_crecimiento_preguntas_escritas`, unidad `cap_07`, 8 pasos, todos releidos
+
+| paso de `dictar_ritmo_crecimiento_preguntas_escritas` | la salida del libro, pegada por `.gerber_v1/fidelidad.py` | veredicto |
+|---:|---|---|
+| `1` | `279: ...understanding the key processes that need to be performed, the key objectives that need to be achieved, t...` | **TRANSCRIPCION** |
+| `2` | `279: ...the key objectives that need to be achieved, the key position you are aiming your business to hold in the...` | **TRANSCRIPCION** |
+| `3` | `279: ...the key position you are aiming your business to hold in the marketplace.` | **TRANSCRIPCION** |
+| `4` | `281: ...By asking the right questions, such as: Where do I wish to be? When do I wish to be there? How much capit...` | **TRANSCRIPCION**, **el inventario de preguntas es del libro**, transcrito entero y con sus tres marcas |
+| `5` | `283: ...you will also have contingency plans in place. Best case, worst case. And sometimes you will simply fly b...` | **TRANSCRIPCION** |
+| `6` | `285: ...the key is to plan, envision, and articulate what you see in the future both for yourself and for your em...` | **TRANSCRIPCION** |
+| `7` | `285: ...write it down, clearly, so others can understand it-you don't own it! And do you know that in all the yea...` | **TRANSCRIPCION** |
+| `8` | `287: ...any plan is better than no plan.` | **TRANSCRIPCION** |
+
+### `construir_empresa_plantilla_vision_diaria`, unidad `cap_08`, 8 pasos, todos releidos
+
+| paso de `construir_empresa_plantilla_vision_diaria` | la salida del libro, pegada por `.gerber_v1/fidelidad.py` | veredicto |
+|---:|---|---|
+| `1` | `39: ...I had a very clear picture of what the company would look like when it was finally done. You might say I ...` | **TRANSCRIPCION**, **el fundador de IBM lo nombra `L37`**, que es la linea que abre la historia |
+| `2` | `41: ...I then asked myself how a company which looked like that would have to act. I then created a picture of h...` | **TRANSCRIPCION** |
+| `3` | `43: ...unless we began to act that way from the very beginning, we would never get there .` | **TRANSCRIPCION** |
+| `4` | `45: ...it would have to act like a great company long before it ever became one .` | **TRANSCRIPCION** |
+| `5` | `47: ...each and every day we attempted to model the company after that template. At the end of each day, we aske...` | **TRANSCRIPCION** |
+| `6` | `47: ...we asked ourselves how well we did, discovered the disparity between where we were and where we had commi...` | **TRANSCRIPCION** |
+| `7` | `47: ...at the start of the following day, set out to make up for the difference .` | **TRANSCRIPCION** |
+| `8` | `49: Every day at IBM was a day devoted to business development, not doing business .` | **TRANSCRIPCION**, **y `L51` la remata**: we didn't do business at IBM, we built one |
+
+### `trazar_modelo_negocio_cliente_primero`, unidad `cap_08`, 9 pasos, todos releidos
+
+| paso de `trazar_modelo_negocio_cliente_primero` | la salida del libro, pegada por `.gerber_v1/fidelidad.py` | veredicto |
+|---:|---|---|
+| `1` | `109: ...a model of a business that fulfills the perceived needs of a specific segment of customers in an innovati...` | **TRANSCRIPCION** |
+| `2` | `115: ...he surveys the world and asks: "Where is the opportunity?" Having identified it, he then goes back to the...` | **TRANSCRIPCION** |
+| `3` | `115: ...he then goes back to the drawing board and constructs a solution to the frustrations he finds among a cer...` | **TRANSCRIPCION** |
+| `4` | `115: ...constructs a solution to the frustrations he finds among a certain group of customers. A solution in the ...` | **TRANSCRIPCION** |
+| `5` | `115: ...the way the customer needs it to look and act, not The Entrepreneur.` | **TRANSCRIPCION** |
+| `6` | `117: ...How will my business look to the customer?" The Entrepreneur asks. "How will my business stand out from a...` | **TRANSCRIPCION** |
+| `7` | `117: ...How will my business stand out from all the rest?"` | **TRANSCRIPCION** |
+| `8` | `119: ...does not start with a picture of the business to be created but of the customer for whom the business is ...` | **TRANSCRIPCION** |
+| `9` | `121: ...without a clear picture of that customer, no business can succeed .` | **TRANSCRIPCION** |
+
+### `fingir_prototipo_cinco_mil_replicas`, unidad `cap_11`, 11 pasos, todos releidos
+
+| paso de `fingir_prototipo_cinco_mil_replicas` | la salida del libro, pegada por `.gerber_v1/fidelidad.py` | veredicto |
+|---:|---|---|
+| `1` | `35: Pretend that the business you own-or want to own-is the prototype, or will be the prototype, for 5,000 mo...` | **TRANSCRIPCION**, **y `L37`**: the model for 5,000 more just like it |
+| `2` | `39: Not almost like it, but just like it. Perfect replicates. Clones.` | **TRANSCRIPCION** |
+| `3` | `41: ...pretend that you are going to franchise your business. (Note: I said pretend . I'm not saying that you sh...` | **TRANSCRIPCION** |
+| `4` | `43: ...there are rules to follow if you are to win:` | **TRANSCRIPCION**, **la cuenta es condicion de `D.37`**, y aqui el libro la escribe numerando del 1 al 6 |
+| `5` | `45: ...The model will provide consistent value to your customers, employees, suppliers, and lenders, beyond what...` | **TRANSCRIPCION** |
+| `6` | `47: ...The model will be operated by people with the lowest possible level of skill.` | **TRANSCRIPCION** |
+| `7` | `49: ...The model will stand out as a place of impeccable order .` | **TRANSCRIPCION**, **se transcribe como regla de la cabeza**, y NO se le hace nodo propio: ver `R3` de la frontera |
+| `8` | `51: ...All work in the model will be documented in Operations Manuals.` | **TRANSCRIPCION** |
+| `9` | `53: ...The model will provide a uniformly predictable service to the customer.` | **TRANSCRIPCION**, **igual que la 3**: se transcribe aqui y no tiene nodo propio, ver `R4` de la frontera |
+| `10` | `55: ...The model will utilize a uniform color, dress, and facilities code.` | **TRANSCRIPCION** |
+| `11` | `57: Let's take a look at each of these rules in turn.` | **TRANSCRIPCION** |
+
+### `dar_valor_constante_cuatro_publicos`, unidad `cap_11`, 8 pasos, todos releidos
+
+| paso de `dar_valor_constante_cuatro_publicos` | la salida del libro, pegada por `.gerber_v1/fidelidad.py` | veredicto |
+|---:|---|---|
+| `1` | `63: ...value is what people perceive it to be, and nothing more.` | **TRANSCRIPCION** |
+| `2` | `65: So what could your Prototype do that would not only provide consistent value to your customers, employees...` | **TRANSCRIPCION** |
+| `3` | `71: ...as it impacts every person with whom your business comes into contact, that every extraordinary business ...` | **TRANSCRIPCION** |
+| `4` | `73: Value can be a word said at the door of the business as a customer leaves.` | **TRANSCRIPCION** |
+| `5` | `75: Value can be an unexpected gift from the business arriving in the mail.` | **TRANSCRIPCION** |
+| `6` | `77: Value can be a word of recognition to a new recruit for a job well done, or, for that matter, to a season...` | **TRANSCRIPCION** |
+| `7` | `79: Value can be the reasonable price of your products, or the dedication you show in the process of explaini...` | **TRANSCRIPCION** |
+| `8` | `81: Value can be a simple word of thanks to your banker for his conscientiousness.` | **TRANSCRIPCION** |
+
+### `operar_modelo_gente_destreza_minima`, unidad `cap_11`, 10 pasos, todos releidos
+
+| paso de `operar_modelo_gente_destreza_minima` | la salida del libro, pegada por `.gerber_v1/fidelidad.py` | veredicto |
+|---:|---|---|
+| `1` | `87: ...if your model depends on highly skilled people, it's going to be impossible to replicate. Such people are...` | **TRANSCRIPCION** |
+| `2` | `89: ...I mean the lowest possible level necessary to fulfill the functions for which each is intended. Obviously...` | **TRANSCRIPCION**, **el libro DEFINE su propio adjetivo de adecuacion**, y eso es lo que salva la regla de caer por la restriccion 2 de `EXTRACTOR.md` 9.1 |
+| `3` | `89: ...if yours is a legal firm, you must have attorneys. If yours is a medical firm, you must have physicians. ...` | **TRANSCRIPCION** |
+| `4` | `89: ...You need to create the very best system through which good attorneys and good physicians can be leveraged...` | **TRANSCRIPCION** |
+| `5` | `91: ...How can I give my customer the results he wants systematically rather than personally? Put another way: H...` | **TRANSCRIPCION** |
+| `6` | `93: How can I create an expert system rather than hire one?` | **TRANSCRIPCION** |
+| `7` | `103: ...the system becomes the tools your people use to increase their productivity, to get the job done in the w...` | **TRANSCRIPCION** |
+| `8` | `105: ...to develop those tools and to teach your people how to use them.` | **TRANSCRIPCION**, **el responsable lo pone el libro y no yo**, asi que no es puente de la especie responsable |
+| `9` | `107: It's your people's job to use the tools you've developed and to recommend improvements based on their exp...` | **TRANSCRIPCION** |
+| `10` | `113: ...prefers Management by Abdication to Management by Delegation .` | **TRANSCRIPCION**, **es comprobacion y no advertencia**: el libro nombra la conducta concreta que hay que mirar |
+
+### `documentar_trabajo_manual_operaciones`, unidad `cap_11`, 10 pasos, todos releidos
+
+| paso de `documentar_trabajo_manual_operaciones` | la salida del libro, pegada por `.gerber_v1/fidelidad.py` | veredicto |
+|---:|---|---|
+| `1` | `155: Documentation says, "This is how we do it here."` | **TRANSCRIPCION** |
+| `2` | `157: Without documentation, all routinized work turns into exceptions.` | **TRANSCRIPCION** |
+| `3` | `159: Documentation provides your people with the structure they need and with a written account of how to "get...` | **TRANSCRIPCION** |
+| `4` | `159: ...It communicates to the new employees, as well as to the old, that there is a logic to the world in which ...` | **TRANSCRIPCION** |
+| `5` | `163: The operative word here is clear .` | **TRANSCRIPCION** |
+| `6` | `167: ...structure is reduced to specific means rather than generalized ends, to a literal and simplified task The...` | **TRANSCRIPCION** |
+| `7` | `169: ...best described as a company's How-to-Do-It Guide.` | **TRANSCRIPCION** |
+| `8` | `171: It designates the purpose of the work, specifies the steps needed to be taken while doing that work, and ...` | **TRANSCRIPCION** |
+| `9` | `171: ...specifies the steps needed to be taken while doing that work, and summarizes the standards associated wit...` | **TRANSCRIPCION** |
+| `10` | `171: ...summarizes the standards associated with both the process and the result.` | **TRANSCRIPCION**, **los tres contenidos van en tres pasos** porque el libro los cuenta como tres |
+
+### `unificar_color_forma_vestuario_modelo`, unidad `cap_11`, 8 pasos, todos releidos
+
+| paso de `unificar_color_forma_vestuario_modelo` | la salida del libro, pegada por `.gerber_v1/fidelidad.py` | veredicto |
+|---:|---|---|
+| `1` | `215: ...all consumers are moved to act by the colors and shapes they find in the marketplace.` | **TRANSCRIPCION** |
+| `2` | `229: ...The colors you show your customer must be scientifically determined and then used throughout your model-o...` | **TRANSCRIPCION** |
+| `3` | `229: ...on the walls, the floors, the ceiling, the vehicles, the invoices, your people's clothes, the displays, t...` | **TRANSCRIPCION**, **los ocho sitios son del libro**, nombrados uno a uno: es la cara positiva de `D.27` |
+| `4` | `231: The model must be thought of as a package for your one and only product-your business .` | **TRANSCRIPCION** |
+| `5` | `233: ...there are shapes that work and shapes that don't, on your business card, your signs, your logo, your merc...` | **TRANSCRIPCION** |
+| `6` | `235: ...Cheskin showed that a triangle produced far fewer sales than a circle, and a crest outproduced both by a ...` | **TRANSCRIPCION**, **es la cifra que va a `atribuciones`**, y es cualitativa: el libro no da muestra ni banda |
+| `7` | `239: The shape of your sign, your logo, the type style used on your business cards will have a significant imp...` | **TRANSCRIPCION** |
+| `8` | `241: Your Prototype must be packaged as carefully as any box of cereal.` | **TRANSCRIPCION** |
+
+### `interrogar_negocio_cinco_preguntas`, unidad `cap_11`, 10 pasos, todos releidos
+
+| paso de `interrogar_negocio_cinco_preguntas` | la salida del libro, pegada por `.gerber_v1/fidelidad.py` | veredicto |
+|---:|---|---|
+| `1` | `245: Go to work on your business rather than in it.` | **TRANSCRIPCION** |
+| `2` | `247: ...as if it were the pre-production prototype of a mass-produceable product.` | **TRANSCRIPCION** |
+| `3` | `249: Think of your business as something apart from yourself, as a world of its own, as a product of your effo...` | **TRANSCRIPCION** |
+| `4` | `251: Think of your business as anything but a job!` | **TRANSCRIPCION** |
+| `5` | `255: ...How can I get my business to work, but without me ?` | **TRANSCRIPCION** |
+| `6` | `257: ...How can I get my people to work, but without my constant interference?` | **TRANSCRIPCION** |
+| `7` | `259: ...How can I systematize my business in such a way that it could be replicated 5,000 times, so the 5,000th u...` | **TRANSCRIPCION**, **mi discutible 4 vive aqui**: esta pregunta repite la cifra de la cabeza, y aun asi el acto y el entregable son otros |
+| `8` | `261: ...How can I own my business, and still be free of it?` | **TRANSCRIPCION** |
+| `9` | `263: ...How can I spend my time doing the work I love to do rather than the work I have to do?` | **TRANSCRIPCION** |
+| `10` | `265: ...you'll eventually come face-to-face with the real problem: that you don't know the answers!` | **TRANSCRIPCION** |
+
+## PASOS INVENTADOS POR CAPITULO (`D.30`), FILA POR UNIDAD MAS TOTAL
+
+| unidad | nodos | pasos escritos | pasos releidos | **PUENTE** | **PASOS INVENTADOS, por ciento** |
+|---|---:|---:|---:|---:|---:|
+| `cap_04` | 1 | 7 | 7 | **0** | **0,00** |
+| `cap_07` | 1 | 8 | 8 | **0** | **0,00** |
+| `cap_08` | 2 | 17 | 17 | **0** | **0,00** |
+| `cap_11` | 6 | 57 | 57 | **0** | **0,00** |
+| **el lote entero** | **10** | **89** | **89** | **0** | **0,00** |
+
+peor capitulo: 0,00 por ciento   tope: 10   total: 0,00 por ciento

@@ -1,0 +1,34 @@
+fila 09, unificar_color_forma_vestuario_modelo, lineas --veredicto: 2
+  --veredicto dar_valor_constante_cuatro_publicos|SANO|El mismo par que dar_valor lee desde su lado: hermanos, las reglas 6 y 1 de la serie de fingir_prototipo_cinco_mil_replicas (L55, L45). La similitud de 0,425, por encima de 0,4, se lee primero y no es gemelo.
+  --veredicto documentar_trabajo_manual_operaciones|SANO|El mismo par que documentar lee desde su lado: hermanos, las reglas 6 y 4 de la misma serie (L55, L51), sin paso comun.
+inicio 2026-09-26 10:47:21
+======================================================================
+ADUANA DE INSERCION, candidato 'unificar_color_forma_vestuario_modelo'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (445 del grafo mas 34 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 2. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino dar_valor_constante_cuatro_publicos  [Dar valor constante y por encima de lo esperado a los cuatro publicos del modelo, en las formas que el libro nombra]
+    levantada por: similitud_texto
+    similitud_texto    0.425 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.421 (umbral 0.60)
+    paso 4 del candidato contra paso 7 de dar_valor_constante_cuatro_publicos
+
+  vecino documentar_trabajo_manual_operaciones  [Documentar todo el trabajo del modelo en el Manual de Operaciones, con los tres contenidos que el libro le exige]
+    levantada por: similitud_texto
+    similitud_texto    0.358 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.425 (umbral 0.60)
+    paso 2 del candidato contra paso 1 de documentar_trabajo_manual_operaciones
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 446
+  censos escritos: atribuciones, denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 2
+
+======================================================================
+fin 2026-09-26 10:54:59 | codigo de salida 0 | 457.4 s

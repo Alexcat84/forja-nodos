@@ -1,0 +1,22 @@
+capitulo       candidatos    pasos
+cap_02                  7       50
+cap_03                 15      121
+cap_04                 22      156
+cap_05                 12       84
+cap_06                  8       62
+cap_07                  9       53
+cap_10                  1        8
+TOTAL BANDEJA          74      534
+
+LOS TRES CAPITULOS DE LA VUELTA 56, UNO A UNO:
+  cap_08   candidatos=0  pasos=0  SIN SUPERFICIE
+  cap_09   candidatos=0  pasos=0  SIN SUPERFICIE
+  cap_10   candidatos=1  pasos=8  
+      repartir_supervision_puesto_funcional_mision                   pasos=8
+
+LA POBLACION QUE EL BARRIDO DE LA ADUANA DICE MEDIR (D.38.4), contada por mi:
+  bandeja ensayo_referencia_163               163
+  bandeja grove_high_output                    74
+  bandeja marquet_turn_the_ship                 3
+  grafo dataset/nodos.jsonl                 346
+  POBLACION                                 586

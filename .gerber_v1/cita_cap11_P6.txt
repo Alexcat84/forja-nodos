@@ -1,0 +1,16 @@
+AVISO: cero celdas tecleadas. Cada linea es la que sed -n imprime de fuentes/gerber_emyth/cap_11.md.
+UNICA TRANSFORMACION DECLARADA: 0 guion(es) largo(s) U+2014 sustituido(s) por coma mas
+espacio y 0 guion(es) medio(s) U+2013 por guion corto, porque el barrido de estilo de
+esta casa tumba los dos. El resto es byte a byte el del libro.
+
+245: Go to work on your business rather than in it.
+247: Go to work on your business as if it were the pre-production prototype of a mass-produceable product.
+249: Think of your business as something apart from yourself, as a world of its own, as a product of your efforts, as a machine designed to fulfill a very specific need, as a mechanism for giving you more life, as a system of interconnecting parts, as a package of cereal, as a can of beans, as something created to satisfy your consumers’ deeply held perceived needs, as a place that acts distinctly different from all other places, as a solution to somebody else’s problem.
+251: Think of your business as anything but a job!
+253: Go to work on your business rather than in it, and ask yourself the following questions:
+255: • How can I get my business to work, but without me ?
+257: • How can I get my people to work, but without my constant interference?
+259: • How can I systematize my business in such a way that it could be replicated 5,000 times, so the 5,000th unit would run as smoothly as the first?
+261: • How can I own my business, and still be free of it?
+263: • How can I spend my time doing the work I love to do rather than the work I have to do?
+265: If you ask yourself these questions, you’ll eventually come face-to-face with the real problem: that you don’t know the answers!

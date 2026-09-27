@@ -1,0 +1,261 @@
+RELECTURA DE FIDELIDAD D.30 DEL TRAMO DE cap_09, ANTES DE INSERTAR
+  libro: fuentes/scott_radical_candor/cap_09.md
+  la maquina saca el trozo del libro y comprueba el ancla; el veredicto lo pongo yo
+
+### abrazar_incomodidad_arrancar_critica_equipo  (20 pasos)
+
+| paso | veredicto | la linea del libro, pegada |
+|---:|---|---|
+| P1 | **TRANSCRIPCION** | `21: ...when you are the boss people really do not want to criticize you or to tell you what they really think. ...` |
+| P2 | **TRANSCRIPCION** | `25: ...it's important to work so hard to earn your team's trust. You may be worried about earning their respect...` |
+| P3 | **TRANSCRIPCION** | `29: You are the exception to the "criticize in private" rule of thumb. Michelle Peluso, CEO of Gilt Groupe, ...` |
+| P4 | **TRANSCRIPCION** | `31: Once I figured out who on my team was most comfortable criticizing me, I would ask that person to do it ...` |
+| P5 | **TRANSCRIPCION** | `33: ...If you have more than sixty or so people working for you and you make them wait till they can get a priv...` |
+| P6 | **TRANSCRIPCION** | `35: Too many managers fear that public challenge will undermine their authority. It's natural to want to rep...` |
+| P7 | **TRANSCRIPCION** | `37: Have a go-to question. When you're the boss, it's awkward to ask your direct reports to tell you frankly...` |
+| P8 | **TRANSCRIPCION** | `39: Embrace the discomfort. Most people will initially respond to your question with something along the lin...` |
+| P9 | **TRANSCRIPCION** | `41: One technique is to count to six before saying anything else, forcing them to endure the silence. The go...` |
+| P10 | **TRANSCRIPCION** | `41: ...If counting to six doesn't do the trick, ask the question again. And again if necessary. One of the bank...` |
+| P11 | **TRANSCRIPCION** | `43: ...point out when people's body language is at odds with what they're saying. Imagine you're at a meeting w...` |
+| P12 | **TRANSCRIPCION** | `45: Listen with the intent to understand, not to respond. You've finally gotten the other person to offer so...` |
+| P13 | **TRANSCRIPCION** | `47: ...Manage your feelings rather than letting them manage you. Remind yourself going in that no matter how un...` |
+| P14 | **TRANSCRIPCION** | `49: Reward criticism to get more of it. Once you've asked your question and embraced the discomfort and unde...` |
+| P15 | **TRANSCRIPCION** | `51: ...first, find something in the criticism you can agree with, to signal that you're open to criticism. Then...` |
+| P16 | **TRANSCRIPCION** | `51: ...It is never enough to simply acknowledge the other person's feelings-that invariably feels passive-aggre...` |
+| P17 | **TRANSCRIPCION** | `53: Gauge the guidance you get. Try keeping a tally. How many times each week do the people reporting to you...` |
+| P18 | **TRANSCRIPCION** | `53: ...Try teaching the people on your team about the idea of Radical Candor. Explain why you don't want them t...` |
+| P19 | **TRANSCRIPCION** | `53: ...Print out the Radical Candor framework here), and when you're having a conversation and you feel like so...` |
+| P20 | **TRANSCRIPCION** | `53: ...In the first edition I mentioned a software gauge. This did not work well. Looking the person in the eye...` |
+
+### organizar_sistema_recoger_quejas_equipo  (9 pasos)
+
+| paso | veredicto | la linea del libro, pegada |
+|---:|---|---|
+| P1 | **TRANSCRIPCION** | `59: JOHNSON & JOHNSON'S ORIGINAL credo had an interesting line: "Employees should have an organized system f...` |
+| P2 | **TRANSCRIPCION** | `59: ...If you're the boss, you have to do much better than announce how employees "must" feel. Employees won't ...` |
+| P3 | **TRANSCRIPCION** | `59: ...Employees won't feel free if you don't take specific actions to ensure that it's not just safe but expec...` |
+| P4 | **TRANSCRIPCION** | `59: ...You have to organize a system. But it needn't be elaborate.` |
+| P5 | **TRANSCRIPCION** | `61: ...He put an orange box with a slit on the top in a high-traffic area so that people could drop questions o...` |
+| P6 | **TRANSCRIPCION** | `61: ...At his all-hands meeting he'd reach into the box and answer off the cuff. A good friend of mine, Ann Pol...` |
+| P7 | **TRANSCRIPCION** | `61: ...always amazingly respectful and took on each question thoughtfully."` |
+| P8 | **TRANSCRIPCION** | `63: ...he would fix problems when people pointed them out rather than shoot the messenger, Michael eventually b...` |
+| P9 | **TRANSCRIPCION** | `63: ...Over time the orange box emptied out. When people had an issue, they would stand up and ask direct quest...` |
+
+### correr_semana_arreglo_averias_gestion  (8 pasos)
+
+| paso | veredicto | la linea del libro, pegada |
+|---:|---|---|
+| P1 | **TRANSCRIPCION** | `67: ...Everyone will stop working on new features for a week and fix bugs in the current product. Engineering t...` |
+| P2 | **TRANSCRIPCION** | `67: ...A bug fix-it week is sort of the opposite of a Hack Week; instead of a chance to work on new and excitin...` |
+| P3 | **TRANSCRIPCION** | `69: ...it would be good hygiene to have regular management fix-it weeks. (Later, another team did a similar thi...` |
+| P4 | **TRANSCRIPCION** | `69: ...a system was created where people could log annoying management issues. If, for example, it took too lon...` |
+| P5 | **TRANSCRIPCION** | `71: The management bug tracking system was public, so people could vote to set priorities. Somebody was assi...` |
+| P6 | **TRANSCRIPCION** | `71: ...Somebody was assigned the job of reading through them all and grouping duplicates. Then, during manageme...` |
+| P7 | **TRANSCRIPCION** | `71: ...during management fix-it week, managers would have bugs assigned to them. They'd cancel all regularly sc...` |
+| P8 | **TRANSCRIPCION** | `71: ...They'd cancel all regularly scheduled activities (or most of them) and focus on fixing the management is...` |
+
+### dar_guia_humilde_tres_tecnicas  (15 pasos)
+
+| paso | veredicto | la linea del libro, pegada |
+|---:|---|---|
+| P1 | **TRANSCRIPCION** | `79: I start with being humble because it's absolutely essential when delivering both praise and criticism. W...` |
+| P2 | **TRANSCRIPCION** | `79: ...a common concern that people raise about giving feedback is "What if I'm wrong?" My answer is that you m...` |
+| P3 | **TRANSCRIPCION** | `83: Situation, behavior, impact. The Center for Creative Leadership, an executive-education company, develop...` |
+| P4 | **TRANSCRIPCION** | `83: ...This helps you avoid making judgments about the person's intelligence, common sense, innate goodness, or...` |
+| P5 | **TRANSCRIPCION** | `87: Situation, behavior, and impact applies to praise as well as to criticism. Praise can feel just as arrog...` |
+| P6 | **TRANSCRIPCION** | `91: Left-hand column. Chris Argyris, a professor at Harvard Business School, and Donald Schön, a professor o...` |
+| P7 | **TRANSCRIPCION** | `93: ...Think of a conversation you had that was frustrating. Take out a clean sheet of paper and draw a line do...` |
+| P8 | **TRANSCRIPCION** | `93: ...Take out a clean sheet of paper and draw a line down the middle. Write down what you actually said in th...` |
+| P9 | **TRANSCRIPCION** | `93: ...Write down what you actually said in the right-hand column. Write down what you thought in the left-hand...` |
+| P10 | **TRANSCRIPCION** | `93: ...Write down what you thought in the left-hand column. Now think about when the conversation went sideways...` |
+| P11 | **TRANSCRIPCION** | `93: ...Now think about when the conversation went sideways. Did what you think spill out into what you said? Th...` |
+| P12 | **TRANSCRIPCION** | `93: ...The point is not just to say whatever is in your left-hand column; it's to have the humility to question...` |
+| P13 | **TRANSCRIPCION** | `95: "Ontological Humility." Fred Kofman argues for the importance of reflecting your core values in the way ...` |
+| P14 | **TRANSCRIPCION** | `95: ...Broccoli is yucky. That's why I don't like it." This is funny in a three-year-old, but when adults confu...` |
+| P15 | **TRANSCRIPCION** | `95: ...when you are mindful that your subjective experience is not objective truth, it can help you challenge o...` |
+
+### dar_guia_util_cuatro_recordatorios  (10 pasos)
+
+| paso | veredicto | la linea del libro, pegada |
+|---:|---|---|
+| P1 | **TRANSCRIPCION** | `101: ...being helpful doesn't mean you have to be omniscient or do everybody else's work for them. It just means...` |
+| P2 | **TRANSCRIPCION** | `103: Stating your intention to be helpful can lower defenses. When you tell somebody that you aren't trying t...` |
+| P3 | **TRANSCRIPCION** | `103: ...Try a little preamble. For example, in your own words, say something like, "I'm going to describe a prob...` |
+| P4 | **TRANSCRIPCION** | `105: Show, don't tell. It's the best advice I've ever gotten for story-telling, but it also applies to guidan...` |
+| P5 | **TRANSCRIPCION** | `105: ...retreating to abstractions is a prime example of Ruinous Empathy. Further, it can actually unintentional...` |
+| P6 | **TRANSCRIPCION** | `107: ...the same principle goes for praise. Don't say, "She is really smart." Say, "She just gave the clearest e...` |
+| P7 | **TRANSCRIPCION** | `109: Finding help is better than offering it yourself. When Sheryl Sandberg offered to get me a speaking coac...` |
+| P8 | **TRANSCRIPCION** | `111: ...you will have a colleague or acquaintance who can help. All you have to do is to make the introduction a...` |
+| P9 | **TRANSCRIPCION** | `113: Guidance is a gift, not a whip or a carrot. It took me a long time to learn that sometimes the only help...` |
+| P10 | **TRANSCRIPCION** | `113: ...Don't let the fact that you can't offer a solution make you reluctant to offer guidance. Think about tim...` |
+
+### dar_guia_acto_seis_consejos  (14 pasos)
+
+| paso | veredicto | la linea del libro, pegada |
+|---:|---|---|
+| P1 | **TRANSCRIPCION** | `117: Giving guidance as quickly and as informally as possible is an essential part of Radical Candor, but it ...` |
+| P2 | **TRANSCRIPCION** | `119: If you wait too long to give guidance, everything about it gets harder. You know how it is when you kick...` |
+| P3 | **TRANSCRIPCION** | `121: ...if either you or the other person is hungry, angry, or tired, or for some other reason not in a good fra...  **la excepcion es del libro y va de paso, no de comentario**` |
+| P4 | **TRANSCRIPCION** | `121: ...there is a difference between saying it right away and nitpicking. If it's not important, don't say it r...` |
+| P5 | **TRANSCRIPCION** | `123: Say it in 2-3 minutes between meetings. Just saying it right away in a minute or two, three at most, wil...` |
+| P6 | **TRANSCRIPCION** | `123: ...Try thinking of it as brushing your teeth instead. Don't write it in your calendar; just do it consisten...` |
+| P7 | **TRANSCRIPCION** | `125: ...If you have five direct reports and you want to offer each praise three times a week and criticism once ...  **las cifras son del libro**: cinco personas, tres elogios, una critica, sesenta minutos` |
+| P8 | **TRANSCRIPCION** | `127: ...keep slack time in your calendar, either by not scheduling back-to-back meetings or by having twenty-fiv...` |
+| P9 | **TRANSCRIPCION** | `127: ...simply be willing to be late to your next meeting.` |
+| P10 | **TRANSCRIPCION** | `129: Don't "save up" guidance for a 1:1 or a performance review. One of the funniest things about becoming a ...` |
+| P11 | **TRANSCRIPCION** | `131: Guidance has a short half-life. If you wait to tell somebody for a week or a quarter, the incident is so...` |
+| P12 | **TRANSCRIPCION** | `133: Unspoken criticism explodes like a dirty bomb. Just as in your personal life, remaining silent at work f...  **es el rotulo que la cuenta vieja se dejaba fuera**, y el paso ya lo transcribia` |
+| P13 | **TRANSCRIPCION** | `135: Avoid black holes. Be sure to let people know immediately how their work is being received. If you ask s...` |
+| P14 | **TRANSCRIPCION** | `135: ...is to let people present their own work whenever possible so they can get guidance first-hand. Even at n...` |
+
+### elegir_medio_dar_guia_jerarquia_modos  (13 pasos)
+
+| paso | veredicto | la linea del libro, pegada |
+|---:|---|---|
+| P1 | **TRANSCRIPCION** | `139: ...the clarity of your guidance gets measured at the other person's ear, not at your mouth. That's why it's...` |
+| P2 | **TRANSCRIPCION** | `139: ...When you see a person's body language and facial expression, you can adjust how you are delivering the m...` |
+| P3 | **TRANSCRIPCION** | `141: ...you are trying to avoid seeing the other person's emotional reaction. This is natural. But the quality o...` |
+| P4 | **TRANSCRIPCION** | `141: ...When somebody is blowing you off (as I did Sheryl when she first told me I said "um" a lot), you know yo...` |
+| P5 | **TRANSCRIPCION** | `145: Immediate vs. in person. If the person is in another city and giving guidance in person means waiting mo...` |
+| P6 | **TRANSCRIPCION** | `145: ...If the person is down the hall, and doing it in person means just taking a little walk, then get off you...` |
+| P7 | **TRANSCRIPCION** | `147: Hierarchy of modes. A video call, if you have high-speed internet access, is second best. If the connect...` |
+| P8 | **TRANSCRIPCION** | `147: ...It always feels faster to fire off an email or text, but when I think about all the times I had to spend...` |
+| P9 | **TRANSCRIPCION** | `149: Multiple modes. I found that praising people at a public all-hands meeting was a great way to share sign...` |
+| P10 | **TRANSCRIPCION** | `151: ...If you must criticize or correct somebody over email, do not Reply All. Never. Even if there's a small f...` |
+| P11 | **TRANSCRIPCION** | `151: ...reply just to the person who made the factual error and ask that person to Reply All. For praise on smal...` |
+| P12 | **TRANSCRIPCION** | `151: ...For praise on small things, I found that a quick Reply All email worked pretty well. This kind of praise...` |
+| P13 | **TRANSCRIPCION** | `153: ...If you are in a remote office, or if you are managing people in remote offices, it's really important to...` |
+
+### elogiar_publico_criticar_privado_sus_tres_matices  (9 pasos)
+
+| paso | veredicto | la linea del libro, pegada |
+|---:|---|---|
+| P1 | **TRANSCRIPCION** | `157: A good rule of thumb for guidance is praise in public, criticize in private. Public criticism tends to t...` |
+| P2 | **TRANSCRIPCION** | `157: ...this is a rule of thumb, not a hard and fast rule. Here are some things to think about.` |
+| P3 | **TRANSCRIPCION** | `159: Corrections, factual observations, disagreements, and debates are different from criticism. It's vital t...` |
+| P4 | **TRANSCRIPCION** | `159: ...There's a typo on slide six," or "There are a lot of typos in this presentation, and given the nature of...` |
+| P5 | **TRANSCRIPCION** | `159: ...Here is an example of criticizing the person: "When you give several important presentations that are al...` |
+| P6 | **TRANSCRIPCION** | `161: Adapt to an individual's preferences. While the majority of people do like to be praised in public, for ...` |
+| P7 | **TRANSCRIPCION** | `161: ...your goal is to let them know what they did well as clearly as possible and in the way that will make th...` |
+| P8 | **TRANSCRIPCION** | `163: Group learning. I've rarely encountered anyone who will admit that they like to be praised publicly. So ...` |
+| P9 | **TRANSCRIPCION** | `163: ...When I wanted to encourage public criticism so that everyone learns from one another's mistakes, I'd let...` |
+
+### evitar_personalizar_guia_aceptar_personal  (12 pasos)
+
+| paso | veredicto | la linea del libro, pegada |
+|---:|---|---|
+| P1 | **TRANSCRIPCION** | `167: ...Caring personally is good. Personalizing is bad. Here are some tips that can help you avoid personalizin...` |
+| P2 | **TRANSCRIPCION** | `169: The "fundamental attribution error" will harm the effectiveness of your guidance. This phrase was coined...` |
+| P3 | **TRANSCRIPCION** | `169: ...1) it's generally inaccurate and 2) it renders an otherwise solvable problem really hard to fix since ch...` |
+| P4 | **TRANSCRIPCION** | `169: ...Try to catch yourself when you think or say, "You are ____." Use situation, behavior, impact, or the lef...` |
+| P5 | **TRANSCRIPCION** | `169: ...Use situation, behavior, impact, or the left-hand column techniques to be humble and to avoid personaliz...` |
+| P6 | **TRANSCRIPCION** | `171: Say "that's wrong" not "you're wrong." I once worked with a Radically Candid guy who had an unfair reput...` |
+| P7 | **TRANSCRIPCION** | `171: ..."I think" was humbler, and saying "that" instead of "you" didn't personalize. People started to be more ...` |
+| P8 | **TRANSCRIPCION** | `173: ...When an argument is about an issue, keep it about the issue. Personalizing unnecessarily will only make ...` |
+| P9 | **TRANSCRIPCION** | `175: The phrase "don't take it personally" is worse than useless. I've warned against personalizing, but even...` |
+| P10 | **TRANSCRIPCION** | `175: ...Most of us pour more time and energy into our work than anything else in our lives. Work is a part of wh...` |
+| P11 | **TRANSCRIPCION** | `175: ...is to acknowledge and deal with emotional responses, not to dismiss or avoid them.` |
+| P12 | **TRANSCRIPCION** | `177: How not to personalize even when it really is personal. It's easier to understand how to avoid personali...` |
+
+### medir_guia_propia_pegatinas_marco  (13 pasos)
+
+| paso | veredicto | la linea del libro, pegada |
+|---:|---|---|
+| P1 | **TRANSCRIPCION** | `181: ...The bad news is, yes. The good news is that it can take fifteen seconds.` |
+| P2 | **TRANSCRIPCION** | `183: ...explain the framework to your team and then ask them to gauge your guidance each week. Track your progre...` |
+| P3 | **TRANSCRIPCION** | `183: ...Track your progress over time. Are you moving toward Radical Candor, or away from it?` |
+| P4 | **TRANSCRIPCION** | `185: A low-tech way to do this is to put a copy of the framework near your desk. Leave some stickers by it-on...` |
+| P5 | **TRANSCRIPCION** | `185: ...Leave some stickers by it-one color for praise, another for criticism. Ask people to put stickers in the...` |
+| P6 | **TRANSCRIPCION** | `185: ...Ask people to put stickers in the quadrant they feel best describes your most recent interactions. If so...` |
+| P7 | **TRANSCRIPCION** | `185: ...If somebody feels you were unnecessarily harsh, they should put a criticism sticker in the Obnoxious Agg...` |
+| P8 | **TRANSCRIPCION** | `189: One, it exposes people daily to the Radical Candor framework. That helps them understand that when you'r...` |
+| P9 | **TRANSCRIPCION** | `189: ...You'll need to start proving to your team that you won't punish them if they criticize you. You need to ...` |
+| P10 | **TRANSCRIPCION** | `191: ...if you saw that a number of people were tagging both your praise and your criticism in the Ruinous Empat...` |
+| P11 | **TRANSCRIPCION** | `193: ...sometimes people have to overcorrect to get it right. They must go from Ruinous Empathy toward the very ...` |
+| P12 | **TRANSCRIPCION** | `197: ...you'll have good weeks and bad weeks. There are going to be times when you are overwhelmed or distracted...` |
+| P13 | **TRANSCRIPCION** | `203: The most important thing is figuring out how others experience your guidance. Listen to how they feel ab...` |
+
+### practicar_franqueza_radical_jefe_propio  (17 pasos)
+
+| paso | veredicto | la linea del libro, pegada |
+|---:|---|---|
+| P1 | **TRANSCRIPCION** | `209: ...It is not your moral obligation to criticize your boss if it will cost you your job. If you find you can...` |
+| P2 | **TRANSCRIPCION** | `209: ...I recommend that you consider finding a new job with a new boss. But do it on your own terms. Don't get ...` |
+| P3 | **TRANSCRIPCION** | `211: ...Do you have to get permission to start trying it? Not surprisingly, since I believe that unilateral auth...` |
+| P4 | **TRANSCRIPCION** | `211: ...Once you start rolling out Radical Candor with your team and seeing good results, explain what you're do...` |
+| P5 | **TRANSCRIPCION** | `211: ...Give your boss a chance to challenge you, but assume good intent. If you get some positive signals, try ...` |
+| P6 | **TRANSCRIPCION** | `211: ...If you get some positive signals, try getting and then giving some guidance.` |
+| P7 | **TRANSCRIPCION** | `213: ...Start by asking for guidance before you give it. You want to make sure you understand the other person's...` |
+| P8 | **TRANSCRIPCION** | `213: ...don't offer a critique of the criticism, and don't accept bland praise; focus on rewarding the candor if...` |
+| P9 | **TRANSCRIPCION** | `213: ...that's an exception to the don't-critique-the-criticism rule of thumb. If your boss is being ruinously e...` |
+| P10 | **TRANSCRIPCION** | `215: ...ask permission to give guidance. Say something like, "Would it be helpful if I told you what I thought o...` |
+| P11 | **TRANSCRIPCION** | `215: ...If your boss says no, or that's not your job, let it drop and polish up your résumé! If your boss says y...` |
+| P12 | **TRANSCRIPCION** | `215: ...start with something pretty small and benign and see how they react. If they react well and reward the c...` |
+| P13 | **TRANSCRIPCION** | `215: ...If they react well and reward the candor, keep going. If they don't, give up immediately or assume ill i...  **DISCUTIBLE 1**: el libro escribe *give up immediately or assume ill intent* y el paso lo traduce como *no des por supuesta la mala intencion*. El paso existe en el libro; lo que elige el candidato es una de las dos lecturas de una frase ambigua` |
+| P14 | **TRANSCRIPCION** | `217: ...use the same tips above: be helpful, humble, do it immediately and in person, praise in public (if it do...` |
+| P15 | **TRANSCRIPCION** | `221: ...If you are able to tell your boss that you disagree with a decision, then at least you can have conversa...` |
+| P16 | **TRANSCRIPCION** | `221: ...And once you understand the rationale more deeply, you can explain it to your team-even if you don't agr...` |
+| P17 | **TRANSCRIPCION** | `221: ...If they insist on knowing whether you agree, you can tell them in all honesty that your boss listened to...` |
+
+### comprobar_criticas_hombre_mujeres_equipo  (6 pasos)
+
+| paso | veredicto | la linea del libro, pegada |
+|---:|---|---|
+| P1 | **TRANSCRIPCION** | `293: ...it can be helpful to become aware of how the woman feels about your guidance; just ask her. Try explaini...` |
+| P2 | **TRANSCRIPCION** | `293: ...Try explaining the Radical Candor framework, and then when you're giving feedback simply say, "I'm tryin...` |
+| P3 | **TRANSCRIPCION** | `293: ...I'm trying to be Radically Candid, and I want to check in with you to see how my feedback is landing for...` |
+| P4 | **TRANSCRIPCION** | `293: ...Ask her to gauge your praise and criticism. (Even if you're not worried about gender politics, it is a g...` |
+| P5 | **TRANSCRIPCION** | `293: ...Even if you're not worried about gender politics, it is a good idea to find out!) You may not even be aw...` |
+| P6 | **TRANSCRIPCION** | `293: ...You may not even be aware you're going easy on some people and not others.` |
+
+### exigir_critica_jefe_reticente  (9 pasos)
+
+| paso | veredicto | la linea del libro, pegada |
+|---:|---|---|
+| P1 | **TRANSCRIPCION** | `297: ...it can be helpful to make him aware that you want more feedback.` |
+| P2 | **TRANSCRIPCION** | `299: ...What can I do or stop doing to make it easier for you to be Radically Candid with me?" or "I'm worried y...` |
+| P3 | **TRANSCRIPCION** | `299: ...I'm worried you're so concerned about my feelings that you're hesitant to give me the feedback I need to...` |
+| P4 | **TRANSCRIPCION** | `299: ...The thing that I most need from you is to tell me what you really think." Then, pause. Count to six in y...` |
+| P5 | **TRANSCRIPCION** | `299: ...Then, pause. Count to six in your head. Embrace the discomfort. Do whatever it takes to drag a candid as...` |
+| P6 | **TRANSCRIPCION** | `299: ...Count to six in your head. Embrace the discomfort. Do whatever it takes to drag a candid assessment out ...` |
+| P7 | **TRANSCRIPCION** | `299: ...Embrace the discomfort. Do whatever it takes to drag a candid assessment out of your male colleagues or ...` |
+| P8 | **TRANSCRIPCION** | `299: ...Do whatever it takes to drag a candid assessment out of your male colleagues or boss. Review the section...` |
+| P9 | **TRANSCRIPCION** | `299: ...Review the section above on getting guidance, and double down!` |
+
+### revisar_critica_mujer_agresiva_cuatro_tacticas  (12 pasos)
+
+| paso | veredicto | la linea del libro, pegada |
+|---:|---|---|
+| P1 | **TRANSCRIPCION** | `303: ...try these tactics to make sure you're not falling into the competence/likeability trap. And don't imagin...` |
+| P2 | **TRANSCRIPCION** | `303: ...don't imagine you won't fall into the trap just because you're a woman! Both genders are equally guilty ...` |
+| P3 | **TRANSCRIPCION** | `305: Switch genders. If the woman were a man who did the exact same thing, would the criticism "you're too ag...` |
+| P4 | **TRANSCRIPCION** | `305: ...Really imagine a man on your team doing exactly the same thing the woman did. Now, how would you react? ...` |
+| P5 | **TRANSCRIPCION** | `305: ...If you'd react differently, you're about to fall into the trap.` |
+| P6 | **TRANSCRIPCION** | `309: Be more specific. Feedback like "you're too aggressive" is too abstract and thus subject to the abrasive...` |
+| P7 | **TRANSCRIPCION** | `309: ...If you describe specific examples of how this manifests itself, it will become more clear whether there ...` |
+| P8 | **TRANSCRIPCION** | `311: Don't use gendered language. Notice the words you use. Do you use words like "abrasive," "shrill," "scre...` |
+| P9 | **TRANSCRIPCION** | `311: ...Do you use words like "abrasive," "shrill," "screechy," or "bossy," that are rarely used to describe a m...` |
+| P10 | **TRANSCRIPCION** | `311: ...he challenged the use of words like "abrasive," especially in performance reviews. He often caught nuanc...` |
+| P11 | **TRANSCRIPCION** | `313: Never just say, "Be more likeable." Make sure you address the situation by giving women specific suggest...` |
+| P12 | **TRANSCRIPCION** | `313: ...it's your job as the boss not to advise women how to navigate around it, but instead to help your entire...` |
+
+### responder_critica_abrasiva_cuatro_reglas  (14 pasos)
+
+| paso | veredicto | la linea del libro, pegada |
+|---:|---|---|
+| P1 | **TRANSCRIPCION** | `317: ...consider the following four rules of thumb:  **la cuenta CUATRO es del libro**, escrita en esta linea` |
+| P2 | **TRANSCRIPCION** | `319: Never stop challenging directly. Too often, the advice to women who are perceived as abrasive (or worse)...` |
+| P3 | **TRANSCRIPCION** | `319: ...the advice to women who are perceived as abrasive (or worse) is to stop challenging directly. This is al...` |
+| P4 | **TRANSCRIPCION** | `321: Care personally-but kill the angel in the office. Too often, in order to move up on the "care personally...` |
+| P5 | **TRANSCRIPCION** | `321: ...women expend too much energy picking up the office housework or otherwise being the angel in the office,...` |
+| P6 | **TRANSCRIPCION** | `321: ...Self-abnegation is never an effective way to show you care. You don't have to bake cookies or get coffee...` |
+| P7 | **TRANSCRIPCION** | `321: ...You don't have to bake cookies or get coffee or make the copies or spend a lot of time and money on your...` |
+| P8 | **TRANSCRIPCION** | `323: The competence/likeability research has not concluded that you weren't out of line. Remember: it is poss...` |
+| P9 | **TRANSCRIPCION** | `323: ...Don't be the angel in the office, but remain open to the possibility that you may have hurt somebody unn...` |
+| P10 | **TRANSCRIPCION** | `325: Just because it's wrong to kiss up and kick down doesn't mean it's right to do the opposite. I've coache...` |
+| P11 | **TRANSCRIPCION** | `325: ...They are Radically Candid with their teams, but obnoxiously aggressive with their bosses. I don't have a...` |
+| P12 | **TRANSCRIPCION** | `327: Don't write men off. When I told my father about my boss who offered me a demotion as a way to avoid the...` |
+| P13 | **TRANSCRIPCION** | `329: ...I might have been tempted to commit the fundamental attribution error-to write him off as hopeless, a mi...` |
+| P14 | **TRANSCRIPCION** | `329: ...Just keep challenging directly and showing you care personally it until they get it.` |
+
+TOTAL DEL TRAMO: 181 pasos releidos, 0 PUENTE, 181 TRANSCRIPCION

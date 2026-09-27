@@ -1,0 +1,52 @@
+{
+  "id": "dirigir_reunion_decision",
+  "titulo": "Dirigir una reunion cuyo resultado excelente es una decision tomada",
+  "denominaciones": {
+    "nombre_largo": "La reunion de decision, con los rasgos que la hacen buena y los malos resultados que hay que evitar",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "decision meeting, making a decision"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando el resultado excelente que persigues es que se tome una decision y que quede tomada, y hay opciones distintas sobre la mesa.",
+  "entregable_esperado": "Una decision clara tomada por quien estaba designado para tomarla, y unos afectados que salen sintiendo que la forma de decidir fue eficiente y justa aunque no estuvieran de acuerdo.",
+  "pasos_accionables": [
+    "Enmarca las distintas opciones que hay sobre la mesa y pide a quien decide que tome la decision.",
+    "Persigue las dos cosas a la vez: llegar a una decision clara, y que todo el mundo salga con sensacion de confianza en el proceso.",
+    "No busques consenso. Lo que hace falta es que aquellos a quienes la decision afecta sientan que la manera en que se tomo fue eficiente y justa. Si la gente no confia en el proceso, lo que veras es que la decision se alarga.",
+    "Incluye a las personas mas directamente afectadas por la decision, y tambien a alguien claramente designado como quien decide.",
+    "Presenta todas las opciones creibles de forma objetiva y con la informacion de contexto relevante, e incluye la recomendacion del equipo si la hay.",
+    "Da el mismo tiempo de palabra a las opiniones discrepantes y haz que la gente sienta que fue escuchada.",
+    "No tomes la decision habiendo oido un solo trozo de contexto. La autora cuenta el caso: su reporte le pidio mover una semana el plazo del trabajo de diseno porque no daba tiempo a explorar las tres opciones, ella contesto que le parecia bien, y despues aparecio el responsable de ingenieria diciendo que tenia siete ingenieros esperando los disenos terminados y que asi no llegaban a su propio hito.",
+    "Si ya has decidido de esa manera y el otro lado aparece pidiendote rehacer la decision, admite que te equivocaste con tu proceso y reune a todos para volver a decidir. El libro dice que esa es la mejor salida que te queda, porque cambiar la decision a solas frustra al primero y no cambiarla enfada al segundo.",
+    "No aceptes el argumento de que cualquier decision va a dejar a alguien descontento porque los dos lados discrepan. Todos en un equipo comparten en ultima instancia las mismas metas, y parte de trabajar bien juntos es depositar confianza en quien decide y en un proceso justo.",
+    "Evita el primer mal resultado: que la gente sienta que su lado no se presento bien y por eso no confie en la decision que salio.",
+    "Evita el segundo: que las decisiones tarden mucho en tomarse y eso retrase el avance. Las decisiones importantes y dificiles de revertir merecen consideracion profunda, pero desconfia de gastar demasiado tiempo en las pequenias y faciles de revertir.",
+    "Evita el tercero: que las decisiones vayan y vuelvan una y otra vez, porque asi es dificil confiar en ellas y actuar sobre ellas.",
+    "Evita el cuarto: que se gaste demasiado tiempo intentando llevar al grupo al consenso en vez de escalar rapido a quien decide.",
+    "Evita el quinto: que se pierda tiempo rumiando el mismo argumento de veinte maneras distintas."
+  ],
+  "resumen_teorico": "Es la primera de las razones para juntarse en persona que el libro nombra, y la unica del capitulo que trae dos inventarios propios en vez de uno: cuatro rasgos de la reunion buena y cinco malos resultados nombrados uno a uno. Lo que sostiene el procedimiento es que el exito de una reunion de decision no es la decision sola, sino la decision mas la confianza en el proceso, y de ahi salen los pasos de incluir a los afectados, designar a quien decide y dar tiempo a la discrepancia. El caso del plazo de diseno va DENTRO y no a nodo propio (manual seccion 3.5): la doctrina es el procedimiento y el caso es el ejemplo nombrado que la ilustra. Lo que el libro NO dice, y por eso no esta escrito aqui, es quien designa a quien decide, ni cuanto tiempo es demasiado, ni como se documenta la decision despues.",
+  "atribuciones": [
+    {
+      "cifra": "a veces hay que discrepar y comprometerse por el bien de avanzar rapido",
+      "autor": "Jeff Bezos, primer ejecutivo de Amazon, citado por Julie Zhuo",
+      "fuente": "zhuo_manager",
+      "fecha_corte": "no consta en el texto: el libro lo cita como frase que Bezos suele decir, sin anio ni obra"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+ "id": "ceder_control_reforzar_competencia_claridad",
+ "grafo": 459,
+ "bandejas": 20,
+ "vecinos": [
+  {
+   "id": "encargar_meta_especifica_dejar_libre_metodo",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.372,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.486
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 4 del candidato contra paso 4 de encargar_meta_especifica_dejar_libre_metodo"
+  }
+ ]
+}

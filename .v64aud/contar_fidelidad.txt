@@ -1,0 +1,10 @@
+candidato                                        ficha filas   T   P  DUDA
+archivar_indicadores_resolver_problemas              4     4   4   0     0
+construir_grafico_escalonado_pronosticos             8     8   8   0     0
+construir_indicador_tendencia_patron                 6     6   6   0     0
+elegir_fabricar_pedido_pronostico                    9     9   9   0     0
+elegir_indicador_salida_trabajo_administrativo       7     7   7   0     0
+emparejar_indicadores_efecto_contraefecto            7     7   6   1     2
+total cap_03, seis de d005                          41    41  40   1     2
+PUENTE sobre pasos escritos: 1 de 41 = 2.44 por ciento
+si las 2 DUDA cayesen a PUENTE: 3 de 41 = 7.32 por ciento

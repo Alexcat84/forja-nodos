@@ -1,0 +1,12 @@
+criticar_trabajo_evitar_desanimo
+   previos    : ['empezar_cultura_franqueza_radical']
+   siguientes : []
+elogiar_trabajo_especifico_contexto
+   previos    : []
+   siguientes : []
+empezar_cultura_franqueza_radical
+   previos    : []
+   siguientes : ['criticar_trabajo_evitar_desanimo', 'pedir_critica_equipo_premiarla']
+pedir_critica_equipo_premiarla
+   previos    : ['empezar_cultura_franqueza_radical']
+   siguientes : []

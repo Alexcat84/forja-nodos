@@ -1,0 +1,13 @@
+CREDITO DE LA LINEA 'serial' (D.48)
+  registro: docs/loop/CREDITO_serial.jsonl
+  tandas: 31, en 127 suceso(s) de especie
+
+  especie            racha      de donde sale
+  ----------------------------------------------------------------------
+  AUDITOR            0 de 3     ACTA 31
+  CIFRA PUBLICADA    0 de 2     ACTA 31
+  CLASE              1 de 2     ACTA 31
+  DATO MOVIDO        1 de 2     ACTA 31
+  REPORTE            0 de 3     docs/loop/paradas/2026-09-17-de-quien-es-la-racha-DECISION.md, punto 3
+
+  CREDITO ENTERO: ninguna especie en su tope.

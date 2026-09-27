@@ -1,0 +1,5 @@
+fichero A : docs/loop/.v02_gerber/aduana.txt  pares: 22  distintos: 22
+fichero B : .gerber_v1/aduana_candidato_1.txt .gerber_v1/aduana_tanda_a.txt .gerber_v1/aduana_tanda_b.txt .gerber_v1/aduana_tanda_c.txt  pares: 21  distintos: 21
+solo en A : 1
+    hacer_trabajo_futuro_imaginar_negocio -> dictar_ritmo_crecimiento_preguntas_escritas
+solo en B : 0

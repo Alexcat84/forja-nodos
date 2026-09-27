@@ -1,0 +1,133 @@
+  OK  reunir_informacion_gerencial_vias_variadas       transmitir_objetivos_prioridades_preferencias    SANO      
+  OK  reunir_informacion_gerencial_vias_variadas       programar_visita_area_observar_despachar         SANO      
+  OK  reunir_informacion_gerencial_vias_variadas       escalonar_fuentes_informacion_gerencial          CONTINUA  madre=reunir_informacion_gerencial_vias_variadas
+  OK  reunir_informacion_gerencial_vias_variadas       empujar_persona_reunion_direccion_preferida      SANO      
+  OK  reunir_informacion_gerencial_vias_variadas       elegir_momento_actividad_palanca_maxima          SANO      
+  OK  reunir_informacion_gerencial_vias_variadas       subir_productividad_gerencial_tres_vias          SANO      
+  OK  reunir_informacion_gerencial_vias_variadas       buscar_actividad_alta_palanca_tres_vias          SANO      
+reunir_informacion_gerencial_vias_variadas         lineas 7 | levantados hoy 7 | FALTAN 0 | SOBRAN 0
+  OK  escalonar_fuentes_informacion_gerencial          programar_visita_area_observar_despachar         SANO      
+  OK  escalonar_fuentes_informacion_gerencial          reunir_informacion_gerencial_vias_variadas       CONTINUA  madre=reunir_informacion_gerencial_vias_variadas
+  OK  escalonar_fuentes_informacion_gerencial          empujar_persona_reunion_direccion_preferida      SANO      
+  OK  escalonar_fuentes_informacion_gerencial          transmitir_objetivos_prioridades_preferencias    SANO      
+  OK  escalonar_fuentes_informacion_gerencial          subir_productividad_gerencial_tres_vias          SANO      
+  OK  escalonar_fuentes_informacion_gerencial          elegir_momento_actividad_palanca_maxima          SANO      
+  OK  escalonar_fuentes_informacion_gerencial          buscar_actividad_alta_palanca_tres_vias          SANO      
+escalonar_fuentes_informacion_gerencial            lineas 7 | levantados hoy 7 | FALTAN 0 | SOBRAN 0
+  OK  programar_visita_area_observar_despachar         escalonar_fuentes_informacion_gerencial          SANO      
+  OK  programar_visita_area_observar_despachar         reunir_informacion_gerencial_vias_variadas       SANO      
+  OK  programar_visita_area_observar_despachar         elegir_momento_actividad_palanca_maxima          SANO      
+  OK  programar_visita_area_observar_despachar         empujar_persona_reunion_direccion_preferida      SANO      
+  OK  programar_visita_area_observar_despachar         transmitir_objetivos_prioridades_preferencias    SANO      
+  OK  programar_visita_area_observar_despachar         subir_productividad_gerencial_tres_vias          SANO      
+  OK  programar_visita_area_observar_despachar         buscar_actividad_alta_palanca_tres_vias          SANO      
+programar_visita_area_observar_despachar           lineas 7 | levantados hoy 7 | FALTAN 0 | SOBRAN 0
+  OK  transmitir_objetivos_prioridades_preferencias    reunir_informacion_gerencial_vias_variadas       SANO      
+  OK  transmitir_objetivos_prioridades_preferencias    empujar_persona_reunion_direccion_preferida      SANO      
+  OK  transmitir_objetivos_prioridades_preferencias    escalonar_fuentes_informacion_gerencial          SANO      
+  OK  transmitir_objetivos_prioridades_preferencias    elegir_momento_actividad_palanca_maxima          SANO      
+  OK  transmitir_objetivos_prioridades_preferencias    subir_productividad_gerencial_tres_vias          SANO      
+  OK  transmitir_objetivos_prioridades_preferencias    buscar_actividad_alta_palanca_tres_vias          SANO      
+  OK  transmitir_objetivos_prioridades_preferencias    programar_visita_area_observar_despachar         SANO      
+transmitir_objetivos_prioridades_preferencias      lineas 7 | levantados hoy 7 | FALTAN 0 | SOBRAN 0
+  OK  empujar_persona_reunion_direccion_preferida      reunir_informacion_gerencial_vias_variadas       SANO      
+  OK  empujar_persona_reunion_direccion_preferida      programar_visita_area_observar_despachar         SANO      
+  OK  empujar_persona_reunion_direccion_preferida      escalonar_fuentes_informacion_gerencial          SANO      
+  OK  empujar_persona_reunion_direccion_preferida      buscar_actividad_alta_palanca_tres_vias          SANO      
+  OK  empujar_persona_reunion_direccion_preferida      transmitir_objetivos_prioridades_preferencias    SANO      
+  OK  empujar_persona_reunion_direccion_preferida      subir_productividad_gerencial_tres_vias          SANO      
+  OK  empujar_persona_reunion_direccion_preferida      elegir_momento_actividad_palanca_maxima          SANO      
+empujar_persona_reunion_direccion_preferida        lineas 7 | levantados hoy 7 | FALTAN 0 | SOBRAN 0
+  OK  subir_productividad_gerencial_tres_vias          elegir_momento_actividad_palanca_maxima          SANO      
+  OK  subir_productividad_gerencial_tres_vias          buscar_actividad_alta_palanca_tres_vias          CONTINUA  madre=subir_productividad_gerencial_tres_vias
+  OK  subir_productividad_gerencial_tres_vias          escalonar_fuentes_informacion_gerencial          SANO      
+  OK  subir_productividad_gerencial_tres_vias          reunir_informacion_gerencial_vias_variadas       SANO      
+  OK  subir_productividad_gerencial_tres_vias          empujar_persona_reunion_direccion_preferida      SANO      
+  OK  subir_productividad_gerencial_tres_vias          transmitir_objetivos_prioridades_preferencias    SANO      
+  OK  subir_productividad_gerencial_tres_vias          programar_visita_area_observar_despachar         SANO      
+subir_productividad_gerencial_tres_vias            lineas 7 | levantados hoy 7 | FALTAN 0 | SOBRAN 0
+  OK  buscar_actividad_alta_palanca_tres_vias          subir_productividad_gerencial_tres_vias          CONTINUA  madre=subir_productividad_gerencial_tres_vias
+  OK  buscar_actividad_alta_palanca_tres_vias          empujar_persona_reunion_direccion_preferida      SANO      
+  OK  buscar_actividad_alta_palanca_tres_vias          reunir_informacion_gerencial_vias_variadas       SANO      
+  OK  buscar_actividad_alta_palanca_tres_vias          escalonar_fuentes_informacion_gerencial          SANO      
+  OK  buscar_actividad_alta_palanca_tres_vias          elegir_momento_actividad_palanca_maxima          CONTINUA  madre=buscar_actividad_alta_palanca_tres_vias
+  OK  buscar_actividad_alta_palanca_tres_vias          programar_visita_area_observar_despachar         SANO      
+  OK  buscar_actividad_alta_palanca_tres_vias          transmitir_objetivos_prioridades_preferencias    SANO      
+buscar_actividad_alta_palanca_tres_vias            lineas 7 | levantados hoy 7 | FALTAN 0 | SOBRAN 0
+  OK  elegir_momento_actividad_palanca_maxima          subir_productividad_gerencial_tres_vias          SANO      
+  OK  elegir_momento_actividad_palanca_maxima          programar_visita_area_observar_despachar         SANO      
+  OK  elegir_momento_actividad_palanca_maxima          escalonar_fuentes_informacion_gerencial          SANO      
+  OK  elegir_momento_actividad_palanca_maxima          reunir_informacion_gerencial_vias_variadas       SANO      
+  OK  elegir_momento_actividad_palanca_maxima          transmitir_objetivos_prioridades_preferencias    SANO      
+  OK  elegir_momento_actividad_palanca_maxima          empujar_persona_reunion_direccion_preferida      SANO      
+  OK  elegir_momento_actividad_palanca_maxima          buscar_actividad_alta_palanca_tres_vias          CONTINUA  madre=buscar_actividad_alta_palanca_tres_vias
+elegir_momento_actividad_palanca_maxima            lineas 7 | levantados hoy 7 | FALTAN 0 | SOBRAN 0
+detectar_palanca_negativa_actividad_mando          lineas 0 | levantados hoy 0 | FALTAN 0 | SOBRAN 0
+delegar_tarea_base_comun_seguimiento               lineas 0 | levantados hoy 0 | FALTAN 0 | SOBRAN 0
+  OK  supervisar_tarea_delegada_etapa_menor_valor      detectar_arreglar_fallo_etapa_menor_valor        CONTINUA  madre=detectar_arreglar_fallo_etapa_menor_valor
+  OK  supervisar_tarea_delegada_etapa_menor_valor      supervisar_decision_delegada_preguntas_concretas SANO      
+  OK  supervisar_tarea_delegada_etapa_menor_valor      identificar_paso_limitante_jornada_desfases      SANO      
+supervisar_tarea_delegada_etapa_menor_valor        lineas 3 | levantados hoy 3 | FALTAN 0 | SOBRAN 0
+  OK  supervisar_decision_delegada_preguntas_concretas identificar_paso_limitante_jornada_desfases      SANO      
+  OK  supervisar_decision_delegada_preguntas_concretas supervisar_tarea_delegada_etapa_menor_valor      SANO      
+  OK  supervisar_decision_delegada_preguntas_concretas agrupar_tareas_semejantes_aprovechar_preparacion SANO      
+supervisar_decision_delegada_preguntas_concretas   lineas 3 | levantados hoy 3 | FALTAN 0 | SOBRAN 0
+  OK  identificar_paso_limitante_jornada_desfases      agrupar_tareas_semejantes_aprovechar_preparacion SANO      
+  OK  identificar_paso_limitante_jornada_desfases      decir_no_trabajo_excede_capacidad                SANO      
+  OK  identificar_paso_limitante_jornada_desfases      supervisar_decision_delegada_preguntas_concretas SANO      
+  OK  identificar_paso_limitante_jornada_desfases      agrupar_interrupciones_subordinados_reuniones_regulares SANO      
+  OK  identificar_paso_limitante_jornada_desfases      llevar_inventario_proyectos_discrecionales       SANO      
+  OK  identificar_paso_limitante_jornada_desfases      supervisar_tarea_delegada_etapa_menor_valor      SANO      
+identificar_paso_limitante_jornada_desfases        lineas 6 | levantados hoy 6 | FALTAN 0 | SOBRAN 0
+  OK  agrupar_tareas_semejantes_aprovechar_preparacion buscar_regularidad_bloques_iguales_trabajo_mando SANO      
+  OK  agrupar_tareas_semejantes_aprovechar_preparacion llevar_inventario_proyectos_discrecionales       SANO      
+  OK  agrupar_tareas_semejantes_aprovechar_preparacion decir_no_trabajo_excede_capacidad                SANO      
+  OK  agrupar_tareas_semejantes_aprovechar_preparacion identificar_paso_limitante_jornada_desfases      SANO      
+  OK  agrupar_tareas_semejantes_aprovechar_preparacion supervisar_decision_delegada_preguntas_concretas SANO      
+agrupar_tareas_semejantes_aprovechar_preparacion   lineas 5 | levantados hoy 5 | FALTAN 0 | SOBRAN 0
+  OK  decir_no_trabajo_excede_capacidad                usar_calendario_herramienta_planificacion_produccion SANO      
+  OK  decir_no_trabajo_excede_capacidad                llevar_inventario_proyectos_discrecionales       SANO      
+  OK  decir_no_trabajo_excede_capacidad                agrupar_tareas_semejantes_aprovechar_preparacion SANO      
+  OK  decir_no_trabajo_excede_capacidad                identificar_paso_limitante_jornada_desfases      SANO      
+decir_no_trabajo_excede_capacidad                  lineas 4 | levantados hoy 4 | FALTAN 0 | SOBRAN 0
+  OK  usar_calendario_herramienta_planificacion_produccion decir_no_trabajo_excede_capacidad                SANO      
+usar_calendario_herramienta_planificacion_produccion lineas 1 | levantados hoy 1 | FALTAN 0 | SOBRAN 0
+  OK  llevar_inventario_proyectos_discrecionales       agrupar_interrupciones_subordinados_reuniones_regulares SANO      
+  OK  llevar_inventario_proyectos_discrecionales       agrupar_tareas_semejantes_aprovechar_preparacion SANO      
+  OK  llevar_inventario_proyectos_discrecionales       preparar_respuestas_estandar_interrupciones_repetidas SANO      
+  OK  llevar_inventario_proyectos_discrecionales       decir_no_trabajo_excede_capacidad                SANO      
+  OK  llevar_inventario_proyectos_discrecionales       buscar_regularidad_bloques_iguales_trabajo_mando SANO      
+  OK  llevar_inventario_proyectos_discrecionales       identificar_paso_limitante_jornada_desfases      SANO      
+llevar_inventario_proyectos_discrecionales         lineas 6 | levantados hoy 6 | FALTAN 0 | SOBRAN 0
+dimensionar_numero_subordinados_medio_dia_semanal  lineas 0 | levantados hoy 0 | FALTAN 0 | SOBRAN 0
+  OK  buscar_regularidad_bloques_iguales_trabajo_mando agrupar_tareas_semejantes_aprovechar_preparacion SANO      
+  OK  buscar_regularidad_bloques_iguales_trabajo_mando preparar_respuestas_estandar_interrupciones_repetidas SANO      
+  OK  buscar_regularidad_bloques_iguales_trabajo_mando agrupar_interrupciones_subordinados_reuniones_regulares SANO      
+  OK  buscar_regularidad_bloques_iguales_trabajo_mando llevar_inventario_proyectos_discrecionales       SANO      
+buscar_regularidad_bloques_iguales_trabajo_mando   lineas 4 | levantados hoy 4 | FALTAN 0 | SOBRAN 0
+  OK  preparar_respuestas_estandar_interrupciones_repetidas buscar_regularidad_bloques_iguales_trabajo_mando SANO      
+  OK  preparar_respuestas_estandar_interrupciones_repetidas agrupar_interrupciones_subordinados_reuniones_regulares SANO      
+preparar_respuestas_estandar_interrupciones_repetidas lineas 2 | levantados hoy 2 | FALTAN 0 | SOBRAN 0
+  OK  agrupar_interrupciones_subordinados_reuniones_regulares sostener_contacto_oferta_aceptacion              SANO      
+  OK  agrupar_interrupciones_subordinados_reuniones_regulares agendar_cuidados_propios_cumplirlos              SANO      
+  OK  agrupar_interrupciones_subordinados_reuniones_regulares nombrar_delegados_amigos_casa                    SANO      
+  OK  agrupar_interrupciones_subordinados_reuniones_regulares llevar_inventario_proyectos_discrecionales       SANO      
+  OK  agrupar_interrupciones_subordinados_reuniones_regulares preparar_respuestas_estandar_interrupciones_repetidas SANO      
+  OK  agrupar_interrupciones_subordinados_reuniones_regulares canalizar_interrupciones_cartel_hora_oficina     SANO      
+  OK  agrupar_interrupciones_subordinados_reuniones_regulares buscar_regularidad_bloques_iguales_trabajo_mando SANO      
+  OK  agrupar_interrupciones_subordinados_reuniones_regulares identificar_paso_limitante_jornada_desfases      SANO      
+agrupar_interrupciones_subordinados_reuniones_regulares lineas 8 | levantados hoy 8 | FALTAN 0 | SOBRAN 0
+  OK  canalizar_interrupciones_cartel_hora_oficina     agrupar_interrupciones_subordinados_reuniones_regulares SANO      
+canalizar_interrupciones_cartel_hora_oficina       lineas 1 | levantados hoy 1 | FALTAN 0 | SOBRAN 0
+secciones 22 de 22, lineas 99, ilegibles 0, vecinos sin linea 0, lineas sin vecino 0
+
+ARISTAS POR LECTURA (SOSTENGO) contra el barrido de hoy
+  construir_flujo_produccion_paso_limitante          > identificar_paso_limitante_jornada_desfases          levantada hoy: NO
+  delegar_tarea_base_comun_seguimiento               > supervisar_tarea_delegada_etapa_menor_valor          levantada hoy: NO
+  delegar_tarea_base_comun_seguimiento               > supervisar_decision_delegada_preguntas_concretas     levantada hoy: NO
+  transmitir_objetivos_prioridades_preferencias      > delegar_tarea_base_comun_seguimiento                 levantada hoy: NO
+  variar_frecuencia_inspeccion_nivel_calidad         > supervisar_tarea_delegada_etapa_menor_valor          levantada hoy: NO
+  identificar_paso_limitante_jornada_desfases        > usar_calendario_herramienta_planificacion_produccion levantada hoy: NO
+  agrupar_tareas_semejantes_aprovechar_preparacion   > agrupar_interrupciones_subordinados_reuniones_regulares levantada hoy: NO
+  buscar_regularidad_bloques_iguales_trabajo_mando   > canalizar_interrupciones_cartel_hora_oficina         levantada hoy: NO
+  representar_actividad_caja_negra_ventanas          > buscar_regularidad_bloques_iguales_trabajo_mando     levantada hoy: NO

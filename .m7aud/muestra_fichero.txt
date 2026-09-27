@@ -1,0 +1,10 @@
+MUESTRA DE FIDELIDAD DEL REGIMEN LIGERO (D.58)
+  libro    : marquet_turn_the_ship
+  semilla  : m6
+  capitulos: cap_16, cap_17
+  RELEIDO ENTERO : cap_17
+  POR MUESTRA    : cap_16, 15 pasos cada uno
+  EL DISPARADOR: si la muestra de un capitulo pasa del 10 por ciento de
+  pasos inventados, ESE CAPITULO SE RELEE ENTERO ANTES DE SEGUIR.
+  --- cap_16: 0 paso(s) en la muestra
+  --- cap_17: ENTERO, 0 paso(s), no hay muestra que elegir

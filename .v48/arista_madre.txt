@@ -1,0 +1,2 @@
+$ grep -o "29, HIJO usar_calendario[^.]*\." cuarentena/grove_high_output/identificar_paso_limitante_jornada_desfases.json
+29, HIJO usar_calendario_herramienta_planificacion_produccion, porque su paso sobre llenar los huecos entre los pasos limitantes solo se puede ejecutar si este nodo ya los identifico.

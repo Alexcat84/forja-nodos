@@ -1,0 +1,6 @@
+nodos en dataset/nodos.jsonl : 234
+veredictos en bitacora/VEREDICTOS.jsonl : 240
+candidatos en cuarentena/scott_radical_candor : 111
+insertados en cuarentena/_insertados/scott_radical_candor : 31
+candidatos en cuarentena/marquet_turn_the_ship : 3
+pares mutuos en config/pares_mutuos.jsonl : 1

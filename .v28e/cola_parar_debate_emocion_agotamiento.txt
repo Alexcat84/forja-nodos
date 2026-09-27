@@ -1,0 +1,19 @@
+=== parar_debate_emocion_agotamiento  (9 vecinos)
+  pedir_hechos_decision_evitar_recomendaciones   [bandeja]  por similitud_texto
+      similitud 0.476  familia 0.000  paso 0.445   paso 1 del candidato contra paso 1 de pedir_hechos_decision_evitar_recomendaciones
+  abrir_debate_humor_explicar_proposito          [GRAFO]  por similitud_texto
+      similitud 0.385  familia 0.125  paso 0.472   paso 1 del candidato contra paso 1 de abrir_debate_humor_explicar_proposito
+  crear_obligacion_disentir_equipo               [bandeja]  por similitud_texto
+      similitud 0.405  familia 0.000  paso 0.465   paso 4 del candidato contra paso 2 de crear_obligacion_disentir_equipo
+  compartir_logica_mostrar_razonamiento          [bandeja]  por similitud_texto
+      similitud 0.369  familia 0.000  paso 0.430   paso 1 del candidato contra paso 4 de compartir_logica_mostrar_razonamiento
+  cambiar_posicion_hechos_explicar_cambio        [GRAFO]  por similitud_texto
+      similitud 0.381  familia 0.000  paso 0.417   paso 3 del candidato contra paso 6 de cambiar_posicion_hechos_explicar_cambio
+  proteger_tiempo_equipo_jefe                    [bandeja]  por similitud_texto
+      similitud 0.367  familia 0.000  paso 0.406   paso 5 del candidato contra paso 6 de proteger_tiempo_equipo_jefe
+  reservar_calendario_tiempo_ejecutar            [bandeja]  por similitud_texto
+      similitud 0.403  familia 0.000  paso 0.380   paso 1 del candidato contra paso 4 de reservar_calendario_tiempo_ejecutar
+  minimizar_impuesto_colaboracion_equipo         [bandeja]  por similitud_texto
+      similitud 0.391  familia 0.000  paso 0.378   paso 2 del candidato contra paso 2 de minimizar_impuesto_colaboracion_equipo
+  centrar_debate_ideas_fuera_egos                [GRAFO]  por similitud_texto
+      similitud 0.359  familia 0.125  paso 0.377   paso 5 del candidato contra paso 6 de centrar_debate_ideas_fuera_egos

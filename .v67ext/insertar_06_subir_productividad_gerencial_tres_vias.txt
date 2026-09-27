@@ -1,0 +1,80 @@
+fila 06, subir_productividad_gerencial_tres_vias, lineas --veredicto: 7
+  --veredicto elegir_momento_actividad_palanca_maxima|SANO|La condicion del vecino, Cuando la actividad que tienes delante es de las de alta palanca, no es producto de este candidato sino de buscar_actividad_alta_palanca_tres_vias, que es hijo de este (C1) y madre del vecino (C2). El paso 3 de aqui manda subir la palanca y el vecino no la sube: elige el momento de una actividad que buscar ya reconocio (L215 a L217). La relacion pasa por buscar y no pide arista propia: SANO. Correccion declarada de la vuelta 67: la razon vieja usaba EXTRACTOR 9.1 restriccion 1, que no decide aristas (restriccion 3); cae el argumento y la clase se sostiene por 6.1 (DISCUTIBLE D67.4).
+  --veredicto buscar_actividad_alta_palanca_tres_vias|CONTINUA|madre=subir_productividad_gerencial_tres_vias|Relectura conjunta de la vuelta 67 (ACTA 65 65.4.b, C1): las tres vias de este candidato son medios y no metas, el ritmo, la palanca de las actividades y la mezcla son objetos de trabajo nombrados uno a uno (L195 a L201), asi que pasa 9.1. El vecino despliega la segunda y la tercera: L203 abre su tramo con Let us consider first the leverage of various types of managerial work, y su condicion escrita, Cuando ya sabes que quieres subir la palanca de lo que haces y te falta saber donde esta la palanca alta, es el producto de los pasos 3 y 4 de aqui, que mandan subir la palanca y correr la mezcla hacia las de mayor palanca sin decir cuales son. El vecino lo dice por sus tres vias (L207 a L213). Fuera del solape queda procedimiento en los dos lados, el ritmo y la mezcla aqui y las tres vias alli: continua, no repite. La razon vieja usaba EXTRACTOR 9.1 restriccion 1 para decidir la arista, y la restriccion 3 dice que 9.1 no mueve la vara de continua contra repite.
+  --veredicto escalonar_fuentes_informacion_gerencial|SANO|El mismo par que escalonar lee desde su lado: las tres vias de la productividad contra la escala de las fuentes. Ajenos.
+  --veredicto reunir_informacion_gerencial_vias_variadas|SANO|El mismo par que reunir lee desde su lado: las tres vias de la productividad contra las vias de la informacion. Ajenos.
+  --veredicto empujar_persona_reunion_direccion_preferida|SANO|El mismo par que empujar lee desde su lado. Ajenos.
+  --veredicto transmitir_objetivos_prioridades_preferencias|SANO|El mismo par que transmitir lee desde su lado. Ajenos.
+  --veredicto programar_visita_area_observar_despachar|SANO|El mismo par que la visita lee desde su lado. Ajenos.
+inicio 2026-09-24 08:47:49
+======================================================================
+ADUANA DE INSERCION, candidato 'subir_productividad_gerencial_tres_vias'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (373 del grafo mas 106 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 7. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino elegir_momento_actividad_palanca_maxima  [Elegir el momento de una actividad para que su palanca sea maxima: por delante del acontecimiento, o inmediata cuando el momento manda]
+    levantada por: similitud_texto
+    similitud_texto    0.403 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.553 (umbral 0.60)
+    paso 3 del candidato contra paso 1 de elegir_momento_actividad_palanca_maxima
+
+  vecino buscar_actividad_alta_palanca_tres_vias  [Buscar las actividades de alta palanca por sus tres vias basicas: mucha gente, un acto breve de efecto largo, y el saber unico]
+    levantada por: similitud_texto
+    similitud_texto    0.544 (umbral 0.35)
+    familia_id         0.222 (umbral 0.30)
+    paso_contra_nodo   0.500 (umbral 0.60)
+    paso 4 del candidato contra paso 1 de buscar_actividad_alta_palanca_tres_vias
+
+  vecino escalonar_fuentes_informacion_gerencial  [Escalonar las fuentes de informacion del mando, de la verbal a la reposada, y solaparlas para verificar]
+    levantada por: similitud_texto
+    similitud_texto    0.430 (umbral 0.35)
+    familia_id         0.125 (umbral 0.30)
+    paso_contra_nodo   0.447 (umbral 0.60)
+    paso 2 del candidato contra paso 4 de escalonar_fuentes_informacion_gerencial
+
+  vecino reunir_informacion_gerencial_vias_variadas  [Reunir la informacion del mando por todas sus vias, con el intercambio verbal rapido por delante]
+    levantada por: similitud_texto
+    similitud_texto    0.430 (umbral 0.35)
+    familia_id         0.250 (umbral 0.30)
+    paso_contra_nodo   0.403 (umbral 0.60)
+    paso 2 del candidato contra paso 8 de reunir_informacion_gerencial_vias_variadas
+
+  vecino empujar_persona_reunion_direccion_preferida  [Empujar a una persona o a una reunion hacia la direccion que prefieres, sabiendo que un empujon no es una orden]
+    levantada por: similitud_texto
+    similitud_texto    0.422 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.413 (umbral 0.60)
+    paso 1 del candidato contra paso 7 de empujar_persona_reunion_direccion_preferida
+
+  vecino transmitir_objetivos_prioridades_preferencias  [Transmitir objetivos, prioridades y preferencias, y no solo hechos, para que el subordinado pueda decidir solo]
+    levantada por: similitud_texto
+    similitud_texto    0.420 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.407 (umbral 0.60)
+    paso 2 del candidato contra paso 3 de transmitir_objetivos_prioridades_preferencias
+
+  vecino programar_visita_area_observar_despachar  [Programar la visita a un area de trabajo para observar lo que pasa y despachar alli los asuntos de dos minutos]
+    levantada por: similitud_texto
+    similitud_texto    0.393 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.415 (umbral 0.60)
+    paso 2 del candidato contra paso 3 de programar_visita_area_observar_despachar
+  ARISTA EN COLA, no cableada: subir_productividad_gerencial_tres_vias > buscar_actividad_alta_palanca_tres_vias
+    el otro extremo espera en la bandeja (D.29). El veredicto CONTINUA queda escrito y la arista se cablea cuando entre:
+      python forja.py arista --madre subir_productividad_gerencial_tres_vias --hijo buscar_actividad_alta_palanca_tres_vias --paso <n> --razon "..."
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 374
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 7
+  ARISTAS EN COLA, sin cablear: 1
+    subir_productividad_gerencial_tres_vias > buscar_actividad_alta_palanca_tres_vias
+    D.29: van a un bloque propio y titulado del reporte, y se cablean con `forja.py arista` cuando el otro extremo entre.
+
+======================================================================
+fin 2026-09-24 09:06:48 | codigo de salida 0 | 1138.4 s

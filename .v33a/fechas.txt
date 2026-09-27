@@ -1,0 +1,10 @@
+dataset/nodos.jsonl   5 fechas en castellano distintas
+    12 sep 2026           26
+    16 sep 2026            9
+    17 sep 2026            3
+    11 sep 2026            2
+    13 sep 2026            1
+bitacora/VEREDICTOS.jsonl   3 fechas en castellano distintas
+    16 sep 2026          113
+    17 sep 2026            7
+    11 sep 2026            3

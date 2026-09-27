@@ -1,0 +1,98 @@
+{
+ "id": "escalonar_fuentes_informacion_gerencial",
+ "grafo": 368,
+ "bandejas": 111,
+ "vecinos": [
+  {
+   "id": "programar_visita_area_observar_despachar",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.417,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.468
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 5 del candidato contra paso 1 de programar_visita_area_observar_despachar"
+  },
+  {
+   "id": "reunir_informacion_gerencial_vias_variadas",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.456,
+    "familia_id": 0.286,
+    "paso_contra_nodo": 0.463
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 8 de reunir_informacion_gerencial_vias_variadas"
+  },
+  {
+   "id": "empujar_persona_reunion_direccion_preferida",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.431,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.411
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 4 del candidato contra paso 4 de empujar_persona_reunion_direccion_preferida"
+  },
+  {
+   "id": "transmitir_objetivos_prioridades_preferencias",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.43,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.38
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 1 de transmitir_objetivos_prioridades_preferencias"
+  },
+  {
+   "id": "subir_productividad_gerencial_tres_vias",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.425,
+    "familia_id": 0.125,
+    "paso_contra_nodo": 0.425
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 4 del candidato contra paso 2 de subir_productividad_gerencial_tres_vias"
+  },
+  {
+   "id": "elegir_momento_actividad_palanca_maxima",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.412,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.414
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 1 de elegir_momento_actividad_palanca_maxima"
+  },
+  {
+   "id": "buscar_actividad_alta_palanca_tres_vias",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.406,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.403
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 2 de buscar_actividad_alta_palanca_tres_vias"
+  }
+ ]
+}

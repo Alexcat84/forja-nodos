@@ -1,0 +1,30 @@
+LOS CANDIDATOS DE cap_17, CON SUS PASOS CONTADOS POR MI
+
+  priorizar_lista_entrenamiento_subordinados            5 paso(s)   [bandeja]
+     1. Haz una lista de las cosas en que crees que tus subordinados o los miembros de tu departamento deberian entrenarse, sin limitar el alcance de la lista.
+     2. Incluye items que van desde lo que parece simple, como entrenar a la persona que atiende el telefono, hasta cosas mas generales y elevadas, como los objetivos y los sistemas de valores de tu departamento, tu planta y tu empresa.
+     3. Pregunta a la gente que trabaja para ti que siente que necesita: es probable que te sorprenda contandote necesidades que nunca supiste que existian.
+     4. Hecho esto, toma inventario de los mando maestros y los materiales instructivos disponibles para ayudar a impartir el entrenamiento de los items de tu lista.
+     5. Asigna prioridades entre esos items.
+
+  desarrollar_primer_curso_entrenamiento                7 paso(s)   [bandeja]
+     1. Empieza sin ambicion: desarrolla un curso corto, de tres a cuatro clases, sobre el tema mas urgente de tu lista.
+     2. Fija un calendario para el curso, con plazos, y comprometete con el para no atascarte en la preparacion.
+     3. Crea un esquema para el curso entero.
+     4. Desarrolla solo la primera clase, y dictala.
+     5. Desarrolla la segunda clase despues de haber dado la primera.
+     6. Trata la primera vez que enseñas el curso como un desechable: enseñaselo a los subordinados mas informados, que te ayudaran a perfeccionarlo con su interaccion y su critica.
+     7. Preguntate si podras cubrir tu solo a toda la organizacion o si, por su tamaño, hace falta que prepares a unos cuantos instructores con tu primer set de clases.
+
+  pedir_critica_anonima_curso_entrenamiento_dictado     4 paso(s)   [APARTADO]
+     1. Despues de dar el curso, pide criticas anonimas a los empleados de tu clase.
+     2. Usa un formulario que pida calificaciones numericas y que ademas plantee algunas preguntas abiertas.
+     3. Estudia y considera las respuestas, entendiendo que nunca podras complacer a todos los miembros de tu clase por igual.
+     4. Ten como objetivo ultimo satisfacerte a ti mismo de que estas logrando lo que te propusiste.
+
+======================================================================
+cap_17 : 3 candidato(s), 16 paso(s) escritos
+cap_18 : 0 candidato(s), 0 paso(s) escritos, SIN SUPERFICIE
+
+EL PUENTE NO LO CUENTA ESTE SCRIPT: lo lee el auditor contra el parrafo
+del libro, y su veredicto va en el acta. 8.3.2.

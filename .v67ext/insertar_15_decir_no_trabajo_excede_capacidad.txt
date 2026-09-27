@@ -1,0 +1,50 @@
+fila 15, decir_no_trabajo_excede_capacidad, lineas --veredicto: 4
+  --veredicto usar_calendario_herramienta_planificacion_produccion|SANO|Hermanos: las dos responsabilidades que L279 numera (To use your calendar as a production-planning tool, you must accept responsibility for two things), la 1 en el vecino (L281) y la 2 aqui (L283). Ninguna usa a la otra; cada una lleva su procedimiento.
+  --veredicto llevar_inventario_proyectos_discrecionales|SANO|Hermanos del tramo de principios de produccion: decir que no (L277 a L285) contra el inventario de proyectos (L289). Ningun paso compartido.
+  --veredicto agrupar_tareas_semejantes_aprovechar_preparacion|SANO|El mismo par que la tanda lee desde su lado.
+  --veredicto identificar_paso_limitante_jornada_desfases|SANO|El mismo par que el paso limitante lee desde su lado.
+inicio 2026-09-24 12:28:57
+======================================================================
+ADUANA DE INSERCION, candidato 'decir_no_trabajo_excede_capacidad'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (382 del grafo mas 97 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 4. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino usar_calendario_herramienta_planificacion_produccion  [Usar el calendario como herramienta de planificacion de produccion y no como deposito de encargos ajenos]
+    levantada por: similitud_texto
+    similitud_texto    0.365 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.441 (umbral 0.60)
+    paso 7 del candidato contra paso 7 de usar_calendario_herramienta_planificacion_produccion
+
+  vecino llevar_inventario_proyectos_discrecionales  [Llevar un inventario de materia prima en forma de proyectos discrecionales, distinto del trabajo en curso, para no gastar el tiempo libre metiendote en el trabajo ajeno]
+    levantada por: similitud_texto
+    similitud_texto    0.376 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.428 (umbral 0.60)
+    paso 7 del candidato contra paso 5 de llevar_inventario_proyectos_discrecionales
+
+  vecino agrupar_tareas_semejantes_aprovechar_preparacion  [Agrupar las tareas semejantes en una tanda para aprovechar un solo esfuerzo de preparacion]
+    levantada por: similitud_texto
+    similitud_texto    0.354 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.417 (umbral 0.60)
+    paso 5 del candidato contra paso 5 de agrupar_tareas_semejantes_aprovechar_preparacion
+
+  vecino identificar_paso_limitante_jornada_desfases  [Identificar el paso limitante de tu jornada y crear desfases alrededor: determinar lo inamovible y mover lo flexible a su alrededor]
+    levantada por: similitud_texto
+    similitud_texto    0.364 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.397 (umbral 0.60)
+    paso 6 del candidato contra paso 4 de identificar_paso_limitante_jornada_desfases
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 383
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 4
+
+======================================================================
+fin 2026-09-24 13:00:09 | codigo de salida 0 | 1871.9 s

@@ -1,0 +1,12 @@
+AVISO: cero celdas tecleadas en este instrumento. El arranque del cuerpo NO
+es una constante mia: sale de fuentes/gerber_emyth/cap_20.md, linea 8, que es la siguiente al segundo
+--- de la cabecera yaml (cierres en L1 y L7). El cuerpo va de L8 a L79.
+
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| `R1` | L8 a L20 | **37** | el numero del capitulo, el rotulo A LETTER TO SARAH y el epigrafe de Rollo May (Man's Search for Himself, sobre la libertad que se logra cada dia) | **RESIDUO: rotulo y epigrafe** |
+| `R2` | L21 a L59 | **1513** | la carta entera del autor a Sarah: reflexion personal sobre el sentido, el cuidado, el espiritu, el miedo, la Comfort Zone como mascara de seguridad, y el cierre pidiendole que la guarde con su vida y no ceda a la comodidad; cero pasos, cero medio nombrado, cero inventario de etapas u objetos | **POSTURA: carta personal, sin inventario propio** |
+| `R3` | L60 a L79 | **291** | ACKNOWLEDGMENTS: los agradecimientos del autor a su esposa, sus hijos, sus asociados de E-Myth Worldwide, sus clientes, su cunada y cunado, su editora en HarperBusiness y sus lectores; gratitud personal, no doctrina ni procedimiento | **RESIDUO: agradecimientos del autor** |
+| **el cuerpo entero** | **L8 a L79** | **1841** | **suma de las piezas: 1841** | **residuo sin asignar: 0** |
+
+piezas: 3   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 1841   suma 1841   residuo 0

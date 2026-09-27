@@ -1,0 +1,25 @@
+===== construir_estrategia_gente_cuatro_componentes | cuarentena\gerber_emyth\construir_estrategia_gente_cuatro_componentes.json
+  titulo: Construir tu Your People Strategy con los cuatro componentes que el libro nombra uno a uno
+  fuente: ['gerber_emyth']
+  cond: Cuando ya tienes tu Primary Aim y tu Strategic Objective escritos y tu Organizational Strategy construida, y necesitas comunicarle esa idea a tu gente para que compre el juego que le propones.
+  P1. Entiende que tu Your People Strategy es la forma en que le comunicas a tu gente la idea de tu negocio.
+  P2. Arranca con tu Primary Aim.
+  P3. Sigue con tu Strategic Objective.
+  P4. Construye tu Organizational Strategy: tu Organization Chart y los Position Contracts de todas las posiciones que contiene.
+  P5. Escribe tus Operations Manuals, que son los que definen el trabajo que hace tu gente.
+===== aplicar_cinco_pasos_proceso_contratacion | cuarentena\gerber_emyth\aplicar_cinco_pasos_proceso_contratacion.json
+  titulo: Aplicar los cinco componentes del proceso de contratacion que el libro enumera para comunicar tu idea desde el primer dia
+  fuente: ['gerber_emyth']
+  cond: Cuando vas a contratar gente nueva y quieres que el proceso mismo, desde la primera reunion hasta el primer dia de entrenamiento, sea el primer medio con el que le comunicas la idea de tu negocio.
+  P1. Disena una presentacion guionizada que comunique la idea de tu negocio en una reunion grupal a todos los aspirantes al mismo tiempo, describiendo la idea, la historia y la experiencia del negocio implementandola, y los atributos que exige el puesto.
+  P2. Reunete con cada aspirante de forma individual para hablar de sus reacciones y sentimientos sobre la idea, su trasfondo y su experiencia, y pregunta por que se cree apropiado para el papel que el puesto juega en implementar esa idea.
+  P3. Notifica por telefono al candidato elegido, otra vez con una presentacion guionizada.
+  P4. Notifica a los aspirantes no elegidos agradeciendo su interes, con una carta estandar firmada por quien entrevisto.
+  P5. Dedica el primer dia de entrenamiento a las siguientes actividades, tanto para ti como para el nuevo empleado.
+  P6. Revisa con el la idea del negocio.
+  P7. Resume el sistema con el que todo el negocio hace realidad esa idea.
+  P8. Llevalo de recorrido por las instalaciones, resaltando a la gente trabajando y los sistemas funcionando para mostrar la interdependencia entre los sistemas y la gente.
+  P9. Responde clara y completamente todas sus preguntas.
+  P10. Entregale su uniforme y su Manual de Operaciones.
+  P11. Revisa con el su Manual de Operaciones, incluyendo el Objetivo Estrategico, la Organizational Strategy y el Position Contract de su propio puesto.
+  P12. Completa con el los papeles de empleo.

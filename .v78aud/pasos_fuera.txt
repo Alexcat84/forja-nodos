@@ -1,0 +1,96 @@
+===== escuchar_entender_critica_dominar_defensa | grafo
+  titulo: Escuchar la critica con intencion de entender y no de responder, dominando tu propia defensa con la practica de escuchar tres minutos sin interrumpir
+  fuente: ['scott_radical_candor']
+  cond: Cuando estas recibiendo una critica y notas que te estas poniendo a la defensiva, aunque la hayas pedido tu.
+  P1. Parte de lo que el texto reconoce que pasa: recibir critica puede disparar en nosotros la respuesta de pelea, huida o bloqueo, incluso cuando la hemos pedido.
+  P2. Cuenta con que no solo cuesta la critica injusta: la critica justa, sobre todo cuando toca algo que ya no nos gusta de nosotros mismos, tambien cuesta.
+  P3. Averigua que te ayuda a ti a procesar lo que oyes sin caer en una respuesta defensiva, que es lo que el texto encarga: un ejercicio de respiracion puede ayudar, y tambien dar un trago largo de una botella de agua.
+  P4. Y sobre todo practica con otros, que es lo que el texto pone por encima de lo demas.
+  P5. Practicalo asi: busca una pareja con quien practicar, sea companiero de trabajo, amigo o familiar.
+  P6. Que una persona hable durante tres minutos.
+  P7. Despues cambiad los papeles y escucha a la otra persona hablar, sin interrumpir.
+  P8. Podeis hablar de lo que querais: cualquier cosa que os importe de verdad, del trabajo o de fuera de el.
+  P9. Si eres tu quien escucha, dale a quien habla el regalo de tu atencion completa.
+  P10. Puedes asentir, o decir ya veo o entiendo, pero este no es el momento de preguntas.
+  P11. Ni de que relaciones su historia con algo que te importe a ti, como tu historia favorita de las vacaciones en Hawai.
+  P12. Ni de darle a quien habla ese consejo que le va a cambiar la vida para siempre: tu trabajo no es dar consejo, es escuchar.
+  P13. Y cuenta con lo que el texto ha medido haciendo esto: companieros que llevaban mas de diez anios en el mismo equipo aprendieron mas unos de otros en tres minutos que en una decada trabajando juntos. Escuchar, escuchar de verdad, es increiblemente eficiente.
+===== operar_modelo_gente_destreza_minima | grafo
+  titulo: Operar el modelo con gente del nivel de destreza mas bajo posible, y construir el sistema que la apalanca
+  fuente: ['gerber_emyth']
+  cond: Cuando trabajas la regla 2 del prototipo de tu negocio y tienes que decidir con que gente se opera el modelo para que se pueda replicar.
+  P1. Cuenta con el motivo por el que la regla existe: si tu modelo depende de gente muy cualificada sera imposible de replicar, esa gente es escasa en el mercado, y ademas es cara, lo que sube el precio que tendras que cobrar.
+  P2. Lee el nivel mas bajo posible como el texto lo define: el nivel mas bajo necesario para cumplir las funciones a las que cada puesto esta destinado.
+  P3. Ten los titulados que tu oficio exija, que es la salvedad que el texto pone: si lo tuyo es un despacho de abogados tienes que tener abogados, y si es una consulta medica tienes que tener medicos.
+  P4. No necesitas contratar abogados brillantes ni medicos brillantes: necesitas crear el mejor sistema posible para que buenos abogados y buenos medicos queden apalancados y produzcan resultados exquisitos.
+  P5. Sigue haciendote la pregunta que el texto manda repetirse: como le doy a mi cliente el resultado que quiere de forma sistematica en vez de personal.
+  P6. Hazte esa misma pregunta de la otra manera en que el texto la escribe: como creo un sistema experto en vez de contratar uno.
+  P7. Trata el sistema como las herramientas que tu gente usa para subir su productividad y hacer el trabajo como hay que hacerlo para que tu negocio se distinga de su competencia.
+  P8. Asume que tu trabajo, o mas exactamente el trabajo de tu negocio, es desarrollar esas herramientas y ensenar a tu gente a usarlas.
+  P9. Deja claro que el trabajo de tu gente es usar las herramientas que has desarrollado y recomendar mejoras a partir de su experiencia con ellas.
+  P10. Comprueba que no estas prefiriendo gente muy cualificada solo porque te haga a ti el trabajo mas facil, que es lo que el texto llama preferir la Management by Abdication a la Management by Delegation.
+===== cuantificar_impacto_innovacion_6_pasos | grafo
+  titulo: Cuantificar el impacto real de una innovacion en tu negocio con los seis conteos que el libro enumera
+  fuente: ['gerber_emyth']
+  cond: Cuando pruebas una innovacion en tu negocio, por ejemplo cambiar las palabras con que saludas a un cliente que entra, y quieres saber si de verdad funciono.
+  P1. Determina cuantas personas entraron por la puerta antes de poner en marcha la innovacion.
+  P2. Determina cuantas personas compraron productos y cual fue el valor en dolares de esos productos, antes de cambiar las palabras y lo que decias para producir esas ventas.
+  P3. Cuenta cuantas personas entraron por la puerta despues de cambiar las palabras.
+  P4. Cuenta cuantas personas compraron algo, despues del cambio.
+  P5. Determina el valor promedio de una venta.
+  P6. Determina cual fue la mejora que produjo tu innovacion.
+===== dictar_ritmo_crecimiento_preguntas_escritas | grafo
+  titulo: Dictar el ritmo de crecimiento de tu negocio con los tres conocimientos clave, las preguntas correctas y el plan escrito
+  fuente: ['gerber_emyth']
+  cond: Cuando tu negocio va a crecer y quieres dictar tu su ritmo en vez de reaccionar al crecimiento que se te venga encima.
+  P1. Entiende los procesos clave que hay que ejecutar, que es el primero de los tres conocimientos con los que el texto dice que se dicta el ritmo de crecimiento.
+  P2. Entiende los objetivos clave que hay que alcanzar, que es el segundo.
+  P3. Entiende la posicion clave que quieres que tu negocio ocupe en el mercado, que es el tercero.
+  P4. Hazte las preguntas correctas, que el texto enumera una a una: donde quiero estar, cuando quiero estar alli, cuanto capital hara falta, cuanta gente haciendo que trabajo y como, que tecnologia hara falta, y cuanto espacio hara falta en la marca uno, en la marca dos y en la marca tres.
+  P5. Cuenta con equivocarte a veces, con cometer errores y con cambiar de opinion, y ten por eso los planes de contingencia puestos: mejor caso y peor caso.
+  P6. Planifica, imagina y articula lo que ves en el futuro tanto para ti como para tus empleados, incluso mientras estas adivinando.
+  P7. Escribelo, con claridad, de modo que otros puedan entenderlo, porque el texto dice que si no lo articulas asi entonces no lo posees.
+  P8. Recuerda que cualquier plan es mejor que ningun plan.
+===== interrogar_negocio_cinco_preguntas | grafo
+  titulo: Ponerte a trabajar en tu negocio como si fuera un prototipo de preproduccion, y hacerte las cinco preguntas del capitulo
+  fuente: ['gerber_emyth']
+  cond: Cuando cierras el trabajo del prototipo de tu negocio y quieres comprobar si estas trabajando sobre el o dentro de el.
+  P1. Ponte a trabajar sobre tu negocio en vez de dentro de el.
+  P2. Ponte a trabajar sobre el como si fuera el prototipo de preproduccion de un producto fabricable en serie.
+  P3. Piensa tu negocio como algo aparte de ti mismo, en las formas que el texto enumera: un mundo propio, un producto de tu esfuerzo, una maquina disenada para cubrir una necesidad muy concreta, un mecanismo para darte mas vida, un sistema de piezas interconectadas, un paquete de cereales, una lata de judias, algo creado para satisfacer las necesidades percibidas de tus consumidores, un sitio que actua claramente distinto de todos los demas, y una solucion al problema de otro.
+  P4. Piensa tu negocio como cualquier cosa menos como un empleo.
+  P5. Hazte la primera pregunta: como consigo que mi negocio funcione, pero sin mi.
+  P6. Hazte la segunda: como consigo que mi gente trabaje, pero sin mi interferencia constante.
+  P7. Hazte la tercera: como sistematizo mi negocio de manera que se pudiera replicar 5.000 veces y la unidad numero 5.000 funcionara tan bien como la primera.
+  P8. Hazte la cuarta: como poseo mi negocio y sigo estando libre de el.
+  P9. Hazte la quinta: como paso el tiempo haciendo el trabajo que me gusta hacer en vez del trabajo que tengo que hacer.
+  P10. Quedate con lo que el texto dice que va a pasar cuando te las hagas: acabaras dando de bruces con el problema de verdad, que es que no sabes las respuestas.
+===== usar_banco_nueve_preguntas_entrevista | grafo
+  titulo: Usar el banco de nueve preguntas que un grupo de mandos considero las mejores para entrevistar a un candidato
+  fuente: ['grove_high_output']
+  cond: Cuando el mando va a entrevistar a un candidato a un puesto y necesita preguntas concretas para la hora o dos de entrevista de que dispone.
+  P1. Pide al candidato que describa proyectos que fueron muy valorados por su direccion, en especial por los niveles por encima de su supervisor inmediato.
+  P2. Preguntale cuales son sus debilidades y que esta haciendo para eliminarlas.
+  P3. Pidele que te convenza de por que tu empresa deberia contratarlo.
+  P4. Preguntale que problemas esta encontrando en su puesto actual, como los esta resolviendo y que podria haber hecho para evitar que aparecieran.
+  P5. Preguntale por que cree que esta listo para este nuevo puesto.
+  P6. Preguntale cuales considera sus logros mas importantes y por que fueron importantes para el.
+  P7. Preguntale cuales considera sus fracasos mas importantes y que aprendio de ellos.
+  P8. Preguntale por que cree que deberia elegirse a un ingeniero para un puesto de marketing, variando esta pregunta segun la situacion.
+  P9. Preguntale cual fue el curso o proyecto mas importante que completo en su etapa universitaria y por que fue tan importante.
+===== pedir_critica_anonima_curso_entrenamiento_dictado | grafo
+  titulo: Pedir critica anonima tras dictar un curso de entrenamiento, con formulario numerico y preguntas abiertas
+  fuente: ['grove_high_output']
+  cond: Cuando el mando ya dicto su curso de entrenamiento y quiere saber si esta cumpliendo el proposito que se propuso.
+  P1. Despues de dar el curso, pide criticas anonimas a los empleados de tu clase.
+  P2. Usa un formulario que pida calificaciones numericas y que ademas plantee algunas preguntas abiertas.
+  P3. Estudia y considera las respuestas, entendiendo que nunca podras complacer a todos los miembros de tu clase.
+  P4. Ten como objetivo ultimo satisfacerte a ti mismo de que estas logrando lo que te propusiste.
+===== cambiar_saludo_cliente_dos_ramas | grafo
+  titulo: Cambiar el saludo del vendedor por una pregunta con dos ramas de respuesta ya escritas
+  fuente: ['gerber_emyth']
+  cond: Cuando un cliente entra a tu negocio al por menor y tu vendedor va a saludarlo, en vez de usar el saludo habitual que invita a la respuesta automatica no gracias, solo estoy mirando.
+  P1. En vez de preguntar Hi, may I help you?, prueba a preguntar Hi, have you been in here before?
+  P2. Si el cliente responde que si, puedes decirle: Great. We've created a special new program for people who have shopped here before. Let me take just a minute to tell you about it.
+  P3. Si el cliente responde que no, puedes decirle: Great, we've created a special new program for people who haven't shopped here before. Let me take just a minute to tell you about it.
+  P4. Ten creado de antemano ese programa especial nuevo del que hablas en cualquiera de las dos ramas: sin el programa listo, ninguna de las dos respuestas tiene de que hablar.

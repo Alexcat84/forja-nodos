@@ -1,0 +1,23 @@
+.v77ext\insertar_01_hacer_trabajo_futuro_imaginar_negocio.txt            codigo 0    482.4 s  fin 2026-09-26 09:45:09
+.v77ext\insertar_02_dictar_ritmo_crecimiento_preguntas_escritas.txt      codigo 0    509.2 s  fin 2026-09-26 09:54:45
+.v77ext\insertar_03_construir_empresa_plantilla_vision_diaria.txt        codigo 0    403.2 s  fin 2026-09-26 10:02:29
+.v77ext\insertar_04_trazar_modelo_negocio_cliente_primero.txt            codigo 0    389.4 s  fin 2026-09-26 10:10:02
+.v77ext\insertar_05_fingir_prototipo_cinco_mil_replicas.txt              codigo 0    419.2 s  fin 2026-09-26 10:18:04
+.v77ext\insertar_06_dar_valor_constante_cuatro_publicos.txt              codigo 0    366.0 s  fin 2026-09-26 10:25:13
+.v77ext\insertar_07_interrogar_negocio_cinco_preguntas.txt               codigo 0    540.7 s  fin 2026-09-26 10:35:22
+.v77ext\insertar_08_operar_modelo_gente_destreza_minima.txt              codigo 0    598.4 s  fin 2026-09-26 10:46:17
+.v77ext\insertar_09_unificar_color_forma_vestuario_modelo.txt            codigo 0    457.4 s  fin 2026-09-26 10:54:59
+.v77ext\insertar_10_cambiar_saludo_cliente_dos_ramas.txt                 codigo 0    469.3 s  fin 2026-09-26 11:03:50
+.v77ext\insertar_11_probar_traje_azul_seis_semanas.txt                   codigo 0    279.4 s  fin 2026-09-26 11:09:36
+.v77ext\insertar_12_cuantificar_impacto_innovacion_6_pasos.txt           codigo 0    471.6 s  fin 2026-09-26 11:18:27
+.v77ext\insertar_13_recorrer_siete_pasos_programa_desarrollo_negocio.txt codigo 0    366.2 s  fin 2026-09-26 11:25:37
+.v77ext\insertar_14_responder_8_preguntas_construir_primary_aim.txt      codigo 0    376.2 s  fin 2026-09-26 11:33:36
+.v77ext\insertar_15_responder_4_preguntas_estandares_objetivo_estrategico.txt codigo 0    319.8 s  fin 2026-09-26 11:40:01
+.v77ext\insertar_16_distinguir_tres_tipos_sistemas_negocio.txt           codigo 0    325.3 s  fin 2026-09-26 11:46:26
+.v77ext\insertar_17_aplicar_seis_pasos_sistema_venta.txt                 codigo 0    309.6 s  fin 2026-09-26 11:52:35
+.v77ext\insertar_18_medir_sistema_venta_trece_indicadores_benchmark.txt  codigo 0    297.2 s  fin 2026-09-26 11:58:30
+.v77ext\insertar_19_construir_estrategia_gente_cuatro_componentes.txt    codigo 0    306.1 s  fin 2026-09-26 12:04:41
+.v77ext\insertar_20_documentar_trabajo_manual_operaciones.txt            codigo 0    431.3 s  fin 2026-09-26 12:13:11
+.v77ext\insertar_21_aplicar_ocho_reglas_juego_personas.txt               codigo 0    782.4 s  fin 2026-09-26 12:27:18
+.v77ext\insertar_22_aplicar_cinco_pasos_proceso_contratacion.txt         codigo 0    482.3 s  fin 2026-09-26 12:36:19
+insertar: 22 | minimo 279.4 s | mediana 419.2 s | maximo 782.4 s | suma 9382.6 s (2.61 h)

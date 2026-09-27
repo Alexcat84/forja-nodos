@@ -1,0 +1,10 @@
+$ git log --diff-filter=R --find-renames=100% --name-status --format='' b9f484a..HEAD -- cuarentena | grep -c '^R100'
+13
+
+$ git log --format='%h %ad %s' --date=format:'%H:%M:%S' -1 -- src/cerrojo.py
+585a609 13:02:56 D.44 el censo no decrece, el cerrojo de insercion, y D.45 una cifra vale 
+$ git log --format='%h %ad %s' --date=format:'%H:%M:%S' -1 8e626b6
+8e626b6 13:20:14 VUELTA 30 APERTURA: el esqueleto del reporte abierto antes de la primera 
+
+$ git log --format='%h %ad %s' --date=format:'%H:%M:%S' -1 -- dataset/nodos.jsonl
+5834c50 14:18:54 VUELTA 30 TAREA 2: entra bloquear_tiempo_pensar_calendario y con el se es

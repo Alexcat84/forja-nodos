@@ -1,0 +1,14 @@
+AVISO: cero celdas tecleadas en este instrumento. El arranque del cuerpo NO
+es una constante mia: sale de fuentes/gerber_emyth/cap_21.md, linea 8, que es la siguiente al segundo
+--- de la cabecera yaml (cierres en L1 y L7). El cuerpo va de L8 a L149.
+
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| `R1` | L8 a L18 | **56** | el rotulo EPILOGUE, el titulo BRINGING THE DREAM BACK TO AMERICAN SMALL BUSINESS y el epigrafe de Carlos Castaneda (A Separate Reality, sobre el hombre de conocimiento que actua en vez de pensar en actuar) | **RESIDUO: rotulo y epigrafe** |
+| `R2` | L19 a L56 | **597** | el llamado a las armas es un llamado a aprender, no a pelear: el mundo cambia mas rapido de lo que las reglas pueden sostenerse, y el caos no esta afuera sino dentro de cada uno; si el mundo va a cambiar, primero tenemos que cambiar nosotros; cero pasos, cero inventario propio | **POSTURA: el caos esta adentro, no afuera** |
+| `R3` | L57 a L76 | **405** | Bridging the Gap: el libro entero es sobre tender el puente entre el mundo de afuera y el de adentro, y el propio negocio pequeno puede ser ese puente, como un dojo (citado de Joe Hyams, Zen in the Martial Arts) donde se practica y se aprende de uno mismo; cero pasos, cero inventario propio | **POSTURA: el negocio como dojo** |
+| `R4` | L77 a L112 | **506** | A World of Our Own: el Sueno del Small Business Americano es crear un mundo propio, y la mayoria fracasa porque cada quien trae su propio caos consigo; el Business Development Program y el Franchise Prototype son el medio para estudiar ese mundo, e Innovacion, Cuantificacion y Orquestacion (ya desarrolladas en capitulos previos, nombradas aqui sin desarrollo nuevo) son la practica que descubre limites y fuerzas; cero inventario propio nuevo en este tramo | **POSTURA: recapitulacion sin inventario nuevo** |
+| `R5` | L113 a L149 | **287** | An Idea for Action: el proverbio chino de oir, ver y hacer para entender; la respuesta es que el modelo si funciona si se aplica con compromiso total, y el cierre pide dejar de pensarlo y empezar a actuar para Traer de Vuelta el Sueno del Small Business Americano; cero pasos, cero inventario propio | **POSTURA: cierre, llamado a actuar sin procedimiento** |
+| **el cuerpo entero** | **L8 a L149** | **1851** | **suma de las piezas: 1851** | **residuo sin asignar: 0** |
+
+piezas: 5   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 1851   suma 1851   residuo 0

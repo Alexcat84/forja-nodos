@@ -1,0 +1,4 @@
+nodos en el grafo   : 229
+veredictos          : 239
+bandeja lote 4      : 116
+insertados del lote 4: 26

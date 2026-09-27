@@ -1,0 +1,44 @@
+    $ time python forja.py informe cuarentena/grove_high_output/reunir_informacion_gerencial_vias_variadas.json
+    ============================================================================
+    INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+    ============================================================================
+    candidatos revisados        : 1
+    poblacion del barrido       : 390   (346 del grafo mas 44 que esperan en bandejas)
+    umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+    
+    EL SALDO
+      ENTRARIAN sin leer nada          : 0
+      BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+    
+    LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+      vecinos levantados en total      : 4
+      por candidato bloqueado          : menor 4, mediana 4, mayor 4
+      que señal levanta cada vecindad  : similitud_texto 4
+    
+    ============================================================================
+    LA LISTA COMPLETA, candidato por candidato
+    ============================================================================
+    
+    [BLOQUEARIA] reunir_informacion_gerencial_vias_variadas   (reunir_informacion_gerencial_vias_variadas.json)
+        vecino escalonar_fuentes_informacion_gerencial  [levantada por: similitud_texto]
+          similitud_texto 0.371 | familia_id 0.286 | paso_contra_nodo 0.463
+          paso 8 del candidato contra paso 1 de escalonar_fuentes_informacion_gerencial
+        vecino empujar_persona_reunion_direccion_preferida  [levantada por: similitud_texto]
+          similitud_texto 0.366 | familia_id 0.000 | paso_contra_nodo 0.433
+          paso 4 del candidato contra paso 5 de empujar_persona_reunion_direccion_preferida
+        vecino programar_visita_area_observar_despachar  [levantada por: similitud_texto]
+          similitud_texto 0.380 | familia_id 0.000 | paso_contra_nodo 0.398
+          paso 4 del candidato contra paso 3 de programar_visita_area_observar_despachar
+        vecino elegir_momento_actividad_palanca_maxima  [levantada por: similitud_texto]
+          similitud_texto 0.352 | familia_id 0.000 | paso_contra_nodo 0.393
+          paso 7 del candidato contra paso 3 de elegir_momento_actividad_palanca_maxima
+    
+    NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+    entre hace falta python forja.py insertar, uno por vez, con su
+    veredicto escrito por vecino.
+    
+    real	9m19.396s
+    user	0m0.062s
+    sys	0m0.092s

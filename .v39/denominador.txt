@@ -1,0 +1,20 @@
+cap_13 ENTERO, contado del dato de hoy
+  candidato                                                donde        pasos en mi tramo
+  --------------------------------------------------------------------------------------------
+  abrazar_incomodidad_silencio_contar_seis                 bandeja         12 .
+  dar_elogio_disciplina_igual_critica                      bandeja         20 .
+  escuchar_entender_critica_dominar_defensa                bandeja         13 .
+  integrar_peticion_critica_rutina_existente               bandeja         13 .
+  medir_critica_respuesta_oyente_brujula                   bandeja         33 .
+  premiar_franqueza_hacer_escucha_tangible                 bandeja         20 .
+  contar_cuatro_historias_propias_ver_hueco_intencion      insertados      17 .
+  elegir_pregunta_recurrente_pedir_critica                 insertados      24 SI
+  mejorar_consciencia_propia_relacional_dos_practicas      insertados      13 .
+  pedir_critica_primero_crear_seguridad_psicologica        insertados      17 SI
+  practicar_triangulo_critica_tres_papeles                 insertados      15 .
+  resolver_dudas_frecuentes_pedir_critica                  insertados      15 SI
+  --------------------------------------------------------------------------------------------
+  candidatos de cap_13          : 12   (6 en bandeja, 6 insertados)
+  pasos de cap_13, todos        : 212
+  candidatos de MI TRAMO        : 3
+  pasos de MI TRAMO             : 56

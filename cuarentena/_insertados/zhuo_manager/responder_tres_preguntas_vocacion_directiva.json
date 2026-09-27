@@ -1,0 +1,41 @@
+{
+  "id": "responder_tres_preguntas_vocacion_directiva",
+  "titulo": "Responder las tres preguntas que dicen si la gestion es tu camino",
+  "denominaciones": {
+    "nombre_largo": "Las tres preguntas que hay que hacerse para saber si uno puede ser un gran directivo",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "HOW DO YOU KNOW IF YOU'LL BE A GREAT MANAGER?"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "ask yourself these three questions"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando ya sabes que la gestion es el arte de conseguir que un grupo de personas trabaje junto para lograr mejores resultados, y te preguntas si ese es el camino adecuado para ti. Vale igual si eres tu quien se lo pregunta y si eres el directivo al que alguien le dice que le interesa la gestion.",
+  "entregable_esperado": "Las tres preguntas contestadas, y con ellas el contraste hecho entre lo que a esa persona le atrae de la gestion y lo que seria de verdad su trabajo de cada dia.",
+  "escala_minima": "Una persona y una decision. El libro avisa de que la primera de las tres pesa mas que ninguna otra de la lista y de que un si rotundo ahi compensa casi cualquier cosa, asi que no es una puntuacion de tres casillas iguales.",
+  "pasos_accionables": [
+    "Parte de la salvedad que el libro pone a su propia tesis: los grandes directivos se hacen, no nacen, pero tienes que disfrutar del dia a dia de la gestion y querer hacerlo.",
+    "Hazte la primera pregunta: me motiva mas lograr un resultado concreto o desempenar un papel concreto. Es la mas importante de las tres, y un si rotundo aqui compensa casi cualquier otra cosa.",
+    "Hazte la segunda pregunta: me gusta hablar con la gente.",
+    "Hazte la tercera pregunta: puedo dar estabilidad en una situacion emocionalmente dificil.",
+    "Si eres el directivo y es otro quien te dice que le interesa la gestion, entiende que le resulta atractivo de ella y si eso encaja con lo que seria de verdad su trabajo de cada dia.",
+    "Y cuenta con que algunas razones para querer gestionar encajan bien con la realidad de la gestion y otras no: haber tenido tu mismo un buen jefe y querer hacer lo que hace, disfrutar acompaniando a otros, querer progresar en tu carrera, ganar mas dinero o decidir mas cosas."
+  ],
+  "resumen_teorico": "Es la cabeza de una serie que el libro numera con sus propias palabras, hazte estas tres preguntas, y desarrolla despues una a una con su propio titulo. La doctrina descansa en un caso que la autora cuenta como suyo y como error suyo: una disenadora muy buena de su equipo, la persona con mas experiencia de un area importante y a quien todos iban a pedir consejo, a la que ascendio a directiva por eso mismo y que dejo la empresa un anio despues, diciendole antes de irse que cada maniana en la cama temia la perspectiva de ir a trabajar y gestionar personas. El caso es el ejemplo de la doctrina y no la doctrina, y la leccion que el libro saca de el es la que abre esta cabeza: hay que disfrutar del dia a dia y querer hacerlo. El libro tambien pone lo que no basta, que son las razones que suenan bien: haber tenido un buen jefe al que uno quiere parecerse, disfrutar acompaniando a otros, querer progresar en la carrera, ganar mas dinero o decidir mas cosas. Lo que el libro NO dice, y por eso no esta escrito aqui, es como se puntuan las tres preguntas juntas ni que se hace cuando dos salen que si y una que no."
+}

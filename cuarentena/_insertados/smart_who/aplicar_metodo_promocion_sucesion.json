@@ -1,0 +1,38 @@
+{
+  "condiciones_activacion": "Cuando hay que decidir sobre desarrollo, promociones o sucesion de gente que ya esta dentro, y no sobre a quien contratar de fuera. El libro dice que es ahi donde los directivos recaen en los metodos de vudu.",
+  "denominaciones": {
+    "nombre_largo": "Aplicar el metodo mas alla de la contratacion: desarrollo, promociones y sucesion",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "BEYOND HIRING"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "contratacion",
+  "entregable_esperado": "Una tarjeta de puntuacion por puesto escrita a dos o tres anos vista, una radiografia del talento alto construida con entrevistas cronologicas y con terceros, y sobre ella las decisiones de desarrollo, de colocacion y de sucesion tomadas con datos.",
+  "escala_minima": "Un solo puesto y una sola persona. La escala grande es la del caso que el libro cuenta, un banco global, pero la pieza minima es una tarjeta de un puesto y una entrevista cronologica a quien lo ocupa.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "smart_who",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "id": "aplicar_metodo_promocion_sucesion",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Cuenta con el error que el libro nombra: basar la decision en la antiguedad o en lo bien que alguien lo esta haciendo en su puesto actual, en vez de evaluar lo que va a necesitar para tener exito en un puesto futuro.",
+    "Construye una tarjeta de puntuacion para cada puesto revisando la estrategia de esa unidad de negocio y lo que implica para el puesto, hoy y sobre todo a dos o tres anos vista. El libro subraya el plazo largo, porque la tarjeta cambia cuanto mas alto sube alguien en la organizacion.",
+    "Conduce una entrevista cronologica de trayectoria con cada persona, para conocer sus patrones de exito y como percibe su propia unidad.",
+    "Complementa esos datos entrevistando de doce a veinte colegas actuales y antiguos de cada persona, para conseguir la perspectiva de terceros, igual que harias en una entrevista de referencias.",
+    "Presenta esa radiografia del talento alto a quien tiene que decidir.",
+    "Con los datos delante, acelera el desarrollo de los individuos clave, coloca a otros en puestos de sucesion y saca o recoloca a los demas.",
+    "Enfoca los recursos de desarrollo en las acciones correctas, que es lo que este uso del metodo permite hacer, y promociona a quienes vayan a tener exito en su puesto nuevo."
+  ],
+  "resumen_teorico": "El libro abre esta seccion con un diagnostico propio: la mayoria de los directivos recaen en metodos de vudu cuando piensan en desarrollo, promociones y sucesion, y basan sus acciones en la antiguedad o en el desempeno en el puesto actual en vez de evaluar lo que hara falta para el puesto futuro; el resultado, dice, es que las empresas desvian miles de millones a formacion inutil y toman decisiones de promocion y de sucesion con la misma tasa de fallo que sufren al contratar. La linea que sostiene el nodo entero la aporta el general retirado Wesley Clark, que fue comandante supremo aliado de la OTAN, y esta citada asi: lo que te ascendio a un rango no necesariamente te va a ascender al siguiente. El libro extrae de ahi la consecuencia operativa, que la tarjeta de puntuacion cambia cuanto mas alto sube alguien y que por eso hay que cambiar el modo de pensar en sus capacidades. Las etapas del procedimiento las pone el caso de Ted Bililies, director gerente de ghSMART, con el presidente y el primer ejecutivo de un banco global en transicion, y el caso entra nombrado aqui y no dentro de los pasos: la tarjeta por puesto a dos o tres anos vista, la entrevista cronologica con cada lider de negocio, las de doce a veinte entrevistas a colegas actuales y antiguos, y la presentacion de la radiografia a quien decide. El desenlace, con el sucesor elegido y aclamado publicamente como la persona correcta y el director financiero felicitando por la transicion mas suave en cincuenta anos, es del caso y no del procedimiento.",
+  "titulo": "Aplicar el metodo al desarrollo, las promociones y la sucesion"
+}

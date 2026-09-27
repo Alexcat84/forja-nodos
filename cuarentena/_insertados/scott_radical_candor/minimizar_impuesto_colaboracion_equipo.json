@@ -1,0 +1,35 @@
+{
+  "id": "minimizar_impuesto_colaboracion_equipo",
+  "titulo": "Minimizar el impuesto de colaboracion de tu equipo cargando tu con el, con las tres cosas que equilibran la balanza",
+  "denominaciones": {
+    "nombre_largo": "El impuesto de colaboracion: echartelo encima para que tu equipo tenga mas tiempo de ejecutar, con las tres cosas que el libro dice haber aprendido sobre ese equilibrio",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "minimize the collaboration tax"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando tus responsabilidades de jefe te estan comiendo el tiempo y a la vez tienes trabajo propio que hacer en tu especialidad, y tu equipo necesita tiempo para ejecutar.",
+  "entregable_esperado": "El impuesto de colaboracion cargado sobre ti y no sobre tu equipo, y las tres cosas del equilibrio puestas en practica: su tiempo no malgastado, tus manos todavia en el trabajo, y tiempo reservado para ejecutar.",
+  "pasos_accionables": [
+    "Echate encima buena parte del impuesto de colaboracion, para que tu equipo pueda dedicar mas tiempo a ejecutar. El texto dice que eso es parte de tu puesto.",
+    "Cuenta con que las responsabilidades que tienes como jefe se llevan una cantidad tremenda de tiempo.",
+    "Cuenta tambien con que una de las cosas mas dificiles de ser jefe es equilibrar esas responsabilidades con el trabajo que tienes que hacer tu personalmente en tu especialidad.",
+    "Aplica las tres cosas que el texto dice haber aprendido sobre como acertar con ese equilibrio: no malgastes el tiempo de tu equipo, manten la tierra bajo tus uñas, y reserva tiempo para ejecutar."
+  ],
+  "resumen_teorico": "Sale de fuentes/scott_radical_candor/cap_07.md, lineas 367 a 373, bajo los rotulos EXECUTE y Minimize the collaboration tax, y es la cabeza del paso EXECUTE de la rueda de hacer cosas. ES UNA CABEZA DE SERIE D.37 Y ESO TIENE CONSECUENCIA: la linea 373 dice CUANTAS partes tiene Y LAS NOMBRA, con estas palabras, here are the three things I have learned about getting this balance right, seguidas de los tres rotulos. D.37 manda que las aristas de esta cabeza a sus tres partes se declaren en la misma vuelta en que se insertan las partes, sin esperar a que ninguna señal las levante, y con el paso de la madre citado. El paso que las enumera es el P4. Es una cabeza corta a proposito: su contenido propio son los dos costes del equilibrio y el reparto; el procedimiento de cada parte vive en su nodo. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 4 pasos, 4 TRANSCRIPCION, 0 PUENTE. P1, P2 y P3 de la linea 371; P4 de la linea 373. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: que proporcion del impuesto se echa uno encima, y como se sabe que te has echado demasiado.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-12"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "atribuciones": []
+}

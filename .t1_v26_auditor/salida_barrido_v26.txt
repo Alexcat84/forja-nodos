@@ -1,0 +1,32 @@
+POBLACION DEL BARRIDO: 348 = 222 del grafo + 126 de las bandejas
+  (bandejas: cuarentena/*/*.json, fuera _insertados y _derivadas, y fuera
+   los 163 cuyas fuentes NO estan todas en FUENTES_CANONICAS.json, que es el
+   mismo criterio que src/informe.py aplica desde el 12 sep 2026)
+
+==============================================================================================
+CANDIDATO ceder_control_reforzar_competencia_claridad   [bandeja]
+  maximo cabecera pasos     vecino
+  0.076  0.029    0.076     bandeja   trazar_plan_dieciocho_meses_aprendizaje
+  0.075  0.018    0.075     bandeja   minimizar_impuesto_colaboracion_equipo
+  0.071  0.000    0.071     grafo     responder_tres_preguntas_vocacion_directiva
+  0.071  0.019    0.071     grafo     fijar_resultado_excelente_reunion
+  0.067  0.020    0.067     grafo     listar_debilidades_disparadores_propios
+  0.066  0.041    0.066     grafo     juzgar_cultura_renuncias_equipo
+==============================================================================================
+CANDIDATO cambiar_forma_trabajar_conservar_plantilla   [bandeja]
+  maximo cabecera pasos     vecino
+  0.136  0.136    0.126     bandeja   encargar_meta_especifica_dejar_libre_metodo
+  0.100  0.100    0.073     grafo     ayudar_personas_jugar_fortalezas
+  0.098  0.098    0.057     grafo     dar_opinion_critica_directa_desapasionada
+  0.095  0.095    0.052     grafo     evaluar_directivo_resultados_fortaleza
+  0.095  0.095    0.049     grafo     revisar_incentivos_trampas_equipo
+  0.095  0.054    0.095     grafo     vivir_primero_valor_declarado
+==============================================================================================
+CANDIDATO encargar_meta_especifica_dejar_libre_metodo   [bandeja]
+  maximo cabecera pasos     vecino
+  0.136  0.136    0.126     bandeja   cambiar_forma_trabajar_conservar_plantilla
+  0.109  0.109    0.052     bandeja   elogiar_publico_criticar_privado_sus_tres_matices
+  0.098  0.098    0.058     grafo     avisar_pronto_incumplimiento_expectativas
+  0.094  0.094    0.026     grafo     listar_bueno_mejorable_equipo
+  0.091  0.091    0.047     grafo     reservar_valor_unico_prioridades_arriba
+  0.085  0.016    0.085     grafo     responder_tres_preguntas_vocacion_directiva

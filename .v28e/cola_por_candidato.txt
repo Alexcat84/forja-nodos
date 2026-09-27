@@ -1,0 +1,15 @@
+| candidato de `cap_07` que QUEDA en bandeja | vecinos por leer | del grafo | de bandeja |
+|---|---:|---:|---:|
+| `compartir_logica_mostrar_razonamiento` | **10** | 3 | 7 |
+| `minimizar_impuesto_colaboracion_equipo` | **10** | 4 | 6 |
+| `proteger_tiempo_equipo_jefe` | **10** | 2 | 8 |
+| `parar_debate_emocion_agotamiento` | **9** | 3 | 6 |
+| `mantener_manos_trabajo_real_equipo` | **8** | 2 | 6 |
+| `pedir_hechos_decision_evitar_recomendaciones` | **7** | 3 | 4 |
+| `reservar_calendario_tiempo_ejecutar` | **7** | 2 | 5 |
+| `cuidarse_agotamiento_centro_rueda` | **5** | 2 | 3 |
+| `fijar_fecha_cierre_debate_equipo` | **4** | 3 | 1 |
+| `establecer_credibilidad_pericia_humildad` | **3** | 0 | 3 |
+| `persuadir_emocion_oyente_no_propia` | **3** | 2 | 1 |
+| `repartir_decision_cercanos_hechos` | **1** | 1 | 0 |
+| **total: 12 candidatos** | **77** | **27** | **50** |

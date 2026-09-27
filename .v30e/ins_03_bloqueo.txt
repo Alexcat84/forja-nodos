@@ -1,0 +1,22 @@
+ADUANA DE INSERCION, candidato 'repartir_decision_cercanos_hechos'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (245 del grafo mas 103 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino centrar_debate_ideas_fuera_egos  [Centrar el debate en las ideas y dejar los egos fuera, cambiando los papeles cuando alguien empieza a defender el suyo]
+    levantada por: similitud_texto
+    similitud_texto    0.352 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.531 (umbral 0.60)
+    paso 6 del candidato contra paso 6 de centrar_debate_ideas_fuera_egos
+
+BLOQUEADO: faltan veredictos para centrar_debate_ideas_fuera_egos
+  La aduana no juzga: obliga a juzgar (manual seccion 3).
+  Vuelve a correr el comando con un veredicto por vecino:
+    --veredicto "centrar_debate_ideas_fuera_egos|CONTINUA|madre=centrar_debate_ideas_fuera_egos|que añade el hijo a la madre"
+    --veredicto "centrar_debate_ideas_fuera_egos|REPITE|por que no añade procedimiento"
+    --veredicto "centrar_debate_ideas_fuera_egos|SANO|por que no son el mismo trabajo"
+    --veredicto "centrar_debate_ideas_fuera_egos|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"

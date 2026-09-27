@@ -1,0 +1,30 @@
+{
+  "id": "listar_bueno_mejorable_equipo",
+  "titulo": "Listar lo bueno y lo mejorable del equipo que recibes",
+  "denominaciones": {
+    "nombre_largo": "Las dos listas del arranque: lo que es estupendo del estado actual y lo que podria estar mejor, y el plan de que cambiar y que no que sale de ellas",
+    "otros_idiomas": [
+      {"idioma": "ingles", "termino": "A useful exercise to go through at the beginning of your transition"}
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [{"clave": "zhuo_manager", "fecha": "2026-09-10"}],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Al principio de tu transicion a directivo, cuando ya tienes una vista de primera fila de como opera el equipo y tienes que decidir que tocar y que dejar como esta.",
+  "entregable_esperado": "Dos listas enfrentadas, la de lo estupendo del estado actual y la de lo que podria estar mejor, y con ellas el principio de un plan de que deberias y que no deberias cambiar.",
+  "escala_minima": "Un rato sentado y un equipo que ya conoces. El libro lo llama un ejercicio util y no pide mas material que las dos listas.",
+  "pasos_accionables": [
+    "Sientate y haz una lista de todas las cosas que son estupendas del estado actual de las cosas.",
+    "Para armarla, pregunta si todos se llevan bien, si vuestros procesos son eficientes, y si vuestro equipo tiene fama de hacer un trabajo riguroso y de alta calidad.",
+    "Al lado de esa, crea una lista de todas las cosas que podrian estar mejor.",
+    "Para armar esa segunda, pregunta si el equipo es esquivo con los plazos, si parece que las prioridades cambian todo el rato, y si hay una reunion semanal larguisima a la que nadie quiere ir.",
+    "Usa las dos listas como el principio de un plan de que deberias cambiar y que no.",
+    "No arregles lo que no esta roto, pero tampoco te sientas atrapado en una maquina del tiempo de esto siempre se ha hecho asi: para eso te dieron el puesto.",
+    "Dedicale el tiempo a reflexionar sobre las mayores oportunidades de mejora, que es lo que te ayuda a entender como actuar de multiplicador para tu equipo."
+  ],
+  "resumen_teorico": "Es el unico ejercicio con nombre propio del capitulo, y el libro lo llama asi, un ejercicio util para pasar al principio de tu transicion. Cuelga de la segunda ventaja del aprendiz, que es tener ya un sentido de lo que funciona y lo que no por haber estado en primera fila. Su forma es de dos columnas enfrentadas y el libro da para cada una tres preguntas de arranque, escritas una a una, que no son criterios sino ejemplos de lo que se busca. La regla de decision que sale de las dos listas la escribe el libro en una sola frase con sus dos mitades, no arreglar lo que no esta roto y no quedarse atrapado en como se hizo siempre, y anade el remate que la justifica, que para eso te dieron el puesto. La ultima linea conecta el ejercicio con la doctrina del capitulo anterior, el efecto multiplicador. Lo que el libro NO dice, y por eso no esta escrito aqui, es cuantos elementos debe tener cada lista, con quien se contrasta ni en que orden se atacan las oportunidades."
+}

@@ -1,0 +1,49 @@
+{
+  "id": "escuchar_callado_equipo_tranquilizar_incomodo",
+  "titulo": "Escuchar en silencio para oir lo que no quieres oir, y tranquilizar a quien tu silencio incomoda",
+  "denominaciones": {
+    "nombre_largo": "La escucha callada: callarse para dejar sitio a que hablen, con sus dos costes y lo que hay que hacer para compensarlos",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "quiet listening"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando tu estilo natural de escuchar es callarte, y quieres que la gente te diga lo que piensa de verdad y no lo que cree que quieres oir.",
+  "entregable_esperado": "Un tramo de silencio en cada reunion a solas en el que la otra persona dice lo que de verdad piensa, y quien se incomoda con tu silencio tranquilizado con opiniones tuyas dichas en voz alta.",
+  "pasos_accionables": [
+    "Reserva al menos diez minutos de cada reunion a solas para escuchar en silencio, sin reaccionar de ninguna manera.",
+    "Manten la expresion de tu cara y tu lenguaje corporal completamente neutros durante ese tramo.",
+    "Cuenta con lo que el alumno que lo hizo dijo que ganaba: en esos diez minutos oia las cosas que no queria oir, porque cuando daba cualquier reaccion la gente le contaba lo que creia que el queria oir.",
+    "Reserva ese tramo y no la hora entera. El alumno lo hacia diez minutos de los sesenta, y el texto dice que si hubiera estado inexpresivo todo el rato habria sido dificil que nadie confiara en el ni se relacionara con el.",
+    "Cuenta con el primer coste que el texto le pone: cuando eres el jefe y la gente no sabe lo que piensas, pierden mucho tiempo intentando adivinarlo.",
+    "Cuenta con el segundo: alguno llegara a usar tu nombre en vano, diciendo lo que el jefe quiere hacer es X y describiendo a continuacion lo que quiere hacer el, y como nadie puede estar seguro de lo que tu piensas, a veces se sale con la suya.",
+    "Cuenta con el tercero: a mucha gente el silencio la incomoda, y puede parecerle una partida de poker de riesgo alto en vez de una conversacion radicalmente franca, o incluso una trampa de alguien que espera a que digas algo equivocado para saltar.",
+    "Toma medidas para tranquilizar a los que tu estilo incomoda.",
+    "No seas inescrutable sin motivo.",
+    "Di lo que piensas de vez en cuando, porque es lo que hace que los demas digan lo que piensan.",
+    "Y si quieres que te desafien, prepara tu para desafiar."
+  ],
+  "resumen_teorico": "Sale de fuentes/scott_radical_candor/cap_07.md, lineas 91 a 111, bajo el rotulo Quiet listening, dentro del paso LISTEN de la rueda de hacer cosas. Es la primera de las dos formas de escuchar que el libro admite, y el libro insiste en que no hay que elegir entre ellas por doctrina sino por estilo propio. El nodo tiene dos mitades y las dos son del texto: la tecnica (el tramo de silencio con cara neutra, y su duracion acotada) y la compensacion de sus tres costes, que el texto inventaria uno a uno. El caso de Tim Cook y el de la entrevista con el terremoto van fuera de los pasos porque son la ilustracion de la tecnica y no la tecnica, y el caso que si entra es el del alumno de la clase Managing at Apple, porque de el salen los diez minutos y la cara neutra. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 11 pasos, 11 TRANSCRIPCION, 0 PUENTE. P1, P2, P3 y P4 de la linea 101 mas la 105 mas la 109 en su ultima frase; P5, P6 y P7 de la linea 107, que es donde el texto inventaria los tres costes; P8, P9, P10 y P11 de la linea 109. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: cada cuanto se hace, en que momento de la reunion cae el tramo de silencio, si se avisa antes de que va a haber silencio, y que se hace si la otra persona tambien se calla.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-12"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "atribuciones": [
+    {
+      "cifra": "el papel mas importante de un jefe es dar voz a los callados",
+      "autor": "Jony Ive, director de diseño de Apple, citado por Kim Scott",
+      "fuente": "scott_radical_candor",
+      "fecha_corte": "no consta fecha en el texto: el libro lo situa en una clase de Apple University sin datarla, asi que la atribucion queda sin fecha de corte y se dice"
+    }
+  ]
+}

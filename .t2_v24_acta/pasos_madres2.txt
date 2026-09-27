@@ -1,0 +1,61 @@
+====================================================================================================
+mantener_proceso_evaluacion_ligero_vigilar_crecimiento [ cuarentena\scott_radical_candor\mantener_proceso_evaluacion_ligero_vigilar_crecimiento.json ] fuentes: ['scott_radical_candor']
+  CONDICION: Cuando tienes que decidir cuanto trabajo le cuesta a cada jefe y a cada empleado el proceso de evaluacion, y cada vez que sospechas que el proceso ha crecido solo.
+  ENTREGABLE: Un proceso de evaluacion ligero dos veces al anio, con el tiempo que consume medido y recortado activamente, y un impreso que el jefe rellena por empleado en menos de treinta minutos.
+    1. Ten delante lo que un proceso pesado es, que es como el texto lo define: exige a todos los que escriben evaluaciones de empleados y critica de arriba, de abajo y de los lados dedicar cantidades tremen
+    2. Cuenta con el aviso al que sabe que el texto pone: aunque pongas en marcha un buen proceso, los procesos desarrollan vida propia si no los gestionas activamente.
+    3. Vigila activamente cuanto tarda el proceso y recortalo para asegurarte de que no crece mas alla de lo que pretendes, porque el texto dice que este tipo de deriva impredecible puede pasar y pasa en tod
+    4. Recomienda un proceso ligero que ocurra dos veces al anio, mientras mantengas el control del proceso.
+    5. Recuerda que el proceso tardara menos y sera mas radicalmente franco si toda la critica de trescientos sesenta grados es transparente: no tener que sintetizar ni anonimizar esa critica recorta el tiem
+    6. Monta la herramienta de evaluacion ligera igual que la herramienta de trescientos sesenta grados: que pida a los jefes calificar a sus empleados en cada categoria, y que les pida meter texto cuando el
+    7. Haz que la nota global se calcule automaticamente.
+    8. Haz que el reparto de notas del jefe se compare con el reparto esperado, y que el jefe tenga que explicarse si su reparto cae fuera de lo esperado.
+    9. Comprueba el resultado contra la vara que el texto pone: el jefe tiene que poder rellenar el impreso de evaluacion de cada empleado en menos de treinta minutos.
+   10. Cuenta con lo que el texto dice que hace desaparecer buena parte de la necesidad de un proceso pesado: que la organizacion subraye la importancia de la critica regular e improvisada.
+   11. Dale al jefe un resumen de la critica de sus pares para que pueda mirarlo antes de crear la valoracion final, con cuanta gente dio cada nota y la posibilidad de pinchar en una nota para ver el detalle
+   12. Deja que el jefe rellene entonces su valoracion del desempenio de la persona, y que se le pida explicarse si su valoracion varia dramaticamente de la del equipo.
+   13. Como ultimo paso del proceso, manda un mensaje a todos los jefes que dirigen a mas de treinta personas si las valoraciones de pares de su equipo, o su propia valoracion de su equipo, quedan fuera de l
+====================================================================================================
+montar_evaluacion_360_grados_ligera_pares [ cuarentena\scott_radical_candor\montar_evaluacion_360_grados_ligera_pares.json ] fuentes: ['scott_radical_candor']
+  CONDICION: Cuando tienes que decidir si la evaluacion recoge la aportacion de gente de arriba, de abajo y de los lados, o se apoya solo en el juicio del jefe.
+  ENTREGABLE: Un proceso de trescientos sesenta grados montado, con la evaluacion entre pares reducida a calificar los cuatro criterios y a escribir solo en los dos extremos, y con el reparto esperado y el real a la vista de quien califica.
+    1. Monta un proceso de evaluacion de trescientos sesenta grados en el que la gente de arriba, de abajo y de los lados de la organizacion aporte, que es lo que el texto recomienda con fuerza.
+    2. Cuenta con la razon principal: exigir evaluaciones de trescientos sesenta grados es una de las cosas mas efectivas que una organizacion puede hacer para asegurarse de que el punto de vista subjetivo d
+    3. Cuenta con lo que el texto dice del exceso de poder unilateral: cuando los jefes tienen demasiado poder de decision unilateral es malo para los resultados, y es un desastre para la capacidad de un jef
+    4. Cuenta tambien con la senial que manda: cuando el jefe de tu jefe te pide que evalues a tu jefe, manda un mensaje claro de decir la verdad al poder, y cuando esas evaluaciones son transparentes refuer
+    5. Ten delante el problema concreto que el texto pone despues: las evaluaciones de trescientos sesenta grados consumen en general mas tiempo del que necesitan.
+    6. Aligera la evaluacion entre pares con lo que el texto recomienda, y es lo primero: pide simplemente a los empleados que califiquen a sus pares en cada uno de los cuatro criterios.
+    7. No les pidas que escriban nada para las dos notas del medio.
+    8. Pideles que escriban no mas de setenta y cinco palabras para las dos notas de los extremos.
+    9. Ensenia el reparto esperado a quien califica, y calculale su reparto real, para que pueda autorregularse cuando vea que es un calificador facil o duro.
+   10. Cuenta con lo que consigue empujar a todo el mundo a calificar sobre una curva: ayuda a eliminar el problema de que las notas digan mas del que califica que del calificado, y empuja a la gente a ident
+====================================================================================================
+hacer_critica_pares_transparente_ensenar_escribirla [ cuarentena\scott_radical_candor\hacer_critica_pares_transparente_ensenar_escribirla.json ] fuentes: ['scott_radical_candor']
+  CONDICION: Cuando ya has decidido hacer critica de trescientos sesenta grados y tienes que decidir si lo que la gente escribe de sus companieros lo ven esos companieros o solo sus jefes.
+  ENTREGABLE: La critica entre pares hecha transparente, extendida a todos los empleados de la empresa, con una leccion de escritura dada y, si quieres, un campo aparte para critica confidencial.
+    1. Ten delante la decision, que el texto plantea asi: si haces critica de trescientos sesenta grados, tienes que decidir si sera transparente, es decir que lo que la gente escribe de sus companeros sea v
+    2. Hazla transparente, que es lo que el texto recomienda con fuerza, por lo que dice de la confidencial: no anima a desafiar directamente, y a menudo hace dano tambien en la dimension de importarle a uno
+    3. Cuenta igualmente con los dos beneficios que el texto le reconoce a la confidencial: que en teoria permite a los empleados escribir en taquigrafia, porque si sabes que alguien va a ver lo que escribes
+    4. Y con las dos pegas grandes: que no obliga a los pares a tener conversaciones directas entre ellos, con lo que se pierde la ocasion de empujar una cultura de critica directa y abierta y en el peor cas
+    5. Cuenta con lo que la transparencia consigue, que es como el texto cierra el argumento: empuja una cultura de critica directa, es mas eficiente para los jefes, y da a los empleados una critica de sus p
+    6. Mete en el proceso de trescientos sesenta grados a todos los empleados de la empresa, que es lo que el texto recomienda con fuerza: si lo haces solo para los altos cargos les estas dando otro privileg
+    7. Empieza cuanto antes a ensenar a la gente a escribir buena critica, porque cuanto antes empieces mejor y mas util sera.
+    8. Da una leccion de buena escritura del tipo ensenia y no cuentes, que es la que el texto recomienda: cuanto mas abstracta es la critica mas desconcierta, y cuanto mas especifica es, hasta el punto de p
+    9. Cuenta con que la mejor manera de que la gente aprenda es empezar a hacerlo, escribiendola y recibiendola.
+   10. Cuenta con el efecto que la transparencia tiene sobre quien escribe: cuando la gente sabe que la persona de la que escribe va a saber que fue ella quien lo escribio, pone naturalmente mas cuidado en d
+   11. Opta por la critica de pares transparente, y si quieres deja ademas un campo en el que la gente pueda dar critica confidencial, a lo que el texto dice no oponerse.
+====================================================================================================
+evaluar_desempenio_dos_veces_anio [ cuarentena\scott_radical_candor\evaluar_desempenio_dos_veces_anio.json ] fuentes: ['scott_radical_candor']
+  CONDICION: Cuando tienes que decidir cada cuanto se evalua el desempenio en tu empresa.
+  ENTREGABLE: Dos evaluaciones al anio en el calendario, una ligera y oral entre jefe y empleado y otra escrita con un componente ligero de trescientos sesenta grados, y las conversaciones de desarrollo semanales separadas de ellas.
+    1. Ten delante lo que el texto dice que hacen las empresas: unas evaluan cada trimestre, otras una o dos veces al anio, y muchas no las hacen nunca.
+    2. Descarta no hacerlas nunca, que el texto llama mala idea con su propio caso detras.
+    3. Descarta tambien hacerlas cada trimestre, por las dos razones que el texto da: grava con fuerza a los jefes, y no le da al empleado mucho tiempo para ensenar mejora desde el ciclo de nota anterior.
+    4. Hazlas dos veces al anio, que es la recomendacion que el texto escribe.
+    5. Haz una de las dos ligera, oral y solo entre el jefe y el empleado.
+    6. Haz la otra escrita, e incluye en ella un componente ligero de trescientos sesenta grados.
+    7. Recuerda a que se refiere esa recomendacion de dos veces al anio, que es lo que el texto subraya justo despues: solo a la nota, que es gestion del desempenio y no desarrollo.
+    8. Manten las conversaciones de desarrollo improvisadas ocurriendo cada semana, en privado, de dos minutos, y sin nota ni proceso.
+    9. Cuenta con lo que el texto dice que hay detras del impulso de poner notas mas a menudo: la confusion entre gestion del desempenio y desarrollo. Si las notas ocurren demasiado a menudo se confunden con
+   10. Haz que el sistema recuerde a todo el mundo que tiene que estar dando y pidiendo conversaciones de critica de dos minutos cada dia o cada semana.
+   11. Y que recuerde tambien que si hay alguna sorpresa en los temas de la nota, es que no ha habido bastante desarrollo.

@@ -1,0 +1,1 @@
+lineas de veredicto de la 70 por vecino, desde la bitacora: {'vecino en la tanda': 98, 'vecino fuera de la tanda': 20} | suma: 118

@@ -1,0 +1,61 @@
+==============================================================================
+ajustar_franqueza_oido_oyente   [bandeja]
+==============================================================================
+TITULO    : Ajustar la franqueza radical al oido del que escucha y no a la boca del que habla, buscando la forma local de cada dimension
+ACTIVACION: 
+ENTREGABLE: 
+  P1  Mide las dos dimensiones en el oido del que escucha y no en la boca del que habla, que es donde el texto dice que se miden.
+  P2  No lo trates como un tipo de personalidad, ni como un talento, ni como un juicio sobre una cultura: el texto descarta los tres por su nombre.
+  P3  Comprueba que la otra persona entiende que tu esfuerzo por cuidar personalmente y por desafiar directamente va de buena fe, porque el texto dice que solo asi funciona.
+  P4  Cuenta con que lo que a una persona o a un equipo le parecio radicalmente franco a otro le puede parecer demasiado odioso, o demasiado sentimental.
+  P5  Aumenta el ajuste segun se ensancha el salto: el texto lo ordena de menos a mas, de una empresa a otra hace falta mas ajuste, y de un pais a otro mas todavia.
+  P6  Busca la forma local de cuidar personalmente, que es la primera dimension. En el equipo de Tokio la forma preferida de mostrar que les importaba era ser educados.
+  P7  Busca la forma local de desafiar directamente, que es la segunda. En el equipo de Tokio la forma con la que estaban mas comodos desafiando la direccion de producto de Google era ser persistentes.
+  P8  Cambia el nombre si el nombre estorba: a ese equipo la autora no le pidio franqueza radical, que dice que habria sonado demasiado agresivo, sino ser educadamente persistentes.
+
+==============================================================================
+delimitar_franqueza_radical_cinco_noes   [GRAFO]
+==============================================================================
+TITULO    : Delimitar la franqueza radical por lo que no es, con los cinco noes del texto y la regla de las tres cosas sin decir
+ACTIVACION: 
+ENTREGABLE: 
+  P1  Comprueba el primero: no es licencia para ser gratuitamente duro ni para apunialar de frente. El texto avisa de que no es franqueza radical solo porque empieces diciendo dejame ser radicalmente franco contigo, y pone los dos ejemplares de lo que la anula, llamar mentiroso a alguien y decirle que no te fias de el, o insultarle. Si no muestras que te importa personalmente, no es franqueza radical.
+  P2  Comprueba el segundo: no es una invitacion a buscar defectos. El texto razona que desafiar directamente cuesta energia de verdad, tanto a quien desafias como a ti, asi que hazlo solo por las cosas que importan de verdad.
+  P3  Aplica la regla concreta que el texto pone para eso, que segun el texto vale para cualquier relacion: deja tres cosas sin importancia sin decir cada dia.
+  P4  Comprueba el tercero: no es jerarquica. Practicala hacia arriba, hacia abajo y hacia los lados, que son las tres direcciones que el texto nombra.
+  P5  Crea tu propio microcosmos radicalmente franco para ti y para tu equipo aunque tu jefe y tus pares no hayan comprado el metodo, que es lo que el texto dice que puedes hacer.
+  P6  Ve con algo mas de cautela con tu jefe y con tus pares, que es lo que el texto te autoriza expresamente.
+  P7  Y si al final no es posible ser radicalmente franco con tu jefe y con tus pares, busca un tipo distinto de entorno de trabajo, si es que hay alguno posible. Es lo que el texto recomienda expresamente en esa misma linea, despues de la cautela.
+  P8  Comprueba el cuarto: no es confraternizar ni una extroversion sin fin que agota a las personas calladas de tu equipo, o a ti si el callado eres tu. El texto descarta por su nombre emborracharse, conducir karts, jugar al laser tag y las cenas interminables con colegas, y dice por que: quitan mucho tiempo y no son la forma mas eficiente de conocer a la gente con la que trabajas ni de mostrarle que te importa.
+  P9  Comprueba el quinto: no es propia de la cultura de Silicon Valley ni es estadounidense. El texto dice que es humana, y que fue trabajando para una empresa israeli donde la autora empezo a desarrollar su idea de la franqueza radical.
+
+==============================================================================
+manejar_enfado_persona_desafiada   [GRAFO]
+==============================================================================
+TITULO    : Manejar el enfado de la persona a la que acabas de desafiar, con la frase que se elimina del vocabulario
+ACTIVACION: 
+ENTREGABLE: 
+  P1  Acepta antes de empezar lo que el texto pone como parte del puesto: que a veces la gente de tu equipo va a estar enfadada contigo. El texto anade que si nadie se enfada nunca contigo es probable que no estes desafiando bastante a tu equipo.
+  P2  Trata como la clave lo que el texto llama la clave, igual que en cualquier relacion: como manejas el enfado.
+  P3  Cuando lo que dices duele, reconoce el dolor de la otra persona.
+  P4  No finjas que no duele y no digas que no deberia doler: solo demuestra que te importa.
+  P5  Elimina de tu vocabulario la frase no te lo tomes como algo personal. El texto dice que es insultante.
+  P6  En su lugar, ofrecete a ayudar a arreglar el problema.
+  P7  No finjas que no hay problema solo para intentar que alguien se sienta mejor.
+
+==============================================================================
+equilibrar_elogio_critica_equipo   [GRAFO]
+==============================================================================
+TITULO    : Dar mas elogio que critica sin usar ningun ratio fijo, y repartir tu energia al reves de como te sale
+ACTIVACION: 
+ENTREGABLE: 
+  P1  Da mas elogio que critica, aunque se aprenda mas de los errores que de los aciertos, y cuenta con las dos razones que el texto da: guia a la gente en la direccion correcta, porque es tan importante decirle que hacer mas como que hacer menos, y la anima a seguir mejorando.
+  P2  Cuenta con que el mejor elogio hace mucho mas que hacer sentir bien: segun el texto, desafia directamente.
+  P3  No apliques un ratio fijo de elogio a critica. El texto nombra los que circulan, tres a uno, cinco a uno y hasta siete a uno, y dice por que la nocion de un ratio correcto es peligrosa: te lleva a decir cosas antinaturales, insinceras o directamente ridiculas, del estilo de alabar la tipografia de una presentacion cuyo contenido rozaba lo obvio y rematar diciendo lo ordenada que tiene la mesa.
+  P4  No uses el sandwich de opinion, que es abrir y cerrar con elogio metiendo la critica en medio. El texto recoge el nombre que le puso Ben Horowitz, el sandwich de mierda, y aniade que quien lo defiende dice que funciona con gente con menos experiencia, mientras que ella sostiene que el ninio medio lo cala igual de rapido que un directivo.
+  P5  Cuenta con que un elogio paternalista o insincero erosiona la confianza y estropea tus relaciones tanto como una critica demasiado dura.
+  P6  Cuenta con las dos formas de fallar que el texto nombra por separado: al criticar, la mayoria tiene miedo de herir y acaba por no decir nada; al elogiar, unos dicen siempre algo por agradar, a veces cosas vacuas, y otros simplemente no tienen la costumbre de elogiar.
+  P7  Cuando critiques, ponte menos nervioso y concentrate en decirlo sin mas. El texto avisa de que si piensas demasiado en como decirlo es probable que te acobardes y no digas nada.
+  P8  Cuando elogies, haz lo contrario: se consciente de todas las formas en que un elogio puede salir mal y pon mas energia en pensar como decirlo.
+  P9  Pasa el mismo tiempo asegurandote de tener bien los hechos antes de elogiar a alguien que antes de criticarle. Son las dos preguntas que el texto recoge de Karen Sipprell, colega suya en Apple, y que presenta como instructivas.
+

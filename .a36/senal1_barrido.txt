@@ -1,0 +1,13 @@
+POBLACION (D.38.4): 348   (318 del grafo mas 30 que esperan en bandejas)
+umbral similitud_texto: 0.35
+CANDIDATOS DEL TRAMO MEDIDOS: 14
+
+contar_historias_propias_explicar_franqueza_radical  2
+    BANDEJA  abrazar_incomodidad_silencio_contar_seis             casa=0.380  solo_pasos=0.244  <-- cruza SOLO por el resumen_teorico
+    BANDEJA  escuchar_entender_critica_dominar_defensa            casa=0.380  solo_pasos=0.241  <-- cruza SOLO por el resumen_teorico
+desplegar_plan_orden_operaciones_franqueza_radical   0
+abrazar_incomodidad_silencio_contar_seis             4
+    GRAFO    contar_historias_propias_explicar_franqueza_radical  casa=0.376  solo_pasos=0.247  <-- cruza SOLO por el resumen_teorico
+    BANDEJA  escuchar_entender_critica_dominar_defensa            casa=0.449  solo_pasos=0.230  <-- cruza SOLO por el resumen_teorico
+    BANDEJA  practicar_triangulo_critica_tres_papeles             casa=0.373  solo_pasos=0.266  <-- cruza SOLO por el resumen_teorico
+    BANDEJA  premiar_franqueza_hacer_escucha_tangible             casa=0.353  solo_pasos=0.175  <-- cruza SOLO por el resumen_teorico

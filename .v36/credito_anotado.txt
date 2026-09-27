@@ -1,0 +1,9 @@
+$ python forja.py credito --anotar ... (una linea por especie, cita de REFERENCIA)
+ANOTADO en docs/loop/CREDITO_serial.jsonl:
+  {"cita": "REPORTE.md AC.4.h", "especie": "REPORTE", "racha": "0 de 3", "tanda": "ACTA 35", "tipo": "tanda", "vuelta": 36}
+ANOTADO en docs/loop/CREDITO_serial.jsonl:
+  {"cita": "REPORTE.md AC.4.b", "especie": "CIFRA PUBLICADA", "racha": "0 de 2", "tanda": "ACTA 35", "tipo": "tanda", "vuelta": 36}
+ANOTADO en docs/loop/CREDITO_serial.jsonl:
+  {"cita": "REPORTE.md AC.3.e", "especie": "CLASE", "racha": "0 de 2", "tanda": "ACTA 35", "tipo": "tanda", "vuelta": 36}
+ANOTADO en docs/loop/CREDITO_serial.jsonl:
+  {"cae": true, "cita": "REPORTE.md AC.3.c", "especie": "DATO MOVIDO", "racha": "1 de 2", "tanda": "ACTA 35", "tipo": "tanda", "vuelta": 36}

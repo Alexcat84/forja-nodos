@@ -1,0 +1,7 @@
+ADUANA DE INSERCION, candidato 'escuchar_ruidoso_opinion_fuerte_pedir_agujeros'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (235 del grafo mas 113 que esperan en bandejas)
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 236
+  censos escritos: atribuciones, denominaciones

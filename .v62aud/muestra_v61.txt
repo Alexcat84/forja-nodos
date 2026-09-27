@@ -1,0 +1,29 @@
+MUESTRA DE FIDELIDAD DEL REGIMEN LIGERO (D.58)
+  libro    : grove_high_output
+  semilla  : v61
+  capitulos: cap_17, cap_18
+
+  RELEIDO ENTERO : cap_18
+  POR MUESTRA    : cap_17, 15 pasos cada uno
+
+  EL DISPARADOR: si la muestra de un capitulo pasa del 10 por ciento de
+  pasos inventados, ESE CAPITULO SE RELEE ENTERO ANTES DE SEGUIR.
+
+  --- cap_17: 15 paso(s) en la muestra
+    desarrollar_primer_curso_entrenamiento         P1   Empieza sin ambicion: desarrolla un curso corto, de tres a c
+    desarrollar_primer_curso_entrenamiento         P2   Fija un calendario para el curso, con plazos, y comprometete
+    desarrollar_primer_curso_entrenamiento         P3   Crea un esquema para el curso entero.
+    desarrollar_primer_curso_entrenamiento         P4   Desarrolla solo la primera clase, y dictala.
+    desarrollar_primer_curso_entrenamiento         P5   Desarrolla la segunda clase despues de haber dado la primera
+    desarrollar_primer_curso_entrenamiento         P6   Trata la primera vez que enseñas el curso como un desechable
+    desarrollar_primer_curso_entrenamiento         P7   Preguntate si podras cubrir tu solo a toda la organizacion o
+    pedir_critica_anonima_curso_entrenamiento_dict P1   Despues de dar el curso, pide criticas anonimas a los emplea
+    pedir_critica_anonima_curso_entrenamiento_dict P3   Estudia y considera las respuestas, entendiendo que nunca po
+    pedir_critica_anonima_curso_entrenamiento_dict P4   Ten como objetivo ultimo satisfacerte a ti mismo de que esta
+    priorizar_lista_entrenamiento_subordinados     P1   Haz una lista de las cosas en que crees que tus subordinados
+    priorizar_lista_entrenamiento_subordinados     P2   Incluye items que van desde lo que parece simple, como entre
+    priorizar_lista_entrenamiento_subordinados     P3   Pregunta a la gente que trabaja para ti que siente que neces
+    priorizar_lista_entrenamiento_subordinados     P4   Hecho esto, toma inventario de los mando maestros y los mate
+    priorizar_lista_entrenamiento_subordinados     P5   Asigna prioridades entre esos items.
+
+  --- cap_18: ENTERO, 0 paso(s), no hay muestra que elegir

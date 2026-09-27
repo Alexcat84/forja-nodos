@@ -1,0 +1,96 @@
+================ ARISTA a ================
+DECLARACION DE ARISTA POR LECTURA (D.37)
+  madre: fijar_cuatro_notas_calcular_nota_global
+  hijo : elegir_categorias_nota_palabras_propias_empresa
+  paso citado de la madre: 8
+    Cuenta con lo que cuatro notas por separado en cada una de las categorias elegidas permiten: que la evaluacion sirva de diagnostico para mejorar, del 
+  señales del par: familia_id 0.1, paso_contra_nodo 0.406, similitud_texto 0.3
+    NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: fijar_cuatro_notas_calcular_nota_global > elegir_categorias_nota_palabras_propias_empresa
+  razon en bitacora/VEREDICTOS.jsonl
+  CODIGO=0
+================ ARISTA b ================
+DECLARACION DE ARISTA POR LECTURA (D.37)
+  madre: repartir_notas_publicar_reparto_esperado
+  hijo : calibrar_notas_reunion_jefes_pares
+  paso citado de la madre: 3
+    Cuenta con lo que el texto dice que es lo mas importante en general: el proceso de calibracion.
+  señales del par: familia_id 0.111, paso_contra_nodo 0.474, similitud_texto 0.263
+    NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: repartir_notas_publicar_reparto_esperado > calibrar_notas_reunion_jefes_pares
+  razon en bitacora/VEREDICTOS.jsonl
+  CODIGO=0
+================ ARISTA c ================
+DECLARACION DE ARISTA POR LECTURA (D.37)
+  madre: presionar_curva_notas_evitar_forzarla
+  hijo : calibrar_notas_reunion_jefes_pares
+  paso citado de la madre: 11
+    Cuenta con hacia donde se tuerce la mayoria, que es lo que el texto dice que hace importantes las sesiones de calibracion: casi todos los jefes se que
+  señales del par: familia_id 0.111, paso_contra_nodo 0.501, similitud_texto 0.288
+    NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: presionar_curva_notas_evitar_forzarla > calibrar_notas_reunion_jefes_pares
+  razon en bitacora/VEREDICTOS.jsonl
+  CODIGO=0
+================ ARISTA d ================
+DECLARACION DE ARISTA POR LECTURA (D.37)
+  madre: evaluar_desempenio_dos_veces_anio
+  hijo : montar_evaluacion_360_grados_ligera_pares
+  paso citado de la madre: 6
+    Haz la otra escrita, e incluye en ella un componente ligero de trescientos sesenta grados.
+  señales del par: familia_id 0.0, paso_contra_nodo 0.454, similitud_texto 0.399
+    levantada tambien por la señal: similitud_texto
+
+GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: evaluar_desempenio_dos_veces_anio > montar_evaluacion_360_grados_ligera_pares
+  razon en bitacora/VEREDICTOS.jsonl
+  CODIGO=0
+================ ARISTA e ================
+DECLARACION DE ARISTA POR LECTURA (D.37)
+  madre: hacer_critica_pares_transparente_ensenar_escribirla
+  hijo : montar_evaluacion_360_grados_ligera_pares
+  paso citado de la madre: 1
+    Ten delante la decision, que el texto plantea asi: si haces critica de trescientos sesenta grados, tienes que decidir si sera transparente, es decir q
+  señales del par: familia_id 0.1, paso_contra_nodo 0.51, similitud_texto 0.381
+    levantada tambien por la señal: similitud_texto
+
+GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: hacer_critica_pares_transparente_ensenar_escribirla > montar_evaluacion_360_grados_ligera_pares
+  razon en bitacora/VEREDICTOS.jsonl
+  CODIGO=0
+================ ARISTA f ================
+DECLARACION DE ARISTA POR LECTURA (D.37)
+  madre: mantener_proceso_evaluacion_ligero_vigilar_crecimiento
+  hijo : montar_evaluacion_360_grados_ligera_pares
+  paso citado de la madre: 6
+    Monta la herramienta de evaluacion ligera igual que la herramienta de trescientos sesenta grados: que pida a los jefes calificar a sus empleados en ca
+  señales del par: familia_id 0.1, paso_contra_nodo 0.48, similitud_texto 0.399
+    levantada tambien por la señal: similitud_texto
+
+GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: mantener_proceso_evaluacion_ligero_vigilar_crecimiento > montar_evaluacion_360_grados_ligera_pares
+  razon en bitacora/VEREDICTOS.jsonl
+  CODIGO=0
+================ ARISTA g ================
+DECLARACION DE ARISTA POR LECTURA (D.37)
+  madre: mantener_proceso_evaluacion_ligero_vigilar_crecimiento
+  hijo : hacer_critica_pares_transparente_ensenar_escribirla
+  paso citado de la madre: 5
+    Recuerda que el proceso tardara menos y sera mas radicalmente franco si toda la critica de trescientos sesenta grados es transparente: no tener que si
+  señales del par: familia_id 0.0, paso_contra_nodo 0.508, similitud_texto 0.293
+    NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: mantener_proceso_evaluacion_ligero_vigilar_crecimiento > hacer_critica_pares_transparente_ensenar_escribirla
+  razon en bitacora/VEREDICTOS.jsonl
+  CODIGO=0
+================ ARISTA h ================
+DECLARACION DE ARISTA POR LECTURA (D.37)
+  madre: montar_evaluacion_360_grados_ligera_pares
+  hijo : elegir_categorias_nota_palabras_propias_empresa
+  paso citado de la madre: 6
+    Aligera la evaluacion entre pares con lo que el texto recomienda, y es lo primero: pide simplemente a los empleados que califiquen a sus pares en cada
+  señales del par: familia_id 0.0, paso_contra_nodo 0.493, similitud_texto 0.244
+    NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: montar_evaluacion_360_grados_ligera_pares > elegir_categorias_nota_palabras_propias_empresa
+  razon en bitacora/VEREDICTOS.jsonl
+  CODIGO=0

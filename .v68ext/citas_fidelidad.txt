@@ -1,0 +1,295 @@
+$ grep -n -o -F 'To make the most of this kind of meeting, we should aim to infuse it w' fuentes/grove_high_output/cap_05.md    # infundir_regularidad_reunion_proceso paso 1 
+21:To make the most of this kind of meeting, we should aim to infuse it w
+$ grep -n -o -F 'the people attending should know how the meeting is run' fuentes/grove_high_output/cap_05.md    # infundir_regularidad_reunion_proceso paso 2 
+21:the people attending should know how the meeting is run
+$ grep -n -o -F 'what kinds of substantive matters are discussed' fuentes/grove_high_output/cap_05.md    # infundir_regularidad_reunion_proceso paso 3 
+21:what kinds of substantive matters are discussed
+$ grep -n -o -F 'and what is to be accomplished' fuentes/grove_high_output/cap_05.md    # infundir_regularidad_reunion_proceso paso 4 
+21:and what is to be accomplished
+$ grep -n -o -F 'set-up time and effort to take care of many similar managerial tasks' fuentes/grove_high_output/cap_05.md    # infundir_regularidad_reunion_proceso paso 5 
+21:set-up time and effort to take care of many similar managerial tasks
+$ grep -n -o -F 'given the regularity, you and the others attending can begin to foreca' fuentes/grove_high_output/cap_05.md    # infundir_regularidad_reunion_proceso paso 6 
+21:given the regularity, you and the others attending can begin to foreca
+$ grep -n -o -F 'system, as recorded on various calendars, can take shape' fuentes/grove_high_output/cap_05.md    # infundir_regularidad_reunion_proceso paso 7 
+21:system, as recorded on various calendars, can take shape
+$ grep -n -o -F 'a scheduled meeting will have minimum impact on other things people ar' fuentes/grove_high_output/cap_05.md    # infundir_regularidad_reunion_proceso paso 8 
+21:a scheduled meeting will have minimum impact on other things people ar
+$ grep -n -o -F 'At Intel we use three kinds of process-oriented meetings' fuentes/grove_high_output/cap_05.md    # usar_tres_clases_reunion_proceso paso 1 
+23:At Intel we use three kinds of process-oriented meetings
+$ grep -n -o -F 'the one-on-one, the staff meeting, and the operation review' fuentes/grove_high_output/cap_05.md    # usar_tres_clases_reunion_proceso paso 2 
+23:the one-on-one, the staff meeting, and the operation review
+$ grep -n -o -F 'the staff meeting, and the operation review' fuentes/grove_high_output/cap_05.md    # usar_tres_clases_reunion_proceso paso 3 
+23:the staff meeting, and the operation review
+$ grep -n -o -F 'and the operation review' fuentes/grove_high_output/cap_05.md    # usar_tres_clases_reunion_proceso paso 4 
+23:and the operation review
+$ grep -n -o -F 'how do you decide how often somebody needs such a meeting' fuentes/grove_high_output/cap_05.md    # fijar_frecuencia_reunion_individual_madurez_tarea paso 1 
+33:how do you decide how often somebody needs such a meeting
+$ grep -n -o -F 'The answer is the job- or task-relevant maturity of each of your subor' fuentes/grove_high_output/cap_05.md    # fijar_frecuencia_reunion_individual_madurez_tarea paso 2 
+33:The answer is the job- or task-relevant maturity of each of your subor
+$ grep -n -o -F 'how much experience does a given subordinate have with the specific ta' fuentes/grove_high_output/cap_05.md    # fijar_frecuencia_reunion_individual_madurez_tarea paso 3 
+33:how much experience does a given subordinate have with the specific ta
+$ grep -n -o -F 'This is not the same as the experience he has in general or how old he' fuentes/grove_high_output/cap_05.md    # fijar_frecuencia_reunion_individual_madurez_tarea paso 4 
+33:This is not the same as the experience he has in general or how old he
+$ grep -n -o -F 'varies from very close to very loose supervision' fuentes/grove_high_output/cap_05.md    # fijar_frecuencia_reunion_individual_madurez_tarea paso 5 
+33:varies from very close to very loose supervision
+$ grep -n -o -F 'you should have one-on-ones frequently' fuentes/grove_high_output/cap_05.md    # fijar_frecuencia_reunion_individual_madurez_tarea paso 6 
+33:you should have one-on-ones frequently
+$ grep -n -o -F 'less frequently' fuentes/grove_high_output/cap_05.md    # fijar_frecuencia_reunion_individual_madurez_tarea paso 7 
+33:less frequently
+$ grep -n -o -F 'Another consideration here is how quickly things change in a job area' fuentes/grove_high_output/cap_05.md    # fijar_frecuencia_reunion_individual_madurez_tarea paso 8 
+35:Another consideration here is how quickly things change in a job area
+$ grep -n -o -F 'In marketing, for example, the pace may be so rapid that a supervisor ' fuentes/grove_high_output/cap_05.md    # fijar_frecuencia_reunion_individual_madurez_tarea paso 9 
+35:In marketing, for example, the pace may be so rapid that a supervisor 
+$ grep -n -o -F 'in a research environment, life may be quieter' fuentes/grove_high_output/cap_05.md    # fijar_frecuencia_reunion_individual_madurez_tarea paso 10 
+35:in a research environment, life may be quieter
+$ grep -n -o -F 'There really is no answer to this, but the subordinate must feel that ' fuentes/grove_high_output/cap_05.md    # fijar_duracion_lugar_reunion_individual paso 1 
+37:There really is no answer to this, but the subordinate must feel that 
+$ grep -n -o -F 'would you want to bring it up in a meeting scheduled to last only fift' fuentes/grove_high_output/cap_05.md    # fijar_duracion_lugar_reunion_individual paso 2 
+37:would you want to bring it up in a meeting scheduled to last only fift
+$ grep -n -o -F 'I feel that a one-on-one should last an hour at a minimum' fuentes/grove_high_output/cap_05.md    # fijar_duracion_lugar_reunion_individual paso 3 
+37:I feel that a one-on-one should last an hour at a minimum
+$ grep -n -o -F 'tends to make the subordinate confine himself to simple things that ca' fuentes/grove_high_output/cap_05.md    # fijar_duracion_lugar_reunion_individual paso 4 
+37:tends to make the subordinate confine himself to simple things that ca
+$ grep -n -o -F 'I think you should have the meeting in or near the subordinate' fuentes/grove_high_output/cap_05.md    # fijar_duracion_lugar_reunion_individual paso 5 
+39:I think you should have the meeting in or near the subordinate
+$ grep -n -o -F 'A supervisor can learn a lot simply by going to his subordinate' fuentes/grove_high_output/cap_05.md    # fijar_duracion_lugar_reunion_individual paso 6 
+39:A supervisor can learn a lot simply by going to his subordinate
+$ grep -n -o -F 'Is he organized or not' fuentes/grove_high_output/cap_05.md    # fijar_duracion_lugar_reunion_individual paso 7 
+39:Is he organized or not
+$ grep -n -o -F 'Does he repeatedly have to spend time looking for a document he wants' fuentes/grove_high_output/cap_05.md    # fijar_duracion_lugar_reunion_individual paso 8 
+39:Does he repeatedly have to spend time looking for a document he wants
+$ grep -n -o -F 'Does he get interrupted all the time' fuentes/grove_high_output/cap_05.md    # fijar_duracion_lugar_reunion_individual paso 9 
+39:Does he get interrupted all the time
+$ grep -n -o -F 'And in general, how does the subordinate approach his work' fuentes/grove_high_output/cap_05.md    # fijar_duracion_lugar_reunion_individual paso 10 
+39:And in general, how does the subordinate approach his work
+$ grep -n -o -F 'It should be regarded as the subordinate' fuentes/grove_high_output/cap_05.md    # preparar_guion_reunion_individual_subordinado paso 1 
+41:It should be regarded as the subordinate
+$ grep -n -o -F 'The supervisor with eight subordinates would have to prepare eight tim' fuentes/grove_high_output/cap_05.md    # preparar_guion_reunion_individual_subordinado paso 2 
+41:The supervisor with eight subordinates would have to prepare eight tim
+$ grep -n -o -F 'So the latter should be asked to prepare an outline' fuentes/grove_high_output/cap_05.md    # preparar_guion_reunion_individual_subordinado paso 3 
+41:So the latter should be asked to prepare an outline
+$ grep -n -o -F 'it forces him to think through in advance all of the issues and points' fuentes/grove_high_output/cap_05.md    # preparar_guion_reunion_individual_subordinado paso 4 
+41:it forces him to think through in advance all of the issues and points
+$ grep -n -o -F 'the supervisor knows at the outset what is to be covered' fuentes/grove_high_output/cap_05.md    # preparar_guion_reunion_individual_subordinado paso 5 
+41:the supervisor knows at the outset what is to be covered
+$ grep -n -o -F 'An outline also provides a framework for supporting information, which' fuentes/grove_high_output/cap_05.md    # preparar_guion_reunion_individual_subordinado paso 6 
+41:An outline also provides a framework for supporting information, which
+$ grep -n -o -F 'The subordinate should then walk the supervisor through all the materi' fuentes/grove_high_output/cap_05.md    # preparar_guion_reunion_individual_subordinado paso 7 
+41:The subordinate should then walk the supervisor through all the materi
+$ grep -n -o -F 'We can start with performance figures, indicators used by the subordin' fuentes/grove_high_output/cap_05.md    # cubrir_indicadores_problemas_reunion_individual paso 1 
+43:We can start with performance figures, indicators used by the subordin
+$ grep -n -o -F 'Emphasis should be on indicators that signal trouble' fuentes/grove_high_output/cap_05.md    # cubrir_indicadores_problemas_reunion_individual paso 2 
+43:Emphasis should be on indicators that signal trouble
+$ grep -n -o -F 'The meeting should also cover anything important that has happened sin' fuentes/grove_high_output/cap_05.md    # cubrir_indicadores_problemas_reunion_individual paso 3 
+43:The meeting should also cover anything important that has happened sin
+$ grep -n -o -F 'current hiring problems' fuentes/grove_high_output/cap_05.md    # cubrir_indicadores_problemas_reunion_individual paso 4 
+43:current hiring problems
+$ grep -n -o -F 'people problems in general' fuentes/grove_high_output/cap_05.md    # cubrir_indicadores_problemas_reunion_individual paso 5 
+43:people problems in general
+$ grep -n -o -F 'organizational problems and future plans' fuentes/grove_high_output/cap_05.md    # cubrir_indicadores_problemas_reunion_individual paso 6 
+43:organizational problems and future plans
+$ grep -n -o -F 'very, very important' fuentes/grove_high_output/cap_05.md    # cubrir_indicadores_problemas_reunion_individual paso 7 
+43:very, very important
+$ grep -n -o -F 'Even when a problem isn' fuentes/grove_high_output/cap_05.md    # cubrir_indicadores_problemas_reunion_individual paso 8 
+43:Even when a problem isn
+$ grep -n -o -F 'The most important criterion governing matters to be talked about' fuentes/grove_high_output/cap_05.md    # cubrir_indicadores_problemas_reunion_individual paso 9 
+43:The most important criterion governing matters to be talked about
+$ grep -n -o -F 'These are often obscure and take time to surface, consider, and resolv' fuentes/grove_high_output/cap_05.md    # cubrir_indicadores_problemas_reunion_individual paso 10 
+43:These are often obscure and take time to surface, consider, and resolv
+$ grep -n -o -F 'He should facilitate the subordinate' fuentes/grove_high_output/cap_05.md    # facilitar_expresion_subordinado_pregunta_mas paso 1 
+45:He should facilitate the subordinate
+$ grep -n -o -F 'The supervisor is there to learn and to coach' fuentes/grove_high_output/cap_05.md    # facilitar_expresion_subordinado_pregunta_mas paso 2 
+45:The supervisor is there to learn and to coach
+$ grep -n -o -F 'Peter Drucker sums up the supervisor' fuentes/grove_high_output/cap_05.md    # facilitar_expresion_subordinado_pregunta_mas paso 3 
+45:Peter Drucker sums up the supervisor
+$ grep -n -o -F 'By applying Grove' fuentes/grove_high_output/cap_05.md    # facilitar_expresion_subordinado_pregunta_mas paso 4 
+47:By applying Grove
+$ grep -n -o -F 'he should ask another question' fuentes/grove_high_output/cap_05.md    # facilitar_expresion_subordinado_pregunta_mas paso 5 
+47:he should ask another question
+$ grep -n -o -F 'He should try to keep the flow of thoughts coming by prompting the sub' fuentes/grove_high_output/cap_05.md    # facilitar_expresion_subordinado_pregunta_mas paso 6 
+47:He should try to keep the flow of thoughts coming by prompting the sub
+$ grep -n -o -F 'First, both the supervisor and subordinate should have a copy of the o' fuentes/grove_high_output/cap_05.md    # tomar_notas_copia_guion_reunion_individual paso 1 
+49:First, both the supervisor and subordinate should have a copy of the o
+$ grep -n -o -F 'and both should take notes on it' fuentes/grove_high_output/cap_05.md    # tomar_notas_copia_guion_reunion_individual paso 2 
+49:and both should take notes on it
+$ grep -n -o -F 'I do it to keep my mind from drifting and also to help me digest the i' fuentes/grove_high_output/cap_05.md    # tomar_notas_copia_guion_reunion_individual paso 3 
+49:I do it to keep my mind from drifting and also to help me digest the i
+$ grep -n -o -F 'Since I take notes in outline form, I am forced to categorize the info' fuentes/grove_high_output/cap_05.md    # tomar_notas_copia_guion_reunion_individual paso 4 
+49:Since I take notes in outline form, I am forced to categorize the info
+$ grep -n -o -F 'Many issues in a one-on-one lead to action required on the part of the' fuentes/grove_high_output/cap_05.md    # tomar_notas_copia_guion_reunion_individual paso 5 
+49:Many issues in a one-on-one lead to action required on the part of the
+$ grep -n -o -F 'the act implies a commitment, like a handshake, that something will be' fuentes/grove_high_output/cap_05.md    # tomar_notas_copia_guion_reunion_individual paso 6 
+49:the act implies a commitment, like a handshake, that something will be
+$ grep -n -o -F 'also having taken notes, can then follow up at the next one-on-one' fuentes/grove_high_output/cap_05.md    # tomar_notas_copia_guion_reunion_individual paso 7 
+49:also having taken notes, can then follow up at the next one-on-one
+$ grep -n -o -F 'where both the supervisor and subordinate accumulate important but not' fuentes/grove_high_output/cap_05.md    # acumular_asuntos_importantes_fichero_espera paso 1 
+51:where both the supervisor and subordinate accumulate important but not
+$ grep -n -o -F 'accumulate important but not altogether urgent issues for discussion a' fuentes/grove_high_output/cap_05.md    # acumular_asuntos_importantes_fichero_espera paso 2 
+51:accumulate important but not altogether urgent issues for discussion a
+$ grep -n -o -F 'This kind of file applies the production principle of batching' fuentes/grove_high_output/cap_05.md    # acumular_asuntos_importantes_fichero_espera paso 3 
+51:This kind of file applies the production principle of batching
+$ grep -n -o -F 'saves time for both involved by minimizing the need for ad hoc contact' fuentes/grove_high_output/cap_05.md    # acumular_asuntos_importantes_fichero_espera paso 4 
+51:saves time for both involved by minimizing the need for ad hoc contact
+$ grep -n -o -F 'The supervisor should also encourage the discussion of heart-to-heart ' fuentes/grove_high_output/cap_05.md    # alentar_asuntos_corazon_vigilar_final_reunion paso 1 
+53:The supervisor should also encourage the discussion of heart-to-heart 
+$ grep -n -o -F 'this is the perfect forum for getting at subtle and deep work-related ' fuentes/grove_high_output/cap_05.md    # alentar_asuntos_corazon_vigilar_final_reunion paso 2 
+53:this is the perfect forum for getting at subtle and deep work-related 
+$ grep -n -o -F 'Is he satisfied with his own performance' fuentes/grove_high_output/cap_05.md    # alentar_asuntos_corazon_vigilar_final_reunion paso 3 
+53:Is he satisfied with his own performance
+$ grep -n -o -F 'Does some frustration or obstacle gnaw at him' fuentes/grove_high_output/cap_05.md    # alentar_asuntos_corazon_vigilar_final_reunion paso 4 
+53:Does some frustration or obstacle gnaw at him
+$ grep -n -o -F 'Does he have doubts about where he is going' fuentes/grove_high_output/cap_05.md    # alentar_asuntos_corazon_vigilar_final_reunion paso 5 
+53:Does he have doubts about where he is going
+$ grep -n -o -F 'But the supervisor should be wary of the' fuentes/grove_high_output/cap_05.md    # alentar_asuntos_corazon_vigilar_final_reunion paso 6 
+53:But the supervisor should be wary of the
+$ grep -n -o -F 'More often than not, these come near the end of a meeting' fuentes/grove_high_output/cap_05.md    # alentar_asuntos_corazon_vigilar_final_reunion paso 7 
+53:More often than not, these come near the end of a meeting
+$ grep -n -o -F 'If you let that happen, the subordinate might tell you something like ' fuentes/grove_high_output/cap_05.md    # alentar_asuntos_corazon_vigilar_final_reunion paso 8 
+53:If you let that happen, the subordinate might tell you something like 
+$ grep -n -o -F 'Long-distance telephone one-on-ones have become necessary because many' fuentes/grove_high_output/cap_05.md    # conducir_reunion_individual_telefono_distancia paso 1 
+55:Long-distance telephone one-on-ones have become necessary because many
+$ grep -n -o -F 'the supervisor must have the outline before the meeting begins' fuentes/grove_high_output/cap_05.md    # conducir_reunion_individual_telefono_distancia paso 2 
+55:the supervisor must have the outline before the meeting begins
+$ grep -n -o -F 'both parties should take notes' fuentes/grove_high_output/cap_05.md    # conducir_reunion_individual_telefono_distancia paso 3 
+55:both parties should take notes
+$ grep -n -o -F 'note-taking can' fuentes/grove_high_output/cap_05.md    # conducir_reunion_individual_telefono_distancia paso 4 
+55:note-taking can
+$ grep -n -o -F 'Exchanging notes after the meeting is a way to make sure each knows wh' fuentes/grove_high_output/cap_05.md    # conducir_reunion_individual_telefono_distancia paso 5 
+55:Exchanging notes after the meeting is a way to make sure each knows wh
+$ grep -n -o -F 'One-on-ones should be scheduled on a rolling basis' fuentes/grove_high_output/cap_05.md    # programar_reunion_individual_cadena paso 1 
+57:One-on-ones should be scheduled on a rolling basis
+$ grep -n -o -F 'setting up the next one as the meeting taking place ends' fuentes/grove_high_output/cap_05.md    # programar_reunion_individual_cadena paso 2 
+57:setting up the next one as the meeting taking place ends
+$ grep -n -o -F 'Other commitments can thereby be taken into account and cancellations ' fuentes/grove_high_output/cap_05.md    # programar_reunion_individual_cadena paso 3 
+57:Other commitments can thereby be taken into account and cancellations 
+$ grep -n -o -F 'If the supervisor uses a set schedule for a one-on-one, such as every ' fuentes/grove_high_output/cap_05.md    # programar_reunion_individual_cadena paso 4 
+57:If the supervisor uses a set schedule for a one-on-one, such as every 
+$ grep -n -o -F 'By scheduling on a rolling basis, this can be easily avoided' fuentes/grove_high_output/cap_05.md    # programar_reunion_individual_cadena paso 5 
+57:By scheduling on a rolling basis, this can be easily avoided
+$ grep -n -o -F 'The first stage should be free discussion, in which all points of view' fuentes/grove_high_output/cap_06.md    # conducir_etapas_modelo_ideal_decision paso 1 
+23:The first stage should be free discussion, in which all points of view
+$ grep -n -o -F 'The greater the disagreement and controversy, the more important becom' fuentes/grove_high_output/cap_06.md    # conducir_etapas_modelo_ideal_decision paso 2 
+23:The greater the disagreement and controversy, the more important becom
+$ grep -n -o -F 'Usually when a meeting gets heated, participants hang back, trying to ' fuentes/grove_high_output/cap_06.md    # conducir_etapas_modelo_ideal_decision paso 3 
+23:Usually when a meeting gets heated, participants hang back, trying to 
+$ grep -n -o -F 'because if knowledgeable people withhold opinions, whatever is decided' fuentes/grove_high_output/cap_06.md    # conducir_etapas_modelo_ideal_decision paso 4 
+23:because if knowledgeable people withhold opinions, whatever is decided
+$ grep -n -o -F 'The next stage is reaching a clear decision' fuentes/grove_high_output/cap_06.md    # conducir_etapas_modelo_ideal_decision paso 5 
+27:The next stage is reaching a clear decision
+$ grep -n -o -F 'particular pains should be taken to frame the terms of the decision wi' fuentes/grove_high_output/cap_06.md    # conducir_etapas_modelo_ideal_decision paso 6 
+27:particular pains should be taken to frame the terms of the decision wi
+$ grep -n -o -F 'when we know a decision is controversial we want to obscure matters to' fuentes/grove_high_output/cap_06.md    # conducir_etapas_modelo_ideal_decision paso 7 
+27:when we know a decision is controversial we want to obscure matters to
+$ grep -n -o -F 'will be a lot madder if they don' fuentes/grove_high_output/cap_06.md    # conducir_etapas_modelo_ideal_decision paso 8 
+27:will be a lot madder if they don
+$ grep -n -o -F 'Finally, everyone involved must give the decision reached by the group' fuentes/grove_high_output/cap_06.md    # conducir_etapas_modelo_ideal_decision paso 9 
+29:Finally, everyone involved must give the decision reached by the group
+$ grep -n -o -F 'This does not necessarily mean agreement' fuentes/grove_high_output/cap_06.md    # conducir_etapas_modelo_ideal_decision paso 10 
+29:This does not necessarily mean agreement
+$ grep -n -o -F 'No matter how much time we may spend trying to forge agreement' fuentes/grove_high_output/cap_06.md    # conducir_etapas_modelo_ideal_decision paso 11 
+29:No matter how much time we may spend trying to forge agreement
+$ grep -n -o -F 'All a manager can expect is that the commitment to support is honestly' fuentes/grove_high_output/cap_06.md    # conducir_etapas_modelo_ideal_decision paso 12 
+29:All a manager can expect is that the commitment to support is honestly
+$ grep -n -o -F 'any decision be worked out and reached at the lowest competent level' fuentes/grove_high_output/cap_06.md    # decidir_nivel_competente_inferior paso 1 
+33:any decision be worked out and reached at the lowest competent level
+$ grep -n -o -F 'people who are closest to the situation and know the most about it' fuentes/grove_high_output/cap_06.md    # decidir_nivel_competente_inferior paso 2 
+33:people who are closest to the situation and know the most about it
+$ grep -n -o -F 'That kind of expertise must be tempered with judgment' fuentes/grove_high_output/cap_06.md    # decidir_nivel_competente_inferior paso 3 
+33:That kind of expertise must be tempered with judgment
+$ grep -n -o -F 'which is developed through experience and learning from the many error' fuentes/grove_high_output/cap_06.md    # decidir_nivel_competente_inferior paso 4 
+33:which is developed through experience and learning from the many error
+$ grep -n -o -F 'decision-making should occur in the middle ground' fuentes/grove_high_output/cap_06.md    # decidir_nivel_competente_inferior paso 5 
+33:decision-making should occur in the middle ground
+$ grep -n -o -F 'you should aim to get the best possible mix of participants available' fuentes/grove_high_output/cap_06.md    # decidir_nivel_competente_inferior paso 6 
+33:you should aim to get the best possible mix of participants available
+$ grep -n -o -F 'For experience, we at Intel are likely to ask a person in management s' fuentes/grove_high_output/cap_06.md    # decidir_nivel_competente_inferior paso 7 
+33:For experience, we at Intel are likely to ask a person in management s
+$ grep -n -o -F 'But it is very important that everybody there voice opinions and belie' fuentes/grove_high_output/cap_06.md    # decidir_nivel_competente_inferior paso 8 
+33:But it is very important that everybody there voice opinions and belie
+$ grep -n -o -F 'You can overcome the peer-group syndrome if each of the members has se' fuentes/grove_high_output/cap_06.md    # vencer_sindrome_grupo_pares_autoconfianza paso 1 
+49:You can overcome the peer-group syndrome if each of the members has se
+$ grep -n -o -F 'which stems in part from being familiar with the issue under considera' fuentes/grove_high_output/cap_06.md    # vencer_sindrome_grupo_pares_autoconfianza paso 2 
+49:which stems in part from being familiar with the issue under considera
+$ grep -n -o -F 'and from experience' fuentes/grove_high_output/cap_06.md    # vencer_sindrome_grupo_pares_autoconfianza paso 3 
+49:and from experience
+$ grep -n -o -F 'nobody has ever died from making a wrong business decision, or taking ' fuentes/grove_high_output/cap_06.md    # vencer_sindrome_grupo_pares_autoconfianza paso 4 
+49:nobody has ever died from making a wrong business decision, or taking 
+$ grep -n -o -F 'And everyone in your operation should be made to understand this' fuentes/grove_high_output/cap_06.md    # vencer_sindrome_grupo_pares_autoconfianza paso 5 
+49:And everyone in your operation should be made to understand this
+$ grep -n -o -F 'If the peer-group syndrome manifests itself, and the meeting has no fo' fuentes/grove_high_output/cap_06.md    # tomar_mando_reunion_pares_presidente_ausente paso 1 
+51:If the peer-group syndrome manifests itself, and the meeting has no fo
+$ grep -n -o -F 'the person who has the most at stake should take charge' fuentes/grove_high_output/cap_06.md    # tomar_mando_reunion_pares_presidente_ausente paso 2 
+51:the person who has the most at stake should take charge
+$ grep -n -o -F 'one can always ask the senior person present to assume control' fuentes/grove_high_output/cap_06.md    # tomar_mando_reunion_pares_presidente_ausente paso 3 
+51:one can always ask the senior person present to assume control
+$ grep -n -o -F 'He is likely to be no more expert in the issues at hand than other mem' fuentes/grove_high_output/cap_06.md    # tomar_mando_reunion_pares_presidente_ausente paso 4 
+51:He is likely to be no more expert in the issues at hand than other mem
+$ grep -n -o -F 'a repository of knowledge about how decisions should be made' fuentes/grove_high_output/cap_06.md    # tomar_mando_reunion_pares_presidente_ausente paso 5 
+51:a repository of knowledge about how decisions should be made
+$ grep -n -o -F 'and give the group the confidence needed to make a decision' fuentes/grove_high_output/cap_06.md    # tomar_mando_reunion_pares_presidente_ausente paso 6 
+51:and give the group the confidence needed to make a decision
+$ grep -n -o -F 'Sometimes no amount of discussion will produce a consensus, yet the ti' fuentes/grove_high_output/cap_06.md    # ejercer_poder_posicion_etapa_decision_clara paso 1 
+61:Sometimes no amount of discussion will produce a consensus, yet the ti
+$ grep -n -o -F 'who until now has guided, coached, and prodded the group along has no ' fuentes/grove_high_output/cap_06.md    # ejercer_poder_posicion_etapa_decision_clara paso 2 
+61:who until now has guided, coached, and prodded the group along has no 
+$ grep -n -o -F 'If the decision-making process has proceeded correctly up to this poin' fuentes/grove_high_output/cap_06.md    # ejercer_poder_posicion_etapa_decision_clara paso 3 
+61:If the decision-making process has proceeded correctly up to this poin
+$ grep -n -o -F 'for the senior person to wield position-power authority if the clear d' fuentes/grove_high_output/cap_06.md    # ejercer_poder_posicion_etapa_decision_clara paso 4 
+61:for the senior person to wield position-power authority if the clear d
+$ grep -n -o -F 'for him to wield that authority any earlier' fuentes/grove_high_output/cap_06.md    # ejercer_poder_posicion_etapa_decision_clara paso 5 
+61:for him to wield that authority any earlier
+$ grep -n -o -F 'We Americans tend to be reluctant to exercise position power deliberat' fuentes/grove_high_output/cap_06.md    # ejercer_poder_posicion_etapa_decision_clara paso 6 
+61:We Americans tend to be reluctant to exercise position power deliberat
+$ grep -n -o -F 'Such reluctance on the part of the senior manager can prolong the firs' fuentes/grove_high_output/cap_06.md    # ejercer_poder_posicion_etapa_decision_clara paso 7 
+61:Such reluctance on the part of the senior manager can prolong the firs
+$ grep -n -o -F 'If you either enter the decision-making stage too early or wait too lo' fuentes/grove_high_output/cap_06.md    # cortar_discusion_libre_momento_justo paso 1 
+63:If you either enter the decision-making stage too early or wait too lo
+$ grep -n -o -F 'The criterion to follow is this' fuentes/grove_high_output/cap_06.md    # cortar_discusion_libre_momento_justo paso 2 
+63:The criterion to follow is this
+$ grep -n -o -F 'Make sure you have heard and considered the real issues rather than th' fuentes/grove_high_output/cap_06.md    # cortar_discusion_libre_momento_justo paso 3 
+63:Make sure you have heard and considered the real issues rather than th
+$ grep -n -o -F 'But if you feel that you have already heard everything, that all sides' fuentes/grove_high_output/cap_06.md    # cortar_discusion_libre_momento_justo paso 4 
+63:But if you feel that you have already heard everything, that all sides
+$ grep -n -o -F 'to step in and make a decision' fuentes/grove_high_output/cap_06.md    # cortar_discusion_libre_momento_justo paso 5 
+63:to step in and make a decision
+$ grep -n -o -F 'people can drift away from the near consensus when they are close to b' fuentes/grove_high_output/cap_06.md    # cortar_discusion_libre_momento_justo paso 6 
+63:people can drift away from the near consensus when they are close to b
+$ grep -n -o -F 'So moving on to make the decision at the right time is crucial' fuentes/grove_high_output/cap_06.md    # cortar_discusion_libre_momento_justo paso 7 
+63:So moving on to make the decision at the right time is crucial
+$ grep -n -o -F 'decision-making has an output associated with it, which in this case i' fuentes/grove_high_output/cap_06.md    # zanjar_seis_preguntas_decision_adelantado paso 1 
+65:decision-making has an output associated with it, which in this case i
+$ grep -n -o -F 'if we say clearly at the outset that we expect exactly that' fuentes/grove_high_output/cap_06.md    # zanjar_seis_preguntas_decision_adelantado paso 2 
+65:if we say clearly at the outset that we expect exactly that
+$ grep -n -o -F 'key tasks is to settle six important questions in advance' fuentes/grove_high_output/cap_06.md    # zanjar_seis_preguntas_decision_adelantado paso 3 
+65:key tasks is to settle six important questions in advance
+$ grep -n -o -F 'What decision needs to be made' fuentes/grove_high_output/cap_06.md    # zanjar_seis_preguntas_decision_adelantado paso 4 
+67:What decision needs to be made
+$ grep -n -o -F 'When does it have to be made' fuentes/grove_high_output/cap_06.md    # zanjar_seis_preguntas_decision_adelantado paso 5 
+69:When does it have to be made
+$ grep -n -o -F 'Who will decide' fuentes/grove_high_output/cap_06.md    # zanjar_seis_preguntas_decision_adelantado paso 6 
+71:Who will decide
+83:Who will decide
+$ grep -n -o -F 'Who will need to be consulted prior to making the decision' fuentes/grove_high_output/cap_06.md    # zanjar_seis_preguntas_decision_adelantado paso 7 
+73:Who will need to be consulted prior to making the decision
+$ grep -n -o -F 'Who will ratify or veto the decision' fuentes/grove_high_output/cap_06.md    # zanjar_seis_preguntas_decision_adelantado paso 8 
+75:Who will ratify or veto the decision
+85:Who will ratify or veto the decision
+$ grep -n -o -F 'Who will need to be informed of the decision' fuentes/grove_high_output/cap_06.md    # zanjar_seis_preguntas_decision_adelantado paso 9 
+77:Who will need to be informed of the decision
+$ grep -n -o -F 'If the final word has to be dramatically different from the expectatio' fuentes/grove_high_output/cap_06.md    # anunciar_decision_inesperada_reconvocar_reunion paso 1 
+93:If the final word has to be dramatically different from the expectatio
+$ grep -n -o -F 'make your announcement' fuentes/grove_high_output/cap_06.md    # anunciar_decision_inesperada_reconvocar_reunion paso 2 
+93:make your announcement
+$ grep -n -o -F 'walk away from the issue' fuentes/grove_high_output/cap_06.md    # anunciar_decision_inesperada_reconvocar_reunion paso 3 
+93:walk away from the issue
+$ grep -n -o -F 'People need time to adjust, rationalize, and in general put their head' fuentes/grove_high_output/cap_06.md    # anunciar_decision_inesperada_reconvocar_reunion paso 4 
+93:People need time to adjust, rationalize, and in general put their head
+$ grep -n -o -F 'Adjourn, reconvene the meeting' fuentes/grove_high_output/cap_06.md    # anunciar_decision_inesperada_reconvocar_reunion paso 5 
+93:Adjourn, reconvene the meeting
+$ grep -n -o -F 'reconvene the meeting after people have had a chance to recover' fuentes/grove_high_output/cap_06.md    # anunciar_decision_inesperada_reconvocar_reunion paso 6 
+93:reconvene the meeting after people have had a chance to recover
+$ grep -n -o -F 'and solicit their views of the decision at that time' fuentes/grove_high_output/cap_06.md    # anunciar_decision_inesperada_reconvocar_reunion paso 7 
+93:and solicit their views of the decision at that time
+$ grep -n -o -F 'This will help everybody accept and learn to live with the unexpected' fuentes/grove_high_output/cap_06.md    # anunciar_decision_inesperada_reconvocar_reunion paso 8 
+93:This will help everybody accept and learn to live with the unexpected
+filas: 146 | en su linea declarada: 146 | fuera: 0

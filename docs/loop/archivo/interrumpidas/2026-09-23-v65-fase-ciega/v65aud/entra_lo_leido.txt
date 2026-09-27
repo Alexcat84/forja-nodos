@@ -1,0 +1,23 @@
+ 1 construir_flujo_produccion_paso_limitante        cap_02 lectura b63405c | ficha IGUAL | dataset contra ficha leida: igual fuera de aristas | pasos 10
+ 2 clasificar_trabajo_proceso_montaje_prueba        cap_02 lectura b63405c | ficha IGUAL | dataset contra ficha leida: igual fuera de aristas | pasos 7
+ 3 detectar_arreglar_fallo_etapa_menor_valor        cap_02 lectura b63405c | ficha IGUAL | dataset contra ficha leida: igual fuera de aristas | pasos 6
+ 4 dimensionar_inventario_materia_prima_reposicion  cap_02 lectura b63405c | ficha IGUAL | dataset contra ficha leida: igual fuera de aristas | pasos 7
+ 5 rehacer_flujo_paso_limitante_capacidad           cap_02 lectura b63405c | ficha IGUAL | dataset contra ficha leida: igual fuera de aristas | pasos 6
+ 6 equilibrar_capacidad_personal_inventario_plazo   cap_02 lectura b63405c | ficha IGUAL | dataset contra ficha leida: igual fuera de aristas | pasos 8
+ 7 preferir_inspeccion_proceso_prueba_destructiva   cap_02 lectura b63405c | ficha IGUAL | dataset contra ficha leida: igual fuera de aristas | pasos 6
+ 8 elegir_cinco_indicadores_diarios_fabrica         cap_03 lectura b63405c | ficha IGUAL | dataset contra ficha leida: igual fuera de aristas | pasos 10
+ 9 emparejar_indicadores_efecto_contraefecto        cap_03 lectura 997054d | ficha IGUAL | dataset contra ficha leida: igual fuera de aristas | pasos 7
+10 elegir_indicador_salida_trabajo_administrativo   cap_03 lectura 997054d | ficha IGUAL | dataset contra ficha leida: igual fuera de aristas | pasos 7
+11 representar_actividad_caja_negra_ventanas        cap_03 lectura b63405c | ficha IGUAL | dataset contra ficha leida: igual fuera de aristas | pasos 9
+12 construir_indicador_linealidad_alerta_temprana   cap_03 lectura b63405c | ficha IGUAL | dataset contra ficha leida: igual fuera de aristas | pasos 9
+13 construir_indicador_tendencia_patron             cap_03 lectura 997054d | ficha IGUAL | dataset contra ficha leida: igual fuera de aristas | pasos 6
+14 construir_grafico_escalonado_pronosticos         cap_03 lectura 997054d | ficha IGUAL | dataset contra ficha leida: igual fuera de aristas | pasos 8
+15 archivar_indicadores_resolver_problemas          cap_03 lectura 997054d | ficha IGUAL | dataset contra ficha leida: igual fuera de aristas | pasos 4
+16 elegir_fabricar_pedido_pronostico                cap_03 lectura 997054d | ficha IGUAL | dataset contra ficha leida: igual fuera de aristas | pasos 9
+17 casar_flujo_fabricacion_flujo_ventas             cap_03 lectura b63405c | ficha IGUAL | dataset contra ficha leida: igual fuera de aristas | pasos 12
+18 dimensionar_plantilla_administrativa_pronostico  cap_03 lectura b63405c | ficha IGUAL | dataset contra ficha leida: igual fuera de aristas | pasos 7
+19 decidir_aceptar_rechazar_material_defectuoso     cap_03 lectura b63405c | ficha IGUAL | dataset contra ficha leida: igual fuera de aristas | pasos 8
+20 elegir_inspeccion_barrera_monitorizacion         cap_03 lectura b63405c | ficha IGUAL | dataset contra ficha leida: igual fuera de aristas | pasos 12
+filas: 20 | ficha igual a su lectura: 20 | distinta: 0 | nodo igual a su ficha leida fuera de aristas: 20 | distinto: 0
+pasos en el dataset de cap_02: 50
+pasos en el dataset de cap_03: 108

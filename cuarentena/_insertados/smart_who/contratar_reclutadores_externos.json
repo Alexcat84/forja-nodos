@@ -1,0 +1,35 @@
+{
+  "condiciones_activacion": "Cuando buscas talento directivo y vas a apoyarte en un reclutador de fuera. El libro dice que los reclutadores siguen siendo una fuente clave de talento ejecutivo, pero que solo pueden hacer hasta cierto punto si no les expones la cultura y el funcionamiento interno de tu negocio.",
+  "denominaciones": {
+    "nombre_largo": "Contratar reclutadores externos y meterlos dentro",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "Hiring External Recruiters"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "contratacion",
+  "entregable_esperado": "Un reclutador externo contratado con su propia tarjeta de puntuacion, que entiende tu negocio y tu cultura y al que puedes pedir cuentas por lo que hay en esa tarjeta.",
+  "fuentes": [
+    {
+      "clave": "smart_who",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "id": "contratar_reclutadores_externos",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Usa el metodo descrito en este libro para identificar y contratar reclutadores que sean jugadores A.",
+    "Construye una tarjeta de puntuacion para tus necesidades de reclutamiento.",
+    "Haz responsables a los reclutadores que contrates de lo que hay en esa tarjeta.",
+    "Invierte tiempo en asegurarte de que los reclutadores entienden tu negocio y tu cultura.",
+    "Tratalos como socios y dejales mirar lo bastante por debajo del quimono para que entiendan de verdad quien eres, como firma y como persona, porque un reclutador que no entiende quien eres va a ser contraproducente.",
+    "Se abierto desde el principio y comparte con ellos tu tarjeta de puntuacion."
+  ],
+  "resumen_teorico": "Es el punto 4 del recuadro How to Source. La analogia con la que el libro lo explica: piensa en los reclutadores como pensarias en un medico o en un asesor financiero, porque cuanto mas los mantengas a oscuras sobre quien eres, que va mal y que necesitas de verdad, menos eficaces seran. La señal que el libro da de que un reclutador es bueno: los grandes reclutadores es improbable que acepten un encargo tuyo si no tienen la oportunidad de conseguir esa vision, y aunque firmen puede que te obliguen a explorar candidatos y perspectivas distintos como forma de mirar ellos por debajo del quimono. Y lo que hacen los mejores: te educan sobre el mercado del talento. El caso nombrado es el de Ed Evans, vicepresidente senior de recursos humanos de Allied Waste, la empresa de gestion de residuos de 6.000 millones de dolares, que ha trabajado con muchos reclutadores a lo largo de su carrera y ha visto niveles de desempeño muy variados. El resultado que el libro atribuye a hacerlo asi: ser abierto desde el principio, compartir la tarjeta de puntuacion y hacer todo lo demas para meter dentro a un reclutador de fuera agiliza el proceso y mejora los resultados.",
+  "titulo": "Contratar reclutadores externos y meterlos dentro del negocio"
+}

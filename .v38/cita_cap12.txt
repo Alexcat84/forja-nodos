@@ -1,0 +1,4 @@
+$ sed -n "15p" fuentes/scott_radical_candor/cap_12.md | cut -c1-200
+SHARE YOUR STORIES
+$ sed -n "17p" fuentes/scott_radical_candor/cap_12.md | cut -c1-260
+EXPLAIN RADICAL CANDOR to your team so they understand what you’re up to. You can also ask them to read the book, or show them videos that are on the Radical Candor website. But it’s best if you explain it in your own words. What is your version of the “

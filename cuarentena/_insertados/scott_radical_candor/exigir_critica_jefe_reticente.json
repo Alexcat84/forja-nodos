@@ -1,0 +1,40 @@
+{
+  "id": "exigir_critica_jefe_reticente",
+  "titulo": "Exigir la critica que tu jefe no se atreve a darte, con las tres frases del texto y el silencio contado hasta seis",
+  "denominaciones": {
+    "nombre_largo": "Lo que puede hacer quien sospecha que su jefe se contiene: hacerselo saber, decir una de las tres frases, parar, contar hasta seis y aguantar la incomodidad",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "Women: demand criticism"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando sospechas que tu jefe duda en criticar tu trabajo y te esta dejando sin la opinion que necesitas para mejorar.",
+  "entregable_esperado": "Una valoracion franca sacada de tu jefe, y no la sensacion de que todo va bien porque nadie dice lo contrario.",
+  "pasos_accionables": [
+    "Hazle saber a tu jefe que quieres mas opinion suya, que es lo que el texto pone como util cuando te preocupa que dude en criticar tu trabajo.",
+    "Prueba a decir una de las tres frases que el texto da. La primera: que puedo hacer o dejar de hacer para ponertelo mas facil a la hora de ser radicalmente franco conmigo.",
+    "La segunda: me preocupa que estes tan pendiente de mis sentimientos que dudes en darme la opinion que necesito para mejorar.",
+    "La tercera: lo que mas necesito de ti es que me digas lo que piensas de verdad.",
+    "Y entonces para.",
+    "Cuenta hasta seis en tu cabeza.",
+    "Abraza la incomodidad.",
+    "Haz lo que haga falta para arrancarle una valoracion franca a tus colegas o a tu jefe.",
+    "Repasa la seccion de mas arriba sobre como conseguir guia, y redobla."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_09.md, unidad Cap. 6, Guidance. Sale de las lineas 295 a 299, bajo el rotulo Women: demand criticism, dentro de la seccion GENDER AND GUIDANCE y bajo la cabeza What can you do. ES LA PIEZA P21 DE LA FRONTERA DE ESTA VUELTA, y la hermana de comprobar_criticas_hombre_mujeres_equipo: el libro pone las dos caras del mismo problema, la de quien da la guia y la de quien la recibe, con un rotulo cada una. POR QUE ES PROCEDIMIENTO Y NO POSTURA, con D.27 delante: la linea 299 pone TRES frases literales, mas cuatro actos seguidos en imperativo, parar, contar hasta seis, abrazar la incomodidad y hacer lo que haga falta, mas la remision a la seccion de arriba. Es inventario de MEDIOS y las frases son objetos de trabajo del propio libro. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 9 pasos, 9 TRANSCRIPCION, 0 PUENTE. P1 sale de la linea 297; P2 a P9 de la 299. LAS TRES FRASES VAN UNA POR PASO y no fundidas, porque el texto las ofrece como alternativas entre si con un o, y fundirlas leeria como si hubiera que decir las tres. EL P9 REMITE a la seccion SOLICITING IMPROMPTU GUIDANCE del mismo capitulo, y eso lo escribe la linea 299 literalmente, Review the section above on getting guidance: la arista a abrazar_incomodidad_arrancar_critica_equipo va a la cola del cierre, porque los dos extremos viven hoy en cuarentena. EL CONTAR HASTA SEIS es del texto aqui tambien y no importado por mi del otro nodo: la linea 299 lo escribe, Count to six in your head. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: que hacer si despues de las tres frases sigue sin decir nada, ni cuantas veces se insiste.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-12"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "atribuciones": []
+}

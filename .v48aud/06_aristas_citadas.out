@@ -1,0 +1,32 @@
+poblacion de ids vivos (grafo + bandejas): 553
+
+== buscar_regularidad_bloques_iguales_trabajo_mando
+   VIVE en bandeja/grove_high_output  agrupar_tareas_semejantes_aprovechar_preparacion
+   VIVE en bandeja/grove_high_output  representar_actividad_caja_negra_ventanas
+   VIVE en bandeja/grove_high_output  subir_productividad_gerencial_tres_vias
+   VIVE en bandeja/grove_high_output  usar_calendario_herramienta_planificacion_produccion
+
+== decir_no_trabajo_excede_capacidad
+   VIVE en bandeja/grove_high_output  equilibrar_capacidad_personal_inventario_plazo
+   VIVE en bandeja/grove_high_output  subir_productividad_gerencial_tres_vias
+   VIVE en bandeja/grove_high_output  usar_calendario_herramienta_planificacion_produccion
+
+== dimensionar_numero_subordinados_medio_dia_semanal
+   VIVE en bandeja/grove_high_output  detectar_palanca_negativa_actividad_mando
+   VIVE en bandeja/grove_high_output  dimensionar_plantilla_administrativa_pronostico
+   VIVE en bandeja/grove_high_output  llevar_inventario_proyectos_discrecionales
+   VIVE en bandeja/grove_high_output  subir_productividad_gerencial_tres_vias
+
+== llevar_inventario_proyectos_discrecionales
+   VIVE en bandeja/grove_high_output  detectar_palanca_negativa_actividad_mando
+   VIVE en bandeja/grove_high_output  dimensionar_inventario_materia_prima_reposicion
+   VIVE en bandeja/grove_high_output  subir_productividad_gerencial_tres_vias
+   VIVE en bandeja/grove_high_output  usar_calendario_herramienta_planificacion_produccion
+
+== usar_calendario_herramienta_planificacion_produccion
+   VIVE en bandeja/grove_high_output  decir_no_trabajo_excede_capacidad
+   VIVE en bandeja/grove_high_output  identificar_paso_limitante_jornada_desfases
+   VIVE en bandeja/grove_high_output  subir_productividad_gerencial_tres_vias
+
+ids nombrados que no existen en ninguna sede: 0
+ids nombrados en total por las cinco fichas: 18

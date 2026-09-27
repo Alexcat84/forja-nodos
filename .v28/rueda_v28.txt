@@ -1,0 +1,19 @@
+CABEZA DE LA RUEDA : recorrer_rueda_hacer_cosas_equipo
+  vive en el grafo : False
+  piezas de cap_07 que NO son la cabeza : 24
+  de ellas, YA EN EL GRAFO             : 10
+  de ellas, aun en bandeja             : 14
+
+ARISTAS EN EL GRAFO QUE TOCAN A LA CABEZA : 0
+
+LAS PIEZAS DE cap_07 YA EN EL GRAFO, CON SUS ARISTAS:
+   L91   escuchar_callado_equipo_tranquilizar_incomodo            previos=[] siguientes=[]
+   L113  escuchar_ruidoso_opinion_fuerte_pedir_agujeros           previos=[] siguientes=[]
+   L131  crear_cultura_escucha_equipo                             previos=[] siguientes=[]
+   L155  adaptar_escucha_cultura_ajena                            previos=[] siguientes=[]
+   L197  explicar_idea_facil_comprender_oyente                    previos=[] siguientes=[]
+   L225  centrar_debate_ideas_fuera_egos                          previos=[] siguientes=[]
+   L239  abrir_debate_humor_explicar_proposito                    previos=[] siguientes=[]
+   L295  bajar_detalle_organizacion_fuente_hechos                 previos=[] siguientes=[]
+   L389  aprender_resultados_vencer_dos_presiones                 previos=[] siguientes=['cambiar_posicion_hechos_explicar_cambio']
+   L403  cambiar_posicion_hechos_explicar_cambio                  previos=['aprender_resultados_vencer_dos_presiones'] siguientes=[]

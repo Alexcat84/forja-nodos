@@ -1,0 +1,9 @@
+montar_tablero_kanban_medir_actividades   (10 pasos)   poblacion 316 = 203 grafo + 113 bandejas
+  vecinos POR ENCIMA de umbral: 0
+  los 5 mas altos por similitud_texto, esten o no por encima:
+    pasear_organizacion_hallar_problemas_pequenios       sim=0.320 fam=0.000 paso=0.412
+    leer_seniales_fallo_jefe_reunion_solas               sim=0.298 fam=0.000 paso=0.370
+    montar_reunion_general_presentaciones_preguntas      sim=0.293 fam=0.111 paso=0.394
+    montar_reunion_gran_decision                         sim=0.286 fam=0.125 paso=0.460
+    fijar_fecha_cierre_debate_equipo                     sim=0.286 fam=0.000 paso=0.449
+  segundos: 171.5

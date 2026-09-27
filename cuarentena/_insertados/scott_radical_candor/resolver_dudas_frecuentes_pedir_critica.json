@@ -1,0 +1,45 @@
+{
+  "condiciones_activacion": "Cuando ya estas pidiendo critica y te tropiezas con una de las dudas que el texto recoge de sus talleres.",
+  "denominaciones": {
+    "nombre_largo": "Las preguntas frecuentes del epilogo sobre pedir critica: la pregunta que se queda rancia, la critica que no puedes arreglar, el jefe joven con gente mayor y el miedo a empezar",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "FAQ"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "entregable_esperado": "Cada duda resuelta con la respuesta del texto y con la accion concreta que esa respuesta encarga.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-13"
+    }
+  ],
+  "id": "resolver_dudas_frecuentes_pedir_critica",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Si tu pregunta recurrente se te esta quedando rancia y te preguntas si tienes que usar la misma cada semana, parte de lo que el texto dice en general: la consistencia, tanto en cuando pides critica como en la pregunta que usas, tiende a hacer que la gente se sienta mas comoda dandotela, porque forma parte de una rutina esperada.",
+    "Pero introduce alguna variacion si quieres, y sobre todo si tu pregunta no esta sacando respuestas.",
+    "Y no dejes que el hecho de no estar recibiendo buena critica sea una excusa para dejar de pedirla: si lo que haces no funciona prueba algo nuevo, y pregunta por que no funciona. Di, con tus palabras, se que no soy perfecto y que probablemente hago mil cosas mal cada dia. Por que no me lo dice nadie?",
+    "Si la respuesta que recibes va de algo que no puedes arreglar, reconoce primero que no sabes como arreglarlo.",
+    "Pregunta si pueden ayudarte a resolver el problema.",
+    "Si ninguno de los dos tiene una solucion a mano, retate a ti mismo: es de verdad algo que no puedes arreglar?",
+    "Di que vas a necesitar algo de tiempo para pensarlo y que volveras a ellos.",
+    "Y si acabas sin saber como resolver el problema, explica por que no puedes resolverlo.",
+    "Si eres un jefe nuevo trabajando con gente bastante mayor que tu y temes parecer debil pidiendo critica, haz lo que el texto llama una de las cosas mas eficaces que puedes hacer con cualquier persona a tu cargo, y especialmente con las mayores: pedirles que compartan su sabiduria y su experiencia.",
+    "Cuenta con la razon que el texto da: es tentador para los empleados mayores despachar a los jefes jovenes como sabelotodos arrogantes. Demuestrales que se equivocan.",
+    "Si lo que te para es el miedo a recibir critica, empieza por donde el texto dice que empieces, y parte de que eso es normal: nadie quiere de verdad oir criticas.",
+    "Centrate en que solo puedes arreglar los problemas que conoces, y en que si la persona se preocupa lo bastante como para hacerte ver un problema quiza tambien te ayude a arreglarlo.",
+    "Si tiendes al perfeccionismo, recuerdate que eres humano y que vas a cometer errores, y que de hecho asi es como se mejora.",
+    "Y trabaja la mentalidad del todavia no que el texto toma de Carol Dweck: en un instituto de Chicago los alumnos que no aprobaban un curso recibian la nota todavia no, y eso es fantastico, porque con un suspenso piensas que no eres nada y no estas en ninguna parte, y con un todavia no entiendes que estas en una curva de aprendizaje, lo que te da un camino hacia el futuro.",
+    "Cierra con lo que el texto pone de remate: puede que hayas tenido unas cuantas erratas en una presentacion importante, o que te hayas enrollado en una reunion y la gente sintiera que ocupabas demasiado aire. No significa que seas un desastre: significa que eres humano."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_13.md, unidad Afterword, titulo textual Afterword to the Revised Edition: Rolling Out Radical Candor. Sale de las lineas 167 a 186, bajo el rotulo FAQ de la linea 167. ES LA PIEZA 6 DE LA FRONTERA DE cap_13. POR QUE ES PROCEDIMIENTO Y NO UN CONJUNTO DE POSTURAS, con D.27 delante: el libro pone su propio INVENTARIO DE OBJETOS, cuatro dudas nombradas una a una y escritas como pregunta en las lineas 169, 173, 177 y 181, y cada respuesta trae actos encargados y no solo opinion (reconoce que no sabes arreglarlo, pregunta si pueden ayudarte, di que volveras, pideles que compartan su sabiduria). Deja fichero: la duda resuelta y el acto hecho. TIENE PRECEDENTE DE FORMA EN ESTA MISMA BANDEJA: resolver_dudas_frecuentes_reuniones_salto_nivel sale de cap_09 con la misma figura, un bloque de preguntas frecuentes que el libro contesta una a una, y esta casa ya lo trato como nodo. SU PAR CON ESE NODO ES SANO: comparten la forma y ni un objeto, porque aquel contesta dudas de las reuniones de salto de nivel y este de pedir critica. Y NO ES UNA SERIE D.37: el texto no escribe cuantas dudas recoge, asi que ni el id ni el titulo llevan cifra. RELECTURA DE FIDELIDAD D.30 EN EL ACTO, paso a paso contra su linea: 15 pasos, 15 TRANSCRIPCION, 0 PUENTE. P1 a P3 de la linea 171; P4 a P8 de la linea 175; P9 y P10 de la linea 179; P11 a P14 de la linea 183; P15 de la linea 185. LA CITA DE CAROL DWECK VIAJA CON SU AUTORA NOMBRADA porque el libro la nombra y sin el nombre el paso no se puede buscar, que es manual 3.5. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: cuanto tiempo es razonable pedir para pensar una critica que no sabes arreglar, y que se hace si la persona mayor sigue despachandote. El libro pone las cuatro dudas y no pone esas dos respuestas.",
+  "titulo": "Resolver las dudas frecuentes que aparecen al empezar a pedir critica, con la respuesta que el texto da a cada una"
+}

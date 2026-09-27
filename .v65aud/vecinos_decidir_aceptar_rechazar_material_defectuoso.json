@@ -1,0 +1,20 @@
+{
+ "id": "decidir_aceptar_rechazar_material_defectuoso",
+ "grafo": 366,
+ "bandejas": 113,
+ "vecinos": [
+  {
+   "id": "dimensionar_plantilla_administrativa_pronostico",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.372,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.364
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 4 del candidato contra paso 2 de dimensionar_plantilla_administrativa_pronostico"
+  }
+ ]
+}

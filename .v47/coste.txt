@@ -1,0 +1,13 @@
+| en que se fue | medida | de donde sale |
+|---|---:|---|
+| **la aduana en seco de los `6` candidatos** | **4090 s** | PATRON: `.v47/reloj_c0*.txt`, sumados por `.v47/coste.py` |
+| el repaso de aduana de la ficha corregida de `P27` | 578 s | `.v47/reloj_madre_p27.txt` |
+| las dos pruebas de aceptacion, apertura y cierre | 232 s | `.v47/apertura_pruebas.txt` y `.v47/cierre_pruebas.txt`, las dos con su `real` |
+| el resto: leer el capitulo, escribir las `6` fichas y el reporte | sin cifra | sin instrumento propio, y por eso no le pongo cifra |
+| **total cronometrado del turno** | **4900 s  (81.7 min)** | la suma de las filas de arriba |
+
+EL POR CIENTO DE LO CRONOMETRADO QUE SE FUE EN LA ADUANA EN SECO: 95.3 por ciento
+  (la aduana entera, 4668 s de 4900 s cronometrados)
+LA PRUEBA DE ACEPTACION, LAS DOS CORRIDAS                    : 4.7 por ciento
+
+Y NO HAY FILA EN USD: grep -rl USD src/ scripts/ forja.py da 0 ficheros.

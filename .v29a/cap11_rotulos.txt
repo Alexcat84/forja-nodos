@@ -1,0 +1,44 @@
+--- ROTULOS (lineas cortas sin punto final) entre L271 y L333 ---
+L271: BE CONSCIOUS OF CULTURE
+L273: Everyone is watching you, but that doesn’t mean it’s all about you
+L283: People are listening. Like it or not, you’re under the microscope
+L295: Clarify. Be vigilant about clarifying what you are communicating
+L301: Debate and decide explicitly. Don’t let things that pervert your culture “just happen”
+L307: Persuade. Pay attention to the small things
+L315: Execute: Action should reflect your culture
+L321: Learn
+L327: Listen …
+
+--- LINEAS L271-L333, primeras palabras ---
+L271: BE CONSCIOUS OF CULTURE
+L273: Everyone is watching you, but that doesn’t mean it’s all about you
+L275: “CULTURE EATS STRATEGY for lunch.”1 A team’s culture has an enormous impact on its results, and a leader’s personality has a huge impact on a team’s culture. Wh
+L277: Ben Silbermann, founder and CEO of Pinterest, once told me that he was worried the company’s culture reflected his own personality too much. He was introverted;
+L279: That’s a scary thing. Since it’s pretty much impossible to change who you are as a human being, does that mean that you can’t really change your team’s culture?
+L281: Fortunately, as with all things, it’s not just about you. As with your evaluations of others, focus on behavior rather than on character, on actions rather than
+L283: People are listening. Like it or not, you’re under the microscope
+L285: When you become the boss, you are under the microscope. People do listen to you in an intense way you never experienced before you became a manager. They attrib
+L287: When he led Goldman Sachs, Bob Rubin once walked the trading floor to get a feel for what was going on. He stopped and chatted with a trader who’d just complete
+L289: When I was at Apple, somebody told me that the bus program to shuttle employees back and forth between Cupertino and San Francisco had been delayed because Stev
+L291: You don’t have to be crazy successful like Bob Rubin or Steve Jobs to have a bigger impact than you intend to as the boss. Early in my career, I said to a sales
+L293: Often when you’re the boss you might say or do something you expect to be blown off, whereas in fact you’ve moved way further out on the “challenge directly” ax
+L295: Clarify. Be vigilant about clarifying what you are communicating
+L297: Given the level of scrutiny you’re under as the boss, it’s important to clarify what you’re saying—even when you think you’re not saying anything.
+L299: When I was at Google, I drove an orange Honda Element, pretty identifiable as mine since it was virtually alone among the herd of Priuses and other fuel-efficie
+L301: Debate and decide explicitly. Don’t let things that pervert your culture “just happen”
+L303: There are a number of debates and decisions that you are going to be tempted to “delegate to HR.” These are often around things you’d rather not waste your brai
+L305: Believe me, it’s tempting to punt on these decisions. But if you do, the decisions that do get made by HR/employment lawyers without your humanizing influence w
+L307: Persuade. Pay attention to the small things
+L309: When I first got the job at Apple, I got a thoughtfully organized tri-fold folder with the words, “Ah, Paperwork!” written on the outside. Real thought and care
+L311: When you pay attention to seemingly small details, it can have a big impact on persuading people that your culture is worth understanding and adapting to. The o
+L313: The office environment affects culture. Do you want a Zen-like orderly, well-lit environment or a stuff-everywhere frenetic environment? The small choices you m
+L315: Execute: Action should reflect your culture
+L317: It’s surprising how a small action from you can impact your team’s culture, even after you’re no longer around.
+L319: One day I arrived at my office at Google to find that a couch had been moved to a place where it forced people to take several extra steps to walk around it. I 
+L321: Learn
+L323: Shit happens. When you’re the boss and shit happens, it’s your responsibility to learn from it and make a change. If you don’t, you create a culture that doesn’
+L325: At Google, my team and I wanted to foster an informal culture. One of the small things we did was to turn a conference room into a “team cozy,” with no tables o
+L327: Listen …
+L329: The most amazing thing about a culture is that once it’s strong, it’s self-replicating. Even though you’ve taken a number of conscious actions to impact it, you
+L331: When we built AdSense teams globally, I was nervous about what the team culture would be like in each office. I wanted to encourage all the teams to challenge a
+L333: Then somebody on the team in China had the idea that all AdSense offices around the world make a video to introduce the teams to one another. I’ll confess that 

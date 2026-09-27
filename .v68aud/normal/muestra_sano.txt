@@ -1,0 +1,4 @@
+lineas de la 68: 11 | SANO: 9 | muestra: 3 | semilla 68
+linea 895  agrupar_interrupciones_subordinados_reuniones_regulares | agendar_cuidados_propios_cumplirlos
+linea 898  agrupar_interrupciones_subordinados_reuniones_regulares | preparar_respuestas_estandar_interrupciones_repetidas
+linea 901  agrupar_interrupciones_subordinados_reuniones_regulares | identificar_paso_limitante_jornada_desfases

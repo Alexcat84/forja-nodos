@@ -1,0 +1,22 @@
+POBLACION (grafo + bandejas + pendiente): 603
+ids repetidos en la bandeja de grove: 0 []
+
+=== todo nodo de la poblacion cuyo titulo o id toca el tema del entrenamiento ===
+  BANDEJA:ensayo_referencia_163 acuerdo_representante_servicio                       Cláusulas de Servicio y Capacitación en Acuerdos con Representantes
+  GRAFO          calibrar_decision_despido_documentarla               Calibrar la decision de despido con tu jefe, tus iguales y recursos humanos, y documentarla hac
+  GRAFO          debatir_decidir_asuntos_cultura_evitar_delegar       Debatir y decidir tu misma los asuntos de cultura que te tienta delegar a recursos humanos, par
+  BANDEJA:grove_high_output desarrollar_primer_curso_entrenamiento               Desarrollar el primer curso de entrenamiento en siete pasos, desde el alcance sin ambicion hast
+  GRAFO          desplegar_tres_conversaciones_carrera                Desplegar con tu equipo la serie de tres conversaciones de carrera, con su cadencia y su encarg
+  BANDEJA:grove_high_output determinar_estado_presente_capacidades_proyectos_mer Determinar tu estado presente listando capacidades y proyectos en curso, en la misma moneda de 
+  GRAFO          dirigir_reunion_revision_trabajo                     Dirigir una reunion cuyo resultado excelente es opinion util sobre un trabajo en curso
+  BANDEJA:marquet_turn_the_ship encargar_meta_especifica_dejar_libre_metodo          Encargar una meta especifica sin decir como se cumple, y dejar los recursos como estaban
+  BANDEJA:ensayo_referencia_163 entrenamiento_continuo                               Entrenamiento Continuo (Ongoing Training)
+  GRAFO          escribir_escaleras_puesto_evitar_dos_extremos        Escribir las escaleras de puesto evitando los dos extremos que el texto nombra, con los operati
+  GRAFO          hacer_critica_pares_transparente_ensenar_escribirla  Hacer transparente la critica entre pares en vez de confidencial, extenderla a toda la plantill
+  BANDEJA:grove_high_output llevar_inventario_proyectos_discrecionales           Llevar un inventario de materia prima en forma de proyectos discrecionales, distinto del trabaj
+  PENDIENTE      pedir_critica_anonima_curso_entrenamiento_dictado    Pedir critica anonima tras dictar un curso de entrenamiento, con formulario numerico y pregunta
+  GRAFO          preguntar_seguimiento_hallar_huecos                  Preguntar en la reunion a solas las preguntas de seguimiento que ensenian los huecos entre lo q
+  BANDEJA:grove_high_output preparar_respuestas_estandar_interrupciones_repetida Preparar respuestas estandar para las clases de interrupcion que se repiten, y tenerlas disponi
+  BANDEJA:grove_high_output priorizar_lista_entrenamiento_subordinados           Priorizar la lista de en que hay que entrenar a los subordinados, tras preguntarles e inventari
+  GRAFO          tratar_jefe_entrenador                               Tratar a tu jefe como entrenador y no como juez
+  BANDEJA:grove_high_output usar_tres_clases_reunion_proceso                     Usar las tres clases de reunion de proceso que el libro cuenta y nombra: el uno a uno, la reuni

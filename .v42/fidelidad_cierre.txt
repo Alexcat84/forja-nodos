@@ -1,0 +1,24 @@
+$ python .v42/fidelidad.py
+#    candidato                                                pasos  puente   lineas del libro citadas en su resumen
+1    escuchar_entender_critica_dominar_defensa                13     0        8
+2    premiar_franqueza_hacer_escucha_tangible                 20     0        10
+3    integrar_peticion_critica_rutina_existente               13     0        6
+4    dar_elogio_disciplina_igual_critica                      20     0        11
+5    medir_critica_respuesta_oyente_brujula                   33     0        16
+6    montar_equipo_gestion_desempenio_revisar_sistema         12     0        4
+7    recorrer_trece_elementos_proceso_evaluacion_formal       14     0        4
+8    decidir_poner_nota_comunicar_proposito_limites           8      0        3
+9    elegir_categorias_nota_palabras_propias_empresa          15     0        3
+10   escribir_escaleras_puesto_evitar_dos_extremos            7      0        2
+11   fijar_cuatro_notas_calcular_nota_global                  12     0        4
+12   elegir_palabras_nota_definirlas_empresa_entera           10     0        4
+13   aplicar_consecuencias_nota_apoyar_fuerzas_persona        16     0        3
+14   repartir_notas_publicar_reparto_esperado                 9      0        2
+15   presionar_curva_notas_evitar_forzarla                    11     0        5
+16   calibrar_notas_reunion_jefes_pares                       15     0        4
+17   evaluar_desempenio_dos_veces_anio                        11     0        4
+18   montar_evaluacion_360_grados_ligera_pares                10     0        3
+19   hacer_critica_pares_transparente_ensenar_escribirla      11     0        4
+20   mantener_proceso_evaluacion_ligero_vigilar_crecimiento   13     0        5
+
+TOTAL: 273 pasos en 20 candidatos, 0 PUENTE, 105 citas de linea

@@ -1,0 +1,33 @@
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 391   (346 del grafo mas 45 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 0
+  BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+  vecinos levantados en total      : 2
+  por candidato bloqueado          : menor 2, mediana 2, mayor 2
+  que señal levanta cada vecindad  : similitud_texto 2
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] preparar_respuestas_estandar_interrupciones_repetidas   (preparar_respuestas_estandar_interrupciones_repetidas.json)
+    vecino buscar_regularidad_bloques_iguales_trabajo_mando  [levantada por: similitud_texto]
+      similitud_texto 0.423 | familia_id 0.000 | paso_contra_nodo 0.551
+      paso 1 del candidato contra paso 1 de buscar_regularidad_bloques_iguales_trabajo_mando
+    vecino llevar_inventario_proyectos_discrecionales  [levantada por: similitud_texto]
+      similitud_texto 0.385 | familia_id 0.000 | paso_contra_nodo 0.471
+      paso 5 del candidato contra paso 3 de llevar_inventario_proyectos_discrecionales
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.

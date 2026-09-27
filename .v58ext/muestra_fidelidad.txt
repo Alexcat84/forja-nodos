@@ -1,0 +1,46 @@
+MUESTRA DE FIDELIDAD DEL REGIMEN LIGERO (D.58)
+  libro    : grove_high_output
+  semilla  : v58
+  capitulos: cap_14, cap_15, cap_16
+
+  RELEIDO ENTERO : cap_16
+  POR MUESTRA    : cap_14, cap_15, 15 pasos cada uno
+
+  EL DISPARADOR: si la muestra de un capitulo pasa del 10 por ciento de
+  pasos inventados, ESE CAPITULO SE RELEE ENTERO ANTES DE SEGUIR.
+
+  --- cap_14: 15 paso(s) en la muestra
+    entregar_evaluacion_desempeno_tres_claves      P1   Se totalmente franco con el subordinado al entregarle la rev
+    entregar_evaluacion_desempeno_tres_claves      P2   Recuerda que el objetivo de la comunicacion es hacer llegar 
+    entregar_evaluacion_desempeno_tres_claves      P3   Observa al subordinado mientras hablas y sigue insistiendo h
+    entregar_evaluacion_desempeno_tres_claves      P4   Emplea toda tu capacidad sensorial, no solo el oido, para co
+    entregar_evaluacion_desempeno_tres_claves      P5   Deja fuera tus propias inseguridades, ansiedades o culpa: la
+    entregar_evaluacion_desempeno_tres_claves      P6   Controla esas emociones propias para que no afecten tu tarea
+    guiar_subordinado_etapas_resistencia_desempeno P1   Reconoce en que etapa esta el subordinado frente al problema
+    guiar_subordinado_etapas_resistencia_desempeno P2   Si el subordinado ignora el problema, aportale hechos y ejem
+    guiar_subordinado_etapas_resistencia_desempeno P5   Lleva la cuenta de en que etapa esta el subordinado en cada 
+    guiar_subordinado_etapas_resistencia_desempeno P6   Si el subordinado no logra avanzar mas alla de culpar a otro
+    preparar_resena_mixta_hoja_trabajo             P1   Reune tantos aspectos del desempeno del subordinado como pue
+    preparar_resena_mixta_hoja_trabajo             P2   Sientate con una hoja en blanco y, sin editar en tu cabeza, 
+    preparar_resena_mixta_hoja_trabajo             P3   Cuando hayas agotado los items, guarda toda la documentacion
+    preparar_resena_mixta_hoja_trabajo             P4   Busca relaciones entre los distintos items anotados en la ho
+    preparar_resena_mixta_hoja_trabajo             P6   Preguntate si el subordinado sera capaz de recordar todos lo
+
+  --- cap_15: 15 paso(s) en la muestra
+    gestionar_retencion_subordinado_valioso_renunc P2   Persigue con energia cada via disponible para retener al sub
+    gestionar_retencion_subordinado_valioso_renunc P3   Si la transferencia parece la salida mas probable, asume tu 
+    gestionar_retencion_subordinado_valioso_renunc P5   Ayudalo a sentirse comodo con el nuevo arreglo, dejando clar
+    gestionar_retencion_subordinado_valioso_renunc P6   Si el subordinado dice que ya acepto un puesto en otra empre
+    responder_primer_aviso_renuncia_subordinado    P1   Deja lo que estas haciendo en cuanto el subordinado te avisa
+    responder_primer_aviso_renuncia_subordinado    P2   Sientalo y preguntale por que se va.
+    responder_primer_aviso_renuncia_subordinado    P5   No discutas, no sermonees y no entres en panico durante esta
+    usar_banco_nueve_preguntas_entrevista          P2   Preguntale cuales son sus debilidades y que esta haciendo pa
+    usar_banco_nueve_preguntas_entrevista          P3   Preguntale que te convenceria de que tu empresa deberia cont
+    usar_banco_nueve_preguntas_entrevista          P4   Preguntale que problemas esta encontrando en su puesto actua
+    usar_banco_nueve_preguntas_entrevista          P5   Preguntale por que cree que esta listo para este nuevo puest
+    usar_banco_nueve_preguntas_entrevista          P6   Preguntale cuales considera sus logros mas importantes y por
+    usar_banco_nueve_preguntas_entrevista          P7   Preguntale cuales considera sus fracasos mas importantes y q
+    usar_banco_nueve_preguntas_entrevista          P8   Si el puesto lo justifica, preguntale por que cree que deber
+    usar_banco_nueve_preguntas_entrevista          P9   Preguntale cual fue el curso o proyecto mas importante que c
+
+  --- cap_16: ENTERO, 4 paso(s), no hay muestra que elegir

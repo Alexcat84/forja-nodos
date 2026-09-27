@@ -1,0 +1,70 @@
+# -*- coding: utf-8 -*-
+"""CANDIDATO 3 DE LA VUELTA 53: cap_06 P17, L49, LA AUTOCONFIANZA QUE VENCE AL SINDROME.
+
+Se escribe y se pasa por la aduana EN EL MISMO ACTO (EXTRACTOR.md 16).
+"""
+import io
+import json
+import os
+
+ID = "vencer_sindrome_grupo_pares_autoconfianza"
+DESTINO = "cuarentena/grove_high_output/%s.json" % ID
+
+NODO = {
+    "id": ID,
+    "titulo": "Vencer el sindrome del grupo de pares infundiendo autoconfianza, y la constatacion de que nadie se muere por decidir mal",
+    "dominio": "gestion_equipos",
+    "estado": "vivo",
+    "ids_alias": [],
+    "nodos_previos": [],
+    "nodos_siguientes": [],
+    "atribuciones": [],
+    "fuentes": [{"clave": "grove_high_output", "fecha": "2026-09-19"}],
+    "denominaciones": {
+        "nombre_largo": "Las tres fuentes de la autoconfianza que vence al sindrome del grupo de pares: la familiaridad con el asunto, la experiencia, y la constatacion visceral de que nadie se ha muerto por una decision de negocio equivocada",
+        "sigla": "",
+        "otros_idiomas": [
+            {"idioma": "ingles", "termino": "peer-group syndrome"},
+            {"idioma": "ingles", "termino": "self-confidence"},
+            {"idioma": "ingles", "termino": "gut-level realization"},
+        ],
+    },
+    "condiciones_activacion": "Cuando un grupo de iguales se reune a decidir y da vueltas sin que nadie se moje, porque cada uno espera a que aparezca el consenso antes de arriesgar una postura.",
+    "entregable_esperado": "Cada miembro del grupo con la autoconfianza para sostener una postura propia, y toda la operacion sabiendo que nadie se ha muerto nunca por una decision de negocio equivocada, una accion inapropiada o por ser desautorizado.",
+    "pasos_accionables": [
+        "Cuando quieras vencer el sindrome del grupo de pares, trabaja sobre la autoconfianza de cada uno de los miembros, que es lo que lo vence.",
+        "Apoya una parte de esa autoconfianza en que cada miembro este familiarizado con el asunto que se esta considerando.",
+        "Apoya otra parte en la experiencia.",
+        "Cuenta con que al final la autoconfianza sale sobre todo de una constatacion visceral: que nadie se ha muerto nunca por tomar una decision de negocio equivocada, ni por emprender una accion inapropiada, ni por ser desautorizado.",
+        "Haz que todo el mundo en tu operacion entienda esto, y no solo los que se sientan a la mesa.",
+    ],
+    "resumen_teorico": (
+        "UNIDAD DE ORIGEN: fuentes/grove_high_output/cap_06.md, unidad Cap. 5, titulo textual Decisions, Decisions. "
+        "Sale de la PIEZA P17 de la frontera publicada hoy en OO.2.a, L49, 68 palabras, y de ningun otro tramo. "
+        "POR QUE ES PROCEDIMIENTO, por la prueba del inventario de EXTRACTOR.md 9.1: el tramo es corto, y aun asi pone su propio inventario de MEDIOS, "
+        "no de fines, y los nombra uno a uno (being familiar with the issue under consideration; from experience; a gut-level realization that nobody has "
+        "ever died from making a wrong business decision, or taking inappropriate action, or being overruled), y cierra con un mandato que no lleva "
+        "adjetivo de adecuacion ninguno (And everyone in your operation should be made to understand this). "
+        "EL AVISO DE 15.4 LO TENGO DELANTE: este es un parrafo POBRE, de una sola frase larga, y la casa tiene medido que el parrafo mas pobre del lote 1 "
+        "dio 83 por ciento de puentes. Por eso los cinco pasos se quedan pegados a lo que la frase dice y ni uno completa el bucle que el libro deja abierto. "
+        "DE DONDE SALE CADA PASO, uno a uno, todos de L49: paso 1 (You can overcome the peer-group syndrome if each of the members has self-confidence); "
+        "paso 2 (which stems in part from being familiar with the issue under consideration); paso 3 (and from experience); paso 4 (But in the end "
+        "self-confidence mostly comes from a gut-level realization that nobody has ever died from making a wrong business decision, or taking inappropriate "
+        "action, or being overruled); paso 5 (And everyone in your operation should be made to understand this). "
+        "RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 5 pasos, 5 TRANSCRIPCION, 0 PUENTE. "
+        "LOS SITIOS DE TENTACION QUE DECLARO, y en los que NO escribi: NO escribo COMO se hace entender eso a toda la operacion, ni por que via, ni en que "
+        "acto, porque el libro dice should be made to understand y no pone el medio; escribir ahi una charla, un correo o una reunion seria inventarme el "
+        "procedimiento entero. NO escribo cada cuanto se repite, que es la segunda especie de PUENTE del lote 1. NO escribo quien responde de que se entienda. "
+        "NO escribo como se mide si la autoconfianza subio. NI UNA CIFRA A atribuciones: el tramo no trae ninguna. "
+        "DISCUTIBLE QUE MARCO ANTES DE SABER SI ACIERTO: con 68 palabras y cinco pasos, un lector estricto puede decir que esto es POSTURA sobre la "
+        "autoconfianza y no un procedimiento. Lo sostengo porque el libro nombra las tres fuentes una a una, que es inventario de medios y no de fines, y "
+        "porque el paso 5 es un mandato ejecutable sobre una poblacion nombrada, toda tu operacion. Si cae, cae DENTRO de mi marcado."
+    ),
+}
+
+if os.path.exists(DESTINO):
+    raise SystemExit("YA EXISTE: %s" % DESTINO)
+io.open(DESTINO, "w", encoding="utf-8", newline="\n").write(
+    json.dumps(NODO, ensure_ascii=False, indent=1) + "\n")
+print("ESCRITO: %s" % DESTINO)
+print("pasos: %d" % len(NODO["pasos_accionables"]))

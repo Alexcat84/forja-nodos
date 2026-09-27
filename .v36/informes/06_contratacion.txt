@@ -1,0 +1,20 @@
+$ python forja.py insertar cuarentena/scott_radical_candor/montar_proceso_contratacion_reducir_sesgo.json [veredictos y censos]
+ADUANA DE INSERCION, candidato 'montar_proceso_contratacion_reducir_sesgo'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (307 del grafo mas 41 que esperan en bandejas)
+
+DECLARADOS POR LECTURA: 2. Ninguna señal los levanto.
+  armar_plan_anual_crecimiento_equipo  [Armar una vez al anio el plan de gestion del crecimiento de cada persona del equipo, desde poner los nombres en las casillas hasta comprobar la equidad entre niveles]
+    señales: familia_id 0.0, paso_contra_nodo 0.442, similitud_texto 0.242
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  disenar_equipo_plan_anual  [Disenar tu equipo a un anio vista antes de que el hambre decida por ti]
+    señales: familia_id 0.0, paso_contra_nodo 0.469, similitud_texto 0.125
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  LA JERARQUIA LA CAZA LA LECTURA, NO LA SEÑAL (D.19, D.29).
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 308
+  censos escritos: atribuciones, denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 2
+CODIGO DE SALIDA: 0
+  ARCHIVADO EN EL MISMO ACTO (D.31): cuarentena/_insertados/scott_radical_candor/montar_proceso_contratacion_reducir_sesgo.json

@@ -1,0 +1,45 @@
+CANDIDATO cambiar_posicion_hechos_explicar_cambio  (1 pares)
+   vs abrir_debate_humor_explicar_proposito                   | paso 6 del candidato contra paso 6 de abrir_debate_humor_explicar_proposito | fam 0.111 pxn 0.475 sim 0.377 | levantada_por similitud_texto
+CANDIDATO decidir_momento_despedir_persona  (4 pares)
+   vs despedir_persona_franqueza_radical                      | paso 11 del candidato contra paso 1 de despedir_persona_franqueza_radical | fam 0.333 pxn 0.512 sim 0.347 | levantada_por familia_id
+   vs pedir_critica_equipo_premiarla                          | paso 2 del candidato contra paso 2 de pedir_critica_equipo_premiarla | fam 0.000 pxn 0.510 sim 0.369 | levantada_por similitud_texto
+   vs despedir_persona_respeto_franqueza                      | paso 12 del candidato contra paso 6 de despedir_persona_respeto_franqueza | fam 0.333 pxn 0.430 sim 0.199 | levantada_por familia_id
+   vs elegir_recolocar_despedir_persona                       | paso 6 del candidato contra paso 5 de elegir_recolocar_despedir_persona | fam 0.333 pxn 0.395 sim 0.232 | levantada_por familia_id
+CANDIDATO despedir_persona_franqueza_radical  (7 pares)
+   vs despedir_persona_respeto_franqueza                      | paso 7 del candidato contra paso 5 de despedir_persona_respeto_franqueza | fam 0.600 pxn 0.398 sim 0.204 | levantada_por familia_id
+   vs acompaniar_mejores_equipo_socio                         | paso 8 del candidato contra paso 9 de acompaniar_mejores_equipo_socio | fam 0.000 pxn 0.479 sim 0.379 | levantada_por similitud_texto
+   vs empezar_cultura_franqueza_radical                       | paso 4 del candidato contra paso 1 de empezar_cultura_franqueza_radical | fam 0.333 pxn 0.430 sim 0.381 | levantada_por similitud_texto,familia_id
+   vs equilibrar_elogio_critica_equipo                        | paso 1 del candidato contra paso 7 de equilibrar_elogio_critica_equipo | fam 0.000 pxn 0.398 sim 0.354 | levantada_por similitud_texto
+   vs elogiar_trabajo_especifico_contexto                     | paso 2 del candidato contra paso 1 de elogiar_trabajo_especifico_contexto | fam 0.000 pxn 0.396 sim 0.386 | levantada_por similitud_texto
+   vs elegir_recolocar_despedir_persona                       | paso 7 del candidato contra paso 5 de elegir_recolocar_despedir_persona | fam 0.333 pxn 0.394 sim 0.246 | levantada_por familia_id
+   vs desplegar_marco_franqueza_radical                       | paso 7 del candidato contra paso 6 de desplegar_marco_franqueza_radical | fam 0.333 pxn 0.386 sim 0.349 | levantada_por familia_id
+CANDIDATO reconocer_recompensar_gente_estable  (3 pares)
+   vs pedir_critica_equipo_premiarla                          | paso 3 del candidato contra paso 4 de pedir_critica_equipo_premiarla | fam 0.000 pxn 0.464 sim 0.367 | levantada_por similitud_texto
+   vs reconocer_recompensar_uso_metodo                        | paso 3 del candidato contra paso 2 de reconocer_recompensar_uso_metodo | fam 0.333 pxn 0.405 sim 0.123 | levantada_por familia_id
+   vs acompaniar_mejores_equipo_socio                         | paso 5 del candidato contra paso 11 de acompaniar_mejores_equipo_socio | fam 0.000 pxn 0.409 sim 0.342 | levantada_por lectura declarada
+CANDIDATO retar_superestrellas_equipo_constantemente  (9 pares)
+   vs criticar_trabajo_evitar_desanimo                        | paso 1 del candidato contra paso 10 de criticar_trabajo_evitar_desanimo | fam 0.000 pxn 0.474 sim 0.360 | levantada_por similitud_texto
+   vs pedir_critica_equipo_premiarla                          | paso 1 del candidato contra paso 2 de pedir_critica_equipo_premiarla | fam 0.143 pxn 0.472 sim 0.376 | levantada_por similitud_texto
+   vs despedir_persona_franqueza_radical                      | paso 1 del candidato contra paso 7 de despedir_persona_franqueza_radical | fam 0.000 pxn 0.467 sim 0.371 | levantada_por similitud_texto
+   vs revisar_ciclo_responsabilidades_relaciones              | paso 7 del candidato contra paso 6 de revisar_ciclo_responsabilidades_relaciones | fam 0.000 pxn 0.452 sim 0.373 | levantada_por similitud_texto
+   vs cuidar_persona_completa_equipo                          | paso 1 del candidato contra paso 2 de cuidar_persona_completa_equipo | fam 0.143 pxn 0.439 sim 0.374 | levantada_por similitud_texto
+   vs reconocer_recompensar_gente_estable                     | paso 13 del candidato contra paso 5 de reconocer_recompensar_gente_estable | fam 0.000 pxn 0.437 sim 0.373 | levantada_por similitud_texto
+   vs ajustar_franqueza_oido_oyente                           | paso 1 del candidato contra paso 6 de ajustar_franqueza_oido_oyente | fam 0.000 pxn 0.430 sim 0.388 | levantada_por similitud_texto
+   vs acompaniar_mejores_equipo_socio                         | paso 7 del candidato contra paso 7 de acompaniar_mejores_equipo_socio | fam 0.143 pxn 0.430 sim 0.380 | levantada_por similitud_texto
+   vs elogiar_trabajo_especifico_contexto                     | paso 1 del candidato contra paso 3 de elogiar_trabajo_especifico_contexto | fam 0.000 pxn 0.424 sim 0.387 | levantada_por similitud_texto
+CANDIDATO retirar_etiquetas_permanentes_equipo  (4 pares)
+   vs manejar_enfado_persona_desafiada                        | paso 2 del candidato contra paso 5 de manejar_enfado_persona_desafiada | fam 0.000 pxn 0.425 sim 0.400 | levantada_por similitud_texto
+   vs delimitar_franqueza_radical_cinco_noes                  | paso 3 del candidato contra paso 9 de delimitar_franqueza_radical_cinco_noes | fam 0.000 pxn 0.415 sim 0.356 | levantada_por similitud_texto
+   vs ajustar_franqueza_oido_oyente                           | paso 6 del candidato contra paso 7 de ajustar_franqueza_oido_oyente | fam 0.000 pxn 0.399 sim 0.380 | levantada_por similitud_texto
+   vs cambiar_potencial_trayectoria_crecimiento               | paso 2 del candidato contra paso 14 de cambiar_potencial_trayectoria_crecimiento | fam 0.000 pxn 0.542 sim 0.327 | levantada_por lectura declarada
+CANDIDATO revisar_cinco_causas_mal_desempenio  (1 pares)
+   vs pedir_critica_equipo_premiarla                          | paso 3 del candidato contra paso 1 de pedir_critica_equipo_premiarla | fam 0.000 pxn 0.375 sim 0.364 | levantada_por similitud_texto
+CANDIDATO subir_vara_calidad_equipo  (8 pares)
+   vs acompaniar_mejores_equipo_socio                         | paso 9 del candidato contra paso 11 de acompaniar_mejores_equipo_socio | fam 0.143 pxn 0.491 sim 0.362 | levantada_por similitud_texto
+   vs retirar_etiquetas_permanentes_equipo                    | paso 4 del candidato contra paso 6 de retirar_etiquetas_permanentes_equipo | fam 0.143 pxn 0.442 sim 0.361 | levantada_por similitud_texto
+   vs despedir_persona_franqueza_radical                      | paso 4 del candidato contra paso 11 de despedir_persona_franqueza_radical | fam 0.000 pxn 0.431 sim 0.386 | levantada_por similitud_texto
+   vs descubrir_motivacion_sentido_persona                    | paso 8 del candidato contra paso 4 de descubrir_motivacion_sentido_persona | fam 0.000 pxn 0.426 sim 0.366 | levantada_por similitud_texto
+   vs retar_superestrellas_equipo_constantemente              | paso 10 del candidato contra paso 13 de retar_superestrellas_equipo_constantemente | fam 0.143 pxn 0.424 sim 0.362 | levantada_por similitud_texto
+   vs cuidar_persona_completa_equipo                          | paso 1 del candidato contra paso 1 de cuidar_persona_completa_equipo | fam 0.143 pxn 0.418 sim 0.353 | levantada_por similitud_texto
+   vs delimitar_franqueza_radical_cinco_noes                  | paso 10 del candidato contra paso 2 de delimitar_franqueza_radical_cinco_noes | fam 0.000 pxn 0.407 sim 0.360 | levantada_por similitud_texto
+   vs pedir_critica_equipo_premiarla                          | paso 1 del candidato contra paso 7 de pedir_critica_equipo_premiarla | fam 0.143 pxn 0.405 sim 0.362 | levantada_por similitud_texto

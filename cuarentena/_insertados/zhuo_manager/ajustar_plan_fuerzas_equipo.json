@@ -1,0 +1,37 @@
+{
+  "id": "ajustar_plan_fuerzas_equipo",
+  "titulo": "Ajustar el plan a lo que tu equipo sabe hacer de verdad",
+  "denominaciones": {
+    "nombre_largo": "Por que poder hacer algo no es deberlo hacer, la cuenta del doble de tiempo por el ochenta por ciento de calidad, y los muchos caminos entre dos puntos",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "craft a plan based on your team strengths"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Al elegir entre varias formas de conseguir lo mismo, y sobre todo cuando un proyecto pide algo que tu equipo podria hacer pero no es su oficio central.",
+  "entregable_esperado": "Un plan que reconoce las fuerzas y las debilidades relativas de tu equipo, con el trabajo fuera de su oficio central encargado a quien si lo tiene.",
+  "pasos_accionables": [
+    "Haz con tus planes lo mismo que con tu estilo de direccion: que tengan en cuenta las capacidades unicas de tu equipo, igual que tu estilo refleja quien eres y en que eres bueno.",
+    "Identifica cual es el oficio central de tu equipo, es decir, aquello para lo que contratas y formas porque es el grueso de lo que haceis.",
+    "Cuando un proyecto pida algo que queda fuera de ese oficio central, acude a otro equipo, como hace la autora cuando hace falta un video de marketing pulido o un gran numero de ilustraciones.",
+    "No confundas poder con deber: aunque mucha gente de tu equipo pueda hacerlo, eso no significa que debais hacerlo vosotros.",
+    "Haz la cuenta que el libro hace: si no es tu competencia central, probablemente acabareis gastando el doble de tiempo para el ochenta por ciento de la calidad que conseguiria un equipo especializado.",
+    "No mandes a la caballeria de un ejercito a una mision de espionaje, ni crees un plan que no case con aquello para lo que tu equipo esta bien dotado.",
+    "Recuerda que suele haber docenas de maneras de ir de un punto a otro, por tierra, por mar o por aire, y que dentro de la tierra puedes elegir el camino de la selva o el de la montanias: no hay una respuesta correcta universal, y el plan mas inteligente para tu equipo es el que reconoce sus fuerzas y sus debilidades relativas."
+  ],
+  "resumen_teorico": "Es la primera de las cosas a tener en cuenta al planificar, y la unica que puede llevar a NO hacer el trabajo. Lo que la hace procedimentable es la cuenta del paso 5, doble de tiempo por el ochenta por ciento de calidad, que convierte una preferencia en un calculo, y el ejemplo del video y las ilustraciones, que es el caso concreto de trabajo derivado a otro equipo. La metafora de la caballeria va dentro porque es la forma en que el libro enuncia la regla. Lo que el libro NO dice, y por eso no esta escrito aqui, es como se negocia ese trabajo con el otro equipo, ni que se hace cuando no existe ese otro equipo.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}

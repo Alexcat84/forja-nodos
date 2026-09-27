@@ -1,0 +1,8 @@
+reloj del barrido de la 76: IDENTICO al pegado
+clase 78: IDENTICA a la pegada
+tablero --puedo: IDENTICO al pegado
+texto de d150: IDENTICO al pegado
+2026-09-26 13:18:26 docs/loop/CREDITO_serial.jsonl
+2026-09-26 12:37:57 docs/loop/DEUDA.jsonl
+2026-09-26 13:19:12 docs/loop/PROMPT_SIGUIENTE.md
+ahora: 2026-09-26 13:25:26

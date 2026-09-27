@@ -1,0 +1,11 @@
+el numero VIEJO sigue escrito en la ficha, y la correccion se lee al lado
+reunir_informacion_gerencial_vias_variadas     P7   viejo 356 en pie: True    correccion escrita: True
+escalonar_fuentes_informacion_gerencial        P9   viejo 208 en pie: True    correccion escrita: True
+programar_visita_area_observar_despachar       P10  viejo 337 en pie: True    correccion escrita: True
+transmitir_objetivos_prioridades_preferencias  P11  viejo 197 en pie: True    correccion escrita: True
+empujar_persona_reunion_direccion_preferida    P13  viejo 174 en pie: True    correccion escrita: True
+subir_productividad_gerencial_tres_vias        P18  viejo  62 en pie: True    correccion escrita: True
+buscar_actividad_alta_palanca_tres_vias        P19  viejo 118 en pie: True    correccion escrita: True
+elegir_momento_actividad_palanca_maxima        P20  viejo 297 en pie: True    correccion escrita: True
+
+d038: la linea vieja sigue en pie: True   correccion escrita: True

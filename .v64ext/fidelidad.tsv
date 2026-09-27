@@ -1,0 +1,45 @@
+# Vuelta 64, TAREA 2.a: la relectura de fidelidad ENTERA (D.30) de los seis de d005, paso a paso contra
+# fuentes/grove_high_output/cap_03.md leido entero con cat -n en esta vuelta. Marca: T transcripcion, P puente
+# (entero o de clausula; la clausula reescrita CUENTA como P, ACTA 62 62.5). Separador: barra vertical.
+# id | paso | marca | linea | lo que decide la marca
+archivar_indicadores_resolver_problemas | 1 | T | L99 | systematically collect and maintain an archive of indicators. La coda en vez de dejar que se pierdan no manda nada (DISCUTIBLE D64.1)
+archivar_indicadores_resolver_problemas | 2 | T | L99 | a bank of information that readily shows all the parameters of your operation
+archivar_indicadores_resolver_problemas | 3 | T | L99 | If something goes wrong ... allowing you to scan them
+archivar_indicadores_resolver_problemas | 4 | T | L99 | scan them for unhealthy departures from the norm
+construir_grafico_escalonado_pronosticos | 1 | T | L91 | the stagger chart, which forecasts an output over the next several months
+construir_grafico_escalonado_pronosticos | 2 | T | L91 | The chart is updated monthly ... compared to several prior forecasts
+construir_grafico_escalonado_pronosticos | 3 | T | L95 | the figure note: an asterisk means the actual number for that month
+construir_grafico_escalonado_pronosticos | 4 | T | L91 | You can readily see the variation of one forecast from the next ... better than ... a simple trend chart
+construir_grafico_escalonado_pronosticos | 5 | P | L93 | clausula de disposicion y debajo: el texto dice The stagger chart then provides the same forecast prepared in the following month y no pone sitio. REESCRITA
+construir_grafico_escalonado_pronosticos | 6 | T | L93 | shows not only your outlook for business month by month but also how your outlook varied
+construir_grafico_escalonado_pronosticos | 7 | T | L93 | his forecast for any given month will be routinely compared with future forecasts and eventually with the actual result
+construir_grafico_escalonado_pronosticos | 8 | T | L93 | the improvement or deterioration of the forecasted outlook ... the most valuable indicator of business trends
+construir_indicador_tendencia_patron | 1 | T | L89 | Also valuable are trend indicators ... another window in our black box
+construir_indicador_tendencia_patron | 2 | T | L89 | These show output: breakfasts delivered, software modules completed, vouchers processed
+construir_indicador_tendencia_patron | 3 | T | L89 | measured against time: performance this month versus performance over a series of previous months
+construir_indicador_tendencia_patron | 4 | T | L89 | and also against some standard or expected level
+construir_indicador_tendencia_patron | 5 | T | L89 | you are led to extrapolate almost automatically from the past
+construir_indicador_tendencia_patron | 6 | T | L89 | makes you think through why the results were what they were, and not what the standard said
+elegir_fabricar_pedido_pronostico | 1 | T | L103 | There are two ways to control the output of any factory
+elegir_fabricar_pedido_pronostico | 2 | T | L103 | When it learns what you want, the factory looks for a hole in its manufacturing schedule
+elegir_fabricar_pedido_pronostico | 3 | T | L105 | ready in four weeks while you need four months, you are not going to have many customers
+elegir_fabricar_pedido_pronostico | 4 | T | L105 | even though you would much rather build to order ... build to forecast, which is a contemplation of future orders
+elegir_fabricar_pedido_pronostico | 5 | T | L105 | sets up his activities around a reasoned speculation that orders will materialize ... within a certain time
+elegir_fabricar_pedido_pronostico | 6 | T | L107 | takes an inventory risk ... unwanted inventory is the result
+elegir_fabricar_pedido_pronostico | 7 | T | L107 | you risk capital to respond to anticipated future demand in good order
+elegir_fabricar_pedido_pronostico | 8 | P | L109 | criterio puente Mezcla las dos vias donde te convenga: L109 cuenta lo que hace la fabrica de desayunos para ensenar que fabricar contra pronostico es comun, y no manda mezclar. REESCRITA
+elegir_fabricar_pedido_pronostico | 9 | T | L109 | recruit new college graduates to fill anticipated needs ... which would be foolish; software ... anticipated market need (DISCUTIBLE D64.2)
+elegir_indicador_salida_trabajo_administrativo | 1 | T | L35 | The first rule is that a measurement, any measurement, is better than none
+elegir_indicador_salida_trabajo_administrativo | 2 | T | L35 | cover the output of the work unit and not simply the activity ... a salesman by the orders he gets
+elegir_indicador_salida_trabajo_administrativo | 3 | T | L37 | The second criterion ... a physical, countable thing
+elegir_indicador_salida_trabajo_administrativo | 4 | T | L39-L67 | la tabla de seis funciones con su indicador, fila a fila
+elegir_indicador_salida_trabajo_administrativo | 5 | T | L37 | their paired counterparts should stress the quality of work
+elegir_indicador_salida_trabajo_administrativo | 6 | T | L37 | vouchers processed should be paired with the number of errors found either by auditing or by our suppliers
+elegir_indicador_salida_trabajo_administrativo | 7 | T | L37 | square feet cleaned ... paired with a partially objective, partially subjective rating ... a senior manager with an office in that building
+emparejar_indicadores_efecto_contraefecto | 1 | T | L31 | Indicators tend to direct your attention toward what they are monitoring ... riding a bicycle
+emparejar_indicadores_efecto_contraefecto | 2 | T | L31 | you are likely to take action to drive your inventory levels down, which is good up to a point
+emparejar_indicadores_efecto_contraefecto | 3 | T | L31 | your inventories could become so lean that you cannot react ... without creating shortages
+emparejar_indicadores_efecto_contraefecto | 4 | T | L31 | pairing indicators, so that together both effect and counter-effect are measured
+emparejar_indicadores_efecto_contraefecto | 5 | T | L31 | monitor both inventory levels and the incidence of shortages
+emparejar_indicadores_efecto_contraefecto | 6 | T | L31 | A rise in the latter will obviously lead you to do things to keep inventories from becoming too low
+emparejar_indicadores_efecto_contraefecto | 7 | T | L33 | Measuring the completion date of each software unit against its capability

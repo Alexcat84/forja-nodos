@@ -1,0 +1,43 @@
+{
+  "id": "transitar_jefe_nuevo_equipo_establecido",
+  "titulo": "Transitar como jefe nuevo de un equipo ya establecido",
+  "denominaciones": {
+    "nombre_largo": "El camino del jefe nuevo: usar la ventana de novato, empezar con la pizarra en blanco, y no lanzarte a opinar antes de entender",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "THE NEW BOSS"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando entras a dirigir un equipo ya establecido, sea dentro de tu organizacion o viniendo de otra, y el equipo te recibe como su nuevo responsable.",
+  "entregable_esperado": "La ventana de unos tres meses de novato aprovechada preguntando, las relaciones nuevas ya en construccion, y con tu jefe hablado lo que te esta funcionando y lo que no.",
+  "escala_minima": "Un equipo que te recibe y unos tres meses, que es lo que el libro dice que suele durar la ventana en la que todos reconocen que eres el nuevo.",
+  "pasos_accionables": [
+    "Aprovecha que al principio te perdonan: tienes una ventana de tiempo, normalmente de unos tres meses, en la que todos reconocen que eres el nuevo. No se espera que sepas nada al principio, ni en que trabaja cada uno ni cual es la estrategia actual, los errores que cometas se pasaran por alto, y veras que tus colegas suelen estar bien dispuestos a ayudarte a ponerte al dia.",
+    "Usa la carta de novato a tu favor haciendo tantas preguntas a tantas personas como puedas. Puede que te entren ganas de callarte y no llamar la atencion hasta que sepas bastante, pero si tu meta es ponerte al dia rapido tienes que ser proactivo en tu incorporacion.",
+    "Si prevees que vas a tener que trabajar estrechamente con alguien, mira si esa persona estaria dispuesta a verse contigo a solas para conoceros y para que entiendas que le importa. Y si no tienes claro con quien vas a trabajar, pidele a tu jefe una lista de personas a las que acercarte.",
+    "No te cortes de preguntar aunque creas que eres el unico que no lo sabe: a veces esas preguntas ayudan tambien a los demas.",
+    "Aprovecha que empiezas con la pizarra en blanco: si en tu puesto anterior tenias fama de indeciso o de cabezota, ahora que llegas de nuevas tienes ocasion de formar lazos nuevos y de reiniciar tu identidad. Y funciona tambien al reves, porque algunos de los tuyos agradeceran la ocasion de construir la relacion con un jefe que siempre quisieron tener.",
+    "Para sacarle todo el partido a la pizarra en blanco, concede a cada uno el beneficio de la duda, te digan lo que te digan de el.",
+    "Y se claro por delante con la gente, sobre todo con los tuyos, sobre la clase de relacion que te gustaria construir y la clase de directivo que quieres ser: estos temas son mas faciles de hablar por delante, antes de que os asenteis en patrones y rutinas.",
+    "Vigila que lleva su tiempo adaptarse a las normas de un entorno nuevo, por mucho talento que tengas. Uno de los mayores errores que cometen los jefes nuevos es pensar que tienen que lanzarse a imponer sus opiniones desde el primer momento para demostrar que son capaces, y ese enfoque suele salir por la culata: pocas cosas hay mas molestas que alguien nuevo haciendo perder el tiempo a los demas por intentar demostrar que sabe algo cuando su opinion en realidad no esta informada.",
+    "En tus primeros meses, tu trabajo principal es escuchar, preguntar y aprender.",
+    "Vigila que tienes que invertir en construir relaciones nuevas: como jefe nuevo de un equipo nuevo, vuelves a la casilla de salida en cuanto a establecer confianza, y puedes sentir el aislamiento del de fuera porque todos se conocen entre ellos y tu todavia no tienes ese grado de comodidad con el grupo.",
+    "Si notas que la gente no esta siendo del todo abierta contigo, la tactica que el libro recoge de un amigo de la autora y elogia es nombrar el elefante en la habitacion: decirles que como eres nuevo puede que no se sientan comodos compartiendolo todo contigo de entrada, que esperas ganarte su confianza con el tiempo, y empezar tu compartiendo mas sobre ti mismo, incluido tu mayor fracaso.",
+    "Vigila que no conoces el puesto ni lo que exige: cuando dijiste que si no podias predecir la naturaleza exacta del equipo, del trabajo y del entorno, y puede que ahora el puesto y sus retos no sean exactamente lo que imaginabas. En esa situacion la mejor politica es ser honesto con tu propio jefe sobre lo que te esta funcionando y lo que no, y entender que espera el de tu puesta al dia."
+  ],
+  "resumen_teorico": "Es la tercera de las cuatro partes de la serie de los caminos, y la mas larga de las cuatro en el libro. El libro presume de quien llega por aqui que ya tiene experiencia previa de gestion, porque dice que las organizaciones rara vez contratan directivos sin probar para poner al frente de equipos ya establecidos. Las dos ventajas y las tres cosas que vigilar estan nombradas una a una con su propia entradilla. El paso de no cortarse de preguntar esta razonado con un caso que la autora cuenta: un directivo nuevo de su equipo interrumpio una discusion muy animada sobre un plan de salida al mercado para pedir que alguien explicara que esperaban conseguir con ese lanzamiento, la sala paro, y resulto que necesitaban alinearse antes sobre la meta amplia. La tactica de nombrar el elefante es de un amigo de la autora, y ella la elogia como el epitome de mostrar en vez de contar. Lo que el libro NO dice, y por eso no esta escrito aqui, es cuantas personas hay que ver a solas, en que orden, ni que se hace cuando la ventana de tres meses se cierra sin que te hayas puesto al dia."
+}

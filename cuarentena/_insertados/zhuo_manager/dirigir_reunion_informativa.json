@@ -1,0 +1,38 @@
+{
+  "id": "dirigir_reunion_informativa",
+  "titulo": "Dirigir una reunion cuyo resultado excelente es que el grupo aprenda algo",
+  "denominaciones": {
+    "nombre_largo": "La reunion informativa, sus ventajas sobre el tablon y la lista de correo, y los logros que la hacen buena",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "informational meeting, sharing information"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando el resultado excelente que persigues es que un grupo reciba informacion, y antes de dar por hecho que esa informacion merece una reunion.",
+  "entregable_esperado": "O bien la decision de no reunir a nadie y mandarlo por escrito, o bien una reunion preparada de la que el grupo sale sintiendo que aprendio algo valioso.",
+  "pasos_accionables": [
+    "Empieza dudando de que haga falta la reunion. Hace unas decadas las reuniones eran la via principal por la que los grupos compartian y recibian informacion, y hoy, con el correo y el chat al alcance de la mano, es menos necesario y a menudo menos eficiente juntarse en persona solo para transferir conocimiento.",
+    "Quedate con la reunion si buscas la primera ventaja que el libro nombra: que permite mas interactividad. Si quieres que todo el mundo conozca un cambio de politica potencialmente polemico, dar esa noticia en persona deja al grupo preguntar o expresar sus reacciones.",
+    "Quedate con ella si buscas la segunda: una reunion informativa bien preparada suele ser mucho mas interesante que un punado de palabras en una pagina, porque el contacto visual, el lenguaje corporal y la pasion visible ayudan a que un mensaje cobre vida.",
+    "Pon detras mucha mas preparacion. El libro dice que esa es la diferencia entre la reunion periodica de su organizacion de diseno, que funciona, y su reunion de estado descontinuada, que no: esta tiene detras mucha mas preparacion para asegurar que el contenido resulte interesante.",
+    "Consigue el primer logro: que el grupo sienta que aprendio algo valioso.",
+    "Consigue el segundo: transmitir los mensajes clave de forma clara y memorable.",
+    "Consigue el tercero: mantener la atencion del publico, y el libro dice con que se mantiene, con ponentes dinamicos, narracion rica, ritmo habil e interactividad.",
+    "Consigue el cuarto: evocar una emocion buscada, sea inspiracion, confianza, orgullo, coraje o empatia."
+  ],
+  "resumen_teorico": "Es la segunda razon del libro para juntarse en persona, y la unica de las cinco cuyo primer paso es dudar de si la reunion debe existir. El inventario propio que la hace procedimentable es doble: dos ventajas nombradas del cara a cara sobre los canales escritos, y cuatro logros de la reunion buena. El tercer logro trae ademas sus medios nombrados, ponentes dinamicos, narracion rica, ritmo habil e interactividad, y por eso se transcribe entero y no se resume en una palabra. Lo que el libro NO dice, y por eso no esta escrito aqui, es cada cuanto se convoca, quien prepara el contenido ni como se comprueba despues que el grupo aprendio algo."
+}

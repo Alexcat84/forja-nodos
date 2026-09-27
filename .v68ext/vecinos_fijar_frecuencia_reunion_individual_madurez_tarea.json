@@ -1,0 +1,86 @@
+{
+ "id": "fijar_frecuencia_reunion_individual_madurez_tarea",
+ "grafo": 390,
+ "bandejas": 89,
+ "vecinos": [
+  {
+   "id": "fijar_duracion_lugar_reunion_individual",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.629,
+    "familia_id": 0.375,
+    "paso_contra_nodo": 0.435
+   },
+   "levantada_por": [
+    "similitud_texto",
+    "familia_id"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 3 de fijar_duracion_lugar_reunion_individual"
+  },
+  {
+   "id": "preparar_guion_reunion_individual_subordinado",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.606,
+    "familia_id": 0.222,
+    "paso_contra_nodo": 0.496
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 6 del candidato contra paso 1 de preparar_guion_reunion_individual_subordinado"
+  },
+  {
+   "id": "cubrir_indicadores_problemas_reunion_individual",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.511,
+    "familia_id": 0.222,
+    "paso_contra_nodo": 0.436
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 10 del candidato contra paso 8 de cubrir_indicadores_problemas_reunion_individual"
+  },
+  {
+   "id": "infundir_regularidad_reunion_proceso",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.472,
+    "familia_id": 0.111,
+    "paso_contra_nodo": 0.438
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 8 del candidato contra paso 1 de infundir_regularidad_reunion_proceso"
+  },
+  {
+   "id": "tomar_notas_copia_guion_reunion_individual",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.359,
+    "familia_id": 0.2,
+    "paso_contra_nodo": 0.469
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 5 del candidato contra paso 5 de tomar_notas_copia_guion_reunion_individual"
+  },
+  {
+   "id": "usar_tres_clases_reunion_proceso",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.41,
+    "familia_id": 0.1,
+    "paso_contra_nodo": 0.428
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 2 del candidato contra paso 1 de usar_tres_clases_reunion_proceso"
+  }
+ ]
+}

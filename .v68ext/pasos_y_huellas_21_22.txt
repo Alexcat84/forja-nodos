@@ -1,0 +1,3 @@
+21  agrupar_interrupciones_subordinados_reuniones_regulares  bandeja    2a419bcb10 igual
+22  canalizar_interrupciones_cartel_hora_oficina             bandeja    a50684995f igual
+fichas de las filas 21 y 22: 2 | iguales a su blob en d8f4e2a: 2 | distintas: 0

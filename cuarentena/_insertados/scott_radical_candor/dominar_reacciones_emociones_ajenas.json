@@ -1,0 +1,42 @@
+{
+  "id": "dominar_reacciones_emociones_ajenas",
+  "titulo": "Dominar tus reacciones ante las emociones de los demas, sin intentar prevenirlas, controlarlas ni manejarlas",
+  "denominaciones": {
+    "nombre_largo": "Dominar tus reacciones ante las emociones ajenas: reconocerlas, preguntar, no repartir culpa, y los tres apanios de mesa que el libro deja",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "master your reactions to others' emotions"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando alguien de tu equipo reacciona con emocion fuerte delante de ti, llorando, gritando o callandose de golpe, y tu primer impulso es hacer que pare.",
+  "entregable_esperado": "La emocion del otro reconocida y entendida, con sus reacciones respetadas como suyas y las tuyas dominadas, y el problema de verdad a la vista.",
+  "pasos_accionables": [
+    "No intentes prevenir, controlar ni manejar las emociones de otras personas: el texto dice que muchos cruzan esa frontera emocional peligrosa al hacerse jefes, y que todo el mundo, incluida la gente que te reporta, es responsable de su propia vida emocional.",
+    "Cuenta con que imaginar que puedes controlar la reaccion emocional de otro o maniobrar para esquivarla es de los caminos mas rapidos que hay a la insinceridad manipuladora.",
+    "Reconoce las emociones y reacciona con compasion cuando esten a flor de piel, y dedicate a dominar tus propias reacciones ante las de los demas.",
+    "Reconoce la emocion: no respondas a un estallido ni a un silencio hosco fingiendo que no estan pasando, y no intentes rebajarlos con cosas como no es nada personal o seamos profesionales. Di en cambio: veo que estas enfadado, o frustrado, o euforico.",
+    "Haz preguntas: cuando alguien esta lo bastante frustrado, enfadado o disgustado con una situacion del trabajo como para reaccionar emocionalmente, esa es tu senial para seguir preguntando hasta entender cual es el problema de verdad. No dirijas demasiado la conversacion; sigue escuchando y se acabara viendo.",
+    "No le sumes tu culpa a la emocion dificil del otro, porque no le hace sentirse mejor: que alguien llore o grite no significa que tu hayas hecho nada mal, solo que esta disgustado; si te sientes culpable es mas probable que reacciones a la defensiva que con compasion, y de esa reaccion defensiva salen sin querer la condescendencia o la frialdad. Centrate en la otra persona y no en ti.",
+    "No le digas a nadie como tiene que sentirse: el texto pone como las palabras mas contraproducentes que puedes decir no estes triste, no te enfades y sin animo de ofender, pero. Si le dices a alguien que no puede tener una reaccion emocional, se vuelve casi inevitable que la tenga.",
+    "Si de verdad no aguantas los estallidos emocionales, perdonatelo: no tienes que quedarte ahi viendo llorar o gritar a alguien si te resulta insoportable. Vale decir siento que estes disgustado, salgo un momento y te traigo un poco de agua, ahora vuelvo; y al volver, me gustaria cambiar de tema por ahora y hablarlo mas tarde, te prometo que volvere a ello porque veo que es importante, pero ahora mismo me esta costando.",
+    "Ten los paniuelos a un paseo corto de tu mesa y no encima de ella: el texto cuenta que ofrecer un paniuelo al primer sintoma de lagrimas a veces abre del todo el grifo, que un companiero suyo salia del despacho a buscarlos, y que ese pequenio respiro solia bastar para que quien lloraba recuperase la compostura.",
+    "Ten en tu mesa botellas de agua sin abrir y ofrece una cuando veas que alguien se esta disgustando, porque la pausa simple de desenroscar el tapon y dar un trago suele bastar para que la persona se calme; y si el que llora eres tu, usala tu.",
+    "Y para una conversacion dificil, pasea en vez de sentarte: al andar las emociones se ven menos y es menos probable que empiecen a resonar de forma destructiva, y andar mirando los dos en la misma direccion suele sentirse mas colaborativo que sentarse a los dos lados de una mesa mirandose fijamente."
+  ],
+  "resumen_teorico": "Sale de fuentes/scott_radical_candor/cap_08.md, lineas 161 a 181, bajo el rotulo Master your reactions to others emotions, dentro de la seccion RESPECT BOUNDARIES, que no tiene cabeza propia. Es hermano de reconocer_emociones_propias_avisar_equipo, que sale del rotulo anterior. ES UN SOLO NODO Y NO SIETE, Y VA MARCADO DISCUTIBLE EN EL REPORTE DE ESTA VUELTA: la linea 165 anuncia here are some pointers y despues vienen siete consejos, cada uno con su frase de entrada, pero NINGUNO tiene rotulo de linea propia en el fichero, que es el criterio de corte que esta casa ha seguido en cap_05, cap_06 y cap_07. Bajo ese criterio los siete son pasos de este nodo. Ademas la linea 165 no dice cuantos son, asi que si algun dia se partieran, sus aristas serian D.29 y no D.37. LOS TRES ULTIMOS CONSEJOS SON APANIOS DE MESA Y NO DOCTRINA, y entran igual porque el libro los nombra uno a uno y son ejecutables: los paniuelos lejos, las botellas de agua cerradas, y pasear en vez de sentarse. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 11 pasos, 11 TRANSCRIPCION, 0 PUENTE. P1 y P2 de la linea 163; P3 de la 163; P4 de la 167; P5 de la 169; P6 de la 171; P7 de la 173; P8 de la 175; P9 de la 177; P10 de la 179; P11 de la 181. LA LINEA 165 NO DA PASO PROPIO: es la frase que presenta a los siete. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: cuando se vuelve a un tema aplazado, que se hace si la emocion se repite todas las semanas, y donde acaba reconocer una emocion y empieza manejarla.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-12"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "atribuciones": []
+}

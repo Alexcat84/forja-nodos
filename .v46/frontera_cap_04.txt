@@ -1,0 +1,74 @@
+==============================================================================
+1. LA COMPROBACION DE cap_04, ANTES DE SU TABLA
+==============================================================================
+fichero                                : fuentes/grove_high_output/cap_04.md
+la cabecera acaba en la linea          : 7   (segundo guion triple, no tecleado)
+tramos de mi lectura                   : 44
+lineas con contenido tras la cabecera  : 158
+lineas NO cubiertas                    : 0  []
+SOLAPES                                : 0  []
+suma de las filas                      : 8846 palabras
+cuerpo medido aparte                   : 8846 palabras
+fichero entero, para cruzar con wc -w  : 8871 palabras
+IGUALES                                : True
+NODOS QUE MI FRONTERA DA EN ESTA UNIDAD, cap_04 Y SOLO cap_04: 22
+
+==============================================================================
+2. LA TABLA DE cap_04, IMPRESA Y NO TECLEADA
+==============================================================================
+| tramo de cap_04 | palabras | nodos | que es, y por que | la salida, pegada |
+|---|---:|---:|---|---|
+| `L9 a L13` | 8 | **0** | P1  rotulos: el numero, el titulo Managerial Leverage y el subtitulo de la salida del mando | `9:3` |
+| `L15 a L47` | 530 | **0** | P2  la salida del mando es la de su organizacion mas la de las vecinas: DEFINICION con su ecuacion | `15:I asked a group of middle managers just that question.` |
+| `L49 a L55` | 411 | **0** | P3  actividad no es salida, y la caja de engranajes: POSTURA | `49:It is important to understand that a manager will find himself e` |
+| `L57 a L61` | 161 | **0** | P4  Daddy, What Do You Really Do, y el anuncio de la tabla del dia | `57:"Daddy, What Do You Really Do?"` |
+| `L63 a L139` | 674 | **0** | P5  LA TABLA A Day from My Life: CASO del autor, manual 3.5, entra nombrado dentro de sus nodos | `63:A Day from My Life` |
+| `L141 a L143` | 137 | **0** | P6  el dia sin patron y mover la energia adonde la palanca sea mayor: POSTURA | `141:When you look at what happened, you won't see any obvious patter` |
+| `L145 a L147` | 210 | **1** | P7  LAS VIAS POR LAS QUE LLEGA LA INFORMACION, nombradas una a una, y la verbal por delante | `145:As you can see, much of my day is spent acquiring information. A` |
+| `L149 a L151` | 198 | **0** | P8  para que sirve el informe escrito: son sus FINES, y 9.1 restriccion 1 los deja fuera | `149:So why are written reports necessary at all? They obviously can'` |
+| `L153 a L153` | 183 | **1** | P9  LA JERARQUIA DE LA INFORMACION: los escalones nombrados uno a uno y su redundancia | `153:To improve and maintain your capacity to get information, you ha` |
+| `L155 a L157` | 236 | **1** | P10 LA VISITA AL SITIO, y la visita programada con su propio inventario de lo que se mira | `155:There is an especially efficient way to get information, much ne` |
+| `L159 a L159` | 160 | **1** | P11 transmitir objetivos, prioridades y preferencias, que el libro llama la llave de la delegacion | `159:As can be seen from my schedule, a manager not only gathers info` |
+| `L161 a L165` | 265 | **0** | P12 las formas de participar en una decision y las dos clases de decision: DEFINICION | `161:The third major kind of managerial activity, of course, is decis` |
+| `L167 a L167` | 147 | **1** | P13 EL EMPUJON: sus medios nombrados y su frontera con la orden | `167:You often do things at the office designed to influence events s` |
+| `L169 a L173` | 271 | **0** | P14 el modelo de conducta y el ejemplo: POSTURA con sus tres casos | `169:Finally, something more subtle pervades the day of all managers.` |
+| `L175 a L175` | 93 | **0** | P15 el tiempo propio como unico recurso finito: POSTURA, y su procedimiento vive en P32 y siguientes | `175:A great deal of a manager's work has to do with allocating resou` |
+| `L177 a L177` | 159 | **0** | P16 la reunion es un medio y no una actividad: POSTURA, y el capitulo de reuniones es otro | `177:As you can see, in a typical day of mine one can count some twen` |
+| `L179 a L193` | 165 | **0** | P17 la ecuacion de la palanca, L1 por A1 mas L2 por A2: DEFINICION | `179:Leverage of Managerial Activity` |
+| `L195 a L201` | 60 | **1** | P18 CABEZA DE SERIE: las TRES vias de subir la productividad gerencial, numeradas y nombradas | `195:Managerial productivity-that is, the output of a manager per uni` |
+| `L203 a L213` | 76 | **1** | P19 CABEZA DE SERIE: las TRES vias basicas de la actividad de alta palanca, contadas y nombradas | `203:Let us consider first the leverage of various types of manageria` |
+| `L215 a L217` | 237 | **1** | P20 la palanca depende de CUANDO: el trabajo por delante del acontecimiento y la accion inmediata | `215:The first is the most obvious example. Consider Robin, an Intel ` |
+| `L219 a L219` | 73 | **0** | P21 la palanca negativa de la reunion a la que llegas sin preparar: material del nodo de P24 | `219:Leverage can also be negative. Some managerial activities can re` |
+| `L221 a L225` | 233 | **0** | P22 impartir conocimiento a un grupo: son los CASOS de la primera via, cuyo nodo es P19 | `221:Each time a manager imparts his knowledge, skills, or values to ` |
+| `L227 a L229` | 146 | **0** | P23 la evaluacion de desempeno y el fichero recordatorio: NOMBRADOS y no procedimentados aqui | `227:A manager can also exert high leverage by engaging in an activit` |
+| `L231 a L235` | 356 | **1** | P24 LA PALANCA NEGATIVA: desanimo, indecision e intromision, con la prueba que la separa del seguimiento | `231:Examples of high negative leverage abound. After going through t` |
+| `L237 a L239` | 196 | **0** | P25 el especialista de conocimiento: son los CASOS de la tercera via, cuyo nodo es P19 | `237:The third kind of managerial activity with high leverage is exer` |
+| `L241 a L241` | 141 | **0** | P26 el arte de elegir una o dos actividades: una intuicion en el sitio del criterio, 9.1 restriccion 2 | `241:The art of management lies in the capacity to select from the ma` |
+| `L243 a L249` | 347 | **1** | P27 QUE SE DELEGA: la base comun de informacion, el lapiz, y delegar sin seguimiento es abdicar | `243:DELEGATION AS LEVERAGE` |
+| `L251 a L251` | 104 | **0** | P28 las dos presentaciones de seguimiento de la reunion del dia: CASO del autor | `251:Please turn back to the table of my day's activities on this pag` |
+| `L253 a L255` | 227 | **1** | P29 SUPERVISAR LO DELEGADO: etapa de menor valor anadido, frecuencia variable y detalle al azar | `253:Monitoring the results of delegation resembles the monitoring us` |
+| `L257 a L257` | 106 | **1** | P30 SUPERVISAR LA DECISION DELEGADA: las preguntas concretas en la reunion de revision | `257:Making certain types of decisions is something managers frequent` |
+| `L259 a L265` | 114 | **0** | P31 subir el ritmo, y la critica a las tecnicas de gestion del tiempo: POSTURA | `259:Increasing Managerial Activity Rate: Speeding Up the Line` |
+| `L267 a L267` | 122 | **1** | P32 EL PASO LIMITANTE DE LA JORNADA y los desfases que se crean alrededor | `267:These time-management suggestions can be improved upon, I think,` |
+| `L269 a L271` | 212 | **1** | P33 AGRUPAR TAREAS SEMEJANTES para aprovechar una sola preparacion | `269:A second production principle we can apply to managerial work is` |
+| `L273 a L285` | 469 | **2** | P34 EL CALENDARIO como herramienta de planificacion, y su segunda responsabilidad: decir que no | `273:What makes running a factory different from running a job shop? ` |
+| `L287 a L287` | 132 | **0** | P35 la holgura: el grado OPTIMO de carga es adjetivo de adecuacion en el sitio del criterio, 9.1 restriccion 2 | `287:The next production principle you can apply is to allow slack-a ` |
+| `L289 a L289` | 101 | **1** | P36 EL INVENTARIO DE PROYECTOS DISCRECIONALES, con su criterio propio y su contraste | `289:Another production principle is very nearly the opposite. A mana` |
+| `L291 a L291` | 108 | **0** | P37 el metodo establecido y el pensamiento que lo sostiene: POSTURA, sin inventario propio | `291:A final principle. Most production practices follow well-establi` |
+| `L293 a L301` | 396 | **1** | P38 SEIS A OCHO SUBORDINADOS: la cifra, su guia de medio dia por semana y el caso del reparto estrecho | `293:Built-In Leverage: How Many Subordinates Should You Have...` |
+| `L303 a L307` | 242 | **1** | P39 LA REGULARIDAD: los mismos bloques de tiempo para actividades iguales, coordinados con los demas | `303:Interruptions-The Plague of Managerial Work` |
+| `L309 a L313` | 206 | **0** | P40 el experimento de los veinte mandos y las soluciones que no sirven: CASO | `309:About twenty middle managers at Intel were once asked to be part` |
+| `L315 a L315` | 92 | **1** | P41 RESPUESTAS ESTANDAR a las interrupciones que se repiten, y su delegacion | `315:There are better ways. Let's apply a production concept. Manufac` |
+| `L317 a L317` | 74 | **1** | P42 AGRUPAR LAS INTERRUPCIONES en las reuniones regulares en vez de atenderlas al azar | `317:Also, if you use the production principle of batching-that is, h` |
+| `L319 a L319` | 67 | **0** | P43 el banco de indicadores para responder rapido: ese objeto ya vive entero en cap_03, P.19 | `319:The use of indicators, especially the bank of indicators kept ov` |
+| `L321 a L323` | 201 | **1** | P44 EL CARTEL EN LA PUERTA Y LA HORA DE OFICINA ABIERTA, con el texto del cartel dado por el libro | `321:If the people who interrupt you knew how much they were disturbi` |
+| | **8846** | **22** | **el cuerpo entero de cap_04, cero lineas sin cubrir y cero solapes** | |
+
+==============================================================================
+3. EL TECHO, CONTRASTADO Y NO DECIDIDO AQUI
+==============================================================================
+NODOS QUE MI FRONTERA DA EN LA UNIDAD DE ESTA VUELTA (cap_04): 22
+TECHO DE CANDIDATOS POR VUELTA (EXTRACTOR.md 12.4): entre 5 y 15
+DENTRO DEL TECHO                                             : NO
+SI DA NO, MANDA LA REGLA DE PRECEDENCIA DE 12.4: la vuelta cierra en esta unidad,
+se mina hasta el techo y la linea del tramo dice en que candidato corto.

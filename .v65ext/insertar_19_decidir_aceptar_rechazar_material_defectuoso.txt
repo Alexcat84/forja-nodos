@@ -1,0 +1,26 @@
+fila 19, decidir_aceptar_rechazar_material_defectuoso, lineas --veredicto: 1
+  --veredicto dimensionar_plantilla_administrativa_pronostico|SANO|Ajenos dentro de cap_03. El candidato decide si se devuelve o se usa el material que no llega a especificacion, lo lleva a un grupo equilibrado de mandos y no transige en fiabilidad (L135 a L137); el vecino dimensiona la plantilla administrativa con el pronostico de su carga (L123 a L125). La senial sale de verbos comunes como pesar, decidir y aplicar, no de un paso compartido.
+inicio 2026-09-23 18:53:16
+======================================================================
+ADUANA DE INSERCION, candidato 'decidir_aceptar_rechazar_material_defectuoso'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 462   (364 del grafo mas 98 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino dimensionar_plantilla_administrativa_pronostico  [Dimensionar la plantilla de una unidad administrativa con el pronostico de su carga de trabajo]
+    levantada por: similitud_texto
+    similitud_texto    0.372 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.364 (umbral 0.60)
+    paso 4 del candidato contra paso 2 de dimensionar_plantilla_administrativa_pronostico
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 365
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 1
+
+======================================================================
+fin 2026-09-23 19:18:11 | codigo de salida 0 | 1494.5 s

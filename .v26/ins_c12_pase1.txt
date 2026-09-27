@@ -1,0 +1,22 @@
+ADUANA DE INSERCION, candidato 'cambiar_posicion_hechos_explicar_cambio'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 233 nodo(s) del dataset
+
+VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino abrir_debate_humor_explicar_proposito  [Abrir un debate con humor y explicando para que sirve, porque el tono con que se lanza marca el de todo lo que viene detras]
+    levantada por: similitud_texto
+    similitud_texto    0.377 (umbral 0.35)
+    familia_id         0.111 (umbral 0.30)
+    paso_contra_nodo   0.475 (umbral 0.60)
+    paso 6 del candidato contra paso 6 de abrir_debate_humor_explicar_proposito
+
+BLOQUEADO: faltan veredictos para abrir_debate_humor_explicar_proposito
+  La aduana no juzga: obliga a juzgar (manual seccion 3).
+  Vuelve a correr el comando con un veredicto por vecino:
+    --veredicto "abrir_debate_humor_explicar_proposito|CONTINUA|madre=abrir_debate_humor_explicar_proposito|que añade el hijo a la madre"
+    --veredicto "abrir_debate_humor_explicar_proposito|REPITE|por que no añade procedimiento"
+    --veredicto "abrir_debate_humor_explicar_proposito|SANO|por que no son el mismo trabajo"
+    --veredicto "abrir_debate_humor_explicar_proposito|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"

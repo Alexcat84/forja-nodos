@@ -1,0 +1,13 @@
+$ python forja.py arista --madre construir_grafico_escalonado_pronosticos --hijo casar_flujo_fabricacion_flujo_ventas --paso 1 --razon <fila 8> --veredicto CONTINUA --cita-veredicto <fila 8>
+DECLARACION DE ARISTA POR LECTURA (D.37)
+  madre: construir_grafico_escalonado_pronosticos
+  hijo : casar_flujo_fabricacion_flujo_ventas
+  paso citado de la madre: 1
+    Monta un grafico escalonado, que es el que pronostica una salida para los varios meses que vienen.
+  señales del par: familia_id 0.0, paso_contra_nodo 0.424, similitud_texto 0.27
+    NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: construir_grafico_escalonado_pronosticos > casar_flujo_fabricacion_flujo_ventas
+  razon en bitacora/VEREDICTOS.jsonl
+
+codigo 0

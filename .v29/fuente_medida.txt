@@ -1,0 +1,9 @@
+=== el libro, medido ===
+15
+unidades .md en fuentes/scott_radical_candor/
+   433 fuentes/scott_radical_candor/cap_07.md
+   333 fuentes/scott_radical_candor/cap_11.md
+   766 total
+
+=== palabras de cap_07 ===
+13706 fuentes/scott_radical_candor/cap_07.md

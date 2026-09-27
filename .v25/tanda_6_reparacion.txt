@@ -1,0 +1,8 @@
+OK   cola   pedir_critica_equipo_premiarla                               6 veredictos   82.1s
+COLA cola   acompaniar_mejores_equipo_socio                             76.6s   pares SIN veredicto mio: cuidar_persona_completa_equipo
+
+intentados en esta corrida : 2
+INSERTADOS                 : 1
+en cola de lectura         : 1
+
+[exited with code 0]

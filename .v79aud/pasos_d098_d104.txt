@@ -1,0 +1,44 @@
+===== construir_empresa_plantilla_vision_diaria | grafo
+  titulo: Construir la empresa contra la plantilla de tu vision, y medir cada noche la distancia que falta
+  fuente: ['gerber_emyth']
+  cond: Cuando arrancas una empresa o la rehaces y quieres que llegue a ser grande, y necesitas saber por donde se empieza y que se hace cada dia.
+  P1. Hazte un retrato muy claro de como sera la empresa cuando este finalmente terminada, un modelo en tu cabeza de como se vera cuando el sueno este puesto, que es la primera de las tres razones que el texto atribuye a Tom Watson, el fundador de IBM.
+  P2. Preguntate entonces como tendria que actuar una empresa con ese aspecto, y hazte un retrato de como actuara cuando este finalmente terminada, que es la segunda razon.
+  P3. Date cuenta de que si no empezais a actuar de esa manera desde el mismisimo principio no llegareis nunca, que es la tercera razon.
+  P4. Actua como la gran empresa mucho antes de serlo, que es como el propio texto resume las tres razones en una linea.
+  P5. Modela la empresa contra esa plantilla cada uno de los dias, desde el primero.
+  P6. Al final de cada dia preguntaos como lo habeis hecho y descubrid la distancia que hay entre donde estais y donde os habiais comprometido a estar.
+  P7. Al empezar el dia siguiente, poneos a recuperar esa diferencia.
+  P8. Dedica cada dia a desarrollar el negocio y no a hacer negocio, que es la linea con la que el texto cierra la historia: alli no haciamos negocio, construiamos uno.
+===== trazar_modelo_negocio_cliente_primero | grafo
+  titulo: Trazar el modelo de tu negocio arrancando del retrato del cliente y no del retrato del negocio
+  fuente: ['gerber_emyth']
+  cond: Cuando vas a definir que negocio montar o rehacer y tienes que decidir por donde se empieza el modelo.
+  P1. Parte de lo que el texto dice que es el modelo: un modelo de negocio que satisface las necesidades percibidas de un segmento concreto de clientes de una manera innovadora.
+  P2. Mira el mundo y pregunta donde esta la oportunidad, que es por donde el texto dice que el emprendedor empieza cuando crea el modelo.
+  P3. Una vez la has identificado, vuelve al tablero de dibujo.
+  P4. Construye alli una solucion a las frustraciones que encuentres entre un grupo concreto de clientes.
+  P5. Dale a esa solucion la forma de un negocio que se ve y actua de una manera muy concreta: la manera en que el cliente necesita que se vea y actue, y no la que necesites tu.
+  P6. Preguntate como se vera tu negocio para el cliente.
+  P7. Preguntate como destacara tu negocio entre todos los demas.
+  P8. No arranques del retrato del negocio que vas a crear sino del retrato del cliente para el que lo vas a crear, que es lo que el texto pone como la diferencia del modelo emprendedor.
+  P9. Cuenta con la condicion con la que el texto lo cierra: sin un retrato claro de ese cliente, ningun negocio puede tener exito.
+===== distinguir_tres_tipos_sistemas_negocio | grafo
+  titulo: Distinguir los tres tipos de sistemas que el libro nombra en tu negocio: Hard, Soft e Information Systems
+  fuente: ['gerber_emyth']
+  cond: Cuando necesitas identificar de que tipo es cada sistema de tu negocio, antes de poder innovarlo, cuantificarlo y orquestarlo dentro de tu Business Development Program.
+  P1. Entiende que hay tres tipos de sistemas en tu negocio: Hard Systems, Soft Systems e Information Systems.
+  P2. Reconoce un Hard System: es algo inanimado, sin vida, como un computador o los colores de una oficina.
+  P3. Reconoce un Soft System: es algo animado, vivo, o una idea, como tu mismo o el guion de una obra de teatro.
+  P4. Reconoce un Information System: es el que te da informacion sobre como interactuan los otros dos tipos, como el control de inventario, el pronostico de flujo de caja o el resumen de actividad de ventas.
+  P5. Ten presente que la Innovacion, la Cuantificacion y la Orquestacion de estos tres tipos de sistemas en tu negocio es de lo que trata tu Business Development Program.
+===== cuantificar_impacto_innovacion_6_pasos | grafo
+  titulo: Cuantificar el impacto real de una innovacion en tu negocio con los seis conteos que el libro enumera
+  fuente: ['gerber_emyth']
+  cond: Cuando pruebas una innovacion en tu negocio, por ejemplo cambiar las palabras con que saludas a un cliente que entra, y quieres saber si de verdad funciono.
+  P1. Determina cuantas personas entraron por la puerta antes de poner en marcha la innovacion.
+  P2. Determina cuantas personas compraron productos y cual fue el valor en dolares de esos productos, antes de cambiar las palabras y lo que decias para producir esas ventas.
+  P3. Cuenta cuantas personas entraron por la puerta despues de cambiar las palabras.
+  P4. Cuenta cuantas personas compraron algo, despues del cambio.
+  P5. Determina el valor promedio de una venta.
+  P6. Determina cual fue la mejora que produjo tu innovacion.

@@ -1,0 +1,6 @@
+CAP cap_08  filas de tabla parseadas: 58
+  suma de palabras declaradas : 2224
+  cuerpo real (L8+, wc -w)    : 2224
+  lineas con palabras sin cubrir: 0 []
+  DISCREPANCIAS fila a fila   : 0
+  PIEZAS contadas por mi      : 58

@@ -1,0 +1,6 @@
+nodos en el grafo          : 346
+veredictos escritos        : 740
+unidades de gerber_emyth   : 22
+palabras de cuerpo del libro: 62648
+candidatos en bandeja      : 16
+clave gerber_emyth en canon: SI

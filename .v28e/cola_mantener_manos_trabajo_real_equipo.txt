@@ -1,0 +1,17 @@
+=== mantener_manos_trabajo_real_equipo  (8 vecinos)
+  compartir_logica_mostrar_razonamiento          [bandeja]  por similitud_texto
+      similitud 0.362  familia 0.000  paso 0.512   paso 8 del candidato contra paso 3 de compartir_logica_mostrar_razonamiento
+  cambiar_posicion_hechos_explicar_cambio        [GRAFO]  por similitud_texto
+      similitud 0.381  familia 0.000  paso 0.491   paso 1 del candidato contra paso 1 de cambiar_posicion_hechos_explicar_cambio
+  abrir_debate_humor_explicar_proposito          [GRAFO]  por similitud_texto
+      similitud 0.385  familia 0.000  paso 0.427   paso 8 del candidato contra paso 5 de abrir_debate_humor_explicar_proposito
+  proteger_tiempo_equipo_jefe                    [bandeja]  por similitud_texto
+      similitud 0.404  familia 0.125  paso 0.422   paso 4 del candidato contra paso 1 de proteger_tiempo_equipo_jefe
+  parar_debate_emocion_agotamiento               [bandeja]  por similitud_texto
+      similitud 0.377  familia 0.000  paso 0.404   paso 6 del candidato contra paso 2 de parar_debate_emocion_agotamiento
+  pedir_hechos_decision_evitar_recomendaciones   [bandeja]  por similitud_texto
+      similitud 0.373  familia 0.000  paso 0.387   paso 1 del candidato contra paso 2 de pedir_hechos_decision_evitar_recomendaciones
+  cuidarse_agotamiento_centro_rueda              [bandeja]  por similitud_texto
+      similitud 0.369  familia 0.000  paso 0.380   paso 1 del candidato contra paso 4 de cuidarse_agotamiento_centro_rueda
+  crear_obligacion_disentir_equipo               [bandeja]  por similitud_texto
+      similitud 0.360  familia 0.125  paso 0.373   paso 4 del candidato contra paso 3 de crear_obligacion_disentir_equipo

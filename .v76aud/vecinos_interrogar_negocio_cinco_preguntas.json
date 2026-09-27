@@ -1,0 +1,20 @@
+{
+ "id": "interrogar_negocio_cinco_preguntas",
+ "grafo": 437,
+ "bandejas": 42,
+ "vecinos": [
+  {
+   "id": "dictar_ritmo_crecimiento_preguntas_escritas",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.369,
+    "familia_id": 0.125,
+    "paso_contra_nodo": 0.473
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 4 del candidato contra paso 8 de dictar_ritmo_crecimiento_preguntas_escritas"
+  }
+ ]
+}

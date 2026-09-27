@@ -1,0 +1,4 @@
+$ python .v77aud/normal/solape.py | sed -n '1p;$p'; python .v77aud/normal/solape.py | tail -2 | head -1
+commit de T1 y T2: 09:33:46 | de T3: 09:36:32 | arranque del insertar 1: 09:37:06 | despues de los dos: SI
+ficheros .fin: 22 | su contenido: ['0']
+insertar: 22 | codigos: {'0': 22} | suma: 22 | con solape o sin commit antes del siguiente: 0

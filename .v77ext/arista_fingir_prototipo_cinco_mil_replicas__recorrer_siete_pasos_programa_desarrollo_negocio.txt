@@ -1,0 +1,13 @@
+$ python forja.py arista --madre fingir_prototipo_cinco_mil_replicas --hijo recorrer_siete_pasos_programa_desarrollo_negocio --paso 1 --razon <fila 35> --veredicto CONTINUA --cita-veredicto <fila 35>
+DECLARACION DE ARISTA POR LECTURA (D.37)
+  madre: fingir_prototipo_cinco_mil_replicas
+  hijo : recorrer_siete_pasos_programa_desarrollo_negocio
+  paso citado de la madre: 1
+    Finge que el negocio que tienes, o que quieres tener, es el prototipo de otros 5.000 iguales, y que va a servir de modelo para esos 5.000.
+  señales del par: familia_id 0.0, paso_contra_nodo 0.43, similitud_texto 0.312
+    NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: fingir_prototipo_cinco_mil_replicas > recorrer_siete_pasos_programa_desarrollo_negocio
+  razon en bitacora/VEREDICTOS.jsonl
+
+codigo 0

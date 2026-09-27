@@ -1,0 +1,29 @@
+#   candidato                                        cap    pza  madre(s)                                     informe         pob  dijo(462)  vec  lin   listos
+1   construir_flujo_produccion_paso_limitante        cap_02 P2   -                                            .v63aud         462  BLOQUEARIA 3    3     SI
+2   clasificar_trabajo_proceso_montaje_prueba        cap_02 P5   -                                            .v63aud         462  BLOQUEARIA 1    1     SI
+3   detectar_arreglar_fallo_etapa_menor_valor        cap_02 P11  -                                            .v63aud         462  BLOQUEARIA 1    1     SI
+4   dimensionar_inventario_materia_prima_reposicion  cap_02 P10  detectar_arreglar_fallo_etapa_menor_valor    .v63aud         462  BLOQUEARIA 2    2     SI
+5   rehacer_flujo_paso_limitante_capacidad           cap_02 P6   construir_flujo_produccion_paso_limitante    .v63aud         462  BLOQUEARIA 3    3     SI
+6   equilibrar_capacidad_personal_inventario_plazo   cap_02 P7   rehacer_flujo_paso_limitante_capacidad       .v63aud         462  ENTRARIA   1    1     SI
+7   preferir_inspeccion_proceso_prueba_destructiva   cap_02 P9   -                                            .v63aud         462  BLOQUEARIA 4    4     SI
+8   elegir_cinco_indicadores_diarios_fabrica         cap_03 P2   -                                            .v63aud         462  ENTRARIA   0    0     SI
+9   emparejar_indicadores_efecto_contraefecto        cap_03 P3   -                                            archivo fase 2  462  BLOQUEARIA 6    6     SI
+10  elegir_indicador_salida_trabajo_administrativo   cap_03 P4   emparejar_indicadores_efecto_contraefecto    archivo fase 2  462  BLOQUEARIA 3    3     SI
+11  representar_actividad_caja_negra_ventanas        cap_03 P7   -                                            .v63aud         462  ENTRARIA   0    0     SI
+12  construir_indicador_linealidad_alerta_temprana   cap_03 P9   representar_actividad_caja_negra_ventanas    .v63aud         462  ENTRARIA   0    0     SI
+13  construir_indicador_tendencia_patron             cap_03 P10  representar_actividad_caja_negra_ventanas    archivo fase 2  462  BLOQUEARIA 6    6     SI
+14  construir_grafico_escalonado_pronosticos         cap_03 P11  -                                            archivo fase 2  462  BLOQUEARIA 3    3     SI
+15  archivar_indicadores_resolver_problemas          cap_03 P12  -                                            archivo fase 2  462  BLOQUEARIA 4    4     SI
+16  elegir_fabricar_pedido_pronostico                cap_03 P13  -                                            archivo fase 2  462  BLOQUEARIA 2    2     SI
+17  casar_flujo_fabricacion_flujo_ventas             cap_03 P14  construir_grafico_escalonado_pronosticos, elegir_fabricar_pedido_pronostico .v63aud         462  ENTRARIA   0    0     SI
+18  dimensionar_plantilla_administrativa_pronostico  cap_03 P15  construir_indicador_tendencia_patron, elegir_indicador_salida_trabajo_administrativo .v63aud         462  BLOQUEARIA 6    6     SI
+19  decidir_aceptar_rechazar_material_defectuoso     cap_03 P17  dimensionar_inventario_materia_prima_reposicion .v63aud         462  BLOQUEARIA 1    1     SI
+20  elegir_inspeccion_barrera_monitorizacion         cap_03 P18  -                                            .v63aud         462  ENTRARIA   2    2     SI   <- corte del tope
+21  variar_frecuencia_inspeccion_nivel_calidad       cap_03 P19  -                                            .v63aud         462  ENTRARIA   0    0     SI
+22  simplificar_trabajo_reducir_numero_pasos         cap_03 P23  -                                            .v63aud         462  BLOQUEARIA 1    1     SI
+
+COMPROBACIONES
+  hijo delante de su madre: 0 []
+  D.36, par que levanta en un solo sentido con el que lo levanta entrando antes: 0 []
+  hijo dentro del tope con su madre fuera: 0 []
+  tanda propuesta: 20 de 22; fuera del tope: variar_frecuencia_inspeccion_nivel_calidad, simplificar_trabajo_reducir_numero_pasos

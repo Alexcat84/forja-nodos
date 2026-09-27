@@ -1,0 +1,81 @@
+===== representar_actividad_caja_negra_ventanas | grafo
+  titulo: Representar cualquier actividad como una caja negra y abrirle ventanas para ver dentro
+  fuente: ['grove_high_output'] | previos: [] | siguientes: ['construir_indicador_linealidad_alerta_temprana', 'construir_indicador_tendencia_patron']
+  cond: Cuando tienes delante una actividad que se parece a un proceso de produccion, sea de fabrica o administrativa, y necesitas ordenarla antes de medirla, porque sin saber cuales son su entrada, su salida y su trabajo no hay indicador que colocar.
+  P1. Dibuja tu actividad como una caja negra, y hazlo aunque no sea una fabrica: sirve para cualquier actividad que se parezca a un proceso de produccion.
+  P2. Nombra la entrada, que es la materia prima o la informacion que entra en la caja.
+  P3. Nombra la salida, que es lo que sale de la caja ya terminado.
+  P4. Nombra el trabajo que entra en la caja junto con la materia prima, y cuenta dentro de el tanto el de quienes ejecutan como el tuyo de mando.
+  P5. Hazlo igual con la contratacion universitaria: la entrada son los candidatos del campus, la salida son los titulados que han aceptado la oferta de empleo, y el trabajo es el de los entrevistadores del campus mas el de los mandos y tecnicos que entrevistan de vuelta en la planta.
+  P6. Hazlo igual con la formacion de la fuerza de ventas: la entrada son las especificaciones crudas del producto, la salida es el personal de ventas ya formado, y el trabajo es el de la gente de marketing y de comercializacion que convierte la informacion cruda en herramientas de venta utilizables y ensena a usarlas.
+  P7. Hazlo igual con un grupo que factura: la entrada es la informacion del cliente, o sea lo que ha comprado, los datos de precio y los registros de envio; la salida es la factura final que se le manda y por la que se cobra; y el trabajo es el de todo el personal implicado.
+  P8. Recorta ventanas en la caja, para poder ver una parte de lo que ocurre dentro.
+  P9. Mira por esas aberturas para entender el funcionamiento interno del proceso y calcular cual va a ser probablemente la salida futura.
+===== variar_frecuencia_inspeccion_nivel_calidad | grafo
+  titulo: Variar cada cuanto inspeccionas segun vaya el nivel de calidad, en vez de inspeccionar siempre igual
+  fuente: ['grove_high_output'] | previos: [] | siguientes: []
+  cond: Cuando ya tienes puesto un punto de inspeccion con una frecuencia fija y quieres bajar su coste, sabiendo que el nivel de calidad no se queda quieto en el tiempo.
+  P1. Usa la inspeccion variable como otra manera de bajar el coste del aseguramiento de la calidad.
+  P2. Varia cada cuanto inspeccionas, porque los niveles de calidad varian con el tiempo y es solo sentido comun que la frecuencia los siga.
+  P3. Si pasan semanas sin que encuentres problemas, comprueba menos a menudo.
+  P4. Si los problemas empiezan a aparecer, prueba cada vez con mas frecuencia, hasta que la calidad vuelva a los niveles altos que tenia antes.
+  P5. Cuenta con lo que ganas con eso: costes todavia mas bajos y todavia menos interferencia en el flujo de produccion.
+  P6. Cuenta con que este metodo casi no se usa ni siquiera en la fabricacion corriente, y con que la razon probable es que somos animales de costumbres y seguimos haciendo las cosas como las hemos hecho siempre, sea de una semana a otra o de un ano a otro.
+===== detectar_arreglar_fallo_etapa_menor_valor | grafo
+  titulo: Detectar y arreglar el fallo en la etapa de menor valor posible
+  fuente: ['grove_high_output'] | previos: [] | siguientes: ['dimensionar_inventario_materia_prima_reposicion']
+  cond: Cuando tienes que decidir en que punto de un flujo poner la comprobacion que caza los problemas.
+  P1. Ordena las etapas de tu flujo por el valor que el material lleva encima en cada una, contando con que el material se vuelve mas valioso a medida que avanza por el proceso: un huevo cocido vale mas que uno crudo, un desayuno montado vale mas que sus partes, y el desayuno puesto delante del cliente vale mas todavia.
+  P2. Cuenta dentro de ese valor el valor percibido que el cliente asocia al establecimiento cuando entra en el aparcamiento y ve el rotulo, que es el que lleva encima la ultima etapa.
+  P3. Detecta y arregla cualquier problema del proceso en la etapa de menor valor posible, que es la regla comun que el libro dice que hay que atender siempre.
+  P4. Aplicalo al material que entra: encuentra y rechaza el huevo podrido cuando lo esta entregando el proveedor, en vez de permitir que lo encuentre el cliente.
+  P5. Aplicalo a la contratacion como el libro la aplica: decide que no quieres a un candidato en la entrevista del campus en vez de en el transcurso de la visita a la planta, y ahorra el coste del viaje y el tiempo del candidato y de los entrevistadores.
+  P6. Aplicalo al trabajo de ingenieria como el libro lo aplica: busca el fallo de funcionamiento en la prueba unitaria de las piezas que componen el producto, en vez de en la prueba del producto final.
+===== elegir_fabricar_pedido_pronostico | grafo
+  titulo: Elegir entre fabricar contra pedido y fabricar contra pronostico, y asumir el riesgo de inventario del segundo
+  fuente: ['grove_high_output'] | previos: [] | siguientes: ['casar_flujo_fabricacion_flujo_ventas']
+  cond: Cuando tienes que decidir como controlas la salida de tu operacion, y el plazo que tardas en fabricar es mas largo que el que tu cliente esta dispuesto a esperar.
+  P1. Cuenta con que solo hay dos maneras de controlar la salida de cualquier fabrica: fabricar contra pedido y fabricar contra pronostico.
+  P2. Si fabricas contra pedido, espera a saber que quiere el cliente, busca despues un hueco en tu programa de fabricacion y hazle ahi su pieza.
+  P3. Compara tu plazo con el de tu competencia: si ellos tienen listo el mismo producto en cuatro semanas y tu necesitas cuatro meses, no vas a tener muchos clientes.
+  P4. Cuando esa comparacion te cierre la via del pedido, pasa a fabricar contra pronostico, que es actuar sobre una contemplacion de los pedidos futuros, aunque preferirias fabricar contra pedido.
+  P5. Monta tus actividades alrededor de una especulacion razonada de que se materializaran pedidos de productos concretos dentro de un plazo determinado.
+  P6. Asume el riesgo de inventario que eso trae: comprometes recursos contra una evaluacion de necesidades futuras, y si los pedidos no se materializan, o se materializan para un producto distinto del previsto, lo que te queda es inventario no deseado.
+  P7. Reconoce que al fabricar contra pronostico estas arriesgando capital para poder responder ordenadamente a una demanda futura prevista.
+  P8. Cuenta con que las dos vias pueden convivir en la misma operacion, como en la fabrica de desayunos: fabrica su producto contra el pedido del cliente, pero compra a sus proveedores, como al huevero, contra la demanda pronosticada.
+  P9. Usa el pronostico tambien fuera de la fabrica: contrata titulados para necesidades previstas en vez de contratar solo cuando surge la necesidad, porque los titulados salen de forma muy estacional, y desarrolla productos de programa contra una necesidad de mercado prevista y no contra un pedido concreto.
+===== gestionar_retencion_subordinado_valioso_renuncia | cuarentena\grove_high_output\gestionar_retencion_subordinado_valioso_renuncia.json
+  titulo: Gestionar la retencion de un subordinado valioso tras su primer aviso de renuncia: escalar al propio jefe, perseguir cada via para conservarlo y volver con una solucion a sus razones reales
+  fuente: ['grove_high_output'] | previos: [] | siguientes: []
+  cond: Cuando, tras la primera conversacion en la que un subordinado valioso anuncio que queria renunciar, el mando tiene que buscarle una salida que lo retenga en la empresa.
+  P1. Lleva el problema a tu propio jefe y hazlo participar de la solucion, en vez de cargar con todo tu solo.
+  P2. Persigue con energia cada via disponible para retener al subordinado en la empresa, incluida la de transferirlo a otro departamento.
+  P3. Si la transferencia parece la salida mas probable, asume tu mismo el papel de gestor de ese proyecto hasta que quede resuelto del todo.
+  P4. Vuelve al subordinado con una solucion que atienda sus razones reales para querer irse y que ademas beneficie a la empresa.
+  P5. Ayudalo a sentirse comodo con el nuevo arreglo, dejando claro que no se trata de una concesion arrancada por chantaje, sino de corregir algo que ya se deberia haber hecho.
+  P6. Si el subordinado dice que ya acepto un puesto en otra empresa, hazle ver que tiene dos compromisos distintos, uno con un futuro empleador que apenas conoce y otro contigo y con la gente con la que trabaja a diario, y que el segundo pesa mas.
+===== responder_primer_aviso_renuncia_subordinado | cuarentena\grove_high_output\responder_primer_aviso_renuncia_subordinado.json
+  titulo: Responder al primer momento en que un subordinado valioso avisa que quiere renunciar: dejar lo que haces, escucharlo sin discutir y comprarte tiempo antes de actuar
+  fuente: ['grove_high_output'] | previos: [] | siguientes: []
+  cond: Cuando un subordinado valioso y estimado se acerca al mando y anuncia, de pasada, que ha decidido dejar la empresa.
+  P1. Deja lo que estas haciendo en cuanto el subordinado te avisa de que quiere renunciar, en vez de posponer la conversacion para mas tarde.
+  P2. Sientalo y preguntale por que se va.
+  P3. Dejalo hablar sin discutir nada de lo que diga, aunque sus razones no te parezcan buenas.
+  P4. Cuando haya terminado de exponer sus razones, hazle mas preguntas para que los asuntos de fondo puedan salir a la luz.
+  P5. No discutas, no sermonees y no entres en panico durante esta primera conversacion.
+  P6. Pide el tiempo que necesites para prepararte antes del siguiente encuentro, en vez de intentar resolverlo todo en el momento.
+  P7. Cumple despues con lo que te hayas comprometido a hacer en esta primera conversacion.
+===== fijar_frecuencia_reunion_individual_madurez_tarea | cuarentena\grove_high_output\fijar_frecuencia_reunion_individual_madurez_tarea.json
+  titulo: Fijar cada cuanto tienes la reunion individual con cada subordinado segun su madurez relevante para la tarea, y ajustarla por lo deprisa que cambia su area
+  fuente: ['grove_high_output'] | previos: [] | siguientes: []
+  cond: Cuando tienes que decidir cada cuanto te reunes a solas con cada uno de los profesionales que te reportan, y no sabes con que criterio separar a unos de otros.
+  P1. Decide cada cuanto necesita reunion individual cada persona, en vez de poner la misma frecuencia para todas.
+  P2. Contesta a esa pregunta con la madurez relevante para el puesto o para la tarea de cada uno de tus subordinados, que es la respuesta que el libro da.
+  P3. Mide esa madurez por cuanta experiencia tiene ese subordinado con la tarea concreta que tiene entre manos.
+  P4. No la confundas con la experiencia que tiene en general ni con lo mayor que sea.
+  P5. Cuenta con que el estilo de mando mas eficaz en un caso concreto va de la supervision muy estrecha a la muy suelta a medida que sube la madurez de tarea del subordinado.
+  P6. Ten reuniones individuales con frecuencia, por ejemplo una vez por semana, con el subordinado que es inexperto en una situacion concreta.
+  P7. Tenlas con menos frecuencia, quiza una vez cada pocas semanas, con el veterano experimentado.
+  P8. Ten en cuenta ademas una segunda consideracion: lo deprisa que cambian las cosas en el area del puesto.
+  P9. Cuenta con que en un area de ritmo muy rapido, y el libro pone como ejemplo la de marketing, el supervisor necesita reuniones individuales frecuentes para seguir al dia de lo que pasa.
+  P10. Cuenta con que en un entorno mas tranquilo, y el libro pone como ejemplo el de investigacion, pueden bastar reuniones menos frecuentes para un mismo nivel de madurez relevante para la tarea.

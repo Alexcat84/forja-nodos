@@ -1,0 +1,9 @@
+cap_17 desarrollar_primer_curso_entrenamiento             pasos 7
+cap_15 gestionar_retencion_subordinado_valioso_renuncia   pasos 6
+cap_17 pedir_critica_anonima_curso_entrenamiento_dictado  pasos 4
+cap_17 priorizar_lista_entrenamiento_subordinados         pasos 5
+cap_16 reciclar_empleado_ascendido_mas_alla_capacidad     pasos 4
+cap_15 responder_primer_aviso_renuncia_subordinado        pasos 7
+cap_15 usar_banco_nueve_preguntas_entrevista              pasos 9
+fichas por capitulo: {'cap_15': 3, 'cap_16': 1, 'cap_17': 3} | suma: 7
+pasos por capitulo: {'cap_15': 22, 'cap_16': 4, 'cap_17': 16} | suma: 42

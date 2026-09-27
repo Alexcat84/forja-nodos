@@ -1,0 +1,12 @@
+PASOS INVENTADOS POR CAPITULO (D.30), vuelta 2 del frente marquet_turn_the_ship, medido en el acto de escribir cada candidato.
+
+cap_04: 1 candidato (informar_cierre_jornada_conservar_propiedad_trabajo), 5 pasos, 5 TRANSCRIPCION, 0 PUENTE.
+  PASOS INVENTADOS = 0 / 5 = 0,00 por ciento.
+
+cap_05: 0 candidatos, 0 pasos. SIN SUPERFICIE: no hay pasos que muestrear porque no se escribio ningun candidato.
+
+cap_06: 2 candidatos (aplicar_ejercicio_codigo_genetico_control con 7 pasos, asignar_responsable_unico_evolucion_planificada con 2 pasos), 9 pasos, 9 TRANSCRIPCION, 0 PUENTE.
+  PASOS INVENTADOS = 0 / 9 = 0,00 por ciento.
+
+TOTAL DEL TRAMO: 3 candidatos, 14 pasos, 14 TRANSCRIPCION, 0 PUENTE.
+  PASOS INVENTADOS = 0 / 14 = 0,00 por ciento.

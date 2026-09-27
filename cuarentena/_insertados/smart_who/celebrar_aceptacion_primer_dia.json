@@ -1,0 +1,37 @@
+{
+  "condiciones_activacion": "Cuando el candidato ya ha dicho que si y todavia no se ha incorporado. Es la cuarta de las cinco olas de la venta, y el libro la abre avisando de que conseguir el si no es el final de la caza.",
+  "denominaciones": {
+    "nombre_largo": "La cuarta ola de la venta: entre la aceptacion y el primer dia",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "The time between the candidate's acceptance and his or her first day"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "contratacion",
+  "entregable_esperado": "El candidato presentandose el primer dia, comprometido al cien por cien con su vida nueva y no a medias.",
+  "escala_minima": "El libro la fija con lo mas barato de su propia lista: un ramo de flores, unos globos o un vale regalo bastan para que la celebracion exista.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "smart_who",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "id": "celebrar_aceptacion_primer_dia",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "No des la caza por terminada cuando el candidato diga que si. Todavia le queda tiempo para acobardarse y echarse atras, sigue teniendo contraofertas y ofertas competidoras encima de la mesa, y su familia sigue preocupada por como le va a afectar el trabajo, sembrando dudas en su cabeza.",
+    "Cuenta con que hasta que no se haya comprometido al cien por cien con su vida nueva la persona corre riesgo de irse, y no sera tan eficaz como podria ser.",
+    "Celebra su aceptacion mandandole algo que signifique algo: flores, globos o un vale regalo.",
+    "Haz ruido con ello.",
+    "Sigue en contacto con la persona.",
+    "Sigue escuchando las preocupaciones relacionadas con las cinco efes y atiendelas en cuanto aparezcan."
+  ],
+  "resumen_teorico": "Es la cuarta de las cinco olas y la que corrige la ilusion de que el si cierra el trato. El libro dice que la meta es conseguir el si lo mas rapido posible, pero que llegar ahi no es el final de la caza: quedan las contraofertas, las ofertas competidoras y la familia sembrando dudas, y hasta que la persona no se ha comprometido al cien por cien con su vida nueva corre riesgo de irse y no es tan eficaz como podria. El caso que el libro pone es propio y esta contado como error de los autores, asi que se queda aqui y no en los pasos: ghSMART hizo una oferta a un candidato que la acepto con entusiasmo, y como estaba a punto de casarse quedaron en hablar despues de la boda y le mandaron champan para brindar por su futuro. Pensaron que le daban espacio dados todos los cambios de su vida, pero quiza se pasaron. Unas semanas mas tarde, despues de la luna de miel, les dijo que no se incorporaba: su mujer recien casada penso que era demasiado arriesgado cambiar de trabajo en ese momento crucial. La leccion que los autores sacan es que ellos fallaron en su parte, por no haber vendido a la familia nueva del candidato, su mujer, en ese punto critico de su decision.",
+  "titulo": "Celebrar la aceptacion y no soltar al candidato hasta su primer dia"
+}

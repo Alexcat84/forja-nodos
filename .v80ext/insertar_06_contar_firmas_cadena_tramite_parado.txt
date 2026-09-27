@@ -1,0 +1,34 @@
+fila 06, contar_firmas_cadena_tramite_parado, lineas --veredicto: 2
+  --veredicto seguir_frustrado_preguntar_implantacion_ideas|SANO|Hermanos del mismo capitulo: el vecino sigue a un responsable frustrado y pregunta por cada idea como la implanto (cap_03 L23 a L29), y este sigue un tramite parado por su cadena de firmas (L37 a L43). Los dos acaban en que falla el sistema y no la persona (el paso 10 de este contra el paso 5 del vecino), pero cada uno llega por su propio objeto; ninguno usa el producto del otro.
+  --veredicto inspeccionar_reparto_informacion_notas_jefe|SANO|Hermanos del mismo capitulo: el vecino lee el tablero de mensajes y el orden de reparto por la cadena de mando (cap_03 L45 a L53), y este la cadena de firmas de una papeleta (L37 a L43). Los dos leen un circuito que baja por la cadena de mando, con objetos y pasos distintos; ninguno usa el producto del otro.
+inicio 2026-09-26 18:31:03
+======================================================================
+ADUANA DE INSERCION, candidato 'contar_firmas_cadena_tramite_parado'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (464 del grafo mas 15 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 2. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino seguir_frustrado_preguntar_implantacion_ideas  [Seguir al que viste frustrado en una reunion y preguntarle, idea por idea, como la implanto]
+    levantada por: similitud_texto
+    similitud_texto    0.354 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.463 (umbral 0.60)
+    paso 2 del candidato contra paso 7 de seguir_frustrado_preguntar_implantacion_ideas
+
+  vecino inspeccionar_reparto_informacion_notas_jefe  [Inspeccionar con el responsable delante como se reparte la informacion que entra, y leer las notas que el jefe deja escritas en ella]
+    levantada por: similitud_texto
+    similitud_texto    0.360 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.405 (umbral 0.60)
+    paso 8 del candidato contra paso 5 de inspeccionar_reparto_informacion_notas_jefe
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 465
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 2
+
+======================================================================
+fin 2026-09-26 18:41:03 | codigo de salida 0 | 599.7 s

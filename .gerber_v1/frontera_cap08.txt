@@ -1,0 +1,15 @@
+AVISO: cero celdas tecleadas en este instrumento. El arranque del cuerpo NO
+es una constante mia: sale de fuentes/gerber_emyth/cap_08.md, linea 8, que es la siguiente al segundo
+--- de la cabecera yaml (cierres en L1 y L7). El cuerpo va de L8 a L179.
+
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| `R1` | L8 a L19 | **24** | el numero del capitulo, el rotulo `MATURITY AND THE ENTREPRENEURIAL PERSPECTIVE` y el epigrafe de Peter Drucker | **RESIDUO: rotulo y epigrafe** |
+| `R2` | L20 a L35 | **158** | la Madurez no es el final de una serie: McDonalds, Federal Express y Disney empezaron asi, y lo que las separa es la Perspectiva Emprendedora | **POSTURA** |
+| `P1` | L36 a L51 | **310** | LAS TRES RAZONES DE TOM WATSON PARA IBM, y el bucle diario que el libro le pone detras: el retrato de la empresa terminada, el retrato de como actuaria, actuar asi desde el primer dia, y el repaso de cada noche contra la plantilla | **CANDIDATO A NODO, con su CASO nombrado dentro** |
+| `R3` | L52 a L105 | **785** | lo que la historia ensena aunque no sea textual, las seis contraposiciones entre la Perspectiva Emprendedora y la del Tecnico, y la escala de cada una | **POSTURA: es contraste, no medios** |
+| `P2` | L106 a L121 | **245** | COMO SE TRAZA EL MODELO EMPRENDEDOR: buscar donde esta la oportunidad, volver al tablero y construir una solucion a las frustraciones de un grupo concreto de clientes, y arrancar del retrato del cliente y no del negocio | **CANDIDATO A NODO** |
+| `R4` | L122 a L179 | **661** | el tecnico que mira hacia dentro, el cliente como problema o como oportunidad, el modelo que hace falta encontrar y el rotulo de la `PART II` | **POSTURA** |
+| **el cuerpo entero** | **L8 a L179** | **2183** | **suma de las piezas: 2183** | **residuo sin asignar: 0** |
+
+piezas: 6   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 2183   suma 2183   residuo 0

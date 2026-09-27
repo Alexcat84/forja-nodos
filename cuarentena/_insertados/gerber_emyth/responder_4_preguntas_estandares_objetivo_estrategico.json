@@ -1,0 +1,30 @@
+{
+  "id": "responder_4_preguntas_estandares_objetivo_estrategico",
+  "titulo": "Responder las cuatro preguntas que el libro enumera para completar los estandares de tu Objetivo Estrategico",
+  "denominaciones": {
+    "nombre_largo": "El cuestionario en vinetas de Standards Three Through?, del capitulo Your Strategic Objective: cuatro preguntas para completar los estandares de tu Objetivo Estrategico despues del dinero y la Oportunidad que Vale la Pena",
+    "sigla": "",
+    "otros_idiomas": [
+      {"idioma": "ingles", "termino": "Standards Three Through?"}
+    ]
+  },
+  "condiciones_activacion": "Cuando ya escribiste los dos primeros estandares de tu Objetivo Estrategico (el dinero y si es una Oportunidad que Vale la Pena) y necesitas completar los estandares restantes, que el libro no numera de forma fija.",
+  "entregable_esperado": "Las respuestas a las cuatro preguntas, que se suman a los estandares ya escritos para completar tu Objetivo Estrategico.",
+  "pasos_accionables": [
+    "No hay un numero especifico de estandares en tu Objetivo Estrategico: solo hay preguntas especificas que hay que responder.",
+    "Cuando va a estar terminado tu Prototipo: en dos anios, en tres, en diez.",
+    "Donde vas a hacer negocio: localmente, regionalmente, nacionalmente, internacionalmente.",
+    "Como vas a hacer negocio: al detalle, al por mayor, o una combinacion de las dos.",
+    "Que estandares vas a exigir en cuanto a reportes, limpieza, vestuario, gestion, contratacion, despido, entrenamiento, y demas."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/gerber_emyth/cap_15.md, unidad Cap. 13, titulo textual Your Strategic Objective. Sale de la PIEZA R5 de la frontera publicada en esta misma vuelta (.gerber_v5/frontera_cap15.txt), L167 a L178, 87 palabras. POR QUE ES PROCEDIMIENTO Y NO POSTURA, con D.27 y 9.1 delante: el libro trae su propio inventario de OBJETOS DE TRABAJO (las cuatro preguntas de Standards Three Through?) en formato de vineta, introducido por la frase there are only specific questions that need to be answered, sin adjetivo de adecuacion en el sitio del criterio (ninguna vineta pide un plazo prudencial ni medidas apropiadas, cada una nombra su objeto exacto: Prototipo terminado, territorio de negocio, modalidad de venta, estandares operativos). RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 5 pasos, 5 TRANSCRIPCION, 0 PUENTE, con su cita pegada en .gerber_v5/cita_cap15_L167.txt (D.35). Las cuatro preguntas retoricas de cada vineta (In two years? Three? Ten?, Locally? Regionally? Nationally? Internationally?, etc.) se transcriben como las opciones que el propio libro nombra, no como opciones que yo invente. LA REPETICION INTERNA (P.19): las cuatro preguntas nombran cuatro objetos distintos (plazo, territorio, modalidad, estandares operativos) y no se repiten entre si, asi que no hay fusion que hacer. POR QUE NO ES LA CABEZA DEL PASO 2 DE LA SERIE: recorrer_siete_pasos_programa_desarrollo_negocio (cap_13, L43 a L57) nombra Your Strategic Objective como su segundo paso, pero este candidato es un metodo DENTRO de ese paso (el cuestionario de los estandares tercero en adelante), no el paso completo: el capitulo trae ademas el estandar del dinero (R3, POSTURA, sin vineta) y el estandar de la Oportunidad que Vale la Pena (R4, POSTURA y CASO), que este candidato no cubre. Mismo patron que responder_8_preguntas_construir_primary_aim con Your Primary Aim en la vuelta anterior: un metodo dentro de un paso no es la cabeza de ese paso, y cablearlo como si lo fuera fabrica una arista falsa (EXTRACTOR.md 15.6). D.37 NO SE DISPARA en esta vuelta para este capitulo.",
+  "atribuciones": [],
+  "dominio": "gestion_negocio",
+  "estado": "vivo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "fuentes": [
+    {"clave": "gerber_emyth", "fecha": "2026-09-21"}
+  ]
+}

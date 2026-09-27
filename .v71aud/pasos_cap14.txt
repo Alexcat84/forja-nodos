@@ -1,0 +1,30 @@
+===== entregar_evaluacion_desempeno_tres_claves | cuarentena\grove_high_output\entregar_evaluacion_desempeno_tres_claves.json
+  titulo: Entregar la evaluacion de desempeno cara a cara con las tres claves del mando: franqueza, escucha total y dejar fuera las emociones propias
+  fuente: ['grove_high_output']
+  cond: Cuando el mando va a entregar cara a cara, en la conversacion de revision, la evaluacion de desempeno de un subordinado.
+  P1. Se totalmente franco con el subordinado al entregarle la revision, tanto al elogiar como al criticar, porque la credibilidad y la integridad de todo el sistema de revision dependen de esa franqueza.
+  P2. Recuerda que el objetivo de la comunicacion es hacer llegar tus pensamientos de tu cabeza a la del subordinado, y que las palabras son solo el medio: el fin es que se comunique el pensamiento correcto.
+  P3. Observa al subordinado mientras hablas y sigue insistiendo hasta estar seguro de que tu mensaje llego y se entendio, sin conformarte con que haya parafraseado tus palabras.
+  P4. Emplea toda tu capacidad sensorial, no solo el oido, para confirmar que tus puntos se estan interpretando correctamente en la cabeza del subordinado.
+  P5. Deja fuera tus propias inseguridades, ansiedades o culpa: la revision trata de los problemas del subordinado y no de los tuyos.
+  P6. Controla esas emociones propias para que no afecten tu tarea mientras entregas la revision, aunque sepas que van a aflorar.
+===== guiar_subordinado_etapas_resistencia_desempeno | cuarentena\grove_high_output\guiar_subordinado_etapas_resistencia_desempeno.json
+  titulo: Guiar a un subordinado con un problema grave de desempeno por las etapas de ignorar, negar y culpar a otros hasta que asuma su responsabilidad, y asumir el mando formal si se estanca
+  fuente: ['grove_high_output']
+  cond: Cuando un subordinado tiene un problema de desempeno serio, del tipo que podria costarle el puesto si no se corrige, y el mando tiene que llevarlo a traves de una revision de conflicto para resolverlo.
+  P1. Reconoce en que etapa esta el subordinado frente al problema: ignorandolo, negando que existe, o culpando a otros de el.
+  P2. Si el subordinado ignora el problema, aportale hechos y ejemplos concretos que demuestren su realidad.
+  P3. Si el subordinado niega el problema pero ya no lo ignora, sigue aportando evidencia: la evidencia puede vencer tambien la negacion.
+  P4. Cuando el subordinado admita que hay un problema pero lo atribuya a otros, reconoce que esta usando un mecanismo de defensa para evitar la responsabilidad de resolverlo.
+  P5. Lleva la cuenta de en que etapa esta el subordinado en cada momento de la conversacion, porque intentar buscar la solucion mientras el sigue negando o culpando a otros no produce nada.
+  P6. Si el subordinado no logra avanzar mas alla de culpar a otros, asume el papel formal de jefe, dile explicitamente que es lo que le estas instruyendo a hacer como su superior, y vigila despues su desempeno contra ese compromiso.
+===== preparar_resena_mixta_hoja_trabajo | cuarentena\grove_high_output\preparar_resena_mixta_hoja_trabajo.json
+  titulo: Preparar una revision de desempeno mixta con el metodo de la hoja de trabajo: volcar todo sin editar, buscar relaciones, convertirlas en mensajes y recortar los que el subordinado no pueda retener
+  fuente: ['grove_high_output']
+  cond: Cuando el mando va a preparar una revision de desempeno del tipo por un lado y por otro, que mezcla observaciones positivas y negativas del subordinado.
+  P1. Reune tantos aspectos del desempeno del subordinado como puedas: revisa informes de avance, el desempeno contra los objetivos trimestrales y las notas de las reuniones individuales.
+  P2. Sientate con una hoja en blanco y, sin editar en tu cabeza, anota todo lo que se te ocurra sobre el desempeno del subordinado, cosas mayores, menores y triviales, sin ningun orden particular.
+  P3. Cuando hayas agotado los items, guarda toda la documentacion de apoyo.
+  P4. Busca relaciones entre los distintos items anotados en la hoja: observa cuales son manifestaciones distintas de un mismo fenomeno y por que existe cierta fortaleza o debilidad.
+  P5. Cuando encuentres esas relaciones, empieza a llamarlas mensajes para el subordinado, y a partir de ahi extrae las conclusiones y los ejemplos concretos que las sostienen.
+  P6. Preguntate si el subordinado sera capaz de recordar todos los mensajes que has elegido entregar; si la respuesta es no, elimina los menos importantes, sabiendo que lo que no entra en esta revision puede entrar en la siguiente.

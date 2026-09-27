@@ -1,0 +1,12 @@
+============================================================================
+TABLA DE CIERRE DE TAREAS (D.52): toda tabla del reporte declara su instrumento
+============================================================================
+  libro de la linea : grove_high_output
+  filas             : 3
+  SIN COMPROBAR  1  ninguna afirmacion de la forma 'N de M del capitulo' con su cap_NN
+  SIN COMPROBAR  2  ninguna afirmacion de la forma 'N de M del capitulo' con su cap_NN
+  SIN COMPROBAR  3  ninguna afirmacion de la forma 'N de M del capitulo' con su cap_NN
+
+ESCRITA la tabla regenerada en docs\loop\TABLA_DE_CIERRE.txt
+
+TABLA DE CIERRE VERDE: ninguna celda medible difiere del dato.

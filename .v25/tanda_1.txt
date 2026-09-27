@@ -1,0 +1,11 @@
+COLA cola   ajustar_franqueza_oido_oyente                               57.1s   pares SIN veredicto mio: delimitar_franqueza_radical_cinco_noes, equilibrar_elogio_critica_equipo, manejar_enfado_persona_desafiada
+COLA cola   cuidar_persona_completa_equipo                              70.0s   pares SIN veredicto mio: delimitar_franqueza_radical_cinco_noes, equilibrar_elogio_critica_equipo, imaginar_caso_simple_bragueta_abierta, manejar_enfado_persona_desafiada
+COLA cola   revisar_ciclo_responsabilidades_relaciones                  79.6s   pares SIN veredicto mio: manejar_enfado_persona_desafiada
+COLA cola   elogiar_trabajo_especifico_contexto                         69.1s   pares SIN veredicto mio: cambiar_potencial_trayectoria_crecimiento, criticar_trabajo_evitar_desanimo, manejar_enfado_persona_desafiada
+COLA cola   empezar_cultura_franqueza_radical                           35.8s   pares SIN veredicto mio: criticar_trabajo_evitar_desanimo, equilibrar_elogio_critica_equipo, manejar_enfado_persona_desafiada
+COLA cola   pedir_critica_equipo_premiarla                              79.2s   pares SIN veredicto mio: cambiar_potencial_trayectoria_crecimiento, manejar_enfado_persona_desafiada
+COLA cola   acompaniar_mejores_equipo_socio                             73.7s   pares SIN veredicto mio: cambiar_potencial_trayectoria_crecimiento, manejar_enfado_persona_desafiada
+
+intentados en esta corrida : 7
+INSERTADOS                 : 0
+en cola de lectura         : 7

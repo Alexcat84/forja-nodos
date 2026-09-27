@@ -1,0 +1,21 @@
+01 inicio 11:45:41 fin 12:16:04 rc 0 | desde el fin anterior None s
+02 inicio 12:18:33 fin 12:58:12 rc 0 | desde el fin anterior 149.0 s
+03 inicio 13:02:11 fin 13:17:13 rc 0 | desde el fin anterior 239.0 s
+04 inicio 13:18:07 fin 13:32:21 rc 0 | desde el fin anterior 54.0 s
+05 inicio 13:33:35 fin 13:49:33 rc 0 | desde el fin anterior 74.0 s
+06 inicio 13:50:22 fin 14:10:57 rc 0 | desde el fin anterior 49.0 s
+07 inicio 14:13:41 fin 14:30:33 rc 0 | desde el fin anterior 164.0 s
+08 inicio 14:31:20 fin 14:56:17 rc 0 | desde el fin anterior 47.0 s
+09 inicio 14:57:08 fin 15:18:13 rc 0 | desde el fin anterior 51.0 s
+10 inicio 15:19:03 fin 15:42:43 rc 0 | desde el fin anterior 50.0 s
+11 inicio 15:43:29 fin 16:04:46 rc 0 | desde el fin anterior 46.0 s
+12 inicio 16:05:35 fin 16:29:31 rc 0 | desde el fin anterior 49.0 s
+13 inicio 16:30:25 fin 16:49:24 rc 0 | desde el fin anterior 54.0 s
+14 inicio 16:50:15 fin 17:15:46 rc 0 | desde el fin anterior 51.0 s
+15 inicio 17:16:37 fin 17:30:14 rc 0 | desde el fin anterior 51.0 s
+16 inicio 17:31:07 fin 18:00:44 rc 0 | desde el fin anterior 53.0 s
+17 inicio 18:01:32 fin 18:29:40 rc 0 | desde el fin anterior 48.0 s
+18 inicio 18:30:57 fin 18:52:20 rc 0 | desde el fin anterior 77.0 s
+19 inicio 18:53:16 fin 19:18:11 rc 0 | desde el fin anterior 56.0 s
+20 inicio 19:19:33 fin 19:50:31 rc 0 | desde el fin anterior 82.0 s
+insertar: 20 | que arrancan antes de que acabe el anterior: 0

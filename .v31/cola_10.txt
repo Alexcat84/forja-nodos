@@ -1,0 +1,7 @@
+ADUANA DE INSERCION, candidato 'montar_reunion_general_presentaciones_preguntas'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (265 del grafo mas 83 que esperan en bandejas)
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 266
+  censos escritos: denominaciones

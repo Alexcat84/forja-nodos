@@ -1,0 +1,26 @@
+fila 13, recorrer_siete_pasos_programa_desarrollo_negocio, lineas --veredicto: 1
+  --veredicto construir_estrategia_gente_cuatro_componentes|SANO|Cabeza y parte de una serie D.37, que por D.53 no es CONTINUA: el paso 8 de este, Paso 5: Your People Strategy (L53), nombra en una linea lo que el vecino despliega en cinco pasos (cap_18 L117, L119); la senial 3 lo levanta en los dos sentidos. Son procedimientos distintos, recorrer el programa entero y armar una de sus partes; la relacion va como arista en .v76ext/aristas_lectura.txt (d111).
+inicio 2026-09-26 11:19:31
+======================================================================
+ADUANA DE INSERCION, candidato 'recorrer_siete_pasos_programa_desarrollo_negocio'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (449 del grafo mas 30 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino construir_estrategia_gente_cuatro_componentes  [Construir tu Your People Strategy con los cuatro componentes que el libro nombra uno a uno]
+    levantada por: paso_contra_nodo
+    similitud_texto    0.232 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.762 (umbral 0.60)
+    paso 5 del candidato contra paso 3 de construir_estrategia_gente_cuatro_componentes
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 450
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 1
+
+======================================================================
+fin 2026-09-26 11:25:37 | codigo de salida 0 | 366.2 s

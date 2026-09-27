@@ -1,0 +1,7 @@
+| lo que mido | de donde sale | cifra |
+|---|---|---:|
+| candidatos de `cap_07` que quedan en bandeja | `python .v30e/orden.py` | **0** |
+| nodos del grafo con fuente `scott_radical_candor` | `grep -c` sobre `dataset/nodos.jsonl` | **53** |
+| archivados en `cuarentena/_insertados/scott_radical_candor` | `ls` de esa carpeta | **53** |
+| bandeja del lote 4, lo que sigue esperando | `ls` de `cuarentena/scott_radical_candor` | **89** |
+| cruce de los archivados contra el dataset | `.v30e/cruce.py` | **53 dentro del grafo y 0 fuera, 53 mas 0 igual a 53** |

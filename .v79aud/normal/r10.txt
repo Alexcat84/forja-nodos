@@ -1,0 +1,8 @@
+clase 80: IDENTICA a la pegada
+tablero --puedo: IDENTICO al pegado
+relojes: IDENTICOS a los pegados
+orden: IDENTICO al pegado
+aristas esperadas y lineas: IDENTICAS a las pegadas
+2026-09-26 17:26:58 docs/loop/CREDITO_serial.jsonl
+2026-09-26 17:27:31 docs/loop/PROMPT_SIGUIENTE.md
+ahora: 2026-09-26 17:27:51

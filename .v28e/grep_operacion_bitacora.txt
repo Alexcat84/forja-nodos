@@ -1,0 +1,2 @@
+$ python forja.py ayuda | grep -in "bitacora"
+(cero lineas)

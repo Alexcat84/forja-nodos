@@ -1,0 +1,11 @@
+[
+ ('R1',  9,   9, 'el rotulo `INTRODUCTION`', 'RESIDUO: rotulo'),
+ ('R2', 11,  21, 'la insatisfaccion del trabajador, con el caso de Ian y las cifras de Gallup y de Towers Watson', 'POSTURA y CASO'),
+ ('R3', 23,  33, 'la frustracion del jefe, con el caso de Scott Mesh y la encuesta del 44 por ciento, y la causa raiz nombrada', 'POSTURA y CASO'),
+ ('R4', 35,  55, 'The Problem: Leader-Follower: la definicion vieja de liderazgo, su limite en el trabajo cognitivo, y la contradiccion del empoderamiento', 'POSTURA'),
+ ('R5', 57,  61, 'The Solution: Leader-Leader: la tesis de que todos podemos ser lideres y lo que el modelo consigue', 'POSTURA'),
+ ('R6', 63,  85, 'Born of Failure: la autobiografia, el Sunfish, el primer capitan, el sonar activo, y el desastre del Will Rogers', 'CASO'),
+ ('R7', 87,  95, 'Success, Immediately and Forever: el submarino como sitio improbable y el resultado del Santa Fe a diez anios vista', 'CASO'),
+ ('P1', 97,  97, 'LA ARQUITECTURA DEL METODO, puesta por el libro sobre si mismo: el puente es el control, que se cede sin ceder la responsabilidad, y los dos pilares que hay que reforzar segun se cede, competencia tecnica y claridad organizativa', 'NODO'),
+ ('R8', 99, 103, 'la vision, el llamamiento a la accion y la direccion de correo del autor', 'POSTURA'),
+]

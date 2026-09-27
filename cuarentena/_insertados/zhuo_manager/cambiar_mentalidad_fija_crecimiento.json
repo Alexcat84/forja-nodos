@@ -1,0 +1,42 @@
+{
+  "id": "cambiar_mentalidad_fija_crecimiento",
+  "titulo": "Cambiar la mentalidad fija por la de crecimiento para poder pedir opinion",
+  "denominaciones": {
+    "nombre_largo": "Por que pedir opinion cuesta, y los cuatro escenarios con los que el libro contrasta las dos mentalidades de Carol Dweck",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "fixed and growth mindset"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando has leido lo que hay que pedir para calibrarte y te encoges de pensar en hacerlo, o cuando te descubres midiendo cada reto por lo que dice de cuanto vales.",
+  "entregable_esperado": "Reconocida cual de las dos mentalidades gobierna tus acciones en un momento dado, contrastandola con los cuatro escenarios que el libro pone.",
+  "escala_minima": "Una persona y una situacion concreta que contrastar contra los cuatro escenarios.",
+  "pasos_accionables": [
+    "El libro se para aqui a reconocer que pedir opinion es dificil, y que puede que hayas leido las sugerencias de calibracion y te hayas encogido al pensar en hacerlas.",
+    "Mira de donde viene, que el libro lo cuenta de la autora: tardo anios en sentirse comoda pidiendo opinion a otros, fuera de las revisiones formales donde no le quedaba mas remedio, y la razon que da es el sindrome del impostor. Como se preocupaba constantemente de no ser lo bastante buena, se apartaba de cualquier cosa que pudiera confirmar esa vision.",
+    "Cuenta con que hace falta cierta cantidad de confianza para pedir opinion critica.",
+    "Si ves cada reto como una prueba de cuanto vales, vas a preocuparte constantemente de en que lugar estas en vez de de como podrias mejorar. Es como estresarte mas por la nota del examen que por si de verdad estas aprendiendo los conceptos que te ensenian.",
+    "Si en cambio te acercas a los retos con la creencia de que puedes mejorar en cualquier cosa si pones el esfuerzo, el circulo vicioso de la autoevaluacion ansiosa se rompe, y puedes acercarte a aprender con curiosidad en vez de con aprension. El libro da su propia recompensa concreta: la autora nunca habria sabido que su opinion era a menudo vaga y con la mano suelta si no hubiera invitado ese comentario de una colega.",
+    "Observa la diferencia entre las dos mentalidades que la psicologa Carol Dweck describe en su libro Mindset, la fija y la de crecimiento, y que segun ella marcan una diferencia enorme en nuestro rendimiento y en nuestra felicidad personal.",
+    "Escenario uno: acabas de completar una tarea y tu jefe te da unas cuantas sugerencias de mejora. Mentalidad fija: uf, la he fastidiado del todo, mi jefe debe de pensar que soy un idiota. Mentalidad de crecimiento: agradezco que mi jefe me diera esas pistas, ahora todas mis tareas futuras van a ir mejor.",
+    "Escenario dos: te preguntan si te gustaria llevar la delantera en un proyecto nuevo, arriesgado y exigente. Fija: mejor digo que no, no quiero fracasar y quedar en ridiculo. Crecimiento: es una gran oportunidad para estirarme, aprender algo nuevo y ganar la experiencia que hace falta para liderar otros proyectos grandes mas adelante.",
+    "Escenario tres: acabas de tener una reunion a solas tensa con Alice, tu persona a cargo. Fija: deberia actuar como si hubiera ido bien, para parecer que se lo que hago. Crecimiento: deberia preguntarle a Alice como se sintio con esa conversacion y como podriamos tener discusiones mas productivas en el futuro.",
+    "Escenario cuatro: estas a media faena con una propuesta y John te pide ver como la llevas. Fija: no quiero ensenarle nada ahora mismo porque la propuesta esta en bruto, va a hacer que quede mal. Crecimiento: la opinion de John va a ser muy util, de hecho deberia compartir mi pensamiento temprano con todavia mas gente para adelantarme a cualquier problema potencial.",
+    "Ten delante lo que cambia: la perspectiva que tienes lo cambia todo. Con mentalidad fija tus acciones las gobierna el miedo, miedo al fracaso, miedo al juicio, miedo a que te descubran como un impostor. Con mentalidad de crecimiento te motiva buscar la verdad y pedir opinion, porque sabes que es el camino mas rapido para llevarte donde quieres ir."
+  ],
+  "resumen_teorico": "Es la herramienta que el libro pone justo despues de pedir calibracion, y su sitio no es casual: el propio texto se para a reconocer que lo que acaba de pedir cuesta, y da la razon, el sindrome del impostor. Su inventario propio son los cuatro escenarios, cada uno con sus dos lecturas escritas literalmente, que es lo que lo vuelve ejecutable: no hay que juzgar en abstracto cual es tu mentalidad, hay que contrastar tu reaccion contra cuatro pares. La atribucion es de Carol Dweck y el libro la nombra con su obra. Lo que el libro NO dice, y por eso no esta escrito: como se pasa de una mentalidad a la otra mas alla de reconocerlas, ni cuanto tarda."
+}

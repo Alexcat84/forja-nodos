@@ -1,0 +1,6 @@
+LOS 12 DE cap_07, VECINOS LEVANTADOS EN LA INSERCION DE VERDAD
+  por candidato, en el orden del libro: 9, 4, 1, 7, 3, 3, 10, 10, 10, 8, 7, 5
+  candidatos: 12
+  SUMA: 77
+  lo que el barrido ciego del auditor publico (APERTURA_CIEGA.md 77): 77
+  DIFERENCIA: 0

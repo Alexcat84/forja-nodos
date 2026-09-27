@@ -1,0 +1,8 @@
+$ sha1sum -c --quiet .v76aud/huellas_al_barrer.txt && echo "las 42 fichas de las dos bandejas y el grafo: las mismas huellas que al barrer en mi fase ciega"
+las 42 fichas de las dos bandejas y el grafo: las mismas huellas que al barrer en mi fase ciega
+$ python .v76ext/pasos_y_huellas.py | diff - .v76ext/pasos_y_huellas.txt && echo "pasos_y_huellas.py de hoy: IDENTICO a su salida del cierre"
+pasos_y_huellas.py de hoy: IDENTICO a su salida del cierre
+$ for f in $(awk "NR<=22{print \$2}" .v76ext/pasos_y_huellas.txt); do git hash-object cuarentena/gerber_emyth/$f.json | cut -c1-10; done | diff - <(awk "NR<=22{print \$6}" .v76ext/pasos_y_huellas.txt) && echo "las 22 huellas que publica son los blobs de hoy, fila a fila"
+las 22 huellas que publica son los blobs de hoy, fila a fila
+$ git diff --stat 2407dbb0 45e46d54 -- cuarentena/ | tail -1
+ 6 files changed, 19 insertions(+), 19 deletions(-)

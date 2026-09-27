@@ -1,0 +1,3 @@
+  priorizar     : "...podria fundirlas en un solo nodo de cinco mas siete pasos"  -> DOS
+  desarrollar   : "...podria fundir los tres en un solo nodo de dieciseis pasos"  -> TRES
+  pedir         : "...podria fundir los tres en un solo nodo de dieciseis pasos"  -> TRES

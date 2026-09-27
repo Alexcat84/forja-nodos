@@ -1,0 +1,16 @@
+==============================================================================
+FICHA: dimensionar_numero_subordinados_medio_dia_semanal   (11 pasos)
+  poblacion barrida: 390 nodos (grafo + bandejas, filtro canonico)
+  medidos al digito: 389 de 389; descartados: 0
+  umbral de la casa (config/umbrales.json): 0.35
+  reloj del barrido: 820.3 s
+  LOS 8 VECINOS MAS PROXIMOS, LISTA ORDENADA ENTERA:
+    0.3057  [bandeja/grove_high_output] llevar_inventario_proyectos_discrecionales
+    0.2958  [bandeja/grove_high_output] buscar_regularidad_bloques_iguales_trabajo_mando
+    0.2642  [bandeja/grove_high_output] supervisar_tarea_delegada_etapa_menor_valor
+    0.2543  [bandeja/grove_high_output] usar_calendario_herramienta_planificacion_produccion
+    0.2423  [bandeja/grove_high_output] supervisar_decision_delegada_preguntas_concretas
+    0.2411  [bandeja/grove_high_output] casar_flujo_fabricacion_flujo_ventas
+    0.2349  [bandeja/grove_high_output] decidir_aceptar_rechazar_material_defectuoso
+    0.2345  [bandeja/grove_high_output] agrupar_tareas_semejantes_aprovechar_preparacion
+  vecinos por encima del umbral 0.35: 0

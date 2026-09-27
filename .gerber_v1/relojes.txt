@@ -1,0 +1,9 @@
+candidatos en la bandeja            : 10
+ficheros de aduana corridos         : 5
+el candidato tocado MAS TARDE       : 21:24:26  (interrogar_negocio_cinco_preguntas.json)
+el informe de aduana MAS TEMPRANO   : 21:40:04  (aduana_tanda_b.txt)
+
+candidatos tocados DESPUES de su informe mas temprano : 0
+
+VERDE: los 10 candidatos estaban escritos y quietos antes del primer
+informe. El saldo publicado es el de los bytes que hoy estan en la bandeja.

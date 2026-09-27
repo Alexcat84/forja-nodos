@@ -1,0 +1,14 @@
+$ git rev-parse --abbrev-ref HEAD
+extraccion-mundo-11
+$ git log -1 --format="%h %ad %s" --date=iso
+4365888 2026-09-20 12:09:20 -0400 Apertura de la vuelta 54: el arnes deja su registro antes de que el saneamiento toque nada
+
+$ wc -l dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl config/pares_mutuos.jsonl
+    346 dataset/nodos.jsonl
+    740 bitacora/VEREDICTOS.jsonl
+      1 config/pares_mutuos.jsonl
+   1087 total
+$ ls cuarentena/grove_high_output/*.json | wc -l
+65
+$ ls cuarentena/_insertados/grove_high_output/*.json | wc -l
+1

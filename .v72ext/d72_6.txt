@@ -1,0 +1,4 @@
+$ sed -n '12p' .v71ext/aristas_lectura.txt | cut -c1-150
+SOSTENGO | elegir_modo_control_motivacion_factor_cua | escalonar_complejidad_puesto_empleado_nuevo | madre pasos 4 y 5, hijo pasos 1 y 2 | cap_11 L61,
+$ grep -n "escalonar" .v71aud/aristas_lectura.tsv | cut -c1-150
+16:elegir_modo_control_motivacion_factor_cua	escalonar_complejidad_puesto_empleado_nuevo	SOSTENGO D.29, DUDA	pasos 1, 2 y 4	pasos 1, 2 y 7	cap_11 L63	

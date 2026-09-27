@@ -1,0 +1,47 @@
+La guarda no se afloja: sigue mordiendo cuando se la llama sola. ... ok
+
+======================================================================
+FAIL: test_e_guion_largo_rompe_el_hook (__main__.PruebaE.test_e_guion_largo_rompe_el_hook)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\AlexDesk\Documents\forja-nodos\tests\test_aceptacion.py", line 419, in test_e_guion_largo_rompe_el_hook
+    self.assertEqual(codigo, 0,
+AssertionError: 1 != 0 : el repo ha de estar limpio antes de ensuciarlo:
+[pre-commit] gate de integridad
+GATE VERDE.
+  nodos verificados: 243
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones
+[pre-commit] barrido de guiones
+BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+[pre-commit] tallado del reporte (D.41) y censo de rutas (D.42)
+Traceback (most recent call last):
+  File "C:\Users\AlexDesk\Documents\forja-nodos\scripts\tallar_reporte.py", line 506, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "C:\Users\AlexDesk\Documents\forja-nodos\scripts\tallar_reporte.py", line 496, in main
+  File "C:\Users\AlexDesk\Documents\forja-nodos\scripts\tallar_reporte.py", line 496, in main
+    dictamenes = revisar(regenerar=regenerar)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AlexDesk\Documents\forja-nodos\scripts\tallar_reporte.py", line 315, in revisar
+    texto = io.open(ruta_reporte, encoding="utf-8").read()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\AlexDesk\\Documents\\forja-nodos\\docs\\loop\\REPORTE.md'
+[cierre] tallado del reporte (D.41)
+
+CIERRE EN ROJO. No pasa: tallado del reporte (D.41)
+
+Si lo que cayo es el tallado, la tabla NO se corrige tecleando:
+  python scripts/tallar_reporte.py --arreglar
+y se escribe al lado de que caida sale (correccion declarada).
+
+[pre-commit] COMMIT ABORTADO: una tabla no coincide con su instrumento
+(D.41), o una ruta publicada como sede de una cifra no sostiene nada (D.42).
+Ninguna de las dos se corrige tecleando la celda buena.
+
+
+----------------------------------------------------------------------
+Ran 176 tests in 40.566s
+
+FAILED (failures=1)
+
+========================================================================

@@ -1,0 +1,47 @@
+{
+  "id": "repartir_notas_publicar_reparto_esperado",
+  "titulo": "Repartir las notas sin una distribucion rigida y publicar el reparto que esperas, para que la calibracion no se vuelva opaca",
+  "denominaciones": {
+    "nombre_largo": "El septimo de los trece elementos: el reparto de notas, con los porcentajes que la autora ha encontrado en su experiencia y la advertencia de no dejar que una distribucion esperada te ciegue a la realidad",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "distribution of ratings"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando tienes que decidir que reparto de notas espera tu empresa y si lo haces publico.",
+  "entregable_esperado": "El reparto de notas que esperas decidido a partir de las consecuencias de cada nota, y publicado a la organizacion para que las calibraciones no se vuelvan opacas.",
+  "pasos_accionables": [
+    "Ten delante la consideracion practica que el texto pone primera, y que no es menor: como repartes la tarta de la retribucion. Si vas a dar primas muy grandes a la gente que saca la nota alta, probablemente no te puedes permitir tener al cincuenta por ciento de la empresa en esa categoria.",
+    "Evita en general una distribucion demasiado rigida, por la razon que el texto da: puedes estar bendecido en un anio dado con un equipo excepcionalmente capaz, o maldito con un punado de gente haciendo un trabajo mediocre, y no quieres que una distribucion esperada te ciegue a la realidad.",
+    "Cuenta con lo que el texto dice que es lo mas importante en general: el proceso de calibracion.",
+    "Ten delante los porcentajes que la experiencia de la autora le da, y que ella misma marca como suyos: al menos un cinco por ciento de la gente probablemente necesita en cualquier momento dado el tipo de aviso fuerte que da la nota mas baja, y puede que a ti eso te parezca excesivamente duro para tu entorno, o no bastante duro.",
+    "Cuenta con lo que la nota alta significa en ese reparto: quieres dar premios desmesurados porque quieres retribuir con justicia a quien ha conseguido mas que los demas, y retenerlo. La autora ha encontrado que ese grupo es aproximadamente, y muy aproximadamente, un quince por ciento de un equipo.",
+    "Cuenta con que normalmente entre el uno y el cinco por ciento de una poblacion hace un trabajo de verdad excepcional, a quien quieres retener a toda costa. Identificar a esa gente es un ejercicio importante, y el texto dice que no hace falta crear una nota especial para ella.",
+    "Haz la cuenta que el texto hace con lo que queda: alrededor de un cuarenta por ciento de tu poblacion sacando la nota media y un cuarenta por ciento sacando la nota buena.",
+    "Decide tu las consecuencias de cada nota y, a partir de ahi, cual deberia ser el reparto, porque el texto dice expresamente que no sabe bastante de tu organizacion para decir si el reparto que describe es el correcto para ti.",
+    "Haz transparente a la organizacion el reparto que esperas ver, que es lo que el texto si recomienda, porque si no lo haces las calibraciones se vuelven opacas y excesivamente frustrantes."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_14.md, unidad Bonus Chapter, titulo textual Bonus Chapter: A Radically Candid Performance Review. Sale de las lineas 143 a 151, que son la PIEZA P9 de la frontera de esta vuelta, 328 palabras, y es el elemento numero 7 de los trece que la cabeza nombra. POR QUE ES PROCEDIMIENTO Y NO POSTURA, con D.27 delante: el libro pone su propio inventario de OBJETOS con cifras propias, cinco por ciento, quince por ciento, de uno a cinco por ciento y cuarenta mas cuarenta, y cierra con una recomendacion de medio, hacer transparente el reparto esperado. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 9 pasos, 9 TRANSCRIPCION, 0 PUENTE. P1, P2 y P3 salen de la linea 145; P4, P5, P6 y P7 de la 147; P8 de la 149; P9 de la 151. LAS CIFRAS SON DEL TEXTO Y VAN ADEMAS EN atribuciones, con su banda tal como el texto la escribe, roughly very roughly, porque una tasa sin banda es media cifra. EL TEXTO MARCA SUS PROPIAS CIFRAS COMO SUYAS, my experience is y I have found, y el P8 recoge literalmente que el texto no sabe bastante de tu organizacion: por eso este nodo NO escribe un reparto como receta. NO ESCRIBO DESTINATARIO NI PERIODO NI RESPONSABLE. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: como se publica el reparto esperado, cada cuanto se revisa, ni que se hace cuando el reparto real se aleja mucho del esperado un anio concreto, que es materia del elemento 8.",
+  "atribuciones": [
+    {
+      "cifra": "al menos un cinco por ciento de la gente necesita en cualquier momento dado el aviso de la nota mas baja; el grupo que merece la nota alta es aproximadamente, y muy aproximadamente, un quince por ciento de un equipo; entre el uno y el cinco por ciento de una poblacion hace un trabajo de verdad excepcional; y queda alrededor de un cuarenta por ciento en la nota media y un cuarenta por ciento en la buena",
+      "autor": "Kim Scott, sobre su propia experiencia repartiendo notas",
+      "fuente": "scott_radical_candor",
+      "fecha_corte": "no consta la fecha en el texto: la autora marca las cifras como su experiencia y no las data ni las acota a una empresa, y este recorte no incluye las notas del libro"
+    }
+  ],
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-13"
+    }
+  ]
+}

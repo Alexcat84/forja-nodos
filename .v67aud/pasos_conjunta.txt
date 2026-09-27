@@ -1,0 +1,40 @@
+===== subir_productividad_gerencial_tres_vias | grafo
+  titulo: Subir la productividad de un mando por sus tres vias: el ritmo, la palanca y la mezcla de actividades
+  fuente: ['grove_high_output'] | previos: [] | siguientes: ['buscar_actividad_alta_palanca_tres_vias']
+  cond: Cuando quieres que tu trabajo de mando rinda mas y solo se te ocurre trabajar mas horas, que no es ninguna de las tres vias que el libro cuenta.
+  P1. Cuenta la productividad de un mando como lo que el libro dice que es: su salida por unidad de tiempo trabajado.
+  P2. Sube el ritmo con el que ejecutas tus actividades, o sea acelera tu trabajo.
+  P3. Sube la palanca asociada a las distintas actividades de mando que haces.
+  P4. Corre la mezcla de tus actividades desde las de menor palanca hacia las de mayor palanca.
+===== buscar_actividad_alta_palanca_tres_vias | grafo
+  titulo: Buscar las actividades de alta palanca por sus tres vias basicas: mucha gente, un acto breve de efecto largo, y el saber unico
+  fuente: ['grove_high_output'] | previos: ['subir_productividad_gerencial_tres_vias'] | siguientes: ['elegir_momento_actividad_palanca_maxima']
+  cond: Cuando ya sabes que quieres subir la palanca de lo que haces y te falta saber donde esta la palanca alta, o sea por donde se reconoce una actividad que rinde muy por encima de las demas.
+  P1. Repasa tus actividades buscando las de alta palanca, y busca por las tres vias basicas por las que el libro dice que se consiguen.
+  P2. Primera via: aquella en la que mucha gente queda afectada por un solo mando.
+  P3. Segunda via: aquella en la que la actividad o la conducta de una persona durante un periodo largo de tiempo queda afectada por un conjunto de palabras o de acciones del mando que es breve y esta bien enfocado.
+  P4. Tercera via: aquella en la que el trabajo de un grupo grande queda afectado por un individuo que aporta una pieza de conocimiento o de informacion unica y clave.
+===== elegir_momento_actividad_palanca_maxima | grafo
+  titulo: Elegir el momento de una actividad para que su palanca sea maxima: por delante del acontecimiento, o inmediata cuando el momento manda
+  fuente: ['grove_high_output'] | previos: ['buscar_actividad_alta_palanca_tres_vias'] | siguientes: []
+  cond: Cuando la actividad que tienes delante es de las de alta palanca y esta a tiempo de hacerse antes o despues, porque hacerla tarde no la hace menos actividad pero si la hace valer mucho menos.
+  P1. Cuenta con que la palanca de una actividad depende de cuando se ejerce.
+  P2. Haz por delante del acontecimiento el trabajo que lo prepara: define con antelacion exactamente que informacion hay que reunir y presentar en cada etapa del proceso, y deja puesto quien responde de que.
+  P3. Cuenta con lo que ese trabajo hecho por delante consigue: afecta directamente al trabajo posterior de mucha gente y le quita confusion y ambiguedad a una poblacion grande durante un periodo largo.
+  P4. Cuenta tambien con lo contrario: el mismo trabajo hecho tarde, corriendo despues a ayudar a un mando a definir sus pautas y sus hitos, tiene mucha menos palanca.
+  P5. Cuando la actividad sea de las que dependen del momento, atiendela inmediatamente: si te enteras de que un subordinado valioso ha decidido irse, dirigete a esa situacion en el acto si quieres que cambie de idea.
+  P6. Cuenta con que si la aplazas pierdes todas tus posibilidades.
+  P7. Ten presente la oportunidad del momento, que muchas veces es critica, para sacar a tus actividades la maxima palanca.
+===== detectar_palanca_negativa_actividad_mando | grafo
+  titulo: Detectar la palanca negativa en la propia actividad de mando: la reunion sin preparar, el desanimo, las largas y la intromision
+  fuente: ['grove_high_output'] | previos: [] | siguientes: []
+  cond: Cuando repasas tus propias actividades de mando buscando su palanca y quieres saber cuales de ellas estan restando salida a la organizacion en vez de sumarla.
+  P1. Cuenta con que la palanca tambien puede ser negativa: hay actividades de mando que reducen la salida de una organizacion.
+  P2. Empieza por el caso simple: si eres participante clave de una reunion y llegas sin preparar, no solo desperdicias el tiempo de los asistentes por tu falta de preparacion, que es el coste directo de tu descuido, sino que ademas privas a los demas participantes de la oportunidad de emplear ese tiempo en otra cosa.
+  P3. Revisa si estas desanimado: un mando desanimado empieza casi de inmediato a afectar a la gente de alrededor sin darse cuenta, y el desanimo se extiende pronto por toda su organizacion.
+  P4. Cuenta con que de ahi se sale cuando alguien del propio equipo le dice por fin al mando lo que le esta haciendo a la gente que tiene debajo.
+  P5. Revisa si estas dando largas: dar largas es aplazar una decision que va a afectar al trabajo de otras personas, y en la practica la falta de decision es lo mismo que una decision negativa, porque ninguna luz verde es una luz roja y el trabajo puede pararse para toda una organizacion.
+  P6. Cuenta con que el desanimo y las largas tienen palanca negativa practicamente ilimitada y son muy dificiles de contrarrestar, porque su efecto sobre la organizacion es a la vez omnipresente y escurridizo; en cambio, si a la gente le afecta un mal curso de formacion de ventas, la situacion se arregla volviendo a formar al grupo.
+  P7. Revisa si te estas entrometiendo: hay intromision cuando un supervisor usa su conocimiento y su experiencia superiores sobre las responsabilidades de un subordinado para tomar el mando de la situacion en vez de dejar que el subordinado la resuelva por si mismo.
+  P8. Aplica la prueba concreta que da el libro: si un mando superior ve un indicador que muestra una tendencia indeseable y dicta a la persona responsable un conjunto detallado de acciones a tomar, eso es intromision.
+  P9. Cuenta con lo que la intromision produce: tras verse expuesto a muchos episodios asi, el subordinado pasa a tomar una vision mucho mas restringida de lo que se espera de el, muestra menos iniciativa para resolver sus propios problemas y se los lleva en cambio a su supervisor.

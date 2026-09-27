@@ -1,0 +1,45 @@
+INICIO 2026-09-20T14:09:17-04:00
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 422   (346 del grafo mas 76 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 0
+  BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+  vecinos levantados en total      : 4
+  por candidato bloqueado          : menor 4, mediana 4, mayor 4
+  que señal levanta cada vecindad  : similitud_texto 4
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] examinar_demanda_entorno_dos_marcos_temporales   (examinar_demanda_entorno_dos_marcos_temporales.json)
+    vecino cerrar_brecha_dos_preguntas_estrategia  [levantada por: similitud_texto]
+      similitud_texto 0.412 | familia_id 0.100 | paso_contra_nodo 0.483
+      paso 3 del candidato contra paso 4 de cerrar_brecha_dos_preguntas_estrategia
+    vecino definir_entorno_grupo_clientes_proveedores_competidores  [levantada por: similitud_texto]
+      similitud_texto 0.392 | familia_id 0.091 | paso_contra_nodo 0.426
+      paso 2 del candidato contra paso 4 de definir_entorno_grupo_clientes_proveedores_competidores
+    vecino determinar_estado_presente_capacidades_proyectos_merma  [levantada por: similitud_texto]
+      similitud_texto 0.371 | familia_id 0.000 | paso_contra_nodo 0.404
+      paso 1 del candidato contra paso 5 de determinar_estado_presente_capacidades_proyectos_merma
+    vecino examinar_entorno_expectativas_tecnologia_proveedores_grupos  [levantada por: similitud_texto]
+      similitud_texto 0.377 | familia_id 0.200 | paso_contra_nodo 0.391
+      paso 3 del candidato contra paso 2 de examinar_entorno_expectativas_tecnologia_proveedores_grupos
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.
+
+real	3m24.529s
+user	0m0.015s
+sys	0m0.016s
+FIN 2026-09-20T14:12:41-04:00

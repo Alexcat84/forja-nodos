@@ -1,0 +1,12 @@
+| pieza | al abrir | **al cerrar** | movimiento |
+|---|---:|---:|---:|
+| nodos en `dataset/nodos.jsonl` | 270 | **282** | **+12** |
+| aristas por `nodos_siguientes` | 105 | **107** | **+2** |
+| aristas por `nodos_previos` | 105 | **107** | **+2** |
+| veredictos en `bitacora/VEREDICTOS.jsonl` | 396 | **410** | **+14** |
+| de ellos, con alguna anotacion `no_consumada: true` | 14 | **14** | 0 |
+| candidatos en bandeja, lote 4 | 75 | **63** | **-12** |
+| insertados y archivados, lote 4 | 67 | **79** | **+12** |
+| candidatos en bandeja, lote 5 | 3 | **3** | 0 |
+| pruebas de `tests/test_aceptacion.py` | 220 | **251** | **+31** |
+| lote 4 insertado sobre `142`, por ciento | 47,2 | **55,6** | **+8,4** |

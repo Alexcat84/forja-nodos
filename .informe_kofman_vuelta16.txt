@@ -1,0 +1,36 @@
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+nodos en el grafo de destino: 203
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 0
+  BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+  vecinos levantados en total      : 3
+  por candidato bloqueado          : menor 3, mediana 3, mayor 3
+  que señal levanta cada vecindad  : familia_id 2, paso_contra_nodo 1
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] cuidar_persona_completa_equipo   (cuidar_persona_completa_equipo.json)
+    vecino usar_lenguaje_no_discriminatorio_entrevista  [levantada por: paso_contra_nodo]
+      similitud_texto 0.228 | familia_id 0.000 | paso_contra_nodo 0.615
+      paso 4 del candidato contra paso 1 de usar_lenguaje_no_discriminatorio_entrevista
+    vecino gestionar_personas_equipo  [levantada por: familia_id]
+      similitud_texto 0.243 | familia_id 0.400 | paso_contra_nodo 0.455
+      paso 6 del candidato contra paso 5 de gestionar_personas_equipo
+    vecino respetar_cuidar_persona_cargo  [levantada por: familia_id]
+      similitud_texto 0.259 | familia_id 0.333 | paso_contra_nodo 0.425
+      paso 2 del candidato contra paso 1 de respetar_cuidar_persona_cargo
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.

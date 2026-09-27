@@ -1,0 +1,13 @@
+$ python forja.py arista --madre fingir_prototipo_cinco_mil_replicas --hijo dar_valor_constante_cuatro_publicos --paso 5 --razon <fila 30> --veredicto SANO --cita-veredicto <fila 30>
+DECLARACION DE ARISTA POR LECTURA (D.37)
+  madre: fingir_prototipo_cinco_mil_replicas
+  hijo : dar_valor_constante_cuatro_publicos
+  paso citado de la madre: 5
+    Regla 1: el modelo dara valor constante a tus clientes, empleados, proveedores y prestamistas, por encima de lo que esperan.
+  señales del par: familia_id 0.0, paso_contra_nodo 0.571, similitud_texto 0.33
+    NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: fingir_prototipo_cinco_mil_replicas > dar_valor_constante_cuatro_publicos
+  razon en bitacora/VEREDICTOS.jsonl
+
+codigo 0

@@ -1,0 +1,2 @@
+$ python scripts/deuda.py --pagar d024 --vuelta 54 --como "..."
+PAGADA d024 en la vuelta 54

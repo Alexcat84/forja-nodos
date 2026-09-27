@@ -1,0 +1,2 @@
+$ sed -n 65p fuentes/scott_radical_candor/cap_06.md
+This set of questions around growth trajectory can help you discover what motivates each person much better than a set of questions around “potential” or “talent” could. And the insights it produces will help you avoid burning out the rock stars and boring the superstars. These questions will help remind you that trajectories change and that you shouldn’t put permanent labels on people. They will help you build stable teams that achieve astounding results.

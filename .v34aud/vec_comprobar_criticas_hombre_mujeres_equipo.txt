@@ -1,0 +1,38 @@
+    poblacion de grafo para comprobar_criticas_hombre_mujeres_equipo: quitadas 1 lineas suyas
+===== BARRIDO DE comprobar_criticas_hombre_mujeres_equipo =====
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 347   (296 del grafo mas 51 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 0
+  BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+  vecinos levantados en total      : 3
+  por candidato bloqueado          : menor 3, mediana 3, mayor 3
+  que señal levanta cada vecindad  : similitud_texto 3
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] comprobar_criticas_hombre_mujeres_equipo   (comprobar_criticas_hombre_mujeres_equipo.json)
+    vecino exigir_critica_jefe_reticente  [levantada por: similitud_texto]
+      similitud_texto 0.402 | familia_id 0.125 | paso_contra_nodo 0.555
+      paso 1 del candidato contra paso 1 de exigir_critica_jefe_reticente
+    vecino revisar_critica_mujer_agresiva_cuatro_tacticas  [levantada por: similitud_texto]
+      similitud_texto 0.382 | familia_id 0.222 | paso_contra_nodo 0.436
+      paso 1 del candidato contra paso 7 de revisar_critica_mujer_agresiva_cuatro_tacticas
+    vecino correr_semana_arreglo_averias_gestion  [levantada por: similitud_texto]
+      similitud_texto 0.366 | familia_id 0.000 | paso_contra_nodo 0.431
+      paso 2 del candidato contra paso 7 de correr_semana_arreglo_averias_gestion
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.

@@ -1,0 +1,78 @@
+$ ls -d .v33a .v33aud 2>&1
+.v33a/
+.v33aud/
+
+$ ls .v33aud/mis_clases.txt
+-rw-r--r-- 1 AlexDesk 197609 3975 Sep 16 20:44 .v33aud/mis_clases.txt
+
+$ head -12 .v33aud/mis_clases.txt
+MIS CLASES, ESCRITAS A CIEGAS ANTES DE DESTAPAR NI UNA RAZON DE LA BITACORA
+(HEREDADO 2 de la ACTA 30, correccion declarada 7.3: este fichero es anterior a
+la primera corrida que IMPRIMA UNA RAZON. En esta fase no he corrido ninguna.)
+
+TANDA: los 3 ficheros que `git diff --name-only 74ddc8c HEAD -- cuarentena/_insertados/`
+saca del dato. Poblacion del barrido: grafo menos el propio candidato, y las
+bandejas las pone la aduana (metodo vigente de D.38.5).
+
+montar_tablero_kanban_medir_actividades        MI CLASE: SANO
+pasear_organizacion_hallar_problemas_pequenios MI CLASE: SANO
+debatir_decidir_asuntos_cultura_evitar_delegar MI CLASE: SANO
+
+$ ls .v33a/
+aceptacion.txt
+aristas.py
+aristas.txt
+banda.py
+banda.txt
+bandeja_caps.py
+bandeja_caps.txt
+barrido.sh*
+barrido.txt
+bitacora.py
+bitacora.txt
+cand/
+capitulos.py
+capitulos.txt
+cerrojo.txt
+cierre_apertura.txt
+destapar.py
+estado_arbol.txt
+fechas.py
+fechas.txt
+guardas.txt
+hora_clases.txt
+madre_1a1.txt
+mis_clases.txt
+palabras.py
+palabras.txt
+palabras2.py
+palabras2.txt
+pares.py
+pares.txt
+pasos.py
+pasos_12.txt
+pob/
+poblacion.py
+poblacion.txt
+procedencia.py
+procedencia.txt
+rancios.txt
+razon_corregido.txt
+razones_continua.txt
+razones_sano.txt
+resumen_barrido.py
+resumen_barrido.txt
+rotulos.py
+rotulos.txt
+rutas.py
+rutas.txt
+tanda.py
+tanda.txt
+tanda_ids.txt
+vecinos.py
+vecinos.txt
+vecinos_barrido.py
+vecinos_barrido.txt
+
+$ ls -la .v33a/mis_clases.txt
+-rw-r--r-- 1 AlexDesk 197609 10827 Sep 17 08:22 .v33a/mis_clases.txt

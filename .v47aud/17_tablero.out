@@ -1,0 +1,32 @@
+$ python -c "..." TABLERO.jsonl grove
+{
+  "bandeja_medida_en": "cuarentena/grove_high_output",
+  "candidatos_en_bandeja": 36,
+  "capitulos_minados": [
+    "cap_01",
+    "cap_02",
+    "cap_03",
+    "cap_04"
+  ],
+  "clave": "grove_high_output",
+  "commit": "",
+  "commits_propios_de_su_rama": 0,
+  "dueno": "NINGUNO",
+  "estado": "COSECHADO",
+  "estado_de": "declarado: decision del fundador del 17 sep 2026, aplicada el 18",
+  "fuera_de_campania": false,
+  "insertados": 1,
+  "lote": 7,
+  "motivo_de_prioridad": "Operaciones y apalancamiento gerencial: cubre el hueco de la campania, que tiene mucho trato con la gente y poco produccion de la maquina. Densidad de procedimiento la mas alta del lote, medida: 0,00 por ciento de pasos inventados en su ultimo capitulo, porque el autor escribe en pasos.",
+  "nodos_en_grafo": 1,
+  "prioridad": 1,
+  "rama": "extraccion-grove_high_output",
+  "tipo": "libro",
+  "ultimo_capitulo": "cap_04",
+  "unidades_del_libro": 18,
+  "worktree": "C:/Users/AlexDesk/Documents/forja-grove_high_output"
+}
+
+$ python forja.py tablero --puedo grove_high_output
+LINEA 'serial', LIBRO 'grove_high_output': SI
+  'grove_high_output' esta COSECHADO y sin dueño: su trabajo ya llego a esta rama, asi que se continua desde el capitulo siguiente al ultimo minado (cap_04), citando su frontera. D.50.

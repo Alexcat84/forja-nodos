@@ -1,0 +1,2 @@
+registros con arista: 8 | con veredicto CONTINUA: 8 | con razon escrita: 8 | sin adjudicar: 0
+veredictos de la vuelta por clase: [('CONTINUA', 8), ('SANO', 46)]

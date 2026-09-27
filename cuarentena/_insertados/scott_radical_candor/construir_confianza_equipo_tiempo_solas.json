@@ -1,0 +1,38 @@
+{
+  "id": "construir_confianza_equipo_tiempo_solas",
+  "titulo": "Construir la confianza con cada persona de tu equipo pasando tiempo a solas con ella con regularidad, sin asumir de golpe mas confianza de la que hay",
+  "denominaciones": {
+    "nombre_largo": "Construir confianza: el patron constante de actuar de buena fe, y las cuatro conversaciones con las que el libro dice que se empieza",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "building trust"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando quieres subir en el eje de importarte las personas con alguien de tu equipo y todavia no sabes casi nada de su vida.",
+  "entregable_esperado": "Confianza construida sobre un patron constante de actuar de buena fe, con tiempo a solas reservado con cada persona y sin haberte metido donde no te habian llamado.",
+  "pasos_accionables": [
+    "Cuenta con que construir confianza en cualquier relacion lleva tiempo, porque la confianza se construye sobre un patron constante de actuar de buena fe.",
+    "No des por supuesta demasiada confianza demasiado pronto, como hurgando en preguntas muy personales cuando apenas conoces a la persona.",
+    "Pero empieza por algun sitio: si no preguntas nunca ni una sola cosa sobre la vida de alguien, es dificil subir en el eje de que te importe personalmente.",
+    "Pasa un poco de tiempo a solas con cada una de las personas que te reportan, con regularidad, que es lo que el texto llama probablemente lo mas importante que puedes hacer para construir confianza.",
+    "Manten reuniones a solas periodicas en las que el orden del dia lo pone la persona que te reporta y tu haces preguntas, que es una buena manera de empezar a construir confianza.",
+    "Cuida como pides critica y como reaccionas cuando te la dan, porque eso construye confianza o la destruye.",
+    "Y manten conversaciones anuales de carrera, que el texto llama una manera excelente de reforzar tu relacion con cada persona que te reporta directamente."
+  ],
+  "resumen_teorico": "Sale de fuentes/scott_radical_candor/cap_08.md, lineas 93 a 95, bajo el rotulo Building trust, dentro de la seccion RESPECT BOUNDARIES, que NO tiene cabeza propia porque su cuerpo es la formula Here are some things I have learned about walking this line y por eso se dejo fuera. LOS TRES REENVIOS DEL LIBRO NO SE CONVIERTEN EN PASOS INVENTADOS: la linea 95 manda a 1:1 Conversations del capitulo ocho, a Soliciting Impromptu Guidance del capitulo seis y al capitulo siete para las conversaciones de carrera. Esos tres capitulos NO estan minados todavia, asi que los pasos 5, 6 y 7 transcriben lo que esta linea dice de cada uno y ni una palabra mas: escribir aqui el procedimiento de esos capitulos seria inventarlo dos veces. Cuando cap_09 y los siguientes entren, esas tres aristas son cola de lectura y no de senial. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 7 pasos, 7 TRANSCRIPCION, 0 PUENTE. Los siete de la linea 95. LA PALABRA REGULARMENTE DEL P4 Y DEL P5 ES DEL LIBRO (on a regular basis, regular 1:1s) Y EL PERIODO NO SE ESCRIBE, que es exactamente la especie PERIODO que el lote 1 pago cara: el libro no dice cada cuanto y yo tampoco. Lo unico que si lleva periodo es el P7, y lo lleva porque el libro escribe annual. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: cada cuanto es regularmente, cuanto es un poco de tiempo, y donde esta la raya entre preguntar por la vida de alguien y hurgar.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-12"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "atribuciones": []
+}

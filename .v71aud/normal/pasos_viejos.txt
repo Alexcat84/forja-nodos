@@ -1,0 +1,12 @@
+planificar_tres_pasos_demanda_estado_brecha P1
+  viejo (7be17c0): Monta tu proceso general de planificacion sobre un razonamiento analogo al de la fabrica, y no sobre otra cosa.
+  hoy: Monta tu proceso general de planificacion sobre un razonamiento analogo al de la fabrica.
+planificar_tres_pasos_demanda_estado_brecha P4
+  viejo (7be17c0): Formula ese paso 2 tambien de la otra manera, que es la que obliga a contestarlo: donde va a estar tu negocio si no haces nada distinto de lo que estas haciendo.
+  hoy: Formula ese paso 2 tambien de la otra manera: donde va a estar tu negocio si no haces nada distinto de lo que estas haciendo.
+repartir_supervision_puesto_funcional_mision P8
+  viejo (7be17c0): Encarga al jefe funcional que cuide su carrera dentro de la funcion, promocionandolo si lo hace bien.
+  hoy: Encarga al jefe funcional que cuide su carrera dentro de la funcion, quiza promocionandolo si lo hace bien.
+entregar_evaluacion_desempeno_tres_claves P2
+  viejo (7be17c0): Recuerda que el objetivo de la comunicacion es hacer llegar el pensamiento completo de tu cabeza a la del subordinado, y que las palabras son solo el medio para transmitirlo.
+  hoy: Recuerda que el objetivo de la comunicacion es hacer llegar tus pensamientos de tu cabeza a la del subordinado, y que las palabras son solo el medio: el fin es que se comunique el pensamiento correcto.

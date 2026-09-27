@@ -1,0 +1,9 @@
+$ python forja.py insertar cuarentena/scott_radical_candor/elegir_pregunta_recurrente_pedir_critica.json [veredictos y censos]
+DECLARADOS POR LECTURA: 5. Ninguna señal los levanto.
+  arista madre-hijo cableada y escrita RESUELTA: pedir_critica_primero_crear_seguridad_psicologica > elegir_pregunta_recurrente_pedir_critica
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 323
+  censos escritos: denominaciones, series_y_cabezas
+  veredictos en bitacora/VEREDICTOS.jsonl: 5
+CODIGO DE SALIDA: 0
+  ARCHIVADO EN EL MISMO ACTO (D.31): cuarentena/_insertados/scott_radical_candor/elegir_pregunta_recurrente_pedir_critica.json

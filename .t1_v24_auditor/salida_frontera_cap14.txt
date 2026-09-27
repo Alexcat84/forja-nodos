@@ -1,0 +1,31 @@
+FRONTERA DE cap_14 MEDIDA POR EL AUDITOR
+fichero: fuentes/scott_radical_candor/cap_14.md
+cuerpo medido: lineas 8 a 243
+
+pieza       lineas       palabras  que es
+RESIDUO A   8 a 19            589  titulo y cinco parrafos de doctrina: separar desarrollo de gestion del desempenio
+P1          21 a 33           477  montar el equipo de gestion del desempenio y arrancar la revision
+P2          35 a 63           111  CABEZA DE SERIE: los trece elementos nombrados uno por linea
+P3          65 a 71           287  elemento 1, poner nota o no
+P4          73 a 93           721  elemento 2, categorias de la nota
+P5          95 a 97           222  elemento 3, escaleras de puesto
+P6          99 a 115          594  elemento 4, numero de notas
+P7          117 a 123         253  elemento 5, lenguaje de la nota
+P8          125 a 141         834  elemento 6, consecuencias de la nota
+P9          143 a 151         328  elemento 7, reparto de notas
+P10         153 a 169         496  elemento 8, curva forzada o no
+P11         171 a 185         841  elemento 9, calibracion
+P12         187 a 195         287  elemento 10, frecuencia
+P13         197 a 203         390  elemento 11, trescientos sesenta grados
+P14         205 a 219         450  elemento 12, transparente o confidencial
+P15         221 a 239         699  elemento 13, ligero o pesado
+RESIDUO B   240 a 243          59  CONCLUSION: no encarga nada, pide correo
+
+piezas                      : 17  (15 nodos y 2 residuos)
+suma de las piezas          : 7638
+cuerpo entero (wc -w)       : 7638
+residuo sin cubrir          : 0
+lineas solapadas            : 0
+lineas fuera de toda pieza  : 15, y de ellas NO vacias: 0
+
+CIERRA AL DIGITO

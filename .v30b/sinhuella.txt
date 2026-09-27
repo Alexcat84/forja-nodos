@@ -1,0 +1,7 @@
+      2 compartir_logica_mostrar_razonamiento
+      1 crear_obligacion_disentir_equipo
+      1 fijar_fecha_cierre_debate_equipo
+      1 mantener_manos_trabajo_real_equipo
+      1 minimizar_impuesto_colaboracion_equipo
+      1 parar_debate_emocion_agotamiento
+      1 proteger_tiempo_equipo_jefe

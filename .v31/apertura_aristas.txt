@@ -1,0 +1,2 @@
+aristas por nodos_siguientes: 92
+aristas por nodos_previos  : 92

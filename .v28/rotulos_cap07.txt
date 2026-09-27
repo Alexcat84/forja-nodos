@@ -1,0 +1,62 @@
+# SALIDA DE: awk 'NR>7 && length($0)>0 && length($0)<75 {printf "L%-4s| %s
+", NR, $0}' fuentes/scott_radical_candor/cap_07.md
+# LOS GUIONES LARGOS DEL LIBRO VAN NORMALIZADOS A GUION CORTO (manual seccion 2, barrido de forja.py guiones).
+L9   | Telling people what to do doesn’t work
+L11  | TELLING PEOPLE WHAT TO DO DIDN’T WORK AT GOOGLE
+L45  | TELLING PEOPLE WHAT TO DO DIDN’T WORK FOR STEVE JOBS EITHER
+L53  | “Nobody’s always right,” I said.
+L65  | THE ART OF GETTING STUFF DONE WITHOUT TELLING PEOPLE WHAT TO DO
+L79  | LISTEN
+L81  | “Give the quiet ones a voice.”
+L83  | -JONY IVE
+L91  | Quiet listening
+L95  | “Earthquake?” I asked, with what I suspect was undisguised relief.
+L113 | Loud listening
+L131 | Create a culture of listening
+L155 | Adapt to a culture of listening
+L165 | CLARIFY
+L169 | -GEORGIA O’KEEFFE
+L181 | Be clear in your own mind
+L183 | Create a safe space to nurture new ideas
+L197 | Be clear to others
+L199 | Make thoughts/ideas drop-dead easy for others to comprehend
+L213 | DEBATE
+L215 | The rock tumbler
+L225 | Keep the conversation focused on ideas not egos
+L231 | Create an obligation to dissent
+L235 | Pause for emotion/exhaustion
+L239 | Use humor and have fun
+L245 | Be clear when the debate will end
+L251 | Don’t grab a decision just because the debate has gotten painful
+L259 | DECIDE
+L265 | You’re not the decider (usually)
+L269 | “What’s wrong?” I asked, alarmed.
+L277 | “Any questions?” Mark concluded.
+L291 | The decider should get facts, not recommendations
+L295 | Go spelunking
+L303 | PERSUADE
+L305 | ”Emotion. Credibility. Logic.”
+L307 | -ARISTOTLE, RHETORIC
+L323 | Emotion
+L325 | The listener’s emotions, not the speaker’s
+L333 | “What were the emotions on the engineering team like?” I asked.
+L337 | “What did you do to address their emotions?”
+L339 | Jason smacked his forehead, seeing clearly now where he’d gone wrong.
+L349 | Credibility
+L351 | Demonstrate expertise and humility
+L359 | Logic
+L361 | Show your work
+L367 | EXECUTE
+L369 | Minimize the collaboration tax
+L375 | Don’t waste your team’s time
+L381 | Keep the “dirt under your fingernails”
+L385 | Block time to execute
+L389 | LEARN
+L391 | “Consistency is the hobgoblin of little minds.”
+L393 | -RALPH WALDO EMERSON, SELF-RELIANCE
+L403 | Pressure to be consistent
+L409 | Burnout
+L421 | PART II
+L423 | TOOLS & TECHNIQUES
+L431 | 5.
+L433 | RELATIONSHIPS

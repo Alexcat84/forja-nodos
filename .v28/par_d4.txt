@@ -1,0 +1,42 @@
+poblacion del lector: 511 (grafo mas bandejas, D.38.4)
+
+==============================================================================
+crear_cultura_escucha_equipo   [GRAFO]
+==============================================================================
+TITULO      : Crear una cultura en la que tu equipo se escuche entre si, con un sistema simple de ideas y quejas que alguien atiende y explica
+ACTIVACION  : Cuando ya escuchas tu a tu equipo y ellos lo saben, y ahora te toca lo mas dificil, que es conseguir que se escuchen entre ellos.
+ENTREGABLE  : Un sistema simple por el que cualquiera propone una idea o una queja, unas cuantas atendidas deprisa, y una explicacion dada con regularidad de por que las demas no se atienden, con el tiempo que tu puedes dedicarle acotado por escrito.
+UNIDAD      : Sale de fuentes/scott_radical_candor/cap_07.md, lineas 131 a 153, bajo el rotulo Create a culture of listening, dentro del paso LISTEN de la rueda de hacer cosas. Es la pieza mas literalmente procedim
+PASOS (17):
+   1. Monta un sistema simple que tu gente pueda usar para generar ideas y dar voz a sus quejas, que es la primera de las tres claves que el texto nombra.
+   2. Asegurate de que al menos algunas de las cuestiones que se levanten se atiendan deprisa, que es la segunda.
+   3. Ofrece con regularidad explicaciones de por que las demas no se estan atendiendo, que es la tercera.
+   4. Haz que el sistema no solo permita a cualquiera señalar lo que podria ir mejor, sino que ademas permita a otros ayudar a arreglar esas cosas o a cambiarlas.
+   5. Acepta dejar que te pidan ayuda a ti.
+   6. Defiende el sistema con entusiasmo.
+   7. Define unos limites claros de cuanto tiempo puedes dedicarle tu, y despues asegurate de que ese tiempo sea de mucho impacto.
+   8. Si las ideas te desbordan, organiza un equipo de ideas que las considere, como hizo la autora en Google.
+   9. Haz que ese equipo se comprometa a escuchar cualquier idea que cualquiera les traiga, a explicar con claridad por que rechazan las que rechazan, y a ayudar a poner en practica las que consideren que valen la pena.
+  10. Dales potestad para negociar con el jefe de quien propuso una idea especialmente prometedora, para que le liberen tiempo de su puesto y pueda ponerla en marcha.
+  11. Pide al equipo de ideas que lea todas las ideas y hable con todos los que las mandaron. El texto dice que un voto no siempre es la mejor manera de identificar las mejores ideas ni de asegurarse de que la gente se escucha, y que a partir de ahi el equipo uso una combinacion de votos y criterio.
+  12. Cuando alguien presente su idea, no te quedes en darle las gracias: enseña ademas el efecto que va a tener, que es lo que hizo la autora con el grafico de eficiencia de la idea de los teclados programables de Sarah Teng.
+  13. Habla de lo que a la gente le importa y no solo de lo que a ti te importa: la autora insistio en que esa idea haria los puestos mas divertidos y ayudaria a la gente a crecer, porque la eficiencia no era lo que mas les importaba.
+  14. Da contexto de por que la idea es grande, para que se vea el efecto acumulado y no solo el suyo.
+  15. Y usalo para empujar a que se escuchen entre ellos, se tomen en serio las ideas de los demas y se ayuden a ponerlas en practica sin esperar la bendicion de la direccion.
+  16. En las reuniones, cuando solo un par de personas esten hablando, para y da la vuelta a la mesa para asegurarte de que se oye a todo el mundo.
+  17. Habla en corto con la gente antes de una reunion, pidiendo a unos que suban la voz y a otros que la bajen.
+
+==============================================================================
+crear_obligacion_disentir_equipo   [BANDEJA cuarentena/scott_radical_candor/crear_obligacion_disentir_equipo.json]
+==============================================================================
+TITULO      : Crear en tu equipo la obligacion de disentir, tratando el acuerdo de todos como una bandera roja
+ACTIVACION  : Cuando quieres que en tu equipo haya debate de verdad y te encuentras con reuniones donde todos estan de acuerdo, o con una discusion que no acaba de ser lo bastante robusta.
+ENTREGABLE  : Una voz discrepante puesta en cada discusion donde todos estaban de acuerdo, con la obligacion de disentir declarada como norma del equipo y no como iniciativa de un valiente.
+UNIDAD      : Sale de fuentes/scott_radical_candor/cap_07.md, lineas 231 a 233, bajo el rotulo Create an obligation to dissent, y es la segunda de las tecnicas que el libro ofrece dentro del paso DEBATE de la rueda
+PASOS (5):
+   1. Declara en tu equipo una obligacion de disentir, que es lo que McKinsey creo muy conscientemente y lo que a la autora mas le impresiono de esa empresa.
+   2. Trata como una bandera roja que todos los que estan alrededor de la mesa esten de acuerdo.
+   3. Cuando eso pase, haz que alguien tome la voz discrepante.
+   4. Si la discusion de una reunion no esta siendo lo bastante robusta, usa un objeto que pase el turno de disentir, como los mazos con el deber de disentir escrito en japones que un directivo de Apple mando hacer para el equipo que heredo en Japon.
+   5. Deslizale el objeto a alguien de la mesa como señal de que le toca tomar el punto de vista contrario. El texto dice que ese objeto tan simple fue sorprendentemente eficaz.
+

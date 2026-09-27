@@ -1,0 +1,8 @@
+$ git rev-parse --abbrev-ref HEAD
+extraccion-mundo-11
+$ git rev-parse HEAD
+671b6f3d45d7441d19e148e6fb672f6067265366
+$ git log -1 --format=%h%x20%ad --date=iso
+671b6f3 2026-09-18 10:31:04 -0400
+$ date
+2026-09-18 10:37:25

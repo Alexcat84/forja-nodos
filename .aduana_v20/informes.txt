@@ -1,0 +1,140 @@
+# SALIDAS LITERALES DE python forja.py informe, VUELTA 20
+# Uno por candidato, en el acto en que se escribio (EXTRACTOR.md 16).
+--- P22 revisar_critica_mujer_agresiva_cuatro_tacticas
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+nodos en el grafo de destino: 203
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 1
+  BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[ENTRARIA] revisar_critica_mujer_agresiva_cuatro_tacticas   (revisar_critica_mujer_agresiva_cuatro_tacticas.json)
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.
+--- P23 responder_critica_abrasiva_cuatro_reglas
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+nodos en el grafo de destino: 203
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 1
+  BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[ENTRARIA] responder_critica_abrasiva_cuatro_reglas   (responder_critica_abrasiva_cuatro_reglas.json)
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.
+--- P24 entregar_evaluacion_formal_desempenio_nueve_consejos
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+nodos en el grafo de destino: 203
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 1
+  BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[ENTRARIA] entregar_evaluacion_formal_desempenio_nueve_consejos   (entregar_evaluacion_formal_desempenio_nueve_consejos.json)
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.
+--- P27 conducir_reuniones_salto_nivel_diez_reglas
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+nodos en el grafo de destino: 203
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 1
+  BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[ENTRARIA] conducir_reuniones_salto_nivel_diez_reglas   (conducir_reuniones_salto_nivel_diez_reglas.json)
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.
+--- P28 resolver_dudas_frecuentes_reuniones_salto_nivel
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+nodos en el grafo de destino: 203
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 1
+  BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[ENTRARIA] resolver_dudas_frecuentes_reuniones_salto_nivel   (resolver_dudas_frecuentes_reuniones_salto_nivel.json)
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.
+--- P28 resolver_dudas_frecuentes_reuniones_salto_nivel, RE INFORME tras la correccion de la cuenta no escrita en su P16
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+nodos en el grafo de destino: 203
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 1
+  BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[ENTRARIA] resolver_dudas_frecuentes_reuniones_salto_nivel   (resolver_dudas_frecuentes_reuniones_salto_nivel.json)
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.

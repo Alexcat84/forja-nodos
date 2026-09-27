@@ -1,0 +1,40 @@
+{
+  "id": "hacer_repaso_posterior_proyecto",
+  "titulo": "Hacer el repaso posterior sin convertirlo en un juicio",
+  "denominaciones": {
+    "nombre_largo": "Cuando se convoca, las preguntas con las que se hace, y lo que hay que hacer para crear el ambiente seguro que lo mantiene vivo",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "debriefs, retrospectives, postmortems"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Al completar un proyecto, de forma periodica, o en cuanto ocurre un evento inesperado o un error.",
+  "entregable_esperado": "Los aprendizajes escritos y compartidos ampliamente, sacados de una discusion abierta y honesta en la que nadie fue juzgado.",
+  "pasos_accionables": [
+    "Convoca el repaso en cualquiera de los momentos que el libro nombra: al completar un proyecto, de forma periodica, o en cuanto ocurra un evento inesperado o un error.",
+    "Invita al equipo a juntarse una hora o dos para reflexionar sobre lo que paso.",
+    "Haz las preguntas del repaso: que fue bien, que no fue bien, y que haria el equipo de otra manera la proxima vez.",
+    "Hazlo tambien cuando el resultado fue bueno, porque siempre hay algo que aprender: como podemos sacar de aqui buenas practicas para otros proyectos?",
+    "No trates el repaso como un juicio, porque el libro dice que esa es la via mas rapida de matar la practica. Considera que es una ocasion de minar la experiencia en busca de lecciones futuras.",
+    "Crea para eso un ambiente seguro donde se pueda discutir abierta y honestamente.",
+    "Presenta los hechos de la forma mas objetiva que puedas, y el libro ensena como: aqui esta la linea de tiempo, el veinte de octubre fulano y mengana discutieron por primera vez la posibilidad de este proyecto, el dieciseis de noviembre presentaron la propuesta y recibieron luz verde para crear un equipo nuevo.",
+    "Usa un lenguaje que asuma responsabilidad colectiva en vez de senialar con el dedo: nuestro proceso fallo, y no fulana cometio un error.",
+    "Fija el tono de que esta bien que hablemos de nuestros errores y aprendamos de ellos.",
+    "Despues del repaso, escribe los aprendizajes y compartelos ampliamente, porque un equipo que se curte con sus propios aciertos y tropiezos esta bien, pero que ademas ayude a otros a mejorar o a evitar errores parecidos esta todavia mejor."
+  ],
+  "resumen_teorico": "Es la primera herramienta del bloque de proceso que evoluciona, y la mas ejecutable del capitulo: trae momento de convocatoria, duracion, preguntas, y tres actos concretos para crear el ambiente seguro, los hechos objetivos, el lenguaje colectivo y el tono. El ejemplo de linea de tiempo con fechas va dentro porque es la demostracion de a que se parece presentar los hechos objetivamente, y sin el ese paso seria un adjetivo de adecuacion. Los nombres del ejemplo se sustituyen porque son de ejemplo tambien en el libro. Lo que el libro NO dice, y por eso no esta escrito aqui, es quien convoca, quien modera, ni donde se guardan los aprendizajes.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}

@@ -1,0 +1,13 @@
+MADRE abrazar_incomodidad_arrancar_critica_equipo  P07 (20 pasos)
+  Ten una pregunta de cabecera. El texto da la que su autora adopto de Fred Kofman,
+  autor de Conscious Business y su entrenador en Google: que podria hacer o dejar de
+  hacer que hiciera mas facil trabajar conmigo. Si esas palabras no te salen solas,
+  busca las que si, y cuenta con que esa pregunta de apertura solo esta pensada para
+  poner las cosas en marcha.
+
+HIJO  elegir_pregunta_recurrente_pedir_critica  P07 (24 pasos)
+  Corrige por eso la pregunta que la primera edicion recomendaba, que es una correccion
+  que el propio texto hace: preguntar hay algo que pudiera hacer o dejar de hacer que te
+  facilitara trabajar conmigo le da una salida facil a quien teme el conflicto, que
+  puede decir simplemente que no, y esa es justo la gente a la que hay que animar.
+  Pregunta en cambio que podria hacer o dejar de hacer.

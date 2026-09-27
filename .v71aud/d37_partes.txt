@@ -1,0 +1,72 @@
+poblacion: 479
+planificar tres pasos: 1 la demanda del entorno: 4
+    cerrar_brecha_dos_preguntas_estrategia                             ['grove_high_output']
+    determinar_estado_presente_capacidades_proyectos_merma             ['grove_high_output']
+    examinar_demanda_entorno_dos_marcos_temporales                     ['grove_high_output']
+    planificar_tres_pasos_demanda_estado_brecha                        ['grove_high_output']
+planificar tres pasos: 2 el estado presente: 2
+    determinar_estado_presente_capacidades_proyectos_merma             ['grove_high_output']
+    planificar_tres_pasos_demanda_estado_brecha                        ['grove_high_output']
+planificar tres pasos: 3 cerrar la brecha: 2
+    cerrar_brecha_dos_preguntas_estrategia                             ['grove_high_output']
+    planificar_tres_pasos_demanda_estado_brecha                        ['grove_high_output']
+examinar entorno cuatro objetos: expectativas del cliente: 3
+    avisar_pronto_incumplimiento_expectativas                          ['zhuo_manager']
+    fijar_expectativas_claras_comienzo                                 ['zhuo_manager']
+    examinar_entorno_expectativas_tecnologia_proveedores_grupos        ['grove_high_output']
+examinar entorno cuatro objetos: tecnologia: 1
+    examinar_entorno_expectativas_tecnologia_proveedores_grupos        ['grove_high_output']
+examinar entorno cuatro objetos: proveedores: 2
+    definir_entorno_grupo_clientes_proveedores_competidores            ['grove_high_output']
+    examinar_entorno_expectativas_tecnologia_proveedores_grupos        ['grove_high_output']
+examinar entorno cuatro objetos: otros grupos de la organizacion: 1
+    examinar_entorno_expectativas_tecnologia_proveedores_grupos        ['grove_high_output']
+direccion por objetivos dos preguntas: el objetivo: 5
+    transmitir_objetivos_prioridades_preferencias                      ['grove_high_output']
+    responder_4_preguntas_estandares_objetivo_estrategico              ['gerber_emyth']
+    contestar_dos_preguntas_direccion_objetivos                        ['grove_high_output']
+    fijar_meta_direccion_objetivos_mitad_probabilidad                  ['grove_high_output']
+    fijar_periodo_direccion_objetivos_retroalimentacion                ['grove_high_output']
+direccion por objetivos dos preguntas: los resultados clave: 1
+    partir_meta_grande_hitos                                           ['zhuo_manager']
+cerrar brecha dos preguntas: que necesitas y que puedes hacer: 2
+    agendar_cuidados_propios_cumplirlos                                ['scott_radical_candor']
+    cerrar_brecha_dos_preguntas_estrategia                             ['grove_high_output']
+evaluacion tres claves: franqueza: 15
+    despedir_persona_respeto_franqueza                                 ['zhuo_manager']
+    desplegar_marco_franqueza_radical                                  ['scott_radical_candor']
+    delimitar_franqueza_radical_cinco_noes                             ['scott_radical_candor']
+    ajustar_franqueza_oido_oyente                                      ['scott_radical_candor']
+    empezar_cultura_franqueza_radical                                  ['scott_radical_candor']
+    pedir_critica_equipo_premiarla                                     ['scott_radical_candor']
+    despedir_persona_franqueza_radical                                 ['scott_radical_candor']
+    practicar_franqueza_radical_jefe_propio                            ['scott_radical_candor']
+    desplegar_plan_orden_operaciones_franqueza_radical                 ['scott_radical_candor']
+    contar_historias_propias_explicar_franqueza_radical                ['scott_radical_candor']
+    mejorar_consciencia_propia_relacional_dos_practicas                ['scott_radical_candor']
+    contar_cuatro_historias_propias_ver_hueco_intencion                ['scott_radical_candor']
+    premiar_franqueza_hacer_escucha_tangible                           ['scott_radical_candor']
+    medir_critica_respuesta_oyente_brujula                             ['scott_radical_candor']
+    entregar_evaluacion_desempeno_tres_claves                          ['grove_high_output']
+evaluacion tres claves: escucha total: 14
+    interrumpir_candidato_escucha_reflexiva                            ['smart_who']
+    ajustar_franqueza_oido_oyente                                      ['scott_radical_candor']
+    adaptar_escucha_cultura_ajena                                      ['scott_radical_candor']
+    escuchar_callado_equipo_tranquilizar_incomodo                      ['scott_radical_candor']
+    escuchar_ruidoso_opinion_fuerte_pedir_agujeros                     ['scott_radical_candor']
+    crear_cultura_escucha_equipo                                       ['scott_radical_candor']
+    persuadir_emocion_oyente_no_propia                                 ['scott_radical_candor']
+    conducir_reunion_equipo_agenda_tres_bloques                        ['scott_radical_candor']
+    impedir_punialadas_espalda_equipo                                  ['scott_radical_candor']
+    escuchar_entender_critica_dominar_defensa                          ['scott_radical_candor']
+    premiar_franqueza_hacer_escucha_tangible                           ['scott_radical_candor']
+    entregar_evaluacion_desempeno_tres_claves                          ['grove_high_output']
+    responder_primer_aviso_renuncia_subordinado                        ['grove_high_output']
+    recorrer_organizacion_escuchar_plantilla                           ['marquet_turn_the_ship']
+evaluacion tres claves: dejarse fuera: 6
+    dar_estabilidad_situacion_emocional                                ['zhuo_manager']
+    parar_debate_emocion_agotamiento                                   ['scott_radical_candor']
+    persuadir_emocion_oyente_no_propia                                 ['scott_radical_candor']
+    reconocer_emociones_propias_avisar_equipo                          ['scott_radical_candor']
+    dominar_reacciones_emociones_ajenas                                ['scott_radical_candor']
+    entregar_evaluacion_desempeno_tres_claves                          ['grove_high_output']

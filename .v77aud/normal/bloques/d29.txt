@@ -1,0 +1,3 @@
+$ cat .v77aud/normal/vecinos_par_d29.txt
+fingir_prototipo_cinco_mil_replicas 0 []
+recorrer_siete_pasos_programa_desarrollo_negocio 1 ['construir_estrategia_gente_cuatro_componentes']

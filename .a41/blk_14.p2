@@ -1,0 +1,4 @@
+  File "C:\Users\AlexDesk\Documents\forja-nodos\src\comun.py", line 80, in leer_texto
+    with io.open(ruta, "r", encoding="utf-8") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\AlexDesk\\Documents\\forja-nodos\\docs\\loop\\REPORTE.md'

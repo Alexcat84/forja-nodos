@@ -1,0 +1,8 @@
+--- ancla: 'ten hours a week'
+cap_03.md cap_12.md (ninguna si vacio)
+--- ancla: 'front-stab'
+cap_04.md cap_05.md (ninguna si vacio)
+--- ancla: 'person you are firing'
+cap_10.md (ninguna si vacio)
+--- ancla: 'level of incompetence'
+(ninguna si vacio)

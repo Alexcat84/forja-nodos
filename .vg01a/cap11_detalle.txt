@@ -1,0 +1,18 @@
+id                                                   pasos  lineas de origen
+recorrer_rueda_conscientemente_cultura_equipo           14  Sale de las lineas 271 a 299
+bloquear_tiempo_pensar_calendario                        6  Sale de las lineas 165 a 173
+decidir_quien_comunica_cada_cuanto                       6  Sale de las lineas 15 a 35
+montar_reuniones_solas_mentalidad_frecuencia            22  Sale de las lineas 37 a 65
+preguntar_seguimiento_hallar_huecos                     16  Sale de las lineas 67 a 97
+nutrir_ideas_nuevas_reunion_solas                       10  Sale de las lineas 99 a 113
+leer_seniales_fallo_jefe_reunion_solas                   6  Sale de las lineas 115 a 127
+conducir_reunion_equipo_agenda_tres_bloques             22  Sale de las lineas 129 a 145
+escribir_apuntes_sala_estudio_equipo                    14  Sale de las lineas 147 a 157
+montar_reunion_gran_debate                              13  Sale de las lineas 175 a 193
+montar_reunion_gran_decision                            14  Sale de las lineas 195 a 203
+montar_reunion_general_presentaciones_preguntas         11  Sale de las lineas 205 a 221
+pelear_proliferacion_reuniones_bloquear_ejecucion        8  Sale de las lineas 223 a 233
+montar_tablero_kanban_medir_actividades                 10  Sale de las lineas 235 a 249
+pasear_organizacion_hallar_problemas_pequenios           9  Sale de las lineas 251 a 269
+debatir_decidir_asuntos_cultura_evitar_delegar           6  Sale de las lineas 301 a 305
+TOTAL pasos cap_11 en el grafo: 187

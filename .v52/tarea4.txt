@@ -1,0 +1,7 @@
+    ficha                                   : cubrir_indicadores_problemas_reunion_individual
+    resumen_teorico antes                   : 13017 caracteres
+    resumen_teorico despues                 : 16335 caracteres
+    veces que nombra dirigir_reunion_individual_semanal, antes y despues: 0 y 1
+    ASERCION: solo cambia resumen_teorico, el viejo es PREFIJO del nuevo,
+              pasos, titulo y atribuciones identicos. PASO.
+    dataset/nodos.jsonl y bitacora/VEREDICTOS.jsonl: NO SE TOCAN por este guion.

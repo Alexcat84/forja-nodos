@@ -1,0 +1,39 @@
+{
+  "id": "pedir_opinion_otros_mejorar",
+  "titulo": "Pedir opinion a otros todo el tiempo para mejorar tu mismo",
+  "denominaciones": {
+    "nombre_largo": "La primera de las cinco vias de aprender en el puesto: pedir opinion, con las dos clases que hay que pedir y la regla de agradecerla siempre",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "ask for feedback"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando te has puesto la meta de mejorar en el puesto y quieres la via mas directa, o cuando pides opinion y lo que recibes son respuestas amables que no te sirven de nada.",
+  "entregable_esperado": "Opinion concreta y accionable recibida de otros, de las dos clases, especifica de tarea y de conducta, y agradecida aunque no la compartas.",
+  "escala_minima": "Tu y una persona que te haya visto hacer algo concreto.",
+  "pasos_accionables": [
+    "Despues de un capitulo entero sobre la importancia de dar opinion a tus personas a cargo, esto no deberia sorprenderte: si hay una salsa secreta para mejorar uno mismo, es pedir opinion a otras personas todo el tiempo.",
+    "Ten claro cual es el unico obstaculo que tienes que superar, que eres tu, y las dos preguntas con las que el libro lo formula: puedes acordarte de pedirla con suficiente frecuencia, y puedes ser lo bastante humilde y consciente de ti mismo como para escucharla con apertura y responder despues con un cambio de verdad?",
+    "Acuerdate de pedir las dos clases: opinion especifica de la tarea y opinion sobre tu conducta.",
+    "Cuanto mas concreto seas sobre lo que quieres saber, mejor.",
+    "No abras con que te parecio como fue mi presentacion, porque probablemente vas a escuchar respuestas del tipo creo que fue bien, que no son particularmente utiles.",
+    "En vez de eso, hurga en lo especifico y ponselo facil a la otra persona para que te diga algo accionable: estoy trabajando en asegurarme de que mi idea quede clara en los tres primeros minutos, se entendio? Como puedo hacerla mas clara la proxima vez?",
+    "Da siempre las gracias por la opinion. Aunque no estes de acuerdo con lo que te digan, recibela con gracia y reconoce que costo esfuerzo darla.",
+    "Cuenta con lo que pasa si no lo haces: si los demas te encuentran defensivo, vas a recibir menos opinion en el futuro, y eso solo va a perjudicar tu crecimiento."
+  ],
+  "resumen_teorico": "Es la primera de las vias de aprendizaje en el puesto que el libro enumera, y la unica que remite explicitamente al capitulo anterior. Su inventario propio son las dos clases de opinion que hay que pedir, el contraste entre la pregunta que no sirve y la que si, escritas las dos literalmente, y la regla de cierre de agradecer siempre con su razon. Lo que la separa de la calibracion del principio del capitulo es la frecuencia y la sede: aquella es un ejercicio de calibracion con guiones y destinatarios fijados, esta es una practica continua de mejora. Lo que el libro NO dice, y por eso no esta escrito: cuanto es suficiente frecuencia."
+}

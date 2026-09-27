@@ -1,0 +1,33 @@
+{
+  "condiciones_activacion": "Cuando la tarjeta de puntuacion ya tiene escritas sus tres partes, la mision, los resultados y las competencias. Es el cuarto y ultimo de los pasos del recuadro del libro.",
+  "denominaciones": {
+    "nombre_largo": "Asegurar la alineacion de la tarjeta de puntuacion y comunicarla",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "Ensure Alignment and Communicate"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "contratacion",
+  "entregable_esperado": "La tarjeta de puntuacion contrastada contra el plan de negocio y contra las tarjetas de los puestos que se relacionan con este, con la coherencia y la alineacion comprobadas, y ya compartida con las partes relevantes.",
+  "fuentes": [
+    {
+      "clave": "smart_who",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "id": "alinear_comunicar_tarjeta_puntuacion",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Somete la tarjeta de puntuacion a prueba de presion comparandola con el plan de negocio.",
+    "Comparala tambien con las tarjetas de puntuacion de las personas que van a relacionarse con el puesto.",
+    "Comprueba que hay coherencia y alineacion.",
+    "Comparte despues la tarjeta con las partes relevantes, incluidos los pares y los reclutadores."
+  ],
+  "resumen_teorico": "Es el cuarto paso del recuadro How to Create a Scorecard y el que cierra el documento. El propio capitulo da la señal de que la parte de comunicar funciono: sabes que tienes una buena mision cuando los candidatos, los reclutadores e incluso otros miembros de tu equipo entienden que estas buscando sin tener que hacer preguntas aclaratorias. Este es el paso mas escueto de los cuatro en el libro, y lo que trae es exactamente su inventario: cuatro objetos nombrados, el plan de negocio, las tarjetas de puntuacion de los puestos que se relacionan con este, los pares y los reclutadores.",
+  "titulo": "Asegurar la alineacion de la tarjeta de puntuacion y comunicarla"
+}

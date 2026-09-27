@@ -1,0 +1,41 @@
+{
+  "condiciones_activacion": "Cuando ya has construido la tarjeta de puntuacion, abastecido el flujo de candidatos, conducido los cuatro tipos de entrevista sobre cada candidato y recogido montañas de datos, y toca elegir. Es el sexto y ultimo paso del recuadro de seleccion, dentro de seleccionar al jugador A con las cuatro entrevistas.",
+  "denominaciones": {
+    "nombre_largo": "Decidir a quien contratar: la decision final sobre las tarjetas calificadas",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "DECIDE WHO TO HIRE"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "FINAL DECISION"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "contratacion",
+  "entregable_esperado": "La decision escrita de a quien contratar, con una calificacion global de A, B o C dada a cada candidato y actualizada con lo que dijeron las referencias, o bien la decision de volver al paso de abastecer el flujo de candidatos.",
+  "escala_minima": "El libro la fija por su caso mas simple: con un solo candidato calificado como A la decision es contratarlo, sin mas comparacion.",
+  "fuentes": [
+    {
+      "clave": "smart_who",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "id": "decidir_contratacion_final",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Saca las tarjetas de puntuacion que has completado sobre cada candidato.",
+    "Repite tu analisis del perfil de habilidad y voluntad, para asegurarte de que sigues teniendo una diana.",
+    "Asegurate de haber calificado a todos los candidatos en la tarjeta. Si no le has dado a cada uno una calificacion global de A, B o C, dasela ahora. Haz las actualizaciones que hagan falta a partir de las entrevistas de referencia: mira los datos, considera las opiniones y observaciones del equipo entrevistador, y pon una calificacion final.",
+    "Si no tienes ninguna A, reinicia tu proceso en el segundo paso del metodo, el de abastecer el flujo de candidatos.",
+    "Si tienes una sola A, decide contratar a esa persona.",
+    "Si tienes varias A, ordenalas y decide contratar a la mejor de entre ellas.",
+    "No des el trabajo por terminado con la decision tomada. Decidir hacer algo y hacerlo son dos cosas distintas, y queda el ultimo paso, que es vender el puesto a la persona para que se una de verdad a tu equipo."
+  ],
+  "resumen_teorico": "Es el momento de la verdad del paso Select y el libro lo resuelve con una lista de cinco pasos y una regla de ramificacion, no con una deliberacion. La razon esta escrita en el propio parrafo: con todos esos datos delante la decision deberia ser facil, y lo es porque las tarjetas ya estan calificadas resultado a resultado y competencia a competencia con el marco de habilidad y voluntad, de modo que la decision final no vuelve a juzgar a la persona sino que lee lo que la calificacion dice. El recuadro del capitulo añade encima el sexto punto, repetir el analisis del perfil de habilidad y voluntad para comprobar que la diana sigue ahi despues de las llamadas de referencia, que es el unico sitio donde la informacion nueva puede haber movido la calificacion. La ramificacion de tres salidas es lo que impide la contratacion por cansancio: si no hay ninguna A no se elige a la menos mala, se vuelve al paso de abastecer el flujo. El capitulo cierra con el acertijo de las cinco ranas en un tronco, una decide saltar y quedan cinco, porque decidir hacer algo y hacerlo son dos cosas distintas; con eso el libro empalma con su cuarto paso, vender el puesto a la persona elegida, que es el capitulo siguiente.",
+  "titulo": "Decidir a quien contratar sobre las tarjetas de puntuacion calificadas"
+}

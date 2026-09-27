@@ -1,0 +1,9 @@
+lineas en bitacora/VEREDICTOS.jsonl : 423
+escritas en esta vuelta (de la 411 a la 423): 13
+
+| clase | cuantos |
+|---|---:|
+| `CONTINUA` | **1** |
+| `CORREGIDO` | **1** |
+| `SANO` | **11** |
+| **total** | **13** |

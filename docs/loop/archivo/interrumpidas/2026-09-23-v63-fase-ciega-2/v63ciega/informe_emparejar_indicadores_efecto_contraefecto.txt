@@ -1,0 +1,39 @@
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 462   (346 del grafo mas 116 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 0
+  BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+  vecinos levantados en total      : 4
+  por candidato bloqueado          : menor 4, mediana 4, mayor 4
+  que señal levanta cada vecindad  : similitud_texto 4
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] emparejar_indicadores_efecto_contraefecto   (emparejar_indicadores_efecto_contraefecto.json)
+    vecino construir_indicador_tendencia_patron  [levantada por: similitud_texto]
+      similitud_texto 0.358 | familia_id 0.143 | paso_contra_nodo 0.453
+      paso 3 del candidato contra paso 5 de construir_indicador_tendencia_patron
+    vecino construir_grafico_escalonado_pronosticos  [levantada por: similitud_texto]
+      similitud_texto 0.370 | familia_id 0.000 | paso_contra_nodo 0.446
+      paso 3 del candidato contra paso 1 de construir_grafico_escalonado_pronosticos
+    vecino elegir_fabricar_pedido_pronostico  [levantada por: similitud_texto]
+      similitud_texto 0.354 | familia_id 0.000 | paso_contra_nodo 0.408
+      paso 4 del candidato contra paso 1 de elegir_fabricar_pedido_pronostico
+    vecino revisar_tres_preguntas_valor_carrera  [levantada por: similitud_texto]
+      similitud_texto 0.354 | familia_id 0.000 | paso_contra_nodo 0.386
+      paso 2 del candidato contra paso 2 de revisar_tres_preguntas_valor_carrera
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.

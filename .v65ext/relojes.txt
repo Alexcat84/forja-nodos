@@ -1,0 +1,21 @@
+.v65ext\insertar_01_construir_flujo_produccion_paso_limitante.txt        codigo 0   1822.7 s  fin 2026-09-23 12:16:04
+.v65ext\insertar_02_clasificar_trabajo_proceso_montaje_prueba.txt        codigo 0   2378.6 s  fin 2026-09-23 12:58:12
+.v65ext\insertar_03_detectar_arreglar_fallo_etapa_menor_valor.txt        codigo 0    901.5 s  fin 2026-09-23 13:17:13
+.v65ext\insertar_04_dimensionar_inventario_materia_prima_reposicion.txt  codigo 0    853.8 s  fin 2026-09-23 13:32:21
+.v65ext\insertar_05_rehacer_flujo_paso_limitante_capacidad.txt           codigo 0    957.9 s  fin 2026-09-23 13:49:33
+.v65ext\insertar_06_equilibrar_capacidad_personal_inventario_plazo.txt   codigo 0   1234.7 s  fin 2026-09-23 14:10:57
+.v65ext\insertar_07_preferir_inspeccion_proceso_prueba_destructiva.txt   codigo 0   1012.2 s  fin 2026-09-23 14:30:33
+.v65ext\insertar_08_elegir_cinco_indicadores_diarios_fabrica.txt         codigo 0   1497.8 s  fin 2026-09-23 14:56:17
+.v65ext\insertar_09_emparejar_indicadores_efecto_contraefecto.txt        codigo 0   1265.2 s  fin 2026-09-23 15:18:13
+.v65ext\insertar_10_elegir_indicador_salida_trabajo_administrativo.txt   codigo 0   1420.4 s  fin 2026-09-23 15:42:43
+.v65ext\insertar_11_representar_actividad_caja_negra_ventanas.txt        codigo 0   1277.6 s  fin 2026-09-23 16:04:46
+.v65ext\insertar_12_construir_indicador_linealidad_alerta_temprana.txt   codigo 0   1436.1 s  fin 2026-09-23 16:29:31
+.v65ext\insertar_13_construir_indicador_tendencia_patron.txt             codigo 0   1138.9 s  fin 2026-09-23 16:49:24
+.v65ext\insertar_14_construir_grafico_escalonado_pronosticos.txt         codigo 0   1531.1 s  fin 2026-09-23 17:15:46
+.v65ext\insertar_15_archivar_indicadores_resolver_problemas.txt          codigo 0    816.3 s  fin 2026-09-23 17:30:14
+.v65ext\insertar_16_elegir_fabricar_pedido_pronostico.txt                codigo 0   1776.3 s  fin 2026-09-23 18:00:44
+.v65ext\insertar_17_casar_flujo_fabricacion_flujo_ventas.txt             codigo 0   1687.3 s  fin 2026-09-23 18:29:40
+.v65ext\insertar_18_dimensionar_plantilla_administrativa_pronostico.txt  codigo 0   1283.1 s  fin 2026-09-23 18:52:20
+.v65ext\insertar_19_decidir_aceptar_rechazar_material_defectuoso.txt     codigo 0   1494.5 s  fin 2026-09-23 19:18:11
+.v65ext\insertar_20_elegir_inspeccion_barrera_monitorizacion.txt         codigo 0   1858.0 s  fin 2026-09-23 19:50:31
+insertar: 20 | minimo 816.3 s | mediana 1351.8 s | maximo 2378.6 s | suma 27644.0 s (7.68 h)

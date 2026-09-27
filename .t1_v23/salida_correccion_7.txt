@@ -1,0 +1,7 @@
+| | |
+|---|---|
+| **fichero** | `cuarentena/scott_radical_candor/montar_reuniones_solas_mentalidad_frecuencia.json` |
+| **el paso 10 acababa en** | `lendario, porque escuchar es trabajo duro y no hay capacidad infinita para ello.` |
+| **el paso 10 acaba en** | `; y por esa misma razon el texto dice que se limita a cinco personas a su cargo.` |
+| **pasos en los que ya aparece `cinco personas`** | **[10]** |
+| **pasos, contados del fichero antes y despues** | **22** y **22** |

@@ -1,0 +1,37 @@
+{
+  "id": "aprender_resultados_vencer_dos_presiones",
+  "titulo": "Aprender de los resultados venciendo las dos presiones que empujan a dejar de aprender",
+  "denominaciones": {
+    "nombre_largo": "Aprender: la disciplina casi sobrehumana de reconocer que el resultado podria ser mucho mejor, y las dos presiones que el libro dice que le tentaban a dejar de hacerlo",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "learn"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando tu equipo y tu habeis dado la vuelta entera a la rueda, habeis conseguido algo, y ahora hay que mirar el resultado de verdad.",
+  "entregable_esperado": "El resultado mirado sin negacion, el aprendizaje sacado de el, y la rueda empezada otra vez desde escuchar.",
+  "pasos_accionables": [
+    "Cuenta con lo que el texto llama naturaleza humana: que nos apegamos, a menudo de forma poco razonable, a los proyectos en los que hemos metido mucho tiempo y mucha energia.",
+    "Reune la disciplina casi sobrehumana que hace falta para dar un paso atras.",
+    "Reconoce cuando vuestros resultados podrian ser mucho mejores, o cuando directamente no son buenos.",
+    "Aprende de la experiencia.",
+    "Cuenta con que la negacion es la reaccion mas comun a una ejecucion imperfecta, mas comun que el aprendizaje, y con el motivo que el texto pone en boca de un colega: es insoportablemente doloroso admitirlo cuando tienes un bebe feo.",
+    "Vence las dos enormes presiones que el texto dice que tentaban a la autora a dejar de aprender cuando dirigia un equipo grande: la presion de ser coherente, y el agotamiento."
+  ],
+  "resumen_teorico": "Sale de fuentes/scott_radical_candor/cap_07.md, lineas 389 a 401, bajo el rotulo LEARN, y es la cabeza del ultimo paso de la rueda de hacer cosas. ES UNA CABEZA DE SERIE D.37 Y ESO TIENE CONSECUENCIA: la linea 401 dice CUANTAS partes tiene, con estas palabras, there were two enormous pressures that tempted me to quit learning, y las dos llevan su rotulo propio inmediatamente despues, Pressure to be consistent y Burnout. D.37 manda que las aristas de esta cabeza a sus dos partes se declaren en la misma vuelta en que se insertan las partes, sin esperar a ninguna señal, con el paso de la madre citado. El paso que las enumera es el P6. El caso de Drew Houston y el libro Denial de Richard Tedlow quedan fuera de los pasos porque son ilustracion de la postura y no actos; la frase del bebe feo si entra, dentro del paso que la usa, porque es la que nombra la causa. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 6 pasos, 6 TRANSCRIPCION, 0 PUENTE. P1, P2, P3 y P4 de la linea 395; P5 de las lineas 399 y 401; P6 de la linea 401. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: cuando se mira el resultado, quien lo mira, y como se distingue el apego razonable del que no lo es.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-12"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "atribuciones": []
+}

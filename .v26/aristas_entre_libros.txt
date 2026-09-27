@@ -1,0 +1,3 @@
+nodos en el grafo                        : 222
+aristas madre a hijo con libro compartido: 81
+aristas madre a hijo ENTRE LIBROS        : 0

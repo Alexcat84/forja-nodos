@@ -1,0 +1,11 @@
+130    4       4       0         grep -E "^(FAIL|ERROR):" .a41/aceptacion.txt | CUADRA
+138    4       4       0         sed -n "487,490p" .a41/aceptacion.txt | CUADRA
+144    3       3       0         sed -n "533,535p" .a41/aceptacion.txt | CUADRA
+220    13      12      0         grep -n "^[A-Z][A-Z ,:.!?“”’-]\{6,\}$" fuentes/scott_radical_candor/cap_13.md | NO CUADRA
+237    30      30      0         grep -nE "^([0-9]+\. |[A-Z][A-Z ,“”’-]{6,}$|Rating or no|Categories of|Job ladders|Number of|Language |Consequence|Distribution|Forced curve|Calibration|Frequency|Transparent or|Lightweight or)" fuentes/scott_radical_candor/cap_14.md | CUADRA
+276    1       1       0         sed -n "59p" fuentes/scott_radical_candor/cap_14.md | CUADRA
+357    1       1       0         sed -n "199p" fuentes/scott_radical_candor/cap_13.md | CUADRA
+360    11      11      1         awk "NR>=203 && NR<=213 {print NR\": \"substr(\$0,1,90)}" fuentes/scott_radical_candor/cap_13.md | CUADRA
+383    1       1       1         sed -n "97p" fuentes/scott_radical_candor/cap_14.md | CUADRA
+503    1       1       0         grep -c "arista" docs/loop/DEUDA.jsonl | CUADRA
+575    5       5       0         grep -n "TRAMO POR VUELTA" -A 4 docs/loop/EXTRACTOR.md | CUADRA

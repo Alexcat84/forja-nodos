@@ -1,0 +1,38 @@
+{
+  "id": "establecer_dinamica_nueva_antiguos_pares",
+  "titulo": "Establecer la dinamica nueva con tus antiguos pares",
+  "denominaciones": {
+    "nombre_largo": "Las tres cosas que se tuercen al establecer una dinamica nueva con quienes eran tus companieros y ahora estan a tu cargo",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "it can feel awkward to establish a new dynamic with former peers"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando pasas a dirigir a quienes hasta ayer eran tus companieros de equipo: antes eras un contribuidor individual mas y ahora eres el jefe, asi que la relacion con ellos se siente alterada. Le pasa al aprendiz y le pasa al sucesor, y el libro nombra esta descripcion desde los dos sitios.",
+  "entregable_esperado": "La dinamica nueva con tus antiguos pares establecida, con las tres cosas que se tuercen ya vigiladas: el papel de entrenador asumido, las conversaciones duras tenidas de frente, y dado por normal que te compartan menos de lo que te compartian.",
+  "escala_minima": "Un solo antiguo par que ahora esta a tu cargo, y con mas razon si lo consideras amigo, que es donde el libro dice que se hace mas dificil.",
+  "pasos_accionables": [
+    "Cuenta con que se hace raro establecer una dinamica nueva con tus antiguos pares: antes eras un contribuidor individual mas del equipo y ahora eres el jefe, asi que la relacion con tus companieros puede sentirse alterada. El libro nombra tres cosas que a la autora se le hicieron dificiles al empezar, y sobre todo con personas a cargo a las que consideraba amigas.",
+    "La primera, hacer de entrenador: tu trabajo incluye ahora entender las metas de carrera de tus antiguos pares, que clase de proyectos encajan con sus fuerzas e intereses, en que necesitan ayuda y como van respecto a lo que se espera de ellos.",
+    "No evites esas conversaciones aunque se hagan raras: busca entender que les importa a tus nuevas personas a cargo, dales opinion sobre lo que hacen bien y sobre donde podrian estirarse, y piensa en ti como un entrenador que esta ahi para apoyarlos y ayudarlos a llegar a sus metas.",
+    "La segunda, tener conversaciones duras: la relacion entre directivo y persona a cargo es distinta de la relacion entre pares, porque ahora respondes del resultado de tu equipo, incluidas todas las decisiones que se toman dentro.",
+    "Si algo se interpone en que salga buen trabajo, abordalo rapido y de frente, aunque eso signifique dar a alguien una opinion dificil o tomar decisiones duras: cuanto antes interiorices que los resultados de tu equipo son tuyos, mas facil se hace tener esas conversaciones.",
+    "La tercera, que te traten distinto o te compartan menos informacion: puede que dejen de contarte cuando estan peleando con algo, cuando estan molestos o cuando han tenido un desacuerdo con otro del equipo, y que se callen al verte entrar.",
+    "Y de esa tercera el libro no manda nada: cuenta que con el tiempo la autora reconocio que eso era normal, que sus personas a cargo recelaban de molestarla o de quedar mal, y que le tocaba a ella trabajar mas duro para establecer una relacion de confianza."
+  ],
+  "resumen_teorico": "El libro escribe esta descripcion una sola vez, dentro del camino del aprendiz, y despues la invoca por su titulo desde el camino del sucesor con la formula See description from The Apprentice. Esa invocacion por nombre es lo que la convierte en una pieza con id propio y no en prosa de su capitulo: el libro la trata como una unidad direccionable. Trae inventario propio, que son las tres cosas nombradas una a una, y trae encargo propio en imperativo, que son el no evitar las conversaciones, el abordar de frente lo que estorba y el dar por normal que te compartan menos. Va en un solo nodo y no en cabeza mas tres porque las tres partes no traen procedimiento por igual: la primera trae un inventario de cuatro cosas que entender y tres encargos, la segunda una doctrina y un encargo, y la tercera un reconocimiento sin encargo ninguno. Lo que el libro NO dice, y por eso no esta escrito aqui, es cuanto dura esa rareza ni que hacer si el antiguo par no acepta la relacion nueva."
+}

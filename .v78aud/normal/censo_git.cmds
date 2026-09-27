@@ -1,0 +1,8 @@
+git log --format="%h %an %cI %s" 90457524..e92b1f85 | cut -c1-140
+git diff --name-status 90457524 463248f5 | grep -v "\.v78ext/" | awk '{print $1, $NF}' | sed "s|/[^/]*\.json$|/*.json|" | sort | uniq -c
+git diff --name-status 90457524 463248f5 -- .v78ext | awk '{print $1}' | sort | uniq -c
+git diff --name-only 463248f5 e92b1f85
+git log --format="%h %an" 90457524..e92b1f85 -- src tests scripts forja.py config esquema fuentes dataset bitacora censos | wc -l
+git status --short -- dataset bitacora censos config esquema fuentes src scripts tests cuarentena forja.py | wc -l
+git diff 90457524 463248f5 -- docs/loop/DEUDA.jsonl | grep -c "^[-+]{"
+git diff --stat=200 90457524 463248f5 -- cuarentena/

@@ -1,0 +1,37 @@
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 348   (324 del grafo mas 24 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 0
+  BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+  vecinos levantados en total      : 3
+  por candidato bloqueado          : menor 3, mediana 3, mayor 3
+  que señal levanta cada vecindad  : similitud_texto 3
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] abrazar_incomodidad_silencio_contar_seis   (abrazar_incomodidad_silencio_contar_seis.json)
+    vecino escuchar_entender_critica_dominar_defensa  [levantada por: similitud_texto]
+      similitud_texto 0.449 | familia_id 0.000 | paso_contra_nodo 0.498
+      paso 1 del candidato contra paso 4 de escuchar_entender_critica_dominar_defensa
+    vecino premiar_franqueza_hacer_escucha_tangible  [levantada por: similitud_texto]
+      similitud_texto 0.353 | familia_id 0.000 | paso_contra_nodo 0.485
+      paso 7 del candidato contra paso 8 de premiar_franqueza_hacer_escucha_tangible
+    vecino contar_historias_propias_explicar_franqueza_radical  [levantada por: similitud_texto]
+      similitud_texto 0.376 | familia_id 0.100 | paso_contra_nodo 0.464
+      paso 1 del candidato contra paso 3 de contar_historias_propias_explicar_franqueza_radical
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.
+CODIGO DE SALIDA: 0

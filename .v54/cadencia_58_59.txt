@@ -1,0 +1,10 @@
+$ python scripts/deuda.py --clase 58
+LIBRE
+  van 4 de 5 desde la ultima de saneamiento (la 54), con 15 deuda(s) esperando
+
+$ python scripts/deuda.py --clase 59
+SANEAMIENTO
+  han pasado 5 vuelta(s) desde la ultima de saneamiento (la 54) y la cadencia es 5, con 15 deuda(s) pendientes
+
+lo que el encargo predice: "La vuelta 58 sera de saneamiento (cinco desde la 53)"
+lo que la decision del fundador dice: "La cadencia de saneamiento sigue contada desde la 53"

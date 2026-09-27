@@ -1,0 +1,39 @@
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 318   (203 del grafo mas 115 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 0
+  BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+  vecinos levantados en total      : 4
+  por candidato bloqueado          : menor 4, mediana 4, mayor 4
+  que señal levanta cada vecindad  : familia_id 1, paso_contra_nodo 3
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] desplegar_plan_orden_operaciones_franqueza_radical   (desplegar_plan_orden_operaciones_franqueza_radical.json)
+    vecino armar_plan_anual_crecimiento_equipo  [levantada por: paso_contra_nodo]
+      similitud_texto 0.166 | familia_id 0.100 | paso_contra_nodo 0.711
+      paso 32 del candidato contra paso 2 de armar_plan_anual_crecimiento_equipo
+    vecino bloquear_tiempo_pensar_calendario  [levantada por: paso_contra_nodo]
+      similitud_texto 0.189 | familia_id 0.000 | paso_contra_nodo 0.650
+      paso 30 del candidato contra paso 3 de bloquear_tiempo_pensar_calendario
+    vecino desplegar_tres_conversaciones_carrera  [levantada por: paso_contra_nodo]
+      similitud_texto 0.227 | familia_id 0.111 | paso_contra_nodo 0.608
+      paso 14 del candidato contra paso 9 de desplegar_tres_conversaciones_carrera
+    vecino desplegar_marco_franqueza_radical  [levantada por: familia_id]
+      similitud_texto 0.120 | familia_id 0.429 | paso_contra_nodo 0.440
+      paso 8 del candidato contra paso 1 de desplegar_marco_franqueza_radical
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.

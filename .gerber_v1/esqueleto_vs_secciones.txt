@@ -1,0 +1,9 @@
+1ede50b  secciones_G1.9_o_G1.10=0  esqueleto_dice_G1.6_a_G1.10=0
+1f2b648  secciones_G1.9_o_G1.10=0  esqueleto_dice_G1.6_a_G1.10=0
+b2f0714  secciones_G1.9_o_G1.10=0  esqueleto_dice_G1.6_a_G1.10=0
+b820215  secciones_G1.9_o_G1.10=0  esqueleto_dice_G1.6_a_G1.10=0
+920fcc0  secciones_G1.9_o_G1.10=0  esqueleto_dice_G1.6_a_G1.10=0
+1fe4be8  secciones_G1.9_o_G1.10=0  esqueleto_dice_G1.6_a_G1.10=0
+a218170  secciones_G1.9_o_G1.10=0  esqueleto_dice_G1.6_a_G1.10=1
+384165b  secciones_G1.9_o_G1.10=0  esqueleto_dice_G1.6_a_G1.10=1
+abf7515  secciones_G1.9_o_G1.10=0  esqueleto_dice_G1.6_a_G1.10=1

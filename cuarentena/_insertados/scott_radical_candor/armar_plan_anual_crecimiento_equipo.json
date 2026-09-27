@@ -1,0 +1,64 @@
+{
+ "id": "armar_plan_anual_crecimiento_equipo",
+ "titulo": "Armar una vez al anio el plan de gestion del crecimiento de cada persona del equipo, desde poner los nombres en las casillas hasta comprobar la equidad entre niveles",
+ "denominaciones": {
+  "nombre_largo": "El plan anual de gestion del crecimiento del equipo, con sus cuatro etapas encadenadas por el propio texto: poner los nombres en las casillas, buscar una mirada de fuera, escribir los planes de crecimiento de tres a cinco puntos, y comprobar que no eres un corrector blando ni duro y que la equidad se sostiene entre niveles",
+  "otros_idiomas": [
+   {
+    "idioma": "ingles",
+    "termino": "GROWTH MANAGEMENT"
+   },
+   {
+    "idioma": "ingles",
+    "termino": "growth-management plan"
+   }
+  ],
+  "sigla": ""
+ },
+ "condiciones_activacion": "Una vez al anio, cuando ya has tenido las tres conversaciones de carrera con tu equipo y toca cruzar las aspiraciones de cada persona con las necesidades del conjunto.",
+ "entregable_esperado": "Los nombres de todo el equipo puestos en sus casillas y revisados por alguien de fuera, un plan de crecimiento de tres a cinco puntos escrito para cada persona, las notas comparadas con tus iguales, y la equidad entre niveles comprobada con su razon identificable y justificable donde la distribucion se desvie.",
+ "pasos_accionables": [
+  "Parte de donde el texto te pone: ya has tenido tus tres conversaciones y has empezado a alinear las oportunidades del equipo con las aspiraciones de cada persona, lo que te ha subido mucho en la dimension de que te importe personalmente. Ahora toca moverte en la otra dimension, la de desafiar directamente.",
+  "Arma una vez al anio un plan de gestion del crecimiento para cada persona de tu equipo.",
+  "Mira el equipo entero y asegurate de entender como se alinean las aspiraciones y la trayectoria de crecimiento de cada persona con las necesidades colectivas del equipo.",
+  "Cuenta con lo que viene detras si no todo el mundo esta a la vez donde quiere estar y donde hace falta que este: vas a tener que tener conversaciones bastante desafiantes.",
+  "Primer paso, y el texto lo llama asi: identifica a tus estrellas de rock y a tus superestrellas, y escribe sus nombres en las casillas correctas.",
+  "Identifica a continuacion a la gente de tu equipo que hace un trabajo bueno pero no excepcional, que probablemente sera la mayoria.",
+  "Identifica despues a la gente que rinde mal pero de la que crees que deberia hacerlo mucho mejor, bien porque esta dando seniales de que puede mejorar, bien porque sus habilidades y sus ambiciones sugieren que la mejora es posible.",
+  "Identifica por ultimo, y el texto avisa de que esta suele ser la parte mas dificil, a la gente que no hace buen trabajo y no esta mejorando.",
+  "No te obsesiones con este ejercicio: dedicale veinte minutos como maximo y piensa rapido.",
+  "Busca despues una mirada de fuera para asegurarte de que no vas sesgada: encuentra a alguien que conozca el trabajo de la gente de tu equipo pero que no este tan implicada emocionalmente como tu, y el texto los nombra: tu jefe, un igual o alguien de recursos humanos.",
+  "Si esa persona pondria a tu gente en casillas distintas, asegurate de entender por que, incluso si no estas de acuerdo, y sobre todo si no estas de acuerdo.",
+  "Escribe despues un plan de crecimiento de tres a cinco puntos para cada persona.",
+  "Asegurate al escribirlos de que tienes proyectos u oportunidades que estiren a las superestrellas.",
+  "Asegurate de que das a las estrellas de rock lo que necesitan para ser productivas.",
+  "Piensa formas de empujar a quien hace un trabajo bueno a hacer un trabajo excepcional, y preguntate que proyectos nuevos, que formacion o que ayuda puedes ofrecerle.",
+  "Y con quien hace mal trabajo pero da seniales de mejorar, hazte las preguntas del texto: los has puesto en el papel equivocado? estan claras las expectativas? necesitan formacion adicional?",
+  "Con quien hace mal trabajo y no mejora, arranca en algun momento el proceso de despedirlo, que es lo que el texto dice que toca, y cuenta con que la mayoria de los jefes espera demasiado para esto de forma comprensible.",
+  "Si estas en una empresa grande, cuenta con que probablemente tendras que hablar con recursos humanos de un plan formal de mejora del desempenio.",
+  "Cuenta con el alcance que el texto le da a como manejes un despido: puede tener un efecto enorme no solo en el futuro de la persona a la que despides, sino tambien en como te perciben a ti y a la empresa tu equipo, y ademas en ti misma.",
+  "Cuenta con lo que esto deberia costarte si piensas en el crecimiento personal con regularidad, como deberias: no mas de cinco a quince minutos por persona a tu cargo para apuntar los planes de crecimiento. El texto dice que esto ha de sentirse mas como una comprobacion disciplinada de cordura que como un proceso arduo, y que sirve para tener la trayectoria de crecimiento de todo el equipo en la cabeza.",
+  "Compara notas con tus iguales si muchos de ellos tambien hacen planes de gestion del crecimiento, porque cuando formas parte de un equipo mas amplio hace falta un entendimiento compartido de que es trabajo excepcional, que es trabajo bueno y que es trabajo malo.",
+  "Usa la senial que el texto da para cazarte: si tienes a medio equipo en la casilla de estrella de rock y nadie mas tiene a nadie ahi, es mas probable que estes desacompasada con tus colegas que que tengas el mejor equipo.",
+  "Si eres jefa de jefes, busca una via simple para que todos vean lo mismo, y el texto da la suya: crea un documento compartido, que todas tus personas a cargo pongan ahi los nombres de sus equipos en las casillas que correspondan, y reunios despues en una sala a discutirlo.",
+  "Si estallan las disputas, pide a la gente que las resuelva en una reunion aparte y que vuelva a contar lo que decida, o que te pida a ti la decision si no consiguen ponerse de acuerdo.",
+  "Cuenta con lo que el texto dice que se gana con esas conversaciones duras: mas consistencia entre jefes, que todos los jefes traten igual a los distintos tipos de gente que rinde mucho, que es lo que hace que todos sientan que el sistema es justo, y ademas la oportunidad de que tu equipo diga en voz alta cual cree que deberia ser la proporcion correcta entre gente en trayectoria empinada y gente en trayectoria gradual.",
+  "Comprueba por ultimo la equidad entre niveles, y cuenta con el sesgo que el texto describe: como te importan mucho tus personas a cargo, tiendes a ver lo mejor de ellas, y en un equipo muy grande eso se convierte en sesgo inconsciente, porque tus reportes hacen lo mismo con los suyos y acaba habiendo un porcentaje desproporcionado de gente considerada estrella de rock o superestrella entre los mas veteranos de la jerarquia.",
+  "No dejes que pase lo que el texto denuncia: que a quien tiene los papeles mas veteranos se le den las notas mas altas cuando en realidad esta surfeando sobre la productividad de la gente que trabaja para ellos.",
+  "Contrasta contra la distribucion que el texto dice que cabria esperar: la misma distribucion de desempenio excelente en todos los niveles, una proporcion mayor de gente veterana en trayectoria gradual y una proporcion mayor de gente junior en trayectoria empinada.",
+  "Y si te encuentras con lo contrario, que es como responden en la practica la mayoria de los equipos de direccion, haz preguntas duras y asegurate de que hay una razon identificable y justificable para ello."
+ ],
+ "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_10.md, unidad Cap. 7, Team. Sale de las lineas 93 a 125, bajo el rotulo GROWTH MANAGEMENT. SON LAS PIEZAS P13 A P17 DE LA FRONTERA DE cap_10 EN UN SOLO NODO, y eso lo adjudica la ACTA 20 seccion 4.2, que corrige mi corte de la vuelta 20: la linea 99 declara UN entregable (el plan anual de gestion del crecimiento) y UNA condicion de activacion (una vez al anio), y el libro encadena sus partes el mismo, porque la 103 dice The first step is y la 109 dice Next. Poner nombres en las casillas no es un procedimiento que nadie active por su cuenta: es el primer paso del plan, y lo dice el libro. Su cabeza P13 no es nodo aparte porque seria la segunda compresion de la misma numeracion, que es lo que el manual 3.4 prohibe por su nombre. POR QUE ES PROCEDIMIENTO Y NO POSTURA, con D.27 delante: el inventario de etapas es del libro y esta rotulado por el libro en cuatro rotulos (Put names in boxes, Write growth plans, Don't be an easy grader or a hard grader, Ensure fairness by level), y dentro de cada uno los medios estan nombrados uno a uno, con sus cifras propias: veinte minutos como maximo para el ejercicio de las casillas, de tres a cinco puntos por plan, de cinco a quince minutos por persona. RELECTURA DE FIDELIDAD D.30 HECHA EN EL ACTO DE ESCRIBIR, paso a paso contra su linea: 29 de 29 TRANSCRIPCION, 0 PUENTES. Lo que el texto NO dice y por eso NO esta escrito aqui: ni en que mes del anio se hace, ni donde se guardan los planes, ni quien los aprueba, ni cuales son las casillas exactas del cuadro (el cuadro con sus dos columnas vive en cap_06 y es otro nodo). El caso de Russ y la visita de ventas de la linea 111 NO se convierte en paso: es ejemplo del alcance que un despido tiene, y viaja dentro del paso 19 sin su dato."
+,
+ "dominio": "gestion_equipos",
+ "estado": "vivo",
+ "fuentes": [
+  {
+   "clave": "scott_radical_candor",
+   "fecha": "2026-09-12"
+  }
+ ],
+ "ids_alias": [],
+ "nodos_previos": [],
+ "nodos_siguientes": []
+}

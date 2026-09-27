@@ -1,0 +1,6 @@
+    $ sed -n '392p;406p;419,421p' tests/test_aceptacion.py
+            self.sucio = os.path.join(RAIZ, "tests", "tmp_archivo_con_guion.md")
+                proceso = subprocess.Popen([interprete, "hooks/pre-commit"], cwd=RAIZ,
+            codigo, salida, quien = self.correr_hook()
+            self.assertEqual(codigo, 0,
+                             "el repo ha de estar limpio antes de ensuciarlo:\n%s" % salida)

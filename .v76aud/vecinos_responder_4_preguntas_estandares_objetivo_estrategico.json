@@ -1,0 +1,33 @@
+{
+ "id": "responder_4_preguntas_estandares_objetivo_estrategico",
+ "grafo": 437,
+ "bandejas": 42,
+ "vecinos": [
+  {
+   "id": "responder_8_preguntas_construir_primary_aim",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.38,
+    "familia_id": 0.25,
+    "paso_contra_nodo": 0.451
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 2 del candidato contra paso 7 de responder_8_preguntas_construir_primary_aim"
+  },
+  {
+   "id": "probar_traje_azul_seis_semanas",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.393,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.305
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 4 del candidato contra paso 2 de probar_traje_azul_seis_semanas"
+  }
+ ]
+}

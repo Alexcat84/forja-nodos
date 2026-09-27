@@ -1,0 +1,17 @@
+lineas nuevas                       : 37
+  de ellas ARISTA POR LECTURA       : 0
+PARES LEIDOS DE LA ADUANA           : 37
+
+QUE SENIAL LOS LEVANTA
+  similitud_texto     : 28
+  familia_id          : 8
+  lectura declarada   : 2
+
+EN QUE BANDA DE SIMILITUD CAEN
+  0.35 a 0.40           : 27
+  0.40 en adelante      : 1
+  por debajo de 0.35    : 9
+
+LOS QUE PASAN DE 0.40
+  0.400  retirar_etiquetas_permanentes_equipo contra manejar_enfado_persona_desafiada
+MAYOR SIMILITUD DE LA VUELTA        : 0.400

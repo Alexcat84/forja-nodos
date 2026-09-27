@@ -1,0 +1,20 @@
+RELECTURA DE FIDELIDAD D.30, VUELTA 38, ANTES DE LA PRIMERA INSERCION
+  candidato                                            cap      pasos  PUENTE releidos por ciento
+  --------------------------------------------------------------------------------------------------------
+  mejorar_consciencia_propia_relacional_dos_practicas  cap_13      13       0        3       0,00
+  contar_cuatro_historias_propias_ver_hueco_intencion  cap_13      17       0        8       0,00
+  practicar_triangulo_critica_tres_papeles             cap_13      15       0        4       0,00
+  pedir_critica_primero_crear_seguridad_psicologica    cap_13      17       2       12      11,76
+  elegir_pregunta_recurrente_pedir_critica             cap_13      24       0        5       0,00
+  resolver_dudas_frecuentes_pedir_critica              cap_13      15       0        5       0,00
+  --------------------------------------------------------------------------------------------------------
+  LA FILA DEL CAPITULO                                 cap_13     101       2       37       1,98
+
+  un solo capitulo en el tramo: la fila por capitulo y el total son la misma fila.
+  techo de PASOS INVENTADOS (AUDITOR_FORJA.md 8.1): 10 por ciento. Medido: 1,98.
+  pasos releidos enteros por nombrar persona, cuenta, escalon o adjetivo de
+  sentimiento (lo que el encargo manda declarar aunque sea cero): 37 de 101.
+
+  LOS PUENTE, UNO A UNO:
+    pedir_critica_primero_crear_seguridad_psicologica paso 6
+    pedir_critica_primero_crear_seguridad_psicologica paso 15

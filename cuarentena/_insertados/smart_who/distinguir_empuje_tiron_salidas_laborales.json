@@ -1,0 +1,42 @@
+{
+  "atribuciones": [
+    {
+      "autor": "Geoff Smart y Randy Street",
+      "cifra": "por la experiencia de los autores, quienes han sido empujados fuera del veinte por ciento o mas de sus empleos tienen tres veces mas probabilidad de ser jugadores B o C cronicos",
+      "fecha_corte": "2008",
+      "fuente": "smart_who"
+    }
+  ],
+  "condiciones_activacion": "Justo despues de preguntar por que dejaste ese trabajo en cada capitulo de la entrevista cronologica de trayectoria. Es la tercera de las cinco tacticas maestras y se aplica a cada salida de empleo de la carrera del candidato.",
+  "denominaciones": {
+    "nombre_largo": "Empuje contra tiron: leer por que se dejo cada empleo",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "Master Tactic #3: Push Versus Pull"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "contratacion",
+  "entregable_esperado": "Cada salida de empleo de la carrera del candidato clasificada como empuje o como tiron, y la proporcion de empujes sobre el total de sus empleos.",
+  "escala_minima": "La tactica se ejecuta con una sola pregunta por empleo, la que ya haces en la entrevista cronologica, y su regla de corte es una proporcion, asi que vale igual para una carrera de tres puestos que para una de quince.",
+  "fuentes": [
+    {
+      "clave": "smart_who",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "id": "distinguir_empuje_tiron_salidas_laborales",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Despues de preguntar por que dejaste ese trabajo, escucha en que categoria cae la respuesta, porque solo hay dos.",
+    "Marca como empuje las respuestas de este tipo: fue mutuo; era hora de que me fuera; mi jefe y yo no nos llevabamos bien; ascendieron a Judy y a mi no; mi papel se encogio; no llegue a mi numero y me dijeron que estaba en la cuerda floja.",
+    "Marca como tiron las respuestas de este otro tipo: mi mayor cliente me contrato; mi antiguo jefe me recluto para un puesto mayor; el consejero delegado me pidio que aceptara una doble promocion; un antiguo par se fue a un competidor y me recomendo a su jefe.",
+    "No contrates a nadie que haya sido empujado fuera del veinte por ciento o mas de sus empleos."
+  ],
+  "resumen_teorico": "La tercera tactica maestra convierte la ultima pregunta de la entrevista cronologica en una medida. El principio es simple y esta escrito en el propio parrafo: a quien rinde bien lo atraen hacia oportunidades mayores, y a quien rinde mal lo empujan fuera de sus puestos. Lo que la vuelve procedimiento es que el libro pone su propio inventario de respuestas a cada lado, con las formulas literales con las que la gente cuenta una y otra cosa, y encima un corte numerico que no depende del juicio del entrevistador: el veinte por ciento de los empleos. Eso la hace ejecutable por cualquiera y comparable entre candidatos, y evita que una sola salida mala hunda a alguien o que una racha de salidas malas se explique una a una. En la lista de empujes el libro cuela ademas su propio guiño al caso del vicepresidente de ventas que abofeteo a su consejero delegado y perdio con ello tres millones de dolares, que es el ejemplar extremo de la categoria.",
+  "titulo": "Distinguir empuje de tiron en cada salida de empleo"
+}

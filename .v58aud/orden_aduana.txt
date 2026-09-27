@@ -1,0 +1,37 @@
+--- 1. poblacion del barrido que cada informe del extractor declara ---
+.v57ext/informe_amistad.txt:poblacion del barrido       : 430   (346 del grafo mas 84 que esperan en bandejas)
+.v57ext/informe_diagnosticar_capacidad.txt:poblacion del barrido       : 430   (346 del grafo mas 84 que esperan en bandejas)
+.v57ext/informe_diagnosticar_salario.txt:poblacion del barrido       : 430   (346 del grafo mas 84 que esperan en bandejas)
+.v57ext/informe_elegir_estilo.txt:poblacion del barrido       : 430   (346 del grafo mas 84 que esperan en bandejas)
+.v57ext/informe_elegir_modo_control.txt:poblacion del barrido       : 430   (346 del grafo mas 84 que esperan en bandejas)
+.v57ext/informe_escalonar_complejidad.txt:poblacion del barrido       : 430   (346 del grafo mas 84 que esperan en bandejas)
+.v57ext/informe_fijar_meta.txt:poblacion del barrido       : 430   (346 del grafo mas 84 que esperan en bandejas)
+
+--- 2. la bandeja que esa poblacion supone, contada hoy ---
+cuarentena/_derivadas/ 2
+cuarentena/_insertados/ 0
+cuarentena/ensayo_referencia_163/ 163
+cuarentena/grove_high_output/ 81
+cuarentena/marquet_turn_the_ship/ 3
+cuarentena/onu_consumidor/ 0
+cuarentena/scott_radical_candor/ 0
+cuarentena/smart_who/ 0
+cuarentena/zhuo_manager/ 0
+
+--- 3. mtime de cada candidato escrito en la vuelta 57 ---
+2026-09-20 19:04:20.629428600 cuarentena/grove_high_output/elegir_modo_control_motivacion_factor_cua.json
+2026-09-20 19:07:17.745623700 cuarentena/grove_high_output/escalonar_complejidad_puesto_empleado_nuevo.json
+2026-09-20 19:17:16.206191400 cuarentena/grove_high_output/elegir_estilo_direccion_madurez_relevante_tarea.json
+2026-09-20 19:23:11.450751900 cuarentena/grove_high_output/fijar_meta_direccion_objetivos_mitad_probabilidad.json
+2026-09-20 19:36:15.906195500 cuarentena/grove_high_output/diagnosticar_nivel_motivacion_reaccion_aumento_salario.json
+2026-09-20 19:59:43.140010900 cuarentena/grove_high_output/diagnosticar_capacidad_motivacion_prueba_vida.json
+2026-09-20 19:59:52.093145000 cuarentena/grove_high_output/decidir_amistad_subordinado_prueba_revision_dificil.json
+
+--- 4. mtime de cada informe guardado ---
+2026-09-20 19:51:06.810031600 .v57ext/informe_escalonar_complejidad.txt
+2026-09-20 19:51:52.565454100 .v57ext/informe_elegir_modo_control.txt
+2026-09-20 19:54:07.307478800 .v57ext/informe_elegir_estilo.txt
+2026-09-20 20:05:51.025503700 .v57ext/informe_diagnosticar_capacidad.txt
+2026-09-20 20:13:12.918016000 .v57ext/informe_amistad.txt
+2026-09-20 20:14:04.697370900 .v57ext/informe_fijar_meta.txt
+2026-09-20 20:14:28.057784900 .v57ext/informe_diagnosticar_salario.txt

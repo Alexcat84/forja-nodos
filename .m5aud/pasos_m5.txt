@@ -1,0 +1,9 @@
+cap_10       P1  cita literal en lineas [45]  
+cap_10       P2  cita literal en lineas [49]  
+cap_10       P3  cita literal en lineas [49]  
+cap_09       P1  cita literal en lineas [71]  
+cap_09       P2  cita literal en lineas [73]  
+cap_11       P1  cita literal en lineas [75]  
+cap_11       P2  cita literal en lineas [75]  
+cap_11       P3  cita literal en lineas [95]  
+TOTAL pasos: 8   sin sustento literal: 0

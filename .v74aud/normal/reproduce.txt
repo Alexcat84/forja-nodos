@@ -1,0 +1,6 @@
+contar_fidelidad.py: IDENTICO a .v74ext/contar_fidelidad.txt
+citas.sh: IDENTICO a .v74ext/citas_fidelidad.txt
+d077.py: IDENTICO a .v74ext/d077.txt
+pasos_y_huellas.py: IDENTICO a .v73ext/pasos_y_huellas.txt
+libro_mayor_cap13.py: IDENTICO a .v74ext/libro_mayor.txt
+hoy contra .v73aud/huellas_al_barrer.txt: {('gerber_emyth', 'igual'): 22, ('grafo', 'igual'): 1, ('grove_high_output', 'igual'): 7, ('marquet_turn_the_ship', 'igual'): 20} | suma: 50 | en aquel fichero y hoy no: 0

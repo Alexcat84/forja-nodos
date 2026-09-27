@@ -1,0 +1,67 @@
+==============================================================================
+1. LA COMPROBACION, ANTES DE LA TABLA
+==============================================================================
+tramos que dan nodo                    : 19
+tramos de resto                        : 7
+lineas con contenido de L8 en adelante : 170
+lineas NO cubiertas                    : 0  []
+SOLAPES                                : 0  []
+suma de las filas                      : 9298 palabras
+cuerpo medido aparte (sed 8,$ | wc -w) : 9298 palabras
+IGUALES                                : True
+
+==============================================================================
+2. LA TABLA, IMPRESA Y NO TECLEADA
+==============================================================================
+| tramo | palabras | nodos | que es | la salida, pegada |
+|---|---:|---:|---|---|
+| `L17 a L22` | 69 | **1** | pieza 1, tramo a: el rotulo YOU, el de las dos practicas y el aviso del cap. 5 | `17:YOU` |
+| `L35 a L40` | 238 | **0** | pieza 1, tramo b: las dos consciencias definidas y las dos practicas con su cuenta | `35:Much is written about self-awareness-the ability to recognize your own` |
+| `L41 a L58` | 687 | **1** | pieza 2: la practica de las cuatro historias propias | `41:Practice: What's your story?` |
+| `L59 a L72` | 510 | **1** | pieza 3: la practica del triangulo de la critica | `59:Practice: The Feedback Triangle` |
+| `L73 a L86` | 35 | **1** | pieza 4, tramo a: el orden de operaciones numerado de cinco pasos | `73:SOLICIT CRITICISM FIRST` |
+| `L105 a L110` | 373 | **0** | pieza 4, tramo b: por que pedir critica va primero, con la seguridad psicologica | `105:IN ADDITION TO a story, we thought we'd offer you some research on why` |
+| `L111 a L112` | 153 | **1** | pieza 10, tramo a: el habito regular, porque verlo una vez no basta | `111:Seeing the boss solicit feedback once isn't enough. Fear of offending ` |
+| `L113 a L114` | 49 | **0** | pieza 4, tramo c: el anuncio de los cuatro elementos de pedir critica | `113:We hope a story and some research better explain why you should prove ` |
+| `L115 a L120` | 155 | **1** | pieza 5, tramo a: la pregunta recurrente y por que no vale la de si o no | `115:A GO-TO QUESTION YOU CAN ACTUALLY IMAGINE ASKING` |
+| `L129 a L166` | 646 | **0** | pieza 5, tramo b: los cuatro atributos, las nueve preguntas de ejemplo y su practica | `129:Here are some attributes of good go-to questions:` |
+| `L167 a L186` | 501 | **1** | pieza 6: las cuatro dudas frecuentes de pedir critica, con su respuesta | `167:FAQ` |
+| `L187 a L198` | 272 | **1** | pieza 7: abrazar la incomodidad, con la practica de contar hasta seis | `187:EMBRACE THE DISCOMFORT` |
+| `L199 a L214` | 282 | **1** | pieza 8: escuchar para entender, con la practica de escuchar tres minutos | `199:LISTEN WITH THE INTENT TO UNDERSTAND, NOT TO REPLY` |
+| `L215 a L234` | 590 | **1** | pieza 9: hacer tangible la escucha y premiar la franqueza, con sus dos practicas | `215:MAKE LISTENING TANGIBLE: REWARD THE CANDOR` |
+| `L235 a L246` | 249 | **0** | pieza 10, tramo b: meterlo en la rutina que ya tienes, con su practica | `235:BUILD IT INTO YOUR EXISTING SCHEDULE` |
+| `L247 a L252` | 125 | **1** | pieza 11, tramo a: el elogio es el acelerador y la critica el freno | `247:PRAISE: FOCUS ON THE GOOD STUFF. REALLY.` |
+| `L267 a L288` | 691 | **0** | pieza 11, tramo b: la disciplina del elogio, su concrecion y su practica | `267:SOMETIMES PEOPLE ARE reluctant to praise others because it's much easi` |
+| `L289 a L318` | 1164 | **1** | pieza 12, tramo a: medir la critica en el oido del otro, con el marco de brujula | `289:GAUGE CRITICISM` |
+| `L319 a L322` | 355 | **0** | pieza 12, tramo b: no ir a las consecuencias antes de tiempo, y los varios ejemplares | `319:ONE MISTAKE THAT people often make is to draw attention to consequence` |
+| | **7144** | **12** | **los tramos que dan nodo** | |
+
+| tramo de resto | palabras | nodos | que es, nombrado |
+|---|---:|---:|---|
+| `L9 a L16` | 92 | **0** | los dos rotulos, los tres autores y por que existe este epilogo |
+| `L23 a L34` | 121 | **0** | EL CASO DEL CAPITALISTA DE RIESGO Y SU ASOCIADO entero: manual 3.5, la doctrina que deja (la humildad y las dos consciencias) vive en L35 y L37 |
+| `L87 a L104` | 347 | **0** | LA HISTORIA DE KIM Y SU HIJA entera, con el aviso de por que la escribe: manual 3.5, es el ejemplar de pedir critica y no doctrina nueva |
+| `L121 a L128` | 334 | **0** | LA HISTORIA DE JASON Y ANN entera: manual 3.5, su doctrina es la pregunta recurrente, que ya viaja en la pieza 5 |
+| `L253 a L266` | 487 | **0** | LA HISTORIA DE JASON Y DAVE entera: manual 3.5, es el ejemplar de dar elogio despues de meter la pata |
+| `L323 a L332` | 382 | **0** | DIVERSIDAD E INCLUSION: la cita de Claudia Rankine, el caso de las cenas de ensayo de una participante y el taller que los autores montaron con Second City. NO hay procedimiento para el lector: el libro cuenta lo que ELLOS hicieron. Va marcado como discutible |
+| `L333 a L347` | 391 | **0** | QUE VIENE AHORA: la hoja de ruta de sus programas, la cita de Mill, la peticion de critica, el contacto y la cabecera del capitulo siguiente |
+| | **2154** | **0** | |
+
+==============================================================================
+3. LOS CANDIDATOS DE cap_13, CON SUS PASOS CONTADOS DEL FICHERO
+==============================================================================
+| # | id | pasos |
+|---:|---|---:|
+| 1 | `mejorar_consciencia_propia_relacional_dos_practicas` | **13** |
+| 2 | `contar_cuatro_historias_propias_ver_hueco_intencion` | **17** |
+| 3 | `practicar_triangulo_critica_tres_papeles` | **15** |
+| 4 | `pedir_critica_primero_crear_seguridad_psicologica` | **17** |
+| 5 | `elegir_pregunta_recurrente_pedir_critica` | **24** |
+| 6 | `resolver_dudas_frecuentes_pedir_critica` | **15** |
+| 7 | `abrazar_incomodidad_silencio_contar_seis` | **12** |
+| 8 | `escuchar_entender_critica_dominar_defensa` | **13** |
+| 9 | `premiar_franqueza_hacer_escucha_tangible` | **20** |
+| 10 | `integrar_peticion_critica_rutina_existente` | **13** |
+| 11 | `dar_elogio_disciplina_igual_critica` | **20** |
+| 12 | `medir_critica_respuesta_oyente_brujula` | **33** |
+| | **12 candidatos** | **212** |

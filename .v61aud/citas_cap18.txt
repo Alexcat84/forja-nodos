@@ -1,0 +1,42 @@
+poblacion de D.38.4 (grafo mas bandejas mas el apartado): 603
+claves de libro excluidas del barrido de ids           : 11
+
+=== ids citados como prueba en la tabla de cap_18 ===
+  archivar_indicadores_resolver_problemas                  BANDEJA:grove_high_output    P14
+  buscar_actividad_alta_palanca_tres_vias                  BANDEJA:grove_high_output    P35
+  cerrar_brecha_dos_preguntas_estrategia                   BANDEJA:grove_high_output    P16
+  clasificar_trabajo_proceso_montaje_prueba                BANDEJA:grove_high_output    P6
+  conducir_etapas_modelo_ideal_decision                    BANDEJA:grove_high_output    P43
+  construir_flujo_produccion_paso_limitante                BANDEJA:grove_high_output    P8
+  contestar_dos_preguntas_direccion_objetivos              BANDEJA:grove_high_output    P39
+  cubrir_indicadores_problemas_reunion_individual          BANDEJA:grove_high_output    P14
+  detectar_palanca_negativa_actividad_mando                BANDEJA:grove_high_output    P35
+  diagnosticar_capacidad_motivacion_prueba_vida            BANDEJA:grove_high_output    P45
+  diagnosticar_nivel_motivacion_reaccion_aumento_salario   BANDEJA:grove_high_output    P45
+  elegir_cinco_indicadores_diarios_fabrica                 BANDEJA:grove_high_output    P12
+  elegir_estilo_direccion_madurez_relevante_tarea          BANDEJA:grove_high_output    P51
+  elegir_inspeccion_barrera_monitorizacion                 BANDEJA:grove_high_output    P10
+  elegir_momento_actividad_palanca_maxima                  BANDEJA:grove_high_output    P35
+  emparejar_indicadores_efecto_contraefecto                BANDEJA:grove_high_output    P12
+  entregar_evaluacion_desempeno_tres_claves                BANDEJA:grove_high_output    P53
+  escalonar_fuentes_informacion_gerencial                  BANDEJA:grove_high_output    P23
+  examinar_demanda_entorno_dos_marcos_temporales           BANDEJA:grove_high_output    P16
+  fijar_duracion_lugar_reunion_individual                  BANDEJA:grove_high_output    P33
+  fijar_meta_direccion_objetivos_mitad_probabilidad        BANDEJA:grove_high_output    P39
+  fijar_periodo_direccion_objetivos_retroalimentacion      BANDEJA:grove_high_output    P39
+  llevar_inventario_proyectos_discrecionales               BANDEJA:grove_high_output    P31
+  planificar_tres_pasos_demanda_estado_brecha              BANDEJA:grove_high_output    P16
+  preferir_inspeccion_proceso_prueba_destructiva           BANDEJA:grove_high_output    P10
+  preparar_guion_reunion_individual_subordinado            BANDEJA:grove_high_output    P33
+  programar_visita_area_observar_despachar                 BANDEJA:grove_high_output    P25
+  rehacer_flujo_paso_limitante_capacidad                   BANDEJA:grove_high_output    P8
+  reunir_informacion_gerencial_vias_variadas               BANDEJA:grove_high_output    P23
+  simplificar_trabajo_reducir_numero_pasos                 BANDEJA:grove_high_output    P19
+  supervisar_decision_delegada_preguntas_concretas         BANDEJA:grove_high_output    P29
+  supervisar_tarea_delegada_etapa_menor_valor              BANDEJA:grove_high_output    P29
+  usar_tres_clases_reunion_proceso                         BANDEJA:grove_high_output    P37
+  variar_frecuencia_inspeccion_nivel_calidad               BANDEJA:grove_high_output    P10
+  zanjar_seis_preguntas_decision_adelantado                BANDEJA:grove_high_output    P43
+
+citas comprobadas                        : 35
+CITAS QUE NO EXISTEN EN NINGUNA POBLACION: 0

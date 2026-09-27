@@ -1,0 +1,76 @@
+aplicar_seis_pasos_sistema_venta paso 6 | casa: tan a fondo como
+    paso: Deja que tu gente se comunique con mas efectividad, articulando, observando, escuchando, oyendo, reconociendo, entendiendo e implicando a cada prospecto tan a fondo como el lo necesite.
+    nota: L153 Leaving your people to communicate more effectively, by articulating, watching, listening, hearing, acknowledging, understanding, and engaging each and every prospect. El tan a fondo como el lo necesite es el literal as fully as he needs to be de esta linea (R9)
+medir_sistema_venta_trece_indicadores_benchmark paso 14 | casa: datos
+    paso: Anota esta informacion en un formulario, ya sea a mano o como base de datos en tu computador.
+    nota: L337 The information should be recorded on a form, either manually or as a database on your computer
+responder_4_preguntas_estandares_objetivo_estrategico paso 4 | casa: mayor
+    paso: Como vas a hacer negocio: al detalle, al por mayor, o una combinacion de las dos.
+    nota: L175 How are you going to be in business
+hacer_trabajo_futuro_imaginar_negocio paso 7 | casa: el texto dice
+    paso: Repite ese trabajo al principio del negocio y en cada etapa del camino, que es donde el texto dice que la personalidad emprendedora lo hace, y llamalo por el nombre que el texto le da: Future Work.
+    nota: L291 That’s the work the entrepreneurial personality does at the outset of her business and at each and every stage along the way. El Repite es la practica que el libro describe puesta de mandato, la figura de D68.4
+dictar_ritmo_crecimiento_preguntas_escritas paso 1 | casa: el texto dice
+    paso: Entiende los procesos clave que hay que ejecutar, que es el primero de los tres conocimientos con los que el texto dice que se dicta el ritmo de crecimiento.
+    nota: L279 by understanding the key processes that need to be performed. El se dicta el ritmo de crecimiento es el literal It’s up to you to dictate your business’s rate of growth as best you can de esta linea
+dictar_ritmo_crecimiento_preguntas_escritas paso 5 | casa: mejor / peor
+    paso: Cuenta con equivocarte a veces, con cometer errores y con cambiar de opinion, y ten por eso los planes de contingencia puestos: mejor caso y peor caso.
+    nota: L283 you will also have contingency plans in place. El por eso de la ficha es el But, done right de la misma linea. El mejor caso y peor caso es el literal Best case, worst case de esta linea (R9)
+dictar_ritmo_crecimiento_preguntas_escritas paso 7 | casa: el texto dice
+    paso: Escribelo, con claridad, de modo que otros puedan entenderlo, porque el texto dice que si no lo articulas asi entonces no lo posees.
+    nota: L285 write it down, clearly, so others can understand it. El si no lo articulas asi entonces no lo posees es el literal Because if you don’t articulate it ... you don’t own it de esta linea
+trazar_modelo_negocio_cliente_primero paso 1 | casa: el texto dice
+    paso: Parte de lo que el texto dice que es el modelo: un modelo de negocio que satisface las necesidades percibidas de un segmento concreto de clientes de una manera innovadora.
+    nota: L109 a model of a business that fulfills the perceived needs of a specific segment of customers in an innovative way
+trazar_modelo_negocio_cliente_primero paso 2 | casa: el texto dice
+    paso: Mira el mundo y pregunta donde esta la oportunidad, que es por donde el texto dice que el emprendedor empieza cuando crea el modelo.
+    nota: L115 he surveys the world and asks. El por donde el emprendedor empieza cuando crea el modelo es el literal When The Entrepreneur creates the model de esta linea
+trazar_modelo_negocio_cliente_primero paso 8 | casa: sino
+    paso: No arranques del retrato del negocio que vas a crear sino del retrato del cliente para el que lo vas a crear, que es lo que el texto pone como la diferencia del modelo emprendedor.
+    nota: L119 the Entrepreneurial Model does not start with a picture of the business to be created but of the customer for whom the business is to be created. El contraste es el literal de esta linea (R9)
+dar_valor_constante_cuatro_publicos paso 2 | casa: el texto dice / no solo / sino
+    paso: Hazte la pregunta que el texto dice que todo emprendedor tiene que hacerse: que podria hacer tu prototipo que no solo diera valor constante a tus clientes, empleados, proveedores y prestamistas, sino que se lo diera por encima de sus expectativas mas locas.
+    nota: L65 So what could your Prototype do that would not only provide consistent value to your customers, employees, suppliers, and lenders but would provide it beyond their wildest expectations. El no solo ... sino es el literal not only ... but de esta linea (R9). El que el texto dice que todo emprendedor tiene que hacerse es L67 That is the question every Entrepreneur must ask
+dar_valor_constante_cuatro_publicos paso 3 | casa: el texto dice
+    paso: Busca ese valor en como afecta a cada persona con la que tu negocio se cruza, que es donde el texto dice que vive todo negocio extraordinario.
+    nota: L71 as it impacts every person with whom your business comes into contact. El donde vive todo negocio extraordinario es el literal that every extraordinary business lives de esta linea
+documentar_trabajo_manual_operaciones paso 1 | casa: el texto dice
+    paso: Escribe la documentacion para que diga lo que el texto dice que dice: asi es como lo hacemos aqui.
+    nota: L155 This is how we do it here
+documentar_trabajo_manual_operaciones paso 6 | casa: en vez de
+    paso: Reduce con ella la estructura a medios concretos en vez de a fines generales, hasta la tarea literal y simplificada que el tecnico que hay en cada uno necesita entender para hacer el trabajo que tiene delante.
+    nota: L167 structure is reduced to specific means rather than generalized ends. El contraste en vez de a fines generales es el literal rather than generalized ends (R9)
+documentar_trabajo_manual_operaciones paso 7 | casa: el texto dice
+    paso: Guarda la documentacion en el Manual de Operaciones y tratalo como lo que el texto dice que es: la guia de como se hace de tu empresa.
+    nota: L169 is therefore best described as a company’s How-to-Do-It Guide
+fingir_prototipo_cinco_mil_replicas paso 2 | casa: sino
+    paso: Entiende iguales como el texto lo entiende: no casi iguales, sino iguales; replicas perfectas, clones.
+    nota: L39 Not almost like it, but just like it. El no casi iguales, sino iguales es el literal de esta linea (R9)
+fingir_prototipo_cinco_mil_replicas paso 3 | casa: y quedate con que el texto dice fingir y no
+    paso: Dicho de otro modo, finge que vas a franquiciar tu negocio, y quedate con que el texto dice fingir y no dice que debas hacerlo.
+    nota: L41 In other words, pretend that you are going to franchise your business. El contraste dice fingir y no dice que debas hacerlo es el literal Note: I said pretend. I’m not saying that you should (R9)
+interrogar_negocio_cinco_preguntas paso 1 | casa: en vez de
+    paso: Ponte a trabajar sobre tu negocio en vez de dentro de el.
+    nota: L245 Go to work on your business rather than in it. El en vez de dentro de el es el literal rather than in it (R9)
+interrogar_negocio_cinco_preguntas paso 7 | casa: tan bien como
+    paso: Hazte la tercera: como sistematizo mi negocio de manera que se pudiera replicar 5.000 veces y la unidad numero 5.000 funcionara tan bien como la primera.
+    nota: L259 How can I systematize my business in such a way that it could be replicated 5,000 times, so the 5,000th unit would run as smoothly as the first. El tan bien como la primera es el literal as smoothly as the first (R9)
+interrogar_negocio_cinco_preguntas paso 10 | casa: el texto dice
+    paso: Quedate con lo que el texto dice que va a pasar cuando te las hagas: acabaras dando de bruces con el problema de verdad, que es que no sabes las respuestas.
+    nota: L265 you’ll eventually come face-to-face with the real problem: that you don’t know the answers
+operar_modelo_gente_destreza_minima paso 5 | casa: en vez de
+    paso: Sigue haciendote la pregunta que el texto manda repetirse: como le doy a mi cliente el resultado que quiere de forma sistematica en vez de personal.
+    nota: L91 How can I give my customer the results he wants systematically rather than personally. El en vez de es el literal rather than (R9) El que el texto manda repetirse es el literal The question you need to keep asking yourself is de esta linea
+operar_modelo_gente_destreza_minima paso 6 | casa: en vez de
+    paso: Hazte esa misma pregunta de la otra manera en que el texto la escribe: como creo un sistema experto en vez de contratar uno.
+    nota: L93 How can I create an expert system rather than hire one. El en vez de es el literal rather than (R9)
+unificar_color_forma_vestuario_modelo paso 1 | casa: el texto dice / estudios
+    paso: Parte de lo que el texto dice que dicen los estudios de mercado: a todos los consumidores les mueven a actuar los colores y las formas que encuentran en el mercado, y grupos distintos de consumidores responden distinto a colores y formas concretos.
+    nota: L215 Marketing studies tell us that all consumers are moved to act by the colors and shapes they find in the marketplace. Es el literal de la prueba que el paso cita (R9), y L217 Different consumer groups simply respond differently to specific colors and shapes
+unificar_color_forma_vestuario_modelo paso 5 | casa: y formas que no
+    paso: Elige igual las formas, porque hay formas que funcionan y formas que no, y ponlas donde el texto las pone: la tarjeta de visita, los rotulos, el logotipo y los expositores de mercancia.
+    nota: L233 there are shapes that work and shapes that don’t, on your business card, your signs, your logo, your merchandise displays
+unificar_color_forma_vestuario_modelo paso 6 | casa: midio / menos ventas que / supero
+    paso: Cuenta con lo que midio Louis Cheskin, fundador del Color Research Institute, en el ensayo que el texto cita: un triangulo produjo bastante menos ventas que un circulo, y un escudo supero a los dos por un margen significativo.
+    nota: L235 In one test, Cheskin showed that a triangle produced far fewer sales than a circle, and a crest outproduced both by a significant margin. Es el literal de la prueba y de la comparacion (R9); el midio de la ficha es el showed de un test, y el fundador del Color Research Institute es L221
+pasos T: 168 | pasos T que casan: 25 | pasos T sin ninguna clausula del patron: 143

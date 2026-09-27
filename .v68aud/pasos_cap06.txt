@@ -1,0 +1,94 @@
+===== conducir_etapas_modelo_ideal_decision | cuarentena\grove_high_output\conducir_etapas_modelo_ideal_decision.json
+  titulo: Conducir una decision por las etapas del modelo ideal: discusion libre, decision clara y apoyo pleno
+  fuente: ['grove_high_output']
+  cond: Cuando un grupo tiene que tomar una decision en un negocio que depende de lo que sabe, y quieres que el conocimiento de los que saben llegue a la decision en vez de quedarse callado.
+  P1. Abre la primera etapa con discusion libre, en la que todos los puntos de vista y todos los aspectos del asunto se acogen abiertamente y se debaten.
+  P2. Cuanto mayores sean el desacuerdo y la controversia, mas importante se vuelve la palabra libre.
+  P3. Vigila la practica contraria, que es la corriente: cuando la reunion se calienta, los participantes se echan atras, tantean hacia donde van las cosas y no dicen nada hasta ver que postura va a imponerse, para apoyarla despues y no quedar asociados a la que pierde.
+  P4. Cuenta con que, si los que saben se guardan su opinion, lo que se decida se apoyara en informacion y criterio mas incompletos de lo que podrian haber sido.
+  P5. Pasa despues a la etapa siguiente, que es alcanzar una decision clara, y cuanto mayor sea el desacuerdo sobre el asunto, mas importante se vuelve la palabra clara.
+  P6. Pon cuidado especial en enmarcar los terminos de la decision con claridad absoluta.
+  P7. No oscurezcas el asunto para ahorrarte la discusion cuando sepas que la decision es polemica: hablando con medias palabras no evitas la discusion, solo la aplazas.
+  P8. Cuenta con que a quien no le guste la decision se enfadara bastante mas si no recibe una version pronta y directa de lo que se decidio.
+  P9. Exige por ultimo que todos los implicados den pleno apoyo a la decision alcanzada por el grupo.
+  P10. No confundas ese apoyo con el acuerdo: basta con que los participantes se comprometan a respaldar la decision, y ese es un resultado satisfactorio.
+  P11. Cuenta con que ni el mismo tiempo ni los mismos hechos van a producir acuerdo en muchos asuntos, porque las diferencias de opinion honestas y sentidas existen, y una organizacion no vive de que sus miembros esten de acuerdo en todo.
+  P12. Pide a todos, y no solo a algunos, que ese compromiso de apoyo este honestamente presente: es lo unico que un mando puede esperar y lo que tiene que conseguir de cada uno.
+===== decidir_nivel_competente_inferior | cuarentena\grove_high_output\decidir_nivel_competente_inferior.json
+  titulo: Llevar la decision al nivel competente mas bajo y templar el conocimiento tecnico con el criterio que dan los golpes
+  fuente: ['grove_high_output']
+  cond: Cuando tienes que decidir quien compone el grupo que va a tomar una decision, y el que mas sabe del asunto y el que tiene mas experiencia de carrera no son la misma persona.
+  P1. Haz que cualquier decision se trabaje y se alcance en el nivel competente mas bajo.
+  P2. Cuenta con el motivo que el libro le pone: ahi la toma gente que esta mas cerca de la situacion y que es la que mas sabe de ella.
+  P3. No entiendas saber como entender tecnicamente y nada mas: esa clase de pericia tiene que templarse con criterio.
+  P4. Cuenta con que ese criterio se desarrolla con la experiencia y aprendiendo de los muchos errores que uno ha cometido en su carrera.
+  P5. Situa idealmente la toma de la decision en el terreno intermedio: entre apoyarse en el conocimiento tecnico por un lado, y en los golpes que uno se ha llevado al intentar implantar y aplicar ese conocimiento por el otro.
+  P6. Si para tomar la decision no encuentras personas que reunan las dos cualidades, busca la mejor mezcla posible de participantes disponibles.
+  P7. Para poner la experiencia, pide que venga a la reunion una persona de la direccion con rango superior al de los demas miembros del grupo.
+  P8. Exige que alli todos expresen opiniones y creencias como iguales durante toda la etapa de discusion libre, olvidando o ignorando las diferencias de rango.
+===== vencer_sindrome_grupo_pares_autoconfianza | cuarentena\grove_high_output\vencer_sindrome_grupo_pares_autoconfianza.json
+  titulo: Vencer el sindrome del grupo de pares infundiendo autoconfianza, y la constatacion de que nadie se muere por decidir mal
+  fuente: ['grove_high_output']
+  cond: Cuando un grupo de iguales se reune a decidir y da vueltas sin que nadie se moje, porque cada uno espera a que aparezca el consenso antes de arriesgar una postura.
+  P1. Cuando quieras vencer el sindrome del grupo de pares, trabaja sobre la autoconfianza de cada uno de los miembros, que es lo que lo vence.
+  P2. Apoya una parte de esa autoconfianza en que cada miembro este familiarizado con el asunto que se esta considerando.
+  P3. Apoya otra parte en la experiencia.
+  P4. Cuenta con que al final la autoconfianza sale sobre todo de una constatacion visceral: que nadie se ha muerto nunca por tomar una decision de negocio equivocada, ni por emprender una accion inapropiada, ni por ser desautorizado.
+  P5. Haz que todo el mundo en tu operacion entienda esto, y no solo los que se sientan a la mesa.
+===== tomar_mando_reunion_pares_presidente_ausente | cuarentena\grove_high_output\tomar_mando_reunion_pares_presidente_ausente.json
+  titulo: Decidir quien toma el mando en una reunion de iguales sin presidente formal: el que mas se juega, y si no, el de mayor rango presente
+  fuente: ['grove_high_output']
+  cond: Cuando el sindrome del grupo de pares se manifiesta en una reunion de iguales y esa reunion no tiene presidente formal, de manera que el grupo da vueltas sin que nadie lo enderece.
+  P1. Comprueba primero las dos condiciones juntas: que el sindrome del grupo de pares se este manifestando, y que la reunion no tenga presidente formal.
+  P2. Haz entonces que tome el mando la persona que mas se juega en el asunto.
+  P3. Si eso no funciona, pide siempre que puedas a la persona presente de mayor rango que asuma el control.
+  P4. No cuentes con que esa persona sea mas experta en los asuntos que se tratan que los demas miembros del grupo, y cuenta con que probablemente lo sea menos.
+  P5. Cuenta con lo que si es probable que aporte: actuar de padrino, es decir, de deposito de conocimiento sobre como deben tomarse las decisiones.
+  P6. Cuenta con lo que eso le da al grupo: la confianza que hace falta para tomar una decision.
+===== ejercer_poder_posicion_etapa_decision_clara | cuarentena\grove_high_output\ejercer_poder_posicion_etapa_decision_clara.json
+  titulo: Ejercer el poder de posicion solo al llegar a la etapa de decision clara sin consenso, y nunca antes
+  fuente: ['grove_high_output']
+  cond: Cuando ninguna cantidad de discusion va a producir consenso y el momento de decidir ha llegado claramente, y el que dirige el grupo tiene que decidir si usa ya su autoridad de rango.
+  P1. Reconoce la situacion por sus dos mitades: ninguna cantidad de discusion va a producir consenso, y aun asi el momento de decidir ha llegado claramente.
+  P2. Cuando eso pase, acepta que la persona de mayor rango, la del par mas uno, que hasta ahora ha guiado, entrenado y espoleado al grupo, no tiene mas remedio que tomar ella misma la decision.
+  P3. Comprueba que el proceso vino bien hasta ese punto: que quien decide lo hace con el beneficio completo de la discusion libre, en la que todos los puntos de vista, hechos, opiniones y juicios se expusieron sin el prejuicio del poder de posicion.
+  P4. Ejerce entonces la autoridad del poder de posicion, que ahi es legitima y a veces inevitable, porque se alcanzo la etapa de decision clara y no aparecio ningun consenso.
+  P5. No la ejerzas ni un momento antes: ejercerla antes no es legitimo, y es destructivo.
+  P6. Cuenta con que esto no suele ser facil, porque existe reticencia a ejercer el poder de posicion de forma deliberada y explicita, ya que dar ordenes parece poco amable.
+  P7. Vigila la consecuencia de esa reticencia: alarga la primera fase del proceso, que es el tiempo de discusion libre, mas alla del punto optimo, y la decision se aplaza.
+===== cortar_discusion_libre_momento_justo | cuarentena\grove_high_output\cortar_discusion_libre_momento_justo.json
+  titulo: Cortar la discusion libre en el momento justo: ni antes de oir los asuntos de verdad, ni cuando ya se ha oido todo
+  fuente: ['grove_high_output']
+  cond: Cuando diriges una discusion libre y tienes que decidir si ya es momento de pasar a la decision, o si todavia falta por oir lo que de verdad importa.
+  P1. Cuenta con que entrar en la etapa de decision demasiado pronto o esperar demasiado te deja sin el beneficio completo de la discusion abierta.
+  P2. Sigue el criterio que el libro escribe: no empujes hacia una decision prematuramente.
+  P3. Asegurate de haber oido y considerado los asuntos de verdad, y no los comentarios superficiales que suelen dominar la primera parte de una reunion.
+  P4. Pero en cuanto sientas que ya lo has oido todo y que todos los lados del asunto se han planteado, empuja hacia un consenso.
+  P5. Si el consenso no sale, entra tu y toma la decision.
+  P6. Vigila la discusion libre que sigue en una busqueda interminable de consenso: cuando eso pasa, la gente se aleja del consenso cercano justo cuando esta cerca de acertar, y eso rebaja las posibilidades de llegar a la decision correcta.
+  P7. Pasa a tomar la decision en el momento justo, que es lo decisivo.
+===== zanjar_seis_preguntas_decision_adelantado | cuarentena\grove_high_output\zanjar_seis_preguntas_decision_adelantado.json
+  titulo: Zanjar por adelantado las seis preguntas de una decision: que, cuando, quien decide, a quien se consulta, quien ratifica y a quien se informa
+  fuente: ['grove_high_output']
+  cond: Cuando va a empezar un proceso de decision y todavia nadie ha dicho que se decide, quien decide, a quien se consulta, quien puede vetarlo y a quien hay que contarselo despues.
+  P1. Cuenta con que la toma de decisiones, como las demas cosas que hace un mando, lleva asociada una salida, y en este caso esa salida es la decision misma.
+  P2. Di con claridad desde el principio que esperas exactamente eso, una salida de alta calidad y en plazo, porque es entonces cuando el proceso tiene mas probabilidades de darla, igual que los demas procesos de mando.
+  P3. Zanja por adelantado las seis preguntas importantes, que es una de las tareas clave del mando.
+  P4. Pregunta primero que decision hay que tomar.
+  P5. Pregunta cuando tiene que estar tomada.
+  P6. Pregunta quien va a decidir.
+  P7. Pregunta a quien hay que consultar antes de tomar la decision.
+  P8. Pregunta quien va a ratificar o vetar la decision.
+  P9. Pregunta a quien hay que informar de la decision.
+===== anunciar_decision_inesperada_reconvocar_reunion | cuarentena\grove_high_output\anunciar_decision_inesperada_reconvocar_reunion.json
+  titulo: Anunciar una decision radicalmente distinta de lo que el grupo esperaba, y reconvocar la reunion en vez de marcharse
+  fuente: ['grove_high_output']
+  cond: Cuando la palabra final sobre una decision va a ser radicalmente distinta de lo que esperaban las personas que participaron en el proceso de decision.
+  P1. Comprueba la condicion: la palabra final va a ser radicalmente distinta de lo que esperaban las personas que participaron en el proceso de decision.
+  P2. Haz tu anuncio.
+  P3. No te limites a anunciarlo y marcharte del asunto.
+  P4. Cuenta con que la gente necesita tiempo para ajustarse, racionalizar y, en general, recomponerse.
+  P5. Levanta la sesion.
+  P6. Reconvoca la reunion despues de que la gente haya tenido ocasion de recuperarse.
+  P7. Pideles entonces su opinion sobre la decision.
+  P8. Cuenta con lo que eso consigue: ayuda a todo el mundo a aceptar lo inesperado y a aprender a vivir con ello.

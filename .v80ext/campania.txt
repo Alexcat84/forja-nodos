@@ -1,0 +1,48 @@
+$ python forja.py tablero | sed -n '1,26p'
+TABLERO DE FRENTES (D.49, D.50): sede unica del estado de la campania
+  registro: docs/loop/TABLERO.jsonl
+
+  prio lote clave                          estado                 dueno                 band ult cap
+  --------------------------------------------------------------------------------------------------------
+  .    1    onu_consumidor                 INSERTADO              NINGUNO                  0  cap_02
+  .    2    smart_who                      INSERTADO              NINGUNO                  0  cap_05
+  .    3    zhuo_manager                   INSERTADO              NINGUNO                  0       .
+  .    4    scott_radical_candor           INSERTADO              NINGUNO                  0  cap_14
+  .    11   gerber_emyth_cap17_reservado   ANULADO                NINGUNO                  0       .
+  1    7    grove_high_output              INSERTADO              NINGUNO                  0  cap_18
+  2    9    gerber_emyth                   INSERTADO              NINGUNO                  0  cap_22
+  3    5    marquet_turn_the_ship          INSERTADO              NINGUNO                  0  cap_17
+  4*   8    bernerslee_bananas             SIN EMPEZAR            NINGUNO                  0       .
+  5*   6    openstax_business_ethics       SIN EMPEZAR            NINGUNO                  0       .
+  6*   10   openstax_org_behavior          SIN EMPEZAR            NINGUNO                  0       .
+
+  prioridad: el orden del mundo 11 (D.51). El asterisco es FUERA DE
+  CAMPANIA: no se extrae, queda en bandeja para la aduana de a uno.
+  Sin prioridad: ya dentro del mundo 11, no hay nada que elegir.
+
+  libros CON DUEÑO ahora mismo: 0
+
+  MUNDO 11 COMPLETO: los 7 libros del corte estan INSERTADOS (D.60).
+  Lo que toca es el CIERRE (PARALELO.md): PARA_ALEXIS de MUNDO 11
+  COMPLETO con el censo por libro, y parar.
+$ python .v80ext/censo_libros.py
+CENSO POR LIBRO (clave de la primera fuente de cada nodo de dataset/nodos.jsonl)
+  scott_radical_candor              142
+  zhuo_manager                      136
+  grove_high_output                  92
+  smart_who                          59
+  gerber_emyth                       22
+  marquet_turn_the_ship              20
+  onu_consumidor                      6
+  manual_sistema_conocimiento         2
+  SUMA                              479  (nodos en el fichero: 479)
+nodos con mas de una fuente: 0
+aristas en el grafo: 220 | que no viven por los dos lados: 0  | entre libros distintos: 1
+  despedir_persona_respeto_franqueza (zhuo_manager) > despedir_persona_franqueza_radical (scott_radical_candor)
+  pares de libros: zhuo_manager > scott_radical_candor: 1
+$ git log -1 --format='%H %an %cI %s' 69d407da | cut -c1-140
+69d407da4de8389a4f624b2126064e16ff11b3fb alexcat84 2026-09-26T21:01:47-04:00 Vuelta 80, T4: d183 pagada, la frontera de Grove escrita por co
+$ git diff --stat 69d407da HEAD -- dataset bitacora censos cuarentena config src | wc -l
+0
+$ git log --oneline 69d407da..HEAD -- dataset bitacora censos cuarentena config src | wc -l
+0

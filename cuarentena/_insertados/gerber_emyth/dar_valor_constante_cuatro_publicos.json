@@ -1,0 +1,34 @@
+{
+  "id": "dar_valor_constante_cuatro_publicos",
+  "titulo": "Dar valor constante y por encima de lo esperado a los cuatro publicos del modelo, en las formas que el libro nombra",
+  "denominaciones": {
+    "nombre_largo": "La regla 1 del Prototipo de Franquicia: el valor es lo que la gente percibe, la pregunta que todo emprendedor tiene que hacerse, y las formas concretas de valor que el libro enumera",
+    "sigla": "",
+    "otros_idiomas": [
+      {"idioma": "ingles", "termino": "consistent value"},
+      {"idioma": "ingles", "termino": "beyond what they expect"}
+    ]
+  },
+  "condiciones_activacion": "Cuando trabajas la regla 1 del prototipo de tu negocio y tienes que decidir que hara tu modelo para dar valor.",
+  "entregable_esperado": "La pregunta del valor contestada para tu prototipo, con las formas concretas de valor elegidas para cada uno de los cuatro publicos que el libro nombra.",
+  "pasos_accionables": [
+    "Parte de lo que el texto propone que es el valor: lo que la gente percibe que es, y nada mas.",
+    "Hazte la pregunta que el texto dice que todo emprendedor tiene que hacerse: que podria hacer tu prototipo que no solo diera valor constante a tus clientes, empleados, proveedores y prestamistas, sino que se lo diera por encima de sus expectativas mas locas.",
+    "Busca ese valor en como afecta a cada persona con la que tu negocio se cruza, que es donde el texto dice que vive todo negocio extraordinario.",
+    "Cuenta como valor una palabra dicha en la puerta del negocio cuando un cliente se va.",
+    "Cuenta como valor un regalo inesperado del negocio que llega por correo.",
+    "Cuenta como valor una palabra de reconocimiento a un recien llegado por un trabajo bien hecho, o a un vendedor veterano que lleva anos acertando.",
+    "Cuenta como valor el precio razonable de tus productos, o la dedicacion que pones al explicarlos a un cliente que necesita mas ayuda de la normal.",
+    "Cuenta como valor una simple palabra de agradecimiento a tu banquero por su diligencia."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/gerber_emyth/cap_11.md, unidad Cap. 9, titulo textual Working On Your Business, Not In It. Sale de la PIEZA P2 de la frontera publicada en esta misma vuelta, L58 a L83, 313 palabras. ES LA PARTE 1 DE LA SERIE NUMERADA cuya cabeza es fingir_prototipo_cinco_mil_replicas (manual seccion 3.4). POR QUE ES PROCEDIMIENTO Y NO POSTURA, con D.27 delante: la regla enunciada sola seria un mandato con adjetivo de adecuacion (valor constante, por encima de lo esperado), y el propio EXTRACTOR.md 9.1 dice que eso TUMBA. Lo que la salva es que el libro, despues de enunciarla, PONE SU PROPIO INVENTARIO DE MEDIOS y los nombra uno a uno: cinco formas concretas de valor, cada una con su objeto (la palabra en la puerta, el regalo por correo, el reconocimiento al novato y al veterano, el precio razonable y la dedicacion al explicar, y el agradecimiento al banquero). Esos son medios, no fines, que es la restriccion 1. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 8 pasos, 8 TRANSCRIPCION, 0 PUENTE, con su cita pegada en .gerber_v1/cita_cap11_P2.txt. LO QUE NO ESCRIBO Y POR ESO NO ESTA AQUI: cada cuanto se hace cada una de esas cosas, quien las hace, ni como se comprueba que el valor llego. El texto pone las formas y no pone ni periodo ni responsable ni medicion, y ponerlos seria puente de las tres especies que D.30 tiene tabuladas. LA ARISTA DE CABEZA A PARTE queda escrita en el reporte de esta vuelta con su paso citado, el paso 5 de la cabeza, y se cablea el dia de la insercion.",
+  "atribuciones": [],
+  "dominio": "gestion_negocio",
+  "estado": "vivo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "fuentes": [
+    {"clave": "gerber_emyth", "fecha": "2026-09-16"}
+  ]
+}

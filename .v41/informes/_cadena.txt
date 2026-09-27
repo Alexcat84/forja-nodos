@@ -1,0 +1,6 @@
+GUARDA cuadra: .v41/informes/i01_abrazar_incomodidad.txt tiene 3 vecino(s); .v41/cadena_1.sh trae 6 --veredicto
+CUADRA: los 3 vecino(s) del informe tienen su --veredicto en el guion.
+08:47:08 cadena 1 arrancada (candidato 1 de 3)
+OK abrazar_incomodidad_silencio_contar_seis  (325 nodos, bandeja 20)
+ANOTADA LINEA 484 (vigencia declarada)
+08:53:29 cadena 1 terminada

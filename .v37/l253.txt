@@ -1,0 +1,12 @@
+$ grep -n "^# VUELTA 21" docs/loop/REPORTE.md
+24910:# VUELTA 21, los registros de la ACTA 20 y de la parada del 12 sep, `cap_10` ENTERO, las tres aristas `D.37` de `L173`, y el
+
+$ grep -n "L253 a L263" docs/loop/REPORTE.md
+25151:| `L253 a L263` | 198 | **0** | el cuadro que no esta en el recorte, el resumen y la cabecera del cap siguiente |
+26544:| `L253 a L263` | 198 | **0** | el cuadro que no esta en el recorte, el resumen y la cabecera del cap siguiente |
+27475:| `L253 a L263` | 198 | **0** | el cuadro que no esta en el recorte, el resumen y la cabecera del cap siguiente |
+
+$ sed -n "253,255p" fuentes/scott_radical_candor/cap_10.md
+AVOID ABSENTEE MANAGEMENT AND MICROMANAGEMENT
+
+TO HELP YOU figure out when you’re being a good partner rather than slipping into micromanagement or absentee management, I’ve developed a simple chart. I hope it will help you partner better with the people who report to you. One of the best ways to keep the people on your team engaged is by partnering actively with them.

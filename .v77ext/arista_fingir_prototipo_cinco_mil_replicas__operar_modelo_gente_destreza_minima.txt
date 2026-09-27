@@ -1,0 +1,13 @@
+$ python forja.py arista --madre fingir_prototipo_cinco_mil_replicas --hijo operar_modelo_gente_destreza_minima --paso 6 --razon <fila 31> --veredicto SANO --cita-veredicto <fila 31>
+DECLARACION DE ARISTA POR LECTURA (D.37)
+  madre: fingir_prototipo_cinco_mil_replicas
+  hijo : operar_modelo_gente_destreza_minima
+  paso citado de la madre: 6
+    Regla 2: el modelo lo operara gente con el nivel de destreza mas bajo posible.
+  señales del par: familia_id 0.0, paso_contra_nodo 0.44, similitud_texto 0.233
+    NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: fingir_prototipo_cinco_mil_replicas > operar_modelo_gente_destreza_minima
+  razon en bitacora/VEREDICTOS.jsonl
+
+codigo 0

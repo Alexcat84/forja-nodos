@@ -1,0 +1,13 @@
+FUERA DE LA TANDA (no se espera en el grafo): detectar_arreglar_fallo_etapa_menor_valor > supervisar_tarea_delegada_etapa_menor_valor
+ESTA        construir_flujo_produccion_paso_limitante        > rehacer_flujo_paso_limitante_capacidad           veredicto CONTINUA | en los dos extremos
+ESTA        construir_grafico_escalonado_pronosticos         > casar_flujo_fabricacion_flujo_ventas             lectura SOSTENGO | en los dos extremos
+ESTA        construir_indicador_tendencia_patron             > dimensionar_plantilla_administrativa_pronostico  lectura SOSTENGO | en los dos extremos
+ESTA        detectar_arreglar_fallo_etapa_menor_valor        > dimensionar_inventario_materia_prima_reposicion  veredicto CONTINUA | en los dos extremos
+ESTA        dimensionar_inventario_materia_prima_reposicion  > decidir_aceptar_rechazar_material_defectuoso     lectura SOSTENGO | en los dos extremos
+ESTA        elegir_fabricar_pedido_pronostico                > casar_flujo_fabricacion_flujo_ventas             lectura SOSTENGO | en los dos extremos
+ESTA        elegir_indicador_salida_trabajo_administrativo   > dimensionar_plantilla_administrativa_pronostico  lectura SOSTENGO | en los dos extremos
+ESTA        emparejar_indicadores_efecto_contraefecto        > elegir_indicador_salida_trabajo_administrativo   veredicto CONTINUA | en los dos extremos
+ESTA        rehacer_flujo_paso_limitante_capacidad           > equilibrar_capacidad_personal_inventario_plazo   lectura SOSTENGO | en los dos extremos
+ESTA        representar_actividad_caja_negra_ventanas        > construir_indicador_linealidad_alerta_temprana   lectura SOSTENGO | en los dos extremos
+ESTA        representar_actividad_caja_negra_ventanas        > construir_indicador_tendencia_patron             lectura SOSTENGO | en los dos extremos
+aristas que tocan la tanda: 11 | esperadas por mi lectura: 11 | esperadas y presentes: 11 | esperadas y ausentes: 0 | presentes sin lectura mia: 0

@@ -1,0 +1,42 @@
+fila 11, probar_traje_azul_seis_semanas, lineas --veredicto: 3
+  --veredicto responder_4_preguntas_estandares_objetivo_estrategico|SANO|Ajenos de dos capitulos: el vecino, de cap_15, responde las preguntas de los estandares del Objetivo Estrategico, entre ellas la del vestuario (L177); este prueba dos vestuarios seis semanas (L63). Nombrar el vestuario como estandar no es procedimentar la prueba, y ninguno usa el producto del otro.
+  --veredicto cambiar_saludo_cliente_dos_ramas|SANO|El mismo par que cambiar_saludo lee desde su lado: hermanos, dos Innovaciones distintas de cap_12 (L51, L63); ninguna usa el producto de la otra.
+  --veredicto dar_valor_constante_cuatro_publicos|SANO|Ajenos: el vecino, de cap_11, da valor a cuatro publicos; este prueba dos vestuarios (L63). La similitud es de la prosa de Gerber, sin paso comun.
+inicio 2026-09-26 11:04:56
+======================================================================
+ADUANA DE INSERCION, candidato 'probar_traje_azul_seis_semanas'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (447 del grafo mas 32 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 3. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino responder_4_preguntas_estandares_objetivo_estrategico  [Responder las cuatro preguntas que el libro enumera para completar los estandares de tu Objetivo Estrategico]
+    levantada por: similitud_texto
+    similitud_texto    0.394 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.291 (umbral 0.60)
+    paso 2 del candidato contra paso 4 de responder_4_preguntas_estandares_objetivo_estrategico
+
+  vecino cambiar_saludo_cliente_dos_ramas  [Cambiar el saludo del vendedor por una pregunta con dos ramas de respuesta ya escritas]
+    levantada por: similitud_texto
+    similitud_texto    0.390 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.268 (umbral 0.60)
+    paso 1 del candidato contra paso 3 de cambiar_saludo_cliente_dos_ramas
+
+  vecino dar_valor_constante_cuatro_publicos  [Dar valor constante y por encima de lo esperado a los cuatro publicos del modelo, en las formas que el libro nombra]
+    levantada por: similitud_texto
+    similitud_texto    0.362 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.315 (umbral 0.60)
+    paso 2 del candidato contra paso 2 de dar_valor_constante_cuatro_publicos
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 448
+  censos escritos: atribuciones, denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 3
+
+======================================================================
+fin 2026-09-26 11:09:36 | codigo de salida 0 | 279.4 s

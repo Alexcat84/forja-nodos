@@ -1,0 +1,19 @@
+CABEZA: decidir_quien_comunica_cada_cuanto
+PASO 6, literal:
+    Y ten delante las herramientas que el texto enumera para sacar cosas adelante juntos, que son las reuniones a solas, las reuniones de equipo, el tiempo para pensar, las reuniones de gran debate, las reuniones de gran decision, las reuniones generales, las zonas libres de reuniones, los tableros kanban, pasear por la organizacion y ser consciente de la cultura.
+
+SUS nodos_siguientes CABLEADOS: 6
+   - montar_reuniones_solas_mentalidad_frecuencia
+   - conducir_reunion_equipo_agenda_tres_bloques
+   - montar_reunion_gran_debate
+   - montar_reunion_gran_decision
+   - montar_reunion_general_presentaciones_preguntas
+   - bloquear_tiempo_pensar_calendario
+
+recorrer_rueda_conscientemente_cultura_equipo   vive en el grafo: True | cableado desde la cabeza: False
+montar_tablero_kanban_medir_actividades   vive en el grafo: False | cableado desde la cabeza: False
+pasear_organizacion_hallar_problemas_pequenios   vive en el grafo: False | cableado desde la cabeza: False
+
+recorrer_rueda_conscientemente_cultura_equipo  nodos_previos: []
+                                              nodos_siguientes: ['recorrer_rueda_hacer_cosas_equipo']
+                                              rango declarado :  las lineas 271 a 299 y de las lineas 307 a 333, bajo el rotulo BE CONSCIOUS OF CULTURE y 

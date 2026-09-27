@@ -1,0 +1,50 @@
+{
+ "id": "conversar_historia_vida_descubrir_motivadores",
+ "titulo": "Conversar la historia de vida de cada persona a tu cargo para descubrir que la motiva, que es la primera de las tres conversaciones de carrera",
+ "denominaciones": {
+  "nombre_largo": "La primera conversacion de carrera, la de la historia de vida, con su apertura literal, el foco en los momentos de cambio y el limite de no presionar donde la persona senializa incomodidad",
+  "otros_idiomas": [
+   {
+    "idioma": "ingles",
+    "termino": "Conversation one: life story"
+   },
+   {
+    "idioma": "ingles",
+    "termino": "CAREER CONVERSATIONS"
+   }
+  ],
+  "sigla": ""
+ },
+ "condiciones_activacion": "Cuando vas a tener con cada persona que te reporta directamente la primera de las tres conversaciones de carrera, y lo que quieres saber es que la motiva.",
+ "entregable_esperado": "Los motivadores de esa persona escritos en palabras concretas sacadas de los cambios que ella misma conto, y la conversacion tenida sin haber presionado en ningun punto donde ella senializo incomodidad.",
+ "pasos_accionables": [
+  "Ten esta conversacion con cada persona que te reporta directamente, y tenla con el proposito que el texto le pone: aprender que motiva a cada una.",
+  "Arranca con la apertura simple que Russ propuso, y el texto la da literal: empezando por la guarderia, cuentame tu vida.",
+  "Centrate despues en los cambios que la persona ha hecho y entiende por que tomo esas decisiones, porque los valores se revelan a menudo en los momentos de cambio.",
+  "Pregunta por el cambio concreto en vez de por la abstraccion, con la forma que el texto ensenia: dejaste el doctorado despues de dos anios para irte a Wall Street, cuentame mas sobre esa decision.",
+  "Oye la respuesta como una pieza del rompecabezas humano y escribe el motivador que sale de ella. El texto da sus ejemplares: de no poder pagarse ni un zumo de naranja con la beca del doctorado y querer ganar mas dinero sale independencia financiera; de estar aburrido de tanta teoria sin aplicacion practica ni tangible de las ideas sale ver resultados tangibles del trabajo.",
+  "Haz lo mismo con los otros ejemplares que el texto pone: quien dejo de correr y se puso a jugar al futbol porque le gustaba estar en un equipo da ser parte de un equipo, y quien dejo de animar para centrarse en la natacion porque estaba harto de la charla y preferia concentrarse en batir su propia marca da crecimiento personal.",
+  "Recuerda que no buscas respuestas definitivas: solo intentas conocer a la gente un poco mejor y entender que le importa.",
+  "Cuenta con la incomodidad que muchos jefes sintieron al principio con esta clase de conversacion de conocerse, que les parecia una invasion de la frontera preguntar a la gente por su vida fuera del trabajo, y cuenta con las dos cosas que Russ les explico.",
+  "La primera: a la mayoria de la gente le gusta tener esta conversacion, siempre que ocurra en un ambiente de confianza y respeto, y si parte de tu trabajo es que te importe la persona, tienes que conocerla personalmente.",
+  "La segunda: puede haber momentos en que toques algo demasiado personal, y si la persona senializa incomodidad ante una pregunta, tienes que respetarlo.",
+  "Haz lo que Russ hizo con la persona que se mostro profundamente incomoda ante unas preguntas basicas sobre su infancia: dejo caer la infancia, y ella siguio contando su vida despues del doctorado con mucha mas confianza. Russ se entero despues de que habia tenido un trauma importante al crecer, y ella no habia estado comoda contandoselo en una conversacion de conocerse: Russ no habia insistido.",
+  "Practica estas conversaciones antes de tenerlas: Russ hace que todos sus jefes las practiquen entre ellos, para que la gente se sienta mas comoda teniendolas y tambien para ser sensible a no presionar mas alla del nivel de comodidad de cada cual.",
+  "Y usa la practica tambien para lo segundo que el texto dice que consigue: recordar a todos que la conversacion tiene una meta, aprender que motiva a la gente en el trabajo.",
+  "Saca las motivaciones de una historia de vida en vez de discutirlas en abstracto, y cuenta con la razon que el texto da: las abstracciones son facilisimas de malinterpretar. Su ejemplar es una empleada que dice que la independencia financiera le importa de verdad y a la que puedes suponer simplemente materialista, hasta que te cuenta la historia de Bourbon Street que el texto cuenta entera, y entonces sales con otra impresion: no es materialismo egoista.",
+  "Cuenta con lo que el texto dice que consigue esta primera conversacion sola: en cuarenta y cinco minutos has hecho mas por conocer a cada persona que te reporta que de ninguna otra manera; has hecho algo que demuestra que te importa, y despues de una conversacion asi invariablemente te importa mas; estas ya mejor equipada para saber que tipo de oportunidades le serian utiles; y estas mas preparada para la conversacion siguiente, porque cuando entiendes que motiva a una persona y por que, entiendes mucho mejor sus suenios."
+ ],
+ "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_10.md, unidad Cap. 7, Team. Sale de las lineas 47 a 59, bajo el rotulo Conversation one: life story. ES LA PIEZA P7 DE LA FRONTERA DE cap_10, la primera de las tres del tramo L47 a L87. POR QUE ES PROCEDIMIENTO Y NO POSTURA, con D.27 delante: la linea 49 pone la apertura literal de la conversacion (Starting with kindergarten, tell me about your life), el foco (los cambios que la persona ha hecho y por que), y CUATRO ejemplares completos de como se convierte una respuesta en un motivador escrito; la 53 pone las dos cosas que hay que explicar y el limite de no insistir; la 55 pone la practica entre jefes; la 59 pone la duracion, cuarenta y cinco minutos. Es inventario de MEDIOS del propio libro y los pasos lo transcriben en imperativo. POR QUE ES UN NODO Y NO TRES NI MEDIO, con la vara de la ACTA 20 seccion 4.1 delante: tiene UNA condicion de activacion (vas a tener la primera conversacion) y UN entregable (los motivadores escritos), distintos de los de la segunda conversacion (los suenios con sus habilidades) y de los de la tercera (el plan de dieciocho meses). RELECTURA DE FIDELIDAD D.30 HECHA EN EL ACTO DE ESCRIBIR, paso a paso contra su linea: 15 de 15 TRANSCRIPCION, 0 PUENTES. Lo que el texto NO dice y por eso NO esta escrito aqui: ni cada cuanto se repite la conversacion, ni quien la convoca, ni donde se guardan los motivadores escritos. El caso de Russ Laraway y de Sarah vive en las lineas 23 a 45 y NO se extrae como nodo (manual 3.5, el caso no es la casa): aqui entra solo como ejemplo nombrado, y el entregable no lleva ningun dato del caso."
+,
+ "dominio": "gestion_equipos",
+ "estado": "vivo",
+ "fuentes": [
+  {
+   "clave": "scott_radical_candor",
+   "fecha": "2026-09-12"
+  }
+ ],
+ "ids_alias": [],
+ "nodos_previos": [],
+ "nodos_siguientes": []
+}

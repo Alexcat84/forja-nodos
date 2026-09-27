@@ -1,0 +1,37 @@
+pasos de los 13 de la tanda: 96
+pasos de los 12 de cap_07: 90
+poblacion NO leida en mi fase ciega (cap_07): 48
+SEMILLA: 160926
+
+ 1. compartir_logica_mostrar_razonamiento paso 5
+      No describas solo la idea: comparte ademas como llegaste a ella, que es lo que hacia Steve Jobs.
+ 2. establecer_credibilidad_pericia_humildad paso 1
+      Establece que quien decide, seas tu o sea otro de tu equipo, tiene credibilidad, porque sin eso no puedes esperar que nadie ejecute la decision.
+ 3. establecer_credibilidad_pericia_humildad paso 3
+      Aniade la tercera, que el texto dice que a veces escasea: la humildad.
+ 4. establecer_credibilidad_pericia_humildad paso 6
+      No presumas, porque el texto dice que no funciona.
+ 5. establecer_credibilidad_pericia_humildad paso 9
+      No te olvides de ayudar a los que deciden en tu equipo a establecer la suya cuando les toque persuadir a otros de que ejecuten una decision.
+ 6. fijar_fecha_cierre_debate_equipo paso 1
+      Cuenta con la causa que el texto pone al estres del debate: a menudo media sala espera una decision al final de la reunion y la otra media quiere seguir discutiendo en una reunion posterior.
+ 7. fijar_fecha_cierre_debate_equipo paso 2
+      Separa las reuniones de debate de las reuniones de decision.
+ 8. fijar_fecha_cierre_debate_equipo paso 5
+      Resiste el impulso de cerrar el debate y decidir demasiado pronto cuando se vuelve doloroso, que es justo cuando la gente mira al jefe para que acabe con el sufrimiento.
+ 9. fijar_fecha_cierre_debate_equipo paso 9
+      Sugiere por ejemplo que las personas cuyas diferencias le cuesta reconciliar lo cierren durante una comida o un paseo.
+10. persuadir_emocion_oyente_no_propia paso 5
+      No des por supuesto que tu conexion emocional con la decision hace el trabajo: puedes tener una conexion fuerte, y si no tienes en cuenta tambien las emociones de quien escucha, no vas a persuadir.
+11. persuadir_emocion_oyente_no_propia paso 6
+      Preguntate por las emociones concretas del otro lado, que es lo que la autora le pregunto a Jason: como estaban las emociones en el equipo de ingenieria. La respuesta era que estaban agotados, llevaban semanas de noches en blanco.
+12. repartir_decision_cercanos_hechos paso 2
+      No des por hecho que ser jefe te convierte en el que decide. El texto lo dice con el ejemplo de George W. Bush, que dijo yo soy el que decide y parecia ser el unico que no sabia que no lo era.
+13. repartir_decision_cercanos_hechos paso 3
+      Cuenta con la averia que James March llama decidir a bote de basura: deciden los que por casualidad estan alrededor de la mesa, en vez de los que tienen la mejor informacion.
+14. repartir_decision_cercanos_hechos paso 5
+      En vez de decidir tu, crea un proceso de decision claro que de poder a los que estan mas cerca de los hechos para tomar tantas decisiones como sea posible.
+15. repartir_decision_cercanos_hechos paso 7
+      Si sospechas que alguien de tu equipo esta decidiendo por todos, ve a su reunion y mira a la sala, no al que habla. La autora vio hombros caidos, brazos cruzados, caras de piedra y un silencio tan alto que atravesaba el discurso bien preparado de Mark.
+16. repartir_decision_cercanos_hechos paso 8
+      Cuando veas eso, haz la pregunta a la sala que abre la conversacion. La autora pregunto: si Mark no hubiera decidido estos objetivos, que habriais planeado hacer vosotros el trimestre que viene.

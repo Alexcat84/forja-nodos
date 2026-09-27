@@ -1,0 +1,38 @@
+{
+  "condiciones_activacion": "Cuando la seleccion ya ha señalado a la persona que quieres en tu equipo y hace falta que se incorpore de verdad. Es el cuarto y ultimo paso del metodo A de ghSMART para contratar, detras de la tarjeta de puntuacion, del abastecimiento del flujo de candidatos y de la seleccion, y arranca justo donde termina decidir a quien contratar.",
+  "denominaciones": {
+    "nombre_largo": "Como vender a los jugadores A: las cinco mejores formas de sellar el trato",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "HOW TO SELL A PLAYERS"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "Sell: The Top Five Ways to Seal the Deal"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "contratacion",
+  "entregable_esperado": "El candidato elegido con la firma puesta y ya incorporado a tu equipo: el trato sellado y el jugador A a bordo.",
+  "escala_minima": "La fija el propio libro en su moral del capitulo: puede que no estes contratando a un nivel que justifique un apartamento de atico ni un coche nuevo, pero a cualquier nivel la persistencia paga.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "smart_who",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "id": "vender_puesto_jugador",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Identifica cuales de las cinco efes le importan de verdad a este candidato: el encaje, la familia, la libertad, la fortuna o la diversion.",
+    "Crea y ejecuta un plan para atender las efes que si importan durante las cinco olas de la venta: al abastecer, durante las entrevistas, entre la oferta y la aceptacion, entre la aceptacion y el primer dia, y durante los primeros cien dias en el puesto.",
+    "Se persistente. No te rindas hasta que tengas a tu jugador A a bordo."
+  ],
+  "resumen_teorico": "Es la cabeza del cuarto paso del metodo A y el libro la escribe como un recuadro de tres puntos que comprime el capitulo entero. El capitulo se abre diciendo su sitio en el metodo: vender es el cuarto y ultimo paso del metodo A de ghSMART para contratar, y el que impide que todo el trabajo anterior se pierda en la ultima hora. La clave que el libro pone debajo de los tres puntos es ponerse en los zapatos del candidato e importarte lo que a el le importa, porque los candidatos se preocupan de cinco cosas y hay que atender cada una de las cinco hasta que la persona firme. El primer punto abre la serie de las cinco efes de la venta; el segundo abre la serie de las cinco olas, que es la respuesta del libro a la pregunta de cuando se vende: aunque el capitulo este presentado como el ultimo paso, en realidad vender es algo que hay que hacer durante todo el proceso, igual que abastecer. El tercer punto es persistencia, y el libro lo sostiene con dos relatos, el del ejecutivo numero dos que Robert Hurst llamaba cada dos semanas hasta conseguirlo y el del hacedor de tratos que conto John Howard, que subio de unos 175.000 dolares a unos 850.000 mas apartamento, coche y abrigo hasta que el candidato acepto y enderezo la compañia en un año. La moral que Howard le pone es que hay que hacer lo que haga falta cuando estas seguro de haber identificado a la persona correcta.",
+  "titulo": "Vender el puesto al jugador A hasta sellar el trato"
+}

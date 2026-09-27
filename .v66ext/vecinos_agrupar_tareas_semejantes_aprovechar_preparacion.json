@@ -1,0 +1,72 @@
+{
+ "id": "agrupar_tareas_semejantes_aprovechar_preparacion",
+ "grafo": 368,
+ "bandejas": 111,
+ "vecinos": [
+  {
+   "id": "buscar_regularidad_bloques_iguales_trabajo_mando",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.294,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.718
+   },
+   "levantada_por": [
+    "paso_contra_nodo"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 1 de buscar_regularidad_bloques_iguales_trabajo_mando"
+  },
+  {
+   "id": "llevar_inventario_proyectos_discrecionales",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.367,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.444
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 2 del candidato contra paso 5 de llevar_inventario_proyectos_discrecionales"
+  },
+  {
+   "id": "decir_no_trabajo_excede_capacidad",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.358,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.44
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 2 del candidato contra paso 9 de decir_no_trabajo_excede_capacidad"
+  },
+  {
+   "id": "identificar_paso_limitante_jornada_desfases",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.409,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.414
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 6 del candidato contra paso 4 de identificar_paso_limitante_jornada_desfases"
+  },
+  {
+   "id": "supervisar_decision_delegada_preguntas_concretas",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.363,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.394
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 4 de supervisar_decision_delegada_preguntas_concretas"
+  }
+ ]
+}

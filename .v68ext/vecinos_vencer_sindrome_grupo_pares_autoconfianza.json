@@ -1,0 +1,176 @@
+{
+ "id": "vencer_sindrome_grupo_pares_autoconfianza",
+ "grafo": 390,
+ "bandejas": 89,
+ "vecinos": [
+  {
+   "id": "aprender_resultados_vencer_dos_presiones",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.217,
+    "familia_id": 0.111,
+    "paso_contra_nodo": 0.712
+   },
+   "levantada_por": [
+    "paso_contra_nodo"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 4 de aprender_resultados_vencer_dos_presiones"
+  },
+  {
+   "id": "tomar_mando_reunion_pares_presidente_ausente",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.356,
+    "familia_id": 0.1,
+    "paso_contra_nodo": 0.484
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 5 del candidato contra paso 2 de tomar_mando_reunion_pares_presidente_ausente"
+  },
+  {
+   "id": "decidir_nivel_competente_inferior",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.363,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.462
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 4 de decidir_nivel_competente_inferior"
+  },
+  {
+   "id": "anunciar_decision_inesperada_reconvocar_reunion",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.431,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.404
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 2 del candidato contra paso 6 de anunciar_decision_inesperada_reconvocar_reunion"
+  },
+  {
+   "id": "planificar_tres_pasos_demanda_estado_brecha",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.406,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.39
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 5 del candidato contra paso 3 de planificar_tres_pasos_demanda_estado_brecha"
+  },
+  {
+   "id": "responder_primer_aviso_renuncia_subordinado",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.36,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.404
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 5 de responder_primer_aviso_renuncia_subordinado"
+  },
+  {
+   "id": "cortar_discusion_libre_momento_justo",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.396,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.4
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 5 del candidato contra paso 5 de cortar_discusion_libre_momento_justo"
+  },
+  {
+   "id": "definir_entorno_grupo_clientes_proveedores_competidores",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.388,
+    "familia_id": 0.1,
+    "paso_contra_nodo": 0.4
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 5 del candidato contra paso 3 de definir_entorno_grupo_clientes_proveedores_competidores"
+  },
+  {
+   "id": "archivar_indicadores_resolver_problemas",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.363,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.396
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 5 del candidato contra paso 1 de archivar_indicadores_resolver_problemas"
+  },
+  {
+   "id": "ejercer_poder_posicion_etapa_decision_clara",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.354,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.383
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 6 de ejercer_poder_posicion_etapa_decision_clara"
+  },
+  {
+   "id": "supervisar_decision_delegada_preguntas_concretas",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.364,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.379
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 5 de supervisar_decision_delegada_preguntas_concretas"
+  },
+  {
+   "id": "contestar_dos_preguntas_direccion_objetivos",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.37,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.36
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 2 del candidato contra paso 5 de contestar_dos_preguntas_direccion_objetivos"
+  },
+  {
+   "id": "cerrar_brecha_dos_preguntas_estrategia",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.355,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.337
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 3 de cerrar_brecha_dos_preguntas_estrategia"
+  }
+ ]
+}

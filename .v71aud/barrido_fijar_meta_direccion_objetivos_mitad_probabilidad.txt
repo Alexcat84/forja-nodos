@@ -1,0 +1,1 @@
+fijar_meta_direccion_objetivos_mitad_probabilidad poblacion 479 (410 grafo mas 69 bandejas) vecinos 1

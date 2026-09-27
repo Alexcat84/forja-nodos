@@ -1,0 +1,15 @@
+==============================================================================
+CANDIDATO 5: usar_calendario_herramienta_planificacion_produccion   (7 pasos)
+  poblacion barrida: 390 nodos (grafo + bandejas, filtro canonico)
+  medidos al digito con src.aduana.senal_similitud_texto: 389 de 389; descartados: 0
+  umbral de la casa (config/umbrales.json): 0.35
+  LOS 8 VECINOS MAS PROXIMOS, LISTA ORDENADA ENTERA:
+    0.3712  [bandeja/grove_high_output] decir_no_trabajo_excede_capacidad  <-- nacido en esta vuelta
+    0.3264  [bandeja/grove_high_output] buscar_regularidad_bloques_iguales_trabajo_mando  <-- nacido en esta vuelta
+    0.3219  [bandeja/grove_high_output] reunir_informacion_gerencial_vias_variadas
+    0.3121  [bandeja/grove_high_output] identificar_paso_limitante_jornada_desfases
+    0.3097  [bandeja/grove_high_output] transmitir_objetivos_prioridades_preferencias
+    0.3081  [bandeja/grove_high_output] escalonar_fuentes_informacion_gerencial
+    0.2887  [bandeja/grove_high_output] dimensionar_plantilla_administrativa_pronostico
+    0.2879  [bandeja/grove_high_output] agrupar_tareas_semejantes_aprovechar_preparacion
+  vecinos por encima del umbral 0.35: 1

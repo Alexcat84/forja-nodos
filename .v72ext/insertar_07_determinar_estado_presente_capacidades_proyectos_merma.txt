@@ -1,0 +1,58 @@
+fila 07, determinar_estado_presente_capacidades_proyectos_merma, lineas --veredicto: 5
+  --veredicto definir_entorno_grupo_clientes_proveedores_competidores|SANO|Hermanos del mismo plan: el vecino define el entorno del paso 1 (L25) y este determina el estado presente del paso 2 (L35). La moneda en la que se declaro la demanda la usa aqui el paso 2, pero la demanda la produce el paso 1 entero y no la definicion del entorno; ninguno de los seis pasos del vecino usa las capacidades ni la merma de aqui.
+  --veredicto examinar_entorno_expectativas_tecnologia_proveedores_grupos|SANO|Hermanos del mismo plan: el vecino examina los objetos del entorno del paso 1 (L27) y este el estado presente del paso 2 (L35); ninguno usa el producto del otro.
+  --veredicto cerrar_brecha_dos_preguntas_estrategia|SANO|El mismo par que cerrar_brecha lee desde su lado: partes 2 y 3 de la serie de la cabeza (L19), hermanas; la conciliacion la lleva la cabeza, que las cuelga a las dos por D.37 (DISCUTIBLE D71.12).
+  --veredicto examinar_demanda_entorno_dos_marcos_temporales|SANO|Hermanos, partes 1 y 2 de la serie de la cabeza (L19): el vecino establece la demanda del entorno en dos marcos (L29 a L31) y este el estado presente en la misma moneda (L35). El paso 2 de aqui usa la moneda en que se declaro la demanda, pero el libro pone los dos pasos como independientes (Step 1, Step 2) y los junta en el paso 3 de la cabeza (DISCUTIBLE D71.12).
+  --veredicto fijar_horizonte_ventana_replanificacion|SANO|Del mismo capitulo, sin jerarquia: el vecino fija que ventana del plan se implementa (L61) y este mira cuando sale cada proyecto de la tuberia (L35). La senial 3 casa los dos plazos, pero uno es del ejercicio y otro de los proyectos.
+inicio 2026-09-25 22:40:18
+======================================================================
+ADUANA DE INSERCION, candidato 'determinar_estado_presente_capacidades_proyectos_merma'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (416 del grafo mas 63 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 5. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino definir_entorno_grupo_clientes_proveedores_competidores  [Definir tu entorno mirando tu grupo como si fuera una empresa independiente: clientes, proveedores y competidores]
+    levantada por: similitud_texto
+    similitud_texto    0.356 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.516 (umbral 0.60)
+    paso 1 del candidato contra paso 3 de definir_entorno_grupo_clientes_proveedores_competidores
+
+  vecino examinar_entorno_expectativas_tecnologia_proveedores_grupos  [Examinar tu entorno por los cuatro objetos que el libro nombra: las expectativas del cliente, la tecnologia, tus proveedores y los otros grupos de tu organizacion]
+    levantada por: similitud_texto
+    similitud_texto    0.390 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.484 (umbral 0.60)
+    paso 1 del candidato contra paso 1 de examinar_entorno_expectativas_tecnologia_proveedores_grupos
+
+  vecino cerrar_brecha_dos_preguntas_estrategia  [Cerrar la brecha entre demanda y rendimiento contestando por separado que necesitas hacer y que puedes hacer, y llamar estrategia al conjunto que decidas]
+    levantada por: similitud_texto
+    similitud_texto    0.366 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.430 (umbral 0.60)
+    paso 1 del candidato contra paso 3 de cerrar_brecha_dos_preguntas_estrategia
+
+  vecino examinar_demanda_entorno_dos_marcos_temporales  [Examinar la demanda de tu entorno en dos marcos temporales y trabajar sobre la diferencia, sin rebajarla por lo que creas que puedes entregar]
+    levantada por: similitud_texto
+    similitud_texto    0.357 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.413 (umbral 0.60)
+    paso 5 del candidato contra paso 1 de examinar_demanda_entorno_dos_marcos_temporales
+
+  vecino fijar_horizonte_ventana_replanificacion  [Fijar el horizonte de la planificacion, implementar solo la ventana que llega hasta la proxima vez, y no replanificar tan seguido que no de tiempo a juzgar]
+    levantada por: similitud_texto
+    similitud_texto    0.378 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.404 (umbral 0.60)
+    paso 5 del candidato contra paso 3 de fijar_horizonte_ventana_replanificacion
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 417
+  censos escritos: atribuciones, denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 5
+
+======================================================================
+fin 2026-09-25 22:47:16 | codigo de salida 0 | 418.0 s

@@ -1,0 +1,2 @@
+lineas comparadas: 30
+lineas que difieren: 0

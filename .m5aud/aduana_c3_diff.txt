@@ -1,0 +1,2 @@
+$ diff .m5aud/aduana_c3_m5.txt .v4m/aduana/c3.txt
+(sin salida: identicos byte a byte)

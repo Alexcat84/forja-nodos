@@ -1,0 +1,24 @@
+AVISO: cero celdas tecleadas en este instrumento. El arranque del cuerpo NO
+es una constante mia: sale de fuentes/gerber_emyth/cap_12.md, linea 8, que es la siguiente al segundo
+--- de la cabecera yaml (cierres en L1 y L7). El cuerpo va de L8 a L293.
+
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| `R1` | L8 a L19 | **57** | el numero del capitulo, el rotulo THE BUSINESS DEVELOPMENT PROCESS y el epigrafe de Thomas J. Peters y Robert H. Waterman Jr. (In Search of Excellence) | **RESIDUO: rotulo y epigrafe** |
+| `R2` | L20 a L21 | **39** | la cabeza que nombra las tres actividades del Business Development Process: Innovation, Quantification y Orchestration | **POSTURA** |
+| `R3a` | L22 a L50 | **347** | Innovation definida contra creatividad (cita a Theodore Levitt), y la tesis de que el franquiciador dirige su energia innovadora al COMO hace negocio, con el ejemplo del saludo del vendedor de tienda planteado como pregunta retorica | **POSTURA** |
+| `R3b` | L51 a L58 | **128** | EL SALUDO NUEVO: las palabras exactas a decir en vez de Hi, may I help you, y sus dos ramas (si el cliente responde si, si responde no), mas la condicion de tener el programa especial ya creado | **INVENTARIO PROPIO: NACE 1 CANDIDATO** |
+| `R3c` | L59 a L62 | **91** | el resultado atribuido al cambio de palabras: un aumento de ventas de entre 10 y 16 por ciento casi de inmediato, segun la experiencia de los clientes retail de los autores | **CIFRA DEL AUTOR** |
+| `R3d` | L63 a L64 | **82** | EL TEST DE SEIS SEMANAS DEL TRAJE AZUL: dos etapas de tres semanas cada una y las ocho prendas nombradas una a una para cada etapa | **INVENTARIO PROPIO: NACE 1 CANDIDATO** |
+| `R3e` | L65 a L68 | **75** | el resultado atribuido al cambio de traje (blue suits outsell brown suits) y la postura de que McDonalds, Federal Express, Disney y Mrs Fields tambien invierten en como se ven | **POSTURA y CASO** |
+| `R3f` | L69 a L70 | **46** | TOCAR EL BRAZO: la siguiente vez que quieras que alguien haga algo por ti, tocalo suavemente en el brazo al pedirlo | **LINEA NOMBRADA sin inventario propio: NO ES NODO** |
+| `R3g` | L71 a L72 | **48** | la aplicacion a tu negocio: tocar al cliente en el codo, brazo o espalda durante la venta, con el resultado atribuido de un aumento medible de ventas | **POSTURA** |
+| `R3h` | L73 a L83 | **238** | el cierre de Innovation: la pregunta que continuamente plantea, la condicion de que tome el punto de vista del cliente, el mecanismo de identidad frente al cliente y la destreza del Best Way | **POSTURA** |
+| `R4` | L84 a L94 | **101** | el subtitulo Quantification y por que cuantificar una innovacion importa | **POSTURA** |
+| `R5` | L95 a L95 | **134** | el parrafo que enumera uno a uno los seis pasos para cuantificar el impacto de una innovacion | **INVENTARIO PROPIO: NACIO 1 CANDIDATO EN LA VUELTA 3** |
+| `R6` | L96 a L147 | **326** | el resto de Quantification: el ejemplo del traje azul cuantificado, la lista abierta de preguntas sobre los numeros del negocio (termina en y asi sucesivamente) y el cierre | **POSTURA** |
+| `R7` | L148 a L221 | **687** | la seccion Orchestration entera: la eliminacion de la discrecion, si no lo has orquestado no lo posees, y el cierre que nombra otra vez las tres actividades | **POSTURA** |
+| `R8` | L222 a L293 | **1807** | el dialogo con Sarah sobre la Orquestacion, la metafora del aprendizaje del pastel de fruta y la maestria del artesano | **CASO y POSTURA** |
+| **el cuerpo entero** | **L8 a L293** | **4206** | **suma de las piezas: 4206** | **residuo sin asignar: 0** |
+
+piezas: 15   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 4206   suma 4206   residuo 0

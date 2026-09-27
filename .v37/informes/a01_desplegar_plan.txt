@@ -1,0 +1,66 @@
+$ python forja.py insertar cuarentena/scott_radical_candor/desplegar_plan_orden_operaciones_franqueza_radical.json [veredictos y censos]
+ADUANA DE INSERCION, candidato 'desplegar_plan_orden_operaciones_franqueza_radical'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (316 del grafo mas 32 que esperan en bandejas)
+
+DECLARADOS POR LECTURA: 3. Ninguna señal los levanto.
+  contar_historias_propias_explicar_franqueza_radical  [Contar a tu equipo tus propias historias para explicarle la franqueza radical, en vez de prestarle la teoria o las historias de otro]
+    señales: familia_id 0.2, paso_contra_nodo 0.487, similitud_texto 0.176
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  evitar_obsesion_ascenso_estatus  [Evitar que el ascenso y el estatus se conviertan en obsesion cuando vas a anunciar ascensos o a elogiar en publico]
+    señales: familia_id 0.0, paso_contra_nodo 0.455, similitud_texto 0.141
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  reconocer_excelencia_trayectoria_gradual  [Reconocer a quien hace un trabajo excelente en trayectoria gradual y se siente invisible, sacandola del anonimato sin ascenderla]
+    señales: familia_id 0.0, paso_contra_nodo 0.488, similitud_texto 0.172
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  LA JERARQUIA LA CAZA LA LECTURA, NO LA SEÑAL (D.19, D.29).
+
+VECINOS POR ENCIMA DE UMBRAL: 4. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino armar_plan_anual_crecimiento_equipo  [Armar una vez al anio el plan de gestion del crecimiento de cada persona del equipo, desde poner los nombres en las casillas hasta comprobar la equidad entre niveles]
+    levantada por: paso_contra_nodo
+    similitud_texto    0.165 (umbral 0.35)
+    familia_id         0.100 (umbral 0.30)
+    paso_contra_nodo   0.711 (umbral 0.60)
+    paso 32 del candidato contra paso 2 de armar_plan_anual_crecimiento_equipo
+
+  vecino bloquear_tiempo_pensar_calendario  [Bloquear tiempo para pensar en tu calendario y mantener ese tiempo sagrado]
+    levantada por: paso_contra_nodo
+    similitud_texto    0.183 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.650 (umbral 0.60)
+    paso 30 del candidato contra paso 3 de bloquear_tiempo_pensar_calendario
+
+  vecino desplegar_tres_conversaciones_carrera  [Desplegar con tu equipo la serie de tres conversaciones de carrera, con su cadencia y su encargo de ensenarlas a tus jefes]
+    levantada por: paso_contra_nodo
+    similitud_texto    0.249 (umbral 0.35)
+    familia_id         0.111 (umbral 0.30)
+    paso_contra_nodo   0.608 (umbral 0.60)
+    paso 14 del candidato contra paso 9 de desplegar_tres_conversaciones_carrera
+
+  vecino desplegar_marco_franqueza_radical  [Desplegar el marco de la franqueza radical como recordatorio, con su regla de uso y sus dos prohibiciones]
+    levantada por: familia_id
+    similitud_texto    0.118 (umbral 0.35)
+    familia_id         0.429 (umbral 0.30)
+    paso_contra_nodo   0.440 (umbral 0.60)
+    paso 8 del candidato contra paso 1 de desplegar_marco_franqueza_radical
+  arista madre-hijo cableada y escrita RESUELTA: desplegar_plan_orden_operaciones_franqueza_radical > armar_plan_anual_crecimiento_equipo
+  arista madre-hijo cableada y escrita RESUELTA: desplegar_plan_orden_operaciones_franqueza_radical > bloquear_tiempo_pensar_calendario
+  arista madre-hijo cableada y escrita RESUELTA: desplegar_plan_orden_operaciones_franqueza_radical > desplegar_tres_conversaciones_carrera
+  ARISTA EN COLA, no cableada: desplegar_plan_orden_operaciones_franqueza_radical > contar_historias_propias_explicar_franqueza_radical
+    el otro extremo espera en la bandeja (D.29). El veredicto CONTINUA queda escrito y la arista se cablea cuando entre:
+      python forja.py arista --madre desplegar_plan_orden_operaciones_franqueza_radical --hijo contar_historias_propias_explicar_franqueza_radical --paso <n> --razon "..."
+  arista madre-hijo cableada y escrita RESUELTA: desplegar_plan_orden_operaciones_franqueza_radical > evitar_obsesion_ascenso_estatus
+  arista madre-hijo cableada y escrita RESUELTA: desplegar_plan_orden_operaciones_franqueza_radical > reconocer_excelencia_trayectoria_gradual
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 317
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 7
+  ARISTAS EN COLA, sin cablear: 1
+    desplegar_plan_orden_operaciones_franqueza_radical > contar_historias_propias_explicar_franqueza_radical
+    D.29: van a un bloque propio y titulado del reporte, y se cablean con `forja.py arista` cuando el otro extremo entre.
+CODIGO DE SALIDA: 0
+  ARCHIVADO EN EL MISMO ACTO (D.31): cuarentena/_insertados/scott_radical_candor/desplegar_plan_orden_operaciones_franqueza_radical.json

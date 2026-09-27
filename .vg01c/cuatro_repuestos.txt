@@ -1,0 +1,22 @@
+$ git log --oneline -2
+be2b678 loop.log: registro pendiente antes de abrir la vuelta 1 del frente grove_high_output
+6c93aa2 FRENTE grove_high_output: encargo de su vuelta 1 en austero, y este frente NO inserta (D.45)
+
+$ git show --stat be2b678 | tail -4   (que toco ese commit: SOLO loop.log)
+    loop.log: registro pendiente antes de abrir la vuelta 1 del frente grove_high_output
+
+ docs/loop/loop.log | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+$ ls -la --time-style=full-iso los CUATRO que D.34.2 retira
+-rw-r--r-- 1 AlexDesk 197609   61554 2026-09-16 20:55:13.807706600 -0400 docs/loop/loop.log
+-rw-r--r-- 1 AlexDesk 197609 2499868 2026-09-16 20:55:06.491572500 -0400 docs/loop/REPORTE.md
+-rw-r--r-- 1 AlexDesk 197609    4619 2026-09-16 20:55:06.494579800 -0400 docs/loop/ultimo_auditor.json
+-rw-r--r-- 1 AlexDesk 197609       0 2026-09-16 20:55:13.916224400 -0400 docs/loop/ultimo_extractor.json
+
+$ git status --short docs/loop/   (los cuatro estan IDENTICOS a HEAD: no los ha reescrito nadie, los ha repuesto el checkout)
+(vacio = sin diferencia contra HEAD)
+
+$ git ls-tree HEAD docs/loop/ultimo_extractor.json   (e69de29 es el blob VACIO de git: ya estaba a cero en HEAD)
+100644 blob e69de29bb2d1d6434b8b29ae775ad8c2e48c5391	docs/loop/ultimo_extractor.json
+e69de29bb2d1d6434b8b29ae775ad8c2e48c5391

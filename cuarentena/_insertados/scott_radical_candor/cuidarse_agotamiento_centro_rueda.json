@@ -1,0 +1,38 @@
+{
+  "id": "cuidarse_agotamiento_centro_rueda",
+  "titulo": "Cuidarte a ti mismo contra el agotamiento, porque estas en el centro de la rueda y es la rueda la que se para",
+  "denominaciones": {
+    "nombre_largo": "El agotamiento: la segunda de las dos presiones que empujan a dejar de aprender, y la reserva de tiempo de pensar que la desactiva",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "burnout"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando el trabajo y la vida personal te desbordan a la vez, que es el momento en que mas cuesta aprender de los resultados y volver a empezar el ciclo.",
+  "entregable_esperado": "Tu mismo cuidado y centrado, con tiempo de pensar reservado en el calendario, y la rueda girando otra vez.",
+  "pasos_accionables": [
+    "Cuenta con que los momentos en los que el trabajo y la vida personal te desbordan son justo los mas dificiles para aprender de tus resultados y volver a empezar el ciclo entero.",
+    "Cuida de ti mismo antes que de nada, porque estas en el centro mismo de la rueda que te mueve hacia adelante como jefe.",
+    "Cuenta con que esto se dice mas facil de lo que se hace, que es lo que el propio texto añade a continuacion.",
+    "Declina la mayor parte de las invitaciones que te llegan, para poder centrarte en la operacion y llegar a casa a cenar con los tuyos, que es lo que hacia Dick Costolo en plena tormenta de prensa.",
+    "Reacciona a los elogios desmedidos con humor a tu costa, como hacia el.",
+    "Y no finjas que no pasa nada cuando si pasa: el texto dice que Dick tampoco lo hacia, y que dio una charla a su empresa sobre la dureza mental que hace falta para mantener la confianza bajo una lluvia de malas noticias.",
+    "Bloquea en tu calendario tiempo de pensar todos los dias. El texto dice que buena parte de esa dureza mental venia de hacer cosas como bloquear dos horas de tiempo de pensar al dia."
+  ],
+  "resumen_teorico": "Sale de fuentes/scott_radical_candor/cap_07.md, lineas 409 a 419, bajo el rotulo Burnout, y es la SEGUNDA de las dos presiones que la linea 401 cuenta y nombra dentro del paso LEARN de la rueda de hacer cosas. Su madre es aprender_resultados_vencer_dos_presiones, que la nombra en su paso 6, y la arista va bajo D.37. LA PIEZA TIENE UN PROBLEMA QUE DECLARO: su doctrina cabe en dos frases (cuidate, estas en el centro de la rueda) y todo lo demas es el retrato de Dick Costolo. Transcribir un retrato en imperativos solo vale cuando cada acto esta nombrado por el texto, y aqui lo estan los cuatro que escribo: declinar invitaciones para centrarse y cenar en casa, el humor a su costa, no fingir que no pasa nada, y las dos horas de tiempo de pensar al dia. LO QUE NO ESCRIBI Y ERA LA TENTACION: ninguna regla general de descanso, ninguna cifra de horas de sueño, y ningun plan de prevencion del agotamiento, porque el libro no pone ninguno. El P7 es el unico que lleva una cifra, y es la del caso, dicha como del caso. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 7 pasos, 7 TRANSCRIPCION, 0 PUENTE. P1, P2 y P3 de la linea 411; P4 y P5 de la 415; P6 y P7 de la 417. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: que se hace cuando el agotamiento ya llego, y a quien se le cuenta.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-12"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "atribuciones": []
+}

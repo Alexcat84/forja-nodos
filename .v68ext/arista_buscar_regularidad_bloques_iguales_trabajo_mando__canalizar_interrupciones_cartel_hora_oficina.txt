@@ -1,0 +1,13 @@
+$ python forja.py arista --madre buscar_regularidad_bloques_iguales_trabajo_mando --hijo canalizar_interrupciones_cartel_hora_oficina --paso 1 --razon <fila 13> --veredicto CONTINUA --cita-veredicto <fila 13>
+DECLARACION DE ARISTA POR LECTURA (D.37)
+  madre: buscar_regularidad_bloques_iguales_trabajo_mando
+  hijo : canalizar_interrupciones_cartel_hora_oficina
+  paso citado de la madre: 1
+    Aplica a tu trabajo de mando el siguiente concepto de produccion: ve hacia la regularidad.
+  señales del par: familia_id 0.0, paso_contra_nodo 0.471, similitud_texto 0.341
+    NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: buscar_regularidad_bloques_iguales_trabajo_mando > canalizar_interrupciones_cartel_hora_oficina
+  razon en bitacora/VEREDICTOS.jsonl
+
+codigo 0

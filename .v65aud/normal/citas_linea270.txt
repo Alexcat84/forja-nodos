@@ -1,0 +1,4 @@
+$ sed -n 69p fuentes/grove_high_output/cap_02.md | grep -o "What else could go wrong with our continuous egg-machine?"
+What else could go wrong with our continuous egg-machine?
+$ sed -n 27p fuentes/grove_high_output/cap_03.md | grep -o "It is not enough to monitor the number of breakfasts each waiter delivers"
+It is not enough to monitor the number of breakfasts each waiter delivers

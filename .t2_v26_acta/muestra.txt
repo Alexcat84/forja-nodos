@@ -1,0 +1,14 @@
+LINEAS DE LA TANDA          : 47
+de ellas SANO               : 44
+pares SANO distintos        : 39
+tamanio de muestra (max(3, 20%), techo 20): 8
+SEMILLA ESCRITA EN EL ACTA  : 20260913
+
+ 1. ajustar_franqueza_oido_oyente  ||  equilibrar_elogio_critica_equipo
+ 2. cuidar_persona_completa_equipo  ||  ajustar_franqueza_oido_oyente
+ 3. cuidar_persona_completa_equipo  ||  gestionar_personas_equipo
+ 4. cuidar_persona_completa_equipo  ||  imaginar_caso_simple_bragueta_abierta
+ 5. cuidar_persona_completa_equipo  ||  usar_lenguaje_no_discriminatorio_entrevista
+ 6. elogiar_trabajo_especifico_contexto  ||  criticar_trabajo_evitar_desanimo
+ 7. empezar_cultura_franqueza_radical  ||  ajustar_franqueza_oido_oyente
+ 8. empezar_cultura_franqueza_radical  ||  desplegar_marco_franqueza_radical

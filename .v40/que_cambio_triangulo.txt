@@ -1,0 +1,33 @@
+  nodo: practicar_triangulo_critica_tres_papeles
+  arbol viejo: a41fc11 (el de la huella eec451c2e48944c6 con la que se emitieron 484 y 485)
+  arbol de hoy: el de trabajo
+
+  campo                    cambia?   que pasa
+  ------------------------------------------------------------------------------------------------
+  titulo                   NO        identico, 139 caracter(es)
+  pasos_accionables        NO        identico, 15 elemento(s)
+  entregable_esperado      NO        identico, 213 caracter(es)
+  condiciones_activacion   NO        identico, 179 caracter(es)
+  dominio                  NO        identico, 15 caracter(es)
+  fuentes                  NO        identico, 1 elemento(s)
+  denominaciones           NO        identico
+  nodos_siguientes         NO        identico, 0 elemento(s)
+  nodos_previos            NO        identico, 1 elemento(s)
+  resumen_teorico          SI        1951 -> 2973 caracteres, prefijo comun de 1951
+
+  los 15 pasos, uno a uno, viejo contra hoy:
+    P1   IDENTICO
+    P2   IDENTICO
+    P3   IDENTICO
+    P4   IDENTICO
+    P5   IDENTICO
+    P6   IDENTICO
+    P7   IDENTICO
+    P8   IDENTICO
+    P9   IDENTICO
+    P10  IDENTICO
+    P11  IDENTICO
+    P12  IDENTICO
+    P13  IDENTICO
+    P14  IDENTICO
+    P15  IDENTICO

@@ -1,0 +1,1 @@
+dictar_ritmo_crecimiento_preguntas_escritas poblacion 479 (437 grafo mas 42 bandejas) vecinos 8

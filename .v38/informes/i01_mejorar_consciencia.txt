@@ -1,0 +1,22 @@
+$ python forja.py insertar cuarentena/scott_radical_candor/mejorar_consciencia_propia_relacional_dos_practicas.json [veredictos y censos]
+ADUANA DE INSERCION, candidato 'mejorar_consciencia_propia_relacional_dos_practicas'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (318 del grafo mas 30 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino desplegar_plan_orden_operaciones_franqueza_radical  [Desplegar en tu equipo el plan de franqueza radical por el orden de operaciones que el texto pone, etapa a etapa y con su parada de evaluacion en medio]
+    levantada por: paso_contra_nodo
+    similitud_texto    0.198 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.601 (umbral 0.60)
+    paso 11 del candidato contra paso 4 de desplegar_plan_orden_operaciones_franqueza_radical
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 319
+  censos escritos: denominaciones, series_y_cabezas
+  veredictos en bitacora/VEREDICTOS.jsonl: 1
+CODIGO DE SALIDA: 0
+  ARCHIVADO EN EL MISMO ACTO (D.31): cuarentena/_insertados/scott_radical_candor/mejorar_consciencia_propia_relacional_dos_practicas.json

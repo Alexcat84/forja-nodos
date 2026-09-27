@@ -1,0 +1,38 @@
+{
+  "id": "rechazar_conducta_toxica_entrevista",
+  "titulo": "Rechazar a quien exhibe conducta toxica en la entrevista",
+  "denominaciones": {
+    "nombre_largo": "Las senales de aviso en una entrevista, cada una con la frase con que suele aparecer",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "reject anyone who exhibits toxic behavior"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Durante cualquier entrevista, y con independencia de lo buenas que sean las respuestas tecnicas.",
+  "entregable_esperado": "El candidato con conducta toxica rechazado, sin discutir su talento.",
+  "pasos_accionables": [
+    "Parte de la regla que el propio libro recuerda aqui: los indeseables son lo unico que no deberias tolerar en tu equipo.",
+    "Manten la vigilancia sobre las senales de aviso en las entrevistas.",
+    "Vigila que hable mal de empleadores anteriores, con frases como mi ultimo jefe era terrible.",
+    "Vigila que culpe a otros de los fracasos con los que estuvo asociado, con frases como la razon de que mi ultimo proyecto no saliera bien fue la politica interna.",
+    "Vigila que insulte a otros grupos de personas, con frases como el equipo de ventas eran unos payasos.",
+    "Vigila que pregunte que puede hacer la empresa por el en vez de al reves, con frases como esto me parece un paso adelante para mi carrera.",
+    "Vigila que aparezca con mucha arrogancia o poca conciencia de si mismo, con frases como me atrajo este puesto porque parece que necesitais a alguien de verdad veterano.",
+    "Rechaza a quien exhiba esa conducta."
+  ],
+  "resumen_teorico": "Es la sexta tactica de apostar con cabeza y la mas corta del capitulo en texto original, y aun asi es transcripcion entera: el libro no dice desconfia de los arrogantes, sino que da para cada senal la frase con la que suele salir de la boca del candidato. Ese es el inventario propio de D.27, y es de objetos observables y no de metas. El paso 1 esta porque el libro empieza remitiendo a una regla suya anterior sobre no tolerar indeseables, y esa remision es lo que convierte la lista de senales en un mandato de rechazo. Lo que el libro NO dice, y por eso no esta escrito aqui, es cuantas senales hacen falta, ni si una sola basta, ni como se documenta ese rechazo.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}

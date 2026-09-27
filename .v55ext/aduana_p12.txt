@@ -1,0 +1,48 @@
+INICIO 2026-09-20T14:12:41-04:00
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 423   (346 del grafo mas 77 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 0
+  BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+  vecinos levantados en total      : 5
+  por candidato bloqueado          : menor 5, mediana 5, mayor 5
+  que señal levanta cada vecindad  : similitud_texto 5
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] determinar_estado_presente_capacidades_proyectos_merma   (determinar_estado_presente_capacidades_proyectos_merma.json)
+    vecino definir_entorno_grupo_clientes_proveedores_competidores  [levantada por: similitud_texto]
+      similitud_texto 0.356 | familia_id 0.000 | paso_contra_nodo 0.516
+      paso 1 del candidato contra paso 3 de definir_entorno_grupo_clientes_proveedores_competidores
+    vecino examinar_entorno_expectativas_tecnologia_proveedores_grupos  [levantada por: similitud_texto]
+      similitud_texto 0.390 | familia_id 0.000 | paso_contra_nodo 0.484
+      paso 1 del candidato contra paso 1 de examinar_entorno_expectativas_tecnologia_proveedores_grupos
+    vecino cerrar_brecha_dos_preguntas_estrategia  [levantada por: similitud_texto]
+      similitud_texto 0.366 | familia_id 0.000 | paso_contra_nodo 0.430
+      paso 1 del candidato contra paso 3 de cerrar_brecha_dos_preguntas_estrategia
+    vecino examinar_demanda_entorno_dos_marcos_temporales  [levantada por: similitud_texto]
+      similitud_texto 0.357 | familia_id 0.000 | paso_contra_nodo 0.413
+      paso 5 del candidato contra paso 1 de examinar_demanda_entorno_dos_marcos_temporales
+    vecino fijar_horizonte_ventana_replanificacion  [levantada por: similitud_texto]
+      similitud_texto 0.378 | familia_id 0.000 | paso_contra_nodo 0.404
+      paso 5 del candidato contra paso 3 de fijar_horizonte_ventana_replanificacion
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.
+
+real	3m25.063s
+user	0m0.000s
+sys	0m0.015s
+FIN 2026-09-20T14:16:06-04:00

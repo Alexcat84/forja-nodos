@@ -1,0 +1,9 @@
+rama                          : extraccion-mundo-11
+commit al cierre              : d2f0bba
+nodos en el grafo             : 222
+candidatos en cuarentena lote4: 123
+insertados del lote 4         : 19
+candidatos en cuarentena lote5: 3
+veredictos en bitacora        : 203
+insertados _insertados (todos): 220
+lineas de REPORTE.md          : 30672

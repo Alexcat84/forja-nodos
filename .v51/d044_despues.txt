@@ -1,0 +1,16 @@
+    $ grep -l "PIEZA P34" cuarentena/grove_high_output/*.json   (el ancho, sobre el arbol YA corregido)
+    cuarentena/grove_high_output/decir_no_trabajo_excede_capacidad.json
+    cuarentena/grove_high_output/dimensionar_numero_subordinados_medio_dia_semanal.json
+    cuarentena/grove_high_output/usar_calendario_herramienta_planificacion_produccion.json
+    conteo: 3
+
+    $ grep -l "Sale de la PIEZA P34" cuarentena/grove_high_output/*.json   (el preciso de la vuelta 50, sobre el arbol YA corregido)
+    cuarentena/grove_high_output/decir_no_trabajo_excede_capacidad.json
+    cuarentena/grove_high_output/dimensionar_numero_subordinados_medio_dia_semanal.json
+    cuarentena/grove_high_output/usar_calendario_herramienta_planificacion_produccion.json
+    conteo: 3
+
+    $ python .v51/afirmacion_p34.py   (el metodo nuevo, que lee la DECLARACION de cada ficha y no barre cadenas)
+      decir_no_trabajo_excede_capacidad                        declara: Sale de la PIEZA P34 de 
+      dimensionar_numero_subordinados_medio_dia_semanal        declara: Sale de la PIEZA P38 de 
+      usar_calendario_herramienta_planificacion_produccion     declara: Sale de la PIEZA P34 de 

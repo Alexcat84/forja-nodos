@@ -1,0 +1,96 @@
+========================================================================================
+parar_debate_emocion_agotamiento   [L235-237]  5 pasos
+  TITULO    : Parar un debate cuando la gente esta agotada o demasiado cargada de emocion, y aplazarlo en vez de dejar que decida el cansancio
+  ACTIVACION: Cuando en un debate de tu equipo la gente esta demasiado cansada, quemada o cargada de emocion como para discutir de forma productiva.
+  ENTREGABLE: El debate aplazado hasta que la gente este en mejor disposicion, sin decision tomada por agotamiento y sin la pelea que habria estallado.
+  ROTULO/POR QUE (primeras 2 frases del resumen):
+     Sale de fuentes/scott_radical_candor/cap_07.md, lineas 235 a 237, bajo el rotulo Pause for emotion/exhaustion, y es la tercera de las tecnicas que el libro ofrece dentro del paso DEBATE de la rueda de hacer cosas.
+     Es la pieza mas corta del capitulo y lo digo antes que nadie: cinco pasos de un solo parrafo.
+========================================================================================
+fijar_fecha_cierre_debate_equipo   [L245-257]  11 pasos
+  TITULO    : Fijar por escrito cuando termina el debate, y no arrebatar la decision solo porque el debate se ha vuelto doloroso
+  ACTIVACION: Cuando media sala espera una decision al final de la reunion y la otra media quiere seguir discutiendo en otra, o cuando el debate se ha vuelto tan doloroso que todos te miran a ti para que lo cierres.
+  ENTREGABLE: Cada asunto en debate con su fecha de decidir al lado, las reuniones de debate y las de decision separadas, y la decision en manos de quien la estaba llevando y no arrebatada por el jefe.
+  ROTULO/POR QUE (primeras 2 frases del resumen):
+     Sale de fuentes/scott_radical_candor/cap_07.md, lineas 245 a 257, bajo DOS rotulos del libro, Be clear when the debate will end y Dont grab a decision just because the debate has gotten painful, dentro del paso DEBATE de la rueda de hacer cosas.
+     VA EN UN SOLO NODO Y ES UNA FUSION DECLARADA POR P.19, no un descuido: el segundo rotulo cuenta el caso de la mesa de escritorios que la autora movio un domingo, y su remedio escrito en la linea 257 es EXACTAMENTE el mismo objeto del primer rotulo, la fecha de decidir.
+========================================================================================
+repartir_decision_cercanos_hechos   [L259-289]  11 pasos
+  TITULO    : Repartir las decisiones entre los mas cercanos a los hechos en vez de tomarlas tu por ser el jefe
+  ACTIVACION: Cuando en tu equipo las decisiones las estas tomando tu, o las toma el mas veterano de la sala, y no quien tiene delante los hechos.
+  ENTREGABLE: Un proceso de decision claro en el que deciden los que estan mas cerca de los hechos, con las decisiones apoyadas en hechos y con gente dispuesta a ejecutarlas porque participo en ellas.
+  ROTULO/POR QUE (primeras 2 frases del resumen):
+     Sale de fuentes/scott_radical_candor/cap_07.md, lineas 259 a 289, bajo los rotulos DECIDE y You are not the decider (usually), dentro del paso DECIDE de la rueda de hacer cosas.
+     El P1 viene de la linea 261, que es el rotulo que el libro pone a la seccion entera de decidir y que ninguna otra pieza recoge.
+========================================================================================
+pedir_hechos_decision_evitar_recomendaciones   [L291-293]  5 pasos
+  TITULO    : Pedir hechos y no recomendaciones cuando reunes informacion para una decision
+  ACTIVACION: Cuando estas reuniendo informacion para tomar una decision y te sale solo preguntar a la gente que cree que deberiais hacer.
+  ENTREGABLE: La informacion de la decision reunida en forma de hechos, sin recomendaciones que nadie tenga despues que defender como suyas.
+  ROTULO/POR QUE (primeras 2 frases del resumen):
+     Sale de fuentes/scott_radical_candor/cap_07.md, lineas 291 a 293, bajo el rotulo The decider should get facts, not recommendations, dentro del paso DECIDE de la rueda de hacer cosas.
+     Es una pieza corta, de cinco pasos salidos de un parrafo, y la dejo como nodo propio porque el libro le da rotulo y porque trae lo que un procedimiento necesita: el acto que se evita, el que se hace en su lugar, el motivo escrito, el limite del propio metodo y la razon de aplicarlo aun asi.
+========================================================================================
+persuadir_emocion_oyente_no_propia   [L303-347]  11 pasos
+  TITULO    : Persuadir atendiendo a la emocion del que escucha y no a la tuya, aunque tu conexion con la decision sea fuerte
+  ACTIVACION: Cuando ya hay una decision tomada, quedan personas que no la comparten y son justo las que tienen que ayudar a ejecutarla.
+  ENTREGABLE: La decision aceptada por gente que no participo en tomarla, con sus emociones atendidas por su nombre y no solo la logica explicada.
+  ROTULO/POR QUE (primeras 2 frases del resumen):
+     Sale de fuentes/scott_radical_candor/cap_07.md, lineas 303 a 347, bajo los rotulos PERSUADE, Emotion y The listener emotions, not the speaker, dentro del paso PERSUADE de la rueda de hacer cosas.
+     Los pasos P1 a P3 vienen de la entradilla de la seccion (lineas 309 a 313), que ninguna otra pieza recoge y que es donde el libro explica por que hace falta persuadir despues de haber decidido.
+========================================================================================
+establecer_credibilidad_pericia_humildad   [L349-357]  9 pasos
+  TITULO    : Establecer tu credibilidad demostrando pericia y humildad, y ayudar a que la establezcan los que deciden en tu equipo
+  ACTIVACION: Cuando hay que persuadir a gente de que ejecute una decision y no esta claro que quien la tomo tenga credibilidad a sus ojos, seas tu o sea otro de tu equipo.
+  ENTREGABLE: La credibilidad de quien decide establecida delante de quienes tienen que ejecutar, apoyada en pericia y en un historial, y con la humildad puesta en las palabras.
+  ROTULO/POR QUE (primeras 2 frases del resumen):
+     Sale de fuentes/scott_radical_candor/cap_07.md, lineas 349 a 357 mas la linea 313, bajo los rotulos Credibility y Demonstrate expertise and humility, dentro del paso PERSUADE de la rueda de hacer cosas.
+     CABECERA CORREGIDA EN LA VUELTA 18 (ACTA 17 seccion 4.5): declaraba 349 a 357 y su P1 cita la linea 313, que es la linea de cuerpo del rotulo PERSUADE de la que sale la obligacion de persuadir antes de ejecutar.
+========================================================================================
+compartir_logica_mostrar_razonamiento   [L359-365]  6 pasos
+  TITULO    : Compartir tu logica mostrando el razonamiento entero y no solo la conclusion
+  ACTIVACION: Cuando estas explicando una decision o una idea y la logica te parece tan evidente que casi no merece contarse.
+  ENTREGABLE: El razonamiento entero compartido, no solo su conclusion, de forma que quien lo oiga pueda encontrarle un fallo si lo tiene.
+  ROTULO/POR QUE (primeras 2 frases del resumen):
+     Sale de fuentes/scott_radical_candor/cap_07.md, lineas 359 a 365, bajo los rotulos Logic y Show your work, dentro del paso PERSUADE de la rueda de hacer cosas.
+     Es la tercera y ultima de las piezas de la retorica tal como el libro las reparte.
+========================================================================================
+minimizar_impuesto_colaboracion_equipo   [L367-373]  4 pasos
+  TITULO    : Minimizar el impuesto de colaboracion de tu equipo cargando tu con el, con las tres cosas que equilibran la balanza
+  ACTIVACION: Cuando tus responsabilidades de jefe te estan comiendo el tiempo y a la vez tienes trabajo propio que hacer en tu especialidad, y tu equipo necesita tiempo para ejecutar.
+  ENTREGABLE: El impuesto de colaboracion cargado sobre ti y no sobre tu equipo, y las tres cosas del equilibrio puestas en practica: su tiempo no malgastado, tus manos todavia en el trabajo, y tiempo reservado para ejecutar.
+  ROTULO/POR QUE (primeras 2 frases del resumen):
+     Sale de fuentes/scott_radical_candor/cap_07.md, lineas 367 a 373, bajo los rotulos EXECUTE y Minimize the collaboration tax, y es la cabeza del paso EXECUTE de la rueda de hacer cosas.
+     ES UNA CABEZA DE SERIE D.37 Y ESO TIENE CONSECUENCIA: la linea 373 dice CUANTAS partes tiene Y LAS NOMBRA, con estas palabras, here are the three things I have learned about getting this balance right, seguidas de los tres rotulos.
+========================================================================================
+proteger_tiempo_equipo_jefe   [L375-379]  9 pasos
+  TITULO    : No malgastar el tiempo de tu equipo: quitar de en medio los obstaculos, las reuniones sobrantes y los mandatos de arriba
+  ACTIVACION: Cuando quieres que tu equipo tenga el maximo de tiempo posible para ejecutar y eres tu quien decide en que se les va ese tiempo.
+  ENTREGABLE: El tiempo de tu equipo despejado: obstaculos quitados, reuniones y analisis innecesarios fuera, horarios respetados, debates con un decisor y una fecha, y los mandatos que no valen nada parados antes de llegarles.
+  ROTULO/POR QUE (primeras 2 frases del resumen):
+     Sale de fuentes/scott_radical_candor/cap_07.md, lineas 375 a 379, bajo el rotulo Don not waste your team time, y es la PRIMERA de las tres partes que la linea 373 enumera dentro del paso EXECUTE de la rueda de hacer cosas.
+     Su madre es minimizar_impuesto_colaboracion_equipo, que la nombra en su paso 4, y la arista va bajo D.37 porque el texto dice cuantas partes hay y las nombra.
+========================================================================================
+mantener_manos_trabajo_real_equipo   [L381-383]  8 pasos
+  TITULO    : Mantener las manos en el trabajo real de tu equipo, ejecutando tu tambien y no solo mirando ejecutar a otros
+  ACTIVACION: Cuando el puesto de jefe te esta alejando del trabajo que tu equipo hace de verdad y ya solo miras ejecutar a otros.
+  ENTREGABLE: Trabajo de tu especialidad ejecutado por ti mismo y no solo observado, sin haber abandonado por ello las tareas de jefe.
+  ROTULO/POR QUE (primeras 2 frases del resumen):
+     Sale de fuentes/scott_radical_candor/cap_07.md, lineas 381 a 383, bajo el rotulo Keep the dirt under your fingernails, y es la SEGUNDA de las tres partes que la linea 373 enumera dentro del paso EXECUTE de la rueda de hacer cosas.
+     Su madre es minimizar_impuesto_colaboracion_equipo, que la nombra en su paso 4, y la arista va bajo D.37.
+========================================================================================
+reservar_calendario_tiempo_ejecutar   [L385-387]  4 pasos
+  TITULO    : Reservar en el calendario el tiempo de ejecutar, que es solitario y por eso nunca se apunta
+  ACTIVACION: Cuando las tareas colaborativas se estan comiendo tu calendario o el de tu equipo y no queda hueco para ejecutar el plan que ya se decidio y se acepto.
+  ENTREGABLE: Tiempo de ejecucion bloqueado en el calendario, tuyo y de tu equipo, con hueco real para el plan decidido.
+  ROTULO/POR QUE (primeras 2 frases del resumen):
+     Sale de fuentes/scott_radical_candor/cap_07.md, lineas 385 a 387, bajo el rotulo Block time to execute, y es la TERCERA de las tres partes que la linea 373 enumera dentro del paso EXECUTE de la rueda de hacer cosas.
+     Su madre es minimizar_impuesto_colaboracion_equipo, que la nombra en su paso 4, y la arista va bajo D.37.
+========================================================================================
+cuidarse_agotamiento_centro_rueda   [L409-419]  7 pasos
+  TITULO    : Cuidarte a ti mismo contra el agotamiento, porque estas en el centro de la rueda y es la rueda la que se para
+  ACTIVACION: Cuando el trabajo y la vida personal te desbordan a la vez, que es el momento en que mas cuesta aprender de los resultados y volver a empezar el ciclo.
+  ENTREGABLE: Tu mismo cuidado y centrado, con tiempo de pensar reservado en el calendario, y la rueda girando otra vez.
+  ROTULO/POR QUE (primeras 2 frases del resumen):
+     Sale de fuentes/scott_radical_candor/cap_07.md, lineas 409 a 419, bajo el rotulo Burnout, y es la SEGUNDA de las dos presiones que la linea 401 cuenta y nombra dentro del paso LEARN de la rueda de hacer cosas.
+     Su madre es aprender_resultados_vencer_dos_presiones, que la nombra en su paso 6, y la arista va bajo D.37.

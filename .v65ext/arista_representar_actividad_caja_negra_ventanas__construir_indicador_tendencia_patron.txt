@@ -1,0 +1,13 @@
+$ python forja.py arista --madre representar_actividad_caja_negra_ventanas --hijo construir_indicador_tendencia_patron --paso 8 --razon <fila 10> --veredicto CONTINUA --cita-veredicto <fila 10>
+DECLARACION DE ARISTA POR LECTURA (D.37)
+  madre: representar_actividad_caja_negra_ventanas
+  hijo : construir_indicador_tendencia_patron
+  paso citado de la madre: 8
+    Recorta ventanas en la caja, para poder ver una parte de lo que ocurre dentro.
+  señales del par: familia_id 0.0, paso_contra_nodo 0.452, similitud_texto 0.274
+    NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: representar_actividad_caja_negra_ventanas > construir_indicador_tendencia_patron
+  razon en bitacora/VEREDICTOS.jsonl
+
+codigo 0

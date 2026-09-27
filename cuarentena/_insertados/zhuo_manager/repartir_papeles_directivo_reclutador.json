@@ -1,0 +1,37 @@
+{
+  "id": "repartir_papeles_directivo_reclutador",
+  "titulo": "Repartir con el reclutador lo que trae cada uno en vez de esperar sentado",
+  "denominaciones": {
+    "nombre_largo": "Por que ningun reclutador puede saber como es el candidato ideal de tu equipo, y que pone cada uno en la sociedad",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "hiring is your responsibility"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "En cuanto tengas puestos abiertos, trabajes o no con un equipo de reclutamiento dedicado.",
+  "entregable_esperado": "Una sociedad estrecha con el reclutamiento en la que esta claro que aporta cada parte, o, si no hay reclutador, los dos papeles asumidos por ti.",
+  "pasos_accionables": [
+    "Quitate de la cabeza que, por tener la suerte de trabajar con un equipo de reclutamiento dedicado, puedes recostarte y esperar a que te entreguen candidatos excelentes en la puerta.",
+    "Cuenta con los limites concretos del reclutador, que el libro nombra: ningun reclutador puede saber como es un candidato ideal para tu equipo, y tampoco puede ayudarte a evaluar habilidades especializadas como leer radiografias o escribir codigo.",
+    "Asume que tu eres quien en ultima instancia es dueno del equipo que construyes.",
+    "Forma una sociedad estrecha con el equipo de reclutamiento para identificar, entrevistar y cerrar a las mejores personas, que es lo que hacen los directivos que contratan con exito.",
+    "Cuenta con lo que trae la parte del reclutador: su red, y su conocimiento del proceso de reclutamiento, es decir, como buscar y como presentar el puesto a los candidatos, como guiarlos por las entrevistas, y como negociar ofertas.",
+    "Pon lo que trae tu parte: tu entendimiento del puesto, que necesita y por que es emocionante, y tambien tu tiempo para conectar personalmente con los candidatos.",
+    "Si no trabajas con un reclutador, cuenta con tener que hacer los dos papeles tu mismo."
+  ],
+  "resumen_teorico": "Es la cabeza de las cuatro tacticas de trabajo conjunto con el reclutamiento y tiene procedimiento propio, no solo el nombre de las otras: reparte por escrito que aporta cada lado de la sociedad. Lo que lo hace procedimentable segun D.27 es que el libro pone su propio inventario de lo que trae cada parte, nombrado pieza a pieza, y no un adjetivo de adecuacion. El paso 2 lleva los dos limites porque el libro los pone con ejemplos concretos, leer radiografias y escribir codigo, y no como una generalidad. Lo que el libro NO dice, y por eso no esta escrito aqui, es con que frecuencia se ven directivo y reclutador, ni que se hace cuando el reclutador asignado no cumple su parte.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}

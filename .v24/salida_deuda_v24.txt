@@ -1,0 +1,12 @@
+| tanda | numeros | cuantas | de donde sale la cifra |
+|---|---|---:|---|
+| las 12 `D.29` heredadas hasta la vuelta 21 | 1 a 12 | **12** | CITADA de la vuelta que la publico, no remedida |
+| las 3 `D.37` de `facilitar_despido_tres_cosas` | 13 a 15 | **3** | CITADA de la vuelta que la publico, no remedida |
+| el par de lectura adjudicado | 16 a 16 | **1** | CITADA de la vuelta que la publico, no remedida |
+| las 3 `D.37` de `desplegar_tres_conversaciones_carrera` | 17 a 19 | **3** | CITADA de la vuelta que la publico, no remedida |
+| las 16 de la vuelta 22 | 20 a 35 | **16** | CITADA de la vuelta que la publico, no remedida |
+| las 2 de la correccion 6 de la vuelta 23 | 36 a 37 | **2** | **CONTADA HOY** de las filas de su seccion |
+| las 16 de la vuelta 23 | 38 a 53 | **16** | **CONTADA HOY** de las filas de su seccion |
+| las 4 de la TAREA 3 de hoy | 54 a 57 | **4** | **CONTADA HOY** de las filas de su seccion |
+| las 13 de la serie de `cap_14` mas la 1 que no es de la serie, de hoy | 58 a 71 | **14** | **CONTADA HOY** de las filas de su seccion |
+| **la deuda entera al cerrar la vuelta 24** | **1 a 71** | **71** | **36 contadas hoy mas 35 citadas** |

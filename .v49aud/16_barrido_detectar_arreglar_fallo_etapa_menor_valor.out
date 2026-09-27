@@ -1,0 +1,16 @@
+==============================================================================
+FICHA: detectar_arreglar_fallo_etapa_menor_valor   (6 pasos)
+  poblacion barrida: 390 nodos (grafo + bandejas, filtro canonico)
+  medidos al digito: 389 de 389; descartados: 0
+  umbral de la casa (config/umbrales.json): 0.35
+  reloj del barrido: 140.6 s
+  LOS 8 VECINOS MAS PROXIMOS, LISTA ORDENADA ENTERA:
+    0.3497  [bandeja/grove_high_output] dimensionar_inventario_materia_prima_reposicion
+    0.3287  [grafo                   ] decidir_poner_nota_comunicar_proposito_limites
+    0.3207  [bandeja/grove_high_output] rehacer_flujo_paso_limitante_capacidad
+    0.3076  [bandeja/grove_high_output] construir_flujo_produccion_paso_limitante
+    0.3036  [bandeja/grove_high_output] programar_visita_area_observar_despachar
+    0.3007  [bandeja/marquet_turn_the_ship] ceder_control_reforzar_competencia_claridad
+    0.2953  [bandeja/grove_high_output] equilibrar_capacidad_personal_inventario_plazo
+    0.2889  [bandeja/marquet_turn_the_ship] cambiar_forma_trabajar_conservar_plantilla
+  vecinos por encima del umbral 0.35: 0

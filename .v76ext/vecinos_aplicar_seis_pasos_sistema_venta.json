@@ -1,0 +1,33 @@
+{
+ "id": "aplicar_seis_pasos_sistema_venta",
+ "grafo": 437,
+ "bandejas": 42,
+ "vecinos": [
+  {
+   "id": "medir_sistema_venta_trece_indicadores_benchmark",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.361,
+    "familia_id": 0.222,
+    "paso_contra_nodo": 0.466
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 5 del candidato contra paso 12 de medir_sistema_venta_trece_indicadores_benchmark"
+  },
+  {
+   "id": "distinguir_tres_tipos_sistemas_negocio",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.396,
+    "familia_id": 0.111,
+    "paso_contra_nodo": 0.394
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 2 del candidato contra paso 3 de distinguir_tres_tipos_sistemas_negocio"
+  }
+ ]
+}

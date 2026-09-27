@@ -1,0 +1,24 @@
+LOS DIEZ ROTULOS DE L17 A L35 QUE EL PASO 6 DE LA CABEZA ENUMERA
+cabeza: decidir_quien_comunica_cada_cuanto
+
+| # | rotulo del libro | linea | nodo que lo procedimenta | donde esta | arista cabeza a parte |
+|---:|---|---|---|---|---|
+| 1 | 1:1 Conversations | `L17` | `montar_reuniones_solas_mentalidad_frecuencia` | en el grafo | **CABLEADA** |
+| 2 | Staff Meetings | `L19` | `conducir_reunion_equipo_agenda_tres_bloques` | en el grafo | **CABLEADA** |
+| 3 | Think Time | `L21` | `bloquear_tiempo_pensar_calendario` | en el grafo | **CABLEADA** |
+| 4 | Big Debate Meetings | `L23` | `montar_reunion_gran_debate` | en el grafo | **CABLEADA** |
+| 5 | Big Decision Meetings | `L25` | `montar_reunion_gran_decision` | en el grafo | **CABLEADA** |
+| 6 | All-Hands Meetings | `L27` | `montar_reunion_general_presentaciones_preguntas` | en el grafo | **CABLEADA** |
+| 7 | Meeting-Free Zones | `L29` | `(ninguno)` | **no hay nodo** | **no se declara** |
+| 8 | Kanban Boards | `L31` | `montar_tablero_kanban_medir_actividades` | en bandeja | espera a que entre |
+| 9 | Walk Around | `L33` | `pasear_organizacion_hallar_problemas_pequenios` | en bandeja | espera a que entre |
+| 10 | Be Conscious of Culture | `L35` | `debatir_decidir_asuntos_cultura_evitar_delegar` | en bandeja | espera a que entre |
+
+| | |
+|---|---:|
+| rotulos que el paso 6 enumera | **10** |
+| **de ellos, con nodo dentro del grafo hoy** | **6** |
+| **de ellos, con la arista cabeza a parte cableada** | **6** |
+| de ellos, con su nodo todavia en bandeja | **3** |
+| de ellos, sin nodo ninguno | **1** |
+| hijos que la cabeza declara en `nodos_siguientes` | **6** |

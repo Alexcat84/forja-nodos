@@ -1,0 +1,4 @@
+filas de bitacora presentadas como salida : 29
+las que NO viven literales en .v29/       : 0
+
+VERDE: toda fila pegada vive literal en su instrumento

@@ -1,0 +1,6 @@
+$ grep -o "estrellas* de rock" dataset/nodos.jsonl | sort | uniq -c
+      8 estrella de rock
+      3 estrellas de rock
+$ grep -o "superestrellas*" dataset/nodos.jsonl | sort | uniq -c
+      6 superestrella
+      6 superestrellas

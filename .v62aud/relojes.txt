@@ -1,0 +1,16 @@
+4189:[2026-09-20 13:06:30] extractor listo (USD 20.691080999999993), 3503s, intento 1 de 7
+4377:[2026-09-20 13:54:37] auditor listo (USD 14.0510425), 1844s, intento 1 de 7
+4389:[2026-09-20 15:46:42] extractor listo (USD 24.89432249999999), 6724s, intento 1 de 7
+4580:[2026-09-20 16:56:24] auditor listo (USD 12.5831655), 1549s, intento 1 de 7
+4598:[2026-09-20 17:55:07] extractor listo (USD 8.213177100000001), 2310s, intento 1 de 7
+4601:[2026-09-20 18:48:34] auditor listo (USD 12.768534499999998), 3207s, intento 1 de 7
+4613:[2026-09-20 20:45:02] extractor listo (USD 25.415322899999982), 6987s, intento 1 de 7
+4616:[2026-09-20 21:14:11] auditor listo (USD 18.131019499999994), 1747s, intento 1 de 7
+4628:[2026-09-20 22:57:56] extractor listo (USD 20.9098491), 6224s, intento 1 de 7
+4631:[2026-09-21 00:01:52] auditor listo (USD 11.640962499999997), 3835s, intento 1 de 7
+4643:[2026-09-21 02:33:27] extractor listo (USD 13.947112200000005), 9094s, intento 1 de 7
+4646:[2026-09-21 03:11:26] auditor listo (USD 35.125670000000014), 2279s, intento 1 de 7
+4658:[2026-09-21 03:22:04] extractor: TURNO MUDO, el turno corrio 637s y cobro "2.9380241999999996" pero docs/loop/REPORTE.md quedo identico, intento 1 de 7
+4660:[2026-09-21 04:13:56] extractor listo (USD 8.081390399999998), 1311s, intento 2 de 7
+4663:[2026-09-21 04:47:00] auditor listo (USD 16.353566), 1984s, intento 1 de 7
+4675:[2026-09-21 05:12:22] extractor listo (USD 2.6581661999999997), 1521s, intento 1 de 7

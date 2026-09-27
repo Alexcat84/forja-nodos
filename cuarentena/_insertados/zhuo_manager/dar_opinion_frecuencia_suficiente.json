@@ -1,0 +1,48 @@
+{
+  "id": "dar_opinion_frecuencia_suficiente",
+  "titulo": "Dar opinion con la frecuencia suficiente, y no solo de la tarea",
+  "denominaciones": {
+    "nombre_largo": "La primera de las tres preguntas: la peticion mas comun de las personas a cargo es mas opinion, y la segunda mas comun es que no sea solo de la tarea",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "am I giving feedback often enough"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando quieras saber si estas dando opinion lo bastante a menudo, y en particular si notas que tu frecuencia es baja.",
+  "entregable_esperado": "Opinion dada cada vez que ves a alguien de tu equipo en accion, con al menos la mitad positiva, y una reunion individual al mes dedicada a la conducta y a las metas de carrera si tu frecuencia era baja.",
+  "escala_minima": "Una persona a cargo y una sola cosa que le veas hacer.",
+  "pasos_accionables": [
+    "Parte de la peticion mas comun que las personas a cargo hacen de sus jefes, segun las miles de revisiones que la autora dice haber leido: a la pregunta de como podria tu jefe apoyarte mejor, la respuesta mas repetida es simplemente dame mas opinion.",
+    "Asi que antes de meterte en el detalle fino del como, el primer paso es sencillamente dar opinion mas a menudo y recordarte que probablemente no lo estas haciendo lo suficiente.",
+    "Cada vez que veas a alguien de tu equipo en accion, entregando un proyecto, tratando con un cliente, negociando una venta o tomando la palabra en una reunion, mira si hay algo util que puedas decirle.",
+    "Apunta a que al menos la mitad de lo que le digas sea positivo, para que sepa que esta haciendo bien: hiciste una observacion especialmente aguda, o mostraste mucha empatia en ese trato.",
+    "Si oyes algo positivo de un colega sobre esa persona, pasaselo.",
+    "Y si tienes una sugerencia de mejora, aunque sea pequenia, diselo tambien: dijiste muchas cosas en esa reunion, lo que hizo dificil que otros metieran baza.",
+    "Al mismo tiempo, vigila no dar solo opinion especifica de la tarea, porque la segunda peticion mas comun de las personas a cargo es que les des mas opinion relacionada con sus habilidades y con su trayectoria de carrera.",
+    "Toma el caso que el libro pone: un director creativo de primerisima linea, capaz de mirar un boceto de reojo y decirte si el espacio entre los iconos estaba dos pixeles desviado, cuyo equipo siempre supo lo que opinaba de su trabajo, y que aun asi recibia en sus revisiones hacia arriba comentarios como quiero entender la opinion de mi jefe sobre como estoy progresando, o quiero tener conversaciones sobre mis metas de carrera y sobre como alcanzarlas.",
+    "Y si encuentras que tu frecuencia de opinion es baja, usa la tactica que la autora dice haber encontrado util: dedicar una reunion individual al mes solo a hablar de opinion sobre la conducta y de metas de carrera."
+  ],
+  "atribuciones": [
+    {
+      "cifra": "de miles de revisiones escritas por personas a cargo sobre sus jefes, la respuesta mas comun a como podria tu jefe apoyarte mejor es dame mas opinion, y la segunda mas comun es dame mas opinion sobre mis habilidades y mi trayectoria de carrera",
+      "autor": "Julie Zhuo",
+      "fuente": "zhuo_manager",
+      "fecha_corte": "2019, anio de edicion del libro. El texto dice miles de revisiones y no da ni periodo ni empresa"
+    }
+  ],
+  "resumen_teorico": "Es la primera de las tres preguntas con las que el libro manda comprobar si la opinion que das sirve de algo, y la unica de las tres que se contesta con un numero y no con un juicio. Dos cifras propias del libro la sostienen, las dos sacadas de revisiones hacia arriba que la autora dice haber leido a miles: cual es la peticion mas comun y cual la segunda. El inventario propio esta en los cuatro momentos nombrados uno a uno en los que hay que mirar si tienes algo util que decir, en el umbral de al menos la mitad positiva, que es la unica cifra operativa de la seccion, y en la tactica concreta de la reunion mensual. Lo que el libro NO dice, y por eso no esta escrito aqui, es cuantas veces por semana es suficiente en terminos absolutos."
+}

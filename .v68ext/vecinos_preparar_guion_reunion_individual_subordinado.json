@@ -1,0 +1,125 @@
+{
+ "id": "preparar_guion_reunion_individual_subordinado",
+ "grafo": 390,
+ "bandejas": 89,
+ "vecinos": [
+  {
+   "id": "fijar_duracion_lugar_reunion_individual",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.603,
+    "familia_id": 0.25,
+    "paso_contra_nodo": 0.527
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 5 de fijar_duracion_lugar_reunion_individual"
+  },
+  {
+   "id": "fijar_frecuencia_reunion_individual_madurez_tarea",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.601,
+    "familia_id": 0.222,
+    "paso_contra_nodo": 0.46
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 6 de fijar_frecuencia_reunion_individual_madurez_tarea"
+  },
+  {
+   "id": "cubrir_indicadores_problemas_reunion_individual",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.54,
+    "familia_id": 0.25,
+    "paso_contra_nodo": 0.459
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 2 de cubrir_indicadores_problemas_reunion_individual"
+  },
+  {
+   "id": "infundir_regularidad_reunion_proceso",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.485,
+    "familia_id": 0.125,
+    "paso_contra_nodo": 0.427
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 2 del candidato contra paso 8 de infundir_regularidad_reunion_proceso"
+  },
+  {
+   "id": "facilitar_expresion_subordinado_pregunta_mas",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.388,
+    "familia_id": 0.111,
+    "paso_contra_nodo": 0.48
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 1 de facilitar_expresion_subordinado_pregunta_mas"
+  },
+  {
+   "id": "tomar_notas_copia_guion_reunion_individual",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.402,
+    "familia_id": 0.375,
+    "paso_contra_nodo": 0.46
+   },
+   "levantada_por": [
+    "similitud_texto",
+    "familia_id"
+   ],
+   "detalle_paso": "paso 4 del candidato contra paso 5 de tomar_notas_copia_guion_reunion_individual"
+  },
+  {
+   "id": "usar_tres_clases_reunion_proceso",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.422,
+    "familia_id": 0.111,
+    "paso_contra_nodo": 0.45
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 2 del candidato contra paso 1 de usar_tres_clases_reunion_proceso"
+  },
+  {
+   "id": "alentar_asuntos_corazon_vigilar_final_reunion",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.379,
+    "familia_id": 0.1,
+    "paso_contra_nodo": 0.433
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 1 de alentar_asuntos_corazon_vigilar_final_reunion"
+  },
+  {
+   "id": "acumular_asuntos_importantes_fichero_espera",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.383,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.417
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 1 de acumular_asuntos_importantes_fichero_espera"
+  }
+ ]
+}

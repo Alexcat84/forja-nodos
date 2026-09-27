@@ -1,0 +1,34 @@
+fila 20, documentar_trabajo_manual_operaciones, lineas --veredicto: 2
+  --veredicto dar_valor_constante_cuatro_publicos|SANO|El mismo par que dar_valor lee desde su lado: hermanos, las reglas 4 y 1 de la serie de fingir_prototipo_cinco_mil_replicas (L51, L45). La similitud de 0,430, por encima de 0,4, se lee primero y no es gemelo: uno documenta el trabajo y el otro da valor.
+  --veredicto unificar_color_forma_vestuario_modelo|SANO|Hermanos: las reglas 4 y 6 de la misma serie (L51, L55); uno documenta el trabajo en el Manual de Operaciones, el otro unifica color y forma. Ninguno usa el producto del otro.
+inicio 2026-09-26 12:05:59
+======================================================================
+ADUANA DE INSERCION, candidato 'documentar_trabajo_manual_operaciones'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (456 del grafo mas 23 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 2. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino dar_valor_constante_cuatro_publicos  [Dar valor constante y por encima de lo esperado a los cuatro publicos del modelo, en las formas que el libro nombra]
+    levantada por: similitud_texto
+    similitud_texto    0.430 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.430 (umbral 0.60)
+    paso 1 del candidato contra paso 1 de dar_valor_constante_cuatro_publicos
+
+  vecino unificar_color_forma_vestuario_modelo  [Unificar el codigo de color, forma y vestuario del modelo, y llevarlo a los sitios que el libro enumera]
+    levantada por: similitud_texto
+    similitud_texto    0.366 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.425 (umbral 0.60)
+    paso 1 del candidato contra paso 2 de unificar_color_forma_vestuario_modelo
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 457
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 2
+
+======================================================================
+fin 2026-09-26 12:13:11 | codigo de salida 0 | 431.3 s

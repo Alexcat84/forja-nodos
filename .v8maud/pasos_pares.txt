@@ -1,0 +1,53 @@
+===== acoger_inspectores_externos_fuente_aprendizaje
+  COND: Cuando una organizacion externa (un inspector, un auditor, un regulador) va a revisar tu equipo o tu unidad, sea en una critica puntual o en una inspeccion completa.
+  ENTREG: La visita del inspector usada activamente para difundir ideas propias, aprender de otras unidades y documentar problemas, con un trato distinto segun si el area inspeccionada es una fortaleza o una debilidad.
+  p1: Usa a los inspectores no solo para las criticas puntuales de un problema, sino tambien en inspecciones completas: aprovechalos para difundir tus ideas en toda la organizacion, para aprender de otras unidades, y para documentar los problemas y mejorar la tuya.
+  p2: En las areas donde tu equipo hace algo excepcionalmente innovador o experto, trata a los inspectores como aliados con quienes compartir esas buenas practicas.
+  p3: En las areas donde tu equipo hace las cosas mal y necesita ayuda, trata a los inspectores como fuente de informacion y de soluciones.
+===== tomar_accion_deliberada_pausar_vocalizar_gesticular
+  COND: Cuando una persona esta por ejecutar cualquier accion en la interfaz entre el operador y el equipo o el proceso, incluyendo el momento de firmar un documento, autorizar una accion o introducir una pulsacion de teclado en un negocio de servicios.
+  ENTREG: La accion ejecutada solo despues de la pausa, el anuncio verbal y el gesto que la preceden, sin importar si alguien mas esta observando.
+  p1: Antes de cualquier accion, haz una pausa, di en voz alta lo que estas a punto de hacer y senalalo con un gesto; solo despues de esa pausa deliberada ejecuta la accion.
+  p2: Recuerda que la accion deliberada no se hace para quedar bien ante un observador o un inspector: se hace igual si nadie te esta mirando, porque su objetivo es que tu mismo evites el error, no dar una actuacion.
+  p3: Si tu negocio no tiene una interfaz fisica con la naturaleza, por ser de servicios o intelectual, aplica la accion deliberada en el momento de firmar un documento, autorizar una accion o introducir una pulsacion de teclado.
+===== resistir_dar_solucion_clasificar_decision_urgencia
+  COND: Cuando el equipo enfrenta una decision y tu, como responsable, sientes el impulso de darles directamente la solucion en vez de dejar que la piensen.
+  ENTREG: La decision tomada por el equipo o con su participacion, segun el grado de urgencia, en vez de una orden directa del responsable.
+  p1: Resiste el impulso de dar tu la solucion: date tiempo, aunque sean solo unos minutos o segundos, para que el equipo entero reaccione y piense antes de decidir.
+  p2: Anticipa que decisiones se acercan y avisa a tu equipo con antelacion de que hara falta tomar una, en vez de esperar a que surja de golpe.
+  p3: Si la decision es urgente, tomala tu mismo y despues haz que el equipo la someta a critica y la evalue.
+  p4: Si la decision se puede tomar en un plazo razonablemente proximo, pide la opinion del equipo, aunque sea breve, y despues decide.
+  p5: Si la decision se puede retrasar, obliga al equipo a dar sus aportes sin forzar el consenso: no elimines las diferencias ni los votos disidentes, valora la disidencia.
+===== observar_reunion_rutinaria_senales_plantilla
+  COND: Cuando entras nuevo en una organizacion y tienes delante una de sus reuniones de repaso rutinarias, de las que ya existen y no convocas tu.
+  ENTREG: Tu lectura de la reunion por sus senales de gente, senal por senal, y el tamano de problema que esas senales pequenas indican segun la regla que el propio texto escribe.
+  p1: Asiste a una reunion rutinaria de repaso de la organizacion. La del texto es una reunion de jefes de departamento, un repaso rutinario de asuntos de mantenimiento.
+  p2: No atiendas al asunto tecnico: observa a la gente de la sala. El texto lo escribe como eleccion deliberada, y dice incluso que probablemente deberia haber atendido a lo tecnico porque ese sistema de misiles no estaba en su barco anterior y no lo habia mirado en su instruccion.
+  p3: Mira quien llega tarde y como llega. En el texto los asistentes iban entrando tarde.
+  p4: Mira si el jefe se queda fuera hasta que estan todos reunidos y entra despues, invitado. Es lo que el texto describe.
+  p5: Mira si la reunion empieza tarde.
+  p6: Mira a quien esta esperando cada uno. En esa reunion, dice el texto, todos estaban esperando a algun otro.
+  p7: Mira como esta el que expone. El texto describe al suyo serio y directo, pero frustrado y a la defensiva ante todas las preguntas que tenia que contestar.
+  p8: Mira como estan los demas. Los otros jefes de departamento y los suboficiales estaban aburridos.
+  p9: Lee la falta de puntualidad con la regla que el texto escribe: puede parecer una cosa pequena, pero a bordo de un submarino nuclear las cosas pequenas como la falta de puntualidad son indicativas de problemas mucho, mucho mayores.
+===== recorrer_organizacion_escuchar_plantilla
+  COND: Cuando vas a tomar el mando de una organizacion que no conoces y el procedimiento de la casa te manda dedicar las primeras semanas a revisar sus expedientes.
+  ENTREG: Tu propia lectura de la organizacion, oida de su gente y vista en sus espacios en vez de leida en sus registros, con el estado real del material comun medido en el propio recorrido.
+  p1: Pregunta primero por ti mismo cuando fue la ultima vez que caminaste tu organizacion para oir lo bueno, lo malo y lo feo de la gestion de arriba abajo. El texto abre con esa pregunta dirigida al lector y llama a caminar y escuchar su primer paso al preparar el mando.
+  p2: Deja de lado la revision de expedientes que el procedimiento manda. El texto enumera la lista que le tocaba repasar en dos semanas: registros de formacion, de escuela, administrativos, de premios, de ascensos, los de operacion y mantenimiento de la planta del reactor, el sistema de armas, los torpedos y misiles, calendarios, ejercicios y material clasificado; y dice que la ignoro.
+  p3: Gasta ese tiempo caminando la instalacion y hablando con la gente.
+  p4: Monta ademas una serie de recorridos en los que cada jefe o cada oficial te ensene sus propios espacios.
+  p5: Pideles que traigan una linterna para poder hacer esas inspecciones como se deben hacer.
+  p6: Lee el estado de esas linternas como dato y no como examen. El texto dice que no pretendia ser una prueba, y que estaban lamentables: rotas, con las pilas gastadas y las bombillas mortecinas, de forma que no se veia nada.
+  p7: Consiguete una que funcione y llevala encima a todas partes. El texto registra lo que vino despues sin pedirlo: pronto otros empezaron a llevar linternas que tambien funcionaban.
+===== reforzar_principios_guia_lenguaje_prueba_conocimiento
+  COND: Cuando tu organizacion ya tiene principios guia escritos y quieres que dejen de ser un cartel en la pared y pasen a formar parte del tejido de la organizacion, con sus decisiones diarias.
+  ENTREG: Los principios guia usados como vocabulario activo en los reconocimientos escritos, mas una comprobacion honesta de si el resto de la organizacion realmente sabe cuales son.
+  p1: Cuando escribas premios o evaluaciones, procura describir el comportamiento en el lenguaje de tus principios guia, por ejemplo diciendo que un empleado mostro tal o cual principio al hacer algo.
+  p2: Pon a prueba si tus principios guia son reales de verdad: sal y pregunta a las tres primeras personas que veas en tu organizacion cuales son.
+===== declarar_intencion_reemplazar_peticion_permiso
+  COND: Cuando vas a proponer una accion a quien tiene la autoridad de aprobarla, en vez de pedirle permiso o pedirle que decida por ti.
+  ENTREG: La propuesta de accion formulada como una intencion declarada, y la aprobacion simple de quien la recibe.
+  p1: Evita las frases que piden permiso o que otro decida por ti: solicito permiso para, me gustaria, que deberia hacer sobre, crees que deberiamos, podriamos.
+  p2: En su lugar, declara tu intencion con frases activas: tengo la intencion de, planeo, hare, haremos.
+  p3: Quien recibe la intencion declarada responde con una aprobacion simple en vez de dar una orden, y deja que cada quien ejecute su propio plan.

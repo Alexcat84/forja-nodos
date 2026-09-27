@@ -1,0 +1,28 @@
+############ dar_guia_util_cuatro_recordatorios
+ADUANA DE INSERCION, candidato 'dar_guia_util_cuatro_recordatorios'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 352   (286 del grafo mas 66 que esperan en bandejas)
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 287
+  censos escritos: denominaciones
+############ OK dar_guia_util_cuatro_recordatorios
+############ dar_guia_acto_seis_consejos
+ADUANA DE INSERCION, candidato 'dar_guia_acto_seis_consejos'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 353   (287 del grafo mas 66 que esperan en bandejas)
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 288
+  censos escritos: denominaciones
+############ OK dar_guia_acto_seis_consejos
+############ elegir_medio_dar_guia_jerarquia_modos
+ADUANA DE INSERCION, candidato 'elegir_medio_dar_guia_jerarquia_modos'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 354   (288 del grafo mas 66 que esperan en bandejas)
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 289
+  censos escritos: denominaciones
+############ OK elegir_medio_dar_guia_jerarquia_modos
+exit=0

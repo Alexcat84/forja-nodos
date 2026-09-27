@@ -1,0 +1,12 @@
+$ python forja.py arista --madre desplegar_plan_orden_operaciones_franqueza_radical --hijo contar_cuatro_historias_propias_ver_hueco_intencion --paso 3 --razon ...
+DECLARACION DE ARISTA POR LECTURA (D.37)
+  madre: desplegar_plan_orden_operaciones_franqueza_radical
+  hijo : contar_cuatro_historias_propias_ver_hueco_intencion
+  paso citado de la madre: 3
+    Y si te atascas en alguna parte del plan, ve al epilogo: el texto dice que ahi hay consejo mas detallado sobre compartir tus historias, pedir critica,
+  señales del par: familia_id 0.0, paso_contra_nodo 0.443, similitud_texto 0.227
+    NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: desplegar_plan_orden_operaciones_franqueza_radical > contar_cuatro_historias_propias_ver_hueco_intencion
+  razon en bitacora/VEREDICTOS.jsonl
+CODIGO DE SALIDA: 0

@@ -1,0 +1,38 @@
+$ python forja.py informe cuarentena/scott_radical_candor/contar_historias_propias_explicar_franqueza_radical.json
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 348   (316 del grafo mas 32 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 0
+  BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+  vecinos levantados en total      : 3
+  por candidato bloqueado          : menor 3, mediana 3, mayor 3
+  que señal levanta cada vecindad  : familia_id 1, similitud_texto 2
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] contar_historias_propias_explicar_franqueza_radical   (contar_historias_propias_explicar_franqueza_radical.json)
+    vecino escuchar_entender_critica_dominar_defensa  [levantada por: similitud_texto]
+      similitud_texto 0.380 | familia_id 0.000 | paso_contra_nodo 0.560
+      paso 3 del candidato contra paso 4 de escuchar_entender_critica_dominar_defensa
+    vecino contar_cuatro_historias_propias_ver_hueco_intencion  [levantada por: familia_id]
+      similitud_texto 0.303 | familia_id 0.300 | paso_contra_nodo 0.513
+      paso 8 del candidato contra paso 3 de contar_cuatro_historias_propias_ver_hueco_intencion
+    vecino abrazar_incomodidad_silencio_contar_seis  [levantada por: similitud_texto]
+      similitud_texto 0.380 | familia_id 0.100 | paso_contra_nodo 0.484
+      paso 3 del candidato contra paso 5 de abrazar_incomodidad_silencio_contar_seis
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.
+CODIGO DE SALIDA: 0

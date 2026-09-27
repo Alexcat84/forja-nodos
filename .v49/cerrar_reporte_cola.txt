@@ -1,0 +1,19 @@
+    $ python scripts/cerrar_reporte.py     (la cola, sin las 72 lineas de rancio)
+    [cierre] tallado del reporte (D.41)
+    [cierre] censo de rutas (D.42)
+    [cierre] tabla de cierre de tareas (D.52)
+    [cierre] gate de integridad
+    [cierre] barrido de guiones
+    [cierre] prueba de aceptacion
+    [cierre] vigencia de los veredictos (D.15): COLA DE TRABAJO, no guarda
+    
+    LA VIGENCIA TIENE COLA, Y ESO NO PONE EL CIERRE EN ROJO (D.15).
+    Un rancio no se cita como vigente: se relee con el texto de hoy,
+    o se declara por que sigue valiendo. Las dos cosas las hace una
+    persona, y por eso esto no pone nada en rojo.
+    
+    CIERRE VERDE: las cuatro guardas que muerden, el tallado y el censo. La vigencia corrio y publico su cuenta arriba: es cola, no guarda (D.15).
+    $ python scripts/cerrar_reporte.py | grep -c RANCIO
+    72
+    $ grep -c "reunir_informacion_gerencial_vias_variadas\|dimensionar_numero_subordinados" en la salida
+    0

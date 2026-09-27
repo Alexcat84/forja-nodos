@@ -1,0 +1,39 @@
+{
+  "id": "decidir_poner_nota_comunicar_proposito_limites",
+  "titulo": "Decidir si pones nota de desempenio pesando las pegas y los beneficios que el texto nombra, y comunicar su proposito y sus limites si la pones",
+  "denominaciones": {
+    "nombre_largo": "El primero de los trece elementos: poner nota o no, con las tres pegas y los cuatro beneficios que el texto pone uno a uno",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "rating or no rating"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando tu equipo de gestion del desempenio tiene que decidir el primero de los elementos del proceso, que es si va a haber nota o no.",
+  "entregable_esperado": "La decision de poner nota o no tomada con las pegas y los beneficios del texto delante, y si la pones, el proposito y los limites de la nota comunicados a la plantilla.",
+  "pasos_accionables": [
+    "Ten delante las pegas que el texto reconoce como reales, y que son la escuela que sostiene que la nota es defectuosa por naturaleza: que la nota revela a menudo mas del que califica que del calificado; que puede desanimar a asumir riesgos, al castigar de mas cuando el riesgo asumido no sale; y que la obsesion con la nota se interpone en las conversaciones de desarrollo.",
+    "Y ten delante los beneficios, que el texto pide mirar igualmente: la nota da transparencia al proceso de decidir primas, ascensos y despidos, porque una persona puede estar recibiendo guia improvisada con regularidad y no entender el impacto en su paga ni en su carrera hasta que ve la nota.",
+    "Cuenta con lo que el texto dice que pasa si la eliminas: se abre la puerta a que se instale la empatia ruinosa, y la nota puede forzar una conversacion dura que al final ayuda al empleado.",
+    "Y cuenta con lo que la nota le hace a la justicia entre jefes: sin nota de desempenio las valoraciones de cada jefe no se pueden correlacionar facilmente entre si, y entonces empleados menos efectivos cuyos jefes dejan pasar las cosas se llevan a veces premios ricos, mientras empleados mas efectivos cuyos jefes son mas estrictos cobran primas menores o ascienden mas despacio.",
+    "Cuenta con que cuando los jefes ponen nota es mucho mas facil ver quien califica facil y quien califica duro, y ajustar.",
+    "Si decides poner nota, comunica claramente cual es su proposito: transmitir con la mayor transparencia posible como fue el desempenio segun la valoracion de su jefe en los ultimos meses, y el impacto que ese desempenio tiene en su retribucion.",
+    "Reconoce en esa misma comunicacion los limites de la nota.",
+    "Y asegurate de que la gente la ve como una herramienta de comunicacion y no como un juicio absoluto."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_14.md, unidad Bonus Chapter, titulo textual Bonus Chapter: A Radically Candid Performance Review. Sale de las lineas 65 a 71, que son la PIEZA P3 de la frontera de esta vuelta, 287 palabras, y es el elemento numero 1 de los trece que la cabeza recorrer_trece_elementos_proceso_evaluacion_formal nombra. POR QUE ES PROCEDIMIENTO Y NO POSTURA, con D.27 delante, y es el caso dificil del capitulo porque el rotulo es una disyuntiva: el libro pone su propio inventario de OBJETOS que hay que pesar, tres pegas nombradas una a una en la linea 67 y cuatro beneficios nombrados uno a uno en la 69, mas tres actos de comunicacion nombrados en la 71. Escribir los pasos es transcribir ese inventario, no completarlo. NO hay adjetivo de adecuacion en el sitio del criterio. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 8 pasos, 8 TRANSCRIPCION, 0 PUENTE. P1 sale de la linea 67; P2, P3, P4 y P5 de la 69; P6, P7 y P8 de la 71. LO QUE NO ESCRIBO PORQUE EL TEXTO NO LO PONE: el texto NO dice como se pesa una pega contra un beneficio, ni da un criterio para decidir, ni dice quien decide. Un paso que cerrara ese bucle seria un PUENTE de la especie responsable, y por eso el entregable dice que la decision se toma con las dos listas delante y no dice cual gana. TAMPOCO ESCRIBO PERIODO NI DESTINATARIO: la linea 71 dice comunicar y no dice a quien ni cuando, asi que el paso dice comunica y no dice en que reunion. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: que empresas deberian no poner nota, que se hace cuando el equipo se divide, ni como se mide si la gente ha entendido los limites de la nota.",
+  "atribuciones": [],
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-13"
+    }
+  ]
+}

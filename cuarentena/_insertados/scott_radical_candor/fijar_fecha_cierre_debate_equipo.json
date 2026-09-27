@@ -1,0 +1,46 @@
+{
+  "id": "fijar_fecha_cierre_debate_equipo",
+  "titulo": "Fijar por escrito cuando termina el debate, y no arrebatar la decision solo porque el debate se ha vuelto doloroso",
+  "denominaciones": {
+    "nombre_largo": "Dejar claro cuando va a acabar el debate: separar la reunion de debate de la de decision, poner una fecha de decidir para cada asunto, y resistir el impulso de cortar por lo sano",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "be clear when the debate will end"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "decide by date"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando media sala espera una decision al final de la reunion y la otra media quiere seguir discutiendo en otra, o cuando el debate se ha vuelto tan doloroso que todos te miran a ti para que lo cierres.",
+  "entregable_esperado": "Cada asunto en debate con su fecha de decidir al lado, las reuniones de debate y las de decision separadas, y la decision en manos de quien la estaba llevando y no arrebatada por el jefe.",
+  "pasos_accionables": [
+    "Cuenta con la causa que el texto pone al estres del debate: a menudo media sala espera una decision al final de la reunion y la otra media quiere seguir discutiendo en una reunion posterior.",
+    "Separa las reuniones de debate de las reuniones de decision.",
+    "Pon al lado de cada asunto que se debate una fecha de decidir, para que al menos se sepa cuando acaba el debate y cuando se va a tomar la decision.",
+    "Monta una reunion semanal de gran debate, identificando cada semana cual es el debate mas importante y quien tiene que estar en el.",
+    "Resiste el impulso de cerrar el debate y decidir demasiado pronto cuando se vuelve doloroso, que es justo cuando la gente mira al jefe para que acabe con el sufrimiento.",
+    "Cuenta con lo que el texto dice que es a menudo el trabajo del jefe: mantener el debate vivo en vez de resolverlo con una decision.",
+    "Cuenta con lo que se pierde si lo cortas: el texto dice que son los debates del trabajo los que hacen crecer a cada uno y los que hacen que el equipo funcione mejor en conjunto para llegar a la mejor respuesta.",
+    "Si el debate te parece demasiado agrio, preguntale a quien lo esta llevando como puedes ayudarle.",
+    "Sugiere por ejemplo que las personas cuyas diferencias le cuesta reconciliar lo cierren durante una comida o un paseo.",
+    "O sugiere que cambien de papel y defienda cada uno la posicion del otro.",
+    "No le arrebates la decision para tomarla tu: el texto dice de esa jugada suya que no solo fue prepotente, es que ademas no funciono."
+  ],
+  "resumen_teorico": "Sale de fuentes/scott_radical_candor/cap_07.md, lineas 245 a 257, bajo DOS rotulos del libro, Be clear when the debate will end y Dont grab a decision just because the debate has gotten painful, dentro del paso DEBATE de la rueda de hacer cosas. VA EN UN SOLO NODO Y ES UNA FUSION DECLARADA POR P.19, no un descuido: el segundo rotulo cuenta el caso de la mesa de escritorios que la autora movio un domingo, y su remedio escrito en la linea 257 es EXACTAMENTE el mismo objeto del primer rotulo, la fecha de decidir. P.19 dice que si el material repite el mismo objeto dentro del propio candidato se funde en un solo procedimiento antes de insertar, porque mandarlo a nodo propio fabrica el gemelo de su donante. Aqui se ve a simple vista: el segundo nodo habria tenido la fecha de decidir como paso principal, igual que el primero. El caso de la mesa de escritorios va NOMBRADO DENTRO del ultimo paso, que es la condicion de TRANSCRIPCION DE CASO. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 11 pasos, 11 TRANSCRIPCION, 0 PUENTE. P1, P2 y P3 de la linea 247; P4 de la 249; P5, P6 y P7 de la 253; P8, P9 y P10 de la 257; P11 de la 257 tambien, en su ultima frase. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: cuanto plazo se le da a una fecha de decidir, quien la pone, y que se hace cuando llega la fecha y no hay acuerdo.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-12"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "atribuciones": []
+}

@@ -1,0 +1,21 @@
+# los 20 de cap_05 y cap_06: filas 25 a 44 de .v65aud/normal/cola_grove.txt (id, capitulo, pieza de su UNIDAD DE ORIGEN)
+infundir_regularidad_reunion_proceso cap_05 P6
+usar_tres_clases_reunion_proceso cap_05 P7
+fijar_frecuencia_reunion_individual_madurez_tarea cap_05 P11
+fijar_duracion_lugar_reunion_individual cap_05 P12
+preparar_guion_reunion_individual_subordinado cap_05 P13
+cubrir_indicadores_problemas_reunion_individual cap_05 P14
+facilitar_expresion_subordinado_pregunta_mas cap_05 P15
+tomar_notas_copia_guion_reunion_individual cap_05 P16
+acumular_asuntos_importantes_fichero_espera cap_05 P17
+alentar_asuntos_corazon_vigilar_final_reunion cap_05 P18
+conducir_reunion_individual_telefono_distancia cap_05 P19
+programar_reunion_individual_cadena cap_05 P20
+conducir_etapas_modelo_ideal_decision cap_06 P7
+decidir_nivel_competente_inferior cap_06 P9
+vencer_sindrome_grupo_pares_autoconfianza cap_06 P17
+tomar_mando_reunion_pares_presidente_ausente cap_06 P18
+ejercer_poder_posicion_etapa_decision_clara cap_06 P23
+cortar_discusion_libre_momento_justo cap_06 P24
+zanjar_seis_preguntas_decision_adelantado cap_06 P25
+anunciar_decision_inesperada_reconvocar_reunion cap_06 P31

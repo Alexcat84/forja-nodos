@@ -1,0 +1,9 @@
+candidato                                                    cap     pasos   T   P
+contar_cuatro_historias_propias_ver_hueco_intencion          cap_13     17  17   0
+dar_elogio_disciplina_igual_critica                          cap_13     20  19   1
+medir_critica_respuesta_oyente_brujula                       cap_13     33  33   0
+pasos sin fila: 0 [] | filas sin paso: 0 []
+
+PASOS INVENTADOS, los tres nodos de cap_13 de scott_radical_candor que nombra d084 (COPIA de la vuelta 74 de .v73ext/contar_fidelidad.py)
+cap_13  candidatos 3  pasos 70  T 69  P 1  inventado 1,4 por ciento
+peor capitulo: cap_13, 1 de 70, 1,4 por ciento; por encima del 10: ninguno

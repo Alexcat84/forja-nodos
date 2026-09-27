@@ -1,0 +1,10 @@
+las 20 por sede hoy: {'grafo y _insertados': 20} | suma: 20
+nodos del grafo contra su ficha, cinco campos: {'igual': 20} | suma: 20
+nodos con descuadre entre sus pasos en el grafo y mis filas selladas: 0 []
+cap_07 lo que ENTRO: candidatos 9 | pasos 53 | mis marcas: {'T': 48, 'P': 0, 'D': 5} | suma: 53 | PUENTE 0 de 53 = 0.00 por ciento | con las D adjudicadas T (ACTA 70 70.4): T 53, P 0, suma 53
+cap_10 lo que ENTRO: candidatos 1 | pasos 8 | mis marcas: {'T': 8, 'P': 0, 'D': 0} | suma: 8 | PUENTE 0 de 8 = 0.00 por ciento | con las D adjudicadas T (ACTA 70 70.4): T 8, P 0, suma 8
+cap_11 lo que ENTRO: candidatos 2 | pasos 17 | mis marcas: {'T': 16, 'P': 0, 'D': 1} | suma: 17 | PUENTE 0 de 17 = 0.00 por ciento | con las D adjudicadas T (ACTA 70 70.4): T 17, P 0, suma 17
+cap_12 lo que ENTRO: candidatos 3 | pasos 11 | mis marcas: {'T': 11, 'P': 0, 'D': 0} | suma: 11 | PUENTE 0 de 11 = 0.00 por ciento | con las D adjudicadas T (ACTA 70 70.4): T 11, P 0, suma 11
+cap_13 lo que ENTRO: candidatos 2 | pasos 14 | mis marcas: {'T': 14, 'P': 0, 'D': 0} | suma: 14 | PUENTE 0 de 14 = 0.00 por ciento | con las D adjudicadas T (ACTA 70 70.4): T 14, P 0, suma 14
+cap_14 lo que ENTRO: candidatos 3 | pasos 18 | mis marcas: {'T': 18, 'P': 0, 'D': 0} | suma: 18 | PUENTE 0 de 18 = 0.00 por ciento | con las D adjudicadas T (ACTA 70 70.4): T 18, P 0, suma 18
+los seis: candidatos 20 | pasos 121 | mis marcas: {'T': 115, 'P': 0, 'D': 6} | suma: 121 | PUENTE 0 de 121

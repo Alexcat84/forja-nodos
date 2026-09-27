@@ -1,0 +1,12 @@
+AVISO: cero celdas tecleadas en este instrumento. El arranque del cuerpo NO
+es una constante mia: sale de fuentes/gerber_emyth/cap_17.md, linea 8, que es la siguiente al segundo
+--- de la cabecera yaml (cierres en L1 y L7). El cuerpo va de L8 a L221.
+
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| `R1` | L8 a L18 | **13** | el numero del capitulo, el rotulo YOUR MANAGEMENT STRATEGY y el lema de AT&T (The System is the Solution) | **RESIDUO: rotulo y epigrafe** |
+| `R2` | L19 a L50 | **254** | que es un Management System: no hace falta gente con destrezas sofisticadas, hace falta un Sistema que sea la estrategia de gestion y produzca un resultado de mercadeo, y entre mas automatico el Sistema mas efectivo el Prototipo | **POSTURA** |
+| `R3` | L51 a L221 | **2181** | el caso del hotel Venetia: el match, la menta, el cafe y el periodico que el Sistema entrega siempre igual, y la entrevista con el Manager de veintinueve anios que muestra el Operations Manual con sus checklists codificados por color, cortado a mitad de escena | **CASO** |
+| **el cuerpo entero** | **L8 a L221** | **2448** | **suma de las piezas: 2448** | **residuo sin asignar: 0** |
+
+piezas: 3   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 2448   suma 2448   residuo 0

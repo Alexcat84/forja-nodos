@@ -1,0 +1,23 @@
+===== construir_flujo_produccion_paso_limitante | grafo
+  titulo: Construir el flujo de produccion desde el paso limitante y escalonar los demas hacia atras
+  fuente: ['grove_high_output'] | previos: [] | siguientes: ['rehacer_flujo_paso_limitante_capacidad']
+  cond: Cuando tienes que entregar varias piezas de un mismo trabajo a la vez y a una hora comprometida, y todavia no sabes por cual de ellas hay que empezar.
+  P1. Pon delante los requisitos basicos de la produccion que el libro nombra uno a uno: construir y entregar en respuesta a la demanda del cliente, a una hora de entrega programada, a un nivel de calidad aceptable y al coste mas bajo posible.
+  P2. Descarta la carta blanca antes de planear: entregar lo que el cliente quiera cuando lo quiera pediria capacidad de produccion infinita, o su equivalente, inventarios enormes listos para entregar.
+  P3. Comprometete en su lugar a una hora de entrega, y al coste que te permita vender a un precio competitivo y seguir sacando un beneficio aceptable.
+  P4. Mira tu flujo de produccion, que es por donde el libro dice que se empieza.
+  P5. Fija el paso limitante, que es el paso del flujo que determina la forma del conjunto, y para encontrarlo pregunta cual de los componentes tarda mas en prepararse.
+  P6. Planea el trabajo entero alrededor del tiempo que ese paso necesita, y cuenta con lo que el libro anade de ese paso en el caso del desayuno: no solo es el que mas tarda en prepararse, es tambien el componente mas importante del desayuno para la mayoria de los clientes.
+  P7. Calcula hacia atras desde la hora de entrega el tiempo de preparar cada componente para que esten todos listos a la vez: primero deja tiempo para montarlos juntos, y luego para sacar cada uno de donde se estaba haciendo.
+  P8. Suma ese tiempo al que hace falta para conseguir y cocinar el componente del paso limitante: eso define la duracion del proceso entero, que en la jerga de la produccion es el tiempo total de paso.
+  P9. Escalona los demas pasos tomando como base el tiempo del anterior, que es lo que el libro hace con el huevo como base del pan y el pan como base del cafe, y eso es el desfase.
+  P10. Y cuando el paso que manda no sea el mas largo, usa el criterio entero que el libro escribe: empieza por el mas largo, o el mas dificil, o el mas sensible, o el mas caro, y trabaja hacia atras desde el.
+===== identificar_paso_limitante_jornada_desfases | cuarentena\grove_high_output\identificar_paso_limitante_jornada_desfases.json
+  titulo: Identificar el paso limitante de tu jornada y crear desfases alrededor: determinar lo inamovible y mover lo flexible a su alrededor
+  fuente: ['grove_high_output'] | previos: [] | siguientes: []
+  cond: Cuando quieres ordenar tu propia jornada de mando y las recomendaciones corrientes de gestion del tiempo no te dicen alrededor de que ordenarla.
+  P1. Mejora las recomendaciones corrientes de gestion del tiempo aplicandoles los principios de produccion.
+  P2. Identifica primero tu paso limitante preguntandote cual es el huevo de tu trabajo.
+  P3. Busca para eso las cosas de tu vida de mando que de verdad tienen que ocurrir en un calendario absoluto, aquellas en cuyo tiempo no hay holgura ninguna.
+  P4. Crea desfases y programa el resto de tu trabajo alrededor de ese paso limitante.
+  P5. En resumen: determina que es lo inamovible y manipula a su alrededor las actividades mas flexibles, y trabajaras de manera mas eficiente.

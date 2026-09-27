@@ -1,0 +1,46 @@
+{
+ "id": "gestionar_retencion_subordinado_valioso_renuncia",
+ "grafo": 430,
+ "bandejas": 49,
+ "vecinos": [
+  {
+   "id": "responder_primer_aviso_renuncia_subordinado",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.376,
+    "familia_id": 0.25,
+    "paso_contra_nodo": 0.421
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 4 del candidato contra paso 3 de responder_primer_aviso_renuncia_subordinado"
+  },
+  {
+   "id": "entregar_evaluacion_desempeno_tres_claves",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.403,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.39
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 2 del candidato contra paso 6 de entregar_evaluacion_desempeno_tres_claves"
+  },
+  {
+   "id": "usar_banco_nueve_preguntas_entrevista",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.388,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.398
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 4 del candidato contra paso 2 de usar_banco_nueve_preguntas_entrevista"
+  }
+ ]
+}

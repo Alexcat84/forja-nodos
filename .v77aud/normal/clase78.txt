@@ -1,0 +1,6 @@
+$ python scripts/deuda.py --clase 78
+LIBRE
+  van 4 de 5 desde la ultima de saneamiento (la 74), con 50 deuda(s) esperando
+$ python forja.py tablero --puedo marquet_turn_the_ship
+LINEA 'serial', LIBRO 'marquet_turn_the_ship': SI
+  'marquet_turn_the_ship' esta COSECHADO y sin dueño: su trabajo ya llego a esta rama, asi que se continua desde el capitulo siguiente al ultimo minado (cap_17), citando su frontera. D.50.

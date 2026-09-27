@@ -1,0 +1,23 @@
+ 1 infundir_regularidad_reunion_proceso                 02:58:40 a 03:41:25 | fin 0 .fin 0 | INSERTADO | poblacion 479 = 390 + 89 | hueco con el anterior - s
+ 2 usar_tres_clases_reunion_proceso                     03:42:39 a 04:25:05 | fin 0 .fin 0 | INSERTADO | poblacion 479 = 391 + 88 | hueco con el anterior 74 s
+ 3 fijar_frecuencia_reunion_individual_madurez_tarea    04:26:06 a 05:25:32 | fin 0 .fin 0 | INSERTADO | poblacion 479 = 392 + 87 | hueco con el anterior 61 s
+ 4 fijar_duracion_lugar_reunion_individual              05:26:26 a 06:20:10 | fin 0 .fin 0 | INSERTADO | poblacion 479 = 393 + 86 | hueco con el anterior 54 s
+ 5 preparar_guion_reunion_individual_subordinado        06:21:16 a 07:16:18 | fin 0 .fin 0 | INSERTADO | poblacion 479 = 394 + 85 | hueco con el anterior 66 s
+ 6 cubrir_indicadores_problemas_reunion_individual      07:17:11 a 08:27:47 | fin 0 .fin 0 | INSERTADO | poblacion 479 = 395 + 84 | hueco con el anterior 53 s
+ 7 facilitar_expresion_subordinado_pregunta_mas         08:28:46 a 09:17:47 | fin 0 .fin 0 | INSERTADO | poblacion 479 = 396 + 83 | hueco con el anterior 59 s
+ 8 tomar_notas_copia_guion_reunion_individual           09:18:41 a 09:59:22 | fin 0 .fin 0 | INSERTADO | poblacion 479 = 397 + 82 | hueco con el anterior 54 s
+ 9 acumular_asuntos_importantes_fichero_espera          10:00:20 a 10:33:16 | fin 0 .fin 0 | INSERTADO | poblacion 479 = 398 + 81 | hueco con el anterior 58 s
+10 alentar_asuntos_corazon_vigilar_final_reunion        10:34:28 a 11:29:38 | fin 0 .fin 0 | INSERTADO | poblacion 479 = 399 + 80 | hueco con el anterior 72 s
+11 conducir_reunion_individual_telefono_distancia       11:31:28 a 12:22:13 | fin 0 .fin 0 | INSERTADO | poblacion 479 = 400 + 79 | hueco con el anterior 110 s
+12 programar_reunion_individual_cadena                  12:23:07 a 13:23:00 | fin 0 .fin 0 | INSERTADO | poblacion 479 = 401 + 78 | hueco con el anterior 54 s
+13 conducir_etapas_modelo_ideal_decision                13:24:03 a 13:51:58 | fin 0 .fin 0 | INSERTADO | poblacion 479 = 402 + 77 | hueco con el anterior 63 s
+14 ejercer_poder_posicion_etapa_decision_clara          13:52:55 a 14:11:45 | fin 0 .fin 0 | INSERTADO | poblacion 479 = 403 + 76 | hueco con el anterior 57 s
+15 vencer_sindrome_grupo_pares_autoconfianza            14:12:45 a 14:25:12 | fin 0 .fin 0 | INSERTADO | poblacion 479 = 404 + 75 | hueco con el anterior 60 s
+16 tomar_mando_reunion_pares_presidente_ausente         14:26:05 a 14:40:25 | fin 0 .fin 0 | INSERTADO | poblacion 479 = 405 + 74 | hueco con el anterior 53 s
+17 cortar_discusion_libre_momento_justo                 14:41:20 a 14:57:15 | fin 0 .fin 0 | INSERTADO | poblacion 479 = 406 + 73 | hueco con el anterior 55 s
+18 zanjar_seis_preguntas_decision_adelantado            14:58:14 a 15:16:39 | fin 0 .fin 0 | INSERTADO | poblacion 479 = 407 + 72 | hueco con el anterior 59 s
+19 anunciar_decision_inesperada_reconvocar_reunion      15:17:32 a 15:31:56 | fin 0 .fin 0 | INSERTADO | poblacion 479 = 408 + 71 | hueco con el anterior 53 s
+20 decidir_nivel_competente_inferior                    15:32:52 a 15:51:34 | fin 0 .fin 0 | INSERTADO | poblacion 479 = 409 + 70 | hueco con el anterior 56 s
+insertar: 20 | por estado: {'fin 0, .fin 0, INSERTADO, sin solape': 20} | suma: 20
+orden de entrada igual a las filas 1 a 20 de .v69ext/orden.txt: SI
+mis restricciones que obligan con los dos extremos en la tanda: 4 | violadas por el orden real: 0 []

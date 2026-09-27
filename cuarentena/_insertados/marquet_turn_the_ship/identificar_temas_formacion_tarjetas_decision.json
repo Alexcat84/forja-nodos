@@ -1,0 +1,39 @@
+{
+  "atribuciones": [],
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "fuentes": [
+    {
+      "clave": "marquet_turn_the_ship",
+      "fecha": "2026-09-23"
+    }
+  ],
+  "id": "identificar_temas_formacion_tarjetas_decision",
+  "titulo": "Identificar con un ejercicio de tarjetas los temas de formacion que hacen falta para poder delegar una decision concreta a un nivel de mando",
+  "denominaciones": {
+    "nombre_largo": "El ejercicio de tarjetas de cuatro por seis pulgadas para una reunion de liderazgo, que conecta las decisiones que se quiere delegar a un nivel de mando con los temas tecnicos de formacion que esa delegacion exige",
+    "sigla": "",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "divest control, increase competence"
+      }
+    ]
+  },
+  "condiciones_activacion": "En una reunion de liderazgo o un retiro corporativo (offsite) donde se quiere averiguar que decisiones podrian delegarse a un nivel de mando concreto y que necesita saber tecnicamente ese nivel para tomarlas bien.",
+  "entregable_esperado": "Una lista pertinente de temas de formacion, conectada directamente con las decisiones que se quiere que ese nivel de mando pueda tomar, comunicada al grupo junto con el motivo por el que se les esta formando en eso.",
+  "pasos_accionables": [
+    "Reparte un monton de tarjetas de cuatro por seis pulgadas y marcadores entre el grupo. El texto lo dice asi: Hand out a bunch of four-by-six cards and markers.",
+    "Empieza con esta frase para completar: 'Nuestra empresa seria mas efectiva si la direccion de [nivel] pudiera decidir sobre [tema]'; tu especificas el nivel de direccion y pides al grupo que rellene los temas. El texto lo dice asi: Start with this sentence completion: Our company would be more effective if [level] management could make decisions about [subject]. You specify the level of management but ask the group to fill in the subjects.",
+    "Cuando tengas el conjunto de tarjetas, pegalas en la pared y haz una pausa; deja que la gente se pasee mirando lo que escribieron. El texto lo dice asi: Once you have the set of cards, post them on the wall, and go on break. Let people mill around looking at what they've written.",
+    "Reduce la seleccion a un par de temas. El texto lo dice asi: Down-select to a couple subjects.",
+    "Haz esta pregunta al grupo: tecnicamente, que necesitan saber las personas de este nivel de direccion para tomar esa decision? El texto lo dice asi: Ask this question: What, technically, do the people at this level of management need to know in order to make that decision?",
+    "De nuevo, que respondan en las tarjetas, pegalas en la pared y haz otra pausa. El texto lo dice asi: Again, answer on the cards, post them, and go on break.",
+    "Con eso tendras una lista de temas de formacion pertinente, y podras conectarla directamente con aumentar la capacidad de decision y control de los empleados, en una palabra, con su empoderamiento. El texto lo dice asi: Now you'll have a relevant list of topics for training, and you can directly connect the training topics to increased employee decision making and control, in a word, empowerment.",
+    "Al montar la formacion, no olvides comunicar al grupo este razonamiento, para que sepan por que van a asistir y quieran ir, sabiendo que es su camino hacia mas autoridad de decision. El texto lo dice asi: When you set up the training, don't forget to communicate this thought process to the group. That way they'll know why they are going to attend training and want to attend, knowing it's their path to greater decision-making authority."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/marquet_turn_the_ship/cap_12.md, unidad Cap. 17, titulo textual \"We Learn\". FRONTERA: el nodo sale de la pieza P1 de la frontera de cap_12 publicada en esta vuelta, lineas 125 a 139 (ocho lineas contiguas), dentro del mecanismo \"We Learn (Everywhere, All the Time)\" (rotulo linea 107), bajo el subrotulo propio del libro \"Divest Control, Increase Competence\" (linea 121), introducido en la linea 123 como ejercicio (\"Here's something to try at your next leadership meeting or corporate off-site\"). POR QUE ES PROCEDIMIENTO Y NO CASO, con D.27 delante: las lineas 125 a 139 ponen su propio inventario de ETAPAS del ejercicio, numeradas una a una por el propio libro (repartir tarjetas, completar la frase, pegar y hacer pausa, reducir a un par de temas, preguntar que hace falta saber, volver a pegar y pausar, obtener la lista, comunicar el porque), sin adjetivo de adecuacion en el sitio del criterio. LO QUE SE DEJA FUERA, y por que: la cadena causal de las lineas 113 a 119 (el proposito de la formacion es aumentar la competencia, el resultado es poder delegar mas decision, mas decision produce compromiso) NO se mina, porque es un argumento explicativo sobre por que importa la formacion y no una serie de acciones que el lector ejecute; se sostiene como POSTURA en la frontera (piezas R53 a R56). El credo completo de Santa Fe (lineas 61 a 105) es CASO: contenido especifico de esa tripulacion (defensa de la Constitucion, historia de la fuerza submarina) que no se traduce en pasos propios de este nodo. DISCUTIBLE, MARCADO ANTES DE SABER SI ACIERTO: el nodo tiene ocho pasos, el mas largo de los tres candidatos de esta vuelta; si el auditor lee que pegar-y-pausar (pasos 3 y 6) son la misma etapa repetida dos veces y no dos etapas distintas, esto podria comprimirse a seis pasos sin perder informacion. Lo dejo en ocho porque el libro distingue la primera tanda de tarjetas (los temas a delegar) de la segunda (lo que hace falta saber para decidirlos), y son dos objetos de trabajo distintos aunque el verbo se repita. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 8 pasos, 8 TRANSCRIPCION, 0 PUENTE."
+}

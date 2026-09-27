@@ -1,0 +1,23 @@
+===== diagnosticar_capacidad_motivacion_prueba_vida | cuarentena\grove_high_output\diagnosticar_capacidad_motivacion_prueba_vida.json
+  titulo: Diagnosticar si un subordinado que no rinde no puede o no quiere, con la prueba mental de si podria hacer el trabajo si su vida dependiera de ello
+  fuente: ['grove_high_output']
+  cond: Cuando un subordinado no esta haciendo su trabajo y no sabes si el problema es que no puede o que no quiere.
+  P1. Cuando una persona no este haciendo su trabajo, cuenta con que solo hay dos razones posibles: no puede hacerlo o no quiere hacerlo.
+  P2. Para saber cual de las dos es, aplica esta prueba mental simple: pregunta si esa persona podria hacer el trabajo si su vida dependiera de hacerlo.
+  P3. Si la respuesta es si, es decir, si podria hacerlo con su vida en juego, esa persona no esta motivada.
+  P4. Si la respuesta es no, es decir, si no podria hacerlo ni con su vida en juego, esa persona no es capaz.
+===== diagnosticar_nivel_motivacion_reaccion_aumento_salario | cuarentena\grove_high_output\diagnosticar_nivel_motivacion_reaccion_aumento_salario.json
+  titulo: Ubicar a alguien en la jerarquia motivacional segun si le importa la suma absoluta de un aumento de sueldo o como se compara contra lo que recibieron otros
+  fuente: ['grove_high_output']
+  cond: Cuando quieres saber en que nivel de la jerarquia motivacional esta funcionando un subordinado y tienes delante su reaccion a un aumento de sueldo.
+  P1. Usa esta prueba sencilla para ubicar a alguien en la jerarquia motivacional: observa como reacciona a un aumento de sueldo.
+  P2. Si lo que le importa es la suma absoluta del aumento que recibe, esta trabajando sobre todo dentro de los modos fisiologico o de seguridad.
+  P3. Si en cambio lo que le importa es como su aumento se compara con lo que recibieron otras personas, esta motivado por la estima o el reconocimiento, o por la autorrealizacion, porque en ese caso el dinero es claramente una medida.
+===== fijar_meta_direccion_objetivos_mitad_probabilidad | cuarentena\grove_high_output\fijar_meta_direccion_objetivos_mitad_probabilidad.json
+  titulo: Fijar la meta de un sistema de direccion por objetivos en el punto donde, esforzandose al maximo, la persona solo tiene una probabilidad de exito de la mitad
+  fuente: ['grove_high_output']
+  cond: Cuando tienes que fijar un objetivo dentro de un sistema de direccion por objetivos y el impulso a estirarse y buscar el propio limite no le sale espontaneo a la persona o a la organizacion.
+  P1. Cuando el impulso a estirarse no salga espontaneo, crea tu, como mando, un entorno que lo fomente.
+  P2. Dentro de un sistema de direccion por objetivos, fija los objetivos en un punto lo bastante alto para que, incluso esforzandose al maximo, la persona o la organizacion solo tenga una probabilidad de exito de cincuenta por ciento.
+  P3. Cuenta con que el rendimiento tiende a ser mayor cuando todos se esfuerzan por un nivel de logro mas alla de su alcance inmediato, aunque eso signifique fallar la mitad de las veces.
+  P4. Trata esta manera de fijar objetivos como algo extremadamente importante si lo que buscas es el maximo rendimiento, el tuyo y el de tus subordinados.

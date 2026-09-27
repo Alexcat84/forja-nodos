@@ -1,0 +1,50 @@
+POBLACION: grafo 203 + bandejas 241 = 444
+CANDIDATOS BARRIDOS: 15
+
+### abrazar_incomodidad_arrancar_critica_equipo   [poblacion 443]
+    SIN VECINO
+
+### comprobar_criticas_hombre_mujeres_equipo   [poblacion 443]
+    VECINO exigir_critica_jefe_reticente  |  familia_id=0.125, paso_contra_nodo=0.555, similitud_texto=0.402
+    VECINO correr_semana_arreglo_averias_gestion  |  paso_contra_nodo=0.431, similitud_texto=0.366
+
+### correr_semana_arreglo_averias_gestion   [poblacion 443]
+    VECINO comprobar_criticas_hombre_mujeres_equipo  |  paso_contra_nodo=0.431, similitud_texto=0.356
+
+### dar_guia_acto_cinco_consejos   [poblacion 443]
+    SIN VECINO
+
+### dar_guia_humilde_tres_tecnicas   [poblacion 443]
+    VECINO elogiar_publico_criticar_privado_sus_tres_matices  |  familia_id=0.091, paso_contra_nodo=0.393, similitud_texto=0.35
+
+### dar_guia_util_cuatro_recordatorios   [poblacion 443]
+    SIN VECINO
+
+### elegir_medio_dar_guia_jerarquia_modos   [poblacion 443]
+    SIN VECINO
+
+### elogiar_publico_criticar_privado_sus_tres_matices   [poblacion 443]
+    VECINO dar_guia_humilde_tres_tecnicas  |  familia_id=0.091, paso_contra_nodo=0.405, similitud_texto=0.352
+
+### evitar_personalizar_guia_aceptar_personal   [poblacion 443]
+    VECINO manejar_enfado_persona_desafiada  |  paso_contra_nodo=0.867, similitud_texto=0.234
+
+### exigir_critica_jefe_reticente   [poblacion 443]
+    VECINO comprobar_criticas_hombre_mujeres_equipo  |  familia_id=0.125, paso_contra_nodo=0.577, similitud_texto=0.382
+
+### fomentar_guia_reciproca_companieros   [poblacion 443]
+    SIN VECINO
+
+### impedir_punialadas_espalda_equipo   [poblacion 443]
+    SIN VECINO
+
+### medir_guia_propia_pegatinas_marco   [poblacion 443]
+    SIN VECINO
+
+### organizar_sistema_recoger_quejas_equipo   [poblacion 443]
+    VECINO elogiar_publico_criticar_privado_sus_tres_matices  |  paso_contra_nodo=0.47, similitud_texto=0.357
+
+### practicar_franqueza_radical_jefe_propio   [poblacion 443]
+    SIN VECINO
+
+TOTAL: 8 vecinos levantados sobre 15 candidatos; 7 candidatos con vecino, 8 sin ninguno

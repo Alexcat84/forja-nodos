@@ -1,0 +1,67 @@
+# Fase ciega de la 71: mi clase de cada par DENTRO de un mismo capitulo de la tanda (cap_07 entero, cap_11, cap_12, cap_13
+# y cap_14), escrita con los pasos de los dos delante (.v71aud/pasos_cap07.txt a .v71aud/pasos_cap14.txt) y ANTES de mirar
+# que pares levanta el barrido, por la vara 6.1 y solo esa. Una arista D.37 o D.29 NO cambia la clase (D.53): va en
+# .v71aud/aristas_lectura.tsv. Abreviaturas: la tabla de abajo. Formato: A|B|clase|madre|lectura
+@CB=cerrar_brecha_dos_preguntas_estrategia
+@CD=contestar_dos_preguntas_direccion_objetivos
+@DE=definir_entorno_grupo_clientes_proveedores_competidores
+@DS=determinar_estado_presente_capacidades_proyectos_merma
+@ED=examinar_demanda_entorno_dos_marcos_temporales
+@EE=examinar_entorno_expectativas_tecnologia_proveedores_grupos
+@FH=fijar_horizonte_ventana_replanificacion
+@FP=fijar_periodo_direccion_objetivos_retroalimentacion
+@PT=planificar_tres_pasos_demanda_estado_brecha
+@EM=elegir_modo_control_motivacion_factor_cua
+@EC=escalonar_complejidad_puesto_empleado_nuevo
+@DC=diagnosticar_capacidad_motivacion_prueba_vida
+@DN=diagnosticar_nivel_motivacion_reaccion_aumento_salario
+@FM=fijar_meta_direccion_objetivos_mitad_probabilidad
+@DA=decidir_amistad_subordinado_prueba_revision_dificil
+@ES=elegir_estilo_direccion_madurez_relevante_tarea
+@EV=entregar_evaluacion_desempeno_tres_claves
+@GS=guiar_subordinado_etapas_resistencia_desempeno
+@PR=preparar_resena_mixta_hoja_trabajo
+CB|CD|SANO||paso 3 de la planificacion (que necesitas y que puedes hacer contra la brecha) contra las dos preguntas del sistema de objetivos (adonde voy, como me marco el ritmo); ningun paso compartido
+CB|DE|SANO||cerrar la brecha contra definir que es tu entorno; ningun paso compartido
+CB|DS|CONTINUA|DS|la condicion del hijo (ya tienes medida la demanda y tu estado presente) es el producto de la madre en su mitad del estado presente (L39 what your present activities will yield), y el hijo anade sus dos preguntas por separado, la decision, el efecto sobre la brecha y la estrategia. DUDA: se puede leer SANO de pasos hermanos de la misma serie, que la cabeza planificar_tres_pasos ya cablea por D.37
+CB|ED|CONTINUA|ED|la misma figura que CB con DS, por la mitad de la demanda (L39 your environmental demand). DUDA: la misma, pasos hermanos bajo su cabeza
+CB|EE|SANO||cerrar la brecha contra que mirar del entorno; ningun paso compartido
+CB|FH|SANO||decidir que hacer con la brecha contra hasta donde mirar y cada cuanto replanificar
+CB|FP|SANO||brecha contra periodo del sistema de objetivos
+CB|PT|SANO||cabeza de la serie de tres pasos y su paso 3: la parte no repite a la cabeza, la cabeza solo la nombra y la situa (P5 y P6 de la cabeza: compara y concilia; el hijo trae las dos preguntas, la decision y la estrategia). Arista D.37 aparte, en aristas_lectura.tsv
+CD|DE|SANO||dos preguntas del sistema de objetivos contra definir el entorno
+CD|DS|SANO||sistema de objetivos contra estado presente; L69 dice que el MBO se concentra en los pasos 2 y 3, y eso no hace a ninguno madre del otro
+CD|ED|SANO||sistema de objetivos contra la demanda en dos marcos; L69 el MBO da por sabida la demanda
+CD|EE|SANO||sistema de objetivos contra que mirar del entorno
+CD|FH|SANO||dos preguntas del sistema contra horizonte y frecuencia de la planificacion
+CD|FP|SANO||montar el sistema sobre dos preguntas contra fijar su periodo por la retroalimentacion: el hijo fija un parametro del mismo sistema y no continua el producto de la otra (su condicion no es haber contestado las dos preguntas). DUDA: se puede leer CONTINUA con madre CD, el periodo del sistema que CD monta
+CD|PT|SANO||sistema de objetivos contra la planificacion en tres pasos; L69 lo situa en los pasos 2 y 3 sin repetirlos
+DE|DS|SANO||definir el entorno contra listar capacidades y proyectos
+DE|ED|CONTINUA|DE|L29 Once you have established what constitutes your environment remite con palabras a la pieza de la madre (L25), y la condicion del hijo (ya tienes establecido que constituye tu entorno) es su producto; el hijo anade los dos marcos temporales, la diferencia y no rebajar la demanda
+DE|EE|CONTINUA|DE|la condicion del hijo (ya tienes definido que es tu entorno y tienes que examinarlo) es el producto de la madre, y L27 sigue a L25 con que mirar cuando examinas ese entorno; el hijo anade los cuatro objetos y las dos preguntas sobre los otros grupos. DUDA: L27 no remite con palabras como L29
+DE|FH|SANO||entorno contra horizonte
+DE|FP|SANO||entorno contra periodo del sistema de objetivos
+DE|PT|SANO||la cabeza nombra el paso 1 (la demanda) y definir el entorno es la entrada de ese paso, no el paso. DUDA de parte D.37 escrita en aristas_lectura.tsv
+DS|ED|SANO||estado presente contra demanda: dos pasos que el paso 3 compara, ninguno continua al otro. DUDA: el paso 2 de DS pide la moneda en que has declarado la demanda (L35 in which you stated demand), que es producto de ED; lo leo formato y no entrada
+DS|EE|SANO||estado presente contra que mirar del entorno
+DS|FH|SANO||estado presente contra horizonte
+DS|FP|SANO||estado presente contra periodo del sistema
+DS|PT|SANO||cabeza y su paso 2: la cabeza lo nombra en dos preguntas (P3 y P4), el hijo trae la moneda, el plazo, la merma y el porcentaje de perdida. Arista D.37 aparte
+ED|EE|SANO||los dos examinan el entorno y COMPARTEN un paso: EE P1 (expectativas del cliente y percepcion de tu desempeno) es ED P2 y P3 (que quieren ahora, si los satisfaces), L27 contra L29. Fuera del solape hay procedimiento en los dos lados (EE: tecnologia, proveedores, otros grupos; ED: el ano que viene, la diferencia, no rebajar), asi que no es REPITE (6.1, sin bascula). DUDA: se puede leer CONTINUA con madre EE, porque ED anade el segundo marco temporal a lo que EE mira hoy
+ED|FH|SANO||demanda en dos marcos (ahora y un ano) contra horizonte de planificacion (cinco anos, se implementa el siguiente): los dos hablan de tiempo y ninguno hace lo del otro
+ED|FP|SANO||demanda contra periodo del sistema de objetivos
+ED|PT|SANO||cabeza y su paso 1: la cabeza lo nombra en una pregunta (P2), el hijo trae los dos marcos, las tres preguntas, la diferencia y no rebajar. Arista D.37 aparte
+EE|FH|SANO||entorno contra horizonte
+EE|FP|SANO||entorno contra periodo
+EE|PT|SANO||que mirar del entorno contra la cabeza: entrada del paso 1, no el paso. DUDA de parte D.37 escrita en aristas_lectura.tsv
+FH|FP|SANO||los dos hablan de periodo y retroalimentacion en sentidos OPUESTOS: FH no replanificar demasiado seguido para poder juzgar el impacto (L61), FP objetivos de periodo corto para que la retroalimentacion llegue a tiempo (L79). FP P5 contrasta con la base del plan y no toma el horizonte de FH como entrada
+FH|PT|SANO||horizonte y frecuencia del ejercicio contra sus tres pasos: un parametro del ejercicio que se decide al montarlo, no la continuacion de su producto
+FP|PT|SANO||periodo del sistema de objetivos contra la planificacion en tres pasos
+EM|EC|SANO||elegir el modo de control cruzando motivacion y CUA contra escalonar el CUA del puesto de un nuevo: el hijo aplica el modelo (L63 Let's apply our model) pero no elige un modo de control, elige el puesto para la motivacion que ya supone y lo sube con el tiempo; ningun paso repetido. DUDA: se puede leer CONTINUA con madre EM, el caso que el libro pone a continuacion del modelo. La relacion por remision la escribo como arista D.29 en aristas_lectura.tsv
+DC|DN|SANO||dos pruebas de diagnostico distintas: si no puede o no quiere (la vida en juego) contra en que nivel de la jerarquia esta (el aumento de sueldo); ningun paso compartido
+DC|FM|SANO||diagnostico no puede o no quiere contra fijar la meta al cincuenta por ciento
+DN|FM|SANO||nivel motivacional por el aumento contra meta al cincuenta por ciento
+DA|ES|SANO||la amistad nombra el estilo comunicador y el modo estructurado de ES (P2 y P3) sin procedimentarlos: nombrar no es procedimentar. La prueba de la revision dura es suya
+EV|GS|SANO||entregar cualquier revision con las tres claves contra llevar la revision de choque por sus etapas; ningun paso compartido. El libro pone la revision de choque como uno de los tres tipos (L121, L163), y GS no toma de EV nada como entrada
+EV|PR|SANO||preparar la revision mixta en la hoja de trabajo contra entregarla con las tres claves. DUDA: se puede leer CONTINUA con madre PR (la condicion de EV, vas a entregar la evaluacion, presupone una preparada), pero EV vale para cualquier revision y el libro pone la entrega (L107) antes que los tipos (L121)
+GS|PR|SANO||revision de choque por etapas contra revision mixta por hoja de trabajo: dos de los tres tipos de L121

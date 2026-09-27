@@ -1,0 +1,6 @@
+ID: montar_reuniones_solas_mentalidad_frecuencia
+TITULO: Montar tus reuniones a solas con cada persona a tu cargo: la mentalidad, la frecuencia, presentarte siempre y la agenda puesta por quien te reporta
+pasos: 22
+previos: ['decidir_quien_comunica_cada_cuanto', 'construir_confianza_equipo_tiempo_solas']
+siguientes: []
+RESUMEN (primeros 400): UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_11.md, unidad Cap. 8, Results. Sale de las lineas 37 a 65, bajo el rotulo 1:1 CONVERSATIONS y sus cuatro rotulos interiores Mind-set, Frequency, Show up! y Your direct report's agenda, not yours. ES LA PIEZA P2 DE LA FRONTERA DE cap_11. POR QUE LOS CUATRO ROTULOS VAN EN UN SOLO NODO Y NO EN CUATRO, con la vara de la ACTA 20 seccion 4.1 y la confir

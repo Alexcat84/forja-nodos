@@ -1,0 +1,13 @@
+    donde                  que divide                                                numerador  denominad   publico   recompu cuadra
+    NN.2.c aviso de coste  la primera pasada contra la media de la vuelta 51            1045,6      327,0    3,2000    3,1976 SI
+    NN.5.f                 media por pasada de la vuelta 52                             4387,4        6,0  731,2000  731,2333 SI
+    NN.5.f                 la suma de relojes en minutos                                4387,4       60,0   73,1000   73,1233 SI
+    NN.5.f                 veces la media de la vuelta 51                                731,2      327,0    2,2400    2,2361 SI
+    NN.5.f                 el techo en minutos que el encargo fija, contra lo que c     4387,4       42,0  104,5000  104,4619 SI
+    NN.3.c                 peso del resumen en la ficha de fijar_duracion, sobre su    11444,0    12366,0    0,9300    0,9254 SI
+    NN.5.e                 PASOS INVENTADOS de cap_05, que es 0 de 84                      0,0       84,0    0,0000    0,0000 SI
+    NN.5.e                 PASOS INVENTADOS del libro entero, que es 0 de 418              0,0      418,0    0,0000    0,0000 SI
+    NN.5.d                 cap_05 en 12 de 26 nodos de su frontera                        12,0       26,0    0,4615    0,4615 SI
+
+    divisiones publicadas y recorridas    : 9
+    TODAS CUADRAN CON SU PROPIA CELDA     : True

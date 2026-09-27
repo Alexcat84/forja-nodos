@@ -1,0 +1,16 @@
+==============================================================================
+FICHA: infundir_regularidad_reunion_proceso   (8 pasos)
+  poblacion barrida: 399 nodos (grafo + bandejas, filtro canonico)
+  medidos al digito: 398 de 398; descartados: 0
+  umbral de la casa (config/umbrales.json): 0.35
+  reloj del barrido: 625.1 s
+  LOS 8 VECINOS MAS PROXIMOS, LISTA ORDENADA ENTERA:
+    0.3699  [bandeja/grove_high_output] preparar_guion_reunion_individual_subordinado
+    0.3617  [bandeja/grove_high_output] fijar_frecuencia_reunion_individual_madurez_tarea
+    0.3507  [bandeja/grove_high_output] cubrir_indicadores_problemas_reunion_individual
+    0.3311  [bandeja/grove_high_output] usar_tres_clases_reunion_proceso
+    0.3309  [bandeja/grove_high_output] fijar_duracion_lugar_reunion_individual
+    0.3229  [bandeja/grove_high_output] agrupar_interrupciones_subordinados_reuniones_regulares
+    0.3157  [bandeja/grove_high_output] llevar_inventario_proyectos_discrecionales
+    0.3107  [bandeja/grove_high_output] canalizar_interrupciones_cartel_hora_oficina
+  vecinos por encima del umbral 0.35: 3

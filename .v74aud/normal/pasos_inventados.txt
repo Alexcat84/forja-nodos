@@ -1,0 +1,5 @@
+adjudicada por la ACTA 73: dar_elogio_disciplina_igual_critica paso 8, T de su marca pasa a P
+contar_cuatro_historias_propias_ver_hueco_intencion  pasos en el grafo 17 | por marca: {'T': 17} | suma: 17 | PUENTE 0 de 17 = 0.00 por ciento
+dar_elogio_disciplina_igual_critica                  pasos en el grafo 20 | por marca: {'P': 2, 'T': 18} | suma: 20 | PUENTE 2 de 20 = 10.00 por ciento
+medir_critica_respuesta_oyente_brujula               pasos en el grafo 33 | por marca: {'T': 33} | suma: 33 | PUENTE 0 de 33 = 0.00 por ciento
+cap_13, los tres: pasos en el grafo 70 | por marca: {'P': 2, 'T': 68} | suma: 70 | PUENTE 2 de 70 = 2.86 por ciento

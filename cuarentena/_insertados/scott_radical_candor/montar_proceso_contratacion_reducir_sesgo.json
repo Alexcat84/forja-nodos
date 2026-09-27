@@ -1,0 +1,81 @@
+{
+ "id": "montar_proceso_contratacion_reducir_sesgo",
+ "titulo": "Montar un proceso de contratacion tan rigido como se pueda sin volverse gravoso, con las practicas que el texto nombra para manejar el sesgo",
+ "denominaciones": {
+  "nombre_largo": "El proceso de contratacion con sus practicas rotuladas una a una por el libro: la descripcion del puesto escrita por quien contrata, el filtro previo de habilidades a ciegas, el mismo comite para varios candidatos, las entrevistas informales, los apuntes escritos en el momento, y la reunion presencial de decision con su sesgo hacia el no",
+  "otros_idiomas": [
+   {
+    "idioma": "ingles",
+    "termino": "HIRING: YOUR MENTALITY AND YOUR PROCESS"
+   },
+   {
+    "idioma": "ingles",
+    "termino": "Process"
+   }
+  ],
+  "sigla": ""
+ },
+ "condiciones_activacion": "Cuando vas a contratar para tu equipo, y sobre todo cuando creces muy rapido y vas a pasar mucho tiempo contratando.",
+ "entregable_esperado": "La descripcion del puesto escrita por quien contrata y repartida a todos los entrevistadores, el filtro previo de habilidades hecho, el comite de unas cuatro personas diverso y con alguien de otro equipo dentro, la opinion de cada entrevistador escrita en el momento sobre habilidades y encaje, y la decision tomada en una reunion presencial con sesgo hacia el no, o la recomendacion mandada a quien decide con prisa.",
+ "pasos_accionables": [
+  "Parte de lo que buscas, que el texto pone primero: gente que vaya a ser excelente en el puesto. Y preguntate si lo que necesitas es una estrella de rock o una superestrella, a lo que el texto responde que depende, porque hay puestos que piden una u otra.",
+  "Asegurate ademas de que tienes la proporcion correcta en el conjunto de tu equipo, y aplica la regla concreta que el texto da: si tienes demasiadas superestrellas, contrata una estrella de rock a continuacion.",
+  "Trata tu proceso de contratacion como parte vital de construir un gran equipo, y cuenta con lo que cuesta cuando creces muy rapido: acabaras dedicando mucho tiempo tuyo a contratar.",
+  "Ten claro el limite del instrumento antes de montarlo, porque el texto lo dice de entrada: toda contratacion es defectuosa y subjetiva, y esos defectos no se pueden arreglar, solo se pueden manejar.",
+  "Primera practica, la descripcion del puesto: define el encaje con el equipo con el mismo rigor con que defines las habilidades, para reducir el sesgo.",
+  "Que escriba la descripcion del puesto la persona que contrata, y no alguien de seleccion de personal, basandola en lo que el texto nombra: el papel, las habilidades que ese papel requiere, y los criterios de encaje con el equipo.",
+  "Cuenta con que definir el encaje con el equipo puede ser dificil, lo que hace tentador dejarlo fuera, e intenta describir tu cultura en tres o cuatro palabras. El texto da sus ejemplares: meticulosa, peculiar y sin rodeos; o de mirada amplia, formal y educada.",
+  "Elijas las que elijas, se disciplinada al entrevistar buscando esas cosas, que es lo que ayuda a la gente a no tomar decisiones por intuicion, tan a menudo movidas por el sesgo.",
+  "Toma el tiempo de definir tambien la trayectoria de crecimiento que el puesto requiere, porque el texto dice que eso ayuda a los entrevistadores a evitar un tipo concreto de sesgo: contratar a gente que comparte tus ambiciones, que pueden no ser deseables para el puesto.",
+  "Manda despues la descripcion escrita del puesto a todos los entrevistadores, para que sepan con precision para que estan entrevistando.",
+  "Segunda practica, el filtro previo: cuenta con que entrevistar cuesta tiempo y rellenar los informes de opinion cuesta tiempo, y se por eso muy selectiva con quien recibe una invitacion a entrevista.",
+  "Quita un buen numero de falsos positivos y de falsos negativos con un buen filtro previo, y el texto pone el suyo por nombre: una prueba de habilidades, pedir a los candidatos posibles que hagan un proyecto o resuelvan un problema relacionado con el puesto al que se presentan.",
+  "Cuenta con lo que el texto dice que esa prueba consigue: quita candidatos que se ven bien en el papel pero no pueden hacer el trabajo, y da la oportunidad de entrevistarse a candidatos que serian excelentes en el puesto pero se ven mal en el papel.",
+  "Haz esa prueba a ciegas siempre que puedas, y da a los candidatos la oportunidad de mostrar el tipo de trabajo que pueden hacer sin que se vea quien es la persona.",
+  "Cuenta con la via que algunas empresas han probado, con su reserva incluida: pedir la prueba de habilidades en linea quitando toda informacion que identifique a la persona, de modo que quien evalua no pueda adivinar su genero ni su raza. El texto la llama idea brillante y dice a la vez que es muy costosa en tiempo y no siempre practicable.",
+  "Tercera practica, el comite: usa el mismo comite de entrevista para varios candidatos, para que las comparaciones signifiquen algo.",
+  "No tomes decisiones de contratacion unilaterales si puedes evitarlo, porque como entrevistar es tan subjetivo y tan propenso al sesgo, mejoras tus probabilidades de decidir bien consiguiendo varias miradas.",
+  "Se consistente y cuidadosa con quien entrevista a quien, y cuenta con el desperdicio que el texto describe cuando no lo eres: si tres personas entrevistan y prefieren a un candidato y otras tres entrevistan y prefieren a otro, no hay manera de decidir, y son ocho personas de tiempo tirado.",
+  "Pon unas cuatro personas en el comite de entrevista, que es el tamanio aproximado que el texto da como correcto.",
+  "Haz el comite diverso, y cuenta con las razones que el texto da: a una candidata puede echarla atras que todos los que la entrevistan sean hombres, y a alguien de una minoria poco representada puede frustrarle que todos los que le entrevistan sean de la misma etnia.",
+  "Mete a por lo menos un entrevistador de otro equipo, porque el texto dice que eso previene la contratacion por desesperacion: cuando hay un agujero en un equipo, la gente se pone tan ansiosa por llenar el puesto que ignora las seniales de alarma, y quien no siente el dolor de ese agujero con la misma agudeza es mas probable que senialice esas seniales de peligro.",
+  "Cuarta practica, las entrevistas informales: cuenta con que las entrevistas informales revelan mas sobre el encaje con el equipo que las formales, y con que entrevistar es una habilidad que se aprende haciendola, asi que deja que cada cual desarrolle su propio estilo.",
+  "Crea a proposito momentos mas informales, y el texto los nombra: llevar a los candidatos a comer, acompaniarlos al coche, y preguntar a quien esta en recepcion y a quien organiza las agendas si el candidato les produjo alguna reaccion. En los momentos en que nadie se guarda, los candidatos hacen o dicen cosas reveladoras.",
+  "Quinta practica, los apuntes: haz productivas las entrevistas apuntando lo que piensas inmediatamente despues, porque escribir tu opinion te aclara a ti tanto como al resto del comite y produce mejores decisiones.",
+  "Escribe lo que piensas de cada una de las habilidades, si estas entrevistando por habilidades, y de cada uno de los criterios de encaje con el equipo que se identificaron.",
+  "Usa el truco que el texto da para cuando no tienes tiempo de escribirlo todo: reserva una hora, entrevista cuarenta y cinco minutos y escribe quince. El texto dice que esa disposicion te obliga a tener una entrevista mas enfocada y a hacer una recomendacion mejor sobre a quien contratar.",
+  "Sexta practica, la decision: si no te mueres por contratar a la persona, no le hagas una oferta. El texto lo da como el mejor consejo que recibio nunca sobre contratar.",
+  "Y aunque te mueras por contratar a alguien, permite que te sobrepasen los otros entrevistadores que sientan con fuerza que no hay que contratar a esa persona, porque en general un sesgo hacia el no es util al contratar.",
+  "Reune al comite de contratacion a discutir cada candidato en cuanto se haya entrevistado a tres o cuatro para un puesto. El texto admite que esas conversaciones presenciales cuestan disciplina real de agendar, y sostiene que si crees que tiene sentido que varias personas entrevisten a cada candidato, hablar de vuestras valoraciones cara a cara es la via mas rapida y mas solida para decidir bien.",
+  "Haz visible la opinion de todos los entrevistadores para todos los demas despues de que cada uno haya entregado la suya, contando con lo que el texto dice de esa medida: hace que las reuniones del comite vayan mas rapido y exige mas preparacion a cada persona.",
+  "Monta la reunion como el texto la monta: una hora, con quince minutos de sala de estudio al principio para que todos lean la opinion de los demas. Si se conduce bien, la reunion deberia acabar antes de tiempo.",
+  "Y cierra: si tu equipo esta facultado para decidir sin mas tramite, si te mueres por contratar a la persona y nadie te ha sobrepasado, hazlo inmediatamente. Y si no, manda tu recomendacion a quien decide en tu empresa y empujales a decidir rapido."
+ ],
+ "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_10.md, unidad Cap. 7, Team. Sale de las lineas 133 a 163 bajo el rotulo Process, CON EL ACTO DE LA LINEA 129 DENTRO. SON LAS PIEZAS P19 Y P21 DE LA FRONTERA DE cap_10 EN UN SOLO NODO, y eso lo adjudica la ACTA 20 seccion 4.4: la linea 129 tiene un adjetivo de adecuacion en el sitio exacto del criterio (The answer is, of course, It depends), y D.27 restriccion 2 lo tumba como nodo propio; su unico acto, mirar la proporcion del equipo y contratar la que falte, es parte de contratar y viaja como paso 2 de aqui. POR QUE ES PROCEDIMIENTO Y NO POSTURA, con D.27 delante: la linea 135 cierra con Here are some simple things you can do to make sure you're hiring the right people y detras van las practicas rotuladas una a una por el libro en las lineas 137, 139, 145, 149, 153 y 159, cada una con sus medios nombrados y con sus cifras propias: tres o cuatro palabras para la cultura, cuatro personas de comite, tres o cuatro candidatos antes de la reunion, una hora con cuarenta y cinco de entrevista y quince de escritura, una hora de reunion con quince de sala de estudio. Es inventario de MEDIOS Y ETAPAS del propio libro. POR QUE ES UN NODO Y NO SEIS, con la vara de la ACTA 20 seccion 4.1: las seis practicas comparten UNA condicion de activacion (estas contratando) y UN entregable (la decision de contratacion tomada con su expediente), y la linea 135 no escribe ninguna cuenta. Precedente citado por la propia acta en su 3.2, discutible 1: se sostiene UNA pieza, y P8 a P13 de cap_09 NO son el mismo caso porque alli cada rotulo trae su propia condicion de activacion. RELECTURA DE FIDELIDAD D.30 HECHA EN EL ACTO DE ESCRIBIR, paso a paso contra su linea: 32 de 32 TRANSCRIPCION, 0 PUENTES. Lo que el texto NO dice y por eso NO esta escrito aqui: ni quien convoca el comite, ni cuanto dura el filtro previo, ni en cuantos dias se decide, ni donde se guardan las opiniones escritas. El caso del candidato encantador de la linea 155, el de la regla de Bob Sutton y los candidatos groseros de la 151, y el servicio nombrado en la 143 NO se convierten en pasos propios: son ejemplos de practicas que ya estan escritas, y sus datos no entran en el entregable."
+,
+ "atribuciones": [
+  {
+   "cifra": "que las orquestas que implantaron audiciones a ciegas multiplicaron por cinco el porcentaje de mujeres contratadas",
+   "autor": "Malcolm Gladwell, citado por Kim Scott",
+   "fuente": "scott_radical_candor",
+   "fecha_corte": "no consta fecha en el texto: el libro dice tells a now-famous story sin datar el estudio ni nombrar la obra, asi que la atribucion queda sin fecha de corte y se dice"
+  },
+  {
+   "cifra": "que en un momento dado dedicaba el 25 por ciento de su tiempo a contratar gente",
+   "autor": "Kim Scott, sobre su propio periodo en Google",
+   "fuente": "scott_radical_candor",
+   "fecha_corte": "no consta fecha en el texto: el libro dice At one point when I was at Google sin datar el periodo, asi que la atribucion queda sin fecha de corte y se dice"
+  }
+ ],
+ "dominio": "gestion_equipos",
+ "estado": "vivo",
+ "fuentes": [
+  {
+   "clave": "scott_radical_candor",
+   "fecha": "2026-09-12"
+  }
+ ],
+ "ids_alias": [],
+ "nodos_previos": [],
+ "nodos_siguientes": []
+}

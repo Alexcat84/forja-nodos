@@ -1,0 +1,46 @@
+############ exigir_critica_jefe_reticente
+ADUANA DE INSERCION, candidato 'exigir_critica_jefe_reticente'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 349   (294 del grafo mas 55 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 3. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino comprobar_criticas_hombre_mujeres_equipo  [Comprobar si te estas conteniendo al criticar a las mujeres de tu equipo, preguntandoselo a ellas y pidiendoles que te midan]
+    levantada por: similitud_texto
+    similitud_texto    0.382 (umbral 0.35)
+    familia_id         0.125 (umbral 0.30)
+    paso_contra_nodo   0.577 (umbral 0.60)
+    paso 1 del candidato contra paso 1 de comprobar_criticas_hombre_mujeres_equipo
+
+  vecino comprobar_criticas_hombre_mujeres_equipo  [Comprobar si te estas conteniendo al criticar a las mujeres de tu equipo, preguntandoselo a ellas y pidiendoles que te midan]
+    levantada por: similitud_texto
+    similitud_texto    0.382 (umbral 0.35)
+    familia_id         0.125 (umbral 0.30)
+    paso_contra_nodo   0.577 (umbral 0.60)
+    paso 1 del candidato contra paso 1 de comprobar_criticas_hombre_mujeres_equipo
+
+  vecino bloquear_tiempo_pensar_calendario  [Bloquear tiempo para pensar en tu calendario y mantener ese tiempo sagrado]
+    levantada por: similitud_texto
+    similitud_texto    0.357 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.435 (umbral 0.60)
+    paso 4 del candidato contra paso 3 de bloquear_tiempo_pensar_calendario
+
+BLOQUEADO: faltan veredictos para comprobar_criticas_hombre_mujeres_equipo, comprobar_criticas_hombre_mujeres_equipo, bloquear_tiempo_pensar_calendario
+  La aduana no juzga: obliga a juzgar (manual seccion 3).
+  Vuelve a correr el comando con un veredicto por vecino:
+    --veredicto "comprobar_criticas_hombre_mujeres_equipo|CONTINUA|madre=comprobar_criticas_hombre_mujeres_equipo|que añade el hijo a la madre"
+    --veredicto "comprobar_criticas_hombre_mujeres_equipo|REPITE|por que no añade procedimiento"
+    --veredicto "comprobar_criticas_hombre_mujeres_equipo|SANO|por que no son el mismo trabajo"
+    --veredicto "comprobar_criticas_hombre_mujeres_equipo|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "comprobar_criticas_hombre_mujeres_equipo|CONTINUA|madre=comprobar_criticas_hombre_mujeres_equipo|que añade el hijo a la madre"
+    --veredicto "comprobar_criticas_hombre_mujeres_equipo|REPITE|por que no añade procedimiento"
+    --veredicto "comprobar_criticas_hombre_mujeres_equipo|SANO|por que no son el mismo trabajo"
+    --veredicto "comprobar_criticas_hombre_mujeres_equipo|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "bloquear_tiempo_pensar_calendario|CONTINUA|madre=bloquear_tiempo_pensar_calendario|que añade el hijo a la madre"
+    --veredicto "bloquear_tiempo_pensar_calendario|REPITE|por que no añade procedimiento"
+    --veredicto "bloquear_tiempo_pensar_calendario|SANO|por que no son el mismo trabajo"
+    --veredicto "bloquear_tiempo_pensar_calendario|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+exit=2

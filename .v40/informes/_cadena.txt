@@ -1,0 +1,3 @@
+07:06:08 arranca cadena 1
+cadena 1 arrancada (candidato 1 de 4)
+PARADA EN abrazar_incomodidad_silencio_contar_seis

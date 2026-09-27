@@ -1,0 +1,16 @@
+id                                                 capitulo     pasos    lineas que declara
+abrazar_incomodidad_arrancar_critica_equipo        cap_09       20       17 a 53
+comprobar_criticas_hombre_mujeres_equipo           cap_09       6        291 a 293
+correr_semana_arreglo_averias_gestion              cap_09       8        65 a 71
+dar_guia_acto_seis_consejos                        cap_09       14       115 a 135
+dar_guia_humilde_tres_tecnicas                     cap_09       15       77 a 95
+dar_guia_util_cuatro_recordatorios                 cap_09       10       97 a 113
+elegir_medio_dar_guia_jerarquia_modos              cap_09       13       137 a 153
+elogiar_publico_criticar_privado_sus_tres_matices  cap_09       9        155 a 163
+evitar_personalizar_guia_aceptar_personal          cap_09       12       165 a 177
+exigir_critica_jefe_reticente                      cap_09       9        295 a 299
+medir_guia_propia_pegatinas_marco                  cap_09       13       179 a 203
+organizar_sistema_recoger_quejas_equipo            cap_09       9        55 a 63
+practicar_franqueza_radical_jefe_propio            cap_09       17       205 a 221
+responder_critica_abrasiva_cuatro_reglas           cap_09       14       315 a 329
+revisar_critica_mujer_agresiva_cuatro_tacticas     cap_09       12       301 a 313

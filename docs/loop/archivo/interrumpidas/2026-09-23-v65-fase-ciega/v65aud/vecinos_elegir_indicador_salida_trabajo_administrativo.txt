@@ -1,0 +1,5 @@
+candidato elegir_indicador_salida_trabajo_administrativo | grafo 366 | bandejas 96 | poblacion 462 | vecinos 3
+  evaluar_directivo_resultados_fortaleza             paso_contra_nodo                         texto 0.17 familia 0.0 paso 0.766 | paso 2 del candidato contra paso 1 de evaluar_directivo_resultados_fortaleza
+  emparejar_indicadores_efecto_contraefecto          similitud_texto                          texto 0.394 familia 0.125 paso 0.489 | paso 3 del candidato contra paso 4 de emparejar_indicadores_efecto_contraefecto
+  construir_indicador_tendencia_patron               similitud_texto                          texto 0.374 familia 0.125 paso 0.403 | paso 6 del candidato contra paso 3 de construir_indicador_tendencia_patron
+FIN

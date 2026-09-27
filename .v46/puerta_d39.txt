@@ -1,0 +1,3 @@
+$ python -c "..."   sobre config/frentes.json
+cerrados_en_extraccion : ['scott_radical_candor', 'smart_who', 'zhuo_manager']
+grove_high_output CERRADO EN EXTRACCION: False

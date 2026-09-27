@@ -1,0 +1,10 @@
+$ grep -l "PIEZA P34" cuarentena/grove_high_output/*.json
+cuarentena/grove_high_output/decir_no_trabajo_excede_capacidad.json
+cuarentena/grove_high_output/dimensionar_numero_subordinados_medio_dia_semanal.json
+cuarentena/grove_high_output/usar_calendario_herramienta_planificacion_produccion.json
+  fichas: 3
+
+$ grep -l "Sale de la PIEZA P34" cuarentena/grove_high_output/*.json
+cuarentena/grove_high_output/decir_no_trabajo_excede_capacidad.json
+cuarentena/grove_high_output/usar_calendario_herramienta_planificacion_produccion.json
+  fichas: 2

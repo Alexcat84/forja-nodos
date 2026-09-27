@@ -1,0 +1,21 @@
+.v70ext/insertar_01_infundir_regularidad_reunion_proceso.txt             codigo 0   2565.0 s  fin 2026-09-25 03:41:25
+.v70ext/insertar_02_usar_tres_clases_reunion_proceso.txt                 codigo 0   2545.9 s  fin 2026-09-25 04:25:05
+.v70ext/insertar_03_fijar_frecuencia_reunion_individual_madurez_tarea.txt codigo 0   3566.0 s  fin 2026-09-25 05:25:32
+.v70ext/insertar_04_fijar_duracion_lugar_reunion_individual.txt          codigo 0   3223.4 s  fin 2026-09-25 06:20:10
+.v70ext/insertar_05_preparar_guion_reunion_individual_subordinado.txt    codigo 0   3302.0 s  fin 2026-09-25 07:16:18
+.v70ext/insertar_06_cubrir_indicadores_problemas_reunion_individual.txt  codigo 0   4236.0 s  fin 2026-09-25 08:27:47
+.v70ext/insertar_07_facilitar_expresion_subordinado_pregunta_mas.txt     codigo 0   2941.0 s  fin 2026-09-25 09:17:47
+.v70ext/insertar_08_tomar_notas_copia_guion_reunion_individual.txt       codigo 0   2441.0 s  fin 2026-09-25 09:59:22
+.v70ext/insertar_09_acumular_asuntos_importantes_fichero_espera.txt      codigo 0   1975.8 s  fin 2026-09-25 10:33:16
+.v70ext/insertar_10_alentar_asuntos_corazon_vigilar_final_reunion.txt    codigo 0   3310.2 s  fin 2026-09-25 11:29:38
+.v70ext/insertar_11_conducir_reunion_individual_telefono_distancia.txt   codigo 0   3045.1 s  fin 2026-09-25 12:22:13
+.v70ext/insertar_12_programar_reunion_individual_cadena.txt              codigo 0   3593.2 s  fin 2026-09-25 13:23:00
+.v70ext/insertar_13_conducir_etapas_modelo_ideal_decision.txt            codigo 0   1674.4 s  fin 2026-09-25 13:51:58
+.v70ext/insertar_14_ejercer_poder_posicion_etapa_decision_clara.txt      codigo 0   1130.0 s  fin 2026-09-25 14:11:45
+.v70ext/insertar_15_vencer_sindrome_grupo_pares_autoconfianza.txt        codigo 0    747.0 s  fin 2026-09-25 14:25:12
+.v70ext/insertar_16_tomar_mando_reunion_pares_presidente_ausente.txt     codigo 0    860.1 s  fin 2026-09-25 14:40:25
+.v70ext/insertar_17_cortar_discusion_libre_momento_justo.txt             codigo 0    955.0 s  fin 2026-09-25 14:57:15
+.v70ext/insertar_18_zanjar_seis_preguntas_decision_adelantado.txt        codigo 0   1104.7 s  fin 2026-09-25 15:16:39
+.v70ext/insertar_19_anunciar_decision_inesperada_reconvocar_reunion.txt  codigo 0    864.0 s  fin 2026-09-25 15:31:56
+.v70ext/insertar_20_decidir_nivel_competente_inferior.txt                codigo 0   1121.8 s  fin 2026-09-25 15:51:34
+insertar: 20 | minimo 747.0 s | mediana 2493.4 s | maximo 4236.0 s | suma 45201.6 s (12.56 h)

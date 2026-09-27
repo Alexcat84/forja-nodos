@@ -1,0 +1,17 @@
+| pieza | valor | de donde sale |
+|---|---|---|
+| rama | `extraccion-mundo-11` | `git rev-parse --abbrev-ref HEAD` |
+| commit que abrio mi turno | `6315b30` | `git log` |
+| commit al escribir este bloque | `1a356dd` | `git log` |
+| commits en la ventana de mi turno | **7** | `git log` |
+| de ellos, MIOS | **7** | el asunto empieza por `V.34` o por la apertura |
+| de ellos, de otra sesion | **0** | `git log` |
+
+    LA VENTANA ENTERA, DEL PRIMERO AL ULTIMO. `>` marca los que NO son mios:
+      6315b30  2026-09-17 10:04:25  Apertura de la vuelta 34: el registro del arnes de la vuelta previa entra antes de tocar nada
+      b698aef  2026-09-17 10:10:47  Apertura de la vuelta 34: el esqueleto del reporte abierto antes de la primera tarea, citando el
+      1054e06  2026-09-17 10:19:38  V.34 TAREA 1: el nodo que declaraba tres capitulos sin minar, corregido por D.13 contra la medic
+      0fc22c9  2026-09-17 10:30:24  V.34 TAREA 3: la relectura de fidelidad de los 15 de cap_09 corrida ANTES de insertar, 0 de 181 
+      e484b6e  2026-09-17 11:27:51  V.34 TAREA 2 (1 de N): entran los siete primeros de cap_09 por el orden del libro, con tres vere
+      2cce7b5  2026-09-17 11:52:19  V.34 TAREA 2 (2 de N): entran cuatro mas de cap_09, con el par que la senial 3 levanta a 0,867 l
+      1a356dd  2026-09-17 12:11:40  V.34 TAREA 2 (3 de 3): cierra el tramo de cap_09 con 15 de 15 insertados, 282 a 297 nodos

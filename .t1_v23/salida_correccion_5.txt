@@ -1,0 +1,5 @@
+| senial | lo que el paso traia | lo que el paso trae |
+|---|---|---|
+| `L123`, solo buenas noticias | `e siente comoda trayendote sus problemas, o de que cree que no vas a hacer nada con ellos.` | ` pide explicitamente las malas noticias, y no dejes caer el asunto hasta que oigas alguna.` |
+| `L127`, sin agenda | `esbordados, que no entienden para que es esta reunion, o que no la estan tomando en serio.` | ` este es tu tiempo, pero no pareces venir con mucho de que hablar. Puedes decirme por que?` |
+| **pasos, contados del fichero** | **6** | **6** |

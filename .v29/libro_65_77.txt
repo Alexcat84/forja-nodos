@@ -1,0 +1,19 @@
+63: Another colleague told me about an argument she’d had with Steve. She eventually persuaded him he was wrong, but then he so thoroughly adopted her position that it was as if it had been his all along. She speculated that Steve was so focuse
+64: 
+65: THE ART OF GETTING STUFF DONE WITHOUT TELLING PEOPLE WHAT TO DO
+66: 
+67: CERTAINLY PART OF why Steve “always got it right” was that he was a genius. You can’t operationalize or imitate genius. But genius was only part of the story; there are plenty of geniuses with brilliant ideas who can’t turn them into anythi
+68: 
+69: In fact, both Google and Apple achieved spectacular results without a purely autocratic style. This leads to important questions: how did everyone in the company decide what to do? How did strategy and goals get set? How did the cultures at
+70: 
+71: The process, which I call the “Get Stuff Done” (GSD) wheel, is relatively straightforward. But the key, often ignored by people who think of themselves as “Get Stuff Done” people, is to avoid the impulse to dive right in, as I did in the ex
+72: 
+73: When run effectively, the GSD wheel will enable your team to achieve more collectively than anyone could ever dream of achieving individually-to burst the bounds of your brain. First, you have to listen to the ideas that people on your team
+74: 
+75: That’s a lot of steps. Remember, they are designed to be cycled through quickly. Not skipping a step and not getting stuck on one are equally important. If you skip a step, you’ll waste time in the end. If you allow any part of the process 
+76: 
+77: You may very well be in a situation where your boss is skipping steps and just telling you what to do. Does that mean you have to do the same with your team? No, of course not! You can put these ideas into practice with the people who repor
+78: 
+79: LISTEN
+
+[CORRECCION DECLARADA DEL AUDITOR, vuelta 28, turno normal: los guiones largos (U+2014) que el libro escribe se han sustituido por el guion corto normal, porque el barrido de la casa prohibe el guion largo en TODO el repo y este fichero es parte del repo. Ni una palabra mas se ha tocado.]

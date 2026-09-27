@@ -1,0 +1,16 @@
+NODOS QUE ENTRAN AL GRAFO EN LA VUELTA 33 (dataset/nodos.jsonl, ef3e7f9 -> HEAD)
+  antes: 270 nodos   ahora: 282 nodos   ENTRAN: 12   salen: 0
+   1  integrar_trabajo_vida_mejor_version
+   2  definir_receta_propia_mantenerse_centrado
+   3  agendar_cuidados_propios_cumplirlos
+   4  ceder_autoridad_unilateral_equipo
+   5  dominar_arte_socializar_trabajo
+   6  evitar_presion_social_actos_equipo
+   7  construir_confianza_equipo_tiempo_solas
+   8  vivir_valores_propios_evitar_listarlos
+   9  demostrar_apertura_visiones_distintas
+  10  manejar_contacto_fisico_regla_platino
+  11  reconocer_emociones_propias_avisar_equipo
+  12  dominar_reacciones_emociones_ajenas
+
+FICHEROS DE cuarentena/ QUE SE MUEVEN EN LA VUELTA 33: 12 lineas de git diff --name-status

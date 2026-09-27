@@ -1,0 +1,37 @@
+{
+  "id": "evitar_doble_impuesto_malestar",
+  "titulo": "Evitar el doble impuesto de sufrir y encima sentirte culpable por sufrir",
+  "denominaciones": {
+    "nombre_largo": "El primero de los consejos del Pozo: darte permiso para preocuparte, con las dos tacticas que el libro nombra",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "don't beat yourself up for feeling bad"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando estas en el Pozo y ademas te esta costando algo y te preocupa el hecho mismo de que te este costando.",
+  "entregable_esperado": "El doble impuesto retirado: la dificultad sigue, pero ya no pagas ademas la culpa por tenerla, y el malestar esta declarado en vez de rumiado.",
+  "escala_minima": "Una persona, un buscador y un papel adhesivo.",
+  "pasos_accionables": [
+    "Ten delante cual es una de las peores partes de estar en el Pozo: el doble golpe de estar batallando con algo y ademas preocuparte por el hecho de que estas batallando con ello. Tu critico interior puede gemir por que esto me resulta dificil siquiera, si fuera mas listo o mas valiente o mas talentoso estaria bien.",
+    "Ten claro lo que eso te cuesta: al sentirte culpable por como te sientes, te estas creando todavia mas estres a ti mismo.",
+    "Reconoce que todo el mundo pasa por momentos duros, y date permiso para preocuparte.",
+    "No pagues el doble impuesto sobre tu carga mental.",
+    "Primera tactica de las dos que la autora dice haber encontrado: conjura a una figura publica que admires, alguien que parezca tener la vida perfecta, y busca su nombre junto a la palabra lucha. Siempre hay una historia, y es un buen recordatorio de que estar en el Pozo es universal.",
+    "Segunda tactica: admite que te sientes mal. La autora saca un papel adhesivo y escribe estoy superestresada por tal cosa. Ese pequenio acto le cambia la cabeza de preocuparse por sus preocupaciones a simplemente declararlas, y una vez hecho puede empezar a avanzar en atacar la causa de raiz."
+  ],
+  "resumen_teorico": "Es el primero de los consejos para el Pozo y ataca no el problema sino el recargo que le ponemos encima. Su inventario propio son las dos tacticas, numeradas por el propio libro como primera y segunda, y las dos son ejecutables sin nadie mas delante. La razon de que la segunda funcione tambien la pone el libro: escribirlo cambia la cabeza de preocuparse por las preocupaciones a declararlas. Lo que el libro NO dice, y por eso no esta escrito: ni cuanto dura el efecto, ni que se hace con el papel adhesivo despues."
+}

@@ -1,0 +1,36 @@
+{
+  "condiciones_activacion": "Cuando estas instalando el metodo de contratacion en tu empresa y toca la sexta de las diez cosas: quitar de en medio lo que la casa ya tiene escrito y que estorba, antes de que nadie pueda usarlo como excusa.",
+  "denominaciones": {
+    "nombre_largo": "Retirar las barreras que impiden implantar el metodo de contratacion",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "Remove barriers that impede success"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "contratacion",
+  "entregable_esperado": "Eliminada toda politica, norma o practica que se interponia en el camino de implantar el metodo, y retirada con ella la posibilidad de excusarse en el enfoque anticuado.",
+  "escala_minima": "Una sola politica que estorbe y una sola conversacion con quien la sostiene. La barrera no tiene que ser un reglamento: el libro pone politica, norma y practica en la misma linea.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "smart_who",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "id": "retirar_barreras_politicas_metodo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Trabaja con la gente de personal, que es con quien el libro dice que se hace esto.",
+    "Elimina toda politica que se interponga en el camino de implantar el metodo con exito.",
+    "Elimina toda norma que se interponga, que es la segunda clase de barrera que el libro nombra.",
+    "Elimina toda practica que se interponga, que es la tercera clase de barrera que el libro nombra.",
+    "Retira con ello toda posibilidad de excusarse en un enfoque anticuado."
+  ],
+  "resumen_teorico": "Es la sexta de las diez cosas que hay que hacer para instalar el metodo de contratacion en una empresa, y su valor esta en que el libro nombra los tres objetos de trabajo uno a uno en vez de hablar de obstaculos en general: politica, norma y practica. Que sean tres y no uno importa, porque la tercera, la practica, es la que no esta escrita en ningun manual. El libro tambien pone el interlocutor y no lo pone el lector: la gente de personal. Y pone el criterio de corte, que no es un adjetivo de adecuacion sino una prueba concreta, que la cosa se interponga en el camino de implantar el metodo con exito. El motivo que el libro da no es de higiene sino de gobierno: lo que se retira junto con las barreras es toda posibilidad de excusarse en un enfoque anticuado.",
+  "titulo": "Retirar las barreras que impiden implantar el metodo de contratacion"
+}

@@ -1,0 +1,35 @@
+poblacion: 479
+tres clases: uno a uno: 16
+    dirigir_reunion_individual_semanal                           ['zhuo_manager']
+    preguntar_conducir_reunion_individual                        ['zhuo_manager']
+    abrazar_incomodidad_arrancar_critica_equipo                  ['scott_radical_candor']
+    montar_equipo_gestion_desempenio_revisar_sistema             ['scott_radical_candor']
+    agrupar_interrupciones_subordinados_reuniones_regulares      ['grove_high_output']
+    construir_estrategia_gente_cuatro_componentes                ['gerber_emyth']
+    alentar_asuntos_corazon_vigilar_final_reunion                ['grove_high_output']
+    conducir_reunion_individual_telefono_distancia               ['grove_high_output']
+    cubrir_indicadores_problemas_reunion_individual              ['grove_high_output']
+    facilitar_expresion_subordinado_pregunta_mas                 ['grove_high_output']
+    fijar_duracion_lugar_reunion_individual                      ['grove_high_output']
+    fijar_frecuencia_reunion_individual_madurez_tarea            ['grove_high_output']
+    preparar_guion_reunion_individual_subordinado                ['grove_high_output']
+    programar_reunion_individual_cadena                          ['grove_high_output']
+    tomar_notas_copia_guion_reunion_individual                   ['grove_high_output']
+    usar_tres_clases_reunion_proceso                             ['grove_high_output']
+tres clases: reunion de personal: 3
+    organizar_jornada_entrevistas_candidato                      ['smart_who']
+    conducir_reunion_equipo_agenda_tres_bloques                  ['scott_radical_candor']
+    usar_tres_clases_reunion_proceso                             ['grove_high_output']
+tres clases: revision de operaciones: 1
+    usar_tres_clases_reunion_proceso                             ['grove_high_output']
+seis preguntas: que decision: 0
+seis preguntas: cuando: 0
+seis preguntas: quien decide: 2
+    montar_reunion_gran_decision                                 ['scott_radical_candor']
+    zanjar_seis_preguntas_decision_adelantado                    ['grove_high_output']
+seis preguntas: a quien consultar: 1
+    zanjar_seis_preguntas_decision_adelantado                    ['grove_high_output']
+seis preguntas: quien ratifica o veta: 2
+    montar_reunion_gran_decision                                 ['scott_radical_candor']
+    zanjar_seis_preguntas_decision_adelantado                    ['grove_high_output']
+seis preguntas: a quien informar: 0

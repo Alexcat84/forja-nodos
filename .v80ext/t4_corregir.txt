@@ -1,0 +1,12 @@
+$ python forja.py corregir --nodo eliminar_seguimiento_descendente_responsabilizar_dueno --anade "<linea 10 de .v79ext/frontera_grove.txt, 3296 caracteres>" --razon "<linea 12 de .v79ext/frontera_grove.txt, 498 caracteres>"
+CORRECCION DECLARADA SOBRE UN NODO YA INSERTADO
+  nodo : eliminar_seguimiento_descendente_responsabilizar_dueno
+  campo: resumen_teorico
+  el texto viejo SIGUE ENTERO: 2300 caracteres, ninguno borrado
+  se aniaden 3297 caracteres al final
+  huella antes  : dd5b5be9991b472e
+  huella despues: 3ff785f420baaa10
+
+GATE VERDE sobre la simulacion. CORRECCION ESCRITA EN: eliminar_seguimiento_descendente_responsabilizar_dueno
+  razon en bitacora/VEREDICTOS.jsonl
+rc=0

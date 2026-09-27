@@ -1,0 +1,1 @@
+reciclar_empleado_ascendido_mas_alla_capacidad poblacion 479 (430 grafo mas 49 bandejas) vecinos 1

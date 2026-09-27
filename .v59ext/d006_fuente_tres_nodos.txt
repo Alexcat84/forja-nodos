@@ -1,0 +1,51 @@
+$ sed -n "17,22p;35,40p" fuentes/scott_radical_candor/cap_13.md
+YOU
+
+Improve using role plays and storytelling
+
+Chapter Five of Radical Candor advises you to “STAY CENTERED.… You can’t give a damn about others if you don’t take care of yourself.” When it comes to practicing Radical Candor, there’s one common thread every time: you. But, what exactly should you do about that? Many have told us the first edition of Radical Candor didn’t explain this point clearly enough.
+
+Much is written about self-awareness-the ability to recognize your own strengths and weaknesses. There’s less written about relational awareness-the impact you’re having on others. You may have every intention of being kind and helpful, you may be thinking and feeling all the right things, you may be fully aware of your own flaws, but despite all that, you may say something destructive in ways you couldn’t have predicted or were unaware of. Or you can’t bear to see it so you choose not to.
+
+How can you learn to be more relationally aware and to use that awareness for good, not just to manipulate the other person? Relational awareness doesn’t mean what you have to say is never upsetting to the other person; it does mean you need to learn how to see when you’ve upset someone and to show that you care even when what you have to say may be hard to hear. It means you’re able and willing to see both the short-term and the long-term impact you’re having on the other person, and to adjust so that impact is positive not negative.
+
+You can improve both your self-awareness and your relational awareness. We have developed two practices, storytelling and role plays, that will help you improve both. We’ve tested these practices out on people in dramatically different roles and workplaces around the world and found that they worked well across different industries and cultures.
+
+
+$ sed -n "59,72p" fuentes/scott_radical_candor/cap_13.md
+Practice: The Feedback Triangle
+
+An exercise called the Feedback Triangle has been particularly useful in helping people see the impact their words have on others and to choose different words that are more kind and clear. Here’s how it works:
+
+Get together in a group of three. Describe some feedback you know you should have delivered to someone but didn’t. One colleague will play the role of the intended feedback recipient. The experience is more effective if the person playing the feedback recipient hams up the defensive response. Encouraging the feedback receivers to be difficult encourages them to think of bad feedback moments they’ve actually experienced in their own career, so being dramatic paradoxically yields more realistic-feeling performances. It also allows the feedback givers to practice the toughest moments.
+
+Your other colleague plays the role of observer and tracks how the conversation is going, using the Radical Candor framework. Perhaps the feedback giver starts in Radical Candor, but when the feedback receiver seems upset or even cries, they beat a hasty retreat to Ruinous Empathy. Or perhaps they start out intending to be Radically Candid, but say it so gently they wind up being ruinously empathetic. Frustrated when the feedback receiver isn’t “getting it,” they may become obnoxiously aggressive. Or perhaps they start out Radically Candid but the feedback receiver gets mad and responds rudely. Then the feedback giver gets angry and becomes seriously obnoxiously aggressive.
+
+These are patterns we see all the time, conversational wipeouts that are amusing in the context of a role play, but painful in real life. Plotting them on the Radical Candor 2 x 2 framework can offer a kind of compass that leaves participants with a sense of agency. When they take a moment to see the impact they have on others, they can use that information to get the conversation back on track rather than just feeling defensive or guilty. Self-awareness doesn’t have to mean self-flagellation.
+
+The objective observer, as well as the “recipient” of the feedback, help their colleague by showing how the feedback landed: maybe too aggressive, maybe insufficiently clear. This improves relational awareness among all the participants. They get to see through the eyes of the observer and the recipient what the impact of their words was, regardless of intention. And it’s fun. In an exercise where drama is encouraged and an observer is there tracking misunderstandings on the Radical Candor 2 x 2 framework, the experience is “ha-ha! a-ha!”1 The humor reveals something important that had been invisible to us.
+
+When we learn most skills-math, sales, engineering, piano, sports-we practice to improve. But when it comes to communication, we don’t often get this kind of practice. That’s why practicing using the Feedback Triangle or improv is a really helpful way to become more conscious of our own intention and what we need to bridge the gap between those intentions and the way others experience what we say. Practice also demonstrates how giving and receiving feedback, developing self awareness and relational awareness are skills that we can develop with practice.
+
+
+$ sed -n "167,186p" fuentes/scott_radical_candor/cap_13.md
+FAQ
+
+Q: Do I have to use the same go-to question each week? It’s starting to feel stale.
+
+A: In general, consistency (in terms of when you solicit feedback, and the question you use) tends to make people more comfortable giving you criticism-it’s part of an expected routine. But it’s absolutely fine to introduce some variation, particularly if your question isn’t eliciting responses. Don’t let the fact that you’re not getting good feedback be an excuse to stop asking for it. But if what you’re doing isn’t working, try something new. Ask why it’s not working. Say, in your own words, “I know I’m not perfect. I know there’s probably a thousand things I do wrong every day. Why won’t anyone tell me?”
+
+Q: What if the answer I get is about something I can’t fix?
+
+A: First, acknowledge that you don’t know how to fix it. Ask if they can help you solve the problem. If neither of you has a ready solution, challenge yourself. Is this really something you can’t fix? Say that you’ll need some time to think about the issue, but that you will get back to them. If you find you ultimately can’t think of how to solve the problem, explain why you can’t solve the problem.
+
+Q: I am a new manager working with people who are a lot older than me. Will I look weak if I ask for criticism?
+
+A: One of the most effective things you can do with any direct report, but especially with those who are older, is to ask them to share their wisdom and experience. It’s tempting for older employees to write off younger managers as arrogant know-it-alls. Prove them wrong!
+
+Q: Where should I start? If I’m really being honest, I am afraid to get critical feedback.
+
+A: That’s normal! Nobody really wants to hear criticism. Focus on the fact that you can only fix the problems you know about, and that if the person cares enough to make you aware of a problem they might also help you fix it. If you have a tendency toward perfectionism, remind yourself that you’re human and you’re going to make mistakes; in fact, that’s how you get better. Work on developing a “Not Yet” mindset, as described by Carol Dweck: “I heard about a high school in Chicago where students had to pass a certain number of courses to graduate, and if they didn’t pass a course, they got the grade ‘Not Yet.’ And I thought that was fantastic, because if you get a failing grade, you think, I’m nothing, I’m nowhere. But if you get the grade ‘Not Yet’, you understand that you’re on a learning curve. It gives you a path into the future.”4
+
+So, you might have made a few typos in an important presentation. Maybe you went on and on in a meeting and people felt like you took up too much air time. It doesn’t mean you’re a train wreck, it means you’re human.
+

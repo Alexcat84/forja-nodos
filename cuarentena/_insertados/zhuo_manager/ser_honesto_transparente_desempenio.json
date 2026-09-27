@@ -1,0 +1,38 @@
+{
+  "id": "ser_honesto_transparente_desempenio",
+  "titulo": "Ser honesto y transparente sobre el desempenio de tu persona a cargo",
+  "denominaciones": {
+    "nombre_largo": "La tercera de las cuatro acciones que ganan confianza: que tu persona a cargo sepa en todo momento cuales son tus expectativas y donde esta ella",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "be honest and transparent about your report performance"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Siempre que tengas a alguien a cargo, y con mas urgencia cuando notes que a menudo se esta preguntando que piensas de ella.",
+  "entregable_esperado": "Tu persona a cargo sabiendo en todo momento cuales son tus expectativas y donde esta ella respecto a ellas, y sabiendo exactamente por que lo crees.",
+  "escala_minima": "Una sola persona a cargo. No hace falta ni ciclo de evaluacion ni instrumento: hace falta decirlo.",
+  "pasos_accionables": [
+    "Parte del desequilibrio de poder: tu punto de vista sobre como lo esta haciendo tu persona a cargo pesa mucho mas que el suyo sobre como lo estas haciendo tu, porque eres tu quien determina en que trabaja y si debe ascender o si debe ser despedida.",
+    "Asume por eso que la responsabilidad de ser honesto y transparente sobre como evaluas el desempenio recae en ti.",
+    "Haz que tu persona a cargo tenga en todo momento una idea clara de cuales son tus expectativas y de donde esta ella respecto a ellas.",
+    "Si a menudo se esta preguntando que piensa de ella su jefe, sube el nivel de opinion que le das.",
+    "No des por hecho que puede leer entre lineas, ni que la falta de noticias sean buenas noticias.",
+    "Si te parece la personificacion de lo estupendo, diselo.",
+    "Y si no crees que este operando al nivel que te gustaria ver, tambien debe saberlo, y saber exactamente por que lo crees."
+  ],
+  "resumen_teorico": "Es la tercera de las cuatro acciones que el libro pide para ganarse la confianza, y la que cuelga del desequilibrio de poder que el propio libro nombra: como el directivo decide el trabajo, el ascenso y el despido, su lectura pesa mas, y por eso la carga de ser transparente cae de su lado. El inventario propio del libro es la lista de cuatro mandatos concretos que siguen a la regla general, nombrados uno a uno en la misma linea: subir el nivel de opinion si la persona se lo pregunta, no dar por hecho que lee entre lineas, decirlo cuando es estupendo, y decirlo tambien cuando no lo es, con el por que. Lo que el libro NO dice, y por eso no esta escrito aqui, es con que frecuencia se dice ni en que formato, y para el como remite al capitulo siguiente."
+}

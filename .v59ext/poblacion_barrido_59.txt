@@ -1,0 +1,8 @@
+$ for f in .v59ext/informe59_*.txt; do grep "poblacion del barrido" "$f"; done
+poblacion del barrido       : 431   (346 del grafo mas 85 que esperan en bandejas)
+poblacion del barrido       : 432   (346 del grafo mas 86 que esperan en bandejas)
+poblacion del barrido       : 433   (346 del grafo mas 87 que esperan en bandejas)
+poblacion del barrido       : 434   (346 del grafo mas 88 que esperan en bandejas)
+poblacion del barrido       : 435   (346 del grafo mas 89 que esperan en bandejas)
+poblacion del barrido       : 436   (346 del grafo mas 90 que esperan en bandejas)
+poblacion del barrido       : 437   (346 del grafo mas 91 que esperan en bandejas)

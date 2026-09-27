@@ -1,0 +1,27 @@
+candidato                                        cap     pasos   T   P
+reunir_informacion_gerencial_vias_variadas       cap_04      8   8   0
+escalonar_fuentes_informacion_gerencial          cap_04      7   7   0
+programar_visita_area_observar_despachar         cap_04      8   8   0
+transmitir_objetivos_prioridades_preferencias    cap_04      5   5   0
+empujar_persona_reunion_direccion_preferida      cap_04      7   7   0
+subir_productividad_gerencial_tres_vias          cap_04      4   4   0
+buscar_actividad_alta_palanca_tres_vias          cap_04      4   4   0
+elegir_momento_actividad_palanca_maxima          cap_04      7   7   0
+detectar_palanca_negativa_actividad_mando        cap_04      9   9   0
+delegar_tarea_base_comun_seguimiento             cap_04     10  10   0
+supervisar_tarea_delegada_etapa_menor_valor      cap_04      9   9   0
+supervisar_decision_delegada_preguntas_concretas cap_04      6   6   0
+identificar_paso_limitante_jornada_desfases      cap_04      5   5   0
+agrupar_tareas_semejantes_aprovechar_preparacion cap_04      6   6   0
+decir_no_trabajo_excede_capacidad                cap_04     10  10   0
+usar_calendario_herramienta_planificacion_produccion cap_04      7   7   0
+llevar_inventario_proyectos_discrecionales       cap_04      5   5   0
+dimensionar_numero_subordinados_medio_dia_semanal cap_04     11  11   0
+buscar_regularidad_bloques_iguales_trabajo_mando cap_04      9   9   0
+preparar_respuestas_estandar_interrupciones_repetidas cap_04      6   6   0
+agrupar_interrupciones_subordinados_reuniones_regulares cap_04      5   5   0
+canalizar_interrupciones_cartel_hora_oficina     cap_04      8   8   0
+pasos sin fila: 0 [] | filas sin paso: 0 []
+
+PASOS INVENTADOS POR CAPITULO, los 22 de cap_04 (COPIA de la vuelta 66 de .v64ext/contar_fidelidad.py, ruta cambiada)
+cap_04  candidatos 22  pasos 156  T 156  P 0  inventado 0,0 por ciento

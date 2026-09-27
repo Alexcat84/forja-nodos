@@ -1,0 +1,7 @@
+[
+ ('R1',   8,  19, 'el numero del capitulo, el rotulo `ADOLESCENCE: GETTING SOME HELP` y el epigrafe de Alvin Toffler', 'RESIDUO: rotulo y epigrafe'),
+ ('R2',  20,  57, 'la Adolescencia empieza cuando pides ayuda, y la ayuda que el tecnico busca es siempre tecnica: alguien con experiencia en tu mismo oficio', 'POSTURA'),
+ ('R3',  58, 127, 'Harry el contable: la Management by Abdication en vez de Delegation, el alivio de no tener que hacerlo, y la vida que se vuelve facil', 'CASO'),
+ ('R4', 128, 215, 'las llamadas que lo rompen todo, la vuelta del malabarista, la conclusion de que nadie se preocupa como tu, y la Comfort Zone tocando su limite', 'CASO y POSTURA'),
+ ('R5', 216, 221, 'Sarah y el nervio tocado: su propia zona de confort', 'RESIDUO: bisagra'),
+]

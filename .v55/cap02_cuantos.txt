@@ -1,0 +1,11 @@
+$ grep -l 'fuentes/grove_high_output/cap_02.md' cuarentena/grove_high_output/*.json | wc -l
+7
+
+$ grep -c '"texto"' $(grep -l 'fuentes/grove_high_output/cap_02.md' cuarentena/grove_high_output/*.json)
+cuarentena/grove_high_output/clasificar_trabajo_proceso_montaje_prueba.json:0
+cuarentena/grove_high_output/construir_flujo_produccion_paso_limitante.json:0
+cuarentena/grove_high_output/detectar_arreglar_fallo_etapa_menor_valor.json:0
+cuarentena/grove_high_output/dimensionar_inventario_materia_prima_reposicion.json:0
+cuarentena/grove_high_output/equilibrar_capacidad_personal_inventario_plazo.json:0
+cuarentena/grove_high_output/preferir_inspeccion_proceso_prueba_destructiva.json:0
+cuarentena/grove_high_output/rehacer_flujo_paso_limitante_capacidad.json:0

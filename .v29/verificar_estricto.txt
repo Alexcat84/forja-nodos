@@ -1,0 +1,4 @@
+lineas de salida con id de nodo : 94
+las que NO viven literales      : 0
+
+VERDE: ninguna linea de salida esta tecleada

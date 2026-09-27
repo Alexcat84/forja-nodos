@@ -1,0 +1,8 @@
+nodos en dataset/nodos.jsonl                     : 321
+caracteres NO ASCII, todos                       : 169
+  U+00ED LATIN SMALL LETTER I WITH ACUTE      x1
+  U+00F1 LATIN SMALL LETTER N WITH TILDE      x167
+  U+00FC LATIN SMALL LETTER U WITH DIAERESIS  x1
+caracteres ACENTUADOS (tilde aguda o dieresis)   : 2
+  conducir_entrevista_cronologica_trayectoria    í   ...dole como creia que se medía su exito ...
+  interrumpir_candidato_escucha_reflexiva        ü   ... volver al tema. Eso avergüenza al can...

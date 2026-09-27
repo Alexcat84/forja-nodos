@@ -1,0 +1,9 @@
+$ grep -n "fundamental attribution error\|two folders\|praise in public\|Sheryl\|speaking coach" fuentes/scott_radical_candor/*.md
+fuentes/scott_radical_candor/cap_05.md:35:Sheryl laughed. “When you do that thing with your hand, I feel like you’re
+fuentes/scott_radical_candor/cap_05.md:39:Sheryl repeated her offer to help. “The good news is a speaking coach can re
+fuentes/scott_radical_candor/cap_05.md:115:I’m not proud to admit that I was a silent party to this. I was standing ri
+fuentes/scott_radical_candor/cap_05.md:261:Notice that Jobs catches himself. He’s careful not to personalize the criti
+fuentes/scott_radical_candor/cap_09.md:109:Finding help is better than offering it yourself. When Sheryl Sandberg offere
+fuentes/scott_radical_candor/cap_09.md:169:The “fundamental attribution error” will harm the effectiveness of your g
+fuentes/scott_radical_candor/cap_09.md:329:My father replied, “Yeah, I know what you mean, I work with a lot of women 
+fuentes/scott_radical_candor/cap_11.md:309:When I first got the job at Apple, I got a thoughtfully organized tri-fold fo

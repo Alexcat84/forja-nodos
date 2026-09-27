@@ -1,0 +1,13 @@
+| pieza | al abrir | al cerrar | movimiento | de donde sale |
+|---|---:|---:|---:|---|
+| rama | extraccion-mundo-11 | extraccion-mundo-11 | . | `git rev-parse --abbrev-ref HEAD` |
+| commit al cerrar | `1d6b07b` | `1d6b07b` | . | `git rev-parse --short HEAD` |
+| nodos en `dataset/nodos.jsonl` | 321 | **324** | +3 | `dataset/nodos.jsonl` |
+| veredictos en `bitacora/VEREDICTOS.jsonl` | 486 | **506** | +20 | `bitacora/VEREDICTOS.jsonl` |
+| de ellos, con anotacion `no_consumada: true` | 14 | **14** | 0 | `bitacora/VEREDICTOS.jsonl` |
+| aristas por `nodos_siguientes` | 129 | **134** | +5 | `dataset/nodos.jsonl` |
+| aristas por `nodos_previos` | 129 | **134** | +5 | `dataset/nodos.jsonl` |
+| candidatos en bandeja, lote 4 | 24 | **21** | -3 | PATRON: `cuarentena/scott_radical_candor/*.json` |
+| insertados y archivados, lote 4 | 118 | **121** | +3 | PATRON: `cuarentena/_insertados/scott_radical_candor/*.json` |
+| candidatos en bandeja, lote 5 | 3 | **3** | 0 | PATRON: `cuarentena/marquet_turn_the_ship/*.json` |
+| lote 4 insertado sobre `142`, por ciento | 83,1 | **85,2** | +2,1 | `cuarentena/_insertados/scott_radical_candor/` |

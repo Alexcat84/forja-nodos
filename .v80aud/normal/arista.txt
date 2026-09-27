@@ -1,0 +1,3 @@
+linea 1188: veredicto CONTINUA | paso_citado 7 | arista observar_reunion_rutinaria_senales_plantilla > seguir_frustrado_preguntar_implantacion_ideas
+su razon esta tal cual en la linea 28 de .v78ext/aristas_lectura.txt: True
+texto_citado igual al paso 7 de la madre en el grafo: True

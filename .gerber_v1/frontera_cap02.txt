@@ -1,0 +1,16 @@
+AVISO: cero celdas tecleadas en este instrumento. El arranque del cuerpo NO
+es una constante mia: sale de fuentes/gerber_emyth/cap_02.md, linea 8, que es la siguiente al segundo
+--- de la cabecera yaml (cierres en L1 y L7). El cuerpo va de L8 a L99.
+
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| `R1` | L8 a L15 | **18** | el rotulo `INTRODUCTION` y el epigrafe de Joseph Heller | **RESIDUO: rotulo y epigrafe** |
+| `R2` | L16 a L31 | **159** | para quien se escribio el libro y la creencia que lo sostiene: los negocios pequenios no funcionan, quien los posee si, y el problema no es que no trabajen sino que hacen el trabajo equivocado | **POSTURA** |
+| `R3` | L32 a L47 | **159** | las cifras del fracaso, el 80 por ciento a cinco anios y el otro 80 a los cinco siguientes, y las cuatro preguntas que el libro dice contestar | **POSTURA con cifra** |
+| `R4` | L48 a L59 | **384** | las cuatro ideas, `IDEA #1` a `IDEA #4`: el E-Myth, la Revolucion Llave en Mano, el Proceso de Desarrollo de Negocio y su aplicacion paso a paso | **POSTURA: son tesis, no medios** |
+| `R5` | L60 a L69 | **211** | los 25.000 duenios atendidos por E-Myth Worldwide desde 1977 y el libro como productor de resultados y no de un como se hace | **POSTURA y CASO** |
+| `R6` | L70 a L93 | **270** | tu negocio es un reflejo de quien eres, y por eso el primero que tiene que cambiar eres tu | **POSTURA** |
+| `R7` | L94 a L99 | **11** | el rotulo de la `PART I` | **RESIDUO: rotulo** |
+| **el cuerpo entero** | **L8 a L99** | **1212** | **suma de las piezas: 1212** | **residuo sin asignar: 0** |
+
+piezas: 7   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 1212   suma 1212   residuo 0

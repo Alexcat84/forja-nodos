@@ -1,0 +1,30 @@
+$ python forja.py insertar cuarentena/scott_radical_candor/conversar_historia_vida_descubrir_motivadores.json [veredictos y censos]
+ADUANA DE INSERCION, candidato 'conversar_historia_vida_descubrir_motivadores'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 349   (303 del grafo mas 46 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 2. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino desplegar_tres_conversaciones_carrera  [Desplegar con tu equipo la serie de tres conversaciones de carrera, con su cadencia y su encargo de ensenarlas a tus jefes]
+    levantada por: paso_contra_nodo
+    similitud_texto    0.220 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.641 (umbral 0.60)
+    paso 1 del candidato contra paso 1 de desplegar_tres_conversaciones_carrera
+
+  vecino desplegar_tres_conversaciones_carrera  [Desplegar con tu equipo la serie de tres conversaciones de carrera, con su cadencia y su encargo de ensenarlas a tus jefes]
+    levantada por: paso_contra_nodo
+    similitud_texto    0.220 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.641 (umbral 0.60)
+    paso 1 del candidato contra paso 1 de desplegar_tres_conversaciones_carrera
+  arista madre-hijo cableada y escrita RESUELTA: desplegar_tres_conversaciones_carrera > conversar_historia_vida_descubrir_motivadores
+  arista madre-hijo cableada y escrita RESUELTA: desplegar_tres_conversaciones_carrera > conversar_historia_vida_descubrir_motivadores
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 304
+  censos escritos: denominaciones, series_y_cabezas
+  veredictos en bitacora/VEREDICTOS.jsonl: 2
+CODIGO DE SALIDA: 0

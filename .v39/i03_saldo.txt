@@ -1,0 +1,9 @@
+$ python forja.py insertar cuarentena/scott_radical_candor/resolver_dudas_frecuentes_pedir_critica.json [veredictos y censos]
+DECLARADOS POR LECTURA: 2. Ninguna señal los levanto.
+VECINOS POR ENCIMA DE UMBRAL: 2. LA INSERCION QUEDA BLOQUEADA.
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 324
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 4
+CODIGO DE SALIDA: 0
+  ARCHIVADO EN EL MISMO ACTO (D.31): cuarentena/_insertados/scott_radical_candor/resolver_dudas_frecuentes_pedir_critica.json

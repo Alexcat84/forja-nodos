@@ -1,0 +1,1 @@
+asignar_responsable_unico_evolucion_planificada poblacion 479 (459 grafo mas 20 bandejas) vecinos 0

@@ -1,0 +1,27 @@
+===== dimensionar_plantilla_administrativa_pronostico | grafo
+  titulo: Dimensionar la plantilla de una unidad administrativa con el pronostico de su carga de trabajo
+  fuente: ['grove_high_output'] | previos: ['construir_indicador_tendencia_patron', 'elegir_indicador_salida_trabajo_administrativo'] | siguientes: []
+  cond: Cuando diriges una unidad administrativa cuya carga sube y baja, y su plantilla se ha venido fijando siempre por su nivel mas alto porque nadie tenia con que pronosticar su trabajo.
+  P1. Elige con cuidado los indicadores que caracterizan a la unidad administrativa y vigilalos de cerca, porque solo con eso estaras en condiciones de aplicarle los metodos de control de una fabrica.
+  P2. Deduce de los datos de tendencia unos patrones de hecho, que son los que esa clase de trabajo nunca tuvo.
+  P3. Usa esos patrones para pronosticar cuanta gente hace falta para sacar adelante las distintas tareas previstas.
+  P4. Pronostica la demanda de trabajo futura y ajusta despues a ese pronostico la salida de tu fabrica administrativa.
+  P5. Reasigna gente de un area a otra aplicando con rigor los principios del pronostico.
+  P6. Haz que el numero de personas case con el crecimiento o el descenso pronosticado de la actividad administrativa.
+  P7. Aplica ese rigor sin dejarlo caer, porque sin el la plantilla de una unidad administrativa se queda siempre en su nivel mas alto y, por la famosa ley de Parkinson, la gente encuentra la manera de que lo que esta haciendo llene el tiempo disponible para terminarlo.
+===== elegir_inspeccion_barrera_monitorizacion | grafo
+  titulo: Elegir entre retener el material en una barrera y dejarlo correr con muestreo de seguimiento
+  fuente: ['grove_high_output'] | previos: [] | siguientes: []
+  cond: Cuando vas a poner un punto de inspeccion y tienes que equilibrar dos cosas que tiran en sentidos contrarios: la calidad que la inspeccion mejora y la perturbacion que mete en el flujo de produccion.
+  P1. Antes de anadir una inspeccion, cuenta con que cuesta dinero hacerla y con que ademas encarece la cosa al interferir en el flujo de fabricacion y complicarlo.
+  P2. Cuenta tambien con que parte del material tendra que volver por etapas ya hechas, lo que estropea la suavidad con la que se mueve el resto del material.
+  P3. Plantea la necesidad de inspeccionar como un equilibrio entre lo que quieres conseguir con ella, que es mejor calidad, y la minima perturbacion del propio proceso de produccion.
+  P4. Elige entre las dos tecnicas que se usan normalmente para equilibrar esas dos necesidades: la inspeccion de barrera y el paso de monitorizacion.
+  P5. Si eliges la barrera, reten todo el material en ella hasta que terminen las pruebas de inspeccion; si el material pasa, muevelo a la etapa siguiente del proceso, y si falla, devuelvelo a una etapa anterior para que se reprocese o se deseche.
+  P6. Si eliges la monitorizacion, toma una muestra del material, y si esa muestra falla, deja una anotacion con la que calcular una tasa de fallo.
+  P7. No retengas el grueso del material mientras tomas la muestra: dejalo seguir moviendose por el proceso de fabricacion, que es lo que mantiene la suavidad del flujo.
+  P8. Para la linea cuando el seguimiento lo pida: por ejemplo, si tres muestras seguidas fallan la prueba de monitorizacion.
+  P9. Pesa el intercambio: si retienes todo el material anades tiempo de paso y frenas la fabricacion; la monitorizacion no produce un frenazo comparable, pero puede dejar escapar material malo antes de que puedas actuar sobre sus resultados y parar, lo que significa que a lo mejor tienes que rechazar ese material mas tarde, en una etapa de mas valor.
+  P10. Cuenta con que por el mismo dinero puedes hacer mucha mas monitorizacion que inspeccion de barrera, y con que hacer lo primero puede aportar mas a la calidad final del producto que elegir inspecciones de barrera menos frecuentes.
+  P11. Toma cada eleccion con un caso concreto delante, porque este intercambio no es evidente.
+  P12. Usa como regla de pulgar inclinarte por la monitorizacion cuando la experiencia ensene que no es probable que te encuentres con problemas grandes.

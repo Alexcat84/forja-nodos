@@ -1,0 +1,21 @@
+L153 del libro:
+Sometimes creating a culture of listening is simply a matter of managing meetings the right way. When just a couple of people were doing all the talking at a meeting, I’d stop and go around the table to ensure that everyone got heard. Other times, I would stand up in the next meeting and walk around, physically blocking a person who was talking too much. Sometimes I’d have a quick conversation with people before a meeting, asking some to pipe up and others to pipe down. In other words, part of my job was to constantly figure out new ways to “give the quiet ones a voice.”
+
+L373:
+Here are the three things I’ve learned about getting this balance right: Don’t waste your team’s time; Keep the “dirt under your fingernails”; and Block time to execute.
+
+minimizar_impuesto_colaboracion_equipo           no vive en el grafo
+aprender_resultados_vencer_dos_presiones         EN EL GRAFO
+proteger_tiempo_equipo_jefe                      no vive en el grafo
+mantener_manos_trabajo_real_equipo               no vive en el grafo
+reservar_calendario_tiempo_ejecutar              no vive en el grafo
+cambiar_posicion_hechos_explicar_cambio          EN EL GRAFO
+cuidarse_agotamiento_centro_rueda                no vive en el grafo
+
+pasos de aprender_resultados_vencer_dos_presiones:
+  1. Cuenta con lo que el texto llama naturaleza humana: que nos apegamos, a menudo de forma poco razonable, a los proyectos en los que hemos metido mucho tiempo y mucha energia.
+  2. Reune la disciplina casi sobrehumana que hace falta para dar un paso atras.
+  3. Reconoce cuando vuestros resultados podrian ser mucho mejores, o cuando directamente no son buenos.
+  4. Aprende de la experiencia.
+  5. Cuenta con que la negacion es la reaccion mas comun a una ejecucion imperfecta, mas comun que el aprendizaje, y con el motivo que el texto pone en boca de un colega: es insoportablemente doloroso admi
+  6. Vence las dos enormes presiones que el texto dice que tentaban a la autora a dejar de aprender cuando dirigia un equipo grande: la presion de ser coherente, y el agotamiento.

@@ -1,0 +1,50 @@
+{
+  "id": "asegurar_opinion_llega_persona",
+  "titulo": "Asegurar que tu opinion llega de verdad a quien la recibe",
+  "denominaciones": {
+    "nombre_largo": "La segunda de las tres preguntas: por que lo que dices y lo que el otro oye no son lo mismo, y las tres tacticas para comprobar que ha llegado",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "is my feedback being heard"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cada vez que das opinion, y con mas urgencia cuando sospechas que tu mensaje no esta aterrizando o cuando te llega de rebote una version distorsionada de lo que dijiste.",
+  "entregable_esperado": "Confirmado que el mensaje llego: con la confirmacion verbal pedida, o con el resumen por correo mandado, o con el mensaje repetido desde varias fuentes.",
+  "escala_minima": "Una conversacion y una pregunta de cierre. La confirmacion verbal no cuesta nada.",
+  "pasos_accionables": [
+    "Da por hecho que lo que pretendes decir y lo que el oyente oye no siempre son lo mismo, como en el juego del telefono: puedes creer que estas siendo claro cuando en realidad estas diciendo demasiado, o demasiado poco, o mandando otro mensaje distinto con tu lenguaje corporal.",
+    "Cuenta ademas con el sesgo de confirmacion de quien escucha, que es nuestra tendencia a recordar lo que confirma nuestras creencias previas, y con el que no es raro que los mensajes se enturbien en la traduccion.",
+    "Cuenta tambien con la razon fisiologica que explica Ed Batista, entrenador ejecutivo y profesor en la escuela de negocios de posgrado de Stanford: parte de por que la opinion no se queda es que quien la recibe ve a menudo la conversacion como una amenaza, y su instinto de pelear o huir se dispara.",
+    "Haz por eso que quien te escucha se sienta seguro, que es la mejor manera de que tu opinion sea oida, y muestra que lo dices porque te importa esa persona y quieres que le vaya bien: si se te nota aunque sea un rastro de motivo oculto, que quieres tener razon, que la estas juzgando, que estas molesto o impaciente, el mensaje no va a pasar.",
+    "Usa opinion positiva, que es por esto tan eficaz: reconocer lo que va bien tiene mas probabilidad de cambiar la conducta que senialar solo los errores, porque refuerza lo que quieres ver mas sin resultar amenazante.",
+    "Cuando lo que tengas que compartir sea critico, entralo con curiosidad y con un deseo honesto de entender la perspectiva de tu persona a cargo: una forma simple es decir tu punto de forma directa y seguir con un te resuena esta opinion, por que si o por que no.",
+    "Cuenta con las dos salidas de esa pregunta: si la respuesta es si, la persona ya ha reconocido la opinion y ha reflexionado sobre ella, asi que tiene mas probabilidad de quedarse; y si es no, tambien vale, porque ahora podeis discutir por que y que haria la opinion mas util.",
+    "Al final de la conversacion, si no estas seguro de haber sido oido, usa la primera tactica, que es la confirmacion verbal: vale, vamos a asegurarnos de que estamos en la misma pagina, cuales son tus conclusiones y tus proximos pasos?",
+    "La segunda tactica es resumir por correo lo que se hablo, porque escribirlo aclara los puntos y ademas se puede releer y referenciar en el futuro.",
+    "Y la tercera es ayudar a la persona a oir el mismo mensaje muchas veces y desde muchas fuentes: dedica varias reuniones individuales a las areas de crecimiento mas duras, y recoge y comparte opinion de trescientos sesenta grados cuando sospeches que tu mensaje no aterriza, porque es una forma potente de transmitir que otros estan viendo lo mismo.",
+    "Y toma la version que el libro recoge de un directivo que lleva esa tercera tactica mas lejos: cada vez que recibe opinion sobre alguien de su equipo de boca de un tercero, le pregunta a ese tercero si estaria comodo compartiendo esa opinion directamente con la persona, porque razona que habra menos efecto de distorsion si se quita a si mismo de intermediario."
+  ],
+  "atribuciones": [
+    {
+      "cifra": "parte de por que la opinion no se queda es que quien la recibe ve la conversacion como una amenaza: el ritmo cardiaco y la tension suben casi con seguridad, acompaniados de una cascada de eventos neurologicos y fisiologicos que danian la capacidad de procesar informacion compleja y de reaccionar con reflexion, y bajo una respuesta de amenaza la gente es menos capaz de absorber y aplicar lo que le dices",
+      "autor": "Ed Batista",
+      "fuente": "zhuo_manager",
+      "fecha_corte": "no consta en el texto: el libro lo presenta como entrenador ejecutivo y profesor en la escuela de negocios de posgrado de Stanford, sin anio ni obra"
+    }
+  ],
+  "resumen_teorico": "Es la segunda de las tres preguntas con las que el libro manda comprobar si la opinion sirve, y la que el libro razona con el caso mas caro del capitulo: una conversacion preparada durante una semana, ensayada delante del espejo, que llego a su destinataria como una acusacion de microgestion sobre sus comidas y su uso de internet, cuando el punto era su baja productividad. De ahi salen las dos causas que el libro nombra, la distancia entre lo dicho y lo oido y el sesgo de confirmacion, y la tercera que toma de Ed Batista, la respuesta de amenaza. El inventario propio son las tres tacticas de cierre, numeradas en el libro como la primera, la segunda y la tercera, mas la pregunta literal de resonancia. Lo que el libro NO dice, y por eso no esta escrito aqui, es que hacer si la persona dice que le resuena y aun asi nada cambia."
+}

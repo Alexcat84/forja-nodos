@@ -1,0 +1,46 @@
+{
+  "id": "repartir_responsabilidad_contratar_equipo",
+  "titulo": "Repartir la responsabilidad de contratar cuando ya no puedes estar en todo",
+  "denominaciones": {
+    "nombre_largo": "La ansiedad de regalar tus piezas de construccion, y las cosas concretas con las que se fija el tono de la contratacion",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "create a culture that prioritizes hiring well, giving away your LEGOs"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando tu equipo crece hasta necesitar mas directivos y ya no es sostenible que estes en cada entrevista ni que seas el voto decisivo en cada puesta en comun.",
+  "entregable_esperado": "Una cultura de contratacion compartida que te sobrevive, con lideres que tratan la construccion del equipo con el maximo cuidado.",
+  "pasos_accionables": [
+    "Reconoce cuando toca: si tu equipo crece hasta el punto de necesitar mas directivos, la responsabilidad de contratar tiene que pasar a ser compartida, porque con decenas o cientos de contrataciones al anio no es sostenible que estes en cada entrevista ni que seas el voto decisivo en cada puesta en comun.",
+    "Ponle nombre a lo que vas a sentir, que el libro se lo pone: que pierdes control, como si estuvieras regalando tus piezas de construccion, con la misma ansiedad de un ninio que era el unico arquitecto y ahora tiene que compartir sus bloques con otros.",
+    "Mira el otro lado, que es lo que ganas: la ocasion de establecer una cultura que te sobreviva y que lleve tus valores a una escala mas amplia.",
+    "Presta mucha atencion a como fijas el tono de la contratacion.",
+    "Entrena a tus lideres para que traten la construccion del equipo con el maximo cuidado.",
+    "Asegurate de que dedican tiempo y atencion suficientes a conectar con candidatos notables.",
+    "Habla de tus valores repetidamente, para que todo el mundo entienda como es el gran talento.",
+    "Y sobre todo, deja claro que construir el equipo no es el trabajo de una sola persona, es el trabajo de todos."
+  ],
+  "resumen_teorico": "Cierra el capitulo y es la unica pieza cuyo objeto es el resto de directivos y no los candidatos. Lo que la hace procedimentable son los cuatro actos concretos con los que el libro dice que se fija el tono, entrenar, asegurar el tiempo, repetir los valores y declarar que es trabajo de todos, nombrados uno a uno. El paso 2 va dentro porque el libro nombra la ansiedad con una metafora que es de una tercera persona citada, y esa metafora es lo que hace reconocible el momento. Lo que el libro NO dice, y por eso no esta escrito aqui, es como se entrena a esos lideres, ni quien decide cuando ya no hace falta tu voto, ni como se comprueba que el tono se mantiene.",
+  "atribuciones": [
+    {
+      "cifra": "la ansiedad de repartir la responsabilidad segun crece un equipo se parece a la de un ninio que era el unico arquitecto y ahora tiene que compartir sus bloques de construccion con otros",
+      "autor": "Molly Graham, citada por Julie Zhuo",
+      "fuente": "zhuo_manager",
+      "fecha_corte": "no consta el anio en el texto: el libro la presenta como conocedora del hipercrecimiento por su paso por Google, Facebook y otras empresas nuevas"
+    }
+  ],
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}

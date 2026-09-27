@@ -1,0 +1,13 @@
+$ python forja.py arista --madre construir_flujo_produccion_paso_limitante --hijo identificar_paso_limitante_jornada_desfases --paso 5 --razon <fila 6> --veredicto CONTINUA --cita-veredicto <fila 6>
+DECLARACION DE ARISTA POR LECTURA (D.37)
+  madre: construir_flujo_produccion_paso_limitante
+  hijo : identificar_paso_limitante_jornada_desfases
+  paso citado de la madre: 5
+    Fija el paso limitante, que es el paso del flujo que determina la forma del conjunto, y para encontrarlo pregunta cual de los componentes tarda mas en
+  señales del par: familia_id 0.25, paso_contra_nodo 0.377, similitud_texto 0.192
+    NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: construir_flujo_produccion_paso_limitante > identificar_paso_limitante_jornada_desfases
+  razon en bitacora/VEREDICTOS.jsonl
+
+codigo 0

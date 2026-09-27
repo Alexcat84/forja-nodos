@@ -1,0 +1,46 @@
+====================================================================================================
+criticar_trabajo_evitar_desanimo [ grafo ] fuentes: ['scott_radical_candor']
+  CONDICION: Cuando vas a decirle a alguien que su trabajo no es bastante bueno y no quieres que la critica lo desanime ni que se lea como un ataque a la persona.
+  ENTREGABLE: La critica dicha sobre el trabajo y no sobre la persona, con el porque articulado y la via de vuelta senialada, en privado y en persona, sin dejar en duda tu confianza en su capacidad y sin dejar margen de interpretacion.
+    1. Critica el trabajo y no a la persona. El texto lo saca de la entrevista que transcribe: Jobs se corrige a si mismo a mitad de frase y dice cuando su trabajo no es bastante bueno, en vez de cuando ellos no son bastante buenos.
+    2. Cuenta con el error de atribucion fundamental que el texto nombra: es mas facil encontrar el fallo en la persona que en el contexto de lo que esta haciendo. Es mas facil decir eres descuidado que decir has estado trabajando noches y fines de semana y eso empie
+    3. No te quedes en decir que el trabajo no vale, ni siquiera dicho con suavidad. El texto dice que hay que hacerlo muy claramente, articular por que, y devolver a la persona a la via.
+    4. Hazlo de forma que no ponga en duda tu confianza en su capacidad y que no deje demasiado margen de interpretacion, que es lo que el propio texto reconoce como la parte dificil de hacer.
+    5. Antes de mandar una critica, averigua por que la otra persona esta haciendo lo que hace. El texto lo saca de un correo suyo que analiza como ejemplar de lo que no hay que hacer: no se habia molestado en averiguar por que el otro tomaba esa postura, y dio por h
+    6. Se humilde, sobre todo si llevas poco tiempo y no entiendes todavia como funcionan las cosas ahi dentro, que es el primer problema que el texto senala en aquel correo.
+    7. Se util, que segun el texto quiere decir estar invertido en ayudar a la persona a mejorar.
+    8. Da la guia en persona e inmediatamente.
+    9. Elogia en publico y critica en privado. El texto lo repite dos veces y lo cuenta como uno de los fallos de aquel correo, que fue mandado a treinta personas cuando lo respetuoso habria sido decirlo a solas.
+   10. Concentrate en tu relacion con la persona, que es lo primero que el texto pone en su lista.
+   11. Pide critica antes de darla, y ofrece mas elogio que critica.
+   12. No personalices, y deja claro que el problema no viene de un defecto de personalidad que no tenga arreglo.
+   13. Cuenta historias de cuando te criticaron a ti por algo parecido.
+   14. Y si lo que quieres es que un recien llegado aprenda a encajar la critica, el texto pone aparte el caso de un responsable veterano que despues de la primera revision de diseno de cada nuevo le ensenaba dos carpetas: una con diez hojas, que era su archivo de lo
+====================================================================================================
+dar_critica_inmediata_ayuda_tangible [ grafo ] fuentes: ['scott_radical_candor']
+  CONDICION: Cuando alguien de tu equipo acaba de hacer algo que en conjunto ha salido bien y aun asi hay una cosa concreta que tiene que arreglar.
+  ENTREGABLE: La critica dicha en el acto, con el elogio concreto y sincero por delante y sin sandwich, escalada solo hasta donde hizo falta para que se oyera, dicha sobre el trabajo y no sobre la persona, con ayuda tangible ofrecida y con la constancia de que se puede arreglar.
+    1. No dejes que el buen resultado global te impida senialar lo que hay que arreglar. El texto lo pone asi sobre el caso que analiza: aunque la charla habia ido bien en conjunto, Sheryl no dejo que el resultado positivo se interpusiera.
+    2. Hazlo inmediatamente, que segun el texto es lo que evita que el problema danie la reputacion de la persona donde trabaja.
+    3. Senala lo positivo que la persona consiguio, y hazlo a fondo y sinceramente. El texto subraya que en ese caso no hubo ningun intento de meter la critica en un sandwich entre elogios falsos, y que Sheryl menciono tres o cuatro cosas concretas que la autora habi
+    4. Que tu primer acercamiento sea suave pero directo.
+    5. Cuando se vea claro que no te estan oyendo, ponte mas directo. En el caso, la autora hizo dos veces el gesto de espantar una mosca con la mano y Sheryl le dijo que cuando hacia eso sentia que la estaba ignorando, y que iba a tener que ser muy muy directa para 
+    6. Aun entonces, no personalices: no lo conviertas en un rasgo esencial de la persona. El texto lo subraya sobre el caso, que dijo que sonaba estupida y no que era estupida.
+    7. Pregunta si la persona era consciente de eso. En el caso la autora contesto que si, que sabia que lo decia demasiado, y Sheryl le pregunto ademas si era porque estaba nerviosa.
+    8. Ofrece ayuda tangible en vez de dejar a la persona sola con el problema. En el caso fue recomendar un entrenador de oratoria y decir que la empresa lo pagaba, y repetir el ofrecimiento cuando la primera vez no fue recogido.
+    9. Cierra con que tiene arreglo. La formula del caso es que la buena noticia es que un entrenador ayuda de verdad con eso, y que esto se puede arreglar sin duda.
+   10. Cuenta con que aun haciendolo asi escuece un poco, que es lo que el texto dice del que la recibio.
+====================================================================================================
+repartir_semana_cuarenta_horas_jefe [ grafo ] fuentes: ['scott_radical_candor']
+  CONDICION: Cuando te abruma la cantidad de cosas que el libro te sugiere hacer como directivo y quieres saber cuanto tiempo de tu semana te van a costar.
+  ENTREGABLE: Tu semana de cuarenta horas repartida en sus tres partidas, con las quince horas de trabajo propio bloqueadas en el calendario y la horquilla de ocho, doce o cinco horas de gestion anotada segun le toque rachas a la semana.
+    1. Cuenta con lo que el texto anticipa: segun avanzas puede que te sientas abrumado de vez en cuando por la cantidad de cosas que te sugiere hacer como directivo. Respira hondo.
+    2. Parte de la meta que el libro declara sobre si mismo: ahorrarte tiempo, no llenarte el calendario de reuniones.
+    3. Da por hecho lo que el texto separa en dos mitades: si necesitas pasar tiempo con tus personas a cargo para ser un gran jefe, pero no necesitas pasar TODO tu tiempo con ellas.
+    4. Cuenta diez horas a la semana de gestion de tu equipo, que es lo que el texto cifra si aplicas cada idea, herramienta y tecnica del libro.
+    5. Descuenta de esas diez horas las cinco que el texto dice que ya son reuniones a solas que probablemente ya estabas teniendo de todos modos.
+    6. Saca del reparto semanal los procesos que el texto nombra como de rachas: las conversaciones de gestion del crecimiento, las reuniones de salto de nivel y las calibraciones, que segun el texto no se reparten cada semana sino que vienen a rachas.
+    7. Cuenta con la horquilla que el texto da por esas rachas: unas semanas ocho horas de trabajo asociado a tus responsabilidades nucleares como jefe, otras doce, otras cinco.
+    8. Cuenta con lo que el texto dice que esas diez horas compran: te ahorran despues una cantidad enorme de tiempo perdido y de quebraderos de cabeza.
+    9. Bloquea unas quince horas a la semana para pensar y ejecutar por tu cuenta en tu area de especialidad, que es lo que el texto sugiere ademas.
+   10. Cuenta las otras quince horas que quedan en una semana laboral de cuarenta: el texto dice que ojala puedas reclamarlas como tuyas, y avisa de que si eres como la autora vas a gastar la mayor parte en lidiar con lo imprevisible.

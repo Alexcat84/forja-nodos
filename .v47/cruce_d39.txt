@@ -1,0 +1,14 @@
+$ python - (cruce de TODAS las bandejas contra cerrados_en_extraccion, D.39) -- separador corregido
+cerrados_en_extraccion: ['scott_radical_candor', 'smart_who', 'zhuo_manager']
+
+bandeja                    candidatos  cerrado?  insertables
+_derivadas                          2 (D.38.4: descartada)
+_insertados                         0 (D.38.4: descartada)
+ensayo_referencia_163             163     False            0
+grove_high_output                  22     False            0
+marquet_turn_the_ship               3     False            0
+onu_consumidor                      0     False            0
+scott_radical_candor                0      True            0
+smart_who                           0      True            0
+zhuo_manager                        0      True            0
+TOTAL BANDEJA                     188                      0

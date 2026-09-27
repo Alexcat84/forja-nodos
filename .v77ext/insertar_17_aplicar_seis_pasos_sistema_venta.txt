@@ -1,0 +1,40 @@
+fila 17, aplicar_seis_pasos_sistema_venta, lineas --veredicto: 2
+  --veredicto medir_sistema_venta_trece_indicadores_benchmark|CONTINUA|madre=aplicar_seis_pasos_sistema_venta|El vecino parte del producto de este candidato, y lo dice el libro: con el sistema de venta operando, L303 dice que sabras cuan predecible es por un Information System, y L339 que ese sistema sigue la actividad del Selling System de Benchmark a Benchmark; las trece cifras del vecino cuentan los Benchmarks que el paso 1 de este identifica. Procedimiento en los dos lados: aqui se identifica, se escribe el guion, se memoriza y se entrega; alli se cuenta y se registra en un formulario (L311 a L337) (DISCUTIBLE D76.16).
+  --veredicto distinguir_tres_tipos_sistemas_negocio|SANO|Hermanos del mismo capitulo: el vecino distingue los tres tipos de sistemas (L35 a L41), y este es un sistema de venta, que L137 da como ejemplo de Soft System. Un ejemplo no es la parte de la enumeracion (L45, What follows are examples of each): sin arista, y ninguno usa el producto del otro (DISCUTIBLE D76.13).
+inicio 2026-09-26 11:47:25
+======================================================================
+ADUANA DE INSERCION, candidato 'aplicar_seis_pasos_sistema_venta'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (453 del grafo mas 26 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 2. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino medir_sistema_venta_trece_indicadores_benchmark  [Medir tu sistema de venta con los trece indicadores del Information Benchmark que el libro enumera]
+    levantada por: similitud_texto
+    similitud_texto    0.361 (umbral 0.35)
+    familia_id         0.222 (umbral 0.30)
+    paso_contra_nodo   0.466 (umbral 0.60)
+    paso 5 del candidato contra paso 12 de medir_sistema_venta_trece_indicadores_benchmark
+
+  vecino distinguir_tres_tipos_sistemas_negocio  [Distinguir los tres tipos de sistemas que el libro nombra en tu negocio: Hard, Soft e Information Systems]
+    levantada por: similitud_texto
+    similitud_texto    0.396 (umbral 0.35)
+    familia_id         0.111 (umbral 0.30)
+    paso_contra_nodo   0.394 (umbral 0.60)
+    paso 2 del candidato contra paso 3 de distinguir_tres_tipos_sistemas_negocio
+  ARISTA EN COLA, no cableada: aplicar_seis_pasos_sistema_venta > medir_sistema_venta_trece_indicadores_benchmark
+    el otro extremo espera en la bandeja (D.29). El veredicto CONTINUA queda escrito y la arista se cablea cuando entre:
+      python forja.py arista --madre aplicar_seis_pasos_sistema_venta --hijo medir_sistema_venta_trece_indicadores_benchmark --paso <n> --razon "..."
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 454
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 2
+  ARISTAS EN COLA, sin cablear: 1
+    aplicar_seis_pasos_sistema_venta > medir_sistema_venta_trece_indicadores_benchmark
+    D.29: van a un bloque propio y titulado del reporte, y se cablean con `forja.py arista` cuando el otro extremo entre.
+
+======================================================================
+fin 2026-09-26 11:52:35 | codigo de salida 0 | 309.6 s

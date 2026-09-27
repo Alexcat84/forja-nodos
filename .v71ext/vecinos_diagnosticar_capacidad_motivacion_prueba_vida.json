@@ -1,0 +1,33 @@
+{
+ "id": "diagnosticar_capacidad_motivacion_prueba_vida",
+ "grafo": 410,
+ "bandejas": 69,
+ "vecinos": [
+  {
+   "id": "decidir_amistad_subordinado_prueba_revision_dificil",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.356,
+    "familia_id": 0.1,
+    "paso_contra_nodo": 0.484
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 1 de decidir_amistad_subordinado_prueba_revision_dificil"
+  },
+  {
+   "id": "diagnosticar_nivel_motivacion_reaccion_aumento_salario",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.366,
+    "familia_id": 0.222,
+    "paso_contra_nodo": 0.385
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 2 de diagnosticar_nivel_motivacion_reaccion_aumento_salario"
+  }
+ ]
+}

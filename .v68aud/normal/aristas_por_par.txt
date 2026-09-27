@@ -1,0 +1,10 @@
+nodos: 587f1d8 388 | hoy 390 | nuevos: ['agrupar_interrupciones_subordinados_reuniones_regulares', 'canalizar_interrupciones_cartel_hora_oficina']
+aristas por siguientes: 587f1d8 191 | hoy 193 | por previos: 587f1d8 191 | hoy 193
+asimetricas hoy (siguientes sin previos o al reves): 0
+nuevas: 2 | perdidas: 0
+  ESPERADA  agrupar_tareas_semejantes_aprovechar_preparacion > agrupar_interrupciones_subordinados_reuniones_regulares
+  ESPERADA  buscar_regularidad_bloques_iguales_trabajo_mando > canalizar_interrupciones_cartel_hora_oficina
+esperadas por mi lectura: 2 | nuevas que lo son: 2 | esperadas que no estan: []
+nodos de 587f1d8 que cambiaron: 2
+  agrupar_tareas_semejantes_aprovechar_preparacion: ['nodos_siguientes']
+  buscar_regularidad_bloques_iguales_trabajo_mando: ['nodos_siguientes']

@@ -1,0 +1,6 @@
+candidato archivar_indicadores_resolver_problemas | grafo 366 | bandejas 96 | poblacion 462 | vecinos 4
+  construir_indicador_tendencia_patron               similitud_texto                          texto 0.361 familia 0.143 paso 0.42 | paso 2 del candidato contra paso 3 de construir_indicador_tendencia_patron
+  revisar_tres_preguntas_valor_carrera               similitud_texto                          texto 0.369 familia 0.0 paso 0.414 | paso 2 del candidato contra paso 1 de revisar_tres_preguntas_valor_carrera
+  vencer_sindrome_grupo_pares_autoconfianza          similitud_texto                          texto 0.364 familia 0.0 paso 0.405 | paso 1 del candidato contra paso 5 de vencer_sindrome_grupo_pares_autoconfianza
+  cerrar_brecha_dos_preguntas_estrategia             similitud_texto                          texto 0.353 familia 0.0 paso 0.393 | paso 4 del candidato contra paso 6 de cerrar_brecha_dos_preguntas_estrategia
+FIN

@@ -1,0 +1,13 @@
+$ python forja.py arista --madre rehacer_flujo_paso_limitante_capacidad --hijo equilibrar_capacidad_personal_inventario_plazo --paso 4 --razon <fila 12> --veredicto CONTINUA --cita-veredicto <fila 12>
+DECLARACION DE ARISTA POR LECTURA (D.37)
+  madre: rehacer_flujo_paso_limitante_capacidad
+  hijo : equilibrar_capacidad_personal_inventario_plazo
+  paso citado de la madre: 4
+    Declara paso limitante nuevo el de la capacidad limitada, y rehaz el flujo entero alrededor de el, calculando otra vez hacia atras desde la hora de en
+  señales del par: familia_id 0.111, paso_contra_nodo 0.413, similitud_texto 0.3
+    NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: rehacer_flujo_paso_limitante_capacidad > equilibrar_capacidad_personal_inventario_plazo
+  razon en bitacora/VEREDICTOS.jsonl
+
+codigo 0

@@ -1,0 +1,109 @@
+(1) candidato | poblacion | vecinos | en grafo | en bandeja
+    cerrar_brecha_dos_preguntas_estrategia                   479  10   5   5
+    contestar_dos_preguntas_direccion_objetivos              479   6   3   3
+    definir_entorno_grupo_clientes_proveedores_competidores  479   6   2   4
+    determinar_estado_presente_capacidades_proyectos_merma   479   5   0   5
+    examinar_demanda_entorno_dos_marcos_temporales           479   4   0   4
+    examinar_entorno_expectativas_tecnologia_proveedores_grupos 479   6   0   6
+    fijar_horizonte_ventana_replanificacion                  479   3   1   2
+    fijar_periodo_direccion_objetivos_retroalimentacion      479   2   0   2
+    planificar_tres_pasos_demanda_estado_brecha              479   1   0   1
+    repartir_supervision_puesto_funcional_mision             479   0   0   0
+    elegir_modo_control_motivacion_factor_cua                479   0   0   0
+    escalonar_complejidad_puesto_empleado_nuevo              479   0   0   0
+    diagnosticar_capacidad_motivacion_prueba_vida            479   2   0   2
+    diagnosticar_nivel_motivacion_reaccion_aumento_salario   479   1   0   1
+    fijar_meta_direccion_objetivos_mitad_probabilidad        479   1   0   1
+    decidir_amistad_subordinado_prueba_revision_dificil      479   1   0   1
+    elegir_estilo_direccion_madurez_relevante_tarea          479   0   0   0
+    entregar_evaluacion_desempeno_tres_claves                479   1   0   1
+    guiar_subordinado_etapas_resistencia_desempeno           479   0   0   0
+    preparar_resena_mixta_hoja_trabajo                       479   1   0   1
+sin fichero de vecinos: 0 []
+(2) vecino levantado | senial | texto familia paso
+    cerrar_brecha_dos_preguntas_estrategia                 > preguntar_seguimiento_hallar_huecos                    grafo   paso_contra_nodo 0.265 0.000 0.645
+    cerrar_brecha_dos_preguntas_estrategia                 > responder_tres_preguntas_vocacion_directiva            grafo   paso_contra_nodo 0.225 0.111 0.628
+    cerrar_brecha_dos_preguntas_estrategia                 > contestar_dos_preguntas_direccion_objetivos            bandeja similitud_texto+paso_contra_nodo 0.431 0.250 0.626
+    cerrar_brecha_dos_preguntas_estrategia                 > preparar_preguntas_entrevista_antemano                 grafo   paso_contra_nodo 0.126 0.125 0.614
+    cerrar_brecha_dos_preguntas_estrategia                 > examinar_demanda_entorno_dos_marcos_temporales         bandeja similitud_texto  0.399 0.100 0.454
+    cerrar_brecha_dos_preguntas_estrategia                 > determinar_estado_presente_capacidades_proyectos_merma bandeja similitud_texto  0.384 0.000 0.451
+    cerrar_brecha_dos_preguntas_estrategia                 > examinar_entorno_expectativas_tecnologia_proveedores_grupos bandeja similitud_texto  0.449 0.000 0.418
+    cerrar_brecha_dos_preguntas_estrategia                 > archivar_indicadores_resolver_problemas                grafo   similitud_texto  0.351 0.000 0.431
+    cerrar_brecha_dos_preguntas_estrategia                 > cortar_discusion_libre_momento_justo                   grafo   similitud_texto  0.370 0.000 0.423
+    cerrar_brecha_dos_preguntas_estrategia                 > definir_entorno_grupo_clientes_proveedores_competidores bandeja similitud_texto  0.417 0.000 0.393
+    contestar_dos_preguntas_direccion_objetivos            > cerrar_brecha_dos_preguntas_estrategia                 bandeja similitud_texto+paso_contra_nodo 0.438 0.250 0.626
+    contestar_dos_preguntas_direccion_objetivos            > examinar_demanda_entorno_dos_marcos_temporales         bandeja similitud_texto  0.352 0.100 0.511
+    contestar_dos_preguntas_direccion_objetivos            > zanjar_seis_preguntas_decision_adelantado              grafo   similitud_texto  0.351 0.111 0.482
+    contestar_dos_preguntas_direccion_objetivos            > anunciar_decision_inesperada_reconvocar_reunion        grafo   similitud_texto  0.362 0.000 0.473
+    contestar_dos_preguntas_direccion_objetivos            > examinar_entorno_expectativas_tecnologia_proveedores_grupos bandeja similitud_texto  0.385 0.000 0.448
+    contestar_dos_preguntas_direccion_objetivos            > vencer_sindrome_grupo_pares_autoconfianza              grafo   similitud_texto  0.350 0.000 0.370
+    definir_entorno_grupo_clientes_proveedores_competidores > examinar_entorno_expectativas_tecnologia_proveedores_grupos bandeja similitud_texto+familia_id 0.406 0.333 0.524
+    definir_entorno_grupo_clientes_proveedores_competidores > examinar_demanda_entorno_dos_marcos_temporales         bandeja similitud_texto  0.396 0.091 0.450
+    definir_entorno_grupo_clientes_proveedores_competidores > anunciar_decision_inesperada_reconvocar_reunion        grafo   similitud_texto  0.374 0.000 0.444
+    definir_entorno_grupo_clientes_proveedores_competidores > cerrar_brecha_dos_preguntas_estrategia                 bandeja similitud_texto  0.428 0.000 0.444
+    definir_entorno_grupo_clientes_proveedores_competidores > vencer_sindrome_grupo_pares_autoconfianza              grafo   similitud_texto  0.374 0.100 0.395
+    definir_entorno_grupo_clientes_proveedores_competidores > fijar_horizonte_ventana_replanificacion                bandeja similitud_texto  0.372 0.000 0.392
+    determinar_estado_presente_capacidades_proyectos_merma > definir_entorno_grupo_clientes_proveedores_competidores bandeja similitud_texto  0.356 0.000 0.516
+    determinar_estado_presente_capacidades_proyectos_merma > examinar_entorno_expectativas_tecnologia_proveedores_grupos bandeja similitud_texto  0.390 0.000 0.484
+    determinar_estado_presente_capacidades_proyectos_merma > cerrar_brecha_dos_preguntas_estrategia                 bandeja similitud_texto  0.366 0.000 0.430
+    determinar_estado_presente_capacidades_proyectos_merma > examinar_demanda_entorno_dos_marcos_temporales         bandeja similitud_texto  0.357 0.000 0.413
+    determinar_estado_presente_capacidades_proyectos_merma > fijar_horizonte_ventana_replanificacion                bandeja similitud_texto  0.378 0.000 0.404
+    examinar_demanda_entorno_dos_marcos_temporales         > cerrar_brecha_dos_preguntas_estrategia                 bandeja similitud_texto  0.412 0.100 0.483
+    examinar_demanda_entorno_dos_marcos_temporales         > definir_entorno_grupo_clientes_proveedores_competidores bandeja similitud_texto  0.392 0.091 0.426
+    examinar_demanda_entorno_dos_marcos_temporales         > determinar_estado_presente_capacidades_proyectos_merma bandeja similitud_texto  0.371 0.000 0.404
+    examinar_demanda_entorno_dos_marcos_temporales         > examinar_entorno_expectativas_tecnologia_proveedores_grupos bandeja similitud_texto  0.377 0.200 0.391
+    examinar_entorno_expectativas_tecnologia_proveedores_grupos > definir_entorno_grupo_clientes_proveedores_competidores bandeja similitud_texto+familia_id 0.408 0.333 0.527
+    examinar_entorno_expectativas_tecnologia_proveedores_grupos > determinar_estado_presente_capacidades_proyectos_merma bandeja similitud_texto  0.398 0.000 0.497
+    examinar_entorno_expectativas_tecnologia_proveedores_grupos > examinar_demanda_entorno_dos_marcos_temporales         bandeja similitud_texto  0.372 0.200 0.482
+    examinar_entorno_expectativas_tecnologia_proveedores_grupos > cerrar_brecha_dos_preguntas_estrategia                 bandeja similitud_texto  0.419 0.000 0.433
+    examinar_entorno_expectativas_tecnologia_proveedores_grupos > contestar_dos_preguntas_direccion_objetivos            bandeja similitud_texto  0.378 0.000 0.406
+    examinar_entorno_expectativas_tecnologia_proveedores_grupos > fijar_periodo_direccion_objetivos_retroalimentacion    bandeja similitud_texto  0.356 0.000 0.406
+    fijar_horizonte_ventana_replanificacion                > fijar_periodo_direccion_objetivos_retroalimentacion    bandeja similitud_texto  0.385 0.125 0.430
+    fijar_horizonte_ventana_replanificacion                > determinar_estado_presente_capacidades_proyectos_merma bandeja similitud_texto  0.358 0.000 0.394
+    fijar_horizonte_ventana_replanificacion                > anunciar_decision_inesperada_reconvocar_reunion        grafo   similitud_texto  0.357 0.000 0.365
+    fijar_periodo_direccion_objetivos_retroalimentacion    > examinar_entorno_expectativas_tecnologia_proveedores_grupos bandeja similitud_texto  0.359 0.000 0.419
+    fijar_periodo_direccion_objetivos_retroalimentacion    > fijar_meta_direccion_objetivos_mitad_probabilidad      bandeja familia_id       0.281 0.375 0.376
+    planificar_tres_pasos_demanda_estado_brecha            > entregar_evaluacion_desempeno_tres_claves              bandeja similitud_texto  0.381 0.100 0.396
+    diagnosticar_capacidad_motivacion_prueba_vida          > decidir_amistad_subordinado_prueba_revision_dificil    bandeja similitud_texto  0.356 0.100 0.484
+    diagnosticar_capacidad_motivacion_prueba_vida          > diagnosticar_nivel_motivacion_reaccion_aumento_salario bandeja similitud_texto  0.366 0.222 0.385
+    diagnosticar_nivel_motivacion_reaccion_aumento_salario > diagnosticar_capacidad_motivacion_prueba_vida          bandeja similitud_texto  0.361 0.222 0.347
+    fijar_meta_direccion_objetivos_mitad_probabilidad      > fijar_periodo_direccion_objetivos_retroalimentacion    bandeja familia_id       0.282 0.375 0.381
+    decidir_amistad_subordinado_prueba_revision_dificil    > diagnosticar_capacidad_motivacion_prueba_vida          bandeja similitud_texto  0.351 0.100 0.467
+    entregar_evaluacion_desempeno_tres_claves              > planificar_tres_pasos_demanda_estado_brecha            bandeja similitud_texto  0.362 0.100 0.364
+    preparar_resena_mixta_hoja_trabajo                     > usar_banco_nueve_preguntas_entrevista                  bandeja similitud_texto  0.357 0.000 0.378
+filas de vecino: 50
+(3) pares sin orden | levantado desde
+    cerrar_brecha_dos_preguntas_estrategia                 ~ preguntar_seguimiento_hallar_huecos                    con fuera   solo cerrar_brecha_dos_preguntas_estrategia
+    cerrar_brecha_dos_preguntas_estrategia                 ~ responder_tres_preguntas_vocacion_directiva            con fuera   solo cerrar_brecha_dos_preguntas_estrategia
+    cerrar_brecha_dos_preguntas_estrategia                 ~ contestar_dos_preguntas_direccion_objetivos            tanda-tanda los dos
+    cerrar_brecha_dos_preguntas_estrategia                 ~ preparar_preguntas_entrevista_antemano                 con fuera   solo cerrar_brecha_dos_preguntas_estrategia
+    cerrar_brecha_dos_preguntas_estrategia                 ~ examinar_demanda_entorno_dos_marcos_temporales         tanda-tanda los dos
+    cerrar_brecha_dos_preguntas_estrategia                 ~ determinar_estado_presente_capacidades_proyectos_merma tanda-tanda los dos
+    cerrar_brecha_dos_preguntas_estrategia                 ~ examinar_entorno_expectativas_tecnologia_proveedores_grupos tanda-tanda los dos
+    archivar_indicadores_resolver_problemas                ~ cerrar_brecha_dos_preguntas_estrategia                 con fuera   solo cerrar_brecha_dos_preguntas_estrategia
+    cerrar_brecha_dos_preguntas_estrategia                 ~ cortar_discusion_libre_momento_justo                   con fuera   solo cerrar_brecha_dos_preguntas_estrategia
+    cerrar_brecha_dos_preguntas_estrategia                 ~ definir_entorno_grupo_clientes_proveedores_competidores tanda-tanda los dos
+    contestar_dos_preguntas_direccion_objetivos            ~ examinar_demanda_entorno_dos_marcos_temporales         tanda-tanda solo contestar_dos_preguntas_direccion_objetivos
+    contestar_dos_preguntas_direccion_objetivos            ~ zanjar_seis_preguntas_decision_adelantado              con fuera   solo contestar_dos_preguntas_direccion_objetivos
+    anunciar_decision_inesperada_reconvocar_reunion        ~ contestar_dos_preguntas_direccion_objetivos            con fuera   solo contestar_dos_preguntas_direccion_objetivos
+    contestar_dos_preguntas_direccion_objetivos            ~ examinar_entorno_expectativas_tecnologia_proveedores_grupos tanda-tanda los dos
+    contestar_dos_preguntas_direccion_objetivos            ~ vencer_sindrome_grupo_pares_autoconfianza              con fuera   solo contestar_dos_preguntas_direccion_objetivos
+    definir_entorno_grupo_clientes_proveedores_competidores ~ examinar_entorno_expectativas_tecnologia_proveedores_grupos tanda-tanda los dos
+    definir_entorno_grupo_clientes_proveedores_competidores ~ examinar_demanda_entorno_dos_marcos_temporales         tanda-tanda los dos
+    anunciar_decision_inesperada_reconvocar_reunion        ~ definir_entorno_grupo_clientes_proveedores_competidores con fuera   solo definir_entorno_grupo_clientes_proveedores_competidores
+    definir_entorno_grupo_clientes_proveedores_competidores ~ vencer_sindrome_grupo_pares_autoconfianza              con fuera   solo definir_entorno_grupo_clientes_proveedores_competidores
+    definir_entorno_grupo_clientes_proveedores_competidores ~ fijar_horizonte_ventana_replanificacion                tanda-tanda solo definir_entorno_grupo_clientes_proveedores_competidores
+    definir_entorno_grupo_clientes_proveedores_competidores ~ determinar_estado_presente_capacidades_proyectos_merma tanda-tanda solo determinar_estado_presente_capacidades_proyectos_merma
+    determinar_estado_presente_capacidades_proyectos_merma ~ examinar_entorno_expectativas_tecnologia_proveedores_grupos tanda-tanda los dos
+    determinar_estado_presente_capacidades_proyectos_merma ~ examinar_demanda_entorno_dos_marcos_temporales         tanda-tanda los dos
+    determinar_estado_presente_capacidades_proyectos_merma ~ fijar_horizonte_ventana_replanificacion                tanda-tanda los dos
+    examinar_demanda_entorno_dos_marcos_temporales         ~ examinar_entorno_expectativas_tecnologia_proveedores_grupos tanda-tanda los dos
+    examinar_entorno_expectativas_tecnologia_proveedores_grupos ~ fijar_periodo_direccion_objetivos_retroalimentacion    tanda-tanda los dos
+    fijar_horizonte_ventana_replanificacion                ~ fijar_periodo_direccion_objetivos_retroalimentacion    tanda-tanda solo fijar_horizonte_ventana_replanificacion
+    anunciar_decision_inesperada_reconvocar_reunion        ~ fijar_horizonte_ventana_replanificacion                con fuera   solo fijar_horizonte_ventana_replanificacion
+    fijar_meta_direccion_objetivos_mitad_probabilidad      ~ fijar_periodo_direccion_objetivos_retroalimentacion    tanda-tanda los dos
+    entregar_evaluacion_desempeno_tres_claves              ~ planificar_tres_pasos_demanda_estado_brecha            tanda-tanda los dos
+    decidir_amistad_subordinado_prueba_revision_dificil    ~ diagnosticar_capacidad_motivacion_prueba_vida          tanda-tanda los dos
+    diagnosticar_capacidad_motivacion_prueba_vida          ~ diagnosticar_nivel_motivacion_reaccion_aumento_salario tanda-tanda los dos
+    preparar_resena_mixta_hoja_trabajo                     ~ usar_banco_nueve_preguntas_entrevista                  con fuera   solo preparar_resena_mixta_hoja_trabajo
+pares sin orden: 33 | {'con fuera': 12, 'tanda-tanda': 21} | suma: 33

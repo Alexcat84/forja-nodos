@@ -1,0 +1,3 @@
+$ python -c "import io,sys; sys.path.insert(0,\".\"); from src import comun, correccion; l=io.open(\".v79ext/frontera_grove.txt\",encoding=\"utf-8\").read().split(\"\n\"); a=l[l.index(\"ANADE:\")+1]; r=l[l.index(\"RAZON:\")+1]; print(\"anade: empieza por la marca:\", a.startswith(correccion.MARCA), \"| caracteres:\", len(a), \"minimo:\", correccion.MINIMO_TEXTO, \"| guiones prohibidos:\", len(comun.buscar_guiones(a)), \"| comillas dobles:\", a.count(chr(34))); print(\"razon: caracteres:\", len(r), \"| guiones prohibidos:\", len(comun.buscar_guiones(r)), \"| comillas dobles:\", r.count(chr(34)))"
+anade: empieza por la marca: True | caracteres: 3296 minimo: 40 | guiones prohibidos: 0 | comillas dobles: 0
+razon: caracteres: 498 | guiones prohibidos: 0 | comillas dobles: 0

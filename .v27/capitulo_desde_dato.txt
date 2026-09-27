@@ -1,0 +1,31 @@
+NODOS DEL GRAFO           : 234
+  con capitulo recuperable de resumen_teorico/fuentes : 33
+  SIN capitulo recuperable                            : 201
+      registrar_fuente_canonica
+      elegir_grafia_clave
+      formular_codigo_comercializacion_empresarial
+      verificar_afirmaciones_ambientales_publicidad
+      detectar_abusos_contractuales_consumo
+      examinar_normas_pesos_medidas
+      informar_efectos_ambientales_productos
+      vigilar_practicas_comerciales_perjudiciales
+      abastecer_flujo_candidatos
+      abordar_cinco_efes_venta
+
+LOS DOCE DE LA VUELTA 26, CAPITULO LEIDO DEL DATO, Y SUS PASOS:
+   abrir_debate_humor_explicar_proposito         cap_07  pasos= 7
+   adaptar_escucha_cultura_ajena                 cap_07  pasos= 9
+   aprender_resultados_vencer_dos_presiones      cap_07  pasos= 6
+   bajar_detalle_organizacion_fuente_hechos      cap_07  pasos= 9
+   cambiar_posicion_hechos_explicar_cambio       cap_07  pasos= 9
+   decidir_momento_despedir_persona              cap_06  pasos=12
+   despedir_persona_franqueza_radical            cap_06  pasos=11
+   reconocer_recompensar_gente_estable           cap_06  pasos=12
+   retar_superestrellas_equipo_constantemente    cap_06  pasos=13
+   retirar_etiquetas_permanentes_equipo          cap_06  pasos=10
+   revisar_cinco_causas_mal_desempenio           cap_06  pasos=11
+   subir_vara_calidad_equipo                     cap_06  pasos=10
+
+REPARTO POR CAPITULO: {'cap_07': 5, 'cap_06': 7}
+PASOS POR CAPITULO  : {'cap_07': 40, 'cap_06': 79}
+TOTAL DE PASOS DE LOS DOCE: 119

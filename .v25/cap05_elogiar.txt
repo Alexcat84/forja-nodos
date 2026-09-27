@@ -1,0 +1,2 @@
+$ grep -n "as specific and thorough with praise\|handful of engineers\|50 percent below\|flight risk" fuentes/scott_radical_candor/cap_05.md
+211:My friend realized he had been ruinously empathetic. He was just trying to make Anatoly happy by praising him, but he’d accidentally thrown him under the bus. My friend’s s

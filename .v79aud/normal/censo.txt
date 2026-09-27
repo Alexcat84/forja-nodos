@@ -1,0 +1,21 @@
+$ wc -l dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl config/pares_mutuos.jsonl
+    459 dataset/nodos.jsonl
+   1172 bitacora/VEREDICTOS.jsonl
+      1 config/pares_mutuos.jsonl
+   1632 total
+$ for d in cuarentena/marquet_turn_the_ship cuarentena/_insertados/marquet_turn_the_ship cuarentena/gerber_emyth cuarentena/_insertados/gerber_emyth; do ...; done; echo "procesos $(ls -A procesos/ | wc -l)"
+cuarentena/marquet_turn_the_ship 20
+cuarentena/_insertados/marquet_turn_the_ship 0
+cuarentena/gerber_emyth 0
+cuarentena/_insertados/gerber_emyth 22
+procesos 0
+$ python .v70aud/poblacion.py
+poblacion: 479 | por sede: {'grafo': 459, 'bandeja': 20} | suma: 479
+$ sha1sum -c --quiet .v78aud/huellas_al_barrer.txt && echo ...
+las 20 fichas y el grafo de hoy: mismas huellas que al barrer en mi fase ciega de la 78
+$ python .v78ext/pasos_y_huellas.py | diff - .v78ext/pasos_y_huellas.txt && echo IDENTICO
+IDENTICO a .v78ext/pasos_y_huellas.txt
+$ git diff --stat c2df300a HEAD -- .vm01 bitacora dataset censos cuarentena | wc -l; git status --short -- .vm01 | wc -l; find .vm01 -type f | wc -l
+0
+0
+47

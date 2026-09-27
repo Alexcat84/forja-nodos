@@ -1,0 +1,55 @@
+recorrer_organizacion_escuchar_plantilla paso 6 | casa: dato / El texto dice
+    paso: Lee el estado de esas linternas como dato y no como examen. El texto dice que no pretendia ser una prueba, y que estaban lamentables: rotas, con las pilas gastadas y las bombillas mortecinas, de forma que no se veia nada.
+    nota: L15 but the flashlights were pitiful. Broken, dead batteries, dim bulbs; el como dato y no como examen lee el It wasn’t supposed to be a test de la misma linea y el I figured this was what Commodore Kenny was talking about, que toma las linternas como senal (DISCUTIBLE D78.4)
+seguir_frustrado_preguntar_implantacion_ideas paso 7 | casa: y que o no
+    paso: Quedate con el ejemplo concreto que salga de ahi. El del texto es el adiestramiento de ataque con misiles Tomahawk que habia querido dar a los oficiales varias veces, con el examen de enero por delante, y que o no se llego a programar nunca o se cancelo.
+    nota: L27 He had wanted to conduct training with the officers numerous times on Tomahawk missile strikes
+contar_firmas_cadena_tramite_parado paso 1 | casa: El texto dice
+    paso: Cuando en uno de tus recorridos veas a alguien de abajo con especial mala cara, preguntale como le va y no lo dejes en la primera respuesta. El texto dice que le apreto sobre como estaba.
+    nota: L37 one junior sailor looked particularly forlorn. When I pressed him on how he was doing, y el no lo dejes en la primera respuesta es ese pressed
+contar_firmas_cadena_tramite_parado paso 5 | casa: mayor
+    paso: Recorre despues la cadena entera que la regla de cadena de mando obliga a pasar, puesto por puesto. El texto la nombra uno a uno: su contramaestre de primera al mando, el jefe de division, el jefe de departamento, el suboficial mayor del barco, el oficial de division, el jefe de departamento y por fin el segundo comandante.
+    nota: L39 Since we enforce the chain of command, that means that a leave chit from a junior sailor must go though
+contar_firmas_cadena_tramite_parado paso 7 | casa: Compara
+    paso: Compara esa cuenta con lo que el formulario aguanta. El del texto tenia solo cinco lineas para firmas, y se partian lineas por la mitad con una regla para que cupieran todos.
+    nota: L39 The form had only five lines for signatures, so we were using rulers to half-split some of the lines. El compara es el only del texto, que pone las cinco lineas contra las siete firmas
+contar_firmas_cadena_tramite_parado paso 9 | casa: El texto dice
+    paso: Resuelvelo en el acto para la persona que lo espera. El texto dice que se movio, lo localizo y se ocupo de el.
+    nota: L43 and took care of it
+inspeccionar_reparto_informacion_notas_jefe paso 2 | casa: datos
+    paso: Mira que clases de cosa entran por ahi. El texto nombra tres: generales y administrativos, que anunciaban cursos o cambios de requisitos de papeleo o actualizaciones de manuales; de material, que informaban de cambios en procedimientos de mantenimiento o pedian datos de una valvula concreta de un fabricante concreto; y operativos, que daban direccion al calendario del barco, le asignaban espacio de navegacion y le encargaban operaciones.
+    nota: L45 Some messages were general and administrative
+auditar_formacion_premios_ultima_fila paso 1 | casa: mayor
+    paso: Ve a la reunion general que ya existe en tu organizacion, de las que se repiten un par de veces por semana. La del texto es la formacion de la manana en el muelle, con la tripulacion formada en cuadro detras de sus suboficiales y oficiales, y el comandante, el segundo y el suboficial mayor en el medio dando los anuncios.
+    nota: L55 Santa Fe had quarters on the pier a couple times a week
+auditar_formacion_premios_ultima_fila paso 2 | casa: mayor
+    paso: Andate por el borde del acto mientras sigue, que es lo que el texto hace: el comandante, el segundo y el suboficial mayor estaban en el medio dando los anuncios, y el autor se fue moviendo por la periferia.
+    nota: L57 As the formation went on, I wandered around the periphery
+auditar_formacion_premios_ultima_fila paso 3 | casa: mayor
+    paso: Ponte al fondo, donde esta la mayor parte de la gente.
+    nota: L57 Standing in the back, where most of the crew was
+auditar_formacion_premios_ultima_fila paso 11 | casa: El texto dice
+    paso: Mira si el que habla sabe los detalles de su gente. El texto dice que el comandante parecia no estar al tanto de donde venian los hombres y adonde iban, mientras se daba la bienvenida a los nuevos y se despedia a los que se iban.
+    nota: L55 The captain seemed unfamiliar with the details about the men
+ceder_control_reforzar_competencia_claridad paso 4 | casa: el texto dice
+    paso: Cuenta con la condicion que el texto dice haber descubierto sobre el control: solo funciona con una plantilla competente que entienda el proposito de la organizacion.
+    nota: L97 Control, we discovered, only works with a competent workforce that understands the organization
+ceder_control_reforzar_competencia_claridad paso 6 | casa: el texto dice
+    paso: No lo trates como una secuencia que se recorre una vez: el texto dice que las partes del libro se agrupan en esas categorias, pero que en la realidad estos ciclos se repiten en circulos cada vez mayores.
+    nota: L97 The book parts are generally grouped into these categories, but the reality of how this works is that these cycles are repeated in ever increasing circles
+cambiar_forma_trabajar_conservar_plantilla paso 4 | casa: sino
+    paso: Cuenta con el mensaje que manda no despedir a nadie, y que el texto pone como la razon de que aquello importara: a cada persona del equipo le llega que el que estaba mal no era el, sino el liderazgo.
+    nota: L29 This was important because it sent the message to each crew member; el sino el liderazgo es el that he wasn’t screwed up, the leadership was de la misma linea, y L27 In the end, I fired no one
+declarar_intencion_reemplazar_peticion_permiso paso 3 | casa: en vez de
+    paso: Quien recibe la intencion declarada responde con una aprobacion simple en vez de dar una orden, y deja que cada quien ejecute su propio plan. El texto lo dice asi: officers would state their intentions with 'I intend to . . .' and I would say, 'Very well.' Then each man would execute his plan.
+    nota: L55 Officers would state their intentions with; el en vez de dar una orden es el For my part, I would avoid giving orders de la misma linea
+resistir_dar_solucion_clasificar_decision_urgencia paso 2 | casa: en vez de
+    paso: Anticipa que decisiones se acercan y avisa a tu equipo con antelacion de que hara falta tomar una, en vez de esperar a que surja de golpe. El texto lo dice asi: this is harder than in the leader-follower approach because it requires you to anticipate decisions and alert your team to the need for an upcoming one.
+    nota: L107 This is harder than in the leader-follower approach because it requires you to anticipate decisions and alert your team, y L113 How many times do issues that require decisions come up on short notice, que es el surgir de golpe del paso
+acoger_inspectores_externos_fuente_aprendizaje paso 1 | casa: no solo / sino
+    paso: Usa a los inspectores no solo para las criticas puntuales de un problema, sino tambien en inspecciones completas: aprovechalos para difundir tus ideas en toda la organizacion, para aprender de otras unidades, y para documentar los problemas y mejorar la tuya. El texto lo dice asi: We would utilize the inspectors to disseminate our ideas throughout the squadron, to learn from others, and to document issues to improve the ship.
+    nota: L45 not only to one-time critiques and problems such as the shore power mishap, but also to entire inspections
+acoger_inspectores_externos_fuente_aprendizaje paso 2 | casa: compartir
+    paso: En las areas donde tu equipo hace algo excepcionalmente innovador o experto, trata a los inspectores como aliados con quienes compartir esas buenas practicas. El texto lo dice asi: Concerning areas where we were doing something exceptionally innovative or expertly, we viewed the inspectors as advocates to share our good practices with.
+    nota: L49 Concerning areas where we were doing something exceptionally innovative or expertly; el compartir es el we viewed the inspectors as advocates to share our good practices with de la misma linea
+pasos T: 107 | pasos T que casan: 18 | pasos T sin ninguna clausula del patron: 89

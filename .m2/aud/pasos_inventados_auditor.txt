@@ -1,0 +1,17 @@
+PASOS INVENTADOS POR CAPITULO (D.30 / AUDITOR_FORJA.md 8), contados por el AUDITOR
+denominador = pasos ESCRITOS, leidos con len(pasos_accionables) de cada ficha del disco
+numerador   = pasos adjudicados PUENTE por el auditor en esta vuelta
+
+  aplicar_ejercicio_codigo_genetico_control      cap_06  pasos  7  PUENTE 1
+  asignar_responsable_unico_evolucion_planificada cap_06  pasos  2  PUENTE 0
+  informar_cierre_jornada_conservar_propiedad_trabajo cap_04  pasos  5  PUENTE 0
+
+  capitulo       nodos  escritos    PUENTE INVENTADOS
+  cap_04             1         5         0   0,00 por ciento   (0 / 5)
+  cap_05             0         0         0   SIN SUPERFICIE   (0 / 0)
+  cap_06             2         9         1   11,11 por ciento   (1 / 9)
+  EL TRAMO           3        14         1   7,14 por ciento   (1 / 14)
+
+LA FILA QUE DECIDE ES LA PEOR (8.2): cap_06 con 1 de 9.
+LA LECTURA ALTERNATIVA, publicada para que se pueda discutir: si el paso 7 de
+aplicar_ejercicio_codigo_genetico_control se leyera TRANSCRIPCION, cap_06 seria 0 de 9 = 0,00.

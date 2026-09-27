@@ -1,0 +1,5 @@
+nodos en el grafo    : 234
+veredictos           : 240
+bandeja lote 4       : 111
+insertados del lote 4: 31
+cap_07 pendientes    : 25

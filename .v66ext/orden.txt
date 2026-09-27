@@ -1,0 +1,29 @@
+#   candidato                                                cap    pza  madre(s)                                           pob  dijo       vec  lin   listos
+1   reunir_informacion_gerencial_vias_variadas               cap_04 P7   -                                                  479  BLOQUEARIA 7    7     SI
+2   escalonar_fuentes_informacion_gerencial                  cap_04 P9   reunir_informacion_gerencial_vias_variadas         479  BLOQUEARIA 7    7     SI
+3   programar_visita_area_observar_despachar                 cap_04 P10  -                                                  479  BLOQUEARIA 7    7     SI
+4   transmitir_objetivos_prioridades_preferencias            cap_04 P11  -                                                  479  BLOQUEARIA 7    7     SI
+5   empujar_persona_reunion_direccion_preferida              cap_04 P13  -                                                  479  BLOQUEARIA 7    7     SI
+6   subir_productividad_gerencial_tres_vias                  cap_04 P18  -                                                  479  BLOQUEARIA 7    7     SI
+7   buscar_actividad_alta_palanca_tres_vias                  cap_04 P19  -                                                  479  BLOQUEARIA 7    7     SI
+8   elegir_momento_actividad_palanca_maxima                  cap_04 P20  -                                                  479  BLOQUEARIA 7    7     SI
+9   detectar_palanca_negativa_actividad_mando                cap_04 P21  -                                                  479  ENTRARIA   0    0     SI
+10  delegar_tarea_base_comun_seguimiento                     cap_04 P27  transmitir_objetivos_prioridades_preferencias      479  ENTRARIA   0    0     SI
+11  supervisar_tarea_delegada_etapa_menor_valor              cap_04 P29  delegar_tarea_base_comun_seguimiento, detectar_arreglar_fallo_etapa_menor_valor, variar_frecuencia_inspeccion_nivel_calidad 479  BLOQUEARIA 3    3     SI
+12  supervisar_decision_delegada_preguntas_concretas         cap_04 P30  delegar_tarea_base_comun_seguimiento               479  BLOQUEARIA 3    3     SI
+13  identificar_paso_limitante_jornada_desfases              cap_04 P32  construir_flujo_produccion_paso_limitante          479  BLOQUEARIA 6    6     SI
+14  agrupar_tareas_semejantes_aprovechar_preparacion         cap_04 P33  -                                                  479  BLOQUEARIA 5    5     SI
+15  decir_no_trabajo_excede_capacidad                        cap_04 P34  -                                                  479  BLOQUEARIA 4    4     SI
+16  usar_calendario_herramienta_planificacion_produccion     cap_04 P34  identificar_paso_limitante_jornada_desfases        479  BLOQUEARIA 1    1     SI
+17  dimensionar_numero_subordinados_medio_dia_semanal        cap_04 P38  -                                                  479  ENTRARIA   0    0     SI
+18  buscar_regularidad_bloques_iguales_trabajo_mando         cap_04 P39  representar_actividad_caja_negra_ventanas          479  BLOQUEARIA 4    4     SI
+19  preparar_respuestas_estandar_interrupciones_repetidas    cap_04 P41  -                                                  479  BLOQUEARIA 2    2     SI
+20  llevar_inventario_proyectos_discrecionales               cap_04 P36  -                                                  479  BLOQUEARIA 6    6     SI   <- corte del tope
+21  agrupar_interrupciones_subordinados_reuniones_regulares  cap_04 P42  agrupar_tareas_semejantes_aprovechar_preparacion   479  BLOQUEARIA 8    8     SI
+22  canalizar_interrupciones_cartel_hora_oficina             cap_04 P44  buscar_regularidad_bloques_iguales_trabajo_mando   479  BLOQUEARIA 1    1     SI
+
+COMPROBACIONES
+  hijo delante de su madre: 0 []
+  D.36, par que levanta en un solo sentido con el que lo levanta entrando antes: 0 []
+  hijo dentro del tope con su madre fuera: 0 []
+  tanda propuesta: 20 de 22; fuera del tope: agrupar_interrupciones_subordinados_reuniones_regulares, canalizar_interrupciones_cartel_hora_oficina

@@ -1,0 +1,9 @@
+=== fijar_fecha_cierre_debate_equipo  (4 vecinos)
+  explicar_idea_facil_comprender_oyente          [GRAFO]  por paso_contra_nodo
+      similitud 0.309  familia 0.000  paso 0.610   paso 6 del candidato contra paso 2 de explicar_idea_facil_comprender_oyente
+  centrar_debate_ideas_fuera_egos                [GRAFO]  por similitud_texto
+      similitud 0.355  familia 0.111  paso 0.551   paso 6 del candidato contra paso 6 de centrar_debate_ideas_fuera_egos
+  abrir_debate_humor_explicar_proposito          [GRAFO]  por similitud_texto
+      similitud 0.367  familia 0.111  paso 0.468   paso 6 del candidato contra paso 1 de abrir_debate_humor_explicar_proposito
+  definir_receta_propia_mantenerse_centrado      [bandeja]  por similitud_texto
+      similitud 0.350  familia 0.000  paso 0.436   paso 9 del candidato contra paso 8 de definir_receta_propia_mantenerse_centrado

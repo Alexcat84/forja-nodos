@@ -1,0 +1,10 @@
+construir_empresa_plantilla_vision_diaria     atribuciones=0  alias=0  previos=0  siguientes=0
+dar_valor_constante_cuatro_publicos           atribuciones=0  alias=0  previos=0  siguientes=0
+dictar_ritmo_crecimiento_preguntas_escritas   atribuciones=0  alias=0  previos=0  siguientes=0
+documentar_trabajo_manual_operaciones         atribuciones=0  alias=0  previos=0  siguientes=0
+fingir_prototipo_cinco_mil_replicas           atribuciones=0  alias=0  previos=0  siguientes=0
+hacer_trabajo_futuro_imaginar_negocio         atribuciones=0  alias=0  previos=0  siguientes=0
+interrogar_negocio_cinco_preguntas            atribuciones=0  alias=0  previos=0  siguientes=0
+operar_modelo_gente_destreza_minima           atribuciones=0  alias=0  previos=0  siguientes=0
+trazar_modelo_negocio_cliente_primero         atribuciones=0  alias=0  previos=0  siguientes=0
+unificar_color_forma_vestuario_modelo         atribuciones=1  alias=0  previos=0  siguientes=0

@@ -1,0 +1,2 @@
+    fijar_duracion_lugar_reunion_individual            resumen  11444   texto comparable  12366   el resumen es el 93 por ciento
+    fijar_frecuencia_reunion_individual_madurez_tarea  resumen  11944   texto comparable  13067   el resumen es el 91 por ciento

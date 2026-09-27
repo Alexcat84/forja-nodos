@@ -1,0 +1,32 @@
+LOS CINCO ULTIMOS TURNOS DE EXTRACTOR, leidos de docs/loop/loop.log
+  cerrado              USD        seg
+  2026-09-19 22:39:11   28.2521   6592
+  2026-09-20 13:06:30   20.6911   3503
+  2026-09-20 15:46:42   24.8943   6724
+  2026-09-20 17:55:07    8.2132   2310
+  2026-09-20 20:45:02   25.4153   6987
+
+EL UMBRAL ESCRITO DEL FUNDADOR (21 sep, punto 3): 'el turno baja a la mitad'
+  turno de Sonnet MINANDO      (v57) :   25.4153 USD en  6987 s
+  turno de Opus   MINANDO      (v55) :   24.8943 USD en  6724 s
+  turno de Opus   MINANDO      (v54) :   20.6911 USD en  3503 s
+  turno de Sonnet SIN COSECHA  (v56) :    8.2132 USD en  2310 s
+
+  media de los dos turnos de Opus     :   22.7927 USD
+  LA MITAD, que es lo que el umbral pide:  11.3964 USD
+
+  v57 contra v55 (Sonnet contra Opus, los dos minando) : 1.0209 veces
+  v57 contra la media de Opus                          : 1.1151 veces
+  v57 contra v56 (Sonnet minando contra Sonnet sin cosecha) : 3.0945 veces
+
+  EL UMBRAL 'BAJA A LA MITAD' SE CUMPLE: NO
+
+NORMALIZADO, LAS TRES MANERAS, Y NINGUNA SE ESCONDE
+  USD por candidato escrito   v57 (7 candidatos) : 3.6308
+  USD por candidato escrito   v55 (9 candidatos) : 2.7660
+  USD por palabra de cuerpo   v57 (9277 palabras): 0.002740
+  USD por palabra de cuerpo   v55 (5502 palabras de cap_09 mas cap_10): 0.004525
+
+  objetivo escrito de D.58 en regimen ligero: turno bajo 5 USD
+  v57 contra ese objetivo                   : 5.08 veces
+  umbral de declaracion de D.56             : 10 USD. v57 lo PASA: SI

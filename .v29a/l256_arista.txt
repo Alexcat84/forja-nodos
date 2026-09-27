@@ -1,0 +1,25 @@
+linea 248 veredicto= SANO candidato= recorrer_rueda_hacer_cosas_equipo vecino= recorrer_trece_elementos_proceso_evaluacion_formal
+   razon: No son el mismo trabajo ni se solapan: la cabeza de la rueda es el metodo de COLABORAR para decidir y ejecutar con tu equipo, y el vecino es el diseno de un PROCESO FORMAL DE EVALUACION DE DESEMPENIO con sus trece decisiones (nota si o no, escaleras de puesto, curva forzada, calibracion, frecuencia, trescientos sesenta grados). Lo levanta paso_contra_nodo 0.610 entre mi paso 10 (no te saltes ningun paso) y su paso 6 
+linea 249 veredicto= CONTINUA candidato= recorrer_rueda_hacer_cosas_equipo vecino= recorrer_rueda_conscientemente_cultura_equipo
+   razon: Adjudicado por la ACTA 25 3.3 con los dos ficheros impresos: la que NOMBRA es el vecino, en su paso 4 (e influye en tu cultura recorriendo a sabiendas los pasos de la rueda de hacer cosas), y ninguno de mis doce pasos nombra el procedimiento del vecino. La madre es el vecino y el hijo soy yo, y NO al reves como llevaba cinco vueltas escrito. Lo que anade el hijo son los doce pasos de la rueda que la madre solo nombra
+linea 250 veredicto= SANO candidato= recorrer_rueda_hacer_cosas_equipo vecino= reconocer_emociones_propias_avisar_equipo
+   razon: Distinto trabajo y distinta activacion: el vecino se activa cuando llegas con un mal dia y el equipo ya te lo ha notado en la cara, y su entregable es tu animo dicho en voz alta; la cabeza de la rueda se activa cuando el equipo tiene que decidir que hacer. Lo levanta similitud_texto 0.353, un pelo por encima del umbral 0.35, entre mi paso 4 (una idea facil de entender no es por eso una buena idea) y su paso 3 (no pue
+linea 251 veredicto= CONTINUA candidato= recorrer_rueda_conscientemente_cultura_equipo vecino= recorrer_rueda_hacer_cosas_equipo
+   razon: Adjudicado por la ACTA 25 3.3: la que NOMBRA es este candidato en su paso 4, e influye en tu cultura recorriendo a sabiendas los pasos de la rueda de hacer cosas. El vecino no tiene ningun paso que nombre a este. CORRECCION DECLARADA del 16 sep 2026 (ACTA 27 5.2, TAREA 2.c de la vuelta 28): esta linea NO SE CONSUMO. La escribio una corrida que imprimio RECHAZADO: no encuentro los dos extremos de la arista, y que no i
+linea 256 veredicto= SANO candidato= explicar_idea_facil_comprender_oyente vecino= compartir_logica_mostrar_razonamiento
+   razon: Son HERMANOS de la misma etapa de persuadir y no madre e hijo: ninguno nombra el procedimiento del otro. Comparten el diagnostico (cuando sabes algo a fondo cuesta acordarse de que los demas no lo saben), que es lo que levanta similitud_texto 0.370 entre mi paso 4 y su paso 3, pero de ese mismo diagnostico salen DOS actos distintos con DOS entregables distintos: el mio es ajustar que detalles incluyes, cuales dejas f
+
+recorrer_rueda_conscientemente_cultura_equipo | EN EL GRAFO
+   previos: []  siguientes: ['recorrer_rueda_hacer_cosas_equipo']  pasos: 14
+recorrer_rueda_hacer_cosas_equipo | EN EL GRAFO
+   previos: ['recorrer_rueda_conscientemente_cultura_equipo']  siguientes: []  pasos: 12
+crear_espacio_seguro_madurar_ideas_nuevas | EN EL GRAFO
+   previos: []  siguientes: []  pasos: 14
+crear_obligacion_disentir_equipo | EN EL GRAFO
+   previos: []  siguientes: []  pasos: 5
+
+orden en el dataset (indice):
+   240 recorrer_rueda_conscientemente_cultura_equipo
+   241 recorrer_rueda_hacer_cosas_equipo
+   242 crear_espacio_seguro_madurar_ideas_nuevas
+   243 crear_obligacion_disentir_equipo

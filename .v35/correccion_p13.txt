@@ -1,0 +1,11 @@
+$ python forja.py corregir --nodo practicar_franqueza_radical_jefe_propio --anade "CORRECCION DECLARADA ..." --razon "..."
+CORRECCION DECLARADA SOBRE UN NODO YA INSERTADO
+  nodo : practicar_franqueza_radical_jefe_propio
+  campo: resumen_teorico
+  el texto viejo SIGUE ENTERO: 1983 caracteres, ninguno borrado
+  se aniaden 2388 caracteres al final
+  huella antes  : 98d6835edfe1d990
+  huella despues: 0392ce4b21a52500
+
+GATE VERDE sobre la simulacion. CORRECCION ESCRITA EN: practicar_franqueza_radical_jefe_propio
+  razon en bitacora/VEREDICTOS.jsonl

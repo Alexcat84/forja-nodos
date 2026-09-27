@@ -1,0 +1,21 @@
+=== compartir_logica_mostrar_razonamiento  (10 vecinos)
+  centrar_debate_ideas_fuera_egos                [GRAFO]  por similitud_texto
+      similitud 0.364  familia 0.000  paso 0.493   paso 4 del candidato contra paso 6 de centrar_debate_ideas_fuera_egos
+  minimizar_impuesto_colaboracion_equipo         [bandeja]  por similitud_texto
+      similitud 0.381  familia 0.000  paso 0.487   paso 4 del candidato contra paso 1 de minimizar_impuesto_colaboracion_equipo
+  establecer_credibilidad_pericia_humildad       [bandeja]  por similitud_texto
+      similitud 0.371  familia 0.000  paso 0.486   paso 4 del candidato contra paso 3 de establecer_credibilidad_pericia_humildad
+  explicar_idea_facil_comprender_oyente          [GRAFO]  por similitud_texto
+      similitud 0.380  familia 0.000  paso 0.473   paso 3 del candidato contra paso 4 de explicar_idea_facil_comprender_oyente
+  comprobar_criticas_hombre_mujeres_equipo       [bandeja]  por similitud_texto
+      similitud 0.365  familia 0.000  paso 0.466   paso 3 del candidato contra paso 6 de comprobar_criticas_hombre_mujeres_equipo
+  persuadir_emocion_oyente_no_propia             [bandeja]  por similitud_texto
+      similitud 0.356  familia 0.000  paso 0.453   paso 4 del candidato contra paso 1 de persuadir_emocion_oyente_no_propia
+  pedir_hechos_decision_evitar_recomendaciones   [bandeja]  por similitud_texto
+      similitud 0.365  familia 0.000  paso 0.445   paso 4 del candidato contra paso 4 de pedir_hechos_decision_evitar_recomendaciones
+  parar_debate_emocion_agotamiento               [bandeja]  por similitud_texto
+      similitud 0.371  familia 0.000  paso 0.439   paso 4 del candidato contra paso 1 de parar_debate_emocion_agotamiento
+  bajar_detalle_organizacion_fuente_hechos       [GRAFO]  por similitud_texto
+      similitud 0.371  familia 0.000  paso 0.437   paso 3 del candidato contra paso 8 de bajar_detalle_organizacion_fuente_hechos
+  crear_obligacion_disentir_equipo               [bandeja]  por similitud_texto
+      similitud 0.366  familia 0.000  paso 0.418   paso 4 del candidato contra paso 1 de crear_obligacion_disentir_equipo

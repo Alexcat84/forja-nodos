@@ -1,0 +1,26 @@
+INSTRUMENTO .vg01a/par.py  SIN CONSTANTES TECLEADAS: los dos ids llegan por argumento y todo lo demas sale de dataset/nodos.jsonl
+====================================================================================================
+pasear_organizacion_hallar_problemas_pequenios | Pasear una hora a la semana por la organizacion para enterarte de los problemas pequenios antes de que se vuelvan grandes | dominio gestion_equipos
+ENTREGABLE: Una hora a la semana de paseo puesta en tu calendario, con problemas pequenios encontrados, alguno arreglado por ti misma en el momento, y la gente con la que hablaste elegida entre la que llevabas tiempo sin ver.
+ACTIVACION: Cuando eres jefe de jefes y escuchar hondo en tu organizacion se te ha vuelto imposible: no puedes tener reuniones a solas con cientos o miles de personas, y si pones horas de consulta te llegan los mismos tres quejicas semana tras semana.
+PASOS (9):
+   1. Parte de la dificultad que el texto mide antes de dar el remedio: escuchar a quienes te reportan directamente es relativamente sencillo aunque lleve tiempo y disciplina, pero si eres jefe de jefes escuchar hondo en tu organizacion es mucho mas dificil, porque no puedes escuchar a todo el mundo ni tener reuniones a solas con cientos o miles de personas, y las horas de consulta te traen a los mismos tres quejicas semana tras semana.
+   2. Agenda una hora a la semana de tiempo para pasear.
+   3. Cuenta con que no es un invento nuevo: el texto lo llama una tecnica probada y contrastada, la gestion paseando, y dice que no tiene ninguna complicacion hacerlo.
+   4. Fijate en las cosas en las que no te fijas cuando estas enterrado en el trabajo en tu mesa o corriendo con la cabeza gacha de una reunion a la siguiente.
+   5. Preguntale a la gente que te llame la atencion, e idealmente a gente con la que hace tiempo que no hablas, en que estan trabajando.
+   6. Encuentra algunos problemas pequenios y tratalos como el texto dice, como el universo dentro de un grano de arena.
+   7. Cuenta con lo primero para lo que sirve ser consciente de esos problemas pequenios: te ayudan a encontrar el diablo en los detalles. Demasiadas veces el jefe es el ultimo en enterarse de que algo va mal, y el texto dice que la razon no suele ser que la gente esconda los problemas a proposito, sino que solo quieren traerte las cosas importantes, y un problema puede ser mas importante de lo que ellos creen.
+   8. Cuenta con lo segundo: ser consciente de los problemas pequenios y quiza incluso arremangarte y arreglarlos tu misma es la mejor manera de matar la mentalidad del esto no es mi trabajo o, peor, la del esto esta por debajo de mi. Si nada esta por debajo de tu atencion, los demas tambien prestaran atencion a los detalles.
+   9. Cuenta con lo tercero: cuando demuestras que te importan las cosas pequenias que contribuyen a la felicidad del cliente o a la calidad de vida de tu equipo, de repente a todo el mundo le importan mas, y algunas de las cosas grandes empiezan a funcionar mejor tambien.
+====================================================================================================
+debatir_decidir_asuntos_cultura_evitar_delegar | Debatir y decidir tu misma los asuntos de cultura que te tienta delegar a recursos humanos, para que no los decidan sin tu influencia humanizadora ni se queden sin decidir | dominio gestion_equipos
+ENTREGABLE: Esos asuntos debatidos y decididos explicitamente por ti, con tu influencia humanizadora dentro, en vez de decididos por recursos humanos y los abogados laborales o dejados sin decidir.
+ACTIVACION: Cuando tienes delante uno de esos asuntos de cultura en los que preferirias no gastar neuronas y te tienta pasarselo a recursos humanos o simplemente dejarlo pasar.
+PASOS (6):
+   1. Reconoce la tentacion por su nombre, que es lo que el texto hace: hay una serie de debates y decisiones que vas a estar tentado de delegar a recursos humanos, y suelen ser cosas en las que preferirias no gastar tus neuronas.
+   2. Ten delante los asuntos que el texto nombra uno a uno, porque son el inventario de lo que se delega: si a la fiesta se le va a llamar fiesta navidenia o fiesta de las fiestas, si va a haber arbol o no, si va a haber candelabro, si se va a servir alcohol en la fiesta, que se hace cuando llegas un lunes por la maniana y te encuentras ropa interior sobre la mesa de la sala de reuniones, y que se hace con que una persona del equipo le haya dado a otra una patada en el trasero de las de broma, de las que os dabais entre amigos en el colegio, y la que la recibio este indignada.
+   3. Pregunta por cada uno la pregunta que el texto pone al final de esa lista: quien va a decidir como se maneja esto.
+   4. Cuenta con lo que pasa si lo delegas, que el texto dice sin rodeos: las decisiones que acaben tomando recursos humanos y los abogados laborales sin tu influencia humanizadora empujaran tu cultura en la direccion de que la ley es un asno.
+   5. Y cuenta con lo que pasa si no lo decide nadie: acabas en territorio de El senior de las moscas.
+   6. Y decide sabiendo que ninguna de esas dos es la cultura que quieres, que es como el texto cierra.

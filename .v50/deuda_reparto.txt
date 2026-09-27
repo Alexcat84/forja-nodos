@@ -1,0 +1,8 @@
+$ reparto por especie de las 15 pendientes, contado de .v50/deuda_pendientes.txt
+  maquinaria        7   d020 d022 d028 d029 d030 d033 d037
+  deuda             3   d009 d011 d012
+  aduana            2   d024 d031
+  relevo de grove   1   d005
+  relectura         1   d006
+  doctrina          1   d007
+  TOTAL            15

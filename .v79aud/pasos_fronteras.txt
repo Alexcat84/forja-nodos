@@ -1,0 +1,39 @@
+===== comunicar_valores_diez_formas | grafo
+  titulo: No dejar de hablar de lo que te importa, dicho de diez formas distintas
+  fuente: ['zhuo_manager']
+  cond: Cuando algo te importa de verdad y quieres que le importe tambien a tu equipo, y te frena la idea de que repetirte va a resultar pesado o condescendiente.
+  P1. Quitate la idea de que repetirse es de mal estilo, que es lo que la autora creia al empezar a dirigir: se figuraba que su equipo lo encontraria molesto, y quiza incluso condescendiente, si decia lo mismo una y otra vez.
+  P2. Cuando algo te importe hondamente, no rehuyas hablar de ello: al contrario, abraza el decirle a la gente por que te importa.
+  P3. Cuenta con que para que el mensaje cale hay que oirlo diez veces distintas y decirlo de diez formas distintas.
+  P4. Recluta a otros para que ayuden a extender tu mensaje, porque cuantos mas puedas reclutar mas probable es que tenga efecto.
+  P5. Usa las cuatro vias que la autora nombra como las que ella prueba: conversaciones a solas sobre lo que le ronda la cabeza, correos a sus directivos con sus reflexiones de la semana, notas a todo su equipo sobre las prioridades de arriba, y sesiones de preguntas y respuestas en persona centradas en como trabajamos.
+  P6. Mete dentro tus propios traspies y lo que has aprendido con ellos, porque la autora midio que cuanto mas a menudo y mas apasionadamente habla de lo que le importa, incluidos esos traspies, mas positivamente responde su equipo.
+  P7. Mira el metodo que el libro cuenta de Sheryl Sandberg con las conversaciones dificiles, y fijate en que ella misma no recuerda cuando empezo, que es justamente el punto: pudo ser en una reunion de toda la empresa, en un turno de preguntas o en una cena en su casa. Pedia levantar la mano a quien hubiera tenido una conversacion dificil el ultimo mes, y luego contaba una de las suyas recientes.
+  P8. Cuenta con lo que eso produce, que es la razon de hacerlo: notas de gente diciendo a mi tambien me importa eso, como puedo ayudar; otros reforzando los mismos mensajes y apoyandose entre si para cambiar su conducta; y, aun cuando la gente no este de acuerdo contigo, el propio acto de discutirlo abiertamente arroja luz sobre el tema para todos.
+  P9. Cuenta tambien con lo que la autora dice que NO le ha pasado ni una sola vez: que nadie le haya dicho que resulta molesto o condescendiente. La opinion que recibe es la contraria, que hablar de tus valores te hace un lider mas autentico e inspirador.
+===== repetir_mensaje_invariable_diario_reunion_evento | cuarentena\marquet_turn_the_ship\repetir_mensaje_invariable_diario_reunion_evento.json
+  titulo: Repetir el mismo mensaje sin cambiarlo en la rutina diaria, en las reuniones y en cada evento, para que un cambio nuevo se vuelva imagen propia de la gente
+  fuente: ['marquet_turn_the_ship']
+  cond: Cuando estas implantando un cambio o una filosofia nueva en tu organizacion y notas que la gente lo escucha pero no logra imaginarlo de verdad, porque nunca ha visto antes algo parecido y lo interpreta con las imagenes de su experiencia previa.
+  P1. Repite el mismo mensaje dia tras dia, reunion tras reunion, evento tras evento. El texto lo dice asi: Repeat the same message day after day, meeting after meeting, event after event.
+  P2. No cambies el mensaje aunque suene redundante, repetitivo y aburrido: la alternativa, cambiarlo, produce confusion y falta de direccion. El texto lo dice asi: Sounds redundant, repetitive, and boring. But what's the alternative? Changing the message? That results in confusion and a lack of direction.
+===== delegar_tarea_base_comun_seguimiento | grafo
+  titulo: Delegar una tarea sobre una base comun de informacion, sin farsa y con su seguimiento, porque delegar sin seguimiento es abdicar
+  fuente: ['grove_high_output']
+  cond: Cuando vas a pasar una tarea tuya a un subordinado y quieres que el resultado llegue sin tener que prescribirle cada actividad en detalle.
+  P1. Cuenta con que el tiempo de un mando tiene una jerarquia de valores, y con que por eso la delegacion es un aspecto esencial del mando.
+  P2. Antes de delegar, comprueba que quien delega y quien recibe comparten una base comun de informacion y un conjunto comun de ideas o nociones operativas sobre como abordar la resolucion de problemas, que es un requisito que muchas veces no se cumple.
+  P3. Cuenta con que, si las dos partes no comparten esa base comun relevante, quien recibe solo puede llegar a ser un delegado efectivo con instrucciones especificas, y eso, igual que en la intromision donde las actividades concretas se prescriben en detalle, produce palanca de mando baja.
+  P4. Revisa que tareas no quieres soltar en realidad: todos tenemos algunas que no queremos delegar simplemente porque nos gusta hacerlas y preferimos no soltarlas.
+  P5. Deja que eso pase solo si se apoya en una decision consciente de retener ciertas tareas que disfrutas haciendo aunque pudieras delegarlas si quisieras; sabe exactamente lo que estas haciendo y evita la farsa de la delegacion insincera, que produce una palanca de mando negativa inmensa.
+  P6. Antes de decidir si delegas las actividades que te son familiares o las que no, aplica el principio: delegar sin seguimiento es abdicar.
+  P7. Cuenta con que nunca puedes lavarte las manos de una tarea: aun despues de delegarla sigues siendo responsable de que se cumpla, y supervisar la tarea delegada es la unica via practica que tienes de asegurar un resultado.
+  P8. Separa el seguimiento de la intromision: supervisar no es entrometerse, sino comprobar que una actividad avanza en linea con lo que se espera de ella.
+  P9. Elige con esa vara que delegas: como es mas facil supervisar algo que te resulta familiar, si tienes eleccion delega aquellas actividades que mejor conoces.
+  P10. Cuenta de antemano con lo que el experimento del lapiz ensena: es muy probable que hacerlo asi vaya en contra de tu fibra emocional.
+===== eliminar_seguimiento_descendente_responsabilizar_dueno | cuarentena\marquet_turn_the_ship\eliminar_seguimiento_descendente_responsabilizar_dueno.json
+  titulo: Eliminar el sistema de seguimiento descendente y responsabilizar a cada dueno de vigilar y completar lo suyo
+  fuente: ['marquet_turn_the_ship']
+  cond: Cuando existe un sistema centralizado, sostenido por un superior o una oficina de staff, dedicado a vigilar y reportar el estado de las tareas pendientes de otros en vez de a que esas tareas avancen.
+  P1. Dile a cada responsable de un area que el mismo, y no su superior, es quien debe vigilar sus propios pendientes y responder por completarlos. El texto lo dice asi: You are all going to monitor your own departments and whatever is due. You are responsible, not me and not the XO, for getting it done.
+  P2. Deja de mantener el sistema centralizado que solo vigilaba y reportaba el estado de esos pendientes, con sus reuniones de revision, porque ya no hace falta. El texto lo dice asi: we unburdened ourselves of the effort of maintaining the tickler.

@@ -1,0 +1,116 @@
+(1) candidato | poblacion | vecinos | en grafo | en bandeja
+    aplicar_cinco_pasos_proceso_contratacion                 479   2   0   2
+    aplicar_ocho_reglas_juego_personas                       479   0   0   0
+    aplicar_seis_pasos_sistema_venta                         479   2   0   2
+    cambiar_saludo_cliente_dos_ramas                         479   6   2   4
+    construir_empresa_plantilla_vision_diaria                479   1   1   0
+    construir_estrategia_gente_cuatro_componentes            479   4   0   4
+    cuantificar_impacto_innovacion_6_pasos                   479   5   3   2
+    dar_valor_constante_cuatro_publicos                      479   3   0   3
+    dictar_ritmo_crecimiento_preguntas_escritas              479   8   3   5
+    distinguir_tres_tipos_sistemas_negocio                   479   3   0   3
+    documentar_trabajo_manual_operaciones                    479   2   0   2
+    fingir_prototipo_cinco_mil_replicas                      479   0   0   0
+    hacer_trabajo_futuro_imaginar_negocio                    479   1   0   1
+    interrogar_negocio_cinco_preguntas                       479   1   0   1
+    medir_sistema_venta_trece_indicadores_benchmark          479   2   0   2
+    operar_modelo_gente_destreza_minima                      479   4   1   3
+    probar_traje_azul_seis_semanas                           479   3   0   3
+    recorrer_siete_pasos_programa_desarrollo_negocio         479   1   0   1
+    responder_4_preguntas_estandares_objetivo_estrategico    479   2   0   2
+    responder_8_preguntas_construir_primary_aim              479   1   0   1
+    trazar_modelo_negocio_cliente_primero                    479   1   0   1
+    unificar_color_forma_vestuario_modelo                    479   2   0   2
+sin fichero de vecinos: 0 []
+(2) vecino levantado | senial | texto familia paso
+    aplicar_cinco_pasos_proceso_contratacion               > construir_estrategia_gente_cuatro_componentes          bandeja similitud_texto  0.375 0.000 0.532
+    aplicar_cinco_pasos_proceso_contratacion               > fingir_prototipo_cinco_mil_replicas                    bandeja similitud_texto  0.355 0.111 0.512
+    aplicar_seis_pasos_sistema_venta                       > medir_sistema_venta_trece_indicadores_benchmark        bandeja similitud_texto  0.361 0.222 0.466
+    aplicar_seis_pasos_sistema_venta                       > distinguir_tres_tipos_sistemas_negocio                 bandeja similitud_texto  0.396 0.111 0.394
+    cambiar_saludo_cliente_dos_ramas                       > cuantificar_impacto_innovacion_6_pasos                 bandeja similitud_texto  0.442 0.000 0.325
+    cambiar_saludo_cliente_dos_ramas                       > probar_traje_azul_seis_semanas                         bandeja similitud_texto  0.426 0.000 0.260
+    cambiar_saludo_cliente_dos_ramas                       > dictar_ritmo_crecimiento_preguntas_escritas            bandeja similitud_texto  0.421 0.000 0.364
+    cambiar_saludo_cliente_dos_ramas                       > operar_modelo_gente_destreza_minima                    bandeja similitud_texto  0.373 0.000 0.349
+    cambiar_saludo_cliente_dos_ramas                       > responder_primer_aviso_renuncia_subordinado            grafo   similitud_texto  0.350 0.000 0.352
+    cambiar_saludo_cliente_dos_ramas                       > entregar_evaluacion_desempeno_tres_claves              grafo   similitud_texto  0.351 0.000 0.349
+    construir_empresa_plantilla_vision_diaria              > recorrer_trece_elementos_proceso_evaluacion_formal     grafo   similitud_texto  0.353 0.000 0.397
+    construir_estrategia_gente_cuatro_componentes          > recorrer_siete_pasos_programa_desarrollo_negocio       bandeja paso_contra_nodo 0.238 0.000 0.698
+    construir_estrategia_gente_cuatro_componentes          > aplicar_cinco_pasos_proceso_contratacion               bandeja similitud_texto  0.363 0.000 0.456
+    construir_estrategia_gente_cuatro_componentes          > medir_sistema_venta_trece_indicadores_benchmark        bandeja similitud_texto  0.368 0.000 0.444
+    construir_estrategia_gente_cuatro_componentes          > distinguir_tres_tipos_sistemas_negocio                 bandeja similitud_texto  0.399 0.000 0.422
+    cuantificar_impacto_innovacion_6_pasos                 > dictar_ritmo_crecimiento_preguntas_escritas            bandeja similitud_texto  0.412 0.000 0.528
+    cuantificar_impacto_innovacion_6_pasos                 > responder_primer_aviso_renuncia_subordinado            grafo   similitud_texto  0.371 0.000 0.464
+    cuantificar_impacto_innovacion_6_pasos                 > cambiar_saludo_cliente_dos_ramas                       bandeja similitud_texto  0.435 0.000 0.366
+    cuantificar_impacto_innovacion_6_pasos                 > pedir_critica_anonima_curso_entrenamiento_dictado      grafo   similitud_texto  0.357 0.000 0.391
+    cuantificar_impacto_innovacion_6_pasos                 > entregar_evaluacion_desempeno_tres_claves              grafo   similitud_texto  0.366 0.000 0.382
+    dar_valor_constante_cuatro_publicos                    > trazar_modelo_negocio_cliente_primero                  bandeja similitud_texto  0.395 0.000 0.564
+    dar_valor_constante_cuatro_publicos                    > documentar_trabajo_manual_operaciones                  bandeja similitud_texto  0.406 0.000 0.466
+    dar_valor_constante_cuatro_publicos                    > unificar_color_forma_vestuario_modelo                  bandeja similitud_texto  0.419 0.000 0.423
+    dictar_ritmo_crecimiento_preguntas_escritas            > descubrir_motivacion_sentido_persona                   grafo   paso_contra_nodo 0.203 0.000 0.603
+    dictar_ritmo_crecimiento_preguntas_escritas            > cuantificar_impacto_innovacion_6_pasos                 bandeja similitud_texto  0.420 0.000 0.478
+    dictar_ritmo_crecimiento_preguntas_escritas            > hacer_trabajo_futuro_imaginar_negocio                  bandeja similitud_texto  0.385 0.000 0.442
+    dictar_ritmo_crecimiento_preguntas_escritas            > planificar_tres_pasos_demanda_estado_brecha            grafo   similitud_texto  0.350 0.000 0.439
+    dictar_ritmo_crecimiento_preguntas_escritas            > operar_modelo_gente_destreza_minima                    bandeja similitud_texto  0.377 0.000 0.439
+    dictar_ritmo_crecimiento_preguntas_escritas            > responder_primer_aviso_renuncia_subordinado            grafo   similitud_texto  0.352 0.000 0.423
+    dictar_ritmo_crecimiento_preguntas_escritas            > cambiar_saludo_cliente_dos_ramas                       bandeja similitud_texto  0.423 0.000 0.355
+    dictar_ritmo_crecimiento_preguntas_escritas            > interrogar_negocio_cinco_preguntas                     bandeja similitud_texto  0.367 0.125 0.418
+    distinguir_tres_tipos_sistemas_negocio                 > medir_sistema_venta_trece_indicadores_benchmark        bandeja similitud_texto  0.451 0.100 0.394
+    distinguir_tres_tipos_sistemas_negocio                 > construir_estrategia_gente_cuatro_componentes          bandeja similitud_texto  0.399 0.000 0.442
+    distinguir_tres_tipos_sistemas_negocio                 > aplicar_seis_pasos_sistema_venta                       bandeja similitud_texto  0.358 0.111 0.413
+    documentar_trabajo_manual_operaciones                  > dar_valor_constante_cuatro_publicos                    bandeja similitud_texto  0.430 0.000 0.430
+    documentar_trabajo_manual_operaciones                  > unificar_color_forma_vestuario_modelo                  bandeja similitud_texto  0.366 0.000 0.425
+    hacer_trabajo_futuro_imaginar_negocio                  > dictar_ritmo_crecimiento_preguntas_escritas            bandeja similitud_texto  0.400 0.000 0.441
+    interrogar_negocio_cinco_preguntas                     > dictar_ritmo_crecimiento_preguntas_escritas            bandeja similitud_texto  0.369 0.125 0.473
+    medir_sistema_venta_trece_indicadores_benchmark        > aplicar_seis_pasos_sistema_venta                       bandeja similitud_texto  0.353 0.222 0.455
+    medir_sistema_venta_trece_indicadores_benchmark        > distinguir_tres_tipos_sistemas_negocio                 bandeja similitud_texto  0.446 0.100 0.378
+    operar_modelo_gente_destreza_minima                    > interrogar_negocio_cinco_preguntas                     bandeja similitud_texto  0.357 0.000 0.416
+    operar_modelo_gente_destreza_minima                    > responder_primer_aviso_renuncia_subordinado            grafo   similitud_texto  0.370 0.000 0.415
+    operar_modelo_gente_destreza_minima                    > dictar_ritmo_crecimiento_preguntas_escritas            bandeja similitud_texto  0.371 0.000 0.408
+    operar_modelo_gente_destreza_minima                    > cambiar_saludo_cliente_dos_ramas                       bandeja similitud_texto  0.355 0.000 0.357
+    probar_traje_azul_seis_semanas                         > responder_4_preguntas_estandares_objetivo_estrategico  bandeja similitud_texto  0.394 0.000 0.291
+    probar_traje_azul_seis_semanas                         > cambiar_saludo_cliente_dos_ramas                       bandeja similitud_texto  0.390 0.000 0.268
+    probar_traje_azul_seis_semanas                         > dar_valor_constante_cuatro_publicos                    bandeja similitud_texto  0.362 0.000 0.315
+    recorrer_siete_pasos_programa_desarrollo_negocio       > construir_estrategia_gente_cuatro_componentes          bandeja paso_contra_nodo 0.232 0.000 0.762
+    responder_4_preguntas_estandares_objetivo_estrategico  > responder_8_preguntas_construir_primary_aim            bandeja similitud_texto  0.380 0.250 0.451
+    responder_4_preguntas_estandares_objetivo_estrategico  > probar_traje_azul_seis_semanas                         bandeja similitud_texto  0.393 0.000 0.305
+    responder_8_preguntas_construir_primary_aim            > responder_4_preguntas_estandares_objetivo_estrategico  bandeja similitud_texto  0.395 0.250 0.429
+    trazar_modelo_negocio_cliente_primero                  > dar_valor_constante_cuatro_publicos                    bandeja similitud_texto  0.390 0.000 0.556
+    unificar_color_forma_vestuario_modelo                  > dar_valor_constante_cuatro_publicos                    bandeja similitud_texto  0.425 0.000 0.421
+    unificar_color_forma_vestuario_modelo                  > documentar_trabajo_manual_operaciones                  bandeja similitud_texto  0.358 0.000 0.425
+filas de vecino: 54
+(3) pares sin orden | levantado desde
+    aplicar_cinco_pasos_proceso_contratacion               ~ construir_estrategia_gente_cuatro_componentes          tanda-tanda los dos
+    aplicar_cinco_pasos_proceso_contratacion               ~ fingir_prototipo_cinco_mil_replicas                    tanda-tanda solo aplicar_cinco_pasos_proceso_contratacion
+    aplicar_seis_pasos_sistema_venta                       ~ medir_sistema_venta_trece_indicadores_benchmark        tanda-tanda los dos
+    aplicar_seis_pasos_sistema_venta                       ~ distinguir_tres_tipos_sistemas_negocio                 tanda-tanda los dos
+    cambiar_saludo_cliente_dos_ramas                       ~ cuantificar_impacto_innovacion_6_pasos                 tanda-tanda los dos
+    cambiar_saludo_cliente_dos_ramas                       ~ probar_traje_azul_seis_semanas                         tanda-tanda los dos
+    cambiar_saludo_cliente_dos_ramas                       ~ dictar_ritmo_crecimiento_preguntas_escritas            tanda-tanda los dos
+    cambiar_saludo_cliente_dos_ramas                       ~ operar_modelo_gente_destreza_minima                    tanda-tanda los dos
+    cambiar_saludo_cliente_dos_ramas                       ~ responder_primer_aviso_renuncia_subordinado            con fuera   solo cambiar_saludo_cliente_dos_ramas
+    cambiar_saludo_cliente_dos_ramas                       ~ entregar_evaluacion_desempeno_tres_claves              con fuera   solo cambiar_saludo_cliente_dos_ramas
+    construir_empresa_plantilla_vision_diaria              ~ recorrer_trece_elementos_proceso_evaluacion_formal     con fuera   solo construir_empresa_plantilla_vision_diaria
+    construir_estrategia_gente_cuatro_componentes          ~ recorrer_siete_pasos_programa_desarrollo_negocio       tanda-tanda los dos
+    construir_estrategia_gente_cuatro_componentes          ~ medir_sistema_venta_trece_indicadores_benchmark        tanda-tanda solo construir_estrategia_gente_cuatro_componentes
+    construir_estrategia_gente_cuatro_componentes          ~ distinguir_tres_tipos_sistemas_negocio                 tanda-tanda los dos
+    cuantificar_impacto_innovacion_6_pasos                 ~ dictar_ritmo_crecimiento_preguntas_escritas            tanda-tanda los dos
+    cuantificar_impacto_innovacion_6_pasos                 ~ responder_primer_aviso_renuncia_subordinado            con fuera   solo cuantificar_impacto_innovacion_6_pasos
+    cuantificar_impacto_innovacion_6_pasos                 ~ pedir_critica_anonima_curso_entrenamiento_dictado      con fuera   solo cuantificar_impacto_innovacion_6_pasos
+    cuantificar_impacto_innovacion_6_pasos                 ~ entregar_evaluacion_desempeno_tres_claves              con fuera   solo cuantificar_impacto_innovacion_6_pasos
+    dar_valor_constante_cuatro_publicos                    ~ trazar_modelo_negocio_cliente_primero                  tanda-tanda los dos
+    dar_valor_constante_cuatro_publicos                    ~ documentar_trabajo_manual_operaciones                  tanda-tanda los dos
+    dar_valor_constante_cuatro_publicos                    ~ unificar_color_forma_vestuario_modelo                  tanda-tanda los dos
+    descubrir_motivacion_sentido_persona                   ~ dictar_ritmo_crecimiento_preguntas_escritas            con fuera   solo dictar_ritmo_crecimiento_preguntas_escritas
+    dictar_ritmo_crecimiento_preguntas_escritas            ~ hacer_trabajo_futuro_imaginar_negocio                  tanda-tanda los dos
+    dictar_ritmo_crecimiento_preguntas_escritas            ~ planificar_tres_pasos_demanda_estado_brecha            con fuera   solo dictar_ritmo_crecimiento_preguntas_escritas
+    dictar_ritmo_crecimiento_preguntas_escritas            ~ operar_modelo_gente_destreza_minima                    tanda-tanda los dos
+    dictar_ritmo_crecimiento_preguntas_escritas            ~ responder_primer_aviso_renuncia_subordinado            con fuera   solo dictar_ritmo_crecimiento_preguntas_escritas
+    dictar_ritmo_crecimiento_preguntas_escritas            ~ interrogar_negocio_cinco_preguntas                     tanda-tanda los dos
+    distinguir_tres_tipos_sistemas_negocio                 ~ medir_sistema_venta_trece_indicadores_benchmark        tanda-tanda los dos
+    documentar_trabajo_manual_operaciones                  ~ unificar_color_forma_vestuario_modelo                  tanda-tanda los dos
+    interrogar_negocio_cinco_preguntas                     ~ operar_modelo_gente_destreza_minima                    tanda-tanda solo operar_modelo_gente_destreza_minima
+    operar_modelo_gente_destreza_minima                    ~ responder_primer_aviso_renuncia_subordinado            con fuera   solo operar_modelo_gente_destreza_minima
+    probar_traje_azul_seis_semanas                         ~ responder_4_preguntas_estandares_objetivo_estrategico  tanda-tanda los dos
+    dar_valor_constante_cuatro_publicos                    ~ probar_traje_azul_seis_semanas                         tanda-tanda solo probar_traje_azul_seis_semanas
+    responder_4_preguntas_estandares_objetivo_estrategico  ~ responder_8_preguntas_construir_primary_aim            tanda-tanda los dos
+pares sin orden: 34 | {'tanda-tanda': 24, 'con fuera': 10} | suma: 34

@@ -1,0 +1,10 @@
+CORRECCION DECLARADA SOBRE UN NODO YA INSERTADO
+  nodo : delimitar_franqueza_radical_cinco_noes
+  campo: resumen_teorico
+  el texto viejo SIGUE ENTERO: 1808 caracteres, ninguno borrado
+  se aniaden 787 caracteres al final
+  huella antes  : c43d1ffc6688387b
+  huella despues: e28c5904cc8adc22
+
+GATE VERDE sobre la simulacion. CORRECCION ESCRITA EN: delimitar_franqueza_radical_cinco_noes
+  razon en bitacora/VEREDICTOS.jsonl

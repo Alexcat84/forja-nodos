@@ -1,0 +1,41 @@
+{
+  "id": "dirigir_reunion_individual_semanal",
+  "titulo": "Dirigir la reunion individual semanal con cada persona a cargo",
+  "denominaciones": {
+    "nombre_largo": "La reunion a solas de cada semana, con su duracion minima, para que sirve y las cuatro ideas con las que se prepara",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "one on one meetings, 1:1s"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Siempre que tengas personas a cargo, y aunque te sientes al lado de ellas y las veas todos los dias, porque el libro dice que hay temas que de otro modo no salen nunca.",
+  "entregable_esperado": "Una reunion a solas por semana con cada persona a cargo, preparada de antemano por los dos, de la que tu persona a cargo sale sintiendo que le fue util.",
+  "escala_minima": "Una sola persona a cargo y treinta minutos por semana. Esa es la frecuencia y la duracion minimas que el libro recomienda.",
+  "pasos_accionables": [
+    "Da por hecho que el recurso mas precioso que tienes es tu propio tiempo y tu energia, y que gastarlo en tu equipo es lo que mas construye relaciones sanas.",
+    "Ten una reunion a solas con cada persona a cargo, no menos de una por semana y de treinta minutos, y mas tiempo si hace falta.",
+    "Usala para tratar temas que de otro modo no saldrian nunca, aunque te sientes al lado de la persona y la veas todos los dias: que la motiva, cuales son sus aspiraciones de carrera a largo plazo, como se siente en general con su trabajo, y mas.",
+    "Centrala en tu persona a cargo y en lo que la ayudaria a tener mas exito, no en ti y en lo que tu necesitas. Si lo que buscas es un parte de situacion, usa otro canal: el tiempo a solas es escaso y se aprovecha mejor en los temas que son mas dificiles de tratar en grupo o por correo.",
+    "Apunta a que tu persona a cargo salga sintiendo que le fue util. Si sale pensando que la conversacion fue agradable pero en general olvidable, puedes hacerlo mejor: tu trabajo es ser un multiplicador para tu gente, asi que si le quitas una barrera, le das una perspectiva nueva valiosa o le subes la confianza, la estas habilitando para tener mas exito.",
+    "Preparala, que es la respuesta a como se consiguen reuniones a solas estupendas: es raro que brote una conversacion asombrosa cuando nadie tiene un plan de que hablar.",
+    "Para prepararla el libro da cuatro ideas con las que empezar. La primera, discutir las prioridades de mas arriba: cuales son los uno, dos o tres resultados mas criticos para tu persona a cargo, y como puedes ayudarla a atacar esos retos.",
+    "La segunda, calibrar a que se parece un gran trabajo: teneis una vision compartida de hacia donde estais trabajando, estais sincronizados en metas y en expectativas?",
+    "La tercera, compartir opinion: que opinion puedes darle tu que la ayude, y que puede decirte ella a ti que te haga mas eficaz como directivo?",
+    "Y la cuarta, reflexionar sobre como van las cosas: de vez en cuando conviene alejar el foco y hablar del estado de animo general de tu persona a cargo, como se siente en conjunto, que la tiene satisfecha o insatisfecha, si alguna de sus metas ha cambiado, que ha aprendido ultimamente y que quiere aprender de aqui en adelante."
+  ],
+  "resumen_teorico": "Es la segunda de las cuatro acciones que el libro pide para ganarse la confianza, y la que convierte el tiempo del directivo en relacion. El libro pone aqui tres cosas que hacen procedimentable la linea y que por separado no bastarian: una frecuencia y una duracion con numero, un criterio de si la reunion sirvio o no, y un inventario de cuatro ideas para prepararla, nombradas una a una con su propio titulo. Las cuatro ideas van dentro y no a nodo propio porque cada una es un solo acto de una o dos lineas, y sacarlas fabricaria cuatro nodos de un paso. Lo que el libro NO dice, y por eso no esta escrito aqui, es quien convoca la reunion, si se toma nota, ni que hacer cuando la persona a cargo no trae nada preparado."
+}

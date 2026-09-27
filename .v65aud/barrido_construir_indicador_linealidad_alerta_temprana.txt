@@ -1,0 +1,1 @@
+construir_indicador_linealidad_alerta_temprana poblacion 479 (366 grafo mas 113 bandejas) vecinos 0

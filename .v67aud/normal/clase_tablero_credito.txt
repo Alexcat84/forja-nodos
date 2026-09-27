@@ -1,0 +1,23 @@
+$ python scripts/deuda.py --clase 68
+LIBRE
+  van 4 de 5 desde la ultima de saneamiento (la 64), con 57 deuda(s) esperando
+$ python forja.py tablero --puedo grove_high_output
+LINEA 'serial', LIBRO 'grove_high_output': SI
+  'grove_high_output' esta COSECHADO y sin dueño: su trabajo ya llego a esta rama, asi que se continua desde el capitulo siguiente al ultimo minado (cap_18), citando su frontera. D.50.
+$ python forja.py credito
+CREDITO DE LA LINEA 'serial' (D.48)
+  registro: docs/loop/CREDITO_serial.jsonl
+  tandas: 65, en 305 suceso(s) de especie
+
+  especie            racha      de donde sale
+  ----------------------------------------------------------------------
+  AUDITOR            0 de 3     ACTA 65
+  CIFRA PUBLICADA    0 de 2     ACTA 65
+  CLASE              0 de 2     ACTA 65
+  DATO MOVIDO        0 de 2     ACTA 65
+  REPORTE            0 de 3     ACTA 65
+
+  CREDITO ENTERO: ninguna especie en su tope.
+$ grep -n 'listo (USD' docs/loop/loop.log | tail -2
+5728:[2026-09-24 16:47:52] extractor listo (USD 11.075966200000002), 36983s, intento 1 de 7
+5732:[2026-09-24 16:55:02] auditor ciego listo (USD 2.6527459999999996), 424s, intento 1 de 7

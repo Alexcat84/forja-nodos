@@ -1,0 +1,39 @@
+=== que toco el commit de la vuelta 48 ===
+commit c64bc3ec38f93a4bc133f600a57a6ac8ba73b153
+Author: alexcat84 <alexcat84@users.noreply.github.com>
+Date:   Sat Sep 19 08:37:45 2026 -0400
+
+    VUELTA 48, cap_04 de grove_high_output: los 5 de P34a a P39 minados y pasados por la aduana en el acto, 0 PUENTE de 42 pasos, y cero inserciones por puerta medida
+    
+    El capitulo queda en 19 de sus 22 nodos. Quedan P41, P42 y P44 para la vuelta 49.
+    
+    - TAREA 1: las dos correcciones declaradas de la ACTA 46 escritas AL LADO de su texto
+      viejo, en II.3.b y en II.2.f, con los dos instrumentos del auditor corridos en esta
+      vuelta y no copiados del acta. d030 y d031 dichas y no pagadas.
+    - TAREA 2: 5 candidatos, uno por vez y en el orden del libro, cada uno por su
+      forja.py informe en el mismo acto en que se escribio. Saldo 2 ENTRARIA y
+      3 BLOQUEARIA, 0 CAERIA, 8 pares de cola leidos par a par. 18 aristas declaradas
+      dentro de las fichas con sus 18 destinos comprobados por instrumento. La arista
+      colgada de identificar_paso_limitante_jornada_desfases queda resuelta sin coste
+      propio, y la leccion va escrita dentro de la ficha nueva.
+    - TAREA 3: 0 PUENTE de 42 pasos hoy, 0 de 95 en los 14 ya minados contados de sus
+      propias fichas, 0 de 137 en cap_04 entero. Siete sitios de tentacion nombrados por
+      su especie, mas un octavo que no es puente y se dice igual.
+    - TAREA 4: cierre verde. El techo en PASOS se cumple (42 de 44) y el de minutos se
+      pasa (75,3 de 67), declarado con su medida: el paso costo 107,5 s contra los 90,9
+      con los que se calculo el 44. La prueba de aceptacion salio en rojo en su primera
+      corrida de cierre y se declara con su tabla de cuatro corridas en vez de publicar
+      solo la verde. Cuarta colision de D.52 reparada a mano y sellada por hash-object.
+    
+    CERO INSERCIONES: grove_high_output no esta en cerrados_en_extraccion y D.39 manda que
+    sus candidatos esperen. La puerta se midio, no se supuso.
+    
+    Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>
+
+=== las 14 fichas anteriores, intactas? ===
+5
+A	cuarentena/grove_high_output/buscar_regularidad_bloques_iguales_trabajo_mando.json
+A	cuarentena/grove_high_output/decir_no_trabajo_excede_capacidad.json
+A	cuarentena/grove_high_output/dimensionar_numero_subordinados_medio_dia_semanal.json
+A	cuarentena/grove_high_output/llevar_inventario_proyectos_discrecionales.json
+A	cuarentena/grove_high_output/usar_calendario_herramienta_planificacion_produccion.json

@@ -1,0 +1,35 @@
+============================================================================
+1. EL SALDO DE LOS DIECISIETE INFORMES, CONTADO DE SUS FICHEROS
+============================================================================
+informes leidos en .aduana_v22/ : 17
+  ENTRARIA     : 9
+  BLOQUEARIA   : 8
+  CAERIA       : 0
+  CHOCA        : 0
+
+filas de vecino levantadas      : 13
+pares DISTINTOS (candidato, vecino): 12
+
+============================================================================
+2. LA TABLA, IMPRESA Y NO TECLEADA
+============================================================================
+| | |
+|---|---|
+| **informes de un candidato corridos** | **17, uno por candidato y en el acto de escribirlo**. Saldo: **9 `ENTRARIA`, 8 `BLOQUEARIA`, 0 `CAERIA`** |
+| **filas de vecino levantadas** | **13**, que son **12 pares distintos** |
+
+============================================================================
+3. LOS PARES, UNO A UNO, PARA QUE LA CUENTA SE PUEDA RECONTAR
+============================================================================
+   1  bloquear_tiempo_pensar_calendario               contra  calibrar_ascensos_evitar_politica
+   2  bloquear_tiempo_pensar_calendario               contra  exigir_critica_jefe_reticente
+   3  bloquear_tiempo_pensar_calendario               contra  proteger_tiempo_equipo_jefe
+   4  bloquear_tiempo_pensar_calendario               contra  reservar_calendario_tiempo_ejecutar
+   5  calibrar_normalidad_preguntas_jefe              contra  preguntar_seguimiento_hallar_huecos
+   6  construir_confianza_equipo_tiempo_solas         contra  decidir_quien_comunica_cada_cuanto
+   7  conversar_historia_vida_descubrir_motivadores   contra  desplegar_tres_conversaciones_carrera
+   8  crear_espacio_seguro_madurar_ideas_nuevas       contra  nutrir_ideas_nuevas_reunion_solas
+   9  dirigir_reunion_decision                        contra  montar_reunion_gran_decision
+  10  montar_reunion_gran_debate                      contra  montar_reunion_gran_decision
+  11  montar_reunion_gran_decision                    contra  nutrir_ideas_nuevas_reunion_solas
+  12  recorrer_rueda_conscientemente_cultura_equipo   contra  recorrer_rueda_hacer_cosas_equipo

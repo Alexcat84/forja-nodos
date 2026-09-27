@@ -1,0 +1,1 @@
+agrupar_tareas_semejantes_aprovechar_preparacion poblacion 479 (368 grafo mas 111 bandejas) vecinos 5

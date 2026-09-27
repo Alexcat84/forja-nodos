@@ -1,0 +1,8 @@
+== despedir_persona_franqueza_radical
+a963a50 VUELTA 26 TANDA: entran los DOS del despido de cap_06, y la aduana me corrige el orden antes de tocar el grafo
+== reconocer_recompensar_gente_estable
+432d340 VUELTA 26 TANDA 2: entran reconocer_recompensar_gente_estable y retar_superestrellas_equipo_constantemente, y con ellos las DOS aristas D.37 de L117
+== repartir_semana_cuarenta_horas_jefe
+2f99a09 VUELTA 24 TAREA 5: el lote 4 CIERRA en extraccion (0 unidades sin minar, medido con mi instrumento) y la insercion D.39 arranca, uno por vez y en el orden del libro, con la desviacion de orden declarada antes de que se note
+== delimitar_franqueza_radical_cinco_noes
+2f99a09 VUELTA 24 TAREA 5: el lote 4 CIERRA en extraccion (0 unidades sin minar, medido con mi instrumento) y la insercion D.39 arranca, uno por vez y en el orden del libro, con la desviacion de orden declarada antes de que se note

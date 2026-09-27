@@ -1,0 +1,8 @@
+[
+ ('R1',   8,  19, 'el numero del capitulo, el rotulo `MATURITY AND THE ENTREPRENEURIAL PERSPECTIVE` y el epigrafe de Peter Drucker', 'RESIDUO: rotulo y epigrafe'),
+ ('R2',  20,  35, 'la Madurez no es el final de una serie: McDonalds, Federal Express y Disney empezaron asi, y lo que las separa es la Perspectiva Emprendedora', 'POSTURA'),
+ ('P1',  36,  51, 'LAS TRES RAZONES DE TOM WATSON PARA IBM, y el bucle diario que el libro le pone detras: el retrato de la empresa terminada, el retrato de como actuaria, actuar asi desde el primer dia, y el repaso de cada noche contra la plantilla', 'CANDIDATO A NODO, con su CASO nombrado dentro'),
+ ('R3',  52, 105, 'lo que la historia ensena aunque no sea textual, las seis contraposiciones entre la Perspectiva Emprendedora y la del Tecnico, y la escala de cada una', 'POSTURA: es contraste, no medios'),
+ ('P2', 106, 121, 'COMO SE TRAZA EL MODELO EMPRENDEDOR: buscar donde esta la oportunidad, volver al tablero y construir una solucion a las frustraciones de un grupo concreto de clientes, y arrancar del retrato del cliente y no del negocio', 'CANDIDATO A NODO'),
+ ('R4', 122, 179, 'el tecnico que mira hacia dentro, el cliente como problema o como oportunidad, el modelo que hace falta encontrar y el rotulo de la `PART II`', 'POSTURA'),
+]

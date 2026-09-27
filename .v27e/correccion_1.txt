@@ -1,0 +1,10 @@
+CORRECCION DECLARADA SOBRE UN NODO YA INSERTADO
+  nodo : repartir_semana_cuarenta_horas_jefe
+  campo: resumen_teorico
+  el texto viejo SIGUE ENTERO: 3543 caracteres, ninguno borrado
+  se aniaden 875 caracteres al final
+  huella antes  : 5741a0fe40ead016
+  huella despues: de520028526c0f00
+
+GATE VERDE sobre la simulacion. CORRECCION ESCRITA EN: repartir_semana_cuarenta_horas_jefe
+  razon en bitacora/VEREDICTOS.jsonl

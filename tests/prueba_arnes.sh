@@ -3,7 +3,7 @@
 #
 # Monta un repo de usar y tirar con su remoto bare, mete dentro
 # orquestador_forja.sh y un CLAUDE FALSO cuyo comportamiento se dicta por
-# variables de entorno, y corre SIETE escenarios. Ninguno toca el repo de verdad.
+# variables de entorno, y corre DIECISEIS escenarios. Ninguno toca el repo de verdad.
 #
 # El claude falso es la unica forma de probar el arnes: un turno mudo o un fallo
 # instantaneo no se pueden pedir a un modelo de verdad, y una guarda que no se
@@ -11,15 +11,23 @@
 set -uo pipefail
 
 ORQUESTADOR="$1"
+RAIZ_REPO="$(cd "$(dirname "$ORQUESTADOR")" && pwd)"
 BANCO="$(mktemp -d)"
 trap 'rm -rf "$BANCO"' EXIT
+
+# Con escape, nunca literal: si esta prueba llevara el caracter, el barrido
+# tendria que perdonar al fichero que lo comprueba.
+GUION_LARGO="$(printf '\u2014')"
 
 verdes=0
 rojos=0
 
 comprobar() { # descripcion, esperado, salida
   local desc="$1" esperado="$2" salida="$3"
-  if echo "$salida" | grep -qF "$esperado"; then
+  # `--` ANTES DEL PATRON (22 sep 2026): un patron que empieza por guion, como
+  # `--effort high`, grep lo leia como una opcion suya, fallaba con error, y en
+  # comprobar_no ese error contaba como "no encontrado". Pasaba en falso.
+  if echo "$salida" | grep -qF -- "$esperado"; then
     echo "    VERDE  $desc"
     verdes=$((verdes + 1))
   else
@@ -31,7 +39,7 @@ comprobar() { # descripcion, esperado, salida
 
 comprobar_no() { # descripcion, no_esperado, salida
   local desc="$1" no_esperado="$2" salida="$3"
-  if echo "$salida" | grep -qF "$no_esperado"; then
+  if echo "$salida" | grep -qF -- "$no_esperado"; then
     echo "    ROJO   $desc"
     echo "           NO deberia aparecer: $no_esperado"
     rojos=$((rojos + 1))
@@ -53,17 +61,123 @@ montar_banco() { # $1 = nombre del escenario
   git -C "$taller" remote add origin "$BANCO/$nombre.git"
 
   cp "$ORQUESTADOR" "$taller/orquestador_forja.sh"
+  # EL BANCO LLEVA EL INSTRUMENTO DE VERDAD, y no es un lujo: D.40 depende de
+  # `python forja.py herencia`, y dejar que el arnes siga adelante cuando el
+  # instrumento falta seria darle una salida silenciosa a la guarda.
+  cp "$RAIZ_REPO/forja.py" "$taller/forja.py"
+  cp -r "$RAIZ_REPO/src" "$taller/src"
+  rm -rf "$taller/src/__pycache__"
+  # Y LOS INSTRUMENTOS DE scripts/, desde que el testigo de guardas corre dentro
+  # de la fase ciega (D.38.3, 16 sep 2026). Sin ellos el arnes no puede medir el
+  # arbol al sellar, y una guarda que no puede correr no es una guarda verde: es
+  # una guarda ausente.
+  cp -r "$RAIZ_REPO/scripts" "$taller/scripts"
+  rm -rf "$taller/scripts/__pycache__"
+  cp -r "$RAIZ_REPO/config" "$taller/config" 2>/dev/null || true
+  # Un acta con una TAREA BLOQUEANTE de verdad, para que haya algo que heredar.
+  cat > "$taller/docs/loop/ACTA_AUDITOR.md" <<'ACTA'
+# ACTA 1. VUELTA 1 de prueba
+
+## 7. MIS CAIDAS
+
+> ### **TAREA BLOQUEANTE DEL AUDITOR DE LA VUELTA 2, ESCRITA POR EL AUDITOR DE LA 1**
+>
+> **Una orden y se comprueba corriendo un comando.** Pega el instrumento al lado
+> de cada cifra que publiques.
+ACTA
   echo "encargo de prueba del arnes" > "$taller/docs/loop/PROMPT_SIGUIENTE.md"
+
+  # Y LO QUE EL INFORME DE LOTE NECESITA PARA CORRER DE VERDAD (punto 2 del
+  # 12 sep 2026). Un grafo vacio y UN candidato: el informe tarda milisegundos,
+  # que es lo contrario del caso que esta decision resuelve, y es a proposito:
+  # lo que se prueba aqui es el CABLEADO del paso, no el coste del instrumento.
+  mkdir -p "$taller/dataset" "$taller/esquema" "$taller/fuentes" \
+           "$taller/config" "$taller/cuarentena/prueba_de_lote"
+  : > "$taller/dataset/nodos.jsonl"
+  cp "$RAIZ_REPO/esquema/nodo.schema.json" "$taller/esquema/"
+  cp "$RAIZ_REPO/fuentes/FUENTES_CANONICAS.json" "$taller/fuentes/"
+  cp "$RAIZ_REPO/config/umbrales.json" "$taller/config/"
+  # EL CANDIDATO DE MUESTRA NO PUEDE DEPENDER DE UNA BANDEJA QUE SE VACIA.
+  #
+  # Aqui se cogia el primero de `cuarentena/scott_radical_candor/`, y el 18 sep 2026 ese
+  # lote CERRO: sus 142 candidatos pasaron a `_insertados/` y la bandeja quedo en cero.
+  # El banco entero se fue a siete rojos por una carpeta vacia, y el mensaje que lo
+  # explicaba (`cp: cannot stat ''`) salia ANTES de las comprobaciones, donde no lo leia
+  # nadie.
+  #
+  # AHORA SE BUSCA EN TODAS LAS SEDES DONDE PUEDE HABER UNO, incluida la de los ya
+  # archivados, que es la unica que solo CRECE. Una prueba que depende del estado de
+  # produccion deja de probar el dia que la produccion avanza.
+  muestra="$(ls "$RAIZ_REPO"/cuarentena/*/[a-z]*.json "$RAIZ_REPO"/cuarentena/_insertados/*/[a-z]*.json 2>/dev/null | head -1)"
+  if [ -z "$muestra" ]; then
+    echo "    ROJO   no hay ningun candidato de muestra en cuarentena/ ni en _insertados/"
+    rojos=$((rojos + 1))
+    return 1
+  fi
+  cp "$muestra" "$taller/cuarentena/prueba_de_lote/candidato.json"
 
   # EL CLAUDE FALSO. Distingue el rol por el documento que el prompt nombra.
   cat > "$taller/bin/claude" <<'FALSO'
 #!/usr/bin/env bash
 prompt="${!#}"
-if echo "$prompt" | grep -q "EXTRACTOR.md"; then
+visto=""
+declara=""
+huella=""
+if echo "$prompt" | grep -q "APERTURA CIEGA"; then
+  # EL TERCER ROL (D.34). El auditor ciego escribe su clasificacion antes de
+  # que exista el reporte, y aqui deja constancia de si LO VIO o no: es lo
+  # unico que la prueba necesita comprobar de la fase ciega.
+  rol="auditor ciego"; testigo="docs/loop/APERTURA_CIEGA.md"
+  escribe="${FALSO_APERTURA:-si}"
+  # EL AUDITOR CIEGO INTENTA ABRIR LOS CUATRO, y anota cual encontro. Es la
+  # comprobacion de D.34 ampliada: no basta con que el arnes diga que los
+  # retira, tiene que constar que NO estaban cuando alguien fue a por ellos.
+  # D.40: el ciego declara su herencia solo si se le pide. Sin esto, la guarda
+  # no tendria caso positivo.
+  if [ "${FALSO_HERENCIA:-si}" = "si" ]; then
+    huella="$(git hash-object docs/loop/ACTA_AUDITOR.md 2>/dev/null || echo sin-huella)"
+    # ESCRITAS COMO LAS ESCRIBE EL AUDITOR DE VERDAD, en el markdown de la casa y
+    # repitiendo la declaracion en la tabla de cierre. Asi era la apertura de la
+    # vuelta 19, que la guarda vieja tumbo pidiendo el texto desnudo (12 sep 2026).
+    declara="> ### **ACTA ANTERIOR LEIDA: \`$huella\`**
+
+### \`HEREDADO 1\`: **CUMPLIDO**
+
+| **herencia \`D.40\`** | **\`HEREDADO 1\`: CUMPLIDO**, fila a fila |"
+  else
+    declara=""
+  fi
+  visto="ausentes:"
+  for f in REPORTE.md loop.log ultimo_extractor.json ultimo_auditor.json; do
+    if [ -f "docs/loop/$f" ]; then visto="$visto ENCONTRADO_$f"; else visto="$visto $f"; fi
+  done
+  # LA FASE CIEGA SABE QUE NO VE (D.57): desde AQUI DENTRO, el ciego intenta
+  # comprobar contra loop.log la linea que dice que se le retiro. Antes del 18 sep
+  # esto era imposible: loop.log era uno de los retirados, asi que se retiraba el
+  # registro que dice que se retira, y el auditor que quisiera comprobar su propia
+  # premisa no tenia con que. Publico una afirmacion falsa y se la cargo.
+  if grep -q "retirados:" docs/loop/loop.log 2>/dev/null; then
+    visto="$visto COMPROBADO_EN_LOG"
+  else
+    visto="$visto NO_PUEDO_COMPROBARLO"
+  fi
+elif echo "$prompt" | grep -q "EXTRACTOR.md"; then
   rol=extractor; testigo="docs/loop/REPORTE.md"; escribe="${FALSO_EXTRACTOR:-si}"
 else
   rol=auditor;   testigo="docs/loop/ACTA_AUDITOR.md"; escribe="${FALSO_AUDITOR:-si}"
 fi
+# El prompt recibido se guarda para que la prueba pueda afirmar SOBRE EL. Sin
+# esto, MODO_INSERCION solo se podria comprobar por sus efectos, y el efecto de
+# "no insertes" es que no pasa nada, que es indistinguible de un turno vago.
+printf '%s' "$prompt" > "prompt_${rol// /_}.txt"
+# Y LOS ARGUMENTOS, uno por linea, para que la prueba del esfuerzo (escenario 19)
+# pueda afirmar sobre lo que el arnes le PASO al binario y no sobre lo que dice.
+# TODOS MENOS EL ULTIMO, que es el prompt. Filtrarlo con grep -F era un error: un
+# prompt de varias lineas trae alguna vacia, el patron vacio casa con todo, y el
+# fichero salia VACIO. Los negativos de 19b pasaban en falso por eso.
+printf '%s\n' "${@:1:$#-1}" > "argumentos_${rol// /_}.txt"
+# Y EL MODELO QUE UN SUBAGENTE HEREDARIA (escenario 21).
+echo "${CLAUDE_CODE_SUBAGENT_MODEL:-SIN}|${ANTHROPIC_DEFAULT_SONNET_MODEL:-SIN}" > "subagente_${rol// /_}.txt"
 sleep "${FALSO_SEGUNDOS:-2}"
 if [ "$escribe" = "vacio" ]; then
   # el turno TOCA su testigo pero lo deja en cero bytes: la ruta promete
@@ -72,12 +186,33 @@ if [ "$escribe" = "vacio" ]; then
   git add -A >/dev/null 2>&1
   git commit -q -m "turno del $rol con testigo vacio (claude falso)" >/dev/null 2>&1
 elif [ "$escribe" = "si" ]; then
-  echo "linea del $rol, $(date '+%H:%M:%S.%N')" >> "$testigo"
+  echo "linea del $rol, $(date '+%H:%M:%S.%N')${visto:+ | $visto}" >> "$testigo"
+  [ -n "${declara:-}" ] && printf '%s
+' "$declara" >> "$testigo"
   git add -A >/dev/null 2>&1
   git commit -q -m "turno del $rol (claude falso)" >/dev/null 2>&1
   git push -q origin bucle >/dev/null 2>&1
 fi
-echo "{\"total_cost_usd\": ${FALSO_COSTO:-0.42}, \"result\": \"turno del $rol\"}"
+# UNA INSERCION EN VUELO AL CERRAR EL TURNO (escenario 20). El extractor deja el
+# cerrojo echado: "muerto" con un pid que no existe, "vivo" con un proceso que lo
+# suelta a los tres segundos.
+if [ "$rol" = "extractor" ] && [ -n "${FALSO_CERROJO:-}" ]; then
+  if [ "$FALSO_CERROJO" = "vivo" ]; then
+    ( sleep 3; python -c 'import os; from src import cerrojo, comun; os.unlink(cerrojo.ruta_de(comun.RUTA_DATASET))' ) >/dev/null 2>&1 &
+    dueno=$!
+  else
+    dueno=999999
+  fi
+  python -c 'import json, os, sys; from src import cerrojo, comun; r = cerrojo.ruta_de(comun.RUTA_DATASET); os.makedirs(os.path.dirname(r), exist_ok=True); open(r, "w").write(json.dumps({"pid": int(sys.argv[1]), "desde": 0}))' "$dueno"
+fi
+# El arnes vuelca ESTO en el artefacto DESPUES del ultimo commit (D.33).
+sucio=""
+if [ "${FALSO_SUCIO:-no}" = "si" ]; then sucio=" $(printf '\u2014') con guion largo"; fi
+# Y un auditor que reescribe su apertura ciega tras ver el reporte (D.34).
+if [ "$rol" = "auditor" ] && [ "${FALSO_ROMPE_SELLO:-no}" = "si" ]; then
+  echo "linea escrita DESPUES de ver el reporte" >> "docs/loop/APERTURA_CIEGA.md"
+fi
+echo "{\"total_cost_usd\": ${FALSO_COSTO:-0.42}, \"result\": \"turno del $rol$sucio\"}"
 FALSO
   chmod +x "$taller/bin/claude"
 
@@ -90,7 +225,8 @@ FALSO
 correr() { # taller, y el resto son variables de entorno ya exportadas
   ( cd "$1" && MAX_VUELTAS="${MAX_VUELTAS:-1}" \
       UMBRAL_SEGUNDOS=1 ESPERA_SEGUNDOS=1 MAX_INTENTOS=2 \
-      CLAUDE_BIN="$1/bin/claude" RAMA=bucle \
+      CLAUDE_BIN="$1/bin/claude" RAMA="${RAMA:-bucle}" \
+      RAMA_DE_INSERCION="${RAMA_DE_INSERCION:-${RAMA:-bucle}}" \
       bash orquestador_forja.sh 2>&1 )
 }
 
@@ -182,6 +318,60 @@ comprobar "se salta el turno del extractor"   "SE SALTA EL TURNO DEL EXTRACTOR" 
 comprobar_no "el extractor NO corre"          "extractor listo"             "$salida"
 comprobar "el auditor SI corre"               "auditor listo"               "$salida"
 
+# --------------------------------------------------------------- escenario 5b
+echo ""
+echo "ESCENARIO 5b: EL CASO POSITIVO DE LA MEDIDA. El REPORTE es mas nuevo que el"
+echo "              ACTA, pero el ultimo turno que corrio el arnes fue el del"
+echo "              AUDITOR: el reporte se toco FUERA de un turno (una correccion"
+echo "              del fundador, una regeneracion de tabla por D.41). Paso el"
+echo "              13 sep 2026 y costo un turno entero auditando una vuelta que"
+echo "              ya tenia acta."
+taller="$(montar_banco e5b)"
+echo "acta vieja" > "$taller/docs/loop/ACTA_AUDITOR.md"
+git -C "$taller" add -A >/dev/null 2>&1
+git -C "$taller" commit -q -m "acta de la vuelta anterior" >/dev/null 2>&1
+sleep 1
+# LOS DOS TESTIGOS DEL ARNES, con el del AUDITOR escrito DESPUES: es su registro
+# propio de que el ultimo turno que corrio fue una auditoria.
+echo '{"result": "mensaje del extractor"}' > "$taller/docs/loop/ultimo_extractor.json"
+sleep 1
+echo '{"result": "mensaje del auditor"}' > "$taller/docs/loop/ultimo_auditor.json"
+# Y EL REPORTE TOCADO DESPUES DE TODO, fuera de cualquier turno.
+echo "reporte con una tabla regenerada a mano" > "$taller/docs/loop/REPORTE.md"
+git -C "$taller" add -A >/dev/null 2>&1
+git -C "$taller" commit -q -m "correccion del fundador sobre el reporte" >/dev/null 2>&1
+git -C "$taller" push -q origin bucle >/dev/null 2>&1
+salida="$(FALSO_EXTRACTOR=si FALSO_AUDITOR=si correr "$taller")"
+echo "$salida" | sed 's/^/  | /'
+comprobar "no se deja enganiar por la fecha"  "ROL INICIAL POR MEDICION: EXTRACTOR" "$salida"
+comprobar "y dice exactamente por que"        "el reporte se toco FUERA de un turno" "$salida"
+comprobar "pega las dos fechas de los testigos" "testigo del auditor escrito en" "$salida"
+comprobar "el extractor SI corre"             "extractor listo"             "$salida"
+comprobar_no "no se salta el turno del extractor" "SE SALTA EL TURNO DEL EXTRACTOR" "$salida"
+
+# --------------------------------------------------------------- escenario 5c
+echo ""
+echo "ESCENARIO 5c: EL CASO NEGATIVO, y sin el 5b no probaria nada. Con los DOS"
+echo "              testigos presentes y el del EXTRACTOR escrito el ultimo, la"
+echo "              medida de siempre manda: hay una vuelta sin auditar delante."
+taller="$(montar_banco e5c)"
+echo "acta vieja" > "$taller/docs/loop/ACTA_AUDITOR.md"
+git -C "$taller" add -A >/dev/null 2>&1
+git -C "$taller" commit -q -m "acta de la vuelta anterior" >/dev/null 2>&1
+sleep 1
+echo '{"result": "mensaje del auditor"}' > "$taller/docs/loop/ultimo_auditor.json"
+sleep 1
+echo '{"result": "mensaje del extractor"}' > "$taller/docs/loop/ultimo_extractor.json"
+echo "reporte nuevo, sin auditar" > "$taller/docs/loop/REPORTE.md"
+git -C "$taller" add -A >/dev/null 2>&1
+git -C "$taller" commit -q -m "reporte que nadie audito" >/dev/null 2>&1
+git -C "$taller" push -q origin bucle >/dev/null 2>&1
+salida="$(FALSO_EXTRACTOR=si FALSO_AUDITOR=si correr "$taller")"
+echo "$salida" | sed 's/^/  | /'
+comprobar "la medida de siempre manda"        "ROL INICIAL POR MEDICION: AUDITOR" "$salida"
+comprobar "y los testigos lo confirman"       "el ultimo turno NO fue el del auditor" "$salida"
+comprobar "se salta el turno del extractor"   "SE SALTA EL TURNO DEL EXTRACTOR" "$salida"
+
 # ---------------------------------------------------------------- escenario 6
 echo ""
 echo "ESCENARIO 6: FALLO INSTANTANEO. El turno vuelve sin costo y en cero segundos."
@@ -209,6 +399,449 @@ comprobar_no "el auditor NO llega a correr"  "VUELTA 1 : AUDITOR"           "$sa
 [ -s "$taller/docs/loop/REPORTE.md" ] \
   && { echo "    ROJO   el testigo no deberia tener contenido"; rojos=$((rojos+1)); } \
   || { echo "    VERDE  el testigo existe y esta vacio, como el escenario pide"; verdes=$((verdes+1)); }
+
+# ---------------------------------------------------------------- escenario 8
+echo ""
+echo "ESCENARIO 8: MODO_INSERCION POR DEFECTO. Desde D.39 (11 sep 2026) el"
+echo "             default es INSERTAR, y no cuarentena: la insercion de un lote"
+echo "             cerrado dejo de pedir firma. Pero el prompt tiene que llevar"
+echo "             la letra que la limita, o el default seria una barra libre."
+taller="$(montar_banco e8)"
+salida="$(correr "$taller")"
+echo "$salida" | sed 's/^/  | /'
+comprobar "declara el modo al arrancar"      "MODO_INSERCION=insertar"      "$salida"
+comprobar "la vuelta corre igual"            "VUELTA 1 : EXTRACTOR"         "$salida"
+prompt="$(cat "$taller/prompt_extractor.txt" 2>/dev/null || echo SIN_PROMPT)"
+comprobar "el prompt abre la insercion"      "LA INSERCION ESTA ABIERTA"    "$prompt"
+comprobar "SOLO para un lote cerrado"        "SOLO PARA UN LOTE CERRADO"    "$prompt"
+comprobar "y dice que pasa con el abierto"   "se quedan en cuarentena hasta que su lote cierre" "$prompt"
+comprobar "manda uno por vez"                "UN CANDIDATO POR VEZ"         "$prompt"
+comprobar "y nombra D.36 y D.37"             "D.36"                         "$prompt"
+
+# ---------------------------------------------------------------- escenario 9
+echo ""
+echo "ESCENARIO 9: CASO POSITIVO DEL 8. Con MODO_INSERCION=cuarentena el mismo"
+echo "             arnes PROHIBE insertar. Sin esto, el escenario 8 solo probaria"
+echo "             que el prompt dice siempre lo mismo. El modo sigue existiendo"
+echo "             para una vuelta que no deba insertar nada."
+taller="$(montar_banco e9)"
+salida="$(MODO_INSERCION=cuarentena correr "$taller")"
+echo "$salida" | sed 's/^/  | /'
+comprobar "declara el modo al arrancar"      "MODO_INSERCION=cuarentena"    "$salida"
+prompt="$(cat "$taller/prompt_extractor.txt" 2>/dev/null || echo SIN_PROMPT)"
+comprobar "el prompt prohibe insertar"       "NO INSERTAS NADA EN ESTA CORRIDA" "$prompt"
+comprobar "y manda el informe en seco"       "forja.py informe"             "$prompt"
+comprobar_no "no abre la insercion"          "LA INSERCION ESTA ABIERTA"    "$prompt"
+
+# --------------------------------------------------------------- escenario 10
+echo ""
+echo "ESCENARIO 10: UN MODO MAL ESCRITO NO CAE AL DEFAULT. Un valor invalido"
+echo "              detiene el arnes ANTES de gastar un turno: adivinar una"
+echo "              autorizacion es justo lo que la variable existe para impedir."
+taller="$(montar_banco e10)"
+salida="$(MODO_INSERCION=insertarr correr "$taller")"
+echo "$salida" | sed 's/^/  | /'
+comprobar "se detiene antes de arrancar"     "DETENIDO ANTES DE ARRANCAR"   "$salida"
+comprobar "nombra el valor recibido"         "insertarr"                    "$salida"
+comprobar "nombra los dos valores validos"   "insertar (el default desde D.39) o cuarentena" "$salida"
+comprobar "y dice la regla"                  "NI CAE AL DEFAULT"            "$salida"
+comprobar_no "no gasta ni un turno"          "VUELTA 1 :"                   "$salida"
+
+# --------------------------------------------------------------- escenario 11
+echo ""
+echo "ESCENARIO 11: EL FRENO DE RAMA. El arnes no hace checkout, asi que"
+echo "              lanzarlo desde otra rama trabajaria sobre la que estas y"
+echo "              empujaria a otra. Se detiene NOMBRANDO LAS DOS."
+taller="$(montar_banco e11)"
+git -C "$taller" checkout -q -b otra_rama
+salida="$(correr "$taller")"
+echo "$salida" | sed 's/^/  | /'
+comprobar "se detiene antes de arrancar"     "DETENIDO ANTES DE ARRANCAR"   "$salida"
+comprobar "nombra la rama activa"            'la rama activa es "otra_rama"' "$salida"
+comprobar "nombra la rama pedida"            'RAMA es "bucle"'              "$salida"
+comprobar "y dice como salir"                "git checkout bucle"           "$salida"
+comprobar_no "no gasta ni un turno"          "VUELTA 1 :"                   "$salida"
+
+# CASO POSITIVO DEL 11: el MISMO banco, de vuelta en su rama, corre.
+git -C "$taller" checkout -q bucle
+salida="$(correr "$taller")"
+comprobar "en la rama correcta si arranca"   "arranque: rama bucle"         "$salida"
+comprobar "y la vuelta corre"                "VUELTA 1 : EXTRACTOR"         "$salida"
+
+# --------------------------------------------------------------- escenario 12
+echo ""
+echo "ESCENARIO 12: EL ARTEFACTO DEL ARNES NO TUMBA LA VUELTA (D.33). El arnes"
+echo "              vuelca el texto del turno DESPUES del ultimo commit, asi"
+echo "              que es la unica escritura del repo que no pasa por su"
+echo "              propio hook. En la vuelta 7 un guion largo dentro de"
+echo "              ultimo_extractor.json puso en rojo la prueba entera."
+taller="$(montar_banco e12)"
+salida="$(FALSO_SUCIO=si correr "$taller")"
+echo "$salida" | sed 's/^/  | /'
+comprobar "la vuelta corre entera"           "Arnes terminado"             "$salida"
+comprobar "el extractor pasa"                "extractor listo"             "$salida"
+comprobar "el auditor pasa"                  "auditor listo"               "$salida"
+comprobar_no "no se escribe PARA_ALEXIS"     "PARA_ALEXIS.md. Leelo"       "$salida"
+# Y EL GUION ESTA DE VERDAD AHI DENTRO: si no, la prueba no probaria nada.
+artefacto="$(cat "$taller/docs/loop/ultimo_extractor.json" 2>/dev/null || echo AUSENTE)"
+comprobar "el artefacto SI trae el guion"    "$GUION_LARGO"                "$artefacto"
+
+# --------------------------------------------------------------- escenario 13
+echo ""
+echo "ESCENARIO 13: LA APERTURA CIEGA SELLA ANTES DE EXPONER (D.34). Durante"
+echo "              siete actas fue una promesa y las siete se rompieron. El"
+echo "              artefacto documenta, no impide: lo que impide es que el"
+echo "              fichero no este."
+taller="$(montar_banco e13)"
+# LOS CUATRO EXISTEN ANTES, que es la situacion de cualquier vuelta que no sea
+# la primera: si no existieran, "volvio a su sitio" no probaria nada.
+echo "reporte de la vuelta anterior" > "$taller/docs/loop/REPORTE.md"
+echo "[hora] log de la vuelta anterior" > "$taller/docs/loop/loop.log"
+echo '{"result": "mensaje final del extractor anterior"}' > "$taller/docs/loop/ultimo_extractor.json"
+echo '{"result": "mensaje final del auditor anterior"}' > "$taller/docs/loop/ultimo_auditor.json"
+git -C "$taller" add -A >/dev/null 2>&1
+git -C "$taller" commit -q -m "los cuatro artefactos de la vuelta anterior" >/dev/null 2>&1
+salida="$(correr "$taller")"
+echo "$salida" | sed 's/^/  | /'
+comprobar "la fase ciega corre y lo dice"    "APERTURA CIEGA"              "$salida"
+comprobar "dice que retira los TRES"         "retirados: REPORTE.md ultimo_extractor.json ultimo_auditor.json" "$salida"
+comprobar "sella la apertura"                "apertura ciega sellada"      "$salida"
+comprobar "y verifica el sello despues"      "sello de la apertura ciega verificado" "$salida"
+comprobar "el auditor corre DESPUES"         "VUELTA 1 : AUDITOR"          "$salida"
+
+# LA COMPROBACION QUE IMPORTA: el auditor ciego FUE A POR LOS CUATRO y no
+# encontro ninguno. No basta con que el arnes diga que los retira.
+apertura="$(cat "$taller/docs/loop/APERTURA_CIEGA.md" 2>/dev/null || echo AUSENTE)"
+comprobar "el ciego no encontro el reporte"  "ausentes: REPORTE.md"        "$apertura"
+comprobar "ni el testigo del extractor"      "ultimo_extractor.json"       "$apertura"
+comprobar "ni el testigo del auditor"        "ultimo_auditor.json"         "$apertura"
+comprobar_no "ninguno de los TRES estaba"    "ENCONTRADO_REPORTE.md"       "$apertura"
+comprobar_no "ni el testigo del extractor"   "ENCONTRADO_ultimo_extractor" "$apertura"
+comprobar_no "ni el del auditor"             "ENCONTRADO_ultimo_auditor"   "$apertura"
+# Y LA VUELTA DE TUERCA DE D.57, QUE ES LO CONTRARIO DE LAS DE ARRIBA: loop.log SI
+# tiene que estar. Es registro del arnes, no del extractor, y sin el la ciega no
+# puede comprobar que se le retiro. Era el cuarto retirado hasta el 18 sep 2026.
+comprobar "y loop.log SI esta (D.57)"        "ENCONTRADO_loop.log"         "$apertura"
+comprobar_no "y la apertura ciega no se rompio" "APERTURA CIEGA ROTA"      "$salida"
+
+# Y LOS TRES VUELVEN a su sitio para el turno normal (loop.log nunca se fue).
+for fichero in REPORTE.md ultimo_extractor.json ultimo_auditor.json; do
+  [ -f "$taller/docs/loop/$fichero" ] \
+    && { echo "    VERDE  $fichero vuelve a su sitio tras sellar"; verdes=$((verdes+1)); } \
+    || { echo "    ROJO   $fichero no volvio"; rojos=$((rojos+1)); }
+done
+
+# Y LA VENTANA CIEGA NO SE PIERDE DEL REGISTRO por haber ocurrido con el log
+# fuera: sus lineas se anexan al de verdad cuando vuelve.
+comprobar "el log recupera la ventana ciega" "APERTURA CIEGA" \
+  "$(cat "$taller/docs/loop/loop.log" 2>/dev/null || echo AUSENTE)"
+
+sellos="$(cat "$taller/docs/loop/SELLOS_APERTURA.jsonl" 2>/dev/null || echo AUSENTE)"
+comprobar "el sello queda en su registro"    '"vuelta": 1'                 "$sellos"
+
+# CASO POSITIVO DEL SELLO: un auditor que reescribe su apertura DESPUES de ver
+# el reporte es exactamente la averia que el sello existe para cazar.
+echo ""
+echo "ESCENARIO 13b: EL CASO POSITIVO DEL SELLO. El auditor reescribe su"
+echo "               apertura ciega DESPUES de ver el reporte."
+taller="$(montar_banco e13b)"
+salida="$(FALSO_ROMPE_SELLO=si correr "$taller")"
+echo "$salida" | sed 's/^/  | /'
+comprobar "el sello roto se caza"            "SELLO ROTO"                  "$salida"
+comprobar "dice las dos huellas"             "Sellado "                    "$salida"
+comprobar "detiene la corrida"               "DETENIDO en la vuelta 1"     "$salida"
+comprobar "y escribe la parada"              "PARA_ALEXIS.md"              "$salida"
+
+# --------------------------------------------------------------- escenario 14
+echo ""
+echo "ESCENARIO 14: LA HERENCIA LA ENTREGA EL ARNES (D.40). Tres actas seguidas"
+echo "              perdieron el mismo remedio por tener que ir a buscarlo en un"
+echo "              fichero de dieciseis mil lineas. Ahora el arnes lo extrae del"
+echo "              acta anterior, lo antepone al prompt, y EXIGE que se declare."
+taller="$(montar_banco e14)"
+salida="$(correr "$taller")"
+echo "$salida" | sed 's/^/  | /'
+comprobar "dice cuantos hereda"              "hereda 1 remedio(s) del acta anterior" "$salida"
+comprobar "y que los entrega el prompt"      "entregados en el prompt (D.40)" "$salida"
+comprobar "la herencia queda declarada"      "herencia declarada"           "$salida"
+comprobar "y la vuelta cierra"               "Arnes terminado"              "$salida"
+
+# LA HERENCIA LLEGO DE VERDAD AL PROMPT, no solo al log.
+prompt="$(cat "$taller/prompt_auditor_ciego.txt" 2>/dev/null || echo SIN_PROMPT)"
+comprobar "el prompt trae el titulo"         "REMEDIOS PENDIENTES QUE HEREDAS" "$prompt"
+comprobar "y el texto del remedio heredado"  "TAREA BLOQUEANTE DEL AUDITOR DE LA VUELTA 2" "$prompt"
+comprobar "y dice que el acta SI se abre"    "ACTA_AUDITOR.md SI ESTA Y SI PUEDES ABRIRLO" "$prompt"
+
+# --------------------------------------------------------------- escenario 14b
+echo ""
+echo "ESCENARIO 14b: EL CASO POSITIVO. Una apertura ciega SIN la linea de"
+echo "               lectura se caza, y el arnes se detiene ANTES de que se"
+echo "               escriba el acta. Sin este, el 14 solo probaria que el"
+echo "               prompt lleva texto."
+taller="$(montar_banco e14b)"
+salida="$(FALSO_HERENCIA=no correr "$taller")"
+echo "$salida" | sed 's/^/  | /'
+comprobar "la caza"                          "APERTURA CIEGA INCOMPLETA"    "$salida"
+comprobar "se detiene ANTES del acta"        "ANTES de que se escriba el acta" "$salida"
+comprobar "nombra la linea que falta"        "ACTA ANTERIOR LEIDA"          "$salida"
+comprobar "y el heredado sin declarar"       "HEREDADO 1"                   "$salida"
+comprobar "detiene la corrida"               "DETENIDO en la vuelta 1"      "$salida"
+comprobar_no "el auditor NO llega a correr"  "VUELTA 1 : AUDITOR"           "$salida"
+# Y LOS CUATRO FICHEROS VUELVEN: una parada no deja el arbol a medias.
+[ -f "$taller/docs/loop/REPORTE.md" ]   && { echo "    VERDE  el reporte vuelve a su sitio aun deteniendose"; verdes=$((verdes+1)); }   || { echo "    ROJO   el reporte no volvio tras la parada"; rojos=$((rojos+1)); }
+
+# --------------------------------------------------------------- escenario 15
+echo ""
+echo "ESCENARIO 15: EL INFORME DE LOTE LO CORRE EL ARNES, NO EL TURNO (punto 2"
+echo "              del 12 sep 2026). La cifra CHOCAN entre si dentro del lote"
+echo "              solo la ve un informe de lote entero, y un informe de lote"
+echo "              entero no cabe en un turno: 156,5 s por candidato medidos."
+taller="$(montar_banco e15)"
+salida="$(INFORME_DE_LOTE=cuarentena/prueba_de_lote FALSO_EXTRACTOR=si FALSO_AUDITOR=si correr "$taller")"
+echo "$salida" | sed 's/^/  | /'
+comprobar "lo anuncia como paso propio"      "INFORME DE LOTE sobre cuarentena/prueba_de_lote" "$salida"
+comprobar "dice que es del arnes"            "paso del arnes, sin reloj de modelo" "$salida"
+comprobar "y lo sella"                       "informe sellado:"             "$salida"
+comprobar "va ANTES del turno del extractor" "$(printf 'INFORME DE LOTE sobre')" "$salida"
+# EL ORDEN IMPORTA: el informe tiene que estar sellado ANTES de que el extractor
+# corra, porque lo que se le entrega es el fichero ya hecho.
+orden_informe="$(echo "$salida" | grep -n "informe sellado:" | head -1 | cut -d: -f1)"
+orden_turno="$(echo "$salida" | grep -n "VUELTA 1 : EXTRACTOR" | head -1 | cut -d: -f1)"
+if [ -n "$orden_informe" ] && [ -n "$orden_turno" ] && [ "$orden_informe" -lt "$orden_turno" ]; then
+  echo "    VERDE  el sello cae ANTES del turno del extractor"; verdes=$((verdes+1))
+else
+  echo "    ROJO   el sello no cae antes del turno del extractor"; rojos=$((rojos+1))
+fi
+# EL FICHERO EXISTE Y TRAE LA CIFRA QUE JUSTIFICA TODO ESTO.
+if grep -q "CHOCAN entre si dentro del lote" "$taller/docs/loop/INFORME_DE_LOTE.txt" 2>/dev/null; then
+  echo "    VERDE  el fichero trae la cifra CHOCAN entre si dentro del lote"; verdes=$((verdes+1))
+else
+  echo "    ROJO   el fichero no trae la cifra del choque"; rojos=$((rojos+1))
+fi
+# Y LA POBLACION VA DECLARADA CON SU REPARTO (punto 3).
+if grep -q "poblacion del barrido" "$taller/docs/loop/INFORME_DE_LOTE.txt" 2>/dev/null; then
+  echo "    VERDE  declara la poblacion del barrido con su reparto"; verdes=$((verdes+1))
+else
+  echo "    ROJO   no declara la poblacion del barrido"; rojos=$((rojos+1))
+fi
+# EL SELLO QUEDA REGISTRADO, no solo dicho en el log.
+if [ -s "$taller/docs/loop/SELLOS_INFORME.jsonl" ]; then
+  echo "    VERDE  el sello queda registrado en SELLOS_INFORME.jsonl"; verdes=$((verdes+1))
+else
+  echo "    ROJO   el sello no se registro"; rojos=$((rojos+1))
+fi
+# Y EL EXTRACTOR LO RECIBE EN SU PROMPT, con la orden de no recomputarlo.
+prompt_ext="$(cat "$taller/prompt_extractor.txt" 2>/dev/null || echo AUSENTE)"
+comprobar "el prompt le entrega el fichero"  "docs/loop/INFORME_DE_LOTE.txt" "$prompt_ext"
+comprobar "y le prohibe recomputarlo"        "NO LO RECOMPUTES: CITALO"     "$prompt_ext"
+
+# -------------------------------------------------------------- escenario 15b
+echo ""
+echo "ESCENARIO 15b: EL CASO POSITIVO. Un lote que no existe detiene el arnes"
+echo "               ANTES de gastar un turno, en vez de entregar un informe"
+echo "               vacio. Sin este, el 15 solo probaria que el paso corre."
+taller="$(montar_banco e15b)"
+salida="$(INFORME_DE_LOTE=cuarentena/lote_que_no_existe correr "$taller")"
+echo "$salida" | sed 's/^/  | /'
+comprobar "nombra lo que no encontro"        "cuarentena/lote_que_no_existe" "$salida"
+comprobar "detiene la corrida"               "DETENIDO en la vuelta 1"      "$salida"
+comprobar_no "el extractor NO llega a correr" "VUELTA 1 : EXTRACTOR"        "$salida"
+if [ -f "$taller/docs/loop/PARA_ALEXIS.md" ]; then
+  echo "    VERDE  deja PARA_ALEXIS escrito"; verdes=$((verdes+1))
+else
+  echo "    ROJO   no dejo PARA_ALEXIS"; rojos=$((rojos+1))
+fi
+
+# -------------------------------------------------------------- escenario 15c
+echo ""
+echo "ESCENARIO 15c: SIN lote que informar, el paso se SALTA Y SE REGISTRA. Un"
+echo "               paso que se salta en silencio es un paso que nadie puede"
+echo "               echar en falta."
+taller="$(montar_banco e15c)"
+salida="$(FALSO_EXTRACTOR=si FALSO_AUDITOR=si correr "$taller")"
+echo "$salida" | sed 's/^/  | /'
+comprobar "lo dice en el log"                "SIN INFORME DE LOTE en esta corrida" "$salida"
+comprobar "y la vuelta sigue entera"         "VUELTA 1 : AUDITOR"           "$salida"
+prompt_ext="$(cat "$taller/prompt_extractor.txt" 2>/dev/null || echo AUSENTE)"
+comprobar_no "el prompt no promete un informe que no hay" "NO LO RECOMPUTES" "$prompt_ext"
+
+# --------------------------------------------------------------- escenario 16
+echo ""
+echo "ESCENARIO 16: D.45. CON MODO_INSERCION=insertar EN UNA RAMA QUE NO ES LA DE"
+echo "              INSERCION, el arnes se detiene ANTES de gastar un turno. El"
+echo "              paralelo extrae y el serial inserta: dos inserciones a la vez"
+echo "              no son la misma campania mas deprisa, son dos campanias."
+taller="$(montar_banco e16)"
+salida="$(RAMA_DE_INSERCION=otra-rama MODO_INSERCION=insertar FALSO_EXTRACTOR=si correr "$taller")"
+echo "$salida" | sed 's/^/  | /'
+comprobar "se detiene antes de arrancar"     "DETENIDO ANTES DE ARRANCAR"  "$salida"
+comprobar "nombra las DOS ramas"             "y la rama de insercion es"   "$salida"
+comprobar "dice como se corre un frente"     "MODO_INSERCION=cuarentena"   "$salida"
+comprobar_no "no gasta un turno"             "extractor listo"             "$salida"
+
+# -------------------------------------------------------------- escenario 16b
+echo ""
+echo "ESCENARIO 16b: EL CASO NEGATIVO. En cuarentena corre en CUALQUIER rama, que"
+echo "               es justo lo que el paralelo necesita."
+taller="$(montar_banco e16b)"
+salida="$(RAMA_DE_INSERCION=otra-rama MODO_INSERCION=cuarentena FALSO_EXTRACTOR=si FALSO_AUDITOR=si correr "$taller")"
+echo "$salida" | sed 's/^/  | /'
+comprobar_no "NO se detiene"                 "DETENIDO ANTES DE ARRANCAR"  "$salida"
+comprobar "y el turno corre"                 "extractor listo"             "$salida"
+
+# -------------------------------------------------------------- escenario 17
+echo ""
+echo "ESCENARIO 17: LA FASE CIEGA SABE QUE NO VE (D.57). loop.log deja de"
+echo "              retirarse y el prompt del ciego trae la linea literal de"
+echo "              'retirados:' de su propio turno, asi que una afirmacion"
+echo "              sobre lo retirado SE PUEDE COMPROBAR DESDE DENTRO."
+taller="$(montar_banco e17)"
+salida="$(FALSO_EXTRACTOR=si FALSO_AUDITOR=si correr "$taller")"
+echo "$salida" | sed 's/^/  | /'
+comprobar "la ciega corre"                   "APERTURA CIEGA"              "$salida"
+comprobar "y loop.log YA NO se retira"       "retirados: REPORTE.md ultimo_extractor.json" "$salida"
+
+# EL CASO POSITIVO: lo que el ciego pudo hacer DESDE DENTRO de la fase ciega.
+testigo_ciego="$(cat "$taller/docs/loop/APERTURA_CIEGA.md" 2>/dev/null || echo SIN_APERTURA)"
+comprobar "el ciego VE loop.log"             "ENCONTRADO_loop.log"         "$testigo_ciego"
+comprobar "y COMPRUEBA en el la retirada"    "COMPROBADO_EN_LOG"           "$testigo_ciego"
+comprobar_no "no se queda sin poder mirar"   "NO_PUEDO_COMPROBARLO"        "$testigo_ciego"
+
+# Y LA LINEA LITERAL VIAJA EN EL PROMPT, que es el cinturon del tirante.
+prompt="$(cat "$taller/prompt_auditor_ciego.txt" 2>/dev/null || echo SIN_PROMPT)"
+comprobar "el prompt dice lo que no ve"      "LO QUE ESTE TURNO NO VE"     "$prompt"
+comprobar "con la linea literal dentro"      "retirados: REPORTE.md"       "$prompt"
+comprobar "y manda escribir la limitacion"   "ESCRIBE LA LIMITACION"       "$prompt"
+
+# -------------------------------------------------------------- escenario 18
+echo ""
+echo "ESCENARIO 18: LA FASE CIEGA SE APAGA EN CUARENTENA (D.58). No hay cifra"
+echo "              sobre el grafo que proteger, asi que no se paga por"
+echo "              protegerla: 9 USD por vuelta en las vueltas 54 y 55."
+taller="$(montar_banco e18)"
+salida="$(MODO_INSERCION=cuarentena FALSO_EXTRACTOR=si FALSO_AUDITOR=si correr "$taller")"
+echo "$salida" | sed 's/^/  | /'
+comprobar "lo dice en voz alta"             "SIN FASE CIEGA"               "$salida"
+comprobar "y dice por que"                  "no hay cifra sobre el grafo"  "$salida"
+comprobar_no "NO abre la fase ciega"        "APERTURA CIEGA ("             "$salida"
+comprobar_no "ni sella"                     "apertura ciega sellada"       "$salida"
+comprobar "el auditor SI corre, directo"    "VUELTA 1 : AUDITOR"           "$salida"
+comprobar "y dice que no hay sello"         "sin sello que verificar"      "$salida"
+comprobar "la vuelta cierra"                "Arnes terminado"              "$salida"
+
+# -------------------------------------------------------------- escenario 18b
+echo ""
+echo "ESCENARIO 18b: EL CASO NEGATIVO, y sin el la guarda no probaria nada."
+echo "               En insertar, la fase ciega y el sello SIGUEN corriendo:"
+echo "               ahi el dato existe y las dos se pagan solas."
+taller="$(montar_banco e18b)"
+salida="$(MODO_INSERCION=insertar FALSO_EXTRACTOR=si FALSO_AUDITOR=si correr "$taller")"
+echo "$salida" | sed 's/^/  | /'
+comprobar "la fase ciega SI corre"          "APERTURA CIEGA ("             "$salida"
+comprobar "y SI sella"                      "apertura ciega sellada"       "$salida"
+comprobar "y SI verifica el sello"          "sello de la apertura ciega verificado" "$salida"
+comprobar_no "y no dice que la apaga"       "SIN FASE CIEGA"               "$salida"
+
+# -------------------------------------------------------------- escenario 19
+echo ""
+echo "ESCENARIO 19: EL ESFUERZO VA ATADO AL REGIMEN (22 sep 2026). En insertar,"
+echo "             los DOS asientos llevan --effort high, sin que nadie lo pida:"
+echo "             es la unica fase que toca el grafo."
+taller="$(montar_banco e19)"
+salida="$(MODO_INSERCION=insertar FALSO_EXTRACTOR=si FALSO_AUDITOR=si correr "$taller")"
+echo "$salida" | sed 's/^/  | /'
+args_ext="$(cat "$taller/argumentos_extractor.txt" 2>/dev/null | tr '\n' ' ')"
+args_aud="$(cat "$taller/argumentos_auditor.txt" 2>/dev/null | tr '\n' ' ')"
+comprobar "el extractor recibe --effort high"  "--effort high"         "$args_ext"
+comprobar "el auditor recibe --effort high"    "--effort high"         "$args_aud"
+comprobar "y el log lo dice por asiento"       "esfuerzo high"         "$salida"
+
+# -------------------------------------------------------------- escenario 19b
+echo ""
+echo "ESCENARIO 19b: EL CASO NEGATIVO. En cuarentena NINGUN asiento lleva --effort:"
+echo "               el frente corre con el esfuerzo por defecto del modelo."
+taller="$(montar_banco e19b)"
+salida="$(MODO_INSERCION=cuarentena FALSO_EXTRACTOR=si FALSO_AUDITOR=si correr "$taller")"
+echo "$salida" | sed 's/^/  | /'
+args_ext="$(cat "$taller/argumentos_extractor.txt" 2>/dev/null | tr '\n' ' ')"
+args_aud="$(cat "$taller/argumentos_auditor.txt" 2>/dev/null | tr '\n' ' ')"
+comprobar_no "el extractor NO lleva --effort"  "--effort"              "$args_ext"
+comprobar_no "el auditor NO lleva --effort"    "--effort"              "$args_aud"
+comprobar "y el log dice que es el de defecto" "esfuerzo defecto"      "$salida"
+comprobar "pero el modelo si llega"            "--model"               "$args_aud"
+
+# -------------------------------------------------------------- escenario 19c
+echo ""
+echo "ESCENARIO 19c: LA VARIABLE MANDA SOBRE EL REGIMEN, y VACIA pide el de"
+echo "               defecto aun en insertar. Si no, no habria forma de pedirlo."
+taller="$(montar_banco e19c)"
+salida="$(MODO_INSERCION=insertar ESFUERZO_EXTRACTOR= ESFUERZO_AUDITOR=max \
+          FALSO_EXTRACTOR=si FALSO_AUDITOR=si correr "$taller")"
+echo "$salida" | sed 's/^/  | /'
+args_ext="$(cat "$taller/argumentos_extractor.txt" 2>/dev/null | tr '\n' ' ')"
+args_aud="$(cat "$taller/argumentos_auditor.txt" 2>/dev/null | tr '\n' ' ')"
+comprobar_no "el extractor, vacio, va sin --effort" "--effort"         "$args_ext"
+comprobar "el auditor lleva el que se le dio"  "--effort max"          "$args_aud"
+
+# -------------------------------------------------------------- escenario 20
+echo ""
+echo "ESCENARIO 20: UNA INSERCION NO SOBREVIVE A SU TURNO (23 sep 2026). El extractor"
+echo "             cierra con el cerrojo echado por un proceso MUERTO: el arnes lo"
+echo "             dice, comprueba el grafo, y con el gate verde sigue."
+taller="$(montar_banco e20)"
+salida="$(MODO_INSERCION=insertar FALSO_CERROJO=muerto ESPERA_INSERCION=30 \
+          FALSO_EXTRACTOR=si FALSO_AUDITOR=si correr "$taller")"
+echo "$salida" | sed 's/^/  | /'
+comprobar "lo dice en voz alta"               "INSERCION EN VUELO"       "$salida"
+comprobar "y dice que se interrumpio"         "INSERCION INTERRUMPIDA"   "$salida"
+comprobar "comprueba el grafo y sigue"        "gate VERDE"               "$salida"
+comprobar "la vuelta llega al auditor"        "VUELTA 1 : AUDITOR"       "$salida"
+
+# -------------------------------------------------------------- escenario 20b
+echo ""
+echo "ESCENARIO 20b: SI EL DUENO VIVE, SE LE ESPERA. La insercion suelta el cerrojo"
+echo "              a los tres segundos, y el arnes no abre la ciega antes."
+taller="$(montar_banco e20b)"
+salida="$(MODO_INSERCION=insertar FALSO_CERROJO=vivo ESPERA_INSERCION=60 \
+          FALSO_EXTRACTOR=si FALSO_AUDITOR=si correr "$taller")"
+echo "$salida" | sed 's/^/  | /'
+comprobar "la espera y la ve terminar"        "la insercion termino y solto el cerrojo" "$salida"
+comprobar_no "no la da por interrumpida"      "INSERCION INTERRUMPIDA"   "$salida"
+
+# -------------------------------------------------------------- escenario 20c
+echo ""
+echo "ESCENARIO 20c: EL CASO NEGATIVO. Sin cerrojo echado no hay nada que decir, y en"
+echo "              cuarentena no se mira siquiera: un frente no inserta."
+taller="$(montar_banco e20c)"
+salida="$(MODO_INSERCION=insertar FALSO_EXTRACTOR=si FALSO_AUDITOR=si correr "$taller")"
+comprobar_no "sin cerrojo, sin aviso"          "INSERCION EN VUELO"       "$salida"
+taller="$(montar_banco e20d)"
+salida="$(MODO_INSERCION=cuarentena FALSO_CERROJO=muerto FALSO_EXTRACTOR=si FALSO_AUDITOR=si correr "$taller")"
+comprobar_no "en cuarentena no se mira"        "INSERCION EN VUELO"       "$salida"
+
+# -------------------------------------------------------------- escenario 21
+echo ""
+echo "ESCENARIO 21: NINGUN ASIENTO POR DEBAJO DE OPUS 5.5 (23 sep 2026). Con Sonnet en"
+echo "             el extractor, el arnes NO ARRANCA y no gasta un solo turno."
+taller="$(montar_banco e21)"
+salida="$(MODELO_EXTRACTOR=claude-sonnet-5 FALSO_EXTRACTOR=si FALSO_AUDITOR=si correr "$taller")"
+echo "$salida" | sed 's/^/  | /'
+comprobar "no arranca, y dice el asiento"      "el asiento EXTRACTOR pide"   "$salida"
+comprobar_no "no gasta ningun turno"           "VUELTA 1 : EXTRACTOR"        "$salida"
+
+echo ""
+echo "ESCENARIO 21b: TAMPOCO UN OPUS ANTERIOR en el auditor."
+taller="$(montar_banco e21b)"
+salida="$(MODELO_AUDITOR=claude-opus-5 FALSO_EXTRACTOR=si FALSO_AUDITOR=si correr "$taller")"
+comprobar "no arranca con claude-opus-5"       "el asiento AUDITOR pide"     "$salida"
+
+echo ""
+echo "ESCENARIO 21c: EL CASO NEGATIVO. Con Opus 5.5 en los dos arranca, y un subagente"
+echo "              heredaria Opus 5.5 aunque pidiera sonnet."
+taller="$(montar_banco e21c)"
+salida="$(FALSO_EXTRACTOR=si FALSO_AUDITOR=si correr "$taller")"
+comprobar "arranca y el extractor corre"       "VUELTA 1 : EXTRACTOR (claude-opus-5-5" "$salida"
+comprobar "el subagente heredaria opus 5.5"    "claude-opus-5-5|claude-opus-5-5" "$(cat "$taller/subagente_extractor.txt" 2>/dev/null)"
 
 echo ""
 echo "================================================================"

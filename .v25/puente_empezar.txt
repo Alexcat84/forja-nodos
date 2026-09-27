@@ -1,0 +1,5 @@
+$ sed -n "215p" fuentes/scott_radical_candor/cap_05.md   (la linea que el paso 1 recoge)
+    OFTEN WHEN I talk to people about developing a culture of Radical Candor, they agree with the idea but feel nervous about putting it into practice. My
+
+el paso 1 del candidato, impreso de su fichero:
+    P1 Cuenta con lo que el texto observa cada vez que habla de esto: la gente esta de acuerdo con la idea y se pone nerviosa ante la idea de ponerla en practica.

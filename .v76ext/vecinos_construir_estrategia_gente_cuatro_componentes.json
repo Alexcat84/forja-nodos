@@ -1,0 +1,59 @@
+{
+ "id": "construir_estrategia_gente_cuatro_componentes",
+ "grafo": 437,
+ "bandejas": 42,
+ "vecinos": [
+  {
+   "id": "recorrer_siete_pasos_programa_desarrollo_negocio",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.238,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.698
+   },
+   "levantada_por": [
+    "paso_contra_nodo"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 5 de recorrer_siete_pasos_programa_desarrollo_negocio"
+  },
+  {
+   "id": "aplicar_cinco_pasos_proceso_contratacion",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.363,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.456
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 4 del candidato contra paso 11 de aplicar_cinco_pasos_proceso_contratacion"
+  },
+  {
+   "id": "medir_sistema_venta_trece_indicadores_benchmark",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.368,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.444
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 2 del candidato contra paso 3 de medir_sistema_venta_trece_indicadores_benchmark"
+  },
+  {
+   "id": "distinguir_tres_tipos_sistemas_negocio",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.399,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.422
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 2 de distinguir_tres_tipos_sistemas_negocio"
+  }
+ ]
+}

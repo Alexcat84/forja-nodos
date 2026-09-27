@@ -1,0 +1,43 @@
+$ grep -n "CARPETAS_FUERA_DE_POBLACION" src/aduana.py
+405:CARPETAS_FUERA_DE_POBLACION = ("_insertados", "_derivadas")
+449:                          if s not in CARPETAS_FUERA_DE_POBLACION
+
+$ python - (por que la aduana ve 25 y mi censo 188)
+claves canonicas: ['_lea_esto', 'bernerslee_bananas', 'gerber_emyth', 'gerber_emyth_cap17_reservado', 'grove_high_output', 'manual_sistema_conocimiento', 'marquet_turn_the_ship', 'onu_consumidor', 'openstax_business_ethics', 'openstax_org_behavior', 'scott_radical_candor', 'smart_who', 'zhuo_manager']
+
+bandeja                    clave declarada            canonica?  n
+ensayo_referencia_163      a_basic_guide_to           False      10
+ensayo_referencia_163      a_project_manager_s        False      4
+ensayo_referencia_163      assembling_tomorrow_a_guide False      6
+ensayo_referencia_163      business_model_generation_osterwalder False      2
+ensayo_referencia_163      change_by_design_revised   False      3
+ensayo_referencia_163      chris_voss_rompe_la        False      1
+ensayo_referencia_163      co_intelligence_living_and False      2
+ensayo_referencia_163      cradle_to_cradle_michael   False      3
+ensayo_referencia_163      cybersecurity_for_small_business False      2
+ensayo_referencia_163      essentials_of_supply_chain False      4
+ensayo_referencia_163      financial_intelligence_for_entrepreneurs False      1
+ensayo_referencia_163      franchise_your_business_mark False      11
+ensayo_referencia_163      getting_started_with_the   False      1
+ensayo_referencia_163      juran_s_quality_handbook   False      24
+ensayo_referencia_163      managing_the_risks_of      False      7
+ensayo_referencia_163      never_lose_a_customer      False      3
+ensayo_referencia_163      osha3885                   False      1
+ensayo_referencia_163      out_of_the_crisis          False      10
+ensayo_referencia_163      quality_is_free_the        False      5
+ensayo_referencia_163      rushton_croucher_y_baker   False      1
+ensayo_referencia_163      small_business             False      1
+ensayo_referencia_163      spin_selling_neil_rackham  False      1
+ensayo_referencia_163      the_art_of_thought         False      2
+ensayo_referencia_163      the_field_guide_to         False      4
+ensayo_referencia_163      the_founder_s_dilemmas     False      8
+ensayo_referencia_163      the_green_to_gold          False      8
+ensayo_referencia_163      the_hard_thing_about       False      5
+ensayo_referencia_163      the_lean_startup_eric      False      5
+ensayo_referencia_163      the_startup_owner_s        False      8
+ensayo_referencia_163      traction_gabriel_weinberg  False      4
+ensayo_referencia_163      value_proposition_design   False      2
+ensayo_referencia_163      venture_deals_brad_feld    False      4
+ensayo_referencia_163      winning_at_new_products    False      10
+grove_high_output          grove_high_output          True       22
+marquet_turn_the_ship      marquet_turn_the_ship      True       3

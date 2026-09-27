@@ -1,0 +1,3 @@
+candidatos: 20 | por estado: {'levanta alguno': 15, 'no levanta ninguno': 5} | suma: 20
+no levantan: ['elegir_estilo_direccion_madurez_relevante_tarea', 'elegir_modo_control_motivacion_factor_cua', 'escalonar_complejidad_puesto_empleado_nuevo', 'guiar_subordinado_etapas_resistencia_desempeno', 'repartir_supervision_puesto_funcional_mision']
+filas de vecino: 50

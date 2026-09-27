@@ -1,0 +1,16 @@
+filas: mias 110 | suyas 110 | en las dos: 110 | solo mias: 0 | solo suyas: 0
+marcas: {'mia D / suya T': 2, 'mia T / suya P': 3, 'mia T / suya T': 105} | suma: 110
+lineas: {'linea distinta': 1, 'misma linea': 109} | suma: 110
+filas con marca o linea distinta, o discutible suyo: 12
+  asignar_responsable_unico_evolucion_planificada         paso  2 | mia T L127  | suya T L127  | DISCUTIBLE suyo
+  auditar_formacion_premios_ultima_fila                   paso  6 | mia D L57   | suya T L57   | DISCUTIBLE suyo
+  auditar_formacion_premios_ultima_fila                   paso  8 | mia T L55   | suya T L55   | DISCUTIBLE suyo
+  contar_firmas_cadena_tramite_parado                     paso 10 | mia T L43   | suya T L41  
+  declarar_intencion_reemplazar_peticion_permiso          paso  1 | mia T L75   | suya T L75   | DISCUTIBLE suyo
+  eliminar_seguimiento_descendente_responsabilizar_dueno  paso  2 | mia T L73   | suya T L73   | DISCUTIBLE suyo
+  informar_cierre_jornada_conservar_propiedad_trabajo     paso  1 | mia T L35   | suya T L35   | DISCUTIBLE suyo
+  informar_cierre_jornada_conservar_propiedad_trabajo     paso  2 | mia T L35   | suya P L35   | DISCUTIBLE suyo
+  informar_cierre_jornada_conservar_propiedad_trabajo     paso  4 | mia T L35   | suya P L35   | DISCUTIBLE suyo
+  recorrer_organizacion_escuchar_plantilla                paso  6 | mia T L15   | suya T L15   | DISCUTIBLE suyo
+  seguir_frustrado_preguntar_implantacion_ideas           paso  2 | mia T L25   | suya P L25   | DISCUTIBLE suyo
+  seguir_frustrado_preguntar_implantacion_ideas           paso  3 | mia D L27   | suya T L27   | DISCUTIBLE suyo

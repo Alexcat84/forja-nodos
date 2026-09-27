@@ -1,0 +1,4 @@
+contar_cuatro_historias_propias_ver_hueco_intencion  marcas 17 | T 17 P 0 | pasos en 9a5151a 17 | hoy 17 | PUENTE - | que siguen hoy en el grafo: 0
+dar_elogio_disciplina_igual_critica                  marcas 20 | T 18 P 2 | pasos en 9a5151a 20 | hoy 18 | PUENTE [8, 17] | que siguen hoy en el grafo: 0
+medir_critica_respuesta_oyente_brujula               marcas 33 | T 33 P 0 | pasos en 9a5151a 33 | hoy 33 | PUENTE - | que siguen hoy en el grafo: 0
+cap_13 de scott, los tres: pasos marcados 70 | PUENTE 2 | 2,86 por ciento | pasos hoy en el grafo 68 | PUENTE que siguen en el grafo 0

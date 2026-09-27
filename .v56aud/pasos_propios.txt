@@ -1,0 +1,21 @@
+capitulo       candidatos    pasos
+cap_02                  7       50
+cap_03                 15      121
+cap_04                 22      156
+cap_05                 12       84
+cap_06                  8       62
+cap_07                  9       53
+cap_10                  1        8
+TOTAL BANDEJA          74      534
+
+LOS DE cap_07 Y cap_10, UNO A UNO:
+  cap_07   cerrar_brecha_dos_preguntas_estrategia                       pasos=7
+  cap_07   contestar_dos_preguntas_direccion_objetivos                  pasos=5
+  cap_07   definir_entorno_grupo_clientes_proveedores_competidores      pasos=6
+  cap_07   determinar_estado_presente_capacidades_proyectos_merma       pasos=7
+  cap_07   examinar_demanda_entorno_dos_marcos_temporales               pasos=7
+  cap_07   examinar_entorno_expectativas_tecnologia_proveedores_grupos  pasos=5
+  cap_07   fijar_horizonte_ventana_replanificacion                      pasos=5
+  cap_07   fijar_periodo_direccion_objetivos_retroalimentacion          pasos=5
+  cap_07   planificar_tres_pasos_demanda_estado_brecha                  pasos=6
+  cap_10   repartir_supervision_puesto_funcional_mision                 pasos=8

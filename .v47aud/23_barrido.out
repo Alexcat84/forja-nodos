@@ -1,0 +1,17 @@
+umbral de la casa (config/umbrales.json): 0.35
+poblacion barrida: 385 nodos (grafo + bandejas, filtro canonico)
+senial publicada: src.aduana.senal_similitud_texto, la de la aduana
+
+==============================================================================
+CANDIDATO: agrupar_tareas_semejantes_aprovechar_preparacion   (6 pasos)
+  medidos al digito con la funcion de la casa: 383 de 384; descartados por cota: 1
+  LOS 8 VECINOS MAS PROXIMOS, LISTA ORDENADA ENTERA:
+    0.4091  [bandeja/grove_high_output] identificar_paso_limitante_jornada_desfases  <-- nacido en esta vuelta
+    0.3629  [bandeja/grove_high_output] supervisar_decision_delegada_preguntas_concretas  <-- nacido en esta vuelta
+    0.3348  [bandeja/grove_high_output] elegir_momento_actividad_palanca_maxima
+    0.3311  [bandeja/grove_high_output] delegar_tarea_base_comun_seguimiento  <-- nacido en esta vuelta
+    0.3301  [bandeja/grove_high_output] programar_visita_area_observar_despachar
+    0.3204  [bandeja/grove_high_output] buscar_actividad_alta_palanca_tres_vias
+    0.3183  [bandeja/grove_high_output] supervisar_tarea_delegada_etapa_menor_valor  <-- nacido en esta vuelta
+    0.3113  [bandeja/grove_high_output] empujar_persona_reunion_direccion_preferida
+  por encima del umbral 0.35, entre los medidos: 2

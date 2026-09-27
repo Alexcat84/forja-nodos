@@ -1,0 +1,31 @@
+For an Information System to interact with the Soft System in our example, it should provide you with the following information:
+
+INFORMATION BENCHMARK
+
+How many calls were made? 1
+
+How many prospects were reached? 2
+
+How many appointments were scheduled? 3
+
+How many appointments were confirmed? 4
+
+How many appointments were held? 5
+
+How many Needs Analysis Presentations were scheduled? 6
+
+How many Needs Analyses were confirmed? 7
+
+How many Needs Analyses were completed? 8
+
+How many Solutions Presentations were scheduled? 9
+
+How many Solutions Presentations were confirmed? 10
+
+How many Solutions Presentations were completed? 11
+
+How many solutions were sold? 12
+
+What was the average dollar value? 13
+
+The information should be recorded on a form, either manually or as a database on your computer.

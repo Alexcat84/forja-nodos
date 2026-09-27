@@ -1,0 +1,34 @@
+{
+  "condiciones_activacion": "Cuando quieres abastecimiento mejor dirigido que el de fuera. El libro lo razona por la pregunta: quien conoce tus necesidades y tu cultura mejor que la gente que ya trabaja contigo.",
+  "denominaciones": {
+    "nombre_largo": "Referencias de tus propios empleados",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "Referrals from Employees"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "contratacion",
+  "entregable_esperado": "El abastecimiento convertido en un resultado exigible dentro de la tarjeta de puntuacion de cada persona del equipo, con su incentivo detras y con los empleados convertidos en detectores de talento.",
+  "escala_minima": "El libro dice que practicamente cualquier organizacion, del tamaño que sea, puede lograr el mismo efecto metiendo el abastecimiento interno en las tarjetas de puntuacion de sus empleados.",
+  "fuentes": [
+    {
+      "clave": "smart_who",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "id": "pedir_referencias_empleados",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Añade el abastecimiento como un resultado en la tarjeta de puntuacion de todas las personas de tu equipo. El ejemplo del libro: abastecer cinco jugadores A al año que pasen nuestra criba telefonica.",
+    "Anima a tus empleados a preguntar a la gente de sus redes quienes son las personas mas talentosas que conocen y que deberiais contratar.",
+    "Ofrece una prima por referencia, o premia el esfuerzo con un incentivo economico o de otro tipo, como dias extra de vacaciones para quienes alcancen y superen el objetivo.",
+    "Haz a los empleados responsables de abastecer gente a traves de sus redes."
+  ],
+  "resumen_teorico": "Es el punto 2 del recuadro How to Source. Por valiosas que sean las referencias de fuera, las de dentro suelen dar un abastecimiento mejor dirigido, y sin embargo a los autores les asombra constantemente lo pocos directivos que se toman el tiempo de pedir ayuda a sus empleados. El beneficio mayor del abastecimiento interno, segun el libro, no es el numero de nombres sino que cambia la mentalidad de toda la empresa: al convertir a los empleados en detectores de talento, todo el mundo empieza a mirar el negocio por la lente del quien y no solo por la del que. Los casos que el libro pone con su nombre y con sus cifras, que son de ellos y no de la casa: Selim Bassoul, presidente y consejero delegado de Middleby Corporation, dice que sus empleados se convirtieron en su tecnica de reclutamiento numero uno y que refirieron el 85 por ciento de sus nuevas contrataciones mientras el doblaba el negocio en cinco años; Paul Tudor Jones, de Tudor Investment Corporation, razona que hace falta un jugador A para conocer a otro y dice que su tasa de exito es un 60 por ciento mas alta con la gente referida por alguien de la firma; y en el propio ghSMART las referencias internas son parte no solo de la politica de plantilla sino tambien de las promociones, ya que un principal tiene que abastecer tres candidatos capaces de pasar la criba telefonica del consejero delegado para poder optar a socio, y el 80 por ciento de sus nuevas incorporaciones en dos años vino de referencias del equipo.",
+  "titulo": "Pedir referencias a tus propios empleados"
+}

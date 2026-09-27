@@ -1,0 +1,30 @@
+filas del orden: 22 | tope 20, fuera: ['agrupar_interrupciones_subordinados_reuniones_regulares', 'canalizar_interrupciones_cartel_hora_oficina']
+  reunir_informacion_gerencial_vias_variadas            (fila  1) antes que escalonar_fuentes_informacion_gerencial                (fila  2) | CONTINUA           | LA CUMPLE
+  subir_productividad_gerencial_tres_vias               (fila  6) antes que buscar_actividad_alta_palanca_tres_vias                (fila  7) | CONTINUA           | LA CUMPLE
+  buscar_actividad_alta_palanca_tres_vias               (fila  7) antes que elegir_momento_actividad_palanca_maxima                (fila  8) | CONTINUA           | LA CUMPLE
+  usar_calendario_herramienta_planificacion_produccion  (fila 16) antes que decir_no_trabajo_excede_capacidad                      (fila 15) | CONTINUA           | LA VIOLA
+  delegar_tarea_base_comun_seguimiento                  (fila 10) antes que supervisar_tarea_delegada_etapa_menor_valor            (fila 11) | arista por lectura | LA CUMPLE
+  delegar_tarea_base_comun_seguimiento                  (fila 10) antes que supervisar_decision_delegada_preguntas_concretas       (fila 12) | arista por lectura | LA CUMPLE
+  transmitir_objetivos_prioridades_preferencias         (fila  4) antes que delegar_tarea_base_comun_seguimiento                   (fila 10) | arista por lectura | LA CUMPLE
+  identificar_paso_limitante_jornada_desfases           (fila 13) antes que usar_calendario_herramienta_planificacion_produccion   (fila 16) | arista por lectura | LA CUMPLE
+  agrupar_tareas_semejantes_aprovechar_preparacion      (fila 14) antes que agrupar_interrupciones_subordinados_reuniones_regulares (fila 21) | arista por lectura | LA CUMPLE
+  buscar_regularidad_bloques_iguales_trabajo_mando      (fila 18) antes que canalizar_interrupciones_cartel_hora_oficina           (fila 22) | arista por lectura | LA CUMPLE
+  buscar_actividad_alta_palanca_tres_vias               (fila  7) antes que detectar_palanca_negativa_actividad_mando              (fila  9) | arista por lectura | LA CUMPLE
+mis filas: 13 (SOSTENGO 10) | sus filas: 13 (SOSTENGO 9)
+  =    agrupar_tareas_semejantes_aprovechar_preparacion   > agrupar_interrupciones_subordinados_reuniones_regulares | mia SOSTENGO       | suya SOSTENGO     | tramo suyo: madre paso 3, hijo paso 1
+  DIF  buscar_actividad_alta_palanca_tres_vias            > detectar_palanca_negativa_actividad_mando              | mia SOSTENGO, DUDA | suya (sin fila)   | tramo suyo: -
+  =    buscar_regularidad_bloques_iguales_trabajo_mando   > canalizar_interrupciones_cartel_hora_oficina           | mia SOSTENGO       | suya SOSTENGO     | tramo suyo: madre paso 1, hijo paso 8
+  =    construir_flujo_produccion_paso_limitante          > identificar_paso_limitante_jornada_desfases            | mia SOSTENGO       | suya SOSTENGO     | tramo suyo: madre paso 5, hijo paso 2
+  =    delegar_tarea_base_comun_seguimiento               > supervisar_decision_delegada_preguntas_concretas       | mia SOSTENGO       | suya SOSTENGO     | tramo suyo: madre paso 7, hijo paso 2
+  =    delegar_tarea_base_comun_seguimiento               > supervisar_tarea_delegada_etapa_menor_valor            | mia SOSTENGO       | suya SOSTENGO     | tramo suyo: madre paso 7, hijo paso 1
+  DIF  detectar_arreglar_fallo_etapa_menor_valor          > decir_no_trabajo_excede_capacidad                      | mia (sin fila)     | suya NO SOSTENGO  | tramo suyo: hijo paso 8
+  DIF  dimensionar_inventario_materia_prima_reposicion    > llevar_inventario_proyectos_discrecionales             | mia (sin fila)     | suya NO SOSTENGO  | tramo suyo: hijo paso 1
+  DIF  elegir_fabricar_pedido_pronostico                  > usar_calendario_herramienta_planificacion_produccion   | mia NO             | suya (sin fila)   | tramo suyo: -
+  =    identificar_paso_limitante_jornada_desfases        > usar_calendario_herramienta_planificacion_produccion   | mia SOSTENGO       | suya SOSTENGO     | tramo suyo: madre paso 4, hijo paso 6
+  =    representar_actividad_caja_negra_ventanas          > buscar_regularidad_bloques_iguales_trabajo_mando       | mia SOSTENGO, DUDA | suya SOSTENGO     | tramo suyo: madre paso 8, hijo paso 5
+  DIF  reunir_informacion_gerencial_vias_variadas         > programar_visita_area_observar_despachar               | mia NO             | suya (sin fila)   | tramo suyo: -
+  DIF  subir_productividad_gerencial_tres_vias            > identificar_paso_limitante_jornada_desfases            | mia NO             | suya (sin fila)   | tramo suyo: -
+  DIF  subir_productividad_gerencial_tres_vias            > identificar_paso_limitante_jornada_desfases, agrupar_tareas_semejantes_aprovechar_preparacion, usar_calendario_herramienta_planificacion_produccion, decir_no_trabajo_excede_capacidad, llevar_inventario_proyectos_discrecionales | mia (sin fila)     | suya NO SOSTENGO  | tramo suyo: madre paso 2
+  =    transmitir_objetivos_prioridades_preferencias      > delegar_tarea_base_comun_seguimiento                   | mia SOSTENGO, DUDA | suya SOSTENGO     | tramo suyo: madre paso 3, hijo paso 2
+  DIF  usar_calendario_herramienta_planificacion_produccion > buscar_regularidad_bloques_iguales_trabajo_mando       | mia (sin fila)     | suya NO SOSTENGO  | tramo suyo: hijo paso 3
+  =    variar_frecuencia_inspeccion_nivel_calidad         > supervisar_tarea_delegada_etapa_menor_valor            | mia SOSTENGO, DUDA | suya SOSTENGO     | tramo suyo: madre paso 2, hijo paso 4

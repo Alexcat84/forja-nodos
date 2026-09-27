@@ -1,0 +1,36 @@
+{
+  "condiciones_activacion": "Cuando estas instalando el metodo de contratacion en tu empresa y toca la octava de las diez cosas: premiar en publico y con dinero a los que ya lo estan usando, en vez de esperar a que lo use todo el mundo.",
+  "denominaciones": {
+    "nombre_largo": "Reconocer y recompensar a quienes usan el metodo y consiguen resultados",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "Recognize and reward those who use the method and achieve results"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "contratacion",
+  "entregable_esperado": "Los que usan el metodo reconocidos en publico, y la retribucion variable de los directivos ligada por escrito a la tasa de exito en contratacion del noventa por ciento o mas.",
+  "escala_minima": "Un solo directivo con su tasa medida y su parte del variable atada a ella. El reconocimiento publico no cuesta nada y es la mitad del paso.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "smart_who",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "id": "reconocer_recompensar_uso_metodo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Manten los ojos abiertos buscando pruebas de que la gente esta usando el metodo. Los capitanes de industria estan siempre a la caza de esas pruebas.",
+    "Reconoce en publico a los que lo usan.",
+    "Recompensa ademas a los directivos que consiguen una tasa de exito en contratacion del noventa por ciento o mejor.",
+    "Ata esa recompensa ligando una parte sustancial de su retribucion variable a ese resultado concreto, y no a una valoracion general.",
+    "Cuenta con lo que el libro dice del coste: esas primas se pagan solas por el aumento sustancial de productividad que traen."
+  ],
+  "resumen_teorico": "Es la octava de las diez cosas que hay que hacer para instalar el metodo de contratacion en una empresa, y tiene dos mitades que el libro separa con cuidado. La primera es barata y publica: buscar activamente pruebas de uso y reconocer a quien las da, que es lo que los autores describen como conducta constante de los capitanes de industria. La segunda es economica y precisa: no premiar el esfuerzo ni la actitud sino un numero, la tasa de exito en contratacion del noventa por ciento o mejor, y ligarle una parte sustancial del variable. Ese numero es el mismo que la primera de las tres politicas del paso septimo pone en la tarjeta de puntuacion de todos los directivos, de modo que la recompensa mide exactamente lo que la politica exige. El libro contesta ademas por adelantado a la objecion del coste, y lo hace con una afirmacion suya que se recoge como tal: las primas se pagan solas por el aumento sustancial de productividad.",
+  "titulo": "Reconocer y recompensar a quienes usan el metodo y consiguen resultados"
+}

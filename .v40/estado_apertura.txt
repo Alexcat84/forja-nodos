@@ -1,0 +1,6 @@
+poblacion: el arbol entero, sin filtrar
+dataset/nodos.jsonl                        : 324 nodos
+bitacora/VEREDICTOS.jsonl                  : 506 lineas
+cuarentena/scott_radical_candor            : 21
+cuarentena/_insertados/scott_radical_candor: 121
+la bandeja por capitulo                    : cap_13 6, cap_14 15

@@ -1,0 +1,35 @@
+===============================================================================================
+evitar_personalizar_guia_aceptar_personal
+  titulo    : Evitar personalizar la guia y aceptar a la vez que para quien la recibe es personal, con la frase que se retira del vocabulario
+  activacion: Cuando vas a dar elogio o critica y la explicacion que te sale es un rasgo de caracter de la otra persona, o cuando quien la recibe se la toma como algo personal.
+  entregable: La guia dicha sobre lo que se hizo y no sobre quien es la persona, y la reaccion emocional de quien la recibe reconocida en vez de negada.
+  fuentes   : ['scott_radical_candor']
+  previos/siguientes: [] / []
+   P1  Distingue cuidar personalmente de personalizar, que es la distincion con la que el texto abre: cuidar personalmente es bueno, personalizar es malo.
+   P2  Cuenta con lo que es el error fundamental de atribucion, que el texto atribuye a Lee Ross, psicologo social de Stanford: usar atributos de personalidad percibidos, del estilo de eres tonto, vago, avaricioso, hipocrita o un imbecil, para explicar el comportamiento de otro, en vez de considerar tu propio comportamiento o los factores de la situacion, que probablemente fueron la causa real.
+   P3  Cuenta con los dos motivos por los que el texto dice que eso es un problema: primero, que suele ser inexacto; y segundo, que convierte un problema por lo demas resoluble en algo muy dificil de arreglar, porque cambiar atributos centrales de personalidad es muy dificil y lleva muchisimo tiempo.
+   P4  Pillate a ti mismo cuando pienses o digas tu eres, seguido de lo que sea.
+   P5  Usa entonces las tecnicas de situacion, comportamiento e impacto, o la de la columna de la izquierda, para ser humilde y evitar personalizar.
+   P6  Di eso esta mal y no tu estas mal. El texto cuenta que a un colega suyo con fama injusta de imbecil le dio la vuelta a su reputacion con ese solo cambio: dejo de decir tu estas mal y aprendio a decir creo que eso esta mal.
+   P7  Cuenta con el desglose que el texto hace de por que ese cambio funciona: el creo que es mas humilde, y decir eso en vez de tu no personaliza.
+   P8  Cuando una discusion sea sobre un asunto, mantenla sobre el asunto. El texto avisa de que las discusiones sobre algo simple, del estilo de si vamos a la izquierda o a la derecha, o si el boton va arriba o abajo, se convierten demasiado a menudo en un concurso de egos, y de que personalizar sin necesidad solo hace mas dificil resolver el asunto.
+   P9  Elimina de tu vocabulario la frase no te lo tomes como algo personal, que el texto llama peor que inutil.
+   P10 Cuenta con el motivo que el texto da: aunque des todos los pasos anteriores y no personalices, la guia SI es personal para quien la recibe, porque la mayoria volcamos mas tiempo y energia en nuestro trabajo que en ninguna otra cosa, y el trabajo es parte de quienes somos. Decir no te lo tomes como algo personal es negar esos sentimientos, como decir no estes triste o no te enfades.
+   P11 Trata como parte de tu trabajo reconocer y manejar las respuestas emocionales, y no descartarlas ni evitarlas.
+   P12 Cuando lo que tengas que decir sea de verdad personal y no sobre el trabajo, haz lo que el texto describe que hizo: lleva la conversacion al efecto sobre los demas y no a la persona, no seas prescriptivo sobre la solucion porque puede haber una causa que no conoces, y deja claro a la vez que la situacion tal como esta le esta minando un desempenio que por lo demas es fuerte.
+  RESUMEN: UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_09.md, unidad Cap. 6, Guidance. Sale de las lineas 165 a 177, bajo el rotulo Don't personalize, dentro de la seccion GIVING IMPROMPTU GUIDANCE. ES LA PIEZA P13 DE LA FRONTERA DE ESTA VUELTA, y la ultima de las seis condiciones que la seccion pone a la guia. POR QUE ES PROCEDIMIENTO Y NO POSTURA, con D.27 delante: la linea 167 dice Here are some tips that can help you avoid personalizing but accept it when people take what you say personally, y detras van CUATRO consejos rotulados uno a uno. Y el inventario es de MEDIOS con su acto: pillarse di
+===============================================================================================
+manejar_enfado_persona_desafiada
+  titulo    : Manejar el enfado de la persona a la que acabas de desafiar, con la frase que se elimina del vocabulario
+  activacion: Cuando alguien de tu equipo esta enfadado contigo despues de que le desafiaras directamente, y lo que dijiste le ha dolido.
+  entregable: El dolor reconocido en voz alta, la frase no te lo tomes como algo personal fuera de tu vocabulario, y una oferta de ayuda para arreglar el problema sin haber negado que el problema existe.
+  fuentes   : ['scott_radical_candor']
+  previos/siguientes: [] / []
+   P1  Acepta antes de empezar lo que el texto pone como parte del puesto: que a veces la gente de tu equipo va a estar enfadada contigo. El texto anade que si nadie se enfada nunca contigo es probable que no estes desafiando bastante a tu equipo.
+   P2  Trata como la clave lo que el texto llama la clave, igual que en cualquier relacion: como manejas el enfado.
+   P3  Cuando lo que dices duele, reconoce el dolor de la otra persona.
+   P4  No finjas que no duele y no digas que no deberia doler: solo demuestra que te importa.
+   P5  Elimina de tu vocabulario la frase no te lo tomes como algo personal. El texto dice que es insultante.
+   P6  En su lugar, ofrecete a ayudar a arreglar el problema.
+   P7  No finjas que no hay problema solo para intentar que alguien se sienta mejor.
+  RESUMEN: UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_04.md, unidad Cap. 1, Build Radically Candid Relationships. ESCRITA EN LA VUELTA 19, 12 sep 2026, por la TAREA 2.b de su encargo, que es la que encarga anadir la unidad a los 24 candidatos de la bandeja que no la nombraban: la costumbre de nombrarla empieza en cap_07 y estos son anteriores. NO SE CAMBIA NI UN PASO NI UNA CITA: lo unico que se anade es de que unidad salio. LEIDA DEL FICHERO FUENTE Y NO DE UNA TABLA, con el ancla textual unica que la sostiene, 'insulting', corrida con grep contra las quince unidades del libro. Es el tramo mas li

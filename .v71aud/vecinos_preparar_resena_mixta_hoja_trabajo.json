@@ -1,0 +1,20 @@
+{
+ "id": "preparar_resena_mixta_hoja_trabajo",
+ "grafo": 410,
+ "bandejas": 69,
+ "vecinos": [
+  {
+   "id": "usar_banco_nueve_preguntas_entrevista",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.357,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.378
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 7 de usar_banco_nueve_preguntas_entrevista"
+  }
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "id": "fijar_horizonte_ventana_replanificacion",
+ "grafo": 410,
+ "bandejas": 69,
+ "vecinos": [
+  {
+   "id": "fijar_periodo_direccion_objetivos_retroalimentacion",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.385,
+    "familia_id": 0.125,
+    "paso_contra_nodo": 0.43
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 2 de fijar_periodo_direccion_objetivos_retroalimentacion"
+  },
+  {
+   "id": "determinar_estado_presente_capacidades_proyectos_merma",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.358,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.394
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 4 de determinar_estado_presente_capacidades_proyectos_merma"
+  },
+  {
+   "id": "anunciar_decision_inesperada_reconvocar_reunion",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.357,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.365
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 4 del candidato contra paso 6 de anunciar_decision_inesperada_reconvocar_reunion"
+  }
+ ]
+}

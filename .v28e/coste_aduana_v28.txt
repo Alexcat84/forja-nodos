@@ -1,0 +1,14 @@
+EL COSTE DE LA ADUANA POR CANDIDATO, MEDIDO EN ESTA VUELTA Y EN ESTA MAQUINA
+
+$ ls --full-time de las salidas de la tanda (la hora es la de TERMINAR)
+  2026-09-16 09:33:00.116952300 .v28e/insercion_01_madre.txt
+  2026-09-16 09:40:25.896775800 .v28e/insercion_02_rueda.txt
+  2026-09-16 09:44:31.322801000 .v28e/insercion_03_espacio.txt
+  2026-09-16 09:46:54.734130100 .v28e/insercion_04_disentir.txt
+
+La madre se lanzo a las 09:28:26, leido de Get-Process StartTime mientras corria,
+y su salida quedo escrita a las 09:33. Son unos 4 minutos y medio.
+
+$ y lo mismo medido por dentro, con el reloj de python sobre la pieza cara:
+  poblacion del barrido : 348
+  buscar_vecinos        : 63.3 segundos para UN candidato

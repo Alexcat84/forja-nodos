@@ -1,0 +1,15 @@
+=== que es ensayo_referencia_163 ===
+accion_correctiva_2.json
+actualizacion_hvac.json
+acuerdo_representante_servicio.json
+--- una muestra ---
+fichero: cuarentena/ensayo_referencia_163\accion_correctiva_2.json
+  id = 'accion_correctiva_2'
+  titulo = 'Acción Correctiva (De la Detección a la Prevención)'
+  fuente = None
+  libro = None
+
+=== esta ensayo_referencia_163 en la tabla canonica? ===
+0
+2:  "_lea_esto": "Tabla canonica de fuentes (manual principio 8: LA FUENTE ES UN CAMPO SAGRADO). Una sola grafia por libro. Ningun nodo entra con una fuente que no este aqui: la fuente se registra ANTES del primer nodo del libro (manual seccion 7.1). Las claves de fuente son las que se escriben en el campo fuentes de cada nodo, y su ORDEN dentro del nodo es significativo. Las claves que empiezan por guion bajo no son fuentes.",
+61:    "notas": "HarperCollins e-books, EPub Edition mayo 2007. ISBN 9780061741654 (ebook), 0-06-072318-1 (tapa dura). LOTE 9. Recorte verbatim en fuentes/gerber_emyth/, 22 capitulos (cap_01 a cap_22), 62.648 palabras de cuerpo. SU CAPITULO 17 NO ESTA AQUI: quedo apartado por el plan de recorte del mundo 11 y vive bajo la clave gerber_emyth_cap17_reservado. La serie salta de cap_16 a cap_18 y ese salto es deliberado."

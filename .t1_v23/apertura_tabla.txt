@@ -1,0 +1,18 @@
+$ wc -l < dataset/nodos.jsonl
+203
+$ wc -l < bitacora/VEREDICTOS.jsonl
+148
+$ ls cuarentena/scott_radical_candor/*.json | wc -l
+113
+$ find cuarentena/_insertados -name '*.json' | wc -l
+201
+$ wc -l < docs/loop/REPORTE.md
+27302
+$ git rev-parse --abbrev-ref HEAD
+extraccion-mundo-11
+$ git rev-parse --short HEAD
+b05d040
+$ python -c "import datetime;print(datetime.date.today())"
+2026-09-13
+$ ls fuentes/scott_radical_candor/*.md | wc -l
+15

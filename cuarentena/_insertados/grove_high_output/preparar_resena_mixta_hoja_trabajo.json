@@ -1,0 +1,37 @@
+{
+ "id": "preparar_resena_mixta_hoja_trabajo",
+ "titulo": "Preparar una revision de desempeno mixta con el metodo de la hoja de trabajo: volcar todo sin editar, buscar relaciones, convertirlas en mensajes y recortar los que el subordinado no pueda retener",
+ "dominio": "gestion_equipos",
+ "estado": "vivo",
+ "ids_alias": [],
+ "nodos_previos": [],
+ "nodos_siguientes": [],
+ "atribuciones": [],
+ "fuentes": [
+  {
+   "clave": "grove_high_output",
+   "fecha": "2026-09-20"
+  }
+ ],
+ "denominaciones": {
+  "nombre_largo": "El metodo de la hoja de trabajo para preparar una revision del tipo por un lado y por otro, que mezcla lo positivo y lo negativo",
+  "sigla": "",
+  "otros_idiomas": [
+   {
+    "idioma": "ingles",
+    "termino": "worksheet for performance review"
+   }
+  ]
+ },
+ "condiciones_activacion": "Cuando el mando va a preparar una revision de desempeno del tipo por un lado y por otro, que mezcla observaciones positivas y negativas del subordinado.",
+ "entregable_esperado": "Una lista corta de mensajes, cada uno respaldado por varios items del subordinado que son manifestaciones del mismo fenomeno, recortada al numero que el subordinado pueda retener.",
+ "pasos_accionables": [
+  "Reune tantos aspectos del desempeno del subordinado como puedas: revisa informes de avance, el desempeno contra los objetivos trimestrales y las notas de las reuniones individuales.",
+  "Sientate con una hoja en blanco y, sin editar en tu cabeza, anota todo lo que se te ocurra sobre el desempeno del subordinado, cosas mayores, menores y triviales, sin ningun orden particular.",
+  "Cuando hayas agotado los items, guarda toda la documentacion de apoyo.",
+  "Busca relaciones entre los distintos items anotados en la hoja: observa cuales son manifestaciones distintas de un mismo fenomeno y por que existe cierta fortaleza o debilidad.",
+  "Cuando encuentres esas relaciones, empieza a llamarlas mensajes para el subordinado, y a partir de ahi extrae las conclusiones y los ejemplos concretos que las sostienen.",
+  "Preguntate si el subordinado sera capaz de recordar todos los mensajes que has elegido entregar; si la respuesta es no, elimina los menos importantes, sabiendo que lo que no entra en esta revision puede entrar en la siguiente."
+ ],
+ "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/grove_high_output/cap_14.md, unidad Cap. 13, titulo textual Performance Appraisal: Manager as Judge and Jury. Sale de la PIEZA P41 a P42 de la frontera publicada hoy en .v58ext/frontera.txt, L129 a L131, 264 palabras. FRONTERA DENTRO DEL NODO, PUBLICADA ANTES DE CORTAR (EXTRACTOR.md 10): L129 trae la primera mitad del metodo (reunir el material y volcarlo sin editar) y L131 trae la segunda mitad (buscar relaciones, nombrarlas mensajes y recortar la lista), las dos mitades del mismo parrafo compuesto. POR QUE ES PROCEDIMIENTO, por la prueba del inventario de EXTRACTOR.md 9.1: el propio texto da la secuencia de pasos completa en orden (first... scan... sit down... write everything down... now, from your worksheet, look for relationships... call them messages... ask yourself if...), un inventario de ETAPAS de trabajo del mando y no de fines. DE DONDE SALE CADA PASO, uno a uno: paso 1 de L129 (consider as many aspects of your subordinate's performance as possible. You should scan material such as progress reports, performance against quarterly objectives, and one-on-one meeting notes); paso 2 de L129 (sit down with a blank piece of paper. As you consider your subordinate's performance, write everything down on the paper. Do not edit in your head... Things major, minor, and trivial can be included in no particular order); paso 3 de L129 (When you have run out of items, you can put all of your supporting documentation away); paso 4 de L131 (look for relationships between the various items listed. You will probably begin to notice that certain items are different manifestations of the same phenomenon, and that there may be some indications why a certain strength or weakness exists); paso 5 de L131 (When you find such relationships, you can start calling them messages for the subordinate... begin to draw conclusions and specific examples to support them); paso 6 de L131 (ask yourself if your subordinate will be able to remember all of the messages you have chosen to deliver. If not, you must delete the less important ones. Remember, what you couldn't include in this review, you can probably take up in the next one). RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 6 pasos, 6 TRANSCRIPCION, 0 PUENTE. EL EJEMPLO RELLENO DE LA HOJA DE TRABAJO NO ENTRA (manual 3.5): L133 a L157 dan un caso concreto ya resuelto, con positivos, negativos y tres mensajes numerados de un subordinado sin nombrar, y es el EJEMPLO NOMBRADO del metodo, no su casa: ningun paso ni el entregable llevan el dato de planning process o de spec process que aparecen en ese ejemplo."
+}

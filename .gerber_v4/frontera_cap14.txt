@@ -1,0 +1,16 @@
+AVISO: cero celdas tecleadas en este instrumento. El arranque del cuerpo NO
+es una constante mia: sale de fuentes/gerber_emyth/cap_14.md, linea 8, que es la siguiente al segundo
+--- de la cabecera yaml (cierres en L1 y L7). El cuerpo va de L8 a L217.
+
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| `R1` | L8 a L20 | **35** | el numero del capitulo, el rotulo YOUR PRIMARY AIM y el epigrafe de Robert Assagioli (The Act of Will) | **RESIDUO: rotulo y epigrafe** |
+| `R2` | L21 a L30 | **115** | el negocio no es lo primero, eres tu; y antes de decidir que papel juega el negocio en tu vida debes preguntarte que valoras mas, que vida quieres, como quieres que se vea y se sienta, quien quieres ser: eso es tu Primary Aim | **POSTURA** |
+| `R3` | L31 a L98 | **510** | la visualizacion de tu propio funeral y la cinta con la historia de tu vida contada a los asistentes, como metafora de que es el Primary Aim, y el llamado a vivir la vida intencionalmente y tomarla en serio | **POSTURA** |
+| `R4` | L99 a L116 | **228** | la gente notable sabe como llego a donde esta y que necesita para llegar a donde va, trabaja sobre su vida y no solo en ella, y la cita de Don Juan sobre el guerrero que ve todo como un reto | **POSTURA y CASO** |
+| `R5` | L117 a L136 | **180** | antes de empezar tu negocio, o antes de volver a el manana, preguntate lo siguiente: las ocho preguntas que el libro enumera en vinetas sobre como quieres que se vea tu vida, tu dia a dia, que sabes de verdad, como quieres estar con otros, que quieres aprender y cuanto dinero necesitaras | **INVENTARIO PROPIO: NACE 1 CANDIDATO** |
+| `R6` | L137 a L146 | **73** | las respuestas se vuelven los estandares con que mides el progreso de tu vida, y tu Primary Aim es la vision que trae tu negocio a tu vida y tu vida a tu negocio, con proposito, energia y grano para el dia a dia | **POSTURA** |
+| `R7` | L147 a L217 | **2554** | el asombro de Sarah al descubrirse ausente de su propio negocio, y la larga historia autobiografica del propio autor, de vendedor de enciclopedias a consultor en Silicon Valley, contada como ejemplo de encontrar el propio proposito | **CASO** |
+| **el cuerpo entero** | **L8 a L217** | **3695** | **suma de las piezas: 3695** | **residuo sin asignar: 0** |
+
+piezas: 7   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 3695   suma 3695   residuo 0

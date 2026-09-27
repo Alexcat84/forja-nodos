@@ -1,0 +1,4 @@
+    $ ls fuentes/grove_high_output/cap_*.md | wc -l
+18
+    $ ls fuentes/grove_high_output/
+cap_01.md cap_02.md cap_03.md cap_04.md cap_05.md cap_06.md cap_07.md cap_08.md cap_09.md cap_10.md cap_11.md cap_12.md cap_13.md cap_14.md cap_15.md cap_16.md cap_17.md cap_18.md 

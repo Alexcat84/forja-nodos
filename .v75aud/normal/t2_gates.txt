@@ -1,0 +1,4 @@
+$ grep -c -F "GATE VERDE." .v75ext/t2_op1_corregir.txt .v75ext/t2_op2_retirar17.txt .v75ext/t2_op3_retirar8.txt
+.v75ext/t2_op1_corregir.txt:1
+.v75ext/t2_op2_retirar17.txt:1
+.v75ext/t2_op3_retirar8.txt:1

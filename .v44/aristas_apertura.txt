@@ -1,0 +1,3 @@
+MEDIDO SOBRE git show ebc5c89:dataset/nodos.jsonl, que es el commit de apertura
+NODOS   : 346
+ARISTAS : 161

@@ -1,0 +1,49 @@
+poblacion de pasos : 194
+semilla escrita    : 2110
+tamanio de muestra : 15
+
+P13 a P17    armar_plan_anual_crecimiento_equipo            paso 15   tramo L97 a L125
+   Piensa formas de empujar a quien hace un trabajo bueno a hacer un trabajo excepcional, y preguntate que proyectos nuevos, que formacion o que ayuda puedes ofrecerle.
+
+P19 y P21    montar_proceso_contratacion_reducir_sesgo      paso 19   tramo L129 a L163
+   Pon unas cuatro personas en el comite de entrevista, que es el tamanio aproximado que el texto da como correcto.
+
+P19 y P21    montar_proceso_contratacion_reducir_sesgo      paso 23   tramo L129 a L163
+   Crea a proposito momentos mas informales, y el texto los nombra: llevar a los candidatos a comer, acompaniarlos al coche, y preguntar a quien esta en recepcion y a quien organiza las agendas si el candidato les produjo alguna reaccion. En los momentos en que nadie se guarda, los candidatos hacen o d
+
+P24          facilitar_despido_tres_cosas                   paso  4   tramo L169 a L173
+   Y sigue la cadena que el texto describe a partir de ese miedo: cuando la gente lo siente, empieza a evitar riesgos, aprende menos, crece menos, innova menos y se vuelve menos de lo que podria ser. El texto lo llama lo contrario de la gestion del crecimiento personal.
+
+P26          calibrar_decision_despido_documentarla         paso  1   tramo L181 a L187
+   En cuanto hayas identificado los problemas de desempenio, tomate el tiempo de pedir consejo a tu jefe.
+
+P26          calibrar_decision_despido_documentarla         paso  2   tramo L181 a L187
+   Calibra con tus iguales, cuando corresponda.
+
+P26          calibrar_decision_despido_documentarla         paso 10   tramo L181 a L187
+   Cuenta con el mecanismo concreto de fallo que el texto ha visto en docenas de casos: a un jefe se le aconseja como escribir un plan de mejora del desempenio, se le dice que lo haga justo pero no demasiado facil y que atienda de verdad el problema de desempenio, el jefe oye la parte de justo e ignora
+
+P30          calibrar_ascensos_evitar_politica              paso  4   tramo L205 a L223
+   Quedate con lo que ese mecanismo consigue: el debate va sobre los meritos del ascenso de una persona y no sobre mi persona contra tu persona, y sobre todo es una solucion al problema de siempre del favoritismo del jefe.
+
+P30          calibrar_ascensos_evitar_politica              paso  5   tramo L205 a L223
+   Y quedate tambien con sus defectos, que el texto dice para que no lo copies a ciegas: tiende a premiar a quien hace los proyectos mas visibles en vez de a quien logra avances importantes entre bastidores, y las recomendaciones de algunas personas llegan mas lejos de lo que deberian.
+
+P7           conversar_historia_vida_descubrir_motivadores  paso  1   tramo L47 a L59
+   Ten esta conversacion con cada persona que te reporta directamente, y tenla con el proposito que el texto le pone: aprender que motiva a cada una.
+
+P8           conversar_suenios_cruzar_habilidades           paso 14   tramo L61 a L75
+   Usa esa indagacion para lo que el texto dice que sirve: empujar hacia conversaciones francas y con sentido. Su ejemplar de Google es un padre cuya pregunta revelo que tenia un hijo con necesidades especiales cuya condicion se esperaba que se agravara en la adolescencia, y que queria poder dedicarle 
+
+P8           conversar_suenios_cruzar_habilidades           paso 15   tramo L61 a L75
+   Y no esperes de la mayoria un suenio espectacular. El texto lo dice con su propio ejemplar: un hombre con un bebe con problemas graves de salud cuya mayor preocupacion en el trabajo durante aquel periodo era llegar a casa a tiempo para dar un paseo de media hora con su mujer con luz de dia, y eso ya
+
+P9           trazar_plan_dieciocho_meses_aprendizaje        paso  1   tramo L77 a L87
+   Ten esta conversacion en ultimo lugar, que es el orden que el texto le pone, y ten claro su objeto: conseguir que la persona empiece a hacerse a si misma las preguntas que vienen a continuacion.
+
+P9           trazar_plan_dieciocho_meses_aprendizaje        paso 13   tramo L77 a L87
+   Ten presente para que sirve todo esto, con las palabras del texto: ayudar a la gente a aclarar sus valores y sus suenios y luego alinearlos lo mas posible con su trabajo actual hara invariablemente mas fuerte a tu equipo, cada persona tendra mas exito y sera mas feliz, y juntos lograreis resultados 
+
+P9           trazar_plan_dieciocho_meses_aprendizaje        paso 14   tramo L77 a L87
+   Y cuenta con la parte de tu responsabilidad que el texto nombra al cerrar: da miedo moverse con confianza en la direccion de los propios suenios, y parte de tu responsabilidad como jefe es ayudar a la gente a encontrar el valor para hacer justo eso.
+

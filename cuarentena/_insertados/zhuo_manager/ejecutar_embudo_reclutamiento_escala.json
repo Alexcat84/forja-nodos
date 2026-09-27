@@ -1,0 +1,38 @@
+{
+  "id": "ejecutar_embudo_reclutamiento_escala",
+  "titulo": "Ejecutar el embudo de reclutamiento a escala repartiendolo en piezas pequenias",
+  "denominaciones": {
+    "nombre_largo": "La aritmetica de cuantos correos por directivo y por semana, el programa de formacion de entrevistadores, y las preguntas para hacer el embudo mas eficiente",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "successful hiring is all about diligent execution"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando necesitas crecer en veinte o doscientas personas en vez de en dos, y las medias empiezan a suavizar los casos individuales impredecibles.",
+  "entregable_esperado": "Una maquina bien engrasada donde cada paso del embudo ocurre con suavidad, con la cuota de correos y de entrevistas repartida por directivo y por semana, y con entrevistadores formados.",
+  "pasos_accionables": [
+    "Cuenta con que a escala las medias empiezan a suavizar los casos individuales de imprevisibilidad, aunque para un puesto concreto te pueda costar dos semanas o dos meses segun la suerte.",
+    "Calcula el total desde tu propio embudo. El libro hace la cuenta: si para tu equipo una aceptacion sale de dos ofertas, ocho entrevistas, veinte reuniones iniciales y cuarenta correos, entonces para conseguir veinte contrataciones vas a necesitar mandar unos ochocientos correos a lo largo del anio. Es un numero grande, pero la certeza reconforta.",
+    "Ponte como tarea crear una maquina bien engrasada en la que todos los pasos del embudo de reclutamiento ocurran con suavidad y eficiencia.",
+    "Reparte ese total entre las personas y las semanas. El libro sigue la cuenta: si hay ocho directivos en tu equipo, cada uno tendra que mandar unos doscientos correos al anio, que son unos cuatro a la semana, lo cual no es una locura.",
+    "Reparte tambien las entrevistas: si quieres llegar a ciento sesenta entrevistas, apunta a que entren tres candidatos cada semana.",
+    "Monta un programa para formar entrevistadores, porque vas a necesitar gente suficiente que sepa evaluar candidatos de manera consistente y objetiva.",
+    "Busca ademas oportunidades de hacer tu embudo mas eficiente, y el libro da las preguntas con las que se buscan: puedes retocar tu correo inicial para que resulte mas atractivo y te responda mas gente? Puedes organizar eventos para que los candidatos potenciales quieran mas venir a entrevistarse? Puedes idear mejores preguntas que te den mas informacion sobre un candidato?",
+    "Rompe el problema en piezas cada vez mas pequenias, y pide a toda tu plantilla que juegue un papel en ayudar al equipo a crecer y prosperar."
+  ],
+  "resumen_teorico": "Es la primera de las lecciones de contratar a escala y la que convierte el embudo en trabajo repartido. Su inventario propio es aritmetico y completo: el libro da las cuatro etapas con sus numeros, el total anual, el reparto por directivo, el reparto por semana y el objetivo de entrevistas semanales, todo en el mismo parrafo. Por eso los pasos 2, 4 y 5 son transcripcion y no calculo mio: los numeros son los del libro. Se separa del calculo del embudo propio porque aquel produce una ecuacion y este produce un reparto y un programa de formacion, que son entregables distintos y de ejecutores distintos. Lo que el libro NO dice, y por eso no esta escrito aqui, es que contiene el programa de formacion de entrevistadores, ni quien lo imparte, ni como se mide que un entrevistador es consistente.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}

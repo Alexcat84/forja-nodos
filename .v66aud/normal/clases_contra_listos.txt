@@ -1,0 +1,9 @@
+lineas suyas: 99 | pares suyos: 52 | mis filas: 53
+mis pares sin linea suya: [('dimensionar_plantilla_administrativa_pronostico', 'simplificar_trabajo_reducir_numero_pasos')]
+pares suyos sin fila mia: []
+pares con sus dos lineas en desacuerdo entre si: []
+DISCREPA  buscar_actividad_alta_palanca_tres_vias ~ elegir_momento_actividad_palanca_maxima | mia CONTINUA madre=buscar_actividad_alta_palanca_tres_vias | suya SANO madre=- (2 linea(s))
+DISCREPA  buscar_actividad_alta_palanca_tres_vias ~ subir_productividad_gerencial_tres_vias | mia CONTINUA madre=subir_productividad_gerencial_tres_vias | suya SANO madre=- (2 linea(s))
+DISCREPA  decir_no_trabajo_excede_capacidad ~ usar_calendario_herramienta_planificacion_produccion | mia CONTINUA madre=usar_calendario_herramienta_planificacion_produccion DUDA | suya SANO madre=- (2 linea(s))
+coinciden en clase y madre: 49 | discrepan: 3
+clases suyas por linea: {'SANO': 96, 'CONTINUA': 3}

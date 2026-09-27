@@ -1,0 +1,6 @@
+en 4648cbc: 368 del grafo mas 111 de bandejas = 479 | ids distintos: 479
+hoy       : 388 del grafo mas 91 de bandejas = 479 | ids distintos: 479
+ids solo en 4648cbc: [] | ids solo hoy: []
+de la bandeja al grafo: 20
+ids con contenido distinto fuera de las claves de relacion: 0
+nodos del grafo en los dos commits: 368 | reescritos solo en claves de relacion: 4 | con otra clave cambiada: 0

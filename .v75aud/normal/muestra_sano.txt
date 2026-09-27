@@ -1,0 +1,6 @@
+lineas de la 75: 30 | SANO: 23 | muestra: 5 | semilla 75
+linea 1084  usar_banco_nueve_preguntas_entrevista | responder_primer_aviso_renuncia_subordinado
+linea 1098  gestionar_retencion_subordinado_valioso_renuncia | usar_banco_nueve_preguntas_entrevista
+linea 1099  reciclar_empleado_ascendido_mas_alla_capacidad | priorizar_lista_entrenamiento_subordinados
+linea 1102  priorizar_lista_entrenamiento_subordinados | reciclar_empleado_ascendido_mas_alla_capacidad
+linea 1106  pedir_critica_anonima_curso_entrenamiento_dictado | priorizar_lista_entrenamiento_subordinados

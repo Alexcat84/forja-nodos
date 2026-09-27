@@ -1,0 +1,7 @@
+nodos: 256
+veredictos: 375
+nodos que mencionan scott_radical_candor: 53
+con no_consumada true (json dump): 14
+aristas por nodos_siguientes: 92  por nodos_previos: 92
+claves de un nodo: ['condiciones_activacion', 'denominaciones', 'dominio', 'entregable_esperado', 'escala_minima', 'estado', 'fuentes', 'id', 'ids_alias', 'nodos_previos', 'nodos_siguientes', 'pasos_accionables', 'resumen_teorico', 'titulo']
+claves de un veredicto: ['arista', 'candidato', 'detalle_paso', 'fecha', 'huella_candidato', 'huella_vecino', 'levantada_por', 'razon', 'senales', 'vecino', 'veredicto']

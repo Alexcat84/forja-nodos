@@ -1,0 +1,11 @@
+fichero: docs/loop/PROMPT_SIGUIENTE.md   (127 lineas)
+
+1   ESTA     grep -c -i "tallado" -> 1
+2   ESTA     grep -c -i "despedir_persona_franqueza_radical" -> 1
+2b  NO ESTA  grep -c -i "reconocer_recompensar_gente_estable" -> 0
+3   NO ESTA  grep -c -i "resumen_teorico" -> 0
+4   NO ESTA  grep -c -i "cambiar_forma_trabajar_conservar_plantilla" -> 0
+5   NO ESTA  grep -c -i "cap_04" -> 0
+6   NO ESTA  grep -c -i "QUESTIONS TO CONSIDER" -> 0
+7   NO ESTA  grep -c -i "recorrer_rueda" -> 0
+8   ESTA     grep -c -i "decidir_momento_despedir_persona" -> 1

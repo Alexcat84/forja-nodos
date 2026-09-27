@@ -1,0 +1,9 @@
+INSTRUMENTO: llamo a la propia funcion de src/aduana.py, sin reimplementarla
+funciones de poblacion en src/aduana.py: ['CARPETAS_FUERA_DE_POBLACION', 'Poblacion', 'poblacion_de_bandejas']
+  CARPETAS_FUERA_DE_POBLACION() -> 'tuple' object is not callable
+  Poblacion() -> object of type 'Poblacion' has no len()
+  poblacion_de_bandejas() devuelve 86 elementos
+poblacion_de_bandejas() total: 86
+   scott_radical_candor           75
+   grove_high_output               8
+   marquet_turn_the_ship           3

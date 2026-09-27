@@ -1,0 +1,16 @@
+    $ python .v51/relojes.py
+    pieza id                                                    reloj s  vecinos  poblacion
+    P6    infundir_regularidad_reunion_proceso                NO MEDIDO        0        394
+    P7    usar_tres_clases_reunion_proceso                        253,2        0        395
+    P11   fijar_frecuencia_reunion_individual_madurez_tarea       374,4        1        396
+    P12   fijar_duracion_lugar_reunion_individual                 339,8        1        397
+    P13   preparar_guion_reunion_individual_subordinado           317,1        3        398
+    P14   cubrir_indicadores_problemas_reunion_individual         350,7        4        399
+
+    pasadas de aduana corridas            : 6
+    pasadas CON reloj                     : 5
+    suma de los relojes medidos           : 1635,2 s
+    MEDIA POR PASADA, sobre 5 y no sobre 6: 327,0 s
+    media de la vuelta 50, como contraste : 461,3 s   (sobre 3 pasadas)
+    variacion                             : -29,1 por ciento
+    vecinos por pasada                    : menor 0, mayor 4, suma 9

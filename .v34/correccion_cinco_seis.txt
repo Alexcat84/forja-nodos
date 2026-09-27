@@ -1,0 +1,6 @@
+CORRECCION EN CUARENTENA, ANTES DE INSERTAR
+  id viejo : dar_guia_acto_cinco_consejos
+  id nuevo : dar_guia_acto_seis_consejos
+  la cuenta pasa de CINCO a SEIS rotulos, contados L123 L127 L129 L131 L133 L135
+  pasos    : 14, ninguno anadido ni quitado
+  el id viejo sigue existiendo: False

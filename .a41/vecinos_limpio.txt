@@ -1,0 +1,7 @@
+POBLACION (D.38.4): 371   (345 del grafo mas 26 que esperan en bandejas)
+umbrales: texto 0.35, familia_id 0.3
+CANDIDATOS DEL TRAMO: 20
+
+aplicar_consecuencias_nota_apoyar_fuerzas_persona       0 vecino(s)
+calibrar_notas_reunion_jefes_pares                      1 vecino(s)
+    GRAFO    mantener_proceso_evaluacion_ligero_vigilar_crecimiento  texto=0.355

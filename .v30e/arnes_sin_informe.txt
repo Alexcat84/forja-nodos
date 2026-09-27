@@ -1,0 +1,2 @@
+$ grep -n "SIN INFORME DE LOTE" docs/loop/loop.log | tail -1
+  683:[2026-09-16 13:03:06] VUELTA 1 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)

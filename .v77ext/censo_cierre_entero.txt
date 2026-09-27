@@ -1,0 +1,18 @@
+$ bash .v77ext/censo.sh 2>/dev/null; python .v70aud/poblacion.py
+nodos en dataset/nodos.jsonl        : 459
+veredictos en bitacora              : 1172
+pares mutuos                        : 1
+bandeja cuarentena/gerber_emyth     : 0
+insertados de gerber_emyth          : 22
+cerrojos en procesos/               : 
+poblacion: 479 | por sede: {'grafo': 459, 'bandeja': 20} | suma: 479
+$ git diff --name-status 70a827c HEAD -- dataset cuarentena bitacora censos config src scripts | cut -f1 | sort | uniq -c
+      4 M
+     22 R100
+$ git diff --name-status 70a827c HEAD -- dataset cuarentena bitacora censos config src scripts | grep -v "^R100.cuarentena/gerber_emyth/"
+M	bitacora/VEREDICTOS.jsonl
+M	censos/atribuciones.md
+M	censos/denominaciones.md
+M	dataset/nodos.jsonl
+$ git status --short -- dataset cuarentena bitacora censos config src scripts | wc -l
+0

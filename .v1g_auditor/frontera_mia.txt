@@ -1,0 +1,13 @@
+unidad   piezas   cuerpo     suma  residuo   solape    hueco
+cap_01        6     1402     1402        0        0        0
+cap_02        7     1212     1212        0        0        0
+cap_03        5     2202     2202        0        0        0
+cap_04        9     3713     3713        0        0        0
+cap_05        4     2400     2400        0        0        0
+cap_06        5     1980     1980        0        0        0
+cap_07        9     4284     4284        0        0        0
+cap_08        6     2183     2183        0        0        0
+cap_09        6     2845     2845        0        0        0
+cap_10        5     1411     1411        0        0        0
+cap_11       11     4360     4360        0        0        0
+unidades que NO cierran: 0

@@ -1,0 +1,85 @@
+{
+ "id": "cambiar_saludo_cliente_dos_ramas",
+ "grafo": 437,
+ "bandejas": 42,
+ "vecinos": [
+  {
+   "id": "cuantificar_impacto_innovacion_6_pasos",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.442,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.325
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 4 del candidato contra paso 3 de cuantificar_impacto_innovacion_6_pasos"
+  },
+  {
+   "id": "probar_traje_azul_seis_semanas",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.426,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.26
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 2 del candidato contra paso 1 de probar_traje_azul_seis_semanas"
+  },
+  {
+   "id": "dictar_ritmo_crecimiento_preguntas_escritas",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.421,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.364
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 4 del candidato contra paso 8 de dictar_ritmo_crecimiento_preguntas_escritas"
+  },
+  {
+   "id": "operar_modelo_gente_destreza_minima",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.373,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.349
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 4 del candidato contra paso 1 de operar_modelo_gente_destreza_minima"
+  },
+  {
+   "id": "responder_primer_aviso_renuncia_subordinado",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.35,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.352
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 4 del candidato contra paso 4 de responder_primer_aviso_renuncia_subordinado"
+  },
+  {
+   "id": "entregar_evaluacion_desempeno_tres_claves",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.351,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.349
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 4 del candidato contra paso 5 de entregar_evaluacion_desempeno_tres_claves"
+  }
+ ]
+}

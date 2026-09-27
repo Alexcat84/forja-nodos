@@ -1,0 +1,47 @@
+{
+ "condiciones_activacion": "Cuando eres jefe de jefes y escuchar hondo en tu organizacion se te ha vuelto imposible: no puedes tener reuniones a solas con cientos o miles de personas, y si pones horas de consulta te llegan los mismos tres quejicas semana tras semana.",
+ "denominaciones": {
+  "nombre_largo": "La hora semanal de pasear como manera de escuchar hondo cuando eres jefe de jefes y no puedes tener reuniones a solas con cientos de personas, con las tres cosas para las que sirve enterarse de los problemas pequenios",
+  "otros_idiomas": [
+   {
+    "idioma": "ingles",
+    "termino": "WALK AROUND"
+   },
+   {
+    "idioma": "ingles",
+    "termino": "Learn about small problems to prevent big ones"
+   },
+   {
+    "idioma": "ingles",
+    "termino": "Management by walking around"
+   }
+  ],
+  "sigla": ""
+ },
+ "dominio": "gestion_equipos",
+ "entregable_esperado": "Una hora a la semana de paseo puesta en tu calendario, con problemas pequenios encontrados, alguno arreglado por ti misma en el momento, y la gente con la que hablaste elegida entre la que llevabas tiempo sin ver.",
+ "estado": "vivo",
+ "fuentes": [
+  {
+   "clave": "scott_radical_candor",
+   "fecha": "2026-09-12"
+  }
+ ],
+ "id": "pasear_organizacion_hallar_problemas_pequenios",
+ "ids_alias": [],
+ "nodos_previos": [],
+ "nodos_siguientes": [],
+ "pasos_accionables": [
+  "Parte de la dificultad que el texto mide antes de dar el remedio: escuchar a quienes te reportan directamente es relativamente sencillo aunque lleve tiempo y disciplina, pero si eres jefe de jefes escuchar hondo en tu organizacion es mucho mas dificil, porque no puedes escuchar a todo el mundo ni tener reuniones a solas con cientos o miles de personas, y las horas de consulta te traen a los mismos tres quejicas semana tras semana.",
+  "Agenda una hora a la semana de tiempo para pasear.",
+  "Cuenta con que no es un invento nuevo: el texto lo llama una tecnica probada y contrastada, la gestion paseando, y dice que no tiene ninguna complicacion hacerlo.",
+  "Fijate en las cosas en las que no te fijas cuando estas enterrado en el trabajo en tu mesa o corriendo con la cabeza gacha de una reunion a la siguiente.",
+  "Preguntale a la gente que te llame la atencion, e idealmente a gente con la que hace tiempo que no hablas, en que estan trabajando.",
+  "Encuentra algunos problemas pequenios y tratalos como el texto dice, como el universo dentro de un grano de arena.",
+  "Cuenta con lo primero para lo que sirve ser consciente de esos problemas pequenios: te ayudan a encontrar el diablo en los detalles. Demasiadas veces el jefe es el ultimo en enterarse de que algo va mal, y el texto dice que la razon no suele ser que la gente esconda los problemas a proposito, sino que solo quieren traerte las cosas importantes, y un problema puede ser mas importante de lo que ellos creen.",
+  "Cuenta con lo segundo: ser consciente de los problemas pequenios y quiza incluso arremangarte y arreglarlos tu misma es la mejor manera de matar la mentalidad del esto no es mi trabajo o, peor, la del esto esta por debajo de mi. Si nada esta por debajo de tu atencion, los demas tambien prestaran atencion a los detalles.",
+  "Cuenta con lo tercero: cuando demuestras que te importan las cosas pequenias que contribuyen a la felicidad del cliente o a la calidad de vida de tu equipo, de repente a todo el mundo le importan mas, y algunas de las cosas grandes empiezan a funcionar mejor tambien."
+ ],
+ "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_11.md, unidad Cap. 8, Results. Sale de las lineas 251 a 269, bajo el rotulo WALK AROUND. ES LA PIEZA P14 DE LA FRONTERA DE cap_11. POR QUE ES PROCEDIMIENTO, con D.27 delante: la linea 259 pone el acto con su periodo ESCRITO POR EL LIBRO (Schedule an hour a week of walking-around time), y la linea 261 pone el inventario de actos dentro del paseo, nombrados uno a uno (fijarse en lo que no se ve desde la mesa, preguntar a quien te llame la atencion y mejor si hace tiempo que no hablas con esa persona, encontrar problemas pequenios). La hora semanal NO es un puente del periodo: esta escrita, y por eso se transcribe. EL CASO DEL CONSEJERO DELEGADO QUE PASEABA, Y EL DE LOS PLATOS SUCIOS DE LA COCINA DE LA LINEA 269, NO VIAJAN A NINGUN PASO: manual 3.5, el caso no es la casa. Su nombre no aparece en ningun paso ni en el entregable. Lo que viaja de ese caso es lo que ya esta en el paso 8, arremangarse y arreglar el problema uno mismo, que el texto escribe como doctrina en la linea 265 y no solo dentro del caso. POR QUE LOS TRES cuenta con NO SON UNA SERIE D.37: la linea 261 dice can be useful in several ways y NO escribe cuanta, y ademas son fines, que la restriccion 1 de D.27 excluye. El libro los ordena con First, Second, Third, pero enumerar sin decir cuantas es D.29 y no D.37 (EXTRACTOR.md 15.6). Aqui ni siquiera hace falta arista: no existen como nodos aparte. EL PAR QUE DECLARO: crear_cultura_escucha_equipo, de cap_07, es el paso LISTEN de la rueda, y pasear es una herramienta suya para escuchar hondo. Arista D.29 declarada en el reporte de la vuelta 22. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 9 pasos, 9 TRANSCRIPCION, 0 PUENTE. P1 de la linea 255; P2 y P3 de la 259; P4 a P6 de la 261; P7 de la 263; P8 de la 265; P9 de la 267. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: por donde se pasea, que dia, que se hace con el problema pequenio que no puedes arreglar tu, y a quien se le cuenta lo que encontraste.",
+ "titulo": "Pasear una hora a la semana por la organizacion para enterarte de los problemas pequenios antes de que se vuelvan grandes"
+}

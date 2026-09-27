@@ -1,0 +1,8 @@
+decidir_aceptar_rechazar_material_defectuoso       cap_03 P17  leida en b63405c pasos  8 P 0
+elegir_inspeccion_barrera_monitorizacion           cap_03 P18  leida en b63405c pasos 12 P 0
+nodos de la tanda en el grafo iguales a su lectura entera: 20 | distintos: 0
+fichas de _insertados con el mismo blob que su lectura entera: 20 | distintas: 0
+capitulo  cand pasos    P   por100
+cap_02       7    50    4     8.00
+cap_03      13   108    2     1.85
+tanda       20   158    6     3.80

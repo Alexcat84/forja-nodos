@@ -1,0 +1,6 @@
+NODOS EN GRAFO: 222
+  zhuo_manager 136
+  smart_who 59
+  scott_radical_candor 19
+  onu_consumidor 6
+  manual_sistema_conocimiento 2

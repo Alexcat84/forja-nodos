@@ -1,0 +1,71 @@
+{
+  "condiciones_activacion": "Cuando estas dando una critica y tienes delante la respuesta del otro, y tienes que decidir que hacer con ella.",
+  "denominaciones": {
+    "nombre_largo": "Medir la critica: la franqueza radical se mide en el oido del otro y no en tu boca, y que hacer ante la tristeza, ante el enfado y ante quien no te oye",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "GAUGE CRITICISM"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "listen-challenge-commit"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "It's not mean, it's clear"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "entregable_esperado": "La critica ajustada sobre la marcha segun la respuesta del oyente, con la emocion nombrada si la hubo y con la conversacion devuelta al carril.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-13"
+    }
+  ],
+  "id": "medir_critica_respuesta_oyente_brujula",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Parte de la frase que el texto trae aqui para ponerla en accion: la franqueza radical no se mide en tu boca, sino en el oido de la otra persona.",
+    "No busques las palabras magicas, porque el texto dice que no existen: no hay palabras que sirvan a la vez de bisturi y de anestesia emocional.",
+    "Cuenta con los dos casos que salen de ahi: a veces la franqueza radical escuece un poco, y cuando escuece tu trabajo es que te importe personalmente. Mas a menudo no escuece porque no se ha oido, y entonces tu trabajo es desafiar directamente.",
+    "Usa el marco de la franqueza radical como una brujula para medir tu critica y llevar la conversacion a un sitio mejor.",
+    "Presta mucha atencion a la respuesta del otro a lo que has dicho, y decide si necesita que le ensenies que te importa personalmente, o que seas mas directo y mas claro en tu desafio.",
+    "Cuenta con la regla que el texto pone por encima: la manera en que escuchas importa mas que la manera en que hablas.",
+    "Cuando ofrezcas franqueza compasiva, empieza suave y despues mide la respuesta del otro: escucha lo que dice, observa su lenguaje corporal, mirale a los ojos, y preguntate como parece que se siente y si te ha oido.",
+    "Y no lo hagas desde el telefono ni desde el ordenador, porque el texto dice que asi no se puede hacer.",
+    "Si la persona con la que hablas parece triste, esa es tu senial para pararte un momento y ensenar que te importa personalmente.",
+    "Cuenta con que eso cuesta, y con por que: ante alguien que parece disgustado, nuestra inclinacion natural es retirarnos de lo que estabamos diciendo, o sea movernos en la direccion equivocada del eje de desafiar directamente. Y este es justo el momento de ensenar que te importa.",
+    "Usa el marco como brujula para no caer en la trampa de la empatia ruinosa, que es lo que el texto dice que te recuerda: puedes ir en la direccion correcta del eje de importarte personalmente sin ir en la direccion equivocada del de desafiar directamente.",
+    "Si lo que recibes es una respuesta enfadada, esa es tu senial para atender a las emociones que hay en la sala y ensenar que te importa personalmente.",
+    "Cuenta con que eso tambien cuesta: cuando el otro esta enfadado es natural enfadarse uno, y el texto dice que nada te baja mas deprisa en el eje de importarte personalmente que el enfado.",
+    "Nombra la emocion que estas viendo, que es la via que el texto da para ensenar que te importa ante emociones negativas: parece que te he disgustado, o que te he cabreado, o que te he frustrado. No era lo que queria hacer. Estoy intentando ayudarte. Como puedo decir esto de una manera mejor?",
+    "No uses ese guion literal: usa tus propias palabras.",
+    "Cuenta con lo que nombrar la emocion consigue y con lo que hace lo contrario: a menudo nombrarla ayuda a la persona a sentirse vista, y nuestra tendencia ante las emociones negativas es fingir que no estan pasando, lo que hace que el otro se sienta invisible o invalidado.",
+    "Se humilde al nombrar la emocion, porque puedes estar entendiendola mal: el texto pone su propio ejemplar, que si la autora empieza a llorar es probablemente porque esta furiosa y no triste.",
+    "Y hagas lo que hagas, no juzgues la emocion ni le digas a la persona que no deberia sentirla. Quita no te lo tomes como algo personal de tu vocabulario.",
+    "Y cuando todo lo demas falle, usa la respuesta simple que el texto da para las emociones negativas: como puedo ayudar?",
+    "Si en cambio la persona sencillamente no te oye, porque esta a la defensiva, o ajena, o irremediablemente optimista, o sobrada, o distraida, esa es tu senial para moverte a la derecha en el eje de desafiar directamente.",
+    "Cuenta con que ser extremadamente claro puede sentirse duro y con que la mayoria de la gente se resiste con razon a ser dura, y usa ahi el lema que el texto da: no es cruel, es claro.",
+    "Centrate en el largo plazo, que es lo que el texto dice que ayuda en esos momentos: si esta persona esta cometiendo un error que le va a hacer danio con el tiempo, la unica manera de que lo arregle es que sea consciente de el, aunque esa consciencia duela un poco en el momento.",
+    "Si ves que se esta cerrando, cuenta con que a veces es porque no esta de acuerdo con lo que dices y no quiere decirlo: tu primera meta es que te diga si esta en desacuerdo, y por que.",
+    "Cuenta con el riesgo que eso trae: puede que venga hacia ti agresivamente y te diga por que eres una persona terrible, catalogando todos tus defectos. Si pasa, reconoce que no eres perfecto y di que te gustaria hablar de esos problemas en otra conversacion, pero que ahora mismo quieres hablar del asunto que teniais entre manos.",
+    "Usa el lema que el texto da para dar critica, escuchar, desafiar y comprometer, y no te saltes el paso de en medio: no pases demasiado deprisa a pedir un compromiso de cambio sin darle la oportunidad de desafiarte. La meta es animar a la persona a meterse en la conversacion, a escuchar y a participar, incluso cuando eso signifique estar en desacuerdo con tu critica, y especialmente cuando lo este.",
+    "Y si aun asi no te oye, prueba a preguntar: solo para asegurarme de que estamos en la misma pagina, puedes decirme que acabas de oir?",
+    "O di lo que estas sintiendo: no siento que se me este oyendo.",
+    "O prueba con: puedo ser mucho mas directo contigo?",
+    "Y no llames la atencion sobre las consecuencias de no cumplir con la critica antes de haberle dado a la persona la oportunidad de estar en desacuerdo con ella, que es el error que el texto dice que se comete a menudo: muchos van demasiado deprisa a tu puesto esta en riesgo si no arreglas esto. Puede que sea verdad, pero si la persona no esta de acuerdo con la critica eso se siente como una consecuencia injusta.",
+    "Cuenta con lo que esa prisa rompe: estas intentando enganchar el deseo interno de la persona de mejorar y crecer en su carrera, e ir demasiado deprisa a los castigos externos puede danar esa motivacion interna, porque si ya estoy de salida o me han condenado sin juicio, para que voy a intentar arreglarlo.",
+    "Y cuenta con la excepcion que el texto deja escrita: si el problema va a llevar a que la persona entre en un plan de mejora de desempenio o a que la despidan de forma inminente, cuanto antes se lo digas mejor.",
+    "Lleva ademas varios ejemplares concretos del problema que intentas hacerle ver, que es lo otro que el texto dice que ayuda.",
+    "Y si te interrumpen con excusas despues del primero, di algo como: antes de meternos muy a fondo en esto, quiero compartir contigo varios ejemplos mas para que veas el patron que estoy viendo. Cuando termine escuchare tu punto de vista, te lo prometo. Estoy abierto a oir que me equivoco. Y si resulta que tengo razon, estoy aqui para ayudarte a arreglarlo. Y como siempre, usa tus palabras y no las del libro."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_13.md, unidad Afterword, titulo textual Afterword to the Revised Edition: Rolling Out Radical Candor. Sale de las lineas 289 a 322, bajo el rotulo GAUGE CRITICISM de la linea 289. ES LA PIEZA 12 DE LA FRONTERA DE cap_13. POR QUE ES PROCEDIMIENTO Y NO POSTURA, con D.27 delante: el propio libro dice en la linea 291 que la frase de medir la critica en el oido del otro era otra linea muy tuiteada del libro pero que en sus talleres quedo claro que no se explicaba sola, y entonces pone su propio INVENTARIO DE OBJETOS A OBSERVAR (lo que dice, su lenguaje corporal, su mirada) y su inventario de TRES RESPUESTAS con lo que hay que hacer con cada una (tristeza en la linea 299, enfado en la 303, no oirte en la 309), mas los guiones literales de las lineas 305, 315 y 321. Deja fichero: la critica ajustada y la emocion nombrada. Y NO ES UNA SERIE D.37: el texto no escribe cuantas respuestas hay, asi que ni el id ni el titulo llevan cifra. SU PAR CON ajustar_franqueza_oido_oyente Y CON manejar_enfado_persona_desafiada (cap_05 y cap_06), leido antes de que lo levante ninguna senial: MI VEREDICTO ES CONTINUA CON ARISTA en los dos y no REPITE, con los lados medidos. Aquellos entregan la franqueza ajustada al oido de cada persona y el enfado de una persona desafiada manejado; este entrega LA CONVERSACION AJUSTADA SOBRE LA MARCHA con el marco usado como brujula, con las tres respuestas nombradas una a una, el lema de escuchar, desafiar y comprometer, y el error de las consecuencias prematuras, que ninguno de los dos tiene. VA MARCADO COMO DISCUTIBLE EN EL REPORTE. LA CIFRA Y EL NOMBRE QUE NO VIAJAN: los actores contratados para los juegos de papeles de la linea 301 son el caso de la autora y no un encargo al lector, asi que se quedan en el caso, manual 3.5. RELECTURA DE FIDELIDAD D.30 EN EL ACTO, paso a paso contra su linea: 33 pasos, 33 TRANSCRIPCION, 0 PUENTE. P1 de la linea 291; P2 y P3 de la linea 293; P4 y P5 de la linea 295; P6 a P8 de la linea 297; P9 y P10 de la linea 299; P11 de la linea 301; P12 y P13 de la linea 303; P14 a P16 de la linea 305; P17 a P19 de la linea 307; P20 y P21 de la linea 309; P22 de la linea 311; P23 a P25 de la linea 313; P26 a P28 de la linea 315; P29 a P31 de la linea 319; P32 y P33 de la linea 321. LA CUENTA DE ESTE PARRAFO LA CORREGI YO ANTES DE PUBLICARLA: escribi 32 y el fichero tenia 33, y lo vi al contar los pasos con el instrumento de la frontera en vez de fiarme de mi propia cuenta. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: cuantos ejemplares son varios, cuanto se espera antes de volver a la critica, y que se hace si la persona nombra una emocion distinta de la que ves. El libro pone las tres respuestas y no pone ninguna de las tres.",
+  "titulo": "Medir tu critica en la respuesta de quien la oye, usando el marco de la franqueza radical como brujula para decidir si toca importarte mas o desafiar mas claro"
+}

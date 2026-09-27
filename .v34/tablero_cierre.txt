@@ -1,0 +1,6 @@
+  prio lote clave                          estado                 dueno                 band ult cap
+  --------------------------------------------------------------------------------------------------------
+  .    1    onu_consumidor                 INSERTADO              NINGUNO                  0  cap_02
+  .    2    smart_who                      INSERTADO              NINGUNO                  0  cap_05
+  .    3    zhuo_manager                   INSERTADO              NINGUNO                  0       .
+  .    4    scott_radical_candor           CERRADO EN EXTRACCION  serial                  48  cap_14

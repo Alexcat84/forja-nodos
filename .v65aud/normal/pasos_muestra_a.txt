@@ -1,0 +1,50 @@
+===== construir_indicador_tendencia_patron | grafo
+  titulo: Construir el indicador de tendencia midiendo la salida contra el tiempo y contra un patron
+  fuente: ['grove_high_output'] | previos: ['representar_actividad_caja_negra_ventanas'] | siguientes: ['dimensionar_plantilla_administrativa_pronostico']
+  cond: Cuando ya tienes nombrada la salida de tu caja y quieres una ventana que te empuje a mirar hacia delante, en vez de una foto suelta del mes que acaba de cerrar.
+  P1. Monta el indicador de tendencia, que es otra ventana recortada en tu caja.
+  P2. Pon en el la salida de tu operacion: los desayunos entregados, los modulos de programa terminados o los comprobantes tramitados, segun lo que hagas.
+  P3. Mide esa salida contra el tiempo, o sea lo de este mes contra lo de una serie de meses anteriores.
+  P4. Mide esa misma salida tambien contra algun patron o nivel esperado.
+  P5. Extrapola del pasado hacia delante, que es a lo que te lleva casi solo el hecho de tener la tendencia a la vista.
+  P6. Cuando el resultado no coincida con lo que decia el patron, parate a pensar por que fue el que fue y no el que el patron anunciaba.
+===== construir_grafico_escalonado_pronosticos | grafo
+  titulo: Construir el grafico escalonado que pone cada pronostico nuevo junto a los anteriores
+  fuente: ['grove_high_output'] | previos: [] | siguientes: ['casar_flujo_fabricacion_flujo_ventas']
+  cond: Cuando quieres anticipar hacia donde va tu negocio y un grafico de tendencia simple no te llega, porque te ensena lo que paso pero no como se ha ido moviendo tu propia manera de pronosticarlo.
+  P1. Monta un grafico escalonado, que es el que pronostica una salida para los varios meses que vienen.
+  P2. Actualizalo cada mes, de manera que cada mes tengas la version puesta al dia del pronostico vigente junto a varios pronosticos anteriores.
+  P3. Marca con un asterisco el numero real de cada mes, para poder distinguirlo de los pronosticados.
+  P4. Lee la variacion de un pronostico al siguiente, que es lo que te deja anticipar la tendencia mejor que un grafico de tendencia simple.
+  P5. Hazlo con la tasa de pedidos entrantes: pon el pronostico de esa tasa, y con el el mismo pronostico preparado el mes siguiente, y el del mes de despues, y asi sucesivamente.
+  P6. Lee en el las dos cosas a la vez: tu perspectiva de negocio mes a mes, y cuanto vario esa perspectiva de un mes al siguiente.
+  P7. Compara de forma rutinaria el pronostico de cualquier mes con los pronosticos posteriores y, al final, con el resultado real.
+  P8. Toma la mejora o el empeoramiento de la perspectiva pronosticada de un mes al siguiente como tu indicador de la tendencia del negocio.
+===== archivar_indicadores_resolver_problemas | grafo
+  titulo: Mantener un archivo de indicadores para poder repasarlos el dia que algo vaya mal
+  fuente: ['grove_high_output'] | previos: [] | siguientes: []
+  cond: Cuando ya tienes indicadores en marcha y tienes que decidir si los guardas o los tiras, sabiendo que el dia que algo se rompa no vas a tener tiempo de salir a buscar la informacion.
+  P1. Recoge de forma sistematica los indicadores de tu operacion y mantenlos en un archivo, en vez de dejar que se pierdan segun pasan los dias.
+  P2. Haz que ese archivo sea un banco de informacion que ensene de golpe todos los parametros de tu operacion.
+  P3. Cuando algo vaya mal, repasa en ese archivo todos esos parametros.
+  P4. Busca en ese repaso las desviaciones no sanas respecto de la norma, que es lo que te senala donde esta el problema.
+===== vencer_sindrome_grupo_pares_autoconfianza | cuarentena\grove_high_output\vencer_sindrome_grupo_pares_autoconfianza.json
+  titulo: Vencer el sindrome del grupo de pares infundiendo autoconfianza, y la constatacion de que nadie se muere por decidir mal
+  fuente: ['grove_high_output'] | previos: [] | siguientes: []
+  cond: Cuando un grupo de iguales se reune a decidir y da vueltas sin que nadie se moje, porque cada uno espera a que aparezca el consenso antes de arriesgar una postura.
+  P1. Cuando quieras vencer el sindrome del grupo de pares, trabaja sobre la autoconfianza de cada uno de los miembros, que es lo que lo vence.
+  P2. Apoya una parte de esa autoconfianza en que cada miembro este familiarizado con el asunto que se esta considerando.
+  P3. Apoya otra parte en la experiencia.
+  P4. Cuenta con que al final la autoconfianza sale sobre todo de una constatacion visceral: que nadie se ha muerto nunca por tomar una decision de negocio equivocada, ni por emprender una accion inapropiada, ni por ser desautorizado.
+  P5. Haz que todo el mundo en tu operacion entienda esto, y no solo los que se sientan a la mesa.
+===== cerrar_brecha_dos_preguntas_estrategia | cuarentena\grove_high_output\cerrar_brecha_dos_preguntas_estrategia.json
+  titulo: Cerrar la brecha entre demanda y rendimiento contestando por separado que necesitas hacer y que puedes hacer, y llamar estrategia al conjunto que decidas
+  fuente: ['grove_high_output'] | previos: [] | siguientes: []
+  cond: Cuando ya tienes medida la demanda de tu entorno y tu estado presente, y te queda decidir que vas a hacer con la diferencia entre los dos.
+  P1. Emprende tareas nuevas o modifica las que ya tienes para cerrar la brecha entre la demanda de tu entorno y lo que tus actividades presentes van a rendir.
+  P2. Contesta la primera pregunta: que necesitas hacer para cerrar la brecha.
+  P3. Contesta la segunda pregunta: que puedes hacer para cerrar la brecha.
+  P4. Considera cada una de las dos preguntas por separado.
+  P5. Decide despues que vas a hacer realmente.
+  P6. Evalua al decidirlo que efecto van a tener tus acciones sobre el estrechamiento de la brecha, y cuando lo van a tener.
+  P7. Llama estrategia al conjunto de acciones que decidas.

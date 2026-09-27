@@ -1,0 +1,5 @@
+$ python scripts/deuda.py --saneamiento --vuelta 79
+DECLARADA vuelta de SANEAMIENTO: 79
+$ python scripts/deuda.py --clase 80
+LIBRE
+  van 1 de 5 desde la ultima de saneamiento (la 79), con 46 deuda(s) esperando

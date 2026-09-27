@@ -1,0 +1,18 @@
+$ python forja.py insertar cuarentena/scott_radical_candor/facilitar_despido_tres_cosas.json [veredictos y censos]
+ADUANA DE INSERCION, candidato 'facilitar_despido_tres_cosas'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (308 del grafo mas 40 que esperan en bandejas)
+
+DECLARADOS POR LECTURA: 1. Ninguna señal los levanto.
+  armar_plan_anual_crecimiento_equipo  [Armar una vez al anio el plan de gestion del crecimiento de cada persona del equipo, desde poner los nombres en las casillas hasta comprobar la equidad entre niveles]
+    señales: familia_id 0.0, paso_contra_nodo 0.466, similitud_texto 0.239
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  LA JERARQUIA LA CAZA LA LECTURA, NO LA SEÑAL (D.19, D.29).
+  arista madre-hijo cableada y escrita RESUELTA: armar_plan_anual_crecimiento_equipo > facilitar_despido_tres_cosas
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 309
+  censos escritos: denominaciones, series_y_cabezas
+  veredictos en bitacora/VEREDICTOS.jsonl: 1
+CODIGO DE SALIDA: 0
+  ARCHIVADO EN EL MISMO ACTO (D.31): cuarentena/_insertados/scott_radical_candor/facilitar_despido_tres_cosas.json

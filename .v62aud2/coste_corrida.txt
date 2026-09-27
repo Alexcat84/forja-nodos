@@ -1,0 +1,15 @@
+arranque: [2026-09-20 17:16:34] arranque: rama extraccion-mundo-11, MODO_INSERCION=cuarentena
+  extractor   8.2132 USD   2310 s
+  auditor    12.7685 USD   3207 s
+  extractor  25.4153 USD   6987 s
+  auditor    18.1310 USD   1747 s
+  extractor  20.9098 USD   6224 s
+  auditor    11.6410 USD   3835 s
+  extractor  13.9471 USD   9094 s
+  auditor    35.1257 USD   2279 s
+  extractor   8.0814 USD   1311 s
+  auditor    16.3536 USD   1984 s
+  extractor   2.6582 USD   1521 s
+  auditor    21.9043 USD   2352 s
+  extractor   8.4868 USD   1947 s
+  turnos: 13 | TOTAL 203.6359 USD | extractor 87.7118 | auditor 115.9241 | media 15.6643

@@ -1,0 +1,17 @@
+AVISO: cero celdas tecleadas en este instrumento. El arranque del cuerpo NO
+es una constante mia: sale de fuentes/gerber_emyth/cap_22.md, linea 8, que es la siguiente al segundo
+--- de la cabecera yaml (cierres en L1 y L7). El cuerpo va de L8 a L129.
+
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| `R1` | L8 a L12 | **5** | el rotulo AFTERWORD y el titulo TAKING THE FIRST STEP | **RESIDUO: rotulo** |
+| `Ra` | L13 a L18 | **54** | la pregunta de cierre (que haces ahora que el fuego esta encendido) y la afirmacion de que, como Sarah, el lector debe dar el primer paso | **POSTURA: bridge** |
+| `Rb` | L19 a L26 | **125** | debes dar un paso atras y mirar tu negocio con tus nuevos ojos E-Myth; debes analizar tu negocio como es hoy, decidir como debe verse cuando este terminado, y determinar la brecha entre donde estas y donde necesitas estar; esa brecha te dira que hace falta hacer, y la brecha siempre nace de la ausencia de sistemas | **DISCUTIBLE: llamado de cierre sin inventario propio de que analizar** |
+| `Rc` | L27 a L32 | **125** | desde 1986 E-Myth Worldwide ha ayudado a miles de duenos a dar ese primer paso, invita al lector a la experiencia gratuita E-Myth, y pide completar el formulario al final del libro y seguir las instrucciones provistas alli | **POSTURA: invitacion comercial, remite a un formulario fuera del libro** |
+| `Rd` | L33 a L42 | **32** | recuerda el proverbio chino (oir se olvida, ver se recuerda, hacer se entiende) y cierra con Let's get started | **POSTURA: proverbio de cierre** |
+| `R3` | L43 a L50 | **10** | la firma: Michael E. Gerber, E-Myth Worldwide, Santa Rosa California, junio 2001 | **RESIDUO: firma** |
+| `R4` | L51 a L60 | **225** | ABOUT THE AUTHOR: biografia del autor, su rol en E-Myth Worldwide, y los datos de contacto para invitarlo a hablar o recibir informacion del E-Myth Mastery Program | **RESIDUO: biografia y contacto comercial del autor** |
+| `R5` | L61 a L129 | **328** | OTHER WORKS, BACK AD y COPYRIGHT: el listado de otros libros de Michael Gerber con sus ISBN, el aviso legal de copyright de HarperCollins, los datos de edicion, y la publicidad de contraportada de otros titulos (E-Myth Mastery, The E-Myth Physician, The E-Myth Manager, The E-Myth Revisited) con su resena de mercadeo cada uno | **RESIDUO: back matter editorial, ISBN, copyright y publicidad de otros libros** |
+| **el cuerpo entero** | **L8 a L129** | **904** | **suma de las piezas: 904** | **residuo sin asignar: 0** |
+
+piezas: 8   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 904   suma 904   residuo 0

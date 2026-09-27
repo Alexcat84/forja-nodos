@@ -1,0 +1,12 @@
+turno del EXTRACTOR de la vuelta 7 (docs/loop/ultimo_extractor.json)
+  coste            : 16.817863199999994 USD
+  modelo           : claude-sonnet-5
+  duracion         : 3182 s  (53.0 min), 180 turnos de herramienta
+
+  tokens de entrada nuevos      :       356   0.001 %
+  tokens de creacion de cache   :    322870   0.760 %
+  tokens de LECTURA de cache    :  41993234  98.881 %
+  tokens de salida              :    152107   0.358 %   (de ellos 68205 de razonamiento, 44.8 %)
+  TOTAL                         :  42468567
+
+  USD por token de salida       : 0.110566 por cada mil

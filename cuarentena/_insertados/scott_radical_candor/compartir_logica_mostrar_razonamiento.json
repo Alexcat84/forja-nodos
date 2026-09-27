@@ -1,0 +1,41 @@
+{
+  "id": "compartir_logica_mostrar_razonamiento",
+  "titulo": "Compartir tu logica mostrando el razonamiento entero y no solo la conclusion",
+  "denominaciones": {
+    "nombre_largo": "Enseña tus operaciones: la tercera pieza de la persuasion, y la trampa de dar por evidente lo que sabes a fondo",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "show your work"
+      },
+      {
+        "idioma": "griego",
+        "termino": "logos"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando estas explicando una decision o una idea y la logica te parece tan evidente que casi no merece contarse.",
+  "entregable_esperado": "El razonamiento entero compartido, no solo su conclusion, de forma que quien lo oiga pueda encontrarle un fallo si lo tiene.",
+  "pasos_accionables": [
+    "No des por hecho que la parte logica es la facil por no tener la incomodidad personal de establecer la credibilidad ni la finura psicologica de atender a las emociones de un grupo: el texto dice que tiene sus propias trampas.",
+    "Desconfia en particular de la logica que a ti te parece evidente, porque es la que te lleva a no compartirla.",
+    "Cuenta con la causa que el texto pone: cuando sabes algo a fondo es dificil acordarse de que los demas no lo saben.",
+    "Enseña tus operaciones, que es el secreto que el texto dice que ya aprendiste en clase de matematicas del instituto.",
+    "No describas solo la idea: comparte ademas como llegaste a ella, que es lo que hacia Steve Jobs.",
+    "Cuenta con lo que eso señala y con lo que consigue: que si hay un fallo en tu razonamiento quieres que te lo digan, y que si no lo hay la gente aceptara tu idea con mas facilidad."
+  ],
+  "resumen_teorico": "Sale de fuentes/scott_radical_candor/cap_07.md, lineas 359 a 365, bajo los rotulos Logic y Show your work, dentro del paso PERSUADE de la rueda de hacer cosas. Es la tercera y ultima de las piezas de la retorica tal como el libro las reparte. Es corta, seis pasos de dos parrafos, y lo que la sostiene como nodo propio es que tiene su rotulo, su acto nombrado (enseñar las operaciones), su trampa nombrada (la logica que a ti te parece evidente) y la consecuencia de cada una. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 6 pasos, 6 TRANSCRIPCION, 0 PUENTE. P1, P2 y P3 de la linea 363; P4, P5 y P6 de la linea 365. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: cuanto razonamiento se enseña, donde se corta, y que se hace cuando el fallo que te señalan no es un fallo.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-12"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "atribuciones": []
+}

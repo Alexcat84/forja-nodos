@@ -1,0 +1,5 @@
+gerber_emyth              : material en fuentes/gerber_emyth/ = 22 fichero(s) .md | clave en la tabla canonica = SI
+marquet_turn_the_ship     : material en fuentes/marquet_turn_the_ship/ = 17 fichero(s) .md | clave en la tabla canonica = SI
+bernerslee_bananas        : material en fuentes/bernerslee_bananas/ = 19 fichero(s) .md | clave en la tabla canonica = SI
+openstax_business_ethics  : material en fuentes/openstax_business_ethics/ = 17 fichero(s) .md | clave en la tabla canonica = SI
+openstax_org_behavior     : material en fuentes/openstax_org_behavior/ = 32 fichero(s) .md | clave en la tabla canonica = SI

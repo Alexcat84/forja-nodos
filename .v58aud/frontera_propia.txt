@@ -1,0 +1,50 @@
+==============================================================================
+VERIFICACION PROPIA DE LA FRONTERA, FILA A FILA CONTRA EL FICHERO
+==============================================================================
+
+--- cap_11
+  cabecera acaba en la linea            : 7
+  filas de la tabla del reporte         : 36
+  lineas con contenido tras la cabecera : 38
+  lineas NO cubiertas                   : 0  []
+  SOLAPES                               : 0  []
+  suma de las filas (contada por mi)    : 2662 palabras
+  cuerpo medido aparte                  : 2662 palabras
+  CARACTERES DE CUERPO                  : 15495
+  fichero entero                        : 2688 palabras
+  IGUALES                               : True
+  nodos que la tabla declara            : 2
+  FILAS CUYA CIFRA DE PALABRAS NO ME SALE: 0  []
+  fila TOTAL del reporte                : (2662, 2)   (mia: 2662, 2)
+
+--- cap_12
+  cabecera acaba en la linea            : 7
+  filas de la tabla del reporte         : 55
+  lineas con contenido tras la cabecera : 55
+  lineas NO cubiertas                   : 0  []
+  SOLAPES                               : 0  []
+  suma de las filas (contada por mi)    : 4105 palabras
+  cuerpo medido aparte                  : 4105 palabras
+  CARACTERES DE CUERPO                  : 24227
+  fichero entero                        : 4131 palabras
+  IGUALES                               : True
+  nodos que la tabla declara            : 3
+  FILAS CUYA CIFRA DE PALABRAS NO ME SALE: 0  []
+  fila TOTAL del reporte                : (4105, 3)   (mia: 4105, 3)
+
+--- cap_13
+  cabecera acaba en la linea            : 7
+  filas de la tabla del reporte         : 26
+  lineas con contenido tras la cabecera : 35
+  lineas NO cubiertas                   : 0  []
+  SOLAPES                               : 0  []
+  suma de las filas (contada por mi)    : 2510 palabras
+  cuerpo medido aparte                  : 2510 palabras
+  CARACTERES DE CUERPO                  : 15494
+  fichero entero                        : 2535 palabras
+  IGUALES                               : True
+  nodos que la tabla declara            : 2
+  FILAS CUYA CIFRA DE PALABRAS NO ME SALE: 0  []
+  fila TOTAL del reporte                : (2510, 2)   (mia: 2510, 2)
+
+NODOS DE LAS TRES UNIDADES, CONTADOS POR MI: 7

@@ -1,0 +1,70 @@
+===== supervisar_tarea_delegada_etapa_menor_valor | grafo
+  titulo: Supervisar una tarea delegada como se supervisa la calidad: en la etapa de menor valor anadido, con frecuencia variable y entrando en el detalle al azar
+  fuente: ['grove_high_output']
+  cond: Cuando ya has delegado una tarea y tienes que decidir en que punto la miras, cada cuanto la miras y hasta que detalle entras, sin convertir el seguimiento en intromision.
+  P1. Trata el seguimiento de los resultados de la delegacion como lo que el libro dice que se parece: el seguimiento que se usa en el aseguramiento de la calidad.
+  P2. Aplica los principios del aseguramiento de la calidad y supervisa en la etapa del proceso de menor valor anadido.
+  P3. Revisa, por ejemplo, los borradores en sucio de los informes que has delegado, y no esperes a que tus subordinados hayan gastado su tiempo en pulirlos hasta su forma final para descubrir entonces que tienes un problema basico con el contenido.
+  P4. Emplea un enfoque variable para la frecuencia con la que compruebas el trabajo de tus subordinados, usando esquemas de muestreo distintos con subordinados distintos.
+  P5. Sube o baja esa frecuencia segun el subordinado este ejecutando una tarea recien delegada o una con la que ya tiene experiencia.
+  P6. No bases cada cuanto supervisas en lo que creas que tu subordinado puede hacer en general, sino en su experiencia con esa tarea concreta y en su desempeno previo con ella, que es su madurez relativa a la tarea.
+  P7. A medida que el trabajo del subordinado mejora con el tiempo, responde con una reduccion correspondiente de la intensidad del seguimiento.
+  P8. Para aplicar bien los principios del aseguramiento de la calidad, entra en los detalles solo al azar, lo justo para intentar asegurar que el subordinado avanza de forma satisfactoria.
+  P9. Cuenta con que entrar en todos los detalles de una tarea delegada seria como probar en aseguramiento de la calidad el cien por cien de lo que fabricacion saco.
+===== delegar_tarea_base_comun_seguimiento | grafo
+  titulo: Delegar una tarea sobre una base comun de informacion, sin farsa y con su seguimiento, porque delegar sin seguimiento es abdicar
+  fuente: ['grove_high_output']
+  cond: Cuando vas a pasar una tarea tuya a un subordinado y quieres que el resultado llegue sin tener que prescribirle cada actividad en detalle.
+  P1. Cuenta con que el tiempo de un mando tiene una jerarquia de valores, y con que por eso la delegacion es un aspecto esencial del mando.
+  P2. Antes de delegar, comprueba que quien delega y quien recibe comparten una base comun de informacion y un conjunto comun de ideas o nociones operativas sobre como abordar la resolucion de problemas, que es un requisito que muchas veces no se cumple.
+  P3. Cuenta con que, si las dos partes no comparten esa base comun relevante, quien recibe solo puede llegar a ser un delegado efectivo con instrucciones especificas, y eso, igual que en la intromision donde las actividades concretas se prescriben en detalle, produce palanca de mando baja.
+  P4. Revisa que tareas no quieres soltar en realidad: todos tenemos algunas que no queremos delegar simplemente porque nos gusta hacerlas y preferimos no soltarlas.
+  P5. Deja que eso pase solo si se apoya en una decision consciente de retener ciertas tareas que disfrutas haciendo aunque pudieras delegarlas si quisieras; sabe exactamente lo que estas haciendo y evita la farsa de la delegacion insincera, que produce una palanca de mando negativa inmensa.
+  P6. Antes de decidir si delegas las actividades que te son familiares o las que no, aplica el principio: delegar sin seguimiento es abdicar.
+  P7. Cuenta con que nunca puedes lavarte las manos de una tarea: aun despues de delegarla sigues siendo responsable de que se cumpla, y supervisar la tarea delegada es la unica via practica que tienes de asegurar un resultado.
+  P8. Separa el seguimiento de la intromision: supervisar no es entrometerse, sino comprobar que una actividad avanza en linea con lo que se espera de ella.
+  P9. Elige con esa vara que delegas: como es mas facil supervisar algo que te resulta familiar, si tienes eleccion delega aquellas actividades que mejor conoces.
+  P10. Cuenta de antemano con lo que el experimento del lapiz ensena: es muy probable que hacerlo asi vaya en contra de tu fibra emocional.
+===== fijar_frecuencia_reunion_individual_madurez_tarea | grafo
+  titulo: Fijar cada cuanto tienes la reunion individual con cada subordinado segun su madurez relevante para la tarea, y ajustarla por lo deprisa que cambia su area
+  fuente: ['grove_high_output']
+  cond: Cuando tienes que decidir cada cuanto te reunes a solas con cada uno de los profesionales que te reportan, y no sabes con que criterio separar a unos de otros.
+  P1. Decide cada cuanto necesita reunion individual cada persona, en vez de poner la misma frecuencia para todas.
+  P2. Contesta a esa pregunta con la madurez relevante para el puesto o para la tarea de cada uno de tus subordinados, que es la respuesta que el libro da.
+  P3. Mide esa madurez por cuanta experiencia tiene ese subordinado con la tarea concreta que tiene entre manos.
+  P4. No la confundas con la experiencia que tiene en general ni con lo mayor que sea.
+  P5. Cuenta con que el estilo de mando mas eficaz en un caso concreto va de la supervision muy estrecha a la muy suelta a medida que sube la madurez de tarea del subordinado.
+  P6. Ten reuniones individuales con frecuencia, por ejemplo una vez por semana, con el subordinado que es inexperto en una situacion concreta.
+  P7. Tenlas con menos frecuencia, quiza una vez cada pocas semanas, con el veterano experimentado.
+  P8. Ten en cuenta ademas una segunda consideracion: lo deprisa que cambian las cosas en el area del puesto.
+  P9. Cuenta con que en un area de ritmo muy rapido, y el libro pone como ejemplo la de marketing, el supervisor necesita reuniones individuales frecuentes para seguir al dia de lo que pasa.
+  P10. Cuenta con que en un entorno mas tranquilo, y el libro pone como ejemplo el de investigacion, pueden bastar reuniones menos frecuentes para un mismo nivel de madurez relevante para la tarea.
+===== casar_flujo_fabricacion_flujo_ventas | grafo
+  titulo: Casar el flujo de fabricacion con el de ventas y meter la holgura en el inventario de menor valor
+  fuente: ['grove_high_output']
+  cond: Cuando fabricas contra pronostico y tienes dos relojes corriendo a la vez, el de la fabrica y el del vendedor, y ninguno de los dos es del todo predecible.
+  P1. Trata la entrega de un producto fabricado contra pronostico como dos procesos simultaneos, cada uno con su propio ciclo de tiempo.
+  P2. Sigue el flujo de fabricacion: la materia prima pasa por las distintas etapas de produccion y acaba entrando en el almacen de producto terminado.
+  P3. Sigue a la vez el flujo de ventas: el vendedor encuentra un cliente posible, le vende, y ese cliente acaba poniendo un pedido al fabricante.
+  P4. Ponte como ideal que el pedido del producto y el producto mismo lleguen al muelle de expedicion al mismo tiempo.
+  P5. No entregues todo el pronostico a un solo mando al que hacer responsable de el, aunque la complejidad del asunto te tiente a hacerlo, porque eso no suele funcionar bien.
+  P6. Pide en su lugar que fabricacion y ventas preparen cada uno su propio pronostico, de manera que cada cual responda de cumplir sus propias predicciones.
+  P7. Casa los dos flujos paralelos con toda la precision que puedas, porque si no casan acabas o con un pedido de cliente que no puedes satisfacer o con un producto terminado para el que no tienes cliente.
+  P8. Cuenta con que el ideal casi nunca se da en el mundo real: los pedidos no llegan a tiempo o el cliente cambia de idea, y por el otro lado fabricacion falla plazos, comete errores o se encuentra con problemas imprevistos.
+  P9. Mete a proposito una cantidad razonable de holgura en el sistema, precisamente porque ninguno de los dos flujos es completamente predecible.
+  P10. Pon esa holgura en el inventario, que es el sitio mas evidente, y controlalo con cuidado, porque cuanto mas inventario tengas mas cambios podras absorber sin dejar de servir pedidos, pero construirlo y mantenerlo cuesta dinero.
+  P11. Guarda ese inventario en la etapa de menor valor, como los huevos crudos de la fabrica de desayunos, porque cuanto menor es el valor mas flexibilidad de produccion obtienes por el mismo coste de inventario.
+  P12. Usa graficos escalonados en los dos pronosticos, el de fabricacion y el de ventas, y observa una y otra vez la desviacion de un pronostico respecto de otro para ir acotando las causas de inexactitud y mejorar tu capacidad de pronosticar tanto los pedidos como la disponibilidad de producto.
+===== elegir_fabricar_pedido_pronostico | grafo
+  titulo: Elegir entre fabricar contra pedido y fabricar contra pronostico, y asumir el riesgo de inventario del segundo
+  fuente: ['grove_high_output']
+  cond: Cuando tienes que decidir como controlas la salida de tu operacion, y el plazo que tardas en fabricar es mas largo que el que tu cliente esta dispuesto a esperar.
+  P1. Cuenta con que solo hay dos maneras de controlar la salida de cualquier fabrica: fabricar contra pedido y fabricar contra pronostico.
+  P2. Si fabricas contra pedido, espera a saber que quiere el cliente, busca despues un hueco en tu programa de fabricacion y hazle ahi su pieza.
+  P3. Compara tu plazo con el de tu competencia: si ellos tienen listo el mismo producto en cuatro semanas y tu necesitas cuatro meses, no vas a tener muchos clientes.
+  P4. Cuando esa comparacion te cierre la via del pedido, pasa a fabricar contra pronostico, que es actuar sobre una contemplacion de los pedidos futuros, aunque preferirias fabricar contra pedido.
+  P5. Monta tus actividades alrededor de una especulacion razonada de que se materializaran pedidos de productos concretos dentro de un plazo determinado.
+  P6. Asume el riesgo de inventario que eso trae: comprometes recursos contra una evaluacion de necesidades futuras, y si los pedidos no se materializan, o se materializan para un producto distinto del previsto, lo que te queda es inventario no deseado.
+  P7. Reconoce que al fabricar contra pronostico estas arriesgando capital para poder responder ordenadamente a una demanda futura prevista.
+  P8. Cuenta con que las dos vias pueden convivir en la misma operacion, como en la fabrica de desayunos: fabrica su producto contra el pedido del cliente, pero compra a sus proveedores, como al huevero, contra la demanda pronosticada.
+  P9. Usa el pronostico tambien fuera de la fabrica: contrata titulados para necesidades previstas en vez de contratar solo cuando surge la necesidad, porque los titulados salen de forma muy estacional, y desarrolla productos de programa contra una necesidad de mercado prevista y no contra un pedido concreto.

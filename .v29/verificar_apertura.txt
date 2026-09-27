@@ -1,0 +1,6 @@
+filas en el instrumento : 25
+filas pegadas en el doc : 25
+en el doc y NO en el instrumento (celdas inventadas) : 0
+en el instrumento y NO en el doc (filas que me deje) : 0
+
+VERDE

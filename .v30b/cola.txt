@@ -1,0 +1,6 @@
+src/aduana.py:1240:            registro["arista_en_cola"] = True
+Binary file src/__pycache__/aduana.cpython-312.pyc matches
+tests/test_aceptacion.py:2812:        self.assertEqual(lineas[0]["arista_en_cola"], True)
+tests/test_aceptacion.py:2834:        self.assertNotIn("arista_en_cola", lineas[0])
+tests/test_aceptacion.py:2899:        self.assertEqual(lineas[0]["arista_en_cola"], True)
+Binary file tests/__pycache__/test_aceptacion.cpython-312.pyc matches

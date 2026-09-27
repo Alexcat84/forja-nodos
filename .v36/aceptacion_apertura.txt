@@ -1,0 +1,6 @@
+$ python tests/test_aceptacion.py
+  D.54, un paso retirado se retira del campo: 7 pruebas mas
+  la exencion del censo es de MOMENTO y no de fichero: 3 pruebas mas
+
+  total: 294 pruebas, 0 fallos, 0 errores
+========================================================================

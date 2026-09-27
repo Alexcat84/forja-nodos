@@ -1,0 +1,13 @@
+$ python forja.py arista --madre identificar_paso_limitante_jornada_desfases --hijo usar_calendario_herramienta_planificacion_produccion --paso 4 --razon <fila 11> --veredicto CONTINUA --cita-veredicto <fila 11>
+DECLARACION DE ARISTA POR LECTURA (D.37)
+  madre: identificar_paso_limitante_jornada_desfases
+  hijo : usar_calendario_herramienta_planificacion_produccion
+  paso citado de la madre: 4
+    Crea desfases y programa el resto de tu trabajo alrededor de ese paso limitante.
+  señales del par: familia_id 0.0, paso_contra_nodo 0.413, similitud_texto 0.312
+    NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: identificar_paso_limitante_jornada_desfases > usar_calendario_herramienta_planificacion_produccion
+  razon en bitacora/VEREDICTOS.jsonl
+
+codigo 0

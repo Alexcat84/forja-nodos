@@ -1,0 +1,40 @@
+dataset/nodos.jsonl            fechas que un acto se escribe a si mismo:  30
+bitacora/VEREDICTOS.jsonl      fechas que un acto se escribe a si mismo: 107
+LAS DOS SEDES                  fechas que un acto se escribe a si mismo: 137
+
+fechas SIN sello con el que cuadrarlas (no se juzgan, y se dice): 25
+CELDAS QUE CHOCAN CON EL SELLO DE LA MAQUINA: 2
+   de ellas, con su CORRECCION DECLARADA al lado : 0
+   de ellas, VIVAS y sin remedio escrito         : 2
+
+| sede | linea | celda | la mano escribio | la maquina estampo | sujeto | remedio |
+|---|---:|---|---|---|---|---|
+| `dataset/nodos.jsonl` | 240 | `/resumen_teorico` | `17 sep 2026` | `2026-09-16` | `recorrer_rueda_conscientemente_cultura_equipo` | **SIN CORREGIR** |
+| `bitacora/VEREDICTOS.jsonl` | 396 | `/texto_anadido` | `17 sep 2026` | `2026-09-16` | `recorrer_rueda_conscientemente_cultura_equipo` | **SIN CORREGIR** |
+
+LAS 25 SIN SELLO, UNA A UNA, para que nadie tenga que fiarse del recuento:
+   dataset/nodos.jsonl        linea  204  /resumen_teorico       desplegar_marco_franqueza_radical
+   dataset/nodos.jsonl        linea  205  /resumen_teorico       repartir_semana_cuarenta_horas_jefe
+   dataset/nodos.jsonl        linea  205  /resumen_teorico       repartir_semana_cuarenta_horas_jefe
+   dataset/nodos.jsonl        linea  206  /resumen_teorico       delimitar_franqueza_radical_cinco_noes
+   dataset/nodos.jsonl        linea  208  /resumen_teorico       equilibrar_elogio_critica_equipo
+   dataset/nodos.jsonl        linea  209  /resumen_teorico       imaginar_caso_simple_bragueta_abierta
+   dataset/nodos.jsonl        linea  211  /resumen_teorico       manejar_enfado_persona_desafiada
+   dataset/nodos.jsonl        linea  212  /resumen_teorico       criticar_trabajo_evitar_desanimo
+   dataset/nodos.jsonl        linea  213  /resumen_teorico       dar_critica_inmediata_ayuda_tangible
+   dataset/nodos.jsonl        linea  214  /resumen_teorico       cambiar_potencial_trayectoria_crecimiento
+   dataset/nodos.jsonl        linea  215  /resumen_teorico       ajustar_franqueza_oido_oyente
+   dataset/nodos.jsonl        linea  216  /resumen_teorico       revisar_ciclo_responsabilidades_relaciones
+   dataset/nodos.jsonl        linea  217  /resumen_teorico       elogiar_trabajo_especifico_contexto
+   dataset/nodos.jsonl        linea  218  /resumen_teorico       empezar_cultura_franqueza_radical
+   dataset/nodos.jsonl        linea  219  /resumen_teorico       descubrir_motivacion_sentido_persona
+   dataset/nodos.jsonl        linea  220  /resumen_teorico       cuidar_persona_completa_equipo
+   dataset/nodos.jsonl        linea  221  /resumen_teorico       pedir_critica_equipo_premiarla
+   dataset/nodos.jsonl        linea  222  /resumen_teorico       acompaniar_mejores_equipo_socio
+   dataset/nodos.jsonl        linea  223  /resumen_teorico       despedir_persona_franqueza_radical
+   dataset/nodos.jsonl        linea  224  /resumen_teorico       decidir_momento_despedir_persona
+   dataset/nodos.jsonl        linea  225  /resumen_teorico       reconocer_recompensar_gente_estable
+   dataset/nodos.jsonl        linea  226  /resumen_teorico       retar_superestrellas_equipo_constantemente
+   dataset/nodos.jsonl        linea  227  /resumen_teorico       retirar_etiquetas_permanentes_equipo
+   dataset/nodos.jsonl        linea  228  /resumen_teorico       revisar_cinco_causas_mal_desempenio
+   dataset/nodos.jsonl        linea  229  /resumen_teorico       subir_vara_calidad_equipo

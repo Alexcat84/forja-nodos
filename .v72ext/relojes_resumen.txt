@@ -1,0 +1,1 @@
+insertar: 20 | minimo 274.4 s | mediana 560.0 s | maximo 976.5 s | suma 10920.8 s (3.03 h)

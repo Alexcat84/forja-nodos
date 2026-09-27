@@ -1,0 +1,11 @@
+$ python .v54/p11_control.py
+BARRIDO DE CARACTERES DE CONTROL (pregunta 11 de la cola de doctrina)
+  nodos del grafo barridos              : 346  (lineas de dataset\nodos.jsonl)
+  fichas de cuarentena barridas         : 575  (ficheros .json bajo cuarentena/)
+  caracteres de control ENCONTRADOS     : 4
+    numerador   4  cadenas con un caracter de control dentro
+    denominador 921  documentos barridos (nodos del grafo mas fichas de cuarentena)
+    dataset\nodos.jsonl:pedir_critica_primero_crear_seguridad_psicologica  campo .resumen_teorico  posicion 5162  U+0008
+    dataset\nodos.jsonl:pedir_critica_primero_crear_seguridad_psicologica  campo .resumen_teorico  posicion 5166  U+0008
+    cuarentena\_insertados\scott_radical_candor\pedir_critica_primero_crear_seguridad_psicologica.json  campo .resumen_teorico  posicion 5162  U+0008
+    cuarentena\_insertados\scott_radical_candor\pedir_critica_primero_crear_seguridad_psicologica.json  campo .resumen_teorico  posicion 5166  U+0008

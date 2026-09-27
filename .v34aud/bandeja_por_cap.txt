@@ -1,0 +1,13 @@
+BANDEJA cuarentena/scott_radical_candor: 48 ficheros
+  cap_09           5
+  cap_10          14
+  cap_12           2
+  cap_13          12
+  cap_14          15
+
+LOS QUE QUEDAN DE cap_09 EN BANDEJA:
+  linea 331    entregar_evaluacion_formal_desempenio_nueve_consejos 22 pasos
+  linea 363    impedir_punialadas_espalda_equipo                     9 pasos
+  linea 369    fomentar_guia_reciproca_companieros                  13 pasos
+  linea 383    conducir_reuniones_salto_nivel_diez_reglas           31 pasos
+  linea 415    resolver_dudas_frecuentes_reuniones_salto_nivel      16 pasos

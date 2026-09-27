@@ -1,0 +1,11 @@
+=== sello D.52 de la v47, comprobado por mi ===
+128d46605ef9f110c6d75dbe5b97cdb2cbe94f5a
+128d46605ef9f110c6d75dbe5b97cdb2cbe94f5a
+=== huella del acta que el prompt me dio ===
+a658c0097bb958805b552777defc86bcae1f3434
+=== herencia ===
+  su huella     : a658c0097bb958805b552777defc86bcae1f3434
+  heredados     : 2
+HEREDADO 1   [REMEDIO, linea 35926 del acta]
+HEREDADO 2   [REMEDIO, linea 35927 del acta]
+| **REMEDIO DEL AUDITOR, VUELTA 48, segundo** | **Todo remedio que yo deje escrito va en TABLA y FUERA de bloque de cita**, para que `src/herencia.py` lo entregue y no dependa de que yo lea mi propia acta | `python forja.py herencia` en la vuelta 48 tiene que entregar **`heredados: 2`**. **Si entrega `0`, roto** |

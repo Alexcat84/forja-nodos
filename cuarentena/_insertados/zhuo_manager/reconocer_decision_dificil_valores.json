@@ -1,0 +1,34 @@
+{
+  "id": "reconocer_decision_dificil_valores",
+  "titulo": "Reconocer al reporte que hace algo dificil en el espiritu de los valores del equipo",
+  "denominaciones": {
+    "nombre_largo": "La cara positiva de pedir cuentas: reconocer, admitir que fue dificil y dar las gracias por haber hecho lo correcto",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "when a report does something difficult that is in the spirit of your team's values, recognize them for it"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando un reporte tuyo hace algo dificil que va en el espiritu de los valores de tu equipo.",
+  "entregable_esperado": "El reporte reconocido, con lo dificil que fue admitido en voz alta y las gracias dadas por haber hecho lo correcto.",
+  "pasos_accionables": [
+    "Reconoce a tu reporte cuando haga algo dificil que va en el espiritu de los valores de tu equipo.",
+    "Ten delante los tres casos que el libro nombra como ejemplos de eso: dejar pasar un trato de venta lucrativo por reparos eticos, despedir a alguien que rinde de maravilla y esta creando un ambiente de trabajo toxico, o admitir abiertamente cuando ha cometido un error.",
+    "Admitele que fue dificil.",
+    "Dale las gracias por haber hecho lo correcto."
+  ],
+  "resumen_teorico": "Es el hermano de cara positiva del nodo anterior, y los dos cuelgan de la misma linea de los incentivos, la que dice que el entorno premia a quien se comporta segun los valores y pide cuentas a quien no. Es el nodo mas corto que escribo en esta vuelta y va marcado como discutible por eso: el libro lo escribe en un solo parrafo, con tres situaciones nombradas y tres actos nombrados, y no da nada mas. Lo que el libro NO dice, y por eso no esta escrito aqui, es si el reconocimiento es publico o privado, ni cuando se hace, ni si se registra en algun sitio.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}

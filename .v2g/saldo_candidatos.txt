@@ -1,0 +1,30 @@
+| # | candidato | pieza de cap_03 | puerta | poblacion que midio SU informe | vecinos | la cola, nombrada |
+|---:|---|---|---|---|---:|---|
+| 1 | `elegir_cinco_indicadores_diarios_fabrica` | `P2` | **ENTRARIA** | 358 (270 del grafo mas 88 en bandejas) | 0 | cola vacia |
+| 2 | `emparejar_indicadores_efecto_contraefecto` | `P3` | **BLOQUEARIA** | 358 (270 del grafo mas 88 en bandejas) | 1 | `revisar_tres_preguntas_valor_carrera` por `similitud_texto`, similitud 0,354, familia 0,000, paso contra nodo 0,386 |
+| 3 | `elegir_indicador_salida_trabajo_administrativo` | `P4 mas P5` | **BLOQUEARIA** | 363 (270 del grafo mas 93 en bandejas) | 2 | `evaluar_directivo_resultados_fortaleza` por `paso_contra_nodo`, similitud 0,184, familia 0,000, paso contra nodo 0,766; `emparejar_indicadores_efecto_contraefecto` por `similitud_texto`, similitud 0,355, familia 0,125, paso contra nodo 0,489 |
+| 4 | `representar_actividad_caja_negra_ventanas` | `P7` | **ENTRARIA** | 371 (270 del grafo mas 101 en bandejas) | 0 | cola vacia |
+| 5 | `construir_indicador_linealidad_alerta_temprana` | `P9` | **ENTRARIA** | 371 (270 del grafo mas 101 en bandejas) | 0 | cola vacia |
+| 6 | `construir_indicador_tendencia_patron` | `P10` | **BLOQUEARIA** | 371 (270 del grafo mas 101 en bandejas) | 3 | `construir_grafico_escalonado_pronosticos` por `similitud_texto`, similitud 0,350, familia 0,143, paso contra nodo 0,461; `archivar_indicadores_resolver_problemas` por `similitud_texto`, similitud 0,391, familia 0,143, paso contra nodo 0,427; `equilibrar_capacidad_personal_inventario_plazo` por `similitud_texto`, similitud 0,352, familia 0,000, paso contra nodo 0,422 |
+| 7 | `construir_grafico_escalonado_pronosticos` | `P11` | **BLOQUEARIA** | 371 (270 del grafo mas 101 en bandejas) | 3 | `construir_indicador_tendencia_patron` por `similitud_texto`, similitud 0,354, familia 0,143, paso contra nodo 0,453; `elegir_fabricar_pedido_pronostico` por `similitud_texto`, similitud 0,354, familia 0,143, paso contra nodo 0,453; `emparejar_indicadores_efecto_contraefecto` por `similitud_texto`, similitud 0,363, familia 0,000, paso contra nodo 0,434 |
+| 8 | `archivar_indicadores_resolver_problemas` | `P12` | **BLOQUEARIA** | 371 (270 del grafo mas 101 en bandejas) | 2 | `construir_indicador_tendencia_patron` por `similitud_texto`, similitud 0,384, familia 0,143, paso contra nodo 0,420; `revisar_tres_preguntas_valor_carrera` por `similitud_texto`, similitud 0,369, familia 0,000, paso contra nodo 0,414 |
+| 9 | `elegir_fabricar_pedido_pronostico` | `P13` | **BLOQUEARIA** | 371 (270 del grafo mas 101 en bandejas) | 1 | `construir_grafico_escalonado_pronosticos` por `similitud_texto`, similitud 0,352, familia 0,143, paso contra nodo 0,440 |
+| 10 | `casar_flujo_fabricacion_flujo_ventas` | `P14` | **ENTRARIA** | 371 (270 del grafo mas 101 en bandejas) | 0 | cola vacia |
+| 11 | `dimensionar_plantilla_administrativa_pronostico` | `P15` | **ENTRARIA** | 371 (270 del grafo mas 101 en bandejas) | 0 | cola vacia |
+| 12 | `decidir_aceptar_rechazar_material_defectuoso` | `P17` | **ENTRARIA** | 371 (270 del grafo mas 101 en bandejas) | 0 | cola vacia |
+| 13 | `elegir_inspeccion_barrera_monitorizacion` | `P18` | **ENTRARIA** | 371 (270 del grafo mas 101 en bandejas) | 0 | cola vacia |
+| 14 | `variar_frecuencia_inspeccion_nivel_calidad` | `P19` | **ENTRARIA** | 371 (270 del grafo mas 101 en bandejas) | 0 | cola vacia |
+| 15 | `simplificar_trabajo_reducir_numero_pasos` | `P23` | **ENTRARIA** | 371 (270 del grafo mas 101 en bandejas) | 0 | cola vacia |
+| | **15 candidatos** | | **9 ENTRARIAN, 6 BLOQUEARIAN, 0 CAERIAN** | | **12** | |
+
+EL SALDO, RECONTADO DE LAS FILAS DE ARRIBA
+  candidatos escritos y pasados por la aduana en el acto : 15
+  ENTRARIAN                                             : 9
+  BLOQUEARIAN (cola de lectura, no rechazo)             : 6
+  CAERIAN                                               : 0
+  vecinos levantados en total                           : 12
+  INSERTADOS                                            : 0   (D.45, y la orden del fundador)
+
+LA POBLACION NO ES UNA SOLA Y POR ESO VA POR FILA: el primer informe midio 358 y el
+ultimo 371, porque la bandeja crece segun se escriben los candidatos.
+ficheros en la bandeja del libro al cerrar esta tabla   : 23

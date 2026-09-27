@@ -1,0 +1,39 @@
+{
+ "id": "admitir_pronto_mal_desempenio_cuatro_razones",
+ "titulo": "Admitir pronto que alguien de tu equipo empieza a rendir por debajo, con las cuatro razones que el texto numera para no esperar",
+ "denominaciones": {
+  "nombre_largo": "La primera de las tres cosas que facilitan un despido: no esperar demasiado a admitir el bajo desempenio, con el ejercicio de las casillas que demuestra la resistencia y las cuatro razones numeradas por el texto para forzarse a identificarlo pronto",
+  "otros_idiomas": [
+   {
+    "idioma": "ingles",
+    "termino": "Don't wait too long"
+   }
+  ],
+  "sigla": ""
+ },
+ "condiciones_activacion": "Cuando alguien de tu equipo EMPIEZA a rendir por debajo y todavia no lo has admitido, ni ante ti misma ni ante tu jefe ni ante recursos humanos.",
+ "entregable_esperado": "El bajo desempenio admitido pronto y por escrito, con el nombre puesto en la casilla que le corresponde, y las cuatro razones del texto contestadas para ti en vez de evitadas.",
+ "pasos_accionables": [
+  "Cuenta con la resistencia que vas a tener, porque el texto la mide en toda su experiencia: practicamente todos los jefes con los que ha trabajado han sido lentisimos en admitir que alguien de su equipo empieza a rendir por debajo, y no se lo admiten ni a si mismos, y menos aun a sus jefes o a recursos humanos.",
+  "Hazte el ejercicio que el texto usa en sus clases de gestion, con sus preguntas y en ese orden: pon nombres en los cuadrantes de la rejilla de gestion del talento, sin consecuencias, sin compartirlo con nadie, como puro ejercicio mental.",
+  "Pregunta primero, o preguntate: crees que hay gente que rinde por debajo en esta empresa? El texto dice lo que pasa: en general todas las manos se levantan.",
+  "Pregunta despues: has puesto un solo nombre en una de las dos casillas de mal desempenio? El texto dice lo que pasa: en general solo un par de manos se levantan, alguien se rie, y todo el mundo esta siempre muy deseoso de pasar a otra cosa.",
+  "No pases a otra cosa: quedate ahi hasta que todos los nombres esten puestos en las casillas de bajo desempenio, que es lo que el texto dice que hace con su clase.",
+  "Fuerzate a identificar el bajo desempenio pronto, y hazlo por la primera razon que el texto numera: para ser justa con la persona que esta fallando. Si identificas el problema pronto le das tiempo a atenderlo, y reduces el golpe si no puede o no quiere atenderlo y acabas teniendo que despedirla.",
+  "Segunda razon: para ser justa con tu empresa. Si identificas y atiendes los problemas lo bastante pronto, reduces drasticamente el riesgo de que te demanden o la posibilidad de tener que mantener a la persona en nomina durante meses de dolorosa documentacion legal.",
+  "Tercera razon: para ser justa contigo misma. Cuando le das a alguien una buena calificacion un trimestre y lo despides el siguiente, se corre la voz y eso socava la confianza de todos los demas, ademas de que te arriesgas a que te demande la persona despedida. El texto aniade la comparacion: atender problemas de desempenio consume tiempo y es desagradable, pero lidiar con una demanda consume mucho mas tiempo y es mucho mas desagradable.",
+  "Cuarta razon, y el texto la llama la mas importante: para ser justa con la gente que rinde de verdad bien. Tolerar el mal trabajo es injusto con quien hace un trabajo excelente."
+ ],
+ "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_10.md, unidad Cap. 7, Team. Sale de las lineas 175 a 179, bajo el rotulo Don't wait too long. ES LA PIEZA P25 DE LA FRONTERA DE cap_10 Y ES LA PRIMERA PARTE DE LA SERIE D.37 DE TRES cuya cabeza es facilitar_despido_tres_cosas (linea 173, if you do three things). POR QUE ES PROCEDIMIENTO Y NO POSTURA, con D.27 delante: la linea 179 abre con There are four very good reasons y numera las cuatro con el propio texto (One, Two, Three, Four), cada una con su mecanismo escrito; y la 177 pone el ejercicio de las casillas con sus dos preguntas literales y con la instruccion de no dejar salir a nadie hasta que los nombres esten puestos. Serie numerada del propio libro mas inventario de MEDIOS. POR QUE ES UN NODO Y NO UN PASO DE LA CABEZA, con la vara de la ACTA 20 seccion 4.1 y su 4.5: condicion de activacion propia (alguien EMPIEZA a rendir por debajo) y entregable propio (el bajo desempenio admitido pronto), distintos de los de las otras dos partes y de los de la cabeza. RELECTURA DE FIDELIDAD D.30 HECHA EN EL ACTO DE ESCRIBIR, paso a paso contra su linea: 9 de 9 TRANSCRIPCION, 0 PUENTES. CUIDADO CON EL PUENTE DEL PERIODO, que es la especie que el lote 1 pago mas caro: el texto dice pronto y temprano y NO dice cuantos dias ni cuantas semanas, asi que aqui no hay ningun plazo escrito. Lo que el texto NO dice y por eso NO esta escrito aqui: ni cada cuanto se repite el ejercicio de las casillas, ni a quien se le comunica primero el bajo desempenio admitido.",
+ "dominio": "gestion_equipos",
+ "estado": "vivo",
+ "fuentes": [
+  {
+   "clave": "scott_radical_candor",
+   "fecha": "2026-09-12"
+  }
+ ],
+ "ids_alias": [],
+ "nodos_previos": [],
+ "nodos_siguientes": []
+}

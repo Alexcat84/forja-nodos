@@ -1,0 +1,36 @@
+{
+  "condiciones_activacion": "Cuando estas instalando el metodo de contratacion en tu empresa y toca la tercera de las diez cosas: que el equipo directivo o tus pares no solo lo consientan sino que lo empujen contigo.",
+  "denominaciones": {
+    "nombre_largo": "Construir apoyo al metodo entre el equipo directivo o entre los pares",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "Build support among your executive team or peers"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "contratacion",
+  "entregable_esperado": "El equipo directivo entero comprometido a seguir el metodo, y el impulso ganado con las relaciones personales, los libros repartidos y los talleres celebrados.",
+  "escala_minima": "Si no tienes equipo directivo, el libro pone la otra sede en la misma linea: tus pares. Basta con el grupo de iguales al que puedes convocar a una jornada fuera de la oficina.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "smart_who",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "id": "construir_apoyo_equipo_directivo_metodo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Compromete a todo el mundo de tu equipo directivo a seguir el metodo. Ese es el modo en que los lideres ganan impulso.",
+    "Usa tus relaciones personales para conseguir el apoyo.",
+    "Reparte libros como este para promover la idea.",
+    "Celebra jornadas fuera de la oficina y talleres para dar un empujon al tema.",
+    "Haz lo mismo con tus pares, que es la otra sede que el libro pone en la misma linea que el equipo directivo."
+  ],
+  "resumen_teorico": "Es la tercera de las diez cosas que hay que hacer para instalar el metodo de contratacion en una empresa, y su idea es que el impulso no se decreta sino que se gana comprometiendo a la gente que ya tiene poder al lado del que empuja. El libro no da aqui ningun criterio de adecuacion sino cuatro medios nombrados uno a uno, y esa es la razon de que esta cosa de las diez tenga procedimiento propio: comprometer al equipo directivo entero, tirar de las relaciones personales, repartir libros y montar jornadas fuera de la oficina y talleres. El destinatario del apoyo tampoco lo pone el lector: el libro nombra las dos sedes posibles, el equipo directivo y los pares, y deja al que instala elegir la suya segun donde este sentado.",
+  "titulo": "Construir apoyo al metodo entre el equipo directivo o entre los pares"
+}

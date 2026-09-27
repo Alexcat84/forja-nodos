@@ -1,0 +1,11 @@
+#   madre                                                  paso  hijo                                               en el grafo
+a   fijar_cuatro_notas_calcular_nota_global                8     elegir_categorias_nota_palabras_propias_empresa    NO
+b   repartir_notas_publicar_reparto_esperado               3     calibrar_notas_reunion_jefes_pares                 NO
+c   presionar_curva_notas_evitar_forzarla                  11    calibrar_notas_reunion_jefes_pares                 NO
+d   evaluar_desempenio_dos_veces_anio                      6     montar_evaluacion_360_grados_ligera_pares          NO
+e   hacer_critica_pares_transparente_ensenar_escribirla    1     montar_evaluacion_360_grados_ligera_pares          NO
+f   mantener_proceso_evaluacion_ligero_vigilar_crecimiento 6     montar_evaluacion_360_grados_ligera_pares          NO
+g   mantener_proceso_evaluacion_ligero_vigilar_crecimiento 5     hacer_critica_pares_transparente_ensenar_escribirla NO
+h   montar_evaluacion_360_grados_ligera_pares              6     elegir_categorias_nota_palabras_propias_empresa    NO
+
+DE LAS OCHO DE LA ACTA 24 SECCION 3.1: 0 CABLEADAS, 8 NO

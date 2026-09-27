@@ -1,0 +1,34 @@
+{
+  "id": "planificar_reduccion_trabajo_individual",
+  "titulo": "Planificar la reduccion de tu trabajo individual cuando el equipo crece",
+  "denominaciones": {
+    "nombre_largo": "El plan para reducir tus responsabilidades de contribuidor individual en el momento en que el equipo llega a cuatro o cinco personas",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "it is tricky to balance your individual contributor commitments with management"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando eres directivo nuevo, por el camino del aprendiz o por el del pionero, y sigues llevando responsabilidades de contribuidor individual ademas de las de gestion. El libro pone el disparador con numero: en el momento en que tu equipo llega a cuatro o cinco personas.",
+  "entregable_esperado": "Un plan de como reducir tus responsabilidades de contribuidor individual, hecho antes de que el equipo pase de cuatro o cinco personas.",
+  "escala_minima": "Un equipo de cuatro personas y un solo proyecto propio en marcha. Por debajo del disparador que el libro pone no hay todavia nada que planificar.",
+  "pasos_accionables": [
+    "Cuenta con que en los primeros tiempos vas a llevar a la vez trabajo de contribuidor individual y trabajo de gestion: como aprendiz rara vez empiezas con un equipo grande, lo normal es empezar con un punado de personas a cargo e ir recibiendo mas con el tiempo, asi que ademas de apoyar a otros sigues vendiendo limonada.",
+    "Vigila el error que la autora cuenta de si misma y que dice ver cometer a practicamente todo directivo aprendiz: seguir haciendo trabajo de contribuidor individual pasado el punto en que es sostenible.",
+    "No lo aprendas por las malas: en el momento en que tu equipo llegue a cuatro o cinco personas, ten ya un plan de como reducir tus responsabilidades de contribuidor individual para poder ser el mejor directivo posible para tu gente."
+  ],
+  "resumen_teorico": "El libro escribe esta descripcion una sola vez, dentro del camino del aprendiz, y despues la invoca por su titulo desde el camino del pionero con la formula See description from The Apprentice. Esa invocacion por nombre es lo que la convierte en una pieza con id propio. Es corta a proposito: el libro pone disparador numerico, acto y entregable, y no pone el inventario de como se reduce el trabajo individual. Por eso aqui no hay pasos de como reducirlo: escribirlos seria inventarlos. El caso que el libro razona es de la autora, que con un equipo de seis seguia siendo la disenadora principal de un proyecto exigente, y cada vez que pasaba algo fuera de lo corriente se quedaba sin tiempo para su propio proyecto, con lo que la calidad de su trabajo sufria. Lo que el libro NO dice, y por eso no esta escrito aqui, es que responsabilidades se sueltan primero, a quien se le pasan, ni en cuanto tiempo."
+}

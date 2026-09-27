@@ -1,0 +1,8 @@
+$ ls -la docs/loop/INFORME_DE_LOTE.txt docs/loop/SELLOS_INFORME.jsonl
+ls: cannot access 'docs/loop/INFORME_DE_LOTE.txt': No such file or directory
+ls: cannot access 'docs/loop/SELLOS_INFORME.jsonl': No such file or directory
+$ tail -4 docs/loop/loop.log
+[2026-09-15 23:30:42]   ultimo commit de REPORTE.md      : 2026-09-15 23:30:31 (1789529431)
+[2026-09-15 23:30:42]   ultimo commit de ACTA_AUDITOR.md : 2026-09-15 23:30:31 (1789529431)
+[2026-09-15 23:30:42] VUELTA 1 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
+[2026-09-15 23:30:42] VUELTA 1 : EXTRACTOR (claude-opus-5)

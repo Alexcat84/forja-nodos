@@ -1,0 +1,13 @@
+CREDITO DE LA LINEA 'gerber_emyth' (D.48)
+  registro: docs/loop/CREDITO_gerber_emyth.jsonl
+  tandas: 9, en 37 suceso(s) de especie
+
+  especie            racha      de donde sale
+  ----------------------------------------------------------------------
+  AUDITOR            0 de 3     ACTA G8
+  CIFRA PUBLICADA    0 de 2     ACTA G8
+  CLASE              0 de 2     ACTA G8
+  DATO MOVIDO        0 de 2     ACTA G8
+  REPORTE            0 de 3     ACTA G8
+
+  CREDITO ENTERO: ninguna especie en su tope.

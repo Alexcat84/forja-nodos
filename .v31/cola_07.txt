@@ -1,0 +1,7 @@
+ADUANA DE INSERCION, candidato 'escribir_apuntes_sala_estudio_equipo'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (262 del grafo mas 86 que esperan en bandejas)
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 263
+  censos escritos: denominaciones

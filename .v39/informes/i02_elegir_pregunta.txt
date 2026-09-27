@@ -1,0 +1,30 @@
+$ python forja.py insertar cuarentena/scott_radical_candor/elegir_pregunta_recurrente_pedir_critica.json [veredictos y censos]
+ADUANA DE INSERCION, candidato 'elegir_pregunta_recurrente_pedir_critica'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (322 del grafo mas 26 que esperan en bandejas)
+
+DECLARADOS POR LECTURA: 5. Ninguna señal los levanto.
+  abrazar_incomodidad_arrancar_critica_equipo  [Abrazar la incomodidad para arrancarle la critica a tu equipo, con los seis consejos que el texto nombra uno a uno]
+    señales: familia_id 0.111, paso_contra_nodo 0.434, similitud_texto 0.234
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  exigir_critica_jefe_reticente  [Exigir la critica que tu jefe no se atreve a darte, con las tres frases del texto y el silencio contado hasta seis]
+    señales: familia_id 0.125, paso_contra_nodo 0.444, similitud_texto 0.209
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  integrar_peticion_critica_rutina_existente  [Integrar la peticion de critica en la rutina que ya tienes, al final de tus reuniones a solas, para que deje de depender de tu acordarte]
+    señales: familia_id 0.111, paso_contra_nodo 0.472, similitud_texto 0.267
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  pedir_critica_equipo_premiarla  [Pedir activamente que tu equipo te critique, aguantar el silencio y premiar la primera franqueza a la vista de todos]
+    señales: familia_id 0.286, paso_contra_nodo 0.432, similitud_texto 0.226
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  pedir_critica_primero_crear_seguridad_psicologica  [Pedir critica tu antes que nada, que es el primer paso del orden de operaciones, porque es lo que mas deprisa crea la seguridad psicologica del equipo]
+    señales: familia_id 0.222, paso_contra_nodo 0.475, similitud_texto 0.209
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  LA JERARQUIA LA CAZA LA LECTURA, NO LA SEÑAL (D.19, D.29).
+  arista madre-hijo cableada y escrita RESUELTA: pedir_critica_primero_crear_seguridad_psicologica > elegir_pregunta_recurrente_pedir_critica
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 323
+  censos escritos: denominaciones, series_y_cabezas
+  veredictos en bitacora/VEREDICTOS.jsonl: 5
+CODIGO DE SALIDA: 0
+  ARCHIVADO EN EL MISMO ACTO (D.31): cuarentena/_insertados/scott_radical_candor/elegir_pregunta_recurrente_pedir_critica.json

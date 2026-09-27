@@ -1,0 +1,2 @@
+$ ls .v77ext | grep -i -c "fidel"
+0

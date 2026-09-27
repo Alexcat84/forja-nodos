@@ -1,0 +1,13 @@
+=== test_aceptacion ===
+  la linea ya escrita de la bitacora se marca por operacion, sin borrar: 15 pruebas mas
+  D.15: la vigencia es COLA DE TRABAJO y no guarda que tumbe el cierre: 3 pruebas mas
+
+  total: 176 pruebas, 1 fallos, 0 errores
+========================================================================
+=== censar_rutas ===
+
+CENSO EN ROJO: 4 ruta(s) publicadas como sede de una cifra no sostienen nada.
+Se arregla de una de estas tres formas, y solo de estas tres:
+  1. regenerando el fichero, que es lo que casi siempre toca;
+  2. escribiendo en la MISMA celda 'VACIA A PROPOSITO: <motivo>';
+  3. si era un conjunto, escribiendola como 'PATRON: <glob>'.

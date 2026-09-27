@@ -1,0 +1,59 @@
+{
+  "id": "persuadir_emocion_oyente_no_propia",
+  "titulo": "Persuadir atendiendo a la emocion del que escucha y no a la tuya, aunque tu conexion con la decision sea fuerte",
+  "denominaciones": {
+    "nombre_largo": "Las emociones del oyente, no las del que habla: la primera de las tres piezas de la persuasion de Aristoteles aplicada a una decision que hay que ejecutar",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "the listener's emotions, not the speaker's"
+      },
+      {
+        "idioma": "griego",
+        "termino": "pathos"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando ya hay una decision tomada, quedan personas que no la comparten y son justo las que tienen que ayudar a ejecutarla.",
+  "entregable_esperado": "La decision aceptada por gente que no participo en tomarla, con sus emociones atendidas por su nombre y no solo la logica explicada.",
+  "pasos_accionables": [
+    "No esperes que nadie ejecute una decision sin haber sido persuadido de que es lo correcto: el texto dice que esa es una receta para resultados terribles.",
+    "No te imagines que puedes entrar y decirle a todo el mundo que se ponga detras de la decision, la hayas tomado tu o la haya tomado otro.",
+    "Cuenta con que explicar la decision no basta, porque eso solo atiende a la logica.",
+    "Atiende ademas a las emociones de quien te escucha.",
+    "No des por supuesto que tu conexion emocional con la decision hace el trabajo: puedes tener una conexion fuerte, y si no tienes en cuenta tambien las emociones de quien escucha, no vas a persuadir.",
+    "Preguntate por las emociones concretas del otro lado, que es lo que la autora le pregunto a Jason: como estaban las emociones en el equipo de ingenieria. La respuesta era que estaban agotados, llevaban semanas de noches en blanco.",
+    "Y preguntate despues que has hecho tu para atender esas emociones, que es la segunda pregunta que la autora le hizo y donde Jason se dio un golpe en la frente.",
+    "Cuando la decision vaya a sentarle mal a un grupo, reconoce por delante su incredulidad en vez de liderar solo con la logica, que es lo que hizo Steve Jobs con el titular de se helo el infierno al anunciar iTunes para Windows.",
+    "Y tomate en serio su respuesta emocional tranquilizandoles sobre lo que no va a cambiar, que es lo que el mismo anuncio hizo al asegurar que Apple seguiria fiel a lo suyo.",
+    "Cuenta con que el humor calido conecta con las emociones y gana confianza, que es lo que hacia a Dick Costolo persuasivo en las reuniones generales de Twitter.",
+    "Si no se te da el humor, busca la ayuda que el propio Dick recomendaba a otros lideres: clases de improvisacion, para encontrar la manera de pasarlo bien contestando las preguntas incomodas en vez de temerlas."
+  ],
+  "resumen_teorico": "Sale de fuentes/scott_radical_candor/cap_07.md, lineas 303 a 347, bajo los rotulos PERSUADE, Emotion y The listener emotions, not the speaker, dentro del paso PERSUADE de la rueda de hacer cosas. Los pasos P1 a P3 vienen de la entradilla de la seccion (lineas 309 a 313), que ninguna otra pieza recoge y que es donde el libro explica por que hace falta persuadir despues de haber decidido. El resto es la primera de las tres piezas de la retorica de Aristoteles tal como el libro las reparte. Los casos de Jason, de iTunes para Windows y de Dick Costolo van NOMBRADOS DENTRO de los pasos que los usan, que es la condicion de TRANSCRIPCION DE CASO, y en el caso de Jason lo que se transcribe son las dos preguntas literales que la autora le hizo, que es lo que convierte la anecdota en procedimiento. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 11 pasos, 11 TRANSCRIPCION, 0 PUENTE. P1, P2, P3 y P4 de la linea 313; P5 de la 327; P6 y P7 de las lineas 333 a 339; P8 y P9 de la 341; P10 de la 345; P11 de la 347. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: como se averiguan las emociones del otro lado si no tienes a alguien que te las cuente, cuanto se insiste, y que se hace con quien sigue sin aceptar la decision despues de todo esto.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-12"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "atribuciones": [
+    {
+      "cifra": "para ser legitimamente persuasivo hay que atender a las emociones del publico y ademas establecer la credibilidad y compartir la logica del argumento",
+      "autor": "Aristoteles, Retorica, en la lectura que de el hace Kim Scott",
+      "fuente": "scott_radical_candor",
+      "fecha_corte": "no consta fecha en el texto: el libro cita la obra sin datarla, asi que la atribucion queda sin fecha de corte y se dice"
+    },
+    {
+      "cifra": "mas del 90 por ciento de los empleados de Apple decian sentirse bien con su consejero delegado, y en Twitter el porcentaje que se sentia bien con Dick Costolo era todavia mayor",
+      "autor": "Kim Scott, sobre encuestas de compromiso de empleados que dice haber escrutado",
+      "fuente": "scott_radical_candor",
+      "fecha_corte": "no consta fecha en el texto: el libro lo situa en su etapa en Apple sin datar las encuestas ni nombrar cual, y la segunda mitad no lleva cifra, asi que la atribucion queda sin banda y sin fecha de corte y se dice"
+    }
+  ]
+}

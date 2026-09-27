@@ -1,0 +1,51 @@
+CORTE CIEGO DE cap_07, SEGUNDA PASADA
+  cuerpo del capitulo : L8 a L420
+  palabras del cuerpo : 13390
+  palabras del fichero: 13706
+
+A. ROTULOS DE SECCION EN MAYUSCULAS: 9
+   L11   TELLING PEOPLE WHAT TO DO DIDN’T WORK AT GOOGLE
+   L45   TELLING PEOPLE WHAT TO DO DIDN’T WORK FOR STEVE JOBS EITHER
+   L79   LISTEN
+   L165  CLARIFY
+   L213  DEBATE
+   L259  DECIDE
+   L303  PERSUADE
+   L367  EXECUTE
+   L389  LEARN
+
+B. ROTULOS DE RETORICA (cascara, cuelgan un titulillo cada uno): 3
+   L323  Emotion
+   L349  Credibility
+   L359  Logic
+
+C. TITULILLOS DE CUERPO, que son las piezas que pueden dar nodo: 26
+   L91   Quiet listening
+   L113  Loud listening
+   L131  Create a culture of listening
+   L155  Adapt to a culture of listening
+   L181  Be clear in your own mind
+   L183  Create a safe space to nurture new ideas
+   L197  Be clear to others
+   L199  Make thoughts/ideas drop-dead easy for others to comprehend
+   L215  The rock tumbler
+   L225  Keep the conversation focused on ideas not egos
+   L231  Create an obligation to dissent
+   L235  Pause for emotion/exhaustion
+   L239  Use humor and have fun
+   L245  Be clear when the debate will end
+   L265  You’re not the decider (usually)
+   L291  The decider should get facts, not recommendations
+   L295  Go spelunking
+   L325  The listener’s emotions, not the speaker’s
+   L351  Demonstrate expertise and humility
+   L361  Show your work
+   L369  Minimize the collaboration tax
+   L375  Don’t waste your team’s time
+   L381  Keep the “dirt under your fingernails”
+   L385  Block time to execute
+   L403  Pressure to be consistent
+   L409  Burnout
+
+MI CORTE: 26 piezas de cuerpo (C), bajo 9 rotulos de seccion (A).
+          con los 3 rotulos de retorica contados aparte serian 29.

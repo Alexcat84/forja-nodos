@@ -1,0 +1,146 @@
+===== cambiar_forma_trabajar_conservar_plantilla | grafo
+  titulo: Cambiar como trabaja la gente que ya tienes en vez de renovarla, y decir por que
+  fuente: ['marquet_turn_the_ship']
+  cond: Cuando te haces cargo de un equipo que va mal, tienes plazo corto y te planteas cambiar a la gente.
+  P1. Cuenta el plazo que tienes antes de decidir nada sobre la gente. En el caso del texto eran seis meses hasta el despliegue, y el argumento que se da es que con ese plazo no hay tiempo de encontrar sustitutos.
+  P2. Centrate en trabajar con lo que tienes, que es lo que el texto recomienda por encima de mucha rotacion.
+  P3. Avisa a tu jefe si necesitas cambiar a alguien, que es el canal que el texto deja abierto sin que nadie lo pida: avisame si necesitas cambiar a alguien.
+  P4. Cuenta con el mensaje que manda no despedir a nadie, y que el texto pone como la razon de que aquello importara: a cada persona del equipo le llega que el que estaba mal no era el, sino el liderazgo.
+  P5. Fija entonces tu reto donde el texto lo fija: usar la misma gente y el mismo equipo de apoyo, y subir el resultado cambiando la forma en que interactuan y se comportan.
+===== escuchar_entender_critica_dominar_defensa | grafo
+  titulo: Escuchar la critica con intencion de entender y no de responder, dominando tu propia defensa con la practica de escuchar tres minutos sin interrumpir
+  fuente: ['scott_radical_candor']
+  cond: Cuando estas recibiendo una critica y notas que te estas poniendo a la defensiva, aunque la hayas pedido tu.
+  P1. Parte de lo que el texto reconoce que pasa: recibir critica puede disparar en nosotros la respuesta de pelea, huida o bloqueo, incluso cuando la hemos pedido.
+  P2. Cuenta con que no solo cuesta la critica injusta: la critica justa, sobre todo cuando toca algo que ya no nos gusta de nosotros mismos, tambien cuesta.
+  P3. Averigua que te ayuda a ti a procesar lo que oyes sin caer en una respuesta defensiva, que es lo que el texto encarga: un ejercicio de respiracion puede ayudar, y tambien dar un trago largo de una botella de agua.
+  P4. Y sobre todo practica con otros, que es lo que el texto pone por encima de lo demas.
+  P5. Practicalo asi: busca una pareja con quien practicar, sea companiero de trabajo, amigo o familiar.
+  P6. Que una persona hable durante tres minutos.
+  P7. Despues cambiad los papeles y escucha a la otra persona hablar, sin interrumpir.
+  P8. Podeis hablar de lo que querais: cualquier cosa que os importe de verdad, del trabajo o de fuera de el.
+  P9. Si eres tu quien escucha, dale a quien habla el regalo de tu atencion completa.
+  P10. Puedes asentir, o decir ya veo o entiendo, pero este no es el momento de preguntas.
+  P11. Ni de que relaciones su historia con algo que te importe a ti, como tu historia favorita de las vacaciones en Hawai.
+  P12. Ni de darle a quien habla ese consejo que le va a cambiar la vida para siempre: tu trabajo no es dar consejo, es escuchar.
+  P13. Y cuenta con lo que el texto ha medido haciendo esto: companieros que llevaban mas de diez anios en el mismo equipo aprendieron mas unos de otros en tres minutos que en una decada trabajando juntos. Escuchar, escuchar de verdad, es increiblemente eficiente.
+===== inspeccionar_reparto_informacion_notas_jefe | grafo
+  titulo: Inspeccionar con el responsable delante como se reparte la informacion que entra, y leer las notas que el jefe deja escritas en ella
+  fuente: ['marquet_turn_the_ship']
+  cond: Cuando quieres saber si el reparto de la informacion que entra cada dia a la organizacion le esta quitando decisiones a quien las tiene que tomar.
+  P1. Coge el canal por el que entra la informacion del dia y miralo con el responsable delante. El del texto es el tablero de mensajes: los treinta o cuarenta mensajes navales que llegaban al barco cada dia, impresos y repartidos en una tablilla con un sello de reparto que tenia un hueco para que cada uno pusiera sus iniciales al haberlos visto.
+  P2. Mira que clases de cosa entran por ahi. El texto nombra tres: generales y administrativos, que anunciaban cursos o cambios de requisitos de papeleo o actualizaciones de manuales; de material, que informaban de cambios en procedimientos de mantenimiento o pedian datos de una valvula concreta de un fabricante concreto; y operativos, que daban direccion al calendario del barco, le asignaban espacio de navegacion y le encargaban operaciones.
+  P3. Lee el orden de reparto que fija el protocolo, y quedate con el efecto que el propio texto le atribuye. En el suyo los mensajes van primero al comandante, luego al segundo y despues cadena de mando abajo; asi el comandante era el primero en saber cualquier cambio del calendario del barco, y el texto lo cierra diciendo que era asi como controlaban la informacion.
+  P4. Mira las notas que el jefe ha dejado escritas en lo que ya paso por sus manos. El texto pone dos textuales: mete este cambio de mensaje en la publicacion, y quiero un informe de esto para el viernes.
+  P5. Escucha lo que el responsable dice al leerlas. El del texto lo dice asi: me estan diciendo que haga cosas antes de que yo sepa siquiera que tengo cosas que hacer.
+  P6. Preguntale despues por que crees que el comandante y el segundo sienten que necesitan escribir esas cosas. Es la pregunta textual del autor.
+  P7. Quedate con el motivo que el subordinado atribuye al jefe. En el texto es que si algo no pasa y un equipo de inspeccion mira los registros, el comandante puede decir yo le dije que lo hiciera, y saca buena nota por estar muy implicado y por tener sus huellas por todas partes.
+  P8. Quedate con los dos costes que el subordinado nombra, que son los dos que el texto escribe: que le mandan hacer cosas que ya sabe que tiene que hacer, y que muchas veces le dicen exactamente como y cuando hacerlas, lo que le quita cualquier oportunidad de decidir que pudiera tener.
+===== observar_reunion_rutinaria_senales_plantilla | grafo
+  titulo: Sentarse en una reunion rutinaria que ya existe y leerla por sus senales de gente en vez de por su asunto tecnico
+  fuente: ['marquet_turn_the_ship']
+  cond: Cuando entras nuevo en una organizacion y tienes delante una de sus reuniones de repaso rutinarias, de las que ya existen y no convocas tu.
+  P1. Asiste a una reunion rutinaria de repaso de la organizacion. La del texto es una reunion de jefes de departamento, un repaso rutinario de asuntos de mantenimiento.
+  P2. No atiendas al asunto tecnico: observa a la gente de la sala. El texto lo escribe como eleccion deliberada, y dice incluso que probablemente deberia haber atendido a lo tecnico porque ese sistema de misiles no estaba en su barco anterior y no lo habia mirado en su instruccion.
+  P3. Mira quien llega tarde y como llega. En el texto los asistentes iban entrando tarde.
+  P4. Mira si el jefe se queda fuera hasta que estan todos reunidos y entra despues, invitado. Es lo que el texto describe.
+  P5. Mira si la reunion empieza tarde.
+  P6. Mira a quien esta esperando cada uno. En esa reunion, dice el texto, todos estaban esperando a algun otro.
+  P7. Mira como esta el que expone. El texto describe al suyo serio y directo, pero frustrado y a la defensiva ante todas las preguntas que tenia que contestar.
+  P8. Mira como estan los demas. Los otros jefes de departamento y los suboficiales estaban aburridos.
+  P9. Lee la falta de puntualidad con la regla que el texto escribe: puede parecer una cosa pequena, pero a bordo de un submarino nuclear las cosas pequenas como la falta de puntualidad son indicativas de problemas mucho, mucho mayores.
+===== auditar_formacion_premios_ultima_fila | grafo
+  titulo: Auditar la reunion general y su entrega de premios desde la ultima fila, donde esta la mayor parte de la gente
+  fuente: ['marquet_turn_the_ship']
+  cond: Cuando tu organizacion ya tiene una reunion general periodica con anuncios o entrega de premios y quieres saber que llega de ella a la gente que esta al fondo.
+  P1. Ve a la reunion general que ya existe en tu organizacion, de las que se repiten un par de veces por semana. La del texto es la formacion de la manana en el muelle, con la tripulacion formada en cuadro detras de sus suboficiales y oficiales, y el comandante, el segundo y el suboficial mayor en el medio dando los anuncios.
+  P2. Andate por el borde del acto mientras sigue, que es lo que el texto hace: el comandante, el segundo y el suboficial mayor estaban en el medio dando los anuncios, y el autor se fue moviendo por la periferia.
+  P3. Ponte al fondo, donde esta la mayor parte de la gente.
+  P4. Comprueba si desde ahi se entiende lo que dice el jefe. En el texto no se distinguia nada: sus palabras salian sordas y confusas.
+  P5. Preguntale a alguien de la gente formada si el oye.
+  P6. Escucha la respuesta entera, tambien su segunda mitad. La del texto fue que no, pero que no importaba: si habia algo importante, el suboficial se lo diria en la reunion de division que venia despues de esta.
+  P7. Si en ese acto hay entrega de premios, mira a quien se premia. En el texto los premios eran para gente que se iba del barco o por el periodo de mantenimiento anterior.
+  P8. Mira si se invito a las familias. En el texto no se habia invitado a ninguna esposa.
+  P9. Mira si hay quien haga las fotos. En el texto no habia fotografo, y el propio texto escribe el coste: se perdio la ocasion de dar a conocer esos logros ante un publico mas amplio.
+  P10. Mira cuando se juntaron las menciones y las medallas. En el texto hubo una carrera de ultima hora para reunirlas.
+  P11. Mira si el que habla sabe los detalles de su gente. El texto dice que el comandante parecia no estar al tanto de donde venian los hombres y adonde iban, mientras se daba la bienvenida a los nuevos y se despedia a los que se iban.
+===== recorrer_organizacion_escuchar_plantilla | grafo
+  titulo: Recorrer la organizacion y escuchar a su gente en vez de revisar sus expedientes, con el recorrido guiado y la linterna como excusa de inspeccion
+  fuente: ['marquet_turn_the_ship']
+  cond: Cuando vas a tomar el mando de una organizacion que no conoces y el procedimiento de la casa te manda dedicar las primeras semanas a revisar sus expedientes.
+  P1. Pregunta primero por ti mismo cuando fue la ultima vez que caminaste tu organizacion para oir lo bueno, lo malo y lo feo de la gestion de arriba abajo. El texto abre con esa pregunta dirigida al lector y llama a caminar y escuchar su primer paso al preparar el mando.
+  P2. Deja de lado la revision de expedientes que el procedimiento manda. El texto enumera la lista que le tocaba repasar en dos semanas: registros de formacion, de escuela, administrativos, de premios, de ascensos, los de operacion y mantenimiento de la planta del reactor, el sistema de armas, los torpedos y misiles, calendarios, ejercicios y material clasificado; y dice que la ignoro.
+  P3. Gasta ese tiempo caminando la instalacion y hablando con la gente.
+  P4. Monta ademas una serie de recorridos en los que cada jefe o cada oficial te ensene sus propios espacios.
+  P5. Pideles que traigan una linterna para poder hacer esas inspecciones como se deben hacer.
+  P6. Lee el estado de esas linternas como dato y no como examen. El texto dice que no pretendia ser una prueba, y que estaban lamentables: rotas, con las pilas gastadas y las bombillas mortecinas, de forma que no se veia nada.
+  P7. Consiguete una que funcione y llevala encima a todas partes. El texto registra lo que vino despues sin pedirlo: pronto otros empezaron a llevar linternas que tambien funcionaban.
+===== informar_cierre_jornada_conservar_propiedad_trabajo | grafo
+  titulo: Informar al superior al cerrar la jornada sin cederle la propiedad del trabajo
+  fuente: ['marquet_turn_the_ship']
+  cond: Cuando vas a cerrar el dia con tu superior, en el momento del reporte de salida (checkout), y quieres dejar constancia de tu trabajo sin que la responsabilidad de tu tarea se traslade a el.
+  P1. Al terminar el dia, presentate ante tu superior para el cierre de jornada, pero no le preguntes que mas necesita de ti: reportale tu trabajo. El texto lo dice asi: checking out is fine, I said, but it should go more like this.
+  P2. Reporta primero el estado de un trabajo en curso, nombrando el propio trabajo. El texto pone el ejemplo: the charts for next week's underway are coming along fine.
+  P3. Di cuando se vera el resultado o el proximo hito de ese trabajo. El texto sigue el mismo ejemplo: we'll be able to show the rough plan to the captain tomorrow.
+  P4. Si algo quedo sin hacer, dilo y da el plan de cuando se hara. El texto cierra el ejemplo asi: I wasn't able to see Petty Officer Smith for his qualification interview but will be able to make that up tomorrow.
+  P5. Cierra el reporte dejando la propiedad de la tarea donde corresponde: quien responde por el trabajo del jefe de departamento es el jefe de departamento, no el segundo al mando. El texto lo dice asi: in this scenario, it is the department head, not the XO, who is responsible for the department head's job. This is leadership at all levels.
+===== operar_modelo_gente_destreza_minima | grafo
+  titulo: Operar el modelo con gente del nivel de destreza mas bajo posible, y construir el sistema que la apalanca
+  fuente: ['gerber_emyth']
+  cond: Cuando trabajas la regla 2 del prototipo de tu negocio y tienes que decidir con que gente se opera el modelo para que se pueda replicar.
+  P1. Cuenta con el motivo por el que la regla existe: si tu modelo depende de gente muy cualificada sera imposible de replicar, esa gente es escasa en el mercado, y ademas es cara, lo que sube el precio que tendras que cobrar.
+  P2. Lee el nivel mas bajo posible como el texto lo define: el nivel mas bajo necesario para cumplir las funciones a las que cada puesto esta destinado.
+  P3. Ten los titulados que tu oficio exija, que es la salvedad que el texto pone: si lo tuyo es un despacho de abogados tienes que tener abogados, y si es una consulta medica tienes que tener medicos.
+  P4. No necesitas contratar abogados brillantes ni medicos brillantes: necesitas crear el mejor sistema posible para que buenos abogados y buenos medicos queden apalancados y produzcan resultados exquisitos.
+  P5. Sigue haciendote la pregunta que el texto manda repetirse: como le doy a mi cliente el resultado que quiere de forma sistematica en vez de personal.
+  P6. Hazte esa misma pregunta de la otra manera en que el texto la escribe: como creo un sistema experto en vez de contratar uno.
+  P7. Trata el sistema como las herramientas que tu gente usa para subir su productividad y hacer el trabajo como hay que hacerlo para que tu negocio se distinga de su competencia.
+  P8. Asume que tu trabajo, o mas exactamente el trabajo de tu negocio, es desarrollar esas herramientas y ensenar a tu gente a usarlas.
+  P9. Deja claro que el trabajo de tu gente es usar las herramientas que has desarrollado y recomendar mejoras a partir de su experiencia con ellas.
+  P10. Comprueba que no estas prefiriendo gente muy cualificada solo porque te haga a ti el trabajo mas facil, que es lo que el texto llama preferir la Management by Abdication a la Management by Delegation.
+===== cuantificar_impacto_innovacion_6_pasos | grafo
+  titulo: Cuantificar el impacto real de una innovacion en tu negocio con los seis conteos que el libro enumera
+  fuente: ['gerber_emyth']
+  cond: Cuando pruebas una innovacion en tu negocio, por ejemplo cambiar las palabras con que saludas a un cliente que entra, y quieres saber si de verdad funciono.
+  P1. Determina cuantas personas entraron por la puerta antes de poner en marcha la innovacion.
+  P2. Determina cuantas personas compraron productos y cual fue el valor en dolares de esos productos, antes de cambiar las palabras y lo que decias para producir esas ventas.
+  P3. Cuenta cuantas personas entraron por la puerta despues de cambiar las palabras.
+  P4. Cuenta cuantas personas compraron algo, despues del cambio.
+  P5. Determina el valor promedio de una venta.
+  P6. Determina cual fue la mejora que produjo tu innovacion.
+===== declarar_intencion_reemplazar_peticion_permiso | grafo
+  titulo: Reemplazar las frases que piden permiso por frases que declaran intencion, y responder con una aprobacion simple
+  fuente: ['marquet_turn_the_ship']
+  cond: Cuando vas a proponer una accion a quien tiene la autoridad de aprobarla, en vez de pedirle permiso o pedirle que decida por ti.
+  P1. Evita las frases que piden permiso o que otro decida por ti: solicito permiso para, me gustaria, que deberia hacer sobre, crees que deberiamos, podriamos. El texto lo dice asi: Request permission to . . . / I would like to . . . / What should I do about . . . / Do you think we should . . . / Could we . . .
+  P2. En su lugar, declara tu intencion con frases activas: tengo la intencion de, planeo, hare, haremos. El texto lo dice asi: I intend to . . . / I plan on . . . / I will . . . / We will . . .
+  P3. Quien recibe la intencion declarada responde con una aprobacion simple en vez de dar una orden, y deja que cada quien ejecute su propio plan. El texto lo dice asi: officers would state their intentions with 'I intend to . . .' and I would say, 'Very well.' Then each man would execute his plan.
+===== resistir_dar_solucion_clasificar_decision_urgencia | grafo
+  titulo: Resistir dar la solucion y clasificar la decision del equipo segun su urgencia
+  fuente: ['marquet_turn_the_ship']
+  cond: Cuando el equipo enfrenta una decision y tu, como responsable, sientes el impulso de darles directamente la solucion en vez de dejar que la piensen.
+  P1. Resiste el impulso de dar tu la solucion: date tiempo, aunque sean solo unos minutos o segundos, para que el equipo entero reaccione y piense antes de decidir. El texto lo dice asi: you have to create a space for open decision by the entire team, even if that space is only a few minutes, or a few seconds, long.
+  P2. Anticipa que decisiones se acercan y avisa a tu equipo con antelacion de que hara falta tomar una, en vez de esperar a que surja de golpe. El texto lo dice asi: this is harder than in the leader-follower approach because it requires you to anticipate decisions and alert your team to the need for an upcoming one.
+  P3. Si la decision es urgente, tomala tu mismo y despues haz que el equipo la someta a critica y la evalue. El texto lo dice asi: if the decision needs to be made urgently, make it, then have the team red-team the decision and evaluate it.
+  P4. Si la decision se puede tomar en un plazo razonablemente proximo, pide la opinion del equipo, aunque sea breve, y despues decide. El texto lo dice asi: if the decision needs to be made reasonably soon, ask for team input, even briefly, then make the decision.
+  P5. Si la decision se puede retrasar, obliga al equipo a dar sus aportes sin forzar el consenso: no elimines las diferencias ni los votos disidentes, valora la disidencia. El texto lo dice asi: if the decision can be delayed, then force the team to provide inputs. Do not force the team to come to consensus... Cherish the dissension.
+===== acoger_inspectores_externos_fuente_aprendizaje | grafo
+  titulo: Acoger a los inspectores externos como fuente de aprendizaje segun la fortaleza o debilidad del area inspeccionada
+  fuente: ['marquet_turn_the_ship']
+  cond: Cuando una organizacion externa (un inspector, un auditor, un regulador) va a revisar tu equipo o tu unidad, sea en una critica puntual o en una inspeccion completa.
+  P1. Usa a los inspectores no solo para las criticas puntuales de un problema, sino tambien en inspecciones completas: aprovechalos para difundir tus ideas en toda la organizacion, para aprender de otras unidades, y para documentar los problemas y mejorar la tuya. El texto lo dice asi: We would utilize the inspectors to disseminate our ideas throughout the squadron, to learn from others, and to document issues to improve the ship.
+  P2. En las areas donde tu equipo hace algo excepcionalmente innovador o experto, trata a los inspectores como aliados con quienes compartir esas buenas practicas. El texto lo dice asi: Concerning areas where we were doing something exceptionally innovative or expertly, we viewed the inspectors as advocates to share our good practices with.
+  P3. En las areas donde tu equipo hace las cosas mal y necesita ayuda, trata a los inspectores como fuente de informacion y de soluciones. El texto lo dice asi: Concerning areas where we were doing things poorly and needed help, we viewed them as sources of information and solutions.
+===== reforzar_principios_guia_lenguaje_prueba_conocimiento | grafo
+  titulo: Reforzar los principios guia usando su vocabulario en premios y evaluaciones, y comprobar si de verdad los conoce quien no los escribio
+  fuente: ['marquet_turn_the_ship']
+  cond: Cuando tu organizacion ya tiene principios guia escritos y quieres que dejen de ser un cartel en la pared y pasen a formar parte del tejido de la organizacion, con sus decisiones diarias.
+  P1. Cuando escribas premios o evaluaciones, procura describir el comportamiento en el lenguaje de tus principios guia, por ejemplo diciendo que un empleado mostro tal o cual principio al hacer algo. El texto lo dice asi: For example, when we wrote awards or evaluations, we tried to couch behaviors in the language of these principles. 'Petty Officer M exhibited Courage and Openness when reporting . . .'
+  P2. Pon a prueba si tus principios guia son reales de verdad: sal y pregunta a las tres primeras personas que veas en tu organizacion cuales son. El texto lo dice asi: Most of you have organizational principles. Go out and ask the first three people you see what they are.
+===== tomar_accion_deliberada_pausar_vocalizar_gesticular | grafo
+  titulo: Tomar accion deliberada: pausar, vocalizar y gesticular antes de ejecutar cualquier accion para evitar errores automaticos
+  fuente: ['marquet_turn_the_ship']
+  cond: Cuando una persona esta por ejecutar cualquier accion en la interfaz entre el operador y el equipo o el proceso, incluyendo el momento de firmar un documento, autorizar una accion o introducir una pulsacion de teclado en un negocio de servicios.
+  P1. Antes de cualquier accion, haz una pausa, di en voz alta lo que estas a punto de hacer y senalalo con un gesto; solo despues de esa pausa deliberada ejecuta la accion. El texto lo dice asi: prior to any action, the operator paused and vocalized and gestured toward what he was about to do, and only after taking a deliberate pause would he execute the action.
+  P2. Recuerda que la accion deliberada no se hace para quedar bien ante un observador o un inspector: se hace igual si nadie te esta mirando, porque su objetivo es que tu mismo evites el error, no dar una actuacion. El texto lo dice asi: it didn't matter whether anyone was around or not. Deliberate actions were not performed for the benefit of an observer or an inspector. They weren't for show.
+  P3. Si tu negocio no tiene una interfaz fisica con la naturaleza, por ser de servicios o intelectual, aplica la accion deliberada en el momento de firmar un documento, autorizar una accion o introducir una pulsacion de teclado. El texto lo dice asi: If your business doesn't have an obvious interface with nature and is more service or intellectual, take deliberate action still applies, but in a slightly different way. It applies at the moment someone signs a form, authorizes an action, or enters a keystroke.

@@ -1,0 +1,66 @@
+fila 01, usar_banco_nueve_preguntas_entrevista, lineas --veredicto: 6
+  --veredicto identificar_disparadores_propios_reaccion|SANO|Ajenos: la senial 3 casa la pregunta por las debilidades del candidato (L41) con las cuatro preguntas que el mando se hace a si mismo sobre sus disparadores, de zhuo_manager. Uno entrevista a un candidato y el otro se examina a si mismo; comparten la forma de pregunta.
+  --veredicto responder_primer_aviso_renuncia_subordinado|SANO|Ajenos dentro del mismo capitulo: entrevistar a un candidato (L37 a L55) y atender el primer aviso de renuncia de un subordinado (L111) son las dos tareas dificiles de L13, cada una con su procedimiento; ninguno usa el producto del otro.
+  --veredicto gestionar_retencion_subordinado_valioso_renuncia|SANO|Ajenos dentro del mismo capitulo, el mismo par que gestionar_retencion lee desde su lado (L13): entrevistar a quien entra (L37 a L55) y retener a quien se va (L113 a L121).
+  --veredicto entregar_evaluacion_desempeno_tres_claves|SANO|Ajenos: el vecino del grafo, de cap_14, entrega una revision de desempeno; este es el banco de preguntas de una entrevista de seleccion (L37 a L55). L89 contrasta la entrevista con la revision por el juicio del potencial, pero ningun paso de uno usa el producto del otro.
+  --veredicto pedir_critica_anonima_curso_entrenamiento_dictado|SANO|Ajenos: el vecino, de cap_17, pide critica anonima de un curso con un formulario (L61); este pregunta a un candidato (L37 a L55). Comparten la forma de pregunta.
+  --veredicto planificar_tres_pasos_demanda_estado_brecha|SANO|Ajenos: el vecino del grafo, de cap_07, planifica en tres pasos; este es el banco de preguntas de una entrevista (L37 a L55). La similitud es de prosa.
+inicio 2026-09-26 04:42:30
+======================================================================
+ADUANA DE INSERCION, candidato 'usar_banco_nueve_preguntas_entrevista'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (430 del grafo mas 49 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 6. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino identificar_disparadores_propios_reaccion  [Identificar tus disparadores y cazarte a tiempo antes de responder]
+    levantada por: paso_contra_nodo
+    similitud_texto    0.175 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.607 (umbral 0.60)
+    paso 2 del candidato contra paso 9 de identificar_disparadores_propios_reaccion
+
+  vecino responder_primer_aviso_renuncia_subordinado  [Responder al primer momento en que un subordinado valioso avisa que quiere renunciar: dejar lo que haces, escucharlo sin discutir y comprarte tiempo antes de actuar]
+    levantada por: similitud_texto
+    similitud_texto    0.394 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.458 (umbral 0.60)
+    paso 5 del candidato contra paso 2 de responder_primer_aviso_renuncia_subordinado
+
+  vecino gestionar_retencion_subordinado_valioso_renuncia  [Gestionar la retencion de un subordinado valioso tras su primer aviso de renuncia: escalar al propio jefe, perseguir cada via para conservarlo y volver con una solucion a sus razones reales]
+    levantada por: similitud_texto
+    similitud_texto    0.412 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.426 (umbral 0.60)
+    paso 9 del candidato contra paso 4 de gestionar_retencion_subordinado_valioso_renuncia
+
+  vecino entregar_evaluacion_desempeno_tres_claves  [Entregar la evaluacion de desempeno cara a cara con las tres claves del mando: franqueza, escucha total y dejar fuera las emociones propias]
+    levantada por: similitud_texto
+    similitud_texto    0.369 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.422 (umbral 0.60)
+    paso 8 del candidato contra paso 4 de entregar_evaluacion_desempeno_tres_claves
+
+  vecino pedir_critica_anonima_curso_entrenamiento_dictado  [Pedir critica anonima tras dictar un curso de entrenamiento, con formulario numerico y preguntas abiertas]
+    levantada por: similitud_texto
+    similitud_texto    0.383 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.419 (umbral 0.60)
+    paso 7 del candidato contra paso 3 de pedir_critica_anonima_curso_entrenamiento_dictado
+
+  vecino planificar_tres_pasos_demanda_estado_brecha  [Planificar en los tres pasos del libro: la demanda del entorno, el estado presente, y lo que hay que hacer para conciliarlos]
+    levantada por: similitud_texto
+    similitud_texto    0.355 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.402 (umbral 0.60)
+    paso 9 del candidato contra paso 6 de planificar_tres_pasos_demanda_estado_brecha
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 431
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 6
+
+======================================================================
+fin 2026-09-26 04:52:35 | codigo de salida 0 | 604.3 s

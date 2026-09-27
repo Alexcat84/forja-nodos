@@ -1,0 +1,108 @@
+=== cambiar_forma_trabajar_conservar_plantilla :: NO ESTA
+=== contar_historias_propias_explicar_franqueza_radical  [dataset]
+  titulo    : Contar a tu equipo tus propias historias para explicarle la franqueza radical, en vez de prestarle la teoria o las historias de otro
+  activacion: Cuando vas a explicar la franqueza radical a tu equipo por primera vez, que es la etapa que el orden de operaciones pone primera.
+  entregable: La franqueza radical explicada a tu equipo con tus propias palabras y con tus historias personales contadas, en vez de con teoria de gestion o con las historias del libro.
+  fuentes   : ['scott_radical_candor']
+   P1   Explica la franqueza radical a tu equipo, para que entiendan que te traes entre manos.
+   P2   Puedes ademas pedirles que lean el libro, o ensenarles los videos que hay en la web de la franqueza radical.
+   P3   Pero explicala sobre todo con tus propias palabras, que es lo que el texto dice que sale mejor.
+   P4   Busca cual es tu version de la historia del um o de la historia de Bob, que son las dos que el texto pone como ejemplares.
+   P5   Cuenta tus historias a tu equipo.
+   P6   Muestra algo de vulnerabilidad.
+   P7   Y cuenta con lo que el texto dice que consiguen: tus historias personales explican, mejor que cualquier teoria de gestion, lo que de verdad quieres decir, y ensenian por que lo dices de verdad.
+   P8   Cuenta tambien con por que las tuyas valen mas que las del libro: el texto dice que significan mucho mas para tu equipo que las de la autora, porque significan algo para ti.
+
+=== abrazar_incomodidad_silencio_contar_seis  [dataset]
+  titulo    : Abrazar la incomodidad del silencio despues de pedir critica, aguantandolo mientras cuentas hasta seis en tu cabeza
+  activacion: Cuando has pedido critica a alguien y se hace el silencio, y te tienta rellenarlo o dejar a la otra persona salir del apuro.
+  entregable: El silencio aguantado hasta el final, con la respuesta del otro salida de el, o con el compromiso escrito de volver a preguntarle.
+  fuentes   : ['scott_radical_candor']
+   P1   Parte de lo que le haces al otro cuando le pides critica, que es lo que el texto pone primero: le metes en una situacion incomoda.
+   P2   No seas ruinosamente empatico y no le dejes salir del apuro.
+   P3   Dale tiempo y espacio para formular su respuesta.
+   P4   Cuenta con que a menudo la gente se queda callada despues de que preguntes, y resiste la tentacion de rellenar el silencio.
+   P5   Aguantalo aunque sea incomodo para ti y para el otro, porque el texto dice que tu trabajo es soportarlo e incluso abrazarlo.
+   P6   Cuenta con lo que el texto ha medido en sus talleres: parece facil, y hace falta una disciplina enorme.
+   P7   Practicalo asi: hazle tu pregunta a un companiero amistoso y cuenta hasta seis.
+   P8   No te permitas decir nada, por incomodo que te sientas o por incomodo que parezca el otro.
+   P9   Cuenta con lo que esa cuenta te da: buena parte de poner la franqueza radical en practica es ser capaz de atravesar la incomodidad social, y este truco te saca la cabeza de la incomodidad.
+   P10  Fijate en cuantos segundos aguanta tu companiero el silencio antes de saltar a decir algo, porque el texto dice que la mayoria no aguanta hasta seis y dice algo. Puede que no sea profundo, pero es un principio.
+   P11  Y si aun asi se quedan callados, diles que les vas a dar mas tiempo pero que vas a volver a ellos porque de verdad quieres su critica.
+   P12  Y no te olvides de volver a preguntar: no les dejes salir del apuro, ni te dejes salir a ti.
+
+=== premiar_franqueza_hacer_escucha_tangible  [bandeja]
+  titulo    : Premiar la franqueza de quien te critica haciendo tangible tu escucha, con la lista de las criticas recibidas y lo que has hecho con ellas contado en publico
+  activacion: Cuando alguien te ha dado una critica y quieres que vuelva a darsela, o cuando quieres que tu equipo vea que la critica que te dan sirve para algo.
+  entregable: El problema criticado arreglado deprisa o explicado por que no puedes, y la critica recibida contada en publico con lo que aprendiste y lo que vas a hacer con ella.
+  fuentes   : ['scott_radical_candor']
+   P1   Parte de lo que hace quien te critica, que es de donde el texto saca el encargo: esta asumiendo un riesgo, y tu trabajo es asegurarte de que se le premia por asumirlo, o no lo volvera a hacer.
+   P2   Premia la critica valiosa de la mejor manera que el texto ha encontrado: arregla el problema deprisa, o explica claramente por que no puedes y busca una solucion de rodeo.
+   P3   Cuenta con el sesgo contra el que juegas, que el texto llama sesgo de negatividad: aunque respondas bien a la critica nueve de cada diez veces, la que recordaran es la vez que respondiste a la defensiva.
+   P4   Ten delante la frase con que el texto lo resume, de Rick Hanson, autor de Resilient: el cerebro es como el velcro para las experiencias negativas y como el teflon para las positivas.
+   P5   Por eso haz que se note cuando premias la franqueza, y el texto pone su ejemplar: la directora de Spanx, Sara Blakely, puso la cancion Oops! I Did It Again mientras describia a toda la empresa un patron de errores que habia cometido.
+   P6   Celebra tus propios fallos, y ensenia que la unica manera de que mejores es que la gente te los seniale.
+   P7   Habla en publico de la critica util que has recibido y de como has intentado resolverla, porque eso senializa que para ti la critica es un regalo y no una patada en la espinilla.
+   P8   Practicalo asi: haz una lista de las tres o cuatro veces que unos companieros te han ofrecido alguna critica recientemente.
+   P9   Si no se te ocurre nada, no significa que seas perfecto: significa o que no estas oyendo lo que te dicen, o que no se sienten comodos compartiendo su critica.
+   P10  Y si no tienes nada en la lista, vete de pesca. Y pesca critica, no elogio.
+   P11  En una reunion de equipo o en una reunion de pie, comparte alguna critica que hayas recibido en la ultima semana, lo que aprendiste de ella, tu agradecimiento por ella, y que piensas hacer al respecto.
+   P12  Pide ayuda al equipo mientras intentas cambiar tu conducta o resolver el problema que te plantearon.
+   P13  Deja claro que agradeces mas critica en esas mismas areas, y recibela con gusto si te llega.
+   P14  Cuenta con las dos cosas buenas que el texto dice que pasan cuando dedicas un rato a ensenar que estas haciendo con la critica que te han dado: una, haces tangible tu escucha, porque a menudo los lideres trabajan duro para resolver una critica y se olvidan de compartir ese esfuerzo con el equipo. Ensenia tu trabajo.
+   P15  Y dos, te enteras de si has arreglado el problema: a veces descubriras que te has pasado, o que no has llegado, y en cualquiera de los dos casos tienes ocasion de calibrar tu respuesta.
+   P16  Y practica tambien con la critica con la que no estas de acuerdo: piensa en alguna que hayas recibido hace poco y con la que basicamente no estabas de acuerdo, e intenta encontrar algun elemento de ella con el que si puedas estar de acuerdo.
+   P17  Comparte con la persona esa zona de acuerdo, para demostrar que la escuchaste y que estas abierto a la critica.
+   P18  Despues hazle saber que hay elementos de lo que dijo con los que no estas de acuerdo, y preguntale si esta dispuesta a tener una conversacion mas larga.
+   P19  Si lo esta, articula lo mas claramente que puedas por que no estas de acuerdo, o por que cambiar tu conducta daria peores resultados.
+   P20  Y cuenta con lo que el texto seniala como lo peor que puedes hacerle a una relacion: fingir que escuchas mientras descartas en silencio lo que te dicen, porque eso hace que la gente se sienta invisible e ignorada. Un desacuerdo respetuoso puede fortalecer una relacion, e ignorar a una persona casi nunca lo hace.
+
+=== pedir_critica_primero_crear_seguridad_psicologica  [dataset]
+  titulo    : Pedir critica tu antes que nada, que es el primer paso del orden de operaciones, porque es lo que mas deprisa crea la seguridad psicologica del equipo
+  activacion: Cuando vas a empezar a practicar la franqueza radical con tu equipo y tienes que decidir por que punto empiezas.
+  entregable: El orden de operaciones recorrido desde su primer paso, con la critica pedida por ti y respondida bien, que es lo que el texto dice que crea antes que nada la seguridad psicologica.
+  fuentes   : ['scott_radical_candor']
+   P1   Ten delante el orden de operaciones que el texto llama importante, con sus cinco pasos numerados: uno, pide critica.
+   P2   Dos, da elogio.
+   P3   Tres, da critica.
+   P4   Cuatro, mide la critica y ajusta.
+   P5   Cinco, fomenta el elogio y la critica entre los demas.
+   P6   Empieza por el primero y no por otro, y el texto explica por que hace falta decirlo: de las dos historias mas memorables y mas repetidas de la primera edicion, una era de una jefa dando critica con acierto y la otra de lo que pasa cuando una jefa NO la da; al libro le faltaba una historia igual de memorable de una jefa pidiendo critica a un empleado, y por eso muchos lectores se quedaron con la impresion de que la franqueza radical va sobre todo de jefes criticando a empleados, cuando nada podria estar mas lejos de la verdad.
+   P7   Cuenta con cual es la meta de pedir critica, que el texto pone doble: no solo ayudarte a ser mas consciente de ti mismo, sino crear un ambiente en el que todos los empleados sientan bastante seguridad psicologica como para darse critica radicalmente franca entre ellos.
+   P8   Ten delante la definicion de la que el texto parte, la de Amy Edmondson de la escuela de negocios de Harvard: la seguridad psicologica es una creencia compartida de que el equipo es seguro para asumir riesgos interpersonales.
+   P9   Y cuenta con lo que su investigacion ensenia: en los centros de trabajo psicologicamente seguros la gente sabe que puede recibir critica de desempenio que diga que no esta cumpliendo las expectativas, y aun asi se siente dispuesta y capaz de asumir los riesgos interpersonales que la franqueza trae.
+   P10  Cuenta con la afirmacion que el texto hace de ahi, que es la que ordena el paso: no hay nada que un lider pueda hacer que cree mas deprisa las condiciones de la seguridad psicologica que pedir critica el mismo y responder bien a ella.
+   P11  Y ten delante por que la seguridad psicologica importa tanto en el trabajo, con la medicion que el texto cita: un grupo de operaciones de personas de Google hizo durante dos anios mas de doscientas entrevistas, analizando mas de doscientos cincuenta atributos de mas de ciento ochenta equipos activos.
+   P12  Cuenta con lo que encontraron: quien estaba en el equipo importaba menos que como interactuaban entre ellos, como estructuraban su trabajo y como veian sus contribuciones.
+   P13  Y con las cinco dinamicas clave de los equipos con exito que nombraron: seguridad psicologica, fiabilidad, estructura y claridad, sentido, e impacto. La seguridad psicologica era con mucho la mas importante de las cinco, porque es el cimiento de las otras cuatro.
+   P14  Haz las tres cosas que el texto dice que arrancan el circulo virtuoso: pide critica, responde a ella de forma constructiva, y premiala. Eso empieza a normalizar la critica como una fuerza positiva.
+   P15  Cuenta con lo que eso desencadena hacia abajo: cuando el consejero delegado pide critica y premia a quien se la da, manda una senial a los jefes intermedios de que deberian hacer lo mismo, y segun la gente de todos los niveles de la organizacion se da cuenta de que dar critica honesta es seguro e incluso se fomenta, se produce un circulo virtuoso.
+   P16  Y con lo que ese circulo produce: equipos que funcionan a un nivel notablemente alto, porque la gente innova mas cuando tiene menos miedo a asumir riesgos y aprende de los errores en vez de esconderlos y repetirlos.
+   P17  Y cuando ya tengas claro por que pruebas que aguantas antes de repartir, pasa a los cuatro elementos con los que el texto despliega como se pide critica: dar con una pregunta recurrente, abrazar la incomodidad, escuchar con intencion de entender, y hacer tangible la escucha premiando la franqueza.
+
+=== abrazar_incomodidad_arrancar_critica_equipo  [dataset]
+  titulo    : Abrazar la incomodidad para arrancarle la critica a tu equipo, con los seis consejos que el texto nombra uno a uno
+  activacion: Cuando eres el jefe y quieres que tu equipo te critique de verdad, y te encuentras con que nadie lo hace.
+  entregable: Critica dicha en voz alta por tu equipo, recibida sin defenderte y premiada de forma visible, con la cuenta semanal de cuanta recibes.
+  fuentes   : ['scott_radical_candor']
+   P1   Cuenta con lo que el texto pone como punto de partida: cuando eres el jefe la gente de verdad no quiere criticarte ni decirte lo que piensa, porque con el puesto heredas un monton de suposiciones que no tienen nada que ver con quien eres, y el papel cambia la impresion que la gente tiene de ti de maneras desconcertantes.
+   P2   Trabaja duro para ganarte la confianza de tu equipo cuando te haces jefe, y no te centres de mas en el respeto: el texto avisa de que centrarse demasiado en el respeto sale al reves, porque te pone extra a la defensiva cuando te critican, y de que si escuchas la critica y reaccionas bien te llegan los dos.
+   P3   Tratate a ti mismo como la excepcion a la regla de criticar en privado, que es como el texto rotula el primero de sus consejos.
+   P4   Averigua quien de tu equipo esta mas comodo criticandote y pidele que lo haga delante de otros, en una reunion de equipo o en una general. El texto avisa de que al principio siempre se resisten preguntando por la regla de criticar en privado, y de que cuando eres el jefe esa regla no se te aplica.
+   P5   Cuenta con las dos ventajas que el texto pone a airearlo en publico: si tienes mas de sesenta personas trabajando para ti y las haces esperar a un momento privado para darte una critica, probablemente no la oigas nunca; y te ahorra tener que oir lo mismo una y otra vez.
+   P6   Cuenta con lo que el texto contesta al miedo a que el desafio publico socave tu autoridad: una buena reaccion a la critica publica puede ser justo lo que establece tu credibilidad como lider fuerte, y ayuda a construir una cultura de guia.
+   P7   Ten una pregunta de cabecera. El texto da la que su autora adopto de Fred Kofman, autor de Conscious Business y su entrenador en Google: que podria hacer o dejar de hacer que hiciera mas facil trabajar conmigo. Si esas palabras no te salen solas, busca las que si, y cuenta con que esa pregunta de apertura solo esta pensada para poner las cosas en marcha.
+   P8   Abraza la incomodidad. Preparate de antemano para la respuesta que el texto dice que llega casi siempre, que todo va bien y gracias por preguntar, y comprometete a seguir en la conversacion hasta tener una respuesta genuina. No asientas ni la tranquilices diciendo que te alegra oirlo.
+   P9   Cuenta hasta seis antes de decir nada mas, obligando a la otra persona a aguantar el silencio. El texto dice que la meta no es abusar sino insistir en una discusion franca, poniendo mas dificil callarse que decirte lo que piensa, y que si no se le ocurre nada en el momento siempre puedes quedar otro dia.
+   P10  Si contar hasta seis no funciona, vuelve a hacer la pregunta. Y otra vez si hace falta.
+   P11  Senala cuando el lenguaje corporal de alguien contradice lo que dice. El texto da la frase, dicha sin ser desagradable: entonces por que estas cruzando los brazos y hundiendote en la silla, venga, dime lo que piensas de verdad.
+   P12  Escucha con intencion de entender y no de responder. No empieces a criticar la critica ni a decirle a la otra persona que no ha sido radicalmente franca: repite lo que dijo para asegurarte de haberlo entendido en vez de defenderte, y aclara la critica sin debatirla. El texto da la frase, y dice que si te parece demasiado programatica busques otra: asi que lo que te oigo decir es.
+   P13  Gestiona tus sentimientos en vez de dejar que ellos te gestionen a ti, y recuerdate al entrar que por injusta que sea la critica tu primer trabajo es escuchar para entender y no defenderte. El texto avisa de que la reaccion defensiva es normal, y de que se carga casi del todo la posibilidad de que esa persona vuelva a regalarte franqueza.
+   P14  Premia la critica para conseguir mas. Si estas de acuerdo con ella, haz el cambio cuanto antes; y si el cambio necesario va a llevar tiempo, haz algo visible que demuestre que lo estas intentando. El texto lo ilustra con la goma elastica que la autora se puso en la muneca y que pidio a su socio Russ, y despues a todo su equipo, que le chascaran cada vez que interrumpiera.
+   P15  Si no estas de acuerdo con la critica, haz lo que el texto pone y en el orden en que lo pone: primero busca algo de la critica con lo que si puedas estar de acuerdo, para senialar que estas abierto; despues comprueba que has entendido repitiendo lo que oiste; despues dile que quieres pensar lo que te ha dicho y agenda otro momento para volver a hablarlo, y vuelve de verdad; y entonces explica exactamente por que no estas de acuerdo.
+   P16  Cuenta con lo que el texto dice que NO basta nunca: reconocer sin mas los sentimientos de la otra persona, que segun el texto siempre suena pasivo agresivo e insincero.
+   P17  Mide la guia que recibes llevando la cuenta: cuantas veces por semana te critican y cuantas te elogian las personas que te reportan. Si todo es elogio y nada de critica, desconfia, porque segun el texto necesitas trabajar mas para que te critiquen.
+   P18  Ensenia a tu equipo la idea de la franqueza radical y explicales por que no quieres que sean ruinosamente empaticos ni manipuladoramente insinceros contigo, diciendoles que prefieres la agresion odiosa al silencio.
+   P19  Imprime el marco de la franqueza radical y, cuando en una conversacion notes que alguien se esta conteniendo, senialalo y pidele que vaya ahi.
+   P20  No uses un medidor de programa para esto. El texto corrige aqui a su propia primera edicion: aquello no funciono bien, y mirar a la persona a los ojos mientras hablas funciona mucho mejor que una aplicacion. Mira su respuesta cuando das guia y ajusta como hablas segun lo que veas.
+

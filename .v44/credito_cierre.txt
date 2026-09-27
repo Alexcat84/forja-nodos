@@ -1,0 +1,13 @@
+CREDITO DE LA LINEA 'serial' (D.48)
+  registro: docs/loop/CREDITO_serial.jsonl
+  tandas: 42, en 190 suceso(s) de especie
+
+  especie            racha      de donde sale
+  ----------------------------------------------------------------------
+  AUDITOR            2 de 3     ACTA 42
+  CIFRA PUBLICADA    0 de 2     ACTA 42
+  CLASE              0 de 2     ACTA 42
+  DATO MOVIDO        0 de 2     ACTA 42
+  REPORTE            1 de 3     ACTA 42
+
+  CREDITO ENTERO: ninguna especie en su tope.

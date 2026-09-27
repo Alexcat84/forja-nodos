@@ -1,0 +1,8 @@
+--- quien lee cerrados_en_extraccion, y que hace con ello ---
+src/tablero.py:89:    for grupo in ("liberados", "cerrados_en_extraccion"):
+src/tablero.py:187:    cerrados = declarado.get("cerrados_en_extraccion") or {}
+Binary file src/__pycache__/tablero.cpython-312.pyc matches
+
+--- las claves de cerrados_en_extraccion, y si grove esta ---
+libros CERRADOS EN EXTRACCION: ['scott_radical_candor', 'smart_who', 'zhuo_manager']
+'grove_high_output' entre ellos: no

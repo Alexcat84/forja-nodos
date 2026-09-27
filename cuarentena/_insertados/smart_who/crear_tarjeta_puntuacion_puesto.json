@@ -1,0 +1,38 @@
+{
+  "condiciones_activacion": "Cuando vas a contratar a alguien para un puesto y todavia no esta definido con claridad que quieres que esa persona logre. El libro lo pone como el primer punto de fallo de la contratacion: no tener meridianamente claro que quieres que consiga la persona que contratas, mientras los demas del equipo cargan con sus propias nociones vagas que probablemente no coinciden con la tuya.",
+  "denominaciones": {
+    "nombre_largo": "La tarjeta de puntuacion del puesto, el plano del exito",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "scorecard"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "How to Create a Scorecard"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "contratacion",
+  "entregable_esperado": "La tarjeta de puntuacion del puesto escrita, con sus tres partes: la mision del puesto, los resultados que hay que lograr y las competencias que encajan a la vez con la cultura de la empresa y con el papel.",
+  "escala_minima": "La fijan los propios ejemplos del libro, que van de un representante de atencion al cliente hasta un director de colegio y un vicepresidente de ventas.",
+  "fuentes": [
+    {
+      "clave": "smart_who",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "id": "crear_tarjeta_puntuacion_puesto",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Redacta la mision: una declaracion corta, de una a cinco frases, que describa por que existe el puesto. El ejemplo del libro: la mision del representante de atencion al cliente es ayudar a los clientes a resolver sus dudas y quejas con el maximo nivel de cortesia posible.",
+    "Define los resultados: de tres a ocho resultados especificos y objetivos que la persona tiene que lograr para alcanzar un desempeño A. El ejemplo del libro: mejorar la satisfaccion del cliente en una escala de diez puntos, de 7,1 a 9,0, antes del 31 de diciembre.",
+    "Identifica las competencias del puesto, tantas como te parezcan apropiadas, para describir los comportamientos que alguien tiene que demostrar para lograr esos resultados. Despues identifica de cinco a ocho competencias que describan tu cultura y ponlas en todas las tarjetas de puntuacion. El ejemplo del libro: eficiencia, honestidad, altos estandares y mentalidad de servicio al cliente.",
+    "Asegura la alineacion y comunica: somete la tarjeta a prueba de presion comparandola con el plan de negocio y con las tarjetas de puntuacion de las personas que van a relacionarse con el puesto, comprueba que hay coherencia y alineacion, y despues comparte la tarjeta con las partes relevantes, incluidos los pares y los reclutadores."
+  ],
+  "resumen_teorico": "Es la cabeza de la serie numerada del recuadro How to Create a Scorecard, y a la vez el primero de los cuatro pasos del metodo A de ghSMART. La tarjeta de puntuacion es el plano del exito: coge la definicion teorica de un jugador A y la pone en terminos practicos para el puesto concreto que hay que cubrir. Se compone de tres partes, la mision del puesto, los resultados que hay que lograr y las competencias, y juntas describen el desempeño A del papel, o sea que tiene que lograr una persona y como. Los autores lo comparan con el plano del arquitecto: nadie encargaria una casa sin plano, y nadie deberia contratar sin este. El caso que el libro pone con su nombre es el de Sewickley Academy, un colegio independiente de las afueras de Pittsburgh que encargo a ghSMART la seleccion de un nuevo director: el consejo definio la mision del puesto, tres resultados principales y unas pocas competencias que importaban de verdad, y al comparar la trayectoria de los tres candidatos contra la tarjeta descubrio que el mejor encaje era Kolia O'Connor, al que habia descartado de entrada por parecerle demasiado corporativo y agresivo. El otro caso, el que abre el capitulo, es el de la institucion financiera global donde el directivo y su jefe descubrieron en la misma sala que querian dos puestos distintos con el mismo nombre, y el responsable de la contratacion paro una oferta que estaba a punto de hacer.",
+  "titulo": "Crear la tarjeta de puntuacion de un puesto, con sus cuatro pasos"
+}

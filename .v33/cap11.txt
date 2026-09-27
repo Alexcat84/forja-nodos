@@ -1,0 +1,22 @@
+poblacion: dataset/nodos.jsonl, 270 nodos, SIN filtrar por bandeja
+criterio : 'cap_11' citado en resumen_teorico
+
+nodos del GRAFO con cap_11 como unidad de origen : 16
+sus pasos_accionables                          : 187
+
+   bloquear_tiempo_pensar_calendario
+   conducir_reunion_equipo_agenda_tres_bloques
+   debatir_decidir_asuntos_cultura_evitar_delegar
+   decidir_quien_comunica_cada_cuanto
+   escribir_apuntes_sala_estudio_equipo
+   leer_seniales_fallo_jefe_reunion_solas
+   montar_reunion_general_presentaciones_preguntas
+   montar_reunion_gran_debate
+   montar_reunion_gran_decision
+   montar_reuniones_solas_mentalidad_frecuencia
+   montar_tablero_kanban_medir_actividades
+   nutrir_ideas_nuevas_reunion_solas
+   pasear_organizacion_hallar_problemas_pequenios
+   pelear_proliferacion_reuniones_bloquear_ejecucion
+   preguntar_seguimiento_hallar_huecos
+   recorrer_rueda_conscientemente_cultura_equipo

@@ -1,0 +1,11 @@
+    $ python scripts/tallar_reporte.py
+    ============================================================================
+    TALLADO DEL REPORTE (D.41): la tabla que dice ser de instrumento
+    ============================================================================
+    tablas que declaran instrumento : 240
+      talladas, celda a celda       : 130
+      que DIFIEREN de su instrumento: 0
+      con la ruta VACIA             : 0   (cero bytes, 7.B)
+      sin poder comprobar           : 0
+      que CITAN y no reproducen     : 110   (declaradas PARCIAL)
+          linea 27198 de docs/loop/REPORTE.md

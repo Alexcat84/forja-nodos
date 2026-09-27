@@ -1,0 +1,13 @@
+===== usar_banco_nueve_preguntas_entrevista | cuarentena\grove_high_output\usar_banco_nueve_preguntas_entrevista.json
+  titulo: Usar el banco de nueve preguntas que un grupo de mandos considero las mejores para entrevistar a un candidato
+  fuente: ['grove_high_output']
+  cond: Cuando el mando va a entrevistar a un candidato a un puesto y necesita preguntas concretas para llenar la hora u hora y media de que dispone.
+  P1. Pide al candidato que describa proyectos que fueron muy valorados por su direccion, en especial por los niveles por encima de su supervisor inmediato.
+  P2. Preguntale cuales son sus debilidades y que esta haciendo para eliminarlas.
+  P3. Preguntale que te convenceria de que tu empresa deberia contratarlo.
+  P4. Preguntale que problemas esta encontrando en su puesto actual, como los esta resolviendo y que podria haber hecho para evitar que aparecieran.
+  P5. Preguntale por que cree que esta listo para este nuevo puesto.
+  P6. Preguntale cuales considera sus logros mas importantes y por que fueron importantes para el.
+  P7. Preguntale cuales considera sus fracasos mas importantes y que aprendio de ellos.
+  P8. Si el puesto lo justifica, preguntale por que cree que deberia elegirse a un ingeniero para un puesto de marketing, o la variante equivalente segun la situacion.
+  P9. Preguntale cual fue el curso o proyecto mas importante que completo en su etapa universitaria y por que fue tan importante.

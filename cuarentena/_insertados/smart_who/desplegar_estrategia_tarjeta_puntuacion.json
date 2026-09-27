@@ -1,0 +1,41 @@
+{
+  "atribuciones": [
+    {
+      "autor": "Geoff Smart y Randy Street",
+      "cifra": "en una conferencia de la revista Fortune, preguntados doscientos consejeros delegados cuantos tenian objetivos escritos para todos sus reportes directos, solo levanto la mano el 10 por ciento",
+      "fecha_corte": "2008",
+      "fuente": "smart_who"
+    }
+  ],
+  "condiciones_activacion": "Cuando tienes el plan de negocio del año que viene salido de tu ciclo anual de planificacion y quieres que la estrategia llegue a los puestos concretos. El libro lo activa por el problema que mide: las organizaciones rinden homenaje a la necesidad de traducir el plan anual en objetivos y presupuestos, pero rara vez son buenas asignando a las personas del equipo los resultados con los que se logran esos objetivos.",
+  "denominaciones": {
+    "nombre_largo": "De la tarjeta de puntuacion a la estrategia",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "From Scorecard to Strategy"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "contratacion",
+  "entregable_esperado": "Todas las personas de la organizacion con un conjunto de resultados que apoyan la estrategia, y con competencias que apoyan esos resultados y la cultura.",
+  "fuentes": [
+    {
+      "clave": "smart_who",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "id": "desplegar_estrategia_tarjeta_puntuacion",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Parte de tu estrategia: del ciclo anual de planificacion que culmina en el plan de negocio del año que viene.",
+    "Traduce los objetivos de la estrategia en resultados claros para el consejero delegado y el equipo directivo.",
+    "Haz que el equipo directivo traduzca despues sus propios resultados a las tarjetas de puntuacion de quienes estan por debajo de ellos.",
+    "Repite ese descenso nivel por nivel, hasta que todas las personas de la organizacion acaben con un conjunto de resultados que apoyan la estrategia y con competencias que apoyan esos resultados y la cultura."
+  ],
+  "resumen_teorico": "Es el uso de la tarjeta de puntuacion que sale de la contratacion. La tesis del libro es que la tarjeta no es solo un documento de contratar: es el plano que enlaza la teoria de la estrategia con la realidad de la ejecucion, porque traduce los planes de negocio en resultados puesto por puesto y crea alineacion en el equipo. El diagnostico que el capitulo pone debajo viene de lejos: desde que Peter Drucker acuño la direccion por objetivos hace medio siglo, las empresas rinden homenaje a la necesidad de traducir el plan anual en objetivos y presupuestos, pero rara vez son buenas asignando a los individuos del equipo los resultados con los que esos objetivos se logran, y por eso a los autores les asombra lo pocos directivos que usan objetivos escritos. El caso nombrado es EMC, la empresa de almacenamiento de datos, que reconocio que podia batir a sus competidores centrandose en el gran servicio en vez de en vender cajas: Roger Marino, la M de EMC, ejecuto esa estrategia haciendo responsable del gran servicio a toda la casa de arriba abajo, y contrato especificamente a gente con una actitud de servicio al cliente inusualmente alta. El otro es el de Doug Williams, de iHealth Technologies, que llama a esto gestion activa de la tarjeta de puntuacion, o sea enlazar el plan de negocio con los puestos de las personas, y dice que la tarjeta obliga al directivo a elegir y a ser coherente con lo elegido.",
+  "titulo": "Desplegar la estrategia en tarjetas de puntuacion, nivel por nivel"
+}

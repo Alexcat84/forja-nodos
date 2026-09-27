@@ -1,0 +1,15 @@
+$ python forja.py tablero | sed -n "5,17p;24p"
+  --------------------------------------------------------------------------------------------------------
+  .    1    onu_consumidor                 INSERTADO              NINGUNO                  0  cap_02
+  .    2    smart_who                      INSERTADO              NINGUNO                  0  cap_05
+  .    3    zhuo_manager                   INSERTADO              NINGUNO                  0       .
+  .    4    scott_radical_candor           INSERTADO              NINGUNO                  0  cap_14
+  .    11   gerber_emyth_cap17_reservado   ANULADO                NINGUNO                  0       .
+  1    7    grove_high_output              INSERTADO              NINGUNO                  0  cap_18
+  2    9    gerber_emyth                   INSERTADO              NINGUNO                  0  cap_22
+  3    5    marquet_turn_the_ship          COSECHADO              NINGUNO                 20  cap_17
+  4*   8    bernerslee_bananas             SIN EMPEZAR            NINGUNO                  0       .
+  5*   6    openstax_business_ethics       SIN EMPEZAR            NINGUNO                  0       .
+  6*   10   openstax_org_behavior          SIN EMPEZAR            NINGUNO                  0       .
+
+  MUNDO 11: faltan 1 de 7 libros del corte (marquet_turn_the_ship)

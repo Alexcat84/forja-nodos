@@ -1,0 +1,53 @@
+{
+  "atribuciones": [
+    {
+      "autor": "Adam Meyers, citado por Geoff Smart y Randy Street",
+      "cifra": "en el equipo de Adam Meyers, primer ejecutivo de la division de optica y fotonica sanitaria de Halma PLC, solo pasan hoy la entrevista de criba rigurosa entre el 10 y el 20 por ciento de las personas con las que hablan por telefono",
+      "fecha_corte": "2008",
+      "fuente": "smart_who"
+    }
+  ],
+  "condiciones_activacion": "Cuando ya tienes una lista de candidatos y hay que reducirla. Es el primer paso de las cuatro entrevistas del metodo A, dentro de seleccionar al jugador A con las cuatro entrevistas, y va antes de invitar a nadie a una jornada de entrevistas.",
+  "denominaciones": {
+    "nombre_largo": "La entrevista de criba: aclarar la lista antes de gastar un dia de entrevistas",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "screening interview"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "THE SCREENING INTERVIEW: CULLING THE LIST"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "contratacion",
+  "entregable_esperado": "La lista corta, de dos a cinco candidatos, a los que si merece la pena traer a la jornada de entrevistas, y fuera de ella los jugadores B y C evidentes.",
+  "escala_minima": "La fija el propio libro: la llamada se cierra en quince o veinte minutos cuando las primeras respuestas no son buenas, y nunca pasa de treinta.",
+  "fuentes": [
+    {
+      "clave": "smart_who",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "id": "cribar_candidatos_entrevista_telefonica",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Hazla por telefono y no pases de treinta minutos. Invitar al candidato a tu oficina o a comer se come una hora o mas.",
+    "Usa el mismo conjunto de preguntas cada vez, en vez de inventar preguntas nuevas en cada llamada. La comunidad de preguntas da consistencia y acelera tu capacidad de distinguir entre candidatos.",
+    "Repasa la tarjeta de puntuacion antes de la llamada para refrescarte la memoria. Despues abre la llamada fijando expectativas, con algo asi: tengo muchas ganas de este rato, esto es lo que me gustaria hacer, dedicar los primeros veinte minutos a conocerte y despues responder encantado a tus preguntas para que nos conozcas tu, te parece bien.",
+    "Pregunta uno: cuales son tus metas profesionales. Va primero para oir las metas y las pasiones del candidato antes de contaminar la conversacion con tus propios comentarios. Si no tiene metas o suena a eco de tu propia web, descartalo y la llamada ha terminado. Si hay desalineacion clara con el papel, pasa el nombre a un colega para el que otro puesto de la empresa encaje, pero no gastes mas tiempo con esa persona para este puesto.",
+    "Pregunta dos: en que eres realmente bueno profesionalmente. Empuja al candidato a darte de ocho a doce puntos fuertes, para tener un cuadro completo de su aptitud profesional, y pidele ejemplos que los pongan en contexto: si dice que es decidido, presiona por un ejemplo de una vez en que ese rasgo le sirvio. Escuchas puntos fuertes que encajen con el puesto, y si ves un hueco grande entre sus fuerzas y tu tarjeta de puntuacion, descartalo.",
+    "Pregunta tres: en que no eres bueno o que no te interesa hacer profesionalmente. No pidas debilidades a bocajarro, porque salen las respuestas de molde tipo soy impaciente por los resultados o trabajo demasiado; deja que respondan como quieran y, si no te satisface, presiona por una debilidad real diciendo que eso suena a punto fuerte y volviendo a preguntar en que no es realmente bueno o que no le interesa. Si aun asi te cuesta, mete el miedo a la comprobacion de referencias: avisale de que si avanza en el proceso le pediras ayuda para organizar referencias con jefes, pares y subordinados, y despues preguntale que crees que diran ellos que no se te da bien o no te interesa.",
+    "Cierra el balance de la pregunta tres con su corte: esta incompleto si no identificas al menos entre cinco y ocho areas donde la persona flojea, no tiene interes o no quiere operar. Si te quedas muy corto, si las debilidades son todas puntos fuertes disfrazados o si ves algo que mata el trato contra tu tarjeta de puntuacion, descartalo.",
+    "Pregunta cuatro: quienes fueron tus ultimos cinco jefes y como va a puntuar cada uno tu desempeño de 1 a 10 cuando hablemos con ellos. Di cuando hablemos, no si hablamos: ese matiz es la llave de la verdad. Pide que liste cada jefe y de una nota a cada uno, y sigue presionando por detalles, por ejemplo que le hace pensar que su jefe le pondria un 7. Buscas muchos 8, 9 y 10; el 7 es neutro; del 6 para abajo es malo, porque quien se pone un 6 o menos esta diciendo en realidad un 2. Si oyes demasiados 6 o menos, descartalo, pero escucha de verdad lo que se esta diciendo.",
+    "Si no te gusta lo que oyes, colapsa la llamada acelerando las preguntas: quince o veinte minutos bastan cuando las primeras respuestas no son buenas. Si en cambio oyes un encaje fuerte con tu tarjeta, pregunta al candidato si tiene mas tiempo o si esta dispuesto a agendar mas.",
+    "Cierra la llamada ofreciendo al candidato la oportunidad de hacerte preguntas a ti, que es donde puedes venderle las virtudes de tu empresa con lo que aprendiste en los primeros veinte minutos. Si no te gusto lo que oiste, responde corto y colapsa tambien esa parte.",
+    "Terminada la entrevista, preguntate: encajan los puntos fuertes de esta persona con mi tarjeta de puntuacion, son manejables sus debilidades, me entusiasma traerla a una serie de entrevistas con los datos que tengo. Si dudas, o si te descubres queriendo traer a alguien solo para probarlo un poco mas, descartalo. Invita solo a aquellos cuyo perfil parece un encaje fuerte con tu tarjeta."
+  ],
+  "resumen_teorico": "La entrevista de criba es una entrevista corta, por telefono, diseñada para sacar a los jugadores B y C de la lista de candidatos. Los autores cuentan que ellos mismos la despachaban demasiado deprisa al principio, hasta que sus clientes les repitieron que estaban gastando demasiado tiempo en entrevistas posteriores con gente que no deberia haber pasado el primer corte. El objetivo es ahorrar tiempo eliminando cuanto antes a quien no encaja con el puesto, y por eso se hace por telefono: invitar a un candidato a la oficina o a comer se come una hora o mas. Como en todas las entrevistas del metodo A, el enfoque es estructurado, o sea el mismo conjunto de preguntas cada vez. El capitulo remacha el mismo acto bajo el titulo HIT THE GONG FAST, con el simil del concurso de television donde el jurado hacia sonar un gong en cuanto veia que un concursante no tenia talento: demasiados directivos se demoran con candidatos que encajan mal, unos por evitar la confrontacion y otros pensando que un colega vera algo que ellos no ven, y los autores dicen que es mejor perderse a un posible jugador A que gastar horas preciosas en un caso dudoso que resulta ser B o C. Ese titulo no da nodo propio porque manda el mismo acto que este; su material se queda aqui. Los dos casos que lo ilustran quedan tambien aqui, con su dueño delante: Adam Meyers, primer ejecutivo de la division de optica y fotonica sanitaria de Halma PLC, conto a los autores que su equipo no fue lo bastante riguroso con la criba al empezar y perdio mucho tiempo con gente que no encajaba, y que hoy solo pasan la criba entre el 10 y el 20 por ciento de las personas con las que hablan por telefono; y John Sharpe, veintitres años en Four Seasons Hotels and Resorts, el ultimo tramo como presidente, sostiene que la intuicion importa sobre todo para decidir a quien no contratar, que no se puede contratar solo por intuicion y hay que examinar el historial, pero que cuando todo se ve bien sobre el papel y queda una incomodidad royendo, hay que pasar de largo. Sharpe lo ilustro con un candidato al que vio en un vuelo pagar bebidas con moneda canadiense teniendo dolares en la cartera, guiñandole un ojo, a quien otro contrato y acabo despedido a los dos meses por tratar sin respeto a la primera linea. Ese consejo de Sharpe no se convierte en paso: quien lo formula es el, no el libro.",
+  "titulo": "Cribar candidatos con la entrevista telefonica de criba y sus cuatro preguntas"
+}

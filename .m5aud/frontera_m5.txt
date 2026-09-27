@@ -1,0 +1,23 @@
+== cap_09
+   piezas de su tabla            : 46
+   cuerpo L8+ medido por mi      : 1478   (declarado: 1478)
+   suma de sus filas             : 1478
+   filas con palabras mal        : 0
+   lineas solapadas              : 0
+   lineas con palabras sin cubrir: 0
+== cap_10
+   piezas de su tabla            : 40
+   cuerpo L8+ medido por mi      : 1501   (declarado: 1501)
+   suma de sus filas             : 1501
+   filas con palabras mal        : 0
+   lineas solapadas              : 0
+   lineas con palabras sin cubrir: 0
+== cap_11
+   piezas de su tabla            : 58
+   cuerpo L8+ medido por mi      : 2521   (declarado: 2521)
+   suma de sus filas             : 2521
+   filas con palabras mal        : 0
+   lineas solapadas              : 0
+   lineas con palabras sin cubrir: 0
+== LAS TRES
+   piezas 144   cuerpo 5500   suma 5500

@@ -1,0 +1,33 @@
+LOS ROTULOS DEL INDICE DE cap_11 QUE EL PASO 6 DE LA CABEZA ENUMERA
+AVISO: cero nodos tecleados en este instrumento. El rotulo sale del indice de
+       fuentes/scott_radical_candor/cap_11.md, el titular sale del cuerpo del
+       mismo fichero, y el nodo se casa por el rango que su propio resumen declara.
+cabeza  : decidir_quien_comunica_cada_cuanto
+indice  : 10 rotulos, entre las lineas 17 y 35
+cuerpo  : 10 titulares en mayuscula
+tramos  : 18 declarados por 16 nodos de este capitulo
+LAS DOS LISTAS TIENEN EL MISMO LARGO, asi que el casado por POSICION es una
+       segunda via independiente y se publica al lado de la del nombre.
+
+| # | rotulo del indice | linea | titular del cuerpo | linea | las dos vias | nodo que lo procedimenta | donde esta | arista cabeza a parte |
+|---:|---|---|---|---|---|---|---|---|
+| 1 | 1:1 Conversations | `L17` | 1:1 CONVERSATIONS | `L37` | las dos | `montar_reuniones_solas_mentalidad_frecuencia` | en el grafo | **CABLEADA** |
+| 2 | Staff Meetings | `L19` | STAFF MEETINGS | `L129` | las dos | `conducir_reunion_equipo_agenda_tres_bloques` | en el grafo | **CABLEADA** |
+| 3 | Think Time | `L21` | THINK TIME | `L165` | las dos | `bloquear_tiempo_pensar_calendario` | en el grafo | **CABLEADA** |
+| 4 | “Big Debate” Meetings | `L23` | “BIG DEBATE” MEETINGS | `L175` | las dos | `montar_reunion_gran_debate` | en el grafo | **CABLEADA** |
+| 5 | “Big Decision” Meetings | `L25` | “BIG DECISION” MEETINGS | `L195` | las dos | `montar_reunion_gran_decision` | en el grafo | **CABLEADA** |
+| 6 | All-Hands Meetings | `L27` | ALL-HANDS MEETINGS | `L205` | las dos | `montar_reunion_general_presentaciones_preguntas` | en el grafo | **CABLEADA** |
+| 7 | Meeting-Free Zones | `L29` | EXECUTION TIME | `L223` | **SOLO LA POSICION** | `pelear_proliferacion_reuniones_bloquear_ejecucion` | en el grafo | **NO, y se dice por que** |
+| 8 | Kanban Boards | `L31` | KANBAN BOARDS | `L235` | las dos | `montar_tablero_kanban_medir_actividades` | en el grafo | **CABLEADA** |
+| 9 | Walk Around | `L33` | WALK AROUND | `L251` | las dos | `pasear_organizacion_hallar_problemas_pequenios` | en el grafo | **CABLEADA** |
+| 10 | Be Conscious of Culture | `L35` | BE CONSCIOUS OF CULTURE | `L271` | las dos | `recorrer_rueda_conscientemente_cultura_equipo` | en el grafo | **CABLEADA** |
+
+| | |
+|---|---:|
+| rotulos que el indice enumera | **10** |
+| **de ellos, con nodo dentro del grafo hoy** | **10** |
+| **de ellos, con la arista cabeza a parte cableada** | **9** |
+| de ellos, con su nodo todavia en bandeja | **0** |
+| de ellos, sin nodo ninguno | **0** |
+| **rotulos donde las dos vias de casado NO coinciden** | **1** |
+| hijos que la cabeza declara en `nodos_siguientes` | **9** |

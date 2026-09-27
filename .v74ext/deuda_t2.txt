@@ -1,0 +1,6 @@
+$ python scripts/deuda.py --saneamiento --vuelta 74
+DECLARADA vuelta de SANEAMIENTO: 74
+$ python scripts/deuda.py --pagar d078 --vuelta 74 --como "<.v74ext/como_d078.txt>"
+PAGADA d078 en la vuelta 74
+$ python scripts/deuda.py --pagar d077 --vuelta 74 --como "<.v74ext/como_d077.txt>"
+PAGADA d077 en la vuelta 74

@@ -1,0 +1,23 @@
+$ grep -n "poblacion_de_bandejas" src/aduana.py src/informe.py
+src/aduana.py:438:def poblacion_de_bandejas(raiz=None, fecha=None, tabla_fuentes=None):
+src/aduana.py:923:    bandejas = poblacion_de_bandejas(fecha=fecha)
+src/informe.py:98:poblacion_de_bandejas = aduana.poblacion_de_bandejas
+src/informe.py:123:        bandejas = poblacion_de_bandejas(fecha=fecha, tabla_fuentes=tabla_fuentes)
+
+$ sed -n "915,930p" src/aduana.py
+    # contrario desde el 12 sep: se cableo en `informe.py`, que corre EN SECO, y no
+    # aqui, que es **donde se decide**. Una regla que dice una cosa y un codigo que
+    # hace otra es la enfermedad que la cosecha `7.C` llama por su nombre.
+    #
+    # EL COSTE, MEDIDO POR LA `ACTA 26`: cinco pares por encima de umbral **sin
+    # veredicto**, los cinco con un extremo en la bandeja. No era perdida, era
+    # aplazamiento; pero `D.38.5` nacio para que un par **no dependa de que alguien
+    # se acuerde.**
+    bandejas = poblacion_de_bandejas(fecha=fecha)
+    poblacion = list(nodos) + list(bandejas)
+    censo = Poblacion(len(nodos), len(bandejas))
+    vecinos = buscar_vecinos(candidato, poblacion, umbrales)
+    resultado.vecinos = vecinos
+    resultado.decir("  blocking multi señal contra %s" % censo)
+
+    veredictos = {}

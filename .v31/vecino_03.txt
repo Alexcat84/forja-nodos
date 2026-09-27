@@ -1,0 +1,12 @@
+VECINO: calibrar_normalidad_preguntas_jefe   sede: dataset/nodos.jsonl (EN EL GRAFO)
+titulo: Calibrar con tu jefe que es lo normal en el entorno nuevo
+fuentes: [{'clave': 'zhuo_manager', 'fecha': '2026-09-10'}]
+origen: Es el segundo instrumento del camino del jefe nuevo, y el libro lo situa justo despues de nombrar el mayor error de los jefes nuevos, lanzarse a imponer opiniones para demostrar que son capaces. El libro dice de donde sale la necesidad, y la fuente es una medicion suya de andar por casa pero declara
+  P1  Acepta que en tus primeros meses tu trabajo principal es escuchar, preguntar y aprender.
+  P2  Para calibrar que es lo normal, mira escenarios concretos junto a tu propio jefe, que es la manera eficaz de hacerlo.
+  P3  Preguntale que significa hacer un gran trabajo frente a uno medio o malo, y pidele algunos ejemplos.
+  P4  Pidele que te comparta sus impresiones sobre como cree que fue tal proyecto o tal reunion, y por que lo cree.
+  P5  Cuentale que te has fijado en que paso tal cosa el otro dia y preguntale si eso es normal o si deberias preocuparte.
+  P6  Preguntale que es lo que le quita el sueno, y por que.
+  P7  Y preguntale como determina el que cosas priorizar.
+entregable: Tus expectativas calibradas sobre que es normal aqui, sacadas de mirar escenarios concretos junto a tu jefe y no de suponerlo.

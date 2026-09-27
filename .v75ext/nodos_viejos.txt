@@ -1,0 +1,2 @@
+TAREA 2    dar_elogio_disciplina_igual_critica                      campos ['pasos_accionables', 'resumen_teorico'] | gana [] | pierde []
+nodos al abrir: 430 | hoy: 437 | nuevos: 7 | nuevos que son de las 7 filas: 7 | viejos que cambian: 1 | cambios fuera de nodos_siguientes de una madre y de la TAREA 2: 0

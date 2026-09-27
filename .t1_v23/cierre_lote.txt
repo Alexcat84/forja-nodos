@@ -1,0 +1,9 @@
+$ ls fuentes/scott_radical_candor/*.md | wc -l
+15
+$ python .t1_v23/cobertura_lote4.py
+unidades en la bandeja de entrada : 15
+unidades con candidato escrito    : 12
+unidades saldadas sin candidato   : 2   ['cap_00', 'cap_02']
+unidades SIN MINAR                : 1   ['cap_14']
+  cap_00  unidad=Copyright Page  -> Copyright Page: no minable, no hay procedimiento que extraer
+  cap_02  unidad=Introduction  -> Introduction: minado en su vuelta con resultado CERO candidatos

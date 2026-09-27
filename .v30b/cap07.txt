@@ -1,0 +1,12 @@
+$ (nodos de la poblacion entera cuyo resumen cita fuentes/scott_radical_candor/cap_07.md)
+  nodos que citan cap_07.md : 25  (grafo 25, bandeja 0)
+  L65-77  L91-111  L113-129  L131-153  L155-163  L177-195  L197-211  L225-229  L231-233  L235-237  L239-243  L245-257  L259-289  L291-293  L295-301  L303-347  L349-357  L359-365  L367-373  L375-379  L381-383  L385-387  L389-401  L403-407  L409-419
+
+$ (lineas del capitulo cubiertas por algun nodo, y los huecos)
+  lineas del capitulo       : 433
+  lineas cubiertas por nodo : 295
+  L1-64  35 lineas con texto
+  L78-90  6 lineas con texto
+  L164-176  6 lineas con texto
+  L212-224  6 lineas con texto
+  L420-433  7 lineas con texto

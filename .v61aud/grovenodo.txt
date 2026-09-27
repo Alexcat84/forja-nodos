@@ -1,0 +1,6 @@
+NODO DE GROVE EN EL GRAFO: revisar_tres_preguntas_valor_carrera
+  titulo: Examinar tu propio trabajo con las tres preguntas que el libro deja para tu carrera
+  fuentes: [{"clave": "grove_high_output", "fecha": "2026-09-16"}]
+
+unidades declaradas en las fichas de la bandeja de grove:
+   (sin unidad)         90

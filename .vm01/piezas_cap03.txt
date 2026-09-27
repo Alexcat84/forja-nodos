@@ -1,0 +1,18 @@
+[
+ ('R1',  9,  9, 'el rotulo `Call to Action`', 'RESIDUO: rotulo'),
+ ('P1', 11, 11, 'la pregunta de apertura dirigida al lector y el primer paso nombrado: caminar la organizacion y escuchar lo bueno, lo malo y lo feo de la gestion de arriba abajo', 'NODO, primera mitad'),
+ ('R2', 13, 13, 'la fecha, el sitio y la cuenta atras al relevo', 'RESIDUO: rotulo de fecha'),
+ ('P2', 15, 15, 'lo que el procedimiento mandaba revisar, la decision de no hacerlo, y el inventario propio de medios: caminar hablando con la gente, montar recorridos donde cada jefe te ensena sus espacios, y pedir una linterna para inspeccionar', 'NODO, segunda mitad'),
+ ('R3', 17, 17, 'que es y para que sirve el camarote de oficiales donde se reune la plana', 'RESIDUO: contexto'),
+ ('P3', 19, 21, 'la reunion rutinaria observada por sus senales de plantilla y no por su asunto tecnico: quien llega tarde, el jefe que se queda fuera hasta que estan todos, la reunion que empieza tarde, todos esperando a otro, el ponente a la defensiva y los demas aburridos, con la regla de lectura escrita', 'NODO'),
+ ('P4', 23, 27, 'seguir al oficial frustrado a su camarote, nombrarle la frustracion vista, dejarle contar como quiere que funcione lo suyo, y preguntar por cada idea como la implanto', 'NODO'),
+ ('R4', 29, 33, 'el diagnostico del modelo de lider a seguidores puesto por el autor, la biografia de Dave, y los otros oficiales que pedian traslado o dimitian', 'POSTURA y CASO'),
+ ('R5', 35, 35, 'el modo agachar la cabeza: evitar el error como motor de toda accion y el minimo exigible como techo', 'POSTURA'),
+ ('P5', 37, 43, 'el tramite de permiso seguido por su cadena: el manual que dice quien firma, la cadena entera nombrada puesto a puesto, la cuenta de siete, el formulario con cinco lineas de firma, el papel encontrado en una bandeja ajena y el veredicto de que fallo el sistema y no la gente', 'NODO'),
+ ('P6', 45, 53, 'el enrutado de la informacion que entra inspeccionado en el acto: el tablero de mensajes con su sello de iniciales, el orden de reparto por protocolo, las notas que el jefe deja escritas, la pregunta que se le hace al subordinado y los dos costes que el subordinado nombra', 'NODO'),
+ ('P7', 55, 57, 'la formacion y la ceremonia de premios auditadas desde la ultima fila: los cinco defectos nombrados uno a uno y la prueba de si se oye al jefe desde donde esta la tripulacion', 'NODO'),
+ ('R6', 59, 59, 'el separador de seccion', 'RESIDUO: separador'),
+ ('R7', 61, 67, 'el inventario de lo que se evita, el rescoldo de ganas, la comparacion con el Olympia y la resolucion personal del autor', 'POSTURA y CASO'),
+ ('R8', 69, 69, 'la vuelta al comodoro y el compromiso de desplegar a tiempo', 'CASO'),
+ ('R9', 71, 81, 'QUESTIONS TO CONSIDER: las cinco preguntas de cierre', 'PENDIENTE DE DOCTRINA, vuelta 25'),
+]

@@ -1,0 +1,26 @@
+fila 17, decidir_amistad_subordinado_prueba_revision_dificil, lineas --veredicto: 1
+  --veredicto diagnosticar_capacidad_motivacion_prueba_vida|SANO|El mismo par que diagnosticar_capacidad lee desde su lado: ajenos, dos pruebas mentales de dos ramas sobre cosas distintas (cap_13 L77, cap_12 L17).
+inicio 2026-09-26 00:33:38
+======================================================================
+ADUANA DE INSERCION, candidato 'decidir_amistad_subordinado_prueba_revision_dificil'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (426 del grafo mas 53 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino diagnosticar_capacidad_motivacion_prueba_vida  [Diagnosticar si un subordinado que no rinde no puede o no quiere, con la prueba mental de si podria hacer el trabajo si su vida dependiera de ello]
+    levantada por: similitud_texto
+    similitud_texto    0.351 (umbral 0.35)
+    familia_id         0.100 (umbral 0.30)
+    paso_contra_nodo   0.467 (umbral 0.60)
+    paso 1 del candidato contra paso 1 de diagnosticar_capacidad_motivacion_prueba_vida
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 427
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 1
+
+======================================================================
+fin 2026-09-26 00:43:39 | codigo de salida 0 | 601.0 s

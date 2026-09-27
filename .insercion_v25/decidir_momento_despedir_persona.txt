@@ -1,0 +1,33 @@
+ADUANA DE INSERCION, candidato 'decidir_momento_despedir_persona'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi seÃ±al contra 219 nodo(s) del dataset
+
+VECINOS POR ENCIMA DE UMBRAL: 2. LA INSERCION QUEDA BLOQUEADA.
+  Las seÃ±ales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino despedir_persona_respeto_franqueza  [Despedir a una persona con respeto y sin rodeos]
+    levantada por: familia_id
+    similitud_texto    0.199 (umbral 0.35)
+    familia_id         0.333 (umbral 0.30)
+    paso_contra_nodo   0.430 (umbral 0.60)
+    paso 12 del candidato contra paso 6 de despedir_persona_respeto_franqueza
+
+  vecino elegir_recolocar_despedir_persona  [Elegir si recolocas a la persona dentro o la dejas ir]
+    levantada por: familia_id
+    similitud_texto    0.232 (umbral 0.35)
+    familia_id         0.333 (umbral 0.30)
+    paso_contra_nodo   0.395 (umbral 0.60)
+    paso 6 del candidato contra paso 5 de elegir_recolocar_despedir_persona
+
+BLOQUEADO: faltan veredictos para despedir_persona_respeto_franqueza, elegir_recolocar_despedir_persona
+  La aduana no juzga: obliga a juzgar (manual seccion 3).
+  Vuelve a correr el comando con un veredicto por vecino:
+    --veredicto "despedir_persona_respeto_franqueza|CONTINUA|madre=despedir_persona_respeto_franqueza|que aÃ±ade el hijo a la madre"
+    --veredicto "despedir_persona_respeto_franqueza|REPITE|por que no aÃ±ade procedimiento"
+    --veredicto "despedir_persona_respeto_franqueza|SANO|por que no son el mismo trabajo"
+    --veredicto "despedir_persona_respeto_franqueza|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "elegir_recolocar_despedir_persona|CONTINUA|madre=elegir_recolocar_despedir_persona|que aÃ±ade el hijo a la madre"
+    --veredicto "elegir_recolocar_despedir_persona|REPITE|por que no aÃ±ade procedimiento"
+    --veredicto "elegir_recolocar_despedir_persona|SANO|por que no son el mismo trabajo"
+    --veredicto "elegir_recolocar_despedir_persona|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"

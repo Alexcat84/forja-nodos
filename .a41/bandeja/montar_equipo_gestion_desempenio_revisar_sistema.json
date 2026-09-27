@@ -1,0 +1,43 @@
+{
+  "id": "montar_equipo_gestion_desempenio_revisar_sistema",
+  "titulo": "Montar el equipo de gestion del desempenio y arrancar la revision del sistema, con los seis rotulos que el texto pone uno a uno",
+  "denominaciones": {
+    "nombre_largo": "Los pasos que el texto enumera para empezar a rehacer el sistema de gestion del desempenio, del equipo con sus dos perfiles al ciclo de revision cada tres anios",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "steps for beginning the process of revamping your performance management system"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando decides que hace falta rehacer el sistema de gestion del desempenio de tu empresa y tienes que empezar por algun sitio.",
+  "entregable_esperado": "Un equipo de gestion del desempenio montado con sus dos perfiles, los elementos clave de la evaluacion actual repasados y compartidos bajo la norma de escuchar, desafiar y comprometerse, el desacoplamiento del desarrollo explicado a la plantilla, y el ciclo de revision cada tres anios puesto.",
+  "pasos_accionables": [
+    "Monta un equipo de gestion del desempenio, que es el primero de los rotulos que el texto pone: la gestion del desempenio tiene que ser un proceso dinamico en el que periodicamente repasas tus procesos y tus categorias de nota.",
+    "Encarga a ese equipo, y el texto lo marca como lo crucial, que vigile que el proceso no se desboque solo: mantenerlo ligero para que no se coma demasiado tiempo de todo el mundo.",
+    "Mete en el equipo los dos perfiles que el texto nombra: responsables operativos y directivos de recursos humanos. Los operativos traen el conocimiento experto de las competencias concretas del trabajo, y sin meterlos el sistema no tiene impacto; los de recursos humanos traen la comprension mas amplia de las consecuencias no buscadas que salen de un sistema mal disenado.",
+    "Evita lo que el texto dice que pasa demasiadas veces: que los responsables operativos deleguen de mas en recursos humanos y luego se nieguen a participar en el sistema.",
+    "Repasa los elementos clave de tu evaluacion de desempenio actual, que el texto despliega uno a uno mas abajo.",
+    "Cuando la hayas revisado, comparte los cambios que propones con un grupo mas amplio de responsables funcionales, incorpora la critica util, contesta las preguntas y explica tus principios de disenio.",
+    "Acuerda de antemano la norma de escuchar, desafiar y comprometerse, porque el texto avisa de que todo el mundo va a tener una opinion fuerte: que la gente entienda que puede desafiar las ideas del equipo de desempenio, que el equipo incorporara la critica si puede, y que al final todos tienen que comprometerse con el sistema que el equipo saque. Si no, el proceso se alarga sin fin y sin fruto.",
+    "Usa el proceso de evaluacion nuevo como ocasion para explicar a los empleados que el desarrollo ha quedado formalmente desacoplado del proceso de evaluacion, y por que.",
+    "Y para subrayar que la meta del proceso nuevo es avanzar hacia un proceso mas justo y mas transparente, y que no solo vas a fomentar la critica sino que la esperas.",
+    "Cada anio, busca la ocasion de informar al equipo entero de la critica recibida y de como se va a incorporar.",
+    "Crea un ciclo regular de revision, cada tres anios, en el que el equipo de gestion del desempenio mejore el proceso a partir de la critica de la empresa, con la meta importante de minimizar el tiempo que el proceso le exige a todo el mundo.",
+    "Ten delante el ultimo rotulo, que el texto escribe como recordatorio: la arbitrariedad es el enemigo y la justicia es la meta. Todo el sentido de las evaluaciones es demostrar a los empleados que estas comprometido con mantener un sistema justo para retribuir su trabajo, y que hacerlo es parte integral de cumplir la mision de la empresa."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_14.md, unidad Bonus Chapter, titulo textual Bonus Chapter: A Radically Candid Performance Review. Sale de las lineas 21 a 33, que son la PIEZA P1 de la frontera de esta vuelta, 477 palabras. POR QUE ES PROCEDIMIENTO Y NO POSTURA, con D.27 delante: la linea 21 anuncia literalmente I want to outline some steps for beginning the process of revamping your performance management system, y detras van SEIS rotulos puestos uno a uno por el propio libro, que son el inventario de MEDIOS y ETAPAS que D.27 pide: crear el equipo, los dos perfiles que lo componen, repasar los elementos clave y compartirlos, comunicar el desacoplamiento, el ciclo de revision cada tres anios, y el recordatorio de la arbitrariedad. No hay adjetivo de adecuacion en el sitio del criterio: los medios estan nombrados y las dos unicas cifras, tres anios y cada anio, las escribe el texto. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 12 pasos, 12 TRANSCRIPCION, 0 PUENTE. P1, P2 de la linea 23; P3 y P4 de la 25; P5, P6 y P7 de la 27; P8, P9 y P10 de la 29; P11 de la 31; P12 de la 33. NO ESCRIBO EL PERIODO donde el libro no lo pone: los dos periodos que aparecen, cada tres anios en el P11 y cada anio en el P10, son los que las lineas 31 y 29 escriben literalmente, every three years y annually. NO ESCRIBO DESTINATARIO NI RESPONSABLE mas alla de los que el texto nombra: el equipo de gestion del desempenio y el grupo mas amplio de responsables funcionales son los que la linea 27 pone. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: de cuantas personas se compone el equipo, quien lo preside, cuanto dura el repaso, que se hace si el grupo mas amplio no se compromete, ni como se mide que el proceso sigue siendo ligero.",
+  "atribuciones": [],
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-13"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+$ for f in .v2g/informe_*.txt; do n=$(grep -cE "^\[BLOQUEARIA\]" "$f"); echo "$n  $f"; done
+0  .v2g/informe_01.txt
+1  .v2g/informe_02.txt
+1  .v2g/informe_archivar_indicadores_resolver_problemas.txt
+0  .v2g/informe_casar_flujo_fabricacion_flujo_ventas.txt
+1  .v2g/informe_construir_grafico_escalonado_pronosticos.txt
+0  .v2g/informe_construir_indicador_linealidad_alerta_temprana.txt
+1  .v2g/informe_construir_indicador_tendencia_patron.txt
+0  .v2g/informe_decidir_aceptar_rechazar_material_defectuoso.txt
+0  .v2g/informe_dimensionar_plantilla_administrativa_pronostico.txt
+0  .v2g/informe_elegir_cinco_indicadores_diarios_fabrica.txt
+1  .v2g/informe_elegir_fabricar_pedido_pronostico.txt
+1  .v2g/informe_elegir_indicador_salida_trabajo_administrativo.txt
+0  .v2g/informe_elegir_inspeccion_barrera_monitorizacion.txt
+1  .v2g/informe_emparejar_indicadores_efecto_contraefecto.txt
+14  .v2g/informe_lote_grove.txt
+0  .v2g/informe_representar_actividad_caja_negra_ventanas.txt
+0  .v2g/informe_simplificar_trabajo_reducir_numero_pasos.txt
+0  .v2g/informe_variar_frecuencia_inspeccion_nivel_calidad.txt
+
+$ los informes POR CANDIDATO (sin informe_lote_grove.txt) que traen BLOQUEARIA:
+  .v2g/informe_02.txt : [BLOQUEARIA] emparejar_indicadores_efecto_contraefecto
+  .v2g/informe_archivar_indicadores_resolver_problemas.txt : [BLOQUEARIA] archivar_indicadores_resolver_problemas
+  .v2g/informe_construir_grafico_escalonado_pronosticos.txt : [BLOQUEARIA] construir_grafico_escalonado_pronosticos
+  .v2g/informe_construir_indicador_tendencia_patron.txt : [BLOQUEARIA] construir_indicador_tendencia_patron
+  .v2g/informe_elegir_fabricar_pedido_pronostico.txt : [BLOQUEARIA] elegir_fabricar_pedido_pronostico
+  .v2g/informe_elegir_indicador_salida_trabajo_administrativo.txt : [BLOQUEARIA] elegir_indicador_salida_trabajo_administrativo
+  .v2g/informe_emparejar_indicadores_efecto_contraefecto.txt : [BLOQUEARIA] emparejar_indicadores_efecto_contraefecto

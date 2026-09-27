@@ -1,0 +1,2 @@
+capitulos con al menos un candidato: 15  ['cap_01', 'cap_02', 'cap_03', 'cap_04', 'cap_05', 'cap_06', 'cap_07', 'cap_10', 'cap_11', 'cap_12', 'cap_13', 'cap_14', 'cap_15', 'cap_16', 'cap_17']
+capitulos sin ningun candidato (dieron cero): 3  ['cap_08', 'cap_09', 'cap_18']

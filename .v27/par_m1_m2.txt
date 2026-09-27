@@ -1,0 +1,72 @@
+
+====================================================================================================
+PAR: subir_vara_calidad_equipo  CONTRA  descubrir_motivacion_sentido_persona
+====================================================================================================
+  === subir_vara_calidad_equipo   [GRAFO]
+      activacion: Cuando alguien de tu equipo lleva tiempo haciendo un trabajo que no es malo pero tampoco es bueno, y te has acostumbrado a que sea asi.
+      entregable: La persona con un proyecto donde pueda brillar por delante, y despues de eso o brillando o ayudada a buscar un sitio donde pueda hacerlo, y en ningun caso etiquetada como mediocre.
+      previos   : []   siguientes: []
+       1. Parte de lo que el texto afirma: no existe el jugador de segunda ni el ser humano mediocre, y todo el mundo puede ser excelente en algo. Y parte tambien de lo que eso NO significa, que el texto se para a decir: no es que cualquiera pueda ser bueno en cualquier cosa.
+       2. Cuenta con por que la gente se queda atascada, que el texto enumera: se quedan tanto tiempo en el trabajo equivocado que cualquier cambio exigiria uno o dos pasos atras, han llegado a depender del prestigio y del dinero del puesto, y notan la presion de su familia para conservarlo.
+       3. Cuenta con las tres razones por las que los jefes mantienen a esa persona, que el texto tambien enumera: no estan seguros de poder encontrar a alguien mejor, formar gente nueva cuesta tiempo y esfuerzo, y les cae bien la persona y les parece injusto animarla a buscar un trabajo que le pegue mas.
+       4. Reconoce eso por lo que el texto dice que es: la peor forma de empatia ruinosa que los jefes practican con regularidad, y una fuente enorme de posibilidad desperdiciada.
+       5. Antes de empujar, conoce a la persona lo bastante como para entender por que no esta prosperando. El texto da la excepcion expresa: si simplemente esta pasando una mala racha, es mejor darle el tiempo y el espacio para recuperarse que pedirle mas de lo que puede dar en ese momento.
+       6. Da a quien lleve mas de dos anios sin hacer un trabajo excepcional la oportunidad de trabajar en un proyecto donde pueda brillar. El texto lo presenta como la politica concreta que la autora impuso en sus equipos, y dice que fue una de las cosas menos populares que hizo.
+       7. Si aun asi el trabajo sigue siendo mediocre, empieza a animar a esa persona a buscar trabajo en otro sitio.
+       8. Cuenta con lo que esa politica cuesta, que el texto no esconde: fue dificil de hacer cumplir, genero mucho estres, y a quien mas le peso fue a los jefes, porque les obligaba a tener muchas conversaciones dificiles y a apretar de verdad.
+       9. Y cuenta con el argumento con el que el texto la sostiene: si alguien no ha demostrado en dos anios que puede hacer un trabajo excepcional, es casi seguro que nunca va a llegar ahi, y ser etiquetado permanentemente como mediocre hace mas dania que ser empujado.
+      10. Entiende tu trabajo como poner y sostener una vara de calidad. El texto avisa de lo que se siente y de lo que cuesta lo contrario: puede parecer duro a corto plazo, pero a la larga lo unico mas cruel es bajar la vara.
+
+  === descubrir_motivacion_sentido_persona   [GRAFO]
+      activacion: Cuando quieres saber que mueve a cada persona de tu equipo, y sobre todo cuando te descubres intentando convencerles de que su trabajo tiene un proposito elevado.
+      entregable: Conocido de cada persona que la motiva, cuales son sus ambiciones a largo plazo y como encajan sus circunstancias actuales, y creadas las condiciones de trabajo para que cada cual saque su propio sentido, sin haberle impuesto ninguno.
+      previos   : []   siguientes: []
+       1. Averigua que motiva a cada persona de tu equipo, que es lo que el texto pone como condicion para poder gestionar el crecimiento.
+       2. Averigua cuales son las ambiciones a largo plazo de cada cual.
+       3. Y entiende como encajan sus circunstancias actuales con esas motivaciones y con sus metas de vida.
+       4. Cuenta con lo que el texto dice que solo entonces se puede hacer: poner a la gente adecuada en los papeles adecuados y asignar los proyectos adecuados a las personas adecuadas.
+       5. No te pases de la raya con la pasion. El texto no discute que la gente trabaje mejor cuando encuentra sentido en lo que hace, pero avisa de que los jefes que leen eso como que su trabajo es proveer el proposito tienden a excederse, y de que insistir en que la gente tenga pasion por su trabajo pone presion innecesaria sobre el jefe y sobre el empleado.
+       6. Acepta que trabajar duro para ganarse un sueldo que sostiene la vida que quieres llevar tiene sentido de sobra. El texto lo ilustra con la respuesta de una escritora sobre por que eligio las empresas en las que trabajo: porque eran las unicas que le ofrecian un trabajo, que le parecio una gran razon entonces y le sigue pareciendo una gran razon hoy.
+       7. Cuenta con que la persona que ya tiene su propia forma de encontrar sentido no la necesita de ti. El texto pone el caso de una joven que habia estudiado filosofia y que corto en seco el eslogan de su jefa diciendo que el trabajo era un poco aburrido, que habia que admitirlo, que no pasaba nada, y que Plutarco puso ladrillos y Spinoza pulio lentes, porque el tedio es parte de la vida. El texto aniade que aquella forma de encontrar sentido era unica de ella y no habria inspirado al equipo entero.
+       8. Ten presente que las motivaciones son muy personales, y que un eslogan inspirador para ti puede no serlo para otros: el texto lo dice de uno famoso, y lo dice de si misma admirando a su autor.
+       9. Haz lo que el texto saca de la historia de los tres albaniles a los que el arquitecto pregunto que hacian, y que contestaron que trabajar, que levantar un muro y que construir una catedral: no inventes tu un sentido de proposito y se lo metas a todos en la cabeza a martillazos.
+      10. Escucha, que es la primera de las tres cosas que el texto dice que hizo aquel arquitecto.
+      11. Reconoce el significado de lo que oigas, que es la segunda.
+      12. Y crea las condiciones de trabajo que permitan a todo el mundo encontrar sentido a su propia manera, que es la tercera.
+      13. Puedes poner el trabajo del equipo en contexto y contar por que a ti te da sentido, que el texto dice que puede ayudar a otros a encontrar el suyo. Pero recuerda lo que aniade justo despues: no va todo de ti.
+
+====================================================================================================
+PAR: retar_superestrellas_equipo_constantemente  CONTRA  cuidar_persona_completa_equipo
+====================================================================================================
+  === retar_superestrellas_equipo_constantemente   [GRAFO]
+      activacion: Cuando alguien de tu equipo hace un trabajo excelente y esta en una fase de aprender rapido y querer mas, y tu tienes en la mano las oportunidades que puede tener.
+      entregable: La persona retada y aprendiendo, con su siguiente puesto pensado, con mentores de fuera, con alguien mas de tu equipo capaz de hacer su trabajo, y sin que tu hayas bloqueado ni una sola de sus salidas.
+      previos   : ['acompaniar_mejores_equipo_socio']   siguientes: []
+       1. Retala y asegurate de que esta aprendiendo constantemente, que es lo que el texto pone como la mejor forma de mantener contenta a esta gente.
+       2. Dale oportunidades nuevas, incluso cuando parezcan mas trabajo del que una sola persona puede hacer.
+       3. Averigua cual va a ser su siguiente puesto.
+       4. Construye con ella una sociedad intelectual.
+       5. Buscale mentores de fuera de tu equipo o de tu organizacion, gente que tenga todavia mas que ofrecerle que tu.
+       6. No te vuelvas demasiado dependiente de ella: pidele que ensenie a otros del equipo a hacer su trabajo, porque no se va a quedar mucho tiempo en el papel que tiene.
+       7. No la aplastes. El texto lo pone asi de directo: reconoce que probablemente algun dia trabajaras para ella, y celebralo.
+       8. No le bloquees las salidas. El texto pone dos salvaguardas concretas de una empresa que lo hacia bien: que el jefe no pueda promover a discrecion, porque la gente se nomina a si misma, un comite lee su carpeta de logros y recomendaciones y decide, el jefe no esta en ese comite y puede apelar pero no decide; y que nadie pueda bloquear un traslado de un equipo a otro.
+       9. Cuenta con lo que esas dos salvaguardas evitan, que el texto nombra: que un jefe recorte la ambicion de sus reportes, que ofrezca promociones para premiar la lealtad personal en vez del buen trabajo, y que vete a quien se quiere mover.
+      10. No confundas querer dirigir con estar en trayectoria empinada. El texto lo dice en las dos direcciones: no querer dirigir no es lo mismo que estar en trayectoria gradual, e igual que querer dirigir no es lo mismo que estar en trayectoria empinada.
+      11. Cuenta con lo que pasa cuando se confunden: las carreras de muchos grandes ingenieros y comerciales han naufragado al promoverlos a jefes, y ocurre porque no hay otro puesto al que promoverlos que reconozca la trayectoria de crecimiento en la que quieren estar.
+      12. Crea una via de carrera de experto que sea mas prestigiosa que la via de jefe y que esquive del todo la gestion, que es lo que el texto cuenta que hizo una empresa para resolverlo, bueno para el crecimiento de esos expertos y bueno tambien para la gente a la que si no habrian acabado dirigiendo.
+      13. Cuenta con el motivo por el que esto importa y no es cosmetico: cuando la gestion es la unica via a una retribucion mas alta, la calidad de la gestion se resiente y la vida de quien trabaja para esos jefes a la fuerza se vuelve miserable.
+
+  === cuidar_persona_completa_equipo   [GRAFO]
+      activacion: Cuando la relacion con una persona a cargo se ha quedado en lo estrictamente profesional y quieres saber que hacer con ella, sin caer en memorizar cumpleanios ni en la charla forzada.
+      entregable: Una relacion en la que las dos partes traen su persona entera al trabajo, con tiempo real de conversacion reservado y un espacio seguro en el que otros pueden hacer lo mismo.
+      previos   : []   siguientes: []
+       1. Cuenta con lo que el texto pone como causa de que la gente no cuide personalmente: el mandato de mantenerlo profesional, que segun el texto niega algo esencial, y la sensacion de ser mejor o mas listo que quien trabaja para ti, que el texto llama sentido de superioridad.
+       2. Reconoce que ser jefe es un puesto de trabajo, no un juicio de valor, que es lo que el texto pone contra ese sentido de superioridad.
+       3. No te quedes en cuidar el trabajo de la persona ni su carrera: el texto dice expresamente que eso no basta y que solo cuidando a la persona completa con tu persona completa se construye la relacion.
+       4. Busca tiempo para conversaciones de verdad, que es el primero de los medios que el texto nombra.
+       5. Conoceos mutuamente a nivel humano, que es el segundo.
+       6. Aprende que es importante para cada persona, que es el tercero.
+       7. Compartid mutuamente que os hace querer levantaros por la maniana e ir a trabajar, y que tiene el efecto contrario, que es el cuarto.
+       8. Da ejemplo tu primero mostrando alguna vulnerabilidad a tus personas a cargo, o simplemente admitiendo cuando tienes un mal dia, y crea un espacio seguro para que los demas hagan lo mismo, que es como el texto describe traer tu persona entera al trabajo.
+       9. No confundas esto con memorizar cumpleanios y nombres de familiares, ni con contar los detalles sordidos de tu vida personal, ni con la charla forzada en actos sociales a los que preferirias no ir: el texto descarta los tres por su nombre.
+      10. Cuenta con el precio que el texto pone al lado: tienes que cuidar profundamente de la gente estando preparado para que te odien a cambio, y si puedes absorber los golpes es mas probable que los tuyos sean buenos jefes cuando les toque. El texto avisa de que puede que nunca te lo devuelvan, y de que es probable que lo pasen adelante.

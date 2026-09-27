@@ -1,0 +1,131 @@
+POBLACION DEL BARRIDO: 330 = 203 del grafo + 127 de las bandejas
+  (bandejas: cuarentena/*/*.json, fuera _insertados y _derivadas, y fuera
+   los 163 cuyas fuentes NO estan todas en FUENTES_CANONICAS.json, que es el
+   mismo criterio que src/informe.py aplica desde el 12 sep 2026)
+
+==============================================================================================
+CANDIDATO desplegar_plan_orden_operaciones_franqueza_radical   [bandeja]
+  maximo cabecera pasos     vecino
+  0.182  0.182    0.053     bandeja   contar_historias_propias_explicar_franqueza_radical
+  0.180  0.180    0.114     bandeja   pedir_critica_primero_crear_seguridad_psicologica
+  0.170  0.170    0.049     bandeja   empezar_cultura_franqueza_radical
+  0.149  0.035    0.149     bandeja   abrazar_incomodidad_arrancar_critica_equipo
+  0.143  0.068    0.143     bandeja   entregar_evaluacion_formal_desempenio_nueve_consejos
+  0.143  0.029    0.143     bandeja   conducir_reuniones_salto_nivel_diez_reglas
+==============================================================================================
+CANDIDATO contar_historias_propias_explicar_franqueza_radical   [bandeja]
+  maximo cabecera pasos     vecino
+  0.195  0.195    0.079     bandeja   contar_cuatro_historias_propias_ver_hueco_intencion
+  0.182  0.182    0.053     bandeja   desplegar_plan_orden_operaciones_franqueza_radical
+  0.130  0.130    0.062     bandeja   empezar_cultura_franqueza_radical
+  0.114  0.114    0.056     bandeja   pedir_critica_primero_crear_seguridad_psicologica
+  0.109  0.070    0.109     bandeja   desplegar_marco_franqueza_radical
+  0.101  0.040    0.101     bandeja   mejorar_consciencia_propia_relacional_dos_practicas
+==============================================================================================
+CANDIDATO mejorar_consciencia_propia_relacional_dos_practicas   [bandeja]
+  maximo cabecera pasos     vecino
+  0.255  0.255    0.121     bandeja   contar_cuatro_historias_propias_ver_hueco_intencion
+  0.170  0.170    0.094     bandeja   practicar_triangulo_critica_tres_papeles
+  0.118  0.118    0.083     bandeja   delimitar_franqueza_radical_cinco_noes
+  0.114  0.033    0.114     bandeja   dar_elogio_disciplina_igual_critica
+  0.104  0.000    0.104     bandeja   dar_guia_util_cuatro_recordatorios
+  0.102  0.017    0.102     bandeja   decidir_momento_despedir_persona
+==============================================================================================
+CANDIDATO contar_cuatro_historias_propias_ver_hueco_intencion   [bandeja]
+  maximo cabecera pasos     vecino
+  0.255  0.255    0.121     bandeja   mejorar_consciencia_propia_relacional_dos_practicas
+  0.195  0.195    0.079     bandeja   contar_historias_propias_explicar_franqueza_radical
+  0.180  0.180    0.093     bandeja   practicar_triangulo_critica_tres_papeles
+  0.128  0.055    0.128     bandeja   medir_guia_propia_pegatinas_marco
+  0.126  0.077    0.126     bandeja   elegir_pregunta_recurrente_pedir_critica
+  0.125  0.125    0.092     bandeja   delimitar_franqueza_radical_cinco_noes
+==============================================================================================
+CANDIDATO practicar_triangulo_critica_tres_papeles   [bandeja]
+  maximo cabecera pasos     vecino
+  0.180  0.180    0.093     bandeja   contar_cuatro_historias_propias_ver_hueco_intencion
+  0.170  0.170    0.094     bandeja   mejorar_consciencia_propia_relacional_dos_practicas
+  0.118  0.118    0.067     bandeja   delimitar_franqueza_radical_cinco_noes
+  0.114  0.053    0.114     bandeja   decidir_momento_despedir_persona
+  0.113  0.113    0.107     bandeja   medir_critica_respuesta_oyente_brujula
+  0.113  0.113    0.074     bandeja   pedir_critica_primero_crear_seguridad_psicologica
+==============================================================================================
+CANDIDATO pedir_critica_primero_crear_seguridad_psicologica   [bandeja]
+  maximo cabecera pasos     vecino
+  0.180  0.180    0.114     bandeja   desplegar_plan_orden_operaciones_franqueza_radical
+  0.180  0.180    0.058     bandeja   empezar_cultura_franqueza_radical
+  0.173  0.173    0.107     bandeja   pedir_critica_equipo_premiarla
+  0.145  0.036    0.145     bandeja   medir_guia_propia_pegatinas_marco
+  0.116  0.116    0.065     grafo     facilitar_gente_diga_verdad
+  0.115  0.115    0.087     bandeja   elogiar_publico_criticar_privado_sus_tres_matices
+==============================================================================================
+CANDIDATO elegir_pregunta_recurrente_pedir_critica   [bandeja]
+  maximo cabecera pasos     vecino
+  0.149  0.057    0.149     bandeja   abrazar_incomodidad_arrancar_critica_equipo
+  0.143  0.118    0.143     bandeja   decidir_momento_despedir_persona
+  0.136  0.073    0.136     bandeja   desplegar_plan_orden_operaciones_franqueza_radical
+  0.126  0.055    0.126     bandeja   medir_guia_propia_pegatinas_marco
+  0.126  0.077    0.126     bandeja   contar_cuatro_historias_propias_ver_hueco_intencion
+  0.125  0.017    0.125     bandeja   conversar_historia_vida_descubrir_motivadores
+==============================================================================================
+CANDIDATO resolver_dudas_frecuentes_pedir_critica   [bandeja]
+  maximo cabecera pasos     vecino
+  0.152  0.152    0.086     bandeja   resolver_dudas_frecuentes_reuniones_salto_nivel
+  0.139  0.139    0.100     bandeja   leer_seniales_fallo_jefe_reunion_solas
+  0.131  0.022    0.131     grafo     cambiar_mentalidad_fija_crecimiento
+  0.126  0.021    0.126     bandeja   decidir_momento_despedir_persona
+  0.118  0.047    0.118     bandeja   integrar_peticion_critica_rutina_existente
+  0.116  0.020    0.116     bandeja   pelear_proliferacion_reuniones_bloquear_ejecucion
+==============================================================================================
+CANDIDATO abrazar_incomodidad_silencio_contar_seis   [bandeja]
+  maximo cabecera pasos     vecino
+  0.118  0.037    0.118     bandeja   elegir_pregunta_recurrente_pedir_critica
+  0.114  0.114    0.073     bandeja   contactar_despedido_mes_despues
+  0.104  0.016    0.104     bandeja   recorrer_rueda_hacer_cosas_equipo
+  0.103  0.059    0.103     bandeja   integrar_peticion_critica_rutina_existente
+  0.102  0.036    0.102     bandeja   manejar_contacto_fisico_regla_platino
+  0.102  0.000    0.102     bandeja   medir_guia_propia_pegatinas_marco
+==============================================================================================
+CANDIDATO escuchar_entender_critica_dominar_defensa   [bandeja]
+  maximo cabecera pasos     vecino
+  0.117  0.035    0.117     bandeja   decidir_momento_despedir_persona
+  0.100  0.074    0.100     bandeja   abrazar_incomodidad_silencio_contar_seis
+  0.100  0.019    0.100     grafo     pedir_opinion_otros_mejorar
+  0.098  0.016    0.098     bandeja   pedir_critica_equipo_premiarla
+  0.095  0.033    0.095     bandeja   dar_elogio_disciplina_igual_critica
+  0.092  0.034    0.092     bandeja   revisar_critica_mujer_agresiva_cuatro_tacticas
+==============================================================================================
+CANDIDATO premiar_franqueza_hacer_escucha_tangible   [bandeja]
+  maximo cabecera pasos     vecino
+  0.122  0.071    0.122     bandeja   abrazar_incomodidad_arrancar_critica_equipo
+  0.120  0.034    0.120     bandeja   decidir_momento_despedir_persona
+  0.117  0.071    0.117     bandeja   contar_cuatro_historias_propias_ver_hueco_intencion
+  0.117  0.053    0.117     bandeja   elegir_pregunta_recurrente_pedir_critica
+  0.114  0.071    0.114     bandeja   medir_critica_respuesta_oyente_brujula
+  0.113  0.074    0.113     bandeja   integrar_peticion_critica_rutina_existente
+==============================================================================================
+CANDIDATO integrar_peticion_critica_rutina_existente   [bandeja]
+  maximo cabecera pasos     vecino
+  0.125  0.125    0.107     bandeja   elegir_pregunta_recurrente_pedir_critica
+  0.122  0.059    0.122     bandeja   abrazar_incomodidad_arrancar_critica_equipo
+  0.118  0.047    0.118     bandeja   resolver_dudas_frecuentes_pedir_critica
+  0.114  0.080    0.114     bandeja   pedir_critica_primero_crear_seguridad_psicologica
+  0.113  0.074    0.113     bandeja   premiar_franqueza_hacer_escucha_tangible
+  0.108  0.055    0.108     bandeja   dar_elogio_disciplina_igual_critica
+==============================================================================================
+CANDIDATO dar_elogio_disciplina_igual_critica   [bandeja]
+  maximo cabecera pasos     vecino
+  0.136  0.017    0.136     bandeja   decidir_momento_despedir_persona
+  0.135  0.135    0.081     bandeja   elogiar_trabajo_especifico_contexto
+  0.133  0.034    0.133     bandeja   medir_critica_respuesta_oyente_brujula
+  0.128  0.017    0.128     bandeja   abrazar_incomodidad_arrancar_critica_equipo
+  0.121  0.016    0.121     bandeja   montar_reuniones_solas_mentalidad_frecuencia
+  0.118  0.016    0.118     bandeja   recorrer_rueda_conscientemente_cultura_equipo
+==============================================================================================
+CANDIDATO medir_critica_respuesta_oyente_brujula   [bandeja]
+  maximo cabecera pasos     vecino
+  0.144  0.018    0.144     bandeja   abrazar_incomodidad_arrancar_critica_equipo
+  0.133  0.018    0.133     bandeja   decidir_momento_despedir_persona
+  0.133  0.034    0.133     bandeja   dar_elogio_disciplina_igual_critica
+  0.130  0.054    0.130     bandeja   dominar_reacciones_emociones_ajenas
+  0.125  0.125    0.088     bandeja   delimitar_franqueza_radical_cinco_noes
+  0.124  0.035    0.124     bandeja   desplegar_plan_orden_operaciones_franqueza_radical

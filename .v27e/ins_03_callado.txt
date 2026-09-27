@@ -1,0 +1,7 @@
+ADUANA DE INSERCION, candidato 'escuchar_callado_equipo_tranquilizar_incomodo'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (234 del grafo mas 114 que esperan en bandejas)
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 235
+  censos escritos: atribuciones, denominaciones

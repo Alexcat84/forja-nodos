@@ -1,0 +1,10 @@
+DECLARACION DE ARISTA POR LECTURA (D.37)
+  madre: fijar_proceso_trabajo_equipo
+  hijo : fijar_resultado_excelente_reunion
+  paso citado de la madre: 7
+    Aprende a dominar los procesos que el libro nombra como importantes para un directivo: dirigir reuniones eficaces, blindarte contra los errores del pa
+  señales del par: familia_id 0.143, paso_contra_nodo 0.432, similitud_texto 0.259
+    NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: fijar_proceso_trabajo_equipo > fijar_resultado_excelente_reunion
+  razon en bitacora/VEREDICTOS.jsonl

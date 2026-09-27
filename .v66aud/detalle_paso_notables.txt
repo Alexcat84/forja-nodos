@@ -1,0 +1,7 @@
+agrupar_tareas_semejantes_aprovechar_preparacion > buscar_regularidad_bloques_iguales_trabajo_mando | paso 1 del candidato contra paso 1 de buscar_regularidad_bloques_iguales_trabajo_mando
+elegir_momento_actividad_palanca_maxima > subir_productividad_gerencial_tres_vias | paso 1 del candidato contra paso 3 de subir_productividad_gerencial_tres_vias
+transmitir_objetivos_prioridades_preferencias > reunir_informacion_gerencial_vias_variadas | paso 1 del candidato contra paso 4 de reunir_informacion_gerencial_vias_variadas
+supervisar_tarea_delegada_etapa_menor_valor > detectar_arreglar_fallo_etapa_menor_valor | paso 1 del candidato contra paso 2 de detectar_arreglar_fallo_etapa_menor_valor
+sostener_contacto_oferta_aceptacion | paso 4 del candidato contra paso 3 de sostener_contacto_oferta_aceptacion
+agendar_cuidados_propios_cumplirlos | paso 4 del candidato contra paso 4 de agendar_cuidados_propios_cumplirlos
+nombrar_delegados_amigos_casa | paso 4 del candidato contra paso 4 de nombrar_delegados_amigos_casa

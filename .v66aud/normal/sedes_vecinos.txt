@@ -1,0 +1,2 @@
+ficheros: 22 | filas de vecino: 99 | por sede: {'grafo': 4, 'bandeja': 95}
+vecinos de bandeja por libro: {'grove_high_output': 95}

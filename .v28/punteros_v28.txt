@@ -1,0 +1,5 @@
+$ punteros de linea citados en el resumen_teorico de los CINCO, extraidos con regex y comprobados con sed
+   pasos escritos en los cinco        : 64
+   punteros de linea distintos citados: 29
+   L91, L101, L105, L107, L109, L113, L115, L117, L119, L125, L129, L131, L133, L135, L137, L139, L145, L147, L153, L197, L199, L203, L205, L207, L209, L211, L225, L227, L229
+   punteros que caen en linea VACIA o fuera del fichero: 0

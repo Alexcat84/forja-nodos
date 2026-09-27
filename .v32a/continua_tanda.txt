@@ -1,0 +1,20 @@
+  linea 376: bloquear_tiempo_pensar_calendario vs cuidarse_agotamiento_centro_rueda
+      paso_citado=7  razon=862 caracteres  OK
+  linea 378: montar_reuniones_solas_mentalidad_frecuencia vs decidir_quien_comunica_cada_cuanto
+      paso_citado=6  razon=817 caracteres  OK
+  linea 380: nutrir_ideas_nuevas_reunion_solas vs crear_espacio_seguro_madurar_ideas_nuevas
+      paso_citado=None  razon=924 caracteres  OK
+  linea 381: conducir_reunion_equipo_agenda_tres_bloques vs decidir_quien_comunica_cada_cuanto
+      paso_citado=6  razon=690 caracteres  OK
+  linea 382: escribir_apuntes_sala_estudio_equipo vs conducir_reunion_equipo_agenda_tres_bloques
+      paso_citado=6  razon=1027 caracteres  OK
+  linea 384: montar_reunion_gran_debate vs decidir_quien_comunica_cada_cuanto
+      paso_citado=6  razon=1429 caracteres  OK
+  linea 388: montar_reunion_gran_decision vs decidir_quien_comunica_cada_cuanto
+      paso_citado=6  razon=706 caracteres  OK
+  linea 389: montar_reunion_general_presentaciones_preguntas vs decidir_quien_comunica_cada_cuanto
+      paso_citado=6  razon=850 caracteres  OK
+  linea 390: pelear_proliferacion_reuniones_bloquear_ejecucion vs reservar_calendario_tiempo_ejecutar
+      paso_citado=4  razon=1085 caracteres  OK
+  linea 391: bloquear_tiempo_pensar_calendario vs decidir_quien_comunica_cada_cuanto
+      paso_citado=6  razon=1067 caracteres  OK

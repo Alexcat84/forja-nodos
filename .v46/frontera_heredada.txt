@@ -1,0 +1,7 @@
+$ grep -n "5828" docs/loop/archivo/grove_high_output/REPORTE.md
+375:| 1 | la frontera de `cap_03`, cerrada contra el cuerpo, con el techo por delante | **CERRADA** en `AA.1`: `5828` contra `5828`, cero lineas sin cubrir, cero solapes, `15` nodos en el techo justo |
+397:      suma de las filas                      : 5828 palabras
+398:      cuerpo medido aparte                   : 5828 palabras
+402:**CIERRA AL DIGITO Y SE CRUZA CON `wc -w`:** `5828` de cuerpo mas `27` de cabecera son los `5855`
+438:| | **5828** | **15** | **el cuerpo entero de cap_03, cero lineas sin cubrir y cero solapes** | |
+824:| 1 | la frontera de `cap_03` | **CERRADA** en `AA.1`: `5828` contra `5828`, cero lineas sin cubrir, cero solapes, `15` nodos en el techo justo |

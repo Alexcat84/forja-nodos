@@ -1,0 +1,8 @@
+$ python forja.py herencia --comprobar
+APERTURA CIEGA COMPLETA: el acta anterior va leida por su huella y los 3 heredados van declarados.
+
+$ python forja.py guiones docs/loop/APERTURA_CIEGA.md
+BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+
+$ wc -l -w docs/loop/APERTURA_CIEGA.md
+  809  8143 docs/loop/APERTURA_CIEGA.md

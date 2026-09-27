@@ -1,0 +1,4 @@
+informe 1: 2026-09-21 04:51:07 -> 2026-09-21 04:59:34 = 507 s | el reporte dice 507 s | IGUAL
+   mtime de .v61ext/informe_1_priorizar.txt: 2026-09-21 04:59:34.432384   (corrobora la marca de fin)
+informe 2: 2026-09-21 05:00:29 -> 2026-09-21 05:11:37 = 668 s | el reporte dice 667 s | DISCREPA en 1
+   mtime de .v61ext/informe_2_desarrollar.txt: 2026-09-21 05:11:37.163976   (corrobora la marca de fin)

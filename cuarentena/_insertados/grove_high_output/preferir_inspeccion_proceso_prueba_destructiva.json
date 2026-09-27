@@ -1,0 +1,49 @@
+{
+  "id": "preferir_inspeccion_proceso_prueba_destructiva",
+  "titulo": "Preferir la inspeccion dentro del proceso a la prueba que destruye producto",
+  "dominio": "produccion",
+  "estado": "vivo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "atribuciones": [],
+  "fuentes": [
+    {
+      "clave": "grove_high_output",
+      "fecha": "2026-09-16"
+    }
+  ],
+  "denominaciones": {
+    "nombre_largo": "La averia silenciosa de la maquina continua: lo que cuesta, la prueba funcional que tira producto y la inspeccion en proceso que no",
+    "sigla": "",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "in-process inspection"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "functional test"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "work-in-process"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "out of specification"
+      }
+    ]
+  },
+  "condiciones_activacion": "Cuando tu operacion es continua y un parametro suyo puede salirse de especificacion sin que nadie lo note hasta que sale el producto.",
+  "entregable_esperado": "El coste de la averia silenciosa contado, y la vigilancia puesta dentro del proceso en vez de sobre el producto acabado, con su aviso automatico cuando el parametro se mueve.",
+  "pasos_accionables": [
+    "Cuenta lo que te costaria una averia silenciosa: todo el trabajo en curso, y ademas todo lo que la maquina saco desde que el parametro se salio de especificacion hasta que descubriste el fallo.",
+    "Cuenta tambien lo que se desperdicia en los pasos de al lado que dependen de ese, como se pierde todo el pan tostado porque no hay huevos que servir con el.",
+    "Considera la prueba funcional: de vez en cuando saca una unidad tal como sale de la maquina y comprueba su calidad, sabiendo que la unidad probada hay que tirarla.",
+    "Considera la inspeccion dentro del proceso, que puede tomar muchas formas: mide el parametro en el propio proceso, como meter un termometro en el agua para poder comprobar la temperatura facilmente y a menudo.",
+    "Automatiza esa lectura para no tener que pagar a alguien por leerla: conecta un aparato que haga sonar un aviso en cuanto el parametro varie un grado o dos.",
+    "Y elige, siempre que se pueda, la prueba dentro del proceso antes que la que destruye producto."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/grove_high_output/cap_02.md, unidad Cap. 1, titulo textual The Basics of Production: Delivering a Breakfast (or a College Graduate, or a Compiler, or a Convicted Criminal...). Sale de la PIEZA P9 de la frontera publicada en la vuelta 1 del frente, L67, 202 palabras. Es un tramo de UNA sola linea del recorte, y los seis pasos salen todos de ella. POR QUE ES PROCEDIMIENTO: el inventario es de MEDIOS y de OBJETOS DE TRABAJO, nombrados uno a uno (performing a functional test is one way... you open an egg as it comes out of the machine and check its quality. But you will have to throw away the egg tested. A second way involves in-process inspection... insert a thermometer into the water... connect an electronic gadget to it that would set off bells anytime the temperature varied by a degree or two), y el criterio final es del libro y es imperativo suyo: whenever possible, you should choose in-process tests over those that destroy product. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 6 pasos, 6 TRANSCRIPCION, 0 PUENTE. LO QUE NO ESCRIBO Y POR ESO NO ESTA AQUI: NO escribo cada cuanto se saca la unidad de la prueba funcional, porque el libro dice from time to time y el periodo lo pondria yo, que es la segunda especie de puente del lote 1; NO escribo el umbral del aviso mas alla del que el libro da (un grado o dos); NO escribo quien atiende el aviso, que seria puente de la especie responsable. DISCUTIBLE QUE MARCO ANTES DE SABER SI ACIERTO: este nodo y detectar_arreglar_fallo_etapa_menor_valor son vecinos de tema, porque los dos hablan de donde poner la comprobacion. Los separo porque este elige el TIPO de prueba (la que destruye producto contra la que no) y aquel elige la ETAPA (la de menor valor posible), y porque este vive en una operacion continua y aquel vale para cualquier flujo. Si el par se lee como gemelo, cae DENTRO de mi marcado. CORRECCION DECLARADA de la vuelta 44 de la linea serial (deuda d004, cita grove PARA_ALEXIS 5.3.4, resuelta por D.53 del 17 sep 2026), y se escribe aqui para que la vuelta que inserte este candidato no dependa de que alguien se acuerde, que es la perdida que D.29 vino a cerrar. LA ACTA 32 seccion 3.3 del frente grove adjudico CONTINUA este par por la lectura vieja de que un par con arista declarada no puede ser SANO. D.53 decide lo contrario con su prueba por reduccion: UN SANO PUEDE LLEVAR ARISTA DECLARADA, Y DECLARARLA NO LO CONVIERTE EN CONTINUA, porque si lo hiciera D.37 seria imposible y toda cabeza de serie devoraria sus partes. RE ADJUDICADO: el veredicto de preferir_inspeccion_proceso_prueba_destructiva con clasificar_trabajo_proceso_montaje_prueba vuelve a SANO, que es lo que esta ficha publico, y la caida que dependia de la lectura vieja se retira citando D.53. LA ARISTA SIGUE EN PIE Y SE CABLEA AL INSERTAR: madre clasificar_trabajo_proceso_montaje_prueba paso 3, hijo preferir_inspeccion_proceso_prueba_destructiva. No se borra nada: la clase CONTINUA de la ACTA 32 queda escrita donde esta."
+}

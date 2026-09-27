@@ -1,0 +1,5 @@
+decidir_momento_despedir_persona               grafo=1 bandeja=0
+despedir_persona_respeto_franqueza             grafo=1 bandeja=0
+aprender_resultados_vencer_dos_presiones       grafo=1 bandeja=0
+cambiar_posicion_hechos_explicar_cambio        grafo=1 bandeja=0
+cuidarse_agotamiento_centro_rueda              grafo=0 bandeja=1

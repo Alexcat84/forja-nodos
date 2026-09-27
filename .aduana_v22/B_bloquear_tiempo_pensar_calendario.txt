@@ -1,0 +1,39 @@
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 308   (203 del grafo mas 105 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 0
+  BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+  vecinos levantados en total      : 4
+  por candidato bloqueado          : menor 4, mediana 4, mayor 4
+  que señal levanta cada vecindad  : familia_id 1, paso_contra_nodo 2, similitud_texto 1
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] bloquear_tiempo_pensar_calendario   (bloquear_tiempo_pensar_calendario.json)
+    vecino calibrar_ascensos_evitar_politica  [levantada por: paso_contra_nodo]
+      similitud_texto 0.223 | familia_id 0.000 | paso_contra_nodo 0.911
+      paso 6 del candidato contra paso 14 de calibrar_ascensos_evitar_politica
+    vecino proteger_tiempo_equipo_jefe  [levantada por: paso_contra_nodo]
+      similitud_texto 0.228 | familia_id 0.143 | paso_contra_nodo 0.604
+      paso 6 del candidato contra paso 7 de proteger_tiempo_equipo_jefe
+    vecino reservar_calendario_tiempo_ejecutar  [levantada por: familia_id]
+      similitud_texto 0.271 | familia_id 0.333 | paso_contra_nodo 0.458
+      paso 3 del candidato contra paso 4 de reservar_calendario_tiempo_ejecutar
+    vecino exigir_critica_jefe_reticente  [levantada por: similitud_texto]
+      similitud_texto 0.364 | familia_id 0.000 | paso_contra_nodo 0.422
+      paso 3 del candidato contra paso 4 de exigir_critica_jefe_reticente
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.

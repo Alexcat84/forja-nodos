@@ -1,0 +1,23 @@
+cap_01     arranque del cuerpo L8    lineas del fichero 71    palabras del cuerpo 1402
+cap_02     arranque del cuerpo L8    lineas del fichero 99    palabras del cuerpo 1212
+cap_03     arranque del cuerpo L8    lineas del fichero 233   palabras del cuerpo 2202
+cap_04     arranque del cuerpo L8    lineas del fichero 297   palabras del cuerpo 3713
+cap_05     arranque del cuerpo L8    lineas del fichero 149   palabras del cuerpo 2400
+cap_06     arranque del cuerpo L8    lineas del fichero 221   palabras del cuerpo 1980
+cap_07     arranque del cuerpo L8    lineas del fichero 329   palabras del cuerpo 4284
+cap_08     arranque del cuerpo L8    lineas del fichero 179   palabras del cuerpo 2183
+cap_09     arranque del cuerpo L8    lineas del fichero 233   palabras del cuerpo 2845
+cap_10     arranque del cuerpo L8    lineas del fichero 145   palabras del cuerpo 1411
+cap_11     arranque del cuerpo L8    lineas del fichero 329   palabras del cuerpo 4360
+cap_12     arranque del cuerpo L8    lineas del fichero 293   palabras del cuerpo 4206
+cap_13     arranque del cuerpo L8    lineas del fichero 59    palabras del cuerpo 364
+cap_14     arranque del cuerpo L8    lineas del fichero 217   palabras del cuerpo 3695
+cap_15     arranque del cuerpo L8    lineas del fichero 279   palabras del cuerpo 4685
+cap_16     arranque del cuerpo L8    lineas del fichero 489   palabras del cuerpo 4835
+cap_17     arranque del cuerpo L8    lineas del fichero 221   palabras del cuerpo 2448
+cap_18     arranque del cuerpo L8    lineas del fichero 413   palabras del cuerpo 5396
+cap_19     arranque del cuerpo L8    lineas del fichero 441   palabras del cuerpo 4431
+cap_20     arranque del cuerpo L8    lineas del fichero 79    palabras del cuerpo 1841
+cap_21     arranque del cuerpo L8    lineas del fichero 149   palabras del cuerpo 1851
+cap_22     arranque del cuerpo L8    lineas del fichero 129   palabras del cuerpo 904
+TOTAL de las 22 unidades: 62648 palabras de cuerpo

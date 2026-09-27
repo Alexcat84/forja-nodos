@@ -1,0 +1,85 @@
+{
+ "id": "informar_cierre_jornada_conservar_propiedad_trabajo",
+ "grafo": 459,
+ "bandejas": 20,
+ "vecinos": [
+  {
+   "id": "seguir_frustrado_preguntar_implantacion_ideas",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.412,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.391
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 1 de seguir_frustrado_preguntar_implantacion_ideas"
+  },
+  {
+   "id": "operar_modelo_gente_destreza_minima",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.364,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.399
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 2 de operar_modelo_gente_destreza_minima"
+  },
+  {
+   "id": "cuantificar_impacto_innovacion_6_pasos",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.392,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.294
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 2 del candidato contra paso 2 de cuantificar_impacto_innovacion_6_pasos"
+  },
+  {
+   "id": "dictar_ritmo_crecimiento_preguntas_escritas",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.361,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.39
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 2 del candidato contra paso 7 de dictar_ritmo_crecimiento_preguntas_escritas"
+  },
+  {
+   "id": "interrogar_negocio_cinco_preguntas",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.36,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.39
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 2 del candidato contra paso 9 de interrogar_negocio_cinco_preguntas"
+  },
+  {
+   "id": "usar_banco_nueve_preguntas_entrevista",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.351,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.329
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 8 de usar_banco_nueve_preguntas_entrevista"
+  }
+ ]
+}

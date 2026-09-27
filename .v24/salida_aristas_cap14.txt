@@ -1,0 +1,19 @@
+| # | madre | hijo | `--paso` | especie | el paso de la cabeza, impreso del fichero | pasos del hijo |
+|---:|---|---|---:|---|---|---:|
+| 58 | `recorrer_trece_elementos_proceso_evaluacion_formal` | `decidir_poner_nota_comunicar_proposito_limites` | **2** | `D.37` | `Uno, decide si pones nota o no.` | **8** |
+| 59 | `recorrer_trece_elementos_proceso_evaluacion_formal` | `elegir_categorias_nota_palabras_propias_empresa` | **3** | `D.37` | `Dos, decide las categorias de la nota.` | **15** |
+| 60 | `recorrer_trece_elementos_proceso_evaluacion_formal` | `escribir_escaleras_puesto_evitar_dos_extremos` | **4** | `D.37` | `Tres, decide las escaleras de puesto.` | **7** |
+| 61 | `recorrer_trece_elementos_proceso_evaluacion_formal` | `fijar_cuatro_notas_calcular_nota_global` | **5** | `D.37` | `Cuatro, decide cuantas notas.` | **12** |
+| 62 | `recorrer_trece_elementos_proceso_evaluacion_formal` | `elegir_palabras_nota_definirlas_empresa_entera` | **6** | `D.37` | `Cinco, cuida el lenguaje, porque el texto dice que las palabras importan.` | **10** |
+| 63 | `recorrer_trece_elementos_proceso_evaluacion_formal` | `aplicar_consecuencias_nota_apoyar_fuerzas_persona` | **7** | `D.37` | `Seis, decide las consecuencias de la nota.` | **16** |
+| 64 | `recorrer_trece_elementos_proceso_evaluacion_formal` | `repartir_notas_publicar_reparto_esperado` | **8** | `D.37` | `Siete, decide el reparto de notas.` | **9** |
+| 65 | `recorrer_trece_elementos_proceso_evaluacion_formal` | `presionar_curva_notas_evitar_forzarla` | **9** | `D.37` | `Ocho, decide si fuerzas la curva o no.` | **11** |
+| 66 | `recorrer_trece_elementos_proceso_evaluacion_formal` | `calibrar_notas_reunion_jefes_pares` | **10** | `D.37` | `Nueve, decide la calibracion de las notas.` | **15** |
+| 67 | `recorrer_trece_elementos_proceso_evaluacion_formal` | `evaluar_desempenio_dos_veces_anio` | **11** | `D.37` | `Diez, decide la frecuencia.` | **11** |
+| 68 | `recorrer_trece_elementos_proceso_evaluacion_formal` | `montar_evaluacion_360_grados_ligera_pares` | **12** | `D.37` | `Once, decide si haces un proceso de trescientos sesenta grados o te apoyas en el juicio unilateral del jefe.` | **10** |
+| 69 | `recorrer_trece_elementos_proceso_evaluacion_formal` | `hacer_critica_pares_transparente_ensenar_escribirla` | **13** | `D.37` | `Doce, decide si es transparente o confidencial.` | **11** |
+| 70 | `recorrer_trece_elementos_proceso_evaluacion_formal` | `mantener_proceso_evaluacion_ligero_vigilar_crecimiento` | **14** | `D.37` | `Trece, decide si es ligero o pesado.` | **13** |
+
+| # | madre | hijo | `--paso` | especie | el paso de la madre, impreso del fichero | pasos del hijo |
+|---:|---|---|---:|---|---|---:|
+| 71 | `montar_equipo_gestion_desempenio_revisar_sistema` | `recorrer_trece_elementos_proceso_evaluacion_formal` | **5** | `D.29` | `Repasa los elementos clave de tu evaluacion de desempenio actual, que el texto despliega uno a uno mas abajo.` | **14** |

@@ -1,0 +1,15 @@
+=== fichas por sede ===
+grafo (dataset/nodos.jsonl): 346
+cuarentena/**/*.json TODAS: 553
+cuarentena sin _insertados ni _derivadas: 207
+
+=== reparto por bandeja ===
+    163 cuarentena/ensayo_referencia_163
+    142 cuarentena/_insertados/scott_radical_candor
+    136 cuarentena/_insertados/zhuo_manager
+     59 cuarentena/_insertados/smart_who
+     41 cuarentena/grove_high_output
+      6 cuarentena/_insertados/onu_consumidor
+      3 cuarentena/marquet_turn_the_ship
+      2 cuarentena/_derivadas
+      1 cuarentena/_insertados/grove_high_output

@@ -1,0 +1,8 @@
+caidas 0 de 8  ->  tasa 0.0000
+banda exacta (Clopper-Pearson) al 95 por ciento: [0.0000 , 0.3694]
+es decir: entre 0 y 36.9 por ciento
+
+cap_14 con 1 puente de 174 pasos: 0.57 por ciento
+lote 4 con 36 de 1688:            2.13 por ciento
+hueco de SEIS filas: candidatos 57, pasos 539
+ocurrencias del hueco (1+6+20+33+20+17) = 97

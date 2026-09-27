@@ -1,0 +1,46 @@
+{
+  "condiciones_activacion": "Cuando has pedido critica a alguien y se hace el silencio, y te tienta rellenarlo o dejar a la otra persona salir del apuro.",
+  "denominaciones": {
+    "nombre_largo": "Abraza la incomodidad, puesto en acto: el silencio que sigue a tu pregunta y la practica de contar hasta seis",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "EMBRACE THE DISCOMFORT"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "Practice: Count to six in your head"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "entregable_esperado": "El silencio aguantado hasta el final, con la respuesta del otro salida de el, o con el compromiso escrito de volver a preguntarle.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-13"
+    }
+  ],
+  "id": "abrazar_incomodidad_silencio_contar_seis",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Parte de lo que le haces al otro cuando le pides critica, que es lo que el texto pone primero: le metes en una situacion incomoda.",
+    "No seas ruinosamente empatico y no le dejes salir del apuro.",
+    "Dale tiempo y espacio para formular su respuesta.",
+    "Cuenta con que a menudo la gente se queda callada despues de que preguntes, y resiste la tentacion de rellenar el silencio.",
+    "Aguantalo aunque sea incomodo para ti y para el otro, porque el texto dice que tu trabajo es soportarlo e incluso abrazarlo.",
+    "Cuenta con lo que el texto ha medido en sus talleres: parece facil, y hace falta una disciplina enorme.",
+    "Practicalo asi: hazle tu pregunta a un companiero amistoso y cuenta hasta seis.",
+    "No te permitas decir nada, por incomodo que te sientas o por incomodo que parezca el otro.",
+    "Cuenta con lo que esa cuenta te da: buena parte de poner la franqueza radical en practica es ser capaz de atravesar la incomodidad social, y este truco te saca la cabeza de la incomodidad.",
+    "Fijate en cuantos segundos aguanta tu companiero el silencio antes de saltar a decir algo, porque el texto dice que la mayoria no aguanta hasta seis y dice algo. Puede que no sea profundo, pero es un principio.",
+    "Y si aun asi se quedan callados, diles que les vas a dar mas tiempo pero que vas a volver a ellos porque de verdad quieres su critica.",
+    "Y no te olvides de volver a preguntar: no les dejes salir del apuro, ni te dejes salir a ti."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_13.md, unidad Afterword, titulo textual Afterword to the Revised Edition: Rolling Out Radical Candor. Sale de las lineas 187 a 198, bajo el rotulo EMBRACE THE DISCOMFORT de la linea 187. ES LA PIEZA 7 DE LA FRONTERA DE cap_13, y es el segundo de los cuatro elementos de pedir critica que la linea 113 enumera. POR QUE ES PROCEDIMIENTO Y NO UNA POSTURA, con D.27 delante: el propio libro dice en la linea 189 que muchos participantes le han dicho que no sabian como poner en accion el consejo de abrazar la incomodidad, y entonces pone su INVENTARIO DE ETAPAS (no le dejes salir, dale tiempo, resiste el silencio, cuenta hasta seis, vuelve a preguntar) y un ejercicio con su cuenta escrita. Deja fichero: la respuesta salida del silencio, o el compromiso de volver. EL SEIS DEL ID ES DEL LIBRO Y NO MIO: la linea 193 escribe Count to six in your head y la 195 lo repite. SU ARISTA CON pedir_critica_primero_crear_seguridad_psicologica va declarada en el reporte de la vuelta 23 con su paso 17 citado, que es el que enumera los cuatro elementos. SU PAR CON abrazar_incomodidad_arrancar_critica_equipo (cap_09), leido antes de que lo levante ninguna senial y porque su id se parece tanto que seria negligente no mirarlo: aquel entrega la primera critica arrancada a un equipo que no critica; este entrega UN SILENCIO CONCRETO aguantado con una cuenta hasta seis, que aquel no tiene. Comparten el acto de no dejar salir del apuro y los dos tienen procedimiento fuera de el. VA MARCADO COMO DISCUTIBLE EN EL REPORTE. RELECTURA DE FIDELIDAD D.30 EN EL ACTO, paso a paso contra su linea: 12 pasos, 12 TRANSCRIPCION, 0 PUENTE. P1 a P6 de la linea 191; P7 a P10 de la linea 195; P11 y P12 de la linea 197. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: cuanto se espera antes de volver a preguntar, y cuantas veces se insiste. El libro pone la cuenta hasta seis y no pone ninguna de las dos.",
+  "titulo": "Abrazar la incomodidad del silencio despues de pedir critica, aguantandolo mientras cuentas hasta seis en tu cabeza"
+}

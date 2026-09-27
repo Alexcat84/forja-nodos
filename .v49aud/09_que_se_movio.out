@@ -1,0 +1,15 @@
+$ git diff --stat HEAD~1 HEAD -- dataset/ bitacora/ config/ censos/ esquema/ src/ scripts/ tests/ docs/BANCO_DE_REGLAS.md docs/MANUAL_SISTEMA_DE_CONOCIMIENTO.md
+(sin salida = ninguna de esas sedes se movio)
+
+$ git diff --stat HEAD~1 HEAD -- cuarentena/
+ .../dimensionar_numero_subordinados_medio_dia_semanal.json              | 2 +-
+ .../grove_high_output/reunir_informacion_gerencial_vias_variadas.json   | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+$ git diff --numstat HEAD~1 HEAD | grep -v "^.*\.v49/" | head -20
+1	1	cuarentena/grove_high_output/dimensionar_numero_subordinados_medio_dia_semanal.json
+1	1	cuarentena/grove_high_output/reunir_informacion_gerencial_vias_variadas.json
+2	0	docs/loop/DEUDA.jsonl
+995	1	docs/loop/REPORTE.md
+5	4	docs/loop/TABLA_DE_CIERRE.txt
+10	0	docs/loop/archivo/tablas_de_cierre/TABLA_DE_CIERRE_v48.txt

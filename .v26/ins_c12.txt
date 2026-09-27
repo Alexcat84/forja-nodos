@@ -1,0 +1,19 @@
+ADUANA DE INSERCION, candidato 'cambiar_posicion_hechos_explicar_cambio'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 233 nodo(s) del dataset
+
+VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino abrir_debate_humor_explicar_proposito  [Abrir un debate con humor y explicando para que sirve, porque el tono con que se lanza marca el de todo lo que viene detras]
+    levantada por: similitud_texto
+    similitud_texto    0.377 (umbral 0.35)
+    familia_id         0.111 (umbral 0.30)
+    paso_contra_nodo   0.475 (umbral 0.60)
+    paso 6 del candidato contra paso 6 de abrir_debate_humor_explicar_proposito
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 234
+  censos escritos: atribuciones, denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 1

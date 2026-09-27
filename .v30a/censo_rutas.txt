@@ -1,0 +1,28 @@
+$ python scripts/censar_rutas.py
+============================================================================
+CENSO DE RUTAS (D.42): la unidad de la ruta es la celda
+============================================================================
+rutas publicadas y censadas : 96
+  pasan                     : 94
+  CAEN                      : 2
+      PATRON                           10
+      VACIA A PROPOSITO                3
+      con contenido                    78
+      vacia por protocolo              3
+
+CAE  docs\loop\ACTA_AUDITOR.md linea 2583, celda 1
+     ruta : docs/loop/loop.log
+     NO esta en el arbol, y la celda no lleva la marca 'VACIA A PROPOSITO: <motivo>'. Una ruta publicada como sede de una cifra que no prueba nada es caida de cifra (cosecha 7.B)
+     celda: `docs/loop/loop.log` linea de arranque
+
+CAE  docs\loop\ACTA_AUDITOR.md linea 14622, celda 1
+     ruta : docs/loop/ultimo_apertura.json
+     esta y esta VACIA, y la celda no lleva la marca 'VACIA A PROPOSITO: <motivo>'. Una ruta publicada como sede de una cifra que no prueba nada es caida de cifra (cosecha 7.B)
+     celda: `docs/loop/ultimo_apertura.json`
+
+CENSO EN ROJO: 2 ruta(s) publicadas como sede de una cifra no sostienen nada.
+Se arregla de una de estas tres formas, y solo de estas tres:
+  1. regenerando el fichero, que es lo que casi siempre toca;
+  2. escribiendo en la MISMA celda 'VACIA A PROPOSITO: <motivo>';
+  3. si era un conjunto, escribiendola como 'PATRON: <glob>'.
+EXIT=1

@@ -1,0 +1,22 @@
+===== simplificar_trabajo_reducir_numero_pasos | grafo
+  titulo: Simplificar el trabajo dibujando el flujo entero, contando sus pasos y tirando los que no aguanten la pregunta
+  fuente: ['grove_high_output'] | previos: [] | siguientes: []
+  cond: Cuando quieres subir la productividad de un trabajo, de fabrica o administrativo, y la automatizacion no es la unica via ni siempre la que tienes a mano.
+  P1. Dibuja primero un diagrama de flujo del proceso de produccion tal y como existe hoy.
+  P2. Ensena en ese diagrama todos y cada uno de los pasos, y no omitas ninguno para que el papel quede mas presentable.
+  P3. Cuenta, en segundo lugar, el numero de pasos del diagrama, para saber con cuantos has empezado.
+  P4. Fija, en tercer lugar, una meta aproximada de reduccion del numero de pasos.
+  P5. Para ejecutar la simplificacion de verdad, pregunta por que se hace cada paso.
+  P6. Cuenta con encontrar muchos pasos que estan en tu flujo de trabajo sin ninguna buena razon, puestos ahi por tradicion o porque un procedimiento formal lo ordena, sin que nada practico exija incluirlos.
+  P7. Cuestiona cada paso de forma critica, sea cual sea la razon que te den para el, y tira los que el sentido comun diga que puedes ahorrarte.
+===== dimensionar_plantilla_administrativa_pronostico | grafo
+  titulo: Dimensionar la plantilla de una unidad administrativa con el pronostico de su carga de trabajo
+  fuente: ['grove_high_output'] | previos: ['construir_indicador_tendencia_patron', 'elegir_indicador_salida_trabajo_administrativo'] | siguientes: []
+  cond: Cuando diriges una unidad administrativa cuya carga sube y baja, y su plantilla se ha venido fijando siempre por su nivel mas alto porque nadie tenia con que pronosticar su trabajo.
+  P1. Elige con cuidado los indicadores que caracterizan a la unidad administrativa y vigilalos de cerca, porque solo con eso estaras en condiciones de aplicarle los metodos de control de una fabrica.
+  P2. Deduce de los datos de tendencia unos patrones de hecho, que son los que esa clase de trabajo nunca tuvo.
+  P3. Usa esos patrones para pronosticar cuanta gente hace falta para sacar adelante las distintas tareas previstas.
+  P4. Pronostica la demanda de trabajo futura y ajusta despues a ese pronostico la salida de tu fabrica administrativa.
+  P5. Reasigna gente de un area a otra aplicando con rigor los principios del pronostico.
+  P6. Haz que el numero de personas case con el crecimiento o el descenso pronosticado de la actividad administrativa.
+  P7. Aplica ese rigor sin dejarlo caer, porque sin el la plantilla de una unidad administrativa se queda siempre en su nivel mas alto y, por la famosa ley de Parkinson, la gente encuentra la manera de que lo que esta haciendo llene el tiempo disponible para terminarlo.

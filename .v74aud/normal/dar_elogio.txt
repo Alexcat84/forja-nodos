@@ -1,0 +1,4 @@
+$ python -c "import json,re; [print(d['id'], len(d['pasos_accionables']), 'pasos |', re.search(r'RELECTURA DE FIDELIDAD D.30 EN EL ACTO[^:]*: [^.]*', d['resumen_teorico']).group(0)) for d in map(json.loads, open('dataset/nodos.jsonl', encoding='utf-8')) if d['id']=='dar_elogio_disciplina_igual_critica']"
+dar_elogio_disciplina_igual_critica 20 pasos | RELECTURA DE FIDELIDAD D.30 EN EL ACTO, paso a paso contra su linea: 20 pasos, 20 TRANSCRIPCION, 0 PUENTE
+$ grep -n dar_elogio_disciplina_igual_critica bitacora/VEREDICTOS.jsonl | cut -d: -f1 | tr '\n' ' '
+490 531 532 533 534 535 732 

@@ -1,0 +1,26 @@
+fila 04, reciclar_empleado_ascendido_mas_alla_capacidad, lineas --veredicto: 1
+  --veredicto priorizar_lista_entrenamiento_subordinados|SANO|Ajenos: el vecino, de cap_17, lista y prioriza en que entrenar a los subordinados (L49 a L51); este devuelve a su puesto anterior a quien fue ascendido mas alla de su capacidad (cap_16 L49). Comparten la prosa del subordinado y su capacidad, no el procedimiento.
+inicio 2026-09-26 05:16:11
+======================================================================
+ADUANA DE INSERCION, candidato 'reciclar_empleado_ascendido_mas_alla_capacidad'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (433 del grafo mas 46 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino priorizar_lista_entrenamiento_subordinados  [Priorizar la lista de en que hay que entrenar a los subordinados, tras preguntarles e inventariar los medios disponibles]
+    levantada por: similitud_texto
+    similitud_texto    0.355 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.416 (umbral 0.60)
+    paso 1 del candidato contra paso 2 de priorizar_lista_entrenamiento_subordinados
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 434
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 1
+
+======================================================================
+fin 2026-09-26 05:21:52 | codigo de salida 0 | 341.0 s

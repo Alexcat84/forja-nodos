@@ -1,0 +1,20 @@
+{
+ "id": "fijar_meta_direccion_objetivos_mitad_probabilidad",
+ "grafo": 410,
+ "bandejas": 69,
+ "vecinos": [
+  {
+   "id": "fijar_periodo_direccion_objetivos_retroalimentacion",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.282,
+    "familia_id": 0.375,
+    "paso_contra_nodo": 0.381
+   },
+   "levantada_por": [
+    "familia_id"
+   ],
+   "detalle_paso": "paso 4 del candidato contra paso 2 de fijar_periodo_direccion_objetivos_retroalimentacion"
+  }
+ ]
+}

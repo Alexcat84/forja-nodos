@@ -1,0 +1,401 @@
+============================================================================
+TALLADO DEL REPORTE (D.41): la tabla que dice ser de instrumento
+============================================================================
+tablas que declaran instrumento : 352
+  talladas, celda a celda       : 157
+  que DIFIEREN de su instrumento: 0
+  con la ruta VACIA             : 0   (cero bytes, 7.B)
+  sin poder comprobar           : 0
+  que CITAN y no reproducen     : 195   (declaradas PARCIAL)
+      linea 27198 de docs/loop/REPORTE.md
+      linea 27324 de docs/loop/REPORTE.md
+      linea 27622 de docs/loop/REPORTE.md
+      linea 28467 de docs/loop/REPORTE.md
+      linea 29796 de docs/loop/REPORTE.md
+      linea 29981 de docs/loop/REPORTE.md
+      linea 30032 de docs/loop/REPORTE.md
+      linea 30074 de docs/loop/REPORTE.md
+      linea 30142 de docs/loop/REPORTE.md
+      linea 30279 de docs/loop/REPORTE.md
+      linea 30431 de docs/loop/REPORTE.md
+      linea 30575 de docs/loop/REPORTE.md
+      linea 30721 de docs/loop/REPORTE.md
+      linea 31003 de docs/loop/REPORTE.md
+      linea 31050 de docs/loop/REPORTE.md
+      linea 31161 de docs/loop/REPORTE.md
+      linea 31265 de docs/loop/REPORTE.md
+      linea 31308 de docs/loop/REPORTE.md
+      linea 31339 de docs/loop/REPORTE.md
+      linea 31365 de docs/loop/REPORTE.md
+      linea 31524 de docs/loop/REPORTE.md
+      linea 31700 de docs/loop/REPORTE.md
+      linea 31776 de docs/loop/REPORTE.md
+      linea 31831 de docs/loop/REPORTE.md
+      linea 31845 de docs/loop/REPORTE.md
+      linea 31892 de docs/loop/REPORTE.md
+      linea 31903 de docs/loop/REPORTE.md
+      linea 31930 de docs/loop/REPORTE.md
+      linea 31979 de docs/loop/REPORTE.md
+      linea 32049 de docs/loop/REPORTE.md
+      linea 32072 de docs/loop/REPORTE.md
+      linea 32120 de docs/loop/REPORTE.md
+      linea 32226 de docs/loop/REPORTE.md
+      linea 32258 de docs/loop/REPORTE.md
+      linea 32280 de docs/loop/REPORTE.md
+      linea 32320 de docs/loop/REPORTE.md
+      linea 32435 de docs/loop/REPORTE.md
+      linea 32471 de docs/loop/REPORTE.md
+      linea 32510 de docs/loop/REPORTE.md
+      linea 32599 de docs/loop/REPORTE.md
+      linea 32670 de docs/loop/REPORTE.md
+      linea 32684 de docs/loop/REPORTE.md
+      linea 33020 de docs/loop/REPORTE.md
+      linea 33088 de docs/loop/REPORTE.md
+      linea 33129 de docs/loop/REPORTE.md
+      linea 33157 de docs/loop/REPORTE.md
+      linea 33257 de docs/loop/REPORTE.md
+      linea 33306 de docs/loop/REPORTE.md
+      linea 33375 de docs/loop/REPORTE.md
+      linea 33398 de docs/loop/REPORTE.md
+      linea 33506 de docs/loop/REPORTE.md
+      linea 33527 de docs/loop/REPORTE.md
+      linea 33544 de docs/loop/REPORTE.md
+      linea 33611 de docs/loop/REPORTE.md
+      linea 33636 de docs/loop/REPORTE.md
+      linea 33708 de docs/loop/REPORTE.md
+      linea 33720 de docs/loop/REPORTE.md
+      linea 35010 de docs/loop/REPORTE.md
+      linea 35416 de docs/loop/REPORTE.md
+      linea 35631 de docs/loop/REPORTE.md
+      linea 35749 de docs/loop/REPORTE.md
+      linea 37122 de docs/loop/REPORTE.md
+      linea 37889 de docs/loop/REPORTE.md
+      linea 38375 de docs/loop/REPORTE.md
+      linea 38484 de docs/loop/REPORTE.md
+      linea 39077 de docs/loop/REPORTE.md
+      linea 39143 de docs/loop/REPORTE.md
+      linea 39258 de docs/loop/REPORTE.md
+      linea 39285 de docs/loop/REPORTE.md
+      linea 40337 de docs/loop/REPORTE.md
+      linea 40535 de docs/loop/REPORTE.md
+      linea 40961 de docs/loop/REPORTE.md
+      linea 41041 de docs/loop/REPORTE.md
+      linea 41461 de docs/loop/REPORTE.md
+      linea 41647 de docs/loop/REPORTE.md
+      linea 42996 de docs/loop/REPORTE.md
+      linea 43177 de docs/loop/REPORTE.md
+      linea 43189 de docs/loop/REPORTE.md
+      linea 43235 de docs/loop/REPORTE.md
+      linea 43315 de docs/loop/REPORTE.md
+      linea 43707 de docs/loop/REPORTE.md
+      linea 44013 de docs/loop/REPORTE.md
+      linea 44351 de docs/loop/REPORTE.md
+      linea 44604 de docs/loop/REPORTE.md
+      linea 44917 de docs/loop/REPORTE.md
+      linea 45028 de docs/loop/REPORTE.md
+      linea 45116 de docs/loop/REPORTE.md
+      linea 45218 de docs/loop/REPORTE.md
+      linea 45423 de docs/loop/REPORTE.md
+      linea 45474 de docs/loop/REPORTE.md
+      linea 45799 de docs/loop/REPORTE.md
+      linea 45939 de docs/loop/REPORTE.md
+      linea 46073 de docs/loop/REPORTE.md
+      linea 46171 de docs/loop/REPORTE.md
+      linea 46260 de docs/loop/REPORTE.md
+      linea 46629 de docs/loop/REPORTE.md
+      linea 46931 de docs/loop/REPORTE.md
+      linea 47169 de docs/loop/REPORTE.md
+      linea 47360 de docs/loop/REPORTE.md
+      linea 47528 de docs/loop/REPORTE.md
+      linea 47620 de docs/loop/REPORTE.md
+      linea 47728 de docs/loop/REPORTE.md
+      linea 48041 de docs/loop/REPORTE.md
+      linea 48085 de docs/loop/REPORTE.md
+      linea 48227 de docs/loop/REPORTE.md
+      linea 48616 de docs/loop/REPORTE.md
+      linea 48751 de docs/loop/REPORTE.md
+      linea 48998 de docs/loop/REPORTE.md
+      linea 49022 de docs/loop/REPORTE.md
+      linea 49171 de docs/loop/REPORTE.md
+      linea 49618 de docs/loop/REPORTE.md
+      linea 49939 de docs/loop/REPORTE.md
+      linea 49979 de docs/loop/REPORTE.md
+      linea 50036 de docs/loop/REPORTE.md
+      linea 50074 de docs/loop/REPORTE.md
+      linea 50153 de docs/loop/REPORTE.md
+      linea 50246 de docs/loop/REPORTE.md
+      linea 50297 de docs/loop/REPORTE.md
+      linea 50485 de docs/loop/REPORTE.md
+      linea 50546 de docs/loop/REPORTE.md
+      linea 51177 de docs/loop/REPORTE.md
+      linea 51221 de docs/loop/REPORTE.md
+      linea 51283 de docs/loop/REPORTE.md
+      linea 51354 de docs/loop/REPORTE.md
+      linea 51433 de docs/loop/REPORTE.md
+      linea 52207 de docs/loop/REPORTE.md
+      linea 52254 de docs/loop/REPORTE.md
+      linea 52337 de docs/loop/REPORTE.md
+      linea 52526 de docs/loop/REPORTE.md
+      linea 52565 de docs/loop/REPORTE.md
+      linea 52937 de docs/loop/REPORTE.md
+      linea 53407 de docs/loop/REPORTE.md
+      linea 53487 de docs/loop/REPORTE.md
+      linea 53885 de docs/loop/REPORTE.md
+      linea 54061 de docs/loop/REPORTE.md
+      linea 54725 de docs/loop/REPORTE.md
+      linea 54741 de docs/loop/REPORTE.md
+      linea 54758 de docs/loop/REPORTE.md
+      linea 54783 de docs/loop/REPORTE.md
+      linea 56233 de docs/loop/REPORTE.md
+      linea 56305 de docs/loop/REPORTE.md
+      linea 57288 de docs/loop/REPORTE.md
+      linea 57537 de docs/loop/REPORTE.md
+      linea 57673 de docs/loop/REPORTE.md
+      linea 57747 de docs/loop/REPORTE.md
+      linea 58183 de docs/loop/REPORTE.md
+      linea 58250 de docs/loop/REPORTE.md
+      linea 58480 de docs/loop/REPORTE.md
+      linea 58503 de docs/loop/REPORTE.md
+      linea 58513 de docs/loop/REPORTE.md
+      linea 58527 de docs/loop/REPORTE.md
+      linea 58540 de docs/loop/REPORTE.md
+      linea 58556 de docs/loop/REPORTE.md
+      linea 58581 de docs/loop/REPORTE.md
+      linea 58605 de docs/loop/REPORTE.md
+      linea 58622 de docs/loop/REPORTE.md
+      linea 58675 de docs/loop/REPORTE.md
+      linea 58709 de docs/loop/REPORTE.md
+      linea 58721 de docs/loop/REPORTE.md
+      linea 58734 de docs/loop/REPORTE.md
+      linea 58786 de docs/loop/REPORTE.md
+      linea 58820 de docs/loop/REPORTE.md
+      linea 58845 de docs/loop/REPORTE.md
+      linea 58945 de docs/loop/REPORTE.md
+      linea 59141 de docs/loop/REPORTE.md
+      linea 59155 de docs/loop/REPORTE.md
+      linea 59464 de docs/loop/REPORTE.md
+      linea 59489 de docs/loop/REPORTE.md
+      linea 59711 de docs/loop/REPORTE.md
+      linea 59852 de docs/loop/REPORTE.md
+      linea 59872 de docs/loop/REPORTE.md
+      linea 59892 de docs/loop/REPORTE.md
+      linea 59910 de docs/loop/REPORTE.md
+      linea 59928 de docs/loop/REPORTE.md
+      linea 59946 de docs/loop/REPORTE.md
+      linea 59966 de docs/loop/REPORTE.md
+      linea 59988 de docs/loop/REPORTE.md
+      linea 60043 de docs/loop/REPORTE.md
+      linea 60087 de docs/loop/REPORTE.md
+      linea 60114 de docs/loop/REPORTE.md
+      linea 60149 de docs/loop/REPORTE.md
+      linea 60165 de docs/loop/REPORTE.md
+      linea 60180 de docs/loop/REPORTE.md
+      linea 60216 de docs/loop/REPORTE.md
+      linea 60244 de docs/loop/REPORTE.md
+      linea 60257 de docs/loop/REPORTE.md
+      linea 60292 de docs/loop/REPORTE.md
+      linea 60373 de docs/loop/REPORTE.md
+      linea 60442 de docs/loop/REPORTE.md
+      linea 60558 de docs/loop/REPORTE.md
+      linea 60592 de docs/loop/REPORTE.md
+      linea 60811 de docs/loop/REPORTE.md
+      linea 60911 de docs/loop/REPORTE.md
+      linea 60960 de docs/loop/REPORTE.md
+      linea 60971 de docs/loop/REPORTE.md
+
+TALLADO VERDE: las 157 tabla(s) comprobables son las de su instrumento, celda a celda.
+============================================================================
+CENSO DE RUTAS (D.42): la unidad de la ruta es la celda
+============================================================================
+rutas publicadas y censadas : 962
+  pasan                     : 962
+  CAEN                      : 0
+      PATRON                           74
+      VACIA A PROPOSITO                5
+      con contenido                    871
+      vacia por protocolo              12
+
+CENSO VERDE: las 962 rutas publicadas sostienen lo que dicen sostener.
+============================================================================
+TABLA DE CIERRE DE TAREAS (D.52): toda tabla del reporte declara su instrumento
+============================================================================
+  libro de la linea : grove_high_output
+  filas             : 5
+  SIN COMPROBAR  `1`  ninguna afirmacion de la forma 'N de M del capitulo' con su cap_NN
+  SIN COMPROBAR  `2`  ninguna afirmacion de la forma 'N de M del capitulo' con su cap_NN
+  SIN COMPROBAR  `3`  ninguna afirmacion de la forma 'N de M del capitulo' con su cap_NN
+  SIN COMPROBAR  `4`  ninguna afirmacion de la forma 'N de M del capitulo' con su cap_NN
+  SIN COMPROBAR  `5`  ninguna afirmacion de la forma 'N de M del capitulo' con su cap_NN
+
+TABLA DE CIERRE VERDE: ninguna celda medible difiere del dato.
+GATE VERDE.
+  nodos verificados: 390
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+REGISTRO: C:\Users\AlexDesk\AppData\Local\Temp\forja_prueba_q0h69mek\CREDITO_una.jsonl
+filas que se contradicen a si mismas: 1
+  linea   1  REPORTE          vuelta 1   racha 1 de 3   cae AUSENTE -> True
+estado de las rachas, antes y despues   : IDENTICO
+discrepancias del replay, antes/despues : 0 / 0
+filas incoherentes que quedan           : 0
+(ensayo: no se ha escrito nada; repite con --escribir)
+REGISTRO: C:\Users\AlexDesk\AppData\Local\Temp\forja_prueba_q0h69mek\CREDITO_una.jsonl
+filas que se contradicen a si mismas: 1
+  linea   1  REPORTE          vuelta 1   racha 1 de 3   cae AUSENTE -> True
+estado de las rachas, antes y despues   : IDENTICO
+discrepancias del replay, antes/despues : 0 / 0
+filas incoherentes que quedan           : 0
+ESCRITO: 1 fila(s) corregida(s) por correccion declarada.
+
+========================================================================
+PRUEBA DE ACEPTACION DE forja-nodos
+========================================================================
+  A. VERDE: el nodo ejemplo entro limpio, el gate quedo verde y los censos registraron las tres denominaciones por separado
+  B. VERDE: gemelo bloqueado (codigo 2) citando a registrar_fuente_canonica y la señal (similitud_texto)
+  C. VERDE: el hijo quedo bloqueado sin veredicto y entro tras declarar CONTINUA; la arista se declaro por el alias 'registro_fuentes_canonicas' y quedo escrita resuelta como registrar_fuente_canonica > elegir_grafia_clave
+  D. VERDE: la auto-arista via alias (saneo_grafo apunta a sanear_grafo) puso el gate en rojo, y la comparacion literal no la veia: cero coincidencias literales en el mismo dato
+  E. VERDE: hooks/pre-commit aborto con el guion largo (rojo con el archivo, verde sin el, verde de nuevo al quitarlo)
+  F. VERDE: el candidato con la fuente 'libro_que_nadie_registro' fue rechazado y no toco el dataset
+
+  guardas del gate y resolutor: 10 pruebas mas, cada una con su caso positivo
+  adjudicaciones del auditor (A.1 MUTUO, A.2 fuentes con fecha): 3 pruebas mas
+  TANDA A de la v0.3 (C.1 cita de linea, C.2 registro de citas, C.3 vigencia, C.4 no aplica, D.17 deprecado): 20 pruebas mas
+  el barrido NO entra en las bandejas de entrada (estreno del 9 sep 2026): 4 pruebas mas
+  reglas de id 1 y 2, reescritas por el fundador (10 sep 2026): 8 pruebas mas
+  D.29, la arista que la señal no levanta se declara por lectura: 6 pruebas mas
+  D.31, el candidato insertado se archiva y el informe no lo cuenta: 4 pruebas mas
+  D.37, la serie declarada por el titulo es arista por lectura: 7 pruebas mas
+  la sede de los pares mutuos nace vacia con su cabecera (5.7): 3 pruebas mas
+  D.40, lo que un auditor le deja al siguiente lo entrega el arnes: 26 pruebas mas
+  la poblacion del informe es grafo mas bandejas (12 sep 2026, punto 3): 6 pruebas mas
+  D.41, la tabla que dice ser de instrumento es la del instrumento: 18 pruebas mas
+  D.42, la unidad de la ruta es la celda: 28 pruebas mas
+  D.38.5 en la aduana, que es donde se decide: 6 pruebas mas
+  D.29 en la aduana: la insercion es atomica y la arista espera en cola: 10 pruebas mas
+  la linea ya escrita de la bitacora se marca por operacion, sin borrar: 15 pruebas mas
+  D.15: la vigencia es COLA DE TRABAJO y no guarda que tumbe el cierre: 3 pruebas mas
+  el cerrojo de insercion y D.44, el censo no decrece: 8 pruebas mas
+  el testigo de guardas al sellar (D.38.3, 16 sep): 4 pruebas mas
+  D.48, la racha es de su linea, y el credito vive por linea: 15 pruebas mas
+  D.48, la herencia de D.40 es la de SU linea: 5 pruebas mas
+  D.49 y D.50, un libro un dueño a la vez y el relevo: 12 pruebas mas
+  D.49, la guarda del tablero al abrir vuelta: 10 pruebas mas
+  D.51, el orden lo da el tablero, y el corte del mundo 11: 12 pruebas mas
+  D.56, dataset es el catalogo y el cerrojo vive fuera: 7 pruebas mas
+  D.56, la cita del credito es referencia y no resultado: 10 pruebas mas
+  D.56, la cola de doctrina vive en el tablero: 5 pruebas mas
+  D.52, toda tabla del reporte declara su instrumento: 8 pruebas mas
+  D.54, un paso retirado se retira del campo: 7 pruebas mas
+  la exencion del censo es de MOMENTO y no de fichero: 3 pruebas mas
+  D.55, la deuda no bloquea la produccion: 11 pruebas mas
+  D.53 en el codigo: el veredicto y la arista son puertas distintas: 11 pruebas mas
+  D.58, dos regimenes y la cadencia que no depende de nadie: 11 pruebas mas
+  D.59, la cifra derivada la calcula el instrumento: 10 pruebas mas
+  los tres defectos que midio el frente (d096, d097, d102): 19 pruebas mas
+
+  total: 379 pruebas, 0 fallos, 0 errores
+========================================================================
+BLOQUE DE VIGENCIA: 81 hallazgo(s) sobre 890 veredicto(s) y 0 cita(s).
+  RANCIO 73, SIN HUELLA 8
+  lineas declaradas NO CONSUMADAS y por eso no medidas: 14
+    (las escribio una corrida que no inserto nada; ver su razon en la propia linea)
+  [RANCIO] veredicto manejar_enfado_persona_desafiada contra delimitar_franqueza_radical_cinco_noes (linea 149, 2026-09-13): el texto de su vecino 'delimitar_franqueza_radical_cinco_noes' cambio desde que se emitio (huella c43d1ffc6688387b, hoy e28c5904cc8adc22)
+  [RANCIO] veredicto manejar_enfado_persona_desafiada contra repartir_semana_cuarenta_horas_jefe (linea 151, 2026-09-13): el texto de su vecino 'repartir_semana_cuarenta_horas_jefe' cambio desde que se emitio (huella 5741a0fe40ead016, hoy de520028526c0f00)
+  [RANCIO] veredicto cambiar_potencial_trayectoria_crecimiento contra delimitar_franqueza_radical_cinco_noes (linea 154, 2026-09-13): el texto de su vecino 'delimitar_franqueza_radical_cinco_noes' cambio desde que se emitio (huella c43d1ffc6688387b, hoy e28c5904cc8adc22)
+  [RANCIO] veredicto ajustar_franqueza_oido_oyente contra delimitar_franqueza_radical_cinco_noes (linea 158, 2026-09-13): el texto de su vecino 'delimitar_franqueza_radical_cinco_noes' cambio desde que se emitio (huella c43d1ffc6688387b, hoy e28c5904cc8adc22)
+  [RANCIO] veredicto cuidar_persona_completa_equipo contra delimitar_franqueza_radical_cinco_noes (linea 181, 2026-09-13): el texto de su vecino 'delimitar_franqueza_radical_cinco_noes' cambio desde que se emitio (huella c43d1ffc6688387b, hoy e28c5904cc8adc22)
+  [RANCIO] veredicto acompaniar_mejores_equipo_socio contra delimitar_franqueza_radical_cinco_noes (linea 199, 2026-09-13): el texto de su vecino 'delimitar_franqueza_radical_cinco_noes' cambio desde que se emitio (huella c43d1ffc6688387b, hoy e28c5904cc8adc22)
+  [RANCIO] veredicto despedir_persona_franqueza_radical contra despedir_persona_respeto_franqueza (linea 204, 2026-09-15): el texto de su candidato 'despedir_persona_franqueza_radical' cambio desde que se emitio (huella 02aa38ffba624594, hoy d140e5bc404a277b)
+  [RANCIO] veredicto despedir_persona_franqueza_radical contra acompaniar_mejores_equipo_socio (linea 205, 2026-09-15): el texto de su candidato 'despedir_persona_franqueza_radical' cambio desde que se emitio (huella 02aa38ffba624594, hoy d140e5bc404a277b)
+  [RANCIO] veredicto despedir_persona_franqueza_radical contra empezar_cultura_franqueza_radical (linea 206, 2026-09-15): el texto de su candidato 'despedir_persona_franqueza_radical' cambio desde que se emitio (huella 02aa38ffba624594, hoy d140e5bc404a277b)
+  [RANCIO] veredicto despedir_persona_franqueza_radical contra equilibrar_elogio_critica_equipo (linea 207, 2026-09-15): el texto de su candidato 'despedir_persona_franqueza_radical' cambio desde que se emitio (huella 02aa38ffba624594, hoy d140e5bc404a277b)
+  [RANCIO] veredicto despedir_persona_franqueza_radical contra elogiar_trabajo_especifico_contexto (linea 208, 2026-09-15): el texto de su candidato 'despedir_persona_franqueza_radical' cambio desde que se emitio (huella 02aa38ffba624594, hoy d140e5bc404a277b)
+  [RANCIO] veredicto despedir_persona_franqueza_radical contra elegir_recolocar_despedir_persona (linea 209, 2026-09-15): el texto de su candidato 'despedir_persona_franqueza_radical' cambio desde que se emitio (huella 02aa38ffba624594, hoy d140e5bc404a277b)
+  [RANCIO] veredicto despedir_persona_franqueza_radical contra desplegar_marco_franqueza_radical (linea 210, 2026-09-15): el texto de su candidato 'despedir_persona_franqueza_radical' cambio desde que se emitio (huella 02aa38ffba624594, hoy d140e5bc404a277b)
+  [RANCIO] veredicto decidir_momento_despedir_persona contra despedir_persona_franqueza_radical (linea 211, 2026-09-16): el texto de su vecino 'despedir_persona_franqueza_radical' cambio desde que se emitio (huella 02aa38ffba624594, hoy d140e5bc404a277b)
+  [RANCIO] veredicto reconocer_recompensar_gente_estable contra pedir_critica_equipo_premiarla (linea 215, 2026-09-16): el texto de su candidato 'reconocer_recompensar_gente_estable' cambio desde que se emitio (huella 3f8f1a490caf481b, hoy bbb6bfa7089e76fb)
+  [RANCIO] veredicto reconocer_recompensar_gente_estable contra reconocer_recompensar_uso_metodo (linea 216, 2026-09-16): el texto de su candidato 'reconocer_recompensar_gente_estable' cambio desde que se emitio (huella 3f8f1a490caf481b, hoy bbb6bfa7089e76fb)
+  [RANCIO] veredicto retar_superestrellas_equipo_constantemente contra despedir_persona_franqueza_radical (linea 219, 2026-09-16): el texto de su vecino 'despedir_persona_franqueza_radical' cambio desde que se emitio (huella 02aa38ffba624594, hoy d140e5bc404a277b)
+  [RANCIO] veredicto retar_superestrellas_equipo_constantemente contra reconocer_recompensar_gente_estable (linea 222, 2026-09-16): el texto de su vecino 'reconocer_recompensar_gente_estable' cambio desde que se emitio (huella 3f8f1a490caf481b, hoy bbb6bfa7089e76fb)
+  [RANCIO] veredicto reconocer_recompensar_gente_estable contra acompaniar_mejores_equipo_socio (linea 226, 2026-09-16): el texto de su candidato 'reconocer_recompensar_gente_estable' cambio desde que se emitio (huella 3f8f1a490caf481b, hoy bbb6bfa7089e76fb)
+  [RANCIO] veredicto retirar_etiquetas_permanentes_equipo contra delimitar_franqueza_radical_cinco_noes (linea 228, 2026-09-16): el texto de su vecino 'delimitar_franqueza_radical_cinco_noes' cambio desde que se emitio (huella c43d1ffc6688387b, hoy e28c5904cc8adc22)
+  [RANCIO] veredicto subir_vara_calidad_equipo contra despedir_persona_franqueza_radical (linea 234, 2026-09-16): el texto de su vecino 'despedir_persona_franqueza_radical' cambio desde que se emitio (huella 02aa38ffba624594, hoy d140e5bc404a277b)
+  [RANCIO] veredicto subir_vara_calidad_equipo contra delimitar_franqueza_radical_cinco_noes (linea 238, 2026-09-16): el texto de su vecino 'delimitar_franqueza_radical_cinco_noes' cambio desde que se emitio (huella c43d1ffc6688387b, hoy e28c5904cc8adc22)
+  [RANCIO] veredicto repartir_semana_cuarenta_horas_jefe contra repartir_semana_cuarenta_horas_jefe (linea 241, 2026-09-16): el texto de su vecino 'repartir_semana_cuarenta_horas_jefe' cambio desde que se emitio (huella 5741a0fe40ead016, hoy de520028526c0f00)
+  [RANCIO] veredicto delimitar_franqueza_radical_cinco_noes contra delimitar_franqueza_radical_cinco_noes (linea 242, 2026-09-16): el texto de su vecino 'delimitar_franqueza_radical_cinco_noes' cambio desde que se emitio (huella c43d1ffc6688387b, hoy e28c5904cc8adc22)
+  [RANCIO] veredicto despedir_persona_franqueza_radical contra despedir_persona_franqueza_radical (linea 243, 2026-09-16): el texto de su vecino 'despedir_persona_franqueza_radical' cambio desde que se emitio (huella 02aa38ffba624594, hoy d140e5bc404a277b)
+  [RANCIO] veredicto reconocer_recompensar_gente_estable contra reconocer_recompensar_gente_estable (linea 244, 2026-09-16): el texto de su vecino 'reconocer_recompensar_gente_estable' cambio desde que se emitio (huella 3f8f1a490caf481b, hoy bbb6bfa7089e76fb)
+  [SIN HUELLA] veredicto crear_cultura_escucha_equipo contra crear_obligacion_disentir_equipo (linea 252, 2026-09-16): la huella que guarda de su vecino 'crear_obligacion_disentir_equipo' es la de un nodo VACIO, asi que NO SE PUEDE COMPROBAR contra que texto se emitio
+  [SIN HUELLA] veredicto explicar_idea_facil_comprender_oyente contra compartir_logica_mostrar_razonamiento (linea 256, 2026-09-16): la huella que guarda de su vecino 'compartir_logica_mostrar_razonamiento' es la de un nodo VACIO, asi que NO SE PUEDE COMPROBAR contra que texto se emitio
+  [SIN HUELLA] veredicto centrar_debate_ideas_fuera_egos contra fijar_fecha_cierre_debate_equipo (linea 258, 2026-09-16): la huella que guarda de su vecino 'fijar_fecha_cierre_debate_equipo' es la de un nodo VACIO, asi que NO SE PUEDE COMPROBAR contra que texto se emitio
+  [SIN HUELLA] veredicto centrar_debate_ideas_fuera_egos contra mantener_manos_trabajo_real_equipo (linea 260, 2026-09-16): la huella que guarda de su vecino 'mantener_manos_trabajo_real_equipo' es la de un nodo VACIO, asi que NO SE PUEDE COMPROBAR contra que texto se emitio
+  [SIN HUELLA] veredicto centrar_debate_ideas_fuera_egos contra compartir_logica_mostrar_razonamiento (linea 261, 2026-09-16): la huella que guarda de su vecino 'compartir_logica_mostrar_razonamiento' es la de un nodo VACIO, asi que NO SE PUEDE COMPROBAR contra que texto se emitio
+  [SIN HUELLA] veredicto centrar_debate_ideas_fuera_egos contra parar_debate_emocion_agotamiento (linea 262, 2026-09-16): la huella que guarda de su vecino 'parar_debate_emocion_agotamiento' es la de un nodo VACIO, asi que NO SE PUEDE COMPROBAR contra que texto se emitio
+  [SIN HUELLA] veredicto centrar_debate_ideas_fuera_egos contra proteger_tiempo_equipo_jefe (linea 263, 2026-09-16): la huella que guarda de su vecino 'proteger_tiempo_equipo_jefe' es la de un nodo VACIO, asi que NO SE PUEDE COMPROBAR contra que texto se emitio
+  [SIN HUELLA] veredicto centrar_debate_ideas_fuera_egos contra minimizar_impuesto_colaboracion_equipo (linea 264, 2026-09-16): la huella que guarda de su vecino 'minimizar_impuesto_colaboracion_equipo' es la de un nodo VACIO, asi que NO SE PUEDE COMPROBAR contra que texto se emitio
+  [RANCIO] veredicto recorrer_rueda_conscientemente_cultura_equipo contra recorrer_rueda_hacer_cosas_equipo (linea 265, 2026-09-16): el texto de su candidato 'recorrer_rueda_conscientemente_cultura_equipo' cambio desde que se emitio (huella 51c014343239ec45, hoy 2ac793d46c4f5a5a)
+  [RANCIO] veredicto recorrer_rueda_hacer_cosas_equipo contra recorrer_rueda_conscientemente_cultura_equipo (linea 267, 2026-09-16): el texto de su vecino 'recorrer_rueda_conscientemente_cultura_equipo' cambio desde que se emitio (huella 51c014343239ec45, hoy 2ac793d46c4f5a5a)
+  [RANCIO] veredicto minimizar_impuesto_colaboracion_equipo contra construir_confianza_equipo_tiempo_solas (linea 332, 2026-09-16): el texto de su vecino 'construir_confianza_equipo_tiempo_solas' cambio desde que se emitio (huella d70267db73796f36, hoy 51454685dd4c5a97)
+  [RANCIO] veredicto bloquear_tiempo_pensar_calendario contra desplegar_plan_orden_operaciones_franqueza_radical (linea 371, 2026-09-16): el texto de su vecino 'desplegar_plan_orden_operaciones_franqueza_radical' cambio desde que se emitio (huella 160e4d0b051a31cb, hoy c489c488b9651d97)
+  [RANCIO] veredicto decidir_quien_comunica_cada_cuanto contra construir_confianza_equipo_tiempo_solas (linea 377, 2026-09-16): el texto de su vecino 'construir_confianza_equipo_tiempo_solas' cambio desde que se emitio (huella d70267db73796f36, hoy 51454685dd4c5a97)
+  [RANCIO] veredicto recorrer_rueda_conscientemente_cultura_equipo contra decidir_quien_comunica_cada_cuanto (linea 392, 2026-09-16): el texto de su candidato 'recorrer_rueda_conscientemente_cultura_equipo' cambio desde que se emitio (huella 51c014343239ec45, hoy 2ac793d46c4f5a5a)
+  [RANCIO] veredicto recorrer_rueda_conscientemente_cultura_equipo contra recorrer_rueda_conscientemente_cultura_equipo (linea 396, 2026-09-16): el texto de su candidato 'recorrer_rueda_conscientemente_cultura_equipo' cambio desde que se emitio (huella f2039c320fabe9f9, hoy 2ac793d46c4f5a5a)
+  [RANCIO] veredicto recorrer_rueda_conscientemente_cultura_equipo contra recorrer_rueda_conscientemente_cultura_equipo (linea 396, 2026-09-16): el texto de su vecino 'recorrer_rueda_conscientemente_cultura_equipo' cambio desde que se emitio (huella 51c014343239ec45, hoy 2ac793d46c4f5a5a)
+  [RANCIO] veredicto recorrer_rueda_conscientemente_cultura_equipo contra recorrer_rueda_conscientemente_cultura_equipo (linea 397, 2026-09-17): el texto de su vecino 'recorrer_rueda_conscientemente_cultura_equipo' cambio desde que se emitio (huella f2039c320fabe9f9, hoy 2ac793d46c4f5a5a)
+  [RANCIO] veredicto evitar_presion_social_actos_equipo contra contar_cuatro_historias_propias_ver_hueco_intencion (linea 398, 2026-09-17): el texto de su vecino 'contar_cuatro_historias_propias_ver_hueco_intencion' cambio desde que se emitio (huella 05ae2e62183a4bb4, hoy 02aba7e0771fec64)
+  [RANCIO] veredicto construir_confianza_equipo_tiempo_solas contra decidir_quien_comunica_cada_cuanto (linea 402, 2026-09-17): el texto de su candidato 'construir_confianza_equipo_tiempo_solas' cambio desde que se emitio (huella d70267db73796f36, hoy 51454685dd4c5a97)
+  [RANCIO] veredicto construir_confianza_equipo_tiempo_solas contra reconocer_emociones_propias_avisar_equipo (linea 403, 2026-09-17): el texto de su candidato 'construir_confianza_equipo_tiempo_solas' cambio desde que se emitio (huella d70267db73796f36, hoy 51454685dd4c5a97)
+  [RANCIO] veredicto construir_confianza_equipo_tiempo_solas contra minimizar_impuesto_colaboracion_equipo (linea 404, 2026-09-17): el texto de su candidato 'construir_confianza_equipo_tiempo_solas' cambio desde que se emitio (huella d70267db73796f36, hoy 51454685dd4c5a97)
+  [RANCIO] veredicto montar_reuniones_solas_mentalidad_frecuencia contra construir_confianza_equipo_tiempo_solas (linea 405, 2026-09-17): el texto de su vecino 'construir_confianza_equipo_tiempo_solas' cambio desde que se emitio (huella d70267db73796f36, hoy 51454685dd4c5a97)
+  [RANCIO] veredicto reconocer_emociones_propias_avisar_equipo contra construir_confianza_equipo_tiempo_solas (linea 410, 2026-09-17): el texto de su vecino 'construir_confianza_equipo_tiempo_solas' cambio desde que se emitio (huella d70267db73796f36, hoy 51454685dd4c5a97)
+  [RANCIO] veredicto construir_confianza_equipo_tiempo_solas contra construir_confianza_equipo_tiempo_solas (linea 411, 2026-09-17): el texto de su vecino 'construir_confianza_equipo_tiempo_solas' cambio desde que se emitio (huella d70267db73796f36, hoy 51454685dd4c5a97)
+  [RANCIO] veredicto practicar_franqueza_radical_jefe_propio contra practicar_franqueza_radical_jefe_propio (linea 424, 2026-09-17): el texto de su candidato 'practicar_franqueza_radical_jefe_propio' cambio desde que se emitio (huella 0392ce4b21a52500, hoy 30d923af642a20cf)
+  [RANCIO] veredicto practicar_franqueza_radical_jefe_propio contra practicar_franqueza_radical_jefe_propio (linea 424, 2026-09-17): el texto de su vecino 'practicar_franqueza_radical_jefe_propio' cambio desde que se emitio (huella 98d6835edfe1d990, hoy 30d923af642a20cf)
+  [RANCIO] veredicto desplegar_tres_conversaciones_carrera contra desplegar_plan_orden_operaciones_franqueza_radical (linea 429, 2026-09-17): el texto de su vecino 'desplegar_plan_orden_operaciones_franqueza_radical' cambio desde que se emitio (huella 160e4d0b051a31cb, hoy c489c488b9651d97)
+  [RANCIO] veredicto armar_plan_anual_crecimiento_equipo contra desplegar_plan_orden_operaciones_franqueza_radical (linea 438, 2026-09-17): el texto de su vecino 'desplegar_plan_orden_operaciones_franqueza_radical' cambio desde que se emitio (huella 160e4d0b051a31cb, hoy c489c488b9651d97)
+  [RANCIO] veredicto evitar_obsesion_ascenso_estatus contra desplegar_plan_orden_operaciones_franqueza_radical (linea 461, 2026-09-17): el texto de su vecino 'desplegar_plan_orden_operaciones_franqueza_radical' cambio desde que se emitio (huella 160e4d0b051a31cb, hoy c489c488b9651d97)
+  [RANCIO] veredicto practicar_triangulo_critica_tres_papeles contra abrazar_incomodidad_silencio_contar_seis (linea 484, 2026-09-18): el texto de su candidato 'practicar_triangulo_critica_tres_papeles' cambio desde que se emitio (huella eec451c2e48944c6, hoy 5aebf76b97831357)
+  [RANCIO] veredicto practicar_triangulo_critica_tres_papeles contra escuchar_entender_critica_dominar_defensa (linea 485, 2026-09-18): el texto de su candidato 'practicar_triangulo_critica_tres_papeles' cambio desde que se emitio (huella eec451c2e48944c6, hoy 5aebf76b97831357)
+  [RANCIO] veredicto practicar_triangulo_critica_tres_papeles contra mejorar_consciencia_propia_relacional_dos_practicas (linea 486, 2026-09-18): el texto de su candidato 'practicar_triangulo_critica_tres_papeles' cambio desde que se emitio (huella eec451c2e48944c6, hoy 5aebf76b97831357)
+  [RANCIO] veredicto practicar_triangulo_critica_tres_papeles contra practicar_triangulo_critica_tres_papeles (linea 487, 2026-09-18): el texto de su vecino 'practicar_triangulo_critica_tres_papeles' cambio desde que se emitio (huella eec451c2e48944c6, hoy 5aebf76b97831357)
+  [RANCIO] veredicto pedir_critica_primero_crear_seguridad_psicologica contra integrar_peticion_critica_rutina_existente (linea 488, 2026-09-18): el texto de su candidato 'pedir_critica_primero_crear_seguridad_psicologica' cambio desde que se emitio (huella bdf8b8932603d104, hoy d228fe61d4d02678)
+  [RANCIO] veredicto pedir_critica_primero_crear_seguridad_psicologica contra abrazar_incomodidad_silencio_contar_seis (linea 489, 2026-09-18): el texto de su candidato 'pedir_critica_primero_crear_seguridad_psicologica' cambio desde que se emitio (huella bdf8b8932603d104, hoy d228fe61d4d02678)
+  [RANCIO] veredicto pedir_critica_primero_crear_seguridad_psicologica contra dar_elogio_disciplina_igual_critica (linea 490, 2026-09-18): el texto de su candidato 'pedir_critica_primero_crear_seguridad_psicologica' cambio desde que se emitio (huella bdf8b8932603d104, hoy d228fe61d4d02678)
+  [RANCIO] veredicto pedir_critica_primero_crear_seguridad_psicologica contra dar_elogio_disciplina_igual_critica (linea 490, 2026-09-18): el texto de su vecino 'dar_elogio_disciplina_igual_critica' cambio desde que se emitio (huella af5c6c48d2b60c7c, hoy e61505b50710934d)
+  [RANCIO] veredicto pedir_critica_primero_crear_seguridad_psicologica contra empezar_cultura_franqueza_radical (linea 491, 2026-09-18): el texto de su candidato 'pedir_critica_primero_crear_seguridad_psicologica' cambio desde que se emitio (huella bdf8b8932603d104, hoy d228fe61d4d02678)
+  [RANCIO] veredicto pedir_critica_primero_crear_seguridad_psicologica contra escuchar_entender_critica_dominar_defensa (linea 492, 2026-09-18): el texto de su candidato 'pedir_critica_primero_crear_seguridad_psicologica' cambio desde que se emitio (huella bdf8b8932603d104, hoy d228fe61d4d02678)
+  [RANCIO] veredicto pedir_critica_primero_crear_seguridad_psicologica contra fomentar_guia_reciproca_companieros (linea 493, 2026-09-18): el texto de su candidato 'pedir_critica_primero_crear_seguridad_psicologica' cambio desde que se emitio (huella bdf8b8932603d104, hoy d228fe61d4d02678)
+  [RANCIO] veredicto pedir_critica_primero_crear_seguridad_psicologica contra medir_critica_respuesta_oyente_brujula (linea 494, 2026-09-18): el texto de su candidato 'pedir_critica_primero_crear_seguridad_psicologica' cambio desde que se emitio (huella bdf8b8932603d104, hoy d228fe61d4d02678)
+  [RANCIO] veredicto pedir_critica_primero_crear_seguridad_psicologica contra premiar_franqueza_hacer_escucha_tangible (linea 495, 2026-09-18): el texto de su candidato 'pedir_critica_primero_crear_seguridad_psicologica' cambio desde que se emitio (huella bdf8b8932603d104, hoy d228fe61d4d02678)
+  [RANCIO] veredicto pedir_critica_primero_crear_seguridad_psicologica contra desplegar_plan_orden_operaciones_franqueza_radical (linea 496, 2026-09-18): el texto de su candidato 'pedir_critica_primero_crear_seguridad_psicologica' cambio desde que se emitio (huella bdf8b8932603d104, hoy d228fe61d4d02678)
+  [RANCIO] veredicto criticar_trabajo_evitar_desanimo contra pedir_critica_primero_crear_seguridad_psicologica (linea 497, 2026-09-18): el texto de su vecino 'pedir_critica_primero_crear_seguridad_psicologica' cambio desde que se emitio (huella bdf8b8932603d104, hoy d228fe61d4d02678)
+  [RANCIO] veredicto elegir_pregunta_recurrente_pedir_critica contra pedir_critica_primero_crear_seguridad_psicologica (linea 502, 2026-09-18): el texto de su vecino 'pedir_critica_primero_crear_seguridad_psicologica' cambio desde que se emitio (huella bdf8b8932603d104, hoy d228fe61d4d02678)
+  [RANCIO] veredicto resolver_dudas_frecuentes_pedir_critica contra pedir_critica_primero_crear_seguridad_psicologica (linea 506, 2026-09-18): el texto de su vecino 'pedir_critica_primero_crear_seguridad_psicologica' cambio desde que se emitio (huella bdf8b8932603d104, hoy d228fe61d4d02678)
+  [RANCIO] veredicto pedir_critica_primero_crear_seguridad_psicologica contra pedir_critica_primero_crear_seguridad_psicologica (linea 507, 2026-09-18): el texto de su vecino 'pedir_critica_primero_crear_seguridad_psicologica' cambio desde que se emitio (huella bdf8b8932603d104, hoy d228fe61d4d02678)
+  [RANCIO] veredicto escuchar_entender_critica_dominar_defensa contra cambiar_forma_trabajar_conservar_plantilla (linea 515, 2026-09-18): el texto de su vecino 'cambiar_forma_trabajar_conservar_plantilla' cambio desde que se emitio (huella 3782a0bd8fbdb621, hoy 6298a494d0b61dae)
+  [RANCIO] veredicto dar_elogio_disciplina_igual_critica contra dar_guia_humilde_tres_tecnicas (linea 531, 2026-09-18): el texto de su candidato 'dar_elogio_disciplina_igual_critica' cambio desde que se emitio (huella af5c6c48d2b60c7c, hoy e61505b50710934d)
+  [RANCIO] veredicto dar_elogio_disciplina_igual_critica contra elogiar_publico_criticar_privado_sus_tres_matices (linea 532, 2026-09-18): el texto de su candidato 'dar_elogio_disciplina_igual_critica' cambio desde que se emitio (huella af5c6c48d2b60c7c, hoy e61505b50710934d)
+  [RANCIO] veredicto dar_elogio_disciplina_igual_critica contra elogiar_trabajo_especifico_contexto (linea 533, 2026-09-18): el texto de su candidato 'dar_elogio_disciplina_igual_critica' cambio desde que se emitio (huella af5c6c48d2b60c7c, hoy e61505b50710934d)
+  [RANCIO] veredicto dar_elogio_disciplina_igual_critica contra equilibrar_elogio_critica_equipo (linea 534, 2026-09-18): el texto de su candidato 'dar_elogio_disciplina_igual_critica' cambio desde que se emitio (huella af5c6c48d2b60c7c, hoy e61505b50710934d)
+  [RANCIO] veredicto dar_elogio_disciplina_igual_critica contra pedir_critica_primero_crear_seguridad_psicologica (linea 535, 2026-09-18): el texto de su candidato 'dar_elogio_disciplina_igual_critica' cambio desde que se emitio (huella af5c6c48d2b60c7c, hoy e61505b50710934d)
+  [RANCIO] veredicto revisar_tres_preguntas_valor_carrera contra emparejar_indicadores_efecto_contraefecto (linea 731, 2026-09-18): el texto de su vecino 'emparejar_indicadores_efecto_contraefecto' cambio desde que se emitio (huella 28fe58e80272a251, hoy d359192e1dc9e184)
+  [RANCIO] veredicto dar_elogio_disciplina_igual_critica contra dar_elogio_disciplina_igual_critica (linea 732, 2026-09-18): el texto de su vecino 'dar_elogio_disciplina_igual_critica' cambio desde que se emitio (huella af5c6c48d2b60c7c, hoy e61505b50710934d)
+
+Un rancio NO SE CITA COMO VIGENTE: se relee con el texto de hoy, o se
+declara por que sigue valiendo. Las dos cosas las hace una persona, y
+por eso esto no pone el gate en rojo (D.15).
+[cierre] tallado del reporte (D.41)
+[cierre] censo de rutas (D.42)
+[cierre] tabla de cierre de tareas (D.52)
+[cierre] gate de integridad
+[cierre] barrido de guiones
+[cierre] prueba de aceptacion
+[cierre] vigencia de los veredictos (D.15): COLA DE TRABAJO, no guarda
+
+LA VIGENCIA TIENE COLA, Y ESO NO PONE EL CIERRE EN ROJO (D.15).
+Un rancio no se cita como vigente: se relee con el texto de hoy,
+o se declara por que sigue valiendo. Las dos cosas las hace una
+persona, y por eso esto no pone nada en rojo.
+
+CIERRE VERDE: las cuatro guardas que muerden, el tallado y el censo. La vigencia corrio y publico su cuenta arriba: es cola, no guarda (D.15).
+rc=0

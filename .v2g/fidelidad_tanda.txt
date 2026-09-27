@@ -1,0 +1,163 @@
+==============================================================================
+RELECTURA DE FIDELIDAD D.30, CANDIDATO A CANDIDATO, CON LA LINEA PEGADA
+==============================================================================
+
+elegir_cinco_indicadores_diarios_fabrica   pasos 10 | TRANSCRIPCION 10 | PUENTE 0
+  paso  1  L15   TRANSCRIPCION  A hungry public has loved the breakfast you've been serving, and thanks to the
+  paso  2  L17   TRANSCRIPCION  Let's say that as manager of the breakfast factory, you will work with five in
+  paso  3  L19   TRANSCRIPCION  Here are my candidates. First, you'll want to know your sales forecast for the
+  paso  4  L19   TRANSCRIPCION  Here are my candidates. First, you'll want to know your sales forecast for the
+  paso  5  L21   TRANSCRIPCION  Your next key indicator is raw material inventory. Do you have enough eggs, br
+  paso  6  L23   TRANSCRIPCION  Another important piece of information is the condition of your equipment. If 
+  paso  7  L25   TRANSCRIPCION  You also must get a fix on your manpower. If two waiters are out sick, you wil
+  paso  8  L27   TRANSCRIPCION  Finally, you want to have some kind of quality indicator. It is not enough to 
+  paso  9  L27   TRANSCRIPCION  Finally, you want to have some kind of quality indicator. It is not enough to 
+  paso 10  L29   TRANSCRIPCION  All these indicators measure factors essential to running your factory. If you
+
+emparejar_indicadores_efecto_contraefecto   pasos 7 | TRANSCRIPCION 7 | PUENTE 0
+  paso  1  L31   TRANSCRIPCION  Indicators tend to direct your attention toward what they are monitoring. It i
+  paso  2  L31   TRANSCRIPCION  Indicators tend to direct your attention toward what they are monitoring. It i
+  paso  3  L31   TRANSCRIPCION  Indicators tend to direct your attention toward what they are monitoring. It i
+  paso  4  L31   TRANSCRIPCION  Indicators tend to direct your attention toward what they are monitoring. It i
+  paso  5  L31   TRANSCRIPCION  Indicators tend to direct your attention toward what they are monitoring. It i
+  paso  6  L31   TRANSCRIPCION  Indicators tend to direct your attention toward what they are monitoring. It i
+  paso  7  L33   TRANSCRIPCION  The principle here was evident many times in the development of a compiler. Me
+
+elegir_indicador_salida_trabajo_administrativo   pasos 7 | TRANSCRIPCION 7 | PUENTE 0
+  paso  1  L35   TRANSCRIPCION  Nowhere can indicators-and paired indicators-be of more help than in administr
+  paso  2  L35   TRANSCRIPCION  Nowhere can indicators-and paired indicators-be of more help than in administr
+  paso  3  L37   TRANSCRIPCION  The second criterion for a good indicator is that what you measure should be a
+  paso  4  L39   TRANSCRIPCION  ADMINISTRATIVE FUNCTION
+  paso  5  L37   TRANSCRIPCION  The second criterion for a good indicator is that what you measure should be a
+  paso  6  L37   TRANSCRIPCION  The second criterion for a good indicator is that what you measure should be a
+  paso  7  L37   TRANSCRIPCION  The second criterion for a good indicator is that what you measure should be a
+
+representar_actividad_caja_negra_ventanas   pasos 9 | TRANSCRIPCION 9 | PUENTE 0
+  paso  1  L73   TRANSCRIPCION  We can think of our breakfast factory as if it were a "black box": input (the 
+  paso  2  L73   TRANSCRIPCION  We can think of our breakfast factory as if it were a "black box": input (the 
+  paso  3  L73   TRANSCRIPCION  We can think of our breakfast factory as if it were a "black box": input (the 
+  paso  4  L73   TRANSCRIPCION  We can think of our breakfast factory as if it were a "black box": input (the 
+  paso  5  L73   TRANSCRIPCION  We can think of our breakfast factory as if it were a "black box": input (the 
+  paso  6  L73   TRANSCRIPCION  We can think of our breakfast factory as if it were a "black box": input (the 
+  paso  7  L73   TRANSCRIPCION  We can think of our breakfast factory as if it were a "black box": input (the 
+  paso  8  L77   TRANSCRIPCION  The black box sorts out what the inputs, the output, and the labor are in the 
+  paso  9  L79   TRANSCRIPCION  By peering through the windows in the black box, we can get an idea of what th
+
+construir_indicador_linealidad_alerta_temprana   pasos 9 | TRANSCRIPCION 9 | PUENTE 0
+  paso  1  L83   TRANSCRIPCION  Leading indicators might include the daily monitors we use to run our breakfas
+  paso  2  L83   TRANSCRIPCION  Leading indicators might include the daily monitors we use to run our breakfas
+  paso  3  L83   TRANSCRIPCION  Leading indicators might include the daily monitors we use to run our breakfas
+  paso  4  L83   TRANSCRIPCION  Leading indicators might include the daily monitors we use to run our breakfas
+  paso  5  L83   TRANSCRIPCION  Leading indicators might include the daily monitors we use to run our breakfas
+  paso  6  L83   TRANSCRIPCION  Leading indicators might include the daily monitors we use to run our breakfas
+  paso  7  L87   TRANSCRIPCION  If we consider a manufacturing unit in this fashion, we may assume that becaus
+  paso  8  L87   TRANSCRIPCION  If we consider a manufacturing unit in this fashion, we may assume that becaus
+  paso  9  L87   TRANSCRIPCION  If we consider a manufacturing unit in this fashion, we may assume that becaus
+
+construir_indicador_tendencia_patron   pasos 6 | TRANSCRIPCION 6 | PUENTE 0
+  paso  1  L89   TRANSCRIPCION  Also valuable are trend indicators. These show output (breakfasts delivered, s
+  paso  2  L89   TRANSCRIPCION  Also valuable are trend indicators. These show output (breakfasts delivered, s
+  paso  3  L89   TRANSCRIPCION  Also valuable are trend indicators. These show output (breakfasts delivered, s
+  paso  4  L89   TRANSCRIPCION  Also valuable are trend indicators. These show output (breakfasts delivered, s
+  paso  5  L89   TRANSCRIPCION  Also valuable are trend indicators. These show output (breakfasts delivered, s
+  paso  6  L89   TRANSCRIPCION  Also valuable are trend indicators. These show output (breakfasts delivered, s
+
+construir_grafico_escalonado_pronosticos   pasos 8 | TRANSCRIPCION 8 | PUENTE 0
+  paso  1  L91   TRANSCRIPCION  Another sound way to anticipate the future is through the use of the stagger c
+  paso  2  L91   TRANSCRIPCION  Another sound way to anticipate the future is through the use of the stagger c
+  paso  3  L95   TRANSCRIPCION  (* means the actual number for that month)
+  paso  4  L91   TRANSCRIPCION  Another sound way to anticipate the future is through the use of the stagger c
+  paso  5  L93   TRANSCRIPCION  In my experience, nowhere has the stagger chart been more productive than in f
+  paso  6  L93   TRANSCRIPCION  In my experience, nowhere has the stagger chart been more productive than in f
+  paso  7  L93   TRANSCRIPCION  In my experience, nowhere has the stagger chart been more productive than in f
+  paso  8  L93   TRANSCRIPCION  In my experience, nowhere has the stagger chart been more productive than in f
+
+archivar_indicadores_resolver_problemas   pasos 4 | TRANSCRIPCION 4 | PUENTE 0
+  paso  1  L99   TRANSCRIPCION  Finally, indicators can be a big help in solving all types of problems. If som
+  paso  2  L99   TRANSCRIPCION  Finally, indicators can be a big help in solving all types of problems. If som
+  paso  3  L99   TRANSCRIPCION  Finally, indicators can be a big help in solving all types of problems. If som
+  paso  4  L99   TRANSCRIPCION  Finally, indicators can be a big help in solving all types of problems. If som
+
+elegir_fabricar_pedido_pronostico   pasos 9 | TRANSCRIPCION 9 | PUENTE 0
+  paso  1  L103  TRANSCRIPCION  There are two ways to control the output of any factory. Some industries build
+  paso  2  L103  TRANSCRIPCION  There are two ways to control the output of any factory. Some industries build
+  paso  3  L105  TRANSCRIPCION  But if your competition in the sofa business makes the same product but has it
+  paso  4  L105  TRANSCRIPCION  But if your competition in the sofa business makes the same product but has it
+  paso  5  L105  TRANSCRIPCION  But if your competition in the sofa business makes the same product but has it
+  paso  6  L107  TRANSCRIPCION  An obvious disadvantage here is that the manufacturer takes an inventory risk.
+  paso  7  L107  TRANSCRIPCION  An obvious disadvantage here is that the manufacturer takes an inventory risk.
+  paso  8  L109  TRANSCRIPCION  At Intel, we build to forecast because our customers demand that we respond to
+  paso  9  L109  TRANSCRIPCION  At Intel, we build to forecast because our customers demand that we respond to
+
+casar_flujo_fabricacion_flujo_ventas   pasos 12 | TRANSCRIPCION 12 | PUENTE 0
+  paso  1  L111  TRANSCRIPCION  Delivering a product that was built to forecast to a customer consists of two 
+  paso  2  L111  TRANSCRIPCION  Delivering a product that was built to forecast to a customer consists of two 
+  paso  3  L111  TRANSCRIPCION  Delivering a product that was built to forecast to a customer consists of two 
+  paso  4  L117  TRANSCRIPCION  The order for the product and the product itself should arrive at the shipping
+  paso  5  L113  TRANSCRIPCION  Because the art and science of forecasting is so complex, you might be tempted
+  paso  6  L113  TRANSCRIPCION  Because the art and science of forecasting is so complex, you might be tempted
+  paso  7  L115  TRANSCRIPCION  At Intel we try to match the two parallel flows with as much precision as poss
+  paso  8  L119  TRANSCRIPCION  The ideal is rarely found in the real world. More often, customer orders don't
+  paso  9  L119  TRANSCRIPCION  The ideal is rarely found in the real world. More often, customer orders don't
+  paso 10  L119  TRANSCRIPCION  The ideal is rarely found in the real world. More often, customer orders don't
+  paso 11  L119  TRANSCRIPCION  The ideal is rarely found in the real world. More often, customer orders don't
+  paso 12  L121  TRANSCRIPCION  It is a good idea to use stagger charts in both the manufacturing and sales fo
+
+dimensionar_plantilla_administrativa_pronostico   pasos 7 | TRANSCRIPCION 7 | PUENTE 0
+  paso  1  L125  TRANSCRIPCION  But if we have carefully chosen indicators that characterize an administrative
+  paso  2  L125  TRANSCRIPCION  But if we have carefully chosen indicators that characterize an administrative
+  paso  3  L125  TRANSCRIPCION  But if we have carefully chosen indicators that characterize an administrative
+  paso  4  L123  TRANSCRIPCION  Forecasting future work demands and then adjusting the output of an "administr
+  paso  5  L125  TRANSCRIPCION  But if we have carefully chosen indicators that characterize an administrative
+  paso  6  L125  TRANSCRIPCION  But if we have carefully chosen indicators that characterize an administrative
+  paso  7  L125  TRANSCRIPCION  But if we have carefully chosen indicators that characterize an administrative
+
+decidir_aceptar_rechazar_material_defectuoso   pasos 8 | TRANSCRIPCION 8 | PUENTE 0
+  paso  1  L135  TRANSCRIPCION  When material is rejected at incoming inspection, a couple of choices present 
+  paso  2  L135  TRANSCRIPCION  When material is rejected at incoming inspection, a couple of choices present 
+  paso  3  L135  TRANSCRIPCION  When material is rejected at incoming inspection, a couple of choices present 
+  paso  4  L135  TRANSCRIPCION  When material is rejected at incoming inspection, a couple of choices present 
+  paso  5  L135  TRANSCRIPCION  When material is rejected at incoming inspection, a couple of choices present 
+  paso  6  L135  TRANSCRIPCION  When material is rejected at incoming inspection, a couple of choices present 
+  paso  7  L137  TRANSCRIPCION  While in most instances the decision to accept or reject defective material at
+  paso  8  L137  TRANSCRIPCION  While in most instances the decision to accept or reject defective material at
+
+elegir_inspeccion_barrera_monitorizacion   pasos 12 | TRANSCRIPCION 12 | PUENTE 0
+  paso  1  L139  TRANSCRIPCION  Inspections, of course, cost money to perform and further add to expense by in
+  paso  2  L139  TRANSCRIPCION  Inspections, of course, cost money to perform and further add to expense by in
+  paso  3  L139  TRANSCRIPCION  Inspections, of course, cost money to perform and further add to expense by in
+  paso  4  L141  TRANSCRIPCION  Let's consider a few techniques commonly used to balance the two needs. There 
+  paso  5  L141  TRANSCRIPCION  Let's consider a few techniques commonly used to balance the two needs. There 
+  paso  6  L141  TRANSCRIPCION  Let's consider a few techniques commonly used to balance the two needs. There 
+  paso  7  L141  TRANSCRIPCION  Let's consider a few techniques commonly used to balance the two needs. There 
+  paso  8  L141  TRANSCRIPCION  Let's consider a few techniques commonly used to balance the two needs. There 
+  paso  9  L141  TRANSCRIPCION  Let's consider a few techniques commonly used to balance the two needs. There 
+  paso 10  L141  TRANSCRIPCION  Let's consider a few techniques commonly used to balance the two needs. There 
+  paso 11  L141  TRANSCRIPCION  Let's consider a few techniques commonly used to balance the two needs. There 
+  paso 12  L141  TRANSCRIPCION  Let's consider a few techniques commonly used to balance the two needs. There 
+
+variar_frecuencia_inspeccion_nivel_calidad   pasos 6 | TRANSCRIPCION 6 | PUENTE 0
+  paso  1  L143  TRANSCRIPCION  Another way to lower the cost of quality assurance is to use variable inspecti
+  paso  2  L143  TRANSCRIPCION  Another way to lower the cost of quality assurance is to use variable inspecti
+  paso  3  L143  TRANSCRIPCION  Another way to lower the cost of quality assurance is to use variable inspecti
+  paso  4  L143  TRANSCRIPCION  Another way to lower the cost of quality assurance is to use variable inspecti
+  paso  5  L143  TRANSCRIPCION  Another way to lower the cost of quality assurance is to use variable inspecti
+  paso  6  L143  TRANSCRIPCION  Another way to lower the cost of quality assurance is to use variable inspecti
+
+simplificar_trabajo_reducir_numero_pasos   pasos 7 | TRANSCRIPCION 7 | PUENTE 0
+  paso  1  L169  TRANSCRIPCION  Automation is certainly one way to improve the leverage of all types of work. 
+  paso  2  L169  TRANSCRIPCION  Automation is certainly one way to improve the leverage of all types of work. 
+  paso  3  L169  TRANSCRIPCION  Automation is certainly one way to improve the leverage of all types of work. 
+  paso  4  L169  TRANSCRIPCION  Automation is certainly one way to improve the leverage of all types of work. 
+  paso  5  L171  TRANSCRIPCION  To implement the actual simplification, you must question why each step is per
+  paso  6  L171  TRANSCRIPCION  To implement the actual simplification, you must question why each step is per
+  paso  7  L171  TRANSCRIPCION  To implement the actual simplification, you must question why each step is per
+
+==============================================================================
+EL SALDO DE LA RELECTURA, ROTULADO CON LA POBLACION QUE MIDE
+==============================================================================
+poblacion releida : los 15 candidatos que esta vuelta escribio de cap_03,
+                    NO el grafo y NO el capitulo entero del libro
+pasos releidos    : 121
+PUENTE            : 0
+PASOS INVENTADOS  : 0,00 por ciento

@@ -1,0 +1,45 @@
+nodos que se declaran CABEZA DE SERIE: 27
+id                                                         hijos  pasos
+abastecer_flujo_candidatos                                     6      6
+abordar_cinco_efes_venta                                       4      7
+aplicar_metodo_ghsmart_contratacion                            4      4
+aplicar_tacticas_maestras_entrevista                           4      5
+aprender_resultados_vencer_dos_presiones                       2      6
+comprobar_opinion_produce_mejora                               0      7
+conocer_fuerzas_valores_sesgos_propios                         0      7
+crear_tarjeta_puntuacion_puesto                                4      4
+decidir_quien_comunica_cada_cuanto                             9      6
+desplegar_tres_conversaciones_carrera                          3     12
+dominar_arte_socializar_trabajo                                1      9
+elegir_forma_inspirar_cambio_conducta                          0      7
+empezar_cultura_franqueza_radical                              4      6
+equilibrar_corto_largo_plazo                                   0     12
+facilitar_despido_tres_cosas                                   3     11
+fijar_resultado_excelente_reunion                              5     10
+ganar_confianza_personas_cargo                                 4      6
+minimizar_impuesto_colaboracion_equipo                         3      4
+planificar_cinco_olas_venta                                    5      8
+recorrer_rueda_hacer_cosas_equipo                              0     12
+recorrer_trece_elementos_proceso_evaluacion_formal            13     14
+repartir_papeles_directivo_reclutador                          2      7
+responder_tres_preguntas_vocacion_directiva                    0      6
+revisar_proposito_personas_proceso                             2      7
+seleccionar_jugador_cuatro_entrevistas                         6      6
+situar_transicion_cuatro_caminos                               4      8
+vender_puesto_jugador                                          2      3
+
+cita los trece de cap_14: recorrer_trece_elementos_proceso_evaluacion_formal
+cita los trece de cap_14: decidir_poner_nota_comunicar_proposito_limites
+cita los trece de cap_14: elegir_categorias_nota_palabras_propias_empresa
+cita los trece de cap_14: escribir_escaleras_puesto_evitar_dos_extremos
+cita los trece de cap_14: fijar_cuatro_notas_calcular_nota_global
+cita los trece de cap_14: elegir_palabras_nota_definirlas_empresa_entera
+cita los trece de cap_14: aplicar_consecuencias_nota_apoyar_fuerzas_persona
+cita los trece de cap_14: repartir_notas_publicar_reparto_esperado
+cita los trece de cap_14: presionar_curva_notas_evitar_forzarla
+cita los trece de cap_14: calibrar_notas_reunion_jefes_pares
+cita los trece de cap_14: evaluar_desempenio_dos_veces_anio
+cita los trece de cap_14: montar_evaluacion_360_grados_ligera_pares
+cita los trece de cap_14: hacer_critica_pares_transparente_ensenar_escribirla
+cita los trece de cap_14: mantener_proceso_evaluacion_ligero_vigilar_crecimiento
+nodos que citan la numeracion de los trece de cap_14: 14

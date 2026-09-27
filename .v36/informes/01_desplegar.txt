@@ -1,0 +1,38 @@
+$ python forja.py insertar cuarentena/scott_radical_candor/desplegar_tres_conversaciones_carrera.json --veredicto ... --censo ...
+ADUANA DE INSERCION, candidato 'desplegar_tres_conversaciones_carrera'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (302 del grafo mas 46 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 2. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino conversar_historia_vida_descubrir_motivadores  [Conversar la historia de vida de cada persona a tu cargo para descubrir que la motiva, que es la primera de las tres conversaciones de carrera]
+    levantada por: paso_contra_nodo
+    similitud_texto    0.225 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.647 (umbral 0.60)
+    paso 1 del candidato contra paso 1 de conversar_historia_vida_descubrir_motivadores
+
+  vecino desplegar_plan_orden_operaciones_franqueza_radical  [Desplegar en tu equipo el plan de franqueza radical por el orden de operaciones que el texto pone, etapa a etapa y con su parada de evaluacion en medio]
+    levantada por: paso_contra_nodo
+    similitud_texto    0.228 (umbral 0.35)
+    familia_id         0.111 (umbral 0.30)
+    paso_contra_nodo   0.608 (umbral 0.60)
+    paso 9 del candidato contra paso 14 de desplegar_plan_orden_operaciones_franqueza_radical
+  ARISTA EN COLA, no cableada: desplegar_tres_conversaciones_carrera > conversar_historia_vida_descubrir_motivadores
+    el otro extremo espera en la bandeja (D.29). El veredicto CONTINUA queda escrito y la arista se cablea cuando entre:
+      python forja.py arista --madre desplegar_tres_conversaciones_carrera --hijo conversar_historia_vida_descubrir_motivadores --paso <n> --razon "..."
+  ARISTA EN COLA, no cableada: desplegar_plan_orden_operaciones_franqueza_radical > desplegar_tres_conversaciones_carrera
+    el otro extremo espera en la bandeja (D.29). El veredicto CONTINUA queda escrito y la arista se cablea cuando entre:
+      python forja.py arista --madre desplegar_plan_orden_operaciones_franqueza_radical --hijo desplegar_tres_conversaciones_carrera --paso <n> --razon "..."
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 303
+  censos escritos: denominaciones, series_y_cabezas
+  veredictos en bitacora/VEREDICTOS.jsonl: 2
+  ARISTAS EN COLA, sin cablear: 2
+    desplegar_tres_conversaciones_carrera > conversar_historia_vida_descubrir_motivadores
+    desplegar_plan_orden_operaciones_franqueza_radical > desplegar_tres_conversaciones_carrera
+    D.29: van a un bloque propio y titulado del reporte, y se cablean con `forja.py arista` cuando el otro extremo entre.
+CODIGO DE SALIDA: 0

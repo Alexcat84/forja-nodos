@@ -1,0 +1,16 @@
+INSTRUMENTO .vg01a/par2.py  SIN CONSTANTES TECLEADAS: los ids llegan por argumento; busca en dataset/nodos.jsonl y en cuarentena/ entera
+====================================================================================================
+repartir_notas_publicar_reparto_esperado | SEDE: cuarentena\scott_radical_candor\repartir_notas_publicar_reparto_esperado.json
+TITULO: Repartir las notas sin una distribucion rigida y publicar el reparto que esperas, para que la calibracion no se vuelva opaca
+ENTREGABLE: El reparto de notas que esperas decidido a partir de las consecuencias de cada nota, y publicado a la organizacion para que las calibraciones no se vuelvan opacas.
+ACTIVACION: Cuando tienes que decidir que reparto de notas espera tu empresa y si lo haces publico.
+PASOS (9):
+   1. Ten delante la consideracion practica que el texto pone primera, y que no es menor: como repartes la tarta de la retribucion. Si vas a dar primas muy grandes a la gente que saca la nota alta, probablemente no te puedes permitir tener al cincuenta por ciento de la empresa en esa categoria.
+   2. Evita en general una distribucion demasiado rigida, por la razon que el texto da: puedes estar bendecido en un anio dado con un equipo excepcionalmente capaz, o maldito con un punado de gente haciendo un trabajo mediocre, y no quieres que una distribucion esperada te ciegue a la realidad.
+   3. Cuenta con lo que el texto dice que es lo mas importante en general: el proceso de calibracion.
+   4. Ten delante los porcentajes que la experiencia de la autora le da, y que ella misma marca como suyos: al menos un cinco por ciento de la gente probablemente necesita en cualquier momento dado el tipo de aviso fuerte que da la nota mas baja, y puede que a ti eso te parezca excesivamente duro para tu entorno, o no bastante duro.
+   5. Cuenta con lo que la nota alta significa en ese reparto: quieres dar premios desmesurados porque quieres retribuir con justicia a quien ha conseguido mas que los demas, y retenerlo. La autora ha encontrado que ese grupo es aproximadamente, y muy aproximadamente, un quince por ciento de un equipo.
+   6. Cuenta con que normalmente entre el uno y el cinco por ciento de una poblacion hace un trabajo de verdad excepcional, a quien quieres retener a toda costa. Identificar a esa gente es un ejercicio importante, y el texto dice que no hace falta crear una nota especial para ella.
+   7. Haz la cuenta que el texto hace con lo que queda: alrededor de un cuarenta por ciento de tu poblacion sacando la nota media y un cuarenta por ciento sacando la nota buena.
+   8. Decide tu las consecuencias de cada nota y, a partir de ahi, cual deberia ser el reparto, porque el texto dice expresamente que no sabe bastante de tu organizacion para decir si el reparto que describe es el correcto para ti.
+   9. Haz transparente a la organizacion el reparto que esperas ver, que es lo que el texto si recomienda, porque si no lo haces las calibraciones se vuelven opacas y excesivamente frustrantes.

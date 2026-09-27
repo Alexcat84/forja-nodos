@@ -1,0 +1,13 @@
+$ git rev-parse --abbrev-ref HEAD
+extraccion-mundo-11
+$ git log -1 --format="%h %ad %s" --date=iso
+77b506b 2026-09-21 00:02:27 -0400 Sincroniza loop.log, ultimo_auditor.json, ultimo_extractor.json y TABLERO antes de abrir la vuelta 59
+
+$ wc -l dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl config/pares_mutuos.jsonl
+    346 dataset/nodos.jsonl
+    740 bitacora/VEREDICTOS.jsonl
+      1 config/pares_mutuos.jsonl
+   1087 total
+
+$ ls cuarentena/grove_high_output/*.json | wc -l
+88

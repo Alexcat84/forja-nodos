@@ -1,0 +1,7 @@
+FRONTERA DE cap_07, RECOMPUESTA POR EL AUDITOR DE LA ACTA M4
+  fichero                        : fuentes/marquet_turn_the_ship/cap_07.md
+  filas de la tabla del reporte  : 49
+  suma de palabras DECLARADA     : 2189
+  cuerpo real L8+ (suma wc -w)   : 2189
+  lineas con palabras SIN CUBRIR : 0  []
+  DISCREPANCIAS fila a fila      : 0

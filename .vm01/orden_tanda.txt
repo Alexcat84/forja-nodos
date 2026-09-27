@@ -1,0 +1,8 @@
+[
+ (1,'P1 mas P2','recorrer_organizacion_escuchar_plantilla','c1_recorrer_organizacion_escuchar_plantilla.txt',2),
+ (2,'P3','observar_reunion_rutinaria_senales_plantilla','c2_observar_reunion_rutinaria_senales_plantilla.txt',2),
+ (3,'P4','seguir_frustrado_preguntar_implantacion_ideas','c3_seguir_frustrado_preguntar_implantacion_ideas.txt',1),
+ (4,'P5','contar_firmas_cadena_tramite_parado','c4_contar_firmas_cadena_tramite_parado.txt',1),
+ (5,'P6','inspeccionar_reparto_informacion_notas_jefe','c5_inspeccionar_reparto_informacion_notas_jefe.txt',1),
+ (6,'P7','auditar_formacion_premios_ultima_fila','c6_auditar_formacion_premios_ultima_fila.txt',2),
+]

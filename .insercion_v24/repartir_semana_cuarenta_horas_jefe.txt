@@ -1,0 +1,7 @@
+ADUANA DE INSERCION, candidato 'repartir_semana_cuarenta_horas_jefe'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi seÃ±al contra 204 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 205
+  censos escritos: atribuciones, denominaciones

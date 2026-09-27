@@ -1,0 +1,8 @@
+$ python .v45/censo_aristas.py   (despues)
+poblacion: bitacora/VEREDICTOS.jsonl, 740 lineas, SIN filtrar
+lineas de arista declarada por lectura : 93
+  CONTINUA     1
+  SANO         13
+  SIN LECTURA PROPIA 79
+  con cita_del_veredicto : 93
+  ya con correccion declarada dentro : 92

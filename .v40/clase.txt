@@ -1,0 +1,58 @@
+LOS PASOS DE LA CLASE QUE EL ENCARGO MANDA RELEER ENTERA (TAREA 2)
+  marcados por el instrumento; el veredicto de cada uno lo pone la lectura
+
+  abrazar_incomodidad_silencio_contar_seis
+    pasos: 12 | de la clase: 10
+      P01  cuenta, sentimiento
+      P02  sentimiento
+      P04  sentimiento
+      P05  sentimiento
+      P06  cuenta, sentimiento
+      P07  cuenta, escalon
+      P08  sentimiento
+      P09  sentimiento
+      P10  cuenta, escalon, sentimiento
+      P12  sentimiento
+
+  escuchar_entender_critica_dominar_defensa
+    pasos: 13 | de la clase: 6
+      P03  cuenta, sentimiento
+      P05  cuenta, escalon
+      P06  cuenta
+      P09  sentimiento
+      P11  persona
+      P13  cuenta, escalon
+
+  premiar_franqueza_hacer_escucha_tangible
+    pasos: 20 | de la clase: 15
+      P01  cuenta, sentimiento
+      P02  cuenta
+      P03  cuenta, sentimiento
+      P04  persona
+      P05  persona, cuenta, escalon
+      P07  cuenta, sentimiento
+      P08  cuenta, escalon
+      P09  sentimiento
+      P11  cuenta, escalon, sentimiento
+      P12  escalon
+      P13  sentimiento
+      P14  cuenta, escalon
+      P15  cuenta
+      P18  cuenta, sentimiento
+      P20  cuenta, sentimiento
+
+  integrar_peticion_critica_rutina_existente
+    pasos: 13 | de la clase: 11
+      P01  cuenta, escalon, sentimiento
+      P02  cuenta, escalon
+      P03  cuenta
+      P04  cuenta, escalon, sentimiento
+      P05  sentimiento
+      P06  cuenta, sentimiento
+      P08  escalon
+      P09  cuenta, sentimiento
+      P10  sentimiento
+      P11  cuenta, sentimiento
+      P12  escalon
+
+  EL TRAMO ENTERO: 58 pasos, 42 de la clase (72,4 por ciento)

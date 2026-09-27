@@ -1,0 +1,5 @@
+bandeja lote 4 : 111
+insertados l4  : 31
+bandeja lote 5 : 3
+insertados todos: 232
+pares_mutuos   : 1

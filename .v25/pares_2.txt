@@ -1,0 +1,35 @@
+==============================================================================
+cuidar_persona_completa_equipo   [bandeja]
+==============================================================================
+TITULO    : Cuidar a la persona completa de cada miembro del equipo, con los cuatro medios que el libro nombra y los tres que descarta
+ACTIVACION: 
+ENTREGABLE: 
+  P1  Cuenta con lo que el texto pone como causa de que la gente no cuide personalmente: el mandato de mantenerlo profesional, que segun el texto niega algo esencial, y la sensacion de ser mejor o mas listo que quien trabaja para ti, que el texto llama sentido de superioridad.
+  P2  Reconoce que ser jefe es un puesto de trabajo, no un juicio de valor, que es lo que el texto pone contra ese sentido de superioridad.
+  P3  No te quedes en cuidar el trabajo de la persona ni su carrera: el texto dice expresamente que eso no basta y que solo cuidando a la persona completa con tu persona completa se construye la relacion.
+  P4  Busca tiempo para conversaciones de verdad, que es el primero de los medios que el texto nombra.
+  P5  Conoceos mutuamente a nivel humano, que es el segundo.
+  P6  Aprende que es importante para cada persona, que es el tercero.
+  P7  Compartid mutuamente que os hace querer levantaros por la maniana e ir a trabajar, y que tiene el efecto contrario, que es el cuarto.
+  P8  Da ejemplo tu primero mostrando alguna vulnerabilidad a tus personas a cargo, o simplemente admitiendo cuando tienes un mal dia, y crea un espacio seguro para que los demas hagan lo mismo, que es como el texto describe traer tu persona entera al trabajo.
+  P9  No confundas esto con memorizar cumpleanios y nombres de familiares, ni con contar los detalles sordidos de tu vida personal, ni con la charla forzada en actos sociales a los que preferirias no ir: el texto descarta los tres por su nombre.
+  P10 Cuenta con el precio que el texto pone al lado: tienes que cuidar profundamente de la gente estando preparado para que te odien a cambio, y si puedes absorber los golpes es mas probable que los tuyos sean buenos jefes cuando les toque. El texto avisa de que puede que nunca te lo devuelvan, y de que es probable que lo pasen adelante.
+
+==============================================================================
+imaginar_caso_simple_bragueta_abierta   [GRAFO]
+==============================================================================
+TITULO    : Imaginar el caso simple de la bragueta abierta antes de decir algo dificil, y mirar en que cuadrante cae tu silencio
+ACTIVACION: 
+ENTREGABLE: 
+  P1  Cuenta con lo que el texto avisa: decidir si estas siendo radicalmente franco o no puede ser mas dificil de lo que parece.
+  P2  Usa la via que el texto propone para eso: una forma de resolver un problema dificil es pensar en uno mas simple pero parecido, recordar como lo resolviste, y aplicar esa tecnica al dificil. El texto dice que sirve igual para las situaciones emocionales.
+  P3  Cuando te toque decir algo muy dificil de oir, finge que solo estas diciendo llevas la bragueta abierta, o tienes espinacas entre los dientes. El texto dice que esos escenarios menos cargados ayudan a encarar los problemas grandes de forma mas directa.
+  P4  Imagina el escenario entero: un colega sale del servicio con la bragueta bajada y el faldon de la camisa fuera. Que dices?
+  P5  La franqueza radical es apartarlo y decirselo en voz baja, aniadiendo que a ti te agrada que te lo digan cuando te ha pasado lo mismo y que esperas que no le importe que se lo menciones.
+  P6  La agresion odiosa es senialarlo en voz alta delante de otros intentando hacer gracia humillandolo a proposito. El texto aniade que aun asi no es el peor escenario desde el punto de vista del afectado, porque al menos le diste la ocasion de arreglarlo.
+  P7  La empatia ruinosa es callarte porque sabes que es timido y se va a avergonzar, con lo que lo ven diez personas mas y cuando se da cuenta es evidente que llevaba mucho rato asi, y acaba mas avergonzado que si se lo hubieras dicho en el acto.
+  P8  La insinceridad manipuladora es callarte pensando en tus propios sentimientos y en tu reputacion, no por el sino por ahorrartelo tu, porque te importa mucho caer bien y te preocupa que te juzguen si te oyen decirselo. Y si eres del todo desvergonzado, susurrarselo al siguiente que pase.
+  P9  No reserves esto para la gente que ya conoces bien. El texto avisa de que la necesidad de comunicacion honesta no siempre espera a que haya relacion estrecha, y de que el silencio de un casi desconocido invita a mas incomodidad y mas desconfianza que decirlo: la proxima vez que os veais habra incomodidad por el recuerdo, y en tu reticencia quedan sembradas las semillas de la desconfianza.
+  P10 Usalo en caliente como control: la proxima vez que veas una bragueta metaforica bajada y te tiente no decir nada, imagina donde te pone eso en el marco, empatia ruinosa o insinceridad manipuladora, y deja que el tironcito te mueva hacia la franqueza radical.
+  P11 Cuenta con la regla que el texto recoge de Kim Vorrath, responsable en Apple del equipo de iOS que hizo el software del telefono: dilo sin mas.
+

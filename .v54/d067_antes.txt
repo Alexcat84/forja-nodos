@@ -1,0 +1,5 @@
+$ python .v54/d067_antes.py
+LA PREGUNTA DE LA PRUEBA 3733: deuda.ultima_saneamiento()
+  sobre el registro de 4365888 (antes de mi declaracion) : 49
+  sobre el registro VIVO de hoy                     : 54
+  lo que la prueba exige                            : 49

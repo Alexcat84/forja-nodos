@@ -1,0 +1,36 @@
+{
+  "condiciones_activacion": "Cuando estas conduciendo cualquiera de las entrevistas del metodo y llegas al tramo final de la sesion. Es la segunda de las cinco olas de la venta, y solo se activa si sigues viendo potencial en el candidato.",
+  "denominaciones": {
+    "nombre_largo": "La segunda ola de la venta: cuando entrevistas",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "When you interview"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "contratacion",
+  "entregable_esperado": "El candidato conociendote a ti y a la casa, y tu con una idea mas clara de como enmarcar la oferta que acabara atrayendolo.",
+  "escala_minima": "Una sola entrevista: la ola cabe entera en el tiempo de preguntas del final de una sesion.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "smart_who",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "id": "vender_final_entrevista",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Vende hacia el final de cada entrevista, que es donde tipicamente cae la venta dentro del proceso de entrevistas.",
+    "Monta cada sesion diciendo algo asi: nos gustaria dedicar la primera parte de esta entrevista a conocerte, y despues nos gustaria darte la oportunidad de conocernos a nosotros.",
+    "Ponte el sombrero de vendedor en el tiempo de preguntas del final, siempre que sigas viendo potencial en el candidato.",
+    "Presta atencion a lo que el candidato dice durante la entrevista: con eso tendras una idea mas clara de como enmarcar la oferta que acabara atrayendo a esa persona a tu empresa.",
+    "Lee lo que revela cada pregunta suya y vende ese punto concreto."
+  ],
+  "resumen_teorico": "Es la segunda de las cinco olas de la venta y la mas barata de todas, porque cae dentro de una sesion que ya ibas a tener. El libro la ata a la frase de arranque que ya habia recomendado antes para montar cada entrevista, y que aqui imprime entera: nos gustaria dedicar la primera parte de esta entrevista a conocerte, y despues nos gustaria darte la oportunidad de conocernos a nosotros. Esa segunda mitad es la ola. El caso trabajado que el libro pone para enseñar a leer las preguntas del candidato es el de una conservadora de museo de arte: si al final pregunta si el museo financia del todo la formacion continua de sus empleados, ya sabes dos cosas, que le interesa mejorar sus puntos flojos y ampliar su experiencia, y que cuanto mas atractivas sean tus oportunidades de formacion continua, no solo titulaciones sino tambien viajes, mayor sera la probabilidad de que diga que si cuando le hagas una oferta. La regla que el caso ilustra es que la pregunta del candidato es informacion de venta, y que si es asi hay que vender ese punto.",
+  "titulo": "Vender al final de cada entrevista, en el tiempo de preguntas"
+}

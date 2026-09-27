@@ -1,0 +1,15 @@
+candidato                                                    cap     pasos   T   P
+usar_banco_nueve_preguntas_entrevista                        cap_15      9   7   2
+responder_primer_aviso_renuncia_subordinado                  cap_15      7   6   1
+gestionar_retencion_subordinado_valioso_renuncia             cap_15      6   4   2
+reciclar_empleado_ascendido_mas_alla_capacidad               cap_16      4   4   0
+priorizar_lista_entrenamiento_subordinados                   cap_17      5   5   0
+desarrollar_primer_curso_entrenamiento                       cap_17      7   7   0
+pedir_critica_anonima_curso_entrenamiento_dictado            cap_17      4   3   1
+pasos sin fila: 0 [] | filas sin paso: 0 []
+
+PASOS INVENTADOS POR CAPITULO, las 7 de cap_15 a cap_17 (COPIA de la vuelta 73 de .v71ext/contar_fidelidad.py, ruta cambiada)
+cap_15  candidatos 3  pasos 22  T 17  P 5  inventado 22,7 por ciento
+cap_16  candidatos 1  pasos 4  T 4  P 0  inventado 0,0 por ciento
+cap_17  candidatos 3  pasos 16  T 15  P 1  inventado 6,2 por ciento
+peor capitulo: cap_15, 5 de 22, 22,7 por ciento; por encima del 10: cap_15

@@ -1,0 +1,66 @@
+fila 10, informar_cierre_jornada_conservar_propiedad_trabajo, lineas --veredicto: 6
+  --veredicto seguir_frustrado_preguntar_implantacion_ideas|SANO|Hermanos: el vecino sigue al responsable frustrado y le pregunta por sus ideas (cap_03 L23 a L29), y este es el guion del cierre de jornada (cap_04 L35). La similitud de 0,412, por encima de 0,4, se lee primero: los dos tratan a un jefe de departamento y su superior, con objetos distintos; ninguno usa el producto del otro.
+  --veredicto operar_modelo_gente_destreza_minima|SANO|Ajenos: el vecino del grafo, de gerber_emyth, opera el modelo del negocio con la destreza minima y un sistema que la apalanca; este es el reporte de cierre de jornada al segundo al mando (cap_04 L35). La similitud es de prosa, sin paso comun.
+  --veredicto cuantificar_impacto_innovacion_6_pasos|SANO|Ajenos: el vecino del grafo, de gerber_emyth, cuenta seis cifras antes y despues de una innovacion; este reporta al cerrar el dia (cap_04 L35). La similitud es de la forma de guion citado, sin paso comun.
+  --veredicto dictar_ritmo_crecimiento_preguntas_escritas|SANO|Ajenos: el vecino del grafo, de gerber_emyth, dicta el ritmo de crecimiento con preguntas y un plan escrito; este reporta al cerrar el dia (cap_04 L35). Sin paso comun.
+  --veredicto interrogar_negocio_cinco_preguntas|SANO|Ajenos: el vecino del grafo, de gerber_emyth, se hace cinco preguntas sobre el prototipo del negocio; este reporta al cerrar el dia (cap_04 L35). Sin paso comun.
+  --veredicto usar_banco_nueve_preguntas_entrevista|SANO|Ajenos: el vecino del grafo, de grove_high_output, entrevista a un candidato con nueve preguntas; este reporta al cerrar el dia (cap_04 L35). La similitud es de las frases citadas entre comillas, sin paso comun.
+inicio 2026-09-26 19:16:55
+======================================================================
+ADUANA DE INSERCION, candidato 'informar_cierre_jornada_conservar_propiedad_trabajo'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (468 del grafo mas 11 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 6. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino seguir_frustrado_preguntar_implantacion_ideas  [Seguir al que viste frustrado en una reunion y preguntarle, idea por idea, como la implanto]
+    levantada por: similitud_texto
+    similitud_texto    0.412 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.391 (umbral 0.60)
+    paso 3 del candidato contra paso 1 de seguir_frustrado_preguntar_implantacion_ideas
+
+  vecino operar_modelo_gente_destreza_minima  [Operar el modelo con gente del nivel de destreza mas bajo posible, y construir el sistema que la apalanca]
+    levantada por: similitud_texto
+    similitud_texto    0.364 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.399 (umbral 0.60)
+    paso 3 del candidato contra paso 2 de operar_modelo_gente_destreza_minima
+
+  vecino cuantificar_impacto_innovacion_6_pasos  [Cuantificar el impacto real de una innovacion en tu negocio con los seis conteos que el libro enumera]
+    levantada por: similitud_texto
+    similitud_texto    0.392 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.294 (umbral 0.60)
+    paso 2 del candidato contra paso 2 de cuantificar_impacto_innovacion_6_pasos
+
+  vecino dictar_ritmo_crecimiento_preguntas_escritas  [Dictar el ritmo de crecimiento de tu negocio con los tres conocimientos clave, las preguntas correctas y el plan escrito]
+    levantada por: similitud_texto
+    similitud_texto    0.361 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.390 (umbral 0.60)
+    paso 2 del candidato contra paso 7 de dictar_ritmo_crecimiento_preguntas_escritas
+
+  vecino interrogar_negocio_cinco_preguntas  [Ponerte a trabajar en tu negocio como si fuera un prototipo de preproduccion, y hacerte las cinco preguntas del capitulo]
+    levantada por: similitud_texto
+    similitud_texto    0.360 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.390 (umbral 0.60)
+    paso 2 del candidato contra paso 9 de interrogar_negocio_cinco_preguntas
+
+  vecino usar_banco_nueve_preguntas_entrevista  [Usar el banco de nueve preguntas que un grupo de mandos considero las mejores para entrevistar a un candidato]
+    levantada por: similitud_texto
+    similitud_texto    0.351 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.329 (umbral 0.60)
+    paso 1 del candidato contra paso 8 de usar_banco_nueve_preguntas_entrevista
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 469
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 6
+
+======================================================================
+fin 2026-09-26 19:26:06 | codigo de salida 0 | 550.9 s

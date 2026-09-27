@@ -1,0 +1,40 @@
+La casa declara, luego pega la comprobacion, y solo despues la tabla. ... ok
+test_un_instrumento_sin_tabla_no_se_puede_comprobar_y_no_es_diferencia (__main__.PruebaTallado.test_un_instrumento_sin_tabla_no_se_puede_comprobar_y_no_es_diferencia) ... ok
+test_un_reflujo_de_espacios_no_es_una_cifra_falsa (__main__.PruebaTallado.test_un_reflujo_de_espacios_no_es_una_cifra_falsa)
+El instrumento alinea con dos espacios y el markdown con uno. ... ok
+test_una_fila_que_falta_y_una_que_sobra_se_nombran (__main__.PruebaTallado.test_una_fila_que_falta_y_una_que_sobra_se_nombran) ... ok
+test_una_salida_que_no_esta_es_SIN_COMPROBAR_y_lo_dice (__main__.PruebaTallado.test_una_salida_que_no_esta_es_SIN_COMPROBAR_y_lo_dice) ... ok
+test_una_tabla_declarada_PARCIAL_cita_y_no_reproduce (__main__.PruebaTallado.test_una_tabla_declarada_PARCIAL_cita_y_no_reproduce)
+Una tabla de resumen puede traer DOS filas de instrumento y diez que no. ... ok
+test_una_tabla_pegada_de_su_instrumento_pasa (__main__.PruebaTallado.test_una_tabla_pegada_de_su_instrumento_pasa) ... ok
+
+----------------------------------------------------------------------
+Ran 111 tests in 12.447s
+
+OK
+
+========================================================================
+PRUEBA DE ACEPTACION DE forja-nodos
+========================================================================
+  A. VERDE: el nodo ejemplo entro limpio, el gate quedo verde y los censos registraron las tres denominaciones por separado
+  B. VERDE: gemelo bloqueado (codigo 2) citando a registrar_fuente_canonica y la señal (similitud_texto)
+  C. VERDE: el hijo quedo bloqueado sin veredicto y entro tras declarar CONTINUA; la arista se declaro por el alias 'registro_fuentes_canonicas' y quedo escrita resuelta como registrar_fuente_canonica > elegir_grafia_clave
+  D. VERDE: la auto-arista via alias (saneo_grafo apunta a sanear_grafo) puso el gate en rojo, y la comparacion literal no la veia: cero coincidencias literales en el mismo dato
+  E. VERDE: hooks/pre-commit aborto con el guion largo (rojo con el archivo, verde sin el, verde de nuevo al quitarlo)
+  F. VERDE: el candidato con la fuente 'libro_que_nadie_registro' fue rechazado y no toco el dataset
+
+  guardas del gate y resolutor: 10 pruebas mas, cada una con su caso positivo
+  adjudicaciones del auditor (A.1 MUTUO, A.2 fuentes con fecha): 3 pruebas mas
+  TANDA A de la v0.3 (C.1 cita de linea, C.2 registro de citas, C.3 vigencia, C.4 no aplica, D.17 deprecado): 20 pruebas mas
+  el barrido NO entra en las bandejas de entrada (estreno del 9 sep 2026): 4 pruebas mas
+  reglas de id 1 y 2, reescritas por el fundador (10 sep 2026): 8 pruebas mas
+  D.29, la arista que la señal no levanta se declara por lectura: 6 pruebas mas
+  D.31, el candidato insertado se archiva y el informe no lo cuenta: 4 pruebas mas
+  D.37, la serie declarada por el titulo es arista por lectura: 7 pruebas mas
+  la sede de los pares mutuos nace vacia con su cabecera (5.7): 3 pruebas mas
+  D.40, lo que un auditor le deja al siguiente lo entrega el arnes: 13 pruebas mas
+  la poblacion del informe es grafo mas bandejas (12 sep 2026, punto 3): 6 pruebas mas
+  D.41, la tabla que dice ser de instrumento es la del instrumento: 13 pruebas mas
+
+  total: 111 pruebas, 0 fallos, 0 errores
+========================================================================

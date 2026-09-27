@@ -1,0 +1,7 @@
+ADUANA DE INSERCION, candidato 'conducir_reunion_equipo_agenda_tres_bloques'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (261 del grafo mas 87 que esperan en bandejas)
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 262
+  censos escritos: denominaciones

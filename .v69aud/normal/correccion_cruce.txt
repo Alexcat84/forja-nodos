@@ -1,0 +1,21 @@
+(1) veredictos: pares dirigidos antes 118 | hoy 118 | nuevos 0 | desaparecidos 0
+    por estado: {'igual': 102, 'solo razon': 8, 'clase o madre': 8} | suma: 118
+  cubrir_indicadores_problemas_reunion_individual  > usar_tres_clases_reunion_proceso                 CONTINUA usar_tres_clases_reunion_proceso -> SANO
+  fijar_duracion_lugar_reunion_individual          > usar_tres_clases_reunion_proceso                 CONTINUA usar_tres_clases_reunion_proceso -> SANO
+  fijar_frecuencia_reunion_individual_madurez_tarea > usar_tres_clases_reunion_proceso                 CONTINUA usar_tres_clases_reunion_proceso -> SANO
+  preparar_guion_reunion_individual_subordinado    > usar_tres_clases_reunion_proceso                 CONTINUA usar_tres_clases_reunion_proceso -> SANO
+  usar_tres_clases_reunion_proceso                 > cubrir_indicadores_problemas_reunion_individual  CONTINUA usar_tres_clases_reunion_proceso -> SANO
+  usar_tres_clases_reunion_proceso                 > fijar_duracion_lugar_reunion_individual          CONTINUA usar_tres_clases_reunion_proceso -> SANO
+  usar_tres_clases_reunion_proceso                 > fijar_frecuencia_reunion_individual_madurez_tarea CONTINUA usar_tres_clases_reunion_proceso -> SANO
+  usar_tres_clases_reunion_proceso                 > preparar_guion_reunion_individual_subordinado    CONTINUA usar_tres_clases_reunion_proceso -> SANO
+    CONTINUA de hoy por madre: {'preparar_guion_reunion_individual_subordinado': 2, 'tomar_notas_copia_guion_reunion_individual': 2} | suma: 4
+    lineas quitadas: 16 | presentes enteras al final de un comentario # vuelta 69: 16 | comentarios # vuelta 69: 16
+(2) pares sin orden suyos hoy: 70 | leidos desde los dos lados con clase distinta: 0 | contra mis clases selladas: {'igual': 70} | suma: 70
+(3) aristas por lectura: pares antes 16 | hoy 16 | que cambian de clase: 4
+  usar_tres_clases_reunion_proceso                 > acumular_asuntos_importantes_fichero_espera      SOSTENGO -> NO SOSTENGO
+  usar_tres_clases_reunion_proceso                 > alentar_asuntos_corazon_vigilar_final_reunion    SOSTENGO -> NO SOSTENGO
+  usar_tres_clases_reunion_proceso                 > facilitar_expresion_subordinado_pregunta_mas     SOSTENGO -> NO SOSTENGO
+  usar_tres_clases_reunion_proceso                 > programar_reunion_individual_cadena              SOSTENGO -> NO SOSTENGO
+    pares de hoy por clase: {'SOSTENGO': 5, 'NO SOSTENGO': 11} | suma: 16
+    lineas quitadas: 5 | presentes enteras al final de un comentario # vuelta 69: 5 | comentarios # vuelta 69: 7
+    aristas esperadas en la 70: suyas 7 | mias selladas 7 | iguales 7 | solo suyas [] | solo mias []

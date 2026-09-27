@@ -1,0 +1,18 @@
+$ sed -n '11,13p;24p' .v77aud/normal/tablero.txt
+  1    7    grove_high_output              INSERTADO              NINGUNO                  0  cap_18
+  2    9    gerber_emyth                   INSERTADO              NINGUNO                  0  cap_22
+  3    5    marquet_turn_the_ship          COSECHADO              NINGUNO                 20  cap_17
+  MUNDO 11: faltan 1 de 7 libros del corte (marquet_turn_the_ship)
+$ cat .v77aud/normal/clase78.txt
+$ python scripts/deuda.py --clase 78
+LIBRE
+  van 4 de 5 desde la ultima de saneamiento (la 74), con 50 deuda(s) esperando
+$ python forja.py tablero --puedo marquet_turn_the_ship
+LINEA 'serial', LIBRO 'marquet_turn_the_ship': SI
+  'marquet_turn_the_ship' esta COSECHADO y sin dueño: su trabajo ya llego a esta rama, asi que se continua desde el capitulo siguiente al ultimo minado (cap_17), citando su frontera. D.50.
+$ python .v77aud/normal/bandeja_marquet.py | tail -2
+fichas por capitulo: {'cap_01': 1, 'cap_02': 2, 'cap_03': 6, 'cap_04': 1, 'cap_06': 2, 'cap_07': 1, 'cap_08': 1, 'cap_09': 1, 'cap_10': 1, 'cap_11': 1, 'cap_12': 1, 'cap_13': 1, 'cap_14': 1} | suma: 20
+pasos por capitulo: {'cap_01': 6, 'cap_02': 10, 'cap_03': 53, 'cap_04': 5, 'cap_06': 8, 'cap_07': 3, 'cap_08': 5, 'cap_09': 2, 'cap_10': 3, 'cap_11': 3, 'cap_12': 8, 'cap_13': 2, 'cap_14': 2} | suma: 110
+$ ls fuentes/marquet_turn_the_ship | wc -l; grep -c "marquet_turn_the_ship" fuentes/FUENTES_CANONICAS.json
+17
+2

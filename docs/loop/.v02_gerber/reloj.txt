@@ -1,0 +1,3 @@
+arranco  : 2026-09-16 23:38:09
+termino  : 2026-09-17 00:37:23
+duracion : 59 min 14 s

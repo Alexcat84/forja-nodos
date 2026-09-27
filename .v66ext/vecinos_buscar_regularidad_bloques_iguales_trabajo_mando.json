@@ -1,0 +1,59 @@
+{
+ "id": "buscar_regularidad_bloques_iguales_trabajo_mando",
+ "grafo": 368,
+ "bandejas": 111,
+ "vecinos": [
+  {
+   "id": "agrupar_tareas_semejantes_aprovechar_preparacion",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.292,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.718
+   },
+   "levantada_por": [
+    "paso_contra_nodo"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 1 de agrupar_tareas_semejantes_aprovechar_preparacion"
+  },
+  {
+   "id": "preparar_respuestas_estandar_interrupciones_repetidas",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.396,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.543
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 1 de preparar_respuestas_estandar_interrupciones_repetidas"
+  },
+  {
+   "id": "agrupar_interrupciones_subordinados_reuniones_regulares",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.375,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.417
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 6 del candidato contra paso 2 de agrupar_interrupciones_subordinados_reuniones_regulares"
+  },
+  {
+   "id": "llevar_inventario_proyectos_discrecionales",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.361,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.374
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 5 del candidato contra paso 5 de llevar_inventario_proyectos_discrecionales"
+  }
+ ]
+}

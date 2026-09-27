@@ -1,0 +1,16 @@
+EL INFORME DEL LOTE ENTERO QUE EL ENCARGO PIDE, Y LO QUE LE PASO
+======================================================================
+  lanzado                                  : 2026-09-20T14:35:25-04:00
+  detenido por mi, sin salida               : 2026-09-20T15:06:33-04:00
+  RELOJ CONSUMIDO SIN IMPRIMIR UNA SOLA CIFRA: 1868 s
+  bytes de salida que dejo                  : 33   (solo la linea INICIO)
+
+  LA PROYECCION, con MI propia media de hoy y no con una heredada:
+    candidatos de la bandeja de grove_high_output : 74
+    media por pasada medida hoy (.v55ext/saldo_uno_a_uno.txt) : 196.8 s
+    PROYECCION DEL LOTE ENTERO                    : 14563 s, o sea 4.0 horas
+
+  CONTRA LA MEDIDA QUE ESCRIBIO D.43 (EXTRACTOR.md 12):
+    D.43 midio 156,5 s por candidato y mas de tres horas para un lote de 83.
+    La vuelta 20 lo lanzo y lo dejo en 480 bytes, solo la cabecera.
+    Hoy lo lanzo yo y lo dejo en 33 bytes, solo la linea INICIO.

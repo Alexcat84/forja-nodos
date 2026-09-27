@@ -1,0 +1,26 @@
+fila 15, diagnosticar_nivel_motivacion_reaccion_aumento_salario, lineas --veredicto: 1
+  --veredicto diagnosticar_capacidad_motivacion_prueba_vida|SANO|El mismo par que diagnosticar_capacidad lee desde su lado: hermanos, dos pruebas distintas (L85, L17).
+inicio 2026-09-26 00:03:07
+======================================================================
+ADUANA DE INSERCION, candidato 'diagnosticar_nivel_motivacion_reaccion_aumento_salario'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (424 del grafo mas 55 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino diagnosticar_capacidad_motivacion_prueba_vida  [Diagnosticar si un subordinado que no rinde no puede o no quiere, con la prueba mental de si podria hacer el trabajo si su vida dependiera de ello]
+    levantada por: similitud_texto
+    similitud_texto    0.361 (umbral 0.35)
+    familia_id         0.222 (umbral 0.30)
+    paso_contra_nodo   0.347 (umbral 0.60)
+    paso 2 del candidato contra paso 1 de diagnosticar_capacidad_motivacion_prueba_vida
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 425
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 1
+
+======================================================================
+fin 2026-09-26 00:15:04 | codigo de salida 0 | 717.1 s

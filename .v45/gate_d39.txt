@@ -1,0 +1,27 @@
+$ python -c "las claves de cerrados_en_extraccion, leidas de config/frentes.json"
+  CERRADO EN EXTRACCION: smart_who   cita: ACTA 8 seccion 10
+  CERRADO EN EXTRACCION: zhuo_manager   cita: ACTA 13 seccion 8.1
+  CERRADO EN EXTRACCION: scott_radical_candor   cita: ACTA 24
+  grove_high_output en la lista: False
+
+$ grep -n "cerrados_en_extraccion" -A 12 config/frentes.json
+38:  "cerrados_en_extraccion": {
+39-    "smart_who": {
+40-      "cita": "ACTA 8 seccion 10"
+41-    },
+42-    "zhuo_manager": {
+43-      "cita": "ACTA 13 seccion 8.1"
+44-    },
+45-    "scott_radical_candor": {
+46-      "cita": "ACTA 24"
+47-    }
+48-  },
+49-  "orden_de_prioridad": {
+50-    "cita": "decision del fundador del 17 sep 2026, EL ORDEN DE PRIORIDAD DEL MUNDO 11",
+
+$ ls fuentes/grove_high_output/*.md | wc -l    (capitulos del libro en la bandeja de entrada)
+18
+
+$ python forja.py tablero | grep grove
+  1    7    grove_high_output              COSECHADO              NINGUNO                 22  cap_03
+  MUNDO 11: faltan 3 de 3 libros del corte (grove_high_output, gerber_emyth, marquet_turn_the_ship)

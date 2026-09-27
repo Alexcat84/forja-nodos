@@ -1,0 +1,21 @@
+CABLEADO Y ATRIBUCIONES DE LOS 12 QUE ENTRAN (dataset de 282 nodos, arbol 1ae327e)
+
+  integrar_trabajo_vida_mejor_version          previos 0 []                                             siguientes 0 []                                             atribuciones 0
+  definir_receta_propia_mantenerse_centrado    previos 0 []                                             siguientes 0 []                                             atribuciones 0
+  agendar_cuidados_propios_cumplirlos          previos 0 []                                             siguientes 0 []                                             atribuciones 0
+  ceder_autoridad_unilateral_equipo            previos 0 []                                             siguientes 0 []                                             atribuciones 0
+  dominar_arte_socializar_trabajo              previos 0 []                                             siguientes 1 ['evitar_presion_social_actos_equipo']         atribuciones 0
+  evitar_presion_social_actos_equipo           previos 1 ['dominar_arte_socializar_trabajo']            siguientes 0 []                                             atribuciones 0
+  construir_confianza_equipo_tiempo_solas      previos 0 []                                             siguientes 1 ['montar_reuniones_solas_mentalidad_frecuencia atribuciones 0
+  vivir_valores_propios_evitar_listarlos       previos 0 []                                             siguientes 0 []                                             atribuciones 0
+  demostrar_apertura_visiones_distintas        previos 0 []                                             siguientes 0 []                                             atribuciones 0
+  manejar_contacto_fisico_regla_platino        previos 0 []                                             siguientes 0 []                                             atribuciones 1
+        ATRIBUCION: {"autor": "Gretchen Rubin, en The Happiness Project, citada por Kim Scott", "cifra": "para que el flujo de oxitocina y de serotonina, que mejoran el animo y favorecen el vinculo, sea lo mas eficaz posible, hay que aguantar un abrazo al menos seis segundos", "fecha_corte": "2019, que es la fecha de la edicion citada de Radical Candor; el libro no fecha la investigacion de la que sale la cifra", "fuente": "scott_radical_candor"}
+  reconocer_emociones_propias_avisar_equipo    previos 0 []                                             siguientes 0 []                                             atribuciones 0
+  dominar_reacciones_emociones_ajenas          previos 0 []                                             siguientes 0 []                                             atribuciones 0
+
+  aristas de entrada escritas en los 12: 1   de salida: 2
+
+QUIEN LOS NOMBRA DESDE FUERA DE LOS 12:
+  montar_reuniones_solas_mentalidad_frecuencia  --previo-->  construir_confianza_equipo_tiempo_solas
+  total: 1

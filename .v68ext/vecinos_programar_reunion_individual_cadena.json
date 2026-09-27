@@ -1,0 +1,98 @@
+{
+ "id": "programar_reunion_individual_cadena",
+ "grafo": 390,
+ "bandejas": 89,
+ "vecinos": [
+  {
+   "id": "alentar_asuntos_corazon_vigilar_final_reunion",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.474,
+    "familia_id": 0.111,
+    "paso_contra_nodo": 0.548
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 1 de alentar_asuntos_corazon_vigilar_final_reunion"
+  },
+  {
+   "id": "conducir_reunion_individual_telefono_distancia",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.474,
+    "familia_id": 0.286,
+    "paso_contra_nodo": 0.463
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 4 del candidato contra paso 4 de conducir_reunion_individual_telefono_distancia"
+  },
+  {
+   "id": "tomar_notas_copia_guion_reunion_individual",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.472,
+    "familia_id": 0.25,
+    "paso_contra_nodo": 0.449
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 4 del candidato contra paso 5 de tomar_notas_copia_guion_reunion_individual"
+  },
+  {
+   "id": "acumular_asuntos_importantes_fichero_espera",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.431,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.465
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 3 de acumular_asuntos_importantes_fichero_espera"
+  },
+  {
+   "id": "facilitar_expresion_subordinado_pregunta_mas",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.449,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.426
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 2 de facilitar_expresion_subordinado_pregunta_mas"
+  },
+  {
+   "id": "preguntar_conducir_reunion_individual",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.08,
+    "familia_id": 0.333,
+    "paso_contra_nodo": 0.418
+   },
+   "levantada_por": [
+    "familia_id"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 7 de preguntar_conducir_reunion_individual"
+  },
+  {
+   "id": "dirigir_reunion_individual_semanal",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.049,
+    "familia_id": 0.333,
+    "paso_contra_nodo": 0.35
+   },
+   "levantada_por": [
+    "familia_id"
+   ],
+   "detalle_paso": "paso 5 del candidato contra paso 2 de dirigir_reunion_individual_semanal"
+  }
+ ]
+}

@@ -1,0 +1,70 @@
+$ python forja.py insertar cuarentena/scott_radical_candor/pedir_critica_primero_crear_seguridad_psicologica.json [veredictos y censos]
+ADUANA DE INSERCION, candidato 'pedir_critica_primero_crear_seguridad_psicologica'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (321 del grafo mas 27 que esperan en bandejas)
+
+DECLARADOS POR LECTURA: 7. Ninguna señal los levanto.
+  abrazar_incomodidad_silencio_contar_seis  [Abrazar la incomodidad del silencio despues de pedir critica, aguantandolo mientras cuentas hasta seis en tu cabeza]
+    señales: familia_id 0.0, paso_contra_nodo 0.406, similitud_texto 0.204
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  dar_elogio_disciplina_igual_critica  [Dar elogio con la misma disciplina que pones en la critica, comprobando los hechos antes y diciendolo concreto, porque el elogio es el acelerador y la critica el freno]
+    señales: familia_id 0.1, paso_contra_nodo 0.433, similitud_texto 0.268
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  empezar_cultura_franqueza_radical  [Empezar una cultura de franqueza radical por el orden que el texto pone, pidiendo antes que dando]
+    señales: familia_id 0.0, paso_contra_nodo 0.479, similitud_texto 0.125
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  escuchar_entender_critica_dominar_defensa  [Escuchar la critica con intencion de entender y no de responder, dominando tu propia defensa con la practica de escuchar tres minutos sin interrumpir]
+    señales: familia_id 0.1, paso_contra_nodo 0.439, similitud_texto 0.208
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  fomentar_guia_reciproca_companieros  [Fomentar la guia entre pares con el premio nominado y la metedura de pata contada por uno mismo, y no con una herramienta que la sustituya]
+    señales: familia_id 0.0, paso_contra_nodo 0.416, similitud_texto 0.162
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  medir_critica_respuesta_oyente_brujula  [Medir tu critica en la respuesta de quien la oye, usando el marco de la franqueza radical como brujula para decidir si toca importarte mas o desafiar mas claro]
+    señales: familia_id 0.1, paso_contra_nodo 0.453, similitud_texto 0.224
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  premiar_franqueza_hacer_escucha_tangible  [Premiar la franqueza de quien te critica haciendo tangible tu escucha, con la lista de las criticas recibidas y lo que has hecho con ellas contado en publico]
+    señales: familia_id 0.0, paso_contra_nodo 0.455, similitud_texto 0.243
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  LA JERARQUIA LA CAZA LA LECTURA, NO LA SEÑAL (D.19, D.29).
+
+VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino integrar_peticion_critica_rutina_existente  [Integrar la peticion de critica en la rutina que ya tienes, al final de tus reuniones a solas, para que deje de depender de tu acordarte]
+    levantada por: paso_contra_nodo
+    similitud_texto    0.215 (umbral 0.35)
+    familia_id         0.100 (umbral 0.30)
+    paso_contra_nodo   0.733 (umbral 0.60)
+    paso 17 del candidato contra paso 6 de integrar_peticion_critica_rutina_existente
+  ARISTA EN COLA, no cableada: pedir_critica_primero_crear_seguridad_psicologica > abrazar_incomodidad_silencio_contar_seis
+    el otro extremo espera en la bandeja (D.29). El veredicto CONTINUA queda escrito y la arista se cablea cuando entre:
+      python forja.py arista --madre pedir_critica_primero_crear_seguridad_psicologica --hijo abrazar_incomodidad_silencio_contar_seis --paso <n> --razon "..."
+  ARISTA EN COLA, no cableada: pedir_critica_primero_crear_seguridad_psicologica > dar_elogio_disciplina_igual_critica
+    el otro extremo espera en la bandeja (D.29). El veredicto CONTINUA queda escrito y la arista se cablea cuando entre:
+      python forja.py arista --madre pedir_critica_primero_crear_seguridad_psicologica --hijo dar_elogio_disciplina_igual_critica --paso <n> --razon "..."
+  arista madre-hijo cableada y escrita RESUELTA: empezar_cultura_franqueza_radical > pedir_critica_primero_crear_seguridad_psicologica
+  ARISTA EN COLA, no cableada: pedir_critica_primero_crear_seguridad_psicologica > escuchar_entender_critica_dominar_defensa
+    el otro extremo espera en la bandeja (D.29). El veredicto CONTINUA queda escrito y la arista se cablea cuando entre:
+      python forja.py arista --madre pedir_critica_primero_crear_seguridad_psicologica --hijo escuchar_entender_critica_dominar_defensa --paso <n> --razon "..."
+  arista madre-hijo cableada y escrita RESUELTA: pedir_critica_primero_crear_seguridad_psicologica > fomentar_guia_reciproca_companieros
+  ARISTA EN COLA, no cableada: pedir_critica_primero_crear_seguridad_psicologica > medir_critica_respuesta_oyente_brujula
+    el otro extremo espera en la bandeja (D.29). El veredicto CONTINUA queda escrito y la arista se cablea cuando entre:
+      python forja.py arista --madre pedir_critica_primero_crear_seguridad_psicologica --hijo medir_critica_respuesta_oyente_brujula --paso <n> --razon "..."
+  ARISTA EN COLA, no cableada: pedir_critica_primero_crear_seguridad_psicologica > premiar_franqueza_hacer_escucha_tangible
+    el otro extremo espera en la bandeja (D.29). El veredicto CONTINUA queda escrito y la arista se cablea cuando entre:
+      python forja.py arista --madre pedir_critica_primero_crear_seguridad_psicologica --hijo premiar_franqueza_hacer_escucha_tangible --paso <n> --razon "..."
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 322
+  censos escritos: denominaciones, series_y_cabezas
+  veredictos en bitacora/VEREDICTOS.jsonl: 8
+  ARISTAS EN COLA, sin cablear: 5
+    pedir_critica_primero_crear_seguridad_psicologica > abrazar_incomodidad_silencio_contar_seis
+    pedir_critica_primero_crear_seguridad_psicologica > dar_elogio_disciplina_igual_critica
+    pedir_critica_primero_crear_seguridad_psicologica > escuchar_entender_critica_dominar_defensa
+    pedir_critica_primero_crear_seguridad_psicologica > medir_critica_respuesta_oyente_brujula
+    pedir_critica_primero_crear_seguridad_psicologica > premiar_franqueza_hacer_escucha_tangible
+    D.29: van a un bloque propio y titulado del reporte, y se cablean con `forja.py arista` cuando el otro extremo entre.
+CODIGO DE SALIDA: 0
+  ARCHIVADO EN EL MISMO ACTO (D.31): cuarentena/_insertados/scott_radical_candor/pedir_critica_primero_crear_seguridad_psicologica.json

@@ -1,0 +1,7 @@
+agrupar_interrupciones_subordinados_reuniones_regulares pasos  5 filas mias  5 P 0 D 0
+canalizar_interrupciones_cartel_hora_oficina           pasos  8 filas mias  8 P 0 D 0
+nodos de la tanda en el grafo iguales a su lectura entera: 2 | distintos: 0
+fichas de _insertados con el mismo blob que en d8f4e2a: 2 | distintas: 0
+cap_04 lo que entro: candidatos 2 | pasos 13 | filas de mi lectura 13 | P 0 | D 0
+PUENTE sobre pasos que entraron: 0 de 13 = 0.00 por ciento
+si mis D cayesen a PUENTE: 0 de 13 = 0.00 por ciento

@@ -1,0 +1,45 @@
+{
+ "id": "trazar_plan_dieciocho_meses_aprendizaje",
+ "titulo": "Trazar con cada persona a tu cargo su plan de dieciocho meses de aprendizaje hacia sus suenios, que es la tercera de las tres conversaciones de carrera",
+ "denominaciones": {
+  "nombre_largo": "La tercera conversacion de carrera, la del plan de dieciocho meses, con las cuatro preguntas que la persona se hace a si misma y la lista de cambios de papel, maestros y formacion con quien hace que y para cuando",
+  "otros_idiomas": [
+   {
+    "idioma": "ingles",
+    "termino": "Conversation three: eighteen-month plan"
+   }
+  ],
+  "sigla": ""
+ },
+ "condiciones_activacion": "Cuando ya has conversado la historia de vida y los suenios de la persona, y toca la ultima de las tres conversaciones: convertir esos suenios en lo que tiene que aprender a continuacion.",
+ "entregable_esperado": "La lista escrita de como puede cambiar el papel de la persona para aprender las habilidades de cada suenio, de quien puede aprenderlas y que clases o libros le sirven, con quien hace que y para cuando anotado al lado de cada elemento, y con algunos elementos de accion dentro.",
+ "pasos_accionables": [
+  "Ten esta conversacion en ultimo lugar, que es el orden que el texto le pone, y ten claro su objeto: conseguir que la persona empiece a hacerse a si misma las preguntas que vienen a continuacion.",
+  "Primera pregunta que la persona se ha de hacer: que necesito aprender para moverme en la direccion de mis suenios?",
+  "Segunda: como deberia priorizar las cosas que necesito aprender?",
+  "Tercera: de quien puedo aprenderlas?",
+  "Cuarta: como puedo cambiar mi papel para aprenderlo?",
+  "Espera a que la persona tenga claro que quiere aprender a continuacion, porque el texto dice que solo entonces al jefe le resulta mucho mas facil identificar oportunidades en el trabajo que la ayuden a desarrollar esas habilidades en los seis a dieciocho meses siguientes, y en la direccion de al menos uno de sus suenios.",
+  "Cuenta con por que el texto dice que esto funciona mejor: traducir el trabajo de ahora a los suenios del futuro inspiraba muchisimo mas a la gente que decirle asi es como subes el siguiente peldanio de la escalera.",
+  "Haz entonces la lista que el texto manda hacer, y su primer contenido es este: como puede cambiar el papel de la persona para ayudarla a aprender las habilidades que hacen falta para lograr cada suenio.",
+  "Segundo contenido de la lista: de quien puede aprenderlas.",
+  "Tercer contenido: que clases podria hacer o que libros podria leer.",
+  "Anota despues, al lado de cada elemento de la lista, quien hace que y para cuando.",
+  "Y asegurate de que tienes dentro algunos elementos de accion, que es lo que el texto exige de la lista para que no se quede en un inventario.",
+  "Ten presente para que sirve todo esto, con las palabras del texto: ayudar a la gente a aclarar sus valores y sus suenios y luego alinearlos lo mas posible con su trabajo actual hara invariablemente mas fuerte a tu equipo, cada persona tendra mas exito y sera mas feliz, y juntos lograreis resultados inesperados en las horas comunes.",
+  "Y cuenta con la parte de tu responsabilidad que el texto nombra al cerrar: da miedo moverse con confianza en la direccion de los propios suenios, y parte de tu responsabilidad como jefe es ayudar a la gente a encontrar el valor para hacer justo eso."
+ ],
+ "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_10.md, unidad Cap. 7, Team. Sale de las lineas 77 a 87, bajo el rotulo Conversation three: eighteen-month plan. ES LA PIEZA P9 DE LA FRONTERA DE cap_10, la tercera de las tres del tramo L47 a L87. POR QUE ES PROCEDIMIENTO Y NO POSTURA, con D.27 delante: la linea 79 pone las cuatro preguntas literales que la persona se hace a si misma y el horizonte (six to eighteen months), y la 81 abre con Here's what to do y detras va la lista con sus tres contenidos nombrados uno a uno mas el quien hace que y para cuando. Inventario de MEDIOS y de OBJETOS DE TRABAJO del propio libro. POR QUE ES UN NODO APARTE, con la vara de la ACTA 20 seccion 4.1: condicion de activacion propia (ya tuviste las dos anteriores) y entregable propio (la lista con sus plazos), distintos de los motivadores escritos de la primera y del cuadro de habilidades de la segunda. RELECTURA DE FIDELIDAD D.30 HECHA EN EL ACTO DE ESCRIBIR, paso a paso contra su linea: 14 de 14 TRANSCRIPCION, 0 PUENTES. LA CITA DE THOREAU DE LA LINEA 85 NO SE CONVIERTE EN PASO, porque no hay nada que ejecutar en ella: el texto la usa para cerrar la seccion y su frase resultados inesperados en las horas comunes viaja dentro del paso 13, que es donde el propio texto la coloca. Lo que el texto NO dice y por eso NO esta escrito aqui: ni cuanto dura esta conversacion, ni cada cuanto se revisa la lista, ni quien mas la ve."
+,
+ "dominio": "gestion_equipos",
+ "estado": "vivo",
+ "fuentes": [
+  {
+   "clave": "scott_radical_candor",
+   "fecha": "2026-09-12"
+  }
+ ],
+ "ids_alias": [],
+ "nodos_previos": [],
+ "nodos_siguientes": []
+}

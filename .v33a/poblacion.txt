@@ -1,0 +1,13 @@
+POBLACION MEDIDA HOY. arbol: 1ae327e  ficheros con cambio sin commitear: 7
+
+  dataset/nodos.jsonl            :  282 nodos
+  bitacora/VEREDICTOS.jsonl      :  410 lineas
+  config/pares_mutuos.jsonl      :    1 lineas
+
+  cuarentena/ensayo_referencia_163        bandeja 163   _insertados   0
+  cuarentena/marquet_turn_the_ship        bandeja   3   _insertados   0
+  cuarentena/onu_consumidor               bandeja   0   _insertados   6
+  cuarentena/scott_radical_candor         bandeja  63   _insertados  79
+  cuarentena/smart_who                    bandeja   0   _insertados  59
+  cuarentena/zhuo_manager                 bandeja   0   _insertados 136
+  TOTAL de cuarentena/                    bandeja 229   _insertados 280

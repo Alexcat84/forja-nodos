@@ -1,0 +1,45 @@
+{
+ "condiciones_activacion": "Cuando tu equipo ha crecido lo bastante como para que las decisiones que se toman empiecen a parecer misteriosas o incluso turbias a quien no estuvo cerca del proceso.",
+ "denominaciones": {
+  "nombre_largo": "La reunion general como herramienta de traerse a todos: cuando hace falta segun el tamanio del equipo, sus dos partes, quien hace cada una, y por que las respuestas persuaden mas que las presentaciones",
+  "otros_idiomas": [
+   {
+    "idioma": "ingles",
+    "termino": "ALL-HANDS MEETINGS"
+   },
+   {
+    "idioma": "ingles",
+    "termino": "Bring others along"
+   }
+  ],
+  "sigla": ""
+ },
+ "dominio": "gestion_equipos",
+ "entregable_esperado": "La reunion general celebrada con sus dos partes, con las iniciativas presentadas por el equipo que las lleva y con el disenso oido y respondido de frente por quien dirige.",
+ "estado": "vivo",
+ "fuentes": [
+  {
+   "clave": "scott_radical_candor",
+   "fecha": "2026-09-12"
+  }
+ ],
+ "id": "montar_reunion_general_presentaciones_preguntas",
+ "ids_alias": [],
+ "nodos_previos": [],
+ "nodos_siguientes": [],
+ "pasos_accionables": [
+  "Mira primero si te hace falta, con el corte que el texto da: si tienes un equipo de diez personas o menos, probablemente no necesitas una reunion aparte para asegurarte de que todo el mundo esta persuadido de que se han tomado las decisiones correctas.",
+  "Pero segun tu equipo se hace mas grande, empieza a pensar como te traes a todos contigo, porque el texto dice que es chocante lo rapido que las decisiones que toman algunos empiezan a parecerles misteriosas o incluso turbias a quienes no estuvieron cerca del proceso.",
+  "Si tu equipo es de cien personas o mas, monta una reunion general con regularidad, que el texto dice que ayuda de verdad a conseguir respaldo amplio para las decisiones que se toman y tambien a enterarte del disenso.",
+  "Montala con las dos partes que el texto dice que suelen incluir: presentaciones para persuadir a la gente de que la empresa esta tomando buenas decisiones y va en la direccion correcta, y un turno de preguntas y respuestas llevado de manera que quien dirige pueda oir el disenso y responderlo de frente.",
+  "Cuenta con lo que el texto dice que pasa cuando se lleva bien: las respuestas que dan los que dirigen a esas preguntas, que a menudo son bastante incomodas, suelen persuadir mas que las presentaciones.",
+  "Centra las presentaciones en una o dos iniciativas que sean especialmente emocionantes e importantes.",
+  "Usalas para las dos cosas que el texto les pone: informar a todos de las prioridades mas amplias y conseguir su respaldo.",
+  "Y haz que las presente el equipo que esta trabajando en la iniciativa, no tu: el texto dice que esa practica construia el musculo de persuadir en toda la empresa, y que a la gente normalmente le encantaba presentar en esas reuniones. Si tu equipo quiere el escenario, dale el escenario.",
+  "Deja el turno de preguntas en manos de quien dirige la empresa o la fundo, porque es a ellos a quienes les toca responder esas preguntas a menudo desagradables, desafiantes o incomodas, y porque es asi como se enteran de lo que la gente piensa de verdad.",
+  "Cuida como se responden esas preguntas, porque el texto dice que es enormemente importante para persuadir a mucha gente a la vez de que se estan tomando las decisiones correctas de la manera correcta.",
+  "Y responde como el texto dice que respondian los dos fundadores que pone de ejemplo: aceptando toda clase de preguntas semana tras semana, sin ese tono sobrepreparado y sobremensajeado en el que caen a veces los que dirigen, con respuestas espontaneas, humanas y del todo autenticas, y volviendo a la reunion siguiente a recibir otra vez preguntas duras e incomodas."
+ ],
+ "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_11.md, unidad Cap. 8, Results. Sale de las lineas 205 a 221, bajo el rotulo ALL-HANDS MEETINGS. ES LA PIEZA P11 DE LA FRONTERA DE cap_11. POR QUE ES PROCEDIMIENTO, con D.27 delante: la linea 209 pone los DOS cortes de tamanio con su cifra (diez o menos, cien o mas), la linea 213 pone las DOS partes nombradas, y las lineas 217 y 219 ponen quien hace cada una y con que proposito. Es inventario de etapas y de objetos, no un adjetivo de adecuacion. LOS NOMBRES DE LAS REUNIONES GENERALES DE CUATRO EMPRESAS, DE LA LINEA 211, NO VIAJAN A NINGUN PASO, y tampoco el caso de la reunion siguiente a una adquisicion de la linea 215: son casos, manual 3.5. LOS NOMBRES DE LOS DOS FUNDADORES DE LA LINEA 221 NO SE ESCRIBEN EN EL PASO 11, y digo por que lo hago asi: lo que el texto pone ahi como doctrina es COMO se responde (espontaneo, humano, autentico, sin tono sobrepreparado, volviendo la semana siguiente), y eso es lo que viaja. El paso los nombra como los dos fundadores que el texto pone de ejemplo, sin traer el dato del caso al entregable. La senial barata de manual 3.5 sale limpia: el entregable no lleva ni un nombre propio. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 11 pasos, 11 TRANSCRIPCION, 0 PUENTE. P1 a P3 de la linea 209; P4 y P5 de la 213; P6 a P8 de la 217; P9 y P10 de la 219; P11 de la 221. EL PAR QUE DECLARO: persuadir_emocion_oyente_no_propia y compartir_logica_mostrar_razonamiento, de cap_07, son el paso PERSUADE de la rueda y esta reunion es una herramienta suya. Arista D.29 declarada en el reporte de la vuelta 22. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: cada cuanto se celebra, cuanto dura, como se recogen las preguntas, y que se hace con el disenso una vez oido.",
+ "titulo": "Montar la reunion general del equipo entero con sus dos partes: las presentaciones que persuaden y las preguntas abiertas que dejan oir el disenso"
+}

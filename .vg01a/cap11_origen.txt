@@ -1,0 +1,4 @@
+INSTRUMENTO .vg01a/cap11_origen.py  SIN IDS TECLEADOS: la unidad sale del resumen_teorico y el commit de entrada lo busca git log -S sobre dataset/nodos.jsonl
+nodos de cap_11 en el grafo        : 16, 187 pasos
+de ellos con candidato archivado    : 16, 187 pasos
+SIN candidato archivado de cap_11   : 0, 0 pasos

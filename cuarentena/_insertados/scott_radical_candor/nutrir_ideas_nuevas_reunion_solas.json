@@ -1,0 +1,44 @@
+{
+ "condiciones_activacion": "Cuando alguien de tu equipo trae una idea nueva a su reunion a solas contigo y todavia no esta clara ni lista para llevarla al equipo mas amplio.",
+ "denominaciones": {
+  "nombre_largo": "Las seis preguntas literales con que se empuja una idea nueva a ser mas clara dentro de la reunion a solas, con la reunion tratada como sitio seguro antes del empujon del debate",
+  "otros_idiomas": [
+   {
+    "idioma": "ingles",
+    "termino": "Encourage new ideas in the 1:1."
+   },
+   {
+    "idioma": "ingles",
+    "termino": "new ideas are fragile"
+   }
+  ],
+  "sigla": ""
+ },
+ "dominio": "gestion_equipos",
+ "entregable_esperado": "La idea explicada con la claridad suficiente para llevarla al equipo mas amplio, y explicada de la manera que entiende cada persona a la que hay que comunicarsela.",
+ "estado": "vivo",
+ "fuentes": [
+  {
+   "clave": "scott_radical_candor",
+   "fecha": "2026-09-12"
+  }
+ ],
+ "id": "nutrir_ideas_nuevas_reunion_solas",
+ "ids_alias": [],
+ "nodos_previos": [],
+ "nodos_siguientes": [],
+ "pasos_accionables": [
+  "Ten en la cabeza, antes de entrar a una reunion a solas, la frase de Jony Ive que el texto cita: las ideas nuevas son fragiles.",
+  "Trata esa reunion como un sitio seguro donde la gente pueda nutrir ideas nuevas antes de someterlas al empujon y el revolcon del debate.",
+  "Ayudales con las dos cosas que el texto nombra: a aclarar lo que ellos mismos piensan de la idea, y a aclarar su comprension de las personas a las que tienen que comunicarsela.",
+  "Cuenta con que la misma idea puede necesitar describirse de una manera para un ingeniero y de otra para un comercial.",
+  "Pregunta: que necesitas para desarrollar mas esa idea, de manera que este lista para discutirla con el equipo mas amplio? Como puedo ayudarte?",
+  "Pregunta: creo que tienes algo entre manos, pero todavia no me queda claro. Puedes intentar explicarmelo otra vez?",
+  "Pregunta: vamos a pelearnos un poco mas con esto, te parece?",
+  "Pregunta: entiendo lo que quieres decir, pero no creo que los demas lo entiendan. Como puedes explicarlo para que a ellos les resulte mas facil de entender?",
+  "Pregunta: no creo que fulano vaya a entender esto. Puedes explicarlo otra vez para que quede mas claro especificamente para el?",
+  "Pregunta: el problema es de verdad que ellos son demasiado tontos para entenderlo, o es que tu no lo estas explicando con la claridad suficiente?"
+ ],
+ "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_11.md, unidad Cap. 8, Results. Sale de las lineas 99 a 113, bajo el rotulo Encourage new ideas in the 1:1, dentro de la seccion 1:1 CONVERSATIONS. ES LA PIEZA P4 DE LA FRONTERA DE cap_11. POR QUE ES PROCEDIMIENTO, con D.27 delante: la linea 101 pone el proposito y las lineas 103 a 113 ponen SEIS preguntas literales, una por linea, que son medios nombrados uno a uno. EL PAR QUE HAY QUE DECLARAR, Y LO DECLARO YO ANTES DE QUE LO LEVANTE NADIE: crear_espacio_seguro_madurar_ideas_nuevas, que sale de cap_07 lineas 177 a 195, es la MADRE de este nodo, y sus pasos 12, 13 y 14 dicen ya trata tus reuniones semanales a solas como ese sitio seguro. MI VEREDICTO ES CONTINUA CON ARISTA Y NO REPITE, y la razon va con los dos lados medidos: la madre trae procedimiento que este no tiene (no pidas tres soluciones y una recomendacion, la tecnica del plussing de Pixar, la reunion previa donde las ideas se afilan, y la advertencia de que una lluvia de ideas no es una conversacion sin negativas), y este trae procedimiento que la madre no tiene (las SEIS preguntas literales, la cita de Jony Ive, y la regla de describir la idea distinto para un ingeniero y para un comercial). Los dos lados tienen procedimiento fuera del solape, y la vara de manual 4 no tiene bascula: CONTINUA. Va marcado como discutible en el reporte de la vuelta 22. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 10 pasos, 10 TRANSCRIPCION, 0 PUENTE. P1 a P4 de la linea 101; P5 a P10 de las lineas 103 a 113, una por linea. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: cuando se da una idea por lista para el equipo mas amplio, quien decide que ya esta clara, y que se hace si despues de las seis preguntas sigue sin estarlo.",
+ "titulo": "Nutrir en la reunion a solas las ideas nuevas, que son fragiles, empujando a quien la trae a explicarla mas claro y para quien la tiene que oir"
+}

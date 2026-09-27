@@ -1,0 +1,23 @@
+$ python .v42/orden.py
+#    cap     rotulo pasos  id                                                       
+1    cap_13  L199   13     escuchar_entender_critica_dominar_defensa
+2    cap_13  L215   20     premiar_franqueza_hacer_escucha_tangible
+3    cap_13  L235   13     integrar_peticion_critica_rutina_existente
+4    cap_13  L247   20     dar_elogio_disciplina_igual_critica
+5    cap_13  L289   33     medir_critica_respuesta_oyente_brujula
+6    cap_14  L21    12     montar_equipo_gestion_desempenio_revisar_sistema
+7    cap_14  L35    14     recorrer_trece_elementos_proceso_evaluacion_formal
+8    cap_14  L65    8      decidir_poner_nota_comunicar_proposito_limites
+9    cap_14  L73    15     elegir_categorias_nota_palabras_propias_empresa
+10   cap_14  L95    7      escribir_escaleras_puesto_evitar_dos_extremos
+11   cap_14  L99    12     fijar_cuatro_notas_calcular_nota_global
+12   cap_14  L117   10     elegir_palabras_nota_definirlas_empresa_entera
+13   cap_14  L125   16     aplicar_consecuencias_nota_apoyar_fuerzas_persona
+14   cap_14  L143   9      repartir_notas_publicar_reparto_esperado
+15   cap_14  L153   11     presionar_curva_notas_evitar_forzarla
+16   cap_14  L171   15     calibrar_notas_reunion_jefes_pares
+17   cap_14  L187   11     evaluar_desempenio_dos_veces_anio
+18   cap_14  L197   10     montar_evaluacion_360_grados_ligera_pares
+19   cap_14  L205   11     hacer_critica_pares_transparente_ensenar_escribirla
+20   cap_14  L221   13     mantener_proceso_evaluacion_ligero_vigilar_crecimiento
+TOTAL: 20 candidatos

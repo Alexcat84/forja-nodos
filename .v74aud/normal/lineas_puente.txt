@@ -1,0 +1,7 @@
+$ sed -n 273p fuentes/scott_radical_candor/cap_13.md | grep -o -E "Also, praise helps people focus on their strengths[^.]*"
+Also, praise helps people focus on their strengths and on doing more work that they enjoy and less of what they hate
+$ sed -n 273p fuentes/scott_radical_candor/cap_13.md | grep -o -i -E "critic[a-z]*" | wc -l
+0
+$ sed -n 283p fuentes/scott_radical_candor/cap_13.md | grep -o -E "We.ve (found|heard)|measur[a-z]*"
+We’ve found
+We’ve heard

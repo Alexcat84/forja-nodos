@@ -1,0 +1,42 @@
+id	paso	clase	linea_cap_03	lectura
+archivar_indicadores_resolver_problemas	1	T	L99	systematically collect and maintain an archive of indicators; "en vez de dejar que se pierdan" es la negacion del mismo acto, no un acto nuevo
+archivar_indicadores_resolver_problemas	2	T	L99	a bank of information that readily shows all the parameters of your operation
+archivar_indicadores_resolver_problemas	3	T	L99	If something goes wrong ... allowing you to scan them
+archivar_indicadores_resolver_problemas	4	T	L99	for unhealthy departures from the norm
+construir_grafico_escalonado_pronosticos	1	T	L91	the stagger chart, which forecasts an output over the next several months
+construir_grafico_escalonado_pronosticos	2	T	L91	updated monthly ... updated version of the then-current forecast ... several prior forecasts
+construir_grafico_escalonado_pronosticos	3	T	L95	(* means the actual number for that month)
+construir_grafico_escalonado_pronosticos	4	T	L91	the variation of one forecast from the next ... anticipate future trends better than ... a simple trend chart
+construir_grafico_escalonado_pronosticos	5	T	L93	forecasted rates of incoming orders ... the same forecast prepared in the following month, in the month after that
+construir_grafico_escalonado_pronosticos	6	T	L93	not only your outlook for business month by month but also how your outlook varied
+construir_grafico_escalonado_pronosticos	7	T	L93	routinely compared with future forecasts and eventually with the actual result
+construir_grafico_escalonado_pronosticos	8	T	L93	the improvement or deterioration of the forecasted outlook ... the most valuable indicator of business trends
+construir_indicador_tendencia_patron	1	T	L89	another window in our black box
+construir_indicador_tendencia_patron	2	T	L89	output (breakfasts delivered, software modules completed, vouchers processed)
+construir_indicador_tendencia_patron	3	T	L89	measured against time (performance this month versus ... previous months)
+construir_indicador_tendencia_patron	4	T	L89	and also against some standard or expected level
+construir_indicador_tendencia_patron	5	T	L89	you are led to extrapolate almost automatically from the past
+construir_indicador_tendencia_patron	6	T	L89	makes you think through why the results were what they were, and not what the standard said
+elegir_fabricar_pedido_pronostico	1	T	L103	There are two ways to control the output of any factory
+elegir_fabricar_pedido_pronostico	2	T	L103	When it learns what you want, the factory looks for a hole in its manufacturing schedule
+elegir_fabricar_pedido_pronostico	3	T	L105	has it ready in four weeks while you need four months, you are not going to have many customers
+elegir_fabricar_pedido_pronostico	4	T	L105	even though you would much rather build to order ... build to forecast, which is a contemplation of future orders
+elegir_fabricar_pedido_pronostico	5	T	L105	sets up his activities around a reasoned speculation that orders will materialize
+elegir_fabricar_pedido_pronostico	6	T	L107	takes an inventory risk ... unwanted inventory is the result
+elegir_fabricar_pedido_pronostico	7	T	L107	you risk capital to respond to anticipated future demand in good order
+elegir_fabricar_pedido_pronostico	8	T	L109	makes its product to customer order, but buys from its suppliers ... on the basis of forecasted demand
+elegir_fabricar_pedido_pronostico	9	T	L109	recruit new college graduates to fill anticipated needs ... compilers ... anticipated market need
+elegir_indicador_salida_trabajo_administrativo	1	T	L35	a measurement, any measurement, is better than none
+elegir_indicador_salida_trabajo_administrativo	2	T	L35	cover the output of the work unit and not simply the activity ... salesman by the orders
+elegir_indicador_salida_trabajo_administrativo	3	T	L37	what you measure should be a physical, countable thing
+elegir_indicador_salida_trabajo_administrativo	4	T	L39-L67	la tabla ADMINISTRATIVE FUNCTION / WORK OUTPUT INDICATOR, las seis filas
+elegir_indicador_salida_trabajo_administrativo	5	T	L37	all quantity or output indicators, their paired counterparts should stress the quality
+elegir_indicador_salida_trabajo_administrativo	6	T	L37	vouchers processed should be paired with the number of errors found either by auditing or by our suppliers
+elegir_indicador_salida_trabajo_administrativo	7	T	L37	square feet cleaned ... partially objective/partially subjective rating ... senior manager with an office in that building
+emparejar_indicadores_efecto_contraefecto	1	P	L31	PUENTE de clausula: el libro da una propiedad (Indicators tend to direct your attention) y su remedio (guard against overreacting ... by pairing); "Antes de soltar un indicador, mira hacia donde va a dirigir la atencion" es una inspeccion previa que el libro no manda
+emparejar_indicadores_efecto_contraefecto	2	T	L31	DUDA: "nombra el efecto" no esta como orden, pero el libro hace ese razonamiento en su ejemplo (measuring inventory ... take action to drive your inventory levels down) y nombra el objeto, effect
+emparejar_indicadores_efecto_contraefecto	3	T	L31	DUDA, la misma: so lean that you can't react ... without creating shortages; counter-effect es objeto del libro
+emparejar_indicadores_efecto_contraefecto	4	T	L31	pairing indicators, so that together both effect and counter-effect are measured
+emparejar_indicadores_efecto_contraefecto	5	T	L31	monitor both inventory levels and the incidence of shortages
+emparejar_indicadores_efecto_contraefecto	6	T	L31	A rise in the latter will obviously lead you to do things to keep inventories from becoming too low
+emparejar_indicadores_efecto_contraefecto	7	T	L33	completion date of each software unit against its capability

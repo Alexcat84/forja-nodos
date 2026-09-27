@@ -1,0 +1,9 @@
+montar_proceso_contratacion_reducir_sesgo   (32 pasos)   poblacion 299 = 203 grafo + 96 bandejas
+  vecinos POR ENCIMA de umbral: 0
+  los 5 mas altos por similitud_texto, esten o no por encima:
+    conversar_suenios_cruzar_habilidades                 sim=0.273 fam=0.000 paso=0.440
+    trazar_plan_dieciocho_meses_aprendizaje              sim=0.253 fam=0.000 paso=0.441
+    armar_plan_anual_crecimiento_equipo                  sim=0.242 fam=0.000 paso=0.442
+    calibrar_ascensos_evitar_politica                    sim=0.242 fam=0.000 paso=0.438
+    calibrar_decision_despido_documentarla               sim=0.234 fam=0.000 paso=0.429
+  segundos: 759.6

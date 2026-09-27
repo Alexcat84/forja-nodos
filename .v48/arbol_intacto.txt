@@ -1,0 +1,2 @@
+$ git status --short -- src/ tests/ scripts/ dataset/ forja.py hooks/ config/ bitacora/ censos/
+(sin salida: ninguno de esos arboles cambio en esta vuelta)

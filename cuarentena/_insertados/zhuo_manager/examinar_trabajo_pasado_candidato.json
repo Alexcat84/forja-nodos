@@ -1,0 +1,45 @@
+{
+  "id": "examinar_trabajo_pasado_candidato",
+  "titulo": "Examinar ejemplos del trabajo pasado del candidato en proyectos parecidos",
+  "denominaciones": {
+    "nombre_largo": "El mejor predictor imperfecto, la revision de portafolio, y la pregunta que separa el trabajo de equipo del propio",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "examine past examples of similar work, portfolio review"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Al evaluar a cualquier candidato, y sobre todo cuando la entrevista sola no te da confianza en el pronostico.",
+  "entregable_esperado": "Una valoracion de la calidad de lo que el candidato ha producido, con la parte que fue suya separada de la del equipo.",
+  "pasos_accionables": [
+    "Parte de cual es el mejor predictor, aunque siga siendo imperfecto: entender como le ha ido a esa persona en el pasado en proyectos parecidos y en entornos parecidos.",
+    "Cuenta con que por eso las practicas son tan valiosas: cuando alguien se une a tu equipo unos meses, entiendes mucho mejor como trabaja.",
+    "Si no hay practicas, haz lo siguiente mejor, que es meterte a fondo en su trabajo pasado.",
+    "Monta la revision de trabajo que el libro describe: al entrevistar disenadores ellos ponen fuerte enfasis en la revision de portafolio, donde los candidatos vienen y presentan unos cuantos proyectos que ellos mismos eligen, y al oirles explicar su proceso y ensenar ejemplos concretos de su trabajo se aprende mucho de sus habilidades y de como abordan los problemas.",
+    "Traslada esa forma a tu oficio, como hace la amiga del libro que trabaja en educacion y pide a los posibles profesores que vengan y den una clase sobre la materia que quieran.",
+    "Pregunta a los candidatos si pueden ensenarte las aplicaciones que han desarrollado, los articulos que han escrito, las presentaciones que han dado o lo que corresponda, para que puedas valorar la calidad de lo que producen.",
+    "Si lo que te presentan fue un esfuerzo de equipo, pide que te aclaren de que piezas fue responsable esa persona."
+  ],
+  "resumen_teorico": "Es la primera de las tacticas de apostar con cabeza, y la respuesta directa del libro al hallazgo de que la entrevista no predice: si la conversacion no informa, informa el producto. El inventario propio del libro son las clases de prueba, portafolio, clase de muestra, aplicaciones, articulos y presentaciones, nombradas una a una, y el acto final de separar la parte propia de la del equipo. El paso 5 va dentro porque el libro pone el caso de la amiga de educacion justo para decir que la forma se traslada fuera del diseno. Lo que el libro NO dice, y por eso no esta escrito aqui, es cuantos proyectos se piden, cuanto dura la revision, ni con que se puntua.",
+  "atribuciones": [
+    {
+      "cifra": "al cruzar los numeros de decenas de miles de entrevistas para ver si habia correlacion entre lo alto que un entrevistador puntuaba la interaccion y lo bien que el candidato pasaba a desempenarse despues, lo que encontraron fue relacion cero, un completo desorden aleatorio",
+      "autor": "Google, citada por Julie Zhuo",
+      "fuente": "zhuo_manager",
+      "fecha_corte": "no consta el anio en el texto: el libro lo situa unos anios antes de 2019"
+    }
+  ],
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}

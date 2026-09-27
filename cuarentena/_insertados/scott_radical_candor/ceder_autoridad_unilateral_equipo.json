@@ -1,0 +1,46 @@
+{
+  "id": "ceder_autoridad_unilateral_equipo",
+  "titulo": "Soltar la autoridad unilateral sobre tu equipo para que se sientan libres en el trabajo, sin caer en la abdicacion",
+  "denominaciones": {
+    "nombre_largo": "Libres en el trabajo: la primera regla de la relacion que hace que la gente se sienta libre, con los tres procesos de Google como ejemplo",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "free at work"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando quieres que la gente que te reporta se sienta libre en el trabajo y eres tu quien tiene sobre ellos las palancas tradicionales de control de un jefe.",
+  "entregable_esperado": "Tu autoridad unilateral soltada en los sitios donde se puede soltar, con la gente mas autonoma y sin haber abdicado de guiar al equipo hacia los resultados.",
+  "pasos_accionables": [
+    "Suelta tu autoridad unilateral: el texto dice que esa es la primera regla para construir la clase de relacion que hace que la gente se sienta libre en el trabajo.",
+    "Cuenta con que en casi cualquier empresa vas a tener que soltarla voluntariamente y con que eso pide una disciplina enorme: en Google te la quitaban ellos de antemano.",
+    "Cuenta con que es natural querer un poco de control, y con que el poder y el control son ilusorios y no te llevan adonde de verdad quieres ir.",
+    "No uses el nombre ni la autoridad de otro para hacer valer un argumento: el texto cita a Jack Dorsey diciendo que si tienes que hacerlo el argumento vale poco y que a lo mejor ni tu te lo crees.",
+    "Si crees que algo es correcto, dedicate a ensenar tu trabajo para demostrarlo, porque la autoridad sale de forma natural del merito y no al reves.",
+    "Cuenta con que no estas sacandoles lo mejor a ellos: estas creando las condiciones para que lo saquen ellos mismos.",
+    "No trates a la gente como piezas de una maquina: si lo haces no sacaras mas de lo que exijas y habras creado un incentivo para romper la maquina, que es lo que el capataz de la aceria le dijo a la autora sobre el sistema de retribucion que ella habia disenado.",
+    "Y no lo confundas con la anarquia, que el texto pone por peor que la tirania: alli los matones se salen con la suya optimizando su interes estrecho y los resultados de conjunto a menudo no existen.",
+    "Mira como lo hizo Google si te sirve de ejemplo: Shona Brown construyo con cuidado un proceso de seleccion, uno de ascenso y uno de evaluacion del desempenio, no para controlar a los empleados sino para sustituir la autoridad unilateral, que se secuestra facil por conveniencia o por interes estrecho, por un proceso que pedia la aportacion de todo el equipo.",
+    "En el de seleccion, un jefe no podia contratar por su cuenta: el candidato pasaba un proceso de entrevistas riguroso y los expedientes de entrevista subian hasta Larry Page para aprobarlos o rechazarlos.",
+    "En el de ascenso, decidia un comite de iguales y no el jefe.",
+    "En el de evaluacion, la nota estaba influida por la valoracion de trescientos sesenta grados sobre cada empleado y no solo por la opinion subjetiva del jefe, y despues se calibraba entre equipos para que la vara se sostuviera parecida en todos.",
+    "Cuenta con lo que eso consigue, valga o no el metodo extremo de Google para tu empresa: da a la gente sensacion de justicia y de autonomia simplemente reduciendo las probabilidades de que alguien quede a merced de una sola persona.",
+    "No lo confundas con abdicar ni con dejar que cada cual haga lo que quiera: tienes un trabajo que hacer, tienes que guiar a tu equipo hasta los resultados, y para eso vas a tener que deshacer empates y tomar decisiones duras y a menudo impopulares.",
+    "Busca los sitios donde puedas soltar algunas de las fuentes tradicionales del control de un jefe, que es la manera de senialarle a tu equipo que los quieres mas autonomos."
+  ],
+  "resumen_teorico": "Sale de fuentes/scott_radical_candor/cap_08.md, lineas 45 a 65, bajo el rotulo FREE AT WORK. ES LA PIEZA MAS GRANDE DEL CAPITULO, 1.156 palabras de cuerpo de las 6.140. EL CASO DE GOOGLE VA NOMBRADO DENTRO DE LOS PASOS QUE LO USAN, manual seccion 3.5: la doctrina es soltar la autoridad unilateral y el caso es como la solto una empresa, con sus tres procesos, y por eso los pasos 9 a 13 dicen quien y donde en vez de mandarselo al lector. El propio texto pone la reserva en la linea 61 (valga o no el metodo extremo de Google para tu empresa) y esa reserva esta dentro del paso 13. LAS OTRAS DOS ANECDOTAS, la aceria de la linea 53 y el dictador y el senior de la guerra de la linea 55, van tambien dentro de su paso y no dan paso propio. LA TENSION DE LA PIEZA, DECLARADA: la linea 47 escribe que soltar la autoridad unilateral es la primera regla, y la 63 escribe que no se trata de abdicar; los dos extremos estan escritos por el libro y los dos tienen su paso, el 1 y el 14, para que nadie se quede con medio. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 15 pasos, 15 TRANSCRIPCION, 0 PUENTE. P1, P2 y P3 de la linea 47; P4 y P5 de la 49; P6 de la 51; P7 de la 53; P8 de la 55; P9 de la 57; P10, P11 y P12 de la 59; P13 de la 61; P14 de la 63; P15 de la 65. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: cuales son las fuentes de control que se pueden soltar en una empresa que no es Google, quien aprueba soltarlas, y como se sabe que has soltado demasiado.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-12"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "atribuciones": []
+}

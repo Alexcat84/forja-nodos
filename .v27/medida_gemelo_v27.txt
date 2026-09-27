@@ -1,0 +1,24 @@
+umbrales: similitud 0.35 | familia 0.30 | paso_contra_nodo 0.60
+
+reconocer_recompensar_gente_estable          [GRAFO]
+  x reconocer_excelencia_trayectoria_gradual   [BANDEJA]  fam 0.143 pxn 0.462 sim 0.201  -> no levanta
+reconocer_recompensar_gente_estable          [GRAFO]
+  x evitar_obsesion_ascenso_estatus            [BANDEJA]  fam 0.000 pxn 0.414 sim 0.218  -> no levanta
+retar_superestrellas_equipo_constantemente   [GRAFO]
+  x evitar_obsesion_ascenso_estatus            [BANDEJA]  fam 0.000 pxn 0.445 sim 0.204  -> no levanta
+subir_vara_calidad_equipo                    [GRAFO]
+  x admitir_pronto_mal_desempenio_cuatro_razones [BANDEJA]  fam 0.000 pxn 0.388 sim 0.213  -> no levanta
+decidir_momento_despedir_persona             [GRAFO]
+  x facilitar_despido_tres_cosas               [BANDEJA]  fam 0.000 pxn 0.464 sim 0.155  -> no levanta
+decidir_momento_despedir_persona             [GRAFO]
+  x calibrar_decision_despido_documentarla     [BANDEJA]  fam 0.000 pxn 0.445 sim 0.205  -> no levanta
+despedir_persona_franqueza_radical           [GRAFO]
+  x facilitar_despido_tres_cosas               [BANDEJA]  fam 0.000 pxn 0.424 sim 0.245  -> no levanta
+despedir_persona_franqueza_radical           [GRAFO]
+  x contactar_despedido_mes_despues            [BANDEJA]  fam 0.000 pxn 0.478 sim 0.295  -> no levanta
+despedir_persona_franqueza_radical           [GRAFO]
+  x sopesar_consejo_legal_despedir_humildad    [BANDEJA]  fam 0.125 pxn 0.451 sim 0.217  -> no levanta
+revisar_cinco_causas_mal_desempenio          [GRAFO]
+  x admitir_pronto_mal_desempenio_cuatro_razones [BANDEJA]  fam 0.222 pxn 0.387 sim 0.173  -> no levanta
+
+DE LOS 10 PARES MEDIDOS, SUPERAN UMBRAL: 0

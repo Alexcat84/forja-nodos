@@ -1,0 +1,38 @@
+==============================================================================
+cap_08   filas de la tabla del extractor: 13
+  la cabecera acaba en la linea      : 7
+  lineas con contenido tras cabecera : 13
+  suma de las filas (del extractor)  : 1138
+  MI recuento de palabras del cuerpo : 1138
+  filas cuyo recuento NO me sale     : 0  []
+  SOLAPES                            : 0  []
+  lineas con contenido NO cubiertas  : 0  []
+  NODOS que la tabla del extractor da: 0
+  fichero entero (wc -w)             : 1166
+==============================================================================
+cap_09   filas de la tabla del extractor: 27
+  la cabecera acaba en la linea      : 7
+  lineas con contenido tras cabecera : 29
+  suma de las filas (del extractor)  : 2284
+  MI recuento de palabras del cuerpo : 2284
+  filas cuyo recuento NO me sale     : 0  []
+  SOLAPES                            : 0  []
+  lineas con contenido NO cubiertas  : 0  []
+  NODOS que la tabla del extractor da: 0
+  fichero entero (wc -w)             : 2309
+==============================================================================
+cap_10   filas de la tabla del extractor: 35
+  la cabecera acaba en la linea      : 7
+  lineas con contenido tras cabecera : 36
+  suma de las filas (del extractor)  : 3218
+  MI recuento de palabras del cuerpo : 3218
+  filas cuyo recuento NO me sale     : 0  []
+  SOLAPES                            : 0  []
+  lineas con contenido NO cubiertas  : 0  []
+  NODOS que la tabla del extractor da: 1
+  fichero entero (wc -w)             : 3243
+==============================================================================
+cap_08: tabla DEL REPORTE contra tabla DEL INSTRUMENTO
+  filas en el reporte     : 13
+  filas en el instrumento : 13
+  IDENTICAS celda a celda : True

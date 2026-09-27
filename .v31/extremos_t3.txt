@@ -1,0 +1,28 @@
+LOS DOS EXTREMOS, LEIDOS DE dataset/nodos.jsonl
+
+  bloquear_tiempo_pensar_calendario          en el grafo: SI
+  cuidarse_agotamiento_centro_rueda          en el grafo: SI
+
+=== cuidarse_agotamiento_centro_rueda (7 pasos)
+    titulo: Cuidarte a ti mismo contra el agotamiento, porque estas en el centro de la rueda y es la rueda la que se para
+    paso  1: Cuenta con que los momentos en los que el trabajo y la vida personal te desbordan son justo los mas dificiles para aprender de tus resultados y volver a empezar el ciclo entero.
+    paso  2: Cuida de ti mismo antes que de nada, porque estas en el centro mismo de la rueda que te mueve hacia adelante como jefe.
+    paso  3: Cuenta con que esto se dice mas facil de lo que se hace, que es lo que el propio texto añade a continuacion.
+    paso  4: Declina la mayor parte de las invitaciones que te llegan, para poder centrarte en la operacion y llegar a casa a cenar con los tuyos, que es lo que hacia Dick Costolo en plena tormenta de prensa.
+    paso  5: Reacciona a los elogios desmedidos con humor a tu costa, como hacia el.
+    paso  6: Y no finjas que no pasa nada cuando si pasa: el texto dice que Dick tampoco lo hacia, y que dio una charla a su empresa sobre la dureza mental que hace falta para mantener la confianza bajo una lluvia de malas noticias.
+    paso  7: Bloquea en tu calendario tiempo de pensar todos los dias. El texto dice que buena parte de esa dureza mental venia de hacer cosas como bloquear dos horas de tiempo de pensar al dia.
+    nodos_siguientes: []
+    nodos_previos   : ['aprender_resultados_vencer_dos_presiones']
+
+=== bloquear_tiempo_pensar_calendario (6 pasos)
+    titulo: Bloquear tiempo para pensar en tu calendario y mantener ese tiempo sagrado
+    paso  1: Reconoce primero a que te enfrentas, que es lo que el texto describe: acabas de anadir al calendario las reuniones a solas y la de equipo, probablemente tendras que ir a alguna de gran debate y de gran decision, y ademas la gente querra hablarte de esto o de aquello y surgiran asuntos urgentes que tendras que atender.
+    paso  2: Cuenta con lo que el texto dice que pasa si no haces nada: apenas tendras tiempo de ir al banio o de coger agua, no digamos de comer, seras un tiranizado por tu calendario, y el unico momento tranquilo para pensar que tendras sera en casa, de noche, cuando de verdad deberias estar durmiendo.
+    paso  3: Agenda entonces algo de tiempo para pensar, y manten ese tiempo sagrado.
+    paso  4: Hazle saber a la gente que no pueden agendar nada encima de el, nunca.
+    paso  5: Enfadate de verdad, y en serio, si lo intentan.
+    paso  6: Y anima a todos los de tu equipo a hacer lo mismo.
+    nodos_siguientes: []
+    nodos_previos   : []
+

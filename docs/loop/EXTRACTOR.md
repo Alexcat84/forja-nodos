@@ -169,6 +169,49 @@ Y la prueba de que una linea es procedimiento, del propio manual: **una linea qu
 tarda siete pasos en ejecutarse es un procedimiento nombrado en una linea, y la
 prueba de que lo es, es que existe quien lo ejecuta.**
 
+### 9.1. LA PRUEBA DEL INVENTARIO, que es la cara POSITIVA de esa vara
+
+*`D.27` del banco, ratificada por el fundador el 10 sep 2026. Nacio en la vuelta
+1 leyendo material normativo, que es el caso dificil: sin ella un texto de
+directrices se lee entero como postura.*
+
+> Una linea normativa se vuelve procedimentable **cuando el libro pone su propio
+> inventario**: los medios, las etapas o los objetos que hay que revisar,
+> **nombrados uno a uno por el texto**. Entonces escribir los pasos es
+> **transcribir** ese inventario en imperativo, y no se inventa nada.
+>
+> **Cuando el libro solo pone el mandato y un adjetivo de adecuacion** (*medidas
+> apropiadas*, *politicas adecuadas*, *requisitos razonables*, *plazo
+> prudencial*), **cualquier paso que escribas lo escribes tu**, y un nodo cuyos
+> pasos invento el extractor no es del libro.
+
+**EL INVENTARIO PROPIO DEL LIBRO ES EL "PROCEDIMIENTO PROPIO" DE LA VARA MADRE.**
+Cuando el texto solo nombra el procedimiento de otro (remite a otra norma, a otro
+libro), estas en el caso literal de *solo el nombre de otro*.
+
+**LAS TRES RESTRICCIONES, y sin ellas la prueba no vale:**
+
+1. **El inventario que cuenta es de MEDIOS, ETAPAS u OBJETOS DE TRABAJO.** Un
+   inventario de **METAS** o de **FINES** no cuenta: **nombrar adonde hay que
+   llegar sigue siendo nombrar.**
+2. **El adjetivo de adecuacion en el sitio del criterio TUMBA, aunque haya
+   inventario.** Cuatro requisitos nombrados bajo un criterio de *requisitos
+   razonables* siguen siendo postura.
+3. **Esto NO mueve la vara de continua contra repite** (`AUDITOR_FORJA.md`
+   seccion 6). Es la vara de **que es un nodo**.
+
+**LAS DOS CARAS DE LA MISMA VARA:** el adjetivo de adecuacion delata la postura,
+**el inventario propio delata el procedimiento.**
+
+**Y NINGUNA VUELTA LA ESTRECHA NI LA ENSANCHA SIN CORRECCION DECLARADA DEL
+FUNDADOR.** Si tu lectura pide moverla, **eso es parada y se trae.**
+
+**EL COROLARIO QUE COSTO UNA PASADA DE CORRECCION ENTERA, y va aqui para que no
+cueste otra:** si el libro pone el inventario pero **no** pone el destinatario,
+ni el responsable, ni el periodo, **esos no se escriben**. Un paso que cierra un
+bucle que el libro deja abierto es un **PUENTE**, y un puente no se queda callado
+dentro de un nodo: **se retira o se reescribe.**
+
 | SI es un nodo | NO es un nodo |
 |---|---|
 | un procedimiento con sus pasos, su condicion de activacion y su entregable | una **advertencia**: es linea, no procedimiento (manual seccion 4, `P.11`) |
@@ -275,6 +318,52 @@ Lo que este documento añade es **el ritmo de la vuelta**:
    `python forja.py informe --carpeta cuarentena/<lote>`. Ese informe dice
    cuantos entrarian, cuantos bloquearian y cuantos caerian, con cero
    inserciones. **Se lee entero antes de la primera insercion.**
+
+   > ### **PERO EL DEL LOTE ENTERO YA NO LO CORRES TU** (~~`D.41`~~ ~~`D.42`~~ `D.43`, 12 sep 2026)
+   >
+   > *Renumerada dos veces: `D.41` es el tallado de tablas (13 sep) y `D.42` es el
+   > censo de rutas (15 sep). El contenido no ha cambiado ninguna de las dos veces.*
+   >
+   > **LO CORRE EL ARNES, COMO PASO PROPIO, ANTES DE TU TURNO**, y te lo entrega en
+   > `docs/loop/INFORME_DE_LOTE.txt` **sellado con su `git hash-object`**, anotado
+   > en `docs/loop/SELLOS_INFORME.jsonl`. **NO LO RECOMPUTES: CITALO POR SU SELLO**,
+   > y pega de ahi el saldo y sobre todo **`CHOCAN entre si dentro del lote`**, que
+   > es la unica cifra que un informe de uno en uno no puede ver.
+   >
+   > **POR QUE SE TE QUITO:** medido el 12 sep 2026, **156,5 segundos por
+   > candidato** con la poblacion de bandejas, o sea **mas de tres horas** para un
+   > lote de 83. La vuelta 20 lo lanzo y lo dejo en **480 bytes, solo la cabecera**,
+   > y el auditor tampoco pudo. **No es lentitud tuya: es el coste del
+   > instrumento**, y una cifra que no cabe en un turno no se firma en un turno.
+   >
+   > **EL DE UN CANDIDATO SUELTO SIGUE SIENDO TUYO**, en el mismo acto en que lo
+   > escribes. Lo que se saco de tu turno es el del lote entero, y solo ese.
+
+   > ### **Y DESDE EL 16 sep 2026, TAMPOCO LA COLA DE VECINOS** (`D.43` extendida)
+   >
+   > **El arnes te entrega la cola por candidato, sellada, como ya te entrega el informe
+   > de lote.** Tu la **citas por su sello**; no la recomputas.
+   >
+   > **LA MEDIDA QUE LO OBLIGA, cronometrada por el auditor de la vuelta 28:**
+   > `buscar_vecinos` tarda **`73,3` segundos sobre `510`**, y quedaban **`12` candidatos
+   > con `77` pares**. Es exactamente la frase con la que `D.43` saco el informe de lote
+   > del turno: **una cifra que no cabe en un turno no se firma en un turno.**
+   >
+   > **Y LO QUE ESTO NO ES:** no es permiso para pedir mas candidatos por vuelta. El
+   > propio extractor lo escribio contra si mismo: *el coste del instrumento es un motivo
+   > para pedir menos candidatos, no para correr dos a la vez.*
+   >
+   > **Y SI EL PROMPT NO TE ENTREGA NINGUN INFORME**, es que esta corrida no lo
+   > pidio: entonces **no lo inventes y no lo lances**, y declara en tu reporte que
+   > la vuelta no trae saldo de lote.
+
+   > ### **Y LA POBLACION DEL INFORME CAMBIO** (`D.38.5`, 12 sep 2026)
+   >
+   > **ES GRAFO MAS BANDEJAS**, como `D.38.4` ya mandaba para el auditor: **un par
+   > cuyos dos extremos viven en cuarentena se levanta igual.** Espera **mas
+   > `BLOQUEARIA` que antes, y eso no es que tus candidatos hayan empeorado**: es
+   > cola de lectura que antes no se veia. El informe publica la poblacion **con su
+   > reparto**, y ese reparto es el que tienes que citar.
 3. **UN CANDIDATO POR VEZ**, y en el orden del libro: los nodos de un mismo
    capitulo llegan juntos, y **el primero que entra cambia lo que el segundo
    mide**. Por eso no hay carga masiva y por eso el orden importa.
@@ -283,8 +372,76 @@ Lo que este documento añade es **el ritmo de la vuelta**:
    reporte, la siguiente baja el tramo. Regla madre: la parada de la bateria sin
    techo (5 sep 2026), donde el bucle producia trabajo bueno que no cabia en una
    vuelta.
+
+   > ### **EL TECHO DE CANDIDATOS POR VUELTA MANDA SOBRE EL DE CAPITULOS**
+   >
+   > *Regla de precedencia, decision del fundador del 12 sep 2026, punto 2, sobre
+   > la parada de la vuelta 17.*
+   >
+   > **SI UN SOLO CAPITULO PASA DEL TECHO DE CANDIDATOS, LA VUELTA CIERRA EN ESE
+   > CAPITULO Y LO DECLARA.** No se reparte el capitulo en dos vueltas ni se
+   > estira el tramo para completar el numero de capitulos del lote.
+   >
+   > **EL EJEMPLAR, Y ES LO QUE LA HIZO FALTA:** `cap_07` del lote 4 dio **24
+   > candidatos contra un techo de 15**, y la vuelta 17 intento ademas los otros
+   > tres capitulos de su tramo: **no cerro su reporte.** El volumen del lote no
+   > estaba mal medido; lo que faltaba era decir **cual de los dos techos manda
+   > cuando chocan.**
+   >
+   > **COMO SE DECLARA, en el reporte y en una linea:** *la vuelta cierra en
+   > `cap_NN` con N candidatos, por encima del techo de 15; los capitulos
+   > restantes del tramo pasan a la vuelta siguiente.*
+   >
+   > **Y EL FRENO DE `PASOS INVENTADOS` SIGUE APARTE Y ENTERO.** Son dos
+   > instrumentos distintos: **este mide cuanto cabe en una vuelta; aquel mide si
+   > lo extraido esta en el libro.** Ninguno absuelve al otro, y que este se
+   > dispare no baja el volumen del lote: **el volumen lo baja su propia cifra.**
 5. **AL CERRAR EL LIBRO**, los cuatro barridos de la fase 3 del flujo, y la
    auditoria ciega de la fase 4 antes de darlo por integrado.
+6. **AL CERRAR LA VUELTA, `python scripts/cerrar_reporte.py`** (`D.41`). Corre el
+   tallado en estricto mas las cinco guardas. **No es un tramite: es lo que
+   comprueba que lo que publicaste es lo que midio tu instrumento.**
+
+   > ### **LA TABLA QUE DIGA SER DE UN INSTRUMENTO SE ANEXA, NO SE TECLEA** (`D.41`)
+   >
+   > **Guarda la salida del instrumento en un fichero y pega la tabla de ahi.** El
+   > hook compara **celda a celda** contra ese fichero en cada commit, y **una tabla
+   > que difiere ABORTA el commit nombrando la fila.**
+   >
+   > **SE ARREGLA REGENERANDO, NUNCA TECLEANDO LA CELDA BUENA:**
+   >
+   >     python scripts/tallar_reporte.py --arreglar
+   >
+   > y despues **escribes al lado de que caida sale**, que es correccion declarada.
+   >
+   > **POR QUE EXISTE, y es tu historial:** cuatro caidas de la racha `REPORTE` en
+   > cuatro vueltas fueron la misma cosa. En la vuelta 22, **tu mismo reporte llevaba
+   > una tabla pegada** (`cap_10`, al digito) **y una tecleada** (`cap_11`, 14 de 18
+   > filas falsas). **La diferencia no fue el cuidado: fue el metodo.**
+   >
+   > **SI TU TABLA RESUME UN INSTRUMENTO en vez de reproducirlo** (dos filas de
+   > quince salen de el), **dilo** con `<!-- TALLADO: parcial salida=<ruta> -->`
+   > encima. Queda listada como cita en cada corrida. **Lo que no vale es callarlo.**
+
+   > ### **Y TODA RUTA QUE PUBLIQUES COMO SEDE DE UNA CIFRA TIENE QUE SOSTENERLA** (`D.42`)
+   >
+   > **La unidad es la CELDA.** El censo mira, en cada commit, toda ruta que ofrezcas
+   > como origen de un numero: en una tabla, en la columna *de donde sale*, o en una
+   > linea. **Tres formas y solo tres:**
+   >
+   > | | |
+   > |---|---|
+   > | la ruta tiene contenido | pasa |
+   > | la ruta esta vacia o no esta | **TUMBA**, salvo que escribas en la MISMA celda `VACIA A PROPOSITO: <motivo>` |
+   > | era un conjunto | escribela `PATRON: <glob>`, y tiene que tener al menos una coincidencia |
+   >
+   > **POR QUE EXISTE, y es la caida que paro la vuelta 25:** publicaste `2` pares por
+   > leer con sede `.v25/cola_lectura.txt`, y ese fichero tenia **cero bytes** cuando
+   > el instrumento da `4`. **No fallo la cuenta: fallo que nadie podia recontarla.**
+   >
+   > **Y LA MARCA NO ES UN COMODIN.** Lleva motivo escrito, va al lado del numero que
+   > sostiene, y cada corrida la cuenta y la publica. Una marca que se pone sin mirar
+   > se ve en el recuento.
 
 **CUANDO UN CAPITULO ENTERO CAE EN LA MISMA FAMILIA**, que es el caso que la
 seccion vieja dejaba sin escribir: **eso no es una señal de duplicado, es una
@@ -292,6 +449,24 @@ señal de que el libro trata un tema.** Se extraen igual, uno a uno, y **se
 espera que la cola de lectura sea larga**: es el precio de un capitulo
 monotematico, no un fallo de la aduana. Lo que NO se hace es subir un umbral
 para que la cola se acorte.
+
+
+> ## **MODO AUSTERO, VIGENTE HASTA QUE SE CIERRE EL MUNDO 11** (`D.47`, 16 sep 2026)
+>
+> > **EL AUSTERO RECORTA TINTA, NO CONTROL.**
+>
+> | encoge | queda INTACTO |
+> |---|---|
+> | **nada que el registro ya diga**: si el `loop.log` lo registro o el acta anterior lo adjudico, **no se repite** | **la cifra con su instrumento al lado** (`D.38.3`) |
+> | **cifras talladas**, sin parrafo de acompaniamiento | **la tabla pegada de su fichero** (`D.41`) |
+> | **los discutibles por numero y linea**, sin reabrir el argumento | **la ruta que sostiene lo que dice** (`D.42`) |
+> | **los lotes al techo de candidatos**, no por encima | **las guardas de dato: cerrojo, `D.44`, la aduana entera y la fidelidad `D.30`** |
+> | **cero instrumentos nuevos**, salvo caida **de DATO** con su cita | |
+>
+> **UN REPORTE MAS CORTO NO ES UN REPORTE CON MENOS PRUEBA.** Lo que se quita es la
+> repeticion. **Y el motivo esta medido:** un registro de treinta mil lineas no es un
+> registro mejor, es uno que nadie relee, y lo que se pierde ahi no es la cifra: **es el
+> encargo que no llego.**
 
 ## 13. LA MORATORIA DE MAQUINARIA
 
@@ -355,11 +530,13 @@ rompe.
 **LA NEGRA, lo que mas aparece:** `customer`, `management`, `development`,
 `quality`, `supply`, `performance`, `framework`, `process`, `variance`,
 `breakdown`, `procurement`, `stakeholders`, `convention`, `hypothesis`,
-`pricing`, `revenue`, `simulation`, `learning`, `manufacturing`.
+`pricing`, `revenue`, `simulation`, `learning`, `manufacturing`, y desde el
+10 sep 2026 tambien `equity` (capital, participacion) y `feedback`
+(retroalimentacion).
 
 **LA BLANCA, y no la amplias tu:** `marketing`, `benchmarking`, `startup`,
-`lean`, `coaching`, `scrum`, `feedback`, `stock`, `software`, `web`, `ranking`,
-`escrow`, `equity`, `backlog`, `branding`, `crowdfunding`, `outsourcing`,
+`lean`, `coaching`, `scrum`, `engagement`, `stock`, `software`, `web`,
+`ranking`, `escrow`, `backlog`, `branding`, `crowdfunding`, `outsourcing`,
 `onboarding`, `storytelling`, `freemium`, `bootstrapping`, `pivot`, `kanban`,
 `kaizen`, `leasing`, `coworking`, `networking`, `retargeting`, `greenwashing`,
 `crossdocking`, `marketplace`.
@@ -408,6 +585,156 @@ pide arista y nombre propio, o lo repite, y entonces no entra.
 - **Regla 4:** sin traducciones paralelas ni familias repetidas.
 - **Regla 5:** verbo mas objeto, minimo dos piezas.
 - **Regla 6:** `snake_case` estricto, minusculas y sin acentos.
+
+## 15.4. LA RELECTURA DE FIDELIDAD, que la aduana NO puede hacer por ti
+
+*`D.30` del banco, ratificada por el fundador el 10 sep 2026. Es la leccion mas
+cara que ha comprado esta casa: costo una vuelta entera de reparacion.*
+
+> **NINGUNA GUARDA DE ESTA CASA VE UN PASO QUE TU ESCRIBISTE Y EL LIBRO NO DICE.**
+
+**LA CIFRA DEL LOTE 1: 13 de 36 pasos, el 36 por ciento, los habia puesto el
+extractor y no el libro. Y la aduana dio 6 de 6 verdes ANTES y DESPUES de
+corregirlos.** El mismo informe, el mismo saldo, trece defectos en medio.
+
+**No es que la puerta este abierta:** mordida a proposito, la misma puerta tumba
+una fuente mutada y un candidato con los pasos vacios. **Es que mide otra cosa.**
+La aduana compara tu candidato con el grafo y consigo mismo; **no tiene el libro
+delante**, y no puede tenerlo.
+
+> **LA RELECTURA DE FIDELIDAD ES OBLIGATORIA EN TODA VUELTA, ANTES DE CUALQUIER
+> INSERCION. NINGUNA MEDIDA DE LA ADUANA LA SUSTITUYE.** Un informe verde
+> certifica que la ficha esta bien construida, **no que sus pasos sean del libro.**
+
+**COMO SE HACE, EN EL ACTO DE ESCRIBIR CADA CANDIDATO:**
+
+1. **Marca cada paso contra su parrafo:** **TRANSCRIPCION** (el libro pone el
+   medio, la etapa o el objeto) o **PUENTE** (lo escribiste tu).
+2. **Cada PUENTE se retira o se reescribe**, y **citas el parrafo que NO lo
+   dice**, con su fichero y su linea. **Un puente no se queda callado dentro de
+   un nodo.**
+3. **En el mismo acto**, no en una vuelta posterior. El lote 1 gasto una vuelta
+   entera reparando trece puentes; aplicada al escribir, habria salido sin deuda.
+
+**LAS TRES ESPECIES DE PUENTE QUE EL LOTE 1 PAGO, y son las que volveras a
+escribir sin darte cuenta:**
+
+| especie | ejemplar del lote 1 |
+|---|---|
+| **el destinatario** | *traslada el expediente a la autoridad que puede hacer efectiva esa norma*. El parrafo alienta a vigilar y **no encarga ningun traslado** |
+| **el periodo** | *fija por escrito cada cuanto se examina*. El parrafo dice *periodicamente* y **el periodo lo pusiste tu** |
+| **el responsable** | *escribe quien responde de cada regla*. El parrafo pone tres etapas y **ningun responsable** |
+
+**Y EL AVISO QUE DICE DONDE MIRAR:** el parrafo mas rico del lote (cinco medios
+nombrados) dio **0 por ciento** de puentes; el mas pobre (una frase) dio **83 por
+ciento**.
+
+> **UN PARRAFO POBRE NO PRODUCE UN NODO POBRE: PRODUCE UN NODO INVENTADO.**
+
+**Cuando el inventario del libro sea delgado, desconfia de tus propios pasos.** La
+tentacion de completarlo no se nota mientras se escribe, y **ninguna guarda la
+nota despues.**
+
+## 15.5. LA CITA DE LINEA LLEVA SU `sed` PEGADO AL LADO
+
+*`D.35` del banco, decision del fundador del 10 sep 2026. Con ella se reinicio la
+racha `REPORTE`, que estaba en 3 de 3.*
+
+> **NINGUNA CITA DE LINEA SE TECLEA EN UNA TABLA DE TU REPORTE SIN QUE LA SALIDA
+> LITERAL DE `sed -n '<n>p'` O `grep -n` QUEDE PEGADA AL LADO**, en el propio
+> reporte, aunque sea en una columna estrecha.
+
+    | pieza | linea | la salida, pegada |
+    |---|---:|---|
+    | P5 | L81 | `81: "...bring them to town..."` |
+
+**EL EJEMPLAR ES LA VUELTA 7 Y COSTO LA PARADA DEL BUCLE.** Tres citas con **el
+mismo desfase de OCHO lineas**, las tres dentro de la misma seccion. Y lo grave no
+fue la cita: la tabla declaraba una seccion de L43 a L73 cuando corria hasta L81,
+asi que **cuatro bloques del capitulo no aparecian en ninguna de las diecinueve
+piezas** de una tabla que se anunciaba completa.
+
+**POR QUE PEGAR LA SALIDA Y NO PROMETER QUE LA MIRASTE.** El remedio anterior era
+*toda cita se reabre con `sed -n` antes de teclearse*, y se rompio. En esta casa
+**los dos remedios que han funcionado obligan a teclear algo**, y **los dos que se
+rompieron eran intenciones.**
+
+> **UN REMEDIO QUE SE CUMPLE ACORDANDOSE NO ES UN REMEDIO.**
+
+**Y NO ES SOLO PARA EL AUDITOR:** la cita pegada es lo que te deja **a ti**
+descubrir el desfase mientras escribes, que es cuando cuesta un segundo.
+
+## 15.6. LA SERIE QUE EL TITULO ENUMERA SE CABLEA EN TU MISMA VUELTA
+
+*`D.37` del banco, decision del fundador del 10 sep 2026. Cuelga de `D.19` y
+`D.29`.*
+
+**Cuando un nodo dice en su titulo o en su texto CUANTAS partes tiene Y LAS
+NOMBRA** (*"con sus seis vias"*, *"los cuatro pasos"*, *"las cinco efes"*) **y esas
+partes existen como nodos, la arista cabeza a parte NO espera a que una señal la
+levante.**
+
+> **LA CUENTA ES CONDICION, no un adorno del ejemplo** (correccion del titular del
+> 11 sep 2026). **Si el texto solo enumera sin decir cuantas, esto NO es `D.37`:
+> es `D.29`**, y entonces la arista se declara igual **pero con razon escrita que
+> la sostenga**, porque ahi si hay algo que argumentar.
+
+> **DESDE AHORA DECLARAS ESAS ARISTAS EN LA MISMA VUELTA EN QUE INSERTAS LAS
+> PARTES.** No en la siguiente, no cuando alguien las eche de menos.
+
+**POR QUE NO SE ESPERA:** `D.19` ya midio que la señal 3 levanta el **3 por
+ciento** de las aristas declaradas. Esperarla es esperar a algo que esta escrito
+que no llega. Y esto no es un juicio dificil: **el texto de la cabeza dice cuantas
+partes tiene y las nombra una a una.** Comprobar cuales existen es mirar una lista.
+
+**COMO SE DECLARA, y la cita es lo que la hace verificable:**
+
+    python forja.py arista --madre <cabeza> --hijo <parte> --paso <n>         --razon "el paso n de la madre nombra la parte en una linea y el hijo la
+                 despliega en N pasos que la cabeza no tiene"
+
+**`--paso <n>` ES EL PASO DE LA MADRE QUE ENUMERA LA PARTE.** El auditor lo abre y
+comprueba que ahi se nombra al hijo. **Una arista sin su linea es una afirmacion
+sin cita.**
+
+**Y PEGAS LA SALIDA DEL COMANDO EN TU REPORTE**, que imprime el paso citado
+entero: es el mismo remedio mecanico de `D.35` aplicado a esta sede. **La cita se
+pega, no se promete.**
+
+**LO QUE NO AUTORIZA:** declarar una arista porque dos nodos compartan familia o
+tema. La enumeracion tiene que estar **escrita**, y la parte tiene que ser la que
+ese paso nombra. Una cabeza de seis vias y un vecino que no es ninguna de las seis
+**son hermanos, y su veredicto es `SANO`.**
+
+## 15.7. LA INSERCION DE UN LOTE CERRADO YA NO SE PIDE: SE HACE
+
+*`D.39` del banco, decision del fundador del 11 sep 2026, que corrige el default de
+`D.26`.*
+
+> **CUANDO UN LOTE QUEDA CERRADO EN EXTRACCION Y EL ACTA DEL AUDITOR CERTIFICA SU
+> INFORME** (todos `ENTRARIAN`, o las caidas declaradas con su motivo), **LO
+> INSERTAS EN TU VUELTA SIGUIENTE, SIN FIRMA NUEVA DEL FUNDADOR.**
+>
+> **LOS CANDIDATOS DE UN LOTE ABIERTO SE QUEDAN EN CUARENTENA HASTA QUE SU LOTE
+> CIERRE.**
+
+**`MODO_INSERCION` llega en `insertar` por defecto.** Eso **NO es barra libre**: la
+letra de arriba es la que manda, y **meter candidatos de un lote abierto es una
+caida de dato**, no un adelanto.
+
+**POR QUE LA CONDICION ES LOTE CERRADO Y NO CANDIDATO LISTO**, que es lo que
+invita a saltarsela: un candidato suelto que entra antes **se lleva por delante la
+comparabilidad del lote entero** (los que entren despues lo veran como vecino y los
+que entraron antes no), y **`D.36` solo se puede calcular sobre un lote completo**,
+porque con el lote abierto no se sabe todavia quien va a entrar.
+
+**COMO SE INSERTA, y es lo de siempre:** uno por vez, con `D.36` (el orden que
+lee) y `D.37` (la serie que dice cuantas partes tiene), **los veredictos a
+`bitacora/VEREDICTOS.jsonl`** y **los insertados a `cuarentena/_insertados/<libro>/`
+en el mismo acto** (`D.31`).
+
+**Y LO QUE ESTO ARREGLA, que llevaba tres vueltas roto:** un veredicto razonado que
+no llega a la bitacora **vive solo en `REPORTE.md`**, que no es su sede. Hoy hay
+**26** asi.
 
 ## 16. CADA CANDIDATO PASA POR LA ADUANA EN EL MISMO ACTO EN QUE SE ESCRIBE
 
@@ -461,3 +788,42 @@ dentro los JSON. Eso es lo que convierte tu reporte en prueba: quien lee
 **LA FUENTE CANONICA, ANTES DEL PRIMER NODO DEL LIBRO.** Sin su clave en
 `fuentes/FUENTES_CANONICAS.json` la aduana rechaza el primer candidato, y ese
 rechazo es deliberado.
+
+## 15. LOS DOS REGIMENES, Y EN CUAL ESTAS (`D.58`, 19 sep 2026)
+
+> **LA LINEA QUE LOS SEPARA ES UNA SOLA: SI EL DATO EXISTE YA.**
+
+**MIRA `MODO_INSERCION` Y EL ENCARGO. El encargo declara su clase en su propia linea:**
+
+    CLASE DE ESTA VUELTA: EXTRACCION | INSERCION | SANEAMIENTO
+
+### EN EXTRACCION (`MODO_INSERCION=cuarentena`), EL REGIMEN LIGERO
+
+**Nada toca el grafo:** tus candidatos se quedan en su bandeja y `D.39` no los deja entrar
+hasta que el lote cierre. **Un candidato mal leido aqui no ha hecho daño todavia.**
+
+| | |
+|---|---|
+| **minas** | **TRES capitulos por vuelta**, techo de **`30` candidatos** |
+| **las guardas** | **tallado y censo**. Sin fase ciega, sin sello y sin testigo |
+| **la fidelidad `D.30`** | **POR MUESTRA**: `scripts/muestra_fidelidad.py`, con **la semilla escrita en el reporte** |
+| **el objetivo** | **turno por debajo de `5` USD** |
+
+    python scripts/muestra_fidelidad.py --libro <clave> --capitulos a,b,c --semilla <texto>
+
+**Uno de los tres se relee ENTERO y los otros dos llevan `15` pasos**, y **no lo eliges
+tu**: lo reparte la semilla. **Pega la salida del instrumento**: quien audite vuelve a
+correrlo y tiene que salirle la misma lista. **Una muestra que no se reproduce no es una
+muestra: es una eleccion.**
+
+> **EL DISPARADOR:** si la muestra de un capitulo **pasa del `10` por ciento de pasos
+> inventados, ESE CAPITULO SE RELEE ENTERO ANTES DE SEGUIR.** El tope de `D.30` no se
+> afloja.
+
+### EN INSERCION (`MODO_INSERCION=insertar`), EL COMPLETO
+
+**Sin quitar nada: es donde el dato existe y donde cada guarda se paga sola.**
+
+> **LA RELECTURA DE FIDELIDAD DEL LOTE SE HACE ENTERA AQUI**, sobre los candidatos que
+> entran, **y no antes**: asi **ningun paso entra al grafo sin haber sido leido contra su
+> libro una vez.** Releerlos dos veces cuesta el doble y protege lo mismo.

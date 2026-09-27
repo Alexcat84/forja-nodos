@@ -1,0 +1,6 @@
+$ tail -n 5 docs/loop/loop.log
+[2026-09-20 12:08:07] VUELTA 1 : EXTRACTOR (claude-opus-5)
+[2026-09-20 13:06:30] extractor listo (USD 20.691080999999993), 3503s, intento 1 de 7
+[2026-09-20 13:06:31] VUELTA 1 : APERTURA CIEGA (claude-opus-5), retirados: REPORTE.md ultimo_extractor.json ultimo_auditor.json CREDITO_serial.jsonl
+[2026-09-20 13:06:31]   hereda 0 remedio(s) del acta anterior, entregados en el prompt (D.40)
+[2026-09-20 13:06:31]   y solo eso: remedios con su motivo, sin cifras ni conclusiones (D.52)

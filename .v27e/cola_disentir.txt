@@ -1,0 +1,24 @@
+LA COLA QUE DEJA EL SIGUIENTE DEL ORDEN DEL LIBRO, crear_obligacion_disentir_equipo (L231)
+VECINOS POR ENCIMA DE UMBRAL: 10. LA INSERCION QUEDA BLOQUEADA.
+  vecino parar_debate_emocion_agotamiento  [Parar un debate cuando la gente esta agotada o demasiado cargada de emocion, y aplazarlo en vez de dejar que decida el cansancio]
+  vecino pedir_hechos_decision_evitar_recomendaciones  [Pedir hechos y no recomendaciones cuando reunes informacion para una decision]
+  vecino crear_cultura_escucha_equipo  [Crear una cultura en la que tu equipo se escuche entre si, con un sistema simple de ideas y quejas que alguien atiende y explica]
+  vecino proteger_tiempo_equipo_jefe  [No malgastar el tiempo de tu equipo: quitar de en medio los obstaculos, las reuniones sobrantes y los mandatos de arriba]
+  vecino compartir_logica_mostrar_razonamiento  [Compartir tu logica mostrando el razonamiento entero y no solo la conclusion]
+  vecino reservar_calendario_tiempo_ejecutar  [Reservar en el calendario el tiempo de ejecutar, que es solitario y por eso nunca se apunta]
+  vecino cambiar_posicion_hechos_explicar_cambio  [Cambiar de posicion cuando cambian los hechos, y explicar el cambio en voz alta en vez de dejar que se note]
+  vecino aprender_resultados_vencer_dos_presiones  [Aprender de los resultados venciendo las dos presiones que empujan a dejar de aprender]
+  vecino evitar_presion_social_actos_equipo  [Evitar que un acto no obligatorio se sienta obligatorio, y que el intento de hacer equipo acabe empeorando el animo]
+  vecino crear_plan_creible_equipo  [Crear un plan que tenga posibilidades reales de funcionar]
+
+de esos 10 vecinos, cuantos viven en el grafo y cuantos en la bandeja:
+  parar_debate_emocion_agotamiento                 grafo=0
+  pedir_hechos_decision_evitar_recomendaciones     grafo=0
+  crear_cultura_escucha_equipo                     grafo=1
+  proteger_tiempo_equipo_jefe                      grafo=0
+  compartir_logica_mostrar_razonamiento            grafo=0
+  reservar_calendario_tiempo_ejecutar              grafo=0
+  cambiar_posicion_hechos_explicar_cambio          grafo=1
+  aprender_resultados_vencer_dos_presiones         grafo=1
+  evitar_presion_social_actos_equipo               grafo=0
+  crear_plan_creible_equipo                        grafo=1

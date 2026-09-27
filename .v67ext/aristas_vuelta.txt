@@ -1,0 +1,17 @@
+registros de la vuelta en la bitacora: 97
+EN GRAFO   veredicto CONTINUA  reunir_informacion_gerencial_vias_variadas > escalonar_fuentes_informacion_gerencial
+EN GRAFO   veredicto CONTINUA  reunir_informacion_gerencial_vias_variadas > escalonar_fuentes_informacion_gerencial
+EN GRAFO   veredicto CONTINUA  subir_productividad_gerencial_tres_vias > buscar_actividad_alta_palanca_tres_vias
+EN GRAFO   veredicto CONTINUA  subir_productividad_gerencial_tres_vias > buscar_actividad_alta_palanca_tres_vias
+EN GRAFO   veredicto CONTINUA  buscar_actividad_alta_palanca_tres_vias > elegir_momento_actividad_palanca_maxima
+EN GRAFO   veredicto CONTINUA  buscar_actividad_alta_palanca_tres_vias > elegir_momento_actividad_palanca_maxima
+EN GRAFO   lectura declarada   transmitir_objetivos_prioridades_preferencias > delegar_tarea_base_comun_seguimiento
+EN GRAFO   veredicto CONTINUA  detectar_arreglar_fallo_etapa_menor_valor > supervisar_tarea_delegada_etapa_menor_valor
+EN GRAFO   lectura declarada   delegar_tarea_base_comun_seguimiento > supervisar_tarea_delegada_etapa_menor_valor
+EN GRAFO   lectura declarada   variar_frecuencia_inspeccion_nivel_calidad > supervisar_tarea_delegada_etapa_menor_valor
+EN GRAFO   lectura declarada   delegar_tarea_base_comun_seguimiento > supervisar_decision_delegada_preguntas_concretas
+EN GRAFO   lectura declarada   construir_flujo_produccion_paso_limitante > identificar_paso_limitante_jornada_desfases
+EN GRAFO   lectura declarada   identificar_paso_limitante_jornada_desfases > usar_calendario_herramienta_planificacion_produccion
+EN GRAFO   lectura declarada   representar_actividad_caja_negra_ventanas > buscar_regularidad_bloques_iguales_trabajo_mando
+registros con arista: 14 | aristas DISTINTAS: 11 | en el grafo: 11 | en cola: 0 (un par CONTINUA leido desde sus dos lados deja dos registros y una sola arista)
+esperadas: 11 | esperadas que viven en el grafo: 11 | esperadas sin registro: 0 | registradas no esperadas: 0

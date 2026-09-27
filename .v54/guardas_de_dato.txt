@@ -1,0 +1,2 @@
+$ grep -n "GUARDAS_DE_DATO" scripts/deuda.py
+55:GUARDAS_DE_DATO = ("gate", "cerrojo", "censo_no_decrece", "fidelidad")

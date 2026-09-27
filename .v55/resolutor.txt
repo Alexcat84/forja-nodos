@@ -1,0 +1,4 @@
+$ python forja.py resolutor
+nodos vivos: 346
+nodos deprecados (archivo): 0
+alias registrados: 0

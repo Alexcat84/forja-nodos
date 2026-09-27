@@ -1,0 +1,37 @@
+$ python .v54/d005_los_seis.py
+d005 RELEIDA: los informes por candidato de cap_03 de grove, en .v2g/
+  informes por candidato leidos : 15
+  BLOQUEARIAN                   : 6
+  ENTRARIAN                     : 9
+  CAERIAN                       : 0
+
+LOS QUE BLOQUEAN, NOMBRADOS UNO A UNO, CON SU POBLACION Y SUS VECINOS
+  [BLOQUEARIA] archivar_indicadores_resolver_problemas   (poblacion del barrido: 371)
+       vecino construir_indicador_tendencia_patron  [similitud_texto]
+       vecino revisar_tres_preguntas_valor_carrera  [similitud_texto]
+  [BLOQUEARIA] construir_grafico_escalonado_pronosticos   (poblacion del barrido: 371)
+       vecino construir_indicador_tendencia_patron  [similitud_texto]
+       vecino elegir_fabricar_pedido_pronostico  [similitud_texto]
+       vecino emparejar_indicadores_efecto_contraefecto  [similitud_texto]
+  [BLOQUEARIA] construir_indicador_tendencia_patron   (poblacion del barrido: 371)
+       vecino construir_grafico_escalonado_pronosticos  [similitud_texto]
+       vecino archivar_indicadores_resolver_problemas  [similitud_texto]
+       vecino equilibrar_capacidad_personal_inventario_plazo  [similitud_texto]
+  [BLOQUEARIA] elegir_fabricar_pedido_pronostico   (poblacion del barrido: 371)
+       vecino construir_grafico_escalonado_pronosticos  [similitud_texto]
+  [BLOQUEARIA] elegir_indicador_salida_trabajo_administrativo   (poblacion del barrido: 363)
+       vecino evaluar_directivo_resultados_fortaleza  [paso_contra_nodo]
+       vecino emparejar_indicadores_efecto_contraefecto  [similitud_texto]
+  [BLOQUEARIA] emparejar_indicadores_efecto_contraefecto   (poblacion del barrido: 358)
+       vecino revisar_tres_preguntas_valor_carrera  [similitud_texto]
+
+LOS QUE ENTRAN, NOMBRADOS IGUAL
+  [ENTRARIA]   casar_flujo_fabricacion_flujo_ventas   (poblacion del barrido: 371)
+  [ENTRARIA]   construir_indicador_linealidad_alerta_temprana   (poblacion del barrido: 371)
+  [ENTRARIA]   decidir_aceptar_rechazar_material_defectuoso   (poblacion del barrido: 371)
+  [ENTRARIA]   dimensionar_plantilla_administrativa_pronostico   (poblacion del barrido: 371)
+  [ENTRARIA]   elegir_cinco_indicadores_diarios_fabrica   (poblacion del barrido: 358)
+  [ENTRARIA]   elegir_inspeccion_barrera_monitorizacion   (poblacion del barrido: 371)
+  [ENTRARIA]   representar_actividad_caja_negra_ventanas   (poblacion del barrido: 371)
+  [ENTRARIA]   simplificar_trabajo_reducir_numero_pasos   (poblacion del barrido: 371)
+  [ENTRARIA]   variar_frecuencia_inspeccion_nivel_calidad   (poblacion del barrido: 371)

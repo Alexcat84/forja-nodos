@@ -1,0 +1,340 @@
+$ grep -n -o -F 'I read standard reports and memos' fuentes/grove_high_output/cap_04.md    # reunir_informacion_gerencial_vias_variadas paso 1 
+145:I read standard reports and memos
+$ grep -n -o -F 'but also get information ad hoc' fuentes/grove_high_output/cap_04.md    # reunir_informacion_gerencial_vias_variadas paso 2 
+145:but also get information ad hoc
+$ grep -n -o -F 'I talk to people inside and outside the company, managers at other fir' fuentes/grove_high_output/cap_04.md    # reunir_informacion_gerencial_vias_variadas paso 3 
+145:I talk to people inside and outside the company, managers at other fir
+$ grep -n -o -F 'Customer complaints, both external and internal, are also a very impor' fuentes/grove_high_output/cap_04.md    # reunir_informacion_gerencial_vias_variadas paso 4 
+145:Customer complaints, both external and internal, are also a very impor
+$ grep -n -o -F 'To cut myself off from the casual complaints of people in that group w' fuentes/grove_high_output/cap_04.md    # reunir_informacion_gerencial_vias_variadas paso 5 
+145:To cut myself off from the casual complaints of people in that group w
+$ grep -n -o -F 'This is something we should remember, apart from whether we do as they' fuentes/grove_high_output/cap_04.md    # reunir_informacion_gerencial_vias_variadas paso 6 
+145:This is something we should remember, apart from whether we do as they
+$ grep -n -o -F 'the information most useful' fuentes/grove_high_output/cap_04.md    # reunir_informacion_gerencial_vias_variadas paso 7 
+147:the information most useful
+$ grep -n -o -F 'the more timely the information, the more valuable it is' fuentes/grove_high_output/cap_04.md    # reunir_informacion_gerencial_vias_variadas paso 8 
+147:the more timely the information, the more valuable it is
+$ grep -n -o -F 'you have to understand the way it comes to you' fuentes/grove_high_output/cap_04.md    # escalonar_fuentes_informacion_gerencial paso 1 
+153:you have to understand the way it comes to you
+$ grep -n -o -F 'Verbal sources are the most valuable, but' fuentes/grove_high_output/cap_04.md    # escalonar_fuentes_informacion_gerencial paso 2 
+153:Verbal sources are the most valuable, but
+$ grep -n -o -F 'So you then read the newspaper article itself to find out who, what, w' fuentes/grove_high_output/cap_04.md    # escalonar_fuentes_informacion_gerencial paso 3 
+153:So you then read the newspaper article itself to find out who, what, w
+$ grep -n -o -F 'reiteration and perspective, which can be compared to reading a news m' fuentes/grove_high_output/cap_04.md    # escalonar_fuentes_informacion_gerencial paso 4 
+153:reiteration and perspective, which can be compared to reading a news m
+$ grep -n -o -F 'Each level in your information hierarchy is important, and you can rel' fuentes/grove_high_output/cap_04.md    # escalonar_fuentes_informacion_gerencial paso 5 
+153:Each level in your information hierarchy is important, and you can rel
+$ grep -n -o -F 'you do not' fuentes/grove_high_output/cap_04.md    # escalonar_fuentes_informacion_gerencial paso 6 
+153:you do not
+$ grep -n -o -F 'Your information sources should complement one another, and also be re' fuentes/grove_high_output/cap_04.md    # escalonar_fuentes_informacion_gerencial paso 7 
+153:Your information sources should complement one another, and also be re
+$ grep -n -o -F 'visit a particular place in the company and observe what' fuentes/grove_high_output/cap_04.md    # programar_visita_area_observar_despachar paso 1 
+155:visit a particular place in the company and observe what
+$ grep -n -o -F 'A certain stop-and-start dynamics occurs when the visitor sits down' fuentes/grove_high_output/cap_04.md    # programar_visita_area_observar_despachar paso 2 
+155:A certain stop-and-start dynamics occurs when the visitor sits down
+$ grep -n -o -F 'he can simply stop, cover it, and be on his way' fuentes/grove_high_output/cap_04.md    # programar_visita_area_observar_despachar paso 3 
+155:he can simply stop, cover it, and be on his way
+$ grep -n -o -F 'Ditto for the subordinate when he initiates conversation' fuentes/grove_high_output/cap_04.md    # programar_visita_area_observar_despachar paso 4 
+155:Ditto for the subordinate when he initiates conversation
+$ grep -n -o -F 'the awkwardness' fuentes/grove_high_output/cap_04.md    # programar_visita_area_observar_despachar paso 5 
+157:the awkwardness
+$ grep -n -o -F 'Mr' fuentes/grove_high_output/cap_04.md    # programar_visita_area_observar_despachar paso 6 
+157:Mr
+$ grep -n -o -F 'examine the housekeeping, the arrangement of things, the labs, and the' fuentes/grove_high_output/cap_04.md    # programar_visita_area_observar_despachar paso 7 
+157:examine the housekeeping, the arrangement of things, the labs, and the
+$ grep -n -o -F 'spend an hour or so browsing around and getting acquainted with things' fuentes/grove_high_output/cap_04.md    # programar_visita_area_observar_despachar paso 8 
+157:spend an hour or so browsing around and getting acquainted with things
+$ grep -n -o -F 'a manager not only gathers information but is also a source of it' fuentes/grove_high_output/cap_04.md    # transmitir_objetivos_prioridades_preferencias paso 1 
+159:a manager not only gathers information but is also a source of it
+$ grep -n -o -F 'He must convey his knowledge to members of his own organization and to' fuentes/grove_high_output/cap_04.md    # transmitir_objetivos_prioridades_preferencias paso 2 
+159:He must convey his knowledge to members of his own organization and to
+$ grep -n -o -F 'Beyond relaying facts, a manager must also communicate his objectives,' fuentes/grove_high_output/cap_04.md    # transmitir_objetivos_prioridades_preferencias paso 3 
+159:Beyond relaying facts, a manager must also communicate his objectives,
+$ grep -n -o -F 'only if the manager imparts these will his subordinates know how to ma' fuentes/grove_high_output/cap_04.md    # transmitir_objetivos_prioridades_preferencias paso 4 
+159:only if the manager imparts these will his subordinates know how to ma
+$ grep -n -o -F 'transmitting objectives and preferred approaches constitutes a key to ' fuentes/grove_high_output/cap_04.md    # transmitir_objetivos_prioridades_preferencias paso 5 
+159:transmitting objectives and preferred approaches constitutes a key to 
+$ grep -n -o -F 'making a phone call to an associate suggesting that a decision be made' fuentes/grove_high_output/cap_04.md    # empujar_persona_reunion_direccion_preferida paso 1 
+167:making a phone call to an associate suggesting that a decision be made
+$ grep -n -o -F 'or sending a note or a memo that shows how you see a particular situat' fuentes/grove_high_output/cap_04.md    # empujar_persona_reunion_direccion_preferida paso 2 
+167:or sending a note or a memo that shows how you see a particular situat
+$ grep -n -o -F 'or making a comment during an oral presentation' fuentes/grove_high_output/cap_04.md    # empujar_persona_reunion_direccion_preferida paso 3 
+167:or making a comment during an oral presentation
+$ grep -n -o -F 'you may be advocating a preferred course of action, but you are not is' fuentes/grove_high_output/cap_04.md    # empujar_persona_reunion_direccion_preferida paso 4 
+167:you may be advocating a preferred course of action, but you are not is
+$ grep -n -o -F 'stronger than merely conveying information' fuentes/grove_high_output/cap_04.md    # empujar_persona_reunion_direccion_preferida paso 5 
+167:stronger than merely conveying information
+$ grep -n -o -F 'carefully distinguished from decision-making that results in firm, cle' fuentes/grove_high_output/cap_04.md    # empujar_persona_reunion_direccion_preferida paso 6 
+167:carefully distinguished from decision-making that results in firm, cle
+$ grep -n -o -F 'for every unambiguous decision we make, we probably nudge things a doz' fuentes/grove_high_output/cap_04.md    # empujar_persona_reunion_direccion_preferida paso 7 
+167:for every unambiguous decision we make, we probably nudge things a doz
+$ grep -n -o -F 'the output of a manager per unit of time worked' fuentes/grove_high_output/cap_04.md    # subir_productividad_gerencial_tres_vias paso 1 
+195:the output of a manager per unit of time worked
+$ grep -n -o -F 'Increasing the rate with which a manager performs his activities, spee' fuentes/grove_high_output/cap_04.md    # subir_productividad_gerencial_tres_vias paso 2 
+197:Increasing the rate with which a manager performs his activities, spee
+$ grep -n -o -F 'Increasing the leverage associated with the various managerial activit' fuentes/grove_high_output/cap_04.md    # subir_productividad_gerencial_tres_vias paso 3 
+199:Increasing the leverage associated with the various managerial activit
+$ grep -n -o -F 'from those with lower to those with higher leverage' fuentes/grove_high_output/cap_04.md    # subir_productividad_gerencial_tres_vias paso 4 
+201:from those with lower to those with higher leverage
+$ grep -n -o -F 'These can be achieved in three basic ways' fuentes/grove_high_output/cap_04.md    # buscar_actividad_alta_palanca_tres_vias paso 1 
+207:These can be achieved in three basic ways
+$ grep -n -o -F 'When many people are affected by one manager' fuentes/grove_high_output/cap_04.md    # buscar_actividad_alta_palanca_tres_vias paso 2 
+209:When many people are affected by one manager
+$ grep -n -o -F 'activity or behavior over a long period of time is affected by a manag' fuentes/grove_high_output/cap_04.md    # buscar_actividad_alta_palanca_tres_vias paso 3 
+211:activity or behavior over a long period of time is affected by a manag
+$ grep -n -o -F 'work is affected by an individual supplying a unique, key piece of kno' fuentes/grove_high_output/cap_04.md    # buscar_actividad_alta_palanca_tres_vias paso 4 
+213:work is affected by an individual supplying a unique, key piece of kno
+$ grep -n -o -F 'leverage that depends, however, on when it is performed' fuentes/grove_high_output/cap_04.md    # elegir_momento_actividad_palanca_maxima paso 1 
+215:leverage that depends, however, on when it is performed
+$ grep -n -o -F 'defines in advance exactly what information needs to be gathered and p' fuentes/grove_high_output/cap_04.md    # elegir_momento_actividad_palanca_maxima paso 2 
+215:defines in advance exactly what information needs to be gathered and p
+$ grep -n -o -F 'directly affects the subsequent work of perhaps two hundred people' fuentes/grove_high_output/cap_04.md    # elegir_momento_actividad_palanca_maxima paso 3 
+215:directly affects the subsequent work of perhaps two hundred people
+$ grep -n -o -F 'If Robin has to scramble later to help a manager define guidelines and' fuentes/grove_high_output/cap_04.md    # elegir_momento_actividad_palanca_maxima paso 4 
+215:If Robin has to scramble later to help a manager define guidelines and
+$ grep -n -o -F 'when you learn that a valued subordinate has decided to quit' fuentes/grove_high_output/cap_04.md    # elegir_momento_actividad_palanca_maxima paso 5 
+217:when you learn that a valued subordinate has decided to quit
+$ grep -n -o -F 'If you put it off, all your chances are lost' fuentes/grove_high_output/cap_04.md    # elegir_momento_actividad_palanca_maxima paso 6 
+217:If you put it off, all your chances are lost
+$ grep -n -o -F 'a manager must keep timeliness, which is often critical, firmly in min' fuentes/grove_high_output/cap_04.md    # elegir_momento_actividad_palanca_maxima paso 7 
+217:a manager must keep timeliness, which is often critical, firmly in min
+$ grep -n -o -F 'Leverage can also be negative' fuentes/grove_high_output/cap_04.md    # detectar_palanca_negativa_actividad_mando paso 1 
+219:Leverage can also be negative
+$ grep -n -o -F 'Suppose I am a key participant at a meeting and I arrive unprepared' fuentes/grove_high_output/cap_04.md    # detectar_palanca_negativa_actividad_mando paso 2 
+219:Suppose I am a key participant at a meeting and I arrive unprepared
+$ grep -n -o -F 'The manager became depressed' fuentes/grove_high_output/cap_04.md    # detectar_palanca_negativa_actividad_mando paso 3 
+231:The manager became depressed
+$ grep -n -o -F 'He snapped out of it only when someone on his staff finally told him w' fuentes/grove_high_output/cap_04.md    # detectar_palanca_negativa_actividad_mando paso 4 
+231:He snapped out of it only when someone on his staff finally told him w
+$ grep -n -o -F 'waffling, when a manager puts off a decision' fuentes/grove_high_output/cap_04.md    # detectar_palanca_negativa_actividad_mando paso 5 
+231:waffling, when a manager puts off a decision
+$ grep -n -o -F 'Both the depressed and the waffling manager can have virtually unlimit' fuentes/grove_high_output/cap_04.md    # detectar_palanca_negativa_actividad_mando paso 6 
+233:Both the depressed and the waffling manager can have virtually unlimit
+$ grep -n -o -F 'a supervisor uses his superior knowledge and experience' fuentes/grove_high_output/cap_04.md    # detectar_palanca_negativa_actividad_mando paso 7 
+235:a supervisor uses his superior knowledge and experience
+$ grep -n -o -F 'if a senior manager sees an indicator showing an undesirable trend and' fuentes/grove_high_output/cap_04.md    # detectar_palanca_negativa_actividad_mando paso 8 
+235:if a senior manager sees an indicator showing an undesirable trend and
+$ grep -n -o -F 'the subordinate will begin to take a much more restricted view' fuentes/grove_high_output/cap_04.md    # detectar_palanca_negativa_actividad_mando paso 9 
+235:the subordinate will begin to take a much more restricted view
+$ grep -n -o -F 'Because managerial time has a hierarchy of values, delegation is an es' fuentes/grove_high_output/cap_04.md    # delegar_tarea_base_comun_seguimiento paso 1 
+245:Because managerial time has a hierarchy of values, delegation is an es
+$ grep -n -o -F 'must share a common information base and a common set of operational i' fuentes/grove_high_output/cap_04.md    # delegar_tarea_base_comun_seguimiento paso 2 
+245:must share a common information base and a common set of operational i
+$ grep -n -o -F 'Unless both parties share the relevant common base' fuentes/grove_high_output/cap_04.md    # delegar_tarea_base_comun_seguimiento paso 3 
+245:Unless both parties share the relevant common base
+$ grep -n -o -F 'really want to delegate simply because we like doing them' fuentes/grove_high_output/cap_04.md    # delegar_tarea_base_comun_seguimiento paso 4 
+247:really want to delegate simply because we like doing them
+$ grep -n -o -F 'based on a conscious decision' fuentes/grove_high_output/cap_04.md    # delegar_tarea_base_comun_seguimiento paso 5 
+247:based on a conscious decision
+$ grep -n -o -F 'Before answering, consider the following principle: delegation without' fuentes/grove_high_output/cap_04.md    # delegar_tarea_base_comun_seguimiento paso 6 
+249:Before answering, consider the following principle: delegation without
+$ grep -n -o -F 'You can never wash your hands of a task' fuentes/grove_high_output/cap_04.md    # delegar_tarea_base_comun_seguimiento paso 7 
+249:You can never wash your hands of a task
+$ grep -n -o -F 'Monitoring is not meddling, but means checking to make sure an activit' fuentes/grove_high_output/cap_04.md    # delegar_tarea_base_comun_seguimiento paso 8 
+249:Monitoring is not meddling, but means checking to make sure an activit
+$ grep -n -o -F 'if you have a choice you should delegate those activities you know bes' fuentes/grove_high_output/cap_04.md    # delegar_tarea_base_comun_seguimiento paso 9 
+249:if you have a choice you should delegate those activities you know bes
+$ grep -n -o -F 'recall the pencil experiment and understand before the fact that this ' fuentes/grove_high_output/cap_04.md    # delegar_tarea_base_comun_seguimiento paso 10 
+249:recall the pencil experiment and understand before the fact that this 
+$ grep -n -o -F 'Monitoring the results of delegation resembles the monitoring used in ' fuentes/grove_high_output/cap_04.md    # supervisar_tarea_delegada_etapa_menor_valor paso 1 
+253:Monitoring the results of delegation resembles the monitoring used in 
+$ grep -n -o -F 'apply quality assurance principles and monitor at the lowest-added-val' fuentes/grove_high_output/cap_04.md    # supervisar_tarea_delegada_etapa_menor_valor paso 2 
+253:apply quality assurance principles and monitor at the lowest-added-val
+$ grep -n -o -F 'review rough drafts of reports that you have delegated' fuentes/grove_high_output/cap_04.md    # supervisar_tarea_delegada_etapa_menor_valor paso 3 
+253:review rough drafts of reports that you have delegated
+$ grep -n -o -F 'A variable approach should be employed, using different sampling schem' fuentes/grove_high_output/cap_04.md    # supervisar_tarea_delegada_etapa_menor_valor paso 4 
+253:A variable approach should be employed, using different sampling schem
+$ grep -n -o -F 'increase or decrease your frequency depending on whether' fuentes/grove_high_output/cap_04.md    # supervisar_tarea_delegada_etapa_menor_valor paso 5 
+253:increase or decrease your frequency depending on whether
+$ grep -n -o -F 'should not be based on what you believe your subordinate can do in gen' fuentes/grove_high_output/cap_04.md    # supervisar_tarea_delegada_etapa_menor_valor paso 6 
+253:should not be based on what you believe your subordinate can do in gen
+$ grep -n -o -F 'work improves over time, you should respond with a corresponding reduc' fuentes/grove_high_output/cap_04.md    # supervisar_tarea_delegada_etapa_menor_valor paso 7 
+253:work improves over time, you should respond with a corresponding reduc
+$ grep -n -o -F 'the manager should only go into details randomly, just enough to try t' fuentes/grove_high_output/cap_04.md    # supervisar_tarea_delegada_etapa_menor_valor paso 8 
+255:the manager should only go into details randomly, just enough to try t
+$ grep -n -o -F 'To check into all the details' fuentes/grove_high_output/cap_04.md    # supervisar_tarea_delegada_etapa_menor_valor paso 9 
+255:To check into all the details
+$ grep -n -o -F 'Making certain types of decisions is something managers frequently del' fuentes/grove_high_output/cap_04.md    # supervisar_decision_delegada_preguntas_concretas paso 1 
+257:Making certain types of decisions is something managers frequently del
+$ grep -n -o -F 'How is this best done? By monitoring their decision-making process' fuentes/grove_high_output/cap_04.md    # supervisar_decision_delegada_preguntas_concretas paso 2 
+257:How is this best done? By monitoring their decision-making process
+$ grep -n -o -F 'We ask a subordinate to think through the entire matter carefully befo' fuentes/grove_high_output/cap_04.md    # supervisar_decision_delegada_preguntas_concretas paso 3 
+257:We ask a subordinate to think through the entire matter carefully befo
+$ grep -n -o -F 'we ask him quite specific questions about his request during a review ' fuentes/grove_high_output/cap_04.md    # supervisar_decision_delegada_preguntas_concretas paso 4 
+257:we ask him quite specific questions about his request during a review 
+$ grep -n -o -F 'If he answers them convincingly' fuentes/grove_high_output/cap_04.md    # supervisar_decision_delegada_preguntas_concretas paso 5 
+257:If he answers them convincingly
+$ grep -n -o -F 'This technique allows us to find out how good the thinking is without ' fuentes/grove_high_output/cap_04.md    # supervisar_decision_delegada_preguntas_concretas paso 6 
+257:This technique allows us to find out how good the thinking is without 
+$ grep -n -o -F 'These time-management suggestions can be improved upon' fuentes/grove_high_output/cap_04.md    # identificar_paso_limitante_jornada_desfases paso 1 
+267:These time-management suggestions can be improved upon
+$ grep -n -o -F 'First, we must identify our limiting step: what is the' fuentes/grove_high_output/cap_04.md    # identificar_paso_limitante_jornada_desfases paso 2 
+267:First, we must identify our limiting step: what is the
+$ grep -n -o -F 'some things really have to happen on a schedule that is absolute' fuentes/grove_high_output/cap_04.md    # identificar_paso_limitante_jornada_desfases paso 3 
+267:some things really have to happen on a schedule that is absolute
+$ grep -n -o -F 'I have to create offsets and schedule my other work around this limiti' fuentes/grove_high_output/cap_04.md    # identificar_paso_limitante_jornada_desfases paso 4 
+267:I have to create offsets and schedule my other work around this limiti
+$ grep -n -o -F 'if we determine what is immovable and manipulate the more yielding act' fuentes/grove_high_output/cap_04.md    # identificar_paso_limitante_jornada_desfases paso 5 
+267:if we determine what is immovable and manipulate the more yielding act
+$ grep -n -o -F 'A second production principle we can apply to managerial work is batch' fuentes/grove_high_output/cap_04.md    # agrupar_tareas_semejantes_aprovechar_preparacion paso 1 
+269:A second production principle we can apply to managerial work is batch
+$ grep -n -o -F 'Any manufacturing operation requires a certain amount of set-up time' fuentes/grove_high_output/cap_04.md    # agrupar_tareas_semejantes_aprovechar_preparacion paso 2 
+269:Any manufacturing operation requires a certain amount of set-up time
+$ grep -n -o -F 'we should use the same set-up effort to apply across a group of simila' fuentes/grove_high_output/cap_04.md    # agrupar_tareas_semejantes_aprovechar_preparacion paso 3 
+269:we should use the same set-up effort to apply across a group of simila
+$ grep -n -o -F 'once we have prepared a set of illustrations for a training class' fuentes/grove_high_output/cap_04.md    # agrupar_tareas_semejantes_aprovechar_preparacion paso 4 
+271:once we have prepared a set of illustrations for a training class
+$ grep -n -o -F 'he should set aside a block of time and do a batch of them together, o' fuentes/grove_high_output/cap_04.md    # agrupar_tareas_semejantes_aprovechar_preparacion paso 5 
+271:he should set aside a block of time and do a batch of them together, o
+$ grep -n -o -F 'to maximize the use of the mental set-up time needed for the task' fuentes/grove_high_output/cap_04.md    # agrupar_tareas_semejantes_aprovechar_preparacion paso 6 
+271:to maximize the use of the mental set-up time needed for the task
+$ grep -n -o -F 'allow material to begin its journey through the factory if they think ' fuentes/grove_high_output/cap_04.md    # decir_no_trabajo_excede_capacidad paso 1 
+277:allow material to begin its journey through the factory if they think 
+$ grep -n -o -F 'material might go halfway through and back up behind a bottleneck' fuentes/grove_high_output/cap_04.md    # decir_no_trabajo_excede_capacidad paso 2 
+277:material might go halfway through and back up behind a bottleneck
+$ grep -n -o -F 'at the outset and keep the start level from overloading the system' fuentes/grove_high_output/cap_04.md    # decir_no_trabajo_excede_capacidad paso 3 
+277:at the outset and keep the start level from overloading the system
+$ grep -n -o -F 'Other kinds of managers find this hard to apply because their indicato' fuentes/grove_high_output/cap_04.md    # decir_no_trabajo_excede_capacidad paso 4 
+277:Other kinds of managers find this hard to apply because their indicato
+$ grep -n -o -F 'How much time do you need to read your mail' fuentes/grove_high_output/cap_04.md    # decir_no_trabajo_excede_capacidad paso 5 
+277:How much time do you need to read your mail
+$ grep -n -o -F 'And you should exploit that sense to schedule your work' fuentes/grove_high_output/cap_04.md    # decir_no_trabajo_excede_capacidad paso 6 
+277:And you should exploit that sense to schedule your work
+$ grep -n -o -F '2' fuentes/grove_high_output/cap_04.md    # decir_no_trabajo_excede_capacidad paso 7 
+3:2
+85:2
+105:2
+111:2
+117:2
+191:2
+191:2
+193:2
+193:2
+199:2
+283:2
+321:2
+$ grep -n -o -F 'earlier rather than later because we' fuentes/grove_high_output/cap_04.md    # decir_no_trabajo_excede_capacidad paso 8 
+285:earlier rather than later because we
+$ grep -n -o -F 'either explicitly or implicitly, because by not delivering' fuentes/grove_high_output/cap_04.md    # decir_no_trabajo_excede_capacidad paso 9 
+285:either explicitly or implicitly, because by not delivering
+$ grep -n -o -F 'your time is your one finite resource' fuentes/grove_high_output/cap_04.md    # decir_no_trabajo_excede_capacidad paso 10 
+285:your time is your one finite resource
+$ grep -n -o -F 'job shop' fuentes/grove_high_output/cap_04.md    # usar_calendario_herramienta_planificacion_produccion paso 1 
+273:job shop
+305:job shop
+$ grep -n -o -F 'a large portion of managerial work can be forecasted' fuentes/grove_high_output/cap_04.md    # usar_calendario_herramienta_planificacion_produccion paso 2 
+273:a large portion of managerial work can be forecasted
+$ grep -n -o -F 'forecasting those things you can and setting yourself up to do them is' fuentes/grove_high_output/cap_04.md    # usar_calendario_herramienta_planificacion_produccion paso 3 
+273:forecasting those things you can and setting yourself up to do them is
+$ grep -n -o -F 'It is something very simple: his calendar' fuentes/grove_high_output/cap_04.md    # usar_calendario_herramienta_planificacion_produccion paso 4 
+275:It is something very simple: his calendar
+$ grep -n -o -F 'Most people use their calendars as a repository of' fuentes/grove_high_output/cap_04.md    # usar_calendario_herramienta_planificacion_produccion paso 5 
+275:Most people use their calendars as a repository of
+$ grep -n -o -F 'planning tool, taking a firm initiative to schedule work that is not t' fuentes/grove_high_output/cap_04.md    # usar_calendario_herramienta_planificacion_produccion paso 6 
+275:planning tool, taking a firm initiative to schedule work that is not t
+$ grep -n -o -F '1' fuentes/grove_high_output/cap_04.md    # usar_calendario_herramienta_planificacion_produccion paso 7 
+3:1
+85:1
+105:1
+105:1
+111:1
+135:1
+191:1
+191:1
+193:1
+193:1
+197:1
+255:1
+281:1
+$ grep -n -o -F 'Another production principle is very nearly the opposite. A manager sh' fuentes/grove_high_output/cap_04.md    # llevar_inventario_proyectos_discrecionales paso 1 
+289:Another production principle is very nearly the opposite. A manager sh
+$ grep -n -o -F 'not to be confused with his work-in-process inventory' fuentes/grove_high_output/cap_04.md    # llevar_inventario_proyectos_discrecionales paso 2 
+289:not to be confused with his work-in-process inventory
+$ grep -n -o -F 'need to finish right away' fuentes/grove_high_output/cap_04.md    # llevar_inventario_proyectos_discrecionales paso 3 
+289:need to finish right away
+$ grep -n -o -F 'discretionary projects, the kind the manager can work on to increase h' fuentes/grove_high_output/cap_04.md    # llevar_inventario_proyectos_discrecionales paso 4 
+289:discretionary projects, the kind the manager can work on to increase h
+$ grep -n -o -F 'Without such an inventory of projects, a manager will most probably us' fuentes/grove_high_output/cap_04.md    # llevar_inventario_proyectos_discrecionales paso 5 
+289:Without such an inventory of projects, a manager will most probably us
+$ grep -n -o -F 'An important component of managerial leverage is the number of subordi' fuentes/grove_high_output/cap_04.md    # dimensionar_numero_subordinados_medio_dia_semanal paso 1 
+295:An important component of managerial leverage is the number of subordi
+$ grep -n -o -F 'six to eight subordinates' fuentes/grove_high_output/cap_04.md    # dimensionar_numero_subordinados_medio_dia_semanal paso 2 
+295:six to eight subordinates
+297:six to eight subordinates
+299:six to eight subordinates
+$ grep -n -o -F 'a manager should allocate about a half day per week to each of his sub' fuentes/grove_high_output/cap_04.md    # dimensionar_numero_subordinados_medio_dia_semanal paso 3 
+295:a manager should allocate about a half day per week to each of his sub
+$ grep -n -o -F 'Two days a week per subordinate would probably lead to meddling' fuentes/grove_high_output/cap_04.md    # dimensionar_numero_subordinados_medio_dia_semanal paso 4 
+295:Two days a week per subordinate would probably lead to meddling
+$ grep -n -o -F 'The six to eight rule is right for the classically hierarchical manage' fuentes/grove_high_output/cap_04.md    # dimensionar_numero_subordinados_medio_dia_semanal paso 5 
+297:The six to eight rule is right for the classically hierarchical manage
+$ grep -n -o -F 'a know-how manager' fuentes/grove_high_output/cap_04.md    # dimensionar_numero_subordinados_medio_dia_semanal paso 6 
+45:a know-how manager
+297:a know-how manager
+$ grep -n -o -F 'anyone who spends about a half day per week as a member of a planning,' fuentes/grove_high_output/cap_04.md    # dimensionar_numero_subordinados_medio_dia_semanal paso 7 
+297:anyone who spends about a half day per week as a member of a planning,
+$ grep -n -o -F 'if a manager is both a hierarchical supervisor and a supplier of know-' fuentes/grove_high_output/cap_04.md    # dimensionar_numero_subordinados_medio_dia_semanal paso 8 
+297:if a manager is both a hierarchical supervisor and a supplier of know-
+$ grep -n -o -F 'as one of the two subordinates, choosing to be his own engineering man' fuentes/grove_high_output/cap_04.md    # dimensionar_numero_subordinados_medio_dia_semanal paso 9 
+299:as one of the two subordinates, choosing to be his own engineering man
+$ grep -n -o -F 'the manufacturing manager will still report to him' fuentes/grove_high_output/cap_04.md    # dimensionar_numero_subordinados_medio_dia_semanal paso 10 
+299:the manufacturing manager will still report to him
+$ grep -n -o -F 'This arrangement will avoid forcing the plant manager either into on-t' fuentes/grove_high_output/cap_04.md    # dimensionar_numero_subordinados_medio_dia_semanal paso 11 
+301:This arrangement will avoid forcing the plant manager either into on-t
+$ grep -n -o -F 'The next important production concept we can apply to managerial work ' fuentes/grove_high_output/cap_04.md    # buscar_regularidad_bloques_iguales_trabajo_mando paso 1 
+305:The next important production concept we can apply to managerial work 
+$ grep -n -o -F 'breakfast factory' fuentes/grove_high_output/cap_04.md    # buscar_regularidad_bloques_iguales_trabajo_mando paso 2 
+305:breakfast factory
+$ grep -n -o -F 'make our managerial work take on the characteristics of a factory, not' fuentes/grove_high_output/cap_04.md    # buscar_regularidad_bloques_iguales_trabajo_mando paso 3 
+305:make our managerial work take on the characteristics of a factory, not
+$ grep -n -o -F 'prevent little stops and starts in our day as well as interruptions br' fuentes/grove_high_output/cap_04.md    # buscar_regularidad_bloques_iguales_trabajo_mando paso 4 
+305:prevent little stops and starts in our day as well as interruptions br
+$ grep -n -o -F 'always be looking for sources of future high-priority trouble by cutti' fuentes/grove_high_output/cap_04.md    # buscar_regularidad_bloques_iguales_trabajo_mando paso 5 
+305:always be looking for sources of future high-priority trouble by cutti
+$ grep -n -o -F 'a time bomb on your hands means you can address a problem when you wan' fuentes/grove_high_output/cap_04.md    # buscar_regularidad_bloques_iguales_trabajo_mando paso 6 
+305:a time bomb on your hands means you can address a problem when you wan
+$ grep -n -o -F 'because you must coordinate your work with that of other managers, you' fuentes/grove_high_output/cap_04.md    # buscar_regularidad_bloques_iguales_trabajo_mando paso 7 
+307:because you must coordinate your work with that of other managers, you
+$ grep -n -o -F 'the same blocks of time must be used for like activities' fuentes/grove_high_output/cap_04.md    # buscar_regularidad_bloques_iguales_trabajo_mando paso 8 
+307:the same blocks of time must be used for like activities
+$ grep -n -o -F 'at Intel Monday mornings have been set aside throughout the corporatio' fuentes/grove_high_output/cap_04.md    # buscar_regularidad_bloques_iguales_trabajo_mando paso 9 
+307:at Intel Monday mornings have been set aside throughout the corporatio
+$ grep -n -o -F 'There are better ways' fuentes/grove_high_output/cap_04.md    # preparar_respuestas_estandar_interrupciones_repetidas paso 1 
+315:There are better ways
+$ grep -n -o -F 'if you can pin down what kind of interruptions' fuentes/grove_high_output/cap_04.md    # preparar_respuestas_estandar_interrupciones_repetidas paso 2 
+315:if you can pin down what kind of interruptions
+$ grep -n -o -F 'you can prepare standard responses for those that pop up most often' fuentes/grove_high_output/cap_04.md    # preparar_respuestas_estandar_interrupciones_repetidas paso 3 
+315:you can prepare standard responses for those that pop up most often
+$ grep -n -o -F 'come up with totally new questions and problems day in and day out' fuentes/grove_high_output/cap_04.md    # preparar_respuestas_estandar_interrupciones_repetidas paso 4 
+315:come up with totally new questions and problems day in and day out
+$ grep -n -o -F 'a manager can reduce time spent handling interruptions using standard ' fuentes/grove_high_output/cap_04.md    # preparar_respuestas_estandar_interrupciones_repetidas paso 5 
+315:a manager can reduce time spent handling interruptions using standard 
+$ grep -n -o -F 'Having them available also means that a manager can delegate much of t' fuentes/grove_high_output/cap_04.md    # preparar_respuestas_estandar_interrupciones_repetidas paso 6 
+315:Having them available also means that a manager can delegate much of t
+$ grep -n -o -F 'handling a group of similar chores at one time' fuentes/grove_high_output/cap_04.md    # agrupar_interrupciones_subordinados_reuniones_regulares paso 1 
+317:handling a group of similar chores at one time
+$ grep -n -o -F 'many interruptions that come from your subordinates can be accumulated' fuentes/grove_high_output/cap_04.md    # agrupar_interrupciones_subordinados_reuniones_regulares paso 2 
+317:many interruptions that come from your subordinates can be accumulated
+$ grep -n -o -F 'but at staff and at one-on-one meetings' fuentes/grove_high_output/cap_04.md    # agrupar_interrupciones_subordinados_reuniones_regulares paso 3 
+317:but at staff and at one-on-one meetings
+$ grep -n -o -F 'If such meetings are held regularly' fuentes/grove_high_output/cap_04.md    # agrupar_interrupciones_subordinados_reuniones_regulares paso 4 
+317:If such meetings are held regularly
+$ grep -n -o -F 'protest too much if they' fuentes/grove_high_output/cap_04.md    # agrupar_interrupciones_subordinados_reuniones_regulares paso 5 
+317:protest too much if they
+$ grep -n -o -F 'If the people who interrupt you knew how much they were disturbing you' fuentes/grove_high_output/cap_04.md    # canalizar_interrupciones_cartel_hora_oficina paso 1 
+321:If the people who interrupt you knew how much they were disturbing you
+$ grep -n -o -F 'force his frequent interrupters to make an active decision about wheth' fuentes/grove_high_output/cap_04.md    # canalizar_interrupciones_cartel_hora_oficina paso 2 
+321:force his frequent interrupters to make an active decision about wheth
+$ grep -n -o -F 'instead of going into hiding, a manager can hang a sign on his door' fuentes/grove_high_output/cap_04.md    # canalizar_interrupciones_cartel_hora_oficina paso 3 
+321:instead of going into hiding, a manager can hang a sign on his door
+$ grep -n -o -F 'Then hold an open office hour, and be completely receptive to anybody ' fuentes/grove_high_output/cap_04.md    # canalizar_interrupciones_cartel_hora_oficina paso 4 
+321:Then hold an open office hour, and be completely receptive to anybody 
+$ grep -n -o -F 'understand that interrupters have legitimate problems that need to be ' fuentes/grove_high_output/cap_04.md    # canalizar_interrupciones_cartel_hora_oficina paso 5 
+321:understand that interrupters have legitimate problems that need to be 
+$ grep -n -o -F 'channel the time needed to deal with them into organized, scheduled fo' fuentes/grove_high_output/cap_04.md    # canalizar_interrupciones_cartel_hora_oficina paso 6 
+321:channel the time needed to deal with them into organized, scheduled fo
+$ grep -n -o -F 'The point is to impose a pattern on the way a manager copes with probl' fuentes/grove_high_output/cap_04.md    # canalizar_interrupciones_cartel_hora_oficina paso 7 
+323:The point is to impose a pattern on the way a manager copes with probl
+$ grep -n -o -F 'To make something regular that was once irregular is a fundamental pro' fuentes/grove_high_output/cap_04.md    # canalizar_interrupciones_cartel_hora_oficina paso 8 
+323:To make something regular that was once irregular is a fundamental pro
+filas: 156 | en su linea declarada: 156 | fuera: 0

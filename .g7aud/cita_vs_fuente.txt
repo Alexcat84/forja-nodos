@@ -1,0 +1,5 @@
+lineas fuente: 29  lineas cita: 29
+  L149 col 36: fuente '—' (EM DASH) -> cita '-'
+  L153 col 255: fuente '—' (EM DASH) -> cita '-'
+  L159 col 310: fuente '—' (EM DASH) -> cita '-'
+LINEAS QUE DIFIEREN: 3 de 29

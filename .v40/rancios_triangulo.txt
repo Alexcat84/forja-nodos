@@ -1,0 +1,5 @@
+    $ python forja.py rancios | grep "practicar_triangulo" | cut -c1-118
+  [RANCIO] veredicto practicar_triangulo_critica_tres_papeles contra abrazar_incomodidad_silencio_contar_seis (linea 4
+  [RANCIO] veredicto practicar_triangulo_critica_tres_papeles contra escuchar_entender_critica_dominar_defensa (linea 
+  [RANCIO] veredicto practicar_triangulo_critica_tres_papeles contra mejorar_consciencia_propia_relacional_dos_practic
+  [RANCIO] veredicto practicar_triangulo_critica_tres_papeles contra practicar_triangulo_critica_tres_papeles (linea 4

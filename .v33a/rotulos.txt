@@ -1,0 +1,27 @@
+ROTULOS QUE EL FICHERO fuentes/scott_radical_candor/cap_08.md TRAE, sacados por forma y no tecleados
+  criterio: linea de 12 palabras o menos, sin punto ni interrogacion ni dos puntos al
+  final, con una linea en blanco antes y otra despues. 19 rotulos.
+
+  linea rotulo                                               cuerpo nodo del grafo que lo cubre
+  L9    An approach to establishing trust with your direct r 5      --- NINGUNO ---
+  L15   STAY CENTERED                                        9      --- NINGUNO ---
+  L25   Work-life integration                                3      integrar_trabajo_vida_mejor_version
+  L29   Figure out your “recipe” to stay centered and stick  7      definir_receta_propia_mantenerse_centrado
+  L37   Calendar                                             3      agendar_cuidados_propios_cumplirlos
+  L41   Show up for yourself                                 3      agendar_cuidados_propios_cumplirlos
+  L45   FREE AT WORK                                         21     ceder_autoridad_unilateral_equipo
+  L67   MASTER THE ART OF SOCIALIZING AT WORK                9      dominar_arte_socializar_trabajo
+  L77   Even non-mandatory events can feel mandatory         5      evitar_presion_social_actos_equipo
+  L83   Booze                                                5      --- NINGUNO ---
+  L89   RESPECT BOUNDARIES                                   3      --- NINGUNO ---
+  L93   Building trust                                       3      construir_confianza_equipo_tiempo_solas
+  L97   Sharing values                                       7      vivir_valores_propios_evitar_listarlos
+  L105  Demonstrating openness                               17     demostrar_apertura_visiones_distintas
+  L123  Physical space                                       9      manejar_contacto_fisico_regla_platino
+  L133  “Were you weirded out that a strange man hugged and  17     manejar_contacto_fisico_regla_platino
+  L151  Recognizing your own emotions                        9      reconocer_emociones_propias_avisar_equipo
+  L161  Master your reactions to others’ emotions            27     dominar_reacciones_emociones_ajenas
+  L189  GUIDANCE                                             0      --- NINGUNO ---
+
+  rotulos cubiertos por un nodo: 14   sin nodo: 5
+  nodos distintos de cap_08 en el grafo: 12

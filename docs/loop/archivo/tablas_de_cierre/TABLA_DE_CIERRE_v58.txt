@@ -1,0 +1,11 @@
+$ python scripts/tabla_de_cierre.py --escribir
+poblacion: dataset/nodos.jsonl entero, libro grove_high_output
+criterio : un nodo sale de un capitulo si cita grove_high_output/<cap>.md
+
+| # | tarea | como cerro |
+|---:|---|---|
+| 1 | la aduana en el acto, con su prueba dentro | **CERRADA en `XX.1` y `XX.3`**: siete informes, cada uno con la linea `poblacion del barrido` subiendo de uno en uno, `431` a `437` |
+| 2 | la frontera de `cap_14`, `cap_15` y `cap_16`, publicada antes de cortar | **CERRADA en `XX.2`**: los tres capitulos con **cero lineas sin cubrir y cero solapes cada uno**, `66`, `32` y `22` tramos, y `3`, `3` y `1` nodos |
+| 3 | minar con el techo de `30` por delante | **CERRADA en `XX.3`**: `7` candidatos nuevos escritos, uno por vez con su aduana en el acto: `0 CAERIAN`, `5 BLOQUEARIAN` (leidos y sin gemelo real), `2 ENTRARIAN` |
+| 4 | la fidelidad `D.30` por muestra, semilla `v58` | **CERRADA en `XX.4`**: semilla escrita, reparto pegado del instrumento, `cap_16` releido entero (`4` pasos) y `cap_14`/`cap_15` por muestra (`15` y `15` pasos): `0` PUENTE de `34` |
+| 5 | el cierre | **CERRADA en `XX.6`**: estado recomputado (`346`, `740`, `88`), `gate`, `guiones` y prueba de aceptacion en VERDE, credito leido y no anotado, **`2` discutibles marcados a ciegas en `XX.5`** |

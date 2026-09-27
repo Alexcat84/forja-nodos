@@ -1,0 +1,10 @@
+LOS DOS EXTREMOS, COMPROBADOS EN dataset/nodos.jsonl Y NO EN LA PROSA
+  decidir_quien_comunica_cada_cuanto                 linea 257 del dataset, 6 pasos, estado vivo
+  recorrer_rueda_conscientemente_cultura_equipo      linea 240 del dataset, 14 pasos, estado vivo
+
+EL PASO 6 DE LA MADRE, ENTERO:
+    Y ten delante las herramientas que el texto enumera para sacar cosas adelante juntos, que son las reuniones a solas, las reuniones de equipo, el tiempo para pensar, las reuniones de gran debate, las reuniones de gran decision, las reuniones generales, las zonas libres de reuniones, los tableros kanban, pasear por la organizacion y ser consciente de la cultura.
+
+ARISTAS DE LA MADRE HOY: ['montar_reuniones_solas_mentalidad_frecuencia', 'conducir_reunion_equipo_agenda_tres_bloques', 'montar_reunion_gran_debate', 'montar_reunion_gran_decision', 'montar_reunion_general_presentaciones_preguntas', 'bloquear_tiempo_pensar_calendario']
+PREVIOS DE LA HIJA HOY : []
+SIGUIENTES DE LA HIJA  : ['recorrer_rueda_hacer_cosas_equipo']

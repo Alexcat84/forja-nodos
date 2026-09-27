@@ -1,0 +1,12 @@
+pares con la correccion de la ACTA 70 70.5 aplicada: 2
+filas dirigidas de mi barrido con candidato de las 20: 50 | por vecino: {'vecino fuera de la tanda': 12, 'vecino en la tanda': 38} | suma: 50
+lineas de veredicto esperadas, por la clase de su par: {'SANO': 46, 'CONTINUA': 4} | suma: 50
+aristas esperadas: 6 | por origen: {'CONTINUA': 2, 'SOSTENGO': 4} | suma: 6
+  CONTINUA      definir_entorno_grupo_clientes_proveedores_competidores > examinar_demanda_entorno_dos_marcos_temporales
+  CONTINUA      definir_entorno_grupo_clientes_proveedores_competidores > examinar_entorno_expectativas_tecnologia_proveedores_grupos
+  SOSTENGO D.37 planificar_tres_pasos_demanda_estado_brecha > examinar_demanda_entorno_dos_marcos_temporales
+  SOSTENGO D.37 planificar_tres_pasos_demanda_estado_brecha > determinar_estado_presente_capacidades_proyectos_merma
+  SOSTENGO D.37 planificar_tres_pasos_demanda_estado_brecha > cerrar_brecha_dos_preguntas_estrategia
+  SOSTENGO D.29 elegir_modo_control_motivacion_factor_cua > escalonar_complejidad_puesto_empleado_nuevo
+extremos de esas aristas que no son de las 20: 0
+bitacora esperada: 1027 + 50 + 4 = 1081 | hoy (lineas): 1081 | IGUAL

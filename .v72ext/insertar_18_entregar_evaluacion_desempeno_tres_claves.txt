@@ -1,0 +1,26 @@
+fila 18, entregar_evaluacion_desempeno_tres_claves, lineas --veredicto: 1
+  --veredicto planificar_tres_pasos_demanda_estado_brecha|SANO|El mismo par que planificar_tres_pasos lee desde su lado: ajenos, dos cabezas de tres sin paso comun (cap_14 L107, cap_07 L19).
+inicio 2026-09-26 00:44:38
+======================================================================
+ADUANA DE INSERCION, candidato 'entregar_evaluacion_desempeno_tres_claves'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (427 del grafo mas 52 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino planificar_tres_pasos_demanda_estado_brecha  [Planificar en los tres pasos del libro: la demanda del entorno, el estado presente, y lo que hay que hacer para conciliarlos]
+    levantada por: similitud_texto
+    similitud_texto    0.362 (umbral 0.35)
+    familia_id         0.100 (umbral 0.30)
+    paso_contra_nodo   0.364 (umbral 0.60)
+    paso 6 del candidato contra paso 6 de planificar_tres_pasos_demanda_estado_brecha
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 428
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 1
+
+======================================================================
+fin 2026-09-26 00:54:26 | codigo de salida 0 | 587.8 s

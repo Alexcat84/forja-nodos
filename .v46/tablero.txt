@@ -1,0 +1,21 @@
+$ python forja.py tablero --escribir
+  MUNDO 11: faltan 3 de 3 libros del corte (grove_high_output, gerber_emyth, marquet_turn_the_ship)
+
+  COLA DE DOCTRINA (D.56): 11 pregunta(s), 0 bloquea(n)
+            1  EXTRACTOR.md 11 y la banda de 0,4: dice que por encima hay gemelos y cero ajen
+            2  src/arista.py:187 teclea (D.37) en toda arista declarada por lectura, y se est
+            3  Una cifra en denominaciones.nombre_largo que el libro no escribe: 'las cuatro 
+            4  Un resumen_teorico del dataset que cita EL REPORTE DE ESTA VUELTA: sede durade
+            5  Un orden roto no tiene casillero: el extractor corrio la relectura de fidelida
+            6  La regla de la busqueda negativa vale para el extractor? 'Una busqueda negativ
+            7  El propio libro se contradice y ningun nodo lo dice: cap_12 L21 invita a copia
+            8  La senial 1 compara titulo mas resumen_teorico mas pasos, y en un lote escrito
+            9  Puede el arnes abrir la fase ciega del auditor con un proceso del extractor to
+            10 Una cita medida_en que ofrece como sede una seccion que aun no se ha escrito, 
+            11 Un defecto en dataset/ que NO es una cifra falsa ni un veredicto mal puesto no
+
+  PENDIENTES DE RELEVO (D.50), en orden de lote:
+    lote 5   marquet_turn_the_ship           9 candidato(s) en extraccion-marquet_turn_the_ship
+    lote 9   gerber_emyth                   10 candidato(s) en extraccion-gerber_emyth
+
+ESCRITO: 22 fila(s) en docs/loop/TABLERO.jsonl

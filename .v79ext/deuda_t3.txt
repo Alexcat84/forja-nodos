@@ -1,0 +1,4 @@
+$ python scripts/deuda.py --pagar d150 --vuelta 79 --como "$(cat .v79ext/como_d150.txt)"
+PAGADA d150 en la vuelta 79
+$ python scripts/deuda.py --pagar d180 --vuelta 79 --como "$(cat .v79ext/como_d180.txt)"
+PAGADA d180 en la vuelta 79

@@ -1,0 +1,13 @@
+$ python forja.py arista --madre planificar_tres_pasos_demanda_estado_brecha --hijo determinar_estado_presente_capacidades_proyectos_merma --paso 3 --razon <fila 10> --veredicto CONTINUA --cita-veredicto <fila 10>
+DECLARACION DE ARISTA POR LECTURA (D.37)
+  madre: planificar_tres_pasos_demanda_estado_brecha
+  hijo : determinar_estado_presente_capacidades_proyectos_merma
+  paso citado de la madre: 3
+    Da el paso 2 estableciendo tu estado presente: que estas produciendo ahora, y que vas a estar produciendo cuando se completen los proyectos que ya tie
+  señales del par: familia_id 0.091, paso_contra_nodo 0.498, similitud_texto 0.26
+    NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: planificar_tres_pasos_demanda_estado_brecha > determinar_estado_presente_capacidades_proyectos_merma
+  razon en bitacora/VEREDICTOS.jsonl
+
+codigo 0

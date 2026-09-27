@@ -1,0 +1,73 @@
+# -*- coding: utf-8 -*-
+"""CANDIDATO 6 DE LA VUELTA 53: cap_06 P24, L63, EL CRITERIO DEL MOMENTO.
+
+Se escribe y se pasa por la aduana EN EL MISMO ACTO (EXTRACTOR.md 16).
+"""
+import io
+import json
+import os
+
+ID = "cortar_discusion_libre_momento_justo"
+DESTINO = "cuarentena/grove_high_output/%s.json" % ID
+
+NODO = {
+    "id": ID,
+    "titulo": "Cortar la discusion libre en el momento justo: ni antes de oir los asuntos de verdad, ni cuando ya se ha oido todo",
+    "dominio": "gestion_equipos",
+    "estado": "vivo",
+    "ids_alias": [],
+    "nodos_previos": [],
+    "nodos_siguientes": [],
+    "atribuciones": [],
+    "fuentes": [{"clave": "grove_high_output", "fecha": "2026-09-19"}],
+    "denominaciones": {
+        "nombre_largo": "El criterio del momento de decidir: no empujar prematuramente, asegurarse de haber oido los asuntos de verdad y no los comentarios superficiales, y empujar hacia el consenso en cuanto todos los lados se hayan planteado",
+        "sigla": "",
+        "otros_idiomas": [
+            {"idioma": "ingles", "termino": "unending search for consensus"},
+            {"idioma": "ingles", "termino": "near consensus"},
+        ],
+    },
+    "condiciones_activacion": "Cuando diriges una discusion libre y tienes que decidir si ya es momento de pasar a la decision, o si todavia falta por oir lo que de verdad importa.",
+    "entregable_esperado": "La discusion libre cerrada en su punto: con los asuntos de verdad oidos y considerados, todos los lados planteados, y el paso al consenso o a la decision dado sin aplazarlo.",
+    "pasos_accionables": [
+        "Cuenta con que entrar en la etapa de decision demasiado pronto o esperar demasiado te deja sin el beneficio completo de la discusion abierta.",
+        "Sigue el criterio que el libro escribe: no empujes hacia una decision prematuramente.",
+        "Asegurate de haber oido y considerado los asuntos de verdad, y no los comentarios superficiales que suelen dominar la primera parte de una reunion.",
+        "Pero en cuanto sientas que ya lo has oido todo y que todos los lados del asunto se han planteado, empuja hacia un consenso.",
+        "Si el consenso no sale, entra tu y toma la decision.",
+        "Vigila la discusion libre que sigue en una busqueda interminable de consenso: cuando eso pasa, la gente se aleja del consenso cercano justo cuando esta cerca de acertar, y eso rebaja las posibilidades de llegar a la decision correcta.",
+        "Pasa a tomar la decision en el momento justo, que es lo decisivo.",
+    ],
+    "resumen_teorico": (
+        "UNIDAD DE ORIGEN: fuentes/grove_high_output/cap_06.md, unidad Cap. 5, titulo textual Decisions, Decisions. "
+        "Sale de la PIEZA P24 de la frontera publicada hoy en OO.2.a, L63, 145 palabras, y de ningun otro tramo. "
+        "POR QUE ES PROCEDIMIENTO, por la prueba del inventario de EXTRACTOR.md 9.1: el libro anuncia su criterio con esas palabras (The criterion to follow "
+        "is this) y despues lo pone entero, con su lado de no hacer, su prueba de comprobacion y su disparador, los tres nombrados (don't push for a decision "
+        "prematurely; Make sure you have heard and considered the real issues rather than the superficial comments that often dominate the early part of a "
+        "meeting; But if you feel that you have already heard everything, that all sides of the issue have been raised, it is time to push for a consensus, "
+        "and failing that, to step in and make a decision). No es un adjetivo de adecuacion en el sitio del criterio: es el criterio con sus dos extremos. "
+        "DE DONDE SALE CADA PASO, uno a uno, todos de L63: paso 1 (If you either enter the decision-making stage too early or wait too long, you won't derive "
+        "the full benefit of open discussion); paso 2 (The criterion to follow is this: don't push for a decision prematurely); paso 3 (Make sure you have "
+        "heard and considered the real issues rather than the superficial comments that often dominate the early part of a meeting); paso 4 (But if you feel "
+        "that you have already heard everything, that all sides of the issue have been raised, it is time to push for a consensus); paso 5 (and failing that, "
+        "to step in and make a decision); paso 6 (Sometimes free discussion goes on in an unending search for consensus. But, if that happens, people can "
+        "drift away from the near consensus when they are close to being right, diminishing the chances of reaching the correct decision); paso 7 (So moving "
+        "on to make the decision at the right time is crucial). "
+        "RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 7 pasos, 7 TRANSCRIPCION, 0 PUENTE. "
+        "LOS SITIOS DE TENTACION QUE DECLARO, y en los que NO escribi: NO escribo cuantos minutos dura la primera parte de una reunion ni a partir de cuando "
+        "se considera prematuro, porque el libro pone el criterio en lo que se ha oido y no en el reloj; poner ahi un numero seria la segunda especie de "
+        "PUENTE del lote 1 disfrazada de precision. NO escribo COMO se distingue un asunto de verdad de un comentario superficial, porque el libro lo nombra "
+        "y no pone la prueba. NO escribo quien manda cortar cuando el que dirige no lo ve. NI UNA CIFRA A atribuciones: el tramo no trae ninguna. "
+        "DISCUTIBLE QUE MARCO ANTES DE SABER SI ACIERTO: este nodo y el de P23 van a levantar vecindad, y ya lo dije alli. Lo repito desde este lado para que "
+        "quede en las dos fichas: P23 resuelve QUIEN decide y con que autoridad cuando no hay consenso; este resuelve CUANDO se deja de discutir, y su paso 4 "
+        "manda empujar hacia el consenso, que es el camino que P23 solo usa cuando ya se agoto. Si cae, cae DENTRO de mi marcado."
+    ),
+}
+
+if os.path.exists(DESTINO):
+    raise SystemExit("YA EXISTE: %s" % DESTINO)
+io.open(DESTINO, "w", encoding="utf-8", newline="\n").write(
+    json.dumps(NODO, ensure_ascii=False, indent=1) + "\n")
+print("ESCRITO: %s" % DESTINO)
+print("pasos: %d" % len(NODO["pasos_accionables"]))

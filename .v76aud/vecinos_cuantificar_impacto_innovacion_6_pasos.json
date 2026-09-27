@@ -1,0 +1,72 @@
+{
+ "id": "cuantificar_impacto_innovacion_6_pasos",
+ "grafo": 437,
+ "bandejas": 42,
+ "vecinos": [
+  {
+   "id": "dictar_ritmo_crecimiento_preguntas_escritas",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.412,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.528
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 6 del candidato contra paso 8 de dictar_ritmo_crecimiento_preguntas_escritas"
+  },
+  {
+   "id": "responder_primer_aviso_renuncia_subordinado",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.371,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.464
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 5 de responder_primer_aviso_renuncia_subordinado"
+  },
+  {
+   "id": "cambiar_saludo_cliente_dos_ramas",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.435,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.366
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 4 de cambiar_saludo_cliente_dos_ramas"
+  },
+  {
+   "id": "pedir_critica_anonima_curso_entrenamiento_dictado",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.357,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.391
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 3 de pedir_critica_anonima_curso_entrenamiento_dictado"
+  },
+  {
+   "id": "entregar_evaluacion_desempeno_tres_claves",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.366,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.382
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 6 de entregar_evaluacion_desempeno_tres_claves"
+  }
+ ]
+}

@@ -1,0 +1,15 @@
+    de la tabla LL.4.b del reporte de la vuelta 50, leida hoy linea a linea
+    pieza tramo           palabras   nodos  que es
+    P15   L45 a L47            134       1  EL PAPEL DEL SUPERVISOR y el principio de una pregunta mas, con la
+    P16   L49 a L49            157       1  LAS PISTAS MECANICAS: las dos copias del guion, las notas, y lo qu
+    P17   L51 a L51             64       1  EL FICHERO DE ESPERA donde los dos acumulan lo importante y no urg
+    P18   L53 a L53            117       1  LOS ASUNTOS DE CORAZON A CORAZON y la guardia contra el que se sue
+    P19   L55 a L55             85       1  EL UNO A UNO POR TELEFONO A DISTANCIA: la preparacion que exige y 
+    P20   L57 a L57             74       1  PROGRAMAR EN CADENA: fijar el siguiente al terminar el que se tien
+    P21   L59 a L59            105       0  la palanca del uno a uno, noventa minutos por ochenta horas: DEFIN
+    P22   L61 a L63            210       0  el uno a uno con el responsable de ventas de Intel: CASO del autor
+    P23   L65 a L65            103       0  el uno a uno en casa con sus hijas: CASO del autor, y el propio li
+
+    NODOS DE P15 A P23, sumados de la tabla   : 6
+    de ellos, escritos en la vuelta 52        : 6   (P15 a P20)
+    P21, P22 y P23 dan                        : 0   (definicion con su cuenta y dos casos del autor)

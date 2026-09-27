@@ -1,0 +1,46 @@
+### construir_confianza_equipo_tiempo_solas
+PARADA EN construir_confianza_equipo_tiempo_solas, codigo 2
+ADUANA DE INSERCION, candidato 'construir_confianza_equipo_tiempo_solas'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 354   (276 del grafo mas 78 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 3. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino decidir_quien_comunica_cada_cuanto  [Decidir quien necesita comunicarse con quien y cada cuanto, minimizando el coste de cada reunion]
+    levantada por: paso_contra_nodo
+    similitud_texto    0.244 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.619 (umbral 0.60)
+    paso 7 del candidato contra paso 5 de decidir_quien_comunica_cada_cuanto
+
+  vecino reconocer_emociones_propias_avisar_equipo  [Reconocer en voz alta el animo con el que llegas, para que tu equipo no crea que tu mal dia es culpa suya]
+    levantada por: similitud_texto
+    similitud_texto    0.358 (umbral 0.35)
+    familia_id         0.111 (umbral 0.30)
+    paso_contra_nodo   0.460 (umbral 0.60)
+    paso 6 del candidato contra paso 2 de reconocer_emociones_propias_avisar_equipo
+
+  vecino minimizar_impuesto_colaboracion_equipo  [Minimizar el impuesto de colaboracion de tu equipo cargando tu con el, con las tres cosas que equilibran la balanza]
+    levantada por: similitud_texto
+    similitud_texto    0.363 (umbral 0.35)
+    familia_id         0.125 (umbral 0.30)
+    paso_contra_nodo   0.412 (umbral 0.60)
+    paso 3 del candidato contra paso 3 de minimizar_impuesto_colaboracion_equipo
+
+BLOQUEADO: faltan veredictos para decidir_quien_comunica_cada_cuanto, reconocer_emociones_propias_avisar_equipo, minimizar_impuesto_colaboracion_equipo
+  La aduana no juzga: obliga a juzgar (manual seccion 3).
+  Vuelve a correr el comando con un veredicto por vecino:
+    --veredicto "decidir_quien_comunica_cada_cuanto|CONTINUA|madre=decidir_quien_comunica_cada_cuanto|que añade el hijo a la madre"
+    --veredicto "decidir_quien_comunica_cada_cuanto|REPITE|por que no añade procedimiento"
+    --veredicto "decidir_quien_comunica_cada_cuanto|SANO|por que no son el mismo trabajo"
+    --veredicto "decidir_quien_comunica_cada_cuanto|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "reconocer_emociones_propias_avisar_equipo|CONTINUA|madre=reconocer_emociones_propias_avisar_equipo|que añade el hijo a la madre"
+    --veredicto "reconocer_emociones_propias_avisar_equipo|REPITE|por que no añade procedimiento"
+    --veredicto "reconocer_emociones_propias_avisar_equipo|SANO|por que no son el mismo trabajo"
+    --veredicto "reconocer_emociones_propias_avisar_equipo|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "minimizar_impuesto_colaboracion_equipo|CONTINUA|madre=minimizar_impuesto_colaboracion_equipo|que añade el hijo a la madre"
+    --veredicto "minimizar_impuesto_colaboracion_equipo|REPITE|por que no añade procedimiento"
+    --veredicto "minimizar_impuesto_colaboracion_equipo|SANO|por que no son el mismo trabajo"
+    --veredicto "minimizar_impuesto_colaboracion_equipo|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"

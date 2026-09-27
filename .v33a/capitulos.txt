@@ -1,0 +1,21 @@
+NODOS DE scott_radical_candor EN EL GRAFO, por capitulo del fichero fuente
+  (el capitulo se saca del patron cap_NN.md dentro del resumen_teorico; dataset de 282 nodos)
+
+  fichero      en fuentes/     nodos    pasos
+  cap_00.md    SI                  0        0
+  cap_01.md    SI                  1        9
+  cap_02.md    SI                  0        0
+  cap_03.md    SI                  1       10
+  cap_04.md    SI                  5       41
+  cap_05.md    SI                  8       76
+  cap_06.md    SI                 10      117
+  cap_07.md    SI                 25      225
+  cap_08.md    SI                 12      102
+  cap_09.md    SI                  0        0
+  cap_10.md    SI                  0        0
+  cap_11.md    SI                 16      187
+  cap_12.md    SI                  0        0
+  cap_13.md    SI                  0        0
+  cap_14.md    SI                  0        0
+
+  nodos de scott en el grafo: 79   sin capitulo legible en su resumen: 1

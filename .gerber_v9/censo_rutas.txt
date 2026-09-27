@@ -1,0 +1,10 @@
+============================================================================
+rutas publicadas y censadas : 1147
+  pasan                     : 1147
+  CAEN                      : 0
+      PATRON                           91
+      VACIA A PROPOSITO                5
+      con contenido                    1039
+      vacia por protocolo              12
+
+CENSO VERDE: las 1147 rutas publicadas sostienen lo que dicen sostener.

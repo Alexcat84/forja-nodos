@@ -1,0 +1,9 @@
+huella de un dict vacio: e3b0c44298fc1c14
+252 crear_obligacion_disentir_equipo       huella_vecino= e3b0c44298fc1c14  vacia? True
+256 compartir_logica_mostrar_razonamiento  huella_vecino= e3b0c44298fc1c14  vacia? True
+258 fijar_fecha_cierre_debate_equipo       huella_vecino= e3b0c44298fc1c14  vacia? True
+260 mantener_manos_trabajo_real_equipo     huella_vecino= e3b0c44298fc1c14  vacia? True
+261 compartir_logica_mostrar_razonamiento  huella_vecino= e3b0c44298fc1c14  vacia? True
+262 parar_debate_emocion_agotamiento       huella_vecino= e3b0c44298fc1c14  vacia? True
+263 proteger_tiempo_equipo_jefe            huella_vecino= e3b0c44298fc1c14  vacia? True
+264 minimizar_impuesto_colaboracion_equipo huella_vecino= e3b0c44298fc1c14  vacia? True

@@ -1,0 +1,18 @@
+# ARISTAS POR LECTURA (D.29, D.37, D.53) DE LA VUELTA 73 para las 7 de cap_15, cap_16 y cap_17: las que la senial NO levanta
+# en ningun sentido en el barrido de hoy (.v73ext/vecinos_<id>.json, poblacion 479, 430 grafo mas 49 bandejas). Las madres del
+# grafo no se barrieron hoy, asi que "ningun sentido" quiere decir: el hijo no las levanta, y si la madre es de las 7, ella
+# tampoco. Las que la senial SI levanta van como CONTINUA en .v73ext/veredictos_listos.txt y no aqui: responder_primer_aviso
+# madre de gestionar_retencion (D73.8), y en cap_17 priorizar_lista madre de desarrollar_primer_curso y desarrollar_primer_curso
+# madre de pedir_critica_anonima (ACTA 60 60.5, pares 1 y 3). El par 2 de esa acta, priorizar_lista a pedir_critica_anonima,
+# tambien lo levanta la senial, y su linea va SANO alli (D73.9).
+# Formato, el de .v71ext/aristas_lectura.txt: SOSTENGO o NO SOSTENGO | madre | hijo | paso de la madre y paso del hijo | linea del libro | razon
+# Se cablean en la vuelta que inserte estas 7, en el acto de insertar el hijo, con la madre ya en el grafo:
+# python forja.py arista --madre --hijo --paso --razon. Lo DISCUTIBLE se marco al escribir la fila.
+# Hoy no hay ninguna SOSTENGO: toda madre que la lectura encuentra para las 7 la levanta ya la senial.
+NO SOSTENGO | preparar_preguntas_entrevista_antemano | usar_banco_nueve_preguntas_entrevista | madre paso 3 | cap_15 L37 | El paso 3 de la vecina del grafo, de zhuo_manager, nombra en una linea tener una lista de preguntas preparada, y sus pasos 8 a 12 ya traen su propio banco, el de su autora. El candidato es el banco de otro libro, el que un grupo de mandos dio a Grove (L37 a L55): no despliega la linea de la vecina, es otra lista para lo mismo. Dos doctrinas legitimas no son duplicado ni jerarquia (6.1); la senial no levanta el par. SANO (DISCUTIBLE D73.10).
+NO SOSTENGO | diagnosticar_capacidad_motivacion_prueba_vida | priorizar_lista_entrenamiento_subordinados | madre paso 4 | cap_17 L23, L49 | L23 dice que el entrenamiento es una de las dos vias para subir el rendimiento, y la vecina del grafo diagnostica si el subordinado no puede o no quiere; pero su paso 4 solo concluye que no es capaz, sin nombrar el entrenamiento como remedio, y el candidato no parte de ese diagnostico sino de abrazar el entrenamiento (L49). SANO.
+NO SOSTENGO | repartir_supervision_puesto_funcional_mision | priorizar_lista_entrenamiento_subordinados | madre paso 6 | cap_17 L33, L49 | El paso 6 de la vecina del grafo, de cap_10, encarga al jefe funcional que el puesto este formado; nombra la formacion en una linea y su condicion es repartir la supervision entre dos jefes. El candidato tiene su propia condicion (L49) y no usa el reparto. Nombrar no es procedimentar. SANO.
+NO SOSTENGO | reconocer_recompensar_gente_estable | reciclar_empleado_ascendido_mas_alla_capacidad | vecina paso 12 | cap_16 L49 | El paso 12 de la vecina del grafo, de scott_radical_candor, nombra la promocion que sube a la gente por encima de su nivel de competencia como forma de promocion mala; el candidato deshace ese ascenso cuando ya ocurrio. Ninguno usa el producto del otro, y son libros distintos que tratan el mismo fenomeno. SANO.
+# D.37, mirado. Dos titulos dicen cuantas partes tienen: usar_banco_nueve_preguntas_entrevista (nueve preguntas, L37 a L55) y
+# desarrollar_primer_curso_entrenamiento (siete pasos). En los dos las partes son los propios pasos del candidato y ninguna es un
+# nodo. Ninguna arista cabeza a parte.

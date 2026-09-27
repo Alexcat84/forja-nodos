@@ -1,0 +1,39 @@
+  OK  gestionar_retencion_subordinado_valioso_renuncia             responder_primer_aviso_renuncia_subordinado                  CONTINUA  madre=responder_primer_aviso_renuncia_subordinado
+  OK  gestionar_retencion_subordinado_valioso_renuncia             entregar_evaluacion_desempeno_tres_claves                    SANO      
+  OK  gestionar_retencion_subordinado_valioso_renuncia             usar_banco_nueve_preguntas_entrevista                        SANO      
+gestionar_retencion_subordinado_valioso_renuncia             lineas 3 | levantados hoy 3 | FALTAN 0 | SOBRAN 0
+  OK  responder_primer_aviso_renuncia_subordinado                  preguntar_seguimiento_hallar_huecos                          SANO      
+  OK  responder_primer_aviso_renuncia_subordinado                  usar_banco_nueve_preguntas_entrevista                        SANO      
+  OK  responder_primer_aviso_renuncia_subordinado                  gestionar_retencion_subordinado_valioso_renuncia             CONTINUA  madre=responder_primer_aviso_renuncia_subordinado
+  OK  responder_primer_aviso_renuncia_subordinado                  entregar_evaluacion_desempeno_tres_claves                    SANO      
+  OK  responder_primer_aviso_renuncia_subordinado                  construir_indicador_tendencia_patron                         SANO      
+  OK  responder_primer_aviso_renuncia_subordinado                  planificar_tres_pasos_demanda_estado_brecha                  SANO      
+  OK  responder_primer_aviso_renuncia_subordinado                  pedir_critica_anonima_curso_entrenamiento_dictado            SANO      
+responder_primer_aviso_renuncia_subordinado                  lineas 7 | levantados hoy 7 | FALTAN 0 | SOBRAN 0
+  OK  usar_banco_nueve_preguntas_entrevista                        identificar_disparadores_propios_reaccion                    SANO      
+  OK  usar_banco_nueve_preguntas_entrevista                        responder_primer_aviso_renuncia_subordinado                  SANO      
+  OK  usar_banco_nueve_preguntas_entrevista                        gestionar_retencion_subordinado_valioso_renuncia             SANO      
+  OK  usar_banco_nueve_preguntas_entrevista                        entregar_evaluacion_desempeno_tres_claves                    SANO      
+  OK  usar_banco_nueve_preguntas_entrevista                        pedir_critica_anonima_curso_entrenamiento_dictado            SANO      
+  OK  usar_banco_nueve_preguntas_entrevista                        planificar_tres_pasos_demanda_estado_brecha                  SANO      
+usar_banco_nueve_preguntas_entrevista                        lineas 6 | levantados hoy 6 | FALTAN 0 | SOBRAN 0
+  OK  reciclar_empleado_ascendido_mas_alla_capacidad               priorizar_lista_entrenamiento_subordinados                   SANO      
+reciclar_empleado_ascendido_mas_alla_capacidad               lineas 1 | levantados hoy 1 | FALTAN 0 | SOBRAN 0
+  OK  desarrollar_primer_curso_entrenamiento                       pedir_critica_anonima_curso_entrenamiento_dictado            CONTINUA  madre=desarrollar_primer_curso_entrenamiento
+  OK  desarrollar_primer_curso_entrenamiento                       priorizar_lista_entrenamiento_subordinados                   CONTINUA  madre=priorizar_lista_entrenamiento_subordinados
+desarrollar_primer_curso_entrenamiento                       lineas 2 | levantados hoy 2 | FALTAN 0 | SOBRAN 0
+  OK  pedir_critica_anonima_curso_entrenamiento_dictado            gestionar_retencion_subordinado_valioso_renuncia             SANO      
+  OK  pedir_critica_anonima_curso_entrenamiento_dictado            priorizar_lista_entrenamiento_subordinados                   SANO      
+  OK  pedir_critica_anonima_curso_entrenamiento_dictado            desarrollar_primer_curso_entrenamiento                       CONTINUA  madre=desarrollar_primer_curso_entrenamiento
+  OK  pedir_critica_anonima_curso_entrenamiento_dictado            usar_banco_nueve_preguntas_entrevista                        SANO      
+  OK  pedir_critica_anonima_curso_entrenamiento_dictado            repartir_supervision_puesto_funcional_mision                 SANO      
+  OK  pedir_critica_anonima_curso_entrenamiento_dictado            responder_primer_aviso_renuncia_subordinado                  SANO      
+  OK  pedir_critica_anonima_curso_entrenamiento_dictado            entregar_evaluacion_desempeno_tres_claves                    SANO      
+pedir_critica_anonima_curso_entrenamiento_dictado            lineas 7 | levantados hoy 7 | FALTAN 0 | SOBRAN 0
+  OK  priorizar_lista_entrenamiento_subordinados                   pedir_critica_anonima_curso_entrenamiento_dictado            SANO      
+  OK  priorizar_lista_entrenamiento_subordinados                   desarrollar_primer_curso_entrenamiento                       CONTINUA  madre=priorizar_lista_entrenamiento_subordinados
+  OK  priorizar_lista_entrenamiento_subordinados                   reciclar_empleado_ascendido_mas_alla_capacidad               SANO      
+priorizar_lista_entrenamiento_subordinados                   lineas 3 | levantados hoy 3 | FALTAN 0 | SOBRAN 0
+secciones 7 de 7, lineas 29, ilegibles 0, vecinos sin linea 0, lineas sin vecino 0
+
+ARISTAS POR LECTURA (SOSTENGO) contra el barrido de hoy

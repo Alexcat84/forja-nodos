@@ -1,0 +1,45 @@
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 413   (346 del grafo mas 67 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 0
+  BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+  vecinos levantados en total      : 6
+  por candidato bloqueado          : menor 6, mediana 6, mayor 6
+  que señal levanta cada vecindad  : familia_id 1, similitud_texto 5
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] anunciar_decision_inesperada_reconvocar_reunion   (anunciar_decision_inesperada_reconvocar_reunion.json)
+    vecino cortar_discusion_libre_momento_justo  [levantada por: similitud_texto]
+      similitud_texto 0.405 | familia_id 0.000 | paso_contra_nodo 0.526
+      paso 7 del candidato contra paso 5 de cortar_discusion_libre_momento_justo
+    vecino zanjar_seis_preguntas_decision_adelantado  [levantada por: similitud_texto]
+      similitud_texto 0.366 | familia_id 0.111 | paso_contra_nodo 0.495
+      paso 7 del candidato contra paso 9 de zanjar_seis_preguntas_decision_adelantado
+    vecino tomar_mando_reunion_pares_presidente_ausente  [levantada por: similitud_texto]
+      similitud_texto 0.359 | familia_id 0.100 | paso_contra_nodo 0.441
+      paso 8 del candidato contra paso 2 de tomar_mando_reunion_pares_presidente_ausente
+    vecino vencer_sindrome_grupo_pares_autoconfianza  [levantada por: similitud_texto]
+      similitud_texto 0.441 | familia_id 0.000 | paso_contra_nodo 0.418
+      paso 8 del candidato contra paso 5 de vencer_sindrome_grupo_pares_autoconfianza
+    vecino dirigir_reunion_decision  [levantada por: familia_id]
+      similitud_texto 0.171 | familia_id 0.333 | paso_contra_nodo 0.420
+      paso 4 del candidato contra paso 10 de dirigir_reunion_decision
+    vecino ejercer_poder_posicion_etapa_decision_clara  [levantada por: similitud_texto]
+      similitud_texto 0.371 | familia_id 0.100 | paso_contra_nodo 0.415
+      paso 3 del candidato contra paso 5 de ejercer_poder_posicion_etapa_decision_clara
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.

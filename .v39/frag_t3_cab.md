@@ -1,0 +1,41 @@
+
+### CC.6.e. **LA ADUANA EN SECO DEL CANDIDATO `1`, CORRIDA POR MI PORQUE YO LE CAMBIE LA FICHA**
+
+*`EXTRACTOR.md` 16: **un candidato no esta escrito hasta que ha pasado la aduana**, y yo le he anexado
+`1.977` caracteres al `resumen_teorico` en la `TAREA 1.B`. **Una ficha que cambia es una ficha que
+vuelve a la puerta**, aunque el cambio sea prosa. El informe que el encargo me entrega es del arbol de
+ayer y de la ficha de ayer: **lo cito como contraste, no como mi medida.***
+
+<!-- TALLADO: parcial salida=.v39/informes/informe_cand1.txt -->
+
+    $ python forja.py informe cuarentena/scott_radical_candor/pedir_critica_primero_crear_seguridad_psicologica.json
+    ============================================================================
+    INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+    ============================================================================
+    candidatos revisados        : 1
+    poblacion del barrido       : 348   (321 del grafo mas 27 que esperan en bandejas)
+    umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+    EL SALDO
+      ENTRARIAN sin leer nada          : 0
+      BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+      CAERIAN por una guarda           : 0
+      CHOCAN entre si dentro del lote  : 0
+
+    LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+      vecinos levantados en total      : 1
+      por candidato bloqueado          : menor 1, mediana 1, mayor 1
+      que señal levanta cada vecindad  : paso_contra_nodo 1
+
+    ============================================================================
+    LA LISTA COMPLETA, candidato por candidato
+    ============================================================================
+
+    [BLOQUEARIA] pedir_critica_primero_crear_seguridad_psicologica   (pedir_critica_primero_crear_seguridad_psicologica.json)
+        vecino integrar_peticion_critica_rutina_existente  [levantada por: paso_contra_nodo]
+          similitud_texto 0.215 | familia_id 0.100 | paso_contra_nodo 0.733
+          paso 17 del candidato contra paso 6 de integrar_peticion_critica_rutina_existente
+
+    NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+    entre hace falta python forja.py insertar, uno por vez, con su
+    veredicto escrito por vecino.

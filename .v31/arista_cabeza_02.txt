@@ -1,0 +1,10 @@
+DECLARACION DE ARISTA POR LECTURA (D.37)
+  madre: decidir_quien_comunica_cada_cuanto
+  hijo : montar_reuniones_solas_mentalidad_frecuencia
+  paso citado de la madre: 6
+    Y ten delante las herramientas que el texto enumera para sacar cosas adelante juntos, que son las reuniones a solas, las reuniones de equipo, el tiemp
+  señales del par: familia_id 0.0, paso_contra_nodo 0.486, similitud_texto 0.211
+    NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: decidir_quien_comunica_cada_cuanto > montar_reuniones_solas_mentalidad_frecuencia
+  razon en bitacora/VEREDICTOS.jsonl

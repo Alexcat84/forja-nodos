@@ -1,0 +1,87 @@
+CANDIDATO : ceder_control_reforzar_competencia_claridad
+CAPITULO  : fuentes/marquet_turn_the_ship/cap_01.md
+PASOS     : 7
+====================================================================================================
+PASO 1> Cuenta con las cuatro fases que el texto dice que describe en su lucha por cambiar la forma de relacionarse, y con como reparte sus partes: la primera en la Parte I, y el puente y los pilares en las Partes II, III y IV.
+  --- L97 del libro ---
+      Turn the Ship Around! is the story of that journey and the men aboard Santa Fe who lived it with
+       me. It describes essentially four phases in my struggle to change the way we interacted for the
+       better. I describe how I needed to let go of old ideas to make room for new ones in Part I. In 
+      Parts II, III, and IV, I describe the bridge to leader-leader and supporting pillars. The bridge
+       is control, divesting control to others in your organization while keeping responsibility. Cont
+      rol, we discovered, only works with a competent workforce that understands the organization’s pu
+      rpose. Hence, as control is divested, both technical competence and organizational clarity need 
+      to be strengthened. The book parts are generally grouped into these categories, but the reality 
+      of how this works is that these cycles are repeated in ever increasing circles.
+====================================================================================================
+PASO 2> Empieza soltando las ideas viejas para hacer sitio a las nuevas, que es lo que el texto pone en su primera parte.
+  --- L97 del libro ---
+      Turn the Ship Around! is the story of that journey and the men aboard Santa Fe who lived it with
+       me. It describes essentially four phases in my struggle to change the way we interacted for the
+       better. I describe how I needed to let go of old ideas to make room for new ones in Part I. In 
+      Parts II, III, and IV, I describe the bridge to leader-leader and supporting pillars. The bridge
+       is control, divesting control to others in your organization while keeping responsibility. Cont
+      rol, we discovered, only works with a competent workforce that understands the organization’s pu
+      rpose. Hence, as control is divested, both technical competence and organizational clarity need 
+      to be strengthened. The book parts are generally grouped into these categories, but the reality 
+      of how this works is that these cycles are repeated in ever increasing circles.
+====================================================================================================
+PASO 3> Cruza al modelo de lider a lider por el puente que el texto nombra, que es el control.
+  --- L97 del libro ---
+      Turn the Ship Around! is the story of that journey and the men aboard Santa Fe who lived it with
+       me. It describes essentially four phases in my struggle to change the way we interacted for the
+       better. I describe how I needed to let go of old ideas to make room for new ones in Part I. In 
+      Parts II, III, and IV, I describe the bridge to leader-leader and supporting pillars. The bridge
+       is control, divesting control to others in your organization while keeping responsibility. Cont
+      rol, we discovered, only works with a competent workforce that understands the organization’s pu
+      rpose. Hence, as control is divested, both technical competence and organizational clarity need 
+      to be strengthened. The book parts are generally grouped into these categories, but the reality 
+      of how this works is that these cycles are repeated in ever increasing circles.
+====================================================================================================
+PASO 4> Cede el control a otros de tu organizacion reteniendo la responsabilidad, que es como el texto define ese puente.
+  --- L97 del libro ---
+      Turn the Ship Around! is the story of that journey and the men aboard Santa Fe who lived it with
+       me. It describes essentially four phases in my struggle to change the way we interacted for the
+       better. I describe how I needed to let go of old ideas to make room for new ones in Part I. In 
+      Parts II, III, and IV, I describe the bridge to leader-leader and supporting pillars. The bridge
+       is control, divesting control to others in your organization while keeping responsibility. Cont
+      rol, we discovered, only works with a competent workforce that understands the organization’s pu
+      rpose. Hence, as control is divested, both technical competence and organizational clarity need 
+      to be strengthened. The book parts are generally grouped into these categories, but the reality 
+      of how this works is that these cycles are repeated in ever increasing circles.
+====================================================================================================
+PASO 5> Cuenta con la condicion que el texto dice haber descubierto sobre el control: solo funciona con una plantilla competente que entienda el proposito de la organizacion.
+  --- L97 del libro ---
+      Turn the Ship Around! is the story of that journey and the men aboard Santa Fe who lived it with
+       me. It describes essentially four phases in my struggle to change the way we interacted for the
+       better. I describe how I needed to let go of old ideas to make room for new ones in Part I. In 
+      Parts II, III, and IV, I describe the bridge to leader-leader and supporting pillars. The bridge
+       is control, divesting control to others in your organization while keeping responsibility. Cont
+      rol, we discovered, only works with a competent workforce that understands the organization’s pu
+      rpose. Hence, as control is divested, both technical competence and organizational clarity need 
+      to be strengthened. The book parts are generally grouped into these categories, but the reality 
+      of how this works is that these cycles are repeated in ever increasing circles.
+====================================================================================================
+PASO 6> Refuerza por eso las dos cosas que el texto nombra segun vas cediendo control: la competencia tecnica y la claridad organizativa.
+  --- L97 del libro ---
+      Turn the Ship Around! is the story of that journey and the men aboard Santa Fe who lived it with
+       me. It describes essentially four phases in my struggle to change the way we interacted for the
+       better. I describe how I needed to let go of old ideas to make room for new ones in Part I. In 
+      Parts II, III, and IV, I describe the bridge to leader-leader and supporting pillars. The bridge
+       is control, divesting control to others in your organization while keeping responsibility. Cont
+      rol, we discovered, only works with a competent workforce that understands the organization’s pu
+      rpose. Hence, as control is divested, both technical competence and organizational clarity need 
+      to be strengthened. The book parts are generally grouped into these categories, but the reality 
+      of how this works is that these cycles are repeated in ever increasing circles.
+====================================================================================================
+PASO 7> No lo trates como una secuencia que se recorre una vez: el texto dice que las partes del libro se agrupan en esas categorias, pero que en la realidad estos ciclos se repiten en circulos cada vez mayores.
+  --- L97 del libro ---
+      Turn the Ship Around! is the story of that journey and the men aboard Santa Fe who lived it with
+       me. It describes essentially four phases in my struggle to change the way we interacted for the
+       better. I describe how I needed to let go of old ideas to make room for new ones in Part I. In 
+      Parts II, III, and IV, I describe the bridge to leader-leader and supporting pillars. The bridge
+       is control, divesting control to others in your organization while keeping responsibility. Cont
+      rol, we discovered, only works with a competent workforce that understands the organization’s pu
+      rpose. Hence, as control is divested, both technical competence and organizational clarity need 
+      to be strengthened. The book parts are generally grouped into these categories, but the reality 
+      of how this works is that these cycles are repeated in ever increasing circles.

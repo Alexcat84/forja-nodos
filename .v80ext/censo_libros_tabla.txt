@@ -1,0 +1,9 @@
+  scott_radical_candor              142
+  zhuo_manager                      136
+  grove_high_output                  92
+  smart_who                          59
+  gerber_emyth                       22
+  marquet_turn_the_ship              20
+  onu_consumidor                      6
+  manual_sistema_conocimiento         2
+  SUMA                              479  (nodos en el fichero: 479)

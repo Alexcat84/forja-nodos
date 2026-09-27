@@ -1,0 +1,3 @@
+    $ grep -l "Sale de la PIEZA P34" cuarentena/grove_high_output/*.json
+    cuarentena/grove_high_output/decir_no_trabajo_excede_capacidad.json
+    cuarentena/grove_high_output/usar_calendario_herramienta_planificacion_produccion.json

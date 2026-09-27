@@ -1,0 +1,19 @@
+$ grep -n "LOS CANDIDATOS DE UN LOTE ABIERTO" docs/loop/EXTRACTOR.md docs/BANCO_DE_REGLAS.md
+docs/loop/EXTRACTOR.md:717:> **LOS CANDIDATOS DE UN LOTE ABIERTO SE QUEDAN EN CUARENTENA HASTA QUE SU LOTE
+docs/BANCO_DE_REGLAS.md:1782:> **LOS CANDIDATOS DE UN LOTE ABIERTO SIGUEN EN CUARENTENA HASTA QUE SU LOTE
+
+$ grep -n "El lote 7 esta ABIERTO" docs/loop/paradas/2026-09-18-arista-py-y-la-ciega-sin-registro-DECISION.md
+212:**El lote 7 esta ABIERTO:** `1` nodo dentro (`revisar_tres_preguntas_valor_carrera`, `cap_01`)
+
+$ grep -n "LA TAREA: \*\*INSERTAR" docs/loop/PROMPT_SIGUIENTE.md
+49:## LA TAREA: **INSERTAR DE `grove_high_output`, Y LEER LA DEUDA ANTES DE ELEGIR**
+
+$ grep -n "QUE libro esta CERRADO EN EXTRACCION" config/frentes.json
+12:    "  2. QUE libro esta CERRADO EN EXTRACCION, que es una adjudicacion de un acta y no",
+
+$ sed -n "12,13p" config/frentes.json
+    "  2. QUE libro esta CERRADO EN EXTRACCION, que es una adjudicacion de un acta y no",
+    "     una cuenta de ficheros.",
+
+$ grep -n "el lote 7 de .grove_high_output. esta" docs/loop/REPORTE.md
+43415:| `D.39` deja insertar **un lote CERRADO** cuyo informe certifique el acta | el lote 7 de `grove_high_output` esta **ABIERTO**: `1` dentro y `22` en bandeja, medido en `FF.5.d` |

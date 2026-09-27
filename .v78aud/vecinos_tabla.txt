@@ -1,0 +1,112 @@
+(1) candidato | poblacion | vecinos | en grafo | en bandeja
+    acoger_inspectores_externos_fuente_aprendizaje           479   6   0   6
+    aplicar_ejercicio_codigo_genetico_control                479   1   0   1
+    asignar_responsable_unico_evolucion_planificada          479   0   0   0
+    auditar_formacion_premios_ultima_fila                    479   2   0   2
+    cambiar_forma_trabajar_conservar_plantilla               479   2   1   1
+    ceder_control_reforzar_competencia_claridad              479   1   0   1
+    contar_firmas_cadena_tramite_parado                      479   2   0   2
+    declarar_intencion_reemplazar_peticion_permiso           479   4   0   4
+    eliminar_seguimiento_descendente_responsabilizar_dueno   479   0   0   0
+    encargar_meta_especifica_dejar_libre_metodo              479   3   0   3
+    identificar_temas_formacion_tarjetas_decision            479   0   0   0
+    informar_cierre_jornada_conservar_propiedad_trabajo      479   6   5   1
+    inspeccionar_reparto_informacion_notas_jefe              479   2   0   2
+    observar_reunion_rutinaria_senales_plantilla             479   3   0   3
+    recorrer_organizacion_escuchar_plantilla                 479   3   0   3
+    reforzar_principios_guia_lenguaje_prueba_conocimiento    479   3   0   3
+    repetir_mensaje_invariable_diario_reunion_evento         479   0   0   0
+    resistir_dar_solucion_clasificar_decision_urgencia       479   5   0   5
+    seguir_frustrado_preguntar_implantacion_ideas            479   6   4   2
+    tomar_accion_deliberada_pausar_vocalizar_gesticular      479   3   0   3
+sin fichero de vecinos: 0 []
+(2) vecino levantado | senial | texto familia paso
+    acoger_inspectores_externos_fuente_aprendizaje         > tomar_accion_deliberada_pausar_vocalizar_gesticular    bandeja similitud_texto  0.457 0.000 0.399
+    acoger_inspectores_externos_fuente_aprendizaje         > resistir_dar_solucion_clasificar_decision_urgencia     bandeja similitud_texto  0.412 0.000 0.410
+    acoger_inspectores_externos_fuente_aprendizaje         > declarar_intencion_reemplazar_peticion_permiso         bandeja similitud_texto  0.406 0.000 0.393
+    acoger_inspectores_externos_fuente_aprendizaje         > reforzar_principios_guia_lenguaje_prueba_conocimiento  bandeja similitud_texto  0.397 0.000 0.376
+    acoger_inspectores_externos_fuente_aprendizaje         > seguir_frustrado_preguntar_implantacion_ideas          bandeja similitud_texto  0.356 0.000 0.294
+    acoger_inspectores_externos_fuente_aprendizaje         > recorrer_organizacion_escuchar_plantilla               bandeja similitud_texto  0.353 0.000 0.327
+    aplicar_ejercicio_codigo_genetico_control              > resistir_dar_solucion_clasificar_decision_urgencia     bandeja similitud_texto  0.366 0.000 0.432
+    auditar_formacion_premios_ultima_fila                  > observar_reunion_rutinaria_senales_plantilla           bandeja similitud_texto  0.370 0.000 0.489
+    auditar_formacion_premios_ultima_fila                  > recorrer_organizacion_escuchar_plantilla               bandeja similitud_texto  0.353 0.000 0.462
+    cambiar_forma_trabajar_conservar_plantilla             > escuchar_entender_critica_dominar_defensa              grafo   paso_contra_nodo 0.201 0.000 0.612
+    cambiar_forma_trabajar_conservar_plantilla             > encargar_meta_especifica_dejar_libre_metodo            bandeja similitud_texto  0.441 0.000 0.455
+    ceder_control_reforzar_competencia_claridad            > encargar_meta_especifica_dejar_libre_metodo            bandeja similitud_texto  0.372 0.000 0.486
+    contar_firmas_cadena_tramite_parado                    > seguir_frustrado_preguntar_implantacion_ideas          bandeja similitud_texto  0.354 0.000 0.463
+    contar_firmas_cadena_tramite_parado                    > inspeccionar_reparto_informacion_notas_jefe            bandeja similitud_texto  0.360 0.000 0.405
+    declarar_intencion_reemplazar_peticion_permiso         > resistir_dar_solucion_clasificar_decision_urgencia     bandeja similitud_texto  0.422 0.000 0.439
+    declarar_intencion_reemplazar_peticion_permiso         > acoger_inspectores_externos_fuente_aprendizaje         bandeja similitud_texto  0.404 0.000 0.350
+    declarar_intencion_reemplazar_peticion_permiso         > informar_cierre_jornada_conservar_propiedad_trabajo    bandeja similitud_texto  0.352 0.000 0.391
+    declarar_intencion_reemplazar_peticion_permiso         > reforzar_principios_guia_lenguaje_prueba_conocimiento  bandeja similitud_texto  0.355 0.000 0.353
+    encargar_meta_especifica_dejar_libre_metodo            > ceder_control_reforzar_competencia_claridad            bandeja similitud_texto  0.381 0.000 0.473
+    encargar_meta_especifica_dejar_libre_metodo            > cambiar_forma_trabajar_conservar_plantilla             bandeja similitud_texto  0.436 0.000 0.459
+    encargar_meta_especifica_dejar_libre_metodo            > recorrer_organizacion_escuchar_plantilla               bandeja similitud_texto  0.412 0.000 0.416
+    informar_cierre_jornada_conservar_propiedad_trabajo    > seguir_frustrado_preguntar_implantacion_ideas          bandeja similitud_texto  0.412 0.000 0.391
+    informar_cierre_jornada_conservar_propiedad_trabajo    > operar_modelo_gente_destreza_minima                    grafo   similitud_texto  0.364 0.000 0.399
+    informar_cierre_jornada_conservar_propiedad_trabajo    > cuantificar_impacto_innovacion_6_pasos                 grafo   similitud_texto  0.392 0.000 0.294
+    informar_cierre_jornada_conservar_propiedad_trabajo    > dictar_ritmo_crecimiento_preguntas_escritas            grafo   similitud_texto  0.361 0.000 0.390
+    informar_cierre_jornada_conservar_propiedad_trabajo    > interrogar_negocio_cinco_preguntas                     grafo   similitud_texto  0.360 0.000 0.390
+    informar_cierre_jornada_conservar_propiedad_trabajo    > usar_banco_nueve_preguntas_entrevista                  grafo   similitud_texto  0.351 0.000 0.329
+    inspeccionar_reparto_informacion_notas_jefe            > observar_reunion_rutinaria_senales_plantilla           bandeja similitud_texto  0.358 0.000 0.452
+    inspeccionar_reparto_informacion_notas_jefe            > contar_firmas_cadena_tramite_parado                    bandeja similitud_texto  0.379 0.000 0.428
+    observar_reunion_rutinaria_senales_plantilla           > auditar_formacion_premios_ultima_fila                  bandeja similitud_texto  0.361 0.000 0.463
+    observar_reunion_rutinaria_senales_plantilla           > recorrer_organizacion_escuchar_plantilla               bandeja similitud_texto  0.414 0.125 0.435
+    observar_reunion_rutinaria_senales_plantilla           > inspeccionar_reparto_informacion_notas_jefe            bandeja similitud_texto  0.367 0.000 0.406
+    recorrer_organizacion_escuchar_plantilla               > observar_reunion_rutinaria_senales_plantilla           bandeja similitud_texto  0.420 0.125 0.437
+    recorrer_organizacion_escuchar_plantilla               > encargar_meta_especifica_dejar_libre_metodo            bandeja similitud_texto  0.401 0.000 0.426
+    recorrer_organizacion_escuchar_plantilla               > inspeccionar_reparto_informacion_notas_jefe            bandeja similitud_texto  0.352 0.000 0.383
+    reforzar_principios_guia_lenguaje_prueba_conocimiento  > acoger_inspectores_externos_fuente_aprendizaje         bandeja similitud_texto  0.401 0.000 0.372
+    reforzar_principios_guia_lenguaje_prueba_conocimiento  > tomar_accion_deliberada_pausar_vocalizar_gesticular    bandeja similitud_texto  0.358 0.000 0.326
+    reforzar_principios_guia_lenguaje_prueba_conocimiento  > resistir_dar_solucion_clasificar_decision_urgencia     bandeja similitud_texto  0.355 0.000 0.329
+    resistir_dar_solucion_clasificar_decision_urgencia     > aplicar_ejercicio_codigo_genetico_control              bandeja similitud_texto  0.356 0.000 0.452
+    resistir_dar_solucion_clasificar_decision_urgencia     > declarar_intencion_reemplazar_peticion_permiso         bandeja similitud_texto  0.411 0.000 0.434
+    resistir_dar_solucion_clasificar_decision_urgencia     > acoger_inspectores_externos_fuente_aprendizaje         bandeja similitud_texto  0.428 0.000 0.402
+    resistir_dar_solucion_clasificar_decision_urgencia     > tomar_accion_deliberada_pausar_vocalizar_gesticular    bandeja similitud_texto  0.402 0.000 0.382
+    resistir_dar_solucion_clasificar_decision_urgencia     > reforzar_principios_guia_lenguaje_prueba_conocimiento  bandeja similitud_texto  0.369 0.000 0.346
+    seguir_frustrado_preguntar_implantacion_ideas          > interrogar_negocio_cinco_preguntas                     grafo   similitud_texto  0.363 0.000 0.477
+    seguir_frustrado_preguntar_implantacion_ideas          > contar_firmas_cadena_tramite_parado                    bandeja similitud_texto  0.375 0.000 0.441
+    seguir_frustrado_preguntar_implantacion_ideas          > dictar_ritmo_crecimiento_preguntas_escritas            grafo   similitud_texto  0.389 0.000 0.436
+    seguir_frustrado_preguntar_implantacion_ideas          > informar_cierre_jornada_conservar_propiedad_trabajo    bandeja similitud_texto  0.411 0.000 0.399
+    seguir_frustrado_preguntar_implantacion_ideas          > pedir_critica_anonima_curso_entrenamiento_dictado      grafo   similitud_texto  0.357 0.000 0.405
+    seguir_frustrado_preguntar_implantacion_ideas          > cambiar_saludo_cliente_dos_ramas                       grafo   similitud_texto  0.366 0.000 0.355
+    tomar_accion_deliberada_pausar_vocalizar_gesticular    > acoger_inspectores_externos_fuente_aprendizaje         bandeja similitud_texto  0.464 0.000 0.391
+    tomar_accion_deliberada_pausar_vocalizar_gesticular    > resistir_dar_solucion_clasificar_decision_urgencia     bandeja similitud_texto  0.411 0.000 0.372
+    tomar_accion_deliberada_pausar_vocalizar_gesticular    > reforzar_principios_guia_lenguaje_prueba_conocimiento  bandeja similitud_texto  0.366 0.000 0.349
+filas de vecino: 52
+(3) pares sin orden | levantado desde
+    acoger_inspectores_externos_fuente_aprendizaje         ~ tomar_accion_deliberada_pausar_vocalizar_gesticular    tanda-tanda los dos
+    acoger_inspectores_externos_fuente_aprendizaje         ~ resistir_dar_solucion_clasificar_decision_urgencia     tanda-tanda los dos
+    acoger_inspectores_externos_fuente_aprendizaje         ~ declarar_intencion_reemplazar_peticion_permiso         tanda-tanda los dos
+    acoger_inspectores_externos_fuente_aprendizaje         ~ reforzar_principios_guia_lenguaje_prueba_conocimiento  tanda-tanda los dos
+    acoger_inspectores_externos_fuente_aprendizaje         ~ seguir_frustrado_preguntar_implantacion_ideas          tanda-tanda solo acoger_inspectores_externos_fuente_aprendizaje
+    acoger_inspectores_externos_fuente_aprendizaje         ~ recorrer_organizacion_escuchar_plantilla               tanda-tanda solo acoger_inspectores_externos_fuente_aprendizaje
+    aplicar_ejercicio_codigo_genetico_control              ~ resistir_dar_solucion_clasificar_decision_urgencia     tanda-tanda los dos
+    auditar_formacion_premios_ultima_fila                  ~ observar_reunion_rutinaria_senales_plantilla           tanda-tanda los dos
+    auditar_formacion_premios_ultima_fila                  ~ recorrer_organizacion_escuchar_plantilla               tanda-tanda solo auditar_formacion_premios_ultima_fila
+    cambiar_forma_trabajar_conservar_plantilla             ~ escuchar_entender_critica_dominar_defensa              con fuera   solo cambiar_forma_trabajar_conservar_plantilla
+    cambiar_forma_trabajar_conservar_plantilla             ~ encargar_meta_especifica_dejar_libre_metodo            tanda-tanda los dos
+    ceder_control_reforzar_competencia_claridad            ~ encargar_meta_especifica_dejar_libre_metodo            tanda-tanda los dos
+    contar_firmas_cadena_tramite_parado                    ~ seguir_frustrado_preguntar_implantacion_ideas          tanda-tanda los dos
+    contar_firmas_cadena_tramite_parado                    ~ inspeccionar_reparto_informacion_notas_jefe            tanda-tanda los dos
+    declarar_intencion_reemplazar_peticion_permiso         ~ resistir_dar_solucion_clasificar_decision_urgencia     tanda-tanda los dos
+    declarar_intencion_reemplazar_peticion_permiso         ~ informar_cierre_jornada_conservar_propiedad_trabajo    tanda-tanda solo declarar_intencion_reemplazar_peticion_permiso
+    declarar_intencion_reemplazar_peticion_permiso         ~ reforzar_principios_guia_lenguaje_prueba_conocimiento  tanda-tanda solo declarar_intencion_reemplazar_peticion_permiso
+    encargar_meta_especifica_dejar_libre_metodo            ~ recorrer_organizacion_escuchar_plantilla               tanda-tanda los dos
+    informar_cierre_jornada_conservar_propiedad_trabajo    ~ seguir_frustrado_preguntar_implantacion_ideas          tanda-tanda los dos
+    informar_cierre_jornada_conservar_propiedad_trabajo    ~ operar_modelo_gente_destreza_minima                    con fuera   solo informar_cierre_jornada_conservar_propiedad_trabajo
+    cuantificar_impacto_innovacion_6_pasos                 ~ informar_cierre_jornada_conservar_propiedad_trabajo    con fuera   solo informar_cierre_jornada_conservar_propiedad_trabajo
+    dictar_ritmo_crecimiento_preguntas_escritas            ~ informar_cierre_jornada_conservar_propiedad_trabajo    con fuera   solo informar_cierre_jornada_conservar_propiedad_trabajo
+    informar_cierre_jornada_conservar_propiedad_trabajo    ~ interrogar_negocio_cinco_preguntas                     con fuera   solo informar_cierre_jornada_conservar_propiedad_trabajo
+    informar_cierre_jornada_conservar_propiedad_trabajo    ~ usar_banco_nueve_preguntas_entrevista                  con fuera   solo informar_cierre_jornada_conservar_propiedad_trabajo
+    inspeccionar_reparto_informacion_notas_jefe            ~ observar_reunion_rutinaria_senales_plantilla           tanda-tanda los dos
+    observar_reunion_rutinaria_senales_plantilla           ~ recorrer_organizacion_escuchar_plantilla               tanda-tanda los dos
+    inspeccionar_reparto_informacion_notas_jefe            ~ recorrer_organizacion_escuchar_plantilla               tanda-tanda solo recorrer_organizacion_escuchar_plantilla
+    reforzar_principios_guia_lenguaje_prueba_conocimiento  ~ tomar_accion_deliberada_pausar_vocalizar_gesticular    tanda-tanda los dos
+    reforzar_principios_guia_lenguaje_prueba_conocimiento  ~ resistir_dar_solucion_clasificar_decision_urgencia     tanda-tanda los dos
+    resistir_dar_solucion_clasificar_decision_urgencia     ~ tomar_accion_deliberada_pausar_vocalizar_gesticular    tanda-tanda los dos
+    interrogar_negocio_cinco_preguntas                     ~ seguir_frustrado_preguntar_implantacion_ideas          con fuera   solo seguir_frustrado_preguntar_implantacion_ideas
+    dictar_ritmo_crecimiento_preguntas_escritas            ~ seguir_frustrado_preguntar_implantacion_ideas          con fuera   solo seguir_frustrado_preguntar_implantacion_ideas
+    pedir_critica_anonima_curso_entrenamiento_dictado      ~ seguir_frustrado_preguntar_implantacion_ideas          con fuera   solo seguir_frustrado_preguntar_implantacion_ideas
+    cambiar_saludo_cliente_dos_ramas                       ~ seguir_frustrado_preguntar_implantacion_ideas          con fuera   solo seguir_frustrado_preguntar_implantacion_ideas
+pares sin orden: 34 | {'tanda-tanda': 24, 'con fuera': 10} | suma: 34

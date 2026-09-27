@@ -1,0 +1,40 @@
+{
+  "id": "fijar_expectativas_claras_comienzo",
+  "titulo": "Fijar expectativas claras al comienzo, antes de que empiece el trabajo",
+  "denominaciones": {
+    "nombre_largo": "La primera de las cuatro formas de opinion: acordar a que se parece el exito antes de que se haga nada, con las tres cosas que hay que tratar",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "set clear expectations at the beginning"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando alguien empieza un proyecto nuevo o un periodo nuevo contigo, y todavia no se ha hecho ningun trabajo. El libro dice que el proceso de dar opinion empieza antes que el trabajo.",
+  "entregable_esperado": "Acordado a que se parece el exito para ese proyecto o para ese periodo, adelantados los problemas esperables, y puesta la base para las conversaciones de opinion que vendran.",
+  "escala_minima": "Una persona a cargo y un proyecto. El libro pone el ejemplo mas pequenio en una sola reunion que esa persona va a dirigir.",
+  "pasos_accionables": [
+    "Toma la analogia con la que el libro lo razona: si contratas a una entrenadora para mejorar tus entrenamientos, no te pide flexiones nada mas llegar. Lo primero que hace tras las presentaciones es sentarse contigo a discutir tus metas, y despues decirte que debes esperar del entrenamiento y como sacarle el maximo, aunque su consejo todavia no este adaptado a ti.",
+    "Empieza por tanto el proceso de dar opinion antes de que empiece ningun trabajo, aunque parezca contraintuitivo.",
+    "En ese punto acordad a que se parece el exito, ya sea para un proyecto dado o para un periodo dado.",
+    "Adelantaos a cualquier problema esperable, y poned la base de las sesiones de opinion productivas que vendran despues: es como empezar un viaje con un mapa bien marcado en vez de caminar unos kilometros a ciegas y entonces preguntar si vas bien.",
+    "Durante esa fase asegurate de tratar tres cosas. La primera, a que se parece un gran trabajo para tu persona a cargo, comparado con uno mediocre o con uno malo.",
+    "La segunda, que consejo tienes tu para ayudarla a arrancar con buen pie.",
+    "Y la tercera, las trampas comunes que deberia evitar.",
+    "Usa como modelo los dos ejemplos que el libro escribe. Para un periodo: en tus primeros tres meses en el puesto espero que construyas buenas relaciones con tu equipo, que puedas ponerte al dia con un proyecto de arranque pequenio y que compartas tu primera iteracion de disenio para revision; no espero que te den luz verde a la primera, pero si te la dan seria clavarla.",
+    "Y para una tarea concreta: esto es a lo que se parece el exito en la proxima reunion que dirijas, que las distintas opciones queden enmarcadas con claridad, que todos sientan que su punto de vista queda bien representado, y que se tome una decision."
+  ],
+  "resumen_teorico": "Es la primera de las cuatro formas de dar opinion y la mas contraintuitiva de las cuatro, porque ocurre antes de que haya nada que opinar. La doctrina que la sostiene es que el proceso de opinion empieza antes que el trabajo, y el libro la razona con la analogia de la entrenadora personal, que discute metas antes de pedir el primer ejercicio. El inventario propio del libro son las tres cosas que hay que tratar durante esa fase, escritas una a una bajo la formula de asegurate de tratar lo siguiente, y los dos ejemplos redactados enteros que el libro pone debajo, uno para un periodo y otro para una tarea. Lo que el libro NO dice, y por eso no esta escrito aqui, es si esto se escribe o se habla, ni cuanto dura esa fase."
+}

@@ -1,0 +1,7 @@
+clase 79: IDENTICA a la pegada
+tablero --puedo: IDENTICO al pegado
+las siete deudas: IDENTICAS a las pegadas
+2026-09-26 16:23:44 docs/loop/CREDITO_serial.jsonl
+2026-09-26 16:23:38 docs/loop/DEUDA.jsonl
+2026-09-26 16:24:36 docs/loop/PROMPT_SIGUIENTE.md
+ahora: 2026-09-26 16:24:52

@@ -1,0 +1,14 @@
+$ python scripts/deuda.py --pagar d183 --vuelta 80 --como "$(cat .v80ext/como_d183.txt)"
+PAGADA d183 en la vuelta 80
+$ python scripts/deuda.py | grep -cE '^  (d104|d183) '
+0
+$ python scripts/deuda.py --clase 80
+LIBRE
+  van 1 de 5 desde la ultima de saneamiento (la 79), con 44 deuda(s) esperando
+$ bash .v80ext/censo.sh 2>/dev/null   # despues de la TAREA 4
+nodos en dataset/nodos.jsonl        : 479
+veredictos en bitacora              : 1226
+pares mutuos                        : 1
+bandeja cuarentena/marquet_turn_the_ship : 0
+insertados de marquet_turn_the_ship : 20
+cerrojos en procesos/               : 

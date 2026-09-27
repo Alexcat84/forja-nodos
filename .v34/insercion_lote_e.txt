@@ -1,0 +1,19 @@
+############ medir_guia_propia_pegatinas_marco
+ADUANA DE INSERCION, candidato 'medir_guia_propia_pegatinas_marco'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 350   (291 del grafo mas 59 que esperan en bandejas)
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 292
+  censos escritos: denominaciones
+############ OK medir_guia_propia_pegatinas_marco
+############ practicar_franqueza_radical_jefe_propio
+ADUANA DE INSERCION, candidato 'practicar_franqueza_radical_jefe_propio'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 351   (292 del grafo mas 59 que esperan en bandejas)
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 293
+  censos escritos: denominaciones
+############ OK practicar_franqueza_radical_jefe_propio
+exit=0

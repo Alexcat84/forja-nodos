@@ -1,0 +1,5 @@
+src/aduana.py
+src/cerrojo.py
+src/__pycache__/cerrojo.cpython-312.pyc
+scripts/retirar_paso.py
+tests/test_aceptacion.py

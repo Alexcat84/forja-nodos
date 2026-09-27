@@ -1,0 +1,2 @@
+$ sha1sum -c --quiet .v68aud/huellas_al_barrer.txt && echo "las 50 huellas de mi barrido de la 68: iguales hoy"
+las 50 huellas de mi barrido de la 68: iguales hoy

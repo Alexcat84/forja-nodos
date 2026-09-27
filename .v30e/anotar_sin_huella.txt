@@ -1,0 +1,80 @@
+ANOTACION DECLARADA SOBRE UNA LINEA YA ESCRITA DE LA BITACORA
+  sede : bitacora/VEREDICTOS.jsonl
+  linea: 252
+  veredicto: SANO (NO se toca)
+  par      : crear_cultura_escucha_equipo contra crear_obligacion_disentir_equipo
+  la razon vieja SIGUE ENTERA: 527 caracteres, ninguno borrado
+  se aniaden 498 caracteres al final de la razon
+  lineas de la bitacora tocadas: 1 (la 252). Las otras 374, intactas.
+
+ANOTACION ESCRITA en bitacora/VEREDICTOS.jsonl, linea 252.
+ANOTACION DECLARADA SOBRE UNA LINEA YA ESCRITA DE LA BITACORA
+  sede : bitacora/VEREDICTOS.jsonl
+  linea: 256
+  veredicto: SANO (NO se toca)
+  par      : explicar_idea_facil_comprender_oyente contra compartir_logica_mostrar_razonamiento
+  la razon vieja SIGUE ENTERA: 1445 caracteres, ninguno borrado
+  se aniaden 498 caracteres al final de la razon
+  lineas de la bitacora tocadas: 1 (la 256). Las otras 374, intactas.
+
+ANOTACION ESCRITA en bitacora/VEREDICTOS.jsonl, linea 256.
+ANOTACION DECLARADA SOBRE UNA LINEA YA ESCRITA DE LA BITACORA
+  sede : bitacora/VEREDICTOS.jsonl
+  linea: 258
+  veredicto: SANO (NO se toca)
+  par      : centrar_debate_ideas_fuera_egos contra fijar_fecha_cierre_debate_equipo
+  la razon vieja SIGUE ENTERA: 744 caracteres, ninguno borrado
+  se aniaden 498 caracteres al final de la razon
+  lineas de la bitacora tocadas: 1 (la 258). Las otras 374, intactas.
+
+ANOTACION ESCRITA en bitacora/VEREDICTOS.jsonl, linea 258.
+ANOTACION DECLARADA SOBRE UNA LINEA YA ESCRITA DE LA BITACORA
+  sede : bitacora/VEREDICTOS.jsonl
+  linea: 260
+  veredicto: SANO (NO se toca)
+  par      : centrar_debate_ideas_fuera_egos contra mantener_manos_trabajo_real_equipo
+  la razon vieja SIGUE ENTERA: 336 caracteres, ninguno borrado
+  se aniaden 498 caracteres al final de la razon
+  lineas de la bitacora tocadas: 1 (la 260). Las otras 374, intactas.
+
+ANOTACION ESCRITA en bitacora/VEREDICTOS.jsonl, linea 260.
+ANOTACION DECLARADA SOBRE UNA LINEA YA ESCRITA DE LA BITACORA
+  sede : bitacora/VEREDICTOS.jsonl
+  linea: 261
+  veredicto: SANO (NO se toca)
+  par      : centrar_debate_ideas_fuera_egos contra compartir_logica_mostrar_razonamiento
+  la razon vieja SIGUE ENTERA: 398 caracteres, ninguno borrado
+  se aniaden 498 caracteres al final de la razon
+  lineas de la bitacora tocadas: 1 (la 261). Las otras 374, intactas.
+
+ANOTACION ESCRITA en bitacora/VEREDICTOS.jsonl, linea 261.
+ANOTACION DECLARADA SOBRE UNA LINEA YA ESCRITA DE LA BITACORA
+  sede : bitacora/VEREDICTOS.jsonl
+  linea: 262
+  veredicto: SANO (NO se toca)
+  par      : centrar_debate_ideas_fuera_egos contra parar_debate_emocion_agotamiento
+  la razon vieja SIGUE ENTERA: 488 caracteres, ninguno borrado
+  se aniaden 498 caracteres al final de la razon
+  lineas de la bitacora tocadas: 1 (la 262). Las otras 374, intactas.
+
+ANOTACION ESCRITA en bitacora/VEREDICTOS.jsonl, linea 262.
+ANOTACION DECLARADA SOBRE UNA LINEA YA ESCRITA DE LA BITACORA
+  sede : bitacora/VEREDICTOS.jsonl
+  linea: 263
+  veredicto: SANO (NO se toca)
+  par      : centrar_debate_ideas_fuera_egos contra proteger_tiempo_equipo_jefe
+  la razon vieja SIGUE ENTERA: 367 caracteres, ninguno borrado
+  se aniaden 498 caracteres al final de la razon
+  lineas de la bitacora tocadas: 1 (la 263). Las otras 374, intactas.
+
+ANOTACION ESCRITA en bitacora/VEREDICTOS.jsonl, linea 263.
+ANOTACION DECLARADA SOBRE UNA LINEA YA ESCRITA DE LA BITACORA
+  sede : bitacora/VEREDICTOS.jsonl
+  linea: 264
+  veredicto: SANO (NO se toca)
+  par      : centrar_debate_ideas_fuera_egos contra minimizar_impuesto_colaboracion_equipo
+  la razon vieja SIGUE ENTERA: 412 caracteres, ninguno borrado
+  se aniaden 498 caracteres al final de la razon
+  lineas de la bitacora tocadas: 1 (la 264). Las otras 374, intactas.
+
+ANOTACION ESCRITA en bitacora/VEREDICTOS.jsonl, linea 264.

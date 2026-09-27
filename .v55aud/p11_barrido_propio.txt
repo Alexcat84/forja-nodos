@@ -1,0 +1,8 @@
+nodos del grafo barridos              : 346
+fichas .json bajo cuarentena/ barridas: 577  (SIN excluir _derivadas)
+documentos barridos                   : 923
+caracteres de control ENCONTRADOS     : 4
+  dataset:pedir_critica_primero_crear_seguridad_psicologica  campo .resumen_teorico  posicion 5162  U+0008
+  dataset:pedir_critica_primero_crear_seguridad_psicologica  campo .resumen_teorico  posicion 5166  U+0008
+  cuarentena/_insertados/scott_radical_candor/pedir_critica_primero_crear_seguridad_psicologica.json  campo .resumen_teorico  posicion 5162  U+0008
+  cuarentena/_insertados/scott_radical_candor/pedir_critica_primero_crear_seguridad_psicologica.json  campo .resumen_teorico  posicion 5166  U+0008

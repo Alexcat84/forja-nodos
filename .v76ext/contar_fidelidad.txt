@@ -1,0 +1,37 @@
+candidato                                                    cap     pasos   T   P
+recorrer_siete_pasos_programa_desarrollo_negocio             cap_13     10  10   0
+construir_estrategia_gente_cuatro_componentes                cap_18      5   5   0
+aplicar_ocho_reglas_juego_personas                           cap_18      9   7   2
+aplicar_cinco_pasos_proceso_contratacion                     cap_18     12  12   0
+distinguir_tres_tipos_sistemas_negocio                       cap_19      5   5   0
+aplicar_seis_pasos_sistema_venta                             cap_19      6   6   0
+medir_sistema_venta_trece_indicadores_benchmark              cap_19     14  14   0
+responder_8_preguntas_construir_primary_aim                  cap_14      9   9   0
+responder_4_preguntas_estandares_objetivo_estrategico        cap_15      5   5   0
+hacer_trabajo_futuro_imaginar_negocio                        cap_04      7   7   0
+dictar_ritmo_crecimiento_preguntas_escritas                  cap_07      8   7   1
+construir_empresa_plantilla_vision_diaria                    cap_08      8   8   0
+trazar_modelo_negocio_cliente_primero                        cap_08      9   9   0
+dar_valor_constante_cuatro_publicos                          cap_11      8   8   0
+documentar_trabajo_manual_operaciones                        cap_11     10  10   0
+fingir_prototipo_cinco_mil_replicas                          cap_11     11  11   0
+interrogar_negocio_cinco_preguntas                           cap_11     10  10   0
+operar_modelo_gente_destreza_minima                          cap_11     10   9   1
+unificar_color_forma_vestuario_modelo                        cap_11      8   8   0
+cambiar_saludo_cliente_dos_ramas                             cap_12      4   1   3
+cuantificar_impacto_innovacion_6_pasos                       cap_12      6   5   1
+probar_traje_azul_seis_semanas                               cap_12      2   2   0
+pasos sin fila: 0 [] | filas sin paso: 0 []
+
+PASOS INVENTADOS POR CAPITULO, las 22 de Gerber (COPIA de la vuelta 76 de .v73ext/contar_fidelidad.py, ruta cambiada)
+cap_04  candidatos 1  pasos 7  T 7  P 0  inventado 0,0 por ciento
+cap_07  candidatos 1  pasos 8  T 7  P 1  inventado 12,5 por ciento
+cap_08  candidatos 2  pasos 17  T 17  P 0  inventado 0,0 por ciento
+cap_11  candidatos 6  pasos 57  T 56  P 1  inventado 1,8 por ciento
+cap_12  candidatos 3  pasos 12  T 8  P 4  inventado 33,3 por ciento
+cap_13  candidatos 1  pasos 10  T 10  P 0  inventado 0,0 por ciento
+cap_14  candidatos 1  pasos 9  T 9  P 0  inventado 0,0 por ciento
+cap_15  candidatos 1  pasos 5  T 5  P 0  inventado 0,0 por ciento
+cap_18  candidatos 3  pasos 26  T 24  P 2  inventado 7,7 por ciento
+cap_19  candidatos 3  pasos 25  T 25  P 0  inventado 0,0 por ciento
+peor capitulo: cap_12, 4 de 12, 33,3 por ciento; por encima del 10: cap_07, cap_12

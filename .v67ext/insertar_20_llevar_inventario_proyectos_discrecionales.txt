@@ -1,0 +1,66 @@
+fila 20, llevar_inventario_proyectos_discrecionales, lineas --veredicto: 6
+  --veredicto agrupar_interrupciones_subordinados_reuniones_regulares|SANO|Ajenos: el inventario de proyectos (L289) contra agrupar las interrupciones en reuniones (L317). Ningun paso compartido.
+  --veredicto agrupar_tareas_semejantes_aprovechar_preparacion|SANO|El mismo par que la tanda lee desde su lado.
+  --veredicto preparar_respuestas_estandar_interrupciones_repetidas|SANO|Ajenos: el inventario de proyectos contra las respuestas estandar a las interrupciones (L315). Ningun paso compartido. La senial levanta este sentido y no el contrario, y el orden lo respeta (D.36).
+  --veredicto decir_no_trabajo_excede_capacidad|SANO|El mismo par que decir que no lee desde su lado.
+  --veredicto buscar_regularidad_bloques_iguales_trabajo_mando|SANO|Hermanos del tramo de principios de produccion: el inventario (L289) contra la regularidad (L305 a L307). Ninguno usa al otro.
+  --veredicto identificar_paso_limitante_jornada_desfases|SANO|El mismo par que el paso limitante lee desde su lado.
+inicio 2026-09-24 15:57:25
+======================================================================
+ADUANA DE INSERCION, candidato 'llevar_inventario_proyectos_discrecionales'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (387 del grafo mas 92 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 6. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino agrupar_interrupciones_subordinados_reuniones_regulares  [Agrupar en tanda las interrupciones que llegan de los subordinados y atenderlas en las reuniones regulares de personal y de uno a uno, en vez de atenderlas al azar]
+    levantada por: similitud_texto
+    similitud_texto    0.355 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.494 (umbral 0.60)
+    paso 1 del candidato contra paso 1 de agrupar_interrupciones_subordinados_reuniones_regulares
+
+  vecino agrupar_tareas_semejantes_aprovechar_preparacion  [Agrupar las tareas semejantes en una tanda para aprovechar un solo esfuerzo de preparacion]
+    levantada por: similitud_texto
+    similitud_texto    0.368 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.456 (umbral 0.60)
+    paso 5 del candidato contra paso 2 de agrupar_tareas_semejantes_aprovechar_preparacion
+
+  vecino preparar_respuestas_estandar_interrupciones_repetidas  [Preparar respuestas estandar para las clases de interrupcion que se repiten, y tenerlas disponibles para delegar buena parte del trabajo en personal con menos experiencia]
+    levantada por: similitud_texto
+    similitud_texto    0.355 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.437 (umbral 0.60)
+    paso 3 del candidato contra paso 5 de preparar_respuestas_estandar_interrupciones_repetidas
+
+  vecino decir_no_trabajo_excede_capacidad  [Decir que no de salida al trabajo que excede tu capacidad, antes y no despues, usando tu propia idea del tiempo que cada cosa te lleva]
+    levantada por: similitud_texto
+    similitud_texto    0.377 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.409 (umbral 0.60)
+    paso 5 del candidato contra paso 7 de decir_no_trabajo_excede_capacidad
+
+  vecino buscar_regularidad_bloques_iguales_trabajo_mando  [Buscar la regularidad en el trabajo de mando alisando la carga, abriendo ventanas en la caja negra, y usando los mismos bloques de tiempo para las actividades iguales]
+    levantada por: similitud_texto
+    similitud_texto    0.375 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.404 (umbral 0.60)
+    paso 5 del candidato contra paso 4 de buscar_regularidad_bloques_iguales_trabajo_mando
+
+  vecino identificar_paso_limitante_jornada_desfases  [Identificar el paso limitante de tu jornada y crear desfases alrededor: determinar lo inamovible y mover lo flexible a su alrededor]
+    levantada por: similitud_texto
+    similitud_texto    0.394 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.392 (umbral 0.60)
+    paso 2 del candidato contra paso 3 de identificar_paso_limitante_jornada_desfases
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 388
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 6
+
+======================================================================
+fin 2026-09-24 16:21:51 | codigo de salida 0 | 1465.9 s

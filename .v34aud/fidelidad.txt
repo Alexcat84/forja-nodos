@@ -1,0 +1,22 @@
+| # | nodo | lineas del libro | pasos | **TRANSCRIPCION (yo)** | **PUENTE (yo)** | paso |
+|---:|---|---|---:|---:|---:|---|
+| 1 | `abrazar_incomodidad_arrancar_critica_equipo` | L17 a L53 | 20 | 20 | **0** | . |
+| 2 | `organizar_sistema_recoger_quejas_equipo` | L55 a L63 | 9 | 9 | **0** | . |
+| 3 | `correr_semana_arreglo_averias_gestion` | L65 a L71 | 8 | 8 | **0** | . |
+| 4 | `dar_guia_humilde_tres_tecnicas` | L77 a L95 | 15 | 15 | **0** | . |
+| 5 | `dar_guia_util_cuatro_recordatorios` | L97 a L113 | 10 | 10 | **0** | . |
+| 6 | `dar_guia_acto_seis_consejos` | L115 a L135 | 14 | 14 | **0** | . |
+| 7 | `elegir_medio_dar_guia_jerarquia_modos` | L137 a L153 | 13 | 13 | **0** | . |
+| 8 | `elogiar_publico_criticar_privado_sus_tres_matices` | L155 a L163 | 9 | 9 | **0** | . |
+| 9 | `evitar_personalizar_guia_aceptar_personal` | L165 a L177 | 12 | 12 | **0** | . |
+| 10 | `medir_guia_propia_pegatinas_marco` | L179 a L203 | 13 | 13 | **0** | . |
+| 11 | `practicar_franqueza_radical_jefe_propio` | L205 a L221 | 17 | 16 | **1** | P13 |
+| 12 | `comprobar_criticas_hombre_mujeres_equipo` | L291 a L293 | 6 | 6 | **0** | . |
+| 13 | `exigir_critica_jefe_reticente` | L295 a L299 | 9 | 9 | **0** | . |
+| 14 | `revisar_critica_mujer_agresiva_cuatro_tacticas` | L301 a L313 | 12 | 12 | **0** | . |
+| 15 | `responder_critica_abrasiva_cuatro_reglas` | L315 a L329 | 14 | 14 | **0** | . |
+| | **cap_09, total** | **L17 a L329** | **181** | **180** | **1** | |
+
+PASOS INVENTADOS POR CAPITULO (AUDITOR_FORJA.md 8), leido por mi:
+  cap_09 : 1 de 181 = 0.55 por ciento
+  tope de la regla 8.1: 10 por ciento

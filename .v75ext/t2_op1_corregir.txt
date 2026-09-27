@@ -1,0 +1,24 @@
+$ python forja.py corregir --nodo dar_elogio_disciplina_igual_critica --anade "$(cat .v75ext/t2_anade.txt)" --razon "$(cat .v75ext/t2_razon_corregir.txt)"
+CORRECCION DECLARADA SOBRE UN NODO YA INSERTADO
+  nodo : dar_elogio_disciplina_igual_critica
+  campo: resumen_teorico
+  el texto viejo SIGUE ENTERO: 5382 caracteres, ninguno borrado
+  se aniaden 2337 caracteres al final
+  huella antes  : e61505b50710934d
+  huella despues: 6bdd3603854e9f2b
+
+GATE VERDE sobre la simulacion. CORRECCION ESCRITA EN: dar_elogio_disciplina_igual_critica
+  razon en bitacora/VEREDICTOS.jsonl
+rc=0
+$ python forja.py gate
+GATE VERDE.
+  nodos verificados: 430
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+rc=0
+$ bash .v75ext/censo.sh
+nodos en dataset/nodos.jsonl        : 430
+veredictos en bitacora              : 1082
+pares mutuos                        : 1
+bandeja cuarentena/grove_high_output: 7
+insertados de grove_high_output     : 85
+cerrojos en procesos/               : 

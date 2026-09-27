@@ -1,0 +1,14 @@
+lineas de maquinaria  v55: 82    v56: 85
+lineas QUITADAS respecto de la v55 : 4
+   -print("NODOS QUE MI FRONTERA DA EN LAS DOS UNIDADES NUEVAS DE HOY: %d" % total_nodos)
+   -print("MAS LOS QUE LE FALTABAN A cap_07 POR SU FRONTERA DE LA VUELTA 53: 8")
+   -print("CANDIDATOS QUE ESTA VUELTA SE PROPONE ESCRIBIR                 : %d" % (total_nodos + 8))
+   -      % ("SI" if total_nodos + 8 <= TOPE else "NO"))
+lineas PUESTAS de nuevo en la v56  : 7
+   +nodos_por_unidad = {}
+   +    nodos_por_unidad[unidad] = nodos
+   +print("NODOS QUE MI FRONTERA DA EN LAS TRES UNIDADES DE HOY (cap_08+cap_09+cap_10): %d" % total_nodos)
+   +print("  cap_08: %d   cap_09: %d   cap_10: %d"
+   +      % (nodos_por_unidad["cap_08"], nodos_por_unidad["cap_09"], nodos_por_unidad["cap_10"]))
+   +print("MAS LOS QUE YA ESPERAN EN CUARENTENA DE cap_10 (P17, insertado en la vuelta 55)   : 1")
+   +      % ("SI" if total_nodos <= TOPE else "NO"))

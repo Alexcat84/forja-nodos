@@ -1,0 +1,38 @@
+{
+  "condiciones_activacion": "Durante el proceso de contratacion, mientras reunes datos sobre un candidato y antes de la decision final, cuando aparecen pistas de conducta que pueden indicar riesgo. Se usa junto a la calificacion de la tarjeta de puntuacion con el marco de habilidad y voluntad, no en su lugar.",
+  "denominaciones": {
+    "nombre_largo": "Las banderas rojas: cuando bucear bajo la superficie",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "RED FLAGS: WHEN TO DIVE BENEATH THE SURFACE"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "MARSHALL GOLDSMITH'S BEHAVIORAL WARNING SIGNS"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "contratacion",
+  "entregable_esperado": "La lista de banderas rojas observadas en el candidato y, cuando son demasiadas, el repaso duro de los datos que las sostienen o las desmiente antes de decidir.",
+  "escala_minima": "El repaso se hace con las mismas notas de las entrevistas que ya tienes y no pide ninguna prueba adicional.",
+  "fuentes": [
+    {
+      "clave": "smart_who",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "id": "revisar_banderas_rojas_candidato",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Trata estas pistas como banderas, no como motivos de descarte. Las banderas en si no matan el trato: lo que indican es que probablemente hay algo bajo la superficie que merece explorarse.",
+    "Repasa las diez banderas mayores del proceso de contratacion: que el candidato no mencione fracasos pasados; que exagere sus respuestas; que se apunte el trabajo de otros; que hable mal de sus jefes anteriores; que no sepa explicar sus cambios de puesto; que las personas mas importantes para el no apoyen el cambio; que, tratandose de un puesto de direccion, nunca haya tenido que contratar ni despedir a nadie; que parezca mas interesado en la retribucion y los beneficios que en el trabajo en si; que se esfuerce demasiado en parecer un experto; y que este ensimismado.",
+    "Repasa tambien los ocho descarriladores de conducta que Marshall Goldsmith señala como los que hay que vigilar durante el proceso de contratacion: ganar demasiado, es decir presumir de batallas ganadas que no importaban tanto; añadir demasiado valor, o sea meter tantas ideas propias a la que tu acabas de lanzar que da a entender que la tuya no valia sola; empezar frases con no, pero o sin embargo durante la entrevista; contar al mundo lo listos que somos, con el despliegue insano de atribuirse credito en exceso; hacer comentarios destructivos sobre colegas anteriores, porque quien los hace de ellos los hara de ti; pasar la pelota, porque los ganadores no culpan; poner excusas, que se detecta preguntando cuales fueron sus retos y oyendo si la culpa fue siempre de otros; y la necesidad excesiva de ser yo, que suena a eso soy yo, no soy organizado, y avisa de que la persona no esta abierta a adaptar su estilo a tu cultura.",
+    "Cuando veas demasiadas banderas, mira los datos con dureza antes de decidir. Ninguna bandera basta por si sola para un pulgar abajo, pero correlacionan mucho con gente que parece jugador A y se hunde al nivel B o C una vez contratada, y no interesa llegar hasta aqui para equivocarse al final."
+  ],
+  "resumen_teorico": "Las banderas rojas son pistas de conducta que emergen durante el proceso de contratacion y que pueden indicar riesgos, y el libro las define por lo que no son antes que por lo que son: no son motivos de descarte, son avisos de que hay algo bajo la superficie que conviene explorar. Esa distincion es lo que las hace utilizables, porque una lista de diez defectos leida como lista de descartes dejaria fuera a cualquier persona real, y el libro lo dice: nadie es perfecto. Lo que sostiene el procedimiento es una correlacion, no una regla: estas conductas se dan mucho en personas que parecen jugadores A durante el proceso y bajan al nivel B o C una vez contratadas, y por eso la respuesta correcta ante la acumulacion es volver a mirar los datos con dureza y no descartar ni tragar. La segunda lista es de Marshall Goldsmith, a quien BusinessWeek nombro uno de los profesionales mas influyentes de la historia del desarrollo de liderazgo, y viene de los veinte descarriladores de conducta que identifica en su libro What Got You Here Won't Get You There; los ocho que aparecen aqui son los que Goldsmith señalo a los autores cuando le preguntaron cuales considerar durante el proceso de contratacion. Entra como paso, y no solo como cita, porque el libro no lo trae como caso de alguien sino como inventario nombrado bajo el mandato de considerarlo durante el proceso, y porque el paso lo atribuye a su autor en su propio texto.",
+  "titulo": "Revisar las banderas rojas de conducta de un candidato"
+}

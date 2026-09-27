@@ -1,0 +1,11 @@
+LINEA 'serial', LIBRO 'grove_high_output': SI
+  'grove_high_output' esta COSECHADO y sin dueño: su trabajo ya llego a esta rama, asi que se continua desde el capitulo siguiente al ultimo minado (cap_04), citando su frontera. D.50.
+=== credito --anotar ayuda ===
+CREDITO MAL ESCRITO: un suceso tanda sin especie
+=== ultimas lineas del registro de credito ===
+{"cae": true, "cita": "ACTA 45 45.9.a", "especie": "AUDITOR", "linea": "serial", "racha": "2 de 3", "tanda": "ACTA 45", "tipo": "tanda", "vuelta": 46}
+{"cae": false, "cita": "ACTA 46 46.11", "especie": "CLASE", "linea": "serial", "racha": "0 de 2", "tanda": "ACTA 46", "tipo": "tanda", "vuelta": 47}
+{"cae": false, "cita": "ACTA 46 46.11", "especie": "CIFRA PUBLICADA", "linea": "serial", "racha": "0 de 2", "tanda": "ACTA 46", "tipo": "tanda", "vuelta": 47}
+{"cae": false, "cita": "ACTA 46 46.11", "especie": "DATO MOVIDO", "linea": "serial", "racha": "0 de 2", "tanda": "ACTA 46", "tipo": "tanda", "vuelta": 47}
+{"cae": false, "cita": "ACTA 46 46.10, tanda limpia de 5.4 tras 2 de 3", "especie": "AUDITOR", "linea": "serial", "racha": "0 de 3", "tanda": "ACTA 46", "tipo": "tanda", "vuelta": 47}
+{"cae": false, "cita": "ACTA 46, seccion 46.6", "especie": "REPORTE", "linea": "serial", "racha": "0 de 3", "tanda": "ACTA 46", "tipo": "tanda", "vuelta": 47}

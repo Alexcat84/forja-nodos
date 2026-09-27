@@ -1,0 +1,11 @@
+registros de la vuelta en la bitacora: 54
+EN GRAFO   veredicto CONTINUA  definir_entorno_grupo_clientes_proveedores_competidores > examinar_entorno_expectativas_tecnologia_proveedores_grupos
+EN GRAFO   veredicto CONTINUA  definir_entorno_grupo_clientes_proveedores_competidores > examinar_demanda_entorno_dos_marcos_temporales
+EN GRAFO   veredicto CONTINUA  definir_entorno_grupo_clientes_proveedores_competidores > examinar_entorno_expectativas_tecnologia_proveedores_grupos
+EN GRAFO   veredicto CONTINUA  definir_entorno_grupo_clientes_proveedores_competidores > examinar_demanda_entorno_dos_marcos_temporales
+EN GRAFO   lectura declarada   planificar_tres_pasos_demanda_estado_brecha > examinar_demanda_entorno_dos_marcos_temporales
+EN GRAFO   lectura declarada   planificar_tres_pasos_demanda_estado_brecha > determinar_estado_presente_capacidades_proyectos_merma
+EN GRAFO   lectura declarada   planificar_tres_pasos_demanda_estado_brecha > cerrar_brecha_dos_preguntas_estrategia
+EN GRAFO   lectura declarada   elegir_modo_control_motivacion_factor_cua > escalonar_complejidad_puesto_empleado_nuevo
+registros con arista: 8 | aristas DISTINTAS: 6 | en el grafo: 6 | en cola: 0 (un par CONTINUA leido desde sus dos lados deja dos registros y una sola arista)
+esperadas: 6 | esperadas que viven en el grafo: 6 | esperadas sin registro: 0 | registradas no esperadas: 0

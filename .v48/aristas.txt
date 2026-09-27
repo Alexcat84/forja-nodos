@@ -1,0 +1,31 @@
+$ python .v48/aristas.py
+| # | ficha de hoy | clase | a quien apunta |
+|---:|---|---|---|
+| 1 | `usar_calendario_herramienta_planificacion_produccion` (`P34a`) | `D.37 CABEZA` | `subir_productividad_gerencial_tres_vias` |
+| 2 | `usar_calendario_herramienta_planificacion_produccion` (`P34a`) | `D.29 MADRE` | `identificar_paso_limitante_jornada_desfases` |
+| 3 | `usar_calendario_herramienta_planificacion_produccion` (`P34a`) | `D.29 HERMANO` | `decir_no_trabajo_excede_capacidad` |
+| 4 | `decir_no_trabajo_excede_capacidad` (`P34b`) | `D.37 CABEZA` | `subir_productividad_gerencial_tres_vias` |
+| 5 | `decir_no_trabajo_excede_capacidad` (`P34b`) | `D.29 HERMANO` | `usar_calendario_herramienta_planificacion_produccion` |
+| 6 | `decir_no_trabajo_excede_capacidad` (`P34b`) | `D.29 PARIENTE` | `equilibrar_capacidad_personal_inventario_plazo` |
+| 7 | `llevar_inventario_proyectos_discrecionales` (`P36`) | `D.37 CABEZA` | `subir_productividad_gerencial_tres_vias` |
+| 8 | `llevar_inventario_proyectos_discrecionales` (`P36`) | `D.29 HERMANO` | `usar_calendario_herramienta_planificacion_produccion` |
+| 9 | `llevar_inventario_proyectos_discrecionales` (`P36`) | `D.29 PARIENTE POR CONTRASTE` | `detectar_palanca_negativa_actividad_mando` |
+| 10 | `llevar_inventario_proyectos_discrecionales` (`P36`) | `D.29 PARIENTE` | `dimensionar_inventario_materia_prima_reposicion` |
+| 11 | `dimensionar_numero_subordinados_medio_dia_semanal` (`P38`) | `D.37 CABEZA` | `subir_productividad_gerencial_tres_vias` |
+| 12 | `dimensionar_numero_subordinados_medio_dia_semanal` (`P38`) | `D.29 PARIENTE POR CONTRASTE` | `detectar_palanca_negativa_actividad_mando` |
+| 13 | `dimensionar_numero_subordinados_medio_dia_semanal` (`P38`) | `D.29 PARIENTE` | `llevar_inventario_proyectos_discrecionales` |
+| 14 | `dimensionar_numero_subordinados_medio_dia_semanal` (`P38`) | `D.29 PARIENTE` | `dimensionar_plantilla_administrativa_pronostico` |
+| 15 | `buscar_regularidad_bloques_iguales_trabajo_mando` (`P39`) | `D.37 CABEZA` | `subir_productividad_gerencial_tres_vias` |
+| 16 | `buscar_regularidad_bloques_iguales_trabajo_mando` (`P39`) | `D.29 HERMANO` | `agrupar_tareas_semejantes_aprovechar_preparacion` |
+| 17 | `buscar_regularidad_bloques_iguales_trabajo_mando` (`P39`) | `D.29 HERMANO` | `usar_calendario_herramienta_planificacion_produccion` |
+| 18 | `buscar_regularidad_bloques_iguales_trabajo_mando` (`P39`) | `D.29 PARIENTE` | `representar_actividad_caja_negra_ventanas` |
+| | | **18 aristas** | |
+
+   D.29 HERMANO                 5
+   D.29 MADRE                   1
+   D.29 PARIENTE                5
+   D.29 PARIENTE POR CONTRASTE  2
+   D.37 CABEZA                  5
+
+NINGUNA SE CABLEA HOY: forja.py arista escribe en el grafo y los cinco nodos
+siguen en cuarentena. Viven dentro de su ficha y se cablean el dia del lote.

@@ -1,0 +1,12 @@
+montar_reunion_gran_decision   (14 pasos)   poblacion 316 = 203 grafo + 113 bandejas
+  vecinos POR ENCIMA de umbral: 3
+    dirigir_reunion_decision                             sim=0.177 fam=0.400 paso=0.464  <- familia_id
+    montar_reunion_gran_debate                           sim=0.326 fam=0.600 paso=0.726  <- familia_id,paso_contra_nodo
+    nutrir_ideas_nuevas_reunion_solas                    sim=0.354 fam=0.125 paso=0.476  <- similitud_texto
+  los 5 mas altos por similitud_texto, esten o no por encima:
+    nutrir_ideas_nuevas_reunion_solas                    sim=0.354 fam=0.125 paso=0.476
+    debatir_decidir_asuntos_cultura_evitar_delegar       sim=0.343 fam=0.000 paso=0.466
+    montar_reunion_gran_debate                           sim=0.326 fam=0.600 paso=0.726
+    bajar_detalle_organizacion_fuente_hechos             sim=0.325 fam=0.000 paso=0.474
+    demostrar_apertura_visiones_distintas                sim=0.311 fam=0.000 paso=0.419
+  segundos: 132.3

@@ -1,0 +1,4 @@
+    $ python .v51/afirmacion_p34.py
+      decir_no_trabajo_excede_capacidad                        declara: Sale de la PIEZA P34 de 
+      dimensionar_numero_subordinados_medio_dia_semanal        declara: Sale de la PIEZA P38 de 
+      usar_calendario_herramienta_planificacion_produccion     declara: Sale de la PIEZA P34 de 

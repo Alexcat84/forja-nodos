@@ -1,0 +1,26 @@
+fila 03, construir_empresa_plantilla_vision_diaria, lineas --veredicto: 1
+  --veredicto recorrer_trece_elementos_proceso_evaluacion_formal|SANO|Ajenos: el vecino del grafo, de scott_radical_candor, recorre las trece decisiones de un proceso formal de evaluacion; este modela la empresa cada dia contra la plantilla de su vision (L39 a L51). La similitud es de la forma de enumeracion, sin paso comun.
+inicio 2026-09-26 09:55:46
+======================================================================
+ADUANA DE INSERCION, candidato 'construir_empresa_plantilla_vision_diaria'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (439 del grafo mas 40 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino recorrer_trece_elementos_proceso_evaluacion_formal  [Recorrer los trece elementos que el texto nombra para disenar un proceso formal de evaluacion de desempenio, sabiendo que no hay talla unica]
+    levantada por: similitud_texto
+    similitud_texto    0.353 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.397 (umbral 0.60)
+    paso 5 del candidato contra paso 7 de recorrer_trece_elementos_proceso_evaluacion_formal
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 440
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 1
+
+======================================================================
+fin 2026-09-26 10:02:29 | codigo de salida 0 | 403.2 s

@@ -1,0 +1,28 @@
+infundir_regularidad_reunion_proceso               lineas 5 | levantados hoy 5 | FALTAN 0 | SOBRAN 0
+usar_tres_clases_reunion_proceso                   lineas 5 | levantados hoy 5 | FALTAN 0 | SOBRAN 0
+fijar_frecuencia_reunion_individual_madurez_tarea  lineas 6 | levantados hoy 6 | FALTAN 0 | SOBRAN 0
+fijar_duracion_lugar_reunion_individual            lineas 7 | levantados hoy 7 | FALTAN 0 | SOBRAN 0
+preparar_guion_reunion_individual_subordinado      lineas 9 | levantados hoy 9 | FALTAN 0 | SOBRAN 0
+cubrir_indicadores_problemas_reunion_individual    lineas 6 | levantados hoy 6 | FALTAN 0 | SOBRAN 0
+facilitar_expresion_subordinado_pregunta_mas       lineas 8 | levantados hoy 8 | FALTAN 0 | SOBRAN 0
+tomar_notas_copia_guion_reunion_individual         lineas 7 | levantados hoy 7 | FALTAN 0 | SOBRAN 0
+acumular_asuntos_importantes_fichero_espera        lineas 6 | levantados hoy 6 | FALTAN 0 | SOBRAN 0
+alentar_asuntos_corazon_vigilar_final_reunion      lineas 7 | levantados hoy 7 | FALTAN 0 | SOBRAN 0
+conducir_reunion_individual_telefono_distancia     lineas 6 | levantados hoy 6 | FALTAN 0 | SOBRAN 0
+programar_reunion_individual_cadena                lineas 7 | levantados hoy 7 | FALTAN 0 | SOBRAN 0
+conducir_etapas_modelo_ideal_decision              lineas 0 | levantados hoy 0 | FALTAN 0 | SOBRAN 0
+decidir_nivel_competente_inferior                  lineas 3 | levantados hoy 3 | FALTAN 0 | SOBRAN 0
+vencer_sindrome_grupo_pares_autoconfianza          lineas 13 | levantados hoy 13 | FALTAN 0 | SOBRAN 0
+tomar_mando_reunion_pares_presidente_ausente       lineas 4 | levantados hoy 4 | FALTAN 0 | SOBRAN 0
+ejercer_poder_posicion_etapa_decision_clara        lineas 2 | levantados hoy 2 | FALTAN 0 | SOBRAN 0
+cortar_discusion_libre_momento_justo               lineas 6 | levantados hoy 6 | FALTAN 0 | SOBRAN 0
+zanjar_seis_preguntas_decision_adelantado          lineas 2 | levantados hoy 2 | FALTAN 0 | SOBRAN 0
+anunciar_decision_inesperada_reconvocar_reunion    lineas 9 | levantados hoy 9 | FALTAN 0 | SOBRAN 0
+secciones 20 de 20, lineas 118, ilegibles 0, vecinos sin linea 0, lineas sin vecino 0
+
+ARISTAS POR LECTURA (SOSTENGO) contra el barrido de hoy
+  agrupar_tareas_semejantes_aprovechar_preparacion   > infundir_regularidad_reunion_proceso                 levantada hoy: NO
+  buscar_regularidad_bloques_iguales_trabajo_mando   > infundir_regularidad_reunion_proceso                 levantada hoy: NO
+  agrupar_interrupciones_subordinados_reuniones_regulares > acumular_asuntos_importantes_fichero_espera          levantada hoy: NO
+  conducir_etapas_modelo_ideal_decision              > cortar_discusion_libre_momento_justo                 levantada hoy: NO
+  conducir_etapas_modelo_ideal_decision              > ejercer_poder_posicion_etapa_decision_clara          levantada hoy: NO

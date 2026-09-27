@@ -1,0 +1,44 @@
+{
+  "id": "establecer_credibilidad_pericia_humildad",
+  "titulo": "Establecer tu credibilidad demostrando pericia y humildad, y ayudar a que la establezcan los que deciden en tu equipo",
+  "denominaciones": {
+    "nombre_largo": "Demostrar pericia y humildad: la segunda pieza de la persuasion, con la salida para quien no tiene todavia historial",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "demonstrate expertise and humility"
+      },
+      {
+        "idioma": "griego",
+        "termino": "ethos"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando hay que persuadir a gente de que ejecute una decision y no esta claro que quien la tomo tenga credibilidad a sus ojos, seas tu o sea otro de tu equipo.",
+  "entregable_esperado": "La credibilidad de quien decide establecida delante de quienes tienen que ejecutar, apoyada en pericia y en un historial, y con la humildad puesta en las palabras.",
+  "pasos_accionables": [
+    "Establece que quien decide, seas tu o sea otro de tu equipo, tiene credibilidad, porque sin eso no puedes esperar que nadie ejecute la decision.",
+    "Conoce tu materia y demuestra un historial de decisiones solidas, que son las dos primeras partes de la credibilidad segun el texto.",
+    "Aniade la tercera, que el texto dice que a veces escasea: la humildad.",
+    "Si no tienes un historial, o eres tan nuevo que apenas lo tienes, centrate en tu pericia y en lo que ya has conseguido.",
+    "Se humilde e invoca un nosotros en vez de un yo siempre que puedas, que es lo que el texto subraya de la frase de Steve Jobs me gusta olvidarlo, porque no es asi como pensamos en Apple.",
+    "No presumas, porque el texto dice que no funciona.",
+    "Y no finjas humildad, porque el texto dice que tampoco funciona.",
+    "Da contexto que permita señalar lo que sabes hacer sin perder a tu publico, como hizo Jobs recordando los origenes humildes de Apple justo antes de decir que tenia la pericia y los recursos para crear una categoria entera de ordenador.",
+    "No te olvides de ayudar a los que deciden en tu equipo a establecer la suya cuando les toque persuadir a otros de que ejecuten una decision."
+  ],
+  "resumen_teorico": "Sale de fuentes/scott_radical_candor/cap_07.md, lineas 349 a 357 mas la linea 313, bajo los rotulos Credibility y Demonstrate expertise and humility, dentro del paso PERSUADE de la rueda de hacer cosas. CABECERA CORREGIDA EN LA VUELTA 18 (ACTA 17 seccion 4.5): declaraba 349 a 357 y su P1 cita la linea 313, que es la linea de cuerpo del rotulo PERSUADE de la que sale la obligacion de persuadir antes de ejecutar. El tramo no es continuo y por eso se escribe como 349 a 357 mas 313; ningun paso cambia y ninguna linea citada cambia. Es la segunda de las tres piezas de la retorica tal como el libro las reparte. Lo que la sostiene como procedimiento y no como definicion es la linea 357, que es literalmente una lista de actos para el caso dificil: que hago si no tengo historial. El caso de la presentacion del iPad de 2010 va NOMBRADO DENTRO de los pasos que lo usan, y de el se transcribe lo que el propio libro subraya, que es el uso del nosotros. LA CIFRA DE 15.600 MILLONES DE DOLARES QUE APARECE EN ESE CASO NO SE RECOGE COMO ATRIBUCION y digo por que: no es una cifra que el libro afirme, es parte de una cita textual de Jobs que el libro usa para analizar su eleccion de palabras, y el principio 8 pide que toda atribucion sea una afirmacion que se verifique. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 9 pasos, 9 TRANSCRIPCION, 0 PUENTE. P1 de la linea 313; P2 y P3 de la 353; P4, P6, P7 y P9 de la 357; P5 y P8 de la 355. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: como se ayuda a otro a establecer su credibilidad, y que se hace cuando el que decide no tiene ni pericia ni historial.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-12"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "atribuciones": []
+}

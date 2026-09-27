@@ -1,0 +1,8 @@
+rutas distintas publicadas en el tramo de la vuelta 25 : 59
+  existen y NO estan en cero bytes                     : 55
+  INEXISTENTES                                         : 3
+      docs/loop/INFORME_DE_LOTE.txt
+      docs/loop/PARA_ALEXIS.md
+      docs/loop/SELLOS_INFORME.jsonl
+  DE CERO BYTES                                        : 1
+      .v25/cola_lectura.txt   (0 bytes)

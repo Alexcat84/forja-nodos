@@ -1,0 +1,6 @@
+nodos en dataset/nodos.jsonl        : 459
+veredictos en bitacora              : 1172
+pares mutuos                        : 1
+bandeja cuarentena/marquet_turn_the_ship : 20
+insertados de marquet_turn_the_ship : 0
+cerrojos en procesos/               : 

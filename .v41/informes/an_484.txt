@@ -1,0 +1,12 @@
+$ python forja.py anotar --linea 484 --anade "VIGENCIA DECLARADA ..." --razon ...
+ANOTACION DECLARADA SOBRE UNA LINEA YA ESCRITA DE LA BITACORA
+  sede : bitacora/VEREDICTOS.jsonl
+  linea: 484
+  veredicto: SANO (NO se toca)
+  par      : practicar_triangulo_critica_tres_papeles contra abrazar_incomodidad_silencio_contar_seis
+  la razon vieja SIGUE ENTERA: 679 caracteres, ninguno borrado
+  se aniaden 1089 caracteres al final de la razon
+  lineas de la bitacora tocadas: 1 (la 484). Las otras 513, intactas.
+
+ANOTACION ESCRITA en bitacora/VEREDICTOS.jsonl, linea 484.
+CODIGO DE SALIDA: 0

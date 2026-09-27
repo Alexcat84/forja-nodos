@@ -36,14 +36,14 @@ una prueba de idioma automatica.** Se le da criterio, y son dos listas.
 
 | lista | que es | donde vive |
 |---|---|---|
-| **NEGRA** | palabra inglesa **que tiene equivalente corriente en castellano**. Si la palabra existe en castellano y se usa, el id la usa | `INGLES_CON_EQUIVALENTE`, 366 piezas |
-| **BLANCA** | **prestamo asentado** en el castellano de negocios, donde traducir fabricaria un termino que nadie dice | `PRESTAMOS_ASENTADOS`, 33 piezas |
+| **NEGRA** | palabra inglesa **que tiene equivalente corriente en castellano**. Si la palabra existe en castellano y se usa, el id la usa | `INGLES_CON_EQUIVALENTE`, 367 piezas |
+| **BLANCA** | **prestamo asentado** en el castellano de negocios, donde traducir fabricaria un termino que nadie dice | `PRESTAMOS_ASENTADOS`, 32 piezas |
 | ni una ni otra | **nombre propio y sigla**: un apellido no tiene equivalente, y una sigla no es una palabra | `NOMBRES_Y_SIGLAS`, 27 piezas |
 
 - **negra:** `customer`, `management`, `quality`, `supply`, `framework`,
   `variance`, `breakdown`, `procurement`, `stakeholders`.
 - **blanca:** `marketing`, `benchmarking`, `startup`, `lean`, `coaching`,
-  `scrum`, `feedback`, `stock`, `software`, `web`, `ranking`, `escrow`.
+  `scrum`, `engagement`, `stock`, `software`, `web`, `ranking`, `escrow`.
 - **nombres y siglas:** `deming`, `shewhart`, `juran`, `osha`, `swot`, `leed`.
 
 **LAS DOS LISTAS NO PUEDEN SOLAPARSE**, y el modulo lo comprueba al importarse:
@@ -61,6 +61,24 @@ lista que llego despues.
 
 Ampliar cualquiera de las dos listas es **correccion declarada con fecha**, no
 una edicion silenciosa.
+
+> ### CORRECCION DECLARADA, 10 sep 2026: la blanca pierde dos y gana una
+>
+> El fundador adjudico las tres piezas que el estreno dejo señaladas como
+> discutibles. **El texto anterior no se borra: se lee con esto al lado.**
+>
+> | pieza | va a | razon |
+> |---|---|---|
+> | `equity` | **NEGRA** | *capital* o *participacion* son equivalentes corrientes |
+> | `feedback` | **NEGRA** | *retroalimentacion* es equivalente corriente |
+> | `engagement` | **BLANCA** | *compromiso* e *interaccion* no capturan el sentido de marketing |
+>
+> Efecto medido sobre el lote de 163: **tres candidatos cambian de dictamen y
+> ninguno mas**. `criterios_equity_split` y `equity_crowdfunding` pasan a caer;
+> `definicion_metas_engagement` pasa a entrar. `feedback` no aparecia en el lote.
+>
+> Detalle entero y la declaracion del error que hubo debajo, en **D.26.2** del
+> banco.
 
 ## Regla 2. Sin sufijos numericos DE VERSION
 Nunca `_2`, `_3`, `_bis`, `_nuevo`, `_final`. Un sufijo numerico de version es

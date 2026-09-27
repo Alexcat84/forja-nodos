@@ -1,0 +1,24 @@
+L160  SANO     ajustar_franqueza_oido_oyente || equilibrar_elogio_critica_equipo
+    el vecino reparte elogio y critica sin ratio fijo y manda invertir la energia, menos nervios al criticar y mas cuidado al elogiar; el candidato ajusta las dos dimensiones del marco a la cultura del que escucha. No comparten ni un paso: el ratio, el sandwich de opinion, el elogio paternalista y las dos preguntas de Karen Sipprell no estan en el candidato, y la forma local de Tokio, el orden de meno
+
+L183  SANO     cuidar_persona_completa_equipo || ajustar_franqueza_oido_oyente
+    este par NO existia al abrir la vuelta: el vecino entro al grafo hace unos minutos, en esta misma tanda, y por eso la cola crece mientras se paga. Lei los dos enteros otra vez con el vecino ya dentro. Se tocan en la dimension cuidar personalmente: el paso 6 del vecino busca la FORMA LOCAL de esa dimension y pone el caso de Tokio, donde la forma preferida de mostrar que les importaba era ser educad
+
+L182  SANO     cuidar_persona_completa_equipo || gestionar_personas_equipo
+    el paso 6 de este candidato reserva tiempo real de conversacion y el paso 5 del vecino dice entrena a cada persona para que de lo mejor de si. El vecino es la cabeza de otro libro sobre gestionar el cubo de personas, y este candidato es un procedimiento de relacion personal: ni uno despliega al otro ni el vecino lo nombra en ningun paso
+
+L185  SANO     cuidar_persona_completa_equipo || imaginar_caso_simple_bragueta_abierta
+    el vecino es un experimento mental entero con su propio inventario: el caso simple de la bragueta abierta, las cuatro respuestas repartidas una por cuadrante, el aviso de no reservarlo para quien ya conoces y el control en caliente de mirar donde te pone tu silencio. El candidato no tiene ninguna de esas piezas: tiene los cuatro medios de cuidar a la persona completa y el precio de hacerlo. Se toc
+
+L180  SANO     cuidar_persona_completa_equipo || usar_lenguaje_no_discriminatorio_entrevista
+    el paso 4 de este candidato cuida a la persona completa y el paso 1 del vecino usa lenguaje no discriminatorio en una entrevista de seleccion. Son dos libros distintos y dos momentos distintos: uno es la relacion con quien ya esta en tu equipo, el otro el formulario de un proceso de contratacion. La senial los junta por el vocabulario de respeto y de persona
+
+L163  SANO     elogiar_trabajo_especifico_contexto || criticar_trabajo_evitar_desanimo
+    es el par que mas me hizo dudar y digo por que: los dos salen de la misma unidad y los dos procedimentan la guia. Pero uno es el elogio y el otro la critica, y sus inventarios no se solapan en ningun punto. El candidato tiene el caso de Russ y el elogio vago, el caso de Anatoly y averiguar quien hizo que, y el correo de los bonos con el sueldo publicado. El vecino tiene la entrevista de Jobs, el e
+
+L172  SANO     empezar_cultura_franqueza_radical || ajustar_franqueza_oido_oyente
+    par nacido dentro de esta misma tanda: el vecino entro hace minutos. El candidato pone el ORDEN de arrancar una cultura, explicar la idea, pedir critica, empezar por el elogio, y entender la frontera peligrosa antes de criticar. El vecino pone donde se MIDEN las dos dimensiones cuando la franqueza radical cruza a otra cultura, con el caso de Tokio y el cambio de nombre a educadamente persistentes.
+
+L170  SANO     empezar_cultura_franqueza_radical || desplegar_marco_franqueza_radical
+    el paso 4 de este candidato dice empieza recibiendo guia y no repartiendola, que es el ORDEN del arranque, y el paso 1 del vecino dice usa la version nueva del marco, que es el CARTEL. Los dos son piezas del mismo capitulo de arranque de cultura y por eso la senial los junta, pero uno ordena las etapas y el otro reparte el recordatorio. Si alguna arista hay entre ellos, su madre seria desplegar_pl
+

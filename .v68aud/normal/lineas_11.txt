@@ -1,0 +1,8 @@
+lineas en la bitacora: 904 | nuevas desde la 894: 11
+.v66ext/veredictos_listos.txt igual que en 587f1d8: True
+lineas de veredicto: 9 | iguales letra a letra a su linea preparada: 9 | distintas: 0 | clases: {'SANO': 9}
+pares de veredicto fuera de mi barrido de la 66: 0 []
+su clase igual a la mia sellada en .v66aud/mis_clases.tsv: 9 | distinta o sin fila: 0 []
+lineas de arista: 2
+  linea 902 | agrupar_tareas_semejantes_aprovechar_preparacion > agrupar_interrupciones_subordinados_reuniones_regulares | veredicto CONTINUA | SOSTENGO en .v66ext: True | SOSTENGO en mi .v66aud: True
+  linea 904 | buscar_regularidad_bloques_iguales_trabajo_mando > canalizar_interrupciones_cartel_hora_oficina | veredicto CONTINUA | SOSTENGO en .v66ext: True | SOSTENGO en mi .v66aud: True

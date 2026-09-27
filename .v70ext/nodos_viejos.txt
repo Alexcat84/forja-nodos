@@ -1,0 +1,4 @@
+SOLO MADRE agrupar_interrupciones_subordinados_reuniones_regulares  campos ['nodos_siguientes'] | gana ['acumular_asuntos_importantes_fichero_espera'] | pierde []
+SOLO MADRE agrupar_tareas_semejantes_aprovechar_preparacion         campos ['nodos_siguientes'] | gana ['infundir_regularidad_reunion_proceso'] | pierde []
+SOLO MADRE buscar_regularidad_bloques_iguales_trabajo_mando         campos ['nodos_siguientes'] | gana ['infundir_regularidad_reunion_proceso'] | pierde []
+nodos al abrir: 390 | hoy: 410 | nuevos: 20 | nuevos que son de las 20 filas: 20 | viejos que cambian: 3 | cambios fuera de nodos_siguientes de una madre: 0

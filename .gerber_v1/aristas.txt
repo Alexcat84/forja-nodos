@@ -1,0 +1,21 @@
+AVISO: cero celdas tecleadas. El paso de la madre lo lee la maquina del propio
+candidato en cuarentena, que es lo que --paso <n> senala y lo que el auditor abre.
+NADA SE CABLEA AQUI: este frente no inserta. Son las cuatro ordenes tal como se
+correran el dia de la insercion.
+
+--madre fingir_prototipo_cinco_mil_replicas --hijo dar_valor_constante_cuatro_publicos --paso 5
+   paso 5 de la madre: Regla 1: el modelo dara valor constante a tus clientes, empleados, proveedores y prestamistas, por encima de lo que esperan.
+   pasos del hijo     : 8
+
+--madre fingir_prototipo_cinco_mil_replicas --hijo operar_modelo_gente_destreza_minima --paso 6
+   paso 6 de la madre: Regla 2: el modelo lo operara gente con el nivel de destreza mas bajo posible.
+   pasos del hijo     : 10
+
+--madre fingir_prototipo_cinco_mil_replicas --hijo documentar_trabajo_manual_operaciones --paso 8
+   paso 8 de la madre: Regla 4: todo el trabajo del modelo estara documentado en Manuales de Operaciones.
+   pasos del hijo     : 10
+
+--madre fingir_prototipo_cinco_mil_replicas --hijo unificar_color_forma_vestuario_modelo --paso 10
+   paso 10 de la madre: Regla 6: el modelo usara un codigo uniforme de color, vestuario e instalaciones.
+   pasos del hijo     : 8
+

@@ -1,0 +1,8 @@
+| unidad | linea | pasos | TRANSCRIPCION | PUENTE | por ciento |
+|---|---:|---:|---:|---:|---:|
+| `entregar_evaluacion_formal_desempenio_nueve_consejos` | L331 | 22 | 22 | **0** | 0,00 |
+| `impedir_punialadas_espalda_equipo` | L363 | 9 | 9 | **0** | 0,00 |
+| `fomentar_guia_reciproca_companieros` | L369 | 13 | 13 | **0** | 0,00 |
+| `conducir_reuniones_salto_nivel_diez_reglas` | L383 | 31 | 31 | **0** | 0,00 |
+| `resolver_dudas_frecuentes_reuniones_salto_nivel` | L415 | 16 | 16 | **0** | 0,00 |
+| **TOTAL del tramo** | | **91** | **91** | **0** | **0,00** |

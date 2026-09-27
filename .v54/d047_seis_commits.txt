@@ -1,0 +1,12 @@
+LOS SEIS COMMITS QUE LA PROPIA d047 NOMBRA, CORRIDOS HOY UNO A UNO:
+  git show 0ab7b6c:docs/loop/TABLA_DE_CIERRE.txt | git hash-object --stdin  ->  f33c8d9cb7f3b639a5aec81cc8ec2d26782d8631
+  git show e66b88b:docs/loop/TABLA_DE_CIERRE.txt | git hash-object --stdin  ->  f33c8d9cb7f3b639a5aec81cc8ec2d26782d8631
+  git show e740b2f:docs/loop/TABLA_DE_CIERRE.txt | git hash-object --stdin  ->  f33c8d9cb7f3b639a5aec81cc8ec2d26782d8631
+  git show f717235:docs/loop/TABLA_DE_CIERRE.txt | git hash-object --stdin  ->  f33c8d9cb7f3b639a5aec81cc8ec2d26782d8631
+  git show adb5c9d:docs/loop/TABLA_DE_CIERRE.txt | git hash-object --stdin  ->  f33c8d9cb7f3b639a5aec81cc8ec2d26782d8631
+  git show 55cd182:docs/loop/TABLA_DE_CIERRE.txt | git hash-object --stdin  ->  f33c8d9cb7f3b639a5aec81cc8ec2d26782d8631
+
+Y LA FORMA CON HEAD, TRES VALORES DISTINTOS EN TRES DIAS:
+  vuelta 50, cuando se escribio LL.5.c : f33c8d9c
+  vuelta 51, cuando d047 se anoto      : 3b39a3fd
+  vuelta 54, corrida por mi hoy        : 4e3e2fb3

@@ -1,0 +1,35 @@
+{
+  "condiciones_activacion": "Cuando preparas las entrevistas y los formularios escritos de un proceso de contratacion. Es la tercera de las cuatro areas de cautela legal, y se aplica a los dos sitios a la vez.",
+  "denominaciones": {
+    "nombre_largo": "Usar lenguaje no discriminatorio en las entrevistas y en los formularios escritos",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "Use nondiscriminatory language during interviews and in written forms"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "contratacion",
+  "entregable_esperado": "Las entrevistas y los formularios escritos del proceso revisados y limpios de lenguaje que presuponga el sexo de quien va a ocupar el puesto o que resulte despectivo hacia nadie.",
+  "escala_minima": "Un formulario y un guion de entrevista. Los dos sitios que el libro nombra son los dos que hay que repasar, y en una contratacion suelta son dos documentos.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "smart_who",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "id": "usar_lenguaje_no_discriminatorio_entrevista",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Usa lenguaje no discriminatorio durante las entrevistas, que es el primero de los dos sitios que el libro nombra.",
+    "Usalo tambien en los formularios escritos, que es el segundo sitio que el libro nombra.",
+    "Sustituye el supuesto de que un puesto lo tiene que desempenar un hombre o una mujer por la formula que el libro da: el o ella, o bien ellos.",
+    "No uses nunca lenguaje despectivo hacia nadie."
+  ],
+  "resumen_teorico": "Es la tercera de las cuatro areas de cautela legal que el libro pide respetar. Es corta y aun asi trae inventario propio, que es lo que la separa de una postura: el libro nombra los dos sitios donde hay que mirar, las entrevistas y los formularios escritos, y da la formula concreta con la que se sustituye el supuesto, el o ella, o bien ellos, en vez de dar por hecho que el puesto lo va a desempenar un hombre o una mujer. Un lector que solo tuviera el mandato de usar lenguaje apropiado tendria que inventarse los dos sitios y la formula; aqui los pone el texto. La ultima instruccion, no usar nunca lenguaje despectivo hacia nadie, la introduce el libro con un obviamente que se recoge como lo que es, una prohibicion sin excepciones y no un consejo de estilo.",
+  "titulo": "Usar lenguaje no discriminatorio en las entrevistas y en los formularios"
+}

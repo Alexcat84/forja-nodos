@@ -1,0 +1,19 @@
+
+### CC.6.d. **MIS DISCUTIBLES, MARCADOS ANTES DE INSERTAR NADA Y ANTES DE SABER SI ACIERTO** (`EXTRACTOR.md` 8)
+
+*Austero (`D.47`): por numero y por linea, sin reabrir el argumento.*
+
+| # | lo que decido | por donde puede caerse |
+|---:|---|---|
+| **1** | **mis secciones van con prefijo `CC` y la seccion que el encargo llama `BC.6` la escribo como `CC.6`** | el encargo escribe `BC.6` con todas sus letras. Si el auditor lee que la letra manda, **me aparte del encargo en la unica tarea que existe para arreglar mi propia racha**, que es el peor sitio donde apartarse |
+| **2** | la reparacion de la `TAREA 1.A` **comprueba la cuenta contra su sede y NO clava un minimo** | si la regla que esas dos pruebas guardan exige que la cola **no se vacie**, mi reparacion es corta: hoy la suite sigue verde si alguien borra preguntas de la sede y del volcado a la vez. **No escribi esa guarda porque `7.F` la veda y el encargo me la prohibe por su nombre**, pero la omision es mia |
+| **3** | **`0` `PUENTE` en los `56` pasos del tramo** | es una cifra que en dos vueltas seguidas salio distinta (`5` `PUENTE` entre `cap_12` y `cap_13`). **Si el auditor encuentra uno, cae dentro de este marcado**, y el candidato mas probable es el `2`, que es el que trae `9` pasos de cita literal |
+| **4** | el `P22` del candidato `2` escribe *hacer mejor esto* donde `L157` escribe *do X better* | la `X` es un hueco que el libro deja **literalmente sin rellenar**, y yo lo relleno con *esto*. Decido que **no es `PUENTE`** porque no aniade materia; si el auditor lee que rellenar un hueco del libro es exactamente lo que `D.30` prohibe, **la fila del tramo sube de `0` a `1`** |
+| **5** | el `P11` del candidato `3` escribe *empieza por donde el texto dice que empieces* y **`L183` no da ningun punto de partida**: contesta *That's normal!* | decido que **no es `PUENTE`** porque lo que el paso encarga despues si esta en `L183`. Si el auditor lee que la frase promete una respuesta que el libro no da, **sube a `2` de `56`** |
+| **6** | los pasos `5`, `6`, `9` y `12` del candidato `2` **numeran** los cuatro atributos (*el primer atributo*, *el segundo*...) y **`L129` escribe *some attributes*, sin numerarlos ni decir cuantos** | decido que **contar una enumeracion visible no es escribir un paso**, que es la misma vara con la que el candidato `1` dice *cinco pasos numerados*. Si el auditor la estrecha, caen cuatro pasos de golpe |
+| **7** | **no toco el titulo del candidato `2`**, que dice *los cuatro atributos que el texto da* | es **la tercera aparicion de la figura de la pregunta `3` de la cola de doctrina** (una cifra en el nombre que el libro no escribe). La cuenta es cierta al contar, y por eso la dejo. **Y no subo pregunta nueva**: la que hay ya cubre la figura, y duplicarla es lo que `D.47` llama repetir lo que el registro ya dice |
+| **8** | el `resumen_teorico` del candidato `1` entra con **DOS correcciones declaradas encadenadas** y `6.741` caracteres | la casa corrige por anexion y no borra, asi que esto es lo que la regla manda. **Pero el campo ya es largo y hoy lo alargo yo**, y si el auditor decide que un campo con dos correcciones encima deja de poder leerse, **la deuda la aumente yo y no el que la abrio** |
+| **9** | **sostengo el `SANO` de `integrar_peticion_critica_rutina_existente`** tras leer sus `13` pasos, y no lo heredo a ciegas | el solape que la aduana caza es **literal**: el `P17` del candidato y el `P06` del vecino citan la **misma frase de `L237`**. Si el auditor lee que citar la misma linea hace madre e hijo, mi `SANO` cae. **Mi razon es que `L113` dice CUATRO y `build it into your existing schedule` no es ninguno de los cuatro: es lo que `L237` manda hacer DESPUES de los cuatro** |
+
+**Y UN AVISO DE ALCANCE QUE NO ES DISCUTIBLE:** el encargo pide **tres** y `cap_13` tiene **nueve** en
+bandeja. **La vuelta cierra el capitulo a un tercio a proposito** y los otros seis no se tocan.

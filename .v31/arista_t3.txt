@@ -1,0 +1,10 @@
+DECLARACION DE ARISTA POR LECTURA (D.37)
+  madre: cuidarse_agotamiento_centro_rueda
+  hijo : bloquear_tiempo_pensar_calendario
+  paso citado de la madre: 7
+    Bloquea en tu calendario tiempo de pensar todos los dias. El texto dice que buena parte de esa dureza mental venia de hacer cosas como bloquear dos ho
+  señales del par: familia_id 0.0, paso_contra_nodo 0.407, similitud_texto 0.296
+    NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: cuidarse_agotamiento_centro_rueda > bloquear_tiempo_pensar_calendario
+  razon en bitacora/VEREDICTOS.jsonl

@@ -1,0 +1,29 @@
+{
+  "id": "preguntar_jefe_sonado_persona_cargo",
+  "titulo": "Preguntar a cada persona a tu cargo como es su jefe sonado",
+  "denominaciones": {
+    "nombre_largo": "Las cinco preguntas de los primeros cara a cara para entender a que se parece el jefe sonado de cada persona a tu cargo",
+    "otros_idiomas": [
+      {"idioma": "ingles", "termino": "ask your reports the following questions to understand what their dream manager looks like"}
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [{"clave": "zhuo_manager", "fecha": "2026-09-10"}],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "En tus primeras reuniones a solas con cada persona a tu cargo, cuando llegas de jefe nuevo y quieres hablar la clase de relacion que vais a construir antes de que os asenteis en patrones y rutinas.",
+  "entregable_esperado": "Entendido a que se parece el jefe sonado de cada persona a tu cargo, con sus cinco respuestas, y hablada por delante la clase de relacion que quereis construir.",
+  "escala_minima": "Una persona a tu cargo y una reunion a solas. Se repite con cada una, y el libro las situa en las primeras.",
+  "pasos_accionables": [
+    "En tus primeras reuniones a solas, preguntale que discutia con su jefe anterior que le resultara mas util.",
+    "Preguntale de que maneras le gustaria que le apoyaras.",
+    "Preguntale como le gusta que se le reconozca un gran trabajo.",
+    "Preguntale que clase de opinion sobre su trabajo le resulta mas util.",
+    "Y pidele que imagine que tu y el teneis una relacion estupenda, y que te cuente a que se pareceria eso.",
+    "Manten la mente abierta y la curiosidad mientras conoces a cada uno, y se claro por delante sobre la clase de relacion que te gustaria construir y la clase de directivo que quieres ser."
+  ],
+  "resumen_teorico": "Es el instrumento con el que se aprovecha la segunda ventaja del jefe nuevo, la pizarra en blanco, y el libro dice para que sirve antes de darlo: para entender a que se parece el jefe sonado de cada persona a tu cargo. Las cinco preguntas son las cinco que el libro escribe una a una, y la quinta es de otra especie que las cuatro primeras, porque pide imaginar en vez de recordar. El libro razona por que se hace ahora y no luego: estos temas son mas faciles de hablar por delante, antes de que os asenteis en patrones y rutinas. La doctrina de fondo la ilustra el libro con el caso de una amiga suya, jefa nueva, a la que un colega le dijo que una de las personas a su cargo era peor que la media: le agradecio la informacion pero decidio llegar a sus propias conclusiones, y en un anio esa persona fue promovida a responsable de equipo. Lo que el libro NO dice, y por eso no esta escrito aqui, es que se hace con las respuestas, donde se anotan ni cada cuanto se vuelven a preguntar."
+}

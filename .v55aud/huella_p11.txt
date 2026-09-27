@@ -1,0 +1,5 @@
+U+0008 en crudo                  : 2
+U+0008 en texto_comparable       : 0        largo comparable 12208
+huella con los dos controles     : d228fe61d4d02678
+huella SIN los dos controles     : d228fe61d4d02678
+cambia la huella al quitarlos?   : NO

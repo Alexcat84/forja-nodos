@@ -1,0 +1,41 @@
+AVISO: cero celdas tecleadas. Cada fila cuenta su propio fichero, y el
+cuerpo de cada unidad arranca en la linea siguiente al segundo --- de su
+cabecera yaml, derivado del fichero y no puesto por mi.
+
+| pieza | al abrir | de donde sale |
+|---|---:|---|
+| nodos en el grafo | **346** | `dataset/nodos.jsonl` |
+| veredictos escritos | **740** | `bitacora/VEREDICTOS.jsonl` |
+| unidades de `gerber_emyth` | **22** | `PATRON: fuentes/gerber_emyth/cap_*.md` |
+| palabras de cuerpo del libro | **62648** | `PATRON: fuentes/gerber_emyth/cap_*.md` |
+| unidades apartadas del `cap. 17` | **1** | `PATRON: fuentes/gerber_emyth_cap17_reservado/*.md` |
+| candidatos en bandeja de `gerber_emyth` | **10** | `PATRON: cuarentena/gerber_emyth/*.json` |
+| clave `gerber_emyth` en la tabla canonica | **SI** | `fuentes/FUENTES_CANONICAS.json` |
+| claves en la tabla canonica | **12** | `fuentes/FUENTES_CANONICAS.json` |
+| rama activa | `extraccion-gerber_emyth` | `git rev-parse --abbrev-ref HEAD` |
+| commit de apertura | `07aa6f2` | `git rev-parse --short HEAD` |
+
+| unidad | fichero | rotulo | palabras de cuerpo |
+|---|---|---|---:|
+| Foreword | `cap_01.md` | Foreword | **1402** |
+| Introduction | `cap_02.md` | Introduction | **1212** |
+| Cap. 1 | `cap_03.md` | The Entrepreneurial Myth | **2202** |
+| Cap. 2 | `cap_04.md` | The Entrepreneur the Manager, and the Technician | **3713** |
+| Cap. 3 | `cap_05.md` | Infancy: The Technician's Phase | **2400** |
+| Cap. 4 | `cap_06.md` | Adolescence: Getting Some Help | **1980** |
+| Cap. 5 | `cap_07.md` | Beyond the Comfort Zone | **4284** |
+| Cap. 6 | `cap_08.md` | Maturity and the Entrepreneurial Perspective | **2183** |
+| Cap. 7 | `cap_09.md` | The Turn-Key Revolution | **2845** |
+| Cap. 8 | `cap_10.md` | The Franchise Prototype | **1411** |
+| Cap. 9 | `cap_11.md` | Working On Your Business, Not In It | **4360** |
+| Cap. 10 | `cap_12.md` | The Business Development Process | **4206** |
+| Cap. 11 | `cap_13.md` | Your Business Development Program | **364** |
+| Cap. 12 | `cap_14.md` | Your Primary Aim | **3695** |
+| Cap. 13 | `cap_15.md` | Your Strategic Objective | **4685** |
+| Cap. 14 | `cap_16.md` | Your Organizational Strategy | **4835** |
+| Cap. 15 | `cap_17.md` | Your Management Strategy | **2448** |
+| Cap. 16 | `cap_18.md` | Your People Strategy | **5396** |
+| Cap. 18 | `cap_19.md` | Your Systems Strategy | **4431** |
+| Cap. 19 | `cap_20.md` | A Letter to Sarah | **1841** |
+| Epilogue | `cap_21.md` | Epilogue: Bringing the Dream Back to American Small Business | **1851** |
+| Afterword | `cap_22.md` | Afterword: Taking the First Step | **904** |

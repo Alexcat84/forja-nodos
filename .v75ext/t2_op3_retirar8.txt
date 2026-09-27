@@ -1,0 +1,17 @@
+$ python scripts/retirar_paso.py --nodo dar_elogio_disciplina_igual_critica --paso 8 --razon "$(cat .v75ext/t2_razon_8.txt)"
+RETIRADO del campo (D.54): dar_elogio_disciplina_igual_critica, paso 8
+  su texto queda escrito en el nodo y no se pierde:
+    "Cuenta ademas con lo que el elogio consigue y la critica no: ayuda a la gente a centrarse en sus fuerzas y a hacer mas del trabajo que disfruta y menos del que "
+rc=0
+$ python forja.py gate
+GATE VERDE.
+  nodos verificados: 430
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+rc=0
+$ bash .v75ext/censo.sh
+nodos en dataset/nodos.jsonl        : 430
+veredictos en bitacora              : 1082
+pares mutuos                        : 1
+bandeja cuarentena/grove_high_output: 7
+insertados de grove_high_output     : 85
+cerrojos en procesos/               : 

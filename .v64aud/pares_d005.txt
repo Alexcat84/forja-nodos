@@ -1,0 +1,7 @@
+pares distintos: archivo 12 | hoy 16 | en los dos 11 | solo archivo 1 | solo hoy 5
+   SOLO ARCHIVO   emparejar_indicadores_efecto_contraefecto | revisar_tres_preguntas_valor_carrera
+   SOLO HOY       construir_indicador_tendencia_patron | dimensionar_plantilla_administrativa_pronostico
+   SOLO HOY       construir_indicador_tendencia_patron | elegir_indicador_salida_trabajo_administrativo
+   SOLO HOY       construir_indicador_tendencia_patron | equilibrar_capacidad_personal_inventario_plazo
+   SOLO HOY       dimensionar_plantilla_administrativa_pronostico | emparejar_indicadores_efecto_contraefecto
+   SOLO HOY       elegir_cinco_indicadores_diarios_fabrica | emparejar_indicadores_efecto_contraefecto

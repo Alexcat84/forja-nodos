@@ -1,0 +1,66 @@
+fila 05, seguir_frustrado_preguntar_implantacion_ideas, lineas --veredicto: 6
+  --veredicto interrogar_negocio_cinco_preguntas|SANO|Ajenos: el vecino del grafo, de gerber_emyth, se hace cinco preguntas sobre si trabaja sobre su negocio o dentro de el; este sigue a un responsable frustrado y le pregunta por sus ideas (cap_03 L23 a L29). La senial va del paso 8 de este (leer el resultado como el texto lo lee) al paso 10 del vecino: la forma de la lectura final, no el objeto.
+  --veredicto contar_firmas_cadena_tramite_parado|SANO|El mismo par que contar_firmas lee desde su lado: las ideas de un responsable que no pasan (cap_03 L23 a L29) contra la cadena de firmas de una papeleta (L37 a L43). Los dos acaban en el sistema y no en la persona, por objetos distintos.
+  --veredicto dictar_ritmo_crecimiento_preguntas_escritas|SANO|Ajenos: el vecino del grafo, de gerber_emyth, dicta el ritmo de crecimiento con preguntas y un plan escrito; este sigue al responsable frustrado (cap_03 L23 a L29). Sin paso comun.
+  --veredicto informar_cierre_jornada_conservar_propiedad_trabajo|SANO|El mismo par que informar_cierre lee desde su lado: la conversacion con el responsable frustrado (cap_03 L23 a L29) contra el guion del cierre de jornada (cap_04 L35). La similitud de 0,411, por encima de 0,4, se lee primero, sin paso comun.
+  --veredicto pedir_critica_anonima_curso_entrenamiento_dictado|SANO|Ajenos: el vecino del grafo, de grove_high_output, pide critica anonima con un formulario despues de dictar un curso; este nombra al responsable lo que se vio y le deja contar su vision (cap_03 L25, L27). La senial va del paso 2 de este al paso 2 del vecino, dos formas de pedir que el otro hable, con objetos distintos.
+  --veredicto cambiar_saludo_cliente_dos_ramas|SANO|Ajenos: el vecino del grafo, de gerber_emyth, cambia el saludo del vendedor a un cliente; este sigue a un responsable frustrado (cap_03 L23 a L29). Sin paso comun.
+inicio 2026-09-26 18:19:28
+======================================================================
+ADUANA DE INSERCION, candidato 'seguir_frustrado_preguntar_implantacion_ideas'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (463 del grafo mas 16 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 6. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino interrogar_negocio_cinco_preguntas  [Ponerte a trabajar en tu negocio como si fuera un prototipo de preproduccion, y hacerte las cinco preguntas del capitulo]
+    levantada por: similitud_texto
+    similitud_texto    0.363 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.477 (umbral 0.60)
+    paso 8 del candidato contra paso 10 de interrogar_negocio_cinco_preguntas
+
+  vecino contar_firmas_cadena_tramite_parado  [Seguir un tramite parado por su cadena de firmas, contarlas, y compararlas con lo que el formulario aguanta]
+    levantada por: similitud_texto
+    similitud_texto    0.375 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.441 (umbral 0.60)
+    paso 5 del candidato contra paso 10 de contar_firmas_cadena_tramite_parado
+
+  vecino dictar_ritmo_crecimiento_preguntas_escritas  [Dictar el ritmo de crecimiento de tu negocio con los tres conocimientos clave, las preguntas correctas y el plan escrito]
+    levantada por: similitud_texto
+    similitud_texto    0.389 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.436 (umbral 0.60)
+    paso 2 del candidato contra paso 7 de dictar_ritmo_crecimiento_preguntas_escritas
+
+  vecino informar_cierre_jornada_conservar_propiedad_trabajo  [Informar al superior al cerrar la jornada sin cederle la propiedad del trabajo]
+    levantada por: similitud_texto
+    similitud_texto    0.411 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.399 (umbral 0.60)
+    paso 1 del candidato contra paso 3 de informar_cierre_jornada_conservar_propiedad_trabajo
+
+  vecino pedir_critica_anonima_curso_entrenamiento_dictado  [Pedir critica anonima tras dictar un curso de entrenamiento, con formulario numerico y preguntas abiertas]
+    levantada por: similitud_texto
+    similitud_texto    0.357 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.405 (umbral 0.60)
+    paso 2 del candidato contra paso 2 de pedir_critica_anonima_curso_entrenamiento_dictado
+
+  vecino cambiar_saludo_cliente_dos_ramas  [Cambiar el saludo del vendedor por una pregunta con dos ramas de respuesta ya escritas]
+    levantada por: similitud_texto
+    similitud_texto    0.366 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.355 (umbral 0.60)
+    paso 8 del candidato contra paso 4 de cambiar_saludo_cliente_dos_ramas
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 464
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 6
+
+======================================================================
+fin 2026-09-26 18:29:34 | codigo de salida 0 | 606.6 s

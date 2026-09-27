@@ -1,0 +1,48 @@
+$ python forja.py insertar cuarentena/scott_radical_candor/contar_historias_propias_explicar_franqueza_radical.json [veredictos y censos]
+ADUANA DE INSERCION, candidato 'contar_historias_propias_explicar_franqueza_radical'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (317 del grafo mas 31 que esperan en bandejas)
+
+DECLARADOS POR LECTURA: 1. Ninguna señal los levanto.
+  empezar_cultura_franqueza_radical  [Empezar una cultura de franqueza radical por el orden que el texto pone, pidiendo antes que dando]
+    señales: familia_id 0.25, paso_contra_nodo 0.4, similitud_texto 0.238
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  LA JERARQUIA LA CAZA LA LECTURA, NO LA SEÑAL (D.19, D.29).
+
+VECINOS POR ENCIMA DE UMBRAL: 3. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino escuchar_entender_critica_dominar_defensa  [Escuchar la critica con intencion de entender y no de responder, dominando tu propia defensa con la practica de escuchar tres minutos sin interrumpir]
+    levantada por: similitud_texto
+    similitud_texto    0.380 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.560 (umbral 0.60)
+    paso 3 del candidato contra paso 4 de escuchar_entender_critica_dominar_defensa
+
+  vecino contar_cuatro_historias_propias_ver_hueco_intencion  [Contar tus cuatro historias propias del marco de la franqueza radical para ver el hueco entre lo que pretendes y el impacto que tienes, y compartirlas con tu equipo]
+    levantada por: familia_id
+    similitud_texto    0.303 (umbral 0.35)
+    familia_id         0.300 (umbral 0.30)
+    paso_contra_nodo   0.513 (umbral 0.60)
+    paso 8 del candidato contra paso 3 de contar_cuatro_historias_propias_ver_hueco_intencion
+
+  vecino abrazar_incomodidad_silencio_contar_seis  [Abrazar la incomodidad del silencio despues de pedir critica, aguantandolo mientras cuentas hasta seis en tu cabeza]
+    levantada por: similitud_texto
+    similitud_texto    0.380 (umbral 0.35)
+    familia_id         0.100 (umbral 0.30)
+    paso_contra_nodo   0.484 (umbral 0.60)
+    paso 3 del candidato contra paso 5 de abrazar_incomodidad_silencio_contar_seis
+  ARISTA EN COLA, no cableada: contar_historias_propias_explicar_franqueza_radical > contar_cuatro_historias_propias_ver_hueco_intencion
+    el otro extremo espera en la bandeja (D.29). El veredicto CONTINUA queda escrito y la arista se cablea cuando entre:
+      python forja.py arista --madre contar_historias_propias_explicar_franqueza_radical --hijo contar_cuatro_historias_propias_ver_hueco_intencion --paso <n> --razon "..."
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 318
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 4
+  ARISTAS EN COLA, sin cablear: 1
+    contar_historias_propias_explicar_franqueza_radical > contar_cuatro_historias_propias_ver_hueco_intencion
+    D.29: van a un bloque propio y titulado del reporte, y se cablean con `forja.py arista` cuando el otro extremo entre.
+CODIGO DE SALIDA: 0
+  ARCHIVADO EN EL MISMO ACTO (D.31): cuarentena/_insertados/scott_radical_candor/contar_historias_propias_explicar_franqueza_radical.json

@@ -1,0 +1,11 @@
+admitir_pronto_mal_desempenio_cuatro_razones   (9 pasos)   poblacion 299 = 203 grafo + 96 bandejas
+  vecinos POR ENCIMA de umbral: 2
+    sopesar_consejo_legal_despedir_humildad              sim=0.374 fam=0.000 paso=0.466  <- similitud_texto
+    trazar_plan_dieciocho_meses_aprendizaje              sim=0.356 fam=0.000 paso=0.497  <- similitud_texto
+  los 5 mas altos por similitud_texto, esten o no por encima:
+    sopesar_consejo_legal_despedir_humildad              sim=0.374 fam=0.000 paso=0.466
+    trazar_plan_dieciocho_meses_aprendizaje              sim=0.356 fam=0.000 paso=0.497
+    elogiar_publico_criticar_privado_sus_tres_matices    sim=0.309 fam=0.000 paso=0.382
+    calibrar_decision_despido_documentarla               sim=0.299 fam=0.000 paso=0.488
+    construir_confianza_equipo_tiempo_solas              sim=0.299 fam=0.000 paso=0.476
+  segundos: 509.7

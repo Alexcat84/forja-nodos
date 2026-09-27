@@ -1,0 +1,2 @@
+$ sed -n "13p" fuentes/scott_radical_candor/cap_12.md | cut -c470-620
+th this plan. So for more detailed advice on sharing your stories, soliciting criticism, giving praise, and gauging your criticism see the Afterword.

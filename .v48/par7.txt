@@ -1,0 +1,5 @@
+$ python .v48/par7.py
+buscar_regularidad_bloques_iguales_trabajo_mando
+  paso 1: Aplica a tu trabajo de mando el siguiente concepto de produccion: ve hacia la regularidad.
+agrupar_tareas_semejantes_aprovechar_preparacion
+  paso 1: Aplica a tu trabajo de mando el segundo principio de produccion: agrupar las tareas semejantes.

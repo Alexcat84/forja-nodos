@@ -1,0 +1,36 @@
+{
+  "id": "elegir_recolocar_despedir_persona",
+  "titulo": "Elegir si recolocas a la persona dentro o la dejas ir",
+  "denominaciones": {
+    "nombre_largo": "Las dos unicas opciones que el libro pone cuando alguien no esta preparado para tener exito, y la pregunta con la que se decide",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "you have two options at this point"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando ya has concluido que alguien no esta preparado para tener exito en su papel actual y tienes que decidir que haces con ello.",
+  "entregable_esperado": "Elegida una de las dos opciones, y elegida con la pregunta del libro contestada: si esta persona no estuviera ya aqui, recomendaria que otro equipo la contratara sabiendo lo que se?",
+  "escala_minima": "Una sola persona a cargo y una sola decision. No hace falta ni comite ni proceso: hace falta contestar la pregunta.",
+  "pasos_accionables": [
+    "Reconoce que en ese punto tienes dos opciones y solo dos: ayudar a la persona a encontrar un papel nuevo dentro de tu organizacion, o dejarla ir.",
+    "Considera siempre la primera, porque si existe ahi fuera un papel mejor alineado con los intereses y las habilidades de tu persona a cargo, ese es un gran resultado tanto para ella como para tu empresa. El libro lo razona con alguien de su equipo que amaba trabajar en disenios nuevos e innovadores y acabo fichando por otro equipo centrado en tecnologias emergentes, donde prospero.",
+    "Pisa con cuidado, porque como la idea de despedir a alguien resulta tan desagradable, los directivos pueden titubear y no dejar ir a una persona a cargo aunque sea lo mejor para ella o para la organizacion.",
+    "Evita ir barajando por ahi a gente que no tiene las habilidades adecuadas o que exhibe comportamientos toxicos.",
+    "Y hazte la pregunta que el libro da como buena: si esta persona no estuviera ya en la organizacion, recomendaria yo que otro equipo la contratara, sabiendo lo que se?"
+  ],
+  "resumen_teorico": "El libro cierra la seccion de mover rapido con una bifurcacion de dos ramas escritas una a una, y con una pregunta que sirve de criterio para elegir entre ellas. Va en nodo propio y no dentro del anterior porque el acto es distinto: alli se diagnostica cual de las cinco razones falla, aqui se decide entre dos salidas. El aviso del tercer paso es lo que impide que este nodo se lea como una preferencia por la recolocacion: la primera opcion se considera siempre, pero no se usa para esquivar una decision que toca, y el libro lo dice por su nombre al prohibir barajar por ahi a quien no tiene las habilidades o exhibe comportamientos toxicos. Lo que el libro NO dice, y por eso no esta escrito aqui, es con quien se habla para buscar el papel nuevo ni cuanto se busca antes de dar por agotada la primera opcion."
+}

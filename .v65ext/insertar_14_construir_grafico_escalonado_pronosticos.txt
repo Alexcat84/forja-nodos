@@ -1,0 +1,42 @@
+fila 14, construir_grafico_escalonado_pronosticos, lineas --veredicto: 3
+  --veredicto construir_indicador_tendencia_patron|SANO|Dos ventanas hermanas que el libro CONTRASTA (L91, better than if you used a simple trend chart). El candidato compara cada pronostico con los anteriores y con el real (pasos 2, 4, 7 y 8); el vecino mide la salida real contra el tiempo y contra un patron (pasos 3 y 4). El paso 4 del candidato nombra el grafico de tendencia solo como termino de comparacion, sin tomar su procedimiento, y el vecino no nombra el escalonado: ninguno despliega una linea del otro. SANO y no CONTINUA, contra lo que la propia ficha anunciaba (DISCUTIBLE D64.5).
+  --veredicto elegir_fabricar_pedido_pronostico|SANO|Comparten la palabra pronostico, no procedimiento. El vecino decide entre fabricar contra pedido o contra pronostico y asume el riesgo de inventario (pasos 1 a 7, L103 a L107); el candidato monta y lee un grafico que compara pronosticos sucesivos (pasos 1 a 8, L91 a L93). El vecino no dice como se pronostica ni el candidato decide la via de fabricacion.
+  --veredicto emparejar_indicadores_efecto_contraefecto|SANO|Comparten vocabulario de indicadores, no procedimiento. El vecino empareja un indicador con el que mide su contraefecto para no pasarse (pasos 2 a 6, L31); el candidato compara pronosticos sucesivos de una misma salida (pasos 2 a 8, L91 a L93). Ninguno despliega una linea del otro.
+inicio 2026-09-23 16:50:15
+======================================================================
+ADUANA DE INSERCION, candidato 'construir_grafico_escalonado_pronosticos'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 462   (359 del grafo mas 103 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 3. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino construir_indicador_tendencia_patron  [Construir el indicador de tendencia midiendo la salida contra el tiempo y contra un patron]
+    levantada por: similitud_texto
+    similitud_texto    0.365 (umbral 0.35)
+    familia_id         0.143 (umbral 0.30)
+    paso_contra_nodo   0.453 (umbral 0.60)
+    paso 4 del candidato contra paso 5 de construir_indicador_tendencia_patron
+
+  vecino elegir_fabricar_pedido_pronostico  [Elegir entre fabricar contra pedido y fabricar contra pronostico, y asumir el riesgo de inventario del segundo]
+    levantada por: similitud_texto
+    similitud_texto    0.393 (umbral 0.35)
+    familia_id         0.143 (umbral 0.30)
+    paso_contra_nodo   0.453 (umbral 0.60)
+    paso 7 del candidato contra paso 4 de elegir_fabricar_pedido_pronostico
+
+  vecino emparejar_indicadores_efecto_contraefecto  [Emparejar cada indicador con otro que mida su contraefecto, para no pasarse de frenada]
+    levantada por: similitud_texto
+    similitud_texto    0.378 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.434 (umbral 0.60)
+    paso 1 del candidato contra paso 3 de emparejar_indicadores_efecto_contraefecto
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 360
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 3
+
+======================================================================
+fin 2026-09-23 17:15:46 | codigo de salida 0 | 1531.1 s

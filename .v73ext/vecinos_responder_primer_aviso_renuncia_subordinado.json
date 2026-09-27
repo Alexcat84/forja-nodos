@@ -1,0 +1,98 @@
+{
+ "id": "responder_primer_aviso_renuncia_subordinado",
+ "grafo": 430,
+ "bandejas": 49,
+ "vecinos": [
+  {
+   "id": "preguntar_seguimiento_hallar_huecos",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.19,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.627
+   },
+   "levantada_por": [
+    "paso_contra_nodo"
+   ],
+   "detalle_paso": "paso 2 del candidato contra paso 2 de preguntar_seguimiento_hallar_huecos"
+  },
+  {
+   "id": "usar_banco_nueve_preguntas_entrevista",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.386,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.458
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 2 del candidato contra paso 5 de usar_banco_nueve_preguntas_entrevista"
+  },
+  {
+   "id": "gestionar_retencion_subordinado_valioso_renuncia",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.378,
+    "familia_id": 0.25,
+    "paso_contra_nodo": 0.45
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 4 de gestionar_retencion_subordinado_valioso_renuncia"
+  },
+  {
+   "id": "entregar_evaluacion_desempeno_tres_claves",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.418,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.408
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 3 de entregar_evaluacion_desempeno_tres_claves"
+  },
+  {
+   "id": "construir_indicador_tendencia_patron",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.351,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.417
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 6 de construir_indicador_tendencia_patron"
+  },
+  {
+   "id": "planificar_tres_pasos_demanda_estado_brecha",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.363,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.409
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 2 de planificar_tres_pasos_demanda_estado_brecha"
+  },
+  {
+   "id": "pedir_critica_anonima_curso_entrenamiento_dictado",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.395,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.389
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 7 del candidato contra paso 3 de pedir_critica_anonima_curso_entrenamiento_dictado"
+  }
+ ]
+}

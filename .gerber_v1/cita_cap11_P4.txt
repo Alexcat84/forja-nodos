@@ -1,0 +1,13 @@
+AVISO: cero celdas tecleadas. Cada linea es la que sed -n imprime de fuentes/gerber_emyth/cap_11.md.
+UNICA TRANSFORMACION DECLARADA: 2 guion(es) largo(s) U+2014 sustituido(s) por coma mas
+espacio y 0 guion(es) medio(s) U+2013 por guion corto, porque el barrido de estilo de
+esta casa tumba los dos. El resto es byte a byte el del libro.
+
+155: Documentation says, “This is how we do it here.”
+157: Without documentation, all routinized work turns into exceptions.
+159: Documentation provides your people with the structure they need and with a written account of how to “get the job done” in the most efficient and effective way. It communicates to the new employees, as well as to the old, that there is a logic to the world in which they have chosen to work, that there is a technology by which results are produced. Documentation is an affirmation of order.
+163: The operative word here is clear .
+165: Documentation provides the clarity structure needs if it is to be meaningful to your people.
+167: Through documentation, structure is reduced to specific means rather than generalized ends, to a literal and simplified task The Technician in each of us needs to understand to do the job at hand.
+169: The Operations Manual, the repository of the documentation, is therefore best described as a company’s How-to-Do-It Guide.
+171: It designates the purpose of the work, specifies the steps needed to be taken while doing that work, and summarizes the standards associated with both the process and the result.

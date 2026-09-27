@@ -1,0 +1,3 @@
+  madre : construir_confianza_equipo_tiempo_solas   (de cap_08)
+  hijo  : montar_reuniones_solas_mentalidad_frecuencia
+     capitulo del hijo, por la ruta que cita: cap_11

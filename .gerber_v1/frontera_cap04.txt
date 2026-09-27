@@ -1,0 +1,18 @@
+AVISO: cero celdas tecleadas en este instrumento. El arranque del cuerpo NO
+es una constante mia: sale de fuentes/gerber_emyth/cap_04.md, linea 8, que es la siguiente al segundo
+--- de la cabecera yaml (cierres en L1 y L7). El cuerpo va de L8 a L297.
+
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| `R1` | L8 a L19 | **47** | el numero del capitulo, el rotulo `THE ENTREPRENEUR, THE MANAGER, AND THE TECHNICIAN` y el epigrafe de Jean Vaysse | **RESIDUO: rotulo y epigrafe** |
+| `R2` | L20 a L31 | **119** | el problema: quien monta un negocio es tres personas en una, y las tres quieren mandar | **POSTURA** |
+| `R3` | L32 a L127 | **955** | The Fat Guy y The Skinny Guy: la dieta como demostracion de que dentro de uno hay personalidades distintas que se turnan el mando | **CASO ilustrativo** |
+| `R4` | L128 a L153 | **333** | The Entrepreneur: el visionario que vive en el futuro, su necesidad de control y el mundo de oportunidades y pies que arrastran | **POSTURA: es definicion** |
+| `R5` | L154 a L179 | **263** | The Manager: el pragmatico que vive en el pasado, que ordena en filas y recoge el desorden del emprendedor | **POSTURA: es definicion** |
+| `R6` | L180 a L255 | **754** | The Technician: el hacedor que vive en el presente, su credo de hacerlo uno mismo, y el reparto tipico de 10, 20 y 70 por ciento que deja al tecnico al mando | **POSTURA: es definicion** |
+| `R7` | L256 a L283 | **760** | el dialogo con Sarah: como se veria el lio de las tres personalidades dentro de su negocio, y la duda de ella sobre no ser emprendedora | **CASO** |
+| `P1` | L284 a L291 | **400** | EL TRABAJO DEL EMPRENDEDOR, nombrado por el libro como `Future Work`: ver el negocio como algo aparte de uno, dejar atras la experiencia tecnica, sostener el dialogo interno que el libro transcribe entero, y hacer la pregunta que imagina | **CANDIDATO A NODO, DISCUTIBLE** |
+| `R8` | L292 a L297 | **82** | la sonrisa de Sarah y el paso al ciclo de vida del negocio pequenio | **RESIDUO: bisagra** |
+| **el cuerpo entero** | **L8 a L297** | **3713** | **suma de las piezas: 3713** | **residuo sin asignar: 0** |
+
+piezas: 9   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 3713   suma 3713   residuo 0

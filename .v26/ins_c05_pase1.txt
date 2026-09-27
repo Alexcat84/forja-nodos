@@ -1,0 +1,44 @@
+ADUANA DE INSERCION, candidato 'retirar_etiquetas_permanentes_equipo'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 226 nodo(s) del dataset
+
+VECINOS POR ENCIMA DE UMBRAL: 3. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino manejar_enfado_persona_desafiada  [Manejar el enfado de la persona a la que acabas de desafiar, con la frase que se elimina del vocabulario]
+    levantada por: similitud_texto
+    similitud_texto    0.400 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.425 (umbral 0.60)
+    paso 2 del candidato contra paso 5 de manejar_enfado_persona_desafiada
+
+  vecino delimitar_franqueza_radical_cinco_noes  [Delimitar la franqueza radical por lo que no es, con los cinco noes del texto y la regla de las tres cosas sin decir]
+    levantada por: similitud_texto
+    similitud_texto    0.356 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.415 (umbral 0.60)
+    paso 3 del candidato contra paso 9 de delimitar_franqueza_radical_cinco_noes
+
+  vecino ajustar_franqueza_oido_oyente  [Ajustar la franqueza radical al oido del que escucha y no a la boca del que habla, buscando la forma local de cada dimension]
+    levantada por: similitud_texto
+    similitud_texto    0.380 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.399 (umbral 0.60)
+    paso 6 del candidato contra paso 7 de ajustar_franqueza_oido_oyente
+
+BLOQUEADO: faltan veredictos para manejar_enfado_persona_desafiada, delimitar_franqueza_radical_cinco_noes, ajustar_franqueza_oido_oyente
+  La aduana no juzga: obliga a juzgar (manual seccion 3).
+  Vuelve a correr el comando con un veredicto por vecino:
+    --veredicto "manejar_enfado_persona_desafiada|CONTINUA|madre=manejar_enfado_persona_desafiada|que añade el hijo a la madre"
+    --veredicto "manejar_enfado_persona_desafiada|REPITE|por que no añade procedimiento"
+    --veredicto "manejar_enfado_persona_desafiada|SANO|por que no son el mismo trabajo"
+    --veredicto "manejar_enfado_persona_desafiada|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "delimitar_franqueza_radical_cinco_noes|CONTINUA|madre=delimitar_franqueza_radical_cinco_noes|que añade el hijo a la madre"
+    --veredicto "delimitar_franqueza_radical_cinco_noes|REPITE|por que no añade procedimiento"
+    --veredicto "delimitar_franqueza_radical_cinco_noes|SANO|por que no son el mismo trabajo"
+    --veredicto "delimitar_franqueza_radical_cinco_noes|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "ajustar_franqueza_oido_oyente|CONTINUA|madre=ajustar_franqueza_oido_oyente|que añade el hijo a la madre"
+    --veredicto "ajustar_franqueza_oido_oyente|REPITE|por que no añade procedimiento"
+    --veredicto "ajustar_franqueza_oido_oyente|SANO|por que no son el mismo trabajo"
+    --veredicto "ajustar_franqueza_oido_oyente|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"

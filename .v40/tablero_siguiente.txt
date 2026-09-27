@@ -1,0 +1,4 @@
+    $ python forja.py tablero --siguiente
+D.51, EL ORDEN LO DA EL TABLERO. Linea 'serial':
+  le toca: scott_radical_candor
+  'scott_radical_candor' ya es de esta linea y esta CERRADO EN EXTRACCION: se continua, que D.50 releva AL CERRAR y no a mitad.

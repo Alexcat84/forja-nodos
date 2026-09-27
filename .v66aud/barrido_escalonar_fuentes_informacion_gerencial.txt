@@ -1,0 +1,1 @@
+escalonar_fuentes_informacion_gerencial poblacion 479 (368 grafo mas 111 bandejas) vecinos 7

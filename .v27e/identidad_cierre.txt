@@ -1,0 +1,4 @@
+rama : extraccion-mundo-11
+commit de apertura de la vuelta 27 : 360f941
+primer commit de trabajo (esqueleto) : 13b12e0
+commits de la vuelta antes del cierre: 3

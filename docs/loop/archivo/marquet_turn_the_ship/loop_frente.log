@@ -1,0 +1,1222 @@
+[2026-09-09 23:48:46] arranque: rama extraccion-mundo-11, MODO_INSERCION=cuarentena
+[2026-09-09 23:48:47] ROL INICIAL POR MEDICION: EXTRACTOR. El ACTA no es mas vieja que el REPORTE: no hay vuelta sin auditar delante.
+[2026-09-09 23:48:47]   ultimo commit de REPORTE.md      : nunca (0)
+[2026-09-09 23:48:47]   ultimo commit de ACTA_AUDITOR.md : nunca (0)
+[2026-09-09 23:48:47] VUELTA 1 : EXTRACTOR (claude-opus-5)
+[2026-09-10 00:08:25] extractor listo (USD 7.013145999999999), 1178s, intento 1 de 7
+[2026-09-10 00:08:25] VUELTA 1 : AUDITOR (claude-opus-5)
+[2026-09-10 00:30:22] auditor listo (USD 6.630163), 1317s, intento 1 de 7
+[2026-09-10 00:30:22] Arnes terminado. Revisa docs/loop/PARA_ALEXIS.md si existe, y docs/loop/ACTA_AUDITOR.md.
+[2026-09-10 06:16:55] arranque: rama extraccion-mundo-11, MODO_INSERCION=cuarentena
+[2026-09-10 06:16:55] ROL INICIAL POR MEDICION: EXTRACTOR. El ACTA no es mas vieja que el REPORTE: no hay vuelta sin auditar delante.
+[2026-09-10 06:16:55]   ultimo commit de REPORTE.md      : 2026-09-10 00:07:58 (1789013278)
+[2026-09-10 06:16:55]   ultimo commit de ACTA_AUDITOR.md : 2026-09-10 00:29:13 (1789014553)
+[2026-09-10 06:16:55] VUELTA 1 : EXTRACTOR (claude-opus-5)
+[2026-09-10 06:38:41] extractor listo (USD 7.4083375), 1305s, intento 1 de 7
+[2026-09-10 06:38:41] VUELTA 1 : AUDITOR (claude-opus-5)
+[2026-09-10 07:01:54] auditor listo (USD 8.148588499999999), 1393s, intento 1 de 7
+[2026-09-10 07:01:54] Arnes terminado. Revisa docs/loop/PARA_ALEXIS.md si existe, y docs/loop/ACTA_AUDITOR.md.
+[2026-09-10 08:35:02] arranque: rama extraccion-mundo-11, MODO_INSERCION=cuarentena
+[2026-09-10 08:35:02] ROL INICIAL POR MEDICION: EXTRACTOR. El ACTA no es mas vieja que el REPORTE: no hay vuelta sin auditar delante.
+[2026-09-10 08:35:02]   ultimo commit de REPORTE.md      : 2026-09-10 06:38:07 (1789036687)
+[2026-09-10 08:35:02]   ultimo commit de ACTA_AUDITOR.md : 2026-09-10 07:00:26 (1789038026)
+[2026-09-10 08:35:02] VUELTA 1 : EXTRACTOR (claude-opus-5)
+[2026-09-10 08:44:56] extractor listo (USD 2.9130740000000004), 592s, intento 1 de 7
+[2026-09-10 08:44:56] VUELTA 1 : AUDITOR (claude-opus-5)
+[2026-09-10 09:06:00] auditor listo (USD 6.386548), 1263s, intento 1 de 7
+[2026-09-10 09:06:00] Arnes terminado. Revisa docs/loop/PARA_ALEXIS.md si existe, y docs/loop/ACTA_AUDITOR.md.
+[LINEA DE SERVICIO] Las dos lineas de arriba se REPUSIERON el 10 sep 2026 desde
+[LINEA DE SERVICIO] docs/loop/ultimo_auditor.json, que es su sede autoritativa
+[LINEA DE SERVICIO] (coste 6.386548, duracion 1262788 ms). Se perdieron al revertir
+[LINEA DE SERVICIO] este fichero para quitarle una linea de una prueba en seco de
+[LINEA DE SERVICIO] Alexis. La hora es la calculada, no la registrada, y por eso
+[LINEA DE SERVICIO] se dice: el dato viene del testigo, la marca de tiempo no.
+[2026-09-10 09:34:30] arranque: rama extraccion-mundo-11, MODO_INSERCION=cuarentena
+[2026-09-10 09:34:31] ROL INICIAL POR MEDICION: EXTRACTOR. El ACTA no es mas vieja que el REPORTE: no hay vuelta sin auditar delante.
+[2026-09-10 09:34:31]   ultimo commit de REPORTE.md      : 2026-09-10 08:44:27 (1789044267)
+[2026-09-10 09:34:31]   ultimo commit de ACTA_AUDITOR.md : 2026-09-10 09:04:18 (1789045458)
+[2026-09-10 09:34:31] VUELTA 1 : EXTRACTOR (claude-opus-5)
+[2026-09-10 09:57:20] extractor listo (USD 7.227975), 1369s, intento 1 de 7
+[2026-09-10 09:57:20] VUELTA 1 : AUDITOR (claude-opus-5)
+[2026-09-10 10:27:49] auditor listo (USD 10.4003425), 1829s, intento 1 de 7
+[2026-09-10 10:27:49] Arnes terminado. Revisa docs/loop/PARA_ALEXIS.md si existe, y docs/loop/ACTA_AUDITOR.md.
+[2026-09-10 11:10:18] arranque: rama extraccion-mundo-11, MODO_INSERCION=cuarentena
+[2026-09-10 11:10:18] ROL INICIAL POR MEDICION: EXTRACTOR. El ACTA no es mas vieja que el REPORTE: no hay vuelta sin auditar delante.
+[2026-09-10 11:10:18]   ultimo commit de REPORTE.md      : 2026-09-10 09:56:46 (1789048606)
+[2026-09-10 11:10:19]   ultimo commit de ACTA_AUDITOR.md : 2026-09-10 10:26:15 (1789050375)
+[2026-09-10 11:10:19] VUELTA 1 : EXTRACTOR (claude-opus-5)
+[2026-09-10 11:53:11] extractor listo (USD 14.528032500000004), 2572s, intento 1 de 7
+[2026-09-10 11:53:11] VUELTA 1 : AUDITOR (claude-opus-5)
+[2026-09-10 12:30:30] auditor listo (USD 11.7014785), 2239s, intento 1 de 7
+[2026-09-10 12:30:30] VUELTA 2 : EXTRACTOR (claude-opus-5)
+[2026-09-10 13:15:30] extractor listo (USD 14.796232000000002), 2699s, intento 1 de 7
+[2026-09-10 13:15:30] VUELTA 2 : AUDITOR (claude-opus-5)
+[2026-09-10 13:55:39] auditor listo (USD 10.371073999999998), 2409s, intento 1 de 7
+[2026-09-10 13:55:39] VUELTA 3 : EXTRACTOR (claude-opus-5)
+[2026-09-10 14:42:39] extractor listo (USD 16.1182455), 2820s, intento 1 de 7
+[2026-09-10 14:42:39] VUELTA 3 : AUDITOR (claude-opus-5)
+[2026-09-10 15:17:57] auditor: fallo instantaneo (probable limite de uso), 2118s, costo "vacio", intento 1 de 7
+[2026-09-10 15:17:57] fallo "instantaneo"; espero 1800 segundos y reintento
+[2026-09-10 18:07:40] arranque: rama extraccion-mundo-11, MODO_INSERCION=cuarentena
+[2026-09-10 18:07:40] ROL INICIAL POR MEDICION: EXTRACTOR. El ACTA no es mas vieja que el REPORTE: no hay vuelta sin auditar delante.
+[2026-09-10 18:07:40]   ultimo commit de REPORTE.md      : 2026-09-10 14:41:15 (1789065675)
+[2026-09-10 18:07:41]   ultimo commit de ACTA_AUDITOR.md : 2026-09-10 15:16:49 (1789067809)
+[2026-09-10 18:07:41] VUELTA 1 : EXTRACTOR (claude-opus-5)
+[2026-09-10 18:50:25] extractor listo (USD 15.690741), 2564s, intento 1 de 7
+[2026-09-10 18:50:25] VUELTA 1 : APERTURA CIEGA (claude-opus-5), el reporte queda retirado
+[2026-09-10 19:01:41] auditor ciego listo (USD 3.701070000000001), 676s, intento 1 de 7
+[pre-commit] gate de integridad
+GATE VERDE.
+  nodos verificados: 52
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones
+[pre-commit] barrido de guiones
+BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+[pre-commit] verde
+[2026-09-10 19:01:42]   apertura ciega sellada: 73d1f5c4a1167ccc6a2bd3a4c6dbef628edd2eab
+[2026-09-10 19:01:42] VUELTA 1 : AUDITOR (claude-opus-5)
+[2026-09-10 19:45:37] auditor listo (USD 14.471417500000003), 2635s, intento 1 de 7
+[2026-09-10 19:45:38]   sello de la apertura ciega verificado: intacto tras el turno
+[2026-09-10 19:45:38] Arnes terminado. Revisa docs/loop/PARA_ALEXIS.md si existe, y docs/loop/ACTA_AUDITOR.md.
+[2026-09-10 19:49:37] arranque: rama extraccion-mundo-11, MODO_INSERCION=cuarentena
+[2026-09-10 19:49:37] ROL INICIAL POR MEDICION: EXTRACTOR. El ACTA no es mas vieja que el REPORTE: no hay vuelta sin auditar delante.
+[2026-09-10 19:49:37]   ultimo commit de REPORTE.md      : 2026-09-10 18:49:20 (1789080560)
+[2026-09-10 19:49:37]   ultimo commit de ACTA_AUDITOR.md : 2026-09-10 19:43:05 (1789083785)
+[2026-09-10 19:49:37] VUELTA 1 : EXTRACTOR (claude-opus-5)
+[2026-09-10 20:44:50] extractor listo (USD 20.18804500000001), 3313s, intento 1 de 7
+[2026-09-10 20:44:50] VUELTA 1 : APERTURA CIEGA (claude-opus-5), el reporte queda retirado
+[2026-09-10 21:06:59] auditor ciego listo (USD 5.346589500000001), 1329s, intento 1 de 7
+[pre-commit] gate de integridad
+GATE VERDE.
+  nodos verificados: 52
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones
+[pre-commit] barrido de guiones
+BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+[pre-commit] verde
+[2026-09-10 21:07:00]   apertura ciega sellada: 7c4f5e0b583a13a21b98ae9273eb1de8c5b014f2
+[2026-09-10 21:07:00] VUELTA 1 : AUDITOR (claude-opus-5)
+[2026-09-10 21:33:10] auditor listo (USD 9.580864499999999), 1570s, intento 1 de 7
+[2026-09-10 21:33:11]   sello de la apertura ciega verificado: intacto tras el turno
+[2026-09-10 21:33:11] VUELTA 2 : EXTRACTOR (claude-opus-5)
+[2026-09-10 23:07:04] extractor listo (USD 30.1595145), 5632s, intento 1 de 7
+[2026-09-10 23:07:04] VUELTA 2 : APERTURA CIEGA (claude-opus-5), el reporte queda retirado
+[2026-09-10 23:23:29] auditor ciego listo (USD 5.7328685), 984s, intento 1 de 7
+[pre-commit] gate de integridad
+GATE VERDE.
+  nodos verificados: 52
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones
+[pre-commit] barrido de guiones
+BARRIDO DE GUIONES EN ROJO: 3 hallazgo(s)
+  docs/loop/ultimo_apertura.json linea 1 columna 1344: guion largo (U+2014)
+  docs/loop/ultimo_apertura.json linea 1 columna 2651: guion largo (U+2014)
+  docs/loop/ultimo_apertura.json linea 1 columna 3144: guion largo (U+2014)
+Regla: cero guiones largos y cero guiones medios en todo el repo (manual seccion 2). Usa el guion corto normal.
+
+[pre-commit] COMMIT ABORTADO: hay guiones largos o medios en el repo.
+Reemplazalos por el guion corto normal y vuelve a intentarlo.
+[2026-09-10 23:23:29]   apertura ciega sellada: ef308a1e8803138cfd2641bccb9ea965692d2fdc
+[2026-09-10 23:23:29] VUELTA 2 : AUDITOR (claude-opus-5)
+[2026-09-10 23:57:43] auditor listo (USD 15.821439999999997), 2053s, intento 1 de 7
+[2026-09-10 23:57:43]   sello de la apertura ciega verificado: intacto tras el turno
+[2026-09-10 23:57:43] VUELTA 3 : EXTRACTOR (claude-opus-5)
+[2026-09-11 01:34:27] extractor listo (USD 19.046908000000002), 5804s, intento 1 de 7
+[2026-09-11 01:34:27] VUELTA 3 : APERTURA CIEGA (claude-opus-5), el reporte queda retirado
+[2026-09-11 01:49:22] auditor ciego listo (USD 5.001254), 895s, intento 1 de 7
+[pre-commit] gate de integridad
+GATE VERDE.
+  nodos verificados: 52
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones
+[pre-commit] barrido de guiones
+BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+[pre-commit] verde
+[2026-09-11 01:49:23]   apertura ciega sellada: 5bd0220841335d04b52c1190363be0d7c6a7788e
+[2026-09-11 01:49:23] VUELTA 3 : AUDITOR (claude-opus-5)
+[2026-09-11 02:17:16] auditor listo (USD 10.358612000000003), 1673s, intento 1 de 7
+[2026-09-11 02:17:16]   sello de la apertura ciega verificado: intacto tras el turno
+[2026-09-11 02:17:16] DETENIDO en la vuelta 4: existe docs/loop/PARA_ALEXIS.md. Leelo.
+[2026-09-11 02:17:16] Arnes terminado. Revisa docs/loop/PARA_ALEXIS.md si existe, y docs/loop/ACTA_AUDITOR.md.
+[2026-09-11 07:02:51] arranque: rama extraccion-mundo-11, MODO_INSERCION=cuarentena
+[2026-09-11 07:02:51] DETENIDO en la vuelta 1: no hay PROMPT_SIGUIENTE.md con contenido.
+[2026-09-11 07:02:51] Arnes terminado. Revisa docs/loop/PARA_ALEXIS.md si existe, y docs/loop/ACTA_AUDITOR.md.
+[2026-09-11 08:05:53] arranque: rama extraccion-mundo-11, MODO_INSERCION=cuarentena
+[2026-09-11 08:05:53] ROL INICIAL POR MEDICION: EXTRACTOR. El ACTA no es mas vieja que el REPORTE: no hay vuelta sin auditar delante.
+[2026-09-11 08:05:53]   ultimo commit de REPORTE.md      : 2026-09-11 01:33:58 (1789104838)
+[2026-09-11 08:05:53]   ultimo commit de ACTA_AUDITOR.md : 2026-09-11 02:15:03 (1789107303)
+[2026-09-11 08:05:53] VUELTA 1 : EXTRACTOR (claude-opus-5)
+[2026-09-11 10:34:38] extractor listo (USD 43.44335799999998), 8924s, intento 1 de 7
+[2026-09-11 10:34:38] VUELTA 1 : APERTURA CIEGA (claude-opus-5), retirados: REPORTE.md loop.log ultimo_extractor.json ultimo_auditor.json
+[2026-09-11 10:53:41] auditor ciego listo (USD 8.913129499999998), 1143s, intento 1 de 7
+[2026-09-11 10:53:41]   apertura ciega sellada: 232c2285fb8e269bbb8b00002eeb616f85988c57
+[pre-commit] gate de integridad
+GATE VERDE.
+  nodos verificados: 135
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones
+[pre-commit] barrido de guiones
+BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+[pre-commit] verde
+[2026-09-11 10:53:42] VUELTA 1 : AUDITOR (claude-opus-5)
+[2026-09-11 11:28:12] auditor: TURNO MUDO, el turno corrio 2070s y cobro "19.094717500000005" pero docs/loop/ACTA_AUDITOR.md quedo identico, intento 1 de 7
+[2026-09-11 11:28:12] fallo "auditor mudo"; espero 1800 segundos y reintento
+[2026-09-11 12:27:43] auditor: TURNO MUDO, el turno corrio 1769s y cobro "15.295378999999999" pero docs/loop/ACTA_AUDITOR.md quedo identico, intento 2 de 7
+[2026-09-11 12:27:43] fallo "auditor mudo"; espero 1800 segundos y reintento
+[2026-09-11 13:25:12] auditor listo (USD 10.550695000000001), 1649s, intento 3 de 7
+[2026-09-11 13:25:12]   sello de la apertura ciega verificado: intacto tras el turno
+[2026-09-11 13:25:12] VUELTA 2 : EXTRACTOR (claude-opus-5)
+[2026-09-11 14:07:16] extractor listo (USD 13.7980175), 2524s, intento 1 de 7
+[2026-09-11 14:07:17] VUELTA 2 : APERTURA CIEGA (claude-opus-5), retirados: REPORTE.md loop.log ultimo_extractor.json ultimo_auditor.json
+[2026-09-11 14:20:32] auditor ciego listo (USD 4.107691), 795s, intento 1 de 7
+[2026-09-11 14:20:32]   apertura ciega sellada: ba6902eb9a909872ef05d6641c3dcaf99f62b14e
+[pre-commit] gate de integridad
+GATE VERDE.
+  nodos verificados: 135
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones
+[pre-commit] barrido de guiones
+BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+[pre-commit] verde
+[2026-09-11 14:20:33] VUELTA 2 : AUDITOR (claude-opus-5)
+[2026-09-11 14:51:57] auditor listo (USD 9.807564000000003), 1884s, intento 1 de 7
+[2026-09-11 14:51:57]   sello de la apertura ciega verificado: intacto tras el turno
+[2026-09-11 14:51:57] VUELTA 3 : EXTRACTOR (claude-opus-5)
+[2026-09-11 15:41:54] extractor listo (USD 32.232347), 2997s, intento 1 de 7
+[2026-09-11 15:41:54] VUELTA 3 : APERTURA CIEGA (claude-opus-5), retirados: REPORTE.md loop.log ultimo_extractor.json ultimo_auditor.json
+[2026-09-11 15:56:01] auditor ciego listo (USD 4.351917), 847s, intento 1 de 7
+[2026-09-11 15:56:02]   apertura ciega sellada: 619cb1a451bf15fbd0cb882c5aeb2c31eee9fe94
+[pre-commit] gate de integridad
+GATE VERDE.
+  nodos verificados: 135
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones
+[pre-commit] barrido de guiones
+BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+[pre-commit] verde
+[2026-09-11 15:56:02] VUELTA 3 : AUDITOR (claude-opus-5)
+[2026-09-11 17:53:34] arranque: rama extraccion-mundo-11, MODO_INSERCION=insertar
+[2026-09-11 17:53:35] ROL INICIAL POR MEDICION: EXTRACTOR. El ACTA no es mas vieja que el REPORTE: no hay vuelta sin auditar delante.
+[2026-09-11 17:53:35]   ultimo commit de REPORTE.md      : 2026-09-11 15:41:29 (1789155689)
+[2026-09-11 17:53:35]   ultimo commit de ACTA_AUDITOR.md : 2026-09-11 16:19:09 (1789157949)
+[2026-09-11 17:53:35] VUELTA 1 : EXTRACTOR (claude-opus-5)
+[2026-09-11 21:40:37] arranque: rama extraccion-mundo-11, MODO_INSERCION=insertar
+[2026-09-11 21:40:37] ROL INICIAL FORZADO por EMPEZAR_EN: extractor (gana sobre la medicion)
+[2026-09-11 21:40:37] VUELTA 1 : EXTRACTOR (claude-opus-5)
+[2026-09-11 23:02:37] extractor listo (USD 19.0230875), 4920s, intento 1 de 7
+[2026-09-11 23:02:37] VUELTA 1 : APERTURA CIEGA (claude-opus-5), retirados: REPORTE.md loop.log ultimo_extractor.json ultimo_auditor.json
+[2026-09-11 23:37:44] auditor ciego listo (USD 8.824727999999997), 2107s, intento 1 de 7
+[2026-09-11 23:37:44]   apertura ciega sellada: 690283f2dbb103277b4743ffcda6f0c8c744e30e
+[pre-commit] gate de integridad
+GATE VERDE.
+  nodos verificados: 203
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones
+[pre-commit] barrido de guiones
+BARRIDO DE GUIONES EN ROJO: 18 hallazgo(s)
+  .poblacion_C_v16.jsonl linea 275 columna 1687: guion largo (U+2014)
+  .poblacion_C_v16.jsonl linea 275 columna 1755: guion largo (U+2014)
+  .poblacion_C_v16.jsonl linea 311 columna 1445: guion largo (U+2014)
+  .poblacion_C_v16.jsonl linea 311 columna 1540: guion largo (U+2014)
+  .poblacion_C_v16.jsonl linea 314 columna 1952: guion largo (U+2014)
+  .poblacion_C_v16.jsonl linea 314 columna 1985: guion largo (U+2014)
+  .poblacion_C_v16.jsonl linea 340 columna 1387: guion largo (U+2014)
+  .poblacion_C_v16.jsonl linea 340 columna 1418: guion largo (U+2014)
+  .poblacion_C_v16.jsonl linea 351 columna 1591: guion largo (U+2014)
+  .poblacion_literal_v16.jsonl linea 275 columna 1687: guion largo (U+2014)
+  .poblacion_literal_v16.jsonl linea 275 columna 1755: guion largo (U+2014)
+  .poblacion_literal_v16.jsonl linea 311 columna 1445: guion largo (U+2014)
+  .poblacion_literal_v16.jsonl linea 311 columna 1540: guion largo (U+2014)
+  .poblacion_literal_v16.jsonl linea 314 columna 1952: guion largo (U+2014)
+  .poblacion_literal_v16.jsonl linea 314 columna 1985: guion largo (U+2014)
+  .poblacion_literal_v16.jsonl linea 340 columna 1387: guion largo (U+2014)
+  .poblacion_literal_v16.jsonl linea 340 columna 1418: guion largo (U+2014)
+  .poblacion_literal_v16.jsonl linea 351 columna 1591: guion largo (U+2014)
+Regla: cero guiones largos y cero guiones medios en todo el repo (manual seccion 2). Usa el guion corto normal.
+
+[pre-commit] COMMIT ABORTADO: hay guiones largos o medios en el repo.
+Reemplazalos por el guion corto normal y vuelve a intentarlo.
+[2026-09-11 23:37:45] VUELTA 1 : AUDITOR (claude-opus-5)
+[2026-09-12 00:22:41] auditor listo (USD 17.001962), 2695s, intento 1 de 7
+[2026-09-12 00:22:41]   sello de la apertura ciega verificado: intacto tras el turno
+[2026-09-12 00:22:41] VUELTA 2 : EXTRACTOR (claude-opus-5)
+[2026-09-12 02:21:46] extractor listo (USD 28.932388499999995), 7145s, intento 1 de 7
+[2026-09-12 02:21:47] VUELTA 2 : APERTURA CIEGA (claude-opus-5), retirados: REPORTE.md loop.log ultimo_extractor.json ultimo_auditor.json
+[2026-09-12 02:46:10] auditor ciego listo (USD 10.925210499999997), 1462s, intento 1 de 7
+[2026-09-12 02:46:10]   apertura ciega sellada: c119e91f41a7496707253f390b05459fed221b39
+[pre-commit] gate de integridad
+GATE VERDE.
+  nodos verificados: 203
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones
+[pre-commit] barrido de guiones
+BARRIDO DE GUIONES EN ROJO: 21 hallazgo(s)
+  .pob_loo.jsonl linea 275 columna 1687: guion largo (U+2014)
+  .pob_loo.jsonl linea 275 columna 1755: guion largo (U+2014)
+  .pob_loo.jsonl linea 311 columna 1445: guion largo (U+2014)
+  .pob_loo.jsonl linea 311 columna 1540: guion largo (U+2014)
+  .pob_loo.jsonl linea 314 columna 1952: guion largo (U+2014)
+  .pob_loo.jsonl linea 314 columna 1985: guion largo (U+2014)
+  .pob_loo.jsonl linea 340 columna 1387: guion largo (U+2014)
+  .pob_loo.jsonl linea 340 columna 1418: guion largo (U+2014)
+  .pob_loo.jsonl linea 351 columna 1591: guion largo (U+2014)
+  .poblacion_auditor_v16.jsonl linea 275 columna 1687: guion largo (U+2014)
+  .poblacion_auditor_v16.jsonl linea 275 columna 1755: guion largo (U+2014)
+  .poblacion_auditor_v16.jsonl linea 311 columna 1445: guion largo (U+2014)
+  .poblacion_auditor_v16.jsonl linea 311 columna 1540: guion largo (U+2014)
+  .poblacion_auditor_v16.jsonl linea 314 columna 1952: guion largo (U+2014)
+  .poblacion_auditor_v16.jsonl linea 314 columna 1985: guion largo (U+2014)
+  .poblacion_auditor_v16.jsonl linea 340 columna 1387: guion largo (U+2014)
+  .poblacion_auditor_v16.jsonl linea 340 columna 1418: guion largo (U+2014)
+  .poblacion_auditor_v16.jsonl linea 351 columna 1591: guion largo (U+2014)
+  docs/loop/ultimo_apertura.json linea 1 columna 1371: guion largo (U+2014)
+  docs/loop/ultimo_apertura.json linea 1 columna 1937: guion largo (U+2014)
+  docs/loop/ultimo_apertura.json linea 1 columna 3405: guion largo (U+2014)
+Regla: cero guiones largos y cero guiones medios en todo el repo (manual seccion 2). Usa el guion corto normal.
+
+[pre-commit] COMMIT ABORTADO: hay guiones largos o medios en el repo.
+Reemplazalos por el guion corto normal y vuelve a intentarlo.
+[2026-09-12 02:46:11] VUELTA 2 : AUDITOR (claude-opus-5)
+[2026-09-12 04:06:13] auditor listo (USD 24.368453000000002), 4802s, intento 1 de 7
+[2026-09-12 04:06:13]   sello de la apertura ciega verificado: intacto tras el turno
+[2026-09-12 04:06:13] VUELTA 3 : EXTRACTOR (claude-opus-5)
+[2026-09-12 04:50:23] extractor listo (USD 23.012506999999992), 2650s, intento 1 de 7
+[2026-09-12 04:50:24] VUELTA 3 : APERTURA CIEGA (claude-opus-5), retirados: REPORTE.md loop.log ultimo_extractor.json ultimo_auditor.json
+[2026-09-12 06:15:20] auditor ciego listo (USD 11.516932499999996), 5096s, intento 1 de 7
+[2026-09-12 06:15:20]   apertura ciega sellada: 3dea0276348f5084d4a578d302baf16e46301a0f
+[pre-commit] gate de integridad
+GATE VERDE.
+  nodos verificados: 203
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones
+[pre-commit] barrido de guiones
+BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+[pre-commit] verde
+[2026-09-12 06:15:21] VUELTA 3 : AUDITOR (claude-opus-5)
+[2026-09-12 06:42:38] auditor listo (USD 9.943757000000002), 1637s, intento 1 de 7
+[2026-09-12 06:42:39]   sello de la apertura ciega verificado: intacto tras el turno
+[2026-09-12 06:42:39] DETENIDO en la vuelta 4: existe docs/loop/PARA_ALEXIS.md. Leelo.
+[2026-09-12 06:42:39] Arnes terminado. Revisa docs/loop/PARA_ALEXIS.md si existe, y docs/loop/ACTA_AUDITOR.md.
+[2026-09-12 08:36:00] arranque: rama extraccion-mundo-11, MODO_INSERCION=insertar
+[2026-09-12 08:36:00] ROL INICIAL FORZADO por EMPEZAR_EN: extractor (gana sobre la medicion)
+[2026-09-12 08:36:00] VUELTA 1 : EXTRACTOR (claude-opus-5)
+[2026-09-12 09:18:46] extractor listo (USD 22.425904), 2566s, intento 1 de 7
+[2026-09-12 09:18:46] VUELTA 1 : APERTURA CIEGA (claude-opus-5), retirados: REPORTE.md loop.log ultimo_extractor.json ultimo_auditor.json
+[2026-09-12 09:18:46]   hereda 3 remedio(s) del acta anterior, entregados en el prompt (D.40)
+[2026-09-12 09:47:55] auditor ciego listo (USD 11.415518), 1749s, intento 1 de 7
+[2026-09-12 09:47:56]   herencia declarada: acta leida por su huella y los 3 heredados resueltos
+[2026-09-12 09:47:56]   apertura ciega sellada: 8774c59fc95f21483daae2fdabc185199635db26
+warning: in the working copy of 'docs/loop/APERTURA_CIEGA.md', CRLF will be replaced by LF the next time Git touches it
+[pre-commit] gate de integridad
+GATE VERDE.
+  nodos verificados: 203
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones
+[pre-commit] barrido de guiones
+BARRIDO DE GUIONES EN ROJO: 3 hallazgo(s)
+  docs/loop/ultimo_apertura.json linea 1 columna 1321: guion largo (U+2014)
+  docs/loop/ultimo_apertura.json linea 1 columna 2968: guion largo (U+2014)
+  docs/loop/ultimo_apertura.json linea 1 columna 4198: guion largo (U+2014)
+Regla: cero guiones largos y cero guiones medios en todo el repo (manual seccion 2). Usa el guion corto normal.
+
+[pre-commit] COMMIT ABORTADO: hay guiones largos o medios en el repo.
+Reemplazalos por el guion corto normal y vuelve a intentarlo.
+[2026-09-12 09:47:57] VUELTA 1 : AUDITOR (claude-opus-5)
+[2026-09-12 10:26:37] auditor listo (USD 14.713015500000001), 2320s, intento 1 de 7
+[2026-09-12 10:26:37]   sello de la apertura ciega verificado: intacto tras el turno
+[2026-09-12 10:26:37] VUELTA 2 : EXTRACTOR (claude-opus-5)
+[2026-09-12 11:18:32] extractor listo (USD 22.445964), 3115s, intento 1 de 7
+[2026-09-12 11:18:33] VUELTA 2 : APERTURA CIEGA (claude-opus-5), retirados: REPORTE.md loop.log ultimo_extractor.json ultimo_auditor.json
+[2026-09-12 11:18:33]   hereda 1 remedio(s) del acta anterior, entregados en el prompt (D.40)
+[2026-09-12 11:50:32] auditor ciego listo (USD 11.398644499999998), 1919s, intento 1 de 7
+[2026-09-12 11:50:33] APERTURA CIEGA INCOMPLETA en la vuelta 2 (D.40). El arnes se detiene
+[2026-09-12 11:50:33]   ANTES de que se escriba el acta. Lo que falta:
+[2026-09-12 11:50:33]     APERTURA CIEGA INCOMPLETA: 2 cosa(s) que faltan (D.40).
+[2026-09-12 11:50:33]       la linea 'ACTA ANTERIOR LEIDA' esta, pero con otra huella: se espera '80fd74cdf15bb0b1ff02bcbe560ba03f11f22472'
+[2026-09-12 11:50:33]       falta la linea 'HEREDADO 1: CUMPLIDO' o 'NO APLICA' (heredado 1 de 1)
+[2026-09-12 11:50:33] DETENIDO en la vuelta 2: la apertura ciega no declaro su herencia (D.40). Ver docs/loop/PARA_ALEXIS.md
+[2026-09-12 13:03:21] arranque: rama extraccion-mundo-11, MODO_INSERCION=insertar
+[2026-09-12 13:03:21] ROL INICIAL POR MEDICION: AUDITOR. El REPORTE es mas nuevo que el ACTA, asi que la vuelta anterior quedo SIN AUDITAR.
+[2026-09-12 13:03:21]   ultimo commit de REPORTE.md      : 2026-09-12 11:17:12 (1789226232)
+[2026-09-12 13:03:21]   ultimo commit de ACTA_AUDITOR.md : 2026-09-12 10:25:11 (1789223111)
+[2026-09-12 13:03:21] VUELTA 1 : SE SALTA EL TURNO DEL EXTRACTOR, la corrida empieza por el AUDITOR
+[2026-09-12 13:03:22] VUELTA 1 : APERTURA CIEGA (claude-opus-5), retirados: REPORTE.md loop.log ultimo_extractor.json ultimo_auditor.json
+[2026-09-12 13:03:22]   hereda 1 remedio(s) del acta anterior, entregados en el prompt (D.40)
+[2026-09-12 14:14:36] auditor ciego listo (USD 13.750629), 4274s, intento 1 de 7
+[2026-09-12 14:14:36]   herencia declarada: acta leida por su huella y los 1 heredados resueltos
+[2026-09-12 14:14:36]   apertura ciega sellada: 17794a068262bb0c715256a06ce69165c042251d
+[pre-commit] gate de integridad
+GATE VERDE.
+  nodos verificados: 203
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones
+[pre-commit] barrido de guiones
+BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+[pre-commit] verde
+[2026-09-12 14:14:38] VUELTA 1 : AUDITOR (claude-opus-5)
+[2026-09-12 14:57:14] auditor listo (USD 9.803999499999998), 2556s, intento 1 de 7
+[2026-09-12 14:57:14]   sello de la apertura ciega verificado: intacto tras el turno
+[2026-09-12 14:57:14] VUELTA 2 : EXTRACTOR (claude-opus-5)
+[2026-09-12 16:13:02] extractor listo (USD 22.050343000000005), 4547s, intento 1 de 7
+[2026-09-12 16:13:02] VUELTA 2 : APERTURA CIEGA (claude-opus-5), retirados: REPORTE.md loop.log ultimo_extractor.json ultimo_auditor.json
+[2026-09-12 16:13:03]   hereda 1 remedio(s) del acta anterior, entregados en el prompt (D.40)
+[2026-09-12 17:07:26] auditor ciego listo (USD 10.309790500000002), 3263s, intento 1 de 7
+[2026-09-12 17:07:27]   herencia declarada: acta leida por su huella y los 1 heredados resueltos
+[2026-09-12 17:07:27]   apertura ciega sellada: 37cb783e1c1a9a30ca7cc63b26b68957cbbda7ac
+[pre-commit] gate de integridad
+GATE VERDE.
+  nodos verificados: 203
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones
+[pre-commit] barrido de guiones
+BARRIDO DE GUIONES EN ROJO: 3 hallazgo(s)
+  docs/loop/ultimo_apertura.json linea 1 columna 2933: guion largo (U+2014)
+  docs/loop/ultimo_apertura.json linea 1 columna 3625: guion largo (U+2014)
+  docs/loop/ultimo_apertura.json linea 1 columna 3903: guion largo (U+2014)
+Regla: cero guiones largos y cero guiones medios en todo el repo (manual seccion 2). Usa el guion corto normal.
+
+[pre-commit] COMMIT ABORTADO: hay guiones largos o medios en el repo.
+Reemplazalos por el guion corto normal y vuelve a intentarlo.
+[2026-09-12 17:07:28] VUELTA 2 : AUDITOR (claude-opus-5)
+[2026-09-12 17:42:49] auditor listo (USD 12.618304500000002), 2120s, intento 1 de 7
+[2026-09-12 17:42:49]   sello de la apertura ciega verificado: intacto tras el turno
+[2026-09-12 17:42:49] DETENIDO en la vuelta 3: existe docs/loop/PARA_ALEXIS.md. Leelo.
+[2026-09-12 17:42:49] Arnes terminado. Revisa docs/loop/PARA_ALEXIS.md si existe, y docs/loop/ACTA_AUDITOR.md.
+[2026-09-12 20:14:11] arranque: rama extraccion-mundo-11, MODO_INSERCION=insertar
+[2026-09-12 20:14:11] ROL INICIAL POR MEDICION: EXTRACTOR. El ACTA no es mas vieja que el REPORTE: no hay vuelta sin auditar delante.
+[2026-09-12 20:14:11]   ultimo commit de REPORTE.md      : 2026-09-12 16:12:03 (1789243923)
+[2026-09-12 20:14:11]   ultimo commit de ACTA_AUDITOR.md : 2026-09-12 17:40:36 (1789249236)
+[2026-09-12 20:14:11] VUELTA 1 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
+[2026-09-12 20:14:11] VUELTA 1 : EXTRACTOR (claude-opus-5)
+[2026-09-12 21:33:49] extractor listo (USD 41.81688800000001), 4778s, intento 1 de 7
+[2026-09-12 21:33:52] VUELTA 1 : APERTURA CIEGA (claude-opus-5), retirados: REPORTE.md loop.log ultimo_extractor.json ultimo_auditor.json
+[2026-09-12 21:33:52]   hereda 3 remedio(s) del acta anterior, entregados en el prompt (D.40)
+[2026-09-12 22:09:01] auditor ciego listo (USD 11.403277), 2109s, intento 1 de 7
+[2026-09-12 22:09:01]   herencia declarada: acta leida por su huella y los 3 heredados resueltos
+[2026-09-12 22:09:01]   apertura ciega sellada: 47153396dc9369bb930421ae0c3fde2bdf22f7ea
+[pre-commit] gate de integridad
+GATE VERDE.
+  nodos verificados: 203
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones
+[pre-commit] barrido de guiones
+BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+[pre-commit] verde
+[2026-09-12 22:09:03] VUELTA 1 : AUDITOR (claude-opus-5)
+[2026-09-12 22:49:56] auditor listo (USD 16.902403999999994), 2453s, intento 1 de 7
+[2026-09-12 22:49:56]   sello de la apertura ciega verificado: intacto tras el turno
+[2026-09-12 22:49:57] VUELTA 2 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
+[2026-09-12 22:49:57] VUELTA 2 : EXTRACTOR (claude-opus-5)
+[2026-09-12 23:45:44] extractor listo (USD 26.44116700000001), 3347s, intento 1 de 7
+[2026-09-12 23:45:45] VUELTA 2 : APERTURA CIEGA (claude-opus-5), retirados: REPORTE.md loop.log ultimo_extractor.json ultimo_auditor.json
+[2026-09-12 23:45:45]   hereda 5 remedio(s) del acta anterior, entregados en el prompt (D.40)
+[2026-09-13 00:50:18] auditor ciego listo (USD 12.6247215), 3873s, intento 1 de 7
+[2026-09-13 00:50:22]   herencia declarada: acta leida por su huella y los 5 heredados resueltos
+[2026-09-13 00:50:23]   apertura ciega sellada: 6bc2e586a742521230e7bdb7c80cc162a9dad653
+[pre-commit] gate de integridad
+GATE VERDE.
+  nodos verificados: 203
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones
+[pre-commit] barrido de guiones
+BARRIDO DE GUIONES EN ROJO: 1 hallazgo(s)
+  .nombres_auditor_v22.py linea 14 columna 39: guion largo (U+2014)
+Regla: cero guiones largos y cero guiones medios en todo el repo (manual seccion 2). Usa el guion corto normal.
+
+[pre-commit] COMMIT ABORTADO: hay guiones largos o medios en el repo.
+Reemplazalos por el guion corto normal y vuelve a intentarlo.
+[2026-09-13 00:50:24] VUELTA 2 : AUDITOR (claude-opus-5)
+[2026-09-13 01:23:48] auditor listo (USD 14.0389075), 2003s, intento 1 de 7
+[2026-09-13 01:23:48]   sello de la apertura ciega verificado: intacto tras el turno
+[2026-09-13 01:23:48] DETENIDO en la vuelta 3: existe docs/loop/PARA_ALEXIS.md. Leelo.
+[2026-09-13 01:23:48] Arnes terminado. Revisa docs/loop/PARA_ALEXIS.md si existe, y docs/loop/ACTA_AUDITOR.md.
+[2026-09-13 12:05:45] arranque: rama extraccion-mundo-11, MODO_INSERCION=insertar
+[2026-09-13 12:05:45] ROL INICIAL POR MEDICION: EXTRACTOR. El REPORTE es mas nuevo que el ACTA, PERO el ultimo turno que corrio el arnes fue el del AUDITOR: el reporte se toco FUERA de un turno y no hay vuelta sin auditar.
+[2026-09-13 12:05:45]   ultimo commit de REPORTE.md      : 2026-09-13 09:08:49 (1789304929)
+[2026-09-13 12:05:45]   ultimo commit de ACTA_AUDITOR.md : 2026-09-13 01:22:10 (1789276930)
+[2026-09-13 12:05:45]   testigo del extractor escrito en : 2026-09-12 23:45:44 (1789271144)
+[2026-09-13 12:05:45]   testigo del auditor escrito en   : 2026-09-13 01:23:47 (1789277027)
+[2026-09-13 12:05:45] VUELTA 1 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
+[2026-09-13 12:05:45] VUELTA 1 : EXTRACTOR (claude-opus-5)
+[2026-09-13 13:36:26] extractor listo (USD 45.60477499999999), 5439s, intento 1 de 7
+[2026-09-13 13:36:26] VUELTA 1 : APERTURA CIEGA (claude-opus-5), retirados: REPORTE.md loop.log ultimo_extractor.json ultimo_auditor.json
+[2026-09-13 13:36:26]   hereda 1 remedio(s) del acta anterior, entregados en el prompt (D.40)
+[2026-09-13 13:58:35] auditor ciego listo (USD 7.294710500000001), 1329s, intento 1 de 7
+[2026-09-13 13:58:36]   herencia declarada: acta leida por su huella y los 1 heredados resueltos
+[2026-09-13 13:58:36]   apertura ciega sellada: 1799fe72e62081174304c6897c3d8573b12dbe51
+[pre-commit] gate de integridad
+GATE VERDE.
+  nodos verificados: 203
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones
+[pre-commit] barrido de guiones
+BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+[pre-commit] tallado del reporte (D.41)
+============================================================================
+TALLADO DEL REPORTE (D.41): la tabla que dice ser de instrumento
+============================================================================
+tablas que declaran instrumento : 26
+  talladas, celda a celda       : 23
+  que DIFIEREN de su instrumento: 0
+  sin poder comprobar           : 0
+  que CITAN y no reproducen     : 3   (declaradas PARCIAL)
+      linea 27198 de docs/loop/REPORTE.md
+      linea 27324 de docs/loop/REPORTE.md
+      linea 27622 de docs/loop/REPORTE.md
+
+TALLADO VERDE: las 23 tabla(s) comprobables son las de su instrumento, celda a celda.
+[cierre] tallado del reporte (D.41)
+
+CIERRE VERDE: el tallado del reporte.
+[pre-commit] verde
+[2026-09-13 13:58:38] VUELTA 1 : AUDITOR (claude-opus-5)
+[2026-09-13 14:30:15] auditor listo (USD 13.541190499999997), 1897s, intento 1 de 7
+[2026-09-13 14:30:15]   sello de la apertura ciega verificado: intacto tras el turno
+[2026-09-13 14:30:15] VUELTA 2 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
+[2026-09-13 14:30:15] VUELTA 2 : EXTRACTOR (claude-opus-5)
+[2026-09-13 16:00:15] extractor listo (USD 45.98714549999999), 5400s, intento 1 de 7
+[2026-09-13 16:00:15] VUELTA 2 : APERTURA CIEGA (claude-opus-5), retirados: REPORTE.md loop.log ultimo_extractor.json ultimo_auditor.json
+[2026-09-13 16:00:15]   hereda 4 remedio(s) del acta anterior, entregados en el prompt (D.40)
+[2026-09-13 16:29:18] auditor ciego listo (USD 11.939647500000001), 1742s, intento 1 de 7
+[2026-09-13 16:29:18]   herencia declarada: acta leida por su huella y los 4 heredados resueltos
+[2026-09-13 16:29:18]   apertura ciega sellada: 9bce7552e47125873a63dabefaa68176dc20c22b
+[pre-commit] gate de integridad
+GATE VERDE.
+  nodos verificados: 214
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones
+[pre-commit] barrido de guiones
+BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+[pre-commit] tallado del reporte (D.41)
+============================================================================
+TALLADO DEL REPORTE (D.41): la tabla que dice ser de instrumento
+============================================================================
+tablas que declaran instrumento : 41
+  talladas, celda a celda       : 37
+  que DIFIEREN de su instrumento: 0
+  sin poder comprobar           : 0
+  que CITAN y no reproducen     : 4   (declaradas PARCIAL)
+      linea 27198 de docs/loop/REPORTE.md
+      linea 27324 de docs/loop/REPORTE.md
+      linea 27622 de docs/loop/REPORTE.md
+      linea 28464 de docs/loop/REPORTE.md
+
+TALLADO VERDE: las 37 tabla(s) comprobables son las de su instrumento, celda a celda.
+[cierre] tallado del reporte (D.41)
+
+CIERRE VERDE: el tallado del reporte.
+[pre-commit] verde
+[2026-09-13 16:29:22] VUELTA 2 : AUDITOR (claude-opus-5)
+[2026-09-13 17:32:16] auditor listo (USD 16.9779845), 3774s, intento 1 de 7
+[2026-09-13 17:32:16]   sello de la apertura ciega verificado: intacto tras el turno
+[2026-09-13 17:32:16] VUELTA 3 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
+[2026-09-13 17:32:16] VUELTA 3 : EXTRACTOR (claude-opus-5)
+[2026-09-13 18:40:40] extractor listo (USD 62.111633499999996), 4104s, intento 1 de 7
+[2026-09-13 18:40:41] VUELTA 3 : APERTURA CIEGA (claude-opus-5), retirados: REPORTE.md loop.log ultimo_extractor.json ultimo_auditor.json
+[2026-09-13 18:40:41]   hereda 5 remedio(s) del acta anterior, entregados en el prompt (D.40)
+[2026-09-13 19:05:46] auditor ciego listo (USD 7.9297945), 1505s, intento 1 de 7
+[2026-09-13 19:05:47]   herencia declarada: acta leida por su huella y los 5 heredados resueltos
+[2026-09-13 19:05:47]   apertura ciega sellada: f01e651ab6de92f9a437aa4764742fec2df3c77c
+[pre-commit] gate de integridad
+GATE VERDE.
+  nodos verificados: 222
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones
+[pre-commit] barrido de guiones
+BARRIDO DE GUIONES EN ROJO: 8 hallazgo(s)
+  .t1_v26_auditor/fidelidad_cap02_b.txt linea 8 columna 12: guion largo (U+2014)
+  .t1_v26_auditor/fidelidad_cap02_b.txt linea 8 columna 60: guion largo (U+2014)
+  .t1_v26_auditor/fidelidad_cap02_b.txt linea 16 columna 12: guion largo (U+2014)
+  .t1_v26_auditor/fidelidad_cap02_b.txt linea 16 columna 60: guion largo (U+2014)
+  .t1_v26_auditor/fidelidad_cap02_b.txt linea 30 columna 12: guion largo (U+2014)
+  .t1_v26_auditor/fidelidad_cap02_b.txt linea 30 columna 60: guion largo (U+2014)
+  .t1_v26_auditor/fidelidad_cap02_b.txt linea 38 columna 12: guion largo (U+2014)
+  .t1_v26_auditor/fidelidad_cap02_b.txt linea 38 columna 60: guion largo (U+2014)
+Regla: cero guiones largos y cero guiones medios en todo el repo (manual seccion 2). Usa el guion corto normal.
+
+[pre-commit] COMMIT ABORTADO: hay guiones largos o medios en el repo.
+Reemplazalos por el guion corto normal y vuelve a intentarlo.
+[2026-09-13 19:05:49] VUELTA 3 : AUDITOR (claude-opus-5)
+[2026-09-13 19:44:49] auditor listo (USD 15.971009000000002), 2339s, intento 1 de 7
+[2026-09-13 19:44:49]   sello de la apertura ciega verificado: intacto tras el turno
+[2026-09-13 19:44:49] DETENIDO en la vuelta 4: existe docs/loop/PARA_ALEXIS.md. Leelo.
+[2026-09-13 19:44:49] Arnes terminado. Revisa docs/loop/PARA_ALEXIS.md si existe, y docs/loop/ACTA_AUDITOR.md.
+[2026-09-15 23:30:41] arranque: rama extraccion-mundo-11, MODO_INSERCION=insertar
+[2026-09-15 23:30:42] ROL INICIAL POR MEDICION: EXTRACTOR. El ACTA no es mas vieja que el REPORTE: no hay vuelta sin auditar delante.
+[2026-09-15 23:30:42]   ultimo commit de REPORTE.md      : 2026-09-15 23:30:31 (1789529431)
+[2026-09-15 23:30:42]   ultimo commit de ACTA_AUDITOR.md : 2026-09-15 23:30:31 (1789529431)
+[2026-09-15 23:30:42] VUELTA 1 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
+[2026-09-15 23:30:42] VUELTA 1 : EXTRACTOR (claude-opus-5)
+[2026-09-16 01:30:28] extractor listo (USD 20.74394800000001), 7186s, intento 1 de 7
+[2026-09-16 01:30:29] VUELTA 1 : APERTURA CIEGA (claude-opus-5), retirados: REPORTE.md loop.log ultimo_extractor.json ultimo_auditor.json
+[2026-09-16 01:30:29]   hereda 3 remedio(s) del acta anterior, entregados en el prompt (D.40)
+[2026-09-16 02:15:44] auditor ciego listo (USD 12.287855000000002), 2715s, intento 1 de 7
+[2026-09-16 02:15:45]   herencia declarada: acta leida por su huella y los 3 heredados resueltos
+[2026-09-16 02:15:45]   apertura ciega sellada: 53af78a2cc25948245f787d50b4e43214c792d10
+[pre-commit] gate de integridad
+GATE VERDE.
+  nodos verificados: 234
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones
+[pre-commit] barrido de guiones
+BARRIDO DE GUIONES EN ROJO: 8 hallazgo(s)
+  .v27/frontera_cap06_v27.py linea 30 columna 17: guion largo (U+2014)
+  .v27/frontera_cap06_v27.txt linea 45 columna 23: guion largo (U+2014)
+  .v27/frontera_cap07_v27.py linea 18 columna 26: guion largo (U+2014)
+  .v27/frontera_cap07_v27.txt linea 53 columna 10: guion largo (U+2014)
+  .v27/frontera_cap07_v27.txt linea 54 columna 10: guion largo (U+2014)
+  .v27/frontera_cap07_v27.txt linea 57 columna 10: guion largo (U+2014)
+  .v27/frontera_cap07_v27.txt linea 60 columna 10: guion largo (U+2014)
+  .v27/frontera_cap07_v27b.py linea 30 columna 17: guion largo (U+2014)
+Regla: cero guiones largos y cero guiones medios en todo el repo (manual seccion 2). Usa el guion corto normal.
+
+[pre-commit] COMMIT ABORTADO: hay guiones largos o medios en el repo.
+Reemplazalos por el guion corto normal y vuelve a intentarlo.
+[2026-09-16 02:15:47] VUELTA 1 : AUDITOR (claude-opus-5)
+[2026-09-16 02:44:27] auditor listo (USD 12.005655999999998), 1720s, intento 1 de 7
+[2026-09-16 02:44:27]   sello de la apertura ciega verificado: intacto tras el turno
+[2026-09-16 02:44:27] DETENIDO en la vuelta 2: existe docs/loop/PARA_ALEXIS.md. Leelo.
+[2026-09-16 02:44:27] Arnes terminado. Revisa docs/loop/PARA_ALEXIS.md si existe, y docs/loop/ACTA_AUDITOR.md.
+[2026-09-16 06:18:37] arranque: rama extraccion-mundo-11, MODO_INSERCION=insertar
+[2026-09-16 06:18:37] ROL INICIAL POR MEDICION: EXTRACTOR. El ACTA no es mas vieja que el REPORTE: no hay vuelta sin auditar delante.
+[2026-09-16 06:18:37]   ultimo commit de REPORTE.md      : 2026-09-16 01:29:48 (1789536588)
+[2026-09-16 06:18:37]   ultimo commit de ACTA_AUDITOR.md : 2026-09-16 02:42:58 (1789540978)
+[2026-09-16 06:18:37] VUELTA 1 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
+[2026-09-16 06:18:37] VUELTA 1 : EXTRACTOR (claude-opus-5)
+[2026-09-16 07:55:19] extractor listo (USD 19.416285000000006), 5801s, intento 1 de 7
+[2026-09-16 07:55:19] VUELTA 1 : APERTURA CIEGA (claude-opus-5), retirados: REPORTE.md loop.log ultimo_extractor.json ultimo_auditor.json
+[2026-09-16 07:55:19]   hereda 0 remedio(s) del acta anterior, entregados en el prompt (D.40)
+[2026-09-16 08:19:55] auditor ciego listo (USD 13.141511999999999), 1475s, intento 1 de 7
+[2026-09-16 08:19:56]   herencia declarada: acta leida por su huella y los 0 heredados resueltos
+[2026-09-16 08:19:56]   apertura ciega sellada: f48c7cb705ef823edf53df1da93b7f94746dbe6a
+[pre-commit] gate de integridad
+GATE VERDE.
+  nodos verificados: 239
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones
+[pre-commit] barrido de guiones
+BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+[pre-commit] tallado del reporte (D.41) y censo de rutas (D.42)
+============================================================================
+TALLADO DEL REPORTE (D.41): la tabla que dice ser de instrumento
+============================================================================
+tablas que declaran instrumento : 82
+  talladas, celda a celda       : 42
+  que DIFIEREN de su instrumento: 0
+  con la ruta VACIA             : 0   (cero bytes, 7.B)
+  sin poder comprobar           : 0
+  que CITAN y no reproducen     : 40   (declaradas PARCIAL)
+      linea 27198 de docs/loop/REPORTE.md
+      linea 27324 de docs/loop/REPORTE.md
+      linea 27622 de docs/loop/REPORTE.md
+      linea 28467 de docs/loop/REPORTE.md
+      linea 29796 de docs/loop/REPORTE.md
+      linea 29981 de docs/loop/REPORTE.md
+      linea 30032 de docs/loop/REPORTE.md
+      linea 30074 de docs/loop/REPORTE.md
+      linea 30142 de docs/loop/REPORTE.md
+      linea 30279 de docs/loop/REPORTE.md
+      linea 30431 de docs/loop/REPORTE.md
+      linea 30575 de docs/loop/REPORTE.md
+      linea 30721 de docs/loop/REPORTE.md
+      linea 31003 de docs/loop/REPORTE.md
+      linea 31050 de docs/loop/REPORTE.md
+      linea 31161 de docs/loop/REPORTE.md
+      linea 31265 de docs/loop/REPORTE.md
+      linea 31308 de docs/loop/REPORTE.md
+      linea 31339 de docs/loop/REPORTE.md
+      linea 31365 de docs/loop/REPORTE.md
+      linea 31524 de docs/loop/REPORTE.md
+      linea 31700 de docs/loop/REPORTE.md
+      linea 31776 de docs/loop/REPORTE.md
+      linea 31831 de docs/loop/REPORTE.md
+      linea 31845 de docs/loop/REPORTE.md
+      linea 31892 de docs/loop/REPORTE.md
+      linea 31903 de docs/loop/REPORTE.md
+      linea 31930 de docs/loop/REPORTE.md
+      linea 31979 de docs/loop/REPORTE.md
+      linea 32049 de docs/loop/REPORTE.md
+      linea 32072 de docs/loop/REPORTE.md
+      linea 32120 de docs/loop/REPORTE.md
+      linea 32226 de docs/loop/REPORTE.md
+      linea 32258 de docs/loop/REPORTE.md
+      linea 32280 de docs/loop/REPORTE.md
+      linea 32320 de docs/loop/REPORTE.md
+      linea 32435 de docs/loop/REPORTE.md
+      linea 32471 de docs/loop/REPORTE.md
+      linea 32510 de docs/loop/REPORTE.md
+      linea 32599 de docs/loop/REPORTE.md
+
+TALLADO VERDE: las 42 tabla(s) comprobables son las de su instrumento, celda a celda.
+============================================================================
+CENSO DE RUTAS (D.42): la unidad de la ruta es la celda
+============================================================================
+rutas publicadas y censadas : 408
+  pasan                     : 408
+  CAEN                      : 0
+      PATRON                           29
+      VACIA A PROPOSITO                3
+      con contenido                    375
+      vacia por protocolo              1
+
+CENSO VERDE: las 408 rutas publicadas sostienen lo que dicen sostener.
+[cierre] tallado del reporte (D.41)
+[cierre] censo de rutas (D.42)
+
+CIERRE VERDE: el tallado y el censo de rutas.
+[pre-commit] verde
+[2026-09-16 08:19:58] VUELTA 1 : AUDITOR (claude-opus-5)
+[2026-09-16 08:49:22] auditor listo (USD 12.665389499999998), 1763s, intento 1 de 7
+[2026-09-16 08:49:22]   sello de la apertura ciega verificado: intacto tras el turno
+[2026-09-16 08:49:22] VUELTA 2 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
+[2026-09-16 08:49:22] VUELTA 2 : EXTRACTOR (claude-opus-5)
+[2026-09-16 09:54:33] extractor listo (USD 46.497074999999995), 3911s, intento 1 de 7
+[2026-09-16 09:54:33] VUELTA 2 : APERTURA CIEGA (claude-opus-5), retirados: REPORTE.md loop.log ultimo_extractor.json ultimo_auditor.json
+[2026-09-16 09:54:34]   hereda 1 remedio(s) del acta anterior, entregados en el prompt (D.40)
+[2026-09-16 10:40:59] auditor ciego listo (USD 18.53650199999999), 2785s, intento 1 de 7
+[2026-09-16 10:41:02]   herencia declarada: acta leida por su huella y los 1 heredados resueltos
+[2026-09-16 10:41:02]   apertura ciega sellada: 2f326b1b60e28a42ed21a96ce2bf967d9d20208b
+[pre-commit] gate de integridad
+GATE VERDE.
+  nodos verificados: 243
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones
+[pre-commit] barrido de guiones
+BARRIDO DE GUIONES EN ROJO: 5 hallazgo(s)
+  .v29/libro_65_77.txt linea 11 columna 146: guion largo (U+2014)
+  .v29/libro_cap11_281.txt linea 3 columna 450: guion largo (U+2014)
+  .v29/libro_cap11_281.txt linea 3 columna 463: guion largo (U+2014)
+  .v29/rotulos_cap07.py linea 26 columna 64: guion largo (U+2014)
+  .v29/rotulos_cap07.py linea 26 columna 90: guion largo (U+2014)
+Regla: cero guiones largos y cero guiones medios en todo el repo (manual seccion 2). Usa el guion corto normal.
+
+[pre-commit] COMMIT ABORTADO: hay guiones largos o medios en el repo.
+Reemplazalos por el guion corto normal y vuelve a intentarlo.
+[2026-09-16 10:41:04] VUELTA 2 : AUDITOR (claude-opus-5)
+[2026-09-16 11:18:22] auditor listo (USD 19.034013500000007), 2238s, intento 1 de 7
+[2026-09-16 11:18:22]   sello de la apertura ciega verificado: intacto tras el turno
+[2026-09-16 11:18:22] DETENIDO en la vuelta 3: existe docs/loop/PARA_ALEXIS.md. Leelo.
+[2026-09-16 11:18:22] Arnes terminado. Revisa docs/loop/PARA_ALEXIS.md si existe, y docs/loop/ACTA_AUDITOR.md.
+[2026-09-16 13:03:06] arranque: rama extraccion-mundo-11, MODO_INSERCION=insertar
+[2026-09-16 13:03:06] ROL INICIAL POR MEDICION: EXTRACTOR. El ACTA no es mas vieja que el REPORTE: no hay vuelta sin auditar delante.
+[2026-09-16 13:03:06]   ultimo commit de REPORTE.md      : 2026-09-16 09:53:59 (1789566839)
+[2026-09-16 13:03:06]   ultimo commit de ACTA_AUDITOR.md : 2026-09-16 11:17:11 (1789571831)
+[2026-09-16 13:03:06] VUELTA 1 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
+[2026-09-16 13:03:06] VUELTA 1 : EXTRACTOR (claude-opus-5)
+[2026-09-16 14:38:59] extractor listo (USD 22.960002), 5753s, intento 1 de 7
+[2026-09-16 14:39:00] VUELTA 1 : APERTURA CIEGA (claude-opus-5), retirados: REPORTE.md loop.log ultimo_extractor.json ultimo_auditor.json
+[2026-09-16 14:39:00]   hereda 2 remedio(s) del acta anterior, entregados en el prompt (D.40)
+[2026-09-16 15:28:04] auditor ciego listo (USD 14.698004499999998), 2943s, intento 1 de 7
+[2026-09-16 15:28:05]   herencia declarada: acta leida por su huella y los 2 heredados resueltos
+[2026-09-16 15:28:05]   testigo de guardas, antes de sellar (D.38.3)
+[2026-09-16 15:28:07] SELLO NO ACEPTADO en la vuelta 1: una guarda estaba en ROJO al sellar.
+[2026-09-16 15:28:07]     EL SELLO NO SE ACEPTA: 1 guarda(s) en rojo al sellar.
+[2026-09-16 15:28:07]       la guarda 'censo_rutas' estaba en ROJO en el instante del sello (2026-09-16 15:28:05). Una cifra vale en el instante del sello (D.38.3, 16 sep 2026): si al cerrar hay un rojo, la tabla de cierre no se escribio DESPUES de volver a correr las guardas. 
+[2026-09-16 15:28:07] DETENIDO en la vuelta 1: el testigo desmiente el estado del sello. Ver docs/loop/PARA_ALEXIS.md
+[2026-09-16 15:36:36] arranque: rama extraccion-mundo-11, MODO_INSERCION=insertar
+[2026-09-16 15:36:36] ROL INICIAL POR MEDICION: AUDITOR. El REPORTE es mas nuevo que el ACTA, asi que la vuelta anterior quedo SIN AUDITAR.
+[2026-09-16 15:36:36]   y los testigos del arnes lo confirman: el ultimo turno NO fue el del auditor
+[2026-09-16 15:36:37]   ultimo commit de REPORTE.md      : 2026-09-16 14:36:24 (1789583784)
+[2026-09-16 15:36:37]   ultimo commit de ACTA_AUDITOR.md : 2026-09-16 11:17:11 (1789571831)
+[2026-09-16 15:36:37] VUELTA 1 : SE SALTA EL TURNO DEL EXTRACTOR, la corrida empieza por el AUDITOR
+[2026-09-16 15:36:38] VUELTA 1 : APERTURA CIEGA (claude-opus-5), retirados: REPORTE.md loop.log ultimo_extractor.json ultimo_auditor.json
+[2026-09-16 15:36:38]   hereda 2 remedio(s) del acta anterior, entregados en el prompt (D.40)
+[2026-09-16 16:16:48] auditor ciego listo (USD 12.080979000000001), 2410s, intento 1 de 7
+[2026-09-16 16:16:51]   herencia declarada: acta leida por su huella y los 2 heredados resueltos
+[2026-09-16 16:16:51]   testigo de guardas, antes de sellar (D.38.3)
+[2026-09-16 16:16:53]   testigo: las guardas estaban en verde en el instante del sello
+[2026-09-16 16:16:54]   apertura ciega sellada: 406ca90e54a2097d3f8371f01346b48a5d377d51
+warning: in the working copy of 'docs/loop/APERTURA_CIEGA.md', CRLF will be replaced by LF the next time Git touches it
+[pre-commit] gate de integridad
+GATE VERDE.
+  nodos verificados: 256
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+[pre-commit] barrido de guiones
+BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+[pre-commit] tallado del reporte (D.41) y censo de rutas (D.42)
+============================================================================
+TALLADO DEL REPORTE (D.41): la tabla que dice ser de instrumento
+============================================================================
+tablas que declaran instrumento : 107
+  talladas, celda a celda       : 50
+  que DIFIEREN de su instrumento: 0
+  con la ruta VACIA             : 0   (cero bytes, 7.B)
+  sin poder comprobar           : 0
+  que CITAN y no reproducen     : 57   (declaradas PARCIAL)
+      linea 27198 de docs/loop/REPORTE.md
+      linea 27324 de docs/loop/REPORTE.md
+      linea 27622 de docs/loop/REPORTE.md
+      linea 28467 de docs/loop/REPORTE.md
+      linea 29796 de docs/loop/REPORTE.md
+      linea 29981 de docs/loop/REPORTE.md
+      linea 30032 de docs/loop/REPORTE.md
+      linea 30074 de docs/loop/REPORTE.md
+      linea 30142 de docs/loop/REPORTE.md
+      linea 30279 de docs/loop/REPORTE.md
+      linea 30431 de docs/loop/REPORTE.md
+      linea 30575 de docs/loop/REPORTE.md
+      linea 30721 de docs/loop/REPORTE.md
+      linea 31003 de docs/loop/REPORTE.md
+      linea 31050 de docs/loop/REPORTE.md
+      linea 31161 de docs/loop/REPORTE.md
+      linea 31265 de docs/loop/REPORTE.md
+      linea 31308 de docs/loop/REPORTE.md
+      linea 31339 de docs/loop/REPORTE.md
+      linea 31365 de docs/loop/REPORTE.md
+      linea 31524 de docs/loop/REPORTE.md
+      linea 31700 de docs/loop/REPORTE.md
+      linea 31776 de docs/loop/REPORTE.md
+      linea 31831 de docs/loop/REPORTE.md
+      linea 31845 de docs/loop/REPORTE.md
+      linea 31892 de docs/loop/REPORTE.md
+      linea 31903 de docs/loop/REPORTE.md
+      linea 31930 de docs/loop/REPORTE.md
+      linea 31979 de docs/loop/REPORTE.md
+      linea 32049 de docs/loop/REPORTE.md
+      linea 32072 de docs/loop/REPORTE.md
+      linea 32120 de docs/loop/REPORTE.md
+      linea 32226 de docs/loop/REPORTE.md
+      linea 32258 de docs/loop/REPORTE.md
+      linea 32280 de docs/loop/REPORTE.md
+      linea 32320 de docs/loop/REPORTE.md
+      linea 32435 de docs/loop/REPORTE.md
+      linea 32471 de docs/loop/REPORTE.md
+      linea 32510 de docs/loop/REPORTE.md
+      linea 32599 de docs/loop/REPORTE.md
+      linea 32670 de docs/loop/REPORTE.md
+      linea 32684 de docs/loop/REPORTE.md
+      linea 33020 de docs/loop/REPORTE.md
+      linea 33088 de docs/loop/REPORTE.md
+      linea 33129 de docs/loop/REPORTE.md
+      linea 33157 de docs/loop/REPORTE.md
+      linea 33257 de docs/loop/REPORTE.md
+      linea 33306 de docs/loop/REPORTE.md
+      linea 33375 de docs/loop/REPORTE.md
+      linea 33398 de docs/loop/REPORTE.md
+      linea 33506 de docs/loop/REPORTE.md
+      linea 33527 de docs/loop/REPORTE.md
+      linea 33544 de docs/loop/REPORTE.md
+      linea 33611 de docs/loop/REPORTE.md
+      linea 33636 de docs/loop/REPORTE.md
+      linea 33708 de docs/loop/REPORTE.md
+      linea 33720 de docs/loop/REPORTE.md
+
+TALLADO VERDE: las 50 tabla(s) comprobables son las de su instrumento, celda a celda.
+============================================================================
+CENSO DE RUTAS (D.42): la unidad de la ruta es la celda
+============================================================================
+rutas publicadas y censadas : 455
+  pasan                     : 455
+  CAEN                      : 0
+      PATRON                           29
+      VACIA A PROPOSITO                3
+      con contenido                    422
+      vacia por protocolo              1
+
+CENSO VERDE: las 455 rutas publicadas sostienen lo que dicen sostener.
+[cierre] tallado del reporte (D.41)
+[cierre] censo de rutas (D.42)
+
+CIERRE VERDE: el tallado y el censo de rutas.
+[pre-commit] verde
+[2026-09-16 16:16:56] VUELTA 1 : AUDITOR (claude-opus-5)
+[2026-09-16 16:59:50] auditor listo (USD 18.187563499999992), 2574s, intento 1 de 7
+[2026-09-16 16:59:51]   sello de la apertura ciega verificado: intacto tras el turno
+[2026-09-16 16:59:51] VUELTA 2 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
+[2026-09-16 16:59:51] VUELTA 2 : EXTRACTOR (claude-opus-5)
+[2026-09-16 18:39:34] extractor listo (USD 28.562491499999993), 5983s, intento 1 de 7
+[2026-09-16 18:39:35] VUELTA 2 : APERTURA CIEGA (claude-opus-5), retirados: REPORTE.md loop.log ultimo_extractor.json ultimo_auditor.json
+[2026-09-16 18:39:35]   hereda 3 remedio(s) del acta anterior, entregados en el prompt (D.40)
+[2026-09-16 19:01:09] auditor ciego listo (USD 11.674637999999996), 1294s, intento 1 de 7
+[2026-09-16 19:01:10]   herencia declarada: acta leida por su huella y los 3 heredados resueltos
+[2026-09-16 19:01:10]   testigo de guardas, antes de sellar (D.38.3)
+[2026-09-16 19:01:12]   testigo: las guardas estaban en verde en el instante del sello
+[2026-09-16 19:01:13]   apertura ciega sellada: 480d3b91340f63988cb1fb028d50106fee142ac2
+[pre-commit] gate de integridad
+GATE VERDE.
+  nodos verificados: 267
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+[pre-commit] barrido de guiones
+BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+[pre-commit] tallado del reporte (D.41) y censo de rutas (D.42)
+============================================================================
+TALLADO DEL REPORTE (D.41): la tabla que dice ser de instrumento
+============================================================================
+tablas que declaran instrumento : 119
+  talladas, celda a celda       : 61
+  que DIFIEREN de su instrumento: 0
+  con la ruta VACIA             : 0   (cero bytes, 7.B)
+  sin poder comprobar           : 0
+  que CITAN y no reproducen     : 58   (declaradas PARCIAL)
+      linea 27198 de docs/loop/REPORTE.md
+      linea 27324 de docs/loop/REPORTE.md
+      linea 27622 de docs/loop/REPORTE.md
+      linea 28467 de docs/loop/REPORTE.md
+      linea 29796 de docs/loop/REPORTE.md
+      linea 29981 de docs/loop/REPORTE.md
+      linea 30032 de docs/loop/REPORTE.md
+      linea 30074 de docs/loop/REPORTE.md
+      linea 30142 de docs/loop/REPORTE.md
+      linea 30279 de docs/loop/REPORTE.md
+      linea 30431 de docs/loop/REPORTE.md
+      linea 30575 de docs/loop/REPORTE.md
+      linea 30721 de docs/loop/REPORTE.md
+      linea 31003 de docs/loop/REPORTE.md
+      linea 31050 de docs/loop/REPORTE.md
+      linea 31161 de docs/loop/REPORTE.md
+      linea 31265 de docs/loop/REPORTE.md
+      linea 31308 de docs/loop/REPORTE.md
+      linea 31339 de docs/loop/REPORTE.md
+      linea 31365 de docs/loop/REPORTE.md
+      linea 31524 de docs/loop/REPORTE.md
+      linea 31700 de docs/loop/REPORTE.md
+      linea 31776 de docs/loop/REPORTE.md
+      linea 31831 de docs/loop/REPORTE.md
+      linea 31845 de docs/loop/REPORTE.md
+      linea 31892 de docs/loop/REPORTE.md
+      linea 31903 de docs/loop/REPORTE.md
+      linea 31930 de docs/loop/REPORTE.md
+      linea 31979 de docs/loop/REPORTE.md
+      linea 32049 de docs/loop/REPORTE.md
+      linea 32072 de docs/loop/REPORTE.md
+      linea 32120 de docs/loop/REPORTE.md
+      linea 32226 de docs/loop/REPORTE.md
+      linea 32258 de docs/loop/REPORTE.md
+      linea 32280 de docs/loop/REPORTE.md
+      linea 32320 de docs/loop/REPORTE.md
+      linea 32435 de docs/loop/REPORTE.md
+      linea 32471 de docs/loop/REPORTE.md
+      linea 32510 de docs/loop/REPORTE.md
+      linea 32599 de docs/loop/REPORTE.md
+      linea 32670 de docs/loop/REPORTE.md
+      linea 32684 de docs/loop/REPORTE.md
+      linea 33020 de docs/loop/REPORTE.md
+      linea 33088 de docs/loop/REPORTE.md
+      linea 33129 de docs/loop/REPORTE.md
+      linea 33157 de docs/loop/REPORTE.md
+      linea 33257 de docs/loop/REPORTE.md
+      linea 33306 de docs/loop/REPORTE.md
+      linea 33375 de docs/loop/REPORTE.md
+      linea 33398 de docs/loop/REPORTE.md
+      linea 33506 de docs/loop/REPORTE.md
+      linea 33527 de docs/loop/REPORTE.md
+      linea 33544 de docs/loop/REPORTE.md
+      linea 33611 de docs/loop/REPORTE.md
+      linea 33636 de docs/loop/REPORTE.md
+      linea 33708 de docs/loop/REPORTE.md
+      linea 33720 de docs/loop/REPORTE.md
+      linea 35010 de docs/loop/REPORTE.md
+
+TALLADO VERDE: las 61 tabla(s) comprobables son las de su instrumento, celda a celda.
+============================================================================
+CENSO DE RUTAS (D.42): la unidad de la ruta es la celda
+============================================================================
+rutas publicadas y censadas : 493
+  pasan                     : 493
+  CAEN                      : 0
+      PATRON                           32
+      VACIA A PROPOSITO                3
+      con contenido                    457
+      vacia por protocolo              1
+
+CENSO VERDE: las 493 rutas publicadas sostienen lo que dicen sostener.
+[cierre] tallado del reporte (D.41)
+[cierre] censo de rutas (D.42)
+
+CIERRE VERDE: el tallado y el censo de rutas.
+[pre-commit] verde
+[2026-09-16 19:01:15] VUELTA 2 : AUDITOR (claude-opus-5)
+[2026-09-16 19:35:39] auditor listo (USD 12.243518999999997), 2064s, intento 1 de 7
+[2026-09-16 19:35:39]   sello de la apertura ciega verificado: intacto tras el turno
+[2026-09-16 19:35:39] VUELTA 3 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
+[2026-09-16 19:35:39] VUELTA 3 : EXTRACTOR (claude-opus-5)
+[2026-09-16 20:54:02] arranque: rama extraccion-marquet_turn_the_ship, MODO_INSERCION=cuarentena
+[2026-09-16 20:54:02] ROL INICIAL POR MEDICION: AUDITOR. El REPORTE es mas nuevo que el ACTA, asi que la vuelta anterior quedo SIN AUDITAR.
+[2026-09-16 20:54:02]   y los testigos del arnes lo confirman: el ultimo turno NO fue el del auditor
+[2026-09-16 20:54:02]   ultimo commit de REPORTE.md      : 2026-09-16 20:23:56 (1789604636)
+[2026-09-16 20:54:02]   ultimo commit de ACTA_AUDITOR.md : 2026-09-16 19:33:58 (1789601638)
+[2026-09-16 20:54:02] VUELTA 1 : SE SALTA EL TURNO DEL EXTRACTOR, la corrida empieza por el AUDITOR
+[2026-09-16 20:54:02] VUELTA 1 : APERTURA CIEGA (claude-opus-5), retirados: REPORTE.md loop.log ultimo_extractor.json ultimo_auditor.json
+[2026-09-16 20:54:03]   hereda 4 remedio(s) del acta anterior, entregados en el prompt (D.40)
+[2026-09-16 21:55:07] auditor ciego: fallo instantaneo (probable limite de uso), 3664s, costo "vacio", intento 1 de 7
+[2026-09-16 21:55:08] fallo "instantaneo"; espero 1800 segundos y reintento
+[2026-09-16 22:37:37] auditor ciego listo (USD 2.7617724999999993), 749s, intento 2 de 7
+[2026-09-16 22:37:38]   herencia declarada: acta leida por su huella y los 4 heredados resueltos
+[2026-09-16 22:37:38] APERTURA CIEGA ROTA en la vuelta 1: REAPARECIERON REPORTE.md loop.log ultimo_extractor.json ultimo_auditor.json
+[2026-09-16 22:37:38]   durante la fase ciega. Solo se recuperan a mano, asi que fue deliberado.
+[2026-09-16 22:37:38]   testigo de guardas, antes de sellar (D.38.3)
+[2026-09-16 22:37:41]   testigo: las guardas estaban en verde en el instante del sello
+[2026-09-16 22:37:41]   apertura ciega sellada: 4a0f7cfec6392179961b023062f0a7eb2ec0a4e9
+[pre-commit] gate de integridad
+GATE VERDE.
+  nodos verificados: 270
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+[pre-commit] barrido de guiones
+BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+[pre-commit] tallado del reporte (D.41) y censo de rutas (D.42)
+============================================================================
+TALLADO DEL REPORTE (D.41): la tabla que dice ser de instrumento
+============================================================================
+tablas que declaran instrumento : 130
+  talladas, celda a celda       : 69
+  que DIFIEREN de su instrumento: 0
+  con la ruta VACIA             : 0   (cero bytes, 7.B)
+  sin poder comprobar           : 0
+  que CITAN y no reproducen     : 61   (declaradas PARCIAL)
+      linea 27198 de docs/loop/REPORTE.md
+      linea 27324 de docs/loop/REPORTE.md
+      linea 27622 de docs/loop/REPORTE.md
+      linea 28467 de docs/loop/REPORTE.md
+      linea 29796 de docs/loop/REPORTE.md
+      linea 29981 de docs/loop/REPORTE.md
+      linea 30032 de docs/loop/REPORTE.md
+      linea 30074 de docs/loop/REPORTE.md
+      linea 30142 de docs/loop/REPORTE.md
+      linea 30279 de docs/loop/REPORTE.md
+      linea 30431 de docs/loop/REPORTE.md
+      linea 30575 de docs/loop/REPORTE.md
+      linea 30721 de docs/loop/REPORTE.md
+      linea 31003 de docs/loop/REPORTE.md
+      linea 31050 de docs/loop/REPORTE.md
+      linea 31161 de docs/loop/REPORTE.md
+      linea 31265 de docs/loop/REPORTE.md
+      linea 31308 de docs/loop/REPORTE.md
+      linea 31339 de docs/loop/REPORTE.md
+      linea 31365 de docs/loop/REPORTE.md
+      linea 31524 de docs/loop/REPORTE.md
+      linea 31700 de docs/loop/REPORTE.md
+      linea 31776 de docs/loop/REPORTE.md
+      linea 31831 de docs/loop/REPORTE.md
+      linea 31845 de docs/loop/REPORTE.md
+      linea 31892 de docs/loop/REPORTE.md
+      linea 31903 de docs/loop/REPORTE.md
+      linea 31930 de docs/loop/REPORTE.md
+      linea 31979 de docs/loop/REPORTE.md
+      linea 32049 de docs/loop/REPORTE.md
+      linea 32072 de docs/loop/REPORTE.md
+      linea 32120 de docs/loop/REPORTE.md
+      linea 32226 de docs/loop/REPORTE.md
+      linea 32258 de docs/loop/REPORTE.md
+      linea 32280 de docs/loop/REPORTE.md
+      linea 32320 de docs/loop/REPORTE.md
+      linea 32435 de docs/loop/REPORTE.md
+      linea 32471 de docs/loop/REPORTE.md
+      linea 32510 de docs/loop/REPORTE.md
+      linea 32599 de docs/loop/REPORTE.md
+      linea 32670 de docs/loop/REPORTE.md
+      linea 32684 de docs/loop/REPORTE.md
+      linea 33020 de docs/loop/REPORTE.md
+      linea 33088 de docs/loop/REPORTE.md
+      linea 33129 de docs/loop/REPORTE.md
+      linea 33157 de docs/loop/REPORTE.md
+      linea 33257 de docs/loop/REPORTE.md
+      linea 33306 de docs/loop/REPORTE.md
+      linea 33375 de docs/loop/REPORTE.md
+      linea 33398 de docs/loop/REPORTE.md
+      linea 33506 de docs/loop/REPORTE.md
+      linea 33527 de docs/loop/REPORTE.md
+      linea 33544 de docs/loop/REPORTE.md
+      linea 33611 de docs/loop/REPORTE.md
+      linea 33636 de docs/loop/REPORTE.md
+      linea 33708 de docs/loop/REPORTE.md
+      linea 33720 de docs/loop/REPORTE.md
+      linea 35010 de docs/loop/REPORTE.md
+      linea 35416 de docs/loop/REPORTE.md
+      linea 35631 de docs/loop/REPORTE.md
+      linea 35747 de docs/loop/REPORTE.md
+
+TALLADO VERDE: las 69 tabla(s) comprobables son las de su instrumento, celda a celda.
+============================================================================
+CENSO DE RUTAS (D.42): la unidad de la ruta es la celda
+============================================================================
+rutas publicadas y censadas : 522
+  pasan                     : 522
+  CAEN                      : 0
+      PATRON                           35
+      VACIA A PROPOSITO                3
+      con contenido                    483
+      vacia por protocolo              1
+
+CENSO VERDE: las 522 rutas publicadas sostienen lo que dicen sostener.
+[cierre] tallado del reporte (D.41)
+[cierre] censo de rutas (D.42)
+
+CIERRE VERDE: el tallado y el censo de rutas.
+[pre-commit] verde
+[2026-09-16 22:37:45] VUELTA 1 : AUDITOR (claude-opus-5)
+[2026-09-16 22:56:36] auditor: fallo instantaneo (probable limite de uso), 1534s, costo "vacio", intento 1 de 7
+[2026-09-16 22:56:36] fallo "instantaneo"; espero 1800 segundos y reintento
+[2026-09-16 23:04:25] auditor listo (USD 12.609955000000001), 1598s, intento 1 de 7
+[2026-09-16 23:04:26]   sello de la apertura ciega verificado: intacto tras el turno
+[2026-09-16 23:04:26] DETENIDO en la vuelta 2: existe docs/loop/PARA_ALEXIS.md. Leelo.
+[2026-09-16 23:04:26] Arnes terminado. Revisa docs/loop/PARA_ALEXIS.md si existe, y docs/loop/ACTA_AUDITOR.md.
+[2026-09-16 23:51:00] auditor listo (USD 7.9224025000000005), 1463s, intento 2 de 7
+[2026-09-16 23:51:00]   sello de la apertura ciega verificado: intacto tras el turno
+[2026-09-16 23:51:00] DETENIDO en la vuelta 2: existe docs/loop/PARA_ALEXIS.md. Leelo.
+[2026-09-16 23:51:01] Arnes terminado. Revisa docs/loop/PARA_ALEXIS.md si existe, y docs/loop/ACTA_AUDITOR.md.
+[2026-09-21 17:57:11] arranque: rama extraccion-marquet_turn_the_ship, MODO_INSERCION=cuarentena
+GUARDA DEL TABLERO (D.49)
+  linea de este arbol : marquet_turn_the_ship
+  libro que declara el encargo : marquet_turn_the_ship
+  libro que el orden le da (D.51): marquet_turn_the_ship
+    'marquet_turn_the_ship' ya es de esta linea y esta EN CURSO: se continua, que D.50 releva AL CERRAR y no a mitad.
+  con dueño: marquet_turn_the_ship          EN CURSO               lo trabaja 'marquet_turn_the_ship'
+  con dueño: gerber_emyth                   EN CURSO               lo trabaja 'gerber_emyth'
+
+TABLERO VERDE: la vuelta puede abrir.
+[2026-09-21 17:57:11]   tablero comprobado: la vuelta puede abrir (D.49, D.51)
+[2026-09-21 17:57:11] ROL INICIAL POR MEDICION: EXTRACTOR. El ACTA no es mas vieja que el REPORTE: no hay vuelta sin auditar delante.
+[2026-09-21 17:57:11]   ultimo commit de REPORTE.md      : 2026-09-21 06:23:07 (1789986187)
+[2026-09-21 17:57:12]   ultimo commit de ACTA_AUDITOR.md : 2026-09-21 06:49:55 (1789987795)
+[2026-09-21 17:57:12] VUELTA 1 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
+[2026-09-21 17:57:12] VUELTA 1 : EXTRACTOR (claude-sonnet-5)
+[2026-09-21 18:26:23] extractor listo (USD 8.2017702), 1751s, intento 1 de 7
+[2026-09-21 18:26:23] VUELTA 1 : SIN FASE CIEGA (D.58: en cuarentena no hay cifra sobre el grafo que proteger)
+[2026-09-21 18:26:23] VUELTA 1 : AUDITOR (claude-opus-5)
+[2026-09-21 19:07:38] auditor listo (USD 22.646576999999994), 2475s, intento 1 de 7
+[2026-09-21 19:07:38]   sin sello que verificar: esta vuelta no tuvo fase ciega (D.58)
+[2026-09-21 19:07:39]   tablero puesto al dia al cerrar la vuelta 1 (d102)
+GUARDA DEL TABLERO (D.49)
+  linea de este arbol : marquet_turn_the_ship
+  libro que declara el encargo : marquet_turn_the_ship
+  libro que el orden le da (D.51): marquet_turn_the_ship
+    'marquet_turn_the_ship' ya es de esta linea y esta EN CURSO: se continua, que D.50 releva AL CERRAR y no a mitad.
+  con dueño: marquet_turn_the_ship          EN CURSO               lo trabaja 'marquet_turn_the_ship'
+  con dueño: gerber_emyth                   EN CURSO               lo trabaja 'gerber_emyth'
+
+TABLERO VERDE: la vuelta puede abrir.
+[2026-09-21 19:07:40]   tablero comprobado: la vuelta puede abrir (D.49, D.51)
+[2026-09-21 19:07:40] VUELTA 2 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
+[2026-09-21 19:07:40] VUELTA 2 : EXTRACTOR (claude-sonnet-5)
+[2026-09-21 19:25:24] extractor: TURNO MUDO, el turno corrio 1064s y cobro "5.628186899999999" pero docs/loop/REPORTE.md quedo identico, intento 1 de 7
+[2026-09-21 19:25:24] fallo "extractor mudo"; espero 1800 segundos y reintento
+[2026-09-21 20:32:24] extractor listo (USD 9.414982799999995), 2218s, intento 2 de 7
+[2026-09-21 20:32:24] VUELTA 2 : SIN FASE CIEGA (D.58: en cuarentena no hay cifra sobre el grafo que proteger)
+[2026-09-21 20:32:24] VUELTA 2 : AUDITOR (claude-opus-5)
+[2026-09-21 20:57:07] auditor: TURNO MUDO, el turno corrio 1483s y cobro "10.065328500000003" pero docs/loop/ACTA_AUDITOR.md quedo identico, intento 1 de 7
+[2026-09-21 20:57:07] fallo "auditor mudo"; espero 1800 segundos y reintento
+[2026-09-21 21:53:18] auditor listo (USD 10.245954), 1570s, intento 2 de 7
+[2026-09-21 21:53:18]   sin sello que verificar: esta vuelta no tuvo fase ciega (D.58)
+[2026-09-21 21:53:18]   tablero puesto al dia al cerrar la vuelta 2 (d102)
+GUARDA DEL TABLERO (D.49)
+  linea de este arbol : marquet_turn_the_ship
+  libro que declara el encargo : marquet_turn_the_ship
+  libro que el orden le da (D.51): marquet_turn_the_ship
+    'marquet_turn_the_ship' ya es de esta linea y esta EN CURSO: se continua, que D.50 releva AL CERRAR y no a mitad.
+  con dueño: marquet_turn_the_ship          EN CURSO               lo trabaja 'marquet_turn_the_ship'
+  con dueño: gerber_emyth                   EN CURSO               lo trabaja 'gerber_emyth'
+
+TABLERO VERDE: la vuelta puede abrir.
+[2026-09-21 21:53:19]   tablero comprobado: la vuelta puede abrir (D.49, D.51)
+[2026-09-21 21:53:19] VUELTA 3 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
+[2026-09-21 21:53:19] VUELTA 3 : EXTRACTOR (claude-sonnet-5)
+[2026-09-21 22:48:01] extractor listo (USD 12.897647999999998), 3282s, intento 1 de 7
+[2026-09-21 22:48:01] VUELTA 3 : SIN FASE CIEGA (D.58: en cuarentena no hay cifra sobre el grafo que proteger)
+[2026-09-21 22:48:01] VUELTA 3 : AUDITOR (claude-opus-5)
+[2026-09-21 23:40:35] auditor listo (USD 27.029654500000017), 3154s, intento 1 de 7
+[2026-09-21 23:40:35]   sin sello que verificar: esta vuelta no tuvo fase ciega (D.58)
+[2026-09-21 23:40:36]   tablero puesto al dia al cerrar la vuelta 3 (d102)
+[2026-09-21 23:40:36] DETENIDO en la vuelta 4: existe docs/loop/PARA_ALEXIS.md. Leelo.
+[2026-09-21 23:40:36] Arnes terminado. Revisa docs/loop/PARA_ALEXIS.md si existe, y docs/loop/ACTA_AUDITOR.md.
+[2026-09-23 00:03:25] arranque: rama extraccion-marquet_turn_the_ship, MODO_INSERCION=cuarentena
+GUARDA DEL TABLERO (D.49)
+  linea de este arbol : marquet_turn_the_ship
+  libro que declara el encargo : marquet_turn_the_ship
+  libro que el orden le da (D.51): marquet_turn_the_ship
+    'marquet_turn_the_ship' ya es de esta linea y esta EN CURSO: se continua, que D.50 releva AL CERRAR y no a mitad.
+  con dueño: marquet_turn_the_ship          EN CURSO               lo trabaja 'marquet_turn_the_ship'
+
+TABLERO VERDE: la vuelta puede abrir.
+[2026-09-23 00:03:26]   tablero comprobado: la vuelta puede abrir (D.49, D.51)
+[2026-09-23 00:03:27] ROL INICIAL POR MEDICION: EXTRACTOR. El ACTA no es mas vieja que el REPORTE: no hay vuelta sin auditar delante.
+[2026-09-23 00:03:27]   ultimo commit de REPORTE.md      : 2026-09-21 22:44:22 (1790045062)
+[2026-09-23 00:03:27]   ultimo commit de ACTA_AUDITOR.md : 2026-09-21 23:38:35 (1790048315)
+[2026-09-23 00:03:27] VUELTA 1 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
+[2026-09-23 00:03:27] VUELTA 1 : EXTRACTOR (claude-sonnet-5, esfuerzo defecto)
+[2026-09-23 06:25:18] arranque: rama extraccion-marquet_turn_the_ship, MODO_INSERCION=cuarentena
+GUARDA DEL TABLERO (D.49)
+  linea de este arbol : marquet_turn_the_ship
+  libro que declara el encargo : marquet_turn_the_ship
+  libro que el orden le da (D.51): marquet_turn_the_ship
+    'marquet_turn_the_ship' ya es de esta linea y esta EN CURSO: se continua, que D.50 releva AL CERRAR y no a mitad.
+  con dueño: marquet_turn_the_ship          EN CURSO               lo trabaja 'marquet_turn_the_ship'
+
+TABLERO VERDE: la vuelta puede abrir.
+[2026-09-23 06:25:19]   tablero comprobado: la vuelta puede abrir (D.49, D.51)
+[2026-09-23 06:25:19] ROL INICIAL POR MEDICION: EXTRACTOR. El ACTA no es mas vieja que el REPORTE: no hay vuelta sin auditar delante.
+[2026-09-23 06:25:19]   ultimo commit de REPORTE.md      : 2026-09-21 22:44:22 (1790045062)
+[2026-09-23 06:25:19]   ultimo commit de ACTA_AUDITOR.md : 2026-09-21 23:38:35 (1790048315)
+[2026-09-23 06:25:20] VUELTA 1 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
+[2026-09-23 06:25:20] VUELTA 1 : EXTRACTOR (claude-sonnet-5, esfuerzo defecto)
+[2026-09-23 06:32:29] arranque: rama extraccion-marquet_turn_the_ship, MODO_INSERCION=cuarentena
+GUARDA DEL TABLERO (D.49)
+  linea de este arbol : marquet_turn_the_ship
+  libro que declara el encargo : marquet_turn_the_ship
+  libro que el orden le da (D.51): marquet_turn_the_ship
+    'marquet_turn_the_ship' ya es de esta linea y esta EN CURSO: se continua, que D.50 releva AL CERRAR y no a mitad.
+  con dueño: marquet_turn_the_ship          EN CURSO               lo trabaja 'marquet_turn_the_ship'
+
+TABLERO VERDE: la vuelta puede abrir.
+[2026-09-23 06:32:30]   tablero comprobado: la vuelta puede abrir (D.49, D.51)
+[2026-09-23 06:32:30] ROL INICIAL POR MEDICION: EXTRACTOR. El ACTA no es mas vieja que el REPORTE: no hay vuelta sin auditar delante.
+[2026-09-23 06:32:30]   ultimo commit de REPORTE.md      : 2026-09-21 22:44:22 (1790045062)
+[2026-09-23 06:32:30]   ultimo commit de ACTA_AUDITOR.md : 2026-09-21 23:38:35 (1790048315)
+[2026-09-23 06:32:31] VUELTA 1 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
+[2026-09-23 06:32:31] VUELTA 1 : EXTRACTOR (claude-sonnet-5, esfuerzo defecto)
+[2026-09-23 07:10:12] extractor: TURNO MUDO, el turno corrio 2259s y cobro "1.9248888000000004" pero docs/loop/REPORTE.md quedo identico, intento 1 de 7
+[2026-09-23 07:10:12] fallo "extractor mudo"; espero 1800 segundos y reintento
+[2026-09-23 07:46:29] arranque: rama extraccion-marquet_turn_the_ship, MODO_INSERCION=cuarentena
+GUARDA DEL TABLERO (D.49)
+  linea de este arbol : marquet_turn_the_ship
+  libro que declara el encargo : marquet_turn_the_ship
+  libro que el orden le da (D.51): marquet_turn_the_ship
+    'marquet_turn_the_ship' ya es de esta linea y esta EN CURSO: se continua, que D.50 releva AL CERRAR y no a mitad.
+  con dueño: marquet_turn_the_ship          EN CURSO               lo trabaja 'marquet_turn_the_ship'
+
+TABLERO VERDE: la vuelta puede abrir.
+[2026-09-23 07:46:29]   tablero comprobado: la vuelta puede abrir (D.49, D.51)
+[2026-09-23 07:46:30] ROL INICIAL POR MEDICION: EXTRACTOR. El ACTA no es mas vieja que el REPORTE: no hay vuelta sin auditar delante.
+[2026-09-23 07:46:30]   ultimo commit de REPORTE.md      : 2026-09-21 22:44:22 (1790045062)
+[2026-09-23 07:46:30]   ultimo commit de ACTA_AUDITOR.md : 2026-09-21 23:38:35 (1790048315)
+[2026-09-23 07:46:30] VUELTA 1 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
+[2026-09-23 07:46:30] VUELTA 1 : EXTRACTOR (claude-sonnet-5, esfuerzo defecto)
+[2026-09-23 07:57:55] extractor: TURNO MUDO, el turno corrio 685s y cobro "1.8587458000000006" pero docs/loop/REPORTE.md quedo identico, intento 1 de 7
+[2026-09-23 07:57:55] fallo "extractor mudo"; espero 1800 segundos y reintento
+[2026-09-23 09:26:06] extractor listo (USD 10.218161799999997), 3480s, intento 2 de 7
+[2026-09-23 09:26:06] VUELTA 1 : SIN FASE CIEGA (D.58: en cuarentena no hay cifra sobre el grafo que proteger)
+[2026-09-23 09:26:06] VUELTA 1 : AUDITOR (claude-opus-5-5, esfuerzo defecto)
+[2026-09-23 09:55:51] auditor listo (USD 4.3895694), 1783s, intento 1 de 7
+[2026-09-23 09:55:51]   sin sello que verificar: esta vuelta no tuvo fase ciega (D.58)
+[2026-09-23 09:55:51]   tablero puesto al dia al cerrar la vuelta 1 (d102)
+GUARDA DEL TABLERO (D.49)
+  linea de este arbol : marquet_turn_the_ship
+  libro que declara el encargo : marquet_turn_the_ship
+  libro que el orden le da (D.51): marquet_turn_the_ship
+    'marquet_turn_the_ship' ya es de esta linea y esta EN CURSO: se continua, que D.50 releva AL CERRAR y no a mitad.
+  con dueño: marquet_turn_the_ship          EN CURSO               lo trabaja 'marquet_turn_the_ship'
+
+TABLERO VERDE: la vuelta puede abrir.
+[2026-09-23 09:55:52]   tablero comprobado: la vuelta puede abrir (D.49, D.51)
+[2026-09-23 09:55:52] VUELTA 2 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
+[2026-09-23 09:55:52] VUELTA 2 : EXTRACTOR (claude-sonnet-5, esfuerzo defecto)
+[2026-09-23 10:17:10] extractor listo (USD 3.0083872), 1276s, intento 1 de 7
+[2026-09-23 10:17:10] VUELTA 2 : SIN FASE CIEGA (D.58: en cuarentena no hay cifra sobre el grafo que proteger)
+[2026-09-23 10:17:10] VUELTA 2 : AUDITOR (claude-opus-5-5, esfuerzo defecto)
+[2026-09-23 10:30:39] auditor listo (USD 4.2513456000000005), 808s, intento 1 de 7
+[2026-09-23 10:30:39]   sin sello que verificar: esta vuelta no tuvo fase ciega (D.58)
+[2026-09-23 10:30:39]   tablero puesto al dia al cerrar la vuelta 2 (d102)
+GUARDA DEL TABLERO (D.49)
+  linea de este arbol : marquet_turn_the_ship
+  libro que declara el encargo : marquet_turn_the_ship
+  libro que el orden le da (D.51): marquet_turn_the_ship
+    'marquet_turn_the_ship' ya es de esta linea y esta EN CURSO: se continua, que D.50 releva AL CERRAR y no a mitad.
+  con dueño: marquet_turn_the_ship          EN CURSO               lo trabaja 'marquet_turn_the_ship'
+
+TABLERO VERDE: la vuelta puede abrir.
+[2026-09-23 10:30:40]   tablero comprobado: la vuelta puede abrir (D.49, D.51)
+[2026-09-23 10:30:40] VUELTA 3 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
+[2026-09-23 10:30:40] VUELTA 3 : EXTRACTOR (claude-sonnet-5, esfuerzo defecto)
+[2026-09-23 10:57:00] extractor listo (USD 3.3167438), 1579s, intento 1 de 7
+[2026-09-23 10:57:00] VUELTA 3 : SIN FASE CIEGA (D.58: en cuarentena no hay cifra sobre el grafo que proteger)
+[2026-09-23 10:57:00] VUELTA 3 : AUDITOR (claude-opus-5-5, esfuerzo defecto)
+[2026-09-23 11:29:38] auditor listo (USD 4.2996), 1958s, intento 1 de 7
+[2026-09-23 11:29:38]   sin sello que verificar: esta vuelta no tuvo fase ciega (D.58)
+[2026-09-23 11:29:40]   tablero puesto al dia al cerrar la vuelta 3 (d102)
+GUARDA DEL TABLERO (D.49)
+  linea de este arbol : marquet_turn_the_ship
+  libro que declara el encargo : marquet_turn_the_ship
+  libro que el orden le da (D.51): marquet_turn_the_ship
+    'marquet_turn_the_ship' ya es de esta linea y esta EN CURSO: se continua, que D.50 releva AL CERRAR y no a mitad.
+  con dueño: marquet_turn_the_ship          EN CURSO               lo trabaja 'marquet_turn_the_ship'
+
+TABLERO VERDE: la vuelta puede abrir.
+[2026-09-23 11:29:42]   tablero comprobado: la vuelta puede abrir (D.49, D.51)
+[2026-09-23 11:29:42] VUELTA 4 : SIN INFORME DE LOTE en esta corrida (INFORME_DE_LOTE vacio)
+[2026-09-23 11:29:42] VUELTA 4 : EXTRACTOR (claude-sonnet-5, esfuerzo defecto)
+[2026-09-23 12:50:54] extractor listo (USD 4.278285799999999), 4872s, intento 1 de 7
+[2026-09-23 12:50:54] VUELTA 4 : SIN FASE CIEGA (D.58: en cuarentena no hay cifra sobre el grafo que proteger)
+[2026-09-23 12:50:54] VUELTA 4 : AUDITOR (claude-opus-5-5, esfuerzo defecto)
+[2026-09-23 13:08:04] auditor listo (USD 3.5140244000000003), 1029s, intento 1 de 7
+[2026-09-23 13:08:04]   sin sello que verificar: esta vuelta no tuvo fase ciega (D.58)
+[2026-09-23 13:08:05]   tablero puesto al dia al cerrar la vuelta 4 (d102)
+[2026-09-23 13:08:06] DETENIDO en la vuelta 5: existe docs/loop/PARA_ALEXIS.md. Leelo.
+[2026-09-23 13:08:06] Arnes terminado. Revisa docs/loop/PARA_ALEXIS.md si existe, y docs/loop/ACTA_AUDITOR.md.

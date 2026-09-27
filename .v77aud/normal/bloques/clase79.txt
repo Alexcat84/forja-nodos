@@ -1,0 +1,3 @@
+$ python scripts/deuda.py --clase 79
+SANEAMIENTO
+  han pasado 5 vuelta(s) desde la ultima de saneamiento (la 74) y la cadencia es 5, con 50 deuda(s) pendientes

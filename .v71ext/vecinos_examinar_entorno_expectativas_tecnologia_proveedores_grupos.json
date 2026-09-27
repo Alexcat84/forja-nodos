@@ -1,0 +1,86 @@
+{
+ "id": "examinar_entorno_expectativas_tecnologia_proveedores_grupos",
+ "grafo": 410,
+ "bandejas": 69,
+ "vecinos": [
+  {
+   "id": "definir_entorno_grupo_clientes_proveedores_competidores",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.408,
+    "familia_id": 0.333,
+    "paso_contra_nodo": 0.527
+   },
+   "levantada_por": [
+    "similitud_texto",
+    "familia_id"
+   ],
+   "detalle_paso": "paso 4 del candidato contra paso 2 de definir_entorno_grupo_clientes_proveedores_competidores"
+  },
+  {
+   "id": "determinar_estado_presente_capacidades_proyectos_merma",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.398,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.497
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 1 de determinar_estado_presente_capacidades_proyectos_merma"
+  },
+  {
+   "id": "examinar_demanda_entorno_dos_marcos_temporales",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.372,
+    "familia_id": 0.2,
+    "paso_contra_nodo": 0.482
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 2 de examinar_demanda_entorno_dos_marcos_temporales"
+  },
+  {
+   "id": "cerrar_brecha_dos_preguntas_estrategia",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.419,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.433
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 4 del candidato contra paso 6 de cerrar_brecha_dos_preguntas_estrategia"
+  },
+  {
+   "id": "contestar_dos_preguntas_direccion_objetivos",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.378,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.406
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 3 de contestar_dos_preguntas_direccion_objetivos"
+  },
+  {
+   "id": "fijar_periodo_direccion_objetivos_retroalimentacion",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.356,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.406
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 4 del candidato contra paso 1 de fijar_periodo_direccion_objetivos_retroalimentacion"
+  }
+ ]
+}

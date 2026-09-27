@@ -1,0 +1,39 @@
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 348   (222 del grafo mas 126 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 0
+  BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+  vecinos levantados en total      : 4
+  por candidato bloqueado          : menor 4, mediana 4, mayor 4
+  que señal levanta cada vecindad  : familia_id 3, similitud_texto 1
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] decidir_momento_despedir_persona   (decidir_momento_despedir_persona.json)
+    vecino despedir_persona_franqueza_radical  [levantada por: familia_id]
+      similitud_texto 0.347 | familia_id 0.333 | paso_contra_nodo 0.512
+      paso 11 del candidato contra paso 1 de despedir_persona_franqueza_radical
+    vecino pedir_critica_equipo_premiarla  [levantada por: similitud_texto]
+      similitud_texto 0.369 | familia_id 0.000 | paso_contra_nodo 0.510
+      paso 2 del candidato contra paso 2 de pedir_critica_equipo_premiarla
+    vecino despedir_persona_respeto_franqueza  [levantada por: familia_id]
+      similitud_texto 0.199 | familia_id 0.333 | paso_contra_nodo 0.430
+      paso 12 del candidato contra paso 6 de despedir_persona_respeto_franqueza
+    vecino elegir_recolocar_despedir_persona  [levantada por: familia_id]
+      similitud_texto 0.232 | familia_id 0.333 | paso_contra_nodo 0.395
+      paso 6 del candidato contra paso 5 de elegir_recolocar_despedir_persona
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.

@@ -1,0 +1,4 @@
+$ python forja.py tablero --escribir
+  MUNDO 11: faltan 3 de 3 libros del corte (grove_high_output, gerber_emyth, marquet_turn_the_ship)
+  COLA DE DOCTRINA (D.56): 11 pregunta(s), 0 bloquea(n)
+ESCRITO: 22 fila(s) en docs/loop/TABLERO.jsonl

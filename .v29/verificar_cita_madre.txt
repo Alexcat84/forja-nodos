@@ -1,0 +1,5 @@
+MI CITA  : , unidad Cap. 8, Results. Sale de las lineas 271 a 299 y de las lineas 307 a 333, bajo el rotulo BE CONSCIOUS OF CULTURE y sus rotulos interiores. ES LA PIEZA P15 DE LA FRONTERA DE cap_11, Y SU TRAMO ES NO CONTIGUO: entre sus dos mitades viven las lineas 301 a 305, que son el rotulo Debate and decide explicitly y salen en su propio nodo, debatir_decidir_asuntos_cultura_evitar_delegar.
+
+EL DATO  : , unidad Cap. 8, Results. Sale de las lineas 271 a 299 y de las lineas 307 a 333, bajo el rotulo BE CONSCIOUS OF CULTURE y sus rotulos interiores. ES LA PIEZA P15 DE LA FRONTERA DE cap_11, Y SU TRAMO ES NO CONTIGUO: entre sus dos mitades viven las lineas 301 a 305, que son el rotulo Debate and decide explicitly y salen en su propio nodo, debatir_decidir_asuntos_cultura_evitar_delegar.
+
+CUADRAN AL CARACTER: True

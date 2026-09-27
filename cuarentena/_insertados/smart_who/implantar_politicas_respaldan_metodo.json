@@ -1,0 +1,36 @@
+{
+  "condiciones_activacion": "Cuando estas instalando el metodo de contratacion en tu empresa y toca la septima de las diez cosas: poner por escrito unas pocas politicas que sostengan al colega descarriado cuando la comunicacion ya no alcance.",
+  "denominaciones": {
+    "nombre_largo": "Las tres politicas que respaldan el cambio al metodo de contratacion",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "Implement new policies that support the change"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "contratacion",
+  "entregable_esperado": "Las tres politicas puestas por escrito y en vigor: el resultado en la tarjeta de puntuacion de cada directivo, la tarjeta exigida para abrir cualquier plaza, y la entrevista cronologica con su tarjeta calificada exigida antes de que se pueda hacer una oferta.",
+  "escala_minima": "Unas pocas politicas simples. El libro lo dice asi, unas pocas y simples, y las tres que escribe caben en tres lineas de un manual de personal.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "smart_who",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "id": "implantar_politicas_respaldan_metodo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Cuenta con la razon por la que hacen falta: toda la comunicacion del mundo no va a motivar a algunos miembros del equipo, y estas politicas son el respaldo para los colegas descarriados.",
+    "Politica uno: pon este resultado en la tarjeta de puntuacion de todos los directivos. Conseguir una tasa de exito en contratacion del noventa por ciento o mas, y construir y retener un equipo compuesto por un noventa por ciento o mas de jugadores A para una fecha determinada.",
+    "Politica dos: exige una tarjeta de puntuacion para cada plaza que se abra. Sin tarjeta no hay plaza, y el directivo que quiera ayuda del equipo de reclutamiento de la casa tiene que entregar una tarjeta para recibirla.",
+    "Politica tres: exige una entrevista cronologica y una tarjeta de puntuacion calificada antes de que se pueda hacer una oferta. Sin entrevista cronologica no hay contratacion.",
+    "Pon al grupo de recursos humanos de guardian de esa tercera politica, para asegurarte de que se cumple de verdad."
+  ],
+  "resumen_teorico": "Es la septima de las diez cosas que hay que hacer para instalar el metodo de contratacion en una empresa, y es el paso mas rico de los diez: el unico que el libro despliega en vinetas propias, con las tres politicas escritas enteras y una de ellas hasta con su formula de redaccion para copiar en la tarjeta de puntuacion. Su premisa esta dicha sin adornos, y es lo que separa esta cosa de la cuarta, la de la vision: toda la comunicacion del mundo no basta para mover a algunos miembros del equipo, asi que hacen falta unas pocas politicas simples que sirvan de respaldo para los colegas descarriados. Las tres cubren los tres momentos en que un directivo puede escaparse del metodo: su propia evaluacion, la apertura de la plaza y el momento de la oferta. Y la tercera trae ademas su guardian nombrado, el grupo de recursos humanos, que es lo que la convierte en una politica y no en una recomendacion.",
+  "titulo": "Implantar las tres politicas que respaldan el cambio al metodo"
+}

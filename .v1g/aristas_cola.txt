@@ -1,0 +1,27 @@
+| # | madre | `--paso` | el paso de la madre, pegado de su fichero | hijo | regla | por que |
+|---:|---|---:|---|---|---|---|
+| 1 | `construir_flujo_produccion_paso_limitante` | `9` | `Escalona los demas pasos tomando como base el tiempo del anterior, que es lo que el libro hace con el huevo como base del pan y el pan como base del c...` | `rehacer_flujo_paso_limitante_capacidad` | `D.29` | el paso 9 de la madre construye los desfases, y el hijo es el unico tramo del libro que manda ALTERARLOS: L51 dice but your time offsets must be altered. El hijo empieza donde la madre acaba, y lo dice nombrando el producto de la madre (our breakfast operation assumed infinite capacity) |
+| 2 | `clasificar_trabajo_proceso_montaje_prueba` | `3` | `Senala la prueba, que es la operacion que somete los componentes o el total a un examen de sus caracteristicas, y cuenta tambien las pruebas visuales:...` | `preferir_inspeccion_proceso_prueba_destructiva` | `D.29` | el paso 3 de la madre nombra la prueba en una linea y dice que somete los componentes o el total a un examen; el hijo despliega en seis pasos QUE CLASE de prueba se elige cuando la operacion es continua, que la madre no tiene |
+| 3 | `detectar_arreglar_fallo_etapa_menor_valor` | `6` | `Aplicalo al trabajo de ingenieria como el libro lo aplica: busca el fallo de funcionamiento en la prueba unitaria de las piezas que componen el produc...` | `clasificar_trabajo_proceso_montaje_prueba` | `D.29` | el paso 6 de la madre nombra la prueba unitaria de las piezas en una linea, y el hijo es quien la despliega con su vuelta a proceso, su montaje y su prueba de sistema |
+| 4 | `detectar_arreglar_fallo_etapa_menor_valor` | `4` | `Aplicalo al material que entra: encuentra y rechaza el huevo podrido cuando lo esta entregando el proveedor, en vez de permitir que lo encuentre el cl...` | `dimensionar_inventario_materia_prima_reposicion` | `D.29` | el paso 4 de la madre nombra rechazar el material cuando lo entrega el proveedor, y el hijo es quien despliega esa inspeccion de recepcion y lo que hay que tener para poder rechazar sin pararse |
+
+LOS COMANDOS QUE SE CORRERAN EL DIA DE LA INSERCION, Y QUE HOY NO SE CORREN (D.45)
+
+    python forja.py arista --madre construir_flujo_produccion_paso_limitante \
+        --hijo rehacer_flujo_paso_limitante_capacidad --paso 9 \
+        --razon "el paso 9 de la madre construye los desfases, y el hijo es el unico tramo del libro que manda ALTERARLOS: L51 dice but your time offsets must be altered. El hijo empieza donde la madre acaba, y lo dice nombrando el producto de la madre (our breakfast operation assumed infinite capacity)"
+
+    python forja.py arista --madre clasificar_trabajo_proceso_montaje_prueba \
+        --hijo preferir_inspeccion_proceso_prueba_destructiva --paso 3 \
+        --razon "el paso 3 de la madre nombra la prueba en una linea y dice que somete los componentes o el total a un examen; el hijo despliega en seis pasos QUE CLASE de prueba se elige cuando la operacion es continua, que la madre no tiene"
+
+    python forja.py arista --madre detectar_arreglar_fallo_etapa_menor_valor \
+        --hijo clasificar_trabajo_proceso_montaje_prueba --paso 6 \
+        --razon "el paso 6 de la madre nombra la prueba unitaria de las piezas en una linea, y el hijo es quien la despliega con su vuelta a proceso, su montaje y su prueba de sistema"
+
+    python forja.py arista --madre detectar_arreglar_fallo_etapa_menor_valor \
+        --hijo dimensionar_inventario_materia_prima_reposicion --paso 4 \
+        --razon "el paso 4 de la madre nombra rechazar el material cuando lo entrega el proveedor, y el hijo es quien despliega esa inspeccion de recepcion y lo que hay que tener para poder rechazar sin pararse"
+
+ARISTAS DECLARADAS POR LECTURA : 4
+CABLEADAS EN ESTA VUELTA       : 0   (este frente no inserta: D.45)

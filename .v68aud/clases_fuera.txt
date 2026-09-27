@@ -1,0 +1,23 @@
+# Fase ciega de la 68: mi clase de cada par que el barrido levanta con un extremo FUERA de su capitulo, leida con los
+# pasos de los dos delante (.v68aud/pasos_pares.txt, .v68aud/pasos_fuera_a.txt, .v68aud/pasos_fuera_b.txt, y los de la
+# tanda). Por la vara 6.1 y solo esa. Formato: a|b|clase|madre|lectura
+vencer_sindrome_grupo_pares_autoconfianza|aprender_resultados_vencer_dos_presiones|SANO||paso 3 contra paso 4 a paso_contra_nodo 0,712 es el mismo verbo (apoya en la experiencia / aprende de la experiencia): autoconfianza contra el sindrome de pares contra aprender de un resultado venciendo la coherencia y el agotamiento (Scott). Ajenos
+vencer_sindrome_grupo_pares_autoconfianza|archivar_indicadores_resolver_problemas|SANO||autoconfianza del grupo contra archivo de indicadores. Ajenos
+vencer_sindrome_grupo_pares_autoconfianza|cerrar_brecha_dos_preguntas_estrategia|SANO||sindrome de pares contra las dos preguntas de la estrategia (cap_07). Ajenos
+vencer_sindrome_grupo_pares_autoconfianza|contestar_dos_preguntas_direccion_objetivos|SANO||sindrome de pares contra las dos preguntas de la direccion por objetivos. Ajenos
+vencer_sindrome_grupo_pares_autoconfianza|definir_entorno_grupo_clientes_proveedores_competidores|SANO||el grupo de pares contra el grupo como empresa independiente: solo comparten la palabra grupo. Ajenos
+vencer_sindrome_grupo_pares_autoconfianza|planificar_tres_pasos_demanda_estado_brecha|SANO||sindrome contra los tres pasos de la planificacion. Ajenos
+vencer_sindrome_grupo_pares_autoconfianza|responder_primer_aviso_renuncia_subordinado|SANO||autoconfianza del grupo contra la primera conversacion con el que renuncia. Ajenos
+vencer_sindrome_grupo_pares_autoconfianza|supervisar_decision_delegada_preguntas_concretas|SANO||sindrome de pares contra supervisar la reflexion de una decision delegada con preguntas concretas. Ajenos
+conducir_reunion_individual_telefono_distancia|preguntar_conducir_reunion_individual|SANO||levantado por familia_id: el uno a uno por telefono (guion antes, notas, intercambio de notas) contra los tres grupos de preguntas de Zhuo para que lo lleve la persona a cargo. Ningun paso compartido; dos libros sobre la misma reunion, ninguno repite al otro
+anunciar_decision_inesperada_reconvocar_reunion|contestar_dos_preguntas_direccion_objetivos|SANO||reconvocar tras una palabra final inesperada contra las dos preguntas de la direccion por objetivos. Ajenos
+anunciar_decision_inesperada_reconvocar_reunion|definir_entorno_grupo_clientes_proveedores_competidores|SANO||anuncio y reconvocatoria contra definir el entorno del grupo. Ajenos
+anunciar_decision_inesperada_reconvocar_reunion|dirigir_reunion_decision|SANO||levantado por familia_id: el paso 8 de Zhuo reune a todos para volver a decidir cuando el proceso fue malo y el otro lado pide rehacer; Grove reconvoca para que la gente digiera una palabra final inesperada y opine, sin rehacer nada. El mismo gesto con dos fines y dos libros; ninguno repite al otro
+anunciar_decision_inesperada_reconvocar_reunion|entregar_evaluacion_desempeno_tres_claves|SANO||anuncio de una decision contra entregar la evaluacion de desempeno. Ajenos
+cortar_discusion_libre_momento_justo|cerrar_brecha_dos_preguntas_estrategia|SANO||momento de cortar la discusion contra las dos preguntas de la estrategia. Ajenos
+cortar_discusion_libre_momento_justo|construir_indicador_tendencia_patron|SANO||momento de cortar contra indicador de tendencia. Ajenos
+cortar_discusion_libre_momento_justo|pedir_critica_anonima_curso_entrenamiento_dictado|SANO||momento de cortar contra critica anonima de un curso. Ajenos
+programar_reunion_individual_cadena|dirigir_reunion_individual_semanal|SANO||levantado por familia_id: fijar la siguiente en cadena contra la reunion semanal de Zhuo y lo que se trata en ella; ningun paso compartido. Zhuo pone una por semana y treinta minutos, que choca con Grove en fijar_frecuencia y fijar_duracion, pero ese choque no es este par (seccion 6)
+programar_reunion_individual_cadena|preguntar_conducir_reunion_individual|SANO||levantado por familia_id: calendario en cadena contra los tres grupos de preguntas. Ajenos dentro del mismo uno a uno
+zanjar_seis_preguntas_decision_adelantado|entregar_evaluacion_desempeno_tres_claves|SANO||las seis preguntas de una decision contra entregar la evaluacion. Ajenos
+tomar_mando_reunion_pares_presidente_ausente|priorizar_lista_entrenamiento_subordinados|SANO||quien toma el mando en la reunion de pares contra priorizar el entrenamiento. Ajenos

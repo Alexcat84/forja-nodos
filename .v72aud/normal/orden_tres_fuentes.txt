@@ -1,0 +1,2 @@
+filas leidas de .v71ext/orden.txt: 20 | ultimas filas del grafo: 20 | ficheros insertar_NN: 20
+las tres en el mismo orden, fila a fila: SI

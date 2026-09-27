@@ -1,0 +1,26 @@
+BLOQUEARIA  archivar_indicadores_resolver_problemas  poblacion 462
+    construir_indicador_tendencia_patron               similitud_texto            texto 0.384 familia 0.143 paso 0.420  paso 2 del candidato contra paso 3
+    revisar_tres_preguntas_valor_carrera               similitud_texto            texto 0.369 familia 0.000 paso 0.414  paso 2 del candidato contra paso 1
+    vencer_sindrome_grupo_pares_autoconfianza          similitud_texto            texto 0.364 familia 0.000 paso 0.405  paso 1 del candidato contra paso 5
+    cerrar_brecha_dos_preguntas_estrategia             similitud_texto            texto 0.353 familia 0.000 paso 0.393  paso 4 del candidato contra paso 6
+BLOQUEARIA  construir_grafico_escalonado_pronosticos  poblacion 462
+    construir_indicador_tendencia_patron               similitud_texto            texto 0.354 familia 0.143 paso 0.453  paso 4 del candidato contra paso 5
+    elegir_fabricar_pedido_pronostico                  similitud_texto            texto 0.354 familia 0.143 paso 0.453  paso 7 del candidato contra paso 4
+    emparejar_indicadores_efecto_contraefecto          similitud_texto            texto 0.363 familia 0.000 paso 0.434  paso 1 del candidato contra paso 3
+BLOQUEARIA  construir_indicador_tendencia_patron  poblacion 462
+    construir_grafico_escalonado_pronosticos           similitud_texto            texto 0.350 familia 0.143 paso 0.461  paso 5 del candidato contra paso 4
+    archivar_indicadores_resolver_problemas            similitud_texto            texto 0.391 familia 0.143 paso 0.427  paso 2 del candidato contra paso 1
+BLOQUEARIA  elegir_fabricar_pedido_pronostico  poblacion 462
+    construir_grafico_escalonado_pronosticos           similitud_texto            texto 0.352 familia 0.143 paso 0.440  paso 4 del candidato contra paso 7
+BLOQUEARIA  elegir_indicador_salida_trabajo_administrativo  poblacion 462
+    evaluar_directivo_resultados_fortaleza             paso_contra_nodo           texto 0.184 familia 0.000 paso 0.766  paso 2 del candidato contra paso 1
+    emparejar_indicadores_efecto_contraefecto          similitud_texto            texto 0.355 familia 0.125 paso 0.489  paso 3 del candidato contra paso 4
+BLOQUEARIA  emparejar_indicadores_efecto_contraefecto  poblacion 462
+    construir_indicador_tendencia_patron               similitud_texto            texto 0.358 familia 0.143 paso 0.453  paso 3 del candidato contra paso 5
+    construir_grafico_escalonado_pronosticos           similitud_texto            texto 0.370 familia 0.000 paso 0.446  paso 3 del candidato contra paso 1
+    elegir_fabricar_pedido_pronostico                  similitud_texto            texto 0.354 familia 0.000 paso 0.408  paso 4 del candidato contra paso 1
+    revisar_tres_preguntas_valor_carrera               similitud_texto            texto 0.354 familia 0.000 paso 0.386  paso 2 del candidato contra paso 2
+
+CONTROL DE DETERMINISMO, los 16 de la tanda: archivo de la fase 2 contra .v63aud/
+   VACIO en el archivo: clasificar_trabajo_proceso_montaje_prueba
+   identicos linea a linea: 15 | distintos: 0 | vacios en el archivo: 1

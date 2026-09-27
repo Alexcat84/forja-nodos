@@ -1,0 +1,29 @@
+=== gate ===
+GATE VERDE.
+  nodos verificados: 346
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+rc=0
+=== guiones ===
+BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+rc=0
+=== aceptacion ===
+`D.38.4` y `D.38.5`: un vecino de bandeja no se fue, aun no ha llegado. ... ok
+test_no_consumada_saca_la_linea_de_la_vigencia_y_deja_su_cuenta (__main__.PruebaAnotacionDeclarada.test_no_consumada_saca_la_linea_de_la_vigencia_y_deja_su_cuenta)
+`ACTA 27` `5.3.b`: las cuatro fantasma desaparecen al declararse. ... ok
+test_sin_la_marca_de_D35_la_anotacion_no_corre (__main__.PruebaAnotacionDeclarada.test_sin_la_marca_de_D35_la_anotacion_no_corre) ... ok
+test_sin_razon_escrita_no_se_anota (__main__.PruebaAnotacionDeclarada.test_sin_razon_escrita_no_se_anota) ... ok
+test_una_linea_que_no_existe_es_rechazo (__main__.PruebaAnotacionDeclarada.test_una_linea_que_no_existe_es_rechazo) ... ok
+test_caso_positivo_el_gate_en_rojo_SI_tumba_el_cierre (__main__.PruebaVigenciaNoEsGuarda.test_caso_positivo_el_gate_en_rojo_SI_tumba_el_cierre)
+Una vigencia que no tumba no puede volver blando a todo lo demas. ... ok
+test_el_cierre_NO_se_pone_en_rojo_por_ella_Y_SIGUE_publicando_su_cuenta (__main__.PruebaVigenciaNoEsGuarda.test_el_cierre_NO_se_pone_en_rojo_por_ella_Y_SIGUE_publicando_su_cuenta)
+Si el arreglo hace que la cuenta deje de imprimirse, esta mal hecho. ... ok
+test_la_vigencia_en_rojo_por_su_cuenta_SIGUE_devolviendo_1 (__main__.PruebaVigenciaNoEsGuarda.test_la_vigencia_en_rojo_por_su_cuenta_SIGUE_devolviendo_1)
+La guarda no se afloja: sigue mordiendo cuando se la llama sola. ... ok
+test_caso_negativo_el_arbol_tal_como_esta_pasa (__main__.PruebaCerrojoYCenso.test_caso_negativo_el_arbol_tal_como_esta_pasa) ... ok
+test_caso_negativo_un_nodo_deprecado_sigue_estando_y_pasa (__main__.PruebaCerrojoYCenso.test_caso_negativo_un_nodo_deprecado_sigue_estando_y_pasa)
+`D.17`: un nodo que sale de superficie NO se borra, se marca. ... ok
+test_caso_positivo_dos_inserciones_a_la_vez_y_ninguna_pisa (__main__.PruebaCerrojoYCenso.test_caso_positivo_dos_inserciones_a_la_vez_y_ninguna_pisa)
+Es la caida de la vuelta 28, reproducida contra la aduana de verdad. ... skipped 'sin fixture de candidato'
+test_caso_positivo_un_nodo_que_desaparece_tumba_el_gate (__main__.PruebaCerrojoYCenso.test_caso_positivo_un_nodo_que_desaparece_tumba_el_gate)
+`D.44`, con el nodo de verdad que la vuelta 28 perdio. ... ok
+test_el_cerrojo_es_exclusivo (__main__.PruebaCerrojoYCenso.test_el_cerrojo_es_exclusivo) ... 

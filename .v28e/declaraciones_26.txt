@@ -1,0 +1,30 @@
+LAS 26 DECLARACIONES DE VIGENCIA, UNA POR LINEA (D.15, segunda salida)
+
+  linea 149  ESCRITA    vecino=delimitar_franqueza_radical_cinco_noes  huella c43d1ffc6688387b -> e28c5904cc8adc22
+  linea 151  ESCRITA    vecino=repartir_semana_cuarenta_horas_jefe  huella 5741a0fe40ead016 -> de520028526c0f00
+  linea 154  ESCRITA    vecino=delimitar_franqueza_radical_cinco_noes  huella c43d1ffc6688387b -> e28c5904cc8adc22
+  linea 158  ESCRITA    vecino=delimitar_franqueza_radical_cinco_noes  huella c43d1ffc6688387b -> e28c5904cc8adc22
+  linea 181  ESCRITA    vecino=delimitar_franqueza_radical_cinco_noes  huella c43d1ffc6688387b -> e28c5904cc8adc22
+  linea 199  ESCRITA    vecino=delimitar_franqueza_radical_cinco_noes  huella c43d1ffc6688387b -> e28c5904cc8adc22
+  linea 204  ESCRITA    candidato=despedir_persona_franqueza_radical  huella 02aa38ffba624594 -> d140e5bc404a277b
+  linea 205  ESCRITA    candidato=despedir_persona_franqueza_radical  huella 02aa38ffba624594 -> d140e5bc404a277b
+  linea 206  ESCRITA    candidato=despedir_persona_franqueza_radical  huella 02aa38ffba624594 -> d140e5bc404a277b
+  linea 207  ESCRITA    candidato=despedir_persona_franqueza_radical  huella 02aa38ffba624594 -> d140e5bc404a277b
+  linea 208  ESCRITA    candidato=despedir_persona_franqueza_radical  huella 02aa38ffba624594 -> d140e5bc404a277b
+  linea 209  ESCRITA    candidato=despedir_persona_franqueza_radical  huella 02aa38ffba624594 -> d140e5bc404a277b
+  linea 210  ESCRITA    candidato=despedir_persona_franqueza_radical  huella 02aa38ffba624594 -> d140e5bc404a277b
+  linea 211  ESCRITA    vecino=despedir_persona_franqueza_radical  huella 02aa38ffba624594 -> d140e5bc404a277b
+  linea 215  ESCRITA    candidato=reconocer_recompensar_gente_estable  huella 3f8f1a490caf481b -> bbb6bfa7089e76fb
+  linea 216  ESCRITA    candidato=reconocer_recompensar_gente_estable  huella 3f8f1a490caf481b -> bbb6bfa7089e76fb
+  linea 219  ESCRITA    vecino=despedir_persona_franqueza_radical  huella 02aa38ffba624594 -> d140e5bc404a277b
+  linea 222  ESCRITA    vecino=reconocer_recompensar_gente_estable  huella 3f8f1a490caf481b -> bbb6bfa7089e76fb
+  linea 226  ESCRITA    candidato=reconocer_recompensar_gente_estable  huella 3f8f1a490caf481b -> bbb6bfa7089e76fb
+  linea 228  ESCRITA    vecino=delimitar_franqueza_radical_cinco_noes  huella c43d1ffc6688387b -> e28c5904cc8adc22
+  linea 234  ESCRITA    vecino=despedir_persona_franqueza_radical  huella 02aa38ffba624594 -> d140e5bc404a277b
+  linea 238  ESCRITA    vecino=delimitar_franqueza_radical_cinco_noes  huella c43d1ffc6688387b -> e28c5904cc8adc22
+  linea 241  ESCRITA    vecino=repartir_semana_cuarenta_horas_jefe  huella 5741a0fe40ead016 -> de520028526c0f00
+  linea 242  ESCRITA    vecino=delimitar_franqueza_radical_cinco_noes  huella c43d1ffc6688387b -> e28c5904cc8adc22
+  linea 243  ESCRITA    vecino=despedir_persona_franqueza_radical  huella 02aa38ffba624594 -> d140e5bc404a277b
+  linea 244  ESCRITA    vecino=reconocer_recompensar_gente_estable  huella 3f8f1a490caf481b -> bbb6bfa7089e76fb
+
+declaraciones escritas: 26 de 26

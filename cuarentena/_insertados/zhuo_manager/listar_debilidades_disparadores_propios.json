@@ -1,0 +1,38 @@
+{
+  "id": "listar_debilidades_disparadores_propios",
+  "titulo": "Listar tus debilidades y tus disparadores con cuatro preguntas",
+  "denominaciones": {
+    "nombre_largo": "La segunda mitad del ajuste de cuentas honesto contigo mismo, escrita justo debajo de la lista de fuerzas",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "knowing your weaknesses and triggers"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando ya tienes escrita tu lista de fuerzas y toca la segunda parte del ajuste de cuentas honesto contigo mismo.",
+  "entregable_esperado": "Una lista escrita de tus debilidades y tus disparadores, justo debajo de la de fuerzas, agrupada en unos pocos temas.",
+  "escala_minima": "Una persona y la lista de fuerzas ya escrita, porque el libro pide escribir esta justo debajo de aquella.",
+  "pasos_accionables": [
+    "La segunda parte de llegar a un ajuste de cuentas honesto contigo mismo es conocer tus debilidades y tus disparadores.",
+    "Justo debajo de tu lista de fuerzas, responde a las cuatro preguntas que siguen.",
+    "Primera: cuando mi peor critico interior se me sienta en el hombro, por que cosas me grita? La autora responde: distraerme, preocuparme demasiado por lo que piensan los demas, no decir en voz alta lo que creo.",
+    "Segunda: si viniera un hada magica y me concediera tres dones que aun no tengo, cuales serian? Ella responde: un pozo sin fondo de confianza, claridad de pensamiento, una capacidad de persuasion increible.",
+    "Tercera: cuales son tres cosas que me disparan? Y el libro define disparador ahi mismo: una situacion que te altera mas de lo que deberia. Ella responde: la sensacion de injusticia, la idea de que otra persona me crea incompetente, la gente con el ego inflado.",
+    "Cuarta: cuales son las tres opiniones mas comunes que he recibido de mi jefe o de mis pares sobre como podria ser mas efectivo? Ella responde: se mas directa, arriesga mas, explica las cosas de forma sencilla.",
+    "Otra vez, cuenta con que veras emerger algunos temas: en su caso, las mayores barreras que se le cruzan son la duda sobre si misma, la tendencia a complicar y no ser lo bastante clara y directa."
+  ],
+  "resumen_teorico": "Es la gemela de la lista de fuerzas y el libro la ata a ella por la sede, pidiendo escribirla justo debajo. Su inventario propio son las cuatro preguntas, escritas una a una, y la definicion de disparador que el libro mete dentro de la tercera, que es lo que evita que el que responde tenga que inventarse el criterio. Lo que el libro NO dice aqui, y por eso no esta escrito: que hacer con las debilidades una vez listadas. Eso llega mas adelante en el capitulo, en la calibracion y en los disparadores."
+}

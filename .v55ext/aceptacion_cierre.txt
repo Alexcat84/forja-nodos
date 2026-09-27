@@ -1,0 +1,6 @@
+$ python tests/test_aceptacion.py
+FAIL: test_caso_positivo_una_vuelta_que_toca_saneamiento_no_abre_como_otra_cosa (__main__.PruebaRegimenLigero.test_caso_positivo_una_vuelta_que_toca_saneamiento_no_abre_como_otra_cosa)
+AssertionError: 0 != 1
+FAIL: test_la_vuelta_49_consta_como_saneamiento_en_el_registro (__main__.PruebaRegimenLigero.test_la_vuelta_49_consta_como_saneamiento_en_el_registro)
+AssertionError: 54 != 49
+  total: 339 pruebas, 2 fallos, 0 errores

@@ -1,0 +1,40 @@
+{
+  "condiciones_activacion": "Cuando estas vendiendo el puesto al candidato elegido y toca atender la cuarta de las cinco efes, la fortuna, dentro de abordar las cinco efes de la venta. Tarde o temprano se activa siempre, porque el libro dice que la retribucion acaba entrando en la ecuacion.",
+  "denominaciones": {
+    "nombre_largo": "Vender la fortuna: la cuarta de las cinco efes",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "SELLING FORTUNE"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "fortune"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "contratacion",
+  "entregable_esperado": "Una propuesta economica que el candidato entiende y que ya esta atada al logro de la tarjeta de puntuacion, y no un numero suelto lanzado para tapar un hueco.",
+  "escala_minima": "El libro la fija con el caso al reves: gente que se ha incorporado por un salario menor porque creia en el crecimiento de la empresa, lo que quiere decir que el minimo no es una cifra sino el recorrido economico contado con credibilidad.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "smart_who",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "id": "vender_fortuna_candidato",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "No tires dinero al candidato para cerrar. La investigacion dice que el dinero puede ser un desincentivo si es demasiado bajo o si no esta ligado al desempeño, pero rara vez es el motivador clave, y una subida que se da hoy suele estar olvidada mañana. Si todo lo que tienes que vender es la retribucion, eso no es bueno.",
+    "Tampoco lo ignores. La retribucion va a entrar en la ecuacion tarde o temprano, y puedes aprovecharlo demostrandole como seria recompensado si se incorporase a tu empresa.",
+    "Cuenta con los dos mercados que fijan el nivel de la paga. El candidato se va a comparar con lo que cobra hoy y con lo que cree que podria conseguir en el mercado externo; tu vas a intentar aplicar las pautas internas de retribucion, que pueden estar comparadas con fuentes externas o no estarlo.",
+    "Paga a la gente sobre una base de desempeño. Es el consejo de Ed Liddy, presidente de Allstate, y viene con su aviso: en el mercado de trabajo no existen las gangas, es facil pagar de menos y pagar de mas, no puedes intentar robarlos porque querran irse a otro sitio, y no puedes tirarles demasiado dinero porque otros se enteraran y se enfadaran.",
+    "Ata la retribucion variable al desempeño de la persona contra la tarjeta de puntuacion. La tarjeta define el desempeño A y da metricas objetivas para vigilarlo, asi que ligar los bonos al logro de la tarjeta asegura que solo pagas retribucion de primera cuando obtienes desempeño de primera."
+  ],
+  "resumen_teorico": "Es la cuarta de las cinco efes y el libro la define como la estabilidad de tu empresa y el recorrido economico global. La seccion empieza tumbando la salida facil: si nada mas parece funcionar siempre puedes tirar dinero al candidato que intentas fichar, verdad; pues no. El respaldo es una nota al pie del propio libro, la nota dos, que remite a Frederick Herzberg, One More Time: How Do You Motivate Employees, Harvard Business Review, enero y febrero de 1968. El equilibrio que el libro propone es que el dinero es una pieza del paquete pero nunca va solo, y que la forma de usarlo es demostrar como seria recompensada la persona si se incorporase. Los casos, con sus dueños delante y fuera de los pasos: Carl Lindner, presidente y fundador de American Financial Group, anima a los candidatos a mirar los beneficios record, el crecimiento y el valor de mercado de la casa, y comparte con ellos el exito personal en retribucion y patrimonio que han obtenido los que trabajan alli; Robert Gillette, de Honeywell Aerospace, avisa de que si todo lo que tienes que vender es la retribucion la cosa va mal; y Gabriel Echavarria, de Corona, tiene los bonos atados a metas matematicas junto con otras ocho metas facilmente identificables, de modo que su gente sabe cada trimestre donde estan sus bonos, y ha tenido gente que se incorporo por un salario menor porque creia en el crecimiento, y que no se incorpora para seis meses sino para seis, diez o treinta años.",
+  "titulo": "Vender la fortuna sin que el dinero vaya solo"
+}

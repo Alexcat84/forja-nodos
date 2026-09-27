@@ -1,0 +1,24 @@
+=== detectar_palanca_negativa_actividad_mando
+    bandeja/grove_high_output buscar_actividad_alta_palanca_tres_vias
+=== delegar_tarea_base_comun_seguimiento
+    bandeja/grove_high_output transmitir_objetivos_prioridades_preferencias
+    bandeja/grove_high_output supervisar_tarea_delegada_etapa_menor_valor
+    bandeja/grove_high_output detectar_palanca_negativa_actividad_mando
+=== supervisar_tarea_delegada_etapa_menor_valor
+    bandeja/grove_high_output delegar_tarea_base_comun_seguimiento
+    bandeja/grove_high_output supervisar_decision_delegada_preguntas_concretas
+    bandeja/grove_high_output elegir_inspeccion_barrera_monitorizacion
+=== supervisar_decision_delegada_preguntas_concretas
+    bandeja/grove_high_output delegar_tarea_base_comun_seguimiento
+    bandeja/grove_high_output supervisar_tarea_delegada_etapa_menor_valor
+=== identificar_paso_limitante_jornada_desfases
+    bandeja/grove_high_output subir_productividad_gerencial_tres_vias
+    bandeja/grove_high_output agrupar_tareas_semejantes_aprovechar_preparacion
+    NO EXISTE    usar_calendario_herramienta_planificacion_produccion
+    bandeja/grove_high_output construir_flujo_produccion_paso_limitante
+=== agrupar_tareas_semejantes_aprovechar_preparacion
+    bandeja/grove_high_output subir_productividad_gerencial_tres_vias
+    bandeja/grove_high_output identificar_paso_limitante_jornada_desfases
+    bandeja/grove_high_output clasificar_trabajo_proceso_montaje_prueba
+---
+aristas declaradas hacia un id que NO existe en ninguna sede: 1

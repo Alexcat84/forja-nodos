@@ -1,0 +1,20 @@
+{
+ "arista": "crear_espacio_seguro_madurar_ideas_nuevas > nutrir_ideas_nuevas_reunion_solas",
+ "arista_en_cola": true,
+ "candidato": "crear_espacio_seguro_madurar_ideas_nuevas",
+ "detalle_paso": "paso 1 del candidato contra paso 2 de nutrir_ideas_nuevas_reunion_solas",
+ "fecha": "2026-09-16",
+ "huella_candidato": "1468f0a571c670be",
+ "huella_vecino": "a5799dd7c0ffc77b",
+ "levantada_por": [
+  "paso_contra_nodo"
+ ],
+ "razon": "La madre NOMBRA la reunion a solas como el sitio seguro en sus pasos 12 a 14 (tratala como ese sitio seguro, no juzgues la idea, ayuda a aclarar el pensamiento, señala los problemas para rodearlos y no para matar la idea), y esos tres pasos salen de una sola frase de L195, que ademas remite hacia adelante al capitulo de las reuniones a solas. El hijo PROCEDIMENTA esa frase en diez pasos que la madre no tiene: la fragilidad de la idea nueva de Jony Ive, las dos cosas que hay que aclarar, la misma idea contada distinto a un ingeniero y a un comercial, y SEIS preguntas literales de las que la madre no trae ni una. Direccion por D.29: nombra la madre, despliega el hijo.",
+ "senales": {
+  "familia_id": 0.222,
+  "paso_contra_nodo": 0.617,
+  "similitud_texto": 0.192
+ },
+ "vecino": "nutrir_ideas_nuevas_reunion_solas",
+ "veredicto": "CONTINUA"
+}

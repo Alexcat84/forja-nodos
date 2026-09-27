@@ -1,0 +1,45 @@
+{
+  "id": "identificar_disparadores_propios_reaccion",
+  "titulo": "Identificar tus disparadores y cazarte a tiempo antes de responder",
+  "denominaciones": {
+    "nombre_largo": "La otra cara de la moneda del entorno: las situaciones que te disparan una reaccion desmedida, con las cuatro preguntas para encontrarlas",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "triggers"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando quieres saber que situaciones te descarrilan la efectividad, o cuando te has visto reaccionando mas fuerte que los que tenias alrededor y no sabes por que.",
+  "entregable_esperado": "Tus disparadores identificados y compartidos, de forma que puedas cazarte en el momento y dar un paso atras antes de responder.",
+  "escala_minima": "Una persona. Compartirlos pide ademas un par con el que hablarlo en privado.",
+  "pasos_accionables": [
+    "La otra cara de la moneda es entender que situaciones hacen lo contrario, o sea, te disparan una reaccion intensamente negativa que te descarrila la efectividad.",
+    "Ten claro que separa un disparador de una reaccion negativa normal: que tiene un efecto desmedido sobre ti en concreto. Cualquier directivo se sentiria decepcionado si un candidato prometedor rechazara una oferta o si una empleada estrella entregara su carta de renuncia. La pregunta mas interesante es: cuales son las cosas que a mi me aprietan los botones, pero quiza no a otra persona? Ahi es donde corres mas riesgo de que te vean como irracional.",
+    "Ten delante el ejemplo que la autora da de si misma: uno de sus disparadores es la injusticia, y si algo no le parece justo le sube la tension y le empieza a latir el corazon, y hace una montania de un grano de arena discutiendo el punto con terquedad aunque no tenga toda la informacion, lo que no siempre lleva a las discusiones mas productivas.",
+    "Usalo para lo que sirve: sabiendo que te dispara, puedes cazarte en el momento y dar un paso atras antes de responder como un exaltado. A la autora le bastan cinco minutos para calmarse y volver a estar serena.",
+    "Comparte tus disparadores y entera de cuales son los de los demas, que el libro dice que ayuda. Como estamos todos cableados de forma distinta, tus pares pueden no ser conscientes de como les esta afectando su conducta, y al reves.",
+    "El libro lo cuenta con su caso: tuvo un colega que hablaba en nombre de todo su equipo en las revisiones de direccion, incluso de areas fuera de su especialidad, y a ella le saltaba el disparador de la justicia cada vez que abria la boca. Cuando se lo dijo en privado, el se sorprendio pero le agradecio la opinion: nunca se le habia ocurrido que pudiera parecer que se estaba llevando el credito del trabajo de otros, creia que estaba ayudando a que la revision fuera mas eficiente. Despues de aquello adopto la practica de poner el foco sobre los demas siempre que podia.",
+    "Cuenta con que los disparadores de otros son otros: a unos les dispara quien parece arrogante o interesado, otros se ponen nerviosos cuando un detalle diminuto no es perfecto, quiza tu retrocedes cuando alguien dice algo de forma agresiva o demasiado dramatica, o se te enciende el genio cuando alguien del equipo tarda dias en responder a tus mensajes.",
+    "Ten presente donde vive el asunto: los disparadores ocupan el espacio entre tu area de mejora y la de otra persona, porque tu podrias trabajar en controlar tus reacciones, y la otra persona tambien podria salir beneficiada de escuchar tu opinion.",
+    "Para averiguar cuales son tus disparadores, hazte estas cuatro preguntas.",
+    "Primera: cuando fue la ultima vez que alguien dijo algo que me molesto mas de lo que molesto a los que tenia alrededor, y por que lo senti con tanta fuerza?",
+    "Segunda: que dirian mis amigos mas cercanos que son mis manias?",
+    "Tercera: a quien he conocido de quien haya desconfiado de inmediato, y que me hizo sentir asi?",
+    "Cuarta: cual es un ejemplo de una vez en que reaccione de forma exagerada y luego me arrepenti, y que me altero tanto en aquel momento?",
+    "Y cuenta con lo que vale todo esto junto: saber que te levanta y que te hunde es enormemente valioso. Igual que los atletas tienen regimenes estructurados de dieta y ejercicio para seguir compitiendo en su mejor forma, el trabajo que haces para ayudarte a operar en tu mejor version te va a dar muchos mas dias ganadores en el trabajo."
+  ],
+  "resumen_teorico": "Es la cara negativa del entorno y el libro la presenta explicitamente como la otra cara de la misma moneda. Su inventario propio son las cuatro preguntas para encontrar tus disparadores, escritas una a una, y ademas trae dos cosas que casi nunca vienen juntas: el criterio que separa un disparador de una reaccion normal, que es el efecto desmedido sobre ti en concreto, y el para que, que es cazarte en el momento y dar un paso atras. El libro tambien ubica el asunto sin cargarlo a un solo lado: el disparador vive entre tu area de mejora y la del otro. Lo que el libro NO dice, y por eso no esta escrito: ni con quien se comparten los disparadores, ni que hacer cuando el otro no recibe bien que se lo digas."
+}

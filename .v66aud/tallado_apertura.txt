@@ -1,0 +1,22 @@
+============================================================================
+TALLADO DEL REPORTE (D.41): la tabla que dice ser de instrumento
+============================================================================
+tablas que declaran instrumento : 0
+  talladas, celda a celda       : 0
+  que DIFIEREN de su instrumento: 0
+  con la ruta VACIA             : 0   (cero bytes, 7.B)
+  sin poder comprobar           : 0
+  que CITAN y no reproducen     : 0   (declaradas PARCIAL)
+
+TALLADO VERDE: las 0 tabla(s) comprobables son las de su instrumento, celda a celda.
+Traceback (most recent call last):
+  File "C:\Users\AlexDesk\Documents\forja-nodos\scripts\tallar_reporte.py", line 680, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "C:\Users\AlexDesk\Documents\forja-nodos\scripts\tallar_reporte.py", line 654, in main
+    sueltas = cifras_derivadas_sueltas()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AlexDesk\Documents\forja-nodos\scripts\tallar_reporte.py", line 127, in cifras_derivadas_sueltas
+    texto = io.open(ruta_reporte or RUTA_REPORTE,
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\AlexDesk\\Documents\\forja-nodos\\docs\\loop\\REPORTE.md'

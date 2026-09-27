@@ -1,0 +1,5 @@
+$ estado de docs/loop/REPORTE.md al cerrar el turno del extractor
+  ultima linea del fichero            : 36037
+  linea donde abre la vuelta 1 del frente: 
+  secciones '# TAREA' de esa vuelta   :
+  filas de la tabla de tareas         :

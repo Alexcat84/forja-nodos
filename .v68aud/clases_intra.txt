@@ -1,0 +1,117 @@
+# Fase ciega de la 68: mi clase de cada par DENTRO de cap_05 y DENTRO de cap_06, escrita con los pasos de los dos
+# delante (.v68aud/pasos_cap05.txt, .v68aud/pasos_cap06.txt) y ANTES de ver que pares levanta el barrido, por la vara
+# 6.1 y solo esa. Abreviaturas: la tabla de abajo. Formato: A|B|clase|madre|lectura
+@IR=infundir_regularidad_reunion_proceso
+@TC=usar_tres_clases_reunion_proceso
+@FF=fijar_frecuencia_reunion_individual_madurez_tarea
+@FD=fijar_duracion_lugar_reunion_individual
+@PG=preparar_guion_reunion_individual_subordinado
+@CI=cubrir_indicadores_problemas_reunion_individual
+@FE=facilitar_expresion_subordinado_pregunta_mas
+@TN=tomar_notas_copia_guion_reunion_individual
+@AF=acumular_asuntos_importantes_fichero_espera
+@AC=alentar_asuntos_corazon_vigilar_final_reunion
+@CT=conducir_reunion_individual_telefono_distancia
+@PC=programar_reunion_individual_cadena
+@CE=conducir_etapas_modelo_ideal_decision
+@DN=decidir_nivel_competente_inferior
+@VS=vencer_sindrome_grupo_pares_autoconfianza
+@TM=tomar_mando_reunion_pares_presidente_ausente
+@EP=ejercer_poder_posicion_etapa_decision_clara
+@CD=cortar_discusion_libre_momento_justo
+@ZS=zanjar_seis_preguntas_decision_adelantado
+@AD=anunciar_decision_inesperada_reconvocar_reunion
+IR|TC|SANO||hermanos de la cabeza de las reuniones de proceso: la regularidad de L21 contra la taxonomia de L23; ninguno usa el producto del otro
+IR|FF|SANO||la regularidad de la reunion de proceso en general contra cada cuanto se tiene el uno a uno con cada subordinado; ningun paso compartido
+IR|FD|SANO||regularidad de formato contra duracion y lugar del uno a uno
+IR|PG|SANO||que los asistentes sepan como se lleva la reunion contra quien prepara el guion del uno a uno; el paso 2 de IR no pide guion
+IR|CI|SANO||que clases de asuntos se tratan (IR paso 3, en general) contra la lista concreta del uno a uno; CI no parte de IR
+IR|FE|SANO||diseno regular de la reunion contra el papel del supervisor dentro del uno a uno
+IR|TN|SANO||regularidad contra notas sobre el guion
+IR|AF|SANO||los dos nombran la tanda (IR paso 5, AF paso 3), pero IR disena la reunion y AF abre el fichero que acumula entre dos reuniones; la madre de AF es agrupar_interrupciones (aristas_lectura.tsv)
+IR|AC|SANO||regularidad contra los asuntos de corazon a corazon
+IR|CT|SANO||regularidad contra el uno a uno por telefono
+IR|PC|SANO||IR pide regularidad de como se lleva la reunion y PC fija la fecha en cadena y NO en horario fijo; no se contradicen (L21 contra L57) y ninguno usa el producto del otro
+TC|FF|SANO||la taxonomia no es condicion de fijar la frecuencia; D.37 no dispara (seccion 7)
+TC|FD|SANO||taxonomia contra duracion y lugar
+TC|PG|SANO||taxonomia contra guion
+TC|CI|SANO||taxonomia contra contenido
+TC|FE|SANO||taxonomia contra papel del supervisor
+TC|TN|SANO||taxonomia contra notas
+TC|AF|SANO||taxonomia contra fichero de espera
+TC|AC|SANO||taxonomia contra corazon a corazon
+TC|CT|SANO||taxonomia contra telefono
+TC|PC|SANO||taxonomia contra calendario en cadena
+FF|FD|SANO||hermanos del uno a uno: cada cuanto (L33, L35) contra cuanto dura y donde (L37, L39); ningun paso compartido
+FF|PG|SANO||frecuencia contra guion
+FF|CI|SANO||frecuencia contra contenido
+FF|FE|SANO||frecuencia contra papel del supervisor
+FF|TN|SANO||frecuencia contra notas
+FF|AF|SANO||frecuencia contra fichero de espera
+FF|AC|SANO||frecuencia contra corazon a corazon
+FF|CT|SANO||frecuencia contra telefono
+FF|PC|SANO||hermanos del calendario del uno a uno: FF decide el intervalo por la madurez, PC el mecanismo de fijar la siguiente al acabar la actual. DUDA: se puede leer PC hija de FF porque la siguiente se fija con el intervalo que FF da, pero ningun paso de PC lo usa
+FD|PG|SANO||duracion y lugar contra guion
+FD|CI|SANO||duracion y lugar contra contenido; FD paso 1 (tiempo para asuntos espinosos) no fija que se trata
+FD|FE|SANO||duracion y lugar contra papel del supervisor
+FD|TN|SANO||duracion y lugar contra notas
+FD|AF|SANO||duracion y lugar contra fichero
+FD|AC|SANO||duracion y lugar contra corazon a corazon
+FD|CT|SANO||el lugar en el area del subordinado contra el telefono a distancia: variantes de sitio, ninguna usa el producto de la otra
+FD|PC|SANO||duracion y lugar contra fecha en cadena
+PG|CI|SANO||hermanos: PG decide QUIEN prepara y que hace el guion, CI QUE se trata. DUDA: la condicion de CI dice o preparando su guion, y el contenido de CI es el que va dentro del guion
+PG|FE|SANO||el subordinado prepara y pasea al supervisor por el material contra el supervisor que facilita y pregunta una vez mas: dos papeles distintos de la misma reunion
+PG|TN|CONTINUA|PG|la condicion de TN (la reunion ya tiene su guion preparado) es el producto de PG, y TN anade la copia a cada parte, las notas sobre ella, lo que simbolizan y el seguimiento (L49)
+PG|AF|SANO||guion contra fichero de espera
+PG|AC|SANO||guion contra corazon a corazon
+PG|CT|SANO||CT paso 2 usa el guion, pero la relacion pasa por TN, que es lo que CT adapta a la distancia (aristas_lectura.tsv)
+PG|PC|SANO||guion contra fecha en cadena
+CI|FE|SANO||hermanos: CI da la lista de que se trata y el criterio de lo que preocupa al subordinado (L43), FE el papel del supervisor y el principio de preguntar una vez mas (L45, L47)
+CI|TN|SANO||contenido contra notas
+CI|AF|SANO||contenido contra el fichero que acumula lo importante no urgente entre dos reuniones
+CI|AC|SANO||hermanos del contenido: la lista de L43 contra los asuntos de corazon a corazon y el que se suelta al final (L53); ninguno usa el producto del otro
+CI|CT|SANO||contenido contra telefono
+CI|PC|SANO||contenido contra fecha
+FE|TN|SANO||papel del supervisor contra notas
+FE|AF|SANO||papel contra fichero
+FE|AC|SANO||hermanos del papel del supervisor: facilitar y preguntar una vez mas contra abrir la puerta al corazon a corazon y vigilar el final
+FE|CT|SANO||papel contra telefono
+FE|PC|SANO||papel contra fecha
+TN|AF|SANO||notas sobre el guion contra fichero de espera; los dos van al seguimiento de la reunion siguiente por caminos distintos
+TN|AC|SANO||notas contra corazon a corazon
+TN|CT|CONTINUA|TN|CT adapta a la distancia la toma de notas de TN (L55: note-taking can't work in the same way) y anade el intercambio de notas al terminar. DUDA: la condicion de CT es geografica y no el producto de TN
+TN|PC|SANO||notas contra fecha
+AF|AC|SANO||fichero contra corazon a corazon
+AF|CT|SANO||fichero contra telefono
+AF|PC|SANO||fichero entre reuniones contra fecha de la siguiente
+AC|CT|SANO||corazon a corazon contra telefono
+AC|PC|SANO||los dos miran el final de la reunion, AC para el asunto que se suelta y PC para fijar la siguiente; ningun paso compartido
+CT|PC|SANO||telefono contra fecha en cadena
+CE|DN|SANO||rasgo del modelo (L33 another feature of the model) y no su continuacion: DN compone el grupo antes de las etapas. DUDA: el paso 8 de DN se ejecuta dentro de la primera etapa de CE
+CE|VS|SANO||el paso 3 de CE avisa de callar hasta ver quien gana (el caso del directivo del automovil) y VS vence el sindrome de pares esperando el consenso (L45); L47 separa las dos figuras con palabras, y VS trae la autoconfianza como procedimiento propio
+CE|TM|SANO||las etapas contra quien toma el mando cuando el grupo de pares da vueltas sin presidente
+CE|EP|CONTINUA|CE|la condicion de EP es estar en la etapa de decision clara de CE sin consenso (L61), y EP anade quien decide y cuando el poder de posicion es legitimo
+CE|CD|CONTINUA|CE|la condicion de CD es dirigir la discusion libre de CE y decidir si pasar a la decision (L63), y CD anade el criterio del momento
+CE|ZS|SANO||hermanos: las etapas del proceso contra la estructura que se zanja antes de empezar (L65)
+CE|AD|SANO||CE paso 8 dice que a quien no le guste la decision se enfadara mas sin una version pronta, y AD gobierna la palabra final que choca con lo esperado; la condicion de AD no es el producto de CE. DUDA: AD puede leerse como la tercera etapa, el apoyo, en el caso extremo
+DN|VS|SANO||nivel competente y mezcla de participantes contra autoconfianza contra el sindrome
+DN|TM|SANO||los dos piden a una persona de mayor rango, DN para poner experiencia en la composicion (L33) y TM para que tome el control del grupo que da vueltas (L51): el mismo gesto con dos fines, ninguno parte del producto del otro
+DN|EP|SANO||como iguales en la discusion libre (DN paso 8) contra el rango solo en la decision clara (EP): el mismo principio visto por sus dos lados, sin paso compartido
+DN|CD|SANO||composicion contra momento de cortar
+DN|ZS|SANO||DN puede contestar la pregunta quien decide de ZS, pero ninguno usa el producto del otro. DUDA: DN hija de ZS como respuesta a su paso 6
+DN|AD|SANO||composicion contra anuncio
+VS|TM|SANO||hermanos, dos remedios del mismo sindrome: la autoconfianza (L49) y quien toma el mando (L51)
+VS|EP|SANO||sindrome de pares contra poder de posicion
+VS|CD|SANO||sindrome contra momento de cortar
+VS|ZS|SANO||sindrome contra las seis preguntas
+VS|AD|SANO||sindrome contra anuncio
+TM|EP|SANO||el mayor rango llega al grupo por varias vias y EP no parte de TM en concreto
+TM|CD|SANO||quien toma el mando contra cuando se corta
+TM|ZS|SANO||quien toma el mando en la reunion contra quien decide zanjado antes
+TM|AD|SANO||mando contra anuncio
+EP|CD|SANO||hermanos, los dos hijos de CE: EP la legitimidad del rango, CD el momento. DUDA: el paso 5 de CD (si no sale el consenso, entra tu y decide) es el nucleo de EP, y la condicion de EP (el momento de decidir ha llegado claramente) es lo que CD decide
+EP|ZS|SANO||rango en la decision contra las seis preguntas
+EP|AD|SANO||rango contra anuncio; la decision de EP puede ser la inesperada, pero AD no parte de ella
+CD|ZS|SANO||momento contra preguntas
+CD|AD|SANO||momento contra anuncio
+ZS|AD|SANO||el ratificador de ZS paso 8 es el que da la palabra final en el ejemplo de L93, pero AD no usa la pregunta

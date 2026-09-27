@@ -1,0 +1,38 @@
+{
+  "id": "elegir_forma_inspirar_cambio_conducta",
+  "titulo": "Elegir con cual de las cuatro formas de opinion inspiras un cambio de conducta",
+  "denominaciones": {
+    "nombre_largo": "Las cuatro formas mas comunes de inspirar un cambio de conducta, que es lo que el libro llama dar opinion",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "the four most common ways to inspire a change in behavior"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando quieres que alguien de tu equipo cambie algo de como trabaja, y antes de abrir la boca quieres saber cual de las cuatro formas encaja con lo que tienes delante.",
+  "entregable_esperado": "Elegida cual de las cuatro formas usas, y sabiendo que no toda opinion util es una critica ni tiene que empezar por un problema.",
+  "escala_minima": "Una sola persona a cargo y una sola conversacion. Tres de las cuatro formas no necesitan ni proceso ni calendario.",
+  "pasos_accionables": [
+    "Parte de la apuesta que el libro hace sobre ti: si recuerdas la mejor opinion que has recibido en tu vida, es porque te inspiro a cambiar tu conducta y ese cambio hizo mejor tu vida. En su mejor version, la opinion transforma a la gente de maneras de las que la gente se enorgullece.",
+    "Deja fuera la definicion estrecha de opinion como sugerencias de mejora, que es la que la autora usaba al principio de su carrera, y cuyo ejemplo canonico en su cabeza era la critica de disenio, identificar un problema y proponer soluciones posibles.",
+    "Cuenta con que hay un abanico entero de cosas mas alla de las sugerencias de mejora que pueden inspirar a alguien a tomar una accion positiva: la opinion no tiene que ser critica, porque el elogio motiva a menudo mas que la critica, y ademas no siempre tienes que empezar por un problema.",
+    "La primera de las cuatro formas, fijar expectativas claras al principio, antes de que empiece ningun trabajo.",
+    "La segunda, dar opinion especifica de la tarea tan a menudo como puedas.",
+    "La tercera, compartir opinion sobre la conducta con cuidado y con regularidad.",
+    "Y la cuarta, recoger opinion de trescientos sesenta grados cuando quieras la maxima objetividad."
+  ],
+  "resumen_teorico": "El capitulo define dar opinion de forma mucho mas ancha que sugerir mejoras, y esa ampliacion es su doctrina: lo que cuenta como opinion es cualquier cosa que inspire un cambio de conducta, asi que el elogio entra y entra tambien lo que se dice antes de que el trabajo empiece. El libro cierra la seccion con una linea que declara cuantas formas hay y las desarrolla despues una a una con su propio titulo, asi que este nodo es la cabeza y las cuatro tienen nodo propio. La cabeza no es solo un indice: trae la definicion vieja y estrecha que el libro desmonta, que es lo que hace falta para que alguien entienda por que fijar expectativas cuenta como dar opinion. Lo que el libro NO dice, y por eso no esta escrito aqui, es como se elige entre las cuatro en un caso concreto, ni si alguna sustituye a otra."
+}

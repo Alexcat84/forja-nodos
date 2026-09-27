@@ -1,0 +1,13 @@
+ORDEN DEL LIBRO, cap_11, LO QUE QUEDA EN BANDEJA
+poblacion: cuarentena/scott_radical_candor, filtrada por resumen_teorico que cita fuentes/scott_radical_candor/cap_11.md
+el rango sale de la formula literal `Sale de las lineas`, no del primero que aparezca
+
+| # | id | lineas | pasos |
+|---:|---|---|---:|
+| 1 | `montar_tablero_kanban_medir_actividades` | `L235` a `L249` | 10 |
+| 2 | `pasear_organizacion_hallar_problemas_pequenios` | `L251` a `L269` | 9 |
+| 3 | `debatir_decidir_asuntos_cultura_evitar_delegar` | `L301` a `L305` | 6 |
+
+candidatos: 3   pasos: 25
+
+Y LOS QUE NOMBRAN cap_11 SIN SALIR DE EL: 0

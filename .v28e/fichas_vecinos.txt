@@ -1,0 +1,90 @@
+### abrir_debate_humor_explicar_proposito  [GRAFO]
+  TIT: Abrir un debate con humor y explicando para que sirve, porque el tono con que se lanza marca el de todo lo que viene detras
+  ACT: Cuando vas a lanzar un debate en tu equipo, y sobre todo cuando hay en la sala gente a la que el acto mismo de debatir le parece agresivo o amenazante.
+  ENT: Un debate lanzado con un tono que la gente pueda seguir, con el proposito del debate explicado por delante a quien no lo da por supuesto.
+  PASOS(7): Cuida el espiritu con el que lanzas el debate, porque el texto dice qu | Cuenta con que la gente de tu equipo se guia por tu estado de animo ha | Usa humor simple, o abre la reunion con una buena historia a tu costa. | Preocupate mas del tono que transmites y del animo que dejas puesto qu
+
+### aprender_resultados_vencer_dos_presiones  [GRAFO]
+  TIT: Aprender de los resultados venciendo las dos presiones que empujan a dejar de aprender
+  ACT: Cuando tu equipo y tu habeis dado la vuelta entera a la rueda, habeis conseguido algo, y ahora hay que mirar el resultado de verdad.
+  ENT: El resultado mirado sin negacion, el aprendizaje sacado de el, y la rueda empezada otra vez desde escuchar.
+  PASOS(6): Cuenta con lo que el texto llama naturaleza humana: que nos apegamos,  | Reune la disciplina casi sobrehumana que hace falta para dar un paso a | Reconoce cuando vuestros resultados podrian ser mucho mejores, o cuand | Aprende de la experiencia.
+
+### cambiar_posicion_hechos_explicar_cambio  [GRAFO]
+  TIT: Cambiar de posicion cuando cambian los hechos, y explicar el cambio en voz alta en vez de dejar que se note
+  ACT: Cuando los hechos han cambiado y tu posicion tendria que cambiar con ellos, y te frena que te llamen veleta, erratico o sin principios.
+  ENT: El cambio de rumbo hecho, con su explicacion clara y convincente de por que las cosas han cambiado, dicha en voz alta y nombrada como cambio.
+  PASOS(9): Cuenta con lo que nos dicen a menudo: que cambiar de posicion te convi | Quedate en su lugar con la idea de Keynes que el texto prefiere: cuand | Trata la comunicacion como la clave, que es como el texto la llama. | Cuenta con la queja razonable que vas a recibir: hace solo dos meses m
+
+### centrar_debate_ideas_fuera_egos  [GRAFO]
+  TIT: Centrar el debate en las ideas y dejar los egos fuera, cambiando los papeles cuando alguien empieza a defender el suyo
+  ACT: Cuando en un debate de tu equipo empiezas a notar que la gente esta pensando voy a ganar esta discusion, o mi idea contra la tuya, en vez de buscar la mejor respuesta.
+  ENT: Un debate que vuelve a estar sobre los hechos, sin propietarios de ideas, con las reglas del juego dichas si hizo falta decirlas, y con la gente escuchando mas atentamente porque sabe que puede tener que defender la posicion contraria.
+  PASOS(10): Interven en cuanto empieces a notar que la gente esta pensando voy a g | Redirigelos a centrarse en los hechos. | No permitas que nadie se atribuya la propiedad de una idea. | No dejes que el debate lo secuestre como puedan sentirse o no sentirse
+
+### compartir_logica_mostrar_razonamiento  [bandeja]
+  TIT: Compartir tu logica mostrando el razonamiento entero y no solo la conclusion
+  ACT: Cuando estas explicando una decision o una idea y la logica te parece tan evidente que casi no merece contarse.
+  ENT: El razonamiento entero compartido, no solo su conclusion, de forma que quien lo oiga pueda encontrarle un fallo si lo tiene.
+  PASOS(6): No des por hecho que la parte logica es la facil por no tener la incom | Desconfia en particular de la logica que a ti te parece evidente, porq | Cuenta con la causa que el texto pone: cuando sabes algo a fondo es di | Enseña tus operaciones, que es el secreto que el texto dice que ya apr
+
+### crear_cultura_escucha_equipo  [GRAFO]
+  TIT: Crear una cultura en la que tu equipo se escuche entre si, con un sistema simple de ideas y quejas que alguien atiende y explica
+  ACT: Cuando ya escuchas tu a tu equipo y ellos lo saben, y ahora te toca lo mas dificil, que es conseguir que se escuchen entre ellos.
+  ENT: Un sistema simple por el que cualquiera propone una idea o una queja, unas cuantas atendidas deprisa, y una explicacion dada con regularidad de por que las demas no se atienden, con el tiempo que tu puedes dedicarle acotado por escrito.
+  PASOS(17): Monta un sistema simple que tu gente pueda usar para generar ideas y d | Asegurate de que al menos algunas de las cuestiones que se levanten se | Ofrece con regularidad explicaciones de por que las demas no se estan  | Haz que el sistema no solo permita a cualquiera señalar lo que podria 
+
+### crear_obligacion_disentir_equipo  [bandeja]
+  TIT: Crear en tu equipo la obligacion de disentir, tratando el acuerdo de todos como una bandera roja
+  ACT: Cuando quieres que en tu equipo haya debate de verdad y te encuentras con reuniones donde todos estan de acuerdo, o con una discusion que no acaba de ser lo bastante robusta.
+  ENT: Una voz discrepante puesta en cada discusion donde todos estaban de acuerdo, con la obligacion de disentir declarada como norma del equipo y no como iniciativa de un valiente.
+  PASOS(5): Declara en tu equipo una obligacion de disentir, que es lo que McKinse | Trata como una bandera roja que todos los que estan alrededor de la me | Cuando eso pase, haz que alguien tome la voz discrepante. | Si la discusion de una reunion no esta siendo lo bastante robusta, usa
+
+### crear_plan_creible_equipo  [GRAFO]
+  TIT: Crear un plan que tenga posibilidades reales de funcionar
+  ACT: Cuando ya tienes una vision concreta y sabes a que se parece el exito, y toca averiguar como llegar.
+  ENT: Una estrategia con posibilidades realistas de funcionar, centrada en el nudo del problema, y relacionada con la estrategia de nivel superior si formas parte de una organizacion mayor.
+  PASOS(6): Da por hecho lo que dijo Eisenhower, que los planes no valen nada pero | Cuenta con lo que eso compra cuando llega la emergencia: una estrategi | Comprueba lo primero que el libro exige de una estrategia: que tenga u | Comprueba que tu estrategia entiende el nudo del problema que intenta 
+
+### evitar_presion_social_actos_equipo  [bandeja]
+  TIT: Evitar que un acto no obligatorio se sienta obligatorio, y que el intento de hacer equipo acabe empeorando el animo
+  ACT: Cuando eres tu quien organiza un acto divertido para tu equipo, que es justo cuando tu invitacion pesa mas de lo que crees.
+  ENT: Un acto al que va quien quiere ir, sin nadie arrastrado por la presion social ni un equipo que sale de el mas cansado que entro.
+  PASOS(6): Cuenta con que los actos divertidos pueden ser una buena manera de con | Pero cuenta tambien con que si lo organizas tu, la presion social va a | No presiones a quien no quiere ir diciendole que vaya igual para ser b | Evita los momentos ironicos en que el intento de hacer equipo y de mej
+
+### mantener_manos_trabajo_real_equipo  [bandeja]
+  TIT: Mantener las manos en el trabajo real de tu equipo, ejecutando tu tambien y no solo mirando ejecutar a otros
+  ACT: Cuando el puesto de jefe te esta alejando del trabajo que tu equipo hace de verdad y ya solo miras ejecutar a otros.
+  ENT: Trabajo de tu especialidad ejecutado por ti mismo y no solo observado, sin haber abandonado por ello las tareas de jefe.
+  PASOS(8): Cuenta con que el impuesto de colaboracion recae sobre ti, pero no al  | Mantente conectado al trabajo que se esta haciendo de verdad, no solo  | Aplicalo a tu oficio concreto: si te haces director de orquesta, sigue | No dejes por eso de dedicar tiempo a escuchar en las reuniones a solas
+
+### minimizar_impuesto_colaboracion_equipo  [bandeja]
+  TIT: Minimizar el impuesto de colaboracion de tu equipo cargando tu con el, con las tres cosas que equilibran la balanza
+  ACT: Cuando tus responsabilidades de jefe te estan comiendo el tiempo y a la vez tienes trabajo propio que hacer en tu especialidad, y tu equipo necesita tiempo para ejecutar.
+  ENT: El impuesto de colaboracion cargado sobre ti y no sobre tu equipo, y las tres cosas del equilibrio puestas en practica: su tiempo no malgastado, tus manos todavia en el trabajo, y tiempo reservado para ejecutar.
+  PASOS(4): Echate encima buena parte del impuesto de colaboracion, para que tu eq | Cuenta con que las responsabilidades que tienes como jefe se llevan un | Cuenta tambien con que una de las cosas mas dificiles de ser jefe es e | Aplica las tres cosas que el texto dice haber aprendido sobre como ace
+
+### parar_debate_emocion_agotamiento  [bandeja]
+  TIT: Parar un debate cuando la gente esta agotada o demasiado cargada de emocion, y aplazarlo en vez de dejar que decida el cansancio
+  ACT: Cuando en un debate de tu equipo la gente esta demasiado cansada, quemada o cargada de emocion como para discutir de forma productiva.
+  ENT: El debate aplazado hasta que la gente este en mejor disposicion, sin decision tomada por agotamiento y sin la pelea que habria estallado.
+  PASOS(5): Manten la conciencia puesta en estos momentos, porque el texto dice qu | Cuando los detectes, interven y pide tiempo muerto. | Cuenta con lo que pasa si no lo haces: la gente tomara una decision so | Aplaza el debate hasta que la gente este en mejor disposicion de animo
+
+### pedir_hechos_decision_evitar_recomendaciones  [bandeja]
+  TIT: Pedir hechos y no recomendaciones cuando reunes informacion para una decision
+  ACT: Cuando estas reuniendo informacion para tomar una decision y te sale solo preguntar a la gente que cree que deberiais hacer.
+  ENT: La informacion de la decision reunida en forma de hechos, sin recomendaciones que nadie tenga despues que defender como suyas.
+  PASOS(5): Resiste la tentacion de pedir recomendaciones, que es la forma en que  | Pide en su lugar hechos, no recomendaciones, que es lo que una directi | Cuenta con el motivo que esa directiva puso: la gente tiende a meter s | Cuenta tambien con el limite que el propio texto le pone: los hechos v
+
+### proteger_tiempo_equipo_jefe  [bandeja]
+  TIT: No malgastar el tiempo de tu equipo: quitar de en medio los obstaculos, las reuniones sobrantes y los mandatos de arriba
+  ACT: Cuando quieres que tu equipo tenga el maximo de tiempo posible para ejecutar y eres tu quien decide en que se les va ese tiempo.
+  ENT: El tiempo de tu equipo despejado: obstaculos quitados, reuniones y analisis innecesarios fuera, horarios respetados, debates con un decisor y una fecha, y los mandatos que no valen nada parados antes de llegarles.
+  PASOS(9): Pideles que vengan a las reuniones a solas con una lista de problemas  | Escucha, asegurate de haberlo entendido, y desactiva las situaciones q | Quita de en medio los obstaculos que parecen insalvables. | No convoques reuniones innecesarias ni pidas analisis innecesarios.
+
+### reservar_calendario_tiempo_ejecutar  [bandeja]
+  TIT: Reservar en el calendario el tiempo de ejecutar, que es solitario y por eso nunca se apunta
+  ACT: Cuando las tareas colaborativas se estan comiendo tu calendario o el de tu equipo y no queda hueco para ejecutar el plan que ya se decidio y se acepto.
+  ENT: Tiempo de ejecucion bloqueado en el calendario, tuyo y de tu equipo, con hueco real para el plan decidido.
+  PASOS(4): Cuenta con que ejecutar suele ser una tarea solitaria. | Cuenta con el sesgo que el texto nombra: usamos el calendario sobre to | Asume como uno de tus trabajos de jefe asegurarte de que las tareas co | Bloquea ese tiempo para el plan que ya se decidio y se acepto.
+

@@ -1,0 +1,10 @@
+LOS 7 DE cap_02, EN EL ORDEN DEL LIBRO:
+  1  P2    construir_flujo_produccion_paso_limitante
+  2  P5    clasificar_trabajo_proceso_montaje_prueba
+  3  P6    rehacer_flujo_paso_limitante_capacidad
+  4  P7    equilibrar_capacidad_personal_inventario_plazo
+  5  P9    preferir_inspeccion_proceso_prueba_destructiva
+  6  P10   dimensionar_inventario_materia_prima_reposicion
+  7  P11   detectar_arreglar_fallo_etapa_menor_valor
+
+total: 7

@@ -1,0 +1,4 @@
+id            : medir_critica_respuesta_oyente_brujula
+nodos_previos : ["desplegar_marco_franqueza_radical", "ajustar_franqueza_oido_oyente", "manejar_enfado_persona_desafiada", "pedir_critica_primero_crear_seguridad_psicologica"]
+nodos_siguient: []
+claves        : ['condiciones_activacion', 'denominaciones', 'dominio', 'entregable_esperado', 'estado', 'fuentes', 'id', 'ids_alias', 'nodos_previos', 'nodos_siguientes', 'pasos_accionables', 'resumen_teorico', 'titulo']

@@ -1,0 +1,20 @@
+SANO de la tanda: 80
+el mayor entre 3 y el 20 por ciento: 16   techo 20
+SEMILLA: 300916   random.Random(SEM).sample(sanos,16)
+
+linea 291  parar_debate_emocion_agotamiento   contra   abrir_debate_humor_explicar_proposito   | senales {"familia_id": 0.125, "paso_contra_nodo": 0.472, "similitud_texto": 0.385} | ['similitud_texto']
+linea 298  parar_debate_emocion_agotamiento   contra   centrar_debate_ideas_fuera_egos   | senales {"familia_id": 0.125, "paso_contra_nodo": 0.377, "similitud_texto": 0.359} | ['similitud_texto']
+linea 299  fijar_fecha_cierre_debate_equipo   contra   explicar_idea_facil_comprender_oyente   | senales {"familia_id": 0.0, "paso_contra_nodo": 0.61, "similitud_texto": 0.309} | ['paso_contra_nodo']
+linea 300  fijar_fecha_cierre_debate_equipo   contra   centrar_debate_ideas_fuera_egos   | senales {"familia_id": 0.111, "paso_contra_nodo": 0.551, "similitud_texto": 0.355} | ['similitud_texto']
+linea 304  pedir_hechos_decision_evitar_recomendaciones   contra   parar_debate_emocion_agotamiento   | senales {"familia_id": 0.0, "paso_contra_nodo": 0.405, "similitud_texto": 0.472} | ['similitud_texto']
+linea 307  pedir_hechos_decision_evitar_recomendaciones   contra   compartir_logica_mostrar_razonamiento   | senales {"familia_id": 0.0, "paso_contra_nodo": 0.462, "similitud_texto": 0.389} | ['similitud_texto']
+linea 308  pedir_hechos_decision_evitar_recomendaciones   contra   crear_obligacion_disentir_equipo   | senales {"familia_id": 0.0, "paso_contra_nodo": 0.458, "similitud_texto": 0.456} | ['similitud_texto']
+linea 310  pedir_hechos_decision_evitar_recomendaciones   contra   aprender_resultados_vencer_dos_presiones   | senales {"familia_id": 0.0, "paso_contra_nodo": 0.388, "similitud_texto": 0.353} | ['similitud_texto']
+linea 317  compartir_logica_mostrar_razonamiento   contra   centrar_debate_ideas_fuera_egos   | senales {"familia_id": 0.0, "paso_contra_nodo": 0.493, "similitud_texto": 0.364} | ['similitud_texto']
+linea 318  compartir_logica_mostrar_razonamiento   contra   minimizar_impuesto_colaboracion_equipo   | senales {"familia_id": 0.0, "paso_contra_nodo": 0.487, "similitud_texto": 0.381} | ['similitud_texto']
+linea 323  compartir_logica_mostrar_razonamiento   contra   pedir_hechos_decision_evitar_recomendaciones   | senales {"familia_id": 0.0, "paso_contra_nodo": 0.445, "similitud_texto": 0.365} | ['similitud_texto']
+linea 335  minimizar_impuesto_colaboracion_equipo   contra   parar_debate_emocion_agotamiento   | senales {"familia_id": 0.0, "paso_contra_nodo": 0.37, "similitud_texto": 0.388} | ['similitud_texto']
+linea 341  proteger_tiempo_equipo_jefe   contra   reservar_calendario_tiempo_ejecutar   | senales {"familia_id": 0.143, "paso_contra_nodo": 0.427, "similitud_texto": 0.423} | ['similitud_texto']
+linea 349  mantener_manos_trabajo_real_equipo   contra   abrir_debate_humor_explicar_proposito   | senales {"familia_id": 0.0, "paso_contra_nodo": 0.427, "similitud_texto": 0.385} | ['similitud_texto']
+linea 364  cuidarse_agotamiento_centro_rueda   contra   cambiar_posicion_hechos_explicar_cambio   | senales {"familia_id": 0.0, "paso_contra_nodo": 0.456, "similitud_texto": 0.402} | ['similitud_texto']
+linea 372  bloquear_tiempo_pensar_calendario   contra   proteger_tiempo_equipo_jefe   | senales {"familia_id": 0.143, "paso_contra_nodo": 0.604, "similitud_texto": 0.228} | ['paso_contra_nodo']

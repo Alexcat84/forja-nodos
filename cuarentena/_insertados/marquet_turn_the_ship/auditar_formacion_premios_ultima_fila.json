@@ -1,0 +1,46 @@
+{
+  "atribuciones": [],
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "fuentes": [
+    {
+      "clave": "marquet_turn_the_ship",
+      "fecha": "2026-09-16"
+    }
+  ],
+  "id": "auditar_formacion_premios_ultima_fila",
+  "titulo": "Auditar la reunion general y su entrega de premios desde la ultima fila, donde esta la mayor parte de la gente",
+  "denominaciones": {
+    "nombre_largo": "La formacion en el muelle vista desde el borde por el capitan entrante: si se oye al jefe desde el fondo, a quien se premia, si se invito a las familias, si habia fotografo, cuando se juntaron las menciones, y si el que habla sabe de donde viene y adonde va su gente",
+    "sigla": "",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "quarters"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "awards ceremony"
+      }
+    ]
+  },
+  "condiciones_activacion": "Cuando tu organizacion ya tiene una reunion general periodica con anuncios o entrega de premios y quieres saber que llega de ella a la gente que esta al fondo.",
+  "entregable_esperado": "La lectura de ese acto hecha desde donde esta la mayor parte de la gente: si se oye al que habla, que dice el que escucha, y los defectos de la ceremonia que el texto nombra, revisados uno a uno.",
+  "pasos_accionables": [
+    "Ve a la reunion general que ya existe en tu organizacion, de las que se repiten un par de veces por semana. La del texto es la formacion de la manana en el muelle, con la tripulacion formada en cuadro detras de sus suboficiales y oficiales, y el comandante, el segundo y el suboficial mayor en el medio dando los anuncios.",
+    "Andate por el borde del acto mientras sigue, que es lo que el texto hace: el comandante, el segundo y el suboficial mayor estaban en el medio dando los anuncios, y el autor se fue moviendo por la periferia.",
+    "Ponte al fondo, donde esta la mayor parte de la gente.",
+    "Comprueba si desde ahi se entiende lo que dice el jefe. En el texto no se distinguia nada: sus palabras salian sordas y confusas.",
+    "Preguntale a alguien de la gente formada si el oye.",
+    "Escucha la respuesta entera, tambien su segunda mitad. La del texto fue que no, pero que no importaba: si habia algo importante, el suboficial se lo diria en la reunion de division que venia despues de esta.",
+    "Si en ese acto hay entrega de premios, mira a quien se premia. En el texto los premios eran para gente que se iba del barco o por el periodo de mantenimiento anterior.",
+    "Mira si se invito a las familias. En el texto no se habia invitado a ninguna esposa.",
+    "Mira si hay quien haga las fotos. En el texto no habia fotografo, y el propio texto escribe el coste: se perdio la ocasion de dar a conocer esos logros ante un publico mas amplio.",
+    "Mira cuando se juntaron las menciones y las medallas. En el texto hubo una carrera de ultima hora para reunirlas.",
+    "Mira si el que habla sabe los detalles de su gente. El texto dice que el comandante parecia no estar al tanto de donde venian los hombres y adonde iban, mientras se daba la bienvenida a los nuevos y se despedia a los que se iban."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/marquet_turn_the_ship/cap_03.md, unidad Cap. 5, titulo textual Call to Action. FRONTERA DENTRO DEL NODO, declarada aqui porque EXTRACTOR.md 10 la pide: los pasos 1 y 7 a 11 salen de la linea 55 y los pasos 2 a 6 de la linea 57, las dos dentro de la PIEZA P7 de la frontera publicada en esta vuelta, 242 palabras, y las dos de la misma unidad y del mismo libro. POR QUE ES PROCEDIMIENTO Y NO CASO, con D.27 delante: el libro pone SU PROPIO inventario de OBJETOS DE REVISION, nombrados uno a uno en el mismo parrafo, y son cinco defectos de la ceremonia mas la prueba de audicion: a quien se premia, las familias no invitadas, el fotografo que no habia con su coste escrito, la carrera de ultima hora por las menciones y las medallas, y el que habla sin los detalles de su gente. No hay adjetivo de adecuacion en el sitio del criterio. LA PRUEBA DEL PASO 4 Y DEL PASO 5 ES LO QUE HACE DE ESTO UN PROCEDIMIENTO Y NO UNA QUEJA: el texto pone la posicion desde la que se mide (el fondo, donde esta la mayor parte de la gente), la medida (si se distingue lo que dice) y la comprobacion con un tercero (preguntarle a alguien si el oye). EL PASO 6 ES EL MAS CARO DEL NODO Y VA ENTERO: la respuesta del marinero tiene dos mitades, y la segunda (no importaba, porque el suboficial se lo diria despues) es la que explica por que el acto sobra tal como esta. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 11 pasos, 11 TRANSCRIPCION, 0 PUENTE. LO QUE NO ESCRIBO Y POR ESO NO ESTA AQUI: como se arregla el sonido, a quien se le encarga el fotografo, cada cuanto se repite la auditoria, ni con cuanta antelacion habria que juntar las menciones. El texto nombra los defectos y no pone ni plazo ni responsable, y ponerlos seria puente de la especie periodo y de la especie responsable. DISCUTIBLE MARCADO ANTES DE SABER SI ACIERTO, y va en el reporte de esta vuelta: la frase del texto sobre la falta de fotografo lleva dentro su propia conclusion (se perdio la ocasion de promocionar esos logros ante un publico mas amplio), asi que el paso 9 arrastra una valoracion del autor y no solo un objeto que mirar. La dejo porque la conclusion es del libro y va citada como suya; pero quien lea que un paso no debe llevar la valoracion pegada tiene donde agarrarse. UN PUENTE PROPIO CAZADO Y REESCRITO EN EL ACTO, ANTES DE QUE ESTE CANDIDATO CONTARA COMO ESCRITO (D.30 punto 2): el paso 2 decia no te quedes en el medio con los que hablan, y el texto no le dice eso al lector en ninguna linea. Lo que el texto dice es que el comandante, el segundo y el suboficial mayor estaban en el medio dando los anuncios (L55) y que el autor se fue moviendo por la periferia (L57). La prohibicion la escribi yo, y es la especie que llamo el destinatario invertido: convertir en mandato para el lector la descripcion de lo que el autor hizo. Queda reescrito como transcripcion de las dos lineas, con su frontera dentro del nodo (L55 mas L57), y la huella del puente queda en .vm01/retirados.txt y en el reporte."
+}

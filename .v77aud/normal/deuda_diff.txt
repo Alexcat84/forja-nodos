@@ -1,0 +1,5 @@
+$ git diff 658d4018 a70bdf05 -- docs/loop/DEUDA.jsonl | grep -c "^-{"
+0
+$ git diff 658d4018 a70bdf05 -- docs/loop/DEUDA.jsonl | grep "^+{" | grep -o '"id": "d[0-9]*", "linea": "[a-z]*", "tipo": "[a-z]*", "vuelta": "[0-9]*"'
+"id": "d111", "linea": "serial", "tipo": "pago", "vuelta": "77"
+"id": "d108", "linea": "serial", "tipo": "pago", "vuelta": "77"

@@ -1,0 +1,14 @@
+LA ELECCION DE LA TAREA 4, MEDIDA POR LOS DOS ALCANCES
+
+alcance del reporte (.v55 a .v62 + REPORTE.md + ACTA_AUDITOR.md)
+   candidatos de la bandeja CON salida guardada : 42 de 91
+   capitulo mas temprano con alguno sin medir   : cap_02
+   de cap_02, sin medir                         : 5  ['detectar_arreglar_fallo_etapa_menor_valor', 'dimensionar_inventario_materia_prima_reposicion', 'equilibrar_capacidad_personal_inventario_plazo', 'preferir_inspeccion_proceso_prueba_destructiva', 'rehacer_flujo_paso_limitante_capacidad']
+
+alcance de la LINEA ENTERA (todas las .vNN* de este arbol)
+   candidatos de la bandeja CON salida guardada : 47 de 91
+   capitulo mas temprano con alguno sin medir   : cap_03
+   de cap_02, sin medir                         : 0  []
+
+el elegido: detectar_arreglar_fallo_etapa_menor_valor, cap_02
+   ya tenia salida guardada en .v54/d024_detectar_arreglar_fallo_etapa_menor_valor.txt

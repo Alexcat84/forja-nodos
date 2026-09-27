@@ -1,0 +1,54 @@
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| R1 | L9 | 2 | rotulo del titulo "Combat Effectiveness" | RESIDUO: rotulo |
+| R2 | L11 | 18 | pregunta de apertura: resiliencia a veces significa cuestionar ordenes | POSTURA |
+| R3 | L13 | 7 | fecha y sitio, Arabian Gulf | RESIDUO: rotulo de fecha |
+| R4 | L15 | 2 | "Up scope." | CASO |
+| R5 | L17 | 68 | aguas someras, preparan ataque simulado al USS Olympia | CASO |
+| R6 | L19 | 89 | Almirante Krol a bordo para observar, la presion sube | CASO |
+| R7 | L21 | 101 | en posicion, sin nadie pidiendo subir el mastil esta vez | CASO |
+| R8 | L23 | 18 | "Target, bearing... MARK." Panlilio en el periscopio | CASO |
+| R9 | L25 | 2 | "Down scope." | CASO |
+| R10 | L27 | 20 | Stanley anuncia solucion de tiro, Adams recomienda disparar | CASO |
+| R11 | L29 | 37 | no tuvo que manejar el problema, pudo observar la escena | CASO |
+| R12 | L31 | 5 | "I ordered, Shoot tube three." | CASO |
+| R13 | L33 | 10 | sacudida, el torpedo de ejercicio en camino | CASO |
+| R14 | L35 | 9 | "Torpedo running hot, straight, and normal", informe de Weps | CASO |
+| R15 | L37 | 39 | cambiaron el lenguaje oficial para igualar el de los submarinistas de la Segunda Guerra Mundial | CASO |
+| R16 | L39 | 15 | mira al almirante Krol, parece disfrutar | CASO |
+| R17 | L41 | 39 | el torpedo señala impacto, lo anuncia por el 1MC | CASO |
+| R18 | L43 | 85 | baja al comedor por cafe, ceremonia de reenganche, bonos libres de impuestos | CASO |
+| R19 | L45 | 6 | rotulo "December 1999: Somewhere in the Pacific" | RESIDUO: rotulo de fecha |
+| R20 | L47 | 8 | "Yellow sounding" anunciado por el altavoz | CASO |
+| R21 | L49 | 69 | caminaba con la linterna, corre al centro de control, 0300 | CASO |
+| R22 | L51 | 34 | casi un año como capitan, ejercicio con los SEAL, ultima de tres fases | CASO |
+| R23 | L53 | 62 | fase uno: helicoptero entrega al equipo SEAL | CASO |
+| R24 | L55 | 78 | fase dos: planifican la mision, exploran el lugar | CASO |
+| R25 | L57 | 76 | ahora fase tres, imagina a los SEAL en el Zodiac de noche | CASO |
+| R26 | L59 | 79 | centro de control a oscuras, receptor de alerta temprana con pitidos | CASO |
+| R27 | L61 | 36 | reportes llegando de distintas partes del barco, todo listo | CASO |
+| R28 | L63 | 54 | pasa por el comedor, mantas apiladas por si hacen falta | CASO |
+| R29 | L65 | 37 | a popa del comedor esta la escotilla de escape | CASO |
+| R30 | L67 | 96 | sala de maquinas, los nucleares listos, decision de salvar el barco | CASO |
+| R31 | L69 | 25 | a proa, en el nivel mas bajo, torpedos cargados y listos | CASO |
+| R32 | L71 | 26 | la camara de oficiales montada como quirofano por Doc Hill | CASO |
+| R33 | L73 | 77 | casi ninguno de estos preparativos vino de sus ordenes, iniciativa de la tripulacion | POSTURA |
+| R34 | L75 | 7 | eso fue cuando anunciaron yellow sounding | CASO |
+| R35 | L77 | 8 | rotulo "Mechanism: Encourage a Questioning Attitude over Blind Obedience" | RESIDUO: rotulo de mecanismo |
+| R36 | L79 | 50 | entra al centro de control, el OOD ya ordeno avante un tercio | CASO |
+| R37 | L81 | 51 | mira la carta digital, grita que vayan atras | CASO |
+| R38 | L83 | 31 | Sled Dog: "No, Captain, you're wrong." | CASO |
+| R39 | L85 | 43 | atonito, se calla y mira las indicaciones del centro de control | CASO |
+| R40 | L87 | 53 | cae en cuenta, la proa apuntaba lejos de tierra, el equipo lo habia planeado asi | CASO |
+| R41 | L89 | 32 | la flecha crece y decrece, el OOD ordena parar todo | CASO |
+| R42 | L91 | 25 | momentos despues ven los Zodiacs, de haber seguido su orden los habrian perdido | CASO |
+| R43 | L93 | 3 | separador "• • •" | RESIDUO: separador |
+| R44 | L95 | 113 | referencia al Costa Concordia y etiqueta "ENCOURAGE A QUESTIONING ATTITUDE OVER BLIND OBEDIENCE is a mechanism for CLARITY." | POSTURA con etiqueta de mecanismo incluida |
+| R45 | L97 | 3 | rotulo "QUESTIONS TO CONSIDER" | RESIDUO: rotulo |
+| R46 | L99 | 17 | pregunta 1 | PENDIENTE DE DOCTRINA |
+| R47 | L101 | 9 | pregunta 2 | PENDIENTE DE DOCTRINA |
+| R48 | L103 | 6 | pregunta 3 | PENDIENTE DE DOCTRINA |
+| R49 | L105 | 10 | pregunta 4 | PENDIENTE DE DOCTRINA |
+| **el cuerpo entero** | **L9 a L105** | **1790** | **suma de las piezas: 1790** | **residuo sin asignar: 0** |
+
+    piezas: 49   lineas solapadas: 0   cuerpo 1790   suma 1790   residuo 0   lineas con palabras sin cubrir: 0

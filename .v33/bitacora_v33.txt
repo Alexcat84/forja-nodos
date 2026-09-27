@@ -1,0 +1,19 @@
+poblacion: bitacora/VEREDICTOS.jsonl, lineas con fecha 2026-09-17 (src/aduana._hoy())
+lineas escritas por esta vuelta: 14
+
+| linea | el par, en el sentido en que el registro lo escribe | que se escribio | levantada por |
+|---:|---|---|---|
+| 397 | `recorrer_rueda_conscientemente_cultura_equipo` contra `recorrer_rueda_conscientemente_cultura_equipo` | CORREGIDO | correccion declarada |
+| 398 | `evitar_presion_social_actos_equipo` contra `contar_cuatro_historias_propias_ver_hueco_intencion` | SANO | paso_contra_nodo |
+| 399 | `evitar_presion_social_actos_equipo` contra `proteger_tiempo_equipo_jefe` | SANO | similitud_texto |
+| 400 | `evitar_presion_social_actos_equipo` contra `crear_obligacion_disentir_equipo` | SANO | similitud_texto |
+| 401 | `dominar_arte_socializar_trabajo > evitar_presion_social_actos_equipo` | **ARISTA por lectura**, paso 9 | lectura declarada |
+| 402 | `construir_confianza_equipo_tiempo_solas` contra `decidir_quien_comunica_cada_cuanto` | SANO | paso_contra_nodo |
+| 403 | `construir_confianza_equipo_tiempo_solas` contra `reconocer_emociones_propias_avisar_equipo` | SANO | similitud_texto |
+| 404 | `construir_confianza_equipo_tiempo_solas` contra `minimizar_impuesto_colaboracion_equipo` | SANO | similitud_texto |
+| 405 | `construir_confianza_equipo_tiempo_solas > montar_reuniones_solas_mentalidad_frecuencia` | **ARISTA por lectura**, paso 5 | lectura declarada |
+| 406 | `vivir_valores_propios_evitar_listarlos` contra `sostener_contacto_oferta_aceptacion` | SANO | paso_contra_nodo |
+| 407 | `reconocer_emociones_propias_avisar_equipo` contra `minimizar_impuesto_colaboracion_equipo` | SANO | similitud_texto |
+| 408 | `reconocer_emociones_propias_avisar_equipo` contra `centrar_debate_ideas_fuera_egos` | SANO | similitud_texto |
+| 409 | `reconocer_emociones_propias_avisar_equipo` contra `cuidarse_agotamiento_centro_rueda` | SANO | similitud_texto |
+| 410 | `reconocer_emociones_propias_avisar_equipo` contra `construir_confianza_equipo_tiempo_solas` | SANO | similitud_texto |

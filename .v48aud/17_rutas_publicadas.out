@@ -1,0 +1,11 @@
+OK  1613 bytes   .v47aud/44_tramos.py
+OK  1124 bytes   .v48aud/01_palabras_tramos.py
+OK  262 bytes   .v48aud/02_candidatos_nuevos.sh
+OK  870 bytes   .v48aud/04_pasos.py
+OK  1501 bytes   .v48aud/05_lineas_cubiertas.py
+OK  1638 bytes   .v48aud/06_aristas_citadas.py
+OK  25897 bytes   .v48aud/13_pasos_contra_renglon.out
+OK  1268 bytes   .v48aud/13_pasos_contra_renglon.py
+OK  1189 bytes   .v48aud/15_forma_pasos.py
+OK  2055 bytes   .v48aud/16_forma_pasos_mismo_criterio.py
+rutas publicadas que no existen o estan en cero bytes: 0

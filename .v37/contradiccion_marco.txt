@@ -1,0 +1,5 @@
+$ sed -n "21p" fuentes/scott_radical_candor/cap_12.md | cut -c300-420
+icism. If you want, you can copy the Radical Candor framework in Chapter Two and track who’s saying what to you there. 
+$ python .v37/marco.py
+desplegar_marco_franqueza_radical P8: No escribas nombres en las casillas.
+desplegar_marco_franqueza_radical entregable: ... el marco en uso como brujula de conversaciones concretas, sin nombres escritos en las casillas.

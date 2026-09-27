@@ -1,0 +1,5 @@
+$ grep -n "^unidad\|^titulo_textual" fuentes/marquet_turn_the_ship/cap_03.md
+4:unidad: Cap. 5
+5:titulo_textual: Call to Action
+$ wc -l -w fuentes/marquet_turn_the_ship/cap_03.md
+   81  2008 fuentes/marquet_turn_the_ship/cap_03.md

@@ -1,0 +1,42 @@
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 354   (270 del grafo mas 84 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 0
+  BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+  vecinos levantados en total      : 5
+  por candidato bloqueado          : menor 5, mediana 5, mayor 5
+  que señal levanta cada vecindad  : similitud_texto 5
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] auditar_formacion_premios_ultima_fila   (auditar_formacion_premios_ultima_fila.json)
+    vecino observar_reunion_rutinaria_senales_plantilla  [levantada por: similitud_texto]
+      similitud_texto 0.391 | familia_id 0.000 | paso_contra_nodo 0.489
+      paso 8 del candidato contra paso 6 de observar_reunion_rutinaria_senales_plantilla
+    vecino contar_firmas_cadena_tramite_parado  [levantada por: similitud_texto]
+      similitud_texto 0.359 | familia_id 0.000 | paso_contra_nodo 0.465
+      paso 9 del candidato contra paso 6 de contar_firmas_cadena_tramite_parado
+    vecino recorrer_organizacion_escuchar_plantilla  [levantada por: similitud_texto]
+      similitud_texto 0.388 | familia_id 0.000 | paso_contra_nodo 0.462
+      paso 3 del candidato contra paso 3 de recorrer_organizacion_escuchar_plantilla
+    vecino encargar_meta_especifica_dejar_libre_metodo  [levantada por: similitud_texto]
+      similitud_texto 0.355 | familia_id 0.000 | paso_contra_nodo 0.435
+      paso 10 del candidato contra paso 1 de encargar_meta_especifica_dejar_libre_metodo
+    vecino seguir_frustrado_preguntar_implantacion_ideas  [levantada por: similitud_texto]
+      similitud_texto 0.356 | familia_id 0.000 | paso_contra_nodo 0.428
+      paso 4 del candidato contra paso 2 de seguir_frustrado_preguntar_implantacion_ideas
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.

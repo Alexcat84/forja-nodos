@@ -1,0 +1,4 @@
+$ el nodo de la retirada D.54, y de que capitulo es
+  nodo   : practicar_franqueza_radical_jefe_propio
+  capitulo: ['cap_09']
+  pasos  : 16

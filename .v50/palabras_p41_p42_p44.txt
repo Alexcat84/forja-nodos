@@ -1,0 +1,4 @@
+el mismo recuento de .v46/frontera.py linea 136, sobre los tres tramos de hoy
+P41  L315 a L315   HH.2.c dice  92   cuento  92   IGUALES
+P42  L317 a L317   HH.2.c dice  74   cuento  74   IGUALES
+P44  L321 a L323   HH.2.c dice 201   cuento 201   IGUALES

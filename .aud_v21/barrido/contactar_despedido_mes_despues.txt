@@ -1,0 +1,9 @@
+contactar_despedido_mes_despues   (6 pasos)   poblacion 299 = 203 grafo + 96 bandejas
+  vecinos POR ENCIMA de umbral: 0
+  los 5 mas altos por similitud_texto, esten o no por encima:
+    pedir_hechos_decision_evitar_recomendaciones         sim=0.334 fam=0.000 paso=0.416
+    establecer_credibilidad_pericia_humildad             sim=0.326 fam=0.000 paso=0.382
+    recorrer_rueda_hacer_cosas_equipo                    sim=0.319 fam=0.000 paso=0.419
+    admitir_pronto_mal_desempenio_cuatro_razones         sim=0.315 fam=0.000 paso=0.358
+    evitar_obsesion_ascenso_estatus                      sim=0.314 fam=0.000 paso=0.429
+  segundos: 371.7

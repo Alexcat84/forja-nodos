@@ -1,0 +1,3 @@
+  21    78  Instead, a manufacturer should accept the responsibility of delivering a product at the time committ
+  23   106  The first thing we must do is to pin down the step in the flow that will determine the overall shape
+  57    81  Now let's complicate things a little further. What happens if you are stuck in line waiting for a to

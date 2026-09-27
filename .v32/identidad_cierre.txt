@@ -1,0 +1,7 @@
+| pieza | valor |
+|---|---|
+| rama | `extraccion-mundo-11` |
+| commit de apertura de la vuelta 32 | `56a0df6` |
+| commit ultimo al escribir esta tabla | `94cae85` |
+| commits de esta vuelta al escribir esta tabla | **4** |
+| y el commit que publica esta tabla hace | **5** |

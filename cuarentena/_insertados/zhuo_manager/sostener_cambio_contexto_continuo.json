@@ -1,0 +1,38 @@
+{
+  "id": "sostener_cambio_contexto_continuo",
+  "titulo": "Sostener el cambio de contexto continuo cuando el trabajo se fragmenta",
+  "denominaciones": {
+    "nombre_largo": "Por que los bloques largos de foco desaparecen al crecer el equipo, y las tecnicas que la autora encontro para llevarlo",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "context switching all day, every day"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando el numero de proyectos de los que respondes se duplica y triplica, y tu tiempo se rompe en fragmentos cada vez mas pequenios.",
+  "entregable_esperado": "Un dia fragmentado llevado sin distraccion ni agobio, con cada reunion preparada y un hueco de reflexion al final de la semana.",
+  "pasos_accionables": [
+    "Reconoce lo que pierdes, que el libro describe con lo que tenia antes: tardes enteras en la pizarra con un punado de personas explorando ideas nuevas, tan metidos en el flujo del trabajo que pasaban horas en un parpadeo.",
+    "Reconoce por que se pierde: mas gente significa mas proyectos, y mas proyectos rompen tu tiempo en fragmentos cada vez mas pequenios. Diez correos entran a tu bandeja sobre diez temas completamente distintos, y las reuniones seguidas te obligan a soltar de golpe la discusion anterior y prepararte mentalmente para la siguiente.",
+    "Reconoce como se ve hacerlo mal: distraido y agobiado, con la mente saltando constantemente de un tema a otro, perdiendo el foco durante las presentaciones y murmurando que cada dia parece una semana.",
+    "Acepta que esto es el trabajo: segun el numero de proyectos de los que respondes se duplica, triplica y cuadruplica, tu capacidad de cambiar de contexto tiene que llevar el mismo ritmo.",
+    "Usa la primera tecnica que ella encontro: repasar el calendario cada manana y prepararte para cada reunion.",
+    "Usa la segunda: desarrollar un sistema robusto de toma de notas y de gestion de tareas.",
+    "Usa la tercera: encontrar huecos de reflexion al final de cada semana.",
+    "No esperes que desaparezca del todo: la autora dice que algunos dias sigue distraida, y que ha llegado a aceptar que siempre habra una docena de asuntos distintos en marcha en cualquier momento, unos grandes, otros pequenios y otros inesperados."
+  ],
+  "resumen_teorico": "Es el tercer contraste entre dirigir equipos pequenios y grandes. Lo que lo hace procedimentable son las tecnicas, que el libro nombra una a una y son actos concretos con su momento, cada manana y al final de cada semana, y no consejos de actitud. Los tres primeros pasos son diagnostico y van dentro porque el libro los escribe como la secuencia que lleva a la aceptacion del paso 4, que es la que habilita las tecnicas. El paso 8 esta porque el libro se niega expresamente a prometer que el problema desaparece, y esa negativa es parte de lo que se transmite. Lo que el libro NO dice, y por eso no esta escrito aqui, que sistema de notas usar, ni cuanto dura el hueco de reflexion.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}

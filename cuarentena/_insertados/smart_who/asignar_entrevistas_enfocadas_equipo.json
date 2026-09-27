@@ -1,0 +1,40 @@
+{
+  "condiciones_activacion": "Cuando ya has conducido la entrevista cronologica de trayectoria y quieres subir un punto la magnificacion antes de decidir. Es el tercer paso de las cuatro entrevistas del metodo A, dentro de seleccionar al jugador A con las cuatro entrevistas, y es ademas la via por la que otros miembros del equipo entran de verdad en el proceso.",
+  "denominaciones": {
+    "nombre_largo": "La entrevista enfocada: repartir los resultados y las competencias de la tarjeta entre varios entrevistadores",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "focused interview"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "THE FOCUSED INTERVIEW: GETTING TO KNOW MORE"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "contratacion",
+  "entregable_esperado": "El reparto escrito de que resultados y que competencias de la tarjeta de puntuacion cubre cada entrevistador, y los datos suplementarios que cada uno trae al proceso de decision.",
+  "escala_minima": "El propio libro la fija en su reparto minimo: de uno a tres miembros del equipo conducen entrevistas enfocadas, de cuarenta y cinco minutos a una hora cada una.",
+  "fuentes": [
+    {
+      "clave": "smart_who",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "id": "asignar_entrevistas_enfocadas_equipo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Enfoca cada entrevista en los resultados y las competencias de la tarjeta de puntuacion, y no en una descripcion de puesto vagamente definida ni en la intuicion del directivo. Esa es la unica diferencia mayor con la entrevista de conducta al uso.",
+    "Reparte los resultados y las competencias de la tarjeta entre los miembros del equipo que van a entrevistar, agrupando en cada entrevistador los que tratan del mismo asunto. Con una tarjeta de cuatro resultados y seis competencias, el libro reparte asi entre tres: el primero toma los dos primeros resultados y las dos primeras competencias porque todos tienen que ver con el mismo tema, el segundo toma el resultado relativo a construir el equipo y las dos competencias que tratan de como el candidato lo construye, y el tercero se queda con todo lo demas.",
+    "Calcula de cuarenta y cinco minutos a una hora por entrevista, segun cuantos resultados y competencias asignes a cada entrevistador.",
+    "Deja claro a tu equipo que esto no es otra entrevista cronologica: una sola pasada por la historia completa del candidato es suficiente.",
+    "Insiste en que todos sigan el guion, porque si no algunos colegas recaeran en sus metodos vudu favoritos de contratacion.",
+    "Arranca cada entrevista con las preguntas primarias y despues ponte curioso tras cada respuesta con el marco de que, como y cuentame mas, sin dejar de preguntar hasta entender que hizo la persona y como lo hizo."
+  ],
+  "resumen_teorico": "La entrevista enfocada es el tercer tramo del paso Select del metodo A. La entrevista cronologica de trayectoria es exhaustiva y lleva casi todo el camino hacia la respuesta correcta, hasta el punto de que los autores dicen haber visto muchas buenas contrataciones hechas solo con ella, pero recomiendan un paso mas: la entrevista enfocada permite reunir informacion adicional y especifica, como subir un punto la magnificacion para dar a los futuros contratados una ultima mirada con mas grano fino. Es parecida a la entrevista de conducta de uso comun con una diferencia mayor: se centra en los resultados y las competencias de la tarjeta de puntuacion y no en una descripcion de puesto vaga ni en la intuicion del directivo. Los autores la llaman el potenciador de probabilidades. Ofrece ademas la ocasion de meter a otros miembros del equipo directamente en el proceso de contratacion, con dos cautelas que el libro pone antes de nada: que quede claro que no es otra entrevista cronologica, porque una sola pasada por la historia completa basta, y que todos sigan el guion, porque si no algunos colegas recaen en sus metodos vudu. AUSENCIA DECLARADA: en cap_05.md L105 el libro remite a un recuadro con las preguntas primarias de esta entrevista, y ese recuadro no esta en el fichero de la fuente. Las preguntas primarias no se escriben aqui porque el libro no las pone en el texto disponible; lo que si pone es todo el inventario de reparto, duracion y encuadre, y eso es lo que este nodo transcribe. El ejemplo con el que el libro despliega el reparto es el de un puesto de direccion de ventas con cuatro resultados y seis competencias en su tarjeta; sus cifras concretas pertenecen a ese ejemplo y no se convierten en pasos. El capitulo cierra este tramo con el caso de First Solar, fabricante de paneles solares de crecimiento rapido, que se creo una entrevista de encaje cultural sobre el armazon de la entrevista enfocada porque demasiada gente con talento no aguantaba su cultura acelerada; Mike Ahearn, su consejero delegado, y Carol Campbell, su responsable de personal, lo cuentan en primera persona. Ese caso no da nodo propio: el unico mandato que el libro pone alrededor es incluir competencias y resultados que vayan mas alla de lo especifico del puesto para abrazar los valores mayores de la empresa, que es un fin y no un medio, y las competencias de cultura ya viven en el nodo que las identifica dentro de la tarjeta de puntuacion.",
+  "titulo": "Asignar entrevistas enfocadas al equipo por resultados y competencias de la tarjeta"
+}

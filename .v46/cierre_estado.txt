@@ -1,0 +1,15 @@
+$ git rev-parse --abbrev-ref HEAD
+extraccion-mundo-11
+$ git log -1 --format='%h %ad %s' --date=iso
+6a9fdd8 2026-09-19 01:25:54 -0400 VUELTA 46, tareas 1 y 2: el PUENTE del paso 5 pagado por averia, y la frontera de cap_04 cerrada al digito con 22 nodos contra un techo de 15
+
+$ wc -l dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl config/pares_mutuos.jsonl
+    346 dataset/nodos.jsonl
+    740 bitacora/VEREDICTOS.jsonl
+      1 config/pares_mutuos.jsonl
+   1087 total
+
+$ ls cuarentena/grove_high_output/*.json | wc -l
+30
+$ ls cuarentena/_insertados/grove_high_output/*.json | wc -l
+1

@@ -1,0 +1,7 @@
+ADUANA DE INSERCION, candidato 'bajar_detalle_organizacion_fuente_hechos'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 232 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 233
+  censos escritos: denominaciones

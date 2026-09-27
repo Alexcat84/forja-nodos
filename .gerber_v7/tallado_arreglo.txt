@@ -1,0 +1,4 @@
+TALLADA de nuevo: docs/loop/REPORTE.md linea 60122, 12 celda(s) que estaban tecleadas
+TALLADA de nuevo: docs/loop/REPORTE.md linea 59996, 11 celda(s) que estaban tecleadas
+
+CORRECCION DECLARADA: escribe al lado de la tabla de que caida sale y con que orden se regenero. Una correccion silenciosa vuelve a ser una tabla sin origen.

@@ -1,0 +1,50 @@
+{
+  "id": "fijar_cuatro_notas_calcular_nota_global",
+  "titulo": "Fijar cuatro notas en vez de mas o menos, y calcular la nota global sin promediar las categorias",
+  "denominaciones": {
+    "nombre_largo": "El cuarto de los trece elementos: cuantas notas, con la regla de que solo saca la nota alta quien la saca en todas las categorias y de que una nota baja en una categoria tumba la global",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "number of ratings"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando tienes que decidir en cuantos escalones se puntua cada categoria, y despues como se combinan las notas de categoria en una nota global.",
+  "entregable_esperado": "El numero de notas fijado con las razones del texto delante, y la regla de calculo de la nota global escrita sin promedios.",
+  "pasos_accionables": [
+    "Ten delante lo que el texto dice que se ha estudiado mucho, cual es el numero optimo de notas, y las dos respuestas que recogio: los estadisticos le dicen que de cinco a siete notas maximizan la senial que sacas de la gente sin meter demasiada complejidad, y los profesionales de recursos humanos con los que hablo le han sugerido que eso son demasiadas notas.",
+    "Cuenta con la primera pega de pasarse: mas de cuatro notas da una falsa sensacion de precision, y hace que los jefes sientan que deberian poder alcanzar un nivel de granularidad en su valoracion del desempenio que en realidad no es posible.",
+    "Cuenta con la segunda pega, que es lo que los jefes hacen cuando tienen demasiadas notas a mano: tienden a intentar ensenar una subida en cada evaluacion para que la persona sienta que esta mejorando, y el texto dice que eso no es gestion del desempenio sino una falsa sensacion de progreso, porque el desempenio tiene invariablemente sus altos y sus bajos, y si un trimestre malo no se refleja en la nota, los jefes estan midiendo tiempo en el puesto y no desempenio.",
+    "Cuenta con la pega de quedarse corto: si ofreces solo tres notas, la inmensa mayoria de la gente no aprende nada de su nota, porque la inmensa mayoria, normalmente alrededor del ochenta por ciento, va a estar en el medio.",
+    "Cuenta con lo que arreglan cuatro notas: obligan a los jefes a dividir ese medio enorme entre quienes estan por encima de la media y quienes estan por debajo. Muchos jefes se resisten porque eso trae conversaciones duras, pero el texto dice que si estas en ese medio enorme mereces de verdad saber lo que piensan tu jefe y tu equipo.",
+    "Fija cuatro notas, que es donde el texto dice haberse quedado como la mejor proporcion entre simplicidad y senial, contando con que puede haber una buena razon para que tu hagas otra cosa.",
+    "Sea cual sea el numero que elijas, busca un sistema que lleve a los jefes a dejarle claro a la gente donde esta y que implicaciones tiene para su paga y su empleo futuro, porque las conversaciones improvisadas de franqueza radical se centran en el deseo intrinseco de mejorar y las consecuencias extrinsecas del desempenio merecen una conversacion aparte.",
+    "Cuenta con lo que cuatro notas por separado en cada una de las categorias elegidas permiten: que la evaluacion sirva de diagnostico para mejorar, del tipo tus resultados son asombrosos pero tu trabajo en equipo te va a frenar, y no solo de latigo o de zanahoria como hace una nota global unica.",
+    "Cuenta tambien con la pega que el texto reconoce de las cuatro notas: no te da una nota para la gente cuyo desempenio es de verdad excepcional, digamos el cinco o incluso el uno por ciento de arriba; para esa gente el texto dice que normalmente necesitas hacer algo a medida para mantenerla enganchada, y que un proceso no basta.",
+    "Cuando montes la rejilla de notas, no la adoptes tal cual: el texto dice que tendras que averiguar que funciona mejor en tu situacion, con aportacion de partes interesadas diversas, y que no uses palabras tan genericas como las suyas.",
+    "No uses un promedio de las notas de cada categoria para producir la nota global, que es la recomendacion expresa del texto.",
+    "Aplica en su lugar las dos reglas que el texto escribe: la unica gente que puede sacar la nota alta tiene que sacarla en todas las categorias, y quien saca la nota mas baja en una sola categoria saca esa nota baja como global. El texto dice que esto te ayuda a llegar a un reparto razonable de la nota global."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_14.md, unidad Bonus Chapter, titulo textual Bonus Chapter: A Radically Candid Performance Review. Sale de las lineas 99 a 115, que son la PIEZA P6 de la frontera de esta vuelta, 594 palabras, y es el elemento numero 4 de los trece que la cabeza nombra. POR QUE ES PROCEDIMIENTO Y NO POSTURA, con D.27 delante: el libro pone su propio inventario de OBJETOS que hay que pesar, con cifras suyas y no mias, y acaba en dos REGLAS DE CALCULO escritas literalmente en la linea 115, que son medios y no metas: nada de promedios, la nota alta exige nota alta en todas las categorias, y una nota baja en una categoria tumba la global. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 12 pasos, 12 TRANSCRIPCION, 0 PUENTE. P1 sale de la linea 101; P2 y P3 de la 103; P4 y P5 de la 105; P6 y P7 de la 107; P8 de la 109; P9 de la 111; P10 de la 113; P11 y P12 de la 115. TODAS LAS CIFRAS SON DEL TEXTO: de cinco a siete notas, mas de cuatro, tres notas, ochenta por ciento, cuatro notas, cinco por ciento y uno por ciento. NO ANADO NINGUNA. LOS NOMBRES DE LAS NOTAS NO SE ESCRIBEN AQUI porque esta pieza no los da: la linea 113 remite a una rejilla que el recorte no reproduce, y los nombres Great, Good, OK for Now y Not OK aparecen en piezas posteriores. NO ESCRIBO DESTINATARIO NI PERIODO NI RESPONSABLE. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: cual es la rejilla concreta, que se hace con el uno por ciento excepcional mas alla de algo a medida, ni como se decide si tu situacion pide un numero distinto de cuatro.",
+  "atribuciones": [
+    {
+      "cifra": "de cinco a siete notas maximizan la senial sin meter demasiada complejidad, segun los estadisticos consultados por la autora; mas de cuatro da falsa precision; con solo tres notas alrededor del ochenta por ciento de la gente queda en el medio; y entre el uno y el cinco por ciento de una poblacion hace un trabajo de verdad excepcional",
+      "autor": "Kim Scott, recogiendo a los estadisticos y a los profesionales de recursos humanos con los que hablo",
+      "fuente": "scott_radical_candor",
+      "fecha_corte": "no consta la fecha en el texto: la unidad no data las cifras ni nombra los estudios, y este recorte no incluye las notas del libro"
+    }
+  ],
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-13"
+    }
+  ]
+}

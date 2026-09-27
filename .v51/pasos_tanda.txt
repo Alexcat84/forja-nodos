@@ -1,0 +1,9 @@
+    $ python .v51/pasos_por_candidato.py
+    pieza id                                                  pasos  TRANSCRIPCION  PUENTE
+    P6    infundir_regularidad_reunion_proceso                    8              8       0
+    P7    usar_tres_clases_reunion_proceso                        4              4       0
+    P11   fijar_frecuencia_reunion_individual_madurez_tarea      10             10       0
+    P12   fijar_duracion_lugar_reunion_individual                10             10       0
+    P13   preparar_guion_reunion_individual_subordinado           7              7       0
+    P14   cubrir_indicadores_problemas_reunion_individual        10             10       0
+          TOTAL DE LA TANDA                                      49             49       0

@@ -1,0 +1,17 @@
+$ grep -in "pasos_accionables" src/correccion.py src/arista.py src/anotacion.py | grep -v "^src/correccion.py:[0-9]*: *#"
+src/arista.py:121:    pasos = nodo_madre.get("pasos_accionables") or []
+
+$ python forja.py ayuda   (las operaciones que ESCRIBEN, una a una)
+    python forja.py insertar candidato.json     la aduana (manual seccion 3)
+    python forja.py informe candidato.json      la aduana EN SECO, cero inserciones
+    python forja.py arista --madre A --hijo B --paso N --razon R   D.37
+    python forja.py corregir --nodo <id> --anade "CORRECCION DECLARADA ..." --razon R
+                                                correccion declarada del resumen_teorico
+    python forja.py anotar --linea <n> --anade "CORRECCION DECLARADA ..." --razon R
+                           [--no-consumada]
+                                                correccion declarada sobre una linea ya
+                                                escrita de bitacora/VEREDICTOS.jsonl
+    python forja.py gate                        el gate de integridad
+    python forja.py guiones [ruta ...]          el barrido de estilo
+    python forja.py rancios                     el bloque de vigencia (D.15)
+    python forja.py resolutor [id ...]          el resolutor de ids

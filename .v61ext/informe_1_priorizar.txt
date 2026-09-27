@@ -1,0 +1,42 @@
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 440   (346 del grafo mas 94 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 0
+  BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+  vecinos levantados en total      : 5
+  por candidato bloqueado          : menor 5, mediana 5, mayor 5
+  que señal levanta cada vecindad  : similitud_texto 5
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] priorizar_lista_entrenamiento_subordinados   (priorizar_lista_entrenamiento_subordinados.json)
+    vecino pedir_critica_anonima_curso_entrenamiento_dictado  [levantada por: similitud_texto]
+      similitud_texto 0.497 | familia_id 0.111 | paso_contra_nodo 0.460
+      paso 1 del candidato contra paso 3 de pedir_critica_anonima_curso_entrenamiento_dictado
+    vecino desarrollar_primer_curso_entrenamiento  [levantada por: similitud_texto]
+      similitud_texto 0.411 | familia_id 0.143 | paso_contra_nodo 0.401
+      paso 1 del candidato contra paso 6 de desarrollar_primer_curso_entrenamiento
+    vecino responder_primer_aviso_renuncia_subordinado  [levantada por: similitud_texto]
+      similitud_texto 0.351 | familia_id 0.125 | paso_contra_nodo 0.403
+      paso 1 del candidato contra paso 1 de responder_primer_aviso_renuncia_subordinado
+    vecino gestionar_retencion_subordinado_valioso_renuncia  [levantada por: similitud_texto]
+      similitud_texto 0.355 | familia_id 0.125 | paso_contra_nodo 0.394
+      paso 3 del candidato contra paso 3 de gestionar_retencion_subordinado_valioso_renuncia
+    vecino reciclar_empleado_ascendido_mas_alla_capacidad  [levantada por: similitud_texto]
+      similitud_texto 0.355 | familia_id 0.000 | paso_contra_nodo 0.384
+      paso 4 del candidato contra paso 2 de reciclar_empleado_ascendido_mas_alla_capacidad
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.

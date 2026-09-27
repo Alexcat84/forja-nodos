@@ -1,0 +1,13 @@
+    informe                           saldo    vecinos
+    .v53\aduana_c1.txt             ENTRARIA          0
+    .v53\aduana_c2.txt               CAERIA          0
+    .v53\aduana_c2b.txt            ENTRARIA          0
+    .v53\aduana_c3.txt           BLOQUEARIA          4
+    .v53\aduana_c4.txt           BLOQUEARIA          3
+    .v53\aduana_c5.txt             ENTRARIA          0
+    .v53\aduana_c6.txt           BLOQUEARIA          3
+    .v53\aduana_c7.txt             ENTRARIA          0
+    .v53\aduana_c8.txt           BLOQUEARIA          6
+    .v53\aduana_c9.txt           BLOQUEARIA          1
+
+    PARES DE COLA QUE ESTA VUELTA ABRE, sumados de los informes : 17

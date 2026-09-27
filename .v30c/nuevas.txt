@@ -1,0 +1,32 @@
+lineas nuevas (290..375): 86
+por veredicto: Counter({'SANO': 80, 'CONTINUA': 6})
+candidatos distintos: 13
+    10 compartir_logica_mostrar_razonamiento
+    10 minimizar_impuesto_colaboracion_equipo
+    10 proteger_tiempo_equipo_jefe
+    9 parar_debate_emocion_agotamiento
+    9 mantener_manos_trabajo_real_equipo
+    8 reservar_calendario_tiempo_ejecutar
+    7 pedir_hechos_decision_evitar_recomendaciones
+    6 cuidarse_agotamiento_centro_rueda
+    6 bloquear_tiempo_pensar_calendario
+    4 fijar_fecha_cierre_debate_equipo
+    3 persuadir_emocion_oyente_no_propia
+    3 establecer_credibilidad_pericia_humildad
+    1 repartir_decision_cercanos_hechos
+
+  levantada_por ('similitud_texto',) 74
+  levantada_por ('paso_contra_nodo',) 5
+  levantada_por ('lectura declarada',) 4
+  levantada_por ('familia_id',) 3
+
+con arista: 6
+   arista: minimizar_impuesto_colaboracion_equipo > proteger_tiempo_equipo_jefe | veredicto CONTINUA | levantada_por ['similitud_texto'] | en_cola True
+   arista: minimizar_impuesto_colaboracion_equipo > proteger_tiempo_equipo_jefe | veredicto CONTINUA | levantada_por ['similitud_texto'] | en_cola None
+   arista: minimizar_impuesto_colaboracion_equipo > mantener_manos_trabajo_real_equipo | veredicto CONTINUA | levantada_por ['lectura declarada'] | en_cola None
+   arista: minimizar_impuesto_colaboracion_equipo > reservar_calendario_tiempo_ejecutar | veredicto CONTINUA | levantada_por ['lectura declarada'] | en_cola None
+   arista: aprender_resultados_vencer_dos_presiones > cuidarse_agotamiento_centro_rueda | veredicto CONTINUA | levantada_por ['lectura declarada'] | en_cola None
+   arista: desplegar_plan_orden_operaciones_franqueza_radical > bloquear_tiempo_pensar_calendario | veredicto CONTINUA | levantada_por ['paso_contra_nodo'] | en_cola True
+
+SIN razon (D.8): 0
+razon mas corta: 125

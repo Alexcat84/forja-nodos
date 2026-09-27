@@ -1,0 +1,40 @@
+ADUANA DE INSERCION, candidato 'decidir_momento_despedir_persona'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 223 nodo(s) del dataset
+
+VECINOS POR ENCIMA DE UMBRAL: 4. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino despedir_persona_franqueza_radical  [Despedir con franqueza radical, sin distanciarte de la persona y con el trabajo siguiente imaginado antes de la reunion]
+    levantada por: familia_id
+    similitud_texto    0.347 (umbral 0.35)
+    familia_id         0.333 (umbral 0.30)
+    paso_contra_nodo   0.512 (umbral 0.60)
+    paso 11 del candidato contra paso 1 de despedir_persona_franqueza_radical
+
+  vecino pedir_critica_equipo_premiarla  [Pedir activamente que tu equipo te critique, aguantar el silencio y premiar la primera franqueza a la vista de todos]
+    levantada por: similitud_texto
+    similitud_texto    0.369 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.510 (umbral 0.60)
+    paso 2 del candidato contra paso 2 de pedir_critica_equipo_premiarla
+
+  vecino despedir_persona_respeto_franqueza  [Despedir a una persona con respeto y sin rodeos]
+    levantada por: familia_id
+    similitud_texto    0.199 (umbral 0.35)
+    familia_id         0.333 (umbral 0.30)
+    paso_contra_nodo   0.430 (umbral 0.60)
+    paso 12 del candidato contra paso 6 de despedir_persona_respeto_franqueza
+
+  vecino elegir_recolocar_despedir_persona  [Elegir si recolocas a la persona dentro o la dejas ir]
+    levantada por: familia_id
+    similitud_texto    0.232 (umbral 0.35)
+    familia_id         0.333 (umbral 0.30)
+    paso_contra_nodo   0.395 (umbral 0.60)
+    paso 6 del candidato contra paso 5 de elegir_recolocar_despedir_persona
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 224
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 4

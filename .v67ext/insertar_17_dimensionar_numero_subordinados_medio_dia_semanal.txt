@@ -1,0 +1,13 @@
+fila 17, dimensionar_numero_subordinados_medio_dia_semanal, lineas --veredicto: 0
+inicio 2026-09-24 13:31:22
+======================================================================
+ADUANA DE INSERCION, candidato 'dimensionar_numero_subordinados_medio_dia_semanal'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (384 del grafo mas 95 que esperan en bandejas)
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 385
+  censos escritos: atribuciones, denominaciones
+
+======================================================================
+fin 2026-09-24 14:37:50 | codigo de salida 0 | 3988.1 s

@@ -1,0 +1,4 @@
+$ python scripts/retirar_paso.py --ver   (despues de aplicarla)
+RETIRADAS DECLARADAS QUE SIGUEN VIVAS EN EL CAMPO (D.54)
+  poblacion: dataset/nodos.jsonl, sin filtrar
+  encontradas: 0

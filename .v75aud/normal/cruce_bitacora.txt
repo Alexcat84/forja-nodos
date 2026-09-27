@@ -1,0 +1,10 @@
+lineas de la bitacora: 1111 | nuevas desde la 1082: 30
+nuevas por tipo: {'correccion declarada del resumen_teorico (EXTRACTOR.md 2)': 1, 'veredicto': 29} | suma: 30
+(0) linea de operacion: candidato dar_elogio_disciplina_igual_critica | caracteres 5382 > 7719 | huellas e61505b50710934d > 6bdd3603854e9f2b | la razon cita 73.5 y 73.6: SI | texto_anadido 2336 caracteres
+(1) veredictos contra .v73ext/veredictos_listos.txt: {'igual letra a letra a una linea preparada': 29} | suma: 29
+    lineas vivas preparadas: 29 | usadas: 29 | usadas dos veces: 0
+(2) veredictos contra mi barrido sellado de la 73: {'par de mi barrido, seniales, levantada_por y detalle iguales': 29} | suma: 29
+    filas dirigidas de mi barrido: 29 | sin linea en la bitacora: 0 []
+(3) clase contra mis clases selladas, con la 72.5 (D73.9): {'igual clase y madre': 29} | suma: 29
+    pares sin orden en la bitacora: 20 | en mis clases: 20
+    aristas distintas en las nuevas: 3

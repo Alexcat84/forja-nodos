@@ -1,0 +1,26 @@
+cap_04 abre  hacer_trabajo_futuro              285
+cap_04 cierra hacer_trabajo_futuro             291
+cap_07 abre  dictar_ritmo                      279
+cap_07 cierra dictar_ritmo                     287
+cap_08 abre  construir_empresa                 37
+cap_08 cierra construir_empresa                51
+cap_08 abre  trazar_modelo                     109
+cap_08 cierra trazar_modelo                    121
+cap_11 abre  fingir_prototipo                  35
+cap_11 cierra fingir_prototipo                 57
+cap_11 abre  dar_valor                         61
+cap_11 cierra dar_valor                        81
+cap_11 abre  operar_modelo                     87
+cap_11 cierra operar_modelo                    133
+cap_11 abre  documentar_trabajo                155
+cap_11 cierra documentar_trabajo               173
+cap_11 abre  unificar_color                    215
+cap_11 cierra unificar_color                   241
+cap_11 abre  interrogar_negocio                245
+cap_11 cierra interrogar_negocio               265
+cap_11 regla 3, enunciada en la lista          49
+cap_11 regla 5, enunciada en la lista          53
+cap_11 regla 1, primera declarativa            73
+cap_11 regla 1, ultima declarativa             81
+cap_11 regla 4, su encabezado                  153
+cap_10 las preguntas que NO son el nodo        121

@@ -1,0 +1,59 @@
+{
+ "id": "archivar_indicadores_resolver_problemas",
+ "grafo": 366,
+ "bandejas": 113,
+ "vecinos": [
+  {
+   "id": "construir_indicador_tendencia_patron",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.361,
+    "familia_id": 0.143,
+    "paso_contra_nodo": 0.42
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 2 del candidato contra paso 3 de construir_indicador_tendencia_patron"
+  },
+  {
+   "id": "revisar_tres_preguntas_valor_carrera",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.369,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.414
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 2 del candidato contra paso 1 de revisar_tres_preguntas_valor_carrera"
+  },
+  {
+   "id": "vencer_sindrome_grupo_pares_autoconfianza",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.364,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.405
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 5 de vencer_sindrome_grupo_pares_autoconfianza"
+  },
+  {
+   "id": "cerrar_brecha_dos_preguntas_estrategia",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.353,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.393
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 4 del candidato contra paso 6 de cerrar_brecha_dos_preguntas_estrategia"
+  }
+ ]
+}

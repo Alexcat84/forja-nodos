@@ -1,0 +1,10 @@
+CORRECCION DECLARADA SOBRE UN NODO YA INSERTADO
+  nodo : recorrer_rueda_conscientemente_cultura_equipo
+  campo: resumen_teorico
+  el texto viejo SIGUE ENTERO: 3312 caracteres, ninguno borrado
+  se aniaden 991 caracteres al final
+  huella antes  : 51c014343239ec45
+  huella despues: f2039c320fabe9f9
+
+GATE VERDE sobre la simulacion. CORRECCION ESCRITA EN: recorrer_rueda_conscientemente_cultura_equipo
+  razon en bitacora/VEREDICTOS.jsonl

@@ -1,0 +1,4 @@
+$ sed -n '95p' fuentes/scott_radical_candor/cap_08.md | grep -o 'Holding regular 1:1s[^.]*\.'
+  Holding regular 1:1s in which your direct report sets the agenda and you ask questions is a good way to begin building trust.
+$ sed -n '95p' fuentes/scott_radical_candor/cap_08.md | grep -o '(See .1:1 Conversations,. chapter eight.)'
+  (See “1:1 Conversations,” chapter eight.)

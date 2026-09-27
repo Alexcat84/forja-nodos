@@ -1,0 +1,4 @@
+FICHERO DE CLASES ESCRITO: .v33a/mis_clases.txt
+HORA DEL FICHERO (mtime): 2026-09-17 08:17:27
+bytes: 5809
+SEGUNDO BLOQUE ANEXADO. hora del fichero: 2026-09-17 08:22:57   bytes: 10827

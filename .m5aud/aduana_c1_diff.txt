@@ -1,0 +1,20 @@
+$ diff .m5aud/aduana_c1_m5.txt .v4m/aduana/c1.txt
+9,10c9,10
+<   ENTRARIAN sin leer nada          : 1
+<   BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+---
+>   ENTRARIAN sin leer nada          : 0
+>   BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+13a14,18
+> LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+>   vecinos levantados en total      : 1
+>   por candidato bloqueado          : menor 1, mediana 1, mayor 1
+>   que señal levanta cada vecindad  : similitud_texto 1
+> 
+18c23,26
+< [ENTRARIA] eliminar_seguimiento_descendente_responsabilizar_dueno   (eliminar_seguimiento_descendente_responsabilizar_dueno.json)
+---
+> [BLOQUEARIA] eliminar_seguimiento_descendente_responsabilizar_dueno   (eliminar_seguimiento_descendente_responsabilizar_dueno.json)
+>     vecino declarar_intencion_reemplazar_peticion_permiso  [levantada por: similitud_texto]
+>       similitud_texto 0.350 | familia_id 0.000 | paso_contra_nodo 0.405
+>       paso 1 del candidato contra paso 1 de declarar_intencion_reemplazar_peticion_permiso

@@ -1,0 +1,3 @@
+    $ python - <<PY   (el par, leido del dataset DESPUES de cablear)
+  abrazar_incomodidad_arrancar_critica_equipo  siguientes: ['elegir_pregunta_recurrente_pedir_critica']
+  elegir_pregunta_recurrente_pedir_critica     previos   : ['pedir_critica_primero_crear_seguridad_psicologica', 'abrazar_incomodidad_arrancar_critica_equipo']

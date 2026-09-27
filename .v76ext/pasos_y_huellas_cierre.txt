@@ -1,0 +1,23 @@
+1   hacer_trabajo_futuro_imaginar_negocio                        bandeja     7 pasos 4ef47d89d2 igual trabajo=HEAD
+2   dictar_ritmo_crecimiento_preguntas_escritas                  bandeja     8 pasos 1830b96359 DISTINTA trabajo=HEAD
+3   construir_empresa_plantilla_vision_diaria                    bandeja     8 pasos 25b2c1b6d1 igual trabajo=HEAD
+4   trazar_modelo_negocio_cliente_primero                        bandeja     9 pasos c3a1cf1caa igual trabajo=HEAD
+5   fingir_prototipo_cinco_mil_replicas                          bandeja    11 pasos 70552170e5 igual trabajo=HEAD
+6   dar_valor_constante_cuatro_publicos                          bandeja     8 pasos 2c531186bc igual trabajo=HEAD
+7   interrogar_negocio_cinco_preguntas                           bandeja    10 pasos 2fc9d4cdb4 DISTINTA trabajo=HEAD
+8   operar_modelo_gente_destreza_minima                          bandeja    10 pasos c6fd6206cd DISTINTA trabajo=HEAD
+9   unificar_color_forma_vestuario_modelo                        bandeja     8 pasos 01fecf6fc4 igual trabajo=HEAD
+10  cambiar_saludo_cliente_dos_ramas                             bandeja     4 pasos a8e8e0f482 DISTINTA trabajo=HEAD
+11  probar_traje_azul_seis_semanas                               bandeja     2 pasos ef38e0f89b igual trabajo=HEAD
+12  cuantificar_impacto_innovacion_6_pasos                       bandeja     6 pasos d5f1c3b3ff DISTINTA trabajo=HEAD
+13  recorrer_siete_pasos_programa_desarrollo_negocio             bandeja    10 pasos 883148b9f2 igual trabajo=HEAD
+14  responder_8_preguntas_construir_primary_aim                  bandeja     9 pasos 1487eff2aa igual trabajo=HEAD
+15  responder_4_preguntas_estandares_objetivo_estrategico        bandeja     5 pasos a1e00b0afe igual trabajo=HEAD
+16  distinguir_tres_tipos_sistemas_negocio                       bandeja     5 pasos b8ac9e6437 igual trabajo=HEAD
+17  aplicar_seis_pasos_sistema_venta                             bandeja     6 pasos d1602be350 igual trabajo=HEAD
+18  medir_sistema_venta_trece_indicadores_benchmark              bandeja    14 pasos d5634b830a igual trabajo=HEAD
+19  construir_estrategia_gente_cuatro_componentes                bandeja     5 pasos 6050dd6576 igual trabajo=HEAD
+20  documentar_trabajo_manual_operaciones                        bandeja    10 pasos f548184ad7 igual trabajo=HEAD
+21  aplicar_ocho_reglas_juego_personas                           bandeja     9 pasos e51bcde092 DISTINTA trabajo=HEAD
+22  aplicar_cinco_pasos_proceso_contratacion                     bandeja    12 pasos 725f810859 igual trabajo=HEAD
+fichas de las filas 1 a 22: 22 | pasos: 176 | iguales a su blob en 2407dbb: 16 | distintas: 6 | fichero de trabajo distinto de HEAD: 0

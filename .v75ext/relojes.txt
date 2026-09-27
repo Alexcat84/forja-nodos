@@ -1,0 +1,8 @@
+.v75ext\insertar_01_usar_banco_nueve_preguntas_entrevista.txt            codigo 0    604.3 s  fin 2026-09-26 04:52:35
+.v75ext\insertar_02_responder_primer_aviso_renuncia_subordinado.txt      codigo 0    504.4 s  fin 2026-09-26 05:02:11
+.v75ext\insertar_03_gestionar_retencion_subordinado_valioso_renuncia.txt codigo 0    711.9 s  fin 2026-09-26 05:15:07
+.v75ext\insertar_04_reciclar_empleado_ascendido_mas_alla_capacidad.txt   codigo 0    341.0 s  fin 2026-09-26 05:21:52
+.v75ext\insertar_05_priorizar_lista_entrenamiento_subordinados.txt       codigo 0    410.4 s  fin 2026-09-26 05:29:50
+.v75ext\insertar_06_desarrollar_primer_curso_entrenamiento.txt           codigo 0    524.6 s  fin 2026-09-26 05:39:37
+.v75ext\insertar_07_pedir_critica_anonima_curso_entrenamiento_dictado.txt codigo 0    473.9 s  fin 2026-09-26 05:48:32
+insertar: 7 | minimo 341.0 s | mediana 504.4 s | maximo 711.9 s | suma 3570.5 s (0.99 h)

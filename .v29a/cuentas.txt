@@ -1,0 +1,7 @@
+nodos en dataset/nodos.jsonl        : 243
+veredictos en bitacora/VEREDICTOS   : 289
+bandeja lote4 scott                 : 102
+insertados lote4 scott              : 40
+bandeja lote5 marquet               : 3
+ids unicos                          : 243
+clases de veredicto (todas)         : {'CONTINUA': 93, 'SANO': 192, 'CORREGIDO': 4}

@@ -1,0 +1,1 @@
+casar_flujo_fabricacion_flujo_ventas poblacion 479 (366 grafo mas 113 bandejas) vecinos 0

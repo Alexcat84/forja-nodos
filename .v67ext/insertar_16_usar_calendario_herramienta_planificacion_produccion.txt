@@ -1,0 +1,26 @@
+fila 16, usar_calendario_herramienta_planificacion_produccion, lineas --veredicto: 1
+  --veredicto decir_no_trabajo_excede_capacidad|SANO|El mismo par que decir que no lee desde su lado: las dos responsabilidades de L279, hermanas.
+inicio 2026-09-24 13:01:03
+======================================================================
+ADUANA DE INSERCION, candidato 'usar_calendario_herramienta_planificacion_produccion'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (383 del grafo mas 96 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino decir_no_trabajo_excede_capacidad  [Decir que no de salida al trabajo que excede tu capacidad, antes y no despues, usando tu propia idea del tiempo que cada cosa te lleva]
+    levantada por: similitud_texto
+    similitud_texto    0.371 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.431 (umbral 0.60)
+    paso 7 del candidato contra paso 7 de decir_no_trabajo_excede_capacidad
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 384
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 1
+
+======================================================================
+fin 2026-09-24 13:30:29 | codigo de salida 0 | 1766.7 s

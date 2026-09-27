@@ -1,0 +1,18 @@
+pasos comparados: 95 (de los 14 candidatos de cap_04)
+  de ellos, nacidos en esta vuelta: 45
+
+LOS 12 PARES DE PASOS MAS PARECIDOS, LISTA ORDENADA ENTERA:
+  0.3333  delegar_tarea_base_comun_seguimiento#1  <->  subir_productividad_gerencial_tres_vias#1
+  0.3182  detectar_palanca_negativa_actividad_mando#1  <->  elegir_momento_actividad_palanca_maxima#1
+  0.3030  agrupar_tareas_semejantes_aprovechar_prepara#2  <->  delegar_tarea_base_comun_seguimiento#1
+  0.3000  delegar_tarea_base_comun_seguimiento#1  <->  transmitir_objetivos_prioridades_preferencia#5
+  0.2683  buscar_actividad_alta_palanca_tres_vias#3  <->  delegar_tarea_base_comun_seguimiento#1
+  0.2667  subir_productividad_gerencial_tres_vias#1  <->  supervisar_tarea_delegada_etapa_menor_valor#1
+  0.2609  detectar_palanca_negativa_actividad_mando#1  <->  subir_productividad_gerencial_tres_vias#3
+  0.2581  delegar_tarea_base_comun_seguimiento#1  <->  supervisar_tarea_delegada_etapa_menor_valor#7
+  0.2500  delegar_tarea_base_comun_seguimiento#8  <->  elegir_momento_actividad_palanca_maxima#1
+  0.2439  delegar_tarea_base_comun_seguimiento#8  <->  programar_visita_area_observar_despachar#6
+  0.2381  delegar_tarea_base_comun_seguimiento#1  <->  detectar_palanca_negativa_actividad_mando#8
+  0.2368  delegar_tarea_base_comun_seguimiento#1  <->  detectar_palanca_negativa_actividad_mando#4
+
+pares con solape 1.0 (paso identico): 0

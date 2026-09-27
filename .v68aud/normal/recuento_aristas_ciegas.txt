@@ -1,0 +1,2 @@
+filas: 17 | por clase: {'SOSTENGO': 4, 'NO': 11, 'EN VEREDICTO': 2} | de ellas con DUDA: {'SOSTENGO': 1, 'NO': 6, 'EN VEREDICTO': 1} | suma: 17
+lo que publico la apertura: SOSTENGO 4 (startswith) | NO 5 (igualdad exacta)

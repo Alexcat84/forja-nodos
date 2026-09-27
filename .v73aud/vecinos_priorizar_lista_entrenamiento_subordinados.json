@@ -1,0 +1,46 @@
+{
+ "id": "priorizar_lista_entrenamiento_subordinados",
+ "grafo": 430,
+ "bandejas": 49,
+ "vecinos": [
+  {
+   "id": "pedir_critica_anonima_curso_entrenamiento_dictado",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.466,
+    "familia_id": 0.111,
+    "paso_contra_nodo": 0.439
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 3 de pedir_critica_anonima_curso_entrenamiento_dictado"
+  },
+  {
+   "id": "desarrollar_primer_curso_entrenamiento",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.411,
+    "familia_id": 0.143,
+    "paso_contra_nodo": 0.401
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 6 de desarrollar_primer_curso_entrenamiento"
+  },
+  {
+   "id": "reciclar_empleado_ascendido_mas_alla_capacidad",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.355,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.384
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 4 del candidato contra paso 2 de reciclar_empleado_ascendido_mas_alla_capacidad"
+  }
+ ]
+}

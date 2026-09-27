@@ -1,0 +1,20 @@
+$ python .v55aud/coste_corrida.py  (fuente: docs/loop/loop.log)
+  linea de arranque que acota la corrida : [2026-09-20 12:08:04] MODO_INSERCION=cuarentena
+  TURNOS CERRADOS DE ESTA CORRIDA, celda a celda y sin media: 2
+    2026-09-20 13:06:30  extractor      cuarentena    20.6911 USD    3503 s
+    2026-09-20 13:23:40  auditor ciego  cuarentena     6.8138 USD    1029 s
+  suma USD de los turnos cerrados de esta corrida : 27.5049
+    (es una SUMA, no una media: no divido dos celdas)
+
+  LA VARA: media USD/turno de extractor en insertar : 26.06 USD
+    numerador   990.29  suma de USD de esos turnos
+    denominador 38  turnos de extractor en insertar
+    el mas barato 7.3521   el mas caro 62.1116
+  EL TURNO DE EXTRACTOR DE ESTA CORRIDA             : 20.6911 USD
+  CAIDA contra esa vara                             : -20.6 por ciento
+    numerador   -5.3691  USD del turno de extractor de esta corrida menos la vara
+    denominador 26.06  USD de la vara
+  CONTRA EL OBJETIVO ESCRITO DE 5 USD               : 4.14 veces el objetivo
+    numerador   20.6911  USD del turno de extractor de esta corrida
+    denominador 5  USD del objetivo escrito en el encargo de la 54
+  CONTRA EL DISPARADOR ESCRITO DE 8 USD             : 1 de los 2 turnos cerrados lo pasan

@@ -1,0 +1,24 @@
+$ grep -n -o -F 'use your accelerator more than your brake' fuentes/scott_radical_candor/cap_13.md    # paso 1
+251:use your accelerator more than your brake
+$ grep -n -o -F 'If you never use your brake you crash and never get anywhere' fuentes/scott_radical_candor/cap_13.md    # paso 1
+251:If you never use your brake you crash and never get anywhere
+$ grep -n -o -F 'you’ll feel safer pressing your accelerator if you know your brakes work' fuentes/scott_radical_candor/cap_13.md    # paso 1
+251:you’ll feel safer pressing your accelerator if you know your brakes work
+$ grep -n -o -F 'inspires others rather than making odious comparisons' fuentes/scott_radical_candor/cap_13.md    # paso 4
+269:inspires others rather than making odious comparisons
+$ grep -n -o -F 'more bang for the buck out of focusing on strengths than weaknesses' fuentes/scott_radical_candor/cap_13.md    # paso 9
+273:more bang for the buck out of focusing on strengths than weaknesses
+$ grep -n -o -F 'maximizing the upside rather than minimizing the downside' fuentes/scott_radical_candor/cap_13.md    # paso 9
+273:maximizing the upside rather than minimizing the downside
+$ grep -n -o -F 'Giving praise doesn’t just make people feel good' fuentes/scott_radical_candor/cap_13.md    # paso 10
+273:Giving praise doesn’t just make people feel good
+$ grep -n -o -F 'Praise shows that you care personally' fuentes/scott_radical_candor/cap_13.md    # paso 10
+273:Praise shows that you care personally
+$ grep -n -o -F 'keep doing more of what’s great' fuentes/scott_radical_candor/cap_13.md    # paso 10
+273:keep doing more of what’s great
+$ grep -n -o -F 'it is just as likely to leave a person feeling patronized' fuentes/scott_radical_candor/cap_13.md    # paso 12
+279:it is just as likely to leave a person feeling patronized
+$ grep -n -o -F 'exactly the opposite effect' fuentes/scott_radical_candor/cap_13.md    # paso 12
+279:exactly the opposite effect
+$ grep -n -o -F 'Specific praise helps the person and the team understand what success looks like' fuentes/scott_radical_candor/cap_13.md    # paso 13
+279:Specific praise helps the person and the team understand what success looks like

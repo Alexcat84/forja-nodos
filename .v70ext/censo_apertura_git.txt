@@ -1,0 +1,6 @@
+$ for f in dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl config/pares_mutuos.jsonl; do echo "$f $(git show 3e52cad:$f | wc -l)"; done; for d in cuarentena/grove_high_output/ cuarentena/_insertados/grove_high_output/; do echo "$d $(git ls-tree --name-only 3e52cad $d | grep -c '\.json$')"; done
+dataset/nodos.jsonl 390
+bitacora/VEREDICTOS.jsonl 904
+config/pares_mutuos.jsonl 1
+cuarentena/grove_high_output/ 47
+cuarentena/_insertados/grove_high_output/ 45

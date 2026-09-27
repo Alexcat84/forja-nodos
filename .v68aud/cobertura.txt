@@ -1,0 +1,2 @@
+por sede y capitulo: {('bandeja', 'cap_05'): 12, ('bandeja', 'cap_06'): 8}
+de cap_05 o cap_06 y fuera de los 20: 0

@@ -1,0 +1,19 @@
+ADUANA DE INSERCION, candidato 'elogiar_publico_criticar_privado_sus_tres_matices'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (289 del grafo mas 59 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino dar_guia_humilde_tres_tecnicas  [Dar elogio y critica con humildad, con las tres tecnicas que el texto nombra y atribuye una a una]
+    levantada por: similitud_texto
+    similitud_texto    0.352 (umbral 0.35)
+    familia_id         0.091 (umbral 0.30)
+    paso_contra_nodo   0.405 (umbral 0.60)
+    paso 2 del candidato contra paso 15 de dar_guia_humilde_tres_tecnicas
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 290
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 1

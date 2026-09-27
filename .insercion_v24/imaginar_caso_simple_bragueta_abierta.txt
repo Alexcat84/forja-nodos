@@ -1,0 +1,7 @@
+ADUANA DE INSERCION, candidato 'imaginar_caso_simple_bragueta_abierta'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi seÃ±al contra 208 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 209
+  censos escritos: atribuciones, denominaciones

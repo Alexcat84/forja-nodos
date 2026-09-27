@@ -1,0 +1,6 @@
+pasos_inventados: IDENTICO
+aristas_vuelta: IDENTICO
+orden: IDENTICO
+comprobar_veredictos: IDENTICO
+pasos_y_huellas: DISTINTO
+relojes: IDENTICO

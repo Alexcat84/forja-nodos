@@ -1,0 +1,28 @@
+PASOS INVENTADOS POR CAPITULO, CORRIDA CON SONNET (vueltas 56 a 62)
+
+cap      vuelta acta    escritos  muestra   leidos  PUENTE  inventado
+------------------------------------------------------------------------------
+cap_08   56     ACTA 55       0   ENTERO        0       0  SIN SUPERFICIE
+cap_09   56     ACTA 55       0   ENTERO        0       0  SIN SUPERFICIE
+cap_10   56     ACTA 55       8        8        8       0  0,0 por ciento
+cap_11   57     ACTA 56      17       15       17       0  0,0 por ciento
+cap_12   57     ACTA 56      11       11       11       0  0,0 por ciento
+cap_13   57     ACTA 56      14       14       14       0  0,0 por ciento
+cap_14   58     ACTA 57      18       15       18       0  0,0 por ciento
+cap_15   58     ACTA 57      22       15       22       0  0,0 por ciento
+cap_16   58     ACTA 57       4   ENTERO        4       0  0,0 por ciento
+cap_17   60     ACTA 59      16       15       16       0  0,0 por ciento
+cap_18   60     ACTA 59       0   ENTERO        0       0  SIN SUPERFICIE
+------------------------------------------------------------------------------
+TOTAL                       110       93      110       0
+
+capitulos con superficie (pasos > 0)  : 8
+pasos escritos por Sonnet             : 110
+pasos que la muestra de D.58 cubrio   : 93
+pasos que el auditor leyo de verdad   : 110
+pasos PUENTE encontrados              : 0
+cobertura de la lectura, leidos/escritos : 100.0 por ciento
+pasos inventados, PUENTE/escritos        : 0.0 por ciento
+
+CAPITULOS QUE SUPERAN EL 10 POR CIENTO SIN RELECTURA ENTERA : 0
+   NINGUNO

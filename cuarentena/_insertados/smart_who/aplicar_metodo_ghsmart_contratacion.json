@@ -1,0 +1,46 @@
+{
+  "atribuciones": [
+    {
+      "autor": "Geoff Smart y Randy Street",
+      "cifra": "trece años de ghSMART aprendiendo como se consigue un equipo A, mas todo el trabajo de campo del libro probando y refinando el metodo",
+      "fecha_corte": "2008",
+      "fuente": "smart_who"
+    }
+  ],
+  "condiciones_activacion": "Cuando hace falta conseguir un equipo A, es decir cuando hay que identificar y contratar a un jugador A para un puesto.",
+  "denominaciones": {
+    "nombre_largo": "El metodo A de ghSMART para contratar",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "ghSMART A Method for Hiring"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "the A Method"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "contratacion",
+  "entregable_esperado": "El jugador A identificado y contratado para el puesto, con un alto grado de exito: el who acertado.",
+  "escala_minima": "La da el propio libro: el metodo es simple, y por eso es facil de entender y de aplicar en todos los niveles, desde el consejero delegado hasta el recepcionista.",
+  "fuentes": [
+    {
+      "clave": "smart_who",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "id": "aplicar_metodo_ghsmart_contratacion",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Escribe la tarjeta de puntuacion del puesto: el documento que describe exactamente que quieres que la persona logre en el papel. No es una descripcion del puesto, sino un conjunto de resultados y de competencias que definen el trabajo bien hecho, y al definir el desempeño A del papel te da una imagen clara de lo que la persona que buscas tiene que ser capaz de lograr.",
+    "Abastecete de candidatos de forma sistematica antes de tener plazas que cubrir, que es lo que asegura que tengas candidatos de alta calidad esperando cuando los necesites.",
+    "Selecciona con una serie de entrevistas estructuradas que reunan los hechos relevantes de la persona, para poder puntuar tu tarjeta y tomar una decision de contratacion informada.",
+    "Vende el puesto a las personas que la seleccion te ha señalado como las que quieres en tu equipo y persuadelas de que se incorporen, que es lo que te protege de perder al candidato perfecto a ultima hora."
+  ],
+  "resumen_teorico": "Es la cabeza de la serie numerada del libro: cuatro pasos que construyen el metodo entero, y que el libro presenta como las lineas de la letra A mas su subrayado. Los autores lo llaman el metodo A de ghSMART para contratar, dicen haber gastado trece años aprendiendolo y todo el trabajo de campo del libro probandolo y refinandolo, y lo definen como un proceso simple para identificar y contratar a jugadores A con un alto grado de exito. La razon de que sea un proceso y no un arte esta en el propio capitulo: la contratacion es el proceso donde empieza la construccion de una organizacion, y es el unico que se sigue viendo como algo que resiste un enfoque ordenado. Que el metodo sea simple no significa que aplicarlo no exija esfuerzo real. El caso que el libro pone con su nombre: Blackstone y Apollo usaron el metodo A para reemplazar al consejero delegado de Allied Waste por John Zillmer, una compañia cuyo valor llevaba cinco años tan plano que algunos inversores la llamaban globo de plomo; Zillmer contrato o promociono a veintisiete jugadores A en dieciocho meses con un 90 por ciento de acierto y despues formo en el metodo a todos los directivos de la compañia.",
+  "titulo": "Aplicar los cuatro pasos del metodo de ghSMART para contratar"
+}

@@ -1,0 +1,40 @@
+ADUANA DE INSERCION, candidato 'crear_cultura_escucha_equipo'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (236 del grafo mas 112 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 4. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino crear_obligacion_disentir_equipo  [Crear en tu equipo la obligacion de disentir, tratando el acuerdo de todos como una bandera roja]
+    levantada por: familia_id
+    similitud_texto    0.255 (umbral 0.35)
+    familia_id         0.333 (umbral 0.30)
+    paso_contra_nodo   0.449 (umbral 0.60)
+    paso 3 del candidato contra paso 2 de crear_obligacion_disentir_equipo
+
+  vecino adaptar_escucha_cultura_ajena  [Adaptar tu forma de escuchar cuando entras en una cultura que no es la tuya, empezando por los errores que traes de la tuya]
+    levantada por: familia_id
+    similitud_texto    0.266 (umbral 0.35)
+    familia_id         0.333 (umbral 0.30)
+    paso_contra_nodo   0.420 (umbral 0.60)
+    paso 2 del candidato contra paso 8 de adaptar_escucha_cultura_ajena
+
+  vecino juzgar_cultura_renuncias_equipo  [Juzgar la cultura de un equipo por lo que esta dispuesto a ceder por sus valores]
+    levantada por: familia_id
+    similitud_texto    0.163 (umbral 0.35)
+    familia_id         0.333 (umbral 0.30)
+    paso_contra_nodo   0.418 (umbral 0.60)
+    paso 17 del candidato contra paso 2 de juzgar_cultura_renuncias_equipo
+
+  vecino crear_plan_creible_equipo  [Crear un plan que tenga posibilidades reales de funcionar]
+    levantada por: familia_id
+    similitud_texto    0.218 (umbral 0.35)
+    familia_id         0.333 (umbral 0.30)
+    paso_contra_nodo   0.393 (umbral 0.60)
+    paso 8 del candidato contra paso 5 de crear_plan_creible_equipo
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 237
+  censos escritos: atribuciones, denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 4

@@ -1,0 +1,38 @@
+CANDIDATO : cambiar_forma_trabajar_conservar_plantilla
+CAPITULO  : fuentes/marquet_turn_the_ship/cap_02.md
+PASOS     : 5
+====================================================================================================
+PASO 1> Cuenta el plazo que tienes antes de decidir nada sobre la gente. En el caso del texto eran seis meses hasta el despliegue, y el argumento que se da es que con ese plazo no hay tiempo de encontrar sustitutos.
+  --- L25 del libro ---
+      “Look, here’s the deal. If you need to change out some people, let me know, but I’m not interest
+      ed in a lot of turnover. I don’t think that will help the crew. I think a better focus would be 
+      on working with what you’ve got. With only six months to deployment you don’t have a lot of time
+       to find replacements.”
+====================================================================================================
+PASO 2> Centrate en trabajar con lo que tienes, que es lo que el texto recomienda por encima de mucha rotacion.
+  --- L25 del libro ---
+      “Look, here’s the deal. If you need to change out some people, let me know, but I’m not interest
+      ed in a lot of turnover. I don’t think that will help the crew. I think a better focus would be 
+      on working with what you’ve got. With only six months to deployment you don’t have a lot of time
+       to find replacements.”
+====================================================================================================
+PASO 3> Pide igualmente el canal abierto para cambiar a alguien si hace falta, que es como el texto lo deja dicho: avisame si necesitas cambiar a alguien.
+  --- L25 del libro ---
+      “Look, here’s the deal. If you need to change out some people, let me know, but I’m not interest
+      ed in a lot of turnover. I don’t think that will help the crew. I think a better focus would be 
+      on working with what you’ve got. With only six months to deployment you don’t have a lot of time
+       to find replacements.”
+====================================================================================================
+PASO 4> Cuenta con el mensaje que manda no despedir a nadie, y que el texto pone como la razon de que aquello importara: a cada persona del equipo le llega que el que estaba mal no era el, sino el liderazgo.
+  --- L29 del libro ---
+      This was important because it sent the message to each crew member that he wasn’t screwed up, th
+      e leadership was. My challenge would be to use the same people and support team and by changing 
+      the way they interacted and behaved, dramatically increase the combat effectiveness of Santa Fe.
+  --- L27 del libro ---
+      I was thinking that too. In the end, I fired no one.
+====================================================================================================
+PASO 5> Fija entonces tu reto donde el texto lo fija: usar la misma gente y el mismo equipo de apoyo, y subir el resultado cambiando la forma en que interactuan y se comportan.
+  --- L29 del libro ---
+      This was important because it sent the message to each crew member that he wasn’t screwed up, th
+      e leadership was. My challenge would be to use the same people and support team and by changing 
+      the way they interacted and behaved, dramatically increase the combat effectiveness of Santa Fe.

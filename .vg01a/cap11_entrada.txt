@@ -1,0 +1,17 @@
+INSTRUMENTO .vg01a/cap11_entrada.py  SIN IDS TECLEADOS: los 16 ids salen del resumen_teorico; el commit de entrada lo busca git log -S sobre dataset/nodos.jsonl
+recorrer_rueda_conscientemente_cultura_equipo        pasos=14  487767c|09-16 09:34|VUELTA 28 TAREA 4, tanda 1: entra la madre de la rueda y su arista queda EN COLA, que es l
+bloquear_tiempo_pensar_calendario                    pasos= 6  5834c50|09-16 14:18|VUELTA 30 TAREA 2: entra bloquear_tiempo_pensar_calendario y con el se escribe en bitacora
+decidir_quien_comunica_cada_cuanto                   pasos= 6  cf43222|09-16 18:28|VUELTA 31, TAREA 4: cap_11 insertado de once en once, uno por vez y en el orden del libro.
+montar_reuniones_solas_mentalidad_frecuencia         pasos=22  cf43222|09-16 18:28|VUELTA 31, TAREA 4: cap_11 insertado de once en once, uno por vez y en el orden del libro.
+preguntar_seguimiento_hallar_huecos                  pasos=16  cf43222|09-16 18:28|VUELTA 31, TAREA 4: cap_11 insertado de once en once, uno por vez y en el orden del libro.
+nutrir_ideas_nuevas_reunion_solas                    pasos=10  cf43222|09-16 18:28|VUELTA 31, TAREA 4: cap_11 insertado de once en once, uno por vez y en el orden del libro.
+leer_seniales_fallo_jefe_reunion_solas               pasos= 6  cf43222|09-16 18:28|VUELTA 31, TAREA 4: cap_11 insertado de once en once, uno por vez y en el orden del libro.
+conducir_reunion_equipo_agenda_tres_bloques          pasos=22  cf43222|09-16 18:28|VUELTA 31, TAREA 4: cap_11 insertado de once en once, uno por vez y en el orden del libro.
+escribir_apuntes_sala_estudio_equipo                 pasos=14  cf43222|09-16 18:28|VUELTA 31, TAREA 4: cap_11 insertado de once en once, uno por vez y en el orden del libro.
+montar_reunion_gran_debate                           pasos=13  cf43222|09-16 18:28|VUELTA 31, TAREA 4: cap_11 insertado de once en once, uno por vez y en el orden del libro.
+montar_reunion_gran_decision                         pasos=14  cf43222|09-16 18:28|VUELTA 31, TAREA 4: cap_11 insertado de once en once, uno por vez y en el orden del libro.
+montar_reunion_general_presentaciones_preguntas      pasos=11  cf43222|09-16 18:28|VUELTA 31, TAREA 4: cap_11 insertado de once en once, uno por vez y en el orden del libro.
+pelear_proliferacion_reuniones_bloquear_ejecucion    pasos= 8  cf43222|09-16 18:28|VUELTA 31, TAREA 4: cap_11 insertado de once en once, uno por vez y en el orden del libro.
+montar_tablero_kanban_medir_actividades              pasos=10  94cae85|09-16 20:15|VUELTA 32, TAREAS 3 y 4: cap_11 CIERRA EN INSERCION, 14 de 14, con sus dos aristas de cadu
+pasear_organizacion_hallar_problemas_pequenios       pasos= 9  94cae85|09-16 20:15|VUELTA 32, TAREAS 3 y 4: cap_11 CIERRA EN INSERCION, 14 de 14, con sus dos aristas de cadu
+debatir_decidir_asuntos_cultura_evitar_delegar       pasos= 6  94cae85|09-16 20:15|VUELTA 32, TAREAS 3 y 4: cap_11 CIERRA EN INSERCION, 14 de 14, con sus dos aristas de cadu

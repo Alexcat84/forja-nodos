@@ -1,0 +1,7 @@
+=== establecer_credibilidad_pericia_humildad  (3 vecinos)
+  compartir_logica_mostrar_razonamiento          [bandeja]  por similitud_texto
+      similitud 0.368  familia 0.000  paso 0.486   paso 3 del candidato contra paso 4 de compartir_logica_mostrar_razonamiento
+  repartir_decision_cercanos_hechos              [bandeja]  por similitud_texto
+      similitud 0.365  familia 0.000  paso 0.473   paso 3 del candidato contra paso 6 de repartir_decision_cercanos_hechos
+  persuadir_emocion_oyente_no_propia             [bandeja]  por similitud_texto
+      similitud 0.352  familia 0.000  paso 0.435   paso 3 del candidato contra paso 3 de persuadir_emocion_oyente_no_propia

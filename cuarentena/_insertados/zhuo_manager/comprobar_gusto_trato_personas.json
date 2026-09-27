@@ -1,0 +1,29 @@
+{
+  "id": "comprobar_gusto_trato_personas",
+  "titulo": "Comprobar si te gusta hablar con la gente",
+  "denominaciones": {
+    "nombre_largo": "La segunda de las tres preguntas: me gusta hablar con la gente, medida con la prueba del 70 por ciento del dia en reuniones",
+    "otros_idiomas": [
+      {"idioma": "ingles", "termino": "Do I Like Talking with People?"}
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [{"clave": "zhuo_manager", "fecha": "2026-09-10"}],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando te haces la segunda de las tres preguntas sobre si la gestion es tu camino y tienes que saber si vas a sacar energia o a perderla en un trabajo que consiste en gran medida en escuchar y hablar con otros.",
+  "entregable_esperado": "Tu reaccion inmediata a la prueba leida y anotada, y con ella si eres de los que sacan energia del trato con otros o de los que van a encontrar duro el dia a dia de la gestion.",
+  "escala_minima": "Una persona y una reaccion inmediata. La prueba es una sola pregunta y lo que vale de ella es el primer pensamiento, no el razonado.",
+  "pasos_accionables": [
+    "Parte de que no puedes separar la gestion del equipo, asi que como directivo vas a tener que pasar mucho tiempo con otras personas: buena parte de tu responsabilidad es asegurarte de que quienes dependen de ti puedan prosperar, y eso hace que escucharlos y hablar con ellos sean parte central del trabajo.",
+    "Hazte la prueba: si te dijeran que el 70 por ciento de tu dia lo vas a pasar en reuniones, cual seria tu reaccion inmediata.",
+    "Toma el numero por lo que es: puede ser una exageracion, y lo que se mide con el es tu primer pensamiento, no la cifra.",
+    "Si tu primer pensamiento es sin problema, eres de los que probablemente sacan energia del trato con otros.",
+    "Si tu primer pensamiento es vaya, eso suena horrible, probablemente vas a encontrar duro el dia a dia de la gestion.",
+    "No conviertas la prueba en un examen de extroversion: no hace falta ser extrovertido, y lo que desaconseja el papel es otra cosa, que lo que tu aspiras a tener en una jornada sean bloques largos e ininterrumpidos de concentracion tranquila."
+  ],
+  "resumen_teorico": "Es la segunda de las tres preguntas con las que el capitulo cierra, y la unica de las tres que trae un instrumento de medida propio: una pregunta hipotetica con una cifra dentro, el 70 por ciento del dia en reuniones, cuya funcion el libro explica sin que haya que suponerla, porque dice a continuacion que ese numero puede ser una exageracion. Lo que se mide no es la cifra sino la reaccion inmediata, y el libro escribe las dos reacciones posibles con sus palabras, sin problema y vaya, eso suena horrible, y lo que cada una significa. El ultimo paso es una correccion que el libro se hace a si mismo para que la prueba no se lea como un test de extroversion: la propia autora dice que no lo es, y nombra a Steven Spielberg y a Eleanor Roosevelt como directivos que tampoco lo eran. Lo que el libro NO dice, y por eso no esta escrito aqui, es que hacer si la reaccion queda en medio, ni cuanto pesa esta pregunta frente a las otras dos."
+}

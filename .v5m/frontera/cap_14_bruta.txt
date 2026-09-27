@@ -1,0 +1,58 @@
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| R1 | L9 | 4 | rotulo del titulo "Leadership at Every Level" | RESIDUO: rotulo |
+| R2 | L11 | 20 | pregunta de apertura: los principios guia ayudan a decidir? | POSTURA |
+| R3 | L13 | 15 | fecha, sitio y escuela de liderazgo de mando | RESIDUO: rotulo de fecha |
+| R4 | L15 | 13 | "Commander Marquet, could you come see me?" | CASO |
+| R5 | L17 | 52 | escuela de liderazgo de mando, ejercicio de la hoja en blanco | CASO |
+| R6 | L19 | 10 | "Are you aware that you turned in a blank sheet?" | CASO |
+| R7 | L21 | 4 | "Yes sir, I am." | CASO |
+| R8 | L23 | 28 | "Well, don't you think you have an obligation to create a vision?" | CASO |
+| R9 | L25 | 28 | "No, I feel my job is to tap into the existing energy..." | CASO |
+| R10 | L27 | 21 | el supervisor de la clase lo mira raro | CASO |
+| R11 | L29 | 3 | separador "• • •" | RESIDUO: separador |
+| R12 | L31 | 91 | al llegar a Santa Fe envio una encuesta sobre fortalezas y principios | CASO |
+| R13 | L33 | 16 | en despliegue tuvieron tiempo de terminar el trabajo | CASO |
+| R14 | L35 | 76 | los jefes se reunieron, queria principios reales, pregunta de utilidad para decidir | CASO |
+| R15 | L37 | 12 | los principios guia debian hacer justo eso: dar criterio para decisiones | POSTURA: transicion |
+| R16 | L39 | 5 | rotulo "USS Santa Fe Guiding Principles" | RESIDUO: rotulo |
+| R17 | L41 | 1 | "Initiative" | RESIDUO: subrotulo de principio |
+| R18 | L43 | 72 | definicion de iniciativa: actuar sin direccion desde arriba | CASO |
+| R19 | L45 | 1 | "Innovation" | RESIDUO: subrotulo de principio |
+| R20 | L47 | 33 | definicion de innovacion: nuevas formas de hacer lo mismo | CASO |
+| R21 | L49 | 3 | "Intimate Technical Knowledge" | RESIDUO: subrotulo de principio |
+| R22 | L51 | 46 | definicion: cada uno responsable de aprender su area | CASO |
+| R23 | L53 | 1 | "Courage" | RESIDUO: subrotulo de principio |
+| R24 | L55 | 39 | definicion de valor: elegir hacer lo correcto aunque incomode | CASO |
+| R25 | L57 | 1 | "Commitment" | RESIDUO: subrotulo de principio |
+| R26 | L59 | 20 | definicion de compromiso: estar presentes cuando venimos a trabajar | CASO |
+| R27 | L61 | 2 | "Continuous Improvement" | RESIDUO: subrotulo de principio |
+| R28 | L63 | 40 | definicion: buscar continuamente formas de aprender y mejorar | CASO |
+| R29 | L65 | 1 | "Integrity" | RESIDUO: subrotulo de principio |
+| R30 | L67 | 48 | definicion de integridad: decirnos la verdad unos a otros | CASO |
+| R31 | L69 | 1 | "Empowerment" | RESIDUO: subrotulo de principio |
+| R32 | L71 | 32 | definicion: animar a los de abajo a actuar y respaldarlos | CASO |
+| R33 | L73 | 1 | "Teamwork" | RESIDUO: subrotulo de principio |
+| R34 | L75 | 50 | definicion de trabajo en equipo: un error de uno es desastre para todos | CASO |
+| R35 | L77 | 1 | "Openness" | RESIDUO: subrotulo de principio |
+| R36 | L79 | 32 | definicion de apertura: libertad de hablar y de mirar hacia adentro | CASO |
+| R37 | L81 | 1 | "Timeliness" | RESIDUO: subrotulo de principio |
+| R38 | L83 | 56 | definicion de puntualidad: empezar y llegar a tiempo | CASO |
+| R39 | L85 | 4 | "Leadership at Every Level!" | RESIDUO: rotulo |
+| R40 | L87 | 7 | rotulo "Mechanism: Use Guiding Principles for Decision Criteria" | RESIDUO: rotulo de mecanismo |
+| P1a | L89 | 77 | NODO: usar el lenguaje de los principios guia al redactar reconocimientos o evaluaciones | NODO |
+| R41 | L91 | 77 | mi propio comportamiento necesitaba ajuste frente a los principios | POSTURA |
+| R42 | L93 | 49 | los principios guia deben representar a la organizacion real, no la imaginada | POSTURA: criterio de adecuacion |
+| R43 | L95 | 70 | ejemplo de organizacion con lema falso de seguridad primero | CASO |
+| R44 | L97 | 11 | etiqueta "USE GUIDING PRINCIPLES FOR DECISION CRITERIA is a mechanism for CLARITY." | RESIDUO: etiqueta de mecanismo |
+| P1b | L99 | 50 | NODO: pedir a las tres primeras personas que veas en tu organizacion que digan los principios guia, como prueba diagnostica | NODO |
+| R45 | L101 | 3 | rotulo "QUESTIONS TO CONSIDER" | RESIDUO: rotulo |
+| R46 | L103 | 15 | pregunta 1 | PENDIENTE DE DOCTRINA |
+| R47 | L105 | 8 | pregunta 2 | PENDIENTE DE DOCTRINA |
+| R48 | L107 | 10 | pregunta 3 | PENDIENTE DE DOCTRINA |
+| R49 | L109 | 10 | pregunta 4 | PENDIENTE DE DOCTRINA |
+| R50 | L111 | 11 | pregunta 5 | PENDIENTE DE DOCTRINA |
+| R51 | L113 | 11 | pregunta 6 | PENDIENTE DE DOCTRINA |
+| **el cuerpo entero** | **L9 a L113** | **1293** | **suma de las piezas: 1293** | **residuo sin asignar: 0** |
+
+    piezas: 53   lineas solapadas: 0   cuerpo 1293   suma 1293   residuo 0   lineas con palabras sin cubrir: 0

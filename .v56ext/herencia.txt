@@ -1,0 +1,25 @@
+REMEDIOS PENDIENTES QUE HEREDAS
+
+Esto NO lo has buscado tu: lo entrega el arnes (D.40), porque tres actas seguidas perdieron el mismo remedio por tener que ir a buscarlo.
+
+  acta anterior : ACTA 54. VUELTA 55, lote 7 (`grove_high_output`), `cap_07` cerrado mas `cap_09` y `cap_10`, **CLASE EXTRACCION EN REGIMEN LIGERO**: **LA TANDA ES BUENA Y SE LA FIRMO ENTERA; LO QUE PARA EL BUCLE NO ES ELLA, ES LO QUE CUESTA**. Le verifico con mis propios comandos las guardas, el estado (`346`, `740`, `1`, `74`), **las dos fronteras nuevas recompuestas por mi fila a fila contra el fichero** (`27` y `35` tramos, `2284` y `3218` palabras, **cero filas que no me salgan, cero solapes y cero lineas sin cubrir**), y **la muestra de fidelidad cotejada con su semilla `v55` me sale IDENTICA linea a linea**, que es lo que `D.58` manda comprobar antes de nada. **De sus TRECE discutibles marcados se sostienen los TRECE**, releidos contra los parrafos del libro y no contra su argumento. **Firmo `PASOS INVENTADOS POR CAPITULO` con mi nombre despues de contarle yo los pasos** (`cap_07` `9` candidatos y `53` pasos, `cap_10` `1` y `8`, `cap_09` `0` y `0`, que es su tabla al digito) y **despues de releer los `23` pasos de la muestra contra sus parrafos**: `cap_07` `0` de `15`, `cap_10` `0` de `8`, `cap_09` SIN SUPERFICIE. `REPORTE` sale **LIMPIA** y baja de `1 de 3` a **`0 de 3`** por `D.38.1`; `CLASE`, `CIFRA PUBLICADA` y `DATO MOVIDO` salen **LIMPIAS** con su medida: `git diff` vacio sobre `dataset/`, `bitacora/`, `censos/`, `config/`, `esquema/`, `src/`, `scripts/`, `tests/`, `hooks/` y el banco. **Y LA CAIDA QUE PESA ES MIA Y VUELVE A SER UNA CIFRA DE MI PAGINA SELLADA**: publique `cap_07` **`2` de `47` PUENTE, el `4,26` por ciento**, y **los dos pasos se sostienen los dos** cuando los releo con el parrafo ENTERO delante en vez de con el tercio que cite. `AUDITOR` sube de `1 de 3` a **`2 de 3`**, penultimo escalon, **asi que mi remedio va ENCARGADO en la tabla de remedios de esta acta y fuera de cita**, que es donde el instrumento lo lee. **Y PARO EL BUCLE**, por dos condiciones de la seccion `3` medidas y no supuestas: el disparador de coste que la `ACTA 53` dejo escrito en `1 de 2` **se ha cumplido** (`20,6911` y `24,8943` USD, dos turnos de extractor seguidos por encima de `8`), y **lo que pide es una decision que la casa reserva a Alexis**: esta corrida lleva **`77,3314` USD con el grafo exactamente donde lo encontro, `346` nodos y `740` veredictos**. **Escribo `PARA_ALEXIS.md` y dejo `PROMPT_SIGUIENTE.md` VACIO.**
+  su huella     : 4c86d4a726f0bd836685ea8330a871813f25c5d8
+  heredados     : 1
+
+HEREDADO 1   [REMEDIO, linea 39943 del acta]
+## 54.11. **EL REMEDIO QUE ME DEJO A MI MISMO, Y VA EN LA FORMA QUE EL INSTRUMENTO LEE**
+
+| # | **REMEDIO** | como se comprueba que se cumplio |
+| **1** | **NINGUNA LECTURA DE MI PAGINA SELLADA SE APOYA EN UN PARRAFO CITADO A MEDIAS. Antes de escribir que el libro NO dice algo, pego la linea ENTERA del fichero con su comando, y solo despues concluyo.** Las dos caidas de la `ACTA 54` son la misma caida: cite `L61` y `L31` por su tercio y construi encima | que **cada** conclusion de fidelidad de mi apertura lleve encima el `awk 'NR==<n>'` de la linea completa, y no un recorte |
+
+LO QUE TU APERTURA CIEGA TIENE QUE TRAER, O EL ARNES SE DETIENE ANTES DE QUE ESCRIBAS EL ACTA:
+
+    ACTA ANTERIOR LEIDA: 4c86d4a726f0bd836685ea8330a871813f25c5d8
+    HEREDADO 1: CUMPLIDO          (o NO APLICA y su motivo detras)
+
+NO APLICA NECESITA MOTIVO ESCRITO **Y LA SALIDA DEL INSTRUMENTO PEGADA DEBAJO** (D.40, 16 sep 2026). Un remedio que no aplica a esta vuelta se declara, se dice por que, y se pega el comando que lo sostiene, con una linea que empiece por '$'. Sin salida pegada, el sello NO lo acepta.
+
+POR QUE: la vuelta 26 declaro NO APLICA un heredado con el motivo de que ninguno de sus instrumentos escribia en el arbol. Seis escribian, su propia tabla los listaba, y el barrido de guiones estaba en ROJO con ocho hallazgos suyos. Una salida pegada no prueba que el motivo sea cierto, pero obliga a correr algo antes de escribirlo, y ese lo habria cazado al instante.
+
+ESCRIBELAS COMO ESCRIBES TODO LO DEMAS. Valen las comillas, la negrita, el encabezado y la cita: se comprueba que la declaracion ESTE, no que vaya desnuda. Y puedes repetirla en tu tabla de cierre: se mira presencia y no cuenta, asi que citar la linea que declaras no te tumba la vuelta.
+

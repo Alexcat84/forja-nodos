@@ -1,0 +1,9 @@
+$ python .v55aud/d058_recuento.py
+  fichas medidas                        : 65
+  funcion usada                         : src.comun.texto_comparable
+  EL PESO DEL RESUMEN SOBRE LA BANDEJA ENTERA : 83.2 por ciento
+    numerador   372840  caracteres normalizados de resumen_teorico, sumados
+    denominador 448080  caracteres normalizados de texto_comparable, sumados
+  LA BANDA (minimo y maximo, no media):
+    menor % de resumen : 54.8  (equilibrar_capacidad_personal_inventario_plazo)
+    mayor % de resumen : 96.2  (usar_tres_clases_reunion_proceso)

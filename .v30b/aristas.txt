@@ -1,0 +1,11 @@
+$ (las lineas CONTINUA de la vuelta 30: candidato, vecino, arista y senal. SIN el campo razon)
+  linea 333  minimizar_impuesto_colaboracion_equipo   -> proteger_tiempo_equipo_jefe              arista=minimizar_impuesto_colaboracion_equipo > proteger_tiempo_equipo_jefe  levantada_por=['similitud_texto']
+  linea 346  proteger_tiempo_equipo_jefe              -> minimizar_impuesto_colaboracion_equipo   arista=minimizar_impuesto_colaboracion_equipo > proteger_tiempo_equipo_jefe  levantada_por=['similitud_texto']
+  linea 355  mantener_manos_trabajo_real_equipo       -> minimizar_impuesto_colaboracion_equipo   arista=minimizar_impuesto_colaboracion_equipo > mantener_manos_trabajo_real_equipo  levantada_por=['lectura declarada']
+  linea 363  reservar_calendario_tiempo_ejecutar      -> minimizar_impuesto_colaboracion_equipo   arista=minimizar_impuesto_colaboracion_equipo > reservar_calendario_tiempo_ejecutar  levantada_por=['lectura declarada']
+  linea 369  cuidarse_agotamiento_centro_rueda        -> aprender_resultados_vencer_dos_presiones arista=aprender_resultados_vencer_dos_presiones > cuidarse_agotamiento_centro_rueda  levantada_por=['lectura declarada']
+  linea 371  bloquear_tiempo_pensar_calendario        -> desplegar_plan_orden_operaciones_franqueza_radical arista=desplegar_plan_orden_operaciones_franqueza_radical > bloquear_tiempo_pensar_calendario  levantada_por=['paso_contra_nodo']
+  minimizar_impuesto_colaboracion_equipo     -> proteger_tiempo_equipo_jefe                 madre.siguientes=True  hija.previos=True
+  minimizar_impuesto_colaboracion_equipo     -> mantener_manos_trabajo_real_equipo          madre.siguientes=True  hija.previos=True
+  minimizar_impuesto_colaboracion_equipo     -> reservar_calendario_tiempo_ejecutar         madre.siguientes=True  hija.previos=True
+  aprender_resultados_vencer_dos_presiones   -> cuidarse_agotamiento_centro_rueda           madre.siguientes=True  hija.previos=True

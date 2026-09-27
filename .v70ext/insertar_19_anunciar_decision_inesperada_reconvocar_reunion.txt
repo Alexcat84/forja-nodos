@@ -1,0 +1,90 @@
+fila 19, anunciar_decision_inesperada_reconvocar_reunion, lineas --veredicto: 9
+  --veredicto cortar_discusion_libre_momento_justo|SANO|El mismo par que el momento justo lee desde su lado: del mismo capitulo y sin jerarquia entre ellos.
+  --veredicto zanjar_seis_preguntas_decision_adelantado|SANO|El mismo par que las seis preguntas leen desde su lado: del mismo capitulo y sin jerarquia entre ellos.
+  --veredicto contestar_dos_preguntas_direccion_objetivos|SANO|Ajenos, de otro capitulo del mismo libro: la senial casa el paso 6 de aqui, reconvoca la reunion, con el paso 5 del vecino, los resultados clave. Anunciar y reconvocar contra las dos preguntas de la direccion por objetivos; nada comun que hacer.
+  --veredicto tomar_mando_reunion_pares_presidente_ausente|SANO|El mismo par que el mando de la reunion de pares lee desde su lado: del mismo capitulo y sin jerarquia entre ellos.
+  --veredicto vencer_sindrome_grupo_pares_autoconfianza|SANO|El mismo par que el sindrome de pares lee desde su lado: del mismo capitulo y sin jerarquia entre ellos.
+  --veredicto definir_entorno_grupo_clientes_proveedores_competidores|SANO|Ajenos, de otro capitulo del mismo libro (cap_07): la senial casa el paso 4 de aqui, el tiempo para ajustarse, con el paso 3 del vecino, lista tus clientes. Nada comun que hacer.
+  --veredicto dirigir_reunion_decision|SANO|Ajenos, de otro libro (zhuo_manager): la familia de id sale de reunion y decision, y la senial casa el paso 4 de aqui, la gente necesita tiempo para ajustarse, con el paso 10 del vecino, que la gente no confie en la decision que salio. El vecino dirige la reunion que toma la decision, con quien decide y las opciones delante; este actua despues, cuando la palabra final es muy distinta de lo que esperaban los que participaron: anuncia, levanta la sesion, reconvoca y pide su opinion (L93). El paso 8 del vecino rehace la decision; este no la rehace, la hace aceptar. Ninguno usa el producto del otro.
+  --veredicto ejercer_poder_posicion_etapa_decision_clara|SANO|El mismo par que el poder de posicion lee desde su lado: del mismo capitulo y sin jerarquia entre ellos.
+  --veredicto entregar_evaluacion_desempeno_tres_claves|SANO|Ajenos, de otro capitulo del mismo libro: la senial casa el paso 6 de aqui, reconvoca la reunion, con el paso 1 del vecino, se franco al entregar la revision. Anunciar una decision contra entregar una evaluacion; nada comun que hacer.
+inicio 2026-09-25 15:17:32
+======================================================================
+ADUANA DE INSERCION, candidato 'anunciar_decision_inesperada_reconvocar_reunion'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (408 del grafo mas 71 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 9. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino cortar_discusion_libre_momento_justo  [Cortar la discusion libre en el momento justo: ni antes de oir los asuntos de verdad, ni cuando ya se ha oido todo]
+    levantada por: similitud_texto
+    similitud_texto    0.405 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.526 (umbral 0.60)
+    paso 7 del candidato contra paso 5 de cortar_discusion_libre_momento_justo
+
+  vecino zanjar_seis_preguntas_decision_adelantado  [Zanjar por adelantado las seis preguntas de una decision: que, cuando, quien decide, a quien se consulta, quien ratifica y a quien se informa]
+    levantada por: similitud_texto
+    similitud_texto    0.366 (umbral 0.35)
+    familia_id         0.111 (umbral 0.30)
+    paso_contra_nodo   0.495 (umbral 0.60)
+    paso 7 del candidato contra paso 9 de zanjar_seis_preguntas_decision_adelantado
+
+  vecino contestar_dos_preguntas_direccion_objetivos  [Montar el sistema de direccion por objetivos sobre las dos unicas preguntas que tiene que contestar: adonde quiero ir, y como me marco el ritmo para ver si estoy llegando]
+    levantada por: similitud_texto
+    similitud_texto    0.376 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.448 (umbral 0.60)
+    paso 6 del candidato contra paso 5 de contestar_dos_preguntas_direccion_objetivos
+
+  vecino vencer_sindrome_grupo_pares_autoconfianza  [Vencer el sindrome del grupo de pares infundiendo autoconfianza, y la constatacion de que nadie se muere por decidir mal]
+    levantada por: similitud_texto
+    similitud_texto    0.441 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.418 (umbral 0.60)
+    paso 8 del candidato contra paso 5 de vencer_sindrome_grupo_pares_autoconfianza
+
+  vecino tomar_mando_reunion_pares_presidente_ausente  [Decidir quien toma el mando en una reunion de iguales sin presidente formal: el que mas se juega, y si no, el de mayor rango presente]
+    levantada por: similitud_texto
+    similitud_texto    0.359 (umbral 0.35)
+    familia_id         0.100 (umbral 0.30)
+    paso_contra_nodo   0.441 (umbral 0.60)
+    paso 8 del candidato contra paso 2 de tomar_mando_reunion_pares_presidente_ausente
+
+  vecino definir_entorno_grupo_clientes_proveedores_competidores  [Definir tu entorno mirando tu grupo como si fuera una empresa independiente: clientes, proveedores y competidores]
+    levantada por: similitud_texto
+    similitud_texto    0.370 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.431 (umbral 0.60)
+    paso 4 del candidato contra paso 3 de definir_entorno_grupo_clientes_proveedores_competidores
+
+  vecino dirigir_reunion_decision  [Dirigir una reunion cuyo resultado excelente es una decision tomada]
+    levantada por: familia_id
+    similitud_texto    0.171 (umbral 0.35)
+    familia_id         0.333 (umbral 0.30)
+    paso_contra_nodo   0.420 (umbral 0.60)
+    paso 4 del candidato contra paso 10 de dirigir_reunion_decision
+
+  vecino ejercer_poder_posicion_etapa_decision_clara  [Ejercer el poder de posicion solo al llegar a la etapa de decision clara sin consenso, y nunca antes]
+    levantada por: similitud_texto
+    similitud_texto    0.371 (umbral 0.35)
+    familia_id         0.100 (umbral 0.30)
+    paso_contra_nodo   0.415 (umbral 0.60)
+    paso 3 del candidato contra paso 5 de ejercer_poder_posicion_etapa_decision_clara
+
+  vecino entregar_evaluacion_desempeno_tres_claves  [Entregar la evaluacion de desempeno cara a cara con las tres claves del mando: franqueza, escucha total y dejar fuera las emociones propias]
+    levantada por: similitud_texto
+    similitud_texto    0.365 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.350 (umbral 0.60)
+    paso 6 del candidato contra paso 1 de entregar_evaluacion_desempeno_tres_claves
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 409
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 9
+
+======================================================================
+fin 2026-09-25 15:31:56 | codigo de salida 0 | 864.0 s

@@ -1,0 +1,6 @@
+EL RESUMEN, DESPUES: 4303 caracteres
+  la frase vieja sigue entera: True
+  la correccion esta al final: True
+
+EL BLOQUE NUEVO, PEGADO:
+CORRECCION DECLARADA, 17 sep 2026, vuelta 32 TAREA 4, por D.13: la frase de mas arriba que dice que recorrer_rueda_hacer_cosas_equipo ES LA MADRE DE ESTE NODO esta al reves y se corrige sin borrarla. La direccion buena es la contraria y lleva bien puesta desde el 12 sep en los dos sitios que mandan:...

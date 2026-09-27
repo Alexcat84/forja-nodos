@@ -1,0 +1,39 @@
+{
+  "id": "comunicar_valores_diez_formas",
+  "titulo": "No dejar de hablar de lo que te importa, dicho de diez formas distintas",
+  "denominaciones": {
+    "nombre_largo": "Por que repetirse no es de mal estilo cuando se trata de valores, y las cuatro vias que la autora usa para decir lo mismo de maneras distintas",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "never stop talking about what's important"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando algo te importa de verdad y quieres que le importe tambien a tu equipo, y te frena la idea de que repetirte va a resultar pesado o condescendiente.",
+  "entregable_esperado": "El mensaje oido diez veces distintas y dicho de diez formas distintas, con otros ayudando a extenderlo.",
+  "pasos_accionables": [
+    "Quitate la idea de que repetirse es de mal estilo, que es lo que la autora creia al empezar a dirigir: se figuraba que su equipo lo encontraria molesto, y quiza incluso condescendiente, si decia lo mismo una y otra vez.",
+    "Cuando algo te importe hondamente, no rehuyas hablar de ello: al contrario, abraza el decirle a la gente por que te importa.",
+    "Cuenta con que para que el mensaje cale hay que oirlo diez veces distintas y decirlo de diez formas distintas.",
+    "Recluta a otros para que ayuden a extender tu mensaje, porque cuantos mas puedas reclutar mas probable es que tenga efecto.",
+    "Usa las cuatro vias que la autora nombra como las que ella prueba: conversaciones a solas sobre lo que le ronda la cabeza, correos a sus directivos con sus reflexiones de la semana, notas a todo su equipo sobre las prioridades de arriba, y sesiones de preguntas y respuestas en persona centradas en como trabajamos.",
+    "Mete dentro tus propios traspies y lo que has aprendido con ellos, porque la autora midio que cuanto mas a menudo y mas apasionadamente habla de lo que le importa, incluidos esos traspies, mas positivamente responde su equipo.",
+    "Mira el metodo que el libro cuenta de Sheryl Sandberg con las conversaciones dificiles, y fijate en que ella misma no recuerda cuando empezo, que es justamente el punto: pudo ser en una reunion de toda la empresa, en un turno de preguntas o en una cena en su casa. Pedia levantar la mano a quien hubiera tenido una conversacion dificil el ultimo mes, y luego contaba una de las suyas recientes.",
+    "Cuenta con lo que eso produce, que es la razon de hacerlo: notas de gente diciendo a mi tambien me importa eso, como puedo ayudar; otros reforzando los mismos mensajes y apoyandose entre si para cambiar su conducta; y, aun cuando la gente no este de acuerdo contigo, el propio acto de discutirlo abiertamente arroja luz sobre el tema para todos.",
+    "Cuenta tambien con lo que la autora dice que NO le ha pasado ni una sola vez: que nadie le haya dicho que resulta molesto o condescendiente. La opinion que recibe es la contraria, que hablar de tus valores te hace un lider mas autentico e inspirador."
+  ],
+  "resumen_teorico": "Es el nodo de la repeticion deliberada, y su inventario propio son las cuatro vias que la autora nombra y la cifra de las diez veces y diez formas. El caso de Sheryl Sandberg con las conversaciones dificiles entra como ejemplo nombrado dentro de la doctrina y no como nodo propio, porque lo que se ejecuta es el metodo de repetir, no las conversaciones dificiles. Lo que el libro NO dice, y por eso no esta escrito aqui, es cada cuanto se usa cada via, ni cuantos valores se pueden llevar a la vez, ni como se elige cual de las diez formas toca hoy.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}

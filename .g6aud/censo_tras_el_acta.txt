@@ -1,0 +1,12 @@
+============================================================================
+CENSO DE RUTAS (D.42): la unidad de la ruta es la celda
+============================================================================
+rutas publicadas y censadas : 1054
+  pasan                     : 1054
+  CAEN                      : 0
+      PATRON                           91
+      VACIA A PROPOSITO                5
+      con contenido                    946
+      vacia por protocolo              12
+
+CENSO VERDE: las 1054 rutas publicadas sostienen lo que dicen sostener.

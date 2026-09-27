@@ -1,0 +1,27 @@
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 296   (203 del grafo mas 93 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 0
+  BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 1
+  CHOCAN entre si dentro del lote  : 0
+
+POR QUE GUARDA CAEN
+     1  el candidato rompe docs/REGLAS_DE_ID.md
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[CAERIA] admitir_pronto_bajo_desempenio_cuatro_razones   (admitir_pronto_bajo_desempenio_cuatro_razones.json)
+    guarda: el candidato rompe docs/REGLAS_DE_ID.md
+      id 'admitir_pronto_bajo_desempenio_cuatro_razones': preposicion o articulo prohibido: bajo (regla 3)
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.

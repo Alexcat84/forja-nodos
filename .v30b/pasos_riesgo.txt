@@ -1,0 +1,33 @@
+### proteger_tiempo_equipo_jefe
+  ENTREGABLE: El tiempo de tu equipo despejado: obstaculos quitados, reuniones y analisis innecesarios fuera, horarios respetados, debates con un decisor y una fecha, y los mandatos que no valen nada parados antes de llegarles.
+  P1 Pideles que vengan a las reuniones a solas con una lista de problemas que tu puedas ayudarles a resolver.
+  P2 Escucha, asegurate de haberlo entendido, y desactiva las situaciones que podrian estallarles en la cara.
+  P3 Quita de en medio los obstaculos que parecen insalvables.
+  P4 No convoques reuniones innecesarias ni pidas analisis innecesarios.
+  P5 No llegues tarde a una reunion con nadie de tu equipo, y no toleres que nadie llegue tarde a las tuyas.
+  P6 Hazles debatir como equipo, pero justo antes de que el debate empiece a hacerse pesado, identifica a un decisor y pidele que vuelva con una decision para una fecha concreta.
+  P7 Enseña a los de tu equipo a ser mas persuasivos.
+  P8 Cuando baje desde arriba un mandato ridiculo que solo hace perder tiempo, busca la manera de protegerles de el.
+  P9 Y cuando lleguen los resultados, no los dejes pasar: haz que el equipo aprenda de lo que hizo, haya salido bien o haya salido mal.
+
+### cuidarse_agotamiento_centro_rueda
+  ENTREGABLE: Tu mismo cuidado y centrado, con tiempo de pensar reservado en el calendario, y la rueda girando otra vez.
+  P1 Cuenta con que los momentos en los que el trabajo y la vida personal te desbordan son justo los mas dificiles para aprender de tus resultados y volver a empezar el ciclo entero.
+  P2 Cuida de ti mismo antes que de nada, porque estas en el centro mismo de la rueda que te mueve hacia adelante como jefe.
+  P3 Cuenta con que esto se dice mas facil de lo que se hace, que es lo que el propio texto añade a continuacion.
+  P4 Declina la mayor parte de las invitaciones que te llegan, para poder centrarte en la operacion y llegar a casa a cenar con los tuyos, que es lo que hacia Dick Costolo en plena tormenta de prensa.
+  P5 Reacciona a los elogios desmedidos con humor a tu costa, como hacia el.
+  P6 Y no finjas que no pasa nada cuando si pasa: el texto dice que Dick tampoco lo hacia, y que dio una charla a su empresa sobre la dureza mental que hace falta para mantener la confianza bajo una lluvia de malas noticias.
+  P7 Bloquea en tu calendario tiempo de pensar todos los dias. El texto dice que buena parte de esa dureza mental venia de hacer cosas como bloquear dos horas de tiempo de pensar al dia.
+
+### mantener_manos_trabajo_real_equipo
+  ENTREGABLE: Trabajo de tu especialidad ejecutado por ti mismo y no solo observado, sin haber abandonado por ello las tareas de jefe.
+  P1 Cuenta con que el impuesto de colaboracion recae sobre ti, pero no al cien por cien.
+  P2 Mantente conectado al trabajo que se esta haciendo de verdad, no solo mirando ejecutar a otros sino ejecutando tu.
+  P3 Aplicalo a tu oficio concreto: si te haces director de orquesta, sigue tocando tu instrumento; si te haces jefe de ventas, sigue yendo tu a visitar clientes; si diriges un equipo de fontaneros, arregla algun grifo.
+  P4 No dejes por eso de dedicar tiempo a escuchar en las reuniones a solas ni a dirigir los debates.
+  P5 Aprende a alternar entre dirigir y ejecutar tu mismo.
+  P6 No abandones lo primero por lo segundo: integra las dos cosas.
+  P7 Cuenta con lo que se pierde si te alejas demasiado del trabajo de tu equipo: no vas a entender sus ideas lo bastante bien para ayudarles a clarificarlas, ni para participar en los debates, ni para saber que decisiones empujarles a tomar, ni para enseñarles a ser mas persuasivos.
+  P8 Cuenta con la consecuencia que el texto pone al final: la rueda entera se para si no entiendes a fondo la cosa que tu equipo esta intentando hacer.
+

@@ -1,0 +1,5 @@
+candidato construir_grafico_escalonado_pronosticos | grafo 366 | bandejas 96 | poblacion 462 | vecinos 3
+  construir_indicador_tendencia_patron               similitud_texto                          texto 0.365 familia 0.143 paso 0.453 | paso 4 del candidato contra paso 5 de construir_indicador_tendencia_patron
+  elegir_fabricar_pedido_pronostico                  similitud_texto                          texto 0.393 familia 0.143 paso 0.453 | paso 7 del candidato contra paso 4 de elegir_fabricar_pedido_pronostico
+  emparejar_indicadores_efecto_contraefecto          similitud_texto                          texto 0.378 familia 0.0 paso 0.434 | paso 1 del candidato contra paso 3 de emparejar_indicadores_efecto_contraefecto
+FIN

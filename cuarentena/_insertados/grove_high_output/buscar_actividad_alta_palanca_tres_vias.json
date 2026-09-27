@@ -1,0 +1,39 @@
+{
+  "id": "buscar_actividad_alta_palanca_tres_vias",
+  "titulo": "Buscar las actividades de alta palanca por sus tres vias basicas: mucha gente, un acto breve de efecto largo, y el saber unico",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "atribuciones": [],
+  "fuentes": [
+    {
+      "clave": "grove_high_output",
+      "fecha": "2026-09-19"
+    }
+  ],
+  "denominaciones": {
+    "nombre_largo": "Las tres vias basicas por las que se consigue una actividad de alta palanca: que un solo mando afecte a mucha gente, que un conjunto breve y bien enfocado de palabras o acciones afecte a una persona durante mucho tiempo, y que un individuo con una pieza unica y clave de conocimiento afecte al trabajo de un grupo grande",
+    "sigla": "",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "high-leverage activities"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "leverage"
+      }
+    ]
+  },
+  "condiciones_activacion": "Cuando ya sabes que quieres subir la palanca de lo que haces y te falta saber donde esta la palanca alta, o sea por donde se reconoce una actividad que rinde muy por encima de las demas.",
+  "entregable_esperado": "Tus actividades repasadas contra las tres vias basicas, y las que caen en alguna de ellas senaladas por la via que las mete.",
+  "pasos_accionables": [
+    "Repasa tus actividades buscando las de alta palanca, y busca por las tres vias basicas por las que el libro dice que se consiguen.",
+    "Primera via: aquella en la que mucha gente queda afectada por un solo mando.",
+    "Segunda via: aquella en la que la actividad o la conducta de una persona durante un periodo largo de tiempo queda afectada por un conjunto de palabras o de acciones del mando que es breve y esta bien enfocado.",
+    "Tercera via: aquella en la que el trabajo de un grupo grande queda afectado por un individuo que aporta una pieza de conocimiento o de informacion unica y clave."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/grove_high_output/cap_04.md, unidad Cap. 3, titulo textual Managerial Leverage. Sale de la PIEZA P19 de la frontera publicada en esta vuelta 46, L203 a L213, 118 palabras, y de ningun otro tramo. ESTO ES LA CABEZA DE UNA SEGUNDA SERIE, la que cuelga del paso 3 de subir_productividad_gerencial_tres_vias, y existe como nodo por el mismo articulo del manual: seccion 3 punto 4, un nodo por paso mas UNA cabeza. POR QUE ES D.37 Y NO D.29: el renglon dice These can be achieved in three basic ways y detras van las tres, nombradas una a una con vinieta. LA CUENTA ESTA ESCRITA, que es la condicion que el titular fijo el 11 sep 2026, y el que la lista vaya en vinietas y no en numeros no cambia nada: lo que D.37 pide es que el texto diga CUANTAS partes tiene y las nombre, y las dos cosas estan. DE DONDE SALE CADA PASO, uno a uno: paso 1 de L205 y L207 (HIGH-LEVERAGE ACTIVITIES. These can be achieved in three basic ways); paso 2 de L209 (When many people are affected by one manager); paso 3 de L211 (When a person activity or behavior over a long period of time is affected by a manager brief, well-focused set of words or actions); paso 4 de L213 (When a large group work is affected by an individual supplying a unique, key piece of knowledge or information). RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 4 pasos, 4 TRANSCRIPCION, 0 PUENTE. LO QUE NO ESCRIBO Y POR ESO NO ESTA AQUI: NO traigo aqui ninguno de los ejemplares con que el libro despliega las tres vias en los tramos siguientes, y es deliberado: son CASOS (manual 3.5) y viajan dentro del nodo de su doctrina, no dentro de la cabeza; NO escribo como se mide cuanta palanca tiene una actividad, porque este tramo no da vara de medida; NO escribo periodo, destinatario ni responsable. LAS ARISTAS QUE ESTE NODO ABRE, declaradas hoy y cableadas el dia de la insercion: POR ARRIBA es hija de subir_productividad_gerencial_tres_vias por su paso 3 (Increasing the leverage associated with the various managerial activities), que la nombra en una linea y aqui se despliega en cuatro pasos que la madre no tiene, y esa es arista D.37; POR ABAJO es madre del nodo que sale de L215 a L217 de esta misma unidad, la oportunidad temporal de la palanca, y del que sale de L231 a L235, la palanca negativa, los dos de esta misma tanda si el tramo llega a ellos. LO QUE NO AUTORIZA Y LO COMPRUEBO CONTRA MI PROPIA LISTA (EXTRACTOR.md 15.6): no declaro arista con ningun vecino que no sea una de las tres vias que este nodo enumera. Un vecino que trate de palanca y no sea ninguna de las tres es HERMANO y su veredicto es SANO. DISCUTIBLE QUE MARCO ANTES DE SABER SI ACIERTO, Y LO MARQUE YA EN LA FRONTERA: un lector estricto puede decir que esto es una CLASIFICACION, o sea una definicion con tres casillas, y que la tabla de EXTRACTOR.md 9 tumba las definiciones sin nada que hacer. Lo sostengo porque el paso 1 si encarga una operacion (repasar tus actividades contra las tres vias) y porque el manual da sitio propio a la cabeza de una serie. Es el mismo discutible que marque en subir_productividad_gerencial_tres_vias y lo marco otra vez aqui: si uno cae, caen los dos, y caen DENTRO de mi marcado. CORRECCION DECLARADA DE LA VUELTA 50, SIN BORRAR EL NUMERO VIEJO (manual principio 6, deuda d036, adjudicada en ACTA 48 seccion 48.5.a): donde esta ficha dice mas arriba que la PIEZA P19, L203 a L213, tiene 118 palabras, TIENE QUE LEERSE 76 palabras. La cifra buena es la que la frontera de HH.2.c publica para esta pieza, y no una tercera cifra mia: la recompute en la vuelta 50 con el mismo recuento de .v46/frontera.py linea 136 y me da 76, identica a la de la frontera. EL RENGLON DEL INSTRUMENTO QUE LO SOSTIENE, pegado (.v50/palabras_d036.txt): buscar_actividad_alta_palanca_tres_vias P19 L203 a L213 dice 118 HH.2.c 76 cuento 76 la frontera manda. LO QUE ESTA CORRECCION NO TOCA: ni un paso, ni una atribucion, ni la frontera, que es precisamente la que sale bien. El numero viejo era un numero escrito a mano en la vuelta 46 que ni la frontera citada ni ningun recuento reproducen."
+}

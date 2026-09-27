@@ -1,0 +1,46 @@
+{
+ "id": "reforzar_principios_guia_lenguaje_prueba_conocimiento",
+ "grafo": 459,
+ "bandejas": 20,
+ "vecinos": [
+  {
+   "id": "acoger_inspectores_externos_fuente_aprendizaje",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.401,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.372
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 2 del candidato contra paso 1 de acoger_inspectores_externos_fuente_aprendizaje"
+  },
+  {
+   "id": "tomar_accion_deliberada_pausar_vocalizar_gesticular",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.358,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.326
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 2 del candidato contra paso 1 de tomar_accion_deliberada_pausar_vocalizar_gesticular"
+  },
+  {
+   "id": "resistir_dar_solucion_clasificar_decision_urgencia",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.355,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.329
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 2 del candidato contra paso 2 de resistir_dar_solucion_clasificar_decision_urgencia"
+  }
+ ]
+}

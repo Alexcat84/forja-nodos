@@ -1,0 +1,26 @@
+vecinos en el instrumento : 15
+vecinos pegados en el doc : 15
+INVENTADOS en el doc      : 0
+que me deje sin pegar     : 0
+
+lineas de bitacora en el instrumento : 14
+lineas pegadas en el doc             : 29
+INVENTADAS en el doc                 : 16
+   INVENTADA -> ('251', 'CONTINUA', 'recorrer_rueda_conscientemente_')
+   INVENTADA -> ('265', 'CONTINUA', 'recorrer_rueda_conscientemente_')
+   INVENTADA -> ('266', 'SANO', 'recorrer_rueda_hacer_cosas_equipo')
+   INVENTADA -> ('267', 'CONTINUA', 'recorrer_rueda_hacer_cosas_equipo')
+   INVENTADA -> ('268', 'SANO', 'recorrer_rueda_hacer_cosas_equipo')
+   INVENTADA -> ('279', 'CONTINUA', 'crear_espacio_seguro_madurar_')
+   INVENTADA -> ('280', 'SANO', 'crear_obligacion_disentir_equipo')
+   INVENTADA -> ('281', 'SANO', 'crear_obligacion_disentir_equipo')
+   INVENTADA -> ('282', 'SANO', 'crear_obligacion_disentir_equipo')
+   INVENTADA -> ('283', 'SANO', 'crear_obligacion_disentir_equipo')
+   INVENTADA -> ('284', 'SANO', 'crear_obligacion_disentir_equipo')
+   INVENTADA -> ('285', 'SANO', 'crear_obligacion_disentir_equipo')
+   INVENTADA -> ('286', 'SANO', 'crear_obligacion_disentir_equipo')
+   INVENTADA -> ('287', 'SANO', 'crear_obligacion_disentir_equipo')
+   INVENTADA -> ('288', 'SANO', 'crear_obligacion_disentir_equipo')
+   INVENTADA -> ('289', 'SANO', 'crear_obligacion_disentir_equipo')
+
+ROJO

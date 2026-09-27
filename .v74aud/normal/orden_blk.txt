@@ -1,0 +1,11 @@
+1   usar_banco_nueve_preguntas_entrevista                        cap_15 P11       -                                                         
+2   responder_primer_aviso_renuncia_subordinado                  cap_15 P26       -                                                         
+3   gestionar_retencion_subordinado_valioso_renuncia             cap_15 P27       responder_primer_aviso_renuncia_subordinado               
+4   reciclar_empleado_ascendido_mas_alla_capacidad               cap_16 P21       -                                                         
+5   priorizar_lista_entrenamiento_subordinados                   cap_17 P21       -                                                         
+6   desarrollar_primer_curso_entrenamiento                       cap_17 P22       priorizar_lista_entrenamiento_subordinados                
+7   pedir_critica_anonima_curso_entrenamiento_dictado            cap_17 P23       desarrollar_primer_curso_entrenamiento                    
+  CONTINUA   desarrollar_primer_curso_entrenamiento                   > pedir_critica_anonima_curso_entrenamiento_dictado
+  CONTINUA   priorizar_lista_entrenamiento_subordinados               > desarrollar_primer_curso_entrenamiento
+  CONTINUA   responder_primer_aviso_renuncia_subordinado              > gestionar_retencion_subordinado_valioso_renuncia
+  CONTINUA con madre= (aristas distintas): 3 | SOSTENGO por lectura: 0 | solapes entre las dos: 0 | aristas esperadas: 3

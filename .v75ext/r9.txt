@@ -1,0 +1,7 @@
+paso  1 | casa: mas que / y si no / mas seguro pisando el acelerador si sabes que
+paso  4 | casa: en vez de
+paso  9 | casa: mas partido centrandote en las fuerzas que / en vez de
+paso 10 | casa: no solo / demuestra / mas de lo que
+paso 12 | casa: igual de / lo contrario
+paso 13 | casa: el texto dice
+pasos: 18 | pasos que casan: 6 | pasos sin ninguna clausula del patron: 12

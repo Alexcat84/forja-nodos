@@ -1,0 +1,2 @@
+recorrer_rueda_conscientemente_cultura_equipo | previos: [] | siguientes: ['recorrer_rueda_hacer_cosas_equipo']
+recorrer_rueda_hacer_cosas_equipo | previos: ['recorrer_rueda_conscientemente_cultura_equipo'] | siguientes: []

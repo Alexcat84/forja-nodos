@@ -1,0 +1,25 @@
+reunir_informacion_gerencial_vias_variadas             pasos  8 filas mias  8 P 0 D 0
+escalonar_fuentes_informacion_gerencial                pasos  7 filas mias  7 P 0 D 0
+programar_visita_area_observar_despachar               pasos  8 filas mias  8 P 0 D 0
+transmitir_objetivos_prioridades_preferencias          pasos  5 filas mias  5 P 0 D 0
+empujar_persona_reunion_direccion_preferida            pasos  7 filas mias  7 P 0 D 0
+subir_productividad_gerencial_tres_vias                pasos  4 filas mias  4 P 0 D 0
+buscar_actividad_alta_palanca_tres_vias                pasos  4 filas mias  4 P 0 D 1
+elegir_momento_actividad_palanca_maxima                pasos  7 filas mias  7 P 0 D 0
+detectar_palanca_negativa_actividad_mando              pasos  9 filas mias  9 P 0 D 3
+delegar_tarea_base_comun_seguimiento                   pasos 10 filas mias 10 P 0 D 0
+supervisar_tarea_delegada_etapa_menor_valor            pasos  9 filas mias  9 P 0 D 0
+supervisar_decision_delegada_preguntas_concretas       pasos  6 filas mias  6 P 0 D 0
+identificar_paso_limitante_jornada_desfases            pasos  5 filas mias  5 P 0 D 0
+agrupar_tareas_semejantes_aprovechar_preparacion       pasos  6 filas mias  6 P 0 D 0
+decir_no_trabajo_excede_capacidad                      pasos 10 filas mias 10 P 0 D 0
+usar_calendario_herramienta_planificacion_produccion   pasos  7 filas mias  7 P 0 D 0
+llevar_inventario_proyectos_discrecionales             pasos  5 filas mias  5 P 0 D 0
+dimensionar_numero_subordinados_medio_dia_semanal      pasos 11 filas mias 11 P 0 D 0
+buscar_regularidad_bloques_iguales_trabajo_mando       pasos  9 filas mias  9 P 0 D 0
+preparar_respuestas_estandar_interrupciones_repetidas  pasos  6 filas mias  6 P 0 D 0
+nodos de la tanda en el grafo iguales a su lectura entera: 20 | distintos: 0
+fichas de _insertados con el mismo blob que en d8f4e2a: 20 | distintas: 0
+cap_04 lo que entro: candidatos 20 | pasos 143 | filas de mi lectura 143 | P 0 | D 4
+PUENTE sobre pasos que entraron: 0 de 143 = 0.00 por ciento
+si mis D cayesen a PUENTE: 4 de 143 = 2.80 por ciento

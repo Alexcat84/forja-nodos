@@ -1,0 +1,33 @@
+{
+  "id": "distinguir_tres_tipos_sistemas_negocio",
+  "titulo": "Distinguir los tres tipos de sistemas que el libro nombra en tu negocio: Hard, Soft e Information Systems",
+  "denominaciones": {
+    "nombre_largo": "Three Kinds of Systems: Hard Systems, Soft Systems e Information Systems, y su integracion en el Business Development Program",
+    "sigla": "",
+    "otros_idiomas": [
+      {"idioma": "ingles", "termino": "Three Kinds of Systems"},
+      {"idioma": "ingles", "termino": "Hard Systems"},
+      {"idioma": "ingles", "termino": "Soft Systems"},
+      {"idioma": "ingles", "termino": "Information Systems"}
+    ]
+  },
+  "condiciones_activacion": "Cuando necesitas identificar de que tipo es cada sistema de tu negocio, antes de poder innovarlo, cuantificarlo y orquestarlo dentro de tu Business Development Program.",
+  "entregable_esperado": "Cada sistema de tu negocio clasificado en uno de los tres tipos (Hard, Soft o Information), con el ejemplo que le corresponde.",
+  "pasos_accionables": [
+    "Entiende que hay tres tipos de sistemas en tu negocio: Hard Systems, Soft Systems e Information Systems.",
+    "Reconoce un Hard System: es algo inanimado, sin vida, como un computador o los colores de una oficina.",
+    "Reconoce un Soft System: es algo animado, vivo, o una idea, como tu mismo o el guion de una obra de teatro.",
+    "Reconoce un Information System: es el que te da informacion sobre como interactuan los otros dos tipos, como el control de inventario, el pronostico de flujo de caja o el resumen de actividad de ventas.",
+    "Ten presente que la Innovacion, la Cuantificacion y la Orquestacion de estos tres tipos de sistemas en tu negocio es de lo que trata tu Business Development Program."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/gerber_emyth/cap_19.md, unidad Cap. 18, titulo textual Your Systems Strategy. Sale de la PIEZA D1 de la frontera publicada en esta misma vuelta (.gerber_v7/frontera_cap19.txt), L33 a L46, 128 palabras, bajo el subtitulo del propio libro Three Kinds of Systems. POR QUE ES PROCEDIMIENTO, con D.27 delante: el libro pone su propio inventario de OBJETOS DE TRABAJO con conteo explicito (L35: there are three kinds of systems... Hard Systems, Soft Systems, and Information Systems) y define cada uno en su propia linea con un ejemplo (L37, L39, L41). Ningun adjetivo de adecuacion se sienta en el sitio del criterio. SIGO EL PATRON DE UN SOLO NODO ya establecido en esta misma vuelta (aplicar_ocho_reglas_juego_personas, cap_18): la lista entera transcrita, no tres nodos mas cabeza, porque cada tipo se agota en su propia linea de definicion y no desarrolla un capitulo aparte. NO ES DUPLICADO de cuantificar_impacto_innovacion_6_pasos (cap_12, vuelta 3, vivo en cuarentena): ese nodo procedimenta como se cuantifica el impacto de una innovacion, que es OTRO inventario del libro (los procesos que se aplican A los sistemas), mientras que Hard, Soft e Information Systems es la clasificacion de los sistemas mismos; L45 los junta en una sola frase pero no los funde (P.19 no aplica: son dos inventarios distintos, no el mismo objeto repetido). RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 5 pasos, 5 TRANSCRIPCION, 0 PUENTE, cita pegada en .gerber_v7/cita_cap19_L33_L45.txt (D.35). No invento destinatario, responsable ni periodo: el libro no los pone y este candidato no los completa. LO QUE NO ESCRIBO Y POR ESO NO ESTA AQUI: L47 en adelante (pieza R3) es el caso del Prevent a Smudge System de E Myth Worldwide, un ejemplo narrativo de Hard System que no trae mas inventario propio (conflicto mas voluntad son condiciones explicadas, no pasos a ejecutar), asi que se queda en CASO sin candidato.",
+  "atribuciones": [],
+  "dominio": "gestion_negocio",
+  "estado": "vivo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "fuentes": [
+    {"clave": "gerber_emyth", "fecha": "2026-09-21"}
+  ]
+}

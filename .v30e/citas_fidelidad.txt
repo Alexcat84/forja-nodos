@@ -1,0 +1,7 @@
+| paso | la salida de `.v30e/cita.py` sobre el libro, pegada | veredicto |
+|---|---|---|
+| `proteger_tiempo_equipo_jefe` paso `2`: *escucha, asegurate de haberlo entendido, y desactiva las situaciones* | `377: ...listen, make sure she understood, and then she was like a sapper, an explosives expert. She defused some politic...` | **TRANSCRIPCION** |
+| `mantener_manos_trabajo_real_equipo` paso `8`: *la rueda entera se para si no entiendes a fondo la cosa que tu equipo esta intentando hacer* | `383: ...The GSD wheel will grind to a halt if you don't understand intimately the "stuff" your team is trying to...` | **TRANSCRIPCION** |
+| `minimizar_impuesto_colaboracion_equipo` paso `4`: las tres cosas del equilibrio | `373: Here are the three things I've learned about getting this balance right: Don't waste your team's time; Keep the "dirt under your fingernails"; and Block...` | **TRANSCRIPCION**, y ademas es la cabeza de una serie `D.37` |
+| `cuidarse_agotamiento_centro_rueda` paso `7`: *bloquea en tu calendario tiempo de pensar todos los dias* | `417: ...ability to stay centered, to do things like block two hours of think-time on his calendar ev...` | **TRANSCRIPCION** |
+| `repartir_decision_cercanos_hechos` paso `10`: las tres cosas del diagnostico | `283: ...1) his decisions were not grounded in the facts 2) even if his decisions were the right ones, nobody was going to execute on them and 3) he was in danger of losing his ...` | **TRANSCRIPCION** |

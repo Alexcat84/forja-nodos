@@ -1,0 +1,4 @@
+$ (pasos_accionables de los 13 nodos de la tanda, contados en dataset/nodos.jsonl y agrupados por el capitulo que cita su resumen)
+  cap_07   12 nodos   90 pasos
+  cap_11    1 nodos    6 pasos
+  TOTAL    13 nodos   96 pasos

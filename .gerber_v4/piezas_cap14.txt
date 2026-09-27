@@ -1,0 +1,9 @@
+[
+  ("R1", 8, 20, "el numero del capitulo, el rotulo YOUR PRIMARY AIM y el epigrafe de Robert Assagioli (The Act of Will)", "RESIDUO: rotulo y epigrafe"),
+  ("R2", 21, 30, "el negocio no es lo primero, eres tu; y antes de decidir que papel juega el negocio en tu vida debes preguntarte que valoras mas, que vida quieres, como quieres que se vea y se sienta, quien quieres ser: eso es tu Primary Aim", "POSTURA"),
+  ("R3", 31, 98, "la visualizacion de tu propio funeral y la cinta con la historia de tu vida contada a los asistentes, como metafora de que es el Primary Aim, y el llamado a vivir la vida intencionalmente y tomarla en serio", "POSTURA"),
+  ("R4", 99, 116, "la gente notable sabe como llego a donde esta y que necesita para llegar a donde va, trabaja sobre su vida y no solo en ella, y la cita de Don Juan sobre el guerrero que ve todo como un reto", "POSTURA y CASO"),
+  ("R5", 117, 136, "antes de empezar tu negocio, o antes de volver a el manana, preguntate lo siguiente: las ocho preguntas que el libro enumera en vinetas sobre como quieres que se vea tu vida, tu dia a dia, que sabes de verdad, como quieres estar con otros, que quieres aprender y cuanto dinero necesitaras", "INVENTARIO PROPIO: NACE 1 CANDIDATO"),
+  ("R6", 137, 146, "las respuestas se vuelven los estandares con que mides el progreso de tu vida, y tu Primary Aim es la vision que trae tu negocio a tu vida y tu vida a tu negocio, con proposito, energia y grano para el dia a dia", "POSTURA"),
+  ("R7", 147, 217, "el asombro de Sarah al descubrirse ausente de su propio negocio, y la larga historia autobiografica del propio autor, de vendedor de enciclopedias a consultor en Silicon Valley, contada como ejemplo de encontrar el propio proposito", "CASO"),
+]

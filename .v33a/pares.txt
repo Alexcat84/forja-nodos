@@ -1,0 +1,86 @@
+LAS 14 LINEAS NUEVAS DE bitacora/VEREDICTOS.jsonl, SIN SU RAZON
+
+   1  veredicto CORREGIDO   operacion correccion declarada del resumen_teorico (EXTRACTOR.md 2)
+      candidato : recorrer_rueda_conscientemente_cultura_equipo
+      vecino    : recorrer_rueda_conscientemente_cultura_equipo
+      senales   : -
+      levantada : ['correccion declarada']   arista: -   campo: resumen_teorico
+      razon     : 534 caracteres, NO IMPRESA AQUI
+   2  veredicto SANO        operacion -           
+      candidato : evitar_presion_social_actos_equipo
+      vecino    : contar_cuatro_historias_propias_ver_hueco_intencion
+      senales   : {"familia_id": 0.0, "paso_contra_nodo": 0.604, "similitud_texto": 0.198}
+      levantada : ['paso_contra_nodo']   arista:    campo: -
+      razon     : 1056 caracteres, NO IMPRESA AQUI
+   3  veredicto SANO        operacion -           
+      candidato : evitar_presion_social_actos_equipo
+      vecino    : proteger_tiempo_equipo_jefe
+      senales   : {"familia_id": 0.125, "paso_contra_nodo": 0.417, "similitud_texto": 0.38}
+      levantada : ['similitud_texto']   arista:    campo: -
+      razon     : 898 caracteres, NO IMPRESA AQUI
+   4  veredicto SANO        operacion -           
+      candidato : evitar_presion_social_actos_equipo
+      vecino    : crear_obligacion_disentir_equipo
+      senales   : {"familia_id": 0.125, "paso_contra_nodo": 0.346, "similitud_texto": 0.405}
+      levantada : ['similitud_texto']   arista:    campo: -
+      razon     : 1055 caracteres, NO IMPRESA AQUI
+   5  veredicto CONTINUA    operacion arista declarada por lectura (D.37)
+      candidato : evitar_presion_social_actos_equipo
+      vecino    : dominar_arte_socializar_trabajo
+      senales   : {"familia_id": 0.0, "paso_contra_nodo": 0.459, "similitud_texto": 0.308}
+      levantada : ['lectura declarada']   arista: dominar_arte_socializar_trabajo > evitar_presion_social_actos_equipo   campo: -
+      razon     : 1510 caracteres, NO IMPRESA AQUI
+   6  veredicto SANO        operacion -           
+      candidato : construir_confianza_equipo_tiempo_solas
+      vecino    : decidir_quien_comunica_cada_cuanto
+      senales   : {"familia_id": 0.0, "paso_contra_nodo": 0.619, "similitud_texto": 0.244}
+      levantada : ['paso_contra_nodo']   arista:    campo: -
+      razon     : 937 caracteres, NO IMPRESA AQUI
+   7  veredicto SANO        operacion -           
+      candidato : construir_confianza_equipo_tiempo_solas
+      vecino    : reconocer_emociones_propias_avisar_equipo
+      senales   : {"familia_id": 0.111, "paso_contra_nodo": 0.46, "similitud_texto": 0.358}
+      levantada : ['similitud_texto']   arista:    campo: -
+      razon     : 781 caracteres, NO IMPRESA AQUI
+   8  veredicto SANO        operacion -           
+      candidato : construir_confianza_equipo_tiempo_solas
+      vecino    : minimizar_impuesto_colaboracion_equipo
+      senales   : {"familia_id": 0.125, "paso_contra_nodo": 0.412, "similitud_texto": 0.363}
+      levantada : ['similitud_texto']   arista:    campo: -
+      razon     : 718 caracteres, NO IMPRESA AQUI
+   9  veredicto CONTINUA    operacion arista declarada por lectura (D.37)
+      candidato : montar_reuniones_solas_mentalidad_frecuencia
+      vecino    : construir_confianza_equipo_tiempo_solas
+      senales   : {"familia_id": 0.111, "paso_contra_nodo": 0.487, "similitud_texto": 0.22}
+      levantada : ['lectura declarada']   arista: construir_confianza_equipo_tiempo_solas > montar_reuniones_solas_mentalidad_frecuencia   campo: -
+      razon     : 2014 caracteres, NO IMPRESA AQUI
+  10  veredicto SANO        operacion -           
+      candidato : vivir_valores_propios_evitar_listarlos
+      vecino    : sostener_contacto_oferta_aceptacion
+      senales   : {"familia_id": 0.0, "paso_contra_nodo": 0.606, "similitud_texto": 0.112}
+      levantada : ['paso_contra_nodo']   arista:    campo: -
+      razon     : 1256 caracteres, NO IMPRESA AQUI
+  11  veredicto SANO        operacion -           
+      candidato : reconocer_emociones_propias_avisar_equipo
+      vecino    : minimizar_impuesto_colaboracion_equipo
+      senales   : {"familia_id": 0.125, "paso_contra_nodo": 0.503, "similitud_texto": 0.355}
+      levantada : ['similitud_texto']   arista:    campo: -
+      razon     : 512 caracteres, NO IMPRESA AQUI
+  12  veredicto SANO        operacion -           
+      candidato : reconocer_emociones_propias_avisar_equipo
+      vecino    : centrar_debate_ideas_fuera_egos
+      senales   : {"familia_id": 0.0, "paso_contra_nodo": 0.449, "similitud_texto": 0.363}
+      levantada : ['similitud_texto']   arista:    campo: -
+      razon     : 609 caracteres, NO IMPRESA AQUI
+  13  veredicto SANO        operacion -           
+      candidato : reconocer_emociones_propias_avisar_equipo
+      vecino    : cuidarse_agotamiento_centro_rueda
+      senales   : {"familia_id": 0.0, "paso_contra_nodo": 0.443, "similitud_texto": 0.37}
+      levantada : ['similitud_texto']   arista:    campo: -
+      razon     : 831 caracteres, NO IMPRESA AQUI
+  14  veredicto SANO        operacion -           
+      candidato : reconocer_emociones_propias_avisar_equipo
+      vecino    : construir_confianza_equipo_tiempo_solas
+      senales   : {"familia_id": 0.111, "paso_contra_nodo": 0.414, "similitud_texto": 0.377}
+      levantada : ['similitud_texto']   arista:    campo: -
+      razon     : 849 caracteres, NO IMPRESA AQUI

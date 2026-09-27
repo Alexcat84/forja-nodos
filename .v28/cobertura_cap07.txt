@@ -1,0 +1,9 @@
+TRAMOS DECLARADOS : 25
+SOLAPES entre tramos declarados : 0
+
+LINEAS CON TEXTO FUERA DE TODO TRAMO : 53, en 5 bloques
+   L9 a L63  (28 lineas)  | Telling people what to do doesn’t work
+   L79 a L89  (6 lineas)  | LISTEN
+   L165 a L175  (6 lineas)  | CLARIFY
+   L213 a L223  (6 lineas)  | DEBATE
+   L421 a L433  (7 lineas)  | PART II

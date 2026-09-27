@@ -1,0 +1,28 @@
+    $ python .v51/cola_lectura.py
+  LOS 9 PARES DE LA COLA, MEDIDOS UNO A UNO. Los dos extremos de cada par son de ESTA MISMA TANDA.
+
+  candidato                              vecino                                   sen1 sin_rt  pasos lineas
+  --------------------------------------------------------------------------------------------------------
+  fijar_frecuencia_reunion_individual_ma infundir_regularidad_reunion_proceso    0.385  0.219      0      0
+  fijar_duracion_lugar_reunion_individua fijar_frecuencia_reunion_individual_ma  0.445  0.205      0      0
+  preparar_guion_reunion_individual_subo fijar_duracion_lugar_reunion_individua  0.428  0.211      0      0
+  preparar_guion_reunion_individual_subo fijar_frecuencia_reunion_individual_ma  0.432  0.250      0      0
+  preparar_guion_reunion_individual_subo infundir_regularidad_reunion_proceso    0.416  0.253      0      0
+  cubrir_indicadores_problemas_reunion_i preparar_guion_reunion_individual_subo  0.432  0.305      0      0
+  cubrir_indicadores_problemas_reunion_i fijar_duracion_lugar_reunion_individua  0.386  0.205      0      0
+  cubrir_indicadores_problemas_reunion_i infundir_regularidad_reunion_proceso    0.391  0.258      0      0
+  cubrir_indicadores_problemas_reunion_i fijar_frecuencia_reunion_individual_ma  0.410  0.219      0      0
+
+  pares medidos                                   : 9
+  pares POR ENCIMA de 0,40 tal como la aduana mide: 6
+  pares POR ENCIMA de 0,40 sin el resumen_teorico : 0
+  PASOS literalmente comunes en los 9 pares       : 0
+  LINEAS del libro compartidas en los 9 pares     : 0   (los seis tramos son disjuntos por LL.4.b)
+
+  TRAMO DE CADA UNO, para que se vea que son disjuntos:
+    infundir_regularidad_reunion_proceso               P6  L21
+    usar_tres_clases_reunion_proceso                   P7  L23
+    fijar_frecuencia_reunion_individual_madurez_tarea  P11 L33 a L35
+    fijar_duracion_lugar_reunion_individual            P12 L37 a L39
+    preparar_guion_reunion_individual_subordinado      P13 L41
+    cubrir_indicadores_problemas_reunion_individual    P14 L43

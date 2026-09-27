@@ -1,0 +1,19 @@
+{
+ "arista": "",
+ "candidato": "fijar_fecha_cierre_debate_equipo",
+ "detalle_paso": "paso 6 del candidato contra paso 6 de centrar_debate_ideas_fuera_egos",
+ "fecha": "2026-09-16",
+ "huella_candidato": "1147690964966aaf",
+ "huella_vecino": "6b6b9831471d759d",
+ "levantada_por": [
+  "similitud_texto"
+ ],
+ "razon": "COSA JUZGADA: la ACTA 28 2.2 lo adjudico SANO SIN ARISTA con el libro abierto, y con ella el auditor RETIRO por correccion declarada la arista D.29 que su propia apertura sellada habia levantado (fijar_fecha MADRE de centrar_debate). Su razon, que hago mia porque la comprobe: L223 abre una lista de tecnicas hermanas (Here are some ideas...) y los seis rotulos de L225 a L251 cuelgan todos de ella al mismo nivel, asi que la madre de los dos seria la cabeza de L221 a L223, que no es nodo. La remision de L257 al cambio de papeles viene 28 lineas DESPUES y apunta hacia atras: una remision hacia atras no es una cabeza",
+ "senales": {
+  "familia_id": 0.111,
+  "paso_contra_nodo": 0.551,
+  "similitud_texto": 0.355
+ },
+ "vecino": "centrar_debate_ideas_fuera_egos",
+ "veredicto": "SANO"
+}

@@ -1,0 +1,10 @@
+recorrer_rueda_conscientemente_cultura_equipo   (14 pasos)   poblacion 316 = 203 grafo + 113 bandejas
+  vecinos POR ENCIMA de umbral: 1
+    recorrer_rueda_hacer_cosas_equipo                    sim=0.250 fam=0.429 paso=0.507  <- familia_id
+  los 5 mas altos por similitud_texto, esten o no por encima:
+    montar_reunion_general_presentaciones_preguntas      sim=0.301 fam=0.000 paso=0.527
+    montar_tablero_kanban_medir_actividades              sim=0.293 fam=0.000 paso=0.447
+    pelear_proliferacion_reuniones_bloquear_ejecucion    sim=0.281 fam=0.000 paso=0.457
+    fijar_fecha_cierre_debate_equipo                     sim=0.269 fam=0.111 paso=0.461
+    montar_reunion_gran_debate                           sim=0.266 fam=0.000 paso=0.429
+  segundos: 242.7

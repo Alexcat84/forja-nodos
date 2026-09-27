@@ -1,0 +1,41 @@
+==========================================================================================
+construir_estrategia_gente_cuatro_componentes
+  titulo: Construir tu Your People Strategy con los cuatro componentes que el libro nombra uno a uno
+  activacion: Cuando ya tienes tu Primary Aim y tu Strategic Objective escritos y tu Organizational Strategy construida, y necesitas comunicarle esa idea a tu gente para que compre el juego que le propones.
+  entregable: Tu Your People Strategy armada con sus cuatro componentes en el orden que el libro los nombra: Primary Aim, Strategic Objective, Organizational Strategy con su Organization Chart y sus Position Contracts, y tus Operations Manuals.
+  P1  Entiende que tu Your People Strategy es la forma en que le comunicas a tu gente la idea de tu negocio.
+  P2  Arranca con tu Primary Aim.
+  P3  Sigue con tu Strategic Objective.
+  P4  Construye tu Organizational Strategy: tu Organization Chart y los Position Contracts de todas las posiciones que contiene.
+  P5  Escribe tus Operations Manuals, que son los que definen el trabajo que hace tu gente.
+==========================================================================================
+aplicar_ocho_reglas_juego_personas
+  titulo: Aplicar las ocho reglas que el libro enumera para el juego de tu gente
+  activacion: Cuando ya decidiste comunicarle a tu gente la idea de tu negocio como un juego (Your People Strategy) y necesitas las reglas que hacen que ese juego funcione y no se apague.
+  entregable: Las ocho reglas de tu juego de personas honradas, desde que el juego va primero y lo que tu gente hace despues, hasta que robas un juego ajeno si no se te ocurre uno bueno.
+  P1  Reconoce que el juego de tu gente tiene reglas que hay que honrar si quieres llegar a ser bueno en el.
+  P2  Regla 1: nunca decidas primero que quieres que haga tu gente y despues trates de construir un juego a partir de eso; el juego tiene que ir primero y lo que tu gente hace, segundo.
+  P3  Regla 2: nunca crees para tu gente un juego que tu mismo no estes dispuesto a jugar, porque te van a descubrir y no te lo van a dejar olvidar.
+  P4  Regla 3: asegurate de que haya formas especificas de ganar el juego sin terminarlo; dale a tu gente victorias de vez en cuando para que no se canse, porque el juego nunca puede acabar.
+  P5  Regla 4: cambia el juego de vez en cuando, las tacticas y no la estrategia; para saber cuando toca el cambio observa los resultados de tu gente, anticipa el final del juego y cambialo por accion ejecutiva antes que nadie mas lo note.
+  P6  Regla 5: nunca esperes que el juego se sostenga solo; recuerdaselo a tu gente constantemente, con una reunion especial sobre el juego al menos una vez por semana y sacando a relucir alguna excepcion a como se ha jugado al menos una vez al dia.
+  P7  Regla 6: haz que el juego tenga sentido, construido sobre verdades verificables universalmente, y saca a relucir la logica seguido para sostener el compromiso emocional de tu gente cuando decaiga.
+  P8  Regla 7: haz que el juego sea divertido de vez en cuando, no todo el tiempo; planea la diversion dejando que tu gente la defina, y no la repitas mas de una vez cada seis meses para que siga siendo algo que esperar.
+  P9  Regla 8: si no se te ocurre un buen juego, robalo, pero aprendetelo de memoria antes de jugarlo con tu gente.
+==========================================================================================
+aplicar_cinco_pasos_proceso_contratacion
+  titulo: Aplicar los cinco componentes del proceso de contratacion que el libro enumera para comunicar tu idea desde el primer dia
+  activacion: Cuando vas a contratar gente nueva y quieres que el proceso mismo, desde la primera reunion hasta el primer dia de entrenamiento, sea el primer medio con el que le comunicas la idea de tu negocio.
+  entregable: Un proceso de contratacion con sus cinco componentes completos: la presentacion guionizada en grupo, la reunion individual, la notificacion al elegido, la notificacion a los no elegidos, y el primer dia de entrenamiento con sus siete actividades.
+  P1  Disena una presentacion guionizada que comunique la idea de tu negocio en una reunion grupal a todos los aspirantes al mismo tiempo, describiendo la idea, la historia y la experiencia del negocio implementandola, y los atributos que exige el puesto.
+  P2  Reunete con cada aspirante de forma individual para hablar de sus reacciones y sentimientos sobre la idea, su trasfondo y su experiencia, y pregunta por que se cree apropiado para el papel que el puesto juega en implementar esa idea.
+  P3  Notifica por telefono al candidato elegido, otra vez con una presentacion guionizada.
+  P4  Notifica a los aspirantes no elegidos agradeciendo su interes, con una carta estandar firmada por quien entrevisto.
+  P5  Dedica el primer dia de entrenamiento a las siguientes actividades, tanto para ti como para el nuevo empleado.
+  P6  Revisa con el la idea del negocio.
+  P7  Resume el sistema con el que todo el negocio hace realidad esa idea.
+  P8  Llevalo de recorrido por las instalaciones, resaltando a la gente trabajando y los sistemas funcionando para mostrar la interdependencia entre los sistemas y la gente.
+  P9  Responde clara y completamente todas sus preguntas.
+  P10 Entregale su uniforme y su Manual de Operaciones.
+  P11 Revisa con el su Manual de Operaciones, incluyendo el Objetivo Estrategico, la Organizational Strategy y el Position Contract de su propio puesto.
+  P12 Completa con el los papeles de empleo.

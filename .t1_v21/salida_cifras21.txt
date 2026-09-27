@@ -1,0 +1,4 @@
+cifras y numerales comprobados en los 194 pasos : 154
+los que NO estan en su tramo del libro           : 2
+   P27  sopesar_consejo_legal_despedir_humildad  paso 2  ->  numeral un
+   P27  sopesar_consejo_legal_despedir_humildad  paso 3  ->  numeral una

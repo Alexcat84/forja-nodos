@@ -1,0 +1,7 @@
+    $ grep -c grep cuarentena/grove_high_output/dimensionar_numero_subordinados_medio_dia_semanal.json
+1
+    $ python -c "cuenta grep en la correccion de la vuelta 51"
+    caracteres de la correccion nueva : 2071
+    veces que la palabra grep aparece EN ELLA : 0
+    veces que aparece la cadena 'Sale de la PIEZA P34' EN ELLA : 0
+    los dos ids de la afirmacion, escritos : 1 y 1

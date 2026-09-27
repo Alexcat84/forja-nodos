@@ -1,0 +1,29 @@
+donde    lineas     id                                             pasos
+GRAFO    65-77      recorrer_rueda_hacer_cosas_equipo                 12
+GRAFO    91-111     escuchar_callado_equipo_tranquilizar_incomodo     11
+GRAFO    113-129    escuchar_ruidoso_opinion_fuerte_pedir_agujeros    13
+GRAFO    131-153    crear_cultura_escucha_equipo                      17
+GRAFO    155-163    adaptar_escucha_cultura_ajena                      9  (tramo no contiguo: 155-163 y 131-153)
+GRAFO    177-195    crear_espacio_seguro_madurar_ideas_nuevas         14
+GRAFO    197-211    explicar_idea_facil_comprender_oyente             13
+GRAFO    225-229    centrar_debate_ideas_fuera_egos                   10
+GRAFO    231-233    crear_obligacion_disentir_equipo                   5
+BANDEJA  235-237    parar_debate_emocion_agotamiento                   5
+GRAFO    239-243    abrir_debate_humor_explicar_proposito              7
+BANDEJA  245-257    fijar_fecha_cierre_debate_equipo                  11
+BANDEJA  259-289    repartir_decision_cercanos_hechos                 11
+BANDEJA  291-293    pedir_hechos_decision_evitar_recomendaciones       5
+GRAFO    295-301    bajar_detalle_organizacion_fuente_hechos           9
+BANDEJA  303-347    persuadir_emocion_oyente_no_propia                11  (tramo no contiguo: 303-347 y 309-313 y 333-339)
+BANDEJA  349-357    establecer_credibilidad_pericia_humildad           9
+BANDEJA  359-365    compartir_logica_mostrar_razonamiento              6
+BANDEJA  367-373    minimizar_impuesto_colaboracion_equipo             4
+BANDEJA  375-379    proteger_tiempo_equipo_jefe                        9
+BANDEJA  381-383    mantener_manos_trabajo_real_equipo                 8
+BANDEJA  385-387    reservar_calendario_tiempo_ejecutar                4
+GRAFO    389-401    aprender_resultados_vencer_dos_presiones           6
+GRAFO    403-407    cambiar_posicion_hechos_explicar_cambio            9
+BANDEJA  409-419    cuidarse_agotamiento_centro_rueda                  7
+
+GRAFO: 13   BANDEJA: 12   TOTAL cap_07: 25
+PASOS en el grafo: 135   PASOS en bandeja: 90

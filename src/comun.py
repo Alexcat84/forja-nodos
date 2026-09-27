@@ -5,6 +5,7 @@ Anclaje: manual seccion 2 (fase cero). Aqui viven las piezas que usan el
 resolutor, el gate y la aduana, para que ninguna tenga su propia version.
 """
 
+import fnmatch
 import hashlib
 import io
 import json
@@ -34,6 +35,17 @@ RUTA_VEREDICTOS = _ruta("FORJA_VEREDICTOS", "bitacora", "VEREDICTOS.jsonl")
 RUTA_UMBRALES = _ruta("FORJA_UMBRALES", "config", "umbrales.json")
 RUTA_PARES_MUTUOS = _ruta("FORJA_PARES_MUTUOS", "config", "pares_mutuos.jsonl")
 DIR_CENSOS = _ruta("FORJA_CENSOS", "censos")
+# LA BANDEJA TAMBIEN SE SOBREESCRIBE, desde que D.38.5 llego a la aduana
+# (16 sep 2026): la poblacion del barrido la lee de aqui, y sin esta variable
+# la prueba de aceptacion mediria contra los candidatos del repo de verdad.
+DIR_CUARENTENA = _ruta("FORJA_CUARENTENA", "cuarentena")
+
+# LOS FICHEROS DE COORDINACION VIVEN FUERA DE `dataset/` (D.56, 17 sep 2026).
+# `dataset/` contiene el catalogo y nada mas. Un cerrojo es un fichero de proceso,
+# con el pid de quien escribe en ese instante, y el 17 sep 2026 uno entro en git
+# desde dentro de `dataset/`: commiteado, un checkout entrega el cerrojo de un
+# proceso muerto y la insercion siguiente se queda bloqueada por un cadaver.
+DIR_PROCESOS = _ruta("FORJA_PROCESOS", "procesos")
 
 # Manual seccion 2: hook de estilo de la casa. Guion largo y guion medio y
 # toda la familia de rayas tipograficas quedan prohibidos en TODO el repo.
@@ -218,6 +230,69 @@ def huella_de_texto(texto):
 # (docs/ESTRENO_DE_LA_ADUANA.md).
 BANDEJAS_DE_ENTRADA = ("cuarentena", "fuentes")
 
+# El unico documento que esta casa escribe DENTRO de una bandeja, y por eso
+# el unico que se barre ahi. Un nombre fijo, no un patron: si mañana hace
+# falta otro, se añade aqui con su motivo y no se ensancha la regla sola.
+DOC_DE_BANDEJA = "LEEME.md"
+
+# LOS ARTEFACTOS DEL ARNES SON REGISTRO DE MAQUINA, NO PROSA DE ESTA CASA
+# (decision del fundador del 10 sep 2026, D.33). El arnes vuelca el texto del
+# turno en ellos DESPUES del ultimo commit, asi que son la unica escritura del
+# repo que no puede pasar por su propio hook: el turno ya termino.
+#
+# TRES VUELTAS SEGUIDAS los tumbaron, y en la septima el fallo dejo de ser
+# cosmetico: `ultimo_extractor.json` puso en ROJO la prueba de aceptacion
+# entera, porque `test_e_guion_largo_rompe_el_hook` exige un arbol limpio antes
+# de ensuciarlo. Un turno bueno dejaba al siguiente arrancando en rojo.
+#
+# ES COHERENTE CON D.20 Y NO UNA EXCEPCION A ELLA: se barre lo que esta casa
+# ESCRIBE. El mensaje final de un modelo, volcado tal cual por una tuberia, no
+# es prosa de esta casa mas de lo que lo es un capitulo de un libro ajeno.
+#
+# LO QUE NO CAMBIA: el arnes los sigue commiteando en su commit de artefactos,
+# porque son el testigo del turno y la sede autoritativa de su coste. No se
+# barren; se guardan.
+#
+# ----------------------------------------------------------------------------
+# SE ENSANCHA POR PATRON, 12 sep 2026 (decision del fundador, punto 1).
+#
+# LA LISTA CERRADA TENIA UNA GRIETA CON FORMA DE FECHA: `ultimo_apertura.json`
+# nacio con `D.34`, DESPUES de que esta lista se escribiera, y por eso no estaba
+# en ella. En la vuelta 20, tres guiones largos del mensaje final de la fase
+# ciega pusieron en rojo el barrido Y la prueba de aceptacion, y la parada se
+# adjudico contra el auditor por no haber formateado su propio volcado.
+# **CAPA EQUIVOCADA:** formatear la salida de un modelo es tarea del arnes.
+#
+# UN NOMBRE QUE HAY QUE ACORDARSE DE ANADIR A UNA LISTA NO PROTEGE NADA: protege
+# hasta el dia en que alguien escribe un fichero nuevo. Por eso la exencion pasa
+# a ser un PATRON y no un inventario, y por eso vale para los que nazcan mañana.
+#
+# LA CONVENCION QUE HACE QUE EL PATRON BASTE: el arnes escribe la salida de un
+# modelo en `docs/loop/ultimo_<rol>.json`. Un artefacto nuevo que nazca del
+# volcado de un modelo se llama asi y **queda exento el dia que nace**, sin que
+# nadie tenga que tocar este fichero.
+#
+# Y LO QUE NO SE AFLOJA: lo que no es artefacto sigue sin serlo. Un acta, un
+# reporte, una regla o un candidato con un guion largo tumba el barrido, este
+# donde este. La exencion es de CAPA, no de contenido.
+ARTEFACTOS_DE_MAQUINA = ("loop.log", "ultimo_extractor.json", "ultimo_auditor.json")
+PATRONES_DE_ARTEFACTO = ("ultimo_*.json",)
+CARPETA_DE_ARTEFACTOS = "loop"
+
+
+def es_artefacto_de_maquina(nombre, carpeta):
+    """Cierto si es un artefacto que el arnes escribe desde la salida de un modelo.
+
+    SE COMPRUEBA EL NOMBRE Y SU CARPETA: un fichero que se llame `loop.log` en
+    otro sitio no es el testigo del arnes, y un `ultimo_cualquiera.json` fuera de
+    `docs/loop/` es prosa de esta casa como cualquier otra.
+    """
+    if os.path.basename(carpeta) != CARPETA_DE_ARTEFACTOS:
+        return False
+    if nombre in ARTEFACTOS_DE_MAQUINA:
+        return True
+    return any(fnmatch.fnmatch(nombre, patron) for patron in PATRONES_DE_ARTEFACTO)
+
 
 def _es_bandeja(carpeta, raiz):
     """Cierto si la carpeta esta DENTRO de una bandeja de entrada.
@@ -242,9 +317,28 @@ def archivos_del_repo(raiz=None, extensiones=None):
     for carpeta, subcarpetas, ficheros in os.walk(raiz):
         subcarpetas[:] = [s for s in subcarpetas if s not in saltar]
         if _es_bandeja(carpeta, raiz):
-            subcarpetas[:] = []
+            # DENTRO DE UNA BANDEJA SOLO SE BARRE LO QUE ESTA CASA ESCRIBE, y
+            # eso tiene un nombre fijo: LEEME.md. Un lote archivado lleva el
+            # suyo con el commit de insercion de cada candidato (D.31), es
+            # doctrina de esta casa, viaja en git, y obedece la regla como
+            # cualquier otro documento. El material ajeno que lo rodea, no.
+            #
+            # SIN ESTA LINEA, D.20 tendria una grieta con forma de excusa: un
+            # documento propio escaparia de la regla por vivir en una carpeta
+            # que se salta. Se barre lo que esta casa escribe, ESTE DONDE ESTE.
+            for fichero in ficheros:
+                if fichero == DOC_DE_BANDEJA:
+                    ruta = os.path.join(carpeta, fichero)
+                    if extensiones is None or \
+                            os.path.splitext(fichero)[1].lower() in extensiones:
+                        encontrados.append(ruta)
+            subcarpetas[:] = [s for s in subcarpetas if not s.startswith(".")]
             continue
         for fichero in ficheros:
+            # Los artefactos del arnes son registro de maquina y no se barren
+            # (D.33, ensanchada POR PATRON el 12 sep 2026).
+            if es_artefacto_de_maquina(fichero, carpeta):
+                continue
             ruta = os.path.join(carpeta, fichero)
             if extensiones is not None:
                 if os.path.splitext(fichero)[1].lower() not in extensiones:

@@ -1,0 +1,37 @@
+#   candidato                                                cap    pza  madre(s)                                           pob  dijo       vec  lin   listos
+1   infundir_regularidad_reunion_proceso                     cap_05 P6   agrupar_tareas_semejantes_aprovechar_preparacion, buscar_regularidad_bloques_iguales_trabajo_mando 479  BLOQUEARIA 5    5     SI
+2   usar_tres_clases_reunion_proceso                         cap_05 P7   -                                                  479  BLOQUEARIA 5    5     SI
+3   fijar_frecuencia_reunion_individual_madurez_tarea        cap_05 P11  -                                                  479  BLOQUEARIA 6    6     SI
+4   fijar_duracion_lugar_reunion_individual                  cap_05 P12  -                                                  479  BLOQUEARIA 7    7     SI
+5   preparar_guion_reunion_individual_subordinado            cap_05 P13  -                                                  479  BLOQUEARIA 9    9     SI
+6   cubrir_indicadores_problemas_reunion_individual          cap_05 P14  -                                                  479  BLOQUEARIA 6    6     SI
+7   facilitar_expresion_subordinado_pregunta_mas             cap_05 P15  -                                                  479  BLOQUEARIA 8    8     SI
+8   tomar_notas_copia_guion_reunion_individual               cap_05 P16  preparar_guion_reunion_individual_subordinado      479  BLOQUEARIA 7    7     SI
+9   acumular_asuntos_importantes_fichero_espera              cap_05 P17  agrupar_interrupciones_subordinados_reuniones_regulares 479  BLOQUEARIA 6    6     SI
+10  alentar_asuntos_corazon_vigilar_final_reunion            cap_05 P18  -                                                  479  BLOQUEARIA 7    7     SI
+11  conducir_reunion_individual_telefono_distancia           cap_05 P19  tomar_notas_copia_guion_reunion_individual         479  BLOQUEARIA 6    6     SI
+12  programar_reunion_individual_cadena                      cap_05 P20  -                                                  479  BLOQUEARIA 7    7     SI
+13  conducir_etapas_modelo_ideal_decision                    cap_06 P7   -                                                  479  ENTRARIA   0    0     SI
+14  ejercer_poder_posicion_etapa_decision_clara              cap_06 P23  conducir_etapas_modelo_ideal_decision              479  BLOQUEARIA 2    2     SI
+15  vencer_sindrome_grupo_pares_autoconfianza                cap_06 P17  -                                                  479  BLOQUEARIA 13   13    SI
+16  tomar_mando_reunion_pares_presidente_ausente             cap_06 P18  -                                                  479  BLOQUEARIA 4    4     SI
+17  cortar_discusion_libre_momento_justo                     cap_06 P24  conducir_etapas_modelo_ideal_decision              479  BLOQUEARIA 6    6     SI
+18  zanjar_seis_preguntas_decision_adelantado                cap_06 P25  -                                                  479  BLOQUEARIA 2    2     SI
+19  anunciar_decision_inesperada_reconvocar_reunion          cap_06 P31  -                                                  479  BLOQUEARIA 9    9     SI
+20  decidir_nivel_competente_inferior                        cap_06 P9   -                                                  479  BLOQUEARIA 3    3     SI   <- corte del tope
+
+COMPROBACIONES
+  hijo delante de su madre: 0 []
+  D.36, par que levanta en un solo sentido con el que lo levanta entrando antes: 0 []
+  hijo dentro del tope con su madre fuera: 0 []
+  tanda propuesta: 20 de 20; fuera del tope: 
+
+ARISTAS ESPERADAS EN LA 70
+  CONTINUA   preparar_guion_reunion_individual_subordinado            > tomar_notas_copia_guion_reunion_individual
+  CONTINUA   tomar_notas_copia_guion_reunion_individual               > conducir_reunion_individual_telefono_distancia
+  LECTURA    agrupar_tareas_semejantes_aprovechar_preparacion         > infundir_regularidad_reunion_proceso
+  LECTURA    buscar_regularidad_bloques_iguales_trabajo_mando         > infundir_regularidad_reunion_proceso
+  LECTURA    agrupar_interrupciones_subordinados_reuniones_regulares  > acumular_asuntos_importantes_fichero_espera
+  LECTURA    conducir_etapas_modelo_ideal_decision                    > cortar_discusion_libre_momento_justo
+  LECTURA    conducir_etapas_modelo_ideal_decision                    > ejercer_poder_posicion_etapa_decision_clara
+  CONTINUA con madre= (aristas distintas): 2 | SOSTENGO por lectura: 5 | solapes entre las dos: 0 | aristas esperadas en la 70: 7

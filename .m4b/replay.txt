@@ -1,0 +1,4 @@
+REPLAY CON 1 DISCREPANCIA(S) en la linea 'marquet_turn_the_ship':
+  linea 14 del registro, CIFRA PUBLICADA en ACTA M4: declara 1, el replay da 2 (ACTA M4, seccion M4.10)
+
+LO DIGO Y NO LO ARREGLO: una adjudicacion posterior puede cambiar una tanda ya cerrada, y eso es legitimo. Lo que no es legitimo es que no se vea.

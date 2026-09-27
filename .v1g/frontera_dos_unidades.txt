@@ -1,0 +1,76 @@
+==============================================================================
+1. LA COMPROBACION DE cap_01, ANTES DE SU TABLA
+==============================================================================
+fichero                                : fuentes/grove_high_output/cap_01.md
+la cabecera acaba en la linea          : 7   (segundo '---', no tecleado)
+tramos de mi lectura                   : 14
+lineas con contenido tras la cabecera  : 56
+lineas NO cubiertas                    : 0  []
+SOLAPES                                : 0  []
+suma de las filas                      : 3841 palabras
+cuerpo medido aparte                   : 3841 palabras
+fichero entero, para cruzar con wc -w  : 3864 palabras
+IGUALES                                : True
+NODOS QUE MI FRONTERA DA EN ESTA UNIDAD: 1
+
+==============================================================================
+2. LA TABLA DE cap_01, IMPRESA Y NO TECLEADA
+==============================================================================
+| tramo de cap_01 | palabras | nodos | que es, y por que | la salida, pegada |
+|---|---:|---:|---|---|
+| `L9 a L11` | 6 | **0** | P1  los rotulos: el titulo y la seccion I | `9:Introduction` |
+| `L13 a L17` | 124 | **0** | P2  el libro de 1983 y los dos sucesos que obligan una introduccion nueva | `13:I wrote this book in 1983. It was the result of twenty years of ` |
+| `L19 a L25` | 357 | **0** | P3  el ataque japones de las DRAM y la salida de Intel de ese negocio: CASO historico | `19:By the mid-eighties, the Japanese producers of Dynamic Random Ac` |
+| `L27 a L35` | 248 | **0** | P4  la globalizacion y su consecuencia sobre cada empleado: POSTURA | `27:Globalization simply means that business knows no national bound` |
+| `L37 a L49` | 484 | **0** | P5  el correo electronico y el fin de los escondites: POSTURA con su caso del correo postal | `37:Just as the Japanese DRAM attack was the first wave of a much gr` |
+| `L51 a L59` | 497 | **0** | P6  a quien va dirigido el libro: el mando intermedio y el gestor de conocimiento, DEFINICION | `51:II. Operating in the new environment` |
+| `L61 a L67` | 369 | **0** | P7  las reglas del entorno nuevo, la tolerancia al desorden y el micro CEO: POSTURA, y el lema es lema | `61:All managers in such companies need to adapt to the new environm` |
+| `L69 a L75` | 463 | **0** | P8  las tres ideas del libro: MAPA del propio libro, cada una desarrollada en su capitulo | `69:This book contains three basic ideas. The first is an output-ori` |
+| `L77 a L79` | 127 | **0** | P9  planear como planea un cuerpo de bomberos y menos niveles de mando: POSTURA | `77:We must recognize that no amount of formal planning can anticipa` |
+| `L81 a L85` | 353 | **0** | P10 el 1:1 con mas reportados, menos veces y mas corto: su procedimiento vive en su capitulo, extraerlo aqui fabrica el gemelo de su donante | `81:With fewer levels in today's organization, each manager will hav` |
+| `L87 a L99` | 424 | **0** | P11 gestionar tu carrera: eres un negocio de un solo empleado, POSTURA | `87:III. Managing your own career` |
+| `L101 a L107` | 193 | **1** | P12 LAS TRES PREGUNTAS PARA EXAMINARTE: el libro pone su propio inventario y lo nombra uno a uno | `101:I can offer you no surefire formula. But here are a few question` |
+| `L109 a L115` | 191 | **0** | P13 el cierre y el paso al capitulo 1 | `109:I am an engineer by training and a manager of a high-technology ` |
+| `L117 a L119` | 5 | **0** | P14 la firma y la fecha | `117:Andrew S. Grove` |
+| | **3841** | **1** | **el cuerpo entero de cap_01, cero lineas sin cubrir y cero solapes** | |
+
+==============================================================================
+1. LA COMPROBACION DE cap_02, ANTES DE SU TABLA
+==============================================================================
+fichero                                : fuentes/grove_high_output/cap_02.md
+la cabecera acaba en la linea          : 7   (segundo '---', no tecleado)
+tramos de mi lectura                   : 12
+lineas con contenido tras la cabecera  : 36
+lineas NO cubiertas                    : 0  []
+SOLAPES                                : 0  []
+suma de las filas                      : 3386 palabras
+cuerpo medido aparte                   : 3386 palabras
+fichero entero, para cruzar con wc -w  : 3427 palabras
+IGUALES                                : True
+NODOS QUE MI FRONTERA DA EN ESTA UNIDAD: 7
+
+==============================================================================
+2. LA TABLA DE cap_02, IMPRESA Y NO TECLEADA
+==============================================================================
+| tramo de cap_02 | palabras | nodos | que es, y por que | la salida, pegada |
+|---|---:|---:|---|---|
+| `L9 a L13` | 19 | **0** | P1  rotulo, titulo y subtitulo | `9:1` |
+| `L15 a L27` | 602 | **1** | P2  el huevo de tres minutos: los requisitos, el PASO LIMITANTE y el escalonado | `15:The Three-Minute Egg` |
+| `L29 a L29` | 7 | **0** | P3  pie de figura | `29:Making the eggs is the limiting step.` |
+| `L31 a L35` | 259 | **0** | P4  el reclutamiento universitario: CASO del mismo principio, manual 3.5 | `31:The idea of a limiting step has very broad applicability. Take, ` |
+| `L37 a L47` | 582 | **1** | P5  proceso, montaje y prueba: los tres tipos nombrados uno a uno, con sus dos casos | `37:Production Operations` |
+| `L49 a L55` | 231 | **1** | P6  la cola del tostador: la capacidad limitada cambia cual es el paso limitante | `49:A Few Complications` |
+| `L57 a L61` | 365 | **1** | P7  los intercambios entre equipo, personal e inventario contra el plazo | `57:Now let's complicate things a little further. What happens if yo` |
+| `L63 a L65` | 168 | **0** | P8  la fabrica de desayunos continua: CASO mas un intercambio, y el paso que falta seria puente | `63:Let's take our manufacturing example a step further and turn our` |
+| `L67 a L67` | 202 | **1** | P9  prueba funcional contra inspeccion en proceso | `67:But continuous operation does not automatically mean lower cost ` |
+| `L69 a L69` | 237 | **1** | P10 inspeccion de recepcion, inventario de materia prima y oportunidad en riesgo | `69:What else could go wrong with our continuous egg-machine? The eg` |
+| `L71 a L75` | 263 | **1** | P11 el valor que se anade y arreglar en la etapa de menor valor | `71:Adding Value` |
+| `L77 a L79` | 451 | **0** | P12 la justicia penal como proceso de produccion: CASO, y sus cifras sin fecha de corte en el recorte | `77:Finally, at the risk of being considered hard-hearted, let's exa` |
+| | **3386** | **7** | **el cuerpo entero de cap_02, cero lineas sin cubrir y cero solapes** | |
+
+==============================================================================
+3. EL TECHO, CONTRASTADO Y NO DECIDIDO AQUI
+==============================================================================
+NODOS QUE MI FRONTERA DA EN LAS DOS UNIDADES : 8
+TECHO DE CANDIDATOS POR VUELTA (EXTRACTOR.md 12.4): entre 5 y 15
+DENTRO DEL TECHO                             : SI

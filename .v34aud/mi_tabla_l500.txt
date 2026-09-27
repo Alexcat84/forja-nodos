@@ -1,0 +1,21 @@
+$ git show 6315b30:docs/loop/APERTURA_CIEGA.md | sed -n '490,506p'
+      clase CONTINUA       2
+      clase CORREGIDO      1
+      clase SANO          11
+      lineas nuevas SIN razon escrita (D.8): 0 de 14
+
+**`D.8` EN VERDE: `0` de `14` sin razon escrita.** *Un `SANO` sin razon escrita es una caida
+aunque acierte*, y no hace falta releerlo para verlo: se ve en la bitacora. No hay ninguno.
+
+**MI TABLA, PEGADA DE `.v33a/mis_clases.txt` SIN TOCARLA, Y LA SUYA AL LADO:**
+
+| # | candidato | vecino | **MI CLASE, a ciegas** | la de la vuelta |
+|---:|---|---|---|---|
+| 2 | `evitar_presion_social_actos_equipo` | `contar_cuatro_historias_propias` (BANDEJA) | **SANO** | SANO |
+| 3 | `evitar_presion_social_actos_equipo` | `proteger_tiempo_equipo_jefe` | **SANO** | SANO |
+| 4 | `evitar_presion_social_actos_equipo` | `crear_obligacion_disentir_equipo` | **SANO** | SANO |
+| 5 | `evitar_presion_social_actos_equipo` | `dominar_arte_socializar_trabajo` | **CONTINUA** | CONTINUA |
+| 6 | `construir_confianza_equipo_tiempo_solas` | `decidir_quien_comunica_cada_cuanto` | **SANO** | SANO |
+
+$ git show 6315b30:docs/loop/APERTURA_CIEGA.md | wc -l
+788

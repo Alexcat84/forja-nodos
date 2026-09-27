@@ -1,0 +1,4 @@
+    $ python scripts/deuda.py | head -3
+    DEUDA DE LA LINEA (D.55): la deuda no bloquea la produccion
+      registro: docs/loop/DEUDA.jsonl
+      pendientes: 14    pagadas: 10

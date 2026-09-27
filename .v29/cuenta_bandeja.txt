@@ -1,0 +1,22 @@
+=== candidatos y vecinos, contados por comando ===
+candidatos con salida: 12
+vecinos por encima de umbral: 77
+--- los dos ultimos ---
+CANDIDATO : reservar_calendario_tiempo_ejecutar   (4 pasos)
+VECINOS QUE SUPERAN UMBRAL : 7   sobre una poblacion de 347
+   - bloquear_tiempo_pensar_calendario                    BANDEJA  [familia_id=0.333]
+   - proteger_tiempo_equipo_jefe                          BANDEJA  [similitud_texto=0.409]
+   - cambiar_posicion_hechos_explicar_cambio              GRAFO    [similitud_texto=0.376]
+   - mantener_manos_trabajo_real_equipo                   BANDEJA  [similitud_texto=0.373]
+   - parar_debate_emocion_agotamiento                     BANDEJA  [similitud_texto=0.404]
+   - reservar_tiempo_reflexion_metas                      GRAFO    [familia_id=0.333]
+   - crear_obligacion_disentir_equipo                     GRAFO    [similitud_texto=0.388]
+======================================================================================
+CANDIDATO : cuidarse_agotamiento_centro_rueda   (7 pasos)
+VECINOS QUE SUPERAN UMBRAL : 5   sobre una poblacion de 347
+   - cambiar_posicion_hechos_explicar_cambio              GRAFO    [similitud_texto=0.402]
+   - abrir_debate_humor_explicar_proposito                GRAFO    [similitud_texto=0.353]
+   - reconocer_emociones_propias_avisar_equipo            BANDEJA  [similitud_texto=0.353]
+   - minimizar_impuesto_colaboracion_equipo               BANDEJA  [similitud_texto=0.376]
+   - mantener_manos_trabajo_real_equipo                   BANDEJA  [similitud_texto=0.379]
+======================================================================================

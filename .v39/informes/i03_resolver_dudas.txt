@@ -1,0 +1,38 @@
+$ python forja.py insertar cuarentena/scott_radical_candor/resolver_dudas_frecuentes_pedir_critica.json [veredictos y censos]
+ADUANA DE INSERCION, candidato 'resolver_dudas_frecuentes_pedir_critica'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (323 del grafo mas 25 que esperan en bandejas)
+
+DECLARADOS POR LECTURA: 2. Ninguna señal los levanto.
+  elegir_pregunta_recurrente_pedir_critica  [Elegir tus preguntas recurrentes para pedir critica, con los cuatro atributos que el texto da y la prueba de campo con un companiero de confianza]
+    señales: familia_id 0.25, paso_contra_nodo 0.446, similitud_texto 0.277
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  pedir_critica_primero_crear_seguridad_psicologica  [Pedir critica tu antes que nada, que es el primer paso del orden de operaciones, porque es lo que mas deprisa crea la seguridad psicologica del equipo]
+    señales: familia_id 0.222, paso_contra_nodo 0.416, similitud_texto 0.157
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  LA JERARQUIA LA CAZA LA LECTURA, NO LA SEÑAL (D.19, D.29).
+
+VECINOS POR ENCIMA DE UMBRAL: 2. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino despedir_persona_franqueza_radical  [Despedir con franqueza radical, sin distanciarte de la persona y con el trabajo siguiente imaginado antes de la reunion]
+    levantada por: paso_contra_nodo
+    similitud_texto    0.173 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.621 (umbral 0.60)
+    paso 5 del candidato contra paso 8 de despedir_persona_franqueza_radical
+
+  vecino resolver_dudas_frecuentes_reuniones_salto_nivel  [Resolver las cuatro dudas mas frecuentes de una reunion de salto de nivel: el equipo que ya no cree en su jefe, los que no hablan, los que no callan y el equilibrio]
+    levantada por: familia_id
+    similitud_texto    0.238 (umbral 0.35)
+    familia_id         0.375 (umbral 0.30)
+    paso_contra_nodo   0.467 (umbral 0.60)
+    paso 4 del candidato contra paso 9 de resolver_dudas_frecuentes_reuniones_salto_nivel
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 324
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 4
+CODIGO DE SALIDA: 0
+  ARCHIVADO EN EL MISMO ACTO (D.31): cuarentena/_insertados/scott_radical_candor/resolver_dudas_frecuentes_pedir_critica.json

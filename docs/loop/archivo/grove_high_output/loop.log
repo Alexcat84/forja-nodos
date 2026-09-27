@@ -1,0 +1,66 @@
+# REGISTRO HEREDADO DE grove_high_output, cosechada el 18 sep 2026
+# ------------------------------------------------------------
+[2026-09-16 20:49:47] DETENIDO ANTES DE ARRANCAR: MODO_INSERCION=insertar en la rama "extraccion-grove_high_output",
+[2026-09-16 20:49:47]   y la rama de insercion es "extraccion-mundo-11" (D.45).
+[2026-09-16 20:49:47]   LA INSERCION ES SERIAL Y UNICA. Un frente de extraccion corre asi:
+[2026-09-16 20:49:47]       MODO_INSERCION=cuarentena RAMA=extraccion-grove_high_output bash orquestador_forja.sh
+[2026-09-16 20:49:47]   Si de verdad quieres insertar, hazlo en la rama de insercion, o declara
+[2026-09-16 20:49:47]   otra con RAMA_DE_INSERCION=<rama>.
+[2026-09-16 20:53:51] arranque: rama extraccion-grove_high_output, MODO_INSERCION=cuarentena
+[2026-09-16 20:53:52] ROL INICIAL POR MEDICION: AUDITOR. El REPORTE es mas nuevo que el ACTA, asi que la vuelta anterior quedo SIN AUDITAR.
+[2026-09-16 20:53:52]   y los testigos del arnes lo confirman: el ultimo turno NO fue el del auditor
+[2026-09-16 20:53:52]   ultimo commit de REPORTE.md      : 2026-09-16 20:23:56 (1789604636)
+[2026-09-16 20:53:52]   ultimo commit de ACTA_AUDITOR.md : 2026-09-16 19:33:58 (1789601638)
+[2026-09-16 20:53:52] VUELTA 1 : SE SALTA EL TURNO DEL EXTRACTOR, la corrida empieza por el AUDITOR
+[2026-09-16 20:53:52] VUELTA 1 : APERTURA CIEGA (claude-opus-5), retirados: REPORTE.md loop.log ultimo_extractor.json ultimo_auditor.json
+[2026-09-16 20:53:52]   hereda 4 remedio(s) del acta anterior, entregados en el prompt (D.40)
+[2026-09-16 21:16:34] auditor ciego listo (USD 11.674637999999996), 1361s, intento 1 de 7
+[2026-09-16 21:16:34]   herencia declarada: acta leida por su huella y los 4 heredados resueltos
+[2026-09-16 21:16:35] APERTURA CIEGA ROTA en la vuelta 1: REAPARECIERON REPORTE.md loop.log ultimo_extractor.json ultimo_auditor.json
+[2026-09-16 21:16:35]   durante la fase ciega. Solo se recuperan a mano, asi que fue deliberado.
+[2026-09-16 21:16:35]   testigo de guardas, antes de sellar (D.38.3)
+[2026-09-16 21:16:39]   testigo: las guardas estaban en verde en el instante del sello
+[2026-09-16 21:16:39]   apertura ciega sellada: b02c03844aaf54dc029fa9f946e4a9c60d9b16ba
+  nodos verificados: 270
+tablas que declaran instrumento : 130
+  talladas, celda a celda       : 69
+  que CITAN y no reproducen     : 61   (declaradas PARCIAL)
+      linea 35416 de docs/loop/REPORTE.md
+      linea 35631 de docs/loop/REPORTE.md
+      linea 35747 de docs/loop/REPORTE.md
+TALLADO VERDE: las 69 tabla(s) comprobables son las de su instrumento, celda a celda.
+rutas publicadas y censadas : 524
+  pasan                     : 524
+      PATRON                           35
+      con contenido                    485
+CENSO VERDE: las 524 rutas publicadas sostienen lo que dicen sostener.
+[2026-09-16 21:16:45] VUELTA 1 : AUDITOR (claude-opus-5)
+[2026-09-16 22:21:14] auditor listo (USD 13.962244999999998), 3869s, intento 1 de 7
+[2026-09-16 22:21:14]   sello de la apertura ciega verificado: intacto tras el turno
+[2026-09-16 22:21:15] DETENIDO en la vuelta 2: existe docs/loop/PARA_ALEXIS.md. Leelo.
+[2026-09-16 22:21:15] Arnes terminado. Revisa docs/loop/PARA_ALEXIS.md si existe, y docs/loop/ACTA_AUDITOR.md.
+[2026-09-16 22:26:58] extractor: fallo instantaneo (probable limite de uso), 5505s, costo "vacio", intento 1 de 7
+[2026-09-16 22:26:58] fallo "instantaneo"; espero 1800 segundos y reintento
+[2026-09-17 05:41:20] extractor listo (USD 32.7246445), 24262s, intento 2 de 7
+[2026-09-17 05:41:21] VUELTA 1 : APERTURA CIEGA (claude-opus-5), retirados: REPORTE.md loop.log ultimo_extractor.json ultimo_auditor.json
+[2026-09-17 05:41:21]   hereda 4 remedio(s) del acta anterior, entregados en el prompt (D.40)
+[2026-09-17 06:04:50] auditor ciego listo (USD 10.294603999999998), 1409s, intento 1 de 7
+[2026-09-17 06:04:50]   herencia declarada: acta leida por su huella y los 4 heredados resueltos
+[2026-09-17 06:04:50]   testigo de guardas, antes de sellar (D.38.3)
+[2026-09-17 06:04:54]   testigo: las guardas estaban en verde en el instante del sello
+[2026-09-17 06:04:54]   apertura ciega sellada: 05a26b091729c85e72f6475ef443763badba38ff
+  nodos verificados: 270
+tablas que declaran instrumento : 155
+  talladas, celda a celda       : 94
+  que CITAN y no reproducen     : 61   (declaradas PARCIAL)
+      linea 35416 de docs/loop/REPORTE.md
+      linea 35631 de docs/loop/REPORTE.md
+      linea 35747 de docs/loop/REPORTE.md
+TALLADO VERDE: las 94 tabla(s) comprobables son las de su instrumento, celda a celda.
+rutas publicadas y censadas : 534
+  pasan                     : 534
+      PATRON                           41
+      con contenido                    486
+      vacia por protocolo              4
+CENSO VERDE: las 534 rutas publicadas sostienen lo que dicen sostener.
+[2026-09-17 06:04:58] VUELTA 1 : AUDITOR (claude-opus-5)

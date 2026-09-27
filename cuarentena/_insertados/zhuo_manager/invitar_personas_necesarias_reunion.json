@@ -1,0 +1,38 @@
+{
+  "id": "invitar_personas_necesarias_reunion",
+  "titulo": "Invitar a la reunion a todos los necesarios y a nadie de sobra",
+  "denominaciones": {
+    "nombre_largo": "La pregunta que decide la lista de invitados, el fallo de invitar de mas y el de invitar de menos, y que hacer cuando la lista se ha hinchado",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "invite the right people"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Al armar la lista de invitados de cualquier reunion, y otra vez cuando una reunion periodica lleva tiempo creciendo de asistentes.",
+  "entregable_esperado": "Una lista de invitados en la que esta todo el que hace falta para que el resultado excelente ocurra, y nadie mas.",
+  "pasos_accionables": [
+    "Vuelve a tu respuesta de a que se parece un resultado excelente para esta reunion, y preguntate: que personas son necesarias para que ese resultado ocurra? Esa es la pregunta con la que el libro decide la lista.",
+    "Vigila el primer fallo, invitar de mas. Todos hemos estado en salas con energia apagada porque hay demasiada gente apretada alrededor de la mesa, mucha de ella distraida y mirando el movil.",
+    "Vigila el segundo fallo, invitar de menos, que el libro dice que sale igual de caro. Si la decision va a tener un impacto grande en otro equipo, por ejemplo una decision de producto sobre que funciones construir, que afecta tambien a sus perspectivas de venta, tiene que haber representantes de ese equipo presentes: sin todos los afectados en la sala no se puede tomar una decision justa, asi que o la decision se retrasa o se arriesga a que la reescalen y la vuelvan a debatir.",
+    "Cuenta con que gente razonable pueda discrepar sobre quien tiene que estar. La autora cuenta el caso de su reunion de revision de diseno, a la que estaban invitados todos los disenadores: segun contrataban a mas gente, el numero de asistentes crecio hasta que la reunion parecia un aula, con solo un punado de personas presentando en cada sesion y todos los demas mirando y escuchando.",
+    "Escucha los argumentos a favor de la lista larga antes de cortarla, porque en ese caso eran buenos: que la reunion ensenaba a los disenadores nuevos que clase de opinion esperar, y que era una reunion muy visible, con mucha exposicion a los lideres, y estar en esa sala daba a la gente la sensacion de ser miembros valiosos del equipo.",
+    "Vuelve entonces a la meta primaria de la reunion y mide contra ella, que es lo que el libro hace para desempatar: la meta era que ella y otros directivos pudieran dar opinion util sobre proyectos a mitad de vuelo, y tener tantos observadores lo hacia mas dificil, porque el ambiente se volvia formal y de mucha presion, los que presentaban empezaban a gastar demasiado tiempo retocando los detalles de sus presentaciones, y la que revisaba sentia que tenia que elegir sus palabras con cuidado delante de tanta gente y no podia ser tan informal y directa como habria querido.",
+    "Si la meta primaria pierde, encoge la lista de asistentes.",
+    "Busca entonces otras vias para los beneficios que pierdes al encogerla. Ellos resolvieron buscar otras maneras de invertir en la formacion en diseno y en construir relaciones, y el libro nombra dentro de esas maneras, sin cerrar la lista, compartir un resumen detallado de las notas de la reunion y organizar mas sesiones de preguntas y respuestas con los lideres."
+  ],
+  "resumen_teorico": "La doctrina es que la lista de invitados no se hereda ni se negocia por prestigio, sino que se deduce del resultado excelente: quien hace falta para que ocurra. Los dos fallos son simetricos y el libro insiste en que el de invitar de menos cuesta tanto como el de invitar de mas. El caso de la revision de diseno va DENTRO y no a nodo propio (manual seccion 3.5), y es ademas lo que hace procedimentable la segunda mitad: sin el, los pasos de escuchar los argumentos, medir contra la meta primaria y buscar vias alternativas para lo que se pierde no estarian escritos en ninguna parte del capitulo. Lo que el libro NO dice, y por eso no esta escrito aqui, es quien tiene la ultima palabra sobre la lista cuando los directivos no se ponen de acuerdo, ni como se avisa a quien se deja fuera."
+}

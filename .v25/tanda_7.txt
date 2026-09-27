@@ -1,0 +1,5 @@
+OK   cola   acompaniar_mejores_equipo_socio                              7 veredictos   76.8s
+
+intentados en esta corrida : 1
+INSERTADOS                 : 1
+en cola de lectura         : 0

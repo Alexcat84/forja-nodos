@@ -1,0 +1,8 @@
+contar_fidelidad.py: IDENTICO a .v76ext/contar_fidelidad.txt
+r9.py: IDENTICO a .v76ext/r9.txt
+citas.sh: IDENTICO a .v76ext/citas_fidelidad.txt
+comprobar_veredictos.py: IDENTICO a .v76ext/comprobar_veredictos.txt
+orden.py: IDENTICO a .v76ext/orden.txt
+tabla_vecinos.py: IDENTICO a .v76ext/tablas_vecinos.md
+censo.sh: IDENTICO a .v76ext/censo_cierre.txt
+validar.py con las 22 de .v76aud/las22.txt: IDENTICO a .v76ext/validar.txt

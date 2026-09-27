@@ -1,0 +1,14 @@
+las 22 por sede hoy: {'grafo y _insertados': 22} | suma: 22
+nodos del grafo contra su ficha, cinco campos: {'igual': 22} | suma: 22
+nodos con descuadre entre sus pasos en el grafo y mis filas selladas: 0 []
+cap_04 lo que ENTRO: candidatos 1 | pasos 7 | mis marcas: {'T': 7, 'P': 0, 'D': 0} | suma: 7 | PUENTE 0 de 7 = 0.00 por ciento
+cap_07 lo que ENTRO: candidatos 1 | pasos 8 | mis marcas: {'T': 8, 'P': 0, 'D': 0} | suma: 8 | PUENTE 0 de 8 = 0.00 por ciento
+cap_08 lo que ENTRO: candidatos 2 | pasos 17 | mis marcas: {'T': 17, 'P': 0, 'D': 0} | suma: 17 | PUENTE 0 de 17 = 0.00 por ciento
+cap_11 lo que ENTRO: candidatos 6 | pasos 57 | mis marcas: {'T': 57, 'P': 0, 'D': 0} | suma: 57 | PUENTE 0 de 57 = 0.00 por ciento
+cap_12 lo que ENTRO: candidatos 3 | pasos 12 | mis marcas: {'T': 11, 'P': 0, 'D': 1} | suma: 12 | PUENTE 0 de 12 = 0.00 por ciento
+cap_13 lo que ENTRO: candidatos 1 | pasos 10 | mis marcas: {'T': 10, 'P': 0, 'D': 0} | suma: 10 | PUENTE 0 de 10 = 0.00 por ciento
+cap_14 lo que ENTRO: candidatos 1 | pasos 9 | mis marcas: {'T': 9, 'P': 0, 'D': 0} | suma: 9 | PUENTE 0 de 9 = 0.00 por ciento
+cap_15 lo que ENTRO: candidatos 1 | pasos 5 | mis marcas: {'T': 5, 'P': 0, 'D': 0} | suma: 5 | PUENTE 0 de 5 = 0.00 por ciento
+cap_18 lo que ENTRO: candidatos 3 | pasos 26 | mis marcas: {'T': 26, 'P': 0, 'D': 0} | suma: 26 | PUENTE 0 de 26 = 0.00 por ciento
+cap_19 lo que ENTRO: candidatos 3 | pasos 25 | mis marcas: {'T': 25, 'P': 0, 'D': 0} | suma: 25 | PUENTE 0 de 25 = 0.00 por ciento
+los diez: candidatos 22 | pasos 176 | mis marcas: {'T': 175, 'P': 0, 'D': 1} | suma: 176 | PUENTE 0 de 176 | con la D adjudicada T (ACTA 75 75.3): T 176, P 0, suma 176

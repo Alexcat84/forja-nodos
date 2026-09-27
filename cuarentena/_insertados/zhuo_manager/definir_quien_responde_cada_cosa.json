@@ -1,0 +1,39 @@
+{
+  "id": "definir_quien_responde_cada_cosa",
+  "titulo": "Definir quien responde de cada cosa antes de que la conversacion termine",
+  "denominaciones": {
+    "nombre_largo": "La sesion de ideas que no produce nada, el caso de los dos talentos que discutieron en circulos, y las formas de aclarar la expectativa por delante",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "define who is responsible for what, ownership"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Al final de cualquier conversacion de la que tenga que salir trabajo, y tambien cada vez que escribes a mas de una persona sobre un asunto que pide seguimiento.",
+  "entregable_esperado": "Cada cosa con un responsable nombrado en voz alta, y, cuando dos personas trabajan juntas, dicho quien tiene la autoridad de decidir.",
+  "pasos_accionables": [
+    "Reconoce la escena en la que no va a pasar nada. El libro la describe: cinco personas generando ideas, alguien propone permitir deslizar entre secciones, otro pregunta si la gente lo descubriria, un tercero dice hagamos investigacion para entenderlo, un cuarto anade que se puede hablar con quien intento algo parecido hace un anio, y la conversacion sigue y sigue.",
+    "Cuenta con lo que va a pasar ahi, que es nada: se hablo de investigar y de hablar con alguien, pero no se creo ninguna tarea porque nadie se apunto explicitamente a hacerla.",
+    "Entiende la regla general: cuando la responsabilidad no esta clara, las cosas se cuelan por las grietas.",
+    "Aplicalo tambien fuera de las reuniones: cada vez que escribes a mas de una persona sobre un asunto que necesita seguimiento, quienes lo reciben pueden quedar confundidos sobre de quien esperas que haga que, y cada uno puede suponer que el responsable es otro.",
+    "No confies en las buenas intenciones. La autora sento a dos de las personas mas talentosas de su equipo, les conto un problema nuevo y dificil y les pidio que trabajaran juntos para dar con una solucion, pensando que sus fuerzas se complementarian bien.",
+    "Cuenta con como fallo eso, que es la parte util del caso: tenian opiniones muy distintas sobre que hacer, y como ella no definio ni como queria que trabajaran juntos ni quien tenia en ultima instancia la autoridad de decidir, discutieron en circulos intentando convencerse uno al otro, y el avance se paro en seco.",
+    "Quedate con la leccion que ella saca: cuanto mas claro seas sobre a quien haces responsable de que, menos espacio hay para la ambiguedad y para los cables cruzados.",
+    "Aclara la expectativa por delante en una de las dos formas que el libro escribe. La primera, repartiendo por partes: me gustaria que tu llevaras la delantera en enmarcar las opciones, y que tu te hicieras cargo de definir el lenguaje visual.",
+    "La segunda, repartiendo y reservandote la decision: que cada uno de vosotros haga su intento de como lo disenaria, y en las areas donde tengais opiniones distintas nos juntamos los tres y yo decido."
+  ],
+  "resumen_teorico": "Es la tercera cosa a tener en cuenta al planificar y la que produce el fallo mas barato de arreglar y mas caro de no ver: el trabajo que nadie recoge. Lo que la hace procedimentable son las dos frases literales del final, que son el acto concreto de aclarar, y la distincion entre ellas: una reparte piezas, la otra reparte el intento y reserva la decision. Sin esas dos frases el nodo pediria definir la responsabilidad, que es un adjetivo de adecuacion. Los dos casos van dentro (manual seccion 3.5) porque son el sintoma observable, la conversacion que no produce tarea y la pareja que discute en circulos. Lo que el libro NO dice, y por eso no esta escrito aqui, es donde se apunta el responsable, ni que se hace cuando nadie quiere serlo.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}

@@ -1,0 +1,33 @@
+UNIDADES DEL LIBRO LEIDAS: 15
+CANDIDATOS CON LA FORMULA DEL ANCLA UNICA: 24
+acompaniar_mejores_equipo_socio                        cap_06  absentee manager               cap_06                 grafo    
+ajustar_franqueza_oido_oyente                          cap_04  politely persistent            cap_04                 grafo    
+cambiar_potencial_trayectoria_crecimiento              cap_06  performance-potential matrix   cap_06                 grafo    
+criticar_trabajo_evitar_desanimo                       cap_05  perilous border                cap_05                 grafo    
+cuidar_persona_completa_equipo                         cap_04  sordid details                 cap_04                 grafo    
+dar_critica_inmediata_ayuda_tangible                   cap_05  sandwich                       cap_05                 grafo    
+delimitar_franqueza_radical_cinco_noes                 cap_04  front-stab                     cap_04,cap_05          grafo    <<< NO CUADRA
+descubrir_motivacion_sentido_persona                   cap_06  three bricklayers              cap_06                 grafo    
+desplegar_marco_franqueza_radical                      cap_01  make photocopies               cap_01                 grafo    
+elogiar_trabajo_especifico_contexto                    cap_05  who did what                   cap_05                 grafo    
+empezar_cultura_franqueza_radical                      cap_05  start by getting               cap_05                 grafo    
+equilibrar_elogio_critica_equipo                       cap_05  horowitz                       cap_05                 grafo    
+imaginar_caso_simple_bragueta_abierta                  cap_05  fly is down                    cap_05                 grafo    
+manejar_enfado_persona_desafiada                       cap_04  insulting                      cap_04                 grafo    
+pedir_critica_equipo_premiarla                         cap_05  red square                     cap_05                 grafo    
+repartir_semana_cuarenta_horas_jefe                    cap_03  ten hours a week               cap_03,cap_12          grafo    <<< NO CUADRA
+revisar_ciclo_responsabilidades_relaciones             cap_04  dream of individually          cap_04                 grafo    
+decidir_momento_despedir_persona                       cap_06  time to fire somebody          cap_06                 bandeja  
+despedir_persona_franqueza_radical                     cap_06  person you are firing          cap_10                 bandeja  <<< NO CUADRA
+reconocer_recompensar_gente_estable                    cap_06  level of incompetence          NINGUNA                bandeja  <<< NO CUADRA
+retar_superestrellas_equipo_constantemente             cap_06  intellectual partnership       cap_06                 bandeja  
+retirar_etiquetas_permanentes_equipo                   cap_06  permanent marker               cap_06                 bandeja  
+revisar_cinco_causas_mal_desempenio                    cap_06  look at yourself in the mirror cap_06                 bandeja  
+subir_vara_calidad_equipo                              cap_06  b-player                       cap_06                 bandeja  
+
+cuadran                          : 20
+NO cuadran                       : 4
+  con la declarada entre las que la contienen: 2
+  con la declarada SIN su propia ancla       : 2
+  ya dentro del grafo                        : 2
+  todavia en la bandeja                      : 2

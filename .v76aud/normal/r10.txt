@@ -1,0 +1,7 @@
+$ python scripts/deuda.py --clase 77 | diff --strip-trailing-cr - <(sed -n "17,18p" docs/loop/PROMPT_SIGUIENTE.md | sed "s/^    //") && echo "clase: IDENTICA a la pegada en el encargo de la 77"
+clase: IDENTICA a la pegada en el encargo de la 77
+$ python forja.py tablero --puedo gerber_emyth | diff --strip-trailing-cr - <(sed -n "20,21p" docs/loop/PROMPT_SIGUIENTE.md | sed "s/^    //") && echo "tablero --puedo: IDENTICO al pegado en el encargo de la 77"
+tablero --puedo: IDENTICO al pegado en el encargo de la 77
+2026-09-26 09:10:41 docs/loop/CREDITO_serial.jsonl
+2026-09-26 04:28:05 docs/loop/DEUDA.jsonl
+2026-09-26 09:16:28 docs/loop/PROMPT_SIGUIENTE.md

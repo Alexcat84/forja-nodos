@@ -1,0 +1,98 @@
+{
+ "id": "alentar_asuntos_corazon_vigilar_final_reunion",
+ "grafo": 390,
+ "bandejas": 89,
+ "vecinos": [
+  {
+   "id": "fijar_duracion_lugar_reunion_individual",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.324,
+    "familia_id": 0.1,
+    "paso_contra_nodo": 0.612
+   },
+   "levantada_por": [
+    "paso_contra_nodo"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 3 de fijar_duracion_lugar_reunion_individual"
+  },
+  {
+   "id": "conducir_reunion_individual_telefono_distancia",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.466,
+    "familia_id": 0.1,
+    "paso_contra_nodo": 0.529
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 1 de conducir_reunion_individual_telefono_distancia"
+  },
+  {
+   "id": "programar_reunion_individual_cadena",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.472,
+    "familia_id": 0.111,
+    "paso_contra_nodo": 0.516
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 1 de programar_reunion_individual_cadena"
+  },
+  {
+   "id": "tomar_notas_copia_guion_reunion_individual",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.51,
+    "familia_id": 0.091,
+    "paso_contra_nodo": 0.5
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 5 del candidato contra paso 2 de tomar_notas_copia_guion_reunion_individual"
+  },
+  {
+   "id": "preparar_guion_reunion_individual_subordinado",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.38,
+    "familia_id": 0.1,
+    "paso_contra_nodo": 0.503
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 1 de preparar_guion_reunion_individual_subordinado"
+  },
+  {
+   "id": "acumular_asuntos_importantes_fichero_espera",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.499,
+    "familia_id": 0.1,
+    "paso_contra_nodo": 0.446
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 7 del candidato contra paso 3 de acumular_asuntos_importantes_fichero_espera"
+  },
+  {
+   "id": "facilitar_expresion_subordinado_pregunta_mas",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.432,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.406
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 2 del candidato contra paso 3 de facilitar_expresion_subordinado_pregunta_mas"
+  }
+ ]
+}

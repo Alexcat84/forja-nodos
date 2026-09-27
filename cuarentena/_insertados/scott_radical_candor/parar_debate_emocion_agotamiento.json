@@ -1,0 +1,36 @@
+{
+  "id": "parar_debate_emocion_agotamiento",
+  "titulo": "Parar un debate cuando la gente esta agotada o demasiado cargada de emocion, y aplazarlo en vez de dejar que decida el cansancio",
+  "denominaciones": {
+    "nombre_largo": "Pausa por emocion o por agotamiento: pedir tiempo muerto antes de que la gente decida solo para poder irse a casa",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "pause for emotion/exhaustion"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando en un debate de tu equipo la gente esta demasiado cansada, quemada o cargada de emocion como para discutir de forma productiva.",
+  "entregable_esperado": "El debate aplazado hasta que la gente este en mejor disposicion, sin decision tomada por agotamiento y sin la pelea que habria estallado.",
+  "pasos_accionables": [
+    "Manten la conciencia puesta en estos momentos, porque el texto dice que es crucial y que rara vez llevan a un buen resultado.",
+    "Cuando los detectes, interven y pide tiempo muerto.",
+    "Cuenta con lo que pasa si no lo haces: la gente tomara una decision solo para poder irse a casa, o peor, estallara una pelea enorme salida de la emocion en carne viva.",
+    "Aplaza el debate hasta que la gente este en mejor disposicion de animo.",
+    "Para poder detectarlo, conoce a cada persona de tu equipo lo bastante bien: el texto dice que si lo has hecho, seras suficientemente consciente de las emociones y las energias de cada uno como para saber cuando hace falta intervenir."
+  ],
+  "resumen_teorico": "Sale de fuentes/scott_radical_candor/cap_07.md, lineas 235 a 237, bajo el rotulo Pause for emotion/exhaustion, y es la tercera de las tecnicas que el libro ofrece dentro del paso DEBATE de la rueda de hacer cosas. Es la pieza mas corta del capitulo y lo digo antes que nadie: cinco pasos de un solo parrafo. La dejo como nodo propio porque el libro le da rotulo y porque tiene lo que un procedimiento necesita: un disparador nombrado, un acto (pedir tiempo muerto), una consecuencia escrita de no hacerlo, y una condicion previa que el propio texto pone (conocer a cada uno lo bastante bien). El P5 es el que la ata al resto del libro, porque es la franqueza radical aplicada a esta decision concreta. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 5 pasos, 5 TRANSCRIPCION, 0 PUENTE. Los cinco de la linea 237. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: cuanto se aplaza, quien decide que ya se puede retomar, y como se sabe que la gente ya esta en mejor disposicion.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-12"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "atribuciones": []
+}

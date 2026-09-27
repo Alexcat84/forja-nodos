@@ -1,0 +1,65 @@
+POBLACION (D.38.4): 371   (345 del grafo mas 26 que esperan en bandejas)
+umbrales: texto 0.35, familia_id 0.3
+
+CANDIDATOS DEL TRAMO: 20
+aplicar_consecuencias_nota_apoyar_fuerzas_persona       0 vecino(s)
+cacalibrar_notas_reunion_jefes_pares                      1 vecino(s)
+    GRAFO    mantener_proceso_evaluacion_ligero_vigilar_crecimiento  texto=0.355dadar_elogio_disciplina_igual_critica                     0 vecino(s)
+decidir_poner_nota_comunicar_proposito_limites          3 vecino(s)
+    GRAFO    evaluar_desempenio_dos_veces_anio                       texto=0.364
+    GRAFO    recorrer_trece_elementos_proceso_evaluacion_formal      texto=0.352
+    GRAFO    repartir_notas_publicar_reparto_esperado                texto=0.397
+egir_categorias_nota_palabras_propias_empresa         1 vecino(s)
+    GRAFO    elegir_palabras_nota_definirlas_empresa_entera          familia_id=0.500
+elegir_palabras_nota_definirlas_empresa_entera          3 vecino(s)
+    GRAFO    elegir_categorias_nota_palabras_propias_empresa         familia_id=0.500
+    GRAFO    evaluar_desempenio_dos_veces_anio                       texto=0.376
+    GRAFO    recorrer_trece_elementos_proceso_evaluacion_formal      texto=0.362
+escribir_escaleras_puesto_evitar_dos_extremos           0 vecino(s)
+escuchar_entender_critica_dominar_defensa               3 vecino(s)
+    GRAFO    abrazar_incomodidad_silencio_contar_seis                texto=0.446
+    GRAFO    contar_historias_propias_explicar_franqueza_radical     texto=0.393
+    GRAFO    premiar_franqueza_hacer_escucha_tangible                texto=0.363
+evaluar_desempenio_dos_veces_anio                       7 vecino(s)
+    GRAFO    decidir_poner_nota_comunicar_proposito_limites          texto=0.368
+    GRAFO    elegir_palabras_nota_definirlas_empresa_entera          texto=0.381
+    GRAFO    hacer_critica_pares_transparente_ensenar_escribirla     texto=0.368
+    GRAFO    mantener_proceso_evaluacion_ligero_vigilar_crecimiento  texto=0.369
+    GRAFO    montar_evaluacion_360_grados_ligera_pares               texto=0.404
+    GRAFO    presionar_curva_notas_evitar_forzarla                   texto=0.369
+    GRAFO    repartir_notas_publicar_reparto_esperado                texto=0.354
+fijar_cuatro_notas_calcular_nota_global                 2 vecino(s)
+    GRAFO    evaluar_desempenio_dos_veces_anio                       texto=0.363
+    GRAFO    repartir_notas_publicar_reparto_esperado                texto=0.355
+hacer_critica_pares_transparente_ensenar_escribirla     3 vecino(s)
+    GRAFO    calibrar_notas_reunion_jefes_pares                      texto=0.371
+    GRAFO    decidir_poner_nota_comunicar_proposito_limites          texto=0.371
+    GRAFO    montar_evaluacion_360_grados_ligera_pares               texto=0.383
+integrar_peticion_critica_rutina_existente              1 vecino(s)
+    GRAFO    abrazar_incomodidad_silencio_contar_seis                texto=0.356
+mantener_proceso_evaluacion_ligero_vigilar_crecimiento  4 vecino(s)
+    GRAFO    calibrar_notas_reunion_jefes_pares                      texto=0.374
+    GRAFO    evaluar_desempenio_dos_veces_anio                       texto=0.393
+    GRAFO    montar_evaluacion_360_grados_ligera_pares               texto=0.396
+    GRAFO    presionar_curva_notas_evitar_forzarla                   texto=0.370
+medir_critica_respuesta_oyente_brujula                  0 vecino(s)
+montar_equipo_gestion_desempenio_revisar_sistema        0 vecino(s)
+montar_evaluacion_360_grados_ligera_pares               3 vecino(s)
+    GRAFO    evaluar_desempenio_dos_veces_anio                       texto=0.399
+    GRAFO    hacer_critica_pares_transparente_ensenar_escribirla     texto=0.381
+    GRAFO    mantener_proceso_evaluacion_ligero_vigilar_crecimiento  texto=0.399
+premiar_franqueza_hacer_escucha_tangible                1 vecino(s)
+    GRAFO    escuchar_entender_critica_dominar_defensa               texto=0.375
+presionar_curva_notas_evitar_forzarla                   3 vecino(s)
+    GRAFO    evaluar_desempenio_dos_veces_anio                       texto=0.356
+    GRAFO    manejar_enfado_persona_desafiada                        texto=0.367
+    GRAFO    mantener_proceso_evaluacion_ligero_vigilar_crecimiento  texto=0.370
+recorrer_trece_elementos_proceso_evaluacion_formal      1 vecino(s)
+    GRAFO    elegir_palabras_nota_definirlas_empresa_entera          texto=0.356
+repartir_notas_publicar_reparto_esperado                4 vecino(s)
+    GRAFO    decidir_poner_nota_comunicar_proposito_limites          texto=0.376
+    GRAFO    elegir_palabras_nota_definirlas_empresa_entera          texto=0.375
+    GRAFO    evaluar_desempenio_dos_veces_anio                       texto=0.354
+    GRAFO    fijar_cuatro_notas_calcular_nota_global                 texto=0.367
+
+TOTAL DE PARES LEVANTADOS POR LAS DOS SENIALES BARATAS: 40

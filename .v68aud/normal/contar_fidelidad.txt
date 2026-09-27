@@ -1,0 +1,2 @@
+cap_05: candidatos 12 | pasos en ficha 84 | filas 84 | T 81 | P 0 | DUDA 3 | PUENTE 0 de 84 = 0.00 por ciento | si las DUDA cayesen: 3 de 84 = 3.57 por ciento
+cap_06: candidatos 8 | pasos en ficha 62 | filas 62 | T 61 | P 0 | DUDA 1 | PUENTE 0 de 62 = 0.00 por ciento | si las DUDA cayesen: 1 de 62 = 1.61 por ciento

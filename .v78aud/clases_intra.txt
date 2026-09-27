@@ -1,0 +1,31 @@
+# Fase ciega de la 78: mis clases de TODOS los pares posibles dentro de un mismo capitulo de la bandeja de Marquet (cap_02: 1,
+# cap_03: 15, cap_06: 1), escritas con los pasos de los dos delante (.v78aud/pasos_20.txt, pasos_ciego.py, R6) y el capitulo
+# leido entero, ANTES de que mi barrido termine. Vara 6.1 y solo esa. Formato: a|b|clase|madre|lectura.
+@CAM=cambiar_forma_trabajar_conservar_plantilla
+@ENC=encargar_meta_especifica_dejar_libre_metodo
+@AUD=auditar_formacion_premios_ultima_fila
+@FIR=contar_firmas_cadena_tramite_parado
+@INS=inspeccionar_reparto_informacion_notas_jefe
+@OBS=observar_reunion_rutinaria_senales_plantilla
+@REC=recorrer_organizacion_escuchar_plantilla
+@SEG=seguir_frustrado_preguntar_implantacion_ideas
+@EJE=aplicar_ejercicio_codigo_genetico_control
+@ASI=asignar_responsable_unico_evolucion_planificada
+ENC|CAM|SANO||cap_02: las dos caras de la misma conversacion de L25 a L49: ENC es el que encarga (meta especifica, sin metodo, mismos recursos, apoyo sin decidir, L33 y L49) y CAM el que recibe el equipo (el plazo, trabajar con lo que hay, el canal para cambiar a alguien, el mensaje de no despedir, L25 a L29). Solapan en una idea, que solo se puede cambiar como interactua la gente (ENC paso 4, L49; CAM paso 5, L29), y fuera del solape hay procedimiento en los dos lados (6.1, sin bascula). Ningun paso de CAM usa el producto de ENC: su condicion es hacerse cargo de un equipo que va mal, no haber recibido un encargo sin metodo. DUDA: si se lee que el reto de CAM paso 5 es la consecuencia que ENC paso 4 saca, CAM seria hijo de ENC; lo descarto porque CAM no necesita el encargo para ejecutarse
+AUD|FIR|SANO||cap_03: la formacion del muelle (L55 y L57) contra la papeleta de permiso (L37 a L43); dos rutinas distintas, ningun paso comun
+AUD|INS|SANO||cap_03: dos rutinas observadas (L45 y L55, que las une con As was the case with the message board), y procedimientos distintos: el reparto de mensajes con sus notas contra la formacion leida desde el fondo
+AUD|OBS|SANO||cap_03: las dos leen una reunion rutinaria que ya existe por sus seniales de gente, y ahi acaba el solape; OBS mira puntualidad, espera y animo de la sala de jefes (L17 a L21), AUD se mueve a la periferia, se pone al fondo, pregunta si se oye y mira premios, familias, fotografo y detalles (L55 y L57). Procedimiento fuera del solape en los dos lados (6.1). DUDA: son la misma familia, observar una rutina; si el barrido las levanta, es SANO y no REPITE
+AUD|REC|SANO||cap_03: REC camina y escucha en lugar de revisar expedientes, con los recorridos guiados y la linterna (L11 y L15); AUD va a una reunion concreta y la lee desde el fondo (L55 y L57). Ningun paso de AUD usa el producto de REC
+AUD|SEG|SANO||cap_03: ajenos: la formacion leida desde el fondo contra el oficial frustrado seguido a su camarote (L23 a L29)
+FIR|INS|SANO||cap_03: las dos descubren un circuito de la cadena de mando que quita decisiones o retrasa (siete firmas en L39; el reparto con notas en L47 a L53), con procedimientos distintos: contar firmas contra el formulario y resolver el tramite, contra leer el orden de reparto y las notas del jefe con el responsable
+FIR|OBS|SANO||cap_03: ajenos: el tramite parado contra la reunion rutinaria
+FIR|REC|SANO||cap_03: FIR arranca en uno de tus recorridos (su paso 1, L37 During one of my walks around), que es la actividad de REC (L15). DUDA: podria leerse CONTINUA con madre REC; lo leo SANO porque FIR no usa ningun producto de REC, solo la ocasion de un paseo, y su condicion (alguien parado esperando un tramite) no pide haber recorrido nada
+FIR|SEG|SANO||cap_03: las dos persiguen a una persona con mala cara o frustrada y concluyen que falla el sistema y no la gente (FIR paso 10, L43; SEG paso 8, L29), y sus condiciones hacen la misma pregunta (si el problema es la gente o el circuito, si la causa esta en el o en el sistema). Fuera de esa pregunta, procedimiento en los dos lados: la cadena de firmas contada contra el formulario y el papel encontrado, contra cada idea preguntada por su implantacion y el piso de abajo (6.1, sin bascula). DUDA: es el par mas cercano del capitulo; no es REPITE porque ningun paso de uno esta en el otro
+INS|OBS|SANO||cap_03: ajenos: el reparto de mensajes contra la reunion de jefes
+INS|REC|SANO||cap_03: INS observa una rutina despues de conocer a la gente (L45 Once I had acquainted myself with my men), sin usar ningun producto de REC
+INS|SEG|SANO||cap_03: dos jefes de departamento frustrados (Rick en L49 a L53, Dave en L25 a L27), con procedimientos distintos: leer las notas del jefe en el reparto contra preguntar idea por idea como la implanto
+OBS|REC|SANO||cap_03: REC camina la instalacion y OBS asiste a una reunion; ninguno usa el producto del otro
+OBS|SEG|CONTINUA|OBS|cap_03: la condicion de SEG es el producto del paso 7 de OBS: haber visto en la reunion a un responsable frustrado y a la defensiva (L21 Dave was earnest and forthright but frustrated and defensive), y el paso 1 de SEG arranca Al acabar la reunion (L23 After the meeting I followed Dave to his stateroom). SEG trae procedimiento propio (nombrarlo, escuchar la vision, preguntar idea por idea, el piso de abajo) y ningun paso de OBS, asi que no es REPITE. DUDA: si la observacion del paso 7 se lee como una senial entre ocho y no como el producto del nodo, es SANO con arista por lectura D.29 (D.53), no CONTINUA
+EJE|ASI|SANO||cap_06: el ejercicio de las tarjetas para hallar el codigo genetico del control (L99 a L111) contra la linea del jefe a cargo en el documento de planificacion (L127, la iteracion siguiente de Chiefs in Charge); ningun paso comun y ninguno usa el producto del otro
+# ANADIDA DESPUES DE RECOGER EL BARRIDO, y lo digo: armar_clases.py conto 16 filas donde el capitulo da 17 pares; faltaba esta. El barrido no la levanta.
+REC|SEG|SANO||cap_03: REC camina la instalacion y escucha (L15), SEG sigue a un frustrado despues de una reunion (L23 a L29); ninguno usa el producto del otro

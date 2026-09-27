@@ -1,0 +1,3 @@
+cap_20  lineas=79  palabras_de_cuerpo(L8 al final)=1841
+cap_21  lineas=149  palabras_de_cuerpo(L8 al final)=1851
+cap_22  lineas=129  palabras_de_cuerpo(L8 al final)=904

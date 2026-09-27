@@ -1,0 +1,15 @@
+CREDITO DE LA LINEA 'marquet_turn_the_ship' (D.48)
+  registro: docs/loop/CREDITO_marquet_turn_the_ship.jsonl
+  tandas: 3, en 12 suceso(s) de especie
+
+  especie            racha      de donde sale
+  ----------------------------------------------------------------------
+  AUDITOR            0 de 3     ACTA M4
+  CIFRA PUBLICADA    1 de 2     vuelta 3
+  CLASE              0 de 2     ACTA M4
+  DATO MOVIDO        0 de 2     ACTA M4
+  REPORTE            2 de 3     vuelta 3
+
+  CREDITO ENTERO: ninguna especie en su tope.
+REPLAY VERDE en la linea 'marquet_turn_the_ship': las 12 tanda(s) vigilables suman lo que declaran.
+CITAS VERDES en la linea 'marquet_turn_the_ship': todas son referencia, ninguna trae una conclusion dentro (D.56).

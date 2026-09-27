@@ -1,0 +1,23 @@
+candidato                                          ficha filas   T   P  DUDA
+infundir_regularidad_reunion_proceso                   8     8   8   0     0
+usar_tres_clases_reunion_proceso                       4     4   4   0     0
+fijar_frecuencia_reunion_individual_madurez_tarea     10    10  10   0     0
+fijar_duracion_lugar_reunion_individual               10    10  10   0     0
+preparar_guion_reunion_individual_subordinado          7     7   7   0     0
+cubrir_indicadores_problemas_reunion_individual       10    10  10   0     0
+facilitar_expresion_subordinado_pregunta_mas           6     6   6   0     0
+tomar_notas_copia_guion_reunion_individual             7     7   7   0     0
+acumular_asuntos_importantes_fichero_espera            4     4   4   0     0
+alentar_asuntos_corazon_vigilar_final_reunion          8     8   5   0     3
+conducir_reunion_individual_telefono_distancia         5     5   5   0     0
+programar_reunion_individual_cadena                    5     5   5   0     0
+conducir_etapas_modelo_ideal_decision                 12    12  12   0     0
+decidir_nivel_competente_inferior                      8     8   8   0     0
+vencer_sindrome_grupo_pares_autoconfianza              5     5   4   0     1
+tomar_mando_reunion_pares_presidente_ausente           6     6   6   0     0
+ejercer_poder_posicion_etapa_decision_clara            7     7   7   0     0
+cortar_discusion_libre_momento_justo                   7     7   7   0     0
+zanjar_seis_preguntas_decision_adelantado              9     9   9   0     0
+anunciar_decision_inesperada_reconvocar_reunion        8     8   8   0     0
+cap_05: candidatos 12 | pasos en ficha 84 | filas 84 | T 81 | P 0 | DUDA 3 | PUENTE 0 de 84 = 0.00 por ciento | si las DUDA cayesen: 3 de 84 = 3.57 por ciento
+cap_06: candidatos 8 | pasos en ficha 62 | filas 62 | T 61 | P 0 | DUDA 1 | PUENTE 0 de 62 = 0.00 por ciento | si las DUDA cayesen: 1 de 62 = 1.61 por ciento

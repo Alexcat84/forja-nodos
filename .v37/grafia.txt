@@ -1,0 +1,4 @@
+$ grep -ho "senial[a-z]*" dataset/nodos.jsonl | sort | uniq -c | sort -rn | head -3
+     29 senial
+     16 seniales
+      6 senialar

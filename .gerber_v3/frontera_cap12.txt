@@ -1,0 +1,17 @@
+AVISO: cero celdas tecleadas en este instrumento. El arranque del cuerpo NO
+es una constante mia: sale de fuentes/gerber_emyth/cap_12.md, linea 8, que es la siguiente al segundo
+--- de la cabecera yaml (cierres en L1 y L7). El cuerpo va de L8 a L293.
+
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| `R1` | L8 a L19 | **57** | el numero del capitulo, el rotulo THE BUSINESS DEVELOPMENT PROCESS y el epigrafe de Thomas J. Peters y Robert H. Waterman Jr. (In Search of Excellence) | **RESIDUO: rotulo y epigrafe** |
+| `R2` | L20 a L21 | **39** | la cabeza que nombra las tres actividades del Business Development Process: Innovation, Quantification y Orchestration | **POSTURA** |
+| `R3` | L22 a L83 | **1055** | la seccion Innovation entera: creatividad contra innovacion, y los tres ejemplos THE INNOVATION de experimentos de venta al detalle | **POSTURA y CASO** |
+| `R4` | L84 a L94 | **101** | el subtitulo Quantification y por que cuantificar una innovacion importa | **POSTURA** |
+| `R5` | L95 a L95 | **134** | el parrafo que enumera uno a uno los seis pasos para cuantificar el impacto de una innovacion | **INVENTARIO PROPIO: NACE 1 CANDIDATO** |
+| `R6` | L96 a L147 | **326** | el resto de Quantification: el ejemplo del traje azul, la lista abierta de preguntas sobre los numeros del negocio (termina en y asi sucesivamente) y el cierre | **POSTURA** |
+| `R7` | L148 a L221 | **687** | la seccion Orchestration entera: la eliminacion de la discrecion, si no lo has orquestado no lo posees, y el cierre que nombra otra vez las tres actividades | **POSTURA** |
+| `R8` | L222 a L293 | **1807** | el dialogo con Sarah sobre la Orquestacion, la metafora del aprendizaje del pastel de fruta y la maestria del artesano | **CASO y POSTURA** |
+| **el cuerpo entero** | **L8 a L293** | **4206** | **suma de las piezas: 4206** | **residuo sin asignar: 0** |
+
+piezas: 8   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 4206   suma 4206   residuo 0

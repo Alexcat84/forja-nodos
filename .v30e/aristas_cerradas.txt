@@ -1,0 +1,9 @@
+| nodo | previos | siguientes |
+|---|---|---|
+| `minimizar_impuesto_colaboracion_equipo` | ninguno | `proteger_tiempo_equipo_jefe`, `mantener_manos_trabajo_real_equipo`, `reservar_calendario_tiempo_ejecutar` |
+| `proteger_tiempo_equipo_jefe` | `minimizar_impuesto_colaboracion_equipo` | ninguno |
+| `mantener_manos_trabajo_real_equipo` | `minimizar_impuesto_colaboracion_equipo` | ninguno |
+| `reservar_calendario_tiempo_ejecutar` | `minimizar_impuesto_colaboracion_equipo` | ninguno |
+| `aprender_resultados_vencer_dos_presiones` | ninguno | `cambiar_posicion_hechos_explicar_cambio`, `cuidarse_agotamiento_centro_rueda` |
+| `cuidarse_agotamiento_centro_rueda` | `aprender_resultados_vencer_dos_presiones` | ninguno |
+| `cambiar_posicion_hechos_explicar_cambio` | `aprender_resultados_vencer_dos_presiones` | ninguno |

@@ -1,0 +1,7 @@
+ADUANA DE INSERCION, candidato 'aprender_resultados_vencer_dos_presiones'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 231 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 232
+  censos escritos: denominaciones

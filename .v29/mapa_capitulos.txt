@@ -1,0 +1,17 @@
+LIBRO: scott_radical_candor
+capitulo          GRAFO  BANDEJA
+(sin unidad)          1        0
+cap_01                1        0
+cap_03                1        0
+cap_04                5        0
+cap_05                8        0
+cap_06               10        0
+cap_07               13       12
+cap_08                0       12
+cap_09                0       20
+cap_10                0       14
+cap_11                1       15
+cap_12                0        2
+cap_13                0       12
+cap_14                0       15
+TOTAL                40      102

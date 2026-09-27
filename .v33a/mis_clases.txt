@@ -1,0 +1,145 @@
+MIS CLASES, ESCRITAS A CIEGAS Y ANTES DE DESTAPAR NI UNA RAZON DE bitacora/VEREDICTOS.jsonl
+(HEREDADO 3 de la ACTA 31: este fichero es anterior a la primera corrida que IMPRIMA UNA
+RAZON. En esta fase no he corrido ninguna, y la hora de este fichero queda publicada.)
+
+TANDA: los 12 ids que .v33a/tanda.py saca del git diff de dataset/nodos.jsonl entre
+ef3e7f9 (commit anterior a la apertura de la vuelta 33) y HEAD. DEL DATO, no de una lista.
+POBLACION DEL BARRIDO: dataset/nodos.jsonl de 282 nodos menos el propio candidato, mas las
+bandejas de cuarentena/, que las pone la aduana sola (D.38.4 con el metodo de D.38.5).
+
+PRIMER BLOQUE: LO QUE DIGO LEYENDO fuentes/scott_radical_candor/cap_08.md Y LOS 12 NODOS,
+ANTES DE SABER QUE VECINO LEVANTA LA ADUANA.
+
+ 1 integrar_trabajo_vida_mejor_version          MI CLASE: SANO
+ 2 definir_receta_propia_mantenerse_centrado    MI CLASE: SANO
+ 3 agendar_cuidados_propios_cumplirlos          MI CLASE: SANO
+ 4 ceder_autoridad_unilateral_equipo            MI CLASE: SANO
+ 5 dominar_arte_socializar_trabajo              MI CLASE: SANO
+ 6 evitar_presion_social_actos_equipo           MI CLASE: SANO, con arista D.29 a su madre, la 5
+ 7 construir_confianza_equipo_tiempo_solas      MI CLASE: SANO, con arista de lectura a cap_11
+ 8 vivir_valores_propios_evitar_listarlos       MI CLASE: SANO
+ 9 demostrar_apertura_visiones_distintas        MI CLASE: SANO
+10 manejar_contacto_fisico_regla_platino        MI CLASE: SANO, con atribucion
+11 reconocer_emociones_propias_avisar_equipo    MI CLASE: SANO
+12 dominar_reacciones_emociones_ajenas          MI CLASE: SANO
+
+LOS DOCE SON SANO PARA MI, Y DIGO SOBRE QUE LO DIGO: cap_08 es un capitulo de rotulos, y
+cada uno de los doce sale de un rotulo distinto del fichero, con una sola fusion (el 3).
+Ninguno REPITE a otro de los once ni a nada que yo reconozca del grafo: lo que comparten es
+el libro, no el procedimiento.
+
+FIDELIDAD D.30, LEIDA PASO A PASO POR MI CONTRA SU LINEA DEL FICHERO FUENTE, NO COPIADA:
+   1 integrar_trabajo_vida            5 pasos   5 TRANSCRIPCION  0 PUENTE   L27
+   2 definir_receta_propia            9 pasos   9 TRANSCRIPCION  0 PUENTE   L29,31,33,35
+   3 agendar_cuidados_propios         5 pasos   5 TRANSCRIPCION  0 PUENTE   L39,43
+   4 ceder_autoridad_unilateral      15 pasos  15 TRANSCRIPCION  0 PUENTE   L47,49,51,53,55,57,59,61,63,65
+   5 dominar_arte_socializar          9 pasos   9 TRANSCRIPCION  0 PUENTE   L69,71,73,75
+   6 evitar_presion_social            6 pasos   6 TRANSCRIPCION  0 PUENTE   L79,81
+   7 construir_confianza              7 pasos   7 TRANSCRIPCION  0 PUENTE   L95
+   8 vivir_valores_propios            9 pasos   9 TRANSCRIPCION  0 PUENTE   L99,101,103
+   9 demostrar_apertura              10 pasos  10 TRANSCRIPCION  0 PUENTE   L107,109,111,115,119,121
+  10 manejar_contacto_fisico          9 pasos   9 TRANSCRIPCION  0 PUENTE   L125,127,131,139,141,143,145,149
+  11 reconocer_emociones_propias      7 pasos   7 TRANSCRIPCION  0 PUENTE   L153,155,157,159
+  12 dominar_reacciones_ajenas       11 pasos  11 TRANSCRIPCION  0 PUENTE   L163,167,169,171,173,175,177,179,181
+  TOTAL                            102 pasos 102 TRANSCRIPCION  0 PUENTE
+
+MI DISCUTIBLE CIEGO 1: el resumen_teorico de construir_confianza_equipo_tiempo_solas dice
+"Esos tres capitulos NO estan minados todavia" de los tres reenvios de L95. UNO DE LOS TRES
+SI ESTA MINADO: L95 manda a "1:1 Conversations, chapter eight", cap_08.md declara en su
+frontmatter "unidad: Cap. 5", asi que el capitulo ocho del libro es cap_11.md, y cap_11.md
+tiene 16 nodos y 187 pasos en el grafo. Y lo prueba la propia vuelta: el mismo nodo lleva
+escrita la arista a montar_reuniones_solas_mentalidad_frecuencia, que es de cap_11.
+Lo dejo marcado. No le pongo especie aqui: la especie se adjudica en el turno normal.
+
+MI DISCUTIBLE CIEGO 2: el nombre_largo de construir_confianza_equipo_tiempo_solas dice
+"las cuatro conversaciones con las que el libro dice que se empieza". Yo cuento TRES
+conversaciones nombradas en L95 (las reuniones a solas periodicas, pedir critica, y las
+conversaciones anuales de carrera) mas el tiempo a solas, que no es una conversacion con
+nombre. El libro NO escribe la cifra cuatro. Es la misma especie que el discutible 1 de mi
+ACTA 31 ("las cinco cosas" del kanban), que aquella adjudico REGISTRADO Y NO CARGADO porque
+D.30 cuenta PASOS y la cifra vive en el nombre_largo. Lo marco y no lo cargo, y anoto que
+es la segunda vuelta seguida en que aparece la misma figura.
+
+MI DISCUTIBLE CIEGO 3: la seccion Booze (L83 a L87) no tiene nodo, y si lo tiene la otra
+advertencia (L77 a L81, que es el nodo 6). L75 anuncia DOS advertencias y el paso 9 del
+nodo 5 las escribe las dos, asi que la cabeza publica una serie de dos con un solo hijo
+cableado. Lo marco: por la vara, "UNA ADVERTENCIA ES LINEA", y L85 y L87 no nombran ni un
+acto que el lector pueda ejecutar, solo una lista de desastres. MI LECTURA es que dejarla
+fuera se sostiene; lo que marco es que la cabeza lo diga y el grafo no.
+
+MI DISCUTIBLE CIEGO 4: el resumen_teorico de tres de los doce nodos escribe, DENTRO de
+dataset/nodos.jsonl, frases del tipo "VA MARCADO DISCUTIBLE EN EL REPORTE DE ESTA VUELTA".
+El dataset es sede duradera y el reporte se reescribe cada vuelta. Lo marco como cosa de
+forma que toca a mi propia fase: mi apertura ciega no puede leer el dataset sin leer con el
+lo que el reporte dice de si mismo.
+
+LO QUE SI REPRODUCE AL DIGITO, Y LO DIGO PORQUE ESTABA BUSCANDO QUE NO: el resumen_teorico
+de ceder_autoridad_unilateral_equipo publica "1.156 palabras de cuerpo de las 6.140".
+Mi .v33a/palabras2.py las saca las dos EXACTAS del fichero fuente con str.split():
+6140 el cuerpo entero tras el frontmatter, 1156 el tramo FREE AT WORK con su rotulo.
+No es caida. La cifra es reproducible y digo con que instrumento.
+
+------------------------------------------------------------------------
+SEGUNDO BLOQUE, ESCRITO DESPUES DE LEER LOS PARES Y SUS PASOS Y ANTES DE DESTAPAR
+NINGUNA RAZON. El primer bloque queda intacto a proposito: aquel lo escribi sin saber que
+vecino levanta la maquina, y este lo escribo sabiendo cuales levanto. Corregir el primero
+en su sitio habria borrado la prueba de que la clase fue ciega.
+
+LOS PARES SALEN DEL CAMPO 'vecino' DE LAS 14 LINEAS NUEVAS DE bitacora/VEREDICTOS.jsonl
+(git diff ef3e7f9..HEAD). He leido los pasos de los dos extremos de cada par en
+.v33a/pasos_12.txt y .v33a/vecinos.txt. DE LA BITACORA NO HE LEIDO NI UNA RAZON:
+.v33a/pares.py imprime el par, el veredicto y la senial, y de la razon solo su longitud.
+
+  # candidato                                  vecino                                        MI CLASE
+  2 evitar_presion_social_actos_equipo         contar_cuatro_historias_propias (BANDEJA)     SANO
+  3 evitar_presion_social_actos_equipo         proteger_tiempo_equipo_jefe                   SANO
+  4 evitar_presion_social_actos_equipo         crear_obligacion_disentir_equipo              SANO
+  5 evitar_presion_social_actos_equipo         dominar_arte_socializar_trabajo               CONTINUA
+  6 construir_confianza_equipo_tiempo_solas    decidir_quien_comunica_cada_cuanto            SANO
+  7 construir_confianza_equipo_tiempo_solas    reconocer_emociones_propias_avisar_equipo     SANO
+  8 construir_confianza_equipo_tiempo_solas    minimizar_impuesto_colaboracion_equipo        SANO
+  9 montar_reuniones_solas_mentalidad_frec.    construir_confianza_equipo_tiempo_solas       CONTINUA
+ 10 vivir_valores_propios_evitar_listarlos     sostener_contacto_oferta_aceptacion           SANO
+ 11 reconocer_emociones_propias_avisar_equipo  minimizar_impuesto_colaboracion_equipo        SANO
+ 12 reconocer_emociones_propias_avisar_equipo  centrar_debate_ideas_fuera_egos               SANO
+ 13 reconocer_emociones_propias_avisar_equipo  cuidarse_agotamiento_centro_rueda             SANO
+ 14 reconocer_emociones_propias_avisar_equipo  construir_confianza_equipo_tiempo_solas       SANO
+
+MIS DOS CONTINUA, CON SU DIRECCION, QUE ES LO QUE LA VARA 6.1 PIDE (que anade el HIJO a la
+MADRE, nunca al reves):
+  par 5   MADRE dominar_arte_socializar_trabajo, cuyo P9 NOMBRA las dos advertencias de L75
+          HIJO evitar_presion_social_actos_equipo, que DESPLIEGA la primera en seis pasos
+          (L79 y L81). Nombrar no es procedimentar (P.5.1): la madre nombra, el hijo ejecuta.
+  par 9   MADRE construir_confianza_equipo_tiempo_solas, cuyo P5 NOMBRA las reuniones a
+          solas periodicas de L95
+          HIJO montar_reuniones_solas_mentalidad_frecuencia, que las despliega en 22 pasos
+          desde cap_11. La direccion es la correcta: el hijo trae el procedimiento.
+
+LOS ONCE SANO, EN UNA LINEA CADA UNO Y SIN REABRIR EL ARGUMENTO (D.47 austero): en los once
+lo que queda FUERA del solape es procedimiento en los DOS lados, que es lo que 6.1 pide
+mirar, y en ninguno hay bascula que valga. Los dos mas cercanos y por que aguantan:
+  par 6  la senial mas alta de la tanda (paso_contra_nodo 0.619). Los dos apuntan a la
+         reunion a solas, pero decidir_quien_comunica decide QUE reuniones hay y a que coste,
+         y construir_confianza construye confianza. Y la prueba de que la casa lo vio bien
+         es el par 9: la MADRE del procedimiento del 1:1 es montar_reuniones_solas, no este.
+  par 10 paso_contra_nodo 0.606 entre no montar un ejercicio de valores y sostener el
+         contacto entre la oferta y la aceptacion. Es senial de ruido puro, y D.19 dice que
+         una senial dice donde mirar y ahi acaba su trabajo.
+
+MI DISCUTIBLE CIEGO 5, Y ESTE ES DE LOS QUE LA MAQUINA NO LEVANTO: agendar_cuidados_propios
+_cumplirlos NO tiene ni un veredicto en la bitacora, o sea que la aduana no le levanto
+vecino. Su P1 dice "pon en tu calendario las cosas que necesitas hacer para ti, igual que
+pondrias una reunion importante", y cuidarse_agotamiento_centro_rueda, que si esta en el
+grafo, lleva su P7 "bloquea en tu calendario tiempo de pensar todos los dias". MI CLASE
+PARA ESE PAR ES SANO Y DIGO POR QUE: el objeto de uno es la cita contigo mismo de tu receta
+y el del otro es el tiempo de pensar, y lo que queda fuera del solape es procedimiento en
+los dos lados (el desplazamiento, el tren y el que otros no te la pisen de un lado; declinar
+invitaciones y el humor a tu costa del otro). LO MARCO PORQUE LA MAQUINA NO LO LEVANTO,
+no porque crea que esta mal puesto.
+
+MI DISCUTIBLE CIEGO 6: las dos lineas CONTINUA de la bitacora llevan escrito
+"operacion: arista declarada por lectura (D.37)", y los resumen_teorico de los dos nodos
+del par 5 dicen, con todas las letras, que esa arista ES D.29 Y NO D.37. No es contradiccion
+del extractor: el rotulo esta TECLEADO EN EL CODIGO, en src/arista.py linea 187, y se estampa
+igual en toda arista declarada por lectura. LO MARCO Y NO LO TOCO: src/ esta bajo la
+moratoria de D.45 y una pregunta de doctrina sube.

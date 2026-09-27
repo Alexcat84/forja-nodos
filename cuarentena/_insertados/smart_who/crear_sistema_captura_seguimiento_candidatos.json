@@ -1,0 +1,37 @@
+{
+  "condiciones_activacion": "Cuando ya estas abasteciendote por las otras vias y el problema deja de ser saber que hacer. El libro lo dice asi: abastecerse de talento con estas practicas probadas es facil, y el reto es menos cuestion de saber que hacer que de poner un sistema que gestione el proceso y de tener la disciplina de seguirlo.",
+  "denominaciones": {
+    "nombre_largo": "Sistemas de abastecimiento: capturar los nombres y seguirlos",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "Sourcing Systems"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "contratacion",
+  "entregable_esperado": "Un sistema que captura el nombre y los datos de contacto de todas las personas que abasteces y que reserva tiempo semanal en tu calendario para hacerles seguimiento.",
+  "escala_minima": "El libro fija los dos extremos: tan simple como una hoja de calculo o tan complejo como un sistema de seguimiento de candidatos integrado con tu calendario, pasando por fichas de cartulina.",
+  "fuentes": [
+    {
+      "clave": "smart_who",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "id": "crear_sistema_captura_seguimiento_candidatos",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Crea un sistema que capture los nombres y los datos de contacto de todas las personas que abasteces.",
+    "Haz que ese mismo sistema reserve tiempo semanal en tu calendario para hacer el seguimiento.",
+    "Elige la solucion segun tus medios: puede ser tan simple como una hoja de calculo o tan compleja como un sistema de seguimiento de candidatos integrado con tu calendario.",
+    "Si vas con fichas de cartulina, anota junto al nombre unos cuantos retazos de lo que aprendiste, como el nombre de la pareja, una aficion o un tema de conversacion, y revisita las fichas de forma rutinaria para hacer seguimiento.",
+    "Si vas con hoja de calculo, aprovecha que te deja ordenar por nombre y por fecha, y genera tu lista semanal de llamadas cargando una fecha de seguimiento contra cada nombre.",
+    "Si usas un sistema de seguimiento comprado, elige uno que permita a todos los empleados del negocio aportar nombres e informacion util a la base de datos de candidatos jugadores A potenciales de la empresa.",
+    "No te dejes adormecer por la tecnologia: el sistema de seguimiento mas avanzado del mundo no te sirve de nada si no lo usas de forma sistematica."
+  ],
+  "resumen_teorico": "Es el punto 6 del recuadro How to Source, y el que convierte todo lo anterior en algo que sobrevive a la semana ocupada. El problema que resuelve, planteado por el libro como pregunta: cuando el apreton esta encima, tu y tu equipo de contratacion vais a estar conociendo gente todo el dia, todos los dias, muchos de ellos podrian ser jugadores A para algun puesto, y si ademas has metido reclutadores e investigadores ellos van a traer todavia mas gente a tu atencion, asi que como capturas todos esos nombres y, mas importante, como haces seguimiento para construir una relacion. Las soluciones que el libro pone, de la mas barata a la mas cara, son las fichas de cartulina del directivo metodico en extremo al que sus conocidos admiran por lo bien que recuerda detalles de sus vidas, la hoja de calculo que ordena por nombre y fecha y de la que otro directivo saca su lista semanal de llamadas, y los sistemas de seguimiento comprados que usan muchas empresas grandes. Sobre estos ultimos el libro se niega expresamente a recomendar proveedores concretos, y se limita a decir que un buen sistema permitira que todos los empleados aporten nombres a la base de datos de la empresa. El aviso final: no te dejes adormecer por la tecnologia, porque el sistema mas avanzado del mundo no sirve de nada si no se usa de forma sistematica.",
+  "titulo": "Crear el sistema que captura los nombres abastecidos y los sigue"
+}

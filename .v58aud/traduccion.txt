@@ -1,0 +1,9 @@
+-- 'self-actualization' en el grafo:
+0
+-- 'esteem/recognition' en el grafo:
+0
+-- 'autorrealizacion' en el grafo:
+1
+-- en que nodo y en que campo:
+ nodo: atender_modo_supervivencia_equipo
+   campo: atribuciones

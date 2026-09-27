@@ -1,0 +1,1 @@
+supervisar_tarea_delegada_etapa_menor_valor poblacion 479 (368 grafo mas 111 bandejas) vecinos 3

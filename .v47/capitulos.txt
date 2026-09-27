@@ -1,0 +1,42 @@
+$ wc -l -w fuentes/grove_high_output/*.md
+   119   3864 fuentes/grove_high_output/cap_01.md
+    79   3427 fuentes/grove_high_output/cap_02.md
+   179   5855 fuentes/grove_high_output/cap_03.md
+   323   8871 fuentes/grove_high_output/cap_04.md
+   175   4990 fuentes/grove_high_output/cap_05.md
+    95   4147 fuentes/grove_high_output/cap_06.md
+   105   3861 fuentes/grove_high_output/cap_07.md
+    33   1166 fuentes/grove_high_output/cap_08.md
+    65   2309 fuentes/grove_high_output/cap_09.md
+    79   3243 fuentes/grove_high_output/cap_10.md
+    83   2688 fuentes/grove_high_output/cap_11.md
+   117   4131 fuentes/grove_high_output/cap_12.md
+    77   2535 fuentes/grove_high_output/cap_13.md
+   203   5774 fuentes/grove_high_output/cap_14.md
+   123   2789 fuentes/grove_high_output/cap_15.md
+    51   2286 fuentes/grove_high_output/cap_16.md
+    69   2183 fuentes/grove_high_output/cap_17.md
+   119    743 fuentes/grove_high_output/cap_18.md
+  2094  64862 total
+
+$ head -20 fuentes/grove_high_output/cap_04.md
+---
+libro: Grove, High Output Management
+edicion: Vintage Books edition (con Foreword de Ben Horowitz, 2015)
+unidad: Cap. 3
+titulo_textual: Managerial Leverage
+fidelidad: verbatim
+---
+
+3
+
+Managerial Leverage
+
+What Is a Manager’s Output?
+
+I asked a group of middle managers just that question.
+
+I got these responses:
+
+judgments and opinions
+

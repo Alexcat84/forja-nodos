@@ -1,0 +1,35 @@
+{
+  "condiciones_activacion": "Cuando estas instalando el metodo de contratacion en tu empresa y toca la novena de las diez cosas: ha quedado claro que un directivo no va a cooperar, y sigue en su puesto.",
+  "denominaciones": {
+    "nombre_largo": "Retirar a los directivos que no se suben al metodo",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "Remove managers who are not on board"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "contratacion",
+  "entregable_esperado": "Fuera de su puesto el directivo que se nego a construir un equipo mejor con el metodo, despues de habersele dado todas las oportunidades de conseguirlo.",
+  "escala_minima": "Un solo directivo. El libro no pide una purga: pide que no se deje pasar el caso que ya esta claro.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "smart_who",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "id": "retirar_directivos_rechazan_metodo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Dale a la persona todas las oportunidades de conseguirlo antes de tomar esta decision. El libro pone esta etapa por delante y no como cortesia.",
+    "Cuenta con cual es el motivo que el libro nombra, y no otro: que la persona se niegue a construir un equipo mejor usando el metodo.",
+    "Cuando quede claro que alguien no va a cooperar, no dudes. El libro dice que los capitanes no vacilan una vez que eso esta claro.",
+    "Retira a esa persona, que es como se cortocircuita cualquier posibilidad de motin."
+  ],
+  "resumen_teorico": "Es la novena de las diez cosas que hay que hacer para instalar el metodo de contratacion en una empresa, y es la unica que pone sus etapas en un orden que importa. El libro las escribe una a una: primero se dan todas las oportunidades de conseguirlo, el motivo que cuenta es uno y esta nombrado, la negativa a construir un equipo mejor con el metodo, y la retirada llega cuando queda claro que la persona no va a cooperar. La razon que el libro da para esa retirada no es de rendimiento sino de gobierno, y es lo que da nombre al paso: asi es como los capitanes de industria cortocircuitan cualquier posibilidad de motin. Lo que el libro no dice, y por eso no esta escrito aqui, es cuantas oportunidades son todas ni cuanto tiempo se espera: quien escriba un plazo lo estara escribiendo el, no el libro.",
+  "titulo": "Retirar a los directivos que no se suben al metodo"
+}

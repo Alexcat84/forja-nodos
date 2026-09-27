@@ -1,0 +1,6 @@
+d150 | pago de la 79: SI | igual a su fichero
+d180 | pago de la 79: SI | igual a su fichero
+d098 | pago de la 79: SI | igual a su fichero
+d099 | pago de la 79: SI | igual a su fichero
+d135 | pago de la 79: SI | igual a su fichero
+pagos de la 79: 5 | {'igual a su fichero': 5} | suma: 5

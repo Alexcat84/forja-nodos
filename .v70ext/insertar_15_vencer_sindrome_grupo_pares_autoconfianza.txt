@@ -1,0 +1,122 @@
+fila 15, vencer_sindrome_grupo_pares_autoconfianza, lineas --veredicto: 13
+  --veredicto aprender_resultados_vencer_dos_presiones|SANO|Ajenos, de otro libro (scott_radical_candor): la senial de paso (0,712) casa el paso 3 de aqui, apoya la autoconfianza en la experiencia, con el paso 4 del vecino, aprende de la experiencia. Comparten la palabra: uno vence el sindrome del grupo de pares con la autoconfianza de cada miembro (L49), el otro mira el resultado de un proyecto sin negarlo.
+  --veredicto tomar_mando_reunion_pares_presidente_ausente|SANO|Hermanos bajo The Peer-Group Syndrome (L37): este lo vence por la autoconfianza de cada miembro (L49), el vecino dice quien toma el mando cuando el sindrome ya se manifiesta en una reunion sin presidente formal (L51). Dos remedios distintos del mismo sindrome: la condicion del vecino es el sindrome manifiesto, no la autoconfianza de aqui, y ninguno usa el producto del otro.
+  --veredicto decidir_nivel_competente_inferior|SANO|Del mismo capitulo y sin jerarquia entre ellos: la senial casa el paso 1 de aqui, la autoconfianza que vence el sindrome, con el paso 4 del vecino, el criterio que da la experiencia. Este vence el sindrome de pares (L49); el vecino lleva la decision al nivel competente mas bajo y compone el grupo (L33). Ninguno usa el producto del otro.
+  --veredicto anunciar_decision_inesperada_reconvocar_reunion|SANO|Del mismo capitulo y sin jerarquia entre ellos: este vence el sindrome de pares antes de decidir (L49); el vecino anuncia una decision muy distinta de lo esperado y reconvoca la reunion (L93). Ninguno usa el producto del otro; la similitud es la prosa comun de reunion y decision.
+  --veredicto planificar_tres_pasos_demanda_estado_brecha|SANO|Ajenos, de otro capitulo del mismo libro (cap_07): la planificacion en sus tres pasos contra vencer el sindrome de pares. La similitud sale de la prosa comun de los resumenes, y ningun paso de uno esta en el otro.
+  --veredicto responder_primer_aviso_renuncia_subordinado|SANO|Ajenos, de otro capitulo del mismo libro: la senial casa el paso 3 de aqui, la experiencia, con el paso 5 del vecino, no discutas ni entres en panico. Uno vence el sindrome de pares, el otro recibe el aviso de renuncia de un subordinado valioso.
+  --veredicto definir_entorno_grupo_clientes_proveedores_competidores|SANO|Ajenos, de otro capitulo del mismo libro (cap_07): definir el entorno del grupo por clientes, proveedores y competidores contra vencer el sindrome de pares. La similitud es prosa comun.
+  --veredicto archivar_indicadores_resolver_problemas|SANO|Ajenos, de otro capitulo del mismo libro (cap_03): el archivo de indicadores para repasar cuando algo va mal contra vencer el sindrome de pares. La senial casa el paso 5 de aqui, que todos lo entiendan, con el paso 1 del vecino, y no hay nada comun que hacer.
+  --veredicto ejercer_poder_posicion_etapa_decision_clara|SANO|Del mismo capitulo y sin jerarquia entre ellos: este vence el sindrome por la autoconfianza de cada miembro (L49); el vecino dice cuando el de mayor rango usa la autoridad de su puesto, al llegar a la decision clara sin consenso (L61). Ninguno usa el producto del otro.
+  --veredicto supervisar_decision_delegada_preguntas_concretas|SANO|Ajenos, de otro capitulo del mismo libro (cap_04): supervisar una decision delegada por su proceso de reflexion contra vencer el sindrome de pares. La similitud es prosa comun de decision.
+  --veredicto contestar_dos_preguntas_direccion_objetivos|SANO|Ajenos, de otro capitulo del mismo libro: las dos preguntas de la direccion por objetivos contra vencer el sindrome de pares. La similitud es prosa comun.
+  --veredicto cerrar_brecha_dos_preguntas_estrategia|SANO|Ajenos, de otro capitulo del mismo libro: cerrar la brecha entre demanda y rendimiento contra vencer el sindrome de pares. La similitud es prosa comun.
+  --veredicto cortar_discusion_libre_momento_justo|SANO|Del mismo capitulo y sin jerarquia entre ellos: la senial casa el paso 5 de aqui, haz que todo el mundo lo entienda, con el paso 5 del vecino, si el consenso no sale entra tu y decide. Este vence el sindrome de pares (L49); el vecino corta la discusion libre en su momento (L63). Ninguno usa el producto del otro.
+inicio 2026-09-25 14:12:45
+======================================================================
+ADUANA DE INSERCION, candidato 'vencer_sindrome_grupo_pares_autoconfianza'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (404 del grafo mas 75 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 13. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino aprender_resultados_vencer_dos_presiones  [Aprender de los resultados venciendo las dos presiones que empujan a dejar de aprender]
+    levantada por: paso_contra_nodo
+    similitud_texto    0.217 (umbral 0.35)
+    familia_id         0.111 (umbral 0.30)
+    paso_contra_nodo   0.712 (umbral 0.60)
+    paso 3 del candidato contra paso 4 de aprender_resultados_vencer_dos_presiones
+
+  vecino tomar_mando_reunion_pares_presidente_ausente  [Decidir quien toma el mando en una reunion de iguales sin presidente formal: el que mas se juega, y si no, el de mayor rango presente]
+    levantada por: similitud_texto
+    similitud_texto    0.356 (umbral 0.35)
+    familia_id         0.100 (umbral 0.30)
+    paso_contra_nodo   0.484 (umbral 0.60)
+    paso 5 del candidato contra paso 2 de tomar_mando_reunion_pares_presidente_ausente
+
+  vecino decidir_nivel_competente_inferior  [Llevar la decision al nivel competente mas bajo y templar el conocimiento tecnico con el criterio que dan los golpes]
+    levantada por: similitud_texto
+    similitud_texto    0.363 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.462 (umbral 0.60)
+    paso 1 del candidato contra paso 4 de decidir_nivel_competente_inferior
+
+  vecino anunciar_decision_inesperada_reconvocar_reunion  [Anunciar una decision radicalmente distinta de lo que el grupo esperaba, y reconvocar la reunion en vez de marcharse]
+    levantada por: similitud_texto
+    similitud_texto    0.431 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.404 (umbral 0.60)
+    paso 2 del candidato contra paso 6 de anunciar_decision_inesperada_reconvocar_reunion
+
+  vecino planificar_tres_pasos_demanda_estado_brecha  [Planificar en los tres pasos del libro: la demanda del entorno, el estado presente, y lo que hay que hacer para conciliarlos]
+    levantada por: similitud_texto
+    similitud_texto    0.406 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.390 (umbral 0.60)
+    paso 5 del candidato contra paso 3 de planificar_tres_pasos_demanda_estado_brecha
+
+  vecino responder_primer_aviso_renuncia_subordinado  [Responder al primer momento en que un subordinado valioso avisa que quiere renunciar: dejar lo que haces, escucharlo sin discutir y comprarte tiempo antes de actuar]
+    levantada por: similitud_texto
+    similitud_texto    0.360 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.404 (umbral 0.60)
+    paso 3 del candidato contra paso 5 de responder_primer_aviso_renuncia_subordinado
+
+  vecino cortar_discusion_libre_momento_justo  [Cortar la discusion libre en el momento justo: ni antes de oir los asuntos de verdad, ni cuando ya se ha oido todo]
+    levantada por: similitud_texto
+    similitud_texto    0.396 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.400 (umbral 0.60)
+    paso 5 del candidato contra paso 5 de cortar_discusion_libre_momento_justo
+
+  vecino definir_entorno_grupo_clientes_proveedores_competidores  [Definir tu entorno mirando tu grupo como si fuera una empresa independiente: clientes, proveedores y competidores]
+    levantada por: similitud_texto
+    similitud_texto    0.388 (umbral 0.35)
+    familia_id         0.100 (umbral 0.30)
+    paso_contra_nodo   0.400 (umbral 0.60)
+    paso 5 del candidato contra paso 3 de definir_entorno_grupo_clientes_proveedores_competidores
+
+  vecino archivar_indicadores_resolver_problemas  [Mantener un archivo de indicadores para poder repasarlos el dia que algo vaya mal]
+    levantada por: similitud_texto
+    similitud_texto    0.363 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.396 (umbral 0.60)
+    paso 5 del candidato contra paso 1 de archivar_indicadores_resolver_problemas
+
+  vecino ejercer_poder_posicion_etapa_decision_clara  [Ejercer el poder de posicion solo al llegar a la etapa de decision clara sin consenso, y nunca antes]
+    levantada por: similitud_texto
+    similitud_texto    0.354 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.383 (umbral 0.60)
+    paso 1 del candidato contra paso 6 de ejercer_poder_posicion_etapa_decision_clara
+
+  vecino supervisar_decision_delegada_preguntas_concretas  [Supervisar una decision delegada por su proceso de reflexion: preguntas bastante concretas en la reunion de revision]
+    levantada por: similitud_texto
+    similitud_texto    0.364 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.379 (umbral 0.60)
+    paso 1 del candidato contra paso 5 de supervisar_decision_delegada_preguntas_concretas
+
+  vecino contestar_dos_preguntas_direccion_objetivos  [Montar el sistema de direccion por objetivos sobre las dos unicas preguntas que tiene que contestar: adonde quiero ir, y como me marco el ritmo para ver si estoy llegando]
+    levantada por: similitud_texto
+    similitud_texto    0.370 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.360 (umbral 0.60)
+    paso 2 del candidato contra paso 5 de contestar_dos_preguntas_direccion_objetivos
+
+  vecino cerrar_brecha_dos_preguntas_estrategia  [Cerrar la brecha entre demanda y rendimiento contestando por separado que necesitas hacer y que puedes hacer, y llamar estrategia al conjunto que decidas]
+    levantada por: similitud_texto
+    similitud_texto    0.355 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.337 (umbral 0.60)
+    paso 3 del candidato contra paso 3 de cerrar_brecha_dos_preguntas_estrategia
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 405
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 13
+
+======================================================================
+fin 2026-09-25 14:25:12 | codigo de salida 0 | 747.0 s

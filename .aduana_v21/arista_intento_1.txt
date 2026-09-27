@@ -1,0 +1,7 @@
+DECLARACION DE ARISTA POR LECTURA (D.37)
+  madre: facilitar_despido_tres_cosas
+  hijo : admitir_pronto_mal_desempenio_cuatro_razones
+
+RECHAZADO: la madre 'facilitar_despido_tres_cosas' no vive en el grafo
+  Una arista se cablea contra ids que YA existen.
+  Si todavia esta en cuarentena, entra por la aduana y declara la arista en el acto de insertarla.

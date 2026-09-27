@@ -1,0 +1,3 @@
+$ sed -n "81,82p" docs/MANUAL_SISTEMA_DE_CONOCIMIENTO.md
+4. SI ES SERIE NUMERADA de un libro: un nodo por paso mas UNA cabeza, jamas
+   dos compresiones de la misma numeracion.

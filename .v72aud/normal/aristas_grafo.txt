@@ -1,0 +1,2 @@
+de las 20 en el grafo: 20 | aristas del grafo que tocan la tanda: 6 | declaradas por los dos lados: 6
+esperadas: 6 | en el grafo: 6 | en el grafo y no esperadas: 0 | esperadas y no en el grafo: 0

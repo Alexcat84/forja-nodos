@@ -1,0 +1,35 @@
+{
+  "id": "describir_candidato_ideal_precision",
+  "titulo": "Describir tu candidato ideal con toda la precision que puedas",
+  "denominaciones": {
+    "nombre_largo": "La descripcion del puesto escrita por quien contrata, y por que el mismo oficio pide cosas distintas en dos equipos",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "describe your ideal candidate as precisely as you can"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "En cuanto identificas que un puesto queda abierto, y antes de que el reclutador empiece a buscar.",
+  "entregable_esperado": "Una descripcion del puesto escrita por ti, especifica sobre las habilidades o experiencias que buscas, con la que el reclutador puede cribar.",
+  "pasos_accionables": [
+    "Identifica tu, que es trabajo del directivo que contrata, cuando un puesto queda abierto y que clase de personas encajarian mejor en el.",
+    "Escribe tu mismo la descripcion del puesto.",
+    "Se especifico sobre las habilidades o las experiencias que estas buscando.",
+    "No des por hecho que dentro del mismo oficio los requisitos son los mismos, porque pueden variar de forma apreciable de un equipo a otro. El libro lo muestra con equipos suyos: los que llevan las funciones mas usadas, navegar por publicaciones o comentar, buscan candidatos extremadamente atentos al detalle y con fuerte oficio artesanal; los que disenan experiencias para publicos concretos, duenos de pequenios negocios, jugadores o usuarios nuevos de internet, buscan disenadores empaticos y con experiencia en metodologias de investigacion que guien su trabajo.",
+    "Cuenta con lo que esa precision compra: cuando tu reclutador entiende esos matices, puede ayudarte a cribar gente que tenga las cualidades que buscas."
+  ],
+  "resumen_teorico": "Es la primera de las tacticas de trabajo conjunto con el reclutamiento y la que condiciona a las otras tres: sin la descripcion escrita por quien contrata, ni la busqueda ni la criba pueden apuntar. La doctrina esta en el paso 4 y es la que el libro desarrolla con mas texto: el nombre del oficio no fija los requisitos, y dos equipos de la misma casa pueden querer cosas opuestas. Los dos perfiles del ejemplo van dentro y no a nodo propio (manual seccion 3.5), y van completos porque son el contraste que hace visible el matiz. Lo que el libro NO dice, y por eso no esta escrito aqui, es que apartados lleva una descripcion de puesto, ni quien la aprueba, ni donde se publica.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}

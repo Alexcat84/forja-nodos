@@ -1,0 +1,45 @@
+{
+  "id": "agrupar_tareas_semejantes_aprovechar_preparacion",
+  "titulo": "Agrupar las tareas semejantes en una tanda para aprovechar un solo esfuerzo de preparacion",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "atribuciones": [],
+  "fuentes": [
+    {
+      "clave": "grove_high_output",
+      "fecha": "2026-09-19"
+    }
+  ],
+  "denominaciones": {
+    "nombre_largo": "El segundo principio de produccion aplicado al trabajo de un mando: el tiempo de preparacion existe tambien aqui, y se amortiza haciendo juntas las actividades semejantes",
+    "sigla": "",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "batching similar tasks"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "set-up time"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "mental set-up time"
+      }
+    ]
+  },
+  "condiciones_activacion": "Cuando tienes por delante varias actividades de mando del mismo tipo y las estas atendiendo una a una segun llegan, pagando su preparacion cada vez.",
+  "entregable_esperado": "Las actividades semejantes hechas en tanda dentro de un mismo bloque de tiempo, de forma que el esfuerzo de preparacion que cada una exigia se haya pagado una sola vez.",
+  "pasos_accionables": [
+    "Aplica a tu trabajo de mando el segundo principio de produccion: agrupar las tareas semejantes.",
+    "Cuenta con que toda operacion de fabricacion exige una cierta cantidad de tiempo de preparacion, y con que ese tiempo tiene muchos paralelos en el trabajo de mando.",
+    "Para que el trabajo de mando avance con eficiencia, usa un mismo esfuerzo de preparacion y aplicalo a todo un grupo de actividades semejantes.",
+    "Reutiliza lo que ya preparaste: una vez preparado un juego de ilustraciones para una clase de formacion, tu productividad sube si puedes usar ese mismo juego una y otra vez con otras clases o grupos.",
+    "Cuando tengas varios informes que leer o varias evaluaciones de desempeno que aprobar, reserva un bloque de tiempo y hazlos en tanda, uno tras otro.",
+    "Hazlo asi para aprovechar al maximo el tiempo de preparacion mental que esa tarea necesita."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/grove_high_output/cap_04.md, unidad Cap. 3, titulo textual Managerial Leverage. Sale de la PIEZA P33 de la frontera publicada en la vuelta 46 (HH.2.c), L269 a L271, 212 palabras, y de ningun otro tramo. POR QUE ES PROCEDIMIENTO: el libro pone SU PROPIO INVENTARIO de los objetos de trabajo a los que se aplica, nombrados uno a uno (el juego de ilustraciones de una clase de formacion, los informes que hay que leer, las evaluaciones de desempeno que hay que aprobar) y pone el acto concreto (set aside a block of time and do a batch of them together, one after the other). Es inventario de OBJETOS DE TRABAJO y no de metas. DE DONDE SALE CADA PASO, uno a uno: paso 1 (L269: A second production principle we can apply to managerial work is batching similar tasks); paso 2 (L269: Any manufacturing operation requires a certain amount of set-up time, y L271: Set-up time has many parallels in managerial work); paso 3 (L269: So for managerial work to proceed efficiently, we should use the same set-up effort to apply across a group of similar activities); paso 4 (L271: For example, once we have prepared a set of illustrations for a training class, we will obviously increase our productivity if we can use the same set over and over again with other classes or groups); paso 5 (L271: Similarly, if a manager has a number of reports to read or a number of performance reviews to approve, he should set aside a block of time and do a batch of them together, one after the other); paso 6 (L271: to maximize the use of the mental set-up time needed for the task). FRONTERA DENTRO DEL NODO: el paso 2 casa las dos mitades de una misma frase del libro, la de L269 que dice que la preparacion existe en fabricacion y la de L271 que dice que tiene paralelos en el trabajo de mando. Lo declaro porque es la unica celda del nodo que toca dos renglones, y las dos son del mismo tramo P33. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 6 pasos, 6 TRANSCRIPCION, 0 PUENTE. EL CASO ENTRA NOMBRADO Y NO PONE PASOS (manual 3.5): el caso es la hervidora continua de huevos y el cambio de huevos de tres minutos a huevos de cuatro, con su ajuste de tuercas y su muestreo de calidad. El nodo NO se lo lleva: ni el entregable ni ningun paso hablan de huevos ni de cintas transportadoras, porque ese caso ilustra QUE ES el tiempo de preparacion y no COMO se agrupan las tareas de un mando. Y ES UN CASO DE FABRICA, no del trabajo de mando, asi que llevarmelo a un paso habria metido dentro de este nodo un procedimiento que vive en cap_01 (P.19). LO QUE NO ESCRIBO Y POR ESO NO ESTA AQUI, la especie del PERIODO de EXTRACTOR.md 15.4: NO escribo de que tamano es el bloque de tiempo ni cada cuanto se reserva, porque el libro dice a block of time y no lo dimensiona. NO escribo tampoco un criterio de que cuenta como semejante: el libro dice similar y no da la vara, y una vara escrita por mi seria un inventario inventado. ARISTAS DECLARADAS POR LECTURA, para cablearlas el dia de la insercion y no hoy: (1) D.37, CABEZA subir_productividad_gerencial_tres_vias, paso 2 (sube el ritmo con el que ejecutas tus actividades). La cabeza dice cuantas vias tiene y las nombra, y este nodo es una de las partes de esa via. Es la misma arista que declara identificar_paso_limitante_jornada_desfases, y las dos partes entran en esta vuelta. (2) D.29, HERMANO identificar_paso_limitante_jornada_desfases: el libro los encadena expresamente (First, we must identify our limiting step... A second production principle we can apply), asi que son el primero y el segundo principio del mismo grupo. (3) D.29, PARIENTE clasificar_trabajo_proceso_montaje_prueba, de cap_02, donde el tiempo de preparacion vive como objeto de fabrica. Este nodo lo aplica al trabajo de mando y NO repite sus pasos. TRADUCCION DECLARADA: batching similar tasks, set-up time y mental set-up time viajan en denominaciones. DISCUTIBLE QUE MARCO ANTES DE SABER SI ACIERTO: los pasos 4 y 5 son los dos ejemplos que el libro da (For example, Similarly), y un lector estricto dira que son casos y que el nodo se queda en los pasos 1, 2, 3 y 6, o sea en una postura con su motivo. Los sostengo porque son el inventario de 9.1: son los OBJETOS DE TRABAJO que el libro nombra uno a uno, y sin ellos el nodo no dice a que se aplica el principio. Si caen, caen DENTRO de mi marcado."
+}

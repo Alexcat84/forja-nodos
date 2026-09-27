@@ -1,0 +1,37 @@
+{
+  "id": "ganar_confianza_personas_cargo",
+  "titulo": "Ganarte la confianza de tus personas a cargo con las cuatro acciones que el libro pide",
+  "denominaciones": {
+    "nombre_largo": "Las cuatro acciones con las que se gana la confianza de las personas a cargo, que son las mismas con las que se gana la de cualquiera",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "the way to earn trust with your reports requires the following few actions"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando quieres que tus personas a cargo confien en ti, y en particular cuando la comprobacion de las tres afirmaciones te ha dicho que todavia no lo hacen.",
+  "entregable_esperado": "Las cuatro acciones del libro puestas en marcha, y tu apareciendo delante de tu equipo como persona y no como figura de autoridad.",
+  "escala_minima": "Una sola persona a cargo. Las cuatro acciones se hacen de una en una y no piden estructura ninguna.",
+  "pasos_accionables": [
+    "Muestrate como persona y no como jefe. El libro lo razona con un caso de la autora: al dar a un directivo a su cargo la misma opinion critica que ella habia recibido antes, lo unico que hizo fue admitir que a ella le pasaba lo mismo, y lo que le llego a el no fue ningun consejo sino que por un momento se relacionaron de igual a igual.",
+    "Da por hecho que ganarte la confianza de tus personas a cargo no es distinto de ganartela con cualquier otro, y que pide unas pocas acciones, que el libro desarrolla una a una y son estas cuatro.",
+    "La primera, respetar a tu persona a cargo y cuidar de ella.",
+    "La segunda, invertir tiempo en ayudarla, que el libro concreta en la reunion individual semanal: por eso dice que las reuniones a solas son una parte tan importante de la gestion.",
+    "La tercera, ser honesto y transparente sobre como va su desempenio.",
+    "Y la cuarta, admitir tus propios errores y tus propias areas de mejora."
+  ],
+  "resumen_teorico": "El libro cierra la seccion de mostrarse humano con una frase que declara de que van las cuatro subsecciones siguientes: la manera de ganarse la confianza de las personas a cargo no es distinta de como se gana con cualquiera, y pide unas pocas acciones. Las cuatro estan nombradas una a una con su propio titulo y cada una se desarrolla despues, asi que este nodo es la cabeza y las cuatro partes tienen nodo propio. La cabeza no es solo un indice: trae el caso con el que el libro razona por que relacionarse de igual a igual funciona mejor que repartir consejo, y esa es su doctrina. Lo que el libro NO dice, y por eso no esta escrito aqui, es en que orden se hacen las cuatro ni si alguna pesa mas que las otras."
+}

@@ -1,0 +1,35 @@
+$ python forja.py insertar cuarentena/scott_radical_candor/calibrar_decision_despido_documentarla.json [veredictos y censos]
+ADUANA DE INSERCION, candidato 'calibrar_decision_despido_documentarla'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (310 del grafo mas 38 que esperan en bandejas)
+
+DECLARADOS POR LECTURA: 3. Ninguna señal los levanto.
+  admitir_pronto_mal_desempenio_cuatro_razones  [Admitir pronto que alguien de tu equipo empieza a rendir por debajo, con las cuatro razones que el texto numera para no esperar]
+    señales: familia_id 0.0, paso_contra_nodo 0.466, similitud_texto 0.291
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  facilitar_despido_tres_cosas  [Facilitar un despido con las tres cosas que el texto cuenta, situandolo entre los dos errores opuestos de la empresa que despide demasiado facil y la que lo hace casi imposible]
+    señales: familia_id 0.143, paso_contra_nodo 0.38, similitud_texto 0.257
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  trazar_plan_dieciocho_meses_aprendizaje  [Trazar con cada persona a tu cargo su plan de dieciocho meses de aprendizaje hacia sus suenios, que es la tercera de las tres conversaciones de carrera]
+    señales: familia_id 0.0, paso_contra_nodo 0.452, similitud_texto 0.349
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  LA JERARQUIA LA CAZA LA LECTURA, NO LA SEÑAL (D.19, D.29).
+
+VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino sopesar_consejo_legal_despedir_humildad  [Sopesar el consejo legal contra el riesgo de seguirlo y despedir con humildad, que es la tercera de las tres cosas que facilitan un despido]
+    levantada por: similitud_texto
+    similitud_texto    0.362 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.511 (umbral 0.60)
+    paso 9 del candidato contra paso 1 de sopesar_consejo_legal_despedir_humildad
+  arista madre-hijo cableada y escrita RESUELTA: facilitar_despido_tres_cosas > calibrar_decision_despido_documentarla
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 311
+  censos escritos: denominaciones, series_y_cabezas
+  veredictos en bitacora/VEREDICTOS.jsonl: 4
+CODIGO DE SALIDA: 0
+  ARCHIVADO EN EL MISMO ACTO (D.31): cuarentena/_insertados/scott_radical_candor/calibrar_decision_despido_documentarla.json

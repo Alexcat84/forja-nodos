@@ -1,0 +1,18 @@
+filas de su orden: 22
+  19 construir_estrategia_gente_cuatro_componentes           antes que 22 aplicar_cinco_pasos_proceso_contratacion                mi CONTINUA, 75.4 relectura conjunta la cumple
+  17 aplicar_seis_pasos_sistema_venta                        antes que 18 medir_sistema_venta_trece_indicadores_benchmark         CONTINUA de los dos                  la cumple
+  10 cambiar_saludo_cliente_dos_ramas                        antes que 12 cuantificar_impacto_innovacion_6_pasos                  CONTINUA de los dos                  la cumple
+  13 recorrer_siete_pasos_programa_desarrollo_negocio        antes que 19 construir_estrategia_gente_cuatro_componentes           D.37 de los dos                      la cumple
+   5 fingir_prototipo_cinco_mil_replicas                     antes que  6 dar_valor_constante_cuatro_publicos                     D.37 de los dos                      la cumple
+   5 fingir_prototipo_cinco_mil_replicas                     antes que  8 operar_modelo_gente_destreza_minima                     D.37 de los dos                      la cumple
+   5 fingir_prototipo_cinco_mil_replicas                     antes que 20 documentar_trabajo_manual_operaciones                   D.37 de los dos                      la cumple
+   5 fingir_prototipo_cinco_mil_replicas                     antes que  9 unificar_color_forma_vestuario_modelo                   D.37 de los dos                      la cumple
+   5 fingir_prototipo_cinco_mil_replicas                     antes que 13 recorrer_siete_pasos_programa_desarrollo_negocio        mi D.29, 75.4 relectura conjunta     la cumple
+  19 construir_estrategia_gente_cuatro_componentes           antes que 20 documentar_trabajo_manual_operaciones                   su D.37 (D76.14), 75.4               la cumple
+  14 responder_8_preguntas_construir_primary_aim             antes que 19 construir_estrategia_gente_cuatro_componentes           mi D.29 sellada, que cae en 75.4     la cumple
+  15 responder_4_preguntas_estandares_objetivo_estrategico   antes que 19 construir_estrategia_gente_cuatro_componentes           mi D.29 sellada, que cae en 75.4     la cumple
+   5 fingir_prototipo_cinco_mil_replicas                     antes que 22 aplicar_cinco_pasos_proceso_contratacion                D.36 de un solo lado                 la cumple
+  18 medir_sistema_venta_trece_indicadores_benchmark         antes que 19 construir_estrategia_gente_cuatro_componentes           D.36 de un solo lado                 la cumple
+   7 interrogar_negocio_cinco_preguntas                      antes que  8 operar_modelo_gente_destreza_minima                     D.36 de un solo lado                 la cumple
+   6 dar_valor_constante_cuatro_publicos                     antes que 11 probar_traje_azul_seis_semanas                          D.36 de un solo lado                 la cumple
+restricciones: 16 | {'la cumple': 16} | suma: 16

@@ -1,0 +1,20 @@
+| pieza | lineas | palabras | que es |
+|---|---|---:|---|
+| `R1` | L9 a L19 | **589** | residuo: rotulo y el alegato de separar desarrollo de gestion del desempenio |
+| `P1` | L21 a L33 | **477** | arrancar la revision del sistema, con sus seis rotulos |
+| `P2` | L35 a L63 | **111** | la cabeza: los trece elementos del proceso, nombrados uno a uno |
+| `P3` | L65 a L71 | **287** | elemento 1, poner nota o no |
+| `P4` | L73 a L93 | **721** | elemento 2, las categorias de la nota |
+| `P5` | L95 a L97 | **222** | elemento 3, las escaleras de puesto |
+| `P6` | L99 a L115 | **594** | elemento 4, cuantas notas |
+| `P7` | L117 a L123 | **253** | elemento 5, el lenguaje de la nota |
+| `P8` | L125 a L141 | **834** | elemento 6, las consecuencias de la nota |
+| `P9` | L143 a L151 | **328** | elemento 7, el reparto de notas |
+| `P10` | L153 a L169 | **496** | elemento 8, curva forzada o no |
+| `P11` | L171 a L185 | **841** | elemento 9, la calibracion |
+| `P12` | L187 a L195 | **287** | elemento 10, la frecuencia |
+| `P13` | L197 a L203 | **390** | elemento 11, proceso de 360 grados o juicio unilateral |
+| `P14` | L205 a L219 | **450** | elemento 12, transparente o confidencial |
+| `P15` | L221 a L239 | **699** | elemento 13, ligero o pesado |
+| `R2` | L241 a L243 | **59** | residuo: la conclusion y la direccion de correo |
+| **el cuerpo entero** | **L8 a L243** | **7638** | **suma de las piezas: 7638, residuo sin asignar: 0** |

@@ -1,0 +1,18 @@
+$ git ls-tree --name-only HEAD docs/loop/ | grep CREDITO
+docs/loop/CREDITO_serial.jsonl
+
+$ git status --short docs/loop/
+ D docs/loop/APERTURA_CIEGA.md
+ D docs/loop/CREDITO_serial.jsonl
+ D docs/loop/REPORTE.md
+ D docs/loop/loop.log
+ M docs/loop/ultimo_apertura.json
+ D docs/loop/ultimo_auditor.json
+ D docs/loop/ultimo_extractor.json
+
+$ python -c "from src import credito; print(credito.lineas_con_registro()); print(credito.nacida(credito.LINEA_SERIAL))"
+lineas_con_registro(): []
+nacida(serial): False
+
+$ ls docs/loop/CREDITO_serial.jsonl
+ls: cannot access 'docs/loop/CREDITO_serial.jsonl': No such file or directory

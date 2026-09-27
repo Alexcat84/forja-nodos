@@ -1,0 +1,85 @@
+====================================================================================================
+ajustar_franqueza_oido_oyente [ grafo ] fuentes: ['scott_radical_candor']
+  CONDICION: Cuando llevas tu forma de ser franco a otra persona, a otro equipo, a otra empresa o a otro pais, y lo que funcionaba deja de funcionar.
+  ENTREGABLE: Las dos dimensiones traducidas a la forma que esa persona o ese equipo reconoce, con el nombre local si hace falta cambiarlo.
+    1. Mide las dos dimensiones en el oido del que escucha y no en la boca del que habla, que es donde el texto dice que se miden.
+    2. No lo trates como un tipo de personalidad, ni como un talento, ni como un juicio sobre una cultura: el texto descarta los tres por su nombre.
+    3. Comprueba que la otra persona entiende que tu esfuerzo por cuidar personalmente y por desafiar directamente va de buena fe, porque el texto dice que solo asi funciona.
+    4. Cuenta con que lo que a una persona o a un equipo le parecio radicalmente franco a otro le puede parecer demasiado odioso, o demasiado sentimental.
+    5. Aumenta el ajuste segun se ensancha el salto: el texto lo ordena de menos a mas, de una empresa a otra hace falta mas ajuste, y de un pais a otro mas todavia.
+    6. Busca la forma local de cuidar personalmente, que es la primera dimension. En el equipo de Tokio la forma preferida de mostrar que les importaba era ser educados.
+    7. Busca la forma local de desafiar directamente, que es la segunda. En el equipo de Tokio la forma con la que estaban mas comodos desafiando la direccion de producto de Google era ser persistentes.
+    8. Cambia el nombre si el nombre estorba: a ese equipo la autora no le pidio franqueza radical, que dice que habria sonado demasiado agresivo, sino ser educadamente persistentes.
+====================================================================================================
+equilibrar_elogio_critica_equipo [ grafo ] fuentes: ['scott_radical_candor']
+  CONDICION: Cuando estas decidiendo cuanto elogio y cuanta critica dar a tu equipo, y cada vez que te sientas tentado de aplicar una proporcion o de envolver una critica en elogios.
+  ENTREGABLE: Mas elogio que critica y ninguna proporcion fija aplicada, ningun elogio dicho para rellenar un hueco, y la energia puesta en decir la critica sin mas y en pensar como se dice el elogio.
+    1. Da mas elogio que critica, aunque se aprenda mas de los errores que de los aciertos, y cuenta con las dos razones que el texto da: guia a la gente en la direccion correcta, porque es tan importante decirle que hacer mas como que hacer menos
+    2. Cuenta con que el mejor elogio hace mucho mas que hacer sentir bien: segun el texto, desafia directamente.
+    3. No apliques un ratio fijo de elogio a critica. El texto nombra los que circulan, tres a uno, cinco a uno y hasta siete a uno, y dice por que la nocion de un ratio correcto es peligrosa: te lleva a decir cosas antinaturales, insinceras o dir
+    4. No uses el sandwich de opinion, que es abrir y cerrar con elogio metiendo la critica en medio. El texto recoge el nombre que le puso Ben Horowitz, el sandwich de mierda, y aniade que quien lo defiende dice que funciona con gente con menos e
+    5. Cuenta con que un elogio paternalista o insincero erosiona la confianza y estropea tus relaciones tanto como una critica demasiado dura.
+    6. Cuenta con las dos formas de fallar que el texto nombra por separado: al criticar, la mayoria tiene miedo de herir y acaba por no decir nada; al elogiar, unos dicen siempre algo por agradar, a veces cosas vacuas, y otros simplemente no tien
+    7. Cuando critiques, ponte menos nervioso y concentrate en decirlo sin mas. El texto avisa de que si piensas demasiado en como decirlo es probable que te acobardes y no digas nada.
+    8. Cuando elogies, haz lo contrario: se consciente de todas las formas en que un elogio puede salir mal y pon mas energia en pensar como decirlo.
+    9. Pasa el mismo tiempo asegurandote de tener bien los hechos antes de elogiar a alguien que antes de criticarle. Son las dos preguntas que el texto recoge de Karen Sipprell, colega suya en Apple, y que presenta como instructivas.
+====================================================================================================
+cuidar_persona_completa_equipo [ grafo ] fuentes: ['scott_radical_candor']
+  CONDICION: Cuando la relacion con una persona a cargo se ha quedado en lo estrictamente profesional y quieres saber que hacer con ella, sin caer en memorizar cumpleanios ni en la charla forzada.
+  ENTREGABLE: Una relacion en la que las dos partes traen su persona entera al trabajo, con tiempo real de conversacion reservado y un espacio seguro en el que otros pueden hacer lo mismo.
+    1. Cuenta con lo que el texto pone como causa de que la gente no cuide personalmente: el mandato de mantenerlo profesional, que segun el texto niega algo esencial, y la sensacion de ser mejor o mas listo que quien trabaja para ti, que el texto
+    2. Reconoce que ser jefe es un puesto de trabajo, no un juicio de valor, que es lo que el texto pone contra ese sentido de superioridad.
+    3. No te quedes en cuidar el trabajo de la persona ni su carrera: el texto dice expresamente que eso no basta y que solo cuidando a la persona completa con tu persona completa se construye la relacion.
+    4. Busca tiempo para conversaciones de verdad, que es el primero de los medios que el texto nombra.
+    5. Conoceos mutuamente a nivel humano, que es el segundo.
+    6. Aprende que es importante para cada persona, que es el tercero.
+    7. Compartid mutuamente que os hace querer levantaros por la maniana e ir a trabajar, y que tiene el efecto contrario, que es el cuarto.
+    8. Da ejemplo tu primero mostrando alguna vulnerabilidad a tus personas a cargo, o simplemente admitiendo cuando tienes un mal dia, y crea un espacio seguro para que los demas hagan lo mismo, que es como el texto describe traer tu persona ente
+    9. No confundas esto con memorizar cumpleanios y nombres de familiares, ni con contar los detalles sordidos de tu vida personal, ni con la charla forzada en actos sociales a los que preferirias no ir: el texto descarta los tres por su nombre.
+   10. Cuenta con el precio que el texto pone al lado: tienes que cuidar profundamente de la gente estando preparado para que te odien a cambio, y si puedes absorber los golpes es mas probable que los tuyos sean buenos jefes cuando les toque. El t
+====================================================================================================
+gestionar_personas_equipo [ grafo ] fuentes: ['zhuo_manager']
+  CONDICION: Cuando revisas el cubo de las personas de tu equipo y la respuesta a alguna de las tres preguntas es que no: que no estan preparados para tener exito, que no tienen las habilidades adecuadas o que no estan motivados para hacer un gran trabajo.
+  ENTREGABLE: Las personas adecuadas para el trabajo y un entorno donde puedan prosperar, con los cuatro frentes atendidos: relaciones de confianza, fuerzas y debilidades conocidas, decisiones tomadas sobre quien hace que, y cada persona entrenada para dar lo mejor de si.
+    1. Pregunta primero si los miembros de tu equipo estan preparados para tener exito, si tienen las habilidades adecuadas y si estan motivados para hacer un gran trabajo.
+    2. Desarrolla relaciones de confianza con ellos.
+    3. Entiende las fuerzas y las debilidades de cada uno, y tambien las tuyas.
+    4. Toma buenas decisiones sobre quien debe hacer que, y eso incluye contratar y despedir cuando haga falta.
+    5. Entrena a cada persona para que de lo mejor de si.
+    6. Y cuenta con que si no tienes a las personas adecuadas para el trabajo, o no tienes un entorno donde puedan prosperar, vas a tener problemas: basta con que uno no mida bien los ingredientes de la formula, con que otro no se moleste en salud
+====================================================================================================
+imaginar_caso_simple_bragueta_abierta [ grafo ] fuentes: ['scott_radical_candor']
+  CONDICION: Cuando tienes que decirle a alguien algo que va a ser muy dificil de oir y no sabes si lo que vas a hacer es franqueza radical o no, y tambien cada vez que estas a punto de callarte algo.
+  ENTREGABLE: La cosa dificil dicha, o al menos el silencio identificado en el cuadrante que le corresponde antes de elegirlo.
+    1. Cuenta con lo que el texto avisa: decidir si estas siendo radicalmente franco o no puede ser mas dificil de lo que parece.
+    2. Usa la via que el texto propone para eso: una forma de resolver un problema dificil es pensar en uno mas simple pero parecido, recordar como lo resolviste, y aplicar esa tecnica al dificil. El texto dice que sirve igual para las situaciones
+    3. Cuando te toque decir algo muy dificil de oir, finge que solo estas diciendo llevas la bragueta abierta, o tienes espinacas entre los dientes. El texto dice que esos escenarios menos cargados ayudan a encarar los problemas grandes de forma 
+    4. Imagina el escenario entero: un colega sale del servicio con la bragueta bajada y el faldon de la camisa fuera. Que dices?
+    5. La franqueza radical es apartarlo y decirselo en voz baja, aniadiendo que a ti te agrada que te lo digan cuando te ha pasado lo mismo y que esperas que no le importe que se lo menciones.
+    6. La agresion odiosa es senialarlo en voz alta delante de otros intentando hacer gracia humillandolo a proposito. El texto aniade que aun asi no es el peor escenario desde el punto de vista del afectado, porque al menos le diste la ocasion de
+    7. La empatia ruinosa es callarte porque sabes que es timido y se va a avergonzar, con lo que lo ven diez personas mas y cuando se da cuenta es evidente que llevaba mucho rato asi, y acaba mas avergonzado que si se lo hubieras dicho en el acto
+    8. La insinceridad manipuladora es callarte pensando en tus propios sentimientos y en tu reputacion, no por el sino por ahorrartelo tu, porque te importa mucho caer bien y te preocupa que te juzguen si te oyen decirselo. Y si eres del todo des
+    9. No reserves esto para la gente que ya conoces bien. El texto avisa de que la necesidad de comunicacion honesta no siempre espera a que haya relacion estrecha, y de que el silencio de un casi desconocido invita a mas incomodidad y mas descon
+   10. Usalo en caliente como control: la proxima vez que veas una bragueta metaforica bajada y te tiente no decir nada, imagina donde te pone eso en el marco, empatia ruinosa o insinceridad manipuladora, y deja que el tironcito te mueva hacia la 
+   11. Cuenta con la regla que el texto recoge de Kim Vorrath, responsable en Apple del equipo de iOS que hizo el software del telefono: dilo sin mas.
+====================================================================================================
+usar_lenguaje_no_discriminatorio_entrevista [ grafo ] fuentes: ['smart_who']
+  CONDICION: Cuando preparas las entrevistas y los formularios escritos de un proceso de contratacion. Es la tercera de las cuatro areas de cautela legal, y se aplica a los dos sitios a la vez.
+  ENTREGABLE: Las entrevistas y los formularios escritos del proceso revisados y limpios de lenguaje que presuponga el sexo de quien va a ocupar el puesto o que resulte despectivo hacia nadie.
+    1. Usa lenguaje no discriminatorio durante las entrevistas, que es el primero de los dos sitios que el libro nombra.
+    2. Usalo tambien en los formularios escritos, que es el segundo sitio que el libro nombra.
+    3. Sustituye el supuesto de que un puesto lo tiene que desempenar un hombre o una mujer por la formula que el libro da: el o ella, o bien ellos.
+    4. No uses nunca lenguaje despectivo hacia nadie.
+====================================================================================================
+desplegar_marco_franqueza_radical [ grafo ] fuentes: ['scott_radical_candor']
+  CONDICION: Cuando estas desplegando la franqueza radical en tu equipo y crees que puede haber confusion sobre lo que significa.
+  ENTREGABLE: Copias del marco puestas a la vista y repartidas entre tus colegas, y el marco en uso como brujula de conversaciones concretas, sin nombres escritos en las casillas.
+    1. Usa la version nueva del marco de la franqueza radical que trae esta edicion, que es la forma que el propio texto propone para ayudar a que todos entiendan que la idea no es comportarse como un imbecil.
+    2. Recorta el marco del propio libro. El texto dice que hay una version mas grande en su pagina 297.
+    3. Haz fotocopias.
+    4. Ponlas en tu nevera, encima de tu mesa o en cualquier otro sitio, como recordatorio.
+    5. Comparte copias con tus colegas.
+    6. Usa el marco como una brujula, para llevar cada conversacion concreta a un sitio mejor.
+    7. No lo uses como test de personalidad para juzgarte a ti ni para juzgar a otros.
+    8. No escribas nombres en las casillas.
+    9. Cuenta con lo que el texto aniade justo despues de las dos prohibiciones: todos caemos en cada cuadrante varias veces al dia.

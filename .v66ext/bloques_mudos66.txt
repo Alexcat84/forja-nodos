@@ -1,0 +1,1 @@
+bloques abiertos con `$`: 11 | comandos `$`: 22 | comandos sin ninguna linea de salida en su bloque: 0

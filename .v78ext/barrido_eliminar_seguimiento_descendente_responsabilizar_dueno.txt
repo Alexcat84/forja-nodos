@@ -1,0 +1,1 @@
+eliminar_seguimiento_descendente_responsabilizar_dueno poblacion 479 (459 grafo mas 20 bandejas) vecinos 0

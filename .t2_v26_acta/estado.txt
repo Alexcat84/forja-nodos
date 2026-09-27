@@ -1,0 +1,12 @@
+NODOS: 222
+ARISTAS (suma nodos_siguientes): 81
+LINEAS BITACORA: 203
+  fecha 2026-09-04 1
+  fecha 2026-09-10 59
+  fecha 2026-09-11 87
+  fecha 2026-09-12 1
+  fecha 2026-09-13 55
+VEREDICTOS POR CLASE (todas): {'CONTINUA': 82, 'SANO': 121}
+FILAS DE HOY: 55
+  por clase: {'SANO': 52, 'CONTINUA': 3}
+  pares distintos de hoy: 49

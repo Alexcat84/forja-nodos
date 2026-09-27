@@ -1,0 +1,16 @@
+    $ sed -n '21p' fuentes/grove_high_output/cap_05.md
+    21: To make the most of this kind of meeting, we should aim to infuse it with regularity. In other words, the pe
+    $ sed -n '23p' fuentes/grove_high_output/cap_05.md
+    23: At Intel we use three kinds of process-oriented meetings: the one-on-one, the staff meeting, and the operati
+    $ sed -n '33p' fuentes/grove_high_output/cap_05.md
+    33: How often should you have one-on-ones? Or put another way, how do you decide how often somebody needs such a
+    $ sed -n '35p' fuentes/grove_high_output/cap_05.md
+    35: Another consideration here is how quickly things change in a job area. In marketing, for example, the pace m
+    $ sed -n '37p' fuentes/grove_high_output/cap_05.md
+    37: How long should a one-on-one meeting last? There really is no answer to this, but the subordinate must feel 
+    $ sed -n '39p' fuentes/grove_high_output/cap_05.md
+    39: Where should a one-on-one take place? In the supervisor's office, in the subordinate's office, or somewh
+    $ sed -n '41p' fuentes/grove_high_output/cap_05.md
+    41: A key point about a one-on-one: It should be regarded as the subordinate's meeting, with its agenda and to
+    $ sed -n '43p' fuentes/grove_high_output/cap_05.md
+    43: What should be covered in a one-on-one? We can start with performance figures, indicators used by the subord

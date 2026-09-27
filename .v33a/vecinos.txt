@@ -1,0 +1,146 @@
+LOS 10 VECINOS DISTINTOS QUE LA TANDA LEVANTA FUERA DE ELLA MISMA, CON SUS PASOS
+poblacion donde los busco: GRAFO (dataset, 282) MAS BANDEJAS (cuarentena, D.38.4)
+
+===== recorrer_rueda_conscientemente_cultura_equipo  [GRAFO]  (14 pasos) =====
+TITULO: Recorrer conscientemente los pasos de la rueda de hacer cosas sobre tu propia cultura, mirando la conducta y no el caracter
+ACTIVA: Cuando notas que la cultura de tu equipo refleja tu personalidad mas de lo que tu habrias elegido, y quieres influir en ella a sabiendas en vez de dejar que pase.
+   1. Parte de lo que el texto mide: la cultura de un equipo tiene un impacto enorme en sus resultados, y la personalidad de quien dirige tiene un impacto enorme en la cultura del equipo. Quien eres tu como ser humano impacta enormemente en la cultura de tu equipo.
+   2. Y parte tambien de la salida que el texto da, que es la que evita que eso te paralice: no va solo de ti. Igual que en tus evaluaciones de otros, centrate en la conducta y no en el caracter, en los actos y no en las esencias.
+   3. Pide guia con regularidad y de verdad, porque el texto dice que asi las cualidades tuyas mas flagrantes saldran inevitablemente a la luz.
+   4. E influye en tu cultura recorriendo a sabiendas los pasos de la rueda de hacer cosas, que es lo que el texto dice que hace el resto del trabajo.
+   5. Escucha contando con que estas bajo el microscopio: cuando te vuelves jefe la gente te escucha de una forma intensa que no habias vivido antes, y atribuye significado, a veces acertado y a veces no, a lo que dices, a la ropa que llevas y al coche que conduces.
+   6. Cuenta con lo que el texto dice que pasa a menudo: dices o haces algo esperando que se lo tomen a la ligera, y en realidad te has movido mucho mas alla en el eje de desafiar directamente de lo que pretendias.
+   7. Aclara lo que estas comunicando, y se vigilante con ello incluso cuando crees que no estas diciendo nada, dado el nivel de escrutinio bajo el que estas.
+   8. Comprueba para eso si tus propias conductas cuadran con la cultura que estas empujando, que es la prueba que el texto pone con su propio ejemplo: una manera de aparcar descuidada cuadraba con la cultura de pedir perdon y no permiso que ella empujaba, y si hubiera estado creando una cultura de medir dos veces y cortar una, habria tenido al menos que dar una explicacion de su manera de aparcar y probablemente habria tenido que corregirla.
+   9. Persuade prestando atencion a las cosas pequenias, porque el texto dice que eso puede tener un gran impacto en persuadir a la gente de que tu cultura merece entenderse y adaptarse a ella.
+  10. Cuenta con que el entorno de la oficina es parte de marcar el tono y la cultura, y con que no hace falta un presupuesto grande: aunque no puedas permitirte esa clase de dispendios, si puedes asegurarte de que el cafe de la cocina sea el que a la gente le gusta beber, y de ofrecer tambien unas bolsitas de te verde.
+  11. Elige a sabiendas el entorno que quieres, porque el texto dice que las elecciones pequenias que hagas persuadiran a la gente de actuar de acuerdo con la cultura que quieres construir con tu equipo: un entorno ordenado y bien iluminado, o un entorno frenetico con las cosas por todas partes.
+  12. Ejecuta contando con que un acto pequenio tuyo puede impactar la cultura de tu equipo incluso cuando tu ya no estes, que es lo que el texto dice que le sorprendio.
+  13. Aprende de lo que pasa: cuando eres el jefe y pasa algo, es tu responsabilidad aprender de ello y hacer un cambio; si no lo haces, creas una cultura que no aprende de sus errores.
+  14. Y escucha hasta el final de la rueda, con la senial que el texto da para saber que lo has conseguido: una cultura fuerte se replica sola, y sabras que has tenido exito cuando de verdad ya no vaya de ti.
+
+===== contar_cuatro_historias_propias_ver_hueco_intencion  [BANDEJA scott_radical_candor]  (17 pasos) =====
+TITULO: Contar tus cuatro historias propias del marco de la franqueza radical para ver el hueco entre lo que pretendes y el impacto que tienes, y compartirlas con tu equipo
+ACTIVA: Cuando quieres desarrollar tu consciencia de ti mismo y tu consciencia de la relacion, y vas a hacer la primera de las dos practicas que el texto desarrolla.
+   1. Parte de por que funciona, que es lo que el texto pone antes del ejercicio: contar historias es una gran manera de desarrollar a la vez la consciencia de ti mismo y la consciencia de la relacion.
+   2. Piensa primero en tu historia de franqueza radical: acuerdate de alguna vez en que la estabas liando, alguien te lo dijo, y aunque lo que te dijo escociera un poco en el momento, te ayudo a la larga.
+   3. Cuentala a tu equipo con lo que significa para ti, porque el texto dice que sera mil veces mas poderosa que la historia de la autora sobre cuando su jefa le dijo que decia um cada tres palabras en una presentacion.
+   4. Cuenta con las dos cosas que haces a la vez al mostrar algo de vulnerabilidad contandola: una, demuestras consciencia de ti mismo y humildad; dos, ensenias que de verdad agradeces la critica. Eso hara mas facil que pidas critica, y cuanta mas pidas mas consciente de ti mismo te vuelves.
+   5. Cuenta con para que sirven las otras tres, que el texto agrupa: tu historia de agresion odiosa, tu historia de insinceridad manipuladora y tu historia de empatia ruinosa te ayudaran a ti y a tu equipo a ver cuando te has caido de la meta de ser amable, o sea que trabajan la consciencia de la relacion.
+   6. Piensa en tu historia de agresion odiosa: hubo alguna vez en que ofreciste una critica solo por ayudar y el otro te vivio como odiosamente agresivo? O una vez en que estabas dando una critica pero estabas muy enfadado y quiza tus intenciones no eran tan puras?
+   7. Cava hondo ahi, que es lo que el texto pide: cual es el momento del que te encoges al mirar atras, preguntandote como pudiste comportarte de forma tan odiosa.
+   8. Cuenta la tuya y no la del libro, y el texto da la razon: tu historia es por definicion mejor que la del correo grosero sobre los sitios desordenados que la autora mando al jefe de su jefe, porque es tuya.
+   9. Cuenta con lo que esa historia consigue: te ayuda a entender el impacto que tienes en los demas, y ayuda a tu equipo a entenderte y a saber como hablarte para que puedan ensenarte cuando te estas portando como un cretino sin querer.
+  10. Piensa despues en tu historia de empatia ruinosa: cuando dejaste de dar una critica solo por ser amable, y acabaste viendo sufrir a la persona por no haber corregido una mala conducta?
+  11. No cuentes la historia de Bob del capitulo dos: cuenta la tuya, la vez en que intentabas ser amable y te diste cuenta de que habias sido cruel sin querer.
+  12. Cuenta con lo que el texto dice que construye eso: el arrepentimiento que sientes al recordar el episodio y la vulnerabilidad que ensenias al contarlo levantan tu consciencia de la relacion.
+  13. Y piensa por ultimo, y el texto avisa de que es la mas dificil de todas, en tu historia de insinceridad manipuladora: cuando no le dijiste a una persona un problema directamente y en cambio se lo contaste a otros? O le dijiste que su trabajo era bueno mientras lo socavabas por la espalda?
+  14. Cuenta con que cuesta, que es lo que el texto reconoce: es muy dificil verse a uno mismo como alguien que apunialla por la espalda, pasivo agresivo o politico, y todos somos culpables de esas conductas de vez en cuando.
+  15. Desempaqueta tus historias y compartelas con tu equipo, porque el texto dice que ahi es cuando la gente empieza a darse cuenta del hueco entre sus intenciones y el impacto que esta teniendo en los demas.
+  16. Y cuenta con lo que el texto pone como remate: la consciencia es el primer paso hacia el cambio, y puedes hacer que tu impacto encaje con tus intenciones.
+  17. Cuenta tambien con el limite que el texto pone justo despues: cada persona es distinta, asi que lo que a una le resulta util a otra puede resultarle insoportablemente doloroso. Tienes que ajustar como hablas para ser claro y amable con el otro sin sentirte un camaleon.
+
+===== proteger_tiempo_equipo_jefe  [GRAFO]  (9 pasos) =====
+TITULO: No malgastar el tiempo de tu equipo: quitar de en medio los obstaculos, las reuniones sobrantes y los mandatos de arriba
+ACTIVA: Cuando quieres que tu equipo tenga el maximo de tiempo posible para ejecutar y eres tu quien decide en que se les va ese tiempo.
+   1. Pideles que vengan a las reuniones a solas con una lista de problemas que tu puedas ayudarles a resolver.
+   2. Escucha, asegurate de haberlo entendido, y desactiva las situaciones que podrian estallarles en la cara.
+   3. Quita de en medio los obstaculos que parecen insalvables.
+   4. No convoques reuniones innecesarias ni pidas analisis innecesarios.
+   5. No llegues tarde a una reunion con nadie de tu equipo, y no toleres que nadie llegue tarde a las tuyas.
+   6. Hazles debatir como equipo, pero justo antes de que el debate empiece a hacerse pesado, identifica a un decisor y pidele que vuelva con una decision para una fecha concreta.
+   7. Enseña a los de tu equipo a ser mas persuasivos.
+   8. Cuando baje desde arriba un mandato ridiculo que solo hace perder tiempo, busca la manera de protegerles de el.
+   9. Y cuando lleguen los resultados, no los dejes pasar: haz que el equipo aprenda de lo que hizo, haya salido bien o haya salido mal.
+
+===== crear_obligacion_disentir_equipo  [GRAFO]  (5 pasos) =====
+TITULO: Crear en tu equipo la obligacion de disentir, tratando el acuerdo de todos como una bandera roja
+ACTIVA: Cuando quieres que en tu equipo haya debate de verdad y te encuentras con reuniones donde todos estan de acuerdo, o con una discusion que no acaba de ser lo bastante robusta.
+   1. Declara en tu equipo una obligacion de disentir, que es lo que McKinsey creo muy conscientemente y lo que a la autora mas le impresiono de esa empresa.
+   2. Trata como una bandera roja que todos los que estan alrededor de la mesa esten de acuerdo.
+   3. Cuando eso pase, haz que alguien tome la voz discrepante.
+   4. Si la discusion de una reunion no esta siendo lo bastante robusta, usa un objeto que pase el turno de disentir, como los mazos con el deber de disentir escrito en japones que un directivo de Apple mando hacer para el equipo que heredo en Japon.
+   5. Deslizale el objeto a alguien de la mesa como señal de que le toca tomar el punto de vista contrario. El texto dice que ese objeto tan simple fue sorprendentemente eficaz.
+
+===== decidir_quien_comunica_cada_cuanto  [GRAFO]  (6 pasos) =====
+TITULO: Decidir quien necesita comunicarse con quien y cada cuanto, minimizando el coste de cada reunion
+ACTIVA: Cuando te toca decidir que reuniones hay en tu equipo, quien va a cada una y cada cuanto, y quieres que la comunicacion fluya sin que las reuniones se coman el tiempo de todos.
+   1. Asume como una de tus responsabilidades mas importantes para que todo siga moviendose sin roces: decidir quien necesita comunicarse con quien y con que frecuencia.
+   2. Cuenta con lo que eso significa en la practica, y el texto lo dice en dos palabras: reuniones.
+   3. Cuenta tambien con que toda reunion viene con un coste significativo, que el texto nombra: el tiempo.
+   4. Minimiza por eso las tres cosas que el texto nombra una a una: la duracion, la frecuencia y el numero de personas a las que hace falta que asistan.
+   5. Empieza por la que el texto llama la mas importante de todas estas reuniones: la reunion a solas con cada persona que te reporta directamente.
+   6. Y ten delante las herramientas que el texto enumera para sacar cosas adelante juntos, que son las reuniones a solas, las reuniones de equipo, el tiempo para pensar, las reuniones de gran debate, las reuniones de gran decision, las reuniones generales, las zonas libres de reuniones, los tableros kanban, pasear por la organizacion y ser consciente de la cultura.
+
+===== minimizar_impuesto_colaboracion_equipo  [GRAFO]  (4 pasos) =====
+TITULO: Minimizar el impuesto de colaboracion de tu equipo cargando tu con el, con las tres cosas que equilibran la balanza
+ACTIVA: Cuando tus responsabilidades de jefe te estan comiendo el tiempo y a la vez tienes trabajo propio que hacer en tu especialidad, y tu equipo necesita tiempo para ejecutar.
+   1. Echate encima buena parte del impuesto de colaboracion, para que tu equipo pueda dedicar mas tiempo a ejecutar. El texto dice que eso es parte de tu puesto.
+   2. Cuenta con que las responsabilidades que tienes como jefe se llevan una cantidad tremenda de tiempo.
+   3. Cuenta tambien con que una de las cosas mas dificiles de ser jefe es equilibrar esas responsabilidades con el trabajo que tienes que hacer tu personalmente en tu especialidad.
+   4. Aplica las tres cosas que el texto dice haber aprendido sobre como acertar con ese equilibrio: no malgastes el tiempo de tu equipo, manten la tierra bajo tus uñas, y reserva tiempo para ejecutar.
+
+===== montar_reuniones_solas_mentalidad_frecuencia  [GRAFO]  (22 pasos) =====
+TITULO: Montar tus reuniones a solas con cada persona a tu cargo: la mentalidad, la frecuencia, presentarte siempre y la agenda puesta por quien te reporta
+ACTIVA: Cuando vas a montar o a arreglar las reuniones a solas con las personas que te reportan directamente, y quieres que salga de ellas lo que el texto dice que son: tu mejor oportunidad de escuchar de verdad.
+   1. Trata las reuniones a solas como tus reuniones de obligado cumplimiento: el texto dice que son tu mejor oportunidad de escuchar, escuchar de verdad, a la gente de tu equipo, para asegurarte de que entiendes su punto de vista sobre lo que funciona y lo que no.
+   2. Usalas tambien para llegar a conocer a las personas a tu cargo, que es como subes en la dimension de importarte personalmente del marco de la franqueza radical.
+   3. No las uses para soltar toda la critica que llevas guardada: el texto dice que eso va en las conversaciones improvisadas de dos a tres minutos que ya estas teniendo.
+   4. Ten claro cual es el proposito, que el texto escribe entero: escuchar y aclarar, o sea entender hacia que direccion quiere ir cada persona que trabaja para ti y que se lo esta bloqueando.
+   5. Cambia primero tu mentalidad, porque el texto dice que es lo que mas decide como salen: deja de pensar en ellas como reuniones y tratalas como si estuvieras comiendo o tomando un cafe con alguien a quien tienes ganas de conocer mejor.
+   6. Si programarlas sobre una comida ayuda, hazlas comidas periodicas.
+   7. Si a ti y a la persona os gusta andar y hay un buen sitio para pasear cerca de la oficina, hazlas paseando.
+   8. Ajusta la hora a tu energia: si eres de maniana, ponlas por la maniana; si eres de los que se desinflan a las dos de la tarde, no las pongas a las dos de la tarde.
+   9. Pero no seas un cretino con eso, que es como el texto lo dice: si a ti te gusta levantarte a las cinco e ir al gimnasio, no esperes que la gente que trabaja para ti quede alli contigo.
+  10. Pon la frecuencia contando tu propio limite, porque el texto dice que las reuniones a solas deben ser el cuello de botella natural que decide cuantas personas puede tener a su cargo un jefe: el suyo son cincuenta minutos a la semana con cada persona y no mas de unas cinco horas de reuniones a solas en el calendario, porque escuchar es trabajo duro y no hay capacidad infinita para ello; y por esa misma razon el texto dice que se limita a cinco personas a su cargo.
+  11. Si la gente esta en remoto, ten esas conversaciones por videoconferencia y complementalas con comprobaciones rapidas mas frecuentes.
+  12. Si tienes diez personas a tu cargo, pasa las reuniones a solas a veinticinco minutos a la semana.
+  13. Si tienes veinte y no hay nada que puedas hacer al respecto, ponlas de veinticinco minutos cada dos semanas con cada persona.
+  14. Y mira ademas si puedes crear oportunidades de liderazgo para la gente que trabaja para ti y reducir el numero de personas que te reportan.
+  15. Para evitar que las reuniones se multipliquen, usa el tiempo de la reunion a solas para tener las conversaciones de carrera y, si toca, para hacer las evaluaciones formales de desempenio.
+  16. Presentate: el texto dice que es probablemente el consejo mas importante de todos para las reuniones a solas.
+  17. Cuenta con la cuenta que el texto hace, para que no te pille: entre viajes, las veces que inevitablemente caeras enfermo y alguna vacacion, cancelaras al menos dos o tres de cada trece programadas; y si ademas reservas algunas para las especiales, te quedan siete u ocho normales por trimestre, o tres o cuatro si tienes mas de diez personas y las haces cada dos semanas.
+  18. Asi que no canceles tus reuniones a solas, se incendie lo que se incendie en tu dia.
+  19. Deja que la agenda la ponga y la posea la persona que te reporta, y no tu: el texto dice que asi son mas productivas, porque te dejan escuchar lo que a ellos les importa.
+  20. Pon aun asi las expectativas basicas sobre la agenda y sobre como llega: si quieres una agenda estructurada dilo, si la quieres por adelantado dilo, y si no la vas a mirar por adelantado ponlo claro tambien.
+  21. Di tambien si te vale que lleguen con unos puntos apuntados en una servilleta o si prefieres que la lleven en un documento compartido al que se pueda volver despues.
+  22. Y haz tu propio trabajo, que el texto define en una linea: pedir cuentas a quien llega sin preparar, o decidir que de vez en cuando esta bien tener una reunion a solas sin agenda.
+
+===== sostener_contacto_oferta_aceptacion  [GRAFO]  (10 pasos) =====
+TITULO: Sostener el contacto entre tu oferta y la aceptacion del candidato
+ACTIVA: Cuando ya has hecho la oferta y el candidato todavia no ha dicho que si. Es la tercera de las cinco olas de la venta, y el libro la señala como el punto donde los jefes se apartan por error.
+   1. No te apartes ahora. Muchos jefes se retiran en este punto creyendo que el futuro contratado necesita tiempo para pensarlo. Puede que lo necesite, pero esto habra sido probablemente un cortejo largo, y apartarse demasiado ahora se parece mucho a un desprecio.
+   2. En vez de meter a la persona en el congelador, da por supuesto que ha recibido una contraoferta atractiva de su empleador actual y que esta considerando otras opciones al mismo tiempo. Son jugadores A, al fin y al cabo. El silencio es tu peor enemigo en esta fase.
+   3. Manten el contacto con ella con regularidad.
+   4. Localiza con precision sus preocupaciones usando las cinco efes como guia.
+   5. Enseñale cuanto va a encajar en la empresa y cuanto va a aportar a la empresa.
+   6. Corteja a su familia.
+   7. Comprometete a darle libertad y autonomia para hacer su trabajo.
+   8. Atiende las preocupaciones economicas.
+   9. Metela en la diversion que tus empleados ya se estan dando.
+  10. No te frenes por miedo a pasarte. De vez en cuando enfriaras a un candidato por ser un pretendiente demasiado ardiente, pero la experiencia de los autores es que los jefes venden de menos mucho mas a menudo que de mas.
+
+===== centrar_debate_ideas_fuera_egos  [GRAFO]  (10 pasos) =====
+TITULO: Centrar el debate en las ideas y dejar los egos fuera, cambiando los papeles cuando alguien empieza a defender el suyo
+ACTIVA: Cuando en un debate de tu equipo empiezas a notar que la gente esta pensando voy a ganar esta discusion, o mi idea contra la tuya, en vez de buscar la mejor respuesta.
+   1. Interven en cuanto empieces a notar que la gente esta pensando voy a ganar esta discusion, o mi idea contra tu idea, o mi recomendacion contra tu recomendacion, o lo que siente mi equipo.
+   2. Redirigelos a centrarse en los hechos.
+   3. No permitas que nadie se atribuya la propiedad de una idea.
+   4. No dejes que el debate lo secuestre como puedan sentirse o no sentirse los que no estan en la sala.
+   5. Recuerdales cual es la meta: llegar a la mejor respuesta, como equipo.
+   6. Cuenta con lo que el texto dice que estas haciendo: una colaboracion de grandes cabezas, no un concurso de debate de instituto ni unas elecciones presidenciales.
+   7. Si hace falta, fija las reglas del juego al principio de la reunion.
+   8. Y si a tu equipo le va a parecer divertido y util en vez de ridiculo, pon un objeto a la puerta, del tipo guardarropa de egos.
+   9. Para que busquen la mejor respuesta en vez de la validacion de su ego, haz que cambien de papel: si alguien lleva rato defendiendo A, pidele que empiece a defender B.
+  10. Si el debate va a durar un rato, avisales de antemano de que les vas a pedir que cambien de papel. El texto dice que cuando la gente sabe que va a tener que defender el punto de vista de otro, escucha con mas atencion de forma natural.
+
+===== cuidarse_agotamiento_centro_rueda  [GRAFO]  (7 pasos) =====
+TITULO: Cuidarte a ti mismo contra el agotamiento, porque estas en el centro de la rueda y es la rueda la que se para
+ACTIVA: Cuando el trabajo y la vida personal te desbordan a la vez, que es el momento en que mas cuesta aprender de los resultados y volver a empezar el ciclo.
+   1. Cuenta con que los momentos en los que el trabajo y la vida personal te desbordan son justo los mas dificiles para aprender de tus resultados y volver a empezar el ciclo entero.
+   2. Cuida de ti mismo antes que de nada, porque estas en el centro mismo de la rueda que te mueve hacia adelante como jefe.
+   3. Cuenta con que esto se dice mas facil de lo que se hace, que es lo que el propio texto añade a continuacion.
+   4. Declina la mayor parte de las invitaciones que te llegan, para poder centrarte en la operacion y llegar a casa a cenar con los tuyos, que es lo que hacia Dick Costolo en plena tormenta de prensa.
+   5. Reacciona a los elogios desmedidos con humor a tu costa, como hacia el.
+   6. Y no finjas que no pasa nada cuando si pasa: el texto dice que Dick tampoco lo hacia, y que dio una charla a su empresa sobre la dureza mental que hace falta para mantener la confianza bajo una lluvia de malas noticias.
+   7. Bloquea en tu calendario tiempo de pensar todos los dias. El texto dice que buena parte de esa dureza mental venia de hacer cosas como bloquear dos horas de tiempo de pensar al dia.

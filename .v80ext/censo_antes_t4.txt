@@ -1,0 +1,7 @@
+$ bash .v80ext/censo.sh 2>/dev/null   # antes de la TAREA 4
+nodos en dataset/nodos.jsonl        : 479
+veredictos en bitacora              : 1225
+pares mutuos                        : 1
+bandeja cuarentena/marquet_turn_the_ship : 0
+insertados de marquet_turn_the_ship : 20
+cerrojos en procesos/               : 

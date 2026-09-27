@@ -1,0 +1,5 @@
+  cambiar_saludo_cliente_dos_ramas         previos [] | siguientes ['cuantificar_impacto_innovacion_6_pasos']
+  probar_traje_azul_seis_semanas           previos [] | siguientes []
+  cuantificar_impacto_innovacion_6_pasos   previos ['cambiar_saludo_cliente_dos_ramas'] | siguientes []
+  distinguir_tres_tipos_sistemas_negocio   previos [] | siguientes []
+lineas de la bitacora con distinguir_tres_tipos_sistemas_negocio: {'con otro nodo': 6} | suma: 6

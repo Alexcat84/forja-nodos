@@ -1,0 +1,8 @@
+$ python scripts/deuda.py --saneamiento --vuelta 54
+DECLARADA vuelta de SANEAMIENTO: 54
+
+$ python scripts/deuda.py --pagar d033 --vuelta 54 --como "..."
+PAGADA d033 en la vuelta 54
+
+$ python scripts/deuda.py --pagar d047 --vuelta 54 --como "..."
+PAGADA d047 en la vuelta 54

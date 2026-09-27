@@ -1,0 +1,7 @@
+INSERTADO ajustar_franqueza_oido_oyente                        pasos=8
+INSERTADO cuidar_persona_completa_equipo                       pasos=10
+INSERTADO delimitar_franqueza_radical_cinco_noes               pasos=9
+INSERTADO invitar_desafio_reciproco_equipo                     pasos=7
+INSERTADO manejar_enfado_persona_desafiada                     pasos=7
+INSERTADO revisar_ciclo_responsabilidades_relaciones           pasos=7
+cap_04 EN BANDEJA: 0 candidatos, 0 pasos

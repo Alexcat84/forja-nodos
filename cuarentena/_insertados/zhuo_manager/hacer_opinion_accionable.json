@@ -1,0 +1,41 @@
+{
+  "id": "hacer_opinion_accionable",
+  "titulo": "Hacer que tu opinion se pueda convertir en accion, con los tres consejos del libro",
+  "denominaciones": {
+    "nombre_largo": "La tercera de las tres preguntas: los tres consejos para que quien recibe la opinion sepa que hacer con ella",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "does my feedback lead to positive action"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando alguien ha oido tu opinion y aun asi no cambia nada, porque no ve el problema que le describes o no sabe que hacer con lo que le has dicho.",
+  "entregable_esperado": "La opinion dicha de forma que se pueda actuar sobre ella: especifica, con una imagen clara de a que se aspira, y con los proximos pasos claros o preguntados.",
+  "escala_minima": "Una sola conversacion de opinion. Los tres consejos se aplican a la vez en la misma frase.",
+  "pasos_accionables": [
+    "Parte del caso que el libro cuenta: cuando la autora pidio a alguien de su equipo que simplificara su forma de comunicar, el problema no fue que no oyera el mensaje. Lo oyo. Lo que pasaba es que no sabia que hacer con el, y por eso la opinion no sirvio de nada.",
+    "El primer consejo: haz tu opinion tan especifica como sea posible. Cuando ella le dijo que su presentacion era complicada y que a la gente le costaba entenderla, estaba dando por hecho que la definicion de complicado de el y la suya eran la misma, lo que rara vez es cierto, asi que la opinion acabo sonando vaga: que aspectos eran complicados, que se dijo exactamente que llevo a que la gente se perdiera?",
+    "Usa ejemplos claros que lleguen al por que, para que a quien la recibe le sea mas facil saber a que te refieres. Por ejemplo: perdiste a la sala cuando compartiste siete objetivos para la revision en vez de uno o dos, es dificil recordarlos todos y las prioridades quedaron poco claras.",
+    "O tambien: al final mostraste tres direcciones distintas de hacia donde podriamos ir a partir de aqui, pero no diste tu recomendacion ni como pensar los pros y los contras de cada opcion, y como resultado la gente quedo confusa sobre los proximos pasos.",
+    "El segundo consejo: aclara a que se parece y a que se siente el exito, porque aunque tu opinion sea especifica, se haya oido y se haya entendido, a la otra persona todavia puede costarle tener una imagen clara de a que deberia aspirar.",
+    "Toma el ejemplo con el que el libro lo razona. En una revision de disenio, el jefe de la autora dijo que las propuestas de un formulario de registro se sentian demasiado pesadas. Un disenador sugirio cambiar el trazo de los recuadros de azul a gris y separarlos un poco. El jefe penso un momento y dijo: piensa en las colas de Disneyland, en realidad estas esperando en una cola larguisima, pero como vas pasando de una sala pequenia a otra no se siente abrumadora, eso es a lo que voy. Al instante tuvieron claro como mejorarlo: partir el formulario largo en una serie de formularios mas pequenios.",
+    "El tercer consejo: sugiere los proximos pasos, que suele ser la manera mas facil de ayudar a tu persona a cargo a traducir tu opinion en accion.",
+    "Al sugerirlos, deja claro si estas fijando una expectativa o simplemente ofreciendo una sugerencia.",
+    "Y no te pases con esto, porque si siempre estas dictando que debe pasar despues no estas habilitando a tu equipo para aprender a resolver problemas por su cuenta: un enfoque mas suave es preguntarle a tu persona a cargo que cree ella que deberian ser los proximos pasos, y dejarla guiar la discusion.",
+    "Usa como modelo los tres ejemplos que el libro escribe: puedes dar otra pasada a este informe con los cambios que hemos hablado hoy, y monto la proxima revision para el jueves? Una sugerencia que quiza te ayude con tu proxima presentacion es usar la regla de tres, no mas de tres objetivos, tres secciones y tres vinietas por diapositiva. Y por ultimo: con lo que acabamos de hablar, cuales son tus proximos pasos?"
+  ],
+  "resumen_teorico": "Es la tercera de las tres preguntas con las que el libro manda comprobar si la opinion sirve, y la que separa que el mensaje llegue de que el mensaje se pueda usar. El caso que la abre es el mismo que abre la seccion madre, y sirve de contraejemplo exacto: el mensaje fue oido y aun asi no era accionable, porque quien lo recibio no veia el problema que se le describia. El inventario propio del libro son los tres consejos, numerados por el mismo como uno, dos y tres, y los ejemplos redactados que cuelgan de cada uno. El segundo consejo es el que menos se parece a un consejo y mas a una tecnica, y por eso el libro lo razona con el caso de la cola de Disneyland, que es una imagen y no una instruccion. Lo que el libro NO dice, y por eso no esta escrito aqui, es cuando toca fijar expectativa y cuando ofrecer sugerencia."
+}

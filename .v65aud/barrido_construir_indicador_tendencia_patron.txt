@@ -1,0 +1,1 @@
+construir_indicador_tendencia_patron poblacion 479 (366 grafo mas 113 bandejas) vecinos 6

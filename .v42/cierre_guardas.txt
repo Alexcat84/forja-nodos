@@ -1,0 +1,21 @@
+$ python scripts/cerrar_reporte.py
+  [RANCIO] veredicto resolver_dudas_frecuentes_pedir_critica contra pedir_critica_primero_crear_seguridad_psicologica (linea 506, 2026-09-18): el texto de su vecino 'pedir_critica_primero_crear_seguridad_psicologica' cambio desde que se emitio (huella bdf8b8932603d104, hoy d228fe61d4d02678)
+  [RANCIO] veredicto pedir_critica_primero_crear_seguridad_psicologica contra pedir_critica_primero_crear_seguridad_psicologica (linea 507, 2026-09-18): el texto de su vecino 'pedir_critica_primero_crear_seguridad_psicologica' cambio desde que se emitio (huella bdf8b8932603d104, hoy d228fe61d4d02678)
+
+Un rancio NO SE CITA COMO VIGENTE: se relee con el texto de hoy, o se
+declara por que sigue valiendo. Las dos cosas las hace una persona, y
+por eso esto no pone el gate en rojo (D.15).
+[cierre] tallado del reporte (D.41)
+[cierre] censo de rutas (D.42)
+[cierre] tabla de cierre de tareas (D.52)
+[cierre] gate de integridad
+[cierre] barrido de guiones
+[cierre] prueba de aceptacion
+[cierre] vigencia de los veredictos (D.15): COLA DE TRABAJO, no guarda
+
+LA VIGENCIA TIENE COLA, Y ESO NO PONE EL CIERRE EN ROJO (D.15).
+Un rancio no se cita como vigente: se relee con el texto de hoy,
+o se declara por que sigue valiendo. Las dos cosas las hace una
+persona, y por eso esto no pone nada en rojo.
+
+CIERRE VERDE: las cuatro guardas que muerden, el tallado y el censo. La vigencia corrio y publico su cuenta arriba: es cola, no guarda (D.15).

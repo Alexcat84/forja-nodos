@@ -1,0 +1,12 @@
+    ficha                                                  antes   despues  digitos  sede del digito
+    infundir_regularidad_reunion_proceso                    6251      8590        0  .v51/aduana_c1.txt
+    usar_tres_clases_reunion_proceso                        6728      9067        0  .v51/aduana_c2.txt
+    fijar_frecuencia_reunion_individual_madurez_tarea       9623     11944        1  .v51/aduana_c3.txt
+    fijar_duracion_lugar_reunion_individual                 9123     11444        1  .v51/aduana_c4.txt
+    preparar_guion_reunion_individual_subordinado           9796     12131        3  .v51/aduana_c5.txt
+    cubrir_indicadores_problemas_reunion_individual        10675     13017        4  .v51/aduana_c6.txt
+
+    fichas corregidas                       : 6
+    digitos de senial que llevaban dentro   : 9
+    ASERCION: solo cambia resumen_teorico, el viejo es PREFIJO del nuevo,
+              pasos, titulo y atribuciones identicos en las 6. TODAS PASARON.

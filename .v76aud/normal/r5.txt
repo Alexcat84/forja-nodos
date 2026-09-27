@@ -1,0 +1,4 @@
+$ python .v76aud/normal/pegado76_aud.py; python .v76aud/normal/bloques_mudos76_aud.py
+bloques abiertos con `$` en el tramo de la vuelta 76 : 30
+bloques que ROMPEN R1 (ACTA 60 60.15)                : 0
+bloques abiertos con `$`: 19 | comandos `$`: 30 | comandos sin ninguna linea de salida en su bloque: 0

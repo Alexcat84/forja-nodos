@@ -1,0 +1,36 @@
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 344   (203 del grafo mas 141 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 0
+  BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+  vecinos levantados en total      : 3
+  por candidato bloqueado          : menor 3, mediana 3, mayor 3
+  que señal levanta cada vecindad  : similitud_texto 3
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] hacer_critica_pares_transparente_ensenar_escribirla   (hacer_critica_pares_transparente_ensenar_escribirla.json)
+    vecino montar_evaluacion_360_grados_ligera_pares  [levantada por: similitud_texto]
+      similitud_texto 0.383 | familia_id 0.100 | paso_contra_nodo 0.510
+      paso 6 del candidato contra paso 1 de montar_evaluacion_360_grados_ligera_pares
+    vecino calibrar_notas_reunion_jefes_pares  [levantada por: similitud_texto]
+      similitud_texto 0.371 | familia_id 0.100 | paso_contra_nodo 0.463
+      paso 5 del candidato contra paso 10 de calibrar_notas_reunion_jefes_pares
+    vecino decidir_poner_nota_comunicar_proposito_limites  [levantada por: similitud_texto]
+      similitud_texto 0.371 | familia_id 0.000 | paso_contra_nodo 0.453
+      paso 9 del candidato contra paso 8 de decidir_poner_nota_comunicar_proposito_limites
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.

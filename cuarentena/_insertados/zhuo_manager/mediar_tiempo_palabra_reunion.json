@@ -1,0 +1,36 @@
+{
+  "id": "mediar_tiempo_palabra_reunion",
+  "titulo": "Mediar el tiempo de palabra cuando unos pocos dominan la reunion",
+  "denominaciones": {
+    "nombre_largo": "Las intervenciones del que modera, con la frase literal de cada una, y lo que la incomodidad de interrumpir compra a cambio",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "manage equal airtime"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando tus reuniones tienden a estar dominadas por unos pocos individuos.",
+  "entregable_esperado": "Una reunion en la que quien fue interrumpido termina su frase, quien buscaba hueco lo recibe, quien callaba es preguntado, y quien habla de mas cede el turno.",
+  "pasos_accionables": [
+    "Si tus reuniones tienden a estar dominadas por unos pocos individuos, prueba a mediar la cantidad de tiempo de palabra que recibe cada uno.",
+    "Manten la vigilancia sobre las interrupciones. Si alguien empieza a exponer un punto y otra voz mas alta le corta, dale cobertura diciendo: espera, Ana no habia terminado. El libro anade que hacer esto, de propina, refuerza tu propia credibilidad.",
+    "Si ves a alguien buscando meter baza, ayudale a abrir el hueco: parece que Juan quiere decir algo. La autora cuenta que un colega hizo eso por ella una vez en una revision con veinte personas, y que todavia recuerda la oleada de gratitud que sintio.",
+    "Prueba las preguntas dirigidas, que el libro atribuye a los directivos especialmente perceptivos: Susana, te veo con cara de duda, que crees que deberiamos hacer? O bien: Ricardo, todavia no te hemos oido, cual es tu opinion?",
+    "Con los que hablan de mas, se claro pero educado al hacerles saber que es el turno de otro: Ivan, esta claro que tienes mas cosas que decir, pero vamos a asegurarnos primero de que otras personas tienen ocasion de opinar. O bien: Laura, te oigo decir que crees firmemente que deberiamos hacer X, y antes de cerrar, tiene alguien otra opinion? Quiero asegurarme de que se oyen todos los puntos de vista.",
+    "Cuenta con que no siempre resulta comodo interrumpir a otros y llevar asi el flujo de la conversacion, y hazlo igual por lo que senala: manda una senal fuerte de que crees que los mejores resultados vienen de oir una diversidad de perspectivas."
+  ],
+  "resumen_teorico": "Es la tercera tactica del capitulo para hacer seguro contribuir, y la unica que se ejecuta en tiempo real dentro de la reunion en vez de en su diseno. Lo que la hace procedimentable son las frases: el libro no dice modera con tacto, sino que pone entre comillas la intervencion concreta para cada uno de los cuatro casos, el interrumpido, el que busca hueco, el que calla y el que habla de mas. Los nombres propios de los ejemplos estan castellanizados porque son ejemplos y no personas reales del libro. El paso 6 esta escrito porque el libro cierra la seccion reconociendo la incomodidad en vez de negarla, y eso es parte del procedimiento y no un adorno. Lo que el libro NO dice, y por eso no esta escrito aqui, es que hacer si el que habla de mas es tu propio jefe, ni cuantas veces se puede intervenir antes de que la mediacion sea peor que el problema."
+}

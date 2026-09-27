@@ -1,0 +1,48 @@
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 347   (255 del grafo mas 92 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 0
+  BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+  vecinos levantados en total      : 7
+  por candidato bloqueado          : menor 7, mediana 7, mayor 7
+  que señal levanta cada vecindad  : familia_id 2, similitud_texto 5
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] reservar_calendario_tiempo_ejecutar   (reservar_calendario_tiempo_ejecutar.json)
+    vecino bloquear_tiempo_pensar_calendario  [levantada por: familia_id]
+      similitud_texto 0.279 | familia_id 0.333 | paso_contra_nodo 0.519
+      paso 4 del candidato contra paso 3 de bloquear_tiempo_pensar_calendario
+    vecino proteger_tiempo_equipo_jefe  [levantada por: similitud_texto]
+      similitud_texto 0.409 | familia_id 0.143 | paso_contra_nodo 0.465
+      paso 3 del candidato contra paso 6 de proteger_tiempo_equipo_jefe
+    vecino cambiar_posicion_hechos_explicar_cambio  [levantada por: similitud_texto]
+      similitud_texto 0.376 | familia_id 0.000 | paso_contra_nodo 0.448
+      paso 1 del candidato contra paso 1 de cambiar_posicion_hechos_explicar_cambio
+    vecino mantener_manos_trabajo_real_equipo  [levantada por: similitud_texto]
+      similitud_texto 0.373 | familia_id 0.000 | paso_contra_nodo 0.444
+      paso 1 del candidato contra paso 1 de mantener_manos_trabajo_real_equipo
+    vecino parar_debate_emocion_agotamiento  [levantada por: similitud_texto]
+      similitud_texto 0.404 | familia_id 0.000 | paso_contra_nodo 0.406
+      paso 2 del candidato contra paso 3 de parar_debate_emocion_agotamiento
+    vecino reservar_tiempo_reflexion_metas  [levantada por: familia_id]
+      similitud_texto 0.177 | familia_id 0.333 | paso_contra_nodo 0.404
+      paso 2 del candidato contra paso 3 de reservar_tiempo_reflexion_metas
+    vecino crear_obligacion_disentir_equipo  [levantada por: similitud_texto]
+      similitud_texto 0.388 | familia_id 0.000 | paso_contra_nodo 0.379
+      paso 4 del candidato contra paso 3 de crear_obligacion_disentir_equipo
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.

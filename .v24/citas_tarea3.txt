@@ -1,0 +1,11 @@
+$ sed -n "27p" fuentes/scott_radical_candor/cap_09.md
+Here are some tips/techniques I’ve seen work to get the conversation flowing:
+
+$ grep -c "the four\|four tips\|four elements" fuentes/scott_radical_candor/cap_09.md
+0
+
+$ sed -n "113p" fuentes/scott_radical_candor/cap_13.md
+We hope a story and some research better explain why you should prove you can take it before you dish out Radical Candor. But how can you solicit criticism? We’d like to go into more detail on each of the four tips for soliciting criticism offered in the book.
+
+$ sed -n "237p" fuentes/scott_radical_candor/cap_13.md | sed "s/\xe2\x80\x94/, /g"   (el guion largo del libro cambiado por coma, declarado)
+Now that you’ve practiced the four elements of soliciting criticism, coming up with a go-to question, embracing the discomfort, listening with the intent to understand, and making listening tangible by rewarding the candor, you’re ready to put the four things together and make soliciting feedback a habit.

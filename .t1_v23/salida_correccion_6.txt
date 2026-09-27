@@ -1,0 +1,6 @@
+| | |
+|---|---|
+| **fichero** | `cuarentena/scott_radical_candor/preguntar_seguimiento_hallar_huecos.json` |
+| **decia** | `Ese procedimiento ya vive en la bandeja como impedir_punialadas_espalda_equipo, y la arista va declarada en docs/loop/REPORTE.md de la vuelta 22.` |
+| **dice** | `Ese procedimiento ya vive en la bandeja como impedir_punialadas_espalda_equipo, y EL PAR SE DECLARA COMO LECTURA SIN ARISTA: sin paso en la madre no hay linea que citar, y una arista sin su linea es una afirmacion sin cita.` |
+| **pasos, contados del fichero antes y despues** | **16** y **16** |

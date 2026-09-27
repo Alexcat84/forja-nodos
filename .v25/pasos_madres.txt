@@ -1,0 +1,57 @@
+==============================================================================
+LAS OCHO ARISTAS ADJUDICADAS, CONTRA EL FICHERO DE SU MADRE
+==============================================================================
+
+madre : fijar_cuatro_notas_calcular_nota_global   [bandeja, 12 pasos]
+hijo  : elegir_categorias_nota_palabras_propias_empresa   [bandeja]
+paso  : 8 de 12  ->  EXISTE: SI     libro: L109
+  P8: Cuenta con lo que cuatro notas por separado en cada una de las categorias elegidas permiten: que la evaluacion sirva de diagnostico para mejorar, del tipo tus resultados son asombrosos pero tu trabajo en equipo te va a frenar, y no solo de latigo o de zanahoria como hace una nota global unica.
+  CABLEABLE HOY: NO, madre bandeja e hijo bandeja
+
+madre : repartir_notas_publicar_reparto_esperado   [bandeja, 9 pasos]
+hijo  : calibrar_notas_reunion_jefes_pares   [bandeja]
+paso  : 3 de 9  ->  EXISTE: SI     libro: L145 y L151
+  P3: Cuenta con lo que el texto dice que es lo mas importante en general: el proceso de calibracion.
+  CABLEABLE HOY: NO, madre bandeja e hijo bandeja
+
+madre : presionar_curva_notas_evitar_forzarla   [bandeja, 11 pasos]
+hijo  : calibrar_notas_reunion_jefes_pares   [bandeja]
+paso  : 11 de 11  ->  EXISTE: SI     libro: L169
+  P11: Cuenta con hacia donde se tuerce la mayoria, que es lo que el texto dice que hace importantes las sesiones de calibracion: casi todos los jefes se quedan en el medio tirando hacia lo positivo, y dan demasiadas notas buenas y medias y demasiado pocas altas y bajas.
+  CABLEABLE HOY: NO, madre bandeja e hijo bandeja
+
+madre : evaluar_desempenio_dos_veces_anio   [bandeja, 11 pasos]
+hijo  : montar_evaluacion_360_grados_ligera_pares   [bandeja]
+paso  : 6 de 11  ->  EXISTE: SI     libro: L191
+  P6: Haz la otra escrita, e incluye en ella un componente ligero de trescientos sesenta grados.
+  CABLEABLE HOY: NO, madre bandeja e hijo bandeja
+
+madre : hacer_critica_pares_transparente_ensenar_escribirla   [bandeja, 11 pasos]
+hijo  : montar_evaluacion_360_grados_ligera_pares   [bandeja]
+paso  : 1 de 11  ->  EXISTE: SI     libro: L207
+  P1: Ten delante la decision, que el texto plantea asi: si haces critica de trescientos sesenta grados, tienes que decidir si sera transparente, es decir que lo que la gente escribe de sus companeros sea visible para esos companeros, o confidencial, es decir visible solo para los jefes de esos companeros.
+  CABLEABLE HOY: NO, madre bandeja e hijo bandeja
+
+madre : mantener_proceso_evaluacion_ligero_vigilar_crecimiento   [bandeja, 13 pasos]
+hijo  : montar_evaluacion_360_grados_ligera_pares   [bandeja]
+paso  : 6 de 13  ->  EXISTE: SI     libro: L231
+  P6: Monta la herramienta de evaluacion ligera igual que la herramienta de trescientos sesenta grados: que pida a los jefes calificar a sus empleados en cada categoria, y que les pida meter texto cuando el empleado esta en las dos notas de abajo o en las dos de arriba.
+  CABLEABLE HOY: NO, madre bandeja e hijo bandeja
+
+madre : mantener_proceso_evaluacion_ligero_vigilar_crecimiento   [bandeja, 13 pasos]
+hijo  : hacer_critica_pares_transparente_ensenar_escribirla   [bandeja]
+paso  : 5 de 13  ->  EXISTE: SI     libro: L231
+  P5: Recuerda que el proceso tardara menos y sera mas radicalmente franco si toda la critica de trescientos sesenta grados es transparente: no tener que sintetizar ni anonimizar esa critica recorta el tiempo que los jefes tienen que dedicar a escribir la critica de cada persona a su cargo.
+  CABLEABLE HOY: NO, madre bandeja e hijo bandeja
+
+madre : montar_evaluacion_360_grados_ligera_pares   [bandeja, 10 pasos]
+hijo  : elegir_categorias_nota_palabras_propias_empresa   [bandeja]
+paso  : 6 de 10  ->  EXISTE: SI     libro: L201
+  P6: Aligera la evaluacion entre pares con lo que el texto recomienda, y es lo primero: pide simplemente a los empleados que califiquen a sus pares en cada uno de los cuatro criterios.
+  CABLEABLE HOY: NO, madre bandeja e hijo bandeja
+
+==============================================================================
+RESUMEN
+==============================================================================
+aristas con el paso de la madre EXISTENTE : 8 de 8
+aristas con LOS DOS extremos en el grafo  : 0 de 8

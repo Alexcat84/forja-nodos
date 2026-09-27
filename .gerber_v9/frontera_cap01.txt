@@ -1,0 +1,12 @@
+AVISO: cero celdas tecleadas en este instrumento. El arranque del cuerpo NO
+es una constante mia: sale de fuentes/gerber_emyth/cap_01.md, linea 8, que es la siguiente al segundo
+--- de la cabecera yaml (cierres en L1 y L7). El cuerpo va de L8 a L71.
+
+| pieza | lineas | palabras | que es | clase |
+|---|---|---:|---|---|
+| `R1` | L8 a L10 | **1** | el rotulo FOREWORD | **RESIDUO: rotulo** |
+| `R2` | L11 a L66 | **1393** | el prefacio del autor a la edicion revisada: quince anios desde The E-Myth original, su vida personal (familia, matrimonio, nietos), la pregunta de que saben los duenos de negocios extraordinarios, la insistencia en la atencion a los detalles pequenos hechos exactamente bien, y la presentacion de Sarah como interlocutora del libro; cero pasos, cero medio nombrado, cero inventario de etapas u objetos | **POSTURA: prefacio personal, sin inventario propio** |
+| `R3` | L67 a L71 | **8** | la firma: Michael E. Gerber, Santa Rosa California, junio 2001 | **RESIDUO: firma** |
+| **el cuerpo entero** | **L8 a L71** | **1402** | **suma de las piezas: 1402** | **residuo sin asignar: 0** |
+
+piezas: 3   lineas solapadas: 0   lineas sin cubrir: 0   cuerpo 1402   suma 1402   residuo 0

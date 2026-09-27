@@ -1,0 +1,142 @@
+BANDEJA  abrazar_incomodidad_arrancar_critica_equipo                Abrazar la incomodidad para arrancarle la critica a tu equipo, con los seis consejos que el texto nombra uno a uno
+BANDEJA  abrazar_incomodidad_silencio_contar_seis                   Abrazar la incomodidad del silencio despues de pedir critica, aguantandolo mientras cuentas hasta seis en tu cabeza
+GRAFO    abrir_debate_humor_explicar_proposito                      Abrir un debate con humor y explicando para que sirve, porque el tono con que se lanza marca el de todo lo que viene detras
+GRAFO    acompaniar_mejores_equipo_socio                            Acompaniar a los que hacen el mejor trabajo como socio, ni de jefe ausente ni de microgestor
+GRAFO    adaptar_escucha_cultura_ajena                              Adaptar tu forma de escuchar cuando entras en una cultura que no es la tuya, empezando por los errores que traes de la tuya
+BANDEJA  admitir_pronto_mal_desempenio_cuatro_razones               Admitir pronto que alguien de tu equipo empieza a rendir por debajo, con las cuatro razones que el texto numera para no esperar
+BANDEJA  agendar_cuidados_propios_cumplirlos                        Poner en el calendario lo que necesitas hacer por ti, y despues presentarte a esas citas como te presentarias a una con tu jefe
+GRAFO    ajustar_franqueza_oido_oyente                              Ajustar la franqueza radical al oido del que escucha y no a la boca del que habla, buscando la forma local de cada dimension
+BANDEJA  aplicar_consecuencias_nota_apoyar_fuerzas_persona          Aplicar las consecuencias de la nota sin dejar que la persona se hunda en lo negativo, apoyandose en sus fuerzas y con el plan que la nota mas baja obliga a abrir
+GRAFO    aprender_resultados_vencer_dos_presiones                   Aprender de los resultados venciendo las dos presiones que empujan a dejar de aprender
+BANDEJA  armar_plan_anual_crecimiento_equipo                        Armar una vez al anio el plan de gestion del crecimiento de cada persona del equipo, desde poner los nombres en las casillas hasta comprobar la equidad entre niveles
+GRAFO    bajar_detalle_organizacion_fuente_hechos                   Bajar al detalle de tu organizacion y buscar los hechos en su fuente, sin dejar que te lleguen filtrados por capas
+BANDEJA  bloquear_tiempo_pensar_calendario                          Bloquear tiempo para pensar en tu calendario y mantener ese tiempo sagrado
+BANDEJA  calibrar_ascensos_evitar_politica                          Calibrar los ascensos con tus iguales y conducir esa reunion sin que la politica la arruine, con los consejos que el texto da
+BANDEJA  calibrar_decision_despido_documentarla                     Calibrar la decision de despido con tu jefe, tus iguales y recursos humanos, y documentarla haciendo que alguien con experiencia edite lo que escribes
+BANDEJA  calibrar_notas_reunion_jefes_pares                         Calibrar las notas en una reunion de jefes pares, forzando la conversacion dura en vez de ajustar las notas tu, y mirar el reparto por nivel
+GRAFO    cambiar_posicion_hechos_explicar_cambio                    Cambiar de posicion cuando cambian los hechos, y explicar el cambio en voz alta en vez de dejar que se note
+GRAFO    cambiar_potencial_trayectoria_crecimiento                  Cambiar la palabra potencial por trayectoria de crecimiento y hacer con el equipo el ejercicio de las dos columnas
+BANDEJA  ceder_autoridad_unilateral_equipo                          Soltar la autoridad unilateral sobre tu equipo para que se sientan libres en el trabajo, sin caer en la abdicacion
+BANDEJA  centrar_debate_ideas_fuera_egos                            Centrar el debate en las ideas y dejar los egos fuera, cambiando los papeles cuando alguien empieza a defender el suyo
+BANDEJA  compartir_logica_mostrar_razonamiento                      Compartir tu logica mostrando el razonamiento entero y no solo la conclusion
+BANDEJA  comprobar_criticas_hombre_mujeres_equipo                   Comprobar si te estas conteniendo al criticar a las mujeres de tu equipo, preguntandoselo a ellas y pidiendoles que te midan
+BANDEJA  conducir_reunion_equipo_agenda_tres_bloques                Conducir la reunion semanal de equipo con la agenda de tres bloques del texto: aprender, escuchar y aclarar, sin debatir ni decidir dentro
+BANDEJA  conducir_reuniones_salto_nivel_diez_reglas                 Conducir reuniones de salto de nivel con el equipo de cada persona a tu cargo, siguiendo las diez reglas generales que el texto da
+BANDEJA  construir_confianza_equipo_tiempo_solas                    Construir la confianza con cada persona de tu equipo pasando tiempo a solas con ella con regularidad, sin asumir de golpe mas confianza de la que hay
+BANDEJA  contactar_despedido_mes_despues                            Contactar a la persona que despediste un mes despues, sin insistir si no contesta, que es la coda fuera de la serie de tres
+BANDEJA  contar_cuatro_historias_propias_ver_hueco_intencion        Contar tus cuatro historias propias del marco de la franqueza radical para ver el hueco entre lo que pretendes y el impacto que tienes, y compartirlas con tu equipo
+BANDEJA  contar_historias_propias_explicar_franqueza_radical        Contar a tu equipo tus propias historias para explicarle la franqueza radical, en vez de prestarle la teoria o las historias de otro
+BANDEJA  conversar_historia_vida_descubrir_motivadores              Conversar la historia de vida de cada persona a tu cargo para descubrir que la motiva, que es la primera de las tres conversaciones de carrera
+BANDEJA  conversar_suenios_cruzar_habilidades                       Conversar los suenios de cada persona a tu cargo y cruzarlos con sus habilidades en un cuadro, que es la segunda de las tres conversaciones de carrera
+BANDEJA  correr_semana_arreglo_averias_gestion                      Correr una semana de arreglo de averias de gestion, con el registro publico, la votacion y el reparto que el texto describe
+BANDEJA  crear_cultura_escucha_equipo                               Crear una cultura en la que tu equipo se escuche entre si, con un sistema simple de ideas y quejas que alguien atiende y explica
+BANDEJA  crear_espacio_seguro_madurar_ideas_nuevas                  Crear un espacio seguro donde una idea nueva madure antes de entrar en el debate, ayudando a pensar en vez de pedir soluciones
+BANDEJA  crear_obligacion_disentir_equipo                           Crear en tu equipo la obligacion de disentir, tratando el acuerdo de todos como una bandera roja
+GRAFO    criticar_trabajo_evitar_desanimo                           Criticar el trabajo sin desanimar a la persona, con la lista que el texto pone y el error de atribucion evitado
+GRAFO    cuidar_persona_completa_equipo                             Cuidar a la persona completa de cada miembro del equipo, con los cuatro medios que el libro nombra y los tres que descarta
+BANDEJA  cuidarse_agotamiento_centro_rueda                          Cuidarte a ti mismo contra el agotamiento, porque estas en el centro de la rueda y es la rueda la que se para
+GRAFO    dar_critica_inmediata_ayuda_tangible                       Dar la critica en el acto sin dejar que el buen resultado la tape, y ofrecer ayuda tangible con ella
+BANDEJA  dar_elogio_disciplina_igual_critica                        Dar elogio con la misma disciplina que pones en la critica, comprobando los hechos antes y diciendolo concreto, porque el elogio es el acelerador y la critica el freno
+BANDEJA  dar_guia_acto_cinco_consejos                               Dar la guia en el acto y en tres minutos entre reuniones, con la excepcion que el texto declara y su limite
+BANDEJA  dar_guia_humilde_tres_tecnicas                             Dar elogio y critica con humildad, con las tres tecnicas que el texto nombra y atribuye una a una
+BANDEJA  dar_guia_util_cuatro_recordatorios                         Dar guia que ayude de verdad, declarando tu intencion, mostrando en vez de contar, y buscando la ayuda en vez de darla tu
+BANDEJA  debatir_decidir_asuntos_cultura_evitar_delegar             Debatir y decidir tu misma los asuntos de cultura que te tienta delegar a recursos humanos, para que no los decidan sin tu influencia humanizadora ni se queden sin decidir
+GRAFO    decidir_momento_despedir_persona                           Decidir si ha llegado el momento de despedir, con las tres preguntas del texto y las cuatro mentiras que lo retrasan
+BANDEJA  decidir_poner_nota_comunicar_proposito_limites             Decidir si pones nota de desempenio pesando las pegas y los beneficios que el texto nombra, y comunicar su proposito y sus limites si la pones
+BANDEJA  decidir_quien_comunica_cada_cuanto                         Decidir quien necesita comunicarse con quien y cada cuanto, minimizando el coste de cada reunion
+BANDEJA  definir_receta_propia_mantenerse_centrado                  Averiguar cual es tu receta para mantenerte centrado y cumplirla, sobre todo cuando los tiempos se ponen duros
+GRAFO    delimitar_franqueza_radical_cinco_noes                     Delimitar la franqueza radical por lo que no es, con los cinco noes del texto y la regla de las tres cosas sin decir
+BANDEJA  demostrar_apertura_visiones_distintas                      Demostrar apertura hacia quien tiene otra vision del mundo, empezando por el respeto basico y acabando por el lenguaje que usas
+GRAFO    descubrir_motivacion_sentido_persona                       Descubrir de donde saca cada persona el sentido de su trabajo, en vez de proveerle tu un proposito
+GRAFO    despedir_persona_franqueza_radical                         Despedir con franqueza radical, sin distanciarte de la persona y con el trabajo siguiente imaginado antes de la reunion
+GRAFO    desplegar_marco_franqueza_radical                          Desplegar el marco de la franqueza radical como recordatorio, con su regla de uso y sus dos prohibiciones
+BANDEJA  desplegar_plan_orden_operaciones_franqueza_radical         Desplegar en tu equipo el plan de franqueza radical por el orden de operaciones que el texto pone, etapa a etapa y con su parada de evaluacion en medio
+BANDEJA  desplegar_tres_conversaciones_carrera                      Desplegar con tu equipo la serie de tres conversaciones de carrera, con su cadencia y su encargo de ensenarlas a tus jefes
+BANDEJA  dominar_arte_socializar_trabajo                            Dominar el arte de socializar en el trabajo, sabiendo que a la gente la conoces trabajando y no en la fiesta anual
+BANDEJA  dominar_reacciones_emociones_ajenas                        Dominar tus reacciones ante las emociones de los demas, sin intentar prevenirlas, controlarlas ni manejarlas
+BANDEJA  elegir_categorias_nota_palabras_propias_empresa            Elegir tres o cuatro categorias de nota y expresarlas con las palabras de tu empresa, con las cuatro genericas que el texto pone de ejemplo
+BANDEJA  elegir_medio_dar_guia_jerarquia_modos                      Dar la guia en persona siempre que se pueda, y cuando no, elegir el medio por la jerarquia de modos que el texto ordena
+BANDEJA  elegir_palabras_nota_definirlas_empresa_entera             Elegir palabras y no numeros para la nota, y definir cada una en dos o tres frases para la empresa entera
+BANDEJA  elegir_pregunta_recurrente_pedir_critica                   Elegir tus preguntas recurrentes para pedir critica, con los cuatro atributos que el texto da y la prueba de campo con un companiero de confianza
+BANDEJA  elogiar_publico_criticar_privado_sus_tres_matices          Elogiar en publico y criticar en privado, con las tres cosas que el texto dice que hay que pensar antes de aplicarlo
+GRAFO    elogiar_trabajo_especifico_contexto                        Elogiar el trabajo con el porque dentro, contextualizado y sincero, y averiguar quien hizo que antes de elogiar en publico
+GRAFO    empezar_cultura_franqueza_radical                          Empezar una cultura de franqueza radical por el orden que el texto pone, pidiendo antes que dando
+BANDEJA  entregar_evaluacion_formal_desempenio_nueve_consejos       Entregar bien una evaluacion formal de desempenio con los nueve consejos que el texto da, de no dar sorpresas a dejar la nota para el final
+GRAFO    equilibrar_elogio_critica_equipo                           Dar mas elogio que critica sin usar ningun ratio fijo, y repartir tu energia al reves de como te sale
+BANDEJA  escribir_apuntes_sala_estudio_equipo                       Escribir y leer los apuntes de la semana dentro de la propia reunion, como sala de estudio, en vez de contarlos en voz alta o dejarlos a que cada cual los ponga por su cuenta
+BANDEJA  escribir_escaleras_puesto_evitar_dos_extremos              Escribir las escaleras de puesto evitando los dos extremos que el texto nombra, con los operativos redactando y recursos humanos editando
+BANDEJA  escuchar_callado_equipo_tranquilizar_incomodo              Escuchar en silencio para oir lo que no quieres oir, y tranquilizar a quien tu silencio incomoda
+BANDEJA  escuchar_entender_critica_dominar_defensa                  Escuchar la critica con intencion de entender y no de responder, dominando tu propia defensa con la practica de escuchar tres minutos sin interrumpir
+BANDEJA  escuchar_ruidoso_opinion_fuerte_pedir_agujeros             Escuchar en voz alta poniendo una opinion fuerte encima de la mesa y pidiendo que le hagan agujeros
+BANDEJA  establecer_credibilidad_pericia_humildad                   Establecer tu credibilidad demostrando pericia y humildad, y ayudar a que la establezcan los que deciden en tu equipo
+BANDEJA  evaluar_desempenio_dos_veces_anio                          Evaluar el desempenio dos veces al anio, una ligera y oral y otra escrita, sin confundir la frecuencia de la nota con la del desarrollo
+BANDEJA  evitar_obsesion_ascenso_estatus                            Evitar que el ascenso y el estatus se conviertan en obsesion cuando vas a anunciar ascensos o a elogiar en publico
+BANDEJA  evitar_personalizar_guia_aceptar_personal                  Evitar personalizar la guia y aceptar a la vez que para quien la recibe es personal, con la frase que se retira del vocabulario
+BANDEJA  evitar_presion_social_actos_equipo                         Evitar que un acto no obligatorio se sienta obligatorio, y que el intento de hacer equipo acabe empeorando el animo
+BANDEJA  exigir_critica_jefe_reticente                              Exigir la critica que tu jefe no se atreve a darte, con las tres frases del texto y el silencio contado hasta seis
+BANDEJA  explicar_idea_facil_comprender_oyente                      Explicar una idea de forma que sea imposible no entenderla, cargando tu con la responsabilidad de que se entienda
+BANDEJA  facilitar_despido_tres_cosas                               Facilitar un despido con las tres cosas que el texto cuenta, situandolo entre los dos errores opuestos de la empresa que despide demasiado facil y la que lo hace casi imposible
+BANDEJA  fijar_cuatro_notas_calcular_nota_global                    Fijar cuatro notas en vez de mas o menos, y calcular la nota global sin promediar las categorias
+BANDEJA  fijar_fecha_cierre_debate_equipo                           Fijar por escrito cuando termina el debate, y no arrebatar la decision solo porque el debate se ha vuelto doloroso
+BANDEJA  fomentar_guia_reciproca_companieros                        Fomentar la guia entre pares con el premio nominado y la metedura de pata contada por uno mismo, y no con una herramienta que la sustituya
+BANDEJA  hacer_critica_pares_transparente_ensenar_escribirla        Hacer transparente la critica entre pares en vez de confidencial, extenderla a toda la plantilla y ensenar a escribirla
+GRAFO    imaginar_caso_simple_bragueta_abierta                      Imaginar el caso simple de la bragueta abierta antes de decir algo dificil, y mirar en que cuadrante cae tu silencio
+BANDEJA  impedir_punialadas_espalda_equipo                          Impedir las punialadas por la espalda no escuchando a nadie hablar de un tercero, y ofreciendo la conversacion a tres en vivo
+BANDEJA  integrar_peticion_critica_rutina_existente                 Integrar la peticion de critica en la rutina que ya tienes, al final de tus reuniones a solas, para que deje de depender de tu acordarte
+BANDEJA  integrar_trabajo_vida_mejor_version                        Integrar trabajo y vida en vez de equilibrarlos, trayendo tu version mas completa al trabajo y llevandotela de vuelta a casa
+GRAFO    invitar_desafio_reciproco_equipo                           Invitar a tus personas a cargo a desafiarte a ti tan directamente como tu les desafias a ellas
+BANDEJA  leer_seniales_fallo_jefe_reunion_solas                     Leer en tus reuniones a solas las cinco seniales que el texto da de que estas fallando como jefe
+BANDEJA  manejar_contacto_fisico_regla_platino                      Manejar el contacto fisico en el trabajo por la regla de platino, averiguando que deja comoda a la otra persona y haciendo eso
+GRAFO    manejar_enfado_persona_desafiada                           Manejar el enfado de la persona a la que acabas de desafiar, con la frase que se elimina del vocabulario
+BANDEJA  mantener_manos_trabajo_real_equipo                         Mantener las manos en el trabajo real de tu equipo, ejecutando tu tambien y no solo mirando ejecutar a otros
+BANDEJA  mantener_proceso_evaluacion_ligero_vigilar_crecimiento     Mantener ligero el proceso de evaluacion vigilando activamente cuanto tiempo se come, con la herramienta ligera que el texto describe
+BANDEJA  medir_critica_respuesta_oyente_brujula                     Medir tu critica en la respuesta de quien la oye, usando el marco de la franqueza radical como brujula para decidir si toca importarte mas o desafiar mas claro
+BANDEJA  medir_guia_propia_pegatinas_marco                          Medir tu propia guia con el marco y las pegatinas de colores, coger la linea base y seguir tus mejoras
+BANDEJA  mejorar_consciencia_propia_relacional_dos_practicas        Mejorar tu consciencia de ti mismo y tu consciencia de la relacion con las dos practicas que el texto desarrolla, porque en la franqueza radical el hilo comun siempre eres tu
+BANDEJA  minimizar_impuesto_colaboracion_equipo                     Minimizar el impuesto de colaboracion de tu equipo cargando tu con el, con las tres cosas que equilibran la balanza
+BANDEJA  montar_equipo_gestion_desempenio_revisar_sistema           Montar el equipo de gestion del desempenio y arrancar la revision del sistema, con los seis rotulos que el texto pone uno a uno
+BANDEJA  montar_evaluacion_360_grados_ligera_pares                  Montar un proceso de evaluacion de trescientos sesenta grados en vez de fiarte del juicio unilateral del jefe, y hacerlo ligero para quien escribe
+BANDEJA  montar_proceso_contratacion_reducir_sesgo                  Montar un proceso de contratacion tan rigido como se pueda sin volverse gravoso, con las practicas que el texto nombra para manejar el sesgo
+BANDEJA  montar_reunion_general_presentaciones_preguntas            Montar la reunion general del equipo entero con sus dos partes: las presentaciones que persuaden y las preguntas abiertas que dejan oir el disenso
+BANDEJA  montar_reunion_gran_debate                                 Montar la reunion de gran debate, donde se debate y no se decide, con sus logisticas, sus normas y su unico producto
+BANDEJA  montar_reunion_gran_decision                               Montar la reunion de gran decision, con su decisor nombrado, sus decisiones finales y tu poder de veto usado con cuentagotas
+BANDEJA  montar_reuniones_solas_mentalidad_frecuencia               Montar tus reuniones a solas con cada persona a tu cargo: la mentalidad, la frecuencia, presentarte siempre y la agenda puesta por quien te reporta
+BANDEJA  montar_tablero_kanban_medir_actividades                    Montar un tablero kanban de tres columnas para hacer visibles las actividades y los flujos de trabajo, y medir la actividad y no solo el resultado
+BANDEJA  nutrir_ideas_nuevas_reunion_solas                          Nutrir en la reunion a solas las ideas nuevas, que son fragiles, empujando a quien la trae a explicarla mas claro y para quien la tiene que oir
+BANDEJA  organizar_sistema_recoger_quejas_equipo                    Organizar un sistema para que el equipo te haga llegar sugerencias y quejas, en vez de anunciar que se sientan libres
+BANDEJA  parar_debate_emocion_agotamiento                           Parar un debate cuando la gente esta agotada o demasiado cargada de emocion, y aplazarlo en vez de dejar que decida el cansancio
+BANDEJA  pasear_organizacion_hallar_problemas_pequenios             Pasear una hora a la semana por la organizacion para enterarte de los problemas pequenios antes de que se vuelvan grandes
+GRAFO    pedir_critica_equipo_premiarla                             Pedir activamente que tu equipo te critique, aguantar el silencio y premiar la primera franqueza a la vista de todos
+BANDEJA  pedir_critica_primero_crear_seguridad_psicologica          Pedir critica tu antes que nada, que es el primer paso del orden de operaciones, porque es lo que mas deprisa crea la seguridad psicologica del equipo
+BANDEJA  pedir_hechos_decision_evitar_recomendaciones               Pedir hechos y no recomendaciones cuando reunes informacion para una decision
+BANDEJA  pelear_proliferacion_reuniones_bloquear_ejecucion          Pelear la proliferacion de reuniones bloqueando en tu calendario el tiempo de estar a solas y ejecutar, despues de descartar los tres remedios que el texto dice que no cuajan
+BANDEJA  persuadir_emocion_oyente_no_propia                         Persuadir atendiendo a la emocion del que escucha y no a la tuya, aunque tu conexion con la decision sea fuerte
+BANDEJA  practicar_franqueza_radical_jefe_propio                    Practicar la franqueza radical con tu propio jefe con cautela, pidiendo permiso antes de dar guia y empezando por algo pequenio
+BANDEJA  practicar_triangulo_critica_tres_papeles                   Practicar el triangulo de la critica en grupos de tres para ver el impacto real de tus palabras, con quien da, quien recibe y quien observa
+BANDEJA  preguntar_seguimiento_hallar_huecos                        Preguntar en la reunion a solas las preguntas de seguimiento que ensenian los huecos entre lo que la persona hace, lo que cree que deberia hacer y lo que quiere hacer
+BANDEJA  premiar_franqueza_hacer_escucha_tangible                   Premiar la franqueza de quien te critica haciendo tangible tu escucha, con la lista de las criticas recibidas y lo que has hecho con ellas contado en publico
+BANDEJA  presionar_curva_notas_evitar_forzarla                      No forzar la curva de notas pero presionarla, con las cuatro cosas que el texto recomienda hacer en su lugar
+BANDEJA  proteger_tiempo_equipo_jefe                                No malgastar el tiempo de tu equipo: quitar de en medio los obstaculos, las reuniones sobrantes y los mandatos de arriba
+BANDEJA  reconocer_emociones_propias_avisar_equipo                  Reconocer en voz alta el animo con el que llegas, para que tu equipo no crea que tu mal dia es culpa suya
+BANDEJA  reconocer_excelencia_trayectoria_gradual                   Reconocer a quien hace un trabajo excelente en trayectoria gradual y se siente invisible, sacandola del anonimato sin ascenderla
+GRAFO    reconocer_recompensar_gente_estable                        Reconocer y recompensar a la gente estable de tu equipo por vias que no sean la promocion
+BANDEJA  recorrer_rueda_conscientemente_cultura_equipo              Recorrer conscientemente los pasos de la rueda de hacer cosas sobre tu propia cultura, mirando la conducta y no el caracter
+BANDEJA  recorrer_rueda_hacer_cosas_equipo                          Recorrer la rueda de hacer cosas con tu equipo, sin saltarte un paso y sin atascarte en uno
+BANDEJA  recorrer_trece_elementos_proceso_evaluacion_formal         Recorrer los trece elementos que el texto nombra para disenar un proceso formal de evaluacion de desempenio, sabiendo que no hay talla unica
+GRAFO    reparar_mal_comportamiento_evitar_disculpa_falsa           Reparar tu propio mal comportamiento sin caer en la disculpa falsa: entender primero, resolver despues y admitir al final
+BANDEJA  repartir_decision_cercanos_hechos                          Repartir las decisiones entre los mas cercanos a los hechos en vez de tomarlas tu por ser el jefe
+BANDEJA  repartir_notas_publicar_reparto_esperado                   Repartir las notas sin una distribucion rigida y publicar el reparto que esperas, para que la calibracion no se vuelva opaca
+GRAFO    repartir_semana_cuarenta_horas_jefe                        Repartir la semana de cuarenta horas del jefe entre gestionar, pensar por tu cuenta y lo imprevisible
+BANDEJA  reservar_calendario_tiempo_ejecutar                        Reservar en el calendario el tiempo de ejecutar, que es solitario y por eso nunca se apunta
+BANDEJA  resolver_dudas_frecuentes_pedir_critica                    Resolver las dudas frecuentes que aparecen al empezar a pedir critica, con la respuesta que el texto da a cada una
+BANDEJA  resolver_dudas_frecuentes_reuniones_salto_nivel            Resolver las cuatro dudas mas frecuentes de una reunion de salto de nivel: el equipo que ya no cree en su jefe, los que no hablan, los que no callan y el equilibrio
+BANDEJA  responder_critica_abrasiva_cuatro_reglas                   Responder a una critica de que eres abrasiva con las cuatro reglas generales que el texto enumera, sin dejar de desafiar directamente
+GRAFO    retar_superestrellas_equipo_constantemente                 Retar constantemente a quien esta en trayectoria empinada, no bloquearlo, y no confundir crecer con dirigir
+GRAFO    retirar_etiquetas_permanentes_equipo                       Retirar las etiquetas permanentes de la gente de tu equipo y volver a mirarla con ojos nuevos cada dia
+GRAFO    revisar_ciclo_responsabilidades_relaciones                 Revisar el ciclo entre tus tres responsabilidades de jefe y tus relaciones, con la lista que lo fortalece y la lista que lo erosiona
+GRAFO    revisar_cinco_causas_mal_desempenio                        Revisar las cinco causas de que alguien bueno este rindiendo mal, empezando por mirarte tu al espejo
+BANDEJA  revisar_critica_mujer_agresiva_cuatro_tacticas             Revisar una critica de demasiado agresiva a una mujer de tu equipo con las cuatro tacticas que el texto da, antes de darsela
+BANDEJA  sopesar_consejo_legal_despedir_humildad                    Sopesar el consejo legal contra el riesgo de seguirlo y despedir con humildad, que es la tercera de las tres cosas que facilitan un despido
+GRAFO    subir_vara_calidad_equipo                                  Subir la vara de calidad con quien lleva tiempo haciendo un trabajo solo aceptable, en vez de darlo por mediocre
+BANDEJA  trazar_plan_dieciocho_meses_aprendizaje                    Trazar con cada persona a tu cargo su plan de dieciocho meses de aprendizaje hacia sus suenios, que es la tercera de las tres conversaciones de carrera
+BANDEJA  vivir_valores_propios_evitar_listarlos                     Vivir tus valores y demostrarlos en como diriges, en vez de montar un ejercicio que obligue a la gente a escribirlos y compartirlos

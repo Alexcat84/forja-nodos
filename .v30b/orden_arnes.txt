@@ -1,0 +1,2 @@
+550:    "$LOOP/ultimo_apertura.json" "$vuelta" "$APERTURA"
+600:  if ! desmiente="$(python scripts/testigo_guardas.py --comprobar 2>&1)"; then

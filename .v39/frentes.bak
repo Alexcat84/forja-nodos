@@ -1,0 +1,153 @@
+{
+  "_lea_esto": [
+    "LO QUE EL DATO NO PUEDE DECIR, DECLARADO CON SU CITA (D.49, 17 sep 2026).",
+    "",
+    "El tablero (docs/loop/TABLERO.jsonl) se GENERA del dato: ramas, bandejas, commits,",
+    "candidatos y grafo. Pero hay dos cosas que ningun comando puede medir, porque no",
+    "son hechos del arbol sino decisiones del fundador, y esas viven aqui CON SU CITA:",
+    "",
+    "  1. CUAL es el frente de extraccion activo, que no es lo mismo que cual tiene",
+    "     proceso vivo: un frente detenido esperando decision sigue siendo el frente",
+    "     activo de su libro, y su libro sigue teniendo dueño.",
+    "  2. QUE libro esta CERRADO EN EXTRACCION, que es una adjudicacion de un acta y no",
+    "     una cuenta de ficheros.",
+    "",
+    "CADA ENTRADA LLEVA SU CITA. Una declaracion sin cita no se puede releer, y",
+    "src/tablero.py se detiene si falta."
+  ],
+  "alcance": {
+    "lineas_a_la_vez": 2,
+    "cita": "decision del fundador del 17 sep 2026, punto 4",
+    "que_dice": "dos lineas y no mas: la principal siempre activa, y UN solo frente de extraccion"
+  },
+  "frente_activo": {
+    "clave": "grove_high_output",
+    "cita": "decision del fundador del 17 sep 2026, punto 4",
+    "que_dice": "hoy grove_high_output hasta cerrar su libro"
+  },
+  "liberados": {
+    "gerber_emyth": {
+      "cita": "decision del fundador del 17 sep 2026, punto 4",
+      "que_dice": "PAUSADO con dueño NINGUNO y su trabajo parcial declarado. No se lanza, y sera relevado por el principal cuando le toque por el orden"
+    },
+    "marquet_turn_the_ship": {
+      "cita": "decision del fundador del 17 sep 2026, punto 4",
+      "que_dice": "PAUSADO con dueño NINGUNO y su trabajo parcial declarado. No se lanza, y sera relevado por el principal cuando le toque por el orden"
+    }
+  },
+  "cerrados_en_extraccion": {
+    "smart_who": {
+      "cita": "ACTA 8 seccion 10"
+    },
+    "zhuo_manager": {
+      "cita": "ACTA 13 seccion 8.1"
+    },
+    "scott_radical_candor": {
+      "cita": "ACTA 24"
+    }
+  },
+  "orden_de_prioridad": {
+    "cita": "decision del fundador del 17 sep 2026, EL ORDEN DE PRIORIDAD DEL MUNDO 11",
+    "que_dice": "Ninguna linea elige libro: toma el primero de esta lista cuyo ESTADO lo permita por D.49, y al cerrar uno pasa al siguiente por D.50.",
+    "libros": {
+      "grove_high_output": {
+        "prioridad": 1,
+        "fuera_de_campania": false,
+        "motivo": "Operaciones y apalancamiento gerencial: cubre el hueco de la campania, que tiene mucho trato con la gente y poco produccion de la maquina. Densidad de procedimiento la mas alta del lote, medida: 0,00 por ciento de pasos inventados en su ultimo capitulo, porque el autor escribe en pasos."
+      },
+      "gerber_emyth": {
+        "prioridad": 2,
+        "fuera_de_campania": false,
+        "motivo": "Sistematizacion del negocio, manual de operaciones, trabajar SOBRE el negocio y no EN el: es el libro que habla directo al usuario final y el unico del lote que aporta esa materia. Al minarlo entero se completa ademas el capitulo 17 reservado al mundo 10."
+      },
+      "marquet_turn_the_ship": {
+        "prioridad": 3,
+        "fuera_de_campania": false,
+        "motivo": "Delegacion real y control distribuido con practicas concretas. Solapa en parte con Zhuo y Scott, ya insertados, pero es barato de cerrar y cierra el cuerpo."
+      },
+      "bernerslee_bananas": {
+        "prioridad": 4,
+        "fuera_de_campania": true,
+        "motivo": "19 cap. Mas analisis que procedimiento."
+      },
+      "openstax_business_ethics": {
+        "prioridad": 5,
+        "fuera_de_campania": true,
+        "motivo": "17 cap. Manual academico, densidad de procedimiento baja, mucho marco conceptual."
+      },
+      "openstax_org_behavior": {
+        "prioridad": 6,
+        "fuera_de_campania": true,
+        "motivo": "32 cap. El mas caro del lote y el de mayor solape con lo ya insertado (Zhuo, Scott, Grove): el peor candidato por costo y beneficio de los diez."
+      }
+    },
+    "corte_del_mundo_11": "Con los tres primeros mas los cuatro ya insertados (onu_consumidor, smart_who, zhuo_manager, scott_radical_candor), el MUNDO 11 SE DECLARA COMPLETO: gente, comunicacion, contratacion, operaciones y sistematizacion. La campania de extraccion cierra ahi. Los tres del corte quedan en la bandeja, con su ficha, para entrar por la aduana de a uno y sin campania cuando el fundador lo decida."
+  },
+  "cola_de_doctrina": {
+    "cita": "decision del fundador del 17 sep 2026, punto 4",
+    "que_dice": "Se resuelven cuando el mundo 11 cierre, salvo que alguna bloquee a una linea, y entonces sube sola.",
+    "levantadas_por": "el auditor de la ACTA 32, linea serial, sobre la vuelta 33",
+    "preguntas": [
+      {
+        "n": 1,
+        "pregunta": "EXTRACTOR.md 11 y la banda de 0,4: dice que por encima hay gemelos y cero ajenos, acotado al catalogo de la otra casa. Esta casa tiene ya su primer par propio a 0,405 leido por dos lectores por separado. La medicion no se contradice; la generalizacion escrita encima pide su primer contraejemplo.",
+        "medida_en": "ACTA 32 3.7",
+        "bloquea": false
+      },
+      {
+        "n": 2,
+        "pregunta": "src/arista.py:187 teclea (D.37) en toda arista declarada por lectura, y se estampa igual sobre las que son D.29. Quien cuente aristas D.37 en la bitacora cuenta tambien las D.29.",
+        "medida_en": "APERTURA_CIEGA.md 9.2",
+        "bloquea": false
+      },
+      {
+        "n": 3,
+        "pregunta": "Una cifra en denominaciones.nombre_largo que el libro no escribe: 'las cuatro conversaciones' donde L95 nombra tres. Segunda vuelta seguida con la figura, y las dos veces se registro sin cargar, porque D.30 cuenta pasos.",
+        "medida_en": "ACTA 32 4, fila 2",
+        "bloquea": false
+      },
+      {
+        "n": 4,
+        "pregunta": "Un resumen_teorico del dataset que cita EL REPORTE DE ESTA VUELTA: sede duradera apuntando a una que se reescribe cada vuelta.",
+        "medida_en": "APERTURA_CIEGA.md 5.4",
+        "bloquea": false
+      },
+      {
+        "n": 5,
+        "pregunta": "Un orden roto no tiene casillero: el extractor corrio la relectura de fidelidad con tres nodos ya dentro, contra la letra de D.30. No mueve dato, no publica cifra falsa y no mueve veredicto. Es la tercera vez que aparece un dano sin fila.",
+        "medida_en": "ACTA 32 5.4",
+        "bloquea": false
+      },
+      {
+        "n": 6,
+        "pregunta": "La regla de la busqueda negativa vale para el extractor? 'Una busqueda negativa no se puede citar' esta escrita en AUDITOR_FORJA.md 1.1 y no en EXTRACTOR.md.",
+        "medida_en": "ACTA 32 3.8",
+        "bloquea": false
+      },
+      {
+        "n": 7,
+        "pregunta": "El propio libro se contradice y ningun nodo lo dice: cap_12 L21 invita a copiar el marco y llevar ahi la cuenta de quien te dice que, y cap_01 prohibe escribir nombres en las casillas. Los dos pasos son transcripcion fiel de su linea y ninguno es PUENTE. Se toca alguno de los dos nodos?",
+        "medida_en": "REPORTE.md AC.7 (vuelta 37) y BC.7 (vuelta 38); encargo de la vuelta 38, tarea 4.1",
+        "bloquea": false
+      },
+      {
+        "n": 8,
+        "pregunta": "La senial 1 compara titulo mas resumen_teorico mas pasos, y en un lote escrito de una sentada eso mide la formula del extractor tanto como el contenido del nodo. Lo midieron dos instrumentos por separado. Ningun umbral se toca en ninguna vuelta: la pregunta es que se hace con eso.",
+        "medida_en": "APERTURA_CIEGA.md 13.2 y ACTA 36 7; encargo de la vuelta 38, tarea 4.2",
+        "bloquea": false
+      },
+      {
+        "n": 9,
+        "pregunta": "Puede el arnes abrir la fase ciega del auditor con un proceso del extractor todavia vivo? Dos vueltas seguidas la poblacion se movio dentro de la fase sellada, y en la vuelta 38 con la pagina abierta: el mismo forja.py gate dio 320 y despues 321 dentro del mismo turno. Es maquinaria del arnes y la moratoria de D.45 la protege.",
+        "medida_en": "ACTA 37 seccion 8",
+        "bloquea": false
+      },
+      {
+        "n": 10,
+        "pregunta": "Una cita medida_en que ofrece como sede una seccion que aun no se ha escrito, o un fichero que se reescribe cada vuelta. Esta cola ofrecia REPORTE.md BC.7 y BC.7 nunca se escribio; y ofrece APERTURA_CIEGA.md 13.2, que es un fichero que el arnes sobreescribe en cada vuelta. Es la pregunta 4 de esta misma cola vista desde config/.",
+        "medida_en": "ACTA 37 seccion 9",
+        "bloquea": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+fila 01, hacer_trabajo_futuro_imaginar_negocio, lineas --veredicto: 1
+  --veredicto dictar_ritmo_crecimiento_preguntas_escritas|SANO|El mismo par que dictar_ritmo lee desde su lado: ajenos de dos capitulos, uno imagina el negocio con la pregunta que suena (L285 a L291) y el otro dicta el ritmo de crecimiento (cap_07 L279 a L287). La similitud de 0,400 se lee primero y no es gemelo.
+inicio 2026-09-26 09:37:07
+======================================================================
+ADUANA DE INSERCION, candidato 'hacer_trabajo_futuro_imaginar_negocio'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (437 del grafo mas 42 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino dictar_ritmo_crecimiento_preguntas_escritas  [Dictar el ritmo de crecimiento de tu negocio con los tres conocimientos clave, las preguntas correctas y el plan escrito]
+    levantada por: similitud_texto
+    similitud_texto    0.400 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.441 (umbral 0.60)
+    paso 3 del candidato contra paso 7 de dictar_ritmo_crecimiento_preguntas_escritas
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 438
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 1
+
+======================================================================
+fin 2026-09-26 09:45:09 | codigo de salida 0 | 482.4 s

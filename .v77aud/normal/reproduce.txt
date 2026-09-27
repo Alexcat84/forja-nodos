@@ -1,0 +1,13 @@
+$ for p in aristas_vuelta nodos_viejos pasos_inventados relojes; do python .v77ext/$p.py 2>&1 | diff --strip-trailing-cr - <(grep -v '^\$ ' .v77ext/$p.txt) >/dev/null && echo "$p.py: IDENTICO a .v77ext/$p.txt" || echo "$p.py: DIFIERE"; done
+aristas_vuelta.py: IDENTICO a .v77ext/aristas_vuelta.txt
+nodos_viejos.py: IDENTICO a .v77ext/nodos_viejos.txt
+pasos_inventados.py: IDENTICO a .v77ext/pasos_inventados.txt
+relojes.py: IDENTICO a .v77ext/relojes.txt
+$ bash .v77ext/censo.sh 2>/dev/null | diff --strip-trailing-cr - .v77ext/censo_cierre.txt >/dev/null && echo "censo.sh: IDENTICO a .v77ext/censo_cierre.txt" || echo "censo.sh: DIFIERE"
+censo.sh: IDENTICO a .v77ext/censo_cierre.txt
+$ python .v76ext/pasos_y_huellas.py > .v77aud/normal/huellas_hoy.txt; diff <(awk '{$3=""; print}' .v77aud/normal/huellas_hoy.txt) <(awk '{$3=""; print}' .v76ext/pasos_y_huellas.txt) >/dev/null && echo "pasos_y_huellas.py de hoy: IDENTICO a .v76ext/pasos_y_huellas.txt salvo la columna de la sede"; awk '{print $3}' .v77aud/normal/huellas_hoy.txt | sort | uniq -c
+pasos_y_huellas.py de hoy: IDENTICO a .v76ext/pasos_y_huellas.txt salvo la columna de la sede
+     22 _insertados
+      1 las
+$ rm -rf /tmp/v77t3 && mkdir -p /tmp/v77t3 && git archive d967b0e4 .v76ext .v77ext cuarentena/gerber_emyth dataset bitacora src config fuentes forja.py | tar -x -C /tmp/v77t3 && cd /tmp/v77t3 && python .v77ext/orden.py 2>&1 | diff --strip-trailing-cr - .v77ext/orden.txt >/dev/null && echo "orden.py sobre el arbol de d967b0e4 (T3, antes del primer insertar): IDENTICO a .v77ext/orden.txt" || echo "orden.py: DIFIERE"
+orden.py sobre el arbol de d967b0e4 (T3, antes del primer insertar): IDENTICO a .v77ext/orden.txt

@@ -1,0 +1,42 @@
+{
+  "condiciones_activacion": "Cuando toca vender el puesto al candidato elegido y hay que saber que atender. Es el primero de los tres puntos del recuadro de como vender a los jugadores A, y abre la serie de las cinco efes.",
+  "denominaciones": {
+    "nombre_largo": "Las cinco efes de la venta: encaje, familia, libertad, fortuna y diversion",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "the five F's of selling"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "fit, family, freedom, fortune, and fun"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "contratacion",
+  "entregable_esperado": "Las cinco areas atendidas una a una con este candidato concreto, y la persona firmando en la linea de puntos.",
+  "escala_minima": "Un solo candidato y un solo puesto: las cinco areas son las mismas se contrate a un consejero delegado o a un recepcionista, porque salen de lo que a las personas les importa y no del nivel del puesto.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "smart_who",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "id": "abordar_cinco_efes_venta",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Ponte en los zapatos del candidato: que te importe lo que a el le importa. Esa es la clave de vender con exito, y no la lista.",
+    "Vende el encaje: ata la vision, las necesidades y la cultura de tu empresa con las metas, las fortalezas y los valores del candidato. La frase que el libro pone en tu boca es: aqui es adonde vamos como empresa, y asi es como encajas tu.",
+    "Vende la familia: ten en cuenta el trauma mas amplio que supone cambiar de trabajo. La frase del libro: que podemos hacer para que este cambio sea lo mas facil posible para tu familia.",
+    "Vende la libertad: la autonomia que el candidato va a tener para tomar sus propias decisiones. La frase del libro: te dare amplia libertad para tomar decisiones, y no te voy a microgestionar.",
+    "Vende la fortuna: la estabilidad de tu empresa y el recorrido economico global. La frase del libro: si consigues tus objetivos, es probable que ganes esta cantidad de retribucion en los proximos cinco años.",
+    "Vende la diversion: describe el ambiente de trabajo y las relaciones personales que el candidato va a hacer alli. La frase del libro: aqui nos gusta divertirnos mucho, y creo que vas a ver que esta es una cultura que vas a disfrutar de verdad.",
+    "Aborda cada una de las cinco areas hasta que consigas que la persona firme en la linea de puntos. No es una lista para elegir una: es una lista para recorrerla entera."
+  ],
+  "resumen_teorico": "Es la cabeza de la serie de cinco del capitulo de vender, y el libro la escribe con su mandato y con su inventario juntos. El mandato dice que los candidatos tienden a preocuparse de cinco cosas y que por eso hay que asegurarse de abordar cada una de esas cinco areas hasta que la persona firme en la linea de puntos. El inventario nombra las cinco una a una, cada una con su definicion y con una frase literal para decirla, y los autores las llaman las cinco efes de la venta porque en ingles las cinco empiezan por efe: fit, family, freedom, fortune y fun. La razon de que la lista funcione esta escrita en la misma linea que el mandato: la clave para vender con exito a tu candidato es ponerte en sus zapatos y que te importe lo que a el le importa, de modo que las cinco areas no son cinco argumentos de venta sino cinco sitios donde mirar que le preocupa a esta persona. El libro añade despues un aviso que va con la lista y no contra ella: se sincero, porque las cinco efes no son herramientas para manipular a nadie, sino areas en las que vas a querer poner atencion honda y honesta ahora que has llegado al final del proceso de reclutamiento.",
+  "titulo": "Abordar las cinco efes de la venta hasta que el candidato firme"
+}

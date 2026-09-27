@@ -1,0 +1,10 @@
+registro: docs/loop/DEUDA.jsonl del commit f38c34e (antes de la declaracion)
+  pendientes: 42    pagadas: 33
+  ultima de saneamiento de la linea 'gerber_emyth': None
+
+  --clase 5  ->  LIBRE
+      van 4 de 5 desde la primera vuelta de la linea 'gerber_emyth' (la 1), que todavia no ha saneado nunca, con 42 deuda(s) esperando
+  --clase 6  ->  SANEAMIENTO
+      han pasado 5 vuelta(s) desde la primera vuelta de la linea 'gerber_emyth' (la 1), que todavia no ha saneado nunca y la cadencia es 5, con 42 deuda(s) pendientes
+  --clase 7  ->  SANEAMIENTO
+      han pasado 6 vuelta(s) desde la primera vuelta de la linea 'gerber_emyth' (la 1), que todavia no ha saneado nunca y la cadencia es 5, con 42 deuda(s) pendientes

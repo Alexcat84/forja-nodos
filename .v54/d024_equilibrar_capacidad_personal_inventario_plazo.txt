@@ -1,0 +1,34 @@
+$ python forja.py informe cuarentena/grove_high_output/equilibrar_capacidad_personal_inventario_plazo.json
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 414   (346 del grafo mas 68 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 0
+  BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+  vecinos levantados en total      : 2
+  por candidato bloqueado          : menor 2, mediana 2, mayor 2
+  que señal levanta cada vecindad  : similitud_texto 2
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] equilibrar_capacidad_personal_inventario_plazo   (equilibrar_capacidad_personal_inventario_plazo.json)
+    vecino construir_indicador_tendencia_patron  [levantada por: similitud_texto]
+      similitud_texto 0.353 | familia_id 0.000 | paso_contra_nodo 0.421
+      paso 7 del candidato contra paso 5 de construir_indicador_tendencia_patron
+    vecino dimensionar_inventario_materia_prima_reposicion  [levantada por: similitud_texto]
+      similitud_texto 0.389 | familia_id 0.111 | paso_contra_nodo 0.396
+      paso 7 del candidato contra paso 6 de dimensionar_inventario_materia_prima_reposicion
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.

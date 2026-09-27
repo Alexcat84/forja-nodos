@@ -1,0 +1,4 @@
+$ grep -n "GUARDAS_DE_DATO\|es averia\|UNICA EXCEPCION" scripts/deuda.py
+34:LA UNICA EXCEPCION, Y ES ESTRECHA: **una guarda de DATO en rojo** (`gate`, cerrojo, censo
+54:# Las guardas cuyo rojo NO es deuda: es averia, y bloquea en el acto.
+55:GUARDAS_DE_DATO = ("gate", "cerrojo", "censo_no_decrece", "fidelidad")

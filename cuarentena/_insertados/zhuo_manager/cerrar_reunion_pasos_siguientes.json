@@ -1,0 +1,37 @@
+{
+  "id": "cerrar_reunion_pasos_siguientes",
+  "titulo": "Cerrar la reunion acordando los pasos siguientes y mandar despues el resumen",
+  "denominaciones": {
+    "nombre_largo": "La pregunta de los ultimos minutos, el resumen posterior con lo que lleva dentro, y el seguimiento segun que clase de reunion fue",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "follow-ups, meeting recap, next steps"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "En los ultimos minutos de cualquier reunion, y en las horas siguientes a que termine.",
+  "entregable_esperado": "Unos pasos siguientes acordados en voz alta antes de levantarse, y un resumen enviado a los asistentes con la discusion, las acciones concretas con su responsable, y la fecha de la proxima revision.",
+  "pasos_accionables": [
+    "Trata los seguimientos con tanto cuidado como la preparacion. Una sola reunion no es un fin en si misma: es un peldano en el camino mucho mas largo de crear algo valioso para el mundo.",
+    "En los ultimos minutos de la reunion, coge la costumbre de preguntar: antes de levantarnos, vamos a asegurarnos de que estamos de acuerdo en los pasos siguientes.",
+    "Despues de la reunion, envia a los asistentes un resumen con la discusion, con una lista de las acciones concretas y de quien es responsable de cada una, y con cuando sera la proxima revision.",
+    "Si lo que hubo fue una decision, comunicala a las personas adecuadas.",
+    "Si lo que hubo fue opinion sobre un trabajo, actua sobre ella.",
+    "Si lo que hubo fue generacion de ideas, haz que quien organizo la reunion aclare cual es el proceso para llevar esas ideas a la etapa siguiente.",
+    "Usa esos seguimientos como ancla de la agenda de la proxima vez que el grupo se reuna."
+  ],
+  "resumen_teorico": "Es el cierre del capitulo sobre preparacion y, de todas las piezas del capitulo, la que trae el inventario mas completo: el libro nombra los cuatro contenidos del resumen posterior y nombra las tres ramas del seguimiento, una por cada clase de reunion. Por eso los pasos son transcripcion y no requieren decidir nada. El paso 2 lleva la frase del libro casi literal porque el libro la pone entre comillas como habito que se coge. Lo que el libro NO dice, y por eso no esta escrito aqui, es en cuanto tiempo se manda el resumen, quien lo escribe cuando la reunion la convoco otro, ni que se hace si nadie cumple su accion."
+}

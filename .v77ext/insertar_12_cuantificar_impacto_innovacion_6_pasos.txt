@@ -1,0 +1,59 @@
+fila 12, cuantificar_impacto_innovacion_6_pasos, lineas --veredicto: 5
+  --veredicto dictar_ritmo_crecimiento_preguntas_escritas|SANO|Ajenos: el vecino, de cap_07, dicta el ritmo de crecimiento con preguntas y un plan escrito (L279 a L287); este cuenta antes y despues de una Innovacion (L95). La similitud de 0,412, por encima de 0,4, se lee primero y es de las preguntas de cuanto y cuantos del mismo autor, sin paso comun.
+  --veredicto responder_primer_aviso_renuncia_subordinado|SANO|Ajenos: el vecino del grafo, de grove_high_output, escucha el primer aviso de renuncia; este cuantifica una Innovacion (L95). La similitud es de prosa, sin paso comun.
+  --veredicto cambiar_saludo_cliente_dos_ramas|CONTINUA|madre=cambiar_saludo_cliente_dos_ramas|El mismo par que cambiar_saludo lee desde su lado: este parte del producto del vecino, el saludo cambiado, y L95 cuantifica esa Innovacion (by changing the words you use to greet an incoming customer); sus pasos 2 y 3 cuentan antes y despues de cambiar las palabras. Procedimiento en los dos lados: alli el guion de dos ramas, aqui los seis conteos. La similitud de 0,435 se lee primero y no es gemelo (DISCUTIBLE D76.17).
+  --veredicto pedir_critica_anonima_curso_entrenamiento_dictado|SANO|Ajenos: el vecino del grafo, de grove_high_output, pide critica anonima de un curso dictado; este cuenta ventas antes y despues de una Innovacion (L95). Los dos miden si algo funciono, con objetos y medios distintos, y ninguno usa el producto del otro.
+  --veredicto entregar_evaluacion_desempeno_tres_claves|SANO|Ajenos: el vecino del grafo entrega una evaluacion de desempeno; este cuantifica una Innovacion (L95). La similitud es de prosa, sin paso comun.
+inicio 2026-09-26 11:10:35
+======================================================================
+ADUANA DE INSERCION, candidato 'cuantificar_impacto_innovacion_6_pasos'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (448 del grafo mas 31 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 5. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino dictar_ritmo_crecimiento_preguntas_escritas  [Dictar el ritmo de crecimiento de tu negocio con los tres conocimientos clave, las preguntas correctas y el plan escrito]
+    levantada por: similitud_texto
+    similitud_texto    0.412 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.528 (umbral 0.60)
+    paso 6 del candidato contra paso 8 de dictar_ritmo_crecimiento_preguntas_escritas
+
+  vecino responder_primer_aviso_renuncia_subordinado  [Responder al primer momento en que un subordinado valioso avisa que quiere renunciar: dejar lo que haces, escucharlo sin discutir y comprarte tiempo antes de actuar]
+    levantada por: similitud_texto
+    similitud_texto    0.371 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.464 (umbral 0.60)
+    paso 1 del candidato contra paso 5 de responder_primer_aviso_renuncia_subordinado
+
+  vecino cambiar_saludo_cliente_dos_ramas  [Cambiar el saludo del vendedor por una pregunta con dos ramas de respuesta ya escritas]
+    levantada por: similitud_texto
+    similitud_texto    0.435 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.366 (umbral 0.60)
+    paso 3 del candidato contra paso 4 de cambiar_saludo_cliente_dos_ramas
+
+  vecino pedir_critica_anonima_curso_entrenamiento_dictado  [Pedir critica anonima tras dictar un curso de entrenamiento, con formulario numerico y preguntas abiertas]
+    levantada por: similitud_texto
+    similitud_texto    0.357 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.391 (umbral 0.60)
+    paso 3 del candidato contra paso 3 de pedir_critica_anonima_curso_entrenamiento_dictado
+
+  vecino entregar_evaluacion_desempeno_tres_claves  [Entregar la evaluacion de desempeno cara a cara con las tres claves del mando: franqueza, escucha total y dejar fuera las emociones propias]
+    levantada por: similitud_texto
+    similitud_texto    0.366 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.382 (umbral 0.60)
+    paso 3 del candidato contra paso 6 de entregar_evaluacion_desempeno_tres_claves
+  arista madre-hijo cableada y escrita RESUELTA: cambiar_saludo_cliente_dos_ramas > cuantificar_impacto_innovacion_6_pasos
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 449
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 5
+
+======================================================================
+fin 2026-09-26 11:18:27 | codigo de salida 0 | 471.6 s

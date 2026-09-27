@@ -1,0 +1,13 @@
+$ git diff --stat 3174c73 HEAD -- dataset/ bitacora/ censos/ config/pares_mutuos.jsonl
+ bitacora/VEREDICTOS.jsonl | 1 +
+ censos/atribuciones.md    | 2 ++
+ censos/denominaciones.md  | 7 +++++++
+ dataset/nodos.jsonl       | 2 ++
+ 4 files changed, 12 insertions(+)
+$ git diff --name-status 3174c73 HEAD -- cuarentena/
+R100	cuarentena/grove_high_output/simplificar_trabajo_reducir_numero_pasos.json	cuarentena/_insertados/grove_high_output/simplificar_trabajo_reducir_numero_pasos.json
+R100	cuarentena/grove_high_output/variar_frecuencia_inspeccion_nivel_calidad.json	cuarentena/_insertados/grove_high_output/variar_frecuencia_inspeccion_nivel_calidad.json
+$ ls -A procesos/ | wc -l
+0
+$ git status --short -- dataset bitacora censos cuarentena config | wc -l
+0

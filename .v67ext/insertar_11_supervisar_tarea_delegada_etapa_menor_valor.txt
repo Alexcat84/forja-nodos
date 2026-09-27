@@ -1,0 +1,43 @@
+fila 11, supervisar_tarea_delegada_etapa_menor_valor, lineas --veredicto: 3
+  --veredicto detectar_arreglar_fallo_etapa_menor_valor|CONTINUA|madre=detectar_arreglar_fallo_etapa_menor_valor|La arista EN COLA de la 65 (65.4.b), leida hoy desde el lado del hijo con los 6 y los 9 pasos delante, porque el barrido de hoy la levanta en este sentido (familia_id 0.333): el paso 2 de este candidato aplica la regla del paso 3 de la madre, detectar y arreglar en la etapa de menor valor, al seguimiento de una tarea delegada (L253, We should apply quality assurance principles and monitor at the lowest-added-value stage of the process), y le anade lo que la madre no tiene: el borrador en sucio como etapa de menor valor, la frecuencia variable por subordinado, la madurez relativa a la tarea, la desescalada y la entrada al detalle al azar (pasos 3 a 9). Es la adjudicacion de la ACTA 61 61.5 y la linea de .v63ext/cmd_02_detectar.sh, sostenidas.
+  --veredicto supervisar_decision_delegada_preguntas_concretas|SANO|Hermanos: los dos despliegan el seguimiento que el paso 7 de delegar_tarea_base_comun_seguimiento nombra en una linea, este sobre una tarea (L253 a L255) y el vecino sobre una decision, por preguntas concretas en la reunion de revision (L257). Ningun paso de uno hace lo que hace un paso del otro.
+  --veredicto identificar_paso_limitante_jornada_desfases|SANO|Ajenos: supervisar una tarea delegada contra ordenar la jornada alrededor de su paso limitante (L267). La senial sale de la prosa del resumen (d058).
+inicio 2026-09-24 11:01:02
+======================================================================
+ADUANA DE INSERCION, candidato 'supervisar_tarea_delegada_etapa_menor_valor'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (378 del grafo mas 101 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 3. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino detectar_arreglar_fallo_etapa_menor_valor  [Detectar y arreglar el fallo en la etapa de menor valor posible]
+    levantada por: familia_id
+    similitud_texto    0.226 (umbral 0.35)
+    familia_id         0.333 (umbral 0.30)
+    paso_contra_nodo   0.435 (umbral 0.60)
+    paso 1 del candidato contra paso 2 de detectar_arreglar_fallo_etapa_menor_valor
+
+  vecino supervisar_decision_delegada_preguntas_concretas  [Supervisar una decision delegada por su proceso de reflexion: preguntas bastante concretas en la reunion de revision]
+    levantada por: similitud_texto
+    similitud_texto    0.356 (umbral 0.35)
+    familia_id         0.222 (umbral 0.30)
+    paso_contra_nodo   0.429 (umbral 0.60)
+    paso 5 del candidato contra paso 3 de supervisar_decision_delegada_preguntas_concretas
+
+  vecino identificar_paso_limitante_jornada_desfases  [Identificar el paso limitante de tu jornada y crear desfases alrededor: determinar lo inamovible y mover lo flexible a su alrededor]
+    levantada por: similitud_texto
+    similitud_texto    0.362 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.361 (umbral 0.60)
+    paso 1 del candidato contra paso 3 de identificar_paso_limitante_jornada_desfases
+  arista madre-hijo cableada y escrita RESUELTA: detectar_arreglar_fallo_etapa_menor_valor > supervisar_tarea_delegada_etapa_menor_valor
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 379
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 3
+
+======================================================================
+fin 2026-09-24 11:27:30 | codigo de salida 0 | 1588.2 s

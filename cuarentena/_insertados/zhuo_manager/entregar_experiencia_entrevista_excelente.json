@@ -1,0 +1,38 @@
+{
+  "id": "entregar_experiencia_entrevista_excelente",
+  "titulo": "Entregar una experiencia de entrevista atenta, enfocada y rapida",
+  "denominaciones": {
+    "nombre_largo": "La sociedad diaria entre directivo y reclutador durante el proceso, y los errores comunes que evita",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "deliver an amazing interview experience"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Con todo candidato que entra a entrevistarse, y tambien con aquellos a los que no vas a hacer oferta.",
+  "entregable_esperado": "Un proceso de entrevista que el candidato describe como atento, enfocado y rapido, sin dias ni semanas muertas entre pasos y sin informacion contradictoria.",
+  "pasos_accionables": [
+    "Cuenta con lo que compra: la autora dice que ha perdido la cuenta de las veces que un candidato acepto y le conto que parte de su razon fue que el proceso de entrevista se sintio atento, enfocado y rapido, y que eso les dio confianza en la empresa y en el equipo con el que iban a trabajar.",
+    "Hazlo tambien cuando al final no vayas a hacer oferta, porque una experiencia de entrevista asombrosa le dice a los futuros candidatos que te importan las personas que podrian ser el futuro de tu organizacion.",
+    "Monta para eso una relacion fuerte entre quien contrata y quien recluta. La autora y su companiero de reclutamiento se volvian como una pareja de comic para cualquier candidato que entraba a entrevistarse, y se escribian varias veces al dia sobre los detalles.",
+    "Comprueba que todos los entrevistadores tienen las notas de contexto.",
+    "Comprueba quien esta evaluando que habilidad.",
+    "Busca un entrevistador que conecte bien con el candidato, por ejemplo alguien que venga de la misma empresa anterior, o alguien que tambien sea nuevo en la ciudad.",
+    "Decide quien va a escribir al candidato para agradecerle su tiempo.",
+    "Trabajando asi en tandem, evita los errores comunes que el libro nombra: dejar dias o semanas entre un paso y el siguiente, pedir al candidato que se repita una y otra vez, o darle informacion contradictoria o confusa."
+  ],
+  "resumen_teorico": "Es la tercera tactica de trabajo conjunto con el reclutamiento y la que convierte la relacion con el reclutador en actos diarios. El inventario propio del libro son las preguntas que los dos se mandaban, nombradas una a una, y los errores comunes que evitaban, tambien nombrados; por eso los pasos 4 a 7 son transcripcion de preguntas reales y no una lista de buenas intenciones. El paso 2 esta escrito porque el libro lo dice expresamente: la experiencia importa incluso sin oferta. Lo que el libro NO dice, y por eso no esta escrito aqui, es cuantos dias son demasiados entre pasos, ni que formato tienen las notas de contexto, ni quien las escribe.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}

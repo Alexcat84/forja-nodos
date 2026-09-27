@@ -1,0 +1,7 @@
+[
+    ("R1", 8, 19, "el numero del capitulo, el rotulo THE FRANCHISE PROTOTYPE y el epigrafe de Robert M. Pirsig (Zen and the Art of Motorcycle Maintenance)", "RESIDUO: rotulo y epigrafe"),
+    ("R2", 20, 41, "el Franchise Prototype definido como el modelo de trabajo del sueno del franquiciador, el sistema que integra todo lo necesario para que el negocio funcione", "POSTURA"),
+    ("R3", 42, 86, "el caso de McDonald's: cada detalle del sistema probado en el Prototipo, las papas fritas, las hamburguesas, la Universidad de la Hamburguesologia y el Turn-Key Operation", "CASO"),
+    ("R4", 87, 135, "lo que el Franchise Prototype es en verdad, la lista de empresas donde ya existe, y las preguntas retoricas sobre como construir el tuyo", "POSTURA"),
+    ("R5", 136, 145, "la reaccion de Sarah, que ya lo entiende", "RESIDUO: bisagra"),
+]

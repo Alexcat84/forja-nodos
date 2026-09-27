@@ -1,0 +1,45 @@
+{
+  "id": "detectar_arreglar_fallo_etapa_menor_valor",
+  "titulo": "Detectar y arreglar el fallo en la etapa de menor valor posible",
+  "dominio": "produccion",
+  "estado": "vivo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "atribuciones": [],
+  "fuentes": [
+    {
+      "clave": "grove_high_output",
+      "fecha": "2026-09-16"
+    }
+  ],
+  "denominaciones": {
+    "nombre_largo": "El valor que el material va acumulando por el flujo, y la regla de encontrar el problema donde todavia vale poco",
+    "sigla": "",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "adding value"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "lowest-value stage"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "perceived value"
+      }
+    ]
+  },
+  "condiciones_activacion": "Cuando tienes que decidir en que punto de un flujo poner la comprobacion que caza los problemas.",
+  "entregable_esperado": "Las etapas de tu flujo ordenadas por el valor que el material lleva encima en cada una, y la comprobacion puesta en la etapa de menor valor en la que el problema ya se puede ver.",
+  "pasos_accionables": [
+    "Ordena las etapas de tu flujo por el valor que el material lleva encima en cada una, contando con que el material se vuelve mas valioso a medida que avanza por el proceso: un huevo cocido vale mas que uno crudo, un desayuno montado vale mas que sus partes, y el desayuno puesto delante del cliente vale mas todavia.",
+    "Cuenta dentro de ese valor el valor percibido que el cliente asocia al establecimiento cuando entra en el aparcamiento y ve el rotulo, que es el que lleva encima la ultima etapa.",
+    "Detecta y arregla cualquier problema del proceso en la etapa de menor valor posible, que es la regla comun que el libro dice que hay que atender siempre.",
+    "Aplicalo al material que entra: encuentra y rechaza el huevo podrido cuando lo esta entregando el proveedor, en vez de permitir que lo encuentre el cliente.",
+    "Aplicalo a la contratacion como el libro la aplica: decide que no quieres a un candidato en la entrevista del campus en vez de en el transcurso de la visita a la planta, y ahorra el coste del viaje y el tiempo del candidato y de los entrevistadores.",
+    "Aplicalo al trabajo de ingenieria como el libro lo aplica: busca el fallo de funcionamiento en la prueba unitaria de las piezas que componen el producto, en vez de en la prueba del producto final."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/grove_high_output/cap_02.md, unidad Cap. 1, titulo textual The Basics of Production: Delivering a Breakfast (or a College Graduate, or a Compiler, or a Convicted Criminal...). Sale de la PIEZA P11 de la frontera publicada en la vuelta 1 del frente, L71 a L75, 263 palabras. FRONTERA DENTRO DEL NODO: pasos 1 y 2 de L73; pasos 3, 4, 5 y 6 de L75. L71 es el rotulo de la seccion (Adding Value). POR QUE ES PROCEDIMIENTO: la regla esta escrita por el libro como regla (A common rule we should always try to heed is to detect and fix any problem in a production process at the lowest-value stage possible) y el libro pone su propio inventario de ETAPAS con las que ordenarlas, y despues la aplica el mismo tres veces, cada vez nombrando las dos etapas que se comparan. Escribir los pasos es transcribir ese inventario. POR QUE LOS TRES EJEMPLOS SON PASOS Y NO ADORNO, que es mi discutible de este nodo: el manual 3.5 dice que el caso no es la casa, y aqui los casos NO tienen casa propia: son la misma regla aplicada, con las dos etapas nombradas cada vez, y son lo que dice al lector como se reconoce una etapa de menor valor en su propio trabajo. El entregable de este nodo NO lleva ni un dato de ningun caso, que es la senal barata que el manual da para saber si un caso se colo en el sitio del procedimiento. Si un lector estricto los retira, el nodo se queda en tres pasos y sigue en pie: cae DENTRO de mi marcado. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 6 pasos, 6 TRANSCRIPCION, 0 PUENTE. LO QUE NO ESCRIBO Y POR ESO NO ESTA AQUI: NO escribo como se calcula el valor de cada etapa, porque el libro ordena por valor sin poner ni una cifra; NO escribo quien hace el rechazo ni con que registro, que seria puente de la especie responsable y de la especie destinatario. VECINOS QUE DECLARO SIN QUE NINGUNA SENAL TENGA QUE LEVANTARLOS (EXTRACTOR.md 11, la jerarquia la busca la lectura): el paso 6 de este nodo nombra la prueba unitaria, que es el paso 4 de clasificar_trabajo_proceso_montaje_prueba, y el paso 4 nombra la inspeccion del material que entra, que es el paso 1 de dimensionar_inventario_materia_prima_reposicion. Los tres salen de la misma unidad y de la misma vuelta, asi que la arista no puede cablearse aqui: este frente NO inserta (D.45). Quedan escritas en el reporte de la vuelta con su razon, para el dia de la insercion."
+}

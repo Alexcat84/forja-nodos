@@ -1,0 +1,16 @@
+$ git rev-parse primer-equipo-completo primer-equipo-completo^{commit}; git cat-file -t primer-equipo-completo
+d80dda756f082d45a03563e787b41365ebb5295c
+69d407da4de8389a4f624b2126064e16ff11b3fb
+tag
+$ git ls-remote origin refs/tags/primer-equipo-completo refs/heads/extraccion-mundo-11
+67f2bee367eadc6630a3bf8886803792aff3675a	refs/heads/extraccion-mundo-11
+d80dda756f082d45a03563e787b41365ebb5295c	refs/tags/primer-equipo-completo
+$ git log -1 --format="%h %cI %s" e4d88c5f | cut -c1-110; git merge-base --is-ancestor e4d88c5f 69d407da && echo "fila 20 antes que 69d407da"
+e4d88c5f 2026-09-26T20:58:11-04:00 Vuelta 80, fila 20: repetir_mensaje_invariable_diario_reunion_evento insert
+fila 20 antes que 69d407da
+$ git diff --stat 69d407da HEAD -- dataset bitacora censos cuarentena config src | wc -l; git diff 69d407da^ 69d407da --stat -- dataset bitacora | tail -1
+0
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+$ git rev-parse HEAD; git rev-parse origin/extraccion-mundo-11
+c7e3796bf61d177ae04644c9b7e69638fe5d0882
+67f2bee367eadc6630a3bf8886803792aff3675a

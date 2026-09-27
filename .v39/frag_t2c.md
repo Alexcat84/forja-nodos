@@ -1,0 +1,27 @@
+
+### CC.6.c. **LAS LINEAS DEL LIBRO QUE SOSTIENEN LOS `56` PASOS, PEGADAS Y NO PROMETIDAS** (`D.35`)
+
+*La cita se pega, no se promete. Estas son las `18` lineas de `fuentes/scott_radical_candor/cap_13.md`
+de las que salen los tres candidatos, leidas hoy con `sed -n` y cortadas a `92` columnas.*
+
+<!-- TALLADO: parcial salida=.v39/citas.txt -->
+
+    $ for n in 75 87 89 107 109 113 237 119 129 133 137 139 161 171 175 179 183 185; do sed -n "${n}p" fuentes/scott_radical_candor/cap_13.md | cut -c1-92; done
+    75: There is an important order of operations to Radical Candor:
+    87: The first edition describes this order of operations, but Kim’s story of having Sheryl San
+    89: Unfortunately, the book didn’t have a similarly memorable story about a boss soliciting fe
+    107: Why is psychological safety so important at work? Over two years, a group in Google’s Peop
+    109: When leaders solicit criticism, respond constructively to it, and reward it, they begin the 
+    113: We hope a story and some research better explain why you should prove you can take it before
+    237: Now that you’ve practiced the four elements of soliciting criticism-coming up with a go-
+    119: As noted in the first edition, if you ask, “do you have any feedback for me?” the answer
+    129: Here are some attributes of good go-to questions:
+    133: Don’t ask questions that can be answered with a yes or a no. Any parent knows that asking 
+    137: Frequency. If you only ask for criticism once every six months you’ll get a recency bias i
+    139: Here are a few great questions from workshop participants. You’ll see that tone varies a l
+    161: Brainstorm a few go-to questions. Go to a trusted peer and ask them one or two of your quest
+    171: A: In general, consistency (in terms of when you solicit feedback, and the question you use)
+    175: A: First, acknowledge that you don’t know how to fix it. Ask if they can help you solve th
+    179: A: One of the most effective things you can do with any direct report, but especially with t
+    183: A: That’s normal! Nobody really wants to hear criticism. Focus on the fact that you can on
+    185: So, you might have made a few typos in an important presentation. Maybe you went on and on i

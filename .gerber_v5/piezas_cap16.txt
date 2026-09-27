@@ -1,0 +1,9 @@
+[
+ ("R1", 8, 20, "el numero del capitulo, el rotulo YOUR ORGANIZATIONAL STRATEGY y el epigrafe de Theodore Levitt (Management for Business Growth)", "RESIDUO: rotulo y epigrafe"),
+ ("R2", 21, 30, "todo el mundo quiere organizarse, y el desarrollo organizacional del Organization Chart puede tener mas impacto en una empresa pequenia que cualquier otro paso del Business Development", "POSTURA"),
+ ("R3", 31, 154, "Organizing Around Personalities: el caso negativo de Jack y Murray Hopeful organizando Widget Makers alrededor de personas en vez de funciones, turnandose las tareas hasta el caos, sin que nadie sepa quien responde de que", "CASO"),
+ ("R4", 155, 244, "Organizing Your Company: el caso positivo, Jack y Murray vuelven a empezar como accionistas, escriben su Primary Aim y su Strategic Objective, y acuerdan las posiciones de SU Organization Chart y que es un Position Contract", "CASO"),
+ ("R5", 245, 318, "Widget Makers Inc Organization Chart: Jack y Murray deciden quien llena cada posicion y firman los Position Contracts de SU empresa, hasta quedar organizados", "CASO"),
+ ("R6", 319, 420, "Prototyping the Position: Jack y Murray prototipan sus propias posiciones con Innovacion, Cuantificacion y Orquestacion, contratan un aprendiz para el puesto de Murray, y el cierre general de que el Organization Chart fluye del Strategic Objective y este del Primary Aim", "CASO"),
+ ("R7", 421, 489, "el dialogo de Sarah confirmando que entendio la leccion sobre crear su propio Organization Chart y firmar los Position Contracts como si fuera cada empleado", "CASO"),
+]

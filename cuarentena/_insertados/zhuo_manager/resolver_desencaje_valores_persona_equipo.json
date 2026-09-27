@@ -1,0 +1,39 @@
+{
+  "id": "resolver_desencaje_valores_persona_equipo",
+  "titulo": "Resolver el desencaje de valores entre una persona y tu equipo",
+  "denominaciones": {
+    "nombre_largo": "Que hacer cuando lo que le importa a una persona no es lo que le importa al equipo, y por que no siempre hay que hacer que funcione",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "you do not always have to make it work"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando dos personas bienintencionadas de tu entorno no logran trabajar juntas, o cuando alguien de tu equipo esta en desalineamiento frecuente con lo que el equipo valora, y te notas empeniado en arreglarlo.",
+  "entregable_esperado": "Dicho si el desencaje es de valores o de otra cosa, y tomada la salida que corresponda: un movimiento dentro de la organizacion, o la separacion de caminos.",
+  "escala_minima": "Dos personas que no logran trabajar juntas. El libro razona el caso con un directivo y una persona a cargo.",
+  "pasos_accionables": [
+    "Deja de dar por hecho que tu trabajo es siempre hacer que funcione. El libro lo cuenta como error propio de la autora al empezar: razonaba que si dos personas listas y bienintencionadas no se ponian de acuerdo tenia que ser por algun malentendido, y que su trabajo era aclararlo y conseguir que todos se dieran la mano.",
+    "Cuenta con que a veces no lo consigues, y con lo que otro directivo le dijo a la autora despues de la cuarta reunion: estas intentando salvar una situacion que no merece ni tu tiempo, ni mi tiempo, ni el tiempo de tu persona a cargo.",
+    "Reconoce que los valores personales y los de la organizacion pesan mucho en si alguien va a ser feliz en un equipo dado.",
+    "Llamalo como quieras, encaje, motivacion o quimica, pero lo que a una persona le importa tiene que ser tambien lo que le importa al equipo y a la empresa.",
+    "Si no lo es, cuenta con que esa persona puede acabar en desalineamiento frecuente con lo que quiere para su propia carrera.",
+    "Si el encaje no es el bueno en un equipo concreto, prueba primero un movimiento dentro de la misma organizacion, porque a veces un entorno nuevo mas un problema distinto en el que pensar es exactamente lo que hacia falta.",
+    "Y si eso no funciona, entonces quiza el encaje sea con la empresa entera, y en ese caso separar los caminos puede ser el mejor resultado para todos.",
+    "De cara al futuro, dedica tiempo a entender que valoran las personas candidatas y se transparente sobre lo que valorais tu y tu empresa: si tu descripcion les hace asentir como si fuera musica, van a querer este trabajo, y si no, tambien esta bien, porque aunque tengan exactamente las habilidades que buscas es mejor no meter una pieza redonda en un hueco cuadrado."
+  ],
+  "resumen_teorico": "El capitulo dedica una seccion entera a desmontar una creencia de directivo novato, que es que todo desacuerdo se arregla con mediacion suficiente. La doctrina que pone en su lugar es que hay desencajes que no son malentendidos sino diferencias de valores, y que ahi la mediacion solo gasta tiempo de tres personas. El inventario propio del libro son las dos salidas escritas en orden, el movimiento dentro de la organizacion primero y la separacion de caminos despues, mas la accion preventiva del ultimo paso. Las dos frases que el nodo transcribe en boca de otros, la del directivo que le para los pies y la del propio error de la autora, van con su duenio dentro porque en el libro son de ellos y no mandatos al lector. Lo que el libro NO dice, y por eso no esta escrito aqui, es cuanto se intenta antes de concluir que es de valores ni quien decide el movimiento interno."
+}

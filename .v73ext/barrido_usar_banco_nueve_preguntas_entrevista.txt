@@ -1,0 +1,1 @@
+usar_banco_nueve_preguntas_entrevista poblacion 479 (430 grafo mas 49 bandejas) vecinos 6

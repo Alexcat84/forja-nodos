@@ -1,0 +1,23 @@
+EL CRUCE QUE MI FASE CIEGA DEJO PENDIENTE: MI BARRIDO (D.38.4, poblacion ancha 517)
+CONTRA LA ADUANA DE LA CASA (D.38.5, poblacion estrecha 348 a 354), candidato a candidato.
+Las dos salidas son de ESTA vuelta y ya estan en el arbol: no corro instrumento nuevo (D.47).
+
+  (saltado, sin salida: c0_err.txt)
+  (saltado, sin salida: c6_err.txt)
+  (saltado, sin salida: c00_cambiar_forma_trabajar_conservar_plantilla.txt)
+candidato                                        pob  casa  mio   solo en la casa / solo mio
+auditar_formacion_premios_ultima_fila            354     2    2   [] / []
+cambiar_forma_trabajar_conservar_plantilla         - SIN CORRER    2
+ceder_control_reforzar_competencia_claridad        - SIN CORRER    1
+contar_firmas_cadena_tramite_parado              354     3    2   ['auditar_formacion_premios_ultima_fila'] / []
+encargar_meta_especifica_dejar_libre_metodo      354     3    3   [] / []
+inspeccionar_reparto_informacion_notas_jefe      354     3    2   ['auditar_formacion_premios_ultima_fila'] / []
+observar_reunion_rutinaria_senales_plantilla     350     2    4   ['encargar_meta_especifica_dejar_libre_metodo'] / ['auditar_formacion_premios_ultima_fila', 'inspeccionar_reparto_informacion_notas_jefe', 'seguir_frustrado_preguntar_implantacion_ideas']
+recorrer_organizacion_escuchar_plantilla         350     2    3   [] / ['inspeccionar_reparto_informacion_notas_jefe']
+seguir_frustrado_preguntar_implantacion_ideas    351     2    2   ['encargar_meta_especifica_dejar_libre_metodo'] / ['contar_firmas_cadena_tramite_parado']
+
+NOTA DE METODO, y sin ella la tabla enganaria: la aduana midio cada candidato EN EL ACTO
+de escribirlo, con la bandeja a 348, 350, 351 o 354; mi barrido midio los nueve al final,
+con la bandeja ya a 9. Un vecino que solo sale en mi columna puede ser un candidato que
+aun no existia cuando la casa midio. La comparacion que si cierra es la de los que la casa
+midio con la bandeja YA COMPLETA.

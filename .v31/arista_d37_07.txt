@@ -1,0 +1,10 @@
+DECLARACION DE ARISTA POR LECTURA (D.37)
+  madre: conducir_reunion_equipo_agenda_tres_bloques
+  hijo : escribir_apuntes_sala_estudio_equipo
+  paso citado de la madre: 6
+    Escuchar, poner las actualizaciones en un documento compartido, quince minutos.
+  señales del par: familia_id 0.1, paso_contra_nodo 0.494, similitud_texto 0.235
+    NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: conducir_reunion_equipo_agenda_tres_bloques > escribir_apuntes_sala_estudio_equipo
+  razon en bitacora/VEREDICTOS.jsonl

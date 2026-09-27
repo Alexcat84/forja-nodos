@@ -1,0 +1,3 @@
+bloquear_tiempo_pensar_calendario          grafo:0  bandeja:1
+agendar_cuidados_propios_cumplirlos        grafo:0  bandeja:1
+reservar_calendario_tiempo_ejecutar        grafo:0  bandeja:1

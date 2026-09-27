@@ -3,11 +3,35 @@
 
     python forja.py insertar candidato.json     la aduana (manual seccion 3)
     python forja.py informe candidato.json      la aduana EN SECO, cero inserciones
+    python forja.py arista --madre A --hijo B --paso N --razon R   D.37
+    python forja.py corregir --nodo <id> --anade "CORRECCION DECLARADA ..." --razon R
+                                                correccion declarada del resumen_teorico
+    python forja.py sustituir --nodo <id> --campo <campo> [--indice N] --viejo "..." --nuevo "..."
+                              --regla G --razon R --decision D
+                                                sustitucion declarada de un fragmento, solo por
+                                                decision del fundador; el texto viejo queda en la
+                                                bitacora (src/sustitucion.py)
+    python forja.py anotar --linea <n> --anade "CORRECCION DECLARADA ..." --razon R
+                           [--no-consumada]
+                                                correccion declarada sobre una linea ya
+                                                escrita de bitacora/VEREDICTOS.jsonl
     python forja.py gate                        el gate de integridad
     python forja.py guiones [ruta ...]          el barrido de estilo
     python forja.py rancios                     el bloque de vigencia (D.15)
     python forja.py resolutor [id ...]          el resolutor de ids
     python forja.py censos                      crea las plantillas de censo
+    python forja.py herencia [--acta "ACTA 28"] lo que esta vuelta hereda (D.40).
+                                                Sin --acta, la ULTIMA acta, que es
+                                                lo que corre el arnes
+    python forja.py herencia --comprobar        la apertura ciega contra ello
+    python forja.py tablero                     el tablero de frentes (D.49, D.50)
+    python forja.py tablero --escribir          lo vuelca a docs/loop/TABLERO.jsonl
+    python forja.py tablero --puedo <clave>     si esta linea puede abrir ese libro
+    python forja.py credito                     la racha de ESTA linea (D.48)
+    python forja.py credito --lineas            que lineas tienen registro
+    python forja.py credito --revisar           el replay contra lo declarado
+    python forja.py credito --anotar --especie REPORTE --vuelta 33 --tanda "ACTA 32"
+                            --racha "0 de 3" [--cae] --cita "ACTA 32 9.1"
     python forja.py ayuda
 """
 
@@ -16,7 +40,11 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from src import (aduana, censos, comun, gate, guiones, informe,  # noqa: E402
+from src import (aduana, anotacion, arista, censos, comun, correccion,  # noqa: E402
+                 credito, sustitucion,
+                 tablero,
+                 gate, guiones,
+                 herencia, informe,
                  resolutor, vigencia)
 
 AYUDA = __doc__
@@ -31,6 +59,20 @@ def main(argumentos):
 
     if comando == "insertar":
         return aduana.main(resto)
+    if comando == "herencia":
+        return herencia.main(resto)
+    if comando == "credito":
+        return credito.main(resto)
+    if comando == "tablero":
+        return tablero.main(resto)
+    if comando == "arista":
+        return arista.main(resto)
+    if comando == "corregir":
+        return correccion.main(resto)
+    if comando == "sustituir":
+        return sustitucion.main(resto)
+    if comando == "anotar":
+        return anotacion.main(resto)
     if comando == "informe":
         return informe.main(resto)
     if comando == "gate":

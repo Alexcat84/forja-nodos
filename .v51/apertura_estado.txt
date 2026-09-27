@@ -1,0 +1,14 @@
+    $ git rev-parse --abbrev-ref HEAD
+extraccion-mundo-11
+    $ git log -1 --format="%h %ad %s" --date=iso
+3061fc2 2026-09-19 14:22:12 -0400 Apertura de la vuelta 51: estado del arnes sellado antes de tocar nada
+
+    $ wc -l dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl config/pares_mutuos.jsonl
+    346 dataset/nodos.jsonl
+    740 bitacora/VEREDICTOS.jsonl
+      1 config/pares_mutuos.jsonl
+   1087 total
+    $ ls cuarentena/grove_high_output/*.json | wc -l
+44
+    $ ls cuarentena/_insertados/grove_high_output/*.json | wc -l
+1

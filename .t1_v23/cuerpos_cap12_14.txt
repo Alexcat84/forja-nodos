@@ -1,0 +1,39 @@
+$ sed -n '8,$p' fuentes/scott_radical_candor/cap_12.md | wc -w
+2118
+$ sed -n '1,7p' fuentes/scott_radical_candor/cap_12.md
+---
+libro: Scott, Radical Candor
+edicion: Fully Revised & Updated Edition, St. Martin's Press, First Edition October 2019
+unidad: Getting Started
+titulo_textual: Getting Started
+fidelidad: verbatim
+---
+$ wc -l < fuentes/scott_radical_candor/cap_12.md
+65
+---
+$ sed -n '8,$p' fuentes/scott_radical_candor/cap_13.md | wc -w
+9298
+$ sed -n '1,7p' fuentes/scott_radical_candor/cap_13.md
+---
+libro: Scott, Radical Candor
+edicion: Fully Revised & Updated Edition, St. Martin's Press, First Edition October 2019
+unidad: Afterword
+titulo_textual: Afterword to the Revised Edition: Rolling Out Radical Candor
+fidelidad: verbatim
+---
+$ wc -l < fuentes/scott_radical_candor/cap_13.md
+347
+---
+$ sed -n '8,$p' fuentes/scott_radical_candor/cap_14.md | wc -w
+7638
+$ sed -n '1,7p' fuentes/scott_radical_candor/cap_14.md
+---
+libro: Scott, Radical Candor
+edicion: Fully Revised & Updated Edition, St. Martin's Press, First Edition October 2019
+unidad: Bonus Chapter
+titulo_textual: Bonus Chapter: A Radically Candid Performance Review
+fidelidad: verbatim
+---
+$ wc -l < fuentes/scott_radical_candor/cap_14.md
+243
+---

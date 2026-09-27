@@ -1,0 +1,12 @@
+$ git rev-parse --abbrev-ref HEAD
+extraccion-mundo-11
+$ git rev-parse --short HEAD
+fe179ed
+$ wc -l < dataset/nodos.jsonl
+346
+$ ls cuarentena/grove_high_output/*.json | wc -l
+74
+$ wc -l < bitacora/VEREDICTOS.jsonl
+740
+$ git log --oneline 91d3e4d..HEAD | wc -l
+2

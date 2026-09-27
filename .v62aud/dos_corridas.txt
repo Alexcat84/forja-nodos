@@ -1,0 +1,5 @@
+$ diff <(grep -A1 "vecino " .v61aud/informe_1_priorizar.txt | grep similitud_texto) <(grep -A1 "vecino " .v61ext/informe_1_priorizar.txt | grep similitud_texto)
+0a1,2
+>     vecino pedir_critica_anonima_curso_entrenamiento_dictado  [levantada por: similitud_texto]
+>       similitud_texto 0.497 | familia_id 0.111 | paso_contra_nodo 0.460
+(exit 1)

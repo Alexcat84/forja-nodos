@@ -1,0 +1,66 @@
+fila 03, fijar_frecuencia_reunion_individual_madurez_tarea, lineas --veredicto: 6
+  --veredicto fijar_duracion_lugar_reunion_individual|SANO|Hermanos bajo ONE-ON-ONES, dos preguntas distintas del libro: este fija cada cuanto por la madurez de tarea y el ritmo del area (L33 a L35), el vecino cuanto dura y donde (L37 a L39). La similitud alta (0,63) y la familia salen de la prosa y el nombre comunes de la reunion individual; ningun paso de uno esta en el otro, y fuera queda procedimiento en los dos lados.
+  --veredicto preparar_guion_reunion_individual_subordinado|SANO|Hermanos bajo ONE-ON-ONES: este fija cada cuanto (L33 a L35), el vecino de quien es la reunion y quien prepara el guion (L41). Ninguno usa el producto del otro; la similitud es la prosa comun.
+  --veredicto cubrir_indicadores_problemas_reunion_individual|SANO|Hermanos bajo ONE-ON-ONES: cada cuanto se tiene (L33 a L35) contra que se trata dentro (L43). Ninguno usa el producto del otro.
+  --veredicto infundir_regularidad_reunion_proceso|SANO|El mismo par que infundir lee desde su lado: del mismo tramo y sin jerarquia (DISCUTIBLE D68.8; razon corregida en la vuelta 69, D69.2).
+  --veredicto tomar_notas_copia_guion_reunion_individual|SANO|Tio y sobrino: el vecino es hijo de preparar_guion_reunion_individual_subordinado, hermano de este. Cada cuanto se tiene la reunion (L33 a L35) contra las notas de las dos partes sobre la copia del guion (L49); el seguimiento del paso 7 del vecino se hace en la reunion siguiente, sea cual sea su frecuencia, y no usa la de aqui.
+  --veredicto usar_tres_clases_reunion_proceso|SANO|El mismo par que la cabeza lee desde su lado (relectura conjunta de la vuelta 69, D68.7): este candidato parte de su propia situacion con el uno a uno en marcha y contesta su propia pregunta del libro (L33 a L35, How often should you have one-on-ones); no usa el saber de cuantas clases de reunion de proceso hay y como se llaman, que es todo lo que la cabeza produce (L23). SANO. Correccion declarada: la linea vieja decia CONTINUA madre=usar_tres_clases_reunion_proceso (DISCUTIBLE D69.1).
+inicio 2026-09-25 04:26:06
+======================================================================
+ADUANA DE INSERCION, candidato 'fijar_frecuencia_reunion_individual_madurez_tarea'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (392 del grafo mas 87 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 6. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino fijar_duracion_lugar_reunion_individual  [Fijar cuanto dura la reunion individual y donde se tiene: una hora como minimo, y en el area de trabajo del subordinado o cerca de ella]
+    levantada por: similitud_texto, familia_id
+    similitud_texto    0.629 (umbral 0.35)
+    familia_id         0.375 (umbral 0.30)
+    paso_contra_nodo   0.435 (umbral 0.60)
+    paso 1 del candidato contra paso 3 de fijar_duracion_lugar_reunion_individual
+
+  vecino preparar_guion_reunion_individual_subordinado  [Tratar la reunion individual como reunion del subordinado y hacer que sea el quien prepare el guion y pasee al supervisor por el material]
+    levantada por: similitud_texto
+    similitud_texto    0.606 (umbral 0.35)
+    familia_id         0.222 (umbral 0.30)
+    paso_contra_nodo   0.496 (umbral 0.60)
+    paso 6 del candidato contra paso 1 de preparar_guion_reunion_individual_subordinado
+
+  vecino cubrir_indicadores_problemas_reunion_individual  [Cubrir en la reunion individual los indicadores del subordinado, lo ocurrido desde la anterior y el problema potencial, con el criterio de que sean los asuntos que le preocupan]
+    levantada por: similitud_texto
+    similitud_texto    0.511 (umbral 0.35)
+    familia_id         0.222 (umbral 0.30)
+    paso_contra_nodo   0.436 (umbral 0.60)
+    paso 10 del candidato contra paso 8 de cubrir_indicadores_problemas_reunion_individual
+
+  vecino infundir_regularidad_reunion_proceso  [Infundir regularidad a la reunion de proceso, para poder agrupar en tanda las tareas de mando semejantes y pronosticar el tiempo que piden]
+    levantada por: similitud_texto
+    similitud_texto    0.472 (umbral 0.35)
+    familia_id         0.111 (umbral 0.30)
+    paso_contra_nodo   0.438 (umbral 0.60)
+    paso 8 del candidato contra paso 1 de infundir_regularidad_reunion_proceso
+
+  vecino tomar_notas_copia_guion_reunion_individual  [Repartir una copia del guion a cada parte de la reunion individual y hacer que los dos tomen notas sobre ella, por lo que la nota consigue y por lo que simboliza]
+    levantada por: similitud_texto
+    similitud_texto    0.359 (umbral 0.35)
+    familia_id         0.200 (umbral 0.30)
+    paso_contra_nodo   0.469 (umbral 0.60)
+    paso 5 del candidato contra paso 5 de tomar_notas_copia_guion_reunion_individual
+
+  vecino usar_tres_clases_reunion_proceso  [Usar las tres clases de reunion de proceso que el libro cuenta y nombra: el uno a uno, la reunion de personal y la revision de operaciones]
+    levantada por: similitud_texto
+    similitud_texto    0.410 (umbral 0.35)
+    familia_id         0.100 (umbral 0.30)
+    paso_contra_nodo   0.428 (umbral 0.60)
+    paso 2 del candidato contra paso 1 de usar_tres_clases_reunion_proceso
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 393
+  censos escritos: atribuciones, denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 6
+
+======================================================================
+fin 2026-09-25 05:25:32 | codigo de salida 0 | 3566.0 s

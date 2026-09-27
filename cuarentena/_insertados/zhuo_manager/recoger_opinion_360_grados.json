@@ -1,0 +1,41 @@
+{
+  "id": "recoger_opinion_360_grados",
+  "titulo": "Recoger opinion de trescientos sesenta grados para la maxima objetividad",
+  "denominaciones": {
+    "nombre_largo": "La cuarta de las cuatro formas de opinion: la que se agrega desde multiples perspectivas, con las dos preguntas del correo trimestral",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "collect 360 degree feedback for maximum objectivity"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando te falta contexto profundo del dia a dia de tu persona a cargo, cuando toca su revision anual de desempenio, o cuando sospechas que tu mensaje no esta aterrizando y necesitas que le llegue desde varias voces.",
+  "entregable_esperado": "La opinion agregada de varios colaboradores cercanos, discutida en una reunion en persona con tu persona a cargo y documentada por escrito para que los dos podais volver a ella en el futuro.",
+  "escala_minima": "Una persona a cargo y un punado de sus colaboradores mas cercanos. El libro lo hace con un correo corto.",
+  "pasos_accionables": [
+    "Usa esta forma cuando quieras una vista mas completa y mas objetiva de como lo esta haciendo alguien, porque es opinion agregada desde multiples perspectivas.",
+    "Por ejemplo, si tu persona a cargo dirigio una sesion de lluvia de ideas, en vez de mandarle solo tu opinion especifica de tarea, recoge y comparte tambien lo que penso el resto de la sala.",
+    "O si toca su revision anual de desempenio, en vez de apoyarte solo en tus propias observaciones, recoge opinion sobre su conducta de el punado de colegas con los que trabaja mas de cerca, porque saldran mejores conclusiones.",
+    "Si tu empresa no corre un proceso formal de trescientos sesenta grados una o dos veces al anio, reunela tu mismo, que es lo que la autora cuenta hacer: cada trimestre, y para cada persona a cargo, manda un correo corto a un punado de sus colaboradores mas cercanos con dos preguntas.",
+    "La primera pregunta: que esta haciendo especialmente bien esta persona, que deberia hacer mas?",
+    "La segunda: que deberia cambiar o dejar de hacer?",
+    "No lo hagas mas de un punado de veces al anio, porque lo exhaustivo de esta forma significa que lleva mas tiempo reunirla y no es practico repetirla mucho.",
+    "Como es tan completa, monta una reunion con tu persona a cargo para discutirla en persona, y documenta por escrito lo aprendido para que los dos podais volver a ello en el futuro.",
+    "Usa como modelo los dos ejemplos que el libro escribe. Para el elogio: tus pares te dan muchisimo credito por como gestionaste la crisis de presupuesto, era un trabajo importante y dificil, y tu actitud serena, tu excelente escucha y tus argumentos racionales ayudaron al equipo a llegar a un buen resultado.",
+    "Y para la critica: uno de los temas consistentes de tu opinion de trescientos sesenta grados es que a tus planes les falta rigor, un ejemplo es que dejaste fuera el caso limite de los descuentos para mayores en tu propuesta de precios, lo que dio proyecciones incorrectas, y ese patron de errores pequenios repartidos por tu trabajo esta empezando a socavar tu credibilidad."
+  ],
+  "resumen_teorico": "Es la cuarta de las cuatro formas de dar opinion y la unica que no depende de lo que el directivo haya visto por su cuenta, que es justo para lo que el libro la reserva: cuando falta contexto profundo del dia a dia. El inventario propio del libro es doble y muy concreto: las dos preguntas literales del correo trimestral, que son lo que convierte esta forma en algo ejecutable sin proceso de empresa detras, y las dos obligaciones de cierre, discutirla en persona y documentarla por escrito, que el libro justifica por lo exhaustiva que es. El limite de frecuencia tambien es suyo y viene con su razon, el coste de reunirla. Lo que el libro NO dice, y por eso no esta escrito aqui, es cuantos colaboradores son un punado, ni si las respuestas se comparten con nombre o sin el."
+}

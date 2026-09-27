@@ -1,0 +1,5 @@
+$ python .v69aud/normal/pegado69_aud.py
+bloques abiertos con `$` en el tramo de la vuelta 69 : 29
+bloques que ROMPEN R1 (ACTA 60 60.15)                : 0
+$ python .v69aud/normal/bloques_mudos69_aud.py
+bloques abiertos con `$`: 17 | comandos `$`: 29 | comandos sin ninguna linea de salida en su bloque: 0

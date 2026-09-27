@@ -1,0 +1,14 @@
+$ python .v54/p11_contexto.py
+nodo            : pedir_critica_primero_crear_seguridad_psicologica
+campo           : resumen_teorico, 8764 caracteres
+posiciones      : 5162 y 5166
+
+LOS CARACTERES ALREDEDOR, con el U+0008 escrito como <U+0008>:
+    onl contra 1 de ceo, y SON 39 CONTRA 0. grep -o -i 'consejero delegado' dataset/nodos.jsonl | wc -l da 39, y grep -o -iE '<U+0008>ceo<U+0008>' dataset/nodos.jsonl | wc -l da 0, corridos hoy sobre los 321 nodos del arbol e3950c6. LA GRAFIA QUE ESA CIFRA SOSTIENE NO CAMBIA: c
+
+QUE HAY DENTRO DEL PROPIO CAMPO SOBRE ESTO:
+    'CORRECCION DECLARADA' aparece 3 vez/veces
+    'U+0008' aparece 1 vez/veces
+    'caracter de control' aparece 0 vez/veces
+    'vuelta 40' aparece 1 vez/veces
+    'control' aparece 1 vez/veces

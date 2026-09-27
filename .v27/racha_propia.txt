@@ -1,0 +1,36 @@
+
+--- # ACTA 19. VUELTA 19, lote 4 (`scott_radical_candor`), `cap_09`: las dos lecturas ciegas q
+    L18030: | **la mia, una sola** | **auditor** | 1 de 3 | **2 de 3** | **`CIFRA PUBLICADA PROPIA`: la fila `cap_04: 5` y `SIN: 1` de mi apertura sellada** (`7.1`). La de `7.2` se declara y **no acumula** con su letra delante; la de `7.3` no llego a sede |
+    L18032: > ### **NINGUNA RACHA PARA EL BUCLE HOY. LAS DOS QUE ACUMULAN ESTAN EN EL ESCALON DE ANTES DE LA PARADA: `REPORTE` 2 de 3 y la mia 2 de 3.**
+    L18105: | **CREDITO ROTO** | **NO, y por poco.** `CLASE` **0 de 2**, `CIFRA PUBLICADA` **0 de 2**, `REPORTE` **2 de 3**, la mia **2 de 3**. **Las dos que acumulan estan a una de parar, y las dos llevan remedio encargado** |
+    L18125: | **rachas al cerrar** | `CLASE` **0 de 2**, `CIFRA PUBLICADA` **0 de 2**, `REPORTE` **2 de 3**, **la mia 2 de 3**. **Ninguna para hoy; las dos que acumulan estan a una** |
+
+--- # ACTA 20. VUELTA 20, lote 4 (`scott_radical_candor`), `cap_09` CERRADO y `cap_10` cortado
+    L18835: | **la mia, una sola** | **auditor** | 2 de 3 | # **3 DE 3** | **`REMEDIO ROTO`** (`7.1`): tres guiones largos en mi mensaje final de la fase ciega, contra un remedio que escribi yo en la `ACTA 19` `8.1`. **La de `7.2` se declara y no acumula, con su letra delante** |
+    L18922: | **rachas al cerrar** | `CLASE` **0 de 2**, `CIFRA PUBLICADA` **0 de 2**, `REPORTE` **2 de 3**, **la mia 3 de 3: PARA** |
+
+--- # ACTA 21. VUELTA 21, lote 4 (`scott_radical_candor`), `cap_10` CERRADO ENTERO: la vuelta 
+    L19728: | **la mia, una sola** | **auditor** | **0 de 3** (reiniciada por la decision 1 del fundador del 12 sep, archivada en `docs/loop/paradas/2026-09-12-el-artefacto-que-faltaba.md`) | # **1 de 3** | **`CIFRA PUBLICADA PROPIA`** (`8.1`): la frontera de `13` en dos sedes mias. **Y `REMEDIO ROTO`** (`8.2`)
+    L19730: > ### **NO HAY CREDITO ROTO. `CLASE` `0 de 2`, `CIFRA PUBLICADA` `0 de 2`, `REPORTE` `2 de 3`, la mia `1 de 3`.**
+    L19798: | **CREDITO ROTO** | **NO.** `CLASE` `0 de 2`, `CIFRA PUBLICADA` `0 de 2`, `REPORTE` `2 de 3`, **la mia `1 de 3`** (`9`) |
+    L19867: | **rachas al cerrar** | `CLASE` **0 de 2**, `CIFRA PUBLICADA` **0 de 2**, `REPORTE` **2 de 3**, **la mia 1 de 3**. **NO HAY CREDITO ROTO** |
+
+--- # ACTA 22. VUELTA 22, lote 4 (`scott_radical_candor`), `cap_11` CERRADO ENTERO Y LA DEUDA 
+    L20609: > racha pasa a `2 de 3`.** **Esa decision no es mia** (`5.4`).
+    L20662: | **la mia, una sola** | **auditor** | 1 de 3 | **1 de 3** | **dos caidas declaradas y ninguna acumula, con su letra delante**: el guion largo que aborto el commit del arnes es **`D.33`, formato de artefacto** (`8.1`, decision del fundador del 12 sep punto 1), y el borde corto de mi encargo es **lis
+    L20751: | **CREDITO ROTO** | # **SI. `REPORTE` 3 de 3** (`9`, `9.1`). `CLASE` `0 de 2`, `CIFRA PUBLICADA` `0 de 2`, la mia `1 de 3` |
+    L20787: | **rachas al cerrar** | `CLASE` **0 de 2**, `CIFRA PUBLICADA` **0 de 2**, **`REPORTE` 3 DE 3**, la mia **1 de 3** |
+
+--- # ACTA 23. VUELTA 23, lote 4 (`scott_radical_candor`), `cap_12` y `cap_13` ENTEROS: la vue
+    L21615: | **la mia, una sola** | **auditor** | 1 de 3 | **1 de 3** | **tres cosas declaradas y ninguna de las dos especies de `D.38.2`** (`7.1`, `7.2`, `7.3`). **Y no la pongo a cero: la tanda no esta limpia.** Ver `8.3` |
+    L21643: > en vez de esperar a `2 de 3`. **Declararlo sin encargarlo seria caida mia.**
+    L21662: | **credito roto** | **NO.** `CLASE` `0 de 2`, `CIFRA PUBLICADA` `0 de 2`, `REPORTE` `1 de 3`, la mia `1 de 3`. **Ninguna en su ultimo escalon** |
+    L21709: | **rachas al cerrar** | `CLASE` **0 de 2**, `CIFRA PUBLICADA` **0 de 2**, `REPORTE` **1 de 3**, la mia **1 de 3** |
+
+--- # ACTA 24. VUELTA 24, lote 4 (`scott_radical_candor`), `cap_14` ENTERO Y **EL LOTE 4 CERRA
+    L22499: | **la mia, una sola** | **auditor** | 1 de 3 | # **2 DE 3** | **`REMEDIO ROTO` (`7.1`) y `CIFRA PUBLICADA PROPIA` (`7.2`).** Las dos de `D.38.2`. **Se cuentan como UNA tanda**, igual que las suyas |
+    L22620: | **rachas** | `CLASE` **0 de 2**, `CIFRA PUBLICADA` **0 de 2**, `REPORTE` # **2 de 3**, la mia # **2 de 3** |
+    L22632: | **credito roto** | **NO.** `CLASE` `0 de 2`, `CIFRA PUBLICADA` `0 de 2`, `REPORTE` `2 de 3`, la mia `2 de 3`. **Ninguna en su ultimo escalon**, y las dos que estan en el penultimo **llevan su remedio encargado como tarea bloqueante** |
+
+--- # ACTA 25. VUELTA 25, lote 4 (`scott_radical_candor`) INSERTANDO Y **LOTE 5 (`marquet_turn
+    L23473: | **la mia, una sola** | **auditor** | 2 de 3 | **2 de 3** | **tres caidas propias declaradas (`7.1`, `7.2`, `7.3`) y una retirada (`7.4`), y ninguna de las tres acumula por la letra**: dos no son de mis especies y la tercera es un acto de la tanda anterior, **ya contada**. **NO la pongo a cero**, y

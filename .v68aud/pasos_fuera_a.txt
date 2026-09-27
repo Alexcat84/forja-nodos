@@ -1,0 +1,69 @@
+===== dirigir_reunion_individual_semanal | grafo
+  titulo: Dirigir la reunion individual semanal con cada persona a cargo
+  fuente: ['zhuo_manager']
+  cond: Siempre que tengas personas a cargo, y aunque te sientes al lado de ellas y las veas todos los dias, porque el libro dice que hay temas que de otro modo no salen nunca.
+  P1. Da por hecho que el recurso mas precioso que tienes es tu propio tiempo y tu energia, y que gastarlo en tu equipo es lo que mas construye relaciones sanas.
+  P2. Ten una reunion a solas con cada persona a cargo, no menos de una por semana y de treinta minutos, y mas tiempo si hace falta.
+  P3. Usala para tratar temas que de otro modo no saldrian nunca, aunque te sientes al lado de la persona y la veas todos los dias: que la motiva, cuales son sus aspiraciones de carrera a largo plazo, como se siente en general con su trabajo, y mas.
+  P4. Centrala en tu persona a cargo y en lo que la ayudaria a tener mas exito, no en ti y en lo que tu necesitas. Si lo que buscas es un parte de situacion, usa otro canal: el tiempo a solas es escaso y se aprovecha mejor en los temas que son mas dificiles de tratar en grupo o por correo.
+  P5. Apunta a que tu persona a cargo salga sintiendo que le fue util. Si sale pensando que la conversacion fue agradable pero en general olvidable, puedes hacerlo mejor: tu trabajo es ser un multiplicador para tu gente, asi que si le quitas una barrera, le das una perspectiva nueva valiosa o le subes la confianza, la estas habilitando para tener mas exito.
+  P6. Preparala, que es la respuesta a como se consiguen reuniones a solas estupendas: es raro que brote una conversacion asombrosa cuando nadie tiene un plan de que hablar.
+  P7. Para prepararla el libro da cuatro ideas con las que empezar. La primera, discutir las prioridades de mas arriba: cuales son los uno, dos o tres resultados mas criticos para tu persona a cargo, y como puedes ayudarla a atacar esos retos.
+  P8. La segunda, calibrar a que se parece un gran trabajo: teneis una vision compartida de hacia donde estais trabajando, estais sincronizados en metas y en expectativas?
+  P9. La tercera, compartir opinion: que opinion puedes darle tu que la ayude, y que puede decirte ella a ti que te haga mas eficaz como directivo?
+  P10. Y la cuarta, reflexionar sobre como van las cosas: de vez en cuando conviene alejar el foco y hablar del estado de animo general de tu persona a cargo, como se siente en conjunto, que la tiene satisfecha o insatisfecha, si alguna de sus metas ha cambiado, que ha aprendido ultimamente y que quiere aprender de aqui en adelante.
+===== preguntar_conducir_reunion_individual | grafo
+  titulo: Preguntar para conducir la reunion individual, con los tres grupos de preguntas del libro
+  fuente: ['zhuo_manager']
+  cond: Cuando tienes delante una reunion a solas con una persona a cargo y quieres que la lleve ella mientras tu escuchas y hurgas, en vez de repartir consejo.
+  P1. Piensa de antemano los temas que quieres traer, porque al libro le es util que lo hagan los dos, el directivo y la persona a cargo. El ejemplo que pone es un habito de la autora: cada maniana repasa su calendario y prepara una lista de preguntas para cada persona con la que se va a ver.
+  P2. Pregunta en vez de suponer, porque la mejor herramienta de un entrenador para entender que esta pasando es preguntar: no des por sabido cual es el problema ni cual es la solucion.
+  P3. Cuenta con que demasiadas veces los intentos de ayudar no ayudan de verdad, aunque se sirvan con la mejor de las intenciones: todos recordamos sermones que nos entraron por un oido y nos salieron por el otro porque era obvio que el otro no entendia nuestro problema de verdad, y ayudas no pedidas que se hacen indistinguibles de microgestionar o de entrometerse.
+  P4. Ten claro que tu trabajo no es repartir consejo ni salvar el dia, sino habilitar a tu persona a cargo para que encuentre ella la respuesta: tiene mas contexto que tu sobre los problemas con los que esta lidiando, asi que esta en mejor posicion para destapar la solucion. Dejala llevar la reunion mientras tu escuchas y hurgas.
+  P5. Empieza por el grupo de identificar, que sirve para centrarse en lo que de verdad importa a tu persona a cargo y en que temas merecen mas tiempo: que tienes en la cabeza ahora mismo, que prioridades estas pensando para esta semana, y cual es el mejor uso de nuestro tiempo hoy.
+  P6. Sigue con el grupo de entender, una vez identificado el tema, que va a la raiz del problema y a que se puede hacer con el: a que se parece tu resultado ideal, que se te hace dificil para llegar a ese resultado, que es lo que de verdad te importa, cual crees que es el mejor curso de accion, y cual es el peor escenario que te preocupa.
+  P7. Y cierra con el grupo de apoyar, que apunta a como puedes serle de mayor servicio: como puedo ayudarte, que puedo hacer para que tengas mas exito, y que ha sido lo mas util de nuestra conversacion de hoy.
+===== conducir_reunion_equipo_agenda_tres_bloques | grafo
+  titulo: Conducir la reunion semanal de equipo con la agenda de tres bloques del texto: aprender, escuchar y aclarar, sin debatir ni decidir dentro
+  fuente: ['scott_radical_candor']
+  cond: Cuando conduces la reunion semanal con las personas que te reportan y quieres que sirva para algo, en vez de que la temas tu, la vean como perdida de tiempo los que van, y se sientan excluidos los que no.
+  P1. Cuenta con lo que el texto mide antes de darte la agenda: bien llevada, una reunion de equipo te ahorra tiempo porque te avisa de los problemas, comparte las actualizaciones con eficiencia y os deja a todos de acuerdo sobre cuales son las prioridades compartidas de la semana.
+  P2. Ponle los tres goles que el texto escribe: repasar como han ido las cosas la semana anterior, dejar que la gente comparta actualizaciones importantes, y forzar al equipo a aclarar cuales son las decisiones y los debates mas importantes de la semana que viene.
+  P3. Y para ahi: el texto dice que eso es todo, y que esta no es la reunion donde se debate ni donde se decide.
+  P4. Haz tu trabajo, que el texto define en tres actos: establecer una agenda constante, insistir en que la gente se cinia a ella, y cortar a quien se alarga demasiado o se va por las ramas.
+  P5. Monta la agenda con los tres bloques y sus tiempos: aprender, repasar los indicadores clave, veinte minutos.
+  P6. Escuchar, poner las actualizaciones en un documento compartido, quince minutos.
+  P7. Aclarar, identificar las decisiones y los debates clave, treinta minutos.
+  P8. En el bloque de aprender, pregunta que fue bien esa semana y por que, y que fue mal y por que.
+  P9. Monta para eso un cuadro de mando de indicadores clave, y el texto aclara que no significa un sistema sofisticadisimo montado por un departamento de informatica: significa una hoja de calculo con unos pocos numeros.
+  P10. Elige esos numeros con la pregunta que el texto da: cuales son las actividades y los resultados mas importantes que ves cada semana y que te dicen si vas camino de lograr tus objetivos.
+  P11. Disenia tu misma el cuadro de mando: el texto dice que no necesitas que te lo haga una infraestructura corporativa.
+  P12. Idealmente que se actualice solo; y si eso no es posible, asegurate de que cada persona que trabaja para ti actualice su parte la noche anterior a la reunion.
+  P13. Si hace falta, compruebalo tu y dales la lata hasta que metan sus actualizaciones.
+  P14. Si puedes, pon el cuadro de mando en un sitio donde lo vea el equipo entero.
+  P15. Y haz publicas casi siempre las notas de esa conversacion.
+  P16. En el bloque de aclarar, pregunta cuales son la una o dos decisiones mas importantes y el unico debate mas importante que tu equipo tiene que abordar esa semana.
+  P17. Si tu equipo es de menos de unas veinte personas, probablemente puedas limitarte a listarlos y decidir o debatir sobre la marcha.
+  P18. Si tu equipo es mas grande que unas veinte personas, ponte mas formal: pon esos temas en las agendas de reuniones separadas de gran decision y de gran debate, e identifica duenios para cada uno.
+  P19. Cuenta con que eso parece multiplicar reuniones y con lo que el texto responde: en realidad es la manera de sacarte a ti de reuniones y de que esten presentes los que quieren estar en esos debates y decisiones.
+  P20. Y deja que los duenios del debate y de la decision no sean ni tu ni la gente que te reporta, porque esas reuniones separadas son la manera de delegar debates y decisiones, y delegarlos los empuja hacia los hechos y evita el pensamiento jerarquico.
+  P21. Comunica al equipo mas amplio la agenda de esas dos reuniones, y deja que asista libremente quien quiera.
+  P22. Cuenta con lo que el texto dice que pasa entonces: al principio seran probablemente demasiado grandes, pero muy pronto la gente ira solo si de verdad quiere o necesita estar, porque odia mas asistir a reuniones que no le incumben que quedarse fuera de decisiones que si.
+===== montar_reunion_gran_decision | grafo
+  titulo: Montar la reunion de gran decision, con su decisor nombrado, sus decisiones finales y tu poder de veto usado con cuentagotas
+  fuente: ['scott_radical_candor']
+  cond: Cuando hay que tomar una decision importante y quieres que quede claro que se esta decidiendo y no debatiendo, normalmente despues de una reunion de gran debate.
+  P1. Convocala normalmente despues de una reunion de gran debate, aunque el texto aclara que no siempre es asi.
+  P2. Cuenta con el primero de los dos papeles que el texto le da, que llama el obvio: tomar decisiones importantes.
+  P3. Cuenta con el segundo, que llama mas sutil: cuesta saber cuando dejar de debatir y empezar a decidir, y el texto dice que no ha encontrado ningun principio absoluto que responda a eso; el acto simple de ser explicito y consciente de cuando decides y cuando debates es lo que mas ayuda a saber cuando hace falta de verdad tomar una decision. El texto dice que esa es la razon principal por la que recomienda dos reuniones separadas.
+  P4. Ponle las mismas logisticas y las mismas normas que a la reunion de gran debate.
+  P5. Haz que dirija la reunion el decisor, que es a quien habras nombrado en tu reunion de equipo.
+  P6. Deja que los unicos obligados a asistir sean los identificados en la reunion de equipo, y que cualquiera pueda asistir.
+  P7. Haz que se tomen notas y que se pongan a disposicion de todas las partes implicadas.
+  P8. Egos en la puerta, y ni ganadores ni perdedores.
+  P9. Saca de ahi el producto que el texto le pone: un resumen cuidadoso de la reunion repartido a todas las partes implicadas.
+  P10. Y asegurate de que las decisiones son finales, porque el texto dice que si no siempre se apelaran y entonces seran debates y no decisiones.
+  P11. Acata tu las decisiones tomadas en estas reuniones igual que todos los demas.
+  P12. Si sabes que es un tema sobre el que tienes opiniones fuertes, o vas tu a la reunion, o le dices al decisor que tienes poder de veto.
+  P13. Si tienes poder de veto, haz que el decisor te mande la decision para que la apruebes o la rechaces antes de que las notas salgan mas ampliamente.
+  P14. Y usa ese poder con cuentagotas, porque el texto dice que si no las reuniones se volveran irrelevantes.

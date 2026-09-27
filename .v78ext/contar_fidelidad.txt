@@ -1,0 +1,38 @@
+candidato                                                    cap     pasos   T   P
+recorrer_organizacion_escuchar_plantilla                     cap_03      7   7   0
+observar_reunion_rutinaria_senales_plantilla                 cap_03      9   9   0
+seguir_frustrado_preguntar_implantacion_ideas                cap_03      8   7   1
+contar_firmas_cadena_tramite_parado                          cap_03     10  10   0
+inspeccionar_reparto_informacion_notas_jefe                  cap_03      8   8   0
+auditar_formacion_premios_ultima_fila                        cap_03     11  11   0
+ceder_control_reforzar_competencia_claridad                  cap_01      6   6   0
+cambiar_forma_trabajar_conservar_plantilla                   cap_02      5   5   0
+encargar_meta_especifica_dejar_libre_metodo                  cap_02      5   5   0
+informar_cierre_jornada_conservar_propiedad_trabajo          cap_04      5   3   2
+aplicar_ejercicio_codigo_genetico_control                    cap_06      6   6   0
+asignar_responsable_unico_evolucion_planificada              cap_06      2   2   0
+declarar_intencion_reemplazar_peticion_permiso               cap_07      3   3   0
+resistir_dar_solucion_clasificar_decision_urgencia           cap_08      5   5   0
+eliminar_seguimiento_descendente_responsabilizar_dueno       cap_09      2   2   0
+acoger_inspectores_externos_fuente_aprendizaje               cap_10      3   3   0
+tomar_accion_deliberada_pausar_vocalizar_gesticular          cap_11      3   3   0
+identificar_temas_formacion_tarjetas_decision                cap_12      8   8   0
+repetir_mensaje_invariable_diario_reunion_evento             cap_13      2   2   0
+reforzar_principios_guia_lenguaje_prueba_conocimiento        cap_14      2   2   0
+pasos sin fila: 0 [] | filas sin paso: 0 []
+
+PASOS INVENTADOS POR CAPITULO, las 20 de Marquet (COPIA de la vuelta 78 de .v76ext/contar_fidelidad.py, ruta cambiada)
+cap_01  candidatos 1  pasos 6  T 6  P 0  inventado 0,0 por ciento
+cap_02  candidatos 2  pasos 10  T 10  P 0  inventado 0,0 por ciento
+cap_03  candidatos 6  pasos 53  T 52  P 1  inventado 1,9 por ciento
+cap_04  candidatos 1  pasos 5  T 3  P 2  inventado 40,0 por ciento
+cap_06  candidatos 2  pasos 8  T 8  P 0  inventado 0,0 por ciento
+cap_07  candidatos 1  pasos 3  T 3  P 0  inventado 0,0 por ciento
+cap_08  candidatos 1  pasos 5  T 5  P 0  inventado 0,0 por ciento
+cap_09  candidatos 1  pasos 2  T 2  P 0  inventado 0,0 por ciento
+cap_10  candidatos 1  pasos 3  T 3  P 0  inventado 0,0 por ciento
+cap_11  candidatos 1  pasos 3  T 3  P 0  inventado 0,0 por ciento
+cap_12  candidatos 1  pasos 8  T 8  P 0  inventado 0,0 por ciento
+cap_13  candidatos 1  pasos 2  T 2  P 0  inventado 0,0 por ciento
+cap_14  candidatos 1  pasos 2  T 2  P 0  inventado 0,0 por ciento
+peor capitulo: cap_04, 2 de 5, 40,0 por ciento; por encima del 10: cap_04

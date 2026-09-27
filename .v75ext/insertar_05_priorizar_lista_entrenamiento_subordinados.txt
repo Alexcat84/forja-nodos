@@ -1,0 +1,48 @@
+fila 05, priorizar_lista_entrenamiento_subordinados, lineas --veredicto: 3
+  --veredicto pedir_critica_anonima_curso_entrenamiento_dictado|SANO|El mismo par que pedir_critica lee desde su lado: abuela y nieta por desarrollar_primer_curso_entrenamiento (D67.4). La lista priorizada de aqui (L49 a L51) la usa desarrollar_primer_curso_entrenamiento (L53), y el curso que ese dicta lo usa el vecino (L61); ninguno de los pasos del vecino usa la lista. LA ACTA 60 60.5 ADJUDICO ESTE PAR CONTINUA, y mi lectura de hoy difiere (DISCUTIBLE D73.9).
+  --veredicto desarrollar_primer_curso_entrenamiento|CONTINUA|madre=priorizar_lista_entrenamiento_subordinados|El mismo par que desarrollar lee desde su lado: el vecino parte de la lista priorizada que produce este candidato (L51) y elige de ella el tema mas urgente (L53). Procedimiento en los dos lados (ACTA 60 60.5, par 1).
+  --veredicto reciclar_empleado_ascendido_mas_alla_capacidad|SANO|Ajenos, el mismo par que reciclar lee desde su lado: entrenar a los subordinados (L49 a L51) contra devolver a su puesto a quien fue ascendido mas alla de su capacidad (cap_16 L49).
+inicio 2026-09-26 05:22:59
+======================================================================
+ADUANA DE INSERCION, candidato 'priorizar_lista_entrenamiento_subordinados'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (434 del grafo mas 45 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 3. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino pedir_critica_anonima_curso_entrenamiento_dictado  [Pedir critica anonima tras dictar un curso de entrenamiento, con formulario numerico y preguntas abiertas]
+    levantada por: similitud_texto
+    similitud_texto    0.466 (umbral 0.35)
+    familia_id         0.111 (umbral 0.30)
+    paso_contra_nodo   0.439 (umbral 0.60)
+    paso 1 del candidato contra paso 3 de pedir_critica_anonima_curso_entrenamiento_dictado
+
+  vecino desarrollar_primer_curso_entrenamiento  [Desarrollar el primer curso de entrenamiento en siete pasos, desde el alcance sin ambicion hasta decidir si hacen falta mas instructores]
+    levantada por: similitud_texto
+    similitud_texto    0.411 (umbral 0.35)
+    familia_id         0.143 (umbral 0.30)
+    paso_contra_nodo   0.401 (umbral 0.60)
+    paso 1 del candidato contra paso 6 de desarrollar_primer_curso_entrenamiento
+
+  vecino reciclar_empleado_ascendido_mas_alla_capacidad  [Reciclar abiertamente a un empleado ascendido mas alla de su capacidad: reconocer el error de la direccion, devolverlo a un puesto que sepa hacer bien y apoyarlo frente a la verguenza]
+    levantada por: similitud_texto
+    similitud_texto    0.355 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.384 (umbral 0.60)
+    paso 4 del candidato contra paso 2 de reciclar_empleado_ascendido_mas_alla_capacidad
+  ARISTA EN COLA, no cableada: priorizar_lista_entrenamiento_subordinados > desarrollar_primer_curso_entrenamiento
+    el otro extremo espera en la bandeja (D.29). El veredicto CONTINUA queda escrito y la arista se cablea cuando entre:
+      python forja.py arista --madre priorizar_lista_entrenamiento_subordinados --hijo desarrollar_primer_curso_entrenamiento --paso <n> --razon "..."
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 435
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 3
+  ARISTAS EN COLA, sin cablear: 1
+    priorizar_lista_entrenamiento_subordinados > desarrollar_primer_curso_entrenamiento
+    D.29: van a un bloque propio y titulado del reporte, y se cablean con `forja.py arista` cuando el otro extremo entre.
+
+======================================================================
+fin 2026-09-26 05:29:50 | codigo de salida 0 | 410.4 s

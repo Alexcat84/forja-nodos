@@ -1,0 +1,8 @@
+$ ANTES (.v28e/rancios_apertura.txt)
+BLOQUE DE VIGENCIA: 42 hallazgo(s) sobre 264 veredicto(s) y 0 cita(s).
+  NODO IDO 16, RANCIO 26
+$ HOY (.v28e/rancios_tras_tarea3.txt)
+BLOQUE DE VIGENCIA: 34 hallazgo(s) sobre 260 veredicto(s) y 0 cita(s).
+  RANCIO 26, SIN HUELLA 8
+  lineas declaradas NO CONSUMADAS y por eso no medidas: 4
+    (las escribio una corrida que no inserto nada; ver su razon en la propia linea)

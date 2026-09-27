@@ -1,0 +1,39 @@
+{
+  "id": "entregar_problema_dificil_reporte",
+  "titulo": "Entregar un problema dificil a un reporte y declararlo dueno en publico",
+  "denominaciones": {
+    "nombre_largo": "Los errores del razonamiento que lleva a cargar tu con todo, la declaracion publica que apodera, y el limite de que delegar no es marcharse",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "giving people big problems is a sign of trust"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando aparece un problema dificil y tu primer impulso es cargar con el para ahorrarselo a tu equipo.",
+  "entregable_esperado": "El problema en manos de quien crees capaz de resolverlo, con su propiedad declarada a todo el mundo y contigo cerca sin llevar el timon.",
+  "pasos_accionables": [
+    "Desconfia del razonamiento de que los directivos buenos cargan con las mayores cargas del equipo para ahorrarselas a sus reportes, que es lo que la autora creia.",
+    "Cuenta con el primer error de ese razonamiento: sobrestimar de lo que tu, el directivo, eres capaz. Puede estar en tu mano resolver una gran variedad de asuntos, pero como individuo unico no puedes resolver tantos, y el mejor trabajo viene de quien tiene tiempo para vivir y respirar un problema entero y dedicarse a encontrar la mejor solucion.",
+    "Cuenta con el segundo: suponer que nadie quiere asumir problemas dificiles. De hecho, los empleados con mas talento no buscan trato especial ni proyectos faciles: quieren que se les rete.",
+    "Trata el problema dificil por lo que el libro dice que es: no hay mayor senal de confianza que ponerle a tu reporte en las manos un nudo intrincado que crees que ella puede deshacer, aunque tu no estes seguro de como.",
+    "Comprueba antes la condicion que el libro llama la clave: que de verdad creas que tu reporte es capaz de resolver el problema.",
+    "Si es asi, dale el problema y da un paso atras, para que tenga el espacio de liderar.",
+    "Dile a todos los demas que a partir de ahora esa persona es la duena del problema.",
+    "Hazlo por los dos efectos que el libro nombra: crea responsabilidad, y, mas importante, la declaracion publica apodera a quien recibe el encargo. El libro lo prueba con una pregunta: si un primer ejecutivo pone a alguien a cargo de las finanzas de la empresa, va a tenerlo mas facil esa persona si el ejecutivo dice a toda la empresa que es la directora financiera, o si se lo pide en privado sin que nadie mas lo sepa?",
+    "No confundas delegar con marcharte. Igual que no tirarias a un nadador novato a la parte honda de la piscina y te irias a por un aperitivo, no dejes a tu reporte apanarselas solo: el lleva el timon, pero tu estas con el en el barco, animandole, ayudandole con lo que necesite de ti, y entrenandole para que llegue a su destino sin sobresaltos."
+  ],
+  "resumen_teorico": "Es el primer principio de delegacion del capitulo y el que mas cambia una practica corriente: el problema dificil no se guarda, se entrega. Lo que lo hace procedimentable son tres actos concretos, comprobar que crees en la capacidad, declarar la propiedad en publico, y quedarte en el barco sin llevar el timon; y el contraste del primer ejecutivo es la prueba de por que la declaracion tiene que ser publica y no privada. Los dos errores del razonamiento van dentro porque el libro los nombra como errores, y sin ellos el consejo pareceria comodidad del directivo. Lo que el libro NO dice, y por eso no esta escrito aqui, es como se comprueba que el reporte es capaz, ni que se hace si a mitad se ve que no lo era.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}

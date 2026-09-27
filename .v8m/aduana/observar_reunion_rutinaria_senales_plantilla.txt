@@ -1,0 +1,39 @@
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 479   (346 del grafo mas 133 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 0
+  BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+  vecinos levantados en total      : 4
+  por candidato bloqueado          : menor 4, mediana 4, mayor 4
+  que señal levanta cada vecindad  : similitud_texto 4
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] observar_reunion_rutinaria_senales_plantilla   (observar_reunion_rutinaria_senales_plantilla.json)
+    vecino seguir_frustrado_preguntar_implantacion_ideas  [levantada por: similitud_texto]
+      similitud_texto 0.358 | familia_id 0.000 | paso_contra_nodo 0.466
+      paso 8 del candidato contra paso 6 de seguir_frustrado_preguntar_implantacion_ideas
+    vecino auditar_formacion_premios_ultima_fila  [levantada por: similitud_texto]
+      similitud_texto 0.361 | familia_id 0.000 | paso_contra_nodo 0.463
+      paso 3 del candidato contra paso 8 de auditar_formacion_premios_ultima_fila
+    vecino recorrer_organizacion_escuchar_plantilla  [levantada por: similitud_texto]
+      similitud_texto 0.414 | familia_id 0.125 | paso_contra_nodo 0.435
+      paso 9 del candidato contra paso 6 de recorrer_organizacion_escuchar_plantilla
+    vecino inspeccionar_reparto_informacion_notas_jefe  [levantada por: similitud_texto]
+      similitud_texto 0.367 | familia_id 0.000 | paso_contra_nodo 0.406
+      paso 6 del candidato contra paso 5 de inspeccionar_reparto_informacion_notas_jefe
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.

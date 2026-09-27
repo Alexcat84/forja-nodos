@@ -1,0 +1,1 @@
+informar_cierre_jornada_conservar_propiedad_trabajo poblacion 479 (459 grafo mas 20 bandejas) vecinos 6

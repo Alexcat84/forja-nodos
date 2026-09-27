@@ -1,0 +1,55 @@
+CORTE CIEGO DE cap_06, SEGUNDA PASADA
+  cuerpo del capitulo : L8 a L998
+  palabras del cuerpo : 11587
+  palabras del fichero: 11620
+
+A. ROTULOS DE SECCION EN MAYUSCULAS: 14
+   L11   RETHINKING AMBITION
+   L27   STEEP GROWTH TRAJECTORY
+   L29   GRADUAL GROWTH TRAJECTORY
+   L69   GROWTH MANAGEMENT
+   L85   UNDERSTANDING WHAT MATTERS AND WHY
+   L99   THE PROBLEM WITH “PASSION”
+   L113  EXCELLENT PERFORMANCE
+   L131  EXCELLENT PERFORMANCE/GRADUAL GROWTH TRAJECTORY
+   L197  EXCELLENT PERFORMANCE/ STEEP GROWTH TRAJECTORY
+   L243  MANAGING THE MIDDLE
+   L261  POOR PERFORMANCE/ NEGATIVE GROWTH TRAJECTORY
+   L305  LOW PERFORMANCE/STEEP GROWTH TRAJECTORY
+   L343  NO PERMANENT MARKERS
+   L359  DRIVE RESULTS COLLABORATIVELY
+
+B. ROTULOS DE RETORICA (cascara, cuelgan un titulillo cada uno): 0
+
+C. TITULILLOS DE CUERPO, que son las piezas que pueden dar nodo: 28
+   L25   * * *
+   L31   Change agent
+   L33   Force for stability
+   L35   Ambitious at work
+   L37   Ambitious outside of work or simply content in life
+   L39   Want new opportunities
+   L41   Happy in the current role
+   L47   * * *
+   L71   It’s getting better all the time
+   L115  Keep your top performers top of mind
+   L119  Be a partner, not an absentee manager or a micromanager
+   L133  Recognize, reward, but don’t promote
+   L155  Fair performance ratings
+   L161  Recognition
+   L177  Respect
+   L185  The dangers of promotion obsession
+   L193  * * *
+   L199  Keep superstars challenged
+   L219  Don’t squash them or block them
+   L229  Not every superstar wants to manage
+   L245  Raise the bar-there’s no such thing as a B-player
+   L263  Part ways
+   L293  Be Radically Candid with the person you’re firing
+   L311  Wrong role
+   L323  New to role; too much too fast
+   L331  Personal problems
+   L337  Poor fit
+   L345  People change, and you have to change with them
+
+MI CORTE: 28 piezas de cuerpo (C), bajo 14 rotulos de seccion (A).
+          con los 0 rotulos de retorica contados aparte serian 28.

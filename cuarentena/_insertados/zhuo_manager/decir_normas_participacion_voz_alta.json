@@ -1,0 +1,38 @@
+{
+  "id": "decir_normas_participacion_voz_alta",
+  "titulo": "Decir en voz alta la norma de participacion que quieres que rija",
+  "denominaciones": {
+    "nombre_largo": "La tactica mas facil para que la gente participe, con el parlamento que la autora uso para desatascar sus sesiones de preguntas y respuestas",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "be explicit about the norms you want to set"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando quieres que todo el mundo participe en tu reunion y no lo estan haciendo, y notas que la sala se mira entre si en vez de hablar.",
+  "entregable_esperado": "La norma dicha en voz alta al abrir la reunion, y gente que empieza a hacer las preguntas dificiles que antes se guardaba.",
+  "pasos_accionables": [
+    "Si quieres que todo el mundo participe en tu reunion, prueba la tactica mas facil: decirlo directamente.",
+    "Fijate primero en la senal de que la norma no esta puesta. La autora organizaba sesiones periodicas de preguntas y respuestas con su equipo y, despues de una docena, se dio cuenta de que rara vez recibia preguntas duras: la gente del publico se miraba entre si, como retandose a que preguntara otro primero.",
+    "Descarta la explicacion comoda. No podia ser que su equipo no tuviera preguntas duras, porque a menudo oia por los pasillos que la gente era esceptica sobre alguna estrategia o se preguntaba por que una de sus iniciativas no iba bien. Simplemente no salian en la sesion.",
+    "Nombra el elefante en la sala al abrir la reunion siguiente, y di lo que ella dijo, que el libro pone entre comillas y que va troceado en los pasos que siguen.",
+    "Di por que estas ahi: estoy aqui para hacer preguntas y respuestas porque es muy importante para mi que podamos hablar de verdad sobre todo lo que esta pasando en nuestro equipo.",
+    "Di lo que sospechas, y dilo en primera persona: pero, para ser honesta, no tengo la sensacion de estar oyendo todas vuestras preocupaciones principales.",
+    "Di la norma y comprometete a tu parte: asi que quiero decir esto por delante, las preguntas dificiles son buenas, sacadlas del pecho, y yo prometo ser todo lo transparente que pueda.",
+    "Cuenta con que funcione por lo que es, no por magia: al decir explicitamente que valoraba la transparencia y que daba la bienvenida a las preguntas duras, mucha mas gente las hizo."
+  ],
+  "resumen_teorico": "Es la primera de las tacticas del capitulo para hacer seguro contribuir, y la mas barata de todas: no cambia el formato ni la lista de invitados, solo dice en voz alta la norma. Lo que la hace procedimentable no es el consejo, que por si solo seria postura, sino que el libro pone su propio parlamento entre comillas y con las tres partes distinguibles: el por que, la sospecha en primera persona, y la norma con el compromiso de quien la pide. Los pasos 5, 6 y 7 son la transcripcion de ese parlamento, troceado por sus propias frases. El paso 3 esta porque el libro lo escribe: descartar que el equipo no tenga preguntas es lo que la lleva a buscar la causa en la norma y no en la gente. Lo que el libro NO dice, y por eso no esta escrito aqui, es que hacer si despues de decir la norma la sala sigue callada."
+}

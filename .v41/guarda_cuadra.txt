@@ -1,0 +1,11 @@
+    $ cuadra .v41/informes/i01_abrazar_incomodidad.txt .v41/cadena_1.sh          (CASO POSITIVO)
+      GUARDA cuadra: .v41/informes/i01_abrazar_incomodidad.txt tiene 3 vecino(s); .v41/cadena_1.sh trae 6 --veredicto
+      CUADRA: los 3 vecino(s) del informe tienen su --veredicto en el guion.
+      CODIGO DE SALIDA: 0
+
+    $ grep -v "escuchar_entender...|SANO" .v41/cadena_1.sh > .v41/cadena_1_mordida.sh
+    $ cuadra .v41/informes/i01_abrazar_incomodidad.txt .v41/cadena_1_mordida.sh  (CASO NEGATIVO)
+      GUARDA cuadra: .v41/informes/i01_abrazar_incomodidad.txt tiene 3 vecino(s); .v41/cadena_1_mordida.sh trae 5 --veredicto
+        FALTA el veredicto de escuchar_entender_critica_dominar_defensa
+      NO CUADRA: 1 vecino(s) del informe sin --veredicto. NO SE LANZA.
+      CODIGO DE SALIDA: 1

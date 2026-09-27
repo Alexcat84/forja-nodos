@@ -1,0 +1,47 @@
+{
+  "id": "cortar_efecto_divisor_persona_brillante",
+  "titulo": "Cortar el efecto divisor de la persona brillante que rebaja a los demas",
+  "denominaciones": {
+    "nombre_largo": "Lo unico que el libro dice que no debes tolerar en tu equipo, con la definicion de Sutton y las tres lecciones que la autora saca",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "the one thing you should not tolerate on your team"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando tienes en el equipo a alguien muy capaz que rebaja a los demas con regularidad, y estas dudando porque hace un monton de trabajo impresionante.",
+  "entregable_esperado": "Dicho y sostenido que la vara de colaboracion no se negocia por talento, con los asuntos de esa persona abordados y con una cultura de equipo que deja claro que eso no se tolera.",
+  "escala_minima": "Una sola persona en un equipo de dos. El efecto divisor que el libro describe no necesita un equipo grande para notarse.",
+  "pasos_accionables": [
+    "Reconoce el arquetipo del lobo solitario brillante que, aunque rebaje a los demas con regularidad, acaba saliendo como heroe porque es sencillamente mas capaz que nadie. Es una nocion romantica en la ficcion popular, pero en la vida real esta gente no es la que quieres en tu equipo, por talentosa que sea.",
+    "Cuenta con que lo que obtienes no es un efecto multiplicador sino un efecto divisor: la presencia de esa persona hace menos eficaz al resto de tu equipo.",
+    "Usa para identificarlo la definicion que el libro toma de Robert I. Sutton, profesor de Stanford, en su libro The No Asshole Rule: es quien hace que los demas se sientan peor consigo mismos, o quien ataca especificamente a los que tienen menos poder que el.",
+    "Cuenta con que desde la inexperiencia cuesta verlo claro, porque lo que se ve es que hace un monton de trabajo impresionante. El libro lo cuenta de un caso propio, donde ademas se fue un monton de tiempo en lidiar con las relaciones que aquella persona iba dejando deshilachadas a su paso.",
+    "Ten presente la primera leccion: el equipo mejora de verdad cuando el brillante que rebaja se va. Pierdes su contribucion individual, si, pero a los demas se les levanta la niebla, pueden bajar la guardia, la colaboracion se vuelve mas honesta y productiva, y con ella mejora el trabajo del equipo entero.",
+    "La segunda: es posible encontrar gente igual de talentosa que ademas sea humilde y amable. No es lo uno o lo otro, por mucho que las peliculas lo cuenten asi.",
+    "Manten por eso alta la vara de la colaboracion y no negocies tus valores por alguien que cree que esta bien acosar a otros, porque tu y tu equipo mereceis algo mejor.",
+    "Y la tercera: si pueden cambiar, cuando la cultura que tu fijas deja claro que no se les va a tolerar."
+  ],
+  "atribuciones": [
+    {
+      "cifra": "la definicion operativa: es quien hace que los demas se sientan peor consigo mismos, o quien ataca especificamente a los que tienen menos poder que el",
+      "autor": "Robert I. Sutton",
+      "fuente": "zhuo_manager",
+      "fecha_corte": "no consta el anio en el texto: el libro lo cita por su obra The No Asshole Rule"
+    }
+  ],
+  "resumen_teorico": "Es la unica cosa que el capitulo nombra como intolerable, y el libro la razona con una cuenta y no con moral: la persona muy capaz que rebaja a los demas produce un efecto divisor, de modo que lo que se gana en contribucion individual se pierde multiplicado en el resto. El inventario propio del libro es doble: la definicion operativa que toma de Robert I. Sutton, que sirve para identificar el caso sin discutir de caracteres, y las tres lecciones que la autora numera una a una. La forma en que el libro las presenta, lo que aprendi despues, la segunda cosa que aprendi, la tercera leccion, es lo que las convierte en inventario y no en desahogo. Lo que el libro NO dice, y por eso no esta escrito aqui, es como se le dice a esa persona lo que esta pasando ni cuanto se espera antes de concluir que no va a cambiar."
+}

@@ -1,0 +1,46 @@
+{
+  "id": "establecer_limites_cuidado_personal",
+  "titulo": "Cuidarte estableciendo limites cuando el trabajo se te desborda",
+  "denominaciones": {
+    "nombre_largo": "El sexto consejo del Pozo: tallar tiempo para los otros aspectos importantes de tu vida, con el ejercicio de los quince minutos al principio y al final del dia",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "practice self care by establishing boundaries"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando tu vida laboral te desborda y se te filtra en todo lo demas: acabas trabajando noches y fines de semana por un proyecto, o no puedes dejar de pensar en tu lista de tareas cuando el resto del mundo duerme.",
+  "entregable_esperado": "Limites puestos en forma de tiempo tallado para los otros aspectos importantes de tu vida, y no en forma de intencion.",
+  "escala_minima": "Una persona y su calendario. El ejercicio que el libro da son quince minutos al principio y al final del dia.",
+  "atribuciones": [
+    {
+      "cifra": "estudio tras estudio se ha mostrado que el estres alto en el trabajo inhibe la creatividad, mientras que cuando la gente se sentia mas positiva era mas probable que fuera creativa",
+      "autor": "Teresa Amabile, profesora de la Harvard Business School y autora de The Progress Principle",
+      "fuente": "zhuo_manager",
+      "fecha_corte": "no consta en el texto: el libro cita a la autora y su obra, sin anio ni muestra"
+    }
+  ],
+  "pasos_accionables": [
+    "Ten delante la situacion: cuando tu vida laboral te desborda, se te filtra facilmente en todo. Quiza estas tan estresado por un proyecto que acabas trabajando noches y fines de semana, o no puedes dejar de pensar en tu lista de tareas ni cuando el resto del mundo esta dormido.",
+    "Resiste eso.",
+    "Pon limites tallando tiempo para los otros aspectos importantes de tu vida: pasar tiempo con los tuyos, dedicarte a tus aficiones, hacer ejercicio, devolverle algo a tu comunidad, y asi.",
+    "Ten delante la razon que el libro da, atribuida: estudio tras estudio se ha mostrado que el estres alto en el trabajo inhibe la creatividad, mientras que, en palabras de Teresa Amabile, profesora de la Harvard Business School y autora de The Progress Principle, cuando la gente se sentia mas positiva era mas probable que fuera creativa.",
+    "Usa el ejercicio concreto al que la autora recurre en sus periodos de mas ajetreo: programar una actividad de quince minutos al principio y al final del dia que no tenga nada que ver con el trabajo. Ella ve una charla, juega a algo en el telefono, hace un crucigrama, hace ejercicio o lee.",
+    "Cuenta con que no es mucho tiempo y con lo que si es: trazar una raya en la arena que dice pase lo que pase, siempre voy a reservarme algo de tiempo para mi.",
+    "Y ten presente por que no es un lujo: no puedes hacer tu mejor trabajo si no te sientes bien fisicamente, asi que cuidate, que siempre merece la pena."
+  ],
+  "resumen_teorico": "Es el sexto y ultimo consejo de la seccion y el unico que no nombra el Pozo, lo que importa para su condicion de activacion: el libro lo activa por el desbordamiento de la vida laboral y no por el bache de confianza. Su inventario propio es doble: los cuatro aspectos de la vida donde tallar tiempo, nombrados uno a uno, y el ejercicio de los quince minutos con sus cinco actividades de ejemplo. La razon esta atribuida a Teresa Amabile con su obra. Lo que el libro NO dice, y por eso no esta escrito: ni cuantos limites son bastantes, ni que hacer cuando el trabajo no deja hueco ni para esos quince minutos."
+}

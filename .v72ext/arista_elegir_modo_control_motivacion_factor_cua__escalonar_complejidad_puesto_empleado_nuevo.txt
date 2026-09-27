@@ -1,0 +1,13 @@
+$ python forja.py arista --madre elegir_modo_control_motivacion_factor_cua --hijo escalonar_complejidad_puesto_empleado_nuevo --paso 4 --razon <fila 12> --veredicto CONTINUA --cita-veredicto <fila 12>
+DECLARACION DE ARISTA POR LECTURA (D.37)
+  madre: elegir_modo_control_motivacion_factor_cua
+  hijo : escalonar_complejidad_puesto_empleado_nuevo
+  paso citado de la madre: 4
+    Cruza las dos variables en un cuadro de cuatro cuadrantes: motivacion, de interes propio a interes de grupo, contra factor CUA, de bajo a alto.
+  señales del par: familia_id 0.0, paso_contra_nodo 0.472, similitud_texto 0.225
+    NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: elegir_modo_control_motivacion_factor_cua > escalonar_complejidad_puesto_empleado_nuevo
+  razon en bitacora/VEREDICTOS.jsonl
+
+codigo 0

@@ -1,0 +1,28 @@
+$ python forja.py gate
+GATE VERDE.
+  nodos verificados: 346
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+
+$ python forja.py guiones
+BARRIDO DE GUIONES EN ROJO: 1 hallazgo(s)
+  .v47/frontmatter.txt linea 30 columna 25: guion largo (U+2014)
+Regla: cero guiones largos y cero guiones medios en todo el repo (manual seccion 2). Usa el guion corto normal.
+
+$ python scripts/censar_rutas.py
+============================================================================
+rutas publicadas y censadas : 161
+  pasan                     : 161
+  CAEN                      : 0
+      PATRON                           10
+      VACIA A PROPOSITO                3
+      con contenido                    131
+      vacia por protocolo              17
+
+CENSO VERDE: las 161 rutas publicadas sostienen lo que dicen sostener.
+
+$ python forja.py herencia --comprobar
+APERTURA CIEGA COMPLETA: el acta anterior va leida por su huella y los 0 heredados van declarados.
+
+$ ls docs/loop/APERTURA_CIEGA.md  y  wc -l
+-rw-r--r-- 1 AlexDesk 197609 25243 Sep 19 00:33 docs/loop/APERTURA_CIEGA.md
+430 docs/loop/APERTURA_CIEGA.md

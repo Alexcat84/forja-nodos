@@ -1,0 +1,4 @@
+$ sed -n '19p' fuentes/grove_high_output/cap_07.md | tr " " "
+" | tail -16 | tr "
+" " "
+what more (or less) do you need to do to produce what your environment will demand? 

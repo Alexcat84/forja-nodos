@@ -1,0 +1,13 @@
+bloquear_tiempo_pensar_calendario   (6 pasos)   poblacion 316 = 203 grafo + 113 bandejas
+  vecinos POR ENCIMA de umbral: 4
+    calibrar_ascensos_evitar_politica                    sim=0.223 fam=0.000 paso=0.911  <- paso_contra_nodo
+    exigir_critica_jefe_reticente                        sim=0.364 fam=0.000 paso=0.422  <- similitud_texto
+    proteger_tiempo_equipo_jefe                          sim=0.228 fam=0.143 paso=0.604  <- paso_contra_nodo
+    reservar_calendario_tiempo_ejecutar                  sim=0.271 fam=0.333 paso=0.458  <- familia_id
+  los 5 mas altos por similitud_texto, esten o no por encima:
+    exigir_critica_jefe_reticente                        sim=0.364 fam=0.000 paso=0.422
+    leer_seniales_fallo_jefe_reunion_solas               sim=0.344 fam=0.000 paso=0.393
+    impedir_punialadas_espalda_equipo                    sim=0.337 fam=0.000 paso=0.413
+    comprobar_criticas_hombre_mujeres_equipo             sim=0.328 fam=0.000 paso=0.364
+    pelear_proliferacion_reuniones_bloquear_ejecucion    sim=0.324 fam=0.125 paso=0.400
+  segundos: 102.9

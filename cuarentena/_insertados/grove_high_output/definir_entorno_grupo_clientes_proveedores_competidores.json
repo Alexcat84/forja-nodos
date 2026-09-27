@@ -1,0 +1,41 @@
+{
+ "id": "definir_entorno_grupo_clientes_proveedores_competidores",
+ "titulo": "Definir tu entorno mirando tu grupo como si fuera una empresa independiente: clientes, proveedores y competidores",
+ "dominio": "gestion_equipos",
+ "estado": "vivo",
+ "ids_alias": [],
+ "nodos_previos": [],
+ "nodos_siguientes": [],
+ "atribuciones": [],
+ "fuentes": [
+  {
+   "clave": "grove_high_output",
+   "fecha": "2026-09-20"
+  }
+ ],
+ "denominaciones": {
+  "nombre_largo": "El paso 1 de la planificacion, la demanda del entorno, resuelto por su pregunta previa: que es exactamente tu entorno, y de que tres clases de grupo esta hecho",
+  "sigla": "",
+  "otros_idiomas": [
+   {
+    "idioma": "ingles",
+    "termino": "environmental demand"
+   },
+   {
+    "idioma": "ingles",
+    "termino": "stand-alone company"
+   }
+  ]
+ },
+ "condiciones_activacion": "Cuando vas a dar el paso 1 de la planificacion, el de la demanda del entorno, y no sabes todavia que cuenta como tu entorno ni donde acaba.",
+ "entregable_esperado": "Tu entorno escrito por sus tres clases de grupo: la lista de tus clientes, la de tus proveedores y la de tus competidores, y para estos ultimos el servicio de fuera con el que te comparas.",
+ "pasos_accionables": [
+  "Mira tu propio grupo dentro de la organizacion como si fuera una empresa independiente.",
+  "Anota como entorno los otros grupos de ese tipo que influyen directamente en lo que haces.",
+  "Lista a tus clientes, que son quienes necesitan tus servicios.",
+  "Lista a tus proveedores, que son quienes pueden darte determinadas capacidades.",
+  "Lista por ultimo a tus competidores.",
+  "Cuenta con que dentro de la organizacion no tienes competidores, y en su lugar compara tu servicio con uno de fuera para juzgar tu desempeno y fijar tus estandares."
+ ],
+ "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/grove_high_output/cap_07.md, PIEZA P8 de la frontera publicada en la vuelta 53 (docs/loop/REPORTE.md L50888), tramo L25 a L25, 110 palabras, y de ningun otro tramo. POR QUE ES PROCEDIMIENTO, por la prueba del inventario de EXTRACTOR.md 9.1: el libro pone SU PROPIO INVENTARIO de OBJETOS DE TRABAJO, nombrados uno a uno (customers who need your services, vendors who are able to provide you with certain capabilities, and finally, your competitors), y ademas pone el medio con el que se mira (as if it were a stand-alone company) y la salida del caso sin competidores (compare your service to one like United Parcel as a way to judge performance and set standards). No hay adjetivo de adecuacion en el sitio del criterio. DE DONDE SALE CADA PASO, uno a uno, todos de L25: paso 1 (If you look at your own group within an organization as if it were a stand-alone company); paso 2 (you see that your environment is made up of other such groups that directly influence what you do); paso 3 (customers who need your services); paso 4 (vendors who are able to provide you with certain capabilities); paso 5 (and finally, your competitors); paso 6 (You don't, of course, have competitors internally, but you can compare your service to one like United Parcel as a way to judge performance and set standards). RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 6 pasos, 6 TRANSCRIPCION, 0 PUENTE. LOS SITIOS DE TENTACION QUE DECLARO Y EN LOS QUE NO ESCRIBI: NO escribo QUE MIRAR en cada uno de esos grupos, porque eso es la pieza P9 del mismo capitulo y su nodo aparte; meterlo aqui comprimiria dos tramos en uno. NO escribo los dos marcos temporales, que son P10. NO escribo cada cuanto se revisa el entorno: el periodo es la segunda especie de PUENTE del lote 1 y el parrafo no lo dice. NO escribo quien lo hace. NI UNA CIFRA A atribuciones: el tramo no trae ninguna. EL EJEMPLO DEL LIBRO ES EJEMPLO Y NO CASA, manual 3.5: la sala de correo y United Parcel ilustran, y por eso los pasos hablan de tu grupo y no de una sala de correo, salvo el estandar de comparacion, que el libro pone como MEDIO y no como dato del ejemplo. ARISTA QUE ANUNCIO Y NO CABLEO HOY: esta pieza es una de las partes de la cabeza planificar_tres_pasos_demanda_estado_brecha (P5), que dice TRES pasos y los nombra, asi que es caso de D.37; la cabeza vive en cuarentena y no en el grafo, y esta vuelta NO INSERTA, de modo que la arista se cablea el dia de la insercion, no hoy. DISCUTIBLE QUE MARCO ANTES DE SABER SI ACIERTO: el paso 6 podria leerse como dos cosas pegadas, la constatacion de que no hay competidor interno y el medio de comparacion. Lo dejo en un solo paso porque el libro los une con un pero y el segundo solo tiene sentido como salida del primero."
+}

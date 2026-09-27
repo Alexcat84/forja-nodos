@@ -1,0 +1,4 @@
+$ (razones de bitacora/VEREDICTOS.jsonl de 40 caracteres o mas, buscadas por su primer trozo en TODO lo que he escrito en esta fase)
+  razones en la bitacora            : 375
+  ficheros mios de esta fase        : 30
+  razones destapadas por mi         : 0

@@ -1,0 +1,26 @@
+$ python .marquet_a1/frontera_celda_a_celda.py
+AVISO: LAS 16 FILAS (nombre, rango, palabras) SE LEEN DE LA TABLA 1.b DEL REPORTE.
+       Las palabras se cuentan del fichero. NINGUNA CELDA DE CUENTA TECLEADA.
+
+  R1  L9  a L9   declara    3  el fichero dice    3  IGUAL
+  P1  L11 a L11  declara   37  el fichero dice   37  IGUAL
+  R2  L13 a L13  declara   17  el fichero dice   17  IGUAL
+  P2  L15 a L15  declara  169  el fichero dice  169  IGUAL
+  R3  L17 a L17  declara   63  el fichero dice   63  IGUAL
+  P3  L19 a L21  declara  193  el fichero dice  193  IGUAL
+  P4  L23 a L27  declara  149  el fichero dice  149  IGUAL
+  R4  L29 a L33  declara  162  el fichero dice  162  IGUAL
+  R5  L35 a L35  declara   36  el fichero dice   36  IGUAL
+  P5  L37 a L43  declara  219  el fichero dice  219  IGUAL
+  P6  L45 a L53  declara  415  el fichero dice  415  IGUAL
+  P7  L55 a L57  declara  242  el fichero dice  242  IGUAL
+  R6  L59 a L59  declara    3  el fichero dice    3  IGUAL
+  R7  L61 a L67  declara  190  el fichero dice  190  IGUAL
+  R8  L69 a L69  declara   20  el fichero dice   20  IGUAL
+  R9  L71 a L81  declara   60  el fichero dice   60  IGUAL
+
+  piezas                                   : 16
+  suma declarada                           : 1978
+  wc -w del cuerpo (L8 en adelante)        : 1978
+  celdas que DIFIEREN                      : NINGUNA
+  lineas de cuerpo con palabras sin cubrir : []

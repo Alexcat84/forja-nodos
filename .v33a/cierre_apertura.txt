@@ -1,0 +1,17 @@
+$ python forja.py guiones docs/loop/APERTURA_CIEGA.md
+BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+
+$ python forja.py herencia --comprobar
+APERTURA CIEGA COMPLETA: el acta anterior va leida por su huella y los 4 heredados van declarados.
+
+$ wc -l docs/loop/APERTURA_CIEGA.md
+752 docs/loop/APERTURA_CIEGA.md
+
+$ git status --porcelain
+ M docs/loop/APERTURA_CIEGA.md
+ D docs/loop/REPORTE.md
+ D docs/loop/loop.log
+ M docs/loop/ultimo_apertura.json
+ D docs/loop/ultimo_auditor.json
+ D docs/loop/ultimo_extractor.json
+?? .v33a/

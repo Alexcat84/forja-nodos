@@ -1,0 +1,22 @@
+=== rutas citadas en mi acta, comprobadas una a una ===
+  OK  275 bytes  .v48/reloj_c01.txt
+  OK  255 bytes  .v48/reloj_c02.txt
+  OK  256 bytes  .v48/reloj_c03.txt
+  OK  264 bytes  .v48/reloj_c04.txt
+  OK  262 bytes  .v48/reloj_c05.txt
+  OK  2047 bytes  .v48/arista_colgada.py
+  OK  11350 bytes  .v48/tanda.py
+  OK  201 bytes  .v48/cierre_pruebas_rojo.txt
+  OK  1613 bytes  .v47aud/44_tramos.py
+  OK  1501 bytes  .v48aud/05_lineas_cubiertas.py
+  OK  4334 bytes  docs/loop/ultimo_apertura.json
+  OK  1255 bytes  docs/loop/archivo/tablas_de_cierre/TABLA_DE_CIERRE_v47.txt
+  OK  665 bytes  .v48aud2/30_palabras_tramos.py
+  OK  1228 bytes  .v48aud2/31_pasos_cap04.py
+
+=== guardas del cierre, corridas por mi ===
+TALLADO VERDE: las 124 tabla(s) comprobables son las de su instrumento, celda a celda.
+CENSO VERDE: las 780 rutas publicadas sostienen lo que dicen sostener.
+GATE VERDE.
+  nodos verificados: 346
+BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.

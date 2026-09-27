@@ -1,0 +1,39 @@
+{
+  "id": "revisar_incentivos_trampas_equipo",
+  "titulo": "Revisar si tu entorno premia de verdad los valores que declaras, y cazar sus trampas",
+  "denominaciones": {
+    "nombre_largo": "La pieza final de la cultura: el entorno que premia a quien se comporta segun los valores y pide cuentas a quien no, con las cuatro trampas de incentivo que el libro nombra",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "create the right incentives"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando ya hablas de tus valores y predicas con el ejemplo, y aun asi la gente de tu equipo decide de una forma que no casa con lo que dices valorar.",
+  "entregable_esperado": "Dicha la diferencia entre tus valores declarados y como se comporta de verdad la gente, dicho si el problema es estructural, y cambiados los incentivos si lo es.",
+  "pasos_accionables": [
+    "Cuenta con que hablar y predicar con el ejemplo no basta: la pieza final es asegurarte de que tu entorno premia a la gente que se comporta segun los valores de tu equipo y pide cuentas a la gente cuando no lo hace.",
+    "Si los incentivos no casan, cava mas hondo para entender que esta mandando ese mensaje. El libro pone el caso: te importa mucho operar con transparencia, y tu equipo cree que le ira mejor si te oculta informacion importante.",
+    "Hazte las dos preguntas que el libro imprime para cavar: que acciones o que resultados celebra tu equipo, y donde traza la raya.",
+    "Desconfia de las reglas de incentivo aparentemente simples que prometen resultados asombrosos: rara vez son simples, y a menudo dejan danio colateral. El libro cuenta el suyo: viendo que en la critica de disenio casi todos ensenaban una sola exploracion, pidio traer al menos tres exploraciones distintas de lo que cada uno estuviera haciendo. Unos acabaron con un abanico mas ancho de ideas interesantes, y otros cambiaron cosas por cambiar, no porque les entusiasmaran las opciones nuevas, lo que creo trabajo de relleno y desperdicio del tiempo de todos.",
+    "Ten delante los otros dos casos que el libro nombra de otros campos: en ingenieria, contar lineas de codigo y premiar a quien mas escribe, que en la practica da codigo inflado de cortar y pegar en vez de funciones limpias y elegantes; y su equivalente en la escritura, pagar a un autor por palabra, que tendria sentido si las novelas mas largas fueran siempre mejor lectura.",
+    "Usa en su lugar la opcion que el libro da como mejor: una discusion franca sobre que deberiamos valorar y por que. Por que deberia importarnos explorar mas disenios al principio? Por que deberiamos apuntar a acelerar la velocidad de ingenieria? Cuando la gente entiende esos valores y los compra, puede tomar las mejores decisiones sobre como aplicarlos.",
+    "Repasa las cuatro trampas de incentivo comunes que el libro nombra para evitarlas. Premiar el rendimiento individual por encima de cualquier otra cosa: a un equipo de ventas que oye que nada es mas importante que alcanzar tu cuota personal le sale mas a cuenta cortarle un trato a un companiero, que es facil, que buscar un trato nuevo, que es mas dificil. Premiar las ganancias a corto plazo sobre las inversiones a largo: a un equipo de ingenieria cuyos extras se deciden cada seis meses por cuantas funcionalidades nuevas ha sacado, los incentivos le dicen a su directiva que elija varias funcionalidades de poco impacto en vez de la mas pedida por los clientes, que tarda un anio en construirse. Premiar la ausencia aparente de problemas o de conflicto: el directivo que habla sin parar de lo contento que esta de que todos en su equipo se lleven bien, y que ante un desacuerdo o lo quita importancia o expresa su disgusto de que exista, ensenia a su equipo a esconderle los conflictos mientras crecen el resentimiento y la conducta pasivo agresiva. Y premiar a la rueda que chirria: al directivo cuya reporte se entrevista en otra empresa, consigue una oferta mayor y dice que se ira salvo que le suban el sueldo para igualarla, y el dice que si; la historia se sabe, y de golpe todos los demas del equipo se sienten incentivados a entrevistarse en otros sitios.",
+    "Para identificar y resolver las trampas, reflexiona con regularidad sobre cual es la diferencia entre tus valores declarados y como se esta comportando de verdad la gente de tu equipo. Que les esta llevando a tomar ciertas decisiones? Si no estas seguro, pregunta: por que elegisteis construir estas cinco funcionalidades en vez de la que estan pidiendo los clientes?",
+    "Si descubres que el problema es principalmente estructural, cambia tus incentivos para que las conductas correctas sean las que se premian."
+  ],
+  "resumen_teorico": "Es el tercero de los tres frentes del capitulo y el unico cuyo objeto no es ni tu palabra ni tu conducta, sino el entorno. Su inventario propio es doble: las dos preguntas que cavan, y las cuatro trampas nombradas con su caso cada una. La regla de decision que lo cierra es estructural contra no estructural, y de ella salen los dos nodos hermanos de lo que se hace cuando NO es estructural. El caso de las tres exploraciones entra como ejemplo nombrado, con su leccion de que una regla simple deja danio colateral. Lo que el libro NO dice, y por eso no esta escrito aqui, es cada cuanto es con regularidad, ni quien decide si un problema es estructural, ni como se mide si el incentivo nuevo funciono.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}

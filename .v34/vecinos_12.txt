@@ -1,0 +1,18 @@
+===============================================================================================
+similitud 0,402   comprobar_criticas_hombre_mujeres_equipo  P1   CONTRA   exigir_critica_jefe_reticente  P1
+  A activacion: Cuando eres un hombre y te preocupa estar conteniendote con las mujeres de tu equipo, por recelo a la politica de genero o por miedo a que ella llore.
+  A P1: Averigua como se siente ella con tu guia, que es lo que el texto pone como util cuando te preocupa estar conteniendote: simplemente preguntaselo.
+  B activacion: Cuando sospechas que tu jefe duda en criticar tu trabajo y te esta dejando sin la opinion que necesitas para mejorar.
+  B P1: Hazle saber a tu jefe que quieres mas opinion suya, que es lo que el texto pone como util cuando te preocupa que dude en criticar tu trabajo.
+===============================================================================================
+similitud 0,382   comprobar_criticas_hombre_mujeres_equipo  P1   CONTRA   revisar_critica_mujer_agresiva_cuatro_tacticas  P7
+  A activacion: Cuando eres un hombre y te preocupa estar conteniendote con las mujeres de tu equipo, por recelo a la politica de genero o por miedo a que ella llore.
+  A P1: Averigua como se siente ella con tu guia, que es lo que el texto pone como util cuando te preocupa estar conteniendote: simplemente preguntaselo.
+  B activacion: Cuando sientes que una mujer de tu equipo esta siendo demasiado agresiva y estas a punto de decirselo, seas hombre o mujer.
+  B P7: Describe ejemplos concretos de como se manifiesta eso, que es lo que deja mas claro si hay un problema real o si es tu sesgo inconsciente trabajando.
+===============================================================================================
+similitud 0,366   comprobar_criticas_hombre_mujeres_equipo  P2   CONTRA   correr_semana_arreglo_averias_gestion  P7
+  A activacion: Cuando eres un hombre y te preocupa estar conteniendote con las mujeres de tu equipo, por recelo a la politica de genero o por miedo a que ella llore.
+  A P2: Prueba a explicarle el marco de la franqueza radical.
+  B activacion: Cuando los problemas de gestion de tu organizacion molestan a todo el mundo y nadie tiene tiempo asignado para arreglarlos.
+  B P7: Reparte las averias entre los jefes durante la semana de arreglo.

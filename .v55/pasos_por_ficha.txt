@@ -1,0 +1,11 @@
+$ for f in $(grep -l 'cap_02.md' cuarentena/grove_high_output/*.json); do python -c "import json,sys;d=json.load(open(sys.argv[1],encoding='utf-8'));print(len(d['pasos_accionables']), d['id'])" $f; done
+7 clasificar_trabajo_proceso_montaje_prueba
+10 construir_flujo_produccion_paso_limitante
+6 detectar_arreglar_fallo_etapa_menor_valor
+7 dimensionar_inventario_materia_prima_reposicion
+8 equilibrar_capacidad_personal_inventario_plazo
+6 preferir_inspeccion_proceso_prueba_destructiva
+6 rehacer_flujo_paso_limitante_capacidad
+
+$ ... | awk '{s+=$1} END {print "SUMA:", s}'
+SUMA: 50

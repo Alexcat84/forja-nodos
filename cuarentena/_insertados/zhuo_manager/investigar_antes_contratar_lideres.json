@@ -1,0 +1,40 @@
+{
+  "id": "investigar_antes_contratar_lideres",
+  "titulo": "Investigar que buscar antes de contratar a un lider para tu equipo",
+  "denominaciones": {
+    "nombre_largo": "Por que una contratacion de liderazgo mala es desproporcionadamente mas daniina, y el camino de la primera ejecutiva que nunca hizo el puesto",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "do your research when hiring leaders"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Al contratar a un directivo o a un contribuidor veterano, y con mas motivo cuando es un puesto que tu nunca has hecho.",
+  "entregable_esperado": "Una idea calibrada de como es el candidato ideal para ese puesto, sacada de hablar con gente que conoce el oficio y con tu propio equipo, antes de decidir.",
+  "pasos_accionables": [
+    "Trata la contratacion de un directivo o de un contribuidor veterano como lo que es, una inversion grande, y cuenta con que las malas contrataciones de liderazgo son desproporcionadamente mas perturbadoras porque afectan a mas gente: si traes a un directivo cuyos valores no estan alineados con los tuyos, contratara a gente que tu puedes no considerar adecuada, y si resulta ser un mal colaborador vas a tener cola de quejas en la puerta.",
+    "No corras a contratar liderazgo. Asegurate antes de saber como es un aspirante ideal.",
+    "Haz lo que el libro llama la forma mas facil de saberlo: habla con tantos candidatos potenciales como puedas, incluidos aquellos que puedan no querer el puesto pero conozcan bien el oficio.",
+    "Si contratas para un puesto que no te resulta familiar, haz los deberes para entender donde deberia estar el liston.",
+    "Pide a tu red que te conecte con los mejores lideres de esa especialidad, como hace la primera ejecutiva del ejemplo del libro, que viene de ventas y busca responsable de ingenieria sin haber hecho nunca el puesto.",
+    "Invitales a tomar un cafe aunque no les interese tu puesto, para aprender de ellos, y preguntales lo que ella pregunta: que miran en un historial; que preguntas hacen en las entrevistas y que clase de respuestas buscan; y si tienen alguna recomendacion sobre donde buscar candidatos fuertes.",
+    "Habla despues con la gente de tu propio equipo que hace ese trabajo, para entender que consideran ellos importante en un lider.",
+    "Pide a algunos de ellos que te ayuden a evaluar las habilidades tecnicas de un candidato.",
+    "Traete a una variedad de personas a entrevistar, para calibrarte mejor sobre lo que hay que buscar.",
+    "No abordes una contratacion de liderazgo a la ligera: cuando haces una buena, el impacto en tu equipo es enorme durante anios."
+  ],
+  "resumen_teorico": "Es la segunda leccion de contratar a escala y la unica del capitulo que se dirige a quien no sabe evaluar el puesto que contrata. El caso de la primera ejecutiva de ventas que busca responsable de ingenieria va dentro y no a nodo propio (manual seccion 3.5), y es ademas el que aporta el inventario: las preguntas del cafe y los dos pasos con el equipo propio salen de ese ejemplo, escritos uno a uno por el libro. Sin ese caso, la seccion seria el consejo de investigar, que es un adjetivo de adecuacion y no entraria por D.27. Lo que el libro NO dice, y por eso no esta escrito aqui, es con cuantos lideres externos hay que hablar, ni cuanto tiempo dura esa calibracion, ni que se hace si el equipo propio y los externos discrepan sobre el liston.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}

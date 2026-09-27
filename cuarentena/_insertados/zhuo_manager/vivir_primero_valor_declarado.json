@@ -1,0 +1,37 @@
+{
+  "id": "vivir_primero_valor_declarado",
+  "titulo": "Ser el primero en vivir el valor que declaras, o no declararlo",
+  "denominaciones": {
+    "nombre_largo": "Los cinco ejemplos de decir una cosa y hacer otra, y la regla de no sacar a colacion un valor por el que no estas dispuesto a cambiar tu conducta",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "always walk the walk"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando has declarado un valor a tu equipo y quieres que le importe al resto, o cuando vas a declarar uno nuevo.",
+  "entregable_esperado": "Cada valor que declaras contrastado con tu propia conducta, y retirados los que no estas dispuesto a cambiar tu conducta para sostener.",
+  "pasos_accionables": [
+    "Cuenta con que la gente mira de cerca a sus jefes para entender los valores y las normas del equipo, y con que nuestros radares estan afinados para cazar los casos en que alguien en posicion de autoridad dice una cosa y hace otra. Es una de las formas mas rapidas de perder la confianza.",
+    "Considera los cinco ejemplos que el libro pone de alguien en posicion de autoridad que dice una cosa y hace otra. Un directivo pide a su equipo gastar el dinero de la empresa con cabeza, y luego se gasta un dineral en un escritorio y un sofa elegantes para su despacho. Una directiva expresa fastidio cuando su reporte aparece con la reunion ya empezada, y ella misma llega cinco minutos tarde a todo. Un directivo dice que quiere mas perspectivas diversas en el equipo y solo asciende a quien piensa como el. Una directiva dice que una meta de arriba es crear un entorno de trabajo que apoye, y tiene tendencia a perder los nervios y echar la bronca a sus reportes. Y un consejero delegado dice que la meta de su empresa es servir a una mision social, y sus decisiones se leen como si favorecieran el beneficio a corto plazo.",
+    "Si no estas dispuesto a cambiar tu conducta por un valor declarado, entonces no lo saques a colacion siquiera.",
+    "Mira el caso que la autora cuenta contra si misma: a un reporte que le pregunto cual era la mejor manera de acelerar su aprendizaje le contesto que pidiera opinion, y se paso el resto del rato describiendo lo importante que le parecia pedirla y sugiriendo como buscarla de forma proactiva. No vio ningun cambio. Semanas despues, en una revision de trescientos sesenta grados, ese mismo reporte le escribio que rara vez le pedia opinion a ella ni a otros del equipo, y que le encantaria verla hacerlo mas.",
+    "Cuenta con la leccion que la autora saca de ahi: por mucho que hablara de lo importante que era pedir opinion, ella no lo estaba viviendo, y su reporte lo noto.",
+    "Si te cazan asi, sigue practicando hasta que se te vuelva costumbre, que es lo que ella resolvio hacer.",
+    "Si dices que algo te importa y te gustaria que le importara al resto de tu equipo, se la primera persona que viva ese valor. Si no, no te sorprendas cuando nadie mas lo haga tampoco."
+  ],
+  "resumen_teorico": "Es el segundo de los tres frentes con que el capitulo sostiene un valor, entre hablar de el y premiarlo, y el unico cuyo objeto es la conducta del propio directivo. Su inventario propio son los cinco ejemplos impresos de decir una cosa y hacer otra, que son objetos de inspeccion y no metas, y la regla de decision de no enunciar el valor por el que no vas a cambiar. El caso de la revision de trescientos sesenta grados entra como ejemplo nombrado. Lo que el libro NO dice, y por eso no esta escrito aqui, es cada cuanto se repasa la lista de valores declarados, ni quien avisa al directivo cuando la brecha aparece, mas alla de que en este caso fue su propio reporte.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}

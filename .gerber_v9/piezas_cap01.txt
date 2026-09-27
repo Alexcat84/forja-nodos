@@ -1,0 +1,5 @@
+[
+  ("R1", 8, 10, "el rotulo FOREWORD", "RESIDUO: rotulo"),
+  ("R2", 11, 66, "el prefacio del autor a la edicion revisada: quince anios desde The E-Myth original, su vida personal (familia, matrimonio, nietos), la pregunta de que saben los duenos de negocios extraordinarios, la insistencia en la atencion a los detalles pequenos hechos exactamente bien, y la presentacion de Sarah como interlocutora del libro; cero pasos, cero medio nombrado, cero inventario de etapas u objetos", "POSTURA: prefacio personal, sin inventario propio"),
+  ("R3", 67, 71, "la firma: Michael E. Gerber, Santa Rosa California, junio 2001", "RESIDUO: firma"),
+]

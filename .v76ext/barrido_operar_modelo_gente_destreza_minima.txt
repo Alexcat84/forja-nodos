@@ -1,0 +1,1 @@
+operar_modelo_gente_destreza_minima poblacion 479 (437 grafo mas 42 bandejas) vecinos 4

@@ -1,0 +1,15 @@
+$ git hash-object docs/loop/archivo/tablas_de_cierre/TABLA_DE_CIERRE_v48.txt
+9bf10e6792bffa91ebcbc9894af90834d13c2aac
+$ git hash-object docs/loop/TABLA_DE_CIERRE_v35.txt docs/loop/TABLA_DE_CIERRE_v36.txt
+01668202f3226dcb8168bdb4b8af9b0366ebf94f
+1e793e0ca276eb78462b3d33519176e24813da95
+$ wc -l docs/loop/archivo/tablas_de_cierre/*
+   9 docs/loop/archivo/tablas_de_cierre/TABLA_DE_CIERRE_v42.txt
+  11 docs/loop/archivo/tablas_de_cierre/TABLA_DE_CIERRE_v46.txt
+  10 docs/loop/archivo/tablas_de_cierre/TABLA_DE_CIERRE_v47.txt
+  10 docs/loop/archivo/tablas_de_cierre/TABLA_DE_CIERRE_v48.txt
+  40 total
+$ git show HEAD~1:docs/loop/TABLA_DE_CIERRE.txt | git hash-object --stdin
+9bf10e6792bffa91ebcbc9894af90834d13c2aac
+$ git hash-object docs/loop/archivo/tablas_de_cierre/TABLA_DE_CIERRE_v48.txt
+9bf10e6792bffa91ebcbc9894af90834d13c2aac

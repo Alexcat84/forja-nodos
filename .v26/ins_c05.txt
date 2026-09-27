@@ -1,0 +1,33 @@
+ADUANA DE INSERCION, candidato 'retirar_etiquetas_permanentes_equipo'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 226 nodo(s) del dataset
+
+VECINOS POR ENCIMA DE UMBRAL: 3. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino manejar_enfado_persona_desafiada  [Manejar el enfado de la persona a la que acabas de desafiar, con la frase que se elimina del vocabulario]
+    levantada por: similitud_texto
+    similitud_texto    0.400 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.425 (umbral 0.60)
+    paso 2 del candidato contra paso 5 de manejar_enfado_persona_desafiada
+
+  vecino delimitar_franqueza_radical_cinco_noes  [Delimitar la franqueza radical por lo que no es, con los cinco noes del texto y la regla de las tres cosas sin decir]
+    levantada por: similitud_texto
+    similitud_texto    0.356 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.415 (umbral 0.60)
+    paso 3 del candidato contra paso 9 de delimitar_franqueza_radical_cinco_noes
+
+  vecino ajustar_franqueza_oido_oyente  [Ajustar la franqueza radical al oido del que escucha y no a la boca del que habla, buscando la forma local de cada dimension]
+    levantada por: similitud_texto
+    similitud_texto    0.380 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.399 (umbral 0.60)
+    paso 6 del candidato contra paso 7 de ajustar_franqueza_oido_oyente
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 227
+  censos escritos: atribuciones, denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 3

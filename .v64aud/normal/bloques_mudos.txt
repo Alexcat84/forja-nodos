@@ -1,0 +1,2 @@
+linea 57745  formula dentro: NO  $ grep -E "^d005 +emparejar_indicadores_efecto_contraefecto +revisar|^lectura dimensionar_plantilla_administra
+bloques abiertos con `$`: 21 | comandos `$`: 53 | comandos sin ninguna linea de salida en su bloque: 1

@@ -1,0 +1,67 @@
+fila 11, conducir_reunion_individual_telefono_distancia, lineas --veredicto: 6
+  --veredicto tomar_notas_copia_guion_reunion_individual|CONTINUA|madre=tomar_notas_copia_guion_reunion_individual|El mismo par que las notas leen desde su lado y con la misma direccion: este candidato lleva el guion y las notas de la madre (L49) a la reunion por telefono a distancia (L55), y anade lo que la madre no tiene, que la nota no funciona igual sin ver al otro y el intercambio de notas al acabar.
+  --veredicto preguntar_conducir_reunion_individual|SANO|Ajenos, de otro libro (zhuo_manager): la familia de id (0,5) sale de reunion individual y conducir. El vecino conduce la reunion individual con tres grupos de preguntas para que la lleve la persona a cargo; este la lleva por telefono a distancia con guion, notas e intercambio de notas (L55). Ningun paso de uno esta en el otro.
+  --veredicto acumular_asuntos_importantes_fichero_espera|SANO|El mismo par que el fichero de espera lee desde su lado: del mismo tramo ONE-ON-ONES y sin jerarquia entre ellos.
+  --veredicto programar_reunion_individual_cadena|SANO|Del mismo tramo ONE-ON-ONES y sin jerarquia entre ellos: la senial casa el paso 4 de aqui, que la nota no funciona igual sin ver al otro, con el paso 4 del vecino, el horario fijo que cae en vacaciones. La reunion por telefono (L55) contra fijar la siguiente al terminar la que se tiene (L57); ninguno usa el producto del otro.
+  --veredicto alentar_asuntos_corazon_vigilar_final_reunion|SANO|El mismo par que los asuntos de corazon leen desde su lado: del mismo tramo y sin jerarquia entre ellos.
+  --veredicto facilitar_expresion_subordinado_pregunta_mas|SANO|El mismo par que el papel del supervisor lee desde su lado: del mismo tramo y sin jerarquia entre ellos.
+inicio 2026-09-25 11:31:28
+======================================================================
+ADUANA DE INSERCION, candidato 'conducir_reunion_individual_telefono_distancia'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (400 del grafo mas 79 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 6. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino tomar_notas_copia_guion_reunion_individual  [Repartir una copia del guion a cada parte de la reunion individual y hacer que los dos tomen notas sobre ella, por lo que la nota consigue y por lo que simboliza]
+    levantada por: similitud_texto, paso_contra_nodo
+    similitud_texto    0.474 (umbral 0.35)
+    familia_id         0.222 (umbral 0.30)
+    paso_contra_nodo   0.675 (umbral 0.60)
+    paso 3 del candidato contra paso 2 de tomar_notas_copia_guion_reunion_individual
+
+  vecino preguntar_conducir_reunion_individual  [Preguntar para conducir la reunion individual, con los tres grupos de preguntas del libro]
+    levantada por: familia_id
+    similitud_texto    0.077 (umbral 0.35)
+    familia_id         0.500 (umbral 0.30)
+    paso_contra_nodo   0.395 (umbral 0.60)
+    paso 4 del candidato contra paso 7 de preguntar_conducir_reunion_individual
+
+  vecino acumular_asuntos_importantes_fichero_espera  [Abrir un fichero de espera compartido donde las dos partes acumulan lo importante que no es del todo urgente, para tratarlo en la reunion siguiente]
+    levantada por: similitud_texto
+    similitud_texto    0.500 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.406 (umbral 0.60)
+    paso 5 del candidato contra paso 3 de acumular_asuntos_importantes_fichero_espera
+
+  vecino programar_reunion_individual_cadena  [Programar la reunion individual en cadena, fijando la siguiente en el momento en que termina la que se esta teniendo]
+    levantada por: similitud_texto
+    similitud_texto    0.476 (umbral 0.35)
+    familia_id         0.286 (umbral 0.30)
+    paso_contra_nodo   0.474 (umbral 0.60)
+    paso 4 del candidato contra paso 4 de programar_reunion_individual_cadena
+
+  vecino alentar_asuntos_corazon_vigilar_final_reunion  [Alentar en la reunion individual los asuntos de corazon a corazon con las tres preguntas del libro, y ponerse en guardia contra el que se suelta cerca del final]
+    levantada por: similitud_texto
+    similitud_texto    0.462 (umbral 0.35)
+    familia_id         0.100 (umbral 0.30)
+    paso_contra_nodo   0.441 (umbral 0.60)
+    paso 5 del candidato contra paso 1 de alentar_asuntos_corazon_vigilar_final_reunion
+
+  vecino facilitar_expresion_subordinado_pregunta_mas  [Hacer del supervisor en la reunion individual el que facilita, aprende y orienta, y sacar lo que falta aplicando el principio de preguntar una vez mas]
+    levantada por: similitud_texto
+    similitud_texto    0.416 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.434 (umbral 0.60)
+    paso 3 del candidato contra paso 2 de facilitar_expresion_subordinado_pregunta_mas
+  arista madre-hijo cableada y escrita RESUELTA: tomar_notas_copia_guion_reunion_individual > conducir_reunion_individual_telefono_distancia
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 401
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 6
+
+======================================================================
+fin 2026-09-25 12:22:13 | codigo de salida 0 | 3045.1 s

@@ -1,0 +1,13 @@
+$ python forja.py herencia | sed -n "/HEREDADO 1/,+5p"
+HEREDADO 1   [TAREA BLOQUEANTE, linea 30341 del acta]
+> **TAREA BLOQUEANTE DEL AUDITOR, para la `ACTA 36`: antes de escribir en mi apertura ciega que
+> algo NO esta escrito en la casa, corro el `grep` que lo busca en `docs/BANCO_DE_REGLAS.md` y
+> en `docs/MANUAL_SISTEMA_DE_CONOCIMIENTO.md`, y pego su salida al lado. Una ausencia sin
+> busqueda pegada no se publica.**
+
+    HEREDADO 1: CUMPLIDO          (o NO APLICA y su motivo detras)
+
+NO APLICA NECESITA MOTIVO ESCRITO **Y LA SALIDA DEL INSTRUMENTO PEGADA DEBAJO** (D.40, 16 sep 2026). Un remedio que no aplica a esta vuelta se declara, se dice por que, y se pega el comando que lo sostiene, con una linea que empiece por '$'. Sin salida pegada, el sello NO lo acepta.
+
+POR QUE: la vuelta 26 declaro NO APLICA un heredado con el motivo de que ninguno de sus instrumentos escribia en el arbol. Seis escribian, su propia tabla los listaba, y el barrido de guiones estaba en ROJO con ocho hallazgos suyos. Una salida pegada no prueba que el motivo sea cierto, pero obliga a correr algo antes de escribirlo, y ese lo habria cazado al instante.
+

@@ -1,0 +1,32 @@
+############ abrazar_incomodidad_arrancar_critica_equipo
+ADUANA DE INSERCION, candidato 'abrazar_incomodidad_arrancar_critica_equipo'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (282 del grafo mas 66 que esperan en bandejas)
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 283
+  censos escritos: denominaciones
+############ OK abrazar_incomodidad_arrancar_critica_equipo
+############ organizar_sistema_recoger_quejas_equipo
+ADUANA DE INSERCION, candidato 'organizar_sistema_recoger_quejas_equipo'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 349   (283 del grafo mas 66 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino elogiar_publico_criticar_privado_sus_tres_matices  [Elogiar en publico y criticar en privado, con las tres cosas que el texto dice que hay que pensar antes de aplicarlo]
+    levantada por: similitud_texto
+    similitud_texto    0.357 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.470 (umbral 0.60)
+    paso 7 del candidato contra paso 2 de elogiar_publico_criticar_privado_sus_tres_matices
+
+BLOQUEADO: faltan veredictos para elogiar_publico_criticar_privado_sus_tres_matices
+  La aduana no juzga: obliga a juzgar (manual seccion 3).
+  Vuelve a correr el comando con un veredicto por vecino:
+    --veredicto "elogiar_publico_criticar_privado_sus_tres_matices|CONTINUA|madre=elogiar_publico_criticar_privado_sus_tres_matices|que añade el hijo a la madre"
+    --veredicto "elogiar_publico_criticar_privado_sus_tres_matices|REPITE|por que no añade procedimiento"
+    --veredicto "elogiar_publico_criticar_privado_sus_tres_matices|SANO|por que no son el mismo trabajo"
+    --veredicto "elogiar_publico_criticar_privado_sus_tres_matices|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"

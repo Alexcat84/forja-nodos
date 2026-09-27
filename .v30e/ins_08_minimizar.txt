@@ -1,0 +1,88 @@
+ADUANA DE INSERCION, candidato 'minimizar_impuesto_colaboracion_equipo'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (250 del grafo mas 98 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 10. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino aprender_resultados_vencer_dos_presiones  [Aprender de los resultados venciendo las dos presiones que empujan a dejar de aprender]
+    levantada por: similitud_texto
+    similitud_texto    0.501 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.431 (umbral 0.60)
+    paso 4 del candidato contra paso 6 de aprender_resultados_vencer_dos_presiones
+
+  vecino abrir_debate_humor_explicar_proposito  [Abrir un debate con humor y explicando para que sirve, porque el tono con que se lanza marca el de todo lo que viene detras]
+    levantada por: similitud_texto
+    similitud_texto    0.380 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.471 (umbral 0.60)
+    paso 1 del candidato contra paso 4 de abrir_debate_humor_explicar_proposito
+
+  vecino cuidarse_agotamiento_centro_rueda  [Cuidarte a ti mismo contra el agotamiento, porque estas en el centro de la rueda y es la rueda la que se para]
+    levantada por: similitud_texto
+    similitud_texto    0.377 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.449 (umbral 0.60)
+    paso 2 del candidato contra paso 3 de cuidarse_agotamiento_centro_rueda
+
+  vecino compartir_logica_mostrar_razonamiento  [Compartir tu logica mostrando el razonamiento entero y no solo la conclusion]
+    levantada por: similitud_texto
+    similitud_texto    0.381 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.439 (umbral 0.60)
+    paso 4 del candidato contra paso 4 de compartir_logica_mostrar_razonamiento
+
+  vecino cambiar_posicion_hechos_explicar_cambio  [Cambiar de posicion cuando cambian los hechos, y explicar el cambio en voz alta en vez de dejar que se note]
+    levantada por: similitud_texto
+    similitud_texto    0.360 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.419 (umbral 0.60)
+    paso 2 del candidato contra paso 1 de cambiar_posicion_hechos_explicar_cambio
+
+  vecino construir_confianza_equipo_tiempo_solas  [Construir la confianza con cada persona de tu equipo pasando tiempo a solas con ella con regularidad, sin asumir de golpe mas confianza de la que hay]
+    levantada por: similitud_texto
+    similitud_texto    0.353 (umbral 0.35)
+    familia_id         0.125 (umbral 0.30)
+    paso_contra_nodo   0.418 (umbral 0.60)
+    paso 3 del candidato contra paso 3 de construir_confianza_equipo_tiempo_solas
+
+  vecino proteger_tiempo_equipo_jefe  [No malgastar el tiempo de tu equipo: quitar de en medio los obstaculos, las reuniones sobrantes y los mandatos de arriba]
+    levantada por: similitud_texto
+    similitud_texto    0.388 (umbral 0.35)
+    familia_id         0.143 (umbral 0.30)
+    paso_contra_nodo   0.417 (umbral 0.60)
+    paso 1 del candidato contra paso 5 de proteger_tiempo_equipo_jefe
+
+  vecino centrar_debate_ideas_fuera_egos  [Centrar el debate en las ideas y dejar los egos fuera, cambiando los papeles cuando alguien empieza a defender el suyo]
+    levantada por: similitud_texto
+    similitud_texto    0.369 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.414 (umbral 0.60)
+    paso 2 del candidato contra paso 9 de centrar_debate_ideas_fuera_egos
+
+  vecino parar_debate_emocion_agotamiento  [Parar un debate cuando la gente esta agotada o demasiado cargada de emocion, y aplazarlo en vez de dejar que decida el cansancio]
+    levantada por: similitud_texto
+    similitud_texto    0.388 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.370 (umbral 0.60)
+    paso 1 del candidato contra paso 1 de parar_debate_emocion_agotamiento
+
+  vecino agendar_cuidados_propios_cumplirlos  [Poner en el calendario lo que necesitas hacer por ti, y despues presentarte a esas citas como te presentarias a una con tu jefe]
+    levantada por: similitud_texto
+    similitud_texto    0.365 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.385 (umbral 0.60)
+    paso 3 del candidato contra paso 5 de agendar_cuidados_propios_cumplirlos
+  ARISTA EN COLA, no cableada: minimizar_impuesto_colaboracion_equipo > proteger_tiempo_equipo_jefe
+    el otro extremo espera en la bandeja (D.29). El veredicto CONTINUA queda escrito y la arista se cablea cuando entre:
+      python forja.py arista --madre minimizar_impuesto_colaboracion_equipo --hijo proteger_tiempo_equipo_jefe --paso <n> --razon "..."
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 251
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 10
+  ARISTAS EN COLA, sin cablear: 1
+    minimizar_impuesto_colaboracion_equipo > proteger_tiempo_equipo_jefe
+    D.29: van a un bloque propio y titulado del reporte, y se cablean con `forja.py arista` cuando el otro extremo entre.

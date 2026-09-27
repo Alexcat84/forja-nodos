@@ -1,0 +1,85 @@
+{
+ "id": "seguir_frustrado_preguntar_implantacion_ideas",
+ "grafo": 459,
+ "bandejas": 20,
+ "vecinos": [
+  {
+   "id": "interrogar_negocio_cinco_preguntas",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.363,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.477
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 8 del candidato contra paso 10 de interrogar_negocio_cinco_preguntas"
+  },
+  {
+   "id": "contar_firmas_cadena_tramite_parado",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.375,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.441
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 5 del candidato contra paso 10 de contar_firmas_cadena_tramite_parado"
+  },
+  {
+   "id": "dictar_ritmo_crecimiento_preguntas_escritas",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.389,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.436
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 2 del candidato contra paso 7 de dictar_ritmo_crecimiento_preguntas_escritas"
+  },
+  {
+   "id": "informar_cierre_jornada_conservar_propiedad_trabajo",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.411,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.399
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 3 de informar_cierre_jornada_conservar_propiedad_trabajo"
+  },
+  {
+   "id": "pedir_critica_anonima_curso_entrenamiento_dictado",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.357,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.405
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 2 del candidato contra paso 2 de pedir_critica_anonima_curso_entrenamiento_dictado"
+  },
+  {
+   "id": "cambiar_saludo_cliente_dos_ramas",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.366,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.355
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 8 del candidato contra paso 4 de cambiar_saludo_cliente_dos_ramas"
+  }
+ ]
+}

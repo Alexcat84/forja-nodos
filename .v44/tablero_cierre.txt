@@ -1,0 +1,43 @@
+TABLERO DE FRENTES (D.49, D.50): sede unica del estado de la campania
+  registro: docs/loop/TABLERO.jsonl
+
+  prio lote clave                          estado                 dueno                 band ult cap
+  --------------------------------------------------------------------------------------------------------
+  .    1    onu_consumidor                 INSERTADO              NINGUNO                  0  cap_02
+  .    2    smart_who                      INSERTADO              NINGUNO                  0  cap_05
+  .    3    zhuo_manager                   INSERTADO              NINGUNO                  0       .
+  .    4    scott_radical_candor           INSERTADO              NINGUNO                  0  cap_14
+  .    11   gerber_emyth_cap17_reservado   SIN EMPEZAR            NINGUNO                  0       .
+  1    7    grove_high_output              COSECHADO              NINGUNO                 22  cap_03
+  2    9    gerber_emyth                   PAUSADO                NINGUNO                 10  cap_11
+  3    5    marquet_turn_the_ship          PAUSADO                NINGUNO                  9  cap_03
+  4*   8    bernerslee_bananas             SIN EMPEZAR            NINGUNO                  0       .
+  5*   6    openstax_business_ethics       SIN EMPEZAR            NINGUNO                  0       .
+  6*   10   openstax_org_behavior          SIN EMPEZAR            NINGUNO                  0       .
+
+  prioridad: el orden del mundo 11 (D.51). El asterisco es FUERA DE
+  CAMPANIA: no se extrae, queda en bandeja para la aduana de a uno.
+  Sin prioridad: ya dentro del mundo 11, no hay nada que elegir.
+
+  libros CON DUEÑO ahora mismo: 0
+
+  MUNDO 11: faltan 3 de 3 libros del corte (grove_high_output, gerber_emyth, marquet_turn_the_ship)
+
+  COLA DE DOCTRINA (D.56): 11 pregunta(s), 0 bloquea(n)
+            1  EXTRACTOR.md 11 y la banda de 0,4: dice que por encima hay gemelos y cero ajen
+            2  src/arista.py:187 teclea (D.37) en toda arista declarada por lectura, y se est
+            3  Una cifra en denominaciones.nombre_largo que el libro no escribe: 'las cuatro 
+            4  Un resumen_teorico del dataset que cita EL REPORTE DE ESTA VUELTA: sede durade
+            5  Un orden roto no tiene casillero: el extractor corrio la relectura de fidelida
+            6  La regla de la busqueda negativa vale para el extractor? 'Una busqueda negativ
+            7  El propio libro se contradice y ningun nodo lo dice: cap_12 L21 invita a copia
+            8  La senial 1 compara titulo mas resumen_teorico mas pasos, y en un lote escrito
+            9  Puede el arnes abrir la fase ciega del auditor con un proceso del extractor to
+            10 Una cita medida_en que ofrece como sede una seccion que aun no se ha escrito, 
+            11 Un defecto en dataset/ que NO es una cifra falsa ni un veredicto mal puesto no
+
+  PENDIENTES DE RELEVO (D.50), en orden de lote:
+    lote 5   marquet_turn_the_ship           9 candidato(s) en extraccion-marquet_turn_the_ship
+    lote 9   gerber_emyth                   10 candidato(s) en extraccion-gerber_emyth
+
+ESCRITO: 22 fila(s) en docs/loop/TABLERO.jsonl

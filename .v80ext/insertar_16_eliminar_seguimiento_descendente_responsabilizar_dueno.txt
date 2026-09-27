@@ -1,0 +1,13 @@
+fila 16, eliminar_seguimiento_descendente_responsabilizar_dueno, lineas --veredicto: 0
+inicio 2026-09-26 20:13:22
+======================================================================
+ADUANA DE INSERCION, candidato 'eliminar_seguimiento_descendente_responsabilizar_dueno'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (474 del grafo mas 5 que esperan en bandejas)
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 475
+  censos escritos: denominaciones
+
+======================================================================
+fin 2026-09-26 20:19:00 | codigo de salida 0 | 338.4 s

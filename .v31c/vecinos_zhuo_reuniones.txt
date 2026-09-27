@@ -1,0 +1,150 @@
+==========================================================================================
+ID: dirigir_reunion_individual_semanal  fuente: ['zhuo_manager']
+COND: Siempre que tengas personas a cargo, y aunque te sientes al lado de ellas y las veas todos los dias, porque el libro dice que hay temas que de otro modo no salen nunca.
+ENTR: Una reunion a solas por semana con cada persona a cargo, preparada de antemano por los dos, de la que tu persona a cargo sale sintiendo que le fue util.
+RESUMEN(400): Es la segunda de las cuatro acciones que el libro pide para ganarse la confianza, y la que convierte el tiempo del directivo en relacion. El libro pone aqui tres cosas que hacen procedimentable la linea y que por separado no bastarian: una frecuencia y una duracion con numero, un criterio de si la reunion sirvio o no, y un inventario de cuatro ideas para prepararla, nombradas una a una con su prop
+  1 | Da por hecho que el recurso mas precioso que tienes es tu propio tiempo y tu energia, y que gastarlo en tu equipo es lo que mas construye relaciones sanas.
+  2 | Ten una reunion a solas con cada persona a cargo, no menos de una por semana y de treinta minutos, y mas tiempo si hace falta.
+  3 | Usala para tratar temas que de otro modo no saldrian nunca, aunque te sientes al lado de la persona y la veas todos los dias: que la motiva, cuales son sus aspiraciones de carrera a largo plazo, como se siente en general con su trabajo, y mas.
+  4 | Centrala en tu persona a cargo y en lo que la ayudaria a tener mas exito, no en ti y en lo que tu necesitas. Si lo que buscas es un parte de situacion, usa otro canal: el tiempo a solas es escaso y se aprovecha mejor en los temas que son mas dificiles de tratar en grupo o por correo.
+  5 | Apunta a que tu persona a cargo salga sintiendo que le fue util. Si sale pensando que la conversacion fue agradable pero en general olvidable, puedes hacerlo mejor: tu trabajo es ser un multiplicador para tu gente, asi que si le quitas una barrera, le das una perspectiva nueva valiosa o le subes la confianza, la estas habilitando para tener mas exito.
+  6 | Preparala, que es la respuesta a como se consiguen reuniones a solas estupendas: es raro que brote una conversacion asombrosa cuando nadie tiene un plan de que hablar.
+  7 | Para prepararla el libro da cuatro ideas con las que empezar. La primera, discutir las prioridades de mas arriba: cuales son los uno, dos o tres resultados mas criticos para tu persona a cargo, y como puedes ayudarla a atacar esos retos.
+  8 | La segunda, calibrar a que se parece un gran trabajo: teneis una vision compartida de hacia donde estais trabajando, estais sincronizados en metas y en expectativas?
+  9 | La tercera, compartir opinion: que opinion puedes darle tu que la ayude, y que puede decirte ella a ti que te haga mas eficaz como directivo?
+  10 | Y la cuarta, reflexionar sobre como van las cosas: de vez en cuando conviene alejar el foco y hablar del estado de animo general de tu persona a cargo, como se siente en conjunto, que la tiene satisfecha o insatisfecha, si alguna de sus metas ha cambiado, que ha aprendido ultimamente y que quiere aprender de aqui en adelante.
+==========================================================================================
+ID: preguntar_conducir_reunion_individual  fuente: ['zhuo_manager']
+COND: Cuando tienes delante una reunion a solas con una persona a cargo y quieres que la lleve ella mientras tu escuchas y hurgas, en vez de repartir consejo.
+ENTR: La conversacion movida por preguntas y no por consejo, con el tema identificado, la raiz entendida y la ayuda ofrecida.
+RESUMEN(400): El libro da once preguntas repartidas en tres grupos con su titulo, y cada grupo lleva delante una linea que dice para que sirve. Los tres van en un solo nodo y no en cabeza mas tres, y la razon esta escrita en el propio libro: los tres grupos son tres momentos de la misma conversacion y no tres procedimientos distintos, porque el segundo se abre con que se usa una vez identificado el tema a discu
+  1 | Piensa de antemano los temas que quieres traer, porque al libro le es util que lo hagan los dos, el directivo y la persona a cargo. El ejemplo que pone es un habito de la autora: cada maniana repasa su calendario y prepara una lista de preguntas para cada persona con la que se va a ver.
+  2 | Pregunta en vez de suponer, porque la mejor herramienta de un entrenador para entender que esta pasando es preguntar: no des por sabido cual es el problema ni cual es la solucion.
+  3 | Cuenta con que demasiadas veces los intentos de ayudar no ayudan de verdad, aunque se sirvan con la mejor de las intenciones: todos recordamos sermones que nos entraron por un oido y nos salieron por el otro porque era obvio que el otro no entendia nuestro problema de verdad, y ayudas no pedidas que se hacen indistinguibles de microgestionar o de entrometerse.
+  4 | Ten claro que tu trabajo no es repartir consejo ni salvar el dia, sino habilitar a tu persona a cargo para que encuentre ella la respuesta: tiene mas contexto que tu sobre los problemas con los que esta lidiando, asi que esta en mejor posicion para destapar la solucion. Dejala llevar la reunion mientras tu escuchas y hurgas.
+  5 | Empieza por el grupo de identificar, que sirve para centrarse en lo que de verdad importa a tu persona a cargo y en que temas merecen mas tiempo: que tienes en la cabeza ahora mismo, que prioridades estas pensando para esta semana, y cual es el mejor uso de nuestro tiempo hoy.
+  6 | Sigue con el grupo de entender, una vez identificado el tema, que va a la raiz del problema y a que se puede hacer con el: a que se parece tu resultado ideal, que se te hace dificil para llegar a ese resultado, que es lo que de verdad te importa, cual crees que es el mejor curso de accion, y cual es el peor escenario que te preocupa.
+  7 | Y cierra con el grupo de apoyar, que apunta a como puedes serle de mayor servicio: como puedo ayudarte, que puedo hacer para que tengas mas exito, y que ha sido lo mas util de nuestra conversacion de hoy.
+==========================================================================================
+ID: auditar_calendario_reuniones_semana  fuente: ['zhuo_manager']
+COND: Cuando te encuentras trabajando de noche y los fines de semana, con el calendario lleno de reuniones seguidas, y no entiendes por que vas atrasado en todo.
+ENTR: Una nota por cada reunion de una semana con la respuesta a las tres preguntas, y un calendario purgado de las reuniones a las que no aportabas nada.
+RESUMEN(400): Es la unica pieza del capitulo que mide antes de actuar, y por eso los dos actos van en el mismo nodo: la limpieza de calendario es lo que el libro hace como resultado de la auditoria, no un procedimiento aparte. El inventario propio que la hace procedimentable son las tres preguntas, nombradas una a una, y el periodo de una semana, que tambien lo pone el libro. La cifra del 40 por ciento es de la
+  1 | Hazte la pregunta que le hizo su marido a la autora cuando ella le dijo que aquello no era sostenible: como tienes el calendario? Y despues: necesitas estar en todas ellas?
+  2 | Durante una semana, deja una nota de cada reunion a la que asistes y de como te sentiste al final de ella.
+  3 | Responde en esa nota las tres preguntas que el libro usa. La primera: participe?
+  4 | La segunda: fui critico para el resultado?
+  5 | La tercera: saque algo con sustancia de estar alli en persona?
+  6 | Al final de la semana, cuenta en cuantas la respuesta fue no. A ella le salio que no en alrededor del 40 por ciento de sus reuniones.
+  7 | Se honesto sobre los motivos reales por los que estabas en ellas. Ella reconoce dos: querer sentirse al tanto, y estar en la lista de invitados y sentirse obligada a aparecer.
+  8 | Purga de tu calendario las reuniones a las que no estabas contribuyendo de verdad.
+  9 | Cuando quieras seguir al tanto de decisiones que te afectan, pide a quien organiza la reunion que te incluya en las notas de antes y de despues.
+  10 | Guarda el tiempo que recuperas como un dragon guarda su tesoro: tu tiempo como directivo es precioso y finito, y si confias en que los resultados correctos van a ocurrir sin ti, entonces no necesitas estar alli.
+==========================================================================================
+ID: dirigir_reunion_decision  fuente: ['zhuo_manager']
+COND: Cuando el resultado excelente que persigues es que se tome una decision y que quede tomada, y hay opciones distintas sobre la mesa.
+ENTR: Una decision clara tomada por quien estaba designado para tomarla, y unos afectados que salen sintiendo que la forma de decidir fue eficiente y justa aunque no estuvieran de acuerdo.
+RESUMEN(400): Es la primera de las razones para juntarse en persona que el libro nombra, y la unica del capitulo que trae dos inventarios propios en vez de uno: cuatro rasgos de la reunion buena y cinco malos resultados nombrados uno a uno. Lo que sostiene el procedimiento es que el exito de una reunion de decision no es la decision sola, sino la decision mas la confianza en el proceso, y de ahi salen los pasos
+  1 | Enmarca las distintas opciones que hay sobre la mesa y pide a quien decide que tome la decision.
+  2 | Persigue las dos cosas a la vez: llegar a una decision clara, y que todo el mundo salga con sensacion de confianza en el proceso.
+  3 | No busques consenso. Lo que hace falta es que aquellos a quienes la decision afecta sientan que la manera en que se tomo fue eficiente y justa. Si la gente no confia en el proceso, lo que veras es que la decision se alarga.
+  4 | Incluye a las personas mas directamente afectadas por la decision, y tambien a alguien claramente designado como quien decide.
+  5 | Presenta todas las opciones creibles de forma objetiva y con la informacion de contexto relevante, e incluye la recomendacion del equipo si la hay.
+  6 | Da el mismo tiempo de palabra a las opiniones discrepantes y haz que la gente sienta que fue escuchada.
+  7 | No tomes la decision habiendo oido un solo trozo de contexto. La autora cuenta el caso: su reporte le pidio mover una semana el plazo del trabajo de diseno porque no daba tiempo a explorar las tres opciones, ella contesto que le parecia bien, y despues aparecio el responsable de ingenieria diciendo que tenia siete ingenieros esperando los disenos terminados y que asi no llegaban a su propio hito.
+  8 | Si ya has decidido de esa manera y el otro lado aparece pidiendote rehacer la decision, admite que te equivocaste con tu proceso y reune a todos para volver a decidir. El libro dice que esa es la mejor salida que te queda, porque cambiar la decision a solas frustra al primero y no cambiarla enfada al segundo.
+  9 | No aceptes el argumento de que cualquier decision va a dejar a alguien descontento porque los dos lados discrepan. Todos en un equipo comparten en ultima instancia las mismas metas, y parte de trabajar bien juntos es depositar confianza en quien decide y en un proceso justo.
+  10 | Evita el primer mal resultado: que la gente sienta que su lado no se presento bien y por eso no confie en la decision que salio.
+  11 | Evita el segundo: que las decisiones tarden mucho en tomarse y eso retrase el avance. Las decisiones importantes y dificiles de revertir merecen consideracion profunda, pero desconfia de gastar demasiado tiempo en las pequenias y faciles de revertir.
+  12 | Evita el tercero: que las decisiones vayan y vuelvan una y otra vez, porque asi es dificil confiar en ellas y actuar sobre ellas.
+  13 | Evita el cuarto: que se gaste demasiado tiempo intentando llevar al grupo al consenso en vez de escalar rapido a quien decide.
+  14 | Evita el quinto: que se pierda tiempo rumiando el mismo argumento de veinte maneras distintas.
+==========================================================================================
+ID: dirigir_reunion_generar_ideas  fuente: ['zhuo_manager']
+COND: Cuando juntas a un grupo para que proponga soluciones a un problema y el resultado excelente que persigues son ideas, no una decision.
+ENTR: Muchas soluciones diversas y no obvias, consideradas todas y no solo las de las voces mas altas, y unos pasos siguientes claros para convertir las ideas en accion.
+RESUMEN(400): Es la cuarta razon del libro para juntarse en persona, y la que mas explicitamente desmonta una practica corriente: la lluvia de ideas tal como se popularizo. El inventario propio del libro aqui es de MEDIOS y no de metas, que es lo que la hace procedimentable por D.27: nombra el tiempo a solas y el tiempo en grupo como los dos ingredientes, y dentro del primer logro nombra el acto concreto, escri
+  1 | No montes la sesion como doce personas en una sala soltando lo primero que se les pasa por la cabeza. El libro dice que eso no es efectivo para innovar, y da las dos razones: tendemos a conformar nuestras ideas nuevas a lo que ya se ha discutido, y tendemos a sugerir menos ideas porque suponemos que otros estan cargando con el trabajo.
+  2 | Monta la sesion sobre las dos necesidades a la vez, que es de donde el libro dice que sale la mejor generacion de ideas: tiempo para pensar a solas, porque nuestros cerebros son mas creativos cuando estamos solos, y tiempo para relacionarse con otros, porque oir perspectivas distintas crea chispas que llevan a ideas todavia mejores.
+  3 | Prepara la sesion y facilitala bien, que el libro senala como la clave.
+  4 | Consigue el primer logro: producir muchas soluciones diversas y no obvias, y el libro dice con que se consigue, asegurando que cada participante tenga tiempo a solas y en silencio para pensar ideas y escribirlas, sea antes de la reunion o durante ella.
+  5 | Consigue el segundo: considerar la totalidad de las ideas de todo el mundo, y no solo las de las voces mas altas.
+  6 | Consigue el tercero: ayudar a que las ideas evolucionen y se construyan unas sobre otras mediante una discusion con sustancia.
+  7 | Consigue el cuarto: terminar con pasos siguientes claros sobre como convertir las ideas en accion.
+==========================================================================================
+ID: dirigir_reunion_informativa  fuente: ['zhuo_manager']
+COND: Cuando el resultado excelente que persigues es que un grupo reciba informacion, y antes de dar por hecho que esa informacion merece una reunion.
+ENTR: O bien la decision de no reunir a nadie y mandarlo por escrito, o bien una reunion preparada de la que el grupo sale sintiendo que aprendio algo valioso.
+RESUMEN(400): Es la segunda razon del libro para juntarse en persona, y la unica de las cinco cuyo primer paso es dudar de si la reunion debe existir. El inventario propio que la hace procedimentable es doble: dos ventajas nombradas del cara a cara sobre los canales escritos, y cuatro logros de la reunion buena. El tercer logro trae ademas sus medios nombrados, ponentes dinamicos, narracion rica, ritmo habil e 
+  1 | Empieza dudando de que haga falta la reunion. Hace unas decadas las reuniones eran la via principal por la que los grupos compartian y recibian informacion, y hoy, con el correo y el chat al alcance de la mano, es menos necesario y a menudo menos eficiente juntarse en persona solo para transferir conocimiento.
+  2 | Quedate con la reunion si buscas la primera ventaja que el libro nombra: que permite mas interactividad. Si quieres que todo el mundo conozca un cambio de politica potencialmente polemico, dar esa noticia en persona deja al grupo preguntar o expresar sus reacciones.
+  3 | Quedate con ella si buscas la segunda: una reunion informativa bien preparada suele ser mucho mas interesante que un punado de palabras en una pagina, porque el contacto visual, el lenguaje corporal y la pasion visible ayudan a que un mensaje cobre vida.
+  4 | Pon detras mucha mas preparacion. El libro dice que esa es la diferencia entre la reunion periodica de su organizacion de diseno, que funciona, y su reunion de estado descontinuada, que no: esta tiene detras mucha mas preparacion para asegurar que el contenido resulte interesante.
+  5 | Consigue el primer logro: que el grupo sienta que aprendio algo valioso.
+  6 | Consigue el segundo: transmitir los mensajes clave de forma clara y memorable.
+  7 | Consigue el tercero: mantener la atencion del publico, y el libro dice con que se mantiene, con ponentes dinamicos, narracion rica, ritmo habil e interactividad.
+  8 | Consigue el cuarto: evocar una emocion buscada, sea inspiracion, confianza, orgullo, coraje o empatia.
+==========================================================================================
+ID: dirigir_reunion_reforzar_relaciones  fuente: ['zhuo_manager']
+COND: Cuando decides juntar a un grupo con el proposito simple de centraros en las relaciones, porque un equipo que funciona alto necesita que la gente trabaje bien entre si.
+ENTR: Mas entendimiento y mas confianza entre los que estuvieron, gente que se anima a ser abierta y autentica, y gente que se siente cuidada.
+RESUMEN(400): Es la quinta y ultima razon del libro para juntarse en persona, y la mas delgada de las cinco en inventario: tres logros en vez de cuatro. Lo que la salva de ser postura es que el libro SI nombra sus medios uno a uno, comidas, cenas, eventos sociales, algunas reuniones individuales y algunas de equipo, y nombra tambien los objetos de la conversacion, valores, aficiones, familias, historias de vida
+  1 | Parte de que para tener un equipo que funcione alto la gente necesita trabajar bien entre si, asi que tienes que buscar formas de nutrir la empatia, crear confianza y animar a la colaboracion.
+  2 | Junta a veces a un grupo con el proposito simple de centraros en las relaciones.
+  3 | Usa los medios que el libro nombra para eso: comidas de equipo, cenas y otros eventos sociales, y tambien algunas reuniones individuales y algunas reuniones de equipo.
+  4 | Invierte tiempo en conocer un poco mejor a los colegas como seres humanos, sus valores, sus aficiones, sus familias, sus historias de vida, porque cuando nos entendemos mejor trabajar juntos se vuelve mas facil y mas disfrutable.
+  5 | No midas la reunion por el numero de horas pasadas juntos ni por lo fastuoso del evento: el libro dice expresamente que una gran reunion de union de equipo no va de eso.
+  6 | Consigue el primer logro: crear mejor entendimiento y mas confianza entre los participantes.
+  7 | Consigue el segundo: animar a la gente a ser abierta y autentica.
+  8 | Consigue el tercero: hacer que la gente se sienta cuidada.
+==========================================================================================
+ID: dirigir_reunion_revision_trabajo  fuente: ['zhuo_manager']
+COND: Cuando hay un trabajo en curso y el resultado excelente que persigues es que las partes interesadas lo entiendan y aporten sobre el.
+ENTR: Un trabajo en curso mejor encaminado, con las preguntas abiertas enmarcadas, y unos pasos siguientes acordados que incluyen cuando sera el proximo hito o la proxima revision.
+RESUMEN(400): Es la tercera razon del libro para juntarse en persona. Lo que la hace procedimentable no es solo el inventario de cuatro logros, sino que dos de ellos traen su propio desglose escrito por el libro: el segundo nombra las tres cosas que contiene un estado honesto, y el cuarto nombra que dentro de los pasos siguientes va la fecha del proximo hito. El paso 2 es el eje doctrinal y esta escrito como el
+  1 | Ten claro para que existe la reunion: para que las partes interesadas entiendan el trabajo en curso y den su aportacion sobre el. A veces terminara con un tranquilo esto tiene buena pinta, y otras veces la opinion puede llevar a desviaciones importantes del plan.
+  2 | No midas el exito por si al jefe le gusta el trabajo o no. El libro dice explicitamente que eso es un error: las reuniones de opinion no existen para dar ni recibir juicio, sino para llegar al mejor resultado.
+  3 | Desconfia de ir a por la aprobacion, porque eso crea incentivos para centrarse mas en los espejismos de la presentacion que en conseguir la opinion mas util para mejorar el trabajo.
+  4 | Consigue el primer logro: que todo el mundo quede de acuerdo en a que se parece el exito para este proyecto.
+  5 | Consigue el segundo: representar honestamente el estado actual del trabajo, y el libro dice que va dentro de ese estado, una valoracion de como estan yendo las cosas, los cambios que ha habido desde la ultima revision, y cuales son los planes de futuro.
+  6 | Consigue el tercero: enmarcar con claridad las preguntas abiertas, las decisiones clave o las preocupaciones conocidas, que es lo que consigue la opinion mas util.
+  7 | Consigue el cuarto: terminar con unos pasos siguientes acordados, y que entre ellos este cuando sera el proximo hito o la proxima revision.
+==========================================================================================
+ID: crear_espacio_seguro_madurar_ideas_nuevas  fuente: ['scott_radical_candor']
+COND: Cuando alguien de tu equipo trae una idea a medio hacer, o una queja del tipo este proceso me frustra, y tu primer impulso es cerrarla porque no tienes tiempo.
+ENTR: La idea o el problema explicados con la claridad suficiente para que quien los trajo pueda hacer algo al respecto en vez de solo quejarse, sin que la idea se haya aplastado por el camino.
+RESUMEN(400): Sale de fuentes/scott_radical_candor/cap_07.md, lineas 177 a 195, bajo los rotulos Be clear in your own mind y Create a safe space to nurture new ideas, dentro del paso CLARIFY de la rueda de hacer cosas. CABECERA CORREGIDA EN LA VUELTA 18 (ACTA 17 seccion 4.5): declaraba 181 a 195 y sus pasos P4, P5 y P6 citan las lineas 177 y 179, que son las dos lineas de cuerpo del rotulo CLARIFY que esta piez
+  1 | Asume como parte de tu puesto ayudar a la gente a pensar sus ideas antes de someterlas al empujon del debate.
+  2 | No pidas tres soluciones y una recomendacion. La autora lo hacia en Google y Russ Laraway le explico que asi no ayudaba a nadie a innovar, porque les pedia decidir antes de haber tenido tiempo de pensar.
+  3 | Dales el sitio donde puedan simplemente hablar y darle vueltas contigo.
+  4 | Resiste el impulso de cerrarlo diciendo que ahora no tienes tiempo para esto. El texto dice que tomarse esos momentos te ahorra tiempo a la larga.
+  5 | Tomate el tiempo de ayudarles a explicar que quieren decir, para que puedan arreglar el problema o perseguir la oportunidad en vez de solo quejarse.
+  6 | Empujales a aclarar su pensamiento para no aplastar su mejor idea ni pasar por alto los problemas que les molestan.
+  7 | Si el sitio donde las ideas se debaten se ha vuelto el sitio donde las ideas van a morir, crea una reunion previa donde se desarrollen antes, que es lo que hizo Susan Wojcicki con la reunion anterior al comite de direccion de Google.
+  8 | Cuenta con que una sesion de lluvia de ideas no es una conversacion donde no se puede decir nada negativo: hay ideas malas y hay que reconocerlas como tales.
+  9 | Hazle agujeros a las ideas nuevas sabiendo que eso no las mata necesariamente, y que puede empujar a la gente a aclarar su pensamiento.
+  10 | Cuenta tambien con lo contrario, que el texto dice a continuacion: hay grandes ideas que a primera vista parecen malas.
+  11 | Usa la tecnica que Pixar llama plussing: en vez de decir no, eso es una mala idea, quien senala un problema tiene que ofrecer una solucion para el.
+  12 | Trata tus reuniones semanales a solas como ese sitio seguro donde vengan a hablarte de ideas nuevas.
+  13 | En esas reuniones no juzgues la idea: ayuda a quien depende de ti a aclarar su pensamiento.
+  14 | Senala los problemas con el objetivo de encontrar una manera de rodearlos, no de matar la idea.
+==========================================================================================
+ID: reservar_calendario_tiempo_ejecutar  fuente: ['scott_radical_candor']
+COND: Cuando las tareas colaborativas se estan comiendo tu calendario o el de tu equipo y no queda hueco para ejecutar el plan que ya se decidio y se acepto.
+ENTR: Tiempo de ejecucion bloqueado en el calendario, tuyo y de tu equipo, con hueco real para el plan decidido.
+RESUMEN(400): Sale de fuentes/scott_radical_candor/cap_07.md, lineas 385 a 387, bajo el rotulo Block time to execute, y es la TERCERA de las tres partes que la linea 373 enumera dentro del paso EXECUTE de la rueda de hacer cosas. Su madre es minimizar_impuesto_colaboracion_equipo, que la nombra en su paso 4, y la arista va bajo D.37. ES LA PIEZA MAS DELGADA DE TODO EL CAPITULO Y LO DIGO ANTES QUE NADIE: cuatro 
+  1 | Cuenta con que ejecutar suele ser una tarea solitaria.
+  2 | Cuenta con el sesgo que el texto nombra: usamos el calendario sobre todo para las tareas colaborativas, para convocar reuniones y cosas asi, y por eso lo que se hace a solas no aparece en el.
+  3 | Asume como uno de tus trabajos de jefe asegurarte de que las tareas colaborativas no se coman tanto tiempo tuyo ni de tu equipo que no quede tiempo para ejecutar.
+  4 | Bloquea ese tiempo para el plan que ya se decidio y se acepto.
+==========================================================================================
+ID: bloquear_tiempo_pensar_calendario  fuente: ['scott_radical_candor']
+COND: Cuando entre las reuniones a solas, la de equipo, las de gran debate y gran decision y lo que va surgiendo no te queda un momento tranquilo para aclarar tu propio pensamiento ni para ayudar a aclarar el de los tuyos.
+ENTR: El tiempo para pensar bloqueado en tu calendario y mantenido, con tu equipo avisado de que ahi no se agenda y animado a bloquear el suyo.
+RESUMEN(400): UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_11.md, unidad Cap. 8, Results. Sale de las lineas 165 a 173, bajo el rotulo THINK TIME. ES LA PIEZA P8 DE LA FRONTERA DE cap_11 y es la mas fina del capitulo, con 311 palabras de cuerpo. POR QUE ES PROCEDIMIENTO Y NO POSTURA, con D.27 delante y sabiendo que un parrafo pobre produce un nodo inventado (D.30): la linea 173 pone CUATRO imperativos pro
+  1 | Reconoce primero a que te enfrentas, que es lo que el texto describe: acabas de anadir al calendario las reuniones a solas y la de equipo, probablemente tendras que ir a alguna de gran debate y de gran decision, y ademas la gente querra hablarte de esto o de aquello y surgiran asuntos urgentes que tendras que atender.
+  2 | Cuenta con lo que el texto dice que pasa si no haces nada: apenas tendras tiempo de ir al banio o de coger agua, no digamos de comer, seras un tiranizado por tu calendario, y el unico momento tranquilo para pensar que tendras sera en casa, de noche, cuando de verdad deberias estar durmiendo.
+  3 | Agenda entonces algo de tiempo para pensar, y manten ese tiempo sagrado.
+  4 | Hazle saber a la gente que no pueden agendar nada encima de el, nunca.
+  5 | Enfadate de verdad, y en serio, si lo intentan.
+  6 | Y anima a todos los de tu equipo a hacer lo mismo.

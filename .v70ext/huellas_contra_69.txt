@@ -1,0 +1,2 @@
+$ diff --strip-trailing-cr <(head -20 .v69ext/pasos_y_huellas.txt) <(head -20 .v70ext/pasos_y_huellas.txt) && echo "las 20 filas iguales a las de .v69ext/pasos_y_huellas.txt"
+las 20 filas iguales a las de .v69ext/pasos_y_huellas.txt

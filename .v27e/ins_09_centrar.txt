@@ -1,0 +1,99 @@
+ADUANA DE INSERCION, candidato 'centrar_debate_ideas_fuera_egos'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (238 del grafo mas 110 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 8. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino rechazar_candidato_razones_relevantes  [No rechazar a un candidato por razones ajenas al puesto]
+    levantada por: paso_contra_nodo
+    similitud_texto    0.183 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.607 (umbral 0.60)
+    paso 2 del candidato contra paso 4 de rechazar_candidato_razones_relevantes
+
+  vecino fijar_fecha_cierre_debate_equipo  [Fijar por escrito cuando termina el debate, y no arrebatar la decision solo porque el debate se ha vuelto doloroso]
+    levantada por: similitud_texto
+    similitud_texto    0.372 (umbral 0.35)
+    familia_id         0.111 (umbral 0.30)
+    paso_contra_nodo   0.544 (umbral 0.60)
+    paso 6 del candidato contra paso 6 de fijar_fecha_cierre_debate_equipo
+
+  vecino bajar_detalle_organizacion_fuente_hechos  [Bajar al detalle de tu organizacion y buscar los hechos en su fuente, sin dejar que te lleguen filtrados por capas]
+    levantada por: similitud_texto
+    similitud_texto    0.356 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.489 (umbral 0.60)
+    paso 2 del candidato contra paso 5 de bajar_detalle_organizacion_fuente_hechos
+
+  vecino mantener_manos_trabajo_real_equipo  [Mantener las manos en el trabajo real de tu equipo, ejecutando tu tambien y no solo mirando ejecutar a otros]
+    levantada por: similitud_texto
+    similitud_texto    0.354 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.475 (umbral 0.60)
+    paso 6 del candidato contra paso 1 de mantener_manos_trabajo_real_equipo
+
+  vecino compartir_logica_mostrar_razonamiento  [Compartir tu logica mostrando el razonamiento entero y no solo la conclusion]
+    levantada por: similitud_texto
+    similitud_texto    0.369 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.456 (umbral 0.60)
+    paso 6 del candidato contra paso 4 de compartir_logica_mostrar_razonamiento
+
+  vecino parar_debate_emocion_agotamiento  [Parar un debate cuando la gente esta agotada o demasiado cargada de emocion, y aplazarlo en vez de dejar que decida el cansancio]
+    levantada por: similitud_texto
+    similitud_texto    0.360 (umbral 0.35)
+    familia_id         0.125 (umbral 0.30)
+    paso_contra_nodo   0.399 (umbral 0.60)
+    paso 6 del candidato contra paso 1 de parar_debate_emocion_agotamiento
+
+  vecino proteger_tiempo_equipo_jefe  [No malgastar el tiempo de tu equipo: quitar de en medio los obstaculos, las reuniones sobrantes y los mandatos de arriba]
+    levantada por: similitud_texto
+    similitud_texto    0.357 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.395 (umbral 0.60)
+    paso 3 del candidato contra paso 8 de proteger_tiempo_equipo_jefe
+
+  vecino minimizar_impuesto_colaboracion_equipo  [Minimizar el impuesto de colaboracion de tu equipo cargando tu con el, con las tres cosas que equilibran la balanza]
+    levantada por: similitud_texto
+    similitud_texto    0.369 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.391 (umbral 0.60)
+    paso 9 del candidato contra paso 2 de minimizar_impuesto_colaboracion_equipo
+
+BLOQUEADO: faltan veredictos para rechazar_candidato_razones_relevantes, fijar_fecha_cierre_debate_equipo, bajar_detalle_organizacion_fuente_hechos, mantener_manos_trabajo_real_equipo, compartir_logica_mostrar_razonamiento, parar_debate_emocion_agotamiento, proteger_tiempo_equipo_jefe, minimizar_impuesto_colaboracion_equipo
+  La aduana no juzga: obliga a juzgar (manual seccion 3).
+  Vuelve a correr el comando con un veredicto por vecino:
+    --veredicto "rechazar_candidato_razones_relevantes|CONTINUA|madre=rechazar_candidato_razones_relevantes|que añade el hijo a la madre"
+    --veredicto "rechazar_candidato_razones_relevantes|REPITE|por que no añade procedimiento"
+    --veredicto "rechazar_candidato_razones_relevantes|SANO|por que no son el mismo trabajo"
+    --veredicto "rechazar_candidato_razones_relevantes|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "fijar_fecha_cierre_debate_equipo|CONTINUA|madre=fijar_fecha_cierre_debate_equipo|que añade el hijo a la madre"
+    --veredicto "fijar_fecha_cierre_debate_equipo|REPITE|por que no añade procedimiento"
+    --veredicto "fijar_fecha_cierre_debate_equipo|SANO|por que no son el mismo trabajo"
+    --veredicto "fijar_fecha_cierre_debate_equipo|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "bajar_detalle_organizacion_fuente_hechos|CONTINUA|madre=bajar_detalle_organizacion_fuente_hechos|que añade el hijo a la madre"
+    --veredicto "bajar_detalle_organizacion_fuente_hechos|REPITE|por que no añade procedimiento"
+    --veredicto "bajar_detalle_organizacion_fuente_hechos|SANO|por que no son el mismo trabajo"
+    --veredicto "bajar_detalle_organizacion_fuente_hechos|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "mantener_manos_trabajo_real_equipo|CONTINUA|madre=mantener_manos_trabajo_real_equipo|que añade el hijo a la madre"
+    --veredicto "mantener_manos_trabajo_real_equipo|REPITE|por que no añade procedimiento"
+    --veredicto "mantener_manos_trabajo_real_equipo|SANO|por que no son el mismo trabajo"
+    --veredicto "mantener_manos_trabajo_real_equipo|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "compartir_logica_mostrar_razonamiento|CONTINUA|madre=compartir_logica_mostrar_razonamiento|que añade el hijo a la madre"
+    --veredicto "compartir_logica_mostrar_razonamiento|REPITE|por que no añade procedimiento"
+    --veredicto "compartir_logica_mostrar_razonamiento|SANO|por que no son el mismo trabajo"
+    --veredicto "compartir_logica_mostrar_razonamiento|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "parar_debate_emocion_agotamiento|CONTINUA|madre=parar_debate_emocion_agotamiento|que añade el hijo a la madre"
+    --veredicto "parar_debate_emocion_agotamiento|REPITE|por que no añade procedimiento"
+    --veredicto "parar_debate_emocion_agotamiento|SANO|por que no son el mismo trabajo"
+    --veredicto "parar_debate_emocion_agotamiento|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "proteger_tiempo_equipo_jefe|CONTINUA|madre=proteger_tiempo_equipo_jefe|que añade el hijo a la madre"
+    --veredicto "proteger_tiempo_equipo_jefe|REPITE|por que no añade procedimiento"
+    --veredicto "proteger_tiempo_equipo_jefe|SANO|por que no son el mismo trabajo"
+    --veredicto "proteger_tiempo_equipo_jefe|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "minimizar_impuesto_colaboracion_equipo|CONTINUA|madre=minimizar_impuesto_colaboracion_equipo|que añade el hijo a la madre"
+    --veredicto "minimizar_impuesto_colaboracion_equipo|REPITE|por que no añade procedimiento"
+    --veredicto "minimizar_impuesto_colaboracion_equipo|SANO|por que no son el mismo trabajo"
+    --veredicto "minimizar_impuesto_colaboracion_equipo|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"

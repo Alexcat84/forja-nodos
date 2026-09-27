@@ -1,0 +1,37 @@
+===== agrupar_interrupciones_subordinados_reuniones_regulares | grafo
+  titulo: Agrupar en tanda las interrupciones que llegan de los subordinados y atenderlas en las reuniones regulares de personal y de uno a uno, en vez de atenderlas al azar
+  fuente: ['grove_high_output']
+  cond: Cuando las interrupciones de tus subordinados te caen al azar a lo largo del dia y las atiendes segun llegan.
+  P1. Usa ademas el principio de produccion de la tanda, que es atender de una vez un grupo de tareas semejantes.
+  P2. Acumula con ese principio muchas de las interrupciones que te vienen de tus subordinados, en vez de atenderlas al azar.
+  P3. Atiende esas interrupciones acumuladas en las reuniones de personal y en las reuniones de uno a uno.
+  P4. Manten esas reuniones con regularidad.
+  P5. Pide entonces a tu gente que agrupe sus preguntas y problemas para esos momentos programados en vez de interrumpirte cuando quiera, porque con las reuniones celebradas con regularidad no pueden protestar mucho.
+===== agendar_cuidados_propios_cumplirlos | grafo
+  titulo: Poner en el calendario lo que necesitas hacer por ti, y despues presentarte a esas citas como te presentarias a una con tu jefe
+  fuente: ['scott_radical_candor']
+  cond: Cuando ya sabes lo que necesitas hacer para mantenerte centrado y el trabajo se lo va comiendo porque no esta en ningun sitio.
+  P1. Pon en tu calendario las cosas que necesitas hacer para ti, igual que pondrias una reunion importante.
+  P2. Si te cuesta salir de la oficina a tiempo para llegar a cenar a casa, pon en el calendario tu tiempo de desplazamiento.
+  P3. Haz como si tuvieras que coger un tren.
+  P4. No te saltes esas reuniones contigo mismo.
+  P5. Y no dejes que otros te pongan cosas encima de ellas, ni mas ni menos de lo que se lo dejarias hacer con una reunion con tu jefe.
+===== preparar_respuestas_estandar_interrupciones_repetidas | grafo
+  titulo: Preparar respuestas estandar para las clases de interrupcion que se repiten, y tenerlas disponibles para delegar buena parte del trabajo en personal con menos experiencia
+  fuente: ['grove_high_output']
+  cond: Cuando las mismas preguntas y los mismos problemas te llegan como interrupcion una y otra vez, y cada vez los atiendes desde cero.
+  P1. Aplica a las interrupciones que te llegan el siguiente concepto de produccion, porque hay formas mejores que esconderte: los fabricantes sacan productos estandar.
+  P2. Fija por esa analogia que clase de interrupciones estas recibiendo.
+  P3. Prepara respuestas estandar para las que aparecen mas a menudo.
+  P4. Cuenta con lo que hace que eso funcione: los clientes no salen con preguntas y problemas totalmente nuevos un dia tras otro, y las mismas tienden a aflorar una y otra vez.
+  P5. Reduce con esas respuestas estandar el tiempo que gastas atendiendo interrupciones.
+  P6. Ten esas respuestas disponibles, porque tenerlas a mano es ademas lo que te deja delegar buena parte de ese trabajo en personal con menos experiencia.
+===== identificar_paso_limitante_jornada_desfases | grafo
+  titulo: Identificar el paso limitante de tu jornada y crear desfases alrededor: determinar lo inamovible y mover lo flexible a su alrededor
+  fuente: ['grove_high_output']
+  cond: Cuando quieres ordenar tu propia jornada de mando y las recomendaciones corrientes de gestion del tiempo no te dicen alrededor de que ordenarla.
+  P1. Mejora las recomendaciones corrientes de gestion del tiempo aplicandoles los principios de produccion.
+  P2. Identifica primero tu paso limitante preguntandote cual es el huevo de tu trabajo.
+  P3. Busca para eso las cosas de tu vida de mando que de verdad tienen que ocurrir en un calendario absoluto, aquellas en cuyo tiempo no hay holgura ninguna.
+  P4. Crea desfases y programa el resto de tu trabajo alrededor de ese paso limitante.
+  P5. En resumen: determina que es lo inamovible y manipula a su alrededor las actividades mas flexibles, y trabajaras de manera mas eficiente.

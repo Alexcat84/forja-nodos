@@ -1,0 +1,16 @@
+$ date +%Y-%m-%d
+2026-09-16
+$ python -c "import datetime; print(datetime.date.today())"
+2026-09-16
+$ python -c "import sys; sys.path.insert(0,'.'); from src.aduana import _hoy; print(_hoy())"
+2026-09-16
+$ git rev-parse --abbrev-ref HEAD
+extraccion-marquet_turn_the_ship
+$ git rev-parse HEAD
+dbff6943870cab83e4b064716e9248c9c1237914
+$ wc -l < dataset/nodos.jsonl
+270
+$ ls cuarentena/marquet_turn_the_ship/*.json | wc -l
+3
+$ ls fuentes/marquet_turn_the_ship/*.md | wc -l
+17

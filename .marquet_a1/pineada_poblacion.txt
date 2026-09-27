@@ -1,0 +1,6 @@
+$ poblacion de la muestra pineada (AUDITOR_FORJA 7) y de la bitacora
+  LINEAS EN bitacora/VEREDICTOS.jsonl            : 396
+  LINEAS QUE NOMBRAN UN ID DE LA BANDEJA marquet : 0
+  VEREDICTOS *SANO* ESCRITOS POR ESTA VUELTA     : 0
+  POBLACION DE LA MUESTRA PINEADA                : 0
+  (este frente no inserta, D.45: no escribe veredicto ninguno)

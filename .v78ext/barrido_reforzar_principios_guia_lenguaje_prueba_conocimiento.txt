@@ -1,0 +1,1 @@
+reforzar_principios_guia_lenguaje_prueba_conocimiento poblacion 479 (459 grafo mas 20 bandejas) vecinos 3

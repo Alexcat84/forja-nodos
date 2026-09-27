@@ -1,0 +1,96 @@
+fila 05, preparar_guion_reunion_individual_subordinado, lineas --veredicto: 9
+  --veredicto fijar_duracion_lugar_reunion_individual|SANO|El mismo par que la duracion lee desde su lado: hermanos.
+  --veredicto fijar_frecuencia_reunion_individual_madurez_tarea|SANO|El mismo par que la frecuencia lee desde su lado: hermanos.
+  --veredicto cubrir_indicadores_problemas_reunion_individual|SANO|Hermanos bajo ONE-ON-ONES (DISCUTIBLE D68.9): este decide de quien es la reunion y quien prepara el guion (L41), el vecino que asuntos se tratan (L43). La condicion del vecino nombra la preparacion del guion como uno de sus dos momentos, pero ninguno de sus diez pasos parte del guion ni lo toca: lo que decide es el contenido, y el libro lo trae con su propia pregunta (What should be covered). Fuera queda procedimiento en los dos lados.
+  --veredicto infundir_regularidad_reunion_proceso|SANO|El mismo par que infundir lee desde su lado: del mismo tramo y sin jerarquia (DISCUTIBLE D68.8; razon corregida en la vuelta 69, D69.2).
+  --veredicto facilitar_expresion_subordinado_pregunta_mas|SANO|Hermanos bajo ONE-ON-ONES: se tocan en que la reunion es del subordinado (L41) y el supervisor esta para que el hable (L45), pero el vecino no usa el guion: facilita y pregunta una vez mas (L47). Ninguno usa el producto del otro.
+  --veredicto tomar_notas_copia_guion_reunion_individual|CONTINUA|madre=preparar_guion_reunion_individual_subordinado|El vecino sigue donde este candidato acaba: con el guion preparado por el subordinado (paso 3, L41), el vecino reparte una copia a cada parte y hace que los dos tomen notas sobre ella (L49, both the supervisor and subordinate should have a copy of the outline). Su condicion escrita, la reunion individual ya tiene su guion preparado, es el producto de este, y trae siete pasos propios que este no tiene.
+  --veredicto usar_tres_clases_reunion_proceso|SANO|El mismo par que la cabeza lee desde su lado (relectura conjunta de la vuelta 69, D68.7): este candidato parte de su propia situacion con el uno a uno en marcha y contesta su propia pregunta del libro (L41, A key point about a one-on-one); no usa el saber de cuantas clases de reunion de proceso hay y como se llaman, que es todo lo que la cabeza produce (L23). SANO. Correccion declarada: la linea vieja decia CONTINUA madre=usar_tres_clases_reunion_proceso (DISCUTIBLE D69.1).
+  --veredicto alentar_asuntos_corazon_vigilar_final_reunion|SANO|Hermanos bajo ONE-ON-ONES: el guion y la agenda del subordinado (L41) contra los asuntos de corazon que el supervisor alienta y vigila al final (L53). Ninguno usa el producto del otro.
+  --veredicto acumular_asuntos_importantes_fichero_espera|SANO|Hermanos bajo ONE-ON-ONES: el guion de la reunion (L41) contra el fichero de espera donde las dos partes acumulan lo importante y no urgente para la reunion siguiente (L51). El libro no lleva el fichero al guion ni el guion al fichero, y ninguno usa el producto del otro.
+inicio 2026-09-25 06:21:16
+======================================================================
+ADUANA DE INSERCION, candidato 'preparar_guion_reunion_individual_subordinado'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (394 del grafo mas 85 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 9. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino fijar_duracion_lugar_reunion_individual  [Fijar cuanto dura la reunion individual y donde se tiene: una hora como minimo, y en el area de trabajo del subordinado o cerca de ella]
+    levantada por: similitud_texto
+    similitud_texto    0.603 (umbral 0.35)
+    familia_id         0.250 (umbral 0.30)
+    paso_contra_nodo   0.527 (umbral 0.60)
+    paso 1 del candidato contra paso 5 de fijar_duracion_lugar_reunion_individual
+
+  vecino fijar_frecuencia_reunion_individual_madurez_tarea  [Fijar cada cuanto tienes la reunion individual con cada subordinado segun su madurez relevante para la tarea, y ajustarla por lo deprisa que cambia su area]
+    levantada por: similitud_texto
+    similitud_texto    0.601 (umbral 0.35)
+    familia_id         0.222 (umbral 0.30)
+    paso_contra_nodo   0.460 (umbral 0.60)
+    paso 1 del candidato contra paso 6 de fijar_frecuencia_reunion_individual_madurez_tarea
+
+  vecino cubrir_indicadores_problemas_reunion_individual  [Cubrir en la reunion individual los indicadores del subordinado, lo ocurrido desde la anterior y el problema potencial, con el criterio de que sean los asuntos que le preocupan]
+    levantada por: similitud_texto
+    similitud_texto    0.540 (umbral 0.35)
+    familia_id         0.250 (umbral 0.30)
+    paso_contra_nodo   0.459 (umbral 0.60)
+    paso 3 del candidato contra paso 2 de cubrir_indicadores_problemas_reunion_individual
+
+  vecino infundir_regularidad_reunion_proceso  [Infundir regularidad a la reunion de proceso, para poder agrupar en tanda las tareas de mando semejantes y pronosticar el tiempo que piden]
+    levantada por: similitud_texto
+    similitud_texto    0.485 (umbral 0.35)
+    familia_id         0.125 (umbral 0.30)
+    paso_contra_nodo   0.427 (umbral 0.60)
+    paso 2 del candidato contra paso 8 de infundir_regularidad_reunion_proceso
+
+  vecino facilitar_expresion_subordinado_pregunta_mas  [Hacer del supervisor en la reunion individual el que facilita, aprende y orienta, y sacar lo que falta aplicando el principio de preguntar una vez mas]
+    levantada por: similitud_texto
+    similitud_texto    0.388 (umbral 0.35)
+    familia_id         0.111 (umbral 0.30)
+    paso_contra_nodo   0.480 (umbral 0.60)
+    paso 3 del candidato contra paso 1 de facilitar_expresion_subordinado_pregunta_mas
+
+  vecino tomar_notas_copia_guion_reunion_individual  [Repartir una copia del guion a cada parte de la reunion individual y hacer que los dos tomen notas sobre ella, por lo que la nota consigue y por lo que simboliza]
+    levantada por: similitud_texto, familia_id
+    similitud_texto    0.402 (umbral 0.35)
+    familia_id         0.375 (umbral 0.30)
+    paso_contra_nodo   0.460 (umbral 0.60)
+    paso 4 del candidato contra paso 5 de tomar_notas_copia_guion_reunion_individual
+
+  vecino usar_tres_clases_reunion_proceso  [Usar las tres clases de reunion de proceso que el libro cuenta y nombra: el uno a uno, la reunion de personal y la revision de operaciones]
+    levantada por: similitud_texto
+    similitud_texto    0.422 (umbral 0.35)
+    familia_id         0.111 (umbral 0.30)
+    paso_contra_nodo   0.450 (umbral 0.60)
+    paso 2 del candidato contra paso 1 de usar_tres_clases_reunion_proceso
+
+  vecino alentar_asuntos_corazon_vigilar_final_reunion  [Alentar en la reunion individual los asuntos de corazon a corazon con las tres preguntas del libro, y ponerse en guardia contra el que se suelta cerca del final]
+    levantada por: similitud_texto
+    similitud_texto    0.379 (umbral 0.35)
+    familia_id         0.100 (umbral 0.30)
+    paso_contra_nodo   0.433 (umbral 0.60)
+    paso 1 del candidato contra paso 1 de alentar_asuntos_corazon_vigilar_final_reunion
+
+  vecino acumular_asuntos_importantes_fichero_espera  [Abrir un fichero de espera compartido donde las dos partes acumulan lo importante que no es del todo urgente, para tratarlo en la reunion siguiente]
+    levantada por: similitud_texto
+    similitud_texto    0.383 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.417 (umbral 0.60)
+    paso 3 del candidato contra paso 1 de acumular_asuntos_importantes_fichero_espera
+  ARISTA EN COLA, no cableada: preparar_guion_reunion_individual_subordinado > tomar_notas_copia_guion_reunion_individual
+    el otro extremo espera en la bandeja (D.29). El veredicto CONTINUA queda escrito y la arista se cablea cuando entre:
+      python forja.py arista --madre preparar_guion_reunion_individual_subordinado --hijo tomar_notas_copia_guion_reunion_individual --paso <n> --razon "..."
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 395
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 9
+  ARISTAS EN COLA, sin cablear: 1
+    preparar_guion_reunion_individual_subordinado > tomar_notas_copia_guion_reunion_individual
+    D.29: van a un bloque propio y titulado del reporte, y se cablean con `forja.py arista` cuando el otro extremo entre.
+
+======================================================================
+fin 2026-09-25 07:16:18 | codigo de salida 0 | 3302.0 s

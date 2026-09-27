@@ -1,0 +1,29 @@
+{
+  "id": "dar_estabilidad_situacion_emocional",
+  "titulo": "Comprobar si puedes dar estabilidad en una situacion emocionalmente dificil",
+  "denominaciones": {
+    "nombre_largo": "La tercera de las tres preguntas: puedo dar estabilidad en una situacion emocionalmente dificil",
+    "otros_idiomas": [
+      {"idioma": "ingles", "termino": "Can I Provide Stability for an Emotionally Challenging Situation?"}
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [{"clave": "zhuo_manager", "fecha": "2026-09-10"}],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando te haces la tercera de las tres preguntas sobre si la gestion es tu camino y tienes que saber si vas a poder sostenerte firme en las conversaciones duras que le tocan a todo directivo.",
+  "entregable_esperado": "Sabido si estas entre los que se mantienen firmes y dan cuidado y apoyo en los baches de la vida, contrastandote con los tres rasgos que el libro nombra.",
+  "escala_minima": "Una persona y las conversaciones duras que ya haya tenido. El libro no pide experiencia directiva para contestarla: el contraste que propone es con como te comportas con tus amigos.",
+  "pasos_accionables": [
+    "Parte de que la gestion va toda de personas, y de que cada persona trae a la mesa sus propias experiencias, motivaciones, esperanzas, miedos y rarezas, asi que a los directivos les toca su parte de conversaciones duras.",
+    "Mira de frente las que el libro nombra: puede que tengas que decirle a alguien que no esta cumpliendo lo que se espera de su puesto, y aun peor, puede que tengas que mirarla a los ojos y decirle que ya no tiene trabajo.",
+    "Cuenta tambien con las que no eliges tu: puede que alguien se derrumbe y te cuente los problemas dificiles que le afectan al trabajo, sean problemas familiares, tragedias personales, preocupaciones de salud o enfermedades mentales.",
+    "Acepta que a nadie le gustan esas situaciones, y que la diferencia no esta en que gusten sino en que unos se mantienen mas firmes que otros y dan cuidado y apoyo a lo largo de los baches y los bajones de la vida.",
+    "Contrastate con los tres rasgos que el libro nombra: si eres el amigo en quien los demas se apoyan en los momentos dificiles, si te describirian como empatico y poco dramatico, y si se puede contar contigo para desactivar tensiones en vez de para avivarlas.",
+    "Si los tres te describen, estaras mejor equipado para manejar la variedad de escenarios cargados de emocion que se cruzan en el camino de cualquier directivo."
+  ],
+  "resumen_teorico": "Es la tercera de las tres preguntas con las que el capitulo cierra, y la unica que se contesta mirando como te comportas fuera del trabajo. El libro razona por que la pregunta es pertinente antes de hacerla, y el razonamiento es el mismo del capitulo entero llevado a su extremo: si el trabajo del directivo es obtener mejores resultados de un grupo de personas, y cada persona trae lo suyo, las conversaciones duras vienen con el puesto. El libro nombra dos conversaciones que le toca abrir al directivo y cuatro clases de problema que le pueden llegar sin que las abra el, y luego pone tres rasgos con los que contrastarse, escritos uno a uno. Lo que el libro NO dice, y por eso no esta escrito aqui, es que hacer si el contraste sale que no, ni si esos rasgos se pueden desarrollar."
+}

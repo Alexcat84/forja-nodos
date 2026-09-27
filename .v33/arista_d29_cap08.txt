@@ -1,0 +1,10 @@
+DECLARACION DE ARISTA POR LECTURA (D.37)
+  madre: dominar_arte_socializar_trabajo
+  hijo : evitar_presion_social_actos_equipo
+  paso citado de la madre: 9
+    Cuando si organices un acto social en el trabajo, ten presentes las dos advertencias que el texto deja escritas: que un acto no obligatorio puede sent
+  señales del par: familia_id 0.0, paso_contra_nodo 0.459, similitud_texto 0.308
+    NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: dominar_arte_socializar_trabajo > evitar_presion_social_actos_equipo
+  razon en bitacora/VEREDICTOS.jsonl

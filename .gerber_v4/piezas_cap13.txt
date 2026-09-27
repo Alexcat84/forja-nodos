@@ -1,0 +1,6 @@
+[
+  ("R1", 8, 20, "el numero del capitulo, el rotulo YOUR BUSINESS DEVELOPMENT PROGRAM y el epigrafe de Michael Murphy (Golf in the Kingdom)", "RESIDUO: rotulo y epigrafe"),
+  ("R2", 21, 38, "la escena imaginada del comprador potencial recorriendo el negocio, viendolo innovado, cuantificado y orquestado, y a la gente explicando sus responsabilidades", "POSTURA"),
+  ("R3", 39, 58, "el Business Development Program definido como el proceso paso a paso para convertir el negocio en un modelo organizado y como el vehiculo del Franchise Prototype, compuesto por siete pasos distintos que el libro nombra uno a uno: Your Primary Aim, Your Strategic Objective, Your Organizational Strategy, Your Management Strategy, Your People Strategy, Your Marketing Strategy y Your Systems Strategy", "INVENTARIO PROPIO: NACE 1 CANDIDATO (CABEZA DE SERIE NUMERADA)"),
+  ("R4", 59, 59, "el cierre Let's get started", "RESIDUO: bisagra"),
+]

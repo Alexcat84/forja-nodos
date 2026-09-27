@@ -1,0 +1,1 @@
+diagnosticar_capacidad_motivacion_prueba_vida poblacion 479 (410 grafo mas 69 bandejas) vecinos 2

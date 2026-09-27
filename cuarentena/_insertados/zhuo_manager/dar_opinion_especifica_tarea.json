@@ -1,0 +1,39 @@
+{
+  "id": "dar_opinion_especifica_tarea",
+  "titulo": "Dar opinion especifica de la tarea tan a menudo como puedas",
+  "denominaciones": {
+    "nombre_largo": "La segunda de las cuatro formas de opinion: la que va sobre algo concreto que alguien hizo, y es la mas facil de dar",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "give task specific feedback as frequently as you can"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cada vez que veas a alguien de tu equipo hacer algo concreto: presentar un analisis, dirigir una reunion, entregar un informe. Y con mas motivo si te cuesta coger el habito de dar opinion, porque esta es la mas facil por donde empezar.",
+  "entregable_esperado": "Dicho, sobre algo concreto que la persona acaba de hacer, que te parecio bien y que podria ir mejor la proxima vez, con la mayor precision y el mayor detalle que puedas.",
+  "escala_minima": "Una sola tarea observada y una nota por correo o por chat en el mismo dia.",
+  "pasos_accionables": [
+    "Da esta opinion sobre algo que alguien hizo, despues del hecho: por ejemplo, cuando tu persona a cargo termine de presentar un analisis, dile que te parecio que hizo bien y que podria ir mejor en el futuro.",
+    "Se tan preciso y tan detallado como puedas.",
+    "Empieza por esta categoria si te cuesta coger el habito de dar opinion, porque es la mas facil de dar: se centra en el que y no en el quien, asi que se siente menos personal.",
+    "Dala cuanto antes, porque es mas eficaz mientras la accion sigue fresca en la memoria de tu persona a cargo.",
+    "Si la tarea no es de las importantes, como si lo seria una presentacion en la que hay mucho en juego, dejar una nota por correo o por chat dentro del mismo dia funciona igual de bien que decirlo cara a cara.",
+    "Apunta a que se vuelva una parte ligera y habitual de tu dia, de modo que tus personas a cargo reciban dosis pequenias de entrenamiento en todo lo que les ves hacer.",
+    "Usa como modelo los dos ejemplos que el libro escribe. Para el elogio: ese informe de investigacion que compartiste ayer era excelente, la forma en que resumiste de manera sucinta los hallazgos mas importantes arriba del todo lo hizo facil de procesar, y la idea concreta sobre tal cosa fue realmente util.",
+    "Y para la sugerencia: nota rapida sobre la presentacion que diste esta maniana, note que fuiste directo a la propuesta sin explicar como habias llegado a ella, y eso hizo dificil valorar por que era el mejor camino; la proxima vez prueba a dedicar unos minutos a recorrer tu proceso y las alternativas que consideraste."
+  ],
+  "resumen_teorico": "Es la segunda de las cuatro formas de dar opinion y la que el libro recomienda como puerta de entrada, con una razon escrita: al ir sobre el que y no sobre el quien, se siente menos personal y por eso cuesta menos darla. El libro le pone dos reglas de tiempo que son lo que la hace procedimentable, una de urgencia, cuanto mas fresca mejor, y una de canal, con el umbral escrito de cuando basta un mensaje y cuando pide cara a cara. Y le pone dos ejemplos redactados enteros, uno de elogio y otro de sugerencia, que son el inventario de forma. Lo que el libro NO dice, y por eso no esta escrito aqui, es cuantas veces por semana es tan a menudo como puedas."
+}

@@ -1,0 +1,17 @@
+    pasos que la muestra reparte (leidos de .v53/muestra.txt) : 15
+    pasos que yo declaro releidos                             : 21
+    LAS DOS LISTAS COINCIDEN, paso a paso                     : True
+    (cap_07 va ENTERO y su lista no la imprime la muestra: son sus 6 pasos)
+
+| capitulo | candidatos | pasos escritos | regimen `D.58` | pasos releidos | PUENTE | `PASOS INVENTADOS` |
+|---|---:|---:|---|---:|---:|---:|
+| `cap_06` | 8 | 62 | MUESTRA de 15 | 15 | **0** | **0,0 por ciento** |
+| `cap_07` | 1 | 6 | ENTERO | 6 | **0** | **0,0 por ciento** |
+| `cap_08` | 0 | 0 | ENTERO | 0 | **0** | **0,0 por ciento** |
+
+    cap_06      0,0 por ciento contra un tope de 10 : NO DISPARA
+    cap_07      0,0 por ciento contra un tope de 10 : NO DISPARA
+    cap_08      0,0 por ciento contra un tope de 10 : NO DISPARA
+
+    NINGUNA DE LAS CUATRO GUARDAS DE DATO DE D.55 ESTA EN ROJO POR ESTA VIA:
+    la fidelidad D.30 con puente es una de las cuatro, y da 0 puentes.

@@ -1,0 +1,10 @@
+$ sed -n "77,85p" fuentes/scott_radical_candor/cap_13.md
+1. solicit criticism
+
+2. give praise
+
+3. give criticism
+
+4. gauge the criticism and adjust
+
+5. encourage praise and criticism between others

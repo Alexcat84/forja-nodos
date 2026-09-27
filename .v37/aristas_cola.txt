@@ -1,0 +1,6 @@
+aristas EN COLA en toda la bitacora : 9
+de ellas, con la cabeza de cap_12 por madre : 4
+  linea 371  desplegar_plan_orden_operaciones_franqueza_radical > bloquear_tiempo_pensar_calendario
+  linea 429  desplegar_plan_orden_operaciones_franqueza_radical > desplegar_tres_conversaciones_carrera
+  linea 438  desplegar_plan_orden_operaciones_franqueza_radical > armar_plan_anual_crecimiento_equipo
+  linea 461  desplegar_plan_orden_operaciones_franqueza_radical > evitar_obsesion_ascenso_estatus

@@ -1,0 +1,46 @@
+{
+ "id": "dar_valor_constante_cuatro_publicos",
+ "grafo": 437,
+ "bandejas": 42,
+ "vecinos": [
+  {
+   "id": "trazar_modelo_negocio_cliente_primero",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.395,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.564
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 1 de trazar_modelo_negocio_cliente_primero"
+  },
+  {
+   "id": "documentar_trabajo_manual_operaciones",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.406,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.466
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 1 de documentar_trabajo_manual_operaciones"
+  },
+  {
+   "id": "unificar_color_forma_vestuario_modelo",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.419,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.423
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 3 de unificar_color_forma_vestuario_modelo"
+  }
+ ]
+}

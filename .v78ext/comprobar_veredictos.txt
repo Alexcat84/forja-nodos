@@ -1,0 +1,76 @@
+  OK  acoger_inspectores_externos_fuente_aprendizaje               tomar_accion_deliberada_pausar_vocalizar_gesticular          SANO      
+  OK  acoger_inspectores_externos_fuente_aprendizaje               resistir_dar_solucion_clasificar_decision_urgencia           SANO      
+  OK  acoger_inspectores_externos_fuente_aprendizaje               declarar_intencion_reemplazar_peticion_permiso               SANO      
+  OK  acoger_inspectores_externos_fuente_aprendizaje               reforzar_principios_guia_lenguaje_prueba_conocimiento        SANO      
+  OK  acoger_inspectores_externos_fuente_aprendizaje               seguir_frustrado_preguntar_implantacion_ideas                SANO      
+  OK  acoger_inspectores_externos_fuente_aprendizaje               recorrer_organizacion_escuchar_plantilla                     SANO      
+acoger_inspectores_externos_fuente_aprendizaje               lineas 6 | levantados hoy 6 | FALTAN 0 | SOBRAN 0
+  OK  aplicar_ejercicio_codigo_genetico_control                    resistir_dar_solucion_clasificar_decision_urgencia           SANO      
+aplicar_ejercicio_codigo_genetico_control                    lineas 1 | levantados hoy 1 | FALTAN 0 | SOBRAN 0
+asignar_responsable_unico_evolucion_planificada              lineas 0 | levantados hoy 0 | FALTAN 0 | SOBRAN 0
+  OK  auditar_formacion_premios_ultima_fila                        observar_reunion_rutinaria_senales_plantilla                 SANO      
+  OK  auditar_formacion_premios_ultima_fila                        recorrer_organizacion_escuchar_plantilla                     SANO      
+auditar_formacion_premios_ultima_fila                        lineas 2 | levantados hoy 2 | FALTAN 0 | SOBRAN 0
+  OK  cambiar_forma_trabajar_conservar_plantilla                   escuchar_entender_critica_dominar_defensa                    SANO      
+  OK  cambiar_forma_trabajar_conservar_plantilla                   encargar_meta_especifica_dejar_libre_metodo                  SANO      
+cambiar_forma_trabajar_conservar_plantilla                   lineas 2 | levantados hoy 2 | FALTAN 0 | SOBRAN 0
+  OK  ceder_control_reforzar_competencia_claridad                  encargar_meta_especifica_dejar_libre_metodo                  SANO      
+ceder_control_reforzar_competencia_claridad                  lineas 1 | levantados hoy 1 | FALTAN 0 | SOBRAN 0
+  OK  contar_firmas_cadena_tramite_parado                          seguir_frustrado_preguntar_implantacion_ideas                SANO      
+  OK  contar_firmas_cadena_tramite_parado                          inspeccionar_reparto_informacion_notas_jefe                  SANO      
+contar_firmas_cadena_tramite_parado                          lineas 2 | levantados hoy 2 | FALTAN 0 | SOBRAN 0
+  OK  declarar_intencion_reemplazar_peticion_permiso               resistir_dar_solucion_clasificar_decision_urgencia           SANO      
+  OK  declarar_intencion_reemplazar_peticion_permiso               acoger_inspectores_externos_fuente_aprendizaje               SANO      
+  OK  declarar_intencion_reemplazar_peticion_permiso               informar_cierre_jornada_conservar_propiedad_trabajo          SANO      
+  OK  declarar_intencion_reemplazar_peticion_permiso               reforzar_principios_guia_lenguaje_prueba_conocimiento        SANO      
+declarar_intencion_reemplazar_peticion_permiso               lineas 4 | levantados hoy 4 | FALTAN 0 | SOBRAN 0
+eliminar_seguimiento_descendente_responsabilizar_dueno       lineas 0 | levantados hoy 0 | FALTAN 0 | SOBRAN 0
+  OK  encargar_meta_especifica_dejar_libre_metodo                  ceder_control_reforzar_competencia_claridad                  SANO      
+  OK  encargar_meta_especifica_dejar_libre_metodo                  cambiar_forma_trabajar_conservar_plantilla                   SANO      
+  OK  encargar_meta_especifica_dejar_libre_metodo                  recorrer_organizacion_escuchar_plantilla                     SANO      
+encargar_meta_especifica_dejar_libre_metodo                  lineas 3 | levantados hoy 3 | FALTAN 0 | SOBRAN 0
+identificar_temas_formacion_tarjetas_decision                lineas 0 | levantados hoy 0 | FALTAN 0 | SOBRAN 0
+  OK  informar_cierre_jornada_conservar_propiedad_trabajo          seguir_frustrado_preguntar_implantacion_ideas                SANO      
+  OK  informar_cierre_jornada_conservar_propiedad_trabajo          operar_modelo_gente_destreza_minima                          SANO      
+  OK  informar_cierre_jornada_conservar_propiedad_trabajo          cuantificar_impacto_innovacion_6_pasos                       SANO      
+  OK  informar_cierre_jornada_conservar_propiedad_trabajo          dictar_ritmo_crecimiento_preguntas_escritas                  SANO      
+  OK  informar_cierre_jornada_conservar_propiedad_trabajo          interrogar_negocio_cinco_preguntas                           SANO      
+  OK  informar_cierre_jornada_conservar_propiedad_trabajo          usar_banco_nueve_preguntas_entrevista                        SANO      
+informar_cierre_jornada_conservar_propiedad_trabajo          lineas 6 | levantados hoy 6 | FALTAN 0 | SOBRAN 0
+  OK  inspeccionar_reparto_informacion_notas_jefe                  observar_reunion_rutinaria_senales_plantilla                 SANO      
+  OK  inspeccionar_reparto_informacion_notas_jefe                  contar_firmas_cadena_tramite_parado                          SANO      
+inspeccionar_reparto_informacion_notas_jefe                  lineas 2 | levantados hoy 2 | FALTAN 0 | SOBRAN 0
+  OK  observar_reunion_rutinaria_senales_plantilla                 auditar_formacion_premios_ultima_fila                        SANO      
+  OK  observar_reunion_rutinaria_senales_plantilla                 recorrer_organizacion_escuchar_plantilla                     SANO      
+  OK  observar_reunion_rutinaria_senales_plantilla                 inspeccionar_reparto_informacion_notas_jefe                  SANO      
+observar_reunion_rutinaria_senales_plantilla                 lineas 3 | levantados hoy 3 | FALTAN 0 | SOBRAN 0
+  OK  recorrer_organizacion_escuchar_plantilla                     observar_reunion_rutinaria_senales_plantilla                 SANO      
+  OK  recorrer_organizacion_escuchar_plantilla                     encargar_meta_especifica_dejar_libre_metodo                  SANO      
+  OK  recorrer_organizacion_escuchar_plantilla                     inspeccionar_reparto_informacion_notas_jefe                  SANO      
+recorrer_organizacion_escuchar_plantilla                     lineas 3 | levantados hoy 3 | FALTAN 0 | SOBRAN 0
+  OK  reforzar_principios_guia_lenguaje_prueba_conocimiento        acoger_inspectores_externos_fuente_aprendizaje               SANO      
+  OK  reforzar_principios_guia_lenguaje_prueba_conocimiento        tomar_accion_deliberada_pausar_vocalizar_gesticular          SANO      
+  OK  reforzar_principios_guia_lenguaje_prueba_conocimiento        resistir_dar_solucion_clasificar_decision_urgencia           SANO      
+reforzar_principios_guia_lenguaje_prueba_conocimiento        lineas 3 | levantados hoy 3 | FALTAN 0 | SOBRAN 0
+repetir_mensaje_invariable_diario_reunion_evento             lineas 0 | levantados hoy 0 | FALTAN 0 | SOBRAN 0
+  OK  resistir_dar_solucion_clasificar_decision_urgencia           aplicar_ejercicio_codigo_genetico_control                    SANO      
+  OK  resistir_dar_solucion_clasificar_decision_urgencia           declarar_intencion_reemplazar_peticion_permiso               SANO      
+  OK  resistir_dar_solucion_clasificar_decision_urgencia           acoger_inspectores_externos_fuente_aprendizaje               SANO      
+  OK  resistir_dar_solucion_clasificar_decision_urgencia           tomar_accion_deliberada_pausar_vocalizar_gesticular          SANO      
+  OK  resistir_dar_solucion_clasificar_decision_urgencia           reforzar_principios_guia_lenguaje_prueba_conocimiento        SANO      
+resistir_dar_solucion_clasificar_decision_urgencia           lineas 5 | levantados hoy 5 | FALTAN 0 | SOBRAN 0
+  OK  seguir_frustrado_preguntar_implantacion_ideas                interrogar_negocio_cinco_preguntas                           SANO      
+  OK  seguir_frustrado_preguntar_implantacion_ideas                contar_firmas_cadena_tramite_parado                          SANO      
+  OK  seguir_frustrado_preguntar_implantacion_ideas                dictar_ritmo_crecimiento_preguntas_escritas                  SANO      
+  OK  seguir_frustrado_preguntar_implantacion_ideas                informar_cierre_jornada_conservar_propiedad_trabajo          SANO      
+  OK  seguir_frustrado_preguntar_implantacion_ideas                pedir_critica_anonima_curso_entrenamiento_dictado            SANO      
+  OK  seguir_frustrado_preguntar_implantacion_ideas                cambiar_saludo_cliente_dos_ramas                             SANO      
+seguir_frustrado_preguntar_implantacion_ideas                lineas 6 | levantados hoy 6 | FALTAN 0 | SOBRAN 0
+  OK  tomar_accion_deliberada_pausar_vocalizar_gesticular          acoger_inspectores_externos_fuente_aprendizaje               SANO      
+  OK  tomar_accion_deliberada_pausar_vocalizar_gesticular          resistir_dar_solucion_clasificar_decision_urgencia           SANO      
+  OK  tomar_accion_deliberada_pausar_vocalizar_gesticular          reforzar_principios_guia_lenguaje_prueba_conocimiento        SANO      
+tomar_accion_deliberada_pausar_vocalizar_gesticular          lineas 3 | levantados hoy 3 | FALTAN 0 | SOBRAN 0
+secciones 20 de 20, lineas 52, ilegibles 0, vecinos sin linea 0, lineas sin vecino 0
+
+ARISTAS POR LECTURA (SOSTENGO) contra el barrido de hoy
+  observar_reunion_rutinaria_senales_plantilla                 > seguir_frustrado_preguntar_implantacion_ideas                levantada hoy: NO

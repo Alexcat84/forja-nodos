@@ -1,0 +1,7 @@
+unidad    puentes   pasos  por cien
+cap_01          0       7     0.00
+cap_02          1      10    10.00
+LOTE 5          1      17     5.88
+
+cola heredada del lote 4, remedida hoy:
+   3 filas, 47 candidatos, 444 pasos

@@ -1,0 +1,7 @@
+ADUANA DE INSERCION, candidato 'leer_seniales_fallo_jefe_reunion_solas'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (260 del grafo mas 88 que esperan en bandejas)
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 261
+  censos escritos: denominaciones

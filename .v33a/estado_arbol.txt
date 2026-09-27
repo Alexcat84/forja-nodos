@@ -1,0 +1,14 @@
+$ git rev-parse HEAD
+1ae327e30a96dff65c7edc9b3a3c35a1b4d1f261
+
+$ git status --porcelain
+ D docs/loop/APERTURA_CIEGA.md
+ D docs/loop/REPORTE.md
+ D docs/loop/loop.log
+ M docs/loop/ultimo_apertura.json
+ D docs/loop/ultimo_auditor.json
+ D docs/loop/ultimo_extractor.json
+?? .v33a/
+
+$ git rev-parse 9b36072^   (estado ANTES de la vuelta 33)
+ef3e7f9d498fe8afee4decd57981d853e2a4458b

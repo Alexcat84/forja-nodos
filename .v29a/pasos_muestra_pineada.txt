@@ -1,0 +1,203 @@
+====================================================================================================
+PAR linea 266: recorrer_rueda_hacer_cosas_equipo  CONTRA  recorrer_trece_elementos_proceso_evaluacion_formal
+====================================================================================================
+### recorrer_rueda_hacer_cosas_equipo   [grafo]
+    titulo    : Recorrer la rueda de hacer cosas con tu equipo, sin saltarte un paso y sin atascarte en uno
+    entregable: None
+       1. Resiste el impulso de tirarte de cabeza a ejecutar, que es el error que el propio texto cuenta como suyo al principio del capitulo. Pon primero los cimientos de la colaboracion.
+       2. Escucha las ideas que tiene la gente de tu equipo, y crea una cultura en la que se escuchen entre ellos.
+       3. Crea despues el espacio donde esas ideas se afilen y se clarifiquen, para que no las aplasten antes de que nadie entienda del todo para que pueden servir.
+       4. Cuenta con que una idea facil de entender no es por eso una buena idea: debate las ideas y sometelas a una prueba mas dura.
+       5. Decide entonces, deprisa pero no demasiado deprisa.
+       6. Persuade despues a los que no estuvieron en el tramo de escuchar, clarificar, debatir y decidir, porque no todo el mundo participa en cada idea y aun asi tienen que ejecutarla.
+       7. Ejecuta.
+       8. Aprende de los resultados, hayas acertado o no, y vuelve a empezar el proceso entero.
+       9. Recorrela deprisa: el texto dice que son muchos pasos y que estan pensados para darles vueltas rapido.
+      10. No te saltes ningun paso. El texto dice que si te lo saltas acabaras perdiendo tiempo.
+      11. No te atasques en ninguno. El texto dice que las dos cosas importan igual, y que si dejas que una parte se alargue, trabajar en tu equipo se va a sentir como pagar un impuesto de colaboracion en vez de como hacer una inversion en colaboracion.
+      12. Aplicalo aunque tu jefe se salte pasos y te diga lo que tienes que hacer: el texto dice que puedes ponerlo en practica con la gente que depende de ti aunque el no siga este metodo.
+
+### recorrer_trece_elementos_proceso_evaluacion_formal   [bandeja:cuarentena\scott_radical_candor\]
+    titulo    : Recorrer los trece elementos que el texto nombra para disenar un proceso formal de evaluacion de desempenio, sabiendo que no hay talla unica
+    entregable: None
+       1. Parte de lo que el texto avisa antes de empezar: cada empresa tiene necesidades distintas para sus evaluaciones, asi que el texto dice que no puede disenar una evaluacion de talla unica por mucho que quisiera. Lo que si hace es llevarte por las consideraciones clave que tu y tu equipo querreis tener en cuenta.
+       2. Uno, decide si pones nota o no.
+       3. Dos, decide las categorias de la nota.
+       4. Tres, decide las escaleras de puesto.
+       5. Cuatro, decide cuantas notas.
+       6. Cinco, cuida el lenguaje, porque el texto dice que las palabras importan.
+       7. Seis, decide las consecuencias de la nota.
+       8. Siete, decide el reparto de notas.
+       9. Ocho, decide si fuerzas la curva o no.
+      10. Nueve, decide la calibracion de las notas.
+      11. Diez, decide la frecuencia.
+      12. Once, decide si haces un proceso de trescientos sesenta grados o te apoyas en el juicio unilateral del jefe.
+      13. Doce, decide si es transparente o confidencial.
+      14. Trece, decide si es ligero o pesado.
+
+====================================================================================================
+PAR linea 268: recorrer_rueda_hacer_cosas_equipo  CONTRA  reconocer_emociones_propias_avisar_equipo
+====================================================================================================
+### reconocer_emociones_propias_avisar_equipo   [bandeja:cuarentena\scott_radical_candor\]
+    titulo    : Reconocer en voz alta el animo con el que llegas, para que tu equipo no crea que tu mal dia es culpa suya
+    entregable: None
+       1. Cuenta con que tu equipo nota en que animo llegas: el texto cuenta que un companiero suyo le dijo una maniana que sabia que clase de dia iba a tener por el animo con el que ella entraba por la puerta, y que todo el mundo se fija en el animo del jefe porque no le queda mas remedio, porque es adaptativo.
+       2. No intentes reprimir lo que sientes, porque eso tampoco suele funcionar.
+       3. Cuenta con que no puedes esconder como te sientes a la gente que trabaja muy cerca de ti.
+       4. No lo pagues con tu equipo los dias malos, pero tampoco escondas que no estas en tu mejor momento.
+       5. Reconoce en voz alta como te sientes y que te esta pasando en el resto de tu vida, para que los demas no sientan que tu animo es culpa suya.
+       6. Di algo parecido a lo que el texto dice haber aprendido a decir: estoy teniendo un dia malisimo, estoy intentando no estar de mal humor, pero si parece que hoy salto a la minima es que salto, y no es por ti ni por tu trabajo, es porque he tenido una discusion fuerte con un amigo.
+       7. Y si lo que tienes es un disgusto emocional de verdad grave en tu vida, quedate en casa un dia: el texto dice que no querrias ir repartiendolo mas de lo que querrias repartir un virus por la oficina, que las emociones se contagian igual que los germenes, y que los dias de salud mental deberian tomarse mas en serio de lo que se toman.
+
+====================================================================================================
+PAR linea 280: crear_obligacion_disentir_equipo  CONTRA  parar_debate_emocion_agotamiento
+====================================================================================================
+### crear_obligacion_disentir_equipo   [grafo]
+    titulo    : Crear en tu equipo la obligacion de disentir, tratando el acuerdo de todos como una bandera roja
+    entregable: None
+       1. Declara en tu equipo una obligacion de disentir, que es lo que McKinsey creo muy conscientemente y lo que a la autora mas le impresiono de esa empresa.
+       2. Trata como una bandera roja que todos los que estan alrededor de la mesa esten de acuerdo.
+       3. Cuando eso pase, haz que alguien tome la voz discrepante.
+       4. Si la discusion de una reunion no esta siendo lo bastante robusta, usa un objeto que pase el turno de disentir, como los mazos con el deber de disentir escrito en japones que un directivo de Apple mando hacer para el equipo que heredo en Japon.
+       5. Deslizale el objeto a alguien de la mesa como señal de que le toca tomar el punto de vista contrario. El texto dice que ese objeto tan simple fue sorprendentemente eficaz.
+
+### parar_debate_emocion_agotamiento   [bandeja:cuarentena\scott_radical_candor\]
+    titulo    : Parar un debate cuando la gente esta agotada o demasiado cargada de emocion, y aplazarlo en vez de dejar que decida el cansancio
+    entregable: None
+       1. Manten la conciencia puesta en estos momentos, porque el texto dice que es crucial y que rara vez llevan a un buen resultado.
+       2. Cuando los detectes, interven y pide tiempo muerto.
+       3. Cuenta con lo que pasa si no lo haces: la gente tomara una decision solo para poder irse a casa, o peor, estallara una pelea enorme salida de la emocion en carne viva.
+       4. Aplaza el debate hasta que la gente este en mejor disposicion de animo.
+       5. Para poder detectarlo, conoce a cada persona de tu equipo lo bastante bien: el texto dice que si lo has hecho, seras suficientemente consciente de las emociones y las energias de cada uno como para saber cuando hace falta intervenir.
+
+====================================================================================================
+PAR linea 281: crear_obligacion_disentir_equipo  CONTRA  pedir_hechos_decision_evitar_recomendaciones
+====================================================================================================
+### pedir_hechos_decision_evitar_recomendaciones   [bandeja:cuarentena\scott_radical_candor\]
+    titulo    : Pedir hechos y no recomendaciones cuando reunes informacion para una decision
+    entregable: None
+       1. Resiste la tentacion de pedir recomendaciones, que es la forma en que sale sola la pregunta: tu que crees que deberiamos hacer.
+       2. Pide en su lugar hechos, no recomendaciones, que es lo que una directiva de Apple le recomendo a la autora.
+       3. Cuenta con el motivo que esa directiva puso: la gente tiende a meter su ego en una recomendacion de una manera que puede llevar a la politica, y con ella a peores decisiones.
+       4. Cuenta tambien con el limite que el propio texto le pone: los hechos vienen teñidos del punto de vista particular de cada uno.
+       5. Pidelos igual, porque un hecho tiene menos probabilidad que una recomendacion de convertirse en una raya en el suelo.
+
+====================================================================================================
+PAR linea 282: crear_obligacion_disentir_equipo  CONTRA  crear_cultura_escucha_equipo
+====================================================================================================
+### crear_cultura_escucha_equipo   [grafo]
+    titulo    : Crear una cultura en la que tu equipo se escuche entre si, con un sistema simple de ideas y quejas que alguien atiende y explica
+    entregable: None
+       1. Monta un sistema simple que tu gente pueda usar para generar ideas y dar voz a sus quejas, que es la primera de las tres claves que el texto nombra.
+       2. Asegurate de que al menos algunas de las cuestiones que se levanten se atiendan deprisa, que es la segunda.
+       3. Ofrece con regularidad explicaciones de por que las demas no se estan atendiendo, que es la tercera.
+       4. Haz que el sistema no solo permita a cualquiera señalar lo que podria ir mejor, sino que ademas permita a otros ayudar a arreglar esas cosas o a cambiarlas.
+       5. Acepta dejar que te pidan ayuda a ti.
+       6. Defiende el sistema con entusiasmo.
+       7. Define unos limites claros de cuanto tiempo puedes dedicarle tu, y despues asegurate de que ese tiempo sea de mucho impacto.
+       8. Si las ideas te desbordan, organiza un equipo de ideas que las considere, como hizo la autora en Google.
+       9. Haz que ese equipo se comprometa a escuchar cualquier idea que cualquiera les traiga, a explicar con claridad por que rechazan las que rechazan, y a ayudar a poner en practica las que consideren que valen la pena.
+      10. Dales potestad para negociar con el jefe de quien propuso una idea especialmente prometedora, para que le liberen tiempo de su puesto y pueda ponerla en marcha.
+      11. Pide al equipo de ideas que lea todas las ideas y hable con todos los que las mandaron. El texto dice que un voto no siempre es la mejor manera de identificar las mejores ideas ni de asegurarse de que la gente se escucha, y que a partir de ahi el equipo uso una combinacion de votos y criterio.
+      12. Cuando alguien presente su idea, no te quedes en darle las gracias: enseña ademas el efecto que va a tener, que es lo que hizo la autora con el grafico de eficiencia de la idea de los teclados programables de Sarah Teng.
+      13. Habla de lo que a la gente le importa y no solo de lo que a ti te importa: la autora insistio en que esa idea haria los puestos mas divertidos y ayudaria a la gente a crecer, porque la eficiencia no era lo que mas les importaba.
+      14. Da contexto de por que la idea es grande, para que se vea el efecto acumulado y no solo el suyo.
+      15. Y usalo para empujar a que se escuchen entre ellos, se tomen en serio las ideas de los demas y se ayuden a ponerlas en practica sin esperar la bendicion de la direccion.
+      16. En las reuniones, cuando solo un par de personas esten hablando, para y da la vuelta a la mesa para asegurarte de que se oye a todo el mundo.
+      17. Habla en corto con la gente antes de una reunion, pidiendo a unos que suban la voz y a otros que la bajen.
+
+====================================================================================================
+PAR linea 283: crear_obligacion_disentir_equipo  CONTRA  proteger_tiempo_equipo_jefe
+====================================================================================================
+### proteger_tiempo_equipo_jefe   [bandeja:cuarentena\scott_radical_candor\]
+    titulo    : No malgastar el tiempo de tu equipo: quitar de en medio los obstaculos, las reuniones sobrantes y los mandatos de arriba
+    entregable: None
+       1. Pideles que vengan a las reuniones a solas con una lista de problemas que tu puedas ayudarles a resolver.
+       2. Escucha, asegurate de haberlo entendido, y desactiva las situaciones que podrian estallarles en la cara.
+       3. Quita de en medio los obstaculos que parecen insalvables.
+       4. No convoques reuniones innecesarias ni pidas analisis innecesarios.
+       5. No llegues tarde a una reunion con nadie de tu equipo, y no toleres que nadie llegue tarde a las tuyas.
+       6. Hazles debatir como equipo, pero justo antes de que el debate empiece a hacerse pesado, identifica a un decisor y pidele que vuelva con una decision para una fecha concreta.
+       7. Enseña a los de tu equipo a ser mas persuasivos.
+       8. Cuando baje desde arriba un mandato ridiculo que solo hace perder tiempo, busca la manera de protegerles de el.
+       9. Y cuando lleguen los resultados, no los dejes pasar: haz que el equipo aprenda de lo que hizo, haya salido bien o haya salido mal.
+
+====================================================================================================
+PAR linea 284: crear_obligacion_disentir_equipo  CONTRA  compartir_logica_mostrar_razonamiento
+====================================================================================================
+### compartir_logica_mostrar_razonamiento   [bandeja:cuarentena\scott_radical_candor\]
+    titulo    : Compartir tu logica mostrando el razonamiento entero y no solo la conclusion
+    entregable: None
+       1. No des por hecho que la parte logica es la facil por no tener la incomodidad personal de establecer la credibilidad ni la finura psicologica de atender a las emociones de un grupo: el texto dice que tiene sus propias trampas.
+       2. Desconfia en particular de la logica que a ti te parece evidente, porque es la que te lleva a no compartirla.
+       3. Cuenta con la causa que el texto pone: cuando sabes algo a fondo es dificil acordarse de que los demas no lo saben.
+       4. Enseña tus operaciones, que es el secreto que el texto dice que ya aprendiste en clase de matematicas del instituto.
+       5. No describas solo la idea: comparte ademas como llegaste a ella, que es lo que hacia Steve Jobs.
+       6. Cuenta con lo que eso señala y con lo que consigue: que si hay un fallo en tu razonamiento quieres que te lo digan, y que si no lo hay la gente aceptara tu idea con mas facilidad.
+
+====================================================================================================
+PAR linea 285: crear_obligacion_disentir_equipo  CONTRA  reservar_calendario_tiempo_ejecutar
+====================================================================================================
+### reservar_calendario_tiempo_ejecutar   [bandeja:cuarentena\scott_radical_candor\]
+    titulo    : Reservar en el calendario el tiempo de ejecutar, que es solitario y por eso nunca se apunta
+    entregable: None
+       1. Cuenta con que ejecutar suele ser una tarea solitaria.
+       2. Cuenta con el sesgo que el texto nombra: usamos el calendario sobre todo para las tareas colaborativas, para convocar reuniones y cosas asi, y por eso lo que se hace a solas no aparece en el.
+       3. Asume como uno de tus trabajos de jefe asegurarte de que las tareas colaborativas no se coman tanto tiempo tuyo ni de tu equipo que no quede tiempo para ejecutar.
+       4. Bloquea ese tiempo para el plan que ya se decidio y se acepto.
+
+====================================================================================================
+PAR linea 286: crear_obligacion_disentir_equipo  CONTRA  cambiar_posicion_hechos_explicar_cambio
+====================================================================================================
+### cambiar_posicion_hechos_explicar_cambio   [grafo]
+    titulo    : Cambiar de posicion cuando cambian los hechos, y explicar el cambio en voz alta en vez de dejar que se note
+    entregable: None
+       1. Cuenta con lo que nos dicen a menudo: que cambiar de posicion te convierte en una veleta, en un erratico o en alguien sin principios.
+       2. Quedate en su lugar con la idea de Keynes que el texto prefiere: cuando los hechos cambian, yo cambio de opinion.
+       3. Trata la comunicacion como la clave, que es como el texto la llama.
+       4. Cuenta con la queja razonable que vas a recibir: hace solo dos meses me convenciste de X y ahora me dices que quiza no X.
+       5. No cambies de rumbo a la ligera.
+       6. Y si lo haces, prepara una explicacion clara y convincente de por que las cosas han cambiado.
+       7. Vuelve a pasar por escuchar, clarificar, debatir y decidir con un circulo cercano antes de llevarlo fuera.
+       8. Cuando toque persuadir otra vez al equipo amplio, respira hondo y cuenta con paciencia y las veces que haga falta como habeis llegado hasta ahi.
+       9. Nombra el cambio de direccion explicitamente en vez de dejar que se note.
+
+====================================================================================================
+PAR linea 287: crear_obligacion_disentir_equipo  CONTRA  aprender_resultados_vencer_dos_presiones
+====================================================================================================
+### aprender_resultados_vencer_dos_presiones   [grafo]
+    titulo    : Aprender de los resultados venciendo las dos presiones que empujan a dejar de aprender
+    entregable: None
+       1. Cuenta con lo que el texto llama naturaleza humana: que nos apegamos, a menudo de forma poco razonable, a los proyectos en los que hemos metido mucho tiempo y mucha energia.
+       2. Reune la disciplina casi sobrehumana que hace falta para dar un paso atras.
+       3. Reconoce cuando vuestros resultados podrian ser mucho mejores, o cuando directamente no son buenos.
+       4. Aprende de la experiencia.
+       5. Cuenta con que la negacion es la reaccion mas comun a una ejecucion imperfecta, mas comun que el aprendizaje, y con el motivo que el texto pone en boca de un colega: es insoportablemente doloroso admitirlo cuando tienes un bebe feo.
+       6. Vence las dos enormes presiones que el texto dice que tentaban a la autora a dejar de aprender cuando dirigia un equipo grande: la presion de ser coherente, y el agotamiento.
+
+====================================================================================================
+PAR linea 288: crear_obligacion_disentir_equipo  CONTRA  evitar_presion_social_actos_equipo
+====================================================================================================
+### evitar_presion_social_actos_equipo   [bandeja:cuarentena\scott_radical_candor\]
+    titulo    : Evitar que un acto no obligatorio se sienta obligatorio, y que el intento de hacer equipo acabe empeorando el animo
+    entregable: None
+       1. Cuenta con que los actos divertidos pueden ser una buena manera de conocer a la gente de tu equipo y de que se conozcan entre ellos.
+       2. Pero cuenta tambien con que si lo organizas tu, la presion social va a arrastrar a algunos a situaciones que preferirian evitar.
+       3. No presiones a quien no quiere ir diciendole que vaya igual para ser buen companiero de equipo: el texto cuenta que a Marissa Mayer, que se marea en el mar, su jefe la presiono para que fuera a una salida a ver ballenas organizada para unir al equipo, y remata que nadie deberia tener que vomitar por la borda para demostrar que es buen companiero.
+       4. Evita los momentos ironicos en que el intento de hacer equipo y de mejorar el animo acaba empeorando las cosas.
+       5. Cuenta con el ejemplo que el texto pone: un equipo que trabajaba ochenta horas a la semana tenia el equilibrio entre trabajo y vida en el orden del dia de su retiro, a las nueve de la noche y despues de montar en karts, y la verdad es que todos habrian preferido saltarse los karts pero creian que tenian que hacer cosas divertidas para unirse.
+       6. Y cuenta con lo que el texto dice que a veces es el mayor regalo que le puedes hacer a tu equipo: dejarles irse a casa.
+
+====================================================================================================
+PAR linea 289: crear_obligacion_disentir_equipo  CONTRA  crear_plan_creible_equipo
+====================================================================================================
+### crear_plan_creible_equipo   [grafo]
+    titulo    : Crear un plan que tenga posibilidades reales de funcionar
+    entregable: None
+       1. Da por hecho lo que dijo Eisenhower, que los planes no valen nada pero planificar lo es todo: aunque pasen sorpresas y no todo este bajo control, es a traves del proceso de planificar como entendemos nuestra situacion y trazamos nuestro mejor tiro al exito.
+       2. Cuenta con lo que eso compra cuando llega la emergencia: una estrategia solida te da la base para adaptar rapido tus planes, en vez de volver al caos de la casilla de salida.
+       3. Comprueba lo primero que el libro exige de una estrategia: que tenga una posibilidad realista de funcionar. Si tu estrategia para poner un puesto de limonada en cada manzana es conseguir que todas las grandes celebridades del mundo lo respalden, te van a mirar con las cejas levantadas, porque o cuesta tanto dinero que es mala inversion, o exige un producto tan asombroso que las estrellas quieran asociarse a el sin cobrar, que tambien es improbable.
+       4. Comprueba que tu estrategia entiende el nudo del problema que intenta resolver.
+       5. Comprueba que concentra las fuerzas, los recursos y la energia unicos de tu equipo en lo que mas importa para conseguir sus metas.
+       6. Si lideras una parte pequenia de una organizacion mayor, comprueba que los planes de tu equipo se relacionan directamente con la estrategia de nivel superior de la organizacion.
+

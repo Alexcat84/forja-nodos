@@ -1,0 +1,50 @@
+fila 15, archivar_indicadores_resolver_problemas, lineas --veredicto: 4
+  --veredicto construir_indicador_tendencia_patron|SANO|Comparten el vocabulario de indicadores, norma y patron de cap_03, no procedimiento. El candidato guarda la serie de todos los indicadores en un archivo y la repasa cuando algo falla buscando desviaciones de la norma (pasos 1 a 4, L99); el vecino monta una ventana concreta, la salida contra el tiempo y contra un patron, para extrapolar y pensar la diferencia (pasos 1 a 6, L89). Ninguno despliega una linea del otro, y lo que queda fuera es procedimiento en los dos lados.
+  --veredicto revisar_tres_preguntas_valor_carrera|SANO|Ajenos. El vecino son las tres preguntas de carrera de la introduccion (anadir valor, estar enchufado, probar lo nuevo); el candidato es el archivo de indicadores de la fabrica. La senial sale de verbos comunes como repasar y preguntar, no de un procedimiento compartido.
+  --veredicto vencer_sindrome_grupo_pares_autoconfianza|SANO|Ajenos. El vecino infunde autoconfianza para vencer el sindrome del grupo de pares; el candidato archiva indicadores para diagnosticar fallos. Ningun paso de uno hace lo que hace un paso del otro.
+  --veredicto cerrar_brecha_dos_preguntas_estrategia|SANO|Ajenos. El vecino cierra la brecha entre demanda y rendimiento con dos preguntas y llama estrategia al resultado; el candidato mantiene y repasa un archivo de indicadores. La senial sale de vocabulario de gestion, no de un paso compartido.
+inicio 2026-09-23 17:16:37
+======================================================================
+ADUANA DE INSERCION, candidato 'archivar_indicadores_resolver_problemas'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 462   (360 del grafo mas 102 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 4. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino construir_indicador_tendencia_patron  [Construir el indicador de tendencia midiendo la salida contra el tiempo y contra un patron]
+    levantada por: similitud_texto
+    similitud_texto    0.361 (umbral 0.35)
+    familia_id         0.143 (umbral 0.30)
+    paso_contra_nodo   0.420 (umbral 0.60)
+    paso 2 del candidato contra paso 3 de construir_indicador_tendencia_patron
+
+  vecino revisar_tres_preguntas_valor_carrera  [Examinar tu propio trabajo con las tres preguntas que el libro deja para tu carrera]
+    levantada por: similitud_texto
+    similitud_texto    0.369 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.414 (umbral 0.60)
+    paso 2 del candidato contra paso 1 de revisar_tres_preguntas_valor_carrera
+
+  vecino vencer_sindrome_grupo_pares_autoconfianza  [Vencer el sindrome del grupo de pares infundiendo autoconfianza, y la constatacion de que nadie se muere por decidir mal]
+    levantada por: similitud_texto
+    similitud_texto    0.364 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.405 (umbral 0.60)
+    paso 1 del candidato contra paso 5 de vencer_sindrome_grupo_pares_autoconfianza
+
+  vecino cerrar_brecha_dos_preguntas_estrategia  [Cerrar la brecha entre demanda y rendimiento contestando por separado que necesitas hacer y que puedes hacer, y llamar estrategia al conjunto que decidas]
+    levantada por: similitud_texto
+    similitud_texto    0.353 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.393 (umbral 0.60)
+    paso 4 del candidato contra paso 6 de cerrar_brecha_dos_preguntas_estrategia
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 361
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 4
+
+======================================================================
+fin 2026-09-23 17:30:14 | codigo de salida 0 | 816.3 s

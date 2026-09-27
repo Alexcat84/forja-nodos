@@ -1,0 +1,12 @@
+LA FRONTERA DE LAS TRES UNIDADES, RECOMPUESTA POR EL AUDITOR
+fila a fila contra el fichero; palabras por linea con len(linea.split())
+
+  capitulo  filas      R      P     suma   cuerpo solapes  sincubr filas malas
+  cap_04       25     24      1     1238     1238       0        0           0
+  cap_05       45     45      0     2193     2193       0        0           0
+  cap_06       51     49      2     2905     2905       0        0           0
+
+  LO QUE EL REPORTE PEGO COMO CUENTA DE PIEZAS, al lado de la mia:
+    cap_04   reporte: piezas: 24   auditor: piezas 25
+    cap_05   reporte: piezas: 45   auditor: piezas 45
+    cap_06   reporte: piezas: 49   auditor: piezas 51

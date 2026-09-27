@@ -1,0 +1,28 @@
+INSTRUMENTO .vg01a/pasos_cap.py  SIN CONSTANTES TECLEADAS: el capitulo sale del texto UNIDAD DE ORIGEN de cada resumen_teorico; los pasos se cuentan de pasos_accionables
+nodos que declaran su unidad de origen : 40 de 270
+nodos que NO la declaran               : 230
+libro                    unidad    nodos  pasos
+scott_radical_candor     cap_01        1      9
+scott_radical_candor     cap_03        1     10
+scott_radical_candor     cap_04        5     41
+scott_radical_candor     cap_05        7     68
+scott_radical_candor     cap_06       10    117
+scott_radical_candor     cap_11       16    187
+
+IDS DE scott_radical_candor cap_11:
+    bloquear_tiempo_pensar_calendario
+    conducir_reunion_equipo_agenda_tres_bloques
+    debatir_decidir_asuntos_cultura_evitar_delegar
+    decidir_quien_comunica_cada_cuanto
+    escribir_apuntes_sala_estudio_equipo
+    leer_seniales_fallo_jefe_reunion_solas
+    montar_reunion_general_presentaciones_preguntas
+    montar_reunion_gran_debate
+    montar_reunion_gran_decision
+    montar_reuniones_solas_mentalidad_frecuencia
+    montar_tablero_kanban_medir_actividades
+    nutrir_ideas_nuevas_reunion_solas
+    pasear_organizacion_hallar_problemas_pequenios
+    pelear_proliferacion_reuniones_bloquear_ejecucion
+    preguntar_seguimiento_hallar_huecos
+    recorrer_rueda_conscientemente_cultura_equipo

@@ -1,0 +1,32 @@
+
+====================================================================================================
+PAR: despedir_persona_franqueza_radical  CONTRA  despedir_persona_respeto_franqueza
+====================================================================================================
+  === despedir_persona_franqueza_radical   [GRAFO]
+      activacion: Cuando ya has decidido que tienes que despedir a alguien y te toca preparar y tener esa conversacion.
+      entregable: La conversacion tenida sin distanciarte de la persona, con el problema reformulado en el puesto y no en ella, con un trabajo concreto imaginado para ella y una presentacion ofrecida si puedes hacerla.
+      previos   : []   siguientes: []
+       1. No te distancies de la persona a la que vas a despedir. El texto dice que si intentas evitar sentir el dolor que hay en la situacion, sobre todo el de la persona que se va, vas a hacer una chapuza.
+       2. Cuenta con que esto es duro de verdad y con que no eres el unico: el texto cuenta el caso de un empresario de exito con fama de mas descarado que compasivo, que le conto que las manianas en que iba a despedir a alguien se despertaba con sudores frios.
+       3. Para llegar con la cabeza en el sitio correcto, primer recordatorio: acuerdate de un trabajo en el que tu fuiste malo y piensa en lo contento que estas de no estar ya en el. El texto pone el suyo, un verano de cajera de banco haciendo mal las cuentas de cabeza, y lo que su jefa hizo, que fue no despedirla y animarla a intentarlo mas, con lo que lo que era un problema de calculo empezo a sentirse como un defecto de caracter.
+       4. Cuenta con lo que el texto saca de ese caso: si aquella jefa la hubiera despedido diciendo que claramente ese trabajo no le interesaba y que por que no buscaba otro ese verano, le habria hecho un gran favor y le habria ahorrado mucho dinero al banco.
+       5. Parte de que al despedir a alguien creas la posibilidad de que esa persona destaque y encuentre felicidad haciendo un trabajo con sentido en otro sitio, porque parte de conseguir un buen trabajo es dejar uno malo, o uno que es malo para ti.
+       6. Antes de la reunion, intenta imaginar concretamente cual podria ser ese trabajo para esa persona.
+       7. Reformula el problema para ti y para ella: no es que la persona sea mala, es que el puesto es malo, al menos para esa persona.
+       8. Preguntate si puedes ayudar haciendo una presentacion.
+       9. Segundo recordatorio: mantener a quien hace un mal trabajo castiga a quien lo hace excelente. El texto lo concreta: el trabajo sin hacer acaba recayendo en los que mas rinden, sobrecargandolos.
+      10. Cuenta con lo que el texto dice haber visto siempre en la practica: la moral ha mejorado cada vez que se ha retirado a alguien que rendia mal, y en cambio ha llegado a perder a la gente que mas queria conservar por aguantar demasiado tiempo a quien rendia poco.
+      11. Presta atencion especial cuando el que rinde mal es un jefe, porque el texto dice que retenerlo es especialmente daniino: los malos jefes tienen un impacto negativo enorme sobre la gente que les reporta, y eso es lo contrario de la palanca de un directivo.
+
+  === despedir_persona_respeto_franqueza   [GRAFO]
+      activacion: Cuando ya has decidido dejar ir a alguien y toca ejecutarlo.
+      entregable: La salida ejecutada de forma respetuosa y directa, sin alargar la ruptura, con la persona encaminada hacia su capitulo siguiente y contigo habiendo aprendido de la experiencia.
+      previos   : ['elegir_recolocar_despedir_persona']   siguientes: []
+       1. Cuando decidas dejar ir a alguien, hazlo de forma respetuosa y directa.
+       2. No lo abras a discusion, porque no lo es.
+       3. Y no lo consideres un fracaso por parte de tu persona a cargo.
+       4. No des por hecho que la culpa es suya. El libro recoge la frase de una amiga de la autora: quiza quien no deberia ser su jefe eres tu, y no al reves. Quiza fuiste tu quien decidio contratarlo cuando sus habilidades no eran las que el equipo necesitaba, o quiza lo pusiste en proyectos que no le encajaban.
+       5. Asume que cuidar de las personas significa asumir que vuestra relacion es una calle de dos sentidos.
+       6. Cuenta con que despedir a alguien puede ser emocional y duro no solo para quien es despedido, sino tambien para ti y para el equipo.
+       7. Se compasivo al examinar el pasado, pero pon el foco en el futuro y no alargues la ruptura.
+       8. Y ayuda a tu persona a cargo a ponerse en el mejor camino posible hacia su capitulo siguiente, y usa la experiencia para volverte mejor directivo.

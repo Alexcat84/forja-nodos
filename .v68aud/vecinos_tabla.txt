@@ -1,0 +1,233 @@
+(1) candidato | poblacion | vecinos | en grafo | en bandeja
+    agrupar_interrupciones_subordinados_reuniones_regulares  479   8   8   0
+    canalizar_interrupciones_cartel_hora_oficina             479   1   1   0
+    infundir_regularidad_reunion_proceso                     479   5   0   5
+    usar_tres_clases_reunion_proceso                         479   5   0   5
+    fijar_frecuencia_reunion_individual_madurez_tarea        479   6   0   6
+    fijar_duracion_lugar_reunion_individual                  479   7   0   7
+    preparar_guion_reunion_individual_subordinado            479   9   0   9
+    cubrir_indicadores_problemas_reunion_individual          479   6   0   6
+    facilitar_expresion_subordinado_pregunta_mas             479   8   0   8
+    tomar_notas_copia_guion_reunion_individual               479   7   0   7
+    acumular_asuntos_importantes_fichero_espera              479   6   0   6
+    alentar_asuntos_corazon_vigilar_final_reunion            479   7   0   7
+    conducir_reunion_individual_telefono_distancia           479   6   1   5
+    programar_reunion_individual_cadena                      479   7   2   5
+    conducir_etapas_modelo_ideal_decision                    479   0   0   0
+    decidir_nivel_competente_inferior                        479   3   0   3
+    vencer_sindrome_grupo_pares_autoconfianza                479  13   3  10
+    tomar_mando_reunion_pares_presidente_ausente             479   4   0   4
+    ejercer_poder_posicion_etapa_decision_clara              479   2   0   2
+    cortar_discusion_libre_momento_justo                     479   6   1   5
+    zanjar_seis_preguntas_decision_adelantado                479   2   0   2
+    anunciar_decision_inesperada_reconvocar_reunion          479   9   1   8
+sin fichero de vecinos: 0 []
+(2) vecino levantado | senial | texto familia paso
+    agrupar_interrupciones_subordinados_reuniones_regulares > sostener_contacto_oferta_aceptacion                    grafo   paso_contra_nodo 0.094 0.000 0.700
+    agrupar_interrupciones_subordinados_reuniones_regulares > agendar_cuidados_propios_cumplirlos                    grafo   paso_contra_nodo 0.129 0.000 0.615
+    agrupar_interrupciones_subordinados_reuniones_regulares > nombrar_delegados_amigos_casa                          grafo   paso_contra_nodo 0.127 0.000 0.609
+    agrupar_interrupciones_subordinados_reuniones_regulares > llevar_inventario_proyectos_discrecionales             grafo   similitud_texto  0.352 0.000 0.478
+    agrupar_interrupciones_subordinados_reuniones_regulares > preparar_respuestas_estandar_interrupciones_repetidas  grafo   similitud_texto  0.472 0.111 0.417
+    agrupar_interrupciones_subordinados_reuniones_regulares > canalizar_interrupciones_cartel_hora_oficina           grafo   similitud_texto  0.403 0.111 0.452
+    agrupar_interrupciones_subordinados_reuniones_regulares > buscar_regularidad_bloques_iguales_trabajo_mando       grafo   similitud_texto  0.380 0.000 0.415
+    agrupar_interrupciones_subordinados_reuniones_regulares > identificar_paso_limitante_jornada_desfases            grafo   similitud_texto  0.351 0.000 0.377
+    canalizar_interrupciones_cartel_hora_oficina           > agrupar_interrupciones_subordinados_reuniones_regulares grafo   similitud_texto  0.408 0.111 0.422
+    infundir_regularidad_reunion_proceso                   > usar_tres_clases_reunion_proceso                       bandeja similitud_texto  0.494 0.286 0.449
+    infundir_regularidad_reunion_proceso                   > preparar_guion_reunion_individual_subordinado          bandeja similitud_texto  0.483 0.125 0.473
+    infundir_regularidad_reunion_proceso                   > fijar_frecuencia_reunion_individual_madurez_tarea      bandeja similitud_texto  0.473 0.111 0.462
+    infundir_regularidad_reunion_proceso                   > fijar_duracion_lugar_reunion_individual                bandeja similitud_texto  0.466 0.125 0.454
+    infundir_regularidad_reunion_proceso                   > cubrir_indicadores_problemas_reunion_individual        bandeja similitud_texto  0.421 0.125 0.424
+    usar_tres_clases_reunion_proceso                       > infundir_regularidad_reunion_proceso                   bandeja similitud_texto  0.500 0.286 0.409
+    usar_tres_clases_reunion_proceso                       > fijar_duracion_lugar_reunion_individual                bandeja similitud_texto  0.394 0.111 0.465
+    usar_tres_clases_reunion_proceso                       > preparar_guion_reunion_individual_subordinado          bandeja similitud_texto  0.408 0.111 0.463
+    usar_tres_clases_reunion_proceso                       > cubrir_indicadores_problemas_reunion_individual        bandeja similitud_texto  0.363 0.111 0.445
+    usar_tres_clases_reunion_proceso                       > fijar_frecuencia_reunion_individual_madurez_tarea      bandeja similitud_texto  0.404 0.100 0.420
+    fijar_frecuencia_reunion_individual_madurez_tarea      > fijar_duracion_lugar_reunion_individual                bandeja similitud_texto+familia_id 0.629 0.375 0.435
+    fijar_frecuencia_reunion_individual_madurez_tarea      > preparar_guion_reunion_individual_subordinado          bandeja similitud_texto  0.606 0.222 0.496
+    fijar_frecuencia_reunion_individual_madurez_tarea      > cubrir_indicadores_problemas_reunion_individual        bandeja similitud_texto  0.511 0.222 0.436
+    fijar_frecuencia_reunion_individual_madurez_tarea      > infundir_regularidad_reunion_proceso                   bandeja similitud_texto  0.472 0.111 0.438
+    fijar_frecuencia_reunion_individual_madurez_tarea      > tomar_notas_copia_guion_reunion_individual             bandeja similitud_texto  0.359 0.200 0.469
+    fijar_frecuencia_reunion_individual_madurez_tarea      > usar_tres_clases_reunion_proceso                       bandeja similitud_texto  0.410 0.100 0.428
+    fijar_duracion_lugar_reunion_individual                > fijar_frecuencia_reunion_individual_madurez_tarea      bandeja similitud_texto+familia_id 0.630 0.375 0.435
+    fijar_duracion_lugar_reunion_individual                > alentar_asuntos_corazon_vigilar_final_reunion          bandeja paso_contra_nodo 0.320 0.100 0.612
+    fijar_duracion_lugar_reunion_individual                > preparar_guion_reunion_individual_subordinado          bandeja similitud_texto  0.601 0.250 0.517
+    fijar_duracion_lugar_reunion_individual                > cubrir_indicadores_problemas_reunion_individual        bandeja similitud_texto  0.506 0.250 0.452
+    fijar_duracion_lugar_reunion_individual                > infundir_regularidad_reunion_proceso                   bandeja similitud_texto  0.460 0.125 0.468
+    fijar_duracion_lugar_reunion_individual                > usar_tres_clases_reunion_proceso                       bandeja similitud_texto  0.395 0.111 0.463
+    fijar_duracion_lugar_reunion_individual                > facilitar_expresion_subordinado_pregunta_mas           bandeja similitud_texto  0.355 0.000 0.458
+    preparar_guion_reunion_individual_subordinado          > fijar_duracion_lugar_reunion_individual                bandeja similitud_texto  0.603 0.250 0.527
+    preparar_guion_reunion_individual_subordinado          > fijar_frecuencia_reunion_individual_madurez_tarea      bandeja similitud_texto  0.601 0.222 0.460
+    preparar_guion_reunion_individual_subordinado          > cubrir_indicadores_problemas_reunion_individual        bandeja similitud_texto  0.540 0.250 0.459
+    preparar_guion_reunion_individual_subordinado          > infundir_regularidad_reunion_proceso                   bandeja similitud_texto  0.485 0.125 0.427
+    preparar_guion_reunion_individual_subordinado          > facilitar_expresion_subordinado_pregunta_mas           bandeja similitud_texto  0.388 0.111 0.480
+    preparar_guion_reunion_individual_subordinado          > tomar_notas_copia_guion_reunion_individual             bandeja similitud_texto+familia_id 0.402 0.375 0.460
+    preparar_guion_reunion_individual_subordinado          > usar_tres_clases_reunion_proceso                       bandeja similitud_texto  0.422 0.111 0.450
+    preparar_guion_reunion_individual_subordinado          > alentar_asuntos_corazon_vigilar_final_reunion          bandeja similitud_texto  0.379 0.100 0.433
+    preparar_guion_reunion_individual_subordinado          > acumular_asuntos_importantes_fichero_espera            bandeja similitud_texto  0.383 0.000 0.417
+    cubrir_indicadores_problemas_reunion_individual        > preparar_guion_reunion_individual_subordinado          bandeja similitud_texto  0.550 0.250 0.459
+    cubrir_indicadores_problemas_reunion_individual        > fijar_frecuencia_reunion_individual_madurez_tarea      bandeja similitud_texto  0.516 0.222 0.434
+    cubrir_indicadores_problemas_reunion_individual        > fijar_duracion_lugar_reunion_individual                bandeja similitud_texto  0.505 0.250 0.444
+    cubrir_indicadores_problemas_reunion_individual        > usar_tres_clases_reunion_proceso                       bandeja similitud_texto  0.366 0.111 0.464
+    cubrir_indicadores_problemas_reunion_individual        > infundir_regularidad_reunion_proceso                   bandeja similitud_texto  0.416 0.125 0.441
+    cubrir_indicadores_problemas_reunion_individual        > facilitar_expresion_subordinado_pregunta_mas           bandeja similitud_texto  0.363 0.000 0.423
+    facilitar_expresion_subordinado_pregunta_mas           > preparar_guion_reunion_individual_subordinado          bandeja similitud_texto  0.397 0.111 0.480
+    facilitar_expresion_subordinado_pregunta_mas           > acumular_asuntos_importantes_fichero_espera            bandeja similitud_texto  0.475 0.000 0.426
+    facilitar_expresion_subordinado_pregunta_mas           > alentar_asuntos_corazon_vigilar_final_reunion          bandeja similitud_texto  0.414 0.000 0.474
+    facilitar_expresion_subordinado_pregunta_mas           > fijar_duracion_lugar_reunion_individual                bandeja similitud_texto  0.361 0.000 0.464
+    facilitar_expresion_subordinado_pregunta_mas           > conducir_reunion_individual_telefono_distancia         bandeja similitud_texto  0.411 0.000 0.447
+    facilitar_expresion_subordinado_pregunta_mas           > programar_reunion_individual_cadena                    bandeja similitud_texto  0.445 0.000 0.447
+    facilitar_expresion_subordinado_pregunta_mas           > tomar_notas_copia_guion_reunion_individual             bandeja similitud_texto  0.434 0.000 0.406
+    facilitar_expresion_subordinado_pregunta_mas           > cubrir_indicadores_problemas_reunion_individual        bandeja similitud_texto  0.362 0.000 0.420
+    tomar_notas_copia_guion_reunion_individual             > conducir_reunion_individual_telefono_distancia         bandeja similitud_texto+paso_contra_nodo 0.472 0.222 0.675
+    tomar_notas_copia_guion_reunion_individual             > alentar_asuntos_corazon_vigilar_final_reunion          bandeja similitud_texto  0.515 0.091 0.553
+    tomar_notas_copia_guion_reunion_individual             > acumular_asuntos_importantes_fichero_espera            bandeja similitud_texto  0.503 0.000 0.549
+    tomar_notas_copia_guion_reunion_individual             > fijar_frecuencia_reunion_individual_madurez_tarea      bandeja similitud_texto  0.355 0.200 0.506
+    tomar_notas_copia_guion_reunion_individual             > programar_reunion_individual_cadena                    bandeja similitud_texto  0.468 0.250 0.469
+    tomar_notas_copia_guion_reunion_individual             > preparar_guion_reunion_individual_subordinado          bandeja similitud_texto+familia_id 0.400 0.375 0.466
+    tomar_notas_copia_guion_reunion_individual             > facilitar_expresion_subordinado_pregunta_mas           bandeja similitud_texto  0.432 0.000 0.412
+    acumular_asuntos_importantes_fichero_espera            > tomar_notas_copia_guion_reunion_individual             bandeja similitud_texto  0.508 0.000 0.562
+    acumular_asuntos_importantes_fichero_espera            > alentar_asuntos_corazon_vigilar_final_reunion          bandeja similitud_texto  0.498 0.100 0.446
+    acumular_asuntos_importantes_fichero_espera            > conducir_reunion_individual_telefono_distancia         bandeja similitud_texto  0.491 0.000 0.451
+    acumular_asuntos_importantes_fichero_espera            > facilitar_expresion_subordinado_pregunta_mas           bandeja similitud_texto  0.484 0.000 0.437
+    acumular_asuntos_importantes_fichero_espera            > programar_reunion_individual_cadena                    bandeja similitud_texto  0.432 0.000 0.438
+    acumular_asuntos_importantes_fichero_espera            > preparar_guion_reunion_individual_subordinado          bandeja similitud_texto  0.380 0.000 0.433
+    alentar_asuntos_corazon_vigilar_final_reunion          > fijar_duracion_lugar_reunion_individual                bandeja paso_contra_nodo 0.324 0.100 0.612
+    alentar_asuntos_corazon_vigilar_final_reunion          > conducir_reunion_individual_telefono_distancia         bandeja similitud_texto  0.466 0.100 0.529
+    alentar_asuntos_corazon_vigilar_final_reunion          > programar_reunion_individual_cadena                    bandeja similitud_texto  0.472 0.111 0.516
+    alentar_asuntos_corazon_vigilar_final_reunion          > tomar_notas_copia_guion_reunion_individual             bandeja similitud_texto  0.510 0.091 0.500
+    alentar_asuntos_corazon_vigilar_final_reunion          > preparar_guion_reunion_individual_subordinado          bandeja similitud_texto  0.380 0.100 0.503
+    alentar_asuntos_corazon_vigilar_final_reunion          > acumular_asuntos_importantes_fichero_espera            bandeja similitud_texto  0.499 0.100 0.446
+    alentar_asuntos_corazon_vigilar_final_reunion          > facilitar_expresion_subordinado_pregunta_mas           bandeja similitud_texto  0.432 0.000 0.406
+    conducir_reunion_individual_telefono_distancia         > tomar_notas_copia_guion_reunion_individual             bandeja similitud_texto+paso_contra_nodo 0.474 0.222 0.675
+    conducir_reunion_individual_telefono_distancia         > preguntar_conducir_reunion_individual                  grafo   familia_id       0.077 0.500 0.395
+    conducir_reunion_individual_telefono_distancia         > acumular_asuntos_importantes_fichero_espera            bandeja similitud_texto  0.500 0.000 0.406
+    conducir_reunion_individual_telefono_distancia         > programar_reunion_individual_cadena                    bandeja similitud_texto  0.476 0.286 0.474
+    conducir_reunion_individual_telefono_distancia         > alentar_asuntos_corazon_vigilar_final_reunion          bandeja similitud_texto  0.462 0.100 0.441
+    conducir_reunion_individual_telefono_distancia         > facilitar_expresion_subordinado_pregunta_mas           bandeja similitud_texto  0.416 0.000 0.434
+    programar_reunion_individual_cadena                    > alentar_asuntos_corazon_vigilar_final_reunion          bandeja similitud_texto  0.474 0.111 0.548
+    programar_reunion_individual_cadena                    > conducir_reunion_individual_telefono_distancia         bandeja similitud_texto  0.474 0.286 0.463
+    programar_reunion_individual_cadena                    > tomar_notas_copia_guion_reunion_individual             bandeja similitud_texto  0.472 0.250 0.449
+    programar_reunion_individual_cadena                    > acumular_asuntos_importantes_fichero_espera            bandeja similitud_texto  0.431 0.000 0.465
+    programar_reunion_individual_cadena                    > facilitar_expresion_subordinado_pregunta_mas           bandeja similitud_texto  0.449 0.000 0.426
+    programar_reunion_individual_cadena                    > preguntar_conducir_reunion_individual                  grafo   familia_id       0.080 0.333 0.418
+    programar_reunion_individual_cadena                    > dirigir_reunion_individual_semanal                     grafo   familia_id       0.049 0.333 0.350
+    decidir_nivel_competente_inferior                      > anunciar_decision_inesperada_reconvocar_reunion        bandeja similitud_texto  0.364 0.000 0.472
+    decidir_nivel_competente_inferior                      > vencer_sindrome_grupo_pares_autoconfianza              bandeja similitud_texto  0.368 0.000 0.462
+    decidir_nivel_competente_inferior                      > tomar_mando_reunion_pares_presidente_ausente           bandeja similitud_texto  0.354 0.000 0.460
+    vencer_sindrome_grupo_pares_autoconfianza              > aprender_resultados_vencer_dos_presiones               grafo   paso_contra_nodo 0.217 0.111 0.712
+    vencer_sindrome_grupo_pares_autoconfianza              > tomar_mando_reunion_pares_presidente_ausente           bandeja similitud_texto  0.356 0.100 0.484
+    vencer_sindrome_grupo_pares_autoconfianza              > decidir_nivel_competente_inferior                      bandeja similitud_texto  0.363 0.000 0.462
+    vencer_sindrome_grupo_pares_autoconfianza              > anunciar_decision_inesperada_reconvocar_reunion        bandeja similitud_texto  0.431 0.000 0.404
+    vencer_sindrome_grupo_pares_autoconfianza              > planificar_tres_pasos_demanda_estado_brecha            bandeja similitud_texto  0.406 0.000 0.390
+    vencer_sindrome_grupo_pares_autoconfianza              > responder_primer_aviso_renuncia_subordinado            bandeja similitud_texto  0.360 0.000 0.404
+    vencer_sindrome_grupo_pares_autoconfianza              > cortar_discusion_libre_momento_justo                   bandeja similitud_texto  0.396 0.000 0.400
+    vencer_sindrome_grupo_pares_autoconfianza              > definir_entorno_grupo_clientes_proveedores_competidores bandeja similitud_texto  0.388 0.100 0.400
+    vencer_sindrome_grupo_pares_autoconfianza              > archivar_indicadores_resolver_problemas                grafo   similitud_texto  0.363 0.000 0.396
+    vencer_sindrome_grupo_pares_autoconfianza              > ejercer_poder_posicion_etapa_decision_clara            bandeja similitud_texto  0.354 0.000 0.383
+    vencer_sindrome_grupo_pares_autoconfianza              > supervisar_decision_delegada_preguntas_concretas       grafo   similitud_texto  0.364 0.000 0.379
+    vencer_sindrome_grupo_pares_autoconfianza              > contestar_dos_preguntas_direccion_objetivos            bandeja similitud_texto  0.370 0.000 0.360
+    vencer_sindrome_grupo_pares_autoconfianza              > cerrar_brecha_dos_preguntas_estrategia                 bandeja similitud_texto  0.355 0.000 0.337
+    tomar_mando_reunion_pares_presidente_ausente           > vencer_sindrome_grupo_pares_autoconfianza              bandeja similitud_texto  0.351 0.100 0.472
+    tomar_mando_reunion_pares_presidente_ausente           > decidir_nivel_competente_inferior                      bandeja similitud_texto  0.356 0.000 0.468
+    tomar_mando_reunion_pares_presidente_ausente           > anunciar_decision_inesperada_reconvocar_reunion        bandeja similitud_texto  0.368 0.100 0.453
+    tomar_mando_reunion_pares_presidente_ausente           > priorizar_lista_entrenamiento_subordinados             bandeja similitud_texto  0.362 0.000 0.404
+    ejercer_poder_posicion_etapa_decision_clara            > cortar_discusion_libre_momento_justo                   bandeja similitud_texto  0.375 0.000 0.444
+    ejercer_poder_posicion_etapa_decision_clara            > anunciar_decision_inesperada_reconvocar_reunion        bandeja similitud_texto  0.365 0.100 0.420
+    cortar_discusion_libre_momento_justo                   > anunciar_decision_inesperada_reconvocar_reunion        bandeja similitud_texto  0.406 0.000 0.526
+    cortar_discusion_libre_momento_justo                   > ejercer_poder_posicion_etapa_decision_clara            bandeja similitud_texto  0.361 0.000 0.458
+    cortar_discusion_libre_momento_justo                   > vencer_sindrome_grupo_pares_autoconfianza              bandeja similitud_texto  0.394 0.000 0.443
+    cortar_discusion_libre_momento_justo                   > cerrar_brecha_dos_preguntas_estrategia                 bandeja similitud_texto  0.358 0.000 0.412
+    cortar_discusion_libre_momento_justo                   > pedir_critica_anonima_curso_entrenamiento_dictado      bandeja similitud_texto  0.352 0.000 0.409
+    cortar_discusion_libre_momento_justo                   > construir_indicador_tendencia_patron                   grafo   similitud_texto  0.353 0.000 0.401
+    zanjar_seis_preguntas_decision_adelantado              > anunciar_decision_inesperada_reconvocar_reunion        bandeja similitud_texto  0.370 0.111 0.516
+    zanjar_seis_preguntas_decision_adelantado              > entregar_evaluacion_desempeno_tres_claves              bandeja similitud_texto  0.370 0.000 0.394
+    anunciar_decision_inesperada_reconvocar_reunion        > cortar_discusion_libre_momento_justo                   bandeja similitud_texto  0.405 0.000 0.526
+    anunciar_decision_inesperada_reconvocar_reunion        > zanjar_seis_preguntas_decision_adelantado              bandeja similitud_texto  0.366 0.111 0.495
+    anunciar_decision_inesperada_reconvocar_reunion        > contestar_dos_preguntas_direccion_objetivos            bandeja similitud_texto  0.376 0.000 0.448
+    anunciar_decision_inesperada_reconvocar_reunion        > tomar_mando_reunion_pares_presidente_ausente           bandeja similitud_texto  0.359 0.100 0.441
+    anunciar_decision_inesperada_reconvocar_reunion        > vencer_sindrome_grupo_pares_autoconfianza              bandeja similitud_texto  0.441 0.000 0.418
+    anunciar_decision_inesperada_reconvocar_reunion        > definir_entorno_grupo_clientes_proveedores_competidores bandeja similitud_texto  0.370 0.000 0.431
+    anunciar_decision_inesperada_reconvocar_reunion        > dirigir_reunion_decision                               grafo   familia_id       0.171 0.333 0.420
+    anunciar_decision_inesperada_reconvocar_reunion        > ejercer_poder_posicion_etapa_decision_clara            bandeja similitud_texto  0.371 0.100 0.415
+    anunciar_decision_inesperada_reconvocar_reunion        > entregar_evaluacion_desempeno_tres_claves              bandeja similitud_texto  0.365 0.000 0.350
+filas de vecino: 127
+(3) pares sin orden | levantado desde
+    agrupar_interrupciones_subordinados_reuniones_regulares ~ sostener_contacto_oferta_aceptacion                    con fuera   solo agrupar_interrupciones_subordinados_reuniones_regulares
+    agendar_cuidados_propios_cumplirlos                    ~ agrupar_interrupciones_subordinados_reuniones_regulares con fuera   solo agrupar_interrupciones_subordinados_reuniones_regulares
+    agrupar_interrupciones_subordinados_reuniones_regulares ~ nombrar_delegados_amigos_casa                          con fuera   solo agrupar_interrupciones_subordinados_reuniones_regulares
+    agrupar_interrupciones_subordinados_reuniones_regulares ~ llevar_inventario_proyectos_discrecionales             con fuera   solo agrupar_interrupciones_subordinados_reuniones_regulares
+    agrupar_interrupciones_subordinados_reuniones_regulares ~ preparar_respuestas_estandar_interrupciones_repetidas  con fuera   solo agrupar_interrupciones_subordinados_reuniones_regulares
+    agrupar_interrupciones_subordinados_reuniones_regulares ~ canalizar_interrupciones_cartel_hora_oficina           con fuera   los dos
+    agrupar_interrupciones_subordinados_reuniones_regulares ~ buscar_regularidad_bloques_iguales_trabajo_mando       con fuera   solo agrupar_interrupciones_subordinados_reuniones_regulares
+    agrupar_interrupciones_subordinados_reuniones_regulares ~ identificar_paso_limitante_jornada_desfases            con fuera   solo agrupar_interrupciones_subordinados_reuniones_regulares
+    infundir_regularidad_reunion_proceso                   ~ usar_tres_clases_reunion_proceso                       tanda-tanda los dos
+    infundir_regularidad_reunion_proceso                   ~ preparar_guion_reunion_individual_subordinado          tanda-tanda los dos
+    fijar_frecuencia_reunion_individual_madurez_tarea      ~ infundir_regularidad_reunion_proceso                   tanda-tanda los dos
+    fijar_duracion_lugar_reunion_individual                ~ infundir_regularidad_reunion_proceso                   tanda-tanda los dos
+    cubrir_indicadores_problemas_reunion_individual        ~ infundir_regularidad_reunion_proceso                   tanda-tanda los dos
+    fijar_duracion_lugar_reunion_individual                ~ usar_tres_clases_reunion_proceso                       tanda-tanda los dos
+    preparar_guion_reunion_individual_subordinado          ~ usar_tres_clases_reunion_proceso                       tanda-tanda los dos
+    cubrir_indicadores_problemas_reunion_individual        ~ usar_tres_clases_reunion_proceso                       tanda-tanda los dos
+    fijar_frecuencia_reunion_individual_madurez_tarea      ~ usar_tres_clases_reunion_proceso                       tanda-tanda los dos
+    fijar_duracion_lugar_reunion_individual                ~ fijar_frecuencia_reunion_individual_madurez_tarea      tanda-tanda los dos
+    fijar_frecuencia_reunion_individual_madurez_tarea      ~ preparar_guion_reunion_individual_subordinado          tanda-tanda los dos
+    cubrir_indicadores_problemas_reunion_individual        ~ fijar_frecuencia_reunion_individual_madurez_tarea      tanda-tanda los dos
+    fijar_frecuencia_reunion_individual_madurez_tarea      ~ tomar_notas_copia_guion_reunion_individual             tanda-tanda los dos
+    alentar_asuntos_corazon_vigilar_final_reunion          ~ fijar_duracion_lugar_reunion_individual                tanda-tanda los dos
+    fijar_duracion_lugar_reunion_individual                ~ preparar_guion_reunion_individual_subordinado          tanda-tanda los dos
+    cubrir_indicadores_problemas_reunion_individual        ~ fijar_duracion_lugar_reunion_individual                tanda-tanda los dos
+    facilitar_expresion_subordinado_pregunta_mas           ~ fijar_duracion_lugar_reunion_individual                tanda-tanda los dos
+    cubrir_indicadores_problemas_reunion_individual        ~ preparar_guion_reunion_individual_subordinado          tanda-tanda los dos
+    facilitar_expresion_subordinado_pregunta_mas           ~ preparar_guion_reunion_individual_subordinado          tanda-tanda los dos
+    preparar_guion_reunion_individual_subordinado          ~ tomar_notas_copia_guion_reunion_individual             tanda-tanda los dos
+    alentar_asuntos_corazon_vigilar_final_reunion          ~ preparar_guion_reunion_individual_subordinado          tanda-tanda los dos
+    acumular_asuntos_importantes_fichero_espera            ~ preparar_guion_reunion_individual_subordinado          tanda-tanda los dos
+    cubrir_indicadores_problemas_reunion_individual        ~ facilitar_expresion_subordinado_pregunta_mas           tanda-tanda los dos
+    acumular_asuntos_importantes_fichero_espera            ~ facilitar_expresion_subordinado_pregunta_mas           tanda-tanda los dos
+    alentar_asuntos_corazon_vigilar_final_reunion          ~ facilitar_expresion_subordinado_pregunta_mas           tanda-tanda los dos
+    conducir_reunion_individual_telefono_distancia         ~ facilitar_expresion_subordinado_pregunta_mas           tanda-tanda los dos
+    facilitar_expresion_subordinado_pregunta_mas           ~ programar_reunion_individual_cadena                    tanda-tanda los dos
+    facilitar_expresion_subordinado_pregunta_mas           ~ tomar_notas_copia_guion_reunion_individual             tanda-tanda los dos
+    conducir_reunion_individual_telefono_distancia         ~ tomar_notas_copia_guion_reunion_individual             tanda-tanda los dos
+    alentar_asuntos_corazon_vigilar_final_reunion          ~ tomar_notas_copia_guion_reunion_individual             tanda-tanda los dos
+    acumular_asuntos_importantes_fichero_espera            ~ tomar_notas_copia_guion_reunion_individual             tanda-tanda los dos
+    programar_reunion_individual_cadena                    ~ tomar_notas_copia_guion_reunion_individual             tanda-tanda los dos
+    acumular_asuntos_importantes_fichero_espera            ~ alentar_asuntos_corazon_vigilar_final_reunion          tanda-tanda los dos
+    acumular_asuntos_importantes_fichero_espera            ~ conducir_reunion_individual_telefono_distancia         tanda-tanda los dos
+    acumular_asuntos_importantes_fichero_espera            ~ programar_reunion_individual_cadena                    tanda-tanda los dos
+    alentar_asuntos_corazon_vigilar_final_reunion          ~ conducir_reunion_individual_telefono_distancia         tanda-tanda los dos
+    alentar_asuntos_corazon_vigilar_final_reunion          ~ programar_reunion_individual_cadena                    tanda-tanda los dos
+    conducir_reunion_individual_telefono_distancia         ~ preguntar_conducir_reunion_individual                  con fuera   solo conducir_reunion_individual_telefono_distancia
+    conducir_reunion_individual_telefono_distancia         ~ programar_reunion_individual_cadena                    tanda-tanda los dos
+    preguntar_conducir_reunion_individual                  ~ programar_reunion_individual_cadena                    con fuera   solo programar_reunion_individual_cadena
+    dirigir_reunion_individual_semanal                     ~ programar_reunion_individual_cadena                    con fuera   solo programar_reunion_individual_cadena
+    anunciar_decision_inesperada_reconvocar_reunion        ~ decidir_nivel_competente_inferior                      tanda-tanda solo decidir_nivel_competente_inferior
+    decidir_nivel_competente_inferior                      ~ vencer_sindrome_grupo_pares_autoconfianza              tanda-tanda los dos
+    decidir_nivel_competente_inferior                      ~ tomar_mando_reunion_pares_presidente_ausente           tanda-tanda los dos
+    aprender_resultados_vencer_dos_presiones               ~ vencer_sindrome_grupo_pares_autoconfianza              con fuera   solo vencer_sindrome_grupo_pares_autoconfianza
+    tomar_mando_reunion_pares_presidente_ausente           ~ vencer_sindrome_grupo_pares_autoconfianza              tanda-tanda los dos
+    anunciar_decision_inesperada_reconvocar_reunion        ~ vencer_sindrome_grupo_pares_autoconfianza              tanda-tanda los dos
+    planificar_tres_pasos_demanda_estado_brecha            ~ vencer_sindrome_grupo_pares_autoconfianza              con fuera   solo vencer_sindrome_grupo_pares_autoconfianza
+    responder_primer_aviso_renuncia_subordinado            ~ vencer_sindrome_grupo_pares_autoconfianza              con fuera   solo vencer_sindrome_grupo_pares_autoconfianza
+    cortar_discusion_libre_momento_justo                   ~ vencer_sindrome_grupo_pares_autoconfianza              tanda-tanda los dos
+    definir_entorno_grupo_clientes_proveedores_competidores ~ vencer_sindrome_grupo_pares_autoconfianza              con fuera   solo vencer_sindrome_grupo_pares_autoconfianza
+    archivar_indicadores_resolver_problemas                ~ vencer_sindrome_grupo_pares_autoconfianza              con fuera   solo vencer_sindrome_grupo_pares_autoconfianza
+    ejercer_poder_posicion_etapa_decision_clara            ~ vencer_sindrome_grupo_pares_autoconfianza              tanda-tanda solo vencer_sindrome_grupo_pares_autoconfianza
+    supervisar_decision_delegada_preguntas_concretas       ~ vencer_sindrome_grupo_pares_autoconfianza              con fuera   solo vencer_sindrome_grupo_pares_autoconfianza
+    contestar_dos_preguntas_direccion_objetivos            ~ vencer_sindrome_grupo_pares_autoconfianza              con fuera   solo vencer_sindrome_grupo_pares_autoconfianza
+    cerrar_brecha_dos_preguntas_estrategia                 ~ vencer_sindrome_grupo_pares_autoconfianza              con fuera   solo vencer_sindrome_grupo_pares_autoconfianza
+    anunciar_decision_inesperada_reconvocar_reunion        ~ tomar_mando_reunion_pares_presidente_ausente           tanda-tanda los dos
+    priorizar_lista_entrenamiento_subordinados             ~ tomar_mando_reunion_pares_presidente_ausente           con fuera   solo tomar_mando_reunion_pares_presidente_ausente
+    cortar_discusion_libre_momento_justo                   ~ ejercer_poder_posicion_etapa_decision_clara            tanda-tanda los dos
+    anunciar_decision_inesperada_reconvocar_reunion        ~ ejercer_poder_posicion_etapa_decision_clara            tanda-tanda los dos
+    anunciar_decision_inesperada_reconvocar_reunion        ~ cortar_discusion_libre_momento_justo                   tanda-tanda los dos
+    cerrar_brecha_dos_preguntas_estrategia                 ~ cortar_discusion_libre_momento_justo                   con fuera   solo cortar_discusion_libre_momento_justo
+    cortar_discusion_libre_momento_justo                   ~ pedir_critica_anonima_curso_entrenamiento_dictado      con fuera   solo cortar_discusion_libre_momento_justo
+    construir_indicador_tendencia_patron                   ~ cortar_discusion_libre_momento_justo                   con fuera   solo cortar_discusion_libre_momento_justo
+    anunciar_decision_inesperada_reconvocar_reunion        ~ zanjar_seis_preguntas_decision_adelantado              tanda-tanda los dos
+    entregar_evaluacion_desempeno_tres_claves              ~ zanjar_seis_preguntas_decision_adelantado              con fuera   solo zanjar_seis_preguntas_decision_adelantado
+    anunciar_decision_inesperada_reconvocar_reunion        ~ contestar_dos_preguntas_direccion_objetivos            con fuera   solo anunciar_decision_inesperada_reconvocar_reunion
+    anunciar_decision_inesperada_reconvocar_reunion        ~ definir_entorno_grupo_clientes_proveedores_competidores con fuera   solo anunciar_decision_inesperada_reconvocar_reunion
+    anunciar_decision_inesperada_reconvocar_reunion        ~ dirigir_reunion_decision                               con fuera   solo anunciar_decision_inesperada_reconvocar_reunion
+    anunciar_decision_inesperada_reconvocar_reunion        ~ entregar_evaluacion_desempeno_tres_claves              con fuera   solo anunciar_decision_inesperada_reconvocar_reunion
+pares sin orden: 78 | {'con fuera': 28, 'tanda-tanda': 50}

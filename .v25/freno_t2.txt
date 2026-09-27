@@ -1,0 +1,7 @@
+| | |
+|---|---:|
+| filas con numerador FIRMADO | **10** de **13** |
+| **la fila que decide, que es la peor firmada** | `cap_04` con **16.67** |
+| tope de `PASOS INVENTADOS` | **10,00** |
+| **el freno** | **DISPARADO** |
+| tramo que el freno deja | **DOS capitulos** |

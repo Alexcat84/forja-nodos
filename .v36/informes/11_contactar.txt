@@ -1,0 +1,20 @@
+$ python forja.py insertar cuarentena/scott_radical_candor/contactar_despedido_mes_despues.json [veredictos y censos]
+ADUANA DE INSERCION, candidato 'contactar_despedido_mes_despues'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (312 del grafo mas 36 que esperan en bandejas)
+
+DECLARADOS POR LECTURA: 2. Ninguna señal los levanto.
+  facilitar_despido_tres_cosas  [Facilitar un despido con las tres cosas que el texto cuenta, situandolo entre los dos errores opuestos de la empresa que despide demasiado facil y la que lo hace casi imposible]
+    señales: familia_id 0.0, paso_contra_nodo 0.441, similitud_texto 0.236
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  sopesar_consejo_legal_despedir_humildad  [Sopesar el consejo legal contra el riesgo de seguirlo y despedir con humildad, que es la tercera de las tres cosas que facilitan un despido]
+    señales: familia_id 0.0, paso_contra_nodo 0.401, similitud_texto 0.306
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  LA JERARQUIA LA CAZA LA LECTURA, NO LA SEÑAL (D.19, D.29).
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 313
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 2
+CODIGO DE SALIDA: 0
+  ARCHIVADO EN EL MISMO ACTO (D.31): cuarentena/_insertados/scott_radical_candor/contactar_despedido_mes_despues.json

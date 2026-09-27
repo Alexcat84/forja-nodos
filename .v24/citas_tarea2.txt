@@ -1,0 +1,20 @@
+$ sed -n "51p" fuentes/scott_radical_candor/cap_12.md | fold -w 100
+That’s a lot of things to do, but it’s not as bad as it sounds. If you take every suggestion rec
+ommended in this book, the total time required is about ten hours a week, five of which are 1:1 meet
+ings that you’re probably already holding anyway. Of course, some processes like growth-management
+ conversations, skip-level meetings, and calibrations don’t get spread out each week but will come
+ in bursts, so some weeks you may have eight hours of work associated with your core responsibilitie
+s as a boss, others twelve others five. But that still leaves fifteen hours a week to think and exec
+ute, and another fifteen hours to deal with the various unpredictable things that you’ll be asked 
+to do.
+
+$ sed -n "17p" fuentes/scott_radical_candor/cap_03.md | fold -w 100
+As you read on, you might occasionally feel overwhelmed by the number of things I’m suggesting you
+ do as a manager. Take a deep breath. My goal is to save you time, not to litter your calendar with 
+meetings. You do need to spend time with your direct reports to be a great boss, but you don’t nee
+d to spend ALL your time with them. If you implement every single idea, tool, and technique in this 
+book, the time you dedicate to managing your team will come to approximately ten hours a week, and t
+hose ten hours should save you enormous lost time and headaches later. I’ll also suggest you block
+ out about fifteen hours a week for you to think and execute independently in your area of expertise
+. That leaves another fifteen hours in a forty-hour work week. Hopefully you can claim them as your 
+own, though if you’re like me you’ll have to use most of them to deal with the unpredictable.

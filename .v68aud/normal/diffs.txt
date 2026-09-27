@@ -1,0 +1,7 @@
+$ git diff --stat 3d28595 HEAD -- dataset/ bitacora/ censos/ config/ cuarentena/ src/ | wc -l
+0
+$ git diff --stat 3d28595 d10f73c | tail -1
+ 2 files changed, 513 insertions(+), 262 deletions(-)
+$ git diff --name-only 3d28595 d10f73c
+docs/loop/APERTURA_CIEGA.md
+docs/loop/SELLOS_APERTURA.jsonl

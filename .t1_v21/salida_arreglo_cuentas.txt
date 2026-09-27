@@ -1,0 +1,35 @@
+OK  conversar_historia_vida_descubrir_motivadores  L49 pone dos respuestas seguidas y NO escribe la cuenta
+OK  conversar_historia_vida_descubrir_motivadores  L49 pone dos mas y NO escribe la cuenta
+OK  conversar_suenios_cruzar_habilidades           L71 pone tres preguntas y NO escribe la cuenta
+OK  armar_plan_anual_crecimiento_equipo            L105 nombra tres y NO escribe la cuenta
+OK  armar_plan_anual_crecimiento_equipo            L109 pone tres preguntas y NO escribe la cuenta
+OK  montar_proceso_contratacion_reducir_sesgo      L137 nombra tres bases y NO escribe la cuenta
+OK  montar_proceso_contratacion_reducir_sesgo      L137 da dos ejemplos y NO escribe la cuenta
+OK  montar_proceso_contratacion_reducir_sesgo      L139 dice las dos cosas y NO escribe la cuenta
+OK  montar_proceso_contratacion_reducir_sesgo      L147 da dos razones y NO escribe la cuenta
+OK  montar_proceso_contratacion_reducir_sesgo      L163 dice las dos caras y NO escribe la cuenta
+OK  admitir_pronto_mal_desempenio_cuatro_razones   L177 hace dos preguntas y NO escribe la cuenta
+OK  calibrar_decision_despido_documentarla         L183 pone dos errores y NO escribe la cuenta
+OK  sopesar_consejo_legal_despedir_humildad        L193 pone dos respuestas y NO escribe la cuenta
+OK  calibrar_ascensos_evitar_politica              L213 dice some tips y NO escribe la cuenta. LA CUENTA CINCO ES MIA
+OK  calibrar_ascensos_evitar_politica              L211 pone dos defectos y NO escribe la cuenta
+OK  evitar_obsesion_ascenso_estatus                L233 opone coste y beneficio y NO escribe la cuenta
+OK  evitar_obsesion_ascenso_estatus                L235 separa las dos mitades y NO escribe la cuenta
+OK  montar_proceso_contratacion_reducir_sesgo      TITULO: L135 dice some simple things y NO escribe la cuenta. Y mi propia cuenta de rotulos es SEIS, no cinco: la cifra del titulo estaba ademas mal
+OK  calibrar_ascensos_evitar_politica              TITULO: L213 dice some tips y NO escribe la cuenta
+OK  reconocer_excelencia_trayectoria_gradual       NOMBRE LARGO: L247 dice Another great way y NO escribe la cuenta
+OK  montar_proceso_contratacion_reducir_sesgo      NOMBRE LARGO: decia cinco y enumeraba cinco fundiendo dos rotulos del libro en uno. Los rotulos del libro son SEIS (L137, L139, L145, L149, L153, L159) y ahora van los seis, sin cuenta atribuida
+OK  calibrar_ascensos_evitar_politica              NOMBRE LARGO: misma especie que el titulo
+
+arreglos aplicados : 22 de 22
+fallos             : 0  []
+  admitir_pronto_mal_desempenio_cuatro_razones   json valido, 9 pasos
+  armar_plan_anual_crecimiento_equipo            json valido, 29 pasos
+  calibrar_ascensos_evitar_politica              json valido, 19 pasos
+  calibrar_decision_despido_documentarla         json valido, 13 pasos
+  conversar_historia_vida_descubrir_motivadores  json valido, 15 pasos
+  conversar_suenios_cruzar_habilidades           json valido, 15 pasos
+  evitar_obsesion_ascenso_estatus                json valido, 10 pasos
+  montar_proceso_contratacion_reducir_sesgo      json valido, 32 pasos
+  reconocer_excelencia_trayectoria_gradual       json valido, 13 pasos
+  sopesar_consejo_legal_despedir_humildad        json valido, 8 pasos

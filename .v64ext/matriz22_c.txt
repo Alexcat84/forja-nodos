@@ -1,0 +1,13 @@
+LEVANTA  construir_indicador_tendencia_patron             -> equilibrar_capacidad_personal_inventario_plazo   texto 0.353 familia 0.0 paso 0.424  similitud_texto
+LEVANTA  construir_indicador_tendencia_patron             -> emparejar_indicadores_efecto_contraefecto        texto 0.393 familia 0.143 paso 0.427  similitud_texto
+LEVANTA  construir_indicador_tendencia_patron             -> elegir_indicador_salida_trabajo_administrativo   texto 0.378 familia 0.125 paso 0.378  similitud_texto
+LEVANTA  construir_indicador_tendencia_patron             -> construir_grafico_escalonado_pronosticos         texto 0.362 familia 0.143 paso 0.461  similitud_texto
+LEVANTA  construir_indicador_tendencia_patron             -> archivar_indicadores_resolver_problemas          texto 0.365 familia 0.143 paso 0.427  similitud_texto
+LEVANTA  construir_indicador_tendencia_patron             -> dimensionar_plantilla_administrativa_pronostico  texto 0.373 familia 0.0 paso 0.405  similitud_texto
+LEVANTA  construir_grafico_escalonado_pronosticos         -> emparejar_indicadores_efecto_contraefecto        texto 0.378 familia 0.0 paso 0.434  similitud_texto
+LEVANTA  construir_grafico_escalonado_pronosticos         -> construir_indicador_tendencia_patron             texto 0.365 familia 0.143 paso 0.453  similitud_texto
+LEVANTA  construir_grafico_escalonado_pronosticos         -> elegir_fabricar_pedido_pronostico                texto 0.393 familia 0.143 paso 0.453  similitud_texto
+LEVANTA  archivar_indicadores_resolver_problemas          -> construir_indicador_tendencia_patron             texto 0.361 familia 0.143 paso 0.42  similitud_texto
+LEVANTA  elegir_fabricar_pedido_pronostico                -> emparejar_indicadores_efecto_contraefecto        texto 0.362 familia 0.0 paso 0.419  similitud_texto
+LEVANTA  elegir_fabricar_pedido_pronostico                -> construir_grafico_escalonado_pronosticos         texto 0.387 familia 0.143 paso 0.44  similitud_texto
+FIN filas 12 a 17 de 22, 105 pares medidos, 498 s

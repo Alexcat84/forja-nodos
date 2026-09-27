@@ -85,19 +85,48 @@ def revisar_candidato(bruto, nodos, resolutor, umbrales, tabla_fuentes,
     return dictamen, candidato
 
 
-def revisar(rutas, ruta_dataset=None, umbrales=None, tabla_fuentes=None):
-    """Corre el informe sobre una lista de ficheros de candidato."""
+# LA POBLACION VIVE EN `aduana.py` DESDE EL 16 sep 2026, Y NO POR GUSTO.
+# `D.38.5` dice **TAMBIEN PARA LA ADUANA** en su propio titular, y durante
+# cuatro dias solo estuvo aqui, en el informe EN SECO. **La que decide es la
+# aduana**, asi que la poblacion tiene que vivir donde se decide, y el informe
+# tomarla de ahi. Los nombres se conservan porque este modulo es su sede
+# historica y hay actas que lo citan.
+CARPETA_ARCHIVO = aduana.CARPETA_ARCHIVO
+CARPETAS_FUERA_DE_POBLACION = aduana.CARPETAS_FUERA_DE_POBLACION
+Poblacion = aduana.Poblacion
+esta_archivado = aduana.esta_archivado
+poblacion_de_bandejas = aduana.poblacion_de_bandejas
+_fuentes_canonicas = aduana._fuentes_canonicas
+
+
+def revisar(rutas, ruta_dataset=None, umbrales=None, tabla_fuentes=None,
+            bandejas=None):
+    """Corre el informe sobre una lista de ficheros de candidato.
+
+    `bandejas=None` descubre la poblacion que espera en `cuarentena/` (punto 3
+    de la decision del 12 sep 2026). `bandejas=[]` mide solo contra el grafo, y
+    es lo que piden los instrumentos de calibracion, que miden la aduana contra
+    un catalogo de referencia y no contra las bandejas de hoy.
+    """
     ruta_dataset = ruta_dataset or comun.RUTA_DATASET
     umbrales = umbrales or modulo_config.cargar()
     if tabla_fuentes is None:
         tabla_fuentes = comun.leer_json(comun.RUTA_FUENTES)
     esquema_nodo = modulo_esquema.cargar()
     nodos = comun.leer_jsonl(ruta_dataset)
+    # EL RESOLUTOR SE QUEDA EN EL GRAFO Y NO SE ENSANCHA: la guarda que muerde
+    # con el es 'el id ya vive en el grafo', y un id que espera en la bandeja NO
+    # vive en el grafo todavia. Lo que se ensancha es la POBLACION del barrido.
     resolutor = Resolutor(nodos)
     fecha = aduana._hoy()
+    if bandejas is None:
+        bandejas = poblacion_de_bandejas(fecha=fecha, tabla_fuentes=tabla_fuentes)
+    poblacion = list(nodos) + list(bandejas)
 
     dictamenes = []
     ids_del_lote = {}
+    archivados = [r for r in rutas if esta_archivado(r)]
+    rutas = [r for r in rutas if not esta_archivado(r)]
     for ruta in rutas:
         try:
             bruto = comun.leer_json(ruta)
@@ -107,16 +136,18 @@ def revisar(rutas, ruta_dataset=None, umbrales=None, tabla_fuentes=None):
                                "detalles": [str(error)], "vecinos": [], "avisos": []})
             continue
         dictamen, candidato = revisar_candidato(
-            bruto, nodos, resolutor, umbrales, tabla_fuentes, esquema_nodo,
+            bruto, poblacion, resolutor, umbrales, tabla_fuentes, esquema_nodo,
             ids_del_lote, fecha)
         dictamen["ruta"] = ruta
         dictamenes.append(dictamen)
         if dictamen["id"] and dictamen["salida"] != CHOCA:
             ids_del_lote.setdefault(dictamen["id"], os.path.basename(ruta))
-    return dictamenes, len(nodos), umbrales
+    return (dictamenes, Poblacion(len(nodos), len(bandejas)), umbrales,
+            archivados)
 
 
-def texto_informe(dictamenes, cuantos_nodos, umbrales, detalle=True):
+def texto_informe(dictamenes, cuantos_nodos, umbrales, detalle=True,
+                  archivados=None):
     lineas = []
     cuenta = {ENTRARIA: 0, BLOQUEARIA: 0, CAERIA: 0, CHOCA: 0}
     por_guarda = {}
@@ -129,7 +160,18 @@ def texto_informe(dictamenes, cuantos_nodos, umbrales, detalle=True):
     lineas.append("INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.")
     lineas.append("=" * 76)
     lineas.append("candidatos revisados        : %d" % len(dictamenes))
-    lineas.append("nodos en el grafo de destino: %d" % cuantos_nodos)
+    if archivados:
+        # EL RECORTE SE DECLARA, NUNCA SE APLICA EN SILENCIO. Quien pide un
+        # informe sobre una carpeta tiene que saber cuantos ficheros habia y
+        # por que no se contaron.
+        lineas.append("archivados, NO contados     : %d   (ya viven en el grafo, "
+                      "cuarentena/_insertados/)" % len(archivados))
+    # LA POBLACION SE PUBLICA CON SU REPARTO (D.38.3 y punto 3 del 12 sep 2026).
+    # Un numero solo no deja leer por que un candidato levanto vecino.
+    if isinstance(cuantos_nodos, Poblacion):
+        lineas.append("poblacion del barrido       : %s" % cuantos_nodos)
+    else:
+        lineas.append("nodos en el grafo de destino: %d" % cuantos_nodos)
     lineas.append("umbrales de esta corrida    : similitud %.2f | familia %.2f | "
                   "paso contra nodo %.2f"
                   % (umbrales["umbral_similitud_texto"], umbrales["umbral_familia_id"],
@@ -226,6 +268,15 @@ def main(argumentos=None):
         print("     python forja.py informe --carpeta cuarentena/mundo_11 [--resumen]")
         return 1
 
-    dictamenes, cuantos, umbrales = revisar(rutas)
-    print(texto_informe(dictamenes, cuantos, umbrales, detalle=not resumen_solo))
+    dictamenes, cuantos, umbrales, archivados = revisar(rutas)
+    if not dictamenes and archivados:
+        print('%s ARCHIVADO%s en cuarentena/_insertados: ya vive%s en el grafo, '
+              'y el informe no lo%s cuenta (D.31).'
+              % ('1 fichero' if len(archivados) == 1 else '%d ficheros' % len(archivados),
+                 '' if len(archivados) == 1 else 'S',
+                 '' if len(archivados) == 1 else 'n',
+                 '' if len(archivados) == 1 else 's'))
+        return 0
+    print(texto_informe(dictamenes, cuantos, umbrales,
+                        detalle=not resumen_solo, archivados=archivados))
     return 0

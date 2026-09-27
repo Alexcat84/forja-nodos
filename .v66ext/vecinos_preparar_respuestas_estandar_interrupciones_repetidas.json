@@ -1,0 +1,33 @@
+{
+ "id": "preparar_respuestas_estandar_interrupciones_repetidas",
+ "grafo": 368,
+ "bandejas": 111,
+ "vecinos": [
+  {
+   "id": "buscar_regularidad_bloques_iguales_trabajo_mando",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.389,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.551
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 1 de buscar_regularidad_bloques_iguales_trabajo_mando"
+  },
+  {
+   "id": "agrupar_interrupciones_subordinados_reuniones_regulares",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.467,
+    "familia_id": 0.111,
+    "paso_contra_nodo": 0.435
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 2 de agrupar_interrupciones_subordinados_reuniones_regulares"
+  }
+ ]
+}

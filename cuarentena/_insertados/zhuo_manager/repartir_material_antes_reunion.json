@@ -1,0 +1,45 @@
+{
+  "id": "repartir_material_antes_reunion",
+  "titulo": "Repartir el material y la agenda antes de la reunion para que todos lleguen preparados",
+  "denominaciones": {
+    "nombre_largo": "La maldicion del conocimiento, el reparto de presentaciones y documentos el dia antes, y la agenda por adelantado",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "give people a chance to come prepared, the curse of knowledge"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando la meta de la reunion es tomar decisiones o dar opinion y los asistentes van a ver el material por primera vez alli dentro.",
+  "entregable_esperado": "Las presentaciones o documentos en manos de los asistentes el dia antes, y una agenda enviada por adelantado.",
+  "pasos_accionables": [
+    "Da por hecho que quien presenta sufre lo que los psicologos sociales llaman la maldicion del conocimiento: como conoce su material de arriba abajo, el sesgo cognitivo le hace dificil recordar que se siente al ser un principiante que ve el contenido por primera vez, y por eso da por supuesto que la sala puede captar rapido todos los puntos importantes segun pasa de diapositiva en diapositiva.",
+    "No te sientas mal por no seguir el ritmo ni supongas que eres tu quien va lento: la autora cuenta que a ella le pasaba en muchas revisiones, entrecerrando los ojos ante graficas y datos mientras le decian como se ve claramente en estos datos, y que aprendio que su reaccion no era rara y que hasta sus colegas mas duchos en datos necesitan tiempo para procesar informacion nueva.",
+    "Reconoce el limite real: si la meta de la reunion es tomar decisiones o dar opinion, a las partes interesadas les puede costar entender el material lo bastante bien dentro de una sola reunion como para llegar a conclusiones meditadas.",
+    "Pide a quien organiza que envie cualquier presentacion o documento el dia antes, que es el cambio concreto que ellos hicieron en sus reuniones de decision y de revision, para que todo el mundo tenga ocasion de procesar la informacion por adelantado.",
+    "Envia tambien la agenda por adelantado, que muestra un nivel de cuidado e intencion al ayudar al grupo a mantenerse enfocado.",
+    "Hazlo con reuniones de cualquier tamano, incluidas las individuales, y ten presente que cuanto mayor es la reunion mas importante es la preparacion.",
+    "Si te parece mucho trabajo preparar, considera el coste monetario real de una reunion dada: si una reunion de toda la empresa a la que asisten quinientos empleados no es atractiva ni memorable, la empresa habra desperdiciado quinientas horas persona, diez mil dolares si supones un salario de veinte dolares por persona y hora. Gastar aunque sean cinco horas del tiempo de cinco personas, quinientos dolares en total, en preparar esa reunion merece la pena sin duda."
+  ],
+  "resumen_teorico": "El procedimiento se sostiene sobre un mecanismo nombrado por el libro, la maldicion del conocimiento, y sobre su consecuencia medible: quien ve el material por primera vez dentro de la reunion no puede contribuir bien a una decision ni a una opinion. Por eso el remedio no es pedir mas atencion sino mover el material en el tiempo. El paso 4 trae el plazo porque el libro lo trae, el dia antes, y no lo puse yo; el paso 6 trae la escala porque el libro dice de cualquier tamano, incluidas las individuales. El paso 7 trae la cuenta del coste monetario porque el libro la pone entera, con sus tres numeros y su supuesto declarado, y es el argumento con el que el libro justifica el gasto de preparar. Lo que el libro NO dice, y por eso no esta escrito aqui, es que se hace cuando el material no esta listo el dia antes, ni si se comprueba que la gente lo leyo, ni que pasa con quien llega sin haberlo leido.",
+  "atribuciones": [
+    {
+      "cifra": "una sola reunion periodica semanal con un punado de asistentes puede traducirse en miles de dolares de productividad desperdiciada a lo largo de un anio si ese tiempo juntos no se aprovecha bien",
+      "autor": "Julie Zhuo",
+      "fuente": "zhuo_manager",
+      "fecha_corte": "2019, anio de la edicion del libro"
+    }
+  ]
+}

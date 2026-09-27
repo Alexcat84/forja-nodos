@@ -1,0 +1,19 @@
+$ git rev-parse HEAD
+3dbc9017cd7056efb83a7c9c9c40472588a7010c
+
+$ git rev-parse --abbrev-ref HEAD
+extraccion-mundo-11
+
+$ git status --short
+ D docs/loop/APERTURA_CIEGA.md
+ D docs/loop/CREDITO_serial.jsonl
+ D docs/loop/REPORTE.md
+ D docs/loop/loop.log
+ M docs/loop/ultimo_apertura.json
+ D docs/loop/ultimo_auditor.json
+ D docs/loop/ultimo_extractor.json
+?? .v34aud/
+
+$ git log -1 --format=%h %ad --date=iso
+3dbc901 2026-09-17 12:22:49 -0400
+

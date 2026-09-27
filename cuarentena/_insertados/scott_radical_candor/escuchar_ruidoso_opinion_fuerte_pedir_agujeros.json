@@ -1,0 +1,55 @@
+{
+  "id": "escuchar_ruidoso_opinion_fuerte_pedir_agujeros",
+  "titulo": "Escuchar en voz alta poniendo una opinion fuerte encima de la mesa y pidiendo que le hagan agujeros",
+  "denominaciones": {
+    "nombre_largo": "La escucha ruidosa: decir algo con la intencion de provocar una reaccion, y construir la confianza de quien no se atreve a devolverla",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "loud listening"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "strong opinions, weakly held"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando tu estilo natural de escuchar no es callarte sino decir lo que piensas, y quieres que eso saque a la luz las opiniones contrarias en vez de taparlas.",
+  "entregable_esperado": "Un punto de vista tuyo dicho con claridad y una respuesta contraria dada en voz alta por alguien de tu equipo, incluido alguien a quien tu estilo intimidaba.",
+  "pasos_accionables": [
+    "Pon un punto de vista fuerte encima de la mesa e insiste en que te respondan.",
+    "No te quedes en desafiar a los demas: insiste en que ellos te desafien a ti, que es lo que hace que esto sea escuchar y no hablar.",
+    "Cuenta con que esto solo funciona cuando la gente se siente con confianza suficiente para aceptar el reto.",
+    "Fijate en particular en quien acaba de llegar a la empresa y no se siente bastante asentado para dar la cara, porque puede saber una buena razon por la que te equivocas y aun asi callarsela.",
+    "Ve todo lo lejos que haga falta para construir la confianza de aquellos a los que estas incomodando.",
+    "Cuenta con que segun la gente vea a unos y otros desafiar al jefe, iran sintiendo que hacerlo tambien es seguro para ellos.",
+    "Invita al desafio nombrando tu mismo el defecto de tu idea, como hacia Steve Jobs cuando iba a Jony Ive y le decia Jony, aqui va una idea tonta.",
+    "Di lo que piensas con mucha claridad y despues ve todo lo lejos que haga falta para animar a que te lleven la contraria.",
+    "Remata con una peticion explicita de agujeros, del tipo hazle agujeros a esta idea, se que puede ser terrible, dime todas las razones por las que no deberiamos hacerlo.",
+    "Reconoce en publico cuando el otro tenia razon y tu no, como el trofeo de tenias razon, me equivoque que la autora dejo en la mesa de una colega.",
+    "Quedate con el estilo que te sale mas natural. El texto dice que muchos libros de liderazgo empujan hacia la escucha callada, y que si eres de los que escuchan en voz alta es muy dificil seguir ese consejo.",
+    "En vez de forzar un estilo que no es el tuyo, afina tu conciencia de como tu estilo hace sentir a tus colegas y trabaja sobre esa dinamica.",
+    "Busca la manera de dar voz a los callados sin dejar descolocados a sus colegas mas ruidosos: el texto dice que no quieres una tirania de los mas habladores, quieres llegar juntos a la mejor respuesta."
+  ],
+  "resumen_teorico": "Sale de fuentes/scott_radical_candor/cap_07.md, lineas 113 a 129, bajo el rotulo Loud listening, dentro del paso LISTEN de la rueda de hacer cosas. Es la segunda de las dos formas de escuchar, y el libro la define por contraste con la primera en su primera linea: si la escucha callada consiste en quedarse en silencio para dejar sitio a que hablen, la ruidosa consiste en decir cosas con la intencion de provocar una reaccion. La pieza tiene tres tramos y los tres son del texto: la tecnica, la compensacion de su coste (construir la confianza de quien no se atreve), y la regla que cierra la seccion entera de escuchar, que es quedarse con el estilo propio. La tecnica de opiniones fuertes debilmente sostenidas se atribuye a Paul Saffo y va en su sede. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 13 pasos, 13 TRANSCRIPCION, 0 PUENTE. P1 y P2 de la linea 115; P3 y P4 de la linea 117; P5, P6 y P7 de la linea 119; P8, P9 y P10 de la linea 125; P11, P12 y P13 de la linea 129. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: como se sabe que alguien ya tiene confianza suficiente, cuanto se espera antes de dar por hecho que nadie va a responder, y que se hace con quien nunca responde. La frase del leon de Randy Nelson queda fuera de los pasos porque es un aviso sobre con quien funciona, no un acto que nadie ejecute.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-12"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "atribuciones": [
+    {
+      "cifra": "opiniones fuertes debilmente sostenidas",
+      "autor": "Paul Saffo, profesor de ingenieria en Stanford, citado por Kim Scott",
+      "fuente": "scott_radical_candor",
+      "fecha_corte": "no consta fecha en el texto: el libro nombra la tecnica y a su autor sin datarla, asi que la atribucion queda sin fecha de corte y se dice"
+    }
+  ]
+}

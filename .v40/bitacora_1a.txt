@@ -1,0 +1,7 @@
+    $ python -c "..." # la ultima linea de bitacora/VEREDICTOS.jsonl, la que dejo corregir
+    linea 507
+    fecha           : 2026-09-18
+    operacion       : correccion declarada del resumen_teorico (EXTRACTOR.md 2)
+    candidato       : pedir_critica_primero_crear_seguridad_psicologica
+    veredicto       : CORREGIDO
+    campos: campo, candidato, caracteres_antes, caracteres_despues, fecha, huella_candidato, huella_vecino, levantada_por, operacion, razon, senales, texto_anadido, vecino, veredicto

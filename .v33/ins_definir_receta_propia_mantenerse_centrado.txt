@@ -1,0 +1,7 @@
+ADUANA DE INSERCION, candidato 'definir_receta_propia_mantenerse_centrado'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 349   (271 del grafo mas 78 que esperan en bandejas)
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 272
+  censos escritos: denominaciones

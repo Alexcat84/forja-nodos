@@ -1,0 +1,10 @@
+$ sed -n "1169,1171p" src/aduana.py   (el estado ANTES, citado por la ACTA 27 5.2)
+        }
+        comun.agregar_jsonl(ruta_veredictos, registro)
+        resultado.veredictos.append(registro)
+
+$ git show HEAD:src/aduana.py | sed -n "1195,1198p"
+        if nodo_madre is None or nodo_hijo is None:
+            resultado.codigo = CODIGO_RECHAZO
+            resultado.decir("RECHAZADO: no encuentro los dos extremos de la arista %s > %s"
+                            % (madre, hijo))

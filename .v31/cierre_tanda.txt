@@ -1,0 +1,17 @@
+EL ESTADO DEL GRAFO AL CERRAR LA TANDA
+  nodos en dataset/nodos.jsonl        : 267
+  aristas por nodos_siguientes        : 102
+  aristas por nodos_previos           : 102
+  lineas de bitacora/VEREDICTOS.jsonl : 391
+  bandeja lote 4                      : 78
+  archivados lote 4                   : 64
+  bandeja lote 5                      : 3
+
+LA CABEZA DE cap_11 Y SUS HIJOS, leidos del dato
+    montar_reuniones_solas_mentalidad_frecuencia
+    conducir_reunion_equipo_agenda_tres_bloques
+    montar_reunion_gran_debate
+    montar_reunion_gran_decision
+    montar_reunion_general_presentaciones_preguntas
+    bloquear_tiempo_pensar_calendario
+  hijos: 6

@@ -1,0 +1,50 @@
+{
+  "id": "dimensionar_inventario_materia_prima_reposicion",
+  "titulo": "Inspeccionar el material al recibirlo y dimensionar el inventario por el tiempo de reposicion",
+  "dominio": "produccion",
+  "estado": "vivo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "atribuciones": [],
+  "fuentes": [
+    {
+      "clave": "grove_high_output",
+      "fecha": "2026-09-16"
+    }
+  ],
+  "denominaciones": {
+    "nombre_largo": "La inspeccion de recepcion, el inventario que cubre el tiempo de reposicion, y la oportunidad en riesgo de parar un dia",
+    "sigla": "",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "receiving inspection"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "raw material inventory"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "consumption rate"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "opportunity at risk"
+      }
+    ]
+  },
+  "condiciones_activacion": "Cuando tu operacion depende de material que entra de fuera y una entrega mala te puede dejar parado.",
+  "entregable_esperado": "La inspeccion puesta en el momento de recibir el material, el inventario dimensionado por el ritmo de consumo y el tiempo de reposicion, y la oportunidad en riesgo estimada con las tres preguntas del parado de un dia.",
+  "pasos_accionables": [
+    "Mira el material en el momento de recibirlo, que es lo que se llama inspeccion de entrada o de recepcion.",
+    "Busca en esa inspeccion no solo lo que esta roto o podrido, sino tambien lo que viene de tamano mayor o menor del que toca, porque eso cambia lo rapido que se procesa.",
+    "Devuelve el material que no sea aceptable, contando con lo que eso te deja: sin material, y por tanto parado.",
+    "Ten inventario de materia prima para no tener que parar por eso.",
+    "Dimensionalo con el principio que el libro pone: suficiente para cubrir tu ritmo de consumo durante el tiempo que tardas en reponer la materia prima, de modo que si tu proveedor entrega una vez al dia, guardes un dia de consumo.",
+    "Pesa la ventaja de llevar ese inventario contra lo que cuesta llevarlo, porque el inventario cuesta dinero.",
+    "Calcula, ademas del coste del material y del coste del dinero, la oportunidad en riesgo, con las tres preguntas del libro: cuanto costaria tener la maquina parada un dia, cuantos clientes perderias y cuanto costaria volver a atraerlos."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/grove_high_output/cap_02.md, unidad Cap. 1, titulo textual The Basics of Production: Delivering a Breakfast (or a College Graduate, or a Compiler, or a Convicted Criminal...). Sale de la PIEZA P10 de la frontera publicada en la vuelta 1 del frente, L69, 237 palabras. Es un tramo de UNA sola linea del recorte, y los siete pasos salen todos de ella. POR QUE ES PROCEDIMIENTO: el libro pone su propio inventario de OBJETOS y de ETAPAS y hasta pone la formula (you will want to look at the eggs at the time of receipt, something called incoming or receiving inspection; The principle to be applied here is that you should have enough to cover your consumption rate for the length of time it takes to replace your raw material; you should also try to gauge the opportunity at risk: what would it cost if you had to shut your egg machine down for a day? How many customers would you lose? How much would it cost to lure them back?). El criterio NO es un adjetivo de adecuacion: no dice un inventario razonable, dice ritmo de consumo por tiempo de reposicion. POR QUE VA FUNDIDO EN UN SOLO NODO Y NO EN DOS (P.19, la repeticion interna): la inspeccion de recepcion y el inventario de materia prima parecen dos procedimientos, pero en el texto son uno: la inspeccion produce la devolucion, la devolucion produce el parado, y el inventario existe para cubrir ese parado. Partirlo dejaria un nodo sin su disparador y otro sin su motivo. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 7 pasos, 7 TRANSCRIPCION, 0 PUENTE. LO QUE NO ESCRIBO Y POR ESO NO ESTA AQUI: NO escribo cuantos dias de inventario hay que tener, porque el libro da la formula y el ejemplo de un dia para un proveedor que entrega una vez al dia, y fijar un numero seria escribirlo yo; NO escribo a quien se devuelve el material ni con que documento, que seria puente de la especie destinatario; NO escribo quien hace la inspeccion, que seria puente de la especie responsable. DISCUTIBLE QUE MARCO ANTES DE SABER SI ACIERTO: el paso 1 y el paso 2 podrian leerse como el mismo paso. Los separo porque el libro nombra los defectos en una frase aparte y porque el segundo trae la razon de mirar el tamano (which would affect how fast they cook), que no es evidente y es lo que distingue una inspeccion de recepcion de mirar si algo esta roto."
+}

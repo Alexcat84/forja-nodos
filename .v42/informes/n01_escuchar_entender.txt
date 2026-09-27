@@ -1,0 +1,53 @@
+$ python forja.py insertar cuarentena/scott_radical_candor/escuchar_entender_critica_dominar_defensa.json [6 veredictos y censos]
+ADUANA DE INSERCION, candidato 'escuchar_entender_critica_dominar_defensa'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 371   (325 del grafo mas 46 que esperan en bandejas)
+
+DECLARADOS POR LECTURA: 2. Ninguna señal los levanto.
+  abrazar_incomodidad_arrancar_critica_equipo  [Abrazar la incomodidad para arrancarle la critica a tu equipo, con los seis consejos que el texto nombra uno a uno]
+    señales: familia_id 0.111, paso_contra_nodo 0.483, similitud_texto 0.173
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  pedir_critica_primero_crear_seguridad_psicologica  [Pedir critica tu antes que nada, que es el primer paso del orden de operaciones, porque es lo que mas deprisa crea la seguridad psicologica del equipo]
+    señales: familia_id 0.1, paso_contra_nodo 0.439, similitud_texto 0.182
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  LA JERARQUIA LA CAZA LA LECTURA, NO LA SEÑAL (D.19, D.29).
+
+VECINOS POR ENCIMA DE UMBRAL: 4. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino cambiar_forma_trabajar_conservar_plantilla  [Cambiar como trabaja la gente que ya tienes en vez de renovarla, y decir por que]
+    levantada por: paso_contra_nodo
+    similitud_texto    0.215 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.634 (umbral 0.60)
+    paso 4 del candidato contra paso 2 de cambiar_forma_trabajar_conservar_plantilla
+
+  vecino contar_historias_propias_explicar_franqueza_radical  [Contar a tu equipo tus propias historias para explicarle la franqueza radical, en vez de prestarle la teoria o las historias de otro]
+    levantada por: similitud_texto
+    similitud_texto    0.393 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.549 (umbral 0.60)
+    paso 4 del candidato contra paso 3 de contar_historias_propias_explicar_franqueza_radical
+
+  vecino abrazar_incomodidad_silencio_contar_seis  [Abrazar la incomodidad del silencio despues de pedir critica, aguantandolo mientras cuentas hasta seis en tu cabeza]
+    levantada por: similitud_texto
+    similitud_texto    0.446 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.507 (umbral 0.60)
+    paso 4 del candidato contra paso 1 de abrazar_incomodidad_silencio_contar_seis
+
+  vecino premiar_franqueza_hacer_escucha_tangible  [Premiar la franqueza de quien te critica haciendo tangible tu escucha, con la lista de las criticas recibidas y lo que has hecho con ellas contado en publico]
+    levantada por: similitud_texto
+    similitud_texto    0.363 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.484 (umbral 0.60)
+    paso 5 del candidato contra paso 8 de premiar_franqueza_hacer_escucha_tangible
+  arista madre-hijo cableada y escrita RESUELTA: abrazar_incomodidad_arrancar_critica_equipo > escuchar_entender_critica_dominar_defensa
+  arista madre-hijo cableada y escrita RESUELTA: pedir_critica_primero_crear_seguridad_psicologica > escuchar_entender_critica_dominar_defensa
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 326
+  censos escritos: denominaciones, series_y_cabezas
+  veredictos en bitacora/VEREDICTOS.jsonl: 6
+CODIGO DE SALIDA: 0

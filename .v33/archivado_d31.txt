@@ -1,0 +1,15 @@
+$ git mv, uno a uno, de cuarentena/scott_radical_candor a cuarentena/_insertados/scott_radical_candor
+  agendar_cuidados_propios_cumplirlos
+  ceder_autoridad_unilateral_equipo
+  construir_confianza_equipo_tiempo_solas
+  definir_receta_propia_mantenerse_centrado
+  demostrar_apertura_visiones_distintas
+  dominar_arte_socializar_trabajo
+  evitar_presion_social_actos_equipo
+  integrar_trabajo_vida_mejor_version
+  manejar_contacto_fisico_regla_platino
+  vivir_valores_propios_evitar_listarlos
+
+movidos: 10
+bandeja  cuarentena/scott_radical_candor    : 65
+archivo  cuarentena/_insertados/scott_...   : 77

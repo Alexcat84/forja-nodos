@@ -1,0 +1,28 @@
+=== identidad, leida de git ===
+extraccion-mundo-11
+2aae7166db437c7dbf3c94821753a6bf4d374800
+2aae716 2026-09-18 23:12:13 -0400 Apertura de la vuelta 45: lo pendiente del arnes entra antes de tocar nada
+
+=== sedes de dato ===
+    346 dataset/nodos.jsonl
+    740 bitacora/VEREDICTOS.jsonl
+      1 config/pares_mutuos.jsonl
+   1087 total
+
+=== bandejas de cuarentena, una a una ===
+cuarentena/_derivadas/ : 2
+cuarentena/_insertados/ : 0
+cuarentena/ensayo_referencia_163/ : 163
+cuarentena/grove_high_output/ : 22
+cuarentena/marquet_turn_the_ship/ : 3
+cuarentena/onu_consumidor/ : 0
+cuarentena/scott_radical_candor/ : 0
+cuarentena/smart_who/ : 0
+cuarentena/zhuo_manager/ : 0
+
+=== insertados ===
+cuarentena/_insertados/grove_high_output/ : 1
+cuarentena/_insertados/onu_consumidor/ : 6
+cuarentena/_insertados/scott_radical_candor/ : 142
+cuarentena/_insertados/smart_who/ : 59
+cuarentena/_insertados/zhuo_manager/ : 136

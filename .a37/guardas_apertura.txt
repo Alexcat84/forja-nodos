@@ -1,0 +1,18 @@
+== SELLO DE HORA: 2026-09-18 02:41:02 ==
+$ python forja.py gate
+GATE VERDE.
+  nodos verificados: 321
+  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, arista_rota, arista_incompleta, guiones, censo_no_decrece
+
+$ python forja.py guiones
+BARRIDO DE GUIONES VERDE: cero guiones largos y cero guiones medios.
+
+$ python forja.py resolutor
+nodos vivos: 321
+nodos deprecados (archivo): 0
+alias registrados: 0
+
+$ wc -l dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl
+    321 dataset/nodos.jsonl
+    486 bitacora/VEREDICTOS.jsonl
+    807 total

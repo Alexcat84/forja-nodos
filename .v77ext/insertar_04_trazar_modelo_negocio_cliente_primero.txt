@@ -1,0 +1,26 @@
+fila 04, trazar_modelo_negocio_cliente_primero, lineas --veredicto: 1
+  --veredicto dar_valor_constante_cuatro_publicos|SANO|El mismo par que dar_valor lee desde su lado: ajenos de dos capitulos, este traza el modelo desde el retrato del cliente (L109 a L121) y el vecino da valor a cuatro publicos (cap_11 L59 a L81); los dos hablan de lo que el cliente percibe, sin paso comun ni linea que nombre al otro.
+inicio 2026-09-26 10:03:32
+======================================================================
+ADUANA DE INSERCION, candidato 'trazar_modelo_negocio_cliente_primero'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (440 del grafo mas 39 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino dar_valor_constante_cuatro_publicos  [Dar valor constante y por encima de lo esperado a los cuatro publicos del modelo, en las formas que el libro nombra]
+    levantada por: similitud_texto
+    similitud_texto    0.390 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.556 (umbral 0.60)
+    paso 1 del candidato contra paso 1 de dar_valor_constante_cuatro_publicos
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 441
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 1
+
+======================================================================
+fin 2026-09-26 10:10:02 | codigo de salida 0 | 389.4 s

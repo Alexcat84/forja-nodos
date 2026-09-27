@@ -1,0 +1,6 @@
+nodos en dataset/nodos.jsonl        : 366
+veredictos en bitacora              : 795
+pares mutuos                        : 1
+bandeja cuarentena/grove_high_output: 71
+insertados de grove_high_output     : 21
+cerrojos en procesos/               : nodos.jsonl.218e43e4.cerrojo nodos.jsonl.e52fd5d2.cerrojo 

@@ -1,0 +1,16 @@
+$ git diff --numstat -- docs/loop/REPORTE.md   (ANTES de restaurar: lo que el arbol habia perdido contra HEAD)
+
+$ git hash-object docs/loop/REPORTE.md   (arbol, ANTES)
+55b68a75344762ea6bd98ccc2574af6645c92b43
+$ git rev-parse HEAD:docs/loop/REPORTE.md
+55b68a75344762ea6bd98ccc2574af6645c92b43
+$ git rev-parse dbff694:docs/loop/REPORTE.md   (la version PREVIA a la TAREA 1, que es la que el arbol tenia)
+397c715ba2537ef73866049928ca37a4f2aa1047
+
+$ git checkout HEAD -- docs/loop/REPORTE.md
+$ git hash-object docs/loop/REPORTE.md   (arbol, DESPUES)
+55b68a75344762ea6bd98ccc2574af6645c92b43
+$ git status --porcelain docs/loop/REPORTE.md   (vacio = identico a HEAD, no he escrito ni una linea)
+(fin: sin salida arriba significa identico a HEAD)
+$ grep -c "" docs/loop/REPORTE.md
+36208

@@ -1,0 +1,12 @@
+$ python forja.py arista --madre empezar_cultura_franqueza_radical --hijo contar_historias_propias_explicar_franqueza_radical --paso 2 --razon ...
+DECLARACION DE ARISTA POR LECTURA (D.37)
+  madre: empezar_cultura_franqueza_radical
+  hijo : contar_historias_propias_explicar_franqueza_radical
+  paso citado de la madre: 2
+    Empieza explicando la idea.
+  señales del par: familia_id 0.25, paso_contra_nodo 0.4, similitud_texto 0.238
+    NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: empezar_cultura_franqueza_radical > contar_historias_propias_explicar_franqueza_radical
+  razon en bitacora/VEREDICTOS.jsonl
+CODIGO DE SALIDA: 0

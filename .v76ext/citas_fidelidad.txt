@@ -1,0 +1,378 @@
+$ grep -n -o -F 'Your Business Development Program is the step-by-step process through ' fuentes/gerber_emyth/cap_13.md    # recorrer_siete_pasos_programa_desarrollo_negocio paso 1 
+39:Your Business Development Program is the step-by-step process through 
+$ grep -n -o -F 'Your Business Development Program is the vehicle through which you can' fuentes/gerber_emyth/cap_13.md    # recorrer_siete_pasos_programa_desarrollo_negocio paso 2 
+41:Your Business Development Program is the vehicle through which you can
+$ grep -n -o -F 'The Program is composed of seven distinct steps' fuentes/gerber_emyth/cap_13.md    # recorrer_siete_pasos_programa_desarrollo_negocio paso 3 
+43:The Program is composed of seven distinct steps
+$ grep -n -o -F '1' fuentes/gerber_emyth/cap_13.md    # recorrer_siete_pasos_programa_desarrollo_negocio paso 4 
+3:1
+3:1
+3:1
+3:1
+4:1
+4:1
+9:1
+9:1
+45:1
+$ grep -n -o -F '2' fuentes/gerber_emyth/cap_13.md    # recorrer_siete_pasos_programa_desarrollo_negocio paso 5 
+3:2
+3:2
+3:2
+47:2
+$ grep -n -o -F '3' fuentes/gerber_emyth/cap_13.md    # recorrer_siete_pasos_programa_desarrollo_negocio paso 6 
+3:3
+49:3
+$ grep -n -o -F '4' fuentes/gerber_emyth/cap_13.md    # recorrer_siete_pasos_programa_desarrollo_negocio paso 7 
+3:4
+3:4
+51:4
+$ grep -n -o -F '5' fuentes/gerber_emyth/cap_13.md    # recorrer_siete_pasos_programa_desarrollo_negocio paso 8 
+3:5
+21:5
+53:5
+$ grep -n -o -F '6' fuentes/gerber_emyth/cap_13.md    # recorrer_siete_pasos_programa_desarrollo_negocio paso 9 
+3:6
+3:6
+3:6
+55:6
+$ grep -n -o -F '7' fuentes/gerber_emyth/cap_13.md    # recorrer_siete_pasos_programa_desarrollo_negocio paso 10 
+3:7
+3:7
+3:7
+3:7
+3:7
+57:7
+$ grep -n -o -F 'Your People Strategy is the way you communicate this idea' fuentes/gerber_emyth/cap_18.md    # construir_estrategia_gente_cuatro_componentes paso 1 
+117:Your People Strategy is the way you communicate this idea
+$ grep -n -o -F 'It starts with your Primary Aim and your Strategic Objective' fuentes/gerber_emyth/cap_18.md    # construir_estrategia_gente_cuatro_componentes paso 2 
+119:It starts with your Primary Aim and your Strategic Objective
+$ grep -n -o -F 'It starts with your Primary Aim and your Strategic Objective' fuentes/gerber_emyth/cap_18.md    # construir_estrategia_gente_cuatro_componentes paso 3 
+119:It starts with your Primary Aim and your Strategic Objective
+$ grep -n -o -F 'and continues through your Organizational Strategy' fuentes/gerber_emyth/cap_18.md    # construir_estrategia_gente_cuatro_componentes paso 4 
+119:and continues through your Organizational Strategy
+$ grep -n -o -F 'the Operations Manuals that define the work your people do' fuentes/gerber_emyth/cap_18.md    # construir_estrategia_gente_cuatro_componentes paso 5 
+119:the Operations Manuals that define the work your people do
+$ grep -n -o -F 'As in any game, the' fuentes/gerber_emyth/cap_18.md    # aplicar_ocho_reglas_juego_personas paso 1 
+139:As in any game, the
+$ grep -n -o -F 'Never figure out what you want your people to do and then try to creat' fuentes/gerber_emyth/cap_18.md    # aplicar_ocho_reglas_juego_personas paso 2 
+143:Never figure out what you want your people to do and then try to creat
+$ grep -n -o -F 'Never create a game for your people you’re unwilling to play yoursel' fuentes/gerber_emyth/cap_18.md    # aplicar_ocho_reglas_juego_personas paso 3 
+145:Never create a game for your people you’re unwilling to play yoursel
+$ grep -n -o -F 'Make sure there are specific ways of winning the game without ending i' fuentes/gerber_emyth/cap_18.md    # aplicar_ocho_reglas_juego_personas paso 4 
+147:Make sure there are specific ways of winning the game without ending i
+$ grep -n -o -F 'Change the game from time to time' fuentes/gerber_emyth/cap_18.md    # aplicar_ocho_reglas_juego_personas paso 5 
+149:Change the game from time to time
+$ grep -n -o -F 'Never expect the game to be self-sustaining' fuentes/gerber_emyth/cap_18.md    # aplicar_ocho_reglas_juego_personas paso 6 
+153:Never expect the game to be self-sustaining
+$ grep -n -o -F 'The best games are built on universally verifiable truths' fuentes/gerber_emyth/cap_18.md    # aplicar_ocho_reglas_juego_personas paso 7 
+157:The best games are built on universally verifiable truths
+$ grep -n -o -F 'But not too often, maybe once every six months' fuentes/gerber_emyth/cap_18.md    # aplicar_ocho_reglas_juego_personas paso 8 
+163:But not too often, maybe once every six months
+$ grep -n -o -F 'once you steal somebody else’s game, learn it by heart' fuentes/gerber_emyth/cap_18.md    # aplicar_ocho_reglas_juego_personas paso 9 
+165:once you steal somebody else’s game, learn it by heart
+$ grep -n -o -F 'A scripted presentation communicating the Boss’s idea in a group mee' fuentes/gerber_emyth/cap_18.md    # aplicar_cinco_pasos_proceso_contratacion paso 1 
+249:A scripted presentation communicating the Boss’s idea in a group mee
+$ grep -n -o -F 'Meeting with each applicant individually to discuss his reactions to a' fuentes/gerber_emyth/cap_18.md    # aplicar_cinco_pasos_proceso_contratacion paso 2 
+251:Meeting with each applicant individually to discuss his reactions to a
+$ grep -n -o -F 'Notification of the successful candidate by telephone' fuentes/gerber_emyth/cap_18.md    # aplicar_cinco_pasos_proceso_contratacion paso 3 
+253:Notification of the successful candidate by telephone
+$ grep -n -o -F 'Notification of the unsuccessful applicants, thanking each for his int' fuentes/gerber_emyth/cap_18.md    # aplicar_cinco_pasos_proceso_contratacion paso 4 
+255:Notification of the unsuccessful applicants, thanking each for his int
+$ grep -n -o -F 'First day of training to include the following activities for both the' fuentes/gerber_emyth/cap_18.md    # aplicar_cinco_pasos_proceso_contratacion paso 5 
+257:First day of training to include the following activities for both the
+$ grep -n -o -F 'Reviewing the Boss’s idea' fuentes/gerber_emyth/cap_18.md    # aplicar_cinco_pasos_proceso_contratacion paso 6 
+259:Reviewing the Boss’s idea
+$ grep -n -o -F 'Summarizing the system through which the entire business brings the id' fuentes/gerber_emyth/cap_18.md    # aplicar_cinco_pasos_proceso_contratacion paso 7 
+261:Summarizing the system through which the entire business brings the id
+$ grep -n -o -F 'Taking the new employee on a tour of the facilities, highlighting peop' fuentes/gerber_emyth/cap_18.md    # aplicar_cinco_pasos_proceso_contratacion paso 8 
+263:Taking the new employee on a tour of the facilities, highlighting peop
+$ grep -n -o -F 'Answering clearly and fully all the employee’s questions' fuentes/gerber_emyth/cap_18.md    # aplicar_cinco_pasos_proceso_contratacion paso 9 
+265:Answering clearly and fully all the employee’s questions
+$ grep -n -o -F 'Issuing the employee his uniform and his Operations Manual' fuentes/gerber_emyth/cap_18.md    # aplicar_cinco_pasos_proceso_contratacion paso 10 
+267:Issuing the employee his uniform and his Operations Manual
+$ grep -n -o -F 'Reviewing the Operations Manual , including the Strategic Objective, t' fuentes/gerber_emyth/cap_18.md    # aplicar_cinco_pasos_proceso_contratacion paso 11 
+269:Reviewing the Operations Manual , including the Strategic Objective, t
+$ grep -n -o -F 'Completing the employment papers' fuentes/gerber_emyth/cap_18.md    # aplicar_cinco_pasos_proceso_contratacion paso 12 
+271:Completing the employment papers
+$ grep -n -o -F 'There are three kinds of systems in your business: Hard Systems, Soft ' fuentes/gerber_emyth/cap_19.md    # distinguir_tres_tipos_sistemas_negocio paso 1 
+35:There are three kinds of systems in your business: Hard Systems, Soft 
+$ grep -n -o -F 'Hard Systems are inanimate, unliving things' fuentes/gerber_emyth/cap_19.md    # distinguir_tres_tipos_sistemas_negocio paso 2 
+37:Hard Systems are inanimate, unliving things
+$ grep -n -o -F 'Soft Systems are either animate' fuentes/gerber_emyth/cap_19.md    # distinguir_tres_tipos_sistemas_negocio paso 3 
+39:Soft Systems are either animate
+$ grep -n -o -F 'Information Systems are those that provide us with information about t' fuentes/gerber_emyth/cap_19.md    # distinguir_tres_tipos_sistemas_negocio paso 4 
+41:Information Systems are those that provide us with information about t
+$ grep -n -o -F 'The Innovation, Quantification, Orchestration, and integration of thes' fuentes/gerber_emyth/cap_19.md    # distinguir_tres_tipos_sistemas_negocio paso 5 
+43:The Innovation, Quantification, Orchestration, and integration of thes
+$ grep -n -o -F 'Identification of the specific Benchmarks' fuentes/gerber_emyth/cap_19.md    # aplicar_seis_pasos_sistema_venta paso 1 
+143:Identification of the specific Benchmarks
+$ grep -n -o -F 'The literal scripting of the words that will get you to each one succe' fuentes/gerber_emyth/cap_19.md    # aplicar_seis_pasos_sistema_venta paso 2 
+145:The literal scripting of the words that will get you to each one succe
+$ grep -n -o -F 'The creation of the various materials to be used with each script' fuentes/gerber_emyth/cap_19.md    # aplicar_seis_pasos_sistema_venta paso 3 
+147:The creation of the various materials to be used with each script
+$ grep -n -o -F 'The memorization of each Benchmark’s script' fuentes/gerber_emyth/cap_19.md    # aplicar_seis_pasos_sistema_venta paso 4 
+149:The memorization of each Benchmark’s script
+$ grep -n -o -F 'The delivery of each script by your salespeople in identical fashion' fuentes/gerber_emyth/cap_19.md    # aplicar_seis_pasos_sistema_venta paso 5 
+151:The delivery of each script by your salespeople in identical fashion
+$ grep -n -o -F 'Leaving your people to communicate more effectively, by articulating, ' fuentes/gerber_emyth/cap_19.md    # aplicar_seis_pasos_sistema_venta paso 6 
+153:Leaving your people to communicate more effectively, by articulating, 
+$ grep -n -o -F 'How many calls were made' fuentes/gerber_emyth/cap_19.md    # medir_sistema_venta_trece_indicadores_benchmark paso 1 
+311:How many calls were made
+$ grep -n -o -F 'How many prospects were reached' fuentes/gerber_emyth/cap_19.md    # medir_sistema_venta_trece_indicadores_benchmark paso 2 
+313:How many prospects were reached
+$ grep -n -o -F 'How many appointments were scheduled' fuentes/gerber_emyth/cap_19.md    # medir_sistema_venta_trece_indicadores_benchmark paso 3 
+315:How many appointments were scheduled
+$ grep -n -o -F 'How many appointments were confirmed' fuentes/gerber_emyth/cap_19.md    # medir_sistema_venta_trece_indicadores_benchmark paso 4 
+317:How many appointments were confirmed
+$ grep -n -o -F 'How many appointments were held' fuentes/gerber_emyth/cap_19.md    # medir_sistema_venta_trece_indicadores_benchmark paso 5 
+319:How many appointments were held
+$ grep -n -o -F 'How many Needs Analysis Presentations were scheduled' fuentes/gerber_emyth/cap_19.md    # medir_sistema_venta_trece_indicadores_benchmark paso 6 
+321:How many Needs Analysis Presentations were scheduled
+$ grep -n -o -F 'How many Needs Analyses were confirmed' fuentes/gerber_emyth/cap_19.md    # medir_sistema_venta_trece_indicadores_benchmark paso 7 
+323:How many Needs Analyses were confirmed
+$ grep -n -o -F 'How many Needs Analyses were completed' fuentes/gerber_emyth/cap_19.md    # medir_sistema_venta_trece_indicadores_benchmark paso 8 
+325:How many Needs Analyses were completed
+$ grep -n -o -F 'How many Solutions Presentations were scheduled' fuentes/gerber_emyth/cap_19.md    # medir_sistema_venta_trece_indicadores_benchmark paso 9 
+327:How many Solutions Presentations were scheduled
+$ grep -n -o -F 'How many Solutions Presentations were confirmed' fuentes/gerber_emyth/cap_19.md    # medir_sistema_venta_trece_indicadores_benchmark paso 10 
+329:How many Solutions Presentations were confirmed
+$ grep -n -o -F 'How many Solutions Presentations were completed' fuentes/gerber_emyth/cap_19.md    # medir_sistema_venta_trece_indicadores_benchmark paso 11 
+331:How many Solutions Presentations were completed
+$ grep -n -o -F 'How many solutions were sold' fuentes/gerber_emyth/cap_19.md    # medir_sistema_venta_trece_indicadores_benchmark paso 12 
+333:How many solutions were sold
+$ grep -n -o -F 'What was the average dollar value' fuentes/gerber_emyth/cap_19.md    # medir_sistema_venta_trece_indicadores_benchmark paso 13 
+335:What was the average dollar value
+$ grep -n -o -F 'The information should be recorded on a form, either manually or as a ' fuentes/gerber_emyth/cap_19.md    # medir_sistema_venta_trece_indicadores_benchmark paso 14 
+337:The information should be recorded on a form, either manually or as a 
+$ grep -n -o -F 'So before you start your business, or before you return to it tomorrow' fuentes/gerber_emyth/cap_14.md    # responder_8_preguntas_construir_primary_aim paso 1 
+117:So before you start your business, or before you return to it tomorrow
+$ grep -n -o -F 'What do I wish my life to look like' fuentes/gerber_emyth/cap_14.md    # responder_8_preguntas_construir_primary_aim paso 2 
+119:What do I wish my life to look like
+$ grep -n -o -F 'How do I wish my life to be on a day-to-day basis' fuentes/gerber_emyth/cap_14.md    # responder_8_preguntas_construir_primary_aim paso 3 
+121:How do I wish my life to be on a day-to-day basis
+$ grep -n -o -F 'What would I like to be able to say I truly know in my life, about my ' fuentes/gerber_emyth/cap_14.md    # responder_8_preguntas_construir_primary_aim paso 4 
+123:What would I like to be able to say I truly know in my life, about my 
+$ grep -n -o -F 'How would I like to be with other people in my life' fuentes/gerber_emyth/cap_14.md    # responder_8_preguntas_construir_primary_aim paso 5 
+125:How would I like to be with other people in my life
+$ grep -n -o -F 'How would I like people to think about me' fuentes/gerber_emyth/cap_14.md    # responder_8_preguntas_construir_primary_aim paso 6 
+127:How would I like people to think about me
+$ grep -n -o -F 'What would I like to be doing two years from now' fuentes/gerber_emyth/cap_14.md    # responder_8_preguntas_construir_primary_aim paso 7 
+129:What would I like to be doing two years from now
+$ grep -n -o -F 'What specifically would I like to learn during my life' fuentes/gerber_emyth/cap_14.md    # responder_8_preguntas_construir_primary_aim paso 8 
+131:What specifically would I like to learn during my life
+$ grep -n -o -F 'How much money will I need to do the things I wish to do' fuentes/gerber_emyth/cap_14.md    # responder_8_preguntas_construir_primary_aim paso 9 
+133:How much money will I need to do the things I wish to do
+$ grep -n -o -F 'There is no specific number of standards in your Strategic Objective' fuentes/gerber_emyth/cap_15.md    # responder_4_preguntas_estandares_objetivo_estrategico paso 1 
+169:There is no specific number of standards in your Strategic Objective
+$ grep -n -o -F 'When is your Prototype going to be completed' fuentes/gerber_emyth/cap_15.md    # responder_4_preguntas_estandares_objetivo_estrategico paso 2 
+171:When is your Prototype going to be completed
+$ grep -n -o -F 'Where are you going to be in business' fuentes/gerber_emyth/cap_15.md    # responder_4_preguntas_estandares_objetivo_estrategico paso 3 
+173:Where are you going to be in business
+$ grep -n -o -F 'How are you going to be in business' fuentes/gerber_emyth/cap_15.md    # responder_4_preguntas_estandares_objetivo_estrategico paso 4 
+175:How are you going to be in business
+$ grep -n -o -F 'What standards are you going to insist upon regarding reporting, clean' fuentes/gerber_emyth/cap_15.md    # responder_4_preguntas_estandares_objetivo_estrategico paso 5 
+177:What standards are you going to insist upon regarding reporting, clean
+$ grep -n -o -F 'An Entrepreneur does the work of envisioning the business as something' fuentes/gerber_emyth/cap_04.md    # hacer_trabajo_futuro_imaginar_negocio paso 1 
+285:An Entrepreneur does the work of envisioning the business as something
+$ grep -n -o -F 'The work of asking all the right questions about why this business, as' fuentes/gerber_emyth/cap_04.md    # hacer_trabajo_futuro_imaginar_negocio paso 2 
+285:The work of asking all the right questions about why this business, as
+$ grep -n -o -F 'you would leave your pie-baking experience behind you and engage in th' fuentes/gerber_emyth/cap_04.md    # hacer_trabajo_futuro_imaginar_negocio paso 3 
+285:you would leave your pie-baking experience behind you and engage in th
+$ grep -n -o -F 'It’s time for me to create a new life' fuentes/gerber_emyth/cap_04.md    # hacer_trabajo_futuro_imaginar_negocio paso 4 
+287:It’s time for me to create a new life
+$ grep -n -o -F 'One that can give me everything that I want, one that doesn’t requir' fuentes/gerber_emyth/cap_04.md    # hacer_trabajo_futuro_imaginar_negocio paso 5 
+287:One that can give me everything that I want, one that doesn’t requir
+$ grep -n -o -F 'is the truly entrepreneurial question' fuentes/gerber_emyth/cap_04.md    # hacer_trabajo_futuro_imaginar_negocio paso 6 
+289:is the truly entrepreneurial question
+$ grep -n -o -F 'That’s the work the entrepreneurial personality does at the outset o' fuentes/gerber_emyth/cap_04.md    # hacer_trabajo_futuro_imaginar_negocio paso 7 
+291:That’s the work the entrepreneurial personality does at the outset o
+$ grep -n -o -F 'by understanding the key processes that need to be performed' fuentes/gerber_emyth/cap_07.md    # dictar_ritmo_crecimiento_preguntas_escritas paso 1 
+279:by understanding the key processes that need to be performed
+$ grep -n -o -F 'the key objectives that need to be achieved' fuentes/gerber_emyth/cap_07.md    # dictar_ritmo_crecimiento_preguntas_escritas paso 2 
+279:the key objectives that need to be achieved
+$ grep -n -o -F 'the key position you are aiming your business to hold in the marketpla' fuentes/gerber_emyth/cap_07.md    # dictar_ritmo_crecimiento_preguntas_escritas paso 3 
+279:the key position you are aiming your business to hold in the marketpla
+$ grep -n -o -F 'By asking the right questions, such as: Where do I wish to be' fuentes/gerber_emyth/cap_07.md    # dictar_ritmo_crecimiento_preguntas_escritas paso 4 
+281:By asking the right questions, such as: Where do I wish to be
+$ grep -n -o -F 'you will also have contingency plans in place' fuentes/gerber_emyth/cap_07.md    # dictar_ritmo_crecimiento_preguntas_escritas paso 5 
+283:you will also have contingency plans in place
+$ grep -n -o -F 'the key is to plan, envision, and articulate what you see in the futur' fuentes/gerber_emyth/cap_07.md    # dictar_ritmo_crecimiento_preguntas_escritas paso 6 
+285:the key is to plan, envision, and articulate what you see in the futur
+$ grep -n -o -F 'write it down, clearly, so others can understand it' fuentes/gerber_emyth/cap_07.md    # dictar_ritmo_crecimiento_preguntas_escritas paso 7 
+285:write it down, clearly, so others can understand it
+$ grep -n -o -F 'any plan is better than no plan' fuentes/gerber_emyth/cap_07.md    # dictar_ritmo_crecimiento_preguntas_escritas paso 8 
+287:any plan is better than no plan
+$ grep -n -o -F 'I had a very clear picture of what the company would look like when it' fuentes/gerber_emyth/cap_08.md    # construir_empresa_plantilla_vision_diaria paso 1 
+39:I had a very clear picture of what the company would look like when it
+$ grep -n -o -F 'I then asked myself how a company which looked like that would have to' fuentes/gerber_emyth/cap_08.md    # construir_empresa_plantilla_vision_diaria paso 2 
+41:I then asked myself how a company which looked like that would have to
+$ grep -n -o -F 'unless we began to act that way from the very beginning, we would neve' fuentes/gerber_emyth/cap_08.md    # construir_empresa_plantilla_vision_diaria paso 3 
+43:unless we began to act that way from the very beginning, we would neve
+$ grep -n -o -F 'it would have to act like a great company long before it ever became o' fuentes/gerber_emyth/cap_08.md    # construir_empresa_plantilla_vision_diaria paso 4 
+45:it would have to act like a great company long before it ever became o
+$ grep -n -o -F 'And each and every day we attempted to model the company after that te' fuentes/gerber_emyth/cap_08.md    # construir_empresa_plantilla_vision_diaria paso 5 
+47:And each and every day we attempted to model the company after that te
+$ grep -n -o -F 'At the end of each day, we asked ourselves how well we did, discovered' fuentes/gerber_emyth/cap_08.md    # construir_empresa_plantilla_vision_diaria paso 6 
+47:At the end of each day, we asked ourselves how well we did, discovered
+$ grep -n -o -F 'at the start of the following day, set out to make up for the differen' fuentes/gerber_emyth/cap_08.md    # construir_empresa_plantilla_vision_diaria paso 7 
+47:at the start of the following day, set out to make up for the differen
+$ grep -n -o -F 'Every day at IBM was a day devoted to business development, not doing ' fuentes/gerber_emyth/cap_08.md    # construir_empresa_plantilla_vision_diaria paso 8 
+49:Every day at IBM was a day devoted to business development, not doing 
+$ grep -n -o -F 'a model of a business that fulfills the perceived needs of a specific ' fuentes/gerber_emyth/cap_08.md    # trazar_modelo_negocio_cliente_primero paso 1 
+109:a model of a business that fulfills the perceived needs of a specific 
+$ grep -n -o -F 'he surveys the world and asks' fuentes/gerber_emyth/cap_08.md    # trazar_modelo_negocio_cliente_primero paso 2 
+115:he surveys the world and asks
+$ grep -n -o -F 'he then goes back to the drawing board' fuentes/gerber_emyth/cap_08.md    # trazar_modelo_negocio_cliente_primero paso 3 
+115:he then goes back to the drawing board
+$ grep -n -o -F 'constructs a solution to the frustrations he finds among a certain gro' fuentes/gerber_emyth/cap_08.md    # trazar_modelo_negocio_cliente_primero paso 4 
+115:constructs a solution to the frustrations he finds among a certain gro
+$ grep -n -o -F 'A solution in the form of a business that looks and acts in a very spe' fuentes/gerber_emyth/cap_08.md    # trazar_modelo_negocio_cliente_primero paso 5 
+115:A solution in the form of a business that looks and acts in a very spe
+$ grep -n -o -F 'How will my business look to the customer' fuentes/gerber_emyth/cap_08.md    # trazar_modelo_negocio_cliente_primero paso 6 
+117:How will my business look to the customer
+$ grep -n -o -F 'How will my business stand out from all the rest' fuentes/gerber_emyth/cap_08.md    # trazar_modelo_negocio_cliente_primero paso 7 
+117:How will my business stand out from all the rest
+$ grep -n -o -F 'the Entrepreneurial Model does not start with a picture of the busines' fuentes/gerber_emyth/cap_08.md    # trazar_modelo_negocio_cliente_primero paso 8 
+119:the Entrepreneurial Model does not start with a picture of the busines
+$ grep -n -o -F 'without a clear picture of that customer, no business can succeed' fuentes/gerber_emyth/cap_08.md    # trazar_modelo_negocio_cliente_primero paso 9 
+121:without a clear picture of that customer, no business can succeed
+$ grep -n -o -F 'value is what people perceive it to be, and nothing more' fuentes/gerber_emyth/cap_11.md    # dar_valor_constante_cuatro_publicos paso 1 
+63:value is what people perceive it to be, and nothing more
+$ grep -n -o -F 'So what could your Prototype do that would not only provide consistent' fuentes/gerber_emyth/cap_11.md    # dar_valor_constante_cuatro_publicos paso 2 
+65:So what could your Prototype do that would not only provide consistent
+$ grep -n -o -F 'as it impacts every person with whom your business comes into contact' fuentes/gerber_emyth/cap_11.md    # dar_valor_constante_cuatro_publicos paso 3 
+71:as it impacts every person with whom your business comes into contact
+$ grep -n -o -F 'Value can be a word said at the door of the business as a customer lea' fuentes/gerber_emyth/cap_11.md    # dar_valor_constante_cuatro_publicos paso 4 
+73:Value can be a word said at the door of the business as a customer lea
+$ grep -n -o -F 'Value can be an unexpected gift from the business arriving in the mail' fuentes/gerber_emyth/cap_11.md    # dar_valor_constante_cuatro_publicos paso 5 
+75:Value can be an unexpected gift from the business arriving in the mail
+$ grep -n -o -F 'Value can be a word of recognition to a new recruit for a job well don' fuentes/gerber_emyth/cap_11.md    # dar_valor_constante_cuatro_publicos paso 6 
+77:Value can be a word of recognition to a new recruit for a job well don
+$ grep -n -o -F 'Value can be the reasonable price of your products, or the dedication ' fuentes/gerber_emyth/cap_11.md    # dar_valor_constante_cuatro_publicos paso 7 
+79:Value can be the reasonable price of your products, or the dedication 
+$ grep -n -o -F 'Value can be a simple word of thanks to your banker for his conscienti' fuentes/gerber_emyth/cap_11.md    # dar_valor_constante_cuatro_publicos paso 8 
+81:Value can be a simple word of thanks to your banker for his conscienti
+$ grep -n -o -F 'This is how we do it here' fuentes/gerber_emyth/cap_11.md    # documentar_trabajo_manual_operaciones paso 1 
+155:This is how we do it here
+$ grep -n -o -F 'Without documentation, all routinized work turns into exceptions' fuentes/gerber_emyth/cap_11.md    # documentar_trabajo_manual_operaciones paso 2 
+157:Without documentation, all routinized work turns into exceptions
+$ grep -n -o -F 'Documentation provides your people with the structure they need and wi' fuentes/gerber_emyth/cap_11.md    # documentar_trabajo_manual_operaciones paso 3 
+159:Documentation provides your people with the structure they need and wi
+$ grep -n -o -F 'It communicates to the new employees, as well as to the old, that ther' fuentes/gerber_emyth/cap_11.md    # documentar_trabajo_manual_operaciones paso 4 
+159:It communicates to the new employees, as well as to the old, that ther
+$ grep -n -o -F 'The operative word here is clear' fuentes/gerber_emyth/cap_11.md    # documentar_trabajo_manual_operaciones paso 5 
+163:The operative word here is clear
+$ grep -n -o -F 'structure is reduced to specific means rather than generalized ends' fuentes/gerber_emyth/cap_11.md    # documentar_trabajo_manual_operaciones paso 6 
+167:structure is reduced to specific means rather than generalized ends
+$ grep -n -o -F 'is therefore best described as a company’s How-to-Do-It Guide' fuentes/gerber_emyth/cap_11.md    # documentar_trabajo_manual_operaciones paso 7 
+169:is therefore best described as a company’s How-to-Do-It Guide
+$ grep -n -o -F 'It designates the purpose of the work' fuentes/gerber_emyth/cap_11.md    # documentar_trabajo_manual_operaciones paso 8 
+171:It designates the purpose of the work
+$ grep -n -o -F 'specifies the steps needed to be taken while doing that work' fuentes/gerber_emyth/cap_11.md    # documentar_trabajo_manual_operaciones paso 9 
+171:specifies the steps needed to be taken while doing that work
+$ grep -n -o -F 'summarizes the standards associated with both the process and the resu' fuentes/gerber_emyth/cap_11.md    # documentar_trabajo_manual_operaciones paso 10 
+171:summarizes the standards associated with both the process and the resu
+$ grep -n -o -F 'is the prototype, or will be the prototype, for 5,000 more just like i' fuentes/gerber_emyth/cap_11.md    # fingir_prototipo_cinco_mil_replicas paso 1 
+35:is the prototype, or will be the prototype, for 5,000 more just like i
+$ grep -n -o -F 'Not almost like it, but just like it' fuentes/gerber_emyth/cap_11.md    # fingir_prototipo_cinco_mil_replicas paso 2 
+39:Not almost like it, but just like it
+$ grep -n -o -F 'In other words, pretend that you are going to franchise your business' fuentes/gerber_emyth/cap_11.md    # fingir_prototipo_cinco_mil_replicas paso 3 
+41:In other words, pretend that you are going to franchise your business
+$ grep -n -o -F 'understand that there are rules to follow if you are to win' fuentes/gerber_emyth/cap_11.md    # fingir_prototipo_cinco_mil_replicas paso 4 
+43:understand that there are rules to follow if you are to win
+$ grep -n -o -F 'The model will provide consistent value to your customers, employees, ' fuentes/gerber_emyth/cap_11.md    # fingir_prototipo_cinco_mil_replicas paso 5 
+45:The model will provide consistent value to your customers, employees, 
+$ grep -n -o -F 'The model will be operated by people with the lowest possible level of' fuentes/gerber_emyth/cap_11.md    # fingir_prototipo_cinco_mil_replicas paso 6 
+47:The model will be operated by people with the lowest possible level of
+$ grep -n -o -F 'The model will stand out as a place of impeccable order' fuentes/gerber_emyth/cap_11.md    # fingir_prototipo_cinco_mil_replicas paso 7 
+49:The model will stand out as a place of impeccable order
+$ grep -n -o -F 'All work in the model will be documented in Operations Manuals' fuentes/gerber_emyth/cap_11.md    # fingir_prototipo_cinco_mil_replicas paso 8 
+51:All work in the model will be documented in Operations Manuals
+$ grep -n -o -F 'The model will provide a uniformly predictable service to the customer' fuentes/gerber_emyth/cap_11.md    # fingir_prototipo_cinco_mil_replicas paso 9 
+53:The model will provide a uniformly predictable service to the customer
+$ grep -n -o -F 'The model will utilize a uniform color, dress, and facilities code' fuentes/gerber_emyth/cap_11.md    # fingir_prototipo_cinco_mil_replicas paso 10 
+55:The model will utilize a uniform color, dress, and facilities code
+$ grep -n -o -F 'Let’s take a look at each of these rules in turn' fuentes/gerber_emyth/cap_11.md    # fingir_prototipo_cinco_mil_replicas paso 11 
+57:Let’s take a look at each of these rules in turn
+$ grep -n -o -F 'Go to work on your business rather than in it' fuentes/gerber_emyth/cap_11.md    # interrogar_negocio_cinco_preguntas paso 1 
+245:Go to work on your business rather than in it
+253:Go to work on your business rather than in it
+$ grep -n -o -F 'Go to work on your business as if it were the pre-production prototype' fuentes/gerber_emyth/cap_11.md    # interrogar_negocio_cinco_preguntas paso 2 
+247:Go to work on your business as if it were the pre-production prototype
+$ grep -n -o -F 'Think of your business as something apart from yourself, as a world of' fuentes/gerber_emyth/cap_11.md    # interrogar_negocio_cinco_preguntas paso 3 
+249:Think of your business as something apart from yourself, as a world of
+$ grep -n -o -F 'Think of your business as anything but a job' fuentes/gerber_emyth/cap_11.md    # interrogar_negocio_cinco_preguntas paso 4 
+251:Think of your business as anything but a job
+$ grep -n -o -F 'How can I get my business to work, but without me' fuentes/gerber_emyth/cap_11.md    # interrogar_negocio_cinco_preguntas paso 5 
+255:How can I get my business to work, but without me
+$ grep -n -o -F 'How can I get my people to work, but without my constant interference' fuentes/gerber_emyth/cap_11.md    # interrogar_negocio_cinco_preguntas paso 6 
+257:How can I get my people to work, but without my constant interference
+$ grep -n -o -F 'How can I systematize my business in such a way that it could be repli' fuentes/gerber_emyth/cap_11.md    # interrogar_negocio_cinco_preguntas paso 7 
+259:How can I systematize my business in such a way that it could be repli
+$ grep -n -o -F 'How can I own my business, and still be free of it' fuentes/gerber_emyth/cap_11.md    # interrogar_negocio_cinco_preguntas paso 8 
+261:How can I own my business, and still be free of it
+$ grep -n -o -F 'How can I spend my time doing the work I love to do rather than the wo' fuentes/gerber_emyth/cap_11.md    # interrogar_negocio_cinco_preguntas paso 9 
+263:How can I spend my time doing the work I love to do rather than the wo
+$ grep -n -o -F 'you’ll eventually come face-to-face with the real problem: that you ' fuentes/gerber_emyth/cap_11.md    # interrogar_negocio_cinco_preguntas paso 10 
+265:you’ll eventually come face-to-face with the real problem: that you 
+$ grep -n -o -F 'Because if your model depends on highly skilled people, it’s going t' fuentes/gerber_emyth/cap_11.md    # operar_modelo_gente_destreza_minima paso 1 
+87:Because if your model depends on highly skilled people, it’s going t
+$ grep -n -o -F 'By lowest possible level of skill I mean the lowest possible level nec' fuentes/gerber_emyth/cap_11.md    # operar_modelo_gente_destreza_minima paso 2 
+89:By lowest possible level of skill I mean the lowest possible level nec
+$ grep -n -o -F 'Obviously, if yours is a legal firm, you must have attorneys' fuentes/gerber_emyth/cap_11.md    # operar_modelo_gente_destreza_minima paso 3 
+89:Obviously, if yours is a legal firm, you must have attorneys
+$ grep -n -o -F 'But you don’t need to hire brilliant attorneys or brilliant physicia' fuentes/gerber_emyth/cap_11.md    # operar_modelo_gente_destreza_minima paso 4 
+89:But you don’t need to hire brilliant attorneys or brilliant physicia
+$ grep -n -o -F 'How can I give my customer the results he wants systematically rather ' fuentes/gerber_emyth/cap_11.md    # operar_modelo_gente_destreza_minima paso 5 
+91:How can I give my customer the results he wants systematically rather 
+$ grep -n -o -F 'How can I create an expert system rather than hire one' fuentes/gerber_emyth/cap_11.md    # operar_modelo_gente_destreza_minima paso 6 
+93:How can I create an expert system rather than hire one
+$ grep -n -o -F 'the system becomes the tools your people use to increase their product' fuentes/gerber_emyth/cap_11.md    # operar_modelo_gente_destreza_minima paso 7 
+103:the system becomes the tools your people use to increase their product
+$ grep -n -o -F 'to develop those tools and to teach your people how to use them' fuentes/gerber_emyth/cap_11.md    # operar_modelo_gente_destreza_minima paso 8 
+105:to develop those tools and to teach your people how to use them
+$ grep -n -o -F 'It’s your people’s job to use the tools you’ve developed and to ' fuentes/gerber_emyth/cap_11.md    # operar_modelo_gente_destreza_minima paso 9 
+107:It’s your people’s job to use the tools you’ve developed and to 
+$ grep -n -o -F 'The typical owner of a small business prefers highly skilled people be' fuentes/gerber_emyth/cap_11.md    # operar_modelo_gente_destreza_minima paso 10 
+111:The typical owner of a small business prefers highly skilled people be
+$ grep -n -o -F 'Marketing studies tell us that all consumers are moved to act by the c' fuentes/gerber_emyth/cap_11.md    # unificar_color_forma_vestuario_modelo paso 1 
+215:Marketing studies tell us that all consumers are moved to act by the c
+$ grep -n -o -F 'The colors you show your customer must be scientifically determined' fuentes/gerber_emyth/cap_11.md    # unificar_color_forma_vestuario_modelo paso 2 
+229:The colors you show your customer must be scientifically determined
+$ grep -n -o -F 'and then used throughout your model' fuentes/gerber_emyth/cap_11.md    # unificar_color_forma_vestuario_modelo paso 3 
+229:and then used throughout your model
+$ grep -n -o -F 'The model must be thought of as a package for your one and only produc' fuentes/gerber_emyth/cap_11.md    # unificar_color_forma_vestuario_modelo paso 4 
+231:The model must be thought of as a package for your one and only produc
+$ grep -n -o -F 'there are shapes that work and shapes that don’t, on your business c' fuentes/gerber_emyth/cap_11.md    # unificar_color_forma_vestuario_modelo paso 5 
+233:there are shapes that work and shapes that don’t, on your business c
+$ grep -n -o -F 'In one test, Cheskin showed that a triangle produced far fewer sales t' fuentes/gerber_emyth/cap_11.md    # unificar_color_forma_vestuario_modelo paso 6 
+235:In one test, Cheskin showed that a triangle produced far fewer sales t
+$ grep -n -o -F 'The shape of your sign, your logo, the type style used on your busines' fuentes/gerber_emyth/cap_11.md    # unificar_color_forma_vestuario_modelo paso 7 
+239:The shape of your sign, your logo, the type style used on your busines
+$ grep -n -o -F 'Your Prototype must be packaged as carefully as any box of cereal' fuentes/gerber_emyth/cap_11.md    # unificar_color_forma_vestuario_modelo paso 8 
+241:Your Prototype must be packaged as carefully as any box of cereal
+$ grep -n -o -F 'Instead of asking' fuentes/gerber_emyth/cap_12.md    # cambiar_saludo_cliente_dos_ramas paso 1 
+51:Instead of asking
+$ grep -n -o -F 'If the answer is yes, you can say' fuentes/gerber_emyth/cap_12.md    # cambiar_saludo_cliente_dos_ramas paso 2 
+53:If the answer is yes, you can say
+$ grep -n -o -F 'If the answer is no, you can say' fuentes/gerber_emyth/cap_12.md    # cambiar_saludo_cliente_dos_ramas paso 3 
+55:If the answer is no, you can say
+$ grep -n -o -F 'you’ll have to have created a special new program to talk about in e' fuentes/gerber_emyth/cap_12.md    # cambiar_saludo_cliente_dos_ramas paso 4 
+57:you’ll have to have created a special new program to talk about in e
+$ grep -n -o -F 'determining how many people came in the door before the Innovation was' fuentes/gerber_emyth/cap_12.md    # cuantificar_impacto_innovacion_6_pasos paso 1 
+95:determining how many people came in the door before the Innovation was
+$ grep -n -o -F 'determining how many people bought products and what the dollar value ' fuentes/gerber_emyth/cap_12.md    # cuantificar_impacto_innovacion_6_pasos paso 2 
+95:determining how many people bought products and what the dollar value 
+$ grep -n -o -F 'counting the number of people who came in the door after you changed t' fuentes/gerber_emyth/cap_12.md    # cuantificar_impacto_innovacion_6_pasos paso 3 
+95:counting the number of people who came in the door after you changed t
+$ grep -n -o -F 'counting the number of people who purchased something' fuentes/gerber_emyth/cap_12.md    # cuantificar_impacto_innovacion_6_pasos paso 4 
+95:counting the number of people who purchased something
+$ grep -n -o -F 'determining the average unit value of a sale' fuentes/gerber_emyth/cap_12.md    # cuantificar_impacto_innovacion_6_pasos paso 5 
+95:determining the average unit value of a sale
+$ grep -n -o -F 'determining what the improvement was as a result of your Innovation' fuentes/gerber_emyth/cap_12.md    # cuantificar_impacto_innovacion_6_pasos paso 6 
+95:determining what the improvement was as a result of your Innovation
+$ grep -n -o -F 'For the first three weeks, wear a brown suit to work, a starched tan s' fuentes/gerber_emyth/cap_12.md    # probar_traje_azul_seis_semanas paso 1 
+63:For the first three weeks, wear a brown suit to work, a starched tan s
+$ grep -n -o -F 'For the following three weeks wear a navy blue suit, a good, starched ' fuentes/gerber_emyth/cap_12.md    # probar_traje_azul_seis_semanas paso 2 
+63:For the following three weeks wear a navy blue suit, a good, starched 
+filas: 176 | en su linea declarada: 176 | fuera: 0

@@ -1,0 +1,5 @@
+registros de la vuelta en la bitacora: 11
+EN GRAFO   lectura declarada   agrupar_tareas_semejantes_aprovechar_preparacion > agrupar_interrupciones_subordinados_reuniones_regulares
+EN GRAFO   lectura declarada   buscar_regularidad_bloques_iguales_trabajo_mando > canalizar_interrupciones_cartel_hora_oficina
+registros con arista: 2 | aristas DISTINTAS: 2 | en el grafo: 2 | en cola: 0 (un par CONTINUA leido desde sus dos lados deja dos registros y una sola arista)
+esperadas: 2 | esperadas que viven en el grafo: 2 | esperadas sin registro: 0 | registradas no esperadas: 0

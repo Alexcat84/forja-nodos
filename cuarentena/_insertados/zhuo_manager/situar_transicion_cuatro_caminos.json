@@ -1,0 +1,55 @@
+{
+  "id": "situar_transicion_cuatro_caminos",
+  "titulo": "Situar tu transicion a directivo en uno de los cuatro caminos",
+  "denominaciones": {
+    "nombre_largo": "Los cuatro caminos por los que se llega a dirigir un equipo: aprendiz, pionero, jefe nuevo y sucesor",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "Your path here probably took one of the four routes below"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "Apprentice"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "Pioneer"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "New Boss"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "Successor"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando acabas de llegar a un puesto de direccion de equipo, por el camino que sea, y tienes por delante los primeros tres meses sin saber que te va a resultar facil y que dificil.",
+  "entregable_esperado": "Tu camino identificado entre los cuatro, y con el la lista de lo que te toca aprovechar y lo que te toca vigilar en tus primeros tres meses.",
+  "escala_minima": "Una persona y una transicion. Los cuatro caminos cubren la llegada tanto dentro de tu organizacion como viniendo de fuera.",
+  "pasos_accionables": [
+    "Sea cual sea el camino por el que has llegado a tu puesto nuevo, toca felicitarte, porque esto si es cierto: alguien, y lo mas probable es que mucha gente, creyo en ti y en tu potencial para dirigir un equipo.",
+    "Mira cual de los cuatro caminos fue el tuyo, porque lo mas probable es que fuera uno de estos cuatro.",
+    "Aprendiz: el equipo de tu jefe esta creciendo, asi que te han pedido que dirijas una parte de el a partir de ahora.",
+    "Pionero: eres miembro fundador de un grupo nuevo y ahora respondes de su crecimiento.",
+    "Jefe nuevo: entras a dirigir un equipo ya establecido, sea dentro de tu organizacion actual o en otra.",
+    "Sucesor: tu jefe ha decidido marcharse y ocupas su lugar.",
+    "Segun sea tu camino, te van a resultar faciles o dificiles cosas distintas en tus primeros tres meses: elige tu propia aventura y aprende que esperar.",
+    "Y si eres tu quien recibe a un directivo nuevo en tu equipo, las dos preguntas favoritas de la autora al cabo de unos meses son que ha resultado ser mas dificil de lo que esperaba y que ha sido mas facil de lo que esperaba."
+  ],
+  "resumen_teorico": "Es la cabeza de la serie con la que se ordena el capitulo entero de los primeros tres meses: cuatro caminos nombrados uno a uno por el libro, cada uno con su definicion en una linea, y cada uno desarrollado despues en su propia seccion con dos apartados fijos, lo que hay que aprovechar y lo que hay que vigilar. El libro dice de que sirve la clasificacion antes de darla, que segun el camino seran faciles o dificiles cosas distintas, y cierra invitando a elegir la propia aventura. Las dos preguntas del ultimo paso son las que abren el capitulo, y el libro da la respuesta mas comun a la primera: hay tantisimo que aprender que te sientes desbordado, o como se lo cito un directivo leyendo un cartel de la pared, cada dia parece una semana. Lo que el libro NO dice, y por eso no esta escrito aqui, es que hacer cuando tu llegada mezcla dos de los cuatro caminos, ni cuanto dura de verdad la transicion, mas alla de que al cabo de tres meses el dia a dia empieza a resultar familiar."
+}

@@ -1,0 +1,3 @@
+(0) el reporte de hoy: cifras derivadas sueltas 0
+(1) mutado, la mediana sin instrumento: 1
+(2) mutado, la misma frase con su fichero: 0

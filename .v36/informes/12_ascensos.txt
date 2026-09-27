@@ -1,0 +1,35 @@
+$ python forja.py insertar cuarentena/scott_radical_candor/calibrar_ascensos_evitar_politica.json [veredictos y censos]
+ADUANA DE INSERCION, candidato 'calibrar_ascensos_evitar_politica'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (313 del grafo mas 35 que esperan en bandejas)
+
+DECLARADOS POR LECTURA: 1. Ninguna señal los levanto.
+  armar_plan_anual_crecimiento_equipo  [Armar una vez al anio el plan de gestion del crecimiento de cada persona del equipo, desde poner los nombres en las casillas hasta comprobar la equidad entre niveles]
+    señales: familia_id 0.0, paso_contra_nodo 0.443, similitud_texto 0.211
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  LA JERARQUIA LA CAZA LA LECTURA, NO LA SEÑAL (D.19, D.29).
+
+VECINOS POR ENCIMA DE UMBRAL: 2. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino bloquear_tiempo_pensar_calendario  [Bloquear tiempo para pensar en tu calendario y mantener ese tiempo sagrado]
+    levantada por: paso_contra_nodo
+    similitud_texto    0.227 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.911 (umbral 0.60)
+    paso 14 del candidato contra paso 6 de bloquear_tiempo_pensar_calendario
+
+  vecino evitar_obsesion_ascenso_estatus  [Evitar que el ascenso y el estatus se conviertan en obsesion cuando vas a anunciar ascensos o a elogiar en publico]
+    levantada por: familia_id
+    similitud_texto    0.257 (umbral 0.35)
+    familia_id         0.333 (umbral 0.30)
+    paso_contra_nodo   0.455 (umbral 0.60)
+    paso 18 del candidato contra paso 2 de evitar_obsesion_ascenso_estatus
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 314
+  censos escritos: atribuciones, denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 3
+CODIGO DE SALIDA: 0
+  ARCHIVADO EN EL MISMO ACTO (D.31): cuarentena/_insertados/scott_radical_candor/calibrar_ascensos_evitar_politica.json

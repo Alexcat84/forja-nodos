@@ -1,0 +1,37 @@
+{
+  "id": "abrir_discusion_notas_adhesivas",
+  "titulo": "Abrir una discusion compleja escribiendo cada uno sus notas adhesivas en silencio",
+  "denominaciones": {
+    "nombre_largo": "El arranque con notas adhesivas, con sus diez a quince minutos de concentracion en silencio y el agrupamiento posterior en la pizarra",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "the Post-it note opening"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Justo antes de lanzarse a una discusion sobre un tema complejo, por ejemplo cuales deberian ser nuestras metas de marketing o a que se parece el exito dentro de tres anios.",
+  "entregable_esperado": "Una pizarra con las notas de todos los participantes agrupadas por parecido, y una discusion sobre esos grupos en la que la barrera para participar ya esta bajada.",
+  "escala_minima": "Un taco de notas adhesivas por persona, una pizarra y de diez a quince minutos de silencio. Esa es la caja de tiempo que el libro da.",
+  "pasos_accionables": [
+    "Antes de lanzarte a la discusion sobre el tema complejo, da a cada uno un taco de notas adhesivas y pideles que escriban lo que piensan sobre el tema.",
+    "Haz que la sala trabaje en concentracion silenciosa durante unos diez a quince minutos.",
+    "Despues, haz que cada participante pegue sus notas en la pizarra y explique en voz alta su razonamiento.",
+    "Agrupa las ideas parecidas segun van saliendo.",
+    "Cuando se haya anadido la ultima nota, discutid con toda la sala los distintos grupos que han quedado.",
+    "Cuenta con el efecto que el libro le atribuye: al animar a la gente a poner sus propios pensamientos en papel antes de compartirlos, la barrera para participar baja."
+  ],
+  "resumen_teorico": "Es la tactica mas desarrollada del capitulo y la unica del bloque de participacion que trae una caja de tiempo con numero. Su mecanismo es el mismo que el libro explica en la reunion generativa, separar el pensar a solas del hablar en grupo, pero aqui aparece como procedimiento con sus objetos, notas adhesivas y pizarra, y con su secuencia escrita, escribir, pegar, explicar, agrupar y discutir. Va a nodo propio y no dentro de la tactica de cambiar el formato porque tiene pasos propios que la cabeza no tiene, que es la prueba del manual para separar. Lo que el libro NO dice, y por eso no esta escrito aqui, es cuantas notas escribe cada uno, quien agrupa, ni que se hace con los grupos despues de discutirlos."
+}

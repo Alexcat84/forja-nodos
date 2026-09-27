@@ -1,0 +1,19 @@
+REPARTO DE LOS 42 HALLAZGOS DE VIGENCIA, por su causa
+
+  RANCIO por las CUATRO correcciones declaradas de U.2.d : 26 de 26
+  RANCIO por otra causa                                  : 0
+
+  NODO IDO, lineas                                       : 16
+  nodos distintos nombrados por esas lineas              : 11
+  de ellos, NINGUNO vive en el grafo                     : 11
+      compartir_logica_mostrar_razonamiento
+      crear_obligacion_disentir_equipo
+      fijar_fecha_cierre_debate_equipo
+      mantener_manos_trabajo_real_equipo
+      minimizar_impuesto_colaboracion_equipo
+      parar_debate_emocion_agotamiento
+      proteger_tiempo_equipo_jefe
+      reconocer_emociones_propias_avisar_equipo
+      recorrer_rueda_conscientemente_cultura_equipo
+      recorrer_rueda_hacer_cosas_equipo
+      recorrer_trece_elementos_proceso_evaluacion_formal

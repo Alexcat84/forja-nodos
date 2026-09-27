@@ -1,0 +1,45 @@
+==============================================================================
+.v61ext/informe_1_priorizar.txt
+  lineas NO vacias pegadas en el reporte        : 29
+  lineas NO vacias del fichero guardado         : 37
+  lineas del REPORTE que el fichero NO imprime  : 4
+     + $ date
+     + 2026-09-21 04:59:34 fin   (507 s, poblacion 440)
+     + [BLOQUEARIA] priorizar_lista_entrenamiento_subordinados
+     + NADA SE INSERTO. Este informe es de SOLO LECTURA.
+  lineas del FICHERO que el reporte NO pega     : 10
+     - LA LISTA COMPLETA, candidato por candidato
+     - [BLOQUEARIA] priorizar_lista_entrenamiento_subordinados   (priorizar_lista_entrenamiento_subordinados.json)
+     -       paso 1 del candidato contra paso 3 de pedir_critica_anonima_curso_entrenamiento_dictado
+     -       paso 1 del candidato contra paso 6 de desarrollar_primer_curso_entrenamiento
+     -       paso 1 del candidato contra paso 1 de responder_primer_aviso_renuncia_subordinado
+     -       paso 3 del candidato contra paso 3 de gestionar_retencion_subordinado_valioso_renuncia
+     -       paso 4 del candidato contra paso 2 de reciclar_empleado_ascendido_mas_alla_capacidad
+     - NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+     - entre hace falta python forja.py insertar, uno por vez, con su
+     - veredicto escrito por vecino.
+  CIFRAS pegadas en el reporte                  : 18
+  CIFRAS del fichero guardado                   : 18
+  CIFRAS del reporte que el fichero NO trae     : []
+  CIFRAS del fichero que el reporte NO pega     : []
+==============================================================================
+.v61ext/informe_2_desarrollar.txt
+  lineas NO vacias pegadas en el reporte        : 23
+  lineas NO vacias del fichero guardado         : 28
+  lineas del REPORTE que el fichero NO imprime  : 4
+     + $ date
+     + 2026-09-21 05:11:37 fin   (667 s, poblacion 440)
+     + [BLOQUEARIA] desarrollar_primer_curso_entrenamiento
+     + NADA SE INSERTO. Este informe es de SOLO LECTURA.
+  lineas del FICHERO que el reporte NO pega     : 7
+     - LA LISTA COMPLETA, candidato por candidato
+     - [BLOQUEARIA] desarrollar_primer_curso_entrenamiento   (desarrollar_primer_curso_entrenamiento.json)
+     -       paso 1 del candidato contra paso 1 de pedir_critica_anonima_curso_entrenamiento_dictado
+     -       paso 3 del candidato contra paso 5 de priorizar_lista_entrenamiento_subordinados
+     - NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+     - entre hace falta python forja.py insertar, uno por vez, con su
+     - veredicto escrito por vecino.
+  CIFRAS pegadas en el reporte                  : 9
+  CIFRAS del fichero guardado                   : 9
+  CIFRAS del reporte que el fichero NO trae     : []
+  CIFRAS del fichero que el reporte NO pega     : []

@@ -1,0 +1,10 @@
+pares del barrido: 53 | filas de clase: 53
+pares sin fila: []
+filas sin par: []
+clases: {'SANO': 48, 'CONTINUA': 5}
+con DUDA escrita: 2
+  CONTINUA  escalonar_fuentes_informacion_gerencial ~ reunir_informacion_gerencial_vias_variadas | madre reunir_informacion_gerencial_vias_variadas
+  CONTINUA  buscar_actividad_alta_palanca_tres_vias ~ subir_productividad_gerencial_tres_vias | madre subir_productividad_gerencial_tres_vias
+  CONTINUA  buscar_actividad_alta_palanca_tres_vias ~ elegir_momento_actividad_palanca_maxima | madre buscar_actividad_alta_palanca_tres_vias
+  CONTINUA  detectar_arreglar_fallo_etapa_menor_valor ~ supervisar_tarea_delegada_etapa_menor_valor | madre detectar_arreglar_fallo_etapa_menor_valor
+  CONTINUA  decir_no_trabajo_excede_capacidad ~ usar_calendario_herramienta_planificacion_produccion | madre usar_calendario_herramienta_planificacion_produccion

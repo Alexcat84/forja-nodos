@@ -1,0 +1,13 @@
+fila 12, asignar_responsable_unico_evolucion_planificada, lineas --veredicto: 0
+inicio 2026-09-26 19:37:58
+======================================================================
+ADUANA DE INSERCION, candidato 'asignar_responsable_unico_evolucion_planificada'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (470 del grafo mas 9 que esperan en bandejas)
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 471
+  censos escritos: denominaciones
+
+======================================================================
+fin 2026-09-26 19:43:08 | codigo de salida 0 | 309.6 s

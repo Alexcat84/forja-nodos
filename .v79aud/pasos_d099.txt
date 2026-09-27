@@ -1,0 +1,52 @@
+===== construir_estrategia_gente_cuatro_componentes | grafo
+  titulo: Construir tu Your People Strategy con los cuatro componentes que el libro nombra uno a uno
+  fuente: ['gerber_emyth']
+  cond: Cuando ya tienes tu Primary Aim y tu Strategic Objective escritos y tu Organizational Strategy construida, y necesitas comunicarle esa idea a tu gente para que compre el juego que le propones.
+  P1. Entiende que tu Your People Strategy es la forma en que le comunicas a tu gente la idea de tu negocio.
+  P2. Arranca con tu Primary Aim.
+  P3. Sigue con tu Strategic Objective.
+  P4. Construye tu Organizational Strategy: tu Organization Chart y los Position Contracts de todas las posiciones que contiene.
+  P5. Escribe tus Operations Manuals, que son los que definen el trabajo que hace tu gente.
+===== aplicar_ocho_reglas_juego_personas | grafo
+  titulo: Aplicar las ocho reglas que el libro enumera para el juego de tu gente
+  fuente: ['gerber_emyth']
+  cond: Cuando ya decidiste comunicarle a tu gente la idea de tu negocio como un juego (Your People Strategy) y necesitas las reglas que hacen que ese juego funcione y no se apague.
+  P1. Reconoce que el juego de tu gente tiene reglas que hay que honrar si quieres llegar a ser bueno en el.
+  P2. Regla 1: nunca decidas primero que quieres que haga tu gente y despues trates de construir un juego a partir de eso; el juego tiene que ir primero y lo que tu gente hace, segundo.
+  P3. Regla 2: nunca crees para tu gente un juego que tu mismo no estes dispuesto a jugar, porque te van a descubrir y no te lo van a dejar olvidar.
+  P4. Regla 3: asegurate de que haya formas especificas de ganar el juego sin terminarlo; dale a tu gente victorias de vez en cuando para que no se canse, porque el juego nunca puede acabar.
+  P5. Regla 4: cambia el juego de vez en cuando, las tacticas y no la estrategia; para saber cuando toca el cambio observa los resultados de tu gente, anticipa el final del juego y cambialo por accion ejecutiva antes que nadie mas lo note.
+  P6. Regla 5: nunca esperes que el juego se sostenga solo; recuerdaselo a tu gente constantemente, con una reunion especial sobre el juego al menos una vez por semana y sacando a relucir alguna excepcion a como se ha jugado al menos una vez al dia.
+  P7. Regla 6: haz que el juego tenga sentido, construido sobre verdades verificables universalmente, y saca a relucir la logica seguido para sostener el compromiso emocional de tu gente cuando decaiga.
+  P8. Regla 7: haz que el juego sea divertido de vez en cuando, no todo el tiempo; planea la diversion dejando que tu gente la defina, y no demasiado a menudo, quiza una vez cada seis meses, para que sea algo que esperar.
+  P9. Regla 8: si no se te ocurre un buen juego, robalo, pero una vez robado aprendetelo de memoria, porque no hay nada peor que fingir que juegas un juego.
+===== aplicar_cinco_pasos_proceso_contratacion | grafo
+  titulo: Aplicar los cinco componentes del proceso de contratacion que el libro enumera para comunicar tu idea desde el primer dia
+  fuente: ['gerber_emyth']
+  cond: Cuando vas a contratar gente nueva y quieres que el proceso mismo, desde la primera reunion hasta el primer dia de entrenamiento, sea el primer medio con el que le comunicas la idea de tu negocio.
+  P1. Disena una presentacion guionizada que comunique la idea de tu negocio en una reunion grupal a todos los aspirantes al mismo tiempo, describiendo la idea, la historia y la experiencia del negocio implementandola, y los atributos que exige el puesto.
+  P2. Reunete con cada aspirante de forma individual para hablar de sus reacciones y sentimientos sobre la idea, su trasfondo y su experiencia, y pregunta por que se cree apropiado para el papel que el puesto juega en implementar esa idea.
+  P3. Notifica por telefono al candidato elegido, otra vez con una presentacion guionizada.
+  P4. Notifica a los aspirantes no elegidos agradeciendo su interes, con una carta estandar firmada por quien entrevisto.
+  P5. Dedica el primer dia de entrenamiento a las siguientes actividades, tanto para ti como para el nuevo empleado.
+  P6. Revisa con el la idea del negocio.
+  P7. Resume el sistema con el que todo el negocio hace realidad esa idea.
+  P8. Llevalo de recorrido por las instalaciones, resaltando a la gente trabajando y los sistemas funcionando para mostrar la interdependencia entre los sistemas y la gente.
+  P9. Responde clara y completamente todas sus preguntas.
+  P10. Entregale su uniforme y su Manual de Operaciones.
+  P11. Revisa con el su Manual de Operaciones, incluyendo el Objetivo Estrategico, la Organizational Strategy y el Position Contract de su propio puesto.
+  P12. Completa con el los papeles de empleo.
+===== operar_modelo_gente_destreza_minima | grafo
+  titulo: Operar el modelo con gente del nivel de destreza mas bajo posible, y construir el sistema que la apalanca
+  fuente: ['gerber_emyth']
+  cond: Cuando trabajas la regla 2 del prototipo de tu negocio y tienes que decidir con que gente se opera el modelo para que se pueda replicar.
+  P1. Cuenta con el motivo por el que la regla existe: si tu modelo depende de gente muy cualificada sera imposible de replicar, esa gente es escasa en el mercado, y ademas es cara, lo que sube el precio que tendras que cobrar.
+  P2. Lee el nivel mas bajo posible como el texto lo define: el nivel mas bajo necesario para cumplir las funciones a las que cada puesto esta destinado.
+  P3. Ten los titulados que tu oficio exija, que es la salvedad que el texto pone: si lo tuyo es un despacho de abogados tienes que tener abogados, y si es una consulta medica tienes que tener medicos.
+  P4. No necesitas contratar abogados brillantes ni medicos brillantes: necesitas crear el mejor sistema posible para que buenos abogados y buenos medicos queden apalancados y produzcan resultados exquisitos.
+  P5. Sigue haciendote la pregunta que el texto manda repetirse: como le doy a mi cliente el resultado que quiere de forma sistematica en vez de personal.
+  P6. Hazte esa misma pregunta de la otra manera en que el texto la escribe: como creo un sistema experto en vez de contratar uno.
+  P7. Trata el sistema como las herramientas que tu gente usa para subir su productividad y hacer el trabajo como hay que hacerlo para que tu negocio se distinga de su competencia.
+  P8. Asume que tu trabajo, o mas exactamente el trabajo de tu negocio, es desarrollar esas herramientas y ensenar a tu gente a usarlas.
+  P9. Deja claro que el trabajo de tu gente es usar las herramientas que has desarrollado y recomendar mejoras a partir de su experiencia con ellas.
+  P10. Comprueba que no estas prefiriendo gente muy cualificada solo porque te haga a ti el trabajo mas facil, que es lo que el texto llama preferir la Management by Abdication a la Management by Delegation.

@@ -1,0 +1,6 @@
+MUESTRA PINEADA DE LOS SANO (AUDITOR_FORJA.md 7)
+  SANO nuevos de la tanda, contados de bitacora/VEREDICTOS.jsonl: 11
+  releidos: 11 de 11 (la poblacion entera, no una muestra)
+  caen: 0
+  tasa: 0.0 por ciento
+  banda de Wilson al 95 por ciento: de 0.0 a 25.9 por ciento

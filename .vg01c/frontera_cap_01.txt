@@ -1,0 +1,60 @@
+INSTRUMENTO frontera.py  SIN CONSTANTES TECLEADAS: fichero=fuentes/grove_high_output/cap_01.md
+frontmatter termina en la linea 7 (segundo ---)
+L9        1  Introduction
+L11       5  I. What happened after 1983
+L13      77  I wrote this book in 1983. It was the result of twenty years of managerial work during which I 
+L15      42  However, two critical events took place in the 1980s that altered the environment in which we m
+L17       5  Let me explain their implications.
+L19     105  By the mid-eighties, the Japanese producers of Dynamic Random Access Memories, or DRAMs for sho
+L21     132  Intel, where I work, was one of the companies that got caught up in this assault. In fact, Inte
+L23      66  While this adjustment sounds quite logical and straightforward in theory, in reality its implem
+L25      54  Ultimately, we—Intel and the U.S. semiconductor industry—prevailed over the onslaught of the Ja
+L27      25  Globalization simply means that business knows no national boundaries. Capital and work—your wo
+L29      55  Some of us are fortunate to be residents of a country, the United States, that enjoys one of th
+L31      83  Today, many markets outside the United States are growing faster than markets inside the U.S. A
+L33      48  The consequence of all this is very simple. If the world operates as one big market, every empl
+L35      37  Another consequence also follows. When products and services become largely indistinguishable f
+L37      33  Just as the Japanese DRAM attack was the first wave of a much greater tide, e-mail is also the 
+L39      80  The informed use of e-mail—short for computer-to-computer electronic messaging—results in two f
+L41     115  Let me interject a bit of irony. Back in the eighties, when the Japanese seemed invincible, one
+L43      63  But now the pendulum is swinging in the other direction. As businesses become more widely sprea
+L45      45  And e-mail is only the first wave. Everything today is going to a digital format: sound, photos
+L47     116  Here is an interesting illustration of the consequence of such a capability. I am told that the
+L49      32  Simply put, the information revolution does away with hiding places anywhere, in any line of wo
+L51       6  II. Operating in the new environment
+L53     140  Let’s back off for a moment and consider whom this book is aimed at. I am especially eager to r
+L55      98  Middle managers are not confined to big corporations. In fact, they can be found in almost any 
+L57     146  Another group should also be included among middle managers—people who may not supervise anyone
+L59     107  Whether you are a know-how manager or a traditional manager, your company has no choice but to 
+L61      59  All managers in such companies need to adapt to the new environment. What are the rules of the 
+L63     133  Again, as a manager in such a workplace, you need to develop a higher tolerance for disorder. N
+L65      45  You need to try to do the impossible, to anticipate the unexpected. And when the unexpected hap
+L67     132  Now, I’m sure that at various times you will take exception to what you read in this book. “Thi
+L69     150  This book contains three basic ideas. The first is an output-oriented approach to management. T
+L71      83  As we founded, organized, and managed Intel, we found that all our employees “produce” in some 
+L73     152  The second idea is that the work of a business, of a government bureacracy, of most forms of hu
+L75      78  A team will perform well only if peak performance is elicited from the individuals in it. This 
+L77      77  We must recognize that no amount of formal planning can anticipate changes such as globalizatio
+L79      50  Second, a responsive company should have fewer levels of managers. This concept is easier to ap
+L81     120  With fewer levels in today’s organization, each manager will have larger numbers of employees r
+L83     107  Are one-on-one meetings still needed? Absolutely. Can you have them as often with ten direct re
+L85     126  Now consider the proverbial Japanese employees sitting around the table in a Japanese office. T
+L87       5  III. Managing your own career
+L89      10  But what about managers who are, after all, employees themselves?
+L91      36  I recently read an article saying that middle-aged men are twice as likely to lose their jobs t
+L93     134  As a general rule, you have to accept that no matter where you work, you are not an employee—yo
+L95      85  In a slow or no-growth environment, there is another factor that you have to contend with as we
+L97      50  The recipe for success for the generation of managers who worked in the sixties, seventies, and
+L99     104  The point is, the clichés of globalization and the information revolution have real meaning—pot
+L101     15  I can offer you no surefire formula. But here are a few questions to ponder:
+L103     79  1. Are you adding real value or merely passing information along? How do you add more value? By
+L105     57  2. Are you plugged into what’s happening around you? And that includes what’s happening inside 
+L107     42  3. Are you trying new ideas, new techniques, and new technologies, and I mean personally trying
+L109     68  I am an engineer by training and a manager of a high-technology company by profession. As a man
+L111     65  But I also think that people do not always face up to the changes they have to deal with, so at
+L113     46  From my own experience at Intel, I strongly believe that applying the methods of production, ex
+L115     12  So, let us proceed by taking a field trip to a factory….
+L117      3  Andrew S. Grove
+L119      2  April 1995
+LINEAS NO VACIAS DE CUERPO: 56
+PALABRAS DE CUERPO (suma de filas): 3841

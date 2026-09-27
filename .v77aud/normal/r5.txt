@@ -1,0 +1,7 @@
+$ diff --strip-trailing-cr .v64ext/pegado64.py .v77aud/normal/pegado77_aud.py | grep -c "^>"; diff --strip-trailing-cr .v64aud/normal/bloques_mudos.py .v77aud/normal/bloques_mudos77_aud.py | grep -c "^>"
+3
+2
+$ python .v77aud/normal/pegado77_aud.py; python .v77aud/normal/bloques_mudos77_aud.py
+bloques abiertos con `$` en el tramo de la vuelta 77 : 70
+bloques que ROMPEN R1 (ACTA 60 60.15)                : 0
+bloques abiertos con `$`: 47 | comandos `$`: 70 | comandos sin ninguna linea de salida en su bloque: 0

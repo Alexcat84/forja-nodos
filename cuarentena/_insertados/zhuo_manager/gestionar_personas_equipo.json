@@ -1,0 +1,30 @@
+{
+  "id": "gestionar_personas_equipo",
+  "titulo": "Gestionar bien a las personas de tu equipo",
+  "denominaciones": {
+    "nombre_largo": "Los cuatro frentes de gestionar bien a las personas: confianza, fuerzas y debilidades, quien hace que, y entrenamiento",
+    "otros_idiomas": [
+      {"idioma": "ingles", "termino": "people"},
+      {"idioma": "ingles", "termino": "the who"}
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [{"clave": "zhuo_manager", "fecha": "2026-09-10"}],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando revisas el cubo de las personas de tu equipo y la respuesta a alguna de las tres preguntas es que no: que no estan preparados para tener exito, que no tienen las habilidades adecuadas o que no estan motivados para hacer un gran trabajo.",
+  "entregable_esperado": "Las personas adecuadas para el trabajo y un entorno donde puedan prosperar, con los cuatro frentes atendidos: relaciones de confianza, fuerzas y debilidades conocidas, decisiones tomadas sobre quien hace que, y cada persona entrenada para dar lo mejor de si.",
+  "escala_minima": "Un equipo y sus personas, incluido tu. El libro pide entender las fuerzas y las debilidades de ellos y tambien las tuyas, asi que el directivo entra en el inventario de personas y no solo lo maneja.",
+  "pasos_accionables": [
+    "Pregunta primero si los miembros de tu equipo estan preparados para tener exito, si tienen las habilidades adecuadas y si estan motivados para hacer un gran trabajo.",
+    "Desarrolla relaciones de confianza con ellos.",
+    "Entiende las fuerzas y las debilidades de cada uno, y tambien las tuyas.",
+    "Toma buenas decisiones sobre quien debe hacer que, y eso incluye contratar y despedir cuando haga falta.",
+    "Entrena a cada persona para que de lo mejor de si.",
+    "Y cuenta con que si no tienes a las personas adecuadas para el trabajo, o no tienes un entorno donde puedan prosperar, vas a tener problemas: basta con que uno no mida bien los ingredientes de la formula, con que otro no se moleste en saludar con educacion a los clientes, o con que tu planifiques mal."
+  ],
+  "resumen_teorico": "Es el desarrollo del segundo de los tres cubos del capitulo, las personas, que el libro llama el quien. El cubo entra con tres preguntas de diagnostico nombradas por el libro y se resuelve con cuatro frentes que el libro enumera en una sola frase encabezada por para gestionar bien a las personas debes. El ultimo paso trae el ejemplo del puesto de limonada con el que el capitulo entero razona, y lo trae con los tres fallos que el libro nombra, uno de un empleado, otro de otro, y el tercero del propio directivo: el libro se incluye a si mismo en la lista de lo que puede fallar, y por eso el tercero esta escrito. Lo que el libro NO dice, y por eso no esta escrito aqui, es como se desarrolla una relacion de confianza, con que instrumento se miden las fuerzas y las debilidades, ni cuando una decision sobre quien hace que es buena: eso lo desarrollan otros capitulos del libro que esta vuelta no abre."
+}

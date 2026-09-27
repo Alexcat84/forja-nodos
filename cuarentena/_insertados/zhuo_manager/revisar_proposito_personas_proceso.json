@@ -1,0 +1,42 @@
+{
+  "id": "revisar_proposito_personas_proceso",
+  "titulo": "Revisar el proposito, las personas y el proceso de tu equipo",
+  "denominaciones": {
+    "nombre_largo": "Ordenar el trabajo del directivo en los tres cubos del proposito, las personas y el proceso, y revisarlos como las tres palancas del resultado",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "THE THREE THINGS MANAGERS THINK ABOUT ALL DAY"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "purpose, people, and process"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando te preguntas como ayudar a un grupo de personas a lograr grandes resultados y tienes delante la multitud de tareas que llenan el dia de un directivo, sin saber cuales de ellas mueven de verdad el resultado.",
+  "entregable_esperado": "Las tareas de tu dia ordenadas en los tres cubos, las preguntas del libro contestadas en cada uno, y la palanca que esta fallando identificada por lo que produce: conflictos y expectativas desalineadas si falla el proposito, problemas si falla la gente, y tareas simples enormemente complicadas si falla el proceso.",
+  "escala_minima": "Un equipo y un directivo. El libro dice que segun crece el equipo importa cada vez menos lo bueno que seas tu haciendo el trabajo y cada vez mas el efecto multiplicador que tienes sobre el, asi que el valor de esta revision sube con el tamanio.",
+  "pasos_accionables": [
+    "No contestes con los deberes de cada dia, es decir preparar la reunion siguiente, quitarle un obstaculo a alguien de tu equipo o sacar el plan de ejecucion del mes que viene: es adonde iba la cabeza de la autora cuando empezaba, y el capitulo pone la respuesta en otro sitio.",
+    "Ordena la multitud de tareas que llenan tu dia en tres cubos: proposito, personas y proceso, que son el porque, el quien y el como.",
+    "En el cubo del proposito pon el resultado que tu equipo intenta lograr, y comprueba que todos en el equipo tienen una imagen parecida de por que importa nuestro trabajo. Si el proposito falta o esta poco claro, apareceran conflictos y expectativas desalineadas.",
+    "En el cubo de las personas pregunta si los miembros de tu equipo estan preparados para tener exito, si tienen las habilidades adecuadas y si estan motivados para hacer un gran trabajo. Si no tienes a las personas adecuadas para el trabajo, o no tienes un entorno donde puedan prosperar, vas a tener problemas.",
+    "En el cubo del proceso pon como trabaja junto tu equipo, y pregunta quien debe hacer que y para cuando, y que principios deben gobernar la toma de decisiones. Si no esta claro como se supone que todos trabajan juntos, ni cuales son los valores del equipo, hasta las tareas simples se complican enormemente.",
+    "Preguntate de continuo como puedes influir en estas tres palancas para mejorar los resultados de tu equipo.",
+    "Cuenta con que segun crece el equipo importa cada vez menos lo bueno que seas tu personalmente haciendo el trabajo, y cada vez mas el efecto multiplicador que tienes sobre el equipo."
+  ],
+  "resumen_teorico": "Es la cabeza de la clasificacion con la que el capitulo responde a su propia pregunta, como ayuda un directivo a un grupo de personas a lograr grandes resultados. La autora dice que llego a ella por observacion propia y la presenta despues de citar a J. Richard Hackman, el principal estudioso de los equipos, cuyas conclusiones dice que son parecidas. Los tres cubos son proposito, personas y proceso, y cada uno trae del libro su pregunta y su averia: el proposito trae por que importa nuestro trabajo y produce conflictos y expectativas desalineadas cuando falta; las personas traen si estan preparados, si tienen las habilidades y si estan motivados, y producen problemas cuando no lo estan; el proceso trae quien hace que y para cuando y que principios gobiernan las decisiones, y complica enormemente hasta las tareas simples cuando no esta. El paso que abre es la equivocacion que la autora declara de si misma: irse a los deberes de cada dia. Lo que el libro NO dice, y por eso no esta escrito aqui, es cada cuanto se revisan los tres cubos, en que orden se atienden cuando fallan dos a la vez, ni quien revisa al directivo."
+}

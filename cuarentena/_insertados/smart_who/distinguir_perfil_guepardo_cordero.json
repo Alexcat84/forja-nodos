@@ -1,0 +1,60 @@
+{
+  "condiciones_activacion": "Cuando tienes que elegir entre dos perfiles de primer ejecutivo y uno peca de rapido y enfocado mientras el otro es lento y extremadamente colaborativo. Vale igual para elegir a quien contratar y para decidir que perfil cultivar en uno mismo.",
+  "denominaciones": {
+    "nombre_largo": "Los perfiles guepardo y cordero de primer ejecutivo",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "WHAT TYPES OF CEOS MAKE MONEY FOR INVESTORS?"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "Cheetahs"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "Lambs"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "contratacion",
+  "entregable_esperado": "El candidato situado en uno de los dos perfiles con las caracteristicas que lo situan escritas al lado, y la eleccion tomada, con la tarjeta de puntuacion del puesto por encima del perfil cuando las dos cosas discrepen.",
+  "escala_minima": "Dos candidatos y una decision. El libro construyo el hallazgo sobre empresas participadas por capital riesgo, y advierte de que aun no lo ha comprobado en empresas cotizadas.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "smart_who",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "id": "distinguir_perfil_guepardo_cordero",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "atribuciones": [
+    {
+      "cifra": "los corderos tuvieron exito el 57 por ciento de las veces y los guepardos el 100 por ciento, sobre 313 entrevistas cronologicas a primeros ejecutivos de empresas participadas por capital riesgo",
+      "autor": "ghSMART con Steve Kaplan, Morten Sorensen y Mark Klebanov, Universidad de Chicago",
+      "fuente": "smart_who",
+      "fecha_corte": "2000 a 2005"
+    },
+    {
+      "cifra": "la participacion de los inversores en Middleby se multiplico un 3.500 por ciento en media decada, con la accion pasando de 4 a 142 dolares en cinco anos",
+      "autor": "Selim Bassoul, primer ejecutivo de Middleby Corporation, citado por Smart y Street",
+      "fuente": "smart_who",
+      "fecha_corte": "2008"
+    }
+  ],
+  "pasos_accionables": [
+    "Empieza por la respuesta correcta, que el libro da antes que ninguna otra: depende de la tarjeta de puntuacion, porque situaciones distintas piden tarjetas distintas.",
+    "Reconoce el perfil cordero por lo que el libro nombra: apertura a la retroalimentacion, gran capacidad de escucha y trato respetuoso con la gente. Son los que dominan las habilidades blandas, y el libro los llama asi porque tienden a pastar en circulos alimentandose de la retroalimentacion y la direccion de otros.",
+    "Reconoce el perfil guepardo por lo que el libro nombra: se mueve rapido, actua con agresividad, trabaja duro, demuestra persistencia, fija estandares altos y hace responsable a la gente de cumplirlos.",
+    "No confundas el guepardo con alguien sin habilidades blandas. El libro lo dice al reves: las habilidades blandas jugaron un papel critico en su ascenso, y la diferencia esta en que el guepardo sabe cuando dejar de pedir retroalimentacion y atacar un objetivo.",
+    "Desconfia de la sabiduria convencional que hace de la inteligencia emocional la cualidad de liderazgo criticamente importante. El analisis del libro dice que importa, pero solo cuando va acompanada de la propension a sacar las cosas adelante.",
+    "Cuando tengas que elegir entre alguien que peca de demasiado rapido y enfocado y alguien lento y extremadamente colaborativo, elige al rapido y enfocado.",
+    "No conviertas eso en una regla de siempre. El libro contesta que no a la pregunta de si hay que querer ser o contratar siempre a un guepardo."
+  ],
+  "resumen_teorico": "Es la seccion de bonus con la que el libro contesta a una pregunta que le hacen sus clientes, que tipos de primeros ejecutivos hacen ganar dinero a los inversores, y su respuesta primera y principal es que depende de la tarjeta de puntuacion. Solo despues de dejar eso escrito publica el hallazgo, que los autores presentan como el mayor estudio hecho nunca emparejando evaluaciones a fondo de rasgos de primeros ejecutivos con desempeno financiero real, hecho con Steve Kaplan de la Universidad de Chicago y sus colaboradores Morten Sorensen y Mark Klebanov sobre 313 entrevistas cronologicas de los anos 2000 a 2005, y del que The Wall Street Journal publico media pagina el 19 de noviembre de 2007. Lo que lo hace procedimentable, y no una definicion de dos etiquetas, es que el libro nombra una a una las caracteristicas de cada perfil y remata con una regla de eleccion explicita, elegir al rapido y enfocado cuando haya que elegir, mas su propio freno, que no siempre hay que querer ser o contratar un guepardo. El caso de Selim Bassoul en Middleby entra como ejemplo nombrado y no como paso: mato lineas de producto no rentables, evaluo a su equipo y promovio o contrato a gente de la misma pasta reduciendo las capas de siete a tres, se desvio al movil todas las llamadas de cliente sin contestar y acabo cambiando la semana laboral de lunes a viernes por miercoles a domingo porque sus clientes eran restaurantes. El propio libro pone el limite de su hallazgo, que es lo que impide leerlo como ley general: saben que se sostiene en capital riesgo y planean estudiar hasta donde se extiende a las empresas cotizadas.",
+  "titulo": "Distinguir el perfil guepardo del perfil cordero al elegir un primer ejecutivo"
+}

@@ -1,0 +1,13 @@
+filas mias: 146 | filas suyas: 146 | pasos en las dos: 146 | solo mias: [] | solo suyas: []
+  alentar_asuntos_corazon_vigilar_final_reunion        paso  3 | mia D L53 | suya T | L53|Is he satisfied with his own performance? El libro pone las tres preguntas como los as
+  alentar_asuntos_corazon_vigilar_final_reunion        paso  4 | mia D L53 | suya T | L53|Does some frustration or obstacle gnaw at him? El mismo verbo de marco (DISCUTIBLE D68
+  alentar_asuntos_corazon_vigilar_final_reunion        paso  5 | mia D L53 | suya T | L53|Does he have doubts about where he is going? El mismo verbo de marco (DISCUTIBLE D68.5
+  conducir_etapas_modelo_ideal_decision                paso 12 | mia T L29 | suya T | L29|All a manager can expect is that the commitment to support is honestly present. La cla
+  decidir_nivel_competente_inferior                    paso  7 | mia T L33 | suya T | L33|For experience, we at Intel are likely to ask a person in management senior to the oth
+  fijar_frecuencia_reunion_individual_madurez_tarea    paso  1 | mia T L33 | suya T | L33|how do you decide how often somebody needs such a meeting? La clausula en vez de poner
+  tomar_mando_reunion_pares_presidente_ausente         paso  3 | mia T L51 | suya T | L51|one can always ask the senior person present to assume control. El paso dice pide siem
+  tomar_notas_copia_guion_reunion_individual           paso  4 | mia T L49 | suya T | L49|Since I take notes in outline form, I am forced to categorize the information logicall
+  vencer_sindrome_grupo_pares_autoconfianza            paso  1 | mia D L49 | suya T | L49|You can overcome the peer-group syndrome if each of the members has self-confidence
+  vencer_sindrome_grupo_pares_autoconfianza            paso  5 | mia T L49 | suya T | L49|And everyone in your operation should be made to understand this. La clausula y no sol
+pares de marca (mia, suya): {('T', 'T'): 142, ('D', 'T'): 4}
+pasos con la linea del libro distinta entre las dos lecturas: 0 []

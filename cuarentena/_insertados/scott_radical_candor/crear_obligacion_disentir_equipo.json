@@ -1,0 +1,40 @@
+{
+  "id": "crear_obligacion_disentir_equipo",
+  "titulo": "Crear en tu equipo la obligacion de disentir, tratando el acuerdo de todos como una bandera roja",
+  "denominaciones": {
+    "nombre_largo": "La obligacion de disentir: si todos los de la mesa estan de acuerdo, alguien tiene que tomar la voz discrepante",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "obligation to dissent"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "duty to dissent"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando quieres que en tu equipo haya debate de verdad y te encuentras con reuniones donde todos estan de acuerdo, o con una discusion que no acaba de ser lo bastante robusta.",
+  "entregable_esperado": "Una voz discrepante puesta en cada discusion donde todos estaban de acuerdo, con la obligacion de disentir declarada como norma del equipo y no como iniciativa de un valiente.",
+  "pasos_accionables": [
+    "Declara en tu equipo una obligacion de disentir, que es lo que McKinsey creo muy conscientemente y lo que a la autora mas le impresiono de esa empresa.",
+    "Trata como una bandera roja que todos los que estan alrededor de la mesa esten de acuerdo.",
+    "Cuando eso pase, haz que alguien tome la voz discrepante.",
+    "Si la discusion de una reunion no esta siendo lo bastante robusta, usa un objeto que pase el turno de disentir, como los mazos con el deber de disentir escrito en japones que un directivo de Apple mando hacer para el equipo que heredo en Japon.",
+    "Deslizale el objeto a alguien de la mesa como señal de que le toca tomar el punto de vista contrario. El texto dice que ese objeto tan simple fue sorprendentemente eficaz."
+  ],
+  "resumen_teorico": "Sale de fuentes/scott_radical_candor/cap_07.md, lineas 231 a 233, bajo el rotulo Create an obligation to dissent, y es la segunda de las tecnicas que el libro ofrece dentro del paso DEBATE de la rueda de hacer cosas. Es una pieza corta y lo digo antes que nadie: son cinco pasos y salen de un solo parrafo. Lo que la sostiene como nodo propio y no como paso de otro es que el libro le da su rotulo y que trae inventario propio: la norma, el disparador escrito (todos de acuerdo), el acto que sigue, y el objeto con su forma concreta. El caso de McKinsey y el del directivo de Apple en Japon van NOMBRADOS DENTRO de los pasos que los usan, que es la condicion de TRANSCRIPCION DE CASO. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 5 pasos, 5 TRANSCRIPCION, 0 PUENTE. Los cinco de la linea 233. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: como se elige a quien le toca disentir, si rota, y que se hace si la voz discrepante resulta tener razon.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-12"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "atribuciones": []
+}

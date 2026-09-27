@@ -1,0 +1,36 @@
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 354   (270 del grafo mas 84 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 0
+  BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+  vecinos levantados en total      : 3
+  por candidato bloqueado          : menor 3, mediana 3, mayor 3
+  que señal levanta cada vecindad  : similitud_texto 3
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] inspeccionar_reparto_informacion_notas_jefe   (inspeccionar_reparto_informacion_notas_jefe.json)
+    vecino observar_reunion_rutinaria_senales_plantilla  [levantada por: similitud_texto]
+      similitud_texto 0.358 | familia_id 0.000 | paso_contra_nodo 0.452
+      paso 5 del candidato contra paso 7 de observar_reunion_rutinaria_senales_plantilla
+    vecino contar_firmas_cadena_tramite_parado  [levantada por: similitud_texto]
+      similitud_texto 0.379 | familia_id 0.000 | paso_contra_nodo 0.428
+      paso 1 del candidato contra paso 7 de contar_firmas_cadena_tramite_parado
+    vecino auditar_formacion_premios_ultima_fila  [levantada por: similitud_texto]
+      similitud_texto 0.370 | familia_id 0.000 | paso_contra_nodo 0.404
+      paso 4 del candidato contra paso 11 de auditar_formacion_premios_ultima_fila
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.

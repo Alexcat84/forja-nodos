@@ -1,0 +1,5 @@
+$ grep -in "micromanage\|micromanagement" fuentes/marquet_turn_the_ship/cap_02.md
+51:			Then I began to reconsider the situation. Since Mark wasn’t going to micromanage me, maybe this was a chance to do something different. Maybe this was the chance to set the crew free from the top-down, “do what you’re told” approach to leadership. Maybe this was the opportunity of a lifetime. Of course, I would be solely responsible, and if Santa Fe wasn’t ready, it would be my fault and likely my job.
+$ grep -ilc "micromanage" fuentes/marquet_turn_the_ship/*.md
+fuentes/marquet_turn_the_ship/cap_02.md
+fuentes/marquet_turn_the_ship/cap_09.md

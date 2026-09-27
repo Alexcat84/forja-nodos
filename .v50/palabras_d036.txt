@@ -1,0 +1,11 @@
+ficha                                          pieza rango        dice  HH.2.c  cuento  veredicto
+reunir_informacion_gerencial_vias_variadas     P7    L145 a L147    356   210     210    la frontera manda
+escalonar_fuentes_informacion_gerencial        P9    L153 a L153    208   183     183    la frontera manda
+programar_visita_area_observar_despachar       P10   L155 a L157    337   236     236    la frontera manda
+transmitir_objetivos_prioridades_preferencias  P11   L159 a L159    197   160     160    la frontera manda
+empujar_persona_reunion_direccion_preferida    P13   L167 a L167    174   147     147    la frontera manda
+subir_productividad_gerencial_tres_vias        P18   L195 a L201     62    60      60    la frontera manda
+buscar_actividad_alta_palanca_tres_vias        P19   L203 a L213    118    76      76    la frontera manda
+elegir_momento_actividad_palanca_maxima        P20   L215 a L217    297   237     237    la frontera manda
+
+fichas leidas: 8 ; mi recuento coincide con la frontera en 8 ; cifras declaradas que discrepan: 8

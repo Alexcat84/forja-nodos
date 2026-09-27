@@ -1,0 +1,4 @@
+$ python .v52/palabras_guion.py   sobre sed -n '55p' de cap_05.md
+  palabras tal como las cuenta wc -w      : 85
+  piezas unidas por guion corto           : 4  Long-distance one-on-ones note-taking face-to-face
+  palabras si cada guion corto partiera   : 91

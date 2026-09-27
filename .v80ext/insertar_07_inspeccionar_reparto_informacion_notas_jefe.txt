@@ -1,0 +1,34 @@
+fila 07, inspeccionar_reparto_informacion_notas_jefe, lineas --veredicto: 2
+  --veredicto observar_reunion_rutinaria_senales_plantilla|SANO|Hermanos del mismo capitulo: el vecino lee una reunion rutinaria por sus senales de gente (cap_03 L17 a L21), y este lee el tablero de mensajes y las notas del jefe con el responsable delante (L45 a L53). Dos rutinas distintas que el recien llegado observa; ninguno usa el producto del otro.
+  --veredicto contar_firmas_cadena_tramite_parado|SANO|El mismo par que contar_firmas lee desde su lado: reparto de mensajes por la cadena de mando (cap_03 L45 a L53) contra cadena de firmas de una papeleta (L37 a L43). Objetos y pasos distintos.
+inicio 2026-09-26 18:42:02
+======================================================================
+ADUANA DE INSERCION, candidato 'inspeccionar_reparto_informacion_notas_jefe'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (465 del grafo mas 14 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 2. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino observar_reunion_rutinaria_senales_plantilla  [Sentarse en una reunion rutinaria que ya existe y leerla por sus senales de gente en vez de por su asunto tecnico]
+    levantada por: similitud_texto
+    similitud_texto    0.358 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.452 (umbral 0.60)
+    paso 5 del candidato contra paso 7 de observar_reunion_rutinaria_senales_plantilla
+
+  vecino contar_firmas_cadena_tramite_parado  [Seguir un tramite parado por su cadena de firmas, contarlas, y compararlas con lo que el formulario aguanta]
+    levantada por: similitud_texto
+    similitud_texto    0.379 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.428 (umbral 0.60)
+    paso 1 del candidato contra paso 7 de contar_firmas_cadena_tramite_parado
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 466
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 2
+
+======================================================================
+fin 2026-09-26 18:54:26 | codigo de salida 0 | 743.8 s

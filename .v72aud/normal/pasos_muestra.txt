@@ -1,0 +1,65 @@
+===== fijar_horizonte_ventana_replanificacion | grafo
+  titulo: Fijar el horizonte de la planificacion, implementar solo la ventana que llega hasta la proxima vez, y no replanificar tan seguido que no de tiempo a juzgar
+  fuente: ['grove_high_output']
+  cond: Cuando montas el ejercicio de planificacion y tienes que decidir hasta donde mirar, que parte de lo que salga se pone en marcha, y cada cuanto se repite el ejercicio.
+  P1. Mira hacia delante mas alla del periodo que vas a implementar, aunque lo que de verdad estes influyendo sea solo el periodo siguiente.
+  P2. Implementa unicamente la parte del plan que cae dentro de la ventana temporal entre ahora y la proxima vez que vuelvas a hacer el ejercicio.
+  P3. Deja todo lo demas para volver a mirarlo, contando con que tendras otra oportunidad de replanificarlo cuando ese periodo se convierta en el primero.
+  P4. No planifiques con demasiada frecuencia: date tiempo a juzgar el impacto de las decisiones que tomaste y a determinar si iban por buen camino.
+  P5. Regula esa frecuencia por la retroalimentacion, que es lo indispensable para planificar la vez siguiente.
+===== vencer_sindrome_grupo_pares_autoconfianza | grafo
+  titulo: Vencer el sindrome del grupo de pares infundiendo autoconfianza, y la constatacion de que nadie se muere por decidir mal
+  fuente: ['grove_high_output']
+  cond: Cuando un grupo de iguales se reune a decidir y da vueltas sin que nadie se moje, porque cada uno espera a que aparezca el consenso antes de arriesgar una postura.
+  P1. Cuando quieras vencer el sindrome del grupo de pares, trabaja sobre la autoconfianza de cada uno de los miembros, que es lo que lo vence.
+  P2. Apoya una parte de esa autoconfianza en que cada miembro este familiarizado con el asunto que se esta considerando.
+  P3. Apoya otra parte en la experiencia.
+  P4. Cuenta con que al final la autoconfianza sale sobre todo de una constatacion visceral: que nadie se ha muerto nunca por tomar una decision de negocio equivocada, ni por emprender una accion inapropiada, ni por ser desautorizado.
+  P5. Haz que todo el mundo en tu operacion entienda esto, y no solo los que se sientan a la mesa.
+===== preguntar_seguimiento_hallar_huecos | grafo
+  titulo: Preguntar en la reunion a solas las preguntas de seguimiento que ensenian los huecos entre lo que la persona hace, lo que cree que deberia hacer y lo que quiere hacer
+  fuente: ['scott_radical_candor']
+  cond: Cuando estas dentro de una reunion a solas y quieres ensenar que escuchas, que te importa y que quieres ayudar, y ademas sacar los huecos entre lo que la persona hace, lo que cree que deberia hacer y lo que quiere hacer.
+  P1. Haz estas preguntas de seguimiento con el doble proposito que el texto les pone: ensenar no solo que estas escuchando sino que te importa y quieres ayudar, e identificar los huecos entre lo que la gente hace, lo que cree que deberia hacer y lo que quiere hacer.
+  P2. Pregunta: por que?
+  P3. Pregunta: como puedo ayudar?
+  P4. Pregunta: que puedo hacer, o dejar de hacer, que te facilitaria esto?
+  P5. Pregunta: que es lo que te desvela por la noche?
+  P6. Pregunta: en que estas trabajando en lo que no quieres trabajar?
+  P7. Pregunta: no quieres trabajar en ello porque no te interesa o porque crees que no es importante?
+  P8. Pregunta: que puedes hacer para dejar de trabajar en ello?
+  P9. Pregunta: en que no estas trabajando en lo que si quieres trabajar?
+  P10. Pregunta: por que no estas trabajando en ello?
+  P11. Pregunta: que puedes hacer para empezar a trabajar en ello?
+  P12. Pregunta: como te sientes respecto a las prioridades de los equipos de los que dependes?
+  P13. Pregunta: en que estan trabajando ellos que parezca poco importante o incluso contraproducente?
+  P14. Pregunta: que es lo que no estan haciendo y a ti te gustaria que hicieran?
+  P15. Pregunta: has hablado directamente con esos otros equipos de lo que te preocupa? Y si no, por que no?
+  P16. Y ten presente lo que el texto marca como nota importante sobre esa ultima: el objetivo aqui es animar a la gente a plantear el asunto directamente entre ellos, no resolverles el problema tu.
+===== contestar_dos_preguntas_direccion_objetivos | grafo
+  titulo: Montar el sistema de direccion por objetivos sobre las dos unicas preguntas que tiene que contestar: adonde quiero ir, y como me marco el ritmo para ver si estoy llegando
+  fuente: ['grove_high_output']
+  cond: Cuando vas a montar un sistema de direccion por objetivos, o cuando el que tienes ha crecido tanto que ya no sabes que es lo que tiene que contestar.
+  P1. Monta el sistema sabiendo que para tener exito solo necesita contestar dos preguntas.
+  P2. Contesta la primera pregunta: adonde quiero ir.
+  P3. Toma la respuesta de esa primera pregunta como tu objetivo.
+  P4. Contesta la segunda pregunta: como voy a marcarme el ritmo para ver si estoy llegando.
+  P5. Toma la respuesta de esa segunda pregunta como tus hitos, es decir, tus resultados clave.
+===== diagnosticar_capacidad_motivacion_prueba_vida | grafo
+  titulo: Diagnosticar si un subordinado que no rinde no puede o no quiere, con la prueba mental de si podria hacer el trabajo si su vida dependiera de ello
+  fuente: ['grove_high_output']
+  cond: Cuando un subordinado no esta haciendo su trabajo y no sabes si el problema es que no puede o que no quiere.
+  P1. Cuando una persona no este haciendo su trabajo, cuenta con que solo hay dos razones posibles: no puede hacerlo o no quiere hacerlo.
+  P2. Para saber cual de las dos es, aplica esta prueba mental simple: pregunta si esa persona podria hacer el trabajo si su vida dependiera de hacerlo.
+  P3. Si la respuesta es si, es decir, si podria hacerlo con su vida en juego, esa persona no esta motivada.
+  P4. Si la respuesta es no, es decir, si no podria hacerlo ni con su vida en juego, esa persona no es capaz.
+===== decidir_amistad_subordinado_prueba_revision_dificil | grafo
+  titulo: Decidir si conviene hacerse amigo de un subordinado sopesando sus pros y contras, y resolverlo con la prueba de imaginar que le das una revision de desempeno dura
+  fuente: ['grove_high_output']
+  cond: Cuando dudas si conviene dejar que se desarrolle una amistad personal con alguien que te reporta, y no tienes un criterio para decidirlo mas alla de la intuicion.
+  P1. Cuando dudes si conviene hacerte amigo de un subordinado, cuenta con que hay pros y contras y que la decision es tuya.
+  P2. Reconoce el pro: si el subordinado es tu amigo personal, te resultara mas facil pasar a un estilo de direccion comunicador.
+  P3. Reconoce el contra: te costara mas volver al modo estructurado de que, cuando y como si hace falta, y te resultara desagradable darle ordenes.
+  P4. Aplica esta prueba para decidirlo: imaginate dandole a tu amigo una revision de desempeno dura.
+  P5. Si la sola idea te hace encogerte, no te hagas amigo de tus subordinados en el trabajo.
+  P6. Si tu estomago no se inmuta, es probable que seas alguien cuyas relaciones personales van a reforzar las relaciones de trabajo.

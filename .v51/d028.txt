@@ -1,0 +1,6 @@
+    $ python .v51/d028.py   (que va a publicar capitulos_minados con mis seis fichas dentro)
+    capitulos_minados que el tablero publicara : ['cap_01', 'cap_02', 'cap_03', 'cap_04', 'cap_05']
+    ultimo minado, o sea desde donde mandara continuar : cap_05
+    nodos que la frontera LL.4.b da a cap_05 : 26
+    nodos que cap_05 tiene escritos hoy      : 6
+    o sea cap_05 cuenta como MINADO con el   : 23 por ciento de sus nodos

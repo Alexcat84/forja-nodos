@@ -1,0 +1,15 @@
+ficha                                                    pasos  capitulo
+------------------------------------------------------------------------------
+elegir_modo_control_motivacion_factor_cua                  8  cap_11
+escalonar_complejidad_puesto_empleado_nuevo                9  cap_11
+diagnosticar_capacidad_motivacion_prueba_vida              4  cap_12
+fijar_meta_direccion_objetivos_mitad_probabilidad          4  cap_12
+diagnosticar_nivel_motivacion_reaccion_aumento_salario     3  cap_12
+elegir_estilo_direccion_madurez_relevante_tarea            8  cap_13
+decidir_amistad_subordinado_prueba_revision_dificil        6  cap_13
+
+PASOS POR CAPITULO, contados por mi:
+  cap_11      17
+  cap_12      11
+  cap_13      14
+  TOTAL       42

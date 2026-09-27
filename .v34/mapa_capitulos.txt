@@ -1,0 +1,6 @@
+$ head -4 fuentes/scott_radical_candor/cap_11.md | tail -1
+  unidad: Cap. 8
+$ head -4 fuentes/scott_radical_candor/cap_09.md | tail -1
+  unidad: Cap. 6
+$ head -4 fuentes/scott_radical_candor/cap_10.md | tail -1
+  unidad: Cap. 7

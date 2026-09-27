@@ -1,0 +1,13 @@
+fila 20, repetir_mensaje_invariable_diario_reunion_evento, lineas --veredicto: 0
+inicio 2026-09-26 20:51:53
+======================================================================
+ADUANA DE INSERCION, candidato 'repetir_mensaje_invariable_diario_reunion_evento'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (478 del grafo mas 1 que esperan en bandejas)
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 479
+  censos escritos: denominaciones
+
+======================================================================
+fin 2026-09-26 20:57:58 | codigo de salida 0 | 364.6 s

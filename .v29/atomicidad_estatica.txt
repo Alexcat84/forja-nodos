@@ -1,0 +1,39 @@
+=== toda escritura a la bitacora en src/ y su contexto ===
+src/aduana.py:905:        comun.agregar_jsonl(ruta_veredictos, registro)
+src/anotacion.py:217:    comun.escribir_jsonl(ruta_veredictos, futuro)
+src/arista.py:190:    comun.agregar_jsonl(ruta_veredictos, registro)
+src/correccion.py:204:    comun.agregar_jsonl(ruta_veredictos, registro)
+
+=== _consumar_veredictos, entero ===
+        if extremo in ids_bandeja:
+            return True
+    return False
+
+
+def _consumar_veredictos(ruta_veredictos, registros):
+    """Escribe en la bitacora los veredictos de una corrida QUE SE CONSUMO.
+
+    `EXTRACTOR.md` 14 pone `bitacora/` bajo la aduana, y **la bitacora registra
+    lo que la aduana HIZO**. Una corrida que imprime `RECHAZADO` no hizo nada,
+    luego no tiene nada que registrar.
+
+    LA CAIDA QUE LO HIZO FALTA, contada y medida (`ACTA 27` `5.2`): `agregar_jsonl`
+    se llamaba DENTRO del bucle por vecino y el rechazo por extremos llegaba
+    despues, asi que una corrida rechazada dejaba sus lineas escritas igual.
+    **Cuatro asi en `bitacora/VEREDICTOS.jsonl`**, lineas `248` a `251`: tres
+    veredictos sobre un nodo que no vive y una arista declarada dos veces que no
+    existe, con `NADA SE INSERTO` impreso en la misma corrida.
+    """
+    for registro in registros:
+        comun.agregar_jsonl(ruta_veredictos, registro)
+    return len(registros)
+
+
+def insertar(candidato_bruto, veredictos_crudos=None, respuestas_censo=None,
+             interactivo=False, ruta_dataset=None, ruta_veredictos=None,
+
+=== quien llama a _consumar_veredictos ===
+890:def _consumar_veredictos(ruta_veredictos, registros):
+1242:        # corrida se consuma. Ver `_consumar_veredictos`.
+1251:        _consumar_veredictos(ruta_veredictos, registros)
+1369:    _consumar_veredictos(ruta_veredictos, registros)

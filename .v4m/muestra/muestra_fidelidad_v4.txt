@@ -1,0 +1,21 @@
+MUESTRA DE FIDELIDAD DEL REGIMEN LIGERO (D.58)
+  libro    : marquet_turn_the_ship
+  semilla  : m4
+  capitulos: cap_09, cap_10, cap_11
+
+  RELEIDO ENTERO : cap_10
+  POR MUESTRA    : cap_09, cap_11, 15 pasos cada uno
+
+  EL DISPARADOR: si la muestra de un capitulo pasa del 10 por ciento de
+  pasos inventados, ESE CAPITULO SE RELEE ENTERO ANTES DE SEGUIR.
+
+  --- cap_09: 2 paso(s) en la muestra
+    eliminar_seguimiento_descendente_responsabiliz P1   Dile a cada responsable de un area que el mismo, y no su sup
+    eliminar_seguimiento_descendente_responsabiliz P2   Deja de mantener el sistema centralizado que solo vigilaba y
+
+  --- cap_11: 3 paso(s) en la muestra
+    tomar_accion_deliberada_pausar_vocalizar_gesti P1   Antes de cualquier accion, haz una pausa, di en voz alta lo 
+    tomar_accion_deliberada_pausar_vocalizar_gesti P2   Recuerda que la accion deliberada no se hace para quedar bie
+    tomar_accion_deliberada_pausar_vocalizar_gesti P3   Si tu negocio no tiene una interfaz fisica con la naturaleza
+
+  --- cap_10: ENTERO, 3 paso(s), no hay muestra que elegir

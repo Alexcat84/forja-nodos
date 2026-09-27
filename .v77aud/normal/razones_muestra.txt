@@ -1,0 +1,22 @@
+linea 1119 SANO dictar_ritmo_crecimiento_preguntas_escritas | cambiar_saludo_cliente_dos_ramas | arista: -
+    El mismo par que cambiar_saludo lee desde su lado: ajenos, la similitud de 0,423, por encima de 0,4, se lee primero y es de la forma de pregunta del mismo autor.
+linea 1124 SANO dar_valor_constante_cuatro_publicos | documentar_trabajo_manual_operaciones | arista: -
+    Hermanos: son las reglas 1 y 4 de la serie de fingir_prototipo_cinco_mil_replicas (L45, L51), partes de la misma cabeza. La similitud de 0,406, por encima de 0,4, se lee primero y no es gemelo: uno da valor y el otro documenta el trabajo; ninguno usa el producto del otro.
+linea 1127 SANO interrogar_negocio_cinco_preguntas | dictar_ritmo_crecimiento_preguntas_escritas | arista: -
+    El mismo par que dictar_ritmo lee desde su lado: ajenos de dos capitulos, dos listas de preguntas del dueno, una para trabajar sobre el negocio y no dentro (L255 a L263) y otra para crecer (cap_07 L281). Ninguno usa el producto del otro.
+linea 1128 SANO operar_modelo_gente_destreza_minima | interrogar_negocio_cinco_preguntas | arista: -
+    Ajenos dentro del mismo capitulo: el vecino cierra cap_11 con cinco preguntas sobre el negocio (L255 a L263); este es la regla 2 del prototipo (L85 a L133). La pregunta del vecino sobre que la gente trabaje sin tu interferencia no nombra la destreza minima ni el sistema de herramientas, y ninguno usa el producto del otro.
+linea 1130 SANO operar_modelo_gente_destreza_minima | dictar_ritmo_crecimiento_preguntas_escritas | arista: -
+    Ajenos de dos capitulos: el vecino dicta el ritmo de crecimiento (cap_07 L279 a L287); este opera el modelo con la destreza minima (L87 a L113). Comparten la prosa de Gerber.
+linea 1132 SANO operar_modelo_gente_destreza_minima | fingir_prototipo_cinco_mil_replicas | arista: fingir_prototipo_cinco_mil_replicas > operar_modelo_gente_destreza_minima
+    D.37. El paso 6 de la madre, Regla 2, nombra la parte en una linea (L47) y el hijo la despliega en 10 pasos (L87 a L113) que la cabeza no tiene.
+linea 1143 SANO probar_traje_azul_seis_semanas | cambiar_saludo_cliente_dos_ramas | arista: -
+    El mismo par que cambiar_saludo lee desde su lado: hermanos, dos Innovaciones distintas de cap_12 (L51, L63); ninguna usa el producto de la otra.
+linea 1149 SANO cuantificar_impacto_innovacion_6_pasos | entregar_evaluacion_desempeno_tres_claves | arista: -
+    Ajenos: el vecino del grafo entrega una evaluacion de desempeno; este cuantifica una Innovacion (L95). La similitud es de prosa, sin paso comun.
+linea 1154 SANO responder_4_preguntas_estandares_objetivo_estrategico | probar_traje_azul_seis_semanas | arista: -
+    El mismo par que probar_traje lee desde su lado: nombrar el vestuario como estandar (L177) no es procedimentar la prueba del traje (cap_12 L63).
+linea 1168 SANO documentar_trabajo_manual_operaciones | unificar_color_forma_vestuario_modelo | arista: -
+    Hermanos: las reglas 4 y 6 de la misma serie (L51, L55); uno documenta el trabajo en el Manual de Operaciones, el otro unifica color y forma. Ninguno usa el producto del otro.
+linea 1169 SANO documentar_trabajo_manual_operaciones | fingir_prototipo_cinco_mil_replicas | arista: fingir_prototipo_cinco_mil_replicas > documentar_trabajo_manual_operaciones
+    D.37. El paso 8 de la madre, Regla 4, nombra la parte en una linea (L51) y el hijo la despliega en 10 pasos (L155 a L171) que la cabeza no tiene.

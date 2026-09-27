@@ -1,0 +1,10 @@
+| medida | valor |
+|---|---:|
+| candidatos del lote 4 al cerrar la extraccion | **142** |
+| INSERTADOS en esta vuelta y archivados en `_insertados` | **11** |
+| intentados que la aduana BLOQUEO, en cola de lectura | **7** |
+| pares que esos bloqueos abren, por leer | **24** |
+| todavia sin intentar, en cuarentena | **124** |
+| nodos en el grafo | **214** |
+| veredictos en `bitacora/VEREDICTOS.jsonl` | **156** |
+| ficheros en `cuarentena/_insertados/` (todos los lotes) | **212** |

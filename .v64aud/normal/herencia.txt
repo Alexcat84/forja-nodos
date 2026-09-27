@@ -1,0 +1,32 @@
+REMEDIOS PENDIENTES QUE HEREDAS
+
+Esto NO lo has buscado tu: lo entrega el arnes (D.40), porque tres actas seguidas perdieron el mismo remedio por tener que ir a buscarlo.
+
+  acta anterior : ACTA 62. VUELTA 63, lote 7 (`grove_high_output`), **CLASE INSERCION**: **LA VUELTA NO INSERTO NADA, Y NO POR LA ADUANA: EL EXTRACTOR CERRO SU TURNO A LOS `880` s CON LA INSERCION `1` EN SEGUNDO PLANO. LO QUE SI HIZO ES BUENO Y SE LO FIRMO; SU UNICO DISCUTIBLE CAE Y `cap_02` QUEDA EN `4` DE `50`, EL `8,0` POR CIENTO; Y LA CIFRA FALSA QUE PESA ES MIA, DE MI PAGINA SELLADA**
+  su huella     : 291e816f205a74483056cffaf06038e3dc242b6b
+  heredados     : 2
+
+HEREDADO 1   [REMEDIO, linea 45497 del acta]
+## 62.13. **LOS REMEDIOS**
+
+| # | de quien | remedio | donde se comprueba |
+| `R5` | del extractor | **Sigue vivo con su letra**: un bloque `$` contiene lo que el comando imprimio y nada mas; si se corta, por el final y **dentro del bloque** `(recortado, entero en <fichero>)` | el reporte de la `64`, con `.v63aud/pegado63.py` cambiando la cabecera del tramo |
+
+HEREDADO 2   [REMEDIO, linea 45498 del acta]
+## 62.13. **LOS REMEDIOS**
+
+| # | de quien | remedio | donde se comprueba |
+| `R8` | **MIO** | **En una fase ciega, el rotulo de una metrica solo va encima de la cifra de esa metrica.** Si lo que mido es otra poblacion (el material ya corregido, una parte), el rotulo dice cual | la proxima apertura ciega de esta linea |
+
+LO QUE TU APERTURA CIEGA TIENE QUE TRAER, O EL ARNES SE DETIENE ANTES DE QUE ESCRIBAS EL ACTA:
+
+    ACTA ANTERIOR LEIDA: 291e816f205a74483056cffaf06038e3dc242b6b
+    HEREDADO 1: CUMPLIDO          (o NO APLICA y su motivo detras)
+    HEREDADO 2: CUMPLIDO          (o NO APLICA y su motivo detras)
+
+NO APLICA NECESITA MOTIVO ESCRITO **Y LA SALIDA DEL INSTRUMENTO PEGADA DEBAJO** (D.40, 16 sep 2026). Un remedio que no aplica a esta vuelta se declara, se dice por que, y se pega el comando que lo sostiene, con una linea que empiece por '$'. Sin salida pegada, el sello NO lo acepta.
+
+POR QUE: la vuelta 26 declaro NO APLICA un heredado con el motivo de que ninguno de sus instrumentos escribia en el arbol. Seis escribian, su propia tabla los listaba, y el barrido de guiones estaba en ROJO con ocho hallazgos suyos. Una salida pegada no prueba que el motivo sea cierto, pero obliga a correr algo antes de escribirlo, y ese lo habria cazado al instante.
+
+ESCRIBELAS COMO ESCRIBES TODO LO DEMAS. Valen las comillas, la negrita, el encabezado y la cita: se comprueba que la declaracion ESTE, no que vaya desnuda. Y puedes repetirla en tu tabla de cierre: se mira presencia y no cuenta, asi que citar la linea que declaras no te tumba la vuelta.
+

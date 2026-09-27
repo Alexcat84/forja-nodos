@@ -1,0 +1,13 @@
+$ python forja.py arista --madre construir_estrategia_gente_cuatro_componentes --hijo documentar_trabajo_manual_operaciones --paso 5 --razon <fila 38> --veredicto SANO --cita-veredicto <fila 38>
+DECLARACION DE ARISTA POR LECTURA (D.37)
+  madre: construir_estrategia_gente_cuatro_componentes
+  hijo : documentar_trabajo_manual_operaciones
+  paso citado de la madre: 5
+    Escribe tus Operations Manuals, que son los que definen el trabajo que hace tu gente.
+  señales del par: familia_id 0.0, paso_contra_nodo 0.418, similitud_texto 0.264
+    NINGUNA SEÑAL LA LEVANTA. La caza la lectura (D.19, D.29).
+
+GATE VERDE sobre la simulacion. ARISTA ESCRITA RESUELTA: construir_estrategia_gente_cuatro_componentes > documentar_trabajo_manual_operaciones
+  razon en bitacora/VEREDICTOS.jsonl
+
+codigo 0

@@ -1,0 +1,5 @@
+[
+ ("R1", 8, 18, "el numero del capitulo, el rotulo YOUR MANAGEMENT STRATEGY y el lema de AT&T (The System is the Solution)", "RESIDUO: rotulo y epigrafe"),
+ ("R2", 19, 50, "que es un Management System: no hace falta gente con destrezas sofisticadas, hace falta un Sistema que sea la estrategia de gestion y produzca un resultado de mercadeo, y entre mas automatico el Sistema mas efectivo el Prototipo", "POSTURA"),
+ ("R3", 51, 221, "el caso del hotel Venetia: el match, la menta, el cafe y el periodico que el Sistema entrega siempre igual, y la entrevista con el Manager de veintinueve anios que muestra el Operations Manual con sus checklists codificados por color, cortado a mitad de escena", "CASO"),
+]

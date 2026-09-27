@@ -1,0 +1,1 @@
+$ python forja.py informe --carpeta cuarentena/grove_high_output

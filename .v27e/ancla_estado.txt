@@ -1,0 +1,4 @@
+repartir_semana_cuarenta_horas_jefe | grafo=1 | bandeja=0 | insertados=1
+delimitar_franqueza_radical_cinco_noes | grafo=1 | bandeja=0 | insertados=1
+despedir_persona_franqueza_radical | grafo=1 | bandeja=0 | insertados=1
+reconocer_recompensar_gente_estable | grafo=1 | bandeja=0 | insertados=1

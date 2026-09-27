@@ -1,0 +1,36 @@
+{
+  "condiciones_activacion": "Cuando estas abasteciendo el flujo de candidatos y hablas por primera vez con alguien que te interesa. Es la primera de las cinco olas de la venta, y es la unica que ocurre antes de que exista ningun proceso formal con esa persona.",
+  "denominaciones": {
+    "nombre_largo": "La primera ola de la venta: cuando abasteces",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "When you source"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "contratacion",
+  "entregable_esperado": "Los ganchos del candidato localizados: que efes le van a importar, dicho por el, y una primera venta hecha del puesto como el siguiente movimiento correcto para el.",
+  "escala_minima": "Una sola conversacion de abastecimiento, con dos preguntas, basta para abrir esta ola.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "smart_who",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "id": "vender_abastecimiento_candidatos",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Vende desde el momento en que arrancas el proceso entero de contratacion, y no cuando ya tienes que cerrar.",
+    "Aprovecha el enfasis en intereses y talentos que el propio proceso de abastecimiento pone: es tu primera oportunidad de calibrar cuales de las cinco efes le van a importar a este candidato.",
+    "Empieza por entender donde esta esta persona con sus intereses. Ahi es donde estan sus ganchos.",
+    "Para localizar los ganchos, escucha. Y pregunta: donde estas hoy, y que es lo que buscas de verdad.",
+    "Cuenta con la segunda razon para vender desde el principio: asi la gente baja la guardia antes, tu consigues una vision mas rapida y mas rica de quienes son y de que quieren, y entonces puedes venderles esto como claramente el siguiente movimiento correcto para ellos."
+  ],
+  "resumen_teorico": "Es la primera de las cinco olas de la venta y la que mas cambia la practica corriente, porque cae antes de que exista siquiera un proceso con la persona. La razon que el libro da es que el abastecimiento ya pone el enfasis en intereses y talentos, de modo que es la primera ocasion de calibrar que efes le van a importar al candidato sin tener que preguntarselo de frente. Mark Stone, director general senior del Gores Group, es quien lo dice del todo: se vende desde el momento en que arranca el proceso entero, todo empieza por entender donde esta alguien con sus intereses, eso ayuda a localizar donde estan sus ganchos, y para localizar los ganchos hay que escuchar. Las dos preguntas que el libro imprime literalmente son suyas: donde estas hoy, y que es lo que buscas de verdad. La segunda razon que Stone da, y que el libro recoge, es que vender desde el principio hace que la gente baje la guardia antes, lo que da una vision mas rapida y mas rica de quienes son y de que quieren.",
+  "titulo": "Vender ya en la primera ola, mientras abasteces"
+}

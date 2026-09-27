@@ -1,0 +1,14 @@
+cap_01 | Introduction | candidatos 1 | pasos 6 | PUENTE sobre el texto de al abrir 0 = 0.00 por ciento | PUENTE en el texto de hoy 0
+cap_02 | Change of Course | candidatos 2 | pasos 10 | PUENTE sobre el texto de al abrir 0 = 0.00 por ciento | PUENTE en el texto de hoy 0
+cap_03 | Call to Action | candidatos 6 | pasos 53 | PUENTE sobre el texto de al abrir 1 = 1.89 por ciento | PUENTE en el texto de hoy 0
+cap_04 | “Whatever They Tell Me to Do!” | candidatos 1 | pasos 5 | PUENTE sobre el texto de al abrir 2 = 40.00 por ciento | PUENTE en el texto de hoy 0
+cap_06 | Change, in a Word | candidatos 2 | pasos 8 | PUENTE sobre el texto de al abrir 0 = 0.00 por ciento | PUENTE en el texto de hoy 0
+cap_07 | “I Intend To . . .” | candidatos 1 | pasos 3 | PUENTE sobre el texto de al abrir 0 = 0.00 por ciento | PUENTE en el texto de hoy 0
+cap_08 | Up Scope! | candidatos 1 | pasos 5 | PUENTE sobre el texto de al abrir 0 = 0.00 por ciento | PUENTE en el texto de hoy 0
+cap_09 | Who's Responsible? | candidatos 1 | pasos 2 | PUENTE sobre el texto de al abrir 0 = 0.00 por ciento | PUENTE en el texto de hoy 0
+cap_10 | “We Have a Problem” | candidatos 1 | pasos 3 | PUENTE sobre el texto de al abrir 0 = 0.00 por ciento | PUENTE en el texto de hoy 0
+cap_11 | “Mistakes Just Happen!” | candidatos 1 | pasos 3 | PUENTE sobre el texto de al abrir 0 = 0.00 por ciento | PUENTE en el texto de hoy 0
+cap_12 | “We Learn” | candidatos 1 | pasos 8 | PUENTE sobre el texto de al abrir 0 = 0.00 por ciento | PUENTE en el texto de hoy 0
+cap_13 | All Present and Accounted For | candidatos 1 | pasos 2 | PUENTE sobre el texto de al abrir 0 = 0.00 por ciento | PUENTE en el texto de hoy 0
+cap_14 | Leadership at Every Level | candidatos 1 | pasos 2 | PUENTE sobre el texto de al abrir 0 = 0.00 por ciento | PUENTE en el texto de hoy 0
+lote: candidatos 20 | pasos 110 | PUENTE al abrir 3 = 2.73 por ciento | PUENTE hoy 0 | suma de pasos por capitulo: 110

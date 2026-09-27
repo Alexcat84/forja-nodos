@@ -1,0 +1,1 @@
+elegir_inspeccion_barrera_monitorizacion poblacion 479 (366 grafo mas 113 bandejas) vecinos 2

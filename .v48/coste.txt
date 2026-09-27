@@ -1,0 +1,15 @@
+| en que se fue | medida | de donde sale |
+|---|---:|---|
+| **la aduana en seco de los `5` candidatos** | **4517 s** | PATRON: `.v48/reloj_c0*.txt`, sumados por `.v48/coste.py` |
+| las dos pruebas de aceptacion, apertura y cierre | 239 s | `.v48/apertura_pruebas.txt` y `.v48/cierre_pruebas.txt`, las dos con su `real` |
+| la corrida de cierre que salio en ROJO, repetida | 101 s | `.v48/cierre_pruebas_rojo.txt`, con su `real`. La de diagnostico no lleva `real` y por eso no tiene cifra |
+| ninguna ficha vieja retocada | 0 s | VACIA A PROPOSITO: esta vuelta no corrigio ninguna ficha ya escrita, asi que no hay reloj que citar |
+| el resto: leer el capitulo, escribir las `5` fichas y el reporte | sin cifra | sin instrumento propio, y por eso no le pongo cifra |
+| **total cronometrado del turno** | **4857 s  (81.0 min)** | la suma de las filas de arriba |
+
+EL POR CIENTO DE LO CRONOMETRADO QUE SE FUE EN LA ADUANA EN SECO: 93.0 por ciento
+  (la aduana entera, 4517 s de 4857 s cronometrados)
+LA PRUEBA DE ACEPTACION, LAS DOS CORRIDAS PUBLICADAS         : 4.9 por ciento
+LA CORRIDA EN ROJO QUE HUBO QUE REPETIR                      : 2.1 por ciento
+
+Y NO HAY FILA EN USD: grep -rl USD src/ scripts/ forja.py da 0 ficheros.

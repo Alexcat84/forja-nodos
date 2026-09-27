@@ -1,0 +1,20 @@
+RESUMEN DEL BARRIDO DE VECINOS, GRAFO MAS BANDEJAS (D.38.4 con el metodo de D.38.5)
+  poblacion de cada corrida: dataset/nodos.jsonl de 282 nodos MENOS el propio candidato,
+  mas las bandejas de cuarentena/, que las pone la aduana sola. Arbol 1ae327e.
+
+  candidato                                      poblacion ENTRARIA  BLOQUEA   CAE
+  integrar_trabajo_vida_mejor_version            347       1         0         0
+  definir_receta_propia_mantenerse_centrado      347       1         0         0
+  agendar_cuidados_propios_cumplirlos            347       1         0         0
+  ceder_autoridad_unilateral_equipo              347       1         0         0
+  dominar_arte_socializar_trabajo                347       1         0         0
+  evitar_presion_social_actos_equipo             347       0         1         0
+  construir_confianza_equipo_tiempo_solas        347       0         1         0
+  vivir_valores_propios_evitar_listarlos         347       0         1         0
+  demostrar_apertura_visiones_distintas          347       1         0         0
+  manejar_contacto_fisico_regla_platino          347       1         0         0
+  reconocer_emociones_propias_avisar_equipo      347       0         1         0
+  dominar_reacciones_emociones_ajenas            ?         ?         ?         ?
+
+  poblacion, literal de la aduana: 347  (281 del grafo mas 66 que esperan en bandejas)
+  corridas: 12   vecinos que la aduana levanta en TODA la tanda: 4

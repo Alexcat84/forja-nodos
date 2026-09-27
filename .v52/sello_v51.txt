@@ -1,0 +1,8 @@
+$ git log -1 --format="%h" -- docs/loop/TABLA_DE_CIERRE.txt   (el commit que la escribio, no HEAD)
+b04ac62
+$ git show b04ac62:docs/loop/TABLA_DE_CIERRE.txt | git hash-object --stdin
+984dab3b09068c22d1a93459fbb54f7f2ce8517a
+$ git hash-object docs/loop/archivo/tablas_de_cierre/TABLA_DE_CIERRE_v51.txt
+984dab3b09068c22d1a93459fbb54f7f2ce8517a
+$ git show HEAD:docs/loop/TABLA_DE_CIERRE.txt | git hash-object --stdin   (el mismo comando con HEAD, hoy)
+984dab3b09068c22d1a93459fbb54f7f2ce8517a

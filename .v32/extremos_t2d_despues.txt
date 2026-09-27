@@ -1,0 +1,5 @@
+COMPROBADA POR LOS DOS EXTREMOS EN dataset/nodos.jsonl, DESPUES DE DECLARARLA
+  nodos_siguientes de la madre contiene a la hija : True
+  nodos_previos de la hija contiene a la madre    : True
+  hijos de la madre ahora: 7
+  aristas del grafo por los dos extremos: 103 y 103

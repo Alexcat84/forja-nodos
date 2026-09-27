@@ -1,0 +1,9 @@
+$ python .v36/pasos_retirados.py
+poblacion: dataset/nodos.jsonl, 302 nodos, SIN filtrar
+criterio : resumen_teorico declara una retirada de paso N, y pasos_accionables
+           todavia tiene N pasos o mas
+
+nodos con una retirada declarada y el paso todavia en el campo : 1
+
+  practicar_franqueza_radical_jefe_propio
+     paso 13 de 17, y el resumen dice: P13 DE ESTE NODO LLEVA UN PUENTE, Y AQUI QUEDA RETIRADO

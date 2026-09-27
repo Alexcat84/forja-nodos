@@ -1,0 +1,42 @@
+$ python .v54/coste_por_turno.py
+COSTE POR TURNO, de docs/loop/loop.log
+  turnos con linea 'listo (USD ...)' en el log : 149
+
+  LOS DIEZ ULTIMOS, UNO POR LINEA (sin media: son las celdas)
+    cuando               rol            modo             USD       s
+    2026-09-19 14:21:36  auditor        insertar     12.9935    1651
+    2026-09-19 15:29:23  extractor      insertar     17.2951    4066
+    2026-09-19 16:13:35  auditor ciego  insertar     13.5010    2650
+    2026-09-19 16:57:38  auditor        insertar     18.3357    2623
+    2026-09-19 18:44:36  extractor      insertar     25.3705    6413
+    2026-09-19 20:09:04  auditor ciego  insertar     14.7707    5067
+    2026-09-19 20:49:18  auditor        insertar     12.4727    2396
+    2026-09-19 22:39:11  extractor      insertar     28.2521    6592
+    2026-09-19 23:12:23  auditor ciego  insertar      9.0922    1991
+    2026-09-19 23:44:54  auditor        insertar     12.7704    1931
+
+  insertar / extractor USD por turno    26.06 USD
+                                       numerador       990.29  suma de USD de esos turnos
+                                       denominador         38  turnos de ese rol y ese modo en el log
+  insertar / auditor USD por turno      14.13 USD
+                                       numerador       522.70  suma de USD de esos turnos
+                                       denominador         37  turnos de ese rol y ese modo en el log
+  insertar / auditor ciego USD por turno    12.65 USD
+                                       numerador       518.55  suma de USD de esos turnos
+                                       denominador         41  turnos de ese rol y ese modo en el log
+  cuarentena / extractor USD por turno    17.47 USD
+                                       numerador       244.56  suma de USD de esos turnos
+                                       denominador         14  turnos de ese rol y ese modo en el log
+  cuarentena / auditor USD por turno    10.35 USD
+                                       numerador       124.23  suma de USD de esos turnos
+                                       denominador         12  turnos de ese rol y ese modo en el log
+  cuarentena / auditor ciego USD por turno     5.31 USD
+                                       numerador        37.15  suma de USD de esos turnos
+                                       denominador          7  turnos de ese rol y ese modo en el log
+
+  EL CONTRASTE QUE PRESUPUESTA EL OBJETIVO DE 5 USD
+  extractor en insertar, USD/turno      26.06 USD
+                                       numerador       990.29  suma de USD de los turnos de extractor en insertar
+                                       denominador         38  turnos de extractor en insertar
+  el mas barato de esos turnos         7.3521 USD
+  el mas caro de esos turnos          62.1116 USD

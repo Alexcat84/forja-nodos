@@ -1,0 +1,14 @@
+$ python .v48/pruebas_intermitentes.py
+| # | fichero de la corrida | que corrida es | pruebas | fallos | errores |
+|---:|---|---|---:|---:|---:|
+| 1 | `.v48/apertura_pruebas.txt` | apertura, en su sitio del ciclo | 318 | **0** | 0 |
+| 2 | `.v48/cierre_pruebas_rojo.txt` | cierre, primera corrida | 318 | **1** | 0 |
+| 3 | `.v48/pruebas_diag.txt` | diagnostico, corrida suelta | 318 | **0** | 0 |
+| 4 | `.v48/cierre_pruebas.txt` | cierre, corrida aislada, la que se publica | 318 | **0** | 0 |
+
+corridas con fichero que citar : 4
+   en VERDE                    : 3
+   en ROJO                     : 1
+
+EL ARBOL NO CAMBIO ENTRE ELLAS: ni src/, ni tests/, ni scripts/, ni dataset/.
+LO QUE SE PUBLICA ES LA ULTIMA, AISLADA Y EN VERDE, Y EL ROJO SE DECLARA AL LADO.

@@ -1,0 +1,13 @@
+    $ python -m unittest tests.test_aceptacion.PruebaColaDeDoctrina -v   # con el volcado mutado, una fila de doctrina menos
+    ======================================================================
+    FAIL: test_la_cola_esta_escrita_en_el_tablero_del_arbol (tests.test_aceptacion.PruebaColaDeDoctrina.test_la_cola_esta_escrita_en_el_tablero_del_arbol)
+    ----------------------------------------------------------------------
+    Traceback (most recent call last):
+      File "C:\Users\AlexDesk\Documents\forja-nodos\tests\test_aceptacion.py", line 3850, in test_la_cola_esta_escrita_en_el_tablero_del_arbol
+        self.assertEqual(len(escritas), len(self._preguntas_de_la_sede()))
+    AssertionError: 9 != 10
+    
+    ----------------------------------------------------------------------
+    Ran 5 tests in 0.022s
+    
+    FAILED (failures=1)

@@ -1,0 +1,5 @@
+unidad      candidatos   pasos   ids
+cap_01              1       7   ceder_control_reforzar_competencia_claridad
+cap_02              2      10   cambiar_forma_trabajar_conservar_plantilla, encargar_meta_especifica_dejar_libre_metodo
+TOTAL               3      17
+ficheros leidos: 3

@@ -1,0 +1,20 @@
+{
+ "id": "aplicar_ejercicio_codigo_genetico_control",
+ "grafo": 459,
+ "bandejas": 20,
+ "vecinos": [
+  {
+   "id": "resistir_dar_solucion_clasificar_decision_urgencia",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.366,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.432
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 2 del candidato contra paso 4 de resistir_dar_solucion_clasificar_decision_urgencia"
+  }
+ ]
+}

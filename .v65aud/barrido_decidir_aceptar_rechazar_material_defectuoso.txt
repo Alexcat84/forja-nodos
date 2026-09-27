@@ -1,0 +1,1 @@
+decidir_aceptar_rechazar_material_defectuoso poblacion 479 (366 grafo mas 113 bandejas) vecinos 1

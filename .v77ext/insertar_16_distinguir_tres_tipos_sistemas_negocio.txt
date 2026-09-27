@@ -1,0 +1,42 @@
+fila 16, distinguir_tres_tipos_sistemas_negocio, lineas --veredicto: 3
+  --veredicto medir_sistema_venta_trece_indicadores_benchmark|SANO|Hermanos del mismo capitulo: este distingue los tres tipos de sistemas (L35 a L41), y el vecino es el Information Benchmark, que L303 y L307 dan como ejemplo de Information System. La similitud de 0,451, por encima de 0,4, se lee primero y no es gemelo: uno clasifica y el otro registra trece cifras. Un ejemplo no es la parte de la enumeracion (L45): sin arista (DISCUTIBLE D76.13).
+  --veredicto construir_estrategia_gente_cuatro_componentes|SANO|El mismo par que construir_estrategia lee desde su lado: ajenos, la People Strategy (cap_18 L117, L119) y los tipos de sistemas (L35 a L43) comparten el vocabulario del Business Development Program, no procedimiento.
+  --veredicto aplicar_seis_pasos_sistema_venta|SANO|El mismo par que aplicar_seis lee desde su lado: el sistema de venta es un ejemplo de Soft System (L137), no el Soft System; sin arista, y ninguno usa el producto del otro (DISCUTIBLE D76.13).
+inicio 2026-09-26 11:41:01
+======================================================================
+ADUANA DE INSERCION, candidato 'distinguir_tres_tipos_sistemas_negocio'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (452 del grafo mas 27 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 3. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino medir_sistema_venta_trece_indicadores_benchmark  [Medir tu sistema de venta con los trece indicadores del Information Benchmark que el libro enumera]
+    levantada por: similitud_texto
+    similitud_texto    0.451 (umbral 0.35)
+    familia_id         0.100 (umbral 0.30)
+    paso_contra_nodo   0.394 (umbral 0.60)
+    paso 3 del candidato contra paso 14 de medir_sistema_venta_trece_indicadores_benchmark
+
+  vecino construir_estrategia_gente_cuatro_componentes  [Construir tu Your People Strategy con los cuatro componentes que el libro nombra uno a uno]
+    levantada por: similitud_texto
+    similitud_texto    0.399 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.442 (umbral 0.60)
+    paso 2 del candidato contra paso 1 de construir_estrategia_gente_cuatro_componentes
+
+  vecino aplicar_seis_pasos_sistema_venta  [Aplicar los seis pasos principales que el libro enumera para un sistema de venta]
+    levantada por: similitud_texto
+    similitud_texto    0.358 (umbral 0.35)
+    familia_id         0.111 (umbral 0.30)
+    paso_contra_nodo   0.413 (umbral 0.60)
+    paso 3 del candidato contra paso 2 de aplicar_seis_pasos_sistema_venta
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 453
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 3
+
+======================================================================
+fin 2026-09-26 11:46:26 | codigo de salida 0 | 325.3 s

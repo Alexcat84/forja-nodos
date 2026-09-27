@@ -1,0 +1,41 @@
+LAS RUTAS QUE MI APERTURA PUBLICA COMO PRUEBA, COMPROBADAS CONTRA EL DISCO (cosecha 7.B)
+
+  OK           1476  .v33a/aristas.py
+  OK           1074  .v33a/banda.py
+  OK            833  .v33a/bandeja_caps.py
+  OK           1157  .v33a/barrido.sh
+  OK          18449  .v33a/barrido.txt
+  OK           1630  .v33a/bitacora.py
+  OK           1298  .v33a/capitulos.py
+  OK            449  .v33a/cerrojo.txt
+  OK            809  .v33a/destapar.py
+  OK            187  .v33a/hora_clases.txt
+  OK            752  .v33a/madre_1a1.txt
+  OK          10827  .v33a/mis_clases.txt
+  OK           1044  .v33a/palabras2.py
+  OK           1251  .v33a/pares.py
+  OK           1431  .v33a/poblacion.py
+  OK            974  .v33a/procedencia.py
+  OK           1520  .v33a/resumen_barrido.py
+  OK           2310  .v33a/rotulos.py
+  OK            850  .v33a/rutas.py
+  OK           1160  .v33a/tanda.py
+  OK           1562  .v33a/vecinos_barrido.py
+  OK         517815  bitacora/VEREDICTOS.jsonl
+  OK            898  config/pares_mutuos.jsonl
+  OK        1141493  dataset/nodos.jsonl
+  OK        1805682  docs/loop/ACTA_AUDITOR.md
+  OK          47848  docs/loop/APERTURA_CIEGA.md
+  OK          27996  docs/loop/CREDITO_serial.jsonl
+  NO EXISTE        -  docs/loop/REPORTE.md
+  OK          24889  docs/loop/paradas/2026-09-16-el-cerrojo-y-el-testigo-DECISION.md
+  CERO BYTES        0  docs/loop/ultimo_apertura.json
+  NO EXISTE        -  docs/loop/ultimo_auditor.json
+  NO EXISTE        -  docs/loop/ultimo_extractor.json
+  OK          35934  fuentes/scott_radical_candor/cap_08.md
+  OK          50903  fuentes/scott_radical_candor/cap_11.md
+  OK           9788  src/arista.py
+  OK           5722  src/cerrojo.py
+  OK         215241  tests/test_aceptacion.py
+
+  rutas publicadas: 37   en rojo: 4

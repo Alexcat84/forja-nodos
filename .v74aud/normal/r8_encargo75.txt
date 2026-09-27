@@ -1,0 +1,72 @@
+  L1 S ['75', '54', '7', '73', '73', '73.5', '73.1'] ['DOS'] | # ENCARGO DE LA VUELTA 75: **PRIMERO LOS DOS PUENTES DE `dar_elogio_disciplina_igual_critica` SALEN 
+  L3 - ['11', '73', '74'] [] | *Linea **serial** (`extraccion-mundo-11`). Escrito por el auditor al cerrar la `ACTA 73`, que audito
+  L4 - ['1.4'] [] | `AUDITOR_FORJA.md` seccion `1.4`. **Toda cifra de medida de esta pagina va dentro de un bloque `$` c
+  L5 S ['73', '8', '73', '73.11'] [] | su misma linea la seccion de la `ACTA 73` donde esta pegada** (`R8`, `ACTA 73` `73.11`).*
+  L14 - ['0'] [] | ## 0. **LA CLASE, EL LIBRO Y LA REGLA DEL TURNO**
+  L23 - ['18'] [] | **La frase de *continuar desde `cap_18`* es de extraccion y no aplica: Grove esta minado entero**, y
+  L24 - ['8', '4'] [] | que queda en su bandeja. **El orden de la campania es Grove, Gerber, Marquet** (`PARALELO.md` `8` pu
+  L31 - ['72', '72'] [] | **El metodo de la `72` vale**: cada `insertar` por una copia de `.v72ext/insertar.py` con la sede de
+  L32 - ['73', '75', '72'] [] | `.v73ext/veredictos_listos.txt` y la salida a `.v75ext/`, y tu bloqueado en primer plano con una cop
+  L34 - ['76'] [] | CERRAR TU TURNO.** Si algo no te cabe, no lo lances: lo dices en el reporte con las filas que faltan
+  L35 - ['72'] [] | de los `insertar` de la `72`, que es lo que costo y no un techo:
+  L42 - ['1', '73'] [] | ## TAREA 1: **REGISTROS DE LA `ACTA 73`**
+  L44 - ['47'] [] | En una tabla corta y sin reabrir el argumento (`D.47`):
+  L48 S ['73', '73.1'] ['cuatro'] | | **Tu vuelta, reproducida**: no movio dato; tus instrumentos dan lo que pegaste y tus cuatro `como`
+  L49 S ['74.1', '74.8', '74.6', '73.5'] ['ocho'] | | **Tus ocho discutibles se sostienen**, `D74.1` a `D74.8`; en `D74.6` gana tu `P` y cae la lectura 
+  L50 S ['8', '2', '70', '1', '084', '006', '73.5'] [] | | **Un PUENTE que no viste**: `dar_elogio_disciplina_igual_critica` paso `8`, *y la critica no*, fue
+  L51 S ['2', '3', '74.3.2', '73.2', '73.7'] [] | | **`REPORTE` cae y sube a `2 de 3`**: la cifra vive en tu tabla de `74.3.2`, en tu cabecera y en tu
+  L52 S ['9', '5', '73.11'] [] | | **Tu remedio nuevo, `R9`**, y `R5` sigue vivo | `73.11` |
+  L54 S ['2', '55', '30', '73.6'] ['DOS'] | ## TAREA 2: **BLOQUEANTE (`D.55`), CON LA GUARDA `D.30` EN ROJO: LOS DOS PUENTES DE `dar_elogio_disc
+  L56 S ['73', '73.5', '73.6'] ['dos'] | **Antes de ningun `insertar`.** La guarda, los dos pasos y sus lineas estan en la `ACTA 73` `73.5` y
+  L57 - ['30', '54', '13'] [] | casa ya tiene y no otra** (`D.30`, `D.54`; el precedente es el `P13` de `practicar_franqueza_radical
+  L60 - ['1'] [] | 1. **`python forja.py corregir --nodo dar_elogio_disciplina_igual_critica --anade "CORRECCION DECLAR
+  L61 - ['8', '17'] [] | vez, **antes de retirar nada**. El texto dice, sin borrar nada de lo que hay: **los pasos `8` y `17`
+  L62 S ['73', '73.5', '273', '283', '13'] [] | `ACTA 73` `73.5`, con su linea del libro (`L273` y `L283` de `fuentes/scott_radical_candor/cap_13.md
+  L63 - ['8'] [] | **que parte de cada paso si es del libro** (del `8`, *el elogio ayuda a la gente a centrarse en sus 
+  L64 - ['17'] [] | trabajo que disfruta y menos del que odia*; del `17`, *en ese ejercicio la gente sale sintiendose vi
+  L66 S ['20', '20', '0', '18', '2', '73.5'] [] | cuenta de fidelidad de su propio resumen**, *20 pasos, 20 TRANSCRIPCION, 0 PUENTE*, **vale** *18 TRA
+  L67 - ['1', '7'] [] | **la tabla de numeros de paso**, porque la bitacora nombra este nodo y sus lineas citan pasos por nu
+  L68 - ['9', '16', '8', '15', '18', '20', '16', '18'] [] | mueven, **del `9` al `16` pasan a ser del `8` al `15`, y del `18` al `20` pasan a ser del `16` al `1
+  L70 - ['2', '17', '8'] [] | 2. **`python scripts/retirar_paso.py --nodo dar_elogio_disciplina_igual_critica --paso 17 --razon ".
+  L71 S ['73', '73.5'] [] | ese orden, para que el numero del segundo no se mueva con el primero. **La `--razon` cita la `ACTA 7
+  L72 - ['54'] [] | El instrumento escribe en su frase la fecha de `D.54`, que no es la de hoy: **tu razon lleva la de h
+  L73 - ['3'] ['tres'] | 3. **Despues de cada una de las tres operaciones, `python forja.py gate`, pegado.** Al terminar, **p
+  L74 S ['18', '73.5', '0'] [] | (tienen que ser `18`, `73.5`), `python scripts/retirar_paso.py --ver` en `0`, y el censo con lo que 
+  L76 - ['4'] [] | 4. **Si el gate sale en rojo, o cualquier instrumento se niega, PARAS la tarea, no insertas nada y l
+  L77 - ['7', '55'] [] | ni en `scripts/` (`7.F`, `D.55`).
+  L78 S ['5', '9', '18', '73', '73.11'] [] | 5. **`R9` sobre los `18` que quedan** (`ACTA 73` `73.11`): el `grep` de clausulas que comparan o cal
+  L80 - ['74'] [] | nodo**: si aparece otro puente, lo traes a la `ACTA 74`.
+  L82 - ['3'] [] | ## TAREA 3: **LO QUE ENTRA ES LO QUE SE LEYO**
+  L84 - ['73', '73'] [] | Antes del primer `insertar`, `python .v73ext/pasos_y_huellas.py`, con su salida **identica** a `.v73
+  L85 S ['74', '73', '73.1'] [] | la `74` al abrir y al cerrar, `ACTA 73` `73.1`), pegada. Si una ficha sale distinta, **no entra**, s
+  L88 - ['4', '73'] [] | ## TAREA 4: **LAS FILAS DE `.v73ext/orden.txt`, UNA POR VEZ**
+  L105 - ['1', '1'] [] | 1. **En su orden, de la fila `1` a la ultima.** Las lineas `--veredicto` son las del bloque de cada 
+  L106 - ['73'] [] | `.v73ext/veredictos_listos.txt`, **tal cual, sin las `#`**. Las `CONTINUA` con `madre=` cablean su a
+  L107 - ['3', '6', '7'] [] | las filas `3`, `6` y `7`. **No hay aristas por lectura** (`SOSTENGO`, en el bloque). `priorizar_list
+  L108 - ['73.9', '72', '72.5'] [] | es `SANO`, abuela y nieta (`D73.9`, `ACTA 72` `72.5`).
+  L109 - ['2', '031'] [] | 2. **La puerta es la aduana de `insertar`, no la lista** (`d031`). **Al volver cada uno, su vecindad
+  L110 - ['73', '72', '73'] [] | la `73`** con una copia de `.v72ext/contra_barrido.py` que lea `.v73ext/vecinos_<id>.json`, pegada e
+  L111 - ['6.1'] ['dos'] | sin linea, lo lees con los pasos de los dos delante, escribes su veredicto por la vara `6.1` y solo 
+  L113 - ['3', '72'] [] | 3. **Al volver cada `insertar`, su fila en el reporte** como las de la `72`: la aduana de hoy con su
+  L114 - ['73', '31'] [] | `73`, las lineas que pasaste, la arista que cableo y su commit. Cada insertado a `cuarentena/_insert
+  L115 - ['4'] [] | 4. **Al terminar la ultima fila que entre: las aristas de la tanda por instrumento**: cuantas se esp
+  L117 - ['2'] [] | `dar_elogio_disciplina_igual_critica` por la TAREA 2**. Si alguna fila no entro, la cuenta dice cual
+  L119 - ['5'] [] | ## TAREA 5: **EL CIERRE**
+  L121 S ['74', '73', '73.1'] [] | - **El censo antes y despues de cada tarea**, con una copia de `.v74ext/censo.sh`. Al abrir son los 
+  L122 - ['2'] [] | se mueve, medido**: el grafo gana una fila por ficha que entre y ninguna por la TAREA 2; la bandeja 
+  L123 - ['4', '2'] [] | `_insertados` las gana; la bitacora gana las lineas de veredicto de lo que entre (bloque de la TAREA
+  L124 - ['15', '16', '17'] [] | - **`PASOS INVENTADOS POR CAPITULO`, una fila por capitulo, de lo que ENTRO**: `cap_15`, `cap_16` y 
+  L125 - ['73', '72', '72.4'] ['cero'] | `.v73ext/fidelidad.tsv` con los PUENTE ya corregidos en la bandeja, que la `ACTA 72` `72.4` firmo en
+  L126 S ['13', '2', '73.4', '73.5'] ['dos'] | `cap_13` de Scott** despues de la TAREA 2, con los dos pasos fuera (`73.4`, `73.5`). No a ojo.
+  L127 - ['61'] [] | - **`D.61`**: cada discutible ejecutado o cerrado. Ninguno abierto.
+  L128 - ['5', '64', '64', '64'] [] | - **`R5`** en cada bloque `$` de tu tramo, medido con `.v64ext/pegado64.py` y `.v64aud/normal/bloque
+  L129 - ['75', '9'] [] | cambiada a la `75`, y pegado. **Y `R9`**, donde marques fidelidad.
+  L130 - ['4', '59', '59.18'] [] | - **La cabecera y la tabla de cierre se reescriben al cerrar contra lo que se hizo** (la letra del `
+  L131 S ['73.7'] ['dos'] | parada**, y las dos ultimas caidas vivieron en celdas de tabla (`73.7`).
+  L134 - ['75'] [] | - Commitea `docs/loop/`, `dataset/`, `bitacora/`, `censos/`, los movidos a `_insertados` y tu carpet
+  L141 - ['2'] [] | - **NO INSERTAS NADA ANTES DE CERRAR LA TAREA 2**, y **NO TERMINAS TU TURNO CON NADA VIVO**, ni un `
+  L142 - ['8', '17'] [] | - **NO CORRIGES NINGUN OTRO NODO DEL GRAFO** ni otro paso de `dar_elogio` que no sean el `8` y el `1
+  L143 - ['4.2'] [] | - **NO CAMBIAS NINGUNA LINEA PREPARADA NI NINGUNA FICHA** fuera de lo que la aduana levante en el ac
+  L146 - ['7', '55'] [] | - **NO TOCAS `src/`, `scripts/`, el banco, el arnes, el tablero ni los protocolos** (`7.F`, `D.55`),
+  L152 - [] ['Cero', 'cero'] | **Cero guiones largos y cero guiones medios. Deja correr el hook. Si algo contradice una regla vigen
+lineas del encargo: {'linea de bloque sangrado': 22, 'prosa con numero, con seccion de la ACTA 73': 18, 'prosa con numero, sin seccion de la ACTA 73': 53, 'prosa sin digito ni palabra de numero': 60} | suma: 153

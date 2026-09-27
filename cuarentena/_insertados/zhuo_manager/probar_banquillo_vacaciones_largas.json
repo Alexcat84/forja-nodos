@@ -1,0 +1,39 @@
+{
+  "id": "probar_banquillo_vacaciones_largas",
+  "titulo": "Probar la fuerza de tu banquillo con la prueba de las vacaciones largas",
+  "denominaciones": {
+    "nombre_largo": "La pregunta que se hace a cada lider del equipo, como se lee cada respuesta, y para que sirve un banquillo fuerte",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "build a great bench, the extended vacation test"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Con cada lider de tu equipo, y antes de plantearte si puedes atacar el siguiente problema grande.",
+  "entregable_esperado": "Una lectura de si cada lider es un punto unico de fallo, y una idea de que capa de liderazgo hay que reforzar.",
+  "pasos_accionables": [
+    "Plantea a cada lider de tu equipo el escenario que la autora llama la prueba de las vacaciones largas, y que ella prefiere a la version de que te atropelle un autobus, que le parece morbosa.",
+    "Hazle la pregunta: si te fueras a caminar por unas montanias lejanas o a tomar el sol en una isla remota durante unos meses, cuanto tendria que meterse tu propio jefe para asegurar que todo sigue funcionando bien?",
+    "Lee la respuesta no mucho como lo que es: enhorabuena, tienes un gran banquillo.",
+    "Lee la respuesta mi jefe tendria que hacer bastante como la senal de que tu siguiente capa de liderazgo necesita refuerzo.",
+    "Entiende que significa tener un gran banquillo: que tus lugartenientes podrian tomar el mando por ti si te sacan de la oficina inesperadamente, que no eres un punto unico de fallo, y que si no estas no se declaran incendios, no estalla el caos y el trabajo no se para.",
+    "Trata eso como una de las senales mas fuertes de liderazgo sobresaliente, porque significa que el equipo que has construido puede llevar el barco y prosperar aunque tu no estes al timon.",
+    "Si alguien te objeta que un equipo que tiene exito sin ti significa que tu no aportas valor, contesta lo que el libro contesta: preguntate si incluso a los mejores lideres se les puede entrenar para rendir todavia mejor. La respuesta es que si, rotundamente, asi que sigues viendo tu trabajo como el de un multiplicador para tu gente.",
+    "Usa lo que un banquillo fuerte te libera para lo que el libro dice que sirve: atacar la siguiente colina grande del horizonte. Cuando Facebook todavia se llevaba desde una habitacion de residencia de Harvard, su fundador escribia personalmente la mayor parte del codigo del servicio, y contratar a sus primeros ingenieros no le dejo obsoleto, solo le dejo centrar su atencion en otras cosas, extender el servicio a otras universidades, desarrollar funciones nuevas y contratar a otros lideres que trabajaran con el.",
+    "Haz crecer tus ambiciones con la capacidad del grupo, porque el trabajo que hace tu equipo no deberia ser estatico, y preguntate cual es el siguiente problema grande que tu equipo puede asumir y como puedes ayudar a que ocurra."
+  ],
+  "resumen_teorico": "Es la cuarta leccion de contratar a escala y la unica que mide en vez de contratar: su entregable es un diagnostico del equipo actual, no una incorporacion. El libro da la pregunta literal y da tambien las dos lecturas de la respuesta, que es lo que la hace ejecutable y no una reflexion. La objecion del paso 7 va dentro porque el libro la plantea y la contesta, y sin ella el nodo dejaria abierta la duda que su propio consejo provoca. El caso del fundador de Facebook va dentro como ejemplo nombrado (manual seccion 3.5). Lo que el libro NO dice, y por eso no esta escrito aqui, es cada cuanto se pasa la prueba, ni que se hace en concreto para reforzar la capa siguiente cuando la respuesta sale mal.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}

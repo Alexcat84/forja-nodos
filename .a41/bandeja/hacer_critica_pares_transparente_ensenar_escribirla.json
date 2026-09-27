@@ -1,0 +1,42 @@
+{
+  "id": "hacer_critica_pares_transparente_ensenar_escribirla",
+  "titulo": "Hacer transparente la critica entre pares en vez de confidencial, extenderla a toda la plantilla y ensenar a escribirla",
+  "denominaciones": {
+    "nombre_largo": "El duodecimo de los trece elementos: transparente o confidencial, con los dos beneficios y las dos pegas de la confidencialidad puestos uno a uno",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "transparent or confidential"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando ya has decidido hacer critica de trescientos sesenta grados y tienes que decidir si lo que la gente escribe de sus companieros lo ven esos companieros o solo sus jefes.",
+  "entregable_esperado": "La critica entre pares hecha transparente, extendida a todos los empleados de la empresa, con una leccion de escritura dada y, si quieres, un campo aparte para critica confidencial.",
+  "pasos_accionables": [
+    "Ten delante la decision, que el texto plantea asi: si haces critica de trescientos sesenta grados, tienes que decidir si sera transparente, es decir que lo que la gente escribe de sus companeros sea visible para esos companeros, o confidencial, es decir visible solo para los jefes de esos companeros.",
+    "Hazla transparente, que es lo que el texto recomienda con fuerza, por lo que dice de la confidencial: no anima a desafiar directamente, y a menudo hace dano tambien en la dimension de importarle a uno las personas, porque la gente es a menudo mas odiosamente agresiva cuando esta en el anonimato.",
+    "Cuenta igualmente con los dos beneficios que el texto le reconoce a la confidencial: que en teoria permite a los empleados escribir en taquigrafia, porque si sabes que alguien va a ver lo que escribes de el es probable que dediques mas tiempo a elegir las palabras; y que a veces la confidencialidad hace que la gente le de a un jefe una critica que de otro modo no le daria.",
+    "Y con las dos pegas grandes: que no obliga a los pares a tener conversaciones directas entre ellos, con lo que se pierde la ocasion de empujar una cultura de critica directa y abierta y en el peor caso se fomenta la punalada por la espalda; y que obliga a los jefes a leer y sintetizar toda la critica de pares de todos sus empleados, porque no les es transparente, y esa sintesis es a veces un proceso que resta valor.",
+    "Cuenta con lo que la transparencia consigue, que es como el texto cierra el argumento: empuja una cultura de critica directa, es mas eficiente para los jefes, y da a los empleados una critica de sus pares de mas calidad.",
+    "Mete en el proceso de trescientos sesenta grados a todos los empleados de la empresa, que es lo que el texto recomienda con fuerza: si lo haces solo para los altos cargos les estas dando otro privilegio mas que los de mas abajo en la jerarquia no tienen.",
+    "Empieza cuanto antes a ensenar a la gente a escribir buena critica, porque cuanto antes empieces mejor y mas util sera.",
+    "Da una leccion de buena escritura del tipo ensenia y no cuentes, que es la que el texto recomienda: cuanto mas abstracta es la critica mas desconcierta, y cuanto mas especifica es, hasta el punto de poder contar la historia de un incidente que ilustre lo que quieres decir, mejor.",
+    "Cuenta con que la mejor manera de que la gente aprenda es empezar a hacerlo, escribiendola y recibiendola.",
+    "Cuenta con el efecto que la transparencia tiene sobre quien escribe: cuando la gente sabe que la persona de la que escribe va a saber que fue ella quien lo escribio, pone naturalmente mas cuidado en decir las cosas de una manera util, y tambien se ve tentada de no decir nada en absoluto, que es por lo que empujar a la gente hacia una curva es tan importante.",
+    "Opta por la critica de pares transparente, y si quieres deja ademas un campo en el que la gente pueda dar critica confidencial, a lo que el texto dice no oponerse."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_14.md, unidad Bonus Chapter, titulo textual Bonus Chapter: A Radically Candid Performance Review. Sale de las lineas 205 a 219, que son la PIEZA P14 de la frontera de esta vuelta, 450 palabras, y es el elemento numero 12 de los trece que la cabeza nombra. POR QUE ES PROCEDIMIENTO Y NO POSTURA, con D.27 delante: el libro pone su propio inventario de OBJETOS que hay que pesar, dos beneficios de la confidencial en la linea 209 y dos pegas en la 211, cada uno nombrado con su numeral por el propio texto, y despues MEDIOS concretos, extenderlo a todos los empleados en la 213, la leccion de escritura en la 215 y el campo opcional en la 219. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 11 pasos, 11 TRANSCRIPCION, 0 PUENTE. P1 y P2 salen de la linea 207; P3 de la 209; P4 y P5 de la 211; P6 de la 213; P7, P8 y P9 de la 215; P10 de la 217; P11 de la 219. NO ESCRIBO EL CHISTE COMO PASO: el parentesis de la linea 213 sobre eliminar los despachos de esquina y las plazas de aparcamiento de directivos es un aparte del texto y no un medio del procedimiento. NO ESCRIBO DESTINATARIO NI PERIODO NI RESPONSABLE: el texto no dice quien da la leccion de escritura ni cuando. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: como se hace la transicion si tu empresa ya tenia critica confidencial, que se hace con quien se niega a firmar lo que escribe, ni como se modera una critica transparente que se pasa de raya.",
+  "atribuciones": [],
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-13"
+    }
+  ]
+}

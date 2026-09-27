@@ -1,0 +1,38 @@
+BASE = b698aef
+pieza                              BASE        HOY
+nodos                               282        297
+pasos                              2283       2464
+sig                                 107        108
+prev                                107        108
+ver                                 410        423
+no_consumada                         14         14
+bandeja lote 4                       63         48
+archivados lote 4                    79         94
+bandeja lote 5                        3          3
+lote 4 total                        142        142
+lote 4 insertado                 55.63%     66.20%
+
+TANDA DE LA VUELTA AUDITADA, del dato: 15 ficheros
+  abrazar_incomodidad_arrancar_critica_equipo             20 pasos
+  comprobar_criticas_hombre_mujeres_equipo                 6 pasos
+  correr_semana_arreglo_averias_gestion                    8 pasos
+  dar_guia_acto_seis_consejos                             14 pasos
+  dar_guia_humilde_tres_tecnicas                          15 pasos
+  dar_guia_util_cuatro_recordatorios                      10 pasos
+  elegir_medio_dar_guia_jerarquia_modos                   13 pasos
+  elogiar_publico_criticar_privado_sus_tres_matices        9 pasos
+  evitar_personalizar_guia_aceptar_personal               12 pasos
+  exigir_critica_jefe_reticente                            9 pasos
+  medir_guia_propia_pegatinas_marco                       13 pasos
+  organizar_sistema_recoger_quejas_equipo                  9 pasos
+  practicar_franqueza_radical_jefe_propio                 17 pasos
+  responder_critica_abrasiva_cuatro_reglas                14 pasos
+  revisar_critica_mujer_agresiva_cuatro_tacticas          12 pasos
+pasos de la tanda: 181
+
+ids NUEVOS en el grafo: 15
+ids QUE DESAPARECEN del grafo: 0 []
+nodos PREEXISTENTES que cambiaron: 1
+  ~ construir_confianza_equipo_tiempo_solas
+      campo nodos_siguientes
+      campo resumen_teorico

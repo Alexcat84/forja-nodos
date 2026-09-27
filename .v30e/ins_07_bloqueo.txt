@@ -1,0 +1,121 @@
+ADUANA DE INSERCION, candidato 'compartir_logica_mostrar_razonamiento'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (249 del grafo mas 99 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 10. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino centrar_debate_ideas_fuera_egos  [Centrar el debate en las ideas y dejar los egos fuera, cambiando los papeles cuando alguien empieza a defender el suyo]
+    levantada por: similitud_texto
+    similitud_texto    0.364 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.493 (umbral 0.60)
+    paso 4 del candidato contra paso 6 de centrar_debate_ideas_fuera_egos
+
+  vecino minimizar_impuesto_colaboracion_equipo  [Minimizar el impuesto de colaboracion de tu equipo cargando tu con el, con las tres cosas que equilibran la balanza]
+    levantada por: similitud_texto
+    similitud_texto    0.381 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.487 (umbral 0.60)
+    paso 4 del candidato contra paso 1 de minimizar_impuesto_colaboracion_equipo
+
+  vecino establecer_credibilidad_pericia_humildad  [Establecer tu credibilidad demostrando pericia y humildad, y ayudar a que la establezcan los que deciden en tu equipo]
+    levantada por: similitud_texto
+    similitud_texto    0.371 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.486 (umbral 0.60)
+    paso 4 del candidato contra paso 3 de establecer_credibilidad_pericia_humildad
+
+  vecino explicar_idea_facil_comprender_oyente  [Explicar una idea de forma que sea imposible no entenderla, cargando tu con la responsabilidad de que se entienda]
+    levantada por: similitud_texto
+    similitud_texto    0.380 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.473 (umbral 0.60)
+    paso 3 del candidato contra paso 4 de explicar_idea_facil_comprender_oyente
+
+  vecino comprobar_criticas_hombre_mujeres_equipo  [Comprobar si te estas conteniendo al criticar a las mujeres de tu equipo, preguntandoselo a ellas y pidiendoles que te midan]
+    levantada por: similitud_texto
+    similitud_texto    0.365 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.466 (umbral 0.60)
+    paso 3 del candidato contra paso 6 de comprobar_criticas_hombre_mujeres_equipo
+
+  vecino persuadir_emocion_oyente_no_propia  [Persuadir atendiendo a la emocion del que escucha y no a la tuya, aunque tu conexion con la decision sea fuerte]
+    levantada por: similitud_texto
+    similitud_texto    0.356 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.453 (umbral 0.60)
+    paso 4 del candidato contra paso 1 de persuadir_emocion_oyente_no_propia
+
+  vecino pedir_hechos_decision_evitar_recomendaciones  [Pedir hechos y no recomendaciones cuando reunes informacion para una decision]
+    levantada por: similitud_texto
+    similitud_texto    0.365 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.445 (umbral 0.60)
+    paso 4 del candidato contra paso 4 de pedir_hechos_decision_evitar_recomendaciones
+
+  vecino parar_debate_emocion_agotamiento  [Parar un debate cuando la gente esta agotada o demasiado cargada de emocion, y aplazarlo en vez de dejar que decida el cansancio]
+    levantada por: similitud_texto
+    similitud_texto    0.371 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.439 (umbral 0.60)
+    paso 4 del candidato contra paso 1 de parar_debate_emocion_agotamiento
+
+  vecino bajar_detalle_organizacion_fuente_hechos  [Bajar al detalle de tu organizacion y buscar los hechos en su fuente, sin dejar que te lleguen filtrados por capas]
+    levantada por: similitud_texto
+    similitud_texto    0.371 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.437 (umbral 0.60)
+    paso 3 del candidato contra paso 8 de bajar_detalle_organizacion_fuente_hechos
+
+  vecino crear_obligacion_disentir_equipo  [Crear en tu equipo la obligacion de disentir, tratando el acuerdo de todos como una bandera roja]
+    levantada por: similitud_texto
+    similitud_texto    0.366 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.418 (umbral 0.60)
+    paso 4 del candidato contra paso 1 de crear_obligacion_disentir_equipo
+
+BLOQUEADO: faltan veredictos para centrar_debate_ideas_fuera_egos, minimizar_impuesto_colaboracion_equipo, establecer_credibilidad_pericia_humildad, explicar_idea_facil_comprender_oyente, comprobar_criticas_hombre_mujeres_equipo, persuadir_emocion_oyente_no_propia, pedir_hechos_decision_evitar_recomendaciones, parar_debate_emocion_agotamiento, bajar_detalle_organizacion_fuente_hechos, crear_obligacion_disentir_equipo
+  La aduana no juzga: obliga a juzgar (manual seccion 3).
+  Vuelve a correr el comando con un veredicto por vecino:
+    --veredicto "centrar_debate_ideas_fuera_egos|CONTINUA|madre=centrar_debate_ideas_fuera_egos|que añade el hijo a la madre"
+    --veredicto "centrar_debate_ideas_fuera_egos|REPITE|por que no añade procedimiento"
+    --veredicto "centrar_debate_ideas_fuera_egos|SANO|por que no son el mismo trabajo"
+    --veredicto "centrar_debate_ideas_fuera_egos|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "minimizar_impuesto_colaboracion_equipo|CONTINUA|madre=minimizar_impuesto_colaboracion_equipo|que añade el hijo a la madre"
+    --veredicto "minimizar_impuesto_colaboracion_equipo|REPITE|por que no añade procedimiento"
+    --veredicto "minimizar_impuesto_colaboracion_equipo|SANO|por que no son el mismo trabajo"
+    --veredicto "minimizar_impuesto_colaboracion_equipo|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "establecer_credibilidad_pericia_humildad|CONTINUA|madre=establecer_credibilidad_pericia_humildad|que añade el hijo a la madre"
+    --veredicto "establecer_credibilidad_pericia_humildad|REPITE|por que no añade procedimiento"
+    --veredicto "establecer_credibilidad_pericia_humildad|SANO|por que no son el mismo trabajo"
+    --veredicto "establecer_credibilidad_pericia_humildad|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "explicar_idea_facil_comprender_oyente|CONTINUA|madre=explicar_idea_facil_comprender_oyente|que añade el hijo a la madre"
+    --veredicto "explicar_idea_facil_comprender_oyente|REPITE|por que no añade procedimiento"
+    --veredicto "explicar_idea_facil_comprender_oyente|SANO|por que no son el mismo trabajo"
+    --veredicto "explicar_idea_facil_comprender_oyente|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "comprobar_criticas_hombre_mujeres_equipo|CONTINUA|madre=comprobar_criticas_hombre_mujeres_equipo|que añade el hijo a la madre"
+    --veredicto "comprobar_criticas_hombre_mujeres_equipo|REPITE|por que no añade procedimiento"
+    --veredicto "comprobar_criticas_hombre_mujeres_equipo|SANO|por que no son el mismo trabajo"
+    --veredicto "comprobar_criticas_hombre_mujeres_equipo|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "persuadir_emocion_oyente_no_propia|CONTINUA|madre=persuadir_emocion_oyente_no_propia|que añade el hijo a la madre"
+    --veredicto "persuadir_emocion_oyente_no_propia|REPITE|por que no añade procedimiento"
+    --veredicto "persuadir_emocion_oyente_no_propia|SANO|por que no son el mismo trabajo"
+    --veredicto "persuadir_emocion_oyente_no_propia|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "pedir_hechos_decision_evitar_recomendaciones|CONTINUA|madre=pedir_hechos_decision_evitar_recomendaciones|que añade el hijo a la madre"
+    --veredicto "pedir_hechos_decision_evitar_recomendaciones|REPITE|por que no añade procedimiento"
+    --veredicto "pedir_hechos_decision_evitar_recomendaciones|SANO|por que no son el mismo trabajo"
+    --veredicto "pedir_hechos_decision_evitar_recomendaciones|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "parar_debate_emocion_agotamiento|CONTINUA|madre=parar_debate_emocion_agotamiento|que añade el hijo a la madre"
+    --veredicto "parar_debate_emocion_agotamiento|REPITE|por que no añade procedimiento"
+    --veredicto "parar_debate_emocion_agotamiento|SANO|por que no son el mismo trabajo"
+    --veredicto "parar_debate_emocion_agotamiento|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "bajar_detalle_organizacion_fuente_hechos|CONTINUA|madre=bajar_detalle_organizacion_fuente_hechos|que añade el hijo a la madre"
+    --veredicto "bajar_detalle_organizacion_fuente_hechos|REPITE|por que no añade procedimiento"
+    --veredicto "bajar_detalle_organizacion_fuente_hechos|SANO|por que no son el mismo trabajo"
+    --veredicto "bajar_detalle_organizacion_fuente_hechos|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "crear_obligacion_disentir_equipo|CONTINUA|madre=crear_obligacion_disentir_equipo|que añade el hijo a la madre"
+    --veredicto "crear_obligacion_disentir_equipo|REPITE|por que no añade procedimiento"
+    --veredicto "crear_obligacion_disentir_equipo|SANO|por que no son el mismo trabajo"
+    --veredicto "crear_obligacion_disentir_equipo|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"

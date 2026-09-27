@@ -1,0 +1,17 @@
+| # | candidato | linea | pasos | nodos tras entrar | levantados | por lectura | aristas |
+|---:|---|---:|---:|---:|---:|---:|---:|
+| 1 | `desplegar_tres_conversaciones_carrera` | L19 | 12 | **303** | 2 | 0 | 0 mas 2 EN COLA |
+| 2 | `conversar_historia_vida_descubrir_motivadores` | L47 | 15 | **304** | 2 | 0 | 2 |
+| 3 | `conversar_suenios_cruzar_habilidades` | L61 | 15 | **305** | 0 | 2 | 1 |
+| 4 | `trazar_plan_dieciocho_meses_aprendizaje` | L77 | 14 | **306** | 1 | 3 | 1 |
+| 5 | `armar_plan_anual_crecimiento_equipo` | L93 | 29 | **307** | 2 | 1 | 0 mas 1 EN COLA |
+| 6 | `montar_proceso_contratacion_reducir_sesgo` | L129 | 32 | **308** | 0 | 2 | 0 |
+| 7 | `facilitar_despido_tres_cosas` | L169 | 11 | **309** | 0 | 1 | 1 |
+| 8 | `admitir_pronto_mal_desempenio_cuatro_razones` | L175 | 9 | **310** | 2 | 2 | 1 |
+| 9 | `calibrar_decision_despido_documentarla` | L181 | 13 | **311** | 1 | 3 | 1 |
+| 10 | `sopesar_consejo_legal_despedir_humildad` | L189 | 8 | **312** | 2 | 1 | 1 |
+| 11 | `contactar_despedido_mes_despues` | L197 | 6 | **313** | 0 | 2 | 0 |
+| 12 | `calibrar_ascensos_evitar_politica` | L205 | 19 | **314** | 2 | 1 | 0 |
+| 13 | `evitar_obsesion_ascenso_estatus` | L229 | 10 | **315** | 1 | 1 | 0 mas 1 EN COLA |
+| 14 | `reconocer_excelencia_trayectoria_gradual` | L239 | 13 | **316** | 0 | 2 | 0 |
+| | **TOTAL de `cap_10`** | | **206** | **316** | **15** | **21** | **8 mas 4 EN COLA** |

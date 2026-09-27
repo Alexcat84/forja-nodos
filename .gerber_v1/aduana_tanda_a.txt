@@ -1,0 +1,125 @@
+########## dictar_ritmo_crecimiento_preguntas_escritas
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] dictar_ritmo_crecimiento_preguntas_escritas   (dictar_ritmo_crecimiento_preguntas_escritas.json)
+    vecino descubrir_motivacion_sentido_persona  [levantada por: paso_contra_nodo]
+      similitud_texto 0.207 | familia_id 0.000 | paso_contra_nodo 0.603
+      paso 1 del candidato contra paso 10 de descubrir_motivacion_sentido_persona
+    vecino trazar_modelo_negocio_cliente_primero  [levantada por: similitud_texto]
+      similitud_texto 0.372 | familia_id 0.000 | paso_contra_nodo 0.479
+      paso 3 del candidato contra paso 9 de trazar_modelo_negocio_cliente_primero
+    vecino dar_valor_constante_cuatro_publicos  [levantada por: similitud_texto]
+      similitud_texto 0.373 | familia_id 0.000 | paso_contra_nodo 0.450
+      paso 7 del candidato contra paso 1 de dar_valor_constante_cuatro_publicos
+    vecino ceder_control_reforzar_competencia_claridad  [levantada por: similitud_texto]
+      similitud_texto 0.388 | familia_id 0.000 | paso_contra_nodo 0.444
+      paso 7 del candidato contra paso 4 de ceder_control_reforzar_competencia_claridad
+    vecino hacer_trabajo_futuro_imaginar_negocio  [levantada por: similitud_texto]
+      similitud_texto 0.400 | familia_id 0.000 | paso_contra_nodo 0.442
+      paso 7 del candidato contra paso 7 de hacer_trabajo_futuro_imaginar_negocio
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.
+########## construir_empresa_plantilla_vision_diaria
+########## trazar_modelo_negocio_cliente_primero
+  CHOCAN entre si dentro del lote  : 0
+
+LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+  vecinos levantados en total      : 3
+  por candidato bloqueado          : menor 3, mediana 3, mayor 3
+  que señal levanta cada vecindad  : similitud_texto 3
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] trazar_modelo_negocio_cliente_primero   (trazar_modelo_negocio_cliente_primero.json)
+    vecino dar_valor_constante_cuatro_publicos  [levantada por: similitud_texto]
+      similitud_texto 0.390 | familia_id 0.000 | paso_contra_nodo 0.556
+      paso 1 del candidato contra paso 1 de dar_valor_constante_cuatro_publicos
+    vecino dictar_ritmo_crecimiento_preguntas_escritas  [levantada por: similitud_texto]
+      similitud_texto 0.365 | familia_id 0.000 | paso_contra_nodo 0.479
+      paso 9 del candidato contra paso 3 de dictar_ritmo_crecimiento_preguntas_escritas
+    vecino ceder_control_reforzar_competencia_claridad  [levantada por: similitud_texto]
+      similitud_texto 0.372 | familia_id 0.000 | paso_contra_nodo 0.473
+      paso 2 del candidato contra paso 2 de ceder_control_reforzar_competencia_claridad
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.
+########## fingir_prototipo_cinco_mil_replicas
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 358   (270 del grafo mas 88 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 1
+  BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[ENTRARIA] fingir_prototipo_cinco_mil_replicas   (fingir_prototipo_cinco_mil_replicas.json)
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.
+########## dar_valor_constante_cuatro_publicos
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] dar_valor_constante_cuatro_publicos   (dar_valor_constante_cuatro_publicos.json)
+    vecino trazar_modelo_negocio_cliente_primero  [levantada por: similitud_texto]
+      similitud_texto 0.395 | familia_id 0.000 | paso_contra_nodo 0.564
+      paso 1 del candidato contra paso 1 de trazar_modelo_negocio_cliente_primero
+    vecino documentar_trabajo_manual_operaciones  [levantada por: similitud_texto]
+      similitud_texto 0.406 | familia_id 0.000 | paso_contra_nodo 0.466
+      paso 3 del candidato contra paso 1 de documentar_trabajo_manual_operaciones
+    vecino encargar_meta_especifica_dejar_libre_metodo  [levantada por: similitud_texto]
+      similitud_texto 0.364 | familia_id 0.000 | paso_contra_nodo 0.456
+      paso 1 del candidato contra paso 3 de encargar_meta_especifica_dejar_libre_metodo
+    vecino dictar_ritmo_crecimiento_preguntas_escritas  [levantada por: similitud_texto]
+      similitud_texto 0.373 | familia_id 0.000 | paso_contra_nodo 0.450
+      paso 1 del candidato contra paso 7 de dictar_ritmo_crecimiento_preguntas_escritas
+    vecino unificar_color_forma_vestuario_modelo  [levantada por: similitud_texto]
+      similitud_texto 0.419 | familia_id 0.000 | paso_contra_nodo 0.423
+      paso 1 del candidato contra paso 3 de unificar_color_forma_vestuario_modelo
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.
+########## operar_modelo_gente_destreza_minima
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 1
+poblacion del barrido       : 358   (270 del grafo mas 88 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 1
+  BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[ENTRARIA] operar_modelo_gente_destreza_minima   (operar_modelo_gente_destreza_minima.json)
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.

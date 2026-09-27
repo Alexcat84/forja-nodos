@@ -1,0 +1,15 @@
+| # | id | informe en seco | el grafo tras insertarlo | vive hoy | archivado | arista de cabeza |
+|---:|---|---|---:|---|---|---|
+| 12 | `montar_tablero_kanban_medir_actividades` | **BLOQUEARIA**, 1 vecino | 268 | **SI** | **SI** | **CABLEADA hoy** |
+| 13 | `pasear_organizacion_hallar_problemas_pequenios` | **ENTRARIA sin leer nada**, 0 vecinos | 269 | **SI** | **SI** | **CABLEADA hoy** |
+| 14 | `debatir_decidir_asuntos_cultura_evitar_delegar` | **ENTRARIA sin leer nada**, 0 vecinos | 270 | **SI** | **SI** | **no lleva, y se dice por que** |
+
+| | |
+|---|---:|
+| corridas de `forja.py informe` de un candidato suelto | **3** |
+| corridas de `forja.py insertar`, una por candidato | **3** |
+| cargas masivas | **0** |
+| nodos que entraron | **3** |
+| pasos que entraron con ellos | **25** |
+| archivados en `cuarentena/_insertados/scott_radical_candor/` | **3** |
+| aristas de cabeza declaradas en el acto | **2** |

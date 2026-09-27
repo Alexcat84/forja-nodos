@@ -1,0 +1,3 @@
+$ python scripts/deuda.py | head -3
+  pendientes: 14    pagadas: 8
+  ultima vuelta de saneamiento: 44

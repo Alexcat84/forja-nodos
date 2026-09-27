@@ -1,0 +1,80 @@
+===== preguntar_seguimiento_hallar_huecos | grafo
+  titulo: Preguntar en la reunion a solas las preguntas de seguimiento que ensenian los huecos entre lo que la persona hace, lo que cree que deberia hacer y lo que quiere hacer
+  fuente: ['scott_radical_candor'] | previos: [] | siguientes: []
+  cond: Cuando estas dentro de una reunion a solas y quieres ensenar que escuchas, que te importa y que quieres ayudar, y ademas sacar los huecos entre lo que la persona hace, lo que cree que deberia hacer y lo que quiere hacer.
+  P1. Haz estas preguntas de seguimiento con el doble proposito que el texto les pone: ensenar no solo que estas escuchando sino que te importa y quieres ayudar, e identificar los huecos entre lo que la gente hace, lo que cree que deberia hacer y lo que quiere hacer.
+  P2. Pregunta: por que?
+  P3. Pregunta: como puedo ayudar?
+  P4. Pregunta: que puedo hacer, o dejar de hacer, que te facilitaria esto?
+  P5. Pregunta: que es lo que te desvela por la noche?
+  P6. Pregunta: en que estas trabajando en lo que no quieres trabajar?
+  P7. Pregunta: no quieres trabajar en ello porque no te interesa o porque crees que no es importante?
+  P8. Pregunta: que puedes hacer para dejar de trabajar en ello?
+  P9. Pregunta: en que no estas trabajando en lo que si quieres trabajar?
+  P10. Pregunta: por que no estas trabajando en ello?
+  P11. Pregunta: que puedes hacer para empezar a trabajar en ello?
+  P12. Pregunta: como te sientes respecto a las prioridades de los equipos de los que dependes?
+  P13. Pregunta: en que estan trabajando ellos que parezca poco importante o incluso contraproducente?
+  P14. Pregunta: que es lo que no estan haciendo y a ti te gustaria que hicieran?
+  P15. Pregunta: has hablado directamente con esos otros equipos de lo que te preocupa? Y si no, por que no?
+  P16. Y ten presente lo que el texto marca como nota importante sobre esa ultima: el objetivo aqui es animar a la gente a plantear el asunto directamente entre ellos, no resolverles el problema tu.
+===== entregar_evaluacion_desempeno_tres_claves | grafo
+  titulo: Entregar la evaluacion de desempeno cara a cara con las tres claves del mando: franqueza, escucha total y dejar fuera las emociones propias
+  fuente: ['grove_high_output'] | previos: [] | siguientes: []
+  cond: Cuando el mando va a entregar cara a cara, en la conversacion de revision, la evaluacion de desempeno de un subordinado.
+  P1. Se totalmente franco con el subordinado al entregarle la revision, tanto al elogiar como al criticar, porque la credibilidad y la integridad de todo el sistema de revision dependen de esa franqueza.
+  P2. Recuerda que el objetivo de la comunicacion es hacer llegar tus pensamientos de tu cabeza a la del subordinado, y que las palabras son solo el medio: el fin es que se comunique el pensamiento correcto.
+  P3. Observa al subordinado mientras hablas y sigue insistiendo hasta estar seguro de que tu mensaje llego y se entendio, sin conformarte con que haya parafraseado tus palabras.
+  P4. Emplea toda tu capacidad sensorial, no solo el oido, para confirmar que tus puntos se estan interpretando correctamente en la cabeza del subordinado.
+  P5. Deja fuera tus propias inseguridades, ansiedades o culpa: la revision trata de los problemas del subordinado y no de los tuyos.
+  P6. Controla esas emociones propias para que no afecten tu tarea mientras entregas la revision, aunque sepas que van a aflorar.
+===== construir_indicador_tendencia_patron | grafo
+  titulo: Construir el indicador de tendencia midiendo la salida contra el tiempo y contra un patron
+  fuente: ['grove_high_output'] | previos: ['representar_actividad_caja_negra_ventanas'] | siguientes: ['dimensionar_plantilla_administrativa_pronostico']
+  cond: Cuando ya tienes nombrada la salida de tu caja y quieres una ventana que te empuje a mirar hacia delante, en vez de una foto suelta del mes que acaba de cerrar.
+  P1. Monta el indicador de tendencia, que es otra ventana recortada en tu caja.
+  P2. Pon en el la salida de tu operacion: los desayunos entregados, los modulos de programa terminados o los comprobantes tramitados, segun lo que hagas.
+  P3. Mide esa salida contra el tiempo, o sea lo de este mes contra lo de una serie de meses anteriores.
+  P4. Mide esa misma salida tambien contra algun patron o nivel esperado.
+  P5. Extrapola del pasado hacia delante, que es a lo que te lleva casi solo el hecho de tener la tendencia a la vista.
+  P6. Cuando el resultado no coincida con lo que decia el patron, parate a pensar por que fue el que fue y no el que el patron anunciaba.
+===== planificar_tres_pasos_demanda_estado_brecha | grafo
+  titulo: Planificar en los tres pasos del libro: la demanda del entorno, el estado presente, y lo que hay que hacer para conciliarlos
+  fuente: ['grove_high_output'] | previos: [] | siguientes: ['examinar_demanda_entorno_dos_marcos_temporales', 'determinar_estado_presente_capacidades_proyectos_merma', 'cerrar_brecha_dos_preguntas_estrategia']
+  cond: Cuando tienes que planificar el trabajo de tu grupo y no sabes por donde empezar, o cuando lo que llamas plan es una lista de intenciones y no una comparacion entre lo que te van a pedir y lo que vas a producir.
+  P1. Monta tu proceso general de planificacion sobre un razonamiento analogo al de la fabrica.
+  P2. Da el paso 1 estableciendo la necesidad o demanda proyectada: que va a demandar de ti el entorno, de tu negocio o de tu organizacion.
+  P3. Da el paso 2 estableciendo tu estado presente: que estas produciendo ahora, y que vas a estar produciendo cuando se completen los proyectos que ya tienes en marcha.
+  P4. Formula ese paso 2 tambien de la otra manera: donde va a estar tu negocio si no haces nada distinto de lo que estas haciendo.
+  P5. Da el paso 3 comparando y conciliando los pasos 1 y 2.
+  P6. Convierte esa conciliacion en la pregunta concreta: que mas, o que menos, necesitas hacer para producir lo que tu entorno va a demandar.
+===== identificar_disparadores_propios_reaccion | grafo
+  titulo: Identificar tus disparadores y cazarte a tiempo antes de responder
+  fuente: ['zhuo_manager'] | previos: ['listar_debilidades_disparadores_propios'] | siguientes: []
+  cond: Cuando quieres saber que situaciones te descarrilan la efectividad, o cuando te has visto reaccionando mas fuerte que los que tenias alrededor y no sabes por que.
+  P1. La otra cara de la moneda es entender que situaciones hacen lo contrario, o sea, te disparan una reaccion intensamente negativa que te descarrila la efectividad.
+  P2. Ten claro que separa un disparador de una reaccion negativa normal: que tiene un efecto desmedido sobre ti en concreto. Cualquier directivo se sentiria decepcionado si un candidato prometedor rechazara una oferta o si una empleada estrella entregara su carta de renuncia. La pregunta mas interesante es: cuales son las cosas que a mi me aprietan los botones, pero quiza no a otra persona? Ahi es donde corres mas riesgo de que te vean como irracional.
+  P3. Ten delante el ejemplo que la autora da de si misma: uno de sus disparadores es la injusticia, y si algo no le parece justo le sube la tension y le empieza a latir el corazon, y hace una montania de un grano de arena discutiendo el punto con terquedad aunque no tenga toda la informacion, lo que no siempre lleva a las discusiones mas productivas.
+  P4. Usalo para lo que sirve: sabiendo que te dispara, puedes cazarte en el momento y dar un paso atras antes de responder como un exaltado. A la autora le bastan cinco minutos para calmarse y volver a estar serena.
+  P5. Comparte tus disparadores y entera de cuales son los de los demas, que el libro dice que ayuda. Como estamos todos cableados de forma distinta, tus pares pueden no ser conscientes de como les esta afectando su conducta, y al reves.
+  P6. El libro lo cuenta con su caso: tuvo un colega que hablaba en nombre de todo su equipo en las revisiones de direccion, incluso de areas fuera de su especialidad, y a ella le saltaba el disparador de la justicia cada vez que abria la boca. Cuando se lo dijo en privado, el se sorprendio pero le agradecio la opinion: nunca se le habia ocurrido que pudiera parecer que se estaba llevando el credito del trabajo de otros, creia que estaba ayudando a que la revision fuera mas eficiente. Despues de aquello adopto la practica de poner el foco sobre los demas siempre que podia.
+  P7. Cuenta con que los disparadores de otros son otros: a unos les dispara quien parece arrogante o interesado, otros se ponen nerviosos cuando un detalle diminuto no es perfecto, quiza tu retrocedes cuando alguien dice algo de forma agresiva o demasiado dramatica, o se te enciende el genio cuando alguien del equipo tarda dias en responder a tus mensajes.
+  P8. Ten presente donde vive el asunto: los disparadores ocupan el espacio entre tu area de mejora y la de otra persona, porque tu podrias trabajar en controlar tus reacciones, y la otra persona tambien podria salir beneficiada de escuchar tu opinion.
+  P9. Para averiguar cuales son tus disparadores, hazte estas cuatro preguntas.
+  P10. Primera: cuando fue la ultima vez que alguien dijo algo que me molesto mas de lo que molesto a los que tenia alrededor, y por que lo senti con tanta fuerza?
+  P11. Segunda: que dirian mis amigos mas cercanos que son mis manias?
+  P12. Tercera: a quien he conocido de quien haya desconfiado de inmediato, y que me hizo sentir asi?
+  P13. Cuarta: cual es un ejemplo de una vez en que reaccione de forma exagerada y luego me arrepenti, y que me altero tanto en aquel momento?
+  P14. Y cuenta con lo que vale todo esto junto: saber que te levanta y que te hunde es enormemente valioso. Igual que los atletas tienen regimenes estructurados de dieta y ejercicio para seguir compitiendo en su mejor forma, el trabajo que haces para ayudarte a operar en tu mejor version te va a dar muchos mas dias ganadores en el trabajo.
+===== repartir_supervision_puesto_funcional_mision | grafo
+  titulo: Repartir la supervision de un puesto entre su grupo funcional y su division, dando a cada jefe lo que le toca: al de mision las prioridades, al funcional el oficio y la carrera
+  fuente: ['grove_high_output'] | previos: [] | siguientes: []
+  cond: Cuando un puesto pertenece a un grupo funcional y trabaja para una unidad de mision, y hay que decidir de quien depende sin dejar fuera ni las prioridades del negocio ni el oficio de su especialidad.
+  P1. Parte de lo que hace falta para que la organizacion hibrida funcione: una manera de coordinar las unidades de mision y los grupos funcionales, de modo que los recursos de los segundos se asignen y se entreguen para cubrir las necesidades de las primeras.
+  P2. Deja que el grupo funcional al que el puesto pertenece fije sus metodos profesionales, sus practicas y sus estandares.
+  P3. Haz en consecuencia que ese puesto dependa de alguien de la organizacion funcional y de alguien de la organizacion de mision.
+  P4. Ajusta el tipo de supervision de cada uno de los dos a las necesidades distintas de las dos organizaciones.
+  P5. Encarga al jefe de la unidad de mision que le de las prioridades de mision, pidiendole que trabaje en problemas concretos del negocio.
+  P6. Encarga al jefe funcional que se asegure de que esta formado para hacer su trabajo de manera tecnicamente competente.
+  P7. Encarga a ese mismo jefe funcional que supervise y vigile su desempeno tecnico.
+  P8. Encarga al jefe funcional que cuide su carrera dentro de la funcion, quiza promocionandolo si lo hace bien.

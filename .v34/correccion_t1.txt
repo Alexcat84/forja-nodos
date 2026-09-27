@@ -1,0 +1,10 @@
+CORRECCION DECLARADA SOBRE UN NODO YA INSERTADO
+  nodo : construir_confianza_equipo_tiempo_solas
+  campo: resumen_teorico
+  el texto viejo SIGUE ENTERO: 1402 caracteres, ninguno borrado
+  se aniaden 1840 caracteres al final
+  huella antes  : d70267db73796f36
+  huella despues: 51454685dd4c5a97
+
+GATE VERDE sobre la simulacion. CORRECCION ESCRITA EN: construir_confianza_equipo_tiempo_solas
+  razon en bitacora/VEREDICTOS.jsonl

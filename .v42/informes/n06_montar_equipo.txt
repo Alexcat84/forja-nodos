@@ -1,0 +1,22 @@
+$ python forja.py insertar cuarentena/scott_radical_candor/montar_equipo_gestion_desempenio_revisar_sistema.json [3 veredictos y censos]
+ADUANA DE INSERCION, candidato 'montar_equipo_gestion_desempenio_revisar_sistema'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 371   (330 del grafo mas 41 que esperan en bandejas)
+
+DECLARADOS POR LECTURA: 3. Ninguna señal los levanto.
+  entregar_evaluacion_formal_desempenio_nueve_consejos  [Entregar bien una evaluacion formal de desempenio con los nueve consejos que el texto da, de no dar sorpresas a dejar la nota para el final]
+    señales: familia_id 0.091, paso_contra_nodo 0.478, similitud_texto 0.253
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  mantener_proceso_evaluacion_ligero_vigilar_crecimiento  [Mantener ligero el proceso de evaluacion vigilando activamente cuanto tiempo se come, con la herramienta ligera que el texto describe]
+    señales: familia_id 0.0, paso_contra_nodo 0.446, similitud_texto 0.338
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  ser_honesto_transparente_desempenio  [Ser honesto y transparente sobre el desempenio de tu persona a cargo]
+    señales: familia_id 0.111, paso_contra_nodo 0.447, similitud_texto 0.208
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  LA JERARQUIA LA CAZA LA LECTURA, NO LA SEÑAL (D.19, D.29).
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 331
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 3
+CODIGO DE SALIDA: 0

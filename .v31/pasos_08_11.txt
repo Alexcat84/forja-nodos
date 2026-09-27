@@ -1,0 +1,58 @@
+=== montar_reunion_gran_debate   (13 pasos)
+    titulo: Montar la reunion de gran debate, donde se debate y no se decide, con sus logisticas, sus normas y su unico producto
+    P1  Reserva estas reuniones para lo que el texto dice: debate, pero no decisiones, sobre los asuntos mayores que tiene delante el equipo.
+    P2  Cuenta con el primero de los tres propositos que el texto les pone: bajan la tension. Parte de la friccion de muchas reuniones viene de que media sala cree que esta ahi para tomar una decision y la otra media para debatir; los que querian decidir se enfurecen porque los que debaten no van hacia una respuesta, y los que querian debatir se enfurecen porque los que deciden se niegan a pensarlo bien y a mirar todos los angulos. Cuando todo el mundo sabe que la reunion acabara sin decision, esa fuente de tension se elimina.
+    P3  Cuenta con el segundo: te permiten frenar decisiones clave cuando conviene. Cuando un tema es realmente importante y hay mucho desacuerdo, los equipos a veces se lanzan a decidir antes de haberlo pensado bien o de tener suficiente informacion; meter ese tema en la agenda de debate obliga al equipo a seguir peleandose con el, a desenterrar la informacion que falta, a buscar opinion experta o simplemente a pensarlo mas hondo.
+    P4  Cuenta con el tercero: alimentan una cultura de debate mas amplia. El debate deberia ocurrir constantemente en un equipo que funciona, y tener estas reuniones con regularidad y buscarles temas ayuda a construir el musculo y la tolerancia a la discusion y a la disension.
+    P5  Y cuenta con lo que el texto anade sobre esa tercera: cuando toca un debate de los que se juegan la empresa, es importante que las partes implicadas hayan participado antes en unos cuantos debates abiertos; y tener debates, incluso discusiones, con regularidad tambien baja la tension, porque evita las peleas explosivas. El texto lo apoya en el principio de la criticidad autoorganizada, que dice que muchas correcciones pequenias crean estabilidad y una sola correccion enorme crea catastrofe.
+    P6  Monta la logistica, que el texto dice que es bien simple: despues de tu reunion de equipo, manda el tema, el duenio y los participantes del gran debate al equipo mas amplio, si eres jefe de jefes, y tambien a la gente de otros equipos que trabaja con el tuyo.
+    P7  Deja que los unicos obligados a participar en el debate sean los que identificaste en la reunion de equipo.
+    P8  Pero deja que cualquiera pueda asistir u observar la reunion de gran debate.
+    P9  Haz que el duenio del debate nombre a alguien para tomar notas y mandarlas a todas las partes implicadas.
+    P10 Pon las normas, que el texto dice que tambien son sencillas: deja claro que todo el mundo tiene que dejar los egos en la puerta de esta reunion.
+    P11 Di cual es el objetivo del debate: trabajar juntos para dar con la mejor respuesta. No deberia haber ni ganadores ni perdedores.
+    P12 Pide a los participantes que se cambien los papeles a mitad de cada debate, que es la norma que el texto recomienda: asi te aseguras de que se estan escuchando unos a otros, y les ayuda a mantenerse centrados en dar con la mejor respuesta y a soltar sus egos y sus posiciones.
+    P13 Y no dejes que salga de ahi ninguna otra cosa, porque el texto dice que el unico producto del debate deberia ser un resumen cuidadoso de los hechos y los asuntos que emergieron, una definicion mas clara de las opciones que hay por delante, y una recomendacion de seguir debatiendo o de pasar a una decision.
+
+=== montar_reunion_gran_decision   (14 pasos)
+    titulo: Montar la reunion de gran decision, con su decisor nombrado, sus decisiones finales y tu poder de veto usado con cuentagotas
+    P1  Convocala normalmente despues de una reunion de gran debate, aunque el texto aclara que no siempre es asi.
+    P2  Cuenta con el primero de los dos papeles que el texto le da, que llama el obvio: tomar decisiones importantes.
+    P3  Cuenta con el segundo, que llama mas sutil: cuesta saber cuando dejar de debatir y empezar a decidir, y el texto dice que no ha encontrado ningun principio absoluto que responda a eso; el acto simple de ser explicito y consciente de cuando decides y cuando debates es lo que mas ayuda a saber cuando hace falta de verdad tomar una decision. El texto dice que esa es la razon principal por la que recomienda dos reuniones separadas.
+    P4  Ponle las mismas logisticas y las mismas normas que a la reunion de gran debate.
+    P5  Haz que dirija la reunion el decisor, que es a quien habras nombrado en tu reunion de equipo.
+    P6  Deja que los unicos obligados a asistir sean los identificados en la reunion de equipo, y que cualquiera pueda asistir.
+    P7  Haz que se tomen notas y que se pongan a disposicion de todas las partes implicadas.
+    P8  Egos en la puerta, y ni ganadores ni perdedores.
+    P9  Saca de ahi el producto que el texto le pone: un resumen cuidadoso de la reunion repartido a todas las partes implicadas.
+    P10 Y asegurate de que las decisiones son finales, porque el texto dice que si no siempre se apelaran y entonces seran debates y no decisiones.
+    P11 Acata tu las decisiones tomadas en estas reuniones igual que todos los demas.
+    P12 Si sabes que es un tema sobre el que tienes opiniones fuertes, o vas tu a la reunion, o le dices al decisor que tienes poder de veto.
+    P13 Si tienes poder de veto, haz que el decisor te mande la decision para que la apruebes o la rechaces antes de que las notas salgan mas ampliamente.
+    P14 Y usa ese poder con cuentagotas, porque el texto dice que si no las reuniones se volveran irrelevantes.
+
+=== montar_reunion_general_presentaciones_preguntas   (11 pasos)
+    titulo: Montar la reunion general del equipo entero con sus dos partes: las presentaciones que persuaden y las preguntas abiertas que dejan oir el disenso
+    P1  Mira primero si te hace falta, con el corte que el texto da: si tienes un equipo de diez personas o menos, probablemente no necesitas una reunion aparte para asegurarte de que todo el mundo esta persuadido de que se han tomado las decisiones correctas.
+    P2  Pero segun tu equipo se hace mas grande, empieza a pensar como te traes a todos contigo, porque el texto dice que es chocante lo rapido que las decisiones que toman algunos empiezan a parecerles misteriosas o incluso turbias a quienes no estuvieron cerca del proceso.
+    P3  Si tu equipo es de cien personas o mas, monta una reunion general con regularidad, que el texto dice que ayuda de verdad a conseguir respaldo amplio para las decisiones que se toman y tambien a enterarte del disenso.
+    P4  Montala con las dos partes que el texto dice que suelen incluir: presentaciones para persuadir a la gente de que la empresa esta tomando buenas decisiones y va en la direccion correcta, y un turno de preguntas y respuestas llevado de manera que quien dirige pueda oir el disenso y responderlo de frente.
+    P5  Cuenta con lo que el texto dice que pasa cuando se lleva bien: las respuestas que dan los que dirigen a esas preguntas, que a menudo son bastante incomodas, suelen persuadir mas que las presentaciones.
+    P6  Centra las presentaciones en una o dos iniciativas que sean especialmente emocionantes e importantes.
+    P7  Usalas para las dos cosas que el texto les pone: informar a todos de las prioridades mas amplias y conseguir su respaldo.
+    P8  Y haz que las presente el equipo que esta trabajando en la iniciativa, no tu: el texto dice que esa practica construia el musculo de persuadir en toda la empresa, y que a la gente normalmente le encantaba presentar en esas reuniones. Si tu equipo quiere el escenario, dale el escenario.
+    P9  Deja el turno de preguntas en manos de quien dirige la empresa o la fundo, porque es a ellos a quienes les toca responder esas preguntas a menudo desagradables, desafiantes o incomodas, y porque es asi como se enteran de lo que la gente piensa de verdad.
+    P10 Cuida como se responden esas preguntas, porque el texto dice que es enormemente importante para persuadir a mucha gente a la vez de que se estan tomando las decisiones correctas de la manera correcta.
+    P11 Y responde como el texto dice que respondian los dos fundadores que pone de ejemplo: aceptando toda clase de preguntas semana tras semana, sin ese tono sobrepreparado y sobremensajeado en el que caen a veces los que dirigen, con respuestas espontaneas, humanas y del todo autenticas, y volviendo a la reunion siguiente a recibir otra vez preguntas duras e incomodas.
+
+=== pelear_proliferacion_reuniones_bloquear_ejecucion   (8 pasos)
+    titulo: Pelear la proliferacion de reuniones bloqueando en tu calendario el tiempo de estar a solas y ejecutar, despues de descartar los tres remedios que el texto dice que no cuajan
+    P1  Reconoce el sintoma que el texto nombra: si no tienes cuidado, la multiplicacion de reuniones puede de verdad frenar en seco tu capacidad de ejecutar, tanto como persona como equipo.
+    P2  Asume que ser implacable en asegurarte de que tu equipo tiene tiempo para ejecutar es una de las cosas mas importantes que puedes hacer como jefe.
+    P3  Ten delante el primer remedio que el texto cuenta que no cuaja, quitar las sillas de las salas de reunion: el texto reconoce que en teoria acorta las reuniones porque casi nadie aguanta de pie mas de una hora, que hay investigacion que dice que la gente es mas creativa de pie que sentada, que hay quien dice que estar sentado es el nuevo fumar, y que ademas te ahorras el mobiliario, y aun asi cuenta que nunca funciona de verdad y que no conoce ninguna empresa que se haya mantenido en ello.
+    P4  Ten delante el segundo, declarar un dia de la semana sin reuniones: el texto cuenta que distintos equipos lo intentaron y que ninguno fue capaz de sostenerlo.
+    P5  Y ten delante el tercero, ponerse el objetivo de terminar antes de tiempo una cuarta parte de tus reuniones: el texto cuenta que le encanto la idea y que no cree que quien se la puso llegara nunca a cumplirla.
+    P6  Haz en cambio lo que el texto dice que es la solucion mas eficaz: combatir fuego con fuego.
+    P7  Bloquea en tu calendario tiempo para estar a solas y ejecutar, por la misma razon por la que bloqueaste el tiempo para pensar.
+    P8  Y anima a los demas a hacer lo mismo, porque el texto dice que eso les ayudo a decir que no a mas reuniones innecesarias.
+

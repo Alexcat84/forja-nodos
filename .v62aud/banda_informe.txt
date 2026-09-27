@@ -1,0 +1,17 @@
+MEDIDAS DIRECTAS DEL RELOJ DE UN python forja.py informe
+    388.6 s   poblacion 437   ACTA 57 57.10
+    477.8 s   poblacion 437   ACTA 57 57.10
+    490.0 s   poblacion 440   ACTA 60 60.4, el auditor, HOY
+    507.0 s   poblacion 440   VUELTA 61 61.2.a, el extractor
+    510.0 s   poblacion 439   ACTA 59 59.10, el auditor
+    668.0 s   poblacion 440   VUELTA 61 61.2.b, el extractor (su texto dice 667)
+   1002.0 s   poblacion 437   ACTA 58 58.10, cronometro del auditor
+   1062.0 s   poblacion 437   ACTA 58 58.10, cronometro del auditor
+  ------------------------------------------------------------------
+  medidas   : 8
+  BANDA     : 388.6 a 1062.0 s   (factor 2.73 entre extremos)
+  MEDIANA   : 508.5 s
+  media     : 638.2 s   (se publica junto a la banda, nunca sola)
+
+  NO SE PUBLICA COMO PUNTO. La ACTA 58 58.10 y la ACTA 59 59.13 cargaron
+  en la racha del auditor exactamente eso, dos actas seguidas.

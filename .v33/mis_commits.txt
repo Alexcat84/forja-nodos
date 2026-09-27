@@ -1,0 +1,11 @@
+| commit mio | ficheros que NO son de mis sedes |
+|---|---|
+| `9b36072` | `docs/loop/loop.log`, `docs/loop/ultimo_extractor.json` |
+| `bc5dae4` | **ninguno** |
+| `2edae47` | **ninguno** |
+| `cc181f3` | **ninguno** |
+| `d39c37b` | **ninguno** |
+| `bf413c2` | `config/frentes.json`, `docs/loop/TABLERO.jsonl`, `src/tablero.py` |
+| `504cd38` | `docs/BANCO_DE_REGLAS.md`, `docs/loop/PARALELO.md`, `docs/loop/TABLERO.jsonl`, `scripts/guarda_tablero.py`, `tests/test_aceptacion.py` |
+| `dd52033` | **ninguno** |
+| **8 commits mios** | **10 ficheros ajenos arrastrados** |

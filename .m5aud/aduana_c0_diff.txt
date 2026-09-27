@@ -1,0 +1,2 @@
+$ diff .m5aud/aduana_c0_m5.txt .v4m/aduana/c0_declarar_intencion_d099.txt
+(sin salida: identicos byte a byte)

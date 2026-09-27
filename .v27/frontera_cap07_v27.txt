@@ -1,0 +1,64 @@
+CORTE CIEGO DE cap_07 (fuentes/scott_radical_candor/cap_07.md)
+
+PASOS DE LA RUEDA (linea en mayusculas): 12
+   L11   TELLING PEOPLE WHAT TO DO DIDN’T WORK AT GOOGLE
+   L45   TELLING PEOPLE WHAT TO DO DIDN’T WORK FOR STEVE JOBS EITHER
+   L79   LISTEN
+   L165  CLARIFY
+   L213  DEBATE
+   L259  DECIDE
+   L303  PERSUADE
+   L367  EXECUTE
+   L389  LEARN
+   L421  PART II
+   L423  TOOLS & TECHNIQUES
+   L433  RELATIONSHIPS
+
+PIEZAS (titulillo dentro de un paso): 31
+   L9    Telling people what to do doesn’t work
+   L91   Quiet listening
+   L113  Loud listening
+   L131  Create a culture of listening
+   L155  Adapt to a culture of listening
+   L181  Be clear in your own mind
+   L183  Create a safe space to nurture new ideas
+   L197  Be clear to others
+   L199  Make thoughts/ideas drop-dead easy for others to comprehend
+   L215  The rock tumbler
+   L225  Keep the conversation focused on ideas not egos
+   L231  Create an obligation to dissent
+   L235  Pause for emotion/exhaustion
+   L239  Use humor and have fun
+   L245  Be clear when the debate will end
+   L265  You’re not the decider (usually)
+   L291  The decider should get facts, not recommendations
+   L295  Go spelunking
+   L305  ”Emotion. Credibility. Logic.”
+   L323  Emotion
+   L325  The listener’s emotions, not the speaker’s
+   L349  Credibility
+   L351  Demonstrate expertise and humility
+   L359  Logic
+   L361  Show your work
+   L369  Minimize the collaboration tax
+   L375  Don’t waste your team’s time
+   L381  Keep the “dirt under your fingernails”
+   L385  Block time to execute
+   L403  Pressure to be consistent
+   L409  Burnout
+
+DESCARTADAS: 11
+   L53   “Nobody’s always right,” I said.                     <- acaba en signo: es prosa o dialogo
+   L81   “Give the quiet ones a voice.”                       <- cita de autor
+   L83   -JONY IVE                                            <- cita de autor
+   L169  -GEORGIA O’KEEFFE                                    <- cita de autor
+   L269  “What’s wrong?” I asked, alarmed.                    <- acaba en signo: es prosa o dialogo
+   L277  “Any questions?” Mark concluded.                     <- acaba en signo: es prosa o dialogo
+   L307  -ARISTOTLE, RHETORIC                                 <- cita de autor
+   L337  “What did you do to address their emotions?”         <- cita de autor
+   L391  “Consistency is the hobgoblin of little minds.”      <- cita de autor
+   L393  -RALPH WALDO EMERSON, SELF-RELIANCE                  <- cita de autor
+   L431  5.                                                   <- acaba en signo: es prosa o dialogo
+
+TOTAL DE UNIDADES DE CORTE: 12 rueda + 31 piezas = 43
+PALABRAS DEL FICHERO (mi cuenta): 13706

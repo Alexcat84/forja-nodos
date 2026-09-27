@@ -1,0 +1,12 @@
+$ sed -n "1,7p" fuentes/scott_radical_candor/cap_14.md
+---
+libro: Scott, Radical Candor
+edicion: Fully Revised & Updated Edition, St. Martin's Press, First Edition October 2019
+unidad: Bonus Chapter
+titulo_textual: Bonus Chapter: A Radically Candid Performance Review
+fidelidad: verbatim
+---
+$ sed -n "8,$p" fuentes/scott_radical_candor/cap_14.md | wc -w
+7638
+$ wc -l fuentes/scott_radical_candor/cap_14.md
+243 fuentes/scott_radical_candor/cap_14.md

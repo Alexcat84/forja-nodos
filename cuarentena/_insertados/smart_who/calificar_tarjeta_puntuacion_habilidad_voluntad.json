@@ -1,0 +1,44 @@
+{
+  "condiciones_activacion": "Al terminar cada jornada de entrevistas, cuando ya tienes los datos de la entrevista cronologica de trayectoria y de las entrevistas enfocadas y hay que decidir si el candidato sigue en el proceso. Es el cuarto paso de las cuatro entrevistas del metodo A, dentro de seleccionar al jugador A con las cuatro entrevistas.",
+  "denominaciones": {
+    "nombre_largo": "La diana de habilidad y voluntad: calificar la tarjeta de puntuacion resultado a resultado y competencia a competencia",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "skill-will bull's-eye"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "THE SKILL-WILL BULL'S-EYE"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "CANDIDATE DISCUSSION"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "contratacion",
+  "entregable_esperado": "La tarjeta de puntuacion del candidato calificada, con una A, una B o una C en cada resultado y en cada competencia, y la decision de si el candidato avanza o no.",
+  "escala_minima": "El libro la fija en la reunion mas corta que describe: el equipo entrevistador se junta de treinta a sesenta minutos al final de la jornada para calificar la tarjeta.",
+  "fuentes": [
+    {
+      "clave": "smart_who",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "id": "calificar_tarjeta_puntuacion_habilidad_voluntad",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Hazlo despues de cada jornada de entrevistas, y no mas tarde. Junta al equipo entrevistador para calificar la tarjeta de puntuacion sobre los datos reales que se recogieron ese dia.",
+    "Empieza examinando la habilidad, que tiene que ver con la capacidad del candidato para lograr cada uno de los resultados de tu tarjeta. Cuando creas que hay una probabilidad del noventa por ciento o mas de que el candidato pueda lograr un resultado, a partir de los datos que reuniste en la entrevista, calificalo con una A en ese resultado. Cuando los datos no sostengan esa conclusion, ponle una calificacion menor, una B o una C. Repite el proceso resultado a resultado.",
+    "Evalua despues la voluntad, que tiene que ver con las motivaciones y las competencias que el candidato trae. Para cada competencia hazte la misma pregunta: sugieren los datos que hay un noventa por ciento o mas de probabilidad de que muestre esa competencia. Si es asi, calificalo con una A en esa competencia; si no, ponle una B o una C. Repite el proceso competencia a competencia.",
+    "Comprueba la diana con sus dos condiciones: que estes seguro al noventa por ciento o mas de que el candidato puede hacer el trabajo porque su habilidad encaja con los resultados de tu tarjeta, y que estes seguro al noventa por ciento o mas de que encajara bien porque su voluntad encaja con la mision y las competencias del papel.",
+    "Haz avanzar a aquellos cuya habilidad, lo que se les da bien de raiz, y cuya voluntad, lo que quieren hacer y en que tipo de cultura, encajan con la mision, los resultados y las competencias de tu tarjeta. Busca personas a las que calificarias con una A en los resultados criticos y en las competencias clave: nadie es perfecto, pero busca a los que son fuertes en los sitios mas importantes de tu tarjeta.",
+    "Trata como jugador B o C a quien no llegue, por mucha experiencia o talento aparente que traiga. Un jugador A es aquel cuya habilidad y cuya voluntad encajan con tu tarjeta de puntuacion, y cualquier cosa menor que eso es una B o una C."
+  ],
+  "resumen_teorico": "El objetivo del paso Select del metodo A es reunir los hechos necesarios para decidir si la habilidad de alguien, lo que puede hacer, y su voluntad, lo que quiere hacer, encajan con la tarjeta de puntuacion del puesto. Eso es el perfil de habilidad y voluntad de una persona, y cuando encaja perfectamente con lo que la tarjeta pide, el candidato da en la diana. Despues de la entrevista cronologica y de las enfocadas hay datos de sobra para calificar la tarjeta con bastante exactitud, y el objetivo pasa a ser decidir si el proceso continua o no con ese candidato. La mecanica es deliberadamente aritmetica y en dos pasadas, primero habilidad contra cada resultado y despues voluntad contra cada competencia, con el mismo corte del noventa por ciento en las dos, y esa es la razon de que el metodo no dependa de la impresion del dia: la calificacion se ancla en los datos recogidos, no en la sensacion de la sala. El recuadro del capitulo lo llama discusion del candidato y lo situa al final de cada jornada de entrevistas, y el horario tipo de la jornada le reserva de treinta a sesenta minutos con el equipo entrevistador reunido.",
+  "titulo": "Calificar la tarjeta de puntuacion con el marco de habilidad y voluntad"
+}

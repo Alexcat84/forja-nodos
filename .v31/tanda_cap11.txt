@@ -1,0 +1,28 @@
+LA TANDA DE cap_11, UNO POR VEZ Y EN EL ORDEN DEL LIBRO
+
+| # | id | en el grafo | vecinos que levanto la aduana | veredictos escritos | aristas cableadas |
+|---:|---|---|---|---|---|
+| 1 | `decidir_quien_comunica_cada_cuanto` | **SI** | **1** | `SANO` construir_confianza_equipo_tiempo_solas | madre de 6 |
+| 2 | `montar_reuniones_solas_mentalidad_frecuencia` | **SI** | **0** | cola vacia | hija de 1 |
+| 3 | `preguntar_seguimiento_hallar_huecos` | **SI** | **1** | `SANO` calibrar_normalidad_preguntas_jefe | ninguna |
+| 4 | `nutrir_ideas_nuevas_reunion_solas` | **SI** | **1** | `CONTINUA` crear_espacio_seguro_madurar_ideas_nuevas | hija de 1 |
+| 5 | `leer_seniales_fallo_jefe_reunion_solas` | **SI** | **0** | cola vacia | ninguna |
+| 6 | `conducir_reunion_equipo_agenda_tres_bloques` | **SI** | **0** | cola vacia | madre de 1 / hija de 1 |
+| 7 | `escribir_apuntes_sala_estudio_equipo` | **SI** | **0** | cola vacia | hija de 1 |
+| 8 | `montar_reunion_gran_debate` | **SI** | **1** | `SANO` montar_reunion_gran_decision | hija de 1 |
+| 9 | `montar_reunion_gran_decision` | **SI** | **3** | `SANO` montar_reunion_gran_debate, `SANO` nutrir_ideas_nuevas_reunion_solas, `SANO` dirigir_reunion_decision | hija de 1 |
+| 10 | `montar_reunion_general_presentaciones_preguntas` | **SI** | **0** | cola vacia | hija de 1 |
+| 11 | `pelear_proliferacion_reuniones_bloquear_ejecucion` | **SI** | **0** | cola vacia | hija de 1 |
+
+| | |
+|---|---:|
+| candidatos del tramo | **11** |
+| **de ellos, dentro del grafo** | **11** |
+| **de ellos, archivados en `cuarentena/_insertados/`** | **11** |
+| **de ellos, que siguen en bandeja** | **0** |
+| vecinos levantados y juzgados en la tanda | **7** |
+| **aristas declaradas por LECTURA en esta vuelta** (`forja.py arista`) | **9** |
+| lineas nuevas de `bitacora/VEREDICTOS.jsonl` | **16** |
+| nodos en el grafo | **267** |
+| bandeja del lote 4 | **78** |
+| archivados del lote 4 | **64** |

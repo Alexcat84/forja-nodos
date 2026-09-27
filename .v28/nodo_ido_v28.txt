@@ -1,0 +1,25 @@
+NODO IDO: HALLAZGOS CONTRA LINEAS DE BITACORA, CONTADOS POR EL AUDITOR EN LA VUELTA 27
+
+$ python forja.py rancios | grep -c '[NODO IDO]'                        -> 16   HALLAZGOS
+$ ... | sed 's/.*(linea N,.*/N/' | sort -nu | wc -l                     -> 12   LINEAS distintas
+$ ... nodos distintos nombrados como idos                               -> 11   NODOS distintos
+
+REPARTO, hallazgos por cada linea de bitacora:
+        2 248
+        2 249
+        2 250
+        2 251
+        1 252
+        1 256
+        1 258
+        1 260
+        1 261
+        1 262
+        1 263
+        1 264
+
+  lineas 248 a 251 : las CUATRO que escribio una insercion RECHAZADA (U.7.b). 8 hallazgos.
+  lineas 252 a 264 : OCHO veredictos de verdad sobre vecinos que esperan en BANDEJA. 8 hallazgos.
+
+LO QUE DICE EL REPORTE U.9.b : NODO IDO -> 16 lineas, 11 nodos distintos
+LO QUE MIDE EL INSTRUMENTO   : 16 HALLAZGOS sobre 12 LINEAS, 11 nodos distintos

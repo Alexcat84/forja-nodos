@@ -1,0 +1,32 @@
+$ python forja.py insertar cuarentena/scott_radical_candor/practicar_triangulo_critica_tres_papeles.json [veredictos y censos]
+ADUANA DE INSERCION, candidato 'practicar_triangulo_critica_tres_papeles'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (320 del grafo mas 28 que esperan en bandejas)
+
+DECLARADOS POR LECTURA: 2. Ninguna señal los levanto.
+  escuchar_entender_critica_dominar_defensa  [Escuchar la critica con intencion de entender y no de responder, dominando tu propia defensa con la practica de escuchar tres minutos sin interrumpir]
+    señales: familia_id 0.111, paso_contra_nodo 0.469, similitud_texto 0.338
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  mejorar_consciencia_propia_relacional_dos_practicas  [Mejorar tu consciencia de ti mismo y tu consciencia de la relacion con las dos practicas que el texto desarrolla, porque en la franqueza radical el hilo comun siempre eres tu]
+    señales: familia_id 0.0, paso_contra_nodo 0.452, similitud_texto 0.296
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  LA JERARQUIA LA CAZA LA LECTURA, NO LA SEÑAL (D.19, D.29).
+
+VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino abrazar_incomodidad_silencio_contar_seis  [Abrazar la incomodidad del silencio despues de pedir critica, aguantandolo mientras cuentas hasta seis en tu cabeza]
+    levantada por: similitud_texto
+    similitud_texto    0.363 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.471 (umbral 0.60)
+    paso 4 del candidato contra paso 5 de abrazar_incomodidad_silencio_contar_seis
+  arista madre-hijo cableada y escrita RESUELTA: mejorar_consciencia_propia_relacional_dos_practicas > practicar_triangulo_critica_tres_papeles
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 321
+  censos escritos: denominaciones, series_y_cabezas
+  veredictos en bitacora/VEREDICTOS.jsonl: 3
+CODIGO DE SALIDA: 0
+  ARCHIVADO EN EL MISMO ACTO (D.31): cuarentena/_insertados/scott_radical_candor/practicar_triangulo_critica_tres_papeles.json

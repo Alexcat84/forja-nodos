@@ -1,0 +1,24 @@
+fichero            : fuentes/gerber_emyth/cap_18.md
+cierres yaml en    : [1, 7]  -> cuerpo arranca en L8
+wc -l (mio)        : 413
+
+pieza lineas       palabras
+R1    L8    a L20         18
+R2    L21   a L102      1432
+R3    L103  a L116       187
+C1    L117  a L120        51
+R4    L121  a L136       189
+C2    L137  a L166       787
+R5    L167  a L228       477
+R6    L229  a L246       188
+C3    L247  a L272       266
+R7    L273  a L288       123
+R8    L289  a L413      1678
+
+cuerpo L8 a L413  palabras: 5396
+suma de piezas          : 5396
+residuo                 : 0
+lineas solapadas        : 0
+lineas sin cubrir       : 0
+piezas                  : 11
+primera linea de pieza  : L8   ultima: L413

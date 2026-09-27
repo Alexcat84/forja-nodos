@@ -1,0 +1,25 @@
+cap_09 EN EL ORDEN DEL LIBRO (linea que cada candidato cita de cap_09.md)
+#    L    id                                                         pasos
+1    17   abrazar_incomodidad_arrancar_critica_equipo                20
+2    55   organizar_sistema_recoger_quejas_equipo                    9
+3    65   correr_semana_arreglo_averias_gestion                      8
+4    77   dar_guia_humilde_tres_tecnicas                             15
+5    97   dar_guia_util_cuatro_recordatorios                         10
+6    115  dar_guia_acto_seis_consejos                                14
+7    137  elegir_medio_dar_guia_jerarquia_modos                      13
+8    155  elogiar_publico_criticar_privado_sus_tres_matices          9
+9    165  evitar_personalizar_guia_aceptar_personal                  12
+10   179  medir_guia_propia_pegatinas_marco                          13
+11   205  practicar_franqueza_radical_jefe_propio                    17
+12   291  comprobar_criticas_hombre_mujeres_equipo                   6
+13   295  exigir_critica_jefe_reticente                              9
+14   301  revisar_critica_mujer_agresiva_cuatro_tacticas             12
+15   315  responder_critica_abrasiva_cuatro_reglas                   14
+16   331  entregar_evaluacion_formal_desempenio_nueve_consejos       22
+17   363  impedir_punialadas_espalda_equipo                          9
+18   369  fomentar_guia_reciproca_companieros                        13
+19   383  conducir_reuniones_salto_nivel_diez_reglas                 31
+20   415  resolver_dudas_frecuentes_reuniones_salto_nivel            16
+
+total cap_09 en bandeja: 20
+pasos totales          : 272

@@ -1,0 +1,46 @@
+# Fase ciega de la 76: mis clases de los pares DENTRO de un mismo capitulo de la bandeja de Gerber, escritas ANTES de que el
+# barrido terminase (lo lance a las 08:11:22 y estas filas se escriben con 4 de 22 recogidas), con los pasos de los dos delante
+# (.v76aud/pasos_22.txt, de pasos_ciego.py, R6) y los capitulos leidos enteros. Vara 6.1 y solo 6.1 (R7 de la ACTA 61).
+# Formato: a|b|clase|madre|razon. Las abreviaturas, abajo.
+@EMP=construir_empresa_plantilla_vision_diaria
+@MOD=trazar_modelo_negocio_cliente_primero
+@FIN=fingir_prototipo_cinco_mil_replicas
+@VAL=dar_valor_constante_cuatro_publicos
+@OPE=operar_modelo_gente_destreza_minima
+@DOC=documentar_trabajo_manual_operaciones
+@COL=unificar_color_forma_vestuario_modelo
+@INT=interrogar_negocio_cinco_preguntas
+@SAL=cambiar_saludo_cliente_dos_ramas
+@CUA=cuantificar_impacto_innovacion_6_pasos
+@TRA=probar_traje_azul_seis_semanas
+@CON=aplicar_cinco_pasos_proceso_contratacion
+@REG=aplicar_ocho_reglas_juego_personas
+@GEN=construir_estrategia_gente_cuatro_componentes
+@VEN=aplicar_seis_pasos_sistema_venta
+@TIP=distinguir_tres_tipos_sistemas_negocio
+@MED=medir_sistema_venta_trece_indicadores_benchmark
+EMP|MOD|SANO||cap_08: la plantilla de Watson que se mide cada noche (L39 a L51) y el modelo que arranca del cliente (L109 a L121) son dos piezas del capitulo; ningun paso de una usa el producto de la otra y las dos traen procedimiento propio fuera de lo que comparten (vision del negocio terminado)
+FIN|VAL|CONTINUA|FIN|cap_11: la condicion del hijo es trabajar la regla 1 que la madre enumera (paso 5, L45) y el hijo la despliega con su propio procedimiento (L59 a L83). Figura C1. Y D.37: la madre dice cuantas reglas son (seis, su titulo y su paso 4) y las nombra; esta parte existe como nodo
+FIN|OPE|CONTINUA|FIN|cap_11: el hijo trabaja la regla 2 que la madre nombra en su paso 6 (L47), con su procedimiento de L85 a L133. Figura C1 y parte D.37
+FIN|DOC|CONTINUA|FIN|cap_11: el hijo trabaja la regla 4 que la madre nombra en su paso 8 (L51), con su procedimiento de L153 a L173. Figura C1 y parte D.37
+FIN|COL|CONTINUA|FIN|cap_11: el hijo trabaja la regla 6 que la madre nombra en su paso 10 (L55), con su procedimiento de L213 a L241. Figura C1 y parte D.37
+FIN|INT|SANO||cap_11: el resumen de L243 repite la premisa de la madre (trabajar sobre el negocio como prototipo, pasos 1 y 2 del otro), pero cada uno trae procedimiento propio fuera del solape: las seis reglas en la madre, la lista de L249 y las cinco preguntas de L255 a L263 en el otro. No repite (6.1, sin bascula). DUDA: su condicion (cuando cierras el trabajo del prototipo) puede leerse como el producto de FIN, y entonces seria CONTINUA con madre FIN
+VAL|OPE|SANO||cap_11: dos reglas hermanas de la misma serie (1 y 2); ningun paso de una usa el producto de la otra
+VAL|DOC|SANO||cap_11: reglas hermanas (1 y 4)
+VAL|COL|SANO||cap_11: reglas hermanas (1 y 6)
+OPE|DOC|SANO||cap_11: reglas hermanas (2 y 4); las dos hablan de sistema y de trabajo documentado, pero el sistema que apalanca a la gente (L103 a L107) no es el manual (L169 a L171), y cada una trae procedimiento propio
+OPE|COL|SANO||cap_11: reglas hermanas (2 y 6)
+DOC|COL|SANO||cap_11: reglas hermanas (4 y 6)
+VAL|INT|SANO||cap_11: el valor a los cuatro publicos y las cinco preguntas no comparten procedimiento
+OPE|INT|SANO||cap_11: la pregunta de OPE (resultado sistematico y no personal, L91) y las cinco de INT (L255 a L263) son preguntas distintas con procedimiento distinto
+DOC|INT|SANO||cap_11: sin paso comun
+COL|INT|SANO||cap_11: comparten solo la imagen del paquete de cereales (L241 y L249); nombrar no es procedimentar
+SAL|CUA|CONTINUA|SAL|cap_12: los pasos 2 y 3 del hijo cuentan antes y despues de cambiar las palabras del saludo (L95: by changing the words you use to greet an incoming customer), que es el producto de la madre (L51 a L57): el hijo cuantifica la innovacion que la madre pone. DUDA: la condicion del hijo es cualquier innovacion y el saludo es el ejemplo del libro; leido asi, es SANO con un ejemplo compartido
+TRA|CUA|SANO||cap_12: L97 pide cuantificar tambien el traje azul, pero los pasos del hijo cuentan puertas y compras despues de cambiar las palabras, no trajes; el test de TRA trae su propio control (las dos mitades de tres semanas, L63)
+SAL|TRA|SANO||cap_12: dos innovaciones hermanas del mismo tramo (palabras y ropa, L33), sin paso comun
+CON|REG|SANO||cap_18: el proceso de contratacion (L247 a L271) y las reglas del juego (L137 a L165) comunican la misma idea por medios distintos; ninguno usa el producto del otro
+GEN|CON|CONTINUA|GEN|cap_18: el hijo es el primer medio de comunicar la idea (L245) y sus pasos 10 y 11 entregan y repasan el Manual de Operaciones, el Objetivo Estrategico, la Organizational Strategy y el Position Contract (L267 y L269), que son los componentes que la madre construye (sus pasos 3 a 5, L119). DUDA: la madre solo nombra esos componentes en una linea; si nombrar no basta para que el hijo continue su trabajo, es SANO
+GEN|REG|SANO||cap_18: la condicion de REG pone entre parentesis Your People Strategy, pero sus ocho reglas no usan ninguno de los componentes de GEN (L119) y GEN no nombra el juego. DUDA: el juego de L103 a L115 es la idea que GEN comunica (L117, this idea); leido asi, CONTINUA con madre GEN
+VEN|MED|CONTINUA|VEN|cap_19: la condicion del hijo es el sistema de venta ya operando, producto de la madre (L141 a L153), y sus trece indicadores miden los Benchmarks de ese mismo proceso (L303: you will be able to tell just how predictable it is through the use of an Information System; L307: to interact with the Soft System in our example)
+TIP|VEN|SANO||cap_19: VEN es un Soft System (L137), un ejemplar de la clase que TIP nombra en su paso 3, no la clase; TIP clasifica y VEN vende, sin paso comun
+TIP|MED|SANO||cap_19: MED es un Information System (L303 a L307), ejemplar y no la clase que TIP nombra en su paso 4

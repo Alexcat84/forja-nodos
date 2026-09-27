@@ -1,0 +1,22 @@
+cap_10 acoger_inspectores_externos_fuente_aprendizaje     pasos 3
+cap_06 aplicar_ejercicio_codigo_genetico_control          pasos 6
+cap_06 asignar_responsable_unico_evolucion_planificada    pasos 2
+cap_03 auditar_formacion_premios_ultima_fila              pasos 11
+cap_02 cambiar_forma_trabajar_conservar_plantilla         pasos 5
+cap_01 ceder_control_reforzar_competencia_claridad        pasos 6
+cap_03 contar_firmas_cadena_tramite_parado                pasos 10
+cap_07 declarar_intencion_reemplazar_peticion_permiso     pasos 3
+cap_09 eliminar_seguimiento_descendente_responsabilizar_dueno pasos 2
+cap_02 encargar_meta_especifica_dejar_libre_metodo        pasos 5
+cap_12 identificar_temas_formacion_tarjetas_decision      pasos 8
+cap_04 informar_cierre_jornada_conservar_propiedad_trabajo pasos 5
+cap_03 inspeccionar_reparto_informacion_notas_jefe        pasos 8
+cap_03 observar_reunion_rutinaria_senales_plantilla       pasos 9
+cap_03 recorrer_organizacion_escuchar_plantilla           pasos 7
+cap_14 reforzar_principios_guia_lenguaje_prueba_conocimiento pasos 2
+cap_13 repetir_mensaje_invariable_diario_reunion_evento   pasos 2
+cap_08 resistir_dar_solucion_clasificar_decision_urgencia pasos 5
+cap_03 seguir_frustrado_preguntar_implantacion_ideas      pasos 8
+cap_11 tomar_accion_deliberada_pausar_vocalizar_gesticular pasos 3
+fichas por capitulo: {'cap_01': 1, 'cap_02': 2, 'cap_03': 6, 'cap_04': 1, 'cap_06': 2, 'cap_07': 1, 'cap_08': 1, 'cap_09': 1, 'cap_10': 1, 'cap_11': 1, 'cap_12': 1, 'cap_13': 1, 'cap_14': 1} | suma: 20
+pasos por capitulo: {'cap_01': 6, 'cap_02': 10, 'cap_03': 53, 'cap_04': 5, 'cap_06': 8, 'cap_07': 3, 'cap_08': 5, 'cap_09': 2, 'cap_10': 3, 'cap_11': 3, 'cap_12': 8, 'cap_13': 2, 'cap_14': 2} | suma: 110

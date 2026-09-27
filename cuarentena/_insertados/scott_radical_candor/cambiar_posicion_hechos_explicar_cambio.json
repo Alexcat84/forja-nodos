@@ -1,0 +1,47 @@
+{
+  "id": "cambiar_posicion_hechos_explicar_cambio",
+  "titulo": "Cambiar de posicion cuando cambian los hechos, y explicar el cambio en voz alta en vez de dejar que se note",
+  "denominaciones": {
+    "nombre_largo": "La presion de ser coherente: la primera de las dos presiones que empujan a dejar de aprender, y la comunicacion que la desactiva",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "pressure to be consistent"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando los hechos han cambiado y tu posicion tendria que cambiar con ellos, y te frena que te llamen veleta, erratico o sin principios.",
+  "entregable_esperado": "El cambio de rumbo hecho, con su explicacion clara y convincente de por que las cosas han cambiado, dicha en voz alta y nombrada como cambio.",
+  "pasos_accionables": [
+    "Cuenta con lo que nos dicen a menudo: que cambiar de posicion te convierte en una veleta, en un erratico o en alguien sin principios.",
+    "Quedate en su lugar con la idea de Keynes que el texto prefiere: cuando los hechos cambian, yo cambio de opinion.",
+    "Trata la comunicacion como la clave, que es como el texto la llama.",
+    "Cuenta con la queja razonable que vas a recibir: hace solo dos meses me convenciste de X y ahora me dices que quiza no X.",
+    "No cambies de rumbo a la ligera.",
+    "Y si lo haces, prepara una explicacion clara y convincente de por que las cosas han cambiado.",
+    "Vuelve a pasar por escuchar, clarificar, debatir y decidir con un circulo cercano antes de llevarlo fuera.",
+    "Cuando toque persuadir otra vez al equipo amplio, respira hondo y cuenta con paciencia y las veces que haga falta como habeis llegado hasta ahi.",
+    "Nombra el cambio de direccion explicitamente en vez de dejar que se note."
+  ],
+  "resumen_teorico": "Sale de fuentes/scott_radical_candor/cap_07.md, lineas 403 a 407, bajo el rotulo Pressure to be consistent, y es la PRIMERA de las dos presiones que la linea 401 cuenta y nombra dentro del paso LEARN de la rueda de hacer cosas. Su madre es aprender_resultados_vencer_dos_presiones, que la nombra en su paso 6, y la arista va bajo D.37 porque el texto dice cuantas son y las nombra. La pieza es corta pero tiene inventario duro en su segunda mitad: la linea 407 pone cinco actos seguidos (no cambiar a la ligera, explicar claro y convincente, repasar el ciclo con un circulo cercano, contar el camino con paciencia y repetidamente, y nombrar el cambio explicitamente), y esos cinco son los pasos P5 a P9. La atribucion de Keynes va en su sede. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 9 pasos, 9 TRANSCRIPCION, 0 PUENTE. P1 y P2 de la linea 405; P3, P4, P5, P6, P7, P8 y P9 de la linea 407. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: quienes forman ese circulo cercano, cuantas veces es repetidamente, y que se hace con quien se queda convencido de la posicion vieja.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-12"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "atribuciones": [
+    {
+      "cifra": "cuando los hechos cambian, yo cambio de opinion",
+      "autor": "John Maynard Keynes, citado por Kim Scott",
+      "fuente": "scott_radical_candor",
+      "fecha_corte": "no consta fecha en el texto: el libro atribuye la idea a Keynes sin datar la cita ni dar su fuente, asi que la atribucion queda sin fecha de corte y se dice"
+    }
+  ]
+}

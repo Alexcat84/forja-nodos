@@ -1,0 +1,20 @@
+{
+ "id": "reciclar_empleado_ascendido_mas_alla_capacidad",
+ "grafo": 430,
+ "bandejas": 49,
+ "vecinos": [
+  {
+   "id": "priorizar_lista_entrenamiento_subordinados",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.355,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.416
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 2 de priorizar_lista_entrenamiento_subordinados"
+  }
+ ]
+}

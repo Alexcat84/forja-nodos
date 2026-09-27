@@ -1,0 +1,11 @@
+| # | candidato de `cap_09` que SIGUE EN BANDEJA | lineas del libro | pasos |
+|---:|---|---|---:|
+| 1 | `entregar_evaluacion_formal_desempenio_nueve_consejos` | L331 a L361 | 22 |
+| 2 | `impedir_punialadas_espalda_equipo` | L363 a L367 | 9 |
+| 3 | `fomentar_guia_reciproca_companieros` | L369 a L381 | 13 |
+| 4 | `conducir_reuniones_salto_nivel_diez_reglas` | L383 a L413 | 31 |
+| 5 | `resolver_dudas_frecuentes_reuniones_salto_nivel` | L415 a L425 | 16 |
+
+candidatos de cap_09 en bandeja : 5
+candidatos de cap_09 insertados : 15
+total del capitulo              : 20   techo de EXTRACTOR.md 12.4: 15

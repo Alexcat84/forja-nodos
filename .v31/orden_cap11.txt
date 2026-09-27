@@ -1,0 +1,24 @@
+ORDEN DEL LIBRO, cap_11, LO QUE QUEDA EN BANDEJA
+poblacion: cuarentena/scott_radical_candor, filtrada por resumen_teorico que cita cap_11.md
+
+| # | id | lineas | pasos |
+|---:|---|---|---:|
+| 1 | `decidir_quien_comunica_cada_cuanto` | `L15` a `L35` | 6 |
+| 2 | `montar_reuniones_solas_mentalidad_frecuencia` | `L37` a `L65` | 22 |
+| 3 | `preguntar_seguimiento_hallar_huecos` | `L67` a `L97` | 16 |
+| 4 | `nutrir_ideas_nuevas_reunion_solas` | `L99` a `L113` | 10 |
+| 5 | `leer_seniales_fallo_jefe_reunion_solas` | `L115` a `L127` | 6 |
+| 6 | `conducir_reunion_equipo_agenda_tres_bloques` | `L129` a `L145` | 22 |
+| 7 | `escribir_apuntes_sala_estudio_equipo` | `L147` a `L157` | 14 |
+| 8 | `montar_reunion_gran_debate` | `L175` a `L193` | 13 |
+| 9 | `montar_reunion_gran_decision` | `L195` a `L203` | 14 |
+| 10 | `montar_reunion_general_presentaciones_preguntas` | `L205` a `L221` | 11 |
+| 11 | `pelear_proliferacion_reuniones_bloquear_ejecucion` | `L223` a `L233` | 8 |
+| 12 | `montar_tablero_kanban_medir_actividades` | `L235` a `L249` | 10 |
+| 13 | `pasear_organizacion_hallar_problemas_pequenios` | `L251` a `L269` | 9 |
+| 14 | `debatir_decidir_asuntos_cultura_evitar_delegar` | `L301` a `L305` | 6 |
+
+candidatos: 14   pasos: 167
+
+Y LOS QUE NOMBRAN cap_11 SIN SALIR DE EL: 1
+  integrar_peticion_critica_rutina_existente   (lo nombra en un veredicto, su origen es otro capitulo)

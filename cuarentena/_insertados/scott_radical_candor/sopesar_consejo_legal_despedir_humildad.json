@@ -1,0 +1,39 @@
+{
+ "id": "sopesar_consejo_legal_despedir_humildad",
+ "titulo": "Sopesar el consejo legal contra el riesgo de seguirlo y despedir con humildad, que es la tercera de las tres cosas que facilitan un despido",
+ "denominaciones": {
+  "nombre_largo": "La tercera de las tres cosas que facilitan un despido: que te importe de verdad la persona, no quedarte atrapada en el consejo legal y de recursos humanos, preguntar cual es el riesgo de NO seguirlo, y despedir con humildad porque el problema es el puesto y no la persona",
+  "otros_idiomas": [
+   {
+    "idioma": "ingles",
+    "termino": "Give a damn"
+   }
+  ],
+  "sigla": ""
+ },
+ "condiciones_activacion": "Cuando vas a despedir a alguien y ya tienes encima el consejo de recursos humanos o el del abogado.",
+ "entregable_esperado": "El despido dado con humildad y de la manera mas facil para la persona, con el riesgo de NO seguir el consejo legal preguntado en voz alta y sopesado contra el riesgo de seguirlo, y con el problema dicho donde esta: en el puesto y no en la persona.",
+ "pasos_accionables": [
+  "No te quedes demasiado atrapada en todo el consejo de recursos humanos y del abogado, que es lo que el texto dice justo despues de mandarte pedirlo.",
+  "Respira hondo y da un gran paso atras.",
+  "Parte de lo que sigue siendo verdad aunque estes despidiendo: tienes una relacion con la persona a la que vas a despedir, y esa persona todavia te importa.",
+  "Piensa mucho como hacerlo de la manera que sea mas facil para ella, incluso si eso te lo pone mas dificil a ti, o si tienes que asumir algun riesgo.",
+  "Cuando el consejo legal te empuje a algo que crees que humillara a la persona, haz la pregunta que el texto hizo a su abogada y que es la que le dio la vuelta al consejo: cual es el riesgo de NO hacerlo?",
+  "Compara entonces las respuestas, que es donde el texto encuentra su leccion: si el riesgo de no seguir el consejo es el mismo que el consejo dice prevenir, seguirlo es probablemente provocar justo lo que intentas evitar.",
+  "Deja a la persona despedirse en sus propios terminos si eso es lo que la situacion pide, que es lo que el texto hizo en contra del consejo recibido.",
+  "Y cuando tengas que despedir a alguien, hazlo con humildad, con el recordatorio del texto delante: la razon por la que tienes que despedirla no es que sea mala, ni siquiera que sea mala en este puesto, es que este puesto, el puesto que tu le diste, es malo para ella."
+ ],
+ "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_10.md, unidad Cap. 7, Team. Sale de las lineas 189 a 195, bajo el rotulo Give a damn. ES LA PIEZA P27 DE LA FRONTERA DE cap_10 Y ES LA TERCERA PARTE DE LA SERIE D.37 DE TRES cuya cabeza es facilitar_despido_tres_cosas (linea 173, if you do three things). POR QUE ES PROCEDIMIENTO Y NO POSTURA, con D.27 delante: la linea 191 nombra los actos uno a uno (no quedarte atrapada en el consejo, respirar hondo, dar un paso atras, pensar como hacerlo mas facil para la persona aunque te cueste a ti), y la 193 pone la pregunta operativa que convierte la postura en procedimiento, cual es el riesgo de NO hacerlo, con su comparacion de riesgos; la 195 cierra con el acto y su recordatorio. Inventario de MEDIOS del propio libro. EL CASO DE JUICE Y EL GUARDA DE SEGURIDAD de la linea 193 ENTRA COMO EJEMPLO NOMBRADO Y NO COMO CASA (manual 3.5): la pregunta que el caso produce si es el paso, porque es reutilizable; el guarda, el abogado y la persona concreta NO aparecen en el entregable. POR QUE ES UN NODO APARTE, con la vara de la ACTA 20 seccion 4.1 y su 4.5: condicion de activacion propia (VAS A DESPEDIR, con el consejo ya encima) y entregable propio (el despido dado con humildad y sin quedar atrapada en el consejo legal). RELECTURA DE FIDELIDAD D.30 HECHA EN EL ACTO DE ESCRIBIR, paso a paso contra su linea: 8 de 8 TRANSCRIPCION, 0 PUENTES. PAR ABIERTO QUE DECLARO YO Y QUE MARCO COMO DISCUTIBLE EN MI REPORTE: despedir_persona_franqueza_radical, de cap_06, comparte con este nodo el acto de reformular el problema en el puesto y no en la persona, y comparte parte de su condicion de activacion. Mi lectura es CONTINUA y no REPITE, porque este trae un acto que aquel no tiene, sopesar el consejo legal contra el riesgo de no seguirlo. Lo que el texto NO dice y por eso NO esta escrito aqui: ni donde se tiene la conversacion, ni quien mas esta presente, ni que se le dice al equipo despues."
+,
+ "dominio": "gestion_equipos",
+ "estado": "vivo",
+ "fuentes": [
+  {
+   "clave": "scott_radical_candor",
+   "fecha": "2026-09-12"
+  }
+ ],
+ "ids_alias": [],
+ "nodos_previos": [],
+ "nodos_siguientes": []
+}

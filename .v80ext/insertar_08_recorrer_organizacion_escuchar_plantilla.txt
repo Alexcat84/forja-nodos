@@ -1,0 +1,42 @@
+fila 08, recorrer_organizacion_escuchar_plantilla, lineas --veredicto: 3
+  --veredicto observar_reunion_rutinaria_senales_plantilla|SANO|El mismo par que observar lee desde su lado: recorrido y escucha al tomar el mando (cap_03 L11, L15) contra la reunion rutinaria y sus senales (L17 a L21). La similitud de 0,420, por encima de 0,4, se lee primero y no es gemelo (ACTA M9.4, fila 8).
+  --veredicto encargar_meta_especifica_dejar_libre_metodo|SANO|El mismo par que encargar_meta lee desde su lado: recorrido y escucha (cap_03 L11, L15) contra meta sin el como (cap_02 L49). La similitud de 0,401, por encima de 0,4, se lee primero, sin paso comun (ACTA M9.4, fila 7).
+  --veredicto inspeccionar_reparto_informacion_notas_jefe|SANO|Hermanos del mismo capitulo: recorrido y escucha (cap_03 L11, L15) contra el tablero de mensajes, que L45 pone despues entre las rutinas (L45 a L53). Calendario y no despliegue (DISCUTIBLE D78.13).
+inicio 2026-09-26 18:55:28
+======================================================================
+ADUANA DE INSERCION, candidato 'recorrer_organizacion_escuchar_plantilla'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (466 del grafo mas 13 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 3. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino observar_reunion_rutinaria_senales_plantilla  [Sentarse en una reunion rutinaria que ya existe y leerla por sus senales de gente en vez de por su asunto tecnico]
+    levantada por: similitud_texto
+    similitud_texto    0.420 (umbral 0.35)
+    familia_id         0.125 (umbral 0.30)
+    paso_contra_nodo   0.437 (umbral 0.60)
+    paso 4 del candidato contra paso 8 de observar_reunion_rutinaria_senales_plantilla
+
+  vecino encargar_meta_especifica_dejar_libre_metodo  [Encargar una meta especifica sin decir como se cumple, y dejar los recursos como estaban]
+    levantada por: similitud_texto
+    similitud_texto    0.401 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.426 (umbral 0.60)
+    paso 3 del candidato contra paso 2 de encargar_meta_especifica_dejar_libre_metodo
+
+  vecino inspeccionar_reparto_informacion_notas_jefe  [Inspeccionar con el responsable delante como se reparte la informacion que entra, y leer las notas que el jefe deja escritas en ella]
+    levantada por: similitud_texto
+    similitud_texto    0.352 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.383 (umbral 0.60)
+    paso 7 del candidato contra paso 5 de inspeccionar_reparto_informacion_notas_jefe
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 467
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 3
+
+======================================================================
+fin 2026-09-26 19:03:22 | codigo de salida 0 | 474.3 s

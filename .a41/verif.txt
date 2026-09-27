@@ -1,0 +1,35 @@
+00 L12    IDENTICA  -         git hash-object docs/loop/ACTA_AUDITOR.md
+01 L45    IDENTICA  -         python forja.py gate
+02 L50    IDENTICA  -         python forja.py guiones
+03 L55    IDENTICA  -         wc -l dataset/nodos.jsonl bitacora/VEREDICTOS.jsonl config/par
+04 L61    IDENTICA  -         ls cuarentena/scott_radical_candor/ | wc -l
+05 L63    IDENTICA  -         ls cuarentena/_insertados/scott_radical_candor/ | wc -l
+06 L65    IDENTICA  -         ls cuarentena/grove_high_output/ | wc -l
+07 L67    IDENTICA  -         ls cuarentena/marquet_turn_the_ship/ | wc -l
+08 L76    DIFIERE   CORTADA   python forja.py tablero
+09 L101   IDENTICA  -         python forja.py credito
+10 L109   IDENTICA  -         git status --short docs/loop/CREDITO_serial.jsonl
+11 L123   SALTADA   -         python tests/test_aceptacion.py
+12 L124   IDENTICA  -         tail -4 .a41/aceptacion.txt
+13 L130   IDENTICA  -         grep -E "^(FAIL|ERROR):" .a41/aceptacion.txt
+14 L138   IDENTICA  -         sed -n "487,490p" .a41/aceptacion.txt
+15 L144   IDENTICA  -         sed -n "533,535p" .a41/aceptacion.txt
+16 L176   IDENTICA  -         git ls-tree -r --name-only 671b6f3 cuarentena/scott_radical_ca
+17 L181   IDENTICA  -         python .a41/inventario.py
+18 L220   IDENTICA  -         grep -nE "^[^a-z]{7,}$" fuentes/scott_radical_candor/cap_13.md
+19 L237   DIFIERE   ALTERADA  grep -nE "^([0-9]+\. |[A-Z][A-Z ,“”’-]{6,}$|Rating or no|Categ
+20 L276   DIFIERE   ALTERADA  sed -n "59p" fuentes/scott_radical_candor/cap_14.md
+21 L281   IDENTICA  -         python .a41/frontera.py cap_13
+22 L295   IDENTICA  -         python .a41/frontera.py cap_14
+23 L372   IDENTICA  -         sed -n "199p" fuentes/scott_radical_candor/cap_13.md
+24 L375   DIFIERE   CORTADA a 90 caracteres por linea awk "NR>=203 && NR<=213 {print NR\": \"substr(\$0,1,90)}" fuen
+25 L398   DIFIERE   CORTADA   sed -n "97p" fuentes/scott_radical_candor/cap_14.md
+26 L409   IDENTICA  -         python .a41/porcapitulo.py
+27 L514   IDENTICA  -         python .a41/aristas.py
+28 L541   IDENTICA  -         grep -c "arista" docs/loop/DEUDA.jsonl
+29 L563   IDENTICA  -         python .a41/paso_de.py equilibrar_elogio_critica_equipo 9
+30 L567   DIFIERE   -         python .a41/ver_nodo.py dar_elogio_disciplina_igual_critica
+31 L573   IDENTICA  -         python .a41/ver_nodo.py equilibrar_elogio_critica_equipo
+32 L588   DIFIERE   CORTADA   python .a41/ver_nodo.py medir_critica_respuesta_oyente_brujula
+33 L593   IDENTICA  -         python .a41/dos_abrazar.py
+34 L613   IDENTICA  -         grep -n "TRAMO POR VUELTA" -A 4 docs/loop/EXTRACTOR.md

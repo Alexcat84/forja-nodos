@@ -1,0 +1,16 @@
+POBLACION (D.38.4): 348   (316 del grafo mas 32 que esperan en bandejas)
+umbrales: texto 0.35, familia_id 0.3
+
+CANDIDATOS DEL TRAMO: 14
+
+abrazar_incomodidad_silencio_contar_seis             0 vecino(s)
+contar_cuatro_historias_propias_ver_hueco_intencion  1 vecino(s)
+    BANDEJA  contar_historias_propias_explicar_franqueza_radical  familia_id=0.300
+contar_historias_propias_explicar_franqueza_radical  1 vecino(s)
+    BANDEJA  contar_cuatro_historias_propias_ver_hueco_intencion  familia_id=0.300
+dar_elogio_disciplina_igual_critica                  0 vecino(s)
+desplegar_plan_orden_operaciones_franqueza_radical   1 vecino(s)
+    GRAFO    desplegar_marco_franqueza_radical                    familia_id=0.429
+elegir_pregunta_recurrente_pedir_critica             0 vecino(s)
+escuchar_entender_critica_dominar_defensa            0 vecino(s)
+integrar_peticion_critica_rutina_existente           0 vecino(s)

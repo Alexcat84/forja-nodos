@@ -1,0 +1,50 @@
+{
+  "id": "reservar_tiempo_reflexion_metas",
+  "titulo": "Reservar tiempo para reflexionar y ponerte metas",
+  "denominaciones": {
+    "nombre_largo": "La cuarta via de aprender en el puesto: la hora semanal de reflexion y el ciclo de seis meses, con las dos plantillas de la autora como muestra",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "set aside time to reflect and set goals"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando vas a toda maquina y el paisaje te pasa volando, y te cuesta comprender la totalidad de tu recorrido: de donde saliste, cuanto queda, que tramos fueron lisos y cuales estaban llenos de baches.",
+  "entregable_esperado": "Una reflexion escrita de forma periodica, semanal y a seis meses, con metas puestas y evaluadas por lo que ensenriaron y no por la nota.",
+  "escala_minima": "Una persona y una hora en el calendario al final de cada semana. El libro dice expresamente que no tiene por que ser un proceso pesado.",
+  "atribuciones": [
+    {
+      "cifra": "aprendemos mas cuando acompanamos nuestras experiencias con reflexiones periodicas, y los participantes que eligieron reflexionar rindieron mejor que los que eligieron experiencia adicional, pese a que la gente prefiere aprender haciendo",
+      "autor": "un estudio de la Harvard Business School, sin autor nombrado en el texto",
+      "fuente": "zhuo_manager",
+      "fecha_corte": "no consta en el texto: ni muestra, ni anio"
+    }
+  ],
+  "pasos_accionables": [
+    "Parte del problema: cuando vas a toda maquina y el paisaje te pasa volando, es dificil comprender la totalidad de tu recorrido. De donde saliste? Cuanto queda? Que partes fueron lisas y cuales estaban llenas de baches?",
+    "Ten delante la razon atribuida: un estudio de la Harvard Business School muestra que aprendemos mas cuando acompanamos nuestras experiencias con reflexiones periodicas, y que pese a que la gente prefiere aprender haciendo, los participantes que eligieron reflexionar rindieron mejor que los que eligieron experiencia adicional.",
+    "Cuenta con que reflexionar no tiene que ser un proceso pesado: al final del dia lo estas haciendo para tu propio beneficio, asi que encuentra lo que mejor te funcione a ti.",
+    "El habito semanal que la autora usa: reservar una hora en el calendario al final de cada semana para pensar en que consiguio, con que esta satisfecha o insatisfecha, y que se lleva para la semana siguiente. Despues apunta unas notas en un correo a su equipo, como forma facil de mantener el habito.",
+    "Y el ciclo largo: ponerse metas personales y hacer repasos mas grandes cada seis meses, que le da un marco temporal mas amplio para abordar proyectos ambiciosos y aprender habilidades nuevas.",
+    "Ten delante como son sus notas de una semana, que el libro escribe como ejemplo y son suyas: opinion reciente que ha escuchado, con lo que va bien y el tema principal de lo que se podria hacer mejor, y lo que se lleva de ello. Reclutamiento para el anio que viene, con el tema grande que salio en la reunion de planificacion y lo que hara falta. Estrategia de un proyecto, con lo que avanzo en pocas semanas y un reconocimiento con nombre a quien hizo un gran trabajo. Y necesidades de investigacion, con lo que ha estado oyendo en sus reuniones a solas y el plan que compartira.",
+    "Y como son sus metas a seis meses, tambien suyas y tambien de ejemplo: construir su banquillo llenando tres puestos abiertos para que cada producto tenga un lider fuerte. Hacer que todas las revisiones de producto empiecen por problemas de personas claramente definidos, para tener una base comun de evaluacion. Volverse experta en contratar buenos lideres de investigacion. Quitar las actualizaciones de estado de sus reuniones a solas, y usar ese tiempo para tener conversaciones mas profundas con sus personas a cargo. Y no llevarse trabajo a casa, centrandose en ser mas eficiente en la oficina.",
+    "Al final de cada seis meses, saca tus metas y evalua como lo hiciste.",
+    "Ten claro que lo importante no es la nota sino lo que aprendiste. Si no lo conseguiste, por que fue? Fueron tus tacticas poco efectivas? No comunicaste las cosas con claridad? O sencillamente no eran importantes?",
+    "Y si si alcanzaste una meta, tambien hay lecciones que sacar. Que te permitio tener exito? Podrias abordar metas aun mas ambiciosas en el futuro? Que consejos le darias a otra persona que quisiera hacer lo mismo?",
+    "Cuenta con lo que esto acelera: cuanto mas se convierten tus experiencias, buenas o malas, en lecciones e historias que te ayudan a ti y a otros, mas rapida es tu trayectoria de crecimiento."
+  ],
+  "resumen_teorico": "Es la cuarta via de aprendizaje y la unica con cadencia fija, semanal y semestral. Su inventario propio es doble y muy concreto: las dos plantillas que el libro escribe enteras como ejemplo de las notas de la autora, y las preguntas de evaluacion para el caso de fallar y para el caso de acertar, que el libro separa a proposito. La cadencia y el soporte tambien los pone el, una hora en el calendario y un correo al equipo. Las dos plantillas son suyas y llevan sus datos, asi que entran como muestra y no como contenido que copiar. Lo que el libro NO dice, y por eso no esta escrito: ni con quien se comparten las metas de seis meses, ni que se hace con las que se quedan a medias."
+}

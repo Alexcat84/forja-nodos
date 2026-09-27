@@ -1,0 +1,17 @@
+| unidad | lineas | pasos | TRANSCRIPCION | PUENTE | por ciento |
+|---|---:|---:|---:|---:|---:|
+| `desplegar_tres_conversaciones_carrera` | L19,L21,L43,L91 | 12 | 12 | **0** | 0,00 |
+| `conversar_historia_vida_descubrir_motivadores` | L47-L59 | 15 | 15 | **0** | 0,00 |
+| `conversar_suenios_cruzar_habilidades` | L61-L75 | 15 | 15 | **0** | 0,00 |
+| `trazar_plan_dieciocho_meses_aprendizaje` | L77-L87 | 14 | 14 | **0** | 0,00 |
+| `armar_plan_anual_crecimiento_equipo` | L93-L125 | 29 | 29 | **0** | 0,00 |
+| `montar_proceso_contratacion_reducir_sesgo` | L129-L163 | 32 | 32 | **0** | 0,00 |
+| `facilitar_despido_tres_cosas` | L169-L173 | 11 | 11 | **0** | 0,00 |
+| `admitir_pronto_mal_desempenio_cuatro_razones` | L175-L179 | 9 | 9 | **0** | 0,00 |
+| `calibrar_decision_despido_documentarla` | L181-L187 | 13 | 13 | **0** | 0,00 |
+| `sopesar_consejo_legal_despedir_humildad` | L189-L195 | 8 | 8 | **0** | 0,00 |
+| `contactar_despedido_mes_despues` | L197-L201 | 6 | 6 | **0** | 0,00 |
+| `calibrar_ascensos_evitar_politica` | L205-L223 | 19 | 19 | **0** | 0,00 |
+| `evitar_obsesion_ascenso_estatus` | L229-L237 | 10 | 10 | **0** | 0,00 |
+| `reconocer_excelencia_trayectoria_gradual` | L239-L251 | 13 | 13 | **0** | 0,00 |
+| **TOTAL de `cap_10`** | | **206** | **206** | **0** | **0,00** |

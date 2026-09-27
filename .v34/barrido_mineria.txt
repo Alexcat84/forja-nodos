@@ -1,0 +1,53 @@
+BARRIDO: nodos que afirman ESTADO DE MINERIA dentro de su texto
+  poblacion : 282 nodos de dataset/nodos.jsonl (el arbol entero, sin filtrar)
+  patrones  : 14 de la familia
+  campos    : TODO campo de texto del nodo, incluidos los anidados
+------------------------------------------------------------------------------
+NODO  registrar_fuente_canonica
+  campo  : condiciones_activacion
+  patron : no extraido
+  frase  : ...Cuando entra un libro o mundo nuevo y todavia no se ha extraido su primer nodo....
+
+NODO  hacer_repaso_posterior_proyecto
+  campo  : pasos_accionables[4]
+  patron : minado / minar / mineria
+  frase  : ... porque el libro dice que esa es la via mas rapida de matar la practica. Considera que es una ocasion de minar la experiencia en busca de lecciones futuras....
+
+NODO  delimitar_franqueza_radical_cinco_noes
+  campo  : resumen_teorico
+  patron : en cuarentena
+  frase  : ...mienda buscar otro entorno de trabajo. Entro como paso 7 en un arreglo en frio, con el candidato todavia en cuarentena, y se dice aqui porque el nodo llego a existir sin ella. CORRECCION DECLARADA DE LA VUELTA 27, 16 sep 20...
+
+NODO  adaptar_escucha_cultura_ajena
+  campo  : resumen_teorico
+  patron : lote abierto / lote N
+  frase  : ...ES DEL P4 NO SON UN PERIODO INVENTADO: el texto escribe the next few months, y la especie PERIODO que el lote 1 pago cara es la de escribir un plazo que el libro no pone. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQU...
+
+NODO  integrar_trabajo_vida_mejor_version
+  campo  : resumen_teorico
+  patron : en cuarentena
+  frase  : ... en el libro, lo que estaba torcido era de quien se decia. Y NO ES CAIDA de ninguna especie, porque vive en cuarentena, que no es sede de CIFRA PUBLICADA; se corrige igual, y antes de insertar, porque insertar con la atribu...
+
+NODO  construir_confianza_equipo_tiempo_solas
+  campo  : resumen_teorico
+  patron : no estan minados
+  frase  : ...u Guidance del capitulo seis y al capitulo siete para las conversaciones de carrera. Esos tres capitulos NO estan minados todavia, asi que los pasos 5, 6 y 7 transcriben lo que esta linea dice de cada uno y ni una palabra ma...
+
+NODO  construir_confianza_equipo_tiempo_solas
+  campo  : resumen_teorico
+  patron : sin minar
+  frase  : ...ene 0 nodos y 0 pasos. LO CIERTO, ENTONCES: de los tres reenvios de la linea 95, DOS apuntan a capitulos sin minar y UNO apunta a un capitulo minado y cerrado en insercion. LA PRUEBA ESTABA DENTRO DE ESTE MISMO NODO: su...
+
+NODO  construir_confianza_equipo_tiempo_solas
+  campo  : resumen_teorico
+  patron : minado / minar / mineria
+  frase  : ...e del capitulo seis y al capitulo siete para las conversaciones de carrera. Esos tres capitulos NO estan minados todavia, asi que los pasos 5, 6 y 7 transcriben lo que esta linea dice de cada uno y ni una palabra mas:...
+
+NODO  construir_confianza_equipo_tiempo_solas
+  campo  : resumen_teorico
+  patron : lote abierto / lote N
+  frase  : ... a regular basis, regular 1:1s) Y EL PERIODO NO SE ESCRIBE, que es exactamente la especie PERIODO que el lote 1 pago cara: el libro no dice cada cuanto y yo tampoco. Lo unico que si lleva periodo es el P7, y lo lleva...
+
+------------------------------------------------------------------------------
+coincidencias : 9
+nodos tocados : 6 de 282

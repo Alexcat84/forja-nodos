@@ -1,0 +1,3 @@
+    $ sed -n '313p;315p' fuentes/grove_high_output/cap_04.md
+    The most frequently proposed solutions were not very practical. The idea mentioned most often was to create blocks of time for individual work by hidi
+    There are better ways. Let's apply a production concept. Manufacturers turn out standard products. By analogy, if you can pin down what kind of inte

@@ -1,0 +1,59 @@
+{
+ "id": "operar_modelo_gente_destreza_minima",
+ "grafo": 437,
+ "bandejas": 42,
+ "vecinos": [
+  {
+   "id": "interrogar_negocio_cinco_preguntas",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.357,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.416
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 2 del candidato contra paso 10 de interrogar_negocio_cinco_preguntas"
+  },
+  {
+   "id": "responder_primer_aviso_renuncia_subordinado",
+   "sede": "grafo",
+   "senales": {
+    "similitud_texto": 0.37,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.415
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 9 del candidato contra paso 1 de responder_primer_aviso_renuncia_subordinado"
+  },
+  {
+   "id": "dictar_ritmo_crecimiento_preguntas_escritas",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.371,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.408
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 6 del candidato contra paso 7 de dictar_ritmo_crecimiento_preguntas_escritas"
+  },
+  {
+   "id": "cambiar_saludo_cliente_dos_ramas",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.355,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.357
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 9 del candidato contra paso 2 de cambiar_saludo_cliente_dos_ramas"
+  }
+ ]
+}

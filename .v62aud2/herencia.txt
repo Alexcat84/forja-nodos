@@ -1,0 +1,46 @@
+REMEDIOS PENDIENTES QUE HEREDAS
+
+Esto NO lo has buscado tu: lo entrega el arnes (D.40), porque tres actas seguidas perdieron el mismo remedio por tener que ir a buscarlo.
+
+  acta anterior : ACTA 60. VUELTA 61, lote 7 (`grove_high_output`), **CLASE EXTRACCION EN REGIMEN LIGERO**: **EL REMEDIO QUE PUSE EN LA `ACTA 59` SE CUMPLIO, LA VUELTA VUELVE A CERRAR CORTA Y ESTA VEZ LO DICE, Y ESA ES LA DIFERENCIA ENTERA ENTRE UN ESCALON Y NINGUNO**. **NO HAY HUECO**: la `ACTA 59` cubre la vuelta `60` y yo cubro la `61`. Verifico con mis propios comandos las guardas (`gate` `346` con `13` guardas, `guiones` VERDE, `339` pruebas con `0` fallos), el estado al digito (`346`, `740`, `1`, `91`) y el `git mv` del tercer candidato **por su blob, `be8eb225`, el mismo antes y despues**. **LOS DOS INFORMES QUE PEGA REPRODUCEN AL MILESIMO CONTRA LOS FICHEROS QUE GUARDO**, `18` cifras y `9` cifras, **cero que difieran**; y el del candidato `1` reproduce ademas **contra una corrida independiente**, la que el auditor de la `ACTA 59` dejo en `.v61aud/`: los cuatro vecinos compartidos salen identicos al milesimo y **la unica diferencia son las dos lineas del vecino que entro a la bandeja entre una medicion y otra**, que es la prueba mas limpia que esta casa tiene de `d077`. **CORRO YO EL TERCER INFORME, EL QUE NADIE CERRO**: `490` s sobre poblacion `440`, `BLOQUEARIA` con `3` vecinos, **y trae dos cosas que los otros dos no podian ver**: la senial es **ASIMETRICA** (`0,497` contra `0,496`, `0,478` contra `0,477`, y `paso_contra_nodo` `0,451` contra `0,396`) y **levanta un vecino que ninguno de los otros dos levanta**, `cortar_discusion_libre_momento_justo` a `0,353`, que leo y descarto por los pasos. **SU UNICO DISCUTIBLE MARCADO SE SOSTIENE**, y adjudico yo los **TRES** pares de la cadena de `cap_17` leyendo los `16` pasos contra `L49` a `L61`: **`CONTINUA` los tres, no `REPITE`**, con la vara `6.1` citada y `D.19` delante. **PUBLICO LA CUENTA DEL LIBRO QUE LA VUELTA MIDIO Y NO PUBLICO**, contada por mi desde cero con instrumento propio: **`18` capitulos, `92` candidatos cosechados, `643` pasos, `15` capitulos con candidato y `3` que dieron cero** (`cap_08`, `cap_09`, `cap_18`), los tres firmados por actas anteriores. **LA MINERIA DE `grove_high_output` ESTA CERRADA Y LO MIDO.** `PASOS INVENTADOS POR CAPITULO`: **`SIN SUPERFICIE`**, y no es un silencio sino una medida, `0` fichas escritas dentro de la ventana del turno. **Y LO QUE SE CAE SON TRES COSAS Y LAS TRES SON DE PROSA, ASI QUE NO ACUMULAN** (`5.2`): `668` s escritos como `667`, **cuatro bloques abiertos con `$` que contienen texto que el comando no imprime** (y lo que se comieron son justo las `7` lineas `paso N contra paso M`, que son la evidencia con la que `D.19` manda adjudicar), y un *los tres candidatos traen el mismo discutible* cuando el primero habla de dos y no de tres. **`REPORTE` baja de `2 de 3` a `0 de 3` por tanda limpia** (`D.38.1`, `5.2` y la correccion del `16` sep), **no por indulto mio, y el motivo va medido**: no hay ni una afirmacion equivocada en CABECERA, TABLA ni CONCLUSION, **las cuatro cifras de su declaracion de cierre corto las verifico una a una y las cuatro son ciertas**, y las `27` de sus bloques pegados reproducen al milesimo. `CLASE`, `CIFRA PUBLICADA` y `DATO MOVIDO` salen **LIMPIAS** con el `git diff` vacio delante. **MI PROPIA TANDA SALE LIMPIA CON MIS DOS HEREDADOS CUMPLIDOS** y `AUDITOR` baja de `2 de 3` a `0 de 3` por la misma regla, **diciendo con todas las letras que soy el beneficiado de mi propio juicio**; publico la banda del reloj del informe **como banda y mediana sobre `8` medidas** (`389` a `1062` s, mediana `508,5`) y **no escribo ni un techo de reloj**, que es lo que mis dos ultimas caidas propias pedian. **Y DESENTIERRO EL MECANISMO QUE SE REPITE Y NO ES CAIDA DE NADIE: dos vueltas seguidas han terminado el turno a los pocos segundos de lanzar un informe de fondo**, y el mensaje final de las dos dice que se queda esperandolo. **Ninguna condicion de parada se cumple y las mido una a una: no escribo `PARA_ALEXIS.md`**, y el encargo de la vuelta `62` sale de esta sede: **una vuelta corta de un solo informe, la cuenta que ya le entrego hecha y el tablero**, porque **lo que le queda al mundo `11` no es extraccion sino la insercion de Grove, y esa es del fundador** (`D.32`, `D.39`, y el punto `4` de su decision del `21` sep).
+  su huella     : 0abcf2cea5e371f3913ec8e28a1fc3306c986961
+  heredados     : 4
+
+HEREDADO 1   [REMEDIO, linea 44484 del acta]
+## 60.15. **LOS REMEDIOS**
+
+| # | de quien | remedio | donde se comprueba |
+| `R1` | del extractor | **Un bloque que empieza por `$` contiene lo que el comando imprimio y nada mas.** Si hay que acortar, **se corta por el final y se dice `(recortado, entero en <fichero>)`**: no se borran lineas de en medio, y **las lineas `paso N contra paso M` no se quitan nunca**, que son la evidencia con la que `D.19` manda adjudicar. Tercera acta que ve esta figura (`ACTA 56`, `ACTA 58` `58.3.a`, esta) | `ACTA 61`, con el mismo `.v62aud/pegado.py` |
+
+HEREDADO 2   [REMEDIO, linea 44485 del acta]
+## 60.15. **LOS REMEDIOS**
+
+| # | de quien | remedio | donde se comprueba |
+| `R2` | del extractor | **Un informe de aduana se corre en primer plano y se espera con la mano puesta.** Lanzado de fondo, el turno termina esperandolo: dos vueltas seguidas (`60.9`). **El encargo de la `62` ya lo pide de otra forma, con UN solo informe y con la salida del tercero ya en la mano**, para que la disciplina no tenga que sostenerlo sola | `ACTA 61` |
+
+HEREDADO 3   [REMEDIO, linea 44486 del acta]
+## 60.15. **LOS REMEDIOS**
+
+| # | de quien | remedio | donde se comprueba |
+| `R3` | **MIO** | **Toda plantilla de declaracion que escriba lleva un campo con nombre por cada cosa que quiero que se declare**, y ningun campo abierto de *lo que queda*. La de la `61` tenia cuatro con nombre y uno abierto: **los cuatro se rellenaron y el abierto no** (`60.2`) | `PROMPT_SIGUIENTE.md` de la `62`, TAREA `1` |
+
+HEREDADO 4   [REMEDIO, linea 44487 del acta]
+## 60.15. **LOS REMEDIOS**
+
+| # | de quien | remedio | donde se comprueba |
+| `R4` | **MIO** | **Toda advertencia que escriba en un encargo se remide al auditar, y si caduco se dice.** Mi aviso del tablero de la `61` ya no aplicaba cuando el extractor llego, porque lo arreglo el arnes (`60.6.b`) | `ACTA 61` |
+
+LO QUE TU APERTURA CIEGA TIENE QUE TRAER, O EL ARNES SE DETIENE ANTES DE QUE ESCRIBAS EL ACTA:
+
+    ACTA ANTERIOR LEIDA: 0abcf2cea5e371f3913ec8e28a1fc3306c986961
+    HEREDADO 1: CUMPLIDO          (o NO APLICA y su motivo detras)
+    HEREDADO 2: CUMPLIDO          (o NO APLICA y su motivo detras)
+    HEREDADO 3: CUMPLIDO          (o NO APLICA y su motivo detras)
+    HEREDADO 4: CUMPLIDO          (o NO APLICA y su motivo detras)
+
+NO APLICA NECESITA MOTIVO ESCRITO **Y LA SALIDA DEL INSTRUMENTO PEGADA DEBAJO** (D.40, 16 sep 2026). Un remedio que no aplica a esta vuelta se declara, se dice por que, y se pega el comando que lo sostiene, con una linea que empiece por '$'. Sin salida pegada, el sello NO lo acepta.
+
+POR QUE: la vuelta 26 declaro NO APLICA un heredado con el motivo de que ninguno de sus instrumentos escribia en el arbol. Seis escribian, su propia tabla los listaba, y el barrido de guiones estaba en ROJO con ocho hallazgos suyos. Una salida pegada no prueba que el motivo sea cierto, pero obliga a correr algo antes de escribirlo, y ese lo habria cazado al instante.
+
+ESCRIBELAS COMO ESCRIBES TODO LO DEMAS. Valen las comillas, la negrita, el encabezado y la cita: se comprueba que la declaracion ESTE, no que vaya desnuda. Y puedes repetirla en tu tabla de cierre: se mira presencia y no cuenta, asi que citar la linea que declaras no te tumba la vuelta.
+

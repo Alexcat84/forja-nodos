@@ -1,0 +1,40 @@
+{
+  "id": "bajar_detalle_organizacion_fuente_hechos",
+  "titulo": "Bajar al detalle de tu organizacion y buscar los hechos en su fuente, sin dejar que te lleguen filtrados por capas",
+  "denominaciones": {
+    "nombre_largo": "Hacer espeleologia en tu organizacion: meterse de vez en cuando en los detalles de una decision pequeña, e ir al que hace el trabajo cuando el que decide eres tu",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "go spelunking"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando eres jefe, y sobre todo jefe de jefes, y quieres saber lo que de verdad esta pasando o vas a decidir tu algo importante.",
+  "entregable_esperado": "Los hechos de la decision obtenidos en su fuente, sin pasar por capas de direccion, y una organizacion que ve que nada esta por encima ni por debajo de la preocupacion de nadie.",
+  "pasos_accionables": [
+    "Usa el derecho que tienes como jefe a meterte en cualquier detalle que te parezca interesante o importante. El texto dice que no tienes que quedarte en el nivel alto todo el tiempo.",
+    "Aunque hayas delegado las decisiones clave, metete de vez en cuando en los detalles de alguna otra decision mas pequeña. El texto dice que no puedes hacerlo con cada decision, pero si con algunas.",
+    "Usalo para enterarte de lo que de verdad esta pasando.",
+    "Usalo tambien para poner a jefes y a quienes dependen de ellos en un plano mas igual, enseñando que nada esta por encima ni por debajo de la preocupacion de nadie.",
+    "Cuando el que decide eres tu, ve a la fuente de los hechos.",
+    "No dejes que los hechos te lleguen a traves de capas de direccion, sobre todo si eres jefe de jefes. El texto lo compara con el juego del telefono, y dice que ya sabes lo que le pasa a un hecho cuando se pasa demasiadas veces de mano en mano.",
+    "Si quieres entender mas a fondo algun aspecto de una decision importante, ve directamente a la persona que esta trabajando en ello, como hacia Steve Jobs, que aparecia en el cubiculo de un ingeniero recien llegado a preguntarle por un detalle concreto de su trabajo.",
+    "Cuenta con lo que el texto dice que se gana: cuanto mas a menudo puedas hacerlo, mas poder siente toda tu organizacion.",
+    "Conoce los detalles de varias capas por debajo de la tuya, que es lo que en Apple se esperaba de los lideres, para poder entender y cuestionar los hechos tal como te los presentan."
+  ],
+  "resumen_teorico": "Sale de fuentes/scott_radical_candor/cap_07.md, lineas 295 a 301, bajo el rotulo Go spelunking, dentro del paso DECIDE de la rueda de hacer cosas. La pieza tiene dos movimientos y los dos son del libro: bajar al detalle por costumbre (para enterarse y para igualar el trato) y bajar a la fuente cuando el que decide eres tu (para que el hecho no llegue filtrado). El caso de Steve Jobs esperando en el cubiculo de un ingeniero joven va NOMBRADO DENTRO del paso que lo usa, que es la condicion de TRANSCRIPCION DE CASO. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 9 pasos, 9 TRANSCRIPCION, 0 PUENTE. P1, P2, P3 y P4 de la linea 297; P5 y P6 de la 299; P7 y P8 de la 301; P9 de la 301 tambien, en su primera frase. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: cada cuanto se baja, como se elige en que detalle meterse, y como se hace sin que el jefe intermedio lo viva como una invasion, que es la pregunta que el propio metodo abre y el libro no cierra.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-12"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "atribuciones": []
+}

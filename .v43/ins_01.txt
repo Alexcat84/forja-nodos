@@ -1,0 +1,17 @@
+veredicto para archivar_indicadores_resolver_problemas (CONTINUA/REPITE/SANO/MUTUO): Traceback (most recent call last):
+  File "C:\Users\AlexDesk\Documents\forja-nodos\forja.py", line 103, in <module>
+    sys.exit(main(sys.argv[1:]))
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AlexDesk\Documents\forja-nodos\forja.py", line 56, in main
+    return aduana.main(resto)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AlexDesk\Documents\forja-nodos\src\aduana.py", line 1456, in main
+    resultado = insertar(bruto, veredictos, respuestas,
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AlexDesk\Documents\forja-nodos\src\aduana.py", line 1108, in insertar
+    bruto = entrada("veredicto para %s (%s): " % (vecino_id, "/".join(CLASES)))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AlexDesk\Documents\forja-nodos\src\aduana.py", line 918, in <lambda>
+    entrada = entrada or (lambda pregunta: input(pregunta))
+                                           ^^^^^^^^^^^^^^^
+EOFError: EOF when reading a line

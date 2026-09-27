@@ -1,0 +1,12 @@
+filas suyas: 176 | mias: 176 | en las dos: 176 | solo suyas: [] | solo mias: []
+marca suya, marca mia: {('T', 'T'): 167, ('P', 'T'): 8, ('T', 'D'): 1} | suma: 176
+  DIFIEREN aplicar_ocho_reglas_juego_personas paso 8 | suya P L163 | mia T L161
+  DIFIEREN aplicar_ocho_reglas_juego_personas paso 9 | suya P L165 | mia T L165
+  DIFIEREN cambiar_saludo_cliente_dos_ramas paso 1 | suya P L51 | mia T L51
+  DIFIEREN cambiar_saludo_cliente_dos_ramas paso 2 | suya P L53 | mia T L53
+  DIFIEREN cambiar_saludo_cliente_dos_ramas paso 3 | suya P L55 | mia T L55
+  DIFIEREN cuantificar_impacto_innovacion_6_pasos paso 4 | suya T L95 | mia D L95
+  DIFIEREN cuantificar_impacto_innovacion_6_pasos paso 6 | suya P L95 | mia T L95
+  DIFIEREN dictar_ritmo_crecimiento_preguntas_escritas paso 8 | suya P L287 | mia T L287
+  DIFIEREN operar_modelo_gente_destreza_minima paso 4 | suya P L89 | mia T L89
+sus P por ficha: {'aplicar_ocho_reglas_juego_personas': 2, 'dictar_ritmo_crecimiento_preguntas_escritas': 1, 'operar_modelo_gente_destreza_minima': 1, 'cambiar_saludo_cliente_dos_ramas': 3, 'cuantificar_impacto_innovacion_6_pasos': 1} | suma: 8

@@ -1,0 +1,42 @@
+{
+  "id": "calibrar_vision_propia_opinion_ajena",
+  "titulo": "Calibrar la vision que tienes de ti con la opinion sin barnizar de otros",
+  "denominaciones": {
+    "nombre_largo": "La tercera parte del ajuste de cuentas contigo mismo: las tres tacticas para comprobar que tu vista de ti y la realidad coinciden",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "calibration"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando ya tienes escritas tus dos listas, la de fuerzas y la de debilidades, y toca comprobar que la vista que tienes de ti mismo casa con la realidad.",
+  "entregable_esperado": "Tus fuerzas y tus debilidades contrastadas con la opinion sin barnizar de tu jefe, de entre tres y siete personas cercanas, y de quien te vio ejecutar una tarea concreta.",
+  "escala_minima": "Tu jefe y un punado de personas con las que trabajes de cerca. El libro lo hace con un correo corto y una conversacion de seguimiento.",
+  "pasos_accionables": [
+    "Con las dos listas ya hechas, pasa a la calibracion, que es asegurarte de que la vista que tienes de ti mismo casa con la realidad.",
+    "Cuenta con que es mas dificil de lo que suena: la percepcion que tenemos de nosotros mismos es como una montania rusa, unos dias cuesta tenerse compasion y otros nos creemos lo mejor desde el pan de molde. El libro nombra aqui el sesgo cognitivo por el que la gente que no es muy habil tiende a creerse mejor de lo que es: el efecto Dunning Kruger.",
+    "Ten delante por que importa: no te sirve de nada creerte una cosa mientras el mundo te ve de otra. Si te crees un orador estupendo y los demas encuentran tediosas tus charlas, puedes tomar una mala decision, como presentar tu una idea nueva y audaz en vez de pedirselo a quien la venderia mejor. Y peor todavia, la gente empezara a descontar lo que dices porque concluira que tienes una nocion deformada de la realidad.",
+    "Para desarrollar tu conciencia de ti mismo y calibrar tus fuerzas y tus debilidades, enfrenta la verdad de como eres de verdad pidiendo a otros su opinion sin barnizar.",
+    "Ten claro cual es la meta y cual no: la meta no es buscar elogio, la meta es darles a tus pares una apertura segura donde puedan ser honestos, incluso brutalmente honestos, para que puedas sacar la informacion mas precisa.",
+    "Primera tactica: pidele a tu jefe que te ayude a calibrarte con estas dos preguntas. Que oportunidades ves para que haga mas de lo que hago bien, y que crees que son las cosas que mas me frenan para tener mas impacto? Y: que habilidades crees que tendria una persona hipoteticamente perfecta en mi puesto, y para cada habilidad, como me puntuarias contra ese ideal en una escala de uno a cinco?",
+    "Segunda tactica: escoge entre tres y siete personas con las que trabajes de cerca y preguntales si estarian dispuestas a compartir algo de opinion para ayudarte a mejorar.",
+    "Aunque tu empresa ya tenga un proceso de opinion de trescientos sesenta grados, se concreto sobre lo que quieres saber y da garantias de que buscas honestidad y no palmaditas en la espalda.",
+    "Usa el modelo de peticion que el libro escribe: valoro tu opinion y me gustaria ser un miembro mas efectivo del equipo, estarias dispuesto a responder a las preguntas de abajo? Se todo lo honesto que puedas, porque es lo que mas me va a ayudar, y te prometo que nada de lo que digas me va a ofender. La opinion es un regalo y te agradezco el tiempo.",
+    "Y usa sus tres ejemplos de peticion concreta. En nuestro ultimo proyecto juntos, de que maneras me viste tener impacto, y que crees que podria haber hecho para tener mas? Con mi equipo, que estoy haciendo bien que te gustaria verme hacer mas, y que deberia dejar de hacer? Y: una de las cosas en las que estoy trabajando es ser mas decidido, como crees que lo estoy haciendo, y alguna sugerencia de como hacerlo mejor?",
+    "Tercera tactica: pide opinion especifica de una tarea para calibrarte en habilidades concretas. Si no sabes como de bueno eres hablando en publico, sigue a unas cuantas personas despues de dar una presentacion y diles: quiero mejorar hablando, que crees que fue bien de mi presentacion, y que la habria hecho el doble de buena?"
+  ],
+  "resumen_teorico": "Es la tercera parte de la honestidad brutal contigo mismo y la primera que sale de tu cabeza hacia fuera. Su inventario propio es triple y muy concreto: las dos preguntas literales para el jefe, el guion del correo mas sus tres peticiones concretas para el grupo de tres a siete, y la pregunta de seguimiento para la opinion de tarea. El libro ata cada tactica a lo que calibra: el jefe calibra el impacto y el ideal del puesto, el grupo cercano calibra la conducta, y la de tarea calibra una habilidad. Lo que el libro NO dice, y por eso no esta escrito: ni cada cuanto se recalibra, ni que se hace cuando las tres tacticas dan respuestas que se contradicen."
+}

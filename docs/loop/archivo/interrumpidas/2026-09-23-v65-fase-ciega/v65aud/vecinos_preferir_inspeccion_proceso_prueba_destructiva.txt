@@ -1,0 +1,6 @@
+candidato preferir_inspeccion_proceso_prueba_destructiva | grafo 366 | bandejas 96 | poblacion 462 | vecinos 4
+  clasificar_trabajo_proceso_montaje_prueba          similitud_texto                          texto 0.366 familia 0.25 paso 0.461 | paso 6 del candidato contra paso 5 de clasificar_trabajo_proceso_montaje_prueba
+  rehacer_flujo_paso_limitante_capacidad             similitud_texto                          texto 0.445 familia 0.0 paso 0.384 | paso 1 del candidato contra paso 6 de rehacer_flujo_paso_limitante_capacidad
+  construir_flujo_produccion_paso_limitante          similitud_texto                          texto 0.41 familia 0.0 paso 0.442 | paso 6 del candidato contra paso 8 de construir_flujo_produccion_paso_limitante
+  dimensionar_inventario_materia_prima_reposicion    similitud_texto                          texto 0.384 familia 0.0 paso 0.417 | paso 5 del candidato contra paso 6 de dimensionar_inventario_materia_prima_reposicion
+FIN

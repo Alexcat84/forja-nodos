@@ -1,0 +1,2 @@
+fuentes/grove_high_output/cap_01.md    cabecera=   23 cuerpo= 3841 suma=  3864 fichero=  3864  CIERRA=SI
+fuentes/grove_high_output/cap_02.md    cabecera=   41 cuerpo= 3386 suma=  3427 fichero=  3427  CIERRA=SI

@@ -1,0 +1,20 @@
+$ python forja.py credito
+CREDITO DE LA LINEA 'serial' (D.48)
+  registro: docs/loop/CREDITO_serial.jsonl
+  tandas: 40, en 180 suceso(s) de especie
+
+  especie            racha      de donde sale
+  ----------------------------------------------------------------------
+  AUDITOR            0 de 3     ACTA 40
+  CIFRA PUBLICADA    0 de 2     ACTA 40
+  CLASE              0 de 2     ACTA 40
+  DATO MOVIDO        0 de 2     ACTA 40
+  REPORTE            2 de 3     ACTA 40
+
+  CREDITO ENTERO: ninguna especie en su tope.
+
+$ python forja.py credito --revisar
+REPLAY CON 1 DISCREPANCIA(S) en la linea 'serial':
+  linea 131 del registro, CLASE en ACTA 32: declara 1, el replay da 0 (REPORTE.md Z.3.a)
+
+LO DIGO Y NO LO ARREGLO: una adjudicacion posterior puede cambiar una tanda ya cerrada, y eso es legitimo. Lo que no es legitimo es que no se vea.

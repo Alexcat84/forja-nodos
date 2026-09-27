@@ -1,0 +1,37 @@
+==============================================================================
+1. PASOS INVENTADOS POR CAPITULO, CON EL DENOMINADOR RECONTADO HOY
+==============================================================================
+| unidad | candidatos | pasos | numerador | tasa | quien firma el numerador |
+|---|---:|---:|---:|---:|---|
+| `cap_01` | 1 | 9 | **0** | **0.00** | FIRMADO por el extractor en la vuelta 25, relectura ancha, 9 de 9 TRANSCRIPCION |
+| `cap_03` | 1 | 10 | **0** | **0.00** | FIRMADO por el extractor en la vuelta 25, relectura ancha; 3 pasos salen de cap_12 y no de cap_03, y eso va aparte |
+| `cap_04` | 6 | 48 | **8** | **16.67** | FIRMADO por el extractor en la vuelta 22, leido uno a uno |
+| `cap_05` | 8 | 76 | **1** | **1.32** | FIRMADO por el extractor en la vuelta 25, relectura ancha de los 8 candidatos, 76 pasos |
+| `cap_06` | 10 | 117 | **0** | **0.00** | sin releer con el ancho: 33 ocurrencias |
+| `cap_07` | 25 | 225 | **0** | **0.00** | sin releer con el ancho: 20 ocurrencias |
+| `cap_08` | 12 | 102 | **0** | **0.00** | sin releer con el ancho: 17 ocurrencias |
+| `cap_09` | 20 | 272 | **7** | **2.57** | FIRMADO por el extractor en la vuelta 22, leido uno a uno |
+| `cap_10` | 14 | 206 | **17** | **8.25** | numerador del auditor (ACTA 21 7.2); denominador recontado hoy |
+| `cap_11` | 16 | 187 | **1** | **0.53** | el candelabro que el auditor cazo (ACTA 22 4.1), corregido en la vuelta 23 |
+| `cap_12` | 2 | 50 | **0** | **0.00** | MIO, leido en el acto de escribir los 2 |
+| `cap_13` | 12 | 212 | **0** | **0.00** | MIO, leido en el acto de escribir los 12 |
+| `cap_14` | 15 | 174 | **1** | **0.57** | el puente teamwork que el auditor cazo (ACTA 24 5.2), releido y FIRMADO por mi en la vuelta 25 |
+| **el lote 4 ENTERO** | **142** | **1688** | **35** | **2.07** | **INCOMPLETO: 3 filas sin releer con el ancho** |
+
+==============================================================================
+2. EL FRENO SE DECIDE SOBRE EL PEOR CAPITULO FIRMADO, NO SOBRE EL TOTAL
+==============================================================================
+| | |
+|---|---:|
+| filas con numerador FIRMADO | **10** de **13** |
+| **la fila que decide, que es la peor firmada** | `cap_04` con **16.67** |
+| tope de `PASOS INVENTADOS` | **10,00** |
+| **el freno** | **DISPARADO** |
+| tramo que el freno deja | **DOS capitulos** |
+
+==============================================================================
+3. LA COMPROBACION DE QUE NINGUN CANDIDATO SE QUEDA FUERA DE LA TABLA
+==============================================================================
+candidatos del lote 4, bandeja mas insertados : 142
+candidatos contados en la tabla     : 142
+capitulos fuera de la tabla         : 0   []

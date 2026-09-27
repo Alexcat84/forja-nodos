@@ -1,0 +1,46 @@
+{
+ "id": "supervisar_decision_delegada_preguntas_concretas",
+ "grafo": 368,
+ "bandejas": 111,
+ "vecinos": [
+  {
+   "id": "identificar_paso_limitante_jornada_desfases",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.399,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.439
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 2 de identificar_paso_limitante_jornada_desfases"
+  },
+  {
+   "id": "supervisar_tarea_delegada_etapa_menor_valor",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.368,
+    "familia_id": 0.222,
+    "paso_contra_nodo": 0.413
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 1 del candidato contra paso 9 de supervisar_tarea_delegada_etapa_menor_valor"
+  },
+  {
+   "id": "agrupar_tareas_semejantes_aprovechar_preparacion",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.368,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.407
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 3 de agrupar_tareas_semejantes_aprovechar_preparacion"
+  }
+ ]
+}

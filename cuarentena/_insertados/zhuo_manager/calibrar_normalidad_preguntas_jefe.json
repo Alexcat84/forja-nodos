@@ -1,0 +1,30 @@
+{
+  "id": "calibrar_normalidad_preguntas_jefe",
+  "titulo": "Calibrar con tu jefe que es lo normal en el entorno nuevo",
+  "denominaciones": {
+    "nombre_largo": "Las cinco preguntas con las que se mira escenarios concretos junto a tu propio jefe para calibrar las expectativas sobre que es normal",
+    "otros_idiomas": [
+      {"idioma": "ingles", "termino": "calibrate their expectations around what's normal"}
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [{"clave": "zhuo_manager", "fecha": "2026-09-10"}],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "En tus primeros meses como jefe nuevo, cuando lo que mas necesitas entender es como calibrar tus expectativas sobre que es lo normal en este entorno, y todavia no tienes criterio propio para juzgarlo.",
+  "entregable_esperado": "Tus expectativas calibradas sobre que es normal aqui, sacadas de mirar escenarios concretos junto a tu jefe y no de suponerlo.",
+  "escala_minima": "Tu, tu jefe y unos cuantos escenarios concretos. El libro pide escenarios concretos y no una conversacion general: esa es la manera eficaz que propone.",
+  "pasos_accionables": [
+    "Acepta que en tus primeros meses tu trabajo principal es escuchar, preguntar y aprender.",
+    "Para calibrar que es lo normal, mira escenarios concretos junto a tu propio jefe, que es la manera eficaz de hacerlo.",
+    "Preguntale que significa hacer un gran trabajo frente a uno medio o malo, y pidele algunos ejemplos.",
+    "Pidele que te comparta sus impresiones sobre como cree que fue tal proyecto o tal reunion, y por que lo cree.",
+    "Cuentale que te has fijado en que paso tal cosa el otro dia y preguntale si eso es normal o si deberias preocuparte.",
+    "Preguntale que es lo que le quita el sueno, y por que.",
+    "Y preguntale como determina el que cosas priorizar."
+  ],
+  "resumen_teorico": "Es el segundo instrumento del camino del jefe nuevo, y el libro lo situa justo despues de nombrar el mayor error de los jefes nuevos, lanzarse a imponer opiniones para demostrar que son capaces. El libro dice de donde sale la necesidad, y la fuente es una medicion suya de andar por casa pero declarada: los directivos nuevos de su equipo le dicen que lo que mas quieren entender es como calibrar sus expectativas sobre que es normal. Las cinco preguntas son las cinco que el libro escribe una a una, y las tres primeras comparten una forma que el libro elige a proposito, la de pedir el juicio de otro sobre un caso concreto en vez de pedir un criterio abstracto. Lo que el libro NO dice, y por eso no esta escrito aqui, es cuantos escenarios hacen falta, cada cuanto se repite la conversacion, ni como se sabe que la calibracion ya esta hecha."
+}

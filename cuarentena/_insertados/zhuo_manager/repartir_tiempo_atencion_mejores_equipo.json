@@ -1,0 +1,39 @@
+{
+  "id": "repartir_tiempo_atencion_mejores_equipo",
+  "titulo": "Repartir tu tiempo y tu atencion hacia los mejores de tu equipo",
+  "denominaciones": {
+    "nombre_largo": "El mismo principio de jugar a las fortalezas llevado un paso mas alla y aplicado al equipo entero, con la cuenta del puesto de limonada",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "pay attention to your team top talent"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando tienes un equipo en el que la mayoria va bien y alguien no, y te notas volcando la mayor parte de tu tiempo y tu energia en quien se atasca.",
+  "entregable_esperado": "Tu tiempo repartido a proposito y no por gravedad: los asuntos del que se atasca diagnosticados y resueltos rapido, y atencion de verdad puesta en los que ya van bien y podrian ir mejor.",
+  "escala_minima": "Un equipo de dos personas donde una va mejor que la otra. El libro razona la cuenta con dos vendedores de limonada.",
+  "pasos_accionables": [
+    "Lleva el principio de gestionar hacia las fortalezas un paso mas alla y aplicalo tambien a los equipos, no solo a los individuos.",
+    "Si tienes cinco personas en el equipo, cuatro van bien y una no, no vuelques la mayor parte de tu tiempo y tu energia en la que se atasca solo porque quieres arreglar el problema.",
+    "Presta atencion al talento de arriba de tu equipo, a los que ya van bien y podrian ir todavia mejor, del mismo modo que los individuos deben jugar a sus fortalezas.",
+    "No dejes que los peores rendimientos dominen tu tiempo: diagnostica, aborda y resuelve sus asuntos tan rapido como puedas.",
+    "Cuenta con que esto es contraintuitivo, porque tus personas mas fuertes no suelen estar pidiendote ayuda.",
+    "Haz la cuenta que el libro hace con el puesto de limonada: si Toby vende treinta vasos por hora y Henry solo diez, te sentiras empujado a pasar la mayoria de tu tiempo con Henry para subir su produccion, pero si entrenar a Toby lo mejora un diez por ciento son tres vasos mas, y para sacar lo mismo de Henry tendrias que hacerlo mejorar un treinta y tres por ciento, que probablemente sera mucho mas dificil de lograr.",
+    "Toma la comparacion que el libro pone: los buenos consejeros delegados saben que hay que doblar la apuesta en los proyectos que funcionan y ponerles mas gente, mas recursos y mas atencion, en vez de llevar cada proyecto al punto de no fracasar, y los buenos inversores saben que ayudar a identificar y hacer crecer una sola empresa naciente hasta los mil millones vale por docenas de inversiones que pierden dinero.",
+    "Y ayuda a las estrellas ascendentes de tu equipo a sonar mas grande y a hacerse lideres mas capaces, aunque no esten clamando por tu atencion."
+  ],
+  "resumen_teorico": "El libro dice literalmente que si llevas el principio de gestionar hacia las fortalezas un paso mas alla, descubres que tambien se aplica a los equipos, asi que este nodo es el mismo principio en otra escala y con otro acto: alli se reconocia una fortaleza, aqui se reparte el tiempo del directivo. Va en nodo propio y no dentro del anterior porque el acto, el entregable y el disparador son distintos, y porque el libro le pone su propia aritmetica. Esa aritmetica es el inventario que lo hace procedimentable: las dos cifras del puesto de limonada y los dos porcentajes que las comparan estan escritos en el libro, no calculados por nadie mas. Lo que el libro NO dice, y por eso no esta escrito aqui, es que proporcion del tiempo va a cada grupo ni cuanto es rapido cuando manda resolver rapido los asuntos del que se atasca."
+}

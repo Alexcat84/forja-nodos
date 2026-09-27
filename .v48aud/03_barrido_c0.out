@@ -1,0 +1,15 @@
+==============================================================================
+CANDIDATO 1: buscar_regularidad_bloques_iguales_trabajo_mando   (9 pasos)
+  poblacion barrida: 390 nodos (grafo + bandejas, filtro canonico)
+  medidos al digito con src.aduana.senal_similitud_texto: 389 de 389; descartados: 0
+  umbral de la casa (config/umbrales.json): 0.35
+  LOS 8 VECINOS MAS PROXIMOS, LISTA ORDENADA ENTERA:
+    0.3904  [bandeja/grove_high_output] llevar_inventario_proyectos_discrecionales  <-- nacido en esta vuelta
+    0.3422  [bandeja/grove_high_output] dimensionar_numero_subordinados_medio_dia_semanal  <-- nacido en esta vuelta
+    0.3379  [bandeja/grove_high_output] identificar_paso_limitante_jornada_desfases
+    0.3332  [bandeja/grove_high_output] agrupar_tareas_semejantes_aprovechar_preparacion
+    0.3254  [bandeja/grove_high_output] decir_no_trabajo_excede_capacidad  <-- nacido en esta vuelta
+    0.3140  [bandeja/grove_high_output] usar_calendario_herramienta_planificacion_produccion  <-- nacido en esta vuelta
+    0.3068  [bandeja/grove_high_output] delegar_tarea_base_comun_seguimiento
+    0.2944  [bandeja/grove_high_output] transmitir_objetivos_prioridades_preferencias
+  vecinos por encima del umbral 0.35: 1

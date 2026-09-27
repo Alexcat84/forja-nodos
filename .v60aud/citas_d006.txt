@@ -1,0 +1,36 @@
+nodo                                                 paso cita   donde esta de verdad
+----------------------------------------------------------------------------------------------------
+mejorar_consciencia_propia_relacional_dos_practicas  P1   L19    [21]
+mejorar_consciencia_propia_relacional_dos_practicas  P2   L19    [21]
+practicar_triangulo_critica_tres_papeles             P1   L62    [63]
+practicar_triangulo_critica_tres_papeles             P2   L62    [63]
+practicar_triangulo_critica_tres_papeles             P3   L62    [63]
+practicar_triangulo_critica_tres_papeles             P4   L62    [63]
+practicar_triangulo_critica_tres_papeles             P5   L62    [63]
+practicar_triangulo_critica_tres_papeles             P6   L64    [65]
+practicar_triangulo_critica_tres_papeles             P7   L64    [65]
+practicar_triangulo_critica_tres_papeles             P8   L64    [65]
+practicar_triangulo_critica_tres_papeles             P9   L64    [65]
+practicar_triangulo_critica_tres_papeles             P10  L64    [65]
+practicar_triangulo_critica_tres_papeles             P11  L66    [67]
+practicar_triangulo_critica_tres_papeles             P12  L66    [67]
+practicar_triangulo_critica_tres_papeles             P13  L68    [69]
+practicar_triangulo_critica_tres_papeles             P14  L68    [69]
+practicar_triangulo_critica_tres_papeles             P15  L70    [71]
+resolver_dudas_frecuentes_pedir_critica              P4   L173   [175]
+resolver_dudas_frecuentes_pedir_critica              P5   L173   [175]
+resolver_dudas_frecuentes_pedir_critica              P6   L173   [175]
+resolver_dudas_frecuentes_pedir_critica              P7   L173   [175]
+resolver_dudas_frecuentes_pedir_critica              P8   L173   [175]
+resolver_dudas_frecuentes_pedir_critica              P9   L177   [179]
+resolver_dudas_frecuentes_pedir_critica              P10  L177   [179]
+resolver_dudas_frecuentes_pedir_critica              P11  L179   [183]
+resolver_dudas_frecuentes_pedir_critica              P12  L179   [183]
+resolver_dudas_frecuentes_pedir_critica              P13  L179   [183]
+resolver_dudas_frecuentes_pedir_critica              P14  L179   [183]
+resolver_dudas_frecuentes_pedir_critica              P15  L181   [185]
+
+filas de cita leidas de SS.3.b        : 43
+citas que SI estan en la linea citada : 14
+citas que NO estan en la linea citada : 29
+filas sin cita literal comprobable    : 0

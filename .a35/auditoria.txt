@@ -1,0 +1,54 @@
+$ .a35/auditoria.py   (el auditor de la ACTA 35, sobre el arbol de hoy)
+EL DATO
+  dataset/nodos.jsonl        : 316 nodos, 316 ids unicos
+  bitacora/VEREDICTOS.jsonl  : 464 lineas
+  aristas por nodos_siguientes: 117   por nodos_previos: 117
+  pares que no casan por los dos extremos: 0
+  aristas a un id que no existe: 0
+
+cap_10 EN EL GRAFO, POR SU RUTA COMPLETA
+  cap_10: 14 nodos, 206 pasos
+  scott en el grafo, sumando nodos y no filas: 113
+  filas por capitulo: {'cap_01': 1, 'cap_03': 1, 'cap_04': 5, 'cap_05': 8, 'cap_06': 10, 'cap_07': 25, 'cap_08': 12, 'cap_09': 20, 'cap_10': 14, 'cap_11': 16, 'cap_12': 1}
+  nodos que citan DOS capitulos y por eso suman dos filas: ['repartir_semana_cuarenta_horas_jefe']
+  nodos scott sin la ruta en el texto: ['invitar_desafio_reciproco_equipo']
+
+LA FILA DE PASOS INVENTADOS QUE FIRMO, contada por mi contra el dataset
+  admitir_pronto_mal_desempenio_cuatro_razones     9 pasos
+  armar_plan_anual_crecimiento_equipo             29 pasos
+  calibrar_ascensos_evitar_politica               19 pasos
+  calibrar_decision_despido_documentarla          13 pasos
+  contactar_despedido_mes_despues                  6 pasos
+  conversar_historia_vida_descubrir_motivadores   15 pasos
+  conversar_suenios_cruzar_habilidades            15 pasos
+  desplegar_tres_conversaciones_carrera           12 pasos
+  evitar_obsesion_ascenso_estatus                 10 pasos
+  facilitar_despido_tres_cosas                    11 pasos
+  montar_proceso_contratacion_reducir_sesgo       32 pasos
+  reconocer_excelencia_trayectoria_gradual        13 pasos
+  sopesar_consejo_legal_despedir_humildad          8 pasos
+  trazar_plan_dieciocho_meses_aprendizaje         14 pasos
+  TOTAL cap_10: 206 pasos escritos, 0 PUENTE, 0.00 por ciento
+
+LA TANDA DE VEREDICTOS (desde la linea 428)
+  nuevos: 37   {'CONTINUA': 13, 'SANO': 24}
+  levantados: {'senial': 15, 'lectura declarada': 22}
+  de las 13 CONTINUA: {'senial': 5, 'lectura': 8}
+  con arista_en_cola: 4
+  D.8, SANO sin razon escrita en TODA la bitacora: 0
+
+LAS TASAS CON SU BANDA (AUDITOR_FORJA.md 7: una tasa sin banda es media cifra)
+  muestra pineada de SANO, semilla 36      0 de 5    tasa 0,00   banda Wilson 95: [0.00, 43.45] por ciento
+  los SANO de la tanda, releidos enteros   0 de 24   tasa 0,00   banda Wilson 95: [0.00, 13.80] por ciento
+  los 37 veredictos de la tanda            0 de 37   tasa 0,00   banda Wilson 95: [0.00, 9.41] por ciento
+  los 206 pasos de cap_10 (D.30)           0 de 206  tasa 0,00   banda Wilson 95: [0.00, 1.83] por ciento
+
+LA BANDEJA QUE QUEDA
+  candidatos: {'cap_12': 2, 'cap_13': 12, 'cap_14': 15}   total 29
+  pasos     : {'cap_12': 50, 'cap_13': 212, 'cap_14': 174}
+  cap_12 mas cap_13 = 14 candidatos, contra el techo de 15 de EXTRACTOR.md 12.4
+
+LA PIEZA DE cap_12 QUE LEVANTO ANTES DE QUE ENTRE (D.30)
+  desplegar_plan_orden_operaciones_franqueza_radical P33: Asegurate de que no estas creando una cultura obsesionada con el ascenso, y dedica un pensamiento extra a como estas recompensando a tus superestrellas.
+  cap_10: 'rock star' 7 veces, 'superstar' 8 veces
+  cap_12: 'rock star' 1 veces, 'superstar' 0 veces

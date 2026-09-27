@@ -1,0 +1,17 @@
+  L5    crear_tarjeta_puntuacion_puesto > crear_tarjeta_puntuacion_puesto ->  crear_tarjeta_puntuacion_puesto > alinear_comunicar_tarjeta_puntuacion
+  L25   seleccionar_jugador_cuatro_entrevistas > seleccionar_jugador_cuatro_entrevistas ->  seleccionar_jugador_cuatro_entrevistas > decidir_contratacion_final
+  L26   seleccionar_jugador_cuatro_entrevistas > seleccionar_jugador_cuatro_entrevistas ->  seleccionar_jugador_cuatro_entrevistas > calificar_tarjeta_puntuacion_habilidad_voluntad
+  L64   instalar_metodo_contratacion_empresa > instalar_metodo_contratacion_empresa ->  instalar_metodo_contratacion_empresa > formar_equipo_practicas_metodo
+  L68   respetar_cautelas_legales_contratacion > respetar_cautelas_legales_contratacion ->  respetar_cautelas_legales_contratacion > rechazar_candidato_razones_relevantes
+  L76   elegir_recolocar_despedir_persona > elegir_recolocar_despedir_persona ->  elegir_recolocar_despedir_persona > despedir_persona_respeto_franqueza
+  L78   listar_debilidades_disparadores_propios > listar_debilidades_disparadores_propios ->  listar_debilidades_disparadores_propios > identificar_disparadores_propios_reaccion
+  L84   revisar_proposito_personas_proceso > revisar_proposito_personas_proceso ->  revisar_proposito_personas_proceso > gestionar_personas_equipo
+  L87   transitar_jefe_nuevo_equipo_establecido > transitar_jefe_nuevo_equipo_establecido ->  transitar_jefe_nuevo_equipo_establecido > calibrar_normalidad_preguntas_jefe
+  L123  repartir_papeles_directivo_reclutador > repartir_papeles_directivo_reclutador ->  repartir_papeles_directivo_reclutador > desarrollar_estrategia_busqueda_candidatos
+  L124  repartir_papeles_directivo_reclutador > repartir_papeles_directivo_reclutador ->  repartir_papeles_directivo_reclutador > mostrar_candidato_cuanto_quieres
+  L128  crear_plan_creible_equipo > crear_plan_creible_equipo          ->  crear_plan_creible_equipo > ajustar_plan_fuerzas_equipo
+
+lineas en la bitacora        : 148
+lineas con el campo anadido  : 12
+lineas saltadas y declaradas : 0
+ESCRITO en bitacora/VEREDICTOS.jsonl

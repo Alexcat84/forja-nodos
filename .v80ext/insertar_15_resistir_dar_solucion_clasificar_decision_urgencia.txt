@@ -1,0 +1,58 @@
+fila 15, resistir_dar_solucion_clasificar_decision_urgencia, lineas --veredicto: 5
+  --veredicto aplicar_ejercicio_codigo_genetico_control|SANO|El mismo par que aplicar_ejercicio lee desde su lado: espacio para decidir y clasificacion por urgencia (cap_08 L107, L117 a L121) contra reescribir la autoridad de decision en la politica (cap_06 L101 a L111). Ninguno usa el producto del otro.
+  --veredicto declarar_intencion_reemplazar_peticion_permiso|SANO|El mismo par que declarar_intencion lee desde su lado: clasificacion por urgencia (cap_08 L117 a L121) contra frases de intencion (cap_07 L55, L73 a L93). La similitud de 0,411, por encima de 0,4, se lee primero y no es gemelo (ACTA M9.4, fila 1).
+  --veredicto acoger_inspectores_externos_fuente_aprendizaje|SANO|El mismo par que acoger_inspectores lee desde su lado: reparto de la decision por urgencia (cap_08 L117 a L121) contra el inspector como fuente de soluciones (cap_10 L49). La similitud de 0,428, por encima de 0,4, se lee primero, sin paso comun (ACTA M9.4, fila 6).
+  --veredicto tomar_accion_deliberada_pausar_vocalizar_gesticular|SANO|Ajenos: reparto de autoridad por urgencia (cap_08 L117 a L121) contra el ritual fisico antes de actuar (cap_11 L75). La similitud de 0,402, por encima de 0,4, se lee primero, sin paso comun (ACTA M9.4, fila 10).
+  --veredicto reforzar_principios_guia_lenguaje_prueba_conocimiento|SANO|El mismo par que reforzar_principios lee desde su lado: clasificacion por urgencia contra principios como vocabulario (cap_08 L117 a L121; cap_14 L89, L99). Sin paso comun.
+inicio 2026-09-26 20:03:03
+======================================================================
+ADUANA DE INSERCION, candidato 'resistir_dar_solucion_clasificar_decision_urgencia'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (473 del grafo mas 6 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 5. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino aplicar_ejercicio_codigo_genetico_control  [Aplicar con el liderazgo el ejercicio para hallar el codigo genetico del control y reescribirlo]
+    levantada por: similitud_texto
+    similitud_texto    0.356 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.452 (umbral 0.60)
+    paso 3 del candidato contra paso 2 de aplicar_ejercicio_codigo_genetico_control
+
+  vecino declarar_intencion_reemplazar_peticion_permiso  [Reemplazar las frases que piden permiso por frases que declaran intencion, y responder con una aprobacion simple]
+    levantada por: similitud_texto
+    similitud_texto    0.411 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.434 (umbral 0.60)
+    paso 3 del candidato contra paso 3 de declarar_intencion_reemplazar_peticion_permiso
+
+  vecino acoger_inspectores_externos_fuente_aprendizaje  [Acoger a los inspectores externos como fuente de aprendizaje segun la fortaleza o debilidad del area inspeccionada]
+    levantada por: similitud_texto
+    similitud_texto    0.428 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.402 (umbral 0.60)
+    paso 3 del candidato contra paso 3 de acoger_inspectores_externos_fuente_aprendizaje
+
+  vecino tomar_accion_deliberada_pausar_vocalizar_gesticular  [Tomar accion deliberada: pausar, vocalizar y gesticular antes de ejecutar cualquier accion para evitar errores automaticos]
+    levantada por: similitud_texto
+    similitud_texto    0.402 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.382 (umbral 0.60)
+    paso 2 del candidato contra paso 1 de tomar_accion_deliberada_pausar_vocalizar_gesticular
+
+  vecino reforzar_principios_guia_lenguaje_prueba_conocimiento  [Reforzar los principios guia usando su vocabulario en premios y evaluaciones, y comprobar si de verdad los conoce quien no los escribio]
+    levantada por: similitud_texto
+    similitud_texto    0.369 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.346 (umbral 0.60)
+    paso 3 del candidato contra paso 2 de reforzar_principios_guia_lenguaje_prueba_conocimiento
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 474
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 5
+
+======================================================================
+fin 2026-09-26 20:12:16 | codigo de salida 0 | 552.4 s

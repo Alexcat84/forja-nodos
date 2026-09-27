@@ -1,0 +1,10 @@
+calibrar_decision_despido_documentarla   (13 pasos)   poblacion 299 = 203 grafo + 96 bandejas
+  vecinos POR ENCIMA de umbral: 1
+    sopesar_consejo_legal_despedir_humildad              sim=0.362 fam=0.000 paso=0.511  <- similitud_texto
+  los 5 mas altos por similitud_texto, esten o no por encima:
+    sopesar_consejo_legal_despedir_humildad              sim=0.362 fam=0.000 paso=0.511
+    trazar_plan_dieciocho_meses_aprendizaje              sim=0.349 fam=0.000 paso=0.452
+    organizar_sistema_recoger_quejas_equipo              sim=0.309 fam=0.000 paso=0.464
+    contactar_despedido_mes_despues                      sim=0.306 fam=0.000 paso=0.403
+    reconocer_excelencia_trayectoria_gradual             sim=0.304 fam=0.000 paso=0.438
+  segundos: 498.9

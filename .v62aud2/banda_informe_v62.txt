@@ -1,0 +1,16 @@
+MEDIDAS DIRECTAS DEL RELOJ DE UN python forja.py informe
+    388.6 s   poblacion 437   ACTA 57 57.10
+    438.5 s   poblacion 440   ACTA 61, el auditor, HOY: .v62aud2/informe_detectar_AUDITOR.txt
+    477.8 s   poblacion 437   ACTA 57 57.10
+    490.0 s   poblacion 440   ACTA 60 60.4, el auditor
+    507.0 s   poblacion 440   VUELTA 61 61.2.a, el extractor
+    510.0 s   poblacion 439   ACTA 59 59.10, el auditor
+    579.0 s   poblacion 440   VUELTA 62 62.4, el extractor, reloj de sus dos date
+    668.0 s   poblacion 440   VUELTA 61 61.2.b, el extractor
+   1002.0 s   poblacion 437   ACTA 58 58.10
+   1062.0 s   poblacion 437   ACTA 58 58.10
+  ------------------------------------------------------------------
+  medidas   : 10
+  BANDA     : 388.6 a 1062.0 s   (factor 2.73 entre extremos)
+  MEDIANA   : 508.5 s
+  media     : 612.3 s   (se publica junto a la banda, NUNCA sola)

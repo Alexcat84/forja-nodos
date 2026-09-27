@@ -1,0 +1,8 @@
+COLA cola   cuidar_persona_completa_equipo                              77.7s   pares SIN veredicto mio: empezar_cultura_franqueza_radical
+OK   cola   pedir_critica_equipo_premiarla                               6 veredictos   90.7s
+COLA cola   acompaniar_mejores_equipo_socio                             76.7s   pares SIN veredicto mio: pedir_critica_equipo_premiarla
+COLA cap_06 decidir_momento_despedir_persona                           102.4s   pares SIN veredicto mio: despedir_persona_respeto_franqueza, elegir_recolocar_despedir_persona
+
+intentados en esta corrida : 4
+INSERTADOS                 : 1
+en cola de lectura         : 3

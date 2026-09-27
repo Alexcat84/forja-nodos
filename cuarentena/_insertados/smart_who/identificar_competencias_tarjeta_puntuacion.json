@@ -1,0 +1,49 @@
+{
+  "atribuciones": [
+    {
+      "autor": "Geoff Smart y Randy Street, con sus colegas de la Universidad de Chicago",
+      "cifra": "la lista de las diez competencias criticas de un jugador A sale de pedir a los colegas de la Universidad de Chicago que analizaran la base de datos de ghSMART para determinar que competencias importaban de verdad para el exito de un consejero delegado, de preguntar tambien a los muchos consejeros delegados y otros lideres entrevistados para el libro cuales consideraban mas importantes, y de fundir y priorizar los dos resultados",
+      "fecha_corte": "2008",
+      "fuente": "smart_who"
+    }
+  ],
+  "condiciones_activacion": "Cuando ya tienes escritas la mision y los resultados del puesto. El libro dice que las competencias fluyen directamente de esos dos primeros elementos de la tarjeta de puntuacion: la mision define la esencia del trabajo, los resultados describen lo que hay que lograr, y las competencias definen como esperas que el nuevo opere para cumplirlos.",
+  "denominaciones": {
+    "nombre_largo": "Las competencias de la tarjeta de puntuacion, el encaje de comportamiento",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "Competencies: Ensuring Behavioral Fit"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "Critical Competencies for A Players"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "contratacion",
+  "entregable_esperado": "La seccion de competencias de la tarjeta de puntuacion escrita, con las competencias del puesto que describen los comportamientos necesarios para lograr los resultados, y con las de cinco a ocho competencias de cultura que van en todas las tarjetas de la casa.",
+  "escala_minima": "Las competencias de cultura van en TODAS las tarjetas de puntuacion, no solo en las del consejero delegado y el equipo directivo.",
+  "fuentes": [
+    {
+      "clave": "smart_who",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "id": "identificar_competencias_tarjeta_puntuacion",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Identifica las competencias del puesto, tantas como te parezcan apropiadas, para describir los comportamientos que alguien tiene que demostrar para lograr los resultados que ya escribiste.",
+    "Para elegirlas, parte de la lista de las diez competencias criticas de un jugador A que el libro publica: eficiencia, honestidad e integridad, organizacion y planificacion, agresividad, cumplimiento de los compromisos, inteligencia, capacidad analitica, atencion al detalle, persistencia y proactividad.",
+    "Considera tambien la lista larga que los autores reparten a los clientes nuevos: capacidad de contratar jugadores A y capacidad de desarrollar personas, las dos para puestos de mando, flexibilidad y adaptabilidad, calma bajo presion, pensamiento estrategico y vision, creatividad e innovacion, entusiasmo, etica de trabajo, altos estandares, capacidad de escucha, apertura a la critica y a las ideas, comunicacion, trabajo en equipo y persuasion.",
+    "Trata las dos listas como sugerencias de arranque y no como la lista definitiva: adapta el conjunto de competencias al puesto concreto y a la naturaleza peculiar de tu institucion, porque cada puesto tiene requisitos distintos y cada tarjeta resultados distintos.",
+    "No hagas la lista de competencias demasiado estrecha, porque en la practica dos personas pueden lograr el mismo resultado con enfoques distintos.",
+    "Identifica de cinco a ocho competencias que describan tu cultura y ponlas en todas las tarjetas de puntuacion.",
+    "Usa la seccion de competencias de la tarjeta como lista de comprobacion durante el proceso de entrevista, y personalizala para que encaje con tus necesidades."
+  ],
+  "resumen_teorico": "Las competencias son la tercera parte de la tarjeta de puntuacion y aseguran el encaje de comportamiento. Trabajan en dos niveles: definen las habilidades y comportamientos que exige un puesto, y reflejan las demandas mas amplias de la cultura de la organizacion. El libro publica dos listas. La primera, las diez competencias criticas de un jugador A, sale de un trabajo con la Universidad de Chicago sobre la base de datos de ghSMART fundido con lo que dijeron los consejeros delegados entrevistados. La segunda es la lista larga que los autores reparten cuando presentan el metodo a un cliente nuevo. El aviso con el que el libro cierra las dos: son sugerencias de arranque, no un catalogo cerrado, y hay mas de una manera de despellejar un gato, que es como los autores explican que dos lideres de una fundacion puedan recaudar fondos uno con folletos en color a muchos donantes y otro llamando a los donantes uno a uno. El caso nombrado es el de Bill Johnson, consejero delegado de Heinz desde 1998, que tiene su propia lista de cinco: la quimica personal, el compromiso mutuo, si la persona es entrenable, si tiene el ego bajo control y si tiene el intelecto requerido. El libro lo pone como ejemplo de personalizacion y lo cierra mandando lo contrario de copiarlo: la lista de Johnson captura lo que EL mas valora, y lo que hay que asegurarse es de que la tuya haga lo mismo.",
+  "titulo": "Identificar las competencias del puesto en la tarjeta de puntuacion"
+}

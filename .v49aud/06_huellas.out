@@ -1,0 +1,20 @@
+== reunir_informacion_gerencial_vias_variadas
+   titulo                   antes     96 car, hoy     96 car, IGUAL
+   condiciones_activacion   antes    229 car, hoy    229 car, IGUAL
+   entregable_esperado      antes    153 car, hoy   1886 car, CAMBIA (+1733)
+   resumen_teorico          antes   3450 car, hoy   3450 car, IGUAL
+   pasos_accionables        antes      8, hoy      8, IGUALES
+   huella del texto que mira la senial 1: antes 997ece8f644815ab, hoy 997ece8f644815ab, IGUAL
+   texto_comparable: antes 4370 car, hoy 4370 car
+   entregable_esperado: el texto viejo entero (153 car) SIGUE dentro del nuevo
+
+== dimensionar_numero_subordinados_medio_dia_semanal
+   titulo                   antes    157 car, hoy    157 car, IGUAL
+   condiciones_activacion   antes    153 car, hoy    153 car, IGUAL
+   entregable_esperado      antes    213 car, hoy    213 car, IGUAL
+   resumen_teorico          antes   7820 car, hoy  10180 car, CAMBIA (+2360)
+   pasos_accionables        antes     11, hoy     11, IGUALES
+   huella del texto que mira la senial 1: antes f6f4f4dd3060e8a0, hoy 17327e3a009f5484, DISTINTA
+   texto_comparable: antes 9794 car, hoy 12072 car
+   resumen_teorico: el texto viejo entero (7820 car) SIGUE dentro del nuevo
+

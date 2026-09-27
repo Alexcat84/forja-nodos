@@ -1,0 +1,7 @@
+variar_frecuencia_inspeccion_nivel_calidad         cap_03 P19  leida en b63405c pasos  6 P 0
+simplificar_trabajo_reducir_numero_pasos           cap_03 P23  leida en b63405c pasos  7 P 0
+nodos de la tanda en el grafo iguales a su lectura entera: 2 | distintos: 0
+fichas de _insertados con el mismo blob que su lectura entera: 2 | distintas: 0
+capitulo  cand pasos    P   por100
+cap_03       2    13    0     0.00
+tanda        2    13    0     0.00

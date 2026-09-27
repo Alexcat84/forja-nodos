@@ -1,0 +1,33 @@
+ARRANQUE: 2026-09-11T15:36:31
+ARRANQUE_EPOCH: 1789155391
+N: 2
+G: 135
+========
+============================================================================
+INFORME DE LA ADUANA EN SECO. CERO INSERCIONES.
+============================================================================
+candidatos revisados        : 2
+nodos en el grafo de destino: 135
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 2
+  BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[ENTRARIA] desplegar_marco_franqueza_radical   (desplegar_marco_franqueza_radical.json)
+
+[ENTRARIA] repartir_semana_cuarenta_horas_jefe   (repartir_semana_cuarenta_horas_jefe.json)
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.
+========
+CIERRE: 2026-09-11T15:37:14
+CIERRE_EPOCH: 1789155434
+SALIDA: 0

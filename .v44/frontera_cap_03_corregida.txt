@@ -1,0 +1,56 @@
+==============================================================================
+1. LA COMPROBACION DE cap_03, ANTES DE SU TABLA
+==============================================================================
+fichero                                : fuentes/grove_high_output/cap_03.md
+la cabecera acaba en la linea          : 7   (segundo guion triple, no tecleado)
+tramos de mi lectura                   : 24
+lineas con contenido tras la cabecera  : 86
+lineas NO cubiertas                    : 0  []
+SOLAPES                                : 0  []
+suma de las filas                      : 5828 palabras
+cuerpo medido aparte                   : 5828 palabras
+fichero entero, para cruzar con wc -w  : 5855 palabras
+IGUALES                                : True
+NODOS QUE MI FRONTERA DA EN ESTA UNIDAD, cap_03 Y SOLO cap_03: 15
+
+==============================================================================
+2. LA TABLA DE cap_03, IMPRESA Y NO TECLEADA
+==============================================================================
+| tramo de cap_03 | palabras | nodos | que es, y por que | la salida, pegada |
+|---|---:|---:|---|---|
+| `L9 a L13` | 10 | **0** | P1  rotulos: el numero, el titulo y el subtitulo Indicators as a Key Tool | `9:2` |
+| `L15 a L29` | 560 | **1** | P2  LOS CINCO INDICADORES DIARIOS: el libro los nombra uno a uno y anade el repaso de primera hora | `15:A hungry public has loved the breakfast you've been serving, and` |
+| `L31 a L33` | 208 | **1** | P3  el indicador dirige la atencion, y el par de efecto y contraefecto, con su caso del compilador | `31:Indicators tend to direct your attention toward what they are mo` |
+| `L35 a L37` | 196 | **1** | P4  las dos varas del indicador administrativo: salida y no actividad, y cosa fisica y contable | `35:Nowhere can indicators-and paired indicators-be of more help tha` |
+| `L39 a L67` | 47 | **0** | P5  la TABLA de seis funciones administrativas con su indicador, y su pie: material del nodo de P4 | `39:ADMINISTRATIVE FUNCTION` |
+| `L69 a L69` | 127 | **0** | P6  para que sirven esos indicadores: objetivos, objetividad y comparacion entre grupos, POSTURA | `69:Such indicators have many uses. First, they spell out very clear` |
+| `L71 a L79` | 348 | **1** | P7  LA CAJA NEGRA: entrada, salida y trabajo, y las ventanas que se abren para ver dentro | `71:The Black Box` |
+| `L81 a L81` | 139 | **0** | P8  los indicadores adelantados han de ser CREIBLES: adjetivo de adecuacion en el sitio del criterio, 9.1 restriccion 2 | `81:Leading indicators give you one way to look inside the black box` |
+| `L83 a L87` | 352 | **1** | P9  EL INDICADOR DE LINEALIDAD: la recta ideal contra lo real, con sus dos casos | `83:Leading indicators might include the daily monitors we use to ru` |
+| `L89 a L89` | 94 | **1** | P10 el indicador de tendencia: la salida contra el tiempo y contra un patron | `89:Also valuable are trend indicators. These show output (breakfast` |
+| `L91 a L97` | 306 | **1** | P11 EL GRAFICO ESCALONADO: el pronostico rehecho cada mes sobre los anteriores | `91:Another sound way to anticipate the future is through the use of` |
+| `L99 a L99` | 88 | **1** | P12 el archivo de indicadores para resolver averias | `99:Finally, indicators can be a big help in solving all types of pr` |
+| `L101 a L109` | 425 | **1** | P13 fabricar contra pedido o contra pronostico: las dos vias nombradas, con su riesgo de inventario | `101:Controlling Future Output` |
+| `L111 a L121` | 453 | **1** | P14 casar el flujo de fabricacion con el de ventas: dos pronosticos, holgura en inventario y escalonados | `111:Delivering a product that was built to forecast to a customer co` |
+| `L123 a L125` | 228 | **1** | P15 dimensionar la plantilla administrativa con el pronostico y los patrones de hecho | `123:Forecasting future work demands and then adjusting the output of` |
+| `L127 a L133` | 206 | **0** | P16 rechazar al menor valor y los NOMBRES de los tres puntos de inspeccion: DEFINICION, y el fondo ya vive en cap_02 | `127:Assuring Quality` |
+| `L135 a L137` | 242 | **1** | P17 aceptar o rechazar el material defectuoso, con su grupo equilibrado y su excepcion de fiabilidad | `135:When material is rejected at incoming inspection, a couple of ch` |
+| `L139 a L141` | 356 | **1** | P18 barrera contra monitorizacion: las dos mecanicas enteras y su regla de pulgar | `139:Inspections, of course, cost money to perform and further add to` |
+| `L143 a L145` | 157 | **1** | P19 la inspeccion variable: la frecuencia sigue al nivel de calidad | `143:Another way to lower the cost of quality assurance is to use var` |
+| `L147 a L153` | 397 | **0** | P20 la embajada de Londres y sus visados: CASO de P19, manual 3.5, entra nombrado dentro de su nodo | `147:I recently read a story in a news magazine that said that the Am` |
+| `L155 a L155` | 106 | **0** | P21 la inspeccion variable aplicada al mando: su procedimiento vive en otro capitulo, extraerlo aqui fabrica el gemelo de su donante | `155:Later, when we examine managerial productivity, we'll see that w` |
+| `L157 a L167` | 395 | **0** | P22 productividad como salida partida por trabajo, y la palanca: DEFINICION y concepto | `157:Productivity` |
+| `L169 a L173` | 382 | **1** | P23 LA SIMPLIFICACION DEL TRABAJO: diagrama, cuenta, meta de reduccion y la pregunta a cada paso | `169:Automation is certainly one way to improve the leverage of all t` |
+| `L175 a L179` | 6 | **0** | P24 el rotulo de la parte II del libro, que ya no es de esta unidad | `175:II` |
+| | **5828** | **15** | **el cuerpo entero de cap_03, cero lineas sin cubrir y cero solapes** | |
+
+==============================================================================
+3. EL TECHO, CONTRASTADO Y NO DECIDIDO AQUI
+==============================================================================
+NODOS QUE MI FRONTERA DA EN LA UNIDAD DE ESTA VUELTA (cap_03): 15
+TECHO DE CANDIDATOS POR VUELTA (EXTRACTOR.md 12.4): entre 5 y 15
+DENTRO DEL TECHO                                             : SI
+UNIDADES DEL LIBRO                                           : 18
+UNIDADES YA MINADAS (leidas de las fichas, no descontadas a ojo): 3  cap_01 cap_02 cap_03
+LA VUELTA CIERRA EN cap_03 (12.4, precedencia): las otras 15 unidades del
+libro pasan a la vuelta siguiente, y eso se declara en el reporte.

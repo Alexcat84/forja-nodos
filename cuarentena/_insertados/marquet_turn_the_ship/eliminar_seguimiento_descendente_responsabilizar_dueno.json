@@ -1,0 +1,33 @@
+{
+  "atribuciones": [],
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "fuentes": [
+    {
+      "clave": "marquet_turn_the_ship",
+      "fecha": "2026-09-21"
+    }
+  ],
+  "id": "eliminar_seguimiento_descendente_responsabilizar_dueno",
+  "titulo": "Eliminar el sistema de seguimiento descendente y responsabilizar a cada dueno de vigilar y completar lo suyo",
+  "denominaciones": {
+    "nombre_largo": "El mecanismo de eliminar los sistemas de seguimiento de arriba hacia abajo y trasladar la responsabilidad de vigilar y completar cada pendiente a quien esta a cargo de esa area",
+    "sigla": "",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "eliminate top-down monitoring systems"
+      }
+    ]
+  },
+  "condiciones_activacion": "Cuando existe un sistema centralizado, sostenido por un superior o una oficina de staff, dedicado a vigilar y reportar el estado de las tareas pendientes de otros en vez de a que esas tareas avancen.",
+  "entregable_esperado": "El sistema centralizado de seguimiento eliminado, y cada responsable de area vigilando y completando por su cuenta lo que su area debe.",
+  "pasos_accionables": [
+    "Dile a cada responsable de un area que el mismo, y no su superior, es quien debe vigilar sus propios pendientes y responder por completarlos. El texto lo dice asi: You are all going to monitor your own departments and whatever is due. You are responsible, not me and not the XO, for getting it done.",
+    "Deja de mantener el sistema centralizado que solo vigilaba y reportaba el estado de esos pendientes, con sus reuniones de revision, porque ya no hace falta. El texto lo dice asi: we unburdened ourselves of the effort of maintaining the tickler."
+  ],
+  "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/marquet_turn_the_ship/cap_09.md, unidad Cap. 13, titulo textual Who's Responsible? La pieza que se mina es P1, lineas 71 y 73, contiguas (un parrafo sigue al otro sin nada intermedio), dentro del mecanismo nombrado por su propio rotulo en la linea 41, Mechanism: Eliminate Top-Down Monitoring Systems. POR QUE ES PROCEDIMIENTO Y NO CASO, con D.27 y su corolario P.5.1 delante: el libro no pone una lista enumerada de pasos, pero pone el mandato completo en una sola linea (linea 71) y la accion que lo hace real en la linea siguiente (linea 73, dejar de mantener el tickler), y la prueba de que es procedimiento y no solo consigna es que existe quien lo ejecuto: la propia tripulacion del Santa Fe, con resultado medido en la linea 79 (no volvieron a tener el problema de fondo, solo incidentes menores faciles de resolver). DISCUTIBLE, MARCADO ANTES DE SABER SI ACIERTO: este nodo tiene el inventario mas delgado de los tres de esta vuelta, una sola linea de mandato en vez de una lista nombrada de medios o etapas; si el auditor lee que una sola linea de mandato sin lista propia es postura y no procedimiento, este candidato se retira. EL CASO ENTRA COMO EJEMPLO Y NO COMO NODO PROPIO (manual 3.5): la anecdota completa del tickler (el binder de tres pulgadas, las reuniones semanales, la categorizacion de las organizaciones en tickler roto, tickler ineficiente y tickler bien llevado, lineas 15 a 39) y el dialogo completo con Weps y Nav (lineas 43 a 69) son la escena naval especifica de la que Marquet generaliza el mecanismo, y no se minan como pasos propios. LO QUE NO ESCRIBO Y POR ESO NO ESTA AQUI: la advertencia de la linea 85 (no eliminar la recoleccion de datos y medicion que solo reporta condiciones sin juicio, evitar solo los sistemas donde el personal de mas jerarquia decide lo que debe hacer el personal de abajo) no se mina como paso propio, por no traer su propio rotulo de mecanismo ni una lista nombrada, sino una distincion declarativa unica: se sostiene como POSTURA, EXTRACTOR.md 15.4. La referencia al libro de W. Edwards Deming, Out of the Crisis, y a TQL (lineas 89 y 91) tampoco entra, por ser una recomendacion de lectura sin fecha de corte verificable como cifra. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 2 pasos, 2 TRANSCRIPCION, 0 PUENTE."
+}

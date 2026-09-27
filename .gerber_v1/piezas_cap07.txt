@@ -1,0 +1,11 @@
+[
+ ('R1',   8,  19, 'el numero del capitulo, el rotulo `BEYOND THE COMFORT ZONE` y el epigrafe de Eric Hoffer', 'RESIDUO: rotulo y epigrafe'),
+ ('R2',  20,  41, 'la zona de confort de cada una de las tres personalidades y los tres unicos caminos que le quedan al negocio adolescente', 'POSTURA'),
+ ('R3',  42, 113, 'Getting Small Again: volver a hacerlo todo solo, el dia en que descubres que no tienes un negocio sino un empleo, y los 400.000 cierres anuales', 'POSTURA y CASO'),
+ ('R4', 114, 139, 'Going for Broke: crecer sin control, la lista de companias reventadas, y la ruleta rusa de alta tecnologia', 'POSTURA y CASO'),
+ ('R5', 140, 183, 'Adolescent Survival: la posibilidad mas tragica, sobrevivir peleando cada dia igual hasta que el que revienta eres tu', 'POSTURA'),
+ ('R6', 184, 233, 'el caso de Elizabeth: la confianza ciega de Sarah, por que la confianza sola no basta, y el getting small de ella misma', 'CASO'),
+ ('R7', 234, 277, 'el tamanio natural de un negocio, la pregunta de cuan grande y no cuan pequenio, y el trabajo del duenio nombrado: prepararse y preparar el negocio para crecer', 'POSTURA'),
+ ('P1', 278, 287, 'DICTAR EL RITMO DE CRECIMIENTO: los tres conocimientos que el libro nombra uno a uno, las preguntas correctas transcritas, los planes de contingencia de mejor y peor caso, y el plan escrito con claridad para que otros lo entiendan', 'CANDIDATO A NODO'),
+ ('R8', 288, 329, 'el plan que se amolda a la realidad, la empresa madura que nace con otra perspectiva, y el cierre con la pregunta de Sarah sobre Elizabeth', 'POSTURA y CASO'),
+]

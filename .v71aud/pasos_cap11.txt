@@ -1,0 +1,25 @@
+===== elegir_modo_control_motivacion_factor_cua | cuarentena\grove_high_output\elegir_modo_control_motivacion_factor_cua.json
+  titulo: Elegir el modo de control de una conducta de trabajo cruzando la motivacion de la persona (interes propio o de grupo) contra el factor CUA de su entorno (complejidad, incertidumbre y ambiguedad)
+  fuente: ['grove_high_output']
+  cond: Cuando tienes que decidir con que modo vas a controlar o influir una conducta de trabajo, la tuya o la de tu equipo, y dudas entre dejarla al precio, atarla a un contrato o apoyarte en valores compartidos.
+  P1. Cuando tengas que decidir con que modo controlar una conducta de trabajo, mide dos variables: la naturaleza de la motivacion de la persona, que puede ir del interes propio al interes de grupo, y la naturaleza del entorno en el que trabaja.
+  P2. Mide ese entorno con un indice compuesto que combine su complejidad, su incertidumbre y su ambiguedad, al que llamaras el factor CUA, y que puede ir de bajo a alto.
+  P3. Reconoce que identificar cual de los modos de control conviene en cada caso es tarea tuya como mando.
+  P4. Cruza las dos variables en un cuadro de cuatro cuadrantes: motivacion, de interes propio a interes de grupo, contra factor CUA, de bajo a alto.
+  P5. Si la motivacion es de interes propio y el factor CUA es bajo, usa el modo de mercado, el mismo que gobierna una compra por el mejor precio.
+  P6. Si la motivacion se mueve hacia el interes de grupo con el factor CUA bajo, usa el modo contractual, el mismo que gobierna que todos paren en el semaforo en rojo.
+  P7. Si la orientacion de interes de grupo y el factor CUA son ambos altos, usa el modo de valores culturales, el mismo que explica que alguien se detenga a ayudar en un accidente.
+  P8. Si el factor CUA es alto y la motivacion sigue siendo de interes propio, no esperes que ningun modo de control funcione bien: esa combinacion, como cada uno por su cuenta en un barco que se hunde, solo produce caos.
+===== escalonar_complejidad_puesto_empleado_nuevo | cuarentena\grove_high_output\escalonar_complejidad_puesto_empleado_nuevo.json
+  titulo: Escalonar la complejidad del puesto de un empleado nuevo, partiendo de un factor CUA bajo y subiendolo a medida que gana experiencia compartida con la organizacion
+  fuente: ['grove_high_output']
+  cond: Cuando incorporas a un empleado nuevo y tienes que decidir que tan estructurado o que tan complejo, incierto y ambiguo debe ser su primer puesto, y como ira cambiando eso con el tiempo.
+  P1. Cuando incorpores a un empleado nuevo, cuenta con que su motivacion sera sobre todo de interes propio.
+  P2. Dale un puesto claramente estructurado, con un factor CUA bajo.
+  P3. Cuenta con que si le va bien, empezara a sentirse mas a gusto, a preocuparse menos por si mismo y a cuidar mas de su equipo.
+  P4. Promuevelo despues a un puesto mas complejo, incierto y ambiguo, que ademas suele pagar mas.
+  P5. Cuenta con que, a medida que pase el tiempo, ira ganando una cantidad creciente de experiencia compartida con el resto de la organizacion y estara listo para tareas cada vez mas complejas, ambiguas e inciertas.
+  P6. Reconoce que esta es la razon por la que la promocion interna es el enfoque que favorecen las empresas con culturas corporativas fuertes.
+  P7. Trae gente joven a puestos de nivel relativamente bajo y bien definidos, con factor CUA bajo.
+  P8. Cuenta con que, con el tiempo, compartiran experiencias con sus companeros, jefes y subordinados y aprenderan los valores, los objetivos y los metodos de la organizacion.
+  P9. Cuenta con que iran aceptando, incluso disfrutando, el mundo complejo de multiples jefes y de las decisiones entre pares.

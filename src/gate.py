@@ -22,6 +22,8 @@ caso positivo en tests/test_aceptacion.py: una prueba que no puede fallar
 no guarda nada.
 """
 
+import json
+
 from . import comun
 from . import config as modulo_config
 from . import esquema as modulo_esquema
@@ -318,13 +320,84 @@ def verificar(nodos=None, tabla_fuentes=None, esquema_nodo=None, pares_mutuos=No
     return fallos
 
 
+# ---------------------------------------------------------------------------
+# D.44: EL CENSO NO DECRECE (16 sep 2026, decision del fundador)
+#
+# UN GRAFO AL QUE LE QUITAN UN NODO ENTERO SIGUE SIENDO COHERENTE, solo que mas
+# pequenio. Las doce guardas de esta casa lo miran todo menos eso: en la vuelta 28
+# una corrida piso a otra, `crear_obligacion_disentir_equipo` entro y desaparecio,
+# y **el gate salio VERDE encima.** Lo cazo el extractor con una resta, a mano.
+#
+# LO QUE MIDE: los nodos que estaban en el ultimo commit y que **ya no estan en el
+# arbol que se va a commitear.** Si uno falta y NO esta marcado `deprecado` con su
+# motivo, el gate cae **nombrandolo**.
+#
+# POR QUE CONTRA EL COMMIT Y NO CONTRA UNA CIFRA GUARDADA: una cifra guardada es
+# otra cosa que mantener al dia, y lo que se mantiene a mano se olvida. **El commit
+# anterior ya esta ahi, es inmutable, y no hay que acordarse de nada.**
+#
+# Y POR QUE ESTO NO SUSTITUYE AL CERROJO: el cerrojo impide que la perdida ocurra;
+# esta guarda impide que una perdida **llegue a un commit**. La de la vuelta 28 no
+# habria caido aqui, porque el extractor la reparo antes de commitear: **el censo
+# de los 27 commits del dataset solo sube, de 222 a 243.** Son dos redes a dos
+# alturas distintas, y hacen falta las dos.
+DEPRECADO = "deprecado"
+
+
+def _ids_del_commit(ruta_relativa, commit="HEAD"):
+    """Los ids del dataset tal como estan en ese commit. None si no se puede leer."""
+    import subprocess
+    try:
+        crudo = subprocess.check_output(["git", "show", "%s:%s" % (commit, ruta_relativa)],
+                                        cwd=comun.RAIZ, stderr=subprocess.PIPE)
+    except Exception:
+        return None
+    dentro = []
+    for linea in crudo.decode("utf-8", "replace").splitlines():
+        linea = linea.strip()
+        if not linea:
+            continue
+        try:
+            dentro.append(json.loads(linea))
+        except ValueError:
+            return None
+    return dentro
+
+
+def censo_no_decrece(nodos, ruta_dataset=None, commit="HEAD"):
+    """Devuelve los fallos de D.44. Lista vacia es verde."""
+    ruta_dataset = ruta_dataset or comun.RUTA_DATASET
+    relativa = comun.relativa(ruta_dataset)
+    antes = _ids_del_commit(relativa, commit)
+    if antes is None:
+        # SIN COMMIT ANTERIOR NO HAY NADA QUE COMPARAR, y eso no es un fallo: es
+        # un repo recien nacido, o un dataset de usar y tirar en una prueba.
+        return []
+    ahora = {}
+    for nodo in nodos:
+        if nodo.get("id"):
+            ahora[nodo["id"]] = nodo
+    fallos = []
+    for nodo in antes:
+        identificador = nodo.get("id")
+        if not identificador or identificador in ahora:
+            continue
+        fallos.append(Fallo(
+            "censo_no_decrece", identificador,
+            "estaba en el dataset del commit %s y NO esta en el arbol. Un nodo no "
+            "se borra: si de verdad sale de superficie, se marca estado=deprecado "
+            "con su motivo (D.17). Si no lo pusiste tu, una corrida piso a otra "
+            "(D.44, y por eso existe el cerrojo de src/cerrojo.py)" % commit))
+    return fallos
+
+
 def texto_informe(fallos, cuantos_nodos):
     if not fallos:
         return ("GATE VERDE.\n"
                 "  nodos verificados: %d\n"
                 "  guardas: esquema, reglas_id, fuentes, orden_fuentes, auto_arista, "
                 "arista_duplicada, vuelta, cita_incompleta, deprecado_en_superficie, "
-                "arista_rota, arista_incompleta, guiones"
+                "arista_rota, arista_incompleta, guiones, censo_no_decrece"
                 % cuantos_nodos)
     lineas = ["GATE EN ROJO: %d fallo(s) sobre %d nodo(s)." % (len(fallos), cuantos_nodos)]
     for fallo in fallos:
@@ -336,6 +409,11 @@ def main(argumentos=None):
     comun.salida_utf8()
     nodos = comun.leer_jsonl(comun.RUTA_DATASET)
     fallos = verificar(nodos)
+    # D.44: EL CENSO NO DECRECE. Va aqui y no en `verificar()` porque mira el
+    # ARBOL contra el COMMIT, y `verificar()` juzga una lista de nodos en memoria
+    # (la aduana la usa para simular antes de escribir, donde no hay commit que
+    # valga).
+    fallos.extend(censo_no_decrece(nodos))
     hallazgos = guiones.barrer_repo(rutas=[comun.RUTA_DATASET])
     for hallazgo in hallazgos:
         fallos.append(Fallo("guiones", "dataset/nodos.jsonl", hallazgo))

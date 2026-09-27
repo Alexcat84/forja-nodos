@@ -1,0 +1,19 @@
+POBLACION: cuarentena/scott_radical_candor + cuarentena/_insertados/scott_radical_candor
+ 1 recorrer_rueda_hacer_cosas_equipo                L65-L77    _insertados pasos=12  cap=?
+ 2 crear_espacio_seguro_madurar_ideas_nuevas        L177-L195  _insertados pasos=14  cap=?
+ 3 crear_obligacion_disentir_equipo                 L231-L233  _insertados pasos=5  cap=?
+ 4 parar_debate_emocion_agotamiento                 L235-L237  bandeja    pasos=5  cap=?
+ 5 fijar_fecha_cierre_debate_equipo                 L245-L257  bandeja    pasos=11  cap=?
+ 6 repartir_decision_cercanos_hechos                L259-L289  bandeja    pasos=11  cap=?
+ 7 pedir_hechos_decision_evitar_recomendaciones     L291-L293  bandeja    pasos=5  cap=?
+ 8 persuadir_emocion_oyente_no_propia               L303-L347  bandeja    pasos=11  cap=?
+ 9 establecer_credibilidad_pericia_humildad         L349-L357  bandeja    pasos=9  cap=?
+10 compartir_logica_mostrar_razonamiento            L359-L365  bandeja    pasos=6  cap=?
+11 minimizar_impuesto_colaboracion_equipo           L367-L373  bandeja    pasos=4  cap=?
+12 proteger_tiempo_equipo_jefe                      L375-L379  bandeja    pasos=9  cap=?
+13 mantener_manos_trabajo_real_equipo               L381-L383  bandeja    pasos=8  cap=?
+14 reservar_calendario_tiempo_ejecutar              L385-L387  bandeja    pasos=4  cap=?
+15 cuidarse_agotamiento_centro_rueda                L409-L419  bandeja    pasos=7  cap=?
+TOTAL cap_07 (15 candidatos): 121
+cap_11 recorrer_rueda_conscientemente_cultura_equipo pasos=14
+TOTAL DEL TRAMO: 135

@@ -1,0 +1,4 @@
+    $ git show HEAD:docs/loop/TABLA_DE_CIERRE.txt | git hash-object --stdin
+    9bf10e6792bffa91ebcbc9894af90834d13c2aac
+    $ git hash-object docs/loop/archivo/tablas_de_cierre/TABLA_DE_CIERRE_v48.txt
+    9bf10e6792bffa91ebcbc9894af90834d13c2aac

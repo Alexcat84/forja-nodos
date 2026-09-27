@@ -1,0 +1,7 @@
+ADUANA DE INSERCION, candidato 'delimitar_franqueza_radical_cinco_noes'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi seÃ±al contra 205 nodo(s) del dataset
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 206
+  censos escritos: denominaciones

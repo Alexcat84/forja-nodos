@@ -1,0 +1,88 @@
+ADUANA DE INSERCION, candidato 'despedir_persona_franqueza_radical'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 222 nodo(s) del dataset
+
+VECINOS POR ENCIMA DE UMBRAL: 7. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino despedir_persona_respeto_franqueza  [Despedir a una persona con respeto y sin rodeos]
+    levantada por: familia_id
+    similitud_texto    0.204 (umbral 0.35)
+    familia_id         0.600 (umbral 0.30)
+    paso_contra_nodo   0.398 (umbral 0.60)
+    paso 7 del candidato contra paso 5 de despedir_persona_respeto_franqueza
+
+  vecino acompaniar_mejores_equipo_socio  [Acompaniar a los que hacen el mejor trabajo como socio, ni de jefe ausente ni de microgestor]
+    levantada por: similitud_texto
+    similitud_texto    0.379 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.479 (umbral 0.60)
+    paso 8 del candidato contra paso 9 de acompaniar_mejores_equipo_socio
+
+  vecino empezar_cultura_franqueza_radical  [Empezar una cultura de franqueza radical por el orden que el texto pone, pidiendo antes que dando]
+    levantada por: similitud_texto, familia_id
+    similitud_texto    0.381 (umbral 0.35)
+    familia_id         0.333 (umbral 0.30)
+    paso_contra_nodo   0.430 (umbral 0.60)
+    paso 4 del candidato contra paso 1 de empezar_cultura_franqueza_radical
+
+  vecino equilibrar_elogio_critica_equipo  [Dar mas elogio que critica sin usar ningun ratio fijo, y repartir tu energia al reves de como te sale]
+    levantada por: similitud_texto
+    similitud_texto    0.354 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.398 (umbral 0.60)
+    paso 1 del candidato contra paso 7 de equilibrar_elogio_critica_equipo
+
+  vecino elogiar_trabajo_especifico_contexto  [Elogiar el trabajo con el porque dentro, contextualizado y sincero, y averiguar quien hizo que antes de elogiar en publico]
+    levantada por: similitud_texto
+    similitud_texto    0.386 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.396 (umbral 0.60)
+    paso 2 del candidato contra paso 1 de elogiar_trabajo_especifico_contexto
+
+  vecino elegir_recolocar_despedir_persona  [Elegir si recolocas a la persona dentro o la dejas ir]
+    levantada por: familia_id
+    similitud_texto    0.246 (umbral 0.35)
+    familia_id         0.333 (umbral 0.30)
+    paso_contra_nodo   0.394 (umbral 0.60)
+    paso 7 del candidato contra paso 5 de elegir_recolocar_despedir_persona
+
+  vecino desplegar_marco_franqueza_radical  [Desplegar el marco de la franqueza radical como recordatorio, con su regla de uso y sus dos prohibiciones]
+    levantada por: familia_id
+    similitud_texto    0.349 (umbral 0.35)
+    familia_id         0.333 (umbral 0.30)
+    paso_contra_nodo   0.386 (umbral 0.60)
+    paso 7 del candidato contra paso 6 de desplegar_marco_franqueza_radical
+
+BLOQUEADO: faltan veredictos para despedir_persona_respeto_franqueza, acompaniar_mejores_equipo_socio, empezar_cultura_franqueza_radical, equilibrar_elogio_critica_equipo, elogiar_trabajo_especifico_contexto, elegir_recolocar_despedir_persona, desplegar_marco_franqueza_radical
+  La aduana no juzga: obliga a juzgar (manual seccion 3).
+  Vuelve a correr el comando con un veredicto por vecino:
+    --veredicto "despedir_persona_respeto_franqueza|CONTINUA|madre=despedir_persona_respeto_franqueza|que añade el hijo a la madre"
+    --veredicto "despedir_persona_respeto_franqueza|REPITE|por que no añade procedimiento"
+    --veredicto "despedir_persona_respeto_franqueza|SANO|por que no son el mismo trabajo"
+    --veredicto "despedir_persona_respeto_franqueza|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "acompaniar_mejores_equipo_socio|CONTINUA|madre=acompaniar_mejores_equipo_socio|que añade el hijo a la madre"
+    --veredicto "acompaniar_mejores_equipo_socio|REPITE|por que no añade procedimiento"
+    --veredicto "acompaniar_mejores_equipo_socio|SANO|por que no son el mismo trabajo"
+    --veredicto "acompaniar_mejores_equipo_socio|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "empezar_cultura_franqueza_radical|CONTINUA|madre=empezar_cultura_franqueza_radical|que añade el hijo a la madre"
+    --veredicto "empezar_cultura_franqueza_radical|REPITE|por que no añade procedimiento"
+    --veredicto "empezar_cultura_franqueza_radical|SANO|por que no son el mismo trabajo"
+    --veredicto "empezar_cultura_franqueza_radical|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "equilibrar_elogio_critica_equipo|CONTINUA|madre=equilibrar_elogio_critica_equipo|que añade el hijo a la madre"
+    --veredicto "equilibrar_elogio_critica_equipo|REPITE|por que no añade procedimiento"
+    --veredicto "equilibrar_elogio_critica_equipo|SANO|por que no son el mismo trabajo"
+    --veredicto "equilibrar_elogio_critica_equipo|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "elogiar_trabajo_especifico_contexto|CONTINUA|madre=elogiar_trabajo_especifico_contexto|que añade el hijo a la madre"
+    --veredicto "elogiar_trabajo_especifico_contexto|REPITE|por que no añade procedimiento"
+    --veredicto "elogiar_trabajo_especifico_contexto|SANO|por que no son el mismo trabajo"
+    --veredicto "elogiar_trabajo_especifico_contexto|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "elegir_recolocar_despedir_persona|CONTINUA|madre=elegir_recolocar_despedir_persona|que añade el hijo a la madre"
+    --veredicto "elegir_recolocar_despedir_persona|REPITE|por que no añade procedimiento"
+    --veredicto "elegir_recolocar_despedir_persona|SANO|por que no son el mismo trabajo"
+    --veredicto "elegir_recolocar_despedir_persona|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"
+    --veredicto "desplegar_marco_franqueza_radical|CONTINUA|madre=desplegar_marco_franqueza_radical|que añade el hijo a la madre"
+    --veredicto "desplegar_marco_franqueza_radical|REPITE|por que no añade procedimiento"
+    --veredicto "desplegar_marco_franqueza_radical|SANO|por que no son el mismo trabajo"
+    --veredicto "desplegar_marco_franqueza_radical|MUTUO|ida=<procedimiento de ida>|vuelta=<procedimiento de vuelta>"

@@ -1,0 +1,1 @@
+python .a41/ver_nodo.py medir_critica_respuesta_oyente_brujula

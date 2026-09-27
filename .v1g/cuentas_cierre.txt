@@ -1,0 +1,14 @@
+| pieza | al abrir | **al cerrar** | movimiento |
+|---|---:|---:|---:|
+| nodos en `dataset/nodos.jsonl` | 270 | **270** | 0 |
+| aristas por `nodos_siguientes` | 105 | **105** | 0 |
+| aristas por `nodos_previos` | 105 | **105** | 0 |
+| veredictos en `bitacora/VEREDICTOS.jsonl` | 396 | **396** | 0 |
+| de ellos, con `no_consumada: true` | 14 | **14** | 0 |
+| candidatos en bandeja de este libro | 0 | **8** | **+8** |
+| de ellos, poblacion que la ADUANA admite al barrido | 78 | **86** | **+8** |
+| poblacion que vera cada informe mio | 348 | **356** | **+8** |
+| pruebas de `tests/test_aceptacion.py` | sin medir al abrir | **201**, `0` fallos | el ultimo publicado en el repo era `200`, y `269c068` (del fundador, `20:46`) anadio una |
+
+LO QUE ESTE FRENTE NO PUEDE HABER MOVIDO, Y SE COMPRUEBA EN VEZ DE PROMETERLO
+  nodos, aristas y veredictos: INTACTOS, como manda D.45: este frente no inserta

@@ -1,0 +1,44 @@
+{
+ "id": "contestar_dos_preguntas_direccion_objetivos",
+ "titulo": "Montar el sistema de direccion por objetivos sobre las dos unicas preguntas que tiene que contestar: adonde quiero ir, y como me marco el ritmo para ver si estoy llegando",
+ "dominio": "gestion_equipos",
+ "estado": "vivo",
+ "ids_alias": [],
+ "nodos_previos": [],
+ "nodos_siguientes": [],
+ "atribuciones": [],
+ "fuentes": [
+  {
+   "clave": "grove_high_output",
+   "fecha": "2026-09-20"
+  }
+ ],
+ "denominaciones": {
+  "nombre_largo": "Las dos preguntas contadas y nombradas que un sistema de direccion por objetivos necesita contestar, y las dos piezas que salen de ellas: el objetivo y los resultados clave",
+  "sigla": "",
+  "otros_idiomas": [
+   {
+    "idioma": "ingles",
+    "termino": "management by objectives"
+   },
+   {
+    "idioma": "ingles",
+    "termino": "key results"
+   },
+   {
+    "idioma": "ingles",
+    "termino": "milestones"
+   }
+  ]
+ },
+ "condiciones_activacion": "Cuando vas a montar un sistema de direccion por objetivos, o cuando el que tienes ha crecido tanto que ya no sabes que es lo que tiene que contestar.",
+ "entregable_esperado": "Las dos preguntas contestadas por escrito y sus dos productos separados: el objetivo, que sale de la primera, y los hitos o resultados clave, que salen de la segunda.",
+ "pasos_accionables": [
+  "Monta el sistema sabiendo que para tener exito solo necesita contestar dos preguntas.",
+  "Contesta la primera pregunta: adonde quiero ir.",
+  "Toma la respuesta de esa primera pregunta como tu objetivo.",
+  "Contesta la segunda pregunta: como voy a marcarme el ritmo para ver si estoy llegando.",
+  "Toma la respuesta de esa segunda pregunta como tus hitos, es decir, tus resultados clave."
+ ],
+ "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/grove_high_output/cap_07.md, PIEZA P27 de la frontera publicada en la vuelta 53 (docs/loop/REPORTE.md L50907), tramo L71 a L75, 43 palabras, y de ningun otro tramo. POR QUE ES PROCEDIMIENTO Y ADEMAS CABEZA DE SERIE, por 9.1 y por la vara de D.37: el libro DICE CUANTAS SON y las NOMBRA, numerandolas el mismo (A successful MBO system needs only to answer two questions: 1. Where do I want to go? 2. How will I pace myself to see if I am getting there?), y pone bajo cada una, entre parentesis, el producto que su respuesta entrega. Es inventario de ETAPAS y de OBJETOS, no de metas: adonde quiero ir es la pregunta, y el objeto que produce es el objetivo escrito. DE DONDE SALE CADA PASO, uno a uno: paso 1 (L71, A successful MBO system needs only to answer two questions); paso 2 (L73, Where do I want to go?); paso 3 (L73, The answer provides the objective); paso 4 (L75, How will I pace myself to see if I am getting there?); paso 5 (L75, The answer gives us milestones, or key results). RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 5 pasos, 5 TRANSCRIPCION, 0 PUENTE. LOS SITIOS DE TENTACION EN LOS QUE NO ESCRIBI: NO escribo COMO se redacta un objetivo ni como se redacta un resultado clave, porque eso lo trata el libro en P35 (L97) y aquella pieza la vuelta 53 la adjudico con cero nodos por su adjetivo de adecuacion (very specific); traerlo aqui seria escribir el paso yo. NO escribo cuantos objetivos se mantienen, que es P30 y tambien cero nodos por adjetivo. NO escribo el periodo, que es la pieza P29 y su propio nodo. NO escribo quien fija los objetivos. EL AEROPUERTO Y LOS PUEBLOS A, B Y C NO ENTRAN, manual 3.5: son la ILUSTRACION de P28 (L77), tramo aparte con cero nodos, y su doctrina es justamente la que vive aqui. NI UNA CIFRA A atribuciones. ARISTA QUE ANUNCIO Y NO CABLEO HOY: si alguna vuelta escribe nodos para las dos preguntas por separado, esta es su cabeza por D.37; hoy no existen y esta vuelta NO INSERTA. DISCUTIBLE QUE MARCO ANTES DE SABER SI ACIERTO: es el nodo mas corto que escribo, 43 palabras de tramo, y una cabeza de dos preguntas puede leerse como DEFINICION del sistema y no como procedimiento. Lo sostengo porque el libro no se limita a nombrarlas: numera, pregunta y asigna a cada respuesta un producto distinto y exigible, que es la cara positiva de la prueba del inventario. Si cae, cae DENTRO de mi marcado."
+}

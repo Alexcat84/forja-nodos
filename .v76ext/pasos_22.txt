@@ -1,0 +1,264 @@
+===== aplicar_cinco_pasos_proceso_contratacion | cuarentena\gerber_emyth\aplicar_cinco_pasos_proceso_contratacion.json
+  titulo: Aplicar los cinco componentes del proceso de contratacion que el libro enumera para comunicar tu idea desde el primer dia
+  fuente: ['gerber_emyth'] | previos: [] | siguientes: []
+  cond: Cuando vas a contratar gente nueva y quieres que el proceso mismo, desde la primera reunion hasta el primer dia de entrenamiento, sea el primer medio con el que le comunicas la idea de tu negocio.
+  P1. Disena una presentacion guionizada que comunique la idea de tu negocio en una reunion grupal a todos los aspirantes al mismo tiempo, describiendo la idea, la historia y la experiencia del negocio implementandola, y los atributos que exige el puesto.
+  P2. Reunete con cada aspirante de forma individual para hablar de sus reacciones y sentimientos sobre la idea, su trasfondo y su experiencia, y pregunta por que se cree apropiado para el papel que el puesto juega en implementar esa idea.
+  P3. Notifica por telefono al candidato elegido, otra vez con una presentacion guionizada.
+  P4. Notifica a los aspirantes no elegidos agradeciendo su interes, con una carta estandar firmada por quien entrevisto.
+  P5. Dedica el primer dia de entrenamiento a las siguientes actividades, tanto para ti como para el nuevo empleado.
+  P6. Revisa con el la idea del negocio.
+  P7. Resume el sistema con el que todo el negocio hace realidad esa idea.
+  P8. Llevalo de recorrido por las instalaciones, resaltando a la gente trabajando y los sistemas funcionando para mostrar la interdependencia entre los sistemas y la gente.
+  P9. Responde clara y completamente todas sus preguntas.
+  P10. Entregale su uniforme y su Manual de Operaciones.
+  P11. Revisa con el su Manual de Operaciones, incluyendo el Objetivo Estrategico, la Organizational Strategy y el Position Contract de su propio puesto.
+  P12. Completa con el los papeles de empleo.
+===== aplicar_ocho_reglas_juego_personas | cuarentena\gerber_emyth\aplicar_ocho_reglas_juego_personas.json
+  titulo: Aplicar las ocho reglas que el libro enumera para el juego de tu gente
+  fuente: ['gerber_emyth'] | previos: [] | siguientes: []
+  cond: Cuando ya decidiste comunicarle a tu gente la idea de tu negocio como un juego (Your People Strategy) y necesitas las reglas que hacen que ese juego funcione y no se apague.
+  P1. Reconoce que el juego de tu gente tiene reglas que hay que honrar si quieres llegar a ser bueno en el.
+  P2. Regla 1: nunca decidas primero que quieres que haga tu gente y despues trates de construir un juego a partir de eso; el juego tiene que ir primero y lo que tu gente hace, segundo.
+  P3. Regla 2: nunca crees para tu gente un juego que tu mismo no estes dispuesto a jugar, porque te van a descubrir y no te lo van a dejar olvidar.
+  P4. Regla 3: asegurate de que haya formas especificas de ganar el juego sin terminarlo; dale a tu gente victorias de vez en cuando para que no se canse, porque el juego nunca puede acabar.
+  P5. Regla 4: cambia el juego de vez en cuando, las tacticas y no la estrategia; para saber cuando toca el cambio observa los resultados de tu gente, anticipa el final del juego y cambialo por accion ejecutiva antes que nadie mas lo note.
+  P6. Regla 5: nunca esperes que el juego se sostenga solo; recuerdaselo a tu gente constantemente, con una reunion especial sobre el juego al menos una vez por semana y sacando a relucir alguna excepcion a como se ha jugado al menos una vez al dia.
+  P7. Regla 6: haz que el juego tenga sentido, construido sobre verdades verificables universalmente, y saca a relucir la logica seguido para sostener el compromiso emocional de tu gente cuando decaiga.
+  P8. Regla 7: haz que el juego sea divertido de vez en cuando, no todo el tiempo; planea la diversion dejando que tu gente la defina, y no demasiado a menudo, quiza una vez cada seis meses, para que sea algo que esperar.
+  P9. Regla 8: si no se te ocurre un buen juego, robalo, pero una vez robado aprendetelo de memoria, porque no hay nada peor que fingir que juegas un juego.
+===== aplicar_seis_pasos_sistema_venta | cuarentena\gerber_emyth\aplicar_seis_pasos_sistema_venta.json
+  titulo: Aplicar los seis pasos principales que el libro enumera para un sistema de venta
+  fuente: ['gerber_emyth'] | previos: [] | siguientes: []
+  cond: Cuando quieres que vender deje de depender del talento individual de tu mejor vendedor y se convierta en un sistema que cualquiera de tu gente pueda operar.
+  P1. Identifica los Benchmarks especificos, o puntos de decision del consumidor, en tu proceso de venta.
+  P2. Escribe literalmente, como el guion de una obra de teatro, las palabras que te van a llevar a cada Benchmark con exito.
+  P3. Crea los distintos materiales que se van a usar con cada guion.
+  P4. Memoriza el guion de cada Benchmark.
+  P5. Entrega cada guion de forma identica a traves de tus vendedores.
+  P6. Deja que tu gente se comunique con mas efectividad, articulando, observando, escuchando, oyendo, reconociendo, entendiendo e implicando a cada prospecto tan a fondo como el lo necesite.
+===== cambiar_saludo_cliente_dos_ramas | cuarentena\gerber_emyth\cambiar_saludo_cliente_dos_ramas.json
+  titulo: Cambiar el saludo del vendedor por una pregunta con dos ramas de respuesta ya escritas
+  fuente: ['gerber_emyth'] | previos: [] | siguientes: []
+  cond: Cuando un cliente entra a tu negocio al por menor y tu vendedor va a saludarlo, en vez de usar el saludo habitual que invita a la respuesta automatica no gracias, solo estoy mirando.
+  P1. En vez de preguntar Hi, may I help you?, prueba a preguntar Hi, have you been in here before?
+  P2. Si el cliente responde que si, puedes decirle: Great. We've created a special new program for people who have shopped here before. Let me take just a minute to tell you about it.
+  P3. Si el cliente responde que no, puedes decirle: Great, we've created a special new program for people who haven't shopped here before. Let me take just a minute to tell you about it.
+  P4. Ten creado de antemano ese programa especial nuevo del que hablas en cualquiera de las dos ramas: sin el programa listo, ninguna de las dos respuestas tiene de que hablar.
+===== construir_empresa_plantilla_vision_diaria | cuarentena\gerber_emyth\construir_empresa_plantilla_vision_diaria.json
+  titulo: Construir la empresa contra la plantilla de tu vision, y medir cada noche la distancia que falta
+  fuente: ['gerber_emyth'] | previos: [] | siguientes: []
+  cond: Cuando arrancas una empresa o la rehaces y quieres que llegue a ser grande, y necesitas saber por donde se empieza y que se hace cada dia.
+  P1. Hazte un retrato muy claro de como sera la empresa cuando este finalmente terminada, un modelo en tu cabeza de como se vera cuando el sueno este puesto, que es la primera de las tres razones que el texto atribuye a Tom Watson, el fundador de IBM.
+  P2. Preguntate entonces como tendria que actuar una empresa con ese aspecto, y hazte un retrato de como actuara cuando este finalmente terminada, que es la segunda razon.
+  P3. Date cuenta de que si no empezais a actuar de esa manera desde el mismisimo principio no llegareis nunca, que es la tercera razon.
+  P4. Actua como la gran empresa mucho antes de serlo, que es como el propio texto resume las tres razones en una linea.
+  P5. Modela la empresa contra esa plantilla cada uno de los dias, desde el primero.
+  P6. Al final de cada dia preguntaos como lo habeis hecho y descubrid la distancia que hay entre donde estais y donde os habiais comprometido a estar.
+  P7. Al empezar el dia siguiente, poneos a recuperar esa diferencia.
+  P8. Dedica cada dia a desarrollar el negocio y no a hacer negocio, que es la linea con la que el texto cierra la historia: alli no haciamos negocio, construiamos uno.
+===== construir_estrategia_gente_cuatro_componentes | cuarentena\gerber_emyth\construir_estrategia_gente_cuatro_componentes.json
+  titulo: Construir tu Your People Strategy con los cuatro componentes que el libro nombra uno a uno
+  fuente: ['gerber_emyth'] | previos: [] | siguientes: []
+  cond: Cuando ya tienes tu Primary Aim y tu Strategic Objective escritos y tu Organizational Strategy construida, y necesitas comunicarle esa idea a tu gente para que compre el juego que le propones.
+  P1. Entiende que tu Your People Strategy es la forma en que le comunicas a tu gente la idea de tu negocio.
+  P2. Arranca con tu Primary Aim.
+  P3. Sigue con tu Strategic Objective.
+  P4. Construye tu Organizational Strategy: tu Organization Chart y los Position Contracts de todas las posiciones que contiene.
+  P5. Escribe tus Operations Manuals, que son los que definen el trabajo que hace tu gente.
+===== cuantificar_impacto_innovacion_6_pasos | cuarentena\gerber_emyth\cuantificar_impacto_innovacion_6_pasos.json
+  titulo: Cuantificar el impacto real de una innovacion en tu negocio con los seis conteos que el libro enumera
+  fuente: ['gerber_emyth'] | previos: [] | siguientes: []
+  cond: Cuando pruebas una innovacion en tu negocio, por ejemplo cambiar las palabras con que saludas a un cliente que entra, y quieres saber si de verdad funciono.
+  P1. Determina cuantas personas entraron por la puerta antes de poner en marcha la innovacion.
+  P2. Determina cuantas personas compraron productos y cual fue el valor en dolares de esos productos, antes de cambiar las palabras y lo que decias para producir esas ventas.
+  P3. Cuenta cuantas personas entraron por la puerta despues de cambiar las palabras.
+  P4. Cuenta cuantas personas compraron algo, despues del cambio.
+  P5. Determina el valor promedio de una venta.
+  P6. Determina cual fue la mejora que produjo tu innovacion.
+===== dar_valor_constante_cuatro_publicos | cuarentena\gerber_emyth\dar_valor_constante_cuatro_publicos.json
+  titulo: Dar valor constante y por encima de lo esperado a los cuatro publicos del modelo, en las formas que el libro nombra
+  fuente: ['gerber_emyth'] | previos: [] | siguientes: []
+  cond: Cuando trabajas la regla 1 del prototipo de tu negocio y tienes que decidir que hara tu modelo para dar valor.
+  P1. Parte de lo que el texto propone que es el valor: lo que la gente percibe que es, y nada mas.
+  P2. Hazte la pregunta que el texto dice que todo emprendedor tiene que hacerse: que podria hacer tu prototipo que no solo diera valor constante a tus clientes, empleados, proveedores y prestamistas, sino que se lo diera por encima de sus expectativas mas locas.
+  P3. Busca ese valor en como afecta a cada persona con la que tu negocio se cruza, que es donde el texto dice que vive todo negocio extraordinario.
+  P4. Cuenta como valor una palabra dicha en la puerta del negocio cuando un cliente se va.
+  P5. Cuenta como valor un regalo inesperado del negocio que llega por correo.
+  P6. Cuenta como valor una palabra de reconocimiento a un recien llegado por un trabajo bien hecho, o a un vendedor veterano que lleva anos acertando.
+  P7. Cuenta como valor el precio razonable de tus productos, o la dedicacion que pones al explicarlos a un cliente que necesita mas ayuda de la normal.
+  P8. Cuenta como valor una simple palabra de agradecimiento a tu banquero por su diligencia.
+===== dictar_ritmo_crecimiento_preguntas_escritas | cuarentena\gerber_emyth\dictar_ritmo_crecimiento_preguntas_escritas.json
+  titulo: Dictar el ritmo de crecimiento de tu negocio con los tres conocimientos clave, las preguntas correctas y el plan escrito
+  fuente: ['gerber_emyth'] | previos: [] | siguientes: []
+  cond: Cuando tu negocio va a crecer y quieres dictar tu su ritmo en vez de reaccionar al crecimiento que se te venga encima.
+  P1. Entiende los procesos clave que hay que ejecutar, que es el primero de los tres conocimientos con los que el texto dice que se dicta el ritmo de crecimiento.
+  P2. Entiende los objetivos clave que hay que alcanzar, que es el segundo.
+  P3. Entiende la posicion clave que quieres que tu negocio ocupe en el mercado, que es el tercero.
+  P4. Hazte las preguntas correctas, que el texto enumera una a una: donde quiero estar, cuando quiero estar alli, cuanto capital hara falta, cuanta gente haciendo que trabajo y como, que tecnologia hara falta, y cuanto espacio hara falta en la marca uno, en la marca dos y en la marca tres.
+  P5. Cuenta con equivocarte a veces, con cometer errores y con cambiar de opinion, y ten por eso los planes de contingencia puestos: mejor caso y peor caso.
+  P6. Planifica, imagina y articula lo que ves en el futuro tanto para ti como para tus empleados, incluso mientras estas adivinando.
+  P7. Escribelo, con claridad, de modo que otros puedan entenderlo, porque el texto dice que si no lo articulas asi entonces no lo posees.
+  P8. Recuerda que cualquier plan es mejor que ningun plan.
+===== distinguir_tres_tipos_sistemas_negocio | cuarentena\gerber_emyth\distinguir_tres_tipos_sistemas_negocio.json
+  titulo: Distinguir los tres tipos de sistemas que el libro nombra en tu negocio: Hard, Soft e Information Systems
+  fuente: ['gerber_emyth'] | previos: [] | siguientes: []
+  cond: Cuando necesitas identificar de que tipo es cada sistema de tu negocio, antes de poder innovarlo, cuantificarlo y orquestarlo dentro de tu Business Development Program.
+  P1. Entiende que hay tres tipos de sistemas en tu negocio: Hard Systems, Soft Systems e Information Systems.
+  P2. Reconoce un Hard System: es algo inanimado, sin vida, como un computador o los colores de una oficina.
+  P3. Reconoce un Soft System: es algo animado, vivo, o una idea, como tu mismo o el guion de una obra de teatro.
+  P4. Reconoce un Information System: es el que te da informacion sobre como interactuan los otros dos tipos, como el control de inventario, el pronostico de flujo de caja o el resumen de actividad de ventas.
+  P5. Ten presente que la Innovacion, la Cuantificacion y la Orquestacion de estos tres tipos de sistemas en tu negocio es de lo que trata tu Business Development Program.
+===== documentar_trabajo_manual_operaciones | cuarentena\gerber_emyth\documentar_trabajo_manual_operaciones.json
+  titulo: Documentar todo el trabajo del modelo en el Manual de Operaciones, con los tres contenidos que el libro le exige
+  fuente: ['gerber_emyth'] | previos: [] | siguientes: []
+  cond: Cuando trabajas la regla 4 del prototipo de tu negocio y tienes que poner por escrito como se hace el trabajo.
+  P1. Escribe la documentacion para que diga lo que el texto dice que dice: asi es como lo hacemos aqui.
+  P2. Cuenta con lo que pasa cuando no la escribes, que el texto pone en una linea: sin documentacion, todo el trabajo rutinario se convierte en excepciones.
+  P3. Dale a tu gente, con ella, la estructura que necesita y el relato escrito de como se hace el trabajo de la manera mas eficiente y eficaz.
+  P4. Comunica con ella, a los nuevos igual que a los viejos, que hay una logica en el mundo en el que han elegido trabajar y que hay una tecnologia con la que se producen los resultados.
+  P5. Escribela clara, que es la palabra que el propio texto subraya, porque la claridad es lo que la estructura necesita para significar algo para tu gente.
+  P6. Reduce con ella la estructura a medios concretos en vez de a fines generales, hasta la tarea literal y simplificada que el tecnico que hay en cada uno necesita entender para hacer el trabajo que tiene delante.
+  P7. Guarda la documentacion en el Manual de Operaciones y tratalo como lo que el texto dice que es: la guia de como se hace de tu empresa.
+  P8. Haz que ese manual designe el proposito del trabajo.
+  P9. Haz que especifique los pasos que hay que dar mientras se hace ese trabajo.
+  P10. Haz que resuma los estandares asociados tanto al proceso como al resultado.
+===== fingir_prototipo_cinco_mil_replicas | cuarentena\gerber_emyth\fingir_prototipo_cinco_mil_replicas.json
+  titulo: Fingir que tu negocio es el prototipo de 5.000 iguales, y jugar con las seis reglas que el libro pone para ganar
+  fuente: ['gerber_emyth'] | previos: [] | siguientes: []
+  cond: Cuando quieres dejar de trabajar dentro de tu negocio y ponerte a trabajar sobre el, y necesitas el modelo con el que se hace.
+  P1. Finge que el negocio que tienes, o que quieres tener, es el prototipo de otros 5.000 iguales, y que va a servir de modelo para esos 5.000.
+  P2. Entiende iguales como el texto lo entiende: no casi iguales, sino iguales; replicas perfectas, clones.
+  P3. Dicho de otro modo, finge que vas a franquiciar tu negocio, y quedate con que el texto dice fingir y no dice que debas hacerlo.
+  P4. Juega entonces con las reglas que el texto pone para ganar el juego de la franquicia, que son seis y estan enumeradas a continuacion.
+  P5. Regla 1: el modelo dara valor constante a tus clientes, empleados, proveedores y prestamistas, por encima de lo que esperan.
+  P6. Regla 2: el modelo lo operara gente con el nivel de destreza mas bajo posible.
+  P7. Regla 3: el modelo destacara como un sitio de orden impecable.
+  P8. Regla 4: todo el trabajo del modelo estara documentado en Manuales de Operaciones.
+  P9. Regla 5: el modelo dara al cliente un servicio uniformemente predecible.
+  P10. Regla 6: el modelo usara un codigo uniforme de color, vestuario e instalaciones.
+  P11. Recorre las seis reglas una a una, que es lo que el texto hace justo despues de enumerarlas.
+===== hacer_trabajo_futuro_imaginar_negocio | cuarentena\gerber_emyth\hacer_trabajo_futuro_imaginar_negocio.json
+  titulo: Hacer el trabajo futuro del emprendedor: dejar atras el oficio y sostener el dialogo interno hasta la pregunta que imagina el negocio
+  fuente: ['gerber_emyth'] | previos: [] | siguientes: []
+  cond: Cuando eres bueno en un oficio y vas a montar o a rehacer un negocio, y toca hacer el trabajo del emprendedor en vez del trabajo tecnico.
+  P1. Haz el trabajo de ver el negocio como algo aparte de ti, su dueno, que es como el texto define el trabajo de un emprendedor.
+  P2. Hazte las preguntas correctas de por que este negocio y no aquel, con el ejemplo que el propio texto pone: por que un negocio de hornear tartas y no un taller de chapa.
+  P3. Deja atras tu experiencia en el oficio antes de seguir, que es lo que el texto le pide al que hornea tartas y esta decidido a hacer trabajo de emprendedor.
+  P4. Entra en el dialogo interno que el texto transcribe entero, y empieza por donde el empieza: es hora de crear una vida nueva, es hora de retar a mi imaginacion y de empezar el proceso de dar forma a una vida entera nueva.
+  P5. Sigue el dialogo por donde el texto lo sigue, nombrando lo que ese negocio tendria que ser: uno que pueda darme todo lo que quiero, que no me exija estar alli todo el tiempo, que tenga el potencial de ser asombrosamente unico, y del que la gente hable mucho despues de haber comprado alli la primera vez y vuelva por esa experiencia.
+  P6. Cierra el dialogo con la pregunta que el texto llama la pregunta que suena y senala como el corazon del trabajo del emprendedor: me pregunto que negocio seria ese.
+  P7. Repite ese trabajo al principio del negocio y en cada etapa del camino, que es donde el texto dice que la personalidad emprendedora lo hace, y llamalo por el nombre que el texto le da: Future Work.
+===== interrogar_negocio_cinco_preguntas | cuarentena\gerber_emyth\interrogar_negocio_cinco_preguntas.json
+  titulo: Ponerte a trabajar en tu negocio como si fuera un prototipo de preproduccion, y hacerte las cinco preguntas del capitulo
+  fuente: ['gerber_emyth'] | previos: [] | siguientes: []
+  cond: Cuando cierras el trabajo del prototipo de tu negocio y quieres comprobar si estas trabajando sobre el o dentro de el.
+  P1. Ponte a trabajar sobre tu negocio en vez de dentro de el.
+  P2. Ponte a trabajar sobre el como si fuera el prototipo de preproduccion de un producto fabricable en serie.
+  P3. Piensa tu negocio como algo aparte de ti mismo, en las formas que el texto enumera: un mundo propio, un producto de tu esfuerzo, una maquina disenada para cubrir una necesidad muy concreta, un mecanismo para darte mas vida, un sistema de piezas interconectadas, un paquete de cereales, una lata de judias, algo creado para satisfacer las necesidades percibidas de tus consumidores, un sitio que actua claramente distinto de todos los demas, y una solucion al problema de otro.
+  P4. Piensa tu negocio como cualquier cosa menos como un empleo.
+  P5. Hazte la primera pregunta: como consigo que mi negocio funcione, pero sin mi.
+  P6. Hazte la segunda: como consigo que mi gente trabaje, pero sin mi interferencia constante.
+  P7. Hazte la tercera: como sistematizo mi negocio de manera que se pudiera replicar 5.000 veces y la unidad numero 5.000 funcionara tan bien como la primera.
+  P8. Hazte la cuarta: como poseo mi negocio y sigo estando libre de el.
+  P9. Hazte la quinta: como paso el tiempo haciendo el trabajo que me gusta hacer en vez del trabajo que tengo que hacer.
+  P10. Quedate con lo que el texto dice que va a pasar cuando te las hagas: acabaras dando de bruces con el problema de verdad, que es que no sabes las respuestas.
+===== medir_sistema_venta_trece_indicadores_benchmark | cuarentena\gerber_emyth\medir_sistema_venta_trece_indicadores_benchmark.json
+  titulo: Medir tu sistema de venta con los trece indicadores del Information Benchmark que el libro enumera
+  fuente: ['gerber_emyth'] | previos: [] | siguientes: []
+  cond: Cuando ya tienes tu sistema de venta operando y necesitas un Information System que te diga que tan predecible es, Benchmark a Benchmark.
+  P1. Registra cuantas llamadas se hicieron.
+  P2. Registra cuantos prospectos se alcanzaron.
+  P3. Registra cuantas citas se programaron.
+  P4. Registra cuantas citas se confirmaron.
+  P5. Registra cuantas citas se realizaron.
+  P6. Registra cuantas Needs Analysis Presentations se programaron.
+  P7. Registra cuantos Needs Analysis se confirmaron.
+  P8. Registra cuantos Needs Analysis se completaron.
+  P9. Registra cuantas Solutions Presentations se programaron.
+  P10. Registra cuantas Solutions Presentations se confirmaron.
+  P11. Registra cuantas Solutions Presentations se completaron.
+  P12. Registra cuantas soluciones se vendieron.
+  P13. Registra cual fue el valor promedio en dolares.
+  P14. Anota esta informacion en un formulario, ya sea a mano o como base de datos en tu computador.
+===== operar_modelo_gente_destreza_minima | cuarentena\gerber_emyth\operar_modelo_gente_destreza_minima.json
+  titulo: Operar el modelo con gente del nivel de destreza mas bajo posible, y construir el sistema que la apalanca
+  fuente: ['gerber_emyth'] | previos: [] | siguientes: []
+  cond: Cuando trabajas la regla 2 del prototipo de tu negocio y tienes que decidir con que gente se opera el modelo para que se pueda replicar.
+  P1. Cuenta con el motivo por el que la regla existe: si tu modelo depende de gente muy cualificada sera imposible de replicar, esa gente es escasa en el mercado, y ademas es cara, lo que sube el precio que tendras que cobrar.
+  P2. Lee el nivel mas bajo posible como el texto lo define: el nivel mas bajo necesario para cumplir las funciones a las que cada puesto esta destinado.
+  P3. Ten los titulados que tu oficio exija, que es la salvedad que el texto pone: si lo tuyo es un despacho de abogados tienes que tener abogados, y si es una consulta medica tienes que tener medicos.
+  P4. No necesitas contratar abogados brillantes ni medicos brillantes: necesitas crear el mejor sistema posible para que buenos abogados y buenos medicos queden apalancados y produzcan resultados exquisitos.
+  P5. Sigue haciendote la pregunta que el texto manda repetirse: como le doy a mi cliente el resultado que quiere de forma sistematica en vez de personal.
+  P6. Hazte esa misma pregunta de la otra manera en que el texto la escribe: como creo un sistema experto en vez de contratar uno.
+  P7. Trata el sistema como las herramientas que tu gente usa para subir su productividad y hacer el trabajo como hay que hacerlo para que tu negocio se distinga de su competencia.
+  P8. Asume que tu trabajo, o mas exactamente el trabajo de tu negocio, es desarrollar esas herramientas y ensenar a tu gente a usarlas.
+  P9. Deja claro que el trabajo de tu gente es usar las herramientas que has desarrollado y recomendar mejoras a partir de su experiencia con ellas.
+  P10. Comprueba que no estas prefiriendo gente muy cualificada solo porque te haga a ti el trabajo mas facil, que es lo que el texto llama preferir la Management by Abdication a la Management by Delegation.
+===== probar_traje_azul_seis_semanas | cuarentena\gerber_emyth\probar_traje_azul_seis_semanas.json
+  titulo: Correr un test de seis semanas comparando dos vestuarios completos para medir el efecto del color en las ventas
+  fuente: ['gerber_emyth'] | previos: [] | siguientes: []
+  cond: Cuando tienes vendedores de cara al cliente y quieres poner a prueba si el color y la formalidad de su vestuario tienen un efecto medible en las ventas.
+  P1. Durante las primeras tres semanas del test, haz que el vendedor vista: un traje marron, una camisa tostada almidonada, una corbata marron (para hombres) y zapatos marrones bien lustrados, cuidando que todas las piezas esten limpias y bien planchadas.
+  P2. Durante las tres semanas siguientes, haz que el vendedor vista: un traje azul marino, una camisa blanca almidonada, una corbata con rojo (un pin o un panuelo con rojo para mujeres) y zapatos negros muy lustrados.
+===== recorrer_siete_pasos_programa_desarrollo_negocio | cuarentena\gerber_emyth\recorrer_siete_pasos_programa_desarrollo_negocio.json
+  titulo: Recorrer los siete pasos del Business Development Program, empezando por tu Primary Aim
+  fuente: ['gerber_emyth'] | previos: [] | siguientes: []
+  cond: Cuando ya finges que tu negocio es el prototipo de 5.000 replicas y necesitas el programa paso a paso con el que conviertes ese negocio, el que tienes o el que vas a crear, en un modelo organizado.
+  P1. Entiende tu Business Development Program como el proceso paso a paso con el que conviertes tu negocio actual, o el que vas a crear, en un modelo perfectamente organizado para miles de replicas iguales.
+  P2. Usalo tambien como el vehiculo con el que construyes tu Franchise Prototype.
+  P3. Recorre el programa en sus siete pasos distintos, en este orden.
+  P4. Paso 1: Your Primary Aim.
+  P5. Paso 2: Your Strategic Objective.
+  P6. Paso 3: Your Organizational Strategy.
+  P7. Paso 4: Your Management Strategy.
+  P8. Paso 5: Your People Strategy.
+  P9. Paso 6: Your Marketing Strategy.
+  P10. Paso 7: Your Systems Strategy.
+===== responder_4_preguntas_estandares_objetivo_estrategico | cuarentena\gerber_emyth\responder_4_preguntas_estandares_objetivo_estrategico.json
+  titulo: Responder las cuatro preguntas que el libro enumera para completar los estandares de tu Objetivo Estrategico
+  fuente: ['gerber_emyth'] | previos: [] | siguientes: []
+  cond: Cuando ya escribiste los dos primeros estandares de tu Objetivo Estrategico (el dinero y si es una Oportunidad que Vale la Pena) y necesitas completar los estandares restantes, que el libro no numera de forma fija.
+  P1. No hay un numero especifico de estandares en tu Objetivo Estrategico: solo hay preguntas especificas que hay que responder.
+  P2. Cuando va a estar terminado tu Prototipo: en dos anios, en tres, en diez.
+  P3. Donde vas a hacer negocio: localmente, regionalmente, nacionalmente, internacionalmente.
+  P4. Como vas a hacer negocio: al detalle, al por mayor, o una combinacion de las dos.
+  P5. Que estandares vas a exigir en cuanto a reportes, limpieza, vestuario, gestion, contratacion, despido, entrenamiento, y demas.
+===== responder_8_preguntas_construir_primary_aim | cuarentena\gerber_emyth\responder_8_preguntas_construir_primary_aim.json
+  titulo: Responder las ocho preguntas que el libro enumera para construir tu Primary Aim
+  fuente: ['gerber_emyth'] | previos: [] | siguientes: []
+  cond: Antes de empezar tu negocio, o antes de volver a el manana, cuando necesitas construir tu Primary Aim.
+  P1. Antes de empezar tu negocio, o antes de volver a el manana, preguntate lo siguiente.
+  P2. Que quiero que se vea mi vida.
+  P3. Como quiero que sea mi vida dia a dia.
+  P4. Que me gustaria poder decir que se de verdad en mi vida, sobre mi vida.
+  P5. Como me gustaria estar con otras personas en mi vida: mi familia, mis amigos, mis socios de negocio, mis clientes, mis empleados, mi comunidad.
+  P6. Como me gustaria que la gente pensara de mi.
+  P7. Que me gustaria estar haciendo dentro de dos anios, dentro de diez, dentro de veinte, cuando mi vida llegue a su fin.
+  P8. Que me gustaria aprender especificamente durante mi vida: espiritual, fisica, financiera, tecnica e intelectualmente, y tambien sobre las relaciones.
+  P9. Cuanto dinero voy a necesitar para hacer las cosas que quiero hacer, y para cuando lo voy a necesitar.
+===== trazar_modelo_negocio_cliente_primero | cuarentena\gerber_emyth\trazar_modelo_negocio_cliente_primero.json
+  titulo: Trazar el modelo de tu negocio arrancando del retrato del cliente y no del retrato del negocio
+  fuente: ['gerber_emyth'] | previos: [] | siguientes: []
+  cond: Cuando vas a definir que negocio montar o rehacer y tienes que decidir por donde se empieza el modelo.
+  P1. Parte de lo que el texto dice que es el modelo: un modelo de negocio que satisface las necesidades percibidas de un segmento concreto de clientes de una manera innovadora.
+  P2. Mira el mundo y pregunta donde esta la oportunidad, que es por donde el texto dice que el emprendedor empieza cuando crea el modelo.
+  P3. Una vez la has identificado, vuelve al tablero de dibujo.
+  P4. Construye alli una solucion a las frustraciones que encuentres entre un grupo concreto de clientes.
+  P5. Dale a esa solucion la forma de un negocio que se ve y actua de una manera muy concreta: la manera en que el cliente necesita que se vea y actue, y no la que necesites tu.
+  P6. Preguntate como se vera tu negocio para el cliente.
+  P7. Preguntate como destacara tu negocio entre todos los demas.
+  P8. No arranques del retrato del negocio que vas a crear sino del retrato del cliente para el que lo vas a crear, que es lo que el texto pone como la diferencia del modelo emprendedor.
+  P9. Cuenta con la condicion con la que el texto lo cierra: sin un retrato claro de ese cliente, ningun negocio puede tener exito.
+===== unificar_color_forma_vestuario_modelo | cuarentena\gerber_emyth\unificar_color_forma_vestuario_modelo.json
+  titulo: Unificar el codigo de color, forma y vestuario del modelo, y llevarlo a los sitios que el libro enumera
+  fuente: ['gerber_emyth'] | previos: [] | siguientes: []
+  cond: Cuando trabajas la regla 6 del prototipo de tu negocio y tienes que fijar los colores y las formas con las que tu negocio se presenta.
+  P1. Parte de lo que el texto dice que dicen los estudios de mercado: a todos los consumidores les mueven a actuar los colores y las formas que encuentran en el mercado, y grupos distintos de consumidores responden distinto a colores y formas concretos.
+  P2. Determina cientificamente los colores que le ensenas a tu cliente, que es el verbo que el texto usa y no uno mio.
+  P3. Usa esos colores por todo tu modelo, en los sitios que el texto enumera uno a uno: las paredes, los suelos, el techo, los vehiculos, las facturas, la ropa de tu gente, los expositores y los rotulos.
+  P4. Piensa el modelo como el envase de tu unico producto, que es tu negocio.
+  P5. Elige igual las formas, porque hay formas que funcionan y formas que no, y ponlas donde el texto las pone: la tarjeta de visita, los rotulos, el logotipo y los expositores de mercancia.
+  P6. Cuenta con lo que midio Louis Cheskin, fundador del Color Research Institute, en el ensayo que el texto cita: un triangulo produjo bastante menos ventas que un circulo, y un escudo supero a los dos por un margen significativo.
+  P7. Cuenta con que la forma de tu rotulo, la de tu logotipo y el tipo de letra de tus tarjetas van a tener un impacto significativo en las ventas, te apetezca pensarlo o no.
+  P8. Empaqueta tu prototipo con el mismo cuidado con el que se empaqueta cualquier caja de cereales.

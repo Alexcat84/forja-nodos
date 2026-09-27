@@ -1,0 +1,37 @@
+{
+  "id": "evitar_presion_social_actos_equipo",
+  "titulo": "Evitar que un acto no obligatorio se sienta obligatorio, y que el intento de hacer equipo acabe empeorando el animo",
+  "denominaciones": {
+    "nombre_largo": "Hasta los actos no obligatorios pueden sentirse obligatorios: la primera de las dos advertencias que el libro pone al que organiza",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "even non-mandatory events can feel mandatory"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando eres tu quien organiza un acto divertido para tu equipo, que es justo cuando tu invitacion pesa mas de lo que crees.",
+  "entregable_esperado": "Un acto al que va quien quiere ir, sin nadie arrastrado por la presion social ni un equipo que sale de el mas cansado que entro.",
+  "pasos_accionables": [
+    "Cuenta con que los actos divertidos pueden ser una buena manera de conocer a la gente de tu equipo y de que se conozcan entre ellos.",
+    "Pero cuenta tambien con que si lo organizas tu, la presion social va a arrastrar a algunos a situaciones que preferirian evitar.",
+    "No presiones a quien no quiere ir diciendole que vaya igual para ser buen companiero de equipo: el texto cuenta que a Marissa Mayer, que se marea en el mar, su jefe la presiono para que fuera a una salida a ver ballenas organizada para unir al equipo, y remata que nadie deberia tener que vomitar por la borda para demostrar que es buen companiero.",
+    "Evita los momentos ironicos en que el intento de hacer equipo y de mejorar el animo acaba empeorando las cosas.",
+    "Cuenta con el ejemplo que el texto pone: un equipo que trabajaba ochenta horas a la semana tenia el equilibrio entre trabajo y vida en el orden del dia de su retiro, a las nueve de la noche y despues de montar en karts, y la verdad es que todos habrian preferido saltarse los karts pero creian que tenian que hacer cosas divertidas para unirse.",
+    "Y cuenta con lo que el texto dice que a veces es el mayor regalo que le puedes hacer a tu equipo: dejarles irse a casa."
+  ],
+  "resumen_teorico": "Sale de fuentes/scott_radical_candor/cap_08.md, lineas 77 a 81, bajo el rotulo Even non-mandatory events can feel mandatory. Es la PRIMERA de las dos advertencias que la linea 75 nombra, y su madre es dominar_arte_socializar_trabajo, que la nombra en su paso 9. LA ARISTA ES D.29 Y NO D.37, y lo digo porque la tentacion es contarla como D.37: la linea 75 nombra sus dos advertencias una a una pero NO dice cuantas son, y la cuenta es condicion y no adorno (correccion del titular del 11 sep 2026). ESTA PIEZA ES UNA ADVERTENCIA Y AUN ASI SE EXTRAE, Y LA RAZON ES LA MISMA POR LA QUE LA OTRA NO: esta nombra actos que el lector puede ejecutar (no presionar a quien no quiere ir, evitar el acto que empeora el animo, dejarles irse a casa) y la de Booze, lineas 83 a 87, no nombra ninguno: es una frase de aviso y una lista de desastres. LOS DOS CASOS, el de Marissa Mayer y el del retiro de los karts, van NOMBRADOS DENTRO de los pasos que los usan, que es la condicion de esta casa para la transcripcion de caso. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 6 pasos, 6 TRANSCRIPCION, 0 PUENTE. P1, P2 y P3 de la linea 79; P4, P5 y P6 de la 81. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: como se averigua antes quien no quiere ir, y como se cancela un acto ya convocado.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-12"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "atribuciones": []
+}

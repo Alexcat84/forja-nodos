@@ -28,14 +28,20 @@ AVISO DEL MANUAL, PRINCIPIO 4, QUE ESTE ARCHIVO NO PUEDE DESOBEDECER:
 
 import datetime
 import difflib
+import json
 import os
+import subprocess
 import sys
+import threading
+import time
 
 from . import censos
+from . import cerrojo
 from . import comun
 from . import config as modulo_config
 from . import esquema as modulo_esquema
 from . import gate
+from . import presupuesto
 from . import reglas_id
 from .resolutor import Resolutor
 
@@ -291,6 +297,134 @@ def senal_similitud_texto(texto_a, texto_b):
     return max(directa, por_palabras)
 
 
+# --------------------------------------------- el reparto de la señal 1 entre procesos
+#
+# DECISION DEL FUNDADOR, 25 sep 2026: SE APRUEBA UNA OPTIMIZACION DE RENDIMIENTO DE LA
+# ADUANA, NINGUNA DE METODO. La señal 1 es la que cuesta: `_ratio` letra a letra
+# (autojunk=False) sobre titulo, resumen y pasos enteros, unos 2,3 s por par con los
+# candidatos de Grove y 479 pares por candidato. Medido en la vuelta 70: el tiempo de
+# cada fila era casi proporcional a la longitud del candidato (0,26 s por caracter).
+#
+# LO QUE CAMBIA ES SOLO QUIEN CALCULA: los pares se reparten entre procesos. La
+# formula es la misma funcion, `senal_similitud_texto`, llamada con los mismos dos
+# textos; el resultado vuelve por `repr` y `float`, que en Python es un viaje
+# exacto, y cada trozo vuelve a su sitio en el orden de la poblacion. Si un proceso
+# falla, ese trozo se calcula aqui, en serie: el resultado no depende del reparto.
+#
+# CUANTOS PROCESOS: los que da el PRESUPUESTO UNICO de la maquina (`presupuesto.py`,
+# decision del fundador del 25 sep 2026). Entre todos los barridos y aduanas que
+# corran a la vez nunca hay mas procesos de calculo que nucleos menos uno: cada
+# proceso arranca con una plaza tomada, y cada reparto toma solo su parte justa,
+# que se vuelve a mirar antes de cada trozo. La variable FORJA_PROCESOS_SIMILITUD
+# baja aun mas el tope de un reparto.
+#
+# Los procesos se lanzan con `subprocess` y no con `multiprocessing` A PROPOSITO: en
+# Windows `multiprocessing` vuelve a importar el programa principal en cada hijo, y
+# las copias de `barrido_uno.py` de cada vuelta no tienen guarda de `__main__`.
+
+VARIABLE_PROCESOS_SIMILITUD = "FORJA_PROCESOS_SIMILITUD"
+MINIMO_PARA_REPARTIR = 40
+TROZOS_POR_PLAZA = 2         # trozos mas pequenos que plazas: la cuota se revisa a menudo
+
+
+def _procesos_similitud(n):
+    nucleos = presupuesto.total()
+    try:
+        tope = int(os.environ.get(VARIABLE_PROCESOS_SIMILITUD, "0") or "0")
+    except ValueError:
+        tope = 0
+    if tope > 0:
+        nucleos = min(nucleos, tope)
+    return max(1, min(nucleos, n))
+
+
+def _codificar_senal(valor):
+    if isinstance(valor, NoAplica):
+        return {"no_aplica": valor.motivo}
+    return {"valor": repr(valor)}
+
+
+def _decodificar_senal(dato):
+    if "no_aplica" in dato:
+        return NoAplica(dato["no_aplica"])
+    return float(dato["valor"])
+
+
+def trabajador_similitud():
+    """Un proceso del reparto: lee {"a": texto, "bs": [textos]} por la entrada y
+    devuelve la señal 1 de cada par, en el mismo orden, por la salida."""
+    datos = json.loads(sys.stdin.buffer.read().decode("utf-8"))
+    salida = [_codificar_senal(senal_similitud_texto(datos["a"], b)) for b in datos["bs"]]
+    sys.stdout.buffer.write(json.dumps(salida).encode("utf-8"))
+
+
+def _trozo_en_proceso(texto_a, trozo, raiz):
+    """La señal 1 de un trozo, calculada en un proceso aparte; en serie si falla."""
+    codigo = ("import sys; sys.path.insert(0, %r); from src import aduana; "
+              "aduana.trabajador_similitud()" % raiz)
+    try:
+        proceso = subprocess.Popen([sys.executable, "-c", codigo], cwd=raiz,
+                                   stdin=subprocess.PIPE, stdout=subprocess.PIPE,
+                                   stderr=subprocess.DEVNULL)
+        crudo, _ = proceso.communicate(json.dumps({"a": texto_a, "bs": trozo}).encode("utf-8"))
+        if proceso.returncode == 0:
+            parte = [_decodificar_senal(d) for d in json.loads(crudo.decode("utf-8"))]
+            if len(parte) == len(trozo):
+                return parte
+    except (OSError, ValueError, KeyError):
+        pass
+    return [senal_similitud_texto(texto_a, b) for b in trozo]
+
+
+def similitudes_repartidas(texto_a, textos_b):
+    """La señal 1 de `texto_a` contra cada texto de `textos_b`, en su orden."""
+    n = len(textos_b)
+    procesos = _procesos_similitud(n)
+    if procesos <= 1 or n < MINIMO_PARA_REPARTIR:
+        return [senal_similitud_texto(texto_a, b) for b in textos_b]
+    try:
+        presupuesto.directorio()
+    except OSError:
+        return [senal_similitud_texto(texto_a, b) for b in textos_b]
+    tamano = max(1, -(-n // (presupuesto.total() * TROZOS_POR_PLAZA)))
+    trozos = [textos_b[i:i + tamano] for i in range(0, n, tamano)]
+    raiz = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    partes = [None] * len(trozos)
+    pendientes = list(range(len(trozos)))
+    candado = threading.Lock()
+    plazas = presupuesto.Plazas()
+
+    def hilo():
+        while True:
+            with candado:
+                if not pendientes:
+                    return
+            plaza = plazas.tomar()
+            if plaza is None:
+                time.sleep(presupuesto.ESPERA)
+                continue
+            try:
+                with candado:
+                    if not pendientes:
+                        return
+                    i = pendientes.pop(0)
+                partes[i] = _trozo_en_proceso(texto_a, trozos[i], raiz)
+            finally:
+                plazas.devolver(plaza)
+
+    with presupuesto.Presencia():
+        hilos = [threading.Thread(target=hilo) for _ in range(min(procesos, len(trozos)))]
+        for h in hilos:
+            h.start()
+        for h in hilos:
+            h.join()
+    similitudes_repartidas.maximo_de_plazas = plazas.maximo
+    resultado = []
+    for parte in partes:
+        resultado.extend(parte)
+    return resultado
+
+
 def senal_familia_id(id_a, id_b):
     """Señal 2: familia de id, normalizando sufijos, preposiciones,
     articulos, plurales y orden de palabras."""
@@ -336,10 +470,16 @@ def senal_paso_contra_nodo(candidato, vecino):
     return mejor, detalle
 
 
-def medir(candidato, vecino, umbrales=None):
+_SIN_MEDIR = object()
+
+
+def medir(candidato, vecino, umbrales=None, similitud=_SIN_MEDIR):
+    """`similitud` llega ya calculada cuando buscar_vecinos reparte la señal 1; si
+    no llega, se calcula aqui, igual que siempre."""
     umbrales = umbrales or modulo_config.cargar()
-    similitud = senal_similitud_texto(comun.texto_comparable(candidato),
-                                      comun.texto_comparable(vecino))
+    if similitud is _SIN_MEDIR:
+        similitud = senal_similitud_texto(comun.texto_comparable(candidato),
+                                          comun.texto_comparable(vecino))
     familia = senal_familia_id(candidato.get("id") or "", vecino.get("id") or "")
     paso, detalle_paso = senal_paso_contra_nodo(candidato, vecino)
 
@@ -369,6 +509,117 @@ def medir(candidato, vecino, umbrales=None):
     }
 
 
+CARPETA_ARCHIVO = "_insertados"
+# LA POBLACION DEL BARRIDO ES GRAFO MAS BANDEJAS, TAMBIEN PARA LA ADUANA
+# (12 sep 2026, decision del fundador, punto 3). `D.38.4` ya lo manda para el
+# auditor desde el 11 sep, y el informe seguia cargando solo el grafo: **un par
+# cuyos dos extremos viven en cuarentena no lo levantaba nadie.**
+#
+# EL EJEMPLAR QUE LO OBLIGO: `cap_10` `L225` a `L251` contra
+# `reconocer_recompensar_gente_estable` de `cap_06`, los dos en la bandeja. La
+# `ACTA 20` lo leyo y lo clasifico a mano porque la maquina no podia verlo.
+#
+# SE DESCARTAN `_insertados` (ya viven en el grafo, D.31, y contarlos dos veces
+# seria medir el mismo nodo contra si mismo) y `_derivadas`.
+#
+# Y SE DESCARTA LO QUE NO PUEDE ENTRAR, QUE NO ES LO MISMO QUE LO QUE NO HA
+# ENTRADO. `cuarentena/` tambien aloja `ensayo_referencia_163/`, que son 163
+# nodos de un CATALOGO DE REFERENCIA ajeno puestos ahi para calibrar la aduana
+# (`docs/ESTRENO_DE_LA_ADUANA.md`). Esos no esperan juicio: no van a entrar
+# nunca en este grafo, y medir el trabajo de hoy contra ellos seria abrir cola
+# de lectura contra material que la puerta rechazaria de todas formas.
+#
+# EL CRITERIO NO ES UNA LISTA DE NOMBRES, que es el error que la decision 1 de
+# este mismo dia acaba de corregir un piso mas abajo: **entra en la poblacion el
+# candidato cuyas fuentes estan TODAS en la tabla canonica vigente.** Una fuente
+# fuera de la tabla ya lo tumbaria en la puerta (guarda `fuentes`), asi que lo
+# que la poblacion deja fuera es exactamente lo que no podria entrar.
+#
+# Y ES SIMETRICO: el ensayo se corre con `FORJA_FUENTES` apuntando a su tabla
+# derivada, y ese dia los 163 son los canonicos y los 83 del lote 4 no. El
+# criterio sigue a la tabla que mande, no a una carpeta.
+#
+# Y EL PROPIO CANDIDATO NO SE MIDE CONTRA SI MISMO: lo excluye `buscar_vecinos`
+# por su id, que es la errata de metodo de `D.38.4` corregida en la `ACTA 18`.
+CARPETAS_FUERA_DE_POBLACION = ("_insertados", "_derivadas")
+
+
+class Poblacion(object):
+    """Lo que el barrido tuvo delante, con sus dos mitades a la vista.
+
+    Se publican las dos porque una sola miente: `286` no dice lo mismo que
+    `203 del grafo mas 83 que esperan`, y la segunda es la que permite leer por
+    que un candidato levanto vecino (`D.38.3`, toda cifra con su reparto).
+    """
+
+    def __init__(self, grafo=0, bandejas=0):
+        self.grafo = grafo
+        self.bandejas = bandejas
+
+    @property
+    def total(self):
+        return self.grafo + self.bandejas
+
+    def __int__(self):
+        return self.total
+
+    def __str__(self):
+        return "%d   (%d del grafo mas %d que esperan en bandejas)" % (
+            self.total, self.grafo, self.bandejas)
+
+
+def _fuentes_canonicas(candidato, tabla_fuentes):
+    """Cierto si TODAS las fuentes del candidato estan en la tabla vigente."""
+    claves = [f.get("clave") for f in (candidato.get("fuentes") or [])
+              if isinstance(f, dict)]
+    return bool(claves) and all(c in tabla_fuentes for c in claves)
+
+
+def poblacion_de_bandejas(raiz=None, fecha=None, tabla_fuentes=None):
+    """Los candidatos que ESPERAN juicio en las bandejas, listos para medir."""
+    if tabla_fuentes is None:
+        tabla_fuentes = comun.leer_json(comun.RUTA_FUENTES)
+    base = (os.path.join(raiz, "cuarentena") if raiz else comun.DIR_CUARENTENA)
+    esperando = []
+    if not os.path.isdir(base):
+        return esperando
+    for carpeta, subcarpetas, ficheros in os.walk(base):
+        subcarpetas[:] = [s for s in subcarpetas
+                          if s not in CARPETAS_FUERA_DE_POBLACION
+                          and not s.startswith(".")]
+        for fichero in sorted(ficheros):
+            if not fichero.lower().endswith(".json"):
+                continue
+            ruta = os.path.join(carpeta, fichero)
+            if esta_archivado(ruta):
+                continue
+            try:
+                bruto = comun.leer_json(ruta)
+            except (IOError, ValueError):
+                # UN CANDIDATO ILEGIBLE NO SE CUENTA Y NO REVIENTA EL BARRIDO:
+                # su propio dictamen ya lo dice con su guarda (CAERIA).
+                continue
+            candidato, _avisos = normalizar_candidato(bruto, fecha)
+            if candidato.get("id") and _fuentes_canonicas(candidato, tabla_fuentes):
+                esperando.append(candidato)
+    return esperando
+
+
+def esta_archivado(ruta):
+    """Cierto si la ruta cuelga de `cuarentena/_insertados/` (D.31).
+
+    UN CANDIDATO INSERTADO NO SE BORRA: su fichero es el registro de COMO
+    entro, y ese registro vale mas cuanto mas viejo es. Pero deja de ser un
+    candidato, asi que el informe no lo cuenta.
+
+    SIN ESTO LA CIFRA MENTIRIA EN LA DIRECCION MAS FEA: el informe diria
+    `CAERIA: el id ya vive en el grafo` sobre un nodo que entro bien, y un
+    lote recien insertado se leeria como un lote entero rechazado.
+    """
+    piezas = os.path.normpath(ruta).replace("\\", "/").split("/")
+    return CARPETA_ARCHIVO in piezas
+
+
 def buscar_vecinos(candidato, nodos, umbrales=None):
     """Paso 2 de la aduana: BLOQUEA (busca vecinos) multi señal.
 
@@ -379,6 +630,7 @@ def buscar_vecinos(candidato, nodos, umbrales=None):
     umbrales = umbrales or modulo_config.cargar()
     resolutor = Resolutor(nodos)
     vecinos = []
+    elegibles = []
     for nodo in nodos:
         if resolutor.mismo(nodo.get("id"), candidato.get("id")):
             continue
@@ -392,9 +644,18 @@ def buscar_vecinos(candidato, nodos, umbrales=None):
             permitidos.add(candidato.get("dominio"))
             if nodo.get("dominio") not in permitidos:
                 continue
-        medicion = medir(candidato, nodo, umbrales)
-        if medicion["levantada_por"]:
-            vecinos.append(medicion)
+        elegibles.append(nodo)
+    # LA SEÑAL 1 SE REPARTE (decision del fundador, 25 sep 2026): mismos pares, misma
+    # funcion, mismo orden; solo cambia cuantos procesos la calculan a la vez.
+    similitudes = similitudes_repartidas(comun.texto_comparable(candidato),
+                                         [comun.texto_comparable(n) for n in elegibles])
+    # EL RESTO SE CALCULA AQUI, EN SERIE (la señal 3, vecino a vecino), y tambien es
+    # un proceso de calculo: va con su plaza del presupuesto unico de la maquina.
+    with presupuesto.PlazaPropia():
+        for nodo, similitud in zip(elegibles, similitudes):
+            medicion = medir(candidato, nodo, umbrales, similitud=similitud)
+            if medicion["levantada_por"]:
+                vecinos.append(medicion)
     vecinos.sort(key=lambda v: max(_ordenable_de_senal(x) for x in v["senales"].values()),
                  reverse=True)
     # SE DEVUELVEN TODOS. El tope de config/umbrales.json es de IMPRESION, no de
@@ -738,6 +999,7 @@ class Resultado(object):
         self.vecinos = []
         self.veredictos = []
         self.aristas = []
+        self.aristas_en_cola = []
         self.mutuos = []
         self.censos_escritos = []
         self.nodo = None
@@ -751,6 +1013,47 @@ class Resultado(object):
 
 def _hoy():
     return datetime.date.today().isoformat()
+
+
+def _extremo_en_bandeja(resolutor, ids_bandeja, id_candidato, madre, hijo):
+    """¿Algun extremo de la arista espera en la bandeja en vez de vivir en el grafo?
+
+    D.29 lo tiene escrito desde el 10 sep 2026 y hasta hoy no habia llegado al
+    codigo: *una arista se cablea contra ids que ya viven, y en cuarentena
+    todavia no vive ninguno.* El candidato de esta corrida cuenta como vivo,
+    porque va a entrar en este mismo acto.
+
+    Devuelve True SOLO si el extremo que falta esta de verdad en una bandeja. Un
+    extremo que no esta ni en el grafo ni en la bandeja no es una arista en cola:
+    es un id que no existe, y ese se sigue rechazando.
+    """
+    for extremo in (madre, hijo):
+        if extremo == id_candidato:
+            continue
+        if resolutor.resolver(extremo) is not None:
+            continue
+        if extremo in ids_bandeja:
+            return True
+    return False
+
+
+def _consumar_veredictos(ruta_veredictos, registros):
+    """Escribe en la bitacora los veredictos de una corrida QUE SE CONSUMO.
+
+    `EXTRACTOR.md` 14 pone `bitacora/` bajo la aduana, y **la bitacora registra
+    lo que la aduana HIZO**. Una corrida que imprime `RECHAZADO` no hizo nada,
+    luego no tiene nada que registrar.
+
+    LA CAIDA QUE LO HIZO FALTA, contada y medida (`ACTA 27` `5.2`): `agregar_jsonl`
+    se llamaba DENTRO del bucle por vecino y el rechazo por extremos llegaba
+    despues, asi que una corrida rechazada dejaba sus lineas escritas igual.
+    **Cuatro asi en `bitacora/VEREDICTOS.jsonl`**, lineas `248` a `251`: tres
+    veredictos sobre un nodo que no vive y una arista declarada dos veces que no
+    existe, con `NADA SE INSERTO` impreso en la misma corrida.
+    """
+    for registro in registros:
+        comun.agregar_jsonl(ruta_veredictos, registro)
+    return len(registros)
 
 
 def insertar(candidato_bruto, veredictos_crudos=None, respuestas_censo=None,
@@ -783,6 +1086,10 @@ def insertar(candidato_bruto, veredictos_crudos=None, respuestas_censo=None,
     resultado.decir("  esquema, reglas de id, fuentes canonicas y guiones: verde")
 
     nodos = comun.leer_jsonl(ruta_dataset)
+    # EL RESOLUTOR SE QUEDA EN EL GRAFO, y lo dice la propia tabla de `D.38.5`: la
+    # guarda `el id ya vive en el grafo` es sobre el GRAFO. Un id que espera en la
+    # bandeja NO vive en el grafo todavia, y tumbarlo por eso convertiria la bandeja
+    # entera en un lote rechazado.
     resolutor = Resolutor(nodos)
     if resolutor.existe(candidato["id"]):
         resuelto = resolutor.resolver(candidato["id"])
@@ -793,10 +1100,26 @@ def insertar(candidato_bruto, veredictos_crudos=None, respuestas_censo=None,
                         % (candidato["id"], resuelto))
         return resultado
 
-    # 2. BLOQUEA: busca vecinos con las tres señales a la vez
-    vecinos = buscar_vecinos(candidato, nodos, umbrales)
+    # 2. BLOQUEA: busca vecinos con las tres señales a la vez, sobre GRAFO MAS
+    # BANDEJAS (`D.38.5`, cuyo titular dice **TAMBIEN PARA LA ADUANA**).
+    #
+    # DURANTE CUATRO DIAS ESTO MIDIO SOLO EL GRAFO, y la regla llevaba escrito lo
+    # contrario desde el 12 sep: se cableo en `informe.py`, que corre EN SECO, y no
+    # aqui, que es **donde se decide**. Una regla que dice una cosa y un codigo que
+    # hace otra es la enfermedad que la cosecha `7.C` llama por su nombre.
+    #
+    # EL COSTE, MEDIDO POR LA `ACTA 26`: cinco pares por encima de umbral **sin
+    # veredicto**, los cinco con un extremo en la bandeja. No era perdida, era
+    # aplazamiento; pero `D.38.5` nacio para que un par **no dependa de que alguien
+    # se acuerde.**
+    bandejas = poblacion_de_bandejas(fecha=fecha)
+    poblacion = list(nodos) + list(bandejas)
+    ids_bandeja = set(n["id"] for n in bandejas if n.get("id"))
+    nodos_bandeja = dict((n["id"], n) for n in bandejas if n.get("id"))
+    censo = Poblacion(len(nodos), len(bandejas))
+    vecinos = buscar_vecinos(candidato, poblacion, umbrales)
     resultado.vecinos = vecinos
-    resultado.decir("  blocking multi señal contra %d nodo(s) del dataset" % len(nodos))
+    resultado.decir("  blocking multi señal contra %s" % censo)
 
     veredictos = {}
     for crudo in veredictos_crudos or []:
@@ -811,6 +1134,74 @@ def insertar(candidato_bruto, veredictos_crudos=None, respuestas_censo=None,
             return resultado
         resuelto = resolutor.resolver(veredicto["vecino"]) or veredicto["vecino"]
         veredictos[resuelto] = veredicto
+
+    # ------------------------------------------------------------------
+    # LA ARISTA QUE LA SEÑAL NO LEVANTA SE DECLARA POR LECTURA (D.19, D.29).
+    #
+    # Un veredicto puede nombrar a un nodo que las tres señales NO levantaron.
+    # Eso no es un error del lector: es EL CASO NORMAL de la jerarquia, y esta
+    # casa lo tiene medido. La aduana caza duplicados; la jerarquia la caza la
+    # LECTURA, y la señal 3 solo levanta el 3 por ciento de las aristas
+    # declaradas (docs/CALIBRACION_D4.md seccion 7).
+    #
+    # HASTA EL 10 SEP 2026 ESTE CODIGO PARSEABA ESE VEREDICTO Y LO TIRABA. El
+    # bucle que escribe aristas y bitacora iteraba `for vecino in vecinos`, asi
+    # que un veredicto sobre un no vecino se quedaba en este diccionario sin que
+    # nadie lo leyera: la insercion decia que todo fue bien, el nodo entraba, y
+    # NI LA ARISTA NI LA RAZON ESCRITA SE ESCRIBIAN EN NINGUNA PARTE. Un
+    # veredicto aceptado en silencio es peor que uno rechazado, porque el
+    # rechazo se ve.
+    #
+    # Lo encontro el fundador al autorizar la primera insercion real, sobre el
+    # primer par madre e hijo de esta casa: `formular_codigo...` a
+    # `verificar_afirmaciones...`, que mide 0,572 contra un umbral de 0,60.
+    #
+    # LO QUE ESTO NO HACE, y es la mitad que importa: no relaja nada. Un
+    # veredicto declarado AÑADE una obligacion, jamas retira otra. `faltan` se
+    # sigue computando sobre los vecinos que las señales levantaron, asi que
+    # declarar una lectura no exime de juzgar un vecino real.
+    # ------------------------------------------------------------------
+    ids_vecinos = set(v["id"] for v in vecinos)
+    declarados = []
+    for vecino_id in sorted(veredictos):
+        if vecino_id in ids_vecinos:
+            continue
+        # EL QUE ESPERA EN LA BANDEJA TAMBIEN SE LEE (D.29, ACTA 27 5.1). Antes
+        # se rechazaba con `si la madre todavia esta en cuarentena, entra ella
+        # primero`, y esa salida no existe cuando los DOS extremos esperan: entre
+        # primero el que entre, el otro no vive. D.29 da la salida buena, y es
+        # diferir el cableado, no diferir la lectura.
+        nodo_declarado = resolutor.canonicos.get(vecino_id) or nodos_bandeja.get(vecino_id)
+        if nodo_declarado is None:
+            resultado.codigo = CODIGO_RECHAZO
+            resultado.decir("")
+            resultado.decir("RECHAZADO: el veredicto nombra a '%s' y ese nodo no vive "
+                            "ni en el grafo ni en las bandejas." % vecino_id)
+            resultado.decir("  Una arista se cablea contra un id que existe. Un id que no "
+                            "esta en ninguna de las dos poblaciones no es una arista en "
+                            "cola: es un id que no existe.")
+            return resultado
+        medicion = medir(candidato, nodo_declarado, umbrales)
+        # SE DECLARA COMO LO QUE ES. La bitacora guarda las señales REALES, que
+        # es la prueba de que ninguna la levanto, y dice quien la levanto: un
+        # lector.
+        medicion["levantada_por"] = ["lectura declarada"]
+        declarados.append(medicion)
+
+    if declarados:
+        resultado.decir("")
+        resultado.decir("DECLARADOS POR LECTURA: %d. Ninguna señal los levanto."
+                        % len(declarados))
+        for declarado in declarados:
+            resultado.decir("  %s  [%s]" % (declarado["id"], declarado["titulo"]))
+            resultado.decir("    señales: %s"
+                            % ", ".join("%s %s" % (nombre, valor)
+                                        for nombre, valor in sorted(declarado["senales"].items())))
+            resultado.decir("    umbrales: similitud %.2f, familia %.2f, paso %.2f"
+                            % (umbrales["umbral_similitud_texto"],
+                               umbrales["umbral_familia_id"],
+                               umbrales["umbral_paso_contra_nodo"]))
+        resultado.decir("  LA JERARQUIA LA CAZA LA LECTURA, NO LA SEÑAL (D.19, D.29).")
 
     if vecinos:
         resultado.decir("")
@@ -892,11 +1283,18 @@ def insertar(candidato_bruto, veredictos_crudos=None, respuestas_censo=None,
             return resultado
 
     # 3. Veredictos escritos: se registran TODOS en la bitacora
+    #
+    # LOS DECLARADOS POR LECTURA PASAN POR EL MISMO SITIO. No hay un camino
+    # corto para ellos: se les exige la misma razon escrita, se les cablea la
+    # arista igual, y guardan la misma huella de vigencia. Lo unico distinto es
+    # quien los levanto, y eso queda escrito en el registro.
     aristas = []
     repite = []
     mutuos = []
-    for vecino in vecinos:
+    registros = []
+    for vecino in vecinos + declarados:
         veredicto = veredictos[vecino["id"]]
+        en_cola = False
         if veredicto["clase"] not in CLASES:
             resultado.codigo = CODIGO_RECHAZO
             resultado.decir("RECHAZADO: clase de veredicto desconocida para %s: %s"
@@ -920,7 +1318,14 @@ def insertar(candidato_bruto, veredictos_crudos=None, respuestas_censo=None,
                                 % (vecino["id"], candidato["id"], veredicto["madre"]))
                 return resultado
             hijo = candidato["id"] if madre == vecino["id"] else vecino["id"]
-            aristas.append({"madre": madre, "hijo": hijo, "vecino": vecino["id"]})
+            # EL CABLEADO SE DIFIERE CUANDO EL OTRO EXTREMO ESPERA EN LA BANDEJA
+            # (D.29, cableada aqui por la ACTA 27 5.1). El veredicto se escribe
+            # AHORA; la arista queda EN COLA y se cablea DESPUES con
+            # `forja.py arista`, que ya existe.
+            en_cola = _extremo_en_bandeja(resolutor, ids_bandeja, candidato["id"],
+                                          madre, hijo)
+            aristas.append({"madre": madre, "hijo": hijo, "vecino": vecino["id"],
+                            "en_cola": en_cola})
         elif veredicto["clase"] == "REPITE":
             repite.append(vecino["id"])
         elif veredicto["clase"] == "MUTUO":
@@ -950,7 +1355,13 @@ def insertar(candidato_bruto, veredictos_crudos=None, respuestas_censo=None,
         # BLOQUE DE VIGENCIA (D.15): el veredicto guarda la huella del texto
         # contra el que se emitio, en los dos lados. Sin esto, dentro de tres
         # cirugias nadie sabra si esta lectura sigue siendo de este texto.
-        vecino_nodo = resolutor.canonicos.get(vecino["id"]) or {}
+        # LA HUELLA DEL VECINO DE BANDEJA SE GUARDA DE VERDAD (`D.38.5`, su otra
+        # mitad sin cablear, medida en la vuelta 28). Hasta hoy este `or {}`
+        # guardaba la huella de un diccionario VACIO cuando el vecino esperaba en
+        # la bandeja: la señal si lo medía contra su texto, y la bitacora anotaba
+        # la huella de nada. Ocho lineas asi, `252` a `264`.
+        vecino_nodo = (resolutor.canonicos.get(vecino["id"])
+                       or nodos_bandeja.get(vecino["id"]) or {})
         registro = {
             "fecha": fecha,
             "candidato": candidato["id"],
@@ -962,16 +1373,32 @@ def insertar(candidato_bruto, veredictos_crudos=None, respuestas_censo=None,
             "detalle_paso": vecino["detalle_paso"],
             "veredicto": veredicto["clase"],
             "razon": veredicto["razon"],
-            "arista": ("%s > %s" % (veredicto["madre"], candidato["id"]))
+            # El campo dice MADRE a HIJO de verdad en los dos casos. Antes daba
+            # por hecho que el candidato era siempre el hijo, y cuando el
+            # candidato era la MADRE escribia `X > X` y perdia el nombre del
+            # hijo (12 lineas asi, vueltas 12 a 15; ACTA 16 seccion 8.1).
+            "arista": ("%s > %s" % (madre, hijo))
                       if veredicto["clase"] == "CONTINUA"
                       else ("%s <> %s" % (candidato["id"], vecino["id"]))
                       if veredicto["clase"] == "MUTUO" else "",
         }
-        comun.agregar_jsonl(ruta_veredictos, registro)
+        # LA LINEA DICE SI SU ARISTA SE CABLEO O QUEDO EN COLA, y lo dice en el
+        # campo y no en la prosa. Una linea que nombra una arista que no existe
+        # en el grafo es la especie que la ACTA 27 5.2 encontro cuatro veces.
+        if en_cola:
+            registro["arista_en_cola"] = True
+        # LA INSERCION ES ATOMICA (D.29 llegando al codigo, ACTA 27 5.2). El
+        # registro se GUARDA, no se escribe: la escritura llega abajo, cuando la
+        # corrida se consuma. Ver `_consumar_veredictos`.
+        registros.append(registro)
         resultado.veredictos.append(registro)
 
     if repite:
         resultado.codigo = CODIGO_REPITE
+        # UN `REPITE` SI SE CONSUMA: la aduana juzgo y devolvio el candidato a
+        # su reparto. No imprime `RECHAZADO` y su veredicto es el resultado del
+        # acto, no un residuo de uno que no ocurrio.
+        _consumar_veredictos(ruta_veredictos, registros)
         resultado.decir("")
         for vecino_id in repite:
             resultado.decir(_plantilla_de_reparto(candidato, vecino_id))
@@ -990,6 +1417,18 @@ def insertar(candidato_bruto, veredictos_crudos=None, respuestas_censo=None,
 
     for arista in aristas:
         madre, hijo = arista["madre"], arista["hijo"]
+        if arista.get("en_cola"):
+            # D.29 POR SU LETRA: *una arista se cablea contra ids que ya viven, y
+            # en cuarentena todavia no vive ninguno... mientras el candidato
+            # espera en cuarentena, la arista vive en un bloque propio y titulado
+            # del reporte.* El veredicto YA esta escrito; esto es el despues.
+            resultado.aristas_en_cola.append("%s > %s" % (madre, hijo))
+            resultado.decir("  ARISTA EN COLA, no cableada: %s > %s" % (madre, hijo))
+            resultado.decir("    el otro extremo espera en la bandeja (D.29). El veredicto "
+                            "CONTINUA queda escrito y la arista se cablea cuando entre:")
+            resultado.decir("      python forja.py arista --madre %s --hijo %s --paso <n> "
+                            '--razon "..."' % (madre, hijo))
+            continue
         nodo_madre = nuevo if madre == candidato["id"] else por_id.get(madre)
         nodo_hijo = nuevo if hijo == candidato["id"] else por_id.get(hijo)
         if nodo_madre is None or nodo_hijo is None:
@@ -1074,6 +1513,10 @@ def insertar(candidato_bruto, veredictos_crudos=None, respuestas_censo=None,
             resultado.decir("    " + str(fallo))
         return resultado
 
+    # LA CORRIDA SE CONSUMA AQUI, Y NO ANTES. Desde este punto no hay ningun
+    # camino que devuelva `RECHAZADO`, asi que es el sitio donde la bitacora
+    # puede decir la verdad sobre lo que la aduana hizo.
+    _consumar_veredictos(ruta_veredictos, registros)
     comun.escribir_jsonl(ruta_dataset, dataset_futuro)
     # REGISTRO DE CITAS, no lista blanca (D.14). Cada par lleva su ida, su
     # vuelta, las DOS lineas que cita, la fecha, quien lo declaro y la huella
@@ -1094,6 +1537,12 @@ def insertar(candidato_bruto, veredictos_crudos=None, respuestas_censo=None,
     if resultado.mutuos:
         resultado.decir("  enlaces mutuos en %s: %d"
                         % (comun.relativa(ruta_pares_mutuos), len(resultado.mutuos)))
+    if resultado.aristas_en_cola:
+        resultado.decir("  ARISTAS EN COLA, sin cablear: %d" % len(resultado.aristas_en_cola))
+        for arista in resultado.aristas_en_cola:
+            resultado.decir("    %s" % arista)
+        resultado.decir("    D.29: van a un bloque propio y titulado del reporte, y se "
+                        "cablean con `forja.py arista` cuando el otro extremo entre.")
     return resultado
 
 
@@ -1143,6 +1592,20 @@ def main(argumentos=None):
         interactivo = sys.stdin is not None and sys.stdin.isatty()
 
     bruto = comun.leer_json(ruta_candidato)
-    resultado = insertar(bruto, veredictos, respuestas, interactivo=interactivo)
+    # EL CERROJO ENVUELVE LA CORRIDA ENTERA, no solo la escritura, porque el dano
+    # no fue escribir a la vez: fue LEER antes y escribir despues. La corrida que
+    # perdio el nodo en la vuelta 28 habia leido el dataset ANTES de que la otra
+    # escribiera, y al volcar su propia copia en memoria dejo fuera lo que la otra
+    # habia metido. Un cerrojo que solo cubriera el `write` no habria salvado nada.
+    #
+    # `EXTRACTOR.md` 2 manda UN CANDIDATO POR VEZ. Hasta hoy esa regla la cumplia
+    # el que teclea; desde hoy la cumple el codigo.
+    try:
+        with cerrojo.tomar(comun.RUTA_DATASET, avisar=lambda m: print("  " + m)):
+            resultado = insertar(bruto, veredictos, respuestas,
+                                 interactivo=interactivo)
+    except cerrojo.CerrojoOcupado as ocupado:
+        print("INSERCION NO INTENTADA: %s" % ocupado)
+        return CODIGO_RECHAZO
     print(resultado.texto())
     return resultado.codigo

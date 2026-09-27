@@ -1,0 +1,3 @@
+POBLACION: grafo mas bandejas (D.38.4 y D.38.5)
+explicar_idea_facil_comprender_oyente    [grafo]   -> paso CLARIFY de la rueda
+compartir_logica_mostrar_razonamiento    [bandeja] -> paso PERSUADE de la rueda

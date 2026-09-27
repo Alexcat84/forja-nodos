@@ -1,0 +1,13 @@
+fila 21, variar_frecuencia_inspeccion_nivel_calidad, lineas --veredicto: 0
+inicio 2026-09-24 00:21:50
+======================================================================
+ADUANA DE INSERCION, candidato 'variar_frecuencia_inspeccion_nivel_calidad'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (366 del grafo mas 113 que esperan en bandejas)
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 367
+  censos escritos: denominaciones
+
+======================================================================
+fin 2026-09-24 00:49:07 | codigo de salida 0 | 1637.2 s

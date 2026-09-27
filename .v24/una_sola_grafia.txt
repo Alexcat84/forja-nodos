@@ -1,0 +1,4 @@
+$ grep -n "repetida en la lista de fuentes" src/gate.py
+179:                    "fuente '%s' repetida en la lista de fuentes del nodo" % clave))
+$ python -c "leer la nota de cabecera de fuentes/FUENTES_CANONICAS.json"
+Tabla canonica de fuentes (manual principio 8: LA FUENTE ES UN CAMPO SAGRADO). Una sola grafia por libro. Ningun nodo entra con una fuente que no este aqui: la fuente se registra ANTES del primer nodo

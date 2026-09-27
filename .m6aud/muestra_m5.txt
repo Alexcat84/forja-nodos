@@ -1,0 +1,22 @@
+MUESTRA DE FIDELIDAD DEL REGIMEN LIGERO (D.58)
+  libro    : marquet_turn_the_ship
+  semilla  : m5
+  capitulos: cap_12, cap_13, cap_14, cap_15
+
+  RELEIDO ENTERO : cap_12
+  POR MUESTRA    : cap_13, cap_14, cap_15, 15 pasos cada uno
+
+  EL DISPARADOR: si la muestra de un capitulo pasa del 10 por ciento de
+  pasos inventados, ESE CAPITULO SE RELEE ENTERO ANTES DE SEGUIR.
+
+  --- cap_13: 2 paso(s) en la muestra
+    repetir_mensaje_invariable_diario_reunion_even P1   Repite el mismo mensaje dia tras dia, reunion tras reunion, 
+    repetir_mensaje_invariable_diario_reunion_even P2   No cambies el mensaje aunque suene redundante, repetitivo y 
+
+  --- cap_14: 2 paso(s) en la muestra
+    reforzar_principios_guia_lenguaje_prueba_conoc P1   Cuando escribas premios o evaluaciones, procura describir el
+    reforzar_principios_guia_lenguaje_prueba_conoc P2   Pon a prueba si tus principios guia son reales de verdad: sa
+
+  --- cap_15: 0 paso(s) en la muestra
+
+  --- cap_12: ENTERO, 8 paso(s), no hay muestra que elegir

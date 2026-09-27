@@ -1,0 +1,15 @@
+| # | arranca en | candidato | pasos | en el grafo | sede del fichero |
+|---:|---:|---|---:|---|---|
+| 1 | `L25` | `integrar_trabajo_vida_mejor_version` | 5 | **si** | `_insertados` |
+| 2 | `L29` | `definir_receta_propia_mantenerse_centrado` | 9 | **si** | `_insertados` |
+| 3 | `L37` | `agendar_cuidados_propios_cumplirlos` | 5 | **si** | `_insertados` |
+| 4 | `L45` | `ceder_autoridad_unilateral_equipo` | 15 | **si** | `_insertados` |
+| 5 | `L67` | `dominar_arte_socializar_trabajo` | 9 | **si** | `_insertados` |
+| 6 | `L77` | `evitar_presion_social_actos_equipo` | 6 | **si** | `_insertados` |
+| 7 | `L93` | `construir_confianza_equipo_tiempo_solas` | 7 | **si** | `_insertados` |
+| 8 | `L97` | `vivir_valores_propios_evitar_listarlos` | 9 | **si** | `_insertados` |
+| 9 | `L105` | `demostrar_apertura_visiones_distintas` | 10 | **si** | `_insertados` |
+| 10 | `L123` | `manejar_contacto_fisico_regla_platino` | 9 | **si** | `_insertados` |
+| 11 | `L151` | `reconocer_emociones_propias_avisar_equipo` | 7 | **si** | `_insertados` |
+| 12 | `L161` | `dominar_reacciones_emociones_ajenas` | 11 | **si** | `_insertados` |
+| | | **12 candidatos** | **102** | **12 en el grafo** | |

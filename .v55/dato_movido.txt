@@ -1,0 +1,5 @@
+$ git diff --stat e63f5af..HEAD -- dataset/ bitacora/ censos/ config/ esquema/ src/ scripts/ tests/ hooks/ docs/BANCO_DE_REGLAS.md docs/MANUAL_SISTEMA_DE_CONOCIMIENTO.md docs/loop/AUDITOR_FORJA.md docs/loop/EXTRACTOR.md
+(vacio si no hay salida arriba)
+
+$ git status --porcelain -- dataset/ bitacora/ censos/ config/ esquema/ src/ cuarentena/
+(vacio si no hay salida arriba)

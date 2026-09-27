@@ -1,0 +1,60 @@
+# -*- coding: utf-8 -*-
+import json, io
+
+d = {
+ "id": "identificar_paso_limitante_jornada_desfases",
+ "titulo": "Identificar el paso limitante de tu jornada y crear desfases alrededor: determinar lo inamovible y mover lo flexible a su alrededor",
+ "dominio": "gestion_equipos",
+ "estado": "vivo",
+ "ids_alias": [],
+ "nodos_previos": [],
+ "nodos_siguientes": [],
+ "atribuciones": [],
+ "fuentes": [{"clave": "grove_high_output", "fecha": "2026-09-19"}],
+ "denominaciones": {
+   "nombre_largo": "El primer principio de produccion aplicado al tiempo de un mando: cual es el huevo de tu trabajo, y como se programa el resto de la jornada alrededor de el",
+   "sigla": "",
+   "otros_idiomas": [
+     {"idioma": "ingles", "termino": "limiting step"},
+     {"idioma": "ingles", "termino": "offsets"}
+   ]
+ },
+ "condiciones_activacion": "Cuando quieres ordenar tu propia jornada de mando y las recomendaciones corrientes de gestion del tiempo no te dicen alrededor de que ordenarla.",
+ "entregable_esperado": "El paso limitante de tu jornada ya identificado por su falta de holgura, y el resto de tu trabajo programado con sus desfases alrededor de ese paso.",
+ "pasos_accionables": [
+   "Mejora las recomendaciones corrientes de gestion del tiempo aplicandoles los principios de produccion.",
+   "Identifica primero tu paso limitante preguntandote cual es el huevo de tu trabajo.",
+   "Busca para eso las cosas de tu vida de mando que de verdad tienen que ocurrir en un calendario absoluto, aquellas en cuyo tiempo no hay holgura ninguna.",
+   "Crea desfases y programa el resto de tu trabajo alrededor de ese paso limitante.",
+   "En resumen: determina que es lo inamovible y manipula a su alrededor las actividades mas flexibles, y trabajaras de manera mas eficiente."
+ ],
+ "resumen_teorico": (
+  "UNIDAD DE ORIGEN: fuentes/grove_high_output/cap_04.md, unidad Cap. 3, titulo textual Managerial Leverage. "
+  "Sale de la PIEZA P32 de la frontera publicada en la vuelta 46 (HH.2.c), L267 a L267, 122 palabras, y de ningun otro tramo. "
+  "POR QUE ES PROCEDIMIENTO: el libro pone SU PROPIO INVENTARIO de las etapas, nombradas una a una y en orden (identify our limiting step, luego create offsets, luego schedule my other work around this limiting step), y pone ademas la PRUEBA para reconocer el paso limitante, que es donde no hay give en el tiempo. "
+  "Es inventario de ETAPAS DE TRABAJO y no de metas, y el criterio no es un adjetivo de adecuacion: lo inamovible se reconoce por una prueba del libro y no por un juicio mio. "
+  "DE DONDE SALE CADA PASO, uno a uno, y los cinco salen de L267: paso 1 (These time-management suggestions can be improved upon, I think, by applying our production principles); "
+  "paso 2 (First, we must identify our limiting step: what is the egg in our work?); "
+  "paso 3 (In a manager life some things really have to happen on a schedule that is absolute... There is no give in the time here); "
+  "paso 4 (Accordingly, I have to create offsets and schedule my other work around this limiting step); "
+  "paso 5 (In short, if we determine what is immovable and manipulate the more yielding activities around it, we can work more efficiently). "
+  "RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 5 pasos, 5 TRANSCRIPCION, 0 PUENTE. "
+  "EL CASO ENTRA NOMBRADO Y SIN SU CIFRA (manual 3.5, y es la mitad mas cara): el caso es la clase que el autor imparte, cuya hora conoce y para la que tiene que prepararse. "
+  "El paso 3 escribe la doctrina (las cosas que ocurren en un calendario absoluto, sin holgura) y NO se lleva ni la clase ni la cifra de estudiantes que el libro da para explicar por que no hay holgura. "
+  "Es la misma correccion que la vuelta 46 hizo con perhaps two hundred people de L215: la cifra del caso se suelta. "
+  "EL HUEVO ES DEL LIBRO Y NO UNA METAFORA MIA: el huevo es el objeto con el que este libro monto su modelo de produccion en cap_01, y aqui el autor lo invoca por su nombre (what is the egg in our work). Por eso el paso 2 lo escribe tal cual. "
+  "LO QUE NO ESCRIBO Y POR ESO NO ESTA AQUI: NO escribo CUANTO desfase se crea ni COMO se calcula, porque el tramo no pone ni cifra ni metodo; "
+  "NO escribo cuales son las recomendaciones corrientes de gestion del tiempo que el paso 1 manda mejorar, porque el libro las critica en el tramo anterior (P31, L259 a L265) y alli son POSTURA, no procedimiento, y la frontera de la vuelta 46 ya las dejo en cero nodos. "
+  "ARISTAS DECLARADAS POR LECTURA, para cablearlas el dia de la insercion y no hoy: "
+  "(1) D.37, CABEZA subir_productividad_gerencial_tres_vias, paso 2. El texto de la cabeza dice CUANTAS vias tiene (tres) y las NOMBRA una a una, y su paso 2 es sube el ritmo con el que ejecutas tus actividades. Este nodo es una de las partes de esa via, y D.37 manda declarar la arista en la misma vuelta en que se inserta la parte, sin esperar a que ninguna senial la levante. "
+  "(2) D.29, HERMANO agrupar_tareas_semejantes_aprovechar_preparacion, que es el segundo principio de produccion del mismo grupo (a second production principle, dice el libro al abrir P33), aplicado al mismo objeto. "
+  "(3) D.29, HIJO usar_calendario_herramienta_planificacion_produccion, porque su paso sobre llenar los huecos entre los pasos limitantes solo se puede ejecutar si este nodo ya los identifico. "
+  "(4) D.29, PARIENTE construir_flujo_produccion_paso_limitante, de cap_01, que es donde el paso limitante nace como objeto de fabrica. Este nodo lo aplica al tiempo de un mando y NO repite sus pasos. "
+  "TRADUCCION DECLARADA: limiting step y offsets viajan en denominaciones. "
+  "DISCUTIBLE QUE MARCO ANTES DE SABER SI ACIERTO: el paso 5 es el resumen que el propio libro hace de los pasos 2 a 4 (In short), y un lector estricto dira que repite y que el nodo se queda en cuatro. "
+  "Lo sostengo porque el resumen anade la pareja inamovible contra flexible, que es la vara con la que se clasifica TODO lo demas de la jornada y que los pasos anteriores no dan. Si cae, cae DENTRO de mi marcado."
+ )
+}
+
+io.open('cuarentena/grove_high_output/identificar_paso_limitante_jornada_desfases.json', 'w', encoding='utf-8', newline='\n').write(json.dumps(d, ensure_ascii=False, indent=2) + '\n')
+print('escrito')

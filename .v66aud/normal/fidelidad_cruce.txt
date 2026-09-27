@@ -1,0 +1,18 @@
+filas mias: 156 | suyas: 156 | solo mias: 0 | solo suyas: 0
+marcas mias: {'T': 152, 'D': 4} | suyas: {'T': 156}
+marca distinta: 4
+  buscar_actividad_alta_palanca_tres_vias              paso  1  mia D L203 a L207 | suya T L207
+  detectar_palanca_negativa_actividad_mando            paso  3  mia D L231 | suya T L231
+  detectar_palanca_negativa_actividad_mando            paso  5  mia D L231 | suya T L231
+  detectar_palanca_negativa_actividad_mando            paso  7  mia D L235 | suya T L235
+linea distinta: 4
+  agrupar_tareas_semejantes_aprovechar_preparacion     paso  2  mia L269 y L271 | suya L269
+  buscar_actividad_alta_palanca_tres_vias              paso  1  mia L203 a L207 | suya L207
+  decir_no_trabajo_excede_capacidad                    paso  7  mia L279 y L283 | suya L283
+  usar_calendario_herramienta_planificacion_produccion paso  7  mia L279 y L281 | suya L281
+pasos que el extractor marca DISCUTIBLE: 5
+  agrupar_interrupciones_subordinados_reuniones_regulares paso  4  suya T | mia T
+  buscar_actividad_alta_palanca_tres_vias              paso  1  suya T | mia D
+  detectar_palanca_negativa_actividad_mando            paso  3  suya T | mia D
+  dimensionar_numero_subordinados_medio_dia_semanal    paso 10  suya T | mia T
+  reunir_informacion_gerencial_vias_variadas           paso  6  suya T | mia T

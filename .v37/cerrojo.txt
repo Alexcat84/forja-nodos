@@ -1,0 +1,4 @@
+$ ls -la procesos/
+total 64
+drwxr-xr-x 1 AlexDesk 197609 0 Sep 17 22:37 ./
+drwxr-xr-x 1 AlexDesk 197609 0 Sep 17 22:43 ../

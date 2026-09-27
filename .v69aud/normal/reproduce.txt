@@ -1,0 +1,16 @@
+comprobar_veredictos: IDENTICO
+orden: IDENTICO
+pasos_y_huellas: IDENTICO
+censo_cierre: IDENTICO
+comprobar_resumen: IDENTICO
+20 filas de huella iguales a .v68ext/pasos_y_huellas.txt: SI
+filas de .v68ext/orden.txt que cambian en .v69ext/orden.txt: 8
+lineas_conjunta: IDENTICO
+citas_d053: IDENTICO
+$ grep -n -o -F "how much experience does a given subordinate have with the specific task at hand" fuentes/grove_high_output/cap_05.md
+33:how much experience does a given subordinate have with the specific task at hand
+$ grep -n -o -E "As we will see later|Accordingly" fuentes/grove_high_output/cap_05.md
+33:As we will see later
+33:Accordingly
+69:As we will see later
+pasos_conjunta (condiciones): IDENTICO

@@ -1,0 +1,15 @@
+=== reservar_calendario_tiempo_ejecutar  (7 vecinos)
+  bloquear_tiempo_pensar_calendario              [bandeja]  por familia_id
+      similitud 0.279  familia 0.333  paso 0.519   paso 4 del candidato contra paso 3 de bloquear_tiempo_pensar_calendario
+  proteger_tiempo_equipo_jefe                    [bandeja]  por similitud_texto
+      similitud 0.409  familia 0.143  paso 0.465   paso 3 del candidato contra paso 6 de proteger_tiempo_equipo_jefe
+  cambiar_posicion_hechos_explicar_cambio        [GRAFO]  por similitud_texto
+      similitud 0.376  familia 0.000  paso 0.448   paso 1 del candidato contra paso 1 de cambiar_posicion_hechos_explicar_cambio
+  mantener_manos_trabajo_real_equipo             [bandeja]  por similitud_texto
+      similitud 0.373  familia 0.000  paso 0.444   paso 1 del candidato contra paso 1 de mantener_manos_trabajo_real_equipo
+  parar_debate_emocion_agotamiento               [bandeja]  por similitud_texto
+      similitud 0.404  familia 0.000  paso 0.406   paso 2 del candidato contra paso 3 de parar_debate_emocion_agotamiento
+  reservar_tiempo_reflexion_metas                [GRAFO]  por familia_id
+      similitud 0.177  familia 0.333  paso 0.404   paso 2 del candidato contra paso 3 de reservar_tiempo_reflexion_metas
+  crear_obligacion_disentir_equipo               [bandeja]  por similitud_texto
+      similitud 0.388  familia 0.000  paso 0.379   paso 4 del candidato contra paso 3 de crear_obligacion_disentir_equipo

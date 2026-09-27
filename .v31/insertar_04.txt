@@ -1,0 +1,20 @@
+ADUANA DE INSERCION, candidato 'nutrir_ideas_nuevas_reunion_solas'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (259 del grafo mas 89 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino crear_espacio_seguro_madurar_ideas_nuevas  [Crear un espacio seguro donde una idea nueva madure antes de entrar en el debate, ayudando a pensar en vez de pedir soluciones]
+    levantada por: paso_contra_nodo
+    similitud_texto    0.180 (umbral 0.35)
+    familia_id         0.222 (umbral 0.30)
+    paso_contra_nodo   0.650 (umbral 0.60)
+    paso 2 del candidato contra paso 1 de crear_espacio_seguro_madurar_ideas_nuevas
+  arista madre-hijo cableada y escrita RESUELTA: crear_espacio_seguro_madurar_ideas_nuevas > nutrir_ideas_nuevas_reunion_solas
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 260
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 1

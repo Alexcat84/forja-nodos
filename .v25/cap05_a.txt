@@ -1,0 +1,45 @@
+==============================================================================
+elogiar_trabajo_especifico_contexto   [bandeja]
+==============================================================================
+TITULO    : Elogiar el trabajo con el porque dentro, contextualizado y sincero, y averiguar quien hizo que antes de elogiar en publico
+ACTIVACION: 
+ENTREGABLE: 
+  P1  Di por que admiras lo que admiras, y no te quedes en el hecho. El texto pone el caso de un elogio suyo que se quedo en decir a su socio que admiraba que fuera entrenador de un equipo infantil, sin decir por que, y lo llama vago e inutil.
+  P2  Comprueba que lo que dices lo sientes de verdad. En ese mismo caso el problema de fondo resulto ser otro: el socio contesto que no creia que lo dijera en serio, porque a ella el deporte le desagrada. El texto lo cuenta como un elogio que sono insincero aunque el aprecio fuera real.
+  P3  Mide como aterriza tu elogio en la persona que lo recibe, que es lo que el texto llama calibrar tu guia y da como razon de que dar un elogio con sentido sea dificil.
+  P4  Si cayo plano, vuelve a intentarlo. La segunda version del caso lleva dentro la ocasion concreta en que ella le habia dado la lata por irse pronto al entrenamiento, lo que admira, que integra trabajo y vida como nadie que ella conozca, el efecto que eso tiene sobre ella, que le ayuda a estar mas con sus hijos, y lo que de ahi ha salido para el trabajo comun.
+  P5  Antes de elogiar en publico, investiga hasta que entiendas de verdad quien hizo que y por que estuvo tan bien. El texto lo saca del caso del ingeniero al que su jefe felicito delante de toda la empresa por una funcionalidad en la que habia trabajado un punado de ingenieros mas, y que acabo mandando un correo a toda la empresa con la lista de todos los que la habian hecho con el.
+  P6  Se tan concreto y tan a fondo con el elogio como con la critica, y baja al detalle.
+  P7  No copies y pegues las justificaciones que te mandan sin leerlas. El texto pone el correo de un jefe que felicito a setenta personas de un equipo de seiscientas pegando lo que le habian mandado sus jefes, y que en una de esas lineas publico el sueldo de una persona, que estaba cincuenta por ciento por debajo de mercado, y que era riesgo de fuga.
+
+==============================================================================
+empezar_cultura_franqueza_radical   [bandeja]
+==============================================================================
+TITULO    : Empezar una cultura de franqueza radical por el orden que el texto pone, pidiendo antes que dando
+ACTIVACION: 
+ENTREGABLE: 
+  P1  Cuenta con lo que el texto observa cada vez que habla de esto: la gente esta de acuerdo con la idea y se pone nerviosa ante la idea de ponerla en practica.
+  P2  Empieza explicando la idea.
+  P3  Y despues pide a tu gente que sea radicalmente franca contigo.
+  P4  Dicho de otra manera, que es como el propio texto lo resume: empieza recibiendo guia, no repartiendola.
+  P5  Cuando empieces a darla, empieza por el elogio y no por la critica.
+  P6  Cuando pases a la critica, asegurate de entender donde esta la frontera peligrosa entre la franqueza radical y la agresion odiosa.
+
+==============================================================================
+pedir_critica_equipo_premiarla   [bandeja]
+==============================================================================
+TITULO    : Pedir activamente que tu equipo te critique, aguantar el silencio y premiar la primera franqueza a la vista de todos
+ACTIVACION: 
+ENTREGABLE: 
+  P1  Empieza pidiendo que te critiquen a ti, y cuenta con las cuatro razones que el texto da: es la mejor forma de mostrar que sabes que a menudo te equivocas y que quieres que te lo digan; vas a aprender mucho, porque poca gente te escruta tan de cerca como quien te reporta; cuanta mas experiencia de primera mano tengas de como se siente recibir una critica, mejor idea tendras de como aterriza la tuya en los demas; y pedir critica construye confianza y refuerza tus relaciones.
+  P2  No te baste con estar abierto a la critica: pidela activamente, que es lo que el texto distingue.
+  P3  Si una persona es lo bastante valiente como para criticarte, no critiques su critica.
+  P4  Si ves a alguien criticando a un par de forma inapropiada, di algo.
+  P5  Pero si es a ti a quien te critican de forma inapropiada, tu trabajo es escuchar con intencion de entender y despues premiar la franqueza.
+  P6  Anima la critica tambien entre los miembros de tu equipo, que el texto pone como igual de importante que pedirla para ti.
+  P7  No reacciones a la defensiva, que es la clave que el texto da para el equipo que si le hablaba claro. El texto pone dos ejemplares de lo que recibio de aquel equipo de Dublin, que eres muy rapida dandole a enviar, y que nosotros tambien tenemos hijos cuando retraso una reunion hasta la hora de su cena.
+  P8  Con un equipo que no habla, aguanta el silencio. En el caso de Tokio la autora pregunto que podria hacer o dejar de hacer para mejorarles la vida, conto hasta diez en vez de hasta seis y no hablo nadie, y pregunto de otra manera y siguio sin hablar nadie.
+  P9  Prueba a contar la historia que el texto usa para eso: Toyota pinto un cuadrado rojo grande en el suelo de la linea de montaje, los empleados nuevos tenian que ponerse dentro al final de su primera semana, y no podian salir hasta haber criticado al menos tres cosas de la linea. El texto dice que la mejora continua que salio de esa practica fue parte de su exito.
+  P10 Premia generosamente la primera franqueza, por pequenia que sea. En el caso de Tokio la primera queja fue sobre el te de la oficina, y la autora dio las gracias en publico, mando una nota escrita a mano, aprobo fondos para que hubiera mejor te, y se aseguro de que todo el mundo supiera que habia mejor te porque alguien se habia quejado en aquella reunion.
+  P11 Cuenta con que despues de esa primera queja pequenia se empiezan a levantar asuntos mas sustanciales.
+

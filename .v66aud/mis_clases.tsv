@@ -1,0 +1,54 @@
+a	b	clase	madre	lectura
+dimensionar_plantilla_administrativa_pronostico	simplificar_trabajo_reducir_numero_pasos	SANO		diagrama de flujo, contar pasos y tirar los que no aguantan la pregunta, contra dimensionar plantilla por pronostico de carga: ningun paso compartido
+reunir_informacion_gerencial_vias_variadas	transmitir_objetivos_prioridades_preferencias	SANO		reunir contra dar: el paso 1 de transmitir nombra al mando que reune para decir que tambien es fuente (L159), no ejecuta ninguna via de reunir
+programar_visita_area_observar_despachar	reunir_informacion_gerencial_vias_variadas	SANO		hermanos: la visita es otra via (L155, an especially efficient way) con procedimiento propio, que reunir no tiene
+escalonar_fuentes_informacion_gerencial	reunir_informacion_gerencial_vias_variadas	CONTINUA	reunir_informacion_gerencial_vias_variadas	la condicion de escalonar (ya tienes abiertas varias vias) es el producto de reunir; escalonar pone jerarquia y redundancia (L153), que reunir no tiene. Un solo paso cruzado: reunir 7 y escalonar 2, la verbal por delante. No REPITE
+empujar_persona_reunion_direccion_preferida	reunir_informacion_gerencial_vias_variadas	SANO		empujar una decision contra reunir informacion
+elegir_momento_actividad_palanca_maxima	reunir_informacion_gerencial_vias_variadas	SANO		momento de la palanca contra vias de informacion
+reunir_informacion_gerencial_vias_variadas	subir_productividad_gerencial_tres_vias	SANO		comparten la palabra vias, no el procedimiento
+buscar_actividad_alta_palanca_tres_vias	reunir_informacion_gerencial_vias_variadas	SANO		comparten la palabra vias, no el procedimiento
+escalonar_fuentes_informacion_gerencial	programar_visita_area_observar_despachar	SANO		jerarquia de fuentes contra visita a un area
+empujar_persona_reunion_direccion_preferida	escalonar_fuentes_informacion_gerencial	SANO		ajenos dentro del capitulo
+escalonar_fuentes_informacion_gerencial	transmitir_objetivos_prioridades_preferencias	SANO		recibir contra dar informacion
+escalonar_fuentes_informacion_gerencial	subir_productividad_gerencial_tres_vias	SANO		ajenos dentro del capitulo
+elegir_momento_actividad_palanca_maxima	escalonar_fuentes_informacion_gerencial	SANO		ajenos dentro del capitulo
+buscar_actividad_alta_palanca_tres_vias	escalonar_fuentes_informacion_gerencial	SANO		ajenos dentro del capitulo
+elegir_momento_actividad_palanca_maxima	programar_visita_area_observar_despachar	SANO		ajenos dentro del capitulo
+empujar_persona_reunion_direccion_preferida	programar_visita_area_observar_despachar	SANO		ajenos dentro del capitulo
+programar_visita_area_observar_despachar	transmitir_objetivos_prioridades_preferencias	SANO		ajenos dentro del capitulo
+programar_visita_area_observar_despachar	subir_productividad_gerencial_tres_vias	SANO		ajenos dentro del capitulo
+buscar_actividad_alta_palanca_tres_vias	programar_visita_area_observar_despachar	SANO		ajenos dentro del capitulo
+empujar_persona_reunion_direccion_preferida	transmitir_objetivos_prioridades_preferencias	SANO		hermanos de la tipologia de L159 a L167: empujar paso 5 dice que empujar es mas fuerte que transmitir informacion, o sea que el libro los separa
+elegir_momento_actividad_palanca_maxima	transmitir_objetivos_prioridades_preferencias	SANO		ajenos dentro del capitulo
+subir_productividad_gerencial_tres_vias	transmitir_objetivos_prioridades_preferencias	SANO		ajenos dentro del capitulo
+buscar_actividad_alta_palanca_tres_vias	transmitir_objetivos_prioridades_preferencias	SANO		ajenos dentro del capitulo
+buscar_actividad_alta_palanca_tres_vias	empujar_persona_reunion_direccion_preferida	SANO		ajenos dentro del capitulo
+empujar_persona_reunion_direccion_preferida	subir_productividad_gerencial_tres_vias	SANO		ajenos dentro del capitulo
+elegir_momento_actividad_palanca_maxima	empujar_persona_reunion_direccion_preferida	SANO		ajenos dentro del capitulo
+elegir_momento_actividad_palanca_maxima	subir_productividad_gerencial_tres_vias	SANO		el paso cruzado (elegir 1 contra subir 3) es nombrar la palanca; la condicion de elegir presupone el producto de buscar, no el de subir, asi que la relacion pasa por buscar. DUDA: se puede leer CONTINUA con madre subir
+buscar_actividad_alta_palanca_tres_vias	subir_productividad_gerencial_tres_vias	CONTINUA	subir_productividad_gerencial_tres_vias	la condicion de buscar (ya sabes que quieres subir la palanca) es la decision de subir pasos 3 y 4; buscar anade las tres vias por las que se reconoce la palanca alta (L205 a L213), que subir no tiene. No REPITE
+buscar_actividad_alta_palanca_tres_vias	elegir_momento_actividad_palanca_maxima	CONTINUA	buscar_actividad_alta_palanca_tres_vias	la condicion de elegir (la actividad que tienes delante es de alta palanca) es el producto de buscar; elegir anade el cuando (L215, L217). Los dos tocan el ejemplo de Robin: buscar lo clasifica como primera via, elegir decide su momento. No REPITE
+detectar_arreglar_fallo_etapa_menor_valor	supervisar_tarea_delegada_etapa_menor_valor	CONTINUA	detectar_arreglar_fallo_etapa_menor_valor	el paso 2 del hijo es la regla del paso 3 de la madre aplicada a la tarea delegada (L253 lowest-added-value stage), y el hijo trae procedimiento propio (frecuencia, madurez, detalle al azar). Es lo que adjudicaron ACTA 61 61.5 y ACTA 62 62.5
+supervisar_decision_delegada_preguntas_concretas	supervisar_tarea_delegada_etapa_menor_valor	SANO		hermanos: la tarea se supervisa como calidad (L253, L255), la decision por su proceso con preguntas concretas (L257)
+identificar_paso_limitante_jornada_desfases	supervisar_tarea_delegada_etapa_menor_valor	SANO		ajenos dentro del capitulo
+identificar_paso_limitante_jornada_desfases	supervisar_decision_delegada_preguntas_concretas	SANO		ajenos dentro del capitulo
+agrupar_tareas_semejantes_aprovechar_preparacion	supervisar_decision_delegada_preguntas_concretas	SANO		ajenos dentro del capitulo
+agrupar_tareas_semejantes_aprovechar_preparacion	identificar_paso_limitante_jornada_desfases	SANO		primer y segundo principio de produccion (L267, L269): hermanos
+decir_no_trabajo_excede_capacidad	identificar_paso_limitante_jornada_desfases	SANO		capacidad de entrada contra paso inamovible
+agrupar_interrupciones_subordinados_reuniones_regulares	identificar_paso_limitante_jornada_desfases	SANO		ajenos dentro del capitulo
+identificar_paso_limitante_jornada_desfases	llevar_inventario_proyectos_discrecionales	SANO		ajenos dentro del capitulo
+agrupar_tareas_semejantes_aprovechar_preparacion	buscar_regularidad_bloques_iguales_trabajo_mando	SANO		el paso cruzado es 1 contra 1, el mismo marco (aplica a tu trabajo de mando el principio de produccion); lo mas cercano de contenido es agrupar 5 (un bloque para una tanda) contra regularidad 8 (los mismos bloques para lo igual, coordinados con otros, L307): la tanda ahorra preparacion, la regularidad da prevision. Hermanos
+agrupar_tareas_semejantes_aprovechar_preparacion	llevar_inventario_proyectos_discrecionales	SANO		hermanos de la serie de principios de produccion
+agrupar_tareas_semejantes_aprovechar_preparacion	decir_no_trabajo_excede_capacidad	SANO		hermanos de la serie de principios de produccion
+decir_no_trabajo_excede_capacidad	usar_calendario_herramienta_planificacion_produccion	CONTINUA	usar_calendario_herramienta_planificacion_produccion	L279: to use your calendar as a production-planning tool, you must accept responsibility for two things, y la segunda es decir que no (L283); decir_no trae procedimiento propio (L277, L285). DUDA: se puede leer SANO de hermanos, dos principios (L273 a L275 y L277) que L279 junta
+decir_no_trabajo_excede_capacidad	llevar_inventario_proyectos_discrecionales	SANO		hermanos de la serie de principios de produccion
+agrupar_interrupciones_subordinados_reuniones_regulares	llevar_inventario_proyectos_discrecionales	SANO		ajenos dentro del capitulo
+llevar_inventario_proyectos_discrecionales	preparar_respuestas_estandar_interrupciones_repetidas	SANO		ajenos dentro del capitulo
+buscar_regularidad_bloques_iguales_trabajo_mando	llevar_inventario_proyectos_discrecionales	SANO		ajenos dentro del capitulo
+buscar_regularidad_bloques_iguales_trabajo_mando	preparar_respuestas_estandar_interrupciones_repetidas	SANO		regularidad contra respuestas estandar (L315, otra via de produccion); preparar no nombra la regularidad
+agrupar_interrupciones_subordinados_reuniones_regulares	buscar_regularidad_bloques_iguales_trabajo_mando	SANO		agrupar paso 4 (mantener las reuniones con regularidad) nombra la regularidad; su procedimiento es la tanda (L317)
+agrupar_interrupciones_subordinados_reuniones_regulares	preparar_respuestas_estandar_interrupciones_repetidas	SANO		hermanos: dos remedios distintos a la interrupcion, L315 y L317
+agrupar_interrupciones_subordinados_reuniones_regulares	sostener_contacto_oferta_aceptacion	SANO		ajeno (smart_who); comparten la palabra regularidad del paso 4
+agendar_cuidados_propios_cumplirlos	agrupar_interrupciones_subordinados_reuniones_regulares	SANO		ajeno (scott_radical_candor); agendar 4 es no saltarte tus citas contigo
+agrupar_interrupciones_subordinados_reuniones_regulares	nombrar_delegados_amigos_casa	SANO		ajeno (smart_who); comparten la palabra regularidad del paso 4
+agrupar_interrupciones_subordinados_reuniones_regulares	canalizar_interrupciones_cartel_hora_oficina	SANO		hermanos: tanda en reuniones (L317) contra cartel y hora de oficina (L321)

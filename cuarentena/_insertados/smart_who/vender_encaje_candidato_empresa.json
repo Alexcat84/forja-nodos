@@ -1,0 +1,40 @@
+{
+  "condiciones_activacion": "Cuando estas vendiendo el puesto al candidato elegido y toca atender la primera de las cinco efes, el encaje, dentro de abordar las cinco efes de la venta. El libro dice que es con diferencia el punto mas importante que vender, asi que es por donde se empieza.",
+  "denominaciones": {
+    "nombre_largo": "Vender el encaje: la primera y mas importante de las cinco efes",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "SELLING FIT"
+      },
+      {
+        "idioma": "ingles",
+        "termino": "fit"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "contratacion",
+  "entregable_esperado": "El candidato viendo, dicho por ti, como sus metas, sus talentos y sus valores encajan en la vision, la estrategia y la cultura de tu empresa.",
+  "escala_minima": "La da el propio argumento del libro: basta una conversacion en la que enseñes el encaje, porque lo que se vende es lo que el metodo A ya te enseño sobre esta persona y ese material ya lo tienes.",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "smart_who",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "id": "vender_encaje_candidato_empresa",
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "pasos_accionables": [
+    "Enseña al candidato como sus metas, sus talentos y sus valores encajan en tu vision, tu estrategia y tu cultura. Eso es lo que significa vender el encaje.",
+    "Enseñale como se van a cubrir con tu empresa las tres cosas que el libro dice que la gente quiere: dejar huella en el mundo, ser necesaria y formar parte de algo que se siente bien.",
+    "Apoyate en lo que el metodo A ya te enseño de esta persona: vender el encaje sirve para que el jugador A vea lo que tu ya has aprendido al recorrer el metodo, y para que el mismo compruebe que este es un puesto donde puede ser jugador A.",
+    "Demuestrale que te preocupa tanto el encaje para el como el encaje para ti. Es el consejo de Mark Stone, y su razon es que el noventa y nueve por ciento de tus competidores no lo hace: tu seras el unico que se preocupa lo bastante como para mirar si aqui hay algo para el.",
+    "Hablale de la empresa antes que de nada: como dice Gabriel Echavarria, lo primero que tienes que hacer es hablarles de la empresa, y vender la empresa, su vision y su potencial, porque nadie que valga algo va a entrar en una empresa donde no ve potencial de verdad ni un encaje fuerte con sus metas y sus capacidades."
+  ],
+  "resumen_teorico": "Es la primera de las cinco efes y el libro la llama con diferencia el punto mas importante que vender. La razon esta escrita y es simetrica: igual que tu buscas a una persona que pueda ser jugador A en un papel, los mejores candidatos buscan papeles donde ellos puedan ser jugadores A, y cuanto mejor sea el encaje mayor es la probabilidad de exito. Por eso vender el encaje no es adornar el puesto sino enseñarle al candidato lo que el propio metodo A ya te ha enseñado a ti sobre el. Los casos del libro, con su dueño delante y fuera de los pasos: Alec Gores cuenta la vision y adonde van, para que el candidato entre en la formula y todos vayan en el mismo barco; Mark Stone añade que preocuparse por el encaje del candidato es un diferenciador de peso porque casi nadie lo hace; y Gabriel Echavarria, presidente del Consejo Corporativo de la Organizacion Corona, una ceramica colombiana, trabaja el encaje cultural porque su proceso de entrevista y evaluacion ya le da una ventana clara a las metas, fortalezas y valores de sus reclutas y lo que le queda es acompañarlos por el encaje mayor con la empresa y la cultura. Echavarria lleva a los candidatos a Corona y los deja pasearse y conocer a la gente, y no da por hecho que hay encaje hasta que los tres elementos, puesto, empresa y cultura, estan alineados. Ese paseo y esa regla de los tres elementos son suyos y no del lector, asi que se quedan aqui y no en los pasos.",
+  "titulo": "Vender el encaje entre el candidato y la empresa"
+}

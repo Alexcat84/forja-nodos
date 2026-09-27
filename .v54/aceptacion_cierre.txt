@@ -1,0 +1,13 @@
+$ python tests/test_aceptacion.py
+  D.56, la cita del credito es referencia y no resultado: 10 pruebas mas
+  D.56, la cola de doctrina vive en el tablero: 5 pruebas mas
+  D.52, toda tabla del reporte declara su instrumento: 8 pruebas mas
+  D.54, un paso retirado se retira del campo: 7 pruebas mas
+  la exencion del censo es de MOMENTO y no de fichero: 3 pruebas mas
+  D.55, la deuda no bloquea la produccion: 11 pruebas mas
+  D.53 en el codigo: el veredicto y la arista son puertas distintas: 11 pruebas mas
+  D.58, dos regimenes y la cadencia que no depende de nadie: 11 pruebas mas
+  D.59, la cifra derivada la calcula el instrumento: 10 pruebas mas
+
+  total: 339 pruebas, 2 fallos, 0 errores
+========================================================================

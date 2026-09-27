@@ -1,0 +1,14 @@
+filas mias: 70 | suyas: 70 | solo mias: 0 | solo suyas: 0
+pares (mia, suya): {('D', 'T'): 4, ('P', 'T'): 1, ('T', 'P'): 1, ('T', 'T'): 64} | suma: 70
+filas con linea del libro distinta: 0
+filas suyas marcadas DISCUTIBLE: 7
+  contar_cuatro_historias_propias_ver_hueco_intencion  paso  3 | mia D L45 | suya T L45 DISCUTIBLE
+  contar_cuatro_historias_propias_ver_hueco_intencion  paso  8 | mia D L49 | suya T L49 DISCUTIBLE
+  contar_cuatro_historias_propias_ver_hueco_intencion  paso 15 | mia D L55 | suya T L55
+  dar_elogio_disciplina_igual_critica                  paso  8 | mia P L273 | suya T L273
+  dar_elogio_disciplina_igual_critica                  paso 17 | mia T L283 | suya P L283 DISCUTIBLE
+  medir_critica_respuesta_oyente_brujula               paso  4 | mia T L295 | suya T L295 DISCUTIBLE
+  medir_critica_respuesta_oyente_brujula               paso  8 | mia D L297 | suya T L297
+  medir_critica_respuesta_oyente_brujula               paso 11 | mia T L301 | suya T L301 DISCUTIBLE
+  medir_critica_respuesta_oyente_brujula               paso 14 | mia T L305 | suya T L305 DISCUTIBLE
+  medir_critica_respuesta_oyente_brujula               paso 32 | mia T L321 | suya T L321 DISCUTIBLE

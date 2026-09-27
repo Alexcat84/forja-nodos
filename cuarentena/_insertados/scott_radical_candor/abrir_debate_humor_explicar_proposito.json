@@ -1,0 +1,38 @@
+{
+  "id": "abrir_debate_humor_explicar_proposito",
+  "titulo": "Abrir un debate con humor y explicando para que sirve, porque el tono con que se lanza marca el de todo lo que viene detras",
+  "denominaciones": {
+    "nombre_largo": "Usar el humor y pasarlo bien: el equipo copia el humor del jefe, y a quien el debate le parece una agresion hay que explicarle antes para que es",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "use humor and have fun"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando vas a lanzar un debate en tu equipo, y sobre todo cuando hay en la sala gente a la que el acto mismo de debatir le parece agresivo o amenazante.",
+  "entregable_esperado": "Un debate lanzado con un tono que la gente pueda seguir, con el proposito del debate explicado por delante a quien no lo da por supuesto.",
+  "pasos_accionables": [
+    "Cuida el espiritu con el que lanzas el debate, porque el texto dice que suele determinar el tono de todo lo que viene detras.",
+    "Cuenta con que la gente de tu equipo se guia por tu estado de animo hasta un punto casi alarmante, y que cuando tu encuentras la manera de pasartelo bien en un debate, los demas suelen seguirte.",
+    "Usa humor simple, o abre la reunion con una buena historia a tu costa.",
+    "Preocupate mas del tono que transmites y del animo que dejas puesto que de lo que dices exactamente: el texto dice que lo que dices importa menos.",
+    "Cuenta con que no todo el mundo disfruta debatiendo, y que a algunos el acto mismo de debatir les parece agresivo o amenazante, o las dos cosas.",
+    "Da por delante una explicacion clara de para que sirve el debate, y crea un espacio positivo donde pueda ocurrir.",
+    "Conoce lo bastante bien a las personas con las que debates para darte cuenta de cuando las estas volviendo locas sin querer."
+  ],
+  "resumen_teorico": "Sale de fuentes/scott_radical_candor/cap_07.md, lineas 239 a 243, bajo el rotulo Use humor and have fun, y es la cuarta de las tecnicas que el libro ofrece dentro del paso DEBATE de la rueda de hacer cosas. La pieza tiene dos mitades y la segunda es la que la salva de ser un consejo de animo: el caso del colega que durante todo el desarrollo de una clase en Apple creyo que la autora le estaba discutiendo para volverle loco, cuando ella creia estar mejorando la clase con el. De ahi salen los dos ultimos pasos, que son los unicos con inventario duro: explicar por delante para que sirve el debate, y conocer a la gente lo bastante para notar cuando la estas volviendo loca. El caso va NOMBRADO en el resumen y no en los pasos porque el paso que sale de el es general y el libro lo escribe como general (the importance of providing a clear explanation up front). RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 7 pasos, 7 TRANSCRIPCION, 0 PUENTE. P1, P2, P3 y P4 de la linea 241; P5, P6 y P7 de la linea 243. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: que se dice exactamente en esa explicacion previa, a quien se le da y a quien no, y que se hace con quien sigue viviendo el debate como una agresion despues de oirla.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-12"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "atribuciones": []
+}

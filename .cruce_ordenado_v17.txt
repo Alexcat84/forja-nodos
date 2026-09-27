@@ -1,0 +1,24 @@
+aristas del grafo, por par ORDENADO        : 79
+veredictos CONTINUA                        : 79
+
+--- CAMPO VIEJO `arista`, por par ORDENADO ---
+  aristas del grafo sin veredicto          : 12
+  veredictos sin arista en el grafo        : 10
+
+--- CAMPO `arista_corregida` donde existe, por par ORDENADO ---
+  aristas del grafo sin veredicto          : 0
+  veredictos sin arista en el grafo        : 0
+
+--- contraste: CAMPO VIEJO por par NO ordenado (como en la ACTA 16 1.2) ---
+  aristas sin veredicto: 12 | veredictos sin arista: 10
+
+lineas con el campo `arista_corregida`     : 12
+
+=== EL OTRO CRUCE, EL DE LA ACTA 16 1.2: por el par {candidato, vecino} ===
+  aristas del grafo sin veredicto   : 0
+  veredictos sin arista en el grafo : 0
+
+=== POR QUE 12 CONTRA 10: los 12 rotos solo dan 10 cadenas distintas ===
+  registros rotos: 12   cadenas distintas: 10
+     repetida 2x: seleccionar_jugador_cuatro_entrevistas
+     repetida 2x: repartir_papeles_directivo_reclutador

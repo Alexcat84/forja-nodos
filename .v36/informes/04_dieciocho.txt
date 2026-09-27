@@ -1,0 +1,35 @@
+$ python forja.py insertar cuarentena/scott_radical_candor/trazar_plan_dieciocho_meses_aprendizaje.json [veredictos y censos]
+ADUANA DE INSERCION, candidato 'trazar_plan_dieciocho_meses_aprendizaje'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (305 del grafo mas 43 que esperan en bandejas)
+
+DECLARADOS POR LECTURA: 3. Ninguna señal los levanto.
+  conversar_historia_vida_descubrir_motivadores  [Conversar la historia de vida de cada persona a tu cargo para descubrir que la motiva, que es la primera de las tres conversaciones de carrera]
+    señales: familia_id 0.0, paso_contra_nodo 0.471, similitud_texto 0.333
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  conversar_suenios_cruzar_habilidades  [Conversar los suenios de cada persona a tu cargo y cruzarlos con sus habilidades en un cuadro, que es la segunda de las tres conversaciones de carrera]
+    señales: familia_id 0.0, paso_contra_nodo 0.444, similitud_texto 0.335
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  desplegar_tres_conversaciones_carrera  [Desplegar con tu equipo la serie de tres conversaciones de carrera, con su cadencia y su encargo de ensenarlas a tus jefes]
+    señales: familia_id 0.0, paso_contra_nodo 0.477, similitud_texto 0.234
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  LA JERARQUIA LA CAZA LA LECTURA, NO LA SEÑAL (D.19, D.29).
+
+VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino calibrar_decision_despido_documentarla  [Calibrar la decision de despido con tu jefe, tus iguales y recursos humanos, y documentarla haciendo que alguien con experiencia edite lo que escribes]
+    levantada por: similitud_texto
+    similitud_texto    0.371 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.437 (umbral 0.60)
+    paso 12 del candidato contra paso 12 de calibrar_decision_despido_documentarla
+  arista madre-hijo cableada y escrita RESUELTA: desplegar_tres_conversaciones_carrera > trazar_plan_dieciocho_meses_aprendizaje
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 306
+  censos escritos: denominaciones, series_y_cabezas
+  veredictos en bitacora/VEREDICTOS.jsonl: 4
+CODIGO DE SALIDA: 0
+  ARCHIVADO EN EL MISMO ACTO (D.31): cuarentena/_insertados/scott_radical_candor/trazar_plan_dieciocho_meses_aprendizaje.json

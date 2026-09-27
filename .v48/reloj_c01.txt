@@ -1,0 +1,9 @@
+    $ time python forja.py informe cuarentena/grove_high_output/usar_calendario_herramienta_planificacion_produccion.json
+
+
+real	13m56.743s
+user	0m0.030s
+sys	0m0.031s
+codigo=0
+codigo=0
+segundos=837   (derivado por .v47/seg.py de la linea real de time, que es el instrumento)

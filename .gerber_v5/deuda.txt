@@ -1,0 +1,46 @@
+DEUDA DE LA LINEA (D.55): la deuda no bloquea la produccion
+  registro: docs/loop/DEUDA.jsonl
+  pendientes: 38    pagadas: 33
+
+  id     vuelta  especie            que
+  --------------------------------------------------------------------------------------------
+  d005   grove v2 relevo de grove    De los 15 candidatos de cap_03 de grove, su aduana e
+  d006   41      relectura          cap_13 entero esta en 4 de 212, el 1,89 por ciento, 
+  d009   42      deuda              scripts/tabla_de_cierre.py mide la tabla de cierre c
+  d012   43      deuda              SEGUNDO EJEMPLAR MEDIDO de la pregunta 9 de la cola 
+  d020   44      maquinaria         src/arista.py linea 182 teclea veredicto CONTINUA en
+  d022   44      maquinaria         scripts/tabla_de_cierre.py localiza la tabla por la 
+  d028   46      maquinaria         src/tablero.py:214 publica en capitulos_minados los 
+  d029   46      maquinaria         El tallado de D.41 casa las filas por su primera cel
+  d030   47      maquinaria         scripts/tabla_de_cierre.py --escribir escribe SIEMPR
+  d031   47      aduana             RETOCAR UNA LINEA DE UN resumen_teorico EN CUARENTEN
+  d037   49      maquinaria         LA PUERTA DE D.39 NO TIENE CASO ROJO AUTOMATICO: gre
+  d053   51      relectura          P12 (fijar_duracion_lugar_reunion_individual) ES UN 
+  d056   52      relectura          LA COLA DE LECTURA DE LA TANDA 52 SE MOVIO DESPUES D
+  d058   53      aduana             LA SENIAL 1 COMPARA MI PROSA, NO LOS PASOS DEL LIBRO
+  d072   54      aduana             UN PAR REAL QUE NINGUNA SENIAL LEVANTA POR NINGUNO D
+  d077   58      aduana             LA TANDA 58 ESCRIBIO SUS SIETE FICHAS EN UN LOTE DE 
+  d078   58      relectura          responder_primer_aviso_renuncia_subordinado TRAE P3 
+  d084   59      relectura          d006 se pago sobre un 154 rancio. El libro mayor de 
+  d085   59      deuda              La declaracion deuda.py --saneamiento --vuelta N no 
+  d086   59      maquinaria         Un python forja.py informe --carpeta lanzado en la v
+  d087   59      relectura          El reloj de un python forja.py informe tiene dos med
+  d088   60      deuda              El campo capitulos_minados de docs/loop/TABLERO.json
+  d089   60      deuda              La vuelta 60 corrio la aduana del candidato 1 segun 
+  d090   61      deuda              La senial de la aduana es ASIMETRICA y paso_contra_n
+  d091   61      deuda              d077 tiene hoy su prueba mas limpia, y se anota como
+  d092   62      deuda              La aduana es DETERMINISTA y ahora esta probado con l
+  d093   62      deuda              Saber que candidatos de una bandeja YA tienen salida
+  d094   2       hueco conocido     cap_01, cap_02 y cap_03 de gerber_emyth siguen sin m
+  d096   3       deuda              SEGUNDO EJEMPLAR DE d088, EN UN LIBRO DISTINTO: capi
+  d097   3       deuda              LA CADENCIA DE SANEAMIENTO DE D.58 NO TIENE ARITMETI
+  d098   3       relectura          EL PUNTERO D.37 DE gerber_emyth, ESCRITO PARA QUE NO
+  d099   3       relectura          DONDE NACE EL NODO DE LA DELEGACION DE gerber_emyth,
+  d102   3       deuda              TERCER EJEMPLAR DE LA FAMILIA d088/d096: la fila de 
+  d103   3       deuda              EL BLOQUE PEGADO DE python forja.py gate SE CORTA EN
+  d104   3       relectura          PUNTERO D.37 DE cap_12: L21 nombra Innovation, Quant
+  d106   4       deuda              EL TABLERO INVENTA UN CAPITULO MINADO (cuarto ejempl
+  d107   4       deuda              LA VUELTA CIERRA CON UN PAR SIN LEER, POR EL ORDEN D
+  d108   4       deuda              RELEER cap_14 L27 CONTRA L117 CON LAS DOS DELANTE, E
+
+  ultima vuelta de saneamiento: ninguna todavia

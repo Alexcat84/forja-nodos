@@ -1,0 +1,4 @@
+filas dirigidas por sede: {'bandeja': 44, 'grafo': 10} | suma: 54
+las de bandeja: {'de las 22': 44} | suma: 44
+vecinos del grafo por veces: {'responder_primer_aviso_renuncia_subordinado': 4, 'entregar_evaluacion_desempeno_tres_claves': 2, 'recorrer_trece_elementos_proceso_evaluacion_formal': 1, 'pedir_critica_anonima_curso_entrenamiento_dictado': 1, 'descubrir_motivacion_sentido_persona': 1, 'planificar_tres_pasos_demanda_estado_brecha': 1} | suma: 10
+candidatos sin vecinos: ['aplicar_ocho_reglas_juego_personas', 'fingir_prototipo_cinco_mil_replicas'] | filas dirigidas con similitud_texto > 0,4: 13 | del grafo levantadas solo por la senial 3: ['descubrir_motivacion_sentido_persona']

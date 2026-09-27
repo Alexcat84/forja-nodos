@@ -1,0 +1,42 @@
+$ git show 08eb797:.v68ext/veredictos_listos.txt | grep -n "|CONTINUA|madre=usar_tres_clases" | cut -c1-110
+20:fijar_duracion_lugar_reunion_individual|CONTINUA|madre=usar_tres_clases_reunion_proceso|El vecino despliega
+21:preparar_guion_reunion_individual_subordinado|CONTINUA|madre=usar_tres_clases_reunion_proceso|El vecino des
+22:cubrir_indicadores_problemas_reunion_individual|CONTINUA|madre=usar_tres_clases_reunion_proceso|El vecino d
+23:fijar_frecuencia_reunion_individual_madurez_tarea|CONTINUA|madre=usar_tres_clases_reunion_proceso|El vecino
+31:usar_tres_clases_reunion_proceso|CONTINUA|madre=usar_tres_clases_reunion_proceso|El mismo par que la cabeza
+39:usar_tres_clases_reunion_proceso|CONTINUA|madre=usar_tres_clases_reunion_proceso|El mismo par que la cabeza
+49:usar_tres_clases_reunion_proceso|CONTINUA|madre=usar_tres_clases_reunion_proceso|El mismo par que la cabeza
+57:usar_tres_clases_reunion_proceso|CONTINUA|madre=usar_tres_clases_reunion_proceso|El mismo par que la cabeza
+$ git show 08eb797:.v68ext/veredictos_listos.txt | grep -n "^## " | cut -c1-80
+11:## infundir_regularidad_reunion_proceso
+18:## usar_tres_clases_reunion_proceso
+25:## fijar_frecuencia_reunion_individual_madurez_tarea
+33:## fijar_duracion_lugar_reunion_individual
+42:## preparar_guion_reunion_individual_subordinado
+53:## cubrir_indicadores_problemas_reunion_individual
+61:## facilitar_expresion_subordinado_pregunta_mas
+71:## tomar_notas_copia_guion_reunion_individual
+80:## acumular_asuntos_importantes_fichero_espera
+88:## alentar_asuntos_corazon_vigilar_final_reunion
+97:## conducir_reunion_individual_telefono_distancia
+105:## programar_reunion_individual_cadena
+114:## conducir_etapas_modelo_ideal_decision
+116:## decidir_nivel_competente_inferior
+121:## vencer_sindrome_grupo_pares_autoconfianza
+136:## tomar_mando_reunion_pares_presidente_ausente
+142:## ejercer_poder_posicion_etapa_decision_clara
+146:## cortar_discusion_libre_momento_justo
+154:## zanjar_seis_preguntas_decision_adelantado
+158:## anunciar_decision_inesperada_reconvocar_reunion
+$ git diff --stat 0715b58 3721928 -- .v68ext/
+ .v68ext/aristas_lectura.txt   | 28 ++++++++++++++++++++-----
+ .v68ext/veredictos_listos.txt | 48 ++++++++++++++++++++++++++++---------------
+ 2 files changed, 55 insertions(+), 21 deletions(-)
+$ git diff --stat 3721928 HEAD -- .v68ext/ | wc -l
+0
+$ grep -c "^SOSTENGO" .v68ext/aristas_lectura.txt; grep -c "^NO SOSTENGO" .v68ext/aristas_lectura.txt
+5
+9
+$ grep -c "^# vuelta 69" .v68ext/veredictos_listos.txt .v68ext/aristas_lectura.txt
+.v68ext/veredictos_listos.txt:16
+.v68ext/aristas_lectura.txt:7

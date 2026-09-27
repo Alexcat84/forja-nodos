@@ -1,0 +1,7 @@
+$ sed -n "61p;75p" scripts/cerrar_reporte.py   (el estado ANTES, citado por la ACTA 27 5.3.a)
+            ("vigencia de los veredictos", [sys.executable, "forja.py", "rancios"]),
+        print("CIERRE EN ROJO. No pasa: %s" % ", ".join(caidos))
+
+$ HOY, tras la correccion declarada:
+89:        print("[cierre] vigencia de los veredictos (D.15): COLA DE TRABAJO, no guarda")
+101:        print("CIERRE EN ROJO. No pasa: %s" % ", ".join(caidos))

@@ -1,0 +1,42 @@
+usar_banco_nueve_preguntas_entrevista|1|T|L39|Describe some projects that were highly regarded by your management, especially by the levels above your immediate supervisor.
+usar_banco_nueve_preguntas_entrevista|2|T|L41|What are your weaknesses? How are you working to eliminate them?
+usar_banco_nueve_preguntas_entrevista|3|T|L43|Convince me why my company should hire you.
+usar_banco_nueve_preguntas_entrevista|4|T|L45|What are some of the problems you are encountering in your current position? How are you going about solving them? What could you have done to prevent them from cropping up?
+usar_banco_nueve_preguntas_entrevista|5|T|L47|Why do you think you're ready for this new job?
+usar_banco_nueve_preguntas_entrevista|6|T|L49|What do you consider your most significant achievements? Why were they important to you?
+usar_banco_nueve_preguntas_entrevista|7|T|L51|What do you consider your most significant failures? What did you learn from them?
+usar_banco_nueve_preguntas_entrevista|8|T|L53|Why do you think an engineer should be chosen for a marketing position? (Vary this one according to the situation.)
+usar_banco_nueve_preguntas_entrevista|9|T|L55|What was the most important course or project you completed in your college career? Why was it so important?
+responder_primer_aviso_renuncia_subordinado|1|T|L111|Drop what you are doing. (y L109: you mumble something back about talking things over later ... If you do not deal with the situation right at the first mention, you'll confirm his feelings)
+responder_primer_aviso_renuncia_subordinado|2|T|L111|Sit him down and ask him why he is quitting.
+responder_primer_aviso_renuncia_subordinado|3|T|L111|Let him talk, don't argue about anything with him. ... all his reasons for wanting to leave (they won't be good ones)
+responder_primer_aviso_renuncia_subordinado|4|T|L111|After he's finished going through all his reasons for wanting to leave ..., ask him more questions. Make him talk, because after the prepared points are delivered, the real issues may come out.
+responder_primer_aviso_renuncia_subordinado|5|T|L111|Don't argue, don't lecture, and don't panic. Remember, this is only the opening skirmish, not the war. (d078: el no discutas de este paso y el del paso 3 son el libro diciendolo dos veces en la misma linea)
+responder_primer_aviso_renuncia_subordinado|6|T|L111|Don't try to change his mind at this point, but buy time. After he's said all he has to say, ask for whatever time you feel is necessary to prepare yourself for the next round.
+responder_primer_aviso_renuncia_subordinado|7|T|L111|But know that you must follow through on whatever you've committed yourself to do.
+gestionar_retencion_subordinado_valioso_renuncia|1|T|L113|you go to your supervisor for help and advice. ... He, like you, will try to put things off ... It is up to you to make it your supervisor's problem and make him participate in the solution to your problem.
+gestionar_retencion_subordinado_valioso_renuncia|2|T|L115|You now must vigorously pursue every avenue available to you to keep him with the firm, even if it means transferring him to another department.
+gestionar_retencion_subordinado_valioso_renuncia|3|T|L115|If it seems that is the likely solution, you must become the project manager of that solution until the whole thing is settled.
+gestionar_retencion_subordinado_valioso_renuncia|4|T|L117|go back to your subordinate with a solution, one that addresses his real reasons for wanting to quit and one that in turn will benefit the company.
+gestionar_retencion_subordinado_valioso_renuncia|5|T|L119|You now have to make him feel comfortable with the new arrangement. You might say something like, You did not blackmail us into doing anything we shouldn't have done anyway. When you almost quit, you shook us up and made us aware of the error of our ways. We are just doing what we should have done without any of this happening.
+gestionar_retencion_subordinado_valioso_renuncia|6|D|L121|You say he's really made two commitments: first to a potential employer he only vaguely knows, and second to you, his present employer. And commitments he has made to the people he has been working with daily are far stronger than one made to a casual new acquaintance. DUDA: el paso junta en el segundo compromiso a ti y a la gente con la que trabaja a diario, que el libro pone en dos frases, y dice que el segundo pesa mas donde el libro compara los de la gente con el del conocido nuevo; me inclino a T, porque es la misma comparacion leida de corrido
+reciclar_empleado_ascendido_mas_alla_capacidad|1|T|L49|People tend to view it as a personal failure. In fact, management was at fault for misjudging the employee's readiness for more responsibility. Usually the person who was promoted beyond his capability is forced to leave the company ... management ought to face up to its own error in judgment
+reciclar_empleado_ascendido_mas_alla_capacidad|2|T|L49|put him back into the job he did well before he was promoted ... I think it is dead wrong to force someone in such circumstances out of the company. Instead, ... take forthright and deliberate steps to place the person into a job he can do.
+reciclar_empleado_ascendido_mas_alla_capacidad|3|T|L49|Management should also support the employee in the face of the embarrassment that he is likely to feel.
+reciclar_empleado_ascendido_mas_alla_capacidad|4|T|L49|If recycling is done openly, all will be pleasantly surprised how short-lived that embarrassment will be.
+priorizar_lista_entrenamiento_subordinados|1|T|L49|make a list of the things you feel your subordinates or the members of your department should be trained in. Don't limit the scope of your list.
+priorizar_lista_entrenamiento_subordinados|2|T|L49|Items should range from what seems simple (training the person who takes calls at the restaurant) to loftier and more general things like the objectives and value systems of your department, your plant, and your company.
+priorizar_lista_entrenamiento_subordinados|3|T|L49|Ask the people working for you what they feel they need. They are likely to surprise you by telling you of needs you never knew existed.
+priorizar_lista_entrenamiento_subordinados|4|T|L51|Having done this, take an inventory of the manager-teachers and instructional materials available to help deliver training on items on your list. (el texto de la ficha dice los mando maestros, que es manager-teachers mal concordado; no es puente)
+priorizar_lista_entrenamiento_subordinados|5|T|L51|Then assign priorities among these items.
+desarrollar_primer_curso_entrenamiento|1|T|L53|start very unambitiously, like developing one short course (three to four lectures) on the most urgent subject.
+desarrollar_primer_curso_entrenamiento|2|T|L55|To avoid letting yourself bog down in the difficult task of course preparation, set a schedule for your course, with deadlines, and commit yourself to it.
+desarrollar_primer_curso_entrenamiento|3|T|L55|Create an outline for the whole course
+desarrollar_primer_curso_entrenamiento|4|T|L55|develop just the first lecture, and go.
+desarrollar_primer_curso_entrenamiento|5|T|L57|Develop the second lecture after you have given the first.
+desarrollar_primer_curso_entrenamiento|6|T|L57|Regard the first time you teach the course as a throwaway ... teach this course to the more knowledgeable of your subordinates, who won't be confused by it but who will help you perfect the course through interaction and critique.
+desarrollar_primer_curso_entrenamiento|7|T|L59|ask yourself one final question: Will you be able to teach all members of your organization yourself? ... If your organization is large enough to require many repetitions of your course before different audiences, then set yourself up to train a few instructors with your first set of lectures.
+pedir_critica_anonima_curso_entrenamiento_dictado|1|T|L61|After you've given the course, ask for anonymous critiques from the employees in your class.
+pedir_critica_anonima_curso_entrenamiento_dictado|2|T|L61|Prompt them with a form that asks for numerical ratings but that also poses some open-ended questions.
+pedir_critica_anonima_curso_entrenamiento_dictado|3|T|L61|Study and consider the responses, but understand that you will never be able to please all members of your class
+pedir_critica_anonima_curso_entrenamiento_dictado|4|T|L61|Your ultimate aim should be to satisfy yourself that you are accomplishing what you set out to do.

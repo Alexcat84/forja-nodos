@@ -1,0 +1,55 @@
+==============================================================================
+1. LA COMPROBACION, ANTES DE LA TABLA
+==============================================================================
+tramos que dan nodo                    : 6
+tramos de resto                        : 3
+lineas con contenido de L8 en adelante : 128
+lineas NO cubiertas                    : 0  []
+SOLAPES                                : 0  []
+suma de las filas                      : 8976 palabras
+cuerpo medido aparte (sed 8,$ | wc -w) : 8976 palabras
+IGUALES                                : True
+
+==============================================================================
+2. LA TABLA DE LOS SEIS TRAMOS, IMPRESA Y NO TECLEADA
+==============================================================================
+| tramo | palabras | nodos | que es | la salida, pegada |
+|---|---:|---:|---|---|
+| `L47 a L87` | 1862 | **3** | las tres conversaciones de carrera | `47:Conversation one: life story` |
+| `L93 a L125` | 1095 | **1** | el plan anual de gestion del crecimiento | `93:GROWTH MANAGEMENT` |
+| `L127 a L163` | 1501 | **1** | el proceso de contratacion, con el acto de L129 dentro | `127:HIRING: YOUR MENTALITY AND YOUR PROCESS` |
+| `L165 a L201` | 1372 | **5** | despedir: cabeza, tres partes y coda | `165:FIRING` |
+| `L203 a L223` | 638 | **1** | la calibracion de ascensos, con el caso de Google dentro | `203:PROMOTIONS` |
+| `L225 a L251` | 568 | **2** | recompensar sin ascender | `225:REWARD YOUR ROCK STARS` |
+| | **7036** | **13** | **los seis tramos que dan nodo** | |
+
+| tramo de resto | palabras | nodos | por que no |
+|---|---:|---:|---|
+| `L9 a L45` | 1641 | **0** | subtitulo, entrada, rotulos y EL CASO DE RUSS LARAWAY |
+| `L89 a L91` | 101 | **0** | cierre de seccion que remite a una web y a un libro de otro |
+| `L253 a L263` | 198 | **0** | el cuadro que no esta en el recorte, el resumen y la cabecera del cap siguiente |
+| | **1940** | **0** | |
+
+==============================================================================
+3. LOS TRECE CANDIDATOS ESCRITOS HOY, CON SUS PASOS CONTADOS DEL FICHERO
+==============================================================================
+| # | pieza | id | pasos | atribuciones |
+|---:|---|---|---:|---:|
+| 1 | `P7` | `conversar_historia_vida_descubrir_motivadores` | **15** | 0 |
+| 2 | `P8` | `conversar_suenios_cruzar_habilidades` | **15** | 0 |
+| 3 | `P9` | `trazar_plan_dieciocho_meses_aprendizaje` | **14** | 0 |
+| 4 | `P13 a P17` | `armar_plan_anual_crecimiento_equipo` | **29** | 0 |
+| 5 | `P19 y P21` | `montar_proceso_contratacion_reducir_sesgo` | **32** | 2 |
+| 6 | `P24` | `facilitar_despido_tres_cosas` | **11** | 0 |
+| 7 | `P25` | `admitir_pronto_mal_desempenio_cuatro_razones` | **9** | 0 |
+| 8 | `P26` | `calibrar_decision_despido_documentarla` | **13** | 0 |
+| 9 | `P27` | `sopesar_consejo_legal_despedir_humildad` | **8** | 0 |
+| 10 | `P28` | `contactar_despedido_mes_despues` | **6** | 0 |
+| 11 | `P30` | `calibrar_ascensos_evitar_politica` | **19** | 1 |
+| 12 | `P33` | `evitar_obsesion_ascenso_estatus` | **10** | 0 |
+| 13 | `P34 a P36` | `reconocer_excelencia_trayectoria_gradual` | **13** | 1 |
+| | | **trece candidatos** | **194** | |
+
+candidatos de cap_10 escritos  : 13
+pasos de cap_10                : 194
+bandeja del lote 4 ahora       : 96

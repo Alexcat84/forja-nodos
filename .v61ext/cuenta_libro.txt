@@ -1,0 +1,8 @@
+capitulos del libro grove_high_output: 18
+candidatos en la bandeja de cuarentena: 91
+pasos accionables sumados en la bandeja: 636
+candidatos ya insertados en el dataset: 1
+  revisar_tres_preguntas_valor_carrera: 7 pasos
+pasos accionables sumados en los insertados: 7
+total candidatos cosechados del libro (bandeja + insertados): 92
+total pasos accionables cosechados del libro: 643

@@ -1,0 +1,72 @@
+fila 13, construir_indicador_tendencia_patron, lineas --veredicto: 6
+  --veredicto construir_grafico_escalonado_pronosticos|SANO|El mismo par que el candidato escalonado lee desde su lado: dos ventanas que L91 contrasta. El candidato mide la salida real contra el tiempo y contra un patron (pasos 3 y 4); el vecino compara pronosticos sucesivos entre si y con el real (pasos 2, 4 y 7). Ninguno despliega una linea del otro (DISCUTIBLE D64.5).
+  --veredicto archivar_indicadores_resolver_problemas|SANO|El mismo par que el archivo lee desde su lado. El candidato monta una ventana, la salida contra el tiempo y contra un patron (L89); el vecino guarda todos los indicadores y los repasa cuando algo falla (L99). Comparten indicadores y norma como palabras, no un paso.
+  --veredicto emparejar_indicadores_efecto_contraefecto|SANO|Comparten vocabulario de indicadores, no procedimiento. El candidato mide una salida contra el tiempo y contra un patron y extrapola (pasos 3 a 6, L89); el vecino empareja cada indicador con el de su contraefecto y vigila los dos (pasos 4 a 6, L31). Ninguno despliega una linea del otro.
+  --veredicto dimensionar_plantilla_administrativa_pronostico|CONTINUA|madre=construir_indicador_tendencia_patron|El paso 2 del vecino, deduce de los datos de tendencia unos patrones de hecho, usa el producto de este candidato, la salida medida contra el tiempo en una serie de meses (pasos 2 y 3, L89), y L125 lo dice con esas palabras (de facto standards, inferred from the trend data). El vecino anade procedimiento que la madre no tiene: pronosticar con esos patrones la gente necesaria, reasignar entre areas, casar la plantilla con el crecimiento o el descenso pronosticado, y el rigor contra la ley de Parkinson (pasos 3 a 7). Es dependencia de proceso como el ejemplar de D.29, no repeticion. Arista por lectura de d141 que la senial levanta HOY tras la correccion de esta ficha.
+  --veredicto equilibrar_capacidad_personal_inventario_plazo|SANO|Ajenos: el vecino intercambia equipo, personal e inventario contra el plazo de entrega (cap_02 L57 a L61); el candidato mide la salida contra el tiempo y contra un patron (cap_03 L89). La senial sale de palabras comunes como salida, coste y mes. VECINO NUEVO de la matriz de los 22, tras la correccion de esta ficha.
+  --veredicto elegir_indicador_salida_trabajo_administrativo|SANO|El mismo par que el indicador administrativo lee desde su lado: los comprobantes tramitados son aqui un ejemplo de salida y alli una fila de su tabla, y ninguno usa el procedimiento del otro. VECINO NUEVO de la matriz de los 22.
+inicio 2026-09-23 16:30:25
+======================================================================
+ADUANA DE INSERCION, candidato 'construir_indicador_tendencia_patron'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 462   (358 del grafo mas 104 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 6. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino construir_grafico_escalonado_pronosticos  [Construir el grafico escalonado que pone cada pronostico nuevo junto a los anteriores]
+    levantada por: similitud_texto
+    similitud_texto    0.362 (umbral 0.35)
+    familia_id         0.143 (umbral 0.30)
+    paso_contra_nodo   0.461 (umbral 0.60)
+    paso 5 del candidato contra paso 4 de construir_grafico_escalonado_pronosticos
+
+  vecino emparejar_indicadores_efecto_contraefecto  [Emparejar cada indicador con otro que mida su contraefecto, para no pasarse de frenada]
+    levantada por: similitud_texto
+    similitud_texto    0.393 (umbral 0.35)
+    familia_id         0.143 (umbral 0.30)
+    paso_contra_nodo   0.427 (umbral 0.60)
+    paso 5 del candidato contra paso 2 de emparejar_indicadores_efecto_contraefecto
+
+  vecino archivar_indicadores_resolver_problemas  [Mantener un archivo de indicadores para poder repasarlos el dia que algo vaya mal]
+    levantada por: similitud_texto
+    similitud_texto    0.365 (umbral 0.35)
+    familia_id         0.143 (umbral 0.30)
+    paso_contra_nodo   0.427 (umbral 0.60)
+    paso 2 del candidato contra paso 1 de archivar_indicadores_resolver_problemas
+
+  vecino equilibrar_capacidad_personal_inventario_plazo  [Equilibrar capacidad de equipo, personal e inventario contra el plazo de entrega]
+    levantada por: similitud_texto
+    similitud_texto    0.353 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.424 (umbral 0.60)
+    paso 1 del candidato contra paso 4 de equilibrar_capacidad_personal_inventario_plazo
+
+  vecino dimensionar_plantilla_administrativa_pronostico  [Dimensionar la plantilla de una unidad administrativa con el pronostico de su carga de trabajo]
+    levantada por: similitud_texto
+    similitud_texto    0.373 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.405 (umbral 0.60)
+    paso 5 del candidato contra paso 6 de dimensionar_plantilla_administrativa_pronostico
+
+  vecino elegir_indicador_salida_trabajo_administrativo  [Elegir el indicador de una unidad administrativa con las dos varas del libro y emparejarlo con uno de calidad]
+    levantada por: similitud_texto
+    similitud_texto    0.378 (umbral 0.35)
+    familia_id         0.125 (umbral 0.30)
+    paso_contra_nodo   0.378 (umbral 0.60)
+    paso 5 del candidato contra paso 3 de elegir_indicador_salida_trabajo_administrativo
+  ARISTA EN COLA, no cableada: construir_indicador_tendencia_patron > dimensionar_plantilla_administrativa_pronostico
+    el otro extremo espera en la bandeja (D.29). El veredicto CONTINUA queda escrito y la arista se cablea cuando entre:
+      python forja.py arista --madre construir_indicador_tendencia_patron --hijo dimensionar_plantilla_administrativa_pronostico --paso <n> --razon "..."
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 359
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 6
+  ARISTAS EN COLA, sin cablear: 1
+    construir_indicador_tendencia_patron > dimensionar_plantilla_administrativa_pronostico
+    D.29: van a un bloque propio y titulado del reporte, y se cablean con `forja.py arista` cuando el otro extremo entre.
+
+======================================================================
+fin 2026-09-23 16:49:24 | codigo de salida 0 | 1138.9 s

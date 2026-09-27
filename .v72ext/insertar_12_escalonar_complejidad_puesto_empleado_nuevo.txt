@@ -1,0 +1,13 @@
+fila 12, escalonar_complejidad_puesto_empleado_nuevo, lineas --veredicto: 0
+inicio 2026-09-25 23:27:07
+======================================================================
+ADUANA DE INSERCION, candidato 'escalonar_complejidad_puesto_empleado_nuevo'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (421 del grafo mas 58 que esperan en bandejas)
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 422
+  censos escritos: denominaciones
+
+======================================================================
+fin 2026-09-25 23:38:12 | codigo de salida 0 | 665.2 s

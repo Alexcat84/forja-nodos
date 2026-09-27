@@ -1,0 +1,22 @@
+| pieza | valor | de donde sale |
+|---|---|---|
+| rama | `extraccion-mundo-11` | `git rev-parse --abbrev-ref HEAD` |
+| commit que abrio mi turno | `bc5dae4`, 2026-09-17 06:39:59 | `git log` |
+| commit al escribir este bloque | `bcd3693`, 2026-09-17 07:50:57 | `git log` |
+| commits en la ventana de mi turno | **12** | `git log` |
+| de ellos, MIOS | **9** | el asunto empieza por `V.33` o por la apertura |
+| de ellos, **de la otra sesion viva** | **3** | `Z.4` |
+
+LA VENTANA ENTERA, DEL PRIMERO AL ULTIMO. `>` marca los que NO son mios:
+  bc5dae4  2026-09-17 06:39:59  Apertura de la vuelta 33: el esqueleto del reporte abierto antes de la primera tarea
+  2edae47  2026-09-17 06:47:33  V.33 TAREA 1: la fecha que un acto se escribio a si mismo, corregida por D.13 en las dos sed
+> 783acee  2026-09-17 07:03:03  D.49 y D.50, EL TABLERO DE FRENTES Y EL RELEVO: nace docs/loop/TABLERO.jsonl como sede unica
+  cc181f3  2026-09-17 07:03:42  V.33 TAREA 3: cap_08 releido paso a paso contra su parrafo, 0 de 102 PASOS INVENTADOS con la
+> c240720  2026-09-17 07:08:17  D.49, LA GUARDA DEL TABLERO AL ABRIR VUELTA: el encargo DECLARA su libro y el arnes lo pasa 
+  d39c37b  2026-09-17 07:14:54  V.33 TAREA 2 (1 de 2): entran los seis primeros de cap_08 por el orden del libro, con los tr
+  bf413c2  2026-09-17 07:22:01  V.33 TAREA 2 (2 de 3): entra construir_confianza_equipo_tiempo_solas con sus tres veredictos
+  504cd38  2026-09-17 07:28:04  V.33 TAREA 2 (3 de 4): entra vivir_valores_propios_evitar_listarlos con su veredicto, un hom
+> 1954005  2026-09-17 07:29:43  CAIDA DE DATO DECLARADA Y REPARADA: el cerrojo de insercion estaba entrando en git, y mi tra
+  dd52033  2026-09-17 07:37:20  V.33 D.31: archivados en _insertados los diez de cap_08 que ya viven en el grafo. El lote pa
+  3ef609b  2026-09-17 07:46:51  V.33 TAREA 2 (4 de 4): cap_08 CIERRA EN INSERCION, 12 de 12, con sus cuatro veredictos final
+  bcd3693  2026-09-17 07:50:57  V.33: anexado el bloque de la TAREA 2 y la PARADA de los commits que se llevaron trabajo de 

@@ -1,0 +1,41 @@
+umbrales de esta corrida: {"dominios_nucleo": [], "maximo_vecinos_reportados": 25, "solo_dominio_y_nucleo": false, "umbral_familia_id": 0.3, "umbral_paso_contra_nodo": 0.6, "umbral_similitud_texto": 0.35}
+
+| candidato | vecino | similitud_texto | familia_id | paso_contra_nodo | la levanta alguna? |
+|---|---|---:|---:|---:|---|
+| `reconocer_excelencia_trayectoria_gradual` | `reconocer_recompensar_gente_estable` | 0.257 | 0.143 | 0.472 | NO, ninguna |
+| `sopesar_consejo_legal_despedir_humildad` | `despedir_persona_franqueza_radical` | 0.228 | 0.125 | 0.442 | NO, ninguna |
+| `admitir_pronto_mal_desempenio_cuatro_razones` | `decidir_momento_despedir_persona` | 0.225 | 0.0 | 0.505 | NO, ninguna |
+| `armar_plan_anual_crecimiento_equipo` | `cambiar_potencial_trayectoria_crecimiento` | 0.198 | 0.125 | 0.597 | NO, ninguna |
+| `evitar_obsesion_ascenso_estatus` | `elogiar_publico_criticar_privado_sus_tres_matices` | 0.324 | 0.0 | 0.439 | NO, ninguna |
+| `conversar_historia_vida_descubrir_motivadores` | `descubrir_motivacion_sentido_persona` | 0.175 | 0.125 | 0.453 | NO, ninguna |
+
+reconocer_excelencia_trayectoria_gradual contra reconocer_recompensar_gente_estable   (EL PAR DE LA LUPA, adjudicado por la decision 3 del fundador)
+  senales      : {"familia_id": 0.143, "paso_contra_nodo": 0.472, "similitud_texto": 0.257}
+  levantada_por: ninguna
+  detalle_paso : "paso 10 del candidato contra paso 9 de reconocer_recompensar_gente_estable"
+
+sopesar_consejo_legal_despedir_humildad contra despedir_persona_franqueza_radical   (par que levanto MI lectura, no el encargo)
+  senales      : {"familia_id": 0.125, "paso_contra_nodo": 0.442, "similitud_texto": 0.228}
+  levantada_por: ninguna
+  detalle_paso : "paso 7 del candidato contra paso 1 de despedir_persona_franqueza_radical"
+
+admitir_pronto_mal_desempenio_cuatro_razones contra decidir_momento_despedir_persona   (par que levanto MI lectura, no el encargo)
+  senales      : {"familia_id": 0.0, "paso_contra_nodo": 0.505, "similitud_texto": 0.225}
+  levantada_por: ninguna
+  detalle_paso : "paso 5 del candidato contra paso 2 de decidir_momento_despedir_persona"
+
+armar_plan_anual_crecimiento_equipo contra cambiar_potencial_trayectoria_crecimiento   (par que levanto MI lectura, no el encargo)
+  senales      : {"familia_id": 0.125, "paso_contra_nodo": 0.597, "similitud_texto": 0.198}
+  levantada_por: ninguna
+  detalle_paso : "paso 2 del candidato contra paso 4 de cambiar_potencial_trayectoria_crecimiento"
+
+evitar_obsesion_ascenso_estatus contra elogiar_publico_criticar_privado_sus_tres_matices   (par que levanto MI lectura, no el encargo)
+  senales      : {"familia_id": 0.0, "paso_contra_nodo": 0.439, "similitud_texto": 0.324}
+  levantada_por: ninguna
+  detalle_paso : "paso 8 del candidato contra paso 2 de elogiar_publico_criticar_privado_sus_tres_matices"
+
+conversar_historia_vida_descubrir_motivadores contra descubrir_motivacion_sentido_persona   (par que levanto MI lectura, no el encargo)
+  senales      : {"familia_id": 0.125, "paso_contra_nodo": 0.453, "similitud_texto": 0.175}
+  levantada_por: ninguna
+  detalle_paso : "paso 13 del candidato contra paso 10 de descubrir_motivacion_sentido_persona"
+

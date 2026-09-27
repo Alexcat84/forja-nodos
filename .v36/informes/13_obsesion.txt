@@ -1,0 +1,34 @@
+$ python forja.py insertar cuarentena/scott_radical_candor/evitar_obsesion_ascenso_estatus.json [veredictos y censos]
+ADUANA DE INSERCION, candidato 'evitar_obsesion_ascenso_estatus'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (314 del grafo mas 34 que esperan en bandejas)
+
+DECLARADOS POR LECTURA: 1. Ninguna señal los levanto.
+  desplegar_plan_orden_operaciones_franqueza_radical  [Desplegar en tu equipo el plan de franqueza radical por el orden de operaciones que el texto pone, etapa a etapa y con su parada de evaluacion en medio]
+    señales: familia_id 0.0, paso_contra_nodo 0.429, similitud_texto 0.136
+    umbrales: similitud 0.35, familia 0.30, paso 0.60
+  LA JERARQUIA LA CAZA LA LECTURA, NO LA SEÑAL (D.19, D.29).
+
+VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino calibrar_ascensos_evitar_politica  [Calibrar los ascensos con tus iguales y conducir esa reunion sin que la politica la arruine, con los consejos que el texto da]
+    levantada por: familia_id
+    similitud_texto    0.260 (umbral 0.35)
+    familia_id         0.333 (umbral 0.30)
+    paso_contra_nodo   0.413 (umbral 0.60)
+    paso 10 del candidato contra paso 1 de calibrar_ascensos_evitar_politica
+  ARISTA EN COLA, no cableada: desplegar_plan_orden_operaciones_franqueza_radical > evitar_obsesion_ascenso_estatus
+    el otro extremo espera en la bandeja (D.29). El veredicto CONTINUA queda escrito y la arista se cablea cuando entre:
+      python forja.py arista --madre desplegar_plan_orden_operaciones_franqueza_radical --hijo evitar_obsesion_ascenso_estatus --paso <n> --razon "..."
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 315
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 2
+  ARISTAS EN COLA, sin cablear: 1
+    desplegar_plan_orden_operaciones_franqueza_radical > evitar_obsesion_ascenso_estatus
+    D.29: van a un bloque propio y titulado del reporte, y se cablean con `forja.py arista` cuando el otro extremo entre.
+CODIGO DE SALIDA: 0
+  ARCHIVADO EN EL MISMO ACTO (D.31): cuarentena/_insertados/scott_radical_candor/evitar_obsesion_ascenso_estatus.json

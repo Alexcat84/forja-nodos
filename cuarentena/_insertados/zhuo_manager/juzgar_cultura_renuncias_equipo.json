@@ -1,0 +1,38 @@
+{
+  "id": "juzgar_cultura_renuncias_equipo",
+  "titulo": "Juzgar la cultura de un equipo por lo que esta dispuesto a ceder por sus valores",
+  "denominaciones": {
+    "nombre_largo": "Por que la cultura no se lee en la web corporativa sino en las contrapartidas que el equipo acepta pagar por el valor que declara",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "an organization's culture is best understood from seeing what it's willing to give up for its values"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando quieres saber que valora de verdad un equipo, el tuyo o uno ajeno, y tienes delante sus valores declarados.",
+  "entregable_esperado": "Dicho, para cada valor que el equipo declara, que contrapartida esta dispuesto a aceptar por el, y si esa contrapartida se paga cuando toca.",
+  "pasos_accionables": [
+    "Cuenta con que la cultura es de lo que acaban preguntando los candidatos, con las preguntas que el libro dice que salen siempre: que tiene de unico vuestro equipo, cuales son la mejor y la peor parte de tu trabajo, como se toman las decisiones, y que cambiarias si pudieras cambiar una sola cosa de como funciona la empresa.",
+    "No juzgues la cultura de una organizacion por lo que este escrito en su web corporativa: juzgala por lo que esta dispuesta a ceder por sus valores.",
+    "Desconfia del valor que nadie declararia al reves: muchos equipos dicen que les importa que sus empleados se hagan cargo enteros de los problemas, y nadie va a admitir que en realidad prefiere escurrir el bulto y echar la culpa de los errores a otros.",
+    "Ponle a ese valor sus contrapartidas, que el libro escribe como tres preguntas: estas dispuesto a tolerar el caos que viene de que cada uno intente hacer lo que cree mejor? Sabes agradecer que otros desafien tus decisiones? Llevas bien aceptar la responsabilidad de errores que no son directamente tuyos?",
+    "Mira si el valor esta dicho en una frase que la gente repite: en Facebook tienen una inmortalizada en carteles por todo el campus, nada en Facebook es problema de otro.",
+    "Mira lo que cuesta sostenerlo el dia que toca, con el caso que el libro cuenta: un becario nuevo tiro el servicio de Facebook al meter por accidente un error grave en el codigo, y no le despidieron. Su directivo se disculpo en su lugar por no haberle preparado mejor, otros ingenieros asumieron su parte por no haber cazado el error antes, y el equipo entero hizo despues un repaso para entender por que ocurrio el fallo y que cambios podian hacerse para evitar problemas parecidos en el futuro.",
+    "Ten claro que la cultura son las normas y los valores que gobiernan como se hacen las cosas, y que no va solo de tu relacion con cada persona de tu equipo: va tambien de la relacion de ellos entre si y con el grupo entero.",
+    "Cuenta con que segun diriges a mas y mas gente tu papel al dar forma a la cultura se hace mayor, y con que aunque no seas el consejero delegado tus acciones refuerzan lo que la empresa valora."
+  ],
+  "resumen_teorico": "Es la vara de entrada del capitulo de cultura y la que decide si un valor declarado es real: no se mide por lo que la organizacion escribe de si misma, sino por la contrapartida que acepta pagar. El libro pone su propio inventario, las tres preguntas de contrapartida del valor de hacerse cargo entero de los problemas, y el caso del becario como ejemplo nombrado de esa contrapartida pagada de verdad. Lo que el libro NO dice, y por eso no esta escrito aqui, es cada cuanto se repasa esta lista, ni quien decide si una contrapartida es aceptable, ni que se hace con el valor que no resiste sus tres preguntas.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": []
+}

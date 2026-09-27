@@ -1,0 +1,12 @@
+=== 1. SIN MUTAR: el instrumento publica ===
+codigo = 0
+
+LO QUE COSTARIA EL RESTO DE cap_04 A LA CIFRA POR PASO DE HOY:
+  nodos que quedan de los 22 de la frontera     : 3
+
+=== 2. MUTADA la celda que la decide (5 pasos -> 7 pasos declarados) ===
+codigo = 1
+LA TABLA NO SE PUBLICA: llevar_inventario_proyectos_discrecionales declara 7 pasos y tiene 5
+
+=== 3. RESTAURADA byte a byte ===
+la ficha vuelve a ser la original: True

@@ -1,0 +1,11 @@
+rama                          : extraccion-mundo-11
+commit de apertura            : 4f59ba2
+fecha del commit de apertura  : 2026-09-13 17:33:01 -0400
+nodos en el grafo             : 214
+candidatos en cuarentena lote4: 131
+insertados del lote 4         : 11
+veredictos en bitacora        : 156
+insertados _insertados (todos): 212
+lineas de REPORTE.md          : 29768
+INFORME_DE_LOTE.txt           : AUSENTE
+SELLOS_INFORME.jsonl          : AUSENTE

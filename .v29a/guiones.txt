@@ -1,0 +1,7 @@
+BARRIDO DE GUIONES EN ROJO: 5 hallazgo(s)
+  .v29/libro_65_77.txt linea 11 columna 146: guion largo (U+2014)
+  .v29/libro_cap11_281.txt linea 3 columna 450: guion largo (U+2014)
+  .v29/libro_cap11_281.txt linea 3 columna 463: guion largo (U+2014)
+  .v29/rotulos_cap07.py linea 26 columna 64: guion largo (U+2014)
+  .v29/rotulos_cap07.py linea 26 columna 90: guion largo (U+2014)
+Regla: cero guiones largos y cero guiones medios en todo el repo (manual seccion 2). Usa el guion corto normal.

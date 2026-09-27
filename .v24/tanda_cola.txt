@@ -1,0 +1,14 @@
+COLA cola  ajustar_franqueza_oido_oyente   vecinos por leer: delimitar_franqueza_radical_cinco_noes, desplegar_marco_franqueza_radical, equilibrar_elogio_critica_equipo
+COLA cola  cuidar_persona_completa_equipo   vecinos por leer: delimitar_franqueza_radical_cinco_noes, desplegar_marco_franqueza_radical, equilibrar_elogio_critica_equipo, gestionar_personas_equipo, imaginar_caso_simple_bragueta_abierta, respetar_cuidar_persona_cargo, usar_lenguaje_no_discriminatorio_entrevista
+OK   cola  manejar_enfado_persona_desafiada
+COLA cola  revisar_ciclo_responsabilidades_relaciones   vecinos por leer: desplegar_marco_franqueza_radical, manejar_enfado_persona_desafiada
+OK   cola  criticar_trabajo_evitar_desanimo
+OK   cola  dar_critica_inmediata_ayuda_tangible
+COLA cola  elogiar_trabajo_especifico_contexto   vecinos por leer: criticar_trabajo_evitar_desanimo, desplegar_marco_franqueza_radical, manejar_enfado_persona_desafiada
+COLA cola  empezar_cultura_franqueza_radical   vecinos por leer: criticar_trabajo_evitar_desanimo, desplegar_marco_franqueza_radical, equilibrar_elogio_critica_equipo, manejar_enfado_persona_desafiada
+COLA cola  pedir_critica_equipo_premiarla   vecinos por leer: desplegar_marco_franqueza_radical, equilibrar_elogio_critica_equipo, manejar_enfado_persona_desafiada
+COLA cola  acompaniar_mejores_equipo_socio   vecinos por leer: delimitar_franqueza_radical_cinco_noes, manejar_enfado_persona_desafiada
+OK   cola  cambiar_potencial_trayectoria_crecimiento
+
+insertados en esta corrida : 4
+en cola de lectura         : 7

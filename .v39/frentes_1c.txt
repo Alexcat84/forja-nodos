@@ -1,0 +1,4 @@
+    $ grep -n "BC.7" config/frentes.json
+    147:        "pregunta": "Una cita medida_en que ofrece como sede una seccion que aun no se ha escrito, o un fichero que se reescribe cada vuelta. Esta cola ofrecia REPORTE.md BC.7 y BC.7 nunca se escribio; y ofrece APERTURA_CIEGA.md 13.2, que es un fichero que el arnes sobreescribe en cada vuelta. Es la pregunta 4 de esta misma cola vista desde config/.",
+    $ python -c "import json; print(json.load(open(\"config/frentes.json\",encoding=\"utf-8\"))[\"cola_de_doctrina\"][\"preguntas\"][6][\"medida_en\"])"
+    REPORTE.md AC.7 (vuelta 37); encargo de la vuelta 38, tarea 4.1

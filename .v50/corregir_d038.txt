@@ -1,0 +1,2 @@
+corregida cuarentena/grove_high_output/dimensionar_numero_subordinados_medio_dia_semanal.json
+cuenta ancha medida hoy: 3 ; cuenta precisa medida hoy: 2

@@ -1,0 +1,39 @@
+{
+  "id": "despedir_persona_respeto_franqueza",
+  "titulo": "Despedir a una persona con respeto y sin rodeos",
+  "denominaciones": {
+    "nombre_largo": "Como se ejecuta la salida cuando ya esta decidida: directa, sin abrir discusion, sin tratarla como fracaso de quien se va y sin alargar la ruptura",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "when you decide to let someone go, do it respectfully and directly"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando ya has decidido dejar ir a alguien y toca ejecutarlo.",
+  "entregable_esperado": "La salida ejecutada de forma respetuosa y directa, sin alargar la ruptura, con la persona encaminada hacia su capitulo siguiente y contigo habiendo aprendido de la experiencia.",
+  "escala_minima": "Una sola persona y una sola conversacion.",
+  "pasos_accionables": [
+    "Cuando decidas dejar ir a alguien, hazlo de forma respetuosa y directa.",
+    "No lo abras a discusion, porque no lo es.",
+    "Y no lo consideres un fracaso por parte de tu persona a cargo.",
+    "No des por hecho que la culpa es suya. El libro recoge la frase de una amiga de la autora: quiza quien no deberia ser su jefe eres tu, y no al reves. Quiza fuiste tu quien decidio contratarlo cuando sus habilidades no eran las que el equipo necesitaba, o quiza lo pusiste en proyectos que no le encajaban.",
+    "Asume que cuidar de las personas significa asumir que vuestra relacion es una calle de dos sentidos.",
+    "Cuenta con que despedir a alguien puede ser emocional y duro no solo para quien es despedido, sino tambien para ti y para el equipo.",
+    "Se compasivo al examinar el pasado, pero pon el foco en el futuro y no alargues la ruptura.",
+    "Y ayuda a tu persona a cargo a ponerse en el mejor camino posible hacia su capitulo siguiente, y usa la experiencia para volverte mejor directivo."
+  ],
+  "resumen_teorico": "Es el ultimo tramo del capitulo y el unico que se ocupa de la ejecucion y no de la decision. El inventario propio del libro son los mandatos concretos que escribe uno a uno sobre como se hace: directo, sin abrir discusion, sin tratarlo como fracaso de quien se va, compasivo con el pasado pero enfocado al futuro, sin alargar la ruptura, y con ayuda para el camino siguiente. La doctrina que los sostiene es la de la calle de dos sentidos, y el libro la razona con una frase que atribuye a una amiga de la autora, que va aqui con su duenio dentro porque en el libro es de ella. El capitulo cierra recordando que dejar ir a alguien es una situacion extrema y que lo mas comun es que el entrenamiento adecuado baste, y anuncia que dar opinion eficaz es el asunto del capitulo siguiente. Lo que el libro NO dice, y por eso no esta escrito aqui, es como se le cuenta al equipo, ni que plazos ni que tramites lleva."
+}

@@ -1,0 +1,3 @@
+cadena A arrancada (cap_12)
+OK desplegar_plan_orden_operaciones_franqueza_radical  (317 nodos, bandeja 28)
+OK contar_historias_propias_explicar_franqueza_radical  (318 nodos, bandeja 27)

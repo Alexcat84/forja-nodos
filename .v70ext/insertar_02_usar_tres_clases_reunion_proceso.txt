@@ -1,0 +1,58 @@
+fila 02, usar_tres_clases_reunion_proceso, lineas --veredicto: 5
+  --veredicto infundir_regularidad_reunion_proceso|SANO|El mismo par que infundir lee desde su lado: hermanos bajo Process-Oriented Meetings (L19 a L23).
+  --veredicto fijar_duracion_lugar_reunion_individual|SANO|Relectura conjunta de la vuelta 69 (ACTA 67 67.4.d, D68.7): esta cabeza solo produce saber que las reuniones de proceso son de tres clases y como se llaman (pasos 1 a 4, L23). La condicion del vecino, poner en el calendario cuanto dura la reunion individual y en que sitio se tiene, parte de su propia situacion con el uno a uno ya en marcha y contesta su propia pregunta del libro (L37 y L39, How long should a one-on-one meeting last y Where should a one-on-one take place); ninguno de sus diez pasos usa el producto de aqui. El unico hilo es el rotulo del paso 2, y nombrar no es procedimentar. El encabezado ONE-ON-ONES (L25) dice donde esta el vecino en el libro, no que continue el trabajo de la cabeza (P.17). Es la figura de D67.3 y no la de C1: en C1 la condicion del hijo era el producto de pasos de la madre que mandan algo. SANO. Correccion declarada: la linea vieja decia CONTINUA madre=usar_tres_clases_reunion_proceso (DISCUTIBLE D69.1).
+  --veredicto preparar_guion_reunion_individual_subordinado|SANO|Relectura conjunta de la vuelta 69 (ACTA 67 67.4.d, D68.7): esta cabeza solo produce saber que las reuniones de proceso son de tres clases y como se llaman (pasos 1 a 4, L23). La condicion del vecino, la reunion individual ya programada y decidir de quien es y quien la prepara, parte de su propia situacion con el uno a uno ya en marcha y contesta su propia pregunta del libro (L41, A key point about a one-on-one); ninguno de sus siete pasos usa el producto de aqui. El unico hilo es el rotulo del paso 2, y nombrar no es procedimentar. El encabezado ONE-ON-ONES (L25) dice donde esta el vecino en el libro, no que continue el trabajo de la cabeza (P.17). Es la figura de D67.3 y no la de C1: en C1 la condicion del hijo era el producto de pasos de la madre que mandan algo. SANO. Correccion declarada: la linea vieja decia CONTINUA madre=usar_tres_clases_reunion_proceso (DISCUTIBLE D69.1).
+  --veredicto cubrir_indicadores_problemas_reunion_individual|SANO|Relectura conjunta de la vuelta 69 (ACTA 67 67.4.d, D68.7): esta cabeza solo produce saber que las reuniones de proceso son de tres clases y como se llaman (pasos 1 a 4, L23). La condicion del vecino, decidir que asuntos se tratan dentro de la reunion individual, parte de su propia situacion con el uno a uno ya en marcha y contesta su propia pregunta del libro (L43, What should be covered in a one-on-one); ninguno de sus diez pasos usa el producto de aqui. El unico hilo es el rotulo del paso 2, y nombrar no es procedimentar. El encabezado ONE-ON-ONES (L25) dice donde esta el vecino en el libro, no que continue el trabajo de la cabeza (P.17). Es la figura de D67.3 y no la de C1: en C1 la condicion del hijo era el producto de pasos de la madre que mandan algo. SANO. Correccion declarada: la linea vieja decia CONTINUA madre=usar_tres_clases_reunion_proceso (DISCUTIBLE D69.1).
+  --veredicto fijar_frecuencia_reunion_individual_madurez_tarea|SANO|Relectura conjunta de la vuelta 69 (ACTA 67 67.4.d, D68.7): esta cabeza solo produce saber que las reuniones de proceso son de tres clases y como se llaman (pasos 1 a 4, L23). La condicion del vecino, decidir cada cuanto te reunes a solas con cada profesional que te reporta, parte de su propia situacion con el uno a uno ya en marcha y contesta su propia pregunta del libro (L33 a L35, How often should you have one-on-ones); ninguno de sus diez pasos usa el producto de aqui. El unico hilo es el rotulo del paso 2, y nombrar no es procedimentar. El encabezado ONE-ON-ONES (L25) dice donde esta el vecino en el libro, no que continue el trabajo de la cabeza (P.17). Es la figura de D67.3 y no la de C1: en C1 la condicion del hijo era el producto de pasos de la madre que mandan algo. SANO. Correccion declarada: la linea vieja decia CONTINUA madre=usar_tres_clases_reunion_proceso (DISCUTIBLE D69.1).
+inicio 2026-09-25 03:42:39
+======================================================================
+ADUANA DE INSERCION, candidato 'usar_tres_clases_reunion_proceso'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (391 del grafo mas 88 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 5. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino infundir_regularidad_reunion_proceso  [Infundir regularidad a la reunion de proceso, para poder agrupar en tanda las tareas de mando semejantes y pronosticar el tiempo que piden]
+    levantada por: similitud_texto
+    similitud_texto    0.500 (umbral 0.35)
+    familia_id         0.286 (umbral 0.30)
+    paso_contra_nodo   0.409 (umbral 0.60)
+    paso 3 del candidato contra paso 1 de infundir_regularidad_reunion_proceso
+
+  vecino fijar_duracion_lugar_reunion_individual  [Fijar cuanto dura la reunion individual y donde se tiene: una hora como minimo, y en el area de trabajo del subordinado o cerca de ella]
+    levantada por: similitud_texto
+    similitud_texto    0.394 (umbral 0.35)
+    familia_id         0.111 (umbral 0.30)
+    paso_contra_nodo   0.465 (umbral 0.60)
+    paso 2 del candidato contra paso 10 de fijar_duracion_lugar_reunion_individual
+
+  vecino preparar_guion_reunion_individual_subordinado  [Tratar la reunion individual como reunion del subordinado y hacer que sea el quien prepare el guion y pasee al supervisor por el material]
+    levantada por: similitud_texto
+    similitud_texto    0.408 (umbral 0.35)
+    familia_id         0.111 (umbral 0.30)
+    paso_contra_nodo   0.463 (umbral 0.60)
+    paso 1 del candidato contra paso 2 de preparar_guion_reunion_individual_subordinado
+
+  vecino cubrir_indicadores_problemas_reunion_individual  [Cubrir en la reunion individual los indicadores del subordinado, lo ocurrido desde la anterior y el problema potencial, con el criterio de que sean los asuntos que le preocupan]
+    levantada por: similitud_texto
+    similitud_texto    0.363 (umbral 0.35)
+    familia_id         0.111 (umbral 0.30)
+    paso_contra_nodo   0.445 (umbral 0.60)
+    paso 1 del candidato contra paso 10 de cubrir_indicadores_problemas_reunion_individual
+
+  vecino fijar_frecuencia_reunion_individual_madurez_tarea  [Fijar cada cuanto tienes la reunion individual con cada subordinado segun su madurez relevante para la tarea, y ajustarla por lo deprisa que cambia su area]
+    levantada por: similitud_texto
+    similitud_texto    0.404 (umbral 0.35)
+    familia_id         0.100 (umbral 0.30)
+    paso_contra_nodo   0.420 (umbral 0.60)
+    paso 1 del candidato contra paso 2 de fijar_frecuencia_reunion_individual_madurez_tarea
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 392
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 5
+
+======================================================================
+fin 2026-09-25 04:25:05 | codigo de salida 0 | 2545.9 s

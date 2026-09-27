@@ -1,0 +1,146 @@
+  OK  infundir_regularidad_reunion_proceso             usar_tres_clases_reunion_proceso                 SANO      
+  OK  infundir_regularidad_reunion_proceso             preparar_guion_reunion_individual_subordinado    SANO      
+  OK  infundir_regularidad_reunion_proceso             fijar_frecuencia_reunion_individual_madurez_tarea SANO      
+  OK  infundir_regularidad_reunion_proceso             fijar_duracion_lugar_reunion_individual          SANO      
+  OK  infundir_regularidad_reunion_proceso             cubrir_indicadores_problemas_reunion_individual  SANO      
+infundir_regularidad_reunion_proceso               lineas 5 | levantados hoy 5 | FALTAN 0 | SOBRAN 0
+  OK  usar_tres_clases_reunion_proceso                 infundir_regularidad_reunion_proceso             SANO      
+  OK  usar_tres_clases_reunion_proceso                 fijar_duracion_lugar_reunion_individual          SANO      
+  OK  usar_tres_clases_reunion_proceso                 preparar_guion_reunion_individual_subordinado    SANO      
+  OK  usar_tres_clases_reunion_proceso                 cubrir_indicadores_problemas_reunion_individual  SANO      
+  OK  usar_tres_clases_reunion_proceso                 fijar_frecuencia_reunion_individual_madurez_tarea SANO      
+usar_tres_clases_reunion_proceso                   lineas 5 | levantados hoy 5 | FALTAN 0 | SOBRAN 0
+  OK  fijar_frecuencia_reunion_individual_madurez_tarea fijar_duracion_lugar_reunion_individual          SANO      
+  OK  fijar_frecuencia_reunion_individual_madurez_tarea preparar_guion_reunion_individual_subordinado    SANO      
+  OK  fijar_frecuencia_reunion_individual_madurez_tarea cubrir_indicadores_problemas_reunion_individual  SANO      
+  OK  fijar_frecuencia_reunion_individual_madurez_tarea infundir_regularidad_reunion_proceso             SANO      
+  OK  fijar_frecuencia_reunion_individual_madurez_tarea tomar_notas_copia_guion_reunion_individual       SANO      
+  OK  fijar_frecuencia_reunion_individual_madurez_tarea usar_tres_clases_reunion_proceso                 SANO      
+fijar_frecuencia_reunion_individual_madurez_tarea  lineas 6 | levantados hoy 6 | FALTAN 0 | SOBRAN 0
+  OK  fijar_duracion_lugar_reunion_individual          fijar_frecuencia_reunion_individual_madurez_tarea SANO      
+  OK  fijar_duracion_lugar_reunion_individual          alentar_asuntos_corazon_vigilar_final_reunion    SANO      
+  OK  fijar_duracion_lugar_reunion_individual          preparar_guion_reunion_individual_subordinado    SANO      
+  OK  fijar_duracion_lugar_reunion_individual          cubrir_indicadores_problemas_reunion_individual  SANO      
+  OK  fijar_duracion_lugar_reunion_individual          infundir_regularidad_reunion_proceso             SANO      
+  OK  fijar_duracion_lugar_reunion_individual          usar_tres_clases_reunion_proceso                 SANO      
+  OK  fijar_duracion_lugar_reunion_individual          facilitar_expresion_subordinado_pregunta_mas     SANO      
+fijar_duracion_lugar_reunion_individual            lineas 7 | levantados hoy 7 | FALTAN 0 | SOBRAN 0
+  OK  preparar_guion_reunion_individual_subordinado    fijar_duracion_lugar_reunion_individual          SANO      
+  OK  preparar_guion_reunion_individual_subordinado    fijar_frecuencia_reunion_individual_madurez_tarea SANO      
+  OK  preparar_guion_reunion_individual_subordinado    cubrir_indicadores_problemas_reunion_individual  SANO      
+  OK  preparar_guion_reunion_individual_subordinado    infundir_regularidad_reunion_proceso             SANO      
+  OK  preparar_guion_reunion_individual_subordinado    facilitar_expresion_subordinado_pregunta_mas     SANO      
+  OK  preparar_guion_reunion_individual_subordinado    tomar_notas_copia_guion_reunion_individual       CONTINUA  madre=preparar_guion_reunion_individual_subordinado
+  OK  preparar_guion_reunion_individual_subordinado    usar_tres_clases_reunion_proceso                 SANO      
+  OK  preparar_guion_reunion_individual_subordinado    alentar_asuntos_corazon_vigilar_final_reunion    SANO      
+  OK  preparar_guion_reunion_individual_subordinado    acumular_asuntos_importantes_fichero_espera      SANO      
+preparar_guion_reunion_individual_subordinado      lineas 9 | levantados hoy 9 | FALTAN 0 | SOBRAN 0
+  OK  cubrir_indicadores_problemas_reunion_individual  preparar_guion_reunion_individual_subordinado    SANO      
+  OK  cubrir_indicadores_problemas_reunion_individual  fijar_frecuencia_reunion_individual_madurez_tarea SANO      
+  OK  cubrir_indicadores_problemas_reunion_individual  fijar_duracion_lugar_reunion_individual          SANO      
+  OK  cubrir_indicadores_problemas_reunion_individual  usar_tres_clases_reunion_proceso                 SANO      
+  OK  cubrir_indicadores_problemas_reunion_individual  infundir_regularidad_reunion_proceso             SANO      
+  OK  cubrir_indicadores_problemas_reunion_individual  facilitar_expresion_subordinado_pregunta_mas     SANO      
+cubrir_indicadores_problemas_reunion_individual    lineas 6 | levantados hoy 6 | FALTAN 0 | SOBRAN 0
+  OK  facilitar_expresion_subordinado_pregunta_mas     preparar_guion_reunion_individual_subordinado    SANO      
+  OK  facilitar_expresion_subordinado_pregunta_mas     acumular_asuntos_importantes_fichero_espera      SANO      
+  OK  facilitar_expresion_subordinado_pregunta_mas     alentar_asuntos_corazon_vigilar_final_reunion    SANO      
+  OK  facilitar_expresion_subordinado_pregunta_mas     fijar_duracion_lugar_reunion_individual          SANO      
+  OK  facilitar_expresion_subordinado_pregunta_mas     conducir_reunion_individual_telefono_distancia   SANO      
+  OK  facilitar_expresion_subordinado_pregunta_mas     programar_reunion_individual_cadena              SANO      
+  OK  facilitar_expresion_subordinado_pregunta_mas     tomar_notas_copia_guion_reunion_individual       SANO      
+  OK  facilitar_expresion_subordinado_pregunta_mas     cubrir_indicadores_problemas_reunion_individual  SANO      
+facilitar_expresion_subordinado_pregunta_mas       lineas 8 | levantados hoy 8 | FALTAN 0 | SOBRAN 0
+  OK  tomar_notas_copia_guion_reunion_individual       conducir_reunion_individual_telefono_distancia   CONTINUA  madre=tomar_notas_copia_guion_reunion_individual
+  OK  tomar_notas_copia_guion_reunion_individual       alentar_asuntos_corazon_vigilar_final_reunion    SANO      
+  OK  tomar_notas_copia_guion_reunion_individual       acumular_asuntos_importantes_fichero_espera      SANO      
+  OK  tomar_notas_copia_guion_reunion_individual       fijar_frecuencia_reunion_individual_madurez_tarea SANO      
+  OK  tomar_notas_copia_guion_reunion_individual       programar_reunion_individual_cadena              SANO      
+  OK  tomar_notas_copia_guion_reunion_individual       preparar_guion_reunion_individual_subordinado    CONTINUA  madre=preparar_guion_reunion_individual_subordinado
+  OK  tomar_notas_copia_guion_reunion_individual       facilitar_expresion_subordinado_pregunta_mas     SANO      
+tomar_notas_copia_guion_reunion_individual         lineas 7 | levantados hoy 7 | FALTAN 0 | SOBRAN 0
+  OK  acumular_asuntos_importantes_fichero_espera      tomar_notas_copia_guion_reunion_individual       SANO      
+  OK  acumular_asuntos_importantes_fichero_espera      alentar_asuntos_corazon_vigilar_final_reunion    SANO      
+  OK  acumular_asuntos_importantes_fichero_espera      conducir_reunion_individual_telefono_distancia   SANO      
+  OK  acumular_asuntos_importantes_fichero_espera      facilitar_expresion_subordinado_pregunta_mas     SANO      
+  OK  acumular_asuntos_importantes_fichero_espera      programar_reunion_individual_cadena              SANO      
+  OK  acumular_asuntos_importantes_fichero_espera      preparar_guion_reunion_individual_subordinado    SANO      
+acumular_asuntos_importantes_fichero_espera        lineas 6 | levantados hoy 6 | FALTAN 0 | SOBRAN 0
+  OK  alentar_asuntos_corazon_vigilar_final_reunion    fijar_duracion_lugar_reunion_individual          SANO      
+  OK  alentar_asuntos_corazon_vigilar_final_reunion    conducir_reunion_individual_telefono_distancia   SANO      
+  OK  alentar_asuntos_corazon_vigilar_final_reunion    programar_reunion_individual_cadena              SANO      
+  OK  alentar_asuntos_corazon_vigilar_final_reunion    tomar_notas_copia_guion_reunion_individual       SANO      
+  OK  alentar_asuntos_corazon_vigilar_final_reunion    preparar_guion_reunion_individual_subordinado    SANO      
+  OK  alentar_asuntos_corazon_vigilar_final_reunion    acumular_asuntos_importantes_fichero_espera      SANO      
+  OK  alentar_asuntos_corazon_vigilar_final_reunion    facilitar_expresion_subordinado_pregunta_mas     SANO      
+alentar_asuntos_corazon_vigilar_final_reunion      lineas 7 | levantados hoy 7 | FALTAN 0 | SOBRAN 0
+  OK  conducir_reunion_individual_telefono_distancia   tomar_notas_copia_guion_reunion_individual       CONTINUA  madre=tomar_notas_copia_guion_reunion_individual
+  OK  conducir_reunion_individual_telefono_distancia   preguntar_conducir_reunion_individual            SANO      
+  OK  conducir_reunion_individual_telefono_distancia   acumular_asuntos_importantes_fichero_espera      SANO      
+  OK  conducir_reunion_individual_telefono_distancia   programar_reunion_individual_cadena              SANO      
+  OK  conducir_reunion_individual_telefono_distancia   alentar_asuntos_corazon_vigilar_final_reunion    SANO      
+  OK  conducir_reunion_individual_telefono_distancia   facilitar_expresion_subordinado_pregunta_mas     SANO      
+conducir_reunion_individual_telefono_distancia     lineas 6 | levantados hoy 6 | FALTAN 0 | SOBRAN 0
+  OK  programar_reunion_individual_cadena              alentar_asuntos_corazon_vigilar_final_reunion    SANO      
+  OK  programar_reunion_individual_cadena              conducir_reunion_individual_telefono_distancia   SANO      
+  OK  programar_reunion_individual_cadena              tomar_notas_copia_guion_reunion_individual       SANO      
+  OK  programar_reunion_individual_cadena              acumular_asuntos_importantes_fichero_espera      SANO      
+  OK  programar_reunion_individual_cadena              facilitar_expresion_subordinado_pregunta_mas     SANO      
+  OK  programar_reunion_individual_cadena              preguntar_conducir_reunion_individual            SANO      
+  OK  programar_reunion_individual_cadena              dirigir_reunion_individual_semanal               SANO      
+programar_reunion_individual_cadena                lineas 7 | levantados hoy 7 | FALTAN 0 | SOBRAN 0
+conducir_etapas_modelo_ideal_decision              lineas 0 | levantados hoy 0 | FALTAN 0 | SOBRAN 0
+  OK  decidir_nivel_competente_inferior                anunciar_decision_inesperada_reconvocar_reunion  SANO      
+  OK  decidir_nivel_competente_inferior                vencer_sindrome_grupo_pares_autoconfianza        SANO      
+  OK  decidir_nivel_competente_inferior                tomar_mando_reunion_pares_presidente_ausente     SANO      
+decidir_nivel_competente_inferior                  lineas 3 | levantados hoy 3 | FALTAN 0 | SOBRAN 0
+  OK  vencer_sindrome_grupo_pares_autoconfianza        aprender_resultados_vencer_dos_presiones         SANO      
+  OK  vencer_sindrome_grupo_pares_autoconfianza        tomar_mando_reunion_pares_presidente_ausente     SANO      
+  OK  vencer_sindrome_grupo_pares_autoconfianza        decidir_nivel_competente_inferior                SANO      
+  OK  vencer_sindrome_grupo_pares_autoconfianza        anunciar_decision_inesperada_reconvocar_reunion  SANO      
+  OK  vencer_sindrome_grupo_pares_autoconfianza        planificar_tres_pasos_demanda_estado_brecha      SANO      
+  OK  vencer_sindrome_grupo_pares_autoconfianza        responder_primer_aviso_renuncia_subordinado      SANO      
+  OK  vencer_sindrome_grupo_pares_autoconfianza        definir_entorno_grupo_clientes_proveedores_competidores SANO      
+  OK  vencer_sindrome_grupo_pares_autoconfianza        archivar_indicadores_resolver_problemas          SANO      
+  OK  vencer_sindrome_grupo_pares_autoconfianza        ejercer_poder_posicion_etapa_decision_clara      SANO      
+  OK  vencer_sindrome_grupo_pares_autoconfianza        supervisar_decision_delegada_preguntas_concretas SANO      
+  OK  vencer_sindrome_grupo_pares_autoconfianza        contestar_dos_preguntas_direccion_objetivos      SANO      
+  OK  vencer_sindrome_grupo_pares_autoconfianza        cerrar_brecha_dos_preguntas_estrategia           SANO      
+  OK  vencer_sindrome_grupo_pares_autoconfianza        cortar_discusion_libre_momento_justo             SANO      
+vencer_sindrome_grupo_pares_autoconfianza          lineas 13 | levantados hoy 13 | FALTAN 0 | SOBRAN 0
+  OK  tomar_mando_reunion_pares_presidente_ausente     vencer_sindrome_grupo_pares_autoconfianza        SANO      
+  OK  tomar_mando_reunion_pares_presidente_ausente     decidir_nivel_competente_inferior                SANO      
+  OK  tomar_mando_reunion_pares_presidente_ausente     anunciar_decision_inesperada_reconvocar_reunion  SANO      
+  OK  tomar_mando_reunion_pares_presidente_ausente     priorizar_lista_entrenamiento_subordinados       SANO      
+tomar_mando_reunion_pares_presidente_ausente       lineas 4 | levantados hoy 4 | FALTAN 0 | SOBRAN 0
+  OK  ejercer_poder_posicion_etapa_decision_clara      cortar_discusion_libre_momento_justo             SANO      
+  OK  ejercer_poder_posicion_etapa_decision_clara      anunciar_decision_inesperada_reconvocar_reunion  SANO      
+ejercer_poder_posicion_etapa_decision_clara        lineas 2 | levantados hoy 2 | FALTAN 0 | SOBRAN 0
+  OK  cortar_discusion_libre_momento_justo             anunciar_decision_inesperada_reconvocar_reunion  SANO      
+  OK  cortar_discusion_libre_momento_justo             ejercer_poder_posicion_etapa_decision_clara      SANO      
+  OK  cortar_discusion_libre_momento_justo             vencer_sindrome_grupo_pares_autoconfianza        SANO      
+  OK  cortar_discusion_libre_momento_justo             cerrar_brecha_dos_preguntas_estrategia           SANO      
+  OK  cortar_discusion_libre_momento_justo             pedir_critica_anonima_curso_entrenamiento_dictado SANO      
+  OK  cortar_discusion_libre_momento_justo             construir_indicador_tendencia_patron             SANO      
+cortar_discusion_libre_momento_justo               lineas 6 | levantados hoy 6 | FALTAN 0 | SOBRAN 0
+  OK  zanjar_seis_preguntas_decision_adelantado        anunciar_decision_inesperada_reconvocar_reunion  SANO      
+  OK  zanjar_seis_preguntas_decision_adelantado        entregar_evaluacion_desempeno_tres_claves        SANO      
+zanjar_seis_preguntas_decision_adelantado          lineas 2 | levantados hoy 2 | FALTAN 0 | SOBRAN 0
+  OK  anunciar_decision_inesperada_reconvocar_reunion  cortar_discusion_libre_momento_justo             SANO      
+  OK  anunciar_decision_inesperada_reconvocar_reunion  zanjar_seis_preguntas_decision_adelantado        SANO      
+  OK  anunciar_decision_inesperada_reconvocar_reunion  contestar_dos_preguntas_direccion_objetivos      SANO      
+  OK  anunciar_decision_inesperada_reconvocar_reunion  tomar_mando_reunion_pares_presidente_ausente     SANO      
+  OK  anunciar_decision_inesperada_reconvocar_reunion  vencer_sindrome_grupo_pares_autoconfianza        SANO      
+  OK  anunciar_decision_inesperada_reconvocar_reunion  definir_entorno_grupo_clientes_proveedores_competidores SANO      
+  OK  anunciar_decision_inesperada_reconvocar_reunion  dirigir_reunion_decision                         SANO      
+  OK  anunciar_decision_inesperada_reconvocar_reunion  ejercer_poder_posicion_etapa_decision_clara      SANO      
+  OK  anunciar_decision_inesperada_reconvocar_reunion  entregar_evaluacion_desempeno_tres_claves        SANO      
+anunciar_decision_inesperada_reconvocar_reunion    lineas 9 | levantados hoy 9 | FALTAN 0 | SOBRAN 0
+secciones 20 de 20, lineas 118, ilegibles 0, vecinos sin linea 0, lineas sin vecino 0
+
+ARISTAS POR LECTURA (SOSTENGO) contra el barrido de hoy
+  agrupar_tareas_semejantes_aprovechar_preparacion   > infundir_regularidad_reunion_proceso                 levantada hoy: NO
+  buscar_regularidad_bloques_iguales_trabajo_mando   > infundir_regularidad_reunion_proceso                 levantada hoy: NO
+  agrupar_interrupciones_subordinados_reuniones_regulares > acumular_asuntos_importantes_fichero_espera          levantada hoy: NO
+  conducir_etapas_modelo_ideal_decision              > cortar_discusion_libre_momento_justo                 levantada hoy: NO
+  conducir_etapas_modelo_ideal_decision              > ejercer_poder_posicion_etapa_decision_clara          levantada hoy: NO

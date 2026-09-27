@@ -1,0 +1,6 @@
+FECHA DE LECTURA DE LOS 142 CANDIDATOS DEL LOTE 4 (campo fuentes[].fecha)
+fecha           grafo  bandeja    total
+2026-09-11          8        0        8
+2026-09-12         23       82      105
+2026-09-13          0       29       29
+TOTAL              31      111      142

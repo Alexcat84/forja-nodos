@@ -1,0 +1,24 @@
+MUESTRA DE FIDELIDAD DEL REGIMEN LIGERO (D.58)
+  libro    : grove_high_output
+  semilla  : v56
+  capitulos: cap_08, cap_09, cap_10
+
+  RELEIDO ENTERO : cap_08
+  POR MUESTRA    : cap_09, cap_10, 15 pasos cada uno
+
+  EL DISPARADOR: si la muestra de un capitulo pasa del 10 por ciento de
+  pasos inventados, ESE CAPITULO SE RELEE ENTERO ANTES DE SEGUIR.
+
+  --- cap_09: 0 paso(s) en la muestra
+
+  --- cap_10: 8 paso(s) en la muestra
+    repartir_supervision_puesto_funcional_mision   P1   Parte de lo que hace falta para que la organizacion hibrida 
+    repartir_supervision_puesto_funcional_mision   P2   Deja que el grupo funcional al que el puesto pertenece fije 
+    repartir_supervision_puesto_funcional_mision   P3   Haz en consecuencia que ese puesto dependa de alguien de la 
+    repartir_supervision_puesto_funcional_mision   P4   Ajusta el tipo de supervision de cada uno de los dos a las n
+    repartir_supervision_puesto_funcional_mision   P5   Encarga al jefe de la unidad de mision que le de las priorid
+    repartir_supervision_puesto_funcional_mision   P6   Encarga al jefe funcional que se asegure de que esta formado
+    repartir_supervision_puesto_funcional_mision   P7   Encarga a ese mismo jefe funcional que supervise y vigile su
+    repartir_supervision_puesto_funcional_mision   P8   Encarga al jefe funcional que cuide su carrera dentro de la 
+
+  --- cap_08: ENTERO, 0 paso(s), no hay muestra que elegir

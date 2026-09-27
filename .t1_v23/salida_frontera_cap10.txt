@@ -1,0 +1,59 @@
+==============================================================================
+1. LA COMPROBACION, ANTES DE LA TABLA
+==============================================================================
+tramos que dan nodo                    : 10
+tramos de resto                        : 5
+lineas con contenido de L8 en adelante : 128
+lineas NO cubiertas                    : 0  []
+SOLAPES                                : 0  []
+suma de las filas                      : 8976 palabras
+cuerpo medido aparte (sed 8,$ | wc -w) : 8976 palabras
+IGUALES                                : True
+la pieza 14, sus cuatro tramos         : 355 palabras
+
+==============================================================================
+2. LA TABLA, IMPRESA Y NO TECLEADA
+==============================================================================
+| tramo | palabras | nodos | que es | la salida, pegada |
+|---|---:|---:|---|---|
+| `L19` | 99 | **0** | pieza 14, tramo a: con quien y para que | `19:AS DESCRIBED IN Chapter Three, all people have their own growth trajectories, ` |
+| `L21` | 82 | **0** | pieza 14, tramo b: cuando y donde caben | `21:Once you've gotten the hang of these conversations, you'll look forward to the` |
+| `L43` | 73 | **1** | pieza 14, tramo c: la cadencia y el encargo a los jefes | `43:Realizing he'd come up with a good methodology for having career conversations` |
+| `L88 a L92` | 101 | **0** | pieza 14, tramo d: lo que se juega en hacerlas bien (correccion 3) | `91:THIS IS A high-level overview of three conversations that on the surface seem ` |
+| `L47 a L87` | 1862 | **3** | las tres conversaciones de carrera | `47:Conversation one: life story` |
+| `L93 a L125` | 1095 | **1** | el plan anual de gestion del crecimiento | `93:GROWTH MANAGEMENT` |
+| `L127 a L163` | 1501 | **1** | el proceso de contratacion, con el acto de L129 dentro | `127:HIRING: YOUR MENTALITY AND YOUR PROCESS` |
+| `L165 a L201` | 1372 | **5** | despedir: cabeza, tres partes y coda | `165:FIRING` |
+| `L203 a L223` | 638 | **1** | la calibracion de ascensos, con el caso de Google dentro | `203:PROMOTIONS` |
+| `L225 a L251` | 568 | **2** | recompensar sin ascender | `225:REWARD YOUR ROCK STARS` |
+| | **7391** | **14** | **los tramos que dan nodo** | |
+
+| tramo de resto | palabras | nodos | que es, nombrado |
+|---|---:|---:|---|
+| `L9 a L18` | 206 | **0** | subtitulo, resumen del cap. 3 y los dos rotulos de seccion |
+| `L20` | 0 | **0** | linea en blanco entre L19 y L21 |
+| `L22 a L42` | 1136 | **0** | EL CASO DE RUSS LARAWAY entero: Google, Todd, Sarah y el plan de Sarah |
+| `L44 a L45` | 45 | **0** | linea en blanco y el cierre del caso: la encuesta interna de Google |
+| `L253 a L263` | 198 | **0** | el cuadro que no esta en el recorte, el resumen y la cabecera del cap siguiente |
+| | **1585** | **0** | |
+
+==============================================================================
+3. LOS CATORCE CANDIDATOS DE cap_10, CON SUS PASOS CONTADOS DEL FICHERO
+==============================================================================
+| # | id | pasos |
+|---:|---|---:|
+| 1 | `desplegar_tres_conversaciones_carrera` | **12** |
+| 2 | `conversar_historia_vida_descubrir_motivadores` | **15** |
+| 3 | `conversar_suenios_cruzar_habilidades` | **15** |
+| 4 | `trazar_plan_dieciocho_meses_aprendizaje` | **14** |
+| 5 | `armar_plan_anual_crecimiento_equipo` | **29** |
+| 6 | `montar_proceso_contratacion_reducir_sesgo` | **32** |
+| 7 | `facilitar_despido_tres_cosas` | **11** |
+| 8 | `admitir_pronto_mal_desempenio_cuatro_razones` | **9** |
+| 9 | `calibrar_decision_despido_documentarla` | **13** |
+| 10 | `sopesar_consejo_legal_despedir_humildad` | **8** |
+| 11 | `contactar_despedido_mes_despues` | **6** |
+| 12 | `calibrar_ascensos_evitar_politica` | **19** |
+| 13 | `evitar_obsesion_ascenso_estatus` | **10** |
+| 14 | `reconocer_excelencia_trayectoria_gradual` | **13** |
+| | **catorce candidatos** | **206** |

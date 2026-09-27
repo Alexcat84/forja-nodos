@@ -1,0 +1,29 @@
+ADUANA DE INSERCION, candidato 'recorrer_rueda_hacer_cosas_equipo'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (234 del grafo mas 114 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 3. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino recorrer_trece_elementos_proceso_evaluacion_formal  [Recorrer los trece elementos que el texto nombra para disenar un proceso formal de evaluacion de desempenio, sabiendo que no hay talla unica]
+    levantada por: paso_contra_nodo
+    similitud_texto    0.294 (umbral 0.35)
+    familia_id         0.100 (umbral 0.30)
+    paso_contra_nodo   0.610 (umbral 0.60)
+    paso 10 del candidato contra paso 6 de recorrer_trece_elementos_proceso_evaluacion_formal
+
+  vecino recorrer_rueda_conscientemente_cultura_equipo  [Recorrer conscientemente los pasos de la rueda de hacer cosas sobre tu propia cultura, mirando la conducta y no el caracter]
+    levantada por: familia_id
+    similitud_texto    0.248 (umbral 0.35)
+    familia_id         0.429 (umbral 0.30)
+    paso_contra_nodo   0.457 (umbral 0.60)
+    paso 12 del candidato contra paso 9 de recorrer_rueda_conscientemente_cultura_equipo
+
+  vecino reconocer_emociones_propias_avisar_equipo  [Reconocer en voz alta el animo con el que llegas, para que tu equipo no crea que tu mal dia es culpa suya]
+    levantada por: similitud_texto
+    similitud_texto    0.353 (umbral 0.35)
+    familia_id         0.111 (umbral 0.30)
+    paso_contra_nodo   0.411 (umbral 0.60)
+    paso 4 del candidato contra paso 3 de reconocer_emociones_propias_avisar_equipo
+RECHAZADO: no encuentro los dos extremos de la arista recorrer_rueda_conscientemente_cultura_equipo > recorrer_rueda_hacer_cosas_equipo

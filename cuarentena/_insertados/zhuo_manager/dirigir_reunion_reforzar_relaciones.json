@@ -1,0 +1,38 @@
+{
+  "id": "dirigir_reunion_reforzar_relaciones",
+  "titulo": "Dirigir una reunion cuyo resultado excelente es que la gente se entienda mejor",
+  "denominaciones": {
+    "nombre_largo": "La reunion de union de equipo, sus medios sociales nombrados, y los logros que la hacen buena",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "team-bonding meeting, strengthening relationships"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando decides juntar a un grupo con el proposito simple de centraros en las relaciones, porque un equipo que funciona alto necesita que la gente trabaje bien entre si.",
+  "entregable_esperado": "Mas entendimiento y mas confianza entre los que estuvieron, gente que se anima a ser abierta y autentica, y gente que se siente cuidada.",
+  "pasos_accionables": [
+    "Parte de que para tener un equipo que funcione alto la gente necesita trabajar bien entre si, asi que tienes que buscar formas de nutrir la empatia, crear confianza y animar a la colaboracion.",
+    "Junta a veces a un grupo con el proposito simple de centraros en las relaciones.",
+    "Usa los medios que el libro nombra para eso: comidas de equipo, cenas y otros eventos sociales, y tambien algunas reuniones individuales y algunas reuniones de equipo.",
+    "Invierte tiempo en conocer un poco mejor a los colegas como seres humanos, sus valores, sus aficiones, sus familias, sus historias de vida, porque cuando nos entendemos mejor trabajar juntos se vuelve mas facil y mas disfrutable.",
+    "No midas la reunion por el numero de horas pasadas juntos ni por lo fastuoso del evento: el libro dice expresamente que una gran reunion de union de equipo no va de eso.",
+    "Consigue el primer logro: crear mejor entendimiento y mas confianza entre los participantes.",
+    "Consigue el segundo: animar a la gente a ser abierta y autentica.",
+    "Consigue el tercero: hacer que la gente se sienta cuidada."
+  ],
+  "resumen_teorico": "Es la quinta y ultima razon del libro para juntarse en persona, y la mas delgada de las cinco en inventario: tres logros en vez de cuatro. Lo que la salva de ser postura es que el libro SI nombra sus medios uno a uno, comidas, cenas, eventos sociales, algunas reuniones individuales y algunas de equipo, y nombra tambien los objetos de la conversacion, valores, aficiones, familias, historias de vida. Por D.27 ese es un inventario de medios y de objetos, no de metas, y por eso los pasos son transcripcion. El paso 5 esta escrito porque el libro lo escribe en negativo y descarta dos varas concretas, las horas y el lujo. Lo que el libro NO dice, y por eso no esta escrito aqui, es cada cuanto se hace, quien paga, ni que hacer con quien no quiere ir."
+}

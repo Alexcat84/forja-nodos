@@ -1,0 +1,1 @@
+python .a41/ver_nodo.py dar_elogio_disciplina_igual_critica

@@ -1,0 +1,41 @@
+{
+  "id": "centrar_debate_ideas_fuera_egos",
+  "titulo": "Centrar el debate en las ideas y dejar los egos fuera, cambiando los papeles cuando alguien empieza a defender el suyo",
+  "denominaciones": {
+    "nombre_largo": "Mantener la conversacion sobre las ideas y no sobre los egos: intervenir cuando aparece el mi idea contra la tuya, y hacer que cada uno defienda la posicion del otro",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "keep the conversation focused on ideas not egos"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando en un debate de tu equipo empiezas a notar que la gente esta pensando voy a ganar esta discusion, o mi idea contra la tuya, en vez de buscar la mejor respuesta.",
+  "entregable_esperado": "Un debate que vuelve a estar sobre los hechos, sin propietarios de ideas, con las reglas del juego dichas si hizo falta decirlas, y con la gente escuchando mas atentamente porque sabe que puede tener que defender la posicion contraria.",
+  "pasos_accionables": [
+    "Interven en cuanto empieces a notar que la gente esta pensando voy a ganar esta discusion, o mi idea contra tu idea, o mi recomendacion contra tu recomendacion, o lo que siente mi equipo.",
+    "Redirigelos a centrarse en los hechos.",
+    "No permitas que nadie se atribuya la propiedad de una idea.",
+    "No dejes que el debate lo secuestre como puedan sentirse o no sentirse los que no estan en la sala.",
+    "Recuerdales cual es la meta: llegar a la mejor respuesta, como equipo.",
+    "Cuenta con lo que el texto dice que estas haciendo: una colaboracion de grandes cabezas, no un concurso de debate de instituto ni unas elecciones presidenciales.",
+    "Si hace falta, fija las reglas del juego al principio de la reunion.",
+    "Y si a tu equipo le va a parecer divertido y util en vez de ridiculo, pon un objeto a la puerta, del tipo guardarropa de egos.",
+    "Para que busquen la mejor respuesta en vez de la validacion de su ego, haz que cambien de papel: si alguien lleva rato defendiendo A, pidele que empiece a defender B.",
+    "Si el debate va a durar un rato, avisales de antemano de que les vas a pedir que cambien de papel. El texto dice que cuando la gente sabe que va a tener que defender el punto de vista de otro, escucha con mas atencion de forma natural."
+  ],
+  "resumen_teorico": "Sale de fuentes/scott_radical_candor/cap_07.md, lineas 225 a 229, bajo el rotulo Keep the conversation focused on ideas not egos, y es la primera de las tecnicas que el libro ofrece dentro del paso DEBATE de la rueda de hacer cosas. La pieza tiene dos mitades y las dos son inventario del libro: los actos de reconduccion (intervenir, redirigir, prohibir la propiedad de la idea, no dejarse secuestrar, recordar la meta, fijar reglas, poner el objeto) y la tecnica del cambio de papeles con su aviso previo. Lo que hace que esto sea procedimiento y no postura es que el texto nombra los disparadores por sus palabras exactas: las cuatro frases que hay que oir para intervenir estan escritas en el propio parrafo. RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 10 pasos, 10 TRANSCRIPCION, 0 PUENTE. P1 a P8 de la linea 227; P9 y P10 de la linea 229. LO QUE EL TEXTO NO DICE Y POR ESO NO ESTA AQUI: cuales son esas reglas del juego que se fijan al principio, cuanto es un rato largo para avisar del cambio de papeles, y que se hace con quien se niega a cambiar de papel.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-12"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "atribuciones": []
+}

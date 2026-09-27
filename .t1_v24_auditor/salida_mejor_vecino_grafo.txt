@@ -1,0 +1,21 @@
+poblacion: 345 = 214 grafo + 131 bandejas
+candidatos de cap_14: 15
+
+candidato                                                max GRAFO  mejor vecino DEL GRAFO                       max total
+aplicar_consecuencias_nota_apoyar_fuerzas_persona            0.109  alinear_prioridades_reporte_directivo            0.130
+calibrar_notas_reunion_jefes_pares                           0.089  reservar_valor_unico_prioridades_arriba          0.134
+decidir_poner_nota_comunicar_proposito_limites               0.098  atender_modo_supervivencia_equipo                0.256
+elegir_categorias_nota_palabras_propias_empresa              0.100  conducir_entrevista_cronologica_trayectoria      0.140
+elegir_palabras_nota_definirlas_empresa_entera               0.100  elegir_recolocar_despedir_persona                0.122
+escribir_escaleras_puesto_evitar_dos_extremos                0.085  delimitar_franqueza_radical_cinco_noes           0.089
+evaluar_desempenio_dos_veces_anio                            0.074  evaluar_cultura_empresa_adjetivos                0.160
+fijar_cuatro_notas_calcular_nota_global                      0.096  aprovechar_formacion_reglada                     0.135
+hacer_critica_pares_transparente_ensenar_escribirla          0.096  calibrar_vision_propia_opinion_ajena             0.159
+mantener_proceso_evaluacion_ligero_vigilar_crecimiento       0.089  delimitar_franqueza_radical_cinco_noes           0.164
+montar_equipo_gestion_desempenio_revisar_sistema             0.081  celebrar_pequenias_victorias                     0.129
+montar_evaluacion_360_grados_ligera_pares                    0.098  delimitar_franqueza_radical_cinco_noes           0.164
+presionar_curva_notas_evitar_forzarla                        0.078  convertir_cualquiera_mentor                      0.135
+recorrer_trece_elementos_proceso_evaluacion_formal           0.104  decidir_directivo_no_encaja_papel                0.256
+repartir_notas_publicar_reparto_esperado                     0.102  comparar_motivacion_resultado_papel              0.106
+
+EL MEJOR VECINO DE GRAFO DE TODO cap_14: 0.109  alinear_prioridades_reporte_directivo

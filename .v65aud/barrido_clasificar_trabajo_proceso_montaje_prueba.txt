@@ -1,0 +1,1 @@
+clasificar_trabajo_proceso_montaje_prueba poblacion 479 (366 grafo mas 113 bandejas) vecinos 1

@@ -1,0 +1,4 @@
+| capitulo | nodos | **pasos escritos** | **PUENTE** | **PASOS INVENTADOS** |
+|---|---:|---:|---:|---:|
+| **`cap_07`** (lote 4, `scott_radical_candor`) | 12 | **90** | **0** | **0,00 por ciento** |
+| **total del tramo de esta vuelta** | 12 | **90** | **0** | **0,00 por ciento** |

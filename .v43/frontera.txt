@@ -1,0 +1,56 @@
+LA BANDEJA DE cuarentena/grove_high_output, CONTADA DE SUS FICHEROS
+
+| # | cap | pieza | candidato | pasos | d005 |
+|---:|---|---|---|---:|---|
+| 1 | `cap_01` | `P12` | `revisar_tres_preguntas_valor_carrera` | 7 | entra |
+| 2 | `cap_02` | `P2` | `construir_flujo_produccion_paso_limitante` | 10 | entra |
+| 3 | `cap_02` | `P5` | `clasificar_trabajo_proceso_montaje_prueba` | 7 | entra |
+| 4 | `cap_02` | `P6` | `rehacer_flujo_paso_limitante_capacidad` | 6 | entra |
+| 5 | `cap_02` | `P7` | `equilibrar_capacidad_personal_inventario_plazo` | 8 | entra |
+| 6 | `cap_02` | `P9` | `preferir_inspeccion_proceso_prueba_destructiva` | 6 | entra |
+| 7 | `cap_02` | `P10` | `dimensionar_inventario_materia_prima_reposicion` | 7 | entra |
+| 8 | `cap_02` | `P11` | `detectar_arreglar_fallo_etapa_menor_valor` | 6 | entra |
+| 9 | `cap_03` | `P2` | `elegir_cinco_indicadores_diarios_fabrica` | 10 | entra |
+| 10 | `cap_03` | `P3` | `emparejar_indicadores_efecto_contraefecto` | 7 | **APARTADO** |
+| 11 | `cap_03` | `P4` | `elegir_indicador_salida_trabajo_administrativo` | 7 | **APARTADO** |
+| 12 | `cap_03` | `P7` | `representar_actividad_caja_negra_ventanas` | 9 | entra |
+| 13 | `cap_03` | `P9` | `construir_indicador_linealidad_alerta_temprana` | 9 | entra |
+| 14 | `cap_03` | `P10` | `construir_indicador_tendencia_patron` | 6 | **APARTADO** |
+| 15 | `cap_03` | `P11` | `construir_grafico_escalonado_pronosticos` | 8 | **APARTADO** |
+| 16 | `cap_03` | `P12` | `archivar_indicadores_resolver_problemas` | 4 | **APARTADO** |
+| 17 | `cap_03` | `P13` | `elegir_fabricar_pedido_pronostico` | 9 | **APARTADO** |
+| 18 | `cap_03` | `P14` | `casar_flujo_fabricacion_flujo_ventas` | 12 | entra |
+| 19 | `cap_03` | `P15` | `dimensionar_plantilla_administrativa_pronostico` | 7 | entra |
+| 20 | `cap_03` | `P17` | `decidir_aceptar_rechazar_material_defectuoso` | 8 | entra |
+| 21 | `cap_03` | `P18` | `elegir_inspeccion_barrera_monitorizacion` | 12 | entra |
+| 22 | `cap_03` | `P19` | `variar_frecuencia_inspeccion_nivel_calidad` | 6 | entra |
+| 23 | `cap_03` | `P23` | `simplificar_trabajo_reducir_numero_pasos` | 7 | entra |
+
+| capitulo | en bandeja | apartados por `d005` | utiles |
+|---|---:|---:|---:|
+| `cap_01` | 1 | 0 | 1 |
+| `cap_02` | 7 | 0 | 7 |
+| `cap_03` | 15 | 6 | 9 |
+| **TOTAL** | **23** | **6** | **17** |
+
+EL ORDEN DEL LIBRO, Y EL TECHO DE 15 CORTA DONDE CORTA
+
+| turno | cap | pieza | candidato | esta vuelta |
+|---:|---|---|---|---|
+| 1 | `cap_01` | `P12` | `revisar_tres_preguntas_valor_carrera` | **SI** |
+| 2 | `cap_02` | `P2` | `construir_flujo_produccion_paso_limitante` | **SI** |
+| 3 | `cap_02` | `P5` | `clasificar_trabajo_proceso_montaje_prueba` | **SI** |
+| 4 | `cap_02` | `P6` | `rehacer_flujo_paso_limitante_capacidad` | **SI** |
+| 5 | `cap_02` | `P7` | `equilibrar_capacidad_personal_inventario_plazo` | **SI** |
+| 6 | `cap_02` | `P9` | `preferir_inspeccion_proceso_prueba_destructiva` | **SI** |
+| 7 | `cap_02` | `P10` | `dimensionar_inventario_materia_prima_reposicion` | **SI** |
+| 8 | `cap_02` | `P11` | `detectar_arreglar_fallo_etapa_menor_valor` | **SI** |
+| 9 | `cap_03` | `P2` | `elegir_cinco_indicadores_diarios_fabrica` | **SI** |
+| 10 | `cap_03` | `P7` | `representar_actividad_caja_negra_ventanas` | **SI** |
+| 11 | `cap_03` | `P9` | `construir_indicador_linealidad_alerta_temprana` | **SI** |
+| 12 | `cap_03` | `P14` | `casar_flujo_fabricacion_flujo_ventas` | **SI** |
+| 13 | `cap_03` | `P15` | `dimensionar_plantilla_administrativa_pronostico` | **SI** |
+| 14 | `cap_03` | `P17` | `decidir_aceptar_rechazar_material_defectuoso` | **SI** |
+| 15 | `cap_03` | `P18` | `elegir_inspeccion_barrera_monitorizacion` | **SI** |
+| 16 | `cap_03` | `P19` | `variar_frecuencia_inspeccion_nivel_calidad` | pasa a la vuelta siguiente |
+| 17 | `cap_03` | `P23` | `simplificar_trabajo_reducir_numero_pasos` | pasa a la vuelta siguiente |

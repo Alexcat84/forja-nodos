@@ -1,0 +1,21 @@
+===== usar_banco_nueve_preguntas_entrevista | grafo
+  titulo: Usar el banco de nueve preguntas que un grupo de mandos considero las mejores para entrevistar a un candidato
+  fuente: ['grove_high_output']
+  cond: Cuando el mando va a entrevistar a un candidato a un puesto y necesita preguntas concretas para la hora o dos de entrevista de que dispone.
+  P1. Pide al candidato que describa proyectos que fueron muy valorados por su direccion, en especial por los niveles por encima de su supervisor inmediato.
+  P2. Preguntale cuales son sus debilidades y que esta haciendo para eliminarlas.
+  P3. Pidele que te convenza de por que tu empresa deberia contratarlo.
+  P4. Preguntale que problemas esta encontrando en su puesto actual, como los esta resolviendo y que podria haber hecho para evitar que aparecieran.
+  P5. Preguntale por que cree que esta listo para este nuevo puesto.
+  P6. Preguntale cuales considera sus logros mas importantes y por que fueron importantes para el.
+  P7. Preguntale cuales considera sus fracasos mas importantes y que aprendio de ellos.
+  P8. Preguntale por que cree que deberia elegirse a un ingeniero para un puesto de marketing, variando esta pregunta segun la situacion.
+  P9. Preguntale cual fue el curso o proyecto mas importante que completo en su etapa universitaria y por que fue tan importante.
+===== reciclar_empleado_ascendido_mas_alla_capacidad | grafo
+  titulo: Reciclar abiertamente a un empleado ascendido mas alla de su capacidad: reconocer el error de la direccion, devolverlo a un puesto que sepa hacer bien y apoyarlo frente a la verguenza
+  fuente: ['grove_high_output']
+  cond: Cuando una persona fue ascendida a un puesto que la supera y lleva demasiado tiempo rindiendo por debajo de lo esperado en el.
+  P1. Reconoce que el error fue de la direccion al juzgar mal la disposicion del empleado para asumir mas responsabilidad, en vez de dejar que el empleado cargue con la culpa y termine saliendo de la empresa.
+  P2. Toma medidas deliberadas y directas para colocar a la persona de vuelta en un puesto que sepa desempeñar bien, en lugar de forzar su salida de la empresa.
+  P3. Apoya al empleado frente a la verguenza que es probable que sienta por el retroceso.
+  P4. Haz el reciclaje abiertamente y no a escondidas, porque hecho asi la verguenza dura mucho menos de lo que todos esperan.

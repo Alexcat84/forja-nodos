@@ -1,0 +1,3 @@
+LOS DOS EXTREMOS DE LA CORRECCION 9, medidos hoy
+recorrer_rueda_conscientemente_cultura_equipo    grafo=0 bandeja=1
+recorrer_rueda_hacer_cosas_equipo                grafo=0 bandeja=1

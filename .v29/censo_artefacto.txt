@@ -1,0 +1,6 @@
+=== los cuatro ficheros que D.34.2 retira, medidos ===
+  AUSENTE   (retirado del arbol)  docs/loop/REPORTE.md
+  AUSENTE   (retirado del arbol)  docs/loop/loop.log
+  AUSENTE   (retirado del arbol)  docs/loop/ultimo_extractor.json
+  AUSENTE   (retirado del arbol)  docs/loop/ultimo_auditor.json
+  PRESENTE  0 bytes  docs/loop/ultimo_apertura.json

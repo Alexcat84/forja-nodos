@@ -1,0 +1,7 @@
+ADUANA DE INSERCION, candidato 'pasear_organizacion_hallar_problemas_pequenios'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 348   (268 del grafo mas 80 que esperan en bandejas)
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 269
+  censos escritos: denominaciones

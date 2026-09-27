@@ -1,0 +1,7 @@
+| | al abrir | **al cerrar** |
+|---|---:|---:|
+| nodos en `dataset/nodos.jsonl` | 239 | **243** |
+| veredictos en `bitacora/VEREDICTOS.jsonl` | 264 | **289** |
+| candidatos en bandeja, lote 4 | 106 | **102** |
+| ya insertados y archivados, lote 4 | 36 | **40** |
+| candidatos en bandeja, lote 5 | 3 | **3** |

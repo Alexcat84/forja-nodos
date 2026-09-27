@@ -1,0 +1,16 @@
+nodos al abrir la v27 : 234
+nodos hoy             : 239
+aristas al abrir v27  : 84
+aristas hoy           : 87
+NUEVAS                : 3
+   + aprender_resultados_vencer_dos_presiones > cambiar_posicion_hechos_explicar_cambio
+   + decidir_momento_despedir_persona > despedir_persona_franqueza_radical
+   + despedir_persona_respeto_franqueza > despedir_persona_franqueza_radical
+RETIRADAS             : 0
+
+NODOS NUEVOS          : 5
+   * escuchar_callado_equipo_tranquilizar_incomodo   (11 pasos)
+   * escuchar_ruidoso_opinion_fuerte_pedir_agujeros   (13 pasos)
+   * crear_cultura_escucha_equipo   (17 pasos)
+   * explicar_idea_facil_comprender_oyente   (13 pasos)
+   * centrar_debate_ideas_fuera_egos   (10 pasos)

@@ -1,0 +1,16 @@
+==============================================================================
+FICHA: construir_flujo_produccion_paso_limitante   (10 pasos)
+  poblacion barrida: 390 nodos (grafo + bandejas, filtro canonico)
+  medidos al digito: 389 de 389; descartados: 0
+  umbral de la casa (config/umbrales.json): 0.35
+  reloj del barrido: 426.7 s
+  LOS 8 VECINOS MAS PROXIMOS, LISTA ORDENADA ENTERA:
+    0.4115  [bandeja/grove_high_output] rehacer_flujo_paso_limitante_capacidad
+    0.3972  [bandeja/grove_high_output] preferir_inspeccion_proceso_prueba_destructiva
+    0.2868  [bandeja/grove_high_output] clasificar_trabajo_proceso_montaje_prueba
+    0.2809  [bandeja/grove_high_output] dimensionar_inventario_materia_prima_reposicion
+    0.2655  [bandeja/grove_high_output] detectar_arreglar_fallo_etapa_menor_valor
+    0.2652  [bandeja/marquet_turn_the_ship] cambiar_forma_trabajar_conservar_plantilla
+    0.2442  [bandeja/grove_high_output] equilibrar_capacidad_personal_inventario_plazo
+    0.2437  [grafo                   ] revisar_tres_preguntas_valor_carrera
+  vecinos por encima del umbral 0.35: 2

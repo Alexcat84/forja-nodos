@@ -1,0 +1,10 @@
+====================================================================================================
+empezar_cultura_franqueza_radical [ grafo ] fuentes: ['scott_radical_candor']
+  CONDICION: Cuando vas a poner en marcha una cultura de franqueza radical en tu equipo, la gente esta de acuerdo con la idea y se pone nerviosa a la hora de practicarla.
+  ENTREGABLE: El arranque hecho en el orden del texto: la idea explicada, la critica pedida antes que dada, el elogio dado antes que la critica, y la frontera peligrosa entendida antes de empezar a criticar.
+    1. Cuenta con lo que el texto observa a menudo que habla de esto: la gente esta de acuerdo con la idea y se pone nerviosa ante la idea de ponerla en practica.
+    2. Empieza explicando la idea.
+    3. Y despues pide a tu gente que sea radicalmente franca contigo.
+    4. Dicho de otra manera, que es como el propio texto lo resume: empieza recibiendo guia, no repartiendola.
+    5. Cuando empieces a darla, empieza por el elogio y no por la critica.
+    6. Cuando pases a la critica, asegurate de entender donde esta la frontera peligrosa entre la franqueza radical y la agresion odiosa.

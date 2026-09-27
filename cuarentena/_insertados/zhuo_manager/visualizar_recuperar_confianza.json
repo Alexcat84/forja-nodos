@@ -1,0 +1,56 @@
+{
+  "id": "visualizar_recuperar_confianza",
+  "titulo": "Cerrar los ojos y visualizar para recuperar la confianza",
+  "denominaciones": {
+    "nombre_largo": "El tercer consejo del Pozo: los cinco ejercicios de visualizacion, con los dos estudios que el libro cita detras",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "close your eyes and visualize"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando estas en el Pozo, te sientes atascado y quieres recuperar confianza, o cuando tienes por delante algo que te pone nervioso.",
+  "entregable_esperado": "Un empujon de seguridad en ti mismo, conseguido con unos pocos minutos y un sitio tranquilo, sin haber hecho todavia la cosa que temes.",
+  "escala_minima": "Una persona, unos pocos minutos y un sitio tranquilo para relajarse. El libro dice expresamente que no hace falta mas.",
+  "atribuciones": [
+    {
+      "cifra": "un grupo de jugadores de baloncesto a los que se instruyo para visualizarse metiendo tiros libres cada dia, sin practicar fisicamente, lo hizo casi tan bien como otro grupo que practico tiros libres veinte minutos al dia",
+      "autor": "Alan Richardson",
+      "fuente": "zhuo_manager",
+      "fecha_corte": "no consta en el texto: el libro lo presenta como psicologo australiano, sin anio de estudio"
+    },
+    {
+      "cifra": "el grupo que fue al gimnasio cada dia aumento su fuerza muscular un 30 por ciento, y el grupo que recorrio el entrenamiento solo en su cabeza la aumento un 13,5 por ciento, casi la mitad del beneficio",
+      "autor": "no nombrado en el texto, que solo dice otro estudio",
+      "fuente": "zhuo_manager",
+      "fecha_corte": "no consta en el texto: ni autor, ni muestra, ni anio"
+    }
+  ],
+  "pasos_accionables": [
+    "Parte de por que esto funciona: los estudios de imagen cerebral muestran que cuando nos imaginamos haciendo algo se activan las mismas partes del cerebro que si de verdad estuvieramos haciendo esa actividad.",
+    "Cuenta con lo que eso permite: podemos enganiarnos para obtener algunos de los beneficios de una actividad simplemente cerrando los ojos e imaginandola en nuestra cabeza.",
+    "Ten delante las dos pruebas que el libro cita. El psicologo australiano Alan Richardson descubrio que un grupo de jugadores de baloncesto instruidos para visualizarse metiendo tiros libres cada dia, sin practicar fisicamente, lo hizo casi tan bien como otro grupo que practico tiros libres veinte minutos al dia. Y otro estudio comparo a gente que iba al gimnasio cada dia con gente que se imaginaba entrenando: los del gimnasio aumentaron su fuerza muscular un treinta por ciento y los de la cabeza un trece coma cinco por ciento, casi la mitad del beneficio.",
+    "El libro suma la frase del golfista Jack Nicklaus: nunca golpeo una bola, ni siquiera entrenando, sin tener antes una imagen muy nitida y enfocada de ella en mi cabeza, como una pelicula en color.",
+    "Usalo tambien para lo que aqui importa: la visualizacion no solo mejora tus resultados, tambien te ayuda a encontrar confianza cuando estas en el Pozo. Si te sientes atascado, prueba estos cinco ejercicios.",
+    "Primero: imagina la ansiedad, el miedo y la confusion que sientes como algo que no es personal tuyo sino universal, que todo el mundo enfrenta. El libro pone dos ejemplos: Sheryl Sandberg admitiendo en su libro Lean In que le preocupaba tanto lo que sus colegas pudieran pensar de que se fuera a las cinco de la tarde que salia a escondidas del edificio cuando nadie miraba, y Reese Witherspoon confesando que casi rechaza ser embajadora de los asuntos de las mujeres porque le aterraba dar discursos ante audiencias grandes. Las dos son mujeres de muchisimo exito y modelos que inspiran, y aun asi tienen las mismas dudas, porque estas emociones son perfectamente humanas.",
+    "Segundo: imaginate teniendo un exito enorme en algo que te pone nervioso. Tienes maniana una presentacion grande? Imaginate entrando en la sala y dedicandole una sonrisa a la audiencia. Veteo de pie y erguido, hablando con aplomo. Ve al publico atento y asintiendo mientras alguien hace una pregunta dificil y tu la respondes con seguridad. La clave de una visualizacion que funcione es hacer la escena todo lo concreta que puedas.",
+    "Tercero: imagina un momento del pasado en el que asumiste un reto dificil y lo bordaste. Recorre esa experiencia entera con detalle vivido. Te acuerdas de lo temible que parecia el reto al principio? Repasa como abordaste el problema. Recuerda el momento en que te diste cuenta de que ibas a estar bien. Y detente en particular en esa sensacion de exito del final: el orgullo que sentiste, los halagos que recibiste, la confianza que ganaste.",
+    "Cuarto: imagina una sala llena de tus personas favoritas diciendote lo que quieren de ti. Imaginalas reunidas en circulo, cada una por turno derramando su carinio y su admiracion por ti. La autora vuelve a los discursos de familia y amigos del dia de su boda, y a lo maravilloso que fue baniarse en su afecto.",
+    "Quinto: imagina como se sentiria tu dia si estuvieras fuera del Pozo. Cierra los ojos y recorre cada hora de tu calendario, y centrate en el estado mental en el que te gustaria estar: energico durante el ejercicio de la maniana, lleno y satisfecho despues del desayuno, amable al entrar a la oficina saludando a la gente, metido en tu primera reunion, y asi.",
+    "Convierte esto en habito, porque la visualizacion es una herramienta potente que no requiere mucho, solo unos pocos minutos y un sitio tranquilo para relajarse, y te da un empujon de seguridad en ti mismo para lo que venga."
+  ],
+  "resumen_teorico": "Es el tercer consejo del Pozo y el unico de los seis que el libro respalda con estudios antes de pedir nada. Su inventario propio son los cinco ejercicios, escritos uno a uno y cada uno con su guion concreto, que es lo que impide que visualizar quede en un verbo sin contenido. El libro ordena las dos utilidades y no las mezcla: la visualizacion mejora resultados, y ademas da confianza en el Pozo. El coste tambien lo pone el, unos minutos y un sitio tranquilo. Lo que el libro NO dice, y por eso no esta escrito: ni cual de los cinco ejercicios va con cual situacion, ni cuantas veces se repiten."
+}

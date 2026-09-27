@@ -1,0 +1,43 @@
+{
+  "id": "avisar_pronto_incumplimiento_expectativas",
+  "titulo": "Avisar pronto de que alguien no cumple expectativas, en vez de guardarlo para la revision",
+  "denominaciones": {
+    "nombre_largo": "Por que toda decepcion grande es un fallo de fijar expectativas, con las tres explicaciones que se hace quien recibe la sorpresa y las tres situaciones que el libro resuelve",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "every major disappointment is a failure to set expectations"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-10"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando alguien de tu equipo no esta cumpliendo expectativas y todavia no se lo has dicho de forma explicita, y tambien cada vez que te veas profundamente decepcionado o decepcionando a otro.",
+  "entregable_esperado": "Dicho de forma explicita y cuanto antes que la persona no esta cumpliendo expectativas, con tiempo suficiente para que pueda darle la vuelta antes de que llegue la revision.",
+  "escala_minima": "Una sola persona a cargo y una sola conversacion. El libro razona el caso con un directivo, una persona a cargo y seis semanas por delante.",
+  "pasos_accionables": [
+    "Separa las dos preguntas que la jefa de la autora le separo cuando ella le conto sus preocupaciones sobre alguien de su equipo: primero, esta cumpliendo expectativas o no, y segundo, se lo has dicho de forma explicita?",
+    "Da por hecho que dar mucha opinion especifica de tarea no es lo mismo que ser directo sobre como esta yendo el desempenio de alguien, que es exactamente donde la autora dice que fallo.",
+    "Y no esperes al ciclo de revision: si la primera vez que alguien oye que no cumple expectativas es en su revision de desempenio, se va a sentir fatal. El razonamiento que el libro recoge de su jefa es que, como en su empresa las revisiones resumian el desempenio de los seis meses anteriores, si aquella persona llevaba la mayor parte de ese tiempo sin cumplirlas habia que haberselo dicho mucho antes.",
+    "Ten delante las tres explicaciones que se dara quien reciba esa sorpresa, y que segun el libro ninguna es buena. La primera: la revision no es justa, porque si las cosas estaban tan mal por que no ha salido hasta ahora, esto debe de ser un error.",
+    "La segunda: la revision es justa, pero mi jefe fue negligente y no se dio cuenta de que yo estaba rindiendo por debajo hasta el final del semestre.",
+    "La tercera: la revision es justa, pero mi jefe no fue honesto compartiendo su opinion conmigo por el camino, asi que no tuve oportunidad de mejorar.",
+    "Cuenta con la razon por la que interesa avisar pronto y no solo con que sea justo: cuanto antes interiorice la persona que no esta cumpliendo expectativas, mas rapido puede potencialmente darle la vuelta, y mas suaves iran vuestras conversaciones de desempenio futuras.",
+    "Aplicalo a la situacion en que tu persona a cargo ha dejado claro que quiere un ascenso y tu no crees que vaya a pasar en los proximos seis meses: no esperes a la revision siguiente, dile ya que entiendes que quiere trabajar hacia un ascenso y cuales son los huecos que ves, detalla cuales son tus criterios de ascenso, y durante los meses siguientes entrenala y dale opinion frecuente sobre como va respecto a esas expectativas, para que nunca tenga que preguntarselo.",
+    "Aplicalo a la situacion en que acabas de asignarle un proyecto nuevo y exigente y quieres seguirlo de cerca sin que se sienta sin poder ni vigilada por encima del hombro: al principio del proyecto dile como piensas involucrarte, se explicito en que quieres revisar el trabajo dos veces por semana y hablar juntos de los problemas mas importantes, y dile que decisiones esperas tomar tu y cuales debe tomar ella.",
+    "Aplicalo a la situacion en que tu equipo se ha fijado la meta de lanzar en octubre y en junio ya se ve que no llegara: fija la expectativa de que quieres oir cualquier preocupacion sobre la fecha en cuanto aparezca, porque asi estableces que es seguro hablar de los problemas incluso en las fases tempranas, y porque enterarte en junio te deja mas opciones, poner mas gente, recortar funcionalidades o aceptar el retraso y apuntar a una fecha nueva.",
+    "Asume que no se puede esperar perfeccion, que somos humanos y que habra fallos, proyectos que se pasan de plazo y gente que se equivoca: lo que hace que la gente se recupere de los errores con dignidad es reajustar las expectativas tan rapido como sea posible.",
+    "Y cada vez que te veas profundamente decepcionado, o decepcionando a otro, preguntate donde se te paso fijar expectativas claras y como podrias hacerlo mejor en el futuro."
+  ],
+  "resumen_teorico": "La seccion sostiene una tesis fuerte, que toda decepcion grande es un fallo de fijar expectativas, y la razona con un caso propio de la autora en el que su jefa le separo dos preguntas que ella tenia pegadas. El inventario propio del libro esta en dos sitios y por eso la linea es procedimentable: las tres explicaciones que se dara quien reciba la sorpresa, escritas una a una y numeradas, y las tres situaciones que el libro resuelve una a una con su propio titulo. Las tres situaciones entran aqui dentro y no a nodo propio porque el libro las presenta como ejemplos de la misma doctrina, con la formula a continuacion van algunos ejemplos, y el manual dice que el caso no es la casa. Lo que el libro NO dice, y por eso no esta escrito aqui, es cuanto es pronto ni con que frecuencia se repite el aviso."
+}

@@ -1,0 +1,15 @@
+candidato que ENTRO                                          cap     pasos   T   P corr
+usar_banco_nueve_preguntas_entrevista                        cap_15      9   7   2    2
+responder_primer_aviso_renuncia_subordinado                  cap_15      7   6   1    1
+gestionar_retencion_subordinado_valioso_renuncia             cap_15      6   4   2    2
+reciclar_empleado_ascendido_mas_alla_capacidad               cap_16      4   4   0    0
+priorizar_lista_entrenamiento_subordinados                   cap_17      5   5   0    0
+desarrollar_primer_curso_entrenamiento                       cap_17      7   7   0    0
+pedir_critica_anonima_curso_entrenamiento_dictado            cap_17      4   3   1    1
+entraron: 7 de la tanda de 7 | pasos sin fila de lectura: 0 []
+
+| capitulo | candidatos que entraron | pasos | PUENTE marcados | por ciento | corregidos en la ficha | PUENTE que entro |
+|---|---:|---:|---:|---:|---:|---:|
+| `cap_15` | 3 | 22 | 5 | 22,73 | 5 | 0 |
+| `cap_16` | 1 | 4 | 0 | 0,00 | 0 | 0 |
+| `cap_17` | 3 | 16 | 1 | 6,25 | 1 | 0 |

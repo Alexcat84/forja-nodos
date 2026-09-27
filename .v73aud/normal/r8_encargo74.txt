@@ -1,0 +1,47 @@
+  L1 - ['74', '078', '077', '084', '006', '13'] [] | # ENCARGO DE LA VUELTA 74: **SANEAMIENTO. SE PAGAN `d078` Y `d077`, QUE SON DE LAS FICHAS DE GROVE Q
+  L3 - ['11', '72', '73'] [] | *Linea **serial** (`extraccion-mundo-11`). Escrito por el auditor al cerrar la `ACTA 72`, que audito
+  L4 - ['1.4'] [] | `AUDITOR_FORJA.md` seccion `1.4`. **Toda cifra de medida de esta pagina va dentro de un bloque `$` c
+  L5 S ['72', '8', '72', '72.11'] [] | su misma linea la seccion de la `ACTA 72` donde esta pegada** (`R8`, `ACTA 72` `72.11`).*
+  L14 - ['0'] [] | ## 0. **POR QUE ESTA VUELTA NO INSERTA, Y LO DICE EL INSTRUMENTO**
+  L20 - ['58'] [] | **La cadencia la cuenta el registro, no el encargo** (`D.58`): esta vuelta **no inserta nada**, y la
+  L21 S ['73', '73', '72', '72.1'] [] | listas la `73` entran en la vuelta siguiente, contra la huella que la `73` sello y la `ACTA 72` repr
+  L22 - ['031'] [] | esta vuelta no toca `cuarentena/`**: una ficha que cambie ahora deja sin valor su barrido y su huell
+  L28 - ['18', '084', '006'] [] | **La frase de *continuar desde `cap_18`* es de extraccion y no aplica**: Grove esta minado entero. `
+  L47 - ['1', '72'] [] | ## TAREA 1: **REGISTROS DE LA `ACTA 72`**
+  L49 - ['47'] [] | En una tabla corta y sin reabrir el argumento (`D.47`):
+  L53 S ['73', '72', '72.1'] [] | | **Tu vuelta, reproducida**: lo que movio fuera de `docs/loop/` y de `.v73ext/` son las fichas corr
+  L54 S ['73.9', '72.3'] [] | | **Tu fidelidad, tu barrido y tus veredictos, cruzados enteros contra mi lectura sellada**: la unic
+  L55 S ['73.1', '73.10', '73.9', '60', '60.5', '2', '72.5'] ['diez'] | | **Tus diez discutibles se sostienen**, `D73.1` a `D73.10`; **`D73.9` lo gana tu lectura**, y la `A
+  L56 S ['73.2', '73.5', '031', '72.2', '72.7'] [] | | **Una afirmacion falsa tuya**: la fila `D73.2` de tu tabla `73.5.d` dice *despues del commit*, y e
+  L57 S ['5', '72.0'] [] | | **`R5` cumplido** en tu tramo | `72.0` |
+  L59 - ['2', '078', '077'] [] | ## TAREA 2: **`d078` Y `d077`, LAS DEUDAS DE LAS FICHAS DE GROVE**
+  L61 - ['1', '078', '3', '5'] [] | 1. **`d078`** pide decidir el dia de la insercion si los pasos `3` y `5` de `responder_primer_aviso_
+  L62 S ['73.5', '5', '3', '72', '72.5'] ['dos'] | **Ya esta decidido**: tu `D73.5` los dejo los dos, por lo que el `5` trae y el `3` no, y la `ACTA 72
+  L64 - ['2', '077', '58'] [] | 2. **`d077`** pide releer las fichas de la tanda `58` contra su cola de lectura real antes de que en
+  L65 - ['077'] [] | por instrumento y no de memoria: las fechas de la cita de `d077` y lo que sus fichas dicen de si mis
+  L69 - ['3', '74', '74'] [] | 3. **Paga con `python scripts/deuda.py --pagar <id> --vuelta 74 --como "..."`**, con el `como` en un
+  L70 - ['74', '69'] [] | declara la vuelta con `python scripts/deuda.py --saneamiento --vuelta 74`, como la `69`.
+  L72 - ['3', '084', '006', '13'] [] | ## TAREA 3: **`d084` Y `d006`: LA FIDELIDAD DE LOS NODOS DE `cap_13` DE SCOTT QUE NADIE HA FIRMADO**
+  L74 - ['084', '13'] [] | Los que nombra `d084`, **leidos contra `fuentes/scott_radical_candor/cap_13.md` entero**, cada paso 
+  L75 - ['73'] [] | linea, en un fichero con una fila por paso como `.v73ext/fidelidad.tsv`, y sus citas comprobadas con
+  L76 - ['73'] [] | `.v73ext/citas.sh`. Sus pasos, por instrumento:
+  L83 - ['1', '62', '62.5', '71.9'] [] | 1. **La clausula reescrita CUENTA como `P`** (`ACTA 62` `62.5`), y **la posibilidad convertida en or
+  L84 S ['70', '70.5', '73.3', '72', '72.5'] [] | sostenida en la `ACTA 70` `70.5`; `D73.3`, sostenida en la `ACTA 72` `72.5`). **Marca discutible tod
+  L86 - ['2'] [] | 2. **ESTOS NODOS VIVEN EN EL GRAFO: NO LOS CORRIGES.** Si encuentras un `PUENTE`, **no tocas `datase
+  L88 - ['30', '73'] [] | de fidelidad `D.30`, y **eso lo adjudica la `ACTA 73` antes de que nadie mueva un dato.**
+  L89 - ['3', '73'] [] | 3. **`PASOS INVENTADOS`, una fila por nodo y el total del capitulo**, por una copia de `.v73ext/cont
+  L90 - ['58', '58.2', '60', '13', '084', '006'] [] | mayor de la `ACTA 58` `58.2.d` vuelto a correr al final (`python .v60aud/libro_mayor_cap13.py`), peg
+  L92 - ['73'] [] | la de la `ACTA 73`: tu pagas, yo firmo, y si mi firma no llega el pago se corrige por correccion dec
+  L94 - ['084'] [] | **Si no te cabe entero, parte por nodo**, el mas corto primero, y **lo que no hagas lo dices con su 
+  L97 - ['4'] [] | ## TAREA 4: **EL CIERRE**
+  L99 - ['73'] [] | - **El censo antes y despues**, con una copia de `.v73ext/censo.sh`: **no se mueve nada.** Grafo, bi
+  L100 S ['72', '72.1'] [] | bandeja de Grove e insertados al abrir son los de la `ACTA 72` `72.1`, y al cerrar tienen que ser lo
+  L101 - ['73', '73'] [] | - **Las fichas de Grove, byte a byte las que sello la `73`**: `python .v73ext/pasos_y_huellas.py` vu
+  L102 - ['73'] [] | identica a `.v73ext/pasos_y_huellas.txt`, pegado.
+  L103 - ['61'] [] | - **`D.61`**: cada discutible ejecutado o cerrado. Ninguno abierto.
+  L104 - ['5', '64', '64', '64'] [] | - **`R5`** en cada bloque `$` de tu tramo, medido con `.v64ext/pegado64.py` y `.v64aud/normal/bloque
+  L105 - ['74'] [] | cambiada a la `74`, y pegado.
+  L108 - ['74'] [] | - Commitea `docs/loop/` y tu carpeta `.v74ext/`. **Si nada te obliga a parar, no escribas `PARA_ALEX
+  L117 - ['7', '55'] [] | - **NO TOCAS `src/`, `scripts/`, el banco, el arnes ni los protocolos** (`7.F`, `D.55`), **ni `APERT
+  L123 - [] ['Cero', 'cero'] | **Cero guiones largos y cero guiones medios. Deja correr el hook. Si algo contradice una regla vigen
+lineas del encargo: {'linea de bloque sangrado': 15, 'prosa con numero, con seccion de la ACTA 72': 10, 'prosa con numero, sin seccion de la ACTA 72': 36, 'prosa sin digito ni palabra de numero': 63} | suma: 124

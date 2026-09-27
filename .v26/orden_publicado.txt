@@ -1,0 +1,15 @@
+1. el que la aduana dejo EN COLA al cerrar la vuelta 25 : 1
+    1. decidir_momento_despedir_persona   (cap_06, 4 pares por leer)
+
+2. despues, el orden del libro, alfabetico por id dentro de cada unidad : 122
+   cap_06 : 6
+   cap_07 : 25
+   cap_08 : 12
+   cap_09 : 20
+   cap_10 : 14
+   cap_11 : 16
+   cap_12 : 2
+   cap_13 : 12
+   cap_14 : 15
+
+TOTAL en la bandeja del lote 4 : 123

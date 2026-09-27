@@ -1,0 +1,65 @@
+{
+ "id": "calibrar_ascensos_evitar_politica",
+ "titulo": "Calibrar los ascensos con tus iguales y conducir esa reunion sin que la politica la arruine, con los consejos que el texto da",
+ "denominaciones": {
+  "nombre_largo": "La reunion de calibracion de ascensos: por que hace falta, que hizo el comite de ascensos de ingenieria de Google y por que no es perfecto, y los consejos, rotulados uno a uno por el libro, para que la politica no arruine tu propia reunion de calibracion",
+  "otros_idiomas": [
+   {
+    "idioma": "ingles",
+    "termino": "PROMOTIONS"
+   },
+   {
+    "idioma": "ingles",
+    "termino": "Be fair"
+   },
+   {
+    "idioma": "ingles",
+    "termino": "calibration meetings"
+   }
+  ],
+  "sigla": ""
+ },
+ "condiciones_activacion": "Cuando se acerca un ciclo de ascensos y vais a decidir varios jefes a la vez, o cuando eres jefa de jefes y quieres que tus reportes calibren sus planes de ascenso antes de que se apruebe ninguno.",
+ "entregable_esperado": "Los ascensos calibrados entre iguales antes de aprobarse, con la lista de nombres y justificaciones organizada por nivel, las decisiones tomadas o mandadas a resolver fuera de la reunion, y la actividad de despeje hecha al terminar. Y si nadie quiere calibrar, la comprobacion de cordura hecha por ti sola.",
+ "pasos_accionables": [
+  "Parte de lo que el texto pone como causa: pocas cosas crean tanta sensacion de injusticia en un equipo como una jefa que asciende por favoritismo, o un jefe que asciende a la gente mucho mas rapido que el jefe del despacho de al lado.",
+  "Y cuenta con lo que pasa en la reunion donde se intenta arreglar eso, porque es lo que los consejos del texto vienen a prevenir: la politica se puede poner fea muy rapido, los desacuerdos se pueden personalizar demasiado, el desacuerdo callado se puede volver toxico, aparece el trapicheo de despacho (apoyo a tu persona que no lo merece si tu apoyas a la mia), y un rencor de un ciclo puede matar el ascenso de alguien que si lo merece en el ciclo siguiente.",
+  "Mira el mecanismo que el texto pone como mejor que ha visto, el del equipo de ingenieria de Google: comites de ascenso reunidos fuera de la oficina un dia dos veces al anio, que debatian los ascensos de las personas a cargo de OTROS y no de las suyas, a partir de un dosier de informacion relativamente objetiva sobre los logros de cada persona.",
+  "Quedate con lo que ese mecanismo consigue: el debate va sobre los meritos del ascenso de una persona y no sobre mi persona contra tu persona, y sobre todo es una solucion al problema de siempre del favoritismo del jefe.",
+  "Y quedate tambien con sus defectos, que el texto dice para que no lo copies a ciegas: tiende a premiar a quien hace los proyectos mas visibles en vez de a quien logra avances importantes entre bastidores, y las recomendaciones de algunas personas llegan mas lejos de lo que deberian.",
+  "Si tu empresa no llega a esos extremos, haz lo que el texto pone a tu alcance: confiere con tus iguales, o si eres jefa de jefes exige a todos tus reportes que calibren sus planes de ascenso entre ellos antes de que se apruebe ningun ascenso.",
+  "Primer consejo, preparate: pide a cada persona de tu equipo que mande una lista de la gente a la que piensa ascender, junto con una justificacion.",
+  "Si tienes un socio de recursos humanos, pidele que organice todos los nombres y las justificaciones por nivel y que monte una presentacion que haga la informacion facil de captar y de absorber.",
+  "Entra en la reunion habiendo revisado toda la informacion y preparada con tu propio punto de vista sobre cada ascenso, pero tambien con la mente abierta.",
+  "Segundo consejo, maneja el tiempo con cuidado y no dejes que los argumentos se alarguen demasiado: recorre todos los ascensos por nivel, del mas veterano al menos veterano.",
+  "Planifica que los ascensos mas veteranos ocupen mas tiempo por persona que los mas junior, pero no dejes que se lleven todo el tiempo.",
+  "Cuando un argumento se alargue demasiado, o decide tu misma en el momento, o pide a la gente que siga el debate fuera de la reunion y que venga a ti con una recomendacion o con un empate para que tu lo resuelvas.",
+  "Tercer consejo, llega en condiciones: duerme lo suficiente el dia antes, haz ejercicio esa maniana y desayuna bien, porque vas a necesitar estar tranquila y, si es posible, divertida ese dia.",
+  "Y anima a todo tu equipo a hacer lo mismo.",
+  "Cuarto consejo, cuando se haya terminado todo, reconoce en voz alta lo duras que son estas conversaciones.",
+  "Planifica alguna clase de actividad de despeje, como un paseo juntos. El texto aniade su propia reserva: en general no recomienda mezclar alcohol y trabajo, pero si hay un momento para ir a tomar algo juntos, es este.",
+  "Quinto consejo, y es la salida para cuando nadie quiere: si ni tu empresa ni tu jefe parecen preocupados por que los ascensos sean justos, propon siempre a tus iguales juntaros y calibrar.",
+  "Y si no quieren, haz tu sola la comprobacion de cordura que el texto describe: mira a la gente que piensas ascender, mira a las demas personas que hay en la empresa, y comprueba.",
+  "Cuenta con la razon por la que esa comprobacion importa: no le haces ningun favor a nadie ascendiendolo cuando el resto del equipo siente que no lo merece de verdad."
+ ],
+ "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/scott_radical_candor/cap_10.md, unidad Cap. 7, Team. Sale de las lineas 205 a 223, bajo los rotulos PROMOTIONS y Be fair. ES LA PIEZA P30 DE LA FRONTERA DE cap_10, CON EL CASO DE GOOGLE DENTRO. POR QUE ES PROCEDIMIENTO Y NO POSTURA, con D.27 delante: la linea 213 cierra con Here are some tips for preventing the politics described above from ruining your calibration meetings y detras van CINCO consejos rotulados uno a uno en las lineas 215, 217, 219, 221 y 223, cada uno con sus medios nombrados. Inventario de MEDIOS del propio libro. EL CASO DE GOOGLE ENTRA DENTRO DEL NODO Y NO COMO CASA (manual 3.5, y la ACTA 20 seccion 3.1 dice que ese corte es mejor que el suyo): el comite de ascensos de ingenieria de Google es el ejemplar del mecanismo, con sus dos defectos dichos, y su dato no aparece en el entregable. POR QUE ES UN NODO Y NO CINCO, con la vara de la ACTA 20 seccion 4.1: los cinco consejos comparten UNA condicion de activacion (se acerca el ciclo de ascensos y vais a calibrar) y UN entregable (los ascensos calibrados), y la linea 213 no escribe ninguna cuenta, dice some tips. RELECTURA DE FIDELIDAD D.30 HECHA EN EL ACTO DE ESCRIBIR, paso a paso contra su linea: 19 de 19 TRANSCRIPCION, 0 PUENTES. Lo que el texto NO dice y por eso NO esta escrito aqui: ni cuantas veces al anio se hace TU reunion (las dos veces al anio son del comite de Google, no una instruccion para ti), ni quien convoca, ni cuanto dura, ni que formato tiene el dosier.",
+ "atribuciones": [
+  {
+   "cifra": "que ningun ingeniero ha sido ascendido nunca en Google solo por hacer la pelota, y que el comite de ascensos de ingenieria se reunia fuera de la oficina un dia dos veces al anio",
+   "autor": "Kim Scott, sobre el equipo de ingenieria de Google",
+   "fuente": "scott_radical_candor",
+   "fecha_corte": "no consta fecha en el texto: el libro habla en pasado del sistema de Google sin datar el periodo ni decir si sigue vigente, asi que la atribucion queda sin fecha de corte y se dice"
+  }
+ ],
+ "dominio": "gestion_equipos",
+ "estado": "vivo",
+ "fuentes": [
+  {
+   "clave": "scott_radical_candor",
+   "fecha": "2026-09-12"
+  }
+ ],
+ "ids_alias": [],
+ "nodos_previos": [],
+ "nodos_siguientes": []
+}

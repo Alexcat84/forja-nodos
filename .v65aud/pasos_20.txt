@@ -1,0 +1,238 @@
+===== construir_flujo_produccion_paso_limitante | grafo
+  titulo: Construir el flujo de produccion desde el paso limitante y escalonar los demas hacia atras
+  fuente: ['grove_high_output'] | previos: [] | siguientes: ['rehacer_flujo_paso_limitante_capacidad']
+  cond: Cuando tienes que entregar varias piezas de un mismo trabajo a la vez y a una hora comprometida, y todavia no sabes por cual de ellas hay que empezar.
+  P1. Pon delante los requisitos basicos de la produccion que el libro nombra uno a uno: construir y entregar en respuesta a la demanda del cliente, a una hora de entrega programada, a un nivel de calidad aceptable y al coste mas bajo posible.
+  P2. Descarta la carta blanca antes de planear: entregar lo que el cliente quiera cuando lo quiera pediria capacidad de produccion infinita, o su equivalente, inventarios enormes listos para entregar.
+  P3. Comprometete en su lugar a una hora de entrega, y al coste que te permita vender a un precio competitivo y seguir sacando un beneficio aceptable.
+  P4. Mira tu flujo de produccion, que es por donde el libro dice que se empieza.
+  P5. Fija el paso limitante, que es el paso del flujo que determina la forma del conjunto, y para encontrarlo pregunta cual de los componentes tarda mas en prepararse.
+  P6. Planea el trabajo entero alrededor del tiempo que ese paso necesita, y cuenta con lo que el libro anade de ese paso en el caso del desayuno: no solo es el que mas tarda en prepararse, es tambien el componente mas importante del desayuno para la mayoria de los clientes.
+  P7. Calcula hacia atras desde la hora de entrega el tiempo de preparar cada componente para que esten todos listos a la vez: primero deja tiempo para montarlos juntos, y luego para sacar cada uno de donde se estaba haciendo.
+  P8. Suma ese tiempo al que hace falta para conseguir y cocinar el componente del paso limitante: eso define la duracion del proceso entero, que en la jerga de la produccion es el tiempo total de paso.
+  P9. Escalona los demas pasos tomando como base el tiempo del anterior, que es lo que el libro hace con el huevo como base del pan y el pan como base del cafe, y eso es el desfase.
+  P10. Y cuando el paso que manda no sea el mas largo, usa el criterio entero que el libro escribe: empieza por el mas largo, o el mas dificil, o el mas sensible, o el mas caro, y trabaja hacia atras desde el.
+===== clasificar_trabajo_proceso_montaje_prueba | grafo
+  titulo: Clasificar tu trabajo en las tres operaciones de produccion: proceso, montaje y prueba
+  fuente: ['grove_high_output'] | previos: [] | siguientes: []
+  cond: Cuando tienes delante un trabajo que no parece una fabrica y quieres aplicarle la disciplina de la produccion: antes de medirlo, saber que parte de el es proceso, que parte es montaje y que parte es prueba.
+  P1. Senala en tu trabajo el paso de proceso, que es la actividad que cambia el material fisica o quimicamente, como hervir cambia un huevo, o la que convierte una cantidad grande de datos crudos en algo distinto, como los datos del producto convertidos en estrategias de venta que el vendedor entiende.
+  P2. Senala el paso de montaje, que es donde los componentes se juntan para constituir una entidad nueva: el huevo, el pan y el cafe juntos hacen un desayuno, y las estrategias sueltas mas los datos de mercado se hacen fluir a una sola presentacion con sus folletos, sus hojas y sus laminas.
+  P3. Senala la prueba, que es la operacion que somete los componentes o el total a un examen de sus caracteristicas, y cuenta tambien las pruebas visuales: ves que el cafe humea y que el pan esta tostado.
+  P4. Prueba cada pieza por separado antes de montarla, que es lo que el libro llama prueba unitaria.
+  P5. Devuelve a la fase de proceso la pieza que falle su prueba, para rehacerla.
+  P6. Monta el producto solo cuando todas las piezas hayan pasado su prueba unitaria.
+  P7. Haz una prueba del sistema completo antes de mandar el producto al cliente.
+===== rehacer_flujo_paso_limitante_capacidad | grafo
+  titulo: Rehacer el flujo cuando una capacidad limitada mueve el paso que manda
+  fuente: ['grove_high_output'] | previos: ['construir_flujo_produccion_paso_limitante'] | siguientes: ['equilibrar_capacidad_personal_inventario_plazo']
+  cond: Cuando ya tienes un flujo construido y resulta que en uno de sus pasos hay que esperar turno por una maquina, una sala o una persona ocupada.
+  P1. Comprueba si tu flujo esta dibujado suponiendo capacidad infinita, o sea suponiendo que nadie tiene que esperar por una maquina libre.
+  P2. Busca donde hay cola, que es el sitio en el que tienes que ponerte en fila y esperar tu turno para usar algo.
+  P3. Cuenta el tiempo de espera dentro del flujo y no solo el tiempo de la operacion, porque si no ajustas el flujo por la cola tu huevo de tres minutos se convierte facilmente en uno de seis.
+  P4. Declara paso limitante nuevo el de la capacidad limitada, y rehaz el flujo entero alrededor de el, calculando otra vez hacia atras desde la hora de entrega.
+  P5. Deja iguales los ciclos que la cola no toca, como siguen iguales el del huevo y el del cafe, y altera los desfases.
+  P6. Y no cambies de componente el que manda la calidad: el huevo sigue determinando la calidad general del desayuno aunque el paso limitante ya sea el tostador.
+===== equilibrar_capacidad_personal_inventario_plazo | grafo
+  titulo: Equilibrar capacidad de equipo, personal e inventario contra el plazo de entrega
+  fuente: ['grove_high_output'] | previos: ['rehacer_flujo_paso_limitante_capacidad'] | siguientes: []
+  cond: Cuando dos pasos del flujo te piden estar en dos sitios a la vez, y parece que el conflicto no tiene salida.
+  P1. Cuando dos pasos te choquen a la vez, no lo des por irreconciliable: pon delante las salidas que el libro nombra una a una.
+  P2. Considera especializar al personal, que en el caso del libro es contratar uno que cueza huevos, uno que haga tostadas, uno que sirva cafe y uno que supervise la operacion, y cuenta con su coste: crea una cantidad inmensa de gasto de estructura, y probablemente sale demasiado caro.
+  P3. Considera pedir ayuda al de al lado, que meta tu pan mientras tu arrancas tu huevo, y cuenta con su coste: cuando dependes de otro, los resultados son menos predecibles.
+  P4. Considera anadir equipo, otro tostador, y cuenta con su coste: es una adicion cara de bien de capital.
+  P5. Considera tener el equipo corriendo sin parar para acumular inventario de producto terminado, tirando lo que no puedas usar pero teniendo acceso inmediato a producto, y cuenta con su coste: eso es desperdicio, y tambien puede salir demasiado caro.
+  P6. Intercambia entonces las tres piezas entre si, que son capacidad de equipo, mano de obra e inventario, y equilibralas contra el plazo de entrega.
+  P7. Busca la forma mas rentable de desplegar tus recursos, contando con que hay una respuesta correcta: la que te da el mejor plazo de entrega y la mejor calidad de producto al coste mas bajo posible.
+  P8. Reduce tu entendimiento de esos intercambios a un conjunto de relaciones cuantificables, sin llegar al cronometro ni al calculo exacto en terminos matematicos: lo que importa es el razonamiento que te obligas a hacer para entender como se relacionan las partes de tu proceso.
+===== preferir_inspeccion_proceso_prueba_destructiva | grafo
+  titulo: Preferir la inspeccion dentro del proceso a la prueba que destruye producto
+  fuente: ['grove_high_output'] | previos: [] | siguientes: []
+  cond: Cuando tu operacion es continua y un parametro suyo puede salirse de especificacion sin que nadie lo note hasta que sale el producto.
+  P1. Cuenta lo que te costaria una averia silenciosa: todo el trabajo en curso, y ademas todo lo que la maquina saco desde que el parametro se salio de especificacion hasta que descubriste el fallo.
+  P2. Cuenta tambien lo que se desperdicia en los pasos de al lado que dependen de ese, como se pierde todo el pan tostado porque no hay huevos que servir con el.
+  P3. Considera la prueba funcional: de vez en cuando saca una unidad tal como sale de la maquina y comprueba su calidad, sabiendo que la unidad probada hay que tirarla.
+  P4. Considera la inspeccion dentro del proceso, que puede tomar muchas formas: mide el parametro en el propio proceso, como meter un termometro en el agua para poder comprobar la temperatura facilmente y a menudo.
+  P5. Automatiza esa lectura para no tener que pagar a alguien por leerla: conecta un aparato que haga sonar un aviso en cuanto el parametro varie un grado o dos.
+  P6. Y elige, siempre que se pueda, la prueba dentro del proceso antes que la que destruye producto.
+===== dimensionar_inventario_materia_prima_reposicion | grafo
+  titulo: Inspeccionar el material al recibirlo y dimensionar el inventario por el tiempo de reposicion
+  fuente: ['grove_high_output'] | previos: ['detectar_arreglar_fallo_etapa_menor_valor'] | siguientes: ['decidir_aceptar_rechazar_material_defectuoso']
+  cond: Cuando tu operacion depende de material que entra de fuera y una entrega mala te puede dejar parado.
+  P1. Mira el material en el momento de recibirlo, que es lo que se llama inspeccion de entrada o de recepcion.
+  P2. Busca en esa inspeccion no solo lo que esta roto o podrido, sino tambien lo que viene de tamano mayor o menor del que toca, porque eso cambia lo rapido que se procesa.
+  P3. Devuelve el material que no sea aceptable, contando con lo que eso te deja: sin material, y por tanto parado.
+  P4. Ten inventario de materia prima para no tener que parar por eso.
+  P5. Dimensionalo con el principio que el libro pone: suficiente para cubrir tu ritmo de consumo durante el tiempo que tardas en reponer la materia prima, de modo que si tu proveedor entrega una vez al dia, guardes un dia de consumo.
+  P6. Pesa la ventaja de llevar ese inventario contra lo que cuesta llevarlo, porque el inventario cuesta dinero.
+  P7. Calcula, ademas del coste del material y del coste del dinero, la oportunidad en riesgo, con las tres preguntas del libro: cuanto costaria tener la maquina parada un dia, cuantos clientes perderias y cuanto costaria volver a atraerlos.
+===== detectar_arreglar_fallo_etapa_menor_valor | grafo
+  titulo: Detectar y arreglar el fallo en la etapa de menor valor posible
+  fuente: ['grove_high_output'] | previos: [] | siguientes: ['dimensionar_inventario_materia_prima_reposicion']
+  cond: Cuando tienes que decidir en que punto de un flujo poner la comprobacion que caza los problemas.
+  P1. Ordena las etapas de tu flujo por el valor que el material lleva encima en cada una, contando con que el material se vuelve mas valioso a medida que avanza por el proceso: un huevo cocido vale mas que uno crudo, un desayuno montado vale mas que sus partes, y el desayuno puesto delante del cliente vale mas todavia.
+  P2. Cuenta dentro de ese valor el valor percibido que el cliente asocia al establecimiento cuando entra en el aparcamiento y ve el rotulo, que es el que lleva encima la ultima etapa.
+  P3. Detecta y arregla cualquier problema del proceso en la etapa de menor valor posible, que es la regla comun que el libro dice que hay que atender siempre.
+  P4. Aplicalo al material que entra: encuentra y rechaza el huevo podrido cuando lo esta entregando el proveedor, en vez de permitir que lo encuentre el cliente.
+  P5. Aplicalo a la contratacion como el libro la aplica: decide que no quieres a un candidato en la entrevista del campus en vez de en el transcurso de la visita a la planta, y ahorra el coste del viaje y el tiempo del candidato y de los entrevistadores.
+  P6. Aplicalo al trabajo de ingenieria como el libro lo aplica: busca el fallo de funcionamiento en la prueba unitaria de las piezas que componen el producto, en vez de en la prueba del producto final.
+===== elegir_cinco_indicadores_diarios_fabrica | grafo
+  titulo: Elegir los cinco indicadores diarios con los que se dirige una fabrica
+  fuente: ['grove_high_output'] | previos: [] | siguientes: []
+  cond: Cuando diriges una operacion de produccion y tienes que decidir que datos vas a mirar cada dia nada mas llegar a tu puesto, sabiendo que el numero de indicadores posibles es practicamente ilimitado y que tu salida ya no es lo que entregas tu en persona sino lo que entrega tu operacion entera.
+  P1. Enfoca cada indicador que elijas en una meta concreta de la operacion, porque el numero de indicadores posibles es practicamente ilimitado y ninguno sirve si no esta enfocado.
+  P2. Elige cinco datos, y que sean los cinco que querrias mirar cada dia nada mas llegar a tu puesto.
+  P3. Pon el primero: el pronostico de ventas del dia, o sea cuantas unidades tienes que planear entregar hoy.
+  P4. Pon junto a ese pronostico la desviacion entre lo que planeaste entregar ayer y lo que entregaste de verdad, que es lo que te dice cuanta confianza dar al pronostico de hoy.
+  P5. Pon el segundo: el inventario de materia prima, y comprueba si llega para que la operacion funcione hoy; si te falta, todavia puedes pedir mas, y si te sobra, puedes cancelar la entrega de hoy.
+  P6. Pon el tercero: el estado de los equipos; si algo se averio ayer, mandalo reparar o reordena la linea de produccion para cumplir el pronostico del dia.
+  P7. Pon el cuarto: la gente disponible; si dos faltan por enfermedad, decide si llamas a refuerzo temporal o si sacas a alguien de una linea y lo pones donde hace falta.
+  P8. Pon el quinto: un indicador de calidad, y no te quedes en contar cuantas unidades sirve cada persona, porque se puede servir un numero record y haber tratado mal al cliente.
+  P9. Monta para ese quinto indicador un registro de quejas del cliente, y ponlo a cargo de quien cobra.
+  P10. Repasa los cinco a primera hora de cada dia, y habla ese mismo dia con quien reunio ayer mas quejas de lo normal, para corregir el problema posible antes de que se vuelva real durante la jornada.
+===== emparejar_indicadores_efecto_contraefecto | grafo
+  titulo: Emparejar cada indicador con otro que mida su contraefecto, para no pasarse de frenada
+  fuente: ['grove_high_output'] | previos: [] | siguientes: ['elegir_indicador_salida_trabajo_administrativo']
+  cond: Cuando vas a poner un indicador en marcha y sabes que quien lo mire va a actuar en la direccion que ese indicador marca, de modo que medir una sola cara del asunto empuja a pasarse.
+  P1. Antes de soltar un indicador, mira hacia donde va a dirigir la atencion, porque el indicador dirige la atencion hacia lo que vigila, igual que en la bicicleta acabas yendo hacia donde miras.
+  P2. Nombra el efecto que ese indicador va a empujar, que es la accion que quien lo mire va a tomar para moverlo en la direccion buena.
+  P3. Nombra el contraefecto, que es lo que se estropea si ese empuje se pasa de largo.
+  P4. Empareja el indicador con un segundo que mida ese contraefecto, de manera que efecto y contraefecto se midan juntos.
+  P5. Vigila los dos a la vez y no uno solo: en el ejemplo del inventario, el nivel de inventario y tambien el numero de veces que te quedas sin material.
+  P6. Actua cuando suba el segundo, porque una subida del contraefecto es lo que te lleva a dejar de apretar el primero.
+  P7. Aplica el mismo par al trabajo que no es de fabrica: en el desarrollo de un compilador, la fecha de entrega de cada unidad de programa contra la capacidad que esa unidad trae.
+===== elegir_indicador_salida_trabajo_administrativo | grafo
+  titulo: Elegir el indicador de una unidad administrativa con las dos varas del libro y emparejarlo con uno de calidad
+  fuente: ['grove_high_output'] | previos: ['emparejar_indicadores_efecto_contraefecto'] | siguientes: ['dimensionar_plantilla_administrativa_pronostico']
+  cond: Cuando tienes que medir una unidad administrativa y no una linea de fabricacion, y no sabes por donde empezar porque su trabajo parece no tener una salida contable.
+  P1. Pon una medida aunque no sea la perfecta, porque la primera regla es que cualquier medida es mejor que ninguna.
+  P2. Haz que el indicador cubra la salida de la unidad de trabajo y no simplemente la actividad que se hace dentro: al vendedor se le mide por los pedidos que consigue, que son salida, y no por las visitas que hace, que son actividad.
+  P3. Pasa la segunda vara: lo que midas tiene que ser una cosa fisica y contable.
+  P4. Toma el indicador de salida de la lista que el libro pone para el trabajo administrativo: en cuentas a pagar, el numero de comprobantes tramitados; en limpieza, los metros cuadrados limpiados; en atencion al cliente, el numero de pedidos de venta introducidos; en grabacion de datos, el numero de transacciones tramitadas; en contratacion, el numero de personas contratadas por tipo de contratacion; y en control de inventario, el numero de articulos gestionados en inventario.
+  P5. Fijate en que todos los de esa lista son indicadores de cantidad o de salida, y por eso emparejalos con una pareja que insista en la calidad del trabajo.
+  P6. Empareja en cuentas a pagar el numero de comprobantes tramitados con el numero de errores encontrados, ya sea por auditoria o por los propios proveedores.
+  P7. Empareja en limpieza los metros cuadrados limpiados con una calificacion de la calidad del trabajo, en parte objetiva y en parte subjetiva, hecha por un mando que tenga su despacho en ese mismo edificio.
+===== representar_actividad_caja_negra_ventanas | grafo
+  titulo: Representar cualquier actividad como una caja negra y abrirle ventanas para ver dentro
+  fuente: ['grove_high_output'] | previos: [] | siguientes: ['construir_indicador_linealidad_alerta_temprana', 'construir_indicador_tendencia_patron']
+  cond: Cuando tienes delante una actividad que se parece a un proceso de produccion, sea de fabrica o administrativa, y necesitas ordenarla antes de medirla, porque sin saber cuales son su entrada, su salida y su trabajo no hay indicador que colocar.
+  P1. Dibuja tu actividad como una caja negra, y hazlo aunque no sea una fabrica: sirve para cualquier actividad que se parezca a un proceso de produccion.
+  P2. Nombra la entrada, que es la materia prima o la informacion que entra en la caja.
+  P3. Nombra la salida, que es lo que sale de la caja ya terminado.
+  P4. Nombra el trabajo que entra en la caja junto con la materia prima, y cuenta dentro de el tanto el de quienes ejecutan como el tuyo de mando.
+  P5. Hazlo igual con la contratacion universitaria: la entrada son los candidatos del campus, la salida son los titulados que han aceptado la oferta de empleo, y el trabajo es el de los entrevistadores del campus mas el de los mandos y tecnicos que entrevistan de vuelta en la planta.
+  P6. Hazlo igual con la formacion de la fuerza de ventas: la entrada son las especificaciones crudas del producto, la salida es el personal de ventas ya formado, y el trabajo es el de la gente de marketing y de comercializacion que convierte la informacion cruda en herramientas de venta utilizables y ensena a usarlas.
+  P7. Hazlo igual con un grupo que factura: la entrada es la informacion del cliente, o sea lo que ha comprado, los datos de precio y los registros de envio; la salida es la factura final que se le manda y por la que se cobra; y el trabajo es el de todo el personal implicado.
+  P8. Recorta ventanas en la caja, para poder ver una parte de lo que ocurre dentro.
+  P9. Mira por esas aberturas para entender el funcionamiento interno del proceso y calcular cual va a ser probablemente la salida futura.
+===== construir_indicador_linealidad_alerta_temprana | grafo
+  titulo: Construir el indicador de linealidad para enterarte de que vas a fallar la meta cuando todavia se puede hacer algo
+  fuente: ['grove_high_output'] | previos: ['representar_actividad_caja_negra_ventanas'] | siguientes: []
+  cond: Cuando tienes una meta con fecha y un avance que solo se comprueba al final, de modo que si esperas al cierre te enteras del fallo cuando ya no se puede corregir.
+  P1. Cuenta como indicadores adelantados los controles diarios que ya usas para llevar la operacion, desde el registro de paradas de maquina hasta un indice de satisfaccion del cliente, porque los dos te avisan de si hay problemas mas adelante.
+  P2. Recorta en tu caja esta ventana concreta, el indicador de linealidad, que vale para cualquier proceso.
+  P3. Traza la recta ideal, que es la que te llevaria desde el principio hasta tu meta justo al acabar el plazo.
+  P4. Dibuja encima lo realmente conseguido contra el mes del ano, punto por punto.
+  P5. Lee a media carrera cuanto te separa de esa recta: en la contratacion universitaria, si en abril vas muy por debajo de la recta ideal, la unica manera de alcanzar la meta de junio es conseguir aceptaciones a un ritmo mucho mayor en los dos meses que quedan del que llevaste en los cuatro anteriores.
+  P6. Toma la accion correctora con ese aviso temprano, en vez de descubrir en el ultimo mes que fallaste la meta, que es cuando ya no se puede hacer nada.
+  P7. Recorta la misma ventana dentro del mes en una unidad de fabricacion que cumple sus metas mensuales con regularidad, y no des por hecho que ahi va todo bien: mide la salida contra el tiempo segun avanza el mes y comparala con la salida lineal ideal.
+  P8. Mira si la salida esta repartida a lo largo del mes o si esta concentrada en la ultima semana.
+  P9. Si esta concentrada en la ultima semana, trata al mando de esa unidad como a alguien que probablemente no esta usando bien ni la gente ni el equipo, y arregla la situacion antes de que una averia pequena a final de mes le haga fallar la meta entera del mes.
+===== construir_indicador_tendencia_patron | grafo
+  titulo: Construir el indicador de tendencia midiendo la salida contra el tiempo y contra un patron
+  fuente: ['grove_high_output'] | previos: ['representar_actividad_caja_negra_ventanas'] | siguientes: ['dimensionar_plantilla_administrativa_pronostico']
+  cond: Cuando ya tienes nombrada la salida de tu caja y quieres una ventana que te empuje a mirar hacia delante, en vez de una foto suelta del mes que acaba de cerrar.
+  P1. Monta el indicador de tendencia, que es otra ventana recortada en tu caja.
+  P2. Pon en el la salida de tu operacion: los desayunos entregados, los modulos de programa terminados o los comprobantes tramitados, segun lo que hagas.
+  P3. Mide esa salida contra el tiempo, o sea lo de este mes contra lo de una serie de meses anteriores.
+  P4. Mide esa misma salida tambien contra algun patron o nivel esperado.
+  P5. Extrapola del pasado hacia delante, que es a lo que te lleva casi solo el hecho de tener la tendencia a la vista.
+  P6. Cuando el resultado no coincida con lo que decia el patron, parate a pensar por que fue el que fue y no el que el patron anunciaba.
+===== construir_grafico_escalonado_pronosticos | grafo
+  titulo: Construir el grafico escalonado que pone cada pronostico nuevo junto a los anteriores
+  fuente: ['grove_high_output'] | previos: [] | siguientes: ['casar_flujo_fabricacion_flujo_ventas']
+  cond: Cuando quieres anticipar hacia donde va tu negocio y un grafico de tendencia simple no te llega, porque te ensena lo que paso pero no como se ha ido moviendo tu propia manera de pronosticarlo.
+  P1. Monta un grafico escalonado, que es el que pronostica una salida para los varios meses que vienen.
+  P2. Actualizalo cada mes, de manera que cada mes tengas la version puesta al dia del pronostico vigente junto a varios pronosticos anteriores.
+  P3. Marca con un asterisco el numero real de cada mes, para poder distinguirlo de los pronosticados.
+  P4. Lee la variacion de un pronostico al siguiente, que es lo que te deja anticipar la tendencia mejor que un grafico de tendencia simple.
+  P5. Hazlo con la tasa de pedidos entrantes: pon el pronostico de esa tasa, y con el el mismo pronostico preparado el mes siguiente, y el del mes de despues, y asi sucesivamente.
+  P6. Lee en el las dos cosas a la vez: tu perspectiva de negocio mes a mes, y cuanto vario esa perspectiva de un mes al siguiente.
+  P7. Compara de forma rutinaria el pronostico de cualquier mes con los pronosticos posteriores y, al final, con el resultado real.
+  P8. Toma la mejora o el empeoramiento de la perspectiva pronosticada de un mes al siguiente como tu indicador de la tendencia del negocio.
+===== archivar_indicadores_resolver_problemas | grafo
+  titulo: Mantener un archivo de indicadores para poder repasarlos el dia que algo vaya mal
+  fuente: ['grove_high_output'] | previos: [] | siguientes: []
+  cond: Cuando ya tienes indicadores en marcha y tienes que decidir si los guardas o los tiras, sabiendo que el dia que algo se rompa no vas a tener tiempo de salir a buscar la informacion.
+  P1. Recoge de forma sistematica los indicadores de tu operacion y mantenlos en un archivo, en vez de dejar que se pierdan segun pasan los dias.
+  P2. Haz que ese archivo sea un banco de informacion que ensene de golpe todos los parametros de tu operacion.
+  P3. Cuando algo vaya mal, repasa en ese archivo todos esos parametros.
+  P4. Busca en ese repaso las desviaciones no sanas respecto de la norma, que es lo que te senala donde esta el problema.
+===== elegir_fabricar_pedido_pronostico | grafo
+  titulo: Elegir entre fabricar contra pedido y fabricar contra pronostico, y asumir el riesgo de inventario del segundo
+  fuente: ['grove_high_output'] | previos: [] | siguientes: ['casar_flujo_fabricacion_flujo_ventas']
+  cond: Cuando tienes que decidir como controlas la salida de tu operacion, y el plazo que tardas en fabricar es mas largo que el que tu cliente esta dispuesto a esperar.
+  P1. Cuenta con que solo hay dos maneras de controlar la salida de cualquier fabrica: fabricar contra pedido y fabricar contra pronostico.
+  P2. Si fabricas contra pedido, espera a saber que quiere el cliente, busca despues un hueco en tu programa de fabricacion y hazle ahi su pieza.
+  P3. Compara tu plazo con el de tu competencia: si ellos tienen listo el mismo producto en cuatro semanas y tu necesitas cuatro meses, no vas a tener muchos clientes.
+  P4. Cuando esa comparacion te cierre la via del pedido, pasa a fabricar contra pronostico, que es actuar sobre una contemplacion de los pedidos futuros, aunque preferirias fabricar contra pedido.
+  P5. Monta tus actividades alrededor de una especulacion razonada de que se materializaran pedidos de productos concretos dentro de un plazo determinado.
+  P6. Asume el riesgo de inventario que eso trae: comprometes recursos contra una evaluacion de necesidades futuras, y si los pedidos no se materializan, o se materializan para un producto distinto del previsto, lo que te queda es inventario no deseado.
+  P7. Reconoce que al fabricar contra pronostico estas arriesgando capital para poder responder ordenadamente a una demanda futura prevista.
+  P8. Cuenta con que las dos vias pueden convivir en la misma operacion, como en la fabrica de desayunos: fabrica su producto contra el pedido del cliente, pero compra a sus proveedores, como al huevero, contra la demanda pronosticada.
+  P9. Usa el pronostico tambien fuera de la fabrica: contrata titulados para necesidades previstas en vez de contratar solo cuando surge la necesidad, porque los titulados salen de forma muy estacional, y desarrolla productos de programa contra una necesidad de mercado prevista y no contra un pedido concreto.
+===== casar_flujo_fabricacion_flujo_ventas | grafo
+  titulo: Casar el flujo de fabricacion con el de ventas y meter la holgura en el inventario de menor valor
+  fuente: ['grove_high_output'] | previos: ['elegir_fabricar_pedido_pronostico', 'construir_grafico_escalonado_pronosticos'] | siguientes: []
+  cond: Cuando fabricas contra pronostico y tienes dos relojes corriendo a la vez, el de la fabrica y el del vendedor, y ninguno de los dos es del todo predecible.
+  P1. Trata la entrega de un producto fabricado contra pronostico como dos procesos simultaneos, cada uno con su propio ciclo de tiempo.
+  P2. Sigue el flujo de fabricacion: la materia prima pasa por las distintas etapas de produccion y acaba entrando en el almacen de producto terminado.
+  P3. Sigue a la vez el flujo de ventas: el vendedor encuentra un cliente posible, le vende, y ese cliente acaba poniendo un pedido al fabricante.
+  P4. Ponte como ideal que el pedido del producto y el producto mismo lleguen al muelle de expedicion al mismo tiempo.
+  P5. No entregues todo el pronostico a un solo mando al que hacer responsable de el, aunque la complejidad del asunto te tiente a hacerlo, porque eso no suele funcionar bien.
+  P6. Pide en su lugar que fabricacion y ventas preparen cada uno su propio pronostico, de manera que cada cual responda de cumplir sus propias predicciones.
+  P7. Casa los dos flujos paralelos con toda la precision que puedas, porque si no casan acabas o con un pedido de cliente que no puedes satisfacer o con un producto terminado para el que no tienes cliente.
+  P8. Cuenta con que el ideal casi nunca se da en el mundo real: los pedidos no llegan a tiempo o el cliente cambia de idea, y por el otro lado fabricacion falla plazos, comete errores o se encuentra con problemas imprevistos.
+  P9. Mete a proposito una cantidad razonable de holgura en el sistema, precisamente porque ninguno de los dos flujos es completamente predecible.
+  P10. Pon esa holgura en el inventario, que es el sitio mas evidente, y controlalo con cuidado, porque cuanto mas inventario tengas mas cambios podras absorber sin dejar de servir pedidos, pero construirlo y mantenerlo cuesta dinero.
+  P11. Guarda ese inventario en la etapa de menor valor, como los huevos crudos de la fabrica de desayunos, porque cuanto menor es el valor mas flexibilidad de produccion obtienes por el mismo coste de inventario.
+  P12. Usa graficos escalonados en los dos pronosticos, el de fabricacion y el de ventas, y observa una y otra vez la desviacion de un pronostico respecto de otro para ir acotando las causas de inexactitud y mejorar tu capacidad de pronosticar tanto los pedidos como la disponibilidad de producto.
+===== dimensionar_plantilla_administrativa_pronostico | grafo
+  titulo: Dimensionar la plantilla de una unidad administrativa con el pronostico de su carga de trabajo
+  fuente: ['grove_high_output'] | previos: ['construir_indicador_tendencia_patron', 'elegir_indicador_salida_trabajo_administrativo'] | siguientes: []
+  cond: Cuando diriges una unidad administrativa cuya carga sube y baja, y su plantilla se ha venido fijando siempre por su nivel mas alto porque nadie tenia con que pronosticar su trabajo.
+  P1. Elige con cuidado los indicadores que caracterizan a la unidad administrativa y vigilalos de cerca, porque solo con eso estaras en condiciones de aplicarle los metodos de control de una fabrica.
+  P2. Deduce de los datos de tendencia unos patrones de hecho, que son los que esa clase de trabajo nunca tuvo.
+  P3. Usa esos patrones para pronosticar cuanta gente hace falta para sacar adelante las distintas tareas previstas.
+  P4. Pronostica la demanda de trabajo futura y ajusta despues a ese pronostico la salida de tu fabrica administrativa.
+  P5. Reasigna gente de un area a otra aplicando con rigor los principios del pronostico.
+  P6. Haz que el numero de personas case con el crecimiento o el descenso pronosticado de la actividad administrativa.
+  P7. Aplica ese rigor sin dejarlo caer, porque sin el la plantilla de una unidad administrativa se queda siempre en su nivel mas alto y, por la famosa ley de Parkinson, la gente encuentra la manera de que lo que esta haciendo llene el tiempo disponible para terminarlo.
+===== decidir_aceptar_rechazar_material_defectuoso | grafo
+  titulo: Decidir si se devuelve o se usa el material que no llega a especificacion, y donde esa decision deja de ser economica
+  fuente: ['grove_high_output'] | previos: ['dimensionar_inventario_materia_prima_reposicion'] | siguientes: []
+  cond: Cuando la inspeccion de recepcion ha rechazado un material y hay que decidir que se hace con el, sabiendo que devolverlo puede parar la fabrica y que usarlo va a subir tu tasa de rechazo aguas abajo.
+  P1. Cuando rechaces material en la inspeccion de recepcion, pon encima de la mesa las dos salidas que se te presentan: devolverlo al proveedor como inaceptable, o renunciar a tu especificacion y usar ese material aunque no llegue.
+  P2. Si vas por la segunda, cuenta con que tu proceso de produccion va a dar una tasa de rechazo mayor que si hubieras usado material plenamente aceptable.
+  P3. Compara ese coste con el de cerrar la fabrica entera hasta que tu proveedor entregue material mejor, porque puede salirte mas barato el primero.
+  P4. No tomes esa decision en solitario: llevala a un grupo equilibrado de mandos, que es el unico sitio donde puede tomarse bien.
+  P5. Forma ese grupo, como se forma normalmente, con representantes de aseguramiento de la calidad, de fabricacion y de ingenieria de diseno.
+  P6. Deja que ese grupo pese todas las consecuencias de rechazar o de aceptar la materia prima que no llega a especificacion.
+  P7. Trata la decision como economica en la mayoria de los casos, pero no dejes pasar nunca material defectuoso cuando su defecto pueda causar a tu cliente un fallo completo, o sea un problema de fiabilidad.
+  P8. No hagas ninguna componenda en materia de fiabilidad, porque nunca se pueden evaluar las consecuencias de un producto no fiable: en un componente que va dentro de un marcapasos, si no funciona al recibirlo se puede sustituir en fabrica con un coste probablemente mayor, pero si falla despues de implantado el coste del fallo ya no es solo economico.
+===== elegir_inspeccion_barrera_monitorizacion | grafo
+  titulo: Elegir entre retener el material en una barrera y dejarlo correr con muestreo de seguimiento
+  fuente: ['grove_high_output'] | previos: [] | siguientes: []
+  cond: Cuando vas a poner un punto de inspeccion y tienes que equilibrar dos cosas que tiran en sentidos contrarios: la calidad que la inspeccion mejora y la perturbacion que mete en el flujo de produccion.
+  P1. Antes de anadir una inspeccion, cuenta con que cuesta dinero hacerla y con que ademas encarece la cosa al interferir en el flujo de fabricacion y complicarlo.
+  P2. Cuenta tambien con que parte del material tendra que volver por etapas ya hechas, lo que estropea la suavidad con la que se mueve el resto del material.
+  P3. Plantea la necesidad de inspeccionar como un equilibrio entre lo que quieres conseguir con ella, que es mejor calidad, y la minima perturbacion del propio proceso de produccion.
+  P4. Elige entre las dos tecnicas que se usan normalmente para equilibrar esas dos necesidades: la inspeccion de barrera y el paso de monitorizacion.
+  P5. Si eliges la barrera, reten todo el material en ella hasta que terminen las pruebas de inspeccion; si el material pasa, muevelo a la etapa siguiente del proceso, y si falla, devuelvelo a una etapa anterior para que se reprocese o se deseche.
+  P6. Si eliges la monitorizacion, toma una muestra del material, y si esa muestra falla, deja una anotacion con la que calcular una tasa de fallo.
+  P7. No retengas el grueso del material mientras tomas la muestra: dejalo seguir moviendose por el proceso de fabricacion, que es lo que mantiene la suavidad del flujo.
+  P8. Para la linea cuando el seguimiento lo pida: por ejemplo, si tres muestras seguidas fallan la prueba de monitorizacion.
+  P9. Pesa el intercambio: si retienes todo el material anades tiempo de paso y frenas la fabricacion; la monitorizacion no produce un frenazo comparable, pero puede dejar escapar material malo antes de que puedas actuar sobre sus resultados y parar, lo que significa que a lo mejor tienes que rechazar ese material mas tarde, en una etapa de mas valor.
+  P10. Cuenta con que por el mismo dinero puedes hacer mucha mas monitorizacion que inspeccion de barrera, y con que hacer lo primero puede aportar mas a la calidad final del producto que elegir inspecciones de barrera menos frecuentes.
+  P11. Toma cada eleccion con un caso concreto delante, porque este intercambio no es evidente.
+  P12. Usa como regla de pulgar inclinarte por la monitorizacion cuando la experiencia ensene que no es probable que te encuentres con problemas grandes.

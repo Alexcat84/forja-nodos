@@ -1,0 +1,1 @@
+canalizar_interrupciones_cartel_hora_oficina poblacion 479 (368 grafo mas 111 bandejas) vecinos 1

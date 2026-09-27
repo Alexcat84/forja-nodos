@@ -1,0 +1,5 @@
+$ grep "rc=" .v73ext/barrido.log | sed "s/.*segundos=//" | sort -n | sed -n "1p;\$p"; grep -E "^(INICIO|TODOS)" .v73ext/barrido.log
+411
+998
+INICIO 2026-09-26 02:04:16
+TODOS TERMINADOS 2026-09-26 02:23:54

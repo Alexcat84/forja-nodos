@@ -1,0 +1,25 @@
+=== estructura de cuarentena ===
+cuarentena/_derivadas/
+cuarentena/_insertados/
+cuarentena/ensayo_referencia_163/
+cuarentena/marquet_turn_the_ship/
+cuarentena/onu_consumidor/
+cuarentena/scott_radical_candor/
+cuarentena/smart_who/
+cuarentena/zhuo_manager/
+
+=== candidatos EN BANDEJA por libro (descartando _insertados y _derivadas, D.38.4) ===
+  cuarentena/_derivadas/  -> 2 en bandeja (nivel 1)
+  cuarentena/_insertados/  -> 0 en bandeja (nivel 1)
+  cuarentena/ensayo_referencia_163/  -> 163 en bandeja (nivel 1)
+  cuarentena/marquet_turn_the_ship/  -> 3 en bandeja (nivel 1)
+  cuarentena/onu_consumidor/  -> 0 en bandeja (nivel 1)
+  cuarentena/scott_radical_candor/  -> 102 en bandeja (nivel 1)
+  cuarentena/smart_who/  -> 0 en bandeja (nivel 1)
+  cuarentena/zhuo_manager/  -> 0 en bandeja (nivel 1)
+
+=== subcarpetas ===
+cuarentena/_insertados/onu_consumidor/
+cuarentena/_insertados/scott_radical_candor/
+cuarentena/_insertados/smart_who/
+cuarentena/_insertados/zhuo_manager/

@@ -1,0 +1,10 @@
+filas: mias 6 {'SOSTENGO': 1, 'DESCARTO': 5} | suyas 22 {'DESCARTO': 21, 'SOSTENGO': 1}
+  aplicar_ejercicio_codigo_genetico_control            > identificar_temas_formacion_tarjetas_decision        | solo mia, DESCARTO
+  ceder_control_reforzar_competencia_claridad          > NINGUNO (competencia tecnica y claridad organizativa) | solo mia, DESCARTO
+  encargar_meta_especifica_dejar_libre_metodo          > cambiar_forma_trabajar_conservar_plantilla           | solo mia, DESCARTO
+  informar_cierre_jornada_conservar_propiedad_trabajo  > eliminar_seguimiento_descendente_responsabilizar_dueno | en las dos, DESCARTO y DESCARTO
+  observar_reunion_rutinaria_senales_plantilla         > seguir_frustrado_preguntar_implantacion_ideas        | en las dos, SOSTENGO y SOSTENGO
+  recorrer_organizacion_escuchar_plantilla             > contar_firmas_cadena_tramite_parado                  | en las dos, DESCARTO y DESCARTO
+pares: {'solo suya, DESCARTO': 19, 'solo mia, DESCARTO': 3, 'en las dos, DESCARTO y DESCARTO': 2, 'en las dos, SOSTENGO y SOSTENGO': 1} | suma: 25
+SOSTENGO mias: [('observar_reunion_rutinaria_senales_plantilla', 'seguir_frustrado_preguntar_implantacion_ideas')]
+SOSTENGO suyas: [('observar_reunion_rutinaria_senales_plantilla', 'seguir_frustrado_preguntar_implantacion_ideas')]

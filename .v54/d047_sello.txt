@@ -1,0 +1,14 @@
+$ git log --oneline -1 -- docs/loop/archivo/tablas_de_cierre/TABLA_DE_CIERRE_v49.txt
+216b114 VUELTA 50: cap_04 cerrado en 22 de 22 con P41, P42 y P44 por su aduana en el acto, d036 y d038 pagadas, y la frontera de cap_05 publicada
+
+LA CITA DEFECTUOSA DE LL.5.c, CORRIDA HOY (nombra HEAD):
+$ git show HEAD:docs/loop/TABLA_DE_CIERRE.txt | git hash-object --stdin
+4e3e2fb30c29ad653deac7b08baf4b5f31dd88f5
+
+LA CITA REPARADA (nombra el COMMIT, no HEAD):
+$ git show 55cd182:docs/loop/TABLA_DE_CIERRE.txt | git hash-object --stdin
+f33c8d9cb7f3b639a5aec81cc8ec2d26782d8631
+
+Y LA COPIA ARCHIVADA, QUE NO DEPENDE DE HEAD:
+$ git hash-object docs/loop/archivo/tablas_de_cierre/TABLA_DE_CIERRE_v49.txt
+f33c8d9cb7f3b639a5aec81cc8ec2d26782d8631

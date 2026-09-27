@@ -1,0 +1,44 @@
+### reservar_calendario_tiempo_ejecutar
+  ACTIVACION: Cuando las tareas colaborativas se estan comiendo tu calendario o el de tu equipo y no queda hueco para ejecutar el plan que ya se decidio y se acepto.
+  ENTREGABLE: Tiempo de ejecucion bloqueado en el calendario, tuyo y de tu equipo, con hueco real para el plan decidido.
+  P1 Cuenta con que ejecutar suele ser una tarea solitaria.
+  P2 Cuenta con el sesgo que el texto nombra: usamos el calendario sobre todo para las tareas colaborativas, para convocar reuniones y cosas asi, y por eso lo que se hace a solas no aparece en el.
+  P3 Asume como uno de tus trabajos de jefe asegurarte de que las tareas colaborativas no se coman tanto tiempo tuyo ni de tu equipo que no quede tiempo para ejecutar.
+  P4 Bloquea ese tiempo para el plan que ya se decidio y se acepto.
+
+### pedir_hechos_decision_evitar_recomendaciones
+  ACTIVACION: Cuando estas reuniendo informacion para tomar una decision y te sale solo preguntar a la gente que cree que deberiais hacer.
+  ENTREGABLE: La informacion de la decision reunida en forma de hechos, sin recomendaciones que nadie tenga despues que defender como suyas.
+  P1 Resiste la tentacion de pedir recomendaciones, que es la forma en que sale sola la pregunta: tu que crees que deberiamos hacer.
+  P2 Pide en su lugar hechos, no recomendaciones, que es lo que una directiva de Apple le recomendo a la autora.
+  P3 Cuenta con el motivo que esa directiva puso: la gente tiende a meter su ego en una recomendacion de una manera que puede llevar a la politica, y con ella a peores decisiones.
+  P4 Cuenta tambien con el limite que el propio texto le pone: los hechos vienen teñidos del punto de vista particular de cada uno.
+  P5 Pidelos igual, porque un hecho tiene menos probabilidad que una recomendacion de convertirse en una raya en el suelo.
+
+### minimizar_impuesto_colaboracion_equipo
+  ACTIVACION: Cuando tus responsabilidades de jefe te estan comiendo el tiempo y a la vez tienes trabajo propio que hacer en tu especialidad, y tu equipo necesita tiempo para ejecutar.
+  ENTREGABLE: El impuesto de colaboracion cargado sobre ti y no sobre tu equipo, y las tres cosas del equilibrio puestas en practica: su tiempo no malgastado, tus manos todavia en el trabajo, y tiempo reservado para ejecutar.
+  P1 Echate encima buena parte del impuesto de colaboracion, para que tu equipo pueda dedicar mas tiempo a ejecutar. El texto dice que eso es parte de tu puesto.
+  P2 Cuenta con que las responsabilidades que tienes como jefe se llevan una cantidad tremenda de tiempo.
+  P3 Cuenta tambien con que una de las cosas mas dificiles de ser jefe es equilibrar esas responsabilidades con el trabajo que tienes que hacer tu personalmente en tu especialidad.
+  P4 Aplica las tres cosas que el texto dice haber aprendido sobre como acertar con ese equilibrio: no malgastes el tiempo de tu equipo, manten la tierra bajo tus uñas, y reserva tiempo para ejecutar.
+
+### parar_debate_emocion_agotamiento
+  ACTIVACION: Cuando en un debate de tu equipo la gente esta demasiado cansada, quemada o cargada de emocion como para discutir de forma productiva.
+  ENTREGABLE: El debate aplazado hasta que la gente este en mejor disposicion, sin decision tomada por agotamiento y sin la pelea que habria estallado.
+  P1 Manten la conciencia puesta en estos momentos, porque el texto dice que es crucial y que rara vez llevan a un buen resultado.
+  P2 Cuando los detectes, interven y pide tiempo muerto.
+  P3 Cuenta con lo que pasa si no lo haces: la gente tomara una decision solo para poder irse a casa, o peor, estallara una pelea enorme salida de la emocion en carne viva.
+  P4 Aplaza el debate hasta que la gente este en mejor disposicion de animo.
+  P5 Para poder detectarlo, conoce a cada persona de tu equipo lo bastante bien: el texto dice que si lo has hecho, seras suficientemente consciente de las emociones y las energias de cada uno como para saber cuando hace falta intervenir.
+
+### bloquear_tiempo_pensar_calendario
+  ACTIVACION: Cuando entre las reuniones a solas, la de equipo, las de gran debate y gran decision y lo que va surgiendo no te queda un momento tranquilo para aclarar tu propio pensamiento ni para ayudar a aclarar el de los tuyos.
+  ENTREGABLE: El tiempo para pensar bloqueado en tu calendario y mantenido, con tu equipo avisado de que ahi no se agenda y animado a bloquear el suyo.
+  P1 Reconoce primero a que te enfrentas, que es lo que el texto describe: acabas de anadir al calendario las reuniones a solas y la de equipo, probablemente tendras que ir a alguna de gran debate y de gran decision, y ademas la gente querra hablarte de esto o de aquello y surgiran asuntos urgentes que tendras que atender.
+  P2 Cuenta con lo que el texto dice que pasa si no haces nada: apenas tendras tiempo de ir al banio o de coger agua, no digamos de comer, seras un tiranizado por tu calendario, y el unico momento tranquilo para pensar que tendras sera en casa, de noche, cuando de verdad deberias estar durmiendo.
+  P3 Agenda entonces algo de tiempo para pensar, y manten ese tiempo sagrado.
+  P4 Hazle saber a la gente que no pueden agendar nada encima de el, nunca.
+  P5 Enfadate de verdad, y en serio, si lo intentan.
+  P6 Y anima a todos los de tu equipo a hacer lo mismo.
+

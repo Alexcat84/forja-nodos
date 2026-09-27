@@ -1,0 +1,12 @@
+======================================================================
+recorrer_rueda_conscientemente_cultura_equipo  EN EL GRAFO: SI
+  fuente: [{"clave": "scott_radical_candor", "fecha": "2026-09-12"}]
+  nodos_previos : []
+  nodos_siguientes: ['recorrer_rueda_hacer_cosas_equipo']
+======================================================================
+debatir_decidir_asuntos_cultura_evitar_delegar  EN EL GRAFO: NO
+======================================================================
+decidir_quien_comunica_cada_cuanto  EN EL GRAFO: SI
+  fuente: [{"clave": "scott_radical_candor", "fecha": "2026-09-12"}]
+  nodos_previos : []
+  nodos_siguientes: ['montar_reuniones_solas_mentalidad_frecuencia', 'conducir_reunion_equipo_agenda_tres_bloques', 'montar_reunion_gran_debate', 'montar_reunion_gran_decision', 'montar_reunion_general_presentaciones_preguntas', 'bloquear_tiempo_pensar_calendario']

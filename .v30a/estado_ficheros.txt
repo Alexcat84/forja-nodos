@@ -1,0 +1,10 @@
+$ git status --porcelain docs/loop/
+ D docs/loop/APERTURA_CIEGA.md
+ D docs/loop/REPORTE.md
+ D docs/loop/loop.log
+ M docs/loop/ultimo_apertura.json
+ D docs/loop/ultimo_auditor.json
+ D docs/loop/ultimo_extractor.json
+
+$ ls -la docs/loop/ultimo_apertura.json
+-rw-r--r-- 1 AlexDesk 197609 0 14:39:00 docs/loop/ultimo_apertura.json

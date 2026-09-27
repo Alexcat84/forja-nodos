@@ -1,0 +1,3 @@
+candidatos en cuarentena del lote 4 : 142
+candidatos contados en la tabla     : 142
+capitulos fuera de la tabla         : 0   []

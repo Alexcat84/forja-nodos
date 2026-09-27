@@ -1,0 +1,2 @@
+python .v78aud/normal/coste.py
+grep "extractor listo\|auditor ciego listo" docs/loop/loop.log | tail -2

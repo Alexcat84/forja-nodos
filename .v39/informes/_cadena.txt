@@ -1,0 +1,11 @@
+cadena 1 arrancada (candidato 1 de 3)
+OK pedir_critica_primero_crear_seguridad_psicologica  (322 nodos, bandeja 23)
+ARISTA desplegar_plan_orden_operaciones_franqueza_radical > pedir_critica_primero_crear_seguridad_psicologica (paso 3)
+ARISTA pedir_critica_primero_crear_seguridad_psicologica > criticar_trabajo_evitar_desanimo (paso 3)
+cadena 1 terminada
+cadena 2 arrancada (candidato 2 de 3)
+OK elegir_pregunta_recurrente_pedir_critica  (323 nodos, bandeja 22)
+cadena 2 terminada
+cadena 3 arrancada (candidato 3 de 3)
+OK resolver_dudas_frecuentes_pedir_critica  (324 nodos, bandeja 21)
+cadena 3 terminada

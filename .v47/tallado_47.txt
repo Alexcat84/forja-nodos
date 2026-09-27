@@ -1,0 +1,5 @@
+    $ python scripts/tallar_reporte.py
+tablas que declaran instrumento : 198
+  talladas, celda a celda       : 115
+  que DIFIEREN de su instrumento: 0
+TALLADO VERDE: las 115 tabla(s) comprobables son las de su instrumento, celda a celda.

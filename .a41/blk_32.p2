@@ -1,0 +1,3 @@
+id            : medir_critica_respuesta_oyente_brujula
+nodos_previos : ["desplegar_marco_franqueza_radical", "ajustar_franqueza_oido_oyente", "manejar_enfado_persona_desafiada", "pedir_critica_primero_crear_seguridad_psicologica"]
+nodos_siguient: []

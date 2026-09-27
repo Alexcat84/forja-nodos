@@ -1,0 +1,2 @@
+filas dirigidas: mias 50 | suyas 50
+por estado: {'en los dos, igual con sus seniales': 50} | suma: 50

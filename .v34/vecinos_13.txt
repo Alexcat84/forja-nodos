@@ -1,0 +1,10 @@
+similitud 0,357  exigir_critica_jefe_reticente P4 CONTRA bloquear_tiempo_pensar_calendario P3
+  A activacion: Cuando sospechas que tu jefe duda en criticar tu trabajo y te esta dejando sin la opinion que necesitas para mejorar.
+  A P4: La tercera: lo que mas necesito de ti es que me digas lo que piensas de verdad.
+  B titulo    : Bloquear tiempo para pensar en tu calendario y mantener ese tiempo sagrado
+  B activacion: Cuando entre las reuniones a solas, la de equipo, las de gran debate y gran decision y lo que va surgiendo no te queda un momento tranquilo para aclarar tu propio pensamiento ni para ayudar a aclarar el de los tuyos.
+  B P3: Agenda entonces algo de tiempo para pensar, y manten ese tiempo sagrado.
+  B fuentes   : ['scott_radical_candor']
+
+  revisar_critica_mujer_agresiva_cuatro_tacticas P2: No te imagines que no vas a caer en la trampa por ser mujer: el texto dice que los dos generos son igual de culpables aqui, y lo dice con pesar.
+  comprobar_criticas_hombre_mujeres_equipo P6: Cuenta con el motivo por el que el texto dice que esto hace falta: puede que ni siquiera seas consciente de que estas siendo mas blando con unas personas que con otras.

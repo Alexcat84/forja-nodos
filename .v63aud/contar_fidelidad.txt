@@ -1,0 +1,8 @@
+candidatos leidos : 16
+filas de lectura  : 130
+pasos sin fila    : 0 []
+filas sin paso    : 0 []
+capitulo  cand pasos    T    P    D
+cap_02       7    50   49    0    1
+cap_03       9    80   80    0    0
+total       16   130  129    0    1

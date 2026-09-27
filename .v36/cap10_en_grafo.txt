@@ -1,0 +1,13 @@
+$ nodos del grafo por capitulo de scott_radical_candor, por su ruta completa
+  cap_01: 1 nodos, 9 pasos
+  cap_03: 1 nodos, 10 pasos
+  cap_04: 5 nodos, 41 pasos
+  cap_05: 8 nodos, 76 pasos
+  cap_06: 10 nodos, 117 pasos
+  cap_07: 25 nodos, 225 pasos
+  cap_08: 12 nodos, 102 pasos
+  cap_09: 20 nodos, 271 pasos
+  cap_10: 14 nodos, 206 pasos
+  cap_11: 16 nodos, 187 pasos
+  cap_12: 1 nodos, 10 pasos
+  TOTAL scott en el grafo: 113 nodos

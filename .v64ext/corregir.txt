@@ -1,0 +1,8 @@
+CAMBIA  construir_grafico_escalonado_pronosticos         paso 5
+CAMBIA  construir_grafico_escalonado_pronosticos         titulo 
+CAMBIA  construir_grafico_escalonado_pronosticos         entregable_esperado 
+CAMBIA  construir_indicador_tendencia_patron             entregable_esperado 
+CAMBIA  elegir_fabricar_pedido_pronostico                paso 8
+CAMBIA  elegir_fabricar_pedido_pronostico                entregable_esperado 
+CAMBIA  elegir_indicador_salida_trabajo_administrativo   entregable_esperado 
+CAMBIA  emparejar_indicadores_efecto_contraefecto        entregable_esperado 

@@ -1,0 +1,6 @@
+$ grep -n -o "(See .1:1 Conversations,. chapter eight.)" fuentes/scott_radical_candor/cap_08.md
+  95:(See "1:1 Conversations," chapter eight.)
+$ grep -n -o "(See .Soliciting Impromptu Guidance,. chapter six.)" fuentes/scott_radical_candor/cap_08.md
+  95:(See "Soliciting Impromptu Guidance," chapter six.)
+$ grep -n -o "(see chapter seven)" fuentes/scott_radical_candor/cap_08.md
+  95:(see chapter seven)

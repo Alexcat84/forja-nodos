@@ -1,0 +1,24 @@
+=== cap_15, 279 lineas en el fichero
+  R1 L8 a L20   reporte 31   mio 31   OK
+  R2 L21 a L42   reporte 390   mio 390   OK
+  R3 L43 a L86   reporte 516   mio 516   OK
+  R4 L87 a L166   reporte 694   mio 694   OK
+  R5 L167 a L178   reporte 87   mio 87   OK
+  R6 L179 a L184   reporte 76   mio 76   OK
+  R7 L185 a L280   reporte 2891   mio 2891   OK
+  cuerpo 4685   suma 4685   residuo 0   solapes 0   sin cubrir 0   celdas que discrepan 0
+  PIEZAS QUE REBASAN EL FICHERO: R7 acaba en L280
+=== cap_16, 489 lineas en el fichero
+  R1 L8 a L20   reporte 51   mio 51   OK
+  R2 L21 a L30   reporte 87   mio 87   OK
+  R3 L31 a L154   reporte 704   mio 704   OK
+  R4 L155 a L244   reporte 1166   mio 1166   OK
+  R5 L245 a L318   reporte 785   mio 785   OK
+  R6 L319 a L420   reporte 1138   mio 1138   OK
+  R7 L421 a L489   reporte 904   mio 904   OK
+  cuerpo 4835   suma 4835   residuo 0   solapes 0   sin cubrir 0   celdas que discrepan 0
+=== cap_17, 221 lineas en el fichero
+  R1 L8 a L18   reporte 13   mio 13   OK
+  R2 L19 a L50   reporte 254   mio 254   OK
+  R3 L51 a L221   reporte 2181   mio 2181   OK
+  cuerpo 2448   suma 2448   residuo 0   solapes 0   sin cubrir 0   celdas que discrepan 0

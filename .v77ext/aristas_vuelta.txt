@@ -1,0 +1,17 @@
+registros de la vuelta en la bitacora: 61
+EN GRAFO   lectura declarada   SANO      fingir_prototipo_cinco_mil_replicas > dar_valor_constante_cuatro_publicos
+EN GRAFO   lectura declarada   SANO      fingir_prototipo_cinco_mil_replicas > operar_modelo_gente_destreza_minima
+EN GRAFO   lectura declarada   SANO      fingir_prototipo_cinco_mil_replicas > unificar_color_forma_vestuario_modelo
+EN GRAFO   veredicto CONTINUA  CONTINUA  cambiar_saludo_cliente_dos_ramas > cuantificar_impacto_innovacion_6_pasos
+EN GRAFO   veredicto CONTINUA  CONTINUA  cambiar_saludo_cliente_dos_ramas > cuantificar_impacto_innovacion_6_pasos
+EN GRAFO   lectura declarada   CONTINUA  fingir_prototipo_cinco_mil_replicas > recorrer_siete_pasos_programa_desarrollo_negocio
+EN GRAFO   veredicto CONTINUA  CONTINUA  aplicar_seis_pasos_sistema_venta > medir_sistema_venta_trece_indicadores_benchmark
+EN GRAFO   veredicto CONTINUA  CONTINUA  aplicar_seis_pasos_sistema_venta > medir_sistema_venta_trece_indicadores_benchmark
+EN GRAFO   veredicto CONTINUA  CONTINUA  construir_estrategia_gente_cuatro_componentes > aplicar_cinco_pasos_proceso_contratacion
+EN GRAFO   lectura declarada   SANO      recorrer_siete_pasos_programa_desarrollo_negocio > construir_estrategia_gente_cuatro_componentes
+EN GRAFO   lectura declarada   SANO      fingir_prototipo_cinco_mil_replicas > documentar_trabajo_manual_operaciones
+EN GRAFO   lectura declarada   SANO      construir_estrategia_gente_cuatro_componentes > documentar_trabajo_manual_operaciones
+EN GRAFO   veredicto CONTINUA  CONTINUA  construir_estrategia_gente_cuatro_componentes > aplicar_cinco_pasos_proceso_contratacion
+registros con arista sin veredicto: 0
+registros con arista: 13 | aristas DISTINTAS: 10 | en el grafo: 10 | en cola: 0 (un par CONTINUA leido desde sus dos lados deja dos registros y una sola arista)
+esperadas: 10 | esperadas que viven en el grafo: 10 | esperadas sin registro: 0 | registradas no esperadas: 0

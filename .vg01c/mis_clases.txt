@@ -1,0 +1,45 @@
+MIS CLASES A CIEGAS, frente grove_high_output, vuelta 1.
+Escrito ANTES de abrir bitacora/VEREDICTOS.jsonl y ANTES de que exista
+cuarentena/grove_high_output/. La bandeja de este libro esta VACIA: no hay
+veredicto que destapar, asi que esto no es relectura de un veredicto ajeno,
+es MI CORTE del texto fuente antes de que el extractor lo corte.
+
+cap_01 (Introduction), 3841 palabras de cuerpo
+  Q1 L11-L49   NO CANDIDATO   relato y diagnostico (DRAM, globalizacion, correo); cero pasos
+  Q2 L51-L59   NO CANDIDATO   definicion de a quien va dirigido el libro; cero pasos
+  Q3 L61-L67   NO CANDIDATO   POSTURA. "let chaos reign, then rein in chaos" no ejecuta nada (vara 6.1)
+  Q4 L69-L77   NO CANDIDATO   las tres ideas del libro: tesis, no procedimiento
+  Q5 L79-L85   NO CANDIDATO EN ESTA UNIDAD  el 1a1 se comenta, no se procedimenta; su procedimiento es de cap_05
+  Q6 L87-L101  NO CANDIDATO   diagnostico de carrera; cero pasos
+  Q7 L103-L107 CANDIDATO      las tres preguntas de autoexamen, enumeradas y ejecutables. EL UNICO de cap_01
+  Q8 L109-L119 NO CANDIDATO   cierre y firma
+
+cap_02 (Cap. 1, The Basics of Production), 3386 palabras de cuerpo
+  P0 L15-L21   NO CANDIDATO   encuadre y carta de la produccion (entregar a la hora comprometida); definicion
+  P1 L23-L29   CANDIDATO      el paso limitante y la planificacion hacia atras con desfases
+  P2 L31-L35   NO CANDIDATO   aplicacion del P1 al reclutamiento. DISCUTIBLE: lo que lo daria vuelta es el
+                              cribado telefonico como paso propio con su ratio
+  P3 L37-L47   DISCUTIBLE, me inclino a CANDIDATO   proceso / montaje / prueba, con el retrabajo y el
+                              test de unidad antes del test de sistema
+  P4 L49-L61   CANDIDATO      la capacidad limitada MUEVE el paso limitante, y el canje entre mano de obra,
+                              capacidad e inventario contra el plazo de entrega
+  P5 L63-L67   CANDIDATO      la operacion continua y la regla de preferir la prueba en proceso a la que
+                              destruye producto
+  P6 L69-L69   CANDIDATO      inspeccion de recepcion y el dimensionado del inventario de materia prima
+                              por consumo durante el plazo de reposicion, contra la oportunidad en riesgo
+  P7 L71-L75   CANDIDATO      rechazar el defecto en su etapa de MENOR VALOR. El mas limpio del capitulo
+  P8 L77-L79   NO CANDIDATO   la justicia penal es ILUSTRACION de P1 y P7; el texto no da pasos al lector.
+                              Si el reporte trae nodo de aqui, mi clase es PUENTE (D.30)
+
+MI CUENTA (LECTURA, no cifra de instrumento):
+  cap_01: 1 candidato
+  cap_02: 5 candidatos firmes + 1 discutible = 5 o 6
+  suma de la vuelta si cierra en cap_02: 6 o 7, por DEBAJO del techo de 5 a 15,
+  asi que preveo que la vuelta NO cierre en cap_02 y entre en cap_03.
+
+VECINOS QUE YA PRE REGISTRO (poblacion GRAFO + BANDEJAS, D.38.4):
+  P1 <-> constraint_management (BANDEJA ensayo_referencia_163)  MI CLASE: CONTINUA
+  P6 <-> just_in_time_manufacturing (BANDEJA ensayo_referencia_163)  MI CLASE: CONTINUA
+  P7 <-> proceso_como_cadena_de_etapas (BANDEJA ensayo_referencia_163)  MI CLASE: CONTINUA
+  Q5 <-> montar_reuniones_solas_mentalidad_frecuencia (GRAFO)  MI CLASE SI SE ESCRIBE: REPITE
+  cap_02 P7 <-> cap_03 L131-L133  MI CLASE SI SE ESCRIBEN LOS DOS: REPITE entre ellos

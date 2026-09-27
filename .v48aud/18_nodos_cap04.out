@@ -1,0 +1,22 @@
+nodos que dicen salir de cap_04, LISTA ENTERA (19):
+   [bandeja/grove_high_output] agrupar_tareas_semejantes_aprovechar_preparacion
+   [bandeja/grove_high_output] buscar_actividad_alta_palanca_tres_vias
+   [bandeja/grove_high_output] buscar_regularidad_bloques_iguales_trabajo_mando  <-- nacido en esta vuelta
+   [bandeja/grove_high_output] decir_no_trabajo_excede_capacidad  <-- nacido en esta vuelta
+   [bandeja/grove_high_output] delegar_tarea_base_comun_seguimiento
+   [bandeja/grove_high_output] detectar_palanca_negativa_actividad_mando
+   [bandeja/grove_high_output] dimensionar_numero_subordinados_medio_dia_semanal  <-- nacido en esta vuelta
+   [bandeja/grove_high_output] elegir_momento_actividad_palanca_maxima
+   [bandeja/grove_high_output] empujar_persona_reunion_direccion_preferida
+   [bandeja/grove_high_output] escalonar_fuentes_informacion_gerencial
+   [bandeja/grove_high_output] identificar_paso_limitante_jornada_desfases
+   [bandeja/grove_high_output] llevar_inventario_proyectos_discrecionales  <-- nacido en esta vuelta
+   [bandeja/grove_high_output] programar_visita_area_observar_despachar
+   [bandeja/grove_high_output] reunir_informacion_gerencial_vias_variadas
+   [bandeja/grove_high_output] subir_productividad_gerencial_tres_vias
+   [bandeja/grove_high_output] supervisar_decision_delegada_preguntas_concretas
+   [bandeja/grove_high_output] supervisar_tarea_delegada_etapa_menor_valor
+   [bandeja/grove_high_output] transmitir_objetivos_prioridades_preferencias
+   [bandeja/grove_high_output] usar_calendario_herramienta_planificacion_produccion  <-- nacido en esta vuelta
+
+nacidos en esta vuelta: 5   ya estaban: 14

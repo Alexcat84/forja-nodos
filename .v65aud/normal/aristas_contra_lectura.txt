@@ -1,0 +1,9 @@
+IGUAL    rehacer_flujo_paso_limitante_capacidad           > equilibrar_capacidad_personal_inventario_plazo   paso 4  | fila 12 | tramo de la fila: madre pasos 2 a 4, hijo paso 1
+IGUAL    representar_actividad_caja_negra_ventanas        > construir_indicador_linealidad_alerta_temprana   paso 8  | fila 9 | tramo de la fila: madre paso 8, hijo paso 2
+IGUAL    representar_actividad_caja_negra_ventanas        > construir_indicador_tendencia_patron             paso 8  | fila 10 | tramo de la fila: madre paso 8, hijo paso 1
+IGUAL    elegir_fabricar_pedido_pronostico                > casar_flujo_fabricacion_flujo_ventas             paso 4  | fila 7 | tramo de la fila: madre pasos 4 a 7, hijo paso 1
+IGUAL    construir_grafico_escalonado_pronosticos         > casar_flujo_fabricacion_flujo_ventas             paso 1  | fila 8 | tramo de la fila: madre pasos 1 a 8, hijo paso 12
+IGUAL    elegir_indicador_salida_trabajo_administrativo   > dimensionar_plantilla_administrativa_pronostico  paso 4  | fila 5 | tramo de la fila: madre pasos 1 a 7, hijo paso 1
+IGUAL    dimensionar_inventario_materia_prima_reposicion  > decidir_aceptar_rechazar_material_defectuoso     paso 3  | fila 11 | tramo de la fila: madre paso 3, hijo paso 1
+filas SOSTENGO: 8 | declaraciones de arista: 7 | iguales a su fila (razon y linea citada): 7
+SOSTENGO sin declaracion: [('construir_indicador_tendencia_patron', 'dimensionar_plantilla_administrativa_pronostico')]

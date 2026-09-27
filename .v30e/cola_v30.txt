@@ -1,0 +1,8 @@
+| fila de la cola del encargo | lo que mido hoy | estado |
+|---|---|---|
+| arista `crear_espacio_seguro_madurar_ideas_nuevas > nutrir_ideas_nuevas_reunion_solas` | madre GRAFO, hijo bandeja, arista sin cablear | SIGUE ABIERTA |
+| serie `D.37` de `minimizar_impuesto_colaboracion_equipo`, 3 partes | proteger_tiempo_equipo_jefe CABLEADA; mantener_manos_trabajo_real_equipo CABLEADA; reservar_calendario_tiempo_ejecutar CABLEADA | CERRADA HOY |
+| mitad `Burnout` de `aprender_resultados_vencer_dos_presiones` | cuidarse_agotamiento_centro_rueda GRAFO, arista CABLEADA | CERRADA HOY |
+| arista NUEVA `desplegar_plan_orden_operaciones_franqueza_radical > bloquear_tiempo_pensar_calendario` | madre bandeja, hijo GRAFO, arista la madre no vive | ABIERTA DESDE HOY |
+| lote 5 (`marquet_turn_the_ship`), que no se toca hasta que el 4 cierre | 3 candidatos en bandeja | SIGUE ABIERTA |
+| bandeja del lote 4, lo que queda por insertar | 89 candidatos | SIGUE ABIERTA |

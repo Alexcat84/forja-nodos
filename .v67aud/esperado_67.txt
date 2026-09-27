@@ -1,0 +1,17 @@
+candidatos: 20 | filas de vecino de mi barrido de la 66 con candidato de los 20: 90
+  ESPERADA  reunir_informacion_gerencial_vias_variadas           > escalonar_fuentes_informacion_gerencial              veredicto CONTINUA
+  ESPERADA  subir_productividad_gerencial_tres_vias              > buscar_actividad_alta_palanca_tres_vias              veredicto CONTINUA
+  ESPERADA  buscar_actividad_alta_palanca_tres_vias              > elegir_momento_actividad_palanca_maxima              veredicto CONTINUA
+  ESPERADA  detectar_arreglar_fallo_etapa_menor_valor            > supervisar_tarea_delegada_etapa_menor_valor          veredicto CONTINUA
+  QUITADA   usar_calendario_herramienta_planificacion_produccion > decir_no_trabajo_excede_capacidad                    veredicto CONTINUA | SANO, ACTA 65 65.4.b
+  ESPERADA  construir_flujo_produccion_paso_limitante            > identificar_paso_limitante_jornada_desfases          por lectura
+  ESPERADA  variar_frecuencia_inspeccion_nivel_calidad           > supervisar_tarea_delegada_etapa_menor_valor          por lectura
+  ESPERADA  delegar_tarea_base_comun_seguimiento                 > supervisar_tarea_delegada_etapa_menor_valor          por lectura
+  ESPERADA  delegar_tarea_base_comun_seguimiento                 > supervisar_decision_delegada_preguntas_concretas     por lectura
+  ESPERADA  transmitir_objetivos_prioridades_preferencias        > delegar_tarea_base_comun_seguimiento                 por lectura
+  ESPERADA  identificar_paso_limitante_jornada_desfases          > usar_calendario_herramienta_planificacion_produccion por lectura
+  QUITADA   buscar_actividad_alta_palanca_tres_vias              > detectar_palanca_negativa_actividad_mando            por lectura        | NO, relectura de la 67
+  ESPERADA  representar_actividad_caja_negra_ventanas            > buscar_regularidad_bloques_iguales_trabajo_mando     por lectura
+aristas que mi lectura espera en la tanda: 11 | quitadas por correccion declarada: 2
+esperadas por lectura: 7 | por veredicto CONTINUA: 4
+madres esperadas que ya vivian en el grafo de 4648cbc: 4 ['construir_flujo_produccion_paso_limitante', 'detectar_arreglar_fallo_etapa_menor_valor', 'representar_actividad_caja_negra_ventanas', 'variar_frecuencia_inspeccion_nivel_calidad']

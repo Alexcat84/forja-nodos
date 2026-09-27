@@ -1,0 +1,5 @@
+BARRIDO DE GUIONES EN ROJO: 3 hallazgo(s)
+  .v57aud/lineas_enteras.txt linea 2 columna 1051: guion largo (U+2014)
+  .v57aud/lineas_enteras.txt linea 2 columna 1136: guion largo (U+2014)
+  .v57aud/lineas_enteras.txt linea 5 columna 223: guion largo (U+2014)
+Regla: cero guiones largos y cero guiones medios en todo el repo (manual seccion 2). Usa el guion corto normal.

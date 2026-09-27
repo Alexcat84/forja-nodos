@@ -1,0 +1,5 @@
+DISCREPA  construir_grafico_escalonado_pronosticos paso 5  ciega T  extractor P
+DISCREPA  elegir_fabricar_pedido_pronostico paso 8  ciega T  extractor P
+DISCREPA  emparejar_indicadores_efecto_contraefecto paso 1  ciega P  extractor T
+pasos: ciega 41 | extractor 41 | coinciden 38 | discrepan 3
+PUENTE: ciega 1 | extractor 2

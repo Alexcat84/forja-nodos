@@ -1,0 +1,35 @@
+{
+ "id": "reciclar_empleado_ascendido_mas_alla_capacidad",
+ "titulo": "Reciclar abiertamente a un empleado ascendido mas alla de su capacidad: reconocer el error de la direccion, devolverlo a un puesto que sepa hacer bien y apoyarlo frente a la verguenza",
+ "dominio": "gestion_equipos",
+ "estado": "vivo",
+ "ids_alias": [],
+ "nodos_previos": [],
+ "nodos_siguientes": [],
+ "atribuciones": [],
+ "fuentes": [
+  {
+   "clave": "grove_high_output",
+   "fecha": "2026-09-20"
+  }
+ ],
+ "denominaciones": {
+  "nombre_largo": "El reciclaje del empleado promovido por encima de su capacidad, devolviendolo abiertamente al puesto que desempeñaba bien antes del ascenso",
+  "sigla": "",
+  "otros_idiomas": [
+   {
+    "idioma": "ingles",
+    "termino": "recycle him"
+   }
+  ]
+ },
+ "condiciones_activacion": "Cuando una persona fue ascendida a un puesto que la supera y lleva demasiado tiempo rindiendo por debajo de lo esperado en el.",
+ "entregable_esperado": "El empleado devuelto abiertamente al puesto en el que se sabe que rinde bien, con el error de juicio reconocido por la direccion y con apoyo explicito frente a la verguenza del retroceso.",
+ "pasos_accionables": [
+  "Reconoce que el error fue de la direccion al juzgar mal la disposicion del empleado para asumir mas responsabilidad, en vez de dejar que el empleado cargue con la culpa y termine saliendo de la empresa.",
+  "Toma medidas deliberadas y directas para colocar a la persona de vuelta en un puesto que sepa desempeñar bien, en lugar de forzar su salida de la empresa.",
+  "Apoya al empleado frente a la verguenza que es probable que sienta por el retroceso.",
+  "Haz el reciclaje abiertamente y no a escondidas, porque hecho asi la verguenza dura mucho menos de lo que todos esperan."
+ ],
+ "resumen_teorico": "UNIDAD DE ORIGEN: fuentes/grove_high_output/cap_16.md, unidad Cap. 15, titulo textual Compensation as Task-Relevant Feedback. Sale de la PIEZA P21 de la frontera publicada hoy en .v58ext/frontera.txt, L49, 253 palabras. POR QUE ES PROCEDIMIENTO, por la prueba del inventario de EXTRACTOR.md 9.1: el parrafo trae una secuencia de acciones concretas en modo deber (the solution is to recycle him... management ought to face up to its own error in judgment and take forthright and deliberate steps to place the person into a job he can do. Management should also support the employee... If recycling is done openly...), un inventario de PASOS de trabajo de la direccion y no de fines, sin adjetivo de adecuacion en el criterio: el libro no dice medidas apropiadas, dice la accion concreta a tomar. DE DONDE SALE CADA PASO, uno a uno, todos de L49: paso 1 (management was at fault for misjudging the employee's readiness for more responsibility... I think it is dead wrong to force someone in such circumstances out of the company. Instead, I think management ought to face up to its own error in judgment); paso 2 (take forthright and deliberate steps to place the person into a job he can do); paso 3 (Management should also support the employee in the face of the embarrassment that he is likely to feel); paso 4 (If recycling is done openly, all will be pleasantly surprised how short-lived that embarrassment will be). RELECTURA DE FIDELIDAD D.30 EN EL ACTO: 4 pasos, 4 TRANSCRIPCION, 0 PUENTE. NO escribo un responsable nombrado distinto de management, ni un plazo, porque el texto no los pone: la doctrina se queda en la direccion en general como sujeto que actua. EL CIERRE DEL PARRAFO NO ENTRA COMO PASO PROPIO: la frase sobre que estos empleados, una vez recuperan la confianza, sueles ser excelentes candidatos a un ascenso posterior es una consecuencia esperada y no una accion nueva que ejecutar, y queda fuera del entregable por ser desenlace y no procedimiento."
+}

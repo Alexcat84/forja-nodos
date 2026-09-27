@@ -1,0 +1,7 @@
+contar_fidelidad.py: IDENTICO a .v73ext/contar_fidelidad.txt
+citas.sh: IDENTICO a .v73ext/citas_fidelidad.txt
+comprobar_veredictos.py: IDENTICO a .v73ext/comprobar_veredictos.txt
+orden.py: IDENTICO a .v73ext/orden.txt
+pasos_y_huellas.py: IDENTICO a .v73ext/pasos_y_huellas.txt
+tabla_vecinos.py: IDENTICO a .v73ext/tablas_vecinos.md
+las 49 fichas y el grafo: mismas huellas que al barrer yo

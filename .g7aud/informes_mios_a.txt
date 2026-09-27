@@ -1,0 +1,76 @@
+=== aplicar_ocho_reglas_juego_personas ===
+candidatos revisados        : 1
+poblacion del barrido       : 462   (346 del grafo mas 116 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 1
+  BLOQUEARIAN esperando veredicto  : 0   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[ENTRARIA] aplicar_ocho_reglas_juego_personas   (aplicar_ocho_reglas_juego_personas.json)
+
+NADA SE INSERTO. Este informe es de SOLO LECTURA: para que un nodo
+entre hace falta python forja.py insertar, uno por vez, con su
+veredicto escrito por vecino.
+=== aplicar_cinco_pasos_proceso_contratacion ===
+candidatos revisados        : 1
+poblacion del barrido       : 462   (346 del grafo mas 116 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 0
+  BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+  vecinos levantados en total      : 2
+  por candidato bloqueado          : menor 2, mediana 2, mayor 2
+  que señal levanta cada vecindad  : similitud_texto 2
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] aplicar_cinco_pasos_proceso_contratacion   (aplicar_cinco_pasos_proceso_contratacion.json)
+    vecino construir_estrategia_gente_cuatro_componentes  [levantada por: similitud_texto]
+      similitud_texto 0.375 | familia_id 0.000 | paso_contra_nodo 0.532
+      paso 11 del candidato contra paso 4 de construir_estrategia_gente_cuatro_componentes
+    vecino fingir_prototipo_cinco_mil_replicas  [levantada por: similitud_texto]
+      similitud_texto 0.355 | familia_id 0.111 | paso_contra_nodo 0.512
+      paso 10 del candidato contra paso 10 de fingir_prototipo_cinco_mil_replicas
+
+=== distinguir_tres_tipos_sistemas_negocio ===
+candidatos revisados        : 1
+poblacion del barrido       : 462   (346 del grafo mas 116 que esperan en bandejas)
+umbrales de esta corrida    : similitud 0.35 | familia 0.30 | paso contra nodo 0.60
+
+EL SALDO
+  ENTRARIAN sin leer nada          : 0
+  BLOQUEARIAN esperando veredicto  : 1   (no es rechazo: es cola de lectura)
+  CAERIAN por una guarda           : 0
+  CHOCAN entre si dentro del lote  : 0
+
+LA COLA DE LECTURA QUE ESTE LOTE ABRIRIA
+  vecinos levantados en total      : 3
+  por candidato bloqueado          : menor 3, mediana 3, mayor 3
+  que señal levanta cada vecindad  : similitud_texto 3
+
+============================================================================
+LA LISTA COMPLETA, candidato por candidato
+============================================================================
+
+[BLOQUEARIA] distinguir_tres_tipos_sistemas_negocio   (distinguir_tres_tipos_sistemas_negocio.json)
+    vecino medir_sistema_venta_trece_indicadores_benchmark  [levantada por: similitud_texto]
+      similitud_texto 0.451 | familia_id 0.100 | paso_contra_nodo 0.394
+      paso 3 del candidato contra paso 14 de medir_sistema_venta_trece_indicadores_benchmark
+    vecino construir_estrategia_gente_cuatro_componentes  [levantada por: similitud_texto]
+      similitud_texto 0.399 | familia_id 0.000 | paso_contra_nodo 0.442
+      paso 2 del candidato contra paso 1 de construir_estrategia_gente_cuatro_componentes
+    vecino aplicar_seis_pasos_sistema_venta  [levantada por: similitud_texto]

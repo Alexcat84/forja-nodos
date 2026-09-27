@@ -1,0 +1,39 @@
+{
+  "id": "cuestionar_historia_irracional_cabeza",
+  "titulo": "Cuestionar la historia que te cuentas cuando no tienes todos los datos",
+  "denominaciones": {
+    "nombre_largo": "El segundo consejo del Pozo: repetirte que la historia que tienes en la cabeza es probablemente irracional, con las tres respuestas que el libro recogio",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "the story I have in my head is probably irrational"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando una historia negativa se ha apoderado de ti a partir de unos pocos datos sueltos, y estas en el Pozo, que es cuando esa historia tiende a ser la del peor caso.",
+  "entregable_esperado": "La interpretacion cuestionada y, cuando se puede, sustituida por una aclaracion pedida directamente en vez de por una especulacion.",
+  "escala_minima": "Una persona y la posibilidad de preguntarle a quien tiene el dato.",
+  "pasos_accionables": [
+    "Recuerda que todos tenemos sesgos, y que parte de la razon de que el sesgo exista es que nuestro cerebro esta cableado para tomar atajos y llegar a conclusiones mas rapido. Por eso existen los estereotipos: si ves a una persona con gafas gruesas arrastrando una pila de libros de texto, puedes concluir que se le dan bien las matematicas aunque no tengas ninguna prueba concreta.",
+    "Cuenta con que esto mismo pasa con como percibimos los acontecimientos: cuando reunimos unos pocos datos, intentamos construir una narrativa completa alrededor de ellos pese a no tener los hechos. Y cuando estamos en el Pozo, nuestra historia tiende a ser la del peor caso posible.",
+    "Ten delante el ejemplo que el libro da: has estado batallando con el sindrome del impostor y descubres que te dejaron fuera de una reunion, y concluyes que no te invitaron porque tus companieros no te consideran valioso.",
+    "Contrasta esa conclusion contra lo que la autora encontro cuando fue a preguntar, porque dice que al menos una docena de personas le han llevado esa misma preocupacion a lo largo de los anios. Cuando ella pregunta a los organizadores por que no invitaron a alguien, estas son las respuestas que mas recibe: no queria hacerle perder el tiempo y que se sintiera obligado a asistir; no me di cuenta de que le importaba el tema de la reunion; y fue un error honesto.",
+    "Y ten delante la excepcion, que el libro tambien escribe: solo una vez la respuesta estuvo en la linea de no pensabamos que fuera a aportar valor, y estaba formulada como nos preocupaba que sus opiniones fuertes desviaran la conversacion.",
+    "Ten claro lo que eso dice: las historias que nos contamos a partir de unas pocas pruebas escasas suelen estar del todo equivocadas, sobre todo cuando estamos en el Pozo. Nueve de cada diez veces la otra persona no va a por ti, tus companieros no piensan que seas un idiota, y si, mereces este trabajo.",
+    "Asi que cuando una historia negativa se apodere de ti, da un paso atras y cuestiona si tu interpretacion es correcta. Hay puntos de vista alternativos que no estas considerando? Que puedes hacer para buscar la verdad?",
+    "Y a veces basta con cuadrar los hombros y preguntar directamente por que no me invitaron a esa reunion, lo que te saca de la especulacion y te mete en la aclaracion. Aunque tengas miedo de la respuesta, enfrentar la realidad siempre es mejor que fabricar el desastre en tu cabeza."
+  ],
+  "resumen_teorico": "Es el segundo consejo para el Pozo y el unico de los seis que ataca la veracidad de lo que crees, y no como te sientes al creerlo. Su inventario propio es doble: las tres respuestas que la autora recibio al ir a preguntar, escritas una a una, y las dos preguntas de cuestionamiento del final. Lo que lo hace ejecutable es que el libro no se queda en di que tu historia es irracional: pone el dato de que preguntando salen otras respuestas, y escribe cuales. Tambien escribe la excepcion, que es lo que impide leerlo como consuelo. Lo que el libro NO dice, y por eso no esta escrito: que hacer cuando la historia negativa resulta ser cierta."
+}

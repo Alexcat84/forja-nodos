@@ -1,0 +1,6 @@
+nodos en dataset/nodos.jsonl        : 437
+veredictos en bitacora              : 1111
+pares mutuos                        : 1
+bandeja cuarentena/gerber_emyth     : 22
+insertados de gerber_emyth          : 0
+cerrojos en procesos/               : 

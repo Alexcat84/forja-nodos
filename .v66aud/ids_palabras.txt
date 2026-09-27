@@ -1,0 +1,97 @@
+poblacion: 479
+interrup 3
+    grove_high_output        agrupar_interrupciones_subordinados_reuniones_regulares
+    grove_high_output        canalizar_interrupciones_cartel_hora_oficina
+    grove_high_output        preparar_respuestas_estandar_interrupciones_repetidas
+deleg 5
+    grafo                    nombrar_delegados_amigos_casa
+    grafo                    debatir_decidir_asuntos_cultura_evitar_delegar
+    grove_high_output        delegar_tarea_base_comun_seguimiento
+    grove_high_output        supervisar_decision_delegada_preguntas_concretas
+    grove_high_output        supervisar_tarea_delegada_etapa_menor_valor
+calendar 4
+    grafo                    auditar_calendario_reuniones_semana
+    grafo                    reservar_calendario_tiempo_ejecutar
+    grafo                    bloquear_tiempo_pensar_calendario
+    grove_high_output        usar_calendario_herramienta_planificacion_produccion
+tanda 2
+    gerber_emyth             responder_4_preguntas_estandares_objetivo_estrategico
+    grove_high_output        preparar_respuestas_estandar_interrupciones_repetidas
+agrupar 2
+    grove_high_output        agrupar_interrupciones_subordinados_reuniones_regulares
+    grove_high_output        agrupar_tareas_semejantes_aprovechar_preparacion
+inventario 3
+    grafo                    dimensionar_inventario_materia_prima_reposicion
+    grafo                    equilibrar_capacidad_personal_inventario_plazo
+    grove_high_output        llevar_inventario_proyectos_discrecionales
+subordin 9
+    grove_high_output        agrupar_interrupciones_subordinados_reuniones_regulares
+    grove_high_output        decidir_amistad_subordinado_prueba_revision_dificil
+    grove_high_output        dimensionar_numero_subordinados_medio_dia_semanal
+    grove_high_output        facilitar_expresion_subordinado_pregunta_mas
+    grove_high_output        gestionar_retencion_subordinado_valioso_renuncia
+    grove_high_output        guiar_subordinado_etapas_resistencia_desempeno
+    grove_high_output        preparar_guion_reunion_individual_subordinado
+    grove_high_output        priorizar_lista_entrenamiento_subordinados
+    grove_high_output        responder_primer_aviso_renuncia_subordinado
+palanca 3
+    grove_high_output        buscar_actividad_alta_palanca_tres_vias
+    grove_high_output        detectar_palanca_negativa_actividad_mando
+    grove_high_output        elegir_momento_actividad_palanca_maxima
+informacion 3
+    grove_high_output        escalonar_fuentes_informacion_gerencial
+    grove_high_output        reunir_informacion_gerencial_vias_variadas
+    marquet_turn_the_ship    inspeccionar_reparto_informacion_notas_jefe
+visita 1
+    grove_high_output        programar_visita_area_observar_despachar
+empuj 2
+    grafo                    distinguir_empuje_tiron_salidas_laborales
+    grove_high_output        empujar_persona_reunion_direccion_preferida
+regular 4
+    grafo                    compartir_opinion_conductual_regularidad
+    grove_high_output        agrupar_interrupciones_subordinados_reuniones_regulares
+    grove_high_output        buscar_regularidad_bloques_iguales_trabajo_mando
+    grove_high_output        infundir_regularidad_reunion_proceso
+limitante 3
+    grafo                    construir_flujo_produccion_paso_limitante
+    grafo                    rehacer_flujo_paso_limitante_capacidad
+    grove_high_output        identificar_paso_limitante_jornada_desfases
+preparacion 1
+    grove_high_output        agrupar_tareas_semejantes_aprovechar_preparacion
+capacidad 6
+    grafo                    rehacer_flujo_paso_limitante_capacidad
+    grafo                    equilibrar_capacidad_personal_inventario_plazo
+    grove_high_output        decir_no_trabajo_excede_capacidad
+    grove_high_output        determinar_estado_presente_capacidades_proyectos_merma
+    grove_high_output        diagnosticar_capacidad_motivacion_prueba_vida
+    grove_high_output        reciclar_empleado_ascendido_mas_alla_capacidad
+supervis 3
+    grove_high_output        repartir_supervision_puesto_funcional_mision
+    grove_high_output        supervisar_decision_delegada_preguntas_concretas
+    grove_high_output        supervisar_tarea_delegada_etapa_menor_valor
+seguim 4
+    grafo                    crear_sistema_captura_seguimiento_candidatos
+    grafo                    preguntar_seguimiento_hallar_huecos
+    grove_high_output        delegar_tarea_base_comun_seguimiento
+    marquet_turn_the_ship    eliminar_seguimiento_descendente_responsabilizar_dueno
+entromet 0
+objetiv 5
+    gerber_emyth             responder_4_preguntas_estandares_objetivo_estrategico
+    grove_high_output        contestar_dos_preguntas_direccion_objetivos
+    grove_high_output        fijar_meta_direccion_objetivos_mitad_probabilidad
+    grove_high_output        fijar_periodo_direccion_objetivos_retroalimentacion
+    grove_high_output        transmitir_objetivos_prioridades_preferencias
+pronost 3
+    grafo                    construir_grafico_escalonado_pronosticos
+    grafo                    elegir_fabricar_pedido_pronostico
+    grafo                    dimensionar_plantilla_administrativa_pronostico
+caja_negra 1
+    grafo                    representar_actividad_caja_negra_ventanas
+estandar 2
+    gerber_emyth             responder_4_preguntas_estandares_objetivo_estrategico
+    grove_high_output        preparar_respuestas_estandar_interrupciones_repetidas
+frecuencia 4
+    grafo                    dar_opinion_frecuencia_suficiente
+    grafo                    montar_reuniones_solas_mentalidad_frecuencia
+    grafo                    variar_frecuencia_inspeccion_nivel_calidad
+    grove_high_output        fijar_frecuencia_reunion_individual_madurez_tarea

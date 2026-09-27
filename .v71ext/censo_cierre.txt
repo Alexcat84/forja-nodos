@@ -1,0 +1,7 @@
+$ bash .v71ext/censo.sh
+nodos en dataset/nodos.jsonl        : 410
+veredictos en bitacora              : 1027
+pares mutuos                        : 1
+bandeja cuarentena/grove_high_output: 27
+insertados de grove_high_output     : 65
+cerrojos en procesos/               : 

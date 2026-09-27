@@ -1,0 +1,44 @@
+{
+  "id": "avisar_organizador_reunion_prescindible",
+  "titulo": "Avisar a quien organiza cuando una reunion periodica no vale para nadie",
+  "denominaciones": {
+    "nombre_largo": "Las reuniones que no le sirven a nadie, su efecto medido sobre el equipo, y el aviso amable que las cancela o las rehace",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "meetings that do not need to exist at all"
+      }
+    ],
+    "sigla": ""
+  },
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "zhuo_manager",
+      "fecha": "2026-09-11"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "condiciones_activacion": "Cuando te encuentras en una reunion periodica de valor cuestionable, que no parece valiosa para nadie y no solo para ti.",
+  "entregable_esperado": "El organizador avisado amablemente, y la reunion cancelada o rehecha.",
+  "pasos_accionables": [
+    "Manten la vigilancia tambien sobre las reuniones que no parecen valiosas para nadie, y no solo sobre las que no te necesitan a ti.",
+    "Trata esas dos salidas como las unicas: deberian cancelarse o rehacerse.",
+    "Fijate en las senales que la autora describe en la suya de los miercoles, que ella temia: todos los asistentes sentados con brazos y piernas cruzados, como si debatieran politica de armamento nuclear en vez de mejoras de proceso, y cualquier cosa que se decia inmediatamente refutada o recibida con un silencio largo.",
+    "No esperes a que la reunion muera sola. La de los miercoles termino solo cuando llego una reorganizacion mayor del equipo, y anios despues ella y un colega descubrieron que los dos habian pensado siempre que era una perdida de tiempo, y se preguntaron por que no lo habian reconocido entonces y la habian cerrado antes.",
+    "Si te encuentras en una reunion periodica de valor cuestionable, hazle a todo el mundo un servicio importante avisando amablemente a quien la organiza.",
+    "Apunta a que cada una de las reuniones de las que formas parte sea util, estupenda y llena de energia, para que tu equipo consiga mas junto."
+  ],
+  "resumen_teorico": "Cierra el capitulo con la unica pieza cuyo ejecutor no es quien organiza la reunion sino quien la sufre. La doctrina es que una reunion mala no es un coste neutro, y eso no se sostiene sobre opinion sino sobre la investigacion que el libro cita, que conecta las reuniones bien planificadas con el rendimiento del equipo y el bienestar del empleado, y las malas con la frustracion, el agotamiento y el posible desgaste. El caso de la reunion de los miercoles va DENTRO y no a nodo propio (manual seccion 3.5): lo que se lleva de el es el patron de senales y la leccion de no esperar, no la fecha ni el asunto. Lo que el libro NO dice, y por eso no esta escrito aqui, es con que palabras se avisa al organizador, ni que hacer si el organizador se niega.",
+  "atribuciones": [
+    {
+      "cifra": "hay una conexion directa entre las reuniones bien planificadas, aquellas en las que se invita a las personas adecuadas, la agenda esta organizada y las interacciones son utiles, y resultados como el rendimiento del equipo y el bienestar del empleado; las malas reuniones pueden dejar a los empleados frustrados y pueden ademas disparar agotamiento y posible desgaste, mientras que las buenas pueden levantar la moral",
+      "autor": "Nale Lehmann Willenbrock y sus colegas, citados por Julie Zhuo",
+      "fuente": "zhuo_manager",
+      "fecha_corte": "no consta en el texto: el libro cita la investigacion sin anio"
+    }
+  ]
+}

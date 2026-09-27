@@ -1,0 +1,26 @@
+fila 11, aplicar_ejercicio_codigo_genetico_control, lineas --veredicto: 1
+  --veredicto resistir_dar_solucion_clasificar_decision_urgencia|SANO|Hermanos, dos mecanismos de CONTROL (cap_06 L117, cap_08 L107): este reescribe en la politica escrita quien tiene la autoridad de decision, con la tarjeta de preocupaciones en la pared (L101 a L111), y el vecino da espacio al equipo antes de decidir y clasifica la decision por urgencia (L107, L117 a L121). Ninguno usa el producto del otro.
+inicio 2026-09-26 19:27:22
+======================================================================
+ADUANA DE INSERCION, candidato 'aplicar_ejercicio_codigo_genetico_control'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (469 del grafo mas 10 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 1. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino resistir_dar_solucion_clasificar_decision_urgencia  [Resistir dar la solucion y clasificar la decision del equipo segun su urgencia]
+    levantada por: similitud_texto
+    similitud_texto    0.366 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.432 (umbral 0.60)
+    paso 2 del candidato contra paso 4 de resistir_dar_solucion_clasificar_decision_urgencia
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 470
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 1
+
+======================================================================
+fin 2026-09-26 19:36:53 | codigo de salida 0 | 570.7 s

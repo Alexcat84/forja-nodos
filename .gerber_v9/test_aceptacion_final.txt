@@ -1,0 +1,5 @@
+  D.59, la cifra derivada la calcula el instrumento: 10 pruebas mas
+  los tres defectos que midio el frente (d096, d097, d102): 10 pruebas mas
+
+  total: 353 pruebas, 0 fallos, 0 errores
+========================================================================

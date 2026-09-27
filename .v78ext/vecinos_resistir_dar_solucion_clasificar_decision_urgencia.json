@@ -1,0 +1,72 @@
+{
+ "id": "resistir_dar_solucion_clasificar_decision_urgencia",
+ "grafo": 459,
+ "bandejas": 20,
+ "vecinos": [
+  {
+   "id": "aplicar_ejercicio_codigo_genetico_control",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.356,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.452
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 2 de aplicar_ejercicio_codigo_genetico_control"
+  },
+  {
+   "id": "declarar_intencion_reemplazar_peticion_permiso",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.411,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.434
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 3 de declarar_intencion_reemplazar_peticion_permiso"
+  },
+  {
+   "id": "acoger_inspectores_externos_fuente_aprendizaje",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.428,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.402
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 3 de acoger_inspectores_externos_fuente_aprendizaje"
+  },
+  {
+   "id": "tomar_accion_deliberada_pausar_vocalizar_gesticular",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.402,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.382
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 2 del candidato contra paso 1 de tomar_accion_deliberada_pausar_vocalizar_gesticular"
+  },
+  {
+   "id": "reforzar_principios_guia_lenguaje_prueba_conocimiento",
+   "sede": "bandeja",
+   "senales": {
+    "similitud_texto": 0.369,
+    "familia_id": 0.0,
+    "paso_contra_nodo": 0.346
+   },
+   "levantada_por": [
+    "similitud_texto"
+   ],
+   "detalle_paso": "paso 3 del candidato contra paso 2 de reforzar_principios_guia_lenguaje_prueba_conocimiento"
+  }
+ ]
+}

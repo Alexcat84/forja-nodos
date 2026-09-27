@@ -1,0 +1,38 @@
+id: recorrer_siete_pasos_programa_desarrollo_negocio
+titulo: Recorrer los siete pasos del Business Development Program, empezando por tu Primary Aim
+ P1 Entiende tu Business Development Program como el proceso paso a paso con el que conviertes tu negocio actual, o el que vas a crear, en un modelo perfectamente organizado para miles de replicas iguales.
+ P2 Usalo tambien como el vehiculo con el que construyes tu Franchise Prototype.
+ P3 Recorre el programa en sus siete pasos distintos, en este orden.
+ P4 Paso 1: Your Primary Aim.
+ P5 Paso 2: Your Strategic Objective.
+ P6 Paso 3: Your Organizational Strategy.
+ P7 Paso 4: Your Management Strategy.
+ P8 Paso 5: Your People Strategy.
+ P9 Paso 6: Your Marketing Strategy.
+ P10 Paso 7: Your Systems Strategy.
+
+nodos_siguientes: []
+
+--- los 22 de la bandeja, con su titulo ---
+aplicar_cinco_pasos_proceso_contratacion             Aplicar los cinco componentes del proceso de contratacion que el
+aplicar_ocho_reglas_juego_personas                   Aplicar las ocho reglas que el libro enumera para el juego de tu
+aplicar_seis_pasos_sistema_venta                     Aplicar los seis pasos principales que el libro enumera para un 
+cambiar_saludo_cliente_dos_ramas                     Cambiar el saludo del vendedor por una pregunta con dos ramas de
+construir_empresa_plantilla_vision_diaria            Construir la empresa contra la plantilla de tu vision, y medir c
+construir_estrategia_gente_cuatro_componentes        Construir tu Your People Strategy con los cuatro componentes que
+cuantificar_impacto_innovacion_6_pasos               Cuantificar el impacto real de una innovacion en tu negocio con 
+dar_valor_constante_cuatro_publicos                  Dar valor constante y por encima de lo esperado a los cuatro pub
+dictar_ritmo_crecimiento_preguntas_escritas          Dictar el ritmo de crecimiento de tu negocio con los tres conoci
+distinguir_tres_tipos_sistemas_negocio               Distinguir los tres tipos de sistemas que el libro nombra en tu 
+documentar_trabajo_manual_operaciones                Documentar todo el trabajo del modelo en el Manual de Operacione
+fingir_prototipo_cinco_mil_replicas                  Fingir que tu negocio es el prototipo de 5.000 iguales, y jugar 
+hacer_trabajo_futuro_imaginar_negocio                Hacer el trabajo futuro del emprendedor: dejar atras el oficio y
+interrogar_negocio_cinco_preguntas                   Ponerte a trabajar en tu negocio como si fuera un prototipo de p
+medir_sistema_venta_trece_indicadores_benchmark      Medir tu sistema de venta con los trece indicadores del Informat
+operar_modelo_gente_destreza_minima                  Operar el modelo con gente del nivel de destreza mas bajo posibl
+probar_traje_azul_seis_semanas                       Correr un test de seis semanas comparando dos vestuarios complet
+recorrer_siete_pasos_programa_desarrollo_negocio     Recorrer los siete pasos del Business Development Program, empez
+responder_4_preguntas_estandares_objetivo_estrategico Responder las cuatro preguntas que el libro enumera para complet
+responder_8_preguntas_construir_primary_aim          Responder las ocho preguntas que el libro enumera para construir
+trazar_modelo_negocio_cliente_primero                Trazar el modelo de tu negocio arrancando del retrato del client
+unificar_color_forma_vestuario_modelo                Unificar el codigo de color, forma y vestuario del modelo, y lle

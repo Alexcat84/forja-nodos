@@ -1,0 +1,39 @@
+{
+  "id": "reparar_mal_comportamiento_evitar_disculpa_falsa",
+  "titulo": "Reparar tu propio mal comportamiento sin caer en la disculpa falsa: entender primero, resolver despues y admitir al final",
+  "denominaciones": {
+    "nombre_largo": "Que hacer cuando te has portado mal y te lo han dicho: el orden que convierte una disculpa en reparacion y no en insinceridad manipuladora",
+    "otros_idiomas": [
+      {
+        "idioma": "ingles",
+        "termino": "the false apology"
+      }
+    ],
+    "sigla": ""
+  },
+  "condiciones_activacion": "Cuando te has portado mal con alguien, alguien te lo ha dicho, y estas a punto de ir a disculparte.",
+  "entregable_esperado": "Una reparacion hecha en su orden: el pensamiento del otro entendido, una solucion que atiende sus preocupaciones y las tuyas, y solo entonces la admision de que te portaste mal, sin haber invertido tu posicion intelectual para salir del paso.",
+  "pasos_accionables": [
+    "Cuenta con que la respuesta que sale sola cuando te portas mal y te lo dicen es volverte menos genuino y mas politico, que es pasar de la agresion odiosa a un sitio peor, la insinceridad manipuladora.",
+    "Separa el tono de la posicion antes de abrir la boca: el texto dice que no habria habido nada malo en disculparse por el tono que habia usado, y pone justo enfrente lo que si estuvo mal.",
+    "No inviertas de golpe tu posicion intelectual y sin explicacion. En el caso de la autora esa fue exactamente la jugada equivocada, y su insinceridad fue obvia.",
+    "Si lo unico que se te ocurre te mueve en la direccion equivocada del eje desafiar directamente, callate: el texto dice que habria sido mejor no haber dicho nada.",
+    "Mejor todavia, sube por el eje de cuidar personalmente.",
+    "Tomate la molestia de entender el pensamiento del otro. En el caso de la autora, el pensamiento de Larry.",
+    "Busca despues una solucion que atienda las preocupaciones del otro y las tuyas.",
+    "Admite solo en ese contexto que te portaste mal. El texto dice que asi probablemente se habria recibido mejor."
+  ],
+  "resumen_teorico": "Sale del rotulo The false apology de fuentes/scott_radical_candor/cap_05.md, lineas 181 a 187. Lo que lo hace procedimiento no es la leccion sino el ORDEN: entender, resolver, y solo entonces disculparse. El texto no encarga una disculpa mejor, encarga una secuencia, y el caso que la sostiene es el correo odiosamente agresivo de la autora a Larry Page, con su consecuencia escrita. La pieza tiene ademas su cara negativa nombrada por el libro, que es la que le da el titulo: la disculpa que invierte de golpe la posicion intelectual sin explicacion, que el texto llama exactamente la jugada equivocada. RELECTURA DE FIDELIDAD D.30 HECHA EN EL ACTO DE ESCRIBIR, paso a paso contra su linea: 8 pasos, 8 TRANSCRIPCION, 0 PUENTE. P1, P4, P5, P6, P7 y P8 salen de la linea 187; P2 y P3 salen de la linea 185. EL PASO QUE MAS MIRE ES EL P2, porque junta dos mitades del texto y esa es la especie de puente que esta casa bautizo en la vuelta 15: la juntura tambien tiene que ser del libro. Lo es, y es literal: la linea 185 escribe las dos mitades unidas por un pero en su lugar, o sea que el contraste entre disculparse por el tono y invertir la posicion lo pone el libro y no el lector. LO QUE EL TEXTO NO DICE, Y POR ESO NO ESTA ESCRITO AQUI: cuanto se espera antes de ir, a quien mas se le cuenta, que se hace si el otro no lo recibe mejor, y que pasa si despues de entender el pensamiento del otro sigues pensando que tenias razon. Ese ultimo hueco es el mas grande y el libro lo deja abierto a proposito: la autora dice que seguia sin entender por que su valoracion era erronea, y el texto no le resuelve esa parte.",
+  "dominio": "gestion_equipos",
+  "estado": "vivo",
+  "fuentes": [
+    {
+      "clave": "scott_radical_candor",
+      "fecha": "2026-09-12"
+    }
+  ],
+  "ids_alias": [],
+  "nodos_previos": [],
+  "nodos_siguientes": [],
+  "atribuciones": []
+}

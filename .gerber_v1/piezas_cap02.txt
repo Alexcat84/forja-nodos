@@ -1,0 +1,9 @@
+[
+ ('R1',  8,  15, 'el rotulo `INTRODUCTION` y el epigrafe de Joseph Heller', 'RESIDUO: rotulo y epigrafe'),
+ ('R2', 16,  31, 'para quien se escribio el libro y la creencia que lo sostiene: los negocios pequenios no funcionan, quien los posee si, y el problema no es que no trabajen sino que hacen el trabajo equivocado', 'POSTURA'),
+ ('R3', 32,  47, 'las cifras del fracaso, el 80 por ciento a cinco anios y el otro 80 a los cinco siguientes, y las cuatro preguntas que el libro dice contestar', 'POSTURA con cifra'),
+ ('R4', 48,  59, 'las cuatro ideas, `IDEA #1` a `IDEA #4`: el E-Myth, la Revolucion Llave en Mano, el Proceso de Desarrollo de Negocio y su aplicacion paso a paso', 'POSTURA: son tesis, no medios'),
+ ('R5', 60,  69, 'los 25.000 duenios atendidos por E-Myth Worldwide desde 1977 y el libro como productor de resultados y no de un como se hace', 'POSTURA y CASO'),
+ ('R6', 70,  93, 'tu negocio es un reflejo de quien eres, y por eso el primero que tiene que cambiar eres tu', 'POSTURA'),
+ ('R7', 94,  99, 'el rotulo de la `PART I`', 'RESIDUO: rotulo'),
+]

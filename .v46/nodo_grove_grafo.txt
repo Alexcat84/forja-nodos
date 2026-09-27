@@ -1,0 +1,10 @@
+$ python -c "el nodo de grove que ya vive en el grafo"
+id     : revisar_tres_preguntas_valor_carrera
+titulo : Examinar tu propio trabajo con las tres preguntas que el libro deja para tu carrera
+  1. Preguntate si estas anadiendo valor real o si solo estas pasando informacion de un lado a otro.
+  2. Contesta el como que el propio libro pone para esa primera pregunta: buscar sin parar maneras de hacer que las cosas sean de verdad mejores en tu departamento.
+  3. Mide esa primera pregunta con la vara que el libro le pone: en principio, cada hora de tu dia deberia irse en aumentar la produccion, o el valor de la produccion, de las personas d
+  4. Preguntate si estas enchufado a lo que pasa a tu alrededor, y cuenta dentro de eso lo que pasa dentro de tu empresa y lo que pasa dentro de tu sector entero.
+  5. Comprueba en esa segunda pregunta si esperas a que un jefe o cualquier otro te interprete lo que esta pasando, y si eres un nodo conectado a una red de gente enchufada o vas flotan
+  6. Preguntate si estas probando ideas, tecnicas y tecnologias nuevas, y probandolas en persona, no solo leyendo sobre ellas.
+  7. Comprueba en esa tercera pregunta si estas esperando a que otros averiguen como rehacer tu puesto de trabajo, y a ti fuera de ese puesto.
