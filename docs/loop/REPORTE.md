@@ -68400,3 +68400,22 @@ La aduana de hoy: **BLOQUEARIA** con `4` vecino(s) contra `479`; lineas `--vered
     hoy 4 vecinos, barrido de la 78 4 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (472 grafo, 7 bandejas), en la 78 479 (459, 20)
 
 **Los cuatro vecinos son los de su bloque y las cuatro lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `78`, las tres seniales al digito; la poblacion, `479` (`472` mas `7`). Sin aristas en esta fila: sus filas con `ceder_control_reforzar_competencia_claridad` y `resistir_dar_solucion_clasificar_decision_urgencia` son `NO SOSTENGO`. Bitacora de `1207` a `1211`, sus cuatro lineas SANO.
+
+### Fila `15`: `resistir_dar_solucion_clasificar_decision_urgencia`, **INSERTADO** en `552.4` s, codigo `0`, commit `c1f2e7c7`
+
+La aduana de hoy: **BLOQUEARIA** con `5` vecino(s) contra `479`; lineas `--veredicto` pasadas: `5`. Salida entera en `.v80ext/insertar_15_resistir_dar_solucion_clasificar_decision_urgencia.txt`.
+
+<!-- TALLADO: parcial salida=.v80ext/insertar_15_resistir_dar_solucion_clasificar_decision_urgencia.txt -->
+
+| vecino que levanta hoy | levantada por | texto | familia | paso | linea pasada |
+|---|---|---:|---:|---:|---|
+| `aplicar_ejercicio_codigo_genetico_control` | similitud_texto | 0.356 | 0.000 | 0.452 | SANO |
+| `declarar_intencion_reemplazar_peticion_permiso` | similitud_texto | 0.411 | 0.000 | 0.434 | SANO |
+| `acoger_inspectores_externos_fuente_aprendizaje` | similitud_texto | 0.428 | 0.000 | 0.402 | SANO |
+| `tomar_accion_deliberada_pausar_vocalizar_gesticular` | similitud_texto | 0.402 | 0.000 | 0.382 | SANO |
+| `reforzar_principios_guia_lenguaje_prueba_conocimiento` | similitud_texto | 0.369 | 0.000 | 0.346 | SANO |
+
+    $ python .v80ext/contra_barrido.py 15 resistir_dar_solucion_clasificar_decision_urgencia
+    hoy 5 vecinos, barrido de la 78 5 | nuevos hoy: 0 | que ya no levantan: 0 | con senial distinta: 0 | poblacion hoy 479 (473 grafo, 6 bandejas), en la 78 479 (459, 20)
+
+**Los cinco vecinos son los de su bloque y las cinco lineas se pasaron tal cual**: ni nuevos ni caidos contra el barrido de la `78`, las tres seniales al digito; la poblacion, `479` (`473` mas `6`). Sin aristas en esta fila. Bitacora de `1211` a `1216`, sus cinco lineas SANO.
