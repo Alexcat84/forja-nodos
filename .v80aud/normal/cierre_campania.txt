@@ -1,0 +1,21 @@
+(1) CENSO POR LIBRO (clave de la primera fuente de cada nodo de dataset/nodos.jsonl)
+      scott_radical_candor              142
+      zhuo_manager                      136
+      grove_high_output                  92
+      smart_who                          59
+      gerber_emyth                       22
+      marquet_turn_the_ship              20
+      onu_consumidor                      6
+      manual_sistema_conocimiento         2
+      SUMA                              479  (filas del fichero: 479) | nodos con mas de una fuente: 0
+(2) ARISTAS: 220 | escritas en la madre y en el hijo: 220 | solo en un lado: 0 | entre libros distintos: 1 | dentro de un libro: 219 | suma: 220
+      despedir_persona_respeto_franqueza (zhuo_manager) > despedir_persona_franqueza_radical (scott_radical_candor)
+(3) LOS TRES DEL CORTE, EN BANDEJA SIN EXTRAER
+      bernerslee_bananas | How Bad Are Bananas? The Carbon Footprint of Everything, Mike Berners-Lee, PENDIENTE | capitulos en fuentes/bernerslee_bananas/: 19 | nodos en el grafo: 0 | fichas en cuarentena: 0
+        prioridad 4, fuera de campania: True | motivo: 19 cap. Mas analisis que procedimiento.
+      openstax_business_ethics | Business Ethics, OpenStax, Rice University, 2018 | capitulos en fuentes/openstax_business_ethics/: 17 | nodos en el grafo: 0 | fichas en cuarentena: 0
+        prioridad 5, fuera de campania: True | motivo: 17 cap. Manual academico, densidad de procedimiento baja, mucho marco conceptual.
+      openstax_org_behavior | Organizational Behavior, OpenStax, Rice University, 2019 | capitulos en fuentes/openstax_org_behavior/: 32 | nodos en el grafo: 0 | fichas en cuarentena: 0
+        prioridad 6, fuera de campania: True | motivo: 32 cap. El mas caro del lote y el de mayor solape con lo ya insertado (Zhuo, Scott, Grove): el peor candidato por costo y beneficio de los diez.
+COLA DE DOCTRINA (config/frentes.json): 11 preguntas | {'no bloquea': 11} | suma: 11
+DEUDAS (scripts/deuda.py): pendientes: 44    pagadas: 68

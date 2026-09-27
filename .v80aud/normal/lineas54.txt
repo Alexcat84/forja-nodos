@@ -1,0 +1,7 @@
+lineas nuevas de la bitacora: 54 (de la 1173 a la 1226) | por tipo: {'linea --veredicto': 52, 'arista por lectura': 1, 'CORREGIDO (d183)': 1} | suma: 54
+lineas --veredicto contra la preparada (veredicto y razon letra a letra) / mi fila dirigida (senial y tres cifras) / mi clase sellada:
+  {'lista SI / fila SI / clase SI': 52} | suma: 52
+  que no casan en alguna: 0 []
+lineas preparadas: 52 | escritas: 52 | preparadas sin escribir: 0 | escritas sin preparar: 0
+filas dirigidas de mi barrido con candidato de las 20: 52 | sin linea en la bitacora: 0 []
+veredictos de las lineas --veredicto: {'SANO': 52}

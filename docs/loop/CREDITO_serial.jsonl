@@ -373,3 +373,8 @@
 {"cae": false, "cita": "ACTA 78, secciones 78.0, 78.1 y 78.7", "especie": "DATO MOVIDO", "linea": "serial", "racha": "0 de 2", "tanda": "ACTA 78", "tipo": "tanda", "vuelta": 79}
 {"cae": false, "cita": "ACTA 78, secciones 78.2 y 78.7 (una caida registrada que no acumula, en bloque)", "especie": "REPORTE", "linea": "serial", "racha": "0 de 3", "tanda": "ACTA 78", "tipo": "tanda", "vuelta": 79}
 {"cae": false, "cita": "ACTA 78, secciones 78.7 y 78.9", "especie": "AUDITOR", "linea": "serial", "racha": "0 de 3", "tanda": "ACTA 78", "tipo": "tanda", "vuelta": 79}
+{"cae": false, "cita": "ACTA 79, secciones 79.3, 79.4 y 79.7", "especie": "CLASE", "linea": "serial", "racha": "0 de 2", "tanda": "ACTA 79", "tipo": "tanda", "vuelta": 80}
+{"cae": false, "cita": "ACTA 79, secciones 79.0 y 79.7", "especie": "CIFRA PUBLICADA", "linea": "serial", "racha": "0 de 2", "tanda": "ACTA 79", "tipo": "tanda", "vuelta": 80}
+{"cae": false, "cita": "ACTA 79, secciones 79.0, 79.1 y 79.7", "especie": "DATO MOVIDO", "linea": "serial", "racha": "0 de 2", "tanda": "ACTA 79", "tipo": "tanda", "vuelta": 80}
+{"cae": false, "cita": "ACTA 79, secciones 79.2 y 79.7", "especie": "REPORTE", "linea": "serial", "racha": "0 de 3", "tanda": "ACTA 79", "tipo": "tanda", "vuelta": 80}
+{"cae": false, "cita": "ACTA 79, secciones 79.7 y 79.9", "especie": "AUDITOR", "linea": "serial", "racha": "0 de 3", "tanda": "ACTA 79", "tipo": "tanda", "vuelta": 80}

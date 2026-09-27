@@ -1,0 +1,28 @@
+  NO CORRIDA (escribe) | .v80ext/t1_d104.txt | python scripts/deuda.py --pagar d104 --vuelta 80 --como "$(cat .v80ext/como_d104.txt)"
+  DISTINTA | .v80ext/t1_d104.txt | python scripts/deuda.py | grep -E '^  (d104|d183) '
+     guardada:   d183   78      relectura          LA FRONTERA DECLARADA ENTRE grove_high_output Y marq
+     hoy     : 
+  DISTINTA | .v80ext/t1_d104.txt | python scripts/deuda.py --clase 80
+     guardada: LIBRE /   van 1 de 5 desde la ultima de saneamiento (la 79), con 45 deuda(s) esperando
+     hoy     : LIBRE /   van 1 de 5 desde la ultima de saneamiento (la 79), con 44 deuda(s) esperando
+  NO CORRIDA (escribe) | .v80ext/t2.txt | python .v78ext/pasos_y_huellas.py > .v80ext/huellas_t2.txt; diff .v80ext/huellas_t2.txt .v
+  DISTINTA | .v80ext/t2.txt | sha1sum -c --quiet .v78aud/huellas_al_barrer.txt && echo "las 20 fichas y el grafo de hoy: mismas huellas que 
+     guardada: las 20 fichas y el grafo de hoy: mismas huellas que al barrer en la fase ciega de la 78
+     hoy     : cuarentena/marquet_turn_the_ship/acoger_inspectores_externos_fuente_aprendizaje.json: FAILED open or read / cuarentena/marquet_turn_the_ship/aplicar_ejercicio_codigo_genetico_control.json: FAILED open or read / cuarentena/marquet_turn_the_ship/asignar_responsable_unico_evolucion_planificada.json: FA
+  DISTINTA | .v80ext/t3_cierre.txt | python .v80ext/aristas_vuelta.py
+     guardada: registros de la vuelta en la bitacora: 53 / EN GRAFO   lectura declarada   CONTINUA  observar_reunion_rutinaria_senales_plantilla > seguir_frustrado_preguntar_implantacion_ideas / registros con arista sin veredicto: 0 / registros con arista: 1 | aristas DISTINTAS: 1 | en el grafo: 1 | en cola: 0 (un
+     hoy     : registros de la vuelta en la bitacora: 54 / EN GRAFO   lectura declarada   CONTINUA  observar_reunion_rutinaria_senales_plantilla > seguir_frustrado_preguntar_implantacion_ideas / registros con arista sin veredicto: 0 / registros con arista: 1 | aristas DISTINTAS: 1 | en el grafo: 1 | en cola: 0 (un
+  DISTINTA | .v80ext/t3_cierre.txt | bash .v80ext/censo.sh 2>/dev/null   # tras la fila 20, antes de la TAREA 4
+     guardada: nodos en dataset/nodos.jsonl        : 479 / veredictos en bitacora              : 1225 / pares mutuos                        : 1 / bandeja cuarentena/marquet_turn_the_ship : 0 / insertados de marquet_turn_the_ship : 20 / cerrojos en procesos/               : 
+     hoy     : nodos en dataset/nodos.jsonl        : 479 / veredictos en bitacora              : 1226 / pares mutuos                        : 1 / bandeja cuarentena/marquet_turn_the_ship : 0 / insertados de marquet_turn_the_ship : 20 / cerrojos en procesos/               : 
+  DISTINTA | .v80ext/t3_lineas.txt | tail -n +1173 bitacora/VEREDICTOS.jsonl | python -c "import sys,json,collections; print(collections.Counter(js
+     guardada: Counter({'SANO': 52, 'CONTINUA': 1})
+     hoy     : Counter({'SANO': 52, 'CONTINUA': 1, 'CORREGIDO': 1})
+  DISTINTA | .v80ext/t4.txt | bash .v80ext/censo.sh 2>/dev/null   # antes de la TAREA 4
+     guardada: nodos en dataset/nodos.jsonl        : 479 / veredictos en bitacora              : 1225 / pares mutuos                        : 1 / bandeja cuarentena/marquet_turn_the_ship : 0 / insertados de marquet_turn_the_ship : 20 / cerrojos en procesos/               : 
+     hoy     : nodos en dataset/nodos.jsonl        : 479 / veredictos en bitacora              : 1226 / pares mutuos                        : 1 / bandeja cuarentena/marquet_turn_the_ship : 0 / insertados de marquet_turn_the_ship : 20 / cerrojos en procesos/               : 
+  NO CORRIDA (escribe) | .v80ext/t4.txt | python forja.py corregir --nodo eliminar_seguimiento_descendente_responsabilizar_dueno --a
+  NO CORRIDA (escribe) | .v80ext/t4_pago.txt | python scripts/deuda.py --pagar d183 --vuelta 80 --como "$(cat .v80ext/como_d183.txt)"
+  NO CORRIDA (escribe) | .v80ext/tag.txt | git tag -a primer-equipo-completo -m "PRIMER EQUIPO COMPLETO: los 7 libros del mundo 11 IN
+  NO CORRIDA (escribe) | .v80ext/tag.txt | git push origin primer-equipo-completo
+comandos: {'IDENTICA': 23, 'DISTINTA': 7, 'NO CORRIDA (escribe)': 6} | suma: 36

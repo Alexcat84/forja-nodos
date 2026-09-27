@@ -1,0 +1,5 @@
+PARA_ALEXIS.md: IDENTICO al volver a correr sus ordenes
+2026-09-26 21:45:31 77357 docs/loop/CREDITO_serial.jsonl
+2026-09-26 21:46:33 9709 docs/loop/PARA_ALEXIS.md
+2026-09-26 21:46:16 0 docs/loop/PROMPT_SIGUIENTE.md
+ahora: 2026-09-26 21:46:36
