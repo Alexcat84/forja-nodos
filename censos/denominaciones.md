@@ -1276,3 +1276,5 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-26 | reforzar_principios_guia_lenguaje_prueba_conocimiento | otro_idioma | use guiding principles for decision criteria | ingles | - |
 | 2026-09-26 | declarar_intencion_reemplazar_peticion_permiso | nombre_largo | El mecanismo de usar tengo la intencion de en vez de pedir permiso, para convertir seguidores pasivos en lideres activos | castellano | - |
 | 2026-09-26 | declarar_intencion_reemplazar_peticion_permiso | otro_idioma | I intend to | ingles | - |
+| 2026-09-26 | resistir_dar_solucion_clasificar_decision_urgencia | nombre_largo | El mecanismo de resistir el impulso de dar soluciones y tratar cada decision segun si es urgente, si se puede tomar pronto o si se puede retrasar | castellano | - |
+| 2026-09-26 | resistir_dar_solucion_clasificar_decision_urgencia | otro_idioma | resist the urge to provide solutions | ingles | - |
