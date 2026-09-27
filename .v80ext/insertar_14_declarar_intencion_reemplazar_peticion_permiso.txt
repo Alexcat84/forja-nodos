@@ -1,0 +1,50 @@
+fila 14, declarar_intencion_reemplazar_peticion_permiso, lineas --veredicto: 4
+  --veredicto resistir_dar_solucion_clasificar_decision_urgencia|SANO|Hermanos, dos mecanismos de CONTROL: los dos tocan quien decide, pero este reescribe el lenguaje de la propuesta (cap_07 L55, L73 a L93) y el vecino clasifica la decision en tres plazos y fija quien opina en cada uno (cap_08 L107, L117 a L121). La similitud de 0,422, por encima de 0,4, se lee primero y no es gemelo: procedimiento propio en los dos lados (ACTA M9.4, fila 1).
+  --veredicto acoger_inspectores_externos_fuente_aprendizaje|SANO|El mismo par que acoger_inspectores lee desde su lado: protocolo de lenguaje contra trato del inspector (cap_07 L55, L73 a L93; cap_10 L45, L49). La similitud de 0,404, por encima de 0,4, se lee primero, sin paso comun (ACTA M9.4, fila 2).
+  --veredicto informar_cierre_jornada_conservar_propiedad_trabajo|SANO|Hermanos: el vecino da el reporte de cierre de jornada que deja la propiedad del trabajo en quien lo hace (cap_04 L35), y este declara la intencion antes de actuar (cap_07 L55, L87 a L93). Los dos cambian lo que el subordinado dice a su superior, en dos momentos y con dos guiones distintos; ninguno usa el producto del otro, y el libro no pone a uno dentro del otro.
+  --veredicto reforzar_principios_guia_lenguaje_prueba_conocimiento|SANO|Ajenos: el vecino escribe premios y evaluaciones en el lenguaje de los principios (cap_14 L89, L99), y este cambia las frases de la peticion de permiso (cap_07 L73 a L93). Los dos hablan de palabras, no del mismo procedimiento.
+inicio 2026-09-26 19:53:47
+======================================================================
+ADUANA DE INSERCION, candidato 'declarar_intencion_reemplazar_peticion_permiso'
+  esquema, reglas de id, fuentes canonicas y guiones: verde
+  blocking multi señal contra 479   (472 del grafo mas 7 que esperan en bandejas)
+
+VECINOS POR ENCIMA DE UMBRAL: 4. LA INSERCION QUEDA BLOQUEADA.
+  Las señales ordenan, nunca deciden (manual principio 4):
+  esta cola es para leer, no un veredicto.
+
+  vecino resistir_dar_solucion_clasificar_decision_urgencia  [Resistir dar la solucion y clasificar la decision del equipo segun su urgencia]
+    levantada por: similitud_texto
+    similitud_texto    0.422 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.439 (umbral 0.60)
+    paso 2 del candidato contra paso 4 de resistir_dar_solucion_clasificar_decision_urgencia
+
+  vecino acoger_inspectores_externos_fuente_aprendizaje  [Acoger a los inspectores externos como fuente de aprendizaje segun la fortaleza o debilidad del area inspeccionada]
+    levantada por: similitud_texto
+    similitud_texto    0.404 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.350 (umbral 0.60)
+    paso 3 del candidato contra paso 1 de acoger_inspectores_externos_fuente_aprendizaje
+
+  vecino informar_cierre_jornada_conservar_propiedad_trabajo  [Informar al superior al cerrar la jornada sin cederle la propiedad del trabajo]
+    levantada por: similitud_texto
+    similitud_texto    0.352 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.391 (umbral 0.60)
+    paso 2 del candidato contra paso 3 de informar_cierre_jornada_conservar_propiedad_trabajo
+
+  vecino reforzar_principios_guia_lenguaje_prueba_conocimiento  [Reforzar los principios guia usando su vocabulario en premios y evaluaciones, y comprobar si de verdad los conoce quien no los escribio]
+    levantada por: similitud_texto
+    similitud_texto    0.355 (umbral 0.35)
+    familia_id         0.000 (umbral 0.30)
+    paso_contra_nodo   0.353 (umbral 0.60)
+    paso 2 del candidato contra paso 2 de reforzar_principios_guia_lenguaje_prueba_conocimiento
+
+GATE VERDE sobre la simulacion. NODO INSERTADO en dataset/nodos.jsonl.
+  nodos en el grafo: 473
+  censos escritos: denominaciones
+  veredictos en bitacora/VEREDICTOS.jsonl: 4
+
+======================================================================
+fin 2026-09-26 20:02:03 | codigo de salida 0 | 496.0 s

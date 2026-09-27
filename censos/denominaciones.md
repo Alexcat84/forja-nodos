@@ -1274,3 +1274,5 @@ Lo escribe la aduana al insertar (src/aduana.py). No se edita a mano salvo para 
 | 2026-09-26 | asignar_responsable_unico_evolucion_planificada | otro_idioma | chief in charge | ingles | - |
 | 2026-09-26 | reforzar_principios_guia_lenguaje_prueba_conocimiento | nombre_largo | Usar el lenguaje de los principios guia al redactar premios y evaluaciones, y poner a prueba si son reales preguntando a las tres primeras personas que veas en la organizacion cuales son | castellano | - |
 | 2026-09-26 | reforzar_principios_guia_lenguaje_prueba_conocimiento | otro_idioma | use guiding principles for decision criteria | ingles | - |
+| 2026-09-26 | declarar_intencion_reemplazar_peticion_permiso | nombre_largo | El mecanismo de usar tengo la intencion de en vez de pedir permiso, para convertir seguidores pasivos en lideres activos | castellano | - |
+| 2026-09-26 | declarar_intencion_reemplazar_peticion_permiso | otro_idioma | I intend to | ingles | - |
